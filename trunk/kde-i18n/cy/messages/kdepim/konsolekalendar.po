@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: konsolekalendar\n"
-"POT-Creation-Date: 2004-12-11 01:22+0100\n"
+"POT-Creation-Date: 2005-01-15 01:23+0100\n"
 "PO-Revision-Date: 2004-02-25 13:50+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -47,43 +47,56 @@ msgstr "Gweld Digwyddiadau <Rhediad Ffug>:"
 msgid "View Event <Verbose>:"
 msgstr "Gweld Digwyddiad <Amleiriog>:"
 
-#: konsolekalendar.cpp:233
+#: konsolekalendar.cpp:234
 msgid "Sorry, export to HTML by UID is not supported yet"
 msgstr "Ni chynhelir allforio drwy HTML gan UID eto"
 
-#: konsolekalendar.cpp:455 konsolekalendaradd.cpp:140
+#: konsolekalendar.cpp:257
+msgid "Events:"
+msgstr ""
+
+#: konsolekalendar.cpp:261
+#, c-format
+msgid "Events: %1"
+msgstr ""
+
+#: konsolekalendar.cpp:264
+msgid "Events: %1 - %2"
+msgstr ""
+
+#: konsolekalendar.cpp:466 konsolekalendaradd.cpp:140
 #: konsolekalendarchange.cpp:132 konsolekalendarchange.cpp:159
 #: konsolekalendardelete.cpp:97
 #, fuzzy, c-format
 msgid "  What:  %1"
 msgstr "Beth:"
 
-#: konsolekalendar.cpp:459 konsolekalendaradd.cpp:144
+#: konsolekalendar.cpp:470 konsolekalendaradd.cpp:144
 #: konsolekalendarchange.cpp:136 konsolekalendarchange.cpp:163
 #: konsolekalendardelete.cpp:101
 #, fuzzy, c-format
 msgid "  Begin: %1"
 msgstr "Dechrau:"
 
-#: konsolekalendar.cpp:463 konsolekalendaradd.cpp:148
+#: konsolekalendar.cpp:474 konsolekalendaradd.cpp:148
 #: konsolekalendarchange.cpp:140 konsolekalendarchange.cpp:167
 #: konsolekalendardelete.cpp:105
 #, fuzzy, c-format
 msgid "  End:   %1"
 msgstr "Diwedd:"
 
-#: konsolekalendar.cpp:468 konsolekalendaradd.cpp:153
+#: konsolekalendar.cpp:479 konsolekalendaradd.cpp:153
 msgid "  No Time Associated with Event"
 msgstr "Dim Amser wedi'i Gysylltu efo'r Digwyddiad"
 
-#: konsolekalendar.cpp:472 konsolekalendaradd.cpp:157
+#: konsolekalendar.cpp:483 konsolekalendaradd.cpp:157
 #: konsolekalendarchange.cpp:144 konsolekalendarchange.cpp:171
 #: konsolekalendardelete.cpp:109
 #, fuzzy, c-format
 msgid "  Desc:  %1"
 msgstr "Disgrifiad:"
 
-#: konsolekalendar.cpp:476 konsolekalendaradd.cpp:161
+#: konsolekalendar.cpp:487 konsolekalendaradd.cpp:161
 #: konsolekalendarchange.cpp:148 konsolekalendarchange.cpp:175
 #: konsolekalendardelete.cpp:113
 #, c-format
@@ -384,6 +397,7 @@ msgid ""
 "  Text [Default]\n"
 "  Short (like Text, but more compact)\n"
 "  HTML\n"
+"  HTMLmonth (like HTML, but in a month view)\n"
 "  CSV (Comma-Separated Values)\n"
 msgstr ""
 "\n"
@@ -392,69 +406,69 @@ msgstr ""
 "  HTML\n"
 "  CSV (Gwerthoedd wedi'i Gwahanu gan Atalnod)"
 
-#: main.cpp:269
+#: main.cpp:270
 msgid "Sorry, To-dos are not working yet."
 msgstr ""
 
-#: main.cpp:276
+#: main.cpp:277
 msgid "Sorry, Journals are not working yet."
 msgstr ""
 
-#: main.cpp:309
+#: main.cpp:313
 #, fuzzy, c-format
 msgid "Invalid Export Type Specified: %1"
 msgstr "Penodwyd Math Allforio Annilys:"
 
-#: main.cpp:499
+#: main.cpp:503
 #, fuzzy, c-format
 msgid "Invalid Start Date Specified: %1"
 msgstr "Penodwyd Dyddiad Dechrau Annilys:"
 
-#: main.cpp:525
+#: main.cpp:529
 #, fuzzy, c-format
 msgid "Invalid Start Time Specified: %1"
 msgstr "Penodwyd Amser Dechrau Annilys:"
 
-#: main.cpp:556
+#: main.cpp:560
 #, fuzzy, c-format
 msgid "Invalid End Date Specified: %1"
 msgstr "Penodwyd Dyddiad Gorffen Annilys:"
 
-#: main.cpp:582
+#: main.cpp:586
 #, fuzzy, c-format
 msgid "Invalid Date Count Specified: %1"
 msgstr "Penodwyd Cyfrif Dyddiad Annilys:"
 
-#: main.cpp:611
+#: main.cpp:615
 #, fuzzy, c-format
 msgid "Invalid End Time Specified: %1"
 msgstr "Penodwyd Amser Gorffen Annilys:"
 
-#: main.cpp:699
+#: main.cpp:703
 #, fuzzy
 msgid "Calendar %1 already exists"
 msgstr "mewn bod yn barod"
 
-#: main.cpp:705
+#: main.cpp:709
 #, fuzzy
 msgid "Calendar %1 successfully created"
 msgstr "wedi'u creu yn llwyddiannus."
 
-#: main.cpp:710
+#: main.cpp:714
 #, fuzzy, c-format
 msgid "Unable to create calendar: %1"
 msgstr "Methu creu calendr:"
 
-#: main.cpp:718
+#: main.cpp:722
 #, fuzzy, c-format
 msgid "Calendar file not found %1"
 msgstr "Ni chanfuwyd ffeil calendr"
 
-#: main.cpp:721
+#: main.cpp:725
 msgid "Try --create to create new calendar file"
 msgstr "Ceisiwch --create i greu ffeil calendr newydd"
 
-#: main.cpp:875
+#: main.cpp:879
 #, fuzzy
 msgid ""
 "Only 1 operation mode (view, add, change, delete, create) permitted at any "
@@ -463,37 +477,37 @@ msgstr ""
 "Caniateir un modd gweithredu (gweld, ychwanegu, newid, dileu, creu) yn unig "
 "ar yr un pryd"
 
-#: main.cpp:885
+#: main.cpp:889
 msgid "Ending Date/Time occurs before the Starting Date/Time"
 msgstr "Digwydda'r Dyddiad/Amser Dechrau cyn y Dyddiad/Amser Gorffen"
 
-#: main.cpp:906
+#: main.cpp:910
 #, fuzzy
 msgid "Calendar %1 successfully imported"
 msgstr "wedi'u creu yn llwyddiannus."
 
-#: main.cpp:911
+#: main.cpp:915
 #, fuzzy, c-format
 msgid "Unable to import calendar: %1"
 msgstr "Methu creu calendr:"
 
-#: main.cpp:927
+#: main.cpp:931
 msgid "Attempting to insert an event that already exists"
 msgstr "Ceisio mewnosod digwyddiad sy mewn bod yn barod"
 
-#: main.cpp:938 main.cpp:958
+#: main.cpp:942 main.cpp:962
 msgid "Missing event UID: use --uid command line option"
 msgstr ""
 
-#: main.cpp:944
+#: main.cpp:948
 msgid "No such event UID: change event failed"
 msgstr ""
 
-#: main.cpp:964
+#: main.cpp:968
 msgid "No such event UID: delete event failed"
 msgstr ""
 
-#: main.cpp:978
+#: main.cpp:982
 #, fuzzy, c-format
 msgid "Cannot open specified export file: %1"
 msgstr "Methu agor ffeil allforio penodol:"
