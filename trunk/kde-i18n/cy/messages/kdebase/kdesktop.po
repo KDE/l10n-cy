@@ -1,17 +1,17 @@
 # translation of kdesktop.po to Cymraeg
 # Translation of kdesktop.po to Cymraeg
 # KDE yn Gymraeg.
-# Copyright (C) 2003 Free Software Foundation, Inc.
+# Copyright (C) 2003, 2004 Free Software Foundation, Inc.
 # www.kyfieithu.co.uk <kyfieithu@kyfieithu.co.uk>, 2003.
 # KGyfieithu <kyfieithu@dotmon.com>, 2003.
-# KD at KGyfieithu <kyfieithu@dotmon.com>, 2003.
+# KD at KGyfieithu <kyfieithu@dotmon.com>, 2003, 2004.
 #
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kdesktop\n"
-"POT-Creation-Date: 2004-02-25 09:53+0100\n"
-"PO-Revision-Date: 2003-12-28 18:19+0000\n"
+"POT-Creation-Date: 2004-06-28 01:56+0200\n"
+"PO-Revision-Date: 2004-07-05 20:19+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -20,35 +20,35 @@ msgstr ""
 "X-Generator: KBabel 1.2\n"
 "\n"
 
-#: lock/lockdlg.cc:75
-msgid "<nobr><b>The screen is locked</b><br>"
-msgstr "<nobr><b>Mae'r sgrîn wedi'i gloi</b><br>"
-
 #: lock/lockdlg.cc:76
-msgid "<nobr><b>The screen is locked by %1</b><br>"
-msgstr "<nobr><b>Mae'r sgrîn wedi'i gloi gan %1</b><br>"
+msgid "<nobr><b>The session is locked</b><br>"
+msgstr "<nobr><b>Mae'r sesiwn wedi'i gloi</b><br>"
 
-#: lock/lockdlg.cc:86
-msgid "&Start New Session"
-msgstr "Dechrau &Sesiwn Newydd"
+#: lock/lockdlg.cc:77
+msgid "<nobr><b>The session is locked by %1</b><br>"
+msgstr "<nobr><b>Mae'r sesiwn wedi'i gloi gan %1</b><br>"
 
-#: lock/lockdlg.cc:187
+#: lock/lockdlg.cc:87
+msgid "&Start New Session..."
+msgstr "Dechrau &Sesiwn Newydd..."
+
+#: lock/lockdlg.cc:188
 msgid "<b>Unlocking failed</b>"
 msgstr "<b>Methwyd datgloi</b>"
 
-#: lock/lockdlg.cc:193
+#: lock/lockdlg.cc:194
 msgid "<b>Warning: Caps Lock on</b>"
 msgstr "<b>Rhybudd: Clo Llythrennau arnodd</b>"
 
-#: lock/lockdlg.cc:417
+#: lock/lockdlg.cc:420
 msgid ""
-"Cannot unlock the screen, as the authentication system fails to work.\n"
+"Cannot unlock the session because the authentication system failed to work.\n"
 "You must kill kdesktop_lock (pid %1) manually."
 msgstr ""
-"Methu datgloi'r sgrîn, gan fod y cysawd dilysiant yn methu gweithio.\n"
+"Methu datgloi'r sesiwn, gan fod y cysawd dilysiant yn methu gweithio.\n"
 "Rhaid i chi ladd kdesktop_lock (pid %1) â llaw."
 
-#: lock/lockdlg.cc:490
+#: lock/lockdlg.cc:518
 msgid ""
 "You have chosen to open another desktop session instead of resuming the "
 "current one."
@@ -68,29 +68,31 @@ msgstr ""
 "Cewch newid rhwng sesiynau gan wthio CTRL, ALT a'r allwedd-F addas yr un "
 "pryd."
 
-#: lock/lockprocess.cc:658
-msgid ""
-"Will not lock the screen, as unlocking would be impossible:\n"
-msgstr ""
-"Ni fydd yn cloi'r sgrîn, oherwydd buasai datgloi yn amhosibl:\n"
+#: krootwm.cc:748 lock/lockdlg.cc:529
+msgid "&Start New Session"
+msgstr "Dechrau &Sesiwn Newydd"
 
-#: lock/lockprocess.cc:662
+#: lock/lockprocess.cc:659
+msgid "Will not lock the session, as unlocking would be impossible:\n"
+msgstr "Ni fydd yn cloi'r sesiwn, oherwydd buasai datgloi yn amhosibl:\n"
+
+#: lock/lockprocess.cc:663
 msgid "Cannot start <i>kcheckpass</i>."
 msgstr "Methu cychwyn <i>kcheckpass</i>."
 
-#: lock/lockprocess.cc:663
+#: lock/lockprocess.cc:664
 msgid "<i>kcheckpass</i> is unable to operate. Possibly it is not SetUID root."
 msgstr ""
 "Mae <i>kcheckpass</i> yn methu gweithredu.  Efallai ni osodir i SetUID "
 "gwraidd."
 
-#: lock/lockprocess.cc:707
+#: lock/lockprocess.cc:708
 msgid "No appropriate greeter plugin configured."
 msgstr "Ni ffurfweddir ategyn cyfarchydd penodol."
 
 #: lock/main.cc:51
-msgid "Force screen locking"
-msgstr "Gorfodi cloi'r sgrîn"
+msgid "Force session locking"
+msgstr "Gorfodi cloi'r sesiwn"
 
 #: lock/main.cc:52
 msgid "Only start screensaver"
@@ -105,34 +107,34 @@ msgid "KDesktop Locker"
 msgstr "Cloydd KPenbwrdd"
 
 #: lock/main.cc:63
-msgid "Screen Locker for KDesktop"
-msgstr "Cloydd Sgrîn i KPenbwrdd"
+msgid "Session Locker for KDesktop"
+msgstr "Cloydd Sesiwn i KPenbwrdd"
 
-#: desktop.cc:661
+#: desktop.cc:666
 msgid "Set as Primary Background Color"
 msgstr "Gosod fel Lliw Cefndir Cynradd"
 
-#: desktop.cc:662
+#: desktop.cc:667
 msgid "Set as Secondary Background Color"
 msgstr "Gosod fel Lliw Cefndir Ailradd"
 
-#: desktop.cc:678
+#: desktop.cc:683
 msgid "&Save to Desktop..."
 msgstr "&Cadw i Benbwrdd..."
 
-#: desktop.cc:680
+#: desktop.cc:685
 msgid "Set as &Wallpaper"
 msgstr "Gosod fel &Papur Wal"
 
-#: desktop.cc:688
+#: desktop.cc:693
 msgid "Enter a name for the image below:"
 msgstr "Mewnosod enw ar gyfer y ddelwedd isod:"
 
-#: desktop.cc:697
+#: desktop.cc:702
 msgid "image.png"
 msgstr "image.png"
 
-#: desktop.cc:745
+#: desktop.cc:754
 msgid ""
 "Could not logout properly.\n"
 "The session manager cannot be contacted. You can try to force a shutdown by "
@@ -144,17 +146,13 @@ msgstr ""
 "drwy wthio Ctrl+Alt+Ôlnod.  Ond noder, ni fydd eich sesiwn cyfredol yn cael "
 "ei gadw efo terfyniad gorfodol."
 
-#: kdiconview.cc:380
+#: kdiconview.cc:395
 msgid "&Rename"
 msgstr "&Ail-enwi"
 
-#: kdiconview.cc:381
+#: kdiconview.cc:396
 msgid "&Move to Trash"
 msgstr "&Symud i Sbwriel"
-
-#: kdiconview.cc:384
-msgid "&Shred"
-msgstr "&Carpio"
 
 #: krootwm.cc:129
 msgid "Run Command..."
@@ -164,7 +162,7 @@ msgstr "Rhedeg Gorchymyn..."
 msgid "Configure Desktop..."
 msgstr "Ffurfweddu Penbwrdd..."
 
-#: krootwm.cc:135 krootwm.cc:332
+#: krootwm.cc:135 krootwm.cc:350
 msgid "Disable Desktop Menu"
 msgstr "Analluogi Dewislen Penbwrdd"
 
@@ -177,113 +175,129 @@ msgid "Cascade Windows"
 msgstr "Rhaeadru Ffenestri"
 
 #: krootwm.cc:147
-msgid "By Name"
-msgstr "Gan Enw"
+msgid "By Name (Case Sensitive)"
+msgstr "Gan Enw (Llythrennau Mawr/Bach o Bwys)"
 
 #: krootwm.cc:149
+msgid "By Name (Case Insensitive)"
+msgstr "Gan Enw (Llythrennau Mawr/Bach Dim o Bwys)"
+
+#: krootwm.cc:151
 msgid "By Size"
 msgstr "Gan Faint"
 
-#: krootwm.cc:151
+#: krootwm.cc:153
 msgid "By Type"
 msgstr "Gan Fath"
 
-#: krootwm.cc:154
+#: krootwm.cc:155
+msgid "By Date"
+msgstr "Gan Ddyddiad"
+
+#: krootwm.cc:158
 msgid "Directories First"
 msgstr "Cyfeiriaduron yn Gyntaf"
 
-#: krootwm.cc:157
+#: krootwm.cc:161
 msgid "Line Up Horizontally"
 msgstr "Unioni yn Llorweddol"
 
-#: krootwm.cc:160
+#: krootwm.cc:164
 msgid "Line Up Vertically"
 msgstr "Unioni yn Fertigol"
 
-#: krootwm.cc:163
+#: krootwm.cc:167
 msgid "Align to Grid"
 msgstr "Alinio i'r Grid"
 
-#: krootwm.cc:169
+#: krootwm.cc:174
 msgid "Refresh Desktop"
 msgstr "Adnewyddu Penbwrdd"
 
-#: kdesktopbindings.cpp:30 krootwm.cc:175
-msgid "Lock Screen"
-msgstr "Cloi Sgrîn"
+#: kdesktopbindings.cpp:30 krootwm.cc:180
+msgid "Lock Session"
+msgstr "Cloi Sesiwn"
 
-#: krootwm.cc:180
+#: krootwm.cc:185
 msgid "Logout \"%1\"..."
 msgstr "Allgofnodi\"%1\"..."
 
-#: krootwm.cc:191
-msgid "Start New Session"
-msgstr "Dechrau Sesiwn Newydd"
+#: krootwm.cc:196
+msgid "Start New Session..."
+msgstr "Dechrau Sesiwn Newydd..."
 
-#: krootwm.cc:310 krootwm.cc:388
+#: krootwm.cc:328 krootwm.cc:406
 msgid "Sort Icons"
 msgstr "Trefnu eiconau"
 
-#: krootwm.cc:312
+#: krootwm.cc:330
 msgid "Line Up Icons"
 msgstr "Unioni Eiconau"
 
-#: krootwm.cc:339
+#: krootwm.cc:357
 msgid "Enable Desktop Menu"
 msgstr "Galluogi Dewislen Penbwrdd"
 
-#: krootwm.cc:395
+#: krootwm.cc:413
 msgid "Icons"
 msgstr "Eiconau"
 
-#: krootwm.cc:401 krootwm.cc:458
+#: krootwm.cc:419 krootwm.cc:473
 msgid "Windows"
 msgstr "Ffenestri"
 
-#: krootwm.cc:451
+#: krootwm.cc:466
 msgid "New"
 msgstr "Newydd"
 
-#: kdesktopbindings.cpp:14 krootwm.cc:457 krootwm.cc:628
+#: kdesktopbindings.cpp:14 krootwm.cc:472 krootwm.cc:679
 msgid "Desktop"
 msgstr "Penbwrdd"
 
-#: krootwm.cc:693
+#: krootwm.cc:743
+msgid "Warning - New Session"
+msgstr "Rhybudd - Sesiwn Newydd"
+
+#: krootwm.cc:751
 msgid ""
 "<p>You have chosen to open another desktop session."
 "<br>The current session will be hidden and a new login screen will be "
 "displayed."
 "<br>An F-key is assigned to each session; F%1 is usually assigned to the "
 "first session, F%2 to the second session and so on. You can switch between "
-"sessions by pressing CTRL, ALT and the appropriate F-key at the same "
+"sessions by pressing Ctrl, Alt and the appropriate F-key at the same "
 "time.</p>"
 msgstr ""
-"<p>Rydych chi wedi dewis i agor penbwrdd arall."
+"<p>Rydych chi wedi dewis i agor sesiwn penbwrdd arall."
 "<br>"
-"Mi fydd y sesiwn cyfredol yn cael ei guddio a mi fydd sgrîn mewngofnodi "
+"Bydd y sesiwn cyfredol yn cael ei guddio a bydd sgrîn mewngofnodi "
 "newydd yn cael ei ddangos."
-"<br>Mae allwedd-F yn cael ei neilltuo i bob sesiwn; mae F%1 yn cael ei "
-"neilltuo fel arfer i'r sesiwn cyntaf, F%2 i'r ail sesiwn, ac yn y blaen. "
-"Cewch newid rhwng sesiynau gan wthio CTRL, ALT a'r allwedd-F addas yr un "
+"<br>Mae bysell-F yn cael ei neilltuo i bob sesiwn; mae F%1 yn cael ei "
+"neilltuo fel rheol i'r sesiwn cyntaf, F%2 i'r ail sesiwn, ac yn y blaen. "
+"Cewch newid rhwng sesiynau gan wthio CTRL, ALT a'r bysell-F addas yr un "
 "pryd.</p>"
 
-#: main.cc:40
-msgid "The KDE Desktop."
+#: krootwm.cc:763
+msgid "&Lock current session"
+msgstr "Clo&i Sesiwn Cyfredol"
+
+#: main.cc:43
+msgid "The KDE desktop"
 msgstr "Y Penbwrdd KDE"
 
-#: main.cc:46
+#: main.cc:49
 msgid "Use this if the desktop window appears as a real window"
 msgstr "Defnyddiwch hwn os yw'r ffenestr penbwrdd yn dangos fel ffenestr gwir"
 
-#: main.cc:47
+#: main.cc:50
 msgid "Use this to disable the Autostart folder"
 msgstr "Defnyddiwch hwn i analluogi'r plygell Awto-gychwyn"
 
-#: main.cc:48
+#: main.cc:51
 msgid "Wait for kded to finish building database"
 msgstr "Disgwyl am kded i orffen adeiladu'r cronfa ddata"
 
-#: main.cc:140
+#: main.cc:143
 msgid "KDesktop"
 msgstr "KPenbwrdd"
 
@@ -327,7 +341,7 @@ msgstr "Stopio heb Gadarnhàd"
 msgid "Reboot without Confirmation"
 msgstr "Ail-gychwyn heb Gadarnhàd"
 
-#: minicli.cpp:90 minicli.cpp:617
+#: minicli.cpp:90 minicli.cpp:624
 msgid "&Options >>"
 msgstr "&Dewisiadau >>"
 
@@ -335,49 +349,47 @@ msgstr "&Dewisiadau >>"
 msgid "&Run"
 msgstr "&Rhedeg"
 
-#: minicli.cpp:385
+#: minicli.cpp:394
 msgid "<qt>The user <b>%1</b> does not exist on this system.</qt>"
 msgstr "<qt>Nid yw'r defnyddiwr <b>%1</b> yn bodoli ar y system yma.</qt>"
 
-#: minicli.cpp:395
-msgid ""
-"You don't exist!\n"
-msgstr ""
-"Nid ydych yn bodoli!\n"
+#: minicli.cpp:404
+msgid "You do not exist.\n"
+msgstr "Nid ydych yn bodoli!\n"
 
-#: minicli.cpp:420
-msgid "Incorrect password! Please try again."
-msgstr "Cyfrinair anghywir! Ceisiwch eto, os gwelwch yn dda."
+#: minicli.cpp:429
+msgid "Incorrect password; please try again."
+msgstr "Cyfrinair anghywir; ceisiwch eto, os gwelwch yn dda."
 
-#: minicli.cpp:531
+#: minicli.cpp:537
 msgid ""
 "<center><b>%1</b></center>\n"
-"You do not have permission to execute this command!"
+"You do not have permission to execute this command."
 msgstr ""
 "<center><b>%1</b></center>\n"
-"Nid oes ganddoch ganiatàd i weithredu y gorchymyn yma!"
+"Nid oes gennych ganiatàd i weithredu'r gorchymyn yma."
 
-#: minicli.cpp:556
+#: minicli.cpp:563
 msgid ""
 "<center><b>%1</b></center>\n"
-"Could not run the specified command!"
+"Could not run the specified command."
 msgstr ""
 "<center><b>%1</b></center>\n"
-"Methu rhedeg y gorchymyn penodol!"
+"Methu rhedeg y gorchymyn penodol."
 
-#: minicli.cpp:568
+#: minicli.cpp:575
 msgid ""
 "<center><b>%1</b></center>\n"
-"The specified command does not exist!"
+"The specified command does not exist."
 msgstr ""
 "<center><b>%1</b></center>\n"
-"Nid yw'r gorchymyn penodol yn bodoli!"
+"Nid yw'r gorchymyn penodol yn bodoli."
 
-#: minicli.cpp:605
+#: minicli.cpp:612
 msgid "&Options <<"
 msgstr "&Dewisiadau <<"
 
-#: minicli.cpp:813
+#: minicli.cpp:820
 msgid ""
 "Running a realtime application can be very dangerous. If the application "
 "misbehaves, the system might hang unrecoverably.\n"
@@ -387,35 +399,19 @@ msgstr ""
 "yn camymddwyn, gall y cysawd ymatal heb siwan o'r adennill. \n"
 "Ydych yn sicr yr ydych eisiau mynd ymlaen?"
 
-#: minicli.cpp:816
+#: minicli.cpp:823
 msgid "Warning - Run Command"
 msgstr "Rhybudd - Rhedeg Gorchymyn"
 
-#: rc.cpp:2
-msgid "Enter the name of the application you want to run or the URL you want to view"
-msgstr ""
-"Mewnosodwch enw'r cymhwysiad yr ydych eisiau rhedeg, neu yr URL rydych "
-"eisiau ei weld."
+#: minicli.cpp:823
+msgid "&Run Realtime"
+msgstr "&Rhedeg Gwir-amser"
 
-#: rc.cpp:3
-msgid "Com&mand:"
-msgstr "Go&rchymyn:"
-
-#: rc.cpp:4 rc.cpp:29
-msgid ""
-"Enter the command you wish to execute or the address of the resource you "
-"want to open. This can be a remote URL like \"www.kde.org\" or a local one "
-"like \"~/.kderc\"."
-msgstr ""
-"Mewnosodwch y gorchymyn yr ydych eisiau ei weithredu neu cyfeiriad yr adnodd "
-"yr ydych  eisiau ei agor. Mae hyn yn gallu bod yn URL pell fel "
-"\"www.kde.org\" neu un lleol fel \"~/.kderc\""
-
-#: rc.cpp:8
+#: rc.cpp:4
 msgid "Run with realtime &scheduling"
 msgstr "Rhedeg efo &trefnlennu amser-real"
 
-#: rc.cpp:9
+#: rc.cpp:5
 msgid ""
 "<qt>Select whether realtime scheduling should be enabled for the "
 "application. The scheduler governs which process will run and which will "
@@ -445,27 +441,27 @@ msgstr ""
 "</ul>\n"
 "</qt>"
 
-#: rc.cpp:10
+#: rc.cpp:6
 msgid "User&name:"
 msgstr "E&nw Defnyddiwr:"
 
-#: rc.cpp:11 rc.cpp:21
+#: rc.cpp:7 rc.cpp:17
 msgid "Enter the user you want to run the application as here."
 msgstr "Mewnosodwch y defnyddiwr yr ydych eisiau rhedeg y cymhwysiad fel fo."
 
-#: rc.cpp:12 rc.cpp:14
+#: rc.cpp:8 rc.cpp:10
 msgid "Enter the password here for the user you specified above."
 msgstr "Mewnosodwch y cyfrinair am y defnyddiwr a benodwyd uchod."
 
-#: rc.cpp:13
+#: rc.cpp:9
 msgid "Pass&word:"
 msgstr "Cyf&rinair"
 
-#: rc.cpp:15
+#: rc.cpp:11
 msgid "Run in &terminal window"
 msgstr "Rhedeg mewn ffenestr &terfynell"
 
-#: rc.cpp:16
+#: rc.cpp:12
 msgid ""
 "Check this option if the application you want to run is a text mode "
 "application. The application will then be run in a terminal emulator window."
@@ -474,11 +470,11 @@ msgstr ""
 "gymhwysiad modd testun.   Bydd y cymhwysiad yn cael ei redeg wedyn mewn "
 "ffenest efelychu terfynell."
 
-#: rc.cpp:17
+#: rc.cpp:13
 msgid "&Priority:"
 msgstr "&Blaenoriaeth:"
 
-#: rc.cpp:18 rc.cpp:23 rc.cpp:25 rc.cpp:26
+#: rc.cpp:14 rc.cpp:19 rc.cpp:21 rc.cpp:22
 msgid ""
 "The priority that the command will be run with can be set here. From left to "
 "right, it goes from low to high. The center position is the default value. "
@@ -490,11 +486,11 @@ msgstr ""
 "rhagosodedig.  Am flaenoriaethau sy'n uwch na'r gwerth yma, bydd angen "
 "cyfrinair gwraidd ganddoch."
 
-#: rc.cpp:19
+#: rc.cpp:15
 msgid "Run with a &different priority"
 msgstr "Rhedeg gyda blaenoriaeth &gwahanol"
 
-#: rc.cpp:20
+#: rc.cpp:16
 msgid ""
 "Check this option if you want to run the application with a different "
 "priority. A higher priority tells the operating system to give more "
@@ -504,19 +500,19 @@ msgstr ""
 "gwahanol.  Mae blaenoriaeth uwch yn dweud wrth y cysawd gweithredu i roi "
 "rhagor o amser prosesu i'ch cymhwysiad."
 
-#: rc.cpp:22
+#: rc.cpp:18
 msgid "Low"
 msgstr "Isel"
 
-#: rc.cpp:24
+#: rc.cpp:20
 msgid "High"
 msgstr "Uchel"
 
-#: rc.cpp:27
+#: rc.cpp:23
 msgid "Run as a different &user"
 msgstr "Rhedeg fel defnyddiwr &gwahanol"
 
-#: rc.cpp:28
+#: rc.cpp:24
 msgid ""
 "Check this option if you want to run the application with a different user "
 "id. Every process has a user id associated with it. This id code determines "
@@ -527,6 +523,29 @@ msgstr ""
 "defnyddiwr gwahanol.  Mae gan bob proses ID defnyddiwr sy'n biau iddo.  "
 "Mae'r côd ID yma yn pennu caniatadau cyrchiad ffeil ac ati.  Mae angen "
 "cyfrinair y defnyddiwr er mwyn gwneud hyn."
+
+#: rc.cpp:25
+msgid "Com&mand:"
+msgstr "Go&rchymyn:"
+
+#: rc.cpp:26 rc.cpp:28
+msgid ""
+"Enter the command you wish to execute or the address of the resource you "
+"want to open. This can be a remote URL like \"www.kde.org\" or a local one "
+"like \"~/.kderc\"."
+msgstr ""
+"Mewnosodwch y gorchymyn yr ydych eisiau ei weithredu neu cyfeiriad yr adnodd "
+"yr ydych  eisiau ei agor. Mae hyn yn gallu bod yn URL pell fel "
+"\"www.kde.org\" neu un lleol fel \"~/.kderc\""
+
+#: rc.cpp:29
+msgid "Enter the name of the application you want to run or the URL you want to view"
+msgstr ""
+"Mewnosodwch enw'r cymhwysiad yr ydych eisiau rhedeg, neu yr URL rydych "
+"eisiau ei weld."
+
+#~ msgid "&Shred"
+#~ msgstr "&Carpio"
 
 #~ msgid "Bookmarks"
 #~ msgstr "Nodau Tudalen"
@@ -574,3 +593,4 @@ msgstr ""
 
 #~ msgid "Enter the requested password here."
 #~ msgstr "Mewnosodwch y cyfrinair a ofynnwyd amdano yma."
+

@@ -1,15 +1,15 @@
 # translation of kdeprintfax.po to Cymraeg
 # Bwrdd Gwaith yn Gymraeg.
-# Copyright (C) 2003 Free Software Foundation, Inc.
+# Copyright (C) 2003, 2004 Free Software Foundation, Inc.
 # www.kyfieithu.co.uk<kyfieithu@dotmon.com>, www.gyfieithu.co.uk<kyfieithu@dotmon.com>, 2003.
-# KD at KGyfieithu <kyfieithu@dotmon.com>, 2003.
+# KD at KGyfieithu <kyfieithu@dotmon.com>, 2003, 2004.
 #
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeprintfax\n"
-"POT-Creation-Date: 2004-02-18 09:58+0100\n"
-"PO-Revision-Date: 2003-12-28 18:20+0000\n"
+"POT-Creation-Date: 2004-05-24 02:05+0200\n"
+"PO-Revision-Date: 2004-07-05 20:14+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -43,44 +43,48 @@ msgstr "Porth Modem Safonol"
 msgid "Serial Port #%1"
 msgstr "Porth Gyfresol #%1"
 
-#: faxctrl.cpp:244
+#: confsystem.cpp:68
+msgid "Other"
+msgstr "Arall"
+
+#: faxctrl.cpp:314
 msgid "Converting input files to PostScript"
 msgstr "Trosi ffeiliau mewnbwn i ffurf PostScript"
 
-#: faxctrl.cpp:303
-msgid "Sending fax to recipient"
-msgstr "Yn anfon ffacs i'r derbynnydd"
+#: faxctrl.cpp:396
+msgid "Sending fax to %1 (%2)"
+msgstr "Yn anfon ffacs i %1 (%2)"
 
-#: faxctrl.cpp:313
+#: faxctrl.cpp:401
 #, c-format
 msgid "Sending to fax using: %1"
 msgstr "Yn anfon ffacs i'r derbynnydd drwy: %1"
 
-#: faxctrl.cpp:316
-msgid "Sending fax..."
-msgstr "Yn anfon ffacs..."
+#: faxctrl.cpp:405
+msgid "Sending fax to %1..."
+msgstr "Yn anfon ffacs i %1..."
 
-#: faxctrl.cpp:326
+#: faxctrl.cpp:416
 msgid "Skipping %1..."
 msgstr "Yn hepgor %1..."
 
-#: faxctrl.cpp:343
+#: faxctrl.cpp:434
 msgid "Filtering %1..."
 msgstr "Yn hidlo %1..."
 
-#: faxctrl.cpp:459
+#: faxctrl.cpp:552
 msgid "Fax log"
 msgstr "Cofnodion ffacs"
 
-#: faxctrl.cpp:461
+#: faxctrl.cpp:554
 msgid "Fax Log"
 msgstr "Cofnodion Ffacs"
 
-#: faxctrl.cpp:470 faxctrl.cpp:500
+#: faxctrl.cpp:563 faxctrl.cpp:593
 msgid "KDEPrint Fax Tool Log"
 msgstr "Confnodion Erfyn Argraffu Ffacs KDE"
 
-#: faxctrl.cpp:505
+#: faxctrl.cpp:598
 msgid "Cannot open file for writing."
 msgstr "Methu agor ffeil ar gyfer ysgrifennu."
 
@@ -112,17 +116,21 @@ msgstr "&Cydraniad:"
 msgid "&Paper size:"
 msgstr "Maint &papur:"
 
-#: confgeneral.cpp:39
+#: confgeneral.cpp:41
 msgid "&Name:"
 msgstr "&Enw:"
 
-#: confgeneral.cpp:41
+#: confgeneral.cpp:43
 msgid "&Company:"
 msgstr "&Cwmni:"
 
-#: confgeneral.cpp:43
+#: confgeneral.cpp:45
 msgid "N&umber:"
 msgstr "Rh&if:"
+
+#: confgeneral.cpp:48
+msgid "Replace international prefix '+' with:"
+msgstr "Disodli'r rhagddodiad rhyngwladol '+' efo:"
 
 #: _translatorinfo.cpp:1
 msgid ""
@@ -240,127 +248,163 @@ msgstr "Hidlenni"
 msgid "Filters Configuration"
 msgstr "Ffurfwedd Hidlenni"
 
-#: faxab.cpp:41
+#: faxab.cpp:41 kdeprintfax.cpp:88
+msgid "Name"
+msgstr "Enw"
+
+#: faxab.cpp:42 kdeprintfax.cpp:87 kdeprintfax.cpp:542
+msgid "Fax Number"
+msgstr "Rhif Ffacs"
+
+#: faxab.cpp:44
 msgid "Entries:"
 msgstr "Cofnodion:"
 
-#: faxab.cpp:42
-msgid "Fax number:"
-msgstr "Rhif ffacs:"
-
-#: faxab.cpp:45
+#: faxab.cpp:47
 msgid "&Edit Addressbook"
 msgstr "&Golygu Llyfr Cyfeiriadau"
 
-#: faxab.cpp:161
+#: faxab.cpp:150
 msgid "No fax number found in your address book."
 msgstr "Ni ganfuwyd rhif ffacs yn eich llyfr cyfeiriadau."
 
-#: kdeprintfax.cpp:72
+#: kdeprintfax.cpp:74
 msgid "Move up"
 msgstr "Symud i fyny"
 
-#: kdeprintfax.cpp:77
+#: kdeprintfax.cpp:79
 msgid "Move down"
 msgstr "Symud i lawr"
 
-#: kdeprintfax.cpp:80
+#: kdeprintfax.cpp:82
 msgid "F&iles:"
 msgstr "Ffe&iliau:"
 
-#: kdeprintfax.cpp:87
-msgid "Fax &number:"
-msgstr "&Rhif ffacs:"
-
 #: kdeprintfax.cpp:89
-msgid "N&ame:"
-msgstr "E&nw:"
+msgid "Enterprise"
+msgstr "Menter"
 
-#: kdeprintfax.cpp:91
-msgid "&Enterprise:"
-msgstr "&Menter:"
+#: kdeprintfax.cpp:96
+msgid "Add fax number"
+msgstr "Ychwanegu rhif ffacs"
 
-#: kdeprintfax.cpp:93
+#: kdeprintfax.cpp:100
+msgid "Add fax number from addressbook"
+msgstr "Ychwanegu rhif ffacs o'r llyfr cyfeiriadau"
+
+#: kdeprintfax.cpp:104
+msgid "Remove fax number"
+msgstr "Gwaredu rhif ffacs"
+
+#: kdeprintfax.cpp:107
 msgid "&Comment:"
 msgstr "&Sylw:"
 
-#: kdeprintfax.cpp:101
+#: kdeprintfax.cpp:115
 msgid "Sched&ule:"
 msgstr "Trefn&len:"
 
-#: kdeprintfax.cpp:103
+#: kdeprintfax.cpp:117
 msgid "Now"
 msgstr "Nawr"
 
-#: kdeprintfax.cpp:104
+#: kdeprintfax.cpp:118
 msgid "At Specified Time"
 msgstr "Am Amser Penodol"
 
-#: kdeprintfax.cpp:112
+#: kdeprintfax.cpp:126
 msgid "Su&bject:"
 msgstr "&Pwnc:"
 
-#: kdeprintfax.cpp:149 kdeprintfax.cpp:235
+#: kdeprintfax.cpp:166 kdeprintfax.cpp:249
 msgid "Processing..."
 msgstr "Yn prosesu..."
 
-#: kdeprintfax.cpp:150 kdeprintfax.cpp:345
+#: kdeprintfax.cpp:167 kdeprintfax.cpp:394
 msgid "Idle"
 msgstr "Segur"
 
-#: kdeprintfax.cpp:154
+#: kdeprintfax.cpp:171
 msgid "Send to Fax"
 msgstr "Anfon i'r Ffacs"
 
-#: kdeprintfax.cpp:169
+#: kdeprintfax.cpp:186
 msgid "&Add File..."
 msgstr "&Ychwanegu Ffeil..."
 
-#: kdeprintfax.cpp:170
+#: kdeprintfax.cpp:187
 msgid "&Remove File"
 msgstr "&Gwaredu Ffeil"
 
-#: kdeprintfax.cpp:171
+#: kdeprintfax.cpp:188
 msgid "&Send Fax"
 msgstr "&Anfon Ffacs"
 
-#: kdeprintfax.cpp:172
+#: kdeprintfax.cpp:189
 msgid "A&bort"
 msgstr "&Erthylu"
 
-#: kdeprintfax.cpp:173
+#: kdeprintfax.cpp:190
 msgid "A&ddress Book"
 msgstr "Llyfr Cyfeiria&dau"
 
-#: kdeprintfax.cpp:174
+#: kdeprintfax.cpp:191
 msgid "V&iew Log"
 msgstr "Gwe&ld y Cofnodion"
 
-#: kdeprintfax.cpp:175
+#: kdeprintfax.cpp:192
 msgid "Vi&ew File"
 msgstr "Gw&eld y Ffeil"
 
-#: kdeprintfax.cpp:228
+#: kdeprintfax.cpp:193
+msgid "&New Fax Recipient..."
+msgstr "&Derbyniwr Ffacs Newydd..."
+
+#: kdeprintfax.cpp:242
 msgid "No file to fax."
 msgstr "Dim ffeil i'w hanfon fel ffacs."
 
-#: kdeprintfax.cpp:230
+#: kdeprintfax.cpp:244
 msgid "No fax number specified."
 msgstr "Ni benodwyd rhif ffacs."
 
-#: kdeprintfax.cpp:238
+#: kdeprintfax.cpp:252
 msgid "Unable to start Fax process."
 msgstr "Methu dechrau'r broses Ffacs."
 
-#: kdeprintfax.cpp:244
+#: kdeprintfax.cpp:258
 msgid "Unable to stop Fax process."
 msgstr "Methu atal y broses Ffacs."
 
-#: kdeprintfax.cpp:268
+#: kdeprintfax.cpp:281
 #, c-format
 msgid "Unable to retrieve %1."
 msgstr "Methu nôl %1."
 
-#: kdeprintfax.cpp:352
+#: kdeprintfax.cpp:401
 msgid "Fax error: see log message for more information."
 msgstr "Gwall ffacs: gweler y neges gofnod am fwy o wybodaeth."
+
+#: kdeprintfax.cpp:544
+msgid "Enter recipient fax properties."
+msgstr "Rhowch briodweddau ffacs y derbyniwr."
+
+#: kdeprintfax.cpp:545
+msgid "&Number:"
+msgstr "Rh&if:"
+
+#: kdeprintfax.cpp:546
+msgid "N&ame:"
+msgstr "E&nw:"
+
+#: kdeprintfax.cpp:547
+msgid "&Enterprise:"
+msgstr "&Menter:"
+
+#: kdeprintfax.cpp:573
+msgid "Invalid fax number."
+msgstr "Rhif ffacs annilys."
+
+#~ msgid "Fax &number:"
+#~ msgstr "&Rhif ffacs:"
+
