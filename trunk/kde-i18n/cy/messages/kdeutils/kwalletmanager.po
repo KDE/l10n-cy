@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeutils/kwalletmanager.po\n"
-"POT-Creation-Date: 2004-11-13 01:19+0100\n"
+"POT-Creation-Date: 2004-12-29 14:54+0100\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -33,44 +33,48 @@ msgstr ""
 msgid "Folder Entry"
 msgstr ""
 
-#: kwalleteditor.cpp:85
+#: kwalleteditor.cpp:86
 msgid "&Show values"
 msgstr ""
 
-#: kwalleteditor.cpp:142
+#: kwalleteditor.cpp:143
 msgid "Passwords"
 msgstr "Cyfrineiriau"
 
-#: kwalleteditor.cpp:143
+#: kwalleteditor.cpp:144
 msgid "Maps"
 msgstr ""
 
-#: kwalleteditor.cpp:144
+#: kwalleteditor.cpp:145
 msgid "Binary Data"
 msgstr ""
 
-#: kwalleteditor.cpp:145
+#: kwalleteditor.cpp:146
 msgid "Unknown"
 msgstr "Anhysbys"
 
-#: kwalleteditor.cpp:179
+#: kwalleteditor.cpp:180
 msgid "&New Folder..."
 msgstr "&Plygell Newydd"
 
-#: kwalleteditor.cpp:185
+#: kwalleteditor.cpp:186
 msgid "&Delete Folder"
 msgstr "Dile&u Plygell"
 
-#: kwalleteditor.cpp:193 kwalletpopup.cpp:45
+#: kwalleteditor.cpp:194 kwalletpopup.cpp:45
 msgid "Change &Password..."
 msgstr "Newid Cyf&rinair..."
 
-#: kwalleteditor.cpp:203
+#: kwalleteditor.cpp:198
+msgid "&Merge Wallet..."
+msgstr ""
+
+#: kwalleteditor.cpp:202
 #, fuzzy
 msgid "&Import XML..."
 msgstr "&Allforio..."
 
-#: kwalleteditor.cpp:207
+#: kwalleteditor.cpp:206
 msgid "&Export..."
 msgstr "&Allforio..."
 
@@ -85,8 +89,7 @@ msgid "Are you sure you wish to delete the folder '%1' from the wallet?"
 msgstr ""
 
 #: kwalleteditor.cpp:259
-#, c-format
-msgid "Error deleting folder.  Error code=%1"
+msgid "Error deleting folder."
 msgstr ""
 
 #: kwalleteditor.cpp:276
@@ -106,17 +109,17 @@ msgstr ""
 msgid "Error saving entry. Error code: %1"
 msgstr ""
 
-#: kwalleteditor.cpp:344 kwalleteditor.cpp:611
+#: kwalleteditor.cpp:344 kwalleteditor.cpp:614
 #, c-format
 msgid "Password: %1"
 msgstr "Cyfrinair: %1"
 
-#: kwalleteditor.cpp:357 kwalleteditor.cpp:613
+#: kwalleteditor.cpp:357 kwalleteditor.cpp:616
 #, c-format
 msgid "Name-Value Map: %1"
 msgstr ""
 
-#: kwalleteditor.cpp:366 kwalleteditor.cpp:615
+#: kwalleteditor.cpp:366 kwalleteditor.cpp:618
 #, c-format
 msgid "Binary Data: %1"
 msgstr ""
@@ -131,125 +134,130 @@ msgid ""
 "<ul><li>%3</li></ul></qt>"
 msgstr ""
 
-#: kwalleteditor.cpp:424
+#: kwalleteditor.cpp:425
 msgid "Folder:"
 msgstr "Plygell:"
 
-#: kwalleteditor.cpp:426
+#: kwalleteditor.cpp:427
 #, c-format
 msgid ""
 "_n: Contains one item.\n"
 "Contains %n items."
 msgstr ""
 
-#: kwalleteditor.cpp:527 kwalleteditor.cpp:532
+#: kwalleteditor.cpp:530 kwalleteditor.cpp:535
 msgid "&New..."
 msgstr "&Newydd..."
 
-#: kwalleteditor.cpp:528
+#: kwalleteditor.cpp:531
 msgid "&Rename"
 msgstr "&Ail-enwi"
 
-#: kwalleteditor.cpp:544
+#: kwalleteditor.cpp:547
 msgid "New Entry"
 msgstr ""
 
-#: kwalleteditor.cpp:545
+#: kwalleteditor.cpp:548
 msgid "Please choose a name for the new entry:"
 msgstr ""
 
-#: kwalleteditor.cpp:556
+#: kwalleteditor.cpp:559
 msgid "Sorry, that entry already exists. Try again?"
 msgstr ""
 
-#: kwalleteditor.cpp:627
+#: kwalleteditor.cpp:630
 msgid "Are you sure you wish to delete the item '%1'?"
 msgstr ""
 
-#: kwalleteditor.cpp:658
+#: kwalleteditor.cpp:661
 msgid "Unable to open the requested wallet."
 msgstr ""
 
-#: kwalleteditor.cpp:700
-msgid "Unable to access XML file '<b>%1</b>'."
+#: kwalleteditor.cpp:697
+msgid "Unable to access wallet '<b>%1</b>'."
 msgstr ""
 
-#: kwalleteditor.cpp:706
-msgid "Error opening XML file '<b>%1</b>' for input."
-msgstr ""
-
-#: kwalleteditor.cpp:713
-msgid "Error reading XML file '<b>%1</b>' for input."
-msgstr ""
-
-#: kwalleteditor.cpp:720
-msgid "Error: XML file does not contain a wallet."
-msgstr ""
-
-#: kwalleteditor.cpp:753
+#: kwalleteditor.cpp:726 kwalleteditor.cpp:756 kwalleteditor.cpp:786
+#: kwalleteditor.cpp:878
 msgid ""
 "Folder '<b>%1</b>' already contains an entry '<b>%2</b>'.  Do you wish to "
 "replace it?"
 msgstr ""
 
-#: kwalletmanager.cpp:59 kwalletmanager.cpp:310
+#: kwalleteditor.cpp:826
+msgid "Unable to access XML file '<b>%1</b>'."
+msgstr ""
+
+#: kwalleteditor.cpp:832
+msgid "Error opening XML file '<b>%1</b>' for input."
+msgstr ""
+
+#: kwalleteditor.cpp:839
+msgid "Error reading XML file '<b>%1</b>' for input."
+msgstr ""
+
+#: kwalleteditor.cpp:846
+msgid "Error: XML file does not contain a wallet."
+msgstr ""
+
+#: kwalletmanager.cpp:61 kwalletmanager.cpp:312
 msgid "KDE Wallet: No wallets open."
 msgstr ""
 
-#: kwalletmanager.cpp:66 kwalletmanager.cpp:165
+#: kwalletmanager.cpp:68 kwalletmanager.cpp:167
 msgid "KDE Wallet: A wallet is open."
 msgstr ""
 
-#: kwalletmanager.cpp:103 kwalletpopup.cpp:37
+#: kwalletmanager.cpp:105 kwalletpopup.cpp:37
 msgid "&New Wallet..."
 msgstr ""
 
-#: kwalletmanager.cpp:106
+#: kwalletmanager.cpp:108
 msgid "Configure &Wallet..."
 msgstr ""
 
-#: kwalletmanager.cpp:112
+#: kwalletmanager.cpp:114
 msgid "Close &All Wallets"
 msgstr ""
 
-#: kwalletmanager.cpp:211
+#: kwalletmanager.cpp:213
 msgid "Are you sure you wish to delete the wallet '%1'?"
 msgstr ""
 
-#: kwalletmanager.cpp:217
+#: kwalletmanager.cpp:219
 #, c-format
 msgid "Unable to delete the wallet. Error code was %1."
 msgstr ""
 
-#: kwalletmanager.cpp:226
+#: kwalletmanager.cpp:228
 msgid ""
 "Unable to close wallet cleanly. It is probably in use by other applications. "
 "Do you wish to force it closed?"
 msgstr ""
 
-#: kwalletmanager.cpp:230
+#: kwalletmanager.cpp:232
 #, c-format
 msgid "Unable to force the wallet closed. Error code was %1."
 msgstr ""
 
-#: kwalletmanager.cpp:251 kwalletmanager.cpp:293
+#: kwalletmanager.cpp:253 kwalletmanager.cpp:295
 #, c-format
 msgid "Error opening wallet %1."
 msgstr ""
 
-#: kwalletmanager.cpp:345
+#: kwalletmanager.cpp:347
 msgid "Please choose a name for the new wallet:"
 msgstr ""
 
-#: kwalletmanager.cpp:348
+#: kwalletmanager.cpp:350
 msgid "New Wallet"
 msgstr ""
 
-#: kwalletmanager.cpp:359
+#: kwalletmanager.cpp:361
 msgid "Sorry, that wallet already exists. Try a new name?"
 msgstr ""
 
-#: kwalletmanager.cpp:367
+#: kwalletmanager.cpp:369
 msgid "Please choose a name that contains only alphanumeric characters:"
 msgstr ""
 

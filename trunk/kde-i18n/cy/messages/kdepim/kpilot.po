@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdepim/kpilot.po\n"
-"POT-Creation-Date: 2004-12-21 01:23+0100\n"
+"POT-Creation-Date: 2004-12-29 14:55+0100\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -77,8 +77,8 @@ msgstr ""
 msgid "FastSync"
 msgstr ""
 
-#: kpilot/conduitConfigDialog.cc:397 kpilot/kpilot.cc:304 kpilot/kpilot.cc:306
-#: kpilot/kpilot.cc:593 kpilot/kpilotConfigDialog.cc:216 lib/syncAction.cc:133
+#: kpilot/conduitConfigDialog.cc:397 kpilot/kpilot.cc:301 kpilot/kpilot.cc:303
+#: kpilot/kpilot.cc:590 kpilot/kpilotConfigDialog.cc:216 lib/syncAction.cc:133
 msgid "HotSync"
 msgstr ""
 
@@ -87,13 +87,13 @@ msgid "Full Synchronization"
 msgstr ""
 
 #. i18n: file ./kpilot/kpilotConfigDialog_sync.ui line 56
-#: kpilot/kpilot.cc:652 lib/syncAction.cc:135 rc.cpp:1097
+#: kpilot/kpilot.cc:649 lib/syncAction.cc:135 rc.cpp:1097
 #, no-c-format
 msgid "Copy PC to Handheld"
 msgstr ""
 
 #. i18n: file ./kpilot/kpilotConfigDialog_sync.ui line 61
-#: kpilot/kpilot.cc:643 lib/syncAction.cc:136 rc.cpp:1100
+#: kpilot/kpilot.cc:640 lib/syncAction.cc:136 rc.cpp:1100
 #, no-c-format
 msgid "Copy Handheld to PC"
 msgstr ""
@@ -124,7 +124,9 @@ msgid "Pilot device %1 is not read-write."
 msgstr ""
 
 #: lib/kpilotlink.cc:251
-msgid "Pilot device %1 does not exist. Assuming the device uses DevFS."
+msgid ""
+"Pilot device %1 does not exist. Probably it is a USB device and will appear "
+"during a HotSync."
 msgstr ""
 
 #: lib/kpilotlink.cc:275
@@ -205,11 +207,11 @@ msgid ""
 "set on the device?"
 msgstr ""
 
-#: lib/kpilotlink.cc:818 lib/kpilotlink.cc:832
+#: lib/kpilotlink.cc:820 lib/kpilotlink.cc:834
 msgid "<qt>Cannot install the file &quot;%1&quot;.</qt>"
 msgstr ""
 
-#: lib/kpilotlink.cc:920
+#: lib/kpilotlink.cc:922
 msgid ""
 "End of HotSync\n"
 msgstr ""
@@ -376,17 +378,62 @@ msgstr "Prif Awdur"
 msgid "NULL conduit is programmed to fail."
 msgstr ""
 
-#: conduits/memofileconduit/memofile-conduit.cc:76
+#: conduits/memofileconduit/memofiles.cc:738
+msgid "%1 new to filesystem. "
+msgstr ""
+
+#: conduits/memofileconduit/memofiles.cc:741
+msgid "%1 changed to filesystem. "
+msgstr ""
+
+#: conduits/memofileconduit/memofiles.cc:744
+msgid "%1 deleted from filesystem. "
+msgstr ""
+
+#: conduits/memofileconduit/memofile-conduit.cc:78
 #: conduits/memofileconduit/memofile-factory.cc:71
 msgid "Memofile"
 msgstr ""
 
-#: conduits/memofileconduit/memofile-conduit.cc:93
+#: conduits/memofileconduit/memofile-conduit.cc:95
 msgid "Unable to open the memo databases on the handheld."
 msgstr ""
 
-#: conduits/memofileconduit/memofile-conduit.cc:100
+#: conduits/memofileconduit/memofile-conduit.cc:102
 msgid "Cannot initialize from pilot."
+msgstr ""
+
+#: conduits/memofileconduit/memofile-conduit.cc:109
+#, c-format
+msgid " Syncing with %1."
+msgstr ""
+
+#: conduits/memofileconduit/memofile-conduit.cc:112
+msgid " Copying Pilot to PC..."
+msgstr ""
+
+#: conduits/memofileconduit/memofile-conduit.cc:121
+msgid " Copying PC to Pilot..."
+msgstr ""
+
+#: conduits/memofileconduit/memofile-conduit.cc:127
+msgid " Doing regular sync..."
+msgstr ""
+
+#: conduits/memofileconduit/memofile-conduit.cc:607
+msgid "%1 new to Palm. "
+msgstr ""
+
+#: conduits/memofileconduit/memofile-conduit.cc:610
+msgid "%1 changed to Palm. "
+msgstr ""
+
+#: conduits/memofileconduit/memofile-conduit.cc:613
+msgid "%1 deleted from Palm. "
+msgstr ""
+
+#: conduits/memofileconduit/memofile-conduit.cc:618
+msgid " no changes made."
 msgstr ""
 
 #: conduits/memofileconduit/memofile-factory.cc:126
@@ -677,28 +724,22 @@ msgstr ""
 
 #: conduits/calendarbaseconduit/vcal-conduitbase.cc:166
 #: conduits/calendarbaseconduit/vcal-conduitbase.cc:239
-#: conduits/vcalconduit/vcal-conduitbase.cc:275
-#: conduits/vcalconduit/vcal-conduitbase.cc:349
 msgid "Using %1 time zone: %2"
 msgstr ""
 
 #: conduits/calendarbaseconduit/vcal-conduitbase.cc:168
 #: conduits/calendarbaseconduit/vcal-conduitbase.cc:241
-#: conduits/vcalconduit/vcal-conduitbase.cc:277
-#: conduits/vcalconduit/vcal-conduitbase.cc:351
 msgid "non-local"
 msgstr ""
 
 #: conduits/calendarbaseconduit/vcal-conduitbase.cc:168
 #: conduits/calendarbaseconduit/vcal-conduitbase.cc:241
-#: conduits/vcalconduit/vcal-conduitbase.cc:277
-#: conduits/vcalconduit/vcal-conduitbase.cc:351
 msgid "local"
 msgstr ""
 
 #: conduits/abbrowserconduit/abbrowser-conduit.cc:226
 #: conduits/calendarbaseconduit/vcal-conduitbase.cc:176
-#: conduits/vcalconduit/vcal-conduitbase.cc:284
+#: conduits/vcalconduit/vcal-conduitbase.cc:283
 msgid ""
 "You chose to sync with the file \"%1\", which cannot be opened. Please make "
 "sure to supply a valid file name in the conduit's configuration dialog. "
@@ -706,7 +747,7 @@ msgid ""
 msgstr ""
 
 #: conduits/calendarbaseconduit/vcal-conduitbase.cc:207
-#: conduits/vcalconduit/vcal-conduitbase.cc:314
+#: conduits/vcalconduit/vcal-conduitbase.cc:313
 msgid ""
 "You chose to sync with the file \"%1\", which cannot be opened or created. "
 "Please make sure to supply a valid file name in the conduit's configuration "
@@ -714,22 +755,22 @@ msgid ""
 msgstr ""
 
 #: conduits/calendarbaseconduit/vcal-conduitbase.cc:217
-#: conduits/vcalconduit/vcal-conduitbase.cc:323
+#: conduits/vcalconduit/vcal-conduitbase.cc:322
 msgid "Syncing with file \"%1\""
 msgstr ""
 
 #: conduits/calendarbaseconduit/vcal-conduitbase.cc:238
-#: conduits/vcalconduit/vcal-conduitbase.cc:348
+#: conduits/vcalconduit/vcal-conduitbase.cc:347
 msgid "Syncing with standard calendar resource."
 msgstr ""
 
 #: conduits/calendarbaseconduit/vcal-conduitbase.cc:253
-#: conduits/vcalconduit/vcal-conduitbase.cc:362
+#: conduits/vcalconduit/vcal-conduitbase.cc:360
 msgid "Unable to initialize the calendar object. Please check the conduit's setup"
 msgstr ""
 
 #: conduits/calendarbaseconduit/vcal-conduitbase.cc:283
-#: conduits/vcalconduit/vcal-conduitbase.cc:585
+#: conduits/vcalconduit/vcal-conduitbase.cc:583
 msgid ""
 "An error occurred while uploading \"%1\". You can try to upload the "
 "temporary local file \"%2\" manually."
@@ -748,7 +789,7 @@ msgid ""
 msgstr ""
 
 #: conduits/calendarbaseconduit/vcal-conduitbase.cc:466
-#: conduits/vcalconduit/vcal-conduitbase.cc:668
+#: conduits/vcalconduit/vcal-conduitbase.cc:666
 msgid "Conflicting Entries"
 msgstr "Cofnodion sy'n Gwrthdaro"
 
@@ -771,7 +812,7 @@ msgstr ""
 #: conduits/vcalconduit/todo-factory.cc:70
 #: conduits/vcalconduit/todo-factory.cc:74
 #: conduits/vcalconduit/vcal-factory.cc:65
-#: conduits/vcalconduit/vcal-factory.cc:69 kpilot/kpilot.cc:1136
+#: conduits/vcalconduit/vcal-factory.cc:69 kpilot/kpilot.cc:1132
 #: kpilot/pilotDaemon.cc:1294
 msgid "Maintainer"
 msgstr "Cynhaliwr"
@@ -1410,8 +1451,8 @@ msgid "iCalendar port"
 msgstr ""
 
 #: conduits/calendarconduits/vcal-factory.cc:81
-#: conduits/vcalconduit/vcal-factory.cc:81 kpilot/kpilot.cc:1144
-#: kpilot/kpilot.cc:1145
+#: conduits/vcalconduit/vcal-factory.cc:81 kpilot/kpilot.cc:1140
+#: kpilot/kpilot.cc:1141
 msgid "Bugfixer"
 msgstr ""
 
@@ -1428,7 +1469,7 @@ msgid "To-do Destination"
 msgstr ""
 
 #: conduits/vcalconduit/vcal-conduitbase.cc:173
-#: conduits/vcalconduit/vcal-conduitbase.cc:407
+#: conduits/vcalconduit/vcal-conduitbase.cc:405
 msgid "Copying records to Pilot ..."
 msgstr ""
 
@@ -1440,25 +1481,37 @@ msgstr ""
 msgid "Could not open the calendar databases."
 msgstr ""
 
-#: conduits/vcalconduit/vcal-conduitbase.cc:401
+#: conduits/vcalconduit/vcal-conduitbase.cc:276
+#: conduits/vcalconduit/vcal-conduitbase.cc:349
+#, c-format
+msgid "Using local time zone: %1"
+msgstr ""
+
+#: conduits/vcalconduit/vcal-conduitbase.cc:277
+#: conduits/vcalconduit/vcal-conduitbase.cc:350
+#, c-format
+msgid "Using non-local time zone: %1"
+msgstr ""
+
+#: conduits/vcalconduit/vcal-conduitbase.cc:399
 msgid "Cleaning up ..."
 msgstr ""
 
-#: conduits/vcalconduit/vcal-conduitbase.cc:657
+#: conduits/vcalconduit/vcal-conduitbase.cc:655
 msgid ""
 "The following item was modified both on the Pilot and on your PC:\n"
 "PC entry:\n"
 "\t"
 msgstr ""
 
-#: conduits/vcalconduit/vcal-conduitbase.cc:660
+#: conduits/vcalconduit/vcal-conduitbase.cc:658
 msgid ""
 "\n"
 "Pilot entry:\n"
 "\t"
 msgstr ""
 
-#: conduits/vcalconduit/vcal-conduitbase.cc:662
+#: conduits/vcalconduit/vcal-conduitbase.cc:660
 msgid ""
 "\n"
 "\n"
@@ -1977,13 +2030,13 @@ msgstr ""
 msgid "Next HotSync will be: %1. "
 msgstr ""
 
-#: kpilot/kpilot.cc:411 kpilot/kpilot.cc:419 kpilot/kpilot.cc:427
-#: kpilot/kpilot.cc:435 kpilot/kpilot.cc:443 kpilot/kpilot.cc:451
-#: kpilot/kpilot.cc:459 kpilot/pilotDaemon.cc:698
+#: kpilot/kpilot.cc:408 kpilot/kpilot.cc:416 kpilot/kpilot.cc:424
+#: kpilot/kpilot.cc:432 kpilot/kpilot.cc:440 kpilot/kpilot.cc:448
+#: kpilot/kpilot.cc:456 kpilot/pilotDaemon.cc:698
 msgid "Please press the HotSync button."
 msgstr ""
 
-#: kpilot/kpilot.cc:321 kpilot/kpilot.cc:324 kpilot/pilotDaemon.cc:757
+#: kpilot/kpilot.cc:318 kpilot/kpilot.cc:321 kpilot/pilotDaemon.cc:757
 msgid "File Installer"
 msgstr ""
 
@@ -2016,7 +2069,7 @@ msgstr ""
 msgid "Next sync is %1."
 msgstr ""
 
-#: kpilot/kpilot.cc:1100 kpilot/main-test.cc:99 kpilot/pilotDaemon.cc:1266
+#: kpilot/kpilot.cc:1097 kpilot/main-test.cc:99 kpilot/pilotDaemon.cc:1266
 msgid "Set debugging level"
 msgstr ""
 
@@ -2028,7 +2081,7 @@ msgstr ""
 msgid "KPilot Daemon"
 msgstr ""
 
-#: kpilot/kpilot.cc:1133 kpilot/pilotDaemon.cc:1291
+#: kpilot/kpilot.cc:1129 kpilot/pilotDaemon.cc:1291
 msgid "Project Leader"
 msgstr ""
 
@@ -2780,83 +2833,88 @@ msgstr ""
 msgid "HotSync finished."
 msgstr ""
 
-#: kpilot/hotSync.cc:264
+#: kpilot/hotSync.cc:250
+#, c-format
+msgid "Backup directory: %1."
+msgstr ""
+
+#: kpilot/hotSync.cc:266
 msgid "Full backup started."
 msgstr ""
 
-#: kpilot/hotSync.cc:269
+#: kpilot/hotSync.cc:271
 msgid "Fast backup started"
 msgstr ""
 
-#: kpilot/hotSync.cc:342
+#: kpilot/hotSync.cc:344
 msgid "Exiting on cancel."
 msgstr ""
 
-#: kpilot/hotSync.cc:357
+#: kpilot/hotSync.cc:359
 msgid "Full backup complete."
 msgstr ""
 
-#: kpilot/hotSync.cc:359
+#: kpilot/hotSync.cc:361
 msgid "Fast backup complete."
 msgstr ""
 
-#: kpilot/hotSync.cc:391
+#: kpilot/hotSync.cc:393
 #, c-format
 msgid "Skipping %1"
 msgstr "Yn hepgor %1"
 
-#: kpilot/hotSync.cc:404
+#: kpilot/hotSync.cc:406
 #, c-format
 msgid "Backing up: %1"
 msgstr ""
 
-#: kpilot/hotSync.cc:413
+#: kpilot/hotSync.cc:415
 msgid ""
 "Backup of %1 failed.\n"
 msgstr ""
 
-#: kpilot/hotSync.cc:418
+#: kpilot/hotSync.cc:420
 msgid ""
 " .. OK\n"
 msgstr ""
 
-#: kpilot/hotSync.cc:551
+#: kpilot/hotSync.cc:549
 msgid "[File Installer]"
 msgstr ""
 
-#: kpilot/hotSync.cc:556
+#: kpilot/hotSync.cc:554
 msgid "No Files to install"
 msgstr ""
 
-#: kpilot/hotSync.cc:568
+#: kpilot/hotSync.cc:566
 #, c-format
 msgid ""
 "_n: Installing one file\n"
 "Installing %n Files"
 msgstr ""
 
-#: kpilot/hotSync.cc:593
+#: kpilot/hotSync.cc:591
 msgid "Done Installing Files"
 msgstr ""
 
-#: kpilot/hotSync.cc:607
+#: kpilot/hotSync.cc:605
 #, c-format
 msgid "Installing %1"
 msgstr ""
 
-#: kpilot/hotSync.cc:630
+#: kpilot/hotSync.cc:628
 msgid "Cannot install file &quot;%1&quot;."
 msgstr ""
 
-#: kpilot/hotSync.cc:657 kpilot/hotSync.cc:667
+#: kpilot/hotSync.cc:655 kpilot/hotSync.cc:665
 msgid "Unable to open file &quot;%1&quot;."
 msgstr ""
 
-#: kpilot/hotSync.cc:676
+#: kpilot/hotSync.cc:674
 msgid "Unable to read file &quot;%1&quot;."
 msgstr ""
 
-#: kpilot/hotSync.cc:692
+#: kpilot/hotSync.cc:690
 msgid ""
 "The database in &quot;%1&quot; has a resource name that is longer than 31 "
 "characters. This suggests a bug in the tool used to create the database. "
@@ -2867,277 +2925,277 @@ msgstr ""
 msgid "Starting the KPilot daemon ..."
 msgstr ""
 
-#: kpilot/kpilot.cc:206
+#: kpilot/kpilot.cc:203
 msgid ""
 "Could not start the KPilot daemon. The system error message was: "
 "&quot;%1&quot;"
 msgstr ""
 
-#: kpilot/kpilot.cc:226
+#: kpilot/kpilot.cc:223
 msgid "Daemon status is `%1'"
 msgstr ""
 
-#: kpilot/kpilot.cc:227
+#: kpilot/kpilot.cc:224
 msgid "not running"
 msgstr ""
 
-#: kpilot/kpilot.cc:242
+#: kpilot/kpilot.cc:239
 msgid "Using character set %1 on the handheld."
 msgstr ""
 
-#: kpilot/kpilot.cc:309 kpilot/kpilot.cc:311
+#: kpilot/kpilot.cc:306 kpilot/kpilot.cc:308
 msgid "To-do Viewer"
 msgstr ""
 
 #. i18n: file ./kpilot/kpilotConfigDialog_viewers.ui line 74
-#: kpilot/kpilot.cc:313 kpilot/kpilot.cc:315 rc.cpp:1307
+#: kpilot/kpilot.cc:310 kpilot/kpilot.cc:312 rc.cpp:1307
 #, no-c-format
 msgid "Address Viewer"
 msgstr ""
 
-#: kpilot/kpilot.cc:317 kpilot/kpilot.cc:319
+#: kpilot/kpilot.cc:314 kpilot/kpilot.cc:316
 msgid "Memo Viewer"
 msgstr ""
 
-#: kpilot/kpilot.cc:326 kpilot/kpilot.cc:328
+#: kpilot/kpilot.cc:323 kpilot/kpilot.cc:325
 msgid "Generic DB Viewer"
 msgstr ""
 
-#: kpilot/kpilot.cc:410
+#: kpilot/kpilot.cc:407
 msgid "Next sync will be a backup. "
 msgstr ""
 
-#: kpilot/kpilot.cc:418
+#: kpilot/kpilot.cc:415
 msgid "Next sync will restore the Pilot from backup. "
 msgstr ""
 
-#: kpilot/kpilot.cc:426
+#: kpilot/kpilot.cc:423
 msgid "Next sync will be a regular HotSync. "
 msgstr ""
 
-#: kpilot/kpilot.cc:434
+#: kpilot/kpilot.cc:431
 msgid "Next sync will be a Fast Sync. "
 msgstr ""
 
-#: kpilot/kpilot.cc:442
+#: kpilot/kpilot.cc:439
 msgid "Next sync will be a Full Sync. "
 msgstr ""
 
-#: kpilot/kpilot.cc:450
+#: kpilot/kpilot.cc:447
 msgid "Next sync will copy Handheld data to PC. "
 msgstr ""
 
-#: kpilot/kpilot.cc:458
+#: kpilot/kpilot.cc:455
 msgid "Next sync will copy PC data to Handheld. "
 msgstr ""
 
-#: kpilot/kpilot.cc:496
+#: kpilot/kpilot.cc:493
 msgid ""
 "The daemon has exited. No further HotSyncs are possible until the daemon is "
 "restarted (by quitting and restarting KPilot, for instance.)"
 msgstr ""
 
-#: kpilot/kpilot.cc:518
+#: kpilot/kpilot.cc:515
 #, c-format
 msgid "Cannot start a Sync now. %1"
 msgstr ""
 
-#: kpilot/kpilot.cc:536
+#: kpilot/kpilot.cc:533
 msgid "Cannot start Sync"
 msgstr ""
 
-#: kpilot/kpilot.cc:595
+#: kpilot/kpilot.cc:592
 msgid "Select the kind of HotSync to perform next."
 msgstr ""
 
-#: kpilot/kpilot.cc:596
+#: kpilot/kpilot.cc:593
 msgid ""
 "Select the kind of HotSync to perform next. This applies only to the next "
 "HotSync; to change the default, use the configuration dialog."
 msgstr ""
 
-#: kpilot/kpilot.cc:603
+#: kpilot/kpilot.cc:600
 msgid "&HotSync"
 msgstr ""
 
-#: kpilot/kpilot.cc:606
+#: kpilot/kpilot.cc:603
 msgid "Next HotSync will be normal HotSync."
 msgstr ""
 
-#: kpilot/kpilot.cc:607
+#: kpilot/kpilot.cc:604
 msgid "Tell the daemon that the next HotSync should be a normal HotSync."
 msgstr ""
 
-#: kpilot/kpilot.cc:611
+#: kpilot/kpilot.cc:608
 msgid "&FastSync"
 msgstr ""
 
-#: kpilot/kpilot.cc:614
+#: kpilot/kpilot.cc:611
 msgid "Next HotSync will be a FastSync."
 msgstr ""
 
-#: kpilot/kpilot.cc:615
+#: kpilot/kpilot.cc:612
 msgid ""
 "Tell the daemon that the next HotSync should be a FastSync (run conduits "
 "only)."
 msgstr ""
 
-#: kpilot/kpilot.cc:619
+#: kpilot/kpilot.cc:616
 msgid "Full&Sync"
 msgstr ""
 
-#: kpilot/kpilot.cc:622
+#: kpilot/kpilot.cc:619
 msgid "Next HotSync will be a FullSync."
 msgstr ""
 
-#: kpilot/kpilot.cc:623
+#: kpilot/kpilot.cc:620
 msgid ""
 "Tell the daemon that the next HotSync should be a FullSync (check data on "
 "both sides)."
 msgstr ""
 
-#: kpilot/kpilot.cc:627
+#: kpilot/kpilot.cc:624
 msgid "&Backup"
 msgstr "&Copi-wrth-gefn"
 
-#: kpilot/kpilot.cc:630 kpilot/kpilot.cc:646
+#: kpilot/kpilot.cc:627 kpilot/kpilot.cc:643
 msgid "Next HotSync will be backup."
 msgstr ""
 
-#: kpilot/kpilot.cc:631
+#: kpilot/kpilot.cc:628
 msgid "Tell the daemon that the next HotSync should back up the Handheld to the PC."
 msgstr ""
 
-#: kpilot/kpilot.cc:635
+#: kpilot/kpilot.cc:632
 msgid "&Restore"
 msgstr "&Adfer"
 
-#: kpilot/kpilot.cc:638
+#: kpilot/kpilot.cc:635
 msgid "Next HotSync will be restore."
 msgstr ""
 
-#: kpilot/kpilot.cc:639
+#: kpilot/kpilot.cc:636
 msgid ""
 "Tell the daemon that the next HotSync should restore the Handheld from data "
 "on the PC."
 msgstr ""
 
-#: kpilot/kpilot.cc:647
+#: kpilot/kpilot.cc:644
 msgid ""
 "Tell the daemon that the next HotSync should copy all data from the Handheld "
 "to the PC, overwriting entries on the PC."
 msgstr ""
 
-#: kpilot/kpilot.cc:655
+#: kpilot/kpilot.cc:652
 msgid "Next HotSync will copy PC to Handheld."
 msgstr ""
 
-#: kpilot/kpilot.cc:656
+#: kpilot/kpilot.cc:653
 msgid ""
 "Tell the daemon that the next HotSync should copy all data from the PC to "
 "the Handheld, overwriting entries on the Handheld."
 msgstr ""
 
-#: kpilot/kpilot.cc:663
+#: kpilot/kpilot.cc:660
 msgid "&List Only"
 msgstr ""
 
-#: kpilot/kpilot.cc:666
+#: kpilot/kpilot.cc:663
 msgid "Next HotSync will list databases."
 msgstr ""
 
-#: kpilot/kpilot.cc:667
+#: kpilot/kpilot.cc:664
 msgid ""
 "Tell the daemon that the next HotSync should just list the files on the "
 "Handheld and do nothing else."
 msgstr ""
 
-#: kpilot/kpilot.cc:674
+#: kpilot/kpilot.cc:671
 msgid "Rese&t Link"
 msgstr ""
 
-#: kpilot/kpilot.cc:677
+#: kpilot/kpilot.cc:674
 msgid "Reset the device connection."
 msgstr ""
 
-#: kpilot/kpilot.cc:678
+#: kpilot/kpilot.cc:675
 msgid "Try to reset the daemon and its connection to the Handheld."
 msgstr ""
 
-#: kpilot/kpilot.cc:683
+#: kpilot/kpilot.cc:680
 msgid "Quit KPilot, (and stop the daemon if configured that way)."
 msgstr ""
 
-#: kpilot/kpilot.cc:699
+#: kpilot/kpilot.cc:696
 msgid "Configuration &Wizard..."
 msgstr ""
 
-#: kpilot/kpilot.cc:702
+#: kpilot/kpilot.cc:699
 msgid "Configure KPilot using the configuration wizard."
 msgstr ""
 
-#: kpilot/kpilot.cc:957
+#: kpilot/kpilot.cc:954
 msgid ""
 "The library containing the configuration wizard for KPilot could not be "
 "loaded, and the wizard is not available. Please try to use the regular "
 "configuration dialog."
 msgstr ""
 
-#: kpilot/kpilot.cc:960
+#: kpilot/kpilot.cc:957
 msgid "Wizard Not Available"
 msgstr ""
 
-#: kpilot/kpilot.cc:1004
+#: kpilot/kpilot.cc:1001
 msgid "Changed username to `%1'."
 msgstr ""
 
-#: kpilot/kpilot.cc:1033
+#: kpilot/kpilot.cc:1030
 msgid ""
 "Cannot run KPilot's configuration wizard right now (KPilot's UI is already "
 "busy)."
 msgstr ""
 
-#: kpilot/kpilot.cc:1057
+#: kpilot/kpilot.cc:1054
 msgid "Cannot configure KPilot right now (KPilot's UI is already busy)."
 msgstr ""
 
-#: kpilot/kpilot.cc:1097
+#: kpilot/kpilot.cc:1094
 msgid "Setup the Pilot device, conduits and other parameters"
 msgstr ""
 
-#: kpilot/kpilot.cc:1124
+#: kpilot/kpilot.cc:1120
 msgid "KPilot"
 msgstr ""
 
-#: kpilot/kpilot.cc:1139
+#: kpilot/kpilot.cc:1135
 msgid "Core and conduits developer"
 msgstr ""
 
-#: kpilot/kpilot.cc:1140
+#: kpilot/kpilot.cc:1136
 msgid "VCal conduit"
 msgstr ""
 
-#: kpilot/kpilot.cc:1141
+#: kpilot/kpilot.cc:1137
 msgid "Abbrowser conduit"
 msgstr ""
 
-#: kpilot/kpilot.cc:1142
+#: kpilot/kpilot.cc:1138
 msgid "Expenses conduit"
 msgstr ""
 
-#: kpilot/kpilot.cc:1143
+#: kpilot/kpilot.cc:1139
 msgid "Notepad conduit, Bugfixer"
 msgstr ""
 
-#: kpilot/kpilot.cc:1147
+#: kpilot/kpilot.cc:1143
 msgid "XML GUI"
 msgstr ""
 
-#: kpilot/kpilot.cc:1150
+#: kpilot/kpilot.cc:1146
 msgid ".ui files"
 msgstr ""
 
-#: kpilot/kpilot.cc:1152
+#: kpilot/kpilot.cc:1148
 msgid "Bugfixer, coolness"
 msgstr ""
 
@@ -5272,7 +5330,7 @@ msgstr ""
 #. i18n: file ./kpilot/kpilotConfigDialog_startup.ui line 90
 #: rc.cpp:1166
 #, no-c-format
-msgid "S&how KPilot in panel"
+msgid "S&how KPilot in system tray"
 msgstr ""
 
 #. i18n: file ./kpilot/kpilotConfigDialog_startup.ui line 93
