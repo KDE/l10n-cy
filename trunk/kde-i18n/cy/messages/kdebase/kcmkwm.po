@@ -1,17 +1,17 @@
 # translation of kcmkwm.po to Cymraeg
 # Translation of kcmkwm.po to Cymraeg
 # Bwrdd Gwaith yn Gymraeg.
-# Copyright (C) 2003 Free Software Foundation, Inc.
+# Copyright (C) 2003, 2004 Free Software Foundation, Inc.
 # www.kyfieithu.co.uk<kyfieithu@dotmon.com>, www.gyfieithu.co.uk<kyfieithu@dotmon.com>, 2003.
 # KGyfieithu <kyfieithu@dotmon.com>, 2003.
-# KD at KGyfieithu <kyfieithu@dotmon.com>, 2003.
+# KD at KGyfieithu <kyfieithu@dotmon.com>, 2003, 2004.
 #
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm\n"
-"POT-Creation-Date: 2004-02-12 22:29+0100\n"
-"PO-Revision-Date: 2003-12-29 08:28+0000\n"
+"POT-Creation-Date: 2004-06-30 01:17+0200\n"
+"PO-Revision-Date: 2004-07-03 22:38+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr ""
 msgid ""
 "_: NAME OF TRANSLATORS\n"
 "Your names"
-msgstr "Owain Green drwy KGyfieithu"
+msgstr "Owain Green drwy KGyfieithu, KD"
 
 #: _translatorinfo.cpp:3
 msgid ""
@@ -51,13 +51,13 @@ msgid "Ad&vanced"
 msgstr "&Uwch"
 
 #: main.cpp:151
+#, fuzzy
 msgid ""
 "<h1>Window Behavior</h1> Here you can customize the way windows behave when "
 "being moved, resized or clicked on. You can also specify a focus policy as "
 "well as a placement policy for new windows. "
-"<p>"
-"Please note that this configuration will not take effect if you don't use "
-"KWin as your window manager. If you do use a different window manager, "
+"<p>Please note that this configuration will not take effect if you do not "
+"use KWin as your window manager. If you do use a different window manager, "
 "please refer to its documentation for how to customize window behavior."
 msgstr ""
 "<h1>Ymddygiad Ffenestri</h1>"
@@ -376,31 +376,32 @@ msgstr "Gweithredoli, Codi a Symud"
 msgid "Resize"
 msgstr "Newid Maint"
 
-#: windows.cpp:113
+#: windows.cpp:115
 msgid "Focus"
 msgstr "Canolbwynt"
 
-#: windows.cpp:120
+#: windows.cpp:122
 msgid "&Policy:"
 msgstr "&Polisi:"
 
-#: windows.cpp:123
+#: windows.cpp:125
 msgid "Click to Focus"
 msgstr "Clicio i Ganolbwyntio"
 
-#: windows.cpp:124
+#: windows.cpp:126
 msgid "Focus Follows Mouse"
 msgstr "Canolbwynt yn Dilyn Llygoden"
 
-#: windows.cpp:125
+#: windows.cpp:127
 msgid "Focus Under Mouse"
 msgstr "Canolbwynt o Dan Llygoden"
 
-#: windows.cpp:126
+#: windows.cpp:128
 msgid "Focus Strictly Under Mouse"
 msgstr "Canolbwynt yn Union o Dan Llygoden"
 
-#: windows.cpp:131
+#: windows.cpp:133
+#, fuzzy
 msgid ""
 "The focus policy is used to determine the active window, i.e. the window you "
 "can work in. "
@@ -409,17 +410,18 @@ msgid ""
 " A window becomes active when you click into it. This is the behavior you "
 "might know from other operating systems.</li> "
 "<li><em>Focus follows mouse:</em> Moving the mouse pointer actively on to a "
-"normal window activates it. Very practical if you are using the mouse a "
-"lot.</li> "
+"normal window activates it. New windows will receive the focus, without you "
+"having to point the mouse at them explicitly. Very practical if you are "
+"using the mouse a lot.</li> "
 "<li><em>Focus under mouse:</em> The window that happens to be under the "
-"mouse pointer becomes active. If the mouse points nowhere, the last window "
-"that was under the mouse has focus. </li> "
-"<li><em>Focus strictly under mouse:</em> This is even worse than 'Focus "
-"under mouse'. Only the window under the mouse pointer is active. If the "
-"mouse points nowhere, nothing has focus. </ul>"
-" Note that 'Focus under mouse' and 'Focus strictly under mouse' are not "
-"particularly useful. They are only provided for old-fashioned die-hard UNIX "
-"people ;-)"
+"mouse pointer is active. If the mouse points nowhere, the last window that "
+"was under the mouse has focus. New windows will not automatically receive "
+"the focus.</li> "
+"<li><em>Focus strictly under mouse:</em> Only the window under the mouse "
+"pointer is active. If the mouse points nowhere, nothing has focus. </ul>"
+"Note that 'Focus under mouse' and 'Focus strictly under mouse' prevent "
+"certain features such as the Alt+Tab walk through windows dialog in the KDE "
+"mode from working properly."
 msgstr ""
 "Defnyddir y polisi canolbwyntio i bennu'r ffenestr weithredol, h.y. y "
 "ffenestr gallwch weithio ynddi."
@@ -440,23 +442,27 @@ msgstr ""
 "Union o Dan Llygoden' yn ddefnyddiol iawn. Maent ar gael i bobl cyndyn "
 "hen-ffasiwn UNIX yn unig. ;-)"
 
-#: windows.cpp:154
+#: windows.cpp:158
 msgid "Auto &raise"
 msgstr "&Codi ymysgogol"
 
-#: windows.cpp:159 windows.cpp:471
+#: windows.cpp:163 windows.cpp:176 windows.cpp:531
 msgid "Dela&y:"
 msgstr "&Saib:"
 
-#: windows.cpp:162 windows.cpp:474 windows.cpp:502
+#: windows.cpp:166 windows.cpp:179 windows.cpp:534 windows.cpp:562
 msgid " msec"
 msgstr "m-eil"
 
-#: windows.cpp:165
+#: windows.cpp:171
+msgid "Delay focus"
+msgstr ""
+
+#: windows.cpp:182
 msgid "C&lick raise active window"
 msgstr "C&lic i godi'r ffenestr weithredol"
 
-#: windows.cpp:172
+#: windows.cpp:189
 msgid ""
 "When this option is enabled, a window in the background will automatically "
 "come to the front when the mouse pointer has been over it for some time."
@@ -464,7 +470,7 @@ msgstr ""
 "Pan alluogir y dewisiad yma, daw ffenestr yn y cefndir i'r blaen yn ymsgogol "
 "wedi i'r pwyntydd llygoden fod drosto am ychydig amser."
 
-#: windows.cpp:174
+#: windows.cpp:191
 msgid ""
 "This is the delay after which the window that the mouse pointer is over will "
 "automatically come to the front."
@@ -472,7 +478,7 @@ msgstr ""
 "Dyma'r saib y daw'r ffenestr y mae'r pwyntydd llygoden drosto yn dod i'r "
 "blaen yn ysgogol wedi iddo orffen."
 
-#: windows.cpp:178
+#: windows.cpp:195
 msgid ""
 "When this option is enabled, the active window will be brought to the front "
 "when you click somewhere into the window contents. To change it for inactive "
@@ -482,32 +488,45 @@ msgstr ""
 "gliciwch rywle yng nghynnwys y ffenestr.  I amnewid hyn efo ffenestri "
 "anweithredol, rhaid i chi newid y gosodiadau yn y tab Gweithredoedd."
 
-#: windows.cpp:185
+#: windows.cpp:200
+#, fuzzy
+msgid ""
+"When this option is enabled, there will be a delay after which the window "
+"the mouse pointer is over will become active (receive focus)."
+msgstr ""
+"Dyma'r saib y daw'r ffenestr y mae'r pwyntydd llygoden drosto yn dod i'r "
+"blaen yn ysgogol wedi iddo orffen."
+
+#: windows.cpp:202
+#, fuzzy
+msgid ""
+"This is the delay after which the window the mouse pointer is over will "
+"automatically receive focus."
+msgstr ""
+"Dyma'r saib y daw'r ffenestr y mae'r pwyntydd llygoden drosto yn dod i'r "
+"blaen yn ysgogol wedi iddo orffen."
+
+#: windows.cpp:207
 msgid "Navigation"
 msgstr "Llywio"
 
-#: windows.cpp:189
-msgid "Walk through windows mode:"
-msgstr "Modd cerdded drwy ffenestri:"
+#: windows.cpp:211
+msgid "Show window list while switching windows"
+msgstr ""
 
-#: windows.cpp:191
-msgid "&KDE"
-msgstr "&KDE"
-
-#: windows.cpp:193
-msgid "CD&E"
-msgstr "CD&E"
-
-#: windows.cpp:196
+#: windows.cpp:214
+#, fuzzy
 msgid ""
 "Hold down the Alt key and press the Tab key repeatedly to walk through the "
 "windows on the current desktop (the Alt+Tab combination can be "
-"reconfigured). The two different modes mean:"
-"<ul>"
-"<li><b>KDE</b>: a nice widget is shown, displaying the icons of all windows "
-"to walk through and the title of the currently selected one;"
-"<li><b>CDE</b>: the focus is passed to a new window each time Tab is "
-"pressed. No fancy widget.</li></ul>"
+"reconfigured).\n"
+"\n"
+"If this checkbox is checked a popup widget is shown, displaying the icons of "
+"all windows to walk through and the title of the currently selected one.\n"
+"\n"
+"Otherwise, the focus is passed to a new window each time Tab is pressed, "
+"with no popup widget.  In addition, the previously activated window will be "
+"sent to the back in this mode."
 msgstr ""
 "Daliwch y fysell Alt i lawr a gwasgwch y fysell Tab yn fynych i gerdded "
 "drwy'r ffenestri ar y penbwrdd cyfredol (gellir ail-ffurfweddi'r cyfuniad "
@@ -518,11 +537,11 @@ msgstr ""
 "<li><b>CDE</b>: fe symuda'r canolbwynt i ffenestr newydd bob tro y gwesgir "
 "Tab. Dim celfigyn pert.</li></ul>"
 
-#: windows.cpp:207
+#: windows.cpp:225
 msgid "&Traverse windows on all desktops"
 msgstr "&Trawsteithio ffenestri ar bob penbwrdd"
 
-#: windows.cpp:210
+#: windows.cpp:228
 msgid ""
 "Leave this option disabled if you want to limit walking through windows to "
 "the current desktop."
@@ -530,11 +549,11 @@ msgstr ""
 "Gadewch y dewisiad yma'n analluog os ydych am gyfyngu cerdded trwy ffenestri "
 "i'r penbwrdd cyfredol."
 
-#: windows.cpp:214
+#: windows.cpp:232
 msgid "Desktop navi&gation wraps around"
 msgstr "Lly&wio penbwrdd yn amlapio"
 
-#: windows.cpp:217
+#: windows.cpp:235
 msgid ""
 "Enable this option if you want keyboard or active desktop border navigation "
 "beyond the edge of a desktop to take you to the opposite edge of the new "
@@ -544,11 +563,11 @@ msgstr ""
 "penbwrdd gweithredoltu hwnt i ymyl benbwrdd i ddod â chi i'r penbwrdd ar yr "
 "ymyl wrthwyneb."
 
-#: windows.cpp:221
+#: windows.cpp:239
 msgid "Popup desktop name on desktop &switch"
 msgstr "Enw penbwrdd yn neidio i fyny pan yn &newid penbwrdd"
 
-#: windows.cpp:224
+#: windows.cpp:242
 msgid ""
 "Enable this option if you wish to see the current desktop name popup "
 "whenever the current desktop is changed."
@@ -556,15 +575,15 @@ msgstr ""
 "Galluogwch y dewisiad yma os hoffech weld enw'r penbwrdd cyfredol yn neidio "
 "i fyny pan newidir y penbwrdd cyfredol."
 
-#: windows.cpp:460
+#: windows.cpp:520
 msgid "Shading"
 msgstr "Cysgodi"
 
-#: windows.cpp:462
+#: windows.cpp:522
 msgid "Anima&te"
 msgstr "&Bywlunio"
 
-#: windows.cpp:463
+#: windows.cpp:523
 msgid ""
 "Animate the action of reducing the window to its titlebar (shading) as well "
 "as the expansion of a shaded window"
@@ -572,11 +591,11 @@ msgstr ""
 "Bywlunio'r weithred o leihau'r ffenestr i'w bar teitl (rholio), yn ogystal "
 "âg ehangu ffenestr wedi'i rholio"
 
-#: windows.cpp:466
+#: windows.cpp:526
 msgid "&Enable hover"
 msgstr "&Galluogi hofran"
 
-#: windows.cpp:476
+#: windows.cpp:536
 msgid ""
 "If Shade Hover is enabled, a shaded window will un-shade automatically when "
 "the mouse pointer has been over the title bar for some time."
@@ -584,7 +603,7 @@ msgstr ""
 "Os yw Hofran Rholio yn alluog, fe ddatgysgodir ffenestr wedi'i rholio yn "
 "ymysgogol pan fo'r pwyntydd llygoden dros y bar teitl am ryw amser."
 
-#: windows.cpp:479
+#: windows.cpp:539
 msgid ""
 "Sets the time in milliseconds before the window unshades when the mouse "
 "pointer goes over the shaded window."
@@ -592,11 +611,11 @@ msgstr ""
 "Gosoda'r amser mewn mili-eiliadau cyn i'r ffenestr ddatrolio pan fo'r "
 "pwyntydd llygoden yn mynd dros y ffenestr wedi'i rholio."
 
-#: windows.cpp:490
+#: windows.cpp:550
 msgid "Active Desktop Borders"
 msgstr "Ffiniau Penbwrdd Gweithredol"
 
-#: windows.cpp:493
+#: windows.cpp:553
 msgid ""
 "If this option is enabled, moving the mouse to a screen border will change "
 "your desktop. This is e.g. useful if you want to drag windows from one "
@@ -606,23 +625,23 @@ msgstr ""
 "newid eich penbwrdd. Mae hyn yn ddefnyddiol e.e. os ydych am lusgo ffenestri "
 "o un penbwrdd i'r llall."
 
-#: windows.cpp:496
+#: windows.cpp:556
 msgid "D&isabled"
 msgstr "&Analluog"
 
-#: windows.cpp:497
+#: windows.cpp:557
 msgid "Only &when moving windows"
 msgstr "Dim ond &pan yn symud ffenestri"
 
-#: windows.cpp:498
+#: windows.cpp:558
 msgid "A&lways enabled"
 msgstr "Galluog &bob amser"
 
-#: windows.cpp:503
+#: windows.cpp:563
 msgid "Desktop &switch delay:"
 msgstr "&Saib newid penbwrdd:"
 
-#: windows.cpp:504
+#: windows.cpp:564
 msgid ""
 "Here you can set a delay for switching desktops using the active borders "
 "feature. Desktops will be switched after the mouse has been pushed against a "
@@ -632,55 +651,56 @@ msgstr ""
 "gweithredol. Newidir penbyrddau wedi gwthio'r lygoden yn erbyn ffin y sgrîn "
 "am y nifer penodol o fili-eiliadau."
 
-#: windows.cpp:517
+#: windows.cpp:577
 msgid "Focus stealing prevention level:"
 msgstr "Lefel o ataliad dwyn canolbwynt:"
 
-#: windows.cpp:519
+#: windows.cpp:579
 msgid ""
 "_: Focus Stealing Prevention Level\n"
 "None"
 msgstr "Dim"
 
-#: windows.cpp:520
+#: windows.cpp:580
 msgid ""
 "_: Focus Stealing Prevention Level\n"
 "Low"
 msgstr "Isel"
 
-#: windows.cpp:521
+#: windows.cpp:581
 msgid ""
 "_: Focus Stealing Prevention Level\n"
 "Normal"
 msgstr "Arferol"
 
-#: windows.cpp:522
+#: windows.cpp:582
 msgid ""
 "_: Focus Stealing Prevention Level\n"
 "High"
 msgstr "Uchel"
 
-#: windows.cpp:523
+#: windows.cpp:583
 msgid ""
 "_: Focus Stealing Prevention Level\n"
 "Extreme"
 msgstr "Eithaf"
 
-#: windows.cpp:527
+#: windows.cpp:587
+#, fuzzy
 msgid ""
 "This option specifies how much KWin will try to prevent unwanted focus "
-"stealing caused by unexpected activation of new "
-"windows."
+"stealing caused by unexpected activation of new windows. (Note: This feature "
+"does not work with the Focus Under Mouse or Focus Strictly Under Mouse focus "
+"policies.)"
 "<ul>"
-"<li><em>None:</em> The standard old behavior - prevention is turned off and "
-"new windows always become activated.</li>"
-"<li><em>Low:</em> Prevention is enabled; when some window doesn't have "
+"<li><em>None:</em> Prevention is turned off and new windows always become "
+"activated.</li>"
+"<li><em>Low:</em> Prevention is enabled; when some window does not have "
 "support for the underlying mechanism and KWin cannot reliably decide whether "
 "to activate the window or not, it will be activated. This setting may have "
 "both worse and better results than normal level, depending on the "
 "applications.</li>"
-"<li><em>Normal:</em> Prevention is enabled; the default "
-"setting.</li>"
+"<li><em>Normal:</em> Prevention is enabled.</li>"
 "<li><em>High:</em> New windows get activated only if no window is currently "
 "active or if they belong to the currently active application. This setting "
 "is probably not really usable when not using mouse focus "
@@ -708,15 +728,15 @@ msgstr ""
 "<li><em>Eithaf:</em>Rhaid i bob ffenestr gael ei weithredu yn benodol gan y "
 "defnyddiwr.</li></ul>"
 
-#: windows.cpp:688
+#: windows.cpp:748
 msgid "Windows"
 msgstr "Ffenestri"
 
-#: windows.cpp:696
+#: windows.cpp:756
 msgid "Di&splay content in moving windows"
 msgstr "Dango&s cynnwys mewn ffenestri symudol"
 
-#: windows.cpp:698
+#: windows.cpp:758
 msgid ""
 "Enable this option if you want a window's content to be fully shown while "
 "moving it, instead of just showing a window 'skeleton'. The result may not "
@@ -726,11 +746,11 @@ msgstr ""
 "symud, yn hytrach na dangos 'sgerbwd' ffenestr. Efallai na fydd y canlyniad "
 "yn plesio ar beiriannau araf heb gyflymiad graffeg."
 
-#: windows.cpp:702
+#: windows.cpp:762
 msgid "Display content in &resizing windows"
 msgstr "Dangos cynnwys mewn ffenestri sy'n newid &maint"
 
-#: windows.cpp:704
+#: windows.cpp:764
 msgid ""
 "Enable this option if you want a window's content to be shown while resizing "
 "it, instead of just showing a window 'skeleton'. The result may not be "
@@ -740,11 +760,11 @@ msgstr ""
 "ei maint, yn hytrach na dangos 'sgerbwd' ffenestr. Efallai na fydd y "
 "canlyniad yn plesio ar beiriannau araf."
 
-#: windows.cpp:708
+#: windows.cpp:768
 msgid "Display window &geometry when moving or resizing"
 msgstr "Dangos &geometreg ffenestr tra'n symud neu newid maint"
 
-#: windows.cpp:710
+#: windows.cpp:770
 msgid ""
 "Enable this option if you want a window's geometry to be displayed while it "
 "is being moved or resized. The window position relative to the top-left "
@@ -754,11 +774,11 @@ msgstr ""
 "symud neu newid ei maint. Dengys lleoliad y ffenestr o gornel pen-chwith y "
 "sgrîn, ynghŷd â'i maint."
 
-#: windows.cpp:720
+#: windows.cpp:780
 msgid "Animate minimi&ze and restore"
 msgstr "Bywlunio &lleihau ac adfer"
 
-#: windows.cpp:722
+#: windows.cpp:782
 msgid ""
 "Enable this option if you want an animation shown when windows are minimized "
 "or restored."
@@ -766,15 +786,15 @@ msgstr ""
 "Galluogwch y dewisiad yma os ydych am ddangos bywluniad pan leiheir neu "
 "adferir ffenestri."
 
-#: windows.cpp:736
+#: windows.cpp:796
 msgid "Slow"
 msgstr "Araf"
 
-#: windows.cpp:740
+#: windows.cpp:800
 msgid "Fast"
 msgstr "Cyflym"
 
-#: windows.cpp:744
+#: windows.cpp:804
 msgid ""
 "Here you can set the speed of the animation shown when windows are minimized "
 "and restored. "
@@ -782,11 +802,11 @@ msgstr ""
 "Yma gallwch osod cyflymder y bywluniad y'i dengys pan leiheir ac adferir "
 "ffenestri."
 
-#: windows.cpp:750
+#: windows.cpp:810
 msgid "Allow moving and resizing o&f maximized windows"
 msgstr "Caniatáu symud a newid main&t ffenestri ehangedig"
 
-#: windows.cpp:752
+#: windows.cpp:812
 msgid ""
 "When enabled, this feature activates the border of maximized windows and "
 "allows you to move or resize them, just like for normal windows"
@@ -794,31 +814,31 @@ msgstr ""
 "Pan yn alluog, galluoga'r nodwedd hon ffin ffenestri ehangedig, a caniatâ i "
 "chi eu symud a newid eu maint, yn union fel ffenestri arferol."
 
-#: windows.cpp:758
+#: windows.cpp:818
 msgid "&Placement:"
 msgstr "&Lleoliad:"
 
-#: windows.cpp:761
+#: windows.cpp:821
 msgid "Smart"
 msgstr "Deallus"
 
-#: windows.cpp:762
+#: windows.cpp:822
 msgid "Cascade"
 msgstr "Rhaeadr"
 
-#: windows.cpp:763
+#: windows.cpp:823
 msgid "Random"
 msgstr "Ar Hap"
 
-#: windows.cpp:764
+#: windows.cpp:824
 msgid "Centered"
 msgstr "Canoledig"
 
-#: windows.cpp:765
+#: windows.cpp:825
 msgid "Zero-Cornered"
 msgstr "Cornel-Sero"
 
-#: windows.cpp:772
+#: windows.cpp:832
 msgid ""
 "The placement policy determines where a new window will appear on the "
 "desktop. For now, there are three different policies: "
@@ -834,23 +854,23 @@ msgstr ""
 "<li><em>Rhaeadr</em> rhaeadra'r ffenestri</li> "
 "<li><em>Ar Hap</em> defnyddia lleoliad hap</li></ul>"
 
-#: windows.cpp:804
+#: windows.cpp:864
 msgid "Snap Zones"
 msgstr "Cylchfeydd Snap"
 
-#: windows.cpp:808 windows.cpp:818
+#: windows.cpp:868 windows.cpp:878
 msgid "none"
 msgstr "dim"
 
-#: windows.cpp:810
+#: windows.cpp:870
 msgid "&Border snap zone:"
 msgstr "Cylchfa snap ff&in"
 
-#: windows.cpp:811 windows.cpp:821
+#: windows.cpp:871 windows.cpp:881
 msgid " pixels"
 msgstr "picsel"
 
-#: windows.cpp:813
+#: windows.cpp:873
 msgid ""
 "Here you can set the snap zone for screen borders, i.e. the 'strength' of "
 "the magnetic field which will make windows snap to the border when moved "
@@ -859,11 +879,11 @@ msgstr ""
 "Yma gallwch osod y gylchfa snap i ffiniau'r sgrîn, h.y. 'cryfder' y maes "
 "magnetig a wna i'r ffenestri snapio i'r ffin pan yn symud ato."
 
-#: windows.cpp:820
+#: windows.cpp:880
 msgid "&Window snap zone:"
 msgstr "Cylchfa snap &ffenestr"
 
-#: windows.cpp:823
+#: windows.cpp:883
 msgid ""
 "Here you can set the snap zone for windows, i.e. the 'strength' of the "
 "magnetic field which will make windows snap to each other when they're moved "
@@ -873,15 +893,26 @@ msgstr ""
 "a wna i'r ffenestri snapio i'w gilydd pan yn cael eu symud yn agos i "
 "ffenestr arall."
 
-#: windows.cpp:827
+#: windows.cpp:887
 msgid "Snap windows onl&y when overlapping"
 msgstr "Snapio ffenestri pan yn gorgyffwrdd yn &unig"
 
-#: windows.cpp:828
+#: windows.cpp:888
+#, fuzzy
 msgid ""
 "Here you can set that windows will be only snapped if you try to overlap "
-"them, i.e. they won't be snapped if the windows comes only near another "
+"them, i.e. they will not be snapped if the windows comes only near another "
 "window or border."
 msgstr ""
 "Yma gallwch osod bod ffenestri'n snapio pan ceisiwch eu gorgyffwrdd yn unig, "
 "h.y. ni chânt eu snapio os y dont yn agos i ffenestr arall neu i ffin."
+
+#~ msgid "Walk through windows mode:"
+#~ msgstr "Modd cerdded drwy ffenestri:"
+
+#~ msgid "&KDE"
+#~ msgstr "&KDE"
+
+#~ msgid "CD&E"
+#~ msgstr "CD&E"
+
