@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-3/digikam.po\n"
-"POT-Creation-Date: 2005-02-21 14:51+0100\n"
+"POT-Creation-Date: 2005-03-09 01:30+0100\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -73,7 +73,7 @@ msgid "Name:"
 msgstr "Enw:"
 
 #: digikam/albumfiletip.cpp:303 digikam/imagepropertiesgeneral.cpp:67
-#: showfoto/thumbbar.cpp:501
+#: imageplugins/imageeffect_bwsepia.cpp:70 showfoto/thumbbar.cpp:501
 msgid "Type:"
 msgstr "Math:"
 
@@ -111,7 +111,7 @@ msgid "Tags:"
 msgstr ""
 
 #: digikam/albumiconitem.cpp:294 digikam/imagepropertiesgeneral.cpp:205
-#: utilities/imageeditor/imagewindow.cpp:642
+#: utilities/imageeditor/imagewindow.cpp:685
 msgid "pixels"
 msgstr "picseli"
 
@@ -345,7 +345,7 @@ msgstr "Ail-enwi Plygell"
 #: digikam/digikamfirstrun.cpp:131
 msgid ""
 "<qt>Digikam could not create the folder shown below. Please select a "
-"different location.<p><b>%1</b></p>"
+"different location.<p><b>%1</b></p></qt>"
 msgstr ""
 
 #: digikam/digikamfirstrun.cpp:134
@@ -469,42 +469,58 @@ msgstr ""
 msgid "Assign Tag '%1' to Dropped Items"
 msgstr ""
 
-#: digikam/albumpropsedit.cpp:55 digikam/albumpropsedit.cpp:147
+#: digikam/albumpropsedit.cpp:65 digikam/albumpropsedit.cpp:163
 #, fuzzy
 msgid "New Album"
 msgstr "Dileu Ffeil"
 
-#: digikam/albumpropsedit.cpp:55
+#: digikam/albumpropsedit.cpp:65
 msgid "Edit Album"
 msgstr ""
 
-#: digikam/albumpropsedit.cpp:68
+#: digikam/albumpropsedit.cpp:78
 msgid "<qt><b>Create new Album in </b>%1</qt>"
 msgstr ""
 
-#: digikam/albumpropsedit.cpp:73
+#: digikam/albumpropsedit.cpp:83
 msgid "<qt><b><i>%1</i> Album Properties</b></qt>"
 msgstr ""
 
-#: digikam/albumpropsedit.cpp:89 digikam/tagcreatedlg.cpp:59
+#: digikam/albumpropsedit.cpp:99 digikam/tagcreatedlg.cpp:59
 #: digikam/tagcreatedlg.cpp:165
 msgid "&Title:"
 msgstr "&Teitl:"
 
-#: digikam/albumpropsedit.cpp:97
+#: digikam/albumpropsedit.cpp:107
 msgid "Co&llection:"
 msgstr ""
 
-#: digikam/albumpropsedit.cpp:106
+#: digikam/albumpropsedit.cpp:116
 msgid "Co&mments:"
 msgstr "Sy&lwadau :"
 
-#: digikam/albumpropsedit.cpp:115
+#: digikam/albumpropsedit.cpp:125
 msgid "Album &Date:"
 msgstr ""
 
-#: digikam/albumpropsedit.cpp:190
+#: digikam/albumpropsedit.cpp:135
+msgid ""
+"_: This is a button which calculates the average date\n"
+"&Average"
+msgstr ""
+
+#: digikam/albumpropsedit.cpp:208
 msgid "Uncategorized Album"
+msgstr ""
+
+#: digikam/albumpropsedit.cpp:294
+msgid ""
+"Could not calculate an average based on creation date (EXIF) or based on the "
+"modification date of the files."
+msgstr ""
+
+#: digikam/albumpropsedit.cpp:297
+msgid "Could not calculate an average"
 msgstr ""
 
 #: digikam/albumsettings.cpp:104
@@ -573,7 +589,7 @@ msgid "digiKam"
 msgstr ""
 
 #: digikam/main.cpp:76
-msgid "(c) 2002-2004, Digikam developers team"
+msgid "(c) 2002-2005, Digikam developers team"
 msgstr ""
 
 #: digikam/main.cpp:81
@@ -844,7 +860,7 @@ msgstr ""
 msgid "Open With"
 msgstr "Agor Efo"
 
-#: digikam/albumiconview.cpp:536 utilities/imageeditor/imagewindow.cpp:233
+#: digikam/albumiconview.cpp:536 utilities/imageeditor/imagewindow.cpp:231
 msgid "Edit Comments && Tags..."
 msgstr ""
 
@@ -865,7 +881,7 @@ msgid "Rename..."
 msgstr "Ail-enwi..."
 
 #: digikam/albumiconview.cpp:610 digikam/digikamapp.cpp:995
-#: utilities/imageeditor/imagewindow.cpp:412
+#: utilities/imageeditor/imagewindow.cpp:429
 msgid "Move to Trash"
 msgstr "Symud i'r Sbwriel"
 
@@ -1129,7 +1145,7 @@ msgstr ""
 msgid "This option allows you to decrease the Album thumbnails size."
 msgstr ""
 
-#: digikam/digikamapp.cpp:506 utilities/imageeditor/imagewindow.cpp:269
+#: digikam/digikamapp.cpp:506 utilities/imageeditor/imagewindow.cpp:282
 msgid "Toggle Full Screen"
 msgstr ""
 
@@ -1151,7 +1167,7 @@ msgid ""
 "please check your installation."
 msgstr ""
 
-#: digikam/digikamapp.cpp:784 utilities/imageeditor/imagewindow.cpp:1155
+#: digikam/digikamapp.cpp:784 utilities/imageeditor/imagewindow.cpp:1200
 msgid "General"
 msgstr "Cyffredinol"
 
@@ -1245,9 +1261,13 @@ msgid ""
 "%1"
 msgstr ""
 
-#: digikam/digikamview.cpp:414
+#: digikam/digikamview.cpp:416
 msgid "Add Images"
 msgstr ""
+
+#: digikam/digikamview.cpp:418
+msgid "&Add"
+msgstr "&Ychwanegu"
 
 #: showfoto/main.cpp:40
 msgid "File(s) to open"
@@ -1262,151 +1282,148 @@ msgid "showFoto"
 msgstr ""
 
 #: showfoto/main.cpp:53
-msgid "(c) 2004, digiKam developers team"
+msgid "(c) 2004-2005, digiKam developers team"
 msgstr ""
 
-#: showfoto/showfoto.cpp:148 utilities/imageeditor/imagewindow.cpp:264
+#: showfoto/showfoto.cpp:152 utilities/imageeditor/imagewindow.cpp:277
 msgid "Zoom &AutoFit"
 msgstr ""
 
-#: showfoto/showfoto.cpp:159
+#: showfoto/showfoto.cpp:163
 msgid "Fullscreen"
 msgstr "Sgrîn-lawn"
 
-#: showfoto/showfoto.cpp:166
+#: showfoto/showfoto.cpp:170
 #, fuzzy
 msgid "Hide thumbnails"
 msgstr "Rhagolygon cryno"
 
-#: showfoto/showfoto.cpp:172
-#, fuzzy
+#: showfoto/showfoto.cpp:176
 msgid "Rotate 90"
-msgstr "C&ylchdroi"
+msgstr "Cylchdroi 90"
 
-#: showfoto/showfoto.cpp:175
-#, fuzzy
+#: showfoto/showfoto.cpp:179
 msgid "Rotate 180"
-msgstr "C&ylchdroi"
-
-#: showfoto/showfoto.cpp:178
-#, fuzzy
-msgid "Rotate 270"
-msgstr "C&ylchdroi"
+msgstr "Cylchdroi 180"
 
 #: showfoto/showfoto.cpp:182
+msgid "Rotate 270"
+msgstr "Cylchdroi 270"
+
+#: showfoto/showfoto.cpp:186
 msgid "Flip Horizontally"
 msgstr ""
 
-#: showfoto/showfoto.cpp:185
+#: showfoto/showfoto.cpp:189
 msgid "Flip Vertically"
 msgstr ""
 
-#: showfoto/showfoto.cpp:189
+#: showfoto/showfoto.cpp:193
 msgid "Crop"
 msgstr ""
 
-#: showfoto/showfoto.cpp:197
+#: showfoto/showfoto.cpp:201
 msgid "Increase Gamma"
 msgstr ""
 
-#: showfoto/showfoto.cpp:200
+#: showfoto/showfoto.cpp:204
 msgid "Decrease Gamma"
 msgstr ""
 
-#: showfoto/showfoto.cpp:203
+#: showfoto/showfoto.cpp:207
 #, fuzzy
 msgid "Increase Brightness"
 msgstr "Disgleirdeb:"
 
-#: showfoto/showfoto.cpp:206
+#: showfoto/showfoto.cpp:210
 #, fuzzy
 msgid "Decrease Brightness"
 msgstr "Disgleirdeb:"
 
-#: showfoto/showfoto.cpp:209
+#: showfoto/showfoto.cpp:213
 #, fuzzy
 msgid "Increase Contrast"
 msgstr "Cyferbyniant :"
 
-#: showfoto/showfoto.cpp:212
+#: showfoto/showfoto.cpp:216
 #, fuzzy
 msgid "Decrease Contrast"
 msgstr "Cyferbyniant :"
 
-#: showfoto/showfoto.cpp:221 utilities/imageeditor/imagewindow.cpp:137
+#: showfoto/showfoto.cpp:225 utilities/imageeditor/imagewindow.cpp:135
 msgid "Exit Fullscreen"
 msgstr ""
 
-#: showfoto/showfoto.cpp:222 utilities/imageeditor/imagewindow.cpp:138
+#: showfoto/showfoto.cpp:226 utilities/imageeditor/imagewindow.cpp:136
 msgid "Exit out of the fullscreen mode"
-msgstr ""
-
-#: showfoto/showfoto.cpp:225 showfoto/showfoto.cpp:233
-#, fuzzy
-msgid "Next Image"
-msgstr "Newid Maint Delwedd"
-
-#: showfoto/showfoto.cpp:226 showfoto/showfoto.cpp:234
-msgid "Load Next Image"
 msgstr ""
 
 #: showfoto/showfoto.cpp:229 showfoto/showfoto.cpp:237
 #, fuzzy
-msgid "Previous Image"
+msgid "Next Image"
 msgstr "Newid Maint Delwedd"
 
 #: showfoto/showfoto.cpp:230 showfoto/showfoto.cpp:238
+msgid "Load Next Image"
+msgstr ""
+
+#: showfoto/showfoto.cpp:233 showfoto/showfoto.cpp:241
+#, fuzzy
+msgid "Previous Image"
+msgstr "Newid Maint Delwedd"
+
+#: showfoto/showfoto.cpp:234 showfoto/showfoto.cpp:242
 msgid "Load Previous Image"
 msgstr ""
 
-#: showfoto/showfoto.cpp:241
+#: showfoto/showfoto.cpp:245
 msgid "Zoom In"
 msgstr "Nesàu"
 
-#: showfoto/showfoto.cpp:242
+#: showfoto/showfoto.cpp:246
 msgid "Zoom into Image"
 msgstr ""
 
-#: showfoto/showfoto.cpp:245
+#: showfoto/showfoto.cpp:249
 msgid "Zoom Out"
 msgstr "Pellhàu"
 
-#: showfoto/showfoto.cpp:246
+#: showfoto/showfoto.cpp:250
 msgid "Zoom out of Image"
 msgstr ""
 
-#: showfoto/showfoto.cpp:294
+#: showfoto/showfoto.cpp:298
 #, fuzzy
 msgid "Open images"
 msgstr "Agor Efo"
 
-#: showfoto/showfoto.cpp:368 utilities/imageeditor/imagewindow.cpp:871
+#: showfoto/showfoto.cpp:372 utilities/imageeditor/imagewindow.cpp:916
 msgid "New Image File Name"
 msgstr ""
 
-#: showfoto/showfoto.cpp:381
+#: showfoto/showfoto.cpp:385
 msgid "Invalid target selected"
 msgstr ""
 
-#: showfoto/showfoto.cpp:398 utilities/imageeditor/imagewindow.cpp:908
+#: showfoto/showfoto.cpp:402 utilities/imageeditor/imagewindow.cpp:953
 msgid "About to overwrite file %1. Are you sure you want to continue?"
 msgstr ""
 
-#: showfoto/showfoto.cpp:410 showfoto/showfoto.cpp:514
+#: showfoto/showfoto.cpp:414 showfoto/showfoto.cpp:518
 msgid "Failed to save file '%1'"
 msgstr ""
 
-#: showfoto/showfoto.cpp:439 showfoto/showfoto.cpp:539
+#: showfoto/showfoto.cpp:443 showfoto/showfoto.cpp:543
 msgid "Failed to overwrite original file"
 msgstr ""
 
-#: showfoto/showfoto.cpp:474
+#: showfoto/showfoto.cpp:478
 msgid ""
 "The image '%1' has been modified.\n"
 "Do you want to save it?"
 msgstr ""
 
-#: showfoto/showfoto.cpp:506
+#: showfoto/showfoto.cpp:510
 msgid "No support for saving non-local files"
 msgstr ""
 
@@ -1522,19 +1539,19 @@ msgstr "De&wis"
 msgid "&Batch Processes"
 msgstr ""
 
-#. i18n: file ./showfoto/showfotoui.rc line 17
+#. i18n: file ./showfoto/showfotoui.rc line 18
 #: rc.cpp:42
 #, no-c-format
 msgid "&Go"
 msgstr "&Ewch"
 
-#. i18n: file ./showfoto/showfotoui.rc line 23
+#. i18n: file ./showfoto/showfotoui.rc line 24
 #: rc.cpp:45 rc.cpp:63 rc.cpp:84
 #, no-c-format
 msgid "&Transform"
 msgstr "&Trawsnewid"
 
-#. i18n: file ./showfoto/showfotoui.rc line 45
+#. i18n: file ./showfoto/showfotoui.rc line 46
 #: rc.cpp:51 rc.cpp:57 rc.cpp:81
 #, no-c-format
 msgid "Fi&x"
@@ -1582,7 +1599,7 @@ msgstr ""
 msgid "Color Balance..."
 msgstr ""
 
-#: imageplugins/imageplugin_core.cpp:81
+#: imageplugins/imageplugin_core.cpp:81 imageplugins/imageplugin_core.cpp:195
 #, fuzzy
 msgid "Stretch Contrast"
 msgstr "Cyferbyniant :"
@@ -1594,7 +1611,7 @@ msgid ""
 "adjusting everything in between."
 msgstr ""
 
-#: imageplugins/imageplugin_core.cpp:90
+#: imageplugins/imageplugin_core.cpp:90 imageplugins/imageplugin_core.cpp:213
 msgid "Normalize"
 msgstr "Normaleiddio"
 
@@ -1606,7 +1623,7 @@ msgid ""
 "that are dim or washed out."
 msgstr ""
 
-#: imageplugins/imageplugin_core.cpp:99
+#: imageplugins/imageplugin_core.cpp:99 imageplugins/imageplugin_core.cpp:231
 msgid "Equalize"
 msgstr "Cyfartalu"
 
@@ -1621,7 +1638,7 @@ msgid ""
 "destroy it."
 msgstr ""
 
-#: imageplugins/imageplugin_core.cpp:111
+#: imageplugins/imageplugin_core.cpp:111 imageplugins/imageplugin_core.cpp:249
 msgid "Auto Levels"
 msgstr ""
 
@@ -1632,68 +1649,46 @@ msgid ""
 "Green, and Blue channels to a full histogram range."
 msgstr ""
 
-#: imageplugins/imageplugin_core.cpp:119
+#: imageplugins/imageplugin_core.cpp:119 imageplugins/imageplugin_core.cpp:267
 msgid "Invert"
 msgstr "Gwrthdroi"
 
 #: imageplugins/imageplugin_core.cpp:126
-#, fuzzy
-msgid "&Convert to"
-msgstr "&Gwrthdroi Dewisiad"
+msgid "Black and White..."
+msgstr "Du a Gwyn ..."
 
-#: imageplugins/imageplugin_core.cpp:131
-msgid "Neutral Black-White"
-msgstr ""
-
-#: imageplugins/imageplugin_core.cpp:135
-msgid "Brown"
-msgstr "Brown"
-
-#: imageplugins/imageplugin_core.cpp:139
-#, fuzzy
-msgid "Sepia"
-msgstr "Cyfresol"
-
-#: imageplugins/imageplugin_core.cpp:143
-msgid "Cold Tone"
-msgstr ""
-
-#: imageplugins/imageplugin_core.cpp:147
-msgid "Platinum"
-msgstr "Platinwm"
-
-#: imageplugins/imageplugin_core.cpp:151
-msgid "Selenium"
-msgstr ""
-
-#: imageplugins/imageplugin_core.cpp:158
+#: imageplugins/imageplugin_core.cpp:133
 msgid "Aspect Ratio Crop..."
 msgstr ""
 
-#: imageplugins/imageeffect_blur.cpp:55
+#: imageplugins/imageeffect_blur.cpp:51
 msgid "Blur Image"
 msgstr ""
 
-#: imageplugins/imageeffect_blur.cpp:66
+#: imageplugins/imageeffect_blur.cpp:62
 msgid "Blur Image Preview Effect"
 msgstr ""
 
-#: imageplugins/imageeffect_blur.cpp:71
-msgid "Radius:"
-msgstr "Radiws:"
+#: imageplugins/imageeffect_blur.cpp:67
+#, fuzzy
+msgid "Smoothness:"
+msgstr "Miniogrwydd:"
 
-#: imageplugins/imageeffect_blur.cpp:75
+#: imageplugins/imageeffect_blur.cpp:71
 msgid ""
-"<p>"
-"A radius of 0 has no effect, 1 and above determine the blur matrix radius "
-"that determines how much to blur the image."
+"<p>A smoothness of 0 has no effect, 1 and above determine the gaussian blur "
+"matrix radius that determines how much to blur the image."
 msgstr ""
+
+#: imageplugins/imageeffect_blur.cpp:123
+msgid "Blur"
+msgstr "Pylu"
 
 #: imageplugins/imageeffect_bcg.cpp:44
 msgid "Brightness/Contrast/Gamma"
 msgstr ""
 
-#: imageplugins/imageeffect_bcg.cpp:46 imageplugins/imageeffect_hsl.cpp:54
+#: imageplugins/imageeffect_bcg.cpp:46 imageplugins/imageeffect_hsl.cpp:47
 #: imageplugins/imageeffect_ratiocrop.cpp:58
 #: imageplugins/imageeffect_rgb.cpp:52
 msgid "&Reset Values"
@@ -1731,43 +1726,48 @@ msgstr "Gama :"
 msgid "<p>Set here the gamma adjustment of the image."
 msgstr ""
 
-#: imageplugins/imageeffect_hsl.cpp:52
+#: imageplugins/imageeffect_hsl.cpp:45
 msgid "Hue/Saturation/Lightness"
 msgstr ""
 
-#: imageplugins/imageeffect_hsl.cpp:60
+#: imageplugins/imageeffect_hsl.cpp:53
 msgid "Hue/Saturation/Lightness Adjustments"
 msgstr ""
 
-#: imageplugins/imageeffect_hsl.cpp:66
+#: imageplugins/imageeffect_hsl.cpp:59
 msgid "<p>You can see here the image Hue/Saturation/Lightness adjustments preview."
 msgstr ""
 
-#: imageplugins/imageeffect_hsl.cpp:74
+#: imageplugins/imageeffect_hsl.cpp:67
 msgid "Hue:"
 msgstr "Arlliw :"
 
-#: imageplugins/imageeffect_hsl.cpp:78
+#: imageplugins/imageeffect_hsl.cpp:71
 msgid "<p>Set here the hue adjustment of the image."
 msgstr ""
 
-#: imageplugins/imageeffect_hsl.cpp:83
+#: imageplugins/imageeffect_hsl.cpp:76
 msgid "Saturation:"
 msgstr "Dirlawnder:"
 
-#: imageplugins/imageeffect_hsl.cpp:87
+#: imageplugins/imageeffect_hsl.cpp:80
 msgid "<p>Set here the saturation adjustment of the image."
 msgstr ""
 
-#: imageplugins/imageeffect_hsl.cpp:92
+#: imageplugins/imageeffect_hsl.cpp:85
 msgid "Lightness:"
 msgstr ""
 
-#: imageplugins/imageeffect_hsl.cpp:96
+#: imageplugins/imageeffect_hsl.cpp:89
 msgid "<p>Set here the lightness adjustment of the image."
 msgstr ""
 
+#: imageplugins/imageeffect_hsl.cpp:160
+msgid "HSL"
+msgstr ""
+
 #: imageplugins/imageeffect_ratiocrop.cpp:55
+#: imageplugins/imageeffect_ratiocrop.cpp:398
 msgid "Aspect Ratio Crop"
 msgstr ""
 
@@ -1872,23 +1872,112 @@ msgstr "Taldra:"
 msgid "<p>Set here the height selection for cropping."
 msgstr ""
 
-#: imageplugins/imageeffect_sharpen.cpp:58
+#: imageplugins/imageeffect_bwsepia.cpp:50
+msgid "Convert to Black and White"
+msgstr ""
+
+#: imageplugins/imageeffect_bwsepia.cpp:61
+msgid "Preview"
+msgstr "Rhagolwg"
+
+#: imageplugins/imageeffect_bwsepia.cpp:72
+#: imageplugins/imageeffect_bwsepia.cpp:82
+msgid "Neutral Black and White"
+msgstr ""
+
+#: imageplugins/imageeffect_bwsepia.cpp:73
+msgid "Black and White with Green Filter"
+msgstr ""
+
+#: imageplugins/imageeffect_bwsepia.cpp:74
+msgid "Black and White with Orange Filter"
+msgstr ""
+
+#: imageplugins/imageeffect_bwsepia.cpp:75
+msgid "Black and White with Red Filter"
+msgstr ""
+
+#: imageplugins/imageeffect_bwsepia.cpp:76
+msgid "Black and White with Yellow Filter"
+msgstr ""
+
+#: imageplugins/imageeffect_bwsepia.cpp:77
+msgid "Black and White with Sepia Tone"
+msgstr ""
+
+#: imageplugins/imageeffect_bwsepia.cpp:78
+msgid "Black and White with Brown Tone"
+msgstr ""
+
+#: imageplugins/imageeffect_bwsepia.cpp:79
+msgid "Black and White with Cold Tone"
+msgstr ""
+
+#: imageplugins/imageeffect_bwsepia.cpp:80
+msgid "Black and White with Selenium Tone"
+msgstr ""
+
+#: imageplugins/imageeffect_bwsepia.cpp:81
+msgid "Black and White with Platinum Tone"
+msgstr ""
+
+#: imageplugins/imageeffect_bwsepia.cpp:83
+msgid ""
+"<p>Select here the black and white conversion type:"
+"<p><b>Neutral</b>: simulate black and white neutral film "
+"exposure."
+"<p><b>Green Filter</b>: simulate black and white film exposure using green "
+"filter. This provide an universal asset for all scenics, especially suited "
+"for portraits photographed against sky."
+"<p><b>Orange Filter</b>"
+": simulate black and white film exposure using orange filter. This will "
+"enhances landscapes, marine scenes and aerial photography."
+"<p><b>Red Filter</b>: simulate black and white film exposure using red "
+"filter. Using this one for creates dramatic sky effects and simulates "
+"moonlight scenes in daytime."
+"<p><b>Yellow Filter</b>"
+": simulate black and white film exposure using yellow filter. Most natural "
+"tonal correction and improves contrast. Ideal for landscapes."
+"<p><b>Sepia Tone</b>"
+": gives a warm highlight and mid-tone while adding a bit of coolness to the "
+"shadows-very similar to the process of bleaching a print and re-developing "
+"in a sepia toner."
+"<p><b>Brown Tone</b>: more neutral than Sepia Tone filter."
+"<p><b>Cold Tone</b>: start subtle and replicate printing on a cold tone "
+"black and white paper such as a bromide enlarging paper."
+"<p><b>Selenium Tone</b>"
+": effect that replicate traditional selenium chemical toning done in the "
+"darkroom."
+"<p><b>Platinum Tone</b>"
+": effect that replicate traditional platinum chemical toning done in the "
+"darkroom."
+msgstr ""
+
+#: imageplugins/imageeffect_bwsepia.cpp:170
+msgid "Black & White"
+msgstr "Du & Gwyn"
+
+#: imageplugins/imageeffect_sharpen.cpp:51
 msgid "Sharpen Image"
 msgstr ""
 
-#: imageplugins/imageeffect_sharpen.cpp:68
+#: imageplugins/imageeffect_sharpen.cpp:61
 msgid "Sharpen Image Preview Effect"
 msgstr ""
 
-#: imageplugins/imageeffect_sharpen.cpp:73
+#: imageplugins/imageeffect_sharpen.cpp:66
 msgid "Sharpness:"
 msgstr "Miniogrwydd:"
 
-#: imageplugins/imageeffect_sharpen.cpp:77
+#: imageplugins/imageeffect_sharpen.cpp:70
 msgid ""
 "<p>A sharpness of 0 has no effect, 1 and above determine the sharpen matrix "
 "radius that determines how much to sharpen the image."
 msgstr ""
+
+#: imageplugins/imageeffect_sharpen.cpp:122
+msgid "Sharpen"
+msgstr "Miniogi"
 
 #: imageplugins/imageeffect_rgb.cpp:50 imageplugins/imageeffect_rgb.cpp:58
 msgid "Color Balance"
@@ -1921,6 +2010,10 @@ msgstr "Melyn"
 #: imageplugins/imageeffect_rgb.cpp:108
 msgid "<p>Set here the yellow/blue color adjustment of the image."
 msgstr ""
+
+#: imageplugins/imageeffect_rgb.cpp:197
+msgid "RGB"
+msgstr "CGwGl (RGB)"
 
 #: imageplugins/imageeffect_redeye.cpp:88
 msgid "Red-Eye Correction Tool"
@@ -1957,16 +2050,16 @@ msgid ""
 "<img src=\"crystalsvg/32x32/apps/digikam.png\">\n"
 "</td>\n"
 "<td>\n"
-"Did you know that Digikam supports <b>Drag'n'Drop</b>? So you could easily "
-"move images from Konqueror \n"
-"to Digikam or from Digikam to K3b simply by using \"Drag'n'Drop\".\n"
+"... that digiKam supports <b>Drag'n'Drop</b>? So you can easily move images "
+"from Konqueror to digiKam or from digiKam to K3b simply by using "
+"\"Drag'n'Drop\".\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
 "</p>\n"
 msgstr ""
 
-#: tips.cpp:20
+#: tips.cpp:19
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -1975,14 +2068,14 @@ msgid ""
 "<img src=\"crystalsvg/32x32/apps/digikam.png\">\n"
 "</td>\n"
 "<td>\n"
-"Did you know that you could use the nested albums in Digikam.\n"
+"... that you can use nested albums in digiKam.\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
 "</p>\n"
 msgstr ""
 
-#: tips.cpp:36
+#: tips.cpp:35
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -1991,15 +2084,15 @@ msgid ""
 "<img src=\"crystalsvg/32x32/apps/digikam.png\">\n"
 "</td>\n"
 "<td>\n"
-"Did you know that the Properties entry of each photo gives you access to the "
-"properties entry of Konqueror?\n"
+"... that you can view the <b>EXIF</b> information of a photo by using its "
+"properties dialog?\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
 "</p>\n"
 msgstr ""
 
-#: tips.cpp:52
+#: tips.cpp:51
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -2008,15 +2101,15 @@ msgid ""
 "<img src=\"crystalsvg/32x32/apps/digikam.png\">\n"
 "</td>\n"
 "<td>\n"
-"Did you know that you could edit the <b>Exif</b> information of a photo by "
-"using its properties dialog?\n"
+"... that each photo has a context menu that can be reached by clicking on it "
+"with the right mouse button?\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
 "</p>\n"
 msgstr ""
 
-#: tips.cpp:68
+#: tips.cpp:67
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -2025,15 +2118,15 @@ msgid ""
 "<img src=\"crystalsvg/32x32/apps/digikam.png\">\n"
 "</td>\n"
 "<td>\n"
-"Did you know that each photo has a context menu that can be reached by "
-"clicking on it with the right mouse button?\n"
+"... that albums in digiKam are Folders in your Album Library? So you can "
+"easily import your Photos by simply copying them to your Album Library.\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
 "</p>\n"
 msgstr ""
 
-#: tips.cpp:84
+#: tips.cpp:83
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -2042,16 +2135,15 @@ msgid ""
 "<img src=\"crystalsvg/32x32/apps/digikam.png\">\n"
 "</td>\n"
 "<td>\n"
-"Did you know that albums in Digikam are Folders in your Album Library? So "
-"you could easily import your Photos by simply copying them to your Album "
-"Library.\n"
+"... that you can customize your digikam toolbars using Settings ->"
+" Configure Toolbars...?\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
 "</p>\n"
 msgstr ""
 
-#: tips.cpp:100
+#: tips.cpp:99
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -2060,42 +2152,7 @@ msgid ""
 "<img src=\"crystalsvg/32x32/apps/digikam.png\">\n"
 "</td>\n"
 "<td>\n"
-"Did you know that you could customize your digikam toolbars using Settings "
-"-> Configure Toolbars...?\n"
-"</td>\n"
-"</tr>\n"
-"</table>\n"
-"</p>\n"
-msgstr ""
-
-#: tips.cpp:116
-msgid ""
-"<p>\n"
-"<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
-"<tr>\n"
-"<td>\n"
-"<img src=\"crystalsvg/32x32/apps/digikam.png\">\n"
-"</td>\n"
-"<td>\n"
-"Did you know that Digikam registers itself as a <b>DCOP</b> Server? So you "
-"could write your own scripts automating Digikam.\n"
-"</td>\n"
-"</tr>\n"
-"</table>\n"
-"</p>\n"
-msgstr ""
-
-#: tips.cpp:132
-msgid ""
-"<p>\n"
-"<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
-"<tr>\n"
-"<td>\n"
-"<img src=\"crystalsvg/32x32/apps/digikam.png\">\n"
-"</td>\n"
-"<td>\n"
-"Did you know that there is a Digikam hotplugging howto available at\n"
-"<a "
+"... that there is a digiKam hotplugging howto available at <a "
 "href=\"http://digikam.free.fr/hotplug/howto.html\">"
 "http://digikam.free.fr/hotplug/howto.html</a> ?\n"
 "</td>\n"
@@ -2104,7 +2161,7 @@ msgid ""
 "</p>\n"
 msgstr ""
 
-#: tips.cpp:149
+#: tips.cpp:115
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -2113,8 +2170,8 @@ msgid ""
 "<img src=\"crystalsvg/32x32/apps/digikam.png\">\n"
 "</td>\n"
 "<td>\n"
-"Did you know that you could reach other users using the digikam-users "
-"mailing list? Subscribe yourself to the list using <a "
+"... that you can reach other users using the digikam-users mailing list? "
+"Subscribe yourself to the list at <a "
 "href=\"https://lists.sourceforge.net/lists/listinfo/digikam-users\">"
 "https://lists.sourceforge.net/lists/listinfo/digikam-users</a>.\n"
 "</td>\n"
@@ -2123,7 +2180,7 @@ msgid ""
 "</p>\n"
 msgstr ""
 
-#: tips.cpp:165
+#: tips.cpp:131
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -2132,10 +2189,10 @@ msgid ""
 "<img src=\"crystalsvg/32x32/apps/digikam.png\">\n"
 "</td>\n"
 "<td>\n"
-"Did you know that Digikam has multiple Plugins with extra features like "
-"<b>HTML export</b>, <b>Archive to CD</b>, <b>Slideshow</b>,... and that you "
-"are welcome to write your own plugins? You can find more information about "
-"this at <a "
+"... that digiKam has multiple Plugins with extra features like <b>HTML "
+"export</b>, <b>Archive to CD</b>, <b>Slideshow</b>,... and that you are "
+"welcome to write your own plugins? You can find more information about this "
+"at <a "
 "href=\"http://extragear.kde.org/apps/kipi.php\">"
 "http://extragear.kde.org/apps/kipi.php</a>.\n"
 "</td>\n"
@@ -2144,22 +2201,22 @@ msgid ""
 "</p>\n"
 msgstr ""
 
-#: tips.cpp:181
+#: tips.cpp:147
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
 "<tr>\n"
 "<td><img src=\"crystalsvg/32x32/apps/digikam.png\"></td>\n"
 "<td>\n"
-"Did you know that you have direct access to the KDE Gamma Configuration "
-"using Tools -> Gamma Adjustment?\n"
+"... that you have direct access to the KDE Gamma Configuration using Tools "
+"-> Gamma Adjustment?\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
 "</p>\n"
 msgstr ""
 
-#: tips.cpp:195
+#: tips.cpp:161
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -2168,15 +2225,15 @@ msgid ""
 "<img src=\"crystalsvg/32x32/apps/digikam.png\">\n"
 "</td>\n"
 "<td>\n"
-"Did you know that you could print images using the Print Wizard? You can "
-"start it using Album -> Export -> Print Wizard.\n"
+"... that you can print images using the Print Wizard? You can start it using "
+"Album -> Export -> Print Wizard.\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
 "</p>\n"
 msgstr ""
 
-#: tips.cpp:211
+#: tips.cpp:177
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -2184,15 +2241,15 @@ msgid ""
 "<td><img src=\"crystalsvg/32x32/apps/digikam.png\">\n"
 "</td>\n"
 "<td>\n"
-"Did you know that you can use <b>PNG</b> file format instead of <b>TIFF</b> "
-"for good compression without losing image quality?\n"
+"... that you can use the <b>PNG</b> file format instead of <b>TIFF</b> for "
+"good compression without losing image quality?\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
 "</p>\n"
 msgstr ""
 
-#: tips.cpp:226
+#: tips.cpp:192
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -2200,15 +2257,15 @@ msgid ""
 "<td>\n"
 "<img src=\"crystalsvg/32x32/apps/digikam.png\"></td>\n"
 "<td>\n"
-"Did you know that the all options in a dialog box have <b>What's this?</b> "
-"information available with the right mouse button?\n"
+"... that all the settings in a dialog box have <b>What's this?</b> "
+"information available, which can be reached via the right mouse button?\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
 "</p>\n"
 msgstr ""
 
-#: tips.cpp:241
+#: tips.cpp:207
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -2217,15 +2274,15 @@ msgid ""
 "<img src=\"crystalsvg/32x32/apps/digikam.png\">\n"
 "</td>\n"
 "<td>\n"
-"Did you know that because PNG file format use a lossless compression "
-"algorithm, you can use the max compression level with this file format?\n"
+"... that because the PNG file format uses a lossless compression algorithm, "
+"you can use the max compression level with this file format?\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
 "</p>\n"
 msgstr ""
 
-#: tips.cpp:257
+#: tips.cpp:223
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -2234,15 +2291,15 @@ msgid ""
 "<img src=\"crystalsvg/32x32/apps/digikam.png\">\n"
 "</td>\n"
 "<td>\n"
-"Did you know that you can print the current image opened in the Digikam "
-"image editor?\n"
+"... that you can print the current image opened in the digiKam image "
+"editor?\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
 "</p>\n"
 msgstr ""
 
-#: tips.cpp:273
+#: tips.cpp:239
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -2251,15 +2308,15 @@ msgid ""
 "<img src=\"crystalsvg/32x32/apps/digikam.png\">\n"
 "</td>\n"
 "<td>\n"
-"Did you know that you can edit the comments of the current image opened in "
-"the Digikam image editor?\n"
+"... that you can edit the comments of the current image opened in the "
+"digiKam image editor?\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
 "</p>\n"
 msgstr ""
 
-#: tips.cpp:289
+#: tips.cpp:255
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -2268,8 +2325,8 @@ msgid ""
 "<img src=\"crystalsvg/32x32/apps/digikam.png\">\n"
 "</td>\n"
 "<td>\n"
-"Did you know that you could use <Page Down> and <Page Up> on your Keyboard "
-"to switch between the photos in the image editor?\n"
+"... that you could use &lt;Page Down&gt; and &lt;Page Up&gt; on your "
+"Keyboard to switch between the photos in the image editor?\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
@@ -2305,7 +2362,7 @@ msgstr ""
 msgid ""
 "<p>Here you can set the extensions of image files to be displayed in Albums "
 "(such as JPEG or TIFF); when these files are double-clicked on they will be "
-"opened with the Digikam ImageViewer."
+"opened with the digiKam Image Editor."
 msgstr ""
 
 #: utilities/setup/setupmime.cpp:64
@@ -2363,7 +2420,7 @@ msgstr ""
 #: utilities/setup/setupcollections.cpp:72
 msgid ""
 "<p>You can add or remove Album collection types here to improve how your "
-"Albums are sorted in Digikam."
+"Albums are sorted in digiKam."
 msgstr ""
 
 #: utilities/setup/setupcamera.cpp:76 utilities/setup/setupcollections.cpp:81
@@ -2484,7 +2541,7 @@ msgstr "Llwybr"
 
 #: utilities/setup/setupcamera.cpp:61
 msgid ""
-"<p>You can see here the digital camera list used by Digikam via the Gphoto "
+"<p>You can see here the digital camera list used by digiKam via the Gphoto "
 "interface."
 msgstr ""
 
@@ -2708,144 +2765,176 @@ msgstr ""
 msgid "Camera Mount Path"
 msgstr ""
 
-#: utilities/imageeditor/imagewindow.cpp:189
+#: utilities/imageeditor/undoaction.cpp:31
+#: utilities/imageeditor/undoaction.h:118
+msgid "unknown"
+msgstr "anhysbys"
+
+#: utilities/imageeditor/imagewindow.cpp:187
 msgid "&Next"
 msgstr "&Nesaf"
 
-#: utilities/imageeditor/imagewindow.cpp:194
+#: utilities/imageeditor/imagewindow.cpp:192
 msgid "&First"
 msgstr "&Yn Gyntaf"
 
-#: utilities/imageeditor/imagewindow.cpp:199
+#: utilities/imageeditor/imagewindow.cpp:197
 msgid "&Last"
 msgstr "&Olaf"
 
-#: utilities/imageeditor/imagewindow.cpp:213
+#: utilities/imageeditor/imagewindow.cpp:211
 msgid "Print Image..."
 msgstr ""
 
-#: utilities/imageeditor/imagewindow.cpp:223
+#: utilities/imageeditor/imagewindow.cpp:221
 msgid ""
 "This option display the current image properties, meta-data, and histogram. "
 "If you have selected a region, you can choose an histogram rendering for the "
 "full image or the current image selection."
 msgstr ""
 
-#: utilities/imageeditor/imagewindow.cpp:228
-#: utilities/imageeditor/imagewindow.cpp:417
+#: utilities/imageeditor/imagewindow.cpp:226
+#: utilities/imageeditor/imagewindow.cpp:434
 msgid "Delete File"
 msgstr "Dileu Ffeil"
 
-#: utilities/imageeditor/imagewindow.cpp:254
+#: utilities/imageeditor/imagewindow.cpp:267
 msgid "Zoom &In"
 msgstr "Ne&sàu"
 
-#: utilities/imageeditor/imagewindow.cpp:259
+#: utilities/imageeditor/imagewindow.cpp:272
 msgid "Zoom &Out"
 msgstr "Pell&hàu"
 
-#: utilities/imageeditor/imagewindow.cpp:277
+#: utilities/imageeditor/imagewindow.cpp:290
 msgid "&Resize..."
 msgstr "Newid &Maint ..."
 
-#: utilities/imageeditor/imagewindow.cpp:281
+#: utilities/imageeditor/imagewindow.cpp:294
 msgid "&Crop"
 msgstr ""
 
-#: utilities/imageeditor/imagewindow.cpp:286
+#: utilities/imageeditor/imagewindow.cpp:299
 msgid ""
 "This option can be used to crop the image. Select the image region to enable "
 "this action."
 msgstr ""
 
-#: utilities/imageeditor/imagewindow.cpp:291
+#: utilities/imageeditor/imagewindow.cpp:304
 msgid "&Rotate"
 msgstr "C&ylchdroi"
 
-#: utilities/imageeditor/imagewindow.cpp:296
+#: utilities/imageeditor/imagewindow.cpp:309
 msgid "90 Degrees"
 msgstr ""
 
-#: utilities/imageeditor/imagewindow.cpp:300
+#: utilities/imageeditor/imagewindow.cpp:313
 msgid "180 Degrees"
 msgstr ""
 
-#: utilities/imageeditor/imagewindow.cpp:304
+#: utilities/imageeditor/imagewindow.cpp:317
 msgid "270 Degrees"
 msgstr ""
 
-#: utilities/imageeditor/imagewindow.cpp:314
+#: utilities/imageeditor/imagewindow.cpp:327
 msgid "Flip"
 msgstr ""
 
-#: utilities/imageeditor/imagewindow.cpp:320
+#: utilities/imageeditor/imagewindow.cpp:333
 msgid "Horizontally"
 msgstr ""
 
-#: utilities/imageeditor/imagewindow.cpp:325
+#: utilities/imageeditor/imagewindow.cpp:338
 msgid "Vertically"
 msgstr ""
 
-#: utilities/imageeditor/imagewindow.cpp:334
+#: utilities/imageeditor/imagewindow.cpp:347
 msgid "Image Plugins Handbooks"
 msgstr ""
 
-#: utilities/imageeditor/imagewindow.cpp:370
-msgid "Digikam Image Editor - Album \"%1\""
+#: utilities/imageeditor/imagewindow.cpp:386
+msgid "digiKam Image Editor - Album \"%1\""
 msgstr ""
 
-#: utilities/imageeditor/imagewindow.cpp:488
+#: utilities/imageeditor/imagewindow.cpp:500
 msgid " (%2 of %3)"
 msgstr ""
 
-#: utilities/imageeditor/imagewindow.cpp:626
+#: utilities/imageeditor/imagewindow.cpp:669
 msgid "Zoom: "
 msgstr "Chwyddo: "
 
-#: utilities/imageeditor/imagewindow.cpp:713
+#: utilities/imageeditor/imagewindow.cpp:758
 msgid ""
 "About to Delete File \"%1\"\n"
 "Are you sure?"
 msgstr ""
 
-#: utilities/imageeditor/imagewindow.cpp:764
+#: utilities/imageeditor/imagewindow.cpp:809
 msgid ""
 "There is no image to show in the current album.\n"
 "The image editor will be closed."
 msgstr ""
 
-#: utilities/imageeditor/imagewindow.cpp:766
+#: utilities/imageeditor/imagewindow.cpp:811
 msgid "No Image in Current Album"
 msgstr ""
 
-#: utilities/imageeditor/imagewindow.cpp:789
+#: utilities/imageeditor/imagewindow.cpp:834
 #, c-format
 msgid "Print %1"
 msgstr "Argraffu %1"
 
-#: utilities/imageeditor/imagewindow.cpp:797
+#: utilities/imageeditor/imagewindow.cpp:842
 msgid "Failed to print file: '%1'"
 msgstr ""
 
-#: utilities/imageeditor/imagewindow.cpp:817
-#: utilities/imageeditor/imagewindow.cpp:923
+#: utilities/imageeditor/imagewindow.cpp:862
+#: utilities/imageeditor/imagewindow.cpp:968
 msgid ""
 "Failed to save file\n"
 "\"%1\" to album\n"
 "\"%2\"."
 msgstr ""
 
-#: utilities/imageeditor/imagewindow.cpp:887
+#: utilities/imageeditor/imagewindow.cpp:932
 msgid ""
 "Failed to save file\n"
 "\"%1\" to Album\n"
 "\"%2\""
 msgstr ""
 
-#: utilities/imageeditor/imagewindow.cpp:1099
+#: utilities/imageeditor/imagewindow.cpp:1144
 msgid ""
 "The image \"%1\" has been modified.\n"
 "Do you want to save it?"
+msgstr ""
+
+#: utilities/imageeditor/undoaction.cpp:50
+#, fuzzy
+msgid "Rotate 90 Degrees"
+msgstr "C&ylchdroi"
+
+#: utilities/imageeditor/undoaction.cpp:53
+#, fuzzy
+msgid "Rotate 180 Degrees"
+msgstr "C&ylchdroi"
+
+#: utilities/imageeditor/undoaction.cpp:56
+#, fuzzy
+msgid "Rotate 270 Degrees"
+msgstr "C&ylchdroi"
+
+#: utilities/imageeditor/undoaction.cpp:106
+msgid "Flip Horizontal"
+msgstr ""
+
+#: utilities/imageeditor/undoaction.cpp:108
+msgid "Flip Vertical"
+msgstr ""
+
+#: utilities/imageeditor/undoaction.cpp:144
+msgid "Brightness,Contrast,Gamma"
 msgstr ""
 
 #: utilities/imageeditor/imageprint.cpp:73
@@ -3208,6 +3297,23 @@ msgstr ""
 msgid "Download"
 msgstr "Lawrlwytho"
 
+#, fuzzy
+#~ msgid "&Convert to"
+#~ msgstr "&Gwrthdroi Dewisiad"
+
+#~ msgid "Brown"
+#~ msgstr "Brown"
+
+#, fuzzy
+#~ msgid "Sepia"
+#~ msgstr "Cyfresol"
+
+#~ msgid "Platinum"
+#~ msgstr "Platinwm"
+
+#~ msgid "Radius:"
+#~ msgstr "Radiws:"
+
 #~ msgid "Red:"
 #~ msgstr "***"
 
@@ -3289,6 +3395,3 @@ msgstr "Lawrlwytho"
 
 #~ msgid "Status:"
 #~ msgstr "Cyflwr:"
-
-#~ msgid "unknown"
-#~ msgstr "anhysbys"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdegraphics/kviewshell.po\n"
-"POT-Creation-Date: 2005-02-23 01:23+0100\n"
+"POT-Creation-Date: 2005-03-11 01:23+0100\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid ""
 "Your emails"
 msgstr "kyfieithu@dotmon.com"
 
-#: documentWidget.cpp:283
+#: documentWidget.cpp:381
 #, c-format
 msgid "Link to %1"
 msgstr ""
@@ -30,25 +30,29 @@ msgstr ""
 msgid "Empty Multipage"
 msgstr ""
 
-#: empty_multipage.cpp:43 kviewpart.cpp:1177
+#: empty_multipage.cpp:43 kviewpart.cpp:1249
 msgid "Copyright (c) 2005 Wilfried Huss"
 msgstr ""
 
-#: kmultipage.cpp:117
+#: kmultipage.cpp:60
+msgid "Thumbnails"
+msgstr "Rhagolygon cryno"
+
+#: kmultipage.cpp:136
 msgid "Save File As"
 msgstr ""
 
-#: kmultipage.cpp:128
+#: kmultipage.cpp:147
 msgid ""
 "The file %1\n"
 "exists. Shall I overwrite that file?"
 msgstr ""
 
-#: kmultipage.cpp:129
+#: kmultipage.cpp:148
 msgid "Overwrite File"
 msgstr ""
 
-#: kmultipage.cpp:1139
+#: kmultipage.cpp:1181
 msgid ""
 "<qt>This function searches the DVI file for plain text. Unfortunately, this "
 "version of KDVI treats only plain ASCII characters properly. Symbols, "
@@ -57,202 +61,256 @@ msgid ""
 "Continue anyway?</qt>"
 msgstr ""
 
-#: kmultipage.cpp:1143
+#: kmultipage.cpp:1185
 msgid "Function May Not Work as Expected"
 msgstr ""
 
-#: kmultipage.cpp:1209 kmultipage.cpp:1334
+#: kmultipage.cpp:1251 kmultipage.cpp:1376
 msgid "Searching for '%1'..."
 msgstr ""
 
-#: kmultipage.cpp:1209 kmultipage.cpp:1334
+#: kmultipage.cpp:1251 kmultipage.cpp:1376
 msgid "Abort"
 msgstr "Erthylu"
 
-#: kmultipage.cpp:1245
+#: kmultipage.cpp:1287
 msgid ""
 "<qt>The search string <strong>%1</strong> could not be found by the end of "
 "the document. Should the search be restarted from the beginning of the "
 "document?</qt>"
 msgstr ""
 
-#: kmultipage.cpp:1248 kmultipage.cpp:1370
+#: kmultipage.cpp:1290 kmultipage.cpp:1412
 msgid "Text Not Found"
 msgstr ""
 
-#: kmultipage.cpp:1304 kmultipage.cpp:1427
+#: kmultipage.cpp:1346 kmultipage.cpp:1469
 msgid "<qt>The search string <strong>%1</strong> could not be found.</qt>"
 msgstr ""
 
-#: kmultipage.cpp:1367
+#: kmultipage.cpp:1409
 msgid ""
 "<qt>The search string <strong>%1</strong> could not be found by the "
 "beginning of the document. Should the search be restarted from the end of "
 "the document?</qt>"
 msgstr ""
 
-#: kviewpart.cpp:107
+#: kmultipage.cpp:1500
+#, c-format
+msgid "Reloading file %1"
+msgstr ""
+
+#: kmultipage.cpp:1529
+#, c-format
+msgid "Loading file %1"
+msgstr ""
+
+#: kviewpart.cpp:108
 msgid "<qt>No MultiPage found.</qt>"
 msgstr ""
 
-#: kviewpart.cpp:122
-msgid "<qt>Loading of library <b>%1</b> failed.</qt>"
+#: kviewpart.cpp:125 kviewpart.cpp:700
+msgid ""
+"<qt>No service implementing the given mimetype and fullfilling the given "
+"constraint expression can be found.</qt>"
 msgstr ""
 
-#: kviewpart.cpp:130
-msgid "Show &Sidebar"
-msgstr "Dango&s Bar Ochr"
-
-#: kviewpart.cpp:132
-msgid "Hide &Sidebar"
-msgstr "Cuddi&o Bar Ochr"
-
-#: kviewpart.cpp:133
-msgid "&Watch File"
+#: kviewpart.cpp:128 kviewpart.cpp:703
+msgid "<qt>The specified service provides no shared library.</qt>"
 msgstr ""
 
-#: kviewpart.cpp:134
-msgid "Show Scrollbars"
+#: kviewpart.cpp:131
+msgid ""
+"<qt>"
+"<p>The specified library <b>%1</b> could not be loaded. The error message "
+"returned was:</p><p><b>%2</b></p></qt>"
 msgstr ""
 
-#: kviewpart.cpp:135
-msgid "Hide Scrollbars"
+#: kviewpart.cpp:135 kviewpart.cpp:709
+msgid "<qt>The library does not export a factory for creating components.</qt>"
 msgstr ""
 
-#: kviewpart.cpp:139
-msgid "Single Page"
-msgstr ""
-
-#: kviewpart.cpp:140
-msgid "Continuous"
-msgstr ""
-
-#: kviewpart.cpp:141
-msgid "Continuous - Facing"
+#: kviewpart.cpp:138 kviewpart.cpp:712
+msgid ""
+"<qt>The factory does not support creating components of the specified "
+"type.</qt>"
 msgstr ""
 
 #: kviewpart.cpp:142
-msgid "Overview"
-msgstr "Trosolwg"
-
-#: kviewpart.cpp:143
-msgid "View Mode"
-msgstr "Modd Golwg"
-
-#: kviewpart.cpp:150
-msgid "Preferred &Orientation"
+msgid ""
+"<qt>"
+"<p><b>Problem:</b> The document <b>%1</b> cannot be "
+"shown.</p>"
+"<p><b>Reason:</b> The software compoment <b>%2</b> which is required to "
+"display your files could not be initialized. This could point to serious "
+"misconfiguration of your KDE system, or to damaged program "
+"files.</p>"
+"<p><b>What you can do:</b>"
+" You could try to re-install the software packages in question. If that does "
+"not help, you could file an error report, either to the provider of your "
+"software (e.g. the vendor of your Linux distribution), or directly to the "
+"authors of the software. The entry <b>Report Bug...</b> in the <b>Help</b> "
+"menu helps you to contact the KDE programmers.</p></qt>"
 msgstr ""
 
-#: kviewpart.cpp:167
-msgid "Preferred Paper &Size"
+#: kviewpart.cpp:151 kviewpart.cpp:726
+msgid "Error initializing software component"
+msgstr ""
+
+#: kviewpart.cpp:160
+msgid "Show &Sidebar"
+msgstr "Dango&s Bar Ochr"
+
+#: kviewpart.cpp:162
+msgid "Hide &Sidebar"
+msgstr "Cuddi&o Bar Ochr"
+
+#: kviewpart.cpp:163
+msgid "&Watch File"
+msgstr ""
+
+#: kviewpart.cpp:164
+msgid "Show Scrollbars"
+msgstr ""
+
+#: kviewpart.cpp:165
+msgid "Hide Scrollbars"
 msgstr ""
 
 #: kviewpart.cpp:169
+msgid "Single Page"
+msgstr ""
+
+#: kviewpart.cpp:170
+msgid "Continuous"
+msgstr ""
+
+#: kviewpart.cpp:171
+msgid "Continuous - Facing"
+msgstr ""
+
+#: kviewpart.cpp:172
+msgid "Overview"
+msgstr "Trosolwg"
+
+#: kviewpart.cpp:173
+msgid "View Mode"
+msgstr "Modd Golwg"
+
+#: kviewpart.cpp:180
+msgid "Preferred &Orientation"
+msgstr ""
+
+#: kviewpart.cpp:197
+msgid "Preferred Paper &Size"
+msgstr ""
+
+#: kviewpart.cpp:199
 msgid "Custom Size..."
 msgstr ""
 
-#: kviewpart.cpp:173
+#: kviewpart.cpp:203
 msgid "&Use Document Specified Paper Size"
 msgstr ""
 
-#: kviewpart.cpp:180
+#: kviewpart.cpp:210
 msgid "&Fit to Page"
 msgstr "&Ffitio i Dudalen"
 
-#: kviewpart.cpp:182
+#: kviewpart.cpp:212
 msgid "Fit to Page &Width"
 msgstr "Ffitio i &Led Tudalen"
 
-#: kviewpart.cpp:184
+#: kviewpart.cpp:214
 msgid "Fit to Page &Height"
 msgstr "Ffitio i &Hyd Tudalen"
 
-#: kviewpart.cpp:203
+#: kviewpart.cpp:233
 msgid "Read Up Document"
 msgstr ""
 
-#: kviewpart.cpp:204
+#: kviewpart.cpp:234
 msgid "Read Down Document"
 msgstr ""
 
-#: kviewpart.cpp:211
+#: kviewpart.cpp:241
 msgid "&Back"
 msgstr "&Yn ôl"
 
-#: kviewpart.cpp:213
+#: kviewpart.cpp:243
 msgid "&Forward"
 msgstr "&Ymlaen"
 
-#: kviewpart.cpp:222
+#: kviewpart.cpp:252
 msgid "About KViewShell"
 msgstr ""
 
-#: kviewpart.cpp:226
+#: kviewpart.cpp:256
 msgid "Scroll Up"
 msgstr "Sgrolio i fyny"
 
-#: kviewpart.cpp:227
+#: kviewpart.cpp:257
 msgid "Scroll Down"
 msgstr "Sgrolio i lawr"
 
-#: kviewpart.cpp:228
+#: kviewpart.cpp:258
 msgid "Scroll Left"
 msgstr "Sgrolio i'r Chwith"
 
-#: kviewpart.cpp:229
+#: kviewpart.cpp:259
 msgid "Scroll Right"
 msgstr "Sgrolio i'r Dde"
 
-#: kviewpart.cpp:231
+#: kviewpart.cpp:261
 msgid "Scroll Up Page"
 msgstr ""
 
-#: kviewpart.cpp:232
+#: kviewpart.cpp:262
 msgid "Scroll Down Page"
 msgstr ""
 
-#: kviewpart.cpp:233
+#: kviewpart.cpp:263
 msgid "Scroll Left Page"
 msgstr ""
 
-#: kviewpart.cpp:234
+#: kviewpart.cpp:264
 msgid "Scroll Right Page"
 msgstr ""
 
-#: kviewpart.cpp:329
+#: kviewpart.cpp:359
 msgid "portrait"
 msgstr "darlun"
 
-#: kviewpart.cpp:331
+#: kviewpart.cpp:361
 msgid "landscape"
 msgstr "tirlun"
 
-#: kviewpart.cpp:514
+#: kviewpart.cpp:544
 msgid "<qt>File <nobr><strong>%1</strong></nobr> does not exist.</qt>"
 msgstr ""
 
-#: kviewpart.cpp:523
+#: kviewpart.cpp:553
 msgid "Loading '%1'..."
 msgstr ""
 
-#: kviewpart.cpp:540
+#: kviewpart.cpp:570
 msgid "<qt><strong>File Error!</strong> Could not create temporary file.</qt>"
 msgstr ""
 
-#: kviewpart.cpp:549
+#: kviewpart.cpp:579
 msgid ""
 "<qt><strong>File Error!</strong> Could not create temporary file "
 "<nobr><strong>%1</strong></nobr>.</qt>"
 msgstr ""
 
-#: kviewpart.cpp:570
+#: kviewpart.cpp:600
 msgid ""
 "<qt><strong>File Error!</strong> Could not open the file "
 "<nobr><strong>%1</strong></nobr> for uncompression. The file will not be "
 "loaded.</qt>"
 msgstr ""
 
-#: kviewpart.cpp:573
+#: kviewpart.cpp:603
 msgid ""
 "<qt>This error typically occurs if you do not have enough permissions to "
 "read the file. You can check ownership and permissions if you right-click on "
@@ -260,172 +318,196 @@ msgid ""
 "menu.</qt>"
 msgstr ""
 
-#: kviewpart.cpp:583
+#: kviewpart.cpp:613
 msgid "Uncompressing..."
 msgstr ""
 
-#: kviewpart.cpp:584
+#: kviewpart.cpp:614
 msgid ""
 "<qt>Uncompressing the file <nobr><strong>%1</strong></nobr>. Please "
 "wait.</qt>"
 msgstr ""
 
-#: kviewpart.cpp:614
+#: kviewpart.cpp:644
 msgid ""
 "<qt><strong>File Error!</strong> Could not uncompress the file "
 "<nobr><strong>%1</strong></nobr>. The file will not be loaded.</qt>"
 msgstr ""
 
-#: kviewpart.cpp:616
+#: kviewpart.cpp:646
 msgid ""
 "<qt>This error typically occurs if the file is corrupt. If you want to be "
 "sure, try to decompress the file manually using command-line tools.</qt>"
 msgstr ""
 
-#: kviewpart.cpp:764 kviewpart.cpp:1165
+#: kviewpart.cpp:706
+msgid ""
+"<qt>"
+"<p>The specified library <b>%1</b> could not be loaded. The error message "
+"returned was:</p> <p><b>%2</b></p></qt>"
+msgstr ""
+
+#: kviewpart.cpp:716
+msgid ""
+"<qt>"
+"<p><b>Problem:</b> The document <b>%1</b> cannot be "
+"shown.</p>"
+"<p><b>Reason:</b> The software compoment <b>%2</b> which is required to "
+"display files of type <b>%3</b> could not be initialized. This could point "
+"to serious misconfiguration of your KDE system, or to damaged program "
+"files.</p>"
+"<p><b>What you can do:</b>"
+" You could try to re-install the software packages in question. If that does "
+"not help, you could file an error report, either to the provider of your "
+"software (e.g. the vendor of your Linux distribution), or directly to the "
+"authors of the software. The entry <b>Report Bug...</b> in the <b>Help</b> "
+"menu helps you to contact the KDE programmers.</p></qt>"
+msgstr ""
+
+#: kviewpart.cpp:835 kviewpart.cpp:1237
 msgid "Page %1 of %2"
 msgstr ""
 
-#: kviewpart.cpp:778
+#: kviewpart.cpp:849
 msgid "Go to Page"
 msgstr ""
 
-#: kviewpart.cpp:778
+#: kviewpart.cpp:849
 msgid "Page:"
 msgstr "Tudalen :"
 
-#: kviewpart.cpp:1174
+#: kviewpart.cpp:1246
 msgid "Document Viewer Part"
 msgstr ""
 
-#: kviewpart.cpp:1186 main.cpp:31
+#: kviewpart.cpp:1258 main.cpp:30
 msgid "KViewShell"
 msgstr ""
 
-#: kviewpart.cpp:1189
+#: kviewpart.cpp:1261
 msgid "Original Author"
 msgstr "Awdur Gwreiddiol"
 
-#: kviewpart.cpp:1192 main.cpp:36
+#: kviewpart.cpp:1264 main.cpp:35
 msgid "Framework"
 msgstr ""
 
-#: kviewpart.cpp:1194
+#: kviewpart.cpp:1266
 msgid "Former KGhostView Maintainer"
 msgstr ""
 
-#: kviewpart.cpp:1196 main.cpp:43
+#: kviewpart.cpp:1268 main.cpp:42
 msgid "KGhostView Author"
 msgstr ""
 
-#: kviewpart.cpp:1198 main.cpp:45
+#: kviewpart.cpp:1270 main.cpp:44
 msgid "Navigation widgets"
 msgstr ""
 
-#: kviewpart.cpp:1200 main.cpp:47
+#: kviewpart.cpp:1272 main.cpp:46
 msgid "Basis for shell"
 msgstr ""
 
-#: kviewpart.cpp:1202 main.cpp:49
+#: kviewpart.cpp:1274 main.cpp:48
 msgid "Port to KParts"
 msgstr ""
 
-#: kviewpart.cpp:1204 main.cpp:51
+#: kviewpart.cpp:1276 main.cpp:50
 msgid "Dialog boxes"
 msgstr ""
 
-#: kviewpart.cpp:1206 main.cpp:53
+#: kviewpart.cpp:1278 main.cpp:52
 msgid "DCOP-Interface, major improvements"
 msgstr ""
 
-#: kviewpart.cpp:1208
+#: kviewpart.cpp:1280
 msgid "Interface enhancements"
 msgstr ""
 
-#: kviewpart.cpp:1221
+#: kviewpart.cpp:1293
 #, fuzzy
 msgid "User Interface"
 msgstr "Rhyngwyneb"
+
+#: kviewpart.cpp:1296
+msgid "Accessibility"
+msgstr "Hygyrchedd"
 
 #: kviewshell.cpp:67
 msgid "No viewing component found"
 msgstr ""
 
-#: kviewshell.cpp:257
+#: kviewshell.cpp:264
 msgid "Use the Escape key to leave the fullscreen mode."
 msgstr ""
 
-#: kviewshell.cpp:257
+#: kviewshell.cpp:264
 msgid "Entering Fullscreen Mode"
 msgstr ""
 
 #: main.cpp:18
-msgid "The part to use"
-msgstr ""
-
-#: main.cpp:19
 msgid ""
 "Check if the file is loaded in another kviewshell. If it is, bring up the "
 "other kviewshell. Otherwise, load the file."
 msgstr ""
 
-#: main.cpp:20
+#: main.cpp:19
 msgid ""
 "Sets paper size (not implemented at the moment, only for compatibility with "
 "lyx)"
 msgstr ""
 
-#: main.cpp:21
+#: main.cpp:20
 msgid "Files to load"
 msgstr "Ffeiliau i'w llwytho"
 
-#: main.cpp:26
+#: main.cpp:25
 msgid "Generic framework for viewer applications"
 msgstr ""
 
-#: main.cpp:34
+#: main.cpp:33
 msgid "Displays various document formats. Based on original code from KGhostView."
 msgstr ""
 
-#: main.cpp:39
+#: main.cpp:38
 msgid "KGhostView Maintainer"
 msgstr ""
 
-#: main.cpp:87
+#: main.cpp:81
 msgid "The URL %1 is not well-formed."
 msgstr ""
 
-#: main.cpp:92
+#: main.cpp:86
 msgid ""
 "The URL %1 does not point to a local file. You can only specify local files "
 "if you are using the '--unique' option."
 msgstr ""
 
-#: marklist.cpp:112
+#: marklist.cpp:127
 msgid "Using this checkbox you can select pages for printing."
 msgstr ""
 
-#: marklist.cpp:442
+#: marklist.cpp:468
 msgid "Select &Current Page"
 msgstr ""
 
-#: marklist.cpp:443
+#: marklist.cpp:469
 msgid "Select &All Pages"
 msgstr ""
 
-#: marklist.cpp:444
+#: marklist.cpp:470
 msgid "Select &Even Pages"
 msgstr ""
 
-#: marklist.cpp:445
+#: marklist.cpp:471
 msgid "Select &Odd Pages"
 msgstr ""
 
-#: marklist.cpp:446
+#: marklist.cpp:472
 msgid "&Invert Selection"
 msgstr "&Gwrthdroi Dewisiad"
 
-#: marklist.cpp:447
+#: marklist.cpp:473
 msgid "&Deselect All Pages"
 msgstr ""
 
@@ -443,26 +525,92 @@ msgstr ""
 msgid "&Go"
 msgstr "&Ewch"
 
-#. i18n: file optionDialogGUIWidget_base.ui line 25
+#. i18n: file optionDialogAccessibilityWidget.ui line 35
 #: rc.cpp:24
+#, no-c-format
+msgid "Change &Colors"
+msgstr ""
+
+#. i18n: file optionDialogAccessibilityWidget.ui line 67
+#: rc.cpp:27
+#, no-c-format
+msgid "Warning: these options can badly affect drawing speed."
+msgstr ""
+
+#. i18n: file optionDialogAccessibilityWidget.ui line 109
+#: rc.cpp:31
+#, fuzzy, no-c-format
+msgid "&Invert colors"
+msgstr "&Gwrthdroi Dewisiad"
+
+#. i18n: file optionDialogAccessibilityWidget.ui line 120
+#: rc.cpp:34
+#, no-c-format
+msgid "Change &paper color"
+msgstr ""
+
+#. i18n: file optionDialogAccessibilityWidget.ui line 156
+#: rc.cpp:37
+#, no-c-format
+msgid "Paper color:"
+msgstr ""
+
+#. i18n: file optionDialogAccessibilityWidget.ui line 197
+#: rc.cpp:41
+#, no-c-format
+msgid "&Change dark and light colors"
+msgstr ""
+
+#. i18n: file optionDialogAccessibilityWidget.ui line 292
+#: rc.cpp:46
+#, no-c-format
+msgid "Light color:"
+msgstr ""
+
+#. i18n: file optionDialogAccessibilityWidget.ui line 320
+#: rc.cpp:49
+#, no-c-format
+msgid "Dark color:"
+msgstr ""
+
+#. i18n: file optionDialogAccessibilityWidget.ui line 330
+#: rc.cpp:52
+#, no-c-format
+msgid "Convert to &black and white"
+msgstr ""
+
+#. i18n: file optionDialogAccessibilityWidget.ui line 349
+#: rc.cpp:55
+#, no-c-format
+msgid "Contrast:"
+msgstr "Cyferbyniant :"
+
+#. i18n: file optionDialogAccessibilityWidget.ui line 472
+#: rc.cpp:58
+#, no-c-format
+msgid "Threshold:"
+msgstr "Trothwy :"
+
+#. i18n: file optionDialogGUIWidget_base.ui line 25
+#: rc.cpp:61
 #, no-c-format
 msgid "Enabled"
 msgstr "Alluogir"
 
 #. i18n: file optionDialogGUIWidget_base.ui line 30
-#: rc.cpp:27
+#: rc.cpp:64
 #, no-c-format
 msgid "Disabled"
 msgstr "Analluogir"
 
 #. i18n: file optionDialogGUIWidget_base.ui line 35
-#: rc.cpp:30
+#: rc.cpp:67
 #, no-c-format
 msgid "Only on Hover"
 msgstr "Ar Hofran yn Unig"
 
 #. i18n: file optionDialogGUIWidget_base.ui line 47
-#: rc.cpp:33
+#: rc.cpp:70
 #, no-c-format
 msgid ""
 "<qt>Controls how hyperlinks are underlined:\n"
@@ -475,103 +623,103 @@ msgid ""
 msgstr ""
 
 #. i18n: file optionDialogGUIWidget_base.ui line 55
-#: rc.cpp:41
+#: rc.cpp:78
 #, no-c-format
 msgid "Underline links:"
-msgstr ""
+msgstr "Tanlinellu cysylltiadau:"
 
 #. i18n: file optionDialogGUIWidget_base.ui line 63
-#: rc.cpp:44
+#: rc.cpp:81
 #, no-c-format
 msgid "Show &thumbnail previews"
 msgstr ""
 
 #. i18n: file optionDialogGUIWidget_base.ui line 71
-#: rc.cpp:47
+#: rc.cpp:84
 #, no-c-format
 msgid "Overview Mode"
 msgstr ""
 
 #. i18n: file optionDialogGUIWidget_base.ui line 82
-#: rc.cpp:50
+#: rc.cpp:87
 #, no-c-format
 msgid "Rows:"
 msgstr "Rhesi:"
 
 #. i18n: file optionDialogGUIWidget_base.ui line 112
-#: rc.cpp:53
+#: rc.cpp:90
 #, no-c-format
 msgid "Columns:"
 msgstr "Colofnau:"
 
 #. i18n: file pageSizeWidget_base.ui line 47
-#: rc.cpp:57
+#: rc.cpp:94
 #, no-c-format
 msgid "Page Format"
 msgstr ""
 
 #. i18n: file pageSizeWidget_base.ui line 64
-#: rc.cpp:60
+#: rc.cpp:97
 #, no-c-format
 msgid "Format:"
 msgstr "Fformat:"
 
 #. i18n: file pageSizeWidget_base.ui line 104
-#: rc.cpp:69
+#: rc.cpp:106
 #, no-c-format
 msgid "Width:"
 msgstr "Lled:"
 
 #. i18n: file pageSizeWidget_base.ui line 112
-#: rc.cpp:72
+#: rc.cpp:109
 #, no-c-format
 msgid "Height:"
 msgstr "Taldra:"
 
 #. i18n: file pageSizeWidget_base.ui line 120
-#: rc.cpp:75
+#: rc.cpp:112
 #, no-c-format
 msgid "Width of the chosen paper size in portrait orientation"
 msgstr ""
 
 #. i18n: file pageSizeWidget_base.ui line 128
-#: rc.cpp:78
+#: rc.cpp:115
 #, no-c-format
 msgid "Height of the chosen paper size in portrait orientation"
 msgstr ""
 
 #. i18n: file pageSizeWidget_base.ui line 134
-#: rc.cpp:81 rc.cpp:90
+#: rc.cpp:118 rc.cpp:127
 #, no-c-format
 msgid "cm"
 msgstr "cm"
 
 #. i18n: file pageSizeWidget_base.ui line 139
-#: rc.cpp:84 rc.cpp:93
+#: rc.cpp:121 rc.cpp:130
 #, no-c-format
 msgid "mm"
 msgstr "mM"
 
 #. i18n: file pageSizeWidget_base.ui line 144
-#: rc.cpp:87 rc.cpp:96
+#: rc.cpp:124 rc.cpp:133
 #, no-c-format
 msgid "in"
 msgstr "in"
 
 #. i18n: file pageSizeWidget_base.ui line 198
-#: rc.cpp:99
+#: rc.cpp:136
 #, no-c-format
 msgid "Orientation:"
 msgstr "Cyfeiriadaeth:"
 
 #. i18n: file pageSizeWidget_base.ui line 216
-#: rc.cpp:102
+#: rc.cpp:139
 #, no-c-format
 msgid "Page Preview"
 msgstr "Rhagolwg Tudalen"
 
-#. i18n: file kviewshell.kcfg line 69
-#: rc.cpp:105
+#. i18n: file kviewshell.kcfg line 72
+#: rc.cpp:142
 #, no-c-format
 msgid ""
 "\n"
@@ -586,4 +734,8 @@ msgid ""
 "        </ul>\n"
 "      </qt>\n"
 "    "
+msgstr ""
+
+#: tableOfContents.cpp:41
+msgid "Topic"
 msgstr ""

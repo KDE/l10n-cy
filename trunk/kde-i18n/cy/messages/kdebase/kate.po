@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
-"POT-Creation-Date: 2005-02-23 01:22+0100\n"
+"POT-Creation-Date: 2005-03-11 01:22+0100\n"
 "PO-Revision-Date: 2004-06-30 15:15+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -502,7 +502,7 @@ msgstr "Crëwyd"
 
 #: app/katemwmodonhddialog.cpp:100
 msgid "Deleted"
-msgstr ""
+msgstr "Wedi'u dileu"
 
 #: app/katemwmodonhddialog.cpp:109
 msgid "&View Difference"
@@ -556,9 +556,8 @@ msgid "Reopen &projects at startup"
 msgstr "Ailagor &ffeiliau wrth gychwyn"
 
 #: app/kateconfigdialog.cpp:118
-#, fuzzy
 msgid "R&eopen files at startup"
-msgstr "Ailagor &ffeiliau wrth gychwyn"
+msgstr "A&ilagor ffeiliau wrth gychwyn"
 
 #: app/kateconfigdialog.cpp:122
 msgid ""
@@ -587,9 +586,8 @@ msgid "&Appearance"
 msgstr "&Ymddangosiad"
 
 #: app/kateconfigdialog.cpp:142
-#, fuzzy
 msgid "&Show full path in title"
-msgstr "Dangos &llwybr llawn yn y teitl"
+msgstr "&Dangos llwybr llawn yn y teitl"
 
 #: app/kateconfigdialog.cpp:144
 msgid ""
@@ -727,14 +725,14 @@ msgid "Files:"
 msgstr "Ffeiliau:"
 
 #: app/kategrepdialog.cpp:155
-msgid "Directory:"
-msgstr "Cyfeiriadur:"
+msgid "Folder:"
+msgstr "Plygell:"
 
 #: app/kategrepdialog.cpp:172
 msgid "Recursive"
 msgstr "Ymgylchol"
 
-#: app/kategrepdialog.cpp:180 app/kategrepdialog.cpp:453
+#: app/kategrepdialog.cpp:180 app/kategrepdialog.cpp:456
 msgid "Find"
 msgstr "Canfod:"
 
@@ -817,11 +815,13 @@ msgstr ""
 " i chwilio amdano."
 
 #: app/kategrepdialog.cpp:226
-msgid "Enter the directory which contains the files you want to search in."
+#, fuzzy
+msgid "Enter the folder which contains the files you want to search in."
 msgstr "Rhowch y cyfeiriadur sy'n cynnwys y ffeiliau yr ydych am chwilio ynddynt."
 
 #: app/kategrepdialog.cpp:228
-msgid "Check this box to search in all subdirectories."
+#, fuzzy
+msgid "Check this box to search in all subfolders."
 msgstr "Dewiswch y blwch yma i chwilio ym mhob is-gyfeiriadur."
 
 #: app/kategrepdialog.cpp:230
@@ -853,11 +853,19 @@ msgstr ""
 " gyfuniad enw ffeil/rhif llinell a gwasgwch Enter neu cliciwch\n"
 " yn ddwbl ar yr eitem i ddangos y linell gyfatebol yn y golygydd."
 
-#: app/kategrepdialog.cpp:457
+#: app/kategrepdialog.cpp:322
+msgid "You must enter an existing local folder in the 'Folder' entry."
+msgstr ""
+
+#: app/kategrepdialog.cpp:323
+msgid "Invalid Folder"
+msgstr ""
+
+#: app/kategrepdialog.cpp:460
 msgid "<strong>Error:</strong><p>"
 msgstr "<strong>Gwall:</strong><p>"
 
-#: app/kategrepdialog.cpp:457
+#: app/kategrepdialog.cpp:460
 msgid "Grep Tool Error"
 msgstr "Gwall Erfyn grep"
 
@@ -1063,36 +1071,36 @@ msgstr "<b>Newidwyd (creuwyd) y ffeil yma ar y ddisg gan raglen arall!</b><br />
 msgid "<b>This file was changed (deleted) on disk by another program.</b><br />"
 msgstr "<b>Newidwyd (dileuwyd) y ffeil yma ar y ddisg gan raglen arall!</b><br />"
 
-#: app/katefilelist.cpp:578
+#: app/katefilelist.cpp:550
 msgid "Background Shading"
 msgstr ""
 
-#: app/katefilelist.cpp:584
+#: app/katefilelist.cpp:556
 msgid "&Enable background shading"
 msgstr ""
 
-#: app/katefilelist.cpp:588
+#: app/katefilelist.cpp:560
 #, fuzzy
 msgid "&Viewed documents' shade:"
 msgstr "Dogfennau"
 
-#: app/katefilelist.cpp:593
+#: app/katefilelist.cpp:565
 #, fuzzy
 msgid "&Modified documents' shade:"
 msgstr "Dogfennau"
 
-#: app/katefilelist.cpp:600
+#: app/katefilelist.cpp:572
 msgid ""
 "When background shading is enabled, documents that have been viewed or "
 "edited within the current session will have a shaded background. The most "
 "recent documents have the strongest shade."
 msgstr ""
 
-#: app/katefilelist.cpp:604
+#: app/katefilelist.cpp:576
 msgid "Set the color for shading viewed documents."
 msgstr ""
 
-#: app/katefilelist.cpp:606
+#: app/katefilelist.cpp:578
 msgid ""
 "Set the color for modified documents. This color is blended into the color "
 "for viewed files. The most recently edited documents get most of this color."
@@ -1221,9 +1229,8 @@ msgid "Split the currently active view horizontally into two views."
 msgstr "Rhannu'r golwg gweithredol cyfredol yn llorweddol yn ddau olwg."
 
 #: app/kateviewmanager.cpp:125
-#, fuzzy
 msgid "Cl&ose Current View"
-msgstr "Cau'r Olwg &Cyfredol"
+msgstr "C&au'r Olwg Cyfredol"
 
 #: app/kateviewmanager.cpp:129
 msgid "Close the currently active splitted view"
@@ -1748,6 +1755,9 @@ msgstr ""
 "<p>Gwasgwch <strong>F8</strong> neu <strong>Syflydd+F8</strong> i newid i'r "
 "\n"
 " ffrâm nesaf/blaenorol.</p>\n"
+
+#~ msgid "Directory:"
+#~ msgstr "Cyfeiriadur:"
 
 #, fuzzy
 #~ msgid "The document<br><code>%1</code><br>was changed on disk by another program."

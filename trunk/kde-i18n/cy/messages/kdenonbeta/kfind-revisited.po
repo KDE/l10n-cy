@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: all2.po\n"
-"POT-Creation-Date: 2005-02-09 01:42+0100\n"
+"POT-Creation-Date: 2005-03-07 01:48+0100\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -144,8 +144,7 @@ msgstr "Gwall."
 
 #: kfinddlg.cpp:187
 msgid "Please specify an absolute path in the \"Look in\" box."
-msgstr ""
-"Penodwch lwybr uniongyrchol yn y blwch \"Edrych yn\" os gwelwch yn dda."
+msgstr "Penodwch lwybr uniongyrchol yn y blwch \"Edrych yn\" os gwelwch yn dda."
 
 #: kfinddlg.cpp:192
 msgid "Could not find the specified folder."
@@ -226,23 +225,32 @@ msgstr ""
 
 #: kftabdlg.cpp:88
 msgid ""
-"<qt>Enter the filename you are looking for. <br>Alternatives may be "
-"separated by a semicolon \";\".<br><br>The filename may contain the "
-"following special characters:<ul><li><b>?</b> matches any single "
-"character</li><li><b>*</b> matches zero or more of any "
-"characters</li><li><b>[...]</b> matches any of the characters in "
-"braces</li></ul><br>Example searches:<ul><li><b>*.kwd;*.txt</b> finds all "
-"files ending with .kwd or .txt</li><li><b>go[dt]</b> finds god and "
-"got</li><li><b>Hel?o</b> finds all files that start with \"Hel\" and end "
-"with \"o\", having one character in between</li><li><b>My Document.kwd</b> "
-"finds a file of exactly that name</li></ul></qt>"
+"<qt>Enter the filename you are looking for. "
+"<br>Alternatives may be separated by a semicolon \";\"."
+"<br>"
+"<br>The filename may contain the following special "
+"characters:"
+"<ul>"
+"<li><b>?</b> matches any single character</li>"
+"<li><b>*</b> matches zero or more of any characters</li>"
+"<li><b>[...]</b> matches any of the characters in "
+"braces</li></ul>"
+"<br>Example searches:"
+"<ul>"
+"<li><b>*.kwd;*.txt</b> finds all files ending with .kwd or "
+".txt</li>"
+"<li><b>go[dt]</b> finds god and got</li>"
+"<li><b>Hel?o</b>"
+" finds all files that start with \"Hel\" and end with \"o\", having one "
+"character in between</li>"
+"<li><b>My Document.kwd</b> finds a file of exactly that name</li></ul></qt>"
 msgstr ""
 
 #: kftabdlg.cpp:109
 msgid ""
-"<qt>This lets you use the files' index created by the <i>slocate</i> package "
-"to speed-up the search. Do not forget to update the index from time to time "
-"(using <i>updatedb</i>).</qt>"
+"<qt>This lets you use the files' index created by the <i>slocate</i>"
+" package to speed-up the search. Do not forget to update the index from time "
+"to time (using <i>updatedb</i>).</qt>"
 msgstr ""
 
 #: kftabdlg.cpp:167
@@ -261,15 +269,21 @@ msgstr "Yn perchen i'r &grŵp:"
 msgid "(none)"
 msgstr "(dim)"
 
-#: kftabdlg.cpp:178
+#. i18n: file add_options.ui line 324
+#: kftabdlg.cpp:178 rc.cpp:54 rc.cpp:181
+#, no-c-format
 msgid "At Least"
 msgstr "O leiaf"
 
-#: kftabdlg.cpp:179
+#. i18n: file add_options.ui line 329
+#: kftabdlg.cpp:179 rc.cpp:57 rc.cpp:184
+#, no-c-format
 msgid "At Most"
 msgstr "Ar y mwyaf"
 
-#: kftabdlg.cpp:180
+#. i18n: file add_options.ui line 339
+#: kftabdlg.cpp:180 rc.cpp:63 rc.cpp:190
+#, no-c-format
 msgid "Equal To"
 msgstr "Yn hafal â"
 
@@ -277,11 +291,15 @@ msgstr "Yn hafal â"
 msgid "Bytes"
 msgstr "Beitiau"
 
-#: kftabdlg.cpp:183
+#. i18n: file add_options.ui line 359
+#: kftabdlg.cpp:183 rc.cpp:69 rc.cpp:196
+#, no-c-format
 msgid "KB"
 msgstr "KB"
 
-#: kftabdlg.cpp:184
+#. i18n: file add_options.ui line 364
+#: kftabdlg.cpp:184 rc.cpp:72 rc.cpp:199
+#, no-c-format
 msgid "MB"
 msgstr "MB"
 
@@ -295,8 +313,9 @@ msgstr "Yn cy&nnwys testun:"
 
 #: kftabdlg.cpp:251
 msgid ""
-"<qt>If specified, only files that contain this text are found. Note that not "
-"all file types from the list above are supported. Please refer to the "
+"<qt>"
+"If specified, only files that contain this text are found. Note that not all "
+"file types from the list above are supported. Please refer to the "
 "documentation for a list of supported file types.</qt>"
 msgstr ""
 "<qt>Os yw wedi'i benodi, dim ond ffeiliau sy'n cynnwys y testun hwn a "
@@ -317,7 +336,8 @@ msgstr "Mynegiad &rheolaidd"
 
 #: kftabdlg.cpp:264
 msgid ""
-"<qt>This lets you search in any type of file, even those that usually do not "
+"<qt>"
+"This lets you search in any type of file, even those that usually do not "
 "contain text (for example program files and images).</qt>"
 msgstr ""
 "<qt>Caniatâ hwn i chi chwilio mewn unrhyw math o ffeil, hyd yn oed y rhain "
@@ -350,25 +370,40 @@ msgstr "&Priodweddau"
 
 #: kftabdlg.cpp:345
 msgid ""
-"<qt>Search within files' specific comments/metainfo<br>These are some "
-"examples:<br><ul><li><b>Audio files (mp3...)</b> Search in id3 tag for a "
-"title, an album</li><li><b>Images (png...)</b> Search images with a special "
-"resolution, comment...</li></ul></qt>"
+"<qt>Search within files' specific comments/metainfo"
+"<br>These are some examples:"
+"<br>"
+"<ul>"
+"<li><b>Audio files (mp3...)</b> Search in id3 tag for a title, an "
+"album</li>"
+"<li><b>Images (png...)</b> Search images with a special resolution, "
+"comment...</li></ul></qt>"
 msgstr ""
-"<qt>Chwilio o fewn sylwadau/metagwybodaeth penodol ffeiliau<br>Dyma rai "
-"enghreifftiau:<br><ul><li><b>Ffeiliau sain (mp3...)</b> Chwilio yn y tag id3 "
-"am deitl, neu albwm</li><li><b>Delweddau (png...)</b> Chwilio delweddau â "
-"chydraniad arbennig, neu sylw...</li></ul></qt>"
+"<qt>Chwilio o fewn sylwadau/metagwybodaeth penodol ffeiliau"
+"<br>Dyma rai enghreifftiau:"
+"<br>"
+"<ul>"
+"<li><b>Ffeiliau sain (mp3...)</b> Chwilio yn y tag id3 am deitl, neu "
+"albwm</li>"
+"<li><b>Delweddau (png...)</b> Chwilio delweddau â chydraniad arbennig, neu "
+"sylw...</li></ul></qt>"
 
 #: kftabdlg.cpp:353
 msgid ""
-"<qt>If specified, search only in this field<br><ul><li><b>Audio files "
-"(mp3...)</b> This can be Title, Album...</li><li><b>Images (png...)</b> "
-"Search only in Resolution, Bitdepth...</li></ul></qt>"
+"<qt>If specified, search only in this field"
+"<br>"
+"<ul>"
+"<li><b>Audio files (mp3...)</b> This can be Title, "
+"Album...</li>"
+"<li><b>Images (png...)</b> Search only in Resolution, "
+"Bitdepth...</li></ul></qt>"
 msgstr ""
-"<qt>Os yw wedi'i benodi, chwilio yn y maes yma'n unig<br><ul> "
-"<li><b>Ffeiliau sain (mp3...)</b> Gall hyn fod yn Deitl, Albwm...</"
-"li><li><b>Delweddau (png...)</b>Chwilio yn y Cydraniad,Dyfnder did... yn "
+"<qt>Os yw wedi'i benodi, chwilio yn y maes yma'n unig"
+"<br>"
+"<ul> "
+"<li><b>Ffeiliau sain (mp3...)</b> Gall hyn fod yn Deitl, "
+"Albwm...</li>"
+"<li><b>Delweddau (png...)</b>Chwilio yn y Cydraniad,Dyfnder did... yn "
 "unig</li></ul></qt>"
 
 #: kftabdlg.cpp:547
@@ -448,8 +483,10 @@ msgid "KFind Results File"
 msgstr "Ffeil Ganlyniadau KFind"
 
 #: kfwin.cpp:257
-msgid "Results were saved to file\n"
-msgstr "Cadwyd y canlyniadau i ffeil\n"
+msgid ""
+"Results were saved to file\n"
+msgstr ""
+"Cadwyd y canlyniadau i ffeil\n"
 
 #: kfwin.cpp:287
 #, c-format
@@ -507,3 +544,201 @@ msgstr "Dylunio RhD a rhagor o ddewisiadau chwilio"
 #: main.cpp:41
 msgid "UI Design"
 msgstr "Dylunio RhD"
+
+#. i18n: file add_options.ui line 16
+#: rc.cpp:3 rc.cpp:96 rc.cpp:130 rc.cpp:223
+#, no-c-format
+msgid "Form1"
+msgstr "Ffurf1"
+
+#. i18n: file add_options.ui line 41
+#: rc.cpp:6 rc.cpp:133
+#, no-c-format
+msgid "Check files for..."
+msgstr ""
+
+#. i18n: file add_options.ui line 52
+#: rc.cpp:9 rc.cpp:136
+#, fuzzy, no-c-format
+msgid "... contained text"
+msgstr "Yn cy&nnwys testun:"
+
+#. i18n: file add_options.ui line 60
+#: rc.cpp:12 rc.cpp:139
+#, no-c-format
+msgid "... properties of their content"
+msgstr ""
+
+#. i18n: file add_options.ui line 68
+#: rc.cpp:15 rc.cpp:142
+#, no-c-format
+msgid "... their type"
+msgstr ""
+
+#. i18n: file add_options.ui line 76
+#: rc.cpp:18 rc.cpp:145
+#, no-c-format
+msgid "... their size"
+msgstr ""
+
+#. i18n: file add_options.ui line 84
+#: rc.cpp:21 rc.cpp:148
+#, no-c-format
+msgid "... the date of their last modification"
+msgstr ""
+
+#. i18n: file add_options.ui line 92
+#: rc.cpp:24 rc.cpp:151
+#, no-c-format
+msgid "... their owner"
+msgstr ""
+
+#. i18n: file add_options.ui line 100
+#: rc.cpp:27 rc.cpp:154
+#, no-c-format
+msgid "Add more folders to the search"
+msgstr ""
+
+#. i18n: file add_options.ui line 139
+#: rc.cpp:30 rc.cpp:157
+#, no-c-format
+msgid "Containing text:"
+msgstr "Yn cynnwys testun:"
+
+#. i18n: file add_options.ui line 154
+#: rc.cpp:33 rc.cpp:117 rc.cpp:160 rc.cpp:244
+#, no-c-format
+msgid "Case sensitive"
+msgstr "Llythrennau mawr/bach o bwys"
+
+#. i18n: file add_options.ui line 170
+#: rc.cpp:36 rc.cpp:163
+#, no-c-format
+msgid "Regular expression"
+msgstr "Mynegiad rheolaidd"
+
+#. i18n: file add_options.ui line 178
+#: rc.cpp:39 rc.cpp:166
+#, no-c-format
+msgid "Edit..."
+msgstr "Golygu..."
+
+#. i18n: file add_options.ui line 188
+#: rc.cpp:42 rc.cpp:169
+#, no-c-format
+msgid "Include binary files"
+msgstr "Cynnwys ffeiliau deuol"
+
+#. i18n: file add_options.ui line 234
+#: rc.cpp:45 rc.cpp:172
+#, fuzzy, no-c-format
+msgid "Search metainfo sections"
+msgstr "Chwilio adrannau &metagwybodaeth:"
+
+#. i18n: file add_options.ui line 252
+#: rc.cpp:48 rc.cpp:175
+#, fuzzy, no-c-format
+msgid "for"
+msgstr "ar gyfe&r:"
+
+#. i18n: file add_options.ui line 318
+#: rc.cpp:51 rc.cpp:178
+#, fuzzy, no-c-format
+msgid "File size is"
+msgstr "&Maint y ffeil yw:"
+
+#. i18n: file add_options.ui line 334
+#: rc.cpp:60 rc.cpp:187
+#, fuzzy, no-c-format
+msgid "Roughly Equal To"
+msgstr "Yn hafal â"
+
+#. i18n: file add_options.ui line 354
+#: rc.cpp:66 rc.cpp:193
+#, no-c-format
+msgid "Byte"
+msgstr "Beit"
+
+#. i18n: file add_options.ui line 424
+#: rc.cpp:75 rc.cpp:202
+#, fuzzy, no-c-format
+msgid "Owned by user"
+msgstr "Ffeiliau'n perchen i'r &defnyddiwr:"
+
+#. i18n: file add_options.ui line 448
+#: rc.cpp:78 rc.cpp:205
+#, fuzzy, no-c-format
+msgid "Owned by group"
+msgstr "Yn perchen i'r &grŵp:"
+
+#. i18n: file add_options.ui line 494
+#: rc.cpp:81 rc.cpp:208
+#, no-c-format
+msgid "Search folder"
+msgstr ""
+
+#. i18n: file add_options.ui line 499
+#: rc.cpp:84 rc.cpp:211
+#, no-c-format
+msgid "Exclude from search"
+msgstr ""
+
+#. i18n: file add_options.ui line 540
+#: rc.cpp:87 rc.cpp:114 rc.cpp:214 rc.cpp:241
+#, no-c-format
+msgid "Include subfolders"
+msgstr "Cynnwys is-blygyll"
+
+#. i18n: file add_options.ui line 593
+#: rc.cpp:90 rc.cpp:217
+#, no-c-format
+msgid "Add current"
+msgstr ""
+
+#. i18n: file kfind_widget.ui line 61
+#: rc.cpp:99 rc.cpp:226
+#, no-c-format
+msgid "Filename"
+msgstr "Enw Ffeil"
+
+#. i18n: file kfind_widget.ui line 67
+#: rc.cpp:102 rc.cpp:229
+#, no-c-format
+msgid "contains"
+msgstr "yn cynnwys"
+
+#. i18n: file kfind_widget.ui line 72
+#: rc.cpp:105 rc.cpp:232
+#, no-c-format
+msgid "matches wildcard"
+msgstr ""
+
+#. i18n: file kfind_widget.ui line 77
+#: rc.cpp:108 rc.cpp:235
+#, no-c-format
+msgid "matches regexp"
+msgstr ""
+
+#. i18n: file kfind_widget.ui line 99
+#: rc.cpp:111 rc.cpp:238
+#, no-c-format
+msgid "Search in folder"
+msgstr ""
+
+#. i18n: file kfind_widget.ui line 123
+#: rc.cpp:120 rc.cpp:247
+#, no-c-format
+msgid "Column 1"
+msgstr ""
+
+#. i18n: file kfind_widget.ui line 134
+#: rc.cpp:123 rc.cpp:250
+#, no-c-format
+msgid "New Column"
+msgstr "Colofn Newydd"
+
+#. i18n: file kfind_widget.ui line 168
+#: rc.cpp:126 rc.cpp:253
+#, no-c-format
+msgid "<b>Search results: </b>"
+msgstr ""
