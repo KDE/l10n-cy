@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
-"POT-Creation-Date: 2004-07-25 01:16+0200\n"
+"POT-Creation-Date: 2004-09-28 01:30+0200\n"
 "PO-Revision-Date: 2004-06-30 15:15+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -20,26 +20,29 @@ msgstr ""
 "X-Generator: KBabel 1.2\n"
 "\n"
 
-#: app/kateexternaltools.cpp:268
+#: app/kateexternaltools.cpp:421
 msgid "Edit External Tool"
 msgstr "Golygu Erfyn Allanol"
 
-#: app/kateexternaltools.cpp:282
-msgid "&Name:"
-msgstr "&Enw:"
+#: app/kateexternaltools.cpp:435
+msgid "&Label:"
+msgstr "&Label:"
 
-#: app/kateexternaltools.cpp:287
+#: app/kateexternaltools.cpp:440
 msgid "The name will be displayed in the 'Tools->External' menu"
 msgstr "Dangosir yr enw yn y ddewislen 'Offer->Allanol'"
 
-#: app/kateexternaltools.cpp:291
-msgid "Co&mmand:"
-msgstr "&Gorchymyn:"
+#: app/kateexternaltools.cpp:450
+#, fuzzy
+msgid "S&cript:"
+msgstr "Sgri&ptiau KDE"
 
-#: app/kateexternaltools.cpp:296
+#: app/kateexternaltools.cpp:455
 #, fuzzy
 msgid ""
-"<p>The command to execute to invoke the tool. The following macros will be "
+"<p>"
+"The script to execute to invoke the tool. The script is passed to /bin/sh "
+"for execution. The following macros will be "
 "expanded:</p>"
 "<ul>"
 "<li><code>%URL</code> - the URL of the current "
@@ -48,7 +51,7 @@ msgid ""
 "documents."
 "<li><code>%directory</code> - the URL of the directory containing the "
 "current document."
-"<li><code>filename</code> - the filename of the current "
+"<li><code>%filename</code> - the filename of the current "
 "document."
 "<li><code>%line</code> - the current line of the text cursor in the current "
 "view."
@@ -74,11 +77,11 @@ msgstr ""
 "<li><code>%selection</code> - y testun dewisiedig yn y golwg gyfredol. "
 "<li><code>%text</code> - testun y ddogfen gyfredol. </ul>"
 
-#: app/kateexternaltools.cpp:319
+#: app/kateexternaltools.cpp:473
 msgid "&Executable:"
 msgstr "&Gweithredadwyn:"
 
-#: app/kateexternaltools.cpp:324
+#: app/kateexternaltools.cpp:478
 msgid ""
 "The executable used by the command. This is used to check if a tool should "
 "be displayed; if not set, the first word of <em>command</em> will be used."
@@ -87,37 +90,88 @@ msgstr ""
 "ddylai erfyn gael ei ddangos; os ni osodir, defnyddir y gair cyntaf o "
 "<em>gorchymyn</em>."
 
-#: app/kateexternaltools.cpp:330
+#: app/kateexternaltools.cpp:484
 msgid "&Mime types:"
 msgstr "&Mathau mime:"
 
-#: app/kateexternaltools.cpp:335
+#: app/kateexternaltools.cpp:489
+#, fuzzy
 msgid ""
 "A semicolon-separated list of mime types for which this tool should be "
-"available; if this is left empty, the tool is always available.To choose "
+"available; if this is left empty, the tool is always available. To choose "
 "from known mimetypes, press the button on the right."
 msgstr ""
 "Rhestr o fathau mime wedi'u gwahanu gan wahannod y ddylai'r erfyn yma fod ar "
 "gael iddynt; os gadewir yn wag, mae'r erfyn ar gael yn wastad.  I ddewis o'r "
 "mathau mime a gwyddys, gwasgwch y botwm ar y dde."
 
-#: app/kateexternaltools.cpp:345
+#: app/kateexternaltools.cpp:498
+msgid "Click for a dialog that can help you creating a list of mimetypes."
+msgstr ""
+
+#: app/kateexternaltools.cpp:502
+#, fuzzy
+msgid "&Save:"
+msgstr "&Enw:"
+
+#: app/kateexternaltools.cpp:506
+msgid "None"
+msgstr "Dim"
+
+#: app/kateexternaltools.cpp:506
+#, fuzzy
+msgid "Current Document"
+msgstr "Plygell Dogfen Gyfredol"
+
+#: app/kateexternaltools.cpp:506
+#, fuzzy
+msgid "All Documents"
+msgstr "&Dogfen"
+
+#: app/kateexternaltools.cpp:510
+msgid ""
+"You can elect to save the current or all [modified] documents prior to "
+"running the command. This is helpfull if you want to pass URLs to an "
+"application like for example a FTP client."
+msgstr ""
+
+#: app/kateexternaltools.cpp:517
+msgid "&Command line name:"
+msgstr ""
+
+#: app/kateexternaltools.cpp:522
+msgid ""
+"If you specify a name here, you can invoke the command from the view command "
+"lines with exttool-the_name_you_specified_here. Please do not use spaces or "
+"tabs in the name."
+msgstr ""
+
+#: app/kateexternaltools.cpp:533
 msgid "You must specify at least a name and a command"
 msgstr "Rhaid i chi benodi o leiaf enw a gorchymyn."
 
-#: app/kateexternaltools.cpp:363
+#: app/kateexternaltools.cpp:542
+msgid "Select the MimeTypes for which to enable this tool."
+msgstr ""
+
+#: app/kateexternaltools.cpp:544
+#, fuzzy
+msgid "Select Mime Types"
+msgstr "&Mathau mime:"
+
+#: app/kateexternaltools.cpp:561
 msgid "&New..."
 msgstr "&Newydd..."
 
-#: app/kateexternaltools.cpp:371
+#: app/kateexternaltools.cpp:569
 msgid "&Edit..."
 msgstr "&Golygu..."
 
-#: app/kateexternaltools.cpp:375
+#: app/kateexternaltools.cpp:573
 msgid "Insert &Separator"
 msgstr "Mewnosod &Gwahanydd"
 
-#: app/kateexternaltools.cpp:395
+#: app/kateexternaltools.cpp:595
 msgid "This list shows all the configured tools, represented by their menu text."
 msgstr ""
 "Dangosa'r rhestr yma pob erfyn a ffurfweddir, wedi'u cynrychioli gan eu "
@@ -147,39 +201,44 @@ msgstr "DROS"
 msgid " BLK "
 msgstr "BLC"
 
-#: app/katemainwindow.cpp:206
+#: app/katemainwindow.cpp:199 app/katesavemodifieddialog.cpp:151
+msgid "Documents"
+msgstr "Dogfennau"
+
+#: app/katemainwindow.cpp:202 app/katesavemodifieddialog.cpp:148
 msgid "Projects"
 msgstr "Prosiectau"
 
-#: app/katemainwindow.cpp:215
-msgid "Selector"
-msgstr "Dewisydd"
+#: app/katemainwindow.cpp:211
+msgid "Filesystem browser"
+msgstr ""
 
-#: app/kategrepdialog.cpp:73 app/katemainwindow.cpp:218
+#: app/kategrepdialog.cpp:73 app/katemainwindow.cpp:214
 msgid "Find in Files"
 msgstr "Canfod mewn Ffeiliau"
 
-#: app/katemainwindow.cpp:223
+#: app/katemainwindow.cpp:219
 msgid "Terminal"
 msgstr "Terfynell"
 
-#: app/katemainwindow.cpp:234
-msgid "KDE Scri&pts"
+#: app/katemainwindow.cpp:230
+#, fuzzy
+msgid "&KDE Scripts"
 msgstr "Sgri&ptiau KDE"
 
-#: app/katemainwindow.cpp:235
+#: app/katemainwindow.cpp:231
 msgid "This shows all available scripts and allows them to be executed."
 msgstr "Mae hwn yn dangos pob sgript ac yn galluogi eu gweithredu"
 
-#: app/katemainwindow.cpp:239
+#: app/katemainwindow.cpp:235
 msgid "Create a new document"
 msgstr "Creu dogfen newydd"
 
-#: app/katemainwindow.cpp:240
+#: app/katemainwindow.cpp:236
 msgid "Open an existing document for editing"
 msgstr "Agor hen ddogfen er mwyn golygu"
 
-#: app/katemainwindow.cpp:243 app/kwritemain.cpp:150
+#: app/katemainwindow.cpp:239 app/kwritemain.cpp:150
 msgid ""
 "This lists files which you have opened recently, and allows you to easily "
 "open them again."
@@ -187,92 +246,98 @@ msgstr ""
 "Mae hyn yn rhestru`r ffeiliau yr ydych wedi eu hagor yn ddiweddar, ac yn "
 "eich gadael i`w hagor eto yn hawdd."
 
-#: app/katemainwindow.cpp:245
+#: app/katemainwindow.cpp:241
 msgid "Save A&ll"
 msgstr "Cadw P&opeth"
 
-#: app/katemainwindow.cpp:246
+#: app/katemainwindow.cpp:242
 msgid "Save all open, modified documents to disc."
 msgstr "Cadw pob dogfen agored neu addasiedig i ddisg"
 
-#: app/katemainwindow.cpp:248
+#: app/katemainwindow.cpp:244
 msgid "Close the current document."
 msgstr "Cau`r ddogfen cyfredol"
 
-#: app/katemainwindow.cpp:250
+#: app/katemainwindow.cpp:246
 msgid "Clos&e All"
 msgstr "Cau pop&eth"
 
-#: app/katemainwindow.cpp:251
+#: app/katemainwindow.cpp:247
 msgid "Close all open documents."
 msgstr "Cau bob dogfen agored."
 
-#: app/katemainwindow.cpp:253
+#: app/katemainwindow.cpp:249
 msgid "Send one or more of the open documents as email attachments."
 msgstr "Anfon un neu fwy o'r dogfennau agored fel atodiad ebost."
 
-#: app/katemainwindow.cpp:255
+#: app/katemainwindow.cpp:251
 msgid "Close this window"
 msgstr "Cau'r ffenestr hon"
 
-#: app/katemainwindow.cpp:258
+#: app/katemainwindow.cpp:254
 msgid "Create a new Kate view (a new window with the same document list)."
 msgstr "Creu golwg newydd Kate (ffenestr newydd â'r un rhestr ddogfennau)"
 
-#: app/katemainwindow.cpp:260
-msgid "Split &Vertical"
+#: app/katemainwindow.cpp:256
+msgid "New Tab"
+msgstr ""
+
+#: app/katemainwindow.cpp:257
+#, fuzzy
+msgid "Split Ve&rtical"
 msgstr "Rhannu'n &Fertigol"
 
-#: app/katemainwindow.cpp:261
+#: app/katemainwindow.cpp:258
 msgid "Split the currently active view vertically into two views."
 msgstr "Rhannu'r golwg gweithredol cyfredol yn fertigol yn ddau olwg."
 
-#: app/katemainwindow.cpp:263
+#: app/katemainwindow.cpp:260
 msgid "Split &Horizontal"
 msgstr "Rhannu'n &Llorweddol"
 
-#: app/katemainwindow.cpp:264
+#: app/katemainwindow.cpp:261
 msgid "Split the currently active view horizontally into two views."
 msgstr "Rhannu'r golwg gweithredol cyfredol yn llorweddol yn ddau olwg."
 
-#: app/katemainwindow.cpp:266
-msgid "Close &Current View"
+#: app/katemainwindow.cpp:263
+#, fuzzy
+msgid "Cl&ose Current View"
 msgstr "Cau'r Olwg &Cyfredol"
 
-#: app/katemainwindow.cpp:267
+#: app/katemainwindow.cpp:264
 msgid "Close the currently active splitted view"
 msgstr "Cau'r olwg rhanedig gweithredol cyfredol"
 
-#: app/kateconfigdialog.cpp:278 app/kateconfigdialog.cpp:279
-#: app/katemainwindow.cpp:269 app/katemainwindow.cpp:547
+#: app/kateconfigdialog.cpp:256 app/kateconfigdialog.cpp:257
+#: app/katemainwindow.cpp:266 app/katemainwindow.cpp:566
 msgid "External Tools"
 msgstr "Offer Allanol"
 
-#: app/katemainwindow.cpp:270
+#: app/katemainwindow.cpp:267
 msgid "Launch external helper applications"
 msgstr "Cychwyn cymhwysiadau cynorthwyol allanol"
 
-#: app/katemainwindow.cpp:275
+#: app/katemainwindow.cpp:272
 msgid "Next View"
 msgstr "Golwg Nesaf"
 
-#: app/katemainwindow.cpp:276
+#: app/katemainwindow.cpp:273
 msgid "Make the next split view the active one."
 msgstr "Dewis yr olwg ranedig nesaf fel yr un weithredol."
 
-#: app/katemainwindow.cpp:278
+#: app/katemainwindow.cpp:275
 msgid "Previous View"
 msgstr "Golwg Blaenorol"
 
-#: app/katemainwindow.cpp:279
+#: app/katemainwindow.cpp:276
 msgid "Make the previous split view the active one."
 msgstr "Dewis yr olwg ranedig flaenorol fel yr un weithredol."
 
-#: app/katemainwindow.cpp:284
+#: app/katemainwindow.cpp:281
 msgid "Open W&ith"
 msgstr "Agor &Gyda"
 
-#: app/katemainwindow.cpp:285
+#: app/katemainwindow.cpp:282
 msgid ""
 "Open the current document using another application registered for its file "
 "type, or an application of your choice."
@@ -280,55 +345,63 @@ msgstr ""
 "uAgor y ddogfen gyfredol gyda cymhwysiad arall cofrestredig i'w math ffeil, "
 "neu cyhwysiad o'ch dewis chi."
 
-#: app/katemainwindow.cpp:290 app/kwritemain.cpp:173
+#: app/katemainwindow.cpp:287 app/kwritemain.cpp:173
 msgid "Configure the application's keyboard shortcut assignments."
 msgstr "Ffurfweddu neilltuadau byrlwybrau bysellfwrdd y cymhwysiad."
 
-#: app/katemainwindow.cpp:293 app/kwritemain.cpp:176
+#: app/katemainwindow.cpp:290 app/kwritemain.cpp:176
 msgid "Configure which items should appear in the toolbar(s)."
 msgstr "Ffurfweddu pa eitemau ddylai ymddangos yn y bar(iau) offer."
 
-#: app/katemainwindow.cpp:297
+#: app/katemainwindow.cpp:294
 msgid "&New Project..."
 msgstr "Cywaith &Newydd..."
 
-#: app/katemainwindow.cpp:298
+#: app/katemainwindow.cpp:295
 msgid "&Open Project..."
 msgstr "&Agor Cywaith..."
 
-#: app/katemainwindow.cpp:299
+#: app/katemainwindow.cpp:296
 msgid "&Save Project"
 msgstr "&Cadw Cywaith"
 
-#: app/katemainwindow.cpp:300
+#: app/katemainwindow.cpp:297
 msgid "&Close Project"
 msgstr "Ca&u Cywaith"
 
-#: app/katemainwindow.cpp:305
+#: app/katemainwindow.cpp:302
 msgid "Configure various aspects of this application and the editing component."
 msgstr "Ffurfweddu agweddau amrywiol y cymhwysiad yma a'r gydran olygu."
 
-#: app/katemainwindow.cpp:309
+#: app/katemainwindow.cpp:306
 msgid "&Pipe to Console"
 msgstr "&Pibellu i Derfynnell"
 
-#: app/katemainwindow.cpp:312
+#: app/katemainwindow.cpp:309
 msgid "This shows useful tips on the use of this application."
 msgstr "Dengys hwn gynghorion defnyddiol ar ddefnydd y cymhwysiad yma."
 
-#: app/katemainwindow.cpp:316
+#: app/katemainwindow.cpp:313
 msgid "Contents &Plugins"
 msgstr "A&tegion Cynnwys"
 
-#: app/katemainwindow.cpp:317
+#: app/katemainwindow.cpp:314
 msgid "This shows help files for various available plugins."
 msgstr "Dengys hwn ffeiliau cymorth ar gyfer amryw o ategion sydd ar gael."
 
-#: app/katemainwindow.cpp:640 app/katemainwindow.cpp:648
+#: app/katedocmanager.cpp:363 app/katemainwindow.cpp:340
+msgid "New file opened while trying to close Kate, closing aborted."
+msgstr ""
+
+#: app/katedocmanager.cpp:364 app/katemainwindow.cpp:341
+msgid "Closing Aborted"
+msgstr ""
+
+#: app/katemainwindow.cpp:659 app/katemainwindow.cpp:667
 msgid "&Other..."
 msgstr "A&rall..."
 
-#: app/katemainwindow.cpp:704
+#: app/katemainwindow.cpp:723
 msgid ""
 "<p>The current document has not been saved, and cannot be attached to an "
 "email message.<p>Do you want to save it and proceed?"
@@ -336,15 +409,15 @@ msgstr ""
 "<p>Ni gedwid y ddogfen gyfredol, a ni fedr ei atodi i neges ebost."
 "<p>A ydych am ei gadw a mynd ymlaen?"
 
-#: app/katemainwindow.cpp:707
+#: app/katemainwindow.cpp:726
 msgid "Cannot Send Unsaved File"
 msgstr "Methu Anfon Ffeil Heb ei Gadw"
 
-#: app/katemainwindow.cpp:715 app/katemainwindow.cpp:736
+#: app/katemainwindow.cpp:734 app/katemainwindow.cpp:755
 msgid "The file could not be saved. Please check if you have write permission."
 msgstr "Methwyd cadw'r ffeil. Gwiriwch os oes gennych caniatâd ysgrifennu."
 
-#: app/katemainwindow.cpp:726
+#: app/katemainwindow.cpp:745
 msgid ""
 "<p>The current file:"
 "<br><strong>%1</strong>"
@@ -356,15 +429,15 @@ msgstr ""
 "<br>. Ni fydd y newidiadau ar gael yn yr atodiad."
 "<p>A ydych am ei gadw cyn ei anfon?"
 
-#: app/katemainwindow.cpp:729
+#: app/katemainwindow.cpp:748
 msgid "Save Before Sending?"
 msgstr "Cadw Cyn Anfon?"
 
-#: app/katemainwindow.cpp:861 app/kateprojectmanager.cpp:314
+#: app/katemainwindow.cpp:883 app/kateprojectmanager.cpp:314
 msgid "Kate Project Files"
 msgstr "Ffeiliau Cywaith Kate"
 
-#: app/katemainwindow.cpp:861
+#: app/katemainwindow.cpp:883
 msgid "Open Kate Project"
 msgstr "Agor Cywaith Kate"
 
@@ -406,33 +479,35 @@ msgstr "&Cuddio Rhestr Ddogfennau <<"
 msgid "Press <strong>Mail...</strong> to send selected documents"
 msgstr "Gwasgwch <strong>Postio...</strong> i anfon dogfennau dewisiedig"
 
-#: app/kateconfigdialog.cpp:93 app/kateconfigdialog.cpp:99
-#: app/kateconfigdialog.cpp:261 app/kateconfigdialog.cpp:270
-#: app/kateconfigdialog.cpp:278 app/kateconfigdialog.cpp:325
+#: app/kateconfigdialog.cpp:94 app/kateconfigdialog.cpp:100
+#: app/kateconfigdialog.cpp:239 app/kateconfigdialog.cpp:248
+#: app/kateconfigdialog.cpp:256 app/kateconfigdialog.cpp:303
 msgid "Application"
 msgstr "Cymhwysiad"
 
-#: app/kateconfigdialog.cpp:99
+#: app/kateconfigdialog.cpp:100
 msgid "General"
 msgstr "Cyffredinol"
 
-#: app/kateconfigdialog.cpp:100
+#: app/kateconfigdialog.cpp:101
 msgid "General Options"
 msgstr "Dewisiadau Cyffredinol"
 
-#: app/kateconfigdialog.cpp:107
-msgid "Startup"
+#: app/kateconfigdialog.cpp:108
+#, fuzzy
+msgid "Start&up"
 msgstr "Cychwyn"
 
-#: app/kateconfigdialog.cpp:112
+#: app/kateconfigdialog.cpp:113
 msgid "Reopen &projects at startup"
 msgstr "Ailagor &ffeiliau wrth gychwyn"
 
-#: app/kateconfigdialog.cpp:120
-msgid "Reopen &files at startup"
+#: app/kateconfigdialog.cpp:121
+#, fuzzy
+msgid "R&eopen files at startup"
 msgstr "Ailagor &ffeiliau wrth gychwyn"
 
-#: app/kateconfigdialog.cpp:124
+#: app/kateconfigdialog.cpp:125
 msgid ""
 "If this is enabled Kate will attempt to reopen files that were open when you "
 "closed last time. Cursor position will be recovered if possible. "
@@ -442,11 +517,11 @@ msgstr ""
 "ceuoch dro diwethaf. Adferir lleoliad y cyrchydd os yn bosib. Ni agorir "
 "ffeiliau sydd ddim yn bodoli (mwyach)."
 
-#: app/kateconfigdialog.cpp:132
+#: app/kateconfigdialog.cpp:133
 msgid "Restore &window configuration"
 msgstr "Adfer ffurfwedd &golwg"
 
-#: app/kateconfigdialog.cpp:135
+#: app/kateconfigdialog.cpp:136
 msgid ""
 "Check this if you want all your views and frames restored each time you open "
 "Kate"
@@ -454,31 +529,16 @@ msgstr ""
 "Dewiswch hwn os ydych am adfer eich holl olygon a'ch holl fframau bob tro yr "
 "agorwch Kate"
 
-#: app/kateconfigdialog.cpp:143
-msgid "Default GUI mode for new windows:"
-msgstr "Modd rhagosod GUI ar gyfer ffenestri newydd:"
+#: app/kateconfigdialog.cpp:140
+msgid "&Appearance"
+msgstr "&Ymddangosiad"
 
-#: app/kateconfigdialog.cpp:147
-msgid "Toplevel Mode"
-msgstr "Modd Safon Uchaf"
-
-#: app/kateconfigdialog.cpp:147
-msgid "Childframe Mode"
-msgstr "Modd Ffrâm Plentyn"
-
-#: app/kateconfigdialog.cpp:147 app/kateconfigdialog.cpp:150
-msgid "Tab Page Mode"
-msgstr "Modd Tudalen Dab"
-
-#: app/kateconfigdialog.cpp:147 app/kateconfigdialog.cpp:150
-msgid "IDEAL Mode"
-msgstr "Modd IDEAL"
-
-#: app/kateconfigdialog.cpp:167
-msgid "Show full &path in title"
+#: app/kateconfigdialog.cpp:145
+#, fuzzy
+msgid "&Show full path in title"
 msgstr "Dangos &llwybr llawn yn y teitl"
 
-#: app/kateconfigdialog.cpp:169
+#: app/kateconfigdialog.cpp:147
 msgid ""
 "If this option is checked, the full document path will be shown in the "
 "window caption."
@@ -486,23 +546,23 @@ msgstr ""
 "Os dewisir y dewisiad hwn, dengys llwybr llawn y ddogfen ym mhennawd y "
 "ffenestr.  "
 
-#: app/kateconfigdialog.cpp:174
+#: app/kateconfigdialog.cpp:152
 msgid "Sort &files alphabetically in the file list"
 msgstr "Didoli &ffeiliau'n wyddorol yn y restr ffeiliau"
 
-#: app/kateconfigdialog.cpp:177
+#: app/kateconfigdialog.cpp:155
 msgid "If this is checked, the files in the file list will be sorted alphabetically."
 msgstr "uOs dewisir hwn, didolir ffeiliau yn y restr ffeiliau yn ôl yr wyddor."
 
-#: app/kateconfigdialog.cpp:181
-msgid "Behavior"
-msgstr "Ymddygiad"
+#: app/kateconfigdialog.cpp:159
+msgid "&Behavior"
+msgstr "&Ymddygiad"
 
-#: app/kateconfigdialog.cpp:186
+#: app/kateconfigdialog.cpp:164
 msgid "&Number of recent files:"
 msgstr "&Nifer ffeiliau diweddar:"
 
-#: app/kateconfigdialog.cpp:191
+#: app/kateconfigdialog.cpp:169
 msgid ""
 "<qt>Sets the number of recent files remembered by Kate."
 "<p><strong>NOTE: </strong>If you set this lower than the current value, the "
@@ -513,11 +573,11 @@ msgstr ""
 "<p><strong>NODER:</strong>Os gosodwch hwn yn llai na'r gwerth cyfredol, "
 "talfyrrir y restr ac fe anghofir rhai eitemau.</qt>"
 
-#: app/kateconfigdialog.cpp:200
+#: app/kateconfigdialog.cpp:178
 msgid "Allow Kate to use more than one UN&IX process"
 msgstr "Caniatáu i Kate ddefnyddio mwy nag un broses UN&IX"
 
-#: app/kateconfigdialog.cpp:204
+#: app/kateconfigdialog.cpp:182
 msgid ""
 "If this is unchecked, Kate will only use one UNIX process. If you try "
 "running it again, the current process will get the focus, and open any files "
@@ -529,11 +589,11 @@ msgstr ""
 "unrhyw ffeiliau y gofynoch eu hagor. Os yw wedi'i ddewis, pob tro y "
 "dechreuwch Kate, cychwynna broses UNIX newydd."
 
-#: app/kateconfigdialog.cpp:211
+#: app/kateconfigdialog.cpp:189
 msgid "Sync &terminal emulator with active document"
 msgstr "Cydweddu efelychydd &terfynell â'r ddogfen weithredol"
 
-#: app/kateconfigdialog.cpp:214
+#: app/kateconfigdialog.cpp:192
 msgid ""
 "If this is checked, the built in Konsole will <code>cd</code> to the "
 "directory of the active document when started and whenever the active "
@@ -543,11 +603,11 @@ msgstr ""
 " (newid cyfeiriadur) i gyfeiriadur y ddogfen cyfredol pan ei gychwynnir a "
 "phryd bynnag y newida'r ddogfen weithredol, os yw'r ddogfen yn ffeil lleol."
 
-#: app/kateconfigdialog.cpp:221
+#: app/kateconfigdialog.cpp:199
 msgid "Wa&rn about files modified by foreign processes"
 msgstr "Rhy&buddio am ffeiliau a addasir gan brosesau allanol"
 
-#: app/kateconfigdialog.cpp:224
+#: app/kateconfigdialog.cpp:202
 msgid ""
 "If enabled, a passive popup message will be displayed whenever a local file "
 "is modified, created or deleted by another process."
@@ -555,16 +615,16 @@ msgstr ""
 "Os alluogir, dangosir neges naidlen oddefol pan addasir, creuir neu ddileuir "
 "ffeil lleol gan broses arall."
 
-#: app/kateconfigdialog.cpp:230
+#: app/kateconfigdialog.cpp:208
 #, fuzzy
 msgid "Meta-Information"
 msgstr "Meta-wybodaeth"
 
-#: app/kateconfigdialog.cpp:235
+#: app/kateconfigdialog.cpp:213
 msgid "Keep &meta-information past sessions"
 msgstr "Cadw m&eta-wybodaeth tu hwnt i'r sesiwn"
 
-#: app/kateconfigdialog.cpp:238
+#: app/kateconfigdialog.cpp:216
 msgid ""
 "Check this if you want document configuration like for example bookmarks to "
 "be saved past editor sessions. The configuration will be restored if the "
@@ -574,71 +634,71 @@ msgstr ""
 "enghraifft, gael ei gadw tu hwnt i'r sesiwn golygydd.  Adferir y "
 "ffurfweddiad os nid yw'r ddogfen wedi'i newid pan ail-agorir."
 
-#: app/kateconfigdialog.cpp:246
+#: app/kateconfigdialog.cpp:224
 msgid "&Delete unused meta-information after:"
 msgstr "&Dileu meta-wybodaeth nas defnyddwyd ar ôl:"
 
-#: app/kateconfigdialog.cpp:248
+#: app/kateconfigdialog.cpp:226
 msgid "(never)"
 msgstr "(byth)"
 
-#: app/kateconfigdialog.cpp:249
+#: app/kateconfigdialog.cpp:227
 msgid " day(s)"
 msgstr "diwrnod(au)"
 
-#: app/kateconfigdialog.cpp:261
+#: app/kateconfigdialog.cpp:239
 msgid "File Selector"
 msgstr "Dewisydd Ffeiliau"
 
-#: app/kateconfigdialog.cpp:263
+#: app/kateconfigdialog.cpp:241
 msgid "File Selector Settings"
 msgstr "Gosodiadau Dewisydd Ffeiliau"
 
-#: app/kateconfigdialog.cpp:270 app/kateconfigdialog.cpp:325
+#: app/kateconfigdialog.cpp:248 app/kateconfigdialog.cpp:303
 msgid "Plugins"
 msgstr "Ategion"
 
-#: app/kateconfigdialog.cpp:271
+#: app/kateconfigdialog.cpp:249
 msgid "Plugin Manager"
 msgstr "Trefnydd Ategion"
 
-#: app/kateconfigdialog.cpp:286 app/kateconfigdialog.cpp:292
+#: app/kateconfigdialog.cpp:264 app/kateconfigdialog.cpp:270
 msgid "Editor"
 msgstr "Golygydd"
 
-#: app/kategrepdialog.cpp:93
+#: app/kategrepdialog.cpp:94
 msgid "Pattern:"
 msgstr "Patrwm:"
 
-#: app/kategrepdialog.cpp:108
+#: app/kategrepdialog.cpp:110
 msgid "Case sensitive"
 msgstr "Llythrennau mawr/bach o bwys"
 
-#: app/kategrepdialog.cpp:113
+#: app/kategrepdialog.cpp:115
 msgid "Regular expression"
 msgstr "Mynegiad rheolaidd"
 
-#: app/kategrepdialog.cpp:119
+#: app/kategrepdialog.cpp:121
 msgid "Template:"
 msgstr "Patrymlun:"
 
-#: app/kategrepdialog.cpp:138
+#: app/kategrepdialog.cpp:140
 msgid "Files:"
 msgstr "Ffeiliau:"
 
-#: app/kategrepdialog.cpp:151
+#: app/kategrepdialog.cpp:155
 msgid "Directory:"
 msgstr "Cyfeiriadur:"
 
-#: app/kategrepdialog.cpp:167
+#: app/kategrepdialog.cpp:172
 msgid "Recursive"
 msgstr "Ymgylchol"
 
-#: app/kategrepdialog.cpp:175 app/kategrepdialog.cpp:430
+#: app/kategrepdialog.cpp:180 app/kategrepdialog.cpp:447
 msgid "Find"
 msgstr "Canfod:"
 
-#: app/kategrepdialog.cpp:190
+#: app/kategrepdialog.cpp:195
 msgid ""
 "<p>Enter the expression you want to search for here."
 "<p>If 'regular expression' is unchecked, any non-space letters in your "
@@ -695,7 +755,7 @@ msgstr ""
 "nodiant <code>\\#</code>. "
 "<p>Gweler y ddogfennaeth grep(1) am y ddogennaeth lawn."
 
-#: app/kategrepdialog.cpp:213
+#: app/kategrepdialog.cpp:218
 msgid ""
 "Enter the file name pattern of the files to search here.\n"
 "You may give several patterns separated by commas."
@@ -703,7 +763,7 @@ msgstr ""
 "Rhowch batrwm enw ffeiliau'r ffeiliau i chwilio yma.\n"
 "Cewch roi sawl patrwm wedi'u gwahanu ag atalnodau."
 
-#: app/kategrepdialog.cpp:216
+#: app/kategrepdialog.cpp:221
 #, c-format
 msgid ""
 "You can choose a template for the pattern from the combo box\n"
@@ -716,21 +776,21 @@ msgstr ""
 " y maes mewnbwn patrwm, gan achosi'r mynegiad rheolaidd\n"
 " i chwilio amdano."
 
-#: app/kategrepdialog.cpp:221
+#: app/kategrepdialog.cpp:226
 msgid "Enter the directory which contains the files you want to search in."
 msgstr "Rhowch y cyfeiriadur sy'n cynnwys y ffeiliau yr ydych am chwilio ynddynt."
 
-#: app/kategrepdialog.cpp:223
+#: app/kategrepdialog.cpp:228
 msgid "Check this box to search in all subdirectories."
 msgstr "Dewiswch y blwch yma i chwilio ym mhob is-gyfeiriadur."
 
-#: app/kategrepdialog.cpp:225
+#: app/kategrepdialog.cpp:230
 msgid "If this option is enabled (the default), the search will be case sensitive."
 msgstr ""
 "Os alluogir y dewisiad hwn (y rhagosodiad), bydd y chwiliad yn ystyried "
 "llythrennau mawr a bach o bwys."
 
-#: app/kategrepdialog.cpp:227
+#: app/kategrepdialog.cpp:232
 msgid ""
 "<p>If this is enabled, your pattern will be passed unmodified to "
 "<em>grep(1)</em>. Otherwise, all characters that are not letters will be "
@@ -742,7 +802,7 @@ msgstr ""
 "ddianc gan ddefnyddio nod slaes ôl i atal grep rhag eu dehongli fel rhan "
 "o'r mynegiad."
 
-#: app/kategrepdialog.cpp:232
+#: app/kategrepdialog.cpp:237
 #, fuzzy
 msgid ""
 "The results of the grep run are listed here. Select a\n"
@@ -753,11 +813,11 @@ msgstr ""
 " gyfuniad enw ffeil/rhif llinell a gwasgwch Enter neu cliciwch\n"
 " yn ddwbl ar yr eitem i ddangos y linell gyfatebol yn y golygydd."
 
-#: app/kategrepdialog.cpp:434
+#: app/kategrepdialog.cpp:451
 msgid "<strong>Error:</strong><p>"
 msgstr "<strong>Gwall:</strong><p>"
 
-#: app/kategrepdialog.cpp:434
+#: app/kategrepdialog.cpp:451
 msgid "Grep Tool Error"
 msgstr "Gwall Erfyn grep"
 
@@ -899,19 +959,19 @@ msgstr "Cymorth hyfryd iawn"
 msgid "All people who have contributed and I have forgotten to mention"
 msgstr "Pawb sydd wedi cyfrannu a rwy wedi anghofio eu crybwyll"
 
-#: app/katemain.cpp:81 app/kwritemain.cpp:578
+#: _translatorinfo.cpp:1 app/katemain.cpp:81 app/kwritemain.cpp:578
 msgid ""
 "_: NAME OF TRANSLATORS\n"
 "Your names"
 msgstr "Owain Green drwy KGyfieithu - Meddalwedd Gymraeg"
 
-#: app/katemain.cpp:81 app/kwritemain.cpp:578
+#: _translatorinfo.cpp:3 app/katemain.cpp:81 app/kwritemain.cpp:578
 msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
 msgstr "kyfieithu@dotmon.com"
 
-#: app/katedocmanager.cpp:311
+#: app/katedocmanager.cpp:327
 msgid ""
 "<p>The document '%1' has been modified, but not saved."
 "<p>Do you want to save your changes or discard them?"
@@ -919,11 +979,11 @@ msgstr ""
 "<p>Addaswyd y ddogfen '%1', ond ni'i gadwyd. "
 "<p>Ydych am gadw eich newidiadu, neu eu taflu?"
 
-#: app/katedocmanager.cpp:313
+#: app/katedocmanager.cpp:329
 msgid "Close Document"
 msgstr "Cau Dogfen"
 
-#: app/katedocmanager.cpp:377
+#: app/katedocmanager.cpp:402
 msgid "Reopening files from the last session..."
 msgstr "Ailagor ffeiliau o'r sesiwn blaenorol..."
 
@@ -1015,7 +1075,8 @@ msgstr "Cuddio Llwybr"
 msgid "Show the complete document path in the window caption"
 msgstr "Dangos llwybr cyflawn y ddogfen ym mhennawd y ffenestr"
 
-#: app/kateviewmanager.cpp:449 app/kwritemain.cpp:232
+#: app/kateviewmanager.cpp:273 app/kateviewspacecontainer.cpp:476
+#: app/kwritemain.cpp:232
 msgid "Open File"
 msgstr "Agor Ffeil"
 
@@ -1043,11 +1104,11 @@ msgstr "KWrite"
 msgid "KWrite - Text Editor"
 msgstr "KWrite - Golygydd Testun"
 
-#: app/kateapp.cpp:268 app/kwritemain.cpp:641
+#: app/kateapp.cpp:263 app/kwritemain.cpp:644
 msgid "The file '%1' could not be opened: it is not a normal file, it is a folder."
 msgstr "Methwyd agor y ffeil '%1'; plygell yw hi, dim ffeil arferol."
 
-#: app/kwritemain.cpp:655
+#: app/kwritemain.cpp:658
 msgid "Choose Editor Component"
 msgstr "Dewiswch Gydran Olygu"
 
@@ -1107,11 +1168,49 @@ msgstr ""
 "Yma gallwch weld pob ategyn Kate sydd ar gael. Mae'r sawl a nôd brith yn eu "
 "herbyn yn llwythiedig, ac fe'i llwythir tro nesaf y cychwynnir Kate."
 
-#: app/katefileselector.cpp:179
+#: app/katesavemodifieddialog.cpp:76
+msgid "Save As (%1)"
+msgstr ""
+
+#: app/katesavemodifieddialog.cpp:127
+#, fuzzy
+msgid "Closing documents ..."
+msgstr "Cau bob dogfen agored."
+
+#: app/katesavemodifieddialog.cpp:130
+#, fuzzy
+msgid "Save selected"
+msgstr "&Dewisiedig:"
+
+#: app/katesavemodifieddialog.cpp:137
+msgid "Abort closing"
+msgstr ""
+
+#: app/katesavemodifieddialog.cpp:141
+msgid ""
+"<qt>Some of the documents you intend to close contain modifications which "
+"have not yet been saved to disc. Please choose how you want to proceed.</qt>"
+msgstr ""
+
+#: app/katesavemodifieddialog.cpp:143
+msgid "Title"
+msgstr "Teitl"
+
+#: app/katesavemodifieddialog.cpp:144
+msgid "Location"
+msgstr "Lleoliad"
+
+#: app/katesavemodifieddialog.cpp:192
+msgid ""
+"Data you requested to be saved could not be written. Please choose how you "
+"want to proceed."
+msgstr ""
+
+#: app/katefileselector.cpp:175
 msgid "Current Document Folder"
 msgstr "Plygell Dogfen Gyfredol"
 
-#: app/katefileselector.cpp:207
+#: app/katefileselector.cpp:203
 msgid ""
 "<p>Here you can enter a path for a folder to display."
 "<p>To go to a folder previously entered, press the arrow on the right and "
@@ -1126,7 +1225,7 @@ msgstr ""
 "<p>Mae cyflawni plygyll ar y gofnod. Rhowch glic-dde i ddewis sut y dylai'r "
 "cyflawni ymddwyn."
 
-#: app/katefileselector.cpp:212
+#: app/katefileselector.cpp:208
 msgid ""
 "<p>Here you can enter a name filter to limit which files are displayed."
 "<p>To clear the filter, toggle off the filter button to the left."
@@ -1136,7 +1235,7 @@ msgstr ""
 "<p>I wagio'r hidlen, diffoddwch y botwm hidlen ar y chwith."
 "<p>I ailweithredu'r hidlen ddefnyddiwyd ddiwethaf, cynnwch y botwm hidlen."
 
-#: app/katefileselector.cpp:216
+#: app/katefileselector.cpp:212
 msgid ""
 "<p>This button clears the name filter when toggled off, or reapplies the "
 "last filter used when toggled on."
@@ -1144,69 +1243,69 @@ msgstr ""
 "<p>Gwagia'r botwm yma'r hidlen enwau pan yn ddiffodd, neu ailweithreda'r "
 "hidlen ddefnyddiwyd ddiwethaf pan ynghyn."
 
-#: app/katefileselector.cpp:330
+#: app/katefileselector.cpp:326
 msgid "Apply last filter (\"%1\")"
 msgstr "Gweithredu'r hidlen ddiwethaf (\"%1\")"
 
-#: app/katefileselector.cpp:335
+#: app/katefileselector.cpp:331
 msgid "Clear filter"
 msgstr "Gwagio hidlen"
 
-#: app/katefileselector.cpp:536
+#: app/katefileselector.cpp:532
 msgid "Toolbar"
 msgstr "Bar offer"
 
-#: app/katefileselector.cpp:538
+#: app/katefileselector.cpp:534
 msgid "A&vailable actions:"
 msgstr "&Gweithredoedd ar gael:"
 
-#: app/katefileselector.cpp:539
+#: app/katefileselector.cpp:535
 msgid "S&elected actions:"
 msgstr "Gweithredoedd d&ewisiedig:"
 
-#: app/katefileselector.cpp:547
+#: app/katefileselector.cpp:543
 msgid "Auto Synchronization"
 msgstr "Cydweddu Ymysgogol"
 
-#: app/katefileselector.cpp:548
+#: app/katefileselector.cpp:544
 msgid "When a docu&ment becomes active"
 msgstr "Pan ddaw dog&fen yn weithredol"
 
-#: app/katefileselector.cpp:549
+#: app/katefileselector.cpp:545
 msgid "When the file selector becomes visible"
 msgstr "Pan ymddengys y dewisydd ffeiliau"
 
-#: app/katefileselector.cpp:556
+#: app/katefileselector.cpp:552
 msgid "Remember &locations:"
 msgstr "Cofio &lleoliadau:"
 
-#: app/katefileselector.cpp:563
+#: app/katefileselector.cpp:559
 msgid "Remember &filters:"
 msgstr "Cofio &hidlenni:"
 
-#: app/katefileselector.cpp:570
+#: app/katefileselector.cpp:566
 msgid "Session"
 msgstr "Sesiwn"
 
-#: app/katefileselector.cpp:571
+#: app/katefileselector.cpp:567
 msgid "Restore loca&tion"
 msgstr "Adfer lleolia&dau:"
 
-#: app/katefileselector.cpp:572
+#: app/katefileselector.cpp:568
 msgid "Restore last f&ilter"
 msgstr "Adfer h&idlen ddiwethaf:"
 
-#: app/katefileselector.cpp:592
+#: app/katefileselector.cpp:588
 msgid ""
 "<p>Decides how many locations to keep in the history of the location combo "
 "box."
 msgstr "<p>Penderfynna sawl lleoliad i gadw yn hanes y blwch cyfuno lleoliadau."
 
-#: app/katefileselector.cpp:597
+#: app/katefileselector.cpp:593
 msgid "<p>Decides how many filters to keep in the history of the filter combo box."
 msgstr "<p>Penderfynna sawl hidlen i gadw yn hanes y blwch cyfuno hidlenni."
 
-#: app/katefileselector.cpp:602
+#: app/katefileselector.cpp:598
 msgid ""
 "<p>These options allow you to have the File Selector automatically change "
 "location to the folder of the active document on certain events."
@@ -1223,7 +1322,7 @@ msgstr ""
 "<p>Ni ddewisir yr un o'r rhain yn ragosod, ond gallwch gydweddu'r lleoliad "
 "trwy wasgu'r botwm cydweddu yn y bar offer ar unrhyw adeg."
 
-#: app/katefileselector.cpp:611
+#: app/katefileselector.cpp:607
 msgid ""
 "<p>If this option is enabled (default), the location will be restored when "
 "you start Kate."
@@ -1235,7 +1334,7 @@ msgstr ""
 "<p><strong>Noder</strong> yr adferir y lleoliad bob tro os trinir y sesiwn "
 "gan y trefnydd sesiynau KDE."
 
-#: app/katefileselector.cpp:615
+#: app/katefileselector.cpp:611
 msgid ""
 "<p>If this option is enabled (default), the current filter will be restored "
 "when you start Kate."
@@ -1331,12 +1430,13 @@ msgstr ""
 " ddangos neu'i guddio fel y mynnoch.</p>\n"
 
 #: tips.cpp:39
+#, fuzzy
 msgid ""
-"<p>Kate can highlight the current line with a \n"
+"<p>Kate can highlight the current line with a\n"
 "<table bgcolor=\"yellow\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" "
-"width=\"100%\"><tr><td>different \n"
+"width=\"100%\"><tr><td>different\n"
 "background color.<strong>|</strong></td></tr></table></p>\n"
-"<p>You can set the color in the <em>Colors</em> page of the configuration \n"
+"<p>You can set the color in the <em>Colors</em> page of the configuration\n"
 "dialog.</p>\n"
 msgstr ""
 "<p>Gall Kate amlygu'r llinell gyfredol â\n"
@@ -1347,14 +1447,14 @@ msgstr ""
 " ffurfweddu.</p>\n"
 
 #: tips.cpp:47
+#, fuzzy
 msgid ""
 "<p>You can open the currently edited file in any other application from "
-"within \n"
+"within\n"
 "Kate.</p>\n"
-"<p>Choose <strong>File -&gt; Open With</strong> for the list of programs \n"
+"<p>Choose <strong>File -&gt; Open With</strong> for the list of programs\n"
 "configured\n"
-"for the document type. There is also an option <strong>Other...</strong> to "
-"\n"
+"for the document type. There is also an option <strong>Other...</strong> to\n"
 "choose any application on your system.</p>\n"
 msgstr ""
 "<p>"
@@ -1367,8 +1467,9 @@ msgstr ""
 " ddewis unrhyw gymhwysiad ar eich cysawd.</p>\n"
 
 #: tips.cpp:56
+#, fuzzy
 msgid ""
-"<p>You can configure the editor to always display the line numbers and/or \n"
+"<p>You can configure the editor to always display the line numbers and/or\n"
 "bookmark panes when started from the <strong>View Defaults</strong> page of "
 "the\n"
 "configuration dialog.</p>\n"
@@ -1381,9 +1482,10 @@ msgstr ""
 "\n"
 
 #: tips.cpp:62
+#, fuzzy
 msgid ""
 "<p>You can download new or updated <em>Syntax highlight definitions</em> "
-"from \n"
+"from\n"
 "the <strong>Highlighting</strong> page in the configuration dialog.</p>\n"
 "<p>Just click the <em>Download...</em> button on the <em>Highlight "
 "Modes</em>\n"
@@ -1396,11 +1498,12 @@ msgstr ""
 " <em>Moddau Amlygu</em> (Rhaid i chi fod ar-lein, wrth gwrs...).</p>\n"
 
 #: tips.cpp:69
+#, fuzzy
 msgid ""
 "<p>You can cycle through all open documents by pressing "
-"<strong>Alt+Left</strong> \n"
+"<strong>Alt+Left</strong>\n"
 "or <strong>Alt+Right</strong>. The next/previous document will immediately "
-"be displayed \n"
+"be displayed\n"
 "in the active frame.</p>\n"
 msgstr ""
 "<p>Gallwch gylchu drwy bob dogfen agored drwy wasgu "
@@ -1410,14 +1513,14 @@ msgstr ""
 " yn y ffrâm weithredol.</p>\n"
 
 #: tips.cpp:75
+#, fuzzy
 msgid ""
 "<p>You can do cool sed-like regular expression replacements using "
-"<em>Editing \n"
-"Command</em>.</p>\n"
-"<p>For example, press <strong>Ctrl+M</strong> and enter "
-"<code>s/oldtext/newtext/g</code> \n"
+"<em>Command Line</em>.</p>\n"
+"<p>For example, press <strong>F7</strong> and enter <code>s "
+"/oldtext/newtext/g</code>\n"
 "to replace &quot;oldtext&quot; with &quot;newtext&quot; throughout the "
-"current \n"
+"current\n"
 "line.</p>\n"
 msgstr ""
 "<p>Gallwch wneud amnewidiadau mynegiad rheolaidd fel sed gan ddefnyddio "
@@ -1429,25 +1532,24 @@ msgstr ""
 "y llinell \n"
 " gyfredol.</p>\n"
 
-#: tips.cpp:83
+#: tips.cpp:82
+#, fuzzy
 msgid ""
-"<p>You can repeat your last search by just pressing <strong>F3</strong>, or "
-"\n"
+"<p>You can repeat your last search by just pressing <strong>F3</strong>, or\n"
 "<strong>Shift+F3</strong> if you want to search backwards.</p>\n"
 msgstr ""
 "<p>Gallwch ailadrodd eich chwiliad diwethaf drwy wasgu <strong>F3</strong>, "
 "neu \n"
 " <strong>Syflydd+F3</strong> os ydych am chwilio am yn ôl.</p>\n"
 
-#: tips.cpp:88
+#: tips.cpp:87
+#, fuzzy
 msgid ""
 "<p>You can filter the files displayed in the <em>File Selector</em> tool "
-"view. \n"
+"view.\n"
 "</p>\n"
-"<p>Simply enter your filter in the filter entry at the bottom, for example: "
-"\n"
-"<code>*.html *.php</code> if you only want to see HTML and PHP files in the "
-"\n"
+"<p>Simply enter your filter in the filter entry at the bottom, for example:\n"
+"<code>*.html *.php</code> if you only want to see HTML and PHP files in the\n"
 "current folder.</p>\n"
 "<p>The File Selector will even remember your filters for you.</strong></p>\n"
 msgstr ""
@@ -1461,14 +1563,15 @@ msgstr ""
 "<p>Bydd y Dewisydd Ffeiliau hyd yn oed yn cofio eich hidlenni i "
 "chi.</strong></p>\n"
 
-#: tips.cpp:97
+#: tips.cpp:96
+#, fuzzy
 msgid ""
 "<p>You can have two views - or even more - of the same document in Kate. "
-"Editing \n"
+"Editing\n"
 "in either will be reflected in both.</p>\n"
 "<p>So if you find yourself scrolling up and down to look at text at the "
-"other \n"
-"end of a document, just press <strong>Ctrl+Shift+T</strong> to split \n"
+"other\n"
+"end of a document, just press <strong>Ctrl+Shift+T</strong> to split\n"
 "horizontally.</p>\n"
 msgstr ""
 "<p>Gallwch gael dau olwg - neu hyd yn oed mwy - o'r un ddogfen yn Kate.\n"
@@ -1478,14 +1581,37 @@ msgstr ""
 " arall dogfen, gwasgwch <strong>Ctrl+Syflydd+T</strong> i rannu\n"
 " yn llorweddol.</p>\n"
 
-#: tips.cpp:105
+#: tips.cpp:104
+#, fuzzy
 msgid ""
-"<p>Press <strong>F8</strong> or <strong>Shift+F8</strong> to switch to the \n"
+"<p>Press <strong>F8</strong> or <strong>Shift+F8</strong> to switch to the\n"
 "next/previous frame.</p>\n"
 msgstr ""
 "<p>Gwasgwch <strong>F8</strong> neu <strong>Syflydd+F8</strong> i newid i'r "
 "\n"
 " ffrâm nesaf/blaenorol.</p>\n"
+
+#, fuzzy
+#~ msgid "Comma&nd:"
+#~ msgstr "&Gorchymyn:"
+
+#~ msgid "Selector"
+#~ msgstr "Dewisydd"
+
+#~ msgid "Default GUI mode for new windows:"
+#~ msgstr "Modd rhagosod GUI ar gyfer ffenestri newydd:"
+
+#~ msgid "Toplevel Mode"
+#~ msgstr "Modd Safon Uchaf"
+
+#~ msgid "Childframe Mode"
+#~ msgstr "Modd Ffrâm Plentyn"
+
+#~ msgid "Tab Page Mode"
+#~ msgstr "Modd Tudalen Dab"
+
+#~ msgid "IDEAL Mode"
+#~ msgstr "Modd IDEAL"
 
 #~ msgid " Line: 1 Col: 0 "
 #~ msgstr "Llinell: 1 Col: 0"
@@ -1498,9 +1624,6 @@ msgstr ""
 
 #~ msgid "&Available:"
 #~ msgstr "&Ar gael:"
-
-#~ msgid "&Selected:"
-#~ msgstr "&Dewisiedig:"
 
 #~ msgid "Untitled %1"
 #~ msgstr "Dienw %1"

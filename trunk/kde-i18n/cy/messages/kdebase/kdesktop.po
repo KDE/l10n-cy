@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdesktop\n"
-"POT-Creation-Date: 2004-07-16 01:18+0200\n"
+"POT-Creation-Date: 2004-09-21 01:25+0200\n"
 "PO-Revision-Date: 2004-07-05 20:19+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -20,39 +20,42 @@ msgstr ""
 "X-Generator: KBabel 1.2\n"
 "\n"
 
-#: lock/lockdlg.cc:76
+#: lock/lockdlg.cc:80
 msgid "<nobr><b>The session is locked</b><br>"
 msgstr "<nobr><b>Mae'r sesiwn wedi'i gloi</b><br>"
 
-#: lock/lockdlg.cc:77
-msgid "<nobr><b>The session is locked by %1</b><br>"
+#: lock/lockdlg.cc:81
+#, fuzzy
+msgid "<nobr><b>The session was locked by %1</b><br>"
 msgstr "<nobr><b>Mae'r sesiwn wedi'i gloi gan %1</b><br>"
 
-#: lock/lockdlg.cc:87
-msgid "&Start New Session..."
-msgstr "Dechrau &Sesiwn Newydd..."
+#: lock/lockdlg.cc:91
+msgid "Sw&itch User..."
+msgstr ""
 
-#: lock/lockdlg.cc:88
+#: lock/lockdlg.cc:92
 msgid "Unl&ock"
 msgstr ""
 
-#: lock/lockdlg.cc:188
+#: lock/lockdlg.cc:193
 msgid "<b>Unlocking failed</b>"
 msgstr "<b>Methwyd datgloi</b>"
 
-#: lock/lockdlg.cc:194
+#: lock/lockdlg.cc:199
 msgid "<b>Warning: Caps Lock on</b>"
 msgstr "<b>Rhybudd: Clo Llythrennau arnodd</b>"
 
-#: lock/lockdlg.cc:420
+#: lock/lockdlg.cc:425
+#, fuzzy
 msgid ""
-"Cannot unlock the session because the authentication system failed to work.\n"
-"You must kill kdesktop_lock (pid %1) manually."
+"Cannot unlock the session because the authentication system failed to work;\n"
+"you must kill kdesktop_lock (pid %1) manually."
 msgstr ""
 "Methu datgloi'r sesiwn, gan fod y cysawd dilysiant yn methu gweithio.\n"
 "Rhaid i chi ladd kdesktop_lock (pid %1) â llaw."
 
-#: lock/lockdlg.cc:518
+#: lock/lockdlg.cc:528
+#, fuzzy
 msgid ""
 "You have chosen to open another desktop session instead of resuming the "
 "current one."
@@ -60,39 +63,81 @@ msgid ""
 "displayed."
 "<br>An F-key is assigned to each session; F%1 is usually assigned to the "
 "first session, F%2 to the second session and so on. You can switch between "
-"sessions by pressing CTRL, ALT and the appropriate F-key at the same time."
+"sessions by pressing Ctrl, Alt and the appropriate F-key at the same time. "
+"Additionally, the KDE Panel and Desktop menus have actions for switching "
+"between sessions."
 msgstr ""
-"Rydych chi wedi dewis i agor penbwrdd arall yn lle aros gyda'r un "
-"cyfredol."
-"<br>"
-"Mi fydd y sesiwn cyfredol yn cael ei guddio a mi fydd sgrîn mewngofnodi "
+"<p>Rydych chi wedi dewis i agor sesiwn penbwrdd arall."
+"<br>Bydd y sesiwn cyfredol yn cael ei guddio a bydd sgrîn mewngofnodi "
 "newydd yn cael ei ddangos."
-"<br>Mae allwedd-F yn cael ei neilltuo i bob sesiwn;  mae F%1 yn cael ei "
-"neilltuo fel arfer i'r sesiwn cyntaf, F%2 i'r ail sesiwn, ac yn y blaen.  "
-"Cewch newid rhwng sesiynau gan wthio CTRL, ALT a'r allwedd-F addas yr un "
-"pryd."
+"<br>Mae bysell-F yn cael ei neilltuo i bob sesiwn; mae F%1 yn cael ei "
+"neilltuo fel rheol i'r sesiwn cyntaf, F%2 i'r ail sesiwn, ac yn y blaen. "
+"Cewch newid rhwng sesiynau gan wthio CTRL, ALT a'r bysell-F addas yr un "
+"pryd.</p>"
 
-#: krootwm.cc:748 lock/lockdlg.cc:529
+#: krootwm.cc:845 lock/lockdlg.cc:541
 msgid "&Start New Session"
 msgstr "Dechrau &Sesiwn Newydd"
 
-#: lock/lockprocess.cc:659
+#: lock/lockdlg.cc:553
+msgid "&Do not ask again"
+msgstr "&Peidio a gofyn eto"
+
+#: lock/lockdlg.cc:652
+msgid "Session"
+msgstr "Sesiwn"
+
+#: lock/lockdlg.cc:653
+msgid "Location"
+msgstr "Lleoliad"
+
+#: krootwm.cc:798 lock/lockdlg.cc:663
+msgid "Unused"
+msgstr ""
+
+#: krootwm.cc:799 lock/lockdlg.cc:664
+msgid "Remote Login"
+msgstr ""
+
+#: krootwm.cc:800 lock/lockdlg.cc:665
+msgid ""
+"_: user: session type\n"
+"%1: %2"
+msgstr ""
+
+#: krootwm.cc:802 lock/lockdlg.cc:667
+msgid ""
+"_: display, virtual terminal\n"
+"%1, vt%2"
+msgstr ""
+
+#: lock/lockdlg.cc:686
+msgid ""
+"_: session\n"
+"&Activate"
+msgstr ""
+
+#: lock/lockdlg.cc:696
+msgid "Start &New Session"
+msgstr "&Dechrau Sesiwn Newydd"
+
+#: lock/lockprocess.cc:688
 msgid ""
 "Will not lock the session, as unlocking would be impossible:\n"
 msgstr ""
 "Ni fydd yn cloi'r sesiwn, oherwydd buasai datgloi yn amhosibl:\n"
 
-#: lock/lockprocess.cc:663
+#: lock/lockprocess.cc:692
 msgid "Cannot start <i>kcheckpass</i>."
 msgstr "Methu cychwyn <i>kcheckpass</i>."
 
-#: lock/lockprocess.cc:664
+#: lock/lockprocess.cc:693
 msgid "<i>kcheckpass</i> is unable to operate. Possibly it is not SetUID root."
 msgstr ""
 "Mae <i>kcheckpass</i> yn methu gweithredu.  Efallai ni osodir i SetUID "
 "gwraidd."
 
-#: lock/lockprocess.cc:708
+#: lock/lockprocess.cc:737
 msgid "No appropriate greeter plugin configured."
 msgstr "Ni ffurfweddir ategyn cyfarchydd penodol."
 
@@ -116,35 +161,36 @@ msgstr "Cloydd KPenbwrdd"
 msgid "Session Locker for KDesktop"
 msgstr "Cloydd Sesiwn i KPenbwrdd"
 
-#: desktop.cc:666
+#: desktop.cc:687
 msgid "Set as Primary Background Color"
 msgstr "Gosod fel Lliw Cefndir Cynradd"
 
-#: desktop.cc:667
+#: desktop.cc:688
 msgid "Set as Secondary Background Color"
 msgstr "Gosod fel Lliw Cefndir Ailradd"
 
-#: desktop.cc:683
+#: desktop.cc:704
 msgid "&Save to Desktop..."
 msgstr "&Cadw i Benbwrdd..."
 
-#: desktop.cc:685
+#: desktop.cc:706
 msgid "Set as &Wallpaper"
 msgstr "Gosod fel &Papur Wal"
 
-#: desktop.cc:693
+#: desktop.cc:714
 msgid "Enter a name for the image below:"
 msgstr "Mewnosod enw ar gyfer y ddelwedd isod:"
 
-#: desktop.cc:702
+#: desktop.cc:723
 msgid "image.png"
 msgstr "image.png"
 
-#: desktop.cc:754
+#: desktop.cc:775
+#, fuzzy
 msgid ""
 "Could not logout properly.\n"
 "The session manager cannot be contacted. You can try to force a shutdown by "
-"pressing Ctrl+Alt+Backspace. Note, however, that your current session will "
+"pressing Ctrl+Alt+Backspace; note, however, that your current session will "
 "not be saved with a forced shutdown."
 msgstr ""
 "Methu allgofnodi yn gywir.\n"
@@ -152,11 +198,23 @@ msgstr ""
 "drwy wthio Ctrl+Alt+Ôlnod.  Ond noder, ni fydd eich sesiwn cyfredol yn cael "
 "ei gadw efo terfyniad gorfodol."
 
-#: kdiconview.cc:395
+#: init.cc:67
+msgid ""
+"%1 is a file, but KDE needs it to be a directory; move it to %2.orig and "
+"create directory?"
+msgstr ""
+
+#: init.cc:81
+msgid ""
+"Could not create directory %1; check for permissions or reconfigure the "
+"desktop to use another path."
+msgstr ""
+
+#: kdiconview.cc:405
 msgid "&Rename"
 msgstr "&Ail-enwi"
 
-#: kdiconview.cc:396
+#: kdiconview.cc:406
 msgid "&Move to Trash"
 msgstr "&Symud i Sbwriel"
 
@@ -168,7 +226,7 @@ msgstr "Rhedeg Gorchymyn..."
 msgid "Configure Desktop..."
 msgstr "Ffurfweddu Penbwrdd..."
 
-#: krootwm.cc:135 krootwm.cc:350
+#: krootwm.cc:135 krootwm.cc:359
 msgid "Disable Desktop Menu"
 msgstr "Analluogi Dewislen Penbwrdd"
 
@@ -220,7 +278,7 @@ msgstr "Alinio i'r Grid"
 msgid "Refresh Desktop"
 msgstr "Adnewyddu Penbwrdd"
 
-#: kdesktopbindings.cpp:30 krootwm.cc:180
+#: kdesktopbindings.cpp:31 krootwm.cc:180
 msgid "Lock Session"
 msgstr "Cloi Sesiwn"
 
@@ -228,51 +286,70 @@ msgstr "Cloi Sesiwn"
 msgid "Logout \"%1\"..."
 msgstr "Allgofnodi\"%1\"..."
 
-#: krootwm.cc:196
-msgid "Start New Session..."
-msgstr "Dechrau Sesiwn Newydd..."
+#: krootwm.cc:193
+#, fuzzy
+msgid "Start New Session"
+msgstr "Dechrau &Sesiwn Newydd"
 
-#: krootwm.cc:328 krootwm.cc:406
+#: krootwm.cc:197
+#, fuzzy
+msgid "Lock Current && Start New Session"
+msgstr "Dechrau &Sesiwn Newydd"
+
+#: krootwm.cc:337 krootwm.cc:415
 msgid "Sort Icons"
 msgstr "Trefnu eiconau"
 
-#: krootwm.cc:330
+#: krootwm.cc:339
 msgid "Line Up Icons"
 msgstr "Unioni Eiconau"
 
-#: krootwm.cc:357
+#: krootwm.cc:366
 msgid "Enable Desktop Menu"
 msgstr "Galluogi Dewislen Penbwrdd"
 
-#: krootwm.cc:413
+#: krootwm.cc:422
 msgid "Icons"
 msgstr "Eiconau"
 
-#: krootwm.cc:419 krootwm.cc:473
+#: krootwm.cc:428 krootwm.cc:484
 msgid "Windows"
 msgstr "Ffenestri"
 
-#: krootwm.cc:466
+#: kdesktopbindings.cpp:26 krootwm.cc:444
+msgid "Switch User"
+msgstr ""
+
+#: krootwm.cc:473
+#, fuzzy
+msgid "Sessions"
+msgstr "Cloi Sesiwn"
+
+#: krootwm.cc:477
 msgid "New"
 msgstr "Newydd"
 
-#: kdesktopbindings.cpp:14 krootwm.cc:472 krootwm.cc:679
+#: kdesktopbindings.cpp:14 krootwm.cc:483 krootwm.cc:708
 msgid "Desktop"
 msgstr "Penbwrdd"
 
-#: krootwm.cc:743
-msgid "Warning - New Session"
-msgstr "Rhybudd - Sesiwn Newydd"
+#: krootwm.cc:797
+msgid ""
+"_: session (location)\n"
+"%1 (%2)"
+msgstr ""
 
-#: krootwm.cc:751
+#: krootwm.cc:833
+#, fuzzy
 msgid ""
 "<p>You have chosen to open another desktop session."
 "<br>The current session will be hidden and a new login screen will be "
 "displayed."
 "<br>An F-key is assigned to each session; F%1 is usually assigned to the "
 "first session, F%2 to the second session and so on. You can switch between "
-"sessions by pressing Ctrl, Alt and the appropriate F-key at the same "
-"time.</p>"
+"sessions by pressing Ctrl, Alt and the appropriate F-key at the same time. "
+"Additionally, the KDE Panel and Desktop menus have actions for switching "
+"between sessions.</p>"
 msgstr ""
 "<p>Rydych chi wedi dewis i agor sesiwn penbwrdd arall."
 "<br>Bydd y sesiwn cyfredol yn cael ei guddio a bydd sgrîn mewngofnodi "
@@ -282,9 +359,9 @@ msgstr ""
 "Cewch newid rhwng sesiynau gan wthio CTRL, ALT a'r bysell-F addas yr un "
 "pryd.</p>"
 
-#: krootwm.cc:763
-msgid "&Lock current session"
-msgstr "Clo&i Sesiwn Cyfredol"
+#: krootwm.cc:844
+msgid "Warning - New Session"
+msgstr "Rhybudd - Sesiwn Newydd"
 
 #: main.cc:43
 msgid "The KDE desktop"
@@ -330,19 +407,19 @@ msgstr "Dangos Rheolydd Tasgiau"
 msgid "Show Window List"
 msgstr "Dangos Rhestr Ffenestri"
 
-#: kdesktopbindings.cpp:36
+#: kdesktopbindings.cpp:37
 msgid "Logout"
 msgstr "Allgofnodi"
 
-#: kdesktopbindings.cpp:37
+#: kdesktopbindings.cpp:38
 msgid "Logout without Confirmation"
 msgstr "Allgofnodi heb Gadarnhàd"
 
-#: kdesktopbindings.cpp:38
+#: kdesktopbindings.cpp:39
 msgid "Halt without Confirmation"
 msgstr "Stopio heb Gadarnhàd"
 
-#: kdesktopbindings.cpp:39
+#: kdesktopbindings.cpp:40
 msgid "Reboot without Confirmation"
 msgstr "Ail-gychwyn heb Gadarnhàd"
 
@@ -569,6 +646,30 @@ msgid "Enter the name of the application you want to run or the URL you want to 
 msgstr ""
 "Mewnosodwch enw'r cymhwysiad yr ydych eisiau rhedeg, neu yr URL rydych "
 "eisiau ei weld."
+
+#~ msgid "&Start New Session..."
+#~ msgstr "Dechrau &Sesiwn Newydd..."
+
+#~ msgid ""
+#~ "You have chosen to open another desktop session instead of resuming the "
+#~ "current one.<br>The current session will be hidden and a new login screen "
+#~ "will be displayed.<br>An F-key is assigned to each session; F%1 is "
+#~ "usually assigned to the first session, F%2 to the second session and so "
+#~ "on. You can switch between sessions by pressing CTRL, ALT and the "
+#~ "appropriate F-key at the same time."
+#~ msgstr ""
+#~ "Rydych chi wedi dewis i agor penbwrdd arall yn lle aros gyda'r un "
+#~ "cyfredol.<br>Mi fydd y sesiwn cyfredol yn cael ei guddio a mi fydd sgrîn "
+#~ "mewngofnodi newydd yn cael ei ddangos.<br>Mae allwedd-F yn cael ei "
+#~ "neilltuo i bob sesiwn;  mae F%1 yn cael ei neilltuo fel arfer i'r sesiwn "
+#~ "cyntaf, F%2 i'r ail sesiwn, ac yn y blaen.  Cewch newid rhwng sesiynau "
+#~ "gan wthio CTRL, ALT a'r allwedd-F addas yr un pryd."
+
+#~ msgid "Start New Session..."
+#~ msgstr "Dechrau Sesiwn Newydd..."
+
+#~ msgid "&Lock current session"
+#~ msgstr "Clo&i Sesiwn Cyfredol"
 
 #~ msgid "&Shred"
 #~ msgstr "&Carpio"

@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: desktop_kdelibs\n"
-"POT-Creation-Date: 2004-07-27 01:40+0200\n"
+"POT-Creation-Date: 2004-09-23 01:46+0200\n"
 "PO-Revision-Date: 2004-01-16 09:19+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -1281,6 +1281,11 @@ msgstr "Name=Delwedd JPEG 2000"
 msgid "Name=JPEG Image"
 msgstr "Name=Delwedd JPEG"
 
+#: kdelibs/kimgio/mng.kimgio:1
+#, fuzzy
+msgid "Name=MNG Image"
+msgstr "Name=Delwedd PNG"
+
 #: kdelibs/kimgio/pbm.kimgio:1
 msgid "Name=Portable Bitmap Image"
 msgstr "Name=Delwedd Ddidfap Gludadwy"
@@ -1302,9 +1307,8 @@ msgid "Name=Portable Pixmap Image"
 msgstr "Name=Delwedd Bicsfap Llwydfap"
 
 #: kdelibs/kimgio/rgb.kimgio:1
-#, fuzzy
 msgid "Name=SGI Image (RGB)"
-msgstr "Name=Delwedd GIF"
+msgstr "Name=Delwedd SGI (RGB)"
 
 #: kdelibs/kimgio/tga.kimgio:1
 msgid "Name=Truevision Targa Image"
@@ -1317,6 +1321,11 @@ msgstr "Name=Delwedd TIFF"
 #: kdelibs/kimgio/xbm.kimgio:1
 msgid "Name=X BitMap Image"
 msgstr "Name=Delwedd Didfap X"
+
+#: kdelibs/kimgio/xcf.kimgio:1
+#, fuzzy
+msgid "Name=GIMP Image"
+msgstr "Name=Delwedd BMP"
 
 #: kdelibs/kimgio/xpm.kimgio:1
 msgid "Name=X PixMap Image"
@@ -1527,6 +1536,14 @@ msgstr "Name=psselect"
 msgid "Name=ISpell"
 msgstr "Name=psselect"
 
+#: kdelibs/kstyles/plastik/plastik.themerc:1
+msgid "Name=Plastik"
+msgstr "Name=Plastik"
+
+#: kdelibs/kstyles/plastik/plastik.themerc:2
+msgid "Comment=A simple and clean style"
+msgstr "Comment=Arddull syml a glan"
+
 #: kdelibs/kstyles/riscos/riscos.themerc:1
 msgid "Name=RISC OS"
 msgstr "Name=RISC OS"
@@ -1599,14 +1616,6 @@ msgstr "Name=Arddull Ysgafn, 3ydd addasiad"
 msgid "Comment=Third revision of the simple and elegant 'Light' widget style."
 msgstr "Comment=Trydydd addasiad o'r arddull celfigyn syml a gwych 'Light'"
 
-#: kdelibs/kstyles/themes/marble.themerc:1
-msgid "Name=Marble"
-msgstr "Name=Marmor"
-
-#: kdelibs/kstyles/themes/marble.themerc:2
-msgid "Comment=Light marble themed style"
-msgstr "Comment=Arddull Thema Marmor Ysgafn"
-
 #: kdelibs/kstyles/themes/mega.themerc:1
 msgid "Name=MegaGradient highcolor style"
 msgstr "Name=Arddull GraddliwMega uchel-liw"
@@ -1658,22 +1667,6 @@ msgstr "Name=MS Windows 9x"
 #: kdelibs/kstyles/themes/qtwindows.themerc:2
 msgid "Comment=Built-in unthemed Windows 9x style"
 msgstr "Comment=Arddull Windows 9x mewnadeiladedig heb thema"
-
-#: kdelibs/kstyles/themes/system.themerc:1
-msgid "Name=System++"
-msgstr "Name=System++"
-
-#: kdelibs/kstyles/themes/system.themerc:2
-msgid "Comment=System themed style"
-msgstr "Comment=Arddull thema cysawd"
-
-#: kdelibs/kstyles/themes/systemalt.themerc:1
-msgid "Name=System-Series"
-msgstr "Name=Cyfres-Cysawd"
-
-#: kdelibs/kstyles/themes/systemalt.themerc:2
-msgid "Comment=System Style 001"
-msgstr "Comment=Arddull Cysawd 001"
 
 #: kdelibs/kstyles/web/web.themerc:1
 msgid "Name=Web style"
@@ -1789,28 +1782,24 @@ msgid "Comment=StarOffice Calc Spreadsheet"
 msgstr "Comment=Taenlen StarOffice Calc"
 
 #: kdelibs/mimetypes/application/vnd.stardivision.chart.desktop:2
-#, fuzzy
 msgid "Comment=StarOffice Chart"
-msgstr "Comment=Taenlen StarOffice Calc"
+msgstr "Comment=Siart StarOffice"
 
 #: kdelibs/mimetypes/application/vnd.stardivision.draw.desktop:2
-#, fuzzy
 msgid "Comment=StarOffice Drawing"
-msgstr "Comment=Darlun Microsoft Office  "
+msgstr "Comment=Darlun StarOffice"
 
 #: kdelibs/mimetypes/application/vnd.stardivision.impress.desktop:2
 msgid "Comment=StarOffice Impress Presentation"
 msgstr "Comment=Cyflwyniad StarOffice Impress"
 
 #: kdelibs/mimetypes/application/vnd.stardivision.math.desktop:2
-#, fuzzy
 msgid "Comment=StarOffice Math Document"
-msgstr "Comment=Dogfen StarOffice Writer"
+msgstr "Comment=Dogfen Math StarOffice"
 
 #: kdelibs/mimetypes/application/vnd.stardivision.writer-global.desktop:2
-#, fuzzy
 msgid "Comment=StarOffice Writer Master Document"
-msgstr "Comment=Dogfen StarOffice Writer"
+msgstr "Comment=Dogfen Feistr StarOffice Writer"
 
 #: kdelibs/mimetypes/application/vnd.stardivision.writer.desktop:2
 msgid "Comment=StarOffice Writer Document"
@@ -1821,41 +1810,36 @@ msgid "Comment=OpenOffice.org Spreadsheet"
 msgstr "Comment= Taenlen OpenOffice.org "
 
 #: kdelibs/mimetypes/application/vnd.sun.xml.calc.template.desktop:2
-#, fuzzy
 msgid "Comment=OpenOffice.org Spreadsheet Template"
-msgstr "Comment= Taenlen OpenOffice.org "
+msgstr "Comment=Patrymlun Taenlen OpenOffice.org "
 
 #: kdelibs/mimetypes/application/vnd.sun.xml.draw.desktop:2
 msgid "Comment=OpenOffice.org Drawing"
 msgstr "Comment=Darlun OpenOffice.org "
 
 #: kdelibs/mimetypes/application/vnd.sun.xml.draw.template.desktop:2
-#, fuzzy
 msgid "Comment=OpenOffice.org Drawing Template"
-msgstr "Comment=Darlun OpenOffice.org "
+msgstr "Comment=Patrymlun Darlun OpenOffice.org "
 
 #: kdelibs/mimetypes/application/vnd.sun.xml.impress.desktop:2
 msgid "Comment=OpenOffice.org Presentation"
 msgstr "Comment=Cyflwyniad OpenOffice.org "
 
 #: kdelibs/mimetypes/application/vnd.sun.xml.impress.template.desktop:2
-#, fuzzy
 msgid "Comment=OpenOffice.org Presentation Template"
-msgstr "Comment=Cyflwyniad OpenOffice.org "
+msgstr "Comment=Patrymlun Cyflwyniad OpenOffice.org "
 
 #: kdelibs/mimetypes/application/vnd.sun.xml.writer.desktop:2
 msgid "Comment=OpenOffice.org Text Document"
 msgstr "Comment=Dogfen Destun OpenOffice.org"
 
 #: kdelibs/mimetypes/application/vnd.sun.xml.writer.master.desktop:2
-#, fuzzy
 msgid "Comment=OpenOffice.org Master Text Document"
-msgstr "Comment=Dogfen Destun OpenOffice.org"
+msgstr "Comment=Dogfen Destun Feistr OpenOffice.org"
 
 #: kdelibs/mimetypes/application/vnd.sun.xml.writer.template.desktop:2
-#, fuzzy
 msgid "Comment=OpenOffice.org Text Document Template"
-msgstr "Comment=Dogfen Destun OpenOffice.org"
+msgstr "Comment=Patrymlun Dogfen Destun OpenOffice.org"
 
 #: kdelibs/mimetypes/application/wordperfect.desktop:2
 msgid "Comment=WordPerfect Document"
@@ -2611,6 +2595,11 @@ msgstr "Comment=Dogfen RTF"
 msgid "Comment=SGML Document"
 msgstr "Comment=Dogfen SGML"
 
+#: kdelibs/mimetypes/text/vnd.abc.desktop:2
+#, fuzzy
+msgid "Comment=ABC Music File"
+msgstr "Comment=Ffeil Tarddiad C"
+
 #: kdelibs/mimetypes/text/vnd.wap.wml.desktop:2
 msgid "Comment=WML Document"
 msgstr "Comment=Dogfen WML"
@@ -2780,6 +2769,24 @@ msgstr "Name=Uchel-liw KDE"
 #: kdelibs/pics/hicolor/index.theme:2
 msgid "Comment=Highcolor Icon Theme"
 msgstr "Comment= Thema Eicon Uchel-liw"
+
+#~ msgid "Name=Marble"
+#~ msgstr "Name=Marmor"
+
+#~ msgid "Comment=Light marble themed style"
+#~ msgstr "Comment=Arddull Thema Marmor Ysgafn"
+
+#~ msgid "Name=System++"
+#~ msgstr "Name=System++"
+
+#~ msgid "Comment=System themed style"
+#~ msgstr "Comment=Arddull thema cysawd"
+
+#~ msgid "Name=System-Series"
+#~ msgstr "Name=Cyfres-Cysawd"
+
+#~ msgid "Comment=System Style 001"
+#~ msgstr "Comment=Arddull Cysawd 001"
 
 #~ msgid "Comment=KSpread Encrypted Document"
 #~ msgstr "Comment=Dogfen KSpread wedi'i amgriptio"
