@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
-"POT-Creation-Date: 2004-09-28 01:35+0200\n"
+"POT-Creation-Date: 2004-10-06 13:01+0200\n"
 "PO-Revision-Date: 2004-01-09 14:01+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -41,10 +41,42 @@ msgid ""
 "Your emails"
 msgstr "kyfieithu@dotmon.com"
 
+#: addresseeemailselection.cpp:47 addressesdialog.cpp:220
+#: addressesdialog.cpp:693
+msgid "To"
+msgstr "I"
+
+#: addresseeemailselection.cpp:50
+msgid "Cc"
+msgstr ""
+
+#: addresseeemailselection.cpp:53
+msgid "Bcc"
+msgstr ""
+
+#: addresseeemailselection.cpp:196 addressesdialog.cpp:301
+#: recentaddresses.cpp:157
+msgid "Recent Addresses"
+msgstr "Cyfeiriadau Diweddar"
+
 #: addresseelineedit.cpp:580
 #, fuzzy
 msgid "Edit Completion Order..."
 msgstr "&Golygu Categorïau..."
+
+#: addresseeselector.cpp:67
+msgid "All"
+msgstr ""
+
+#: addresseeselector.cpp:276
+#, fuzzy
+msgid "AddressBook:"
+msgstr "&Llyfr Cyfeiriadau"
+
+#: addresseeselector.cpp:282
+#, fuzzy
+msgid "Search:"
+msgstr "C&hwilio"
 
 #: addresseeview.cpp:73
 msgid "Show Birthday"
@@ -154,14 +186,11 @@ msgstr ""
 msgid "<group>"
 msgstr "<grŵp>"
 
-#: addressesdialog.cpp:196 rc.cpp:2
+#. i18n: file addresspicker.ui line 16
+#: addressesdialog.cpp:196 rc.cpp:3
 #, no-c-format
 msgid "Address Selection"
 msgstr "Dewis Cyfeiriad"
-
-#: addressesdialog.cpp:220 addressesdialog.cpp:693
-msgid "To"
-msgstr "I"
 
 #: addressesdialog.cpp:231 addressesdialog.cpp:715
 msgid "CC"
@@ -170,10 +199,6 @@ msgstr "CC"
 #: addressesdialog.cpp:242 addressesdialog.cpp:737
 msgid "BCC"
 msgstr "CCD (BCC)"
-
-#: addressesdialog.cpp:301 recentaddresses.cpp:157
-msgid "Recent Addresses"
-msgstr "Cyfeiriadau Diweddar"
 
 #: addressesdialog.cpp:436
 msgid "Other Addresses"
@@ -211,7 +236,7 @@ msgstr "Rhestri Dosbarthu"
 msgid ""
 "_: %1 is a time, %2 is a status message\n"
 "[%1] %2"
-msgstr ""
+msgstr "[%1] %2"
 
 #: broadcaststatus.cpp:78
 msgid ""
@@ -398,12 +423,14 @@ msgstr "Cyflawn"
 msgid "Completed"
 msgstr "Gorffenwyd"
 
-#: categoryeditdialog.cpp:39 rc.cpp:29
+#. i18n: file categoryeditdialog_base.ui line 16
+#: categoryeditdialog.cpp:39 rc.cpp:43
 #, no-c-format
 msgid "Edit Categories"
 msgstr "Golygu Categorïau"
 
-#: categoryselectdialog.cpp:37 rc.cpp:39
+#. i18n: file categoryselectdialog_base.ui line 16
+#: categoryselectdialog.cpp:37 rc.cpp:58
 #, no-c-format
 msgid "Select Categories"
 msgstr "Dewis Categorïau"
@@ -508,9 +535,8 @@ msgid "yesterday"
 msgstr "ddoe"
 
 #: kdatepickerpopup.cpp:61
-#, fuzzy
 msgid "&Today"
-msgstr "heddiw"
+msgstr "&Heddiw"
 
 #: kdatepickerpopup.cpp:62
 #, fuzzy
@@ -519,11 +545,11 @@ msgstr "yfory"
 
 #: kdatepickerpopup.cpp:63
 msgid "&Friday"
-msgstr ""
+msgstr "&Dydd Gwener"
 
 #: kdatepickerpopup.cpp:64
 msgid "&Sunday"
-msgstr ""
+msgstr "&Dydd Sul"
 
 #: kdatepickerpopup.cpp:65
 msgid "Next &Week"
@@ -978,7 +1004,8 @@ msgstr "Llwytho..."
 msgid "Current changes:"
 msgstr "Newidiadau cyfredol:"
 
-#: ksubscription.cpp:257 rc.cpp:4 rc.cpp:25
+#. i18n: file addresspicker.ui line 25
+#: ksubscription.cpp:257 rc.cpp:6 rc.cpp:37
 #, no-c-format
 msgid "Name"
 msgstr "Enw"
@@ -1042,67 +1069,80 @@ msgstr ""
 msgid "Aborting..."
 msgstr ""
 
-#: rc.cpp:6 rc.cpp:27
+#. i18n: file addresspicker.ui line 36
+#: rc.cpp:9 rc.cpp:40
 #, no-c-format
 msgid "Email Address"
 msgstr "Cyfeiriad Ebost"
 
-#: rc.cpp:8
+#. i18n: file addresspicker.ui line 100
+#: rc.cpp:12
 #, no-c-format
 msgid "&To >>"
 msgstr "&I >>"
 
-#: rc.cpp:10
+#. i18n: file addresspicker.ui line 111
+#: rc.cpp:15
 #, no-c-format
 msgid "&CC >>"
 msgstr "&CC >>"
 
-#: rc.cpp:12
+#. i18n: file addresspicker.ui line 122
+#: rc.cpp:18
 #, no-c-format
 msgid "&BCC >>"
 msgstr "&BCC >>"
 
-#: rc.cpp:14
+#. i18n: file addresspicker.ui line 150
+#: rc.cpp:21
 #, no-c-format
 msgid "<< &Remove"
 msgstr "<< &Gwaredu"
 
-#: rc.cpp:16
+#. i18n: file addresspicker.ui line 180
+#: rc.cpp:24
 #, no-c-format
 msgid "Save as &Distribution List..."
 msgstr "Cadw fel &Rhestr Ddosbarthu..."
 
-#: rc.cpp:18
+#. i18n: file addresspicker.ui line 193
+#: rc.cpp:27
 #, no-c-format
 msgid "&Selected Addresses"
 msgstr "C&yfeiriadau Dewisiedig"
 
-#: rc.cpp:20
+#. i18n: file addresspicker.ui line 212
+#: rc.cpp:30
 #, no-c-format
 msgid "&Address Book"
 msgstr "&Llyfr Cyfeiriadau"
 
-#: rc.cpp:22
+#. i18n: file addresspicker.ui line 234
+#: rc.cpp:33
 #, no-c-format
 msgid "&Filter on:"
 msgstr "&Hidlo gan:"
 
-#: rc.cpp:31 rc.cpp:41
+#. i18n: file categoryeditdialog_base.ui line 36
+#: rc.cpp:46 rc.cpp:61
 #, no-c-format
 msgid "Category"
 msgstr "Categori"
 
-#: rc.cpp:33
+#. i18n: file categoryeditdialog_base.ui line 62
+#: rc.cpp:49
 #, no-c-format
 msgid "A&dd"
 msgstr "&Ychwanegu"
 
-#: rc.cpp:43
+#. i18n: file categoryselectdialog_base.ui line 63
+#: rc.cpp:64
 #, no-c-format
 msgid "&Clear Selection"
 msgstr "&Gwagu Dewisiad"
 
-#: rc.cpp:45
+#. i18n: file categoryselectdialog_base.ui line 88
+#: rc.cpp:67
 #, no-c-format
 msgid "&Edit Categories..."
 msgstr "&Golygu Categorïau..."
@@ -1140,12 +1180,8 @@ msgstr ""
 #~ msgstr "dim"
 
 #, fuzzy
-#~ msgid ""
-#~ "No external address book application found. You might want to install "
-#~ "KAddressBook from the kdepim module."
-#~ msgstr ""
-#~ "Ni ganfuwyd cymhwysiad llyfr cyfeiriadau allanol. Efallai hoffech sefydlu "
-#~ "KAddressBook o'r modwl kdepim."
+#~ msgid "No external address book application found. You might want to install KAddressBook from the kdepim module."
+#~ msgstr "Ni ganfuwyd cymhwysiad llyfr cyfeiriadau allanol. Efallai hoffech sefydlu KAddressBook o'r modwl kdepim."
 
 #~ msgid "Please select the entry which you want to edit."
 #~ msgstr "Dewiswch y gofnod yr hoffech ei golygu os gwelwch yn dda."
@@ -1159,12 +1195,8 @@ msgstr ""
 #~ msgstr "CC >>"
 
 #, fuzzy
-#~ msgid ""
-#~ "You have to select the addressees which you wish to save as distribution "
-#~ "list members."
-#~ msgstr ""
-#~ "Mae'n rhaid i chi ddewis y cyfeiriadau'r bobl yr hoffech eu cadw fel "
-#~ "aelodau rhestr ddosbarthu."
+#~ msgid "You have to select the addressees which you wish to save as distribution list members."
+#~ msgstr "Mae'n rhaid i chi ddewis y cyfeiriadau'r bobl yr hoffech eu cadw fel aelodau rhestr ddosbarthu."
 
 #~ msgid "Available Addresses"
 #~ msgstr "Cyfeiriadau Ar Gael"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdesdk/kcachegrind.po\n"
-"POT-Creation-Date: 2004-08-30 16:10+0200\n"
+"POT-Creation-Date: 2004-10-02 01:29+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -103,7 +103,7 @@ msgstr ""
 msgid "Function Source File"
 msgstr ""
 
-#: rc.cpp:111 rc.cpp:220 rc.cpp:248 rc.cpp:264 tracedata.cpp:218
+#: rc.cpp:159 rc.cpp:311 rc.cpp:353 rc.cpp:377 tracedata.cpp:218
 #, no-c-format
 msgid "Function"
 msgstr "Ffwythiant"
@@ -177,13 +177,13 @@ msgstr ""
 msgid "Recalculating Function Cycles..."
 msgstr ""
 
-#: callmapview.cpp:59 partselection.cpp:54 rc.cpp:154
+#: callmapview.cpp:59 partselection.cpp:54 rc.cpp:218
 #, no-c-format
 msgid "Name"
 msgstr "Enw"
 
 #: callmapview.cpp:60 callview.cpp:44 instrview.cpp:126 partselection.cpp:55
-#: rc.cpp:258 sourceview.cpp:50
+#: rc.cpp:368 sourceview.cpp:50
 #, no-c-format
 msgid "Cost"
 msgstr "Cost"
@@ -272,14 +272,14 @@ msgstr ""
 msgid "Event Type"
 msgstr ""
 
-#: costtypeview.cpp:43 coverageview.cpp:46 partview.cpp:47 rc.cpp:216
-#: rc.cpp:242
+#: costtypeview.cpp:43 coverageview.cpp:46 partview.cpp:47 rc.cpp:305
+#: rc.cpp:344
 #, no-c-format
 msgid "Incl."
 msgstr ""
 
-#: costtypeview.cpp:44 coverageview.cpp:53 partview.cpp:48 rc.cpp:238
-#: rc.cpp:244
+#: costtypeview.cpp:44 coverageview.cpp:53 partview.cpp:48 rc.cpp:338
+#: rc.cpp:347
 #, no-c-format
 msgid "Self"
 msgstr ""
@@ -294,10 +294,11 @@ msgstr "Fformiwla"
 
 #: costtypeview.cpp:81
 msgid ""
-"<b>Cost Types List</b><p>This list shows all cost types available and what's "
-"the self/cumulative cost of the current selected function for that cost type."
-"</p><p>By choosing a cost type from the list, you change the cost type of "
-"costs shown all over KCachegrind to be the selected one.</p>"
+"<b>Cost Types List</b>"
+"<p>This list shows all cost types available and what's the self/cumulative "
+"cost of the current selected function for that cost type.</p>"
+"<p>By choosing a cost type from the list, you change the cost type of costs "
+"shown all over KCachegrind to be the selected one.</p>"
 msgstr ""
 
 #: costtypeview.cpp:98
@@ -353,26 +354,31 @@ msgstr ""
 msgid "No description available"
 msgstr "Dim disgrifiad ar gael"
 
-#: rc.cpp:252 toplevel.cpp:282 toplevel.cpp:583
+#: rc.cpp:359 toplevel.cpp:282 toplevel.cpp:583
 #, no-c-format
 msgid "Parts Overview"
 msgstr ""
 
 #: toplevel.cpp:289
 msgid ""
-"<b>The Parts Overview</b><p>A trace consists of multiple trace parts when "
-"there are several profile data files from one profile run. The Trace Part "
-"Overview dockable shows these, horizontally ordered in execution time; the "
-"rectangle sizes are proportional to the total cost spent in the parts. You "
-"can select one or several parts to constrain all costs shown to these parts "
-"only.</p><p>The parts are further subdivided: there is a partitioning and a "
-"cumulative split mode: <ul><li>Partitioning: You see the partitioning into "
-"groups for a trace part, according to the group type selected. E.g. if ELF "
-"object groups are selected, you see colored rectangles for each used ELF "
-"object (shared library or executable), sized according to the cost spent "
-"therein.</li><li>Cumulative Split: A rectangle showing the cumulative cost "
-"of the current selected function in the trace part is shown. This again is "
-"split up to show cumulative costs of its callees.</li></ul></p>"
+"<b>The Parts Overview</b>"
+"<p>A trace consists of multiple trace parts when there are several profile "
+"data files from one profile run. The Trace Part Overview dockable shows "
+"these, horizontally ordered in execution time; the rectangle sizes are "
+"proportional to the total cost spent in the parts. You can select one or "
+"several parts to constrain all costs shown to these parts only.</p>"
+"<p>The parts are further subdivided: there is a partitioning and a "
+"cumulative split mode: "
+"<ul>"
+"<li>Partitioning: You see the partitioning into groups for a trace part, "
+"according to the group type selected. E.g. if ELF object groups are "
+"selected, you see colored rectangles for each used ELF object (shared "
+"library or executable), sized according to the cost spent "
+"therein.</li>"
+"<li>"
+"Cumulative Split: A rectangle showing the cumulative cost of the current "
+"selected function in the trace part is shown. This again is split up to show "
+"cumulative costs of its callees.</li></ul></p>"
 msgstr ""
 
 #: toplevel.cpp:319
@@ -381,11 +387,13 @@ msgstr ""
 
 #: toplevel.cpp:321
 msgid ""
-"<b>The Top Cost Call Stack</b><p>This is a purely fictional 'most probable' "
-"call stack. It is built up by starting with the current selected function "
-"and adds the callers/callees with highest cost at the top and to bottom.</"
-"p><p>The <b>Cost</b> and <b>Calls</b> columns show the cost used for all "
-"calls from the function in the line above.</p>"
+"<b>The Top Cost Call Stack</b>"
+"<p>This is a purely fictional 'most probable' call stack. It is built up by "
+"starting with the current selected function and adds the callers/callees "
+"with highest cost at the top and to bottom.</p>"
+"<p>The <b>Cost</b> and <b>Calls</b>"
+" columns show the cost used for all calls from the function in the line "
+"above.</p>"
 msgstr ""
 
 #: toplevel.cpp:334
@@ -394,38 +402,49 @@ msgstr ""
 
 #: toplevel.cpp:344
 msgid ""
-"<b>The Flat Profile</b><p>The flat profile contains a group and a function "
-"selection list. The group list contains all groups where costs are spent in, "
-"depending on the chosen group type. The group list is hidden when group type "
-"'Function' is selected.<p><p>The function list contains the functions of the "
-"selected group (or all for 'Function' group type), ordered by the costs "
-"spent therein. Functions with costs less than 1% are hidden on default.</p>"
+"<b>The Flat Profile</b>"
+"<p>The flat profile contains a group and a function selection list. The "
+"group list contains all groups where costs are spent in, depending on the "
+"chosen group type. The group list is hidden when group type 'Function' is "
+"selected."
+"<p>"
+"<p>The function list contains the functions of the selected group (or all "
+"for 'Function' group type), ordered by the costs spent therein. Functions "
+"with costs less than 1% are hidden on default.</p>"
 msgstr ""
 
-#: rc.cpp:59 toplevel.cpp:358 toplevel.cpp:611
+#: rc.cpp:87 toplevel.cpp:358 toplevel.cpp:611
 #, no-c-format
 msgid "Profile Dumps"
 msgstr ""
 
 #: toplevel.cpp:368
 msgid ""
-"<b>Profile Dumps</b><p>This dockable shows in the top part the list of "
-"loadable profile dumps in all subdirectories of: <ul><li>current working "
-"directory of KCachegrind, i.e. where it was started from, and <li>the "
-"default profile dump directory given in the configuration.</ul> The list is "
-"sorted according the the target command profiled in the corresponding dump.</"
-"p><p>On selecting a profile dump, information for it is shown in the bottom "
-"area of the dockable: <ul><li><b>Options</b> allows you to view the profiled "
-"command and profile options of this dump. By changing any item, a new (yet "
-"unexisting) profile template is created. Press <b>Run Profile</b> to start "
-"aprofile run with these options in the background. <li><b>Info</b> gives "
-"detailed info on the selected dump like event cost summary and properties of "
-"the simulated cache. <li><b>State</b> is only available for current "
-"happening profiles runs. Press <b>Update</b> to see different counters of "
-"the run, and a stack trace of the current position in the program profiled. "
-"Check the <b>Every</b> option to let KCachegrind regularly poll these data. "
-"Check the <b>Sync</b> option to let the dockable activate the top function "
-"in the current loaded dump.</ul></p>"
+"<b>Profile Dumps</b>"
+"<p>"
+"This dockable shows in the top part the list of loadable profile dumps in "
+"all subdirectories of: "
+"<ul>"
+"<li>current working directory of KCachegrind, i.e. where it was started "
+"from, and "
+"<li>the default profile dump directory given in the configuration.</ul> The "
+"list is sorted according the the target command profiled in the "
+"corresponding dump.</p>"
+"<p>On selecting a profile dump, information for it is shown in the bottom "
+"area of the dockable: "
+"<ul>"
+"<li><b>Options</b> allows you to view the profiled command and profile "
+"options of this dump. By changing any item, a new (yet unexisting) profile "
+"template is created. Press <b>Run Profile</b> to start aprofile run with "
+"these options in the background. "
+"<li><b>Info</b> gives detailed info on the selected dump like event cost "
+"summary and properties of the simulated cache. "
+"<li><b>State</b> is only available for current happening profiles runs. "
+"Press <b>Update</b> to see different counters of the run, and a stack trace "
+"of the current position in the program profiled. Check the <b>Every</b> "
+"option to let KCachegrind regularly poll these data. Check the <b>Sync</b> "
+"option to let the dockable activate the top function in the current loaded "
+"dump.</ul></p>"
 msgstr ""
 
 #: toplevel.cpp:456
@@ -433,14 +452,13 @@ msgid "&Duplicate"
 msgstr "&Dyblyg"
 
 #: toplevel.cpp:460
-msgid ""
-"<b>Duplicate Current Layout</b><p>Make a copy of the current layout.</p>"
+msgid "<b>Duplicate Current Layout</b><p>Make a copy of the current layout.</p>"
 msgstr ""
 
 #: toplevel.cpp:467
 msgid ""
-"<b>Remove Current Layout</b><p>Delete current layout and make the previous "
-"active.</p>"
+"<b>Remove Current Layout</b>"
+"<p>Delete current layout and make the previous active.</p>"
 msgstr ""
 
 #: toplevel.cpp:471
@@ -485,8 +503,8 @@ msgstr "Ychw&anegu..."
 
 #: toplevel.cpp:511
 msgid ""
-"<b>Add Profile Data</b><p>This opens an additional profile data file in the "
-"current window.</p>"
+"<b>Add Profile Data</b>"
+"<p>This opens an additional profile data file in the current window.</p>"
 msgstr ""
 
 #: toplevel.cpp:523
@@ -499,8 +517,9 @@ msgstr ""
 
 #: toplevel.cpp:531
 msgid ""
-"<b>Export Call Graph</b><p>Generates a file with extension .dot for the "
-"tools of the GraphViz package.</p>"
+"<b>Export Call Graph</b>"
+"<p>Generates a file with extension .dot for the tools of the GraphViz "
+"package.</p>"
 msgstr ""
 
 #: toplevel.cpp:537
@@ -509,27 +528,30 @@ msgstr ""
 
 #: toplevel.cpp:546
 msgid ""
-"<b>Force Dump</b><p>This forces a dump for a Cachegrind profile run in the "
-"current directory. This action is checked while KCachegrind looks for the "
-"dump. If the dump is finished, it automatically reloads the current trace. "
-"If this is the one from the running Cachegrind, the new created trace part "
-"will be loaded, too.</p><p>Force dump creates a file 'cachegrind.cmd', and "
-"checks every second for its existence. A running Cachegrind will detect this "
-"file, dump a trace part, and delete 'cachegrind.cmd'. The deletion is "
-"detected by KCachegrind, and it does a Reload. If there's <em>no</em> "
-"Cachegrind running, press 'Force Dump' again to cancel the dump request. "
-"This deletes 'cachegrind.cmd' itself and stops polling for a new dump.</"
-"p><p>Note: A Cachegrind run <em>only</em> detects existence of 'cachegrind."
-"cmd' when actively running a few milliseconds, i.e. <em>not</em> sleeping. "
-"Tip: For a profiled GUI program, you can awake Cachegrind e.g. by resizing a "
-"window of the program.</p><p>Note: You need the call-tree version for "
-"Cachegrind!</p>"
+"<b>Force Dump</b>"
+"<p>"
+"This forces a dump for a Cachegrind profile run in the current directory. "
+"This action is checked while KCachegrind looks for the dump. If the dump is "
+"finished, it automatically reloads the current trace. If this is the one "
+"from the running Cachegrind, the new created trace part will be loaded, "
+"too.</p>"
+"<p>Force dump creates a file 'cachegrind.cmd', and checks every second for "
+"its existence. A running Cachegrind will detect this file, dump a trace "
+"part, and delete 'cachegrind.cmd'. The deletion is detected by KCachegrind, "
+"and it does a Reload. If there's <em>no</em> Cachegrind running, press "
+"'Force Dump' again to cancel the dump request. This deletes 'cachegrind.cmd' "
+"itself and stops polling for a new dump.</p>"
+"<p>Note: A Cachegrind run <em>only</em> detects existence of "
+"'cachegrind.cmd' when actively running a few milliseconds, i.e. <em>not</em>"
+" sleeping. Tip: For a profiled GUI program, you can awake Cachegrind e.g. by "
+"resizing a window of the program.</p>"
+"<p>Note: You need the call-tree version for Cachegrind!</p>"
 msgstr ""
 
 #: toplevel.cpp:572
 msgid ""
-"<b>Open Profile Data</b><p>This opens a profile data file, with possible "
-"multiple parts</p>"
+"<b>Open Profile Data</b>"
+"<p>This opens a profile data file, with possible multiple parts</p>"
 msgstr ""
 
 #: toplevel.cpp:588
@@ -544,7 +566,7 @@ msgstr ""
 msgid "Show/Hide the Call Stack Dockable"
 msgstr ""
 
-#: rc.cpp:236 toplevel.cpp:601
+#: rc.cpp:335 toplevel.cpp:601
 #, no-c-format
 msgid "Function Profile"
 msgstr ""
@@ -579,16 +601,29 @@ msgstr ""
 
 #: toplevel.cpp:645
 msgid ""
-"<b>Show percentage costs relative to parent</b><p>If this is switched off, "
-"percentage costs are always shown relative to the total cost of the profile "
-"part(s) that are currently browsed. By turning on this option, percentage "
-"cost of shown cost items will be relative to the parent cost item."
-"<ul><table><tr><td><b>Cost Type</td><td><b>Parent Cost</td></"
-"tr><tr><td>Function Cumulative</td><td>Total</td></tr><tr><td>Function Self</"
-"td><td>Function Group (*) / Total</td></tr><tr><td>Call</td><td>Function "
-"Cumulative</td></tr><tr><td>Source Line</td><td>Function Cumulative</td></"
-"tr></table><p>(*) Only if function grouping is switched on (e.g. ELF object "
-"grouping)."
+"<b>Show percentage costs relative to parent</b>"
+"<p>If this is switched off, percentage costs are always shown relative to "
+"the total cost of the profile part(s) that are currently browsed. By turning "
+"on this option, percentage cost of shown cost items will be relative to the "
+"parent cost item."
+"<ul>"
+"<table>"
+"<tr>"
+"<td><b>Cost Type</td>"
+"<td><b>Parent Cost</td></tr>"
+"<tr>"
+"<td>Function Cumulative</td>"
+"<td>Total</td></tr>"
+"<tr>"
+"<td>Function Self</td>"
+"<td>Function Group (*) / Total</td></tr>"
+"<tr>"
+"<td>Call</td>"
+"<td>Function Cumulative</td></tr>"
+"<tr>"
+"<td>Source Line</td>"
+"<td>Function Cumulative</td></tr></table>"
+"<p>(*) Only if function grouping is switched on (e.g. ELF object grouping)."
 msgstr ""
 
 #: toplevel.cpp:660
@@ -601,16 +636,18 @@ msgstr ""
 
 #: toplevel.cpp:669
 msgid ""
-"<b>Detect recursive cycles</b><p>If this is switched off, the treemap "
-"drawing will show black areas when a recursive call is made instead of "
-"drawing the recursion ad infinitum. Note that the size of black areas often "
-"will be wrong, as inside recursive cycles the cost of calls cannot be "
-"determined; the error is small, however, for false cycles (see "
-"documentation).<p>The correct handling for cycles is to detect them and "
-"collapse all functions of a cycle into a virtual function, which is done "
-"when this option is selected. Unfortunately, with GUI applications, this "
-"often will lead to huge false cycles, making the analysis impossible; "
-"therefore, there is the option to switch this off."
+"<b>Detect recursive cycles</b>"
+"<p>"
+"If this is switched off, the treemap drawing will show black areas when a "
+"recursive call is made instead of drawing the recursion ad infinitum. Note "
+"that the size of black areas often will be wrong, as inside recursive cycles "
+"the cost of calls cannot be determined; the error is small, however, for "
+"false cycles (see documentation)."
+"<p>The correct handling for cycles is to detect them and collapse all "
+"functions of a cycle into a virtual function, which is done when this option "
+"is selected. Unfortunately, with GUI applications, this often will lead to "
+"huge false cycles, making the analysis impossible; therefore, there is the "
+"option to switch this off."
 msgstr ""
 
 #: toplevel.cpp:691 toplevel.cpp:731
@@ -623,8 +660,10 @@ msgstr ""
 
 #: toplevel.cpp:703 toplevel.cpp:717
 msgid ""
-"<b>Go Up</b><p>Go to last selected caller of current function. If no caller "
-"was visited, use that with highest cost.</p>"
+"<b>Go Up</b>"
+"<p>"
+"Go to last selected caller of current function. If no caller was visited, "
+"use that with highest cost.</p>"
 msgstr ""
 
 #: toplevel.cpp:709
@@ -691,7 +730,7 @@ msgstr ""
 
 #: toplevel.cpp:831
 msgid "Tip of the &Day..."
-msgstr ""
+msgstr "Awgrymiad y &Dydd ..."
 
 #: toplevel.cpp:832
 msgid "Show \"Tip of the Day\""
@@ -776,7 +815,7 @@ msgstr ""
 msgid "(No Function Up)"
 msgstr ""
 
-#: instrview.cpp:125 rc.cpp:214 sourceview.cpp:49
+#: instrview.cpp:125 rc.cpp:302 sourceview.cpp:49
 #, no-c-format
 msgid "#"
 msgstr "#"
@@ -799,14 +838,17 @@ msgstr ""
 
 #: instrview.cpp:163
 msgid ""
-"<b>Annotated Assembler</b><p>The annotated assembler list shows the machine "
-"code instructions of the current selected function together with (self) cost "
-"spent while executing an instruction. If this is a call instruction, lines "
-"with details on the call happening are inserted into the source: These are "
-"(cumulative) cost spent inside of the call, number of calls happening, and "
-"call destination.</p><p>The disassembler output shown is generated with the "
-"'objdump' utility from the 'binutils' package.</p><p>Select a line with call "
-"information to make the destination function of this call current.</p>"
+"<b>Annotated Assembler</b>"
+"<p>The annotated assembler list shows the machine code instructions of the "
+"current selected function together with (self) cost spent while executing an "
+"instruction. If this is a call instruction, lines with details on the call "
+"happening are inserted into the source: These are (cumulative) cost spent "
+"inside of the call, number of calls happening, and call "
+"destination.</p>"
+"<p>The disassembler output shown is generated with the 'objdump' utility "
+"from the 'binutils' package.</p>"
+"<p>Select a line with call information to make the destination function of "
+"this call current.</p>"
 msgstr ""
 
 #: callgraphview.cpp:2247 callgraphview.cpp:2251 callgraphview.cpp:2269
@@ -907,21 +949,24 @@ msgstr ""
 
 #: callgraphview.cpp:1362
 msgid ""
-"<b>Call Graph around active Function</b><p>Depending on configuration, this "
-"view shows the call graph environment of the active function. Note: the "
-"shown cost is <b>only</b> the cost which is spent while the active function "
-"was actually running; i.e. the cost shown for main() - if it's visible - "
-"should be the same as the cost of the active function, as that's the part of "
-"inclusive cost of main() spent while the active function was running.</"
-"p><p>For cycles, blue call arrows indicate that this is an artificial call "
-"added for correct drawing which actually never happened.</p><p>If the graph "
-"is larger than the widget area, an overview panner is shown in one edge. "
-"There are similar visualization options to the Call Treemap; the selected "
-"function is highlighted.<p>"
+"<b>Call Graph around active Function</b>"
+"<p>"
+"Depending on configuration, this view shows the call graph environment of "
+"the active function. Note: the shown cost is <b>only</b> the cost which is "
+"spent while the active function was actually running; i.e. the cost shown "
+"for main() - if it's visible - should be the same as the cost of the active "
+"function, as that's the part of inclusive cost of main() spent while the "
+"active function was running.</p>"
+"<p>For cycles, blue call arrows indicate that this is an artificial call "
+"added for correct drawing which actually never happened.</p>"
+"<p>If the graph is larger than the widget area, an overview panner is shown "
+"in one edge. There are similar visualization options to the Call Treemap; "
+"the selected function is highlighted.<p>"
 msgstr ""
 
 #: callgraphview.cpp:1712
-msgid "No item activated for which to draw the call graph.\n"
+msgid ""
+"No item activated for which to draw the call graph.\n"
 msgstr ""
 
 #: callgraphview.cpp:2052
@@ -976,7 +1021,7 @@ msgstr ""
 #: callgraphview.cpp:2306 callgraphview.cpp:2329
 #, c-format
 msgid "< %1"
-msgstr ""
+msgstr "< %1"
 
 #: callgraphview.cpp:2335
 msgid "No Minimum"
@@ -1067,7 +1112,7 @@ msgstr ""
 
 #: callgraphview.cpp:2387
 msgid "Compact"
-msgstr ""
+msgstr "Cywasgu"
 
 #: callgraphview.cpp:2388
 msgid "Normal"
@@ -1087,7 +1132,7 @@ msgstr ""
 
 #: callgraphview.cpp:2396
 msgid "Circular"
-msgstr ""
+msgstr "Crwn"
 
 #: callgraphview.cpp:2402
 msgid "TopLeft"
@@ -1105,14 +1150,14 @@ msgstr ""
 msgid "BottomRight"
 msgstr ""
 
-#: callgraphview.cpp:2406 rc.cpp:20 rc.cpp:27 rc.cpp:30
+#: callgraphview.cpp:2406 rc.cpp:30 rc.cpp:40 rc.cpp:44
 #, no-c-format
 msgid "Automatic"
 msgstr "Awtomatig"
 
 #: callgraphview.cpp:2413
 msgid "Graph"
-msgstr ""
+msgstr "Graff"
 
 #: callgraphview.cpp:2415
 msgid "Birds-eye View"
@@ -1243,19 +1288,26 @@ msgstr "Tarddiad"
 
 #: tabview.cpp:539
 msgid ""
-"<b>Information Tabs</b><p>This widget shows information for the current "
-"selected function in different tabs: <ul><li>The Costs tab shows a list of "
-"available cost types and the cumulative and self costs regarding to types.</"
-"li><li>The Parts tab shows a list of trace parts if the trace consists of "
-"more than one part (otherwise, this tab is hided). The cost of the selected "
+"<b>Information Tabs</b>"
+"<p>This widget shows information for the current selected function in "
+"different tabs: "
+"<ul>"
+"<li>The Costs tab shows a list of available cost types and the cumulative "
+"and self costs regarding to types.</li>"
+"<li>The Parts tab shows a list of trace parts if the trace consists of more "
+"than one part (otherwise, this tab is hided). The cost of the selected "
 "function spent in the different parts together with the calls happening is "
-"shown.</li><li>The Call Lists tab shows direct callers and callees of the "
-"function in more detail.</li><li>The Coverage tab shows the same is the Call "
-"Lists tab, but not only direct callers and callees but also indirect ones.</"
-"li><li>The Call Graph tab shows a graphical visualization of the calls done "
-"by this function.</li><li>The Source tab presents annotated source code if "
-"debugging information and the source file is available.</li><li>The "
-"Assembler tab presents annotated assembler code if trace information on "
+"shown.</li>"
+"<li>The Call Lists tab shows direct callers and callees of the function in "
+"more detail.</li>"
+"<li>The Coverage tab shows the same is the Call Lists tab, but not only "
+"direct callers and callees but also indirect ones.</li>"
+"<li>The Call Graph tab shows a graphical visualization of the calls done by "
+"this function.</li>"
+"<li>The Source tab presents annotated source code if debugging information "
+"and the source file is available.</li>"
+"<li>"
+"The Assembler tab presents annotated assembler code if trace information on "
 "instruction level is available.</li></ul>For more information, see the "
 "<em>What's this</em> help of the corresponding tab widget</p>"
 msgstr ""
@@ -1274,19 +1326,21 @@ msgstr ""
 
 #: sourceview.cpp:88
 msgid ""
-"<b>Annotated Source</b><p>The annotated source list shows the source lines "
-"of the current selected function together with (self) cost spent while "
-"executing the code of this source line. If there was a call in a source "
-"line, lines with details on the call happening are inserted into the source: "
-"These are (cumulative) cost spent inside of the call, number of calls "
-"happening, and call destination.</p><p>Select a inserted call information "
-"line to make the destination function current.</p>"
+"<b>Annotated Source</b>"
+"<p>The annotated source list shows the source lines of the current selected "
+"function together with (self) cost spent while executing the code of this "
+"source line. If there was a call in a source line, lines with details on the "
+"call happening are inserted into the source: These are (cumulative) cost "
+"spent inside of the call, number of calls happening, and call "
+"destination.</p>"
+"<p>Select a inserted call information line to make the destination function "
+"current.</p>"
 msgstr ""
 
 #: sourceview.cpp:119
 #, c-format
 msgid "Go to Line %1"
-msgstr ""
+msgstr "Mynd i Linell %1"
 
 #: sourceview.cpp:292
 msgid "(No Source)"
@@ -1373,7 +1427,7 @@ msgstr ""
 msgid "Distance"
 msgstr ""
 
-#: coverageview.cpp:49 partview.cpp:49 rc.cpp:218 rc.cpp:246
+#: coverageview.cpp:49 partview.cpp:49 rc.cpp:308 rc.cpp:350
 #, no-c-format
 msgid "Called"
 msgstr ""
@@ -1392,40 +1446,46 @@ msgstr ""
 
 #: coverageview.cpp:90
 msgid ""
-"<b>List of all Callers</b><p>This list shows all functions calling the "
-"current selected one, either directly or with several function inbetween on "
-"the stack; the number of function inbetween incremented by 1 is called the "
-"<em>Distance</em> (e.g. for function A,B,C there exists a call from A to C "
-"when A calls B and B calls C, i.e. A => B => C. The distance here is 2).</"
-"p><p>Absolute cost shown is the cost spent in the selected function while a "
+"<b>List of all Callers</b>"
+"<p>This list shows all functions calling the current selected one, either "
+"directly or with several function inbetween on the stack; the number of "
+"function inbetween incremented by 1 is called the <em>Distance</em> (e.g. "
+"for function A,B,C there exists a call from A to C when A calls B and B "
+"calls C, i.e. A => B => C. The distance here is 2).</p>"
+"<p>Absolute cost shown is the cost spent in the selected function while a "
 "listed function is active; relative cost is the percentage of all cost spent "
 "in the selected function while the listed one is active. The cost graphic "
-"shows logarithmic percentage with a different color for each distance.</"
-"p><p>As there can be many calls from the same function, the distance column "
+"shows logarithmic percentage with a different color for each "
+"distance.</p>"
+"<p>As there can be many calls from the same function, the distance column "
 "sometimes shows the range of distances for all calls happening; then, in "
 "parenthesis there is the medium distance, i.e. the distance where most of "
-"the call costs happened.</p><p>Selecting a function makes it the current "
-"selected one of this information panel. If there are two panels (Splitted "
-"mode), the function of the other panel is changed instead.</p>"
+"the call costs happened.</p>"
+"<p>Selecting a function makes it the current selected one of this "
+"information panel. If there are two panels (Splitted mode), the function of "
+"the other panel is changed instead.</p>"
 msgstr ""
 
 #: coverageview.cpp:120
 msgid ""
-"<b>List of all Callees</b><p>This list shows all functions called by the "
-"current selected one, either directly or with several function inbetween on "
-"the stack; the number of function inbetween incremented by 1 is called the "
-"<em>Distance</em> (e.g. for function A,B,C there exists a call from A to C "
-"when A calls B and B calls C, i.e. A => B => C. The distance here is 2).</"
-"p><p>Absolute cost shown is the cost spent in the listed function while the "
+"<b>List of all Callees</b>"
+"<p>This list shows all functions called by the current selected one, either "
+"directly or with several function inbetween on the stack; the number of "
+"function inbetween incremented by 1 is called the <em>Distance</em> (e.g. "
+"for function A,B,C there exists a call from A to C when A calls B and B "
+"calls C, i.e. A => B => C. The distance here is 2).</p>"
+"<p>Absolute cost shown is the cost spent in the listed function while the "
 "selected is active; relative cost is the percentage of all cost spent in the "
 "listed function while the selected one is active. The cost graphic always "
-"shows logarithmic percentage with a different color for each distance.</"
-"p><p>As there can be many calls to the same function, the distance column "
+"shows logarithmic percentage with a different color for each "
+"distance.</p>"
+"<p>As there can be many calls to the same function, the distance column "
 "sometimes shows the range of distances for all calls happening; then, in "
 "parenthesis there is the medium distance, i.e. the distance where most of "
-"the call costs happened.</p><p>Selecting a function makes it the current "
-"selected one of this information panel. If there are two panels (Splitted "
-"mode), the function of the other panel is changed instead.</p>"
+"the call costs happened.</p>"
+"<p>Selecting a function makes it the current selected one of this "
+"information panel. If there are two panels (Splitted mode), the function of "
+"the other panel is changed instead.</p>"
 msgstr ""
 
 #: configuration.cpp:63
@@ -1488,397 +1548,397 @@ msgstr ""
 msgid "Cycle Estimation"
 msgstr ""
 
-#: rc.cpp:6
+#: rc.cpp:9
 #, no-c-format
 msgid "&Layout"
 msgstr "&Cynllun"
 
-#: rc.cpp:8
+#: rc.cpp:12
 #, no-c-format
 msgid "Sidebars"
 msgstr ""
 
-#: rc.cpp:12
+#: rc.cpp:18
 #, no-c-format
 msgid "Query Toolbar"
 msgstr "Bar Offer Ymholiadau"
 
-#: rc.cpp:14
+#: rc.cpp:21
 #, no-c-format
 msgid "State Toolbar"
 msgstr ""
 
-#: rc.cpp:18
+#: rc.cpp:27
 #, no-c-format
 msgid "Graph Color Preferences"
 msgstr ""
 
-#: rc.cpp:22
+#: rc.cpp:33
 #, no-c-format
 msgid "Object:"
-msgstr ""
+msgstr "Gwrthrych :"
 
-#: rc.cpp:24
+#: rc.cpp:36
 #, no-c-format
 msgid "Class:"
 msgstr "Dosbarth:"
 
-#: rc.cpp:32
+#: rc.cpp:47
 #, no-c-format
 msgid "File:"
 msgstr "Ffeil:"
 
-#: rc.cpp:35
+#: rc.cpp:51
 #, no-c-format
 msgid "Source Folders"
 msgstr ""
 
-#: rc.cpp:37
+#: rc.cpp:54
 #, no-c-format
 msgid "Object / Related Source Base"
 msgstr ""
 
-#: rc.cpp:39
+#: rc.cpp:57
 #, no-c-format
 msgid "Add..."
 msgstr "Ychwanegu..."
 
-#: rc.cpp:43
+#: rc.cpp:63
 #, no-c-format
 msgid "General"
 msgstr "Cyffredinol"
 
-#: rc.cpp:45
+#: rc.cpp:66
 #, no-c-format
 msgid "Truncated when more/longer than:"
 msgstr ""
 
-#: rc.cpp:47
+#: rc.cpp:69
 #, no-c-format
 msgid "Context lines in annotations:"
 msgstr ""
 
-#: rc.cpp:49
+#: rc.cpp:72
 #, no-c-format
 msgid "Maximum number of items in lists:"
 msgstr ""
 
-#: rc.cpp:51
+#: rc.cpp:75
 #, no-c-format
 msgid "Symbols in tooltips and context menus"
 msgstr ""
 
-#: rc.cpp:53
+#: rc.cpp:78
 #, no-c-format
 msgid "Precision of percentage values:"
 msgstr ""
 
-#: rc.cpp:61
+#: rc.cpp:90
 #, no-c-format
 msgid "Target"
 msgstr ""
 
-#: rc.cpp:64
+#: rc.cpp:94
 #, no-c-format
 msgid "Time"
 msgstr "Amser"
 
-#: rc.cpp:66
+#: rc.cpp:97
 #, no-c-format
 msgid "Path"
 msgstr "Llwybr"
 
-#: rc.cpp:70
+#: rc.cpp:103
 #, no-c-format
 msgid "Target command:"
 msgstr ""
 
-#: rc.cpp:72
+#: rc.cpp:106
 #, no-c-format
 msgid "Profiler options:"
 msgstr ""
 
-#: rc.cpp:74
+#: rc.cpp:109
 #, no-c-format
 msgid "Option"
 msgstr "Dewisiad"
 
-#: rc.cpp:76 rc.cpp:172
+#: rc.cpp:112 rc.cpp:245
 #, no-c-format
 msgid "Value"
 msgstr "Gwerth"
 
-#: rc.cpp:78
+#: rc.cpp:115
 #, no-c-format
 msgid "Trace"
 msgstr ""
 
-#: rc.cpp:81 rc.cpp:189
+#: rc.cpp:119 rc.cpp:268
 #, no-c-format
 msgid "Jumps"
 msgstr ""
 
-#: rc.cpp:84
+#: rc.cpp:123
 #, no-c-format
 msgid "Instructions"
 msgstr "Cyfarwyddiadau"
 
-#: rc.cpp:87 rc.cpp:192
+#: rc.cpp:127 rc.cpp:272
 #, no-c-format
 msgid "Events"
 msgstr "Digwyddiadau"
 
-#: rc.cpp:90
+#: rc.cpp:131
 #, no-c-format
 msgid "Full Cache"
 msgstr ""
 
-#: rc.cpp:93
+#: rc.cpp:135
 #, no-c-format
 msgid "Custom"
 msgstr "Addasiedig"
 
-#: rc.cpp:96
+#: rc.cpp:139
 #, no-c-format
 msgid "Collect"
 msgstr "Casglu"
 
-#: rc.cpp:99
+#: rc.cpp:143
 #, no-c-format
 msgid "At Startup"
 msgstr ""
 
-#: rc.cpp:102
+#: rc.cpp:147
 #, no-c-format
 msgid "While In"
 msgstr ""
 
-#: rc.cpp:105
+#: rc.cpp:151
 #, no-c-format
 msgid "Skip"
 msgstr "Hepgor"
 
-#: rc.cpp:108
+#: rc.cpp:155
 #, no-c-format
 msgid "PLT"
 msgstr ""
 
-#: rc.cpp:114
+#: rc.cpp:163
 #, no-c-format
 msgid "Dump Profile"
 msgstr ""
 
-#: rc.cpp:117
+#: rc.cpp:167
 #, no-c-format
 msgid "Every BBs"
 msgstr ""
 
-#: rc.cpp:120 rc.cpp:129
+#: rc.cpp:171 rc.cpp:183
 #, no-c-format
 msgid "On Entering"
 msgstr ""
 
-#: rc.cpp:123
+#: rc.cpp:175
 #, no-c-format
 msgid "On Leaving"
 msgstr ""
 
-#: rc.cpp:126
+#: rc.cpp:179
 #, no-c-format
 msgid "Zero Events"
 msgstr ""
 
-#: rc.cpp:132
+#: rc.cpp:187
 #, no-c-format
 msgid "Separate"
 msgstr ""
 
-#: rc.cpp:135
+#: rc.cpp:191
 #, no-c-format
 msgid "Threads"
 msgstr ""
 
-#: rc.cpp:138
+#: rc.cpp:195
 #, no-c-format
 msgid "Recursions"
 msgstr ""
 
-#: rc.cpp:141
+#: rc.cpp:199
 #, no-c-format
 msgid "Call Chain"
 msgstr ""
 
-#: rc.cpp:144
+#: rc.cpp:203
 #, no-c-format
 msgid "Custom profiler options:"
 msgstr ""
 
-#: rc.cpp:146
+#: rc.cpp:206
 #, no-c-format
 msgid "Run New Profile"
 msgstr ""
 
-#: rc.cpp:148
+#: rc.cpp:209
 #, no-c-format
 msgid "Info"
 msgstr "Gwybo"
 
-#: rc.cpp:150
+#: rc.cpp:212
 #, no-c-format
 msgid "Dump reason:"
 msgstr ""
 
-#: rc.cpp:152
+#: rc.cpp:215
 #, no-c-format
 msgid "Event summary:"
 msgstr ""
 
-#: rc.cpp:156
+#: rc.cpp:221
 #, no-c-format
 msgid "Sum"
 msgstr "Swm"
 
-#: rc.cpp:158
+#: rc.cpp:224
 #, no-c-format
 msgid "Miscellaneous:"
-msgstr ""
+msgstr "Amrywiol :"
 
-#: rc.cpp:160
+#: rc.cpp:227
 #, no-c-format
 msgid "Show"
 msgstr "Dangos"
 
-#: rc.cpp:162
+#: rc.cpp:230
 #, no-c-format
 msgid "Compare"
 msgstr ""
 
-#: rc.cpp:164
+#: rc.cpp:233
 #, no-c-format
 msgid "State"
 msgstr "Cyflwr"
 
-#: rc.cpp:166
+#: rc.cpp:236
 #, no-c-format
 msgid "Update"
 msgstr "Diweddaru"
 
-#: rc.cpp:168
+#: rc.cpp:239
 #, no-c-format
 msgid "Every [s]:"
 msgstr ""
 
-#: rc.cpp:170
+#: rc.cpp:242
 #, no-c-format
 msgid "Counter"
 msgstr ""
 
-#: rc.cpp:174
+#: rc.cpp:248
 #, no-c-format
 msgid "Dumps Done"
 msgstr ""
 
-#: rc.cpp:177
+#: rc.cpp:252
 #, no-c-format
 msgid "Is Collecting"
 msgstr ""
 
-#: rc.cpp:180
+#: rc.cpp:256
 #, no-c-format
 msgid "Executed"
 msgstr ""
 
-#: rc.cpp:183
+#: rc.cpp:260
 #, no-c-format
 msgid "Basic Blocks"
 msgstr ""
 
-#: callmapview.cpp:63 rc.cpp:186 rc.cpp:262
+#: callmapview.cpp:63 rc.cpp:264 rc.cpp:374
 #, no-c-format
 msgid "Calls"
 msgstr ""
 
-#: rc.cpp:195
+#: rc.cpp:276
 #, no-c-format
 msgid "Ir"
 msgstr ""
 
-#: rc.cpp:198
+#: rc.cpp:280
 #, no-c-format
 msgid "Distinct"
 msgstr "Gwahanadwy"
 
-#: configdlg.cpp:58 rc.cpp:201
+#: configdlg.cpp:58 rc.cpp:284
 #, no-c-format
 msgid "ELF Objects"
 msgstr ""
 
-#: rc.cpp:204
+#: rc.cpp:288
 #, no-c-format
 msgid "Functions"
 msgstr "Ffwythiannau"
 
-#: rc.cpp:207
+#: rc.cpp:292
 #, no-c-format
 msgid "Contexts"
 msgstr ""
 
-#: rc.cpp:210
+#: rc.cpp:296
 #, no-c-format
 msgid "Stack trace:"
 msgstr ""
 
-#: rc.cpp:212
+#: rc.cpp:299
 #, no-c-format
 msgid "Sync."
-msgstr ""
+msgstr "Cydweddu."
 
-#: callmapview.cpp:61 rc.cpp:222 rc.cpp:250
+#: callmapview.cpp:61 rc.cpp:314 rc.cpp:356
 #, no-c-format
 msgid "Location"
 msgstr "Lleoliad"
 
-#: rc.cpp:224
+#: rc.cpp:317
 #, no-c-format
 msgid "Start"
 msgstr "Dechrau"
 
-#: rc.cpp:226
+#: rc.cpp:320
 #, no-c-format
 msgid "Zero"
 msgstr ""
 
-#: rc.cpp:228
+#: rc.cpp:323
 #, no-c-format
 msgid "Dump"
 msgstr ""
 
-#: rc.cpp:230
+#: rc.cpp:326
 #, no-c-format
 msgid "Messages"
-msgstr ""
+msgstr "Negeseuon"
 
-#: rc.cpp:232
+#: rc.cpp:329
 #, no-c-format
 msgid "Kill Run"
 msgstr ""
 
-#: rc.cpp:240
+#: rc.cpp:341
 #, no-c-format
 msgid "Group"
 msgstr "Gr?p"
 
-#: rc.cpp:254
+#: rc.cpp:362
 #, no-c-format
 msgid "(no trace parts)"
 msgstr ""
 
-#: rc.cpp:256
+#: rc.cpp:365
 #, no-c-format
 msgid "Stack Selection"
 msgstr ""
 
-#: rc.cpp:260
+#: rc.cpp:371
 #, no-c-format
 msgid "Cost2"
 msgstr ""
@@ -2013,18 +2073,20 @@ msgstr "Cynyddu fesul un (hyd at %1)"
 
 #: callmapview.cpp:98
 msgid ""
-"<b>Caller Map</b><p>This graph shows the nested hierarchy of all callers of "
-"the current activated function. Each colored rectangle represents a "
-"function; its size tries to be proportional to the cost spent therein while "
-"the active function is running (however, there are drawing constrains).</p>"
+"<b>Caller Map</b>"
+"<p>This graph shows the nested hierarchy of all callers of the current "
+"activated function. Each colored rectangle represents a function; its size "
+"tries to be proportional to the cost spent therein while the active function "
+"is running (however, there are drawing constrains).</p>"
 msgstr ""
 
 #: callmapview.cpp:105
 msgid ""
-"<b>Call Map</b><p>This graph shows the nested hierarchy of all callees of "
-"the current activated function. Each colored rectangle represents a "
-"function; its size tries to be proportional to the cost spent therein while "
-"the active function is running (however, there are drawing constrains).</p>"
+"<b>Call Map</b>"
+"<p>This graph shows the nested hierarchy of all callees of the current "
+"activated function. Each colored rectangle represents a function; its size "
+"tries to be proportional to the cost spent therein while the active function "
+"is running (however, there are drawing constrains).</p>"
 msgstr ""
 
 #: callmapview.cpp:113
@@ -2035,11 +2097,12 @@ msgid ""
 "nesting level before. 'Best' determinates the split direction for children "
 "from the aspect ratio of the parent. 'Always Best' decides on remaining "
 "space for each sibling. 'Ignore Proportions' takes space for function name "
-"drawing <em>before</em> drawing children. Note that size proportions can get "
-"<em>heavily</em> wrong.</p><p>This is a <em>TreeMap</em> widget. Keyboard "
-"navigation is available with the left/right arrow keys for traversing "
-"siblings, and up/down arrow keys to go a nesting level up/down. <em>Return</"
-"em> activates the current item.</p>"
+"drawing <em>before</em>"
+" drawing children. Note that size proportions can get <em>heavily</em> "
+"wrong.</p>"
+"<p>This is a <em>TreeMap</em> widget. Keyboard navigation is available with "
+"the left/right arrow keys for traversing siblings, and up/down arrow keys to "
+"go a nesting level up/down. <em>Return</em> activates the current item.</p>"
 msgstr ""
 
 #: callmapview.cpp:167
@@ -2169,7 +2232,7 @@ msgstr ""
 #: cachegrindloader.cpp:699
 #, c-format
 msgid "Loading %1"
-msgstr ""
+msgstr "llwytho %1"
 
 #: callview.cpp:47 callview.cpp:51
 msgid "Count"
@@ -2177,24 +2240,28 @@ msgstr "Cyfrif"
 
 #: callview.cpp:85
 msgid ""
-"<b>List of direct Callers</b><p>This list shows all functions calling the "
-"current selected one directly, together with a call count and the "
-"(cumulative) cost spent in the current selected function while being called "
-"from the function from the list.</p><p>An icon instead of a cumulative cost "
-"specifies that this is a call inside of a recursive cycle. A cumulative cost "
-"makes no sense here.</p><p>Selecting a function makes it the current "
-"selected one of this information panel. If there are two panels (Splitted "
-"mode), the function of the other panel is changed instead.</p>"
+"<b>List of direct Callers</b>"
+"<p>This list shows all functions calling the current selected one directly, "
+"together with a call count and the (cumulative) cost spent in the current "
+"selected function while being called from the function from the "
+"list.</p>"
+"<p>"
+"An icon instead of a cumulative cost specifies that this is a call inside of "
+"a recursive cycle. A cumulative cost makes no sense here.</p>"
+"<p>Selecting a function makes it the current selected one of this "
+"information panel. If there are two panels (Splitted mode), the function of "
+"the other panel is changed instead.</p>"
 msgstr ""
 
 #: callview.cpp:99
 msgid ""
-"<b>List of direct Callees</b><p>This list shows all functions called by the "
-"current selected one directly, together with a call count and the "
-"(cumulative) cost spent in this function while being called from the "
-"selected function.</p><p>Selecting a function makes it the current selected "
-"one of this information panel. If there are two panels (Splitted mode), the "
-"function of the other panel is changed instead.</p>"
+"<b>List of direct Callees</b>"
+"<p>This list shows all functions called by the current selected one "
+"directly, together with a call count and the (cumulative) cost spent in this "
+"function while being called from the selected function.</p>"
+"<p>Selecting a function makes it the current selected one of this "
+"information panel. If there are two panels (Splitted mode), the function of "
+"the other panel is changed instead.</p>"
 msgstr ""
 
 #: costtypeitem.cpp:56
@@ -2371,19 +2438,23 @@ msgstr "Sylwad"
 
 #: partview.cpp:73
 msgid ""
-"<b>Trace Part List</b><p>This list shows all trace parts of the loaded "
-"trace. For each part, the self/cumulative cost of the current selected "
-"function, spent in the part, is shown; percentage costs are always relative "
-"to the total cost <em>of the part</em> (not to the whole trace as in the "
-"Trace Part Overview). Also shown are the calls happening to/from the current "
-"function inside of the trace part.</p><p>By choosing one or more trace parts "
-"from the list, the costs shown all over KCachegrind will only be the ones "
-"spent in the selected part(s). If no list selection is shown, in fact all "
-"trace parts are selected implicitly.</p><p>This is a multi-selection list. "
-"You can select ranges by dragging the mouse or use SHIFT/CTRL modifiers. "
-"Selection/Deselection of trace parts can also be done by using the Trace "
-"Part Overview Dockable. This one also supports multiple selection.</"
-"p><p>Note that the list is hidden if only one trace part is loaded.</p>"
+"<b>Trace Part List</b>"
+"<p>This list shows all trace parts of the loaded trace. For each part, the "
+"self/cumulative cost of the current selected function, spent in the part, is "
+"shown; percentage costs are always relative to the total cost <em>of the "
+"part</em>"
+" (not to the whole trace as in the Trace Part Overview). Also shown are the "
+"calls happening to/from the current function inside of the trace "
+"part.</p>"
+"<p>By choosing one or more trace parts from the list, the costs shown all "
+"over KCachegrind will only be the ones spent in the selected part(s). If no "
+"list selection is shown, in fact all trace parts are selected "
+"implicitly.</p>"
+"<p>This is a multi-selection list. You can select ranges by dragging the "
+"mouse or use SHIFT/CTRL modifiers. Selection/Deselection of trace parts can "
+"also be done by using the Trace Part Overview Dockable. This one also "
+"supports multiple selection.</p>"
+"<p>Note that the list is hidden if only one trace part is loaded.</p>"
 msgstr ""
 
 #: partview.cpp:106

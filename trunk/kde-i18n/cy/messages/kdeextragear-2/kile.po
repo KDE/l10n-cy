@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-2/kile.po\n"
-"POT-Creation-Date: 2004-09-27 01:49+0200\n"
+"POT-Creation-Date: 2004-10-05 01:30+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -93,8 +93,9 @@ msgstr ""
 
 #: kiledocumentinfo.cpp:63
 msgid ""
-"The filename contains invalid characters ($~ #).<br>Please provide \t\t\t"
-"\tanother one, or click on \"Cancel\" to save anyway."
+"The filename contains invalid characters ($~ #)."
+"<br>Please provide \t\t\t\tanother one, or click on \"Cancel\" to save "
+"anyway."
 msgstr ""
 
 #: kiledocumentinfo.cpp:76
@@ -103,8 +104,8 @@ msgstr ""
 
 #: kiledocumentinfo.cpp:77
 msgid ""
-"A file with filename %1 already exists.<br>Please provide \t\t\t\tanother "
-"one, or click on \"Cancel\" to overwrite."
+"A file with filename %1 already exists."
+"<br>Please provide \t\t\t\tanother one, or click on \"Cancel\" to overwrite."
 msgstr ""
 
 #: kiledocumentinfo.cpp:98
@@ -145,12 +146,14 @@ msgstr ""
 msgid "WARNING: These are the statistics for the selected text only."
 msgstr ""
 
-#: kileconfigdialog.cpp:73 rc.cpp:96
+#. i18n: file generalconfigwidget.ui line 30
+#: kileconfigdialog.cpp:73 rc.cpp:144
 #, no-c-format
 msgid "General"
 msgstr "Cyffredinol"
 
-#: kile.cpp:436 kileconfigdialog.cpp:86 rc.cpp:78
+#. i18n: file kileui.rc line 368
+#: kile.cpp:438 kileconfigdialog.cpp:86 rc.cpp:117
 #, no-c-format
 msgid "Build"
 msgstr ""
@@ -159,12 +162,14 @@ msgstr ""
 msgid "Spelling"
 msgstr "Sillafu"
 
-#: kile.cpp:456 kileconfigdialog.cpp:123 rc.cpp:140
+#. i18n: file latexconfigwidget.ui line 16
+#: kile.cpp:458 kileconfigdialog.cpp:123 rc.cpp:210
 #, no-c-format
 msgid "LaTeX"
 msgstr ""
 
-#: kileconfigdialog.cpp:138 rc.cpp:10
+#. i18n: file kileui.rc line 53
+#: kileconfigdialog.cpp:138 rc.cpp:15
 #, no-c-format
 msgid "Complete"
 msgstr "Cyflawn"
@@ -175,7 +180,7 @@ msgstr ""
 
 #: includegraphicsdialog.cpp:128 kileactions.cpp:300
 msgid "Label:"
-msgstr ""
+msgstr "Label:"
 
 #: includegraphicsdialog.cpp:129 kileactions.cpp:307
 msgid "Caption:"
@@ -194,20 +199,20 @@ msgstr "Dileu Ffeiliau"
 msgid "Do you really want to delete these files?"
 msgstr ""
 
-#: kiletoolmanager.cpp:143
+#: kiletoolmanager.cpp:144
 msgid "No factory installed, contact the author of Kile."
 msgstr ""
 
-#: kiletool.cpp:602 kiletoolmanager.cpp:150
+#: kiletool.cpp:605 kiletoolmanager.cpp:151
 #, c-format
 msgid "Unknown tool %1."
 msgstr ""
 
-#: kiletoolmanager.cpp:285
+#: kiletoolmanager.cpp:286
 msgid "Aborted"
 msgstr "Terfynwyd"
 
-#: kiletoolmanager.cpp:369
+#: kiletoolmanager.cpp:370
 msgid "Cannot find the tool %1 in the configuration database."
 msgstr ""
 
@@ -263,8 +268,8 @@ msgstr ""
 
 #: configtester.cpp:129
 msgid ""
-"Supported, use the 'Modern' configuration for (La)TeX and PDF(La)TeX to auto-"
-"enable inverse and forward search capabilities."
+"Supported, use the 'Modern' configuration for (La)TeX and PDF(La)TeX to "
+"auto-enable inverse and forward search capabilities."
 msgstr ""
 
 #: configtester.cpp:130
@@ -291,11 +296,11 @@ msgstr ""
 
 #: arraydialog.cpp:49
 msgid "Number of &rows:"
-msgstr ""
+msgstr "Nifer rhes&i:"
 
 #: arraydialog.cpp:60
 msgid "Number of co&lumns:"
-msgstr ""
+msgstr "Nifer colofn&au:"
 
 #: arraydialog.cpp:71
 msgid "Columns &alignment:"
@@ -405,24 +410,35 @@ msgstr " &Chwilio"
 
 #: kilegrepdialog.cpp:148
 msgid "&Clear"
-msgstr ""
+msgstr "&Clirio"
 
 #: kilegrepdialog.cpp:164
 msgid ""
-"Enter the regular expression you want to search for here.<br>Possible meta "
-"characters are:<br><b>.</b> - Matches any character<br><b>^</b> - Matches "
-"the beginning of a line<br><b>$</b> - Matches the end of a line<br><b>\\\\"
-"\\&lt;</b> - Matches the beginning of a word<br><b>\\\\\\&gt;</b> - Matches "
-"the end of a word<br><br>The following repetition operators exist:<br><b>?</"
-"b> - The preceding item is matched at most once<br><b>*</b> - The preceding "
-"item is matched zero or more times<br><b>+</b> - The preceding item is "
-"matched one or more times<br><b>{<i>n</i>}</b> - The preceding item is "
-"matched exactly <i>n</i> times<br><b>{<i>n</i>,}</b> - The preceding item is "
-"matched <i>n</i> or more times<br><b>{,<i>n</i>}</b> - The preceding item is "
-"matched at most <i>n</i> times<br><b>{<i>n</i>,<i>m</i>}</b> - The preceding "
-"item is matched at least <i>n</i>,<br>but at most <i>m</i> times."
-"<br><br>Furthermore, backreferences to bracketed subexpressions "
-"are<br>available via the notation \\\\<i>n</i>."
+"Enter the regular expression you want to search for here."
+"<br>Possible meta characters are:"
+"<br><b>.</b> - Matches any character"
+"<br><b>^</b> - Matches the beginning of a line"
+"<br><b>$</b> - Matches the end of a line"
+"<br><b>\\\\\\&lt;</b> - Matches the beginning of a word"
+"<br><b>\\\\\\&gt;</b> - Matches the end of a word"
+"<br>"
+"<br>The following repetition operators exist:"
+"<br><b>?</b> - The preceding item is matched at most once"
+"<br><b>*</b> - The preceding item is matched zero or more times"
+"<br><b>+</b> - The preceding item is matched one or more "
+"times"
+"<br><b>{<i>n</i>}</b> - The preceding item is matched exactly <i>n</i> "
+"times"
+"<br><b>{<i>n</i>,}</b> - The preceding item is matched <i>n</i> or more "
+"times"
+"<br><b>{,<i>n</i>}</b> - The preceding item is matched at most <i>n</i> "
+"times"
+"<br><b>{<i>n</i>,<i>m</i>}</b> - The preceding item is matched at least "
+"<i>n</i>,"
+"<br>but at most <i>m</i> times."
+"<br>"
+"<br>Furthermore, backreferences to bracketed subexpressions are"
+"<br>available via the notation \\\\<i>n</i>."
 msgstr ""
 
 #: kilegrepdialog.cpp:186
@@ -446,8 +462,7 @@ msgstr ""
 
 #: kilegrepdialog.cpp:194
 msgid "Enter the directory which contains the files you want to search in."
-msgstr ""
-"Rhowch y cyfeiriadur sy'n cynnwys y ffeiliau yr ydych am chwilio ynddynt."
+msgstr "Rhowch y cyfeiriadur sy'n cynnwys y ffeiliau yr ydych am chwilio ynddynt."
 
 #: kilegrepdialog.cpp:196
 msgid "Check this box to search in all subdirectories."
@@ -499,456 +514,464 @@ msgid ""
 "defined, is moved to the LaTeX menu."
 msgstr ""
 
-#: kile.cpp:204
+#: kile.cpp:206
 msgid "Line: 1 Col: 1"
 msgstr ""
 
-#: kile.cpp:206 kile.cpp:701
+#: kile.cpp:208 kile.cpp:703
 msgid "Normal mode"
 msgstr ""
 
-#: kile.cpp:215
+#: kile.cpp:217
 msgid "Open File"
 msgstr "Agor Ffeil"
 
-#: kile.cpp:233
+#: kile.cpp:235
 msgid "Files && Projects"
 msgstr ""
 
-#: kile.cpp:252 kilestructurewidget.cpp:59
+#: kile.cpp:254 kilestructurewidget.cpp:59
 msgid "Structure"
 msgstr ""
 
-#: kile.cpp:258
+#: kile.cpp:260
 msgid "Click to jump to the line"
 msgstr ""
 
-#: kile.cpp:263
+#: kile.cpp:265
 msgid "Relation Symbols"
 msgstr ""
 
-#: kile.cpp:264
+#: kile.cpp:266
 msgid "Arrow Symbols"
 msgstr ""
 
-#: kile.cpp:265
+#: kile.cpp:267
 msgid "Miscellaneous Symbols"
 msgstr ""
 
-#: kile.cpp:266
+#: kile.cpp:268
 msgid "Delimiters"
 msgstr ""
 
-#: kile.cpp:267
+#: kile.cpp:269
 msgid "Greek Letters"
 msgstr ""
 
-#: kile.cpp:268
+#: kile.cpp:270
 msgid "Special Characters"
 msgstr ""
 
-#: kile.cpp:272
+#: kile.cpp:274
 msgid "MetaPost Commands"
 msgstr ""
 
-#: kile.cpp:289
+#: kile.cpp:291
 msgid " Log && Messages "
 msgstr ""
 
-#: kile.cpp:295
+#: kile.cpp:297
 msgid " Output "
 msgstr ""
 
-#: kile.cpp:302
+#: kile.cpp:304
 msgid " Konsole "
 msgstr ""
 
-#: kile.cpp:318
+#: kile.cpp:320
 msgid "Save All"
 msgstr ""
 
-#: kile.cpp:319
+#: kile.cpp:321
 msgid "Create Template From Document..."
-msgstr ""
+msgstr "Creu Patrymlun O Ddogfen....."
 
-#: kile.cpp:320
+#: kile.cpp:322
 msgid "&Remove Template..."
 msgstr ""
 
-#: kile.cpp:322
-msgid "Close All"
-msgstr ""
-
-#: kile.cpp:323
-msgid "S&tatistics"
-msgstr ""
-
 #: kile.cpp:324
+msgid "Close All"
+msgstr "Cau Popeth"
+
+#: kile.cpp:325
+msgid "S&tatistics"
+msgstr "Y&stadegau"
+
+#: kile.cpp:326
 msgid "&ASCII"
 msgstr ""
 
-#: kile.cpp:325
+#: kile.cpp:327
 msgid "Latin-&1 (iso 8859-1)"
 msgstr ""
 
-#: kile.cpp:326
+#: kile.cpp:328
 msgid "Latin-&2 (iso 8859-2)"
 msgstr ""
 
-#: kile.cpp:327
+#: kile.cpp:329
 msgid "Latin-&3 (iso 8859-3)"
 msgstr ""
 
-#: kile.cpp:328
+#: kile.cpp:330
 msgid "Latin-&4 (iso 8859-4)"
 msgstr ""
 
-#: kile.cpp:329
+#: kile.cpp:331
 msgid "Latin-&5 (iso 8859-5)"
 msgstr ""
 
-#: kile.cpp:330
+#: kile.cpp:332
 msgid "Latin-&9 (iso 8859-9)"
 msgstr ""
 
-#: kile.cpp:331
+#: kile.cpp:333
 msgid "&Central European (cp-1250)"
 msgstr ""
 
-#: kile.cpp:332
+#: kile.cpp:334
 msgid "&Western European (cp-1252)"
 msgstr ""
 
-#: kile.cpp:335
+#: kile.cpp:337
 msgid "Find &in Files..."
-msgstr ""
+msgstr "Canfo&d mewn Ffeiliau ..."
 
-#: kile.cpp:340
+#: kile.cpp:342
 msgid "Refresh Structure"
 msgstr ""
 
-#: kile.cpp:343
+#: kile.cpp:345
 msgid "&New Project..."
 msgstr "Cywaith &Newydd..."
 
-#: kile.cpp:344
+#: kile.cpp:346
 msgid "&Open Project..."
 msgstr "&Agor Cywaith..."
 
-#: kile.cpp:345
+#: kile.cpp:347
 msgid "Open &Recent Project"
 msgstr "Agor &Cywaith Diweddar"
 
-#: kile.cpp:350
+#: kile.cpp:352
 msgid "A&dd Files to Project..."
 msgstr ""
 
-#: kile.cpp:351 kileprojectview.cpp:245
+#: kile.cpp:353 kileprojectview.cpp:245
 msgid "Refresh Project &Tree"
 msgstr ""
 
-#: kile.cpp:352 kileprojectview.cpp:247
+#: kile.cpp:354 kileprojectview.cpp:247
 msgid "&Archive"
 msgstr "&Archifio"
 
-#: kile.cpp:353 kileprojectview.cpp:246
+#: kile.cpp:355 kileprojectview.cpp:246
 msgid "Project &Options"
 msgstr ""
 
-#: kile.cpp:354
+#: kile.cpp:356
 msgid "&Close Project"
 msgstr "Ca&u Cywaith"
 
-#: kile.cpp:357 kile.cpp:419 kile.cpp:1129 kiledocmanager.cpp:1383
-#: kiledocmanager.cpp:1387
+#: kile.cpp:359 kile.cpp:421 kile.cpp:1131 kiledocmanager.cpp:1388
+#: kiledocmanager.cpp:1392
 msgid "Clean"
 msgstr ""
 
-#: kile.cpp:358
+#: kile.cpp:360
 msgid "View Log File"
 msgstr ""
 
-#: kile.cpp:359
+#: kile.cpp:361
 msgid "Previous LaTeX Error"
 msgstr ""
 
-#: kile.cpp:360
+#: kile.cpp:362
 msgid "Next LaTeX Error"
 msgstr ""
 
-#: kile.cpp:361
+#: kile.cpp:363
 msgid "Previous LaTeX Warning"
 msgstr ""
 
-#: kile.cpp:362
+#: kile.cpp:364
 msgid "Next LaTeX Warning"
 msgstr ""
 
-#: kile.cpp:363
+#: kile.cpp:365
 msgid "Previous LaTeX BadBox"
 msgstr ""
 
-#: kile.cpp:364
+#: kile.cpp:366
 msgid "Next LaTeX BadBox"
 msgstr ""
 
-#: kile.cpp:365
+#: kile.cpp:367
 msgid "&Stop"
 msgstr "&Aros"
 
-#: kile.cpp:368
+#: kile.cpp:370
 msgid "Editor View"
 msgstr ""
 
-#: kile.cpp:369
+#: kile.cpp:371
 msgid "Next Document"
 msgstr ""
 
-#: kile.cpp:370
+#: kile.cpp:372
 msgid "Previous Document"
 msgstr ""
 
-#: kile.cpp:371
+#: kile.cpp:373
 msgid "Focus Log/Messages View"
 msgstr ""
 
-#: kile.cpp:372
+#: kile.cpp:374
 msgid "Focus Output View"
 msgstr ""
 
-#: kile.cpp:373
+#: kile.cpp:375
 msgid "Focus Konsole View"
 msgstr ""
 
-#: kile.cpp:374
+#: kile.cpp:376
 msgid "Focus Editor View"
 msgstr ""
 
-#: kile.cpp:377
+#: kile.cpp:379
 msgid "(La)TeX Command"
 msgstr ""
 
-#: kile.cpp:378 rc.cpp:18
+#. i18n: file kileui.rc line 83
+#: kile.cpp:380 rc.cpp:27
 #, no-c-format
 msgid "Environment"
 msgstr ""
 
-#: configcodecompletion.cpp:76 kile.cpp:379
+#: configcodecompletion.cpp:76 kile.cpp:381
 msgid "Abbreviation"
 msgstr ""
 
-#: kile.cpp:380
+#: kile.cpp:382
 msgid "Next Bullet"
 msgstr ""
 
-#: kile.cpp:381
+#: kile.cpp:383
 msgid "Prev Bullet"
 msgstr ""
 
-#: kile.cpp:384 kile.cpp:392
+#: kile.cpp:386 kile.cpp:394
 msgid "Environment (inside)"
 msgstr ""
 
-#: kile.cpp:385 kile.cpp:393
+#: kile.cpp:387 kile.cpp:395
 msgid "Environment (outside)"
 msgstr ""
 
-#: kile.cpp:386 kile.cpp:394
+#: kile.cpp:388 kile.cpp:396
 msgid "TeX Group (inside)"
 msgstr ""
 
-#: kile.cpp:387 kile.cpp:395
+#: kile.cpp:389 kile.cpp:397
 msgid "TeX Group (outside)"
 msgstr ""
 
-#: kile.cpp:388 kile.cpp:396
+#: kile.cpp:390 kile.cpp:398
 msgid "Paragraph"
 msgstr "Paragraff"
 
-#: kile.cpp:389
+#: kile.cpp:391
 msgid "Line"
 msgstr "Llinell"
 
-#: kile.cpp:390 kile.cpp:397
+#: kile.cpp:392 kile.cpp:399
 msgid "TeX Word"
 msgstr ""
 
-#: kile.cpp:399 kile.cpp:404
+#: kile.cpp:401 kile.cpp:406
 msgid "Goto Begin"
 msgstr ""
 
-#: kile.cpp:400 kile.cpp:405
+#: kile.cpp:402 kile.cpp:407
 msgid "Goto End"
 msgstr ""
 
-#: kile.cpp:401 kile.cpp:406
+#: kile.cpp:403 kile.cpp:408
 msgid "Match"
-msgstr ""
+msgstr "Cydweddu"
 
-#: kile.cpp:413 kile.cpp:1168
+#: kile.cpp:415 kile.cpp:1170
 msgid "Quick Start"
 msgstr ""
 
-#: kile.cpp:415 kile.cpp:1184
+#: kile.cpp:417 kile.cpp:1186
 msgid "Tabular"
 msgstr ""
 
-#: kile.cpp:416 kile.cpp:1206
+#: kile.cpp:418 kile.cpp:1208
 msgid "Array"
 msgstr ""
 
-#: kile.cpp:417 kile.cpp:1195
+#: kile.cpp:419 kile.cpp:1197
 msgid "Tabbing"
 msgstr ""
 
-#: kile.cpp:421
+#: kile.cpp:423
 msgid "Define Current Document as '&Master Document'"
 msgstr ""
 
-#: kile.cpp:423
+#: kile.cpp:425
 msgid "Show S&ide Bar"
 msgstr ""
 
-#: kile.cpp:428
+#: kile.cpp:430
 msgid "Show Mess&ages Bar"
 msgstr ""
 
-#: kile.cpp:434 rc.cpp:76
+#. i18n: file kileui.rc line 361
+#: kile.cpp:436 rc.cpp:114
 #, no-c-format
 msgid "Main"
 msgstr "Prif"
 
-#: kile.cpp:435 rc.cpp:82
+#. i18n: file kileui.rc line 381
+#: kile.cpp:437 rc.cpp:123
 #, no-c-format
 msgid "Tools"
 msgstr "Offer"
 
-#: kile.cpp:439 rc.cpp:86
+#. i18n: file kileui.rc line 414
+#: kile.cpp:441 rc.cpp:129
 #, no-c-format
 msgid "Math"
 msgstr "Maths"
 
-#: kile.cpp:444
+#: kile.cpp:446
 msgid "Watch File Mode"
 msgstr ""
 
-#: kile.cpp:454
+#: kile.cpp:456
 msgid "teTeX Guide"
 msgstr ""
 
-#: kile.cpp:455
+#: kile.cpp:457
 msgid "teTeX Doc"
 msgstr ""
 
-#: kile.cpp:457
+#: kile.cpp:459
 msgid "LaTeX Command"
 msgstr ""
 
-#: kile.cpp:458
+#: kile.cpp:460
 msgid "LaTeX Subject"
 msgstr ""
 
-#: kile.cpp:459
+#: kile.cpp:461
 msgid "LaTeX Env"
 msgstr ""
 
-#: kile.cpp:460
+#: kile.cpp:462
 msgid "Context Help"
 msgstr "Cymorth Cyd-destun"
 
-#: kile.cpp:462
+#: kile.cpp:464
 msgid "LaTeX Reference"
 msgstr ""
 
-#: kile.cpp:470
+#: kile.cpp:472
 msgid "&System Check..."
 msgstr ""
 
-#: kile.cpp:472
+#: kile.cpp:474
 msgid "User Tags"
 msgstr ""
 
-#: kile.cpp:555 kile.cpp:1239
+#: kile.cpp:557 kile.cpp:1241
 msgid "Edit User Tags"
 msgstr ""
 
-#: kile.cpp:694
+#: kile.cpp:696
 #, c-format
 msgid "Project: %1"
 msgstr ""
 
-#: kile.cpp:696
+#: kile.cpp:698
 msgid "Project: %1 (Master document: %2)"
 msgstr ""
 
-#: kile.cpp:703
+#: kile.cpp:705
 #, c-format
 msgid "Master document: %1"
 msgstr ""
 
-#: kile.cpp:708 kile.cpp:1444
+#: kile.cpp:710 kile.cpp:1446
 msgid "Define Current Document as 'Master Document'"
 msgstr ""
 
-#: kile.cpp:713 kile.cpp:1466
+#: kile.cpp:715 kile.cpp:1468
 msgid "Normal mode (current master document: %1)"
 msgstr ""
 
-#: kile.cpp:826
+#: kile.cpp:828
 #, c-format
 msgid "Summary for Document: %1"
 msgstr ""
 
-#: kile.cpp:894
+#: kile.cpp:896
 #, c-format
 msgid "Document: %1"
 msgstr ""
 
-#: kile.cpp:934 kiledocmanager.cpp:622
+#: kile.cpp:936 kiledocmanager.cpp:630
 msgid "TeX Files"
 msgstr ""
 
-#: kile.cpp:936 kiledocmanager.cpp:624
+#: kile.cpp:938 kiledocmanager.cpp:632
 msgid "All Files"
 msgstr "Pob Ffeil"
 
-#: kile.cpp:1082 rc.cpp:24
+#. i18n: file kileui.rc line 108
+#: kile.cpp:1084 rc.cpp:36
 #, no-c-format
 msgid "&Build"
 msgstr ""
 
-#: kile.cpp:1083 rc.cpp:34
+#. i18n: file kileui.rc line 135
+#: kile.cpp:1085 rc.cpp:51
 #, no-c-format
 msgid "&Project"
 msgstr "&Cywaith"
 
-#: kile.cpp:1084 rc.cpp:36
+#. i18n: file kileui.rc line 147
+#: kile.cpp:1086 rc.cpp:54
 #, no-c-format
 msgid "&LaTeX"
 msgstr ""
 
-#: kile.cpp:1085 rc.cpp:66
+#. i18n: file kileui.rc line 306
+#: kile.cpp:1087 rc.cpp:99
 #, no-c-format
 msgid "&Wizard"
 msgstr "De&win"
 
-#: kile.cpp:1086
+#: kile.cpp:1088
 msgid "&User"
 msgstr "&Defnyddiwr"
 
-#: kile.cpp:1087
+#: kile.cpp:1089
 msgid "&Graph"
 msgstr "&Graff"
 
-#: kile.cpp:1121
+#: kile.cpp:1123
 msgid "There is no active document or it is not saved."
 msgstr ""
 
-#: kile.cpp:1300 kile.cpp:1308
+#: kile.cpp:1302 kile.cpp:1310
 msgid "no name"
 msgstr ""
 
-#: kile.cpp:1456
+#: kile.cpp:1458
 msgid ""
 "In order to define the current document as a master document, it has to be "
 "saved first."
@@ -1008,7 +1031,7 @@ msgstr ""
 
 #: kileprojectview.cpp:211
 msgid "Other..."
-msgstr ""
+msgstr "Eraill..."
 
 #: kileprojectview.cpp:213
 msgid "&Open With"
@@ -1046,18 +1069,19 @@ msgstr ""
 msgid "other"
 msgstr ""
 
-#: includegraphicsdialog.cpp:42 rc.cpp:146
+#. i18n: file latexconfigwidget.ui line 56
+#: includegraphicsdialog.cpp:42 rc.cpp:219
 #, no-c-format
 msgid "Include Graphics"
 msgstr ""
 
 #: includegraphicsdialog.cpp:60
 msgid "Picture:"
-msgstr ""
+msgstr "Llun:"
 
 #: includegraphicsdialog.cpp:77
 msgid "Info:"
-msgstr ""
+msgstr "Gwybodaeth:"
 
 #: includegraphicsdialog.cpp:84
 msgid "Output:"
@@ -1083,7 +1107,8 @@ msgstr "Taldra:"
 msgid "Angle:"
 msgstr "Ongl:"
 
-#: includegraphicsdialog.cpp:106 rc.cpp:150
+#. i18n: file latexconfigwidget.ui line 80
+#: includegraphicsdialog.cpp:106 rc.cpp:225
 #, no-c-format
 msgid "Bounding box:"
 msgstr ""
@@ -1108,7 +1133,15 @@ msgstr ""
 msgid "The graphics file does not exist. Proceed any way?"
 msgstr ""
 
-#: kiledocmanager.cpp:99
+#: kiledocmanager.cpp:70
+msgid "Open Project..."
+msgstr "Agor Cywaith..."
+
+#: kiledocmanager.cpp:72
+msgid "Scanning project files..."
+msgstr ""
+
+#: kiledocmanager.cpp:107
 msgid ""
 "The internal structure of Kile is corrupted (probably due to a bug in Kile). "
 "Please select Save All from the File menu and close Kile.\n"
@@ -1116,191 +1149,184 @@ msgid ""
 "report."
 msgstr ""
 
-#: kiledocmanager.cpp:520
+#: kiledocmanager.cpp:530
 #, c-format
 msgid "Could not find template: %1"
 msgstr ""
 
-#: kiledocmanager.cpp:520
+#: kiledocmanager.cpp:530
 msgid "File Not Found"
 msgstr ""
 
-#: kiledocmanager.cpp:561
+#: kiledocmanager.cpp:571
 msgid "Please save the file first."
 msgstr ""
 
-#: kiledocmanager.cpp:567
+#: kiledocmanager.cpp:577
 msgid "Open/create a document first."
 msgstr ""
 
-#: kiledocmanager.cpp:572
+#: kiledocmanager.cpp:582
 msgid "Create Template From Document"
 msgstr ""
 
-#: kiledocmanager.cpp:578
+#: kiledocmanager.cpp:588
 msgid "Remove Template"
 msgstr "Gwaredu Patrymlun"
 
-#: kiledocmanager.cpp:626
+#: kiledocmanager.cpp:635
 msgid "Open Files"
 msgstr "Agor Ffeiliau"
 
-#: kiledocmanager.cpp:841
+#: kiledocmanager.cpp:856
 msgid "Refresh Project Tree"
 msgstr ""
 
-#: kiledocmanager.cpp:849
+#: kiledocmanager.cpp:864
 msgid ""
 "The current document is not associated to a project. Please activate a "
 "document that is associated to the project you want to build the tree for, "
 "then choose Refresh Project Tree again."
 msgstr ""
 
-#: kiledocmanager.cpp:849
+#: kiledocmanager.cpp:864
 msgid "Could Not Refresh Project Tree"
 msgstr ""
 
-#: kiledocmanager.cpp:932
+#: kiledocmanager.cpp:947
 msgid "Select Project"
 msgstr ""
 
-#: kiledocmanager.cpp:955
+#: kiledocmanager.cpp:970
 msgid "Add to Project"
 msgstr ""
 
-#: kiledocmanager.cpp:979
+#: kiledocmanager.cpp:994
 msgid ""
 "This file is the project file, it holds all the information about your "
 "project. Therefore it is not allowed to remove this file from its project."
 msgstr ""
 
-#: kiledocmanager.cpp:979
+#: kiledocmanager.cpp:994
 msgid "Cannot Remove File From Project"
 msgstr ""
 
-#: kiledocmanager.cpp:1022
+#: kiledocmanager.cpp:1035
 msgid ""
 "The project you tried to open is already opened. If you wanted to reload the "
 "project, close the project before you re-open it."
 msgstr ""
 
-#: kiledocmanager.cpp:1022
+#: kiledocmanager.cpp:1035
 msgid "Project Already Open"
 msgstr ""
 
-#: kiledocmanager.cpp:1031
+#: kiledocmanager.cpp:1044
 msgid ""
 "The project file for this project does not exists or is not readable. Remove "
 "this project from the recent projects list?"
 msgstr ""
 
-#: kiledocmanager.cpp:1031
+#: kiledocmanager.cpp:1044
 msgid "Could Not Load Project File"
 msgstr ""
 
-#: kiledocmanager.cpp:1039
-msgid "Open Project..."
-msgstr ""
-
-#: kiledocmanager.cpp:1041
-msgid "Scanning project files..."
-msgstr ""
-
-#: kiledocmanager.cpp:1080
+#: kiledocmanager.cpp:1085
 msgid ""
 "*.kilepr|Kile Project Files\n"
 "*|All Files"
 msgstr ""
 
-#: kiledocmanager.cpp:1080
+#: kiledocmanager.cpp:1085
 msgid "Open Project"
 msgstr ""
 
-#: kiledocmanager.cpp:1099
+#: kiledocmanager.cpp:1104
 msgid "Save Project"
-msgstr ""
+msgstr "Cadw Cywaith"
 
-#: kiledocmanager.cpp:1127
+#: kiledocmanager.cpp:1132
 msgid ""
 "The current document is not associated to a project. Please activate a "
 "document that is associated to the project you want to save, then choose "
 "Save Project again."
 msgstr ""
 
-#: kiledocmanager.cpp:1127
+#: kiledocmanager.cpp:1132
 msgid "Could Determine Active Project"
 msgstr ""
 
-#: kiledocmanager.cpp:1145
+#: kiledocmanager.cpp:1150
 msgid "Add Files to Project"
 msgstr ""
 
-#: kiledocmanager.cpp:1158
+#: kiledocmanager.cpp:1163
 msgid "*|All Files"
 msgstr "*|Pob Ffeil"
 
-#: kiledocmanager.cpp:1158
+#: kiledocmanager.cpp:1163
 msgid "Add Files"
 msgstr ""
 
-#: kiledocmanager.cpp:1167
+#: kiledocmanager.cpp:1172
 msgid ""
 "There are no projects opened. Please open the project you want to add files "
 "to, then choose Add Files again."
 msgstr ""
 
-#: kiledocmanager.cpp:1167 kiledocmanager.cpp:1216 kiledocmanager.cpp:1245
+#: kiledocmanager.cpp:1172 kiledocmanager.cpp:1221 kiledocmanager.cpp:1250
 msgid "Could Not Determine Active Project"
 msgstr ""
 
-#: kiledocmanager.cpp:1191
+#: kiledocmanager.cpp:1196
 msgid "Archive Project"
 msgstr ""
 
-#: kiledocmanager.cpp:1216
+#: kiledocmanager.cpp:1221
 msgid ""
 "The current document is not associated to a project. Please activate a "
 "document that is associated to the project you want to archive, then choose "
 "Archive again."
 msgstr ""
 
-#: kiledocmanager.cpp:1236
+#: kiledocmanager.cpp:1241
 msgid "Project Options For"
 msgstr ""
 
-#: kiledocmanager.cpp:1245
+#: kiledocmanager.cpp:1250
 msgid ""
 "The current document is not associated to a project. Please activate a "
 "document that is associated to the project you want to modify, then choose "
 "Project Options again."
 msgstr ""
 
-#: kiledocmanager.cpp:1274
+#: kiledocmanager.cpp:1279
 msgid "Close Project"
-msgstr ""
+msgstr "Cau Cywaith"
 
-#: kiledocmanager.cpp:1329
+#: kiledocmanager.cpp:1334
 msgid ""
 "The current document is not associated to a project. Please activate a "
 "document that is associated to the project you want to close, then choose "
 "Close Project again."
 msgstr ""
 
-#: kiledocmanager.cpp:1329
+#: kiledocmanager.cpp:1334
 msgid "Could Not Close Project"
 msgstr ""
 
-#: kiledocmanager.cpp:1383
+#: kiledocmanager.cpp:1388
 #, c-format
 msgid "Nothing to clean for %1"
 msgstr ""
 
-#: kiledocmanager.cpp:1387
+#: kiledocmanager.cpp:1392
 msgid "cleaning %1 : %2"
 msgstr ""
 
 #: kilelauncher.cpp:85 kilelauncher.cpp:251 kilelauncher.cpp:320
-msgid " output: \n"
+msgid ""
+" output: \n"
 msgstr ""
 
 #: kilelauncher.cpp:148
@@ -1382,15 +1408,15 @@ msgstr ""
 msgid "Sorry, the file %1 is not readable."
 msgstr ""
 
-#: kiletool.cpp:532
+#: kiletool.cpp:535
 msgid "The document %1 is not a LaTeX root document; continue anyway?"
 msgstr ""
 
-#: kiletool.cpp:532
+#: kiletool.cpp:535
 msgid "Continue?"
 msgstr ""
 
-#: kiletool.cpp:544
+#: kiletool.cpp:547
 msgid "The file %2/%3 does not exist; did you compile the source file?"
 msgstr ""
 
@@ -1483,7 +1509,7 @@ msgstr ""
 
 #: quickdocumentdialog.cpp:170
 msgid "Doc&ument class:"
-msgstr ""
+msgstr "Dos&barth dogfen:"
 
 #: quickdocumentdialog.cpp:175 quickdocumentdialog.cpp:195
 #: quickdocumentdialog.cpp:216
@@ -1501,11 +1527,11 @@ msgstr ""
 
 #: quickdocumentdialog.cpp:210 quickdocumentdialog.cpp:590
 msgid "Paper si&ze:"
-msgstr ""
+msgstr "Maint pa&pur:"
 
 #: quickdocumentdialog.cpp:231
 msgid "E&ncoding:"
-msgstr ""
+msgstr "A&mgodiad:"
 
 #: quickdocumentdialog.cpp:238
 msgid "Option"
@@ -1529,7 +1555,7 @@ msgstr ""
 
 #: quickdocumentdialog.cpp:264
 msgid "Ed&it"
-msgstr ""
+msgstr "Go&lygu"
 
 #: quickdocumentdialog.cpp:265
 msgid "Edit the current class option"
@@ -1583,7 +1609,8 @@ msgstr ""
 msgid "Reset to the default list of packages"
 msgstr ""
 
-#: quickdocumentdialog.cpp:344 rc.cpp:116
+#. i18n: file generalconfigwidget.ui line 208
+#: quickdocumentdialog.cpp:344 rc.cpp:174
 #, no-c-format
 msgid "&Author:"
 msgstr "Aw&dur:"
@@ -1594,11 +1621,11 @@ msgstr "&Teitl:"
 
 #: quickdocumentdialog.cpp:356
 msgid "Dat&e:"
-msgstr ""
+msgstr "Dyd&diad:"
 
 #: quickdocumentdialog.cpp:588
 msgid "&Theme:"
-msgstr ""
+msgstr "&Thema:"
 
 #: quickdocumentdialog.cpp:642
 msgid "Sets the document's orientation to landscape"
@@ -2248,7 +2275,7 @@ msgstr ""
 
 #: quickdocumentdialog.cpp:1822 quickdocumentdialog.cpp:1896
 msgid "&Package:"
-msgstr ""
+msgstr "&Pecyn :"
 
 #: quickdocumentdialog.cpp:1826
 msgid "&Select this package"
@@ -2256,7 +2283,7 @@ msgstr ""
 
 #: quickdocumentdialog.cpp:1848
 msgid "&Option:"
-msgstr ""
+msgstr "&Dewisiad :"
 
 #: quickdocumentdialog.cpp:1848 quickdocumentdialog.cpp:1890
 msgid "package:"
@@ -2264,11 +2291,11 @@ msgstr ""
 
 #: quickdocumentdialog.cpp:1850
 msgid "&Editable"
-msgstr ""
+msgstr "&Golygadwy"
 
 #: quickdocumentdialog.cpp:1851 quickdocumentdialog.cpp:1914
 msgid "De&fault value:"
-msgstr ""
+msgstr "Gw&erth ragosod :"
 
 #: quickdocumentdialog.cpp:1853 quickdocumentdialog.cpp:1916
 msgid "&Value:"
@@ -2276,7 +2303,7 @@ msgstr "&Gwerth:"
 
 #: quickdocumentdialog.cpp:1890
 msgid "Op&tion:"
-msgstr ""
+msgstr "De&wisiad :"
 
 #: quickdocumentdialog.cpp:1895
 msgid "Edit Package"
@@ -2330,335 +2357,400 @@ msgstr ""
 msgid "This package option already exists."
 msgstr ""
 
-#: rc.cpp:2 rc.cpp:88
+#. i18n: file docpartui.rc line 3
+#: rc.cpp:3 rc.cpp:132
 #, no-c-format
 msgid "Extra"
-msgstr ""
+msgstr "Ychwanegol"
 
-#: rc.cpp:6
+#. i18n: file kileui.rc line 24
+#: rc.cpp:9
 #, no-c-format
 msgid "Con&vert To"
 msgstr ""
 
-#: rc.cpp:12
+#. i18n: file kileui.rc line 58
+#: rc.cpp:18
 #, no-c-format
 msgid "Bullets"
 msgstr ""
 
-#: rc.cpp:14
+#. i18n: file kileui.rc line 62
+#: rc.cpp:21
 #, no-c-format
 msgid "Select"
 msgstr "Dewis"
 
-#: rc.cpp:20
+#. i18n: file kileui.rc line 90
+#: rc.cpp:30
 #, no-c-format
 msgid "TeX Group"
 msgstr ""
 
-#: rc.cpp:26
+#. i18n: file kileui.rc line 110
+#: rc.cpp:39
 #, no-c-format
 msgid "&Compile"
 msgstr "C&rynhoi"
 
-#: rc.cpp:28
+#. i18n: file kileui.rc line 113
+#: rc.cpp:42
 #, no-c-format
 msgid "C&onvert"
-msgstr ""
+msgstr "T&rosi"
 
-#: rc.cpp:32
+#. i18n: file kileui.rc line 119
+#: rc.cpp:48
 #, no-c-format
 msgid "O&ther"
-msgstr ""
+msgstr "A&rall"
 
-#: rc.cpp:38
+#. i18n: file kileui.rc line 148
+#: rc.cpp:57
 #, no-c-format
 msgid "&Preamble"
 msgstr ""
 
-#: rc.cpp:40
+#. i18n: file kileui.rc line 160
+#: rc.cpp:60
 #, no-c-format
 msgid "&Sectioning"
 msgstr ""
 
-#: rc.cpp:42
+#. i18n: file kileui.rc line 171
+#: rc.cpp:63
 #, no-c-format
 msgid "&References"
-msgstr ""
+msgstr "&Cyfeiriadau"
 
-#: rc.cpp:44
+#. i18n: file kileui.rc line 180
+#: rc.cpp:66
 #, no-c-format
 msgid "&Environment"
 msgstr ""
 
-#: rc.cpp:46
+#. i18n: file kileui.rc line 192
+#: rc.cpp:69
 #, no-c-format
 msgid "&List Environment"
 msgstr ""
 
-#: rc.cpp:48
+#. i18n: file kileui.rc line 200
+#: rc.cpp:72
 #, no-c-format
 msgid "&Tabular Environment"
 msgstr ""
 
-#: rc.cpp:50
+#. i18n: file kileui.rc line 209
+#: rc.cpp:75
 #, no-c-format
 msgid "&Floating Environment"
 msgstr ""
 
-#: rc.cpp:52
+#. i18n: file kileui.rc line 214
+#: rc.cpp:78
 #, no-c-format
 msgid "&Math"
-msgstr ""
+msgstr "&Maths"
 
-#: rc.cpp:54
+#. i18n: file kileui.rc line 230
+#: rc.cpp:81
 #, no-c-format
 msgid "Math &Font Styles"
 msgstr ""
 
-#: rc.cpp:56
+#. i18n: file kileui.rc line 240
+#: rc.cpp:84
 #, no-c-format
 msgid "Math &Accents"
 msgstr ""
 
-#: rc.cpp:58
+#. i18n: file kileui.rc line 252
+#: rc.cpp:87
 #, no-c-format
 msgid "Math &Spaces"
 msgstr ""
 
-#: rc.cpp:60
+#. i18n: file kileui.rc line 261
+#: rc.cpp:90
 #, no-c-format
 msgid "&Bibliography"
 msgstr ""
 
-#: rc.cpp:62
+#. i18n: file kileui.rc line 282
+#: rc.cpp:93
 #, no-c-format
 msgid "&Font Styles"
 msgstr ""
 
-#: rc.cpp:64
+#. i18n: file kileui.rc line 289
+#: rc.cpp:96
 #, no-c-format
 msgid "Spa&cing"
-msgstr ""
+msgstr "Byl&chu"
 
-#: rc.cpp:70
+#. i18n: file kileui.rc line 321
+#: rc.cpp:105
 #, no-c-format
 msgid "Show Toolbars"
 msgstr ""
 
-#: rc.cpp:74
+#. i18n: file kileui.rc line 344
+#: rc.cpp:111
 #, no-c-format
 msgid "TeTeX Documentation"
 msgstr ""
 
-#: rc.cpp:90
+#. i18n: file configcheckerwidget.ui line 30
+#: rc.cpp:135
 #, no-c-format
 msgid "Performing System Check"
 msgstr ""
 
-#: rc.cpp:92
+#. i18n: file configcheckerwidget.ui line 41
+#: rc.cpp:138
 #, no-c-format
 msgid "Checking if your TeX system is installed correctly..."
 msgstr ""
 
-#: rc.cpp:94
+#. i18n: file configcheckerwidget.ui line 70
+#: rc.cpp:141
 #, no-c-format
 msgid "Results"
 msgstr ""
 
-#: kileprojectdlgs.cpp:409 rc.cpp:98
+#. i18n: file generalconfigwidget.ui line 41
+#: kileprojectdlgs.cpp:409 rc.cpp:147
 #, no-c-format
 msgid "Project Options"
 msgstr ""
 
-#: rc.cpp:100
+#. i18n: file generalconfigwidget.ui line 52
+#: rc.cpp:150
 #, no-c-format
 msgid "&Reopen files and projects on startup"
 msgstr ""
 
-#: rc.cpp:102
+#. i18n: file generalconfigwidget.ui line 60
+#: rc.cpp:153
 #, no-c-format
 msgid "&Default project location:"
 msgstr ""
 
-#: rc.cpp:104
+#. i18n: file generalconfigwidget.ui line 86
+#: rc.cpp:156
 #, no-c-format
 msgid "Autosave Options"
 msgstr ""
 
-#: rc.cpp:106
+#. i18n: file generalconfigwidget.ui line 97
+#: rc.cpp:159
 #, no-c-format
 msgid "Auto&save"
 msgstr ""
 
-#: rc.cpp:108
+#. i18n: file generalconfigwidget.ui line 113
+#: rc.cpp:162
 #, no-c-format
 msgid "Interval &time in minutes (1 - 9999):"
 msgstr ""
 
-#: rc.cpp:110
+#. i18n: file generalconfigwidget.ui line 147
+#: rc.cpp:165
 #, no-c-format
 msgid "Structure View Options"
 msgstr ""
 
-#: rc.cpp:112
+#. i18n: file generalconfigwidget.ui line 158
+#: rc.cpp:168
 #, no-c-format
-msgid ""
-"Default expansion &level for the structure view (1 part - 5 subsubsection):"
+msgid "Default expansion &level for the structure view (1 part - 5 subsubsection):"
 msgstr ""
 
-#: rc.cpp:114
+#. i18n: file generalconfigwidget.ui line 182
+#: rc.cpp:171
 #, no-c-format
 msgid "Template Variables"
 msgstr ""
 
-#: rc.cpp:118
+#. i18n: file generalconfigwidget.ui line 219
+#: rc.cpp:177
 #, no-c-format
 msgid "&Documentclass options:"
 msgstr ""
 
-#: rc.cpp:120
+#. i18n: file generalconfigwidget.ui line 230
+#: rc.cpp:180
 #, no-c-format
 msgid "Input &encoding:"
 msgstr ""
 
-#: rc.cpp:122
+#. i18n: file generalconfigwidget.ui line 243
+#: rc.cpp:183
 #, no-c-format
 msgid "File Clean-Up Details"
 msgstr ""
 
-#: rc.cpp:124
+#. i18n: file generalconfigwidget.ui line 254
+#: rc.cpp:186
 #, no-c-format
 msgid "Automatically clean-up files after close"
 msgstr ""
 
-#: rc.cpp:126
+#. i18n: file generalconfigwidget.ui line 269
+#: rc.cpp:189
 #, no-c-format
 msgid "Let Kile process LyX commands sent by bibliography editors/viewers."
 msgstr ""
 
-#: rc.cpp:130
+#. i18n: file helpconfigwidget.ui line 19
+#: rc.cpp:195
 #, no-c-format
 msgid "&Location of TeX documentation:"
 msgstr ""
 
-#: rc.cpp:132
+#. i18n: file helpconfigwidget.ui line 25
+#: rc.cpp:198
 #, no-c-format
 msgid ""
-"Insert the path to the TeX documentation directory here. For example /usr/"
-"share/texmf/doc."
+"Insert the path to the TeX documentation directory here. For example "
+"/usr/share/texmf/doc."
 msgstr ""
 
-#: rc.cpp:134
+#. i18n: file helpconfigwidget.ui line 38
+#: rc.cpp:201
 #, no-c-format
 msgid "Context Sensitive Help"
 msgstr ""
 
-#: rc.cpp:136
+#. i18n: file helpconfigwidget.ui line 46
+#: rc.cpp:204
 #, no-c-format
 msgid "Use the &Kile LaTeX reference"
 msgstr ""
 
-#: rc.cpp:138
+#. i18n: file helpconfigwidget.ui line 54
+#: rc.cpp:207
 #, no-c-format
 msgid "Use your system's &TeX documentation"
 msgstr ""
 
-#: rc.cpp:142
+#. i18n: file latexconfigwidget.ui line 35
+#: rc.cpp:213
 #, no-c-format
 msgid "Environments"
 msgstr ""
 
-#: rc.cpp:144
+#. i18n: file latexconfigwidget.ui line 46
+#: rc.cpp:216
 #, no-c-format
 msgid "Automatically complete \\begin{env} with \\end{env}"
 msgstr ""
 
-#: rc.cpp:148
+#. i18n: file latexconfigwidget.ui line 67
+#: rc.cpp:222
 #, no-c-format
 msgid "Default resolution:"
 msgstr ""
 
-#: rc.cpp:152
+#. i18n: file latexconfigwidget.ui line 88
+#: rc.cpp:228
 #, no-c-format
 msgid "ImageMagick:"
 msgstr ""
 
-#: rc.cpp:154
+#. i18n: file latexconfigwidget.ui line 104
+#: rc.cpp:231
 #, no-c-format
 msgid "(used when the picture offers no resolution)"
 msgstr ""
 
-#: rc.cpp:156
+#. i18n: file latexconfigwidget.ui line 112
+#: rc.cpp:234
 #, no-c-format
 msgid "Try to determine from the picture"
 msgstr ""
 
-#: rc.cpp:158
+#. i18n: file latexconfigwidget.ui line 120
+#: rc.cpp:237
 #, no-c-format
 msgid "(you have to install the ImageMagick package to use this option)"
 msgstr ""
 
-#: rc.cpp:161
+#. i18n: file latexconfigwidget.ui line 138
+#: rc.cpp:241
 #, no-c-format
 msgid "Library Path"
 msgstr ""
 
-#: rc.cpp:163
+#. i18n: file latexconfigwidget.ui line 146
+#: rc.cpp:244
 #, no-c-format
 msgid "Paths"
 msgstr "Llwybrau"
 
-#: rc.cpp:166
+#. i18n: file latextoolconfigwidget.ui line 35
+#: rc.cpp:248
 #, no-c-format
 msgid "Check if root document is a LaTeX root before running LaTeX on it."
 msgstr ""
 
-#: rc.cpp:168
+#. i18n: file latextoolconfigwidget.ui line 43
+#: rc.cpp:251
 #, no-c-format
 msgid "Jump to first error in case running LaTeX failed."
 msgstr ""
 
-#: rc.cpp:170
+#. i18n: file latextoolconfigwidget.ui line 51
+#: rc.cpp:254
 #, no-c-format
 msgid "Automatically run BibTeX, MakeIndex, rerun LaTeX when necessary."
 msgstr ""
 
-#: rc.cpp:172 rc.cpp:196
+#. i18n: file librarytoolconfigwidget.ui line 41
+#: rc.cpp:257 rc.cpp:289
 #, no-c-format
 msgid "&Options:"
-msgstr ""
+msgstr "&Dewisiadau :"
 
-#: rc.cpp:174
+#. i18n: file librarytoolconfigwidget.ui line 67
+#: rc.cpp:260
 #, no-c-format
 msgid "Library C&lass:"
 msgstr ""
 
-#: rc.cpp:176
+#. i18n: file librarytoolconfigwidget.ui line 78
+#: rc.cpp:263
 #, no-c-format
 msgid "&Library:"
 msgstr ""
 
-#: rc.cpp:178
+#. i18n: file newtoolwizard.ui line 16
+#: rc.cpp:266
 #, no-c-format
 msgid "New Tool"
 msgstr ""
 
-#: rc.cpp:180
+#. i18n: file newtoolwizard.ui line 23
+#: rc.cpp:269
 #, no-c-format
 msgid "Name"
 msgstr "Enw"
 
-#: rc.cpp:182
+#. i18n: file newtoolwizard.ui line 34
+#: rc.cpp:272
 #, no-c-format
 msgid "Type a short descriptive name for the &tool."
 msgstr ""
 
-#: rc.cpp:186
+#. i18n: file newtoolwizard.ui line 80
+#: rc.cpp:277
 #, no-c-format
 msgid "Behavior"
 msgstr "Ymddygiad"
 
-#: rc.cpp:188
+#. i18n: file newtoolwizard.ui line 119
+#: rc.cpp:280
 #, no-c-format
 msgid ""
 "Select the default &behavior (class) \n"
@@ -2670,270 +2762,323 @@ msgid ""
 "the standard \"LaTeX\" tool."
 msgstr ""
 
-#: rc.cpp:198
+#. i18n: file processtoolconfigwidget.ui line 72
+#: rc.cpp:292
 #, no-c-format
 msgid "Co&mmand:"
 msgstr "Gorchy&myn:"
 
-#: rc.cpp:200
+#. i18n: file quicktoolconfigwidget.ui line 51
+#: rc.cpp:295
 #, no-c-format
 msgid "Tool:"
 msgstr ""
 
-#: rc.cpp:202
+#. i18n: file quicktoolconfigwidget.ui line 59
+#: rc.cpp:298
 #, no-c-format
 msgid "Configuration:"
-msgstr ""
+msgstr "Ffurfwedd :"
 
-#: rc.cpp:204
+#. i18n: file quicktoolconfigwidget.ui line 94
+#: rc.cpp:301
 #, no-c-format
 msgid "&Add"
 msgstr "&Ychwanegu"
 
-#: rc.cpp:208
+#. i18n: file quicktoolconfigwidget.ui line 126
+#: rc.cpp:307
 #, no-c-format
 msgid "&Down"
 msgstr "I &Lawr"
 
-#: rc.cpp:210
+#. i18n: file quicktoolconfigwidget.ui line 142
+#: rc.cpp:310
 #, no-c-format
 msgid "&Up"
 msgstr "I &Fyny"
 
-#: rc.cpp:215
+#. i18n: file toolconfigwidget.ui line 66
+#: rc.cpp:317
 #, no-c-format
 msgid "Select a &tool:"
 msgstr ""
 
-#: rc.cpp:217
+#. i18n: file toolconfigwidget.ui line 96
+#: rc.cpp:320
 #, no-c-format
 msgid "Remove Tool"
 msgstr ""
 
-#: rc.cpp:219
+#. i18n: file toolconfigwidget.ui line 104
+#: rc.cpp:323
 #, no-c-format
 msgid "New Tool..."
 msgstr ""
 
-#: rc.cpp:222
+#. i18n: file toolconfigwidget.ui line 170
+#: rc.cpp:327
 #, no-c-format
 msgid "Remove Config"
 msgstr ""
 
-#: rc.cpp:224
+#. i18n: file toolconfigwidget.ui line 186
+#: rc.cpp:330
 #, no-c-format
 msgid "Default Settings..."
 msgstr ""
 
-#: rc.cpp:226
+#. i18n: file toolconfigwidget.ui line 202
+#: rc.cpp:333
 #, no-c-format
 msgid "New Config..."
 msgstr ""
 
-#: rc.cpp:228
+#. i18n: file toolconfigwidget.ui line 228
+#: rc.cpp:336
 #, no-c-format
 msgid "&General"
 msgstr "&Cyffredinol"
 
-#: rc.cpp:230
+#. i18n: file toolconfigwidget.ui line 300
+#: rc.cpp:339
 #, no-c-format
 msgid "&Advanced"
 msgstr "&Uwch"
 
-#: rc.cpp:232
+#. i18n: file toolconfigwidget.ui line 324
+#: rc.cpp:342
 #, no-c-format
 msgid "&Type"
 msgstr "&Math"
 
-#: rc.cpp:234
+#. i18n: file toolconfigwidget.ui line 351
+#: rc.cpp:345
 #, no-c-format
 msgid "&Relative Dir"
 msgstr ""
 
-#: rc.cpp:236
+#. i18n: file toolconfigwidget.ui line 362
+#: rc.cpp:348
 #, no-c-format
 msgid "Target &File"
 msgstr ""
 
-#: rc.cpp:238
+#. i18n: file toolconfigwidget.ui line 373
+#: rc.cpp:351
 #, no-c-format
 msgid "Tar&get Extension"
 msgstr ""
 
-#: rc.cpp:240
+#. i18n: file toolconfigwidget.ui line 426
+#: rc.cpp:354
 #, no-c-format
 msgid "&Source Extension"
 msgstr ""
 
-#: rc.cpp:242
+#. i18n: file toolconfigwidget.ui line 437
+#: rc.cpp:357
 #, no-c-format
 msgid "C&lass"
-msgstr ""
+msgstr "D&osbarth"
 
-#: rc.cpp:244
+#. i18n: file toolconfigwidget.ui line 448
+#: rc.cpp:360
 #, no-c-format
 msgid "Close Konsole when tool is finished."
 msgstr ""
 
-#: rc.cpp:246
+#. i18n: file toolconfigwidget.ui line 486
+#: rc.cpp:363
 #, no-c-format
 msgid "St&ate"
-msgstr ""
+msgstr "Cy&flwr"
 
-#: rc.cpp:248
+#. i18n: file toolconfigwidget.ui line 504
+#: rc.cpp:366
 #, no-c-format
 msgid "Me&nu"
-msgstr ""
+msgstr "De&wislen"
 
-#: rc.cpp:250
+#. i18n: file toolconfigwidget.ui line 515
+#: rc.cpp:369
 #, no-c-format
 msgid "Add tool to Build &menu:"
 msgstr ""
 
-#: rc.cpp:252
+#. i18n: file toolconfigwidget.ui line 539
+#: rc.cpp:372
 #, no-c-format
 msgid "&Icon:"
 msgstr "&Eicon:"
 
-#: rc.cpp:255
+#. i18n: file toolconfigwidget.ui line 586
+#: rc.cpp:376
 #, no-c-format
 msgid "Select a &configuration:"
 msgstr ""
 
-#: rc.cpp:257
+#. i18n: file kile.kcfg line 11
+#: rc.cpp:379
 #, no-c-format
 msgid "The resource file version."
 msgstr ""
 
-#: rc.cpp:263
+#. i18n: file kile.kcfg line 33
+#: rc.cpp:386
 #, no-c-format
 msgid "The main window's width."
 msgstr ""
 
-#: rc.cpp:265
+#. i18n: file kile.kcfg line 39
+#: rc.cpp:389
 #, no-c-format
 msgid "The main window's height."
 msgstr ""
 
-#: rc.cpp:267
+#. i18n: file kile.kcfg line 47
+#: rc.cpp:392
 #, no-c-format
 msgid "The expansion level for the structure view."
 msgstr ""
 
-#: rc.cpp:269
+#. i18n: file kile.kcfg line 53
+#: rc.cpp:395
 #, no-c-format
 msgid "Whether to run the Lyx server."
 msgstr ""
 
-#: rc.cpp:271
+#. i18n: file kile.kcfg line 57
+#: rc.cpp:398
 #, no-c-format
 msgid "Holds the TEXINPUTS environment variable."
 msgstr ""
 
-#: rc.cpp:273
+#. i18n: file kile.kcfg line 59
+#: rc.cpp:401
 #, no-c-format
 msgid ""
-"Set the TEXINPUTS environment variable here. TEXINPUTS should be a colon-"
-"separated list of all paths TeX should look for additional packages and/or "
-"files. You do not have to add :$TEXINPUTS at the end."
+"Set the TEXINPUTS environment variable here. TEXINPUTS should be a "
+"colon-separated list of all paths TeX should look for additional packages "
+"and/or files. You do not have to add :$TEXINPUTS at the end."
 msgstr ""
 
-#: rc.cpp:275
+#. i18n: file kile.kcfg line 64
+#: rc.cpp:404
 #, no-c-format
 msgid "Whether to show the bottom bar."
 msgstr ""
 
-#: rc.cpp:277
+#. i18n: file kile.kcfg line 68
+#: rc.cpp:407
 #, no-c-format
 msgid "Whether to show the side bar."
 msgstr ""
 
-#: rc.cpp:279
+#. i18n: file kile.kcfg line 72
+#: rc.cpp:410
 #, no-c-format
 msgid "Whether to show Bad Box warnings in the LogMsg view."
 msgstr ""
 
-#: rc.cpp:281
+#. i18n: file kile.kcfg line 76
+#: rc.cpp:413
 #, no-c-format
 msgid "Whether to show (La)TeX warnings in the LogMsg view."
 msgstr ""
 
-#: rc.cpp:283
+#. i18n: file kile.kcfg line 80
+#: rc.cpp:416
 #, no-c-format
 msgid "The identifier of the selected view in the left pane."
 msgstr ""
 
-#: rc.cpp:285
+#. i18n: file kile.kcfg line 86
+#: rc.cpp:419
 #, no-c-format
 msgid "Automatic completion \\begin{env} with \\end{env}."
 msgstr ""
 
-#: rc.cpp:287
+#. i18n: file kile.kcfg line 92
+#: rc.cpp:422
 #, no-c-format
 msgid "Whether ImageMagick is installed."
 msgstr ""
 
-#: rc.cpp:289
+#. i18n: file kile.kcfg line 96
+#: rc.cpp:425
 #, no-c-format
 msgid "Try to determine the bounding box from the picture."
 msgstr ""
 
-#: rc.cpp:291
+#. i18n: file kile.kcfg line 100
+#: rc.cpp:428
 #, no-c-format
 msgid "The default image resolution."
 msgstr ""
 
-#: rc.cpp:293
+#. i18n: file kile.kcfg line 106
+#: rc.cpp:431
 #, no-c-format
 msgid "Location of the TeX documentation."
 msgstr ""
 
-#: rc.cpp:295
+#. i18n: file kile.kcfg line 110
+#: rc.cpp:434
 #, no-c-format
 msgid "Use the system's TeX reference for the contextual help."
 msgstr ""
 
-#: rc.cpp:297
+#. i18n: file kile.kcfg line 116
+#: rc.cpp:437
 #, no-c-format
 msgid "Reopen files and projects on startup."
 msgstr ""
 
-#: rc.cpp:299
+#. i18n: file kile.kcfg line 120
+#: rc.cpp:440
 #, no-c-format
 msgid "Automatic save."
 msgstr ""
 
-#: rc.cpp:301
+#. i18n: file kile.kcfg line 124
+#: rc.cpp:443
 #, no-c-format
 msgid "Automatically clean-up files after close."
 msgstr ""
 
-#: rc.cpp:303
+#. i18n: file kile.kcfg line 128
+#: rc.cpp:446
 #, no-c-format
 msgid "The autosave interval in minutes."
 msgstr ""
 
-#: rc.cpp:305
+#. i18n: file kile.kcfg line 132
+#: rc.cpp:449
 #, no-c-format
 msgid "The file extensions to clean on exit."
 msgstr ""
 
-#: rc.cpp:310
+#. i18n: file kile.kcfg line 152
+#: rc.cpp:455
 #, no-c-format
 msgid "The Author template variable."
 msgstr ""
 
-#: rc.cpp:312
+#. i18n: file kile.kcfg line 156
+#: rc.cpp:458
 #, no-c-format
 msgid "The Documentclass template variable."
 msgstr ""
 
-#: rc.cpp:314
+#. i18n: file kile.kcfg line 160
+#: rc.cpp:461
 #, no-c-format
 msgid "The Input encoding template variable."
 msgstr ""
 
-#: rc.cpp:316
+#. i18n: file kile.kcfg line 164
+#: rc.cpp:464
 #, no-c-format
 msgid "The default location where the projects must be created."
 msgstr ""
@@ -2964,8 +3109,10 @@ msgstr ""
 
 #: configcheckerdlg.cpp:160
 msgid ""
-"<qt>The following tools did not pass all <b>critical</b> tests:<br>%"
-"1<br>Your system is not ready to use. Please consult the results to find out "
+"<qt>The following tools did not pass all <b>critical</b> "
+"tests:"
+"<br>%1"
+"<br>Your system is not ready to use. Please consult the results to find out "
 "what to fix.</qt>"
 msgstr ""
 
@@ -3088,19 +3235,19 @@ msgstr ""
 msgid "line"
 msgstr "llinell"
 
-#: kilestructurewidget.cpp:75
+#: kilestructurewidget.cpp:78
 msgid "No \"structure data\" to display."
 msgstr ""
 
-#: kilestructurewidget.cpp:143
+#: kilestructurewidget.cpp:146
 msgid "Labels"
 msgstr "Labeli"
 
-#: kilestructurewidget.cpp:148
+#: kilestructurewidget.cpp:151
 msgid "References"
 msgstr "Cyfeiriadau"
 
-#: kilestructurewidget.cpp:300
+#: kilestructurewidget.cpp:303
 msgid ""
 "Cannot find the included file. The file does not exist, is not readable or "
 "Kile is unable to determine the correct path to it. The filename causing "
@@ -3108,7 +3255,7 @@ msgid ""
 "Do you want to create this file?"
 msgstr ""
 
-#: kilestructurewidget.cpp:300
+#: kilestructurewidget.cpp:303
 msgid "Cannot Find File"
 msgstr ""
 
@@ -3646,7 +3793,7 @@ msgstr ""
 
 #: kilestdactions.cpp:111
 msgid "&Section"
-msgstr ""
+msgstr "&Adran"
 
 #: kilestdactions.cpp:112
 msgid ""
@@ -3679,7 +3826,7 @@ msgstr ""
 
 #: kilestdactions.cpp:114
 msgid "&Paragraph"
-msgstr ""
+msgstr "&Paragraff"
 
 #: kilestdactions.cpp:115
 msgid ""
@@ -4047,7 +4194,8 @@ msgstr ""
 
 #: tips.cpp:7
 msgid ""
-"<p>...that Kile supports forward search? This enables you to switch back and "
+"<p>"
+"...that Kile supports forward search? This enables you to switch back and "
 "forth between places in the source file and their corresponding locations in "
 "the DVI file. Stop spending so much time on finding the place in the source "
 "file: if you spotted a mistake while viewing the DVI, finding the correct "
@@ -4059,8 +4207,9 @@ msgstr ""
 
 #: tips.cpp:13
 msgid ""
-"<p>...that the Quick Build tool is now fully configurable? Go to <b>Settings-"
-">Configure Kile->Build</b> and select the <b>QuickBuild</b> tool.</p>\n"
+"<p>...that the Quick Build tool is now fully configurable? Go to "
+"<b>Settings->Configure Kile->Build</b> and select the <b>QuickBuild</b> "
+"tool.</p>\n"
 msgstr ""
 
 #: tips.cpp:17
@@ -4068,8 +4217,8 @@ msgid ""
 "<p>...that using projects gives Kile much more power? You can, for example, "
 "bundle and archive all related documents in a project; also, features like "
 "auto-completion of references and citations become much more powerful. Kile "
-"is even able to determine which document is the master document in a project."
-"</p>\n"
+"is even able to determine which document is the master document in a "
+"project.</p>\n"
 msgstr ""
 
 #: tips.cpp:21
@@ -4089,20 +4238,20 @@ msgid ""
 "<p>Note that this feature is much more powerful if the current document "
 "belongs to a project.</p>\n"
 "\n"
-"<p>You can configure auto-completion by going to <b>Settings->Configure Kile-"
-">Complete</b>; there, you can select databases of LaTeX commands. You can "
-"even create your own lists of commands.</p>\n"
+"<p>You can configure auto-completion by going to <b>Settings->Configure "
+"Kile->Complete</b>; there, you can select databases of LaTeX commands. You "
+"can even create your own lists of commands.</p>\n"
 msgstr ""
 
 #: tips.cpp:33
 msgid ""
 "<p>...that Kile can complete LaTeX commands for you? Type <code>\\se</code> "
-"and press Ctrl+Space, a list of all commands starting with <code>\\se</code> "
-"will appear.</p>\n"
+"and press Ctrl+Space, a list of all commands starting with <code>\\se</code>"
+" will appear.</p>\n"
 "\n"
-"<p>You can configure auto-completion by going to <b>Settings->Configure Kile-"
-">Complete</b>; there, you can select databases of LaTeX commands. You can "
-"even create your own lists of commands.</p>\n"
+"<p>You can configure auto-completion by going to <b>Settings->Configure "
+"Kile->Complete</b>; there, you can select databases of LaTeX commands. You "
+"can even create your own lists of commands.</p>\n"
 msgstr ""
 
 #: tips.cpp:39
@@ -4113,9 +4262,9 @@ msgid ""
 "select the first entry and a <code>\\begin{equation}\\end{equation}</code> "
 "pair is inserted in your document.</p>\n"
 "\n"
-"<p>You can configure auto-completion by going to <b>Settings->Configure Kile-"
-">Complete</b>; there, you can select databases of LaTeX commands. You can "
-"even create your own lists of commands.</p>\n"
+"<p>You can configure auto-completion by going to <b>Settings->Configure "
+"Kile->Complete</b>; there, you can select databases of LaTeX commands. You "
+"can even create your own lists of commands.</p>\n"
 msgstr ""
 
 #: tips.cpp:45
@@ -4143,7 +4292,7 @@ msgstr ""
 
 #: tabbingdialog.cpp:58
 msgid "&Spacing:"
-msgstr ""
+msgstr "&Bylchiad :"
 
 #: kileprojectdlgs.cpp:42
 msgid "Insert a short descriptive name of your project here."
@@ -4198,11 +4347,11 @@ msgstr ""
 
 #: kileprojectdlgs.cpp:184
 msgid "Project &file:"
-msgstr ""
+msgstr "Ffeil y &cywaith:"
 
 #: kileprojectdlgs.cpp:188
 msgid "Select Folder..."
-msgstr ""
+msgstr "Dewis Plygell ..."
 
 #: kileprojectdlgs.cpp:194
 msgid "Create a new file and add it to this project"
@@ -4267,8 +4416,7 @@ msgid "The project folder is not writable, check your permissions."
 msgstr ""
 
 #: kileprojectdlgs.cpp:362
-msgid ""
-"Please enter a filename for the file that should be added to this project."
+msgid "Please enter a filename for the file that should be added to this project."
 msgstr ""
 
 #: kileprojectdlgs.cpp:363

@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
-"POT-Creation-Date: 2004-09-29 01:30+0200\n"
+"POT-Creation-Date: 2004-10-06 18:18+0200\n"
 "PO-Revision-Date: 2004-08-12 18:36+0100\n"
 "Last-Translator: KD at Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -34,16 +34,20 @@ msgstr "Gwall tra'n darllen y ddogfen."
 msgid "Kexi Mail Merge"
 msgstr "Cyfuno Post Kexi"
 
-#: core/kexidialogbase.cpp:283
+#: core/kexiguimsghandler.cpp:115
+msgid "Unknown error"
+msgstr "Gwall anhysbys"
+
+#: core/kexidialogbase.cpp:280
 #, fuzzy
 msgid "Design has been changed. You must save it before switching to other view."
 msgstr "Newidwyd y cynllun. Rhaid i chi ei gadw cyn newid i olwg arall."
 
-#: core/kexidialogbase.cpp:447
+#: core/kexidialogbase.cpp:445
 msgid "Saving object's definition failed."
 msgstr ""
 
-#: core/kexidialogbase.cpp:472
+#: core/kexidialogbase.cpp:469
 msgid "Saving object's data failed."
 msgstr ""
 
@@ -171,35 +175,49 @@ msgstr "Ysgafn"
 msgid "Bold"
 msgstr "Trwm"
 
-#: core/kexiproject.cpp:82
+#: core/kexiproject.cpp:106
 msgid "Could not open project \"%1\""
 msgstr "Methwyd agor cywaith \"%1\""
 
-#: core/kexiproject.cpp:101
+#: core/kexiproject.cpp:125
 msgid "Could not create project \"%1\""
 msgstr "Methwyd creu cywaith \"%1\""
 
-#: core/kexiproject.cpp:151
-#, fuzzy
-msgid "Could not connect to \"%1\" database."
-msgstr "Heb ei gysylltu â gweinydd y gronfa ddata"
-
-#: core/kexiproject.cpp:350
+#: core/kexiproject.cpp:385
 msgid "Opening object \"%1\" failed."
 msgstr ""
 
-#: core/kexiproject.cpp:397 main/keximainwindowimpl.cpp:2400
+#: core/kexiproject.cpp:435 main/keximainwindowimpl.cpp:2451
 msgid "Could not set empty name for this object."
 msgstr ""
 
-#: core/kexiproject.cpp:401
+#: core/kexiproject.cpp:439
 msgid "Could not use this name. Object with name \"%1\" already exists."
 msgstr ""
 
-#: core/kexiproject.cpp:405
+#: core/kexiproject.cpp:444
 #, fuzzy
 msgid "Could not rename object \"%1\"."
 msgstr "Methwyd creu cywaith \"%1\""
+
+#: core/kexiproject.cpp:578
+#, fuzzy
+msgid "Warning: entire project's data will be removed."
+msgstr "Mewnosod enw cronfa ddata'r cywaith"
+
+#: core/kexiproject.cpp:592
+#, fuzzy
+msgid ""
+"The project \"%1\" already exists.\n"
+"Do you want to replace it with a new, blank one?"
+msgstr ""
+"Mae'r ffeil \"%1\" eisoes mewn bod.\n"
+" Ydych eisiau ysgrifennu drosti?\n"
+
+#: core/kexiproject.cpp:618
+#, fuzzy
+msgid "Do you want to drop the project \"%1\"?"
+msgstr "Ydych eisiau dileu ymholiad \"%1\"?"
 
 #: core/kexipart.cpp:208
 msgid "Failed loading object's definition."
@@ -209,11 +227,11 @@ msgstr ""
 msgid "Data may be corrupted."
 msgstr ""
 
-#: core/kexipart.cpp:256
+#: core/kexipart.cpp:257
 msgid "Failed loading object's data."
 msgstr ""
 
-#: core/kexipart.cpp:256
+#: core/kexipart.cpp:257
 msgid "Data identifier: \"%1\"."
 msgstr ""
 
@@ -255,9 +273,8 @@ msgid "No View"
 msgstr ""
 
 #: core/kexi.cpp:57
-#, fuzzy
 msgid "Data View"
-msgstr "Golwg &Data"
+msgstr "Golwg Data"
 
 #: core/kexi.cpp:58
 #, fuzzy
@@ -265,9 +282,8 @@ msgid "Design View"
 msgstr "Golwg &Cynllunio"
 
 #: core/kexi.cpp:59
-#, fuzzy
 msgid "Text View"
-msgstr "Golwg &Testun"
+msgstr "Golwg Testun"
 
 #: core/kexi.cpp:61
 msgid "Unknown"
@@ -546,28 +562,87 @@ msgstr "Agor &Hen Gywaith"
 msgid "Open &Recent Project"
 msgstr "Agor &Cywaith Diweddar"
 
-#: main/startup/KexiStartup.cpp:152
-msgid ""
-"You have set both \"final-mode\" and \"design-mode\" startup options.Cannot "
-"start Kexi application this way."
+#: main/startup/KexiStartup.cpp:185
+msgid "You have specified invalid port number \"%1\"."
 msgstr ""
 
-#: main/startup/KexiStartup.cpp:284
-msgid "<qt>The file \"%1\" does not exist."
+#: main/startup/KexiStartup.cpp:196
+msgid "Could not start Kexi application this way."
+msgstr ""
+
+#: main/startup/KexiStartup.cpp:199
+msgid "You have used both \"createdb\" and \"dropdb\" startup options."
+msgstr ""
+
+#: main/startup/KexiStartup.cpp:205
+#, fuzzy
+msgid "No project name specified."
+msgstr "Methu gollwng y gronfa ddata - ni roddwyd enw."
+
+#: main/startup/KexiStartup.cpp:215
+#, fuzzy
+msgid "Please enter the password."
+msgstr "Rhowch yr enw."
+
+#: main/startup/KexiStartup.cpp:216
+#, fuzzy, c-format
+msgid "Please enter the password for user %1."
+msgstr "Rhowch yr enw."
+
+#: main/startup/KexiStartup.cpp:220
+#, fuzzy
+msgid "local database server"
+msgstr "Disgwylwyd enw ffeil ar gyfer gyrrydd feil-seiliedig."
+
+#: main/startup/KexiStartup.cpp:221
+#, fuzzy, c-format
+msgid "Database server: %1."
+msgstr "Gwall Cronfa Ddata"
+
+#: main/startup/KexiStartup.cpp:239
+msgid "You have used both \"final-mode\" and \"design-mode\" startup options."
+msgstr ""
+
+#: main/startup/KexiStartup.cpp:253
+#, fuzzy
+msgid "Could not remove project. The file \"%1\" does not exist."
 msgstr "<qt>Nid yw'r ffeil \"%1\" mewn bod."
 
-#: main/startup/KexiStartup.cpp:300
+#: main/startup/KexiStartup.cpp:278
+msgid ""
+"You have specified a few database objects to be opened automatically, using "
+"startup options.\n"
+"These options will be ignored because it is not available while creating or "
+"dropping projects."
+msgstr ""
+
+#: main/startup/KexiStartup.cpp:301
+msgid "Project \"%1\" created successfully."
+msgstr ""
+
+#: main/startup/KexiStartup.cpp:311
+msgid "Project \"%1\" dropped successfully."
+msgstr ""
+
+#: main/startup/KexiStartup.cpp:422
+#, fuzzy
+msgid "Could not load project. The file \"%1\" does not exist."
+msgstr "<qt>Nid yw'r ffeil \"%1\" mewn bod."
+
+#: main/startup/KexiStartup.cpp:439
 msgid "The file \"%1\" is not recognized as being supported by Kexi."
 msgstr "Nid adnabyddir y ffeil \"%1\" fel un a gynhelir gan Kexi."
 
-#: main/startup/KexiStartup.cpp:301
+#: main/startup/KexiStartup.cpp:440
 #, fuzzy, c-format
-msgid "<qt>Database driver for this file type not found. <p>Detected MIME type: %1"
+msgid ""
+"Database driver for this file type not found.\n"
+"Detected MIME type: %1"
 msgstr ""
 "<qt>Ni chafwyd gyrrydd cronfa ddata ar gyfer y math yma o "
 "ffeil.<p>Darganfuwyd math MIME: %1"
 
-#: main/startup/KexiStartup.cpp:324
+#: main/startup/KexiStartup.cpp:464
 msgid "Could not load list of available projects for connection \"%1\""
 msgstr "Methwyd llwytho y rhestr o gyweithiau ar gael ar gyfer y cysylltiad \"%1\""
 
@@ -670,12 +745,13 @@ msgstr ""
 "<b>Mae cywaith o'r enw \"%1\" mewn bod eisoes.</b>"
 "<p>Ydych eisiau ei ddileu a chreu un newydd?"
 
-#: main/keximainwindowimpl.cpp:329 main/keximainwindowimpl.cpp:359 rc.cpp:66
+#. i18n: file data/kexiui.rc line 90
+#: main/keximainwindowimpl.cpp:330 main/keximainwindowimpl.cpp:359 rc.cpp:99
 #, no-c-format
 msgid "&Window"
 msgstr "&Ffenestr"
 
-#: main/keximainwindowimpl.cpp:332
+#: main/keximainwindowimpl.cpp:333
 #, fuzzy
 msgid "Task Bar"
 msgstr "Bar tasgau"
@@ -717,7 +793,7 @@ msgstr "Cadw newidiadau i'r gwrthrych o'r ffenestr a ddewisir ar hyn o bryd"
 msgid "Save &As..."
 msgstr "Cadw &Fel..."
 
-#: main/keximainwindowimpl.cpp:412 main/keximainwindowimpl.cpp:1626
+#: main/keximainwindowimpl.cpp:412 main/keximainwindowimpl.cpp:1694
 msgid "Save object as"
 msgstr "Cadw gwrthrych fel"
 
@@ -864,11 +940,11 @@ msgstr "Mynd i banel y golygydd priodweddau"
 msgid "Goes to Property editor panel."
 msgstr "Mynd i'r panel golygu priodweddau."
 
-#: main/keximainwindowimpl.cpp:490 main/keximainwindowimpl.cpp:1659
+#: main/keximainwindowimpl.cpp:490 main/keximainwindowimpl.cpp:1726
 msgid "From File..."
 msgstr "O Ffeil..."
 
-#: main/keximainwindowimpl.cpp:492 main/keximainwindowimpl.cpp:1664
+#: main/keximainwindowimpl.cpp:492 main/keximainwindowimpl.cpp:1731
 msgid "From Server..."
 msgstr "O Weinydd..."
 
@@ -889,9 +965,8 @@ msgid "&Filter"
 msgstr "&Hidlen"
 
 #: main/keximainwindowimpl.cpp:506
-#, fuzzy
 msgid "&Ascending"
-msgstr "Esgynnol"
+msgstr "&Esgynnol"
 
 #: main/keximainwindowimpl.cpp:508
 msgid "Sort data in ascending order"
@@ -904,9 +979,8 @@ msgid ""
 msgstr ""
 
 #: main/keximainwindowimpl.cpp:511
-#, fuzzy
 msgid "&Descending"
-msgstr "Disgynnol"
+msgstr "&Disgynnol"
 
 #: main/keximainwindowimpl.cpp:513
 msgid "Sort data in descending order"
@@ -957,7 +1031,7 @@ msgstr "Gadael i chi ffurweddu Kexi."
 msgid "This shows useful tips on the use of this application."
 msgstr "Dengys hyn gynghorion defnyddiol ar ddefnydd y rhaglen hon."
 
-#: main/keximainwindowimpl.cpp:558 main/keximainwindowimpl.cpp:2487
+#: main/keximainwindowimpl.cpp:558 main/keximainwindowimpl.cpp:2538
 #, fuzzy
 msgid "Important Information"
 msgstr "Gwybodaeth bwysig"
@@ -966,28 +1040,28 @@ msgstr "Gwybodaeth bwysig"
 msgid "reason:"
 msgstr "rheswm:"
 
-#: main/keximainwindowimpl.cpp:717
+#: main/keximainwindowimpl.cpp:718
 #, fuzzy
 msgid "cannot create object - "
 msgstr "methu creu gwrthrych -"
 
-#: main/keximainwindowimpl.cpp:718
+#: main/keximainwindowimpl.cpp:719
 msgid "unknown object type \"%1\""
 msgstr "math anhysbys o wrthrych \"%1\""
 
-#: main/keximainwindowimpl.cpp:725
+#: main/keximainwindowimpl.cpp:726
 msgid "cannot create object of type \"%1\""
 msgstr "methu creu gwrthrych o fath \"%1\""
 
-#: main/keximainwindowimpl.cpp:735
+#: main/keximainwindowimpl.cpp:736
 msgid "object not found"
 msgstr "ni chafwyd y gwrthrych"
 
-#: main/keximainwindowimpl.cpp:748
+#: main/keximainwindowimpl.cpp:749
 msgid "cannot open object"
 msgstr "methu agor y gwrthrych"
 
-#: main/keximainwindowimpl.cpp:756
+#: main/keximainwindowimpl.cpp:758
 #, fuzzy
 msgid ""
 "You have requested selected objects to be opened automatically on startup. "
@@ -996,11 +1070,11 @@ msgstr ""
 "Rydych wedi gofyn agor sawl gwrthrych yn ymysgogol wrth ymgychwyn.  Ni cheir "
 "agor sawl gwrthrych."
 
-#: main/keximainwindowimpl.cpp:813
+#: main/keximainwindowimpl.cpp:812
 msgid "Welcome"
 msgstr "Croeso"
 
-#: main/keximainwindowimpl.cpp:813
+#: main/keximainwindowimpl.cpp:812
 #, fuzzy
 msgid ""
 "The <B>KEXI team</B>"
@@ -1028,38 +1102,34 @@ msgstr ""
 "href=\"http://www.kexi-project.org\">www.kexi-project.org</A>"
 " yn fan gychwyn dda."
 
-#: main/keximainwindowimpl.cpp:1480
+#: main/keximainwindowimpl.cpp:1479
 #, fuzzy
 msgid "Create another project"
 msgstr "Creu cywaith newydd"
 
-#: main/keximainwindowimpl.cpp:1716
+#: main/keximainwindowimpl.cpp:1781
 msgid "Selected view mode is not supported for \"%1\" object."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:1718
+#: main/keximainwindowimpl.cpp:1783
 msgid "Selected view mode (%1) is not supported by this object type (%2)"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:1726
+#: main/keximainwindowimpl.cpp:1792
 #, fuzzy
 msgid "Switching to other view failed (%1)."
 msgstr "Methwyd mewnosod y rhes ar y gweinydd."
 
-#: main/keximainwindowimpl.cpp:1783
-msgid "Unknown error"
-msgstr "Gwall anhysbys"
-
-#: main/keximainwindowimpl.cpp:1873
+#: main/keximainwindowimpl.cpp:1936
 #, fuzzy
 msgid "Saving \"%1\" object failed."
 msgstr "Cadw gwrthrych fel"
 
-#: main/keximainwindowimpl.cpp:1891
+#: main/keximainwindowimpl.cpp:1954
 msgid "Save Object As"
 msgstr "Cadw'r Gwrthrych Fel"
 
-#: main/keximainwindowimpl.cpp:1905
+#: main/keximainwindowimpl.cpp:1966
 #, fuzzy
 msgid ""
 "%1 \"%2\" already exists.\n"
@@ -1068,58 +1138,59 @@ msgstr ""
 "%1 \"%2\" mewn bod eisoes.\n"
 " Dewiswch enw arall.\n"
 
-#: main/keximainwindowimpl.cpp:1922
+#: main/keximainwindowimpl.cpp:1982
 msgid "Saving new \"%1\" object failed."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:1952
+#: main/keximainwindowimpl.cpp:2011
 #, fuzzy
 msgid "<p>The object has been modified: %1 \"%2\".</p><p>Do you want to save it?</p>"
 msgstr "<p>Addasiwyd y gwrthrych: %1 \"%2\".</p><p>Ydych eisiau ei gadw?</p>"
 
-#: main/keximainwindowimpl.cpp:2362
+#: main/keximainwindowimpl.cpp:2417
 msgid "Do you want to remove:"
 msgstr "Ydych eisiau gwaredu:"
 
-#: main/keximainwindowimpl.cpp:2528
+#: main/keximainwindowimpl.cpp:2579
 msgid ""
 "Please note that forms are currently unstable functionality, provided "
 "<u>only for your preview</u>."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:2531
+#: main/keximainwindowimpl.cpp:2582
 msgid "Forms will be available after restarting Kexi application."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:2535
+#: main/keximainwindowimpl.cpp:2586
 msgid "Forms will be hidden after restarting Kexi application."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:2559
+#: main/keximainwindowimpl.cpp:2610
 #, fuzzy
 msgid "Could not start project \"%1\" in Final Mode."
 msgstr "Methwyd creu cywaith \"%1\""
 
-#: main/keximainwindowimpl.cpp:2564
+#: main/keximainwindowimpl.cpp:2615
 msgid "No Final Mode data found."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:2572
+#: main/keximainwindowimpl.cpp:2623
 #, fuzzy
 msgid "Error reading Final Mode data."
 msgstr "Gwall tra'n darllen y ddogfen."
 
-#: main/keximainwindowimpl.cpp:2602
+#: main/keximainwindowimpl.cpp:2653
 #, fuzzy
 msgid "Specified plugin does not exist."
 msgstr "Nid yw ffeil %1 yn bodoli."
 
-#: main/keximainwindowimpl.cpp:2610
+#: main/keximainwindowimpl.cpp:2661
 #, fuzzy
 msgid "Specified object could not be opened."
 msgstr "Creuwyd cronfa ddata \"%1\" ond methwyd ei hagor"
 
-#: main/kexinamewidget.cpp:63 rc.cpp:90
+#. i18n: file ./main/projectsettingsui.ui line 78
+#: main/kexinamewidget.cpp:63 rc.cpp:135
 #, no-c-format
 msgid "Caption:"
 msgstr "Pennawd:"
@@ -1148,12 +1219,14 @@ msgstr "Pell"
 msgid "Custom socket:"
 msgstr "Soced addasiedig:"
 
-#: main/projectWizard/kexicreateprojectpagelocation.cpp:48 rc.cpp:290
+#. i18n: file ./main/projectWizard/kexicreateprojectpageconnectionwidget.ui line 183
+#: main/projectWizard/kexicreateprojectpagelocation.cpp:48 rc.cpp:425
 #, no-c-format
 msgid "Host:"
 msgstr "Gwesteiwr:"
 
-#: main/projectWizard/kexicreateprojectpagelocation.cpp:50 rc.cpp:293
+#. i18n: file ./main/projectWizard/kexicreateprojectpageconnectionwidget.ui line 218
+#: main/projectWizard/kexicreateprojectpagelocation.cpp:50 rc.cpp:429
 #, no-c-format
 msgid "Port:"
 msgstr "Porth:"
@@ -1163,12 +1236,12 @@ msgid "default port"
 msgstr "porth ragosodol"
 
 #: main/projectWizard/kexicreateprojectpageengine.cpp:69
-#, fuzzy
 msgid "Driver: "
-msgstr "Gyrrydd:"
+msgstr "Gyrrydd : "
 
+#. i18n: file ./main/startup/KexiConnSelectorBase.ui line 90
 #: main/projectWizard/kexicreateproject.cpp:52
-#: main/projectWizard/kexicreateprojectpageengine.cpp:86 rc.cpp:229 rc.cpp:272
+#: main/projectWizard/kexicreateprojectpageengine.cpp:86 rc.cpp:336 rc.cpp:399
 #, no-c-format
 msgid "Engine"
 msgstr "Peiriant"
@@ -1197,13 +1270,15 @@ msgstr ""
 msgid "Internal error while retrieving information. (No driver installed ?)"
 msgstr "Gwall mewnol tra'n nôl gwybodaeth. (Gyrrydd heb ei arsefydlu?)"
 
-#: main/projectWizard/kexicreateproject.cpp:54 rc.cpp:277
+#. i18n: file ./main/projectWizard/kexicreateprojectpageconnectionwidget.ui line 30
+#: main/projectWizard/kexicreateproject.cpp:54 rc.cpp:406
 #, no-c-format
 msgid "Location"
 msgstr "Lleoliad"
 
+#. i18n: file ./main/projectWizard/kexicreateprojectpageconnectionwidget.ui line 270
 #: main/projectWizard/kexicreateproject.cpp:56
-#: main/projectWizard/kexicreateprojectpageauth.cpp:35 rc.cpp:299
+#: main/projectWizard/kexicreateprojectpageauth.cpp:35 rc.cpp:438
 #, no-c-format
 msgid "Authentication"
 msgstr "Dilysiant"
@@ -1216,7 +1291,8 @@ msgstr "Dewis Cronfa Ddata"
 msgid "Select from existing databases:"
 msgstr "Dewis o hen gronfeydd data:"
 
-#: main/projectWizard/kexicreateprojectpagedb.cpp:64 rc.cpp:270
+#. i18n: file ./main/startup/KexiProjectSelectorBase.ui line 64
+#: main/projectWizard/kexicreateprojectpagedb.cpp:64 rc.cpp:396
 #, no-c-format
 msgid "Database"
 msgstr "Cronfa ddata"
@@ -1244,7 +1320,8 @@ msgstr "Cysylltiad Cronfa Ddata"
 msgid "User:"
 msgstr "Defnyddiwr:"
 
-#: main/projectWizard/kexicreateprojectpageauth.cpp:39 rc.cpp:303
+#. i18n: file ./main/projectWizard/kexicreateprojectpageconnectionwidget.ui line 294
+#: main/projectWizard/kexicreateprojectpageauth.cpp:39 rc.cpp:444
 #, no-c-format
 msgid "Password:"
 msgstr "Cyfrinair:"
@@ -1286,7 +1363,32 @@ msgstr ""
 
 #: main.cpp:45
 #, fuzzy
+msgid "Options related to entire projects:"
+msgstr "Agor cywaith diweddar"
+
+#: main.cpp:47
 msgid ""
+"Create a new, blank project using specified\n"
+"database driver and database name.\n"
+"You will be asked for confirmation\n"
+"if overwriting is needed."
+msgstr ""
+
+#: main.cpp:52
+msgid ""
+"Drop (remove) a project using specified\n"
+"database driver and database name.\n"
+"You will be asked for confirmation."
+msgstr ""
+
+#: main.cpp:56
+msgid "Options related to opening objects within a project:"
+msgstr ""
+
+#: main.cpp:58
+#, fuzzy
+msgid ""
+"\n"
 "Open object of type <object_type>\n"
 "and name <object_name> from specified project\n"
 "on application start.\n"
@@ -1311,42 +1413,101 @@ msgstr ""
 " Enghreifftiau: --open FyNhabl.\n"
 " --open query:\"Fy ymholiad anferth\"\n"
 
-#: main.cpp:57
+#: main.cpp:70
 #, fuzzy
 msgid ""
+"\n"
 "Like --open, but the object will\n"
 "be opened in Design Mode, if one is available"
 msgstr ""
 "Fel --open, ond agorir y gwrthrych\n"
 " ym Modd Cynllunio, os oes un ar gael.\n"
 
-#: main.cpp:60
+#: main.cpp:73
 #, fuzzy
 msgid ""
+"\n"
 "Like --open, but the object will\n"
 "be opened in Text Mode, if one is available"
 msgstr ""
 "Fel --open, ond agorir y gwrthrych\n"
 " ym Modd Cynllunio, os oes un ar gael.\n"
 
-#: main.cpp:63
+#: main.cpp:76
 msgid "Start new object design of type <object_type>"
 msgstr "Cychwyn cynllun gwrthrych newydd o fath <math_gwrthrych>."
 
-#: main.cpp:65
+#: main.cpp:78
 msgid ""
 "Start project in the Final Mode, regardless \n"
 "of the project settings"
 msgstr ""
 
-#: main.cpp:68
+#: main.cpp:81
 msgid ""
 "Start project in the Design Mode, regardless \n"
 "of the project settings"
 msgstr ""
 
-#: main.cpp:71
-msgid "Database project file (or shortcut file) to open"
+#: main.cpp:84
+#, fuzzy
+msgid "Options related to database servers:"
+msgstr "Heb ei gysylltu â gweinydd y gronfa ddata"
+
+#: main.cpp:87
+msgid ""
+"Database driver to be used\n"
+"for connecting to a database project.\n"
+"Ignored if a shortcut filename\n"
+"is provided."
+msgstr ""
+
+#: main.cpp:93
+msgid ""
+"User name to be used\n"
+"for connecting to a database project.\n"
+"Ignored if a shortcut filename\n"
+"is provided."
+msgstr ""
+
+#: main.cpp:98
+msgid ""
+"User password to be used\n"
+"for connecting to a database project.\n"
+"Ignored if a shortcut filename\n"
+"is provided."
+msgstr ""
+
+#: main.cpp:104
+msgid ""
+"Server (host) name to be used\n"
+"for connecting to a database project.\n"
+"Ignored if a shortcut filename\n"
+"is provided."
+msgstr ""
+
+#: main.cpp:109
+msgid ""
+"Server's port name to be used\n"
+"for connecting to a database project.\n"
+"Ignored if a shortcut filename\n"
+"is provided."
+msgstr ""
+
+#: main.cpp:114
+msgid ""
+"Server's local socket filename\n"
+"to be used for connecting to a database\n"
+"project. Ignored if a shortcut filename\n"
+"is provided."
+msgstr ""
+
+#: main.cpp:120
+#, fuzzy
+msgid ""
+"Database project filename\n"
+"or shortcut filename\n"
+"or database name on a server to open"
 msgstr "Ffeil gywaith cronfa ddata (neu ffeil fyrlwybr) i'w hagor."
 
 #: migration/importwizard.cpp:87
@@ -1452,79 +1613,78 @@ msgstr "Maes Cyrchfan"
 msgid "Finished"
 msgstr "Wedi Gorffen"
 
-#: kexidb/field.cpp:601
+#: kexidb/field.cpp:604
 msgid "Invalid type"
 msgstr "Math annilys"
 
-#: kexidb/field.cpp:602
+#: kexidb/field.cpp:605
 msgid "Byte"
 msgstr "Beit"
 
-#: kexidb/field.cpp:603
+#: kexidb/field.cpp:606
 msgid "Short integer number"
 msgstr "Cyfanrif cwta"
 
-#: kexidb/field.cpp:604 kexidb/field.cpp:634
+#: kexidb/field.cpp:607 kexidb/field.cpp:637
 msgid "Integer number"
 msgstr "Cyfanrif"
 
-#: kexidb/field.cpp:605
+#: kexidb/field.cpp:608
 msgid "Big integer number"
 msgstr "Cyfanrif mawr"
 
-#: kexidb/field.cpp:606
+#: kexidb/field.cpp:609
 msgid "Yes/No value"
 msgstr "Gwerth Ie/Nage"
 
-#: kexidb/field.cpp:607
+#: kexidb/field.cpp:610
 msgid "Date"
 msgstr "Dyddiad"
 
-#: kexidb/field.cpp:608
+#: kexidb/field.cpp:611
 msgid "Date and time"
 msgstr "Dyddiad ac amser"
 
-#: kexidb/field.cpp:609
+#: kexidb/field.cpp:612
 msgid "Time"
 msgstr "Amser"
 
-#: kexidb/field.cpp:610
+#: kexidb/field.cpp:613
 msgid "Single precision number"
 msgstr "Rhif gywirdeb sengl"
 
-#: kexidb/field.cpp:611
+#: kexidb/field.cpp:614
 msgid "Double precision number"
 msgstr "Rhif cywirdeb dwbl"
 
-#: kexidb/field.cpp:612 kexidb/field.cpp:633
+#: kexidb/field.cpp:615 kexidb/field.cpp:636
 msgid "Text"
 msgstr "Testun"
 
-#: kexidb/field.cpp:613
+#: kexidb/field.cpp:616
 msgid "Long text"
 msgstr "Testun hir"
 
-#: kexidb/field.cpp:614 kexidb/field.cpp:638
+#: kexidb/field.cpp:617 kexidb/field.cpp:641
 msgid "Object"
 msgstr "Gwrthrych"
 
-#: kexidb/field.cpp:632
+#: kexidb/field.cpp:635
 msgid "Invalid group"
 msgstr "Grŵp annilys"
 
-#: kexidb/field.cpp:635
+#: kexidb/field.cpp:638
 msgid "Floating point number"
 msgstr "Rhif pwynt arnawf"
 
-#: kexidb/field.cpp:636
+#: kexidb/field.cpp:639
 msgid "Yes/No"
 msgstr "Ie/Nage"
 
-#: kexidb/field.cpp:637
+#: kexidb/field.cpp:640
 msgid "Date/Time"
 msgstr "Dyddiad/Amser"
 
-#: kexidb/drivers/mySQL/mysqlcursor.cpp:60
 #: kexidb/drivers/pqxx/pqxxcursor.cpp:66
 msgid "No connection for cursor open operation specified"
 msgstr "Dim cysylltiad wedi'i benodi ar gyfer y weithred agor cwrchydd"
@@ -1574,100 +1734,113 @@ msgstr "Methu llwytho gyrrydd cronfa ddata \"%1\"."
 msgid "No such driver service: \"%1\"."
 msgstr "Dim gyrrydd o'r math: \"%1\"."
 
-#: sqlscanner.l:279 sqlscanner.l:291
+#: sqlscanner.l:232
 #, fuzzy
 msgid "Invalid identifier"
 msgstr "Math annilys"
 
-#: sqlparser.y:475
+#: sqlscanner.l:232
+msgid "Identifiers should start with a letter or '_' character"
+msgstr ""
+
+#: sqlparser.y:494
+msgid "identifier was expected"
+msgstr ""
+
+#: sqlparser.y:500 sqlparser.y:502
 msgid "Syntax Error"
 msgstr "Gwall Cystrawen"
 
-#: sqlparser.y:475
+#: sqlparser.y:500
+msgid "\"%1\" is a reserved keyword"
+msgstr ""
+
+#: sqlparser.y:502
 #, fuzzy
 msgid "Syntax Error near \"%1\""
 msgstr "Gwall Cystrawen ger '%1'"
 
-#: sqlparser.y:493
-#, fuzzy
-msgid "Table not found"
-msgstr "ni chafwyd y gwrthrych"
-
-#: sqlparser.y:493
-#, fuzzy
-msgid "Unknown table \"%1\""
-msgstr "math anhysbys o wrthrych \"%1\""
-
-#: sqlparser.y:512
+#: sqlparser.y:538
 msgid "No query specified"
 msgstr ""
 
-#: sqlparser.y:598
+#: kexidb/expression.cpp:387 sqlparser.y:646
 #, fuzzy
 msgid "Ambiguous field name"
 msgstr "Enw maes"
 
-#: sqlparser.y:599
+#: kexidb/expression.cpp:388 sqlparser.y:647
 msgid ""
 "Both table \"%1\" and \"%2\" have defined \"%3\" field. Use "
 "\"<tableName>.%4\" notation to specify table name."
 msgstr ""
 
-#: sqlparser.y:608 sqlparser.y:690
+#: kexidb/expression.cpp:397 kexidb/expression.cpp:468 sqlparser.y:656
+#: sqlparser.y:737
 #, fuzzy
 msgid "Field not found"
 msgstr "Ymholiad heb ei ganfod"
 
-#: sqlparser.y:609
+#: kexidb/expression.cpp:398 sqlparser.y:657
 msgid "Table containing \"%1\" field not found"
 msgstr ""
 
-#: sqlparser.y:632
+#: kexidb/expression.cpp:423 sqlparser.y:680
 msgid "Could not access the table directly using its name"
 msgstr ""
 
-#: sqlparser.y:633
+#: kexidb/expression.cpp:424 sqlparser.y:681
 msgid "Table \"%1\" is covered by aliases. Instead of \"%2\", you can write \"%3\""
 msgstr ""
 
-#: sqlparser.y:660
+#: kexidb/expression.cpp:456 sqlparser.y:708
 msgid "Ambiguous \"%1.*\" expression"
 msgstr ""
 
-#: sqlparser.y:661
+#: kexidb/expression.cpp:457 sqlparser.y:709
 msgid "More than one \"%1\" table or alias defined"
 msgstr ""
 
-#: sqlparser.y:681
+#: kexidb/expression.cpp:484 sqlparser.y:728
 msgid "Ambiguous \"%1.%2\" expression"
 msgstr ""
 
-#: sqlparser.y:682
+#: kexidb/expression.cpp:486 sqlparser.y:729
 msgid "More than one \"%1\" table or alias defined containing \"%2\" field"
 msgstr ""
 
-#: sqlparser.y:690
+#: kexidb/expression.cpp:469 sqlparser.y:737
 #, fuzzy
 msgid "Table \"%1\" has no \"%2\" field"
 msgstr "Ni cheir gwaredu tabl \"%1\"."
 
-#: sqlparser.y:970
+#: sqlparser.y:1020
 msgid "Field List Error"
 msgstr "Gwall Rhestr Meysydd"
 
-#: sqlparser.y:971
+#: sqlparser.y:1021
 #, fuzzy
 msgid "Table \"%1\" does not exist"
 msgstr "Nid yw'r gronfa ddata \"%1\" yn bodoli."
 
-#: sqlparser.y:1036
+#: sqlparser.y:1089
+msgid "Invalid column alias definition"
+msgstr ""
+
+#: sqlparser.y:1117
 #, fuzzy
 msgid "Invalid column definition"
 msgstr "Math annilys"
 
-#: sqlparser.y:1050
-msgid "Invalid column alias definition"
-msgstr ""
+#: kexidb/expression.cpp:442
+#, fuzzy
+msgid "Table not found"
+msgstr "ni chafwyd y gwrthrych"
+
+#: kexidb/expression.cpp:443
+#, fuzzy
+msgid "Unknown table \"%1\""
+msgstr "math anhysbys o wrthrych \"%1\""
 
 #: kexidb/connectiondata.cpp:90
 msgid "file"
@@ -1706,7 +1879,7 @@ msgstr ""
 msgid "Ignored"
 msgstr ""
 
-#: kexidb/driver.cpp:74 plugins/queries/kexiquerydesignerguieditor.cpp:857
+#: kexidb/driver.cpp:74 plugins/queries/kexiquerydesignerguieditor.cpp:855
 msgid "None"
 msgstr "Dim"
 
@@ -1757,164 +1930,178 @@ msgstr ""
 msgid "Connection already established."
 msgstr "Cysylltiad wedi'i sefydlu eisoes"
 
-#: kexidb/connection.cpp:204
+#: kexidb/connection.cpp:170
+#, fuzzy
+msgid "Could not open \"%1\" project file."
+msgstr "Methwyd agor cywaith \"%1\""
+
+#: kexidb/connection.cpp:171
+#, fuzzy
+msgid "Could not connect to \"%1\" database server."
+msgstr "Heb ei gysylltu â gweinydd y gronfa ddata"
+
+#: kexidb/connection.cpp:208
 msgid "Not connected to the database server."
 msgstr "Heb ei gysylltu â gweinydd y gronfa ddata"
 
-#: kexidb/connection.cpp:214
+#: kexidb/connection.cpp:218
 msgid "Currently no database is used."
 msgstr "Ni ddefnyddir cronfa ddata ar hyn o bryd."
 
-#: kexidb/connection.cpp:270
+#: kexidb/connection.cpp:274
 msgid "The database \"%1\" does not exist."
 msgstr "Nid yw'r gronfa ddata \"%1\" yn bodoli."
 
-#: kexidb/connection.cpp:290
+#: kexidb/connection.cpp:294
 msgid "Database file \"%1\" does not exist."
 msgstr "Nid yw'r ffeil gronfa ddata \"%1\" yn bodoli."
 
-#: kexidb/connection.cpp:295
+#: kexidb/connection.cpp:299
 msgid "Database file \"%1\" is not readable."
 msgstr "Ni ellir darllen y ffeil gronfa ddata \"%1\"."
 
-#: kexidb/connection.cpp:300
+#: kexidb/connection.cpp:304
 msgid "Database file \"%1\" is not writable."
 msgstr "Ni ellir ysgrifennu'r ffeil gronfa ddata \"%1\"."
 
-#: kexidb/connection.cpp:342
+#: kexidb/connection.cpp:346
 msgid "Database \"%1\" already exists."
 msgstr "Mae cronfa ddata \"%1\" yn bodoli eisoes."
 
-#: kexidb/connection.cpp:346
+#: kexidb/connection.cpp:350
 #, fuzzy
 msgid "Cannot create database \"%1\". This name is reserved for system database."
 msgstr ""
 "Methu creu cronfa ddata \"%1\". Neilltuir yr enw hwn ar gyfer cronfa ddata'r "
 "cysawd."
 
-#: kexidb/connection.cpp:361
+#: kexidb/connection.cpp:365
 msgid "Error creating database \"%1\" on the server."
 msgstr "Gwall wrth greu cronfa ddata \"%1\" ar y gweinydd."
 
-#: kexidb/connection.cpp:375
+#: kexidb/connection.cpp:379
 msgid "Database \"%1\" created but could not be opened."
 msgstr "Creuwyd cronfa ddata \"%1\" ond methwyd ei hagor"
 
-#: kexidb/connection.cpp:472
+#: kexidb/connection.cpp:467
+msgid "Opening database \"%1\" failed"
+msgstr ""
+
+#: kexidb/connection.cpp:478
 msgid "\"%1\" database property not found"
 msgstr "Ni chafwyd priodwedd cronfa ddata \"%1\""
 
-#: kexidb/connection.cpp:489
+#: kexidb/connection.cpp:495
 msgid "Database version (%1) does not match Kexi application's version (%2)"
 msgstr ""
 "Nid yw fersiwn (%1) y gronfa ddata yn cydweddu â fersiwn y cymhwysiad Kexi "
 "(%2)"
 
-#: kexidb/connection.cpp:553
+#: kexidb/connection.cpp:559
 msgid "Cannot find any database for temporary connection."
 msgstr "Methu cael hyd i gronfa ddata ar gyfer cysylltiad dros dro"
 
-#: kexidb/connection.cpp:557
+#: kexidb/connection.cpp:563
 msgid "Error during starting temporary connection using \"%1\" database name."
 msgstr ""
 "Gwall wrth gychwyn cysylltiad dros dro gan ddefnyddio enw cronfa ddata "
 "\"%1\"."
 
-#: kexidb/connection.cpp:574
+#: kexidb/connection.cpp:580
 msgid "Cannot drop database - name not specified."
 msgstr "Methu gollwng y gronfa ddata - ni roddwyd enw."
 
-#: kexidb/connection.cpp:592
+#: kexidb/connection.cpp:598
 msgid "Cannot delete database - name not specified."
 msgstr "Methu dileu'r gronfa ddata- ni roddwyd enw."
 
-#: kexidb/connection.cpp:597
+#: kexidb/connection.cpp:603
 msgid "Cannot delete system database \"%1\"."
 msgstr "Ni cheir dileu cronfa ddata'r cysawd \"%1\"."
 
-#: kexidb/connection.cpp:934
+#: kexidb/connection.cpp:940
 #, fuzzy
 msgid "Error while executing SQL statement."
 msgstr "Gwall tra'n darllen y ddogfen."
 
-#: kexidb/connection.cpp:1100
+#: kexidb/connection.cpp:1112
 msgid "Cannot create table without fields."
 msgstr "Ni cheir creu tabl heb feysydd."
 
-#: kexidb/connection.cpp:1104
+#: kexidb/connection.cpp:1116
 msgid "System name \"%1\" cannot be used as table name."
 msgstr "Ni cheir defnyddio enw cysawd \"%1\" fel enw tabl."
 
-#: kexidb/connection.cpp:1111
+#: kexidb/connection.cpp:1123
 msgid "System name \"%1\" cannot be used as one of fields in \"%2\" table."
 msgstr "Ni cheir defnyddio enw cysawd \"%1\" fel un o feysydd tabl \"%2\"."
 
-#: kexidb/connection.cpp:1123
+#: kexidb/connection.cpp:1135
 #, fuzzy
 msgid "Could not create the same table \"%1\" twice."
 msgstr "Methwyd creu cywaith \"%1\""
 
-#: kexidb/connection.cpp:1135
+#: kexidb/connection.cpp:1147
 #, fuzzy
 msgid "Table \"%1\" already exists."
 msgstr "Mae cronfa ddata \"%1\" yn bodoli eisoes."
 
-#: kexidb/connection.cpp:1248
+#: kexidb/connection.cpp:1260
 #, fuzzy
 msgid "Could not remove object's data."
 msgstr "Methu gwaredu ffeil \"%1\". "
 
-#: kexidb/connection.cpp:1270
+#: kexidb/connection.cpp:1282
 msgid "Table \"%1\" cannot be removed."
 msgstr "Ni cheir gwaredu tabl \"%1\"."
 
-#: kexidb/connection.cpp:1305
+#: kexidb/connection.cpp:1317
 #, fuzzy
 msgid "Table \"%1\" does not exist."
 msgstr "Nid yw'r gronfa ddata \"%1\" yn bodoli."
 
-#: kexidb/connection.cpp:1316
+#: kexidb/connection.cpp:1328
 msgid "Could not alter table \"%1\" using the same table."
 msgstr ""
 
-#: kexidb/connection.cpp:1374
+#: kexidb/connection.cpp:1386
 #, fuzzy
 msgid "Query \"%1\" does not exist."
 msgstr "<qt>Nid yw'r ffeil \"%1\" mewn bod."
 
-#: kexidb/connection.cpp:1454
+#: kexidb/connection.cpp:1466
 msgid "Transaction already started."
 msgstr "Cychwynwyd y trosglwyddiad eisoes."
 
-#: kexidb/connection.cpp:1493 kexidb/connection.cpp:1526
+#: kexidb/connection.cpp:1505 kexidb/connection.cpp:1538
 msgid "Transaction not started."
 msgstr "Trosglwyddiad heb ei gychwyn."
 
-#: kexidb/connection.cpp:1507
+#: kexidb/connection.cpp:1519
 msgid "Error on commit transaction"
 msgstr "Gwall wrth gadarnhau'r trawsweithrediad"
 
-#: kexidb/connection.cpp:1540
+#: kexidb/connection.cpp:1552
 msgid "Error on rollback transaction"
 msgstr "Gwall wrth ddadwneud y trosglwyddiad"
 
-#: kexidb/connection.cpp:1697 kexidb/connection.cpp:1886
+#: kexidb/connection.cpp:1709 kexidb/connection.cpp:1898
 msgid "Invalid object name \"%1\""
 msgstr "Enw gwrthrych annilys \"%1\""
 
-#: kexidb/connection.cpp:2191 kexidb/connection.cpp:2321
+#: kexidb/connection.cpp:2203 kexidb/connection.cpp:2333
 msgid "Primary key's field \"%1\" cannot be empty."
 msgstr "Ni all maes y prif allwedd \"%1\" fod yn wag."
 
-#: kexidb/connection.cpp:2205
+#: kexidb/connection.cpp:2217
 msgid "Row updating on the server failed."
 msgstr "Methwyd diweddaru'r rhes ar y gweinydd."
 
-#: kexidb/connection.cpp:2255
+#: kexidb/connection.cpp:2267
 msgid "Row inserting on the server failed."
 msgstr "Methwyd mewnosod y rhes ar y gweinydd."
 
-#: kexidb/connection.cpp:2335
+#: kexidb/connection.cpp:2347
 msgid "Row deleting on the server failed."
 msgstr "Methwyd dileu y rhes ar y gweinydd."
 
@@ -1935,285 +2122,341 @@ msgstr "Enw canlyniad y gweinydd:"
 msgid "Server result number:"
 msgstr "Enw canlyniad y gweinydd:"
 
+#. i18n: file data/kexidatatableui.rc line 5
 #: plugins/queries/kexiquerydesignerguieditor.cpp:176
-#: plugins/tables/kexitablepart.cpp:44 rc.cpp:2
+#: plugins/tables/kexitablepart.cpp:44 rc.cpp:3
 #: widget/relations/kexirelationwidget.cpp:54
 #: widget/relations/kexirelationwidget.cpp:314
 #, no-c-format
 msgid "Table"
 msgstr "Tabl"
 
-#: rc.cpp:8 rc.cpp:12
+#. i18n: file data/kexiformeditorui.rc line 17
+#: rc.cpp:12 rc.cpp:18
 #, no-c-format
 msgid "Widgets"
 msgstr "Celfigion"
 
-#: rc.cpp:10
-#, fuzzy, no-c-format
+#. i18n: file data/kexiformpartinstui.rc line 14
+#: rc.cpp:15
+#, no-c-format
 msgid "&Format"
-msgstr "Ffurflen"
+msgstr "&Fformat"
 
-#: rc.cpp:14
+#. i18n: file data/kexiformpartinstui.rc line 51
+#: rc.cpp:21
 #, no-c-format
 msgid "Format Toolbar"
 msgstr ""
 
-#: rc.cpp:18 rc.cpp:30 rc.cpp:40 rc.cpp:58
+#. i18n: file data/kexikugarhandlerui.rc line 6
+#: rc.cpp:27 rc.cpp:45 rc.cpp:60 rc.cpp:87
 #, no-c-format
 msgid "&Create"
 msgstr "&Creu"
 
-#: rc.cpp:20
+#. i18n: file data/kexiquerydesignerui.rc line 5
+#: rc.cpp:30
 #, no-c-format
 msgid "&Query"
 msgstr "&Ymholi"
 
-#: rc.cpp:22
+#. i18n: file data/kexiquerydesignerui.rc line 12
+#: rc.cpp:33
 #, no-c-format
 msgid "State"
 msgstr "Cyflwr"
 
-#: rc.cpp:26 rc.cpp:60
+#. i18n: file data/kexiquerypartinstui.rc line 10
+#: rc.cpp:39 rc.cpp:90
 #, no-c-format
 msgid "&Data"
 msgstr "&Data"
 
-#: plugins/queries/kexiquerypart.cpp:41 rc.cpp:28
+#. i18n: file data/kexiquerypartinstui.rc line 18
+#: plugins/queries/kexiquerypart.cpp:41 rc.cpp:42
 #, no-c-format
 msgid "Query"
 msgstr "Ymholiad"
 
-#: rc.cpp:32 rc.cpp:36 rc.cpp:46
+#. i18n: file data/kexirelationhandlerui.rc line 5
+#: rc.cpp:48 rc.cpp:54 rc.cpp:69
 #, no-c-format
 msgid "&Project"
 msgstr "&Cywaith"
 
-#: rc.cpp:34 rc.cpp:38 rc.cpp:84
+#. i18n: file data/kexirelationhandlerui.rc line 11
+#: rc.cpp:51 rc.cpp:57 rc.cpp:126
 #, no-c-format
 msgid "Project"
 msgstr "Cywaith"
 
-#: rc.cpp:42 rc.cpp:80
+#. i18n: file data/kexitablepartinstui.rc line 8
+#: rc.cpp:63 rc.cpp:120
 #, no-c-format
 msgid "Data"
 msgstr "Data"
 
-#: rc.cpp:50
+#. i18n: file data/kexiui.rc line 21
+#: rc.cpp:75
 #, no-c-format
 msgid "&Import"
 msgstr "&Mewnforio"
 
-#: rc.cpp:52
+#. i18n: file data/kexiui.rc line 26
+#: rc.cpp:78
 #, no-c-format
 msgid "&Export"
 msgstr "&Allforio"
 
-#: rc.cpp:62
+#. i18n: file data/kexiui.rc line 76
+#: rc.cpp:93
 #, no-c-format
 msgid "Sort"
 msgstr "Trefnu"
 
-#: rc.cpp:70
+#. i18n: file data/kexiui.rc line 105
+#: rc.cpp:105
 #, no-c-format
 msgid "&Other"
 msgstr "A&rall"
 
-#: rc.cpp:74
+#. i18n: file data/kexiui.rc line 120
+#: rc.cpp:111
 #, no-c-format
 msgid "Other &Licenses"
 msgstr "&Trwyddedau Eraill"
 
-#: rc.cpp:82
+#. i18n: file ./main/projectsettingsui.ui line 16
+#: rc.cpp:123
 #, no-c-format
 msgid "Project Settings"
 msgstr "Gosodiadau Cywaith"
 
-#: rc.cpp:86
+#. i18n: file ./main/projectsettingsui.ui line 46
+#: rc.cpp:129
 #, fuzzy, no-c-format
 msgid "Project Data"
 msgstr "Enw'r Cywaith"
 
-#: rc.cpp:88
+#. i18n: file ./main/projectsettingsui.ui line 67
+#: rc.cpp:132
 #, no-c-format
 msgid "Summary:"
 msgstr "Crynodeb:"
 
-#: rc.cpp:92
+#. i18n: file ./main/projectsettingsui.ui line 86
+#: rc.cpp:138
 #, no-c-format
 msgid "Icon:"
 msgstr "Eicon:"
 
-#: rc.cpp:95
+#. i18n: file ./main/projectsettingsui.ui line 120
+#: rc.cpp:142
 #, no-c-format
 msgid "Startup"
 msgstr "Ymgychwyn"
 
-#: rc.cpp:97
+#. i18n: file ./main/projectsettingsui.ui line 131
+#: rc.cpp:145
 #, no-c-format
 msgid "Automatically launch a document on startup"
 msgstr ""
 
-#: rc.cpp:99
+#. i18n: file ./main/projectsettingsui.ui line 139
+#: rc.cpp:148
 #, fuzzy, no-c-format
 msgid "Part:"
 msgstr "Porth:"
 
-#: rc.cpp:101
+#. i18n: file ./main/projectsettingsui.ui line 145
+#: rc.cpp:151
 #, fuzzy, no-c-format
 msgid "Forms"
 msgstr "Ffurflen"
 
-#: rc.cpp:103
+#. i18n: file ./main/projectsettingsui.ui line 163
+#: rc.cpp:154
 #, no-c-format
 msgid "Item:"
-msgstr ""
+msgstr "Eitem :"
 
-#: rc.cpp:105
+#. i18n: file ./main/projectsettingsui.ui line 169
+#: rc.cpp:157
 #, no-c-format
 msgid "main"
 msgstr ""
 
-#: rc.cpp:107 rc.cpp:177
+#. i18n: file ./main/projectsettingsui.ui line 215
+#: rc.cpp:160 rc.cpp:260
 #, no-c-format
 msgid "Actions"
 msgstr "Gweithredoedd"
 
-#: rc.cpp:109
+#. i18n: file ./main/projectsettingsui.ui line 226
+#: rc.cpp:163
 #, no-c-format
 msgid "Menubar"
 msgstr ""
 
-#: rc.cpp:111
+#. i18n: file ./main/projectsettingsui.ui line 235
+#: rc.cpp:166
 #, no-c-format
 msgid "Action"
 msgstr "Gweithred"
 
-#: rc.cpp:113
+#. i18n: file ./main/projectsettingsui.ui line 246
+#: rc.cpp:169
 #, fuzzy, no-c-format
 msgid "MyProject"
 msgstr "Cywaith"
 
-#: rc.cpp:127 rc.cpp:145
+#. i18n: file ./main/projectsettingsui.ui line 301
+#: rc.cpp:190 rc.cpp:215
 #, no-c-format
 msgid "About Kexi"
 msgstr ""
 
-#: rc.cpp:129 rc.cpp:147
+#. i18n: file ./main/projectsettingsui.ui line 309
+#: rc.cpp:193 rc.cpp:218
 #, fuzzy, no-c-format
 msgid "About MyProject"
 msgstr "Cywaith"
 
-#: rc.cpp:135
+#. i18n: file ./main/projectsettingsui.ui line 394
+#: rc.cpp:200
 #, no-c-format
 msgid "-- Separator --"
 msgstr ""
 
-#: rc.cpp:149
+#. i18n: file ./main/projectsettingsui.ui line 447
+#: rc.cpp:221
 #, no-c-format
 msgid "Artists"
 msgstr ""
 
-#: rc.cpp:151
+#. i18n: file ./main/projectsettingsui.ui line 455
+#: rc.cpp:224
 #, no-c-format
 msgid "Albums"
 msgstr ""
 
-#: rc.cpp:153
+#. i18n: file ./main/projectsettingsui.ui line 478
+#: rc.cpp:227
 #, no-c-format
 msgid "&New Action"
 msgstr "Gweithred &Newydd"
 
-#: rc.cpp:155
+#. i18n: file ./main/projectsettingsui.ui line 481
+#: rc.cpp:230
 #, no-c-format
 msgid "Alt+N"
 msgstr ""
 
-#: rc.cpp:157
+#. i18n: file ./main/projectsettingsui.ui line 489
+#: rc.cpp:233
 #, no-c-format
 msgid "&Delete Action"
 msgstr "&Dileu Gweithred"
 
-#: rc.cpp:159
+#. i18n: file ./main/projectsettingsui.ui line 492
+#: rc.cpp:236
 #, no-c-format
 msgid "Alt+D"
 msgstr ""
 
-#: rc.cpp:161
+#. i18n: file ./main/projectsettingsui.ui line 500
+#: rc.cpp:239
 #, no-c-format
 msgid "Toolbars"
 msgstr "Barrau Offer:"
 
-#: rc.cpp:169
+#. i18n: file ./main/projectsettingsui.ui line 576
+#: rc.cpp:249
 #, no-c-format
 msgid "Toolbar:"
-msgstr ""
+msgstr "Bar Offer:"
 
-#: rc.cpp:173
+#. i18n: file ./main/projectsettingsui.ui line 620
+#: rc.cpp:254
 #, no-c-format
 msgid "Main"
 msgstr "Prif"
 
-#: rc.cpp:181
+#. i18n: file ./main/projectsettingsui.ui line 661
+#: rc.cpp:266
 #, no-c-format
 msgid "MDI Mode:"
-msgstr ""
+msgstr "Modd MDI :"
 
-#: rc.cpp:183
+#. i18n: file ./main/projectsettingsui.ui line 667
+#: rc.cpp:269
 #, no-c-format
 msgid "Use user settings"
 msgstr ""
 
-#: rc.cpp:185
+#. i18n: file ./main/projectsettingsui.ui line 672
+#: rc.cpp:272
 #, no-c-format
 msgid "Toplevel"
 msgstr ""
 
-#: rc.cpp:187
+#. i18n: file ./main/projectsettingsui.ui line 677
+#: rc.cpp:275
 #, fuzzy, no-c-format
 msgid "Child Frame"
 msgstr "Enw maes"
 
-#: rc.cpp:189
+#. i18n: file ./main/projectsettingsui.ui line 682
+#: rc.cpp:278
 #, fuzzy, no-c-format
 msgid "Tab Page"
 msgstr "Celfigyn Tab"
 
-#: rc.cpp:191
+#. i18n: file ./main/projectsettingsui.ui line 687
+#: rc.cpp:281
 #, no-c-format
 msgid "IDEAL"
 msgstr ""
 
-#: rc.cpp:193
+#. i18n: file ./main/projectsettingsui.ui line 715
+#: rc.cpp:284
 #, fuzzy, no-c-format
 msgid "Show Taskbar"
 msgstr "Bar tasgau"
 
-#: rc.cpp:195
+#. i18n: file ./main/projectsettingsui.ui line 731
+#: rc.cpp:287
 #, no-c-format
 msgid "Show Menubar"
 msgstr ""
 
-#: rc.cpp:199
+#. i18n: file ./main/projectsettingsui.ui line 744
+#: rc.cpp:293
 #, no-c-format
 msgid "Alt+C"
 msgstr ""
 
-#: rc.cpp:203 rc.cpp:235
+#. i18n: file ./main/projectsettingsui.ui line 755
+#: rc.cpp:299 rc.cpp:345
 #, no-c-format
 msgid "Alt+A"
 msgstr "Alt+A"
 
-#: rc.cpp:205
+#. i18n: file ./main/projectsettingsui.ui line 763
+#: rc.cpp:302
 #, no-c-format
 msgid "&Ok"
-msgstr ""
+msgstr "&Iawn"
 
-#: rc.cpp:207
+#. i18n: file ./main/projectsettingsui.ui line 766
+#: rc.cpp:305
 #, no-c-format
 msgid "Alt+O"
 msgstr ""
 
-#: rc.cpp:209
+#. i18n: file ./main/startup/KexiNewPrjTypeSelector.ui line 36
+#: rc.cpp:308
 #, fuzzy, no-c-format
 msgid ""
 "Kexi will create a new database project. Select a storage method which will "
@@ -2223,12 +2466,14 @@ msgstr ""
 "ddefnyddio i gadw'r cywaith newydd.\n"
 "\n"
 
-#: rc.cpp:212
+#. i18n: file ./main/startup/KexiNewPrjTypeSelector.ui line 72
+#: rc.cpp:312
 #, fuzzy, no-c-format
 msgid "Always &use files for creating new projects"
 msgstr "Defnyddio &ffeiliau bob tro i greu cyweithiau newydd."
 
-#: rc.cpp:214
+#. i18n: file ./main/startup/KexiOpenExistingFile.ui line 44
+#: rc.cpp:315
 #, fuzzy, no-c-format
 msgid ""
 "<b>Select existing Kexi project file to open:</b>\n"
@@ -2236,12 +2481,14 @@ msgstr ""
 "<b>Dewiswch hen ffeil cywaith Kexi i'w agor:</b>\n"
 "\n"
 
-#: rc.cpp:217 rc.cpp:245
-#, fuzzy, no-c-format
+#. i18n: file ./main/startup/KexiOpenExistingFile.ui line 107
+#: rc.cpp:319 rc.cpp:360
+#, no-c-format
 msgid "&Advanced "
-msgstr "&Uwch"
+msgstr "&Uwch "
 
-#: rc.cpp:219
+#. i18n: file ./main/startup/KexiOpenExistingFile.ui line 123
+#: rc.cpp:322
 #, fuzzy, no-c-format
 msgid ""
 "Click \"Advanced\" button if you want to find an existing project on a "
@@ -2250,12 +2497,14 @@ msgstr ""
 "Cliciwch y botwm \"Uwch\" os ydych eisiau cael hyd i hen gywaith ar weinydd "
 "yn hytrach na ffeil."
 
-#: rc.cpp:221
+#. i18n: file ./main/startup/KexiConnSelectorBase.ui line 24
+#: rc.cpp:325
 #, no-c-format
 msgid "KexiConnSelectorBase"
 msgstr "KexiConnSelectorBase"
 
-#: rc.cpp:223
+#. i18n: file ./main/startup/KexiConnSelectorBase.ui line 67
+#: rc.cpp:328
 #, fuzzy, no-c-format
 msgid ""
 "<b>Select existing database server's connection from the list below and "
@@ -2272,33 +2521,39 @@ msgstr ""
 "rhestr.\n"
 "\n"
 
-#: plugins/tables/kexialtertabledialog.cpp:252 rc.cpp:227 rc.cpp:319
-#: rc.cpp:359
+#. i18n: file ./main/startup/KexiConnSelectorBase.ui line 79
+#: plugins/tables/kexialtertabledialog.cpp:252 rc.cpp:333 rc.cpp:468
+#: rc.cpp:528
 #, no-c-format
 msgid "Name"
 msgstr "Enw"
 
-#: rc.cpp:231
+#. i18n: file ./main/startup/KexiConnSelectorBase.ui line 101
+#: rc.cpp:339
 #, no-c-format
 msgid "Server Information"
 msgstr "Gwybodaeth am y Gweinydd"
 
-#: rc.cpp:233 widget/relations/kexirelationwidget.cpp:62
+#. i18n: file ./main/startup/KexiConnSelectorBase.ui line 183
+#: rc.cpp:342 widget/relations/kexirelationwidget.cpp:62
 #, no-c-format
 msgid "&Add"
 msgstr "&Ychwanegu"
 
-#: rc.cpp:241
+#. i18n: file ./main/startup/KexiConnSelectorBase.ui line 253
+#: rc.cpp:354
 #, no-c-format
 msgid "Click \"Back\" button if you want to open existing Kexi project file."
 msgstr "Cliciwch y botwm \"Yn Ôl\" os ydych eisiau agor hen ffeil cywaith Kexi."
 
-#: rc.cpp:243
+#. i18n: file ./main/startup/KexiConnSelectorBase.ui line 275
+#: rc.cpp:357
 #, no-c-format
 msgid "&Back"
 msgstr "&Yn Ôl"
 
-#: rc.cpp:247
+#. i18n: file ./main/startup/KexiNewFileDBWidget.ui line 104
+#: rc.cpp:363
 #, fuzzy, no-c-format
 msgid ""
 "Click \"Advanced\" button if you want to create a new database on a server "
@@ -2307,7 +2562,8 @@ msgstr ""
 "Cliciwch y botwm \"Uwch\" os ydydch eisiau creu cronfa ddata newydd ar "
 "weinydd yn hytrach na ffeil."
 
-#: rc.cpp:249
+#. i18n: file ./main/startup/KexiNewFileDBWidget.ui line 124
+#: rc.cpp:366
 #, fuzzy, no-c-format
 msgid ""
 "<P><b>Kexi will create a new database, which will be stored in a file on "
@@ -2318,7 +2574,8 @@ msgstr ""
 "cyfrifiadur hwn.</b>\n"
 "<p>&nbsp; \n"
 
-#: rc.cpp:252
+#. i18n: file ./main/startup/KexiNewFileDBWidget.ui line 144
+#: rc.cpp:370
 #, fuzzy, no-c-format
 msgid ""
 "Always &use files for creating new projects.\n"
@@ -2327,27 +2584,32 @@ msgstr ""
 "Defnyddiwch &ffeiliau bob amser i greu cyweithiau newydd.\n"
 "Peidiwch â dangos yr ymgom hwn imi eto.\n"
 
-#: rc.cpp:255
+#. i18n: file ./main/startup/KexiServerDBNamePage.ui line 16
+#: rc.cpp:374
 #, no-c-format
 msgid "Form1"
 msgstr "Ffurflen1"
 
-#: rc.cpp:257 rc.cpp:263
+#. i18n: file ./main/startup/KexiServerDBNamePage.ui line 27
+#: rc.cpp:377 rc.cpp:386
 #, fuzzy, no-c-format
 msgid "Project caption: "
 msgstr "Egluryn y cywaith:"
 
-#: rc.cpp:259
+#. i18n: file ./main/startup/KexiServerDBNamePage.ui line 35
+#: rc.cpp:380
 #, fuzzy, no-c-format
 msgid "Project's database name: "
 msgstr "Enw cronfa ddata'r cywaith:"
 
-#: rc.cpp:261
+#. i18n: file ./main/startup/KexiDBTitlePage.ui line 16
+#: rc.cpp:383
 #, no-c-format
 msgid "Form2"
 msgstr "Ffurflen2"
 
-#: rc.cpp:265
+#. i18n: file ./main/startup/KexiProjectSelectorBase.ui line 44
+#: rc.cpp:389
 #, fuzzy, no-c-format
 msgid ""
 "<b>There are Kexi projects you have recently opened.</b>"
@@ -2357,92 +2619,110 @@ msgstr ""
 " Dewiswch un yr hoffech ei agor:\n"
 "\n"
 
-#: rc.cpp:268
+#. i18n: file ./main/startup/KexiProjectSelectorBase.ui line 53
+#: rc.cpp:393
 #, no-c-format
 msgid "Project Name"
 msgstr "Enw'r Cywaith"
 
-#: rc.cpp:274
+#. i18n: file ./main/startup/KexiProjectSelectorBase.ui line 86
+#: rc.cpp:402
 #, no-c-format
 msgid "Connection"
 msgstr "Cysylltiad"
 
-#: rc.cpp:279
+#. i18n: file ./main/projectWizard/kexicreateprojectpageconnectionwidget.ui line 41
+#: rc.cpp:409
 #, no-c-format
 msgid "Localhost"
 msgstr "Localhost (y gyfrifiadur yma)"
 
-#: rc.cpp:281
+#. i18n: file ./main/projectWizard/kexicreateprojectpageconnectionwidget.ui line 52
+#: rc.cpp:412
 #, no-c-format
 msgid "Remote host"
 msgstr "Gwesteiwr pell"
 
-#: rc.cpp:284
+#. i18n: file ./main/projectWizard/kexicreateprojectpageconnectionwidget.ui line 112
+#: rc.cpp:416
 #, no-c-format
 msgid "Socket:"
 msgstr "Soced:"
 
-#: rc.cpp:286 rc.cpp:295
+#. i18n: file ./main/projectWizard/kexicreateprojectpageconnectionwidget.ui line 128
+#: rc.cpp:419 rc.cpp:432
 #, no-c-format
 msgid "Custom:"
 msgstr "Addasiedig:"
 
-#: rc.cpp:301
+#. i18n: file ./main/projectWizard/kexicreateprojectpageconnectionwidget.ui line 281
+#: rc.cpp:441
 #, no-c-format
 msgid "Username:"
 msgstr "Enw defnyddiwr:"
 
-#: rc.cpp:305
+#. i18n: file ./main/projectWizard/kexicreateprojectpageconnectionwidget.ui line 302
+#: rc.cpp:447
 #, no-c-format
 msgid "Save password in the projectfile"
 msgstr "Cadw'r cyfrinair yn ffeil y cywaith"
 
-#: rc.cpp:307
+#. i18n: file ./plugins/queries/kexiaddparamwidget.ui line 16
+#: rc.cpp:450
 #, no-c-format
 msgid "Parameter"
 msgstr "Paramedr"
 
-#: rc.cpp:309
+#. i18n: file ./plugins/queries/kexiaddparamwidget.ui line 35
+#: rc.cpp:453
 #, no-c-format
 msgid "Name:"
 msgstr "Enw:"
 
-#: rc.cpp:311
+#. i18n: file ./plugins/queries/kexiaddparamwidget.ui line 51
+#: rc.cpp:456
 #, no-c-format
 msgid "kexi_"
 msgstr "kexi_"
 
-#: rc.cpp:313
+#. i18n: file ./plugins/queries/kexiaddparamwidget.ui line 96
+#: rc.cpp:459
 #, no-c-format
 msgid "Message:"
 msgstr "Neges:"
 
-#: rc.cpp:315
+#. i18n: file ./plugins/queries/kexiaddparamwidget.ui line 119
+#: rc.cpp:462
 #, no-c-format
 msgid "Type:"
 msgstr "Math:"
 
-#: rc.cpp:317
+#. i18n: file ./plugins/queries/kexiparameterlisteditor.ui line 24
+#: rc.cpp:465
 #, no-c-format
 msgid "Parameters:"
 msgstr "Paramedrau:"
 
-#: plugins/tables/kexialtertabledialog.cpp:256 rc.cpp:321 rc.cpp:361
+#. i18n: file ./plugins/queries/kexiparameterlisteditor.ui line 41
+#: plugins/tables/kexialtertabledialog.cpp:256 rc.cpp:471 rc.cpp:531
 #, no-c-format
 msgid "Type"
 msgstr "Math"
 
-#: rc.cpp:327
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 20
+#: rc.cpp:480
 #, no-c-format
 msgid "Open File"
 msgstr "Agor Ffeil"
 
-#: rc.cpp:329
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 28
+#: rc.cpp:483
 #, no-c-format
 msgid "Loading Import Plugin"
 msgstr "Llwytho Ategyn Mewnforio"
 
-#: rc.cpp:331
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 39
+#: rc.cpp:486
 #, fuzzy, no-c-format
 msgid ""
 "Please be patient for a few seconds, while the appropriate plugin for your "
@@ -2451,42 +2731,50 @@ msgstr ""
 "Byddwch yn amyneddgar am ychydig o eiliadau, tra bod yr ategyn priodol ar "
 "gyfer eich ymholiad yn cael ei lwytho."
 
-#: rc.cpp:333
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 52
+#: rc.cpp:489
 #, no-c-format
 msgid "dummySourcePage"
 msgstr "dummySourcePage"
 
-#: rc.cpp:335
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 60
+#: rc.cpp:492
 #, no-c-format
 msgid "Import Destination"
 msgstr "Cyrchfan Mewnforio"
 
-#: rc.cpp:337
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 71
+#: rc.cpp:495
 #, no-c-format
 msgid "Please Choose Where You Would Like to Import the Data To"
 msgstr "Dewiswch Lle Hoffech Fewnforio'r Data Iddo"
 
-#: rc.cpp:339
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 85
+#: rc.cpp:498
 #, no-c-format
 msgid "New table"
 msgstr "Tabl newydd"
 
-#: rc.cpp:341
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 93
+#: rc.cpp:501
 #, no-c-format
 msgid "Existing table"
 msgstr "Tabl cyfredol"
 
-#: rc.cpp:343 rc.cpp:345
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 106
+#: rc.cpp:504 rc.cpp:507
 #, no-c-format
 msgid "Table:"
 msgstr "Tabl:"
 
-#: rc.cpp:347
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 148
+#: rc.cpp:510
 #, fuzzy, no-c-format
 msgid "Mapping Between Source and Destination Fields"
 msgstr "Mapio rhwng y meysydd tarddiad a'r meysydd cyrchfan"
 
-#: rc.cpp:349
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 159
+#: rc.cpp:513
 #, fuzzy, no-c-format
 msgid ""
 "Please choose into which fields of the selected destination table the "
@@ -2495,88 +2783,105 @@ msgstr ""
 "Dewiswch pa feysydd o'r tabl cyrchfan y dylid rhoi'r meysydd data sy wedi'u "
 "mewnforio."
 
-#: rc.cpp:351 rc.cpp:385
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 168
+#: rc.cpp:516 rc.cpp:567
 #, no-c-format
 msgid "Destination Field"
 msgstr "Maes Cyrchfan"
 
-#: rc.cpp:353 rc.cpp:387
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 173
+#: rc.cpp:519 rc.cpp:570
 #, no-c-format
 msgid "Source"
 msgstr "Tarddiad"
 
-#: rc.cpp:355
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 193
+#: rc.cpp:522
 #, no-c-format
 msgid "Setup New Table"
 msgstr "Ffurfweddu Tabl Newydd"
 
-#: rc.cpp:357
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 204
+#: rc.cpp:525
 #, no-c-format
 msgid "Table Properties"
 msgstr "Priodweddau Tabl"
 
-#: rc.cpp:363
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 229
+#: rc.cpp:534
 #, no-c-format
 msgid "Default Value"
 msgstr "Gwerth Rhagosodol"
 
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 237
 #: plugins/tables/kexialtertabledialog.cpp:97
-#: plugins/tables/kexialtertabledialog.cpp:284 rc.cpp:365
+#: plugins/tables/kexialtertabledialog.cpp:284 rc.cpp:537
 #, no-c-format
 msgid "Primary Key"
 msgstr "Prif Allwedd"
 
-#: rc.cpp:367
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 245
+#: rc.cpp:540
 #, no-c-format
 msgid "Allow NULL"
 msgstr "Caniatáu NWL"
 
-#: rc.cpp:369 rc.cpp:389
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 253
+#: rc.cpp:543 rc.cpp:573
 #, no-c-format
 msgid "1"
 msgstr "1"
 
-#: rc.cpp:371 rc.cpp:391
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 261
+#: rc.cpp:546 rc.cpp:576
 #, no-c-format
 msgid "2"
 msgstr "2"
 
-#: rc.cpp:373 rc.cpp:393
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 269
+#: rc.cpp:549 rc.cpp:579
 #, no-c-format
 msgid "3"
 msgstr "3"
 
-#: rc.cpp:375
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 306
+#: rc.cpp:552
 #, no-c-format
 msgid "Add New Field"
 msgstr "Ychwanegu Maes Newydd"
 
-#: rc.cpp:377
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 314
+#: rc.cpp:555
 #, no-c-format
 msgid "Delete Field"
 msgstr "Dileu Maes"
 
-#: rc.cpp:379
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 322
+#: rc.cpp:558
 #, no-c-format
 msgid "Move Field Down"
 msgstr "Symud Maes i Lawr"
 
-#: rc.cpp:381
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 330
+#: rc.cpp:561
 #, no-c-format
 msgid "Move Field Up"
 msgstr "Symud Maes i Fyny"
 
-#: rc.cpp:383
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 342
+#: rc.cpp:564
 #, no-c-format
 msgid "Field Mapping"
 msgstr "Mapiad Maes"
 
-#: rc.cpp:395
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 408
+#: rc.cpp:582
 #, no-c-format
 msgid "Finishing"
 msgstr "Yn Gorffen"
 
-#: rc.cpp:397
+#. i18n: file ./plugins/importwizard/common/kexiimportwizardformbase.ui line 419
+#: rc.cpp:585
 #, fuzzy, no-c-format
 msgid ""
 "You have now provided all information needed for importing. Just click the "
@@ -2676,72 +2981,72 @@ msgstr ""
 msgid "Relationship"
 msgstr "Perthynas"
 
-#: widget/pixmapcollection.cpp:151
+#: widget/pixmapcollection.cpp:154
 msgid "Load KDE Icon by Name"
 msgstr ""
 
-#: widget/pixmapcollection.cpp:157
+#: widget/pixmapcollection.cpp:160
 msgid "&Name:"
 msgstr "&Enw:"
 
-#: widget/pixmapcollection.cpp:165
+#: widget/pixmapcollection.cpp:168
 msgid "&Size:"
 msgstr "&Maint:"
 
-#: widget/pixmapcollection.cpp:173
+#: widget/pixmapcollection.cpp:176
 msgid "Small"
 msgstr "Bach"
 
-#: widget/pixmapcollection.cpp:173
+#: widget/pixmapcollection.cpp:176
 msgid "Medium"
 msgstr "Canolig"
 
-#: widget/pixmapcollection.cpp:173
+#: widget/pixmapcollection.cpp:176
 msgid "Large"
 msgstr "Mawr"
 
-#: widget/pixmapcollection.cpp:173
+#: widget/pixmapcollection.cpp:176
 msgid "Huge"
 msgstr "Anferth"
 
-#: widget/pixmapcollection.cpp:232
+#: widget/pixmapcollection.cpp:235
 #, c-format
 msgid "Edit Pixmap Collection: %1"
 msgstr ""
 
-#: widget/pixmapcollection.cpp:243
+#: widget/pixmapcollection.cpp:246
 #, fuzzy
 msgid "&Add File"
 msgstr "Ychwanegu Maes Newydd"
 
-#: widget/pixmapcollection.cpp:250
+#: widget/pixmapcollection.cpp:253
 msgid "&Add an icon"
 msgstr ""
 
-#: widget/pixmapcollection.cpp:257
+#: widget/pixmapcollection.cpp:260
 #, fuzzy
 msgid "&Remove selected item"
 msgstr "&Gwaredu'r Berthynas Ddewisiedig"
 
-#: widget/pixmapcollection.cpp:309
+#: widget/pixmapcollection.cpp:314
 #, fuzzy
 msgid "Do you want to remove item \"%1\" from collection \"%2\"?"
 msgstr "Ydych eisiau dileu ymholiad \"%1\"?"
 
-#: widget/pixmapcollection.cpp:363
+#: widget/pixmapcollection.cpp:368
 msgid "Rename Item"
 msgstr "Ailenwi Eitem"
 
-#: widget/pixmapcollection.cpp:364
+#: widget/pixmapcollection.cpp:369
 msgid "Remove Item"
 msgstr "Gwaredu Eitem"
 
-#: widget/pixmapcollection.cpp:370
+#: widget/pixmapcollection.cpp:375
 #, c-format
 msgid "Select a pixmap from %1"
 msgstr ""
 
-#: widget/pixmapcollection.cpp:371
+#: widget/pixmapcollection.cpp:376
 #, fuzzy
 msgid "Edit Collection..."
 msgstr "Diwedd detholiad"
@@ -2990,33 +3295,33 @@ msgstr ""
 "Methu newid i olygfa'r data, am fod cynllun yr ymholiad yn wag.\n"
 " Creuwch eich cynllun yn gyntaf.\n"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:434
+#: plugins/queries/kexiquerydesignerguieditor.cpp:432
 msgid "Query definition loading failed."
 msgstr ""
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:434
+#: plugins/queries/kexiquerydesignerguieditor.cpp:432
 msgid "Query data may be corrupted."
 msgstr ""
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:839
+#: plugins/queries/kexiquerydesignerguieditor.cpp:837
 #: plugins/tables/kexialtertabledialog.cpp:266
 msgid "Caption"
 msgstr "Egluryn"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:843
+#: plugins/queries/kexiquerydesignerguieditor.cpp:841
 #, fuzzy
 msgid "Alias"
 msgstr "Dosbarth"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:857
+#: plugins/queries/kexiquerydesignerguieditor.cpp:855
 msgid "Ascending"
 msgstr "Esgynnol"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:857
+#: plugins/queries/kexiquerydesignerguieditor.cpp:855
 msgid "Descending"
 msgstr "Disgynnol"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:858
+#: plugins/queries/kexiquerydesignerguieditor.cpp:856
 msgid "Sorting"
 msgstr "Didoli"
 
@@ -3065,7 +3370,7 @@ msgstr ""
 msgid "Answering \"No\" allows you to make corrections."
 msgstr ""
 
-#: plugins/queries/kexiquerydesignersql.cpp:431
+#: plugins/queries/kexiquerydesignersql.cpp:430
 #, fuzzy
 msgid "Do you want to save invalid query?"
 msgstr "Ydych eisiau dileu ymholiad \"%1\"?"
@@ -3265,7 +3570,7 @@ msgstr ""
 msgid "Create &primary key"
 msgstr "Rhaid i dabl fod â phrif allwedd"
 
-#: plugins/tables/kexialtertabledialog.cpp:656
+#: plugins/tables/kexialtertabledialog.cpp:655
 msgid ""
 "<p>There is not <b>primary key</b> defined.</p>"
 "<p>Although a primary key is not required, it is needed for creating "
@@ -3275,16 +3580,16 @@ msgid ""
 "saving table design.</p>"
 msgstr ""
 
-#: plugins/tables/kexialtertabledialog.cpp:660
+#: plugins/tables/kexialtertabledialog.cpp:659
 #, fuzzy
 msgid "&Add a primary key"
 msgstr "Prif Allwedd"
 
-#: plugins/tables/kexialtertabledialog.cpp:694
+#: plugins/tables/kexialtertabledialog.cpp:691
 msgid "You should enter field name."
 msgstr "Dylech roi enw maes."
 
-#: plugins/tables/kexialtertabledialog.cpp:706
+#: plugins/tables/kexialtertabledialog.cpp:702
 #, fuzzy
 msgid ""
 "You have added no fields.\n"
@@ -3293,7 +3598,7 @@ msgstr ""
 "Nid ydych wedi ychwanegu dim meysydd.\n"
 " Dylai pob tabl fod ag o leiaf un maes.\n"
 
-#: plugins/tables/kexialtertabledialog.cpp:713
+#: plugins/tables/kexialtertabledialog.cpp:708
 #, fuzzy
 msgid ""
 "You have added \"%1\" field name twice.\n"
@@ -3401,9 +3706,8 @@ msgid "Entered value is invalid."
 msgstr "Mae'r gwerth a roddwyd yn annilys."
 
 #: tableview/kexitableview.cpp:3825
-#, fuzzy
 msgid "Row: "
-msgstr "Rhes:"
+msgstr "Rhes: "
 
 #, fuzzy
 #~ msgid "Invalid identifier."
@@ -3419,9 +3723,6 @@ msgstr "Rhes:"
 #~ msgid "Change Datasource"
 #~ msgstr "Newid Tarddiad Data"
 
-#~ msgid "Open recent project"
-#~ msgstr "Agor cywaith diweddar"
-
 #~ msgid "Project navigator"
 #~ msgstr "Mordwywr cywaith"
 
@@ -3434,20 +3735,11 @@ msgstr "Rhes:"
 #~ msgid "csv file"
 #~ msgstr "ffeil csv"
 
-#~ msgid ""
-#~ " You have not specified a valid cell range. This must contain the data "
-#~ "you would like to import"
-#~ msgstr ""
-#~ "Nid ydych wedi penodi amrediad celloedd dilys. Rhaid bod hyn yn cynnwys "
-#~ "data hoffech eu mewnforio."
+#~ msgid " You have not specified a valid cell range. This must contain the data you would like to import"
+#~ msgstr "Nid ydych wedi penodi amrediad celloedd dilys. Rhaid bod hyn yn cynnwys data hoffech eu mewnforio."
 
-#~ msgid ""
-#~ " You have chosen that a separate header range should be used. The "
-#~ "specified range is invalid though. You have to fix that problem before "
-#~ "you can proceed"
-#~ msgstr ""
-#~ "Rydych wedi dewis defnyddio amrediad ar wahan i'r pennawd. Ond mae'r "
-#~ "amrediad penodol yn annilys. Rhaid datrys y broblem honno cyn mynd ymlaen."
+#~ msgid " You have chosen that a separate header range should be used. The specified range is invalid though. You have to fix that problem before you can proceed"
+#~ msgstr "Rydych wedi dewis defnyddio amrediad ar wahan i'r pennawd. Ond mae'r amrediad penodol yn annilys. Rhaid datrys y broblem honno cyn mynd ymlaen."
 
 #~ msgid "kspread file"
 #~ msgstr "ffeil kspread"
@@ -3590,12 +3882,8 @@ msgstr "Rhes:"
 #~ msgid "*.ui|Qt Designer UI files"
 #~ msgstr "*.ui|Ffeiliau UI Qt Designer"
 
-#~ msgid ""
-#~ " A widget with this name already exists. Please choose another name or "
-#~ "rename this widget before."
-#~ msgstr ""
-#~ "Mae celfigyn efo'r enw hwn yn bodoli eisoes. Dewiswch enw arall neu ail-"
-#~ "enwi'r celfigyn blaenorol."
+#~ msgid " A widget with this name already exists. Please choose another name or rename this widget before."
+#~ msgstr "Mae celfigyn efo'r enw hwn yn bodoli eisoes. Dewiswch enw arall neu ail-enwi'r celfigyn blaenorol."
 
 #~ msgid "Background Pixmap"
 #~ msgstr "Pics-fap y Cefndir"
@@ -3736,38 +4024,20 @@ msgstr "Rhes:"
 #~ msgstr "Hysbysiad Trwydded Pwysig"
 
 #~ msgid ""
-#~ " The \"Kugar Report Generator\" is not part of Kexi, although reports are "
-#~ "displayed within Kexi main window. It is loaded as as a plugin, but is a "
-#~ "stand alone product licensed as GPL. There are no invocations of Kugar's "
-#~ "internal methods.\n"
-#~ " Kexi only generates data files, which are not covered by the GPL license "
-#~ "(FAQ at: http://www.fsf.org/copyleft/gpl.html)  and only the LGPL kparts "
-#~ "interface is used for telling Kugar which datafile to use and to display "
-#~ "the navigation actions. This has been approved by all (including the "
-#~ "original) copyright holders.\n"
+#~ " The \"Kugar Report Generator\" is not part of Kexi, although reports are displayed within Kexi main window. It is loaded as as a plugin, but is a stand alone product licensed as GPL. There are no invocations of Kugar's internal methods.\n"
+#~ " Kexi only generates data files, which are not covered by the GPL license (FAQ at: http://www.fsf.org/copyleft/gpl.html)  and only the LGPL kparts interface is used for telling Kugar which datafile to use and to display the navigation actions. This has been approved by all (including the original) copyright holders.\n"
 #~ " \n"
-#~ " The GPL application Kugar is part of the KOffice package (www.koffice."
-#~ "org). The copyright/left holders known at  the time this notice is "
-#~ "written are:\n"
+#~ " The GPL application Kugar is part of the KOffice package (www.koffice.org). The copyright/left holders known at  the time this notice is written are:\n"
 #~ " Mutiny Bay Software (info@mutinybaysoftware.com)  (Metaphrast)\n"
 #~ " Phil Thompson (phil@river-bank.demon.co.uk) (Kugar)\n"
 #~ " Alexander Dymo (cloudtemple@mksat.net) (Kugar)\n"
 #~ " Joseph Wenninger (jowenn@kde.org) (Kugar)\n"
 #~ "\n"
 #~ msgstr ""
-#~ "Nid rhan o Kexi ydi'r \"Creuydd Adroddiadau Kugar (Kugar Report Generator)"
-#~ "\", er dangosir adroddiadau tu mewn i brif ffenestr Kexi.  Fe'i llwythir "
-#~ "fel ategyn, ond cynnyrch annibynnol ydy o, wedi'i drwyddedu o dan y TGG "
-#~ "(GPL).  Nid oes unrhyw alwadau ar ddulliau mewnol Kugar.\n"
-#~ " Dim ond cynhyrchu ffeiliau data wna Kexi, sy heb eu cynnwys o dan "
-#~ "drwydded y GPL (Ceir FAQ yn: http://www.fsf.org/copyleft/gpl.html) a "
-#~ "defnyddir dim ond y rhyngwyneb LGPL kparts i ddweud wrth Kugar pa ffeil "
-#~ "ddata i'w defnyddio ac i ddangos y gweithredoedd mordwyo. Cymeradwyir hyn "
-#~ "gan bob un o'r deiliaid hawlfraint (gan gynnwys y rhai gwreiddiol).\n"
+#~ "Nid rhan o Kexi ydi'r \"Creuydd Adroddiadau Kugar (Kugar Report Generator)\", er dangosir adroddiadau tu mewn i brif ffenestr Kexi.  Fe'i llwythir fel ategyn, ond cynnyrch annibynnol ydy o, wedi'i drwyddedu o dan y TGG (GPL).  Nid oes unrhyw alwadau ar ddulliau mewnol Kugar.\n"
+#~ " Dim ond cynhyrchu ffeiliau data wna Kexi, sy heb eu cynnwys o dan drwydded y GPL (Ceir FAQ yn: http://www.fsf.org/copyleft/gpl.html) a defnyddir dim ond y rhyngwyneb LGPL kparts i ddweud wrth Kugar pa ffeil ddata i'w defnyddio ac i ddangos y gweithredoedd mordwyo. Cymeradwyir hyn gan bob un o'r deiliaid hawlfraint (gan gynnwys y rhai gwreiddiol).\n"
 #~ "\n"
-#~ " Rhan o becyn KOffice (www.koffice.org) ydy rhaglen GPL Kugar. Deiliaid "
-#~ "yr hawlfraint/haelfraint sy'n hysbys adeg yr ysgrifennir yr hysbysiad hwn "
-#~ "yw:\n"
+#~ " Rhan o becyn KOffice (www.koffice.org) ydy rhaglen GPL Kugar. Deiliaid yr hawlfraint/haelfraint sy'n hysbys adeg yr ysgrifennir yr hysbysiad hwn yw:\n"
 #~ " Mutiny Bay Software (info@mutinybaysoftware.com) (Metaphrast)\n"
 #~ " Phil Thompson (phil@river-bank.demon.co.uk) (Kugar)\n"
 #~ " Alexander Dymo (cloudtemple@mksat.net) (Kugar)\n"
@@ -3819,8 +4089,7 @@ msgstr "Rhes:"
 #~ " \n"
 #~ " Also, for each author's protection and ours, we want to make certain\n"
 #~ " that everyone understands that there is no warranty for this free\n"
-#~ " software.  If the software is modified by someone else and passed on, "
-#~ "we\n"
+#~ " software.  If the software is modified by someone else and passed on, we\n"
 #~ " want its recipients to know that what they have is not the original, so\n"
 #~ " that any problems introduced by others will not reflect on the original\n"
 #~ " authors' reputations.\n"
@@ -3839,8 +4108,7 @@ msgstr "Rhes:"
 #~ " \n"
 #~ " 0. This License applies to any program or other work which contains\n"
 #~ " a notice placed by the copyright holder saying it may be distributed\n"
-#~ " under the terms of this General Public License.  The \"Program\", "
-#~ "below,\n"
+#~ " under the terms of this General Public License.  The \"Program\", below,\n"
 #~ " refers to any such program or work, and a \"work based on the Program\"\n"
 #~ " means either the Program or any derivative work under copyright law:\n"
 #~ " that is to say, a work containing the Program or a portion of it,\n"
@@ -3898,8 +4166,7 @@ msgstr "Rhes:"
 #~ " distribute the same sections as part of a whole which is a work based\n"
 #~ " on the Program, the distribution of the whole must be on the terms of\n"
 #~ " this License, whose permissions for other licensees extend to the\n"
-#~ " entire whole, and thus to each and every part regardless of who wrote "
-#~ "it.\n"
+#~ " entire whole, and thus to each and every part regardless of who wrote it.\n"
 #~ " \n"
 #~ " Thus, it is not the intent of this section to claim rights or contest\n"
 #~ " your rights to work written entirely by you; rather, the intent is to\n"
@@ -3917,8 +4184,7 @@ msgstr "Rhes:"
 #~ " \n"
 #~ " a) Accompany it with the complete corresponding machine-readable\n"
 #~ " source code, which must be distributed under the terms of Sections\n"
-#~ " 1 and 2 above on a medium customarily used for software interchange; "
-#~ "or,\n"
+#~ " 1 and 2 above on a medium customarily used for software interchange; or,\n"
 #~ " \n"
 #~ " b) Accompany it with a written offer, valid for at least three\n"
 #~ " years, to give any third party, for a charge no more than your\n"
@@ -4016,65 +4282,45 @@ msgstr "Rhes:"
 #~ " the limitation as if written in the body of this License.\n"
 #~ " \n"
 #~ " 9. The Free Software Foundation may publish revised and/or new versions\n"
-#~ " of the General Public License from time to time.  Such new versions "
-#~ "will\n"
-#~ " be similar in spirit to the present version, but may differ in detail "
-#~ "to\n"
+#~ " of the General Public License from time to time.  Such new versions will\n"
+#~ " be similar in spirit to the present version, but may differ in detail to\n"
 #~ " address new problems or concerns.\n"
 #~ " \n"
 #~ " Each version is given a distinguishing version number.  If the Program\n"
-#~ " specifies a version number of this License which applies to it and "
-#~ "\"any\n"
-#~ " later version\", you have the option of following the terms and "
-#~ "conditions\n"
+#~ " specifies a version number of this License which applies to it and \"any\n"
+#~ " later version\", you have the option of following the terms and conditions\n"
 #~ " either of that version or of any later version published by the Free\n"
-#~ " Software Foundation.  If the Program does not specify a version number "
-#~ "of\n"
-#~ " this License, you may choose any version ever published by the Free "
-#~ "Software\n"
+#~ " Software Foundation.  If the Program does not specify a version number of\n"
+#~ " this License, you may choose any version ever published by the Free Software\n"
 #~ " Foundation.\n"
 #~ " \n"
 #~ " 10. If you wish to incorporate parts of the Program into other free\n"
-#~ " programs whose distribution conditions are different, write to the "
-#~ "author\n"
+#~ " programs whose distribution conditions are different, write to the author\n"
 #~ " to ask for permission.  For software which is copyrighted by the Free\n"
-#~ " Software Foundation, write to the Free Software Foundation; we "
-#~ "sometimes\n"
+#~ " Software Foundation, write to the Free Software Foundation; we sometimes\n"
 #~ " make exceptions for this.  Our decision will be guided by the two goals\n"
-#~ " of preserving the free status of all derivatives of our free software "
-#~ "and\n"
+#~ " of preserving the free status of all derivatives of our free software and\n"
 #~ " of promoting the sharing and reuse of software generally.\n"
 #~ " \n"
 #~ " \t\t\t    NO WARRANTY\n"
 #~ " \n"
-#~ " 11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO "
-#~ "WARRANTY\n"
-#~ " FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.  EXCEPT "
-#~ "WHEN\n"
+#~ " 11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY\n"
+#~ " FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.  EXCEPT WHEN\n"
 #~ " OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES\n"
-#~ " PROVIDE THE PROGRAM \"AS IS\" WITHOUT WARRANTY OF ANY KIND, EITHER "
-#~ "EXPRESSED\n"
+#~ " PROVIDE THE PROGRAM \"AS IS\" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED\n"
 #~ " OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\n"
-#~ " MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK "
-#~ "AS\n"
+#~ " MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK AS\n"
 #~ " TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD THE\n"
-#~ " PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY "
-#~ "SERVICING,\n"
+#~ " PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING,\n"
 #~ " REPAIR OR CORRECTION.\n"
 #~ " \n"
-#~ " 12. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN "
-#~ "WRITING\n"
+#~ " 12. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING\n"
 #~ " WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR\n"
-#~ " REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR "
-#~ "DAMAGES,\n"
-#~ " INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES "
-#~ "ARISING\n"
-#~ " OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT "
-#~ "LIMITED\n"
-#~ " TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED "
-#~ "BY\n"
-#~ " YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY "
-#~ "OTHER\n"
+#~ " REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,\n"
+#~ " INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING\n"
+#~ " OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED\n"
+#~ " TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY\n"
+#~ " YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER\n"
 #~ " PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE\n"
 #~ " POSSIBILITY OF SUCH DAMAGES.\n"
 #~ " \n"
@@ -4085,8 +4331,7 @@ msgstr "Rhes:"
 #~ " \n"
 #~ " If you develop a new program, and you want it to be of the greatest\n"
 #~ " possible use to the public, the best way to achieve this is to make it\n"
-#~ " free software which everyone can redistribute and change under these "
-#~ "terms.\n"
+#~ " free software which everyone can redistribute and change under these terms.\n"
 #~ " \n"
 #~ " To do so, attach the following notices to the program.  It is safest\n"
 #~ " to attach them to the start of each source file to most effectively\n"
@@ -4108,28 +4353,22 @@ msgstr "Rhes:"
 #~ " \n"
 #~ " You should have received a copy of the GNU General Public License\n"
 #~ " along with this program; if not, write to the Free Software\n"
-#~ " Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 "
-#~ "USA\n"
+#~ " Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA\n"
 #~ " \n"
 #~ " \n"
-#~ " Also add information on how to contact you by electronic and paper "
-#~ "mail.\n"
+#~ " Also add information on how to contact you by electronic and paper mail.\n"
 #~ " \n"
 #~ " If the program is interactive, make it output a short notice like this\n"
 #~ " when it starts in an interactive mode:\n"
 #~ " \n"
 #~ " Gnomovision version 69, Copyright (C) 19yy name of author\n"
-#~ " Gnomovision comes with ABSOLUTELY NO WARRANTY; for details type `show "
-#~ "w'.\n"
+#~ " Gnomovision comes with ABSOLUTELY NO WARRANTY; for details type `show w'.\n"
 #~ " This is free software, and you are welcome to redistribute it\n"
 #~ " under certain conditions; type `show c' for details.\n"
 #~ " \n"
-#~ " The hypothetical commands `show w' and `show c' should show the "
-#~ "appropriate\n"
-#~ " parts of the General Public License.  Of course, the commands you use "
-#~ "may\n"
-#~ " be called something other than `show w' and `show c'; they could even "
-#~ "be\n"
+#~ " The hypothetical commands `show w' and `show c' should show the appropriate\n"
+#~ " parts of the General Public License.  Of course, the commands you use may\n"
+#~ " be called something other than `show w' and `show c'; they could even be\n"
 #~ " mouse-clicks or menu items--whatever suits your program.\n"
 #~ " \n"
 #~ " You should also get your employer (if you work as a programmer) or your\n"
@@ -4137,17 +4376,14 @@ msgstr "Rhes:"
 #~ " necessary.  Here is a sample; alter the names:\n"
 #~ " \n"
 #~ " Yoyodyne, Inc., hereby disclaims all copyright interest in the program\n"
-#~ " `Gnomovision' (which makes passes at compilers) written by James "
-#~ "Hacker.\n"
+#~ " `Gnomovision' (which makes passes at compilers) written by James Hacker.\n"
 #~ " \n"
 #~ " <signature of Ty Coon>, 1 April 1989\n"
 #~ " Ty Coon, President of Vice\n"
 #~ " \n"
-#~ " This General Public License does not permit incorporating your program "
-#~ "into\n"
+#~ " This General Public License does not permit incorporating your program into\n"
 #~ " proprietary programs.  If your program is a subroutine library, you may\n"
-#~ " consider it more useful to permit linking proprietary applications with "
-#~ "the\n"
+#~ " consider it more useful to permit linking proprietary applications with the\n"
 #~ " library.  If this is what you want to do, use the GNU Library General\n"
 #~ " Public License instead of this License.\n"
 #~ "\n"
@@ -4163,63 +4399,47 @@ msgstr "Rhes:"
 #~ "\t\t\t Cyflwyniad\n"
 #~ "\n"
 #~ "Cynllunir trwyddedau ar gyfer y rhan fwyaf o feddalwedd i dynnu'ch\n"
-#~ " rhyddid i'w rhannu a'i newid. I'r gwrthwyned, bwriedir Trwydded y "
-#~ "Cyhoedd\n"
+#~ " rhyddid i'w rhannu a'i newid. I'r gwrthwyned, bwriedir Trwydded y Cyhoedd\n"
 #~ " i warantu'ch rhyddid i rannu a newid meddalwedd\n"
-#~ " rydd -- i sicrhau mai rhydd ar gyfer pob un o'i defnyddiwr ydi'r "
-#~ "feddalwedd.\n"
-#~ " Perthyn i'r rhan fwyaf o feddalwedd y Free Software Foundation y mae'r "
-#~ "Trwydded y Cyhoedd hon\n"
+#~ " rydd -- i sicrhau mai rhydd ar gyfer pob un o'i defnyddiwr ydi'r feddalwedd.\n"
+#~ " Perthyn i'r rhan fwyaf o feddalwedd y Free Software Foundation y mae'r Trwydded y Cyhoedd hon\n"
 #~ " ac i unrhyw raglen arall y lle mae ei hawduron\n"
-#~ " yn ymrwymo i'w defnyddio. (Perthyn peth meddalwedd arall y Free Software "
-#~ "Foundation yn lle i\n"
+#~ " yn ymrwymo i'w defnyddio. (Perthyn peth meddalwedd arall y Free Software Foundation yn lle i\n"
 #~ " Drwydded GNU Llyfrgelloedd y Cyhoedd.) Cewch ei chlymu wrth eich\n"
 #~ " rhaglen chi hefyd.\n"
 #~ " \n"
 #~ " Wrth siarad am feddalwedd rydd, cyfeiriwn at ryddid, nid\n"
 #~ " pris.  Cynllunir ein Trwyddedau'r Cyhoedd i sicrhau bod gennych\n"
 #~ " y rhyddid i ddosbarthu copiau o feddalwedd rydd (a chodi\n"
-#~ " am y gwasanaeth hwn pe dymunech), eich bod chi'n cael y cod gwreiddiol "
-#~ "neu'n medru'i gael\n"
-#~ " os ydych ei eisiau, eich bod chi'n cael newid y feddalwedd neu "
-#~ "ddefnyddio rhannau ohoni\n"
-#~ " mewn rhaglenni rhydd newydd; a'ch bod chi'n gwybod eich bod chi'n gallu "
-#~ "gwneud y pethau hyn.\n"
+#~ " am y gwasanaeth hwn pe dymunech), eich bod chi'n cael y cod gwreiddiol neu'n medru'i gael\n"
+#~ " os ydych ei eisiau, eich bod chi'n cael newid y feddalwedd neu ddefnyddio rhannau ohoni\n"
+#~ " mewn rhaglenni rhydd newydd; a'ch bod chi'n gwybod eich bod chi'n gallu gwneud y pethau hyn.\n"
 #~ " \n"
 #~ " I ddiogelu'ch hawliau, rhaid inni godi rhwystrau sy'n gwahardd\n"
-#~ " unrhywun rhag gwadu'r hawliau hyn i chi neu ofyn ichi roi'r hawliau i "
-#~ "fyny.\n"
+#~ " unrhywun rhag gwadu'r hawliau hyn i chi neu ofyn ichi roi'r hawliau i fyny.\n"
 #~ " Try'r cyfyngiadau hyn yn gyfrifoldebau arbennig arnoch chi os\n"
 #~ " ydych yn dosbarthu copiau o'r feddalwedd, neu os ydych yn ei haddasu.\n"
 #~ "\n"
 #~ " Er enghraifft, os ydych yn dosbarthu copiau o raglen o'r fath, neill\n"
-#~ " ai'n rhad neu am ffi, rhaid ichi roi i'r rhai sy'n ei derbyn pob un o'r "
-#~ "hawliau sy\n"
-#~ " gennych chithau. Rhaid ichi sicrhau eu bod hwythau hefyd yn derbyn neu'n "
-#~ "gallu cael\n"
-#~ " y cod gwreiddiol. A rhaid ichi ddangos iddynt hwythauy termau hyn fel eu "
-#~ "bod hwy'n ymwybodol o'u hawliau.\n"
+#~ " ai'n rhad neu am ffi, rhaid ichi roi i'r rhai sy'n ei derbyn pob un o'r hawliau sy\n"
+#~ " gennych chithau. Rhaid ichi sicrhau eu bod hwythau hefyd yn derbyn neu'n gallu cael\n"
+#~ " y cod gwreiddiol. A rhaid ichi ddangos iddynt hwythauy termau hyn fel eu bod hwy'n ymwybodol o'u hawliau.\n"
 #~ "\n"
-#~ " Diogelwn eich hawliau gyda dau gam: (1) rhoi hawlfraint ar y feddalwedd, "
-#~ "a\n"
-#~ " (2) cynnig y drwydded hon ichi sy'n rhoi caniatad cyfreithiol ichi "
-#~ "gopio,\n"
+#~ " Diogelwn eich hawliau gyda dau gam: (1) rhoi hawlfraint ar y feddalwedd, a\n"
+#~ " (2) cynnig y drwydded hon ichi sy'n rhoi caniatad cyfreithiol ichi gopio,\n"
 #~ " dosbarthu a/neu newid y feddalwedd.\n"
 #~ " \n"
 #~ " Hefyd, er amddifyn pob un awdur a ninnau, carwn sicrhau\n"
 #~ " y deall pawb nad oes gwarant ar gyfer y feddalwedd rydd hon.\n"
 #~ " Os newidir y feddalwedd gan rywun arall a cael ei phasio ymlaen,\n"
-#~ " carwn i'r sawl sy'n ei derbyn wybod mai nid y gwaith gwreiddiol sydd "
-#~ "ganddynt, fel nad\n"
+#~ " carwn i'r sawl sy'n ei derbyn wybod mai nid y gwaith gwreiddiol sydd ganddynt, fel nad\n"
 #~ " adlewyrcha unrhyw broblemau dygwyd i mewn gan eraill\n"
 #~ " ar enwau da'r awduron gwreiddiol.\n"
 #~ "\n"
 #~ " Yn olaf, caiff unrhyw raglen rydd ei bygwth *** gan batentau\n"
 #~ " meddalwedd. Carwn osgoi'r perygl y caiff ail-ddosbarthwyr rhaglen rydd\n"
-#~ " drwydded batent unigol, gan wneud y rhaglen, mewn effaith, yn un "
-#~ "berchnogol. I atal hyn, yr ydym wedi'i wneud yn glir bod rhaid\n"
-#~ " i unrhyw batent gael ei drwyddedu ar gyfer defnydd rhydd gan bawb neu "
-#~ "fod heb ei drwyddedu o gwbl.\n"
+#~ " drwydded batent unigol, gan wneud y rhaglen, mewn effaith, yn un berchnogol. I atal hyn, yr ydym wedi'i wneud yn glir bod rhaid\n"
+#~ " i unrhyw batent gael ei drwyddedu ar gyfer defnydd rhydd gan bawb neu fod heb ei drwyddedu o gwbl.\n"
 #~ " \n"
 #~ " Mae'r union dermau a thelerau ar gyfer copio, dosbarthu a\n"
 #~ " newid yn dilyn.\n"
@@ -4228,40 +4448,31 @@ msgstr "Rhes:"
 #~ " TERMAU A THELERAU AR GYFER COPIO, DOSBARTHU A NEWID\n"
 #~ " \n"
 #~ " 0. Perthyn y Drwydded hon i unrhyw raglen neu waith arall sy'n cynnwys\n"
-#~ " hysbys wedi'i osod gan ddeiliad yr hawlfraint a ddywed y caiff ei "
-#~ "dosbarthu\n"
+#~ " hysbys wedi'i osod gan ddeiliad yr hawlfraint a ddywed y caiff ei dosbarthu\n"
 #~ " o dan dermau'r Drwydded y Cyhoedd hon. Cyfeiria'r \"Rhaglen\", isod,\n"
-#~ " at unrhwy raglen neu waith o'r fath, a golyga \"gwaith seiliedig ar y "
-#~ "Rhaglen\"\n"
-#~ " neill ai'r Rhaglen neu unrhyw waith a ddeillia ohoni o dan gyfraith "
-#~ "hawlfraint:\n"
+#~ " at unrhwy raglen neu waith o'r fath, a golyga \"gwaith seiliedig ar y Rhaglen\"\n"
+#~ " neill ai'r Rhaglen neu unrhyw waith a ddeillia ohoni o dan gyfraith hawlfraint:\n"
 #~ " hynny yw, unrhyw waith sy'n cynnwys y Rhaglen neu ran ohoni.\n"
 #~ " neill ai gair-am-air neu gyda newidiadau a/neu wedi'i gyfieithu i iaith\n"
 #~ " arall. (O hyn ymlaen, cynnwys cyfieithu heb cyfyngiad yn\n"
 #~ " y term \"newid\".) Cyfeirir at bob trwyddedai fel \"chi\".\n"
 #~ " \n"
-#~ " Ni pherthyn gweithgareddau heblaw copio, dosbarthu a newid i'r Drwydded "
-#~ "hon; tu allan o'i hystod y maen nhw. Ni chyfyngir ar y weithred\n"
+#~ " Ni pherthyn gweithgareddau heblaw copio, dosbarthu a newid i'r Drwydded hon; tu allan o'i hystod y maen nhw. Ni chyfyngir ar y weithred\n"
 #~ " o redeg y Rhaglen, a pherthyn allbwn y Rhaglen dim ond\n"
 #~ " os yw ei gynnwys yn cyfateb i waith seiliedig ar y Rhaglen\n"
 #~ " (yn annibynnol o'i gynhyrchu trwy redeg y Rhaglen).\n"
 #~ " A ydi hynny'n wir yn dibynnu ar yr hyn y mae'r Rhaglen yn ei gyflawni.\n"
 #~ " \n"
-#~ " 1. Cewch gopio a dosbarthu gair-am-air gopiau o god gwreiddiol y "
-#~ "Rhaglen\n"
-#~ " fel y'i cafwyd gennych, ar unrhyw gyfrwng, ond eich bod chi'n cyhoeddi'n "
-#~ "amlwg ac yn briodol ar bob copi hysbys hawlfraint\n"
-#~ " priodol a gwadiad gwarant; cadw'n un pob hysbys a gyfeiria at y Drwydded "
-#~ "hon ac i absenoldeb unrhyw warant;\n"
+#~ " 1. Cewch gopio a dosbarthu gair-am-air gopiau o god gwreiddiol y Rhaglen\n"
+#~ " fel y'i cafwyd gennych, ar unrhyw gyfrwng, ond eich bod chi'n cyhoeddi'n amlwg ac yn briodol ar bob copi hysbys hawlfraint\n"
+#~ " priodol a gwadiad gwarant; cadw'n un pob hysbys a gyfeiria at y Drwydded hon ac i absenoldeb unrhyw warant;\n"
 #~ " a rhoi i bob un derbynnydd arall o'r Rhaglen gopi o'r Drwydded hon\n"
 #~ " ynghyd a'r rhaglen.\n"
 #~ " \n"
 #~ " Cewch godi ffi am y weithred gorfforol o drosglwyddo copi, a\n"
-#~ " chewch yn unol a'ch dymuniad chi gynnig amddiffyn gwarant yn gyfnewid am "
-#~ "ffi.\n"
+#~ " chewch yn unol a'ch dymuniad chi gynnig amddiffyn gwarant yn gyfnewid am ffi.\n"
 #~ " \n"
-#~ " 2. Cewch newid eich copi neu gopiau chi o'r Rhaglen neu unrhyw ran "
-#~ "ohoni,\n"
+#~ " 2. Cewch newid eich copi neu gopiau chi o'r Rhaglen neu unrhyw ran ohoni,\n"
 #~ " gan ffurfio gwaith seiliedig ar y Rhaglen a chopi a\n"
 #~ " dosbarthu'r newidiadau hynny neu waith o dan delerau adran 1\n"
 #~ " uchod, ond eich bod hefyd yn cyfarfod a'r holl delerau hyn hefyd;\n"
@@ -4269,17 +4480,13 @@ msgstr "Rhes:"
 #~ " a) Rhaid ichi wneud i'r ffeiliau a newidiwyd gario hysbysiadau amlwg\n"
 #~ " yn datgan ichi newid y ffeiliau a'r dyddiad o unrhyw newid.\n"
 #~ " \n"
-#~ " b) Rhaid ichi wneud i unrhyw waith y byddwch yn ei ddosbarthu neu'i "
-#~ "gyhoeddi, sy'n cynnwys yn gyfan neu'n rhannol neu sy'n deillio o'r "
-#~ "Rhaglen neu unrhyw\n"
+#~ " b) Rhaid ichi wneud i unrhyw waith y byddwch yn ei ddosbarthu neu'i gyhoeddi, sy'n cynnwys yn gyfan neu'n rhannol neu sy'n deillio o'r Rhaglen neu unrhyw\n"
 #~ " ran ohoni, gael ei drwyddedu fel cyfanwaith yn rhad i bob\n"
 #~ " tryddydd parti o dan dermau'r Drwydded hon.\n"
 #~ " \n"
-#~ " c) Os bydd y rhaglen addasiedig fel arfer yn darllen gorchmynion trwy "
-#~ "gyfathrach\n"
+#~ " c) Os bydd y rhaglen addasiedig fel arfer yn darllen gorchmynion trwy gyfathrach\n"
 #~ " pan y'i rhedir, rhaid ichi wneud iddi, pan yn ymgychwyn ar gyfer\n"
-#~ " y fath ddefnydd cyfathrachol yn y ffordd fwyaf cyffredin, argraffu neu "
-#~ "arddangos\n"
+#~ " y fath ddefnydd cyfathrachol yn y ffordd fwyaf cyffredin, argraffu neu arddangos\n"
 #~ " cyhoeddiad gan gynnwys hysbys hawlfraint priodol a\n"
 #~ " hysbys nad oes gwarant (neu fel arall, yn dweud eich bod yn darparu\n"
 #~ " gwarant) ac y caiff defnyddwyr ail-ddosbarthu'r rhaglen\n"
@@ -4288,32 +4495,20 @@ msgstr "Rhes:"
 #~ " ond nad yw'n argraffu hysbys o'r fath fel arfer, nid yw'ch gwaith\n"
 #~ " chi sy'n seiliedig ar y Rhaglen yn gorfod argraffu hysbysiad.)\n"
 #~ " \n"
-#~ " Mae'r gofyniadau hyn yn perthyn i'r gwaith addasiedig fel cyfanwaith.  "
-#~ "Os\n"
-#~ " oes adrannau penodedig o'r gwaith hwnnw nad ydynt yn seiliedig ar y "
-#~ "Rhaglen,\n"
-#~ " ac a ellid eu hystyried yn rhesymol yn weithiau annibynnol ac ar wahan "
-#~ "yn\n"
-#~ " eu hunain, wedyn nad yw'r Drwydded hon na'i thelerau ddim yn berthnasol "
-#~ "i'r adrannau hynny pan fyddwch yn eu dosbarthu fel gweithiau ar wahan. "
-#~ "Ond pan fyddwch\n"
+#~ " Mae'r gofyniadau hyn yn perthyn i'r gwaith addasiedig fel cyfanwaith.  Os\n"
+#~ " oes adrannau penodedig o'r gwaith hwnnw nad ydynt yn seiliedig ar y Rhaglen,\n"
+#~ " ac a ellid eu hystyried yn rhesymol yn weithiau annibynnol ac ar wahan yn\n"
+#~ " eu hunain, wedyn nad yw'r Drwydded hon na'i thelerau ddim yn berthnasol i'r adrannau hynny pan fyddwch yn eu dosbarthu fel gweithiau ar wahan. Ond pan fyddwch\n"
 #~ " yn dosbarthu'r union adrannau'n rhan o gyfanwaith sy'n waith seiliedig\n"
 #~ " ar y Rhaglen, rhaid bod dosbarthiad y cyfanwaith o dan delerau'r\n"
-#~ " Drwydded hon, y mae ei chaniatad ar gyfer trwyddedau eraill yn ymestyn "
-#~ "dros\n"
-#~ " yr holl gyfanwaith, ac felly i bob un rhan ni waeth pwy a'i "
-#~ "hysgrifennodd.\n"
+#~ " Drwydded hon, y mae ei chaniatad ar gyfer trwyddedau eraill yn ymestyn dros\n"
+#~ " yr holl gyfanwaith, ac felly i bob un rhan ni waeth pwy a'i hysgrifennodd.\n"
 #~ " \n"
-#~ " Felly, nid yw'n fwriad gan yr adran hon i hawlio neu ddadlau'ch hawliau "
-#~ "chi dros waith a ysgrifennwyd gennych yn gyfangwbl; yn hytrach, y bwriad "
-#~ "yw i\n"
-#~ " arfer yr hawl i reoli dosbarthiad gweithau seiliedig neu gyfanweithiau "
-#~ "seiliedig ar y Rhaglen.\n"
+#~ " Felly, nid yw'n fwriad gan yr adran hon i hawlio neu ddadlau'ch hawliau chi dros waith a ysgrifennwyd gennych yn gyfangwbl; yn hytrach, y bwriad yw i\n"
+#~ " arfer yr hawl i reoli dosbarthiad gweithau seiliedig neu gyfanweithiau seiliedig ar y Rhaglen.\n"
 #~ " \n"
-#~ " Ymhellach, ni ddwg dim byd ond hel gwaith arall nad yw'n seiliedig ar y "
-#~ "Rhaglen\n"
-#~ " at ei gilydd gyda'r Rhaglen (neu chyda gwaith seiliedig ar y Rhaglen) ar "
-#~ "ddosran\n"
+#~ " Ymhellach, ni ddwg dim byd ond hel gwaith arall nad yw'n seiliedig ar y Rhaglen\n"
+#~ " at ei gilydd gyda'r Rhaglen (neu chyda gwaith seiliedig ar y Rhaglen) ar ddosran\n"
 #~ " o gyfrwng storio neu ddosbarthu y gwaith arall o dan\n"
 #~ " ystod y Drwydded hon.\n"
 #~ "\n"
@@ -4326,12 +4521,10 @@ msgstr "Rhes:"
 #~ " 1 a 2 uchod ar gyfrwng ddefnyddid fel arfer i gyfnewid meddalwedd; neu,\n"
 #~ " \n"
 #~ " b) Cyd-ddosbarthu cynnig ysgrifennedig, dilys am leiafswm\n"
-#~ " o dair blynnedd, i roi i unrhyw drydydd parti, am ffi dim mwy na'ch "
-#~ "cost\n"
+#~ " o dair blynnedd, i roi i unrhyw drydydd parti, am ffi dim mwy na'ch cost\n"
 #~ " chi o berfformio'n gorfforol y dosbarthiad cod gwreiddiol,\n"
 #~ " gopi cyfan peiriant-ddarllenadwy o'r cod gwreiddiol cyfatebol, i'w\n"
-#~ " ddosbarth o dan delerau Adrannau 1 a 2 uchod ar gyfrwng ddefnyddid fel "
-#~ "arfer i gyfnewid meddalwedd; neu,\n"
+#~ " ddosbarth o dan delerau Adrannau 1 a 2 uchod ar gyfrwng ddefnyddid fel arfer i gyfnewid meddalwedd; neu,\n"
 #~ " \n"
 #~ " c) Cyd-ddosbarthu'r wybodaeth gawsoch chi o'r cynnig\n"
 #~ " i ddosbarth cod gwreiddiol cyfatebol. (Caniateir y dewis hwn\n"
@@ -4340,183 +4533,60 @@ msgstr "Rhes:"
 #~ " ynghyd a chynnig o'r fath, yn ol Is-adran b uchod.)\n"
 #~ " \n"
 #~ " Ystir cod gwreiddiol yw ffurf y gwaith a ddewisir i'w newid yn arferol.\n"
-#~ "  Ar gyfer gwaith rhedadwy, golyga cod gwreiddiol cyfan y cod gwreiddiol "
-#~ "ar gyfer yr holl fodiwlau cynwysiedig, ynghyd ag unrhyw ffeiliau diffinio "
-#~ "rhyngwyneb, a'r sgriptiau a ddefnyddir i reoli compeilio ac arsefydlu'r "
-#~ "ffeil redadwy. Ond, fel eithriad arbennig, ni raid i'r cod gwreiddiol a "
-#~ "ddosberthir gynnwys unrhywbeth nad yw'n cael ei ddosbarthu fel arfer "
-#~ "(mewn gwedd cod gwreiddiol neu'n ddigidol) gyda phrif ddosrannau "
-#~ "(compeilydd, cnewyllyn, ac ati) y cysawd gweithredu y mae'r ffeil redadwy "
-#~ "yn rhedeg arno, onibai bod y dernyn ei hun yn cael ei gyd-ddosbarthu "
-#~ "gyda'r ffeil redadwy. Os cyflawnir dosbarthu'r cod rhedadwy neu "
-#~ "wrthrychol trwy gynnig mynediad i gopio o le penodedig, wedyn bydd cynnig "
-#~ "mynediad tebyg i copio'r cod gwreiddiol o'r un lle yn cyfrif fel "
-#~ "dosbarthu'r cod gwreiddiol, er nad yw trydydd partiau'n cael eu gorfodi i "
-#~ "gopio'r cod gwreiddiol ynghyd a'r cod gwrthrychol.\n"
+#~ "  Ar gyfer gwaith rhedadwy, golyga cod gwreiddiol cyfan y cod gwreiddiol ar gyfer yr holl fodiwlau cynwysiedig, ynghyd ag unrhyw ffeiliau diffinio rhyngwyneb, a'r sgriptiau a ddefnyddir i reoli compeilio ac arsefydlu'r ffeil redadwy. Ond, fel eithriad arbennig, ni raid i'r cod gwreiddiol a ddosberthir gynnwys unrhywbeth nad yw'n cael ei ddosbarthu fel arfer (mewn gwedd cod gwreiddiol neu'n ddigidol) gyda phrif ddosrannau (compeilydd, cnewyllyn, ac ati) y cysawd gweithredu y mae'r ffeil redadwy yn rhedeg arno, onibai bod y dernyn ei hun yn cael ei gyd-ddosbarthu gyda'r ffeil redadwy. Os cyflawnir dosbarthu'r cod rhedadwy neu wrthrychol trwy gynnig mynediad i gopio o le penodedig, wedyn bydd cynnig mynediad tebyg i copio'r cod gwreiddiol o'r un lle yn cyfrif fel dosbarthu'r cod gwreiddiol, er nad yw trydydd partiau'n cael eu gorfodi i gopio'r cod gwreiddiol ynghyd a'r cod gwrthrychol.\n"
 #~ " \n"
-#~ " 4. Ni chewch gopio, newid, is-drwyddedu, neu ddosbarthu'r Rhaglen ond "
-#~ "fel y darperir trwy fynegiant o dan y Drwydded hon. Y mae unrhyw ymgais "
-#~ "fel arall i gopio, newid, is-drwyddedu neu ddosbarthu'r Rhaglen yn ddi-"
-#~ "ystyr, a bydd yn terfynu'ch hawliau chi o dan y Drwydded hon.  Serch "
-#~ "hynny, na therfynir trwyddedau partiau sydd wedi derbyn copiau, neu "
-#~ "hawliau, gennych o dan y Drwydded hon cyhyd a bod partiau felly yn "
-#~ "cydymffurfio o hyd.\n"
+#~ " 4. Ni chewch gopio, newid, is-drwyddedu, neu ddosbarthu'r Rhaglen ond fel y darperir trwy fynegiant o dan y Drwydded hon. Y mae unrhyw ymgais fel arall i gopio, newid, is-drwyddedu neu ddosbarthu'r Rhaglen yn ddi-ystyr, a bydd yn terfynu'ch hawliau chi o dan y Drwydded hon.  Serch hynny, na therfynir trwyddedau partiau sydd wedi derbyn copiau, neu hawliau, gennych o dan y Drwydded hon cyhyd a bod partiau felly yn cydymffurfio o hyd.\n"
 #~ " \n"
-#~ " 5. Nid yw'n ofynnol ichi dderbyn y Drwydded hon, am nad ydych wedi'i "
-#~ "arwyddo. Serch hynny, ni rydd unrhywbeth arall ganiatad ichi newid neu "
-#~ "ddosbarthu'r Rhaglen na'i weithiau seiliedig. Gwaherddir y gweithredoedd "
-#~ "hyn trwy gyfraith os nad ydych yn derbyn y Drwydded hon.  Felly, tryw "
-#~ "newid neu ddosbarthu'r Rhaglen (neu unrhyw waith seiliedig ar y Rhaglen), "
-#~ "yr ydych yn arwyddo eich bod yn derbyn y Drwydded hon er mwyn gwneud "
-#~ "felly, a'i holl dermau a thelerau ar gyfer copio, dosbarthu neu newid y "
-#~ "Rhaglen neu weithiau seiliedig arni.\n"
+#~ " 5. Nid yw'n ofynnol ichi dderbyn y Drwydded hon, am nad ydych wedi'i arwyddo. Serch hynny, ni rydd unrhywbeth arall ganiatad ichi newid neu ddosbarthu'r Rhaglen na'i weithiau seiliedig. Gwaherddir y gweithredoedd hyn trwy gyfraith os nad ydych yn derbyn y Drwydded hon.  Felly, tryw newid neu ddosbarthu'r Rhaglen (neu unrhyw waith seiliedig ar y Rhaglen), yr ydych yn arwyddo eich bod yn derbyn y Drwydded hon er mwyn gwneud felly, a'i holl dermau a thelerau ar gyfer copio, dosbarthu neu newid y Rhaglen neu weithiau seiliedig arni.\n"
 #~ " \n"
-#~ " 6. Bob tro yr ydych yn ail-ddosbarthu'r Rhaglen (neu unrhyw waith "
-#~ "seiliedig ar y Rhaglen), bydd y derbynnydd yn cael yn awtomatig drwydded "
-#~ "oddi wrth y trwyddedwr gwreiddiol i gopio, dosbarthu neu newid y Rhaglen "
-#~ "o dan y termau a'r telerau hyn. Ni chewch orfodi unrhyw gyfyngiadau "
-#~ "ymhellach ar arfer hawliau'r derbynnydd a roir yn hyn. Nid ydych yn "
-#~ "gyfrifol am orfodi cydymffurfiad trydydd partiau i'r Drwydded hon.\n"
+#~ " 6. Bob tro yr ydych yn ail-ddosbarthu'r Rhaglen (neu unrhyw waith seiliedig ar y Rhaglen), bydd y derbynnydd yn cael yn awtomatig drwydded oddi wrth y trwyddedwr gwreiddiol i gopio, dosbarthu neu newid y Rhaglen o dan y termau a'r telerau hyn. Ni chewch orfodi unrhyw gyfyngiadau ymhellach ar arfer hawliau'r derbynnydd a roir yn hyn. Nid ydych yn gyfrifol am orfodi cydymffurfiad trydydd partiau i'r Drwydded hon.\n"
 #~ " \n"
-#~ " 7. Os, mewn canlyniad i ddyfarniad llys neu honiad o dorri patent neu am "
-#~ "unrhyw resum arall (heb ei gyfyngu i faterion patentau), gorfodir telerau "
-#~ "arnoch (trwy orchymyn llys, cytundeb neu fel arall) sy'n gwrth-ddweud "
-#~ "telerau'r Drwydded hon, nid ydynt yn eich esgusodi rhag telerau'r "
-#~ "Drwydded hon. Os na fedrwch ddosbarthu fel y bodlonir eich oblygiadau o "
-#~ "dan y Drwydded hon ac unrhyw oblygiadau perthnasol eraill ar yr un pryd, "
-#~ "wedyn mewn canlyniad ni fedrwch ddosbarthu'r Rhaglen o gwbl. Er "
-#~ "enghraifft, pe na byddai trwydded patent yn caniatau ail-ddosbarthu di-"
-#~ "freiniol o'r Rhaglen i bawb a dderbyn copiau'n uniongyrchol neu'n "
-#~ "anuniongyrchol gennych, yna'r unig ffordd y gellwch ei fodloni ef a'r "
-#~ "Drwydded hon fyddai i beidio yn gyfangwbl a dosbarthu'r Rhaglen. Os delir "
-#~ "unrhyw ran o'r adran hon yn annilys neu'n anorfodadwy o dan unrhyw "
-#~ "amgylchiad arbennig, bwriedir i weddill yr adran berthyn, a bwriedir i'r "
-#~ "adran gyfan berthyn mewn amgylchiadau eraill.  Nid yw'n fwriad gan yr "
-#~ "adran hon i'ch ysgogi i dorri unrhyw batentau neu hawliau eiddo eraill "
-#~ "neu i ddadlau dilysrwydd unrhyw hawliau o'r fath; unig bwrpas yr adran "
-#~ "hon yw i amddiffyn dilysrwydd sustem dosbarthu meddalwedd rydd, a "
-#~ "weithredir tryw ymarferion trwyddedau cyhoeddus. Gwnaed cyfraniadau hael "
-#~ "gan lawer o bobl i'r ystod eang o feddalwedd a ddosberthir trwy'r sustem "
-#~ "honno gan ddibynnu ar weithredu cyson o'r sustem honno; i fyny i'r awdur/"
-#~ "rhoddwr mae hi i benderfynu a ydyw'n fodlon dosbarthu meddalwedd trwy "
-#~ "unrhyw sustem arall ac ni caiff trwydded gorfodi'r dewis hwnnw. Bwriedir "
-#~ "yr adran hon i wneud yn hollol glir yr hyn a credir fydd yn ganlyniad "
-#~ "gweddill y Drwydded hon. 8. Os cyfyngir ar ddosbarthu a/neu ddefnydd o'r "
-#~ "Rhaglen mewn gwledydd arbennig neill ai trwy batentau neu drwy "
-#~ "ryngwynebau hawlfreintiedig, caiff deiliad gwreiddiol yr hawlfraint a "
-#~ "roir y Rhaglen hon o dan y Drwydded hon ychwanegu trwy fynegiant "
-#~ "gyfyngiad dosbarthiad daearyddol sy'n eithrio'r gwledydd hynny, fel y "
-#~ "caniateir dosbarthu dim ond o fewn neu rhwng y gwledydd nad ydynt wedi'u "
-#~ "heithrio.  Mewn achos felly, cynnwys y Drwydded hon y cyfyngiad fel ei "
-#~ "fod wedi'i ysgrifennu yng nghorff y Drwydded hon. 9.  Gall y Free "
-#~ "Software Foundation gyhoeddi fersiynau addasiedig a/neu newydd o Drwydded "
-#~ "y Cyhoedd o dro i dro. Bydd fersiynau felly'n debyg mewn ysbryd i'r "
-#~ "fersiwn presennol, ond gallant amrywio yn y manylion i gyfeirio at "
-#~ "broblemau neu ofidiau newydd. Rhoir rhif fersiwn nodweddiol ar bob "
-#~ "fersiwn.  Os yw'r Rhaglen yn nodi rhif fersiwn y Drwydded hon sy'n "
-#~ "perthyn iddi ac \"unrhyw fersiynau diweddarach\", bydd gennych yr opsiwn "
-#~ "o ddilyn y termau a'r telerau neill ai y fersiwn hwnnw neu unrhyw fersiwn "
-#~ "diweddarach wedi'i gyhoeddi gan y Free Software Foundation. Os nad yw'r "
-#~ "Rhaglen yn nodi rhif fersiwn y Drwydded hon, cewch ddewis unrhyw fersiwn "
-#~ "a gyhoeddwyd erioed gan y Free Software Foundation. 10. Pe garech gynnwys "
-#~ "rhannau o'r Rhaglen mewn rhaglenni rhydd eraill sydd a thelerau dosbarthu "
-#~ "gwahanol, ysgrifennwch at yr awdur i ofyn am ganiatad. Ar gyfer "
-#~ "meddalwedd o dan hawlfraint y Free Software Foundation, ysgrifennwch at y "
-#~ "Free Software Foundation; gwnawn eithriadau weithiau am hyn. Tywysir ein "
-#~ "penderfyniad gan ddwy amcan o gadw statws rhydd popeht sy'n deillio o'n "
-#~ "meddalwedd rydd ac o hybu rhannu ac ail-ddefnydd o feddalwedd yn "
-#~ "gyffredinol.\n"
+#~ " 7. Os, mewn canlyniad i ddyfarniad llys neu honiad o dorri patent neu am unrhyw resum arall (heb ei gyfyngu i faterion patentau), gorfodir telerau arnoch (trwy orchymyn llys, cytundeb neu fel arall) sy'n gwrth-ddweud telerau'r Drwydded hon, nid ydynt yn eich esgusodi rhag telerau'r Drwydded hon. Os na fedrwch ddosbarthu fel y bodlonir eich oblygiadau o dan y Drwydded hon ac unrhyw oblygiadau perthnasol eraill ar yr un pryd, wedyn mewn canlyniad ni fedrwch ddosbarthu'r Rhaglen o gwbl. Er enghraifft, pe na byddai trwydded patent yn caniatau ail-ddosbarthu di-freiniol o'r Rhaglen i bawb a dderbyn copiau'n uniongyrchol neu'n anuniongyrchol gennych, yna'r unig ffordd y gellwch ei fodloni ef a'r Drwydded hon fyddai i beidio yn gyfangwbl a dosbarthu'r Rhaglen. Os delir unrhyw ran o'r adran hon yn annilys neu'n anorfodadwy o dan unrhyw amgylchiad arbennig, bwriedir i weddill yr adran berthyn, a bwriedir i'r adran gyfan berthyn mewn amgylchiadau eraill.  Nid yw'n fwriad gan yr adran hon i'ch ysgogi i dorri unrhyw batentau neu hawliau eiddo eraill neu i ddadlau dilysrwydd unrhyw hawliau o'r fath; unig bwrpas yr adran hon yw i amddiffyn dilysrwydd sustem dosbarthu meddalwedd rydd, a weithredir tryw ymarferion trwyddedau cyhoeddus. Gwnaed cyfraniadau hael gan lawer o bobl i'r ystod eang o feddalwedd a ddosberthir trwy'r sustem honno gan ddibynnu ar weithredu cyson o'r sustem honno; i fyny i'r awdur/rhoddwr mae hi i benderfynu a ydyw'n fodlon dosbarthu meddalwedd trwy unrhyw sustem arall ac ni caiff trwydded gorfodi'r dewis hwnnw. Bwriedir yr adran hon i wneud yn hollol glir yr hyn a credir fydd yn ganlyniad gweddill y Drwydded hon. 8. Os cyfyngir ar ddosbarthu a/neu ddefnydd o'r Rhaglen mewn gwledydd arbennig neill ai trwy batentau neu drwy ryngwynebau hawlfreintiedig, caiff deiliad gwreiddiol yr hawlfraint a roir y Rhaglen hon o dan y Drwydded hon ychwanegu trwy fynegiant gyfyngiad dosbarthiad daearyddol sy'n eithrio'r gwledydd hynny, fel y caniateir dosbarthu dim ond o fewn neu rhwng y gwledydd nad ydynt wedi'u heithrio.  Mewn achos felly, cynnwys y Drwydded hon y cyfyngiad fel ei fod wedi'i ysgrifennu yng nghorff y Drwydded hon. 9.  Gall y Free Software Foundation gyhoeddi fersiynau addasiedig a/neu newydd o Drwydded y Cyhoedd o dro i dro. Bydd fersiynau felly'n debyg mewn ysbryd i'r fersiwn presennol, ond gallant amrywio yn y manylion i gyfeirio at broblemau neu ofidiau newydd. Rhoir rhif fersiwn nodweddiol ar bob fersiwn.  Os yw'r Rhaglen yn nodi rhif fersiwn y Drwydded hon sy'n perthyn iddi ac \"unrhyw fersiynau diweddarach\", bydd gennych yr opsiwn o ddilyn y termau a'r telerau neill ai y fersiwn hwnnw neu unrhyw fersiwn diweddarach wedi'i gyhoeddi gan y Free Software Foundation. Os nad yw'r Rhaglen yn nodi rhif fersiwn y Drwydded hon, cewch ddewis unrhyw fersiwn a gyhoeddwyd erioed gan y Free Software Foundation. 10. Pe garech gynnwys rhannau o'r Rhaglen mewn rhaglenni rhydd eraill sydd a thelerau dosbarthu gwahanol, ysgrifennwch at yr awdur i ofyn am ganiatad. Ar gyfer meddalwedd o dan hawlfraint y Free Software Foundation, ysgrifennwch at y Free Software Foundation; gwnawn eithriadau weithiau am hyn. Tywysir ein penderfyniad gan ddwy amcan o gadw statws rhydd popeht sy'n deillio o'n meddalwedd rydd ac o hybu rhannu ac ail-ddefnydd o feddalwedd yn gyffredinol.\n"
 #~ " \n"
 #~ " \t\t\t DIM GWARANT\n"
 #~ " \n"
-#~ " 11. AM FOD Y RHAGLEN WEDI'I DRWYDDEDU'N RHAD, NID OES WARANT AR GYFER Y "
-#~ "RHAGLEN, HYD AT GANIATAD EHANGAF CYFRAITH BERTHNASOL. ONI DDYWEDIR YN "
-#~ "WAHANOL YN YSGRIFENEDIG DARPERIR Y RHAGLEN GAN DDEILIAD YR HAWLFRAINT A/"
-#~ "NEU BARTIAU ERAILL \"FEL Y MAE\" HEB WARANT O UNRHYW FATH, NEILL AI TRWY "
-#~ "FYNEGIANT NEU DRWY AWGRYMIAD, GAN GYNNWYS, OND HEB EI GYFYNGU AT, "
-#~ "WARANTAU AWGRYMIEDIG GWERTHADWY-EDD A DILYSRWYDD AT BWRPAS ARBENNIG. CHI "
-#~ "BIAU'R RISG LLE MAE SAFON A PHERFFORMANS Y RHAGLEN YN Y CWESTIWN. PE "
-#~ "BYDDAI'R RHAGLEN YN WALLUS, CHI FYDD YN CYMRYD Y CYFRIFOLDEB AR GYFER "
-#~ "COSTAU POB GWASANAETH, TRWSIO NEU GYWIRO.\n"
+#~ " 11. AM FOD Y RHAGLEN WEDI'I DRWYDDEDU'N RHAD, NID OES WARANT AR GYFER Y RHAGLEN, HYD AT GANIATAD EHANGAF CYFRAITH BERTHNASOL. ONI DDYWEDIR YN WAHANOL YN YSGRIFENEDIG DARPERIR Y RHAGLEN GAN DDEILIAD YR HAWLFRAINT A/NEU BARTIAU ERAILL \"FEL Y MAE\" HEB WARANT O UNRHYW FATH, NEILL AI TRWY FYNEGIANT NEU DRWY AWGRYMIAD, GAN GYNNWYS, OND HEB EI GYFYNGU AT, WARANTAU AWGRYMIEDIG GWERTHADWY-EDD A DILYSRWYDD AT BWRPAS ARBENNIG. CHI BIAU'R RISG LLE MAE SAFON A PHERFFORMANS Y RHAGLEN YN Y CWESTIWN. PE BYDDAI'R RHAGLEN YN WALLUS, CHI FYDD YN CYMRYD Y CYFRIFOLDEB AR GYFER COSTAU POB GWASANAETH, TRWSIO NEU GYWIRO.\n"
 #~ " \n"
-#~ " 12. NI FYDD AR UNRHYW GYFRIF ONIBAI AM OFYNIAD CYFRAITH BERTHNASOL NEU "
-#~ "WEDI'I GYTUNO'N YSGRIFENNEDIG UNRHYW DEILIAD HAWLFRAINT, NEU UNRHYW BARTI "
-#~ "ARALL ALL NEWID A/NEU AIL-DDOSBARTHU'R RHAGLEN YN OL Y CANIATAD UCHOD, YN "
-#~ "GYFRIFOL ICHI AM IAWNDAL, GAN GYNNWYS UNRHYW IAWNDALIADAU CYFFREDINOL, "
-#~ "ARBENNIG, DIGWYDDIADOL NEU GANLYNIADOL A CYWD ALLAN O DDEFNYDD NEU ANALLU "
-#~ "I DDEFNYDDIO'R RHAGLEN (GAN CYNNWYS OND HEB GYFYNGU I GOLLI DATA NEU "
-#~ "DATA'N CAEL EI WNEUD YN WALLUS NEU COLLEDION DIODDEFWYD GENNYCH NEU "
-#~ "TRYDYDD PARTIAU NEU FETHIANT Y RHAGLEN I GYD-WEITHIO GYDAG UNRHYW "
-#~ "RAGLENNI ERAILL), HYD YN OED OS BYDD Y FATH DEILIAD WEDI'I HYSBYSU O "
-#~ "BOSIBILRWYDD DIFROD O'R FATH.\n"
+#~ " 12. NI FYDD AR UNRHYW GYFRIF ONIBAI AM OFYNIAD CYFRAITH BERTHNASOL NEU WEDI'I GYTUNO'N YSGRIFENNEDIG UNRHYW DEILIAD HAWLFRAINT, NEU UNRHYW BARTI ARALL ALL NEWID A/NEU AIL-DDOSBARTHU'R RHAGLEN YN OL Y CANIATAD UCHOD, YN GYFRIFOL ICHI AM IAWNDAL, GAN GYNNWYS UNRHYW IAWNDALIADAU CYFFREDINOL, ARBENNIG, DIGWYDDIADOL NEU GANLYNIADOL A CYWD ALLAN O DDEFNYDD NEU ANALLU I DDEFNYDDIO'R RHAGLEN (GAN CYNNWYS OND HEB GYFYNGU I GOLLI DATA NEU DATA'N CAEL EI WNEUD YN WALLUS NEU COLLEDION DIODDEFWYD GENNYCH NEU TRYDYDD PARTIAU NEU FETHIANT Y RHAGLEN I GYD-WEITHIO GYDAG UNRHYW RAGLENNI ERAILL), HYD YN OED OS BYDD Y FATH DEILIAD WEDI'I HYSBYSU O BOSIBILRWYDD DIFROD O'R FATH.\n"
 #~ " \n"
 #~ " \t\t DIWDDD TERMAU A THELERAU\n"
 #~ " \n"
 #~ " \n"
 #~ " \t Sut i Glymu'r Telerau hyn i'ch Rhaglen Newydd\n"
 #~ " \n"
-#~ " Os ydych yn datblygu rhaglen newydd, a bydd arnoch eisiau iddi fod o'r "
-#~ "defnydd mwyaf i'r cyhoedd, y ffordd orau i gyflawni hyn yw i'w wneud yn "
-#~ "feddalwedd rydd y gall pawb ei hail-ddosbarthu a newid o dan y telerau "
-#~ "hyn.\n"
+#~ " Os ydych yn datblygu rhaglen newydd, a bydd arnoch eisiau iddi fod o'r defnydd mwyaf i'r cyhoedd, y ffordd orau i gyflawni hyn yw i'w wneud yn feddalwedd rydd y gall pawb ei hail-ddosbarthu a newid o dan y telerau hyn.\n"
 #~ " \n"
-#~ " I wneud felly, clymu'r hysbysiadau canlynol i'r rhaglen. Clymu nhw i "
-#~ "gychwyn pob ffeil cod gwreiddiol ydi'r peth saffaf i cyfleu yn y ffordd "
-#~ "fwyaf effeithiol gwadiad gwarant; a dylai pob ffeil fod ag o leiaf y "
-#~ "llinell \"hawlfraint\" ac arwydd i le ceir y hysbysiad cyflawn.\n"
+#~ " I wneud felly, clymu'r hysbysiadau canlynol i'r rhaglen. Clymu nhw i gychwyn pob ffeil cod gwreiddiol ydi'r peth saffaf i cyfleu yn y ffordd fwyaf effeithiol gwadiad gwarant; a dylai pob ffeil fod ag o leiaf y llinell \"hawlfraint\" ac arwydd i le ceir y hysbysiad cyflawn.\n"
 #~ " \n"
 #~ " <un linell i roi enw'r rhaglen a syniad byr o beth mae hi'n ei wneud.>\n"
 #~ " Hawlfraint (h) 19bb <enw'r awdur>\n"
 #~ " \n"
-#~ " Meddalwedd rydd yw'r rhaglen hon; cewch ei hail-ddosbarthu a/neu ei "
-#~ "newid o dan delerau Trwydded y Cyhoedd GNU fel y'i cyhoeddir gan y Free "
-#~ "Software Foundation; neill ai fersiwn 2 o'r Drwydded, neu (yn ol eich "
-#~ "dewis chi) unrhyw fersiwn diweddarach.\n"
+#~ " Meddalwedd rydd yw'r rhaglen hon; cewch ei hail-ddosbarthu a/neu ei newid o dan delerau Trwydded y Cyhoedd GNU fel y'i cyhoeddir gan y Free Software Foundation; neill ai fersiwn 2 o'r Drwydded, neu (yn ol eich dewis chi) unrhyw fersiwn diweddarach.\n"
 #~ " \n"
-#~ " Dosberthir y rhaglen hon yn y gobaith y bydd yn ddefnyddiol, ond HEB "
-#~ "UNRHYW WARANT; heb hyd yn oed y warant awgrymiedig o WERTHADWY-EDD neu "
-#~ "DILYSRWYDD AT BWRPAS ARBENNIG. Gweler Trywdded y Cyhoedd GNU am ragor o "
-#~ "fanylion.\n"
+#~ " Dosberthir y rhaglen hon yn y gobaith y bydd yn ddefnyddiol, ond HEB UNRHYW WARANT; heb hyd yn oed y warant awgrymiedig o WERTHADWY-EDD neu DILYSRWYDD AT BWRPAS ARBENNIG. Gweler Trywdded y Cyhoedd GNU am ragor o fanylion.\n"
 #~ " \n"
-#~ " Dylech fod wedi derbyn copi o Drwydded y Cyhoedd GNU ynghyd a'r rhaglen "
-#~ "hon; os na, ysgrifennwch at y Free Software Foundation, Inc., 59 Temple "
-#~ "Place, Suite 330, Boston, MA 02111-1307 UDA\n"
+#~ " Dylech fod wedi derbyn copi o Drwydded y Cyhoedd GNU ynghyd a'r rhaglen hon; os na, ysgrifennwch at y Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 UDA\n"
 #~ " \n"
 #~ " \n"
-#~ " Ychwanegwch hefyd wybodaeth ar sut i gysylltu a chi drwy bost electroneg "
-#~ "a phapur.\n"
+#~ " Ychwanegwch hefyd wybodaeth ar sut i gysylltu a chi drwy bost electroneg a phapur.\n"
 #~ "\n"
-#~ " Os yw'r rhaglen yn cyfathrachol, gwnewch iddi roi allan hysbysiad byr "
-#~ "fel hyn pan fydd yn cychwyn mewn modd gyfathrachol:\n"
+#~ " Os yw'r rhaglen yn cyfathrachol, gwnewch iddi roi allan hysbysiad byr fel hyn pan fydd yn cychwyn mewn modd gyfathrachol:\n"
 #~ " \n"
 #~ " Gnomofisiwn fersiwn 69, Hawlfraint (h) 19bb enw'r awdur\n"
-#~ " Daw Gnomofisiwn heb UNRHYW WARANT O GWBL; am fanylion teipiwch 'dangos "
-#~ "w'.\n"
+#~ " Daw Gnomofisiwn heb UNRHYW WARANT O GWBL; am fanylion teipiwch 'dangos w'.\n"
 #~ " Meddalwedd rydd yw hon, ac y mae croeso ichi ei hail-ddosbarth\n"
 #~ " o dan rai amodau; teipiwch 'dangos c' am fanylion.\n"
 #~ " \n"
-#~ " Dylai'r gorchmynion dychmygol 'dangos w' a 'dangos c' ddangos y rhannau "
-#~ "perthnasol o Drwydded y Cyhoedd.  Wrth gwrs, gellir galw'r gorchmynion yr "
-#~ "ydych yn eu defnyddio rhywbeth wahanol i 'dangos w' a 'dangos c'; "
-#~ "cliciadau'r llygoden hyd yn oed neu ddewisiadau dewislen can nhw fod--"
-#~ "beth bynnag sy'n gweddu i'ch rhaglen.\n"
+#~ " Dylai'r gorchmynion dychmygol 'dangos w' a 'dangos c' ddangos y rhannau perthnasol o Drwydded y Cyhoedd.  Wrth gwrs, gellir galw'r gorchmynion yr ydych yn eu defnyddio rhywbeth wahanol i 'dangos w' a 'dangos c'; cliciadau'r llygoden hyd yn oed neu ddewisiadau dewislen can nhw fod--beth bynnag sy'n gweddu i'ch rhaglen.\n"
 #~ " \n"
-#~ " Dylech hefyd gael i'ch cyflogwr (os ydych yn gweithio fel rhaglennydd) "
-#~ "neu'ch ysgol, os oes un gennych, i lofnodi \"gwadiant hawlfraint\" ar "
-#~ "gyfer y rhaglen, os oes rhaid.  Dyma sampl; newidiwch yr enwau\n"
+#~ " Dylech hefyd gael i'ch cyflogwr (os ydych yn gweithio fel rhaglennydd) neu'ch ysgol, os oes un gennych, i lofnodi \"gwadiant hawlfraint\" ar gyfer y rhaglen, os oes rhaid.  Dyma sampl; newidiwch yr enwau\n"
 #~ " \n"
-#~ " Rhy Yoyodyne, Inc., heibio pob diddordeb hawlfraint yn y rhaglen "
-#~ "'Gnomofisiwn' (sy'n trio bachu compeilars) ysgrifennwyd gan James "
-#~ "Hacker.\n"
+#~ " Rhy Yoyodyne, Inc., heibio pob diddordeb hawlfraint yn y rhaglen 'Gnomofisiwn' (sy'n trio bachu compeilars) ysgrifennwyd gan James Hacker.\n"
 #~ " \n"
 #~ " <llofnod Ty Coon>, 1 Ebrill 1989\n"
 #~ " Ty Coon, Llywydd Feis\n"
 #~ " \n"
-#~ " Ni chaniateir y Drwydded Cyhoedd hon ymgorffori'ch rhaglen i mewn i "
-#~ "raglenni perchnogol. Os mai llyfrgell is-ffwythiannau yw'ch rhaglen fe "
-#~ "allech ei ystyried yn fwy defnyddiol i ganiatau dolenni rhaglenni "
-#~ "perchnogol gyda'r llyfrgell.  Os mai dyma beth yr ydych eisiau ei wneud, "
-#~ "defnyddiwch Drwydded Llyfrgell y Cyhoedd GNU yn lle'r Drwydded hon.\n"
+#~ " Ni chaniateir y Drwydded Cyhoedd hon ymgorffori'ch rhaglen i mewn i raglenni perchnogol. Os mai llyfrgell is-ffwythiannau yw'ch rhaglen fe allech ei ystyried yn fwy defnyddiol i ganiatau dolenni rhaglenni perchnogol gyda'r llyfrgell.  Os mai dyma beth yr ydych eisiau ei wneud, defnyddiwch Drwydded Llyfrgell y Cyhoedd GNU yn lle'r Drwydded hon.\n"
 #~ "\n"
 
 #~ msgid "test"
@@ -4550,9 +4620,7 @@ msgstr "Rhes:"
 #~ msgstr "<DIM>"
 
 #~ msgid ""
-#~ " _: Please make sure that the translated string looks like Detail %1. (%1 "
-#~ "preceded by a space and directly followed by a . and no character after "
-#~ "that)\n"
+#~ " _: Please make sure that the translated string looks like Detail %1. (%1 preceded by a space and directly followed by a . and no character after that)\n"
 #~ " Detail %1.\n"
 #~ msgstr "Manylion: %1.\n"
 
