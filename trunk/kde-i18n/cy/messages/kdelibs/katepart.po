@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: katepart\n"
-"POT-Creation-Date: 2004-09-24 01:23+0200\n"
+"POT-Creation-Date: 2004-09-29 01:23+0200\n"
 "PO-Revision-Date: 2003-11-12 14:22+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -365,13 +365,13 @@ msgstr "Pawb sydd wedi cyfrannu a rwy wedi anghofio eu crybwyll"
 msgid ""
 "_: NAME OF TRANSLATORS\n"
 "Your names"
-msgstr ""
+msgstr "KD wrth KGyfieithu"
 
 #: _translatorinfo.cpp:3 part/katefactory.cpp:106
 msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
-msgstr ""
+msgstr "kyfieithu@dotmon.com"
 
 #: part/katesearch.cpp:68
 msgid "Look up the first occurrence of a piece of text or regular expression."
@@ -648,19 +648,37 @@ msgstr ""
 msgid "The spelling program seems to have crashed."
 msgstr ""
 
-#: part/katedocument.cpp:5402 part/kateview.cpp:833
+#: part/katedocument.cpp:5331
+msgid "modified"
+msgstr "addaswyd"
+
+#: part/katedocument.cpp:5333
+msgid "created"
+msgstr ""
+
+#: part/katedocument.cpp:5335
+msgid "deleted"
+msgstr ""
+
+#: part/katedocument.cpp:5337
+msgid "The file '%1' was changed (%2) on disk by another program."
+msgstr ""
+
+#: part/katedocument.cpp:5415 part/kateview.cpp:833
 msgid "Save File"
 msgstr ""
 
-#: part/katedocument.cpp:5430 part/kateview.cpp:860
+#: part/katedocument.cpp:5443 part/kateview.cpp:860
 msgid "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
 msgstr ""
+"Mae ffeil o'r enw \"%1\" mewn bod eisoes.  Ydych wir eisiau ysgrifennu "
+"drosti?"
 
-#: part/katedocument.cpp:5432 part/kateview.cpp:861
+#: part/katedocument.cpp:5445 part/kateview.cpp:861
 msgid "Overwrite File?"
 msgstr "Trosysgrifo'r Ffeil?"
 
-#: part/katedocument.cpp:5433 part/kateview.cpp:862
+#: part/katedocument.cpp:5446 part/kateview.cpp:862
 msgid "&Overwrite"
 msgstr "&Trosysgrifo"
 
@@ -1587,19 +1605,20 @@ msgstr ""
 
 #: part/katedialogs.cpp:891
 msgid ""
-"Editor will search given number of folder levels upwards for .kateconfig "
-"file and load the settings line from it."
+"The editor will search the given number of folder levels upwards for "
+".kateconfig file and load the settings line from it."
 msgstr ""
 
 #: part/katedialogs.cpp:894
 msgid ""
-"Editor will load given number of blocks (of around 2048 lines) of text into "
-"memory; if the filesize is bigger than this the other blocks are swapped  to "
-"disk and loaded transparently as-needed."
+"The editor will load given number of blocks (of around 2048 lines) of text "
+"into memory; if the filesize is bigger than this the other blocks are "
+"swapped  to disk and loaded transparently as-needed."
 "<br>"
 " This can cause little delays while navigating in the document; a larger "
 "block count increases the editing speed at the cost of memory. "
-"<br>For normal usage, just choose highest possible block count: limit it "
+"<br>"
+"For normal usage, just choose the highest possible block count: limit it "
 "only if you have problems with the memory usage."
 msgstr ""
 
@@ -1630,7 +1649,7 @@ msgstr "Ffurfweddu..."
 #: part/katedialogs.cpp:1171
 #, c-format
 msgid "Configure %1"
-msgstr ""
+msgstr "Ffurfweddu %1"
 
 #: part/katedialogs.cpp:1243
 msgid "Author:"
@@ -3185,14 +3204,15 @@ msgstr "Gwall Mewnosod Ffeil"
 #: plugins/insertfile/insertfileplugin.cpp:130
 msgid "<p>The file <strong>%1</strong> does not exist or is not readable, aborting."
 msgstr ""
+"<p>The file <strong>%1</strong> does not exist or is not readable, aborting."
 
 #: plugins/insertfile/insertfileplugin.cpp:134
 msgid "<p>Unable to open file <strong>%1</strong>, aborting."
-msgstr ""
+msgstr "<p>Methu agor ffeil <strong>%1</strong> - yn erthylu."
 
 #: plugins/insertfile/insertfileplugin.cpp:157
 msgid "<p>File <strong>%1</strong> had no contents."
-msgstr ""
+msgstr "<p>Doedd gan y ffeil <strong>%1</strong> ddim cynnwys."
 
 #: plugins/kdatatool/kate_kdatatool.cpp:78
 msgid "Data Tools"
@@ -3277,8 +3297,7 @@ msgstr "Mae'r chwiliad cynyddol wedi pasio diwedd y ddogfen:"
 
 #: plugins/isearch/ISearchPlugin.cpp:259
 msgid "Failing Wrapped I-Search:"
-msgstr ""
-"Methodd y chwiliad cynyddol ganfod cydweddiad ar ôl pasio diwedd y ddogfen"
+msgstr "Methodd y chwiliad cynyddol ganfod cydweddiad ar ôl pasio diwedd y ddogfen"
 
 #: plugins/isearch/ISearchPlugin.cpp:262
 msgid "Wrapped I-Search Backward:"
@@ -3448,22 +3467,6 @@ msgstr "&Golygu..."
 
 #: plugins/autobookmarker/autobookmarker.cpp:421
 msgid "Press this button to edit the currently selected entity."
-msgstr ""
-
-#: part/katedocument.h:940
-msgid "modified"
-msgstr "addaswyd"
-
-#: part/katedocument.h:942
-msgid "created"
-msgstr ""
-
-#: part/katedocument.h:944
-msgid "deleted"
-msgstr ""
-
-#: part/katedocument.h:946
-msgid "The file '%1' was changed (%2) on disk by another program."
 msgstr ""
 
 #~ msgid "&No"

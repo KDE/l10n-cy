@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
-"POT-Creation-Date: 2004-09-28 01:36+0200\n"
+"POT-Creation-Date: 2004-09-29 01:31+0200\n"
 "PO-Revision-Date: 2004-07-06 17:18+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -40,7 +40,7 @@ msgstr "Haen"
 
 #: rc.cpp:14 rc.cpp:587
 #, fuzzy, no-c-format
-msgid "&Rotate layer"
+msgid "&Rotate Layer"
 msgstr "&Gwaredu Haen"
 
 #: rc.cpp:16 rc.cpp:589
@@ -73,7 +73,7 @@ msgstr "Offer Detholi"
 msgid "Painting Tools"
 msgstr "Offer Peintio"
 
-#: rc.cpp:36 rc.cpp:569 rc.cpp:627 rc.cpp:633
+#: core/kis_view.cc:337 rc.cpp:36 rc.cpp:569 rc.cpp:627 rc.cpp:633
 #, no-c-format
 msgid "Layer"
 msgstr "Haen"
@@ -568,10 +568,10 @@ msgstr "Bras"
 msgid "&Load..."
 msgstr "&Llwytho..."
 
-#: rc.cpp:268
+#: rc.cpp:268 rc.cpp:516
 #, no-c-format
-msgid "&Save..."
-msgstr "&Cadw..."
+msgid "&Save As..."
+msgstr "&Cadw Fel..."
 
 #: rc.cpp:270
 #, no-c-format
@@ -904,11 +904,6 @@ msgstr "Amrediad Lliw"
 msgid "Load..."
 msgstr "Llwytho..."
 
-#: core/kis_selection_manager.cc:203 rc.cpp:456
-#, no-c-format
-msgid "Save..."
-msgstr "Cadw..."
-
 #: rc.cpp:458
 #, fuzzy, no-c-format
 msgid "In&vert"
@@ -1047,11 +1042,6 @@ msgstr "&Ciplun Newydd"
 msgid "Click this button to take a new snapshot."
 msgstr "Cliciwch y botwm yma i dynnu ciplun newydd."
 
-#: rc.cpp:516
-#, no-c-format
-msgid "&Save As..."
-msgstr "&Cadw Fel..."
-
 #: rc.cpp:518
 #, no-c-format
 msgid ""
@@ -1162,8 +1152,9 @@ msgstr ""
 "dilynnol:\n"
 "<p>\n"
 "<b>Sgrin Lawn</b> - cipio'r penbwrdd cyfan.<br>\n"
-"<b>Ffenestr Dan Gyrchydd</b> - cipio'r ffenestr (neu ddewislen) yn unig sydd "
-"dan y cyrchydd pan tynnir y ciplun.<br>\n"
+"<b>Ffenestr Dan Gyrchydd</b>"
+" - cipio'r ffenestr (neu ddewislen) yn unig sydd dan y cyrchydd pan tynnir y "
+"ciplun.<br>\n"
 "<b>Ardal</b> - cipio ardal y penbwrdd y penodir yn unig.  Wrth dynnu ciplun "
 "newydd yn y modd yma, gallwch ddewis unrhyw ran o'r sgrin gan glicio a "
 "llusgo'r llygoden.</p></qt>"
@@ -1276,10 +1267,6 @@ msgstr "Lefel"
 msgid "Linked"
 msgstr "Cysylltwyd"
 
-#: ui/kis_layerbox.cc:109
-msgid "Properties..."
-msgstr "Priodweddau..."
-
 #: ui/kis_layerbox.cc:112
 msgid "Add %1..."
 msgstr "Ychwanegu %1..."
@@ -1354,7 +1341,7 @@ msgstr "Cyfeiriaduron"
 msgid "Undo/Redo"
 msgstr ""
 
-#: ui/kis_dlg_paint_properties.cc:54
+#: core/kis_view.cc:589 ui/kis_dlg_paint_properties.cc:54
 msgid "Layer Properties"
 msgstr "Priodweddau Haen"
 
@@ -1743,10 +1730,6 @@ msgstr "Patrymau"
 msgid "Autogradient"
 msgstr "Graddfa:"
 
-#: core/kis_view.cc:337
-msgid "layer"
-msgstr "haen"
-
 #: core/kis_view.cc:360
 msgid "Channels"
 msgstr "Sianeli"
@@ -1844,10 +1827,6 @@ msgstr "Haen i'r Pen"
 #: core/kis_view.cc:588
 msgid "Layer to Bottom"
 msgstr "Haen i'r Gwaelod"
-
-#: core/kis_view.cc:589
-msgid "Layer Properties..."
-msgstr "Priodweddau Haen..."
 
 #: core/kis_view.cc:590
 msgid "I&nsert Image as Layer..."
@@ -2596,7 +2575,7 @@ msgstr "Priodweddau Haen..."
 
 #: plugins/colorrange/colorrange.cc:68
 #, fuzzy
-msgid "&ColorRange..."
+msgid "&Color Range..."
 msgstr "Rheolydd &Lliw"
 
 #: plugins/rotateimage/rotateimage.cc:69
@@ -2616,7 +2595,8 @@ msgid "Rotate Image"
 msgstr "Ailenwi Delwedd"
 
 #: core/kis_aboutdata.h:34
-msgid "KOffice image manipulation application."
+#, fuzzy
+msgid "KOffice image manipulation application"
 msgstr "Cymhwysiad trin delwedd KOffice."
 
 #: core/kis_aboutdata.h:36
@@ -2632,13 +2612,28 @@ msgstr ""
 msgid ""
 "_: NAME OF TRANSLATORS\n"
 "Your names"
-msgstr ""
+msgstr "KD wrth KGyfieithu"
 
 #: _translatorinfo.cpp:3
 msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
-msgstr ""
+msgstr "kyfieithu@dotmon.com"
+
+#~ msgid "&Save..."
+#~ msgstr "&Cadw..."
+
+#~ msgid "Save..."
+#~ msgstr "Cadw..."
+
+#~ msgid "Properties..."
+#~ msgstr "Priodweddau..."
+
+#~ msgid "layer"
+#~ msgstr "haen"
+
+#~ msgid "Layer Properties..."
+#~ msgstr "Priodweddau Haen..."
 
 #~ msgid "&Name"
 #~ msgstr "&Enw:"
