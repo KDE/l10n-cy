@@ -1,18 +1,19 @@
 # translation of drkonqi.po to Cymraeg
 # Copyright (C) 2003 Free Software Foundation, Inc.
-# KGyfieithu <kyfieithu@dotmon.com>, 2003
+# KGyfieithu <kyfieithu@dotmon.com>, 2003.
+# KD at KGyfieithu <kyfieithu@dotmon.com>, 2003.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: drkonqi\n"
-"POT-Creation-Date: 2003-06-24 09:08+0200\n"
-"PO-Revision-Date: 2003-07-18 17:17+0100\n"
-"Last-Translator: KGyfieithu <kyfieithu@dotmon.com>\n"
+"POT-Creation-Date: 2003-10-29 01:25+0100\n"
+"PO-Revision-Date: 2003-11-23 12:41+0000\n"
+"Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.0.1\n"
+"X-Generator: KBabel 1.2\n"
 
 #: _translatorinfo.cpp:1
 msgid ""
@@ -27,40 +28,43 @@ msgid ""
 msgstr "kyfieithu@dotmon.com"
 
 #: backtrace.cpp:85
-msgid ""
-"%1 not found. Check if it is installed -- you need it to generate the "
-"backtrace.\n"
-"If you have another debugger, contact kde-devel@kde.org for help on how to "
-"set it up."
-msgstr ""
-"%1 heb ei ganfod. Gwiriwch ei fod wedi'i osod -- mae ei angen arnoch i greu'r olrheiniad.\n"
-"Os oes gennych ddadnamydd arall, cysylltwch â kde-devel@kde.org am gymorth am sut i'w osod."
+msgid "Could not generate a backtrace as the debugger '%1' was not found."
+msgstr "Methu creu ôlrhain, gan na chanfuwyd y dadnamydd '%1'"
 
-#: debugger.cpp:66
+#: debugger.cpp:67
 msgid "C&opy"
 msgstr "C&opïo"
 
-#: debugger.cpp:83
+#: debugger.cpp:84
 msgid "Done."
 msgstr "Wedi'i wneud."
 
-#: debugger.cpp:96
+#: debugger.cpp:103
+#, c-format
+msgid "Backtrace saved to %1"
+msgstr "Cadwyd yr ôlrhain i %1"
+
+#: debugger.cpp:107
+msgid "Can't create a file to save backtrace to"
+msgstr "Methu creu ffeil i gadw'r ôlrhain iddo"
+
+#: debugger.cpp:112
 msgid "Select Filename"
 msgstr "Dewiswch Enw Ffeil"
 
-#: debugger.cpp:109
+#: debugger.cpp:124
 msgid "Can't open file %1 for writing"
 msgstr "Methu agor y ffeil %1 ar gyfer ysgrifennu"
 
-#: debugger.cpp:116
+#: debugger.cpp:132
 msgid "Unable to create backtrace."
 msgstr "Methu creu olrheiniad"
 
-#: debugger.cpp:121
+#: debugger.cpp:137
 msgid "Loading backtrace..."
 msgstr "Yn llwytho olrheiniad..."
 
-#: debugger.cpp:139
+#: debugger.cpp:155
 msgid "Loading symbols..."
 msgstr "Yn llwytho nôdau..."
 
@@ -68,7 +72,7 @@ msgstr "Yn llwytho nôdau..."
 msgid "You have to edit the description before the report can be sent."
 msgstr "Rhaid i chi olygu'r disgrifiad cyn y gellir anfon yr adroddiad."
 
-#: krashconf.cpp:74
+#: krashconf.cpp:76
 msgid "unknown"
 msgstr "anhysbys"
 
@@ -112,7 +116,11 @@ msgstr "Dynodiad (ID) cychwyn y rhaglen"
 msgid "The program was started by kdeinit"
 msgstr "Dechreuwyd y rhaglen gan kdeinit"
 
-#: main.cpp:70
+#: main.cpp:57
+msgid "Disable arbitrary disk access"
+msgstr "Analluogi cyrchiad disg mympwyol"
+
+#: main.cpp:71
 msgid "The KDE Crash Handler"
 msgstr "Y Trinydd Chwalfeydd KDE"
 
@@ -152,16 +160,17 @@ msgstr "<p><b>Chwalodd y cymhwysiad</b></p><p>Chwalodd y rhaglen %appname.</p>"
 msgid ""
 "<p>Do you want to generate a backtrace? This will help the developers to "
 "figure out what went wrong.</p>\n"
-"<p>Unfortunately this will take some time on slow machines.</p><p><b>Note: A "
-"backtrace is not a substitute for a proper description of the bug and "
-"information on how to reproduce it. It is not possible to fix the bug "
-"without a proper description.</b></p>"
+"<p>Unfortunately this will take some time on slow machines.</p>"
+"<p><b>Note: A backtrace is not a substitute for a proper description of the "
+"bug and information on how to reproduce it. It is not possible to fix the "
+"bug without a proper description.</b></p>"
 msgstr ""
-"<p>A ydych am greu olrheiniad? Fe fydd hyn o gymorth i ddatblygwyr i ganfod beth aeth o'i le.</p>\n"
-"<p>Yn anffodus cymer hyn gryn amser ar beiriannau araf.</p><p><b>Noder: Nid "
-"yw olhreiniad yn cymryd lle disgrifiad cywir o'r nam a gwybodaeth "
-"ar sut i'w ail-achosi. Nid yw'n bosib i gywiro'r nam heb ddisgrifiad "
-"cywir.</b></p>"
+"<p>A ydych am greu olrheiniad? Fe fydd hyn o gymorth i ddatblygwyr i ganfod "
+"beth aeth o'i le.</p>\n"
+"<p>Yn anffodus cymer hyn gryn amser ar beiriannau araf.</p>"
+"<p><b>Noder: Nid yw olhreiniad yn cymryd lle disgrifiad cywir o'r nam a "
+"gwybodaeth ar sut i'w ail-achosi. Nid yw'n bosib i gywiro'r nam heb "
+"ddisgrifiad cywir.</b></p>"
 
 #: toplevel.cpp:150
 msgid "Include Backtrace"
@@ -174,4 +183,15 @@ msgstr "Nid oedd yn bosib creu olrheiniad."
 #: toplevel.cpp:219
 msgid "Backtrace Not Possible"
 msgstr "Dim Olrheiniad Yn Bosibl"
+
+#~ msgid ""
+#~ "%1 not found. Check if it is installed -- you need it to generate the "
+#~ "backtrace.\n"
+#~ "If you have another debugger, contact kde-devel@kde.org for help on how "
+#~ "to set it up."
+#~ msgstr ""
+#~ "%1 heb ei ganfod. Gwiriwch ei fod wedi'i osod -- mae ei angen arnoch i "
+#~ "greu'r olrheiniad.\n"
+#~ "Os oes gennych ddadnamydd arall, cysylltwch â kde-devel@kde.org am "
+#~ "gymorth am sut i'w osod."
 
