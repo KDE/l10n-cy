@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
-"POT-Creation-Date: 2005-01-02 01:26+0100\n"
+"POT-Creation-Date: 2005-02-02 01:26+0100\n"
 "PO-Revision-Date: 2004-01-07 21:14+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -70,10 +70,46 @@ msgid "&Edit Addresses..."
 msgstr "&Golygu Cyfeiriadau..."
 
 #. i18n: file editors/imaddressbase.ui line 24
-#: addresseditwidget.cpp:253 editors/imeditorwidget.cpp:338 rc.cpp:57
+#: addresseditwidget.cpp:253 editors/imeditorwidget.cpp:371 rc.cpp:63
 #, no-c-format
 msgid "Edit Address"
 msgstr "Golygu Cyfeiriad"
+
+#: addresseditwidget.cpp:267
+msgid ""
+"_: <streetLabel>:\n"
+"%1:"
+msgstr ""
+
+#: addresseditwidget.cpp:277
+msgid ""
+"_: <postOfficeBoxLabel>:\n"
+"%1:"
+msgstr ""
+
+#: addresseditwidget.cpp:283
+msgid ""
+"_: <localityLabel>:\n"
+"%1:"
+msgstr ""
+
+#: addresseditwidget.cpp:289
+msgid ""
+"_: <regionLabel>:\n"
+"%1:"
+msgstr ""
+
+#: addresseditwidget.cpp:295
+msgid ""
+"_: <postalCodeLabel>:\n"
+"%1:"
+msgstr ""
+
+#: addresseditwidget.cpp:301
+msgid ""
+"_: <countryLabel>:\n"
+"%1:"
+msgstr ""
 
 #: addresseditwidget.cpp:308
 #, fuzzy
@@ -1001,20 +1037,38 @@ msgstr "Golygu Enw..."
 msgid "Edit the contact's name"
 msgstr "Golygu enw'r cyswllt"
 
-#: addresseeeditorwidget.cpp:172 addresseeeditorwidget.cpp:181
-#: addresseeeditorwidget.cpp:247
-msgid "%1:"
-msgstr "%1 :"
+#: addresseeeditorwidget.cpp:172
+#, fuzzy
+msgid ""
+"_: <roleLabel>:\n"
+"%1:"
+msgstr ""
+" %1:\n"
+
+#: addresseeeditorwidget.cpp:181
+#, fuzzy
+msgid ""
+"_: <organizationLabel>:\n"
+"%1:"
+msgstr "Sefydliad:"
 
 #: addresseeeditorwidget.cpp:190 nameeditdialog.cpp:102
 msgid "Formatted name:"
 msgstr "Enw wedi ei fformadu:"
 
+#: addresseeeditorwidget.cpp:247
+#, fuzzy
+msgid ""
+"_: <urlLabel>:\n"
+"%1:"
+msgstr ""
+" %1:\n"
+
 #: addresseeeditorwidget.cpp:257
 msgid "Blog feed:"
 msgstr ""
 
-#: addresseeeditorwidget.cpp:280 kabcore.cpp:1119
+#: addresseeeditorwidget.cpp:280 kabcore.cpp:1074
 msgid "Select Categories..."
 msgstr "Gosod Categorïau..."
 
@@ -1042,49 +1096,57 @@ msgstr "Enw'r Rheolwr:"
 msgid "Assistant's name:"
 msgstr "Enw'r Cynorthwy-ydd"
 
-#: addresseeeditorwidget.cpp:371
+#: addresseeeditorwidget.cpp:360
+#, fuzzy
+msgid ""
+"_: <titleLabel>:\n"
+"%1:"
+msgstr ""
+" %1:\n"
+
+#: addresseeeditorwidget.cpp:379
 msgid "Nickname:"
 msgstr "Ffugenw:"
 
-#: addresseeeditorwidget.cpp:379
+#: addresseeeditorwidget.cpp:387
 msgid "Spouse's name:"
 msgstr "Enw cymar:"
 
-#: addresseeeditorwidget.cpp:387
+#: addresseeeditorwidget.cpp:395
 #, fuzzy
 msgid "Birthdate:"
 msgstr "Penblwydd:"
 
-#: addresseeeditorwidget.cpp:397
+#: addresseeeditorwidget.cpp:405
 msgid "Anniversary:"
 msgstr "Dathliad:"
 
-#: addresseeeditorwidget.cpp:412
+#: addresseeeditorwidget.cpp:420
 msgid "Note:"
 msgstr "Nodyn:"
 
-#: addresseeeditorwidget.cpp:425
+#: addresseeeditorwidget.cpp:433
 msgid "&Details"
 msgstr "&Manylion"
 
-#: addresseeeditorwidget.cpp:438
+#: addresseeeditorwidget.cpp:446
 msgid "Misc"
 msgstr "Amrywiol"
 
-#: addresseeeditorwidget.cpp:804
+#: addresseeeditorwidget.cpp:817
 msgid "You must specify a valid date"
 msgstr "Rhaid i chi benodi dyddiad dilys"
 
-#: addresseeeditorwidget.cpp:815
+#: addresseeeditorwidget.cpp:828
 msgid "Contact Editor"
 msgstr "Golygydd Cysylltiadau"
 
-#: addresseeeditorwidget.cpp:834
+#: addresseeeditorwidget.cpp:847
 #, fuzzy
 msgid "You have to enter a valid birthdate."
 msgstr "Rhaid i chi benodi dyddiad dilys"
 
-#: addresseeeditorwidget.cpp:840
+#: addresseeeditorwidget.cpp:853
 msgid "You have to enter a valid anniversary."
 msgstr ""
 
@@ -1211,15 +1273,11 @@ msgstr ""
 "<qt>Ydych chi'n siŵr eich bod eisiau gwaredu'r cyfeiriad ebost "
 "<b>%1</b>?</qt>"
 
-#: editors/imeditorwidget.cpp:387 emaileditwidget.cpp:306
+#: emaileditwidget.cpp:306
 msgid "Confirm Remove"
 msgstr "Cadarnhau Gwaredu"
 
-#: extensionmanager.cpp:41
-msgid "Show Extension Bar"
-msgstr "Dangos y Bar Estyniadau"
-
-#: extensionmanager.cpp:135 viewmanager.cpp:520
+#: extensionmanager.cpp:174 viewmanager.cpp:538
 #: views/configuretableviewdialog.cpp:123 xxport/csvimportdialog.cpp:415
 msgid "None"
 msgstr "Dim un"
@@ -1228,34 +1286,34 @@ msgstr "Dim un"
 msgid "Edit Address Book Filter"
 msgstr "Golygu Hidlen y Llyfr Cyfeiriadau"
 
-#: filtereditdialog.cpp:121 simpleaddresseeeditor.cpp:75
+#: filtereditdialog.cpp:122 simpleaddresseeeditor.cpp:75
 msgid "Name:"
 msgstr "Enw:"
 
-#: filtereditdialog.cpp:130
+#: filtereditdialog.cpp:131
 msgid "Category"
 msgstr "Categori"
 
-#: filtereditdialog.cpp:140
+#: filtereditdialog.cpp:142
 msgid "Show only contacts matching the selected categories"
 msgstr "Dangos y cysylltiadau sy'n cydweddu â'r categorïau a ddewiswyd yn unig"
 
-#: filtereditdialog.cpp:145
+#: filtereditdialog.cpp:147
 msgid "Show all contacts except those matching the selected categories"
 msgstr "Dangos y cysylltiadau sydd ddim yn cydweddu â'r categorïau a ddewiswyd"
 
-#: filtereditdialog.cpp:163
+#: filtereditdialog.cpp:165
 msgid "Edit Address Book Filters"
 msgstr "Golygu Hidlenni y Llyfrau Cyfeiriadau"
 
 #. i18n: file editors/imeditorbase.ui line 82
-#: filtereditdialog.cpp:267 phoneeditwidget.cpp:360 rc.cpp:87
+#: filtereditdialog.cpp:269 phoneeditwidget.cpp:360 rc.cpp:93
 #, no-c-format
 msgid "&Add..."
 msgstr "&Ychwanegu..."
 
 #. i18n: file editors/imeditorbase.ui line 74
-#: filtereditdialog.cpp:268 phoneeditwidget.cpp:361 rc.cpp:84
+#: filtereditdialog.cpp:270 phoneeditwidget.cpp:361 rc.cpp:90
 #, no-c-format
 msgid "&Edit..."
 msgstr "&Golygu..."
@@ -1312,32 +1370,32 @@ msgstr "Gorllewin"
 msgid "Undefined"
 msgstr "Anniffiniedig"
 
-#: imagewidget.cpp:138
+#: imagewidget.cpp:139
 msgid "Picture"
 msgstr "Llun"
 
-#: imagewidget.cpp:154
+#: imagewidget.cpp:155
 msgid "Get From Blog"
 msgstr ""
 
-#: imagewidget.cpp:159 soundwidget.cpp:61
+#: imagewidget.cpp:160 soundwidget.cpp:61
 msgid "Store as URL"
 msgstr "Cadw fel URL"
 
-#: imagewidget.cpp:165 incsearchwidget.cpp:47
+#: imagewidget.cpp:166 incsearchwidget.cpp:50
 msgid "Reset"
 msgstr "Ailosod"
 
-#: imagewidget.cpp:313
+#: imagewidget.cpp:314
 msgid "This contact's image cannot be found."
 msgstr ""
 
-#: imagewidget.cpp:353
+#: imagewidget.cpp:354
 msgid "Unable to retrieve blog feed from '%1': %2"
 msgstr ""
 
-#: imagewidget.cpp:360
-msgid "Blog feed at '%1' doesn't contain an image."
+#: imagewidget.cpp:361
+msgid "Blog feed at '%1' does not contain an image."
 msgstr ""
 
 #: imeditwidget.cpp:52
@@ -1350,11 +1408,11 @@ msgstr "Cyfeiriad NU (&IM):"
 msgid "Edit IM Addresses..."
 msgstr "&Golygu Cyfeiriadau..."
 
-#: incsearchwidget.cpp:50
+#: incsearchwidget.cpp:53
 msgid "Search:"
 msgstr "Chwiliad:"
 
-#: incsearchwidget.cpp:56
+#: incsearchwidget.cpp:59
 msgid ""
 "The incremental search"
 "<p>"
@@ -1367,26 +1425,26 @@ msgstr ""
 "â'r patrwm chwiliad. Mae pa ran o'r cyswllt a ddefnyddir i gydweddu, yn "
 "ddibynnol ar y dewisiad meysydd."
 
-#: incsearchwidget.cpp:60
+#: incsearchwidget.cpp:63
 msgid ""
 "_: as in 'Search in:'\n"
 "&in:"
 msgstr ""
 
-#: incsearchwidget.cpp:68
+#: incsearchwidget.cpp:71
 msgid "Select incremental search field"
 msgstr "Dewiswch maes i'r chwiliad cynyddol"
 
-#: incsearchwidget.cpp:69
+#: incsearchwidget.cpp:72
 msgid "Here you can choose the field, which shall be used for incremental search."
 msgstr "Yma cewch ddewis y maes a gaiff ei ddefnyddio yn y chwiliad cynyddol."
 
-#: incsearchwidget.cpp:101
+#: incsearchwidget.cpp:118
 #, fuzzy
 msgid "Visible Fields"
 msgstr "Pob Maes"
 
-#: incsearchwidget.cpp:102
+#: incsearchwidget.cpp:119
 msgid "All Fields"
 msgstr "Pob Maes"
 
@@ -1428,78 +1486,78 @@ msgid "Anniversary"
 msgstr "Dathliad"
 
 #: kabcore.cpp:121
-msgid " Blog"
+msgid "Blog"
 msgstr ""
 
-#: kabcore.cpp:287
+#: kabcore.cpp:292
 msgid "KAddressBook"
 msgstr "KAddressBook/LlyfrKyfeiriadau"
 
-#: kabcore.cpp:288
+#: kabcore.cpp:293
 msgid "The KDE Address Book"
 msgstr "Llyfr Cyfeiriadau KDE"
 
-#: kabcore.cpp:290
+#: kabcore.cpp:295
 #, fuzzy
-msgid "(c) 1997-2004, The KDE PIM Team"
+msgid "(c) 1997-2005, The KDE PIM Team"
 msgstr "(h)(c) 1997-2003, Tîm PIM KDE"
 
-#: kabcore.cpp:291
+#: kabcore.cpp:296
 msgid "Current maintainer"
 msgstr "Cynhaliwr Cyfredol"
 
-#: kabcore.cpp:292
+#: kabcore.cpp:297
 msgid "Original author"
 msgstr "Awdur gwreiddiol"
 
-#: kabcore.cpp:294
+#: kabcore.cpp:299
 msgid "Co-maintainer, libkabc port, CSV import/export"
 msgstr "Cyd-gynhaliwr, porthiad libkabc, mewnforio/allforio CSV"
 
-#: kabcore.cpp:296
+#: kabcore.cpp:301
 msgid "GUI and framework redesign"
 msgstr "Ailgynllunio GUI a fframwaith"
 
-#: kabcore.cpp:298
+#: kabcore.cpp:303
 msgid "DCOP interface"
 msgstr "Rhyngwyneb DCOP"
 
-#: kabcore.cpp:299
+#: kabcore.cpp:304
 msgid "Contact pinning"
 msgstr "Pinio cyswllt"
 
-#: kabcore.cpp:300 kabcore.cpp:302
+#: kabcore.cpp:305 kabcore.cpp:307
 msgid "LDAP Lookup"
 msgstr "Chwiliad LDAP"
 
-#: kabcore.cpp:449
+#: kabcore.cpp:408
 #, fuzzy, c-format
 msgid ""
 "_n: Do you really want to delete this contact?\n"
 "Do you really want to delete these %n contacts?"
 msgstr "<qt>Ydych chi wir am waredu'r allwedd <b>%1</b>?</qt>"
 
-#: kabcore.cpp:536
+#: kabcore.cpp:495
 msgid "Please select only one contact."
 msgstr "Dewiswch un cyswllt yn unig os gwelwch yn dda."
 
-#: kabcore.cpp:540
+#: kabcore.cpp:499
 msgid "<qt>Do you really want to use <b>%1</b> as your new personal contact?</qt>"
 msgstr ""
 "<qt>A ydych wir eisiau defnyddio <b>%1</b> fel eich cyswllt personol "
 "newydd?</qt>"
 
-#: kabcore.cpp:743
+#: kabcore.cpp:702
 #, fuzzy
 msgid "<qt>Unable to save address book <b>%1</b>.</qt>"
 msgstr "<qt>Methu cyrchu <b>%1</b>.</qt>"
 
-#: kabcore.cpp:750
+#: kabcore.cpp:709
 #, fuzzy
 msgid "<qt>Unable to get access for saving the address book <b>%1</b>.</qt>"
 msgstr "<qt>Methu cyrchu <b>%1</b>.</qt>"
 
-#: kabcore.cpp:845
+#: kabcore.cpp:804
 #, fuzzy
 msgid ""
 "Your KDE installation is missing LDAP support, please ask your administrator "
@@ -1508,41 +1566,41 @@ msgstr ""
 "Mae eich gosodiad KDE yn colli cynhaliaeth LDAP - gofynnwch i'ch gweinyddwr "
 "neu ddosbarthwr am fwy o wybodaeth!"
 
-#: kabcore.cpp:847
+#: kabcore.cpp:806
 #, fuzzy
 msgid "No LDAP IO Slave Available"
 msgstr "Dim gwas IO LDAP ar gael"
 
-#: kabcore.cpp:883
+#: kabcore.cpp:842
 msgid "Address Book"
 msgstr "Llyfr Cyfeiriadau"
 
-#: kabcore.cpp:886
+#: kabcore.cpp:845
 msgid "Print Addresses"
 msgstr "Argraffu Cyfeiriadau"
 
-#: kabcore.cpp:1025
+#: kabcore.cpp:980
 #, fuzzy
 msgid "&Send Email to Contact..."
 msgstr "&Dileu y Cyswllt"
 
-#: kabcore.cpp:1028
+#: kabcore.cpp:983
 msgid "Send a mail to all selected contacts."
 msgstr "Gyrru ebost at yr holl gysylltiadau a ddewiswyd."
 
-#: kabcore.cpp:1029
+#: kabcore.cpp:984
 msgid "Print a special number of contacts."
 msgstr "Argraffu nifer arbennig o gysylltiadau."
 
-#: kabcore.cpp:1033
+#: kabcore.cpp:988
 msgid "Save all changes of the address book to the storage backend."
 msgstr "Cadw'r holl newidiadau i'r llyfr cyfeiriadau yn yr ôl-storfa"
 
-#: kabcore.cpp:1035
+#: kabcore.cpp:990
 msgid "&New Contact..."
 msgstr "&Cyswllt Newydd..."
 
-#: kabcore.cpp:1037
+#: kabcore.cpp:992
 #, fuzzy
 msgid ""
 "Create a new contact"
@@ -1554,28 +1612,28 @@ msgstr ""
 "Cyflwynir ymgom i chi lle y gallwch ychwanegu holl ddata ar gyfer person, yn "
 "cynnwys cyfeiriadau a rhifau ffôn."
 
-#: kabcore.cpp:1039
+#: kabcore.cpp:994
 msgid "Send &Contact..."
 msgstr "&Anfon Cyswllt..."
 
-#: kabcore.cpp:1042
+#: kabcore.cpp:997
 msgid "Send a mail with the selected contact as attachment."
 msgstr "Gyrru ebost efo'r cyswllt a ddewiswyd fel atodiad."
 
-#: kabcore.cpp:1044
+#: kabcore.cpp:999
 msgid "Chat &With..."
 msgstr ""
 
-#: kabcore.cpp:1047
+#: kabcore.cpp:1002
 #, fuzzy
 msgid "Start a chat with the selected contact."
 msgstr "Gyrru ebost efo'r cyswllt a ddewiswyd fel atodiad."
 
-#: kabcore.cpp:1049
+#: kabcore.cpp:1004
 msgid "&Edit Contact..."
 msgstr "&Golygu Cyswllt..."
 
-#: kabcore.cpp:1052
+#: kabcore.cpp:1007
 #, fuzzy
 msgid ""
 "Edit a contact"
@@ -1587,49 +1645,49 @@ msgstr ""
 "<p>Cyflwynir ymgom i chi lle y gallwch newid data ar gyfer person, yn "
 "cynnwys cyfeiriadau a rhifau ffôn."
 
-#: kabcore.cpp:1054
+#: kabcore.cpp:1009
 #, fuzzy
 msgid "&Merge Contacts"
 msgstr "Golygydd Cyfuno Cysylltau"
 
-#: kabcore.cpp:1065
+#: kabcore.cpp:1020
 msgid "Copy the currently selected contact(s) to system clipboard in vCard format."
 msgstr "Copïo y cyswllt/cysylltau a ddewiswyd i'r clipfwrdd mewn fformat vCard."
 
-#: kabcore.cpp:1066
+#: kabcore.cpp:1021
 msgid "Cuts the currently selected contact(s) to system clipboard in vCard format."
 msgstr "Torri y cyswllt/cysylltau a ddewiswyd i'r clipfwrdd mewn fformat vCard."
 
-#: kabcore.cpp:1067
+#: kabcore.cpp:1022
 msgid "Paste the previously cut or copied contacts from clipboard."
 msgstr "Gludo y cysylltiadau a gopïwyd neu dorrwyd o'r clipfwrdd."
 
-#: kabcore.cpp:1068
+#: kabcore.cpp:1023
 msgid "Selects all visible contacts from current view."
 msgstr "Dewis pob cyswllt gweladwy o'r golwg cyfredol "
 
-#: kabcore.cpp:1069
+#: kabcore.cpp:1024
 msgid "Undoes the last <b>Cut</b>, <b>Copy</b> or <b>Paste</b>."
 msgstr "Dad-wneud y <b>Torri</b>, <b>Copïo</b> neu <b>Gludo</b> diwethaf."
 
-#: kabcore.cpp:1070
+#: kabcore.cpp:1025
 msgid "Redoes the last <b>Cut</b>, <b>Copy</b> or <b>Paste</b>."
 msgstr "Ail-wneud y <b>Torri</b>, <b>Copïo</b> neu <b>Gludo</b> diwethaf."
 
-#: kabcore.cpp:1072
+#: kabcore.cpp:1027
 msgid "&Delete Contact"
 msgstr "&Dileu y Cyswllt"
 
-#: kabcore.cpp:1075
+#: kabcore.cpp:1030
 msgid "Delete all selected contacts."
 msgstr "Dileu'r holl gysylltiadau a ddewiswyd."
 
-#: kabcore.cpp:1078
+#: kabcore.cpp:1033
 #, fuzzy
 msgid "St&ore Contact In..."
 msgstr "&Cyswllt Newydd..."
 
-#: kabcore.cpp:1081
+#: kabcore.cpp:1036
 #, fuzzy
 msgid ""
 "Store a contact in a different Addressbook"
@@ -1639,37 +1697,37 @@ msgstr ""
 "Golygu'r hidlennu cysylltau"
 "<p>Ymddengys ymgom, lle gallwch ychwanegu, waredu, a golygu hidlenni."
 
-#: kabcore.cpp:1088
+#: kabcore.cpp:1043
 msgid "Show Jump Bar"
 msgstr "Dangos y Bar Neidio"
 
-#: kabcore.cpp:1090
+#: kabcore.cpp:1045
 msgid "Toggle whether the jump button bar shall be visible."
 msgstr "Newid a ddylid dangos y bar neidio ai peidio."
 
-#: kabcore.cpp:1091
+#: kabcore.cpp:1046
 #, fuzzy
 msgid "Hide Jump Bar"
 msgstr "Dangos y Bar Neidio"
 
-#: kabcore.cpp:1094
+#: kabcore.cpp:1049
 msgid "Show Details"
 msgstr "Dangos Manylion"
 
-#: kabcore.cpp:1096
+#: kabcore.cpp:1051
 msgid "Toggle whether the details page shall be visible."
 msgstr "Newid a ddylid dangos y dudalen fanylion ai peidio."
 
-#: kabcore.cpp:1097
+#: kabcore.cpp:1052
 #, fuzzy
 msgid "Hide Details"
 msgstr "&Manylion"
 
-#: kabcore.cpp:1101
+#: kabcore.cpp:1056
 msgid "&Configure KAddressBook..."
 msgstr "&Ffurfweddu KLlyfrCyfeiriadau..."
 
-#: kabcore.cpp:1107
+#: kabcore.cpp:1062
 msgid ""
 "You will be presented with a dialog, that offers you all possibilities to "
 "configure KAddressBook."
@@ -1677,11 +1735,11 @@ msgstr ""
 "Cyflwynir ymgom i chi a fydd yn eich galluogi i ffurfweddu KLlyfrCyfeiriadau "
 "yn yr holl ffyrdd posib."
 
-#: kabcore.cpp:1110
+#: kabcore.cpp:1065
 msgid "&Lookup Addresses in LDAP Directory..."
 msgstr "&Chwilio am Gyfeiriad yn y Cyfeiriadur LDAP..."
 
-#: kabcore.cpp:1112
+#: kabcore.cpp:1067
 msgid ""
 "Search for contacts on a LDAP server"
 "<p>You will be presented with a dialog, where you can search for contacts "
@@ -1691,11 +1749,11 @@ msgstr ""
 "<p>Cyflwynir ymgom i ch lle gallwch chwilio am gysylltau a dewis y rhai yr "
 "ydych eisiau eu hychwanegu i'ch llyfr cyfeiriadau lleol."
 
-#: kabcore.cpp:1114
+#: kabcore.cpp:1069
 msgid "Set as Personal Contact Data"
 msgstr ""
 
-#: kabcore.cpp:1117
+#: kabcore.cpp:1072
 #, fuzzy
 msgid ""
 "Set the personal contact"
@@ -1706,29 +1764,29 @@ msgstr ""
 "<p>Bydd data y cyswllt yn cael ei ddefnyddio mewn amryw o raglenni KDE, fel "
 "nad oes rhaid mewnosod eich manylion personol fwy nag unwaith."
 
-#: kabcore.cpp:1122
+#: kabcore.cpp:1077
 msgid "Set the categories for all selected contacts."
 msgstr "Gosod categorïau ar gyfer pob cyswllt a ddewiswyd."
 
-#: kabcore.cpp:1124
+#: kabcore.cpp:1079
 msgid "Clear Search Bar"
 msgstr ""
 
-#: kabcore.cpp:1127
+#: kabcore.cpp:1082
 msgid "Clear Search Bar<p>Clears the content of the quick search bar."
 msgstr ""
 
-#: kabcore.cpp:1150
+#: kabcore.cpp:1105
 #, c-format
 msgid "Undo %1"
 msgstr "Dadwneud %1"
 
-#: kabcore.cpp:1157
+#: kabcore.cpp:1112
 #, c-format
 msgid "Redo %1"
 msgstr "Ailwneud %1"
 
-#: kabcore.cpp:1357
+#: kabcore.cpp:1175
 msgid "Merge with existing categories?"
 msgstr "Cyfuno â chategorïau cyfredol?"
 
@@ -1776,7 +1834,7 @@ msgstr "Teitl"
 msgid "Full Name"
 msgstr "Enw Llawn"
 
-#: features/distributionlistwidget.cpp:133 ldapsearchdialog.cpp:76
+#: features/distributionlistwidget.cpp:166 ldapsearchdialog.cpp:76
 #: ldapsearchdialog.cpp:145 ldapsearchdialog.cpp:255 ldapsearchdialog.cpp:323
 msgid "Email"
 msgstr "Ebost"
@@ -1821,7 +1879,7 @@ msgstr "Dinas"
 
 #. i18n: file printing/rbs_appearance.ui line 227
 #: ldapsearchdialog.cpp:86 ldapsearchdialog.cpp:261 nameeditdialog.cpp:309
-#: rc.cpp:206
+#: rc.cpp:212
 #, no-c-format
 msgid "Organization"
 msgstr "Sefydliad"
@@ -1859,12 +1917,12 @@ msgstr "Chwilio am:"
 msgid "in"
 msgstr "yn"
 
-#: features/distributionlistwidget.cpp:132 ldapsearchdialog.cpp:144
+#: features/distributionlistwidget.cpp:165 ldapsearchdialog.cpp:144
 #: ldapsearchdialog.cpp:314
 msgid "Name"
 msgstr "Enw"
 
-#: ldapsearchdialog.cpp:153 ldapsearchdialog.cpp:382
+#: ldapsearchdialog.cpp:153 ldapsearchdialog.cpp:381
 msgid "Search"
 msgstr "Chwilio"
 
@@ -2026,13 +2084,13 @@ msgid "Types"
 msgstr "Mathau"
 
 #. i18n: file kaddressbook_part.rc line 10
-#: rc.cpp:6 rc.cpp:33
+#: rc.cpp:6 rc.cpp:36
 #, no-c-format
 msgid "&Import"
 msgstr "&Mewnforio"
 
 #. i18n: file kaddressbook_part.rc line 12
-#: rc.cpp:9 rc.cpp:36
+#: rc.cpp:9 rc.cpp:39
 #, no-c-format
 msgid "&Export"
 msgstr "&Allforio"
@@ -2043,44 +2101,50 @@ msgstr "&Allforio"
 msgid "Tools"
 msgstr "Offer"
 
-#. i18n: file kaddressbook_part.rc line 89
-#: rc.cpp:27 rc.cpp:54
+#. i18n: file kaddressbook_part.rc line 54
+#: rc.cpp:24 rc.cpp:54
+#, no-c-format
+msgid "Show Extension Bar"
+msgstr "Dangos y Bar Estyniadau"
+
+#. i18n: file kaddressbook_part.rc line 91
+#: rc.cpp:30 rc.cpp:60
 #, no-c-format
 msgid "Contact Toolbar"
 msgstr "Bar Offer Cysylltiadau"
 
 #. i18n: file editors/imaddressbase.ui line 40
-#: rc.cpp:60
+#: rc.cpp:66
 #, no-c-format
 msgid "&Protocol:"
 msgstr "&Protocol :"
 
 #. i18n: file editors/imaddressbase.ui line 56
-#: rc.cpp:63
+#: rc.cpp:69
 #, no-c-format
 msgid "&Address:"
 msgstr "Cyf&eiriad:"
 
 #. i18n: file editors/imaddressbase.ui line 67
-#: rc.cpp:66
+#: rc.cpp:72
 #, no-c-format
 msgid "&Network:"
 msgstr "&Rhwydwaith :"
 
 #. i18n: file editors/imeditorbase.ui line 24
-#: rc.cpp:69
+#: rc.cpp:75
 #, fuzzy, no-c-format
 msgid "IM Addresses"
 msgstr "Cyfeiriad NU (IM)"
 
 #. i18n: file editors/imeditorbase.ui line 52
-#: rc.cpp:72
+#: rc.cpp:78
 #, no-c-format
 msgid "&Set Standard"
 msgstr "&Gosod Safon"
 
 #. i18n: file editors/imeditorbase.ui line 55
-#: rc.cpp:75
+#: rc.cpp:81
 #, no-c-format
 msgid ""
 "The IM Address that is set as the standard is the address that is shown in "
@@ -2088,7 +2152,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file editors/imeditorbase.ui line 58
-#: rc.cpp:78
+#: rc.cpp:84
 #, no-c-format
 msgid ""
 "<qt>Only one IM Address can be set as the standard IM Address."
@@ -2097,19 +2161,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file editors/imeditorbase.ui line 88
-#: rc.cpp:90
+#: rc.cpp:96
 #, no-c-format
 msgid "Protocol"
 msgstr "Protocol"
 
 #. i18n: file editors/imeditorbase.ui line 99
-#: rc.cpp:93
+#: rc.cpp:99
 #, no-c-format
 msgid "Address"
 msgstr "Cyfeiriad"
 
 #. i18n: file editors/imeditorbase.ui line 148
-#: rc.cpp:96
+#: rc.cpp:102
 #, no-c-format
 msgid ""
 "<em>Note:</em> Please read the help page before adding or editing Instant "
@@ -2117,97 +2181,97 @@ msgid ""
 msgstr ""
 
 #. i18n: file printing/ds_appearance.ui line 16
-#: rc.cpp:99
+#: rc.cpp:105
 #, no-c-format
 msgid "Appearance Page"
 msgstr "Tudalen Olwg"
 
 #. i18n: file printing/ds_appearance.ui line 66
-#: printing/detailledstyle.cpp:82 rc.cpp:102
+#: printing/detailledstyle.cpp:80 rc.cpp:108
 #, no-c-format
 msgid "Detailed Print Style - Appearance"
 msgstr "Arddull Manwl Argraffu - Ymddanosiad"
 
 #. i18n: file printing/ds_appearance.ui line 88
-#: rc.cpp:105
+#: rc.cpp:111
 #, no-c-format
 msgid "Font Settings"
 msgstr "Gosodiadau Wynebfath"
 
 #. i18n: file printing/ds_appearance.ui line 105
-#: rc.cpp:108
+#: rc.cpp:114
 #, no-c-format
 msgid "Use standard KDE fonts"
 msgstr "Defnyddio wynebfathau arferol KDE"
 
 #. i18n: file printing/ds_appearance.ui line 139
-#: rc.cpp:111
+#: rc.cpp:117
 #, no-c-format
 msgid "Details font:"
 msgstr "Wynebfath manylion:"
 
 #. i18n: file printing/ds_appearance.ui line 150
-#: rc.cpp:114 rc.cpp:120 rc.cpp:126 rc.cpp:132 rc.cpp:135
+#: rc.cpp:120 rc.cpp:126 rc.cpp:132 rc.cpp:138 rc.cpp:141
 #, no-c-format
 msgid "Size:"
 msgstr "Maint:"
 
 #. i18n: file printing/ds_appearance.ui line 161
-#: rc.cpp:117
+#: rc.cpp:123
 #, no-c-format
 msgid "Body font:"
 msgstr "Wynebfath corff:"
 
 #. i18n: file printing/ds_appearance.ui line 183
-#: rc.cpp:123
+#: rc.cpp:129
 #, no-c-format
 msgid "Fixed font:"
 msgstr "Wynebfath gosodedig:"
 
 #. i18n: file printing/ds_appearance.ui line 246
-#: rc.cpp:129
+#: rc.cpp:135
 #, no-c-format
 msgid "Contact header font:"
 msgstr "Wynebfath pennawd cyswllt:"
 
 #. i18n: file printing/ds_appearance.ui line 302
-#: rc.cpp:138
+#: rc.cpp:144
 #, no-c-format
 msgid "Headlines:"
 msgstr "Penawdau"
 
 #. i18n: file printing/ds_appearance.ui line 335
-#: rc.cpp:141
+#: rc.cpp:147
 #, no-c-format
 msgid "Contact Headers"
 msgstr "Penawdau Cyswllt"
 
 #. i18n: file printing/ds_appearance.ui line 352
-#: rc.cpp:144
+#: rc.cpp:150
 #, no-c-format
 msgid "Use colored contact headers"
 msgstr "Defnyddio penawdau cyswllt lliw"
 
 #. i18n: file printing/ds_appearance.ui line 401
-#: rc.cpp:148
+#: rc.cpp:154
 #, no-c-format
 msgid "Headline background color:"
 msgstr "Lliw cefndir y pennawd"
 
 #. i18n: file printing/ds_appearance.ui line 412
-#: rc.cpp:151
+#: rc.cpp:157
 #, no-c-format
 msgid "Headline text color:"
 msgstr "Lliw testun y pennawd"
 
 #. i18n: file printing/rbs_appearance.ui line 37
-#: rc.cpp:158
+#: rc.cpp:164
 #, no-c-format
 msgid "Letter Groups"
 msgstr "Casgliadau Llythrennau"
 
 #. i18n: file printing/rbs_appearance.ui line 54
-#: rc.cpp:161
+#: rc.cpp:167
 #, no-c-format
 msgid ""
 "Here you can group letters together as they are grouped in your time "
@@ -2221,25 +2285,25 @@ msgstr ""
 "llythyren' i waredu'r llythyren ddiwethaf o gasgliad dewisiedig. "
 
 #. i18n: file printing/rbs_appearance.ui line 73
-#: rc.cpp:164
+#: rc.cpp:170
 #, no-c-format
 msgid "Group Letter"
 msgstr "Casglu Llythyren"
 
 #. i18n: file printing/rbs_appearance.ui line 81
-#: rc.cpp:167
+#: rc.cpp:173
 #, no-c-format
 msgid "Ungroup Letter"
 msgstr "Dad-gasglu Llythyren"
 
 #. i18n: file printing/rbs_appearance.ui line 125
-#: rc.cpp:173
+#: rc.cpp:179
 #, no-c-format
 msgid "Fill pages with empty address fields"
 msgstr "Llenwi tudalennau efo meyseydd cyfeiriad gwag"
 
 #. i18n: file printing/rbs_appearance.ui line 131
-#: rc.cpp:176
+#: rc.cpp:182
 #, no-c-format
 msgid ""
 "If this option is turned on, behind the contacts on a page the remaining "
@@ -2250,13 +2314,13 @@ msgstr ""
 "nes ymlaen."
 
 #. i18n: file printing/rbs_appearance.ui line 142
-#: rc.cpp:179
+#: rc.cpp:185
 #, no-c-format
 msgid "Always print pages for all tabs"
 msgstr "Argraffu tudalennau ar gyfer bob tab bob amser"
 
 #. i18n: file printing/rbs_appearance.ui line 148
-#: rc.cpp:182
+#: rc.cpp:188
 #, no-c-format
 msgid ""
 "If this box is checked, at least one page will be printed for every letter "
@@ -2269,13 +2333,13 @@ msgstr ""
 "cyfeiriad gwag' mae hwn yn ddefnyddiol fel arfer."
 
 #. i18n: file printing/rbs_appearance.ui line 156
-#: rc.cpp:185
+#: rc.cpp:191
 #, no-c-format
 msgid "Min. number of empty fields:"
 msgstr "Nifer lleiaf o feysydd gwag:"
 
 #. i18n: file printing/rbs_appearance.ui line 159
-#: rc.cpp:188
+#: rc.cpp:194
 #, no-c-format
 msgid ""
 "If you often add contacts to your printout manually before entering them "
@@ -2290,7 +2354,7 @@ msgstr ""
 "yma'n ffitio ar y dudalen, argraffir tudalen arall â meysydd gwag yn unig."
 
 #. i18n: file printing/rbs_appearance.ui line 167
-#: rc.cpp:191
+#: rc.cpp:197
 #, no-c-format
 msgid ""
 "This is the minimum number of empty fields that have to be printed in "
@@ -2302,31 +2366,31 @@ msgstr ""
 "dudalennau â meysydd gwag yn unig."
 
 #. i18n: file printing/rbs_appearance.ui line 177
-#: rc.cpp:194
+#: rc.cpp:200
 #, no-c-format
 msgid "Print Contact's Information"
 msgstr "Argraffu Gwybodaeth am y Cyswllt"
 
 #. i18n: file printing/rbs_appearance.ui line 194
-#: rc.cpp:197
+#: rc.cpp:203
 #, no-c-format
 msgid "Phone numbers"
 msgstr "Rhifau ffôn"
 
 #. i18n: file printing/rbs_appearance.ui line 205
-#: rc.cpp:200
+#: rc.cpp:206
 #, no-c-format
 msgid "Email addresses"
 msgstr "Cyfeiriadau ebost"
 
 #. i18n: file printing/rbs_appearance.ui line 216
-#: rc.cpp:203
+#: rc.cpp:209
 #, no-c-format
 msgid "Street addresses"
 msgstr "Cyfeiriadau stryd"
 
 #. i18n: file printing/rbs_appearance.ui line 235
-#: rc.cpp:209
+#: rc.cpp:215
 #, no-c-format
 msgid "Birthday"
 msgstr "Penblwydd"
@@ -2350,11 +2414,11 @@ msgstr ""
 msgid "Save only the URL to the sound file, not the whole object."
 msgstr ""
 
-#: undocmds.cpp:172
+#: undocmds.cpp:173
 msgid "New Contact"
 msgstr "Cysylltiad newydd"
 
-#: undocmds.cpp:210
+#: undocmds.cpp:211
 msgid "Entry Edit"
 msgstr "Golygu'r Cofnod"
 
@@ -2402,15 +2466,15 @@ msgstr "Hidlen rhagosod"
 msgid "Modify View: "
 msgstr "Addasu Golwg:"
 
-#: viewmanager.cpp:308
+#: viewmanager.cpp:309
 msgid "<qt>Are you sure that you want to delete the view <b>%1</b>?</qt>"
 msgstr "<qt>A ydych yn sicr eich bod am ddileu'r olwg<b>%1</b>?</qt>"
 
-#: viewmanager.cpp:310
+#: editors/imeditorwidget.cpp:426 viewmanager.cpp:311
 msgid "Confirm Delete"
 msgstr "Cadarnhau Dileu"
 
-#: viewmanager.cpp:416
+#: viewmanager.cpp:429
 #, c-format
 msgid ""
 "_n: Import one contact into your addressbook?\n"
@@ -2419,19 +2483,24 @@ msgstr ""
 "Mewnforio un cyswllt i'ch llyfr cyfeiriad?\n"
 " Mewnforio %n o gysylltau i'ch llyfr cyfeiriad?"
 
-#: viewmanager.cpp:417
+#: viewmanager.cpp:430
 msgid "Import Contacts?"
 msgstr "Mewnforio Cysylltau?"
 
-#: viewmanager.cpp:543
+#: viewmanager.cpp:539
+#, fuzzy
+msgid "Unfiled"
+msgstr "Anniffiniedig"
+
+#: viewmanager.cpp:562
 msgid "Select View"
 msgstr "Dewis Golwg"
 
-#: viewmanager.cpp:552
+#: viewmanager.cpp:571
 msgid "Modify View..."
 msgstr "Addasu Golwg..."
 
-#: viewmanager.cpp:555
+#: viewmanager.cpp:574
 msgid ""
 "By pressing this button a dialog opens that allows you to modify the view of "
 "the addressbook. There you can add or remove fields that you want to be "
@@ -2441,11 +2510,11 @@ msgstr ""
 "llyfr cyfeiriadau. Yno gallwch ychwanegu neu waredu meysydd yr ydych am eu "
 "dangos neu'u cuddio yn y llyfr cyfeiriadau, er enghraifft yr enw."
 
-#: viewmanager.cpp:557
+#: viewmanager.cpp:576
 msgid "Add View..."
 msgstr "Ychwanegu Golwg..."
 
-#: viewmanager.cpp:560
+#: viewmanager.cpp:579
 #, fuzzy
 msgid ""
 "You can add a new view by choosing one from the dialog that appears after "
@@ -2456,11 +2525,11 @@ msgstr ""
 "wedi gwasgu'r botwm. Rhaid i chi enwi'r olwg, fel y gallwch wahaniaethu "
 "rhwng y gwahanol olygon."
 
-#: viewmanager.cpp:562
+#: viewmanager.cpp:581
 msgid "Delete View"
 msgstr "Dileu Golwg"
 
-#: viewmanager.cpp:565
+#: viewmanager.cpp:584
 msgid ""
 "By pressing this button you can delete the actual view, which you have added "
 "before."
@@ -2468,19 +2537,19 @@ msgstr ""
 "Drwy wasgu'r botwm yma gallwch ddileu'r olwg ei hun, yr ychwanegoch o'r "
 "blaen."
 
-#: viewmanager.cpp:567
+#: viewmanager.cpp:586
 msgid "Refresh View"
 msgstr "Ailfywio'r Olwg"
 
-#: viewmanager.cpp:570
+#: viewmanager.cpp:589
 msgid "The view will be refreshed by pressing this button."
 msgstr "Ailfywir yr olwg drwy wasgu'r botwm yma."
 
-#: viewmanager.cpp:572
+#: viewmanager.cpp:591
 msgid "Edit &Filters..."
 msgstr "Golygu &Hidlenni..."
 
-#: viewmanager.cpp:575
+#: viewmanager.cpp:594
 msgid ""
 "Edit the contact filters"
 "<p>You will be presented with a dialog, where you can add, remove and edit "
@@ -2513,30 +2582,30 @@ msgstr "Esgynnol"
 msgid "Descending"
 msgstr "Disgynnol"
 
-#: xxportselectdialog.cpp:183
+#: xxportselectdialog.cpp:185
 msgid "Which contacts do you want to export?"
 msgstr "Pa gysylltau ydych am eu hallforio?"
 
-#: xxportselectdialog.cpp:186
+#: xxportselectdialog.cpp:188
 msgid "Selection"
 msgstr "Dewisiad"
 
-#: printing/selectionpage.cpp:61 xxportselectdialog.cpp:194
+#: printing/selectionpage.cpp:61 xxportselectdialog.cpp:196
 msgid "&All contacts"
 msgstr "&Pob cyswllt"
 
-#: xxportselectdialog.cpp:196
+#: xxportselectdialog.cpp:198
 msgid "Export the entire address book"
 msgstr "Allforio'r llyfr cyfeiriadau cyfan"
 
-#: xxportselectdialog.cpp:198
+#: xxportselectdialog.cpp:200
 #, c-format
 msgid ""
 "_n: &Selected contact\n"
 "&Selected contacts (%n selected)"
 msgstr ""
 
-#: xxportselectdialog.cpp:199
+#: xxportselectdialog.cpp:201
 msgid ""
 "Only export contacts selected in KAddressBook.\n"
 "This option is disabled if no contacts are selected."
@@ -2544,11 +2613,11 @@ msgstr ""
 "Allforio'r cysylltau sy'n ddewisiedig yn KLlyfrCyfeiriadau'n unig.\n"
 " Mae'r dewisiad yma'n analluog os nad oes cysylltau wedi'u dewis."
 
-#: printing/selectionpage.cpp:71 xxportselectdialog.cpp:203
+#: printing/selectionpage.cpp:71 xxportselectdialog.cpp:205
 msgid "Contacts matching &filter"
 msgstr "Cysylltau sy'n cydweddu â &hidlen"
 
-#: xxportselectdialog.cpp:204
+#: xxportselectdialog.cpp:206
 #, fuzzy
 msgid ""
 "Only export contacts matching the selected filter.\n"
@@ -2557,11 +2626,11 @@ msgstr ""
 "Allforio cysylltau sy'n cydweddu â'r hidlen ddewisiedig yn unig.\n"
 " Mae'r dewisiad yma'n analluog os nad ydych wedi diffinio unrhyw hidlenni."
 
-#: printing/selectionpage.cpp:76 xxportselectdialog.cpp:208
+#: printing/selectionpage.cpp:76 xxportselectdialog.cpp:210
 msgid "Category &members"
 msgstr "&Aelodau categori"
 
-#: xxportselectdialog.cpp:209
+#: xxportselectdialog.cpp:211
 msgid ""
 "Only export contacts who are members of a category that is checked on the "
 "list to the left.\n"
@@ -2571,23 +2640,23 @@ msgstr ""
 "chwith.\n"
 " Mae'r dewisiad yma'n analluog os nad oes gennych gategorïau."
 
-#: xxportselectdialog.cpp:214
+#: xxportselectdialog.cpp:216
 msgid "Select a filter to decide which contacts to export."
 msgstr "Dewiswch hidlen i ddewis ba gysylltau i'w hallforio."
 
-#: xxportselectdialog.cpp:220
+#: xxportselectdialog.cpp:222
 msgid "Check the categories whose members you want to export."
 msgstr "Gwiriwch y categorïau yr ydych am allforio eu haelodau."
 
-#: printing/stylepage.cpp:123 xxportselectdialog.cpp:225
+#: printing/stylepage.cpp:123 xxportselectdialog.cpp:227
 msgid "Sorting"
 msgstr "Yn Didoli"
 
-#: printing/stylepage.cpp:129 xxportselectdialog.cpp:231
+#: printing/stylepage.cpp:129 xxportselectdialog.cpp:233
 msgid "Criterion:"
 msgstr "Maen prawf:"
 
-#: printing/stylepage.cpp:135 xxportselectdialog.cpp:237
+#: printing/stylepage.cpp:135 xxportselectdialog.cpp:239
 msgid "Order:"
 msgstr "Trefn:"
 
@@ -2626,7 +2695,7 @@ msgstr "Gosodiadau Wynebfath"
 msgid "Allowed Protocols"
 msgstr ""
 
-#: editors/cryptowidget.cpp:91
+#: editors/cryptowidget.cpp:92
 msgid "Preferred OpenPGP encryption key:"
 msgstr ""
 
@@ -2634,105 +2703,114 @@ msgstr ""
 msgid "Preferred S/MIME encryption certificate:"
 msgstr ""
 
-#: editors/cryptowidget.cpp:105
+#: editors/cryptowidget.cpp:104
 #, fuzzy
 msgid "Message Preference"
 msgstr "Defnyddio'r Dewisol"
 
-#: editors/cryptowidget.cpp:112
+#: editors/cryptowidget.cpp:111
 msgid "Sign:"
 msgstr "Llofnodi :"
 
-#: editors/cryptowidget.cpp:123
+#: editors/cryptowidget.cpp:121
 msgid "Encrypt:"
 msgstr "Cêl-ysgrifo :"
 
-#: editors/imeditorwidget.cpp:85
+#: editors/imeditorwidget.cpp:89
 msgid ""
 "_: <nickname> on <server>\n"
 "%1 on %2"
 msgstr ""
 
-#: editors/imeditorwidget.cpp:140
+#: editors/imeditorwidget.cpp:146
 msgid "Edit Instant Messenging Address"
 msgstr ""
 
-#: editors/imeditorwidget.cpp:312
+#: editors/imeditorwidget.cpp:336
 #, fuzzy
 msgid "Add Address"
 msgstr "Golygu Cyfeiriad"
 
-#: editors/imeditorwidget.cpp:387
+#: editors/imeditorwidget.cpp:425
 #, fuzzy, c-format
 msgid ""
-"_n: Do you really want to remove the selected address?\n"
-"Do you really want to remove the %n selected addresses?"
+"_n: Do you really want to delete the selected address?\n"
+"Do you really want to delete the %n selected addresses?"
 msgstr "<qt>Ydych chi wir am waredu'r allwedd <b>%1</b>?</qt>"
 
-#: features/distributionlistwidget.cpp:119
+#: features/distributionlistwidget.cpp:152
 msgid "New List..."
 msgstr "Rhestr Newydd..."
 
-#: features/distributionlistwidget.cpp:123
+#: features/distributionlistwidget.cpp:156
 msgid "Rename List..."
 msgstr "Ailenwi Rhestr..."
 
-#: features/distributionlistwidget.cpp:127
+#: features/distributionlistwidget.cpp:160
 msgid "Remove List"
 msgstr "Gwaredu Rhestr"
 
-#: features/distributionlistwidget.cpp:134
+#: features/distributionlistwidget.cpp:167
 msgid "Use Preferred"
 msgstr "Defnyddio'r Dewisol"
 
-#: features/distributionlistwidget.cpp:144
+#: features/distributionlistwidget.cpp:177
 msgid "Add Contact"
 msgstr "Ychwanegu Cyswllt"
 
-#: features/distributionlistwidget.cpp:149
+#: features/distributionlistwidget.cpp:185
 msgid "Change Email..."
 msgstr "Newid Ebost..."
 
-#: features/distributionlistwidget.cpp:153
+#: features/distributionlistwidget.cpp:189
 msgid "Remove Contact"
 msgstr "Gwaredu Cyswllt"
 
-#: features/distributionlistwidget.cpp:191
+#: features/distributionlistwidget.cpp:231
 msgid "New Distribution List"
 msgstr "Rhestr Ddosbarthu Newydd"
 
-#: features/distributionlistwidget.cpp:192
-#: features/distributionlistwidget.cpp:217
+#: features/distributionlistwidget.cpp:232
+#: features/distributionlistwidget.cpp:257
 msgid "Please enter name:"
 msgstr "Rhowch enw:"
 
-#: features/distributionlistwidget.cpp:198
-#: features/distributionlistwidget.cpp:223
+#: features/distributionlistwidget.cpp:238
+#: features/distributionlistwidget.cpp:263
 msgid "The name already exists"
 msgstr "Mae'r enw mewn bod yn barod"
 
-#: features/distributionlistwidget.cpp:216
+#: features/distributionlistwidget.cpp:256
 #, fuzzy
 msgid "Rename Distribution List"
 msgstr "Rhestr Ddosbarthu Newydd"
 
-#: features/distributionlistwidget.cpp:242
+#: features/distributionlistwidget.cpp:282
 msgid "<qt>Delete distribution list <b>%1</b>?</qt>"
 msgstr "<qt>Dileu rhestr ddosbarthu<b>%1</b>?</qt>"
 
-#: features/distributionlistwidget.cpp:379
+#: features/distributionlistwidget.cpp:381
+#, fuzzy, c-format
+msgid ""
+"_n: Count: %n contact\n"
+"Count: %n contacts"
+msgstr ""
+"Canfuwyd un cyswllt:\n"
+"Canfuwyd %n o gysylltau:"
+
+#: features/distributionlistwidget.cpp:422
 msgid "Distribution List Editor"
 msgstr "Golygydd Rhestri Dosbarthu"
 
-#: features/distributionlistwidget.cpp:431
+#: features/distributionlistwidget.cpp:474
 msgid "Select Email Address"
 msgstr "Dewiswch Gyfeiriad Ebost"
 
-#: features/distributionlistwidget.cpp:437
+#: features/distributionlistwidget.cpp:480
 msgid "Email Addresses"
 msgstr "Cyfeiriadau Ebost"
 
-#: features/distributionlistwidget.cpp:442
+#: features/distributionlistwidget.cpp:485
 #, fuzzy
 msgid "Preferred address"
 msgstr "Cyfeiriad Dewisedig"
@@ -2766,25 +2844,25 @@ msgstr "LlyfrCyfeiriadau"
 msgid "<qt>Do you really want to remove the address book <b>%1</b>?</qt>"
 msgstr "<qt>Ydych chi wir am waredu'r allwedd <b>%1</b>?</qt>"
 
-#: printing/detailledstyle.cpp:130 printing/ringbinderstyle.cpp:98
+#: printing/detailledstyle.cpp:129 printing/ringbinderstyle.cpp:95
 msgid "Setting up fonts and colors"
 msgstr "Gosod wynebfathau a lliwiau"
 
-#: printing/detailledstyle.cpp:218 printing/ringbinderstyle.cpp:123
+#: printing/detailledstyle.cpp:212 printing/ringbinderstyle.cpp:120
 msgid "Setting up margins and spacing"
 msgstr "Gosod ymylon a bylchu"
 
-#: printing/detailledstyle.cpp:243 printing/mikesstyle.cpp:75
-#: printing/ringbinderstyle.cpp:151
+#: printing/detailledstyle.cpp:231 printing/mikesstyle.cpp:77
+#: printing/ringbinderstyle.cpp:138
 msgid "Printing"
 msgstr "Argraffu"
 
-#: printing/detailledstyle.cpp:246 printing/mikesstyle.cpp:108
-#: printing/ringbinderstyle.cpp:154
+#: printing/detailledstyle.cpp:236 printing/mikesstyle.cpp:105
+#: printing/ringbinderstyle.cpp:141
 msgid "Done"
 msgstr "Wedi Gorffen"
 
-#: printing/detailledstyle.cpp:303
+#: printing/detailledstyle.cpp:288
 msgid "Detailed Style"
 msgstr "Arddull Manwl"
 
@@ -2844,27 +2922,27 @@ msgstr "Cyfeiriad Dewisedig"
 msgid "(Deliver to:)"
 msgstr "(Gyrru at:)"
 
-#: printing/mikesstyle.cpp:74
+#: printing/mikesstyle.cpp:76
 msgid "Preparing"
 msgstr "Paratoi"
 
-#: printing/mikesstyle.cpp:217
+#: printing/mikesstyle.cpp:207
 msgid "Printed on %1 by KAddressBook (http://www.kde.org)"
 msgstr "Argraffwyd ar %1 gan KLlyfrCyfeiriadau (http://www.kde.org)"
 
-#: printing/mikesstyle.cpp:279
+#: printing/mikesstyle.cpp:259
 msgid "Mike's Printing Style"
 msgstr "Arddull Argraffu Meic"
 
-#: printing/printingwizard.cpp:63
+#: printing/printingwizard.cpp:64
 msgid "Choose Contacts to Print"
 msgstr "Dewiswch Cysylltiadau i Argraffu"
 
-#: printing/printingwizard.cpp:79 printing/stylepage.cpp:113
+#: printing/printingwizard.cpp:80 printing/stylepage.cpp:113
 msgid "Choose Printing Style"
 msgstr "Dewiswch Arddull Argraffu"
 
-#: printing/printingwizard.cpp:155
+#: printing/printingwizard.cpp:156
 msgid "Print Progress"
 msgstr "Cynnydd Argraffu"
 
@@ -2876,11 +2954,11 @@ msgstr "Argraffu: Cynnydd"
 msgid "Progress"
 msgstr "Cynnydd"
 
-#: printing/ringbinderstyle.cpp:73
+#: printing/ringbinderstyle.cpp:68
 msgid "Ring Binder Printing Style - Appearance"
 msgstr "Arddull Argraffu Rhwymydd Modrwyau - Golwg"
 
-#: printing/ringbinderstyle.cpp:533
+#: printing/ringbinderstyle.cpp:493
 msgid "Printout for Ring Binders"
 msgstr "Argraffu am Rwymyddion Modrwyau"
 
@@ -3137,33 +3215,33 @@ msgid ""
 msgstr ""
 " %1:\n"
 
-#: views/kaddressbookcardview.cpp:50
+#: views/kaddressbookcardview.cpp:51
 msgid "Card"
 msgstr "Cerdyn"
 
-#: views/kaddressbookcardview.cpp:52
+#: views/kaddressbookcardview.cpp:53
 msgid "Rolodex style cards represent contacts."
 msgstr "Cardiau arddull Rolodex yn cynrychioli cysylltau"
 
-#: views/kaddressbookiconview.cpp:49
+#: views/kaddressbookiconview.cpp:50
 msgid "Icon"
 msgstr "Eicon"
 
-#: views/kaddressbookiconview.cpp:51
+#: views/kaddressbookiconview.cpp:52
 msgid "Icons represent contacts. Very simple view."
 msgstr "Eiconau'n cynrychioli cysylltau. Golwg syml iawn."
 
-#: views/kaddressbooktableview.cpp:68
+#: views/kaddressbooktableview.cpp:69
 msgid "Table"
 msgstr "Tabl"
 
-#: views/kaddressbooktableview.cpp:70
+#: views/kaddressbooktableview.cpp:71
 msgid ""
 "A listing of contacts in a table. Each cell of the table holds a field of "
 "the contact."
 msgstr "Rhestr cysylltau mewn tabl. Pob cell yn y tabl yn dal maes o'r cyswllt."
 
-#: views/kaddressbooktableview.cpp:138
+#: views/kaddressbooktableview.cpp:139
 #, fuzzy
 msgid "Presence"
 msgstr "Gwlad Groeg"
@@ -3293,47 +3371,47 @@ msgstr ""
 msgid "Encoding"
 msgstr "Amgodiad"
 
-#: xxport/csvimportdialog.cpp:659
+#: xxport/csvimportdialog.cpp:661
 msgid "Local (%1)"
 msgstr ""
 
-#: xxport/csvimportdialog.cpp:660
+#: xxport/csvimportdialog.cpp:662
 msgid "[guess]"
 msgstr ""
 
-#: xxport/csvimportdialog.cpp:661
+#: xxport/csvimportdialog.cpp:663
 msgid "Latin1"
 msgstr "Lladin1"
 
-#: xxport/csvimportdialog.cpp:662
+#: xxport/csvimportdialog.cpp:664
 msgid "Unicode"
 msgstr "Ungôd"
 
-#: xxport/csvimportdialog.cpp:663
+#: xxport/csvimportdialog.cpp:665
 msgid "Microsoft Unicode"
 msgstr ""
 
-#: xxport/csvimportdialog.cpp:764
+#: xxport/csvimportdialog.cpp:780
 msgid "You have to assign at least one column."
 msgstr "Rhaid i chi neilltuo o leiaf un golofn."
 
-#: xxport/csvimportdialog.cpp:792
+#: xxport/csvimportdialog.cpp:808
 msgid "Template Selection"
 msgstr "Dewis Patrymlun"
 
-#: xxport/csvimportdialog.cpp:793
+#: xxport/csvimportdialog.cpp:809
 msgid "Please select a template, that matches the CSV file:"
 msgstr "Dewiswch batrymlun sy'n cydweddu â'r ffeil CSV, os gwelwch yn dda:"
 
-#: xxport/csvimportdialog.cpp:839
+#: xxport/csvimportdialog.cpp:855
 msgid "Template Name"
 msgstr "Enw Patrymlun"
 
-#: xxport/csvimportdialog.cpp:839
+#: xxport/csvimportdialog.cpp:855
 msgid "Please enter a name for the template:"
 msgstr "Rhowch enw i'r patrymlun:"
 
-#: xxport/csvimportdialog.cpp:909
+#: xxport/csvimportdialog.cpp:925
 #, fuzzy
 msgid "Cannot open input file."
 msgstr "Methu agor y ffeil fewnbwn!"
@@ -3347,12 +3425,14 @@ msgid "Eudora Light Addressbook (*.txt)"
 msgstr "Llyfr Cyfeiriadau Eudora Light (*.txt)"
 
 #: xxport/gnokii_xxport.cpp:85
-msgid "Import From Nokia Mobile Phone..."
+#, fuzzy
+msgid "Import From Mobile Phone..."
 msgstr "Mewnforio o Ffôn Symudol Nokia..."
 
 #: xxport/gnokii_xxport.cpp:86
-msgid "Export to Nokia Mobile Phone..."
-msgstr "Allforio i Ffôn Symudol Nokia..."
+#, fuzzy
+msgid "Export to Mobile Phone..."
+msgstr "Allforio i ffôn symudol"
 
 #: xxport/gnokii_xxport.cpp:117
 msgid "Failed to initialize the gnokii library."
@@ -3454,7 +3534,7 @@ msgid ""
 "<qt>Please connect your Mobile Phone to your computer and press "
 "<b>Continue</b> to start importing the personal contacts."
 "<br>"
-"<br>Please note that if your mobile phone is not properly connected the "
+"<br>Please note that if your Mobile Phone is not properly connected the "
 "following detection phase might take up to two minutes, during which "
 "KAddressbook will behave unresponsively.</qt>"
 msgstr ""
@@ -3617,93 +3697,99 @@ msgstr "Ffeiliau Llyfr Cyfeiriadau Personol MS Exchange (*.pab)"
 msgid "<qt>Could not find a MS Exchange Personal Address Book <b>%1</b>.</qt>"
 msgstr "<qt>Methu canfod Llyfr Cyfeiriadau Personol MS Exchange <b>%1</b>.</qt>"
 
-#: xxport/vcard_xxport.cpp:99
+#: xxport/vcard_xxport.cpp:100
 msgid "Import vCard..."
 msgstr "Mewnforio vCerdyn..."
 
-#: xxport/vcard_xxport.cpp:100
+#: xxport/vcard_xxport.cpp:101
 msgid "Export vCard 2.1..."
 msgstr "Allforio vCerdyn 2.1..."
 
-#: xxport/vcard_xxport.cpp:101
+#: xxport/vcard_xxport.cpp:102
 msgid "Export vCard 3.0..."
 msgstr "Allforio vCerdyn 3.0..."
 
-#: xxport/vcard_xxport.cpp:125
+#: xxport/vcard_xxport.cpp:126
 msgid ""
 "You have selected a list of contacts, shall they be exported to several "
 "files?"
 msgstr "Rydych wedi dewis rhestr o gysylltau.  Ydych am eu hallforio i sawl ffeil?"
 
-#: xxport/vcard_xxport.cpp:179
+#: xxport/vcard_xxport.cpp:180
 msgid "Select vCard to Import"
 msgstr "Dewiswch vGerdyn i'w Fewnforio"
 
-#: xxport/vcard_xxport.cpp:186
+#: xxport/vcard_xxport.cpp:187
 msgid "vCard Import Failed"
 msgstr "Mewnforio vCerdyn wedi Methu"
 
-#: xxport/vcard_xxport.cpp:204
+#: xxport/vcard_xxport.cpp:212
 msgid ""
 "<qt>"
 "When trying to read the vCard, there was an error opening the file '%1': "
 "%2</qt>"
 msgstr ""
 
-#: xxport/vcard_xxport.cpp:212
+#: xxport/vcard_xxport.cpp:220
 #, fuzzy
 msgid "<qt>Unable to access vCard: %1</qt>"
 msgstr "<qt>Methu cyrchu <b>%1</b>.</qt>"
 
-#: xxport/vcard_xxport.cpp:223
+#: xxport/vcard_xxport.cpp:231
 msgid "No contacts were imported, due to errors with the vCards."
 msgstr ""
 
-#: xxport/vcard_xxport.cpp:225
+#: xxport/vcard_xxport.cpp:233
 msgid "The vCard does not contain any contacts."
 msgstr ""
 
-#: xxport/vcard_xxport.cpp:392
+#: xxport/vcard_xxport.cpp:400
 msgid "Import vCard"
 msgstr "Mewnforio vCard"
 
-#: xxport/vcard_xxport.cpp:399
+#: xxport/vcard_xxport.cpp:407
 msgid "Do you want to import this contact in your address book?"
 msgstr "Ydych eisiau mewnforio'r cyswllt yma i'ch llyfr cyfeiriad?"
 
-#: xxport/vcard_xxport.cpp:410
+#: xxport/vcard_xxport.cpp:418
 #, fuzzy
 msgid "Import All..."
 msgstr "Mewnforio vCerdyn..."
 
-#: xxport/vcard_xxport.cpp:465
+#: xxport/vcard_xxport.cpp:473
 #, fuzzy
 msgid "Select vCard Fields"
 msgstr "Meysydd &dewisiedig:"
 
-#: xxport/vcard_xxport.cpp:472
+#: xxport/vcard_xxport.cpp:480
 #, fuzzy
 msgid "Select the fields which shall be exported in the vCard."
 msgstr "Yma cewch ddewis y maes a gaiff ei ddefnyddio yn y chwiliad cynyddol."
 
-#: xxport/vcard_xxport.cpp:475
+#: xxport/vcard_xxport.cpp:483
 #, fuzzy
 msgid "Private fields"
 msgstr "Rhagddodiadau"
 
-#: xxport/vcard_xxport.cpp:478
+#: xxport/vcard_xxport.cpp:486
 #, fuzzy
 msgid "Business fields"
 msgstr "Busnes"
 
-#: xxport/vcard_xxport.cpp:481
+#: xxport/vcard_xxport.cpp:489
 #, fuzzy
 msgid "Other fields"
 msgstr "Meysydd &dewisiedig:"
 
-#: xxport/vcard_xxport.cpp:484
+#: xxport/vcard_xxport.cpp:492
 msgid "Encryption keys"
 msgstr "Allweddau cêl-ysgrifo"
+
+#~ msgid "Export to Nokia Mobile Phone..."
+#~ msgstr "Allforio i Ffôn Symudol Nokia..."
+
+#~ msgid "%1:"
+#~ msgstr "%1 :"
 
 #~ msgid "Style:"
 #~ msgstr "Arddull:"
@@ -3955,13 +4041,6 @@ msgstr "Allweddau cêl-ysgrifo"
 #~ msgid "&Remove Host"
 #~ msgstr "&Gwaredu Gwesteiwr"
 
-#~ msgid ""
-#~ "_n: One contact found:\n"
-#~ "%n contacts found:"
-#~ msgstr ""
-#~ "Canfuwyd un cyswllt:\n"
-#~ "Canfuwyd %n o gysylltau:"
-
 #, fuzzy
 #~ msgid "&Add"
 #~ msgstr "&Ychwanegu..."
@@ -3990,9 +4069,6 @@ msgstr "Allweddau cêl-ysgrifo"
 
 #~ msgid "Role:"
 #~ msgstr "Rôl:"
-
-#~ msgid "Organization:"
-#~ msgstr "Sefydliad:"
 
 #~ msgid "URL:"
 #~ msgstr "URL:"
