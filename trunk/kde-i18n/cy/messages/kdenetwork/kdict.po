@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdict\n"
-"POT-Creation-Date: 2004-02-12 22:40+0100\n"
+"POT-Creation-Date: 2004-07-16 01:24+0200\n"
 "PO-Revision-Date: 2004-01-06 12:38+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -31,7 +31,8 @@ msgid ""
 msgstr "kyfieithu@dotmon.com"
 
 #: dict.cpp:207
-msgid "No definitions found for '%1'!"
+#, fuzzy
+msgid "No definitions found for '%1'."
 msgstr "Nid oedd diffiniadau are gael ar gyfer '%1'"
 
 #: dict.cpp:212
@@ -59,26 +60,28 @@ msgid "The connection is broken."
 msgstr "Y mae'r cysylltiad wedi torri."
 
 #: dict.cpp:1185 dict.cpp:1190 dict.cpp:1196 dict.cpp:1202
+#, fuzzy
 msgid ""
 "Internal error:\n"
-"Failed to open pipes for internal communication!"
+"Failed to open pipes for internal communication."
 msgstr ""
 "Gwall mewnol:\n"
 " Wedi methu agor pibelli ar gyfer cyfathrebu mewnol!"
 
 #: dict.cpp:1215
+#, fuzzy
 msgid ""
 "Internal error:\n"
-"Unable to create thread!"
+"Unable to create thread."
 msgstr ""
 "Gwall mewnol:\n"
 " Wedi methu creu edafedd!"
 
-#: dict.cpp:1387
+#: dict.cpp:1387 options.cpp:178
 msgid "All Databases"
 msgstr "Pob Cronfa Ddata"
 
-#: dict.cpp:1393 options.cpp:146
+#: dict.cpp:1393 options.cpp:146 options.cpp:151
 msgid "Spell Check"
 msgstr "Gwirio Sillafu"
 
@@ -145,11 +148,12 @@ msgstr ""
 " Gallwch newid y terfyn hwn yn yr Ymgom Hoffiannau."
 
 #: dict.cpp:1457
+#, fuzzy
 msgid ""
 "Unable to connect to:\n"
 "%1:%2\n"
 "\n"
-"Can't resolve hostname."
+"Cannot resolve hostname."
 msgstr ""
 "Methu cysylltu â:\n"
 " %1.%2\n"
@@ -209,6 +213,7 @@ msgstr ""
 " Ni ganiateir i'r gwesteiwr yma gysylltu."
 
 #: dict.cpp:1479
+#, fuzzy
 msgid ""
 "Authentication failed.\n"
 "Please enter a valid username and password."
@@ -225,6 +230,7 @@ msgstr ""
 " Mae'n debyg fod angen i chi ddefnyddio Gweinydd->Nôl Galluoedd."
 
 #: dict.cpp:1485
+#, fuzzy
 msgid ""
 "No databases available.\n"
 "It is possible that you need to authenticate\n"
@@ -291,11 +297,13 @@ msgid " Updating server information... "
 msgstr "Yn diweddaru gwybodaeth gweinydd..."
 
 #: main.cpp:25
-msgid "define X11-clipboard content (selected text)"
+#, fuzzy
+msgid "Define X11-clipboard content (selected text)"
 msgstr "diffinio cynnwys clipfwrdd-X11 (testun dewisiedig)"
 
 #: main.cpp:26
-msgid "lookup the given word/phrase"
+#, fuzzy
+msgid "Lookup the given word/phrase"
 msgstr "Chwilio am y gair/dywediad a roddwyd"
 
 #: main.cpp:34
@@ -344,11 +352,11 @@ msgstr "Dim Trawiadau"
 msgid "&Get"
 msgstr "&Nôl"
 
-#: matchview.cpp:390 toplevel.cpp:397
+#: matchview.cpp:390 toplevel.cpp:398
 msgid "&Match"
 msgstr "&Cydweddu"
 
-#: matchview.cpp:391 toplevel.cpp:396
+#: matchview.cpp:391 toplevel.cpp:397
 msgid "&Define"
 msgstr "&Diffinio"
 
@@ -407,14 +415,6 @@ msgstr "Union"
 #: options.cpp:148
 msgid "Prefix"
 msgstr "Rhagddodiad"
-
-#: options.cpp:151
-msgid "spell check"
-msgstr "gwiriad sillafu"
-
-#: options.cpp:178
-msgid "all databases"
-msgstr "pob cronfa ddata"
 
 #: options.cpp:498
 msgid "Server"
@@ -549,7 +549,8 @@ msgid "D&efine selected text on start"
 msgstr "D&iffinio'r testun dewisiedig ar gychwyn"
 
 #: queryview.cpp:57
-msgid "Unable to save remote file!"
+#, fuzzy
+msgid "Unable to save remote file."
 msgstr "Methu cadw'r ffeil bell!"
 
 #: queryview.cpp:77
@@ -565,11 +566,13 @@ msgid "&Replace"
 msgstr "&Amnewid"
 
 #: queryview.cpp:84
-msgid "Unable to save file!"
+#, fuzzy
+msgid "Unable to save file."
 msgstr "Methu cadw'r ffeil!"
 
 #: queryview.cpp:92
-msgid "Unable to create temporary file!"
+#, fuzzy
+msgid "Unable to create temporary file."
 msgstr "Methu creu ffeil dros dro!"
 
 #: queryview.cpp:411
@@ -596,11 +599,11 @@ msgstr "&Diffinio Dewisiad"
 msgid "&Match Selection"
 msgstr "&Cydweddu Dewisiad"
 
-#: queryview.cpp:455 toplevel.cpp:339
+#: queryview.cpp:455 toplevel.cpp:338
 msgid "&Define Clipboard Content"
 msgstr "&Diffinio Cynnwys y Clipfwrdd"
 
-#: queryview.cpp:457 toplevel.cpp:341
+#: queryview.cpp:457 toplevel.cpp:340
 msgid "&Match Clipboard Content"
 msgstr "&Cydweddu Cynnwys y Clipfwrdd"
 
@@ -612,7 +615,7 @@ msgstr "Yn &ôl: Gwybodaeth"
 msgid "&Back: '%1'"
 msgstr "Yn &ôl: '%1'"
 
-#: queryview.cpp:475 queryview.cpp:589 toplevel.cpp:346
+#: queryview.cpp:475 queryview.cpp:589 toplevel.cpp:345
 msgid "&Back"
 msgstr "Yn &ôl"
 
@@ -624,23 +627,27 @@ msgstr "&Ymlaen: Gwybodaeth"
 msgid "&Forward: '%1'"
 msgstr "&Ymlaen: '%1'"
 
-#: queryview.cpp:489 queryview.cpp:613 toplevel.cpp:351
+#: queryview.cpp:489 queryview.cpp:613 toplevel.cpp:350
 msgid "&Forward"
 msgstr "&Ymlaen"
 
-#: rc.cpp:3
+#: rc.cpp:6
+#, no-c-format
 msgid "Hist&ory"
 msgstr "&Hanes"
 
-#: rc.cpp:4
+#: rc.cpp:8
+#, no-c-format
 msgid "Ser&ver"
 msgstr "Gwei&nydd"
 
-#: rc.cpp:5
+#: rc.cpp:10
+#, no-c-format
 msgid "Database &Information"
 msgstr "&Gwybodaeth Cronfa Ddata"
 
-#: rc.cpp:8
+#: rc.cpp:16
+#, no-c-format
 msgid "Query Toolbar"
 msgstr "Bar Offer Ymholiadau"
 
@@ -672,74 +679,86 @@ msgstr "Cronfeydd Data ar &Gael:"
 msgid "New Set"
 msgstr "Set Newydd"
 
-#: toplevel.cpp:59
+#: toplevel.cpp:58
 msgid "The KDE Dict(ionary) Client"
 msgstr "Y Dibynnydd Geiriadur KDE"
 
-#: toplevel.cpp:324
-msgid "&Save..."
+#: toplevel.cpp:323
+#, fuzzy
+msgid "&Save As..."
 msgstr "&Cadw..."
 
-#: toplevel.cpp:328
+#: toplevel.cpp:327
 msgid "St&art Query"
 msgstr "&Dechrau Ymholiad"
 
-#: toplevel.cpp:330
+#: toplevel.cpp:329
 msgid "St&op Query"
 msgstr "&Atal Ymholiad"
 
-#: toplevel.cpp:356
+#: toplevel.cpp:355
 msgid "&Clear History"
 msgstr "&Gwagio'r Hanes"
 
-#: toplevel.cpp:360
+#: toplevel.cpp:359
 msgid "&Get Capabilities"
 msgstr "&Nôl Galluoedd"
 
-#: toplevel.cpp:362
+#: toplevel.cpp:361
 msgid "Edit &Database Sets..."
 msgstr "Golygu Setiau Cronfeydd &Data..."
 
-#: toplevel.cpp:364
+#: toplevel.cpp:363
 msgid "&Summary"
 msgstr "&Crynodeb"
 
-#: toplevel.cpp:366
+#: toplevel.cpp:365
 msgid "S&trategy Information"
 msgstr "Gwybodaeth S&trategaeth"
 
-#: toplevel.cpp:368
+#: toplevel.cpp:367
 msgid "&Server Information"
 msgstr "Gwybodaeth &Gweinydd"
 
-#: toplevel.cpp:375
+#: toplevel.cpp:374
 msgid "Show &Match List"
 msgstr "Dangos Rhestr &Gydweddion"
+
+#: toplevel.cpp:376
+#, fuzzy
+msgid "Hide &Match List"
+msgstr "Rhestr Cydweddion"
 
 #: toplevel.cpp:377
 msgid "Swallow Match &List"
 msgstr "Llyncu &Rhestr Gydweddion"
 
-#: toplevel.cpp:386
+#: toplevel.cpp:387
 msgid "Clear Input Field"
 msgstr "Gwagio Maes Mewnbwn"
 
-#: toplevel.cpp:389
+#: toplevel.cpp:390
 msgid "&Look for:"
 msgstr "&Edrych am:"
 
-#: toplevel.cpp:390
+#: toplevel.cpp:391
 msgid "Query"
 msgstr "Ymholiad"
 
-#: toplevel.cpp:393
+#: toplevel.cpp:394
 msgid "&in"
 msgstr "&yn"
 
-#: toplevel.cpp:394
+#: toplevel.cpp:395
 msgid "Databases"
 msgstr "Cronfeydd data"
 
-#: toplevel.cpp:405 toplevel.cpp:614
+#: toplevel.cpp:406 toplevel.cpp:615
 msgid " Ready "
 msgstr "Barod"
+
+#~ msgid "spell check"
+#~ msgstr "gwiriad sillafu"
+
+#~ msgid "all databases"
+#~ msgstr "pob cronfa ddata"

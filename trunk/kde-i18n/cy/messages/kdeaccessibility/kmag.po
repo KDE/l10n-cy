@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kmag\n"
-"POT-Creation-Date: 2004-02-12 22:52+0100\n"
+"POT-Creation-Date: 2004-07-16 01:34+0200\n"
 "PO-Revision-Date: 2004-01-01 21:25+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -15,9 +15,10 @@ msgstr ""
 "X-Generator: KBabel 1.2\n"
 
 #: kmagzoomview.cpp:116
+#, fuzzy
 msgid ""
 "This is the main window which shows the contents of the selected region. The "
-"contents will be magnified if zoom level is set."
+"contents will be magnified according to the zoom level that is set."
 msgstr ""
 "Dyma'r brif ffenestr sy'n dangos cynnwys yr ardal ddewisiedig.  Chwyddir y "
 "cynnwys os gosodir y lefel chwyddu."
@@ -38,7 +39,7 @@ msgstr "kyfieithu@dotmon.com"
 msgid "File to open"
 msgstr "Ffeil i agor"
 
-#: main.cpp:45
+#: kmagselrect.cpp:204 main.cpp:45
 msgid "KMagnifier"
 msgstr "KChwyddydd"
 
@@ -55,54 +56,73 @@ msgid "Original idea and author (KDE1)"
 msgstr "Syniad gwreiddiol ac awdur (KDE1)"
 
 #: main.cpp:58
-msgid "Various patches"
-msgstr "Sawl cywiriad"
+msgid ""
+"Rework of the user interface, improved selection window, speed optimisation, "
+"rotation, bug fixes"
+msgstr ""
 
 #: main.cpp:59
 msgid "Some tips"
 msgstr "Rhai cynghorion"
 
-#: rc.cpp:5
-msgid "Other &Settings"
-msgstr "Goso&diadau Eraill"
+#: kmagselrect.cpp:204
+#, fuzzy
+msgid "Selection Window"
+msgstr "Ffe&nestr Dewisiad"
 
-#: kmag.cpp:87
+#: kmag.cpp:90
 msgid "&Very Low"
 msgstr "&Isel Iawn"
 
-#: kmag.cpp:87
+#: kmag.cpp:90
 msgid "&Low"
 msgstr "I&sel"
 
-#: kmag.cpp:87
+#: kmag.cpp:90
 msgid "&Medium"
 msgstr "&Canolig"
 
-#: kmag.cpp:87
+#: kmag.cpp:90
 msgid "&High"
 msgstr "&Uchel"
 
-#: kmag.cpp:87
+#: kmag.cpp:90
 msgid "V&ery High"
 msgstr "Uc&hel Iawn"
 
-#: kmag.cpp:122
+#: kmag.cpp:98
+msgid "&No Rotation (0°)"
+msgstr ""
+
+#: kmag.cpp:98
+msgid "&Left (90°)"
+msgstr ""
+
+#: kmag.cpp:98
+msgid "&Upside Down (180°)"
+msgstr ""
+
+#: kmag.cpp:98
+msgid "&Right (270°)"
+msgstr ""
+
+#: kmag.cpp:127
 msgid "New &Window"
 msgstr "&Ffenestr Newydd"
 
-#: kmag.cpp:124
+#: kmag.cpp:129
 msgid "Open a new KMagnifier window"
 msgstr "Agor ffenestr newydd KChwyddydd"
 
-#: kmag.cpp:126
+#: kmag.cpp:131
 msgid "&Stop"
 msgstr "&Aros"
 
-#: kmag.cpp:128
+#: kmag.cpp:133
 msgid "Click to stop window refresh"
 msgstr "Cliciwch i atal ailfywiad ffenestr"
 
-#: kmag.cpp:129
+#: kmag.cpp:134
 msgid ""
 "Clicking on this icon will <b>start</b> / <b>stop</b>  updating of the "
 "display. Stopping the update will zero the processing power  required (CPU "
@@ -112,27 +132,27 @@ msgstr ""
 "dangosydd.  Bydd atal y diweddariad yn lleihau i sero y pŵer prosesu sydd "
 "angen (defnydd y CPU)."
 
-#: kmag.cpp:133
+#: kmag.cpp:138
 msgid "&Save Snapshot As..."
 msgstr "&Cadw'r Ciplun Fel..."
 
-#: kmag.cpp:135
+#: kmag.cpp:140
 msgid "Saves the zoomed view to an image file."
 msgstr "Cadw'r olwg wedi'i chwyddu i ffeil delwedd."
 
-#: kmag.cpp:136
+#: kmag.cpp:141
 msgid "Save image to a file"
 msgstr "Cadw delwedd i ffeil"
 
-#: kmag.cpp:139
+#: kmag.cpp:144
 msgid "Click on this button to print the current zoomed view."
 msgstr "Cliciwch ar y botwm yma i argraffu'r olwg gyfredol wedi'i chwyddu."
 
-#: kmag.cpp:142 kmag.cpp:143
+#: kmag.cpp:147 kmag.cpp:148
 msgid "Quits the application"
 msgstr "Terfynu'r cymhwysiad"
 
-#: kmag.cpp:146
+#: kmag.cpp:151
 msgid ""
 "Click on this button to copy the current zoomed view to the clipboard which "
 "you can paste in other applications."
@@ -140,91 +160,129 @@ msgstr ""
 "Cliciwch ar y botwm yma i gopïo'r olwg gyfredol wedi'i chwyddu i'r "
 "gludfwrdd, i'w gludo i mewn i gymhwysiadau eraill."
 
-#: kmag.cpp:147
+#: kmag.cpp:152
 msgid "Copy zoomed image to clipboard"
 msgstr "Copïo'r ddelwedd wedi'i chwyddu i'r gludfwrdd"
 
-#: kmag.cpp:149
+#: kmag.cpp:154
 msgid "Show &Menu"
 msgstr "&Dangos Dewislen"
 
-#: kmag.cpp:151
+#: kmag.cpp:157
+#, fuzzy
+msgid "Hide &Menu"
+msgstr "&Dangos Dewislen"
+
+#: kmag.cpp:159
 msgid "Show Main &Toolbar"
 msgstr "Dangos y &Prif Bar Offer"
 
-#: kmag.cpp:153
+#: kmag.cpp:162
+#, fuzzy
+msgid "Hide Main &Toolbar"
+msgstr "Dangos y &Prif Bar Offer"
+
+#: kmag.cpp:164
 msgid "Show &View Toolbar"
 msgstr "Dangos &Bar Offer Golwg"
 
-#: kmag.cpp:155
+#: kmag.cpp:167
+#, fuzzy
+msgid "Hide &View Toolbar"
+msgstr "Dangos &Bar Offer Golwg"
+
+#: kmag.cpp:169
 msgid "Show &Settings Toolbar"
 msgstr "Dangos Bar Offer &Gosodiadau"
 
-#: kmag.cpp:159
-msgid "&Always Fit Window"
-msgstr "&Ffitio'r Ffenestr o Hyd"
+#: kmag.cpp:172
+#, fuzzy
+msgid "Hide &Settings Toolbar"
+msgstr "Dangos Bar Offer &Gosodiadau"
 
-#: kmag.cpp:162
-msgid "&Fit Window"
-msgstr "Ffi&tio'r Ffenestr"
-
-#: kmag.cpp:164
-msgid "Click on this button to fit the zoom view to the zoom window."
-msgstr "Cliciwch ar y botwm yma i ffitio'r olwg chwyddu i'r ffenestr chwyddu."
-
-#: kmag.cpp:165
-msgid "Maximize the use of the window"
-msgstr "Ehangu defnydd y ffenestr"
-
-#: kmag.cpp:167
-msgid "&Follow Mouse"
+#: kmag.cpp:175
+#, fuzzy
+msgid "&Follow Mouse Mode"
 msgstr "&Dilyn Llygoden"
 
-#: kmag.cpp:169
+#: kmag.cpp:177
 msgid "Magnify around the mouse cursor"
 msgstr "Chwyddu o amgylch y cyrchydd llygoden"
 
-#: kmag.cpp:170
+#: kmag.cpp:178
 msgid "If selected, the area around the mouse cursor is magnified"
 msgstr "Os wedi'i ddewis, chwyddir yr ardal o amgylch y cyrchydd llygoden"
 
-#: kmag.cpp:172
+#: kmag.cpp:180
+#, fuzzy
+msgid "Se&lection Window Mode"
+msgstr "Ffe&nestr Dewisiad"
+
+#: kmag.cpp:182
+msgid "Show a window for selecting the magnified area"
+msgstr ""
+
+#: kmag.cpp:184
+msgid "&Whole Screen Mode"
+msgstr ""
+
+#: kmag.cpp:186
+#, fuzzy
+msgid "Magnify the whole screen"
+msgstr "Chwyddu o amgylch y cyrchydd llygoden"
+
+#: kmag.cpp:187
+msgid "Click on this button to fit the zoom view to the zoom window."
+msgstr "Cliciwch ar y botwm yma i ffitio'r olwg chwyddu i'r ffenestr chwyddu."
+
+#: kmag.cpp:189
 msgid "Hide Mouse &Cursor"
 msgstr "Cuddio Cyrchydd &Llygoden"
 
-#: kmag.cpp:174
+#: kmag.cpp:192
+#, fuzzy
+msgid "Show Mouse &Cursor"
+msgstr "Cuddio Cyrchydd &Llygoden"
+
+#: kmag.cpp:194
 msgid "Hide the mouse cursor"
 msgstr "Cuddio'r cyrchydd llygoden"
 
-#: kmag.cpp:176
-msgid "Selection &Window"
-msgstr "Ffe&nestr Dewisiad"
-
-#: kmag.cpp:178
-msgid "Show the selection window on the screen"
-msgstr "Dangos y ffenestr dewisiad ar y sgrîn"
-
-#: kmag.cpp:181
+#: kmag.cpp:197
 msgid "Click on this button to <b>zoom-in</b> on the selected region."
 msgstr "Cliciwch ar y botwm yma i <b>chwyddo</b> yr ardal ddewisiedig."
 
-#: kmag.cpp:185
+#: kmag.cpp:201
 msgid "Select the zoom factor."
 msgstr "Dewis y ffactor chwyddo."
 
-#: kmag.cpp:186
+#: kmag.cpp:202
 msgid "Zoom factor"
 msgstr "Ffactor chwyddo"
 
-#: kmag.cpp:189
+#: kmag.cpp:205
 msgid "Click on this button to <b>zoom-out</b> on the selected region."
 msgstr "Cliciwch y botwm yma i <b>leihau</b> yr ardal ddewisiedig."
 
-#: kmag.cpp:197
+#: kmag.cpp:207
+msgid "&Rotation"
+msgstr ""
+
+#: kmag.cpp:209
+#, fuzzy
+msgid "Select the rotation factor."
+msgstr "Dewis y ffactor chwyddo."
+
+#: kmag.cpp:210
+#, fuzzy
+msgid "Rotation factor"
+msgstr "Ffactor chwyddo"
+
+#: kmag.cpp:218
 msgid "&Refresh"
 msgstr "&Ailfywio"
 
-#: kmag.cpp:199
+#: kmag.cpp:220
 msgid ""
 "Select the refresh rate. The higher the rate, the more computing power (CPU) "
 "will be needed."
@@ -232,29 +290,30 @@ msgstr ""
 "Dewis y raddfa ailfywio.  Yr uwch y raddfa, y mwy o bŵer cyfrifiaduro (CPU) "
 "sydd angen."
 
-#: kmag.cpp:200
+#: kmag.cpp:221
 msgid "Refresh rate"
 msgstr "Graddfa ailfwywio"
 
-#: kmag.cpp:468
-msgid "Save Zoomed Region"
-msgstr "Cadw Ardal wedi'i Chwyddu"
+#: kmag.cpp:523
+#, fuzzy
+msgid "Save Snapshot As"
+msgstr "&Cadw'r Ciplun Fel..."
 
-#: kmag.cpp:475
+#: kmag.cpp:530
 msgid ""
 "Unable to save temporary file (before uploading to the network file you "
 "specified)."
 msgstr "Methu cadw ffeil dros-dro (cyn lanlwytho i'r ffeil rhwydwaith a phenodwyd)."
 
-#: kmag.cpp:476 kmag.cpp:480 kmag.cpp:492
+#: kmag.cpp:531 kmag.cpp:535 kmag.cpp:547
 msgid "Error Writing File"
 msgstr "Gwall wrth Ysgrifennu Ffeil"
 
-#: kmag.cpp:479
+#: kmag.cpp:534
 msgid "Unable to upload file over the network."
 msgstr "Methu lanlwytho'r ffeil dros y rhwydwaith."
 
-#: kmag.cpp:482 kmag.cpp:494
+#: kmag.cpp:537 kmag.cpp:549
 #, c-format
 msgid ""
 "Current zoomed image saved to\n"
@@ -263,7 +322,7 @@ msgstr ""
 "Cedwyd y ddelwedd gyfredol wedi'i chwyddu i \n"
 "%1"
 
-#: kmag.cpp:491
+#: kmag.cpp:546
 msgid ""
 "Unable to save file. Please check if you have permission to write to the "
 "directory."
@@ -271,14 +330,35 @@ msgstr ""
 "Methu cadw'r ffeil.  Gwiriwch os oes gennych ganiatadau i ysgrifennu i'r "
 "cyfeiriadur."
 
-#: kmag.cpp:511
+#: kmag.cpp:566
 msgid "Click to stop window update"
 msgstr "Cliciwch i atal ailfywiad ffenestr"
 
-#: kmag.cpp:514
+#: kmag.cpp:569
 msgid "Start"
 msgstr "Dechrau"
 
-#: kmag.cpp:515
+#: kmag.cpp:570
 msgid "Click to start window update"
 msgstr "Cliciwch i ddechrau ailfywiad ffenestr"
+
+#~ msgid "Various patches"
+#~ msgstr "Sawl cywiriad"
+
+#~ msgid "Other &Settings"
+#~ msgstr "Goso&diadau Eraill"
+
+#~ msgid "&Always Fit Window"
+#~ msgstr "&Ffitio'r Ffenestr o Hyd"
+
+#~ msgid "&Fit Window"
+#~ msgstr "Ffi&tio'r Ffenestr"
+
+#~ msgid "Maximize the use of the window"
+#~ msgstr "Ehangu defnydd y ffenestr"
+
+#~ msgid "Show the selection window on the screen"
+#~ msgstr "Dangos y ffenestr dewisiad ar y sgrîn"
+
+#~ msgid "Save Zoomed Region"
+#~ msgstr "Cadw Ardal wedi'i Chwyddu"
