@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdewebdev/kxsldbg.po\n"
-"POT-Creation-Date: 2004-10-02 01:43+0200\n"
+"POT-Creation-Date: 2004-11-19 01:23+0100\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -37,6 +37,16 @@ msgstr ""
 msgid "File: %1  Line: %2  Col: %3"
 msgstr ""
 
+#: kxsldbgpart/xsldbglocallistitem.cpp:32
+#: kxsldbgpart/xsldbglocalvariablesimpl.cpp:71
+msgid "Local"
+msgstr "Lleol"
+
+#: kxsldbgpart/xsldbglocallistitem.cpp:34
+#: kxsldbgpart/xsldbglocalvariablesimpl.cpp:73
+msgid "Global"
+msgstr "Eang"
+
 #: kxsldbgpart/xsldbgbreakpointsimpl.cpp:83
 #: kxsldbgpart/xsldbgbreakpointsimpl.cpp:92
 #: kxsldbgpart/xsldbgbreakpointsimpl.cpp:115
@@ -67,47 +77,43 @@ msgstr ""
 msgid "No details provided."
 msgstr ""
 
-#: kxsldbgpart/xsldbginspector.cpp:70
+#: kxsldbgpart/xsldbginspector.cpp:68
 msgid "Xsldbg Inspector"
 msgstr ""
 
-#: kxsldbgpart/xsldbginspector.cpp:79
+#: kxsldbgpart/xsldbginspector.cpp:77
 msgid "Breakpoints"
 msgstr ""
 
-#: kxsldbgpart/xsldbginspector.cpp:85
-msgid "Locals"
-msgstr ""
+#: kxsldbgpart/xsldbginspector.cpp:83
+msgid "Variables"
+msgstr "Newidynnau"
 
-#: kxsldbgpart/xsldbginspector.cpp:91
-msgid "Globals"
-msgstr "Eangderau"
-
-#: kxsldbgpart/xsldbginspector.cpp:97
+#: kxsldbgpart/xsldbginspector.cpp:89
 msgid "CallStack"
 msgstr ""
 
-#: kxsldbgpart/xsldbginspector.cpp:103
+#: kxsldbgpart/xsldbginspector.cpp:95
 msgid "Templates"
 msgstr "Patrymluniau"
 
-#: kxsldbgpart/xsldbginspector.cpp:109
+#: kxsldbgpart/xsldbginspector.cpp:101
 msgid "Sources"
 msgstr ""
 
-#: kxsldbgpart/xsldbginspector.cpp:115
+#: kxsldbgpart/xsldbginspector.cpp:107
 msgid "Entities"
 msgstr ""
 
-#: kxsldbgpart/xsldbginspector.cpp:134
+#: kxsldbgpart/xsldbginspector.cpp:126
 msgid "Apply changes to xsldbg after restarting execution"
 msgstr ""
 
-#: kxsldbgpart/xsldbginspector.cpp:141
+#: kxsldbgpart/xsldbginspector.cpp:133
 msgid "&Refresh"
 msgstr "&Ailfywio"
 
-#: kxsldbgpart/xsldbginspector.cpp:142
+#: kxsldbgpart/xsldbginspector.cpp:134
 msgid "Refresh values in inspectors from xsldbg"
 msgstr ""
 
@@ -178,7 +184,7 @@ msgstr ""
 
 #: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:222
 #: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:317
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:1002
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:1004
 #: kxsldbgpart/libxsldbg/debugXSL.cpp:678
 #: kxsldbgpart/libxsldbg/debugXSL.cpp:712
 #: kxsldbgpart/libxsldbg/debugXSL.cpp:1212
@@ -186,7 +192,6 @@ msgstr ""
 #: kxsldbgpart/libxsldbg/files.cpp:1351
 #: kxsldbgpart/libxsldbg/files_unix.cpp:61
 #: kxsldbgpart/libxsldbg/files_unix.cpp:155
-#: kxsldbgpart/libxsldbg/help_unix.cpp:123
 #: kxsldbgpart/libxsldbg/search.cpp:106 kxsldbgpart/libxsldbg/search.cpp:1191
 #: kxsldbgpart/libxsldbg/search.cpp:1254 kxsldbgpart/libxsldbg/search.cpp:1315
 #: kxsldbgpart/libxsldbg/search.cpp:1367 kxsldbgpart/libxsldbg/search.cpp:1415
@@ -222,8 +227,8 @@ msgid "Failed to delete parameter"
 msgstr ""
 
 #: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:374
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:684
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:801
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:686
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:803
 #: kxsldbgpart/libxsldbg/param_cmds.cpp:107
 msgid ""
 "Error: Unable to parse %1 as a line number.\n"
@@ -299,28 +304,22 @@ msgid ""
 "Error: Watch expression %1 does not exist.\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/options.cpp:111
-msgid ""
-"Warning: No value for documentation specified in environment variable %1. No "
-"help nor search results will display.\n"
-msgstr ""
-
-#: kxsldbgpart/libxsldbg/options.cpp:267 kxsldbgpart/libxsldbg/options.cpp:297
+#: kxsldbgpart/libxsldbg/options.cpp:288 kxsldbgpart/libxsldbg/options.cpp:318
 msgid ""
 "Error: Option %1 is not a valid boolean/integer option.\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/options.cpp:339 kxsldbgpart/libxsldbg/options.cpp:370
+#: kxsldbgpart/libxsldbg/options.cpp:360 kxsldbgpart/libxsldbg/options.cpp:391
 msgid ""
 "Error: Option %1 is not a valid string xsldbg option.\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/options.cpp:482
+#: kxsldbgpart/libxsldbg/options.cpp:503
 msgid ""
 " Parameter %1 %2=\"%3\"\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/options.cpp:517
+#: kxsldbgpart/libxsldbg/options.cpp:538
 msgid ""
 "\n"
 "No parameters present.\n"
@@ -366,25 +365,38 @@ msgstr ""
 msgid "Breakpoint %1 %2 for template: \"%3\" mode: \"%4\""
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/help_unix.cpp:69
+#: kxsldbgpart/libxsldbg/help_unix.cpp:51
+#: kxsldbgpart/libxsldbg/help_unix.cpp:56
+msgid "xsldbg version"
+msgstr ""
+
+#: kxsldbgpart/libxsldbg/help_unix.cpp:52
+#: kxsldbgpart/libxsldbg/help_unix.cpp:57
+msgid "Help document version"
+msgstr ""
+
+#: kxsldbgpart/libxsldbg/help_unix.cpp:53
+#: kxsldbgpart/libxsldbg/help_unix.cpp:58
+msgid "Help not found for command"
+msgstr ""
+
+#: kxsldbgpart/libxsldbg/help_unix.cpp:92
 msgid ""
 "Error: Unable to display help. Help files not found in %1 or xsldbg not "
 "found in path.\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/help_unix.cpp:71
+#: kxsldbgpart/libxsldbg/help_unix.cpp:94
 msgid ""
 "Error: Unable to find xsldbg or help files.\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/help_unix.cpp:76
-#: kxsldbgpart/libxsldbg/help_unix.cpp:132
+#: kxsldbgpart/libxsldbg/help_unix.cpp:99
 msgid ""
 "Error: Unable to print help file.\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/help_unix.cpp:81
-#: kxsldbgpart/libxsldbg/help_unix.cpp:136
+#: kxsldbgpart/libxsldbg/help_unix.cpp:104
 msgid ""
 "Error: No path to documentation; aborting help.\n"
 msgstr ""
@@ -748,7 +760,7 @@ msgstr ""
 
 #: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:96
 #: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:351
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:780
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:782
 #: kxsldbgpart/libxsldbg/debugXSL.cpp:510
 msgid ""
 "Error: Debugger has no files loaded. Try reloading files.\n"
@@ -1003,94 +1015,94 @@ msgid "Error: Unable to find the added breakpoint."
 msgstr ""
 
 #: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:518
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:702
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:819
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:704
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:821
 msgid ""
 "Error: Invalid arguments for command %1.\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:585
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:923
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:587
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:925
 msgid ""
 "Information: Breakpoint validation has caused breakpoint %1 to be "
 "re-created.\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:592
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:594
 msgid ""
 "Warning: Breakpoint exits for file \"%1\" at line %2.\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:615
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:617
 msgid ""
 "Error: No templates found or unable to add breakpoint.\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:620
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:622
 #, c-format
 msgid ""
 "_n: Information: Added %n new breakpoint.\n"
 "Information: Added %n new breakpoints."
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:640
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:642
 msgid ""
 "Error: Failed to add breakpoint for file \"%1\" at line %2.\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:642
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:644
 msgid ""
 "Error: Failed to add breakpoint.\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:666
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:668
 msgid "Failed to delete breakpoint."
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:694
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:813
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:696
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:815
 msgid ""
 "Error: Breakpoint does not exist for file \"%1\" at line %2.\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:715
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:717
 msgid ""
 "Error: Unable to delete breakpoint %1.\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:718
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:835
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:720
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:837
 msgid ""
 "Error: Breakpoint %1 does not exist.\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:725
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:727
 msgid ""
 "Error: Unable to delete breakpoint at template %1.\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:728
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:842
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:730
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:844
 msgid ""
 "Error: Breakpoint at template \"%1\" does not exist.\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:777
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:779
 msgid "Failed to enable/disable breakpoint."
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:832
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:834
 msgid ""
 "Error: Unable to enable/disable breakpoint %1.\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:927
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:966
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:929
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:968
 msgid ""
 "Warning: Validation of breakpoint %1 failed.\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:955
+#: kxsldbgpart/libxsldbg/breakpoint_cmds.cpp:957
 msgid ""
 "Information: Breakpoint validation has caused one or more breakpoints to be "
 "re-created.\n"
@@ -1122,6 +1134,7 @@ msgid ""
 "Error: Stylesheet not valid, files not loaded yet?\n"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgbreakpoints.ui line 81
 #: kxsldbgpart/xsldbgbreakpointlistitem.cpp:38 rc.cpp:213
 #, no-c-format
 msgid "Enabled"
@@ -1211,7 +1224,8 @@ msgstr ""
 msgid "Goto XPath"
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:91 rc.cpp:33 rc.cpp:352
+#. i18n: file ./kxsldbgpart/xsldbgglobalvariables.ui line 185
+#: kxsldbgpart/kxsldbg_part.cpp:91 rc.cpp:33 rc.cpp:340
 #, no-c-format
 msgid "Evaluate"
 msgstr ""
@@ -1236,6 +1250,7 @@ msgstr "Rhedeg"
 msgid "Step"
 msgstr "Cam"
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 261
 #: kxsldbgpart/kxsldbg_part.cpp:135 rc.cpp:108
 #, no-c-format
 msgid "Next"
@@ -1353,390 +1368,503 @@ msgid ""
 ".%1"
 msgstr ""
 
-#: rc.cpp:6 rc.cpp:313 rc.cpp:364
+#. i18n: file kxsldbg_shell.rc line 9
+#: rc.cpp:6 rc.cpp:313 rc.cpp:383
 #, no-c-format
 msgid "Debug"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgglobalvariables.ui line 25
 #: rc.cpp:15
 #, no-c-format
 msgid "Xsldbg Global Variables"
 msgstr ""
 
-#: rc.cpp:18 rc.cpp:63 rc.cpp:201 rc.cpp:334
+#. i18n: file ./kxsldbgpart/xsldbgglobalvariables.ui line 40
+#: rc.cpp:18 rc.cpp:63 rc.cpp:201 rc.cpp:346
 #, no-c-format
 msgid "Name"
 msgstr "Enw"
 
-#: rc.cpp:21 rc.cpp:78 rc.cpp:340
+#. i18n: file ./kxsldbgpart/xsldbgglobalvariables.ui line 51
+#: rc.cpp:21 rc.cpp:78 rc.cpp:355
 #, no-c-format
 msgid "Source File"
 msgstr "Ffeil Tarddiad"
 
-#: rc.cpp:24 rc.cpp:343
+#. i18n: file ./kxsldbgpart/xsldbgglobalvariables.ui line 62
+#: rc.cpp:24 rc.cpp:358
 #, no-c-format
 msgid "Source Line Number"
 msgstr ""
 
-#: rc.cpp:27 rc.cpp:346
+#. i18n: file ./kxsldbgpart/xsldbgglobalvariables.ui line 150
+#: rc.cpp:27 rc.cpp:334
 #, no-c-format
 msgid "Expression:"
 msgstr "Mynegiad:"
 
-#: rc.cpp:30 rc.cpp:349
+#. i18n: file ./kxsldbgpart/xsldbgglobalvariables.ui line 158
+#: rc.cpp:30 rc.cpp:337
 #, no-c-format
 msgid "Enter a valid XPath expression"
 msgstr ""
 
-#: rc.cpp:36 rc.cpp:355
+#. i18n: file ./kxsldbgpart/xsldbgglobalvariables.ui line 188
+#: rc.cpp:36 rc.cpp:343
 #, no-c-format
 msgid "Result of evaluation will appear in message window"
 msgstr ""
 
-#: rc.cpp:39 rc.cpp:57 rc.cpp:87 rc.cpp:282 rc.cpp:328 rc.cpp:358
+#. i18n: file ./kxsldbgpart/xsldbgglobalvariables.ui line 229
+#: rc.cpp:39 rc.cpp:57 rc.cpp:87 rc.cpp:282 rc.cpp:328 rc.cpp:377
 #, no-c-format
 msgid "Refresh"
 msgstr "Cyfredoli"
 
+#. i18n: file ./kxsldbgpart/xsldbgcallstack.ui line 17
 #: rc.cpp:42
 #, no-c-format
 msgid "Xsldbg Callstack"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgcallstack.ui line 32
 #: rc.cpp:45
 #, no-c-format
 msgid "Frame# Template Name"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgcallstack.ui line 43
 #: rc.cpp:48 rc.cpp:69
 #, no-c-format
 msgid "Source File Name"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgcallstack.ui line 54
 #: rc.cpp:51 rc.cpp:72 rc.cpp:210
 #, no-c-format
 msgid "Line Number"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgcallstack.ui line 75
 #: rc.cpp:54
 #, no-c-format
 msgid "Oldest Frame # is 0, Frame # has been added to the first column"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgtemplates.ui line 17
 #: rc.cpp:60
 #, no-c-format
 msgid "Xsldbg Templates"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgtemplates.ui line 43
 #: rc.cpp:66 rc.cpp:204
 #, no-c-format
 msgid "Mode"
 msgstr "Modd"
 
+#. i18n: file ./kxsldbgpart/xsldbgsources.ui line 17
 #: rc.cpp:75
 #, no-c-format
 msgid "Xsldbg Source Files"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgsources.ui line 43
 #: rc.cpp:81
 #, no-c-format
 msgid "Parent File"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgsources.ui line 54
 #: rc.cpp:84
 #, no-c-format
 msgid "Parent Line Number"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 31
 #: rc.cpp:90
 #, no-c-format
 msgid "KXsldbg Configuration"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 75
 #: rc.cpp:93
 #, no-c-format
 msgid "LibXSLT Parameters"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 108
 #: rc.cpp:96
 #, no-c-format
 msgid "Parameter value:"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 148
 #: rc.cpp:99
 #, no-c-format
 msgid "Parameter name:"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 229
 #: rc.cpp:102
 #, no-c-format
 msgid "Prev"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 464
 #: rc.cpp:120
 #, no-c-format
 msgid "Output file:"
 msgstr "Ffeil allbwn :"
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 488
 #: rc.cpp:123 rc.cpp:129 rc.cpp:135
 #, no-c-format
 msgid "..."
 msgstr "..."
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 512
 #: rc.cpp:126
 #, no-c-format
 msgid "XML data:"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 560
 #: rc.cpp:132
 #, no-c-format
 msgid "XSL source:"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 621
 #: rc.cpp:141
 #, no-c-format
 msgid "catalogs"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 624
 #: rc.cpp:144
 #, no-c-format
 msgid "use catalogs from $SGML_CATALOGS_FILES"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 632
 #: rc.cpp:147
 #, no-c-format
 msgid "novalid"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 635
 #: rc.cpp:150
 #, no-c-format
 msgid "skip the DTD loading phase"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 643
 #: rc.cpp:153
 #, no-c-format
 msgid "html"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 646
 #: rc.cpp:156
 #, no-c-format
 msgid "the input document is(are) an HTML file(s)"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 654
 #: rc.cpp:159
 #, no-c-format
 msgid "docbook"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 657
 #: rc.cpp:162
 #, no-c-format
 msgid "the input document is SGML docbook"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 665
 #: rc.cpp:165
 #, no-c-format
 msgid "debug"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 668
 #: rc.cpp:168
 #, no-c-format
 msgid "dump the tree of the result instead"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 676
 #: rc.cpp:171
 #, no-c-format
 msgid "noout"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 679
 #: rc.cpp:174
 #, no-c-format
 msgid "do not dump the result"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 687
 #: rc.cpp:177
 #, no-c-format
 msgid "profile"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 690
 #: rc.cpp:180
 #, no-c-format
 msgid "print profiling information"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 698
 #: rc.cpp:183
 #, no-c-format
 msgid "timing"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 701
 #: rc.cpp:186
 #, no-c-format
 msgid "display the time used"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 709
 #: rc.cpp:189
 #, no-c-format
 msgid "nonet"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 712
 #: rc.cpp:192
 #, no-c-format
 msgid "refuse to fetch DTDs or entities over network"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgbreakpoints.ui line 17
 #: rc.cpp:195
 #, no-c-format
 msgid "Xsldbg Breakpoints"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgbreakpoints.ui line 26
 #: rc.cpp:198
 #, no-c-format
 msgid "ID"
 msgstr "ID"
 
+#. i18n: file ./kxsldbgpart/xsldbgbreakpoints.ui line 59
 #: rc.cpp:207
 #, no-c-format
 msgid "File Name"
 msgstr "Enw Ffeil"
 
+#. i18n: file ./kxsldbgpart/xsldbgbreakpoints.ui line 102
 #: rc.cpp:216
 #, no-c-format
 msgid "Click breakpoint in list to modify or delete it"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgbreakpoints.ui line 138
 #: rc.cpp:219
 #, no-c-format
 msgid "ID:"
 msgstr "ID :"
 
+#. i18n: file ./kxsldbgpart/xsldbgbreakpoints.ui line 146
 #: rc.cpp:222
 #, no-c-format
 msgid "Line number:"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgbreakpoints.ui line 154
 #: rc.cpp:225
 #, no-c-format
 msgid "You don't need to specify directory for file name"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgbreakpoints.ui line 162
 #: rc.cpp:228
 #, no-c-format
 msgid "Template name or match name to look for"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgbreakpoints.ui line 198
 #: rc.cpp:231 rc.cpp:234
 #, no-c-format
 msgid "Must be positive"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgbreakpoints.ui line 285
 #: rc.cpp:237
 #, no-c-format
 msgid "Mode:"
 msgstr "Modd:"
 
+#. i18n: file ./kxsldbgpart/xsldbgbreakpoints.ui line 293
 #: rc.cpp:240
 #, no-c-format
 msgid "Name:"
 msgstr "Enw:"
 
+#. i18n: file ./kxsldbgpart/xsldbgbreakpoints.ui line 301
 #: rc.cpp:243
 #, no-c-format
 msgid "File name:"
 msgstr "Enw'r ffeil:"
 
+#. i18n: file ./kxsldbgpart/xsldbgbreakpoints.ui line 375
 #: rc.cpp:249
 #, no-c-format
 msgid "Delete breakpoint using ID"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgbreakpoints.ui line 386
 #: rc.cpp:255
 #, no-c-format
 msgid "Clear entered text"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgbreakpoints.ui line 394
 #: rc.cpp:258
 #, no-c-format
 msgid "Add All"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgbreakpoints.ui line 397
 #: rc.cpp:261
 #, no-c-format
 msgid "Add breakpoint on all templates found"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgbreakpoints.ui line 408
 #: rc.cpp:267
 #, no-c-format
 msgid "Delete all breakpoints"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgbreakpoints.ui line 416
 #: rc.cpp:270
 #, no-c-format
 msgid "Enable"
 msgstr "Galluogi"
 
+#. i18n: file ./kxsldbgpart/xsldbgbreakpoints.ui line 419
 #: rc.cpp:273
 #, no-c-format
 msgid "Enable breakpoint using ID"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgbreakpoints.ui line 430
 #: rc.cpp:279
 #, no-c-format
 msgid "Add breakpoint using file name with line number or a template name"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgwalkspeed.ui line 16
 #: rc.cpp:285
 #, no-c-format
 msgid "Configure xsldbg's Walk Speed"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgwalkspeed.ui line 50
 #: rc.cpp:289
 #, no-c-format
 msgid "Change the speed at which xsldbg walks through execution of the stylesheet."
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgwalkspeed.ui line 94
 #: rc.cpp:292
 #, no-c-format
 msgid "Slow"
 msgstr "Araf"
 
+#. i18n: file ./kxsldbgpart/xsldbgwalkspeed.ui line 116
 #: rc.cpp:295
 #, no-c-format
 msgid "Fast"
 msgstr "Cyflym"
 
+#. i18n: file ./kxsldbgpart/xsldbgmsgdialog.ui line 26
 #: rc.cpp:304
 #, no-c-format
 msgid "qxsldbg Message"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgmsgdialog.ui line 71
 #: rc.cpp:307
 #, no-c-format
 msgid "TextLabel1"
 msgstr "LabelTestun1"
 
+#. i18n: file ./kxsldbgpart/xsldbgentities.ui line 25
 #: rc.cpp:319
 #, no-c-format
 msgid "Xsldbg Entities"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgentities.ui line 40
 #: rc.cpp:322
 #, no-c-format
 msgid "PublicID"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbgentities.ui line 51
 #: rc.cpp:325
 #, no-c-format
 msgid "SystemID"
 msgstr ""
 
+#. i18n: file ./kxsldbgpart/xsldbglocalvariables.ui line 25
 #: rc.cpp:331
 #, no-c-format
 msgid "Xsldbg Local Variables"
 msgstr ""
 
-#: rc.cpp:337
+#. i18n: file ./kxsldbgpart/xsldbglocalvariables.ui line 161
+#: rc.cpp:349
 #, no-c-format
 msgid "Template Context"
 msgstr ""
+
+#. i18n: file ./kxsldbgpart/xsldbglocalvariables.ui line 172
+#: rc.cpp:352
+#, no-c-format
+msgid "Type"
+msgstr "Math"
+
+#. i18n: file ./kxsldbgpart/xsldbglocalvariables.ui line 228
+#: rc.cpp:361
+#, fuzzy, no-c-format
+msgid "Variable expression:"
+msgstr "Mynegiad:"
+
+#. i18n: file ./kxsldbgpart/xsldbglocalvariables.ui line 249
+#: rc.cpp:365
+#, no-c-format
+msgid "Variable type :"
+msgstr ""
+
+#. i18n: file ./kxsldbgpart/xsldbglocalvariables.ui line 270
+#: rc.cpp:368
+#, fuzzy, no-c-format
+msgid "Set expression"
+msgstr "Mynegiad:"
+
+#. i18n: file ./kxsldbgpart/xsldbglocalvariables.ui line 273
+#: rc.cpp:371
+#, no-c-format
+msgid "Set the selection for variable "
+msgstr ""
+
+#. i18n: file ./kxsldbgpart/xsldbglocalvariables.ui line 283
+#: rc.cpp:374
+#, fuzzy, no-c-format
+msgid "Variable name :"
+msgstr "Enw'r ffeil:"
 
 #: xsldbgmain.cpp:51
 msgid "A KDE console application for xsldbg, an XSLT debugger"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-3/krecipes.po\n"
-"POT-Creation-Date: 2004-10-12 01:19+0200\n"
+"POT-Creation-Date: 2004-11-17 01:25+0100\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -22,20 +22,20 @@ msgstr ""
 msgid "Title"
 msgstr "Teitl"
 
-#: src/dialogs/recipeinputdialog.cpp:371 src/gui/setupdisplay.cpp:300
+#: src/dialogs/recipeinputdialog.cpp:504 src/gui/setupdisplay.cpp:300
 #: src/gui/setupdisplay.cpp:310
 msgid "Instructions"
 msgstr "Cyfarwyddiadau"
 
 #: src/dialogs/advancedsearchdialog.cpp:623
-#: src/dialogs/recipeinputdialog.cpp:220 src/exporters/htmlexporter.cpp:267
+#: src/dialogs/recipeinputdialog.cpp:344 src/exporters/htmlexporter.cpp:267
 #: src/gui/setupdisplay.cpp:315 src/gui/setupdisplay.cpp:317
 #, fuzzy
 msgid "Servings"
 msgstr "Gosodiadau Gweinydd"
 
 #: src/dialogs/advancedsearchdialog.cpp:629
-#: src/dialogs/recipeinputdialog.cpp:228 src/exporters/htmlexporter.cpp:273
+#: src/dialogs/recipeinputdialog.cpp:352 src/exporters/htmlexporter.cpp:273
 #: src/gui/setupdisplay.cpp:322 src/gui/setupdisplay.cpp:324
 msgid "Preparation Time"
 msgstr ""
@@ -49,9 +49,9 @@ msgid "Author 1, Author 2, ..."
 msgstr ""
 
 #: src/dialogs/advancedsearchdialog.cpp:616
-#: src/dialogs/recipeinputdialog.cpp:173 src/exporters/htmlexporter.cpp:293
+#: src/dialogs/recipeinputdialog.cpp:297 src/exporters/htmlexporter.cpp:293
 #: src/gui/setupdisplay.cpp:351 src/gui/setupdisplay.cpp:355
-#: src/krecipesview.cpp:301 src/krecipesview.cpp:363
+#: src/krecipesview.cpp:285 src/krecipesview.cpp:347
 msgid "Authors"
 msgstr "Awduron"
 
@@ -60,9 +60,9 @@ msgid "Category 1, Category 2, ..."
 msgstr ""
 
 #: src/dialogs/advancedsearchdialog.cpp:609
-#: src/dialogs/recipeinputdialog.cpp:195 src/exporters/htmlexporter.cpp:307
+#: src/dialogs/recipeinputdialog.cpp:319 src/exporters/htmlexporter.cpp:307
 #: src/gui/setupdisplay.cpp:369 src/gui/setupdisplay.cpp:373
-#: src/krecipesview.cpp:300 src/krecipesview.cpp:359
+#: src/krecipesview.cpp:284 src/krecipesview.cpp:343
 msgid "Categories"
 msgstr "Categoriau"
 
@@ -82,10 +82,10 @@ msgstr ""
 #: src/dialogs/advancedsearchdialog.cpp:635
 #: src/dialogs/dependanciesdialog.cpp:63
 #: src/dialogs/ingredientmatcherdialog.cpp:41
-#: src/dialogs/recipeinputdialog.cpp:370
+#: src/dialogs/recipeinputdialog.cpp:503
 #: src/dialogs/refineshoppinglistdialog.cpp:45
 #: src/dialogs/refineshoppinglistdialog.cpp:107 src/gui/setupdisplay.cpp:418
-#: src/krecipesview.cpp:296 src/krecipesview.cpp:343
+#: src/krecipesview.cpp:280 src/krecipesview.cpp:327
 msgid "Ingredients"
 msgstr ""
 
@@ -98,12 +98,12 @@ msgid "Background"
 msgstr "Cefndir"
 
 #: src/gui/setupdisplay.cpp:446
-msgid "Background color..."
-msgstr "Lliw'r cefndir ..."
+msgid "Background Color..."
+msgstr "Lliw Cefndir ..."
 
 #: src/gui/setupdisplay.cpp:449
-msgid "Text color..."
-msgstr "Lliw'r testun ..."
+msgid "Text Color..."
+msgstr "Lliw Testun..."
 
 #: src/gui/setupdisplay.cpp:452
 msgid "Font..."
@@ -164,6 +164,40 @@ msgid ""
 "Would you like to select another file?"
 msgstr ""
 
+#: src/dialogs/dbimportdialog.cpp:63 src/pref.cpp:241 src/setupwizard.cpp:531
+msgid "Database file:"
+msgstr ""
+
+#: src/dialogs/dbimportdialog.cpp:152
+#, fuzzy
+msgid "Database Import"
+msgstr "Enw defnyddiwr:"
+
+#: src/dialogs/dbimportdialog.cpp:153
+msgid "Database"
+msgstr "Cronfa ddata"
+
+#: src/dialogs/dbimportdialog.cpp:157 src/pref.cpp:74 src/pref.cpp:160
+#: src/setupwizard.cpp:442
+msgid "Server:"
+msgstr " Gweinydd:"
+
+#: src/dialogs/dbimportdialog.cpp:158 src/pref.cpp:87 src/pref.cpp:173
+#: src/setupwizard.cpp:193 src/setupwizard.cpp:294 src/setupwizard.cpp:382
+msgid "Username:"
+msgstr "Enw defnyddiwr:"
+
+#: src/dialogs/dbimportdialog.cpp:159 src/pref.cpp:100 src/pref.cpp:186
+#: src/setupwizard.cpp:197 src/setupwizard.cpp:298 src/setupwizard.cpp:398
+msgid "Password:"
+msgstr "Cyfrinair:"
+
+#: src/dialogs/dbimportdialog.cpp:160 src/pref.cpp:114 src/pref.cpp:200
+#: src/setupwizard.cpp:409
+#, fuzzy
+msgid "Database name:"
+msgstr "Enw defnyddiwr:"
+
 #: src/dialogs/createcategorydialog.cpp:35
 #, fuzzy
 msgid "New Category"
@@ -215,8 +249,8 @@ msgid "Id"
 msgstr "Dynodiad (Id)"
 
 #: src/dialogs/ingredientsdialog.cpp:96 src/dialogs/ingredientsdialog.cpp:133
-#: src/dialogs/recipeinputdialog.cpp:337 src/krecipesview.cpp:298
-#: src/krecipesview.cpp:351 src/widgets/propertylistview.cpp:79
+#: src/dialogs/recipeinputdialog.cpp:469 src/krecipesview.cpp:282
+#: src/krecipesview.cpp:335 src/widgets/propertylistview.cpp:79
 msgid "Units"
 msgstr "Unedau"
 
@@ -230,7 +264,7 @@ msgstr ""
 msgid "Property"
 msgstr "Priodwedd"
 
-#: src/dialogs/ingredientsdialog.cpp:132 src/dialogs/recipeinputdialog.cpp:335
+#: src/dialogs/ingredientsdialog.cpp:132 src/dialogs/recipeinputdialog.cpp:467
 #: src/dialogs/refineshoppinglistdialog.cpp:67
 #: src/dialogs/refineshoppinglistdialog.cpp:109
 msgid "Amount"
@@ -271,7 +305,7 @@ msgstr "Chwiliad:"
 msgid "Open Recipe(s)"
 msgstr ""
 
-#: src/dialogs/selectrecipedialog.cpp:92 src/krecipesview.cpp:369
+#: src/dialogs/selectrecipedialog.cpp:92 src/krecipesview.cpp:353
 msgid "Edit Recipe"
 msgstr ""
 
@@ -296,11 +330,11 @@ msgid "&Load"
 msgstr ""
 
 #: src/dialogs/dietwizarddialog.cpp:48
-msgid "Number of days"
+msgid "Number of Days"
 msgstr ""
 
 #: src/dialogs/dietwizarddialog.cpp:60
-msgid "Meals per day"
+msgid "Meals per Day"
 msgstr ""
 
 #: src/dialogs/dietwizarddialog.cpp:84
@@ -446,158 +480,163 @@ msgstr ""
 msgid "Unable to scale a recipe with zero servings"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:786
+#: src/dialogs/recipeinputdialog.cpp:1016
 #: src/dialogs/resizerecipedialog.cpp:183
 msgid "Invalid input"
 msgstr ""
 
-#: src/dialogs/unitsdialog.cpp:147
+#: src/dialogs/unitsdialog.cpp:151
 msgid "Finding Unit Ratios"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:140
+#: src/dialogs/recipeinputdialog.cpp:264
 msgid "Select photo"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:144
+#: src/dialogs/recipeinputdialog.cpp:268
 msgid "Clear photo"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:157
+#: src/dialogs/recipeinputdialog.cpp:281
 msgid "Recipe Name"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:255
+#: src/dialogs/recipeinputdialog.cpp:380
 msgid "Ingredient:"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:262
+#: src/dialogs/recipeinputdialog.cpp:381
+msgid "Header:"
+msgstr "Pennawd :"
+
+#: src/dialogs/recipeinputdialog.cpp:394
 msgid "Amount:"
 msgstr "Maint:"
 
-#: src/dialogs/recipeinputdialog.cpp:267
+#: src/dialogs/recipeinputdialog.cpp:399
 msgid "Unit:"
 msgstr "Uned:"
 
-#: src/dialogs/recipeinputdialog.cpp:274
+#: src/dialogs/recipeinputdialog.cpp:406
 msgid "Preparation Method:"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:327
+#: src/dialogs/recipeinputdialog.cpp:459
 msgid "Add ingredient"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:328
+#: src/dialogs/recipeinputdialog.cpp:460
 msgid "Move ingredient up"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:329
+#: src/dialogs/recipeinputdialog.cpp:461
 msgid "Move ingredient down"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:330
+#: src/dialogs/recipeinputdialog.cpp:462
 msgid "Remove ingredient"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:334 src/pref.cpp:360
+#: src/dialogs/recipeinputdialog.cpp:466 src/pref.cpp:360
 #: src/widgets/ingredientlistview.cpp:54
 #: src/widgets/ingredientlistview.cpp:183
 msgid "Ingredient"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:338 src/widgets/prepmethodlistview.cpp:54
+#: src/dialogs/recipeinputdialog.cpp:470 src/widgets/prepmethodlistview.cpp:54
 msgid "Preparation Method"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:364
+#: src/dialogs/recipeinputdialog.cpp:497
 msgid "Check spelling"
 msgstr ""
 
 #: src/dialogs/advancedsearchdialog.cpp:540
 #: src/dialogs/advancedsearchdialog.cpp:643
-#: src/dialogs/recipeinputdialog.cpp:369 src/exporters/htmlexporter.cpp:312
+#: src/dialogs/recipeinputdialog.cpp:502 src/exporters/htmlexporter.cpp:312
 #: src/widgets/recipelistview.cpp:70
 msgid "Recipe"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:385
+#: src/dialogs/recipeinputdialog.cpp:518
 msgid "Save recipe"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:386
+#: src/dialogs/recipeinputdialog.cpp:519
 msgid "Show recipe"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:388
+#: src/dialogs/recipeinputdialog.cpp:521
 msgid "Resize recipe"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:622
-msgid "*.png *.jpg *.jpeg *.xpm *.gif|Images (*.png *.jpg *.jpeg *.xpm *.gif)"
-msgstr ""
+#: src/dialogs/recipeinputdialog.cpp:773
+msgid "Images"
+msgstr "Delweddau"
 
-#: src/dialogs/recipeinputdialog.cpp:787
+#: src/dialogs/recipeinputdialog.cpp:1017
 msgid "Amount field contains invalid input."
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:798
+#: src/dialogs/recipeinputdialog.cpp:1028
 #: src/widgets/ingredientlistview.cpp:171
 msgid "Ingredient name cannot be longer than %1 characters."
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:806 src/dialogs/recipeinputdialog.cpp:911
-#: src/widgets/unitlistview.cpp:175
+#: src/dialogs/recipeinputdialog.cpp:1036
+#: src/dialogs/recipeinputdialog.cpp:1162 src/widgets/unitlistview.cpp:175
 msgid "Unit name cannot be longer than %1 characters."
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:814 src/dialogs/recipeinputdialog.cpp:940
+#: src/dialogs/recipeinputdialog.cpp:1044
+#: src/dialogs/recipeinputdialog.cpp:1191
 #: src/widgets/prepmethodlistview.cpp:173
 msgid "Preparation method cannot be longer than %1 characters."
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:987
+#: src/dialogs/recipeinputdialog.cpp:1238
 msgid "Recipe title cannot be longer than %1 characters."
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:987
+#: src/dialogs/recipeinputdialog.cpp:1238
 msgid "Unable to save recipe"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1024
+#: src/dialogs/recipeinputdialog.cpp:1275
 msgid "Write the recipe instructions here"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1025
+#: src/dialogs/recipeinputdialog.cpp:1277
 msgid "Write the recipe title here"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1173
+#: src/dialogs/recipeinputdialog.cpp:1429
 msgid ""
 "This recipe contains unsaved changes.\n"
 "Would you like to save it before closing?"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1173
-#: src/dialogs/recipeinputdialog.cpp:1201
-#: src/dialogs/recipeinputdialog.cpp:1213 src/krecipesview.cpp:439
-#: src/krecipesview.cpp:489
+#: src/dialogs/recipeinputdialog.cpp:1429
+#: src/dialogs/recipeinputdialog.cpp:1457
+#: src/dialogs/recipeinputdialog.cpp:1469 src/krecipesview.cpp:423
+#: src/krecipesview.cpp:473
 #, fuzzy
 msgid "Unsaved changes"
 msgstr "Newidiadau Heb eu Cadw"
 
-#: src/dialogs/recipeinputdialog.cpp:1201
+#: src/dialogs/recipeinputdialog.cpp:1457
 msgid ""
 "You need to save the recipe before displaying it. Would you like to save it "
 "now?"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1213
+#: src/dialogs/recipeinputdialog.cpp:1469
 msgid ""
 "This recipe has changes that will not be displayed unless the recipe is "
 "saved. Would you like to save it now?"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1235
+#: src/dialogs/recipeinputdialog.cpp:1491
 msgid "Spell check complete."
 msgstr ""
 
@@ -690,8 +729,8 @@ msgid "Border Preview"
 msgstr ""
 
 #: src/dialogs/shoppinglistviewdialog.cpp:72
-#: src/dialogs/shoppinglistviewdialog.cpp:74 src/krecipesview.cpp:295
-#: src/krecipesview.cpp:330
+#: src/dialogs/shoppinglistviewdialog.cpp:74 src/krecipesview.cpp:279
+#: src/krecipesview.cpp:314
 msgid "Shopping List"
 msgstr ""
 
@@ -737,7 +776,7 @@ msgid "Opening recipes, please wait..."
 msgstr ""
 
 #: src/dialogs/dependanciesdialog.cpp:43 src/dialogs/recipeimportdialog.cpp:32
-#: src/krecipesview.cpp:416 src/recipeactionshandler.cpp:157
+#: src/krecipesview.cpp:400 src/recipeactionshandler.cpp:168
 msgid "Recipes"
 msgstr ""
 
@@ -950,16 +989,6 @@ msgstr ""
 msgid "MySQL Administrator Account"
 msgstr ""
 
-#: src/pref.cpp:87 src/pref.cpp:173 src/setupwizard.cpp:193
-#: src/setupwizard.cpp:294 src/setupwizard.cpp:382
-msgid "Username:"
-msgstr "Enw defnyddiwr:"
-
-#: src/pref.cpp:100 src/pref.cpp:186 src/setupwizard.cpp:197
-#: src/setupwizard.cpp:298 src/setupwizard.cpp:398
-msgid "Password:"
-msgstr "Cyfrinair:"
-
 #: src/setupwizard.cpp:261
 msgid ""
 "This dialog will allow you to specify a PostgreSQL account that has the "
@@ -985,23 +1014,14 @@ msgstr ""
 msgid "In this dialog you can adjust the database server settings."
 msgstr ""
 
-#: src/pref.cpp:114 src/pref.cpp:200 src/setupwizard.cpp:409
-#, fuzzy
-msgid "Database name:"
-msgstr "Enw defnyddiwr:"
-
 #: src/setupwizard.cpp:426
 msgid "The server is remote"
 msgstr ""
 
 #: src/setupwizard.cpp:434
 #, fuzzy
-msgid "Server / Client settings"
+msgid "Server / Client Settings"
 msgstr "Gosodiadau Gweinydd"
-
-#: src/pref.cpp:74 src/pref.cpp:160 src/setupwizard.cpp:442
-msgid "Server:"
-msgstr " Gweinydd:"
 
 #: src/setupwizard.cpp:447
 msgid "Client:"
@@ -1009,10 +1029,6 @@ msgstr "Dibynnydd:"
 
 #: src/setupwizard.cpp:517
 msgid "In this dialog you can adjust SQLite settings."
-msgstr ""
-
-#: src/pref.cpp:241 src/setupwizard.cpp:531
-msgid "Database file:"
 msgstr ""
 
 #: src/pref.cpp:248 src/setupwizard.cpp:539
@@ -1123,118 +1139,123 @@ msgstr ""
 msgid "INSERT YOUR EMAIL ADDRESS"
 msgstr ""
 
-#: src/recipeactionshandler.cpp:32
+#: src/recipeactionshandler.cpp:43
 msgid "&Open"
 msgstr "A&gor"
 
-#: src/recipeactionshandler.cpp:36 src/recipeactionshandler.cpp:51
-msgid "&Save as"
-msgstr ""
+#: src/recipeactionshandler.cpp:47 src/recipeactionshandler.cpp:62
+msgid "&Save As..."
+msgstr "&Cadw Fel..."
 
-#: src/recipeactionshandler.cpp:38
-msgid "Remove from &Category"
-msgstr ""
+#: src/recipeactionshandler.cpp:49
+#, fuzzy
+msgid "Remove From &Category"
+msgstr "Categori"
 
-#: src/recipeactionshandler.cpp:42
+#: src/recipeactionshandler.cpp:53
 msgid "&Add to Shopping List"
 msgstr ""
 
-#: src/recipeactionshandler.cpp:47
+#: src/recipeactionshandler.cpp:58
 msgid "&Expand All"
 msgstr ""
 
-#: src/recipeactionshandler.cpp:49
+#: src/recipeactionshandler.cpp:60
 msgid "&Collapse All"
 msgstr ""
 
-#: src/krecipesview.cpp:414 src/krecipesview.cpp:416
-#: src/recipeactionshandler.cpp:148
+#: src/krecipesview.cpp:398 src/krecipesview.cpp:400
+#: src/recipeactionshandler.cpp:159
 msgid "Save Recipe"
 msgstr ""
 
-#: src/recipeactionshandler.cpp:157 src/recipeactionshandler.cpp:247
+#: src/recipeactionshandler.cpp:168 src/recipeactionshandler.cpp:258
 msgid "Save Recipes"
 msgstr ""
 
-#: src/recipeactionshandler.cpp:262
-msgid ""
-"*.kre|Compressed Krecipes file (*.kre)\n"
-"*.kreml|Krecipes file (*.kreml)\n"
-"*.html|Web Page (*.html)\n"
-"*.mmf|Meal-Master file (*.mmf)\n"
-"*.xml|RecipeML file (*.xml)"
+#: src/recipeactionshandler.cpp:278
+msgid "Compressed Krecipes format"
 msgstr ""
 
-#: src/recipeactionshandler.cpp:294
+#: src/recipeactionshandler.cpp:278
+msgid "Web page"
+msgstr "Tudalen wê"
+
+#: src/recipeactionshandler.cpp:305
 msgid "File \"%1\" exists.  Are you sure you want to overwrite it?"
 msgstr ""
 
-#: src/recipeactionshandler.cpp:294
+#: src/recipeactionshandler.cpp:305
 msgid "Saving recipe"
 msgstr ""
 
-#: src/recipeactionshandler.cpp:299
+#: src/recipeactionshandler.cpp:310
 msgid "Preparing to save recipes..."
 msgstr ""
 
-#: src/recipeactionshandler.cpp:304
+#: src/recipeactionshandler.cpp:315
 msgid "Saving recipes..."
 msgstr ""
 
-#: src/krecipes.cpp:99
+#: src/krecipes.cpp:101
 msgid ""
 "Gathering recipe data from file.\n"
 "Please wait..."
 msgstr ""
 
-#: src/krecipes.cpp:145
+#: src/krecipes.cpp:147
 msgid "Reloa&d"
 msgstr "Ail-l&wytho"
 
-#: src/krecipes.cpp:147
+#: src/krecipes.cpp:149
 msgid "&Edit Recipe"
 msgstr ""
 
-#: src/krecipes.cpp:153
+#: src/krecipes.cpp:155
 msgid "&New Recipe"
 msgstr ""
 
-#: src/krecipes.cpp:166
-msgid "Import..."
+#: src/krecipes.cpp:168
+#, fuzzy
+msgid "Import from File..."
 msgstr "Mewnforio..."
 
-#: src/krecipes.cpp:170
+#: src/krecipes.cpp:172
+msgid "Import from Database..."
+msgstr ""
+
+#: src/krecipes.cpp:176
 msgid "Page Setup..."
 msgstr "Gosodiad Tudalen ..."
 
-#: src/krecipes.cpp:291
+#: src/krecipes.cpp:297
 msgid ""
 "Filter \"%1\" not recognized.\n"
 "Please select one of the provided filters."
 msgstr ""
 
-#: src/krecipes.cpp:293
+#: src/krecipes.cpp:299
 msgid "Unrecognized Filter"
 msgstr ""
 
-#: src/krecipes.cpp:309
+#: src/krecipes.cpp:315
 msgid ""
 "NOTE: We recommend that all recipes generating warnings be checked to ensure "
 "that they were properly imported, and no loss of recipe data has "
 "occurred.<br><br>"
 msgstr ""
 
-#: src/krecipes.cpp:312
-msgid "Import warnings"
+#: src/krecipes.cpp:318
+msgid "Import Warnings"
 msgstr ""
 
-#: src/krecipes.cpp:339
+#: src/krecipes.cpp:374
 msgid ""
 "A recipe contains unsaved changes.\n"
 "Do you want to save the changes before exiting?"
 msgstr ""
 
-#: src/krecipes.cpp:341
+#: src/krecipes.cpp:376
 msgid "Unsaved Changes"
 msgstr "Newidiadau Heb eu Cadw"
 
@@ -1411,7 +1432,7 @@ msgid "This file does not appear to be a *.mx2 file"
 msgstr ""
 
 #: src/importers/mmfimporter.cpp:81 src/importers/mx2importer.cpp:89
-#: src/importers/mxpimporter.cpp:57 src/importers/nycgenericimporter.cpp:49
+#: src/importers/mxpimporter.cpp:57 src/importers/nycgenericimporter.cpp:50
 #: src/importers/recipemlimporter.cpp:66 src/importers/rezkonvimporter.cpp:60
 msgid "Unable to open file."
 msgstr ""
@@ -1497,177 +1518,199 @@ msgstr ""
 msgid "This file does not appear to be a valid RecipeML archive."
 msgstr ""
 
-#: src/importers/nycgenericimporter.cpp:44
+#: src/importers/nycgenericimporter.cpp:45
 msgid "File does not appear to be a valid NYC export."
 msgstr ""
 
-#: src/importers/baseimporter.cpp:151
+#: src/importers/baseimporter.cpp:160
 msgid ""
-"Import of recipes from the file <b>%1</b> <b>failed</b>"
+"<!doc>Import of recipes from the file <b>\"%1\"</b> <b>failed</b>"
 " due to the following error(s):"
 msgstr ""
 
-#: src/importers/baseimporter.cpp:158
+#: src/importers/baseimporter.cpp:167
 msgid "The file <b>%1</b> generated the following warning(s):"
 msgstr ""
 
-#: src/importers/baseimporter.cpp:200
+#: src/importers/baseimporter.cpp:210
 msgid "Importing selected recipes"
 msgstr ""
 
-#: src/importers/baseimporter.cpp:203
+#: src/importers/baseimporter.cpp:213
 msgid "%v/%m Recipes"
 msgstr ""
 
-#: src/importers/baseimporter.cpp:230
+#: src/importers/baseimporter.cpp:240
 msgid "All recipes up unto this point have been successfully imported."
 msgstr ""
 
-#: src/importers/baseimporter.cpp:234
+#: src/importers/baseimporter.cpp:244
 #, c-format
 msgid "Importing recipe: %1"
 msgstr ""
 
-#: src/DBBackend/qsqlrecipedb.cpp:39
+#: src/DBBackend/qsqlrecipedb.cpp:48
 msgid "QSqlRecipeDB: Opening Database..."
 msgstr ""
 
-#: src/DBBackend/qsqlrecipedb.cpp:51
+#: src/DBBackend/qsqlrecipedb.cpp:61
 msgid ""
 "The Qt database plug-in (%1) is not installed.  This plug-in is required for "
 "using this database backend."
 msgstr ""
 
-#: src/DBBackend/qsqlrecipedb.cpp:61
+#: src/DBBackend/qsqlrecipedb.cpp:73
 msgid "Parameters set. Calling db->open()"
 msgstr ""
 
-#: src/DBBackend/qsqlrecipedb.cpp:64
+#: src/DBBackend/qsqlrecipedb.cpp:78
 msgid "Failing to open database. Trying to create it"
 msgstr ""
 
-#: src/DBBackend/qsqlrecipedb.cpp:70
-#, c-format
-msgid "Database message: %1"
-msgstr ""
-
-#: src/DBBackend/qsqlrecipedb.cpp:71
-msgid ""
-"Failing to open database. Exiting\n"
-msgstr ""
-
-#: src/DBBackend/qsqlrecipedb.cpp:74
+#: src/DBBackend/qsqlrecipedb.cpp:83 src/DBBackend/qsqlrecipedb.cpp:92
 msgid ""
 "Krecipes could not open the database using the driver '%2' (with username: "
 "\"%1\"). You may not have the necessary permissions, or the server may be "
 "down."
 msgstr ""
 
-#: src/DBBackend/SQLite/literecipedb.cpp:68 src/DBBackend/qsqlrecipedb.cpp:81
+#: src/DBBackend/qsqlrecipedb.cpp:88
+#, c-format
+msgid "Database message: %1"
+msgstr ""
+
+#: src/DBBackend/qsqlrecipedb.cpp:89
+msgid ""
+"Failing to open database. Exiting\n"
+msgstr ""
+
+#: src/DBBackend/SQLite/literecipedb.cpp:80 src/DBBackend/qsqlrecipedb.cpp:98
+msgid ""
+"This database was created with a newer version of Krecipes and cannot be "
+"opened."
+msgstr ""
+
+#: src/DBBackend/SQLite/literecipedb.cpp:87 src/DBBackend/qsqlrecipedb.cpp:104
 msgid ""
 "Failed to fix database structure. Exiting.\n"
 msgstr ""
 
-#: src/DBBackend/SQLite/literecipedb.cpp:59
+#: src/DBBackend/qsqlrecipedb.cpp:1473
 msgid ""
-"Could not open DB. You may not have permissions. Exiting.\n"
+"<!doc>The database was created with a previous version of Krecipes.  Would "
+"you like Krecipes to update this database to work with this version of "
+"Krecipes?"
+"<br>"
+"<br><b>Warning: After updating, this database will no longer be compatible "
+"with previous versions of Krecipes.</b>"
 msgstr ""
 
-#: src/DBBackend/SQLite/literecipedb.cpp:60
+#: src/DBBackend/SQLite/literecipedb.cpp:54
+#: src/DBBackend/SQLite/literecipedb.cpp:62
+#: src/DBBackend/SQLite/literecipedb.cpp:74
 msgid ""
 "Krecipes could not open the SQLite database. You may not have the necessary "
 "permissions.\n"
 msgstr ""
 
-#: src/DBBackend/SQLite/literecipedb.cpp:69
+#: src/DBBackend/SQLite/literecipedb.cpp:73
+msgid ""
+"Could not open DB. You may not have permissions. Exiting.\n"
+msgstr ""
+
+#: src/DBBackend/SQLite/literecipedb.cpp:88
 msgid ""
 "Krecipes failed to fix the SQLite database structure. You may not have the "
 "necessary permissions, or the database structure may be too corrupted.\n"
 msgstr ""
 
-#: src/krecipesview.cpp:108 src/krecipesview.cpp:294 src/krecipesview.cpp:326
+#: src/DBBackend/SQLite/literecipedb.cpp:1529
+msgid ""
+"<!doc>This database was created with a previous version of Krecipes.  Would "
+"you like Krecipes to update this database to work with this version of "
+"Krecipes?"
+"<br>"
+"<br><b>Warning: After updating, this database will no longer be compatible "
+"with previous versions of Krecipes.</b>"
+msgstr ""
+
+#: src/krecipesview.cpp:92 src/krecipesview.cpp:278 src/krecipesview.cpp:310
 msgid "Find/Edit Recipes"
 msgstr ""
 
-#: src/krecipesview.cpp:135
+#: src/krecipesview.cpp:119
 msgid "Data"
 msgstr "Data"
 
-#: src/krecipesview.cpp:282
+#: src/krecipesview.cpp:266
 msgid ""
 "\n"
 "Would you like to run the setup wizard again? Otherwise, the application "
 "will be closed."
 msgstr ""
 
-#: src/krecipesview.cpp:288
+#: src/krecipesview.cpp:272
 msgid "Exiting"
 msgstr ""
 
-#: src/krecipesview.cpp:299 src/krecipesview.cpp:355
+#: src/krecipesview.cpp:283 src/krecipesview.cpp:339
 msgid "Preparation Methods"
 msgstr ""
 
-#: src/krecipesview.cpp:302 src/krecipesview.cpp:334
+#: src/krecipesview.cpp:286 src/krecipesview.cpp:318
 msgid "Diet Helper"
 msgstr ""
 
-#: src/krecipesview.cpp:303 src/krecipesview.cpp:338
+#: src/krecipesview.cpp:287 src/krecipesview.cpp:322
 msgid "Ingredient Matcher"
 msgstr ""
 
-#: src/krecipesview.cpp:373
+#: src/krecipesview.cpp:357
 msgid "View Recipe"
 msgstr ""
 
-#: src/krecipesview.cpp:437
+#: src/krecipesview.cpp:421
 msgid ""
 "A recipe contains unsaved changes.\n"
 "Do you want to save changes made to this recipe before editing another "
 "recipe?"
 msgstr ""
 
-#: src/krecipesview.cpp:454
+#: src/krecipesview.cpp:438
 msgid "Are you sure you want to permanently remove the selected recipe?"
 msgstr ""
 
-#: src/krecipesview.cpp:455
+#: src/krecipesview.cpp:439
 msgid "Confirm remove"
 msgstr ""
 
-#: src/krecipesview.cpp:487
+#: src/krecipesview.cpp:471
 msgid ""
 "A recipe contains unsaved changes.\n"
 "Do you want to save changes made to this recipe before creating a new recipe?"
 msgstr ""
 
-#: src/krecipesview.cpp:577 src/krecipesview.cpp:670
-msgid ""
-"Code error. Unrecognized database type. Exiting\n"
-msgstr ""
-
-#: src/krecipesview.cpp:605
+#: src/krecipesview.cpp:566
 msgid "Nutrient Import"
 msgstr ""
 
-#: src/krecipesview.cpp:605
+#: src/krecipesview.cpp:566
 msgid "Importing USDA nutrient data"
 msgstr ""
 
-#: src/krecipesview.cpp:693
-msgid ""
-"Code error. No DB support has been included. Exiting\n"
+#: src/krecipesview.cpp:613
+msgid "Code error. No DB support has been included. Exiting"
 msgstr ""
 
-#: src/krecipesview.cpp:774
+#: src/krecipesview.cpp:694
 msgid "<b>Recipe view</b>"
 msgstr ""
 
-#: src/krecipesview.cpp:779
+#: src/krecipesview.cpp:699
 msgid "<b>Recipes list</b>"
 msgstr ""
 
-#: src/krecipesview.cpp:780
+#: src/krecipesview.cpp:700
 msgid ""
 "<b>Search</b> for your favourite recipes easily: just type part of its "
 "name."
@@ -1688,11 +1731,11 @@ msgid ""
 "excellent Krecipes format obviously.<br><br>"
 msgstr ""
 
-#: src/krecipesview.cpp:788
+#: src/krecipesview.cpp:708
 msgid "<b>Shopping list</b>"
 msgstr ""
 
-#: src/krecipesview.cpp:789
+#: src/krecipesview.cpp:709
 msgid ""
 "Need to do your shopping list? Just <b>add your recipes</b> for the week, "
 "and <b>press Ok</b>. Krecipes will generate a shopping list for "
@@ -1703,11 +1746,11 @@ msgid ""
 "diet, and then the shopping list.<br><br>"
 msgstr ""
 
-#: src/krecipesview.cpp:795
+#: src/krecipesview.cpp:715
 msgid "<b>Diet Helper</b>"
 msgstr ""
 
-#: src/krecipesview.cpp:796
+#: src/krecipesview.cpp:716
 msgid ""
 "This dialog will help you in creating a diet for several "
 "weeks/days."
@@ -1719,11 +1762,11 @@ msgid ""
 "want to have pizza for breakfast too....<br><br>"
 msgstr ""
 
-#: src/krecipesview.cpp:803
+#: src/krecipesview.cpp:723
 msgid "<b>Ingredient Matcher</b>"
 msgstr ""
 
-#: src/krecipesview.cpp:804
+#: src/krecipesview.cpp:724
 msgid ""
 "Do you have a bunch a ingredients lying around, but you do not know what to "
 "make?  Use this dialog to find out what you can."
@@ -1733,11 +1776,11 @@ msgid ""
 "ingredients, it will automatically let you know what you are missing."
 msgstr ""
 
-#: src/krecipesview.cpp:810
+#: src/krecipesview.cpp:730
 msgid "<b>Edit recipe</b>"
 msgstr ""
 
-#: src/krecipesview.cpp:811
+#: src/krecipesview.cpp:731
 msgid ""
 "Write your succulent recipes here. Set the title, authors and ingredients of "
 "your recipe, add a nice photo, and start typing. You can also use the "
@@ -1752,11 +1795,11 @@ msgid ""
 "save it in Krecipes format, and send it to us."
 msgstr ""
 
-#: src/krecipesview.cpp:819
+#: src/krecipesview.cpp:739
 msgid "<b>Ingredients list</b>"
 msgstr ""
 
-#: src/krecipesview.cpp:820
+#: src/krecipesview.cpp:740
 msgid ""
 "Edit your ingredients: add/remove, double click to change their name, define "
 "the units used to measure them, and set their properties (<i>Energy, Fat, "
@@ -1766,11 +1809,11 @@ msgid ""
 "<i>Properties List</i> menu"
 msgstr ""
 
-#: src/krecipesview.cpp:826
+#: src/krecipesview.cpp:746
 msgid "<b>Properties list</b>"
 msgstr ""
 
-#: src/krecipesview.cpp:827
+#: src/krecipesview.cpp:747
 msgid ""
 "What properties do you want to know from your recipes? <i>Fat, Energy, "
 "Vitamins, Cost,...</i>?"
@@ -1778,11 +1821,11 @@ msgid ""
 "<br>Add those here and later define the characteristics in the ingredients."
 msgstr ""
 
-#: src/krecipesview.cpp:833
+#: src/krecipesview.cpp:753
 msgid "<b>Units list</b>"
 msgstr ""
 
-#: src/krecipesview.cpp:834
+#: src/krecipesview.cpp:754
 msgid ""
 "Double click to edit, or Add and Remove <b>new units</b> that you want to "
 "use to measure your ingredients. From a <i>gram</i>, to a <i>jar</i>, you "
@@ -1794,11 +1837,11 @@ msgid ""
 "properties of your recipes."
 msgstr ""
 
-#: src/krecipesview.cpp:839
+#: src/krecipesview.cpp:759
 msgid "<b>Preparation Methods list</b>"
 msgstr ""
 
-#: src/krecipesview.cpp:840
+#: src/krecipesview.cpp:760
 msgid ""
 "With the preparation method, you can give extra information about an "
 "ingredient. <i>sliced, cooked, optional,...</i> "
@@ -1808,23 +1851,23 @@ msgid ""
 "list or calculate nutrient information.<br><br>Just add and edit those here."
 msgstr ""
 
-#: src/krecipesview.cpp:844
+#: src/krecipesview.cpp:764
 #, fuzzy
 msgid "<b>Categories list</b>"
 msgstr "Categoriau"
 
-#: src/krecipesview.cpp:845
+#: src/krecipesview.cpp:765
 msgid ""
 "How do you want to classify your recipes? <i>"
 "Desserts, Main Course, Low Fat, Chocolate, Delicious, Vegetarian, ....</i> "
 "Just add and edit those here."
 msgstr ""
 
-#: src/krecipesview.cpp:851
+#: src/krecipesview.cpp:771
 msgid "<b>Authors list</b>"
 msgstr ""
 
-#: src/krecipesview.cpp:852
+#: src/krecipesview.cpp:772
 msgid ""
 "Keep track of the authors that created the recipes."
 "<br>"
@@ -1833,39 +1876,24 @@ msgid ""
 "them."
 msgstr ""
 
-#: src/krecipesview.cpp:933 src/krecipesview.cpp:999
+#: src/krecipesview.cpp:828 src/krecipesview.cpp:853
 msgid "Code error. No DB support was built in. Exiting"
 msgstr ""
 
-#: src/krecipesview.cpp:942
+#: src/krecipesview.cpp:837
 msgid "Unable to open database"
 msgstr ""
 
-#: src/krecipesview.cpp:961
-msgid ""
-"Configured type... MySQL\n"
-msgstr ""
-
-#: src/krecipesview.cpp:973
-msgid ""
-"Configured type... SQLite\n"
-msgstr ""
-
-#: src/krecipesview.cpp:988
-msgid ""
-"Configured type... PostgreSQL\n"
-msgstr ""
-
-#: src/krecipesview.cpp:1005
+#: src/krecipesview.cpp:857
 msgid ""
 "DB started correctly\n"
 msgstr ""
 
-#: src/krecipesview.cpp:1014
+#: src/krecipesview.cpp:866
 msgid "The configured database type (%1) is unsupported."
 msgstr ""
 
-#: src/krecipesview.cpp:1014
+#: src/krecipesview.cpp:866
 msgid ""
 "Unsupported database type. Database must be either MySQL, SQLite, or "
 "PostgreSQL."

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdewebdev/kommander.po\n"
-"POT-Creation-Date: 2004-10-12 01:19+0200\n"
+"POT-Creation-Date: 2004-11-19 01:23+0100\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -35,13 +35,13 @@ msgstr ""
 msgid "Cannot add plugin"
 msgstr ""
 
-#: _translatorinfo.cpp:1
+#: _translatorinfo.cpp:1 editor/main.cpp:50
 msgid ""
 "_: NAME OF TRANSLATORS\n"
 "Your names"
 msgstr "KD wrth KGyfieithu"
 
-#: _translatorinfo.cpp:3
+#: _translatorinfo.cpp:3 editor/main.cpp:51
 msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
@@ -51,7 +51,7 @@ msgstr "kyfieithu@dotmon.com"
 #: editor/iconvieweditorimpl.cpp:57 editor/listboxeditorimpl.cpp:61
 #: editor/widgetfactory.cpp:901 editor/widgetfactory.cpp:928
 #: editor/widgetfactory.cpp:937 editor/widgetfactory.cpp:1116
-#: editor/widgetfactory.cpp:1195 rc.cpp:1947
+#: editor/widgetfactory.cpp:1195 rc.cpp:1785
 #, no-c-format
 msgid "New Item"
 msgstr "Eitem Newydd"
@@ -70,7 +70,7 @@ msgstr ""
 msgid "'%1' saved."
 msgstr ""
 
-#: editor/formfile.cpp:133 editor/mainwindowactions.cpp:733
+#: editor/formfile.cpp:133 editor/mainwindowactions.cpp:621
 msgid "*.kmdr|Kommander Files"
 msgstr ""
 
@@ -107,8 +107,8 @@ msgid "Click this button to reset the property to its default value"
 msgstr ""
 
 #. i18n: file ./editor/iconvieweditor.ui line 254
-#: editor/propertyeditor.cpp:595 rc.cpp:400 rc.cpp:469 rc.cpp:602 rc.cpp:699
-#: rc.cpp:776 rc.cpp:981 rc.cpp:996 rc.cpp:1466 rc.cpp:1636 rc.cpp:1696
+#: editor/propertyeditor.cpp:595 rc.cpp:366 rc.cpp:435 rc.cpp:568 rc.cpp:665
+#: rc.cpp:742 rc.cpp:947 rc.cpp:962 rc.cpp:1415 rc.cpp:1585 rc.cpp:1645
 #, no-c-format
 msgid "..."
 msgstr "..."
@@ -275,7 +275,7 @@ msgid "Forbidden"
 msgstr "Gwaharddir"
 
 #. i18n: file ./editor/customwidgeteditor.ui line 1029
-#: editor/propertyeditor.cpp:2402 rc.cpp:1267
+#: editor/propertyeditor.cpp:2402 rc.cpp:1233
 #, no-c-format
 msgid "Property"
 msgstr "Priodwedd"
@@ -314,11 +314,11 @@ msgstr ""
 msgid "Delete Signal Handler"
 msgstr ""
 
-#: editor/connectioneditorimpl.cpp:304 editor/propertyeditor.cpp:3430
+#: editor/connectioneditorimpl.cpp:235 editor/propertyeditor.cpp:3430
 msgid "Remove Connection"
 msgstr "Gwaredu Cysylltiad"
 
-#: editor/connectioneditorimpl.cpp:320 editor/propertyeditor.cpp:3480
+#: editor/connectioneditorimpl.cpp:245 editor/propertyeditor.cpp:3480
 msgid "Add Connection"
 msgstr ""
 
@@ -368,7 +368,7 @@ msgstr ""
 
 #. i18n: file ./editor/listeditor.ui line 31
 #: editor/widgetfactory.cpp:936 editor/widgetfactory.cpp:1115
-#: editor/widgetfactory.cpp:1194 rc.cpp:1291
+#: editor/widgetfactory.cpp:1194 rc.cpp:1257
 #, no-c-format
 msgid "Column 1"
 msgstr ""
@@ -381,31 +381,27 @@ msgstr "Tab 1"
 msgid "Tab 2"
 msgstr "Tab 2"
 
-#: editor/mainwindow.cpp:926 editor/mainwindowactions.cpp:87
+#: editor/mainwindow.cpp:809 editor/mainwindowactions.cpp:90
 msgid "&Undo: Not Available"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:88
+#: editor/mainwindowactions.cpp:91
 msgid "Undoes the last action"
 msgstr ""
 
-#: editor/mainwindow.cpp:930 editor/mainwindowactions.cpp:93
+#: editor/mainwindow.cpp:813 editor/mainwindowactions.cpp:96
 msgid "&Redo: Not Available"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:94
+#: editor/mainwindowactions.cpp:97
 msgid "Redoes the last undone operation"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:99
-msgid "Cu&t"
-msgstr "To&rri"
-
-#: editor/mainwindowactions.cpp:100
+#: editor/mainwindowactions.cpp:102
 msgid "Cuts the selected widgets and puts them on the clipboard"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:106
+#: editor/mainwindowactions.cpp:107
 msgid "Copies the selected widgets to the clipboard"
 msgstr ""
 
@@ -418,633 +414,404 @@ msgid "Deletes the selected widgets"
 msgstr ""
 
 #: editor/mainwindowactions.cpp:123
-msgid "Select &All"
-msgstr "Dewis Pope&th"
-
-#: editor/mainwindowactions.cpp:124
 msgid "Selects all widgets"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:129
+#: editor/mainwindowactions.cpp:126
 msgid "Bring to Front"
 msgstr "Anfon i'r Blaen"
 
-#: editor/mainwindowactions.cpp:129
-msgid "Bring to &Front"
-msgstr "Anfon i'r &Blaen"
-
-#: editor/mainwindowactions.cpp:130 editor/mainwindowactions.cpp:131
+#: editor/mainwindowactions.cpp:128
 msgid "Raises the selected widgets"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:135
+#: editor/mainwindowactions.cpp:131
 msgid "Send to Back"
 msgstr "Anfon i'r Cefn"
 
-#: editor/mainwindowactions.cpp:135
-msgid "Send to &Back"
-msgstr "Anfon i'r &Cefn"
-
-#: editor/mainwindowactions.cpp:136 editor/mainwindowactions.cpp:137
+#: editor/mainwindowactions.cpp:133 editor/mainwindowactions.cpp:134
 msgid "Lowers the selected widgets"
 msgstr ""
 
-#: editor/formwindow.cpp:1858 editor/formwindow.cpp:1870
-#: editor/mainwindowactions.cpp:141
+#: editor/formwindow.cpp:1842 editor/formwindow.cpp:1854
+#: editor/mainwindowactions.cpp:137
 msgid "Check Accelerators"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:142
-msgid "Chec&k Accelerators"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:143
+#: editor/mainwindowactions.cpp:139
 msgid "Checks if the accelerators used in the form are unique"
 msgstr ""
 
-#: editor/hierarchyview.cpp:637 editor/mainwindowactions.cpp:148
-msgid "Slots"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:149
-msgid "S&lots..."
-msgstr ""
-
-#: editor/mainwindowactions.cpp:150
-msgid "Opens a dialog for editing slots"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:155
+#: editor/mainwindowactions.cpp:143
 msgid "Connections"
 msgstr "Cysylltiadau"
 
-#: editor/mainwindowactions.cpp:156
-msgid "Co&nnections..."
-msgstr ""
-
-#: editor/mainwindowactions.cpp:157
+#: editor/mainwindowactions.cpp:146
 msgid "Opens a dialog for editing connections"
 msgstr ""
 
 #. i18n: file ./editor/formsettings.ui line 35
-#: editor/mainwindowactions.cpp:162 rc.cpp:1323
+#: editor/mainwindowactions.cpp:150 rc.cpp:1272
 #, no-c-format
 msgid "Form Settings"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:163
-msgid "&Form Settings..."
-msgstr ""
-
-#: editor/mainwindowactions.cpp:164
+#: editor/mainwindowactions.cpp:152
 msgid "Opens a dialog to change the form's settings"
 msgstr ""
 
-#. i18n: file ./editor/preferences.ui line 35
-#: editor/mainwindowactions.cpp:169 rc.cpp:487
-#, no-c-format
-msgid "Preferences"
-msgstr "Hoffterau"
-
-#: editor/mainwindowactions.cpp:170
-msgid "Preferences..."
-msgstr "Hoffterau..."
-
-#: editor/mainwindowactions.cpp:171
-msgid "Opens a dialog to change preferences"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:177
+#: editor/mainwindowactions.cpp:158
 #, c-format
 msgid "<b>The Edit toolbar</b>%1"
 msgstr ""
 
 #: editor/formwindow.cpp:1443 editor/formwindow.cpp:1457
-#: editor/formwindow.cpp:1465 editor/mainwindowactions.cpp:214
+#: editor/formwindow.cpp:1465 editor/mainwindowactions.cpp:189
 msgid "Adjust Size"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:215
-msgid "Adjust &Size"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:216
+#: editor/mainwindowactions.cpp:191
 msgid "Adjusts the size of the selected widget"
 msgstr ""
 
-#: editor/formwindow.cpp:1919 editor/mainwindowactions.cpp:221
+#: editor/formwindow.cpp:1903 editor/mainwindowactions.cpp:195
 msgid "Lay Out Horizontally"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:222
-msgid "Lay Out &Horizontally"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:223
+#: editor/mainwindowactions.cpp:197
 msgid "Lays out the selected widgets horizontally"
 msgstr ""
 
-#: editor/formwindow.cpp:1929 editor/mainwindowactions.cpp:228
+#: editor/formwindow.cpp:1913 editor/mainwindowactions.cpp:201
 msgid "Lay Out Vertically"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:229
-msgid "Lay Out &Vertically"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:230
+#: editor/mainwindowactions.cpp:203
 msgid "Lays out the selected widgets vertically"
 msgstr ""
 
-#: editor/formwindow.cpp:1964 editor/mainwindowactions.cpp:235
+#: editor/formwindow.cpp:1948 editor/mainwindowactions.cpp:207
 msgid "Lay Out in a Grid"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:236
-msgid "Lay Out in a &Grid"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:237
+#: editor/mainwindowactions.cpp:209
 msgid "Lays out the selected widgets in a grid"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:242
-msgid "Lay Out Horizontally (in Splitter)"
+#: editor/mainwindowactions.cpp:213
+msgid "Lay Out Horizontally in Splitter"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:243
-msgid "Lay Out Horizontally (in S&plitter)"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:244
+#: editor/mainwindowactions.cpp:216
 msgid "Lays out the selected widgets horizontally in a splitter"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:249
-msgid "Lay Out Vertically (in Splitter)"
+#: editor/mainwindowactions.cpp:220
+msgid "Lay Out Vertically in Splitter"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:250
-msgid "Lay Out Vertically (in Sp&litter)"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:251
+#: editor/mainwindowactions.cpp:223
 msgid "Lays out the selected widgets vertically in a splitter"
 msgstr ""
 
-#: editor/formwindow.cpp:2064 editor/formwindow.cpp:2083
-#: editor/mainwindowactions.cpp:256
+#: editor/formwindow.cpp:2048 editor/formwindow.cpp:2067
+#: editor/mainwindowactions.cpp:227
 msgid "Break Layout"
 msgstr "Torri'r Haenlun"
 
-#: editor/formwindow.cpp:875 editor/formwindow.cpp:965
-#: editor/mainwindowactions.cpp:257
-msgid "&Break Layout"
-msgstr "&Torri'r Haenlun"
-
-#: editor/mainwindowactions.cpp:258
+#: editor/mainwindowactions.cpp:229
 msgid "Breaks the selected layout"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:266
+#: editor/mainwindowactions.cpp:236
 msgid "Add "
 msgstr "Ychwanegu "
 
-#: editor/mainwindowactions.cpp:269 editor/mainwindowactions.cpp:402
+#: editor/mainwindowactions.cpp:237 editor/mainwindowactions.cpp:370
 #, c-format
 msgid "Insert a %1"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:270
+#: editor/mainwindowactions.cpp:238
 msgid ""
 "<b>A %1</b>"
 "<p>%2</p>"
 "<p>Click to insert a single %3,or double click to keep the tool selected."
 msgstr ""
 
-#: editor/mainwindowactions.cpp:277
+#: editor/mainwindowactions.cpp:243
 #, c-format
 msgid "<b>The Layout toolbar</b>%1"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:290
+#: editor/mainwindowactions.cpp:256
 msgid "&Layout"
 msgstr "&Cynllun"
 
-#: editor/mainwindowactions.cpp:311
+#: editor/mainwindowactions.cpp:272
 msgid "Pointer"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:311
-msgid "&Pointer"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:313
+#: editor/mainwindowactions.cpp:275
 msgid "Selects the pointer tool"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:316
+#: editor/mainwindowactions.cpp:279
 msgid "Connect Signal/Slots"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:317
-msgid "&Connect Signal/Slots"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:319
+#: editor/mainwindowactions.cpp:282
 msgid "Selects the connection tool"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:322
+#: editor/mainwindowactions.cpp:286
 msgid "Tab Order"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:323
-msgid "Tab &Order"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:325
+#: editor/mainwindowactions.cpp:289
 msgid "Selects the tab order tool"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:330
+#: editor/mainwindowactions.cpp:295
 #, c-format
 msgid "<b>The Tools toolbar</b>%1"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:332
+#: editor/mainwindowactions.cpp:297
 msgid "Tools"
 msgstr "Offer"
 
-#: editor/mainwindowactions.cpp:347
+#: editor/mainwindowactions.cpp:312
 msgid "Custom Widgets"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:348
-msgid "Edit &Custom Widgets..."
-msgstr ""
-
-#: editor/mainwindowactions.cpp:349
+#: editor/mainwindowactions.cpp:314
 msgid "Opens a dialog to add and change custom widgets"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:363
+#: editor/mainwindowactions.cpp:327
 msgid "<b>The %1</b>%2"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:364
+#: editor/mainwindowactions.cpp:328
 #, c-format
 msgid ""
 " Click on a button to insert a single widget, or double click to insert "
 "multiple %1."
 msgstr ""
 
-#: editor/mainwindowactions.cpp:367
+#: editor/mainwindowactions.cpp:332
 msgid "<b>The %1 Widgets</b>%2"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:368
+#: editor/mainwindowactions.cpp:333
 msgid ""
 " Click on a button to insert a single %1 widget, or double click to insert "
 "multiple widgets."
 msgstr ""
 
-#: editor/mainwindowactions.cpp:404
+#: editor/mainwindowactions.cpp:372
 msgid "<b>A %1</b>"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:407
+#: editor/mainwindowactions.cpp:375
 msgid "<p>Double click on this tool to keep it selected.</p>"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:418
+#: editor/mainwindowactions.cpp:387
 msgid ""
 "<b>The Custom Widgets toolbar</b>%1"
 "<p>Click <b>Edit Custom Widgets...</b> in the <b>Tools|Custom</b> menu to "
 "add and change custom widgets</p>"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:421
+#: editor/mainwindowactions.cpp:390
 msgid ""
 " Click on the buttons to insert a single widget, or double click to insert "
 "multiple widgets."
 msgstr ""
 
-#: editor/mainwindowactions.cpp:423 editor/mainwindowactions.cpp:426
+#: editor/mainwindowactions.cpp:392 editor/mainwindowactions.cpp:395
 msgid "Custom"
 msgstr "Addasiedig"
 
-#: editor/mainwindowactions.cpp:441
+#: editor/mainwindowactions.cpp:411
 #, c-format
 msgid "<b>The File toolbar</b>%1"
 msgstr ""
 
-#: editor/hierarchyview.cpp:737 editor/hierarchyview.cpp:788
-#: editor/mainwindowactions.cpp:449
-msgid "New"
-msgstr "Newydd"
-
-#: editor/mainwindowactions.cpp:450
-msgid "&New..."
-msgstr "&Newydd..."
-
-#: editor/mainwindowactions.cpp:453
+#: editor/mainwindowactions.cpp:417
 msgid "Creates a new dialog"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:464
-msgid "Opens an existing dialog "
+#: editor/mainwindowactions.cpp:423
+msgid "Opens an existing dialog"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:475
+#: editor/mainwindowactions.cpp:429
+msgid "Opens recently open file"
+msgstr ""
+
+#: editor/mainwindowactions.cpp:434
 msgid "Closes the current dialog"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:488
+#: editor/mainwindowactions.cpp:442
 msgid "Saves the current dialog"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:497
-msgid "Save &As..."
-msgstr "Cadw &Fel..."
-
-#: editor/mainwindowactions.cpp:498
+#: editor/mainwindowactions.cpp:449
 msgid "Saves the current dialog with a new filename"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:505
+#: editor/mainwindowactions.cpp:454
 msgid "Save All"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:506
-msgid "Sa&ve All"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:507
+#: editor/mainwindowactions.cpp:456
 msgid "Saves all open dialogs"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:516
-msgid "Recently Opened Files "
-msgstr ""
-
-#: editor/mainwindowactions.cpp:526
-msgid "Exit"
-msgstr "Terfynu"
-
-#: editor/mainwindowactions.cpp:528
+#: editor/mainwindowactions.cpp:464
 msgid "Quits the application and prompts to save any changed dialogs"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:539
+#: editor/mainwindowactions.cpp:474
 msgid "&Run"
 msgstr "R&hedeg"
 
-#: editor/mainwindowactions.cpp:541
+#: editor/mainwindowactions.cpp:476
 msgid "Run Dialog"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:542
-msgid "Run &Dialog"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:544
+#: editor/mainwindowactions.cpp:478
 msgid "Executes dialog"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:557
+#: editor/mainwindowactions.cpp:492
 msgid "Tile"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:557
-msgid "&Tile"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:558
+#: editor/mainwindowactions.cpp:494
 msgid "Tiles the windows so that they are all visible"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:561
+#: editor/mainwindowactions.cpp:497 editor/mainwindowactions.cpp:502
 msgid "Cascade"
 msgstr "Rhaeadr"
 
-#: editor/mainwindowactions.cpp:561
-msgid "&Cascade"
-msgstr "&Rhaeadr"
-
-#: editor/mainwindowactions.cpp:562
+#: editor/mainwindowactions.cpp:499
 msgid "Cascades the windows so that all their title bars are visible"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:566
-msgid "Cl&ose"
-msgstr "Ca&u"
-
-#: editor/mainwindowactions.cpp:567
+#: editor/mainwindowactions.cpp:504
 msgid "Closes the active window"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:571
+#: editor/mainwindowactions.cpp:507
 msgid "Close All"
 msgstr "Cau Popeth"
 
-#: editor/mainwindowactions.cpp:571
-msgid "Close Al&l"
-msgstr "Cau Pope&th"
-
-#: editor/mainwindowactions.cpp:572
+#: editor/mainwindowactions.cpp:509
 msgid "Closes all form windows"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:576
+#: editor/mainwindowactions.cpp:512
 msgid "Next"
 msgstr "Nesaf"
 
-#: editor/mainwindowactions.cpp:576
-msgid "Ne&xt"
-msgstr "Ne&saf"
-
-#: editor/mainwindowactions.cpp:577
+#: editor/mainwindowactions.cpp:514
 msgid "Activates the next window"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:581
+#: editor/mainwindowactions.cpp:517
 msgid "Previous"
 msgstr "Cynt"
 
-#: editor/mainwindowactions.cpp:581
-msgid "Pre&vious"
-msgstr "Cyn&t"
-
-#: editor/mainwindowactions.cpp:582
+#: editor/mainwindowactions.cpp:519
 msgid "Activates the previous window"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:589
+#: editor/mainwindowactions.cpp:526
 msgid "&Window"
 msgstr "&Ffenestr"
 
-#: editor/mainwindowactions.cpp:605
+#: editor/mainwindowactions.cpp:541
 msgid "Vie&ws"
 msgstr "Gol&ygon"
 
-#: editor/mainwindowactions.cpp:606
+#: editor/mainwindowactions.cpp:542
 msgid "Tool&bars"
 msgstr "Barr&au Offer:"
 
-#: editor/mainwindowactions.cpp:633
-msgid "Opens the online help"
+#: editor/mainwindowactions.cpp:573
+msgid "Opens a dialog to change preferences"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:637
-msgid "Kommander Handbook"
+#: editor/mainwindowactions.cpp:578
+msgid "Opens a dialog to change shortcuts"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:637
-msgid "Kommander &Handbook"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:638
-msgid "Opens the Kommander handbook"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:643
-msgid "Report Bug..."
-msgstr "Anfon adroddiad nam..."
-
-#: editor/mainwindowactions.cpp:643
-msgid "&Report Bug..."
-msgstr "&Anfon adroddiad nam..."
-
-#: editor/mainwindowactions.cpp:644
-msgid "Report bug or wish for Kommander"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:648
-msgid "About Kommander"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:648
-msgid "&About Kommander"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:649
-msgid "Displays information about Kommander"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:653
-msgid "About KDE"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:653
-msgid "About &KDE"
-msgstr "Ynglyn a &Kde"
-
-#: editor/mainwindowactions.cpp:654
-msgid "Displays information about KDE"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:658
-msgid "About Qt"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:658
-msgid "About &Qt"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:659
-msgid "Displays information about the Qt Toolkit"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:664
-msgid "Register Qt"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:664
-msgid "&Register Qt..."
-msgstr ""
-
-#: editor/mainwindowactions.cpp:665
-msgid "Opens a web browser at the evaluation form on www.trolltech.com"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:666
-msgid "Register with Trolltech"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:670 editor/mainwindowactions.cpp:671
-msgid "What's This?"
-msgstr "Beth Yw Hyn?"
-
-#: editor/mainwindowactions.cpp:672
-msgid "\"What's This?\" context sensitive help"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:678
-#, c-format
-msgid "<b>The Help toolbar</b>%1"
-msgstr ""
-
-#: editor/mainwindowactions.cpp:702
+#: editor/mainwindowactions.cpp:593
 msgid "Create a new dialog..."
 msgstr ""
 
-#: editor/mainwindowactions.cpp:727
+#: editor/mainwindowactions.cpp:616
 msgid "Open a file..."
 msgstr ""
 
-#: editor/mainwindowactions.cpp:742
+#: editor/mainwindowactions.cpp:628
 msgid "Open Files"
 msgstr "Agor Ffeiliau"
 
-#: editor/mainwindowactions.cpp:776
+#: editor/mainwindowactions.cpp:664
 msgid "Reading file '%1'..."
 msgstr ""
 
-#: editor/mainwindowactions.cpp:788
+#: editor/mainwindowactions.cpp:678
 msgid "Loaded file '%1'"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:790
+#: editor/mainwindowactions.cpp:681
 msgid "Failed to load file '%1'"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:791
+#: editor/mainwindowactions.cpp:682
 msgid "Load File"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:791
+#: editor/mainwindowactions.cpp:683
 msgid "Could not load file '%1'"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:826
+#: editor/mainwindowactions.cpp:719
 msgid "Enter a filename..."
 msgstr "Mewnosod enw ffeil ..."
 
-#: editor/mainwindowactions.cpp:849
+#: editor/mainwindowactions.cpp:742
 msgid "Qt Designer is crashing. Attempting to save files..."
 msgstr ""
 
-#: editor/mainwindowactions.cpp:887 editor/mainwindowactions.cpp:947
+#: editor/mainwindowactions.cpp:786 editor/mainwindowactions.cpp:849
 msgid "NewTemplate"
 msgstr ""
 
 #. i18n: file ./editor/createtemplate.ui line 38
-#: editor/mainwindowactions.cpp:899 editor/mainwindowactions.cpp:925
-#: rc.cpp:430
+#: editor/mainwindowactions.cpp:798 editor/mainwindowactions.cpp:827
+#: rc.cpp:396
 #, no-c-format
 msgid "Create Template"
 msgstr "Creu Patrymlun"
 
-#: editor/mainwindowactions.cpp:899 editor/mainwindowactions.cpp:925
+#: editor/mainwindowactions.cpp:798 editor/mainwindowactions.cpp:827
 msgid "Could not create the template"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:996
+#: editor/mainwindowactions.cpp:901
 msgid "Paste Error"
 msgstr ""
 
-#: editor/mainwindowactions.cpp:997
+#: editor/mainwindowactions.cpp:902
 msgid ""
 "Cannot paste widgets. Designer could not find a container\n"
 "to paste into which does not contain a layout. Break the layout\n"
@@ -1052,31 +819,20 @@ msgid ""
 "and then paste again."
 msgstr ""
 
-#: editor/mainwindowactions.cpp:1157
-msgid "Edit the current form's slots..."
+#: editor/formwindow.cpp:2129 editor/mainwindowactions.cpp:1068
+msgid "Edit connections..."
 msgstr ""
 
-#: editor/mainwindowactions.cpp:1168
-msgid "Edit the current form's connections..."
-msgstr ""
-
-#: editor/mainwindowactions.cpp:1179
+#: editor/mainwindowactions.cpp:1079
 msgid "Edit the current form's settings..."
 msgstr ""
 
-#: editor/mainwindowactions.cpp:1187
+#: editor/mainwindowactions.cpp:1087
 msgid "Edit preferences..."
 msgstr ""
 
-#: editor/mainwindowactions.cpp:1250
+#: editor/mainwindowactions.cpp:1158
 msgid "Edit custom widgets..."
-msgstr ""
-
-#. i18n: file ./editor/about.ui line 16
-#: editor/designerapp.cpp:97 editor/mainwindow.cpp:503
-#: editor/mainwindow.cpp:508 rc.cpp:1306
-#, no-c-format
-msgid "Kommander Editor"
 msgstr ""
 
 #: editor/command.cpp:499 editor/command.cpp:511
@@ -1129,13 +885,27 @@ msgid "Set Text of '%1'"
 msgstr ""
 
 #. i18n: file ./editor/paletteeditoradvanced.ui line 198
-#: editor/mainwindow.cpp:1112 editor/mainwindow.cpp:1830
+#: editor/mainwindow.cpp:995 editor/mainwindow.cpp:1460
 #: editor/multilineeditorimpl.cpp:68 rc.cpp:145
 #, no-c-format
 msgid "Text"
 msgstr "Testun"
 
-#: editor/main.cpp:155
+#: editor/main.cpp:34
+msgid ""
+"Kommander is a graphical editor of scripted dialogs. Based on Qt Designer, "
+"(C) 2000 Trolltech AS."
+msgstr ""
+
+#: editor/main.cpp:38 executor/main.cpp:54
+msgid "Dialog to open"
+msgstr ""
+
+#: editor/main.cpp:44
+msgid "Kommander"
+msgstr ""
+
+#: editor/main.cpp:61
 msgid "Kommander Dialog Editor"
 msgstr ""
 
@@ -1143,15 +913,15 @@ msgstr ""
 msgid "Edit Wizard Pages"
 msgstr ""
 
-#: editor/hierarchyview.cpp:526 editor/hierarchyview.cpp:532
-#: editor/mainwindow.cpp:1177 editor/mainwindow.cpp:1213
+#: editor/hierarchyview.cpp:507 editor/hierarchyview.cpp:513
+#: editor/mainwindow.cpp:1060 editor/mainwindow.cpp:1096
 #: editor/wizardeditorimpl.cpp:112
 #, c-format
 msgid "Add Page to %1"
 msgstr ""
 
-#: editor/hierarchyview.cpp:548 editor/hierarchyview.cpp:558
-#: editor/mainwindow.cpp:1184 editor/mainwindow.cpp:1220
+#: editor/hierarchyview.cpp:529 editor/hierarchyview.cpp:539
+#: editor/mainwindow.cpp:1067 editor/mainwindow.cpp:1103
 #: editor/wizardeditorimpl.cpp:130
 msgid "Delete Page %1 of %2"
 msgstr ""
@@ -1160,17 +930,17 @@ msgstr ""
 msgid "Swap Pages %1 and %2 of %3"
 msgstr ""
 
-#: editor/mainwindow.cpp:1137 editor/mainwindow.cpp:1234
+#: editor/mainwindow.cpp:1020 editor/mainwindow.cpp:1117
 #: editor/wizardeditorimpl.cpp:200
 msgid "Page Title"
 msgstr ""
 
-#: editor/mainwindow.cpp:1137 editor/mainwindow.cpp:1234
+#: editor/mainwindow.cpp:1020 editor/mainwindow.cpp:1117
 #: editor/wizardeditorimpl.cpp:200
 msgid "New page title:"
 msgstr ""
 
-#: editor/mainwindow.cpp:1236 editor/wizardeditorimpl.cpp:202
+#: editor/mainwindow.cpp:1119 editor/wizardeditorimpl.cpp:202
 msgid "Rename page %1 of %2"
 msgstr ""
 
@@ -1426,6 +1196,10 @@ msgstr ""
 msgid "A hidden script container"
 msgstr ""
 
+#: editor/widgetdatabase.cpp:641
+msgid "A timer for running scripts periodically"
+msgstr ""
+
 #: editor/pixmapchooser.cpp:947
 msgid "All Pixmaps"
 msgstr ""
@@ -1440,13 +1214,9 @@ msgid "All Files (*)"
 msgstr ""
 
 #. i18n: file ./editor/pixmapfunction.ui line 38
-#: editor/pixmapchooser.cpp:964 rc.cpp:1549
+#: editor/pixmapchooser.cpp:964 rc.cpp:1498
 #, no-c-format
 msgid "Choose Pixmap"
-msgstr ""
-
-#: editor/connectionviewerimpl.cpp:139
-msgid "Remove Connection between '%1' and '%2'"
 msgstr ""
 
 #: editor/actiondnd.cpp:294 editor/actiondnd.cpp:353
@@ -1463,7 +1233,7 @@ msgstr ""
 
 #. i18n: file ./editor/listboxeditor.ui line 147
 #: editor/actiondnd.cpp:350 editor/actiondnd.cpp:735 editor/actiondnd.cpp:1022
-#: rc.cpp:1444 rc.cpp:1496
+#: rc.cpp:1393 rc.cpp:1445
 #, no-c-format
 msgid "Delete Item"
 msgstr "Dileu Eitem"
@@ -1540,115 +1310,41 @@ msgid ""
 "An Action may only occur once in a given menu."
 msgstr ""
 
-#: editor/connectioneditorimpl.cpp:117
-msgid "Signals (%1):"
-msgstr ""
-
-#: editor/connectioneditorimpl.cpp:299
+#: editor/connectioneditorimpl.cpp:228
 msgid "Connect/Disconnect the signals and slots of '%1' and '%2'"
 msgstr ""
 
-#: editor/connectioneditorimpl.cpp:307
+#: editor/connectioneditorimpl.cpp:236
 msgid "Remove Connections"
 msgstr ""
 
-#: editor/connectioneditorimpl.cpp:323
+#: editor/connectioneditorimpl.cpp:247
 msgid "Add Connections"
 msgstr ""
 
-#: editor/hierarchyview.cpp:119
+#: editor/hierarchyview.cpp:100
 msgid "(Constructor)"
 msgstr ""
 
-#: editor/hierarchyview.cpp:121
+#: editor/hierarchyview.cpp:102
 msgid "(Destructor)"
 msgstr ""
 
-#: editor/hierarchyview.cpp:209
+#: editor/hierarchyview.cpp:190
 msgid "Name"
 msgstr "Enw"
 
-#: editor/hierarchyview.cpp:210
+#: editor/hierarchyview.cpp:191
 msgid "Class"
 msgstr "Dosbarth"
 
-#: editor/hierarchyview.cpp:354
+#: editor/hierarchyview.cpp:335
 msgid "Database"
 msgstr "Cronfa ddata"
 
-#: editor/hierarchyview.cpp:723 editor/hierarchyview.cpp:796
-#: editor/mainwindow.cpp:1054
-msgid "Edit..."
-msgstr "Golygu..."
-
-#: editor/hierarchyview.cpp:744
-msgid "Go to Implementation"
-msgstr ""
-
-#: editor/hierarchyview.cpp:792
-msgid "Edit...\tAlt+V"
-msgstr ""
-
-#: editor/hierarchyview.cpp:846
-#, c-format
-msgid "Edit %1"
-msgstr "Golygu %1"
-
-#: editor/hierarchyview.cpp:918
-msgid "Edit Class Variables"
-msgstr ""
-
-#: editor/choosewidgetimpl.cpp:38 editor/hierarchyview.cpp:975
+#: editor/choosewidgetimpl.cpp:38 editor/hierarchyview.cpp:596
 msgid "Widgets"
 msgstr "Celfigion"
-
-#: editor/hierarchyview.cpp:980
-msgid "Source"
-msgstr "Tarddiad"
-
-#: editor/hierarchyview.cpp:997
-msgid " Classes"
-msgstr ""
-
-#: editor/editslotsimpl.cpp:82
-msgid "Add/Remove slots of '%1'"
-msgstr ""
-
-#: editor/editslotsimpl.cpp:87
-msgid "Remove Slot"
-msgstr ""
-
-#: editor/editslotsimpl.cpp:95
-msgid "Remove Slots"
-msgstr ""
-
-#: editor/editslotsimpl.cpp:128
-msgid "Add Slot"
-msgstr ""
-
-#: editor/editslotsimpl.cpp:147
-msgid "Add Slots"
-msgstr ""
-
-#. i18n: file ./editor/editslots.ui line 35
-#: editor/editslotsimpl.cpp:151 rc.cpp:1791
-#, no-c-format
-msgid "Edit Slots"
-msgstr ""
-
-#: editor/editslotsimpl.cpp:152
-msgid ""
-"Some syntactically incorrect slots have been defined.\n"
-"Remove these slots?"
-msgstr ""
-
-#: editor/editslotsimpl.cpp:154 editor/mainwindow.cpp:1985
-msgid "&Yes"
-msgstr "&Ie"
-
-#: editor/editslotsimpl.cpp:154 editor/mainwindow.cpp:1985
-msgid "&No"
-msgstr "&Nage"
 
 #: editor/customwidgeteditorimpl.cpp:213
 msgid "Adding Custom Widget"
@@ -1709,28 +1405,28 @@ msgid "New Column"
 msgstr "Colofn Newydd"
 
 #. i18n: file ./editor/listvieweditor.ui line 62
-#: editor/listvieweditorimpl.cpp:570 rc.cpp:653
+#: editor/listvieweditorimpl.cpp:570 rc.cpp:619
 #, no-c-format
 msgid "&Items"
 msgstr "&Eitemau"
 
-#: editor/mainwindow.cpp:124
+#: editor/mainwindow.cpp:117
 msgid "Kommander Files (*.kmdr)"
 msgstr ""
 
-#: editor/mainwindow.cpp:144
+#: editor/mainwindow.cpp:136
 msgid "Welcome to the Kommander Editor"
 msgstr ""
 
-#: editor/mainwindow.cpp:153
+#: editor/mainwindow.cpp:144
 msgid "Layout"
 msgstr "Cynllun"
 
-#: editor/mainwindow.cpp:246
+#: editor/mainwindow.cpp:235
 msgid "Property Editor/Signal Handlers"
 msgstr ""
 
-#: editor/mainwindow.cpp:248
+#: editor/mainwindow.cpp:237
 msgid ""
 "<b>The Property Editor</b>"
 "<p>You can change the appearance and behavior of the selected widget in the "
@@ -1749,11 +1445,11 @@ msgid ""
 "made using the connection tool.)"
 msgstr ""
 
-#: editor/mainwindow.cpp:278
+#: editor/mainwindow.cpp:267
 msgid "Object Explorer"
 msgstr ""
 
-#: editor/mainwindow.cpp:281
+#: editor/mainwindow.cpp:270
 msgid ""
 "<b>The Object Explorer</b>"
 "<p>"
@@ -1767,26 +1463,26 @@ msgid ""
 "etc.</p>"
 msgstr ""
 
-#: editor/mainwindow.cpp:298
+#: editor/mainwindow.cpp:287
 msgid "Start typing the buffer you want to switch to here (ALT+B)"
 msgstr ""
 
-#: editor/mainwindow.cpp:308
+#: editor/mainwindow.cpp:297
 msgid "File Overview"
 msgstr ""
 
-#: editor/mainwindow.cpp:309
+#: editor/mainwindow.cpp:298
 msgid ""
 "<b>The File Overview Window</b>"
 "<p>The File Overview Window displays all the files, including forms and "
 "source files.</p><p>Use the search field to rapidly switch between files.</p>"
 msgstr ""
 
-#: editor/mainwindow.cpp:326
+#: editor/mainwindow.cpp:315
 msgid "Action Editor"
 msgstr ""
 
-#: editor/mainwindow.cpp:327
+#: editor/mainwindow.cpp:316
 msgid ""
 "<b>The Action Editor</b>"
 "<p>"
@@ -1797,7 +1493,7 @@ msgid ""
 "names in menus.</p>"
 msgstr ""
 
-#: editor/mainwindow.cpp:817
+#: editor/mainwindow.cpp:693
 msgid ""
 "<b>The Form Window</b>"
 "<p>"
@@ -1814,111 +1510,115 @@ msgid ""
 "<b>Form List</b>."
 msgstr ""
 
-#: editor/mainwindow.cpp:924
+#: editor/mainwindow.cpp:807
 #, c-format
 msgid "&Undo: %1"
 msgstr "&Dadwneud: %1"
 
-#: editor/mainwindow.cpp:928
+#: editor/mainwindow.cpp:811
 #, c-format
 msgid "&Redo: %1"
 msgstr "&Ail-wneud: %1"
 
-#: editor/mainwindow.cpp:1007
+#: editor/mainwindow.cpp:890
 msgid "Choose Pixmap..."
 msgstr ""
 
-#: editor/mainwindow.cpp:1011
+#: editor/mainwindow.cpp:894
 msgid "Edit Text..."
 msgstr ""
 
-#: editor/mainwindow.cpp:1015
+#: editor/mainwindow.cpp:898
 msgid "Edit Title..."
 msgstr ""
 
-#: editor/mainwindow.cpp:1019 editor/mainwindow.cpp:1087
+#: editor/mainwindow.cpp:902 editor/mainwindow.cpp:970
 msgid "Edit Page Title..."
 msgstr ""
 
-#: editor/mainwindow.cpp:1035 editor/mainwindow.cpp:1070
+#: editor/mainwindow.cpp:918 editor/mainwindow.cpp:953
 msgid "Edit Kommander Text..."
 msgstr ""
 
-#: editor/mainwindow.cpp:1044 editor/mainwindow.cpp:1080
-#: editor/mainwindow.cpp:1755
+#: editor/mainwindow.cpp:927 editor/mainwindow.cpp:963
+#: editor/mainwindow.cpp:1382
 msgid "Delete Page"
 msgstr "Dileu Tudalen"
 
-#: editor/mainwindow.cpp:1047 editor/mainwindow.cpp:1084
-#: editor/mainwindow.cpp:1754
+#: editor/mainwindow.cpp:930 editor/mainwindow.cpp:967
+#: editor/mainwindow.cpp:1381
 msgid "Add Page"
 msgstr ""
 
-#: editor/mainwindow.cpp:1090
+#: editor/mainwindow.cpp:937
+msgid "Edit..."
+msgstr "Golygu..."
+
+#: editor/mainwindow.cpp:973
 msgid "Edit Pages..."
 msgstr ""
 
-#: editor/mainwindow.cpp:1096
+#: editor/mainwindow.cpp:979
 msgid "Add Menu Item"
 msgstr ""
 
-#: editor/mainwindow.cpp:1098
+#: editor/mainwindow.cpp:981
 msgid "Add Toolbar"
 msgstr ""
 
-#: editor/mainwindow.cpp:1112 editor/mainwindow.cpp:1830
+#: editor/mainwindow.cpp:995 editor/mainwindow.cpp:1460
 msgid "New text:"
 msgstr ""
 
-#: editor/mainwindow.cpp:1115
+#: editor/mainwindow.cpp:998
 msgid "Set the 'text' of '%1'"
 msgstr ""
 
-#: editor/mainwindow.cpp:1125 editor/mainwindow.cpp:1846
+#: editor/mainwindow.cpp:1008 editor/mainwindow.cpp:1476
 msgid "Title"
 msgstr "Teitl"
 
-#: editor/mainwindow.cpp:1125 editor/mainwindow.cpp:1846
+#: editor/mainwindow.cpp:1008 editor/mainwindow.cpp:1476
 msgid "New title:"
 msgstr ""
 
-#: editor/mainwindow.cpp:1127
+#: editor/mainwindow.cpp:1010
 msgid "Set the 'title' of '%1'"
 msgstr ""
 
-#: editor/mainwindow.cpp:1139
+#: editor/mainwindow.cpp:1022
 msgid "Set the 'pageTitle' of '%1'"
 msgstr ""
 
-#: editor/mainwindow.cpp:1151
+#: editor/mainwindow.cpp:1034
 msgid "Set the 'pixmap' of '%1'"
 msgstr ""
 
-#: editor/mainwindow.cpp:1246
+#: editor/mainwindow.cpp:1129
 msgid "Add Toolbar to '%1'"
 msgstr ""
 
-#: editor/mainwindow.cpp:1250
+#: editor/mainwindow.cpp:1133
 msgid "Add Menu to '%1'"
 msgstr ""
 
-#: editor/mainwindow.cpp:1815
+#: editor/mainwindow.cpp:1445
 msgid "Edit %1..."
 msgstr "Golygu %1 ..."
 
-#: editor/mainwindow.cpp:1833
+#: editor/mainwindow.cpp:1463
 msgid "Set the 'text' of '%2'"
 msgstr ""
 
-#: editor/mainwindow.cpp:1848
+#: editor/mainwindow.cpp:1478
 msgid "Set the 'title' of '%2'"
 msgstr ""
 
-#: editor/mainwindow.cpp:1877
+#: editor/mainwindow.cpp:1507
 msgid "Insert a %1 (custom widget)"
 msgstr ""
 
-#: editor/mainwindow.cpp:1878
+#: editor/mainwindow.cpp:1508
 msgid ""
 "<b>%1 (custom widget)</b>"
 "<p>Click <b>Edit Custom Widgets...</b> in the <b>Tools|Custom</b> menu to "
@@ -1927,27 +1627,35 @@ msgid ""
 "used to represent the widget on the form.</p>"
 msgstr ""
 
-#: editor/mainwindow.cpp:1982
+#: editor/mainwindow.cpp:1611
 msgid "Restoring the Last Session"
 msgstr ""
 
-#: editor/mainwindow.cpp:1983
+#: editor/mainwindow.cpp:1612
 msgid ""
 "Kommander found some temporary saved files, which were\n"
 "written when Kommander crashed last time. Do you want to\n"
 "load these files?"
 msgstr ""
 
-#: editor/mainwindow.cpp:2040
+#: editor/mainwindow.cpp:1614
+msgid "&Yes"
+msgstr "&Ie"
+
+#: editor/mainwindow.cpp:1614
+msgid "&No"
+msgstr "&Nage"
+
+#: editor/mainwindow.cpp:1669
 msgid "There is no help available for this dialog at the moment."
 msgstr ""
 
-#: editor/mainwindow.cpp:2064
+#: editor/mainwindow.cpp:1683
 msgid "Open File"
 msgstr "Agor Ffeil"
 
-#: editor/mainwindow.cpp:2065
-msgid "Could not open '%1'. File does not exist."
+#: editor/mainwindow.cpp:1683
+msgid "<qt>Could not open file:<br><b>%1</b><br>File does not exist.</qt>"
 msgstr ""
 
 #: editor/formwindow.cpp:302
@@ -2009,6 +1717,10 @@ msgstr ""
 msgid "Inserting Widget"
 msgstr ""
 
+#: editor/formwindow.cpp:875 editor/formwindow.cpp:965
+msgid "&Break Layout"
+msgstr "&Torri'r Haenlun"
+
 #: editor/formwindow.cpp:1224 editor/formwindow.cpp:1267
 msgid "Use Size Hint"
 msgstr ""
@@ -2025,65 +1737,44 @@ msgstr ""
 msgid "Click on the form to insert a %1..."
 msgstr ""
 
-#: editor/formwindow.cpp:1750
-msgid ""
-"The following custom widgets are used in '%1',\n"
-"but are not known to Qt Designer:\n"
-msgstr ""
-
-#: editor/formwindow.cpp:1755
-msgid ""
-"If you save this form and generate code for it using uic, \n"
-"the generated code will not compile.\n"
-"Do you want to save this dialog now?"
-msgstr ""
-
-#: editor/formwindow.cpp:1757
-msgid "Save dialog?"
-msgstr ""
-
-#: editor/formwindow.cpp:1794
+#: editor/formwindow.cpp:1778
 msgid "Lower"
 msgstr "Gostwng"
 
-#: editor/formwindow.cpp:1857
+#: editor/formwindow.cpp:1841
 msgid "Accelerator '%1' is used %2 times."
 msgstr ""
 
-#: editor/formwindow.cpp:1858
+#: editor/formwindow.cpp:1842
 msgid "&Select"
 msgstr "&Detholi"
 
-#: editor/formwindow.cpp:1869
+#: editor/formwindow.cpp:1853
 msgid "No accelerator is used more than once."
 msgstr ""
 
-#: editor/formwindow.cpp:1880
+#: editor/formwindow.cpp:1864
 msgid "Raise"
 msgstr "Codi"
 
-#: editor/formwindow.cpp:1940
+#: editor/formwindow.cpp:1924
 msgid "Lay Out Horizontally (in splitter)"
 msgstr ""
 
-#: editor/formwindow.cpp:1951
+#: editor/formwindow.cpp:1935
 msgid "Lay Out Vertically (in splitter)"
 msgstr ""
 
-#: editor/formwindow.cpp:1985
+#: editor/formwindow.cpp:1969
 msgid "Lay Out Children Horizontally"
 msgstr ""
 
-#: editor/formwindow.cpp:2006
+#: editor/formwindow.cpp:1990
 msgid "Lay Out Children Vertically"
 msgstr ""
 
-#: editor/formwindow.cpp:2030
+#: editor/formwindow.cpp:2014
 msgid "Lay Out Children in a Grid"
-msgstr ""
-
-#: editor/formwindow.cpp:2145
-msgid "Edit connections..."
 msgstr ""
 
 #: editor/functionsimpl.cpp:114
@@ -2091,9 +1782,10 @@ msgid "<p>Parameters are not obligatory."
 msgstr ""
 
 #: editor/functionsimpl.cpp:117
+#, c-format
 msgid ""
 "_n: <p>Only first argument is obligatory.\n"
-"<p>Only first %1 arguments are obligatory."
+"<p>Only first %n arguments are obligatory."
 msgstr ""
 
 #: editor/functionsimpl.cpp:125
@@ -2115,27 +1807,27 @@ msgid "Wizard pages:"
 msgstr ""
 
 #. i18n: file ./editor/wizardeditor.ui line 90
-#: rc.cpp:9 rc.cpp:1294
+#: rc.cpp:9 rc.cpp:1260
 #, no-c-format
 msgid "&Add"
 msgstr "&Ychwanegu"
 
 #. i18n: file ./editor/wizardeditor.ui line 197
-#: rc.cpp:23 rc.cpp:415 rc.cpp:847 rc.cpp:1429 rc.cpp:1534 rc.cpp:1585
+#: rc.cpp:23 rc.cpp:381 rc.cpp:813 rc.cpp:1378 rc.cpp:1483 rc.cpp:1534
 #, no-c-format
 msgid "Apply all changes."
 msgstr ""
 
 #. i18n: file ./editor/wizardeditor.ui line 214
-#: rc.cpp:29 rc.cpp:238 rc.cpp:421 rc.cpp:638 rc.cpp:853 rc.cpp:910
-#: rc.cpp:1399 rc.cpp:1435 rc.cpp:1540 rc.cpp:1591 rc.cpp:1773 rc.cpp:1896
+#: rc.cpp:29 rc.cpp:238 rc.cpp:387 rc.cpp:604 rc.cpp:819 rc.cpp:876
+#: rc.cpp:1348 rc.cpp:1384 rc.cpp:1489 rc.cpp:1540 rc.cpp:1731
 #, no-c-format
 msgid "Close the dialog and apply all the changes."
 msgstr ""
 
 #. i18n: file ./editor/wizardeditor.ui line 228
-#: rc.cpp:35 rc.cpp:244 rc.cpp:427 rc.cpp:644 rc.cpp:859 rc.cpp:916
-#: rc.cpp:1405 rc.cpp:1441 rc.cpp:1546 rc.cpp:1597 rc.cpp:1779 rc.cpp:1902
+#: rc.cpp:35 rc.cpp:244 rc.cpp:393 rc.cpp:610 rc.cpp:825 rc.cpp:882
+#: rc.cpp:1354 rc.cpp:1390 rc.cpp:1495 rc.cpp:1546 rc.cpp:1740
 #, no-c-format
 msgid "Close the dialog and discard any changes."
 msgstr ""
@@ -2270,25 +1962,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/paletteeditoradvanced.ui line 81
-#: rc.cpp:109 rc.cpp:892
+#: rc.cpp:109 rc.cpp:858
 #, no-c-format
 msgid "Select &palette:"
 msgstr ""
 
 #. i18n: file ./editor/paletteeditoradvanced.ui line 90
-#: rc.cpp:112 rc.cpp:895
+#: rc.cpp:112 rc.cpp:861
 #, no-c-format
 msgid "Active Palette"
 msgstr ""
 
 #. i18n: file ./editor/paletteeditoradvanced.ui line 95
-#: rc.cpp:115 rc.cpp:898
+#: rc.cpp:115 rc.cpp:864
 #, no-c-format
 msgid "Inactive Palette"
 msgstr ""
 
 #. i18n: file ./editor/paletteeditoradvanced.ui line 100
-#: rc.cpp:118 rc.cpp:901
+#: rc.cpp:118 rc.cpp:867
 #, no-c-format
 msgid "Disabled Palette"
 msgstr ""
@@ -2415,7 +2107,7 @@ msgid "Choose pi&xmap:"
 msgstr ""
 
 #. i18n: file ./editor/paletteeditoradvanced.ui line 310
-#: rc.cpp:175 rc.cpp:523
+#: rc.cpp:175 rc.cpp:489
 #, no-c-format
 msgid "Select a pixmap"
 msgstr ""
@@ -2433,7 +2125,7 @@ msgid "&Select color:"
 msgstr ""
 
 #. i18n: file ./editor/paletteeditoradvanced.ui line 360
-#: rc.cpp:184 rc.cpp:226 rc.cpp:499 rc.cpp:871 rc.cpp:880
+#: rc.cpp:184 rc.cpp:226 rc.cpp:465 rc.cpp:837 rc.cpp:846
 #, no-c-format
 msgid "Choose a color"
 msgstr ""
@@ -2578,135 +2270,74 @@ msgstr ""
 msgid "Widget:"
 msgstr ""
 
-#. i18n: file ./editor/functions.ui line 207
-#: rc.cpp:273
+#. i18n: file ./editor/functions.ui line 158
+#: rc.cpp:272
+#, no-c-format
+msgid "Insert function"
+msgstr "Mewnosod Ffwythiant"
+
+#. i18n: file ./editor/functions.ui line 205
+#: rc.cpp:276
+#, no-c-format
+msgid "Clear edited text"
+msgstr ""
+
+#. i18n: file ./editor/functions.ui line 213
+#: rc.cpp:279
 #, no-c-format
 msgid "Inserted &text:"
 msgstr ""
 
-#. i18n: file ./editor/functions.ui line 308
-#: rc.cpp:284
+#. i18n: file ./editor/functions.ui line 224
+#: rc.cpp:282
+#, no-c-format
+msgid "Text to be inserted"
+msgstr ""
+
+#. i18n: file ./editor/functions.ui line 317
+#: rc.cpp:293
 #, no-c-format
 msgid "&Group:"
 msgstr "&Grŵp:"
 
-#. i18n: file ./editor/functions.ui line 338
-#: rc.cpp:287
+#. i18n: file ./editor/functions.ui line 347
+#: rc.cpp:296
 #, no-c-format
 msgid "&Function:"
 msgstr "&Ffwythiant"
 
 #. i18n: file ./editor/actioneditor.ui line 19
-#: rc.cpp:290
+#: rc.cpp:299
 #, no-c-format
 msgid "Edit Actions"
 msgstr ""
 
 #. i18n: file ./editor/actioneditor.ui line 61
-#: rc.cpp:294
+#: rc.cpp:303
 #, no-c-format
 msgid "Create new Action"
 msgstr ""
 
 #. i18n: file ./editor/actioneditor.ui line 78
-#: rc.cpp:298
+#: rc.cpp:307
 #, no-c-format
 msgid "Delete current Action"
 msgstr ""
 
 #. i18n: file ./editor/actioneditor.ui line 95
-#: rc.cpp:302
+#: rc.cpp:311
 #, no-c-format
 msgid "Connect current Action"
 msgstr ""
 
-#. i18n: file ./editor/connectionviewer.ui line 35
-#: rc.cpp:305
-#, no-c-format
-msgid "View Connections"
-msgstr ""
-
-#. i18n: file ./editor/connectionviewer.ui line 41
-#: rc.cpp:308
-#, no-c-format
-msgid ""
-"<b>View Connections</b>"
-"<p>Displays all the connections in the current form. Select a connection "
-"from the list and click the <b>Edit</b>-button to change the connection.</p>"
-msgstr ""
-
-#. i18n: file ./editor/connectionviewer.ui line 109
-#: rc.cpp:318
-#, no-c-format
-msgid "Close the Dialog."
-msgstr ""
-
-#. i18n: file ./editor/connectionviewer.ui line 117
-#: rc.cpp:321 rc.cpp:1725
-#, no-c-format
-msgid "Sender"
-msgstr "Anfonwr"
-
-#. i18n: file ./editor/connectionviewer.ui line 128
-#: rc.cpp:324 rc.cpp:1728
-#, no-c-format
-msgid "Signal"
-msgstr "Arwydd"
-
-#. i18n: file ./editor/connectionviewer.ui line 139
-#: rc.cpp:327 rc.cpp:1731
-#, no-c-format
-msgid "Receiver"
-msgstr "Derbynnydd"
-
-#. i18n: file ./editor/connectionviewer.ui line 150
-#: rc.cpp:330 rc.cpp:1144 rc.cpp:1734 rc.cpp:1797
-#, no-c-format
-msgid "Slot"
-msgstr "Agen"
-
-#. i18n: file ./editor/connectionviewer.ui line 169
-#: rc.cpp:333
-#, no-c-format
-msgid ""
-"<b>Displays a list of connections.</b>"
-"<p>"
-"Select a connection and choose edit, or double-click on an item to change "
-"the connection.</p>"
-msgstr ""
-
-#. i18n: file ./editor/connectionviewer.ui line 177
-#: rc.cpp:336
-#, no-c-format
-msgid "&Edit..."
-msgstr "&Golygu..."
-
-#. i18n: file ./editor/connectionviewer.ui line 180
-#: rc.cpp:339
-#, no-c-format
-msgid "Edit connection"
-msgstr ""
-
-#. i18n: file ./editor/connectionviewer.ui line 183
-#: rc.cpp:342
-#, no-c-format
-msgid "Opens a dialog for editing the selected connection."
-msgstr ""
-
-#. i18n: file ./editor/connectionviewer.ui line 208
-#: rc.cpp:345 rc.cpp:1758
-#, no-c-format
-msgid "&Disconnect"
-msgstr "&Datgysylltu"
-
 #. i18n: file ./editor/iconvieweditor.ui line 35
-#: rc.cpp:348
+#: rc.cpp:314
 #, no-c-format
 msgid "Edit Iconview"
 msgstr ""
 
 #. i18n: file ./editor/iconvieweditor.ui line 41
-#: rc.cpp:351
+#: rc.cpp:317
 #, no-c-format
 msgid ""
 "<b>Edit Iconview</b>"
@@ -2718,200 +2349,206 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/iconvieweditor.ui line 72
-#: rc.cpp:354
+#: rc.cpp:320
 #, no-c-format
 msgid "All items in the iconview."
 msgstr ""
 
 #. i18n: file ./editor/iconvieweditor.ui line 94
-#: rc.cpp:357 rc.cpp:708 rc.cpp:1484
+#: rc.cpp:323 rc.cpp:674 rc.cpp:1433
 #, no-c-format
 msgid "&New Item"
 msgstr "&Eitem Newydd"
 
 #. i18n: file ./editor/iconvieweditor.ui line 97
-#: rc.cpp:360 rc.cpp:711 rc.cpp:1487
+#: rc.cpp:326 rc.cpp:677 rc.cpp:1436
 #, no-c-format
 msgid "Add an item"
 msgstr ""
 
 #. i18n: file ./editor/iconvieweditor.ui line 100
-#: rc.cpp:363
+#: rc.cpp:329
 #, no-c-format
 msgid "Create a new item for the iconview."
 msgstr ""
 
 #. i18n: file ./editor/iconvieweditor.ui line 108
-#: rc.cpp:366 rc.cpp:656 rc.cpp:1493
+#: rc.cpp:332 rc.cpp:622 rc.cpp:1442
 #, no-c-format
 msgid "&Delete Item"
 msgstr "&Dileu Eitem"
 
 #. i18n: file ./editor/iconvieweditor.ui line 111
-#: rc.cpp:369 rc.cpp:659
+#: rc.cpp:335 rc.cpp:625
 #, no-c-format
 msgid "Delete item"
 msgstr " Dileu eitem"
 
 #. i18n: file ./editor/iconvieweditor.ui line 114
-#: rc.cpp:372
+#: rc.cpp:338
 #, no-c-format
 msgid "Delete the selected item."
 msgstr ""
 
 #. i18n: file ./editor/iconvieweditor.ui line 147
-#: rc.cpp:375 rc.cpp:1450
+#: rc.cpp:341 rc.cpp:1399
 #, no-c-format
 msgid "&Item Properties"
 msgstr ""
 
 #. i18n: file ./editor/iconvieweditor.ui line 164
-#: rc.cpp:378 rc.cpp:671 rc.cpp:785 rc.cpp:1475 rc.cpp:1522
+#: rc.cpp:344 rc.cpp:637 rc.cpp:751 rc.cpp:1424 rc.cpp:1471
 #, no-c-format
 msgid "&Text:"
 msgstr "&Testun:"
 
 #. i18n: file ./editor/iconvieweditor.ui line 181
-#: rc.cpp:381 rc.cpp:674 rc.cpp:1478
+#: rc.cpp:347 rc.cpp:640 rc.cpp:1427
 #, no-c-format
 msgid "Change text"
 msgstr ""
 
 #. i18n: file ./editor/iconvieweditor.ui line 184
-#: rc.cpp:384
+#: rc.cpp:350
 #, no-c-format
 msgid "Change the text for the selected item."
 msgstr ""
 
 #. i18n: file ./editor/iconvieweditor.ui line 192
-#: rc.cpp:387 rc.cpp:763 rc.cpp:1453
+#: rc.cpp:353 rc.cpp:729 rc.cpp:1402
 #, no-c-format
 msgid "&Pixmap:"
 msgstr "&Picsfap :"
 
 #. i18n: file ./editor/iconvieweditor.ui line 217
-#: rc.cpp:390 rc.cpp:689 rc.cpp:766 rc.cpp:1456 rc.cpp:1626 rc.cpp:1686
+#: rc.cpp:356 rc.cpp:655 rc.cpp:732 rc.cpp:1405 rc.cpp:1575 rc.cpp:1635
 #, no-c-format
 msgid "Label4"
 msgstr ""
 
 #. i18n: file ./editor/iconvieweditor.ui line 237
-#: rc.cpp:394 rc.cpp:693 rc.cpp:770 rc.cpp:1460 rc.cpp:1630 rc.cpp:1690
+#: rc.cpp:360 rc.cpp:659 rc.cpp:736 rc.cpp:1409 rc.cpp:1579 rc.cpp:1639
 #, no-c-format
 msgid "Delete Pixmap"
 msgstr ""
 
 #. i18n: file ./editor/iconvieweditor.ui line 240
-#: rc.cpp:397 rc.cpp:1463
+#: rc.cpp:363 rc.cpp:1412
 #, no-c-format
 msgid "Delete the selected item's pixmap."
 msgstr ""
 
 #. i18n: file ./editor/iconvieweditor.ui line 257
-#: rc.cpp:403 rc.cpp:702 rc.cpp:779 rc.cpp:984 rc.cpp:1469 rc.cpp:1639
-#: rc.cpp:1699
+#: rc.cpp:369 rc.cpp:668 rc.cpp:745 rc.cpp:950 rc.cpp:1418 rc.cpp:1588
+#: rc.cpp:1648
 #, no-c-format
 msgid "Select a Pixmap"
 msgstr ""
 
 #. i18n: file ./editor/iconvieweditor.ui line 260
-#: rc.cpp:406
+#: rc.cpp:372
 #, no-c-format
 msgid "Select a pixmap file for the current item."
 msgstr ""
 
 #. i18n: file ./editor/createtemplate.ui line 61
-#: rc.cpp:433
+#: rc.cpp:399
 #, no-c-format
 msgid "Template &name:"
 msgstr ""
 
 #. i18n: file ./editor/createtemplate.ui line 76
-#: rc.cpp:436
+#: rc.cpp:402
 #, no-c-format
 msgid "Name of the new template"
 msgstr ""
 
 #. i18n: file ./editor/createtemplate.ui line 80
-#: rc.cpp:439
+#: rc.cpp:405
 #, no-c-format
 msgid "Enter the name of the new template"
 msgstr ""
 
 #. i18n: file ./editor/createtemplate.ui line 91
-#: rc.cpp:442
+#: rc.cpp:408
 #, no-c-format
 msgid "Class of the new template"
 msgstr ""
 
 #. i18n: file ./editor/createtemplate.ui line 95
-#: rc.cpp:445
+#: rc.cpp:411
 #, no-c-format
 msgid "Enter the name of the class which should be used as the template's base class"
 msgstr ""
 
 #. i18n: file ./editor/createtemplate.ui line 142
-#: rc.cpp:448
+#: rc.cpp:414
 #, no-c-format
 msgid "C&reate"
 msgstr "C&reu"
 
 #. i18n: file ./editor/createtemplate.ui line 150
-#: rc.cpp:451
+#: rc.cpp:417
 #, no-c-format
 msgid "Creates the new template"
 msgstr ""
 
 #. i18n: file ./editor/createtemplate.ui line 165
-#: rc.cpp:457
+#: rc.cpp:423
 #, no-c-format
 msgid "Closes the Dialog"
 msgstr ""
 
 #. i18n: file ./editor/createtemplate.ui line 178
-#: rc.cpp:460
+#: rc.cpp:426
 #, no-c-format
 msgid "&Baseclass for template:"
 msgstr ""
 
 #. i18n: file ./editor/assoctexteditor.ui line 16
-#: rc.cpp:463
+#: rc.cpp:429
 #, no-c-format
 msgid "Edit Text"
 msgstr ""
 
 #. i18n: file ./editor/assoctexteditor.ui line 35
-#: rc.cpp:466
+#: rc.cpp:432
 #, no-c-format
 msgid "&Widget:"
 msgstr ""
 
 #. i18n: file ./editor/assoctexteditor.ui line 67
-#: rc.cpp:472
+#: rc.cpp:438
 #, no-c-format
 msgid "&Text for:"
 msgstr ""
 
 #. i18n: file ./editor/assoctexteditor.ui line 112
-#: rc.cpp:478
+#: rc.cpp:444
 #, no-c-format
 msgid "&Function..."
 msgstr "&Ffwythiant..."
 
 #. i18n: file ./editor/assoctexteditor.ui line 145
-#: rc.cpp:481
+#: rc.cpp:447
 #, no-c-format
 msgid "Wi&dget:"
 msgstr ""
 
 #. i18n: file ./editor/assoctexteditor.ui line 192
-#: rc.cpp:484
+#: rc.cpp:450
 #, no-c-format
 msgid "Fi&le..."
 msgstr "Ff&eil..."
 
+#. i18n: file ./editor/preferences.ui line 35
+#: rc.cpp:453
+#, no-c-format
+msgid "Preferences"
+msgstr "Hoffterau"
+
 #. i18n: file ./editor/preferences.ui line 41
-#: rc.cpp:490
+#: rc.cpp:456
 #, no-c-format
 msgid ""
 "<b>Preferences</b>"
@@ -2921,79 +2558,79 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 62
-#: rc.cpp:493
+#: rc.cpp:459
 #, no-c-format
 msgid "General"
 msgstr "Cyffredinol"
 
 #. i18n: file ./editor/preferences.ui line 79
-#: rc.cpp:496
+#: rc.cpp:462
 #, no-c-format
 msgid "Backgro&und"
 msgstr "Cefndir"
 
 #. i18n: file ./editor/preferences.ui line 114
-#: rc.cpp:502
+#: rc.cpp:468
 #, no-c-format
 msgid "Select a color in the color dialog."
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 125
-#: rc.cpp:505
+#: rc.cpp:471
 #, no-c-format
 msgid "Co&lor"
 msgstr "Ll&iw"
 
 #. i18n: file ./editor/preferences.ui line 128
-#: rc.cpp:508
+#: rc.cpp:474
 #, no-c-format
 msgid "Use a background color"
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 131
-#: rc.cpp:511
+#: rc.cpp:477
 #, no-c-format
 msgid "Use a background color."
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 139
-#: rc.cpp:514
+#: rc.cpp:480
 #, no-c-format
 msgid "&Pixmap"
 msgstr "&Picsfap"
 
 #. i18n: file ./editor/preferences.ui line 145
-#: rc.cpp:517
+#: rc.cpp:483
 #, no-c-format
 msgid "Use a background pixmap"
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 148
-#: rc.cpp:520
+#: rc.cpp:486
 #, no-c-format
 msgid "Use a background pixmap."
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 171
-#: rc.cpp:526
+#: rc.cpp:492
 #, no-c-format
 msgid "Choose a pixmap file."
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 181
-#: rc.cpp:529
+#: rc.cpp:495
 #, no-c-format
 msgid "Show &grid"
 msgstr "Dangos &grid"
 
 #. i18n: file ./editor/preferences.ui line 187
-#: rc.cpp:532
+#: rc.cpp:498
 #, no-c-format
 msgid "Show Grid"
 msgstr "Dangos Grid"
 
 #. i18n: file ./editor/preferences.ui line 190
-#: rc.cpp:535
+#: rc.cpp:501
 #, no-c-format
 msgid ""
 "<b>Customize the grid appearance for all forms.</b>"
@@ -3001,25 +2638,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 198
-#: rc.cpp:538
+#: rc.cpp:504
 #, no-c-format
 msgid "Gr&id"
 msgstr "Gr&id"
 
 #. i18n: file ./editor/preferences.ui line 218
-#: rc.cpp:542
+#: rc.cpp:508
 #, no-c-format
 msgid "Sn&ap to grid"
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 224
-#: rc.cpp:545
+#: rc.cpp:511
 #, no-c-format
 msgid "Snap to the grid"
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 227
-#: rc.cpp:548
+#: rc.cpp:514
 #, no-c-format
 msgid ""
 "<b>Customize the grid-settings for all forms.</b>"
@@ -3028,13 +2665,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 258
-#: rc.cpp:551 rc.cpp:557
+#: rc.cpp:517 rc.cpp:523
 #, no-c-format
 msgid "Grid resolution"
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 261
-#: rc.cpp:554 rc.cpp:560
+#: rc.cpp:520 rc.cpp:526
 #, no-c-format
 msgid ""
 "<b>Customize the grid-settings for all forms.</b>"
@@ -3043,19 +2680,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 289
-#: rc.cpp:563
+#: rc.cpp:529
 #, no-c-format
 msgid "Grid-&X:"
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 300
-#: rc.cpp:566
+#: rc.cpp:532
 #, no-c-format
 msgid "Grid-&Y:"
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 327
-#: rc.cpp:569 rc.cpp:590
+#: rc.cpp:535 rc.cpp:556
 #, no-c-format
 msgid ""
 "A splash screen is displayed when starting Qt Designer if this option is "
@@ -3063,25 +2700,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 335
-#: rc.cpp:572
+#: rc.cpp:538
 #, no-c-format
 msgid "Ge&neral"
 msgstr "Cy&ffredinol"
 
 #. i18n: file ./editor/preferences.ui line 352
-#: rc.cpp:575
+#: rc.cpp:541
 #, no-c-format
 msgid "Restore last &workspace on startup"
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 358
-#: rc.cpp:578
+#: rc.cpp:544
 #, no-c-format
 msgid "Restore last workspace"
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 361
-#: rc.cpp:581
+#: rc.cpp:547
 #, no-c-format
 msgid ""
 "The current workspace settings will be restored the next time you start Qt "
@@ -3089,31 +2726,31 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 369
-#: rc.cpp:584
+#: rc.cpp:550
 #, no-c-format
 msgid "Show &splash screen on startup"
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 375
-#: rc.cpp:587
+#: rc.cpp:553
 #, no-c-format
 msgid "Show Splashscreen"
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 386
-#: rc.cpp:593
+#: rc.cpp:559
 #, no-c-format
 msgid "Disable data&base auto-edit in preview"
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 397
-#: rc.cpp:596
+#: rc.cpp:562
 #, no-c-format
 msgid "&Documentation path:"
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 422
-#: rc.cpp:599
+#: rc.cpp:565
 #, no-c-format
 msgid ""
 "<b>Enter the path to the documentation.</b>"
@@ -3122,67 +2759,67 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 436
-#: rc.cpp:605
+#: rc.cpp:571
 #, no-c-format
 msgid "Select path"
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 439
-#: rc.cpp:608
+#: rc.cpp:574
 #, no-c-format
 msgid "Look for the documentation path."
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 451
-#: rc.cpp:611
+#: rc.cpp:577
 #, no-c-format
 msgid "&Toolbars"
 msgstr "&Barrau Offer:"
 
 #. i18n: file ./editor/preferences.ui line 468
-#: rc.cpp:614
+#: rc.cpp:580
 #, no-c-format
 msgid "Show &big icons"
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 471
-#: rc.cpp:617
+#: rc.cpp:583
 #, no-c-format
 msgid "Big Icons"
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 474
-#: rc.cpp:620
+#: rc.cpp:586
 #, no-c-format
 msgid "Big icons will be used in the toolbars if this is checked."
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 482
-#: rc.cpp:623
+#: rc.cpp:589
 #, no-c-format
 msgid "Show text lab&els"
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 485
-#: rc.cpp:626
+#: rc.cpp:592
 #, no-c-format
 msgid "Text Labels"
 msgstr ""
 
 #. i18n: file ./editor/preferences.ui line 488
-#: rc.cpp:629
+#: rc.cpp:595
 #, no-c-format
 msgid "Text labels will be usin in the toolbars if this is checked."
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 35
-#: rc.cpp:647
+#: rc.cpp:613
 #, no-c-format
 msgid "Edit Listview"
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 41
-#: rc.cpp:650
+#: rc.cpp:616
 #, no-c-format
 msgid ""
 "<b>Edit Listview</b>"
@@ -3195,25 +2832,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 85
-#: rc.cpp:662
+#: rc.cpp:628
 #, no-c-format
 msgid "<b>Deletes the selected item.</b><p>Any sub-items are also deleted.</p>"
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 99
-#: rc.cpp:665
+#: rc.cpp:631
 #, no-c-format
 msgid "Item &Properties"
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 116
-#: rc.cpp:668
+#: rc.cpp:634
 #, no-c-format
 msgid "Pi&xmap:"
 msgstr "Pi&csfap :"
 
 #. i18n: file ./editor/listvieweditor.ui line 147
-#: rc.cpp:677
+#: rc.cpp:643
 #, no-c-format
 msgid ""
 "<b>Change the text of the item.</b>"
@@ -3221,13 +2858,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 155
-#: rc.cpp:680
+#: rc.cpp:646
 #, no-c-format
 msgid "Change column"
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 158
-#: rc.cpp:683
+#: rc.cpp:649
 #, no-c-format
 msgid ""
 "<b>Select the current column.</b>"
@@ -3235,13 +2872,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 166
-#: rc.cpp:686
+#: rc.cpp:652
 #, no-c-format
 msgid "Colu&mn:"
 msgstr "Colo&fn:"
 
 #. i18n: file ./editor/listvieweditor.ui line 214
-#: rc.cpp:696 rc.cpp:1633 rc.cpp:1693
+#: rc.cpp:662 rc.cpp:1582 rc.cpp:1642
 #, no-c-format
 msgid ""
 "<b>Delete the selected item's pixmap.</b>"
@@ -3249,7 +2886,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 234
-#: rc.cpp:705 rc.cpp:1642 rc.cpp:1702
+#: rc.cpp:671 rc.cpp:1591 rc.cpp:1651
 #, no-c-format
 msgid ""
 "<b>Select a pixmap file for the item.</b>"
@@ -3257,7 +2894,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 252
-#: rc.cpp:714
+#: rc.cpp:680
 #, no-c-format
 msgid ""
 "<b>Adds a new item to the list.</b>"
@@ -3266,25 +2903,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 260
-#: rc.cpp:717 rc.cpp:1447
+#: rc.cpp:683 rc.cpp:1396
 #, no-c-format
 msgid "The list of items."
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 268
-#: rc.cpp:720
+#: rc.cpp:686
 #, no-c-format
 msgid "New &Subitem"
 msgstr "&Is-eitem Newydd"
 
 #. i18n: file ./editor/listvieweditor.ui line 271
-#: rc.cpp:723
+#: rc.cpp:689
 #, no-c-format
 msgid "Add a subitem"
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 274
-#: rc.cpp:726
+#: rc.cpp:692
 #, no-c-format
 msgid ""
 "<b>Create a new sub-item for the selected item.</b>"
@@ -3293,13 +2930,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 305
-#: rc.cpp:730 rc.cpp:832 rc.cpp:1503 rc.cpp:1604 rc.cpp:1661
+#: rc.cpp:696 rc.cpp:798 rc.cpp:1452 rc.cpp:1553 rc.cpp:1610
 #, no-c-format
 msgid "Move up"
 msgstr "Symud i fyny"
 
 #. i18n: file ./editor/listvieweditor.ui line 308
-#: rc.cpp:733
+#: rc.cpp:699
 #, no-c-format
 msgid ""
 "<b>Move the selected item up.</b>"
@@ -3307,13 +2944,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 322
-#: rc.cpp:737 rc.cpp:816 rc.cpp:1510 rc.cpp:1611 rc.cpp:1668
+#: rc.cpp:703 rc.cpp:782 rc.cpp:1459 rc.cpp:1560 rc.cpp:1617
 #, no-c-format
 msgid "Move down"
 msgstr "Symud i lawr"
 
 #. i18n: file ./editor/listvieweditor.ui line 325
-#: rc.cpp:740
+#: rc.cpp:706
 #, no-c-format
 msgid ""
 "<b>Move the selected item down.</b>"
@@ -3321,13 +2958,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 339
-#: rc.cpp:744
+#: rc.cpp:710
 #, no-c-format
 msgid "Move left"
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 342
-#: rc.cpp:747
+#: rc.cpp:713
 #, no-c-format
 msgid ""
 "<b>Move the selected item one level up.</b>"
@@ -3335,13 +2972,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 356
-#: rc.cpp:751
+#: rc.cpp:717
 #, no-c-format
 msgid "Move right"
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 359
-#: rc.cpp:754
+#: rc.cpp:720
 #, no-c-format
 msgid ""
 "<b>Move the selected item one level down.</b>"
@@ -3349,25 +2986,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 369
-#: rc.cpp:757 rc.cpp:1600
+#: rc.cpp:723 rc.cpp:1549
 #, no-c-format
 msgid "Co&lumns"
 msgstr "Co&lofnau"
 
 #. i18n: file ./editor/listvieweditor.ui line 386
-#: rc.cpp:760
+#: rc.cpp:726
 #, no-c-format
 msgid "Column Properties"
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 437
-#: rc.cpp:773
+#: rc.cpp:739
 #, no-c-format
 msgid "Delete the pixmap of the selected column."
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 457
-#: rc.cpp:782
+#: rc.cpp:748
 #, no-c-format
 msgid ""
 "<b>Select a pixmap file for the selected column.</b>"
@@ -3375,13 +3012,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 482
-#: rc.cpp:788
+#: rc.cpp:754
 #, no-c-format
 msgid "Enter column text"
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 485
-#: rc.cpp:791
+#: rc.cpp:757
 #, no-c-format
 msgid ""
 "<b>Enter the text for the selected column.</b>"
@@ -3389,13 +3026,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 493
-#: rc.cpp:794
+#: rc.cpp:760
 #, no-c-format
 msgid "Clicka&ble"
 msgstr "Clicad&wy"
 
 #. i18n: file ./editor/listvieweditor.ui line 496
-#: rc.cpp:797
+#: rc.cpp:763
 #, no-c-format
 msgid ""
 "If this option is checked, the selected column will react to mouse clicks on "
@@ -3403,37 +3040,37 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 504
-#: rc.cpp:800
+#: rc.cpp:766
 #, no-c-format
 msgid "Re&sizable"
 msgstr "Ge&llir newid ei faint"
 
 #. i18n: file ./editor/listvieweditor.ui line 507
-#: rc.cpp:803
+#: rc.cpp:769
 #, no-c-format
 msgid "The column's width will be resizeable if this option is checked."
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 517
-#: rc.cpp:806 rc.cpp:1617
+#: rc.cpp:772 rc.cpp:1566
 #, no-c-format
 msgid "&Delete Column"
 msgstr "&Dileu Colofn"
 
 #. i18n: file ./editor/listvieweditor.ui line 520
-#: rc.cpp:809
+#: rc.cpp:775
 #, no-c-format
 msgid "Delete column"
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 523
-#: rc.cpp:812
+#: rc.cpp:778
 #, no-c-format
 msgid "Deletes the selected Column."
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 540
-#: rc.cpp:819
+#: rc.cpp:785
 #, no-c-format
 msgid ""
 "<b>Move the selected item down.</b>"
@@ -3441,19 +3078,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 548
-#: rc.cpp:822 rc.cpp:1620
+#: rc.cpp:788 rc.cpp:1569
 #, no-c-format
 msgid "&New Column"
 msgstr "&Colofn Newydd"
 
 #. i18n: file ./editor/listvieweditor.ui line 551
-#: rc.cpp:825
+#: rc.cpp:791
 #, no-c-format
 msgid "Add a Column"
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 554
-#: rc.cpp:828
+#: rc.cpp:794
 #, no-c-format
 msgid ""
 "<b>Create a new column.</b>"
@@ -3462,7 +3099,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 571
-#: rc.cpp:835
+#: rc.cpp:801
 #, no-c-format
 msgid ""
 "<b>Move the selected item up.</b>"
@@ -3470,67 +3107,67 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/listvieweditor.ui line 579
-#: rc.cpp:838
+#: rc.cpp:804
 #, no-c-format
 msgid "The list of columns."
 msgstr ""
 
 #. i18n: file ./editor/paletteeditor.ui line 43
-#: rc.cpp:862
+#: rc.cpp:828
 #, no-c-format
 msgid "Edit Palette"
 msgstr ""
 
 #. i18n: file ./editor/paletteeditor.ui line 68
-#: rc.cpp:865
+#: rc.cpp:831
 #, no-c-format
 msgid "Build Palette"
 msgstr ""
 
 #. i18n: file ./editor/paletteeditor.ui line 111
-#: rc.cpp:868
+#: rc.cpp:834
 #, no-c-format
 msgid "&3D effects:"
 msgstr ""
 
 #. i18n: file ./editor/paletteeditor.ui line 142
-#: rc.cpp:874
+#: rc.cpp:840
 #, no-c-format
 msgid "Choose the effect-color for the generated palette."
 msgstr ""
 
 #. i18n: file ./editor/paletteeditor.ui line 173
-#: rc.cpp:877
+#: rc.cpp:843
 #, no-c-format
 msgid "Back&ground:"
 msgstr "Cefn&dir:"
 
 #. i18n: file ./editor/paletteeditor.ui line 204
-#: rc.cpp:883
+#: rc.cpp:849
 #, no-c-format
 msgid "Choose the background color for the generated palette."
 msgstr ""
 
 #. i18n: file ./editor/paletteeditor.ui line 229
-#: rc.cpp:886
+#: rc.cpp:852
 #, no-c-format
 msgid "&Tune Palette..."
 msgstr ""
 
 #. i18n: file ./editor/paletteeditor.ui line 247
-#: rc.cpp:889
+#: rc.cpp:855
 #, no-c-format
 msgid "Preview"
 msgstr "Rhagolwg"
 
 #. i18n: file ./editor/customwidgeteditor.ui line 35
-#: rc.cpp:919
+#: rc.cpp:885
 #, no-c-format
 msgid "Edit Custom Widgets"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 41
-#: rc.cpp:922
+#: rc.cpp:888
 #, no-c-format
 msgid ""
 "<b>Edit Custom Widgets</b>"
@@ -3539,25 +3176,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 58
-#: rc.cpp:925
+#: rc.cpp:891
 #, no-c-format
 msgid "The list of all custom widgets known to Qt Designer."
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 66
-#: rc.cpp:928
+#: rc.cpp:894
 #, no-c-format
 msgid "&New Widget"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 69
-#: rc.cpp:931
+#: rc.cpp:897
 #, no-c-format
 msgid "Add new custom widget."
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 72
-#: rc.cpp:934
+#: rc.cpp:900
 #, no-c-format
 msgid ""
 "<b>Create an empty custom widget and add it to the list.</b>"
@@ -3566,19 +3203,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 80
-#: rc.cpp:937
+#: rc.cpp:903
 #, no-c-format
 msgid "&Delete Widget"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 83
-#: rc.cpp:940
+#: rc.cpp:906
 #, no-c-format
 msgid "Delete custom widget"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 86
-#: rc.cpp:943
+#: rc.cpp:909
 #, no-c-format
 msgid ""
 "<b>Delete the selected custom widget.</b>"
@@ -3586,25 +3223,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 142
-#: rc.cpp:952
+#: rc.cpp:918
 #, no-c-format
 msgid "Closes the Dialog."
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 169
-#: rc.cpp:955
+#: rc.cpp:921
 #, no-c-format
 msgid "&Load Descriptions..."
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 172
-#: rc.cpp:958
+#: rc.cpp:924
 #, no-c-format
 msgid "Loads widget description file"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 176
-#: rc.cpp:961
+#: rc.cpp:927
 #, no-c-format
 msgid ""
 "<b>Load Descriptions</b>"
@@ -3620,19 +3257,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 184
-#: rc.cpp:965
+#: rc.cpp:931
 #, no-c-format
 msgid "&Save Descriptions..."
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 187
-#: rc.cpp:968
+#: rc.cpp:934
 #, no-c-format
 msgid "Saves widget description file"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 190
-#: rc.cpp:971
+#: rc.cpp:937
 #, no-c-format
 msgid ""
 "<b>Save Descriptions</b>"
@@ -3641,19 +3278,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 198
-#: rc.cpp:974
+#: rc.cpp:940
 #, no-c-format
 msgid "Change the properties of the selected custom widget."
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 205
-#: rc.cpp:977
+#: rc.cpp:943
 #, no-c-format
 msgid "De&finition"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 256
-#: rc.cpp:987
+#: rc.cpp:953
 #, no-c-format
 msgid ""
 "<b>Select a pixmap file.</b>"
@@ -3661,13 +3298,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 280
-#: rc.cpp:990
+#: rc.cpp:956
 #, no-c-format
 msgid "Enter filename"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 283
-#: rc.cpp:993
+#: rc.cpp:959
 #, no-c-format
 msgid ""
 "<b>Change the header file's name for the selected custom widget.</b>"
@@ -3675,37 +3312,37 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 300
-#: rc.cpp:999
+#: rc.cpp:965
 #, no-c-format
 msgid "Choose header file"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 303
-#: rc.cpp:1002
+#: rc.cpp:968
 #, no-c-format
 msgid "Look for the header file using a file dialog."
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 309
-#: rc.cpp:1005
+#: rc.cpp:971
 #, no-c-format
 msgid "Global"
 msgstr "Eang"
 
 #. i18n: file ./editor/customwidgeteditor.ui line 314
-#: rc.cpp:1008
+#: rc.cpp:974
 #, no-c-format
 msgid "Local"
 msgstr "Lleol"
 
 #. i18n: file ./editor/customwidgeteditor.ui line 321
-#: rc.cpp:1011
+#: rc.cpp:977
 #, no-c-format
 msgid "Select access"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 324
-#: rc.cpp:1014
+#: rc.cpp:980
 #, no-c-format
 msgid ""
 "<b>Change how the include file will be included.</b>"
@@ -3714,13 +3351,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 334
-#: rc.cpp:1017
+#: rc.cpp:983
 #, no-c-format
 msgid "Change classname"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 337
-#: rc.cpp:1020
+#: rc.cpp:986
 #, no-c-format
 msgid ""
 "<b>Enter the classname for the selected custom widget.</b>"
@@ -3728,91 +3365,91 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 345
-#: rc.cpp:1023
+#: rc.cpp:989
 #, no-c-format
 msgid "Heade&r file:"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 356
-#: rc.cpp:1026
+#: rc.cpp:992
 #, no-c-format
 msgid "Cl&ass:"
 msgstr "Do&sbarth:"
 
 #. i18n: file ./editor/customwidgeteditor.ui line 367
-#: rc.cpp:1029 rc.cpp:1648 rc.cpp:1683
+#: rc.cpp:995 rc.cpp:1597 rc.cpp:1632
 #, no-c-format
 msgid "Pixmap:"
 msgstr "Picsfap :"
 
 #. i18n: file ./editor/customwidgeteditor.ui line 375
-#: rc.cpp:1032
+#: rc.cpp:998
 #, no-c-format
 msgid "Si&ze hint:"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 386
-#: rc.cpp:1035
+#: rc.cpp:1001
 #, no-c-format
 msgid "Size p&olicy:"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 395
-#: rc.cpp:1038 rc.cpp:1074
+#: rc.cpp:1004 rc.cpp:1040
 #, no-c-format
 msgid "Fixed"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 400
-#: rc.cpp:1041 rc.cpp:1077
+#: rc.cpp:1007 rc.cpp:1043
 #, no-c-format
 msgid "Minimum"
 msgstr "Lleiafswm"
 
 #. i18n: file ./editor/customwidgeteditor.ui line 405
-#: rc.cpp:1044 rc.cpp:1080
+#: rc.cpp:1010 rc.cpp:1046
 #, no-c-format
 msgid "Maximum"
 msgstr "Uchafswm"
 
 #. i18n: file ./editor/customwidgeteditor.ui line 410
-#: rc.cpp:1047 rc.cpp:1083
+#: rc.cpp:1013 rc.cpp:1049
 #, no-c-format
 msgid "Preferred"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 415
-#: rc.cpp:1050 rc.cpp:1086
+#: rc.cpp:1016 rc.cpp:1052
 #, no-c-format
 msgid "MinimumExpanding"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 420
-#: rc.cpp:1053 rc.cpp:1089
+#: rc.cpp:1019 rc.cpp:1055
 #, no-c-format
 msgid "Expanding"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 427
-#: rc.cpp:1056
+#: rc.cpp:1022
 #, no-c-format
 msgid "Horizontal Sizepolicy"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 430
-#: rc.cpp:1059
+#: rc.cpp:1025
 #, no-c-format
 msgid "Choose the horizontal size policy"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 447
-#: rc.cpp:1062
+#: rc.cpp:1028
 #, no-c-format
 msgid "Size hint width"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 450
-#: rc.cpp:1065 rc.cpp:1071
+#: rc.cpp:1031 rc.cpp:1037
 #, no-c-format
 msgid ""
 "<b>Set the size hint for the selected widget.</b>"
@@ -3821,37 +3458,37 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 467
-#: rc.cpp:1068
+#: rc.cpp:1034
 #, no-c-format
 msgid "Size hint height"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 508
-#: rc.cpp:1092
+#: rc.cpp:1058
 #, no-c-format
 msgid "Vertical Sizepolicy"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 511
-#: rc.cpp:1095
+#: rc.cpp:1061
 #, no-c-format
 msgid "Choose the verical size policy for the widget"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 536
-#: rc.cpp:1098
+#: rc.cpp:1064
 #, no-c-format
 msgid "Con&tainer widget"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 539
-#: rc.cpp:1101
+#: rc.cpp:1067
 #, no-c-format
 msgid "Container Widget"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 543
-#: rc.cpp:1104
+#: rc.cpp:1070
 #, no-c-format
 msgid ""
 "<p><b>Container Widget</b></p>\n"
@@ -3860,31 +3497,31 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 553
-#: rc.cpp:1108
+#: rc.cpp:1074
 #, no-c-format
 msgid "Si&gnals"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 570
-#: rc.cpp:1111
+#: rc.cpp:1077
 #, no-c-format
 msgid "The list of all the signals that the selected widget can emit."
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 609
-#: rc.cpp:1114
+#: rc.cpp:1080
 #, no-c-format
 msgid "N&ew Signal"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 615
-#: rc.cpp:1117
+#: rc.cpp:1083
 #, no-c-format
 msgid "Add new signal"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 618
-#: rc.cpp:1120
+#: rc.cpp:1086
 #, no-c-format
 msgid ""
 "<b>Add a new signal for the current custom widget.</b>"
@@ -3893,19 +3530,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 626
-#: rc.cpp:1123
+#: rc.cpp:1089
 #, no-c-format
 msgid "Dele&te Signal"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 632
-#: rc.cpp:1126
+#: rc.cpp:1092
 #, no-c-format
 msgid "Delete signal"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 635
-#: rc.cpp:1129
+#: rc.cpp:1095
 #, no-c-format
 msgid ""
 "<b>Delete the signal.</b>"
@@ -3913,19 +3550,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 659
-#: rc.cpp:1132
+#: rc.cpp:1098
 #, no-c-format
 msgid "S&ignal:"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 670
-#: rc.cpp:1135
+#: rc.cpp:1101
 #, no-c-format
 msgid "Change signal name"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 673
-#: rc.cpp:1138 rc.cpp:1159
+#: rc.cpp:1104 rc.cpp:1125
 #, no-c-format
 msgid ""
 "<b>Change the name of the selected slot.</b>"
@@ -3934,61 +3571,67 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 685
-#: rc.cpp:1141
+#: rc.cpp:1107
 #, no-c-format
 msgid "S&lots"
 msgstr ""
 
+#. i18n: file ./editor/customwidgeteditor.ui line 700
+#: rc.cpp:1110 rc.cpp:1683
+#, no-c-format
+msgid "Slot"
+msgstr "Agen"
+
 #. i18n: file ./editor/customwidgeteditor.ui line 711
-#: rc.cpp:1147 rc.cpp:1806
+#: rc.cpp:1113
 #, no-c-format
 msgid "Access"
 msgstr "Cyrchiad"
 
 #. i18n: file ./editor/customwidgeteditor.ui line 730
-#: rc.cpp:1150
+#: rc.cpp:1116
 #, no-c-format
 msgid "The list of all the custom widget's slots."
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 738
-#: rc.cpp:1153
+#: rc.cpp:1119
 #, no-c-format
 msgid "Sl&ot:"
 msgstr "Ag&en :"
 
 #. i18n: file ./editor/customwidgeteditor.ui line 749
-#: rc.cpp:1156 rc.cpp:1839 rc.cpp:1848
+#: rc.cpp:1122
 #, no-c-format
 msgid "Change slot name"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 760
-#: rc.cpp:1162 rc.cpp:1872
+#: rc.cpp:1128
 #, no-c-format
 msgid "&Access:"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 769
-#: rc.cpp:1165 rc.cpp:1875
+#: rc.cpp:1131
 #, no-c-format
 msgid "Public"
 msgstr "Cyhoeddus"
 
 #. i18n: file ./editor/customwidgeteditor.ui line 774
-#: rc.cpp:1168 rc.cpp:1878
+#: rc.cpp:1134
 #, no-c-format
 msgid "Protected"
 msgstr "Gwarchodir"
 
 #. i18n: file ./editor/customwidgeteditor.ui line 781
-#: rc.cpp:1171 rc.cpp:1866 rc.cpp:1884
+#: rc.cpp:1137
 #, no-c-format
 msgid "Change slot access"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 784
-#: rc.cpp:1174
+#: rc.cpp:1140
 #, no-c-format
 msgid ""
 "<b>Change the slot's access policy.</b>"
@@ -3996,19 +3639,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 823
-#: rc.cpp:1177
+#: rc.cpp:1143
 #, no-c-format
 msgid "N&ew Slot"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 829
-#: rc.cpp:1180 rc.cpp:1818
+#: rc.cpp:1146
 #, no-c-format
 msgid "Add new slot"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 832
-#: rc.cpp:1183
+#: rc.cpp:1149
 #, no-c-format
 msgid ""
 "<b>Add a new slot to the current custom widget.</b>"
@@ -4017,19 +3660,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 840
-#: rc.cpp:1186
+#: rc.cpp:1152
 #, no-c-format
 msgid "Dele&te Slot"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 846
-#: rc.cpp:1189 rc.cpp:1827
+#: rc.cpp:1155
 #, no-c-format
 msgid "Delete slot"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 849
-#: rc.cpp:1192
+#: rc.cpp:1158
 #, no-c-format
 msgid ""
 "<b>Delete the slot.</b>"
@@ -4037,25 +3680,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 861
-#: rc.cpp:1195
+#: rc.cpp:1161
 #, no-c-format
 msgid "&Properties"
 msgstr "&Priodweddau"
 
 #. i18n: file ./editor/customwidgeteditor.ui line 909
-#: rc.cpp:1198
+#: rc.cpp:1164
 #, no-c-format
 msgid "N&ew Property"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 915
-#: rc.cpp:1201
+#: rc.cpp:1167
 #, no-c-format
 msgid "Add new property"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 918
-#: rc.cpp:1204
+#: rc.cpp:1170
 #, no-c-format
 msgid ""
 "<b>Add a new property to the current custom widget.</b>"
@@ -4064,115 +3707,115 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 926
-#: rc.cpp:1207
+#: rc.cpp:1173
 #, no-c-format
 msgid "Dele&te Property"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 932
-#: rc.cpp:1210
+#: rc.cpp:1176
 #, no-c-format
 msgid "Delete property"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 935
-#: rc.cpp:1213
+#: rc.cpp:1179
 #, no-c-format
 msgid "Deletes the selected property."
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 943
-#: rc.cpp:1216
+#: rc.cpp:1182
 #, no-c-format
 msgid "String"
 msgstr "Llinell"
 
 #. i18n: file ./editor/customwidgeteditor.ui line 948
-#: rc.cpp:1219
+#: rc.cpp:1185
 #, no-c-format
 msgid "CString"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 953
-#: rc.cpp:1222
+#: rc.cpp:1188
 #, no-c-format
 msgid "StringList"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 958
-#: rc.cpp:1225
+#: rc.cpp:1191
 #, no-c-format
 msgid "Bool"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 963
-#: rc.cpp:1228
+#: rc.cpp:1194
 #, no-c-format
 msgid "Int"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 968
-#: rc.cpp:1231
+#: rc.cpp:1197
 #, no-c-format
 msgid "UInt"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 978
-#: rc.cpp:1237
+#: rc.cpp:1203
 #, no-c-format
 msgid "Color"
 msgstr "Lliw"
 
 #. i18n: file ./editor/customwidgeteditor.ui line 983
-#: rc.cpp:1240
+#: rc.cpp:1206
 #, no-c-format
 msgid "Rect"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 988
-#: rc.cpp:1243
+#: rc.cpp:1209
 #, no-c-format
 msgid "Point"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 993
-#: rc.cpp:1246
+#: rc.cpp:1212
 #, no-c-format
 msgid "Size"
 msgstr "Maint"
 
 #. i18n: file ./editor/customwidgeteditor.ui line 998
-#: rc.cpp:1249
+#: rc.cpp:1215
 #, no-c-format
 msgid "Pixmap"
 msgstr "Picsfap"
 
 #. i18n: file ./editor/customwidgeteditor.ui line 1003
-#: rc.cpp:1252
+#: rc.cpp:1218
 #, no-c-format
 msgid "Palette"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 1008
-#: rc.cpp:1255
+#: rc.cpp:1221
 #, no-c-format
 msgid "Cursor"
 msgstr "Cyrchydd"
 
 #. i18n: file ./editor/customwidgeteditor.ui line 1013
-#: rc.cpp:1258
+#: rc.cpp:1224
 #, no-c-format
 msgid "SizePolicy"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 1020
-#: rc.cpp:1261
+#: rc.cpp:1227
 #, no-c-format
 msgid "Select property type"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 1023
-#: rc.cpp:1264
+#: rc.cpp:1230
 #, no-c-format
 msgid ""
 "<b>Select the type of the property.</b>"
@@ -4183,13 +3826,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 1040
-#: rc.cpp:1270 rc.cpp:1800
+#: rc.cpp:1236
 #, no-c-format
 msgid "Type"
 msgstr "Math"
 
 #. i18n: file ./editor/customwidgeteditor.ui line 1059
-#: rc.cpp:1273
+#: rc.cpp:1239
 #, no-c-format
 msgid ""
 "<b>The list of the current widget's properties.</b>"
@@ -4198,13 +3841,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 1067
-#: rc.cpp:1276
+#: rc.cpp:1242
 #, no-c-format
 msgid "Change property name"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 1070
-#: rc.cpp:1279
+#: rc.cpp:1245
 #, no-c-format
 msgid ""
 "<b>Enter a name for the property.</b>"
@@ -4213,56 +3856,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 1078
-#: rc.cpp:1282
+#: rc.cpp:1248
 #, no-c-format
 msgid "P&roperty name:"
 msgstr ""
 
 #. i18n: file ./editor/customwidgeteditor.ui line 1089
-#: rc.cpp:1285
+#: rc.cpp:1251
 #, no-c-format
 msgid "T&ype:"
 msgstr "M&ath:"
 
 #. i18n: file ./editor/listeditor.ui line 71
-#: rc.cpp:1300
+#: rc.cpp:1266
 #, no-c-format
 msgid "Re&name"
 msgstr "Ai&l-enwi"
 
-#. i18n: file ./editor/about.ui line 55
-#: rc.cpp:1309
-#, no-c-format
-msgid "Version 1.0"
-msgstr ""
-
-#. i18n: file ./editor/about.ui line 69
-#: rc.cpp:1312
-#, no-c-format
-msgid ""
-"Kommander Editor Copyright (C) 2002-2004 Marc Britton, Eric Laffoon, Michal "
-"Rudolf\n"
-"Qt Designer Copyright (C) 2000-2002 Trolltech AS. All Rights Reserved"
-msgstr ""
-
-#. i18n: file ./editor/about.ui line 91
-#: rc.cpp:1316
-#, no-c-format
-msgid ""
-"<p>"
-"This program is licensed to you under the terms of the GNU General Public "
-"License Version 2 as published by the Free Software Foundation. This gives "
-"you legal permission to copy, distribute and/or modify this software under "
-"certain conditions. For details, see the file 'COPYING' that came with this "
-"software distribution. If you did not get the file, send email to "
-"info@trolltech.com.</p>\n"
-"<p>"
-"The program is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE "
-"WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.</p>"
-msgstr ""
-
 #. i18n: file ./editor/formsettings.ui line 41
-#: rc.cpp:1326
+#: rc.cpp:1275
 #, no-c-format
 msgid ""
 "<b>Form Settings</b>"
@@ -4271,25 +3883,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/formsettings.ui line 58
-#: rc.cpp:1329
+#: rc.cpp:1278
 #, no-c-format
 msgid "&Pixmaps"
 msgstr ""
 
 #. i18n: file ./editor/formsettings.ui line 75
-#: rc.cpp:1332
+#: rc.cpp:1281
 #, no-c-format
 msgid "Save in&line"
 msgstr ""
 
 #. i18n: file ./editor/formsettings.ui line 81
-#: rc.cpp:1335
+#: rc.cpp:1284
 #, no-c-format
 msgid "Save pixmaps in the .ui files"
 msgstr ""
 
 #. i18n: file ./editor/formsettings.ui line 84
-#: rc.cpp:1338
+#: rc.cpp:1287
 #, no-c-format
 msgid ""
 "<b>Save Inline</b>"
@@ -4299,19 +3911,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/formsettings.ui line 92
-#: rc.cpp:1341
+#: rc.cpp:1290
 #, no-c-format
 msgid "Project &image file"
 msgstr ""
 
 #. i18n: file ./editor/formsettings.ui line 95
-#: rc.cpp:1344
+#: rc.cpp:1293
 #, no-c-format
 msgid "Use the Project's Image file for pixmaps"
 msgstr ""
 
 #. i18n: file ./editor/formsettings.ui line 99
-#: rc.cpp:1347
+#: rc.cpp:1296
 #, no-c-format
 msgid ""
 "<b>Use the Project's Image file for pixmaps</b>\n"
@@ -4321,13 +3933,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/formsettings.ui line 110
-#: rc.cpp:1351
+#: rc.cpp:1300
 #, no-c-format
 msgid "Specify Pixmap-Loader function (only the function's name, no parentheses.)"
 msgstr ""
 
 #. i18n: file ./editor/formsettings.ui line 113
-#: rc.cpp:1354
+#: rc.cpp:1303
 #, no-c-format
 msgid ""
 "<b>Specify Pixmap-Loader function</b>"
@@ -4336,19 +3948,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/formsettings.ui line 121
-#: rc.cpp:1357
+#: rc.cpp:1306
 #, no-c-format
 msgid "Use &function:"
 msgstr "Defn&yddio ffwythiant:"
 
 #. i18n: file ./editor/formsettings.ui line 124
-#: rc.cpp:1360
+#: rc.cpp:1309
 #, no-c-format
 msgid "Use the given function for pixmaps"
 msgstr ""
 
 #. i18n: file ./editor/formsettings.ui line 127
-#: rc.cpp:1363
+#: rc.cpp:1312
 #, no-c-format
 msgid ""
 "<b>Use a given function for pixmaps</b>"
@@ -4363,13 +3975,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/formsettings.ui line 160
-#: rc.cpp:1369
+#: rc.cpp:1318
 #, no-c-format
 msgid "Change class name"
 msgstr ""
 
 #. i18n: file ./editor/formsettings.ui line 163
-#: rc.cpp:1372
+#: rc.cpp:1321
 #, no-c-format
 msgid ""
 "<b>Enter the name of the class that will be "
@@ -4379,67 +3991,67 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/formsettings.ui line 171
-#: rc.cpp:1375
+#: rc.cpp:1324
 #, no-c-format
 msgid "A&uthor:"
 msgstr "A&wdur:"
 
 #. i18n: file ./editor/formsettings.ui line 182
-#: rc.cpp:1378
+#: rc.cpp:1327
 #, no-c-format
 msgid "Enter your name"
 msgstr ""
 
 #. i18n: file ./editor/formsettings.ui line 185
-#: rc.cpp:1381
+#: rc.cpp:1330
 #, no-c-format
 msgid "Enter your name."
 msgstr ""
 
 #. i18n: file ./editor/formsettings.ui line 193
-#: rc.cpp:1384
+#: rc.cpp:1333
 #, no-c-format
 msgid "Class &name:"
 msgstr ""
 
 #. i18n: file ./editor/formsettings.ui line 204
-#: rc.cpp:1387
+#: rc.cpp:1336
 #, no-c-format
 msgid "Co&mment:"
 msgstr "S&ylwad:"
 
 #. i18n: file ./editor/formsettings.ui line 215
-#: rc.cpp:1390
+#: rc.cpp:1339
 #, no-c-format
 msgid "Enter a comment about the form."
 msgstr ""
 
 #. i18n: file ./editor/formsettings.ui line 317
-#: rc.cpp:1408
+#: rc.cpp:1357
 #, no-c-format
 msgid "La&youts"
 msgstr ""
 
 #. i18n: file ./editor/formsettings.ui line 350
-#: rc.cpp:1411
+#: rc.cpp:1360
 #, no-c-format
 msgid "Default mar&gin:"
 msgstr ""
 
 #. i18n: file ./editor/formsettings.ui line 361
-#: rc.cpp:1414
+#: rc.cpp:1363
 #, no-c-format
 msgid "D&efault spacing:"
 msgstr ""
 
 #. i18n: file ./editor/listboxeditor.ui line 35
-#: rc.cpp:1417
+#: rc.cpp:1366
 #, no-c-format
 msgid "Edit Listbox"
 msgstr ""
 
 #. i18n: file ./editor/listboxeditor.ui line 41
-#: rc.cpp:1420
+#: rc.cpp:1369
 #, no-c-format
 msgid ""
 "<b>Edit Listbox</b>"
@@ -4451,49 +4063,49 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/listboxeditor.ui line 229
-#: rc.cpp:1472
+#: rc.cpp:1421
 #, no-c-format
 msgid "Choose a pixmap file for the selected item."
 msgstr ""
 
 #. i18n: file ./editor/listboxeditor.ui line 257
-#: rc.cpp:1481
+#: rc.cpp:1430
 #, no-c-format
 msgid "Change the selected item's text."
 msgstr ""
 
 #. i18n: file ./editor/listboxeditor.ui line 273
-#: rc.cpp:1490
+#: rc.cpp:1439
 #, no-c-format
 msgid "<b>Add a new item.</b><p>New items are appended to the list.</p>"
 msgstr ""
 
 #. i18n: file ./editor/listboxeditor.ui line 287
-#: rc.cpp:1499
+#: rc.cpp:1448
 #, no-c-format
 msgid "Delete the selected item"
 msgstr ""
 
 #. i18n: file ./editor/listboxeditor.ui line 321
-#: rc.cpp:1506
+#: rc.cpp:1455
 #, no-c-format
 msgid "Moves the selected item up."
 msgstr ""
 
 #. i18n: file ./editor/listboxeditor.ui line 338
-#: rc.cpp:1513
+#: rc.cpp:1462
 #, no-c-format
 msgid "Move the selected item down."
 msgstr ""
 
 #. i18n: file ./editor/multilineeditor.ui line 38
-#: rc.cpp:1516
+#: rc.cpp:1465
 #, no-c-format
 msgid "Edit Multiline Edit"
 msgstr ""
 
 #. i18n: file ./editor/multilineeditor.ui line 46
-#: rc.cpp:1519
+#: rc.cpp:1468
 #, no-c-format
 msgid ""
 "<b>Edit Multiline Edit</b>"
@@ -4501,43 +4113,43 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/multilineeditor.ui line 84
-#: rc.cpp:1525
+#: rc.cpp:1474
 #, no-c-format
 msgid "Enter your text here."
 msgstr ""
 
 #. i18n: file ./editor/pixmapfunction.ui line 61
-#: rc.cpp:1552
+#: rc.cpp:1501
 #, no-c-format
 msgid "&Enter arguments for loading the pixmap:"
 msgstr ""
 
 #. i18n: file ./editor/pixmapfunction.ui line 109
-#: rc.cpp:1555
+#: rc.cpp:1504
 #, no-c-format
 msgid "QPixmap("
 msgstr ""
 
 #. i18n: file ./editor/pixmapfunction.ui line 573
-#: rc.cpp:1558
+#: rc.cpp:1507
 #, no-c-format
 msgid ")"
 msgstr ""
 
 #. i18n: file ./editor/tableeditor.ui line 16
-#: rc.cpp:1570
+#: rc.cpp:1519
 #, no-c-format
 msgid "Edit Table"
 msgstr ""
 
 #. i18n: file ./editor/tableeditor.ui line 34
-#: rc.cpp:1573 rc.cpp:1576
+#: rc.cpp:1522 rc.cpp:1525
 #, no-c-format
 msgid "1"
 msgstr "1"
 
 #. i18n: file ./editor/tableeditor.ui line 218
-#: rc.cpp:1607 rc.cpp:1664
+#: rc.cpp:1556 rc.cpp:1613
 #, no-c-format
 msgid ""
 "<b>Move the selected item up.</b>"
@@ -4545,7 +4157,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/tableeditor.ui line 235
-#: rc.cpp:1614 rc.cpp:1671
+#: rc.cpp:1563 rc.cpp:1620
 #, no-c-format
 msgid ""
 "<b>Move the selected item down.</b>"
@@ -4553,67 +4165,67 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./editor/tableeditor.ui line 273
-#: rc.cpp:1623
+#: rc.cpp:1572
 #, no-c-format
 msgid "Table:"
 msgstr "Tabl:"
 
 #. i18n: file ./editor/tableeditor.ui line 348
-#: rc.cpp:1645 rc.cpp:1680
+#: rc.cpp:1594 rc.cpp:1629
 #, no-c-format
 msgid "&Label:"
 msgstr "&Label:"
 
 #. i18n: file ./editor/tableeditor.ui line 370
-#: rc.cpp:1651
+#: rc.cpp:1600
 #, no-c-format
 msgid "&Field:"
 msgstr ""
 
 #. i18n: file ./editor/tableeditor.ui line 394
-#: rc.cpp:1654
+#: rc.cpp:1603
 #, no-c-format
 msgid "<no table>"
 msgstr ""
 
 #. i18n: file ./editor/tableeditor.ui line 406
-#: rc.cpp:1657
+#: rc.cpp:1606
 #, no-c-format
 msgid "&Rows"
 msgstr "&Rhesi"
 
 #. i18n: file ./editor/tableeditor.ui line 496
-#: rc.cpp:1674
+#: rc.cpp:1623
 #, no-c-format
 msgid "&New Row"
 msgstr ""
 
 #. i18n: file ./editor/tableeditor.ui line 504
-#: rc.cpp:1677
+#: rc.cpp:1626
 #, no-c-format
 msgid "&Delete Row"
 msgstr "&Dileu Rhes"
 
 #. i18n: file ./editor/choosewidget.ui line 16
-#: rc.cpp:1705
+#: rc.cpp:1654
 #, no-c-format
 msgid "Choose Widget"
 msgstr ""
 
 #. i18n: file ./editor/choosewidget.ui line 118
-#: rc.cpp:1716
+#: rc.cpp:1665
 #, no-c-format
 msgid "Find:"
 msgstr "Canfod:"
 
 #. i18n: file ./editor/connectioneditor.ui line 35
-#: rc.cpp:1719
+#: rc.cpp:1668
 #, no-c-format
 msgid "Edit Connections"
 msgstr ""
 
 #. i18n: file ./editor/connectioneditor.ui line 41
-#: rc.cpp:1722
+#: rc.cpp:1671
 #, no-c-format
 msgid ""
 "<b>Edit Connections</b>"
@@ -4624,20 +4236,32 @@ msgid ""
 "-button to delete the connection.</p>"
 msgstr ""
 
-#. i18n: file ./editor/connectioneditor.ui line 108
-#: rc.cpp:1737
+#. i18n: file ./editor/connectioneditor.ui line 56
+#: rc.cpp:1674
+#, no-c-format
+msgid "Sender"
+msgstr "Anfonwr"
+
+#. i18n: file ./editor/connectioneditor.ui line 67
+#: rc.cpp:1677
+#, no-c-format
+msgid "Signal"
+msgstr "Arwydd"
+
+#. i18n: file ./editor/connectioneditor.ui line 78
+#: rc.cpp:1680
+#, no-c-format
+msgid "Receiver"
+msgstr "Derbynnydd"
+
+#. i18n: file ./editor/connectioneditor.ui line 111
+#: rc.cpp:1686
 #, no-c-format
 msgid "Displays the connections between the sender and the receiver."
 msgstr ""
 
-#. i18n: file ./editor/connectioneditor.ui line 116
-#: rc.cpp:1740
-#, no-c-format
-msgid "Si&gnals:"
-msgstr ""
-
-#. i18n: file ./editor/connectioneditor.ui line 127
-#: rc.cpp:1743
+#. i18n: file ./editor/connectioneditor.ui line 119
+#: rc.cpp:1689
 #, no-c-format
 msgid ""
 "<b>A list of slots for the receiver.</b>"
@@ -4646,238 +4270,147 @@ msgid ""
 "the Signal-list.</b>"
 msgstr ""
 
-#. i18n: file ./editor/connectioneditor.ui line 135
-#: rc.cpp:1746
+#. i18n: file ./editor/connectioneditor.ui line 127
+#: rc.cpp:1692
 #, no-c-format
 msgid "Connec&tions:"
 msgstr ""
 
-#. i18n: file ./editor/connectioneditor.ui line 146
-#: rc.cpp:1749
+#. i18n: file ./editor/connectioneditor.ui line 138
+#: rc.cpp:1695
 #, no-c-format
 msgid "Co&nnect"
 msgstr "Cy&sylltu"
 
-#. i18n: file ./editor/connectioneditor.ui line 152
-#: rc.cpp:1752
+#. i18n: file ./editor/connectioneditor.ui line 144
+#: rc.cpp:1698
 #, no-c-format
 msgid "Create connection"
 msgstr ""
 
-#. i18n: file ./editor/connectioneditor.ui line 155
-#: rc.cpp:1755
+#. i18n: file ./editor/connectioneditor.ui line 147
+#: rc.cpp:1701
 #, no-c-format
 msgid "Create a connection between a signal and a slot."
 msgstr ""
 
-#. i18n: file ./editor/connectioneditor.ui line 169
-#: rc.cpp:1761
+#. i18n: file ./editor/connectioneditor.ui line 155
+#: rc.cpp:1704
+#, no-c-format
+msgid "&Disconnect"
+msgstr "&Datgysylltu"
+
+#. i18n: file ./editor/connectioneditor.ui line 158
+#: rc.cpp:1707
+#, no-c-format
+msgid "Alt+D"
+msgstr ""
+
+#. i18n: file ./editor/connectioneditor.ui line 164
+#: rc.cpp:1710
 #, no-c-format
 msgid "Remove the selected connection"
 msgstr ""
 
-#. i18n: file ./editor/connectioneditor.ui line 172
-#: rc.cpp:1764
+#. i18n: file ./editor/connectioneditor.ui line 167
+#: rc.cpp:1713
 #, no-c-format
 msgid "Remove the selected connection."
 msgstr ""
 
-#. i18n: file ./editor/connectioneditor.ui line 289
-#: rc.cpp:1782
-#, no-c-format
-msgid "&Edit Slots"
-msgstr ""
-
-#. i18n: file ./editor/connectioneditor.ui line 297
-#: rc.cpp:1785
+#. i18n: file ./editor/connectioneditor.ui line 209
+#: rc.cpp:1716
 #, no-c-format
 msgid "Displays the list of signals that the widget emits."
 msgstr ""
 
-#. i18n: file ./editor/connectioneditor.ui line 319
-#: rc.cpp:1788
+#. i18n: file ./editor/connectioneditor.ui line 225
+#: rc.cpp:1719
+#, no-c-format
+msgid "Si&gnals:"
+msgstr ""
+
+#. i18n: file ./editor/connectioneditor.ui line 265
+#: rc.cpp:1722
 #, no-c-format
 msgid "&Slots:"
 msgstr ""
 
-#. i18n: file ./editor/editslots.ui line 41
-#: rc.cpp:1794
+#. i18n: file ./editor/connectioneditor.ui line 319
+#: rc.cpp:1728
 #, no-c-format
-msgid ""
-"<b>Edit Slots</b>"
-"<p>Add, edit or delete the current form's slots.</p>"
-"<p>Click the <b>Add Slot</b>-button to create a new slot; enter a slot name "
-"and choose an access mode.</p>"
-"<p>Select an entry from the list and click the <b>Delete Slot</b>-button to "
-"remove a slot; all connections using this slot will also be removed.</p>"
+msgid "Alt+O"
 msgstr ""
 
-#. i18n: file ./editor/editslots.ui line 78
-#: rc.cpp:1803
+#. i18n: file ./editor/connectioneditor.ui line 339
+#: rc.cpp:1737
 #, no-c-format
-msgid "Specifier"
+msgid "Alt+C"
 msgstr ""
-
-#. i18n: file ./editor/editslots.ui line 100
-#: rc.cpp:1809
-#, no-c-format
-msgid "In Use"
-msgstr ""
-
-#. i18n: file ./editor/editslots.ui line 133
-#: rc.cpp:1812
-#, no-c-format
-msgid "<b>This form's slots.</b><p>Select the slot you want to change or delete.</p>"
-msgstr ""
-
-#. i18n: file ./editor/editslots.ui line 172
-#: rc.cpp:1815
-#, no-c-format
-msgid "&New Slot"
-msgstr ""
-
-#. i18n: file ./editor/editslots.ui line 178
-#: rc.cpp:1821
-#, no-c-format
-msgid "<b>Add a new slot.</b><p>New slots have a default name and public access.</p>"
-msgstr ""
-
-#. i18n: file ./editor/editslots.ui line 186
-#: rc.cpp:1824
-#, no-c-format
-msgid "&Delete Slot"
-msgstr ""
-
-#. i18n: file ./editor/editslots.ui line 192
-#: rc.cpp:1830
-#, no-c-format
-msgid ""
-"<b>Delete the selected slot.</b>"
-"<p>All connections using this slot are also removed.</p>"
-msgstr ""
-
-#. i18n: file ./editor/editslots.ui line 210
-#: rc.cpp:1833
-#, no-c-format
-msgid "Slot Properties"
-msgstr ""
-
-#. i18n: file ./editor/editslots.ui line 241
-#: rc.cpp:1836
-#, no-c-format
-msgid "&Slot:"
-msgstr "&Agen :"
-
-#. i18n: file ./editor/editslots.ui line 266
-#: rc.cpp:1842 rc.cpp:1851
-#, no-c-format
-msgid ""
-"<b>Change the name of the selected slot.</b>"
-"<p>The name should include the argument list and must be syntactically "
-"correct.</p>"
-msgstr ""
-
-#. i18n: file ./editor/editslots.ui line 274
-#: rc.cpp:1845
-#, no-c-format
-msgid "&Return type:"
-msgstr ""
-
-#. i18n: file ./editor/editslots.ui line 340
-#: rc.cpp:1854
-#, no-c-format
-msgid "S&pecifier:"
-msgstr ""
-
-#. i18n: file ./editor/editslots.ui line 352
-#: rc.cpp:1857
-#, no-c-format
-msgid "Non Virtual"
-msgstr ""
-
-#. i18n: file ./editor/editslots.ui line 357
-#: rc.cpp:1860
-#, no-c-format
-msgid "Virtual"
-msgstr ""
-
-#. i18n: file ./editor/editslots.ui line 362
-#: rc.cpp:1863
-#, no-c-format
-msgid "Pure Virtual"
-msgstr ""
-
-#. i18n: file ./editor/editslots.ui line 380
-#: rc.cpp:1869 rc.cpp:1887
-#, no-c-format
-msgid ""
-"<b>Change the access policy of the slot</b>"
-"<p>All slots are created virtual and should be reimplemented in "
-"subclasses.</p>"
-msgstr ""
-
-#. i18n: file ./editor/editslots.ui line 407
-#: rc.cpp:1881
-#, no-c-format
-msgid "Private"
-msgstr "Preivat"
 
 #. i18n: file ./editor/templates/Tab_Dialog.ui line 37
-#: rc.cpp:1905 rc.cpp:1908 rc.cpp:1950 rc.cpp:1953
+#: rc.cpp:1743 rc.cpp:1746 rc.cpp:1788 rc.cpp:1791
 #, no-c-format
 msgid "Tab"
 msgstr "Tab"
 
 #. i18n: file ./editor/templates/Tab_Dialog.ui line 71
-#: rc.cpp:1914 rc.cpp:1932 rc.cpp:1938 rc.cpp:1959
+#: rc.cpp:1752 rc.cpp:1770 rc.cpp:1776 rc.cpp:1797
 #, no-c-format
 msgid "F1"
 msgstr "F1"
 
 #: widget/specials.cpp:27
-msgid "Enables or disables widget."
+msgid "Inserts the item if it will not create a duplicate."
+msgstr ""
+
+#: widget/specials.cpp:29
+msgid ""
+"Returns scripts associated with widget. This is an advanced feature that "
+"would not be commonly used."
 msgstr ""
 
 #: widget/specials.cpp:30
-msgid "Shows/hides widget."
+msgid "Stops execution of the script associated with the widget."
 msgstr ""
 
 #: widget/specials.cpp:32
-msgid "Sets widget's content."
+msgid "Returns 1 for checked boxes, 0 for unchecked."
 msgstr ""
 
 #: widget/specials.cpp:34
-msgid "Returns content of widget."
+msgid ""
+"Returns the list of child widgets contained in the parent widget. Set the "
+"<i>recursive</i> parameter to <i>true</i> to include widgets contained by "
+"child widgets."
 msgstr ""
 
 #: widget/specials.cpp:36
-msgid "Returns selected text or text of current item."
+msgid "Removes all content from the widget."
 msgstr ""
 
-#: widget/specials.cpp:38
-msgid "Selects given text or select item containing given text."
+#: widget/specials.cpp:39
+msgid "Returns number of items in a widget such as combobox or listbox."
 msgstr ""
 
 #: widget/specials.cpp:41
 msgid "Returns index of current item."
 msgstr ""
 
-#: widget/specials.cpp:43
-msgid "Selects the item at the specified index. Indexes are zero based."
+#: widget/specials.cpp:42
+msgid "Executes the script associated with the widget."
 msgstr ""
 
-#: widget/specials.cpp:46
-msgid ""
-"Sets pixmap at the given index to the specified icon. Use <i>index = -1</i> "
-"to set the pixmap for all items."
+#: widget/specials.cpp:44
+msgid "Inserts item at <i>index</i> position."
 msgstr ""
 
-#: widget/specials.cpp:48
-msgid "Returns the text of the item at the given index."
+#: widget/specials.cpp:47
+msgid "Inserts multiple items (EOL-separated) at <i>index</i> position."
 msgstr ""
 
 #: widget/specials.cpp:50
-msgid "Returns the slash-separated path to the given item in the tree."
+msgid "Returns the text of the item at the given index."
 msgstr ""
 
 #: widget/specials.cpp:52
@@ -4885,107 +4418,104 @@ msgid "Returns the depth of the current item in the tree. Root items have depth 
 msgstr ""
 
 #: widget/specials.cpp:54
+msgid "Returns the slash-separated path to the given item in the tree."
+msgstr ""
+
+#: widget/specials.cpp:56
 msgid "Removes the item with the given index."
 msgstr ""
 
-#: widget/specials.cpp:57
-msgid "Inserts item at <i>index</i> position."
-msgstr ""
-
-#: widget/specials.cpp:60
-msgid "Inserts multiple items (EOL-separated) at <i>index</i> position."
-msgstr ""
-
-#: widget/specials.cpp:63
-msgid "Inserts the item if it will not create a duplicate."
-msgstr ""
-
-#: widget/specials.cpp:65
-msgid "Returns the index of an item with the given text."
-msgstr ""
-
-#: widget/specials.cpp:67
-msgid "Removes all content from the widget."
-msgstr ""
-
-#: widget/specials.cpp:70
-msgid "Sets/unsets checkbox."
-msgstr ""
-
-#: widget/specials.cpp:72
-msgid "Returns 1 for checked boxes, 0 for unchecked."
-msgstr ""
-
-#: widget/specials.cpp:74
+#: widget/specials.cpp:59
 msgid ""
 "Sets scripts associated with widget. This is an advanced feature that would "
 "not be commonly used."
 msgstr ""
 
-#: widget/specials.cpp:76
-msgid ""
-"Returns scripts associated with widget. This is an advanced feature that "
-"would not be commonly used."
+#: widget/specials.cpp:61
+msgid "Enables or disables widget."
 msgstr ""
 
-#: widget/specials.cpp:78
-msgid "Returns type(class) of widget."
+#: widget/specials.cpp:64
+msgid "Returns selected text or text of current item."
 msgstr ""
 
-#: widget/specials.cpp:80
-msgid ""
-"Returns the list of child widgets contained in the parent widget. Set the "
-"<i>recursive</i> parameter to <i>true</i> to include widgets contained by "
-"child widgets."
+#: widget/specials.cpp:66
+msgid "Sets/unsets checkbox."
 msgstr ""
 
-#: widget/specials.cpp:83
+#: widget/specials.cpp:68
+msgid "Selects the item at the specified index. Indexes are zero based."
+msgstr ""
+
+#: widget/specials.cpp:71
 msgid "Sets maximum numeric value"
 msgstr ""
 
+#: widget/specials.cpp:73
+msgid ""
+"Sets pixmap at the given index to the specified icon. Use <i>index = -1</i> "
+"to set the pixmap for all items."
+msgstr ""
+
+#: widget/specials.cpp:75
+msgid "Selects given text or select item containing given text."
+msgstr ""
+
+#: widget/specials.cpp:78
+msgid "Sets widget's content."
+msgstr ""
+
+#: widget/specials.cpp:81
+msgid "Shows/hides widget."
+msgstr ""
+
+#: widget/specials.cpp:82
+msgid "Returns content of widget."
+msgstr ""
+
 #: widget/specials.cpp:84
-msgid "Executes the script associated with the widget."
+msgid "Returns the index of an item with the given text."
 msgstr ""
 
-#: widget/specials.cpp:85
-msgid "Stops execution of the script associated with the widget."
+#: widget/specials.cpp:86
+msgid "Returns type(class) of widget."
 msgstr ""
 
-#: widget/specials.cpp:88
+#: widget/specials.cpp:90
 msgid ""
 "Returns current widget's content. This was required inside widget A to "
 "return widget A content when requested by widget B. The new method is to use "
 "@A.text inside B instead of just @A if you just want the unaltered text."
 msgstr ""
 
-#: widget/specials.cpp:90
+#: widget/specials.cpp:92
 msgid ""
 "Returns selected text or text of current item. This is deprecated for "
 "<i>@mywidget.selected</i>."
 msgstr ""
 
-#: widget/specials.cpp:92
+#: widget/specials.cpp:94
 msgid ""
 "Does nothing. This is useful if you request a CheckBox or RadioButton to "
 "return a value where a state, typically the unchecked state, has no value. "
 "The @null prevents an error indicating it is empty."
 msgstr ""
 
-#: widget/specials.cpp:94
+#: widget/specials.cpp:96
 msgid "Returns the pid (process ID) of the current process."
 msgstr ""
 
-#: widget/specials.cpp:96
+#: widget/specials.cpp:98
 msgid ""
 "Returns DCOP identifier of current process. This is shorthand for "
 "<i>kmdr-executor-@pid</i>."
 msgstr ""
 
-#: widget/specials.cpp:99
+#: widget/specials.cpp:101
 msgid "Returns the pid of the parent Kommander window."
 msgstr ""
 
-#: widget/specials.cpp:101
+#: widget/specials.cpp:103
 msgid ""
 "Executes a script block. Bash is used if no shell is given. It is primarily "
 "for use in non-button widgets where script actions are not expected. Full "
@@ -4995,28 +4525,28 @@ msgid ""
 "unexpected.</i>"
 msgstr ""
 
-#: widget/specials.cpp:103
+#: widget/specials.cpp:105
 msgid ""
 "Returns value of an environment (shell) variable. Do not use <i>$</i>"
 " in the name. For example, <i>@env(PATH)</i>."
 msgstr ""
 
-#: widget/specials.cpp:105
+#: widget/specials.cpp:107
 msgid "Executes an external shell command."
 msgstr ""
 
-#: widget/specials.cpp:107
+#: widget/specials.cpp:109
 msgid "Parses an expression and returns computed value."
 msgstr ""
 
-#: widget/specials.cpp:109
+#: widget/specials.cpp:111
 msgid ""
 "Executes loop: values from <i>items</i> list (passed as EOL-separated "
 "string) are assigned to the variable. "
 "<br> <i>@forEach(i,A\\nB\\nC\\n)<br>  @# @i=A<br>@endif</i>"
 msgstr ""
 
-#: widget/specials.cpp:111
+#: widget/specials.cpp:113
 msgid ""
 "Executes loop: variable is set to <i>start</i> and is increased by "
 "<i>step</i> each time loop is executed. Execution stops when variable "
@@ -5024,168 +4554,174 @@ msgid ""
 "<br><i>@for(i,1,10,1)<br>  @# @i=1<br>@endif</i>."
 msgstr ""
 
-#: widget/specials.cpp:113
+#: widget/specials.cpp:115
 msgid "Returns the value of a global variable."
 msgstr ""
 
-#: widget/specials.cpp:115
+#: widget/specials.cpp:117
 msgid ""
 "Translates the string into the current language. Texts in GUI would be "
 "automatically extracted for translation."
 msgstr ""
 
-#: widget/specials.cpp:117
+#: widget/specials.cpp:119
 msgid ""
 "Executes block if expression is true (non-zero number of non-empty string.) "
 "<p>Close with <b>@endif</></p>"
 msgstr ""
 
-#: widget/specials.cpp:119
+#: widget/specials.cpp:121
 msgid ""
 "Executes another Kommander dialog. Current dialog directory is used if no "
 "path is given. Arguments may be given as named arguments which will become "
 "global variables in the new dialog. For instance: <i>var=val</i>"
 msgstr ""
 
-#: widget/specials.cpp:121
+#: widget/specials.cpp:123
 msgid "Reads setting from configration file for this dialog."
 msgstr ""
 
-#: widget/specials.cpp:123
+#: widget/specials.cpp:125
 msgid ""
 "Sets the value of a global variable. Global variables exist for the life of "
 "the Kommander window."
 msgstr ""
 
-#: widget/specials.cpp:125
+#: widget/specials.cpp:127
 msgid "Stores setting in configuration file for this dialog."
 msgstr ""
 
-#: widget/specials.cpp:127
+#: widget/specials.cpp:129
 msgid ""
 "Begin of <b>switch</b> block. Following <b>case</b> values are compared to "
 "<i>expression</i>.<p>@switch()<br>@case()<br>@end"
 msgstr ""
 
-#: widget/specials.cpp:129
+#: widget/specials.cpp:131
 msgid "Executes an external DCOP call."
 msgstr ""
 
-#: widget/specials.cpp:131
+#: widget/specials.cpp:133
 msgid "Adds a comment to EOL that Kommander will not parse"
 msgstr ""
 
-#: widget/specials.cpp:135
+#: widget/specials.cpp:137
 msgid "Returns an EOL-separated list of all values in the array."
 msgstr ""
 
-#: widget/specials.cpp:137
+#: widget/specials.cpp:139
 msgid "Returns an EOL-separated list of all keys in the array."
 msgstr ""
 
-#: widget/specials.cpp:139
+#: widget/specials.cpp:141
 msgid "Removes all elements from the array."
 msgstr ""
 
-#: widget/specials.cpp:141
+#: widget/specials.cpp:143
 msgid "Returns the number of elements in the array."
 msgstr ""
 
-#: widget/specials.cpp:143
+#: widget/specials.cpp:145
 msgid "Returns the value associated with the given key."
 msgstr ""
 
-#: widget/specials.cpp:145
+#: widget/specials.cpp:147
 msgid "Removes element with the given key from the array."
 msgstr ""
 
-#: widget/specials.cpp:147
+#: widget/specials.cpp:149
 msgid "Adds element with the given key and value to the array"
 msgstr ""
 
-#: widget/specials.cpp:149
+#: widget/specials.cpp:151
 msgid ""
 "Adds all elements in the string to the array. String should have "
 "<i>key\\tvalue\\n</i> format."
 msgstr ""
 
-#: widget/specials.cpp:152
+#: widget/specials.cpp:154
 msgid "Returns all elements in the array in <pre>key\\tvalue\\n</pre> format."
 msgstr ""
 
-#: widget/specials.cpp:157
+#: widget/specials.cpp:159
 msgid "Returns number of chars in the string."
 msgstr ""
 
-#: widget/specials.cpp:159
+#: widget/specials.cpp:161
 msgid "Checks if the the string contains the given substring."
 msgstr ""
 
-#: widget/specials.cpp:161
+#: widget/specials.cpp:163
 msgid "Returns the position of a substring in the string, or -1 if it is not found."
 msgstr ""
 
-#: widget/specials.cpp:163
-msgid "Returns the first <i>n</i> chars of the string."
-msgstr ""
-
 #: widget/specials.cpp:165
-msgid "Returns the last <i>n</i> chars of the string."
+msgid ""
+"Returns the position of a substring in the string, or -1 if it is not found. "
+"String is searched backwards"
 msgstr ""
 
 #: widget/specials.cpp:167
-msgid "Returns <i>n</i> chars of the string, starting from <i>start</i>."
+msgid "Returns the first <i>n</i> chars of the string."
 msgstr ""
 
 #: widget/specials.cpp:169
-msgid "Removes all occurrences of given substring."
+msgid "Returns the last <i>n</i> chars of the string."
 msgstr ""
 
 #: widget/specials.cpp:171
-msgid "Replaces all occurrences of the given substring with the given replacement."
+msgid "Returns <i>n</i> chars of the string, starting from <i>start</i>."
 msgstr ""
 
 #: widget/specials.cpp:173
-msgid "Converts the string to uppercase."
+msgid "Removes all occurrences of given substring."
 msgstr ""
 
 #: widget/specials.cpp:175
-msgid "Converts the string to lowercase."
+msgid "Replaces all occurrences of the given substring with the given replacement."
 msgstr ""
 
 #: widget/specials.cpp:177
+msgid "Converts the string to uppercase."
+msgstr ""
+
+#: widget/specials.cpp:179
+msgid "Converts the string to lowercase."
+msgstr ""
+
+#: widget/specials.cpp:181
 msgid ""
 "Compares two strings. Returns 0 if they are equal, -1 if the first one is "
 "lower, 1 if the first one is higher"
 msgstr ""
 
-#: widget/specials.cpp:180
+#: widget/specials.cpp:184
 msgid "Checks if the string is empty."
 msgstr ""
 
-#: widget/specials.cpp:182
+#: widget/specials.cpp:186
 msgid "Checks if the string is a valid number."
 msgstr ""
 
-#: widget/specials.cpp:184
+#: widget/specials.cpp:188
 msgid "Returns given section of a string."
 msgstr ""
 
-#: widget/specials.cpp:186
+#: widget/specials.cpp:190
 msgid ""
 "Returns the given string with %1, %2, %3 replaced with <i>arg1</i>, "
 "<i>arg2</i>, <i>arg3</i> accordingly."
 msgstr ""
 
-#: widget/specials.cpp:191
+#: widget/specials.cpp:195
 msgid "Returns content of given file."
 msgstr ""
 
-#: widget/specials.cpp:193
+#: widget/specials.cpp:197
 msgid "Writes given string to a file."
 msgstr ""
 
-#: widget/specials.cpp:195
+#: widget/specials.cpp:199
 msgid "Appends given string to the end of a file."
 msgstr ""
 
@@ -5201,16 +4737,24 @@ msgstr ""
 msgid "Unterminated @forEach ... @end block."
 msgstr ""
 
-#: widget/kommanderfunctions.cpp:313
+#: widget/kommanderfunctions.cpp:190
+msgid "Unterminated @if ... @endif block."
+msgstr ""
+
+#: widget/kommanderfunctions.cpp:210
+msgid "Unterminated @switch ... @end block."
+msgstr ""
+
+#: widget/kommanderfunctions.cpp:321
 #, c-format
 msgid "Unknown widget: @%1."
 msgstr ""
 
-#: widget/kommanderfunctions.cpp:331
+#: widget/kommanderfunctions.cpp:339
 msgid "Infinite loop: @%1 called inside @%2."
 msgstr ""
 
-#: widget/kommanderfunctions.cpp:336
+#: widget/kommanderfunctions.cpp:344
 msgid "Script for @%1 is empty."
 msgstr ""
 
@@ -5288,10 +4832,6 @@ msgstr ""
 
 #: executor/main.cpp:53
 msgid "Use given catalog for translation"
-msgstr ""
-
-#: executor/main.cpp:54
-msgid "Dialog to open"
 msgstr ""
 
 #: executor/main.cpp:60
@@ -5433,3 +4973,72 @@ msgstr ""
 #: widgets/closebutton.cpp:116
 msgid "Failed to start shell process."
 msgstr ""
+
+#~ msgid "Cu&t"
+#~ msgstr "To&rri"
+
+#~ msgid "Select &All"
+#~ msgstr "Dewis Pope&th"
+
+#~ msgid "Bring to &Front"
+#~ msgstr "Anfon i'r &Blaen"
+
+#~ msgid "Send to &Back"
+#~ msgstr "Anfon i'r &Cefn"
+
+#~ msgid "Preferences..."
+#~ msgstr "Hoffterau..."
+
+#~ msgid "New"
+#~ msgstr "Newydd"
+
+#~ msgid "&New..."
+#~ msgstr "&Newydd..."
+
+#~ msgid "Save &As..."
+#~ msgstr "Cadw &Fel..."
+
+#~ msgid "Exit"
+#~ msgstr "Terfynu"
+
+#~ msgid "&Cascade"
+#~ msgstr "&Rhaeadr"
+
+#~ msgid "Cl&ose"
+#~ msgstr "Ca&u"
+
+#~ msgid "Close Al&l"
+#~ msgstr "Cau Pope&th"
+
+#~ msgid "Ne&xt"
+#~ msgstr "Ne&saf"
+
+#~ msgid "Pre&vious"
+#~ msgstr "Cyn&t"
+
+#~ msgid "Report Bug..."
+#~ msgstr "Anfon adroddiad nam..."
+
+#~ msgid "&Report Bug..."
+#~ msgstr "&Anfon adroddiad nam..."
+
+#~ msgid "About &KDE"
+#~ msgstr "Ynglyn a &Kde"
+
+#~ msgid "What's This?"
+#~ msgstr "Beth Yw Hyn?"
+
+#~ msgid "Edit %1"
+#~ msgstr "Golygu %1"
+
+#~ msgid "Source"
+#~ msgstr "Tarddiad"
+
+#~ msgid "&Edit..."
+#~ msgstr "&Golygu..."
+
+#~ msgid "&Slot:"
+#~ msgstr "&Agen :"
+
+#~ msgid "Private"
+#~ msgstr "Preivat"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-3/kdetv.po\n"
-"POT-Creation-Date: 2004-10-12 01:19+0200\n"
+"POT-Creation-Date: 2004-11-17 01:25+0100\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -9,20 +9,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: kvideoio/v4l2dev.cpp:222 kvideoio/v4l2dev.cpp:476
 #: kvideoio/v4ldevtuner.cpp:86
 msgid "Mono"
 msgstr ""
 
-#: kvideoio/v4ldevtuner.cpp:87 plugins/video/v4l/kdetv_v4l.cpp:382
-#: plugins/video/v4l/kdetv_v4l.cpp:383
+#: kvideoio/v4l2dev.cpp:223 kvideoio/v4l2dev.cpp:478
+#: kvideoio/v4ldevtuner.cpp:87 plugins/video/v4l/kdetv_v4l.cpp:391
+#: plugins/video/v4l/kdetv_v4l.cpp:392 plugins/video/v4l2/kdetv_v4l2.cpp:314
+#: plugins/video/v4l2/kdetv_v4l2.cpp:315
 msgid "Stereo"
 msgstr ""
 
-#: kvideoio/v4ldevtuner.cpp:88 plugins/video/v4l/kdetv_v4l.cpp:386
-#: plugins/video/v4l/kdetv_v4l.cpp:387
+#: kvideoio/v4l2dev.cpp:224 kvideoio/v4l2dev.cpp:480
+#: kvideoio/v4ldevtuner.cpp:88 plugins/video/v4l/kdetv_v4l.cpp:395
+#: plugins/video/v4l/kdetv_v4l.cpp:396 plugins/video/v4l2/kdetv_v4l2.cpp:318
+#: plugins/video/v4l2/kdetv_v4l2.cpp:319
 msgid "Language 1"
 msgstr ""
 
+#: kvideoio/v4l2dev.cpp:225 kvideoio/v4l2dev.cpp:482
 #: kvideoio/v4ldevtuner.cpp:89
 msgid "Language 2"
 msgstr ""
@@ -46,19 +52,19 @@ msgid "Video Input Methods"
 msgstr ""
 
 #. i18n: file ./libkdetv/videowidget.ui line 48
-#: libkdetv/channeleditor.cpp:117 rc.cpp:7 rc.cpp:173 rc.cpp:648 rc.cpp:669
+#: libkdetv/channeleditor.cpp:117 rc.cpp:7 rc.cpp:182 rc.cpp:663 rc.cpp:684
 #, no-c-format
 msgid "Name"
 msgstr "Enw"
 
 #. i18n: file ./libkdetv/videowidget.ui line 59
-#: rc.cpp:10 rc.cpp:179 rc.cpp:654 rc.cpp:675
+#: rc.cpp:10 rc.cpp:188 rc.cpp:669 rc.cpp:690
 #, no-c-format
 msgid "Author"
 msgstr "Awdur"
 
 #. i18n: file ./libkdetv/videowidget.ui line 70
-#: rc.cpp:13 rc.cpp:176 rc.cpp:651 rc.cpp:672
+#: rc.cpp:13 rc.cpp:185 rc.cpp:666 rc.cpp:687
 #, no-c-format
 msgid "Description"
 msgstr "Disgrifiad"
@@ -76,7 +82,7 @@ msgid "Video plugins selector. Check all the input methods you want to use."
 msgstr ""
 
 #. i18n: file ./libkdetv/videowidget.ui line 97
-#: rc.cpp:22 rc.cpp:639 rc.cpp:660
+#: rc.cpp:22 rc.cpp:654 rc.cpp:675
 #, no-c-format
 msgid "Configure Selected Plugin..."
 msgstr ""
@@ -104,7 +110,7 @@ msgstr ""
 #. i18n: file ./libkdetv/videowidget.ui line 175
 #: rc.cpp:34
 #, no-c-format
-msgid "Fix to 4:3 Aspect Ratio:"
+msgid "Fix to 4:3 aspect ratio:"
 msgstr ""
 
 #. i18n: file ./libkdetv/videowidget.ui line 178
@@ -138,7 +144,7 @@ msgstr ""
 #. i18n: file ./libkdetv/videowidget.ui line 197
 #: rc.cpp:49
 #, no-c-format
-msgid "Best fit"
+msgid "Best Fit"
 msgstr ""
 
 #. i18n: file ./libkdetv/videowidget.ui line 207
@@ -164,12 +170,6 @@ msgstr ""
 #, no-c-format
 msgid "Save to:"
 msgstr "Cadw i:"
-
-#. i18n: file ./libkdetv/videowidget.ui line 242
-#: rc.cpp:64
-#, no-c-format
-msgid "Browse"
-msgstr "Pori"
 
 #. i18n: file ./libkdetv/videowidget.ui line 270
 #: rc.cpp:70
@@ -213,230 +213,236 @@ msgstr ""
 msgid "Only enabled channels are shown in sidebar if configured in channels tab"
 msgstr ""
 
-#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 107
+#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 63
 #: rc.cpp:103
 #, no-c-format
-msgid "Accept changes"
+msgid "&Guess"
 msgstr ""
 
-#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 121
-#: rc.cpp:109
+#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 73
+#: rc.cpp:106
 #, no-c-format
-msgid "Do not accept changes"
-msgstr ""
+msgid "URL:"
+msgstr "URL:"
 
-#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 145
+#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 86
+#: rc.cpp:109 rc.cpp:203 rc.cpp:603
+#, no-c-format
+msgid "Description:"
+msgstr "Disgrifiad:"
+
+#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 94
 #: rc.cpp:112
 #, no-c-format
 msgid "En&abled"
 msgstr "Al&luogir"
 
-#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 199
+#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 105
 #: rc.cpp:115
+#, no-c-format
+msgid "Channel uses global picture settings"
+msgstr ""
+
+#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 115
+#: rc.cpp:118
+#, no-c-format
+msgid "Channel"
+msgstr "Sianel"
+
+#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 169
+#: rc.cpp:121
 #, no-c-format
 msgid "Station number"
 msgstr ""
 
-#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 221
-#: rc.cpp:118
+#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 191
+#: rc.cpp:124
 #, no-c-format
 msgid "&Name:"
 msgstr "&Enw:"
 
-#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 232
-#: rc.cpp:121
+#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 202
+#: rc.cpp:127
 #, no-c-format
 msgid "Station name"
 msgstr ""
 
-#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 260
-#: rc.cpp:124
+#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 235
+#: rc.cpp:133
 #, no-c-format
 msgid "Frequency:"
 msgstr "Amlder :"
 
-#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 302
-#: rc.cpp:127 rc.cpp:318 rc.cpp:324 rc.cpp:327
+#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 277
+#: rc.cpp:136 rc.cpp:327 rc.cpp:333 rc.cpp:336
 #, no-c-format
 msgid " MHz"
 msgstr ""
 
-#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 305
-#: rc.cpp:130
+#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 280
+#: rc.cpp:139
 #, no-c-format
 msgid "Station frequency"
 msgstr ""
 
-#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 332
-#: rc.cpp:134 rc.cpp:469
+#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 307
+#: rc.cpp:143 rc.cpp:478
 #, no-c-format
 msgid "&Up"
 msgstr "I &Fyny"
 
-#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 335
-#: rc.cpp:137
+#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 310
+#: rc.cpp:146
 #, no-c-format
 msgid "Increase frequency"
 msgstr ""
 
-#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 343
-#: rc.cpp:140
+#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 318
+#: rc.cpp:149
 #, no-c-format
 msgid "&Down"
 msgstr "I &Lawr"
 
-#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 346
-#: rc.cpp:143
+#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 321
+#: rc.cpp:152
 #, no-c-format
 msgid "Decrease frequency"
 msgstr ""
 
-#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 380
-#: rc.cpp:146 rc.cpp:301 rc.cpp:588 rc.cpp:763
-#, no-c-format
-msgid "Source:"
-msgstr "Tarddiad:"
-
-#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 388
-#: rc.cpp:149
-#, no-c-format
-msgid "Select video source here"
-msgstr ""
-
-#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 406
-#: rc.cpp:152 rc.cpp:298 rc.cpp:585 rc.cpp:624 rc.cpp:766
+#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 331
+#: rc.cpp:155 rc.cpp:307 rc.cpp:612 rc.cpp:784
 #, no-c-format
 msgid "Encoding:"
 msgstr "Amgodiad:"
 
-#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 414
-#: rc.cpp:155
+#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 339
+#: rc.cpp:158 rc.cpp:310 rc.cpp:615 rc.cpp:781
+#, no-c-format
+msgid "Source:"
+msgstr "Tarddiad:"
+
+#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 347
+#: rc.cpp:161
+#, no-c-format
+msgid "Select video source here"
+msgstr ""
+
+#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 355
+#: rc.cpp:164
 #, no-c-format
 msgid "Select station encoding here"
 msgstr ""
 
-#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 438
-#: rc.cpp:158
-#, no-c-format
-msgid "URL:"
-msgstr "URL:"
-
-#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 446
-#: rc.cpp:161 rc.cpp:194 rc.cpp:576
-#, no-c-format
-msgid "Description:"
-msgstr "Disgrifiad:"
-
-#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 472
-#: rc.cpp:164
-#, no-c-format
-msgid "&Guess"
-msgstr ""
-
-#. i18n: file ./libkdetv/filterwidget.ui line 16
-#: rc.cpp:167
-#, no-c-format
-msgid "FilterWidget"
-msgstr ""
-
-#. i18n: file ./libkdetv/filterwidget.ui line 27
+#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 405
 #: rc.cpp:170
+#, no-c-format
+msgid "Accept changes"
+msgstr ""
+
+#. i18n: file ./libkdetv/channelpropertiesdialog.ui line 419
+#: rc.cpp:176
+#, no-c-format
+msgid "Do not accept changes"
+msgstr ""
+
+#. i18n: file ./libkdetv/filterwidget.ui line 24
+#: rc.cpp:179
 #, no-c-format
 msgid "Postprocessing"
 msgstr ""
 
-#. i18n: file ./libkdetv/filterwidget.ui line 113
-#: rc.cpp:182
-#, no-c-format
-msgid "Configure postprocess filter"
-msgstr ""
+#. i18n: file ./libkdetv/filterwidget.ui line 110
+#: rc.cpp:191
+#, fuzzy, no-c-format
+msgid "Configure Postprocess Filter..."
+msgstr "Ffurfio Bar Offer ..."
 
-#. i18n: file ./libkdetv/filterwidget.ui line 123
-#: rc.cpp:185
+#. i18n: file ./libkdetv/filterwidget.ui line 120
+#: rc.cpp:194
 #, no-c-format
 msgid "Deinterlacing"
 msgstr ""
 
-#. i18n: file ./libkdetv/filterwidget.ui line 134
-#: rc.cpp:188
-#, no-c-format
-msgid "Configure deinterlacer"
-msgstr ""
+#. i18n: file ./libkdetv/filterwidget.ui line 131
+#: rc.cpp:197
+#, fuzzy, no-c-format
+msgid "Configure Deinterlacer..."
+msgstr "Ffurfio Bar Offer ..."
 
-#. i18n: file ./libkdetv/filterwidget.ui line 184
-#: rc.cpp:191 rc.cpp:573
+#. i18n: file ./libkdetv/filterwidget.ui line 181
+#: rc.cpp:200 rc.cpp:600
 #, no-c-format
 msgid "Author:"
 msgstr "Awdur:"
 
-#. i18n: file ./libkdetv/filterwidget.ui line 213
-#: rc.cpp:197
+#. i18n: file ./libkdetv/filterwidget.ui line 210
+#: rc.cpp:206
 #, no-c-format
-msgid "Select Deinterlacer:"
+msgid "Select deinterlacer:"
 msgstr ""
 
 #. i18n: file ./libkdetv/generalwidget.ui line 33
-#: rc.cpp:201
+#: rc.cpp:210
 #, no-c-format
 msgid "Channel-File-Location Configuration"
 msgstr ""
 
 #. i18n: file ./libkdetv/generalwidget.ui line 42
-#: libkdetv/devicewidgetimpl.cpp:40 rc.cpp:204
+#: rc.cpp:213
 #, no-c-format
 msgid "Device"
 msgstr "Dyfais"
 
 #. i18n: file ./libkdetv/generalwidget.ui line 53
-#: rc.cpp:207
+#: rc.cpp:216
 #, no-c-format
 msgid "Channel File"
 msgstr ""
 
 #. i18n: file ./libkdetv/generalwidget.ui line 74
-#: libkdetv/channeleditor.cpp:137 rc.cpp:210
+#: libkdetv/channeleditor.cpp:137 rc.cpp:219
 #, no-c-format
 msgid "Edit..."
 msgstr "Golygu..."
 
 #. i18n: file ./libkdetv/generalwidget.ui line 77
-#: rc.cpp:213
+#: rc.cpp:222
 #, no-c-format
 msgid "Opens file dialog to pick a file"
 msgstr ""
 
 #. i18n: file ./libkdetv/generalwidget.ui line 121
-#: rc.cpp:216
+#: rc.cpp:225
 #, no-c-format
-msgid "Mousewheel Behaviour"
+msgid "Mousewheel Behavior"
 msgstr ""
 
 #. i18n: file ./libkdetv/generalwidget.ui line 132
-#: rc.cpp:219
+#: rc.cpp:228
 #, no-c-format
 msgid "Mousewheel UP switches to HIGHER channel number"
 msgstr ""
 
 #. i18n: file ./libkdetv/generalwidget.ui line 143
-#: rc.cpp:222
+#: rc.cpp:231
 #, no-c-format
 msgid "Mousewheel UP switches to LOWER channel number"
 msgstr ""
 
 #. i18n: file ./libkdetv/generalwidget.ui line 156
-#: rc.cpp:225
+#: rc.cpp:234
 #, no-c-format
 msgid "Application Properties"
 msgstr ""
 
 #. i18n: file ./libkdetv/generalwidget.ui line 173
-#: rc.cpp:228
+#: rc.cpp:237
 #, no-c-format
 msgid "Show only enabled channels on the channel side-bar"
 msgstr ""
 
 #. i18n: file ./libkdetv/generalwidget.ui line 176
-#: rc.cpp:231
+#: rc.cpp:240
 #, no-c-format
 msgid ""
 "Selecting this option will set the channel side-bar to show only those "
@@ -444,55 +450,55 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./libkdetv/generalwidget.ui line 198
-#: rc.cpp:234
+#: rc.cpp:243
 #, no-c-format
 msgid "Number to start with if \"Renumber\" is clicked in channels page"
 msgstr ""
 
 #. i18n: file ./libkdetv/generalwidget.ui line 206
-#: rc.cpp:237
+#: rc.cpp:246
 #, no-c-format
 msgid "Channel numbering starts at:"
 msgstr ""
 
 #. i18n: file ./libkdetv/generalwidget.ui line 251
-#: rc.cpp:240 rc.cpp:708
+#: rc.cpp:249 rc.cpp:723
 #, no-c-format
 msgid " ms"
 msgstr "meil"
 
 #. i18n: file ./libkdetv/generalwidget.ui line 271
-#: rc.cpp:243
+#: rc.cpp:252
 #, no-c-format
 msgid "Max. keypress interval time:"
 msgstr ""
 
 #. i18n: file ./libkdetv/generalwidget.ui line 277
-#: rc.cpp:246
+#: rc.cpp:255
 #, no-c-format
 msgid "Maximum time between key presses to change channel"
 msgstr ""
 
 #. i18n: file ./libkdetv/generalwidget.ui line 280
-#: rc.cpp:249
+#: rc.cpp:258
 #, no-c-format
 msgid "Specifies the maximum time interval between key presses to change channel."
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 24
-#: rc.cpp:252
+#: rc.cpp:261
 #, no-c-format
 msgid "Channel Wizard"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 34
-#: rc.cpp:255
+#: rc.cpp:264
 #, no-c-format
 msgid "Welcome to the Channel Scanner"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 72
-#: rc.cpp:258
+#: rc.cpp:267
 #, no-c-format
 msgid ""
 "Welcome to the Channel Wizard.\n"
@@ -504,73 +510,73 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 125
-#: rc.cpp:263
+#: rc.cpp:272
 #, no-c-format
 msgid "Available Station Detection Methods"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 136
-#: rc.cpp:266
+#: rc.cpp:275
 #, no-c-format
 msgid "VBI decoder is running"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 173
-#: rc.cpp:269
+#: rc.cpp:278
 #, no-c-format
 msgid "OK to scan"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 194
-#: rc.cpp:272
+#: rc.cpp:281
 #, no-c-format
 msgid "Video plugin supports signal strength readback"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 204
-#: rc.cpp:275
+#: rc.cpp:284
 #, no-c-format
 msgid "Station Name Autodetection"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 215
-#: rc.cpp:278
+#: rc.cpp:287
 #, no-c-format
 msgid "Get station names from VBI (if broadcasted)"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 305
-#: rc.cpp:282
+#: rc.cpp:291
 #, no-c-format
 msgid "Scanning Settings"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 416
-#: rc.cpp:286
+#: rc.cpp:295
 #, no-c-format
 msgid "Scanning Type"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 433
-#: rc.cpp:289
+#: rc.cpp:298
 #, no-c-format
 msgid "Scan frequency range (for experienced users)"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 441
-#: rc.cpp:292
+#: rc.cpp:301
 #, no-c-format
 msgid "Import and scan a predefined channel list (recommended)"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 462
-#: rc.cpp:295 rc.cpp:582
+#: rc.cpp:304 rc.cpp:609
 #, no-c-format
 msgid "Video Source && Encoding"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 510
-#: rc.cpp:304
+#: rc.cpp:313
 #, no-c-format
 msgid ""
 "Please select Video Source and Norm you want to use.\n"
@@ -579,13 +585,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 557
-#: rc.cpp:308
+#: rc.cpp:317
 #, no-c-format
 msgid "Prepare for Frequency Range Scan"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 643
-#: rc.cpp:312
+#: rc.cpp:321
 #, no-c-format
 msgid ""
 "You decided to scan a frequency range. If you are unsure about the frequency "
@@ -593,73 +599,73 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 662
-#: rc.cpp:315
+#: rc.cpp:324
 #, no-c-format
 msgid "Scanning Range && Precision Setup"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 690
-#: rc.cpp:321
+#: rc.cpp:330
 #, no-c-format
 msgid "Frequency increment:"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 732
-#: rc.cpp:330
+#: rc.cpp:339
 #, no-c-format
 msgid "Maximum frequency:"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 740
-#: rc.cpp:333
+#: rc.cpp:342
 #, no-c-format
 msgid "Minimum frequency:"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 753
-#: rc.cpp:336
+#: rc.cpp:345
 #, no-c-format
 msgid "Select frequency range to scan:"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 816
-#: rc.cpp:339
+#: rc.cpp:348
 #, no-c-format
 msgid "Prepare for Predefined-Channels Scan"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 927
-#: rc.cpp:343
+#: rc.cpp:352
 #, no-c-format
-msgid "Unused Frequency Table Entries are:"
+msgid "Unused Frequency Table Entries Are"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 938
-#: rc.cpp:346
+#: rc.cpp:355
 #, no-c-format
 msgid "Not added to result list"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 952
-#: rc.cpp:349
+#: rc.cpp:358
 #, no-c-format
 msgid "Disabled"
 msgstr "Analluogir"
 
 #. i18n: file ./libkdetv/chwizard.ui line 970
-#: rc.cpp:352
+#: rc.cpp:361
 #, no-c-format
 msgid "Frequency Table Selection"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 981
-#: rc.cpp:355
+#: rc.cpp:364
 #, no-c-format
 msgid "Select frequency table to scan:"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 1014
-#: rc.cpp:358
+#: rc.cpp:367
 #, no-c-format
 msgid ""
 "You decided to scan a predefined frequency list.\n"
@@ -668,55 +674,55 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 1044
-#: rc.cpp:362
+#: rc.cpp:371
 #, no-c-format
 msgid "Scanning"
 msgstr "Arsylwi"
 
 #. i18n: file ./libkdetv/chwizard.ui line 1207
-#: rc.cpp:367
+#: rc.cpp:376
 #, no-c-format
 msgid "Finished"
 msgstr "Wedi Gorffen"
 
 #. i18n: file ./libkdetv/chwizard.ui line 1216
-#: rc.cpp:370
+#: rc.cpp:379
 #, no-c-format
 msgid "Number"
 msgstr "Rhif"
 
 #. i18n: file ./libkdetv/chwizard.ui line 1227
-#: rc.cpp:373 rc.cpp:396
+#: rc.cpp:382 rc.cpp:405
 #, no-c-format
 msgid "Channel Name"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 1238
-#: rc.cpp:376
+#: rc.cpp:385
 #, no-c-format
 msgid "Frequency"
 msgstr "Amlder"
 
 #. i18n: file ./libkdetv/chwizard.ui line 1259
-#: rc.cpp:379
+#: rc.cpp:388
 #, no-c-format
 msgid "What Should be Done With the Channels Found?"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 1270
-#: rc.cpp:382
+#: rc.cpp:391
 #, no-c-format
 msgid "Replace current channel list"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 1284
-#: rc.cpp:385
+#: rc.cpp:394
 #, no-c-format
 msgid "Append to current channel list"
 msgstr ""
 
 #. i18n: file ./libkdetv/chwizard.ui line 1370
-#: rc.cpp:389
+#: rc.cpp:398
 #, no-c-format
 msgid ""
 "Scanning finished.\n"
@@ -725,103 +731,109 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./libkdetv/channelwidget.ui line 28
-#: rc.cpp:393
+#: rc.cpp:402
 #, no-c-format
 msgid "Channel Number"
 msgstr ""
 
 #. i18n: file ./libkdetv/channelwidget.ui line 83
-#: rc.cpp:399
+#: rc.cpp:408
 #, no-c-format
-msgid "&New"
-msgstr "&Newydd"
+msgid "&New..."
+msgstr "&Newydd..."
 
 #. i18n: file ./libkdetv/channelwidget.ui line 86
-#: rc.cpp:402
+#: rc.cpp:411
 #, no-c-format
 msgid "Create a new channel entry"
 msgstr ""
 
 #. i18n: file ./libkdetv/channelwidget.ui line 89
-#: rc.cpp:405
+#: rc.cpp:414
 #, no-c-format
 msgid "Use New to create a new channel entry."
 msgstr ""
 
+#. i18n: file ./libkdetv/channelwidget.ui line 100
+#: rc.cpp:417
+#, no-c-format
+msgid "&Edit..."
+msgstr "&Golygu..."
+
 #. i18n: file ./libkdetv/channelwidget.ui line 103
-#: rc.cpp:411
+#: rc.cpp:420
 #, no-c-format
 msgid "Edit the selected channel"
 msgstr ""
 
 #. i18n: file ./libkdetv/channelwidget.ui line 106
-#: rc.cpp:414
+#: rc.cpp:423
 #, no-c-format
 msgid "Use Edit to modify the details of the selected channel"
 msgstr ""
 
 #. i18n: file ./libkdetv/channelwidget.ui line 117
-#: rc.cpp:417
+#: rc.cpp:426
 #, no-c-format
 msgid "&Set Channel"
 msgstr ""
 
 #. i18n: file ./libkdetv/channelwidget.ui line 120
-#: rc.cpp:420
+#: rc.cpp:429
 #, no-c-format
 msgid "Change to the currently selected channel"
 msgstr ""
 
 #. i18n: file ./libkdetv/channelwidget.ui line 123
-#: rc.cpp:423
+#: rc.cpp:432
 #, no-c-format
 msgid "Set the currently selected channel to be displayed"
 msgstr ""
 
 #. i18n: file ./libkdetv/channelwidget.ui line 134
-#: rc.cpp:426
+#: rc.cpp:435
 #, no-c-format
-msgid "&Rename"
-msgstr "&Ail-enwi"
+msgid "&Rename..."
+msgstr "Ail-&enwi..."
 
 #. i18n: file ./libkdetv/channelwidget.ui line 137
-#: rc.cpp:429
+#: rc.cpp:438
 #, no-c-format
 msgid "Rename the selected channel"
 msgstr ""
 
 #. i18n: file ./libkdetv/channelwidget.ui line 140
-#: rc.cpp:432
+#: rc.cpp:441
 #, no-c-format
 msgid "Use Rename to give the channels a custom name"
 msgstr ""
 
 #. i18n: file ./libkdetv/channelwidget.ui line 151
-#: rc.cpp:435
+#: rc.cpp:444
 #, no-c-format
 msgid "Remo&ve"
 msgstr "&Gwaredu"
 
 #. i18n: file ./libkdetv/channelwidget.ui line 154
-#: rc.cpp:438
+#: rc.cpp:447
 #, no-c-format
 msgid "Remove the selected channel from the list"
 msgstr ""
 
 #. i18n: file ./libkdetv/channelwidget.ui line 157
-#: rc.cpp:441
+#: rc.cpp:450
 #, no-c-format
 msgid "Use Remove to permanently remove the channel from the channel list"
 msgstr ""
 
 #. i18n: file ./libkdetv/channelwidget.ui line 182
-#: rc.cpp:444
+#: rc.cpp:453
 #, no-c-format
 msgid "Set channel on select"
 msgstr ""
 
 #. i18n: file ./libkdetv/channelwidget.ui line 188
-#: rc.cpp:448
+#: rc.cpp:457
 #, no-c-format
 msgid ""
 "Check this if you want a channel to be set immediately if it is selected "
@@ -829,37 +841,37 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./libkdetv/channelwidget.ui line 199
-#: rc.cpp:451
+#: rc.cpp:460
 #, no-c-format
 msgid "Ren&umber"
 msgstr ""
 
 #. i18n: file ./libkdetv/channelwidget.ui line 202
-#: rc.cpp:454
+#: rc.cpp:463
 #, no-c-format
 msgid "Renumber the channels"
 msgstr ""
 
 #. i18n: file ./libkdetv/channelwidget.ui line 205
-#: rc.cpp:457
+#: rc.cpp:466
 #, no-c-format
 msgid "Renumbers the channels starting at value configured in general page"
 msgstr ""
 
 #. i18n: file ./libkdetv/channelwidget.ui line 216
-#: rc.cpp:460
+#: rc.cpp:469
 #, no-c-format
 msgid "&Kill Duplicates"
 msgstr ""
 
 #. i18n: file ./libkdetv/channelwidget.ui line 219
-#: rc.cpp:463
+#: rc.cpp:472
 #, no-c-format
 msgid "Remove duplicate channels (same frequency and source) from the list"
 msgstr ""
 
 #. i18n: file ./libkdetv/channelwidget.ui line 222
-#: rc.cpp:466
+#: rc.cpp:475
 #, no-c-format
 msgid ""
 "Use to remove duplicate channels (same frequency and source) from the "
@@ -867,13 +879,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./libkdetv/channelwidget.ui line 244
-#: rc.cpp:472
+#: rc.cpp:481
 #, no-c-format
 msgid "Move the selected channel up"
 msgstr ""
 
 #. i18n: file ./libkdetv/channelwidget.ui line 247
-#: rc.cpp:475
+#: rc.cpp:484
 #, no-c-format
 msgid ""
 "Use Move Up to move the selected channel to a higher channel number in the "
@@ -881,73 +893,111 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./libkdetv/channelwidget.ui line 258
-#: rc.cpp:478
+#: rc.cpp:487
 #, no-c-format
 msgid "Do&wn"
 msgstr "I la&wr"
 
 #. i18n: file ./libkdetv/channelwidget.ui line 261
-#: rc.cpp:481
+#: rc.cpp:490
 #, no-c-format
 msgid "Move the selected channel down"
 msgstr ""
 
 #. i18n: file ./libkdetv/channelwidget.ui line 264
-#: rc.cpp:484
+#: rc.cpp:493
 #, no-c-format
 msgid "Use Move Down to move the selected channel to a lower channel number"
 msgstr ""
 
+#. i18n: file ./libkdetv/picturewidget.ui line 47
+#: rc.cpp:496
+#, fuzzy, no-c-format
+msgid "Picture Settings"
+msgstr "Gosodiadau"
+
 #. i18n: file ./libkdetv/picturewidget.ui line 58
-#: rc.cpp:487
+#: rc.cpp:499
 #, no-c-format
 msgid "Brightness:"
 msgstr "Disgleirdeb:"
 
 #. i18n: file ./libkdetv/picturewidget.ui line 69
-#: rc.cpp:490
+#: rc.cpp:502
 #, no-c-format
 msgid "Color:"
 msgstr "Lliw:"
 
 #. i18n: file ./libkdetv/picturewidget.ui line 80
-#: rc.cpp:493
+#: rc.cpp:505
 #, no-c-format
 msgid "Hue:"
 msgstr "Arlliw :"
 
 #. i18n: file ./libkdetv/picturewidget.ui line 91
-#: rc.cpp:496
+#: rc.cpp:508
 #, no-c-format
 msgid "Contrast:"
 msgstr "Cyferbyniant :"
 
 #. i18n: file ./libkdetv/picturewidget.ui line 102
-#: rc.cpp:499
+#: rc.cpp:511
 #, no-c-format
 msgid "Whiteness:"
 msgstr ""
 
+#. i18n: file ./libkdetv/picturewidget.ui line 170
+#: rc.cpp:514
+#, no-c-format
+msgid "Apply To"
+msgstr "Gweithredu i"
+
+#. i18n: file ./libkdetv/picturewidget.ui line 181
+#: rc.cpp:517
+#, no-c-format
+msgid "Current channel only"
+msgstr ""
+
+#. i18n: file ./libkdetv/picturewidget.ui line 184
+#: rc.cpp:520
+#, no-c-format
+msgid "Modifies only picture settings of currently tuned channel"
+msgstr ""
+
+#. i18n: file ./libkdetv/picturewidget.ui line 192
+#: rc.cpp:523
+#, no-c-format
+msgid "Current channel and set as global default"
+msgstr ""
+
+#. i18n: file ./libkdetv/picturewidget.ui line 195
+#: rc.cpp:526
+#, no-c-format
+msgid ""
+"Modifies picture settings of current channel and sets them as global "
+"defaults (for all channels not using private picture settings)"
+msgstr ""
+
 #. i18n: file ./libkdetv/soundwidget.ui line 53
-#: rc.cpp:503
+#: rc.cpp:530
 #, no-c-format
 msgid "Sound Properties"
 msgstr ""
 
 #. i18n: file ./libkdetv/soundwidget.ui line 81
-#: rc.cpp:506
+#: rc.cpp:533
 #, no-c-format
 msgid "Mute mixer element on exit"
 msgstr ""
 
 #. i18n: file ./libkdetv/soundwidget.ui line 84
-#: rc.cpp:509
+#: rc.cpp:536
 #, no-c-format
 msgid "Mute mixer on application exit"
 msgstr ""
 
 #. i18n: file ./libkdetv/soundwidget.ui line 87
-#: rc.cpp:512
+#: rc.cpp:539
 #, no-c-format
 msgid ""
 "Mute mixer on application exit. On some systems, TV sound is not "
@@ -956,25 +1006,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./libkdetv/soundwidget.ui line 103
-#: rc.cpp:515
+#: rc.cpp:542
 #, no-c-format
 msgid "Volume increment:"
 msgstr ""
 
 #. i18n: file ./libkdetv/soundwidget.ui line 128
-#: rc.cpp:518 rc.cpp:1015
+#: rc.cpp:545 rc.cpp:1077
 #, no-c-format
 msgid " %"
 msgstr " %"
 
 #. i18n: file ./libkdetv/soundwidget.ui line 137
-#: rc.cpp:521
+#: rc.cpp:548
 #, no-c-format
 msgid "Volume increment stepwidth"
 msgstr ""
 
 #. i18n: file ./libkdetv/soundwidget.ui line 140
-#: rc.cpp:524
+#: rc.cpp:551
 #, no-c-format
 msgid ""
 "If volume is changed via hotkey or DCOP (mostly when using KDELIRC), it is "
@@ -982,7 +1032,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./libkdetv/soundwidget.ui line 176
-#: rc.cpp:527
+#: rc.cpp:554
 #, no-c-format
 msgid ""
 "Volume restoration delay:\n"
@@ -990,7 +1040,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./libkdetv/soundwidget.ui line 182
-#: rc.cpp:531
+#: rc.cpp:558
 #, no-c-format
 msgid ""
 "Amount of time to elapse before volume is restored to its previous settings "
@@ -999,19 +1049,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./libkdetv/soundwidget.ui line 207
-#: rc.cpp:534
+#: rc.cpp:561
 #, no-c-format
 msgid "  msec"
 msgstr ""
 
 #. i18n: file ./libkdetv/soundwidget.ui line 219
-#: rc.cpp:537
+#: rc.cpp:564
 #, no-c-format
 msgid "Volume restoration delay"
 msgstr ""
 
 #. i18n: file ./libkdetv/soundwidget.ui line 222
-#: rc.cpp:540
+#: rc.cpp:567
 #, no-c-format
 msgid ""
 "Amount of time elapsed before volume is restored to its previous levels when "
@@ -1020,25 +1070,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./libkdetv/soundwidget.ui line 234
-#: rc.cpp:543
+#: rc.cpp:570
 #, no-c-format
 msgid "Mixer Driver Selection"
 msgstr ""
 
 #. i18n: file ./libkdetv/soundwidget.ui line 248
-#: rc.cpp:547
+#: rc.cpp:574
 #, no-c-format
 msgid "Configure Mixer..."
 msgstr ""
 
 #. i18n: file ./libkdetv/soundwidget.ui line 251
-#: rc.cpp:550
+#: rc.cpp:577
 #, no-c-format
 msgid "Configure mixer options"
 msgstr ""
 
 #. i18n: file ./libkdetv/soundwidget.ui line 254
-#: rc.cpp:553
+#: rc.cpp:580
 #, no-c-format
 msgid ""
 "Configure mixer. On most systems, TV sound is connected to the \"Line\" or "
@@ -1046,13 +1096,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./libkdetv/soundwidget.ui line 262
-#: rc.cpp:556
+#: rc.cpp:583
 #, no-c-format
 msgid "Select mixer driver"
 msgstr ""
 
 #. i18n: file ./libkdetv/soundwidget.ui line 265
-#: rc.cpp:559
+#: rc.cpp:586
 #, no-c-format
 msgid ""
 "Mixer driver selector. Choose the mixer suitable for your system. On most "
@@ -1060,141 +1110,123 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./libkdetv/soundwidget.ui line 273
-#: rc.cpp:562
+#: rc.cpp:589
 #, no-c-format
 msgid "Select mixer driver:"
 msgstr ""
 
 #. i18n: file ./libkdetv/soundwidget.ui line 284
-#: rc.cpp:565
+#: rc.cpp:592
 #, no-c-format
 msgid "Shows mixer driver author"
 msgstr ""
 
 #. i18n: file ./libkdetv/soundwidget.ui line 298
-#: rc.cpp:569
+#: rc.cpp:596
 #, no-c-format
 msgid "Shows mixer driver description"
 msgstr ""
 
 #. i18n: file ./libkdetv/channelimportdlg.ui line 16
-#: rc.cpp:579
+#: rc.cpp:606
 #, no-c-format
 msgid "Kdetv Channel Import"
 msgstr ""
 
 #. i18n: file ./libkdetv/channelimportdlg.ui line 72
-#: rc.cpp:591
+#: rc.cpp:618
 #, no-c-format
 msgid "Frequency List Selection"
 msgstr ""
 
 #. i18n: file ./libkdetv/channelimportdlg.ui line 83
-#: rc.cpp:594
+#: rc.cpp:621
 #, no-c-format
 msgid "Frequency list:"
 msgstr ""
 
 #. i18n: file ./libkdetv/channelimportdlg.ui line 98
-#: rc.cpp:597
+#: rc.cpp:624
 #, no-c-format
 msgid "Import Mode"
 msgstr ""
 
 #. i18n: file ./libkdetv/channelimportdlg.ui line 109
-#: rc.cpp:600
+#: rc.cpp:627
 #, no-c-format
 msgid "Append to current channels"
 msgstr ""
 
 #. i18n: file ./libkdetv/channelimportdlg.ui line 117
-#: rc.cpp:603
+#: rc.cpp:630
 #, no-c-format
 msgid "Replace current channels"
 msgstr ""
 
 #. i18n: file ./libkdetv/channelimportdlg.ui line 158
-#: rc.cpp:609 rc.cpp:895
+#: rc.cpp:636 rc.cpp:957
 #, no-c-format
 msgid "&Import"
 msgstr "&Mewnforio"
 
 #. i18n: file ./libkdetv/finetuningdlg.ui line 16
-#: rc.cpp:612
+#: rc.cpp:639
 #, no-c-format
 msgid "Finetuning"
 msgstr ""
 
 #. i18n: file ./libkdetv/finetuningdlg.ui line 38
-#: rc.cpp:615
+#: rc.cpp:642
 #, no-c-format
 msgid "Please finetune manually:"
 msgstr ""
 
 #. i18n: file ./libkdetv/finetuningdlg.ui line 63
-#: rc.cpp:618
+#: rc.cpp:645
 #, no-c-format
 msgid "&Ignore Station"
 msgstr ""
 
 #. i18n: file ./libkdetv/finetuningdlg.ui line 71
-#: rc.cpp:621
+#: rc.cpp:648
 #, no-c-format
 msgid "&Add Station"
 msgstr ""
 
-#. i18n: file ./libkdetv/devicewidget.ui line 61
-#: rc.cpp:627
-#, no-c-format
-msgid "Select device:"
-msgstr ""
-
-#. i18n: file ./libkdetv/devicewidget.ui line 69
-#: rc.cpp:630
-#, no-c-format
-msgid "Select source:"
-msgstr ""
-
-#. i18n: file ./libkdetv/pluginwidget.ui line 24
-#: rc.cpp:633
-#, no-c-format
-msgid "PluginWidget"
-msgstr ""
-
-#. i18n: file ./libkdetv/pluginwidget.ui line 45
-#: rc.cpp:636
+#. i18n: file ./libkdetv/pluginwidget.ui line 42
+#: rc.cpp:651
 #, no-c-format
 msgid "Misc Plugins"
 msgstr ""
 
-#. i18n: file ./libkdetv/pluginwidget.ui line 68
-#: rc.cpp:642
+#. i18n: file ./libkdetv/pluginwidget.ui line 65
+#: rc.cpp:657
 #, no-c-format
 msgid "Configure the selected plugin"
 msgstr ""
 
-#. i18n: file ./libkdetv/pluginwidget.ui line 71
-#: rc.cpp:645
+#. i18n: file ./libkdetv/pluginwidget.ui line 68
+#: rc.cpp:660
 #, no-c-format
 msgid ""
 "Click on one of the plugins from the list above.  If the plugin is "
 "configurable, pressing this button will allow you to set the options."
 msgstr ""
 
-#. i18n: file ./libkdetv/pluginwidget.ui line 164
-#: rc.cpp:657
+#. i18n: file ./libkdetv/pluginwidget.ui line 161
+#: rc.cpp:672
 #, no-c-format
 msgid "VBI Decoder"
 msgstr ""
 
-#. i18n: file ./libkdetv/pluginwidget.ui line 195
-#: rc.cpp:663
+#. i18n: file ./libkdetv/pluginwidget.ui line 192
+#: rc.cpp:678
 #, no-c-format
 msgid "Launch plugin configuration dialog"
 msgstr ""
 
-#. i18n: file ./libkdetv/pluginwidget.ui line 198
-#: rc.cpp:666
+#. i18n: file ./libkdetv/pluginwidget.ui line 195
+#: rc.cpp:681
 #, no-c-format
 msgid ""
 "Launches plugin configuration dialog. Disabled if the currently selected "
@@ -1202,295 +1234,301 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./plugins/osd/elegant/elegantconfigwidget.ui line 16
-#: rc.cpp:678
+#: rc.cpp:693
 #, no-c-format
 msgid "Elegant Plugin Configuration"
 msgstr ""
 
 #. i18n: file ./plugins/osd/elegant/elegantconfigwidget.ui line 37
-#: rc.cpp:681
+#: rc.cpp:696
 #, no-c-format
 msgid "&Position"
 msgstr "&Lleoliad"
 
 #. i18n: file ./plugins/osd/elegant/elegantconfigwidget.ui line 62
-#: rc.cpp:684
+#: rc.cpp:699
 #, no-c-format
 msgid "&Margin:"
 msgstr "&Ymyl:"
 
 #. i18n: file ./plugins/osd/elegant/elegantconfigwidget.ui line 175
-#: rc.cpp:687
+#: rc.cpp:702
 #, no-c-format
 msgid "&Appearance"
 msgstr "&Ymddangosiad"
 
 #. i18n: file ./plugins/osd/elegant/elegantconfigwidget.ui line 245
-#: rc.cpp:690
+#: rc.cpp:705
 #, no-c-format
 msgid "&Size:"
 msgstr "&Maint:"
 
 #. i18n: file ./plugins/osd/elegant/elegantconfigwidget.ui line 278
-#: rc.cpp:693
+#: rc.cpp:708
 #, no-c-format
 msgid "Underline"
 msgstr "Tanlinellu"
 
 #. i18n: file ./plugins/osd/elegant/elegantconfigwidget.ui line 325
-#: rc.cpp:696
+#: rc.cpp:711
 #, no-c-format
 msgid "Bold"
 msgstr "Trwm"
 
 #. i18n: file ./plugins/osd/elegant/elegantconfigwidget.ui line 346
-#: rc.cpp:702
+#: rc.cpp:717
 #, no-c-format
 msgid "Auto Size"
 msgstr ""
 
 #. i18n: file ./plugins/osd/elegant/elegantconfigwidget.ui line 354
-#: rc.cpp:705
+#: rc.cpp:720
 #, no-c-format
 msgid "Display time:"
 msgstr ""
 
-#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 28
-#: rc.cpp:711
+#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 16
+#: rc.cpp:726
 #, no-c-format
-msgid "Channel suite information"
+msgid "ChannelSuiteWidget"
 msgstr ""
 
-#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 49
-#: rc.cpp:714
+#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 31
+#: rc.cpp:729
+#, no-c-format
+msgid "Channel Suite Information"
+msgstr ""
+
+#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 42
+#: rc.cpp:732
 #, no-c-format
 msgid "Contributor:"
 msgstr "Cyfrannwr :"
 
-#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 57
-#: rc.cpp:717
+#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 50
+#: rc.cpp:735
 #, no-c-format
 msgid "Country:"
 msgstr "Gwlad:"
 
-#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 70
-#: rc.cpp:720
-#, no-c-format
-msgid "Region:"
+#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 58
+#: rc.cpp:738
+#, fuzzy, no-c-format
+msgid "City/Region:"
 msgstr "Ardal :"
 
-#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 83
-#: rc.cpp:723
+#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 66
+#: rc.cpp:741
 #, no-c-format
 msgid "Comment:"
 msgstr "Sylwad:"
 
-#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 96
-#: rc.cpp:726
+#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 74
+#: rc.cpp:744
 #, no-c-format
 msgid "Type:"
 msgstr "Math:"
 
-#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 104
-#: rc.cpp:729
+#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 82
+#: rc.cpp:747
 #, no-c-format
 msgid "Last updated:"
 msgstr ""
 
-#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 112
-#: rc.cpp:732
+#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 90
+#: rc.cpp:750
 #, no-c-format
 msgid "Now"
 msgstr "Nawr"
 
-#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 127
-#: rc.cpp:735
+#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 130
+#: rc.cpp:753
 #, no-c-format
-msgid "Get suite"
+msgid "Get Suite"
 msgstr ""
 
-#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 151
-#: rc.cpp:741
+#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 154
+#: rc.cpp:759
 #, no-c-format
 msgid "Select your country:"
 msgstr ""
 
-#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 159
-#: rc.cpp:744
+#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 162
+#: rc.cpp:762
 #, no-c-format
 msgid "Index URL:"
 msgstr ""
 
-#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 175
-#: rc.cpp:748
+#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 178
+#: rc.cpp:766
 #, no-c-format
 msgid "Load Index"
 msgstr ""
 
-#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 181
-#: rc.cpp:751
+#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 184
+#: rc.cpp:769
 #, no-c-format
 msgid "Region"
 msgstr "Ardal"
 
-#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 192
-#: rc.cpp:754
+#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 195
+#: rc.cpp:772
 #, no-c-format
 msgid "Type"
 msgstr "Math"
 
-#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 203
-#: rc.cpp:757
+#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 206
+#: rc.cpp:775
 #, no-c-format
 msgid "Comment"
 msgstr "Sylwad"
 
-#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 227
-#: rc.cpp:760
+#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 230
+#: rc.cpp:778
 #, no-c-format
 msgid "Select channel suite:"
 msgstr ""
 
-#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 263
-#: rc.cpp:769
-#, no-c-format
-msgid "Contribute suite"
-msgstr ""
+#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 266
+#: rc.cpp:787
+#, fuzzy, no-c-format
+msgid "Contribute Suite"
+msgstr "Cyfrannwr :"
 
-#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 319
-#: rc.cpp:772
+#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 322
+#: rc.cpp:790
 #, no-c-format
 msgid ""
-"<p align=\"center\">If you like to contribute your current channel \n"
+"<p align=\"center\">If you like to contribute your current channel\n"
 "file to kdetv, click the button below. To check your current\n"
 "channel suite for correctness before, you can use the channel\n"
 "editor on the next tab page.</p>"
 msgstr ""
 
-#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 352
-#: rc.cpp:778
+#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 355
+#: rc.cpp:796
 #, no-c-format
-msgid "Click here"
+msgid "Click Here"
 msgstr ""
 
-#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 417
-#: rc.cpp:781
-#, no-c-format
-msgid "Channel editor"
-msgstr ""
+#. i18n: file ./plugins/misc/channelsuite/channelsuitewidget.ui line 420
+#: rc.cpp:799
+#, fuzzy, no-c-format
+msgid "Channel Editor"
+msgstr "Sianel %1"
 
 #. i18n: file ./plugins/misc/telex/telexui.rc line 14
-#: rc.cpp:784
+#: rc.cpp:802
 #, no-c-format
 msgid "&Teletext"
 msgstr ""
 
 #. i18n: file ./plugins/video/v4l/v4lplugincfg.ui line 16
-#: rc.cpp:787
+#: rc.cpp:805
 #, no-c-format
 msgid "Video4Linux Plugin Settings"
 msgstr ""
 
 #. i18n: file ./plugins/video/v4l/v4lplugincfg.ui line 33
-#: rc.cpp:790
+#: rc.cpp:808 rc.cpp:886
 #, no-c-format
 msgid "Autoconfiguration"
 msgstr ""
 
 #. i18n: file ./plugins/video/v4l/v4lplugincfg.ui line 44
-#: rc.cpp:793
+#: rc.cpp:811 rc.cpp:889
 #, no-c-format
 msgid "Autoconfigure video display method"
 msgstr ""
 
 #. i18n: file ./plugins/video/v4l/v4lplugincfg.ui line 47
-#: rc.cpp:796
+#: rc.cpp:814 rc.cpp:892
 #, no-c-format
 msgid "Autoselect video display method"
 msgstr ""
 
 #. i18n: file ./plugins/video/v4l/v4lplugincfg.ui line 57
-#: rc.cpp:799
+#: rc.cpp:817 rc.cpp:912
 #, no-c-format
 msgid "Grab && Display Method"
 msgstr ""
 
 #. i18n: file ./plugins/video/v4l/v4lplugincfg.ui line 75
-#: rc.cpp:802
+#: rc.cpp:820
 #, no-c-format
 msgid ""
 "XVideo with shared memory\n"
-"(Recommended)"
+"(recommended)"
 msgstr ""
 
 #. i18n: file ./plugins/video/v4l/v4lplugincfg.ui line 78
-#: rc.cpp:806
+#: rc.cpp:824 rc.cpp:918
 #, no-c-format
 msgid "Preferred, deinterlacing is possible"
 msgstr ""
 
 #. i18n: file ./plugins/video/v4l/v4lplugincfg.ui line 86
-#: rc.cpp:809
+#: rc.cpp:827
 #, no-c-format
 msgid "X11 with shared memory"
 msgstr ""
 
 #. i18n: file ./plugins/video/v4l/v4lplugincfg.ui line 89
-#: rc.cpp:812 rc.cpp:818 rc.cpp:824
+#: rc.cpp:830 rc.cpp:836 rc.cpp:842
 #, no-c-format
 msgid "No deinterlacing"
 msgstr ""
 
 #. i18n: file ./plugins/video/v4l/v4lplugincfg.ui line 97
-#: rc.cpp:815
+#: rc.cpp:833
 #, no-c-format
 msgid "OpenGL (experimental)"
 msgstr ""
 
 #. i18n: file ./plugins/video/v4l/v4lplugincfg.ui line 108
-#: rc.cpp:821
+#: rc.cpp:839
 #, no-c-format
 msgid "X11"
 msgstr ""
 
 #. i18n: file ./plugins/video/v4l/v4lplugincfg.ui line 119
-#: rc.cpp:827
+#: rc.cpp:845
 #, no-c-format
-msgid "XVideo (Recommended)"
+msgid "XVideo (recommended)"
 msgstr ""
 
 #. i18n: file ./plugins/video/v4l/v4lplugincfg.ui line 122
-#: rc.cpp:830
+#: rc.cpp:848 rc.cpp:924
 #, no-c-format
 msgid "Deinterlacing is possible"
 msgstr ""
 
 #. i18n: file ./plugins/video/v4l/v4lplugincfg.ui line 132
-#: rc.cpp:833
+#: rc.cpp:851
 #, no-c-format
 msgid "&Overlay"
 msgstr "&Troshaenu"
 
 #. i18n: file ./plugins/video/v4l/v4lplugincfg.ui line 143
-#: rc.cpp:836
+#: rc.cpp:854
 #, no-c-format
 msgid "Prefer video overlay if available"
 msgstr ""
 
 #. i18n: file ./plugins/video/v4l/v4lplugincfg.ui line 146
-#: rc.cpp:839
+#: rc.cpp:857
 #, no-c-format
 msgid "Fallback for really slow computers"
 msgstr ""
 
 #. i18n: file ./plugins/video/v4l/v4lplugincfg.ui line 154
-#: rc.cpp:842
+#: rc.cpp:860
 #, no-c-format
 msgid "Change display resolution for fullscreen video"
 msgstr ""
 
 #. i18n: file ./plugins/video/v4l/v4lplugincfg.ui line 170
-#: rc.cpp:845
+#: rc.cpp:863
 #, no-c-format
 msgid ""
 "<b>Warning:</b>"
@@ -1499,225 +1537,249 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./plugins/video/v4l/v4lplugincfg.ui line 180
-#: rc.cpp:848
+#: rc.cpp:866
 #, no-c-format
-msgid "Frame rate"
+msgid "Frame Rate"
 msgstr ""
 
 #. i18n: file ./plugins/video/v4l/v4lplugincfg.ui line 191
-#: rc.cpp:851
+#: rc.cpp:869 rc.cpp:898
 #, no-c-format
 msgid "Full frame rate (50fps PAL, 60fps NTSC)"
 msgstr ""
 
 #. i18n: file ./plugins/video/v4l/v4lplugincfg.ui line 194
-#: rc.cpp:854
+#: rc.cpp:872 rc.cpp:901
 #, no-c-format
 msgid "Higher CPU usage, only makes sense in conjunction with deinterlace filters"
 msgstr ""
 
 #. i18n: file ./plugins/video/v4l/v4lplugincfg.ui line 205
-#: rc.cpp:858
+#: rc.cpp:876 rc.cpp:905
 #, no-c-format
 msgid "Half frame rate (25fps PAL, 30fps NTSC)"
 msgstr ""
 
 #. i18n: file ./plugins/video/v4l/v4lplugincfg.ui line 208
-#: rc.cpp:861
+#: rc.cpp:879 rc.cpp:908
 #, no-c-format
 msgid "Lower CPU usage, less image quality when deinterlacing"
 msgstr ""
 
+#. i18n: file ./plugins/video/v4l2/v4l2configwidget.ui line 16
+#: rc.cpp:883
+#, fuzzy, no-c-format
+msgid "V4L2 Plugin Settings"
+msgstr "Gosodiadau"
+
+#. i18n: file ./plugins/video/v4l2/v4l2configwidget.ui line 60
+#: rc.cpp:895
+#, no-c-format
+msgid "Frame rate"
+msgstr ""
+
+#. i18n: file ./plugins/video/v4l2/v4l2configwidget.ui line 118
+#: rc.cpp:915
+#, no-c-format
+msgid "XVideo with shared memory"
+msgstr ""
+
+#. i18n: file ./plugins/video/v4l2/v4l2configwidget.ui line 129
+#: rc.cpp:921
+#, fuzzy, no-c-format
+msgid "XVideo"
+msgstr "Fideo"
+
 #. i18n: file ./plugins/filter/overscan/overscanui.rc line 4
-#: rc.cpp:865 rc.cpp:904
+#: rc.cpp:927 rc.cpp:966
 #, no-c-format
 msgid "&Video"
 msgstr "&Fideo"
 
 #. i18n: file ./clients/kdetvpart/kdetvpartui.rc line 4
-#: rc.cpp:868 rc.cpp:892 rc.cpp:928
+#: rc.cpp:930 rc.cpp:954 rc.cpp:990
 #, no-c-format
 msgid "&kdetv"
 msgstr ""
 
 #. i18n: file ./clients/kdetvpart/kdetvpartui.rc line 18
-#: rc.cpp:874
+#: rc.cpp:936
 #, no-c-format
 msgid "Vo&lume"
 msgstr "Le&fel Sain"
 
 #. i18n: file ./clients/kdetvpart/kdetvpartui.rc line 40
-#: rc.cpp:886 rc.cpp:922
+#: rc.cpp:948 rc.cpp:984
 #, no-c-format
 msgid "Volume Toolbar"
 msgstr ""
 
 #. i18n: file ./clients/kdetvpart/kdetvpartui.rc line 47
 #: clients/kdetv/main.cpp:26 clients/kdetv/main.cpp:50
-#: clients/kdetv/mainwindow.cpp:401 clients/kdetvpart/kdetvpart.cpp:90
-#: clients/kdetvpart/kdetvpart.cpp:146 rc.cpp:889 rc.cpp:925
+#: clients/kdetv/mainwindow.cpp:404 clients/kdetvpart/kdetvpart.cpp:90
+#: clients/kdetvpart/kdetvpart.cpp:146 rc.cpp:951 rc.cpp:987
 #, no-c-format
 msgid "kdetv"
 msgstr ""
 
 #. i18n: file ./clients/kdetv/kdetvui.rc line 22
-#: rc.cpp:901
+#: rc.cpp:963
 #, no-c-format
 msgid "&Audio"
 msgstr "&Sain"
 
 #. i18n: file ./clients/kdetv/kdetvui.rc line 59
-#: rc.cpp:919
+#: rc.cpp:981
 #, no-c-format
 msgid "View Toolbar"
 msgstr ""
 
 #. i18n: file ./clients/kdetv/kdetvsettingswidget.ui line 16
-#: rc.cpp:931
+#: rc.cpp:993
 #, no-c-format
 msgid "GUI Options"
 msgstr ""
 
 #. i18n: file ./clients/kdetv/kdetvsettingswidget.ui line 30
-#: libkdetv/generalwidgetimpl.cpp:46 rc.cpp:934
+#: libkdetv/generalwidgetimpl.cpp:46 rc.cpp:996
 #, no-c-format
 msgid "General"
 msgstr "Cyffredinol"
 
 #. i18n: file ./clients/kdetv/kdetvsettingswidget.ui line 55
-#: rc.cpp:937
+#: rc.cpp:999
 #, no-c-format
 msgid "Always on top"
 msgstr "O Hyd yn Weladwy"
 
 #. i18n: file ./clients/kdetv/kdetvsettingswidget.ui line 58
-#: rc.cpp:940
+#: rc.cpp:1002
 #, no-c-format
 msgid "If checked, application never gets hidden behind other windows"
 msgstr ""
 
 #. i18n: file ./clients/kdetv/kdetvsettingswidget.ui line 66
-#: rc.cpp:943
+#: rc.cpp:1005
 #, no-c-format
 msgid "Disable screensaver when:"
 msgstr ""
 
 #. i18n: file ./clients/kdetv/kdetvsettingswidget.ui line 69
-#: rc.cpp:946
+#: rc.cpp:1008
 #, no-c-format
 msgid "Check to disable the KDE screensaver according to the chosen mode"
 msgstr ""
 
 #. i18n: file ./clients/kdetv/kdetvsettingswidget.ui line 92
-#: rc.cpp:949
+#: rc.cpp:1011
 #, no-c-format
 msgid "Application is Running (always)"
 msgstr ""
 
 #. i18n: file ./clients/kdetv/kdetvsettingswidget.ui line 97
-#: rc.cpp:952
+#: rc.cpp:1014
 #, no-c-format
 msgid "TV Window is Visible"
 msgstr ""
 
 #. i18n: file ./clients/kdetv/kdetvsettingswidget.ui line 102
-#: rc.cpp:955
+#: rc.cpp:1017
 #, no-c-format
 msgid "TV Window is in Fullscreen Mode"
 msgstr ""
 
 #. i18n: file ./clients/kdetv/kdetvsettingswidget.ui line 112
-#: rc.cpp:958
+#: rc.cpp:1020
 #, no-c-format
 msgid "Select when you want the screensaver to be disabled"
 msgstr ""
 
 #. i18n: file ./clients/kdetv/kdetvsettingswidget.ui line 115
-#: rc.cpp:961
+#: rc.cpp:1023
 #, no-c-format
 msgid "This lets you select the screensaver deactivation behavior"
 msgstr ""
 
 #. i18n: file ./clients/kdetv/kdetvsettingswidget.ui line 123
-#: rc.cpp:964
+#: rc.cpp:1026
 #, no-c-format
 msgid "Show window on all virtual screens"
 msgstr ""
 
 #. i18n: file ./clients/kdetv/kdetvsettingswidget.ui line 131
-#: rc.cpp:967
+#: rc.cpp:1029
 #, no-c-format
 msgid "Do not show window on all virtual screens when displaying fullscreen"
 msgstr ""
 
 #. i18n: file ./clients/kdetv/kdetvsettingswidget.ui line 158
-#: rc.cpp:970
+#: rc.cpp:1032
 #, no-c-format
-msgid "When cycling through view modes, use the following modes:"
+msgid "When Cycling Through View Modes, Use Following Modes"
 msgstr ""
 
 #. i18n: file ./clients/kdetv/kdetvsettingswidget.ui line 161
-#: rc.cpp:973
+#: rc.cpp:1035
 #, no-c-format
 msgid "Hint: Doubleclicking the TV window cycles through viewmodes"
 msgstr ""
 
 #. i18n: file ./clients/kdetv/kdetvsettingswidget.ui line 172
-#: rc.cpp:976 rc.cpp:991
+#: rc.cpp:1038 rc.cpp:1053
 #, no-c-format
 msgid "Normal view mode"
 msgstr ""
 
 #. i18n: file ./clients/kdetv/kdetvsettingswidget.ui line 180
-#: rc.cpp:979 rc.cpp:994
+#: rc.cpp:1041 rc.cpp:1056
 #, no-c-format
 msgid "Fullscreen view mode"
 msgstr ""
 
 #. i18n: file ./clients/kdetv/kdetvsettingswidget.ui line 188
-#: rc.cpp:982 rc.cpp:997
+#: rc.cpp:1044 rc.cpp:1059
 #, no-c-format
 msgid "TV view mode"
 msgstr ""
 
 #. i18n: file ./clients/kdetv/kdetvsettingswidget.ui line 198
-#: rc.cpp:985
+#: rc.cpp:1047
 #, no-c-format
-msgid "Hide taskbar icon and show tray icon instead in:"
+msgid "Hide Taskbar Icon and Show Tray Icon Instead In"
 msgstr ""
 
 #. i18n: file ./clients/kdetv/kdetvsettingswidget.ui line 201
-#: rc.cpp:988
+#: rc.cpp:1050
 #, no-c-format
 msgid "Hint: Clicking the tray icon will raise kdetv window"
 msgstr ""
 
 #. i18n: file ./clients/kdetvscreensaver/saverconfigwidget.ui line 16
-#: rc.cpp:1000
+#: rc.cpp:1062
 #, no-c-format
 msgid "TV Screensaver Configuration"
 msgstr ""
 
 #. i18n: file ./clients/kdetvscreensaver/saverconfigwidget.ui line 27
-#: rc.cpp:1003
+#: rc.cpp:1065
 #, no-c-format
 msgid "Screensaver Settings"
 msgstr ""
 
 #. i18n: file ./clients/kdetvscreensaver/saverconfigwidget.ui line 38
-#: rc.cpp:1006
+#: rc.cpp:1068
 #, no-c-format
 msgid "Video device:"
 msgstr ""
 
 #. i18n: file ./clients/kdetvscreensaver/saverconfigwidget.ui line 51
-#: rc.cpp:1009
+#: rc.cpp:1071
 #, no-c-format
 msgid "Volume:"
 msgstr "Lefel Sain:"
 
 #. i18n: file ./clients/kdetvscreensaver/saverconfigwidget.ui line 59
-#: rc.cpp:1012
+#: rc.cpp:1074
 #, no-c-format
 msgid "Channel:"
 msgstr "Sianel:"
@@ -1731,67 +1793,67 @@ msgid "Configure Image Filters"
 msgstr ""
 
 #: libkdetv/channeleditor.cpp:133
-msgid "Open homepage..."
+msgid "Open Homepage"
 msgstr ""
 
-#: libkdetv/kdetv.cpp:274
+#: libkdetv/kdetv.cpp:291
 msgid "Select Channel File for Import"
 msgstr ""
 
-#: libkdetv/kdetv.cpp:285
+#: libkdetv/kdetv.cpp:302
 msgid ""
 "Unable to import channels\n"
 "(insufficient file access rights or wrong format chosen?)"
 msgstr ""
 
-#: libkdetv/channelimportdlgimpl.cpp:70 libkdetv/kdetv.cpp:286
-msgid "Error importing channels"
+#: libkdetv/channelimportdlgimpl.cpp:70 libkdetv/kdetv.cpp:303
+msgid "Error Importing Channels"
 msgstr ""
 
-#: libkdetv/kdetv.cpp:296
+#: libkdetv/kdetv.cpp:313
 msgid "Select Channel File for Export"
 msgstr ""
 
-#: libkdetv/kdetv.cpp:303
+#: libkdetv/kdetv.cpp:320
 msgid ""
 "Unable to export channels\n"
 "(insufficient file access rights?)"
 msgstr ""
 
-#: libkdetv/kdetv.cpp:304
-msgid "Error exporting channels"
+#: libkdetv/kdetv.cpp:321
+msgid "Error Exporting Channels"
 msgstr ""
 
-#: libkdetv/kdetv.cpp:323
+#: libkdetv/kdetv.cpp:340
 msgid "Migrate old KWinTV configuration?"
 msgstr ""
 
-#: libkdetv/kdetv.cpp:324
+#: libkdetv/kdetv.cpp:341
 msgid "Kdetv"
 msgstr ""
 
-#: libkdetv/channelimportdlgimpl.cpp:83 libkdetv/kdetv.cpp:347
+#: libkdetv/channelimportdlgimpl.cpp:82 libkdetv/kdetv.cpp:364
 #: plugins/misc/channelsuite/channelsuitewidgetimpl.cpp:191
 msgid ""
 "Are you sure you want to import?\n"
 "This will overwrite your current channel file."
 msgstr ""
 
-#: libkdetv/channelimportdlgimpl.cpp:84 libkdetv/kdetv.cpp:348
+#: libkdetv/channelimportdlgimpl.cpp:83 libkdetv/kdetv.cpp:365
 #: plugins/misc/channelsuite/channelsuitewidgetimpl.cpp:192
-msgid "Continue import?"
+msgid "Continue Import?"
 msgstr ""
 
-#: libkdetv/kdetv.cpp:685
+#: libkdetv/kdetv.cpp:703
 #, c-format
 msgid "Snapshot saved to %1"
 msgstr ""
 
-#: libkdetv/kdetv.cpp:688
+#: libkdetv/kdetv.cpp:706
 msgid "Error saving snapshot. Configure a working directory in the settings dialog."
 msgstr ""
 
-#: libkdetv/kdetv.cpp:692
+#: libkdetv/kdetv.cpp:710
 msgid "Error grabbing image. Snapshots may not be supported with this plugin."
 msgstr ""
 
@@ -1800,7 +1862,7 @@ msgid "Error importing frequency list file. Check your installation."
 msgstr ""
 
 #: libkdetv/channelscanner.cpp:299 libkdetv/channelscanner.cpp:456
-msgid "Error reading frequency file"
+msgid "Error Reading Frequency File"
 msgstr ""
 
 #: libkdetv/channelscanner.cpp:488
@@ -1811,7 +1873,7 @@ msgstr ""
 msgid "Scanning... (%1)"
 msgstr ""
 
-#: libkdetv/channelscanner.cpp:588
+#: libkdetv/channelscanner.cpp:593
 msgid "Station found. Waiting for network name..."
 msgstr ""
 
@@ -1823,16 +1885,12 @@ msgstr "Ategion"
 msgid "Configure Plugins"
 msgstr ""
 
-#: libkdetv/viewmanager.cpp:83
-msgid "Select Source"
-msgstr ""
-
-#: libkdetv/channelwidgetimpl.cpp:129 libkdetv/viewmanager.cpp:251
-#: libkdetv/viewmanager.cpp:253
+#: libkdetv/channelwidgetimpl.cpp:124 libkdetv/viewmanager.cpp:228
+#: libkdetv/viewmanager.cpp:230
 msgid "Channels"
 msgstr "Sianeli"
 
-#: libkdetv/viewmanager.cpp:270
+#: libkdetv/viewmanager.cpp:247
 msgid "Filter Chain Status"
 msgstr ""
 
@@ -1844,11 +1902,11 @@ msgstr "Fideo"
 msgid "Configure Video Options"
 msgstr ""
 
-#: libkdetv/settingsdialog.cpp:47
+#: libkdetv/settingsdialog.cpp:46
 msgid "Settings"
 msgstr "Gosodiadau"
 
-#: libkdetv/channelstore.cpp:148
+#: libkdetv/channelstore.cpp:138
 #, c-format
 msgid "Channel %1"
 msgstr "Sianel %1"
@@ -1865,43 +1923,33 @@ msgstr ""
 msgid " Configuration"
 msgstr ""
 
-#: libkdetv/picturewidgetimpl.cpp:37
+#: libkdetv/picturewidgetimpl.cpp:40
 msgid "Picture"
 msgstr "Llun"
 
-#: libkdetv/picturewidgetimpl.cpp:38
+#: libkdetv/picturewidgetimpl.cpp:41
 msgid "Configure Picture Options"
 msgstr ""
 
-#: libkdetv/devicewidgetimpl.cpp:41
-msgid "Configure Device Options"
-msgstr ""
-
-#: libkdetv/devicewidgetimpl.cpp:64
-msgid ""
-"No devices found.\n"
-"For more information, please read the FAQ at\n"
-"http://www.kdetv.org"
-msgstr ""
-
-#: libkdetv/devicewidgetimpl.cpp:65
-msgid "Error: No Devices Found"
-msgstr ""
-
-#: libkdetv/channelwidgetimpl.cpp:130
+#: libkdetv/channelwidgetimpl.cpp:125
 msgid "Configure Channel Settings"
 msgstr ""
 
-#: libkdetv/channelwidgetimpl.cpp:285
-msgid "Rename channel"
-msgstr ""
+#: libkdetv/channelwidgetimpl.cpp:278
+#, fuzzy
+msgid "Rename Channel"
+msgstr "Sianel:"
 
-#: libkdetv/channelwidgetimpl.cpp:286 libkdetv/channelwidgetimpl.cpp:299
+#: libkdetv/channelwidgetimpl.cpp:279
 msgid "Please enter a new name for this channel:"
 msgstr ""
 
-#: libkdetv/sourcemanager.cpp:500
-msgid "Video plugin error"
+#: libkdetv/sourcemanager.cpp:531
+msgid "Unnamed"
+msgstr "Di-enw"
+
+#: libkdetv/sourcemanager.cpp:555
+msgid "Video Plugin Error"
 msgstr ""
 
 #: libkdetv/channelimportdlgimpl.cpp:69
@@ -1923,7 +1971,7 @@ msgid "test_elegant"
 msgstr ""
 
 #: plugins/osd/elegant/test_elegant.cpp:25
-msgid "Command-line tool for testing Elegant."
+msgid "Command-line tool for testing Elegant"
 msgstr ""
 
 #: plugins/osd/elegant/elegant.cpp:142
@@ -1967,6 +2015,75 @@ msgstr ""
 msgid "Channelsuites"
 msgstr ""
 
+#: plugins/misc/channelsuite/channelsuitewidgetimpl.cpp:220
+msgid "Mandatory field \"Contributor\" is empty."
+msgstr ""
+
+#: plugins/misc/channelsuite/channelsuitewidgetimpl.cpp:221
+msgid "Mandatory Field: Contributor"
+msgstr ""
+
+#: plugins/misc/channelsuite/channelsuitewidgetimpl.cpp:227
+msgid "Mandatory field \"Country\" is empty."
+msgstr ""
+
+#: plugins/misc/channelsuite/channelsuitewidgetimpl.cpp:228
+msgid "Mandatory Field: Country"
+msgstr ""
+
+#: plugins/misc/channelsuite/channelsuitewidgetimpl.cpp:234
+msgid "Mandatory field \"City/Region\" is empty."
+msgstr ""
+
+#: plugins/misc/channelsuite/channelsuitewidgetimpl.cpp:235
+msgid "Mandatory Field: Region/City"
+msgstr ""
+
+#: plugins/misc/channelsuite/channelsuitewidgetimpl.cpp:239
+msgid "unspecified"
+msgstr ""
+
+#: plugins/misc/channelsuite/channelsuitewidgetimpl.cpp:241
+msgid "Channelsuite type is unspecified."
+msgstr ""
+
+#: plugins/misc/channelsuite/channelsuitewidgetimpl.cpp:242
+msgid "Mandatory Field: Type"
+msgstr ""
+
+#: plugins/misc/channelsuite/channelsuitewidgetimpl.cpp:248
+msgid ""
+"Your channelsuite contains more than 50 stations.\n"
+"Are you sure you removed all unused frequencies?"
+msgstr ""
+
+#: plugins/misc/channelsuite/channelsuitewidgetimpl.cpp:250
+#, fuzzy
+msgid "Too Many Channels?"
+msgstr "Sianeli"
+
+#: plugins/misc/channelsuite/channelsuitewidgetimpl.cpp:256
+#: plugins/misc/channelsuite/channelsuitewidgetimpl.cpp:266
+msgid "air"
+msgstr ""
+
+#: plugins/misc/channelsuite/channelsuitewidgetimpl.cpp:258
+msgid ""
+"Your channelsuite contains more than 10 stations,\n"
+"but the type is set to \"air\". Are you sure this is correct?"
+msgstr ""
+
+#: plugins/misc/channelsuite/channelsuitewidgetimpl.cpp:260
+#: plugins/misc/channelsuite/channelsuitewidgetimpl.cpp:270
+msgid "Wrong Suite Type?"
+msgstr ""
+
+#: plugins/misc/channelsuite/channelsuitewidgetimpl.cpp:268
+msgid ""
+"Your channelsuite contains fewer than 10 stations,\n"
+"but the type is not set to \"air\". Are you sure this is correct?"
+msgstr ""
+
 #: plugins/misc/simon/simon.cpp:114
 msgid "Display closed caption text"
 msgstr ""
@@ -1983,23 +2100,23 @@ msgstr ""
 msgid "Transparent Teletext"
 msgstr ""
 
-#: plugins/mixer/oss/kdetv_oss.cpp:60
+#: plugins/mixer/oss/kdetv_oss.cpp:59
 msgid "Physical mixer:"
 msgstr ""
 
-#: plugins/mixer/oss/kdetv_oss.cpp:70
+#: plugins/mixer/oss/kdetv_oss.cpp:69
 msgid "Mixer device:"
 msgstr ""
 
-#: plugins/mixer/oss/kdetv_oss.cpp:89
+#: plugins/mixer/oss/kdetv_oss.cpp:88
 msgid "No mixers found. Check you OSS driver installation."
 msgstr ""
 
-#: plugins/mixer/oss/kdetv_oss.cpp:90
-msgid "No OSS mixers found."
+#: plugins/mixer/oss/kdetv_oss.cpp:89
+msgid "No OSS Mixers Found"
 msgstr ""
 
-#: plugins/mixer/oss/kdetv_oss.cpp:163
+#: plugins/mixer/oss/kdetv_oss.cpp:162
 msgid "Vol"
 msgstr ""
 
@@ -2016,19 +2133,27 @@ msgid "No mixers found. Check you ALSA library/driver installation."
 msgstr ""
 
 #: plugins/mixer/alsa/kdetv_alsa.cpp:387
-msgid "No ALSA mixers found."
+msgid "No ALSA Mixers Found"
 msgstr ""
 
-#: plugins/video/xv/kdetv_xv.cpp:259 plugins/video/xv/kdetv_xv.cpp:391
+#: plugins/video/xv/kdetv_xv.cpp:260 plugins/video/xv/kdetv_xv.cpp:401
 msgid "%1 - XVideo port %2"
 msgstr ""
 
-#: plugins/video/v4l/kdetv_grabber.cpp:241
+#: plugins/video/v4l/kdetv_grabber.cpp:250
 msgid ""
 "Unable to grab video.\n"
 "Video display is not possible with the current plugin configuration.         "
 "                                       Try playing with the configuration "
 "options of the V4L plugin."
+msgstr ""
+
+#: plugins/video/v4l2/kdetv_grabber.cpp:222
+msgid ""
+"Unable to grab video.\n"
+"Video display is not possible with the current plugin configuration.         "
+"                                       Try playing with the configuration "
+"options of the V4L2 plugin."
 msgstr ""
 
 #: plugins/filter/none/none.cpp:35
@@ -2040,11 +2165,11 @@ msgid "TomsMoComp"
 msgstr ""
 
 #: plugins/filter/tomsmocomp/tomsmocomp.cpp:52
-msgid "Search Effort:"
+msgid "Search effort:"
 msgstr ""
 
 #: plugins/filter/tomsmocomp/tomsmocomp.cpp:57
-msgid "Use Strange Bob"
+msgid "Use strange bob"
 msgstr ""
 
 #: plugins/filter/greedy/greedy.cpp:53
@@ -2059,7 +2184,7 @@ msgstr "Rhagosodion"
 msgid "Linear blend"
 msgstr ""
 
-#: plugins/filter/chromakill/chromakill.cpp:37
+#: plugins/filter/chromakill/chromakill.cpp:38
 msgid "ChromaKill"
 msgstr ""
 
@@ -2076,7 +2201,7 @@ msgid "Sharpness:"
 msgstr "Miniogrwydd:"
 
 #: plugins/filter/sharpness/sharpness.cpp:144
-msgid "Use Prefetch"
+msgid "Use prefetch"
 msgstr ""
 
 #: plugins/filter/greedy/dscalerfiltergreedy.cpp:28
@@ -2084,7 +2209,7 @@ msgid "Greedy (Low Motion)"
 msgstr ""
 
 #: plugins/filter/greedy/greedy.cpp:48
-msgid "Maximum Comb:"
+msgid "Maximum comb:"
 msgstr ""
 
 #: plugins/filter/overscan/overscan.cpp:44
@@ -2108,15 +2233,15 @@ msgid "Mirror"
 msgstr "Adlewyrchu"
 
 #: plugins/filter/greedyh/greedyh.cpp:52
-msgid "Max Comb:"
+msgid "Max comb:"
 msgstr ""
 
 #: plugins/filter/greedyh/greedyh.cpp:57
-msgid "Motion Threshold:"
+msgid "Motion threshold:"
 msgstr ""
 
 #: plugins/filter/greedyh/greedyh.cpp:62
-msgid "Motion Sense:"
+msgid "Motion sense:"
 msgstr ""
 
 #: plugins/filter/greedyh/dscalerfiltergreedyh.cpp:30
@@ -2128,11 +2253,11 @@ msgid "Greedy2Frame"
 msgstr ""
 
 #: plugins/filter/greedy2frame/greedy2frame.cpp:51
-msgid "Chroma Threshold:"
+msgid "Chroma threshold:"
 msgstr ""
 
 #: plugins/filter/greedy2frame/greedy2frame.cpp:56
-msgid "Luma Threshold:"
+msgid "Luma threshold:"
 msgstr ""
 
 #: plugins/filter/bilinear/bilinear.cpp:35
@@ -2143,7 +2268,7 @@ msgstr ""
 msgid "CSV"
 msgstr "CSV"
 
-#: plugins/channel/xml/channelioxml.cpp:48
+#: plugins/channel/xml/channelioxml.cpp:47
 msgid "kdetv XML"
 msgstr ""
 
@@ -2223,79 +2348,79 @@ msgid ""
 "above).\n"
 msgstr ""
 
-#: clients/kdetv/mainwindow.cpp:81
+#: clients/kdetv/mainwindow.cpp:84
 msgid "TV Screen"
 msgstr ""
 
-#: clients/kdetv/mainwindow.cpp:89
+#: clients/kdetv/mainwindow.cpp:92
 msgid "Channel Sidebar"
 msgstr ""
 
-#: clients/kdetv/mainwindow.cpp:149 clients/shared/sidebar.cpp:95
+#: clients/kdetv/mainwindow.cpp:152 clients/shared/sidebar.cpp:95
 msgid "&Channels"
 msgstr "&Sianeli"
 
-#: clients/kdetv/mainwindow.cpp:242
+#: clients/kdetv/mainwindow.cpp:245
 msgid "&Normal"
 msgstr "&Arferol"
 
-#: clients/kdetv/mainwindow.cpp:243
+#: clients/kdetv/mainwindow.cpp:246
 msgid "T&V Mode"
 msgstr ""
 
-#: clients/kdetv/mainwindow.cpp:244
+#: clients/kdetv/mainwindow.cpp:247
 msgid "&Full Screen"
 msgstr "&Sgrîn Lawn"
 
-#: clients/kdetv/mainwindow.cpp:255
+#: clients/kdetv/mainwindow.cpp:258
 msgid "Next View"
 msgstr "Golwg Nesaf"
 
-#: clients/kdetv/mainwindow.cpp:257
+#: clients/kdetv/mainwindow.cpp:260
 msgid "Toggle FullScreen"
 msgstr ""
 
-#: clients/kdetv/mainwindow.cpp:262
+#: clients/kdetv/mainwindow.cpp:265
 msgid "Show Sidebar"
 msgstr "Dangos Bar Ochr"
 
-#: clients/kdetv/mainwindow.cpp:264
+#: clients/kdetv/mainwindow.cpp:267
 msgid "Shows and hides the sidebar."
 msgstr ""
 
-#: clients/kdetv/mainwindow.cpp:276
+#: clients/kdetv/mainwindow.cpp:279
 msgid "Configure Toolbars..."
 msgstr "Ffurfio Bar Offer ..."
 
-#: clients/kdetv/mainwindow.cpp:280
-msgid "kdetv Web Site..."
-msgstr ""
-
-#: clients/kdetv/mainwindow.cpp:284
-msgid "Sleep Timer"
+#: clients/kdetv/mainwindow.cpp:283
+msgid "kdetv Web Site"
 msgstr ""
 
 #: clients/kdetv/mainwindow.cpp:287
-msgid "Tip of the day..."
+msgid "Sleep Timer"
 msgstr ""
 
-#: clients/kdetv/mainwindow.cpp:296 clients/kdetv/mainwindow.cpp:307
+#: clients/kdetv/mainwindow.cpp:290
+msgid "Tip of the Day"
+msgstr "Awgrymiad y Dydd"
+
+#: clients/kdetv/mainwindow.cpp:299 clients/kdetv/mainwindow.cpp:310
 msgid " File..."
 msgstr ""
 
-#: clients/kdetv/mainwindow.cpp:590
+#: clients/kdetv/mainwindow.cpp:593
 msgid "http://www.kdetv.org/"
 msgstr ""
 
-#: clients/kdetvscreensaver/screensaver.cpp:37
+#: clients/kdetvscreensaver/screensaver.cpp:36
 msgid "A screensaver that displays a TV screen"
 msgstr ""
 
-#: clients/kdetvscreensaver/screensaver.cpp:89
+#: clients/kdetvscreensaver/screensaver.cpp:88
 msgid "Screensaver"
 msgstr "Arbedydd sgrin"
 
-#: clients/kdetvscreensaver/screensaver.cpp:90
+#: clients/kdetvscreensaver/screensaver.cpp:89
 msgid "Configure Screensaver Options"
 msgstr ""
 
@@ -2304,8 +2429,9 @@ msgid "&Local Defaults..."
 msgstr ""
 
 #: clients/shared/libkdetvactions.cpp:58
-msgid "Old &KWinTV Channels..."
-msgstr ""
+#, fuzzy
+msgid "Old &KWinTV Channels"
+msgstr "&Sianeli"
 
 #: clients/shared/libkdetvactions.cpp:62
 msgid "&Picture Settings"
@@ -2357,17 +2483,24 @@ msgid "Volume"
 msgstr "Lefel Sain"
 
 #: clients/shared/libkdetvactions.cpp:142
-msgid "No devices found. Read FAQ at www.kdetv.org"
+msgid "No Devices Found. Read FAQ at www.kdetv.org"
 msgstr ""
 
 #: clients/shared/libkdetvactions.cpp:164
-msgid "Audio mode selection is not supported by current device/source"
+msgid "Audio Mode Selection is Not Supported by Current Device/Source"
 msgstr ""
 
 #: clients/shared/libkdetvactions.cpp:191
-msgid "Current video plugin does not support image filtering"
+msgid "Current Video Plugin Does Not Support Image Filtering"
 msgstr ""
 
 #: clients/shared/systray.cpp:41
 msgid "kdetv Control"
 msgstr ""
+
+#, fuzzy
+#~ msgid "PictureWidget"
+#~ msgstr "Llun"
+
+#~ msgid "Browse"
+#~ msgstr "Pori"
