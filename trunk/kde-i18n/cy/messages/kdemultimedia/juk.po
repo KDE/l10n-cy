@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdemultimedia/juk.po\n"
-"POT-Creation-Date: 2004-10-08 01:14+0200\n"
+"POT-Creation-Date: 2004-10-12 01:17+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -159,6 +159,10 @@ msgstr ""
 #: historyplaylist.cpp:63
 msgid "Time"
 msgstr "Amser"
+
+#: juk.cpp:123 systemtray.cpp:145
+msgid "&Random Play"
+msgstr ""
 
 #: juk.cpp:126
 msgid "&Disable Random Play"
@@ -432,97 +436,107 @@ msgstr ""
 msgid "&Output To"
 msgstr ""
 
-#: playlist.cpp:469
+#: playlist.cpp:475
 #, c-format
 msgid "Could not save to file %1."
 msgstr ""
 
-#: playlist.cpp:778
+#: playlist.cpp:797
 msgid "Could not move "
 msgstr ""
 
 #. i18n: file trackpickerdialogbase.ui line 89
-#: playlist.cpp:1071 rc.cpp:338
+#: playlist.cpp:1100 rc.cpp:338
 #, no-c-format
 msgid "Track Name"
 msgstr ""
 
 #. i18n: file trackpickerdialogbase.ui line 100
-#: playlist.cpp:1072 rc.cpp:341
+#: playlist.cpp:1101 rc.cpp:341
 #, no-c-format
 msgid "Artist"
-msgstr ""
+msgstr "Artist"
 
 #. i18n: file trackpickerdialogbase.ui line 111
-#: playlist.cpp:1073 rc.cpp:344
+#: playlist.cpp:1102 rc.cpp:344
 #, no-c-format
 msgid "Album"
 msgstr ""
 
 #. i18n: file trackpickerdialogbase.ui line 122
-#: playlist.cpp:1074 rc.cpp:347
+#: playlist.cpp:1103 rc.cpp:347
 #, no-c-format
 msgid "Track"
 msgstr ""
 
-#: playlist.cpp:1075
+#: playlist.cpp:1104
 msgid "Genre"
 msgstr ""
 
 #. i18n: file trackpickerdialogbase.ui line 133
-#: playlist.cpp:1076 rc.cpp:350
+#: playlist.cpp:1105 rc.cpp:350
 #, no-c-format
 msgid "Year"
 msgstr "Blwyddyn"
 
-#: playlist.cpp:1077
+#: playlist.cpp:1106
 msgid "Length"
 msgstr "Hyd"
 
-#: playlist.cpp:1078
+#: playlist.cpp:1107
 msgid "Bitrate"
 msgstr ""
 
-#: playlist.cpp:1079
+#: playlist.cpp:1108
 msgid "Comment"
 msgstr "Sylwad"
 
 #. i18n: file trackpickerdialogbase.ui line 32
-#: playlist.cpp:1080 rc.cpp:331
+#: playlist.cpp:1109 rc.cpp:331
 #, no-c-format
 msgid "File Name"
 msgstr "Enw Ffeil"
 
-#: playlist.cpp:1081
+#: playlist.cpp:1110
 msgid "File Name (full path)"
 msgstr ""
 
-#: playlist.cpp:1101
+#: playlist.cpp:1130
 msgid "&Show Columns"
 msgstr "&Dangos Colofnau"
 
-#: playlist.cpp:1104
+#: playlist.cpp:1133
 msgid "Show"
 msgstr "Dangos"
 
-#: playlist.cpp:1584
+#: playlist.cpp:1619
 msgid "Add to Play Queue"
 msgstr ""
 
-#: playlist.cpp:1610
+#: playlist.cpp:1645
 msgid "Create Playlist From Selected Items"
 msgstr ""
 
-#: playlist.cpp:1632
+#: playlist.cpp:1667
 msgid "Edit '%1'"
 msgstr ""
 
-#: playlist.cpp:1743
+#: playlist.cpp:1778
 msgid "This will edit multiple files. Are you sure?"
 msgstr ""
 
-#: playlist.cpp:1801 playlistcollection.h:128
+#: playlist.cpp:1836 playlistcollection.h:128
 msgid "Create New Playlist"
+msgstr ""
+
+#: playlist.cpp:1849
+msgid ""
+"Manual column widths have been enabled.  You can switch back to automatic "
+"column sizes in the view menu."
+msgstr ""
+
+#: playlist.cpp:1852
+msgid "Manual Column Widths Enabled"
 msgstr ""
 
 #: playlistbox.cpp:97
@@ -533,31 +547,31 @@ msgstr ""
 msgid "Duplicate"
 msgstr "Dyblyg"
 
-#: playlistbox.cpp:295
+#: playlistbox.cpp:297
 msgid "Do you want to delete these files from the disk as well?"
 msgstr ""
 
-#: playlistbox.cpp:308
+#: playlistbox.cpp:310
 msgid "Could not delete all of the specified files."
 msgstr ""
 
-#: playlistbox.cpp:314
+#: playlistbox.cpp:316
 msgid "Are you sure you want to remove these items?"
 msgstr ""
 
-#: playlistbox.cpp:315
+#: playlistbox.cpp:317
 msgid "Remove Items?"
 msgstr ""
 
-#: playlistbox.cpp:660
+#: playlistbox.cpp:664
 msgid "Hid&e"
 msgstr "Cud&dio"
 
-#: playlistbox.cpp:662 playlistcollection.cpp:672
+#: playlistbox.cpp:666 playlistcollection.cpp:672
 msgid "R&emove"
 msgstr "G&waredu"
 
-#: playlistbox.cpp:665
+#: playlistbox.cpp:669
 msgid "Dynamic List"
 msgstr ""
 
@@ -1249,18 +1263,18 @@ msgstr "Lefel Sain"
 msgid "Items loaded:"
 msgstr ""
 
-#: statuslabel.cpp:89
+#: statuslabel.cpp:87
 msgid "Jump to the currently playing item"
 msgstr ""
 
-#: statuslabel.cpp:142
+#: statuslabel.cpp:130
 #, c-format
 msgid ""
 "_n: 1 day\n"
 "%n days"
 msgstr ""
 
-#: statuslabel.cpp:152
+#: statuslabel.cpp:140
 #, c-format
 msgid ""
 "_n: 1 item\n"
@@ -1269,10 +1283,6 @@ msgstr ""
 
 #: systemtray.cpp:127
 msgid "Redisplay Popup"
-msgstr ""
-
-#: systemtray.cpp:145
-msgid "&Random Play"
 msgstr ""
 
 #: tageditor.cpp:461
