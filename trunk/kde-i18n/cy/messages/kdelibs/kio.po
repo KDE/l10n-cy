@@ -14,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kio\n"
-"POT-Creation-Date: 2004-11-12 01:19+0100\n"
+"POT-Creation-Date: 2004-12-21 01:19+0100\n"
 "PO-Revision-Date: 2004-01-16 09:20+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -28,7 +28,7 @@ msgstr ""
 msgid "File '%1' is not readable"
 msgstr "Nid yw'r ffeil '%1' yn ddarllenadwy"
 
-#: kio/global.cpp:691 kio/job.cpp:1670 kio/job.cpp:3095 kio/job.cpp:3555
+#: kio/global.cpp:691 kio/job.cpp:1670 kio/job.cpp:3095 kio/job.cpp:3554
 #: kio/paste.cpp:60
 msgid "File Already Exists"
 msgstr "Ffeil yn Bodoli'n Barod"
@@ -37,7 +37,7 @@ msgstr "Ffeil yn Bodoli'n Barod"
 msgid "Folder Already Exists"
 msgstr "Plygell yn Bodoli'n Barod"
 
-#: kio/job.cpp:3095 kio/job.cpp:3555
+#: kio/job.cpp:3095 kio/job.cpp:3554
 msgid "Already Exists as Folder"
 msgstr "Yn Bodoli'n Barod fel Plygell"
 
@@ -120,7 +120,7 @@ msgstr "newidwyd ar %1"
 msgid "The source file is '%1'"
 msgstr "Mae'r ffeil tarddiad yn '%1'"
 
-#: kio/kdirlister.cpp:1943 kio/krun.cpp:763 kio/paste.cpp:97
+#: kio/kdirlister.cpp:1946 kio/krun.cpp:777 kio/paste.cpp:97
 #: kio/renamedlg.cpp:431
 #, c-format
 msgid ""
@@ -139,12 +139,12 @@ msgstr "Enw ffeil i gynnwys gludfwrdd:"
 msgid "The clipboard is empty"
 msgstr "Mae'r gludfwrdd yn wag "
 
-#: kio/observer.cpp:338 misc/uiserver.cpp:1215
+#: kio/observer.cpp:338 misc/uiserver.cpp:1217
 msgid "The peer SSL certificate appears to be corrupt."
 msgstr "Ymddengys bod tystysgrif SSL y cymar yn llygredig."
 
 #: kio/observer.cpp:338 kio/tcpslavebase.cpp:720 kio/tcpslavebase.cpp:737
-#: misc/uiserver.cpp:1215
+#: misc/uiserver.cpp:1217
 msgid "SSL"
 msgstr "SSL"
 
@@ -416,7 +416,7 @@ msgstr "Delwedd OCR"
 msgid "Source:"
 msgstr "Tarddiad:"
 
-#: kio/defaultprogress.cpp:111 kio/defaultprogress.cpp:416
+#: kio/defaultprogress.cpp:111 kio/defaultprogress.cpp:430
 msgid "Destination:"
 msgstr "Cyrchfan:"
 
@@ -454,36 +454,49 @@ msgstr ""
 "%n ffeil\n"
 "%n o ffeiliau"
 
-#: kio/defaultprogress.cpp:232
-msgid "%1% of %2 "
-msgstr "%1% o %2"
-
 #: kio/defaultprogress.cpp:236
+msgid "%1 % of %2 "
+msgstr "%1 % o %2"
+
+#: kio/defaultprogress.cpp:238
+#, fuzzy
+msgid ""
+"_n: %1 % of 1 file\n"
+"%1 % of %n files"
+msgstr ""
+"%1 / %n ffeil\n"
+"%1 / %n ffeil"
+
+#: kio/defaultprogress.cpp:240
+msgid "%1 %"
+msgstr "%1 %"
+
+#: kio/defaultprogress.cpp:249
 msgid " (Copying)"
 msgstr "(Copio)"
 
-#: kio/defaultprogress.cpp:239
+#: kio/defaultprogress.cpp:252
 msgid " (Moving)"
 msgstr "(Symud)"
 
-#: kio/defaultprogress.cpp:242
+#: kio/defaultprogress.cpp:255
 msgid " (Deleting)"
 msgstr "(Dileu)"
 
-#: kio/defaultprogress.cpp:245
+#: kio/defaultprogress.cpp:258
 msgid " (Creating)"
 msgstr "(Creu)"
 
-#: kio/defaultprogress.cpp:248
+#: kio/defaultprogress.cpp:261
 #, fuzzy
 msgid " (Done)"
 msgstr "&Wedi'i orffen"
 
-#: kio/defaultprogress.cpp:270
+#: kio/defaultprogress.cpp:282
 msgid "%1 of %2 complete"
 msgstr "%1 o %2 wedi cwblhau"
 
-#: kio/defaultprogress.cpp:282 kio/defaultprogress.cpp:297
+#: kio/defaultprogress.cpp:296 kio/defaultprogress.cpp:311
 msgid ""
 "_n: %1 / %n folder\n"
 "%1 / %n folders"
@@ -491,7 +504,7 @@ msgstr ""
 "%1 / %n plygell\n"
 "%1 / %n plygell"
 
-#: kio/defaultprogress.cpp:284 kio/defaultprogress.cpp:300
+#: kio/defaultprogress.cpp:298 kio/defaultprogress.cpp:314
 msgid ""
 "_n: %1 / %n file\n"
 "%1 / %n files"
@@ -499,57 +512,57 @@ msgstr ""
 "%1 / %n ffeil\n"
 "%1 / %n ffeil"
 
-#: kio/defaultprogress.cpp:308 misc/uiserver.cpp:288
+#: kio/defaultprogress.cpp:322 misc/uiserver.cpp:288
 msgid "Stalled"
 msgstr "Wedi seibio"
 
-#: kio/defaultprogress.cpp:311
+#: kio/defaultprogress.cpp:325
 msgid "%1/s ( %2 remaining )"
 msgstr "%1/s ( %2 ar ôl )"
 
-#: kio/defaultprogress.cpp:319
+#: kio/defaultprogress.cpp:333
 msgid "Copy File(s) Progress"
 msgstr "Cynnydd Copio Ffeil(iau)"
 
-#: kio/defaultprogress.cpp:333
+#: kio/defaultprogress.cpp:347
 msgid "Move File(s) Progress"
 msgstr "Cynnydd Symud Ffeil(iau)"
 
-#: kio/defaultprogress.cpp:347
+#: kio/defaultprogress.cpp:361
 msgid "Creating Folder"
 msgstr "Creu Plygell"
 
-#: kio/defaultprogress.cpp:359
+#: kio/defaultprogress.cpp:373
 msgid "Delete File(s) Progress"
 msgstr "Cynnydd Dileu Ffeil(iau)"
 
-#: kio/defaultprogress.cpp:370
+#: kio/defaultprogress.cpp:384
 msgid "Loading Progress"
 msgstr "Llwytho Cynnydd"
 
-#: kio/defaultprogress.cpp:379
+#: kio/defaultprogress.cpp:393
 msgid "Examining File Progress"
 msgstr "Archwilio Cynnydd Ffeil"
 
-#: kio/defaultprogress.cpp:386
+#: kio/defaultprogress.cpp:400
 #, c-format
 msgid "Mounting %1"
 msgstr "Gosod %1"
 
-#: kio/defaultprogress.cpp:393 misc/uiserver.cpp:378
+#: kio/defaultprogress.cpp:407 misc/uiserver.cpp:378
 msgid "Unmounting"
 msgstr "Ddi-osod"
 
-#: kio/defaultprogress.cpp:401
+#: kio/defaultprogress.cpp:415
 #, c-format
 msgid "Resuming from %1"
 msgstr "Ail-ddechrau o %1"
 
-#: kio/defaultprogress.cpp:403
+#: kio/defaultprogress.cpp:417
 msgid "Not resumable"
 msgstr "Amhosib ail-ddechrau"
 
-#: kio/defaultprogress.cpp:439
+#: kio/defaultprogress.cpp:453
 msgid "%1/s (done)"
 msgstr "%1/s (wedi'i wneud)"
 
@@ -2307,30 +2320,30 @@ msgstr "Wedi seibio"
 msgid " %1/s "
 msgstr "%1/s"
 
-#: kio/passdlg.cpp:56
+#: kio/passdlg.cpp:61
 msgid "Password"
 msgstr "Cyfrinair"
 
-#: kio/passdlg.cpp:97
+#: kio/passdlg.cpp:102
 #, fuzzy
 msgid "You need to supply a username and a password"
 msgstr "Rhaid i chi ddarparu enw cyfrif a cyfrinair"
 
 #. i18n: file ./kfile/kpropertiesdesktopadvbase.ui line 134
-#: kfile/kpropertiesdialog.cpp:3465 kio/passdlg.cpp:107 rc.cpp:108
+#: kfile/kpropertiesdialog.cpp:3508 kio/passdlg.cpp:112 rc.cpp:108
 #, no-c-format
 msgid "&Username:"
 msgstr "&Enw Defnyddiwr:"
 
-#: kio/passdlg.cpp:124
+#: kio/passdlg.cpp:129
 msgid "&Password:"
 msgstr "&Cyfrinair"
 
-#: kio/passdlg.cpp:147
+#: kio/passdlg.cpp:151
 msgid "&Keep password"
 msgstr "&Cadw Cyfrinair"
 
-#: kio/passdlg.cpp:305 kpasswdserver/kpasswdserver.cpp:249
+#: kio/passdlg.cpp:349 kpasswdserver/kpasswdserver.cpp:234
 msgid "Authorization Dialog"
 msgstr "Ymgom Awdurdodi"
 
@@ -2368,16 +2381,16 @@ msgstr "Agor Efo:"
 msgid "You are not authorized to execute this file."
 msgstr "Nid ydych wedi cael eich awdurdodi i weithredu'r ffeil yma."
 
-#: kio/krun.cpp:567
+#: kio/krun.cpp:542
 #, c-format
 msgid "Launching %1"
 msgstr "Ymgychwyn %1"
 
-#: kio/krun.cpp:648
+#: kio/krun.cpp:662
 msgid "You are not authorized to execute this service."
 msgstr "Nid ydych wedi cael eich awdurdodi i weithredu'r gwasanaeth yma."
 
-#: kio/krun.cpp:799
+#: kio/krun.cpp:813
 msgid ""
 "<qt>Unable to run the command specified. The file or folder <b>%1</b> does "
 "not exist.</qt>"
@@ -2385,41 +2398,47 @@ msgstr ""
 "<qt>Methu rhedeg y gorchymyn penodol. Nid yw'r ffeil neu plygell "
 "<b>%1</b>mewn bod.</qt>"
 
-#: kio/krun.cpp:1270
+#: kio/krun.cpp:1284
 #, fuzzy
 msgid "Could not find the program '%1'"
 msgstr "Methu darganfod y rhaglen '%1'"
 
-#: kio/kfileitem.cpp:624
+#: kio/kfileitem.cpp:646
 msgid "Symbolic Link"
 msgstr "Cyswllt Symbolaidd"
 
-#: kio/kfileitem.cpp:626
+#: kio/kfileitem.cpp:648
 msgid "%1 (Link)"
 msgstr "%1 (Cyswllt)"
 
-#: kfile/kpropertiesdialog.cpp:842 kio/kfileitem.cpp:665
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:249
+#: bookmarks/kbookmarkmenu.cc:782 kfile/kpropertiesdialog.cpp:3739
+#: kio/kfileitem.cpp:687
+msgid "Name:"
+msgstr "Enw:"
+
+#: kfile/kpropertiesdialog.cpp:879 kio/kfileitem.cpp:688
 msgid "Type:"
 msgstr "Math:"
 
-#: kio/kfileitem.cpp:669
+#: kio/kfileitem.cpp:692
 #, fuzzy
 msgid "Link to %1 (%2)"
 msgstr "Cyswllt i %1"
 
-#: kfile/kpropertiesdialog.cpp:884 kio/kfileitem.cpp:674
+#: kfile/kpropertiesdialog.cpp:924 kio/kfileitem.cpp:697
 msgid "Size:"
 msgstr "Maint:"
 
-#: kfile/kpropertiesdialog.cpp:946 kio/kfileitem.cpp:677
+#: kfile/kpropertiesdialog.cpp:986 kio/kfileitem.cpp:700
 msgid "Modified:"
 msgstr "Newidwyd:"
 
-#: kio/kfileitem.cpp:679
+#: kio/kfileitem.cpp:703
 msgid "Owner:"
 msgstr "Perchennog:"
 
-#: kio/kfileitem.cpp:680
+#: kio/kfileitem.cpp:704
 msgid "Permissions:"
 msgstr "Caniatadau "
 
@@ -2464,11 +2483,11 @@ msgstr ""
 "Methu creu gwas-io:\n"
 " dywedodd klauncher: %1"
 
-#: kfile/kpropertiesdialog.cpp:2454 kio/kmimetypechooser.cpp:75
+#: kfile/kpropertiesdialog.cpp:2497 kio/kmimetypechooser.cpp:75
 msgid "Mime Type"
 msgstr "Math MIME"
 
-#: kfile/kpropertiesdialog.cpp:2465 kio/kmimetypechooser.cpp:80
+#: kfile/kpropertiesdialog.cpp:2508 kio/kmimetypechooser.cpp:80
 msgid "Comment"
 msgstr "Esboniad"
 
@@ -2636,7 +2655,7 @@ msgstr "Ãl-wyneb ni chynhelir: %1."
 msgid "KDE SSL Information"
 msgstr "Gwybodaeth SSL KDE"
 
-#: kssl/ksslkeygen.cc:97 kssl/ksslkeygen.cc:107 misc/uiserver.cpp:1378
+#: kssl/ksslkeygen.cc:97 kssl/ksslkeygen.cc:107 misc/uiserver.cpp:1382
 msgid "KDE"
 msgstr "KDE"
 
@@ -2721,7 +2740,7 @@ msgstr "Cyhoeddwr:"
 msgid "IP address:"
 msgstr "Cyfeiriad IP:"
 
-#: kfile/kpropertiesdialog.cpp:2333 kssl/ksslinfodlg.cc:219
+#: kfile/kpropertiesdialog.cpp:2376 kssl/ksslinfodlg.cc:219
 msgid "URL:"
 msgstr "URL:"
 
@@ -2951,7 +2970,7 @@ msgstr ""
 "Mae'r cymhwysiad '%1' wedi gofyn i agor y waled '%2'.  Mewnosodwch y "
 "cyfrinair am y waled yma isod."
 
-#: kfile/kfiledialog.cpp:1815 misc/kwalletd/kwalletd.cpp:382
+#: kfile/kfiledialog.cpp:1821 misc/kwalletd/kwalletd.cpp:382
 #: misc/kwalletd/kwalletd.cpp:396
 msgid "&Open"
 msgstr "&Agor"
@@ -3159,10 +3178,6 @@ msgstr "Gweithrediad"
 msgid "%1 / %2"
 msgstr "%1 / %2"
 
-#: misc/uiserver.cpp:267
-msgid "%1 % of %2 "
-msgstr "%1 % o %2"
-
 #: misc/uiserver.cpp:291
 msgid "%1/s"
 msgstr "%1/s"
@@ -3231,11 +3246,11 @@ msgid ""
 " Rem. Time: %1 "
 msgstr ""
 
-#: misc/uiserver.cpp:1379
+#: misc/uiserver.cpp:1383
 msgid "KDE Progress Information UI Server"
 msgstr "Gweinydd UI Gwybodaeth Cynnydd KDE"
 
-#: misc/uiserver.cpp:1382 misc/uiserver.cpp:1383
+#: misc/uiserver.cpp:1386 misc/uiserver.cpp:1387
 msgid "Developer"
 msgstr "Datblygwr"
 
@@ -3278,6 +3293,11 @@ msgstr "Gyrru adroddiad nam byr i submit@bugs.kde.org"
 #: misc/ksendbugmail/main.cpp:65
 msgid "Author"
 msgstr "Awdur"
+
+#: misc/kmailservice.cpp:32
+#, fuzzy
+msgid "KMailService"
+msgstr "Gwasanaeth ebost"
 
 #: misc/kmailservice.cpp:32
 msgid "Mail service"
@@ -3409,7 +3429,7 @@ msgstr "Symud i Fyny"
 msgid "Move Down"
 msgstr "Symud i Lawr"
 
-#: kfile/kfiledialog.cpp:1667 kfile/kfilefiltercombo.cpp:32
+#: kfile/kfiledialog.cpp:1673 kfile/kfilefiltercombo.cpp:32
 msgid "*|All Files"
 msgstr "*|Pob Ffeil"
 
@@ -3531,7 +3551,7 @@ msgid "O&ther icons:"
 msgstr "Ei&conau eraill:"
 
 #. i18n: file ./kfile/kpropertiesdesktopbase.ui line 213
-#: kfile/kicondialog.cpp:282 kfile/kpropertiesdialog.cpp:3381 rc.cpp:298
+#: kfile/kicondialog.cpp:282 kfile/kpropertiesdialog.cpp:3424 rc.cpp:298
 #, no-c-format
 msgid "&Browse..."
 msgstr "&Pori..."
@@ -3567,7 +3587,7 @@ msgstr "Mathau MIME"
 msgid "*.png *.xpm *.svg *.svgz|Icon Files (*.png *.xpm *.svg *.svgz)"
 msgstr "*.png *.xpm *.svg *.svgz|Ffeiliau eicon  (*.png *.xpm *.svg *.svgz)"
 
-#: kfile/kfilemetainfowidget.cpp:94
+#: kfile/kfilemetainfowidget.cpp:111
 msgid "<Error>"
 msgstr "<Gwall>"
 
@@ -3619,7 +3639,7 @@ msgstr "Mae ffeil neu blygell o'r enw %1 mewn bod yn barod."
 msgid "You do not have permission to create that folder."
 msgstr "Does dim hawliau ganddoch i greu'r plygell yna."
 
-#: bookmarks/kbookmarkmenu.cc:788 kfile/kpropertiesdialog.cpp:876
+#: bookmarks/kbookmarkmenu.cc:788 kfile/kpropertiesdialog.cpp:916
 #: kfile/kurlrequesterdlg.cpp:47
 msgid "Location:"
 msgstr "Lleoliad:"
@@ -3707,64 +3727,64 @@ msgstr "Llai o dde&wisiadau"
 msgid "Hide advanced options"
 msgstr "Cuddio dewisiadau uwch"
 
-#: kfile/knotifydialog.cpp:354
+#: kfile/knotifydialog.cpp:355
 msgid "More Op&tions"
 msgstr "Mwy o dde&wisiadau"
 
-#: kfile/knotifydialog.cpp:355
+#: kfile/knotifydialog.cpp:356
 msgid "Show advanced options"
 msgstr "Dangos dewisiadau uwch"
 
-#: kfile/knotifydialog.cpp:780
+#: kfile/knotifydialog.cpp:781
 #, fuzzy
 msgid "This will cause the notifications to be reset to their defaults."
 msgstr "Achosir i'r hysbysau gael ei ail-osod i'w rhagosodiadau!"
 
-#: kfile/knotifydialog.cpp:782
+#: kfile/knotifydialog.cpp:783
 msgid "Are You Sure?"
 msgstr "Ydych Yn Sicr?"
 
-#: kfile/knotifydialog.cpp:783
+#: kfile/knotifydialog.cpp:784
 msgid "&Reset"
 msgstr "&Ailosod"
 
-#: kfile/knotifydialog.cpp:856
+#: kfile/knotifydialog.cpp:857
 msgid "Select Sound File"
 msgstr "Dewis Ffeil Sw^n"
 
-#: kfile/knotifydialog.cpp:892
+#: kfile/knotifydialog.cpp:893
 msgid "Select Log File"
 msgstr "Dewis Ffeil Cofnodi"
 
-#: kfile/knotifydialog.cpp:906
+#: kfile/knotifydialog.cpp:907
 msgid "Select File to Execute"
 msgstr "Dewis Ffeil i Weithredu"
 
-#: kfile/knotifydialog.cpp:981
+#: kfile/knotifydialog.cpp:982
 msgid "No description available"
 msgstr "Disgrifiad"
 
-#: kfile/kfiledialog.cpp:349
+#: kfile/kfiledialog.cpp:350
 #, fuzzy
 msgid "Please specify the filename to save to."
 msgstr "Penodwch enw'r ffeil i ddefnyddio wrth gadw."
 
-#: kfile/kfiledialog.cpp:351
+#: kfile/kfiledialog.cpp:352
 msgid "Please select the file to open."
 msgstr "Penodwch enw'r ffeil i agor."
 
-#: kfile/kfiledialog.cpp:411 kfile/kfiledialog.cpp:452
-#: kfile/kfiledialog.cpp:1543
+#: kfile/kfiledialog.cpp:412 kfile/kfiledialog.cpp:453
+#: kfile/kfiledialog.cpp:1549
 msgid "You can only select local files."
 msgstr "Gallwch ddewis 'mond ffeiliau lleol."
 
-#: kfile/kfiledialog.cpp:412 kfile/kfiledialog.cpp:453
-#: kfile/kfiledialog.cpp:1544
+#: kfile/kfiledialog.cpp:413 kfile/kfiledialog.cpp:454
+#: kfile/kfiledialog.cpp:1550
 #, fuzzy
 msgid "Remote Files Not Accepted"
 msgstr "Ni derbynnir Ffeiliau Pell"
 
-#: kfile/kfiledialog.cpp:445
+#: kfile/kfiledialog.cpp:446
 msgid ""
 "%1\n"
 "does not appear to be a valid URL.\n"
@@ -3773,11 +3793,11 @@ msgstr ""
 " %1 \n"
 " yn URL dilys.\n"
 
-#: kfile/kfiledialog.cpp:445
+#: kfile/kfiledialog.cpp:446
 msgid "Invalid URL"
 msgstr "URL Annilys"
 
-#: kfile/kfiledialog.cpp:777
+#: kfile/kfiledialog.cpp:778
 msgid ""
 "<p>While typing in the text area, you may be presented with possible "
 "matches. This feature can be controlled by clicking with the right mouse "
@@ -3787,11 +3807,11 @@ msgstr ""
 "nodwedd yma drwy glicio efo botwm de y llygoden, a dewis modd amgen oddiar y "
 "ddewislen <b>Cwblhau Testun</b>"
 
-#: kfile/kfiledialog.cpp:786
+#: kfile/kfiledialog.cpp:787
 msgid "This is the name to save the file as."
 msgstr " Yr enw i ddefnyddio wrth gadw'r ffeil."
 
-#: kfile/kfiledialog.cpp:791
+#: kfile/kfiledialog.cpp:792
 msgid ""
 "This is the list of files to open. More than one file can be specified by "
 "listing several files, separated by spaces."
@@ -3799,15 +3819,15 @@ msgstr ""
 "Y rhestr o ffeiliau i agor.  Gellir benodi mwy nac un ffeil drwy restru "
 "amryw ffeil, wedi eu gwahanu gan fylchau."
 
-#: kfile/kfiledialog.cpp:798
+#: kfile/kfiledialog.cpp:799
 msgid "This is the name of the file to open."
 msgstr " Enw'r ffeil i agor."
 
-#: kfile/kfiledialog.cpp:839
+#: kfile/kfiledialog.cpp:840
 msgid "Often used folders"
 msgstr "Plygyll aml eu defnydd"
 
-#: kfile/kfiledialog.cpp:840
+#: kfile/kfiledialog.cpp:841
 msgid ""
 "Commonly used locations are listed here. This includes standard locations, "
 "such as your home folder, as well as locations that have been visited "
@@ -3817,27 +3837,27 @@ msgstr ""
 "safonol, fel eich plygell cartref, ac hefyd lleoliadau sydd wedi cael eu "
 "ymweld yn ddiweddar."
 
-#: kfile/kfiledialog.cpp:846
+#: kfile/kfiledialog.cpp:847
 #, c-format
 msgid "Root Folder: %1"
 msgstr "Plygell Gwraidd: %1"
 
-#: kfile/kfiledialog.cpp:852
+#: kfile/kfiledialog.cpp:853
 #, c-format
 msgid "Home Folder: %1"
 msgstr "Plygell Cartref: %1"
 
-#: kfile/kfiledialog.cpp:861
+#: kfile/kfiledialog.cpp:862
 #, c-format
 msgid "Documents: %1"
 msgstr "Dogfennau: %1"
 
-#: kfile/kfiledialog.cpp:868
+#: kfile/kfiledialog.cpp:869
 #, c-format
 msgid "Desktop: %1"
 msgstr "Penbwrdd: %1"
 
-#: kfile/kfiledialog.cpp:909
+#: kfile/kfiledialog.cpp:910
 msgid ""
 "<qt>Click this button to enter the parent folder."
 "<p>For instance, if the current location is file:/home/%1 clicking this "
@@ -3847,23 +3867,23 @@ msgstr ""
 "<p> Er enghraifft, os file:/home/%1 yw'r lleoliad cyfredol, bydd clicio'r "
 "botwm yma yn mynd â chi i file:/home.</qt>"
 
-#: kfile/kfiledialog.cpp:913
+#: kfile/kfiledialog.cpp:914
 msgid "Click this button to move backwards one step in the browsing history."
 msgstr "Cliciwch y botwm yma i symud un cam yn ôl yn yr hanes pori."
 
-#: kfile/kfiledialog.cpp:915
+#: kfile/kfiledialog.cpp:916
 msgid "Click this button to move forward one step in the browsing history."
 msgstr "Cliciwch y botwm yma i symud un cam ymlaen yn yr hanes pori."
 
-#: kfile/kfiledialog.cpp:917
+#: kfile/kfiledialog.cpp:918
 msgid "Click this button to reload the contents of the current location."
 msgstr "Cliciwch y botwm yma i ail-lwytho cynnwys y lleoliad cyfredol."
 
-#: kfile/kfiledialog.cpp:920
+#: kfile/kfiledialog.cpp:921
 msgid "Click this button to create a new folder."
 msgstr "Cliciwch y botwm yma i greu plygell newydd."
 
-#: kfile/kfiledialog.cpp:929
+#: kfile/kfiledialog.cpp:930
 msgid ""
 "<qt>This button allows you to bookmark specific locations. Click on this "
 "button to open the bookmark menu where you may add, edit or select a "
@@ -3877,16 +3897,16 @@ msgstr ""
 "<p>Mae'r tudnodau yma yn benodol i'r deialog ffeil, ond ym mhob modd arall "
 "maent yn ymddwyn fel tudnodau mewn llefydd eraill yn KDE.</qt> "
 
-#: kfile/kfiledialog.cpp:938
+#: kfile/kfiledialog.cpp:939
 msgid "Show Quick Access Navigation Panel"
 msgstr "Dangos Panel Morlywio Cyrchu ar Frys"
 
-#: kfile/kfiledialog.cpp:939
+#: kfile/kfiledialog.cpp:940
 #, fuzzy
 msgid "Hide Quick Access Navigation Panel"
 msgstr "Dangos Panel Morlywio Cyrchu ar Frys"
 
-#: kfile/kfiledialog.cpp:944
+#: kfile/kfiledialog.cpp:945
 msgid ""
 "<qt>This is the configuration menu for the file dialog. Various options can "
 "be accessed from this menu including: "
@@ -3906,11 +3926,11 @@ msgstr ""
 "<li>y panel morlywio Cyrchu ar Frys</li>"
 "<li>rhagolygon ffeil</li><li>gwahanu plygyll oddiwrth ffeiliau</li></ul></qt>"
 
-#: kfile/kfiledialog.cpp:997
+#: kfile/kfiledialog.cpp:998
 msgid "&Location:"
 msgstr "&Lleoliad:"
 
-#: kfile/kfiledialog.cpp:1022
+#: kfile/kfiledialog.cpp:1023
 msgid ""
 "<qt>This is the filter to apply to the file list. File names that do not "
 "match the filter will not be shown."
@@ -3924,11 +3944,11 @@ msgstr ""
 "mewnosod hidl addasu yn syth i mewn i'r ardal testun."
 "<p> Caniateir nod-chwilwyr fel * a ?. </qt>"
 
-#: kfile/kfiledialog.cpp:1028
+#: kfile/kfiledialog.cpp:1029
 msgid "&Filter:"
 msgstr "&Hidl:"
 
-#: kfile/kfiledialog.cpp:1474
+#: kfile/kfiledialog.cpp:1480
 #, fuzzy
 msgid ""
 "The chosen filenames do not\n"
@@ -3937,11 +3957,11 @@ msgstr ""
 "Ymddengys nad ydy \n"
 " enwau'r ffeiliau a ddewiswyd yn ddilys."
 
-#: kfile/kfiledialog.cpp:1476
+#: kfile/kfiledialog.cpp:1482
 msgid "Invalid Filenames"
 msgstr "Enwau Ffeil Annilys"
 
-#: kfile/kfiledialog.cpp:1506
+#: kfile/kfiledialog.cpp:1512
 #, fuzzy
 msgid ""
 "The requested filenames\n"
@@ -3954,33 +3974,33 @@ msgstr ""
 "yn edrych yn ddilys i mi. \n"
 "Sicrhewch bod pob enw ffeil ar amgau mewn dyfynodau dwbl."
 
-#: kfile/kfiledialog.cpp:1510
+#: kfile/kfiledialog.cpp:1516
 msgid "Filename Error"
 msgstr "Gwall yn enw'r ffeil"
 
-#: kfile/kfiledialog.cpp:1664
+#: kfile/kfiledialog.cpp:1670
 msgid "*|All Folders"
 msgstr "*|Pob Plygell"
 
-#: kfile/kfiledialog.cpp:1953
+#: kfile/kfiledialog.cpp:1959
 #, fuzzy
 msgid "Automatically select filename e&xtension (%1)"
 msgstr "Dewis e&styniad yr enw ffeil yn awtomatig (%1)"
 
-#: kfile/kfiledialog.cpp:1954
+#: kfile/kfiledialog.cpp:1960
 msgid "the extension <b>%1</b>"
 msgstr "yr estyniad<b>%1</b>"
 
-#: kfile/kfiledialog.cpp:1962
+#: kfile/kfiledialog.cpp:1968
 #, fuzzy
 msgid "Automatically select filename e&xtension"
 msgstr "Dewis e&styniad yr enw ffeil yn awtomatig"
 
-#: kfile/kfiledialog.cpp:1963
+#: kfile/kfiledialog.cpp:1969
 msgid "a suitable extension"
 msgstr "estyniad addas"
 
-#: kfile/kfiledialog.cpp:1974
+#: kfile/kfiledialog.cpp:1980
 #, fuzzy
 msgid ""
 "This option enables some convenient features for saving files with "
@@ -4154,7 +4174,7 @@ msgstr "Caniatad"
 msgid "Owner"
 msgstr "Perchennog"
 
-#: kfile/kfiledetailview.cpp:71 kfile/kpropertiesdialog.cpp:1809
+#: kfile/kfiledetailview.cpp:71 kfile/kpropertiesdialog.cpp:1852
 msgid "Group"
 msgstr "Grw^p"
 
@@ -4162,68 +4182,75 @@ msgstr "Grw^p"
 msgid "&Meta Info"
 msgstr "&Gwybodaeth Meta"
 
-#: kfile/kpropertiesdialog.cpp:150 kfile/kpropertiesdialog.cpp:166
-#: kfile/kpropertiesdialog.cpp:179 kfile/kpropertiesdialog.cpp:202
-#: kfile/kpropertiesdialog.cpp:222 kfile/kpropertiesdialog.cpp:242
+#: kfile/kpropertiesdialog.cpp:154 kfile/kpropertiesdialog.cpp:170
+#: kfile/kpropertiesdialog.cpp:184 kfile/kpropertiesdialog.cpp:207
+#: kfile/kpropertiesdialog.cpp:227 kfile/kpropertiesdialog.cpp:247
 #, c-format
 msgid "Properties for %1"
 msgstr "Priodweddau i %1"
 
-#: kfile/kpropertiesdialog.cpp:664
+#: kfile/kpropertiesdialog.cpp:183
+#, fuzzy, c-format
+msgid ""
+"_n: <never used>\n"
+"Properties for %n Selected Items"
+msgstr "Priodweddau i %1"
+
+#: kfile/kpropertiesdialog.cpp:701
 msgid "&General"
 msgstr "&Cyffredin"
 
-#: kfile/kpropertiesdialog.cpp:855
+#: kfile/kpropertiesdialog.cpp:894
 msgid "Edit file type"
 msgstr "Golygu math y ffeil"
 
-#: kfile/kpropertiesdialog.cpp:867
+#: kfile/kpropertiesdialog.cpp:907
 msgid "Contents:"
 msgstr "Cynnwys:"
 
-#: kfile/kpropertiesdialog.cpp:903
+#: kfile/kpropertiesdialog.cpp:943
 msgid "Calculate"
 msgstr "Cyfrifo"
 
-#: kfile/kpropertiesdialog.cpp:914 kfile/kpropertiesdialog.cpp:1125
+#: kfile/kpropertiesdialog.cpp:954 kfile/kpropertiesdialog.cpp:1168
 msgid "Refresh"
 msgstr "Adnewyddu"
 
-#: kfile/kpropertiesdialog.cpp:922
+#: kfile/kpropertiesdialog.cpp:962
 msgid "Points to:"
 msgstr "Cyfeirio at:"
 
-#: kfile/kpropertiesdialog.cpp:935
+#: kfile/kpropertiesdialog.cpp:975
 msgid "Created:"
 msgstr "Creuwyd:"
 
-#: kfile/kpropertiesdialog.cpp:957
+#: kfile/kpropertiesdialog.cpp:997
 msgid "Accessed:"
 msgstr "Agorwyd:"
 
-#: kfile/kpropertiesdialog.cpp:976
+#: kfile/kpropertiesdialog.cpp:1016
 msgid "Mounted on:"
 msgstr "Wedi'i arosod ar:"
 
-#: kfile/kpropertiesdialog.cpp:983 kfile/kpropertiesdialog.cpp:2656
+#: kfile/kpropertiesdialog.cpp:1023 kfile/kpropertiesdialog.cpp:2699
 msgid "Free disk space:"
 msgstr "Lle ddisg wag:"
 
-#: kfile/kpropertiesdialog.cpp:1076 kfile/kpropertiesdialog.cpp:1090
-#: kfile/kpropertiesdialog.cpp:2798
+#: kfile/kpropertiesdialog.cpp:1119 kfile/kpropertiesdialog.cpp:1133
+#: kfile/kpropertiesdialog.cpp:2841
 msgid ""
 "_: Available space out of total partition size (percent used)\n"
 "%1 out of %2 (%3% used)"
 msgstr "%1allan o %2 (defnyddir %3%)"
 
-#: kfile/kpropertiesdialog.cpp:1101
+#: kfile/kpropertiesdialog.cpp:1144
 #, fuzzy
 msgid ""
 "Calculating... %1 (%2)\n"
 "%3, %4"
 msgstr "Cyfrifo ... %1 (%2)"
 
-#: kfile/kpropertiesdialog.cpp:1104 kfile/kpropertiesdialog.cpp:1120
+#: kfile/kpropertiesdialog.cpp:1147 kfile/kpropertiesdialog.cpp:1163
 #, fuzzy, c-format
 msgid ""
 "_n: 1 file\n"
@@ -4232,7 +4259,7 @@ msgstr ""
 "%n ffeil\n"
 "%n o ffeiliau"
 
-#: kfile/kpropertiesdialog.cpp:1105 kfile/kpropertiesdialog.cpp:1121
+#: kfile/kpropertiesdialog.cpp:1148 kfile/kpropertiesdialog.cpp:1164
 #, fuzzy, c-format
 msgid ""
 "_n: 1 sub-folder\n"
@@ -4241,23 +4268,23 @@ msgstr ""
 "%n plygell\n"
 "%n o blygyll"
 
-#: kfile/kpropertiesdialog.cpp:1134
+#: kfile/kpropertiesdialog.cpp:1177
 msgid "Calculating..."
 msgstr "Cyfrifo ..."
 
-#: kfile/kpropertiesdialog.cpp:1152
+#: kfile/kpropertiesdialog.cpp:1195
 msgid "Stopped"
 msgstr "Wedi aros"
 
-#: kfile/kpropertiesdialog.cpp:1192
+#: kfile/kpropertiesdialog.cpp:1235
 #, fuzzy
 msgid "The new file name is empty."
 msgstr "Mae enw'r ffeil newydd yn wag!"
 
-#: kfile/kpropertiesdialog.cpp:1326 kfile/kpropertiesdialog.cpp:2389
-#: kfile/kpropertiesdialog.cpp:2546 kfile/kpropertiesdialog.cpp:2826
-#: kfile/kpropertiesdialog.cpp:3106 kfile/kpropertiesdialog.cpp:3602
-#: kfile/kpropertiesdialog.cpp:3846
+#: kfile/kpropertiesdialog.cpp:1369 kfile/kpropertiesdialog.cpp:2432
+#: kfile/kpropertiesdialog.cpp:2589 kfile/kpropertiesdialog.cpp:2869
+#: kfile/kpropertiesdialog.cpp:3149 kfile/kpropertiesdialog.cpp:3645
+#: kfile/kpropertiesdialog.cpp:3889
 msgid ""
 "<qt>"
 "Could not save properties. You do not have sufficient access to write to "
@@ -4267,44 +4294,44 @@ msgstr ""
 "Methu cadw priodweddau. Does ganddych ganiatadau digonol i  ysgrifennu i "
 "<b>%1</b>.</qt>"
 
-#: kfile/kpropertiesdialog.cpp:1396 kfile/kpropertiesdialog.cpp:1400
-#: kfile/kpropertiesdialog.cpp:1405
+#: kfile/kpropertiesdialog.cpp:1439 kfile/kpropertiesdialog.cpp:1443
+#: kfile/kpropertiesdialog.cpp:1448
 msgid "Forbidden"
 msgstr "Gwaharddir"
 
-#: kfile/kpropertiesdialog.cpp:1397
+#: kfile/kpropertiesdialog.cpp:1440
 msgid "Can Read"
 msgstr " Gallu Darllen"
 
-#: kfile/kpropertiesdialog.cpp:1398
+#: kfile/kpropertiesdialog.cpp:1441
 msgid "Can Read & Write"
 msgstr "Gallu Darllen ac Ysgrifennu"
 
-#: kfile/kpropertiesdialog.cpp:1401
+#: kfile/kpropertiesdialog.cpp:1444
 msgid "Can View Content"
 msgstr " Gallu Edrych ar Gynnwys"
 
-#: kfile/kpropertiesdialog.cpp:1402
+#: kfile/kpropertiesdialog.cpp:1445
 msgid "Can View & Modify Content"
 msgstr "Gallu Edrych ar a Newid Cynnwys"
 
-#: kfile/kpropertiesdialog.cpp:1406
+#: kfile/kpropertiesdialog.cpp:1449
 msgid "Can View Content & Read"
 msgstr "Gallu Edrych ar Gynnwys a Darllen"
 
-#: kfile/kpropertiesdialog.cpp:1407
+#: kfile/kpropertiesdialog.cpp:1450
 msgid "Can View/Read & Modify/Write"
 msgstr " Gallu Edrych/Darllen a Newid/Ysgrifennu"
 
-#: kfile/kpropertiesdialog.cpp:1496
+#: kfile/kpropertiesdialog.cpp:1539
 msgid "&Permissions"
 msgstr "&Caniatadau"
 
-#: kfile/kpropertiesdialog.cpp:1507 kfile/kpropertiesdialog.cpp:1743
+#: kfile/kpropertiesdialog.cpp:1550 kfile/kpropertiesdialog.cpp:1786
 msgid "Access Permissions"
 msgstr "Caniatadau Cyrchu"
 
-#: kfile/kpropertiesdialog.cpp:1518
+#: kfile/kpropertiesdialog.cpp:1561
 msgid ""
 "_n: This file is a link and does not have permissions.\n"
 "All files are links and do not have permissions."
@@ -4312,31 +4339,31 @@ msgstr ""
 "Mae'r %n ffeil yma yn gyswllt ac nid oes ganddo ganiatadau. \n"
 "Mae'r %n ffeiliau i gyd yn gysylltau ac nid oes ganddynt ganiatadau."
 
-#: kfile/kpropertiesdialog.cpp:1521
+#: kfile/kpropertiesdialog.cpp:1564
 msgid "Only the owner can change permissions."
 msgstr "Neb ond y perchennog sy'n gallu newid caniatadau."
 
-#: kfile/kpropertiesdialog.cpp:1524
+#: kfile/kpropertiesdialog.cpp:1567
 msgid "O&wner:"
 msgstr "Perc&hennog:"
 
-#: kfile/kpropertiesdialog.cpp:1530
+#: kfile/kpropertiesdialog.cpp:1573
 msgid "Specifies the actions that the owner is allowed to do."
 msgstr "Penodi'r gweithrediadau y mae'r perchennog yn cael gwneud."
 
-#: kfile/kpropertiesdialog.cpp:1532
+#: kfile/kpropertiesdialog.cpp:1575
 msgid "Gro&up:"
 msgstr "Gr&w^p:"
 
-#: kfile/kpropertiesdialog.cpp:1538
+#: kfile/kpropertiesdialog.cpp:1581
 msgid "Specifies the actions that the members of the group are allowed to do."
 msgstr "Penodi'r gweithrediadau y mae aelodau'r grw^p yn cael gwneud."
 
-#: kfile/kpropertiesdialog.cpp:1540
+#: kfile/kpropertiesdialog.cpp:1583
 msgid "O&thers:"
 msgstr "E&raill:"
 
-#: kfile/kpropertiesdialog.cpp:1546
+#: kfile/kpropertiesdialog.cpp:1589
 msgid ""
 "Specifies the actions that all users, who are neither owner nor in the "
 "group, are allowed to do."
@@ -4344,15 +4371,15 @@ msgstr ""
 "Penodi'r gweithrediadau y mae pob defnyddiwr, sy ddim yn berchennog neu "
 "aelod y grw^p, yn cael gwneud."
 
-#: kfile/kpropertiesdialog.cpp:1551
+#: kfile/kpropertiesdialog.cpp:1594
 msgid "Only own&er can rename and delete folder content"
 msgstr "Neb ond y per&chennog sy'n cael ail-enwi a dileu cynnwys plygell"
 
-#: kfile/kpropertiesdialog.cpp:1552
+#: kfile/kpropertiesdialog.cpp:1595
 msgid "Is &executable"
 msgstr "Gallu ei &Weithredu"
 
-#: kfile/kpropertiesdialog.cpp:1556
+#: kfile/kpropertiesdialog.cpp:1599
 msgid ""
 "Enable this option to allow only the folder's owner to delete or rename the "
 "contained files and folders. Other users can only add new files, which "
@@ -4362,7 +4389,7 @@ msgstr ""
 "ail-enwi'r ffeiliau neu plygyll sydd ynddo.  Mae defnyddwyr eraill yn gallu "
 "ychwanegu dim ond ffeiliau newydd, sy'n galw am y caniatad 'Addasu Cynnwys'."
 
-#: kfile/kpropertiesdialog.cpp:1560
+#: kfile/kpropertiesdialog.cpp:1603
 msgid ""
 "Enable this option to mark the file as executable. This only makes sense for "
 "programs and scripts. It is required when you want to execute them."
@@ -4371,35 +4398,35 @@ msgstr ""
 "gwneud synnwyr i ddim ond rhaglenni a sgriptiau.  Mae'n angenrheidiol os "
 "byddwch eisiau eu gweithredu."
 
-#: kfile/kpropertiesdialog.cpp:1567
+#: kfile/kpropertiesdialog.cpp:1610
 msgid "A&dvanced Permissions"
 msgstr "C&aniatadau Uwch"
 
-#: kfile/kpropertiesdialog.cpp:1576
+#: kfile/kpropertiesdialog.cpp:1619
 msgid "Ownership"
 msgstr "Perchenogaeth"
 
-#: kfile/kpropertiesdialog.cpp:1585
+#: kfile/kpropertiesdialog.cpp:1628
 msgid "User:"
 msgstr "Defnyddiwr:"
 
-#: kfile/kpropertiesdialog.cpp:1671
+#: kfile/kpropertiesdialog.cpp:1714
 msgid "Group:"
 msgstr "Grw^p:"
 
-#: kfile/kpropertiesdialog.cpp:1713
+#: kfile/kpropertiesdialog.cpp:1756
 msgid "Apply changes to all subfolders and their contents"
 msgstr "Gosod newidiadau i bob is-blygell a'i gynnwys."
 
-#: kfile/kpropertiesdialog.cpp:1735
+#: kfile/kpropertiesdialog.cpp:1778
 msgid "Advanced Permissions"
 msgstr "Caniatadau Uwch"
 
-#: kfile/kpropertiesdialog.cpp:1751
+#: kfile/kpropertiesdialog.cpp:1794
 msgid "Class"
 msgstr "Dosbarth"
 
-#: kfile/kpropertiesdialog.cpp:1755
+#: kfile/kpropertiesdialog.cpp:1798
 msgid ""
 "Show\n"
 "Entries"
@@ -4407,19 +4434,19 @@ msgstr ""
 " Dangos\n"
 " Cofnodion"
 
-#: kfile/kpropertiesdialog.cpp:1757
+#: kfile/kpropertiesdialog.cpp:1800
 msgid "Read"
 msgstr "Darllen"
 
-#: kfile/kpropertiesdialog.cpp:1761
+#: kfile/kpropertiesdialog.cpp:1804
 msgid "This flag allows viewing the content of the folder."
 msgstr "Mae'r faner yma yn gadael gweld cynnwys y plygell."
 
-#: kfile/kpropertiesdialog.cpp:1763
+#: kfile/kpropertiesdialog.cpp:1806
 msgid "The Read flag allows viewing the content of the file."
 msgstr "Mae'r faner Ddarllen yn gadael gweld cynnwys y ffeil."
 
-#: kfile/kpropertiesdialog.cpp:1767
+#: kfile/kpropertiesdialog.cpp:1810
 msgid ""
 "Write\n"
 "Entries"
@@ -4427,11 +4454,11 @@ msgstr ""
 " Ysgrifennu\n"
 " Cofnodion"
 
-#: kfile/kpropertiesdialog.cpp:1769
+#: kfile/kpropertiesdialog.cpp:1812
 msgid "Write"
 msgstr "Ysgrifennu"
 
-#: kfile/kpropertiesdialog.cpp:1773
+#: kfile/kpropertiesdialog.cpp:1816
 msgid ""
 "This flag allows adding, renaming and deleting of files. Note that deleting "
 "and renaming can be limited using the Sticky flag."
@@ -4439,33 +4466,33 @@ msgstr ""
 " Mae'r faner yma yn gadael ychwanegu, ail-enwi a dileu ffeiliau.  Noder: "
 "gellir cyfyngu dileu ac ail-enwi gan ddefnyddio'r faner Gludiog."
 
-#: kfile/kpropertiesdialog.cpp:1776
+#: kfile/kpropertiesdialog.cpp:1819
 msgid "The Write flag allows modifying the content of the file."
 msgstr "Mae'r faner Ysgrifennu yn gadael addasu cynnwys y ffeil."
 
-#: kfile/kpropertiesdialog.cpp:1781
+#: kfile/kpropertiesdialog.cpp:1824
 msgid ""
 "_: Enter folder\n"
 "Enter"
 msgstr "Mynd i mewn"
 
-#: kfile/kpropertiesdialog.cpp:1782
+#: kfile/kpropertiesdialog.cpp:1825
 msgid "Enable this flag to allow entering the folder."
 msgstr "Galluogi'r faner yma i adael mynd i mewn i'r plygell."
 
-#: kfile/kpropertiesdialog.cpp:1785
+#: kfile/kpropertiesdialog.cpp:1828
 msgid "Exec"
 msgstr "Gweithredu"
 
-#: kfile/kpropertiesdialog.cpp:1786
+#: kfile/kpropertiesdialog.cpp:1829
 msgid "Enable this flag to allow executing the file as a program."
 msgstr "Galluogi'r faner yma i adael gweithredu'r ffeil fel rhaglen."
 
-#: kfile/kpropertiesdialog.cpp:1795
+#: kfile/kpropertiesdialog.cpp:1838
 msgid "Special"
 msgstr "Arbennig"
 
-#: kfile/kpropertiesdialog.cpp:1799
+#: kfile/kpropertiesdialog.cpp:1842
 msgid ""
 "Special flag. Valid for the whole folder, the exact meaning of the flag can "
 "be seen in the right hand column."
@@ -4473,27 +4500,27 @@ msgstr ""
 "Baner arbennig.  Dilys i'r plygell cyfan.  Gall ystyr cywir y faner gael ei "
 "weld yn y golofn dde."
 
-#: kfile/kpropertiesdialog.cpp:1802
+#: kfile/kpropertiesdialog.cpp:1845
 msgid ""
 "Special flag. The exact meaning of the flag can be seen in the right hand "
 "column."
 msgstr "Baner arbennig.  Gall ystyr cywir y faner gael ei weld yn y golofn dde."
 
 #. i18n: file ./kfile/kpropertiesdesktopadvbase.ui line 95
-#: kfile/kpropertiesdialog.cpp:1806 rc.cpp:99
+#: kfile/kpropertiesdialog.cpp:1849 rc.cpp:99
 #, no-c-format
 msgid "User"
 msgstr "Defnyddiwr"
 
-#: kfile/kpropertiesdialog.cpp:1812
+#: kfile/kpropertiesdialog.cpp:1855
 msgid "Others"
 msgstr "Eraill"
 
-#: kfile/kpropertiesdialog.cpp:1815
+#: kfile/kpropertiesdialog.cpp:1858
 msgid "Set UID"
 msgstr "Gosod UID"
 
-#: kfile/kpropertiesdialog.cpp:1819
+#: kfile/kpropertiesdialog.cpp:1862
 msgid ""
 "If this flag is set, the owner of this folder will be the owner of all new "
 "files."
@@ -4501,7 +4528,7 @@ msgstr ""
 "Os osodir y faner yma, bydd perchennog y plygell yma yn biau pob ffeil "
 "newydd."
 
-#: kfile/kpropertiesdialog.cpp:1822
+#: kfile/kpropertiesdialog.cpp:1865
 msgid ""
 "If this file is an executable and the flag is set, it will be executed with "
 "the permissions of the owner."
@@ -4509,17 +4536,17 @@ msgstr ""
 "Os mae'r ffeil yma yn weithredadwy ac mae'r faner wedi ei gosod, bydd o'n "
 "cael ei weithredu efo caniatadau'r perchennog."
 
-#: kfile/kpropertiesdialog.cpp:1826
+#: kfile/kpropertiesdialog.cpp:1869
 msgid "Set GID"
 msgstr "Gosod GID"
 
-#: kfile/kpropertiesdialog.cpp:1830
+#: kfile/kpropertiesdialog.cpp:1873
 msgid "If this flag is set, the group of this folder will be set for all new files."
 msgstr ""
 "Os osodir y faner yma, bydd cylch y plygell yma yn cael ei osod am bob ffeil "
 "newydd."
 
-#: kfile/kpropertiesdialog.cpp:1833
+#: kfile/kpropertiesdialog.cpp:1876
 msgid ""
 "If this file is an executable and the flag is set, it will be executed with "
 "the permissions of the group."
@@ -4527,13 +4554,13 @@ msgstr ""
 "Os mae'r ffeil yma yn weithredadwy ac mae'r faner wedi ei gosod, bydd o'n "
 "cael ei weithredu efo caniatadau'r grw^p."
 
-#: kfile/kpropertiesdialog.cpp:1837
+#: kfile/kpropertiesdialog.cpp:1880
 msgid ""
 "_: File permission, sets user or group ID on execution\n"
 "Sticky"
 msgstr "Gludiog"
 
-#: kfile/kpropertiesdialog.cpp:1841
+#: kfile/kpropertiesdialog.cpp:1884
 msgid ""
 "If the Sticky flag is set on a folder, only the owner and root can delete or "
 "rename files. Otherwise everybody with write permissions can do this."
@@ -4542,7 +4569,7 @@ msgstr ""
 "gallu dileu neu ail-enwi ffeiliau.  Fel arall, mae pawb sydd efo caniatadau "
 "ysgrifennu yn gallu gwneud hyn."
 
-#: kfile/kpropertiesdialog.cpp:1845
+#: kfile/kpropertiesdialog.cpp:1888
 msgid ""
 "The Sticky flag on a file is ignored on Linux, but may be used on some "
 "systems"
@@ -4550,15 +4577,15 @@ msgstr ""
 " Mae'r faner Gludiog ar ffeil yn cael ei anywbyddu ar Linux, ond gall ei "
 "defnyddio ar rhai cysodau"
 
-#: kfile/kpropertiesdialog.cpp:1980
+#: kfile/kpropertiesdialog.cpp:2023
 msgid "Link"
 msgstr " Cyswllt"
 
-#: kfile/kpropertiesdialog.cpp:1996
+#: kfile/kpropertiesdialog.cpp:2039
 msgid "Varying (No Change)"
 msgstr "Amrywio (Dim Newid)"
 
-#: kfile/kpropertiesdialog.cpp:2095
+#: kfile/kpropertiesdialog.cpp:2138
 msgid ""
 "_n: This file uses advanced permissions\n"
 "These files use advanced permissions."
@@ -4566,7 +4593,7 @@ msgstr ""
 "Mae'r %n ffeil yma yn defnyddio caniatadau uwch. \n"
 "Mae'r %n ffeiliau yma yn defnyddio caniatadau uwch."
 
-#: kfile/kpropertiesdialog.cpp:2111
+#: kfile/kpropertiesdialog.cpp:2154
 msgid ""
 "_n: This folder uses advanced permissions.\n"
 "These folders use advanced permissions."
@@ -4574,73 +4601,73 @@ msgstr ""
 "Mae'r %n plygell yma yn defnyddio caniatadau uwch. \n"
 "Mae'r %n plygyll yma yn defnyddio caniatadau uwch."
 
-#: kfile/kpropertiesdialog.cpp:2126
+#: kfile/kpropertiesdialog.cpp:2169
 msgid "These files use advanced permissions."
 msgstr "Mae'r ffeiliau yma yn defnyddio caniatadau uwch."
 
-#: kfile/kpropertiesdialog.cpp:2328
+#: kfile/kpropertiesdialog.cpp:2371
 msgid "U&RL"
 msgstr "U&RL"
 
-#: kfile/kpropertiesdialog.cpp:2433
+#: kfile/kpropertiesdialog.cpp:2476
 msgid "A&ssociation"
 msgstr "&Cyd"
 
-#: kfile/kpropertiesdialog.cpp:2442
+#: kfile/kpropertiesdialog.cpp:2485
 msgid "Pattern ( example: *.html;*.htm )"
 msgstr "Patrwm (enghraifft: *.html;*.htm )"
 
-#: kfile/kpropertiesdialog.cpp:2475
+#: kfile/kpropertiesdialog.cpp:2518
 msgid "Left click previews"
 msgstr "Rhagolygon chwith-glic"
 
-#: kfile/kpropertiesdialog.cpp:2594
+#: kfile/kpropertiesdialog.cpp:2637
 msgid "De&vice"
 msgstr "Dy&fais"
 
-#: kfile/kpropertiesdialog.cpp:2624
+#: kfile/kpropertiesdialog.cpp:2667
 msgid "Device (/dev/fd0):"
 msgstr "Dyfais (/dev/fd0):"
 
-#: kfile/kpropertiesdialog.cpp:2625
+#: kfile/kpropertiesdialog.cpp:2668
 msgid "Device:"
 msgstr "Dyfais:"
 
-#: kfile/kpropertiesdialog.cpp:2635
+#: kfile/kpropertiesdialog.cpp:2678
 msgid "Read only"
 msgstr "Darllen yn unig"
 
-#: kfile/kpropertiesdialog.cpp:2639
+#: kfile/kpropertiesdialog.cpp:2682
 #, fuzzy
 msgid "File system:"
 msgstr "Cysodau ffeil"
 
-#: kfile/kpropertiesdialog.cpp:2647
+#: kfile/kpropertiesdialog.cpp:2690
 msgid "Mount point (/mnt/floppy):"
 msgstr "Man gosod (/mnt/floppy):"
 
-#: kfile/kpropertiesdialog.cpp:2648
+#: kfile/kpropertiesdialog.cpp:2691
 msgid "Mount point:"
 msgstr "Man gosod:"
 
-#: kfile/kpropertiesdialog.cpp:2679
+#: kfile/kpropertiesdialog.cpp:2722
 msgid "Unmounted Icon"
 msgstr "Eicon diosod"
 
-#: kfile/kpropertiesdialog.cpp:2858 kfile/kpropertiesdialog.cpp:3662
+#: kfile/kpropertiesdialog.cpp:2901 kfile/kpropertiesdialog.cpp:3705
 msgid "&Application"
 msgstr "&Cymhwysiad"
 
-#: kfile/kpropertiesdialog.cpp:2982
+#: kfile/kpropertiesdialog.cpp:3025
 #, c-format
 msgid "Add File Type for %1"
 msgstr "Ychwanegu Math Ffeil am %1"
 
-#: bookmarks/kbookmarkmenu.cc:820 kfile/kpropertiesdialog.cpp:2985
+#: bookmarks/kbookmarkmenu.cc:820 kfile/kpropertiesdialog.cpp:3028
 msgid "&Add"
 msgstr "&Ychwanegu"
 
-#: kfile/kpropertiesdialog.cpp:2986 kfile/kpropertiesdialog.cpp:2987
+#: kfile/kpropertiesdialog.cpp:3029 kfile/kpropertiesdialog.cpp:3030
 msgid ""
 "Add the selected file types to\n"
 "the list of supported file types."
@@ -4648,24 +4675,24 @@ msgstr ""
 "Ychwanegu'r mathau ffeiliau penodol\n"
 "i'r rhestr o fathau ffeil a gynhelir."
 
-#: kfile/kpropertiesdialog.cpp:3178 kfile/kpropertiesdialog.cpp:3634
+#: kfile/kpropertiesdialog.cpp:3221 kfile/kpropertiesdialog.cpp:3677
 msgid "Only executables on local file systems are supported."
 msgstr "Cynhelir 'mond gweithredadweau  ar gysodau ffeil lleol."
 
-#: kfile/kpropertiesdialog.cpp:3190
+#: kfile/kpropertiesdialog.cpp:3233
 #, c-format
 msgid "Advanced Options for %1"
 msgstr "Dewisiadau Uwch am %1"
 
-#: kfile/kpropertiesdialog.cpp:3349
+#: kfile/kpropertiesdialog.cpp:3392
 msgid "E&xecute"
 msgstr "G&weithredu"
 
-#: kfile/kpropertiesdialog.cpp:3356
+#: kfile/kpropertiesdialog.cpp:3399
 msgid "Comman&d:"
 msgstr "Gorchym&n:"
 
-#: kfile/kpropertiesdialog.cpp:3365
+#: kfile/kpropertiesdialog.cpp:3408
 msgid ""
 "Following the command, you can have several place holders which will be "
 "replaced with the actual values when the actual program is run:\n"
@@ -4693,56 +4720,51 @@ msgstr ""
 "%m - yr eicon bach\n"
 "%c - y sylwad"
 
-#: kfile/kpropertiesdialog.cpp:3386
+#: kfile/kpropertiesdialog.cpp:3429
 msgid "Panel Embedding"
 msgstr "Mewnadeiladu Panel"
 
-#: kfile/kpropertiesdialog.cpp:3395
+#: kfile/kpropertiesdialog.cpp:3438
 msgid "&Execute on click:"
 msgstr "&Gweithredu ar glic:"
 
-#: kfile/kpropertiesdialog.cpp:3403
+#: kfile/kpropertiesdialog.cpp:3446
 msgid "&Window title:"
 msgstr "&Teitl Ffenestr:"
 
 #. i18n: file ./kfile/kpropertiesdesktopadvbase.ui line 55
-#: kfile/kpropertiesdialog.cpp:3423 rc.cpp:84
+#: kfile/kpropertiesdialog.cpp:3466 rc.cpp:84
 #, no-c-format
 msgid "&Run in terminal"
 msgstr "&Rhedeg mewn terfynell"
 
 #. i18n: file ./kfile/kpropertiesdesktopadvbase.ui line 77
-#: kfile/kpropertiesdialog.cpp:3438 rc.cpp:93
+#: kfile/kpropertiesdialog.cpp:3481 rc.cpp:93
 #, no-c-format
 msgid "Do not &close when command exits"
 msgstr "Peidiwch a c&hau pan bydd y gorchymyn yn terfynu."
 
 #. i18n: file ./kfile/kpropertiesdesktopadvbase.ui line 66
-#: kfile/kpropertiesdialog.cpp:3442 rc.cpp:90
+#: kfile/kpropertiesdialog.cpp:3485 rc.cpp:90
 #, no-c-format
 msgid "&Terminal options:"
 msgstr "&Dewisiadau Terfynell"
 
 #. i18n: file ./kfile/kpropertiesdesktopadvbase.ui line 106
-#: kfile/kpropertiesdialog.cpp:3462 rc.cpp:102
+#: kfile/kpropertiesdialog.cpp:3505 rc.cpp:102
 #, no-c-format
 msgid "Ru&n as a different user"
 msgstr "Rhede&g fel defnyddiwr gwahanol"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:249
-#: bookmarks/kbookmarkmenu.cc:782 kfile/kpropertiesdialog.cpp:3696
-msgid "Name:"
-msgstr "Enw:"
-
-#: kfile/kpropertiesdialog.cpp:3703
+#: kfile/kpropertiesdialog.cpp:3746
 msgid "Description:"
 msgstr "Disgrifiad:"
 
-#: kfile/kpropertiesdialog.cpp:3709
+#: kfile/kpropertiesdialog.cpp:3752
 msgid "Comment:"
 msgstr "Esboniad:"
 
-#: kfile/kpropertiesdialog.cpp:3715
+#: kfile/kpropertiesdialog.cpp:3758
 msgid "File types:"
 msgstr "Mathau o Ffeil:"
 
@@ -4831,35 +4853,35 @@ msgstr ""
 "<p>Drwy dde-glicio ar gofnod, gallwch ychwanegu, golygu a diddymu "
 "byrlwybrau.</qt>"
 
-#: kfile/kurlbar.cpp:698
+#: kfile/kurlbar.cpp:706
 msgid "&Large Icons"
 msgstr "Eiconau &Mawr"
 
-#: kfile/kurlbar.cpp:698
+#: kfile/kurlbar.cpp:706
 msgid "&Small Icons"
 msgstr "Eiconau &Bach"
 
-#: kfile/kurlbar.cpp:704
+#: kfile/kurlbar.cpp:712
 msgid "&Edit Entry..."
 msgstr "&Golygu cofnod ..."
 
-#: kfile/kurlbar.cpp:708
+#: kfile/kurlbar.cpp:716
 msgid "&Add Entry..."
 msgstr "&Ychwanegu cofnod ..."
 
-#: kfile/kurlbar.cpp:712
+#: kfile/kurlbar.cpp:720
 msgid "&Remove Entry"
 msgstr "&Diddymu Cofnod"
 
-#: kfile/kurlbar.cpp:744
+#: kfile/kurlbar.cpp:752
 msgid "Enter a description"
 msgstr "Rhoi disgrifiad"
 
-#: kfile/kurlbar.cpp:883
+#: kfile/kurlbar.cpp:891
 msgid "Edit Quick Access Entry"
 msgstr "Golygu Cofnod Cyrchu ar Frys"
 
-#: kfile/kurlbar.cpp:886
+#: kfile/kurlbar.cpp:894
 msgid ""
 "<qt><b>Please provide a description, URL and icon for this Quick Access "
 "entry.</b></br></qt>"
@@ -4867,7 +4889,7 @@ msgstr ""
 "<qt><b>Mae angen darparu disgrifiad, URL ac eicon i'r cofnod Cyrchu ar Frys "
 "yma.</b></br></qt>"
 
-#: kfile/kurlbar.cpp:893
+#: kfile/kurlbar.cpp:901
 msgid ""
 "<qt>This is the text that will appear in the Quick Access panel."
 "<p>The description should consist of one or two words that will help you "
@@ -4879,12 +4901,12 @@ msgstr ""
 "mae'r cofnod hwn yn cyfeirio ato.</qt>"
 
 #. i18n: file ./kfile/kpropertiesdesktopbase.ui line 125
-#: kfile/kurlbar.cpp:896 rc.cpp:249
+#: kfile/kurlbar.cpp:904 rc.cpp:249
 #, no-c-format
 msgid "&Description:"
 msgstr "&Disgrifiad:"
 
-#: kfile/kurlbar.cpp:903
+#: kfile/kurlbar.cpp:911
 msgid ""
 "<qt>This is the location associated with the entry. Any valid URL may be "
 "used. For "
@@ -4903,11 +4925,11 @@ msgstr ""
 "<p>Gan glicio ar y botwm wrth ymyl y blwch golygu testun, gallwch pori at "
 "URL addas. </qt>"
 
-#: kfile/kurlbar.cpp:907
+#: kfile/kurlbar.cpp:915
 msgid "&URL:"
 msgstr "&URL:"
 
-#: kfile/kurlbar.cpp:914
+#: kfile/kurlbar.cpp:922
 msgid ""
 "<qt>This is the icon that will appear in the Quick Access panel."
 "<p>Click on the button to select a different icon.</qt>"
@@ -4915,15 +4937,15 @@ msgstr ""
 "<qt>Yr eicon a ymddenygs yn y panel Cyrchu ar Frys."
 "<p>Cliciwch ar y botwm i ddewis eicon gwahanol.</qt>"
 
-#: kfile/kurlbar.cpp:916
+#: kfile/kurlbar.cpp:924
 msgid "Choose an &icon:"
 msgstr "Dewis &eicon:"
 
-#: kfile/kurlbar.cpp:932
+#: kfile/kurlbar.cpp:940
 msgid "&Only show when using this application (%1)"
 msgstr "Dangos 'mond &pan ddefnyddir y cymhwysiad yma (%1)"
 
-#: kfile/kurlbar.cpp:935
+#: kfile/kurlbar.cpp:943
 msgid ""
 "<qt>Select this setting if you want this entry to show only when using the "
 "current application (%1)."
@@ -5631,11 +5653,17 @@ msgid "Cannot add bookmark with empty URL."
 msgstr "Methu ychwanegu tudnod efo URL gwag"
 
 #: bookmarks/kbookmarkmenu.cc:385
-msgid "Are you sure you wish to remove this bookmark folder?"
+#, fuzzy
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
 msgstr "Ydych wir eisiau gwaredu'r plygell tudnodau yma?"
 
 #: bookmarks/kbookmarkmenu.cc:386
-msgid "Are you sure you wish to remove this bookmark?"
+#, fuzzy
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
 msgstr "Ydych wir eisiau gwaredu'r tudnod yma?"
 
 #: bookmarks/kbookmarkmenu.cc:387
@@ -5778,7 +5806,7 @@ msgstr "Mewngofnod iawn"
 msgid "Could not login to %1."
 msgstr "Methu mewngofnodi i %1"
 
-#: ../kioslave/file/file.cc:477 ../kioslave/file/file.cc:651
+#: ../kioslave/file/file.cc:479 ../kioslave/file/file.cc:653
 #, c-format
 msgid ""
 "Could not change permissions for\n"
@@ -5787,7 +5815,12 @@ msgstr ""
 "Methu newid caniatadau i \n"
 " %1"
 
-#: ../kioslave/file/file.cc:1435
+#: ../kioslave/file/file.cc:1028
+#, fuzzy, c-format
+msgid "No media in device for %1"
+msgstr "Dim meta-wybodaeth am %1 "
+
+#: ../kioslave/file/file.cc:1523
 #, c-format
 msgid "Could not read %1"
 msgstr "Methu darllen %1"
@@ -6192,6 +6225,9 @@ msgstr "Dull ni chynhelir: bydd dilysu yn methu.  Hysbyswch y nam!"
 #, c-format
 msgid "No metainfo for %1"
 msgstr "Dim meta-wybodaeth am %1 "
+
+#~ msgid "%1% of %2 "
+#~ msgstr "%1% o %2"
 
 #, fuzzy
 #~ msgid "Alt+O"

@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
-"POT-Creation-Date: 2004-11-03 01:24+0100\n"
+"POT-Creation-Date: 2004-12-17 01:25+0100\n"
 "PO-Revision-Date: 2004-02-26 16:58+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -221,15 +221,15 @@ msgid ""
 "Scheme cannot be recorded."
 msgstr ""
 
-#: colorscheme.cpp:259 colorscheme.cpp:277 detaildialog.cpp:807
-#: indidriver.cpp:781 kstarsactions.cpp:482 locationdialog.cpp:390
-#: opscolors.cpp:183 skymap.cpp:1302 tools/modcalcangdist.cpp:102
-#: tools/modcalcapcoord.cpp:182 tools/modcalcazel.cpp:329
-#: tools/modcalceclipticcoords.cpp:227 tools/modcalcequinox.cpp:142
-#: tools/modcalcgalcoord.cpp:229 tools/modcalcgeodcoord.cpp:243
-#: tools/modcalcplanets.cpp:313 tools/modcalcprec.cpp:180
-#: tools/modcalcsidtime.cpp:196 tools/scriptbuilder.cpp:497
-#: tools/scriptbuilder.cpp:545 tools/scriptbuilder.cpp:613
+#: colorscheme.cpp:259 colorscheme.cpp:277 indidriver.cpp:781
+#: kstarsactions.cpp:482 locationdialog.cpp:378 opscolors.cpp:183
+#: skymap.cpp:1302 tools/modcalcangdist.cpp:102 tools/modcalcapcoord.cpp:182
+#: tools/modcalcazel.cpp:329 tools/modcalceclipticcoords.cpp:227
+#: tools/modcalcequinox.cpp:142 tools/modcalcgalcoord.cpp:229
+#: tools/modcalcgeodcoord.cpp:243 tools/modcalcplanets.cpp:313
+#: tools/modcalcprec.cpp:180 tools/modcalcsidtime.cpp:196
+#: tools/scriptbuilder.cpp:497 tools/scriptbuilder.cpp:545
+#: tools/scriptbuilder.cpp:613
 msgid "Could Not Open File"
 msgstr ""
 
@@ -253,129 +253,263 @@ msgstr ""
 msgid "Brightness/Contrast"
 msgstr ""
 
-#: detaildialog.cpp:50
-msgid "%1 Details"
+#: detaildialog.cpp:45 skymap.cpp:715
+msgid "Object Details"
 msgstr ""
 
-#: detaildialog.cpp:164
+#. i18n: file detaildialogui.ui line 870
+#: detaildialog.cpp:61 rc.cpp:192
+#, no-c-format
+msgid "Log"
+msgstr "Cofnodion"
+
+#: detaildialog.cpp:67 skyobject.cpp:369 tools/observinglist.cpp:171
+#: tools/observinglist.cpp:192 tools/observinglist.cpp:248
 #, c-format
 msgid "Record here observation logs and/or data on %1."
 msgstr ""
 
-#: detaildialog.cpp:176 fitshistogram.cpp:411 skypoint.cpp:540
-#: skypoint.cpp:541 skypoint.cpp:591 skypoint.cpp:604
-msgid "Unknown"
-msgstr "Anhysbys"
+#. i18n: file detaildialogui.ui line 806
+#: detaildialog.cpp:95 kstarsactions.cpp:335 rc.cpp:183
+#, no-c-format
+msgid "Advanced"
+msgstr "Uwch"
 
-#: detaildialog.cpp:200 detaildialog.cpp:241 kspopupmenu.cpp:55
-#: kspopupmenu.cpp:221 kstarsdata.cpp:127 kstarsinit.cpp:645
-#: kstarsinit.cpp:661 starobject.cpp:243
+#: detaildialog.cpp:98
+msgid "Data"
+msgstr "Data"
+
+#. i18n: file detaildialogui.ui line 698
+#: detaildialog.cpp:130 rc.cpp:162
+#, no-c-format
+msgid "Links"
+msgstr ""
+
+#: detaildialog.cpp:132
+msgid "Info Links"
+msgstr ""
+
+#: detaildialog.cpp:137
+#, fuzzy
+msgid "Image Links"
+msgstr "Delweddau"
+
+#. i18n: file detaildialogui.ui line 761
+#: detaildialog.cpp:143 kspopupmenu.cpp:132 rc.cpp:174
+#, no-c-format
+msgid "Add Link..."
+msgstr ""
+
+#. i18n: file detaildialogui.ui line 769
+#: detaildialog.cpp:144 rc.cpp:177
+#, no-c-format
+msgid "Edit Link..."
+msgstr ""
+
+#. i18n: file detaildialogui.ui line 777
+#: detaildialog.cpp:145 rc.cpp:180
+#, no-c-format
+msgid "Remove Link"
+msgstr "Gwaredu Cyswllt"
+
+#. i18n: file detaildialogui.ui line 28
+#: detaildialog.cpp:195 detaildialog.cpp:326 rc.cpp:39 rc.cpp:554
+#, no-c-format
+msgid "General"
+msgstr "Cyffredinol"
+
+#: detaildialog.cpp:214 detaildialog.cpp:266 kspopupmenu.cpp:55
+#: kspopupmenu.cpp:221 kstarsdata.cpp:127 kstarsinit.cpp:648
+#: kstarsinit.cpp:664 starobject.cpp:243
 msgid "star"
 msgstr "seren"
 
-#: detaildialog.cpp:200
+#: detaildialog.cpp:214
 msgid "Unnamed star"
 msgstr ""
 
-#: detaildialog.cpp:205
-msgid "Spectral type:"
-msgstr ""
-
-#: detaildialog.cpp:208
+#: detaildialog.cpp:215
 msgid ""
 "_:  parsecs\n"
 " pc"
 msgstr ""
 
-#: detaildialog.cpp:210
+#: detaildialog.cpp:231
 msgid ""
 "_: larger than 2000 parsecs\n"
 "> 2000 pc"
 msgstr ""
 
-#: detaildialog.cpp:216
+#: detaildialog.cpp:233
 msgid ""
 "_: the star is a multiple star\n"
 "multiple"
 msgstr ""
 
-#: detaildialog.cpp:218
+#: detaildialog.cpp:235
 msgid ""
 "_: the star is a variable star\n"
 "variable"
 msgstr ""
 
-#: detaildialog.cpp:227
+#: detaildialog.cpp:238
+msgid "Spectral type:"
+msgstr ""
+
+#: detaildialog.cpp:250
 msgid ""
 "_: distance in kilometers\n"
 "%1 km"
 msgstr ""
 
-#: detaildialog.cpp:229 detaildialog.cpp:254
+#: detaildialog.cpp:252 detaildialog.cpp:284
 msgid ""
 "_: distance in Astronomical Units\n"
 "%1 AU"
 msgstr ""
 
-#: detaildialog.cpp:234
+#: detaildialog.cpp:258
 msgid ""
 "_: angular size in arcseconds\n"
 "%1 arcsec"
 msgstr ""
 
-#: detaildialog.cpp:236 detaildialog.cpp:284
+#: detaildialog.cpp:260 detaildialog.cpp:306
 msgid ""
 "_: angular size in arcminutes\n"
 "%1 arcmin"
 msgstr ""
 
-#: detaildialog.cpp:245
+#: detaildialog.cpp:265 detaildialog.cpp:273 detaildialog.cpp:277
+#: detaildialog.cpp:285 detaildialog.cpp:309
+#, fuzzy
+msgid "Object type:"
+msgstr "Gwrthrych"
+
+#. i18n: file detaildialogui.ui line 101
+#: detaildialog.cpp:339 rc.cpp:51
+#, no-c-format
+msgid "Magnitude:"
+msgstr ""
+
+#: detaildialog.cpp:341
 msgid "Illumination:"
 msgstr ""
 
-#: detaildialog.cpp:307
+#. i18n: file detaildialogui.ui line 159
+#: detaildialog.cpp:353 rc.cpp:63 rc.cpp:2043
+#, no-c-format
+msgid "Distance:"
+msgstr "Pellder:"
+
+#: detaildialog.cpp:358
+msgid "Angular size:"
+msgstr ""
+
+#. i18n: file detaildialogui.ui line 262
+#: detaildialog.cpp:395 rc.cpp:84
+#, no-c-format
+msgid "Coordinates"
+msgstr ""
+
+#: detaildialog.cpp:397
 msgid "RA (%1):"
 msgstr ""
 
-#: detaildialog.cpp:308
+#: detaildialog.cpp:398
 msgid "Dec (%1):"
 msgstr ""
 
-#: detaildialog.cpp:365 detaildialog.cpp:366 tools/modcalcdaylength.cpp:123
+#: detaildialog.cpp:399
+msgid "Hour angle:"
+msgstr ""
+
+#. i18n: file detaildialogui.ui line 376
+#: detaildialog.cpp:414 rc.cpp:105 rc.cpp:2232 rc.cpp:2259 rc.cpp:2852
+#, no-c-format
+msgid "Azimuth:"
+msgstr "Asimwth:"
+
+#. i18n: file detaildialogui.ui line 289
+#: detaildialog.cpp:415 rc.cpp:87 rc.cpp:2235 rc.cpp:2268 rc.cpp:2855
+#, no-c-format
+msgid "Altitude:"
+msgstr ""
+
+#. i18n: file detaildialogui.ui line 347
+#: detaildialog.cpp:416 rc.cpp:99
+#, no-c-format
+msgid "Airmass:"
+msgstr ""
+
+#: detaildialog.cpp:467
+msgid "Rise/Set/Transit"
+msgstr ""
+
+#: detaildialog.cpp:488
+#, fuzzy
+msgid "Rise time:"
+msgstr "Enw'r ffeil:"
+
+#: detaildialog.cpp:489
+msgid "Transit time:"
+msgstr ""
+
+#: detaildialog.cpp:490 kspopupmenu.cpp:260
+msgid ""
+"_: the time at which an object falls below the horizon\n"
+"Set time:"
+msgstr ""
+
+#: detaildialog.cpp:491
+msgid ""
+"_: azimuth of object as it rises above horizon\n"
+"Azimuth at rise:"
+msgstr ""
+
+#: detaildialog.cpp:492
+msgid ""
+"_: altitude of object as it transits the meridian\n"
+"Altitude at transit:"
+msgstr ""
+
+#: detaildialog.cpp:493
+msgid ""
+"_: azimuth angle of object as it sets below horizon\n"
+"Azimuth at set:"
+msgstr ""
+
+#: detaildialog.cpp:503 detaildialog.cpp:504 tools/modcalcdaylength.cpp:123
 #: tools/modcalcdaylength.cpp:125
 msgid "Circumpolar"
 msgstr ""
 
-#: detaildialog.cpp:368 detaildialog.cpp:369
+#: detaildialog.cpp:506 detaildialog.cpp:507
 msgid "Never rises"
 msgstr ""
 
-#: detaildialog.cpp:374 detaildialog.cpp:375
+#: detaildialog.cpp:512 detaildialog.cpp:513
 msgid ""
 "_: Not Applicable\n"
 "N/A"
 msgstr ""
 
-#: detaildialog.cpp:541
+#: detaildialog.cpp:611
+msgid "Edit Link"
+msgstr ""
+
+#. i18n: file addlinkdialogui.ui line 74
+#: detaildialog.cpp:614 rc.cpp:24
+#, no-c-format
+msgid "URL:"
+msgstr "URL:"
+
+#: detaildialog.cpp:716
 msgid "Are you sure you want to remove the %1 link?"
 msgstr ""
 
-#: detaildialog.cpp:541 indidriver.cpp:756
+#: detaildialog.cpp:716 indidriver.cpp:756
 msgid "Delete Confirmation"
-msgstr ""
-
-#: detaildialog.cpp:770
-msgid "Record here observation logs and/or data on "
-msgstr ""
-
-#: detaildialog.cpp:806
-msgid ""
-"user log file could not be opened.\n"
-"Current user log cannot be recorded for future sessions."
-msgstr ""
-
-#: detaildialog.cpp:814
-msgid "The log was saved successfully."
 msgstr ""
 
 #: devicemanager.cpp:98
@@ -498,6 +632,11 @@ msgstr ""
 #: fitshistogram.cpp:405
 msgid "Square Root Scale"
 msgstr ""
+
+#: fitshistogram.cpp:411 skypoint.cpp:540 skypoint.cpp:541 skypoint.cpp:591
+#: skypoint.cpp:604
+msgid "Unknown"
+msgstr "Anhysbys"
 
 #: fitsimage.cpp:243 fitsviewer.cpp:277
 msgid "Cannot open file for reading"
@@ -1037,20 +1176,8 @@ msgstr ""
 msgid "Spectral type: %1"
 msgstr ""
 
-#. i18n: file detaildialogui.ui line 761
-#: kspopupmenu.cpp:132 rc.cpp:174
-#, no-c-format
-msgid "Add Link..."
-msgstr ""
-
 #: kspopupmenu.cpp:254
 msgid "Rise time: 00:00"
-msgstr ""
-
-#: kspopupmenu.cpp:260
-msgid ""
-"_: the time at which an object falls below the horizon\n"
-"Set time:"
 msgstr ""
 
 #: kspopupmenu.cpp:264
@@ -1083,43 +1210,47 @@ msgstr ""
 msgid "Attach Label"
 msgstr ""
 
-#: kspopupmenu.cpp:309
+#: kspopupmenu.cpp:308 locationdialog.cpp:122
+msgid "Add to List"
+msgstr ""
+
+#: kspopupmenu.cpp:312
 msgid "Add Trail"
 msgstr ""
 
-#: kspopupmenu.cpp:311
+#: kspopupmenu.cpp:314
 msgid "Remove Trail"
 msgstr ""
 
-#: kspopupmenu.cpp:330
+#: kspopupmenu.cpp:333
 #, c-format
 msgid "Rise time: %1"
 msgstr ""
 
-#: kspopupmenu.cpp:333
+#: kspopupmenu.cpp:336
 msgid "No rise time: Circumpolar"
 msgstr ""
 
-#: kspopupmenu.cpp:335
+#: kspopupmenu.cpp:338
 msgid "No rise time: Never rises"
 msgstr ""
 
-#: kspopupmenu.cpp:346
+#: kspopupmenu.cpp:349
 #, c-format
 msgid ""
 "_: the time at which an object falls below the horizon\n"
 "Set time: %1"
 msgstr ""
 
-#: kspopupmenu.cpp:349
+#: kspopupmenu.cpp:352
 msgid "No set time: Circumpolar"
 msgstr ""
 
-#: kspopupmenu.cpp:351
+#: kspopupmenu.cpp:354
 msgid "No set time: Never rises"
 msgstr ""
 
-#: kspopupmenu.cpp:360
+#: kspopupmenu.cpp:363
 #, c-format
 msgid "Transit time: %1"
 msgstr ""
@@ -19892,12 +20023,6 @@ msgstr ""
 msgid "Colors"
 msgstr "Lliwiau"
 
-#. i18n: file detaildialogui.ui line 806
-#: kstarsactions.cpp:335 rc.cpp:183
-#, no-c-format
-msgid "Advanced"
-msgstr "Uwch"
-
 #: kstarsactions.cpp:371
 msgid "KStars::slotFind() - Not enough memory for dialog"
 msgstr ""
@@ -19997,12 +20122,12 @@ msgstr ""
 msgid "Could not open fov.dat for writing."
 msgstr ""
 
-#: kstarsactions.cpp:812 kstarsinit.cpp:468
+#: kstarsactions.cpp:812 kstarsinit.cpp:471
 #, c-format
 msgid "Could not open file: %1"
 msgstr ""
 
-#: kstarsactions.cpp:816 kstarsinit.cpp:472
+#: kstarsactions.cpp:816 kstarsinit.cpp:475
 msgid "Edit FOV Symbols..."
 msgstr ""
 
@@ -20119,7 +20244,7 @@ msgstr ""
 msgid ", field 1: invalid object type (must be 0,1,3,4,5,6,7 or 8)"
 msgstr ""
 
-#: kstarsdata.cpp:1211 skyobject.cpp:32
+#: kstarsdata.cpp:1211 skyobject.cpp:35
 msgid "unnamed object"
 msgstr ""
 
@@ -20546,144 +20671,148 @@ msgstr ""
 msgid "Calculator..."
 msgstr "Cyfrifiannell ..."
 
-#: kstarsinit.cpp:264
-msgid "AAVSO Light Curves..."
+#: kstarsinit.cpp:262
+msgid "Observing List..."
 msgstr ""
 
 #: kstarsinit.cpp:267
+msgid "AAVSO Light Curves..."
+msgstr ""
+
+#: kstarsinit.cpp:270
 msgid "Altitude vs. Time..."
 msgstr ""
 
-#: kstarsinit.cpp:269
+#: kstarsinit.cpp:272
 msgid "What's up Tonight..."
 msgstr ""
 
-#: kstarsinit.cpp:271
+#: kstarsinit.cpp:274
 msgid "Script Builder..."
 msgstr ""
 
-#: kstarsinit.cpp:273
+#: kstarsinit.cpp:276
 msgid "Solar System..."
 msgstr ""
 
-#: kstarsinit.cpp:275
+#: kstarsinit.cpp:278
 msgid "Jupiter's Moons..."
 msgstr ""
 
-#: kstarsinit.cpp:279
+#: kstarsinit.cpp:282
 msgid "Telescope Wizard..."
 msgstr ""
 
-#: kstarsinit.cpp:280
+#: kstarsinit.cpp:283
 msgid "Device Manager..."
 msgstr ""
 
-#: kstarsinit.cpp:282
+#: kstarsinit.cpp:285
 msgid "Capture Image Sequence..."
 msgstr ""
 
-#: kstarsinit.cpp:285
+#: kstarsinit.cpp:288
 msgid "INDI Control Panel..."
 msgstr ""
 
-#: kstarsinit.cpp:288
+#: kstarsinit.cpp:291
 msgid "Configure INDI..."
 msgstr ""
 
-#: kstarsinit.cpp:293
+#: kstarsinit.cpp:296
 msgid "Tip of the Day"
 msgstr "Awgrymiad y Dydd"
 
-#: kstarsinit.cpp:297
+#: kstarsinit.cpp:300
 msgid "&Handbook"
 msgstr ""
 
-#: kstarsinit.cpp:306 kstarsinit.cpp:312
+#: kstarsinit.cpp:309 kstarsinit.cpp:315
 msgid "Toggle Stars"
 msgstr ""
 
-#: kstarsinit.cpp:319 kstarsinit.cpp:325
+#: kstarsinit.cpp:322 kstarsinit.cpp:328
 msgid "Toggle Deep Sky Objects"
 msgstr ""
 
-#: kstarsinit.cpp:332 kstarsinit.cpp:338
+#: kstarsinit.cpp:335 kstarsinit.cpp:341
 msgid "Toggle Solar System"
 msgstr ""
 
-#: kstarsinit.cpp:345 kstarsinit.cpp:351 kstarsinit.cpp:364
+#: kstarsinit.cpp:348 kstarsinit.cpp:354 kstarsinit.cpp:367
 msgid "Toggle Constellation Lines"
 msgstr ""
 
-#: kstarsinit.cpp:358
+#: kstarsinit.cpp:361
 msgid "Toggle Constellation Names"
 msgstr ""
 
-#: kstarsinit.cpp:371 kstarsinit.cpp:377
+#: kstarsinit.cpp:374 kstarsinit.cpp:380
 #, fuzzy
 msgid "Toggle Constellation Boundaries"
 msgstr "Constellation names"
 
-#: kstarsinit.cpp:384 kstarsinit.cpp:390
+#: kstarsinit.cpp:387 kstarsinit.cpp:393
 msgid "Toggle Milky Way"
 msgstr ""
 
-#: kstarsinit.cpp:397 kstarsinit.cpp:403
+#: kstarsinit.cpp:400 kstarsinit.cpp:406
 msgid "Toggle Coordinate Grid"
 msgstr ""
 
-#: kstarsinit.cpp:410 kstarsinit.cpp:416
+#: kstarsinit.cpp:413 kstarsinit.cpp:419
 msgid "Toggle Ground"
 msgstr ""
 
-#: kstarsinit.cpp:439
+#: kstarsinit.cpp:442
 msgid "Could not open fov.dat."
 msgstr ""
 
-#: kstarsinit.cpp:442
+#: kstarsinit.cpp:445
 msgid ""
 "_: Do not use a field-of-view indicator\n"
 "No FOV"
 msgstr ""
 
-#: kstarsinit.cpp:443
+#: kstarsinit.cpp:446
 msgid ""
 "_: use field-of-view for binoculars\n"
 "7x35 Binoculars"
 msgstr ""
 
-#: kstarsinit.cpp:444
+#: kstarsinit.cpp:447
 msgid ""
 "_: use 1-degree field-of-view indicator\n"
 "One Degree"
 msgstr ""
 
-#: kstarsinit.cpp:445
+#: kstarsinit.cpp:448
 msgid ""
 "_: use HST field-of-view indicator\n"
 "HST WFPC2"
 msgstr ""
 
-#: kstarsinit.cpp:446
+#: kstarsinit.cpp:449
 msgid ""
 "_: use Radiotelescope HPBW\n"
 "30m at 1.3cm"
 msgstr ""
 
-#: kstarsinit.cpp:476
+#: kstarsinit.cpp:479
 msgid " Welcome to KStars "
 msgstr ""
 
-#: kstarsinit.cpp:535
+#: kstarsinit.cpp:538
 msgid "Initial Position is Below Horizon"
 msgstr ""
 
-#: kstarsinit.cpp:536
+#: kstarsinit.cpp:539
 msgid ""
 "The initial position is below the horizon.\n"
 "Would you like to reset to the default position?"
 msgstr ""
 
-#: kstarsinit.cpp:646 kstarsinit.cpp:662 skymap.cpp:169 skymap.cpp:474
+#: kstarsinit.cpp:649 kstarsinit.cpp:665 skymap.cpp:169 skymap.cpp:474
 #: skymapevents.cpp:381 skymapevents.cpp:507
 msgid "nothing"
 msgstr ""
@@ -20772,165 +20901,160 @@ msgstr ""
 msgid "Explain DST Rules"
 msgstr ""
 
-#: locationdialog.cpp:122
-msgid "Add to List"
+#: locationdialog.cpp:242 locationdialog.cpp:290 locationdialog.cpp:438
+#, c-format
+msgid ""
+"_n: One city matches search criteria\n"
+"%n cities match search criteria"
 msgstr ""
 
-#: locationdialog.cpp:244 locationdialog.cpp:298 locationdialog.cpp:452
-msgid "One city matches search criteria"
-msgstr ""
-
-#: locationdialog.cpp:246 locationdialog.cpp:300 locationdialog.cpp:454
-msgid "%1 cities match search criteria"
-msgstr ""
-
-#: locationdialog.cpp:350
+#: locationdialog.cpp:338
 msgid "This City already exists in the database."
 msgstr ""
 
-#: locationdialog.cpp:351
+#: locationdialog.cpp:339
 msgid "Error: Duplicate Entry"
 msgstr ""
 
-#: locationdialog.cpp:361
+#: locationdialog.cpp:349
 msgid "All fields (except province) must be filled to add this location."
 msgstr ""
 
-#: locationdialog.cpp:362
+#: locationdialog.cpp:350
 msgid "Fields are Empty"
 msgstr ""
 
-#: locationdialog.cpp:367
+#: locationdialog.cpp:355
 msgid "Could not parse coordinates."
 msgstr ""
 
-#: locationdialog.cpp:368
+#: locationdialog.cpp:356
 msgid "Bad Coordinates"
 msgstr ""
 
-#: locationdialog.cpp:372
+#: locationdialog.cpp:360
 msgid "Really override original data for this city?"
 msgstr ""
 
-#: locationdialog.cpp:373
+#: locationdialog.cpp:361
 msgid "Override existing data?"
 msgstr ""
 
-#: locationdialog.cpp:389
+#: locationdialog.cpp:377
 msgid ""
 "Local cities database could not be opened.\n"
 "Location will not be recorded."
 msgstr ""
 
-#: locationdialog.cpp:497
+#: locationdialog.cpp:479
 msgid " Start Date (Start Time)  /  Revert Date (Revert Time)"
 msgstr ""
 
-#: locationdialog.cpp:499
+#: locationdialog.cpp:481
 msgid "--: No DST correction"
 msgstr ""
 
-#: locationdialog.cpp:500
+#: locationdialog.cpp:482
 msgid "AU: last Sun in Oct. (02:00) / last Sun in Mar. (02:00)"
 msgstr ""
 
-#: locationdialog.cpp:501
+#: locationdialog.cpp:483
 msgid "BZ:  2nd Sun in Oct. (00:00) /  3rd Sun in Feb. (00:00)"
 msgstr ""
 
-#: locationdialog.cpp:502
+#: locationdialog.cpp:484
 msgid "CH:  2nd Sun in Apr. (00:00) /  2nd Sun in Sep. (00:00)"
 msgstr ""
 
-#: locationdialog.cpp:503
+#: locationdialog.cpp:485
 msgid "CL:  2nd Sun in Oct. (04:00) /  2nd Sun in Mar. (04:00)"
 msgstr ""
 
-#: locationdialog.cpp:504
+#: locationdialog.cpp:486
 msgid "CZ:  1st Sun in Oct. (02:45) /  3rd Sun in Mar. (02:45)"
 msgstr ""
 
-#: locationdialog.cpp:505
+#: locationdialog.cpp:487
 msgid "EE: Last Sun in Mar. (00:00) / Last Sun in Oct. (02:00)"
 msgstr ""
 
-#: locationdialog.cpp:506
+#: locationdialog.cpp:488
 msgid "EG: Last Fri in Apr. (00:00) / Last Thu in Sep. (00:00)"
 msgstr ""
 
-#: locationdialog.cpp:507
+#: locationdialog.cpp:489
 msgid "EU: Last Sun in Mar. (01:00) / Last Sun in Oct. (01:00)"
 msgstr ""
 
-#: locationdialog.cpp:508
+#: locationdialog.cpp:490
 msgid "FK:  1st Sun in Sep. (02:00) /  3rd Sun in Apr. (02:00)"
 msgstr ""
 
-#: locationdialog.cpp:509
+#: locationdialog.cpp:491
 msgid "HK:  2nd Sun in May  (03:30) /  3rd Sun in Oct. (03:30)"
 msgstr ""
 
-#: locationdialog.cpp:510
+#: locationdialog.cpp:492
 msgid "IQ: Apr 1 (03:00) / Oct. 1 (00:00)"
 msgstr ""
 
-#: locationdialog.cpp:511
+#: locationdialog.cpp:493
 msgid "IR: Mar 21 (00:00) / Sep. 22 (00:00)"
 msgstr ""
 
-#: locationdialog.cpp:512
+#: locationdialog.cpp:494
 msgid "JD: Last Thu in Mar. (00:00) / Last Thu in Sep. (00:00)"
 msgstr ""
 
-#: locationdialog.cpp:513
+#: locationdialog.cpp:495
 msgid "LB: Last Sun in Mar. (00:00) / Last Sun in Oct. (00:00)"
 msgstr ""
 
-#: locationdialog.cpp:514
+#: locationdialog.cpp:496
 msgid "MX:  1st Sun in May  (02:00) / Last Sun in Sep. (02:00)"
 msgstr ""
 
-#: locationdialog.cpp:515
+#: locationdialog.cpp:497
 msgid "NB:  1st Sun in Sep. (02:00) /  1st Sun in Apr. (02:00)"
 msgstr ""
 
-#: locationdialog.cpp:516
+#: locationdialog.cpp:498
 msgid "NZ:  1st Sun in Oct. (02:00) /  3rd Sun in Mar. (02:00)"
 msgstr ""
 
-#: locationdialog.cpp:517
+#: locationdialog.cpp:499
 msgid "PY:  1st Sun in Oct. (00:00) /  1st Sun in Mar. (00:00)"
 msgstr ""
 
-#: locationdialog.cpp:518
+#: locationdialog.cpp:500
 msgid "RU: Last Sun in Mar. (02:00) / Last Sun in Oct. (02:00)"
 msgstr ""
 
-#: locationdialog.cpp:519
+#: locationdialog.cpp:501
 msgid "SK:  2nd Sun in May  (00:00) /  2nd Sun in Oct. (00:00)"
 msgstr ""
 
-#: locationdialog.cpp:520
+#: locationdialog.cpp:502
 msgid "SY: Apr. 1 (00:00) / Oct. 1 (00:00)"
 msgstr ""
 
-#: locationdialog.cpp:521
+#: locationdialog.cpp:503
 msgid "TG:  1st Sun in Nov. (02:00) / Last Sun in Jan. (02:00)"
 msgstr ""
 
-#: locationdialog.cpp:522
+#: locationdialog.cpp:504
 msgid "TS:  1st Sun in Oct. (02:00) / Last Sun in Mar. (02:00)"
 msgstr ""
 
-#: locationdialog.cpp:523
+#: locationdialog.cpp:505
 msgid "US:  1st Sun in Apr. (02:00) / Last Sun in Oct. (02:00)"
 msgstr ""
 
-#: locationdialog.cpp:524
+#: locationdialog.cpp:506
 msgid "ZN: Apr. 1 (01:00) / Oct. 1 (00:00)"
 msgstr ""
 
-#: locationdialog.cpp:526
+#: locationdialog.cpp:508
 msgid "Daylight Saving Time Rules"
 msgstr ""
 
@@ -21184,12 +21308,6 @@ msgstr "Delwedd"
 msgid "Description:"
 msgstr "Disgrifiad:"
 
-#. i18n: file addlinkdialogui.ui line 74
-#: rc.cpp:24
-#, no-c-format
-msgid "URL:"
-msgstr "URL:"
-
 #. i18n: file addlinkdialogui.ui line 128
 #: rc.cpp:27
 #, no-c-format
@@ -21214,12 +21332,6 @@ msgstr "Cyferbyniant :"
 msgid "Brightness:"
 msgstr "Disgleirdeb:"
 
-#. i18n: file detaildialogui.ui line 28
-#: rc.cpp:39 rc.cpp:554
-#, no-c-format
-msgid "General"
-msgstr "Cyffredinol"
-
 #. i18n: file detaildialogui.ui line 39
 #: rc.cpp:42
 #, fuzzy, no-c-format
@@ -21233,16 +21345,10 @@ msgid "<b>Primary Name</b>"
 msgstr ""
 
 #. i18n: file detaildialogui.ui line 66
-#: rc.cpp:48 rc.cpp:3441
+#: rc.cpp:48 rc.cpp:3477
 #, fuzzy, no-c-format
 msgid "Center Object"
 msgstr "Gwrthrych"
-
-#. i18n: file detaildialogui.ui line 101
-#: rc.cpp:51
-#, no-c-format
-msgid "Magnitude:"
-msgstr ""
 
 #. i18n: file detaildialogui.ui line 109
 #: rc.cpp:54 rc.cpp:60 rc.cpp:66 rc.cpp:72 rc.cpp:78 rc.cpp:90 rc.cpp:96
@@ -21257,12 +21363,6 @@ msgstr ""
 #, no-c-format
 msgid "Size:"
 msgstr "Maint:"
-
-#. i18n: file detaildialogui.ui line 159
-#: rc.cpp:63 rc.cpp:2043
-#, no-c-format
-msgid "Distance:"
-msgstr "Pellder:"
 
 #. i18n: file detaildialogui.ui line 188
 #: rc.cpp:69
@@ -21282,35 +21382,11 @@ msgstr "cyfseriad"
 msgid "Other names"
 msgstr "Dangos enw"
 
-#. i18n: file detaildialogui.ui line 262
-#: rc.cpp:84
-#, no-c-format
-msgid "Coordinates"
-msgstr ""
-
-#. i18n: file detaildialogui.ui line 289
-#: rc.cpp:87 rc.cpp:2235 rc.cpp:2268 rc.cpp:2855
-#, no-c-format
-msgid "Altitude:"
-msgstr ""
-
 #. i18n: file detaildialogui.ui line 318
 #: rc.cpp:93
 #, no-c-format
 msgid "RA (2000.0):"
 msgstr ""
-
-#. i18n: file detaildialogui.ui line 347
-#: rc.cpp:99
-#, no-c-format
-msgid "Airmass:"
-msgstr ""
-
-#. i18n: file detaildialogui.ui line 376
-#: rc.cpp:105 rc.cpp:2232 rc.cpp:2259 rc.cpp:2852
-#, no-c-format
-msgid "Azimuth:"
-msgstr "Asimwth:"
 
 #. i18n: file detaildialogui.ui line 422
 #: rc.cpp:111
@@ -21366,12 +21442,6 @@ msgstr "Asimwth:"
 msgid "Azimuth at Rise:"
 msgstr "Asimwth:"
 
-#. i18n: file detaildialogui.ui line 698
-#: rc.cpp:162
-#, no-c-format
-msgid "Links"
-msgstr ""
-
 #. i18n: file detaildialogui.ui line 709
 #: rc.cpp:165
 #, no-c-format
@@ -21384,35 +21454,17 @@ msgstr ""
 msgid "Images"
 msgstr "Delweddau"
 
-#. i18n: file detaildialogui.ui line 769
-#: rc.cpp:177
-#, no-c-format
-msgid "Edit Link..."
-msgstr ""
-
-#. i18n: file detaildialogui.ui line 777
-#: rc.cpp:180
-#, no-c-format
-msgid "Remove Link"
-msgstr "Gwaredu Cyswllt"
-
 #. i18n: file detaildialogui.ui line 815
 #: rc.cpp:186
 #, no-c-format
 msgid "Online Data"
 msgstr ""
 
-#. i18n: file detaildialogui.ui line 870
-#: rc.cpp:192
-#, no-c-format
-msgid "Log"
-msgstr "Cofnodion"
-
 #. i18n: file detaildialogui.ui line 894
 #: rc.cpp:195
 #, no-c-format
 msgid "Save Log"
-msgstr ""
+msgstr "Cadw'r Cofnod"
 
 #. i18n: file devmanager.ui line 16
 #: rc.cpp:198
@@ -21481,7 +21533,7 @@ msgid "Client"
 msgstr "Dibynnydd:"
 
 #. i18n: file devmanager.ui line 255
-#: rc.cpp:244
+#: rc.cpp:244 rc.cpp:3179
 #, no-c-format
 msgid "Name"
 msgstr "Enw"
@@ -25232,50 +25284,98 @@ msgstr ""
 msgid "Sid. Time"
 msgstr ""
 
+#. i18n: file tools/observinglistui.ui line 16
+#: rc.cpp:3161 tools/observinglist.cpp:35
+#, no-c-format
+msgid "Observing List"
+msgstr ""
+
+#. i18n: file tools/observinglistui.ui line 43
+#: rc.cpp:3167
+#, no-c-format
+msgid "Scope"
+msgstr "Amrediad"
+
+#. i18n: file tools/observinglistui.ui line 51
+#: rc.cpp:3170
+#, no-c-format
+msgid "Details"
+msgstr "Manylion"
+
+#. i18n: file tools/observinglistui.ui line 59
+#: rc.cpp:3173
+#, fuzzy, no-c-format
+msgid "Alt vs Time"
+msgstr "Dyddiad ac Amser"
+
+#. i18n: file tools/observinglistui.ui line 103
+#: rc.cpp:3182
+#, no-c-format
+msgid "RA"
+msgstr ""
+
+#. i18n: file tools/observinglistui.ui line 114
+#: rc.cpp:3185
+#, no-c-format
+msgid "Dec"
+msgstr "Rhag"
+
+#. i18n: file tools/observinglistui.ui line 125
+#: rc.cpp:3188
+#, no-c-format
+msgid "Mag"
+msgstr ""
+
+#. i18n: file tools/observinglistui.ui line 136
+#: rc.cpp:3191 rc.cpp:3206
+#, no-c-format
+msgid "Type"
+msgstr "Math"
+
+#. i18n: file tools/observinglistui.ui line 154
+#: rc.cpp:3194
+#, no-c-format
+msgid "<i>observing notes for object:</i>"
+msgstr ""
+
 #. i18n: file tools/optionstreeview.ui line 16
-#: rc.cpp:3161
+#: rc.cpp:3197
 #, no-c-format
 msgid "View Options"
 msgstr ""
 
 #. i18n: file tools/optionstreeview.ui line 28
-#: rc.cpp:3164
+#: rc.cpp:3200
 #, fuzzy, no-c-format
 msgid "Option Name"
 msgstr "Constellation names"
 
 #. i18n: file tools/optionstreeview.ui line 39
-#: rc.cpp:3167
+#: rc.cpp:3203
 #, no-c-format
 msgid "Description"
 msgstr "Disgrifiad"
 
-#. i18n: file tools/optionstreeview.ui line 50
-#: rc.cpp:3170
-#, no-c-format
-msgid "Type"
-msgstr "Math"
-
 #. i18n: file tools/planetviewerui.ui line 16
-#: rc.cpp:3179
+#: rc.cpp:3215
 #, no-c-format
 msgid "Planet Viewer"
 msgstr ""
 
 #. i18n: file tools/scriptbuilderui.ui line 16
-#: rc.cpp:3183 tools/scriptbuilder.cpp:85
+#: rc.cpp:3219 tools/scriptbuilder.cpp:85
 #, no-c-format
 msgid "Script Builder"
 msgstr ""
 
 #. i18n: file tools/scriptbuilderui.ui line 58
-#: rc.cpp:3187
+#: rc.cpp:3223
 #, no-c-format
 msgid "New Script"
 msgstr ""
 
 #. i18n: file tools/scriptbuilderui.ui line 61
-#: rc.cpp:3190
+#: rc.cpp:3226
 #, no-c-format
 msgid ""
 "Discards current script and starts a new one.  Will prompt to save any "
@@ -25283,13 +25383,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file tools/scriptbuilderui.ui line 92
-#: rc.cpp:3194
+#: rc.cpp:3230
 #, no-c-format
 msgid "Open Script"
 msgstr "Agor Sgript"
 
 #. i18n: file tools/scriptbuilderui.ui line 95
-#: rc.cpp:3197
+#: rc.cpp:3233
 #, no-c-format
 msgid ""
 "Opens an existing script.  Will prompt to save any unsaved changes in the "
@@ -25297,13 +25397,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file tools/scriptbuilderui.ui line 126
-#: rc.cpp:3201
+#: rc.cpp:3237
 #, no-c-format
 msgid "Save Script"
 msgstr ""
 
 #. i18n: file tools/scriptbuilderui.ui line 129
-#: rc.cpp:3204
+#: rc.cpp:3240
 #, no-c-format
 msgid ""
 "Save the current script.  If the script has not been saved before, this is "
@@ -25311,13 +25411,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file tools/scriptbuilderui.ui line 160
-#: rc.cpp:3208
+#: rc.cpp:3244
 #, fuzzy, no-c-format
 msgid "Save Script As..."
 msgstr "Cadw Lliwiau Cyfredol..."
 
 #. i18n: file tools/scriptbuilderui.ui line 163
-#: rc.cpp:3211
+#: rc.cpp:3247
 #, no-c-format
 msgid ""
 "Saves the script to a file, allowing you to first specify the filename and a "
@@ -25325,13 +25425,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file tools/scriptbuilderui.ui line 186
-#: rc.cpp:3215
+#: rc.cpp:3251
 #, no-c-format
 msgid "Test Script"
 msgstr ""
 
 #. i18n: file tools/scriptbuilderui.ui line 189
-#: rc.cpp:3218
+#: rc.cpp:3254
 #, no-c-format
 msgid ""
 "Executes the script in the KStars main window.  You may want to reposition "
@@ -25339,13 +25439,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file tools/scriptbuilderui.ui line 235
-#: rc.cpp:3221
+#: rc.cpp:3257
 #, no-c-format
 msgid "Current Script"
 msgstr ""
 
 #. i18n: file tools/scriptbuilderui.ui line 265
-#: rc.cpp:3224
+#: rc.cpp:3260
 #, no-c-format
 msgid ""
 "This shows the list of commands present in the current working script.  "
@@ -25355,13 +25455,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file tools/scriptbuilderui.ui line 296
-#: rc.cpp:3228
+#: rc.cpp:3264
 #, no-c-format
 msgid "Add Function"
 msgstr ""
 
 #. i18n: file tools/scriptbuilderui.ui line 300
-#: rc.cpp:3231
+#: rc.cpp:3267
 #, no-c-format
 msgid ""
 "If a function is highlighted in the \"Function Browser\" box, this button "
@@ -25370,13 +25470,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file tools/scriptbuilderui.ui line 323
-#: rc.cpp:3236
+#: rc.cpp:3272
 #, no-c-format
 msgid "Remove Function"
 msgstr ""
 
 #. i18n: file tools/scriptbuilderui.ui line 326
-#: rc.cpp:3239
+#: rc.cpp:3275
 #, no-c-format
 msgid ""
 "If a function is highlighted in the \"Current Script\" box, this button will "
@@ -25384,13 +25484,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file tools/scriptbuilderui.ui line 349
-#: rc.cpp:3243
+#: rc.cpp:3279
 #, no-c-format
 msgid "Copy Function"
 msgstr ""
 
 #. i18n: file tools/scriptbuilderui.ui line 352
-#: rc.cpp:3246
+#: rc.cpp:3282
 #, no-c-format
 msgid ""
 "If a function is highlighted in the \"Current Script\" box, this button will "
@@ -25398,13 +25498,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file tools/scriptbuilderui.ui line 375
-#: rc.cpp:3250
+#: rc.cpp:3286
 #, no-c-format
 msgid "Move Up"
 msgstr "Symud i Fyny"
 
 #. i18n: file tools/scriptbuilderui.ui line 378
-#: rc.cpp:3253
+#: rc.cpp:3289
 #, no-c-format
 msgid ""
 "If a function is highlighted in the \"Current Script\" box, this button will "
@@ -25412,13 +25512,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file tools/scriptbuilderui.ui line 401
-#: rc.cpp:3257
+#: rc.cpp:3293
 #, no-c-format
 msgid "Move Down"
 msgstr "Symud i Lawr"
 
 #. i18n: file tools/scriptbuilderui.ui line 404
-#: rc.cpp:3260
+#: rc.cpp:3296
 #, no-c-format
 msgid ""
 "If a function is highlighted in the \"Current Script\" box, this button will "
@@ -25426,25 +25526,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file tools/scriptbuilderui.ui line 447
-#: rc.cpp:3263
+#: rc.cpp:3299
 #, no-c-format
 msgid "Function Arguments"
 msgstr ""
 
 #. i18n: file tools/scriptbuilderui.ui line 497
-#: rc.cpp:3266
+#: rc.cpp:3302
 #, no-c-format
 msgid "Function Browser"
 msgstr ""
 
 #. i18n: file tools/scriptbuilderui.ui line 526
-#: rc.cpp:3269
+#: rc.cpp:3305
 #, no-c-format
 msgid "List of available functions"
 msgstr ""
 
 #. i18n: file tools/scriptbuilderui.ui line 529
-#: rc.cpp:3272
+#: rc.cpp:3308
 #, no-c-format
 msgid ""
 "The Function Browser shows the list of functions available for constructing "
@@ -25456,13 +25556,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file tools/scriptbuilderui.ui line 551
-#: rc.cpp:3276
+#: rc.cpp:3312
 #, no-c-format
 msgid "Function Help"
 msgstr ""
 
 #. i18n: file tools/scriptbuilderui.ui line 554
-#: rc.cpp:3279
+#: rc.cpp:3315
 #, no-c-format
 msgid ""
 "If a function is highlighted in the Function Browser, this area will show "
@@ -25470,19 +25570,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file tools/scriptnamedialog.ui line 16
-#: rc.cpp:3282
+#: rc.cpp:3318
 #, no-c-format
 msgid "Enter Name for Script"
 msgstr ""
 
 #. i18n: file tools/scriptnamedialog.ui line 38
-#: rc.cpp:3285
+#: rc.cpp:3321
 #, no-c-format
 msgid "Enter name for the script"
 msgstr ""
 
 #. i18n: file tools/scriptnamedialog.ui line 41
-#: rc.cpp:3288
+#: rc.cpp:3324
 #, no-c-format
 msgid ""
 "Enter a name for the script.  This is not the file name, just a short "
@@ -25490,25 +25590,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file tools/scriptnamedialog.ui line 55
-#: rc.cpp:3291
+#: rc.cpp:3327
 #, fuzzy, no-c-format
 msgid "Script name:"
 msgstr "Dechrau"
 
 #. i18n: file tools/scriptnamedialog.ui line 63
-#: rc.cpp:3294
+#: rc.cpp:3330
 #, no-c-format
 msgid "Author:"
 msgstr "Awdur:"
 
 #. i18n: file tools/scriptnamedialog.ui line 71
-#: rc.cpp:3297
+#: rc.cpp:3333
 #, no-c-format
 msgid "Enter author's name"
 msgstr ""
 
 #. i18n: file tools/scriptnamedialog.ui line 129
-#: rc.cpp:3306
+#: rc.cpp:3342
 #, no-c-format
 msgid ""
 "Press Ok to accept the script name and author name, and open the Save File "
@@ -25516,43 +25616,43 @@ msgid ""
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 16
-#: rc.cpp:3309
+#: rc.cpp:3345
 #, no-c-format
 msgid "What's Up Tonight?"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 68
-#: rc.cpp:3312
+#: rc.cpp:3348
 #, no-c-format
 msgid "at LOCATION"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 121
-#: rc.cpp:3315
+#: rc.cpp:3351
 #, no-c-format
 msgid "The night of DATE"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 156
-#: rc.cpp:3318
+#: rc.cpp:3354
 #, no-c-format
 msgid "Show objects which are up:"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 176
-#: rc.cpp:3321
+#: rc.cpp:3357
 #, no-c-format
 msgid "Change Date..."
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 179
-#: rc.cpp:3324
+#: rc.cpp:3360
 #, no-c-format
 msgid "Choose a new date"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 182
-#: rc.cpp:3327
+#: rc.cpp:3363
 #, no-c-format
 msgid ""
 "Press this button to select a new date for the \"What's Up Tonight\" tool.  "
@@ -25560,19 +25660,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 190
-#: rc.cpp:3330
+#: rc.cpp:3366
 #, no-c-format
 msgid "Change Location..."
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 193
-#: rc.cpp:3333
+#: rc.cpp:3369
 #, no-c-format
 msgid "Choose a new geographic location"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 196
-#: rc.cpp:3336
+#: rc.cpp:3372
 #, no-c-format
 msgid ""
 "Press this button to select a new geographic location for the \"What's Up "
@@ -25580,31 +25680,31 @@ msgid ""
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 202
-#: rc.cpp:3339
+#: rc.cpp:3375
 #, no-c-format
 msgid "In the Evening"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 207
-#: rc.cpp:3342
+#: rc.cpp:3378
 #, no-c-format
 msgid "In the Morning"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 212
-#: rc.cpp:3345
+#: rc.cpp:3381
 #, no-c-format
 msgid "Any Time Tonight"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 219
-#: rc.cpp:3348
+#: rc.cpp:3384
 #, no-c-format
 msgid "Choose time interval"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 222
-#: rc.cpp:3351
+#: rc.cpp:3387
 #, no-c-format
 msgid ""
 "By default, the \"What's Up Tonight\" tool displays all objects which are "
@@ -25615,133 +25715,133 @@ msgid ""
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 234
-#: rc.cpp:3354
+#: rc.cpp:3390
 #, no-c-format
 msgid "Almanac"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 251
-#: rc.cpp:3357
+#: rc.cpp:3393
 #, no-c-format
 msgid "Sunrise:  07:15"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 254
-#: rc.cpp:3360
+#: rc.cpp:3396
 #, no-c-format
 msgid "Time of sunrise"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 257
-#: rc.cpp:3363
+#: rc.cpp:3399
 #, no-c-format
 msgid "Displays the time of sunrise for the selected date."
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 271
-#: rc.cpp:3366
+#: rc.cpp:3402
 #, no-c-format
 msgid "Moon rise:  13:19"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 274
-#: rc.cpp:3369
+#: rc.cpp:3405
 #, no-c-format
 msgid "Time of moon rise"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 277
-#: rc.cpp:3372
+#: rc.cpp:3408
 #, no-c-format
 msgid "Displays the time at which the moon rises on the selected date."
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 291
-#: rc.cpp:3375
+#: rc.cpp:3411
 #, no-c-format
 msgid "Moon set: 04:27 "
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 294
-#: rc.cpp:3378
+#: rc.cpp:3414
 #, no-c-format
 msgid "Time of moon set"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 297
-#: rc.cpp:3381
+#: rc.cpp:3417
 #, no-c-format
 msgid "Displays the time at which the moon sets on the selected date."
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 311
-#: rc.cpp:3384
+#: rc.cpp:3420
 #, no-c-format
 msgid "Sunset:  19:15"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 314
-#: rc.cpp:3387
+#: rc.cpp:3423
 #, no-c-format
 msgid "Time of sunset"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 317
-#: rc.cpp:3390
+#: rc.cpp:3426
 #, no-c-format
 msgid "Displays the time of sunset for the selected date."
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 331
-#: rc.cpp:3393
+#: rc.cpp:3429
 #, no-c-format
 msgid "Night duration: 11:00 hours"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 334
-#: rc.cpp:3396
+#: rc.cpp:3432
 #, no-c-format
 msgid "Duration of night for selected date"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 337
-#: rc.cpp:3399
+#: rc.cpp:3435
 #, no-c-format
 msgid "Displays the duration between sunset and sunrise for the selected date."
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 351
-#: rc.cpp:3402
+#: rc.cpp:3438
 #, no-c-format
 msgid "Moon illum: 42%"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 354
-#: rc.cpp:3405
+#: rc.cpp:3441
 #, no-c-format
 msgid "Moon's illumination fraction"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 357
-#: rc.cpp:3408
+#: rc.cpp:3444
 #, no-c-format
 msgid "Displays the illumination fraction of the Moon for the selected date."
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 392
-#: rc.cpp:3411
+#: rc.cpp:3447
 #, no-c-format
 msgid "<font size=\"-1\"><b>Choose a category:</b></font>"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 406
-#: rc.cpp:3414
+#: rc.cpp:3450
 #, no-c-format
 msgid "List of objects above horizon tonight"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 409
-#: rc.cpp:3417
+#: rc.cpp:3453
 #, no-c-format
 msgid ""
 "Objects listed here are above the horizon on the selected date, and have the "
@@ -25749,19 +25849,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 417
-#: rc.cpp:3420
+#: rc.cpp:3456
 #, no-c-format
 msgid "Object Name"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 428
-#: rc.cpp:3423
+#: rc.cpp:3459
 #, no-c-format
 msgid "Rises at:  22:12"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 434
-#: rc.cpp:3426
+#: rc.cpp:3462
 #, no-c-format
 msgid ""
 "Displays the time at which the highlighted object rises above the horizon on "
@@ -25769,13 +25869,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 442
-#: rc.cpp:3429
+#: rc.cpp:3465
 #, no-c-format
 msgid "Transits at:  03:45"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 448
-#: rc.cpp:3432
+#: rc.cpp:3468
 #, no-c-format
 msgid ""
 "Displays the time at which the highlighted object transits across the local "
@@ -25783,13 +25883,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 456
-#: rc.cpp:3435
+#: rc.cpp:3471
 #, no-c-format
 msgid "Sets at:  08:22"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 462
-#: rc.cpp:3438
+#: rc.cpp:3474
 #, no-c-format
 msgid ""
 "Displays the time at which the highlighted object sets below the horizon on "
@@ -25797,13 +25897,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 490
-#: rc.cpp:3444
+#: rc.cpp:3480
 #, no-c-format
 msgid "Center this object in the sky display"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 493
-#: rc.cpp:3447
+#: rc.cpp:3483
 #, no-c-format
 msgid ""
 "Center the sky display on this object, and begin tracking it.  Equivalent to "
@@ -25811,31 +25911,31 @@ msgid ""
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 501
-#: rc.cpp:3450
+#: rc.cpp:3486
 #, no-c-format
 msgid "Object Details..."
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 504
-#: rc.cpp:3453
+#: rc.cpp:3489
 #, no-c-format
 msgid "Open the Object Details window"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 507
-#: rc.cpp:3456
+#: rc.cpp:3492
 #, no-c-format
 msgid "Open the Details window for the highlighted object."
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 523
-#: rc.cpp:3459
+#: rc.cpp:3495
 #, no-c-format
 msgid "List of object categories"
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 526
-#: rc.cpp:3462
+#: rc.cpp:3498
 #, no-c-format
 msgid ""
 "Select an item in the Categories list to display objects in that category "
@@ -25843,55 +25943,55 @@ msgid ""
 msgstr ""
 
 #. i18n: file tools/wutdialogui.ui line 534
-#: rc.cpp:3465
+#: rc.cpp:3501
 #, no-c-format
 msgid "<font size=\"-1\"><b>Matching objects:</b></font>"
 msgstr ""
 
 #. i18n: file fitsviewer.rc line 36
-#: rc.cpp:3480
+#: rc.cpp:3516
 #, no-c-format
 msgid "Process ToolBar"
 msgstr ""
 
 #. i18n: file kstarsui.rc line 20
-#: rc.cpp:3486
+#: rc.cpp:3522
 #, no-c-format
 msgid "&Time"
 msgstr "&Amser"
 
 #. i18n: file kstarsui.rc line 27
-#: rc.cpp:3489
+#: rc.cpp:3525
 #, no-c-format
 msgid "&Pointing"
 msgstr ""
 
 #. i18n: file kstarsui.rc line 51
-#: rc.cpp:3495
+#: rc.cpp:3531
 #, no-c-format
 msgid "&Devices"
 msgstr "&Dyfeisiau"
 
-#. i18n: file kstarsui.rc line 74
-#: rc.cpp:3504
+#. i18n: file kstarsui.rc line 75
+#: rc.cpp:3540
 #, no-c-format
 msgid "&Info Boxes"
 msgstr ""
 
-#. i18n: file kstarsui.rc line 81
-#: rc.cpp:3507
+#. i18n: file kstarsui.rc line 82
+#: rc.cpp:3543
 #, no-c-format
 msgid "&Toolbars"
 msgstr "&Barrau Offer:"
 
-#. i18n: file kstarsui.rc line 85
-#: rc.cpp:3510
+#. i18n: file kstarsui.rc line 86
+#: rc.cpp:3546
 #, no-c-format
 msgid "&Statusbar"
 msgstr ""
 
-#. i18n: file kstarsui.rc line 126
-#: rc.cpp:3519
+#. i18n: file kstarsui.rc line 127
+#: rc.cpp:3555
 #, no-c-format
 msgid "View Toolbar"
 msgstr ""
@@ -25936,10 +26036,6 @@ msgstr ""
 
 #: skymap.cpp:715
 msgid "No object selected."
-msgstr ""
-
-#: skymap.cpp:715
-msgid "Object Details"
 msgstr ""
 
 #: skymap.cpp:1301
@@ -26006,103 +26102,107 @@ msgid ""
 "NW"
 msgstr ""
 
-#: ksplanetbase.h:80 skyobject.cpp:31
+#: ksplanetbase.h:80 skyobject.cpp:34
 msgid "unnamed"
 msgstr "di-enw"
 
-#: skyobject.cpp:307
+#: skyobject.cpp:309
 msgid "Star"
 msgstr "Seren"
 
-#: skyobject.cpp:308
+#: skyobject.cpp:310
 msgid "Catalog Star"
 msgstr ""
 
-#: skyobject.cpp:309
+#: skyobject.cpp:311
 msgid "Planet"
 msgstr ""
 
-#: skyobject.cpp:310
+#: skyobject.cpp:312
 msgid "Open Cluster"
 msgstr ""
 
-#: skyobject.cpp:311
+#: skyobject.cpp:313
 msgid "Globular Cluster"
 msgstr ""
 
-#: skyobject.cpp:312
+#: skyobject.cpp:314
 msgid "Gaseous Nebula"
 msgstr ""
 
-#: skyobject.cpp:313
+#: skyobject.cpp:315
 msgid "Planetary Nebula"
 msgstr ""
 
-#: skyobject.cpp:314
+#: skyobject.cpp:316
 msgid "Supernova Remnant"
 msgstr ""
 
-#: skyobject.cpp:315
+#: skyobject.cpp:317
 msgid "Galaxy"
 msgstr ""
 
-#: skyobject.cpp:316
+#: skyobject.cpp:318
 msgid "Comet"
 msgstr ""
 
-#: skyobject.cpp:317
+#: skyobject.cpp:319
 msgid "Asteroid"
 msgstr ""
 
-#: skyobject.cpp:318
+#: skyobject.cpp:320
 msgid "Unknown Type"
 msgstr ""
 
-#: skyobject.cpp:339
+#: skyobject.cpp:341
 msgid "Show HST Image"
 msgstr ""
 
-#: skyobject.cpp:340
+#: skyobject.cpp:342
 msgid "%1: Hubble Space Telescope, operated by STScI for NASA [public domain]"
 msgstr ""
 
-#: skyobject.cpp:341
+#: skyobject.cpp:343
 msgid "Show SEDS Image"
 msgstr ""
 
-#: skyobject.cpp:342
+#: skyobject.cpp:344
 msgid "%1: SEDS, http://www.seds.org [free for non-commercial use]"
 msgstr ""
 
-#: skyobject.cpp:343
+#: skyobject.cpp:345
 msgid "Show KPNO AOP Image"
 msgstr ""
 
-#: skyobject.cpp:344
+#: skyobject.cpp:346
 msgid ""
 "%1: Advanced Observing Program at Kitt Peak National Observatory [free for "
 "non-commercial use; no physical reproductions]"
 msgstr ""
 
-#: skyobject.cpp:345
+#: skyobject.cpp:347
 msgid "Show NOAO Image"
 msgstr ""
 
-#: skyobject.cpp:346
+#: skyobject.cpp:348
 msgid ""
 "%1: National Optical Astronomy Observatories and AURA [free for "
 "non-commercial use]"
 msgstr ""
 
-#: skyobject.cpp:348
+#: skyobject.cpp:350
 msgid ""
 "%1: Very Large Telescope, operated by the European Southern Observatory "
 "[free for non-commercial use; no reproductions]"
 msgstr ""
 
-#: skyobject.cpp:349
+#: skyobject.cpp:351
 msgid "Show"
 msgstr "Dangos"
+
+#: skyobject.cpp:400
+msgid "user log file could not be opened."
+msgstr ""
 
 #: skypoint.cpp:91 skypoint.cpp:94
 msgid "Coordinate out of range."
@@ -27031,6 +27131,22 @@ msgstr ""
 msgid "Could not parse epoch string; assuming J2000"
 msgstr ""
 
+#: tools/observinglist.cpp:118
+msgid "Can't remove object %1; not found in obsList."
+msgstr ""
+
+#: tools/observinglist.cpp:155
+msgid "Can't remove Object %1; not found in table."
+msgstr ""
+
+#: tools/observinglist.cpp:187
+msgid "Object %1 not found in obsList."
+msgstr ""
+
+#: tools/observinglist.cpp:190
+msgid "observing notes for %1:"
+msgstr ""
+
 #: tools/planetviewer.cpp:37
 msgid "Solar System Viewer"
 msgstr ""
@@ -27722,9 +27838,6 @@ msgstr ""
 #, c-format
 msgid "Sets at: %1"
 msgstr ""
-
-#~ msgid "Data"
-#~ msgstr "Data"
 
 #, fuzzy
 #~ msgid "Hide extra objects while moving?"

@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kspread\n"
-"POT-Creation-Date: 2004-10-06 18:19+0200\n"
+"POT-Creation-Date: 2004-12-20 01:37+0100\n"
 "PO-Revision-Date: 2004-09-09 12:35+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -90,7 +90,7 @@ msgid "Navigation"
 msgstr "Llywio"
 
 #. i18n: file kspread.rc line 199
-#: dialogs/kspread_dlg_csv.cc:130 dialogs/kspread_dlg_layout.cc:1172
+#: dialogs/kspread_dlg_csv.cc:130 dialogs/kspread_dlg_layout.cc:1152
 #: dialogs/kspread_dlg_special.cc:49 rc.cpp:63
 #, no-c-format
 msgid "Format"
@@ -234,7 +234,7 @@ msgstr "Defnyddio Modd &LC"
 msgid "&Convert First Letter to Uppercase"
 msgstr "Trosi'r Llythyren &Gyntaf ym Mhriflythyren"
 
-#: commands.cc:77 dialogs/kspread_dlg_layout.cc:3292 kspread_undo.cc:2091
+#: commands.cc:77 dialogs/kspread_dlg_layout.cc:2881 kspread_undo.cc:2092
 #: kspread_view.cc:808
 msgid "Merge Cells"
 msgstr "Uno Celloedd"
@@ -248,7 +248,7 @@ msgstr "Cyfuno Celloedd %1"
 msgid "Dissociate Cell"
 msgstr "Datgysylltu Cell"
 
-#: commands.cc:135 kspread_view.cc:5982 kspread_view.cc:6000
+#: commands.cc:135 kspread_view.cc:5997 kspread_view.cc:6015
 msgid "Rename Sheet"
 msgstr "Ail-enwi Dalen"
 
@@ -274,8 +274,8 @@ msgstr "Dangos Dalen"
 msgid "Add Sheet"
 msgstr "Ychwanegu Dalen"
 
-#: commands.cc:262 kspread_view.cc:927 kspread_view.cc:5937
-#: kspread_view.cc:5942
+#: commands.cc:262 kspread_view.cc:927 kspread_view.cc:5952
+#: kspread_view.cc:5957
 msgid "Remove Sheet"
 msgstr "Gwaredu Dalen"
 
@@ -284,11 +284,11 @@ msgstr "Gwaredu Dalen"
 msgid "Change Sheet Properties"
 msgstr "Priodweddau Dalen"
 
-#: commands.cc:395 kspread_undo.cc:315 kspread_view.cc:855
+#: commands.cc:395 kspread_undo.cc:316 kspread_view.cc:855
 msgid "Insert Columns"
 msgstr "Mewnosod Colofnau"
 
-#: commands.cc:427 commands.cc:528 kspread_undo.cc:714
+#: commands.cc:427 commands.cc:528 kspread_undo.cc:715
 msgid "Set Page Layout"
 msgstr "Gosod Haenllun y Tudalen"
 
@@ -430,81 +430,58 @@ msgstr "Sad"
 msgid "Sun"
 msgstr "Sul"
 
-#: kspread_canvas.cc:538 kspread_canvas.cc:560
+#: kspread_canvas.cc:261 kspread_canvas.cc:283
 msgid "Invalid cell reference"
 msgstr "Cyfeiriad cell annilys"
 
-#: kspread_canvas.cc:546 kspread_canvas.cc:569
+#: kspread_canvas.cc:269 kspread_canvas.cc:292
 #, c-format
 msgid "Unknown table name %1"
 msgstr "Enw tabl anhysbys %1"
 
-#: kspread_canvas.cc:1201
+#: kspread_canvas.cc:931
 msgid ""
 "Do you want to open this link to '%1'?\n"
 msgstr ""
 "Ydych eisiau agor y cyswllt hwn at '%1'?\n"
 
-#: kspread_canvas.cc:1204
+#: kspread_canvas.cc:934
 msgid ""
 "Note that opening a link to a local file may compromise your system's "
 "security."
 msgstr "Noder y gall agor cyswllt at ffeil lleol danseilio diogelwch eich cysawd."
 
-#: kspread_canvas.cc:1210
+#: kspread_canvas.cc:940
 msgid "Open Link?"
 msgstr "Agor Cyswllt?"
 
-#: kspread_canvas.cc:4578
+#: kspread_canvas.cc:4146
 msgid "Height: %1 %2"
 msgstr "Uchder: %1 %2"
 
-#: kspread_canvas.cc:4582
+#: kspread_canvas.cc:4150
 msgid "Hide Row"
 msgstr "Cuddio Rhes"
 
-#: kspread_canvas.cc:5324
+#: kspread_canvas.cc:4934
 msgid "Width: %1 %2"
 msgstr "Lled: %1 %2"
 
-#: kspread_canvas.cc:5329
+#: kspread_canvas.cc:4939
 msgid "Hide Column"
 msgstr "Cuddio Colofn"
 
-#: dialogs/kspread_dlg_anchor.cc:136 dialogs/kspread_dlg_anchor.cc:216
-#: dialogs/kspread_dlg_anchor.cc:297 dialogs/kspread_dlg_anchor.cc:418
-#: kspread_canvas.cc:5612
+#: dialogs/kspread_dlg_anchor.cc:137 dialogs/kspread_dlg_anchor.cc:217
+#: dialogs/kspread_dlg_anchor.cc:298 dialogs/kspread_dlg_anchor.cc:419
+#: kspread_canvas.cc:5242
 msgid "Comment:"
 msgstr "Sylwad:"
 
-#: kspread_cell.cc:952
+#: kspread_cell.cc:974
 msgid "REFERENCE TO COLUMN OR ROW IS OUT OF RANGE"
 msgstr "CYFEIRIAD I GOLOFN NEU RES TU ALLAN I AMREDIAD"
 
-#: kspread_cell.cc:1456
-msgid "Parse"
-msgstr "Dosrannu"
-
-#: kspread_cell.cc:1460
-msgid "Circle"
-msgstr "Cylch"
-
-#: kspread_cell.cc:1464
-msgid "Depend"
-msgstr "Dibynnu"
-
-#: kspread_cell.cc:1492 kspread_cell.cc:2156 kspread_cell.cc:4731
-#: kspread_cell.cc:5400 kspread_functions_text.cc:676
-#: kspread_functions_text.cc:932
-msgid "True"
-msgstr "Gwir"
-
-#: kspread_cell.cc:1492 kspread_cell.cc:2156 kspread_cell.cc:5400
-#: kspread_functions_text.cc:676 kspread_functions_text.cc:932
-msgid "False"
-msgstr "Ffug"
-
-#: kspread_cell.cc:2061 kspread_cell.cc:2128
+#: kspread_cell.cc:1868 kspread_cell.cc:1935
 msgid ""
 "Error in cell %1\n"
 "\n"
@@ -512,28 +489,24 @@ msgstr ""
 "Gwall yng nghell %1\n"
 "\n"
 
-#: kspread_cell.cc:4736
-msgid "false"
-msgstr "ffug"
+#: kspread_cell.cc:5039 kspread_functions_text.cc:678
+msgid "True"
+msgstr "Gwir"
 
-#: kspread_cell.cc:4853
-msgid "pm"
-msgstr "yp"
+#: kspread_cell.cc:5039 kspread_functions_text.cc:678
+msgid "False"
+msgstr "Ffug"
 
-#: kspread_cell.cc:4854
-msgid "am"
-msgstr "yb"
-
-#: kspread_doc.cc:853
+#: kspread_doc.cc:886
 msgid "Invalid document. No office:body."
 msgstr "Dogfen annilys. Dim office:body."
 
-#: kspread_doc.cc:861
+#: kspread_doc.cc:894
 #, fuzzy
 msgid "Invalid document. No office:spreadsheet."
 msgstr "Dogfen annilys. Dim office:body."
 
-#: kspread_doc.cc:912
+#: kspread_doc.cc:942
 #, c-format
 msgid ""
 "Invalid document. Expected mimetype application/x-kspread or "
@@ -542,7 +515,7 @@ msgstr ""
 "Dogfen annilys. Disgwyliwyd math mime application/x-kspread neu "
 "application/vnd. kde.kspread, cafwyd %1"
 
-#: kspread_doc.cc:920
+#: kspread_doc.cc:950
 msgid ""
 "This document was created with a newer version of KSpread (syntax version: "
 "%1)\n"
@@ -552,2484 +525,2484 @@ msgstr ""
 "%1)\n"
 "Gellir colli gwybodaeth wrth ei hagor â'r fersiwn yma o KSpread."
 
-#: kspread_doc.cc:922
+#: kspread_doc.cc:952
 msgid "File Format Mismatch"
 msgstr "Camgydweddiad Fformat Ffeil"
 
-#: kspread_doc.cc:985
+#: kspread_doc.cc:1015
 msgid "Styles cannot be loaded."
 msgstr "Ni ellir llwytho arddulliau."
 
-#: kspread_doc.cc:995
+#: kspread_doc.cc:1025
 msgid "Invalid document. No map tag."
 msgstr "Dogfen annilys. Dim tag fap."
 
-#: kspread_doc.cc:1370
+#: kspread_doc.cc:1400
 #, c-format
 msgid "Sheet%1"
 msgstr "Llen %1"
 
-#: kspread_format.cc:3228 kspread_format.cc:3266
+#: kspread_format.cc:3193 kspread_format.cc:3231
 msgid "Australia"
 msgstr "Awstralia"
 
-#: kspread_format.cc:3228 kspread_format.cc:3229 kspread_format.cc:3230
-#: kspread_format.cc:3231 kspread_format.cc:3232
+#: kspread_format.cc:3193 kspread_format.cc:3194 kspread_format.cc:3195
+#: kspread_format.cc:3196 kspread_format.cc:3197
 msgid "Dollar"
 msgstr "Doler"
 
-#: kspread_format.cc:3229 kspread_format.cc:3296
+#: kspread_format.cc:3194 kspread_format.cc:3261
 msgid "Canada"
 msgstr "Canada"
 
-#: kspread_format.cc:3230
+#: kspread_format.cc:3195
 msgid "Caribbea"
 msgstr "Y Caribî"
 
-#: kspread_format.cc:3231 kspread_format.cc:3429
+#: kspread_format.cc:3196 kspread_format.cc:3394
 msgid "New Zealand"
 msgstr "Seland Newydd"
 
-#: kspread_format.cc:3232 kspread_format.cc:3501 kspread_format.cc:3502
-#: kspread_format.cc:3503
+#: kspread_format.cc:3197 kspread_format.cc:3466 kspread_format.cc:3467
+#: kspread_format.cc:3468
 msgid "United States"
 msgstr "Yr Unol Daleithiau"
 
-#: kspread_format.cc:3236 kspread_format.cc:3267 kspread_format.cc:3268
+#: kspread_format.cc:3201 kspread_format.cc:3232 kspread_format.cc:3233
 msgid "Austria"
 msgstr "Awstria"
 
-#: kspread_format.cc:3236 kspread_format.cc:3237 kspread_format.cc:3238
-#: kspread_format.cc:3239 kspread_format.cc:3240 kspread_format.cc:3241
-#: kspread_format.cc:3242 kspread_format.cc:3243 kspread_format.cc:3244
-#: kspread_format.cc:3245 kspread_format.cc:3246 kspread_format.cc:3247
-#: kspread_format.cc:3248 kspread_format.cc:3258 kspread_format.cc:3267
-#: kspread_format.cc:3275 kspread_format.cc:3334 kspread_format.cc:3336
-#: kspread_format.cc:3338 kspread_format.cc:3340 kspread_format.cc:3344
-#: kspread_format.cc:3348 kspread_format.cc:3352 kspread_format.cc:3362
-#: kspread_format.cc:3371 kspread_format.cc:3375 kspread_format.cc:3396
-#: kspread_format.cc:3407 kspread_format.cc:3410 kspread_format.cc:3415
-#: kspread_format.cc:3425 kspread_format.cc:3448 kspread_format.cc:3459
-#: kspread_format.cc:3462 kspread_format.cc:3474
+#: kspread_format.cc:3201 kspread_format.cc:3202 kspread_format.cc:3203
+#: kspread_format.cc:3204 kspread_format.cc:3205 kspread_format.cc:3206
+#: kspread_format.cc:3207 kspread_format.cc:3208 kspread_format.cc:3209
+#: kspread_format.cc:3210 kspread_format.cc:3211 kspread_format.cc:3212
+#: kspread_format.cc:3213 kspread_format.cc:3223 kspread_format.cc:3232
+#: kspread_format.cc:3240 kspread_format.cc:3299 kspread_format.cc:3301
+#: kspread_format.cc:3303 kspread_format.cc:3305 kspread_format.cc:3309
+#: kspread_format.cc:3313 kspread_format.cc:3317 kspread_format.cc:3327
+#: kspread_format.cc:3336 kspread_format.cc:3340 kspread_format.cc:3361
+#: kspread_format.cc:3372 kspread_format.cc:3375 kspread_format.cc:3380
+#: kspread_format.cc:3390 kspread_format.cc:3413 kspread_format.cc:3424
+#: kspread_format.cc:3427 kspread_format.cc:3439
 msgid "Euro"
 msgstr "Euro"
 
-#: kspread_format.cc:3237 kspread_format.cc:3275 kspread_format.cc:3276
+#: kspread_format.cc:3202 kspread_format.cc:3240 kspread_format.cc:3241
 msgid "Belgium"
 msgstr "Gwlad Belg"
 
-#: kspread_format.cc:3238 kspread_format.cc:3334 kspread_format.cc:3335
+#: kspread_format.cc:3203 kspread_format.cc:3299 kspread_format.cc:3300
 msgid "Finland"
 msgstr "Y Ffindir"
 
-#: kspread_format.cc:3239 kspread_format.cc:3336 kspread_format.cc:3337
+#: kspread_format.cc:3204 kspread_format.cc:3301 kspread_format.cc:3302
 msgid "France"
 msgstr "Ffrainc"
 
-#: kspread_format.cc:3240 kspread_format.cc:3344 kspread_format.cc:3345
+#: kspread_format.cc:3205 kspread_format.cc:3309 kspread_format.cc:3310
 msgid "Germany"
 msgstr "Yr Almaen"
 
-#: kspread_format.cc:3241 kspread_format.cc:3348 kspread_format.cc:3349
+#: kspread_format.cc:3206 kspread_format.cc:3313 kspread_format.cc:3314
 msgid "Greece"
 msgstr "Groeg"
 
-#: kspread_format.cc:3242 kspread_format.cc:3371 kspread_format.cc:3372
-#: kspread_format.cc:3373
+#: kspread_format.cc:3207 kspread_format.cc:3336 kspread_format.cc:3337
+#: kspread_format.cc:3338
 msgid "Ireland"
 msgstr "Iwerddon"
 
-#: kspread_format.cc:3243 kspread_format.cc:3375 kspread_format.cc:3376
+#: kspread_format.cc:3208 kspread_format.cc:3340 kspread_format.cc:3341
 msgid "Italy"
 msgstr "Yr Eidal"
 
-#: kspread_format.cc:3244 kspread_format.cc:3396 kspread_format.cc:3397
+#: kspread_format.cc:3209 kspread_format.cc:3361 kspread_format.cc:3362
 msgid "Luxembourg"
 msgstr "Lwcsembwrg"
 
-#: kspread_format.cc:3245 kspread_format.cc:3415
+#: kspread_format.cc:3210 kspread_format.cc:3380
 msgid "Monaco"
 msgstr "Monaco"
 
-#: kspread_format.cc:3246 kspread_format.cc:3425 kspread_format.cc:3426
+#: kspread_format.cc:3211 kspread_format.cc:3390 kspread_format.cc:3391
 msgid "Netherlands"
 msgstr "Yr Iseldiroedd"
 
-#: kspread_format.cc:3247 kspread_format.cc:3448 kspread_format.cc:3449
+#: kspread_format.cc:3212 kspread_format.cc:3413 kspread_format.cc:3414
 msgid "Portugal"
 msgstr "Portiwgal"
 
-#: kspread_format.cc:3248 kspread_format.cc:3474 kspread_format.cc:3475
+#: kspread_format.cc:3213 kspread_format.cc:3439 kspread_format.cc:3440
 msgid "Spain"
 msgstr "Sbaen"
 
-#: kspread_format.cc:3250 kspread_format.cc:3500
+#: kspread_format.cc:3215 kspread_format.cc:3465
 msgid "United Kingdom"
 msgstr "Y Deyrnas Unedig"
 
-#: kspread_format.cc:3250
+#: kspread_format.cc:3215
 msgid "Pound"
 msgstr "Punt"
 
-#: kspread_format.cc:3252 kspread_format.cc:3378
+#: kspread_format.cc:3217 kspread_format.cc:3343
 msgid "Japan"
 msgstr "Siapan"
 
-#: kspread_format.cc:3252 kspread_format.cc:3378
+#: kspread_format.cc:3217 kspread_format.cc:3343
 msgid "Yen"
 msgstr "Yen"
 
-#: kspread_format.cc:3254
+#: kspread_format.cc:3219
 msgid "Afghanistan"
 msgstr "Affganistan"
 
-#: kspread_format.cc:3254
+#: kspread_format.cc:3219
 msgid "Afghani"
 msgstr "Afghanaidd"
 
-#: kspread_format.cc:3254
+#: kspread_format.cc:3219
 msgid "AFA"
 msgstr "AFA"
 
-#: kspread_format.cc:3255
+#: kspread_format.cc:3220
 msgid "Albania"
 msgstr "Albania"
 
-#: kspread_format.cc:3255
+#: kspread_format.cc:3220
 msgid "Lek"
 msgstr "Lek"
 
-#: kspread_format.cc:3256
+#: kspread_format.cc:3221
 msgid "Algeria"
 msgstr "Algeria"
 
-#: kspread_format.cc:3256
+#: kspread_format.cc:3221
 msgid "Algerian Dinar"
 msgstr "Dinar Algeria"
 
-#: kspread_format.cc:3256
+#: kspread_format.cc:3221
 msgid "DZD"
 msgstr "DZD"
 
-#: kspread_format.cc:3257
+#: kspread_format.cc:3222
 msgid "American Samoa"
 msgstr "Samoa Americanaidd"
 
-#: kspread_format.cc:3257 kspread_format.cc:3288 kspread_format.cc:3322
-#: kspread_format.cc:3323 kspread_format.cc:3326 kspread_format.cc:3353
-#: kspread_format.cc:3360 kspread_format.cc:3406 kspread_format.cc:3413
-#: kspread_format.cc:3435 kspread_format.cc:3439 kspread_format.cc:3441
-#: kspread_format.cc:3450 kspread_format.cc:3495 kspread_format.cc:3501
-#: kspread_format.cc:3509
+#: kspread_format.cc:3222 kspread_format.cc:3253 kspread_format.cc:3287
+#: kspread_format.cc:3288 kspread_format.cc:3291 kspread_format.cc:3318
+#: kspread_format.cc:3325 kspread_format.cc:3371 kspread_format.cc:3378
+#: kspread_format.cc:3400 kspread_format.cc:3404 kspread_format.cc:3406
+#: kspread_format.cc:3415 kspread_format.cc:3460 kspread_format.cc:3466
+#: kspread_format.cc:3474
 msgid "US Dollar"
 msgstr "Doler UD"
 
-#: kspread_format.cc:3257 kspread_format.cc:3288 kspread_format.cc:3322
-#: kspread_format.cc:3323 kspread_format.cc:3326 kspread_format.cc:3353
-#: kspread_format.cc:3360 kspread_format.cc:3406 kspread_format.cc:3413
-#: kspread_format.cc:3435 kspread_format.cc:3439 kspread_format.cc:3441
-#: kspread_format.cc:3450 kspread_format.cc:3495 kspread_format.cc:3501
-#: kspread_format.cc:3509
+#: kspread_format.cc:3222 kspread_format.cc:3253 kspread_format.cc:3287
+#: kspread_format.cc:3288 kspread_format.cc:3291 kspread_format.cc:3318
+#: kspread_format.cc:3325 kspread_format.cc:3371 kspread_format.cc:3378
+#: kspread_format.cc:3400 kspread_format.cc:3404 kspread_format.cc:3406
+#: kspread_format.cc:3415 kspread_format.cc:3460 kspread_format.cc:3466
+#: kspread_format.cc:3474
 msgid "USD"
 msgstr "USD"
 
-#: kspread_format.cc:3258 kspread_format.cc:3259
+#: kspread_format.cc:3223 kspread_format.cc:3224
 msgid "Andorra"
 msgstr "Andora"
 
-#: kspread_format.cc:3258 kspread_format.cc:3267 kspread_format.cc:3275
-#: kspread_format.cc:3334 kspread_format.cc:3336 kspread_format.cc:3338
-#: kspread_format.cc:3340 kspread_format.cc:3344 kspread_format.cc:3348
-#: kspread_format.cc:3352 kspread_format.cc:3362 kspread_format.cc:3371
-#: kspread_format.cc:3375 kspread_format.cc:3396 kspread_format.cc:3407
-#: kspread_format.cc:3410 kspread_format.cc:3415 kspread_format.cc:3425
-#: kspread_format.cc:3448 kspread_format.cc:3459 kspread_format.cc:3462
-#: kspread_format.cc:3474
+#: kspread_format.cc:3223 kspread_format.cc:3232 kspread_format.cc:3240
+#: kspread_format.cc:3299 kspread_format.cc:3301 kspread_format.cc:3303
+#: kspread_format.cc:3305 kspread_format.cc:3309 kspread_format.cc:3313
+#: kspread_format.cc:3317 kspread_format.cc:3327 kspread_format.cc:3336
+#: kspread_format.cc:3340 kspread_format.cc:3361 kspread_format.cc:3372
+#: kspread_format.cc:3375 kspread_format.cc:3380 kspread_format.cc:3390
+#: kspread_format.cc:3413 kspread_format.cc:3424 kspread_format.cc:3427
+#: kspread_format.cc:3439
 msgid "EUR"
 msgstr "EUR"
 
-#: kspread_format.cc:3259
+#: kspread_format.cc:3224
 msgid "Andorran Peseta"
 msgstr "Peseta Andora"
 
-#: kspread_format.cc:3259
+#: kspread_format.cc:3224
 msgid "ADP"
 msgstr "ADP"
 
-#: kspread_format.cc:3260
+#: kspread_format.cc:3225
 msgid "Angola"
 msgstr "Angola"
 
-#: kspread_format.cc:3260
+#: kspread_format.cc:3225
 msgid "Kwanza"
 msgstr "Cwansa"
 
-#: kspread_format.cc:3260
+#: kspread_format.cc:3225
 msgid "AOA"
 msgstr "AOA"
 
-#: kspread_format.cc:3261
+#: kspread_format.cc:3226
 msgid "Anguilla"
 msgstr "Angwila"
 
-#: kspread_format.cc:3261 kspread_format.cc:3319 kspread_format.cc:3351
-#: kspread_format.cc:3417 kspread_format.cc:3457 kspread_format.cc:3458
-#: kspread_format.cc:3460
+#: kspread_format.cc:3226 kspread_format.cc:3284 kspread_format.cc:3316
+#: kspread_format.cc:3382 kspread_format.cc:3422 kspread_format.cc:3423
+#: kspread_format.cc:3425
 msgid "East Caribbean Dollar"
 msgstr "Doler Dwyrain y Caribî"
 
-#: kspread_format.cc:3261 kspread_format.cc:3262 kspread_format.cc:3351
-#: kspread_format.cc:3417 kspread_format.cc:3457 kspread_format.cc:3458
-#: kspread_format.cc:3460
+#: kspread_format.cc:3226 kspread_format.cc:3227 kspread_format.cc:3316
+#: kspread_format.cc:3382 kspread_format.cc:3422 kspread_format.cc:3423
+#: kspread_format.cc:3425
 msgid "XCD"
 msgstr "XCD"
 
-#: kspread_format.cc:3262
+#: kspread_format.cc:3227
 msgid "Antigua And Barbuda"
 msgstr "Antigua a Barbwda"
 
-#: kspread_format.cc:3262
+#: kspread_format.cc:3227
 msgid "East Carribean Dollar"
 msgstr "Doler Dwyrain y Caribî"
 
-#: kspread_format.cc:3263
+#: kspread_format.cc:3228
 msgid "Argentina"
 msgstr "Yr Ariannin"
 
-#: kspread_format.cc:3263
+#: kspread_format.cc:3228
 msgid "Argentine Peso"
 msgstr "Peso yr Ariannin"
 
-#: kspread_format.cc:3263
+#: kspread_format.cc:3228
 msgid "ARS"
 msgstr "ARS"
 
-#: kspread_format.cc:3264
+#: kspread_format.cc:3229
 msgid "Armenia"
 msgstr "Armenia"
 
-#: kspread_format.cc:3264
+#: kspread_format.cc:3229
 msgid "Armenian Dram"
 msgstr "Dram Armenia"
 
-#: kspread_format.cc:3264
+#: kspread_format.cc:3229
 msgid "AMD"
 msgstr "AMD"
 
-#: kspread_format.cc:3265
+#: kspread_format.cc:3230
 msgid "Aruba"
 msgstr "Arwba"
 
-#: kspread_format.cc:3265
+#: kspread_format.cc:3230
 msgid "Aruban Guilder"
 msgstr "Gilder Arwba"
 
-#: kspread_format.cc:3265
+#: kspread_format.cc:3230
 msgid "AWG"
 msgstr "AWG"
 
-#: kspread_format.cc:3266 kspread_format.cc:3304 kspread_format.cc:3305
-#: kspread_format.cc:3361 kspread_format.cc:3382 kspread_format.cc:3423
-#: kspread_format.cc:3434 kspread_format.cc:3496
+#: kspread_format.cc:3231 kspread_format.cc:3269 kspread_format.cc:3270
+#: kspread_format.cc:3326 kspread_format.cc:3347 kspread_format.cc:3388
+#: kspread_format.cc:3399 kspread_format.cc:3461
 msgid "Australian Dollar"
 msgstr "Doler Awstralia"
 
-#: kspread_format.cc:3266 kspread_format.cc:3304 kspread_format.cc:3305
-#: kspread_format.cc:3361 kspread_format.cc:3382 kspread_format.cc:3423
-#: kspread_format.cc:3434 kspread_format.cc:3496
+#: kspread_format.cc:3231 kspread_format.cc:3269 kspread_format.cc:3270
+#: kspread_format.cc:3326 kspread_format.cc:3347 kspread_format.cc:3388
+#: kspread_format.cc:3399 kspread_format.cc:3461
 msgid "AUD"
 msgstr "AUD"
 
-#: kspread_format.cc:3268
+#: kspread_format.cc:3233
 msgid "Schilling"
 msgstr "Siling"
 
-#: kspread_format.cc:3268
+#: kspread_format.cc:3233
 msgid "S"
 msgstr "S"
 
-#: kspread_format.cc:3269
+#: kspread_format.cc:3234
 msgid "Azerbaijan"
 msgstr "Azerbaijan"
 
-#: kspread_format.cc:3269
+#: kspread_format.cc:3234
 msgid "Azerbaijanian Manat"
 msgstr "Manat Azerbaijan"
 
-#: kspread_format.cc:3269
+#: kspread_format.cc:3234
 msgid "AZM"
 msgstr "AZM"
 
-#: kspread_format.cc:3270
+#: kspread_format.cc:3235
 msgid "Bahamas"
 msgstr "Y Bahamas "
 
-#: kspread_format.cc:3270
+#: kspread_format.cc:3235
 msgid "Bahamian Dollar"
 msgstr "Doler y Bahamas"
 
-#: kspread_format.cc:3270
+#: kspread_format.cc:3235
 msgid "BSD"
 msgstr "BSD"
 
-#: kspread_format.cc:3271
+#: kspread_format.cc:3236
 msgid "Bahrain"
 msgstr "Bahrain"
 
-#: kspread_format.cc:3271
+#: kspread_format.cc:3236
 msgid "Bahraini Dinar"
 msgstr "Dinar Bahrain"
 
-#: kspread_format.cc:3271
+#: kspread_format.cc:3236
 msgid "BHD"
 msgstr "BHD"
 
-#: kspread_format.cc:3272
+#: kspread_format.cc:3237
 msgid "Bangladesh"
 msgstr "Bangladesh"
 
-#: kspread_format.cc:3272
+#: kspread_format.cc:3237
 msgid "Taka"
 msgstr "Taca"
 
-#: kspread_format.cc:3272
+#: kspread_format.cc:3237
 msgid "BDT"
 msgstr "BDT"
 
-#: kspread_format.cc:3273
+#: kspread_format.cc:3238
 msgid "Barbados"
 msgstr "Barbados"
 
-#: kspread_format.cc:3273
+#: kspread_format.cc:3238
 msgid "Barbados Dollar"
 msgstr "Doler Barbados"
 
-#: kspread_format.cc:3273
+#: kspread_format.cc:3238
 msgid "BBD"
 msgstr "BBD"
 
-#: kspread_format.cc:3274
+#: kspread_format.cc:3239
 msgid "Belarus"
 msgstr "Belarws"
 
-#: kspread_format.cc:3274
+#: kspread_format.cc:3239
 msgid "Belarussian Ruble"
 msgstr "Rwbl Belarwsia"
 
-#: kspread_format.cc:3274
+#: kspread_format.cc:3239
 msgid "p."
 msgstr "p."
 
-#: kspread_format.cc:3276 kspread_format.cc:3337 kspread_format.cc:3397
+#: kspread_format.cc:3241 kspread_format.cc:3302 kspread_format.cc:3362
 msgid "Franc"
 msgstr "Ffranc"
 
-#: kspread_format.cc:3276
+#: kspread_format.cc:3241
 msgid "BF"
 msgstr "BF"
 
-#: kspread_format.cc:3277
+#: kspread_format.cc:3242
 msgid "Belize"
 msgstr "Belîs"
 
-#: kspread_format.cc:3277
+#: kspread_format.cc:3242
 msgid "Belize Dollar"
 msgstr "Doler Belîs"
 
-#: kspread_format.cc:3277
+#: kspread_format.cc:3242
 msgid "BZ$"
 msgstr "BZ$"
 
-#: kspread_format.cc:3278
+#: kspread_format.cc:3243
 msgid "Benin"
 msgstr "Benin"
 
-#: kspread_format.cc:3278 kspread_format.cc:3292 kspread_format.cc:3312
-#: kspread_format.cc:3357 kspread_format.cc:3404 kspread_format.cc:3431
-#: kspread_format.cc:3465 kspread_format.cc:3488
+#: kspread_format.cc:3243 kspread_format.cc:3257 kspread_format.cc:3277
+#: kspread_format.cc:3322 kspread_format.cc:3369 kspread_format.cc:3396
+#: kspread_format.cc:3430 kspread_format.cc:3453
 msgid "CFA Franc BCEAO"
 msgstr "Ffranc CFA BCEAO"
 
-#: kspread_format.cc:3278 kspread_format.cc:3292 kspread_format.cc:3312
-#: kspread_format.cc:3357 kspread_format.cc:3404 kspread_format.cc:3431
-#: kspread_format.cc:3465 kspread_format.cc:3488
+#: kspread_format.cc:3243 kspread_format.cc:3257 kspread_format.cc:3277
+#: kspread_format.cc:3322 kspread_format.cc:3369 kspread_format.cc:3396
+#: kspread_format.cc:3430 kspread_format.cc:3453
 msgid "XOF"
 msgstr "XOF"
 
-#: kspread_format.cc:3279
+#: kspread_format.cc:3244
 msgid "Bermuda"
 msgstr "Bermiwda"
 
-#: kspread_format.cc:3279
+#: kspread_format.cc:3244
 msgid "Bermudian Dollar"
 msgstr "Doler Bermiwda"
 
-#: kspread_format.cc:3279
+#: kspread_format.cc:3244
 msgid "BMD"
 msgstr "BMD"
 
-#: kspread_format.cc:3280 kspread_format.cc:3281
+#: kspread_format.cc:3245 kspread_format.cc:3246
 msgid "Bhutan"
 msgstr "Bhutan"
 
-#: kspread_format.cc:3280 kspread_format.cc:3367
+#: kspread_format.cc:3245 kspread_format.cc:3332
 msgid "Indian Rupee"
 msgstr "Rwpî India"
 
-#: kspread_format.cc:3280 kspread_format.cc:3367
+#: kspread_format.cc:3245 kspread_format.cc:3332
 msgid "INR"
 msgstr "INR"
 
-#: kspread_format.cc:3281
+#: kspread_format.cc:3246
 msgid "Ngultrum"
 msgstr "Ngwltrwm"
 
-#: kspread_format.cc:3281
+#: kspread_format.cc:3246
 msgid "BTN"
 msgstr "BTN"
 
-#: kspread_format.cc:3282 kspread_format.cc:3283
+#: kspread_format.cc:3247 kspread_format.cc:3248
 msgid "Bolivia"
 msgstr "Bolifia"
 
-#: kspread_format.cc:3282
+#: kspread_format.cc:3247
 msgid "Boliviano"
 msgstr "Bolifiano"
 
-#: kspread_format.cc:3282 kspread_format.cc:3507
+#: kspread_format.cc:3247 kspread_format.cc:3472
 msgid "Bs"
 msgstr "Bs"
 
-#: kspread_format.cc:3283
+#: kspread_format.cc:3248
 msgid "Mvdol"
 msgstr "Mvdol"
 
-#: kspread_format.cc:3283
+#: kspread_format.cc:3248
 msgid "BOV"
 msgstr "BOV"
 
-#: kspread_format.cc:3284
+#: kspread_format.cc:3249
 msgid "Bosnia And Herzegovina"
 msgstr "Bosnia a Hertsegofina"
 
-#: kspread_format.cc:3284
+#: kspread_format.cc:3249
 msgid "Convertible Marks"
 msgstr "Marcau Trosiadwy"
 
-#: kspread_format.cc:3284
+#: kspread_format.cc:3249
 msgid "BAM"
 msgstr "BAM"
 
-#: kspread_format.cc:3285
+#: kspread_format.cc:3250
 msgid "Botswana"
 msgstr "Botswana"
 
-#: kspread_format.cc:3285
+#: kspread_format.cc:3250
 msgid "Pula"
 msgstr "Pwla"
 
-#: kspread_format.cc:3285
+#: kspread_format.cc:3250
 msgid "BWP"
 msgstr "BWP"
 
-#: kspread_format.cc:3286
+#: kspread_format.cc:3251
 msgid "Bouvet Island"
 msgstr "Ynys Bouvet"
 
-#: kspread_format.cc:3286
+#: kspread_format.cc:3251
 msgid "Norvegian Krone"
 msgstr "Crone Norwy"
 
-#: kspread_format.cc:3286 kspread_format.cc:3479
+#: kspread_format.cc:3251 kspread_format.cc:3444
 msgid "NOK"
 msgstr "NOK"
 
-#: kspread_format.cc:3287
+#: kspread_format.cc:3252
 msgid "Brazil"
 msgstr "Brasil"
 
-#: kspread_format.cc:3287
+#: kspread_format.cc:3252
 msgid "Brazilian Real"
 msgstr "Real Brasil"
 
-#: kspread_format.cc:3287
+#: kspread_format.cc:3252
 msgid "R$"
 msgstr "R$"
 
-#: kspread_format.cc:3288
+#: kspread_format.cc:3253
 msgid "British Indian Ocean Territory"
 msgstr "Tiriogaeth Gefnfor India Brydeinig"
 
-#: kspread_format.cc:3289
+#: kspread_format.cc:3254
 msgid "Brunei Darussalam"
 msgstr "Brunei Darwsalam"
 
-#: kspread_format.cc:3289
+#: kspread_format.cc:3254
 msgid "Brunei Dollar"
 msgstr "Doler Brunei"
 
-#: kspread_format.cc:3289
+#: kspread_format.cc:3254
 msgid "BND"
 msgstr "BND"
 
-#: kspread_format.cc:3290 kspread_format.cc:3291
+#: kspread_format.cc:3255 kspread_format.cc:3256
 msgid "Bulgaria"
 msgstr "Bwlgaria"
 
-#: kspread_format.cc:3290
+#: kspread_format.cc:3255
 msgid "Lev"
 msgstr "Lef"
 
-#: kspread_format.cc:3290
+#: kspread_format.cc:3255
 msgid "BGL"
 msgstr "BGL"
 
-#: kspread_format.cc:3291
+#: kspread_format.cc:3256
 msgid "Bulgarian Lev"
 msgstr "Lef Bwlgaria"
 
-#: kspread_format.cc:3291
+#: kspread_format.cc:3256
 msgid "BGN"
 msgstr "BGN"
 
-#: kspread_format.cc:3292
+#: kspread_format.cc:3257
 msgid "Burkina Faso"
 msgstr "Burcina Ffaso"
 
-#: kspread_format.cc:3293
+#: kspread_format.cc:3258
 msgid "Burundi"
 msgstr "Bwrwndi"
 
-#: kspread_format.cc:3293
+#: kspread_format.cc:3258
 msgid "Burundi Franc"
 msgstr "Ffranc Bwrwndi"
 
-#: kspread_format.cc:3293
+#: kspread_format.cc:3258
 msgid "BIF"
 msgstr "BIF"
 
-#: kspread_format.cc:3294
+#: kspread_format.cc:3259
 msgid "Cambodia"
 msgstr "Cambodia"
 
-#: kspread_format.cc:3294
+#: kspread_format.cc:3259
 msgid "Riel"
 msgstr "Riel"
 
-#: kspread_format.cc:3294
+#: kspread_format.cc:3259
 msgid "KHR"
 msgstr "KHR"
 
-#: kspread_format.cc:3295
+#: kspread_format.cc:3260
 msgid "Cameroon"
 msgstr "Camerŵn"
 
-#: kspread_format.cc:3295 kspread_format.cc:3299 kspread_format.cc:3300
-#: kspread_format.cc:3308 kspread_format.cc:3327 kspread_format.cc:3341
+#: kspread_format.cc:3260 kspread_format.cc:3264 kspread_format.cc:3265
+#: kspread_format.cc:3273 kspread_format.cc:3292 kspread_format.cc:3306
 msgid "CFA Franc BEAC"
 msgstr "Ffranc CFA BEAC"
 
-#: kspread_format.cc:3295 kspread_format.cc:3299 kspread_format.cc:3300
-#: kspread_format.cc:3308 kspread_format.cc:3327 kspread_format.cc:3341
+#: kspread_format.cc:3260 kspread_format.cc:3264 kspread_format.cc:3265
+#: kspread_format.cc:3273 kspread_format.cc:3292 kspread_format.cc:3306
 msgid "XAF"
 msgstr "XAF"
 
-#: kspread_format.cc:3296
+#: kspread_format.cc:3261
 msgid "Canadian Dollar"
 msgstr "Doler Canada"
 
-#: kspread_format.cc:3296
+#: kspread_format.cc:3261
 msgid "CAD"
 msgstr "CAD"
 
-#: kspread_format.cc:3297
+#: kspread_format.cc:3262
 msgid "Cape Verde"
 msgstr "Cape Verde"
 
-#: kspread_format.cc:3297
+#: kspread_format.cc:3262
 msgid "Cape Verde Escudo"
 msgstr "Escwdo Cape Verde"
 
-#: kspread_format.cc:3297
+#: kspread_format.cc:3262
 msgid "CVE"
 msgstr "CVE"
 
-#: kspread_format.cc:3298
+#: kspread_format.cc:3263
 msgid "Cayman Islands"
 msgstr "Ynysoedd Cayman"
 
-#: kspread_format.cc:3298
+#: kspread_format.cc:3263
 msgid "Cayman Islands Dollar"
 msgstr "Doler Ynysoedd Caiman"
 
-#: kspread_format.cc:3298
+#: kspread_format.cc:3263
 msgid "KYD"
 msgstr "KYD"
 
-#: kspread_format.cc:3299
+#: kspread_format.cc:3264
 msgid "Central African Republic"
 msgstr "Gweriniaeth Ganolbarth Affrica"
 
-#: kspread_format.cc:3300
+#: kspread_format.cc:3265
 msgid "Chad"
 msgstr "Tsiad"
 
-#: kspread_format.cc:3301 kspread_format.cc:3302
+#: kspread_format.cc:3266 kspread_format.cc:3267
 msgid "Chile"
 msgstr "Tsile"
 
-#: kspread_format.cc:3301
+#: kspread_format.cc:3266
 msgid "Chilean Peso"
 msgstr "Peso Tsile"
 
-#: kspread_format.cc:3301
+#: kspread_format.cc:3266
 msgid "Ch$"
 msgstr "Ch$"
 
-#: kspread_format.cc:3302
+#: kspread_format.cc:3267
 msgid "Unidades de fomento"
 msgstr "Unidades de fomento"
 
-#: kspread_format.cc:3302
+#: kspread_format.cc:3267
 msgid "CLF"
 msgstr "CLF"
 
-#: kspread_format.cc:3303
+#: kspread_format.cc:3268
 msgid "China"
 msgstr "Tseina"
 
-#: kspread_format.cc:3303
+#: kspread_format.cc:3268
 msgid "Yuan Renminbi"
 msgstr "Yuan Renminbi"
 
-#: kspread_format.cc:3303
+#: kspread_format.cc:3268
 msgid "CNY"
 msgstr "CNY"
 
-#: kspread_format.cc:3304
+#: kspread_format.cc:3269
 msgid "Christmas Island"
 msgstr "Ynys y Nadolig"
 
-#: kspread_format.cc:3305
+#: kspread_format.cc:3270
 msgid "Cocos (Keeling) Islands"
 msgstr "Ynysoedd y Cocos (Keeling)"
 
-#: kspread_format.cc:3306
+#: kspread_format.cc:3271
 msgid "Colombia"
 msgstr "Colombia"
 
-#: kspread_format.cc:3306
+#: kspread_format.cc:3271
 msgid "Colombian Peso"
 msgstr "Peso Colombia"
 
-#: kspread_format.cc:3306
+#: kspread_format.cc:3271
 msgid "C$"
 msgstr "C$"
 
-#: kspread_format.cc:3307
+#: kspread_format.cc:3272
 msgid "Comoros"
 msgstr "Comoros"
 
-#: kspread_format.cc:3307
+#: kspread_format.cc:3272
 msgid "Comoro Franc"
 msgstr "Ffranc Comoro"
 
-#: kspread_format.cc:3307
+#: kspread_format.cc:3272
 msgid "KMF"
 msgstr "KMF"
 
-#: kspread_format.cc:3308
+#: kspread_format.cc:3273
 msgid "Congo"
 msgstr "Congo"
 
-#: kspread_format.cc:3309
+#: kspread_format.cc:3274
 msgid "Congo, The Democratic Republic Of"
 msgstr "Congo, Gweriniaeth Ddemocrataidd y"
 
-#: kspread_format.cc:3309
+#: kspread_format.cc:3274
 msgid "Franc Congolais"
 msgstr "Ffranc Congolaidd"
 
-#: kspread_format.cc:3309
+#: kspread_format.cc:3274
 msgid "CDF"
 msgstr "CDF"
 
-#: kspread_format.cc:3310
+#: kspread_format.cc:3275
 msgid "Cook Islands"
 msgstr "Ynysoedd Cwc"
 
-#: kspread_format.cc:3310 kspread_format.cc:3429 kspread_format.cc:3433
-#: kspread_format.cc:3446 kspread_format.cc:3489
+#: kspread_format.cc:3275 kspread_format.cc:3394 kspread_format.cc:3398
+#: kspread_format.cc:3411 kspread_format.cc:3454
 msgid "New Zealand Dollar"
 msgstr "Doler Seland Newydd"
 
-#: kspread_format.cc:3310 kspread_format.cc:3429 kspread_format.cc:3433
-#: kspread_format.cc:3446 kspread_format.cc:3489
+#: kspread_format.cc:3275 kspread_format.cc:3394 kspread_format.cc:3398
+#: kspread_format.cc:3411 kspread_format.cc:3454
 msgid "NZD"
 msgstr "NZD"
 
-#: kspread_format.cc:3311
+#: kspread_format.cc:3276
 msgid "Costa Rica"
 msgstr "Costa Rica"
 
-#: kspread_format.cc:3311
+#: kspread_format.cc:3276
 msgid "Costa Rican Colon"
 msgstr "Colon Costa Rica"
 
-#: kspread_format.cc:3311 kspread_format.cc:3325
+#: kspread_format.cc:3276 kspread_format.cc:3290
 msgid "C"
 msgstr "C"
 
-#: kspread_format.cc:3312
+#: kspread_format.cc:3277
 msgid "Cote D'Ivoire"
 msgstr "Y Traeth Ifori"
 
-#: kspread_format.cc:3313
+#: kspread_format.cc:3278
 msgid "Croatia"
 msgstr "Croatia"
 
-#: kspread_format.cc:3313
+#: kspread_format.cc:3278
 msgid "Croatian kuna"
 msgstr "Cwna Croatia"
 
-#: kspread_format.cc:3313
+#: kspread_format.cc:3278
 msgid "kn"
 msgstr "kn"
 
-#: kspread_format.cc:3314
+#: kspread_format.cc:3279
 msgid "Cuba"
 msgstr "Ciwba"
 
-#: kspread_format.cc:3314
+#: kspread_format.cc:3279
 msgid "Cuban Peso"
 msgstr "Peso Ciwba"
 
-#: kspread_format.cc:3314
+#: kspread_format.cc:3279
 msgid "CUP"
 msgstr "CUP"
 
-#: kspread_format.cc:3315
+#: kspread_format.cc:3280
 msgid "Cyprus"
 msgstr "Cyprus"
 
-#: kspread_format.cc:3315
+#: kspread_format.cc:3280
 msgid "Cyprus Pound"
 msgstr "Punt Cyprus"
 
-#: kspread_format.cc:3315
+#: kspread_format.cc:3280
 msgid "CYP"
 msgstr "CYP"
 
-#: kspread_format.cc:3316
+#: kspread_format.cc:3281
 msgid "Czech Republic"
 msgstr "Gweriniaeth Tsiec"
 
-#: kspread_format.cc:3316
+#: kspread_format.cc:3281
 msgid "Czech Koruna"
 msgstr "Corwna Tsiec"
 
-#: kspread_format.cc:3316
+#: kspread_format.cc:3281
 msgid "Kc"
 msgstr "Kc"
 
-#: kspread_format.cc:3317
+#: kspread_format.cc:3282
 msgid "Denmark"
 msgstr "Denmarc"
 
-#: kspread_format.cc:3317 kspread_format.cc:3332 kspread_format.cc:3350
+#: kspread_format.cc:3282 kspread_format.cc:3297 kspread_format.cc:3315
 msgid "Danish Krone"
 msgstr "Crone Daneg"
 
-#: kspread_format.cc:3317 kspread_format.cc:3329 kspread_format.cc:3332
-#: kspread_format.cc:3436 kspread_format.cc:3481
+#: kspread_format.cc:3282 kspread_format.cc:3294 kspread_format.cc:3297
+#: kspread_format.cc:3401 kspread_format.cc:3446
 msgid "kr"
 msgstr "kr"
 
-#: kspread_format.cc:3318
+#: kspread_format.cc:3283
 msgid "Djibouti"
 msgstr "Dsibwti"
 
-#: kspread_format.cc:3318
+#: kspread_format.cc:3283
 msgid "Djibouti Franc"
 msgstr "Ffranc Dsibwti"
 
-#: kspread_format.cc:3318
+#: kspread_format.cc:3283
 msgid "DJF"
 msgstr "DJF"
 
-#: kspread_format.cc:3319
+#: kspread_format.cc:3284
 msgid "Dominica"
 msgstr "Dominica"
 
-#: kspread_format.cc:3319
+#: kspread_format.cc:3284
 msgid "RD$"
 msgstr "RD$"
 
-#: kspread_format.cc:3320
+#: kspread_format.cc:3285
 msgid "Dominican Republic"
 msgstr "Gweriniaeth Dominica"
 
-#: kspread_format.cc:3320
+#: kspread_format.cc:3285
 msgid "Dominican Peso"
 msgstr "Peso Dominica"
 
-#: kspread_format.cc:3320
+#: kspread_format.cc:3285
 msgid "DOP"
 msgstr "DOP"
 
-#: kspread_format.cc:3321 kspread_format.cc:3322
+#: kspread_format.cc:3286 kspread_format.cc:3287
 msgid "East Timor"
 msgstr "Dwyrain Timor"
 
-#: kspread_format.cc:3321
+#: kspread_format.cc:3286
 msgid "Timor Escudo"
 msgstr "Escwdo Timor"
 
-#: kspread_format.cc:3321
+#: kspread_format.cc:3286
 msgid "TPE"
 msgstr "TPE"
 
-#: kspread_format.cc:3323
+#: kspread_format.cc:3288
 msgid "Ecuador"
 msgstr "Ecwador"
 
-#: kspread_format.cc:3324
+#: kspread_format.cc:3289
 msgid "Egypt"
 msgstr "Yr Aifft"
 
-#: kspread_format.cc:3324
+#: kspread_format.cc:3289
 msgid "Egyptian Pound"
 msgstr "Punt yr Aifft"
 
-#: kspread_format.cc:3324
+#: kspread_format.cc:3289
 msgid "EGP"
 msgstr "EGP"
 
-#: kspread_format.cc:3325 kspread_format.cc:3326
+#: kspread_format.cc:3290 kspread_format.cc:3291
 msgid "El Salvador"
 msgstr "El Salvador"
 
-#: kspread_format.cc:3325
+#: kspread_format.cc:3290
 msgid "El Salvador Colon"
 msgstr "Colon El Salfador"
 
-#: kspread_format.cc:3327
+#: kspread_format.cc:3292
 msgid "Equatorial Guinea"
 msgstr "Gini'r Cyhydedd"
 
-#: kspread_format.cc:3328
+#: kspread_format.cc:3293
 msgid "Eritrea"
 msgstr "Eritrea"
 
-#: kspread_format.cc:3328
+#: kspread_format.cc:3293
 msgid "Nakfa"
 msgstr "Nacffa"
 
-#: kspread_format.cc:3328
+#: kspread_format.cc:3293
 msgid "ERN"
 msgstr "ERN"
 
-#: kspread_format.cc:3329
+#: kspread_format.cc:3294
 msgid "Estonia"
 msgstr "Estonia"
 
-#: kspread_format.cc:3329
+#: kspread_format.cc:3294
 msgid "Kroon"
 msgstr "Croon"
 
-#: kspread_format.cc:3330
+#: kspread_format.cc:3295
 msgid "Ethiopia"
 msgstr "Ethiopia"
 
-#: kspread_format.cc:3330
+#: kspread_format.cc:3295
 msgid "Ethiopian Birr"
 msgstr "Bir Ethiopia"
 
-#: kspread_format.cc:3330
+#: kspread_format.cc:3295
 msgid "ETB"
 msgstr "ETB"
 
-#: kspread_format.cc:3331
+#: kspread_format.cc:3296
 msgid "Falkland Island (Malvinas)"
 msgstr "Ynysoedd Y Ffalcland (Malfinas)"
 
-#: kspread_format.cc:3331
+#: kspread_format.cc:3296
 msgid "Falkland Islands Pound"
 msgstr "Punt Ynysoedd Y Ffalcland (Malfinas)"
 
-#: kspread_format.cc:3331
+#: kspread_format.cc:3296
 msgid "FKP"
 msgstr "FKP"
 
-#: kspread_format.cc:3332
+#: kspread_format.cc:3297
 msgid "Faeroe Islands"
 msgstr "Ynysoedd Ffaroe"
 
-#: kspread_format.cc:3333
+#: kspread_format.cc:3298
 msgid "Fiji"
 msgstr "Ffiji"
 
-#: kspread_format.cc:3333
+#: kspread_format.cc:3298
 msgid "Fiji Dollar"
 msgstr "Doler Ffiji"
 
-#: kspread_format.cc:3333
+#: kspread_format.cc:3298
 msgid "FJD"
 msgstr "FJD"
 
-#: kspread_format.cc:3335
+#: kspread_format.cc:3300
 msgid "Markka"
 msgstr "Marca"
 
-#: kspread_format.cc:3335
+#: kspread_format.cc:3300
 msgid "mk"
 msgstr "mk"
 
-#: kspread_format.cc:3337 kspread_format.cc:3397
+#: kspread_format.cc:3302 kspread_format.cc:3362
 msgid "F"
 msgstr "F"
 
-#: kspread_format.cc:3338
+#: kspread_format.cc:3303
 msgid "French Guiana"
 msgstr "Giana Ffrengig"
 
-#: kspread_format.cc:3339
+#: kspread_format.cc:3304
 msgid "French Polynesia"
 msgstr "Polynesia Ffrengig"
 
-#: kspread_format.cc:3339 kspread_format.cc:3428 kspread_format.cc:3510
+#: kspread_format.cc:3304 kspread_format.cc:3393 kspread_format.cc:3475
 msgid "CFP Franc"
 msgstr "Ffranc CFP"
 
-#: kspread_format.cc:3339 kspread_format.cc:3428 kspread_format.cc:3510
+#: kspread_format.cc:3304 kspread_format.cc:3393 kspread_format.cc:3475
 msgid "XPF"
 msgstr "XPF"
 
-#: kspread_format.cc:3340
+#: kspread_format.cc:3305
 msgid "Franc Southern Territories"
 msgstr "Ffranc Tiriogaethau'r De"
 
-#: kspread_format.cc:3341
+#: kspread_format.cc:3306
 msgid "Gabon"
 msgstr "Gabon"
 
-#: kspread_format.cc:3342
+#: kspread_format.cc:3307
 msgid "Gambia"
 msgstr "Gambia"
 
-#: kspread_format.cc:3342
+#: kspread_format.cc:3307
 msgid "Dalasi"
 msgstr "Dalasi"
 
-#: kspread_format.cc:3342
+#: kspread_format.cc:3307
 msgid "GMD"
 msgstr "GMD"
 
-#: kspread_format.cc:3343
+#: kspread_format.cc:3308
 msgid "Georgia"
 msgstr "Georgia"
 
-#: kspread_format.cc:3343
+#: kspread_format.cc:3308
 msgid "Lari"
 msgstr "Lari"
 
-#: kspread_format.cc:3343
+#: kspread_format.cc:3308
 msgid "GEL"
 msgstr "GEL"
 
-#: kspread_format.cc:3345
+#: kspread_format.cc:3310
 msgid "German Mark"
 msgstr "Marc yr Almaen"
 
-#: kspread_format.cc:3345
+#: kspread_format.cc:3310
 msgid "DM"
 msgstr "DM"
 
-#: kspread_format.cc:3346
+#: kspread_format.cc:3311
 msgid "Ghana"
 msgstr "Ghana"
 
-#: kspread_format.cc:3346
+#: kspread_format.cc:3311
 msgid "Cedi"
 msgstr "Sedi"
 
-#: kspread_format.cc:3346
+#: kspread_format.cc:3311
 msgid "GHC"
 msgstr "GHC"
 
-#: kspread_format.cc:3347
+#: kspread_format.cc:3312
 msgid "Gibraltar"
 msgstr "Gibraltar"
 
-#: kspread_format.cc:3347
+#: kspread_format.cc:3312
 msgid "Gibraltar Pound"
 msgstr "Punt Gibraltar"
 
-#: kspread_format.cc:3347
+#: kspread_format.cc:3312
 msgid "GIP"
 msgstr "GIP"
 
-#: kspread_format.cc:3349
+#: kspread_format.cc:3314
 msgid "Drachma"
 msgstr "Drachma"
 
-#: kspread_format.cc:3349
+#: kspread_format.cc:3314
 msgid "GRD"
 msgstr "GRD"
 
-#: kspread_format.cc:3350
+#: kspread_format.cc:3315
 msgid "Greenland"
 msgstr "Y Lasynys"
 
-#: kspread_format.cc:3350
+#: kspread_format.cc:3315
 msgid "DKK"
 msgstr "DKK"
 
-#: kspread_format.cc:3351
+#: kspread_format.cc:3316
 msgid "Grenada"
 msgstr "Grenada"
 
-#: kspread_format.cc:3352
+#: kspread_format.cc:3317
 msgid "Guadeloupe"
 msgstr "Gwadelwp"
 
-#: kspread_format.cc:3353
+#: kspread_format.cc:3318
 msgid "Guam"
 msgstr "Gwám"
 
-#: kspread_format.cc:3354
+#: kspread_format.cc:3319
 msgid "Guatemala"
 msgstr "Gwatemala"
 
-#: kspread_format.cc:3354
+#: kspread_format.cc:3319
 msgid "Quetzal"
 msgstr "Quetzal"
 
-#: kspread_format.cc:3354
+#: kspread_format.cc:3319
 msgid "Q"
 msgstr "Q"
 
-#: kspread_format.cc:3355
+#: kspread_format.cc:3320
 msgid "Guinea"
 msgstr "Gini"
 
-#: kspread_format.cc:3355
+#: kspread_format.cc:3320
 msgid "Guinea Franc"
 msgstr "Ffranc Gini"
 
-#: kspread_format.cc:3355
+#: kspread_format.cc:3320
 msgid "GNF"
 msgstr "GNF"
 
-#: kspread_format.cc:3356 kspread_format.cc:3357
+#: kspread_format.cc:3321 kspread_format.cc:3322
 msgid "Guinea-Bissau"
 msgstr "Gini-Bisaw"
 
-#: kspread_format.cc:3356
+#: kspread_format.cc:3321
 msgid "Guinea-Bissau Peso"
 msgstr "Peso Gini-Bisaw"
 
-#: kspread_format.cc:3356
+#: kspread_format.cc:3321
 msgid "GWP"
 msgstr "GWP"
 
-#: kspread_format.cc:3358
+#: kspread_format.cc:3323
 msgid "Guyana"
 msgstr "Giana"
 
-#: kspread_format.cc:3358
+#: kspread_format.cc:3323
 msgid "Guyana Dollar"
 msgstr "Doler Giana"
 
-#: kspread_format.cc:3358
+#: kspread_format.cc:3323
 msgid "GYD"
 msgstr "GYD"
 
-#: kspread_format.cc:3359 kspread_format.cc:3360
+#: kspread_format.cc:3324 kspread_format.cc:3325
 msgid "Haiti"
 msgstr "Haiti"
 
-#: kspread_format.cc:3359
+#: kspread_format.cc:3324
 msgid "Gourde"
 msgstr "Gourde"
 
-#: kspread_format.cc:3359
+#: kspread_format.cc:3324
 msgid "HTG"
 msgstr "HTG"
 
-#: kspread_format.cc:3361
+#: kspread_format.cc:3326
 msgid "Heard Island And McDonald Islands"
 msgstr "Ynys Heard ac Ynysoedd McDonald"
 
-#: kspread_format.cc:3362
+#: kspread_format.cc:3327
 msgid "Holy See (Vatican City State)"
 msgstr "Yr Esgobaeth Santaidd (Gweriniaeth Ddinas y Fatican)"
 
-#: kspread_format.cc:3363
+#: kspread_format.cc:3328
 msgid "Honduras"
 msgstr "Hondwras"
 
-#: kspread_format.cc:3363
+#: kspread_format.cc:3328
 msgid "Lempira"
 msgstr "Lempira"
 
-#: kspread_format.cc:3363
+#: kspread_format.cc:3328
 msgid "L"
 msgstr "L"
 
-#: kspread_format.cc:3364
+#: kspread_format.cc:3329
 msgid "Hong Kong"
 msgstr "Hong Cong"
 
-#: kspread_format.cc:3364
+#: kspread_format.cc:3329
 msgid "Hong Kong Dollar"
 msgstr "Doler Hong Cong"
 
-#: kspread_format.cc:3364
+#: kspread_format.cc:3329
 msgid "HKD"
 msgstr "HKD"
 
-#: kspread_format.cc:3365
+#: kspread_format.cc:3330
 msgid "Hungary"
 msgstr "Hwngari"
 
-#: kspread_format.cc:3365
+#: kspread_format.cc:3330
 msgid "Forint"
 msgstr "Forint"
 
-#: kspread_format.cc:3365
+#: kspread_format.cc:3330
 msgid "Ft"
 msgstr "Ft"
 
-#: kspread_format.cc:3366
+#: kspread_format.cc:3331
 msgid "Iceland"
 msgstr "Gwlad yr Iâ"
 
-#: kspread_format.cc:3366
+#: kspread_format.cc:3331
 msgid "Iceland Krona"
 msgstr "Crona Gwlad yr Iâ"
 
-#: kspread_format.cc:3366
+#: kspread_format.cc:3331
 msgid "kr."
 msgstr "kr."
 
-#: kspread_format.cc:3367
+#: kspread_format.cc:3332
 msgid "India"
 msgstr "India"
 
-#: kspread_format.cc:3368
+#: kspread_format.cc:3333
 msgid "Indonesia"
 msgstr "Indonesia"
 
-#: kspread_format.cc:3368
+#: kspread_format.cc:3333
 msgid "Rupiah"
 msgstr "Rwpiah"
 
-#: kspread_format.cc:3368
+#: kspread_format.cc:3333
 msgid "Rp"
 msgstr "Rp"
 
-#: kspread_format.cc:3369
+#: kspread_format.cc:3334
 msgid "Iran, Islamic Republic Of"
 msgstr "Iran, Gweriniaeth Islamaidd o"
 
-#: kspread_format.cc:3369
+#: kspread_format.cc:3334
 msgid "Iranian Rial"
 msgstr "Rial Iran"
 
-#: kspread_format.cc:3369
+#: kspread_format.cc:3334
 msgid "IRR"
 msgstr "IRR"
 
-#: kspread_format.cc:3370
+#: kspread_format.cc:3335
 msgid "Iraq"
 msgstr "Irac"
 
-#: kspread_format.cc:3370
+#: kspread_format.cc:3335
 msgid "Iraqi Dinar"
 msgstr "Dinar Irac"
 
-#: kspread_format.cc:3370
+#: kspread_format.cc:3335
 msgid "IQD"
 msgstr "IQD"
 
-#: kspread_format.cc:3372
+#: kspread_format.cc:3337
 msgid "Punt"
 msgstr "Punt"
 
-#: kspread_format.cc:3372
+#: kspread_format.cc:3337
 msgid "IR----"
 msgstr "IR----"
 
-#: kspread_format.cc:3373
+#: kspread_format.cc:3338
 msgid "Pence"
 msgstr "Ceiniogau"
 
-#: kspread_format.cc:3373
+#: kspread_format.cc:3338
 msgid "IEX"
 msgstr "IEX"
 
-#: kspread_format.cc:3374
+#: kspread_format.cc:3339
 msgid "Israel"
 msgstr "Israel"
 
-#: kspread_format.cc:3374
+#: kspread_format.cc:3339
 msgid "New Israeli Sheqel"
 msgstr "Siecel Newydd Israeli"
 
-#: kspread_format.cc:3374
+#: kspread_format.cc:3339
 msgid "ILS"
 msgstr "ILS"
 
-#: kspread_format.cc:3376
+#: kspread_format.cc:3341
 msgid "Lira"
 msgstr "Lira"
 
-#: kspread_format.cc:3376
+#: kspread_format.cc:3341
 msgid "L."
 msgstr "L."
 
-#: kspread_format.cc:3377
+#: kspread_format.cc:3342
 msgid "Jamaica"
 msgstr "Jamaica"
 
-#: kspread_format.cc:3377
+#: kspread_format.cc:3342
 msgid "Jamaican Dollar"
 msgstr "Doler Jamaica"
 
-#: kspread_format.cc:3377
+#: kspread_format.cc:3342
 msgid "J$"
 msgstr "J$"
 
-#: kspread_format.cc:3378
+#: kspread_format.cc:3343
 msgid "JPY"
 msgstr "JPY"
 
-#: kspread_format.cc:3379
+#: kspread_format.cc:3344
 msgid "Jordan"
 msgstr "Iorddonen"
 
-#: kspread_format.cc:3379
+#: kspread_format.cc:3344
 msgid "Jordanian Dinar"
 msgstr "Doler Jordan"
 
-#: kspread_format.cc:3379
+#: kspread_format.cc:3344
 msgid "JOD"
 msgstr "JOD"
 
-#: kspread_format.cc:3380
+#: kspread_format.cc:3345
 msgid "Kazakhstan"
 msgstr "Casachstan"
 
-#: kspread_format.cc:3380
+#: kspread_format.cc:3345
 msgid "Tenge"
 msgstr "Tenge"
 
-#: kspread_format.cc:3380
+#: kspread_format.cc:3345
 msgid "KZT"
 msgstr "KZT"
 
-#: kspread_format.cc:3381
+#: kspread_format.cc:3346
 msgid "Kenya"
 msgstr "Cenia"
 
-#: kspread_format.cc:3381
+#: kspread_format.cc:3346
 msgid "Kenyan Shilling"
 msgstr "Swllt Cenia"
 
-#: kspread_format.cc:3381
+#: kspread_format.cc:3346
 msgid "KES"
 msgstr "KES"
 
-#: kspread_format.cc:3382
+#: kspread_format.cc:3347
 msgid "Kiribati"
 msgstr "Ciribati"
 
-#: kspread_format.cc:3383
+#: kspread_format.cc:3348
 msgid "Korea, Democratic People's Republic Of"
 msgstr "Corea, Gweriniaeth Ddemocrataidd y Bobl o"
 
-#: kspread_format.cc:3383
+#: kspread_format.cc:3348
 msgid "North Korean Won"
 msgstr "Won Gogledd Corea"
 
-#: kspread_format.cc:3383
+#: kspread_format.cc:3348
 msgid "KPW"
 msgstr "KPW"
 
-#: kspread_format.cc:3384
+#: kspread_format.cc:3349
 msgid "Korea, Republic Of"
 msgstr "Gweriniaeth Corea"
 
-#: kspread_format.cc:3384
+#: kspread_format.cc:3349
 msgid "Won"
 msgstr "Won"
 
-#: kspread_format.cc:3384
+#: kspread_format.cc:3349
 msgid "KRW"
 msgstr "KRW"
 
-#: kspread_format.cc:3385
+#: kspread_format.cc:3350
 msgid "Kuwait"
 msgstr "Cuwaït"
 
-#: kspread_format.cc:3385
+#: kspread_format.cc:3350
 msgid "Kuwaiti Dinar"
 msgstr "Dinar Cowait"
 
-#: kspread_format.cc:3385
+#: kspread_format.cc:3350
 msgid "KWD"
 msgstr "KWD"
 
-#: kspread_format.cc:3386
+#: kspread_format.cc:3351
 msgid "Kyrgyzstan"
 msgstr "Cirgistan"
 
-#: kspread_format.cc:3386
+#: kspread_format.cc:3351
 msgid "Som"
 msgstr "Som"
 
-#: kspread_format.cc:3386
+#: kspread_format.cc:3351
 msgid "KGS"
 msgstr "KGS"
 
-#: kspread_format.cc:3387
+#: kspread_format.cc:3352
 msgid "Lao People's Democratic Republic"
 msgstr "Gweriniaeth Ddemocrataidd y Bobl Lao"
 
-#: kspread_format.cc:3387
+#: kspread_format.cc:3352
 msgid "Kip"
 msgstr "Kip"
 
-#: kspread_format.cc:3387
+#: kspread_format.cc:3352
 msgid "LAK"
 msgstr "LAK"
 
-#: kspread_format.cc:3388
+#: kspread_format.cc:3353
 msgid "Latvia"
 msgstr "Latfia"
 
-#: kspread_format.cc:3388
+#: kspread_format.cc:3353
 msgid "Latvian Lats"
 msgstr "Lats Latfia"
 
-#: kspread_format.cc:3388
+#: kspread_format.cc:3353
 msgid "Ls"
 msgstr "Ls"
 
-#: kspread_format.cc:3389
+#: kspread_format.cc:3354
 msgid "Lebanon"
 msgstr "Libanus"
 
-#: kspread_format.cc:3389
+#: kspread_format.cc:3354
 msgid "Lebanese Pound"
 msgstr "Punt Libanus"
 
-#: kspread_format.cc:3389
+#: kspread_format.cc:3354
 msgid "LBP"
 msgstr "LBP"
 
-#: kspread_format.cc:3390 kspread_format.cc:3391
+#: kspread_format.cc:3355 kspread_format.cc:3356
 msgid "Lesotho"
 msgstr "Lesotho"
 
-#: kspread_format.cc:3390 kspread_format.cc:3421 kspread_format.cc:3473
+#: kspread_format.cc:3355 kspread_format.cc:3386 kspread_format.cc:3438
 msgid "Rand"
 msgstr "Rand"
 
-#: kspread_format.cc:3390 kspread_format.cc:3421
+#: kspread_format.cc:3355 kspread_format.cc:3386
 msgid "ZAR"
 msgstr "ZAR"
 
-#: kspread_format.cc:3391
+#: kspread_format.cc:3356
 msgid "Loti"
 msgstr "Loti"
 
-#: kspread_format.cc:3391
+#: kspread_format.cc:3356
 msgid "LSL"
 msgstr "LSL"
 
-#: kspread_format.cc:3392
+#: kspread_format.cc:3357
 msgid "Liberia"
 msgstr "Liberia"
 
-#: kspread_format.cc:3392
+#: kspread_format.cc:3357
 msgid "Liberian Dollar"
 msgstr "Doler Liberia"
 
-#: kspread_format.cc:3392
+#: kspread_format.cc:3357
 msgid "LRD"
 msgstr "LRD"
 
-#: kspread_format.cc:3393
+#: kspread_format.cc:3358
 msgid "Libyan Arab Jamahiriya"
 msgstr "Dsamahiria Arabaidd Libia"
 
-#: kspread_format.cc:3393
+#: kspread_format.cc:3358
 msgid "Lybian Dinar"
 msgstr "Dinar Libya"
 
-#: kspread_format.cc:3393
+#: kspread_format.cc:3358
 msgid "LYD"
 msgstr "LYD"
 
-#: kspread_format.cc:3394
+#: kspread_format.cc:3359
 msgid "Liechtenstein"
 msgstr "Liechtenstein"
 
-#: kspread_format.cc:3394 kspread_format.cc:3482
+#: kspread_format.cc:3359 kspread_format.cc:3447
 msgid "Swiss Franc"
 msgstr "Ffranc y Swisdir"
 
-#: kspread_format.cc:3394
+#: kspread_format.cc:3359
 msgid "CHF"
 msgstr "CHF"
 
-#: kspread_format.cc:3395
+#: kspread_format.cc:3360
 msgid "Lithuania"
 msgstr "Lithwania"
 
-#: kspread_format.cc:3395
+#: kspread_format.cc:3360
 msgid "Lithuanian Litus"
 msgstr "Litws Lithwania"
 
-#: kspread_format.cc:3395
+#: kspread_format.cc:3360
 msgid "Lt"
 msgstr "Lt"
 
-#: kspread_format.cc:3398
+#: kspread_format.cc:3363
 msgid "Macao"
 msgstr "Macao"
 
-#: kspread_format.cc:3398
+#: kspread_format.cc:3363
 msgid "Pataca"
 msgstr "Pataca"
 
-#: kspread_format.cc:3398
+#: kspread_format.cc:3363
 msgid "MOP"
 msgstr "MOP"
 
-#: kspread_format.cc:3399
+#: kspread_format.cc:3364
 msgid "Macedonia, The Former Yugoslav Republic Of"
 msgstr "Macedonia, Cyn-Weriniaeth Iwgoslafia o"
 
-#: kspread_format.cc:3399
+#: kspread_format.cc:3364
 msgid "Denar"
 msgstr "Denar"
 
-#: kspread_format.cc:3399
+#: kspread_format.cc:3364
 msgid "MKD"
 msgstr "MKD"
 
-#: kspread_format.cc:3400
+#: kspread_format.cc:3365
 msgid "Madagascar"
 msgstr "Madagascar"
 
-#: kspread_format.cc:3400
+#: kspread_format.cc:3365
 msgid "Malagasy Franc"
 msgstr "Ffranc Malagasi"
 
-#: kspread_format.cc:3400
+#: kspread_format.cc:3365
 msgid "MGF"
 msgstr "MGF"
 
-#: kspread_format.cc:3401
+#: kspread_format.cc:3366
 msgid "Malawi"
 msgstr "Malawi"
 
-#: kspread_format.cc:3401 kspread_format.cc:3514
+#: kspread_format.cc:3366 kspread_format.cc:3479
 msgid "Kwacha"
 msgstr "Cwacha"
 
-#: kspread_format.cc:3401
+#: kspread_format.cc:3366
 msgid "MWK"
 msgstr "MWK"
 
-#: kspread_format.cc:3402
+#: kspread_format.cc:3367
 msgid "Malaysia"
 msgstr "Maleisia"
 
-#: kspread_format.cc:3402
+#: kspread_format.cc:3367
 msgid "Malaysian Ringgit"
 msgstr "Ringgit Maleisia"
 
-#: kspread_format.cc:3402
+#: kspread_format.cc:3367
 msgid "MYR"
 msgstr "MYR"
 
-#: kspread_format.cc:3403
+#: kspread_format.cc:3368
 msgid "Maldives"
 msgstr "Ynysoedd y Maldîf"
 
-#: kspread_format.cc:3403
+#: kspread_format.cc:3368
 msgid "Rufiyaa"
 msgstr "Rwffiyaa"
 
-#: kspread_format.cc:3403
+#: kspread_format.cc:3368
 msgid "MVR"
 msgstr "MVR"
 
-#: kspread_format.cc:3404
+#: kspread_format.cc:3369
 msgid "Mali"
 msgstr "Mali"
 
-#: kspread_format.cc:3405
+#: kspread_format.cc:3370
 msgid "Malta"
 msgstr "Malta"
 
-#: kspread_format.cc:3405
+#: kspread_format.cc:3370
 msgid "Maltese Lira"
 msgstr "Lira Malta"
 
-#: kspread_format.cc:3405
+#: kspread_format.cc:3370
 msgid "MTL"
 msgstr "MTL"
 
-#: kspread_format.cc:3406
+#: kspread_format.cc:3371
 msgid "Marshall Islands"
 msgstr "Ynysoed Marshall"
 
-#: kspread_format.cc:3407
+#: kspread_format.cc:3372
 msgid "Martinique"
 msgstr "Martinîc"
 
-#: kspread_format.cc:3408
+#: kspread_format.cc:3373
 msgid "Mauritania"
 msgstr "Mawritania"
 
-#: kspread_format.cc:3408
+#: kspread_format.cc:3373
 msgid "Ouguiya"
 msgstr "Wgiya"
 
-#: kspread_format.cc:3408
+#: kspread_format.cc:3373
 msgid "MRO"
 msgstr "MRO"
 
-#: kspread_format.cc:3409
+#: kspread_format.cc:3374
 msgid "Mauritius"
 msgstr "Mawrisiws"
 
-#: kspread_format.cc:3409
+#: kspread_format.cc:3374
 msgid "Mauritius Rupee"
 msgstr "Rwpi Mawrisiws"
 
-#: kspread_format.cc:3409
+#: kspread_format.cc:3374
 msgid "MUR"
 msgstr "MUR"
 
-#: kspread_format.cc:3410
+#: kspread_format.cc:3375
 msgid "Mayotte"
 msgstr "Maiót"
 
-#: kspread_format.cc:3411 kspread_format.cc:3412
+#: kspread_format.cc:3376 kspread_format.cc:3377
 msgid "Mexico"
 msgstr "Mecsico"
 
-#: kspread_format.cc:3411
+#: kspread_format.cc:3376
 msgid "Mexican Peso"
 msgstr "Peso Mecsico"
 
-#: kspread_format.cc:3411
+#: kspread_format.cc:3376
 msgid "MXN"
 msgstr "MXN"
 
-#: kspread_format.cc:3412
+#: kspread_format.cc:3377
 msgid "Mexican Unidad de Inversion (UDI)"
 msgstr "Unidad de Inversion (UDI) Mecsicanaidd"
 
-#: kspread_format.cc:3412
+#: kspread_format.cc:3377
 msgid "MXV"
 msgstr "MXV"
 
-#: kspread_format.cc:3413
+#: kspread_format.cc:3378
 msgid "Micronesia, Federated States Of"
 msgstr "Micronesia, Talaethau Cyfunol"
 
-#: kspread_format.cc:3414
+#: kspread_format.cc:3379
 msgid "Moldova, Republic Of"
 msgstr "Gweriniaeth Moldofa"
 
-#: kspread_format.cc:3414
+#: kspread_format.cc:3379
 msgid "Moldovan Leu"
 msgstr "Lew Moldofa"
 
-#: kspread_format.cc:3414
+#: kspread_format.cc:3379
 msgid "MDL"
 msgstr "MDL"
 
-#: kspread_format.cc:3416
+#: kspread_format.cc:3381
 msgid "Mongolia"
 msgstr "Mongolia"
 
-#: kspread_format.cc:3416
+#: kspread_format.cc:3381
 msgid "Tugrik"
 msgstr "Twgric"
 
-#: kspread_format.cc:3416
+#: kspread_format.cc:3381
 msgid "MNT"
 msgstr "MNT"
 
-#: kspread_format.cc:3417
+#: kspread_format.cc:3382
 msgid "Montserrat"
 msgstr "Montserat"
 
-#: kspread_format.cc:3418
+#: kspread_format.cc:3383
 msgid "Morocco"
 msgstr "Moroco"
 
-#: kspread_format.cc:3418 kspread_format.cc:3511
+#: kspread_format.cc:3383 kspread_format.cc:3476
 msgid "Moroccan Dirham"
 msgstr "Dirham Moroco"
 
-#: kspread_format.cc:3418 kspread_format.cc:3511
+#: kspread_format.cc:3383 kspread_format.cc:3476
 msgid "MAD"
 msgstr "MAD"
 
-#: kspread_format.cc:3419
+#: kspread_format.cc:3384
 msgid "Mozambique"
 msgstr "Mosambîc"
 
-#: kspread_format.cc:3419
+#: kspread_format.cc:3384
 msgid "Metical"
 msgstr "Metical"
 
-#: kspread_format.cc:3419
+#: kspread_format.cc:3384
 msgid "MZM"
 msgstr "MZM"
 
-#: kspread_format.cc:3420
+#: kspread_format.cc:3385
 msgid "Myanmar"
 msgstr "Mianmar"
 
-#: kspread_format.cc:3420
+#: kspread_format.cc:3385
 msgid "Kyat"
 msgstr "Ciat"
 
-#: kspread_format.cc:3420
+#: kspread_format.cc:3385
 msgid "MMK"
 msgstr "MMK"
 
-#: kspread_format.cc:3421 kspread_format.cc:3422
+#: kspread_format.cc:3386 kspread_format.cc:3387
 msgid "Namibia"
 msgstr "Namibia"
 
-#: kspread_format.cc:3422
+#: kspread_format.cc:3387
 msgid "Namibia Dollar"
 msgstr "Doler Namibia"
 
-#: kspread_format.cc:3422
+#: kspread_format.cc:3387
 msgid "NAD"
 msgstr "NAD"
 
-#: kspread_format.cc:3423
+#: kspread_format.cc:3388
 msgid "Nauru"
 msgstr "Nawrw"
 
-#: kspread_format.cc:3424
+#: kspread_format.cc:3389
 msgid "Nepal"
 msgstr "Nepal"
 
-#: kspread_format.cc:3424
+#: kspread_format.cc:3389
 msgid "Nepalese Rupee"
 msgstr "Rwpi Nepal"
 
-#: kspread_format.cc:3424
+#: kspread_format.cc:3389
 msgid "NPR"
 msgstr "NPR"
 
-#: kspread_format.cc:3426
+#: kspread_format.cc:3391
 msgid "Guilder"
 msgstr "Gilder"
 
-#: kspread_format.cc:3426
+#: kspread_format.cc:3391
 msgid "fl"
 msgstr "fl"
 
-#: kspread_format.cc:3427
+#: kspread_format.cc:3392
 msgid "Netherlands Antilles"
 msgstr "Ynysoedd Caribî yr Iseldiroedd"
 
-#: kspread_format.cc:3427
+#: kspread_format.cc:3392
 msgid "Netherlands Antillan Guilder"
 msgstr "Gilder Ynysoedd Caribî yr Iseldiroedd"
 
-#: kspread_format.cc:3427
+#: kspread_format.cc:3392
 msgid "ANG"
 msgstr "ANG"
 
-#: kspread_format.cc:3428
+#: kspread_format.cc:3393
 msgid "New Caledonia"
 msgstr "Caledonia Newydd"
 
-#: kspread_format.cc:3430
+#: kspread_format.cc:3395
 msgid "Nicaragua"
 msgstr "Nicaragwa"
 
-#: kspread_format.cc:3430
+#: kspread_format.cc:3395
 msgid "Cordoba Oro"
 msgstr "Cordoba Oro"
 
-#: kspread_format.cc:3430
+#: kspread_format.cc:3395
 msgid "NIO"
 msgstr "NIO"
 
-#: kspread_format.cc:3431
+#: kspread_format.cc:3396
 msgid "Niger"
 msgstr "Niger"
 
-#: kspread_format.cc:3432
+#: kspread_format.cc:3397
 msgid "Nigeria"
 msgstr "Nigeria"
 
-#: kspread_format.cc:3432
+#: kspread_format.cc:3397
 msgid "Naira"
 msgstr "Naira"
 
-#: kspread_format.cc:3432
+#: kspread_format.cc:3397
 msgid "NGN"
 msgstr "NGN"
 
-#: kspread_format.cc:3433
+#: kspread_format.cc:3398
 msgid "Niue"
 msgstr "Niwe"
 
-#: kspread_format.cc:3434
+#: kspread_format.cc:3399
 msgid "Norfolk Islands"
 msgstr "Ynysoedd Norfolk"
 
-#: kspread_format.cc:3435
+#: kspread_format.cc:3400
 msgid "Northern Mariana Islands"
 msgstr "Ynysoedd Gogledd Mariana"
 
-#: kspread_format.cc:3436
+#: kspread_format.cc:3401
 msgid "Norway"
 msgstr "Norwy"
 
-#: kspread_format.cc:3436 kspread_format.cc:3479
+#: kspread_format.cc:3401 kspread_format.cc:3444
 msgid "Norwegian Krone"
 msgstr "Crone Norwyeg"
 
-#: kspread_format.cc:3437
+#: kspread_format.cc:3402
 msgid "Oman"
 msgstr "Oman"
 
-#: kspread_format.cc:3437
+#: kspread_format.cc:3402
 msgid "Rial Omani"
 msgstr "Rial Oman"
 
-#: kspread_format.cc:3437
+#: kspread_format.cc:3402
 msgid "OMR"
 msgstr "OMR"
 
-#: kspread_format.cc:3438
+#: kspread_format.cc:3403
 msgid "Pakistan"
 msgstr "Pacistan"
 
-#: kspread_format.cc:3438
+#: kspread_format.cc:3403
 msgid "Pakistan Rupee"
 msgstr "Rwpi Pacistan"
 
-#: kspread_format.cc:3438
+#: kspread_format.cc:3403
 msgid "PKR"
 msgstr "PKR"
 
-#: kspread_format.cc:3439
+#: kspread_format.cc:3404
 msgid "Palau"
 msgstr "Palaw"
 
-#: kspread_format.cc:3440 kspread_format.cc:3441
+#: kspread_format.cc:3405 kspread_format.cc:3406
 msgid "Panama"
 msgstr "Panama"
 
-#: kspread_format.cc:3440
+#: kspread_format.cc:3405
 msgid "Balboa"
 msgstr "Balboa"
 
-#: kspread_format.cc:3440
+#: kspread_format.cc:3405
 msgid "PAB"
 msgstr "PAB"
 
-#: kspread_format.cc:3442
+#: kspread_format.cc:3407
 msgid "Papua New Guinea"
 msgstr "Papwa Gini Newydd"
 
-#: kspread_format.cc:3442
+#: kspread_format.cc:3407
 msgid "Kina"
 msgstr "Cina"
 
-#: kspread_format.cc:3442
+#: kspread_format.cc:3407
 msgid "PGK"
 msgstr "PGK"
 
-#: kspread_format.cc:3443
+#: kspread_format.cc:3408
 msgid "Paraguay"
 msgstr "Paragwai"
 
-#: kspread_format.cc:3443
+#: kspread_format.cc:3408
 msgid "Guarani"
 msgstr "Guarani"
 
-#: kspread_format.cc:3443
+#: kspread_format.cc:3408
 msgid "G"
 msgstr "G"
 
-#: kspread_format.cc:3444
+#: kspread_format.cc:3409
 msgid "Peru"
 msgstr "Periw"
 
-#: kspread_format.cc:3444
+#: kspread_format.cc:3409
 msgid "Nuevo Sol"
 msgstr "Nuevo Sol"
 
-#: kspread_format.cc:3444
+#: kspread_format.cc:3409
 msgid "PEN"
 msgstr "PEN"
 
-#: kspread_format.cc:3445
+#: kspread_format.cc:3410
 msgid "Philippines"
 msgstr "Y Ffilipinau"
 
-#: kspread_format.cc:3445
+#: kspread_format.cc:3410
 msgid "Philippine Peso"
 msgstr "Peso'r Ffilipinau"
 
-#: kspread_format.cc:3445
+#: kspread_format.cc:3410
 msgid "PHP"
 msgstr "PHP"
 
-#: kspread_format.cc:3446
+#: kspread_format.cc:3411
 msgid "Pitcairn"
 msgstr "Ynys Pitcairn"
 
-#: kspread_format.cc:3447
+#: kspread_format.cc:3412
 msgid "Poland"
 msgstr "Gwlad Pwyl"
 
-#: kspread_format.cc:3447
+#: kspread_format.cc:3412
 msgid "Zloty"
 msgstr "Zloty"
 
-#: kspread_format.cc:3447
+#: kspread_format.cc:3412
 msgid "zt"
 msgstr "zt"
 
-#: kspread_format.cc:3449
+#: kspread_format.cc:3414
 msgid "Escudo"
 msgstr "Escwdo"
 
-#: kspread_format.cc:3449
+#: kspread_format.cc:3414
 msgid "Esc."
 msgstr "Esc."
 
-#: kspread_format.cc:3450
+#: kspread_format.cc:3415
 msgid "Puerto Rico"
 msgstr "Pwerto Rico"
 
-#: kspread_format.cc:3451
+#: kspread_format.cc:3416
 msgid "Qatar"
 msgstr "Catar"
 
-#: kspread_format.cc:3451
+#: kspread_format.cc:3416
 msgid "Qatari Rial"
 msgstr "Rial Qatar"
 
-#: kspread_format.cc:3451
+#: kspread_format.cc:3416
 msgid "QAR"
 msgstr "QAR"
 
-#: kspread_format.cc:3452
+#: kspread_format.cc:3417
 msgid "Romania"
 msgstr "Romania"
 
-#: kspread_format.cc:3452
+#: kspread_format.cc:3417
 msgid "Leu"
 msgstr "Lew"
 
-#: kspread_format.cc:3452
+#: kspread_format.cc:3417
 msgid "LEI"
 msgstr "LEI"
 
-#: kspread_format.cc:3453 kspread_format.cc:3454
+#: kspread_format.cc:3418 kspread_format.cc:3419
 msgid "Russian Federation"
 msgstr "Cyfundeb Rwsia"
 
-#: kspread_format.cc:3453 kspread_format.cc:3454
+#: kspread_format.cc:3418 kspread_format.cc:3419
 msgid "Russian Ruble"
 msgstr "Rwbl Rwsia"
 
-#: kspread_format.cc:3453
+#: kspread_format.cc:3418
 msgid "RUR"
 msgstr "RUR"
 
-#: kspread_format.cc:3454
+#: kspread_format.cc:3419
 msgid "RUB"
 msgstr "RUB"
 
-#: kspread_format.cc:3455
+#: kspread_format.cc:3420
 msgid "Rwanda"
 msgstr "Rwanda"
 
-#: kspread_format.cc:3455
+#: kspread_format.cc:3420
 msgid "Rwanda Franc"
 msgstr "Ffranc Rwanda"
 
-#: kspread_format.cc:3455
+#: kspread_format.cc:3420
 msgid "RWF"
 msgstr "RWF"
 
-#: kspread_format.cc:3456
+#: kspread_format.cc:3421
 msgid "Saint Helena"
 msgstr "Ynys Santes Helena"
 
-#: kspread_format.cc:3456
+#: kspread_format.cc:3421
 msgid "Saint Helena Pound"
 msgstr "Punt Ynys Santes Helena"
 
-#: kspread_format.cc:3456
+#: kspread_format.cc:3421
 msgid "SHP"
 msgstr "SHP"
 
-#: kspread_format.cc:3457
+#: kspread_format.cc:3422
 msgid "Saint Kitts And Nevis"
 msgstr "Ynysoedd Sant Kitts a Nefis"
 
-#: kspread_format.cc:3458
+#: kspread_format.cc:3423
 msgid "Saint Lucia"
 msgstr "Ynys Santes Lucia"
 
-#: kspread_format.cc:3459
+#: kspread_format.cc:3424
 msgid "Saint Pierre And Miquelon"
 msgstr "Ynysoedd Sant Pierre a Micwelon"
 
-#: kspread_format.cc:3460
+#: kspread_format.cc:3425
 msgid "Saint Vincent And The Grenadines"
 msgstr "Ynysyoedd Sant Finsent a'r Grenadinau"
 
-#: kspread_format.cc:3461
+#: kspread_format.cc:3426
 msgid "Samoa"
 msgstr "Samoa"
 
-#: kspread_format.cc:3461
+#: kspread_format.cc:3426
 msgid "Tala"
 msgstr "Tala"
 
-#: kspread_format.cc:3461
+#: kspread_format.cc:3426
 msgid "WST"
 msgstr "WST"
 
-#: kspread_format.cc:3462
+#: kspread_format.cc:3427
 msgid "San Marino"
 msgstr "San Marino"
 
-#: kspread_format.cc:3463
+#: kspread_format.cc:3428
 msgid "Sao Tome And Principe"
 msgstr "Sao Tome a Prinsipe"
 
-#: kspread_format.cc:3463
+#: kspread_format.cc:3428
 msgid "Dobra"
 msgstr "Dobra"
 
-#: kspread_format.cc:3463
+#: kspread_format.cc:3428
 msgid "STD"
 msgstr "STD"
 
-#: kspread_format.cc:3464
+#: kspread_format.cc:3429
 msgid "Saudi Arabia"
 msgstr "Sawdi Arabia"
 
-#: kspread_format.cc:3464
+#: kspread_format.cc:3429
 msgid "Saudi Riyal"
 msgstr "Rial Sawdi Arabia"
 
-#: kspread_format.cc:3464
+#: kspread_format.cc:3429
 msgid "SAR"
 msgstr "SAR"
 
-#: kspread_format.cc:3465
+#: kspread_format.cc:3430
 msgid "Senegal"
 msgstr "Senegal"
 
-#: kspread_format.cc:3466
+#: kspread_format.cc:3431
 msgid "Seychelles"
 msgstr "Ynysoedd y Seisiêl"
 
-#: kspread_format.cc:3466
+#: kspread_format.cc:3431
 msgid "Seychelles Rupee"
 msgstr "Rwpi Ynysoedd y Seisiêl"
 
-#: kspread_format.cc:3466
+#: kspread_format.cc:3431
 msgid "SCR"
 msgstr "SCR"
 
-#: kspread_format.cc:3467
+#: kspread_format.cc:3432
 msgid "Sierra Leone"
 msgstr "Sierra Leone"
 
-#: kspread_format.cc:3467
+#: kspread_format.cc:3432
 msgid "Leone"
 msgstr "Leone"
 
-#: kspread_format.cc:3467
+#: kspread_format.cc:3432
 msgid "SLL"
 msgstr "SLL"
 
-#: kspread_format.cc:3468
+#: kspread_format.cc:3433
 msgid "Singapore"
 msgstr "Singapôr"
 
-#: kspread_format.cc:3468
+#: kspread_format.cc:3433
 msgid "Singapore Dollar"
 msgstr "Doler Singapôr"
 
-#: kspread_format.cc:3468
+#: kspread_format.cc:3433
 msgid "SGD"
 msgstr "SGD"
 
-#: kspread_format.cc:3469
+#: kspread_format.cc:3434
 msgid "Slovakia"
 msgstr "Slofacia"
 
-#: kspread_format.cc:3469
+#: kspread_format.cc:3434
 msgid "Slovak Koruna"
 msgstr "Corwna Slofacia"
 
-#: kspread_format.cc:3469
+#: kspread_format.cc:3434
 msgid "Sk"
 msgstr "Sk"
 
-#: kspread_format.cc:3470
+#: kspread_format.cc:3435
 msgid "Slovenia"
 msgstr "Slofenia"
 
-#: kspread_format.cc:3470
+#: kspread_format.cc:3435
 msgid "Tolar"
 msgstr "Tolar"
 
-#: kspread_format.cc:3470
+#: kspread_format.cc:3435
 msgid "SIT"
 msgstr "SIT"
 
-#: kspread_format.cc:3471
+#: kspread_format.cc:3436
 msgid "Solomon Islands"
 msgstr "Ynysoedd Solomon"
 
-#: kspread_format.cc:3471
+#: kspread_format.cc:3436
 msgid "Solomon Islands Dollar"
 msgstr "Doler Ynysoedd Solomon"
 
-#: kspread_format.cc:3471
+#: kspread_format.cc:3436
 msgid "SBD"
 msgstr "SBD"
 
-#: kspread_format.cc:3472
+#: kspread_format.cc:3437
 msgid "Somalia"
 msgstr "Somalia"
 
-#: kspread_format.cc:3472
+#: kspread_format.cc:3437
 msgid "Somali Shilling"
 msgstr "Swllt Somali"
 
-#: kspread_format.cc:3472
+#: kspread_format.cc:3437
 msgid "SOS"
 msgstr "SOS"
 
-#: kspread_format.cc:3473
+#: kspread_format.cc:3438
 msgid "South Africa"
 msgstr "De Affrica"
 
-#: kspread_format.cc:3473
+#: kspread_format.cc:3438
 msgid "R"
 msgstr "R"
 
-#: kspread_format.cc:3475
+#: kspread_format.cc:3440
 msgid "Peseta"
 msgstr "Peseta"
 
-#: kspread_format.cc:3475
+#: kspread_format.cc:3440
 msgid "Pts"
 msgstr "Pts"
 
-#: kspread_format.cc:3476
+#: kspread_format.cc:3441
 msgid "Sri Lanka"
 msgstr "Sri Lanca"
 
-#: kspread_format.cc:3476
+#: kspread_format.cc:3441
 msgid "Sri Lanka Rupee"
 msgstr "Rwpi Sri Lanca"
 
-#: kspread_format.cc:3476
+#: kspread_format.cc:3441
 msgid "LKR"
 msgstr "LKR"
 
-#: kspread_format.cc:3477
+#: kspread_format.cc:3442
 msgid "Sudan"
 msgstr "Swdan"
 
-#: kspread_format.cc:3477
+#: kspread_format.cc:3442
 msgid "Sudanese Dinar"
 msgstr "Dinar Swdan"
 
-#: kspread_format.cc:3477
+#: kspread_format.cc:3442
 msgid "SDD"
 msgstr "SDD"
 
-#: kspread_format.cc:3478
+#: kspread_format.cc:3443
 msgid "Suriname"
 msgstr "Swrinam"
 
-#: kspread_format.cc:3478
+#: kspread_format.cc:3443
 msgid "Suriname Guilder"
 msgstr "Gilder Swrinam"
 
-#: kspread_format.cc:3478
+#: kspread_format.cc:3443
 msgid "SRG"
 msgstr "SRG"
 
-#: kspread_format.cc:3479
+#: kspread_format.cc:3444
 msgid "Svalbard And Jan Mayen"
 msgstr "Svalbard A Jan Mayen"
 
-#: kspread_format.cc:3480
+#: kspread_format.cc:3445
 msgid "Swaziland"
 msgstr "Gwlad y Swasi"
 
-#: kspread_format.cc:3480
+#: kspread_format.cc:3445
 msgid "Lilangeni"
 msgstr "Lilangeni"
 
-#: kspread_format.cc:3480
+#: kspread_format.cc:3445
 msgid "SZL"
 msgstr "SZL"
 
-#: kspread_format.cc:3481
+#: kspread_format.cc:3446
 msgid "Sweden"
 msgstr "Sweden"
 
-#: kspread_format.cc:3481
+#: kspread_format.cc:3446
 msgid "Swedish Krona"
 msgstr "Crona Sweden"
 
-#: kspread_format.cc:3482
+#: kspread_format.cc:3447
 msgid "Switzerland"
 msgstr "Y Swistir"
 
-#: kspread_format.cc:3482
+#: kspread_format.cc:3447
 msgid "SFr."
 msgstr "SFr."
 
-#: kspread_format.cc:3483
+#: kspread_format.cc:3448
 msgid "Syrian Arab Republic"
 msgstr "Gweriniaeth Arabaidd Syria"
 
-#: kspread_format.cc:3483
+#: kspread_format.cc:3448
 msgid "Syrian Pound"
 msgstr "Punt Syria"
 
-#: kspread_format.cc:3483
+#: kspread_format.cc:3448
 msgid "SYP"
 msgstr "SYP"
 
-#: kspread_format.cc:3484
+#: kspread_format.cc:3449
 msgid "Taiwan, Province Of China"
 msgstr "Taiwan, Talaith Tseina"
 
-#: kspread_format.cc:3484
+#: kspread_format.cc:3449
 msgid "New Taiwan Dollar"
 msgstr "Doler Newydd Taiwan"
 
-#: kspread_format.cc:3484
+#: kspread_format.cc:3449
 msgid "TWD"
 msgstr "TWD"
 
-#: kspread_format.cc:3485
+#: kspread_format.cc:3450
 msgid "Tajikistan"
 msgstr "Tajicistan"
 
-#: kspread_format.cc:3485
+#: kspread_format.cc:3450
 msgid "Somoni"
 msgstr "Somoni"
 
-#: kspread_format.cc:3485
+#: kspread_format.cc:3450
 msgid "TJS"
 msgstr "TJS"
 
-#: kspread_format.cc:3486
+#: kspread_format.cc:3451
 msgid "Tanzania, United Republic Of"
 msgstr "Gweriniaeth Unedig Tansania"
 
-#: kspread_format.cc:3486
+#: kspread_format.cc:3451
 msgid "Tanzanian Shilling"
 msgstr "Swllt Tansania"
 
-#: kspread_format.cc:3486
+#: kspread_format.cc:3451
 msgid "TZS"
 msgstr "TZS"
 
-#: kspread_format.cc:3487
+#: kspread_format.cc:3452
 msgid "Thailand"
 msgstr "Gwlad Tai"
 
-#: kspread_format.cc:3487
+#: kspread_format.cc:3452
 msgid "Baht"
 msgstr "Baht"
 
-#: kspread_format.cc:3487
+#: kspread_format.cc:3452
 msgid "THB"
 msgstr "THB"
 
-#: kspread_format.cc:3488
+#: kspread_format.cc:3453
 msgid "Togo"
 msgstr "Togo"
 
-#: kspread_format.cc:3489
+#: kspread_format.cc:3454
 msgid "Tokelau"
 msgstr "Tocelaw"
 
-#: kspread_format.cc:3490
+#: kspread_format.cc:3455
 msgid "Tonga"
 msgstr "Tonga"
 
-#: kspread_format.cc:3490
+#: kspread_format.cc:3455
 msgid "Pa'anga"
 msgstr "Pa'anga"
 
-#: kspread_format.cc:3490
+#: kspread_format.cc:3455
 msgid "TOP"
 msgstr "TOP"
 
-#: kspread_format.cc:3491
+#: kspread_format.cc:3456
 msgid "Trinidad And Tobago"
 msgstr "Trinidad a Thobago"
 
-#: kspread_format.cc:3491
+#: kspread_format.cc:3456
 msgid "Trinidad and Tobago Dollar"
 msgstr "Doler Trinidad a Thobago"
 
-#: kspread_format.cc:3491
+#: kspread_format.cc:3456
 msgid "TT$"
 msgstr "TT$"
 
-#: kspread_format.cc:3492
+#: kspread_format.cc:3457
 msgid "Tunisia"
 msgstr "Tiwnisia"
 
-#: kspread_format.cc:3492
+#: kspread_format.cc:3457
 msgid "Tunisian Dinar"
 msgstr "Dinar Twnisia"
 
-#: kspread_format.cc:3492
+#: kspread_format.cc:3457
 msgid "TND"
 msgstr "TND"
 
-#: kspread_format.cc:3493
+#: kspread_format.cc:3458
 msgid "Turkey"
 msgstr "Twrci"
 
-#: kspread_format.cc:3493
+#: kspread_format.cc:3458
 msgid "Turkish Lira"
 msgstr "Lira Twrci"
 
-#: kspread_format.cc:3493
+#: kspread_format.cc:3458
 msgid "TL"
 msgstr "TL"
 
-#: kspread_format.cc:3494
+#: kspread_format.cc:3459
 msgid "Turkmenistan"
 msgstr "Twrcmenistan"
 
-#: kspread_format.cc:3494
+#: kspread_format.cc:3459
 msgid "Manat"
 msgstr "Manat"
 
-#: kspread_format.cc:3494
+#: kspread_format.cc:3459
 msgid "TMM"
 msgstr "TMM"
 
-#: kspread_format.cc:3495
+#: kspread_format.cc:3460
 msgid "Turks And Caicos Islands"
 msgstr "Ynysoedd Twrcs a Chaicos"
 
-#: kspread_format.cc:3496
+#: kspread_format.cc:3461
 msgid "Tuvalu"
 msgstr "Twfalw"
 
-#: kspread_format.cc:3497
+#: kspread_format.cc:3462
 msgid "Uganda"
 msgstr "Wganda"
 
-#: kspread_format.cc:3497
+#: kspread_format.cc:3462
 msgid "Uganda Shilling"
 msgstr "Swllt Wganda"
 
-#: kspread_format.cc:3497
+#: kspread_format.cc:3462
 msgid "UGX"
 msgstr "UGX"
 
-#: kspread_format.cc:3498
+#: kspread_format.cc:3463
 msgid "Ukraine"
 msgstr "Wcrain"
 
-#: kspread_format.cc:3498
+#: kspread_format.cc:3463
 msgid "Hryvnia"
 msgstr "Hryfnia"
 
-#: kspread_format.cc:3498
+#: kspread_format.cc:3463
 msgid "UAH"
 msgstr "UAH"
 
-#: kspread_format.cc:3499
+#: kspread_format.cc:3464
 msgid "United Arab Emirates"
 msgstr "Emiraethau Unedig Arabaidd"
 
-#: kspread_format.cc:3499
+#: kspread_format.cc:3464
 msgid "UAE Dirham"
 msgstr "Dirham UAE"
 
-#: kspread_format.cc:3499
+#: kspread_format.cc:3464
 msgid "AED"
 msgstr "AED"
 
-#: kspread_format.cc:3500
+#: kspread_format.cc:3465
 msgid "Pound Sterling"
 msgstr "Punt Sterling"
 
-#: kspread_format.cc:3500
+#: kspread_format.cc:3465
 msgid "GBP"
 msgstr "GBP"
 
-#: kspread_format.cc:3502
+#: kspread_format.cc:3467
 msgid "US Dollar (Next day)"
 msgstr "Doler UDA (Diwrnod nesaf)"
 
-#: kspread_format.cc:3502
+#: kspread_format.cc:3467
 msgid "USN"
 msgstr "USN"
 
-#: kspread_format.cc:3503
+#: kspread_format.cc:3468
 msgid "US Dollar (Same day)"
 msgstr "Doler UDA (yr un diwrnod)"
 
-#: kspread_format.cc:3503
+#: kspread_format.cc:3468
 msgid "USS"
 msgstr "USS"
 
-#: kspread_format.cc:3504
+#: kspread_format.cc:3469
 msgid "Uruguay"
 msgstr "Wrwgwai"
 
-#: kspread_format.cc:3504
+#: kspread_format.cc:3469
 msgid "Peso Uruguayo"
 msgstr "Peso Wrwgwái"
 
-#: kspread_format.cc:3504
+#: kspread_format.cc:3469
 msgid "NU$"
 msgstr "NU$"
 
-#: kspread_format.cc:3505
+#: kspread_format.cc:3470
 msgid "Uzbekistan"
 msgstr "Wsbecistan"
 
-#: kspread_format.cc:3505
+#: kspread_format.cc:3470
 msgid "Uzbekistan Sum"
 msgstr "Swm Usbecistan"
 
-#: kspread_format.cc:3505
+#: kspread_format.cc:3470
 msgid "UZS"
 msgstr "UZS"
 
-#: kspread_format.cc:3506
+#: kspread_format.cc:3471
 msgid "Vanuatu"
 msgstr "Fanwatw"
 
-#: kspread_format.cc:3506
+#: kspread_format.cc:3471
 msgid "Vatu"
 msgstr "Fatw"
 
-#: kspread_format.cc:3506
+#: kspread_format.cc:3471
 msgid "VUV"
 msgstr "VUV"
 
-#: kspread_format.cc:3507
+#: kspread_format.cc:3472
 msgid "Venezuela"
 msgstr "Feneswela"
 
-#: kspread_format.cc:3507
+#: kspread_format.cc:3472
 msgid "Bolivar"
 msgstr "Bolifar"
 
-#: kspread_format.cc:3508
+#: kspread_format.cc:3473
 msgid "Viet Nam"
 msgstr "Fiet Nam"
 
-#: kspread_format.cc:3508
+#: kspread_format.cc:3473
 msgid "Dong"
 msgstr "Dong"
 
-#: kspread_format.cc:3508
+#: kspread_format.cc:3473
 msgid "VND"
 msgstr "VND"
 
-#: kspread_format.cc:3509
+#: kspread_format.cc:3474
 msgid "Virgin Islands"
 msgstr "Ynysoedd yr Wyryf"
 
-#: kspread_format.cc:3510
+#: kspread_format.cc:3475
 msgid "Wallis And Futuna"
 msgstr "Ynysoedd Walis a Ffwtwna"
 
-#: kspread_format.cc:3511
+#: kspread_format.cc:3476
 msgid "Western Sahara"
 msgstr "Gorllewin Sahara"
 
-#: kspread_format.cc:3512
+#: kspread_format.cc:3477
 msgid "Yemen"
 msgstr "Iemen"
 
-#: kspread_format.cc:3512
+#: kspread_format.cc:3477
 msgid "Yemeni Rial"
 msgstr "Rial Yemen"
 
-#: kspread_format.cc:3512
+#: kspread_format.cc:3477
 msgid "YER"
 msgstr "YER"
 
-#: kspread_format.cc:3513
+#: kspread_format.cc:3478
 msgid "Yugoslavia"
 msgstr "Iwgoslafia"
 
-#: kspread_format.cc:3513
+#: kspread_format.cc:3478
 msgid "Yugoslavian Dinar"
 msgstr "Dinar Iwgoslafia"
 
-#: kspread_format.cc:3513
+#: kspread_format.cc:3478
 msgid "YUM"
 msgstr "YUM"
 
-#: kspread_format.cc:3514
+#: kspread_format.cc:3479
 msgid "Zambia"
 msgstr "Sambia"
 
-#: kspread_format.cc:3514
+#: kspread_format.cc:3479
 msgid "ZMK"
 msgstr "ZMK"
 
-#: kspread_format.cc:3515
+#: kspread_format.cc:3480
 msgid "Zimbabwe"
 msgstr "Simbabwe"
 
-#: kspread_format.cc:3515
+#: kspread_format.cc:3480
 msgid "Zimbabwe Dollar"
 msgstr "Doler Simbabwe"
 
-#: kspread_format.cc:3515
+#: kspread_format.cc:3480
 msgid "ZWD"
 msgstr "ZWD"
 
 #. i18n: file extensions/text.xml line 5
 #: dialogs/kspread_dlg_csv.cc:143 dialogs/kspread_dlg_csv.cc:462
 #: dialogs/kspread_dlg_csv.cc:464 dialogs/kspread_dlg_csv.cc:527
-#: dialogs/kspread_dlg_csv.cc:588 dialogs/kspread_dlg_csv.cc:705
-#: dialogs/kspread_dlg_layout.cc:1200 dialogs/kspread_dlg_special.cc:48
+#: dialogs/kspread_dlg_csv.cc:588 dialogs/kspread_dlg_csv.cc:711
+#: dialogs/kspread_dlg_layout.cc:1183 dialogs/kspread_dlg_special.cc:48
 #: dialogs/kspread_dlg_validity.cc:69 kspread_functions.cc:48
 #: kspread_view.cc:816 xml_doc.cc:5094 xml_doc.cc:5490 xml_doc.cc:5592
 #: xml_doc.cc:5604
@@ -3141,13 +3114,13 @@ msgstr "Mae'r gwerth yn rhy fawr"
 msgid "#Div/0"
 msgstr "#Div/0"
 
-#: dialogs/kspread_dlg_preference.cc:404 kspread_functions_information.cc:121
+#: dialogs/kspread_dlg_preference.cc:405 kspread_functions_information.cc:123
 msgid "Manual"
 msgstr "Â llaw"
 
-#: dialogs/kspread_dlg_layout.cc:1285 dialogs/kspread_dlg_layout.cc:2104
-#: dialogs/kspread_dlg_layout.cc:2303 dialogs/kspread_dlg_preference.cc:406
-#: kspread_functions_information.cc:123
+#: dialogs/kspread_dlg_layout.cc:1268 dialogs/kspread_dlg_layout.cc:1822
+#: dialogs/kspread_dlg_layout.cc:1903 dialogs/kspread_dlg_preference.cc:407
+#: kspread_functions_information.cc:125
 msgid "Automatic"
 msgstr "Ymysgogol"
 
@@ -3172,101 +3145,101 @@ msgstr ""
 "\n"
 "%2"
 
-#: kspread_map.cc:286
+#: kspread_map.cc:304
 msgid "This document has no table."
 msgstr "Nid oes tabl gan y ddogfen hon."
 
-#: kspread_numformat.cc:1225 kspread_util.cc:333
+#: kspread_numformat.cc:1234 valueformatter.cc:440
 msgid "PM"
 msgstr "YP"
 
-#: kspread_numformat.cc:1227 kspread_util.cc:333
+#: kspread_numformat.cc:1236 valueformatter.cc:440
 msgid "AM"
 msgstr "YB"
 
-#: kspread_sheet.cc:1528 kspread_sheet.cc:1600
+#: kspread_sheet.cc:1533 kspread_sheet.cc:1605
 msgid "Change Font"
 msgstr "Newid Wynebfath"
 
-#: kspread_sheet.cc:1710 kspread_view.cc:687
+#: kspread_sheet.cc:1715 kspread_view.cc:687
 msgid "Vertical Text"
 msgstr "Testun Fertigol"
 
-#: kspread_sheet.cc:1738
+#: kspread_sheet.cc:1743
 msgid "Add Comment"
 msgstr "Ychwanegu Sylwad"
 
-#: dialogs/kspread_dlg_angle.cc:39 kspread_sheet.cc:1763 kspread_undo.cc:1187
+#: dialogs/kspread_dlg_angle.cc:39 kspread_sheet.cc:1768 kspread_undo.cc:1188
 msgid "Change Angle"
 msgstr "Newid Ongl"
 
-#: kspread_sheet.cc:1807
+#: kspread_sheet.cc:1812
 msgid "Remove Comment"
 msgstr "Gwaredu Sylwad"
 
-#: kspread_sheet.cc:1833
+#: kspread_sheet.cc:1838
 msgid "Change Text Color"
 msgstr "Newid Lliw'r Testun"
 
-#: kspread_sheet.cc:1871
+#: kspread_sheet.cc:1876
 msgid "Change Background Color"
 msgstr "Newid Lliw'r Cefndir"
 
-#: kspread_sheet.cc:1910
+#: kspread_sheet.cc:1915
 msgid "Change Border Color"
 msgstr "Newid Lliw'r Ffin"
 
-#: kspread_sheet.cc:2210
+#: kspread_sheet.cc:2215
 msgid "Format Percent"
 msgstr "Fformatio Canran"
 
-#: kspread_sheet.cc:2935
+#: kspread_sheet.cc:2936
 msgid "Dependency"
 msgstr "Dibyniaeth"
 
-#: kspread_sheet.cc:3064 kspread_sheet.cc:3096 kspread_sheet.cc:3133
-#: kspread_sheet.cc:3179 kspread_sheet.cc:3201 kspread_sheet.cc:3281
-#: kspread_sheet.cc:3340 kspread_sheet.cc:3459 kspread_sheet.cc:3520
+#: kspread_sheet.cc:3065 kspread_sheet.cc:3097 kspread_sheet.cc:3134
+#: kspread_sheet.cc:3180 kspread_sheet.cc:3202 kspread_sheet.cc:3282
+#: kspread_sheet.cc:3341 kspread_sheet.cc:3460 kspread_sheet.cc:3521
 msgid "Change Border"
 msgstr "Newid Ffin"
 
-#: kspread_sheet.cc:4694
+#: kspread_sheet.cc:4690
 msgid "Multirow"
 msgstr "Aml-res"
 
-#: kspread_sheet.cc:4726
+#: kspread_sheet.cc:4722
 msgid "Change Horizontal Alignment"
 msgstr "Newid Aliniad Llorweddol"
 
-#: kspread_sheet.cc:4768
+#: kspread_sheet.cc:4764
 msgid "Change Vertical Alignment"
 msgstr "Newid Aliniad Fertigol"
 
-#: kspread_sheet.cc:4811
+#: kspread_sheet.cc:4807
 msgid "Change Precision"
 msgstr "Newid Trachywiredd"
 
-#: kspread_sheet.cc:4844
+#: kspread_sheet.cc:4840
 msgid "Apply Style"
 msgstr "Gweithredu Arddull"
 
-#: kspread_sheet.cc:4886
+#: kspread_sheet.cc:4882
 msgid "Format Money"
 msgstr "Fformatio Arian"
 
-#: kspread_sheet.cc:4936 kspread_view.cc:693
+#: kspread_sheet.cc:4926 kspread_view.cc:693
 msgid "Increase Indent"
 msgstr "Cynyddu Mewnoliad"
 
-#: kspread_sheet.cc:4990 kspread_view.cc:698
+#: kspread_sheet.cc:4980 kspread_view.cc:698
 msgid "Decrease Indent"
 msgstr "Lleihau Mewnoliad"
 
-#: dialogs/kspread_dlg_preference.cc:734 kspread_sheet.cc:5354
+#: dialogs/kspread_dlg_preference.cc:735 kspread_sheet.cc:5344
 msgid "Default Parameters"
 msgstr "Paramedrau Rhagosodol"
 
-#: kspread_sheet.cc:7708
+#: kspread_sheet.cc:7719
 msgid "Invalid document. Table name is empty."
 msgstr "Dogfen annilys.  Mae enw'r tabl yn wag."
 
@@ -3311,104 +3284,92 @@ msgstr "org"
 msgid "sheet"
 msgstr "dalen"
 
-#: kspread_style_manager.cc:206
+#: kspread_style_manager.cc:207
 msgid "Header"
 msgstr "Pennawd"
 
-#: kspread_style_manager.cc:215
+#: kspread_style_manager.cc:216
 msgid "Header1"
 msgstr "Pennawd1"
 
-#: kspread_undo.cc:241
+#: kspread_undo.cc:242
 msgid "Remove Columns"
 msgstr "Gwaredu Colofnau"
 
-#: kspread_undo.cc:358
+#: kspread_undo.cc:359
 msgid "Remove Rows"
 msgstr "Gwaredu Rhesi"
 
-#: kspread_undo.cc:441 kspread_view.cc:884
+#: kspread_undo.cc:442 kspread_view.cc:884
 msgid "Insert Rows"
 msgstr "Mewnosod Rhesi"
 
-#: kspread_undo.cc:485 kspread_view.cc:892
+#: kspread_undo.cc:486 kspread_view.cc:892
 msgid "Hide Rows"
 msgstr "Cuddio Rhesi"
 
-#: kspread_undo.cc:541 kspread_view.cc:863
+#: kspread_undo.cc:542 kspread_view.cc:863
 msgid "Hide Columns"
 msgstr "Cuddio Colofnau"
 
-#: dialogs/kspread_dlg_showColRow.cc:51 kspread_undo.cc:598
+#: dialogs/kspread_dlg_showColRow.cc:51 kspread_undo.cc:599
 #: kspread_view.cc:904
 msgid "Show Rows"
 msgstr "Dangos Rhesi"
 
-#: dialogs/kspread_dlg_showColRow.cc:47 kspread_undo.cc:655
+#: dialogs/kspread_dlg_showColRow.cc:47 kspread_undo.cc:656
 #: kspread_view.cc:875
 msgid "Show Columns"
 msgstr "Dangos Colofnau"
 
-#: kspread_undo.cc:831 kspread_undo.cc:1898
+#: kspread_undo.cc:832 kspread_undo.cc:1899
 msgid "Change Text"
 msgstr "Newid Testun"
 
-#: dialogs/kspread_dlg_format.cc:153 dialogs/kspread_dlg_layout.cc:981
-#: dialogs/kspread_dlg_layout.cc:1041 kspread_undo.cc:898
+#: dialogs/kspread_dlg_format.cc:153 dialogs/kspread_dlg_layout.cc:961
+#: dialogs/kspread_dlg_layout.cc:1021 kspread_undo.cc:899
 msgid "Change Format"
 msgstr "Newid Fformat"
 
-#: kspread_undo.cc:1219
+#: kspread_undo.cc:1220
 msgid "Sort"
 msgstr "Trefnu"
 
-#: kspread_undo.cc:1632
+#: kspread_undo.cc:1633
 msgid "Drag & Drop"
 msgstr "Llusgo a Gollwng"
 
-#: kspread_undo.cc:1725
+#: kspread_undo.cc:1726
 msgid "Resize"
 msgstr "Newid maint"
 
-#: kspread_undo.cc:2144
+#: kspread_undo.cc:2145
 msgid "Autofill"
 msgstr "Hunan-lenwi"
 
-#: kspread_undo.cc:2223 kspread_undo.cc:2267
+#: kspread_undo.cc:2224 kspread_undo.cc:2268
 msgid "Insert Cell"
 msgstr "Mewnosod Cell"
 
-#: kspread_undo.cc:2310 kspread_undo.cc:2369
+#: kspread_undo.cc:2311 kspread_undo.cc:2370
 msgid "Remove Cell"
 msgstr "Gwaredu Cell"
 
-#: kspread_undo.cc:2428
+#: kspread_undo.cc:2429
 msgid "Conditional Cell Attribute"
 msgstr "Priodoledd Cell Amodol"
 
-#: kspread_undo.cc:2502
+#: kspread_undo.cc:2503
 msgid "Paste & Insert"
 msgstr "Gludo a Mewnosod"
 
-#: kspread_undo.cc:2773
+#: kspread_undo.cc:2774
 msgid "Style of Cell"
 msgstr "Arddull Cell"
 
-#: dialogs/kspread_dlg_database.cc:74 kspread_undo.cc:2889
+#: dialogs/kspread_dlg_database.cc:74 kspread_undo.cc:2890
 msgid "Insert Data From Database"
 msgstr "Mewnosod Data o Gronfa Ddata"
-
-#: kspread_util.cc:353
-msgid "h"
-msgstr "h"
-
-#: dialogs/kspread_dlg_preference.cc:233 kspread_util.cc:355
-msgid "min"
-msgstr "mun"
-
-#: kspread_util.cc:357
-msgid "s"
-msgstr "s"
 
 #: kspread_view.cc:590
 msgid "Cell Format..."
@@ -3422,14 +3383,14 @@ msgstr "Gosod fformatio'r gell."
 msgid "Resets to the default format."
 msgstr "Ailosod i'r fformat rhagosodol."
 
-#: dialogs/kspread_dlg_anchor.cc:148 dialogs/kspread_dlg_anchor.cc:228
-#: dialogs/kspread_dlg_anchor.cc:319 dialogs/kspread_dlg_anchor.cc:431
-#: dialogs/kspread_dlg_layout.cc:2838 dialogs/kspread_dlg_layout.cc:3094
-#: dialogs/kspread_dlg_layout.cc:3129 kspread_view.cc:598
+#: dialogs/kspread_dlg_anchor.cc:149 dialogs/kspread_dlg_anchor.cc:229
+#: dialogs/kspread_dlg_anchor.cc:320 dialogs/kspread_dlg_anchor.cc:432
+#: dialogs/kspread_dlg_layout.cc:2427 dialogs/kspread_dlg_layout.cc:2683
+#: dialogs/kspread_dlg_layout.cc:2718 kspread_view.cc:598
 msgid "Bold"
 msgstr "Trwm"
 
-#: dialogs/kspread_dlg_layout.cc:2860 kspread_view.cc:608
+#: dialogs/kspread_dlg_layout.cc:2449 kspread_view.cc:608
 msgid "Underline"
 msgstr "Tanlinellu"
 
@@ -4179,7 +4140,7 @@ msgstr "Dewis Fformiwla"
 msgid "Insert a function."
 msgstr "Mewnosod ffwythiant."
 
-#: kspread_view.cc:1112 kspread_view.cc:3091
+#: kspread_view.cc:1112 kspread_view.cc:3079
 msgid "Others..."
 msgstr "Eraill..."
 
@@ -4340,8 +4301,8 @@ msgid "Set various KSpread options."
 msgstr "Gosod dewisiadau KSpread."
 
 #: dialogs/kspread_dlg_csv.cc:164 dialogs/kspread_dlg_database.cc:846
-#: dialogs/kspread_dlg_database.cc:847 dialogs/kspread_dlg_layout.cc:271
-#: dialogs/kspread_dlg_preference.cc:403 dialogs/kspread_dlg_preference.cc:446
+#: dialogs/kspread_dlg_database.cc:847 dialogs/kspread_dlg_layout.cc:273
+#: dialogs/kspread_dlg_preference.cc:404 dialogs/kspread_dlg_preference.cc:447
 #: dialogs/kspread_dlg_sort.cc:101 dialogs/kspread_dlg_sort.cc:120
 #: dialogs/kspread_dlg_sort.cc:363 dialogs/kspread_dlg_sort.cc:365
 #: dialogs/kspread_dlg_sort.cc:374 dialogs/kspread_dlg_sort.cc:376
@@ -4354,7 +4315,7 @@ msgstr "Dim"
 msgid "No calculation"
 msgstr "Dim cyfrifiadau"
 
-#: dialogs/kspread_dlg_cons.cc:75 dialogs/kspread_dlg_preference.cc:441
+#: dialogs/kspread_dlg_cons.cc:75 dialogs/kspread_dlg_preference.cc:442
 #: dialogs/kspread_dlg_subtotal.cc:268 kspread_view.cc:1222
 msgid "Sum"
 msgstr "Swm"
@@ -4363,7 +4324,7 @@ msgstr "Swm"
 msgid "Calculate using sum."
 msgstr "Cyfrifo gan ddefnyddio swm"
 
-#: dialogs/kspread_dlg_cons.cc:79 dialogs/kspread_dlg_preference.cc:442
+#: dialogs/kspread_dlg_cons.cc:79 dialogs/kspread_dlg_preference.cc:443
 #: dialogs/kspread_dlg_subtotal.cc:264 kspread_view.cc:1228
 msgid "Min"
 msgstr "Lleiafswm"
@@ -4372,7 +4333,7 @@ msgstr "Lleiafswm"
 msgid "Calculate using minimum."
 msgstr "Cyfrifo gan ddefnyddio'r lleiafswm."
 
-#: dialogs/kspread_dlg_cons.cc:78 dialogs/kspread_dlg_preference.cc:443
+#: dialogs/kspread_dlg_cons.cc:78 dialogs/kspread_dlg_preference.cc:444
 #: dialogs/kspread_dlg_subtotal.cc:263 kspread_view.cc:1234
 msgid "Max"
 msgstr "Uchafswm"
@@ -4381,7 +4342,7 @@ msgstr "Uchafswm"
 msgid "Calculate using maximum."
 msgstr "Cyfrifio gan ddefnyddio'r uchafswm."
 
-#: dialogs/kspread_dlg_cons.cc:76 dialogs/kspread_dlg_preference.cc:444
+#: dialogs/kspread_dlg_cons.cc:76 dialogs/kspread_dlg_preference.cc:445
 #: dialogs/kspread_dlg_subtotal.cc:260 kspread_view.cc:1240
 msgid "Average"
 msgstr "Cyfartaledd"
@@ -4390,7 +4351,7 @@ msgstr "Cyfartaledd"
 msgid "Calculate using average."
 msgstr "Cyfrifo gan ddefnyddio'r cyfartaledd."
 
-#: dialogs/kspread_dlg_cons.cc:77 dialogs/kspread_dlg_preference.cc:445
+#: dialogs/kspread_dlg_cons.cc:77 dialogs/kspread_dlg_preference.cc:446
 #: dialogs/kspread_dlg_subtotal.cc:261 kspread_view.cc:1246
 msgid "Count"
 msgstr "Cyfrif"
@@ -4403,23 +4364,23 @@ msgstr "Cyfrifo gan ddefnyddio'r cyfrif"
 msgid "Run Internal Tests..."
 msgstr ""
 
-#: kspread_view.cc:2030
+#: kspread_view.cc:2018
 msgid "Spell Checking"
 msgstr "Cywiro sillafu"
 
-#: kspread_view.cc:2169
+#: kspread_view.cc:2157
 msgid "Spell checking is complete."
 msgstr "Cwblhawyd y cywiro sillafu."
 
-#: kspread_view.cc:2216
+#: kspread_view.cc:2204
 msgid "Do you want to check the spelling in the next table?"
 msgstr "Hoffech gywiro'r sillafu yn y tabl nesaf?"
 
-#: kspread_view.cc:2275
+#: kspread_view.cc:2263
 msgid "Correct Misspelled Word"
 msgstr "Cywiro Gair a Gamsillafwyd?"
 
-#: kspread_view.cc:2335
+#: kspread_view.cc:2323
 msgid ""
 "ISpell could not be started.\n"
 "Please make sure you have ISpell properly configured and in your PATH."
@@ -4428,66 +4389,66 @@ msgstr ""
 "  A wnewch yn sicr bod ISpell wedi'i ffurfweddu'n iawn gennych a'i fod yn "
 "eich PATH."
 
-#: kspread_view.cc:2341
+#: kspread_view.cc:2329
 msgid "ISpell seems to have crashed."
 msgstr "Mae ISpell wedi chwalu!"
 
-#: kspread_view.cc:3219 kspread_view.cc:3240 kspread_view.cc:3920
+#: kspread_view.cc:3207 kspread_view.cc:3228 kspread_view.cc:3934
 msgid "You must select multiple cells."
 msgstr "Rhaid dewis cellau lluosol."
 
-#: kspread_view.cc:3637
+#: kspread_view.cc:3651
 msgid "You cannot change a protected sheet"
 msgstr "Ni ellir newid dalen a warchodir"
 
-#: kspread_view.cc:3665
+#: kspread_view.cc:3679
 msgid "You cannot hide the last visible table."
 msgstr "Ni fedrwch guddio y tabl gweladwy olaf."
 
-#: kspread_view.cc:3840 kspread_view.cc:4224 kspread_view.cc:4239
-#: kspread_view.cc:4405 kspread_view.cc:5369 kspread_view.cc:5516
-#: kspread_view.cc:5527 kspread_view.cc:5538 kspread_view.cc:5550
-#: kspread_view.cc:5879
+#: kspread_view.cc:3854 kspread_view.cc:4238 kspread_view.cc:4253
+#: kspread_view.cc:4419 kspread_view.cc:5384 kspread_view.cc:5531
+#: kspread_view.cc:5542 kspread_view.cc:5553 kspread_view.cc:5565
+#: kspread_view.cc:5894
 msgid "Area too large."
 msgstr "Ardal rhy fawr."
 
-#: kspread_view.cc:3950
+#: kspread_view.cc:3964
 msgid "You must not select an area containing more than one column."
 msgstr "Ni fedrwch ddewis ardal sy'n cynnwys mwy nag un colofn."
 
-#: kspread_view.cc:4260
+#: kspread_view.cc:4274
 msgid "You must select multiple cells"
 msgstr "Rhaid dewis celloedd lluosol."
 
-#: kspread_view.cc:4383
+#: kspread_view.cc:4397
 msgid "Nothing to print."
 msgstr "Dim i'w argraffu."
 
-#: kspread_view.cc:4484
+#: kspread_view.cc:4498
 msgid "Protect Document"
 msgstr "Gwarchod Dogfen"
 
-#: kspread_view.cc:4499
+#: kspread_view.cc:4513
 msgid "Unprotect Document"
 msgstr "Di-warchod Dogfen"
 
-#: kspread_view.cc:4512 kspread_view.cc:4562
+#: kspread_view.cc:4526 kspread_view.cc:4576
 msgid "Incorrect password"
 msgstr "Cyfrinair anghywir"
 
-#: kspread_view.cc:4532
+#: kspread_view.cc:4546
 msgid "Protect Sheet"
 msgstr "Gwarchod Dalen"
 
-#: kspread_view.cc:4548
+#: kspread_view.cc:4562
 msgid "Unprotect Sheet"
 msgstr "Di-warchod Dalen"
 
-#: kspread_view.cc:4938 kspread_view.cc:4947
+#: kspread_view.cc:4953 kspread_view.cc:4962
 msgid "Delete Embedded Document"
 msgstr "Dileu Dogfen Gaeth"
 
-#: kspread_view.cc:4947
+#: kspread_view.cc:4962
 msgid ""
 "You are about to remove this embedded document.\n"
 "Do you want to continue?"
@@ -4495,43 +4456,43 @@ msgstr ""
 "Rydych ar fin gwaredu'r ddogfen gaeth yma.\n"
 "Ydych am barhau?"
 
-#: kspread_view.cc:4991
+#: kspread_view.cc:5006
 msgid "Adjust Column"
 msgstr "Addasu Colofn"
 
-#: kspread_view.cc:5076
+#: kspread_view.cc:5091
 msgid "Adjust Row"
 msgstr "Addasu Rhes"
 
-#: kspread_view.cc:5278
+#: kspread_view.cc:5293
 msgid "Selection List..."
 msgstr "Rhestr Dewisiadau..."
 
-#: kspread_view.cc:5777
+#: kspread_view.cc:5792
 msgid "Create Style From Cell"
 msgstr "Creu Arddull o Gell "
 
-#: kspread_view.cc:5778 kspread_view.cc:5982 kspread_view.cc:6000
+#: kspread_view.cc:5793 kspread_view.cc:5997 kspread_view.cc:6015
 msgid "Enter name:"
 msgstr "Rhowch enw:"
 
-#: kspread_view.cc:5788
+#: kspread_view.cc:5803
 msgid "The style name cannot be empty."
 msgstr "Ni all enw ardull fod yn wag."
 
-#: dialogs/kspread_dlg_layout.cc:217 kspread_view.cc:5795
+#: dialogs/kspread_dlg_layout.cc:219 kspread_view.cc:5810
 msgid "A style with this name already exists."
 msgstr "Mae arddull â'r enw yma yn bodoli eisioes."
 
-#: kspread_view.cc:5885
+#: kspread_view.cc:5900
 msgid "No charting component registered"
 msgstr "Ni chofrestrir cydran siart"
 
-#: kspread_view.cc:5937
+#: kspread_view.cc:5952
 msgid "You cannot delete the only sheet."
 msgstr "Ni chewch ddileu'r unig ddalen."
 
-#: kspread_view.cc:5941
+#: kspread_view.cc:5956
 msgid ""
 "You are about to remove the active sheet.\n"
 "Do you want to continue?"
@@ -4539,50 +4500,50 @@ msgstr ""
 "Rydych ar fin gwaredu'r ddalen gyfredol.\n"
 "Ydych am barhau?"
 
-#: kspread_view.cc:5976
+#: kspread_view.cc:5991
 msgid "You cannot change a protected sheet."
 msgstr "Ni chewch newid dalen a warchodir."
 
-#: kspread_view.cc:5989
+#: kspread_view.cc:6004
 #, fuzzy
 msgid "Sheet name contains illegal characters. Only numbers and letters are allowed."
 msgstr ""
 "Mae enw'r ddalen yn cynnwys nodau anghyfreithlon.  Caniateir rhifau a "
 "llythrennau yn unig."
 
-#: kspread_view.cc:5990 kspread_view.cc:6008 kspread_view.cc:6018
+#: kspread_view.cc:6005 kspread_view.cc:6023 kspread_view.cc:6033
 msgid "Change Sheet Name"
 msgstr "Newid Enw Dalen"
 
-#: kspread_view.cc:6008
+#: kspread_view.cc:6023
 msgid "Sheet name cannot be empty."
 msgstr "Ni all enw dalen fod yn wag."
 
-#: dialogs/kspread_dlg_area.cc:90 kspread_view.cc:6018
+#: dialogs/kspread_dlg_area.cc:90 kspread_view.cc:6033
 msgid "This name is already used."
 msgstr "Defnyddir yr enw hwn eisoes."
 
-#: kspread_view.cc:6331
+#: kspread_view.cc:6346
 #, c-format
 msgid " Sum: %1"
 msgstr "Swm: %1"
 
-#: kspread_view.cc:6335
+#: kspread_view.cc:6350
 #, c-format
 msgid "Average: %1"
 msgstr "Cyfartaledd: %1"
 
-#: kspread_view.cc:6338
+#: kspread_view.cc:6353
 #, c-format
 msgid "Min: %1"
 msgstr "Lleiafswm: %1"
 
-#: kspread_view.cc:6341
+#: kspread_view.cc:6356
 #, c-format
 msgid "Max: %1"
 msgstr "Uchafswm: %1"
 
-#: kspread_view.cc:6344
+#: kspread_view.cc:6359
 #, c-format
 msgid "Count: %1"
 msgstr "Cyfrif: %1"
@@ -4590,6 +4551,30 @@ msgstr "Cyfrif: %1"
 #: main.cc:29
 msgid "File to open"
 msgstr "Ffeil i agor"
+
+#: valueformatter.cc:460
+msgid "h"
+msgstr "h"
+
+#: dialogs/kspread_dlg_preference.cc:234 valueformatter.cc:462
+msgid "min"
+msgstr "mun"
+
+#: valueformatter.cc:464
+msgid "s"
+msgstr "s"
+
+#: valueformatter.cc:643
+msgid "Parse"
+msgstr "Dosrannu"
+
+#: valueformatter.cc:645
+msgid "Circle"
+msgstr "Cylch"
+
+#: valueformatter.cc:647
+msgid "Depend"
+msgstr "Dibynnu"
 
 #. i18n: file extensions/conversion.xml line 5
 #: xml_doc.cc:3
@@ -5043,7 +5028,7 @@ msgstr "Mae CARY(12;0) yn dychwelyd 0"
 #. i18n: file extensions/conversion.xml line 234
 #: dialogs/kspread_dlg_csv.cc:139 dialogs/kspread_dlg_csv.cc:462
 #: dialogs/kspread_dlg_csv.cc:530 dialogs/kspread_dlg_csv.cc:590
-#: dialogs/kspread_dlg_csv.cc:707 dialogs/kspread_dlg_layout.cc:1179
+#: dialogs/kspread_dlg_csv.cc:713 dialogs/kspread_dlg_layout.cc:1162
 #: dialogs/kspread_dlg_validity.cc:67 xml_doc.cc:216 xml_doc.cc:999
 #: xml_doc.cc:1080 xml_doc.cc:4716 xml_doc.cc:4746 xml_doc.cc:4776
 #: xml_doc.cc:4791 xml_doc.cc:4806 xml_doc.cc:4890 xml_doc.cc:4917
@@ -7959,7 +7944,7 @@ msgid "Fractional Dollar"
 msgstr "Doler Ffracsiynol"
 
 #. i18n: file extensions/financial.xml line 247
-#: dialogs/kspread_dlg_layout.cc:1191 xml_doc.cc:1884 xml_doc.cc:1899
+#: dialogs/kspread_dlg_layout.cc:1174 xml_doc.cc:1884 xml_doc.cc:1899
 #, no-c-format
 msgid "Fraction"
 msgstr "Ffracsiwn"
@@ -8802,7 +8787,7 @@ msgstr "Mae DB(8000;400;6;3;2) yn dychwelyd 1783.41"
 
 #. i18n: file extensions/financial.xml line 850
 #: dialogs/kspread_dlg_csv.cc:148 dialogs/kspread_dlg_csv.cc:463
-#: dialogs/kspread_dlg_csv.cc:536 dialogs/kspread_dlg_csv.cc:709
+#: dialogs/kspread_dlg_csv.cc:536 dialogs/kspread_dlg_csv.cc:715
 #: xml_doc.cc:2400
 #, no-c-format
 msgid "Currency"
@@ -14994,23 +14979,23 @@ msgstr "KSpread"
 msgid "(c) 1998-2004, The KSpread Team"
 msgstr "(h)(c) 1998-2004, Y Tîm KWord"
 
-#: dialogs/kspread_dlg_anchor.cc:47
+#: dialogs/kspread_dlg_anchor.cc:48
 msgid "Insert Link"
 msgstr "Mewnosod Cyswllt"
 
-#: dialogs/kspread_dlg_anchor.cc:52
+#: dialogs/kspread_dlg_anchor.cc:53
 msgid "Internet"
 msgstr "Rhyngrwyd"
 
-#: dialogs/kspread_dlg_anchor.cc:55
+#: dialogs/kspread_dlg_anchor.cc:56
 msgid "Mail"
 msgstr "Post"
 
-#: dialogs/kspread_dlg_anchor.cc:61
+#: dialogs/kspread_dlg_anchor.cc:62
 msgid "Cell"
 msgstr "Cell"
 
-#: dialogs/kspread_dlg_anchor.cc:100
+#: dialogs/kspread_dlg_anchor.cc:101
 msgid ""
 "Cell is not empty.\n"
 "Do you want to continue?"
@@ -15018,41 +15003,41 @@ msgstr ""
 "Nid yw'r gell yn wag.\n"
 "Ydych am barhau?"
 
-#: dialogs/kspread_dlg_anchor.cc:143
+#: dialogs/kspread_dlg_anchor.cc:144
 msgid "Internet address:"
 msgstr "Cyfeiriad Rhyngrwyd:"
 
-#: dialogs/kspread_dlg_anchor.cc:167 dialogs/kspread_dlg_anchor.cc:450
+#: dialogs/kspread_dlg_anchor.cc:168 dialogs/kspread_dlg_anchor.cc:451
 #, fuzzy
 msgid "Area text or cell is empty."
 msgstr "Mae'r testun ardal neu gell yn wag!"
 
-#: dialogs/kspread_dlg_anchor.cc:223
+#: dialogs/kspread_dlg_anchor.cc:224
 msgid "Email:"
 msgstr "Ebost:"
 
-#: dialogs/kspread_dlg_anchor.cc:247 dialogs/kspread_dlg_anchor.cc:359
+#: dialogs/kspread_dlg_anchor.cc:248 dialogs/kspread_dlg_anchor.cc:360
 #, fuzzy
 msgid "Area text or mail is empty."
 msgstr "Mae'r testun ardal neu ebost yn wag!"
 
-#: dialogs/kspread_dlg_anchor.cc:304
+#: dialogs/kspread_dlg_anchor.cc:305
 msgid "Recent file:"
 msgstr "Ffeil diweddar:"
 
-#: dialogs/kspread_dlg_anchor.cc:313
+#: dialogs/kspread_dlg_anchor.cc:314
 msgid "File location:"
 msgstr "Lleoliad y ffeil:"
 
-#: dialogs/kspread_dlg_anchor.cc:339
+#: dialogs/kspread_dlg_anchor.cc:340
 msgid "No Entries"
 msgstr "Dim Cofnodion"
 
-#: dialogs/kspread_dlg_anchor.cc:425
+#: dialogs/kspread_dlg_anchor.cc:426
 msgid "Cell:"
 msgstr "Cell:"
 
-#: dialogs/kspread_dlg_angle.cc:50 dialogs/kspread_dlg_layout.cc:3280
+#: dialogs/kspread_dlg_angle.cc:50 dialogs/kspread_dlg_layout.cc:2869
 msgid "Angle:"
 msgstr "Ongl:"
 
@@ -15710,338 +15695,338 @@ msgstr "Mae'r rhes yn llawn.  Ni ellir symud y celloedd i'r dde."
 msgid "The column is full. Cannot move cells towards the bottom."
 msgstr "Mae'r golofn yn llawn.  Ni ellir symud y celloedd tuag at y gwaelod."
 
-#: dialogs/kspread_dlg_layout.cc:134
+#: dialogs/kspread_dlg_layout.cc:136
 msgid "Style"
 msgstr "Ardull"
 
-#: dialogs/kspread_dlg_layout.cc:142
+#: dialogs/kspread_dlg_layout.cc:144
 msgid "Name:"
 msgstr "Enw:"
 
-#: dialogs/kspread_dlg_layout.cc:150
+#: dialogs/kspread_dlg_layout.cc:152
 msgid "Inherit style:"
 msgstr "Etifeddu arddull:"
 
-#: dialogs/kspread_dlg_layout.cc:155 dialogs/kspread_dlg_layout.cc:162
-#: dialogs/kspread_dlg_layout.cc:202 dialogs/kspread_dlg_layout.cc:228
+#: dialogs/kspread_dlg_layout.cc:157 dialogs/kspread_dlg_layout.cc:164
+#: dialogs/kspread_dlg_layout.cc:204 dialogs/kspread_dlg_layout.cc:230
 msgid "<None>"
 msgstr "<Dim>"
 
-#: dialogs/kspread_dlg_layout.cc:232
+#: dialogs/kspread_dlg_layout.cc:234
 msgid "A style cannot inherit from itself."
 msgstr "Ni all arddull etifeddu o'i hun."
 
-#: dialogs/kspread_dlg_layout.cc:238
+#: dialogs/kspread_dlg_layout.cc:240
 msgid "The style cannot inherit from '%1' because of recursive references."
 msgstr "Ni all yr arddull etifeddu o '%1' o achos cyfeirnodau ymgylchol."
 
-#: dialogs/kspread_dlg_layout.cc:247
+#: dialogs/kspread_dlg_layout.cc:249
 #, fuzzy
 msgid "The parent style does not exist."
 msgstr "Nid yw'r arddull rhiant yn bodoli."
 
-#: dialogs/kspread_dlg_layout.cc:701
-msgid "The quick brown fox jumps over the lazy dog"
-msgstr "Mae'r gwr o Fôn wedi cyrraedd heddiw."
-
-#: dialogs/kspread_dlg_layout.cc:892
+#: dialogs/kspread_dlg_layout.cc:872
 msgid "&General"
 msgstr "&Cyffredin"
 
-#: dialogs/kspread_dlg_layout.cc:896
+#: dialogs/kspread_dlg_layout.cc:876
 msgid "&Data Format"
 msgstr "Fformat &Data"
 
-#: dialogs/kspread_dlg_layout.cc:899
+#: dialogs/kspread_dlg_layout.cc:879
 msgid "&Text"
 msgstr "&Testun"
 
-#: dialogs/kspread_dlg_layout.cc:905
+#: dialogs/kspread_dlg_layout.cc:885
 msgid "&Position"
 msgstr "&Lleoliad"
 
-#: dialogs/kspread_dlg_layout.cc:908
+#: dialogs/kspread_dlg_layout.cc:888
 msgid "&Border"
 msgstr "&Ffin"
 
-#: dialogs/kspread_dlg_layout.cc:911
+#: dialogs/kspread_dlg_layout.cc:891
 msgid "Back&ground"
 msgstr "Cef&ndir"
 
-#: dialogs/kspread_dlg_layout.cc:914
+#: dialogs/kspread_dlg_layout.cc:894
 msgid "&Cell Protection"
 msgstr "Gwarc&hodaeth Gell"
 
-#: dialogs/kspread_dlg_layout.cc:919
+#: dialogs/kspread_dlg_layout.cc:899
 msgid "Cell Format"
 msgstr "Fformat Cell"
 
-#: dialogs/kspread_dlg_layout.cc:1182
+#: dialogs/kspread_dlg_layout.cc:1159
+msgid "Generic"
+msgstr "Generig"
+
+#: dialogs/kspread_dlg_layout.cc:1165
 msgid "Percent"
 msgstr "Canran"
 
-#: dialogs/kspread_dlg_layout.cc:1185
+#: dialogs/kspread_dlg_layout.cc:1168
 msgid "Money"
 msgstr "Arian"
 
-#: dialogs/kspread_dlg_layout.cc:1188
+#: dialogs/kspread_dlg_layout.cc:1171
 msgid "Scientific"
 msgstr "Gwyddonol"
 
-#: dialogs/kspread_dlg_layout.cc:1194
+#: dialogs/kspread_dlg_layout.cc:1177
 msgid "Date format"
 msgstr "Fformat dyddiad"
 
-#: dialogs/kspread_dlg_layout.cc:1197
+#: dialogs/kspread_dlg_layout.cc:1180
 msgid "Time format"
 msgstr "Fformat amser"
 
-#: dialogs/kspread_dlg_layout.cc:1203
+#: dialogs/kspread_dlg_layout.cc:1186
 msgid "Custom"
 msgstr "Addasiedig"
 
-#: dialogs/kspread_dlg_layout.cc:1208 dialogs/kspread_dlg_layout.cc:3993
-#: dialogs/kspread_dlg_layout.cc:5124
+#: dialogs/kspread_dlg_layout.cc:1191 dialogs/kspread_dlg_layout.cc:3582
+#: dialogs/kspread_dlg_layout.cc:4713
 msgid "Preview"
 msgstr "Rhagolwg"
 
-#: dialogs/kspread_dlg_layout.cc:1233
+#: dialogs/kspread_dlg_layout.cc:1216
 msgid "variable"
 msgstr "newidyn"
 
-#: dialogs/kspread_dlg_layout.cc:1247
+#: dialogs/kspread_dlg_layout.cc:1230
 msgid "Postfix:"
 msgstr "Ôlddodiad:"
 
-#: dialogs/kspread_dlg_layout.cc:1256
+#: dialogs/kspread_dlg_layout.cc:1239
 msgid "Prefix:"
 msgstr "Rhagddodiad:"
 
-#: dialogs/kspread_dlg_layout.cc:1260
+#: dialogs/kspread_dlg_layout.cc:1243
 msgid "Precision:"
 msgstr "Trachywiredd:"
 
-#: dialogs/kspread_dlg_layout.cc:1276
+#: dialogs/kspread_dlg_layout.cc:1259
 msgid "Format:"
 msgstr "Fformat:"
 
-#: dialogs/kspread_dlg_layout.cc:1280
+#: dialogs/kspread_dlg_layout.cc:1263
 msgid "Currency:"
 msgstr "Arian:"
 
-#: dialogs/kspread_dlg_layout.cc:1465
+#: dialogs/kspread_dlg_layout.cc:1428
 msgid "Halves 1/2"
 msgstr "Haneri 1/2"
 
-#: dialogs/kspread_dlg_layout.cc:1466
+#: dialogs/kspread_dlg_layout.cc:1429
 msgid "Quarters 1/4"
 msgstr "Chwarteri 1/4"
 
-#: dialogs/kspread_dlg_layout.cc:1467
+#: dialogs/kspread_dlg_layout.cc:1430
 msgid "Eighths 1/8"
 msgstr "Wythfedau 1/8"
 
-#: dialogs/kspread_dlg_layout.cc:1468
+#: dialogs/kspread_dlg_layout.cc:1431
 msgid "Sixteenths 1/16"
 msgstr "Unfedau ar bymtheg 1/16"
 
-#: dialogs/kspread_dlg_layout.cc:1469
+#: dialogs/kspread_dlg_layout.cc:1432
 msgid "Tenths 1/10"
 msgstr "Degfedau 1/10"
 
-#: dialogs/kspread_dlg_layout.cc:1470
+#: dialogs/kspread_dlg_layout.cc:1433
 msgid "Hundredths 1/100"
 msgstr "Canfedau 1/100"
 
-#: dialogs/kspread_dlg_layout.cc:1471
+#: dialogs/kspread_dlg_layout.cc:1434
 msgid "One digit 5/9"
 msgstr "Un digid 5/9"
 
-#: dialogs/kspread_dlg_layout.cc:1472
+#: dialogs/kspread_dlg_layout.cc:1435
 msgid "Two digits 15/22"
 msgstr "Dau ddigid 15/22"
 
-#: dialogs/kspread_dlg_layout.cc:1473
+#: dialogs/kspread_dlg_layout.cc:1436
 msgid "Three digits 153/652"
 msgstr "Tri digid 153/652"
 
-#: dialogs/kspread_dlg_layout.cc:1505 dialogs/kspread_dlg_layout.cc:1506
-#: dialogs/kspread_dlg_layout.cc:1636 dialogs/kspread_dlg_layout.cc:1637
+#: dialogs/kspread_dlg_layout.cc:1468 dialogs/kspread_dlg_layout.cc:1469
+#: dialogs/kspread_dlg_layout.cc:1540 dialogs/kspread_dlg_layout.cc:1541
 msgid "System: "
 msgstr "Cysawd:"
 
-#: dialogs/kspread_dlg_layout.cc:1513
+#: dialogs/kspread_dlg_layout.cc:1477
 msgid " (=[mm]::ss)"
 msgstr " (=[mm]::ee)"
 
-#: dialogs/kspread_dlg_layout.cc:1514
+#: dialogs/kspread_dlg_layout.cc:1478
 msgid " (=[hh]::mm::ss)"
 msgstr " (=[aa]::mm::ee)"
 
-#: dialogs/kspread_dlg_layout.cc:1515
+#: dialogs/kspread_dlg_layout.cc:1479
 msgid " (=[hh]::mm)"
 msgstr " (=[aa]::mm)"
 
-#: dialogs/kspread_dlg_layout.cc:2460
+#: dialogs/kspread_dlg_layout.cc:2049
 msgid "Protection"
 msgstr "Gwarchodaeth"
 
-#: dialogs/kspread_dlg_layout.cc:2465
+#: dialogs/kspread_dlg_layout.cc:2054
 msgid "&Protected"
 msgstr "&Gwarchodir"
 
-#: dialogs/kspread_dlg_layout.cc:2469
+#: dialogs/kspread_dlg_layout.cc:2058
 msgid "&Hide formula"
 msgstr "C&uddio fformiwla"
 
-#: dialogs/kspread_dlg_layout.cc:2472
+#: dialogs/kspread_dlg_layout.cc:2061
 msgid "Hide &all"
 msgstr "Cuddio pop&eth"
 
-#: dialogs/kspread_dlg_layout.cc:2476
+#: dialogs/kspread_dlg_layout.cc:2065
 msgid "Printing"
 msgstr "Argraffu"
 
-#: dialogs/kspread_dlg_layout.cc:2481
+#: dialogs/kspread_dlg_layout.cc:2070
 #, fuzzy
 msgid "&Do not print text"
 msgstr "Peidiwch ag &argraffu testun"
 
-#: dialogs/kspread_dlg_layout.cc:2636
+#: dialogs/kspread_dlg_layout.cc:2225
 msgid "Functionality"
 msgstr "Swyddogaeth"
 
-#: dialogs/kspread_dlg_layout.cc:2642 dialogs/kspread_dlg_layout.cc:2837
-#: dialogs/kspread_dlg_layout.cc:3092 dialogs/kspread_dlg_layout.cc:3131
+#: dialogs/kspread_dlg_layout.cc:2231 dialogs/kspread_dlg_layout.cc:2426
+#: dialogs/kspread_dlg_layout.cc:2681 dialogs/kspread_dlg_layout.cc:2720
 msgid "Normal"
 msgstr "Arferol"
 
-#: dialogs/kspread_dlg_layout.cc:2643
+#: dialogs/kspread_dlg_layout.cc:2232
 msgid "Button"
 msgstr "Botwm"
 
-#: dialogs/kspread_dlg_layout.cc:2644
+#: dialogs/kspread_dlg_layout.cc:2233
 msgid "Select"
 msgstr "Dewis"
 
-#: dialogs/kspread_dlg_layout.cc:2650
+#: dialogs/kspread_dlg_layout.cc:2239
 msgid "Action"
 msgstr "Gweithred"
 
-#: dialogs/kspread_dlg_layout.cc:2670
+#: dialogs/kspread_dlg_layout.cc:2259
 #, fuzzy
 msgid "Do not print text"
 msgstr "Peidiwch ag argraffu testun"
 
-#: dialogs/kspread_dlg_layout.cc:2742
+#: dialogs/kspread_dlg_layout.cc:2331
 msgid "Requested Font"
 msgstr "Wynebfath a Ddymunwyd"
 
-#: dialogs/kspread_dlg_layout.cc:2748 dialogs/kspread_dlg_layout.cc:2875
+#: dialogs/kspread_dlg_layout.cc:2337 dialogs/kspread_dlg_layout.cc:2464
 msgid "Family:"
 msgstr "Teulu:"
 
-#: dialogs/kspread_dlg_layout.cc:2752 dialogs/kspread_dlg_layout.cc:2882
+#: dialogs/kspread_dlg_layout.cc:2341 dialogs/kspread_dlg_layout.cc:2471
 msgid "Size:"
 msgstr "Maint:"
 
-#: dialogs/kspread_dlg_layout.cc:2756 dialogs/kspread_dlg_layout.cc:2889
+#: dialogs/kspread_dlg_layout.cc:2345 dialogs/kspread_dlg_layout.cc:2478
 msgid "Weight:"
 msgstr "Pwys:"
 
-#: dialogs/kspread_dlg_layout.cc:2760
+#: dialogs/kspread_dlg_layout.cc:2349
 msgid "Text color:"
 msgstr "Lliw testun:"
 
-#: dialogs/kspread_dlg_layout.cc:2772 dialogs/kspread_dlg_layout.cc:2896
+#: dialogs/kspread_dlg_layout.cc:2361 dialogs/kspread_dlg_layout.cc:2485
 msgid "Style:"
 msgstr "Arddull:"
 
-#: dialogs/kspread_dlg_layout.cc:2854
+#: dialogs/kspread_dlg_layout.cc:2443
 msgid "Strike out"
 msgstr "Trwylinellu"
 
-#: dialogs/kspread_dlg_layout.cc:2870
+#: dialogs/kspread_dlg_layout.cc:2459
 msgid "Actual Font"
 msgstr "Gwir Wynebfath"
 
-#: dialogs/kspread_dlg_layout.cc:2909
+#: dialogs/kspread_dlg_layout.cc:2498
 msgid "Dolor Ipse"
 msgstr "Dolor Ipse"
 
-#: dialogs/kspread_dlg_layout.cc:3216
+#: dialogs/kspread_dlg_layout.cc:2805
 msgid "Standard"
 msgstr "Safonol"
 
-#: dialogs/kspread_dlg_layout.cc:3245
+#: dialogs/kspread_dlg_layout.cc:2834
 msgid "Middle"
 msgstr "Canol"
 
-#: dialogs/kspread_dlg_layout.cc:3258
+#: dialogs/kspread_dlg_layout.cc:2847
 msgid "Text Option"
 msgstr "Dewisiad Testun"
 
-#: dialogs/kspread_dlg_layout.cc:3263
+#: dialogs/kspread_dlg_layout.cc:2852
 msgid "Wrap text"
 msgstr "Lapio Testun"
 
-#: dialogs/kspread_dlg_layout.cc:3268
+#: dialogs/kspread_dlg_layout.cc:2857
 msgid "Vertical text"
 msgstr "Testun fertigol"
 
-#: dialogs/kspread_dlg_layout.cc:3274
+#: dialogs/kspread_dlg_layout.cc:2863
 msgid "Rotation"
 msgstr "Cylchdroi"
 
-#: dialogs/kspread_dlg_layout.cc:3298
+#: dialogs/kspread_dlg_layout.cc:2887
 msgid "Merge cells"
 msgstr "Uno celloedd"
 
-#: dialogs/kspread_dlg_layout.cc:3304
+#: dialogs/kspread_dlg_layout.cc:2893
 msgid "Indent"
 msgstr "Mewnoli"
 
-#: dialogs/kspread_dlg_layout.cc:3317
+#: dialogs/kspread_dlg_layout.cc:2906
 msgid "Size of Cell"
 msgstr "Maint y Gell"
 
-#: dialogs/kspread_dlg_layout.cc:3323 dialogs/kspread_dlg_resize2.cc:130
+#: dialogs/kspread_dlg_layout.cc:2912 dialogs/kspread_dlg_resize2.cc:130
 msgid "Width:"
 msgstr "Lled:"
 
-#: dialogs/kspread_dlg_layout.cc:3336
+#: dialogs/kspread_dlg_layout.cc:2925
 msgid "Default width (%1 %2)"
 msgstr "Lled rhagosodol (%1 %2)"
 
-#: dialogs/kspread_dlg_layout.cc:3343 dialogs/kspread_dlg_resize2.cc:60
+#: dialogs/kspread_dlg_layout.cc:2932 dialogs/kspread_dlg_resize2.cc:60
 msgid "Height:"
 msgstr "Uchder:"
 
-#: dialogs/kspread_dlg_layout.cc:3357
+#: dialogs/kspread_dlg_layout.cc:2946
 msgid "Default height (%1 %2)"
 msgstr "Uchder rhagosodol (%1 %2)"
 
-#: dialogs/kspread_dlg_layout.cc:3889
+#: dialogs/kspread_dlg_layout.cc:3478
 msgid "Preselect"
 msgstr "Rhagddewis"
 
-#: dialogs/kspread_dlg_layout.cc:3928 dialogs/kspread_dlg_layout.cc:5015
+#: dialogs/kspread_dlg_layout.cc:3517 dialogs/kspread_dlg_layout.cc:4604
 msgid "Pattern"
 msgstr "Patrwm"
 
-#: dialogs/kspread_dlg_layout.cc:3958 dialogs/kspread_dlg_layout.cc:5088
+#: dialogs/kspread_dlg_layout.cc:3547 dialogs/kspread_dlg_layout.cc:4677
 msgid "Color:"
 msgstr "Lliw:"
 
-#: dialogs/kspread_dlg_layout.cc:3963
+#: dialogs/kspread_dlg_layout.cc:3552
 msgid "Customize"
 msgstr "Addasu"
 
-#: dialogs/kspread_dlg_layout.cc:5097
+#: dialogs/kspread_dlg_layout.cc:4686
 msgid "Background color:"
 msgstr "Lliw cefndir:"
 
-#: dialogs/kspread_dlg_layout.cc:5113
+#: dialogs/kspread_dlg_layout.cc:4702
 msgid "No Color"
 msgstr "Dim Lliw"
 
@@ -16168,211 +16153,211 @@ msgstr ""
 msgid "Paste Inserting Cells"
 msgstr "Gludo gan Fewnosod Celloedd"
 
-#: dialogs/kspread_dlg_preference.cc:51
+#: dialogs/kspread_dlg_preference.cc:52
 msgid "Configure KSpread"
 msgstr "Ffurfweddu KSpread"
 
-#: dialogs/kspread_dlg_preference.cc:60
+#: dialogs/kspread_dlg_preference.cc:61
 msgid "Locale Parameters"
 msgstr "Paramedrau Bro"
 
-#: dialogs/kspread_dlg_preference.cc:63
+#: dialogs/kspread_dlg_preference.cc:64
 msgid "Interface"
 msgstr "Rhyngwyneb"
 
-#: dialogs/kspread_dlg_preference.cc:66 dialogs/kspread_dlg_preference.cc:384
+#: dialogs/kspread_dlg_preference.cc:67 dialogs/kspread_dlg_preference.cc:385
 msgid "Misc"
 msgstr "Amrywiol"
 
-#: dialogs/kspread_dlg_preference.cc:69 dialogs/kspread_dlg_preference.cc:675
+#: dialogs/kspread_dlg_preference.cc:70 dialogs/kspread_dlg_preference.cc:676
 msgid "Color"
 msgstr "Lliw"
 
-#: dialogs/kspread_dlg_preference.cc:72
+#: dialogs/kspread_dlg_preference.cc:73
 msgid "Page Layout"
 msgstr "Haenlun y Dudalen"
 
-#: dialogs/kspread_dlg_preference.cc:75
+#: dialogs/kspread_dlg_preference.cc:76
 msgid "Spelling"
 msgstr "Sillafu"
 
-#: dialogs/kspread_dlg_preference.cc:75
+#: dialogs/kspread_dlg_preference.cc:76
 msgid "Spell Checker Behavior"
 msgstr "Ymddygiad y Gwirydd Sillafu"
 
-#: dialogs/kspread_dlg_preference.cc:140 dialogs/kspread_dlg_series.cc:83
+#: dialogs/kspread_dlg_preference.cc:141 dialogs/kspread_dlg_series.cc:83
 msgid "Parameters"
 msgstr "Paramedrau"
 
-#: dialogs/kspread_dlg_preference.cc:145 dialogs/kspread_dlg_preference.cc:181
+#: dialogs/kspread_dlg_preference.cc:146 dialogs/kspread_dlg_preference.cc:182
 #, c-format
 msgid "Language: %1"
 msgstr "Iaith: %1"
 
-#: dialogs/kspread_dlg_preference.cc:147 dialogs/kspread_dlg_preference.cc:180
+#: dialogs/kspread_dlg_preference.cc:148 dialogs/kspread_dlg_preference.cc:181
 #, c-format
 msgid "Number: %1"
 msgstr "Rhif: %1"
 
-#: dialogs/kspread_dlg_preference.cc:149 dialogs/kspread_dlg_preference.cc:179
+#: dialogs/kspread_dlg_preference.cc:150 dialogs/kspread_dlg_preference.cc:180
 #, c-format
 msgid "Date: %1"
 msgstr "Dyddiad: %1"
 
-#: dialogs/kspread_dlg_preference.cc:151 dialogs/kspread_dlg_preference.cc:178
+#: dialogs/kspread_dlg_preference.cc:152 dialogs/kspread_dlg_preference.cc:179
 #, c-format
 msgid "Short date: %1"
 msgstr "Dyddiad byr: %1"
 
-#: dialogs/kspread_dlg_preference.cc:153 dialogs/kspread_dlg_preference.cc:177
+#: dialogs/kspread_dlg_preference.cc:154 dialogs/kspread_dlg_preference.cc:178
 #, c-format
 msgid "Time: %1"
 msgstr "Amser: %1"
 
-#: dialogs/kspread_dlg_preference.cc:155 dialogs/kspread_dlg_preference.cc:176
+#: dialogs/kspread_dlg_preference.cc:156 dialogs/kspread_dlg_preference.cc:177
 #, c-format
 msgid "Money: %1"
 msgstr "Arian: %1"
 
-#: dialogs/kspread_dlg_preference.cc:157
+#: dialogs/kspread_dlg_preference.cc:158
 msgid "&Update to Locale System"
 msgstr "Diweddaru i'r Fro ar y Cysa&wd"
 
-#: dialogs/kspread_dlg_preference.cc:223
+#: dialogs/kspread_dlg_preference.cc:224
 msgid "Number of pages open at the &beginning:"
 msgstr "Nifer o dudalennau ar agor wrth dde&chrau:"
 
-#: dialogs/kspread_dlg_preference.cc:227
+#: dialogs/kspread_dlg_preference.cc:228
 msgid "&Number of recent files:"
 msgstr "&Nifer ffeiliau diweddar:"
 
-#: dialogs/kspread_dlg_preference.cc:231
+#: dialogs/kspread_dlg_preference.cc:232
 msgid "Au&tosave (min):"
 msgstr "Hunanga&dw (mun):"
 
-#: dialogs/kspread_dlg_preference.cc:232
+#: dialogs/kspread_dlg_preference.cc:233
 msgid "No autosave"
 msgstr "Dim hunan-gadw"
 
-#: dialogs/kspread_dlg_preference.cc:235
+#: dialogs/kspread_dlg_preference.cc:236
 msgid "Create backup file"
 msgstr "Creu ffeil wrth gefn"
 
-#: dialogs/kspread_dlg_preference.cc:238
+#: dialogs/kspread_dlg_preference.cc:239
 msgid "Show &vertical scrollbar"
 msgstr "Dangos bar sgrolio &fertigol"
 
-#: dialogs/kspread_dlg_preference.cc:240
+#: dialogs/kspread_dlg_preference.cc:241
 msgid "Show &horizontal scrollbar"
 msgstr "Dangos bar sgrolio &llorweddol"
 
-#: dialogs/kspread_dlg_preference.cc:244
+#: dialogs/kspread_dlg_preference.cc:245
 msgid "Show c&olumn header"
 msgstr "Dangos pennawd &colofn"
 
-#: dialogs/kspread_dlg_preference.cc:246
+#: dialogs/kspread_dlg_preference.cc:247
 msgid "Show &row header"
 msgstr "Dangos pennawd &rhes"
 
-#: dialogs/kspread_dlg_preference.cc:249
+#: dialogs/kspread_dlg_preference.cc:250
 msgid "Show ta&bs"
 msgstr "Dangos ta&blyddion"
 
-#: dialogs/kspread_dlg_preference.cc:252
+#: dialogs/kspread_dlg_preference.cc:253
 msgid "Sho&w formula toolbar"
 msgstr "Dangos bar offer &fformiwlau"
 
-#: dialogs/kspread_dlg_preference.cc:255
+#: dialogs/kspread_dlg_preference.cc:256
 msgid "Show stat&usbar"
 msgstr "Dangos b&ar cyflwr"
 
-#: dialogs/kspread_dlg_preference.cc:398
+#: dialogs/kspread_dlg_preference.cc:399
 msgid "&Completion mode:"
 msgstr "Modd &cwblhau:"
 
-#: dialogs/kspread_dlg_preference.cc:405
+#: dialogs/kspread_dlg_preference.cc:406
 msgid "Popup"
 msgstr "Neidiol"
 
-#: dialogs/kspread_dlg_preference.cc:407
+#: dialogs/kspread_dlg_preference.cc:408
 msgid "Semi-Automatic"
 msgstr "Hanner-Awtomatig"
 
-#: dialogs/kspread_dlg_preference.cc:420
+#: dialogs/kspread_dlg_preference.cc:421
 msgid "&Value of indent:"
 msgstr "Gwerth &mewnoliad:"
 
-#: dialogs/kspread_dlg_preference.cc:422
+#: dialogs/kspread_dlg_preference.cc:423
 msgid "&Press enter to move selection to:"
 msgstr "G&wasgwch Dychwelyd i symud y detholiad i'r:"
 
-#: dialogs/kspread_dlg_preference.cc:426
+#: dialogs/kspread_dlg_preference.cc:427
 msgid ""
 "_: towards to\n"
 "Bottom"
 msgstr "Gwaelod"
 
-#: dialogs/kspread_dlg_preference.cc:427
+#: dialogs/kspread_dlg_preference.cc:428
 msgid ""
 "_: towards to\n"
 "Top"
 msgstr "Pen"
 
-#: dialogs/kspread_dlg_preference.cc:428
+#: dialogs/kspread_dlg_preference.cc:429
 msgid ""
 "_: towards to\n"
 "Right"
 msgstr "Dde"
 
-#: dialogs/kspread_dlg_preference.cc:429
+#: dialogs/kspread_dlg_preference.cc:430
 msgid ""
 "_: towards to\n"
 "Left"
 msgstr "Chwith"
 
-#: dialogs/kspread_dlg_preference.cc:430
+#: dialogs/kspread_dlg_preference.cc:431
 msgid ""
 "_: towards to\n"
 "Bottom, First Cell"
 msgstr "Gwaelod, Cell Gyntaf"
 
-#: dialogs/kspread_dlg_preference.cc:433
+#: dialogs/kspread_dlg_preference.cc:434
 msgid "&Show error message"
 msgstr "Dangos n&eges wall"
 
-#: dialogs/kspread_dlg_preference.cc:436
+#: dialogs/kspread_dlg_preference.cc:437
 msgid "&Method of calc:"
 msgstr "&Dull cyfrifo:"
 
-#: dialogs/kspread_dlg_preference.cc:449
+#: dialogs/kspread_dlg_preference.cc:450
 msgid "Show comment &indicator"
 msgstr "Dangos dangosydd &sylwad"
 
-#: dialogs/kspread_dlg_preference.cc:677
+#: dialogs/kspread_dlg_preference.cc:678
 msgid "&Grid color:"
 msgstr "Lliw'r &grid:"
 
-#: dialogs/kspread_dlg_preference.cc:692
+#: dialogs/kspread_dlg_preference.cc:693
 msgid "&Page borders:"
 msgstr "Ffiniau &tudalen:"
 
-#: dialogs/kspread_dlg_preference.cc:744
+#: dialogs/kspread_dlg_preference.cc:745
 msgid "Default page &size:"
 msgstr "&Maint rhagosodol y dudalen:"
 
-#: dialogs/kspread_dlg_preference.cc:754
+#: dialogs/kspread_dlg_preference.cc:755
 msgid "Default page &orientation:"
 msgstr "Cy&feiriad rhagosodol y dudalen:"
 
-#: dialogs/kspread_dlg_preference.cc:767
+#: dialogs/kspread_dlg_preference.cc:768
 msgid "Default page &units:"
 msgstr "&Unedau rhagosodol y dudalen:"
 
-#: dialogs/kspread_dlg_preference.cc:881
+#: dialogs/kspread_dlg_preference.cc:882
 msgid "Do not check upper word"
 msgstr "Peidiwch â gwirio'r gair uwch."
 
-#: dialogs/kspread_dlg_preference.cc:882
+#: dialogs/kspread_dlg_preference.cc:883
 msgid "Do not check title case"
 msgstr "Peidiwch â gwirio prif/is-lythrennau yn y tetil"
 
@@ -16869,6 +16854,18 @@ msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
 msgstr "kyfieithu@dotmon.com"
+
+#~ msgid "The quick brown fox jumps over the lazy dog"
+#~ msgstr "Mae'r gwr o Fôn wedi cyrraedd heddiw."
+
+#~ msgid "false"
+#~ msgstr "ffug"
+
+#~ msgid "pm"
+#~ msgstr "yp"
+
+#~ msgid "am"
+#~ msgstr "yb"
 
 #, fuzzy
 #~ msgid "Internal Tests"

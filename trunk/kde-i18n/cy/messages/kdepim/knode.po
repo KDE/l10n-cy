@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: knode\n"
-"POT-Creation-Date: 2004-10-02 01:31+0200\n"
+"POT-Creation-Date: 2004-12-20 01:36+0100\n"
 "PO-Revision-Date: 2004-02-26 17:15+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -50,6 +50,30 @@ msgstr "Darllenydd newyddion ar gyfer KDE"
 #, fuzzy
 msgid "Copyright (c) 1999-2004 the KNode authors"
 msgstr "Hawlfraint (h) 1999-2002 yr Awduron KNode"
+
+#: headerview.cpp:52 knfilterconfigwidget.cpp:34
+msgid "Subject"
+msgstr "Pwnc"
+
+#: headerview.cpp:53 knarticlemanager.cpp:401 knfilterconfigwidget.cpp:36
+msgid "From"
+msgstr "Oddi Wrth"
+
+#: headerview.cpp:54 headerview.cpp:97 knfilterconfigwidget.cpp:57
+msgid "Score"
+msgstr "Sgôr"
+
+#: headerview.cpp:55 headerview.cpp:106 knfilterconfigwidget.cpp:61
+msgid "Lines"
+msgstr "Llinellau"
+
+#: headerview.cpp:56 headerview.cpp:208
+msgid "Date"
+msgstr "Dyddiad"
+
+#: headerview.cpp:206
+msgid "Date (thread changed)"
+msgstr "Dyddiad (newidwyd y trywydd)"
 
 #: knaccountmanager.cpp:140
 #, fuzzy
@@ -99,41 +123,41 @@ msgstr ""
 msgid "The author requested a mail copy of your reply. (Mail-Copies-To header)"
 msgstr "Mae'r awdur wedi gofyn am gopi ebost o'ch ateb. (pennawd Copiau-Ebost-I)"
 
-#: knarticlefactory.cpp:282
+#: knarticlefactory.cpp:283
 msgid "This article contains attachments. Do you want them to be forwarded as well?"
 msgstr ""
 "Mae'r erthygl hon yn cynnwys atodiadau. Ydych chi eisiau iddynt gael eu "
 "anfon ymlaen hefyd?"
 
-#: knarticlefactory.cpp:309
+#: knarticlefactory.cpp:310
 msgid "Forwarded message (begin)"
 msgstr "Neges a anfonwyd ymlaen (dechrau)"
 
-#: knarticlefactory.cpp:311
+#: knarticlefactory.cpp:312
 msgid " Subject"
 msgstr "Pwnc"
 
-#: knarticlefactory.cpp:312
+#: knarticlefactory.cpp:313
 msgid " From"
 msgstr "Oddi Wrth"
 
-#: knarticlefactory.cpp:313
+#: knarticlefactory.cpp:314
 msgid " Date"
 msgstr "Dyddiad"
 
-#: knarticlefactory.cpp:314
+#: knarticlefactory.cpp:315
 msgid " Newsgroup"
 msgstr "Grŵp Newyddion"
 
-#: knarticlefactory.cpp:324
+#: knarticlefactory.cpp:325
 msgid "Forwarded message (end)"
 msgstr "Neges a anfonwyd ymlaen (diwedd)"
 
-#: knarticlefactory.cpp:363
+#: knarticlefactory.cpp:364
 msgid "Do you really want to cancel this article?"
 msgstr "Ydych chi'n siwr eich bod chi eisau diddymu'r erthygl yma?"
 
-#: knarticlefactory.cpp:367
+#: knarticlefactory.cpp:368
 msgid ""
 "Do you want to send the cancel\n"
 "message now or later?"
@@ -141,46 +165,52 @@ msgstr ""
 "Ydych chi eisiau anfon y neges\n"
 "diddymu rwan ta hwyrach ymlaen?"
 
-#: knarticlefactory.cpp:367
+#: knarticlefactory.cpp:368
 msgid "Question"
 msgstr "Cwestiwn"
 
-#: knarticlefactory.cpp:367
+#: knarticlefactory.cpp:368
 msgid "&Now"
 msgstr "Rwa&n"
 
-#: knarticlefactory.cpp:367
+#: knarticlefactory.cpp:368
 msgid "&Later"
 msgstr "Nes ym&laen"
 
-#: knarticlefactory.cpp:382 knarticlefactory.cpp:459 kncomposer.cpp:1484
+#: knarticlefactory.cpp:383 knarticlefactory.cpp:460 kncomposer.cpp:1486
 #, fuzzy
 msgid "You have no valid news accounts configured."
 msgstr "Does gennych ddim cyfrifon newyddion dilys wedi'u gosod i fyny!"
 
-#: knarticlefactory.cpp:443
+#: knarticlefactory.cpp:444
 msgid "Do you really want to supersede this article?"
 msgstr "Ydych yn wir eisiau disodli'r erthygl hon?"
 
-#: knarticlefactory.cpp:574
+#: knarticlefactory.cpp:575
 msgid "This article cannot be edited."
 msgstr "Nid yw'n bosibl i olygu yr erthygl hon."
 
-#: knarticlefactory.cpp:621
+#: knarticlefactory.cpp:602 knarticlefactory.cpp:901
+msgid ""
+"<qt>The signature generator program produced the following "
+"output:<br><br>%1</qt>"
+msgstr ""
+
+#: knarticlefactory.cpp:628
 msgid "Article has already been sent."
 msgstr "Mae'r erthygl yma wedi ei gyrru yn barod."
 
-#: knarticlefactory.cpp:638
+#: knarticlefactory.cpp:645
 #, fuzzy
 msgid "Unable to load article."
 msgstr "Methu llwytho'r erthygl!"
 
-#: knarticlefactory.cpp:663
+#: knarticlefactory.cpp:670
 #, fuzzy
 msgid "Unable to load the outbox-folder."
 msgstr "Methu llwytho cyfeiriadur y blwch anfon!"
 
-#: knarticlefactory.cpp:737
+#: knarticlefactory.cpp:744
 msgid ""
 "You have aborted the posting of articles. The unsent articles are stored in "
 "the \"Outbox\" folder."
@@ -188,7 +218,7 @@ msgstr ""
 "Yr ydych wedi erthylu hysbysu erthyglau.  Mae'r erthyglau sydd heb eu anfon "
 "yn cael eu cadw yn y blygell \"Blwch Anfon\"."
 
-#: knarticlefactory.cpp:786
+#: knarticlefactory.cpp:793
 #, fuzzy
 msgid ""
 "Please set a hostname for the generation\n"
@@ -197,39 +227,39 @@ msgstr ""
 "Gosodwch enw gwesteiwr ar gyfer creu\n"
 " dynodiad y neges, neu analluogwch fo."
 
-#: knarticlefactory.cpp:829
+#: knarticlefactory.cpp:836
 msgid ""
 "Please enter a valid email address at the identity tab of the account "
 "configuration dialog."
 msgstr ""
 
-#: knarticlefactory.cpp:832
+#: knarticlefactory.cpp:839
 msgid ""
 "Please enter a valid email address at the identity section of the "
 "configuration dialog."
 msgstr ""
 
-#: knarticlefactory.cpp:900
+#: knarticlefactory.cpp:921
 #, fuzzy
 msgid "Emails cannot be canceled or superseded."
 msgstr "Ni ellir diddymu na disodli negeseuon ebost!"
 
-#: knarticlefactory.cpp:906
+#: knarticlefactory.cpp:927
 #, fuzzy
 msgid "Cancel messages cannot be canceled or superseded."
 msgstr "Ni ellir diddymu na disodli negeseuon diddymu!"
 
-#: knarticlefactory.cpp:911
+#: knarticlefactory.cpp:932
 #, fuzzy
 msgid "Only sent articles can be canceled or superseded."
 msgstr "Dim ond erthyglau sydd wedi'u danfon y gellir eu diddymu neu eu disodli!"
 
-#: knarticlefactory.cpp:916
+#: knarticlefactory.cpp:937
 #, fuzzy
 msgid "This article has already been canceled or superseded."
 msgstr "Diddymwyd neu ddisodlwyd yr erthygl hon eisoes!"
 
-#: knarticlefactory.cpp:923
+#: knarticlefactory.cpp:944
 #, fuzzy
 msgid ""
 "This article cannot be canceled or superseded,\n"
@@ -242,7 +272,7 @@ msgstr ""
 "  Ond cewch edrych am eich erthygl yn y grŵp newyddion\n"
 " a'i diddymu (neu'i dileu) o fan'no."
 
-#: knarticlefactory.cpp:957
+#: knarticlefactory.cpp:978
 msgid ""
 "This article does not appear to be from you.\n"
 "You can only cancel or supersede your own articles."
@@ -250,7 +280,7 @@ msgstr ""
 "Ymddengys nid oddi wrthych chi y mae'r erthygl hon.\n"
 "Dim ond eich erthyglau'ch hun y gallwch eu diddymu neu'u disodli."
 
-#: knarticlefactory.cpp:962
+#: knarticlefactory.cpp:983
 msgid ""
 "You have to download the article body\n"
 "before you can cancel or supersede the article."
@@ -258,19 +288,19 @@ msgstr ""
 "Rhaid i chi lawrlwytho corff yr erthygl\n"
 " cyn y cewch diddymu neu ddileu'r erthygl."
 
-#: knarticlefactory.cpp:1050
+#: knarticlefactory.cpp:1071
 msgid "Errors While Sending"
 msgstr "Gwallau tra'n danfon"
 
-#: knarticlefactory.cpp:1056
+#: knarticlefactory.cpp:1077
 msgid "Errors occurred while sending these articles:"
 msgstr "Bu gwallau wrth ddanfon yr erthyglau hyn:"
 
-#: knarticlefactory.cpp:1057
+#: knarticlefactory.cpp:1078
 msgid "The unsent articles are stored in the \"Outbox\" folder."
 msgstr "Cedwir yr erthyglau nis danfonwyd yn y blygell \"Blwch Allan\"."
 
-#: knarticlefactory.cpp:1086
+#: knarticlefactory.cpp:1107
 msgid "<b>Error message:</b><br>"
 msgstr "<b>Neges gwall:</b><br>"
 
@@ -322,157 +352,153 @@ msgid ""
 "threads with own articles"
 msgstr "edau gyda fy erthyglau fy hun"
 
-#: knarticlemanager.cpp:82
+#: knarticlemanager.cpp:83
 msgid "Save Attachment"
 msgstr "Cadw'r Atodiad"
 
-#: knarticlemanager.cpp:105
+#: knarticlemanager.cpp:106
 msgid "Save Article"
 msgstr "Cadw'r Erthygl"
 
-#: knarticlemanager.cpp:187
+#: knarticlemanager.cpp:188
 msgid " Creating list..."
 msgstr "Yn creu rhestr..."
 
-#: knarticlemanager.cpp:400 knfilterconfigwidget.cpp:36 knmainwidget.cpp:186
-msgid "From"
-msgstr "Oddi Wrth"
-
-#: knarticlemanager.cpp:409
+#: knarticlemanager.cpp:410
 msgid "Newsgroups/To"
 msgstr "Grwpiau Newyddion/At"
 
-#: knarticlemanager.cpp:571 kngroup.cpp:421
+#: knarticlemanager.cpp:572 kngroup.cpp:422
 msgid "no subject"
 msgstr "dim pwnc"
 
-#: knarticlemanager.cpp:576
+#: knarticlemanager.cpp:577
 msgid "Do you really want to delete these articles?"
 msgstr "Ydych yn wir eisiau dileu'r erthyglau hyn?"
 
-#: knarticlemanager.cpp:577
+#: knarticlemanager.cpp:578
 #, fuzzy
 msgid "Delete Articles"
 msgstr "&Dileu Erthygl"
 
-#: knarticlemanager.cpp:994 kngroupbrowser.cpp:415 kngroupbrowser.cpp:428
-#: knmainwidget.cpp:377
+#: knarticlemanager.cpp:995 kngroupbrowser.cpp:415 kngroupbrowser.cpp:428
+#: knmainwidget.cpp:363
 msgid " (moderated)"
 msgstr "(cymedrolwyd)"
 
-#: knarticlemanager.cpp:996
+#: knarticlemanager.cpp:997
 msgid " %1: %2 new , %3 displayed"
 msgstr "%1: %2 newydd, %3 arddangoswyd"
 
-#: knarticlemanager.cpp:1000
+#: knarticlemanager.cpp:1001
 #, c-format
 msgid " Filter: %1"
 msgstr "Hidlen: %1"
 
-#: knarticlemanager.cpp:1009
+#: knarticlemanager.cpp:1010
 msgid " %1: %2 displayed"
 msgstr "%1: %2 arddangoswyd"
 
-#: knarticlewidget.cpp:87
+#: knarticlewidget.cpp:92
 msgid "Article Source"
 msgstr "Tarddiad yr Erthygl"
 
-#: knarticlewidget.cpp:157
+#: knarticlewidget.cpp:162
 msgid "&Open Link"
 msgstr "Dolen Ag&ored"
 
-#: knarticlewidget.cpp:158
+#: knarticlewidget.cpp:163
 msgid "&Copy Link Address"
 msgstr ""
 
-#: knarticlewidget.cpp:159
+#: knarticlewidget.cpp:164
 msgid "Bookmark This Link"
 msgstr "Tudnodi'r Cyswllt Yma"
 
-#: knarticlewidget.cpp:162
+#: knarticlewidget.cpp:167
 msgid "&Add to Address Book"
 msgstr "&Ychwanegu i'r Llyfr Cyfeiriadau"
 
-#: knarticlewidget.cpp:163
+#: knarticlewidget.cpp:168
 msgid "&Open in Address Book"
 msgstr "&Agor yn y Lyfr Cyfeiriadau"
 
-#: knarticlewidget.cpp:164
+#: knarticlewidget.cpp:169
 msgid "&Copy to Clipboard"
 msgstr "&Copïo i'r Gludfwrdd"
 
-#: knarticlewidget.cpp:167
+#: knarticlewidget.cpp:172
 msgid "&Open Attachment"
 msgstr "&Agor yr Atodiad"
 
-#: knarticlewidget.cpp:168
+#: knarticlewidget.cpp:173
 msgid "&Save Attachment..."
 msgstr "Cadw'r A&todiad..."
 
-#: knarticlewidget.cpp:172
+#: knarticlewidget.cpp:177
 msgid "&Save..."
 msgstr "&Cadw..."
 
-#: knarticlewidget.cpp:178
+#: knarticlewidget.cpp:183
 msgid "&Followup to Newsgroup..."
 msgstr "&Dilyn i fyny i'r Grŵp Newyddion..."
 
-#: knarticlewidget.cpp:180
+#: knarticlewidget.cpp:185
 msgid "Reply by E&mail..."
 msgstr "Y&mateb trwy Ebost..."
 
-#: knarticlewidget.cpp:182
+#: knarticlewidget.cpp:187
 msgid "Forw&ard by Email..."
 msgstr "D&anfon ymlaen trwy Ebost..."
 
-#: knarticlewidget.cpp:184
+#: knarticlewidget.cpp:189
 msgid ""
 "_: article\n"
 "&Cancel Article"
 msgstr "&Diddymu'r Erthygl"
 
-#: knarticlewidget.cpp:186
+#: knarticlewidget.cpp:191
 msgid "S&upersede Article"
 msgstr "Di&sodli'r Erthygl"
 
-#: knarticlewidget.cpp:188
+#: knarticlewidget.cpp:193
 msgid "&Verify PGP Signature"
 msgstr "Di&lysu Llofnod PGP"
 
-#: knarticlewidget.cpp:190
+#: knarticlewidget.cpp:195
 msgid "Show &All Headers"
 msgstr "D&angos Pob Pennawd"
 
-#: knarticlewidget.cpp:192
+#: knarticlewidget.cpp:197
 #, fuzzy
 msgid "Hide &All Headers"
 msgstr "D&angos Pob Pennawd"
 
-#: knarticlewidget.cpp:194
+#: knarticlewidget.cpp:199
 msgid "&Unscramble (Rot 13)"
 msgstr "&Datgymysgu (Rot 13)"
 
-#: knarticlewidget.cpp:196
+#: knarticlewidget.cpp:201
 msgid "U&se Fixed Font"
 msgstr "Defn&yddio Ffont Sefydlog"
 
-#: knarticlewidget.cpp:199
+#: knarticlewidget.cpp:204
 msgid "&View Source"
 msgstr "Gweld y &Tarddiad"
 
-#: knarticlewidget.cpp:202
+#: knarticlewidget.cpp:207
 msgid "Chars&et"
 msgstr "S&et Nodau"
 
-#: knarticlewidget.cpp:205 knarticlewidget.cpp:1812
+#: knarticlewidget.cpp:210 knarticlewidget.cpp:1849
 msgid "Automatic"
 msgstr "Ymysgogol"
 
-#: knarticlewidget.cpp:210
+#: knarticlewidget.cpp:215
 msgid "Charset"
 msgstr "Set Nodau"
 
-#: knarticlewidget.cpp:310
+#: knarticlewidget.cpp:320
 msgid ""
 "End of article reached.\n"
 "Continue from the beginning?"
@@ -480,11 +506,11 @@ msgstr ""
 "Wedi cyrraedd diwedd yr erthygl.\n"
 " Mynd ymlaen o'r cychwyn?"
 
-#: knarticlewidget.cpp:311 knarticlewidget.cpp:319 knarticlewidget.cpp:328
+#: knarticlewidget.cpp:321 knarticlewidget.cpp:329 knarticlewidget.cpp:338
 msgid "Find"
 msgstr "Canfod"
 
-#: knarticlewidget.cpp:318
+#: knarticlewidget.cpp:328
 msgid ""
 "Beginning of article reached.\n"
 "Continue from the end?"
@@ -492,105 +518,105 @@ msgstr ""
 "Wedi cyrraedd dechrau'r erthygl.\n"
 " Mynd ymlaen o'r diwedd?"
 
-#: knarticlewidget.cpp:327
+#: knarticlewidget.cpp:337
 msgid "Search string '%1' not found."
 msgstr "Llinyn chwilio '%1' heb ei ganfod."
 
-#: knarticlewidget.cpp:768
+#: knarticlewidget.cpp:778
 msgid "%1 not found"
 msgstr "%1 heb ei ganfod"
 
-#: knarticlewidget.cpp:855 knarticlewidget.cpp:865
+#: knarticlewidget.cpp:865 knarticlewidget.cpp:875
 #, fuzzy
 msgid "Internal error: Malformed identifier."
 msgstr "Gwall mewnol: Clustnod camffurfiedig!"
 
-#: knarticlewidget.cpp:926
+#: knarticlewidget.cpp:936
 #, fuzzy
 msgid "<bodyblock><b><font size=+1 color=red>An error occurred.</font></b><hr><br>"
 msgstr ""
 "<bodyblock><b><font size=+1 color=red>Mae gwall wedi "
 "digwydd!</font></b><hr><br>"
 
-#: knarticlewidget.cpp:987
+#: knarticlewidget.cpp:997
 #, fuzzy
 msgid "Unable to load the article."
 msgstr "Methu llwytho'r erthygl!"
 
-#: knarticlewidget.cpp:1028
+#: knarticlewidget.cpp:1038
 #, fuzzy
 msgid "<b><font size=+1 color=red>An error occurred.</font></b><hr><br>"
 msgstr "<b><font size=+1 color=red>Mae gwall wedi digwydd!</font></b><hr><br>"
 
-#: knarticlewidget.cpp:1052
+#: knarticlewidget.cpp:1062
 msgid "the article contains no data"
 msgstr "does dim data yn yr erthygl"
 
-#: knarticlewidget.cpp:1107
+#: knarticlewidget.cpp:1135
 msgid "%1%2:%3"
 msgstr "%1 %2:%3"
 
-#: knarticlewidget.cpp:1151
+#: knarticlewidget.cpp:1180
 msgid "References:"
 msgstr "Cyfeiriadau:"
 
-#: knarticlewidget.cpp:1160
+#: knarticlewidget.cpp:1189
 msgid "no references"
 msgstr "dim cyfeiriadau"
 
-#: knarticlewidget.cpp:1173
+#: knarticlewidget.cpp:1202
 #, fuzzy
 msgid "Unknown charset. Default charset is used instead."
 msgstr "Set nodau anhysbys!   Defnyddir y set rhagosod yn lle."
 
-#: knarticlewidget.cpp:1201
+#: knarticlewidget.cpp:1230
 #, fuzzy
 msgid "Cannot find a signature in this message."
 msgstr "Methu canfod llofnod yn y neges hon!"
 
-#: knarticlewidget.cpp:1209
+#: knarticlewidget.cpp:1238
 #, c-format
 msgid "Message was signed with unknown key 0x%1."
 msgstr "Llofnodwyd y neges gydag allwedd anhysbys 0x%1."
 
-#: knarticlewidget.cpp:1212
+#: knarticlewidget.cpp:1241
 msgid "The validity of the signature cannot be verified."
 msgstr "Ni ellir gwirio dilysrwydd y llofnod."
 
-#: knarticlewidget.cpp:1229
+#: knarticlewidget.cpp:1258
 msgid "Message was signed by %1 (Key ID: 0x%2)."
 msgstr "Llofnodwyd y neges gan %1 (Nod Allwedd: 0x%2)."
 
-#: knarticlewidget.cpp:1233
+#: knarticlewidget.cpp:1262
 #, c-format
 msgid "Message was signed by %1."
 msgstr "Llofnodwyd y neges gan %1."
 
-#: knarticlewidget.cpp:1241
+#: knarticlewidget.cpp:1270
 msgid "The signature is valid, but the key's validity is unknown."
 msgstr "Mae'r llofnod yn ddilys, ond mae dilysrwydd yr allwedd yn anhysbys."
 
-#: knarticlewidget.cpp:1245
+#: knarticlewidget.cpp:1274
 msgid "The signature is valid and the key is marginally trusted."
 msgstr "Mae'r llofnod yn ddilys ac mae ymddiriedaeth drwch blewyn yn yr allwedd."
 
-#: knarticlewidget.cpp:1249
+#: knarticlewidget.cpp:1278
 msgid "The signature is valid and the key is fully trusted."
 msgstr "Mae'r llofnod yn ddilys ac mae ymddiriedaeth lwyr yn yr allwedd. "
 
-#: knarticlewidget.cpp:1253
+#: knarticlewidget.cpp:1282
 msgid "The signature is valid and the key is ultimately trusted."
 msgstr "Mae'r llofnod yn ddilys ac mae ymddiriedaeth yn yr allwedd yn y pen draw."
 
-#: knarticlewidget.cpp:1257
+#: knarticlewidget.cpp:1286
 msgid "The signature is valid, but the key is untrusted."
 msgstr "Mae'r llofnod yn ddilys, ond nid oes ymddiriedaeth yn yr allwedd"
 
-#: knarticlewidget.cpp:1263
+#: knarticlewidget.cpp:1292
 msgid "Warning: The signature is bad."
 msgstr "Rhybudd: Mae'r llofnod yn fudr."
 
-#: knarticlewidget.cpp:1290
+#: knarticlewidget.cpp:1319
 msgid ""
 "<br><bodyblock><b>This article has the MIME type "
 "&quot;message/partial&quot;, which KNode cannot handle yet."
@@ -602,23 +628,23 @@ msgstr ""
 "<br>Yn y cyfamser, gallwch gadw'r erthygl fel ffeil testun a'u hail-gydosod "
 "â llaw.</b></bodyblock></qt>"
 
-#: knarticlewidget.cpp:1393
+#: knarticlewidget.cpp:1424
 msgid "name"
 msgstr "enw"
 
-#: knarticlewidget.cpp:1393
+#: knarticlewidget.cpp:1424
 msgid "mime-type"
 msgstr "math-mime"
 
-#: knarticlewidget.cpp:1393
+#: knarticlewidget.cpp:1424
 msgid "description"
 msgstr "disgrifiad"
 
-#: knarticlewidget.cpp:1398
+#: knarticlewidget.cpp:1429
 msgid "unnamed"
 msgstr "di-enw"
 
-#: knarticlewidget.cpp:1509
+#: knarticlewidget.cpp:1540
 msgid ""
 "<qt>Do you want treat the selected text as an <b>email address</b> or a "
 "<b>message-id</b>?</qt>"
@@ -626,195 +652,195 @@ msgstr ""
 "<qt>Ydych eisiau trin y testun wedi'i ddewis fel <b>cyfeiriad ebost</b> neu "
 "fel <b>clustnod neges</b>?</qt>"
 
-#: knarticlewidget.cpp:1510
+#: knarticlewidget.cpp:1541
 msgid "Address or ID"
 msgstr "Cyfeiriad neu glustnod"
 
-#: knarticlewidget.cpp:1510
+#: knarticlewidget.cpp:1541
 msgid "&Email"
 msgstr "&Ebost"
 
-#: knarticlewidget.cpp:1510
+#: knarticlewidget.cpp:1541
 msgid "&Message-Id"
 msgstr "&Clustnod neges"
 
-#: knarticlewidget.cpp:1657
+#: knarticlewidget.cpp:1688
 msgid "Print Article"
 msgstr "Argraffu'r Erthygl"
 
-#: knarticlewidget.cpp:1830 kncomposer.cpp:1210
+#: knarticlewidget.cpp:1867 kncomposer.cpp:1212
 msgid "Select Charset"
 msgstr "Dewis y Set Nodau"
 
-#: knarticlewidget.cpp:1959
+#: knarticlewidget.cpp:1996
 msgid ""
 "_: collection of article headers\n"
 "Approved"
 msgstr "Cymeradwyd"
 
-#: knarticlewidget.cpp:1960
+#: knarticlewidget.cpp:1997
 msgid ""
 "_: collection of article headers\n"
 "Content-Transfer-Encoding"
 msgstr "Amgodiad-Trosglwyddiad-Cynnwys"
 
-#: knarticlewidget.cpp:1961
+#: knarticlewidget.cpp:1998
 msgid ""
 "_: collection of article headers\n"
 "Content-Type"
 msgstr "Math-Cynnwys"
 
-#: knarticlewidget.cpp:1962
+#: knarticlewidget.cpp:1999
 msgid ""
 "_: collection of article headers\n"
 "Control"
 msgstr "Rheolaeth"
 
-#: knarticlewidget.cpp:1963
+#: knarticlewidget.cpp:2000
 msgid ""
 "_: collection of article headers\n"
 "Date"
 msgstr "Dyddiad"
 
-#: knarticlewidget.cpp:1964
+#: knarticlewidget.cpp:2001
 msgid ""
 "_: collection of article headers\n"
 "Distribution"
 msgstr "Dosbarthiad"
 
-#: knarticlewidget.cpp:1965
+#: knarticlewidget.cpp:2002
 msgid ""
 "_: collection of article headers\n"
 "Expires"
 msgstr "Darfod"
 
-#: knarticlewidget.cpp:1966
+#: knarticlewidget.cpp:2003
 msgid ""
 "_: collection of article headers\n"
 "Followup-To"
 msgstr "Ymateb-Dilyn-I"
 
-#: knarticlewidget.cpp:1967
+#: knarticlewidget.cpp:2004
 msgid ""
 "_: collection of article headers\n"
 "From"
 msgstr "Oddi wrth"
 
-#: knarticlewidget.cpp:1968
+#: knarticlewidget.cpp:2005
 msgid ""
 "_: collection of article headers\n"
 "Lines"
 msgstr "Llinellau"
 
-#: knarticlewidget.cpp:1969
+#: knarticlewidget.cpp:2006
 msgid ""
 "_: collection of article headers\n"
 "Mail-Copies-To"
 msgstr "Ebostio-Copïau-I"
 
-#: knarticlewidget.cpp:1970
+#: knarticlewidget.cpp:2007
 msgid ""
 "_: collection of article headers\n"
 "Message-ID"
 msgstr "Clustnod-Neges"
 
-#: knarticlewidget.cpp:1971
+#: knarticlewidget.cpp:2008
 msgid ""
 "_: collection of article headers\n"
 "Mime-Version"
 msgstr "Fersiwn-Mime"
 
-#: knarticlewidget.cpp:1972
+#: knarticlewidget.cpp:2009
 msgid ""
 "_: collection of article headers\n"
 "NNTP-Posting-Host"
 msgstr "Gwesteiwr-Hysbysu-NNTP"
 
-#: knarticlewidget.cpp:1973
+#: knarticlewidget.cpp:2010
 msgid ""
 "_: collection of article headers\n"
 "Newsgroups"
 msgstr "Grwpiau newyddion"
 
-#: knarticlewidget.cpp:1974
+#: knarticlewidget.cpp:2011
 msgid ""
 "_: collection of article headers\n"
 "Organization"
 msgstr "Cymdeithas"
 
-#: knarticlewidget.cpp:1975
+#: knarticlewidget.cpp:2012
 msgid ""
 "_: collection of article headers\n"
 "Path"
 msgstr "Llwybr"
 
-#: knarticlewidget.cpp:1976
+#: knarticlewidget.cpp:2013
 msgid ""
 "_: collection of article headers\n"
 "References"
 msgstr "Cyfeiriadau"
 
-#: knarticlewidget.cpp:1977
+#: knarticlewidget.cpp:2014
 msgid ""
 "_: collection of article headers\n"
 "Reply-To"
 msgstr "Ateb-I"
 
-#: knarticlewidget.cpp:1978
+#: knarticlewidget.cpp:2015
 msgid ""
 "_: collection of article headers\n"
 "Sender"
 msgstr "Anfonydd"
 
-#: knarticlewidget.cpp:1979
+#: knarticlewidget.cpp:2016
 msgid ""
 "_: collection of article headers\n"
 "Subject"
 msgstr "Pwnc"
 
-#: knarticlewidget.cpp:1980
+#: knarticlewidget.cpp:2017
 msgid ""
 "_: collection of article headers\n"
 "Supersedes"
 msgstr "Yn disodli"
 
-#: knarticlewidget.cpp:1981
+#: knarticlewidget.cpp:2018
 msgid ""
 "_: collection of article headers\n"
 "To"
 msgstr "At"
 
-#: knarticlewidget.cpp:1982
+#: knarticlewidget.cpp:2019
 msgid ""
 "_: collection of article headers\n"
 "User-Agent"
 msgstr "Asiant-Defnyddiwr"
 
-#: knarticlewidget.cpp:1983
+#: knarticlewidget.cpp:2020
 msgid ""
 "_: collection of article headers\n"
 "X-Mailer"
 msgstr "Ebostydd-X"
 
-#: knarticlewidget.cpp:1984
+#: knarticlewidget.cpp:2021
 msgid ""
 "_: collection of article headers\n"
 "X-Newsreader"
 msgstr "Darllenydd-newyddion-X"
 
-#: knarticlewidget.cpp:1985
+#: knarticlewidget.cpp:2022
 msgid ""
 "_: collection of article headers\n"
 "X-No-Archive"
 msgstr "Dim-Archif-X"
 
-#: knarticlewidget.cpp:1986
+#: knarticlewidget.cpp:2023
 msgid ""
 "_: collection of article headers\n"
 "XRef"
 msgstr "CyfeiriadX"
 
-#: knarticlewidget.cpp:1988
+#: knarticlewidget.cpp:2025
 msgid ""
 "_: collection of article headers\n"
 "Groups"
@@ -840,15 +866,15 @@ msgstr "Tacluso"
 msgid "Cleaning up. Please wait..."
 msgstr "Yn tacluso.  Arhoswch..."
 
-#: kncollectionview.cpp:45 knconfigwidgets.cpp:1559 kngroupbrowser.cpp:88
+#: kncollectionview.cpp:43 knconfigwidgets.cpp:1558 kngroupbrowser.cpp:88
 msgid "Name"
 msgstr "Enw"
 
-#: kncollectionview.cpp:46
+#: kncollectionview.cpp:44
 msgid "Total"
 msgstr "Cyfanswm"
 
-#: kncollectionview.cpp:47
+#: kncollectionview.cpp:45
 msgid "Unread"
 msgstr "Heb eu darllen"
 
@@ -896,7 +922,7 @@ msgstr "Atodi &Ffeil..."
 msgid "Sign Article with &PGP"
 msgstr "Llofnodi'r Erthygl gyda &PGP"
 
-#: kncomposer.cpp:265 kncomposer.cpp:1909
+#: kncomposer.cpp:265 kncomposer.cpp:1911
 msgid "&Properties"
 msgstr "&Priodweddau"
 
@@ -948,11 +974,11 @@ msgstr "&Cymysgu (Rot 13)"
 msgid "Start &External Editor"
 msgstr "Cyc&hwyn Golygydd Allanol"
 
-#: kncomposer.cpp:534 kncomposer.cpp:537 kncomposer.cpp:1168
+#: kncomposer.cpp:536 kncomposer.cpp:539 kncomposer.cpp:1170
 msgid "<posted & mailed>"
 msgstr "<wedi'i phostio ac ebostio>"
 
-#: kncomposer.cpp:535 kncomposer.cpp:1169
+#: kncomposer.cpp:537 kncomposer.cpp:1171
 msgid ""
 "<posted & mailed>\n"
 "\n"
@@ -960,17 +986,17 @@ msgstr ""
 "<wedi'i phostio ac ebostio>\n"
 "\n"
 
-#: kncomposer.cpp:556
+#: kncomposer.cpp:558
 #, fuzzy
 msgid "Please enter a subject."
 msgstr "Rhowch bwnc!"
 
-#: kncomposer.cpp:564
+#: kncomposer.cpp:566
 #, fuzzy
 msgid "Please enter a newsgroup."
 msgstr "Rhowch grwp newyddion!"
 
-#: kncomposer.cpp:573
+#: kncomposer.cpp:575
 #, fuzzy
 msgid ""
 "You are crossposting to more than 12 newsgroups.\n"
@@ -979,7 +1005,7 @@ msgstr ""
 "Yr ydych yn croes-hysbysu i fwy na 12 o grwpiau newyddion.\n"
 " A wnewch waredu pob grŵp newyddion lle mae'ch erthygl yn amherthnasol!"
 
-#: kncomposer.cpp:578
+#: kncomposer.cpp:580
 msgid ""
 "You are crossposting to more than five newsgroups.\n"
 "Please reconsider whether this is really useful\n"
@@ -991,19 +1017,19 @@ msgstr ""
 " a gwaredu'r grwpiau lle mae'ch erthygl yn amherthnasol.\n"
 " A ydych eisiau ail-olygu'ch erthygl neu'i hanfon beth bynnag?"
 
-#: kncomposer.cpp:579 kncomposer.cpp:584 kncomposer.cpp:594 kncomposer.cpp:664
-#: kncomposer.cpp:678 kncomposer.cpp:684
+#: kncomposer.cpp:581 kncomposer.cpp:586 kncomposer.cpp:596 kncomposer.cpp:666
+#: kncomposer.cpp:680 kncomposer.cpp:686
 msgid "&Send"
 msgstr "&Anfon"
 
-#: kncomposer.cpp:579 kncomposer.cpp:584 kncomposer.cpp:594 kncomposer.cpp:664
-#: kncomposer.cpp:679 kncomposer.cpp:684
+#: kncomposer.cpp:581 kncomposer.cpp:586 kncomposer.cpp:596 kncomposer.cpp:666
+#: kncomposer.cpp:681 kncomposer.cpp:686
 msgid ""
 "_: edit article\n"
 "&Edit"
 msgstr "&Golygu"
 
-#: kncomposer.cpp:583
+#: kncomposer.cpp:585
 msgid ""
 "You are crossposting to more than two newsgroups.\n"
 "Please use the \"Followup-To\" header to direct\n"
@@ -1015,7 +1041,7 @@ msgstr ""
 "erthygl i un grŵp.\n"
 " A ydych eisiau ail-olygu'r erthygl neu'i hanfon beth bynnag?"
 
-#: kncomposer.cpp:588
+#: kncomposer.cpp:590
 #, fuzzy
 msgid ""
 "You are directing replies to more than 12 newsgroups.\n"
@@ -1024,7 +1050,7 @@ msgstr ""
 "Yr ydych yn cyfeirio atebion at fwy na 12 o grwpiau newyddion.\n"
 " A wnewch gwaredu rhai grwpiau newyddion o'r pennawd \"Dilyn i fyny i\"!"
 
-#: kncomposer.cpp:593
+#: kncomposer.cpp:595
 msgid ""
 "You are directing replies to more than five newsgroups.\n"
 "Please reconsider whether this is really useful.\n"
@@ -1034,12 +1060,12 @@ msgstr ""
 " A wnewch ail-ystyried a ydy hyn yn wir ddefnyddiol.\n"
 "  A ydych eisiau ail-olygu'r erthygl neu'i hanfon beth bynnag?"
 
-#: kncomposer.cpp:600
+#: kncomposer.cpp:602
 #, fuzzy
 msgid "Please enter the email address."
 msgstr "Rhowch gyfeiriad ebost!"
 
-#: kncomposer.cpp:652
+#: kncomposer.cpp:654
 #, fuzzy
 msgid ""
 "Your message contains characters which are not included\n"
@@ -1050,12 +1076,12 @@ msgstr ""
 "o'r set nodau \"us-ascii\".  Dewiswch set nodau briodol\n"
 " o'r ddewislen \"Dewisiadau\"!"
 
-#: kncomposer.cpp:657
+#: kncomposer.cpp:659
 #, fuzzy
 msgid "You cannot post an empty message."
 msgstr "Chewch chi ddim postio neges wag!"
 
-#: kncomposer.cpp:663
+#: kncomposer.cpp:665
 #, fuzzy
 msgid ""
 "Your article seems to consist entirely of quoted text;\n"
@@ -1064,7 +1090,7 @@ msgstr ""
 "Ymddengys fod eich erthygl yn ddyfyniad ar ei hyd.\n"
 " A hoffech ail-olygu'r erthygl neu'i danfon beth bynnag?"
 
-#: kncomposer.cpp:668
+#: kncomposer.cpp:670
 #, fuzzy
 msgid ""
 "You cannot post an article consisting\n"
@@ -1073,7 +1099,7 @@ msgstr ""
 "Chewch chi ddim hysbysu erthygl nad \n"
 " ydy hi ddim ond testun wedi'i dyfynnu!"
 
-#: kncomposer.cpp:676
+#: kncomposer.cpp:678
 msgid ""
 "Your article contains lines longer than 80 characters.\n"
 "Do you want to re-edit the article or send it anyway?"
@@ -1081,7 +1107,7 @@ msgstr ""
 "Cynhwysa eich erthygl linellau sy'n hwy na 80 nod.\n"
 "  A ydych eisiau ail-olygu'r erthygl neu'i hanfon beth bynnag?"
 
-#: kncomposer.cpp:683
+#: kncomposer.cpp:685
 msgid ""
 "Your signature is more than 8 lines long.\n"
 "You should shorten it to match the widely accepted limit of 4 lines.\n"
@@ -1091,7 +1117,7 @@ msgstr ""
 "  Dylech ei fyrhau i gydweddu â'r uchafswm cydnabyddedig o 4 llinell.\n"
 " A ydych eisiau ail-olygu'r erthygl neu'i hanfon beth bynnag?"
 
-#: kncomposer.cpp:688
+#: kncomposer.cpp:690
 #, fuzzy
 msgid ""
 "Your signature exceeds the widely-accepted limit of 4 lines:\n"
@@ -1102,7 +1128,7 @@ msgstr ""
 " A wnewch ystyried byrhau'ch llofnod.\n"
 " Fell arall byddwch, yn ôl pob tebyg, yn digio eich darllenwyr"
 
-#: kncomposer.cpp:708
+#: kncomposer.cpp:710
 #, fuzzy
 msgid ""
 "You have not configured your preferred signing key yet;\n"
@@ -1115,23 +1141,23 @@ msgstr ""
 " yn y priodweddau cyfrif, neu yn y proiodweddau grŵp!\n"
 "  Anfonir yr erthygl heb ei llofnodi."
 
-#: kncomposer.cpp:715
+#: kncomposer.cpp:717
 msgid "Send Unsigned"
 msgstr "Anfon Heb ei Lofnodi"
 
-#: kncomposer.cpp:870
+#: kncomposer.cpp:872
 msgid "Do you want to save this article in the draft folder?"
 msgstr "A ydych eisiau cadw'r erthygl hon yn y blygell ddrafft?"
 
-#: kncomposer.cpp:1001
+#: kncomposer.cpp:1003
 msgid "Insert File"
 msgstr "Mewnosod Ffeil"
 
-#: kncomposer.cpp:1083
+#: kncomposer.cpp:1085
 msgid "Attach File"
 msgstr "Atodi Ffeil"
 
-#: kncomposer.cpp:1159
+#: kncomposer.cpp:1161
 #, fuzzy
 msgid ""
 "The poster does not want a mail copy of your reply (Mail-Copies-To: "
@@ -1141,16 +1167,16 @@ msgstr ""
 "Nid yw'r hysbysydd eisiau copi ebost o'ch ateb (Ebostio-Copiau-I: neb).\n"
 " Taler sylw i'w gais."
 
-#: kncomposer.cpp:1160
+#: kncomposer.cpp:1162
 msgid "&Send Copy"
 msgstr "&Anfon Copi"
 
-#: kncomposer.cpp:1226
+#: kncomposer.cpp:1228
 #, fuzzy
 msgid "This will replace all text you have written."
 msgstr "Mi amnewidith hyn yr holl destun a ysgrifennwyd!"
 
-#: kncomposer.cpp:1240
+#: kncomposer.cpp:1242
 msgid ""
 "No editor configured.\n"
 "Please do this in the settings dialog."
@@ -1158,7 +1184,7 @@ msgstr ""
 "Does dim golygydd wedi'w ffurfweddu.\n"
 "Mae angen gwneud hyn yn yr ymgom gosodiadau."
 
-#: kncomposer.cpp:1299
+#: kncomposer.cpp:1301
 msgid ""
 "Unable to start external editor.\n"
 "Please check your configuration in the settings dialog."
@@ -1166,51 +1192,51 @@ msgstr ""
 "Methu cychwyn y golygydd allanol.\n"
 "  A wnewch edrych dros eich ffurfweddiad yn yr ymgom osodiadau."
 
-#: kncomposer.cpp:1322 kncomposer.cpp:2381
+#: kncomposer.cpp:1324 kncomposer.cpp:2379
 msgid "Spellcheck"
 msgstr "Cywiro sillafu"
 
-#: kncomposer.cpp:1357
+#: kncomposer.cpp:1359
 msgid "News Article"
 msgstr "Erthygl Newyddion"
 
-#: kncomposer.cpp:1359
+#: kncomposer.cpp:1361
 msgid "Email"
 msgstr "Ebost"
 
-#: kncomposer.cpp:1361
+#: kncomposer.cpp:1363
 msgid "News Article & Email"
 msgstr "Erthygl Newyddion ac Ebost"
 
-#: kncomposer.cpp:1365
+#: kncomposer.cpp:1367
 msgid " OVR "
 msgstr "DROS"
 
-#: kncomposer.cpp:1367
+#: kncomposer.cpp:1369
 msgid " INS "
 msgstr "RHWNG"
 
-#: kncomposer.cpp:1369
+#: kncomposer.cpp:1371
 msgid " Type: %1 "
 msgstr "Math: %1"
 
-#: kncomposer.cpp:1370
+#: kncomposer.cpp:1372
 msgid " Charset: %1 "
 msgstr "Set nodau: %1"
 
-#: kncomposer.cpp:1372 kncomposer.cpp:1379
+#: kncomposer.cpp:1374 kncomposer.cpp:1381
 msgid " Column: %1 "
 msgstr "Colofn: %1"
 
-#: kncomposer.cpp:1373 kncomposer.cpp:1380
+#: kncomposer.cpp:1375 kncomposer.cpp:1382
 msgid " Line: %1 "
 msgstr "Llinell: %1"
 
-#: kncomposer.cpp:1418
+#: kncomposer.cpp:1420
 msgid "No Subject"
 msgstr "Dim Pwnc"
 
-#: kncomposer.cpp:1638 kncomposer.cpp:2411
+#: kncomposer.cpp:1640 kncomposer.cpp:2409
 msgid ""
 "ISpell could not be started.\n"
 "Please make sure you have ISpell properly configured and in your PATH."
@@ -1219,39 +1245,39 @@ msgstr ""
 "  A wnewch yn sicr bod ISpell wedi'i ffurfweddu'n iawn gennych a'i fod yn "
 "eich PATH."
 
-#: kncomposer.cpp:1643 kncomposer.cpp:2416
+#: kncomposer.cpp:1645 kncomposer.cpp:2414
 msgid "ISpell seems to have crashed."
 msgstr "Ymddengys fod ISpell wedi chwalu."
 
-#: kncomposer.cpp:1650
+#: kncomposer.cpp:1652
 msgid "No misspellings encountered."
 msgstr "Dim camsillafiadau wedi'u canfod"
 
-#: kncomposer.cpp:1725
+#: kncomposer.cpp:1727
 msgid "T&o:"
 msgstr "A&t:"
 
-#: kncomposer.cpp:1726
+#: kncomposer.cpp:1728
 msgid "&Browse..."
 msgstr "&Pori..."
 
-#: kncomposer.cpp:1736
+#: kncomposer.cpp:1738
 msgid "&Groups:"
 msgstr "&Grwpiau:"
 
-#: kncomposer.cpp:1737
+#: kncomposer.cpp:1739
 msgid "B&rowse..."
 msgstr "Po&ri..."
 
-#: kncomposer.cpp:1747
+#: kncomposer.cpp:1749
 msgid "Follo&wup-To:"
 msgstr "A&todiad-I:"
 
-#: kncomposer.cpp:1755
+#: kncomposer.cpp:1757
 msgid "S&ubject:"
 msgstr "P&wnc:"
 
-#: kncomposer.cpp:1785
+#: kncomposer.cpp:1787
 msgid ""
 "You are currently editing the article body\n"
 "in an external editor. To continue, you have\n"
@@ -1261,63 +1287,63 @@ msgstr ""
 " mewn golygydd allanol.  I barhau, rhaid ichi\n"
 " gau'r golygydd allanol."
 
-#: kncomposer.cpp:1786
+#: kncomposer.cpp:1788
 msgid "&Kill External Editor"
 msgstr "&Lladd y Golygydd Allanol"
 
-#: kncomposer.cpp:1900
+#: kncomposer.cpp:1902
 msgid "A&dd..."
 msgstr "Yc&hwanegu..."
 
-#: kncomposer.cpp:2034
+#: kncomposer.cpp:2036
 msgid "Suggestions"
 msgstr "Cwestiwn"
 
-#: kncomposer.cpp:2478
+#: kncomposer.cpp:2476
 msgid "Type"
 msgstr "Math"
 
-#: kncomposer.cpp:2479
+#: kncomposer.cpp:2477
 msgid "Size"
 msgstr "Maint"
 
-#: kncomposer.cpp:2480 kngroupbrowser.cpp:89 kngrouppropdlg.cpp:73
+#: kncomposer.cpp:2478 kngroupbrowser.cpp:89 kngrouppropdlg.cpp:73
 msgid "Description"
 msgstr "Disgrifiad"
 
-#: kncomposer.cpp:2481
+#: kncomposer.cpp:2479
 msgid "Encoding"
 msgstr "Amgodiad"
 
-#: kncomposer.cpp:2529
+#: kncomposer.cpp:2527
 msgid "Attachment Properties"
 msgstr "Priodweddau yr Atodiad"
 
-#: kncomposer.cpp:2542 kngrouppropdlg.cpp:79
+#: kncomposer.cpp:2540 kngrouppropdlg.cpp:79
 msgid "Name:"
 msgstr "Enw:"
 
-#: kncomposer.cpp:2544
+#: kncomposer.cpp:2542
 msgid "Size:"
 msgstr "Maint:"
 
-#: kncomposer.cpp:2551
+#: kncomposer.cpp:2549
 msgid "Mime"
 msgstr "Mime"
 
-#: kncomposer.cpp:2558
+#: kncomposer.cpp:2556
 msgid "&Mime-Type:"
 msgstr "Math-&Mime:"
 
-#: kncomposer.cpp:2563
+#: kncomposer.cpp:2561
 msgid "&Description:"
 msgstr "&Disgrifiad:"
 
-#: kncomposer.cpp:2577
+#: kncomposer.cpp:2575
 msgid "&Encoding:"
 msgstr "A&mgodiad:"
 
-#: kncomposer.cpp:2610
+#: kncomposer.cpp:2608
 msgid ""
 "You have set an invalid mime-type.\n"
 "Please change it."
@@ -1325,7 +1351,7 @@ msgstr ""
 "Yr ydych wedi gosod math-mime annilys.\n"
 "  Newidiwch ef."
 
-#: kncomposer.cpp:2615
+#: kncomposer.cpp:2613
 msgid ""
 "You have changed the mime-type of this non-textual attachment\n"
 "to text. This might cause an error while loading or encoding the file.\n"
@@ -1335,133 +1361,125 @@ msgstr ""
 " i destun.  Gall hyn achosi gwall wrth lwytho neu amgodio'r ffeil.\n"
 "  Parhau?"
 
-#: knconfig.cpp:134
+#: knconfig.cpp:135
 #, fuzzy
 msgid "Cannot open the signature file."
 msgstr "Methu agor y ffeil llofnod!"
 
-#: knconfig.cpp:147
+#: knconfig.cpp:148
 #, fuzzy
 msgid "Cannot run the signature generator."
 msgstr "Methu rhedeg y creuydd llofnodion!"
 
-#: knconfig.cpp:186
+#: knconfig.cpp:187
 msgid "Background"
 msgstr "Cefndir"
 
-#: knconfig.cpp:190
+#: knconfig.cpp:191
 msgid "Alternate Background"
 msgstr "Cefndir Arall"
 
-#: knconfig.cpp:194
+#: knconfig.cpp:195
 msgid "Header Decoration"
 msgstr "Addurniad Pennawd"
 
-#: knconfig.cpp:198
+#: knconfig.cpp:199
 msgid "Normal Text"
 msgstr "Testun Arferol"
 
-#: knconfig.cpp:202
+#: knconfig.cpp:203
 msgid "Quoted Text - First level"
 msgstr "Testun wedi'i ddyfynnu - Lefel cyntaf"
 
-#: knconfig.cpp:206
+#: knconfig.cpp:207
 msgid "Quoted Text - Second level"
 msgstr "Testun wedi'i ddyfynnu - Ail lefel"
 
-#: knconfig.cpp:210
+#: knconfig.cpp:211
 msgid "Quoted Text - Third level"
 msgstr "Testun wedi'i ddyfynnu - Trydydd lefel"
 
-#: knconfig.cpp:214
+#: knconfig.cpp:215
 msgid "Link"
 msgstr "Dolen"
 
-#: knconfig.cpp:218
+#: knconfig.cpp:219
 msgid "Read Thread"
 msgstr "Trywydd wedi'i ddarllen"
 
-#: knconfig.cpp:222
+#: knconfig.cpp:223
 msgid "Unread Thread"
 msgstr "Trywydd heb ei ddarllen"
 
-#: knconfig.cpp:226
+#: knconfig.cpp:227
 msgid "Read Article"
 msgstr "Erthygl wedi'i darllen"
 
-#: knconfig.cpp:230
+#: knconfig.cpp:231
 msgid "Unread Article"
 msgstr "Erthygl heb ei darllen"
 
-#: knconfig.cpp:234
-msgid "Active Item Background"
-msgstr "Cefndir Eitem Cyfredol"
-
-#: knconfig.cpp:238
-msgid "Selected Item Background"
-msgstr "Cefndir Eitem wedi'i Ddewis"
-
-#: knconfig.cpp:244
+#: knconfig.cpp:237
 msgid "Article Body"
 msgstr "Corff yr Erthygl"
 
-#: knconfig.cpp:248
+#: knconfig.cpp:241
 msgid "Article Body (Fixed)"
 msgstr "Corff yr Erthygl (Sefydlog)"
 
-#: knconfig.cpp:251 knconfigpages.cpp:165
+#: knconfig.cpp:244 knconfigpages.cpp:166
 msgid "Composer"
 msgstr "Cyfansoddydd"
 
-#: knconfig.cpp:255
+#: knconfig.cpp:248
 msgid "Group List"
 msgstr "Rhestr Grwpiau"
 
-#: knconfig.cpp:258 knconfigwidgets.cpp:987
+#: knconfig.cpp:251 knconfigwidgets.cpp:986
 msgid "Article List"
 msgstr "Rhestr Erthyglau"
 
-#: knconfigpages.cpp:102
+#: knconfigpages.cpp:103
 msgid "Newsgroup Servers"
 msgstr "Gweinyddion Grwpiau Newyddion"
 
-#: knconfigpages.cpp:103
+#: knconfigpages.cpp:104
 msgid "Mail Server (SMTP)"
 msgstr "Gweinydd Ebost (SMTP)"
 
-#: knconfigpages.cpp:138 knconfigwidgets.cpp:1981 knconfigwidgets.cpp:2213
+#: knconfigpages.cpp:139 knconfigwidgets.cpp:1980 knconfigwidgets.cpp:2215
 msgid "General"
 msgstr "Cyffredinol"
 
-#: knconfigpages.cpp:139
+#: knconfigpages.cpp:140
 msgid "Navigation"
 msgstr "Llywio"
 
-#: knconfigpages.cpp:140
+#: knconfigpages.cpp:141
 msgid "Scoring"
 msgstr "Sgorio"
 
-#: knconfigpages.cpp:141
+#: knconfigpages.cpp:142
 msgid "Filters"
 msgstr "Hidlenni"
 
-#: knconfigpages.cpp:142
+#: knconfigpages.cpp:143
 msgid "Headers"
 msgstr "Penawdau"
 
-#: knconfigpages.cpp:143
+#: knconfigpages.cpp:144
 msgid "Viewer"
 msgstr "Gwelydd"
 
-#: knconfigpages.cpp:164
+#: knconfigpages.cpp:165
 msgid "Technical"
 msgstr "Technegol"
 
-#: knconfigpages.cpp:166
+#: knconfigpages.cpp:167
 msgid "Spelling"
 msgstr "Sillafu"
 
-#: knconfigwidgets.cpp:60 knconfigwidgets.cpp:472
+#: knconfigwidgets.cpp:60 knconfigwidgets.cpp:471
 msgid "&Name:"
 msgstr "&Enw:"
 
@@ -1557,7 +1575,7 @@ msgid ""
 "<p>Ex: <b>/home/robt/.sig</b>.</p></qt>"
 msgstr ""
 
-#: knconfigwidgets.cpp:143 knconfigwidgets.cpp:1232 knconfigwidgets.cpp:2272
+#: knconfigwidgets.cpp:143 knconfigwidgets.cpp:1231 knconfigwidgets.cpp:2274
 msgid "Choo&se..."
 msgstr "De&wis..."
 
@@ -1594,112 +1612,112 @@ msgstr "Rhaid i chi benodi enw ffeil!"
 msgid "You have specified a folder."
 msgstr "'Rydych chi wedi penodi cyfeiriadur!"
 
-#: knconfigwidgets.cpp:305 knconfigwidgets.cpp:1364 knconfigwidgets.cpp:1706
-#: knconfigwidgets.cpp:2028
+#: knconfigwidgets.cpp:304 knconfigwidgets.cpp:1363 knconfigwidgets.cpp:1705
+#: knconfigwidgets.cpp:2027
 msgid "&Add..."
 msgstr "Ychw&anegu..."
 
-#: knconfigwidgets.cpp:309 knconfigwidgets.cpp:1372 knconfigwidgets.cpp:1710
-#: knconfigwidgets.cpp:2036
+#: knconfigwidgets.cpp:308 knconfigwidgets.cpp:1371 knconfigwidgets.cpp:1709
+#: knconfigwidgets.cpp:2035
 msgid ""
 "_: modify something\n"
 "&Edit..."
 msgstr "G&olygu..."
 
-#: knconfigwidgets.cpp:317
+#: knconfigwidgets.cpp:316
 msgid "&Subscribe..."
 msgstr "Tany&sgrifio..."
 
-#: knconfigwidgets.cpp:398
+#: knconfigwidgets.cpp:397
 #, c-format
 msgid "Server: %1"
 msgstr "Gweinydd: %1"
 
-#: knconfigwidgets.cpp:399
+#: knconfigwidgets.cpp:398
 #, c-format
 msgid "Port: %1"
 msgstr "Porth: %1"
 
-#: knconfigwidgets.cpp:402
+#: knconfigwidgets.cpp:401
 msgid "Server: "
 msgstr "Gweinydd:"
 
-#: knconfigwidgets.cpp:403
+#: knconfigwidgets.cpp:402
 msgid "Port: "
 msgstr "Porth:"
 
-#: knconfigwidgets.cpp:464 knfilterdialog.cpp:34 kngrouppropdlg.cpp:34
+#: knconfigwidgets.cpp:463 knfilterdialog.cpp:34 kngrouppropdlg.cpp:34
 #, c-format
 msgid "Properties of %1"
 msgstr "Nodweddion %1"
 
-#: knconfigwidgets.cpp:464
+#: knconfigwidgets.cpp:463
 msgid "New Account"
 msgstr "Cyfrif Newydd"
 
-#: knconfigwidgets.cpp:468
+#: knconfigwidgets.cpp:467
 msgid "Ser&ver"
 msgstr "Gw&einydd"
 
-#: knconfigwidgets.cpp:478 knconfigwidgets.cpp:631
+#: knconfigwidgets.cpp:477 knconfigwidgets.cpp:630
 msgid "&Server:"
 msgstr "Gwei&nydd:"
 
-#: knconfigwidgets.cpp:484 knconfigwidgets.cpp:637
+#: knconfigwidgets.cpp:483 knconfigwidgets.cpp:636
 msgid "&Port:"
 msgstr "&Porth:"
 
-#: knconfigwidgets.cpp:491 knconfigwidgets.cpp:645
+#: knconfigwidgets.cpp:490 knconfigwidgets.cpp:644
 msgid "Hol&d connection for:"
 msgstr "&Dal cysylltiad ar gyfer:"
 
-#: knconfigwidgets.cpp:492 knconfigwidgets.cpp:500 knconfigwidgets.cpp:644
-#: knconfigwidgets.cpp:651 knconfigwidgets.cpp:997
+#: knconfigwidgets.cpp:491 knconfigwidgets.cpp:499 knconfigwidgets.cpp:643
+#: knconfigwidgets.cpp:650 knconfigwidgets.cpp:996
 msgid " sec"
 msgstr "eil"
 
-#: knconfigwidgets.cpp:498 knconfigwidgets.cpp:652
+#: knconfigwidgets.cpp:497 knconfigwidgets.cpp:651
 msgid "&Timeout:"
 msgstr "&Goramser:"
 
-#: knconfigwidgets.cpp:504
+#: knconfigwidgets.cpp:503
 msgid "&Fetch group descriptions"
 msgstr "&Nôl disgrifiadau grwpiau"
 
-#: knconfigwidgets.cpp:512
+#: knconfigwidgets.cpp:511
 msgid "Server requires &authentication"
 msgstr "Mae &angen dilysiant ar y gweinydd"
 
-#: knconfigwidgets.cpp:517
+#: knconfigwidgets.cpp:516
 msgid "&User:"
 msgstr "De&fnyddiwr:"
 
-#: knconfigwidgets.cpp:523
+#: knconfigwidgets.cpp:522
 msgid "Pass&word:"
 msgstr "C&yfrinair:"
 
-#: knconfigwidgets.cpp:529
+#: knconfigwidgets.cpp:528
 msgid "Enable &interval news checking"
 msgstr "Galluogi y&mholi ysbeidiol am newyddion"
 
-#: knconfigwidgets.cpp:534
+#: knconfigwidgets.cpp:533
 msgid "Check inter&val:"
 msgstr "Cyfnod y&mofyn:"
 
-#: knconfigwidgets.cpp:535
+#: knconfigwidgets.cpp:534
 msgid " min"
 msgstr "mun"
 
-#: knconfigwidgets.cpp:548 kngrouppropdlg.cpp:146
+#: knconfigwidgets.cpp:547 kngrouppropdlg.cpp:146
 msgid "&Identity"
 msgstr "&Dynodiad"
 
-#: knconfigwidgets.cpp:551 kngrouppropdlg.cpp:149
+#: knconfigwidgets.cpp:550 kngrouppropdlg.cpp:149
 #, fuzzy
 msgid "&Cleanup"
 msgstr "Tacluso"
 
-#: knconfigwidgets.cpp:575
+#: knconfigwidgets.cpp:574
 #, fuzzy
 msgid ""
 "Please enter an arbitrary name for the account and the\n"
@@ -1708,255 +1726,255 @@ msgstr ""
 "Rhowch ryw enw ar gyfer y cyfrif ac\n"
 " enw host y gweinydd newyddion."
 
-#: knconfigwidgets.cpp:626
+#: knconfigwidgets.cpp:625
 msgid "&Use external mail program"
 msgstr "Defnyddio r&haglen ebost allanol"
 
-#: knconfigwidgets.cpp:813
+#: knconfigwidgets.cpp:812
 msgid "&Use custom colors"
 msgstr "Defnyddio &llywiau addasiedig"
 
-#: knconfigwidgets.cpp:817
+#: knconfigwidgets.cpp:816
 msgid "Cha&nge..."
 msgstr "&Newid..."
 
-#: knconfigwidgets.cpp:827
+#: knconfigwidgets.cpp:826
 msgid "Use custom &fonts"
 msgstr "Defnyddio &ffontiau addasiedig"
 
-#: knconfigwidgets.cpp:831
+#: knconfigwidgets.cpp:830
 msgid "Chang&e..."
 msgstr "N&ewid..."
 
-#: knconfigwidgets.cpp:986
+#: knconfigwidgets.cpp:985
 msgid "Article Handling"
 msgstr "Trin Erthyglau"
 
-#: knconfigwidgets.cpp:988
+#: knconfigwidgets.cpp:987
 msgid "Memory Consumption"
 msgstr "Defnydd Cof"
 
-#: knconfigwidgets.cpp:991
+#: knconfigwidgets.cpp:990
 msgid "Check for new articles a&utomatically"
 msgstr "Ymholi am erthyglau newydd yn &ymysgogol"
 
-#: knconfigwidgets.cpp:993
+#: knconfigwidgets.cpp:992
 msgid "&Maximum number of articles to fetch:"
 msgstr "Uchafr&if yr erthyglau i'w nôl:"
 
-#: knconfigwidgets.cpp:994
+#: knconfigwidgets.cpp:993
 msgid "Mar&k article as read after:"
 msgstr "N&odi erthygl fel wedi'i darllen ar ôl:"
 
-#: knconfigwidgets.cpp:998
+#: knconfigwidgets.cpp:997
 msgid "Mark c&rossposted articles as read"
 msgstr "Nodi erthyglau wedi'u cro&esbostio fel wedi'u darllen"
 
-#: knconfigwidgets.cpp:1000
+#: knconfigwidgets.cpp:999
 msgid "Smart scrolli&ng"
 msgstr "Sgrolio si&onc"
 
-#: knconfigwidgets.cpp:1001
+#: knconfigwidgets.cpp:1000
 msgid "Show &whole thread on expanding"
 msgstr "Dangos y &trywydd i gyd wedi ehangu"
 
-#: knconfigwidgets.cpp:1002
+#: knconfigwidgets.cpp:1001
 msgid "Default to e&xpanded threads"
 msgstr "Trywyddau wedi'u ehangu fel rha&gosod"
 
-#: knconfigwidgets.cpp:1003
+#: knconfigwidgets.cpp:1002
 msgid "Show article &score"
 msgstr "Dangos &sgôr yr erthygl"
 
-#: knconfigwidgets.cpp:1004
+#: knconfigwidgets.cpp:1003
 msgid "Show &line count"
 msgstr "Dangos cyfrif y &llinellau"
 
-#: knconfigwidgets.cpp:1005
+#: knconfigwidgets.cpp:1004
 msgid "Show unread count in &thread"
 msgstr "Dangos cyfrif y rhai heb eu darllen yn y &trywydd"
 
-#: knconfigwidgets.cpp:1009
+#: knconfigwidgets.cpp:1008
 msgid "Cach&e size for headers:"
 msgstr "Maint celc ar gyfer p&enawdau:"
 
-#: knconfigwidgets.cpp:1012
+#: knconfigwidgets.cpp:1011
 msgid "Cache si&ze for articles:"
 msgstr "Ma&int celc ar gyfer erthyglau:"
 
-#: knconfigwidgets.cpp:1123
+#: knconfigwidgets.cpp:1122
 msgid "\"Mark All as Read\" Triggers Following Actions"
 msgstr "Achosith \"Dynodi Popeth fel wedi'i Ddarllen\" y gweithredoedd canlynol"
 
-#: knconfigwidgets.cpp:1128
+#: knconfigwidgets.cpp:1127
 msgid "&Switch to the next group"
 msgstr "T&roi i'r grŵp nesaf"
 
-#: knconfigwidgets.cpp:1135
+#: knconfigwidgets.cpp:1134
 msgid "\"Mark Thread as Read\" Triggers Following Actions"
 msgstr "Achosith \"Dynodi'r Trwywydd fel wedi'i Ddarllen\" y gweithredoedd canlynol"
 
-#: knconfigwidgets.cpp:1140
+#: knconfigwidgets.cpp:1139
 msgid "Clos&e the current thread"
 msgstr "Cau'r trywydd cyfr&edol"
 
-#: knconfigwidgets.cpp:1142
+#: knconfigwidgets.cpp:1141
 msgid "Go &to the next unread thread"
 msgstr "Mynd i'r &trywydd heb ei ddarllen nesaf"
 
-#: knconfigwidgets.cpp:1150
+#: knconfigwidgets.cpp:1149
 msgid "\"Ignore Thread\" Triggers Following Actions"
 msgstr "Achosith \"Anwybyddu'r Trywydd\" y gweithredoedd canlynol"
 
-#: knconfigwidgets.cpp:1155
+#: knconfigwidgets.cpp:1154
 msgid "Close the cu&rrent thread"
 msgstr "Cau'r trywydd cyf&redol"
 
-#: knconfigwidgets.cpp:1157
+#: knconfigwidgets.cpp:1156
 msgid "Go to the next &unread thread"
 msgstr "Mynd i'r trywydd nesaf heb ei dda&rllen"
 
-#: knconfigwidgets.cpp:1206
+#: knconfigwidgets.cpp:1205
 msgid "Attachments"
 msgstr "Atodiadau"
 
-#: knconfigwidgets.cpp:1207
+#: knconfigwidgets.cpp:1206
 msgid "Browser"
 msgstr "Porydd"
 
-#: knconfigwidgets.cpp:1210
+#: knconfigwidgets.cpp:1209
 msgid "Show fancy header deco&rations"
 msgstr "Dangos addu&rniadau pennawd pert"
 
-#: knconfigwidgets.cpp:1211
+#: knconfigwidgets.cpp:1210
 msgid "Re&wrap text when necessary"
 msgstr "Ail-la&pio testun pan fo angen"
 
-#: knconfigwidgets.cpp:1212
+#: knconfigwidgets.cpp:1211
 msgid "Re&move trailing empty lines"
 msgstr "Cael g&wared â llinellau gwag dilynol"
 
-#: knconfigwidgets.cpp:1213
+#: knconfigwidgets.cpp:1212
 msgid "Show sig&nature"
 msgstr "Da&ngos llofnod"
 
-#: knconfigwidgets.cpp:1214
+#: knconfigwidgets.cpp:1213
 msgid "Interpret te&xt format tags"
 msgstr "De&hongli tagiau fformatio testun"
 
-#: knconfigwidgets.cpp:1216
+#: knconfigwidgets.cpp:1215
 msgid "Recognized q&uote characters:"
 msgstr "Dy&fynnodau cydnabyddedig:"
 
-#: knconfigwidgets.cpp:1218
+#: knconfigwidgets.cpp:1217
 msgid "Show attachments &inline if possible"
 msgstr "Dangos atodiadau yn fe&wnlin os yn bosibl"
 
-#: knconfigwidgets.cpp:1219
+#: knconfigwidgets.cpp:1218
 msgid "Open a&ttachments on click"
 msgstr "Agor &atodiadau wrth glic"
 
-#: knconfigwidgets.cpp:1220
+#: knconfigwidgets.cpp:1219
 msgid "Show alternati&ve contents as attachments"
 msgstr "Dang&os cynnwysion eraill fel atodiadau:"
 
-#: knconfigwidgets.cpp:1223
+#: knconfigwidgets.cpp:1222
 msgid "Default Browser"
 msgstr "Porydd Rhagosodedig"
 
-#: knconfigwidgets.cpp:1228
+#: knconfigwidgets.cpp:1227
 msgid "Other Browser"
 msgstr "Porydd Arall"
 
-#: knconfigwidgets.cpp:1230
+#: knconfigwidgets.cpp:1229
 msgid "Open &links with:"
 msgstr "Agor &dolenni gyda:"
 
-#: knconfigwidgets.cpp:1342
+#: knconfigwidgets.cpp:1341
 msgid "Choose Browser"
 msgstr "Dewis Porydd"
 
-#: knconfigwidgets.cpp:1376 knconfigwidgets.cpp:1730
+#: knconfigwidgets.cpp:1375 knconfigwidgets.cpp:1729
 msgid "&Up"
 msgstr "I &Fyny"
 
-#: knconfigwidgets.cpp:1380 knconfigwidgets.cpp:1734
+#: knconfigwidgets.cpp:1379 knconfigwidgets.cpp:1733
 msgid "Do&wn"
 msgstr "I &Lawr"
 
-#: knconfigwidgets.cpp:1471
+#: knconfigwidgets.cpp:1470
 msgid "Really delete this header?"
 msgstr "Wir ddileu'r penawd yma?"
 
-#: knconfigwidgets.cpp:1535
+#: knconfigwidgets.cpp:1534
 msgid "Header Properties"
 msgstr "Nodweddion Penawdau"
 
-#: knconfigwidgets.cpp:1547
+#: knconfigwidgets.cpp:1546
 msgid "H&eader:"
 msgstr "P&ennawd:"
 
-#: knconfigwidgets.cpp:1553
+#: knconfigwidgets.cpp:1552
 msgid "Displayed na&me:"
 msgstr "Enw i'w a&rddangos:"
 
-#: knconfigwidgets.cpp:1563
+#: knconfigwidgets.cpp:1562
 msgid "&Large"
 msgstr "&Mawr"
 
-#: knconfigwidgets.cpp:1564
+#: knconfigwidgets.cpp:1563
 msgid "&Bold"
 msgstr "&Trwm"
 
-#: knconfigwidgets.cpp:1565
+#: knconfigwidgets.cpp:1564
 msgid "&Italic"
 msgstr "&Italig"
 
-#: knconfigwidgets.cpp:1566
+#: knconfigwidgets.cpp:1565
 msgid "&Underlined"
 msgstr "Wedi'i &Danllinellu"
 
-#: knconfigwidgets.cpp:1569
+#: knconfigwidgets.cpp:1568
 msgid "Value"
 msgstr "Gwerth"
 
-#: knconfigwidgets.cpp:1573
+#: knconfigwidgets.cpp:1572
 msgid "L&arge"
 msgstr "M&awr"
 
-#: knconfigwidgets.cpp:1574
+#: knconfigwidgets.cpp:1573
 msgid "Bol&d"
 msgstr "Tr&wm"
 
-#: knconfigwidgets.cpp:1575
+#: knconfigwidgets.cpp:1574
 msgid "I&talic"
 msgstr "I&talig"
 
-#: knconfigwidgets.cpp:1576
+#: knconfigwidgets.cpp:1575
 msgid "U&nderlined"
 msgstr "Wedi'i da&nlinellu"
 
-#: knconfigwidgets.cpp:1649
+#: knconfigwidgets.cpp:1648
 msgid "Default score for &ignored threads:"
 msgstr "Sgôr rhagosodedig ar gyfer trywyddau wedi'u &hanwybyddu:"
 
-#: knconfigwidgets.cpp:1655
+#: knconfigwidgets.cpp:1654
 msgid "Default score for &watched threads:"
 msgstr "Sgôr rhagosodedig ar gyfer trywyddau wedi'u g&wylio:"
 
-#: knconfigwidgets.cpp:1700
+#: knconfigwidgets.cpp:1699
 msgid "&Filters:"
 msgstr "&Hidlenni:"
 
-#: knconfigwidgets.cpp:1714
+#: knconfigwidgets.cpp:1713
 msgid "Co&py..."
 msgstr "Co&pïo..."
 
-#: knconfigwidgets.cpp:1725
+#: knconfigwidgets.cpp:1724
 msgid "&Menu:"
 msgstr "D&ewislen:"
 
-#: knconfigwidgets.cpp:1738
+#: knconfigwidgets.cpp:1737
 msgid ""
 "Add\n"
 "&Separator"
@@ -1964,7 +1982,7 @@ msgstr ""
 "Ychwanegu\n"
 " &Gwahanydd"
 
-#: knconfigwidgets.cpp:1742
+#: knconfigwidgets.cpp:1741
 msgid ""
 "&Remove\n"
 "Separator"
@@ -1972,161 +1990,162 @@ msgstr ""
 "Gwaredu\n"
 " G&wahanydd"
 
-#: knconfigwidgets.cpp:1988
+#: knconfigwidgets.cpp:1987
 msgid "Cha&rset:"
 msgstr "Set &Nodau:"
 
-#: knconfigwidgets.cpp:1993
+#: knconfigwidgets.cpp:1992
 msgid "Allow 8-bit"
 msgstr "Caniatau 8-did"
 
-#: knconfigwidgets.cpp:1994
+#: knconfigwidgets.cpp:1993
 msgid "7-bit (Quoted-Printable)"
 msgstr "7-did (Argraffadwy-Dyfynedig)"
 
-#: knconfigwidgets.cpp:1995
+#: knconfigwidgets.cpp:1994
 msgid "Enco&ding:"
 msgstr "Amgo&diad:"
 
-#: knconfigwidgets.cpp:1999
+#: knconfigwidgets.cpp:1998
 msgid "Use o&wn default charset when replying"
 msgstr "Defnyddio eich set nodau rhagosodedig eich hun &wrth ymateb"
 
-#: knconfigwidgets.cpp:2003
+#: knconfigwidgets.cpp:2002
 msgid "&Generate message-id"
 msgstr "Creu clustnod ne&ges"
 
-#: knconfigwidgets.cpp:2008
+#: knconfigwidgets.cpp:2007
 #, fuzzy
 msgid "Ho&st name:"
 msgstr "Enw Gwe&steiwr:"
 
-#: knconfigwidgets.cpp:2017 knconfigwidgets.cpp:2164
+#: knconfigwidgets.cpp:2016 knconfigwidgets.cpp:2166
 msgid "X-Headers"
 msgstr "Penawdau-X"
 
-#: knconfigwidgets.cpp:2032
+#: knconfigwidgets.cpp:2031
 msgid "Dele&te"
 msgstr "Di&leu"
 
-#: knconfigwidgets.cpp:2040
+#: knconfigwidgets.cpp:2042
 #, fuzzy
 msgid "Do not add the \"&User-Agent\" identification header"
 msgstr "Nac ychwaneger pennawd dynodiad \"&Asiant-Defnyddiwr\""
 
-#: knconfigwidgets.cpp:2219
+#: knconfigwidgets.cpp:2221
 msgid "Word &wrap at column:"
 msgstr "Lapio geiriau &wrth y golofn:"
 
-#: knconfigwidgets.cpp:2227
+#: knconfigwidgets.cpp:2229
 msgid "Appe&nd signature automatically"
 msgstr "Atodi llof&nod yn ymysgogol"
 
-#: knconfigwidgets.cpp:2235
+#: knconfigwidgets.cpp:2237
 msgid "Reply"
 msgstr "Ymateb"
 
-#: knconfigwidgets.cpp:2242
+#: knconfigwidgets.cpp:2244
 msgid "&Introduction phrase:"
 msgstr "Ymadrodd cyflwyn&iad"
 
-#: knconfigwidgets.cpp:2244
+#: knconfigwidgets.cpp:2246
+#, fuzzy
 msgid ""
 "Placeholders: %NAME=name, %EMAIL=email address,\n"
-"%DATE=date, %MSID=message-id, %GROUP=group name"
+"%DATE=date, %MSID=message-id, %GROUP=group name, %L=line break"
 msgstr ""
 "Nodau lle: %NAME=enw, %EMAIL=cyfeiriad ebost,\n"
 " %DATE=dyddiad, %MSID=nod-neges, %GROUP=enw grŵp"
 
-#: knconfigwidgets.cpp:2247
+#: knconfigwidgets.cpp:2249
 msgid "Rewrap quoted te&xt automatically"
 msgstr "Ail-lapio te&stun dyfynedig yn ymysgogol"
 
-#: knconfigwidgets.cpp:2251
+#: knconfigwidgets.cpp:2253
 msgid "Include the a&uthor's signature"
 msgstr "Cynnwys llofnod yr awd&ur"
 
-#: knconfigwidgets.cpp:2255
+#: knconfigwidgets.cpp:2257
 msgid "Put the cursor &below the introduction phrase"
 msgstr "Rhoi'r cyrchydd is&law'r ymadrodd cyflwyno"
 
-#: knconfigwidgets.cpp:2263
+#: knconfigwidgets.cpp:2265
 msgid "External Editor"
 msgstr "Golygydd Allanol"
 
-#: knconfigwidgets.cpp:2270
+#: knconfigwidgets.cpp:2272
 msgid "Specify edi&tor:"
 msgstr "Penodi'r &golygydd:"
 
-#: knconfigwidgets.cpp:2277
+#: knconfigwidgets.cpp:2279
 #, fuzzy, c-format
 msgid "%f will be replaced with the filename to edit."
 msgstr "Disodlir %f gydag enw'r ffeil i'w olygu."
 
-#: knconfigwidgets.cpp:2279
+#: knconfigwidgets.cpp:2281
 msgid "Start exte&rnal editor automatically"
 msgstr "Cychwyn y &golygydd allanol yn ymysgogol"
 
-#: knconfigwidgets.cpp:2336
+#: knconfigwidgets.cpp:2338
 msgid "Choose Editor"
 msgstr "Dewis Golygydd"
 
-#: knconfigwidgets.cpp:2381
+#: knconfigwidgets.cpp:2383
 msgid "KNode Specific Options"
 msgstr "Dewisiadau neilltuol KNode"
 
-#: knconfigwidgets.cpp:2385
+#: knconfigwidgets.cpp:2387
 msgid "Ch&eck signatures automatically"
 msgstr "Gwir&eddu llofnodion yn ymysgogol"
 
-#: knconfigwidgets.cpp:2428
+#: knconfigwidgets.cpp:2430
 msgid "&Use global cleanup configuration"
 msgstr ""
 
-#: knconfigwidgets.cpp:2433
+#: knconfigwidgets.cpp:2435
 #, fuzzy
 msgid "Newsgroup Cleanup Settings"
 msgstr "Gweinyddion Grwpiau Newyddion"
 
-#: knconfigwidgets.cpp:2439
+#: knconfigwidgets.cpp:2441
 msgid "&Expire old articles automatically"
 msgstr "Dar&fod hen erthyglau'n ymysgogol"
 
-#: knconfigwidgets.cpp:2444 knconfigwidgets.cpp:2453 knconfigwidgets.cpp:2460
-#: knconfigwidgets.cpp:2535 knfilterconfigwidget.cpp:59
+#: knconfigwidgets.cpp:2446 knconfigwidgets.cpp:2455 knconfigwidgets.cpp:2462
+#: knconfigwidgets.cpp:2537 knfilterconfigwidget.cpp:59
 msgid " days"
 msgstr "dyddiau"
 
-#: knconfigwidgets.cpp:2445
+#: knconfigwidgets.cpp:2447
 msgid "&Purge groups every:"
 msgstr "Ysgubo grw&piau bob:"
 
-#: knconfigwidgets.cpp:2454
+#: knconfigwidgets.cpp:2456
 msgid "&Keep read articles:"
 msgstr "Cadw &erthyglau wedi'u darllen:"
 
-#: knconfigwidgets.cpp:2461
+#: knconfigwidgets.cpp:2463
 msgid "Keep u&nread articles:"
 msgstr "Cadw erthyglau heb eu darlle&n:"
 
-#: knconfigwidgets.cpp:2466
+#: knconfigwidgets.cpp:2468
 #, fuzzy
 msgid "&Remove articles that are not available on the server"
 msgstr "Gwa&redu erthyglau nad ydynt ar gael ar y gweinydd"
 
-#: knconfigwidgets.cpp:2470
+#: knconfigwidgets.cpp:2472
 msgid "Preser&ve threads"
 msgstr "Ca&dw trywyddau"
 
-#: knconfigwidgets.cpp:2524
+#: knconfigwidgets.cpp:2526
 msgid "Folders"
 msgstr "Plygyll"
 
-#: knconfigwidgets.cpp:2530
+#: knconfigwidgets.cpp:2532
 msgid "Co&mpact folders automatically"
 msgstr "Cryn&hoi plygyll yn ymysgogol"
 
-#: knconfigwidgets.cpp:2536
+#: knconfigwidgets.cpp:2538
 msgid "P&urge folders every:"
 msgstr "Sg&ubo plygyll bob:"
 
@@ -2250,10 +2269,6 @@ msgstr "troswyd plygell \"Anfonwyd\" i fersiwn 0.4"
 msgid "nothing to be done for folder \"Sent\""
 msgstr "dim byd i'w wneud ar gyfer plygell \"Anfonwyd\""
 
-#: knfilterconfigwidget.cpp:34 knmainwidget.cpp:185
-msgid "Subject"
-msgstr "Pwnc"
-
 #: knfilterconfigwidget.cpp:38
 msgid ""
 "The following placeholders are supported:\n"
@@ -2283,17 +2298,9 @@ msgstr "&Nodau-negeseuon"
 msgid "&Status"
 msgstr "&Cyflwr"
 
-#: knfilterconfigwidget.cpp:57 knmainwidget.cpp:187 knmainwidget.cpp:570
-msgid "Score"
-msgstr "Sgôr"
-
 #: knfilterconfigwidget.cpp:59
 msgid "Age"
 msgstr "Oedran"
-
-#: knfilterconfigwidget.cpp:61 knmainwidget.cpp:188 knmainwidget.cpp:579
-msgid "Lines"
-msgstr "Llinellau"
 
 #: knfilterconfigwidget.cpp:64
 msgid "&Additional"
@@ -2607,14 +2614,6 @@ msgstr ""
 " Sylwer na fydd eich erthygl yn ymddangos mewn unrhyw grŵp\n"
 " nes ei bod wedi'i chymeradwyo gan gymedrolwyr y grŵp cymedroledig."
 
-#: knlistview.cpp:311 knmainwidget.cpp:867
-msgid "Date (thread changed)"
-msgstr "Dyddiad (newidwyd y trywydd)"
-
-#: knlistview.cpp:313 knmainwidget.cpp:189 knmainwidget.cpp:869
-msgid "Date"
-msgstr "Dyddiad"
-
 #: knmainwidget.cpp:94
 msgid "Article Viewer"
 msgstr "Gwelydd Erthyglau"
@@ -2623,367 +2622,394 @@ msgstr "Gwelydd Erthyglau"
 msgid "Group View"
 msgstr "Safbwynt Grŵpiau"
 
-#: knmainwidget.cpp:144
+#: knmainwidget.cpp:143
 msgid "Header View"
 msgstr "Safbwynt Penawdau"
 
-#: knmainwidget.cpp:158
+#: knmainwidget.cpp:157
 msgid "Reset Quick Search"
 msgstr ""
 
-#: knmainwidget.cpp:165
+#: knmainwidget.cpp:164
 msgid ""
 "<b>Reset Quick Search</b>"
 "<br>Resets the quick search so that all messages are shown again."
 msgstr ""
 
-#: knmainwidget.cpp:169
+#: knmainwidget.cpp:168
 msgid "&Search:"
 msgstr "&Chwilio:"
 
-#: knmainwidget.cpp:339
+#: knmainwidget.cpp:325
 msgid " Ready"
 msgstr "Parod"
 
-#: knmainwidget.cpp:373
+#: knmainwidget.cpp:359
 msgid "KDE News Reader"
 msgstr "Darllenydd Newyddion KDE"
 
-#: knmainwidget.cpp:596
+#: knmainwidget.cpp:561
 msgid "&Next Article"
 msgstr "Erthygl &Nesaf"
 
-#: knmainwidget.cpp:597
+#: knmainwidget.cpp:562
 #, fuzzy
 msgid "Go to next article"
 msgstr "Grŵpiau ar gyfer yr erthygl hon:"
 
-#: knmainwidget.cpp:599
+#: knmainwidget.cpp:564
 msgid "&Previous Article"
 msgstr "Erthygl &Flaenorol"
 
-#: knmainwidget.cpp:600
+#: knmainwidget.cpp:565
 #, fuzzy
 msgid "Go to previous article"
 msgstr "Erthygl &Flaenorol"
 
-#: knmainwidget.cpp:602
+#: knmainwidget.cpp:567
 msgid "Next Unread &Article"
 msgstr "Erthygl Nesaf &Heb ei Darllen "
 
-#: knmainwidget.cpp:604
+#: knmainwidget.cpp:569
 msgid "Next Unread &Thread"
 msgstr "&Trywydd Nesaf Heb ei Ddarllen "
 
-#: knmainwidget.cpp:606
+#: knmainwidget.cpp:571
 msgid "Ne&xt Group"
 msgstr "Grŵp N&esaf"
 
-#: knmainwidget.cpp:608
+#: knmainwidget.cpp:573
 msgid "Pre&vious Group"
 msgstr "Grŵp Fl&aenorol"
 
-#: knmainwidget.cpp:610
+#: knmainwidget.cpp:575
 msgid "Read &Through Articles"
 msgstr "Darllen &Trwy Erthyglau"
 
-#: knmainwidget.cpp:615
+#: knmainwidget.cpp:580
+msgid "Focus on Next Folder"
+msgstr "Canolbwyntio ar y Blygell Nesaf"
+
+#: knmainwidget.cpp:584
+msgid "Focus on Previous Folder"
+msgstr "Canolbwyntio ar y Blygell Flaenorol"
+
+#: knmainwidget.cpp:588
+msgid "Select Folder with Focus"
+msgstr "Deiws y Blygell efo'r Canolbwynt"
+
+#: knmainwidget.cpp:593
+#, fuzzy
+msgid "Focus on Next Article"
+msgstr "Grŵpiau ar gyfer yr erthygl hon:"
+
+#: knmainwidget.cpp:597
+#, fuzzy
+msgid "Focus on Previous Article"
+msgstr "Erthygl &Flaenorol"
+
+#: knmainwidget.cpp:601
+#, fuzzy
+msgid "Select Article with Focus"
+msgstr "Dewis y Golofn Drefnu"
+
+#: knmainwidget.cpp:607
 #, fuzzy
 msgid "Account &Properties"
 msgstr "Priodweddion &Cyfrif..."
 
-#: knmainwidget.cpp:617
+#: knmainwidget.cpp:609
 msgid "&Rename Account"
 msgstr "Ail-enwi'r Cyf&rif"
 
-#: knmainwidget.cpp:619
+#: knmainwidget.cpp:611
 msgid "&Subscribe to Newsgroups..."
 msgstr "Tany&sgrifio i Grwpiau Newyddion..."
 
-#: knmainwidget.cpp:621
+#: knmainwidget.cpp:613
 msgid "&Expire All Groups"
 msgstr "Darfod &Pob Grŵp"
 
-#: knmainwidget.cpp:623
+#: knmainwidget.cpp:615
 msgid "&Get New Articles in All Groups"
 msgstr "Cael Erthyglau Newydd ym &Mhob Grŵp"
 
-#: knmainwidget.cpp:625
+#: knmainwidget.cpp:617
 #, fuzzy
 msgid "&Get New Articles in All Accounts"
 msgstr "Cael Erthyglau Newydd ym &Mhob Grŵp"
 
-#: knmainwidget.cpp:627
+#: knmainwidget.cpp:619
 msgid "&Delete Account"
 msgstr "&Dileu Cyfrif"
 
-#: knmainwidget.cpp:629
+#: knmainwidget.cpp:621
 msgid "&Post to Newsgroup..."
 msgstr "&Hysbysu i'r Grŵp Newyddion..."
 
-#: knmainwidget.cpp:633
+#: knmainwidget.cpp:625
 msgid "Group &Properties"
 msgstr "Priodw&eddau'r Grwp"
 
-#: knmainwidget.cpp:635
+#: knmainwidget.cpp:627
 msgid "Rename &Group"
 msgstr "Ail-enwi'r &Grŵp"
 
-#: knmainwidget.cpp:637
+#: knmainwidget.cpp:629
 msgid "&Get New Articles"
 msgstr "&Nôl Erthyglau Newydd"
 
-#: knmainwidget.cpp:639
+#: knmainwidget.cpp:631
 msgid "E&xpire Group"
 msgstr "&Darfod Grŵp"
 
-#: knmainwidget.cpp:641
+#: knmainwidget.cpp:633
 msgid "Re&organize Group"
 msgstr "Ad-dre&fnu Grŵp"
 
-#: knmainwidget.cpp:643
+#: knmainwidget.cpp:635
 msgid "&Unsubscribe From Group"
 msgstr "Dat-dan&ysgrifio i'r Grŵp"
 
-#: knmainwidget.cpp:645
+#: knmainwidget.cpp:637
 msgid "Mark All as &Read"
 msgstr "No&di Pob Erthygl fel Wedi'i Darllen"
 
-#: knmainwidget.cpp:647
+#: knmainwidget.cpp:639
 msgid "Mark All as U&nread"
 msgstr "Nodi Pob Erthygl fel &Heb ei Darllen"
 
-#: knmainwidget.cpp:649
+#: knmainwidget.cpp:641
 msgid "Mark Last as Unr&ead..."
 msgstr "Nodi'r Diw&eddaraf fel Heb ei Darllen..."
 
-#: knmainwidget.cpp:654
+#: knmainwidget.cpp:646
 msgid "&Configure KNode..."
 msgstr "&Ffurfweddu KNode..."
 
-#: knmainwidget.cpp:660
+#: knmainwidget.cpp:652
 msgid "&New Folder"
 msgstr "Plygell &Newydd"
 
-#: knmainwidget.cpp:662
+#: knmainwidget.cpp:654
 msgid "New &Subfolder"
 msgstr "I&s-blygell Newydd"
 
-#: knmainwidget.cpp:664
+#: knmainwidget.cpp:656
 msgid "&Delete Folder"
 msgstr "&Dileu Plygell"
 
-#: knmainwidget.cpp:666
+#: knmainwidget.cpp:658
 msgid "&Rename Folder"
 msgstr "Ail-enwi P&lygell"
 
-#: knmainwidget.cpp:668
+#: knmainwidget.cpp:660
 msgid "C&ompact Folder"
 msgstr "Crynh&oi Plygell"
 
-#: knmainwidget.cpp:670
+#: knmainwidget.cpp:662
 msgid "Co&mpact All Folders"
 msgstr "Cryn&hoi Pob Plygell"
 
-#: knmainwidget.cpp:672
+#: knmainwidget.cpp:664
 msgid "&Empty Folder"
 msgstr "Gwagu Pl&ygell"
 
-#: knmainwidget.cpp:674
+#: knmainwidget.cpp:666
 msgid "&Import MBox Folder..."
 msgstr "Mewnfor&io Plygell MBox..."
 
-#: knmainwidget.cpp:676
+#: knmainwidget.cpp:668
 msgid "E&xport as MBox Folder..."
 msgstr "&Allforio Plygell MBox..."
 
-#: knmainwidget.cpp:680
+#: knmainwidget.cpp:672
 msgid "S&ort"
 msgstr "&Trefnu"
 
-#: knmainwidget.cpp:682
+#: knmainwidget.cpp:674
 msgid "By &Subject"
 msgstr "Yn ôl &Pwnc"
 
-#: knmainwidget.cpp:683
+#: knmainwidget.cpp:675
 msgid "By S&ender"
 msgstr "Yn ôl &Anfonydd"
 
-#: knmainwidget.cpp:684
+#: knmainwidget.cpp:676
 msgid "By S&core"
 msgstr "Yn ôl &Sgôr"
 
-#: knmainwidget.cpp:685
+#: knmainwidget.cpp:677
 msgid "By &Lines"
 msgstr "Yn ôl &Llinellau"
 
-#: knmainwidget.cpp:686
+#: knmainwidget.cpp:678
 msgid "By &Date"
 msgstr "Yn ôl &Dyddiad"
 
-#: knmainwidget.cpp:690
+#: knmainwidget.cpp:682
 msgid "Sort"
 msgstr "Trefnu"
 
-#: knmainwidget.cpp:693
+#: knmainwidget.cpp:685
 msgid "&Filter"
 msgstr "&Hidlenni"
 
-#: knmainwidget.cpp:696
+#: knmainwidget.cpp:688
 msgid "Filter"
 msgstr "Hidlen"
 
-#: knmainwidget.cpp:698
+#: knmainwidget.cpp:690
 msgid "&Search Articles..."
 msgstr "&Chwilio Erthyglau..."
 
-#: knmainwidget.cpp:700
+#: knmainwidget.cpp:692
 msgid "F&ind in Article..."
 msgstr "C&anfod mewn Erthygl..."
 
-#: knmainwidget.cpp:702
+#: knmainwidget.cpp:694
 msgid "&Refresh List"
 msgstr "Cyfredoli'r &Rhestr"
 
-#: knmainwidget.cpp:704
+#: knmainwidget.cpp:696
 msgid "&Collapse All Threads"
 msgstr "&Cyfyngu pob Trywydd"
 
-#: knmainwidget.cpp:706
+#: knmainwidget.cpp:698
 msgid "E&xpand All Threads"
 msgstr "&Ehangu pob Trywydd"
 
-#: knmainwidget.cpp:708
+#: knmainwidget.cpp:700
 msgid "&Toggle Subthread"
 msgstr "Dangos/Cuddio &Is-Drywydd"
 
-#: knmainwidget.cpp:710
+#: knmainwidget.cpp:702
 msgid "Show T&hreads"
 msgstr "Dangos T&rywyddau"
 
-#: knmainwidget.cpp:712
+#: knmainwidget.cpp:704
 #, fuzzy
 msgid "Hide T&hreads"
 msgstr "Dangos T&rywyddau"
 
-#: knmainwidget.cpp:717
+#: knmainwidget.cpp:709
 msgid "Mark as &Read"
 msgstr "Nodi fel &Wedi'i Darllen"
 
-#: knmainwidget.cpp:719
+#: knmainwidget.cpp:711
 msgid "Mar&k as Unread"
 msgstr "Nodi fel &Heb ei Darllen"
 
-#: knmainwidget.cpp:721
+#: knmainwidget.cpp:713
 msgid "Mark &Thread as Read"
 msgstr "Nodi'r &Trywydd fel Wedi'i Ddarllen"
 
-#: knmainwidget.cpp:723
+#: knmainwidget.cpp:715
 msgid "Mark T&hread as Unread"
 msgstr "Nodi'r T&rywydd fel Heb ei Ddarllen"
 
-#: knmainwidget.cpp:725
+#: knmainwidget.cpp:717
 msgid "Open in Own &Window"
 msgstr "Agor yn ei Ffenestr ei &Hun"
 
-#: knmainwidget.cpp:729
+#: knmainwidget.cpp:721
 msgid "&Edit Scoring Rules..."
 msgstr "Golygu'r Rh&eolau Sgorio..."
 
-#: knmainwidget.cpp:731
+#: knmainwidget.cpp:723
 msgid "Recalculate &Scores"
 msgstr "Ail-gyfrifo'r &Sgoriau"
 
-#: knmainwidget.cpp:733
+#: knmainwidget.cpp:725
 msgid "&Lower Score for Author..."
 msgstr "Ise&lhau Sgôr ar gyfer Awdur..."
 
-#: knmainwidget.cpp:735
+#: knmainwidget.cpp:727
 msgid "&Raise Score for Author..."
 msgstr "Codi Sgô&r ar gyfer Awdur..."
 
-#: knmainwidget.cpp:737
+#: knmainwidget.cpp:729
 msgid "&Ignore Thread"
 msgstr "&Anwybyddu Trywydd"
 
-#: knmainwidget.cpp:739
+#: knmainwidget.cpp:731
 msgid "&Watch Thread"
 msgstr "G&wylio Trywydd"
 
-#: knmainwidget.cpp:743
+#: knmainwidget.cpp:735
 msgid "Sen&d Pending Messages"
 msgstr "&Anfon Negeseuon sy'n Aros"
 
-#: knmainwidget.cpp:745
+#: knmainwidget.cpp:737
 msgid "&Delete Article"
 msgstr "&Dileu Erthygl"
 
-#: knmainwidget.cpp:747
+#: knmainwidget.cpp:739
 msgid "Send &Now"
 msgstr "Anfon &Nawr"
 
-#: knmainwidget.cpp:749
+#: knmainwidget.cpp:741
 msgid ""
 "_: edit article\n"
 "&Edit Article..."
 msgstr "Golygu &Erthygl..."
 
-#: knmainwidget.cpp:753
+#: knmainwidget.cpp:745
 msgid "Stop &Network"
 msgstr "Atal y &Rhwydwaith"
 
-#: knmainwidget.cpp:757
+#: knmainwidget.cpp:749
 msgid "&Fetch Article with ID..."
 msgstr "&Nôl Erthygl gyda'r Dynodiad..."
 
-#: knmainwidget.cpp:761
+#: knmainwidget.cpp:753
 msgid "Show &Group View"
 msgstr "Dangos Safbwynt &Grwpiau"
 
-#: knmainwidget.cpp:763
+#: knmainwidget.cpp:755
 #, fuzzy
 msgid "Hide &Group View"
 msgstr "Safbwynt Grŵpiau"
 
-#: knmainwidget.cpp:764
+#: knmainwidget.cpp:756
 msgid "Show &Header View"
 msgstr "Dangos Safbwynt &Penawdau"
 
-#: knmainwidget.cpp:766
+#: knmainwidget.cpp:758
 #, fuzzy
 msgid "Hide &Header View"
 msgstr "Safbwynt Penawdau"
 
-#: knmainwidget.cpp:767
+#: knmainwidget.cpp:759
 msgid "Show &Article Viewer"
 msgstr "D&angos y Gwelydd Erthyglau"
 
-#: knmainwidget.cpp:769
+#: knmainwidget.cpp:761
 #, fuzzy
 msgid "Hide &Article Viewer"
 msgstr "Gwelydd Erthyglau"
 
-#: knmainwidget.cpp:770
+#: knmainwidget.cpp:762
 msgid "Show Quick Search"
 msgstr ""
 
-#: knmainwidget.cpp:772
+#: knmainwidget.cpp:764
 msgid "Hide Quick Search"
 msgstr ""
 
-#: knmainwidget.cpp:773
+#: knmainwidget.cpp:765
 msgid "Switch to Group View"
 msgstr "Newid i Safbwynt Grwpiau"
 
-#: knmainwidget.cpp:776
+#: knmainwidget.cpp:768
 msgid "Switch to Header View"
 msgstr "Newid i Safbwynt Penawdau"
 
-#: knmainwidget.cpp:779
+#: knmainwidget.cpp:771
 msgid "Switch to Article Viewer"
 msgstr "Newid i'r Gwelydd Erthyglau"
 
-#: knmainwidget.cpp:932
+#: knmainwidget.cpp:913
 msgid ""
 "KNode is currently sending articles. If you quit now you might lose these "
 "articles.\n"
@@ -2993,27 +3019,27 @@ msgstr ""
 "colli'r erthyglau hyn.\n"
 " Hoffech chi derfynu beth bynnag?"
 
-#: knmainwidget.cpp:1758
+#: knmainwidget.cpp:1627
 msgid "Do you really want to unsubscribe from %1?"
 msgstr "Ydych yn wir eisiau tynnu'ch tanysgrifiad o %1?"
 
-#: knmainwidget.cpp:1788
+#: knmainwidget.cpp:1657
 msgid "Mark Last as Unread"
 msgstr "Nodi'r Diweddaraf fel Heb ei Darllen"
 
-#: knmainwidget.cpp:1789
+#: knmainwidget.cpp:1658
 msgid "Enter how many articles should be marked unread:"
 msgstr "Mewnosodwch sawl erthygl dylid eu nodi fel heb eu darllen:"
 
-#: knmainwidget.cpp:1832
+#: knmainwidget.cpp:1701
 msgid "You cannot delete a standard folder."
 msgstr "Fedrwch chi ddim dileu plygell safonol."
 
-#: knmainwidget.cpp:1835
+#: knmainwidget.cpp:1704
 msgid "Do you really want to delete this folder and all its children?"
 msgstr "Ydych chi wir eisiau dileu'r blygell yma a'i phlant i gyd?"
 
-#: knmainwidget.cpp:1839
+#: knmainwidget.cpp:1708
 msgid ""
 "This folder cannot be deleted because some of\n"
 " its articles are currently in use."
@@ -3021,11 +3047,11 @@ msgstr ""
 "Ni ellir dileu'r blygell yma am fod rhai o'i\n"
 " herthyglau'n cael eu defnyddio o hyd."
 
-#: knmainwidget.cpp:1852
+#: knmainwidget.cpp:1721
 msgid "You cannot rename a standard folder."
 msgstr "Chewch chi ddim ail-enwi plygell safonol."
 
-#: knmainwidget.cpp:1882
+#: knmainwidget.cpp:1751
 msgid ""
 "This folder cannot be emptied at the moment\n"
 "because some of its articles are currently in use."
@@ -3033,23 +3059,23 @@ msgstr ""
 "Ni ellir gwagu'r blygell yma ar hyn o bryd\n"
 " am fod rhai o'i herthyglau'n cael eu defnyddio o hyd."
 
-#: knmainwidget.cpp:1886
+#: knmainwidget.cpp:1755
 msgid "Do you really want to delete all articles in %1?"
 msgstr "Ydych wir eisiau dileu pob erthygl yn %1?"
 
-#: knmainwidget.cpp:1921
+#: knmainwidget.cpp:1790
 msgid "Select Sort Column"
 msgstr "Dewis y Golofn Drefnu"
 
-#: knmainwidget.cpp:2298
+#: knmainwidget.cpp:2167
 msgid "Fetch Article with ID"
 msgstr "Nôl Erthygl gyda Dynodiad"
 
-#: knmainwidget.cpp:2302
+#: knmainwidget.cpp:2171
 msgid "&Message-ID:"
 msgstr "&Dynodiad-Neges:"
 
-#: knmainwidget.cpp:2307
+#: knmainwidget.cpp:2176
 msgid "&Fetch"
 msgstr "&Nôl"
 
@@ -3312,14 +3338,14 @@ msgstr "Dango&s trywyddau llawn"
 #, fuzzy
 msgid ""
 "KWallet is not running. It is strongly recommended to use KWallet for "
-"managing your passwords"
+"managing your passwords."
 msgstr ""
 "Nid yw KWaled yn rhedeg.  Argymhellir yn gryf defnyddio KWaled i reoli eich "
 "cyfrinair"
 
 #: knserverinfo.cpp:100
 #, fuzzy
-msgid "KWallet is Not Running."
+msgid "KWallet is Not Running"
 msgstr "Nid yw KWaled yn Rhedeg!"
 
 #: knserverinfo.cpp:160
@@ -3366,46 +3392,55 @@ msgstr "HEB Gynnwys"
 msgid "Regular expression"
 msgstr "Mynegiad rheolaidd"
 
+#. i18n: file kncomposerui.rc line 27
 #: rc.cpp:9
 #, no-c-format
 msgid "&Attach"
 msgstr "&Atodi"
 
+#. i18n: file kncomposerui.rc line 33
 #: rc.cpp:12
 #, no-c-format
 msgid "Optio&ns"
 msgstr "De&wisiadau"
 
+#. i18n: file kncomposerui.rc line 97
 #: rc.cpp:21
 #, fuzzy, no-c-format
 msgid "Spell Result"
 msgstr "Canlyniad Sillafu"
 
+#. i18n: file knodeui.rc line 43
 #: rc.cpp:33
 #, no-c-format
 msgid "&Go"
 msgstr "&Mynd"
 
+#. i18n: file knodeui.rc line 53
 #: rc.cpp:36
 #, no-c-format
 msgid "A&ccount"
 msgstr "&Cyfrif"
 
+#. i18n: file knodeui.rc line 62
 #: rc.cpp:39
 #, no-c-format
 msgid "G&roup"
 msgstr "G&rŵp"
 
+#. i18n: file knodeui.rc line 75
 #: rc.cpp:42
 #, no-c-format
 msgid "Fol&der"
 msgstr "Ply&gell"
 
+#. i18n: file knodeui.rc line 89
 #: rc.cpp:45 rc.cpp:66
 #, no-c-format
 msgid "&Article"
 msgstr "&Erthygl"
 
+#. i18n: file knodeui.rc line 109
 #: rc.cpp:48
 #, no-c-format
 msgid "Sc&oring"
@@ -3452,6 +3487,12 @@ msgstr "Methu creu'r ffeil dros dro!"
 #, fuzzy
 msgid "A 'news://server/group' URL"
 msgstr "URL 'news://gweinydd/grŵp'"
+
+#~ msgid "Active Item Background"
+#~ msgstr "Cefndir Eitem Cyfredol"
+
+#~ msgid "Selected Item Background"
+#~ msgstr "Cefndir Eitem wedi'i Ddewis"
 
 #~ msgid "Please enter a valid email address."
 #~ msgstr "Rhowch gyfeiriad ebost dilys."

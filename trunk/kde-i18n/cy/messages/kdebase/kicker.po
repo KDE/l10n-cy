@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kicker\n"
-"POT-Creation-Date: 2004-11-19 01:18+0100\n"
+"POT-Creation-Date: 2004-12-20 01:34+0100\n"
 "PO-Revision-Date: 2003-12-27 23:14+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -44,7 +44,6 @@ msgid "Show desktop"
 msgstr "Dangos y penbwrdd"
 
 #: buttons/desktopbutton.cpp:44 ui/addspecialbutton_mnu.cpp:54
-#: ui/removespecialbutton_mnu.cpp:76
 msgid "Desktop Access"
 msgstr "Cyrchiad Penbwrdd"
 
@@ -53,7 +52,6 @@ msgid "Click here to browse and start applications"
 msgstr "Cliciwch yma i bori a chychwyn cymwysiadau"
 
 #: buttons/kbutton.cpp:42 ui/addspecialbutton_mnu.cpp:48 ui/k_mnu.cpp:70
-#: ui/removespecialbutton_mnu.cpp:61
 msgid "K Menu"
 msgstr "Dewislen K"
 
@@ -70,7 +68,7 @@ msgstr "Gwall Kicker"
 msgid "Applications"
 msgstr "Cymhwysiadau"
 
-#: buttons/urlbutton.cpp:218
+#: buttons/urlbutton.cpp:193
 #, fuzzy
 msgid "The file %1 does not exist"
 msgstr "Nid yw'r ffeil %1 yn bodoli"
@@ -83,32 +81,43 @@ msgstr "Rhestr ffenestri"
 msgid "Window List"
 msgstr "Rhestr Ffenestri"
 
-#: core/applethandle.cpp:109
+#: core/applethandle.cpp:112
 msgid "%1 applet handle"
 msgstr "Dolen rhaglennig %1"
 
-#: core/applethandle.cpp:111
+#: core/applethandle.cpp:113
 msgid "%1 menu"
 msgstr "Dewislen %1"
 
-#: core/container_applet.cpp:111
+#: core/container_applet.cpp:110
 msgid "The %1 applet could not be loaded. Please check your installation."
 msgstr "Ni ellir llwytho'r rhaglennig %1.  Gwiriwch eich gosodiad."
 
-#: core/container_applet.cpp:112
+#: core/container_applet.cpp:111
 msgid "Applet Loading Error"
 msgstr "Gwall wrth Lwytho'r Rhaglennig"
 
-#: core/container_extension.cpp:1239 core/container_extension.cpp:1252
+#: core/container_extension.cpp:1483 core/container_extension.cpp:1496
 msgid "Show panel"
 msgstr "Dangos y panel"
 
-#: core/container_extension.cpp:1243 core/container_extension.cpp:1256
+#: core/container_extension.cpp:1487 core/container_extension.cpp:1500
 msgid "Hide panel"
 msgstr "Cuddio'r panel"
 
-#: core/kicker.cpp:110 core/kicker.cpp:294 core/kickerbindings.cpp:39
-#: ui/addcontainer_mnu.cpp:47 ui/removecontainer_mnu.cpp:48
+#: core/extensionmanager.cpp:151
+#, fuzzy
+msgid ""
+"The KDE panel (kicker) could not load the main panel due to a problem with "
+"your installation. "
+msgstr "Ni ellir llwytho'r rhaglennig %1.  Gwiriwch eich gosodiad."
+
+#: core/extensionmanager.cpp:153
+msgid "Fatal Error!"
+msgstr "Gwall Angheuol !"
+
+#: core/kickerbindings.cpp:39 ui/addcontainer_mnu.cpp:47
+#: ui/removecontainer_mnu.cpp:48
 msgid "Panel"
 msgstr "Panel"
 
@@ -142,6 +151,14 @@ msgstr "Cynhaliwr cyfredol"
 msgid "Kiosk mode"
 msgstr "Modd Stondin"
 
+#: core/panelextension.cpp:238
+msgid "&Add"
+msgstr "&Ychwanegu"
+
+#: core/panelextension.cpp:240
+msgid "&Configure Panel..."
+msgstr "&Ffurfweddu'r Panel..."
+
 #: ui/addcontainer_mnu.cpp:41 ui/removecontainer_mnu.cpp:43
 msgid "Applet"
 msgstr "Rhaglennig"
@@ -155,45 +172,44 @@ msgid "Special Button"
 msgstr "Botwm Arbennig"
 
 #: ui/addspecialbutton_mnu.cpp:55 ui/k_mnu.cpp:235
-#: ui/removespecialbutton_mnu.cpp:81
 msgid "Quick Browser"
 msgstr "Porwr Cyflym"
 
-#: ui/addspecialbutton_mnu.cpp:58 ui/removespecialbutton_mnu.cpp:86
+#: ui/addspecialbutton_mnu.cpp:58
 msgid "Non-KDE Application"
 msgstr "Cymhwysiad Di-KDE"
 
-#: ui/appletop_mnu.cpp:48
+#: ui/appletop_mnu.cpp:49
 msgid "&Move %1 Menu"
 msgstr "&Symud Dewislen %1"
 
-#: ui/appletop_mnu.cpp:49
+#: ui/appletop_mnu.cpp:50
 msgid "&Move %1 Button"
 msgstr "&Symud Botwm %1"
 
-#: ui/appletop_mnu.cpp:50
+#: ui/appletop_mnu.cpp:51
 #, c-format
 msgid "&Move %1"
 msgstr "&Symud %1"
 
-#: ui/appletop_mnu.cpp:52
+#: ui/appletop_mnu.cpp:53
 msgid "&Remove %1 Menu"
 msgstr "&Gwaredu Dewislen %1"
 
-#: ui/appletop_mnu.cpp:53
+#: ui/appletop_mnu.cpp:54
 msgid "&Remove %1 Button"
 msgstr "&Gwaredu Botwm %1"
 
-#: ui/appletop_mnu.cpp:54
+#: ui/appletop_mnu.cpp:55
 #, c-format
 msgid "&Remove %1"
 msgstr "&Gwaredu %1"
 
-#: ui/appletop_mnu.cpp:64 ui/extensionop_mnu.cpp:43
+#: ui/appletop_mnu.cpp:65 ui/extensionop_mnu.cpp:43
 msgid "Report &Bug..."
 msgstr "Anfon Adroddiad &Nam..."
 
-#: ui/appletop_mnu.cpp:76
+#: ui/appletop_mnu.cpp:77
 #, c-format
 msgid "&About %1"
 msgstr "&Am %1"
@@ -262,10 +278,9 @@ msgstr "Agor yn y Trefnydd Ffeiliau"
 msgid "Open in Terminal"
 msgstr "Agor mewn Terfynnell"
 
-#: ui/browser_mnu.cpp:300
-#, fuzzy
+#: ui/browser_mnu.cpp:302
 msgid "More"
-msgstr "Rhagor..."
+msgstr "Mwy"
 
 #: ui/dirdrop_mnu.cpp:32
 msgid "Add as &File Manager URL"
@@ -398,15 +413,10 @@ msgstr "Cymhwysiadau a Ddefnyddwyd yn Ddiweddar"
 msgid "Most Used Applications"
 msgstr "Cymhwysiadau a Ddefnyddir fel Amlaf"
 
-#: ui/removeapplet_mnu.cpp:70 ui/removebutton_mnu.cpp:90
-#: ui/removeextension_mnu.cpp:90 ui/removespecialbutton_mnu.cpp:107
+#: ui/removeapplet_mnu.cpp:72 ui/removebutton_mnu.cpp:83
+#: ui/removeextension_mnu.cpp:93 ui/removespecialbutton_mnu.cpp:74
 msgid "All"
 msgstr "I gyd"
-
-#: ui/removebutton_mnu.cpp:77
-#, c-format
-msgid "Menu: %1"
-msgstr "Dewislen: %1"
 
 #: ui/removeextension_mnu.cpp:63
 msgid "%1 (Top)"
@@ -424,9 +434,10 @@ msgstr "%1 (Gwaelod)"
 msgid "%1 (Left)"
 msgstr "%1 (Chwith)"
 
-#: ui/removespecialbutton_mnu.cpp:66
-msgid "Windowlist"
-msgstr "Rhestr ffenestri"
+#: ui/removeextension_mnu.cpp:75
+#, fuzzy
+msgid "%1 (Floating)"
+msgstr "%1 (Dde)"
 
 #: ui/service_mnu.cpp:258
 msgid "No Entries"
@@ -478,7 +489,7 @@ msgid ""
 msgstr "kyfieithu@dotmon.com"
 
 #. i18n: file ui/nonKDEButtonSettings.ui line 30
-#: rc.cpp:4 rc.cpp:32
+#: rc.cpp:4 rc.cpp:29
 #, no-c-format
 msgid ""
 "Enter the name of the executable file to be run when this button is "
@@ -493,7 +504,7 @@ msgid "Co&mmand line arguments (optional):"
 msgstr "Ymresymiadau llinell orchymyn dewisol:"
 
 #. i18n: file ui/nonKDEButtonSettings.ui line 46
-#: rc.cpp:10 rc.cpp:24
+#: rc.cpp:10 rc.cpp:21
 #, no-c-format
 msgid ""
 "Enter any command line options that should be passed to the command here.\n"
@@ -510,40 +521,34 @@ msgstr "Rhedeg mewn terfynnell"
 #. i18n: file ui/nonKDEButtonSettings.ui line 57
 #: rc.cpp:18
 #, no-c-format
-msgid "Alt+T"
-msgstr ""
-
-#. i18n: file ui/nonKDEButtonSettings.ui line 60
-#: rc.cpp:21
-#, no-c-format
 msgid ""
 "Select this option if the command is a command line application and you wish "
 "to be able to see its output when run."
 msgstr ""
 
-#. i18n: file ui/nonKDEButtonSettings.ui line 92
-#: rc.cpp:29
+#. i18n: file ui/nonKDEButtonSettings.ui line 89
+#: rc.cpp:26
 #, no-c-format
 msgid "&Executable:"
 msgstr "&Gweithredadwyn:"
 
-#. i18n: file ui/nonKDEButtonSettings.ui line 114
-#: rc.cpp:35 rc.cpp:41
+#. i18n: file ui/nonKDEButtonSettings.ui line 111
+#: rc.cpp:32 rc.cpp:38
 #, no-c-format
 msgid "Enter the name you would like to appear for this button here."
 msgstr ""
 
-#. i18n: file ui/nonKDEButtonSettings.ui line 122
-#: rc.cpp:38
+#. i18n: file ui/nonKDEButtonSettings.ui line 119
+#: rc.cpp:35
 #, fuzzy, no-c-format
 msgid "&Button title:"
 msgstr "Eicon botwm:"
 
-#~ msgid "&Add"
-#~ msgstr "&Ychwanegu"
+#~ msgid "Menu: %1"
+#~ msgstr "Dewislen: %1"
 
-#~ msgid "&Configure Panel..."
-#~ msgstr "&Ffurfweddu'r Panel..."
+#~ msgid "Windowlist"
+#~ msgstr "Rhestr ffenestri"
 
 #~ msgid "Custom Panel Size"
 #~ msgstr "Maint Panel Addasiedig"

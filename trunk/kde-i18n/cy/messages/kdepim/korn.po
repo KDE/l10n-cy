@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: korn\n"
-"POT-Creation-Date: 2004-09-07 01:24+0200\n"
+"POT-Creation-Date: 2004-12-20 01:36+0100\n"
 "PO-Revision-Date: 2004-02-25 13:58+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -17,39 +17,43 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.2\n"
 
-#: imapcfg.cpp:56 kio_proto.h:96 newscfg.cpp:40 popcfg.cpp:54
+#: imapcfg.cpp:56 kio_proto.h:97 newscfg.cpp:40 popcfg.cpp:54
 msgid "Server:"
 msgstr "Gweinydd:"
 
-#: imapcfg.cpp:65 kio_proto.h:97 popcfg.cpp:61
+#: imapcfg.cpp:65 kio_proto.h:98 popcfg.cpp:61
 msgid "Port:"
 msgstr "Porth:"
 
-#: imapcfg.cpp:80 kio_proto.h:98 popcfg.cpp:72
+#: imapcfg.cpp:80 kio_proto.h:99 popcfg.cpp:72
 msgid "Username:"
 msgstr "Enw defnyddiwr:"
 
-#: imapcfg.cpp:86 kio_proto.h:99
+#: imapcfg.cpp:86 kio_proto.h:100
 msgid "Mailbox:"
 msgstr "Blwch ebost:"
 
-#: imapcfg.cpp:92 kio_proto.h:100 popcfg.cpp:77
+#: imapcfg.cpp:92 kio_proto.h:101 popcfg.cpp:77
 msgid "Password:"
 msgstr "Cyfinair:"
 
-#: imapcfg.cpp:100 kio_proto.h:101 popcfg.cpp:83
+#: imapcfg.cpp:100 kio_proto.h:102 popcfg.cpp:83
 msgid "Save password"
 msgstr "Cadw cyfrinair"
 
-#: kio_proto.h:102
+#: kio_proto.h:103
 msgid "Authentication:"
 msgstr "Dilysiant :"
 
-#: maildir_proto.h:48 qmail_proto.h:56
+#: maildir_proto.h:47 qmail_proto.h:53
 msgid "Path:"
 msgstr "Llwybr:"
 
-#: process_proto.h:46
+#: mbox_proto.h:46
+msgid "File:"
+msgstr "Ffeil:"
+
+#: process_proto.h:43
 msgid "Program: "
 msgstr "Rhaglen: "
 
@@ -64,6 +68,25 @@ msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
 msgstr "kyfieithu@dotmon.com"
+
+#: boxcontaineritem.cpp:203
+#, fuzzy
+msgid "&Recheck"
+msgstr "Ail-&wirio"
+
+#: boxcontaineritem.cpp:204
+msgid "R&eset counter"
+msgstr ""
+
+#: boxcontaineritem.cpp:205
+#, fuzzy
+msgid "&View emails"
+msgstr "Ebost &newydd:"
+
+#: boxcontaineritem.cpp:206
+#, fuzzy
+msgid "R&un command"
+msgstr "Gorchymyn plisgyn:"
 
 #: comcfg.cpp:31
 msgid "Commands"
@@ -105,15 +128,15 @@ msgstr ""
 msgid "&Actions"
 msgstr "&Gweithredoedd"
 
-#: dropman.cpp:79
+#: dropman.cpp:81
 msgid "MBOX Monitor"
 msgstr "Arsylwydd MBOX"
 
-#: dropman.cpp:179
+#: dropman.cpp:181
 msgid "Inbox"
 msgstr "Blwch Derbyn"
 
-#: dropman.cpp:186
+#: dropman.cpp:188
 msgid ""
 "Mail Monitor was unable to automatically detect\n"
 "your email settings. You need to configure mail\n"
@@ -127,11 +150,11 @@ msgstr ""
 " dde-gliciwch ar y rhaglennig yn y gafn banel a\n"
 " dewiswch 'Ffurfweddu Korn...'."
 
-#: dropman.cpp:191
+#: dropman.cpp:193
 msgid "Mail Monitor"
 msgstr "Arsylwydd Ebost"
 
-#: dropman.cpp:244
+#: dropman.cpp:246
 msgid " (clone)"
 msgstr "(clôn)"
 
@@ -195,48 +218,52 @@ msgstr "&Eicon:"
 msgid "&IMAP 4"
 msgstr "&IMAP 4"
 
-#: imapcfg.cpp:50 kiocfg.cpp:80 popcfg.cpp:48
+#. i18n: file kornaccountcfg.ui line 39
+#: imapcfg.cpp:50 kiocfg.cpp:80 popcfg.cpp:48 rc.cpp:6
+#, no-c-format
 msgid "Server"
 msgstr "Gweinydd"
 
-#: imapcfg.cpp:74 kiocfg.cpp:127 popcfg.cpp:66
+#. i18n: file kornaccountcfg.ui line 133
+#: imapcfg.cpp:74 kiocfg.cpp:127 popcfg.cpp:66 rc.cpp:18
+#, no-c-format
 msgid "Identity"
 msgstr "Dynodiad"
 
-#: kio.cpp:182
+#: kio.cpp:183
 msgid "url is not valid"
 msgstr ""
 
-#: kio.cpp:302
+#: kio.cpp:320
 #, fuzzy
 msgid "No protocol specified"
 msgstr "<heb ei benodi>"
 
-#: kio.cpp:317
+#: kio.cpp:341
 #, fuzzy
 msgid "No server specified"
 msgstr "<heb ei benodi>"
 
-#: kio.cpp:325
+#: kio.cpp:355
 #, fuzzy
 msgid "No username specified"
 msgstr "<heb ei benodi>"
 
-#: kio.cpp:331
+#: kio.cpp:368
 #, fuzzy
 msgid "No mailbox specified"
 msgstr "<heb ei benodi>"
 
-#: kio_count.cpp:90
+#: kio_count.cpp:91
 #, c-format
 msgid "Not able to open a kio slave for %1."
 msgstr ""
 
-#: kio_count.cpp:182 kio_count.cpp:230
+#: kio_count.cpp:209 kio_count.cpp:260
 msgid "Got unknown job; something must be wrong..."
 msgstr ""
 
-#: kio_count.cpp:187
+#: kio_count.cpp:215
 #, c-format
 msgid "The next KIO-error occurred by counting: %1"
 msgstr ""
@@ -259,11 +286,11 @@ msgstr ""
 msgid "An error occurred when fetching the requested email: %1."
 msgstr ""
 
-#: kio_single_subject.cpp:125 kio_single_subject.cpp:133
+#: kio_single_subject.cpp:125 kio_single_subject.cpp:134
 msgid "Got invalid job; something strange happened?"
 msgstr ""
 
-#: kio_single_subject.cpp:137
+#: kio_single_subject.cpp:138
 msgid "Error when fetching %1: %2"
 msgstr ""
 
@@ -284,6 +311,10 @@ msgstr ""
 msgid "Protocol:"
 msgstr "Protocol :"
 
+#: kornboxcfgimpl.cpp:53
+msgid "Accounts"
+msgstr "Cyfrifon"
+
 #: kornbutt.cpp:194
 msgid "From  Subject  Data"
 msgstr ""
@@ -300,6 +331,15 @@ msgid ""
 "[There are %1 new messages]"
 msgstr ""
 
+#: korncfgimpl.cpp:46
+msgid "Boxes"
+msgstr "Blychau"
+
+#: kornshell.cpp:61 shell.cpp:296
+#, fuzzy
+msgid "Korn configuration"
+msgstr "Cadarnhad"
+
 #: maildlg.cpp:11
 msgid "Mail Details"
 msgstr "Manylion yr Ebost"
@@ -312,19 +352,19 @@ msgstr "&Neges Llawn"
 msgid "Loading full mail. Please wait..."
 msgstr "Llwytho'r ebostiau i gyd.  Arhoswch..."
 
-#: mailsubject.cpp:48
+#: mailsubject.cpp:50
 msgid "Subject:"
 msgstr "Pwnc:"
 
-#: mailsubject.cpp:49
+#: mailsubject.cpp:51
 msgid "Sender:"
 msgstr "Anfonydd:"
 
-#: mailsubject.cpp:49
+#: mailsubject.cpp:51
 msgid "Size:"
 msgstr "Maint:"
 
-#: mailsubject.cpp:50
+#: mailsubject.cpp:52
 msgid "Date:"
 msgstr "Dyddiad:"
 
@@ -338,7 +378,8 @@ msgid "Korn"
 msgstr "Korn"
 
 #: main.cpp:21
-msgid "(c) 1999-2000, The Korn Developers"
+#, fuzzy
+msgid "(c) 1999-2004, The Korn Developers"
 msgstr "(h)(c) 1999-2000, Datblygwyr Korn"
 
 #: newscfg.cpp:28
@@ -349,7 +390,9 @@ msgstr "&Newyddion"
 msgid "Group:"
 msgstr "Grŵp:"
 
-#: optdlg.cpp:50
+#. i18n: file korncfg.ui line 31
+#: optdlg.cpp:50 rc.cpp:196
+#, no-c-format
 msgid "&Boxes"
 msgstr "&Blychau"
 
@@ -369,15 +412,21 @@ msgstr "&Newydd..."
 msgid "Co&py"
 msgstr "Co&pïo"
 
-#: optdlg.cpp:84
+#. i18n: file korncfg.ui line 82
+#: optdlg.cpp:84 rc.cpp:206
+#, no-c-format
 msgid "&Horizontal"
 msgstr "&Llorweddol"
 
-#: optdlg.cpp:85
+#. i18n: file korncfg.ui line 90
+#: optdlg.cpp:85 rc.cpp:209
+#, no-c-format
 msgid "&Vertical"
 msgstr "&Fertigol"
 
-#: optdlg.cpp:86
+#. i18n: file korncfg.ui line 98
+#: optdlg.cpp:86 rc.cpp:212
+#, no-c-format
 msgid "&Docked"
 msgstr "&Docedig"
 
@@ -413,15 +462,275 @@ msgstr "C&yfeiriadur ebost"
 msgid "Maildir path:"
 msgstr "Llwybr cyfeiriadur ebost:"
 
-#: shell.cpp:360
+#. i18n: file kornaccountcfg.ui line 28
+#: rc.cpp:3
+#, no-c-format
+msgid "&Server"
+msgstr "&Gweinydd"
+
+#. i18n: file kornaccountcfg.ui line 53
+#: rc.cpp:9
+#, no-c-format
+msgid "Por&t"
+msgstr "Por&th"
+
+#. i18n: file kornaccountcfg.ui line 64
+#: rc.cpp:12
+#, no-c-format
+msgid "Se&rver"
+msgstr "Gw&einydd"
+
+#. i18n: file kornaccountcfg.ui line 75
+#: rc.cpp:15
+#, no-c-format
+msgid "&Protocol"
+msgstr "&Protocol"
+
+#. i18n: file kornaccountcfg.ui line 149
+#: rc.cpp:21
+#, no-c-format
+msgid "&Username"
+msgstr "&Enw Defnyddiwr"
+
+#. i18n: file kornaccountcfg.ui line 160
+#: rc.cpp:24 unixcfg.cpp:29
+#, no-c-format
+msgid "&Mailbox"
+msgstr "&Blwch Ebost"
+
+#. i18n: file kornaccountcfg.ui line 171
+#: rc.cpp:27
+#, no-c-format
+msgid "Aut&hentication"
+msgstr "Dil&ysiant"
+
+#. i18n: file kornaccountcfg.ui line 182
+#: rc.cpp:30
+#, no-c-format
+msgid "Passwor&d"
+msgstr "Cyfrina&ir"
+
+#. i18n: file kornaccountcfg.ui line 204
+#: rc.cpp:33
+#, no-c-format
+msgid "Sa&ve password"
+msgstr "Ca&dw cyfrinair"
+
+#. i18n: file kornaccountcfg.ui line 256
+#: rc.cpp:36
+#, no-c-format
+msgid "&Account"
+msgstr "&Cyfrif"
+
+#. i18n: file kornaccountcfg.ui line 275
+#: rc.cpp:39
+#, fuzzy, no-c-format
+msgid "C&heck every (sec):"
+msgstr "Amledd gwirio (eil):"
+
+#. i18n: file kornaccountcfg.ui line 295
+#: rc.cpp:42 rc.cpp:115
+#, no-c-format
+msgid "&Events"
+msgstr "&Digwyddiadau:"
+
+#. i18n: file kornaccountcfg.ui line 306
+#: rc.cpp:45
+#, no-c-format
+msgid "&Use settings of box"
+msgstr ""
+
+#. i18n: file kornaccountcfg.ui line 320
+#: rc.cpp:48
+#, fuzzy, no-c-format
+msgid "On New Mail"
+msgstr "Ebost newydd:"
+
+#. i18n: file kornaccountcfg.ui line 344
+#: rc.cpp:51
+#, no-c-format
+msgid "Run &command"
+msgstr "Rhed&eg gorchymyn"
+
+#. i18n: file kornaccountcfg.ui line 360
+#: rc.cpp:54
+#, no-c-format
+msgid "Play sou&nd"
+msgstr ""
+
+#. i18n: file kornaccountcfg.ui line 373
+#: rc.cpp:57 rc.cpp:172
+#, no-c-format
+msgid "Show &Passive Popup"
+msgstr ""
+
+#. i18n: file kornaccountcfg.ui line 384
+#: rc.cpp:60
+#, no-c-format
+msgid "Add &date to Passive Popup"
+msgstr ""
+
+#. i18n: file kornboxcfg.ui line 114
+#: rc.cpp:70
+#, no-c-format
+msgid "Icon"
+msgstr "Eicon"
+
+#. i18n: file kornboxcfg.ui line 122
+#: rc.cpp:73
+#, no-c-format
+msgid "Background"
+msgstr "Cefndir"
+
+#. i18n: file kornboxcfg.ui line 162
+#: rc.cpp:78
+#, no-c-format
+msgid "Normal"
+msgstr "Arferol"
+
+#. i18n: file kornboxcfg.ui line 202
+#: rc.cpp:83
+#, no-c-format
+msgid "New mail"
+msgstr "Ebost newydd"
+
+#. i18n: file kornboxcfg.ui line 213
+#: rc.cpp:86
+#, no-c-format
+msgid "Text"
+msgstr "Testun"
+
+#. i18n: file kornboxcfg.ui line 361
+#: rc.cpp:101
+#, fuzzy, no-c-format
+msgid "Animation"
+msgstr "Cadarnhad"
+
+#. i18n: file kornboxcfg.ui line 738
+#: rc.cpp:129
+#, no-c-format
+msgid "Reset counter"
+msgstr ""
+
+#. i18n: file kornboxcfg.ui line 746
+#: rc.cpp:132
+#, no-c-format
+msgid "Mousebutton"
+msgstr ""
+
+#. i18n: file kornboxcfg.ui line 861
+#: rc.cpp:137
+#, no-c-format
+msgid "Middle"
+msgstr "Canol"
+
+#. i18n: file kornboxcfg.ui line 924
+#: rc.cpp:141
+#, no-c-format
+msgid "Popup"
+msgstr "Neidiol"
+
+#. i18n: file kornboxcfg.ui line 984
+#: rc.cpp:145
+#, fuzzy, no-c-format
+msgid "View emails"
+msgstr "Ebost &newydd:"
+
+#. i18n: file kornboxcfg.ui line 1044
+#: rc.cpp:149
+#, fuzzy, no-c-format
+msgid "Recheck"
+msgstr "Ail-&wirio"
+
+#. i18n: file kornboxcfg.ui line 1260
+#: rc.cpp:156
+#, no-c-format
+msgid "Run command"
+msgstr "Rhedeg gorchymyn"
+
+#. i18n: file kornboxcfg.ui line 1330
+#: rc.cpp:160
+#, no-c-format
+msgid "Co&mmand"
+msgstr "Gorchy&myn"
+
+#. i18n: file kornboxcfg.ui line 1351
+#: rc.cpp:163
+#, fuzzy, no-c-format
+msgid "On &New Mail"
+msgstr "Ebost &newydd:"
+
+#. i18n: file kornboxcfg.ui line 1375
+#: rc.cpp:166
+#, fuzzy, no-c-format
+msgid "&Run command"
+msgstr "Gorchymyn plisgyn:"
+
+#. i18n: file kornboxcfg.ui line 1391
+#: rc.cpp:169
+#, no-c-format
+msgid "Play &sound"
+msgstr ""
+
+#. i18n: file kornboxcfg.ui line 1415
+#: rc.cpp:175
+#, no-c-format
+msgid "Add da&te to Passive Popup"
+msgstr ""
+
+#. i18n: file kornboxcfg.ui line 1427
+#: rc.cpp:178
+#, no-c-format
+msgid "Acco&unts"
+msgstr "Cyfr&ifon"
+
+#. i18n: file kornboxcfg.ui line 1443
+#: rc.cpp:181
+#, no-c-format
+msgid "E&dit"
+msgstr "G&olygu"
+
+#. i18n: file kornboxcfg.ui line 1453
+#: rc.cpp:184
+#, no-c-format
+msgid "&DCOP"
+msgstr ""
+
+#. i18n: file kornboxcfg.ui line 1464
+#: rc.cpp:187
+#, no-c-format
+msgid "DCO&P-objects"
+msgstr ""
+
+#. i18n: file kornboxcfg.ui line 1467
+#: rc.cpp:190
+#, no-c-format
+msgid ""
+"The names of DCOP-objects by this box. DCOP-objects let other programs add "
+"'virtual' emails to the box."
+msgstr ""
+
+#. i18n: file korncfg.ui line 16
+#: rc.cpp:193
+#, fuzzy, no-c-format
+msgid "Korn Configuration"
+msgstr "Cadarnhad"
+
+#. i18n: file progress_dialog.ui line 16
+#: rc.cpp:215
+#, no-c-format
+msgid "Progress"
+msgstr "Cynnydd"
+
+#: shell.cpp:366
 msgid "R&echeck"
 msgstr "Ail-&wirio"
 
-#: shell.cpp:361
+#: shell.cpp:367
 msgid "Read &Subjects"
 msgstr "Darllen &Pynciau"
 
-#: shell.cpp:382
+#: shell.cpp:388
 msgid ""
 "You do not appear to have used KOrn before.\n"
 "Would you like a basic configuration created for you?"
@@ -429,43 +738,61 @@ msgstr ""
 "Ymddengys nad ydych wedi defnyddio KOrn o'r blaen.\n"
 " A hoffech iddo greu ffurfweddiad sylfaenol i chi?"
 
-#: shell.cpp:384
+#: shell.cpp:390
 msgid "Welcome to KOrn"
 msgstr "Croeso i KOrn"
 
-#: shell.cpp:385
+#: shell.cpp:391
 msgid "No, Exit"
 msgstr "Na, Gorffen"
 
-#: subjectsdlg.cpp:61
+#: subjectsdlg.cpp:62
 msgid "&Invert Selection"
 msgstr "&Gwrthdroi'r Dewisiad"
 
-#: subjectsdlg.cpp:62
+#: subjectsdlg.cpp:63
 msgid "&Remove Selection"
 msgstr "G&waredu'r Dewisiad"
 
-#: subjectsdlg.cpp:64
+#: subjectsdlg.cpp:65
 msgid "&Show"
 msgstr "&Dangos"
 
-#: subjectsdlg.cpp:80
+#: subjectsdlg.cpp:81
 msgid "From"
 msgstr "Oddi wrth"
 
-#: subjectsdlg.cpp:81
+#: subjectsdlg.cpp:82
 msgid "Subject"
 msgstr "Pwnc"
 
-#: subjectsdlg.cpp:82
+#: subjectsdlg.cpp:83
 msgid "Date"
 msgstr "Dyddiad"
 
-#: subjectsdlg.cpp:83
+#: subjectsdlg.cpp:84
 msgid "Size (Bytes)"
 msgstr "Maint (Beitiau)"
 
-#: subjectsdlg.cpp:189
+#: subjectsdlg.cpp:188
+#, fuzzy, c-format
+msgid "Mails in Box: %1"
+msgstr "Ebostiau yn y Blwch:"
+
+#: subjectsdlg.cpp:234
+msgid "Rechecking box..."
+msgstr ""
+
+#: subjectsdlg.cpp:250
+msgid "Fetching messages..."
+msgstr ""
+
+#: subjectsdlg.cpp:300
+#, fuzzy
+msgid "Downloading subjects..."
+msgstr "Llwytho pynciau.  Arhoswch..."
+
+#: subjectsdlg.cpp:391
 #, c-format
 msgid ""
 "_n: Do you really want to delete %n message?\n"
@@ -474,29 +801,14 @@ msgstr ""
 "Ydych wir eisiau dileu %n neges?\n"
 "Ydych wir eisiau dileu %1 o negeseuon?"
 
-#: subjectsdlg.cpp:190
+#: subjectsdlg.cpp:393
 msgid "Confirmation"
 msgstr "Cadarnhad"
 
-#: subjectsdlg.cpp:206
+#: subjectsdlg.cpp:399
 #, fuzzy
 msgid "Deleting mail; please wait...."
 msgstr "Dileu ebostiau.  Arhoswch..."
-
-#: subjectsdlg.cpp:244
-msgid ""
-"remove list view items not implemented! See void "
-"KornSubjectsDlg::deleteMessage()"
-msgstr ""
-
-#: subjectsdlg.cpp:294
-msgid "Loading subjects. Please wait..."
-msgstr "Llwytho pynciau.  Arhoswch..."
-
-#: subjectsdlg.cpp:360
-#, fuzzy, c-format
-msgid "Mails in Box: %1"
-msgstr "Ebostiau yn y Blwch:"
 
 #: typedlg.cpp:25
 msgid "Korn: Select Mailbox Type"
@@ -505,10 +817,6 @@ msgstr "Korn: Dewiswch Math Blwch Ebost"
 #: typedlg.cpp:29
 msgid "Mailbox Type"
 msgstr "Math Blwch Ebost"
-
-#: unixcfg.cpp:29
-msgid "&Mailbox"
-msgstr "&Blwch Ebost"
 
 #: unixcfg.cpp:45
 msgid "Mbox path:"

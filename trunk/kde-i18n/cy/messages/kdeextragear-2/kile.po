@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-2/kile.po\n"
-"POT-Creation-Date: 2004-11-24 01:24+0100\n"
+"POT-Creation-Date: 2004-12-21 01:25+0100\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -52,17 +52,67 @@ msgstr ""
 msgid "<Custom>"
 msgstr ""
 
+#: newtoolwizard.ui.h:57
+msgid "Error: A tool by this name already exists."
+msgstr ""
+
+#: newtoolwizard.ui.h:62
+msgid "Error: The name may not contain a slash '/'."
+msgstr ""
+
+#: configstructure.cpp:88 kilestructurewidget.cpp:140
+msgid "Labels"
+msgstr "Labeli"
+
+#: configstructure.cpp:88 kilestructurewidget.cpp:145
+msgid "References"
+msgstr "Cyfeiriadau"
+
+#: configstructure.cpp:89
+msgid "Index"
+msgstr "Mynegai"
+
+#: configstructure.cpp:89
+#, fuzzy
+msgid "Graphics"
+msgstr "&Graff"
+
+#: configstructure.cpp:89 configstructure.cpp:120 configstructure.cpp:294
+#: kilestdactions.cpp:107
+msgid "Sectioning"
+msgstr ""
+
 #: configstructure.cpp:94
 msgid "Entries"
 msgstr "Cofnodion"
 
-#: configstructure.cpp:120 kilestdactions.cpp:107
-msgid "Sectioning"
-msgstr ""
+#: configstructure.cpp:105
+msgid "Title"
+msgstr "Teitl"
+
+#: configstructure.cpp:105 configstructure.cpp:107
+msgid "Visible"
+msgstr "Gweledol"
+
+#: configstructure.cpp:108
+msgid "Node"
+msgstr "Nôd"
 
 #: configstructure.cpp:127
 msgid "Document class:"
 msgstr "Dosbarth dogfen:"
+
+#: configstructure.cpp:142
+msgid "Level"
+msgstr "Lefel"
+
+#: configstructure.cpp:142 kile.cpp:461
+msgid "LaTeX Command"
+msgstr ""
+
+#: configstructure.cpp:142
+msgid "Structure Node"
+msgstr ""
 
 #: configstructure.cpp:147
 msgid "Structure View"
@@ -220,79 +270,84 @@ msgstr "Terfynwyd"
 msgid "Cannot find the tool %1 in the configuration database."
 msgstr ""
 
+#: kilefileselect.cpp:72
+#, fuzzy
+msgid "Open selected"
+msgstr "Agor Ffeil"
+
 #: kilefileselect.cpp:82
 msgid "Set encoding"
 msgstr ""
 
-#: configcheckerdlg.cpp:47 configtester.cpp:96
+#: configcheckerdlg.cpp:47 configtester.cpp:97
 msgid "Passed"
 msgstr ""
 
-#: configtester.cpp:102
+#: configtester.cpp:103
 msgid "Failed"
 msgstr ""
 
-#: configtester.cpp:108
+#: configtester.cpp:109
 msgid "Critical failure"
 msgstr ""
 
-#: configtester.cpp:113
+#: configtester.cpp:114
 msgid "Binary"
 msgstr ""
 
-#: configtester.cpp:114
+#: configtester.cpp:115
 msgid "Could not find the binary for this essential tool."
 msgstr ""
 
-#: configtester.cpp:116
+#: configtester.cpp:117
 msgid "Simple Test"
 msgstr ""
 
-#: configtester.cpp:117
+#: configtester.cpp:118
 msgid "This essential tool does not work at all, check your installation."
 msgstr ""
 
-#: configtester.cpp:119
+#: configtester.cpp:120
 msgid "Version"
 msgstr "Fersiwn"
 
-#: configtester.cpp:121
+#: configtester.cpp:122
 msgid "Running in Kile"
 msgstr ""
 
-#: configtester.cpp:122
+#: configtester.cpp:123
 msgid ""
 "Kile is not configured correctly. Go to Settings->Configure Kile->Tools and "
 "either fix the problem or change to the default settings."
 msgstr ""
 
-#: configtester.cpp:126
+#: configtester.cpp:127
 msgid "Source Specials Switch"
 msgstr ""
 
-#: configtester.cpp:127
+#: configtester.cpp:128
 msgid ""
 "Supported, use the 'Modern' configuration for (La)TeX and PDF(La)TeX to "
 "auto-enable inverse and forward search capabilities."
 msgstr ""
 
-#: configtester.cpp:128
+#: configtester.cpp:129
 msgid ""
 "Not supported, use the srcltx package to enable the inverse and forward "
 "search capabilities."
 msgstr ""
 
-#: configtester.cpp:130
+#: configtester.cpp:131
 msgid "Source Specials Package"
 msgstr ""
 
-#: configtester.cpp:131
+#: configtester.cpp:132
 msgid ""
 "Package is functional, include '\\usepackage[active]{srcltx}' in your "
 "preamble to enable the inverse and forward search capabilities."
 msgstr ""
 
-#: configtester.cpp:132
+#: configtester.cpp:133
 msgid ""
 "The srcltx.sty package is not in your TeX input-path. Download this file "
 "from http://ctan.org and save it in $HOME/.TeX."
@@ -325,6 +380,12 @@ msgstr "Eicon:"
 #: managetemplatesdialog.cpp:55
 msgid "Select..."
 msgstr "Dewis..."
+
+#: managetemplatesdialog.cpp:60 managetemplatesdialog.cpp:96
+msgid ""
+"_: marked\n"
+"M"
+msgstr ""
 
 #: managetemplatesdialog.cpp:61 managetemplatesdialog.cpp:97
 msgid "Existing Templates"
@@ -861,10 +922,6 @@ msgstr ""
 msgid "teTeX Doc"
 msgstr ""
 
-#: kile.cpp:461
-msgid "LaTeX Command"
-msgstr ""
-
 #: kile.cpp:462
 msgid "LaTeX Subject"
 msgstr ""
@@ -978,6 +1035,18 @@ msgid ""
 "In order to define the current document as a master document, it has to be "
 "saved first."
 msgstr ""
+
+#: main.cpp:35
+msgid "Jump to line"
+msgstr ""
+
+#: main.cpp:36
+msgid "Start a new Kile mainwindow."
+msgstr ""
+
+#: main.cpp:37
+msgid "File to open"
+msgstr "Ffeil i agor"
 
 #: main.cpp:73
 msgid "KDE Integrated LaTeX Environment"
@@ -1127,6 +1196,16 @@ msgstr ""
 msgid "Use figure environment"
 msgstr ""
 
+#: includegraphicsdialog.cpp:354
+msgid ""
+"*.png *.jpg *.pdf|Graphics\n"
+msgstr ""
+
+#: includegraphicsdialog.cpp:359
+msgid ""
+"*.png *.jpg *.eps.gz *.eps|Graphics\n"
+msgstr ""
+
 #: includegraphicsdialog.cpp:499
 msgid "No graphics file was given. Proceed any way?"
 msgstr ""
@@ -1170,7 +1249,7 @@ msgstr ""
 
 #: kiledocmanager.cpp:584
 msgid "Create Template From Document"
-msgstr ""
+msgstr "Creu Patrymlun O Ddogfen.."
 
 #: kiledocmanager.cpp:590
 msgid "Remove Template"
@@ -1241,7 +1320,7 @@ msgstr ""
 
 #: kiledocmanager.cpp:1093
 msgid "Open Project"
-msgstr ""
+msgstr "Agor Cywaith"
 
 #: kiledocmanager.cpp:1112
 msgid "Save Project"
@@ -3164,6 +3243,22 @@ msgstr ""
 msgid "Tests finished abruptly..."
 msgstr ""
 
+#: kiletoolconfigwidget.cpp:68
+msgid "Quick"
+msgstr ""
+
+#: kiletoolconfigwidget.cpp:68
+msgid "Compile"
+msgstr "Crynhoi"
+
+#: kiletoolconfigwidget.cpp:68
+msgid "Convert"
+msgstr "Trosi"
+
+#: kilestdactions.cpp:132 kiletoolconfigwidget.cpp:68
+msgid "Other"
+msgstr "Arall"
+
 #: kiletoolconfigwidget.cpp:97
 msgid "Run Outside of Kile"
 msgstr ""
@@ -3270,14 +3365,6 @@ msgstr "llinell"
 #: kilestructurewidget.cpp:71
 msgid "No \"structure data\" to display."
 msgstr ""
-
-#: kilestructurewidget.cpp:140
-msgid "Labels"
-msgstr "Labeli"
-
-#: kilestructurewidget.cpp:145
-msgid "References"
-msgstr "Cyfeiriadau"
 
 #: kilestructurewidget.cpp:299
 msgid ""
@@ -3915,10 +4002,6 @@ msgstr ""
 msgid "Huge"
 msgstr "Anferth"
 
-#: kilestdactions.cpp:132
-msgid "Other"
-msgstr "Arall"
-
 #: kilestdactions.cpp:134
 msgid "\\label{key}"
 msgstr ""
@@ -4191,11 +4274,14 @@ msgstr ""
 msgid "An environment by the name '%1' has illegal characters."
 msgstr ""
 
-#: kilespell.cpp:92 kilespell2.cpp:149
-msgid "Corrected %1 words."
+#: kilespell2.cpp:149
+#, c-format
+msgid ""
+"_n: Corrected 1 word.\n"
+"Corrected %n words."
 msgstr ""
 
-#: kilespell.cpp:92 kilespell2.cpp:149
+#: kilespell.cpp:93 kilespell2.cpp:150
 msgid "Spell Checking Done"
 msgstr ""
 
@@ -4305,11 +4391,18 @@ msgstr ""
 msgid "Spellcheck"
 msgstr "Gwirio Sillafu"
 
-#: kilespell.cpp:102
+#: kilespell.cpp:92
+#, c-format
+msgid ""
+"_n: Corrected 1 word.\n"
+"Corrected %n words"
+msgstr ""
+
+#: kilespell.cpp:103
 msgid "I(A)Spell could not be started."
 msgstr ""
 
-#: kilespell.cpp:106
+#: kilespell.cpp:107
 msgid "I(A)Spell seems to have crashed."
 msgstr ""
 

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-1/libk3b.po\n"
-"POT-Creation-Date: 2004-11-12 01:24+0100\n"
+"POT-Creation-Date: 2004-12-17 01:27+0100\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -126,15 +126,51 @@ msgstr "Gweithio ..."
 msgid "Communication error."
 msgstr "Gwall cyfathrebu."
 
-#: core/k3bcore.cpp:145
+#: core/k3bglobals.cpp:411 projects/k3bdatamodewidget.cpp:34
+#: projects/k3bwriterselectionwidget.cpp:259
+#: projects/k3bwriterselectionwidget.cpp:414
+#: projects/k3bwriterselectionwidget.cpp:490
+#: projects/k3bwritingmodewidget.cpp:93 projects/k3bwritingmodewidget.cpp:171
+msgid "Auto"
+msgstr "Ymysgogol"
+
+#: core/k3bglobals.cpp:413 projects/k3bwritingmodewidget.cpp:99
+#: projects/k3bwritingmodewidget.cpp:119 projects/k3bwritingmodewidget.cpp:140
+#: projects/k3bwritingmodewidget.cpp:175
+msgid "TAO"
+msgstr ""
+
+#: core/k3bglobals.cpp:415 projects/k3bwritingmodewidget.cpp:97
+#: projects/k3bwritingmodewidget.cpp:117 projects/k3bwritingmodewidget.cpp:137
+#: projects/k3bwritingmodewidget.cpp:173
+msgid "DAO"
+msgstr ""
+
+#: core/k3bglobals.cpp:417
+msgid "Raw"
+msgstr "Amrwd"
+
+#: core/k3bglobals.cpp:419
+msgid "Incremental Sequential"
+msgstr ""
+
+#: core/k3bglobals.cpp:421 projects/k3bwritingmodewidget.cpp:105
+msgid "Restricted Overwrite"
+msgstr ""
+
+#: core/k3bglobals.cpp:423
+msgid "Unknown writing mode"
+msgstr ""
+
+#: core/k3bcore.cpp:108
 msgid "Reading Options..."
 msgstr ""
 
-#: core/k3bcore.cpp:152
+#: core/k3bcore.cpp:115
 msgid "Searching for external programs..."
 msgstr ""
 
-#: core/k3bcore.cpp:168
+#: core/k3bcore.cpp:131
 msgid "Scanning for CD devices..."
 msgstr ""
 
@@ -439,6 +475,10 @@ msgstr ""
 msgid "No settings available for plugin %1."
 msgstr ""
 
+#: plugin/k3baudioserver.cpp:137
+msgid "Could not initialize Audio Output plugin %1 (%2)"
+msgstr ""
+
 #. i18n: file ./projects/datacd/base_k3bbootimageview.ui line 44
 #: rc.cpp:3
 #, no-c-format
@@ -471,7 +511,7 @@ msgstr ""
 
 #. i18n: file ./projects/datacd/base_k3bbootimageview.ui line 85
 #: projects/datacd/k3bdatafileview.cpp:63
-#: projects/movixcd/k3bmovixlistview.cpp:173 rc.cpp:21
+#: projects/movixcd/k3bmovixlistview.cpp:175 rc.cpp:21
 #, no-c-format
 msgid "Local Path"
 msgstr ""
@@ -501,7 +541,6 @@ msgid "Emulate a harddisk"
 msgstr ""
 
 #. i18n: file ./projects/datacd/base_k3bbootimageview.ui line 142
-#: projects/audiocd/k3baudiozerodata.cpp:53
 #: projects/datacd/k3bbootimageview.cpp:60 rc.cpp:39
 #, no-c-format
 msgid "None"
@@ -1123,8 +1162,8 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./projects/audiocd/base_k3baudiotrackwidget.ui line 25
-#: projects/audiocd/k3baudioburndialog.cpp:67
-#: projects/mixedcd/k3bmixedburndialog.cpp:75 rc.cpp:342
+#: projects/audiocd/k3baudioburndialog.cpp:69
+#: projects/mixedcd/k3bmixedburndialog.cpp:77 rc.cpp:342
 #, no-c-format
 msgid "CD-Text"
 msgstr ""
@@ -1307,7 +1346,7 @@ msgstr ""
 #: projects/datacd/k3bisoimager.cpp:180
 #: projects/datadvd/k3bdvdbooktypejob.cpp:192
 #: projects/datadvd/k3bdvdformattingjob.cpp:249
-#: projects/k3bcdrdaowriter.cpp:769 projects/k3bcdrecordwriter.cpp:717
+#: projects/k3bcdrdaowriter.cpp:769 projects/k3bcdrecordwriter.cpp:716
 #: projects/videocd/k3bvcdjob.cpp:354
 msgid "%1 returned an unknown error (code %2)."
 msgstr ""
@@ -1325,7 +1364,7 @@ msgstr ""
 #: projects/datadvd/k3bdvdbooktypejob.cpp:201
 #: projects/datadvd/k3bdvdformattingjob.cpp:258
 #: projects/datadvd/k3bgrowisofsimager.cpp:346
-#: projects/k3bcdrdaowriter.cpp:781 projects/k3bcdrecordwriter.cpp:741
+#: projects/k3bcdrdaowriter.cpp:781 projects/k3bcdrecordwriter.cpp:737
 #: projects/k3bgrowisofswriter.cpp:494 projects/videocd/k3bvcdjob.cpp:363
 msgid "%1 did not exit cleanly."
 msgstr ""
@@ -1509,8 +1548,8 @@ msgstr ""
 #: projects/audiocd/k3baudiojob.cpp:484 projects/datacd/k3bdatajob.cpp:311
 #: projects/datadvd/k3bdvdjob.cpp:305
 #: projects/datadvd/k3bgrowisofsimager.cpp:261
-#: projects/k3bcdrdaowriter.cpp:590 projects/k3bcdrecordwriter.cpp:346
-#: projects/k3bgrowisofswriter.cpp:335 projects/k3bprojectburndialog.cpp:212
+#: projects/k3bcdrdaowriter.cpp:590 projects/k3bcdrecordwriter.cpp:341
+#: projects/k3bgrowisofswriter.cpp:335 projects/k3bprojectburndialog.cpp:215
 msgid "Writing"
 msgstr ""
 
@@ -1526,19 +1565,19 @@ msgid "Writing data"
 msgstr ""
 
 #: projects/datadvd/k3bgrowisofsimager.cpp:330
-#: projects/k3bcdrdaowriter.cpp:761 projects/k3bcdrecordwriter.cpp:652
+#: projects/k3bcdrdaowriter.cpp:761 projects/k3bcdrecordwriter.cpp:644
 #: projects/k3bgrowisofswriter.cpp:478
 msgid "Average overall write speed: %1 KB/s (%2x)"
 msgstr ""
 
 #: projects/datadvd/k3bgrowisofsimager.cpp:334
-#: projects/k3bcdrdaowriter.cpp:741 projects/k3bcdrecordwriter.cpp:647
+#: projects/k3bcdrdaowriter.cpp:741 projects/k3bcdrecordwriter.cpp:639
 #: projects/k3bgrowisofswriter.cpp:481
 msgid "Simulation successfully finished"
 msgstr ""
 
 #: projects/datadvd/k3bgrowisofsimager.cpp:336
-#: projects/k3bcdrdaowriter.cpp:749 projects/k3bcdrecordwriter.cpp:649
+#: projects/k3bcdrdaowriter.cpp:749 projects/k3bcdrecordwriter.cpp:641
 #: projects/k3bgrowisofswriter.cpp:483
 msgid "Writing successfully finished"
 msgstr ""
@@ -1568,7 +1607,7 @@ msgstr "Maint: %1"
 
 #: projects/datacd/k3bdataburndialog.cpp:83
 #: projects/datadvd/k3bdvdburndialog.cpp:67
-#: projects/mixedcd/k3bmixedburndialog.cpp:80
+#: projects/mixedcd/k3bmixedburndialog.cpp:82
 #: projects/movixcd/k3bmovixburndialog.cpp:67
 #: projects/movixdvd/k3bmovixdvdburndialog.cpp:66
 #: projects/videodvd/k3bvideodvdburndialog.cpp:60
@@ -1577,17 +1616,17 @@ msgstr ""
 
 #: projects/datacd/k3bdataburndialog.cpp:88
 #: projects/datadvd/k3bdvdburndialog.cpp:72
-#: projects/mixedcd/k3bmixedburndialog.cpp:85
+#: projects/mixedcd/k3bmixedburndialog.cpp:87
 #: projects/movixcd/k3bmovixburndialog.cpp:72
 #: projects/movixdvd/k3bmovixdvdburndialog.cpp:71
 msgid "Filesystem"
 msgstr ""
 
-#: projects/audiocd/k3baudioburndialog.cpp:85
+#: projects/audiocd/k3baudioburndialog.cpp:87
 #: projects/datacd/k3bdataburndialog.cpp:93
-#: projects/datacd/k3bdatapropertiesdialog.cpp:172
+#: projects/datacd/k3bdatapropertiesdialog.cpp:174
 #: projects/datadvd/k3bdvdburndialog.cpp:77
-#: projects/mixedcd/k3bmixedburndialog.cpp:90
+#: projects/mixedcd/k3bmixedburndialog.cpp:92
 #: projects/movixcd/k3bmovixburndialog.cpp:77
 #: projects/movixdvd/k3bmovixdvdburndialog.cpp:76
 #: projects/videocd/k3bvcdburndialog.cpp:431
@@ -1633,10 +1672,10 @@ msgstr ""
 msgid "&Finish multisession"
 msgstr ""
 
-#: projects/audiocd/k3baudioburndialog.cpp:75
+#: projects/audiocd/k3baudioburndialog.cpp:77
 #: projects/datacd/k3bdataburndialog.cpp:217
 #: projects/datadvd/k3bdvdburndialog.cpp:144
-#: projects/mixedcd/k3bmixedburndialog.cpp:140
+#: projects/mixedcd/k3bmixedburndialog.cpp:142
 #: projects/movixcd/k3bmovixburndialog.cpp:121
 #: projects/videocd/k3bvcdburndialog.cpp:478
 msgid "Settings"
@@ -1668,7 +1707,7 @@ msgid "DVD-RW and DVD+RW"
 msgstr ""
 
 #: projects/datadvd/k3bdvdformattingdialog.cpp:59
-#: projects/k3bprojectburndialog.cpp:215
+#: projects/k3bprojectburndialog.cpp:218
 msgid "Writing Mode"
 msgstr ""
 
@@ -1776,7 +1815,7 @@ msgid "Growing ISO9660 filesystem on DVD+RW."
 msgstr ""
 
 #: projects/datadvd/k3bdvdjob.cpp:569
-msgid "Writing Dual-Layer DVD+R."
+msgid "Writing Double Layer DVD+R."
 msgstr ""
 
 #: projects/datadvd/k3bdvdjob.cpp:571
@@ -1967,13 +2006,6 @@ msgstr ""
 msgid "Open the burning dialog"
 msgstr ""
 
-#: projects/k3bdatamodewidget.cpp:34 projects/k3bwriterselectionwidget.cpp:258
-#: projects/k3bwriterselectionwidget.cpp:413
-#: projects/k3bwriterselectionwidget.cpp:489
-#: projects/k3bwritingmodewidget.cpp:93 projects/k3bwritingmodewidget.cpp:171
-msgid "Auto"
-msgstr "Ymysgogol"
-
 #: projects/k3bdatamodewidget.cpp:35
 msgid "Mode1"
 msgstr ""
@@ -2084,7 +2116,7 @@ msgstr "Allfwrw"
 
 #: projects/k3bemptydiscwaiter.cpp:79
 msgid "Load"
-msgstr ""
+msgstr "Llwytho"
 
 #: projects/k3bemptydiscwaiter.cpp:102
 msgid "Found media:"
@@ -2099,7 +2131,7 @@ msgid "CD-R(W) or DVD±R(W)"
 msgstr ""
 
 #: projects/k3bemptydiscwaiter.cpp:139
-msgid "Dual-Layer DVD+R"
+msgid "Double Layer DVD±R"
 msgstr ""
 
 #: projects/k3bemptydiscwaiter.cpp:141
@@ -2203,49 +2235,49 @@ msgstr ""
 msgid "No Data to Burn"
 msgstr ""
 
-#: projects/mixedcd/k3bmixedburndialog.cpp:65
+#: projects/mixedcd/k3bmixedburndialog.cpp:67
 msgid "Mixed Project"
 msgstr ""
 
-#: projects/audiocd/k3baudioburndialog.cpp:59
+#: projects/audiocd/k3baudioburndialog.cpp:61
 #: projects/audiocd/k3baudiojob.cpp:643
-#: projects/mixedcd/k3bmixedburndialog.cpp:66
+#: projects/mixedcd/k3bmixedburndialog.cpp:68
 msgid ""
 "_n: 1 track (%1 minutes)\n"
 "%n tracks (%1 minutes)"
 msgstr ""
 
 #: projects/datacd/k3bdataburndialog.cpp:187
-#: projects/mixedcd/k3bmixedburndialog.cpp:109
+#: projects/mixedcd/k3bmixedburndialog.cpp:111
 #: projects/movixcd/k3bmovixburndialog.cpp:111
 msgid "Datatrack Mode"
 msgstr ""
 
-#: projects/mixedcd/k3bmixedburndialog.cpp:112
+#: projects/mixedcd/k3bmixedburndialog.cpp:114
 msgid "Misc."
 msgstr "Amrywiol."
 
-#: projects/mixedcd/k3bmixedburndialog.cpp:115
+#: projects/mixedcd/k3bmixedburndialog.cpp:117
 msgid "Mixed Mode Type"
 msgstr ""
 
-#: projects/mixedcd/k3bmixedburndialog.cpp:121
+#: projects/mixedcd/k3bmixedburndialog.cpp:123
 msgid "Data in second session (CD-Extra)"
 msgstr ""
 
-#: projects/mixedcd/k3bmixedburndialog.cpp:124
+#: projects/mixedcd/k3bmixedburndialog.cpp:126
 msgid "Data in first track"
 msgstr ""
 
-#: projects/mixedcd/k3bmixedburndialog.cpp:127
+#: projects/mixedcd/k3bmixedburndialog.cpp:129
 msgid "Data in last track"
 msgstr ""
 
-#: projects/mixedcd/k3bmixedburndialog.cpp:146
+#: projects/mixedcd/k3bmixedburndialog.cpp:148
 msgid "First track will contain the data"
 msgstr ""
 
-#: projects/mixedcd/k3bmixedburndialog.cpp:147
+#: projects/mixedcd/k3bmixedburndialog.cpp:149
 msgid ""
 "<p><b>Standard mixed mode CD 1</b>"
 "<p>K3b will write the data track before all audio tracks."
@@ -2256,11 +2288,11 @@ msgid ""
 "players that try to play the data track."
 msgstr ""
 
-#: projects/mixedcd/k3bmixedburndialog.cpp:155
+#: projects/mixedcd/k3bmixedburndialog.cpp:157
 msgid "Last track will contain the data"
 msgstr ""
 
-#: projects/mixedcd/k3bmixedburndialog.cpp:156
+#: projects/mixedcd/k3bmixedburndialog.cpp:158
 msgid ""
 "<p><b>Standard mixed mode CD 2</b>"
 "<p>K3b will write the data track after all audio tracks."
@@ -2271,11 +2303,11 @@ msgid ""
 "players that try to play the data track."
 msgstr ""
 
-#: projects/mixedcd/k3bmixedburndialog.cpp:164
+#: projects/mixedcd/k3bmixedburndialog.cpp:166
 msgid "The data will be written in a second session"
 msgstr ""
 
-#: projects/mixedcd/k3bmixedburndialog.cpp:165
+#: projects/mixedcd/k3bmixedburndialog.cpp:167
 msgid ""
 "<p><b>Blue book CD</b>"
 "<p>"
@@ -2335,12 +2367,12 @@ msgid "Reloading the media"
 msgstr ""
 
 #: projects/datacd/k3bdataverifyingjob.cpp:120
-#: projects/k3bcdrecordwriter.cpp:600 projects/mixedcd/k3bmixedjob.cpp:399
+#: projects/k3bcdrecordwriter.cpp:592 projects/mixedcd/k3bmixedjob.cpp:399
 msgid "Please reload the medium and press 'ok'"
 msgstr ""
 
 #: projects/datacd/k3bdataverifyingjob.cpp:121
-#: projects/k3bcdrecordwriter.cpp:601 projects/mixedcd/k3bmixedjob.cpp:400
+#: projects/k3bcdrecordwriter.cpp:593 projects/mixedcd/k3bmixedjob.cpp:400
 msgid "Unable to close the tray"
 msgstr ""
 
@@ -2464,7 +2496,7 @@ msgstr ""
 msgid "Please try again with writing mode DAO."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:496 projects/k3bgrowisofshandler.cpp:79
+#: projects/k3bcdrecordwriter.cpp:488 projects/k3bgrowisofshandler.cpp:79
 msgid "Trying to write more than the official disk capacity"
 msgstr ""
 
@@ -2484,7 +2516,7 @@ msgstr ""
 msgid "Closing Disk"
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:573 projects/k3bgrowisofshandler.cpp:103
+#: projects/k3bcdrecordwriter.cpp:565 projects/k3bgrowisofshandler.cpp:103
 #: projects/k3bgrowisofshandler.cpp:110 projects/k3bgrowisofshandler.cpp:111
 msgid "Closing Session"
 msgstr ""
@@ -2535,11 +2567,12 @@ msgstr ""
 msgid "Report the problem if it persists anyway."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:669 projects/k3bgrowisofshandler.cpp:169
+#: projects/k3bcdrecordwriter.cpp:661 projects/k3bgrowisofshandler.cpp:169
 msgid "Data did not fit on disk."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:671 projects/k3bgrowisofshandler.cpp:171
+#: projects/k3bcdrdaowriter.cpp:895 projects/k3bcdrecordwriter.cpp:663
+#: projects/k3bgrowisofshandler.cpp:171
 msgid "Data does not fit on disk."
 msgstr ""
 
@@ -2586,8 +2619,8 @@ msgid "Replace All"
 msgstr ""
 
 #: projects/datacd/k3bdatadoc.cpp:214 projects/datacd/k3bdatadoc.cpp:327
-#: projects/k3bwriterselectionwidget.cpp:260
-#: projects/k3bwriterselectionwidget.cpp:491
+#: projects/k3bwriterselectionwidget.cpp:261
+#: projects/k3bwriterselectionwidget.cpp:492
 msgid "Ignore"
 msgstr "Anwybyddu"
 
@@ -2597,7 +2630,7 @@ msgstr "Anwybyddu Popeth"
 
 #: projects/datacd/k3bdatadirtreeview.cpp:292
 #: projects/datacd/k3bdatadoc.cpp:216 projects/datacd/k3bdatadoc.cpp:329
-#: projects/datacd/k3bdatafileview.cpp:250
+#: projects/datacd/k3bdatafileview.cpp:257
 msgid "Rename"
 msgstr "Ail-enwi"
 
@@ -2611,12 +2644,12 @@ msgstr ""
 msgid "A file with that name already exists. Please enter a new name:"
 msgstr ""
 
-#: projects/audiocd/k3baudiodoc.cpp:822 projects/datacd/k3bdatadoc.cpp:1256
+#: projects/audiocd/k3baudiodoc.cpp:829 projects/datacd/k3bdatadoc.cpp:1256
 #: projects/videocd/k3bvcddoc.cpp:405
 msgid "Could not find the following files:"
 msgstr ""
 
-#: projects/audiocd/k3baudiodoc.cpp:824 projects/datacd/k3bdatadoc.cpp:1257
+#: projects/audiocd/k3baudiodoc.cpp:831 projects/datacd/k3bdatadoc.cpp:1257
 #: projects/videocd/k3bvcddoc.cpp:406
 msgid "Not Found"
 msgstr ""
@@ -2642,7 +2675,7 @@ msgid "Unable to Import Session"
 msgstr ""
 
 #: projects/datacd/k3bdatadoc.cpp:1401 projects/datacd/k3bdatadoc.cpp:1414
-#: projects/datacd/k3bdataviewitem.cpp:289
+#: projects/datacd/k3bdataviewitem.cpp:291
 msgid "From previous session"
 msgstr ""
 
@@ -2704,13 +2737,13 @@ msgid "Please Choose Boot Image"
 msgstr ""
 
 #: projects/datacd/k3bdatadirtreeview.cpp:71
-#: projects/datacd/k3bdatapropertiesdialog.cpp:103
+#: projects/datacd/k3bdatapropertiesdialog.cpp:105
 #: projects/datacd/k3bdataviewitem.cpp:174
 msgid "Directory"
 msgstr "Cyfeiriadur"
 
 #: projects/datacd/k3bdatadirtreeview.cpp:288
-#: projects/datacd/k3bdatafileview.cpp:246
+#: projects/datacd/k3bdatafileview.cpp:253
 msgid "New Directory..."
 msgstr ""
 
@@ -2718,20 +2751,20 @@ msgstr ""
 #: projects/datacd/k3bdatadirtreeview.cpp:339
 #: projects/datacd/k3bdatadirtreeview.cpp:342
 #: projects/datacd/k3bdatadirtreeview.cpp:345
-#: projects/datacd/k3bdatafileview.cpp:295
-#: projects/datacd/k3bdatafileview.cpp:297
-#: projects/datacd/k3bdatafileview.cpp:300
-#: projects/datacd/k3bdatafileview.cpp:303
+#: projects/datacd/k3bdatafileview.cpp:302
+#: projects/datacd/k3bdatafileview.cpp:304
+#: projects/datacd/k3bdatafileview.cpp:307
+#: projects/datacd/k3bdatafileview.cpp:310
 msgid "New Directory"
 msgstr ""
 
 #: projects/datacd/k3bdatadirtreeview.cpp:338
-#: projects/datacd/k3bdatafileview.cpp:296
+#: projects/datacd/k3bdatafileview.cpp:303
 msgid "Please insert the name for the new directory:"
 msgstr ""
 
 #: projects/datacd/k3bdatadirtreeview.cpp:343
-#: projects/datacd/k3bdatafileview.cpp:301
+#: projects/datacd/k3bdatafileview.cpp:308
 msgid ""
 "A file with that name already exists. Please insert the name for the new "
 "directory:"
@@ -2783,19 +2816,19 @@ msgstr ""
 msgid "The disk is either empty or not appendable."
 msgstr ""
 
-#: projects/datacd/k3bdatapropertiesdialog.cpp:92
-#: projects/datacd/k3bdataviewitem.cpp:208
-#: projects/movixcd/k3bmovixlistview.cpp:84
-#: projects/movixcd/k3bmovixlistview.cpp:138
+#: projects/datacd/k3bdatapropertiesdialog.cpp:94
+#: projects/datacd/k3bdataviewitem.cpp:210
+#: projects/movixcd/k3bmovixlistview.cpp:85
+#: projects/movixcd/k3bmovixlistview.cpp:140
 #, c-format
 msgid "Link to %1"
 msgstr ""
 
-#: projects/datacd/k3bdataviewitem.cpp:219
+#: projects/datacd/k3bdataviewitem.cpp:221
 msgid "outside of project"
 msgstr ""
 
-#: projects/datacd/k3bdataviewitem.cpp:239
+#: projects/datacd/k3bdataviewitem.cpp:241
 msgid "root"
 msgstr ""
 
@@ -2857,76 +2890,76 @@ msgstr ""
 msgid "No files to be written."
 msgstr ""
 
-#: projects/datacd/k3bdatapropertiesdialog.cpp:44
+#: projects/datacd/k3bdatapropertiesdialog.cpp:45
 msgid "File Properties"
 msgstr ""
 
-#: projects/datacd/k3bdatapropertiesdialog.cpp:67
+#: projects/datacd/k3bdatapropertiesdialog.cpp:68
 #: projects/videocd/k3bvcdtrackdialog.cpp:597
 #: projects/videocd/k3bvcdtrackdialog.cpp:654
 msgid "Type:"
 msgstr "Math:"
 
-#: projects/datacd/k3bdatapropertiesdialog.cpp:68
+#: projects/datacd/k3bdatapropertiesdialog.cpp:69
 msgid "Location:"
 msgstr "Lleoliad:"
 
-#: projects/datacd/k3bdatapropertiesdialog.cpp:69
+#: projects/datacd/k3bdatapropertiesdialog.cpp:70
 #: projects/videocd/k3bvcdtrackdialog.cpp:392
 msgid "Size:"
 msgstr "Maint:"
 
-#: projects/datacd/k3bdatapropertiesdialog.cpp:77
+#: projects/datacd/k3bdatapropertiesdialog.cpp:78
 msgid "Local name:"
 msgstr ""
 
-#: projects/datacd/k3bdatapropertiesdialog.cpp:79
+#: projects/datacd/k3bdatapropertiesdialog.cpp:80
 msgid "Local location:"
 msgstr ""
 
-#: projects/datacd/k3bdatapropertiesdialog.cpp:110
+#: projects/datacd/k3bdatapropertiesdialog.cpp:112
 #, c-format
 msgid ""
 "_n: in 1 file\n"
 "in %n files"
 msgstr ""
 
-#: projects/datacd/k3bdatapropertiesdialog.cpp:111
+#: projects/datacd/k3bdatapropertiesdialog.cpp:113
 #, c-format
 msgid ""
 "_n: and 1 directory\n"
 "and %n directories"
 msgstr ""
 
-#: projects/datacd/k3bdatapropertiesdialog.cpp:115
+#: projects/datacd/k3bdatapropertiesdialog.cpp:117
 msgid "Special file"
 msgstr ""
 
-#: projects/datacd/k3bdatapropertiesdialog.cpp:151
+#: projects/datacd/k3bdatapropertiesdialog.cpp:153
 msgid "Hide on Rockridge"
 msgstr ""
 
-#: projects/datacd/k3bdatapropertiesdialog.cpp:152
+#: projects/datacd/k3bdatapropertiesdialog.cpp:154
 msgid "Hide on Joliet"
 msgstr ""
 
-#: projects/datacd/k3bdatapropertiesdialog.cpp:166
+#: projects/datacd/k3bdatapropertiesdialog.cpp:168
 msgid "Sort weight:"
 msgstr ""
 
-#: projects/datacd/k3bdatapropertiesdialog.cpp:191
+#: projects/datacd/k3bdatapropertiesdialog.cpp:193
 msgid "Hide this file in the RockRidge filesystem"
 msgstr ""
 
-#: projects/datacd/k3bdatapropertiesdialog.cpp:192
+#: projects/datacd/k3bdatapropertiesdialog.cpp:194
 msgid "Hide this file in the Joliet filesystem"
 msgstr ""
 
-#: projects/datacd/k3bdatapropertiesdialog.cpp:193
+#: projects/datacd/k3bdatapropertiesdialog.cpp:195
 msgid "Modify the physical sorting"
 msgstr ""
 
-#: projects/datacd/k3bdatapropertiesdialog.cpp:194
+#: projects/datacd/k3bdatapropertiesdialog.cpp:196
 msgid ""
 "<p>If this option is checked, the file or directory (and its entire "
 "contents) will be hidden on the ISO9660 and RockRidge filesystem.</p>"
@@ -2935,7 +2968,7 @@ msgid ""
 "RockRidge and README.rr on the Joliet filesystem.</p>"
 msgstr ""
 
-#: projects/datacd/k3bdatapropertiesdialog.cpp:201
+#: projects/datacd/k3bdatapropertiesdialog.cpp:203
 msgid ""
 "<p>If this option is checked, the file or directory (and its entire "
 "contents) will be hidden on the Joliet filesystem.</p>"
@@ -2944,7 +2977,7 @@ msgid ""
 "RockRidge and README.rr on the Joliet filesystem.</p>"
 msgstr ""
 
-#: projects/datacd/k3bdatapropertiesdialog.cpp:208
+#: projects/datacd/k3bdatapropertiesdialog.cpp:210
 msgid ""
 "<p>This value modifies the physical sort order of the files in the ISO9660 "
 "filesystem. A higher weighting means that the file will be located closer to "
@@ -3059,29 +3092,29 @@ msgid ""
 msgstr ""
 
 #: projects/datacd/k3bdatafileview.cpp:60
-#: projects/movixcd/k3bmovixlistview.cpp:170
+#: projects/movixcd/k3bmovixlistview.cpp:172
 msgid "Name"
 msgstr "Enw"
 
-#: projects/audiocd/k3baudiotrackview.cpp:109
+#: projects/audiocd/k3baudiotrackview.cpp:121
 #: projects/datacd/k3bdatafileview.cpp:61
-#: projects/movixcd/k3bmovixlistview.cpp:171
+#: projects/movixcd/k3bmovixlistview.cpp:173
 #: projects/videocd/k3bvcdburndialog.cpp:439
 #: projects/videocd/k3bvcdlistview.cpp:83
 msgid "Type"
 msgstr "Math"
 
 #: projects/datacd/k3bdatafileview.cpp:62
-#: projects/movixcd/k3bmovixlistview.cpp:172
+#: projects/movixcd/k3bmovixlistview.cpp:174
 msgid "Size"
 msgstr "Maint"
 
 #: projects/datacd/k3bdatafileview.cpp:64
-#: projects/movixcd/k3bmovixlistview.cpp:174
+#: projects/movixcd/k3bmovixlistview.cpp:176
 msgid "Link"
 msgstr "Cyswllt"
 
-#: projects/datacd/k3bdatafileview.cpp:252
+#: projects/datacd/k3bdatafileview.cpp:259
 msgid "Parent Directory"
 msgstr "Cyfeiriadur Rhiant"
 
@@ -3216,11 +3249,11 @@ msgid ""
 "one may select the application manually."
 msgstr ""
 
-#: projects/k3bwriterselectionwidget.cpp:472
+#: projects/k3bwriterselectionwidget.cpp:473
 msgid "No writable DVD media found."
 msgstr ""
 
-#: projects/k3bwriterselectionwidget.cpp:476
+#: projects/k3bwriterselectionwidget.cpp:477
 msgid "No writable CD media found."
 msgstr ""
 
@@ -3299,29 +3332,29 @@ msgstr ""
 msgid "Could not rename subtitle file. File with requested name %1 already exists."
 msgstr ""
 
-#: projects/movixcd/k3bmovixlistview.cpp:93
-#: projects/movixcd/k3bmovixlistview.cpp:149
+#: projects/movixcd/k3bmovixlistview.cpp:94
+#: projects/movixcd/k3bmovixlistview.cpp:151
 msgid " (broken)"
 msgstr ""
 
-#: projects/audiocd/k3baudiotrackview.cpp:106
-#: projects/movixcd/k3bmovixlistview.cpp:169
+#: projects/audiocd/k3baudiotrackview.cpp:118
+#: projects/movixcd/k3bmovixlistview.cpp:171
 #: projects/videocd/k3bvcdlistview.cpp:81
 msgid "No."
 msgstr "Rhif"
 
-#: projects/movixcd/k3bmovixlistview.cpp:184
+#: projects/movixcd/k3bmovixlistview.cpp:186
 #: projects/movixdvd/k3bmovixdvdview.cpp:32
 msgid "Use drag'n'drop to add files to the project."
 msgstr ""
 
-#: projects/movixcd/k3bmovixlistview.cpp:185
+#: projects/movixcd/k3bmovixlistview.cpp:187
 #: projects/movixdvd/k3bmovixdvdview.cpp:33
 msgid "To remove or rename files use the context menu."
 msgstr ""
 
-#: projects/audiocd/k3baudiotrackview.cpp:64
-#: projects/movixcd/k3bmovixlistview.cpp:186
+#: projects/audiocd/k3baudiotrackview.cpp:74
+#: projects/movixcd/k3bmovixlistview.cpp:188
 #: projects/videocd/k3bvcdlistview.cpp:53
 msgid "After that press the burn button to write the CD."
 msgstr ""
@@ -3382,7 +3415,7 @@ msgstr "Hyd"
 msgid "File Size"
 msgstr "Maint Ffeil"
 
-#: projects/audiocd/k3baudiotrackview.cpp:111
+#: projects/audiocd/k3baudiotrackview.cpp:123
 #: projects/videocd/k3bvcdlistview.cpp:90
 #: projects/videocd/k3bvcdtrackdialog.cpp:389
 msgid "Filename"
@@ -4190,7 +4223,7 @@ msgstr ""
 #: projects/videocd/k3bvcdtrack.cpp:279 projects/videocd/k3bvcdtrack.cpp:292
 #: projects/videocd/k3bvcdtrack.cpp:305 projects/videocd/k3bvcdtrack.cpp:317
 #: projects/videocd/k3bvcdtrack.cpp:331 projects/videocd/k3bvcdtrack.cpp:353
-#: projects/videocd/k3bvcdtrack.cpp:417
+#: projects/videocd/k3bvcdtrack.cpp:416
 msgid "n/a"
 msgstr "amherthnasol"
 
@@ -4236,26 +4269,22 @@ msgid "invalid"
 msgstr ""
 
 #: projects/videocd/k3bvcdtrack.cpp:390
-msgid "no audio"
-msgstr ""
-
-#: projects/videocd/k3bvcdtrack.cpp:391
 msgid "stereo"
 msgstr ""
 
-#: projects/videocd/k3bvcdtrack.cpp:392
+#: projects/videocd/k3bvcdtrack.cpp:391
 msgid "joint stereo"
 msgstr ""
 
-#: projects/videocd/k3bvcdtrack.cpp:393 projects/videocd/k3bvcdtrack.cpp:398
+#: projects/videocd/k3bvcdtrack.cpp:392 projects/videocd/k3bvcdtrack.cpp:397
 msgid "dual channel"
 msgstr ""
 
-#: projects/videocd/k3bvcdtrack.cpp:394
+#: projects/videocd/k3bvcdtrack.cpp:393
 msgid "single channel"
 msgstr ""
 
-#: projects/videocd/k3bvcdtrack.cpp:399
+#: projects/videocd/k3bvcdtrack.cpp:398
 msgid "surround sound"
 msgstr ""
 
@@ -4462,16 +4491,6 @@ msgstr ""
 msgid "Let K3b select the best-suited mode. This is the recommended selection."
 msgstr ""
 
-#: projects/k3bwritingmodewidget.cpp:97 projects/k3bwritingmodewidget.cpp:117
-#: projects/k3bwritingmodewidget.cpp:137 projects/k3bwritingmodewidget.cpp:173
-msgid "DAO"
-msgstr ""
-
-#: projects/k3bwritingmodewidget.cpp:99 projects/k3bwritingmodewidget.cpp:119
-#: projects/k3bwritingmodewidget.cpp:140 projects/k3bwritingmodewidget.cpp:175
-msgid "TAO"
-msgstr ""
-
 #: projects/k3bwritingmodewidget.cpp:101 projects/k3bwritingmodewidget.cpp:121
 #: projects/k3bwritingmodewidget.cpp:143 projects/k3bwritingmodewidget.cpp:177
 msgid "RAW"
@@ -4480,10 +4499,6 @@ msgstr ""
 #: projects/k3bwritingmodewidget.cpp:103 projects/k3bwritingmodewidget.cpp:123
 #: projects/k3bwritingmodewidget.cpp:146 projects/k3bwritingmodewidget.cpp:181
 msgid "Incremental"
-msgstr ""
-
-#: projects/k3bwritingmodewidget.cpp:105
-msgid "Restricted Overwrite"
 msgstr ""
 
 #: projects/k3bwritingmodewidget.cpp:108
@@ -4546,15 +4561,15 @@ msgstr ""
 msgid "Writing Audio CD"
 msgstr ""
 
-#: projects/audiocd/k3baudiozerodata.cpp:59
+#: projects/audiocd/k3baudiozerodata.cpp:53
 msgid "Silence"
 msgstr ""
 
-#: projects/audiocd/k3baudiodoc.cpp:834
+#: projects/audiocd/k3baudiodoc.cpp:841
 msgid "Unable to handle the following files due to an unsupported format:"
 msgstr ""
 
-#: projects/audiocd/k3baudiodoc.cpp:836
+#: projects/audiocd/k3baudiodoc.cpp:843
 msgid "Unsupported Format"
 msgstr ""
 
@@ -4579,10 +4594,14 @@ msgstr "Nesaf"
 msgid "Prev"
 msgstr "Cynt :"
 
-#: projects/audiocd/k3baudiotrackplayer.cpp:110
+#: projects/audiocd/k3baudiotrackplayer.cpp:113
 #, fuzzy
 msgid "Seek"
 msgstr "Cyflymder:"
+
+#: projects/audiocd/k3baudiotrackplayer.cpp:173
+msgid "Playing track %1: %2 - %3"
+msgstr ""
 
 #: projects/audiocd/k3baudiotracksplitdialog.cpp:31
 msgid "Split Audio Track"
@@ -4616,36 +4635,40 @@ msgstr ""
 msgid "Error while decoding track %1."
 msgstr ""
 
-#: projects/audiocd/k3baudiotrackview.cpp:63
+#: projects/audiocd/k3baudiotrackview.cpp:73
 msgid "Use drag'n'drop to add audio files to the project."
 msgstr ""
 
-#: projects/audiocd/k3baudiotrackview.cpp:107
+#: projects/audiocd/k3baudiotrackview.cpp:119
 msgid "Artist (CD-Text)"
 msgstr ""
 
-#: projects/audiocd/k3baudiotrackview.cpp:108
+#: projects/audiocd/k3baudiotrackview.cpp:120
 msgid "Title (CD-Text)"
 msgstr ""
 
-#: projects/audiocd/k3baudiotrackview.cpp:110
+#: projects/audiocd/k3baudiotrackview.cpp:122
 msgid "Length"
 msgstr "Hyd"
 
-#: projects/audiocd/k3baudiotrackview.cpp:140
+#: projects/audiocd/k3baudiotrackview.cpp:152
 msgid "Add Silence"
 msgstr ""
 
-#: projects/audiocd/k3baudiotrackview.cpp:143
+#: projects/audiocd/k3baudiotrackview.cpp:155
 msgid "Merge Tracks"
 msgstr ""
 
-#: projects/audiocd/k3baudiotrackview.cpp:146
+#: projects/audiocd/k3baudiotrackview.cpp:158
 msgid "Source to Track"
 msgstr ""
 
-#: projects/audiocd/k3baudiotrackview.cpp:149
+#: projects/audiocd/k3baudiotrackview.cpp:161
 msgid "Split Track..."
+msgstr ""
+
+#: projects/audiocd/k3baudiotrackview.cpp:164
+msgid "Play Track"
 msgstr ""
 
 #: projects/audiocd/k3baudiotrackdialog.cpp:59
@@ -4656,23 +4679,23 @@ msgstr ""
 msgid "Track Properties"
 msgstr ""
 
-#: projects/audiocd/k3baudioburndialog.cpp:58
+#: projects/audiocd/k3baudioburndialog.cpp:60
 msgid "Audio Project"
 msgstr ""
 
-#: projects/audiocd/k3baudioburndialog.cpp:78
+#: projects/audiocd/k3baudioburndialog.cpp:80
 msgid "Gimmicks"
 msgstr ""
 
-#: projects/audiocd/k3baudioburndialog.cpp:79
+#: projects/audiocd/k3baudioburndialog.cpp:81
 msgid "Hide first track"
 msgstr ""
 
-#: projects/audiocd/k3baudioburndialog.cpp:95
+#: projects/audiocd/k3baudioburndialog.cpp:97
 msgid "Hide the first track in the first pregap"
 msgstr ""
 
-#: projects/audiocd/k3baudioburndialog.cpp:100
+#: projects/audiocd/k3baudioburndialog.cpp:102
 msgid ""
 "<p>If this option is checked K3b will <em>hide</em> the first track."
 "<p>The audio CD standard uses pregaps before every track on the CD. By "
@@ -4696,216 +4719,204 @@ msgstr ""
 msgid "Writer does not support buffer underrun free recording (Burnfree)"
 msgstr ""
 
-#: projects/k3bcdrdaowriter.cpp:583 projects/k3bcdrecordwriter.cpp:336
-#, c-format
-msgid "Starting DAO simulation at %1x speed..."
-msgstr ""
-
-#: projects/k3bcdrecordwriter.cpp:339
-#, c-format
-msgid "Starting raw simulation at %1x speed..."
+#: projects/k3bcdrecordwriter.cpp:335
+msgid "Starting %1 simulation at %2x speed..."
 msgstr ""
 
 #: projects/k3bcdrecordwriter.cpp:342
-#, c-format
-msgid "Starting TAO simulation at %1x speed..."
+msgid "Starting %1 writing at %2x speed..."
 msgstr ""
 
-#: projects/k3bcdrdaowriter.cpp:589 projects/k3bcdrecordwriter.cpp:349
-#, c-format
-msgid "Starting DAO writing at %1x speed..."
-msgstr ""
-
-#: projects/k3bcdrecordwriter.cpp:351
-#, c-format
-msgid "Starting raw writing at %1x speed..."
-msgstr ""
-
-#: projects/k3bcdrecordwriter.cpp:353
-#, c-format
-msgid "Starting TAO writing at %1x speed..."
-msgstr ""
-
-#: projects/k3bcdrecordwriter.cpp:471
+#: projects/k3bcdrecordwriter.cpp:463
 msgid "DAO (Disk At Once) recording not supported with this writer"
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:472
+#: projects/k3bcdrecordwriter.cpp:464
 msgid "Please choose TAO (Track At Once) and try again"
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:475
+#: projects/k3bcdrecordwriter.cpp:467
 msgid "RAW recording not supported with this writer"
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:478
+#: projects/k3bcdrecordwriter.cpp:470
 msgid "Input/output error. Not necessarily serious."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:487
+#: projects/k3bcdrecordwriter.cpp:479
 msgid "Reloading of media required"
 msgstr ""
 
-#: projects/k3bcdrdaowriter.cpp:890 projects/k3bcdrecordwriter.cpp:504
+#: projects/k3bcdrdaowriter.cpp:890 projects/k3bcdrecordwriter.cpp:496
 msgid "No valid %1 option: %2"
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:527
+#: projects/k3bcdrecordwriter.cpp:519
 msgid "Only session 1 will be cloned."
 msgstr ""
 
-#: projects/k3bcdrdaowriter.cpp:797 projects/k3bcdrecordwriter.cpp:541
+#: projects/k3bcdrdaowriter.cpp:797 projects/k3bcdrecordwriter.cpp:533
 #, c-format
 msgid "Medium or burner do not support writing at %1x speed"
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:543
+#: projects/k3bcdrecordwriter.cpp:535
 #, c-format
 msgid "Switching burn speed up to %1x"
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:545
+#: projects/k3bcdrecordwriter.cpp:537
 #, c-format
 msgid "Switching burn speed down to %1x"
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:557
+#: projects/k3bcdrecordwriter.cpp:549
 msgid "Starting writing"
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:577
+#: projects/k3bcdrecordwriter.cpp:569
 msgid "Writing Leadin"
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:580
+#: projects/k3bcdrecordwriter.cpp:572
 msgid "Writing Leadout"
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:583
+#: projects/k3bcdrecordwriter.cpp:575
 msgid "Writing pregap"
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:586
+#: projects/k3bcdrecordwriter.cpp:578
 msgid "Performing Optimum Power Calibration"
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:589
+#: projects/k3bcdrecordwriter.cpp:581
 msgid "Sending CUE sheet"
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:592
+#: projects/k3bcdrecordwriter.cpp:584
 msgid "Enabled Burnfree"
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:595
+#: projects/k3bcdrecordwriter.cpp:587
 msgid "Disabled Burnfree"
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:611
+#: projects/k3bcdrecordwriter.cpp:603
 #, c-format
 msgid ""
 "_n: Burnfree was used 1 time.\n"
 "Burnfree was used %n times."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:617
+#: projects/k3bcdrecordwriter.cpp:609
 #, c-format
 msgid ""
 "_n: Buffer was low 1 time.\n"
 "Buffer was low %n times."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:677
+#: projects/k3bcdrdaowriter.cpp:897 projects/k3bcdrecordwriter.cpp:665
+msgid "Enable overburning in the advanced K3b settings to burn anyway."
+msgstr ""
+
+#: projects/k3bcdrecordwriter.cpp:672
 msgid "%1 could not reserve shared memory segment of requested size."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:678
+#: projects/k3bcdrecordwriter.cpp:673
 msgid "Probably you chose a too large buffer size."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:681
+#: projects/k3bcdrecordwriter.cpp:676
 msgid "OPC failed. Probably the writer does not like the medium."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:684
+#: projects/k3bcdrecordwriter.cpp:679
 #, c-format
 msgid "Unable to set write speed to %1."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:685
+#: projects/k3bcdrecordwriter.cpp:680
 msgid "Probably this is lower than your writer's lowest writing speed."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:688
+#: projects/k3bcdrecordwriter.cpp:683
 msgid "Unable to send CUE sheet."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:689
+#: projects/k3bcdrecordwriter.cpp:684
 msgid "This may be caused by wrong settings."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:692
+#: projects/k3bcdrecordwriter.cpp:687
 msgid "Unable to open new session."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:693
+#: projects/k3bcdrecordwriter.cpp:688
 msgid "Probably a problem with the medium."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:696
+#: projects/k3bcdrecordwriter.cpp:691
 msgid "%1 has no permission to open the device."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:697
+#: projects/k3bcdrecordwriter.cpp:692
 msgid "You may use K3bsetup2 to solve this problem."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:700
+#: projects/k3bcdrecordwriter.cpp:695
 msgid "Probably a buffer underrun occurred."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:702
+#: projects/k3bcdrecordwriter.cpp:697
 msgid "Please enable Burnfree or choose a lower burning speed."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:704
+#: projects/k3bcdrecordwriter.cpp:699
 msgid "Please choose a lower burning speed."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:707
+#: projects/k3bcdrecordwriter.cpp:702
 msgid "Found a high-speed medium not suitable for the writer being used."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:710
+#: projects/k3bcdrecordwriter.cpp:705
 msgid "Found a low-speed medium not suitable for the writer being used."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:713
+#: projects/k3bcdrecordwriter.cpp:708
 msgid "Most likely the burning failed due to low-quality media."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:723
-msgid "Cdrecord is not being run with root privileges."
+#: projects/k3bcdrecordwriter.cpp:712
+msgid ""
+"Since kernel version 2.6.8 cdrecord cannot use SCSI transport when running "
+"suid root anymore."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:724
-msgid "This influences the stability of the burning process."
+#: projects/k3bcdrecordwriter.cpp:713
+msgid "You may use K3bSetup to solve this problem or remove the suid bit manually."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:726
-msgid "Use K3bSetup to solve this problem."
+#: projects/k3bcdrecordwriter.cpp:722
+msgid "Sometimes using TAO writing mode solves this issue."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:730
+#: projects/k3bcdrecordwriter.cpp:725
 msgid "If you are running an unpatched cdrecord version..."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:731
+#: projects/k3bcdrecordwriter.cpp:726
 msgid "...and this error also occurs with high quality media..."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:732
-msgid "...please send me an email including the debugging output."
+#: projects/k3bcdrecordwriter.cpp:727
+msgid "...and the K3b FAQ does not help you..."
+msgstr ""
+
+#: projects/k3bcdrecordwriter.cpp:728
+msgid "...please include the debugging output in your problem report."
 msgstr ""
 
 #: projects/k3bcdrdaowriter.cpp:291
@@ -4930,6 +4941,16 @@ msgstr ""
 
 #: projects/k3bcdrdaowriter.cpp:564
 msgid "Preparing blanking process..."
+msgstr ""
+
+#: projects/k3bcdrdaowriter.cpp:583
+#, c-format
+msgid "Starting DAO simulation at %1x speed..."
+msgstr ""
+
+#: projects/k3bcdrdaowriter.cpp:589
+#, c-format
+msgid "Starting DAO writing at %1x speed..."
 msgstr ""
 
 #: projects/k3bcdrdaowriter.cpp:594
@@ -5038,11 +5059,11 @@ msgstr ""
 msgid "Cue sheet not accepted."
 msgstr ""
 
-#: projects/k3bcdrdaowriter.cpp:976
+#: projects/k3bcdrdaowriter.cpp:982
 msgid "Writing leadin "
 msgstr ""
 
-#: projects/k3bcdrdaowriter.cpp:982
+#: projects/k3bcdrdaowriter.cpp:988
 msgid "Writing leadout "
 msgstr ""
 
@@ -5191,23 +5212,23 @@ msgstr ""
 msgid "Saves the settings to the project and closes the burn dialog."
 msgstr ""
 
-#: projects/k3bprojectburndialog.cpp:143
+#: projects/k3bprojectburndialog.cpp:148
 msgid "K3b did not find a suitable writer. You will only be able to create an image."
 msgstr ""
 
-#: projects/k3bprojectburndialog.cpp:145
+#: projects/k3bprojectburndialog.cpp:150
 msgid "No Writer Available"
 msgstr ""
 
-#: projects/k3bprojectburndialog.cpp:180
+#: projects/k3bprojectburndialog.cpp:183
 msgid "There seems to be not enough free space in temporary directory. Write anyway?"
 msgstr ""
 
-#: projects/k3bprojectburndialog.cpp:237
+#: projects/k3bprojectburndialog.cpp:240
 msgid "Copies"
 msgstr "CopÃ¯au"
 
-#: projects/k3bprojectburndialog.cpp:270
+#: projects/k3bprojectburndialog.cpp:273
 msgid "Image"
 msgstr "Delwedd"
 
