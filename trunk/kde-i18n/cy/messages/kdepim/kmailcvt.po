@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
-"POT-Creation-Date: 2004-07-16 01:28+0200\n"
+"POT-Creation-Date: 2004-10-12 01:18+0200\n"
 "PO-Revision-Date: 2004-01-08 21:25+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -16,6 +16,30 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.2\n"
+
+#: filter_mailapp.cxx:32
+#, fuzzy
+msgid "Import From OS X Mail"
+msgstr "Mewnforio Plygelli o Pegasus-Mail"
+
+#: filter_mailapp.cxx:34
+msgid ""
+"<p><b>OS X Mail Import Filter</b></p>"
+"<p>This filter imports e-mails from the Mail client in Apple Mac OS X.</p>"
+msgstr ""
+
+#: filter_evolution.cxx:101 filter_mailapp.cxx:56 filter_mbox.cxx:51
+msgid "Unable to open %1, skipping"
+msgstr "Methwyd agor %1, yn hepgor"
+
+#: filter_evolution.cxx:108 filter_mailapp.cxx:67 filter_mbox.cxx:60
+msgid "Importing emails from %1..."
+msgstr "Yn mewnforio ebostau o %1"
+
+#: filter_evolution.cxx:128 filter_mailapp.cxx:85 filter_mbox.cxx:78
+#, c-format
+msgid "Finished importing emails from %1"
+msgstr "Gorffennwyd mewnforio ebostau o %1"
 
 #: filters.cxx:138
 msgid ""
@@ -33,12 +57,7 @@ msgstr "Methu creu plygell %1 yng KMail"
 msgid "Cannot add message to folder %1 in KMail"
 msgstr "Methu ychwanegu neges at blygell %1 yng KMail"
 
-#: filters.cxx:152
-#, fuzzy
-msgid "Duplicate message subject error when adding message to folder %1 in KMail"
-msgstr "Gwall tra'n ychwanegu neges at blygell %1 yng KMail."
-
-#: filters.cxx:155
+#: filters.cxx:157
 msgid "Error while adding message to folder %1 in KMail"
 msgstr "Gwall tra'n ychwanegu neges at blygell %1 yng KMail."
 
@@ -87,19 +106,6 @@ msgid ""
 "<p>For instance, if you have a \"foo\" folder in Evolution, with a \"bar\" "
 "subfolder, two folders will be created in KMail : \"foo\" and \"foo-bar\"</p>"
 msgstr ""
-
-#: filter_evolution.cxx:101 filter_mbox.cxx:51
-msgid "Unable to open %1, skipping"
-msgstr "Methwyd agor %1, yn hepgor"
-
-#: filter_evolution.cxx:108 filter_mbox.cxx:60
-msgid "Importing emails from %1..."
-msgstr "Yn mewnforio ebostau o %1"
-
-#: filter_evolution.cxx:128 filter_mbox.cxx:78
-#, c-format
-msgid "Finished importing emails from %1"
-msgstr "Gorffennwyd mewnforio ebostau o %1"
 
 #: kmailcvt.cpp:26
 msgid "KMailCVT Import Tool"
@@ -176,42 +182,50 @@ msgstr "Yn mewnforio %1"
 msgid "Message %1"
 msgstr "Neges %1"
 
-#: rc.cpp:2
+#. i18n: file kimportpagedlg.ui line 55
+#: rc.cpp:3
 #, no-c-format
 msgid "Please click 'Back' to import more emails or contacts"
 msgstr "Cliciwch 'Yn ôl' i fewnforio rhagor o ebostau neu gysylltau"
 
-#: rc.cpp:4
+#. i18n: file kimportpagedlg.ui line 76
+#: rc.cpp:6
 #, no-c-format
 msgid "From:"
 msgstr "O:"
 
-#: rc.cpp:6
+#. i18n: file kimportpagedlg.ui line 84
+#: rc.cpp:9
 #, no-c-format
 msgid "To:"
 msgstr "I:"
 
-#: rc.cpp:8
+#. i18n: file kimportpagedlg.ui line 92
+#: rc.cpp:12
 #, no-c-format
 msgid "Current:"
 msgstr "Cyfredol:"
 
-#: rc.cpp:10
+#. i18n: file kimportpagedlg.ui line 100
+#: rc.cpp:15
 #, no-c-format
 msgid "Importing in progress"
 msgstr "Mewnforio ar waith"
 
-#: rc.cpp:12 rc.cpp:14 rc.cpp:18
+#. i18n: file kimportpagedlg.ui line 119
+#: rc.cpp:18 rc.cpp:21 rc.cpp:27
 #, no-c-format
 msgid "..."
 msgstr "..."
 
-#: rc.cpp:16
+#. i18n: file kimportpagedlg.ui line 143
+#: rc.cpp:24
 #, no-c-format
 msgid "Total:"
 msgstr "Cyfanswm:"
 
-#: rc.cpp:20
+#. i18n: file kselfilterpagedlg.ui line 79
+#: rc.cpp:30
 #, no-c-format
 msgid ""
 "<b>Welcome to KMailCVT - The KMail Import Tool</b>\n"
@@ -312,7 +326,7 @@ msgstr "Yn anwybyddu ffeil Blygelli OE5+ %1"
 msgid "File %1 does not seem to be an Outlook Express mailbox"
 msgstr "Nid yw'r ffeil %1 i'w gweld yn flwch ebost Outlook Express"
 
-#: kselfilterpage.cpp:57
+#: kselfilterpage.cpp:59
 msgid "<p><i>Written by %1.</i></p>"
 msgstr "<p><i>Ysgrifennwyd gan %1.</i></p>"
 
@@ -342,6 +356,10 @@ msgstr "Yn mewnforio ffeiliau ebost newydd..."
 #, c-format
 msgid "Could not import %1"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Duplicate message subject error when adding message to folder %1 in KMail"
+#~ msgstr "Gwall tra'n ychwanegu neges at blygell %1 yng KMail."
 
 #~ msgid "Form1"
 #~ msgstr "Ffurf1"
