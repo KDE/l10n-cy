@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: fontinst\n"
-"POT-Creation-Date: 2003-01-11 02:55+0100\n"
-"PO-Revision-Date: 2003-07-10 13:43+0100\n"
+"POT-Creation-Date: 2003-06-23 21:00+0200\n"
+"PO-Revision-Date: 2003-07-15 14:15+0100\n"
 "Last-Translator: KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -19,24 +19,24 @@ msgstr ""
 "\n"
 
 #: AfmCreator.cpp:73
-msgid "Creating AFM:"
+msgid "Creating AFM: "
 msgstr "Yn creu AFM:"
 
 #: AfmCreator.cpp:76
 msgid ""
-" There was an error creating:\n"
-" %1\n"
-" Do you wish to continue?\n"
+"There was an error creating:\n"
+"%1\n"
+"Do you wish to continue?"
 msgstr ""
 "Roedd gwall tra'n creu:\n"
 " %1\n"
-" A ydych am fynd ymlaen?\n"
+" A ydych am fynd ymlaen?"
 
 #: AfmCreator.cpp:77
 msgid "AFM Error"
 msgstr "Gwall AFM"
 
-#: AfmCreator.cpp:418 FontListWidget.cpp:1874 StarOfficeConfig.cpp:251
+#: AfmCreator.cpp:418 FontListWidget.cpp:1849 StarOfficeConfig.cpp:251
 #: Ttf.cpp:457
 msgid "Success"
 msgstr "Llwyddiant"
@@ -53,7 +53,7 @@ msgstr "Methwyd agor y ffeil wynebfath"
 msgid "Could not create file"
 msgstr "Methwyd creu'r ffeil"
 
-#: AfmCreator.cpp:426 FontListWidget.cpp:1890 StarOfficeConfig.cpp:267
+#: AfmCreator.cpp:426 FontListWidget.cpp:1865 StarOfficeConfig.cpp:267
 msgid "Unknown"
 msgstr "Anhysbys"
 
@@ -140,15 +140,15 @@ msgstr "Methwyd diweddaru'r eitemau canlynol:"
 
 #: FontListWidget.cpp:1706
 msgid ""
-" This will *permanently* alter the TrueType font file(s),\n"
-" and cannot be undone.\n"
-" \n"
-" Are you sure?\n"
+"This will *permanently* alter the TrueType font file(s),\n"
+"and cannot be undone.\n"
+"\n"
+"Are you sure?"
 msgstr ""
 "Fe fydd hyn yn newid y ffeil(iau) wynebfath TrueType\n"
 " yn *barhaol*, ac nid oes modd datwneud hyn.\n"
 "\n"
-" A ydych yn sicr?\n"
+" A ydych yn sicr"
 
 #: FontListWidget.cpp:1719
 msgid "Fixing:"
@@ -158,52 +158,56 @@ msgstr "Yn trwsio:"
 msgid "The following files could not be modified:"
 msgstr "Methwyd addasu'r ffeiliau canlynol:"
 
-#: FontListWidget.cpp:1791
-msgid "Please type name of new folder:"
-msgstr "Teipiwch enw'r plygell newydd os gwelwch yn dda:"
-
-#: FontListWidget.cpp:1804
+#: FontListWidget.cpp:1776
 msgid "Folder %1 is not writable!"
 msgstr "Nid yw plygell %1 yn ysgrifenadwy!"
 
-#: FontListWidget.cpp:1815
+#: FontListWidget.cpp:1782
+msgid "New Folder"
+msgstr "Plygell Newydd:"
+
+#: FontListWidget.cpp:1783
+msgid "New folder name:"
+msgstr "Enw'r blygell newydd:"
+
+#: FontListWidget.cpp:1792
 msgid "Cannot create folders named \"%1\""
 msgstr "Nid oes modd creu plygelli o'r enw \"%1\""
 
-#: FontListWidget.cpp:1818
+#: FontListWidget.cpp:1795
 msgid "Folder already exists!"
 msgstr "Mae'r blygell eisioes yn bodoli!"
 
-#: FontListWidget.cpp:1876
+#: FontListWidget.cpp:1851
 msgid "Permission denied?"
 msgstr "Gwrthodwyd caniatâd?"
 
-#: FontListWidget.cpp:1878
+#: FontListWidget.cpp:1853
 msgid "Already installed"
 msgstr "Wedi'i osod yn barod"
 
-#: FontListWidget.cpp:1880
+#: FontListWidget.cpp:1855
 msgid "Contains sub-folders"
 msgstr "Yn cynnwys is-blygelli"
 
-#: FontListWidget.cpp:1882
+#: FontListWidget.cpp:1857
 msgid "Could not create folder to uninstall to"
 msgstr "Methwyd creu plygell i ddatosod iddo"
 
-#: FontListWidget.cpp:1884
+#: FontListWidget.cpp:1859
 msgid "Could not delete folder"
 msgstr "Methwyd dileu'r blygell"
 
-#: FontListWidget.cpp:1886
+#: FontListWidget.cpp:1861
 msgid "Invalid font - or font file corrupt"
 msgstr "Wynebfath annilys - neu ffeil wynebfath lygredig"
 
-#: FontListWidget.cpp:1888
+#: FontListWidget.cpp:1863
 msgid "Folder is not empty"
 msgstr "Nid yw'r blygell yn wag"
 
 #: FontPreview.cpp:42
-msgid "No preview available"
+msgid " No preview available"
 msgstr "Dim rhagolwg ar gael"
 
 #: FontSelectorWidget.cpp:229
@@ -259,8 +263,16 @@ msgid "Advanced Mode (With Embedded Font Selector)"
 msgstr "Modd Uwch (Â Dewisydd Wynebfathau Mewnol)"
 
 #: Kfi.cpp:45
-msgid " As this is the first time this module has been run as \"root\", it has tried to guess appropriate settings for your system. When the module appears, please have a look at the \"Settings\" page and check that these are ok. If not, make the appropriate changes and click the \"Apply\" button."
-msgstr "Gan taw dyma'r tro cyntaf y rhedwyd y modiwl yma fel \"gwraidd\" (root), mae wedi ceisio dyfalu gosodiadau addas i'ch cysawd. Pan ymddengys y modiwl, gwiriwch ar y dudalen \"Gosodiadau\" fod y rhain yn dderbyniol. Os nad ydynt, gwnewch y newidiadau priodol a cliciwch ar y botwm \"Gweithredu\"."
+msgid ""
+"As this is the first time this module has been run as \"root\", it has tried "
+"to guess appropriate settings for your system. When the module appears, "
+"please have a look at the \"Settings\" page and check that these are ok. If "
+"not, make the appropriate changes and click the \"Apply\" button."
+msgstr ""
+"Gan taw dyma'r tro cyntaf y rhedwyd y modiwl yma fel \"gwraidd\" (root), mae "
+"wedi ceisio dyfalu gosodiadau addas i'ch cysawd. Pan ymddengys y modiwl, "
+"gwiriwch ar y dudalen \"Gosodiadau\" fod y rhain yn dderbyniol. Os nad "
+"ydynt, gwnewch y newidiadau priodol a cliciwch ar y botwm \"Gweithredu\"."
 
 #: KfiCmModule.cpp:82
 msgid "KDE Font Installer"
@@ -279,12 +291,45 @@ msgid "StarOffice xprinter.prolog patch"
 msgstr "Cywiriad xprinter.prolog StarOffice"
 
 #: KfiCmModule.cpp:140
-msgid " <h1>Font Installer</h1><p> This module allows you to install TrueType, Type1, Speedo, and Bitmap fonts. If you have StarOffice installed on your system, this can also be configured.</p><p>This module has 2 main modes of operation:<ul><li><i>Basic:</i> The underlying folder structure is hidden, and you will only be able to install/uninstall TrueType and Type1 fonts.</ li><li><i>Advanced:</i> This is for more experienced users, and displays the X fonts folder structure - allowing you to add/delete whole folders to/from the X font path. Using this mode you can also install/uninstall Speedo and Bitmap (pcf, bdf, and snf) fonts.</li></ol>"
-msgstr "<h1>Gosodydd Wynebfathau</h1><p> Mae'r modiwl yma yn eich galluogi i osod wynebfathau TrueType, Type1, Speedo, a wynebfathau didfap. Os oes gennych StarOffice ar eich cysawd, gellir ffurfweddu hwn hefyd.</p><p>Mae 2 prif-fodd gweithredu gan y modiwl yma:<ul><li><i>Sylfaenol:</i>Cuddir y strwythr plygelli gwaelodol, a dim ond wynebfathau TrueType a Type1 fyddwch yn medru eu gosod/datosod.</li><li><i>Uwch:</i> Mae hwn ar gyfer defnyddwyr mwy profiadol, a dengys strwythr plygelli wynebfathau X - gan eich galluogi i ychwanegu/dileu plygelli cyfan i'r/o'r llwybr wynebfathau X. Yn y modd hwn gallwch hefyd osod/ddatosod wynebfathau Speedo a didfap (pcf,bdf, ac snf).</li></ol>"
+msgid ""
+"<h1>Font Installer</h1>"
+"<p> This module allows you to install TrueType, Type1, Speedo, and Bitmap "
+"fonts. If you have StarOffice installed on your system, this can also be "
+"configured.</p>"
+"<p>This module has 2 main modes of operation:"
+"<ul>"
+"<li><i>Basic:</i> The underlying folder structure is hidden, and you will "
+"only be able to install/uninstall TrueType and Type1 "
+"fonts.</li>"
+"<li><i>Advanced:</i> This is for more experienced users, and displays the X "
+"fonts folder structure - allowing you to add/delete whole folders to/from "
+"the X font path. Using this mode you can also install/uninstall Speedo and "
+"Bitmap (pcf, bdf, and snf) fonts.</li></ol>"
+msgstr ""
+"<h1>Gosodydd Wynebfathau</h1>"
+"<p> Mae'r modiwl yma yn eich galluogi i osod wynebfathau TrueType, Type1, "
+"Speedo, a wynebfathau didfap. Os oes gennych StarOffice ar eich cysawd, "
+"gellir ffurfweddu hwn hefyd.</p>"
+"<p>Mae 2 prif-fodd gweithredu gan y modiwl yma:"
+"<ul>"
+"<li><i>Sylfaenol:</i>Cuddir y strwythr plygelli gwaelodol, a dim ond "
+"wynebfathau TrueType a Type1 fyddwch yn medru eu "
+"gosod/datosod.</li>"
+"<li><i>Uwch:</i> Mae hwn ar gyfer defnyddwyr mwy profiadol, a dengys "
+"strwythr plygelli wynebfathau X - gan eich galluogi i ychwanegu/dileu "
+"plygelli cyfan i'r/o'r llwybr wynebfathau X. Yn y modd hwn gallwch hefyd "
+"osod/ddatosod wynebfathau Speedo a Didfap (pcf,bdf, ac snf).</li></ol>"
 
 #: KfiCmModule.cpp:151
-msgid " <p><b>NOTE:</b> As you are not logged in as \"root\", any fonts installed will only be available to you. To install fonts system wide, use the \"Administrator Mode\" button to run this module as \"root\".</p>"
-msgstr "<p><b>NODER:</b>Gan nad ydych wedi'ch mewngofnodi fel \"gwraidd\" (root), bydd yr wynebfathau a osodir ar gael i chi yn unig. I osod wynebfathau ledled y cysawd, defnyddiwch y botwm \"Modd Gwasanaethwr\" i redeg y modiwl yma fel \"gwraidd\" (root).</p>"
+msgid ""
+"<p><b>NOTE:</b> As you are not logged in as \"root\", any fonts installed "
+"will only be available to you. To install fonts system wide, use the "
+"\"Administrator Mode\" button to run this module as \"root\".</p>"
+msgstr ""
+"<p><b>NODER:</b>Gan nad ydych wedi'ch mewngofnodi fel \"gwraidd\" (root), "
+"bydd yr wynebfathau a osodir ar gael i chi yn unig. I osod wynebfathau "
+"ledled y cysawd, defnyddiwch y botwm \"Modd Gwasanaethwr\" i redeg y modiwl "
+"yma fel \"gwraidd\" (root).</p>"
 
 #: MetaDialog.cpp:45
 msgid "Meta Data"
@@ -300,11 +345,11 @@ msgstr "Dewiswch \"Fontmap\" Ghostscript"
 
 #: SettingsWidget.cpp:128 SettingsWidget.cpp:183
 msgid ""
-" File does not exist.\n"
-" Create new file?\n"
+"File does not exist.\n"
+"Create new file?"
 msgstr ""
 "Nid yw'r ffeil yn bodoli.\n"
-" Creu ffeil newydd?\n"
+"Creu ffeil newydd"
 
 #: SettingsWidget.cpp:129 SettingsWidget.cpp:132 SettingsWidget.cpp:184
 #: SettingsWidget.cpp:187
@@ -329,11 +374,11 @@ msgstr "Dewiswch Ffeil Ffurfwedd X"
 
 #: SettingsWidget.cpp:196
 msgid ""
-" File format not recognized!\n"
-" Advanced mode folder operations will not be available.\n"
+"File format not recognized!\n"
+"Advanced mode folder operations will not be available."
 msgstr ""
 "Ni adnabyddwyd fformat y ffeil!\n"
-" Ni fydd gweithrediadau modd uwch ar gael.\n"
+"Ni fydd gweithrediadau modd uwch ar gael."
 
 #: SettingsWidget.cpp:205
 msgid "Select StarOffice Folder"
@@ -502,17 +547,17 @@ msgstr "Yn ychwanegu %1 i X"
 
 #: _translatorinfo.cpp:1
 msgid ""
-" _: NAME OF TRANSLATORS\n"
-" Your names\n"
-msgstr "Owain Green drwy KGyfieithu\n"
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Owain Green drwy KGyfieithu"
 
 #: _translatorinfo.cpp:3
 msgid ""
-" _: EMAIL OF TRANSLATORS\n"
-" Your emails\n"
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
 msgstr ""
 "owaing@oceanfree.net\n"
-"kyfieithu@dotmon.com\n"
+"kyfieithu@dotmon.com"
 
 #: rc.cpp:1 rc.cpp:4
 msgid "Form1"
@@ -532,17 +577,19 @@ msgstr "Plygell lefel uchaf i'r wynebfathau:"
 
 #: rc.cpp:7
 msgid ""
-" This is the top level X11 fonts folder.\n"
-" Located within this will be the folders\n"
-" containing your fonts, and encodings\n"
-" files. Usually this will be (for Linux):\n"
-" \n"
-" /usr/X11R6/lib/X11/fonts\n"
+"This is the top level X11 fonts folder.\n"
+"Located within this will be the folders\n"
+"containing your fonts, and encodings\n"
+"files. Usually this will be (for Linux):\n"
+"\n"
+"/usr/X11R6/lib/X11/fonts"
 msgstr ""
 "Hon yw plygell lefel uchaf i'r wynebfathau X11.\n"
-"Bydd plygelli yn cynnwys eich wynebfathau a ffeiliau amgodiad wedi'u lleoli ynddi. Dyma'r lleoliad arferol (i Linux):\n"
+"Bydd plygelli yn cynnwys eich wynebfathau\n"
+"a ffeiliau amgodiad wedi'u lleoli ynddi. \n"
+"Dyma'r lleoliad arferol (i Linux):\n"
 "\n"
-" /usr/X11R6/lib/X11/fonts\n"
+" /usr/X11R6/lib/X11/fonts"
 
 #: rc.cpp:8
 msgid "TrueType:"
@@ -585,8 +632,12 @@ msgid "Custom:"
 msgstr "Addasiedig:"
 
 #: rc.cpp:18
-msgid " This is the command that can be issued upon successful system configuration to restart the X font server."
-msgstr "Dyma'r gorchymyn a gellir gweithredu wedi ffurfweddiu cysawd yn llwyddiannus i ail-gychwyn y gweinydd wynebfathau X."
+msgid ""
+"This is the command that can be issued upon successful system configuration "
+"to restart the X font server."
+msgstr ""
+"Dyma'r gorchymyn a gellir gweithredu (wedi ffurfweddu'r cysawd yn llwyddiannus)"
+"i ail-gychwyn y gweinydd wynebfathau X."
 
 #: rc.cpp:19
 msgid "Printing"
@@ -618,35 +669,42 @@ msgstr "&Creu â"
 
 #: rc.cpp:26
 msgid ""
-" AFMs (Adobe Font Metrics) are files that\n"
-" may be used by programs (such as\n"
-" StarOffice) to obtain detailed \"metrics\"\n"
-" (e.g. sizes) of each character in a font -\n"
-" so that it may be displayed/printed\n"
-" correctly.\n"
-" \n"
-" AFMs may only contain one encoding,\n"
-" so here you can specify which one\n"
-" should be used.\n"
+"AFMs (Adobe Font Metrics) are files that\n"
+"may be used by programs (such as\n"
+"StarOffice) to obtain detailed \"metrics\"\n"
+"(e.g. sizes) of each character in a font -\n"
+"so that it may be displayed/printed\n"
+"correctly.\n"
+"\n"
+"AFMs may only contain one encoding,\n"
+"so here you can specify which one\n"
+"should be used."
 msgstr ""
-"Gellir defnyddio AFMau (Ffeiliau Metrigau Wynebfath Adobe) gan raglenni (megis\n"
+"Gellir defnyddio AFMau (Ffeiliau Metrigau Wynebfath Adobe) \n"
+" gan raglenni (megis\n"
 " StarOffice) i gael \"metrigau\" manwl\n"
 "(e.e. meintiau) o bob nod mewn wynebfath -\n"
 " fel bod modd ei ddangos/argraffu yn gywir.\n"
 "\n"
 "Gall AFMau gynnwys ond un amgodiad,\n"
 " felly gallwch ddewis yma pa un\n"
-"dylid ei ddefnyddio.\n"
+"dylid ei ddefnyddio."
 
 #: rc.cpp:27
 msgid ""
-" AFMs (Adobe Font Metrics) are files that may be used by programs (such as StarOffice) to obtain detailed \"metrics\" (e.g. sizes) of each character in a font - so that it may be displayed/printed correctly.\n"
-" \n"
-" AFMs may only contain one encoding, so here you can specify which one should be used.\n"
-msgstr ""
-"Gellir defnyddio AFMau (Ffeiliau Metrigau Wynebfath Adobe) gan raglenni (megis StarOffice) i gael \"metrigau\" manwl(e.e. meintiau) o bob nod mewn wynebfath - fel bod modd ei ddangos/argraffu yn gywir.\n"
+"AFMs (Adobe Font Metrics) are files that may be used by programs (such as "
+"StarOffice) to obtain detailed \"metrics\" (e.g. sizes) of each character in "
+"a font - so that it may be displayed/printed correctly.\n"
 "\n"
-"Gall AFMau gynnwys ond un amgodiad, felly gallwch ddewis yma pa un dylid ei ddefnyddio.\n"
+"AFMs may only contain one encoding, so here you can specify which one should "
+"be used."
+msgstr ""
+"Gellir defnyddio AFMau (Ffeiliau Metrigau Wynebfath Adobe) gan raglenni "
+"(megis StarOffice) i gael \"metrigau\" manwl(e.e. meintiau) o bob nod mewn "
+"wynebfath - fel bod modd ei ddangos/argraffu yn gywir.\n"
+"\n"
+"Gall AFMau gynnwys ond un amgodiad, felly gallwch ddewis yma pa un dylid ei "
+"ddefnyddio."
 
 #: rc.cpp:28
 msgid "encoding"
@@ -658,13 +716,15 @@ msgstr "T&rueType"
 
 #: rc.cpp:30
 msgid ""
-" Check this item to enable creation of AFM files for TrueType fonts.\n"
-" \n"
-" NOTE: StarOffice v6 (onwards), and OpenOffice, no longer require AFMs for TrueType fonts.\n"
+"Check this item to enable creation of AFM files for TrueType fonts.\n"
+"\n"
+"NOTE: StarOffice v6 (onwards), and OpenOffice, no longer require AFMs for "
+"TrueType fonts."
 msgstr ""
 "Dewiswch yr eitem yma i alluogi creu ffeiliau AFM i wynebfathau TrueType.\n"
 "\n"
-"NODER: Nid yw AFMau ar gyfer wynebfathau TrueType yn ofynnol mwyach i StarOffice f6 (ac ymlaen), nac i OpenOffice.\n"
+"NODER: Nid yw AFMau ar gyfer wynebfathau TrueType yn ofynnol mwyach i "
+"StarOffice f6 (ac ymlaen), nac i OpenOffice."
 
 #: rc.cpp:31
 msgid "Type&1"
@@ -672,13 +732,14 @@ msgstr "Type&1"
 
 #: rc.cpp:32
 msgid ""
-" Check this item to enable creation of AFMs for Type1 fonts.\n"
-" \n"
-" These are required by StarOffice, and some other apps (such as AbiWord).\n"
+"Check this item to enable creation of AFMs for Type1 fonts.\n"
+"\n"
+"These are required by StarOffice, and some other apps (such as AbiWord)."
 msgstr ""
 "Dewiswch yr eitem yma i alluogi creu ffeiliau AFM i wynebfathau Type1.\n"
 "\n"
-"Mae'r rhain yn ofynnol i StarOffice , ac i rai gymhwysiadau eraill (megis AbiWord).\n"
+"Mae'r rhain yn ofynnol i StarOffice , ac i rai gymhwysiadau eraill (megis "
+"AbiWord)."
 
 #: rc.cpp:33
 msgid "StarOffice (Versions <= 5.2)"
@@ -695,4 +756,7 @@ msgstr "Plygell:"
 #: rc.cpp:37
 msgid "Printer file:"
 msgstr "Ffeil argraffydd:"
+
+#~ msgid "Please type name of new folder:"
+#~ msgstr "Teipiwch enw'r plygell newydd os gwelwch yn dda:"
 
