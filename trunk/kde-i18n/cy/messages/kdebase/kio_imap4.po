@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kio_imap4\n"
-"POT-Creation-Date: 2004-02-24 09:59+0100\n"
+"POT-Creation-Date: 2004-07-14 01:19+0200\n"
 "PO-Revision-Date: 2003-07-21 17:09+0100\n"
 "Last-Translator: KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -14,43 +14,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.0.1\n"
 
-#: imap4.cc:814
+#: imap4.cc:832
 msgid "What do you want to store in this folder?"
 msgstr "Beth ydych am ei gadw yn y blygell hon?"
 
-#: imap4.cc:814
+#: imap4.cc:832
 msgid "Create Folder"
 msgstr "Creu Plygell"
 
-#: imap4.cc:815
+#: imap4.cc:833
 msgid "&Messages"
 msgstr "&Negeseuon"
 
-#: imap4.cc:815
+#: imap4.cc:833
 msgid "&Subfolders"
 msgstr "I&sblygelli"
 
-#: imap4.cc:1093
-msgid "Unsubscribe of folder %1 failed."
+#: imap4.cc:1124
+#, fuzzy
+msgid "Unsubscribe of folder %1 failed. The server returned: %2"
 msgstr "Methodd dad-tanysgrifio'r blygell %1."
 
-#: imap4.cc:1110
-msgid "Subscribe of folder %1 failed."
+#: imap4.cc:1144
+#, fuzzy
+msgid "Subscribe of folder %1 failed. The server returned: %2"
 msgstr "Methodd tanysgrifio'r blygell %1."
 
-#: imap4.cc:1132 imap4.cc:1143
+#: imap4.cc:1176 imap4.cc:1187
 msgid "Changing the flags of message %1 failed."
 msgstr "Methodd newid baneri neges %1."
 
-#: imap4.cc:1232
+#: imap4.cc:1220
+msgid ""
+"Setting the Access Control List on folder %1 for user %2 failed. The server "
+"returned: %3"
+msgstr ""
+
+#: imap4.cc:1238
+msgid ""
+"Deleting the Access Control List on folder %1 for user %2 failed. The server "
+"returned: %3"
+msgstr ""
+
+#: imap4.cc:1254 imap4.cc:1279
+#, fuzzy
+msgid ""
+"Retrieving the Access Control List on folder %1 failed. The server returned: "
+"%2"
+msgstr "Methu agor y blygell %1. Atebodd y gweinydd: %2"
+
+#: imap4.cc:1377
 msgid "Unable to close mailbox."
 msgstr "Methu cau'r blwch post."
 
-#: imap4.cc:1255
+#: imap4.cc:1400
 msgid "Unable to get information about folder %1. The server replied: %2"
 msgstr "Methu cael gwybodaeth am blygell %1. Ymatebodd y gweinydd: %2"
 
-#: imap4.cc:1418
+#: imap4.cc:1563
 msgid ""
 "The server %1 supports neither IMAP4 nor IMAP4rev1.\n"
 "It identified itself with: %2"
@@ -58,7 +79,7 @@ msgstr ""
 "Nid yw'r gweinydd %1 yn cynnal na IMAP4 na IMAP4rev1.\n"
 "Dynododd ei hun â %2"
 
-#: imap4.cc:1429
+#: imap4.cc:1574
 msgid ""
 "The server does not support TLS.\n"
 "Disable this security feature to connect unencrypted."
@@ -66,19 +87,21 @@ msgstr ""
 "Nid yw'r gweinydd yn cynnal TLS.\n"
 "Analluogwch y nodwedd diogelwch yma i gysylltu heb gêl-ysgrifaeth."
 
-#: imap4.cc:1454
+#: imap4.cc:1599
 msgid "Starting TLS failed."
 msgstr "Methodd cychwyn TLS."
 
-#: imap4.cc:1464
+#: imap4.cc:1609
 msgid "The authentication method %1 is not supported by the server."
 msgstr "Ni chynhelir y dull awdurdodi %1 gan y gweinydd."
 
-#: imap4.cc:1475
+#: imap4.cc:1620
+#, fuzzy
 msgid "Username and password for your IMAP account:"
 msgstr "Enw defnyddiwr a chyfrinair ar gyfer eich cyfrif IMAP:"
 
-#: imap4.cc:1489
+#: imap4.cc:1634
+#, fuzzy
 msgid ""
 "In IMAP clear text login, only US-ASCII characters are possible. Please use "
 "a different authentication method that your server supports or try to get a "
@@ -88,7 +111,7 @@ msgstr ""
 "Defnyddiwch dull awdurdodi arall y cynhelir gan eich gweinydd neu ceisiwch "
 "gael enw defnyddiwr gwahanol."
 
-#: imap4.cc:1494
+#: imap4.cc:1639
 msgid ""
 "In IMAP clear text login, only US-ASCII characters are possible. Please use "
 "a different authentication method that your server supports or change your "
@@ -98,7 +121,7 @@ msgstr ""
 "Defnyddiwch dull awdurdodi arall y cynhelir gan eich gweinydd neu newidiwch "
 "eich cyfrinair."
 
-#: imap4.cc:1499
+#: imap4.cc:1644
 #, c-format
 msgid ""
 "Unable to login. Probably the password is wrong.\n"
@@ -109,7 +132,7 @@ msgstr ""
 "Atebodd y gweinydd:\n"
 "%1"
 
-#: imap4.cc:1505
+#: imap4.cc:1650
 msgid ""
 "Unable to authenticate via %1.\n"
 "The server replied:\n"
@@ -119,6 +142,6 @@ msgstr ""
 "Atebodd y gweinydd:\n"
 "%2"
 
-#: imap4.cc:1912
+#: imap4.cc:2086
 msgid "Unable to open folder %1. The server replied: %2"
 msgstr "Methu agor y blygell %1. Atebodd y gweinydd: %2"
