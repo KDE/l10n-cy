@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kpackage\n"
-"POT-Creation-Date: 2004-10-02 01:28+0200\n"
+"POT-Creation-Date: 2004-12-31 10:52+0100\n"
 "PO-Revision-Date: 2004-02-26 16:50+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -107,42 +107,46 @@ msgstr "Profi (peidio â gosod)"
 msgid "Purge Config Files"
 msgstr "Gwaredu Ffeiliau Ffurfweddu"
 
-#: debAptInterface.cpp:104
+#: debAptInterface.cpp:105
 msgid "U&pgrade"
 msgstr "Uwch&raddio"
 
-#: debAptInterface.cpp:108
+#: debAptInterface.cpp:109
 msgid "&Fixup"
 msgstr "&Trwsio"
 
-#: debAptInterface.cpp:166
+#: debAptInterface.cpp:113
+msgid "&Apt-file update"
+msgstr ""
+
+#: debAptInterface.cpp:179
 #, c-format
 msgid "Querying DEB APT remote package list: %1"
 msgstr "Holi rhestr becynnau pell DEB ABT: %1 "
 
-#: debAptInterface.cpp:172
+#: debAptInterface.cpp:185
 #, c-format
 msgid "Processing DEB APT remote package list: %1"
 msgstr "Prosesu rhestr becynnau pell DEB APT: %1"
 
-#: debAptInterface.cpp:209 debAptInterface.cpp:265 rpmInterface.cpp:194
+#: debAptInterface.cpp:222 debAptInterface.cpp:278 rpmInterface.cpp:194
 msgid "DEB APT"
 msgstr "DEB APT"
 
-#: debAptInterface.cpp:222
+#: debAptInterface.cpp:235
 msgid "Querying DEB APT available list"
 msgstr "Holi rhestr argaeledd DEB APT"
 
-#: debAptInterface.cpp:224
+#: debAptInterface.cpp:237
 #, c-format
 msgid "Querying DEB APT available list: %1"
 msgstr "Holi rhestr argaeledd DEB APT: %1"
 
-#: debAptInterface.cpp:229
+#: debAptInterface.cpp:242
 msgid "Processing DEB APT available list"
 msgstr "Prosesu rhestr argaeledd DEB APT"
 
-#: debAptInterface.cpp:231
+#: debAptInterface.cpp:244
 #, c-format
 msgid "Processing DEB APT available list: %1"
 msgstr "Prosesu rhestr argaeledd DEB APT: %1"
@@ -302,35 +306,47 @@ msgstr "EOF annisgwyl o pkg_info (chwilio am linell sylwad)"
 msgid "Warning: invalid INDEX file entry for %1"
 msgstr "Rhybudd: cofnod ffeil INDEX annilys ar gyfer %1"
 
-#: findf.cpp:45
+#: findf.cpp:49
 msgid "Find File"
 msgstr "Canfod Ffeil"
 
-#: findf.cpp:47 search.cpp:43
+#: findf.cpp:51 search.cpp:43
 msgid "&Find"
 msgstr "&Canfod"
 
-#: findf.cpp:61
+#: findf.cpp:60 search.cpp:41 search.cpp:51
+msgid "Find Package"
+msgstr "Canfod Pecyn"
+
+#: findf.cpp:71
 msgid "Find:"
 msgstr "Canfod:"
 
-#: findf.cpp:66
+#: findf.cpp:77 managementWidget.cpp:84
+msgid "Installed"
+msgstr "Wedi'i osod"
+
+#: findf.cpp:78
 msgid "Type"
 msgstr "Math"
 
-#: findf.cpp:67 kplview.cpp:57
+#: findf.cpp:80 kplview.cpp:57
 msgid "Package"
 msgstr "Pecyn"
 
-#: findf.cpp:68
+#: findf.cpp:81
 msgid "File Name"
 msgstr "Enw Ffeil"
 
-#: findf.cpp:132
+#: findf.cpp:85
+msgid "Also search uninstalled packages"
+msgstr ""
+
+#: findf.cpp:171
 msgid "--Nothing found--"
 msgstr "--Chafwyd dim byd--"
 
-#: findf.cpp:182
+#: findf.cpp:221
 msgid "Incorrect URL type"
 msgstr "Math URL anghywir"
 
@@ -369,7 +385,7 @@ msgstr "Holi rhestr becynnau KISS:"
 msgid "KPackage: Waiting on KISS"
 msgstr "Kpackage: Aros am KISS"
 
-#: kpPty.cpp:137
+#: kpPty.cpp:139
 msgid "ROOT Login"
 msgstr "Mewngofnod ROOT"
 
@@ -496,10 +512,6 @@ msgstr "Pecyn i'w osod"
 msgid "KPackage"
 msgstr "KPecyn"
 
-#: managementWidget.cpp:84
-msgid "Installed"
-msgstr "Wedi'i osod"
-
 #: managementWidget.cpp:85
 msgid "Updated"
 msgstr "Diweddarwyd"
@@ -553,71 +565,71 @@ msgid ""
 msgstr ""
 "Nid yw enw'r ffeil ar gael\n"
 
-#: options.cpp:71
+#: options.cpp:73
 msgid "&Types"
 msgstr "&Mathau"
 
-#: options.cpp:73
+#: options.cpp:75
 msgid "Handle Package Type"
 msgstr "Trin Math Pecyn"
 
-#: options.cpp:75
+#: options.cpp:77
 msgid "Remote Host"
 msgstr "Gwesteiwr Pell"
 
-#: options.cpp:76
+#: options.cpp:78
 msgid "Use remote host (Debian APT only):"
 msgstr "Defnyddio gwesteiwr pell (APT Debian yn unig):"
 
-#: options.cpp:92
+#: options.cpp:94
 msgid "Enable"
 msgstr "Galluogi"
 
-#: options.cpp:94
+#: options.cpp:96
 msgid "Location of Packages..."
 msgstr "Lleoliad Pecynnau..."
 
-#: options.cpp:103
+#: options.cpp:105
 msgid "Cac&he"
 msgstr "Ce&lc"
 
-#: options.cpp:106
+#: options.cpp:108
 msgid "Cache Remote Package Folders"
 msgstr "Celcio Plygyll Pecynnau Pell"
 
-#: options.cpp:112 options.cpp:128
+#: options.cpp:114 options.cpp:130
 msgid "Always"
 msgstr "Bob tro"
 
-#: options.cpp:115 options.cpp:131
+#: options.cpp:117 options.cpp:133
 msgid "During a session"
 msgstr "Yn ystod sesiwn"
 
-#: options.cpp:118 options.cpp:134
+#: options.cpp:120 options.cpp:136
 msgid "Never"
 msgstr "Byth"
 
-#: options.cpp:122
+#: options.cpp:124
 msgid "Cache Remote Package Files"
 msgstr "Celcio Ffeiliau Pecynnau Pell"
 
-#: options.cpp:137
+#: options.cpp:139
 msgid "Cache Folder"
 msgstr "Plygell Gelc"
 
-#: options.cpp:144
+#: options.cpp:146
 msgid "&Misc"
 msgstr "A&mrywiol"
 
-#: options.cpp:150
+#: options.cpp:152
 msgid "Use SSH for privileged commands"
 msgstr "Defnyddio SSH ar gyfer gorchmynion breintiedig"
 
-#: options.cpp:153
+#: options.cpp:155
 msgid "Verify file list"
 msgstr "Gwirio rhestr y ffeiliau"
 
-#: options.cpp:156
+#: options.cpp:158
 msgid "Read information from all local package files"
 msgstr "Darllen gwybodaeth oddi wrth y ffeiliau pecynnau lleol i gyd"
 
@@ -805,24 +817,24 @@ msgstr "ar gael fel"
 msgid "'Delete this window to continue'"
 msgstr "'Dileuwch y ffenestr hon i barhau'"
 
-#: pkgInterface.cpp:250
+#: pkgInterface.cpp:251
 msgid "Starting Kio"
 msgstr "Cychwyn Kio"
 
-#: pkgInterface.cpp:255
+#: pkgInterface.cpp:256
 msgid "Kio finished"
 msgstr "Gorffennwyd Kio"
 
-#: pkgInterface.cpp:265
+#: pkgInterface.cpp:266
 msgid "Kio failed"
 msgstr "Methwyd Kio"
 
-#: pkgInterface.cpp:290
+#: pkgInterface.cpp:291
 #, c-format
 msgid "Cannot read folder %1"
 msgstr "Methu darllen plygell %1"
 
-#: pkgInterface.cpp:320
+#: pkgInterface.cpp:321
 msgid "Verifying"
 msgstr "Gwirio"
 
@@ -860,21 +872,25 @@ msgstr "Goramser: %1"
 msgid "Kprocess error:%1"
 msgstr "Gwall Kprocess: %1"
 
+#. i18n: file kpackageui.rc line 13
 #: rc.cpp:6
 #, no-c-format
 msgid "&Packages"
 msgstr "&Pecynnau"
 
+#. i18n: file kpackageui.rc line 30
 #: rc.cpp:9
 #, no-c-format
 msgid "&Cache"
 msgstr "&Celc"
 
+#. i18n: file kpackageui.rc line 36
 #: rc.cpp:12
 #, no-c-format
 msgid "Spe&cial"
 msgstr "Ar&bennig"
 
+#. i18n: file kpackageui.rc line 38
 #: rc.cpp:15
 #, no-c-format
 msgid "&APT: Debian"
@@ -925,10 +941,6 @@ msgstr "Holi rhestr becynnau RPM"
 #: rpmInterface.cpp:161
 msgid "Processing RPM package list"
 msgstr "Prosesu rhestr becynnau RPM"
-
-#: search.cpp:41 search.cpp:51
-msgid "Find Package"
-msgstr "Canfod Pecyn"
 
 #: search.cpp:65
 msgid "Sub string"
