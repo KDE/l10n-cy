@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdewebdev/kxsldbg.po\n"
-"POT-Creation-Date: 2004-11-19 01:23+0100\n"
+"POT-Creation-Date: 2004-11-20 01:22+0100\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -25,8 +25,20 @@ msgstr "kyfieithu@dotmon.com"
 msgid "A KDE KPart Application for xsldbg, an XSLT debugger"
 msgstr ""
 
-#: main.cpp:15
-msgid "KXsldbg"
+#: main.cpp:14 xsldbgmain.cpp:97
+msgid "XSL script to run."
+msgstr ""
+
+#: main.cpp:15 xsldbgmain.cpp:98
+msgid "XML data to be transformed."
+msgstr ""
+
+#: main.cpp:16
+msgid "File to save results to."
+msgstr ""
+
+#: main.cpp:22
+msgid "KXSLDbg"
 msgstr ""
 
 #: kxsldbg.cpp:64
@@ -53,9 +65,9 @@ msgstr "Eang"
 #: kxsldbgpart/xsldbgbreakpointsimpl.cpp:120
 #: kxsldbgpart/xsldbgbreakpointsimpl.cpp:143
 #: kxsldbgpart/xsldbgbreakpointsimpl.cpp:148
-#: kxsldbgpart/xsldbgdebugger.cpp:290 kxsldbgpart/xsldbgdebugger.cpp:310
-#: kxsldbgpart/xsldbgdebugger.cpp:328 kxsldbgpart/xsldbgdebugger.cpp:348
-#: kxsldbgpart/xsldbgdebugger.cpp:368 kxsldbgpart/xsldbgdebugger.cpp:387
+#: kxsldbgpart/xsldbgdebugger.cpp:296 kxsldbgpart/xsldbgdebugger.cpp:316
+#: kxsldbgpart/xsldbgdebugger.cpp:334 kxsldbgpart/xsldbgdebugger.cpp:354
+#: kxsldbgpart/xsldbgdebugger.cpp:374 kxsldbgpart/xsldbgdebugger.cpp:393
 msgid "Operation Failed"
 msgstr ""
 
@@ -211,9 +223,11 @@ msgstr ""
 msgid "Failed to add parameter"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/debugXSL.cpp:1861
-#: kxsldbgpart/libxsldbg/debugXSL.cpp:1874
-#: kxsldbgpart/libxsldbg/debugXSL.cpp:2034
+#: kxsldbgpart/libxsldbg/debugXSL.cpp:1863
+#: kxsldbgpart/libxsldbg/debugXSL.cpp:1876
+#: kxsldbgpart/libxsldbg/debugXSL.cpp:2036
+#: kxsldbgpart/libxsldbg/file_cmds.cpp:248
+#: kxsldbgpart/libxsldbg/file_cmds.cpp:265
 #: kxsldbgpart/libxsldbg/param_cmds.cpp:52
 #: kxsldbgpart/libxsldbg/param_cmds.cpp:71
 #: kxsldbgpart/libxsldbg/param_cmds.cpp:101
@@ -254,9 +268,9 @@ msgid ""
 "Error: Unknown option name %1.\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/debugXSL.cpp:1985
+#: kxsldbgpart/libxsldbg/debugXSL.cpp:1987
 #: kxsldbgpart/libxsldbg/file_cmds.cpp:213
-#: kxsldbgpart/libxsldbg/file_cmds.cpp:259
+#: kxsldbgpart/libxsldbg/file_cmds.cpp:269
 #: kxsldbgpart/libxsldbg/option_cmds.cpp:113
 #: kxsldbgpart/libxsldbg/option_cmds.cpp:116
 #: kxsldbgpart/libxsldbg/os_cmds.cpp:48
@@ -558,7 +572,7 @@ msgid ""
 "Fatal error: Aborting debugger due to an unrecoverable error.\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/xsldbg.cpp:591
+#: kxsldbgpart/kxsldbg_part.cpp:725 kxsldbgpart/libxsldbg/xsldbg.cpp:591
 msgid ""
 "Error: Too many file names supplied via command line.\n"
 msgstr ""
@@ -885,13 +899,13 @@ msgid ""
 msgstr ""
 
 #: kxsldbgpart/libxsldbg/debugXSL.cpp:1270
-#: kxsldbgpart/libxsldbg/debugXSL.cpp:2064
+#: kxsldbgpart/libxsldbg/debugXSL.cpp:2066
 msgid ""
 "Breakpoint for file \"%1\" at line %2.\n"
 msgstr ""
 
 #: kxsldbgpart/libxsldbg/debugXSL.cpp:1272
-#: kxsldbgpart/libxsldbg/debugXSL.cpp:2066
+#: kxsldbgpart/libxsldbg/debugXSL.cpp:2068
 msgid ""
 "Breakpoint at text node in file \"%1\".\n"
 msgstr ""
@@ -946,29 +960,29 @@ msgid ""
 "Load of source deferred. Use the run command.\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/debugXSL.cpp:1808
+#: kxsldbgpart/libxsldbg/debugXSL.cpp:1809
 msgid ""
 "Load of data file deferred. Use the run command.\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/debugXSL.cpp:1884
-#: kxsldbgpart/libxsldbg/debugXSL.cpp:1905
-#: kxsldbgpart/libxsldbg/debugXSL.cpp:1913
+#: kxsldbgpart/libxsldbg/debugXSL.cpp:1886
+#: kxsldbgpart/libxsldbg/debugXSL.cpp:1907
+#: kxsldbgpart/libxsldbg/debugXSL.cpp:1915
 msgid ""
 "Warning: The %1 command is disabled.\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/debugXSL.cpp:1969
+#: kxsldbgpart/libxsldbg/debugXSL.cpp:1971
 msgid ""
 "Opening terminal %1.\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/debugXSL.cpp:1989
+#: kxsldbgpart/libxsldbg/debugXSL.cpp:1991
 msgid ""
 "Warning: The %1 command is disbled\n"
 msgstr ""
 
-#: kxsldbgpart/libxsldbg/debugXSL.cpp:2053
+#: kxsldbgpart/libxsldbg/debugXSL.cpp:2055
 msgid ""
 "Error: Unknown command %1. Try help.\n"
 msgstr ""
@@ -1144,60 +1158,60 @@ msgstr "Alluogir"
 msgid "Disabled"
 msgstr "Analluogir"
 
-#: kxsldbgpart/xsldbgconfigimpl.cpp:192
+#: kxsldbgpart/xsldbgconfigimpl.cpp:191
 msgid ""
 "\t\"XSL source\" \n"
 msgstr ""
 
-#: kxsldbgpart/xsldbgconfigimpl.cpp:194
+#: kxsldbgpart/xsldbgconfigimpl.cpp:193
 msgid ""
 "\t\"XML data\" \n"
 msgstr ""
 
-#: kxsldbgpart/xsldbgconfigimpl.cpp:196
+#: kxsldbgpart/xsldbgconfigimpl.cpp:195
 msgid ""
 "\t\"Output file\" \n"
 msgstr ""
 
-#: kxsldbgpart/xsldbgconfigimpl.cpp:198
+#: kxsldbgpart/xsldbgconfigimpl.cpp:197
 msgid ""
 "Missing values for \n"
 msgstr ""
 
-#: kxsldbgpart/xsldbgconfigimpl.cpp:202
+#: kxsldbgpart/xsldbgconfigimpl.cpp:201
 msgid ""
 "Output file is the same as either XSL Source or XML Data file\n"
 msgstr ""
 
-#: kxsldbgpart/xsldbgconfigimpl.cpp:221
+#: kxsldbgpart/xsldbgconfigimpl.cpp:220
 msgid ""
 "The following libxslt parameters are empty\n"
 "\t"
 msgstr ""
 
-#: kxsldbgpart/xsldbgconfigimpl.cpp:373
+#: kxsldbgpart/xsldbgconfigimpl.cpp:370
 msgid "Choose XSL Source to Debug"
 msgstr ""
 
-#: kxsldbgpart/xsldbgconfigimpl.cpp:385
+#: kxsldbgpart/xsldbgconfigimpl.cpp:382
 msgid "Choose XML Data to Debug"
 msgstr ""
 
-#: kxsldbgpart/xsldbgconfigimpl.cpp:396
+#: kxsldbgpart/xsldbgconfigimpl.cpp:393
 msgid "Choose Output File for XSL Transformation"
 msgstr ""
 
-#: kxsldbgpart/xsldbgconfigimpl.cpp:482
+#: kxsldbgpart/xsldbgconfigimpl.cpp:484
 msgid "Suspect Configuration"
 msgstr ""
 
-#: kxsldbgpart/xsldbgconfigimpl.cpp:486
+#: kxsldbgpart/xsldbgconfigimpl.cpp:488
 msgid "Incomplete or Invalid Configuration"
 msgstr ""
 
-#: kxsldbgpart/xsldbgdebugger.cpp:291 kxsldbgpart/xsldbgdebugger.cpp:311
-#: kxsldbgpart/xsldbgdebugger.cpp:329 kxsldbgpart/xsldbgdebugger.cpp:349
-#: kxsldbgpart/xsldbgdebugger.cpp:369 kxsldbgpart/xsldbgdebugger.cpp:388
+#: kxsldbgpart/xsldbgdebugger.cpp:297 kxsldbgpart/xsldbgdebugger.cpp:317
+#: kxsldbgpart/xsldbgdebugger.cpp:335 kxsldbgpart/xsldbgdebugger.cpp:355
+#: kxsldbgpart/xsldbgdebugger.cpp:375 kxsldbgpart/xsldbgdebugger.cpp:394
 msgid "Cannot set/edit breakpoints on the output file."
 msgstr ""
 
@@ -1219,149 +1233,149 @@ msgstr ""
 msgid "Request Failed "
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:83 kxsldbgpart/kxsldbg_part.cpp:628
-#: kxsldbgpart/kxsldbg_part.cpp:630
+#: kxsldbgpart/kxsldbg_part.cpp:86 kxsldbgpart/kxsldbg_part.cpp:632
+#: kxsldbgpart/kxsldbg_part.cpp:634
 msgid "Goto XPath"
 msgstr ""
 
 #. i18n: file ./kxsldbgpart/xsldbgglobalvariables.ui line 185
-#: kxsldbgpart/kxsldbg_part.cpp:91 rc.cpp:33 rc.cpp:340
+#: kxsldbgpart/kxsldbg_part.cpp:94 rc.cpp:33 rc.cpp:340
 #, no-c-format
 msgid "Evaluate"
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:104
+#: kxsldbgpart/kxsldbg_part.cpp:107
 msgid "Configure Editor..."
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:108
+#: kxsldbgpart/kxsldbg_part.cpp:111
 msgid "Configure..."
 msgstr "Ffurfweddu..."
 
-#: kxsldbgpart/kxsldbg_part.cpp:113
+#: kxsldbgpart/kxsldbg_part.cpp:116
 msgid "Inspect..."
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:120
+#: kxsldbgpart/kxsldbg_part.cpp:123
 msgid "Run"
 msgstr "Rhedeg"
 
-#: kxsldbgpart/kxsldbg_part.cpp:130
+#: kxsldbgpart/kxsldbg_part.cpp:133
 msgid "Step"
 msgstr "Cam"
 
 #. i18n: file ./kxsldbgpart/xsldbgconfig.ui line 261
-#: kxsldbgpart/kxsldbg_part.cpp:135 rc.cpp:108
+#: kxsldbgpart/kxsldbg_part.cpp:138 rc.cpp:108
 #, no-c-format
 msgid "Next"
 msgstr "Nesaf"
 
-#: kxsldbgpart/kxsldbg_part.cpp:140
+#: kxsldbgpart/kxsldbg_part.cpp:143
 msgid "Step Up"
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:145
+#: kxsldbgpart/kxsldbg_part.cpp:148
 msgid "Step Down"
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:151
+#: kxsldbgpart/kxsldbg_part.cpp:154
 msgid "Break"
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:156
+#: kxsldbgpart/kxsldbg_part.cpp:159
 msgid "Enable/Disable"
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:166
+#: kxsldbgpart/kxsldbg_part.cpp:169
 msgid "&Source"
 msgstr "&Tarddiad"
 
-#: kxsldbgpart/kxsldbg_part.cpp:171
+#: kxsldbgpart/kxsldbg_part.cpp:174
 msgid "&Data"
 msgstr "&Data"
 
-#: kxsldbgpart/kxsldbg_part.cpp:176
+#: kxsldbgpart/kxsldbg_part.cpp:179
 msgid "&Output"
 msgstr "&Allbwn"
 
-#: kxsldbgpart/kxsldbg_part.cpp:181
+#: kxsldbgpart/kxsldbg_part.cpp:184
 msgid "Reload Current File From Disk"
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:187
+#: kxsldbgpart/kxsldbg_part.cpp:190
 msgid "Walk Through Stylesheet..."
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:191
+#: kxsldbgpart/kxsldbg_part.cpp:194
 msgid "Stop Wal&king Through Stylesheet"
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:195
+#: kxsldbgpart/kxsldbg_part.cpp:198
 msgid "Tr&ace Execution of Stylesheet"
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:199
+#: kxsldbgpart/kxsldbg_part.cpp:202
 msgid "Stop Tracing of Stylesheet"
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:204
+#: kxsldbgpart/kxsldbg_part.cpp:207
 msgid "&Evaluate Expression..."
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:209
+#: kxsldbgpart/kxsldbg_part.cpp:212
 msgid "Goto &XPath..."
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:214
+#: kxsldbgpart/kxsldbg_part.cpp:217
 msgid "Lookup SystemID..."
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:219
+#: kxsldbgpart/kxsldbg_part.cpp:222
 msgid "Lookup PublicID..."
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:264
+#: kxsldbgpart/kxsldbg_part.cpp:275
 msgid "KXsldbgPart"
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:345
+#: kxsldbgpart/kxsldbg_part.cpp:356
 msgid "Debugger Not Ready"
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:346
+#: kxsldbgpart/kxsldbg_part.cpp:357
 msgid "Configure and start the debugger first."
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:363 kxsldbgpart/kxsldbg_part.cpp:369
+#: kxsldbgpart/kxsldbg_part.cpp:374 kxsldbgpart/kxsldbg_part.cpp:380
 msgid "Lookup SystemID"
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:364 kxsldbgpart/kxsldbg_part.cpp:370
+#: kxsldbgpart/kxsldbg_part.cpp:375 kxsldbgpart/kxsldbg_part.cpp:381
 msgid "Please enter SystemID to find:"
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:395 kxsldbgpart/kxsldbg_part.cpp:400
+#: kxsldbgpart/kxsldbg_part.cpp:406 kxsldbgpart/kxsldbg_part.cpp:411
 msgid "Lookup PublicID"
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:396 kxsldbgpart/kxsldbg_part.cpp:401
+#: kxsldbgpart/kxsldbg_part.cpp:407 kxsldbgpart/kxsldbg_part.cpp:412
 msgid "Please enter PublicID to find:"
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:616 kxsldbgpart/kxsldbg_part.cpp:618
+#: kxsldbgpart/kxsldbg_part.cpp:620 kxsldbgpart/kxsldbg_part.cpp:622
 msgid "Evalute Expression"
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:616 kxsldbgpart/kxsldbg_part.cpp:618
-#: kxsldbgpart/kxsldbg_part.cpp:628 kxsldbgpart/kxsldbg_part.cpp:630
+#: kxsldbgpart/kxsldbg_part.cpp:620 kxsldbgpart/kxsldbg_part.cpp:622
+#: kxsldbgpart/kxsldbg_part.cpp:632 kxsldbgpart/kxsldbg_part.cpp:634
 msgid "XPath:"
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:740
+#: kxsldbgpart/kxsldbg_part.cpp:789
 msgid "SystemID or PublicID Resolution Result"
 msgstr ""
 
-#: kxsldbgpart/kxsldbg_part.cpp:741
+#: kxsldbgpart/kxsldbg_part.cpp:790
 #, c-format
 msgid ""
 "SystemID or PublicID has been resolved to\n"
@@ -1970,14 +1984,6 @@ msgstr ""
 msgid ""
 "Disable the automatic restarting of execution when current processing pass "
 "is complete"
-msgstr ""
-
-#: xsldbgmain.cpp:97
-msgid "XSL script to run."
-msgstr ""
-
-#: xsldbgmain.cpp:98
-msgid "XML data to be transformed."
 msgstr ""
 
 #: xsldbgmain.cpp:124
