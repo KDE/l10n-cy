@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kontact\n"
-"POT-Creation-Date: 2005-02-03 01:23+0100\n"
+"POT-Creation-Date: 2005-02-21 14:48+0100\n"
 "PO-Revision-Date: 2004-01-09 10:24+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -66,23 +66,23 @@ msgstr "<p><b>Cyfieithwyr:</b></p>"
 msgid "%1 License"
 msgstr "%1 trwydded"
 
-#: src/iconsidepane.cpp:339
+#: src/iconsidepane.cpp:435
 msgid "Icon Size"
 msgstr "Maint Eicon"
 
-#: src/iconsidepane.cpp:340
+#: src/iconsidepane.cpp:436
 msgid "Large"
 msgstr "Mawr"
 
-#: src/iconsidepane.cpp:341
+#: src/iconsidepane.cpp:437
 msgid "Normal"
 msgstr "Arferol"
 
-#: src/iconsidepane.cpp:342
+#: src/iconsidepane.cpp:438
 msgid "Small"
 msgstr "Bach"
 
-#: src/iconsidepane.cpp:343
+#: src/iconsidepane.cpp:439
 msgid "Text Only"
 msgstr "Testun yn Unig"
 
@@ -90,7 +90,7 @@ msgstr "Testun yn Unig"
 msgid "kontactconfig"
 msgstr "kontactconfig"
 
-#: src/kcmkontact.cpp:92 src/mainwindow.cpp:256
+#: src/kcmkontact.cpp:92 src/mainwindow.cpp:295
 msgid "KDE Kontact"
 msgstr "Kyswllt KDE"
 
@@ -103,94 +103,94 @@ msgstr "(h)(c) 2003 Cornelius Schumacher"
 msgid "KDE personal information manager"
 msgstr "Trefnydd Gwybodaeth Bersonol KDE"
 
-#: src/main.cpp:73
+#: src/main.cpp:77
 msgid "Start with a specific Kontact module"
 msgstr ""
 
-#: src/main.cpp:74
+#: src/main.cpp:78
 msgid "Start in iconified (minimized) mode"
 msgstr ""
 
-#: src/main.cpp:75
+#: src/main.cpp:79
 msgid "List all possible modules and exit"
 msgstr ""
 
-#: src/main.cpp:123
+#: src/main.cpp:127
 msgid "Kontact"
 msgstr "Kyswllt"
 
-#: src/main.cpp:124
+#: src/main.cpp:128
 #, fuzzy
 msgid "(C) 2001-2004 The Kontact developers"
 msgstr "(C) 2001-2003 Y datblygwyr Kyswllt"
 
-#: src/main.cpp:133
+#: src/main.cpp:137
 msgid "Original Author"
 msgstr "Awdur Gwreiddiol"
 
-#: src/mainwindow.cpp:230
+#: src/mainwindow.cpp:263
 msgid "<h2 style='text-align:center; margin-top: 0px; margin-bottom: 0px'>%1</h2>"
 msgstr ""
 
-#: src/mainwindow.cpp:231
+#: src/mainwindow.cpp:264
 #, fuzzy
 msgid "Loading Kontact..."
 msgstr "Ffurfweddu Kyswllt..."
 
-#: src/mainwindow.cpp:241
+#: src/mainwindow.cpp:274
 msgid " Initializing..."
 msgstr "Ymgychwyn..."
 
-#: src/mainwindow.cpp:257
+#: src/mainwindow.cpp:296
 msgid "Get Organized!"
 msgstr ""
 
-#: src/mainwindow.cpp:258
+#: src/mainwindow.cpp:297
 #, fuzzy
 msgid "The KDE Personal Information Management Suite"
 msgstr "Trefnydd Gwybodaeth Bersonol KDE"
 
-#: src/mainwindow.cpp:293
+#: src/mainwindow.cpp:331
 msgid "New"
 msgstr "Newydd"
 
-#: src/mainwindow.cpp:297
+#: src/mainwindow.cpp:335
 msgid "Select Components..."
 msgstr "Dewis Cydrannau ..."
 
-#: src/mainwindow.cpp:301
+#: src/mainwindow.cpp:339
 msgid "Configure Kontact..."
 msgstr "Ffurfweddu Kyswllt..."
 
-#: src/mainwindow.cpp:304
+#: src/mainwindow.cpp:342
 #, fuzzy
 msgid "&Kontact Introduction"
 msgstr "Cymhwysiad Cynnwys Kyswllt"
 
-#: src/mainwindow.cpp:306
+#: src/mainwindow.cpp:344
 msgid "&Tip of the Day"
 msgstr "&Cynghoryn y Dydd..."
 
-#: src/mainwindow.cpp:308
+#: src/mainwindow.cpp:346
 msgid "&Request Feature..."
 msgstr ""
 
-#: src/mainwindow.cpp:494
+#: src/mainwindow.cpp:535
 msgid "Application is running standalone. Foregrounding..."
 msgstr "Mae'r cymhwysiad yn rhedeg yn unigol.  Blaendiro..."
 
-#: src/mainwindow.cpp:505
+#: src/mainwindow.cpp:547
 #, fuzzy, c-format
 msgid "Cannot load part for %1."
 msgstr "Methu llwytho Part ar gyfer %1"
 
-#: src/mainwindow.cpp:539
+#: src/mainwindow.cpp:593
 msgid ""
 "_: Plugin dependent window title\n"
 "%1 - Kontact"
 msgstr "%1 - Kyswllt"
 
-#: src/mainwindow.cpp:792
+#: src/mainwindow.cpp:849
 msgid ""
 "<h2 style='text-align:center; margin-top: 0px;'>Welcome to Kontact "
 "%1</h2>"
@@ -198,21 +198,48 @@ msgid ""
 "<tr>"
 "<td><a href=\"%1\"><img width=\"%1\" height=\"%1\" src=\"%1\" "
 "/></a></td>"
-"<td><a href=\"%1\">Read Manual</a></td></tr>"
+"<td><a href=\"%1\">%1</a>"
+"<br><span id=\"subtext\"><nobr>%1</td></tr>"
 "<tr>"
 "<td><a href=\"%1\"><img width=\"%1\" height=\"%1\" src=\"%1\" "
 "/></a></td>"
-"<td><a href=\"%1\">Visit Kontact Website</a></td></tr>"
+"<td><a href=\"%1\">%1</a>"
+"<br><span id=\"subtext\"><nobr>%1</td></tr>"
 "<tr>"
 "<td><a href=\"%1\"><img width=\"%1\" height=\"%1\" src=\"%1\" "
 "/></a></td>"
-"<td><a href=\"%1\">Configure Kontact as Groupware "
-"Client</a></td></tr></table><p style=\"margin-bottom: 0px\"> <a "
-"href=\"%1\">Skip this introduction</a></p>"
+"<td><a href=\"%1\">%1</a>"
+"<br><span id=\"subtext\"><nobr>%1</td></tr></table>"
+"<p style=\"margin-bottom: 0px\"> <a href=\"%1\">Skip this "
+"introduction</a></p>"
 msgstr ""
 
-#: src/mainwindow.cpp:804
+#: src/mainwindow.cpp:861
 msgid "Kontact handles your e-mail, addressbook, calendar, to-do list and more."
+msgstr ""
+
+#: src/mainwindow.cpp:867
+msgid "Read Manual"
+msgstr ""
+
+#: src/mainwindow.cpp:868
+msgid "Learn more about Kontact and its components"
+msgstr ""
+
+#: src/mainwindow.cpp:874
+msgid "Visit Kontact Website"
+msgstr ""
+
+#: src/mainwindow.cpp:875
+msgid "Access online resources and tutorials"
+msgstr ""
+
+#: src/mainwindow.cpp:881
+msgid "Configure Kontact as Groupware Client"
+msgstr ""
+
+#: src/mainwindow.cpp:882
+msgid "Prepare Kontact for use in corporate networks"
 msgstr ""
 
 #: interfaces/core.cpp:80
@@ -293,15 +320,15 @@ msgid "New Contact..."
 msgstr "Cyswllt Newydd..."
 
 #: plugins/kaddressbook/kaddressbook_plugin.cpp:144
-#: plugins/korganizer/korganizerplugin.cpp:177
-#: plugins/korganizer/todoplugin.cpp:170
+#: plugins/korganizer/korganizerplugin.cpp:179
+#: plugins/korganizer/todoplugin.cpp:177
 #, fuzzy
 msgid "Drops of multiple mails are not supported."
 msgstr "Ni chynhelir gostwng aml ebostiau."
 
 #: plugins/kaddressbook/kaddressbook_plugin.cpp:158
-#: plugins/korganizer/korganizerplugin.cpp:190
-#: plugins/korganizer/todoplugin.cpp:183
+#: plugins/korganizer/korganizerplugin.cpp:192
+#: plugins/korganizer/todoplugin.cpp:190
 #, fuzzy
 msgid "Cannot handle drop events of type '%1'."
 msgstr "Methu trin digwyddiadau gollwng o'r math '%1'."
@@ -316,7 +343,7 @@ msgstr ""
 
 #: plugins/kaddressbook/kcmkabsummary.cpp:71
 #: plugins/kmail/kcmkmailsummary.cpp:65
-#: plugins/specialdates/kcmsdsummary.cpp:249
+#: plugins/specialdates/kcmsdsummary.cpp:250
 msgid "(c) 2004 Tobias Koenig"
 msgstr ""
 
@@ -331,47 +358,47 @@ msgstr ""
 "mewn un diwrnod\n"
 "mewn %n o ddiwrnodau"
 
-#: plugins/kaddressbook/kcmkabsummary.cpp:97
+#: plugins/kaddressbook/kcmkabsummary.cpp:96
 msgid "Address Book Summary"
 msgstr ""
 
-#: plugins/kaddressbook/kcmkabsummary.cpp:101
+#: plugins/kaddressbook/kcmkabsummary.cpp:100
 msgid "How many days should the address book summary display at once?"
 msgstr ""
 
-#: plugins/kaddressbook/kcmkabsummary.cpp:104
-#: plugins/korganizer/kcmkorgsummary.cpp:103
-#: plugins/specialdates/kcmsdsummary.cpp:97
+#: plugins/kaddressbook/kcmkabsummary.cpp:103
+#: plugins/korganizer/kcmkorgsummary.cpp:102
+#: plugins/specialdates/kcmsdsummary.cpp:96
 msgid "One day"
 msgstr ""
 
-#: plugins/kaddressbook/kcmkabsummary.cpp:107
-#: plugins/korganizer/kcmkorgsummary.cpp:106
-#: plugins/specialdates/kcmsdsummary.cpp:100
+#: plugins/kaddressbook/kcmkabsummary.cpp:106
+#: plugins/korganizer/kcmkorgsummary.cpp:105
+#: plugins/specialdates/kcmsdsummary.cpp:99
 msgid "Five days"
 msgstr ""
 
-#: plugins/kaddressbook/kcmkabsummary.cpp:110
-#: plugins/korganizer/kcmkorgsummary.cpp:109
-#: plugins/specialdates/kcmsdsummary.cpp:103
+#: plugins/kaddressbook/kcmkabsummary.cpp:109
+#: plugins/korganizer/kcmkorgsummary.cpp:108
+#: plugins/specialdates/kcmsdsummary.cpp:102
 msgid "One week"
 msgstr ""
 
-#: plugins/kaddressbook/kcmkabsummary.cpp:113
-#: plugins/korganizer/kcmkorgsummary.cpp:112
-#: plugins/specialdates/kcmsdsummary.cpp:106
+#: plugins/kaddressbook/kcmkabsummary.cpp:112
+#: plugins/korganizer/kcmkorgsummary.cpp:111
+#: plugins/specialdates/kcmsdsummary.cpp:105
 msgid "One month"
 msgstr ""
 
-#: plugins/kaddressbook/kcmkabsummary.cpp:129
+#: plugins/kaddressbook/kcmkabsummary.cpp:128
 msgid "Event Types"
 msgstr ""
 
-#: plugins/kaddressbook/kcmkabsummary.cpp:130
+#: plugins/kaddressbook/kcmkabsummary.cpp:129
 msgid "Show all birthdays"
 msgstr ""
 
-#: plugins/kaddressbook/kcmkabsummary.cpp:131
+#: plugins/kaddressbook/kcmkabsummary.cpp:130
 #, fuzzy
 msgid "Show all anniversaries"
 msgstr "Penblwyddi a Dathliadau"
@@ -384,15 +411,15 @@ msgstr ""
 msgid "Mail Summary Configuration Dialog"
 msgstr ""
 
-#: plugins/kmail/kcmkmailsummary.cpp:85
+#: plugins/kmail/kcmkmailsummary.cpp:84
 msgid "Summary"
 msgstr "Crynodeb"
 
-#: plugins/kmail/kcmkmailsummary.cpp:87
+#: plugins/kmail/kcmkmailsummary.cpp:86
 msgid "Show full path for folders"
 msgstr ""
 
-#: plugins/kmail/kcmkmailsummary.cpp:107
+#: plugins/kmail/kcmkmailsummary.cpp:106
 msgid ""
 "_: prefix for local folders\n"
 "Local"
@@ -406,13 +433,13 @@ msgstr "Neges Newydd..."
 msgid "New Messages"
 msgstr "Negeseuon Newydd"
 
-#: plugins/kmail/summarywidget.cpp:143
+#: plugins/kmail/summarywidget.cpp:145
 msgid ""
 "_: %1: number of unread messages %2: total number of messages\n"
 "%1 / %2"
 msgstr ""
 
-#: plugins/kmail/summarywidget.cpp:155
+#: plugins/kmail/summarywidget.cpp:157
 msgid "No unread messages"
 msgstr "Dim negeseuon nas darllenwyd"
 
@@ -461,7 +488,7 @@ msgstr "Rheoli Nodau"
 msgid "Notes"
 msgstr "Nodau"
 
-#: plugins/korganizer/journalplugin.cpp:52
+#: plugins/korganizer/journalplugin.cpp:51
 #, fuzzy
 msgid "New Journal..."
 msgstr "Ebost Newydd"
@@ -479,39 +506,39 @@ msgstr ""
 msgid "(c) 2003 - 2004 Tobias Koenig"
 msgstr "(h) 2003 - 2004 Tobias Koenig"
 
-#: plugins/korganizer/kcmkorgsummary.cpp:96
+#: plugins/korganizer/kcmkorgsummary.cpp:95
 msgid "Calendar"
 msgstr "Calendr"
 
-#: plugins/korganizer/kcmkorgsummary.cpp:100
+#: plugins/korganizer/kcmkorgsummary.cpp:99
 msgid "How many days should the calendar display at once?"
 msgstr ""
 
-#: plugins/korganizer/kcmkorgsummary.cpp:128
+#: plugins/korganizer/kcmkorgsummary.cpp:127
 #: plugins/korganizer/todosummarywidget.cpp:56
 #, fuzzy
 msgid "To-dos"
 msgstr "I-Wneud Newydd"
 
-#: plugins/korganizer/kcmkorgsummary.cpp:129
+#: plugins/korganizer/kcmkorgsummary.cpp:128
 msgid "Show all tasks"
 msgstr ""
 
-#: plugins/korganizer/kcmkorgsummary.cpp:130
+#: plugins/korganizer/kcmkorgsummary.cpp:129
 msgid "Show today's tasks"
 msgstr ""
 
-#: plugins/korganizer/korganizerplugin.cpp:59
+#: plugins/korganizer/korganizerplugin.cpp:58
 msgid "New Event..."
 msgstr "Digwyddiad Newydd ..."
 
-#: plugins/korganizer/korganizerplugin.cpp:162
-#: plugins/korganizer/todoplugin.cpp:156
+#: plugins/korganizer/korganizerplugin.cpp:164
+#: plugins/korganizer/todoplugin.cpp:163
 msgid "Meeting"
 msgstr "Cyfarfod"
 
-#: plugins/korganizer/korganizerplugin.cpp:180
-#: plugins/korganizer/todoplugin.cpp:173
+#: plugins/korganizer/korganizerplugin.cpp:182
+#: plugins/korganizer/todoplugin.cpp:180
 msgid ""
 "From: %1\n"
 "To: %2\n"
@@ -521,8 +548,8 @@ msgstr ""
 "I: %2\n"
 "Pwnc: %3"
 
-#: plugins/korganizer/korganizerplugin.cpp:184
-#: plugins/korganizer/todoplugin.cpp:177
+#: plugins/korganizer/korganizerplugin.cpp:186
+#: plugins/korganizer/todoplugin.cpp:184
 #, c-format
 msgid "Mail: %1"
 msgstr "Ebost: %1"
@@ -534,7 +561,7 @@ msgstr "Apwyntiadau"
 #: plugins/korganizer/summarywidget.cpp:139
 #: plugins/specialdates/sdsummarywidget.cpp:395
 msgid "Tomorrow"
-msgstr ""
+msgstr "Yfory"
 
 #: plugins/korganizer/summarywidget.cpp:180
 msgid ""
@@ -546,7 +573,7 @@ msgstr ""
 msgid "No appointments pending"
 msgstr "Dim apwyntiadau sy'n disgwyl"
 
-#: plugins/korganizer/todoplugin.cpp:58
+#: plugins/korganizer/todoplugin.cpp:57
 #, fuzzy
 msgid "New To-do..."
 msgstr "I-Wneud Newydd"
@@ -600,7 +627,7 @@ msgid "<i>Last sync:</i>"
 msgstr ""
 
 #: plugins/kpilot/summarywidget.cpp:70 plugins/kpilot/summarywidget.cpp:103
-#: plugins/kpilot/summarywidget.cpp:176 plugins/kpilot/summarywidget.cpp:194
+#: plugins/kpilot/summarywidget.cpp:159 plugins/kpilot/summarywidget.cpp:177
 #, fuzzy
 msgid "No information available"
 msgstr "Dim gwybodaeth 'ynglyn' ar gael."
@@ -626,7 +653,7 @@ msgstr "<i>Dyfais:</i>"
 msgid "<i>Status:</i>"
 msgstr "<i>Cyflwr:</i>"
 
-#: plugins/kpilot/summarywidget.cpp:95 plugins/kpilot/summarywidget.cpp:193
+#: plugins/kpilot/summarywidget.cpp:95 plugins/kpilot/summarywidget.cpp:176
 msgid "No communication with the daemon possible"
 msgstr ""
 
@@ -642,21 +669,21 @@ msgstr ""
 msgid "[Start KPilot]"
 msgstr ""
 
-#: plugins/kpilot/summarywidget.cpp:184 plugins/kpilot/summarywidget.cpp:185
-#: plugins/kpilot/summarywidget.cpp:191 plugins/kpilot/summarywidget.cpp:192
+#: plugins/kpilot/summarywidget.cpp:167 plugins/kpilot/summarywidget.cpp:168
+#: plugins/kpilot/summarywidget.cpp:174 plugins/kpilot/summarywidget.cpp:175
 msgid "unknown"
 msgstr "anhysbys"
 
-#: plugins/kpilot/summarywidget.cpp:189
+#: plugins/kpilot/summarywidget.cpp:172
 #, fuzzy
 msgid "No information available (Daemon not running?)"
 msgstr "Dim gwybodaeth 'ynglyn' ar gael."
 
-#: plugins/kpilot/summarywidget.cpp:215
+#: plugins/kpilot/summarywidget.cpp:198
 msgid "KPilot HotSync Log"
 msgstr ""
 
-#: plugins/kpilot/summarywidget.cpp:222
+#: plugins/kpilot/summarywidget.cpp:205
 #, c-format
 msgid "Unable to open Hotsync log %1."
 msgstr ""
@@ -754,56 +781,56 @@ msgstr ""
 msgid "Copy URL to Clipboard"
 msgstr ""
 
-#: plugins/specialdates/kcmsdsummary.cpp:90
+#: plugins/specialdates/kcmsdsummary.cpp:89
 #: plugins/specialdates/specialdates_plugin.cpp:59
 msgid "Special Dates Summary"
 msgstr ""
 
-#: plugins/specialdates/kcmsdsummary.cpp:94
+#: plugins/specialdates/kcmsdsummary.cpp:93
 msgid "How many days should the special dates summary display at once?"
 msgstr ""
 
-#: plugins/specialdates/kcmsdsummary.cpp:122
+#: plugins/specialdates/kcmsdsummary.cpp:121
 #: plugins/specialdates/sdsummarywidget.cpp:89
 msgid "Special Dates"
 msgstr ""
 
-#: plugins/specialdates/kcmsdsummary.cpp:125
+#: plugins/specialdates/kcmsdsummary.cpp:124
 msgid "Show birthdays from contact list"
 msgstr ""
 
-#: plugins/specialdates/kcmsdsummary.cpp:127
+#: plugins/specialdates/kcmsdsummary.cpp:126
 msgid "Show birthdays from calendar"
 msgstr ""
 
-#: plugins/specialdates/kcmsdsummary.cpp:130
+#: plugins/specialdates/kcmsdsummary.cpp:129
 #, fuzzy
 msgid "Show anniversaries from contact list"
 msgstr "Penblwyddi a Dathliadau"
 
-#: plugins/specialdates/kcmsdsummary.cpp:132
+#: plugins/specialdates/kcmsdsummary.cpp:131
 #, fuzzy
 msgid "Show anniversaries from calendar"
 msgstr "Penblwyddi a Dathliadau"
 
-#: plugins/specialdates/kcmsdsummary.cpp:135
+#: plugins/specialdates/kcmsdsummary.cpp:134
 msgid "Show political, cultural, and religious holidays"
 msgstr ""
 
-#: plugins/specialdates/kcmsdsummary.cpp:137
+#: plugins/specialdates/kcmsdsummary.cpp:136
 msgid "Show holidays from calendar"
 msgstr ""
 
-#: plugins/specialdates/kcmsdsummary.cpp:140
+#: plugins/specialdates/kcmsdsummary.cpp:139
 msgid "Show special occasions from calendar"
 msgstr ""
 
-#: plugins/specialdates/kcmsdsummary.cpp:246
+#: plugins/specialdates/kcmsdsummary.cpp:247
 #, fuzzy
 msgid "kcmsdsummary"
 msgstr "Crynodeb Kyswllt"
 
-#: plugins/specialdates/kcmsdsummary.cpp:247
+#: plugins/specialdates/kcmsdsummary.cpp:248
 #, fuzzy
 msgid "Special Dates Configuration Dialog"
 msgstr "Ymgom Ffurfweddu'r Ticer Newyddion"
@@ -818,19 +845,19 @@ msgstr "Calendr Gweithredol"
 
 #: plugins/specialdates/sdsummarywidget.cpp:252
 msgid "BIRTHDAY"
-msgstr ""
+msgstr "PENBLWYDD"
 
 #: plugins/specialdates/sdsummarywidget.cpp:266
 msgid "ANNIVERSARY"
-msgstr ""
+msgstr "DATHLIAD"
 
 #: plugins/specialdates/sdsummarywidget.cpp:280
 msgid "HOLIDAY"
-msgstr ""
+msgstr "GŴYL"
 
 #: plugins/specialdates/sdsummarywidget.cpp:295
 msgid "SPECIAL OCCASION"
-msgstr ""
+msgstr "ACHLYSUR ARBENNIG"
 
 #: plugins/specialdates/sdsummarywidget.cpp:417
 msgid "now"
@@ -867,30 +894,30 @@ msgid "Kontact Special Dates Summary"
 msgstr "Crynodeb Kyswllt"
 
 #: plugins/specialdates/specialdates_plugin.cpp:63
-msgid "(c) 2004 The KDE PIM Team"
+msgid "(c) 2004-2005 The KDE PIM Team"
 msgstr ""
 
 #: plugins/summary/kcmkontactsummary.cpp:84
 msgid "Name"
 msgstr "Enw"
 
-#: plugins/summary/kcmkontactsummary.cpp:99
+#: plugins/summary/kcmkontactsummary.cpp:98
 msgid ""
 "Here you can select which summary plugins to have visible in your summary "
 "view."
 msgstr ""
 
-#: plugins/summary/kcmkontactsummary.cpp:111
+#: plugins/summary/kcmkontactsummary.cpp:110
 #, fuzzy
 msgid "kontactsummary"
 msgstr "Crynodeb Kyswllt"
 
-#: plugins/summary/kcmkontactsummary.cpp:112
+#: plugins/summary/kcmkontactsummary.cpp:111
 #, fuzzy
 msgid "KDE Kontact Summary"
 msgstr "Crynodeb Kyswllt"
 
-#: plugins/summary/kcmkontactsummary.cpp:114
+#: plugins/summary/kcmkontactsummary.cpp:113
 msgid "(c), 2004 Tobias Koenig"
 msgstr ""
 

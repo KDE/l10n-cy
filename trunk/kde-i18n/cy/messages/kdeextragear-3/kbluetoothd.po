@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-3/kbluetoothd.po\n"
-"POT-Creation-Date: 2004-10-23 01:21+0200\n"
+"POT-Creation-Date: 2005-02-17 01:27+0100\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -66,44 +66,67 @@ msgstr ""
 msgid "Future policy for this device and service:"
 msgstr ""
 
-#. i18n: file kbluetoothd/conmainwidget.ui line 35
+#. i18n: file kbluetoothd/confirmationdlgbase.ui line 161
 #: rc.cpp:40
+#, no-c-format
+msgid "Bookmark this device"
+msgstr ""
+
+#. i18n: file kbluetoothd/confirmationdlgbase.ui line 164
+#: rc.cpp:43
+#, no-c-format
+msgid "Add a bookmark for quicker access"
+msgstr ""
+
+#. i18n: file kbluetoothd/confirmationdlgbase.ui line 167
+#: rc.cpp:46
+#, no-c-format
+msgid ""
+"<qt>"
+"<p>By adding a bookmark you can bypass the search procedure for devices "
+"which are not discoverable by default.</p>"
+"<p>The bookmark will be created in the first Bookmark folder which already "
+"contains a Bluetooth device link</p></qt>"
+msgstr ""
+
+#. i18n: file kbluetoothd/conmainwidget.ui line 35
+#: rc.cpp:49
 #, no-c-format
 msgid "Connection:"
 msgstr "Cysylltiad :"
 
 #. i18n: file kbluetoothd/conmainwidget.ui line 90
-#: rc.cpp:43
+#: rc.cpp:52
 #, no-c-format
 msgid "<b>Device name:</b>"
 msgstr "<b>Enw'r Dyfais:</b>"
 
 #. i18n: file kbluetoothd/conmainwidget.ui line 109
-#: rc.cpp:46
+#: rc.cpp:55
 #, no-c-format
 msgid "<b>Address:</b>"
 msgstr "<b>Cyfeiriad:</b>"
 
 #. i18n: file kbluetoothd/conmainwidget.ui line 144
-#: rc.cpp:49
+#: rc.cpp:58
 #, no-c-format
 msgid "00:00:00:00:00:00"
 msgstr ""
 
 #. i18n: file kbluetoothd/conmainwidget.ui line 160
-#: rc.cpp:52
+#: rc.cpp:61
 #, no-c-format
 msgid "unknown device"
-msgstr ""
+msgstr "dyfais Anysbys"
 
 #. i18n: file kbluetoothd/conmainwidget.ui line 176
-#: rc.cpp:55
+#: rc.cpp:64
 #, no-c-format
 msgid "<p><b>Signal&nbsp;strength:</b></p>"
 msgstr ""
 
 #. i18n: file kbluetoothd/pindefdialog.ui line 29
-#: rc.cpp:58 rc.cpp:94
+#: rc.cpp:67 rc.cpp:103
 #, no-c-format
 msgid ""
 "<font size=\"+2\">Bluetooth Pairing Request</font>\n"
@@ -115,7 +138,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file kbluetoothd/pingendialog.ui line 29
-#: rc.cpp:66 rc.cpp:80
+#: rc.cpp:75 rc.cpp:89
 #, no-c-format
 msgid ""
 "<font size=\"+2\">Bluetooth Pairing Request</font>\n"
@@ -127,40 +150,44 @@ msgid ""
 msgstr ""
 
 #. i18n: file kbluetoothd/pingendialog.ui line 53
-#: rc.cpp:74 rc.cpp:88
+#: rc.cpp:83 rc.cpp:97
 #, no-c-format
 msgid "Go"
 msgstr "Ewch"
 
 #. i18n: file kbluetoothd/pingendialog.ui line 61
-#: rc.cpp:77 rc.cpp:91
+#: rc.cpp:86 rc.cpp:100
 #, no-c-format
 msgid "Use custom PIN"
 msgstr ""
 
-#: kbluetoothd/application.cpp:66
+#: kbluetoothd/application.cpp:63
 msgid ""
 "<p>You may replace bluez's pin helper program with kbluepin; it is located "
 "in <b>%1</b> now.</p>"
 msgstr ""
 
-#: kbluetoothd/confirmation.cpp:45
+#: kbluetoothd/confirmation.cpp:50
 msgid "Kbluetoothd: access to %1 from %2: ALLOW"
 msgstr ""
 
-#: kbluetoothd/confirmation.cpp:50
+#: kbluetoothd/confirmation.cpp:55
 msgid "Kbluetoothd: access to %1 from %2: DENY"
 msgstr ""
 
-#: kbluetoothd/confirmation.cpp:55
+#: kbluetoothd/confirmation.cpp:60
 msgid "Kbluetoothd: access to %1 from %2: ASK"
 msgstr ""
 
-#: kbluetoothd/confirmation.cpp:67
+#: kbluetoothd/confirmation.cpp:72
 msgid "Unchanged"
 msgstr ""
 
-#: kbluetoothd/confirmation.cpp:80
+#: kbluetoothd/confirmation.cpp:85
+msgid "Accept"
+msgstr ""
+
+#: kbluetoothd/confirmation.cpp:101
 msgid ""
 "You can change the confirmation settings again using the Bluetooth services "
 "applet in the Control Center."
@@ -172,7 +199,7 @@ msgstr ""
 
 #: kbluetoothd/connectiondlg.cpp:39
 msgid "invalid"
-msgstr ""
+msgstr "annilys"
 
 #: kbluetoothd/connectiondlg.cpp:129
 msgid "outgoing"
@@ -194,22 +221,27 @@ msgstr ""
 msgid "Could not start hcitool to kill the connection"
 msgstr ""
 
-#: kbluetoothd/connectiondlg.cpp:230 kbluetoothd/main.cpp:34
-#: kbluetoothd/trayicon.cpp:270 kbluetoothd/trayicon.cpp:282
+#: kbluetoothd/connectiondlg.cpp:230 kbluetoothd/main.cpp:31
+#: kbluetoothd/trayicon.cpp:277 kbluetoothd/trayicon.cpp:289
+#: kbluetoothd/trayicon.cpp:301
 msgid "KBluetoothD"
 msgstr ""
 
-#: kbluetoothd/devicescanner.cpp:579
+#: kbluetoothd/devicescanner.cpp:617
 msgid ""
 "<p>Executable <b>%1</b> for device search job <b>%2</b> could not be "
 "started.</p>"
 msgstr ""
 
-#: kbluetoothd/devicescanner.cpp:606
+#: kbluetoothd/devicescanner.cpp:642 kbluetoothd/devicescanner.cpp:654
+msgid "<p>Job <b>%1</b>: <i>%2</i></p>"
+msgstr ""
+
+#: kbluetoothd/devicescanner.cpp:668
 msgid "<p>Device search job <b>%1</b> returned with error code <b>%2</b>.</p>"
 msgstr ""
 
-#: kbluetoothd/devicescanner.cpp:616
+#: kbluetoothd/devicescanner.cpp:678
 msgid "<p>Device search job <b>%1</b> was killed.</p>"
 msgstr ""
 
@@ -221,19 +253,19 @@ msgstr ""
 msgid "Bluetooth adaptor was unplugged."
 msgstr ""
 
-#: kbluetoothd/main.cpp:23
+#: kbluetoothd/main.cpp:20
 msgid "KBluetoothD - Bluetooth Meta Server"
 msgstr ""
 
-#: kbluetoothd/main.cpp:27
+#: kbluetoothd/main.cpp:24
 msgid "Show the tray icon if it was disabled before."
 msgstr ""
 
-#: kbluetoothd/main.cpp:37
+#: kbluetoothd/main.cpp:35
 msgid "Author"
 msgstr "Awdur"
 
-#: kbluetoothd/main.cpp:44
+#: kbluetoothd/main.cpp:42
 msgid ""
 "KBluetoothD was already running.\n"
 msgstr ""
@@ -255,12 +287,12 @@ msgstr ""
 msgid "The devices could not be paired. The reported HCI error code is 0x%1."
 msgstr ""
 
-#: kbluetoothd/rfcommportlistener.cpp:93
+#: kbluetoothd/rfcommportlistener.cpp:92
 #, c-format
 msgid "Could not create a socket for service %1."
 msgstr ""
 
-#: kbluetoothd/rfcommportlistener.cpp:94
+#: kbluetoothd/rfcommportlistener.cpp:93
 msgid ""
 "<p>KBluetooth was unable to create a socket for the service %1. The error "
 "message was <i>%2</i> (Error code %3)."
@@ -268,12 +300,31 @@ msgid ""
 "(bluez, l2cap, rfcomm..)."
 msgstr ""
 
-#: kbluetoothd/rfcommportlistener.cpp:134
+#: kbluetoothd/rfcommportlistener.cpp:123
+msgid ""
+"<p>Could not enable security features for <b>%1</b>.The service will not be "
+"started.</p>"
+msgstr ""
+
+#: kbluetoothd/rfcommportlistener.cpp:126
+msgid ""
+"<p>"
+"KBluetoothD was unable to enable authentication and/or encryption for the "
+"service %1, so this service will not be started.</p>"
+"<p> The error code returned by setsockopt() was %3 (<i>%2</i>)</p>"
+"<p>To use encryption/authentication for selected services, you need a Linux "
+"kernel >= 2.6.10-mh3. For older kernels you have to disable encryption and "
+"authentication for this service."
+"<br/> <i>Be careful with allowing unconfirmed connections in that case, "
+"since the peer address could be faked.</i></p>"
+msgstr ""
+
+#: kbluetoothd/rfcommportlistener.cpp:161
 #, c-format
 msgid "Could not listen to a socket for service %1."
 msgstr ""
 
-#: kbluetoothd/rfcommportlistener.cpp:135
+#: kbluetoothd/rfcommportlistener.cpp:162
 msgid ""
 "<p>KBluetoothD was unable to listen to a socket for the service %1. The "
 "error message was <i>%2</i> (Error code %3)."
@@ -281,24 +332,24 @@ msgid ""
 "(bluez, l2cap, rfcomm..)."
 msgstr ""
 
-#: kbluetoothd/rfcommportlistener.cpp:159
+#: kbluetoothd/rfcommportlistener.cpp:186
 #, c-format
 msgid "Could not bind to a socket for service %1."
 msgstr ""
 
-#: kbluetoothd/rfcommportlistener.cpp:160
+#: kbluetoothd/rfcommportlistener.cpp:187
 msgid ""
 "<p>KBluetoothD was unable to bind to a socket for the service %1 on channel "
 "%2. The error message was <i>%3</i> (Error code %4)."
 "<p>Make sure that BlueZ is installed correctly."
 msgstr ""
 
-#: kbluetoothd/rfcommportlistener.cpp:175
+#: kbluetoothd/rfcommportlistener.cpp:202
 #, c-format
 msgid "Could not assign a channel to service %1."
 msgstr ""
 
-#: kbluetoothd/rfcommportlistener.cpp:176
+#: kbluetoothd/rfcommportlistener.cpp:203
 msgid ""
 "<p>KBluetoothD was unable to find an unused Rfcomm channel for the service "
 "%1, so other devices will not be able to access that service.</p>"
@@ -314,11 +365,11 @@ msgid ""
 "Bluetooth services tab in the Control Center? </ul> </p>"
 msgstr ""
 
-#: kbluetoothd/rfcommportlistener.cpp:410
+#: kbluetoothd/rfcommportlistener.cpp:462
 msgid "Connection from <b>%1</b><br/>to channel %3 (<b>%2</b>)"
 msgstr ""
 
-#: kbluetoothd/rfcommportlistener.cpp:456
+#: kbluetoothd/rfcommportlistener.cpp:508
 msgid "Call \"%1\" failed"
 msgstr ""
 
@@ -363,230 +414,238 @@ msgstr "&Ffurfwedd"
 msgid "Configure &Services..."
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:121
+#: kbluetoothd/trayicon.cpp:107
+msgid "&Paired devices..."
+msgstr ""
+
+#: kbluetoothd/trayicon.cpp:128
 msgid "Always &Visible"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:125
+#: kbluetoothd/trayicon.cpp:132
 msgid "Clear List"
 msgstr "Gwagu'r Rhestr"
 
-#: kbluetoothd/trayicon.cpp:183
+#: kbluetoothd/trayicon.cpp:190
 msgid ""
 "KBluetoothD will run in hidden mode now and only show up when there is a "
 "connection. To enable the permanent tray icon start KBluetoothD again."
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:185
+#: kbluetoothd/trayicon.cpp:192
 msgid "Hidden mode"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:207
+#: kbluetoothd/trayicon.cpp:214
 msgid "Not connected"
-msgstr ""
+msgstr "Heb gysylltu"
 
-#: kbluetoothd/trayicon.cpp:233
+#: kbluetoothd/trayicon.cpp:240
 msgid "Connected to "
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:269
+#: kbluetoothd/trayicon.cpp:276
 msgid "Could not execute the kbluetoothd Control Center module."
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:281
+#: kbluetoothd/trayicon.cpp:288
+msgid "Could not execute the btpaired Control Center module."
+msgstr ""
+
+#: kbluetoothd/trayicon.cpp:300
 msgid "Could not execute the khciconfig Control Center module."
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:355
+#: kbluetoothd/trayicon.cpp:376
 msgid "Should KBluetoothD still be restarted when you login?"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:356
+#: kbluetoothd/trayicon.cpp:377
 msgid "Automatically start KBluetoothD?"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:370
+#: kbluetoothd/trayicon.cpp:391
 msgid "You can reenable the Bluetooth daemon at any time by running 'kbluetoothd'."
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:371
+#: kbluetoothd/trayicon.cpp:392
 msgid "KDE Bluetooth daemon"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:387
+#: kbluetoothd/trayicon.cpp:408
 msgid "No adapter"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:428
+#: kbluetoothd/trayicon.cpp:449
 msgid "Recently Seen Devices"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:447
+#: kbluetoothd/trayicon.cpp:468
 msgid "Recently Used Services"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:505
+#: kbluetoothd/trayicon.cpp:536
 #, c-format
 msgid "error code 0x%1"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:507 kbluetoothd/trayicon.cpp:508
+#: kbluetoothd/trayicon.cpp:538 kbluetoothd/trayicon.cpp:539
 msgid "No Connection"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:509
+#: kbluetoothd/trayicon.cpp:540
 msgid "Hardware failure"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:510
+#: kbluetoothd/trayicon.cpp:541
 msgid "Page Timeout"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:511
+#: kbluetoothd/trayicon.cpp:542
 msgid "Authentication Error"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:512
+#: kbluetoothd/trayicon.cpp:543
 msgid "Not paired"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:513
+#: kbluetoothd/trayicon.cpp:544
 msgid "Memory full"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:514
+#: kbluetoothd/trayicon.cpp:545
 msgid "Connection timeout"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:515
+#: kbluetoothd/trayicon.cpp:546
 msgid "Maximum number of connections"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:516
+#: kbluetoothd/trayicon.cpp:547
 msgid "Maximum number of SCO connections to a device"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:517 kbluetoothd/trayicon.cpp:518
+#: kbluetoothd/trayicon.cpp:548 kbluetoothd/trayicon.cpp:549
 msgid "ACL connection already exists"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:519
+#: kbluetoothd/trayicon.cpp:550
 msgid "Host rejected due to limited resources"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:520
+#: kbluetoothd/trayicon.cpp:551
 msgid "Host rejected for security reasons"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:521
+#: kbluetoothd/trayicon.cpp:552
 msgid "Host rejected because remote device is only a personal device"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:522
+#: kbluetoothd/trayicon.cpp:553
 msgid "Host timeout"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:523
+#: kbluetoothd/trayicon.cpp:554
 msgid "Unsupported feature or parameter value"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:524
+#: kbluetoothd/trayicon.cpp:555
 msgid "Invalid HCI command parameters"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:525
+#: kbluetoothd/trayicon.cpp:556
 msgid "Other end terminated connection: User ended connection"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:526
+#: kbluetoothd/trayicon.cpp:557
 msgid "Other end terminated connection: Low resources"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:527
+#: kbluetoothd/trayicon.cpp:558
 msgid "Other end terminated connection: Imminent power off"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:528
+#: kbluetoothd/trayicon.cpp:559
 msgid "Connection terminated by local host"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:529
+#: kbluetoothd/trayicon.cpp:560
 msgid "Repeated attempts"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:530
+#: kbluetoothd/trayicon.cpp:561
 msgid "Pairing not allowed"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:531
+#: kbluetoothd/trayicon.cpp:562
 msgid "Unknown LMP PDU"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:532
+#: kbluetoothd/trayicon.cpp:563
 msgid "Unsupported remote feature"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:533
+#: kbluetoothd/trayicon.cpp:564
 msgid "SCO offset rejected"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:534
+#: kbluetoothd/trayicon.cpp:565
 msgid "SCO interval rejected"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:535
+#: kbluetoothd/trayicon.cpp:566
 msgid "SCO air mode rejected"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:536
+#: kbluetoothd/trayicon.cpp:567
 msgid "Invalid LMP parameter"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:537
+#: kbluetoothd/trayicon.cpp:568
 msgid "Unspecified error"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:538
+#: kbluetoothd/trayicon.cpp:569
 msgid "Unsupported LMP parameter value"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:539
+#: kbluetoothd/trayicon.cpp:570
 msgid "Role change not allowed"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:540
+#: kbluetoothd/trayicon.cpp:571
 msgid "LMP response timeout"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:541
+#: kbluetoothd/trayicon.cpp:572
 msgid "LMP error transaction collision"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:542
+#: kbluetoothd/trayicon.cpp:573
 msgid "LMP PDU not allowed"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:543
+#: kbluetoothd/trayicon.cpp:574
 msgid "Encryption mode not acceptable"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:544
+#: kbluetoothd/trayicon.cpp:575
 msgid "Unit key used"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:545
+#: kbluetoothd/trayicon.cpp:576
 msgid "QoS is not supported"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:546
+#: kbluetoothd/trayicon.cpp:577
 msgid "Instant passed"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:547
+#: kbluetoothd/trayicon.cpp:578
 msgid "Pairing with unit key not supported"
 msgstr ""
 
-#: kbluetoothd/trayicon.cpp:557
+#: kbluetoothd/trayicon.cpp:588
 msgid "<i>Bluetooth Monitor</i><br/> Problem connecting with <b>%1</b>:"
 msgstr ""
 
