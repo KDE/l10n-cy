@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmkurifilt\n"
-"POT-Creation-Date: 2004-08-01 01:24+0200\n"
+"POT-Creation-Date: 2004-11-23 01:21+0100\n"
 "PO-Revision-Date: 2004-07-03 22:36+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -15,15 +15,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.2\n"
 
+#: plugins/ikws/searchproviders.i18n:2
+msgid ""
+"_: NOTE_TO_THE_TRANSLATORS\n"
+"By default, the web shortcuts will all go to the\n"
+"international versions of each site (e.g. google.com),\n"
+"not to the local site (e.g. google.de).  To change this,\n"
+"add extra 'Query[foo]=...' lines to the .desktop files\n"
+"in kdebase/kcontrol/ebrowsing/plugins/ikws/searchproviders.\n"
+"For example, in google.desktop, copy the original\n"
+"Query=...\n"
+"line to\n"
+"Query[foo]=...\n"
+"and change its URL so it uses google.foo instead of google.com.\n"
+"(translate this message as DONE when you have added the extra\n"
+"query URLs; otherwise, leave it untranslated as a reminder.)"
+msgstr ""
+
 #: filteropts.cpp:39
 msgid "Under construction..."
 msgstr "Dan adeiladaeth..."
 
-#: main.cpp:52
-msgid "&Filters"
-msgstr "&Hidlenni"
-
-#: main.cpp:111
+#: main.cpp:45
+#, fuzzy
 msgid ""
 "<h1>Enhanced Browsing</h1> In this module you can configure some enhanced "
 "browsing features of KDE. "
@@ -34,7 +48,7 @@ msgid ""
 "<h2>Web Shortcuts</h2>Web Shortcuts are a quick way of using Web search "
 "engines. For example, type \"altavista:frobozz\" or \"av:frobozz\" and "
 "Konqueror will do a search on AltaVista for \"frobozz\". Even easier: just "
-"press Alt+F2 (if you haven't changed this shortcut) and enter the shortcut "
+"press Alt+F2 (if you have not changed this shortcut) and enter the shortcut "
 "in the KDE Run Command dialog."
 msgstr ""
 "<h1>Pori Uwch</h1> Yn y modwl yma gallwch ffurfweddu rhai nodweddion pori "
@@ -49,12 +63,18 @@ msgstr ""
 "AltaVista. Yn haws fyth: gwasgwch Alt+F2 (os nad ydych wedi newid y byrlwybr "
 "yma) a rhowch y byrlwybr yn yr ymgom KDE Rhedeg Gorchymyn."
 
-#: rc.cpp:2
+#: main.cpp:61
+msgid "&Filters"
+msgstr "&Hidlenni"
+
+#. i18n: file plugins/ikws/ikwsopts_ui.ui line 27
+#: rc.cpp:3
 #, no-c-format
 msgid "&Enable Web shortcuts"
 msgstr "&Galluogi byrlwybrau Gwê"
 
-#: rc.cpp:4
+#. i18n: file plugins/ikws/ikwsopts_ui.ui line 32
+#: rc.cpp:6
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -68,12 +88,14 @@ msgstr ""
 "rhoi'r byrlwybr <em>gg:KDE</em> yn achosi chwiliad am y gair <em>KDE</em>"
 " ar y peiriant chwilio Google(MN). </qt>"
 
-#: rc.cpp:8
+#. i18n: file plugins/ikws/ikwsopts_ui.ui line 56
+#: rc.cpp:11
 #, no-c-format
 msgid "&Keyword delimiter:"
 msgstr "&Amffinydd allweddair"
 
-#: rc.cpp:10 rc.cpp:46
+#. i18n: file plugins/ikws/ikwsopts_ui.ui line 62
+#: rc.cpp:14 rc.cpp:66
 #, no-c-format
 msgid ""
 "Choose the delimiter that separates the keyword from the phrase or word to "
@@ -82,12 +104,14 @@ msgstr ""
 "Dewis yr amffinydd sy'n gwahanu'r allweddair o'r ymadroddiad neu air i "
 "chwilio amdano."
 
-#: rc.cpp:12
+#. i18n: file plugins/ikws/ikwsopts_ui.ui line 81
+#: rc.cpp:17
 #, no-c-format
 msgid "Default &search engine:"
 msgstr "Peiriant chwilio &rhagosod:"
 
-#: rc.cpp:14 rc.cpp:20
+#. i18n: file plugins/ikws/ikwsopts_ui.ui line 89
+#: rc.cpp:20 rc.cpp:28
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -102,87 +126,104 @@ msgstr ""
 "nodwedd yma. I'w analluogi, dewiswch <em>Dim</em> o'r restr.\n"
 "</qt>"
 
-#: rc.cpp:18
+#. i18n: file plugins/ikws/ikwsopts_ui.ui line 95
+#: rc.cpp:25
 #, no-c-format
 msgid "None"
 msgstr "Dim"
 
-#: rc.cpp:24
+#. i18n: file plugins/ikws/ikwsopts_ui.ui line 123
+#: rc.cpp:33
 #, no-c-format
 msgid "Chan&ge..."
 msgstr "N&ewid..."
 
-#: rc.cpp:26
+#. i18n: file plugins/ikws/ikwsopts_ui.ui line 126
+#: rc.cpp:36
 #, no-c-format
 msgid "Modify a search provider."
 msgstr "Addasu darparwr chwiliadau."
 
-#: rc.cpp:28
+#. i18n: file plugins/ikws/ikwsopts_ui.ui line 137
+#: rc.cpp:39
 #, no-c-format
 msgid "De&lete"
 msgstr "Di&leu"
 
-#: rc.cpp:30
+#. i18n: file plugins/ikws/ikwsopts_ui.ui line 140
+#: rc.cpp:42
 #, no-c-format
 msgid "Delete the selected search provider."
 msgstr "Dileu'r darparwr chwiliadau dewisiedig."
 
-#: rc.cpp:32
+#. i18n: file plugins/ikws/ikwsopts_ui.ui line 148
+#: rc.cpp:45
 #, no-c-format
 msgid "&New..."
 msgstr "&Newydd..."
 
-#: rc.cpp:34
+#. i18n: file plugins/ikws/ikwsopts_ui.ui line 151
+#: rc.cpp:48
 #, no-c-format
 msgid "Add a search provider."
 msgstr "Ychwanegu darparwr chwiliadau."
 
-#: rc.cpp:36
+#. i18n: file plugins/ikws/ikwsopts_ui.ui line 174
+#: rc.cpp:51
 #, no-c-format
 msgid "Name"
 msgstr "Enw"
 
-#: rc.cpp:38
+#. i18n: file plugins/ikws/ikwsopts_ui.ui line 185
+#: rc.cpp:54
 #, no-c-format
 msgid "Shortcuts"
 msgstr "Byrlwybrau"
 
-#: rc.cpp:40
+#. i18n: file plugins/ikws/ikwsopts_ui.ui line 204
+#: rc.cpp:57
 #, no-c-format
 msgid "List of search providers and their associated shortcuts."
 msgstr "Rhestr o ddarparwyr chwiliadau a'u byrlwybrau cysylltiedig."
 
-#: rc.cpp:42
+#. i18n: file plugins/ikws/ikwsopts_ui.ui line 210
+#: rc.cpp:60
 #, no-c-format
 msgid "Colon"
 msgstr "Gor-wahannod"
 
-#: rc.cpp:44
+#. i18n: file plugins/ikws/ikwsopts_ui.ui line 215
+#: rc.cpp:63
 #, no-c-format
 msgid "Space"
 msgstr "Gofodnod"
 
-#: rc.cpp:48 rc.cpp:63
+#. i18n: file plugins/ikws/searchproviderdlg_ui.ui line 27
+#: rc.cpp:69 rc.cpp:90
 #, no-c-format
 msgid "Enter the human readable name of the search provider here."
 msgstr "Rhowch enw dynol-ddarllenadwy'r darparwr chwiliadau yma."
 
-#: rc.cpp:50
+#. i18n: file plugins/ikws/searchproviderdlg_ui.ui line 35
+#: rc.cpp:72
 #, no-c-format
 msgid "&Charset:"
 msgstr "&Set Nôdau:"
 
-#: rc.cpp:52
+#. i18n: file plugins/ikws/searchproviderdlg_ui.ui line 41
+#: rc.cpp:75
 #, no-c-format
 msgid "Select the character set that will be used to encode your search query"
 msgstr "Dewiswch y set nôdau a ddefnyddir i amgodio'ch ymholiad chwilio."
 
-#: rc.cpp:54
+#. i18n: file plugins/ikws/searchproviderdlg_ui.ui line 49
+#: rc.cpp:78
 #, no-c-format
 msgid "Search &URI:"
 msgstr "Chwilio &URI:"
 
-#: rc.cpp:56 rc.cpp:75
+#. i18n: file plugins/ikws/searchproviderdlg_ui.ui line 58
+#: rc.cpp:81 rc.cpp:106
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -219,12 +260,14 @@ msgstr ""
 "cydweddu o ochr chwith y restr gyfeiriadau.\n"
 "</qt>"
 
-#: rc.cpp:61
+#. i18n: file plugins/ikws/searchproviderdlg_ui.ui line 66
+#: rc.cpp:87
 #, no-c-format
 msgid "Search &provider name:"
 msgstr "Enw &darparwr chwiliadau:"
 
-#: rc.cpp:65 rc.cpp:71
+#. i18n: file plugins/ikws/searchproviderdlg_ui.ui line 82
+#: rc.cpp:93 rc.cpp:101
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -238,17 +281,19 @@ msgstr ""
 "enghraifft, gellir defnyddio'r byrlwyr <em>av</em> fel mewn "
 "<em>av</em>:<em>fy chwiliad</em>. </qt>"
 
-#: rc.cpp:69
+#. i18n: file plugins/ikws/searchproviderdlg_ui.ui line 90
+#: rc.cpp:98
 #, no-c-format
 msgid "UR&I shortcuts:"
 msgstr "Byrlwybrau UR&I:"
 
-#: rc.cpp:80
+#. i18n: file plugins/ikws/searchproviderdlg_ui.ui line 117
+#: rc.cpp:112
 #, no-c-format
 msgid "Select the character set that will be used to encode your search query."
 msgstr "Dewiswch y set nôdau a ddefnyddir i amgodio'ch ymholiad chwilio."
 
-#: plugins/ikws/ikwsopts.cpp:92
+#: plugins/ikws/ikwsopts.cpp:93
 msgid ""
 "In this module you can configure the web shortcuts feature. Web shortcuts "
 "allow you to quickly search or lookup words on the Internet. For example, to "
@@ -295,54 +340,32 @@ msgstr ""
 msgid "Keep It"
 msgstr "Ei Gadw"
 
-#: plugins/shorturi/kshorturifilter.cpp:229
+#: plugins/shorturi/kshorturifilter.cpp:253
 msgid "<qt><b>%1</b> does not have a home folder.</qt>"
 msgstr "<qt>Nid oes gan <b>%1</b> blygell cartref.</qt>"
 
-#: plugins/shorturi/kshorturifilter.cpp:230
+#: plugins/shorturi/kshorturifilter.cpp:254
 msgid "<qt>There is no user called <b>%1</b>.</qt>"
 msgstr "<qt>Nid oes defnyddiwr o'r enw <b>%1</b>.</qt>"
 
-#: plugins/shorturi/kshorturifilter.cpp:443
+#: plugins/shorturi/kshorturifilter.cpp:467
 msgid "<qt>The file or folder <b>%1</b> does not exist."
 msgstr "<qt>Nid yw'r ffeil neu'r blygell<b>%1</b> yn bodoli."
 
-#: plugins/shorturi/kshorturifilter.cpp:460
+#: plugins/shorturi/kshorturifilter.cpp:484
 msgid "&ShortURLs"
 msgstr "URLau&Byr"
 
 #~ msgid ""
 #~ "<qt>\n"
-#~ "Enter the URI that is used to do a search on the search engine here.<br/"
-#~ ">The whole text to be searched for can be specified as \\{@} or \\{0}.<br/"
-#~ ">\n"
-#~ "Recommended is \\{@}, since it removes all query variables (name=value) "
-#~ "from the resulting string whereas \\{0} will be substituted with the "
-#~ "unmodified query string.<br/>You can use \\{1} ... \\{n} to specify "
-#~ "certain words from the query and \\{name} to specify a value given by "
-#~ "'name=value' in the user query.<br/>In addition it is possible to specify "
-#~ "multiple references (names, numbers and strings) at once (\\{name1,"
-#~ "name2,...,\"string\"}).<br\\>The first matching value (from the left) "
-#~ "will be used as substitution value for the resulting URI.<br/>A quoted "
-#~ "string can be used as default value if nothing matches from the left of "
-#~ "the reference list.\n"
+#~ "Enter the URI that is used to do a search on the search engine here.<br/>The whole text to be searched for can be specified as \\{@} or \\{0}.<br/>\n"
+#~ "Recommended is \\{@}, since it removes all query variables (name=value) from the resulting string whereas \\{0} will be substituted with the unmodified query string.<br/>You can use \\{1} ... \\{n} to specify certain words from the query and \\{name} to specify a value given by 'name=value' in the user query.<br/>In addition it is possible to specify multiple references (names, numbers and strings) at once (\\{name1,name2,...,\"string\"}).<br\\>The first matching value (from the left) will be used as substitution value for the resulting URI.<br/>A quoted string can be used as default value if nothing matches from the left of the reference list.\n"
 #~ "</qt>"
 #~ msgstr ""
 #~ "<qt>\n"
-#~ "Rhowch yr URI sydd i'w ddefnyddio i wneud chwiliad ar y periant chwilio "
-#~ "yma.<br />Gellir penodi'r testun cyfan i'w chwilio amdano fel \\{@} neu "
-#~ "\\{0}.<br />\n"
-#~ "Argymellir \\{@}, gan ei fod yn gwaredu holl newidynnau ymholiad "
-#~ "(enw=gwerth) o'r llinyn canlyniadol lle amnewidir \\{0} gan y llinyn "
-#~ "ymholiad gwreiddiol anaddasedig.<br />Gallwch ddefnyddio \\{1}...\\{n} i "
-#~ "benodi geiriau penodol o'r ymholiad ac \\{enw} i benodi gwerth a roes gan "
-#~ "'enw=gwerth' yn yr ymholiad defnyddiwr.<br />Yn ychwanegol, mae modd "
-#~ "penodi aml gyfeiriadau (enwau, rhifau, a llinynnau) ar unwaith (\\{enw1,"
-#~ "enw2,...\"llinyn\"}).\n"
-#~ "Defnyddir y werth gydwedd gyntaf (o'r chwith) fel gwerth amnewid ar gyfer "
-#~ "yr URI canlyniadol.<br />Gellir defnyddio llinyn mewn dyfynnodau fel "
-#~ "gwerth rhagosod os nad oes dim yn cydweddu o ochr chwith y restr "
-#~ "gyfeiriadau.\n"
+#~ "Rhowch yr URI sydd i'w ddefnyddio i wneud chwiliad ar y periant chwilio yma.<br />Gellir penodi'r testun cyfan i'w chwilio amdano fel \\{@} neu \\{0}.<br />\n"
+#~ "Argymellir \\{@}, gan ei fod yn gwaredu holl newidynnau ymholiad (enw=gwerth) o'r llinyn canlyniadol lle amnewidir \\{0} gan y llinyn ymholiad gwreiddiol anaddasedig.<br />Gallwch ddefnyddio \\{1}...\\{n} i benodi geiriau penodol o'r ymholiad ac \\{enw} i benodi gwerth a roes gan 'enw=gwerth' yn yr ymholiad defnyddiwr.<br />Yn ychwanegol, mae modd penodi aml gyfeiriadau (enwau, rhifau, a llinynnau) ar unwaith (\\{enw1,enw2,...\"llinyn\"}).\n"
+#~ "Defnyddir y werth gydwedd gyntaf (o'r chwith) fel gwerth amnewid ar gyfer yr URI canlyniadol.<br />Gellir defnyddio llinyn mewn dyfynnodau fel gwerth rhagosod os nad oes dim yn cydweddu o ochr chwith y restr gyfeiriadau.\n"
 #~ "</qt>"
 
 #, fuzzy
