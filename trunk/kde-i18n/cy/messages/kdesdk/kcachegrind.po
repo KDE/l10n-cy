@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdesdk/kcachegrind.po\n"
-"POT-Creation-Date: 2004-12-14 01:23+0100\n"
+"POT-Creation-Date: 2005-02-03 01:22+0100\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -104,7 +104,7 @@ msgid "Function Source File"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 300
-#: rc.cpp:162 rc.cpp:314 rc.cpp:356 rc.cpp:380 tracedata.cpp:175
+#: rc.cpp:159 rc.cpp:311 rc.cpp:356 rc.cpp:380 tracedata.cpp:175
 #, no-c-format
 msgid "Function"
 msgstr "Ffwythiant"
@@ -153,33 +153,33 @@ msgstr ""
 msgid "(unnamed)"
 msgstr ""
 
-#: tracedata.cpp:2509
+#: tracedata.cpp:2586
 msgid "(no caller)"
 msgstr ""
 
-#: tracedata.cpp:2516 tracedata.cpp:2535
+#: tracedata.cpp:2593 tracedata.cpp:2612
 msgid "%1 via %2"
 msgstr ""
 
-#: tracedata.cpp:2525
+#: tracedata.cpp:2602
 msgid "(no callee)"
 msgstr ""
 
-#: partgraph.cpp:423 tracedata.cpp:2748 tracedata.cpp:3251 tracedata.cpp:4049
-#: tracedata.cpp:4113
+#: partgraph.cpp:423 tracedata.cpp:2827 tracedata.cpp:3329 tracedata.cpp:4130
+#: tracedata.cpp:4195
 msgid "(unknown)"
 msgstr "(anhysbys)"
 
-#: tracedata.cpp:4331
+#: tracedata.cpp:4424
 msgid "(not found)"
 msgstr ""
 
-#: tracedata.cpp:4881
+#: tracedata.cpp:4974
 msgid "Recalculating Function Cycles..."
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 550
-#: callmapview.cpp:59 partselection.cpp:54 rc.cpp:221
+#: callmapview.cpp:59 partselection.cpp:54 rc.cpp:218
 #, no-c-format
 msgid "Name"
 msgstr "Enw"
@@ -223,7 +223,7 @@ msgstr ""
 msgid "Go Back"
 msgstr "Ewch yn ?l"
 
-#: callgraphview.cpp:2463 partselection.cpp:306
+#: callgraphview.cpp:2546 partselection.cpp:306
 msgid "Visualization"
 msgstr "Delweddu"
 
@@ -232,42 +232,50 @@ msgid "Partitioning Mode"
 msgstr ""
 
 #: partselection.cpp:309
-msgid "Zoom Function"
+msgid "Diagram Mode"
 msgstr ""
 
 #: partselection.cpp:310
-msgid "Show Direct Calls"
+msgid "Zoom Function"
 msgstr ""
 
 #: partselection.cpp:311
+msgid "Show Direct Calls"
+msgstr ""
+
+#: partselection.cpp:312
 msgid "Increment Shown Call Levels"
 msgstr ""
 
-#: partselection.cpp:324
+#: partselection.cpp:325
 msgid "Draw Names"
 msgstr ""
 
-#: partselection.cpp:325
+#: partselection.cpp:326
 msgid "Draw Costs"
 msgstr ""
 
-#: callmapview.cpp:303 partselection.cpp:326
+#: callmapview.cpp:303 partselection.cpp:327
 msgid "Ignore Proportions"
 msgstr ""
 
-#: callmapview.cpp:304 partselection.cpp:327 treemap.cpp:2858
+#: partselection.cpp:328
+msgid "Draw Frames"
+msgstr ""
+
+#: callmapview.cpp:304 partselection.cpp:329 treemap.cpp:2861
 msgid "Allow Rotation"
 msgstr "Caniatau Cylchdroi"
 
-#: partselection.cpp:341
+#: partselection.cpp:344
 msgid "Hide Info"
 msgstr ""
 
-#: partselection.cpp:343
+#: partselection.cpp:346
 msgid "Show Info"
 msgstr ""
 
-#: partselection.cpp:501
+#: partselection.cpp:508
 msgid "(no trace loaded)"
 msgstr ""
 
@@ -276,13 +284,13 @@ msgid "Event Type"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 917
-#: costtypeview.cpp:43 coverageview.cpp:46 partview.cpp:47 rc.cpp:308
+#: costtypeview.cpp:43 coverageview.cpp:46 partview.cpp:47 rc.cpp:305
 #: rc.cpp:347
 #, no-c-format
 msgid "Incl."
 msgstr ""
 
-#. i18n: file functionselectionbase.ui line 31
+#. i18n: file functionselectionbase.ui line 62
 #: costtypeview.cpp:44 coverageview.cpp:53 partview.cpp:48 rc.cpp:341
 #: rc.cpp:350
 #, no-c-format
@@ -300,8 +308,9 @@ msgstr "Fformiwla"
 #: costtypeview.cpp:81
 msgid ""
 "<b>Cost Types List</b>"
-"<p>This list shows all cost types available and what's the self/cumulative "
-"cost of the current selected function for that cost type.</p>"
+"<p>"
+"This list shows all cost types available and what the self/inclusive cost of "
+"the current selected function is for that cost type.</p>"
 "<p>By choosing a cost type from the list, you change the cost type of costs "
 "shown all over KCachegrind to be the selected one.</p>"
 msgstr ""
@@ -348,7 +357,7 @@ msgstr ""
 msgid "Jump %1 times to %2"
 msgstr ""
 
-#: costlistitem.cpp:59
+#: costlistitem.cpp:60
 #, c-format
 msgid ""
 "_n: (%n item skipped)\n"
@@ -373,18 +382,17 @@ msgid ""
 "these, horizontally ordered in execution time; the rectangle sizes are "
 "proportional to the total cost spent in the parts. You can select one or "
 "several parts to constrain all costs shown to these parts only.</p>"
-"<p>The parts are further subdivided: there is a partitioning and a "
-"cumulative split mode: "
+"<p>The parts are further subdivided: there is a partitioning and an callee "
+"split mode: "
 "<ul>"
 "<li>Partitioning: You see the partitioning into groups for a trace part, "
 "according to the group type selected. E.g. if ELF object groups are "
 "selected, you see colored rectangles for each used ELF object (shared "
 "library or executable), sized according to the cost spent "
 "therein.</li>"
-"<li>"
-"Cumulative Split: A rectangle showing the cumulative cost of the current "
-"selected function in the trace part is shown. This again is split up to show "
-"cumulative costs of its callees.</li></ul></p>"
+"<li>Callee: A rectangle showing the inclusive cost of the current selected "
+"function in the trace part is shown. This is split up into smaller "
+"rectangles to show the costs of its callees.</li></ul></p>"
 msgstr ""
 
 #: toplevel.cpp:319
@@ -420,7 +428,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 16
-#: rc.cpp:90 toplevel.cpp:358 toplevel.cpp:610
+#: rc.cpp:87 toplevel.cpp:358 toplevel.cpp:610
 #, no-c-format
 msgid "Profile Dumps"
 msgstr ""
@@ -572,7 +580,7 @@ msgid "Show/Hide the Call Stack Dockable"
 msgstr ""
 
 #. i18n: file functionselectionbase.ui line 16
-#: rc.cpp:338 toplevel.cpp:600
+#: rc.cpp:335 toplevel.cpp:600
 #, no-c-format
 msgid "Function Profile"
 msgstr ""
@@ -692,7 +700,7 @@ msgstr ""
 msgid "Select secondary event type for cost e.g. shown in annotations"
 msgstr ""
 
-#: functionselection.cpp:182 toplevel.cpp:769
+#: functionselection.cpp:223 toplevel.cpp:769
 msgid "Grouping"
 msgstr ""
 
@@ -700,7 +708,7 @@ msgstr ""
 msgid "Select how functions are grouped into higher level cost items"
 msgstr ""
 
-#: toplevel.cpp:778
+#: functionselection.cpp:52 toplevel.cpp:778
 msgid "(No Grouping)"
 msgstr ""
 
@@ -717,10 +725,12 @@ msgid "Split Horizontal"
 msgstr "Hollti'n Lorweddol"
 
 #: toplevel.cpp:801
-msgid "Change Split Orientation when main window is splitted"
+msgid "Change Split Orientation when main window is split."
 msgstr ""
 
-#: toplevel.cpp:806 toplevel.cpp:809
+#. i18n: file functionselectionbase.ui line 41
+#: rc.cpp:338 toplevel.cpp:806 toplevel.cpp:809
+#, no-c-format
 msgid "&Search:"
 msgstr "&Chwilio:"
 
@@ -814,7 +824,7 @@ msgid "(No Function Up)"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 906
-#: instrview.cpp:125 rc.cpp:305 sourceview.cpp:49
+#: instrview.cpp:125 rc.cpp:302 sourceview.cpp:49
 #, no-c-format
 msgid "#"
 msgstr "#"
@@ -827,7 +837,7 @@ msgstr ""
 msgid "Hex"
 msgstr "Hecs"
 
-#: instrview.cpp:131 tabview.cpp:300
+#: instrview.cpp:131 tabview.cpp:313
 msgid "Assembler"
 msgstr ""
 
@@ -841,17 +851,16 @@ msgid ""
 "<p>The annotated assembler list shows the machine code instructions of the "
 "current selected function together with (self) cost spent while executing an "
 "instruction. If this is a call instruction, lines with details on the call "
-"happening are inserted into the source: These are (cumulative) cost spent "
-"inside of the call, number of calls happening, and call "
-"destination.</p>"
+"happening are inserted into the source: the cost spent inside of the call, "
+"the number of calls happening, and the call destination.</p>"
 "<p>The disassembler output shown is generated with the 'objdump' utility "
 "from the 'binutils' package.</p>"
 "<p>Select a line with call information to make the destination function of "
 "this call current.</p>"
 msgstr ""
 
-#: callgraphview.cpp:2294 callgraphview.cpp:2298 callgraphview.cpp:2316
-#: callview.cpp:125 callview.cpp:130 coverageview.cpp:166 instrview.cpp:191
+#: callgraphview.cpp:2372 callgraphview.cpp:2376 callgraphview.cpp:2394
+#: callview.cpp:123 callview.cpp:128 coverageview.cpp:166 instrview.cpp:191
 #: sourceview.cpp:115
 msgid "Go to '%1'"
 msgstr ""
@@ -913,7 +922,7 @@ msgid "This happens because the code of"
 msgstr ""
 
 #: instrview.cpp:874
-msgid "doesn't seem to match the profile data file."
+msgid "does not seem to match the profile data file."
 msgstr ""
 
 #: instrview.cpp:877
@@ -932,21 +941,21 @@ msgstr ""
 msgid "Check that the ELF object used in the command exists."
 msgstr ""
 
-#: callgraphview.cpp:305
+#: callgraphview.cpp:306
 #, c-format
 msgid "Call(s) from %1"
 msgstr ""
 
-#: callgraphview.cpp:306
+#: callgraphview.cpp:307
 #, c-format
 msgid "Call(s) to %1"
 msgstr ""
 
-#: callgraphview.cpp:307
+#: callgraphview.cpp:308
 msgid "(unknown call)"
 msgstr ""
 
-#: callgraphview.cpp:1404
+#: callgraphview.cpp:1410
 msgid ""
 "<b>Call Graph around active Function</b>"
 "<p>"
@@ -963,207 +972,240 @@ msgid ""
 "the selected function is highlighted.<p>"
 msgstr ""
 
-#: callgraphview.cpp:1759
+#: callgraphview.cpp:1774
 msgid ""
-"No item activated for which to draw the call graph.\n"
+"Warning: a long lasting graph layouting is in progress.\n"
+"Reduce node/edge limits for speedup.\n"
 msgstr ""
 
-#: callgraphview.cpp:2099
+#: callgraphview.cpp:1777
 msgid ""
-"Error running the graph layout tool 'dot'.\n"
-"Please check that it is installed (package GraphViz)."
+"Layouting stopped.\n"
 msgstr ""
 
-#: callgraphview.cpp:2107
+#: callgraphview.cpp:1779
+msgid ""
+"The call graph has %1 nodes and %2 edges.\n"
+msgstr ""
+
+#: callgraphview.cpp:1812
+msgid "No item activated for which to draw the call graph."
+msgstr ""
+
+#: callgraphview.cpp:1823
+msgid "No call graph can be drawn for the active item."
+msgstr ""
+
+#: callgraphview.cpp:1852
+msgid ""
+"No call graph is available because the following\n"
+"command cannot be run:\n"
+"'%1'\n"
+msgstr ""
+
+#: callgraphview.cpp:1855 callgraphview.cpp:2175
+msgid "Please check that 'dot' is installed (package GraphViz)."
+msgstr ""
+
+#: callgraphview.cpp:2174
+msgid ""
+"Error running the graph layouting tool.\n"
+msgstr ""
+
+#: callgraphview.cpp:2182
 msgid ""
 "There is no call graph available for function\n"
 "\t'%1'\n"
 "because it has no cost of the selected event type."
 msgstr ""
 
-#: callgraphview.cpp:2328
+#: callgraphview.cpp:2403
+msgid "Stop Layouting"
+msgstr ""
+
+#: callgraphview.cpp:2411
 msgid "As PostScript"
 msgstr ""
 
-#: callgraphview.cpp:2329
+#: callgraphview.cpp:2412
 msgid "As Image ..."
 msgstr ""
 
-#: callgraphview.cpp:2331
+#: callgraphview.cpp:2414
 msgid "Export Graph"
 msgstr ""
 
-#: callgraphview.cpp:2336 callgraphview.cpp:2359
+#: callgraphview.cpp:2419 callgraphview.cpp:2442
 msgid "Unlimited"
 msgstr "Heb derfyn"
 
-#: callgraphview.cpp:2339 callgraphview.cpp:2362
+#: callgraphview.cpp:2422 callgraphview.cpp:2445
 msgid "None"
 msgstr "Dim"
 
-#: callgraphview.cpp:2340 callgraphview.cpp:2363
+#: callgraphview.cpp:2423 callgraphview.cpp:2446
 msgid "max. 2"
 msgstr ""
 
-#: callgraphview.cpp:2341 callgraphview.cpp:2364
+#: callgraphview.cpp:2424 callgraphview.cpp:2447
 msgid "max. 5"
 msgstr ""
 
-#: callgraphview.cpp:2342 callgraphview.cpp:2365
+#: callgraphview.cpp:2425 callgraphview.cpp:2448
 msgid "max. 10"
 msgstr ""
 
-#: callgraphview.cpp:2343 callgraphview.cpp:2366
+#: callgraphview.cpp:2426 callgraphview.cpp:2449
 msgid "max. 15"
 msgstr ""
 
-#: callgraphview.cpp:2353 callgraphview.cpp:2376
+#: callgraphview.cpp:2436 callgraphview.cpp:2459
 #, c-format
 msgid "< %1"
 msgstr "< %1"
 
-#: callgraphview.cpp:2382
+#: callgraphview.cpp:2465
 msgid "No Minimum"
 msgstr ""
 
-#: callgraphview.cpp:2386
+#: callgraphview.cpp:2469
 #, c-format
 msgid "50 %"
 msgstr "50 %"
 
-#: callgraphview.cpp:2387
+#: callgraphview.cpp:2470
 #, c-format
 msgid "20 %"
 msgstr ""
 
-#: callgraphview.cpp:2388
+#: callgraphview.cpp:2471
 #, c-format
 msgid "10 %"
 msgstr ""
 
-#: callgraphview.cpp:2389
+#: callgraphview.cpp:2472
 #, c-format
 msgid "5 %"
 msgstr ""
 
-#: callgraphview.cpp:2390
+#: callgraphview.cpp:2473
 #, c-format
 msgid "3 %"
 msgstr ""
 
-#: callgraphview.cpp:2391
+#: callgraphview.cpp:2474
 #, c-format
 msgid "2 %"
 msgstr ""
 
-#: callgraphview.cpp:2392
+#: callgraphview.cpp:2475
 #, c-format
 msgid "1.5 %"
 msgstr ""
 
-#: callgraphview.cpp:2393
+#: callgraphview.cpp:2476
 #, c-format
 msgid "1 %"
 msgstr ""
 
-#: callgraphview.cpp:2409
+#: callgraphview.cpp:2492
 msgid "Same as Node"
 msgstr ""
 
-#: callgraphview.cpp:2410
+#: callgraphview.cpp:2493
 #, c-format
 msgid "50 % of Node"
 msgstr ""
 
-#: callgraphview.cpp:2411
+#: callgraphview.cpp:2494
 #, c-format
 msgid "20 % of Node"
 msgstr ""
 
-#: callgraphview.cpp:2412
+#: callgraphview.cpp:2495
 #, c-format
 msgid "10 % of Node"
 msgstr ""
 
-#: callgraphview.cpp:2422
+#: callgraphview.cpp:2505
 msgid "Caller Depth"
 msgstr ""
 
-#: callgraphview.cpp:2423
+#: callgraphview.cpp:2506
 msgid "Callee Depth"
 msgstr ""
 
-#: callgraphview.cpp:2424
+#: callgraphview.cpp:2507
 msgid "Min. Node Cost"
 msgstr ""
 
-#: callgraphview.cpp:2425
+#: callgraphview.cpp:2508
 msgid "Min. Call Cost"
 msgstr ""
 
-#: callgraphview.cpp:2427
+#: callgraphview.cpp:2510
 msgid "Arrows for Skipped Calls"
 msgstr ""
 
-#: callgraphview.cpp:2429
+#: callgraphview.cpp:2512
 msgid "Inner-cycle Calls"
 msgstr ""
 
-#: callgraphview.cpp:2431
+#: callgraphview.cpp:2514
 msgid "Cluster Groups"
 msgstr ""
 
-#: callgraphview.cpp:2436
+#: callgraphview.cpp:2519
 msgid "Compact"
 msgstr "Cywasgu"
 
-#: callgraphview.cpp:2437
+#: callgraphview.cpp:2520
 msgid "Normal"
 msgstr "Arferol"
 
-#: callgraphview.cpp:2438
+#: callgraphview.cpp:2521
 msgid "Tall"
 msgstr ""
 
-#: callgraphview.cpp:2443
+#: callgraphview.cpp:2526
 msgid "Top to Down"
 msgstr ""
 
-#: callgraphview.cpp:2444
+#: callgraphview.cpp:2527
 msgid "Left to Right"
 msgstr ""
 
-#: callgraphview.cpp:2445
+#: callgraphview.cpp:2528
 msgid "Circular"
 msgstr "Crwn"
 
-#: callgraphview.cpp:2451
+#: callgraphview.cpp:2534
 msgid "TopLeft"
 msgstr ""
 
-#: callgraphview.cpp:2452
+#: callgraphview.cpp:2535
 msgid "TopRight"
 msgstr ""
 
-#: callgraphview.cpp:2453
+#: callgraphview.cpp:2536
 msgid "BottomLeft"
 msgstr ""
 
-#: callgraphview.cpp:2454
+#: callgraphview.cpp:2537
 msgid "BottomRight"
 msgstr ""
 
 #. i18n: file configdlgbase.ui line 246
-#: callgraphview.cpp:2455 rc.cpp:45 rc.cpp:55 rc.cpp:59
+#: callgraphview.cpp:2538 rc.cpp:42 rc.cpp:52 rc.cpp:56
 #, no-c-format
 msgid "Automatic"
 msgstr "Awtomatig"
 
-#: callgraphview.cpp:2462
+#: callgraphview.cpp:2545
 msgid "Graph"
 msgstr "Graff"
 
-#: callgraphview.cpp:2464
+#: callgraphview.cpp:2547
 msgid "Birds-eye View"
 msgstr ""
 
@@ -1226,7 +1268,7 @@ msgstr ""
 msgid "Move to Bottom Left"
 msgstr ""
 
-#: tabview.cpp:77 tabview.cpp:94 treemap.cpp:2879
+#: tabview.cpp:77 tabview.cpp:94 treemap.cpp:2882
 msgid "Bottom Left"
 msgstr "Chwith Gwaelod"
 
@@ -1250,11 +1292,7 @@ msgstr ""
 msgid "(No profile data file loaded)"
 msgstr ""
 
-#: tabview.cpp:280
-msgid "Parts"
-msgstr "Rhannau"
-
-#: tabview.cpp:282
+#: tabview.cpp:281
 msgid "Types"
 msgstr "Mathau"
 
@@ -1262,42 +1300,46 @@ msgstr "Mathau"
 msgid "Callers"
 msgstr ""
 
-#: tabview.cpp:286
-msgid "Callees"
-msgstr ""
-
-#: tabview.cpp:288
-msgid "Call Graph"
-msgstr ""
-
-#: tabview.cpp:290
+#: tabview.cpp:287
 msgid "All Callers"
 msgstr ""
 
-#: tabview.cpp:292
-msgid "All Callees"
-msgstr ""
-
-#: tabview.cpp:294
+#: tabview.cpp:290
 msgid "Caller Map"
 msgstr ""
 
-#: tabview.cpp:296
-msgid "Callee Map"
-msgstr ""
-
-#: tabview.cpp:298
+#: tabview.cpp:293
 msgid "Source"
 msgstr "Tarddiad"
 
-#: tabview.cpp:539
+#: tabview.cpp:297
+msgid "Parts"
+msgstr "Rhannau"
+
+#: tabview.cpp:300
+msgid "Call Graph"
+msgstr ""
+
+#: tabview.cpp:303
+msgid "Callees"
+msgstr ""
+
+#: tabview.cpp:306
+msgid "All Callees"
+msgstr ""
+
+#: tabview.cpp:310
+msgid "Callee Map"
+msgstr ""
+
+#: tabview.cpp:553
 msgid ""
 "<b>Information Tabs</b>"
 "<p>This widget shows information for the current selected function in "
 "different tabs: "
 "<ul>"
-"<li>The Costs tab shows a list of available cost types and the cumulative "
-"and self costs regarding to types.</li>"
+"<li>The Costs tab shows a list of available event types and the inclusive "
+"and self costs regarding to these types.</li>"
 "<li>The Parts tab shows a list of trace parts if the trace consists of more "
 "than one part (otherwise, this tab is hided). The cost of the selected "
 "function spent in the different parts together with the calls happening is "
@@ -1316,11 +1358,11 @@ msgid ""
 "<em>What's this</em> help of the corresponding tab widget</p>"
 msgstr ""
 
-#: tabview.cpp:616
+#: tabview.cpp:630
 msgid "(No Data loaded)"
 msgstr ""
 
-#: tabview.cpp:617
+#: tabview.cpp:631
 msgid "(No function selected)"
 msgstr ""
 
@@ -1334,9 +1376,8 @@ msgid ""
 "<p>The annotated source list shows the source lines of the current selected "
 "function together with (self) cost spent while executing the code of this "
 "source line. If there was a call in a source line, lines with details on the "
-"call happening are inserted into the source: These are (cumulative) cost "
-"spent inside of the call, number of calls happening, and call "
-"destination.</p>"
+"call happening are inserted into the source: the cost spent inside of the "
+"call, the number of calls happening, and the call destination.</p>"
 "<p>Select a inserted call information line to make the destination function "
 "current.</p>"
 msgstr ""
@@ -1414,16 +1455,16 @@ msgstr "(dim)"
 msgid "(active)"
 msgstr ""
 
-#: functionselection.cpp:116
+#: functionselection.cpp:157
 #, c-format
 msgid "Go to %1"
 msgstr ""
 
-#: functionselection.cpp:142
+#: functionselection.cpp:183
 msgid "Show All Items"
 msgstr ""
 
-#: functionselection.cpp:165
+#: functionselection.cpp:206
 msgid "No Grouping"
 msgstr ""
 
@@ -1432,7 +1473,7 @@ msgid "Distance"
 msgstr "Pellder"
 
 #. i18n: file dumpselectionbase.ui line 928
-#: coverageview.cpp:49 partview.cpp:49 rc.cpp:311 rc.cpp:353
+#: coverageview.cpp:49 partview.cpp:49 rc.cpp:308 rc.cpp:353
 #, no-c-format
 msgid "Called"
 msgstr ""
@@ -1453,10 +1494,10 @@ msgstr ""
 msgid ""
 "<b>List of all Callers</b>"
 "<p>This list shows all functions calling the current selected one, either "
-"directly or with several function inbetween on the stack; the number of "
-"function inbetween incremented by 1 is called the <em>Distance</em> (e.g. "
-"for function A,B,C there exists a call from A to C when A calls B and B "
-"calls C, i.e. A => B => C. The distance here is 2).</p>"
+"directly or with several functions in-between on the stack; the number of "
+"functions in-between plus one is called the <em>Distance</em> (e.g. for "
+"function A,B,C there exists a call from A to C when A calls B and B calls C, "
+"i.e. A => B => C. The distance here is 2).</p>"
 "<p>Absolute cost shown is the cost spent in the selected function while a "
 "listed function is active; relative cost is the percentage of all cost spent "
 "in the selected function while the listed one is active. The cost graphic "
@@ -1464,21 +1505,21 @@ msgid ""
 "distance.</p>"
 "<p>As there can be many calls from the same function, the distance column "
 "sometimes shows the range of distances for all calls happening; then, in "
-"parenthesis there is the medium distance, i.e. the distance where most of "
+"parentheses, there is the medium distance, i.e. the distance where most of "
 "the call costs happened.</p>"
 "<p>Selecting a function makes it the current selected one of this "
-"information panel. If there are two panels (Splitted mode), the function of "
-"the other panel is changed instead.</p>"
+"information panel. If there are two panels (Split mode), the function of the "
+"other panel is changed instead.</p>"
 msgstr ""
 
 #: coverageview.cpp:120
 msgid ""
 "<b>List of all Callees</b>"
 "<p>This list shows all functions called by the current selected one, either "
-"directly or with several function inbetween on the stack; the number of "
-"function inbetween incremented by 1 is called the <em>Distance</em> (e.g. "
-"for function A,B,C there exists a call from A to C when A calls B and B "
-"calls C, i.e. A => B => C. The distance here is 2).</p>"
+"directly or with several function in-between on the stack; the number of "
+"function in-between plus one is called the <em>Distance</em> (e.g. for "
+"function A,B,C there exists a call from A to C when A calls B and B calls C, "
+"i.e. A => B => C. The distance here is 2).</p>"
 "<p>Absolute cost shown is the cost spent in the listed function while the "
 "selected is active; relative cost is the percentage of all cost spent in the "
 "listed function while the selected one is active. The cost graphic always "
@@ -1486,11 +1527,11 @@ msgid ""
 "distance.</p>"
 "<p>As there can be many calls to the same function, the distance column "
 "sometimes shows the range of distances for all calls happening; then, in "
-"parenthesis there is the medium distance, i.e. the distance where most of "
+"parentheses, there is the medium distance, i.e. the distance where most of "
 "the call costs happened.</p>"
 "<p>Selecting a function makes it the current selected one of this "
-"information panel. If there are two panels (Splitted mode), the function of "
-"the other panel is changed instead.</p>"
+"information panel. If there are two panels (Split mode), the function of the "
+"other panel is changed instead.</p>"
 msgstr ""
 
 #: configuration.cpp:63
@@ -1568,448 +1609,442 @@ msgstr ""
 #. i18n: file kcachegrindui.rc line 54
 #: rc.cpp:18
 #, no-c-format
-msgid "Query Toolbar"
-msgstr "Bar Offer Ymholiadau"
-
-#. i18n: file kcachegrindui.rc line 58
-#: rc.cpp:21
-#, no-c-format
 msgid "State Toolbar"
 msgstr ""
 
 #. i18n: file configdlgbase.ui line 37
-#: rc.cpp:27
+#: rc.cpp:24
 #, no-c-format
 msgid "General"
 msgstr "Cyffredinol"
 
 #. i18n: file configdlgbase.ui line 69
-#: rc.cpp:30
+#: rc.cpp:27
 #, no-c-format
 msgid "Truncated when more/longer than:"
 msgstr ""
 
 #. i18n: file configdlgbase.ui line 77
-#: rc.cpp:33
+#: rc.cpp:30
 #, no-c-format
 msgid "Precision of percentage values:"
 msgstr ""
 
 #. i18n: file configdlgbase.ui line 85
-#: rc.cpp:36
+#: rc.cpp:33
 #, no-c-format
 msgid "Symbols in tooltips and context menus"
 msgstr ""
 
 #. i18n: file configdlgbase.ui line 141
-#: rc.cpp:39
+#: rc.cpp:36
 #, no-c-format
 msgid "Maximum number of items in lists:"
 msgstr ""
 
 #. i18n: file configdlgbase.ui line 162
-#: rc.cpp:42
+#: rc.cpp:39
 #, no-c-format
 msgid "Cost Item Colors"
 msgstr ""
 
 #. i18n: file configdlgbase.ui line 254
-#: rc.cpp:48
+#: rc.cpp:45
 #, no-c-format
 msgid "Object:"
 msgstr "Gwrthrych :"
 
 #. i18n: file configdlgbase.ui line 262
-#: rc.cpp:51
+#: rc.cpp:48
 #, no-c-format
 msgid "Class:"
 msgstr "Dosbarth:"
 
 #. i18n: file configdlgbase.ui line 310
-#: rc.cpp:62
+#: rc.cpp:59
 #, no-c-format
 msgid "File:"
 msgstr "Ffeil:"
 
 #. i18n: file configdlgbase.ui line 376
-#: rc.cpp:66
+#: rc.cpp:63
 #, fuzzy, no-c-format
 msgid "Annotations"
 msgstr "Caniatau Cylchdroi"
 
 #. i18n: file configdlgbase.ui line 395
-#: rc.cpp:69
+#: rc.cpp:66
 #, no-c-format
 msgid "Context lines in annotations:"
 msgstr ""
 
 #. i18n: file configdlgbase.ui line 423
-#: rc.cpp:72
+#: rc.cpp:69
 #, no-c-format
 msgid "Source Folders"
 msgstr ""
 
 #. i18n: file configdlgbase.ui line 454
-#: rc.cpp:75
+#: rc.cpp:72
 #, no-c-format
 msgid "Object / Related Source Base"
 msgstr ""
 
 #. i18n: file configdlgbase.ui line 483
-#: rc.cpp:78
+#: rc.cpp:75
 #, no-c-format
 msgid "Add..."
 msgstr "Ychwanegu..."
 
 #. i18n: file dumpselectionbase.ui line 32
-#: rc.cpp:93
+#: rc.cpp:90
 #, no-c-format
 msgid "Target"
 msgstr "Targed"
 
 #. i18n: file dumpselectionbase.ui line 54
-#: rc.cpp:97
+#: rc.cpp:94
 #, no-c-format
 msgid "Time"
 msgstr "Amser"
 
 #. i18n: file dumpselectionbase.ui line 65
-#: rc.cpp:100
+#: rc.cpp:97
 #, no-c-format
 msgid "Path"
 msgstr "Llwybr"
 
 #. i18n: file dumpselectionbase.ui line 106
-#: rc.cpp:106
+#: rc.cpp:103
 #, no-c-format
 msgid "Target command:"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 119
-#: rc.cpp:109
+#: rc.cpp:106
 #, no-c-format
 msgid "Profiler options:"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 125
-#: rc.cpp:112
+#: rc.cpp:109
 #, no-c-format
 msgid "Option"
 msgstr "Dewisiad"
 
 #. i18n: file dumpselectionbase.ui line 136
-#: rc.cpp:115 rc.cpp:248
+#: rc.cpp:112 rc.cpp:245
 #, no-c-format
 msgid "Value"
 msgstr "Gwerth"
 
 #. i18n: file dumpselectionbase.ui line 147
-#: rc.cpp:118
+#: rc.cpp:115
 #, no-c-format
 msgid "Trace"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 160
-#: rc.cpp:122 rc.cpp:271
+#: rc.cpp:119 rc.cpp:268
 #, no-c-format
 msgid "Jumps"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 174
-#: rc.cpp:126
+#: rc.cpp:123
 #, no-c-format
 msgid "Instructions"
 msgstr "Cyfarwyddiadau"
 
 #. i18n: file dumpselectionbase.ui line 189
-#: rc.cpp:130 rc.cpp:275
+#: rc.cpp:127 rc.cpp:272
 #, no-c-format
 msgid "Events"
 msgstr "Digwyddiadau"
 
 #. i18n: file dumpselectionbase.ui line 202
-#: rc.cpp:134
+#: rc.cpp:131
 #, no-c-format
 msgid "Full Cache"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 216
-#: rc.cpp:138
+#: rc.cpp:135
 #, no-c-format
 msgid "Custom"
 msgstr "Addasiedig"
 
 #. i18n: file dumpselectionbase.ui line 231
-#: rc.cpp:142
+#: rc.cpp:139
 #, no-c-format
 msgid "Collect"
 msgstr "Casglu"
 
 #. i18n: file dumpselectionbase.ui line 244
-#: rc.cpp:146
+#: rc.cpp:143
 #, no-c-format
 msgid "At Startup"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 258
-#: rc.cpp:150
+#: rc.cpp:147
 #, no-c-format
 msgid "While In"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 273
-#: rc.cpp:154
+#: rc.cpp:151
 #, no-c-format
 msgid "Skip"
 msgstr "Hepgor"
 
 #. i18n: file dumpselectionbase.ui line 286
-#: rc.cpp:158
+#: rc.cpp:155
 #, no-c-format
 msgid "PLT"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 315
-#: rc.cpp:166
+#: rc.cpp:163
 #, no-c-format
 msgid "Dump Profile"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 328
-#: rc.cpp:170
+#: rc.cpp:167
 #, no-c-format
 msgid "Every BBs"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 342
-#: rc.cpp:174 rc.cpp:186
+#: rc.cpp:171 rc.cpp:183
 #, no-c-format
 msgid "On Entering"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 356
-#: rc.cpp:178
+#: rc.cpp:175
 #, no-c-format
 msgid "On Leaving"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 371
-#: rc.cpp:182
+#: rc.cpp:179
 #, no-c-format
 msgid "Zero Events"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 399
-#: rc.cpp:190
+#: rc.cpp:187
 #, no-c-format
 msgid "Separate"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 412
-#: rc.cpp:194
+#: rc.cpp:191
 #, no-c-format
 msgid "Threads"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 426
-#: rc.cpp:198
+#: rc.cpp:195
 #, no-c-format
 msgid "Recursions"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 440
-#: rc.cpp:202
+#: rc.cpp:199
 #, no-c-format
 msgid "Call Chain"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 470
-#: rc.cpp:206
+#: rc.cpp:203
 #, no-c-format
 msgid "Custom profiler options:"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 508
-#: rc.cpp:209
+#: rc.cpp:206
 #, no-c-format
 msgid "Run New Profile"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 520
-#: rc.cpp:212
+#: rc.cpp:209
 #, no-c-format
 msgid "Info"
 msgstr "Gwybo"
 
 #. i18n: file dumpselectionbase.ui line 531
-#: rc.cpp:215
+#: rc.cpp:212
 #, no-c-format
 msgid "Dump reason:"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 544
-#: rc.cpp:218
+#: rc.cpp:215
 #, no-c-format
 msgid "Event summary:"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 561
-#: rc.cpp:224
+#: rc.cpp:221
 #, no-c-format
 msgid "Sum"
 msgstr "Swm"
 
 #. i18n: file dumpselectionbase.ui line 579
-#: rc.cpp:227
+#: rc.cpp:224
 #, no-c-format
 msgid "Miscellaneous:"
 msgstr "Amrywiol :"
 
 #. i18n: file dumpselectionbase.ui line 617
-#: rc.cpp:230
+#: rc.cpp:227
 #, no-c-format
 msgid "Show"
 msgstr "Dangos"
 
 #. i18n: file dumpselectionbase.ui line 625
-#: rc.cpp:233
+#: rc.cpp:230
 #, no-c-format
 msgid "Compare"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 637
-#: rc.cpp:236
+#: rc.cpp:233
 #, no-c-format
 msgid "State"
 msgstr "Cyflwr"
 
 #. i18n: file dumpselectionbase.ui line 656
-#: rc.cpp:239
+#: rc.cpp:236
 #, no-c-format
 msgid "Update"
 msgstr "Diweddaru"
 
 #. i18n: file dumpselectionbase.ui line 664
-#: rc.cpp:242
+#: rc.cpp:239
 #, no-c-format
 msgid "Every [s]:"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 677
-#: rc.cpp:245
+#: rc.cpp:242
 #, no-c-format
 msgid "Counter"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 699
-#: rc.cpp:251
+#: rc.cpp:248
 #, no-c-format
 msgid "Dumps Done"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 713
-#: rc.cpp:255
+#: rc.cpp:252
 #, no-c-format
 msgid "Is Collecting"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 727
-#: rc.cpp:259
+#: rc.cpp:256
 #, no-c-format
 msgid "Executed"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 740
-#: rc.cpp:263
+#: rc.cpp:260
 #, no-c-format
 msgid "Basic Blocks"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 754
-#: callmapview.cpp:63 rc.cpp:267 rc.cpp:377
+#: callmapview.cpp:63 rc.cpp:264 rc.cpp:377
 #, no-c-format
 msgid "Calls"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 796
-#: rc.cpp:279
+#: rc.cpp:276
 #, no-c-format
 msgid "Ir"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 811
-#: rc.cpp:283
+#: rc.cpp:280
 #, no-c-format
 msgid "Distinct"
 msgstr "Gwahanadwy"
 
 #. i18n: file dumpselectionbase.ui line 824
-#: configdlg.cpp:58 rc.cpp:287
+#: configdlg.cpp:58 rc.cpp:284
 #, no-c-format
 msgid "ELF Objects"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 838
-#: rc.cpp:291
+#: rc.cpp:288
 #, no-c-format
 msgid "Functions"
 msgstr "Ffwythiannau"
 
 #. i18n: file dumpselectionbase.ui line 852
-#: rc.cpp:295
+#: rc.cpp:292
 #, no-c-format
 msgid "Contexts"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 890
-#: rc.cpp:299
+#: rc.cpp:296
 #, no-c-format
 msgid "Stack trace:"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 898
-#: rc.cpp:302
+#: rc.cpp:299
 #, no-c-format
 msgid "Sync."
 msgstr "Cydweddu."
 
 #. i18n: file dumpselectionbase.ui line 950
-#: callmapview.cpp:61 rc.cpp:317 rc.cpp:359
+#: callmapview.cpp:61 rc.cpp:314 rc.cpp:359
 #, no-c-format
 msgid "Location"
 msgstr "Lleoliad"
 
 #. i18n: file dumpselectionbase.ui line 976
-#: rc.cpp:320
+#: rc.cpp:317
 #, no-c-format
 msgid "Start"
 msgstr "Dechrau"
 
 #. i18n: file dumpselectionbase.ui line 1001
-#: rc.cpp:323
+#: rc.cpp:320
 #, no-c-format
 msgid "Zero"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 1009
-#: rc.cpp:326
+#: rc.cpp:323
 #, no-c-format
 msgid "Dump"
 msgstr ""
 
 #. i18n: file dumpselectionbase.ui line 1021
-#: rc.cpp:329
+#: rc.cpp:326
 #, no-c-format
 msgid "Messages"
 msgstr "Negeseuon"
 
 #. i18n: file dumpselectionbase.ui line 1045
-#: rc.cpp:332
+#: rc.cpp:329
 #, no-c-format
 msgid "Kill Run"
 msgstr ""
 
-#. i18n: file functionselectionbase.ui line 42
+#. i18n: file functionselectionbase.ui line 73
 #: rc.cpp:344
 #, no-c-format
 msgid "Group"
@@ -2033,97 +2068,97 @@ msgstr ""
 msgid "Cost2"
 msgstr ""
 
-#: treemap.cpp:1257
+#: treemap.cpp:1260
 #, c-format
 msgid "Text %1"
 msgstr "Testun %1"
 
-#: treemap.cpp:2780
+#: treemap.cpp:2783
 msgid "Recursive Bisection"
 msgstr "Hanneru Ymgylchol"
 
-#: treemap.cpp:2781
+#: treemap.cpp:2784
 msgid "Columns"
 msgstr "Colofnau"
 
-#: treemap.cpp:2782
+#: treemap.cpp:2785
 msgid "Rows"
 msgstr "Rhesi"
 
-#: treemap.cpp:2783
+#: treemap.cpp:2786
 msgid "Always Best"
 msgstr "Y Gorau Bob Tro"
 
-#: treemap.cpp:2784
+#: treemap.cpp:2787
 msgid "Best"
 msgstr "Y Gorau"
 
-#: treemap.cpp:2785
+#: treemap.cpp:2788
 msgid "Alternate (V)"
 msgstr "Bob yn Ail (Fertigol)"
 
-#: treemap.cpp:2786
+#: treemap.cpp:2789
 msgid "Alternate (H)"
 msgstr "Bob yn Ail (Llorweddol)"
 
-#: treemap.cpp:2843
+#: treemap.cpp:2846
 msgid "Nesting"
 msgstr "Ymnythu"
 
-#: treemap.cpp:2846
+#: treemap.cpp:2849
 msgid "Correct Borders Only"
 msgstr "Cywiro Ffiniau'n Unig"
 
-#: treemap.cpp:2848 treemap.cpp:2849 treemap.cpp:2850 treemap.cpp:2851
+#: treemap.cpp:2851 treemap.cpp:2852 treemap.cpp:2853 treemap.cpp:2854
 #, c-format
 msgid "Width %1"
 msgstr "Lled %1"
 
-#: callmapview.cpp:321 treemap.cpp:2860
+#: callmapview.cpp:321 treemap.cpp:2863
 msgid "Shading"
 msgstr "Arliwio"
 
-#: treemap.cpp:2873
+#: treemap.cpp:2876
 msgid "Visible"
 msgstr "Gweledol"
 
-#: treemap.cpp:2874
+#: treemap.cpp:2877
 msgid "Take Space From Children"
 msgstr "Tynnu Lle o'i Blant"
 
-#: treemap.cpp:2876
+#: treemap.cpp:2879
 msgid "Top Left"
 msgstr "Chwith Uchaf"
 
-#: treemap.cpp:2877
+#: treemap.cpp:2880
 msgid "Top Center"
 msgstr "Canol Uchaf"
 
-#: treemap.cpp:2878
+#: treemap.cpp:2881
 msgid "Top Right"
 msgstr "De Uchaf"
 
-#: treemap.cpp:2880
+#: treemap.cpp:2883
 msgid "Bottom Center"
 msgstr "Canol Gwaelod"
 
-#: treemap.cpp:2881
+#: treemap.cpp:2884
 msgid "Bottom Right"
 msgstr "De Gwaelod"
 
-#: treemap.cpp:2958
+#: treemap.cpp:2961
 msgid "No %1 Limit"
 msgstr "Dim Cyfyngiad %1 "
 
-#: callmapview.cpp:243 treemap.cpp:3010
+#: callmapview.cpp:243 treemap.cpp:3013
 msgid "No Area Limit"
 msgstr "Dim Cyfyngiad Ardal"
 
-#: callmapview.cpp:258 treemap.cpp:3016
+#: callmapview.cpp:258 treemap.cpp:3019
 msgid "Area of '%1' (%2)"
 msgstr "Ardal '%1' (%2)"
 
-#: treemap.cpp:3027 treemap.cpp:3038
+#: treemap.cpp:3030 treemap.cpp:3041
 #, c-format
 msgid ""
 "_n: 1 Pixel\n"
@@ -2132,32 +2167,32 @@ msgstr ""
 "1 Picsel\n"
 " %n Picsel"
 
-#: callmapview.cpp:264 treemap.cpp:3042
+#: callmapview.cpp:264 treemap.cpp:3045
 msgid "Double Area Limit (to %1)"
 msgstr "Cyfyngiad Ardal Dwbl (i %1)"
 
-#: treemap.cpp:3044
+#: treemap.cpp:3047
 msgid "Halve Area Limit (to %1)"
 msgstr "Haneru Cyfyngiad Ardal (i %1)"
 
-#: callmapview.cpp:187 treemap.cpp:3072
+#: callmapview.cpp:187 treemap.cpp:3075
 msgid "No Depth Limit"
 msgstr "Dim Cyfyngiad Dyfnder"
 
-#: callmapview.cpp:198 treemap.cpp:3078
+#: callmapview.cpp:198 treemap.cpp:3081
 msgid "Depth of '%1' (%2)"
 msgstr "Dyfnder o '%1' (%2)"
 
-#: treemap.cpp:3089
+#: treemap.cpp:3092
 #, c-format
 msgid "Depth %1"
 msgstr "Dyfnder %1"
 
-#: treemap.cpp:3093
+#: treemap.cpp:3096
 msgid "Decrement (to %1)"
 msgstr "Iselhau fesul un (hyd at %1)"
 
-#: treemap.cpp:3095
+#: treemap.cpp:3098
 msgid "Increment (to %1)"
 msgstr "Cynyddu fesul un (hyd at %1)"
 
@@ -2332,26 +2367,25 @@ msgstr "Cyfrif"
 msgid ""
 "<b>List of direct Callers</b>"
 "<p>This list shows all functions calling the current selected one directly, "
-"together with a call count and the (cumulative) cost spent in the current "
-"selected function while being called from the function from the "
-"list.</p>"
+"together with a call count and the cost spent in the current selected "
+"function while being called from the function from the list.</p>"
 "<p>"
-"An icon instead of a cumulative cost specifies that this is a call inside of "
-"a recursive cycle. A cumulative cost makes no sense here.</p>"
+"An icon instead of an inclusive cost specifies that this is a call inside of "
+"a recursive cycle. An inclusive cost makes no sense here.</p>"
 "<p>Selecting a function makes it the current selected one of this "
-"information panel. If there are two panels (Splitted mode), the function of "
-"the other panel is changed instead.</p>"
+"information panel. If there are two panels (Split mode), the function of the "
+"other panel is changed instead.</p>"
 msgstr ""
 
-#: callview.cpp:99
+#: callview.cpp:98
 msgid ""
 "<b>List of direct Callees</b>"
 "<p>This list shows all functions called by the current selected one "
-"directly, together with a call count and the (cumulative) cost spent in this "
-"function while being called from the selected function.</p>"
+"directly, together with a call count and the cost spent in this function "
+"while being called from the selected function.</p>"
 "<p>Selecting a function makes it the current selected one of this "
-"information panel. If there are two panels (Splitted mode), the function of "
-"the other panel is changed instead.</p>"
+"information panel. If there are two panels (Split mode), the function of the "
+"other panel is changed instead.</p>"
 msgstr ""
 
 #: costtypeitem.cpp:56
@@ -2530,7 +2564,7 @@ msgstr "Sylwad"
 msgid ""
 "<b>Trace Part List</b>"
 "<p>This list shows all trace parts of the loaded trace. For each part, the "
-"self/cumulative cost of the current selected function, spent in the part, is "
+"self/inclusive cost of the current selected function, spent in the part, is "
 "shown; percentage costs are always relative to the total cost <em>of the "
 "part</em>"
 " (not to the whole trace as in the Trace Part Overview). Also shown are the "
@@ -2562,3 +2596,6 @@ msgstr ""
 #: partview.cpp:112
 msgid "Show All"
 msgstr "Dangos Pob Un"
+
+#~ msgid "Query Toolbar"
+#~ msgstr "Bar Offer Ymholiadau"

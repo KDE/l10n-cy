@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeedu/kmplot.po\n"
-"POT-Creation-Date: 2004-12-29 14:57+0100\n"
+"POT-Creation-Date: 2005-02-03 01:24+0100\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgid "The file had an unknown version number"
 msgstr ""
 
 #. i18n: file settingspagescaling.ui line 192
-#: View.cpp:1115 kmplotio.cpp:324 rc.cpp:1352 rc.cpp:1433 rc.cpp:2998
+#: View.cpp:1133 kmplotio.cpp:324 rc.cpp:1352 rc.cpp:1433 rc.cpp:2998
 #: rc.cpp:3079
 #, no-c-format
 msgid "automatic"
@@ -43,7 +43,7 @@ msgid "The minimum range value must be lower than the maximum range value"
 msgstr ""
 
 #: editfunction.cpp:300 keditparametric.cpp:162 keditpolar.cpp:144
-#: kminmax.cpp:291 parser.cpp:956
+#: kminmax.cpp:291
 msgid "Function could not be found"
 msgstr ""
 
@@ -59,75 +59,83 @@ msgstr ""
 msgid "Transparent background"
 msgstr ""
 
-#: parser.cpp:922
+#: parser.cpp:506
+msgid "This function is depending on an other function"
+msgstr ""
+
+#: parser.cpp:933
 msgid ""
 "Parser error at position %1:\n"
 "Syntax error"
 msgstr ""
 
-#: parser.cpp:925
+#: parser.cpp:936
 msgid ""
 "Parser error at position %1:\n"
 "Missing parenthesis"
 msgstr ""
 
-#: parser.cpp:928
+#: parser.cpp:939
 msgid ""
 "Parser error at position %1:\n"
 "Function name unknown"
 msgstr ""
 
-#: parser.cpp:931
+#: parser.cpp:942
 msgid ""
 "Parser error at position %1:\n"
 "Void function variable"
 msgstr ""
 
-#: parser.cpp:934
+#: parser.cpp:945
 msgid ""
 "Parser error at position %1:\n"
 "Too many functions"
 msgstr ""
 
-#: parser.cpp:937
+#: parser.cpp:948
 msgid ""
 "Parser error at position %1:\n"
 "Token-memory overflow"
 msgstr ""
 
-#: parser.cpp:940
+#: parser.cpp:951
 msgid ""
 "Parser error at position %1:\n"
 "Stack overflow"
 msgstr ""
 
-#: parser.cpp:943
+#: parser.cpp:954
 msgid ""
 "Parser error at position %1:\n"
-"Name of function not free"
+"Name of function not free."
 msgstr ""
 
-#: parser.cpp:946
+#: parser.cpp:957
 msgid ""
 "Parser error at position %1:\n"
-"recursive function not allowed"
+"recursive function not allowed."
 msgstr ""
 
-#: parser.cpp:949
+#: parser.cpp:960
 #, c-format
-msgid "Could not find a defined constant at position %1"
+msgid "Could not find a defined constant at position %1."
 msgstr ""
 
-#: parser.cpp:952
+#: parser.cpp:963
 msgid "Empty function"
 msgstr ""
 
-#: parser.cpp:954
-msgid "The function name is not allowed to contain capital letters"
+#: parser.cpp:965
+msgid "The function name is not allowed to contain capital letters."
 msgstr ""
 
-#: parser.cpp:958
-msgid "Evalation expression may not use user-defined constants"
+#: parser.cpp:967
+msgid "Function could not be found."
+msgstr ""
+
+#: parser.cpp:969
+msgid "The expression must not contain user-defined constants."
 msgstr ""
 
 #: keditconstant.cpp:61
@@ -216,17 +224,17 @@ msgstr ""
 msgid "Would you like to be informed about other lines that cannot be read?"
 msgstr ""
 
-#: MainDlg.cpp:270 MainDlg.cpp:295 kparametereditor.cpp:209
+#: MainDlg.cpp:269 MainDlg.cpp:294 kparametereditor.cpp:209
 msgid ""
 "A file named \"%1\" already exists. Are you sure you want to continue and "
 "overwrite this file?"
 msgstr ""
 
-#: MainDlg.cpp:270 MainDlg.cpp:295 kparametereditor.cpp:209
+#: MainDlg.cpp:269 MainDlg.cpp:294 kparametereditor.cpp:209
 msgid "Overwrite File?"
 msgstr "Trosysgrifo'r Ffeil?"
 
-#: MainDlg.cpp:270 MainDlg.cpp:295 kparametereditor.cpp:209
+#: MainDlg.cpp:269 MainDlg.cpp:294 kparametereditor.cpp:209
 msgid "&Overwrite"
 msgstr "&Trosysgrifo"
 
@@ -420,31 +428,31 @@ msgstr ""
 msgid "Choose a parameter to use:"
 msgstr ""
 
-#: kmplot.cpp:78
-msgid "Could not find KmPlot's Part."
+#: kmplot.cpp:77
+msgid "Could not find KmPlot's part."
 msgstr ""
 
-#: kmplot.cpp:243
+#: kmplot.cpp:221
 msgid ""
 "*.fkt|KmPlot Files (*.fkt)\n"
 "*.*|All Files"
 msgstr ""
 
-#: FktDlg.cpp:149 MainDlg.cpp:465
+#: FktDlg.cpp:151 MainDlg.cpp:464
 msgid "New Function Plot"
 msgstr ""
 
 #. i18n: file editfunctionpage.ui line 19
-#: FktDlg.cpp:150 View.cpp:1864 rc.cpp:212 rc.cpp:1858
+#: FktDlg.cpp:152 View.cpp:1883 rc.cpp:212 rc.cpp:1858
 #, no-c-format
 msgid "Edit Function Plot"
 msgstr ""
 
-#: FktDlg.cpp:165 MainDlg.cpp:478 View.cpp:1852
+#: FktDlg.cpp:167 MainDlg.cpp:477 View.cpp:1871
 msgid "New Parametric Plot"
 msgstr ""
 
-#: FktDlg.cpp:180 MainDlg.cpp:491
+#: FktDlg.cpp:182 MainDlg.cpp:490
 msgid "New Polar Plot"
 msgstr ""
 
@@ -569,15 +577,15 @@ msgstr ""
 
 #. i18n: file FktDlgData.ui line 288
 #: rc.cpp:129 rc.cpp:1775
-#, no-c-format
-msgid "&Copy function..."
-msgstr ""
+#, fuzzy, no-c-format
+msgid "&Copy Function..."
+msgstr "&Ffwythiannau"
 
 #. i18n: file FktDlgData.ui line 313
 #: rc.cpp:138 rc.cpp:1784
-#, no-c-format
-msgid "&Move function..."
-msgstr ""
+#, fuzzy, no-c-format
+msgid "&Move Function..."
+msgstr "&Ffwythiannau"
 
 #. i18n: file editderivativespage.ui line 16
 #: rc.cpp:147 rc.cpp:1793
@@ -708,7 +716,7 @@ msgid "Extensions"
 msgstr ""
 
 #. i18n: file editfunctionpage.ui line 85
-#: MainDlg.cpp:192 rc.cpp:231 rc.cpp:1877
+#: MainDlg.cpp:191 rc.cpp:231 rc.cpp:1877
 #, no-c-format
 msgid "&Hide"
 msgstr "Cudd&io"
@@ -1443,8 +1451,8 @@ msgstr "&Grid :"
 #. i18n: file settingspagecolor.ui line 118
 #: rc.cpp:843 rc.cpp:2489
 #, no-c-format
-msgid "&Functions"
-msgstr "&Ffwythiannau"
+msgid "&Default Function Colors"
+msgstr ""
 
 #. i18n: file settingspagecolor.ui line 148
 #: rc.cpp:847 rc.cpp:2493
@@ -2801,7 +2809,7 @@ msgstr ""
 msgid "Slider no. %1"
 msgstr ""
 
-#: View.cpp:415 View.cpp:1732
+#: View.cpp:415 View.cpp:1750
 msgid "The drawing was cancelled by the user."
 msgstr ""
 
@@ -2833,11 +2841,11 @@ msgstr ""
 msgid "Functions:"
 msgstr "Ffwythiannau :"
 
-#: View.cpp:653
+#: View.cpp:656
 msgid "root"
 msgstr ""
 
-#: View.cpp:1824
+#: View.cpp:1842
 msgid "Are you sure you want to remove this function?"
 msgstr ""
 
@@ -2895,197 +2903,197 @@ msgstr "Gosodiadau Cyffredinol"
 msgid "Constants"
 msgstr ""
 
-#: MainDlg.cpp:139
+#: MainDlg.cpp:138
 msgid "E&xport..."
 msgstr "&Allforio..."
 
-#: MainDlg.cpp:142
+#: MainDlg.cpp:141
 msgid "&No Zoom"
 msgstr ""
 
-#: MainDlg.cpp:143
+#: MainDlg.cpp:142
 msgid "Zoom &Rectangular"
 msgstr ""
 
-#: MainDlg.cpp:144
+#: MainDlg.cpp:143
 msgid "Zoom &In"
 msgstr "Ne&sàu"
 
-#: MainDlg.cpp:145
+#: MainDlg.cpp:144
 msgid "Zoom &Out"
 msgstr "Pell&hàu"
 
-#: MainDlg.cpp:146
+#: MainDlg.cpp:145
 msgid "&Center Point"
 msgstr ""
 
-#: MainDlg.cpp:147
+#: MainDlg.cpp:146
 msgid "&Fit Widget to Trigonometric Functions"
 msgstr ""
 
-#: MainDlg.cpp:156
+#: MainDlg.cpp:155
 msgid "Predefined &Math Functions"
 msgstr ""
 
-#: MainDlg.cpp:159
+#: MainDlg.cpp:158
 msgid "&Colors..."
 msgstr "&Lliwiau ..."
 
-#: MainDlg.cpp:160
+#: MainDlg.cpp:159
 msgid "&Coordinate System..."
 msgstr ""
 
-#: MainDlg.cpp:162
+#: MainDlg.cpp:161
 msgid "&Scaling..."
 msgstr ""
 
-#: MainDlg.cpp:163
+#: MainDlg.cpp:162
 msgid "&Fonts..."
 msgstr "&Ffontiau ..."
 
-#: MainDlg.cpp:165
+#: MainDlg.cpp:164
 msgid "Coordinate System I"
 msgstr ""
 
-#: MainDlg.cpp:166
+#: MainDlg.cpp:165
 msgid "Coordinate System II"
 msgstr ""
 
-#: MainDlg.cpp:167
+#: MainDlg.cpp:166
 msgid "Coordinate System III"
 msgstr ""
 
-#: MainDlg.cpp:170
+#: MainDlg.cpp:169
 msgid "&New Function Plot..."
 msgstr ""
 
-#: MainDlg.cpp:171
+#: MainDlg.cpp:170
 msgid "New Parametric Plot..."
 msgstr ""
 
-#: MainDlg.cpp:172
+#: MainDlg.cpp:171
 msgid "New Polar Plot..."
 msgstr ""
 
-#: MainDlg.cpp:173
+#: MainDlg.cpp:172
 msgid "Edit Plots..."
 msgstr ""
 
-#: MainDlg.cpp:176
+#: MainDlg.cpp:175
 msgid "&Get y-Value..."
 msgstr ""
 
-#: MainDlg.cpp:177
+#: MainDlg.cpp:176
 msgid "&Search for Minimum Value..."
 msgstr ""
 
-#: MainDlg.cpp:178
+#: MainDlg.cpp:177
 msgid "&Search for Maximum Value..."
 msgstr ""
 
-#: MainDlg.cpp:179
+#: MainDlg.cpp:178
 msgid "&Area Under Graph..."
 msgstr ""
 
-#: MainDlg.cpp:182
+#: MainDlg.cpp:181
 msgid "Quick Edit"
 msgstr ""
 
-#: MainDlg.cpp:183
+#: MainDlg.cpp:182
 msgid ""
 "Enter a simple function equation here.\n"
 "For instance: f(x)=x^2\n"
 "For more options use Functions->Edit Plots... menu."
 msgstr ""
 
-#: MainDlg.cpp:186
+#: MainDlg.cpp:185
 msgid "Show Slider 1"
 msgstr ""
 
-#: MainDlg.cpp:187
+#: MainDlg.cpp:186
 msgid "Show Slider 2"
 msgstr ""
 
-#: MainDlg.cpp:188
+#: MainDlg.cpp:187
 msgid "Show Slider 3"
 msgstr ""
 
-#: MainDlg.cpp:189
+#: MainDlg.cpp:188
 msgid "Show Slider 4"
 msgstr ""
 
-#: MainDlg.cpp:201
+#: MainDlg.cpp:200
 msgid "&Move"
 msgstr "Sy&mud"
 
-#: MainDlg.cpp:213
+#: MainDlg.cpp:212
 msgid ""
 "The plot has been modified.\n"
 "Do you want to save it?"
 msgstr ""
 
-#: MainDlg.cpp:251
+#: MainDlg.cpp:250
 msgid ""
 "This file is saved with an old file format; if you save it, you cannot open "
 "the file with older versions of Kmplot. Are you sure you want to continue?"
 msgstr ""
 
-#: MainDlg.cpp:265
+#: MainDlg.cpp:264
 msgid ""
 "*.fkt|KmPlot Files (*.fkt)\n"
 "*|All Files"
 msgstr ""
 
-#: MainDlg.cpp:273
+#: MainDlg.cpp:272
 msgid "The file could not be saved"
 msgstr ""
 
-#: MainDlg.cpp:289
+#: MainDlg.cpp:288
 msgid ""
 "*.svg|Scalable Vector Graphics (*.svg)\n"
 "*.bmp|Bitmap 180dpi (*.bmp)\n"
 "*.png|Bitmap 180dpi (*.png)"
 msgstr ""
 
-#: MainDlg.cpp:308 MainDlg.cpp:324 MainDlg.cpp:340
-msgid "The url could not be saved"
+#: MainDlg.cpp:307 MainDlg.cpp:323 MainDlg.cpp:339
+msgid "The URL could not be saved."
 msgstr ""
 
-#: MainDlg.cpp:394
+#: MainDlg.cpp:393
 msgid "Print Plot"
 msgstr ""
 
-#: MainDlg.cpp:406
+#: MainDlg.cpp:405
 msgid "Colors"
 msgstr "Lliwiau"
 
-#: MainDlg.cpp:406
+#: MainDlg.cpp:405
 msgid "Edit Colors"
 msgstr ""
 
-#: MainDlg.cpp:432
+#: MainDlg.cpp:431
 msgid "Scale"
 msgstr "Chwyddo"
 
-#: MainDlg.cpp:432
+#: MainDlg.cpp:431
 msgid "Edit Scaling"
 msgstr ""
 
-#: MainDlg.cpp:444
+#: MainDlg.cpp:443
 msgid "Edit Fonts"
 msgstr ""
 
-#: MainDlg.cpp:537
+#: MainDlg.cpp:536
 msgid ""
 "Parametric functions must be definied in the \"New Parametric Plot\"-dialog "
 "which you can find in the menubar"
 msgstr ""
 
-#: MainDlg.cpp:542
+#: MainDlg.cpp:541
 msgid "Recursive function is not allowed"
 msgstr ""
 
-#: MainDlg.cpp:788
+#: MainDlg.cpp:784
 msgid "KmPlotPart"
 msgstr ""
 
@@ -3120,3 +3128,6 @@ msgstr ""
 #: editfunction.cpp:290
 msgid "Recursive function is only allowed when drawing integral graphs"
 msgstr ""
+
+#~ msgid "&Functions"
+#~ msgstr "&Ffwythiannau"
