@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kio_sieve\n"
-"POT-Creation-Date: 2004-05-07 01:24+0200\n"
+"POT-Creation-Date: 2004-12-11 01:22+0100\n"
 "PO-Revision-Date: 2004-01-08 21:20+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -18,63 +18,63 @@ msgstr ""
 "X-Generator: KBabel 1.2\n"
 "\n"
 
-#: sieve.cpp:273
+#: sieve.cpp:331
 msgid "Connecting to %1..."
 msgstr "Yn cysylltu â %1..."
 
-#: sieve.cpp:276
+#: sieve.cpp:334
 msgid "The connection to the server was lost."
 msgstr "Collwyd y cysylltiad â'r gweinydd.f"
 
-#: sieve.cpp:288
+#: sieve.cpp:346
 msgid "Server identification failed."
 msgstr "Methodd dynodi'r gweinydd."
 
-#: sieve.cpp:315
+#: sieve.cpp:373
 msgid "Authenticating user..."
 msgstr "Yn dilysu'r defnyddiwr..."
 
-#: sieve.cpp:318
+#: sieve.cpp:376
 msgid "Authentication failed."
 msgstr "Methodd y dilysu."
 
-#: sieve.cpp:379 sieve.cpp:584 sieve.cpp:657 sieve.cpp:690
+#: sieve.cpp:437 sieve.cpp:644 sieve.cpp:734 sieve.cpp:768
 msgid "Done."
 msgstr "Wedi'i wneud."
 
-#: sieve.cpp:390
+#: sieve.cpp:449
 msgid "Activating script..."
 msgstr "Yn gweithredoli sgript..."
 
-#: sieve.cpp:406
+#: sieve.cpp:465
 msgid "There was an error activating the script."
 msgstr "Bu gwall tra'n gweithredoli'r sgript."
 
-#: sieve.cpp:424
+#: sieve.cpp:483
 msgid "There was an error deactivating the script."
 msgstr "Bu gwall tra'n gweithredoli'r sgript."
 
-#: sieve.cpp:451
+#: sieve.cpp:511
 msgid "Sending data..."
 msgstr "Yn anfon data..."
 
-#: sieve.cpp:468
+#: sieve.cpp:528
 msgid "KIO data supply error."
 msgstr "Gwall darparu data KIO."
 
-#: sieve.cpp:495
+#: sieve.cpp:555
 msgid "Quota exceeded"
 msgstr "Aethpwyd dros y ddogn"
 
-#: sieve.cpp:528 sieve.cpp:634 sieve.cpp:964
+#: sieve.cpp:588 sieve.cpp:1148
 msgid "Network error."
 msgstr "Gwall rhwydwaith."
 
-#: sieve.cpp:539
+#: sieve.cpp:599
 msgid "Verifying upload completion..."
 msgstr "Yn gwirio cyflawniad lanlwytho..."
 
-#: sieve.cpp:565
+#: sieve.cpp:625
 #, c-format
 msgid ""
 "The script did not upload successfully.\n"
@@ -87,7 +87,7 @@ msgstr ""
 " Ymatebodd y gweinydd:\n"
 " %1"
 
-#: sieve.cpp:573 sieve.cpp:577
+#: sieve.cpp:633 sieve.cpp:637
 msgid ""
 "The script did not upload successfully.\n"
 "The script may contain errors."
@@ -95,41 +95,45 @@ msgstr ""
 "Ni lanlwythodd y sgript yn llwyddiannus.\n"
 " Gall fod gwallau yn y sgript."
 
-#: sieve.cpp:611
+#: sieve.cpp:672
 msgid "Retrieving data..."
 msgstr "Yn nôl data..."
 
-#: sieve.cpp:645
+#: sieve.cpp:721
 msgid "Finishing up..."
 msgstr "Yn gorffen i fyny..."
 
-#: sieve.cpp:652
+#: sieve.cpp:729
 msgid "A protocol error occurred while trying to negotiate script downloading."
 msgstr "Digwyddodd gwall protocol tra'n ceisio trafod lawrlwytho sgript."
 
-#: sieve.cpp:664
+#: sieve.cpp:741
 msgid "Folders are not supported."
 msgstr "Ni chynhelir plygyll."
 
-#: sieve.cpp:671
+#: sieve.cpp:749
 msgid "Deleting file..."
 msgstr "Yn dileu'r ffeil..."
 
-#: sieve.cpp:686
+#: sieve.cpp:764
 msgid "The server would not delete the file."
 msgstr "Gwrthododd y gweinydd ddileu'r ffeil."
 
-#: sieve.cpp:705
+#: sieve.cpp:783
 msgid "Cannot chmod to anything but 0700 (active) or 0600 (inactive script)."
 msgstr ""
 "Methu chmod i unrhywbeth heblaw am 0700 (gweithredol) neu 0600 (sgript "
 "anweithredol)"
 
-#: sieve.cpp:855
+#: sieve.cpp:932
+msgid "No authentication details supplied."
+msgstr "Ni ddarperwyd manylion dilysu."
+
+#: sieve.cpp:990
 msgid "Sieve Authentication Details"
 msgstr "Manylion Dilysu Rhidyll"
 
-#: sieve.cpp:856
+#: sieve.cpp:991
 msgid ""
 "Please enter your authentication details for your sieve account (usually the "
 "same as your email password):"
@@ -137,15 +141,7 @@ msgstr ""
 "Rhowch eich manylion dilysu ar gyfer eich cyfrif ridyll (fel arfer yr un "
 "fath a'ch cyfrinair ebost):"
 
-#: sieve.cpp:859
-msgid "No authentication details supplied."
-msgstr "Ni ddarperwyd manylion dilysu."
-
-#: sieve.cpp:878
-msgid "No compatible authentication methods found."
-msgstr "Ni ganfuwyd dulliau dilysu cyfaddas."
-
-#: sieve.cpp:897 sieve.cpp:909
+#: sieve.cpp:1059 sieve.cpp:1071
 #, c-format
 msgid ""
 "A protocol error occurred during authentication.\n"
@@ -154,7 +150,7 @@ msgstr ""
 "Digwyddodd gwall protocol yn ystod y dilysu.\n"
 " Dewiswch dull dilysu sy'n wahanol i %1."
 
-#: sieve.cpp:935
+#: sieve.cpp:1119
 #, c-format
 msgid ""
 "Authentication failed.\n"
@@ -167,6 +163,9 @@ msgstr ""
 " Dywedodd y gweinydd:\n"
 " %1"
 
-#: sieve.cpp:1010
+#: sieve.cpp:1194
 msgid "A protocol error occurred."
 msgstr "Digwyddodd gwall protocol."
+
+#~ msgid "No compatible authentication methods found."
+#~ msgstr "Ni ganfuwyd dulliau dilysu cyfaddas."
