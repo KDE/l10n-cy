@@ -1,13 +1,13 @@
 # translation of kcmcomponentchooser.po to Cymraeg
-# Copyright (C) 2003 Free Software Foundation, Inc.
+# Copyright (C) 2003, 2004 Free Software Foundation, Inc.
 # KGyfieithu <kyfieithu@dotmon.com>, 2003.
-# KD at KGyfieithu <kyfieithu@dotmon.com>, 2003.
+# KD at KGyfieithu <kyfieithu@dotmon.com>, 2003, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmcomponentchooser\n"
-"POT-Creation-Date: 2004-02-12 22:29+0100\n"
-"PO-Revision-Date: 2003-11-23 15:37+0000\n"
+"POT-Creation-Date: 2004-06-10 01:18+0200\n"
+"PO-Revision-Date: 2004-07-03 06:59+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,7 @@ msgstr ""
 msgid ""
 "_: NAME OF TRANSLATORS\n"
 "Your names"
-msgstr "Owain Green ar ran KGyfieithu - Meddalwedd Gymraeg"
+msgstr "Owain Green drwy KGyfieithu"
 
 #: _translatorinfo.cpp:3
 msgid ""
@@ -27,19 +27,23 @@ msgid ""
 "Your emails"
 msgstr "kyfieithu@dotmon.com"
 
-#: componentchooser.cpp:161
+#: componentchooser.cpp:165
 msgid "Select preferred email client:"
 msgstr "Dewiswch eich hoff ddibynnydd ebost:"
 
-#: componentchooser.cpp:268
+#: componentchooser.cpp:272
 msgid "Select preferred terminal application:"
 msgstr "Dewiswch eich hoff gymhwysiad terfynnell:"
 
-#: componentchooser.cpp:302
+#: componentchooser.cpp:367
+msgid "Select preferred web browser application:"
+msgstr "Dewiswch eich hoff gymhwysiad i bori'r we:"
+
+#: componentchooser.cpp:392
 msgid "Unknown"
 msgstr "Anhysbys"
 
-#: componentchooser.cpp:317
+#: componentchooser.cpp:407
 msgid ""
 "<qt>You changed the default component of your choice, do want to save that "
 "change now ?<BR><BR>Selecting <B>No</B> will discard your changes</qt>"
@@ -47,11 +51,11 @@ msgstr ""
 "<qt>Newidioch gydran ragosod eich dewis, ydych am gadw'r newid yna nawr? "
 "<BR><BR>Bydd dewis <B>Na</B> yn taflu'ch newidiadau</qt>"
 
-#: componentchooser.cpp:321
+#: componentchooser.cpp:411
 msgid "No description available"
 msgstr "Dim disgrifiad ar gael"
 
-#: componentchooser.cpp:332
+#: componentchooser.cpp:422
 msgid ""
 "Choose from the list below which component should be used by default for the "
 "%1 service."
@@ -71,11 +75,27 @@ msgstr "Dewisydd Cydrannau"
 msgid "(c), 2002 Joseph Wenninger"
 msgstr "(h)(c), 2002 Joseph Wenninger"
 
-#: rc.cpp:1
+#: rc.cpp:2
+msgid "<qt>Open <b>http</b> and <b>https</b> URLs</qt>"
+msgstr "<qt>Agor URLau <b>http</b> ac <b>https</b></qt>"
+
+#: rc.cpp:3
+msgid "in an application based on the contents of the URL"
+msgstr "mewn cymhwysiad a seilir ar gynnwys yr URL"
+
+#: rc.cpp:4
+msgid "in the following browser:"
+msgstr "yn y porydd gwe yma:"
+
+#: rc.cpp:5 rc.cpp:16 rc.cpp:28
+msgid "..."
+msgstr "..."
+
+#: rc.cpp:6
 msgid "Default Component"
 msgstr "Cydran Ragosodedig"
 
-#: rc.cpp:2
+#: rc.cpp:7
 msgid ""
 "Here you can change the component program. Components are programs that "
 "handle basic tasks, like the terminal emulator, the text editor and the "
@@ -91,11 +111,11 @@ msgstr ""
 "gyson, mae'r cymhwysiadau yma o hyd yn galw'r un un gydran.  Gallwch ddewis "
 "yma pa raglenni y mae'r cydrannau yma.   "
 
-#: rc.cpp:3
+#: rc.cpp:8
 msgid "Component Description"
 msgstr "Disgrifiad y Gydran"
 
-#: rc.cpp:4
+#: rc.cpp:9
 msgid ""
 "Here you can read a small description of the currently selected component. "
 "To change the selected component, click on the list to the left. To change "
@@ -105,7 +125,7 @@ msgstr ""
 "mwyn newid y gydran benodol, cliciwch ar y rhestr i'r chwith.  Er mwyn newid "
 "y rhaglen gydran, dewiswch hi isod."
 
-#: rc.cpp:6
+#: rc.cpp:11
 msgid ""
 "<qt>\n"
 "<p>"
@@ -130,7 +150,7 @@ msgstr ""
 "gydran.  Gallwch ddewis yma pa raglenni y mae'r cydrannau yma.</p>\n"
 "</qt>"
 
-#: rc.cpp:9 rc.cpp:22
+#: rc.cpp:14
 msgid ""
 "<ul> "
 "<li>%t: Recipient's address</li> "
@@ -146,7 +166,7 @@ msgstr ""
 "<li>%b: Copi Carbon Dall (BCC)</li> "
 "<li>%B: Testun corff patrymlun</li> <li>%A: Atodiad </li> </ul>"
 
-#: rc.cpp:10 rc.cpp:23
+#: rc.cpp:15
 msgid ""
 "Press this button to select your favorite email client. Please note that the "
 "file you select has to have the executable attribute set in order to be "
@@ -172,19 +192,15 @@ msgstr ""
 "<li>%b: Copi Carbon Dall (BCC)</li> "
 "<li>%B: Testun corff patrymlun</li> <li>%A: Atodiad </li> </ul>"
 
-#: rc.cpp:11 rc.cpp:24
-msgid "..."
-msgstr "..."
-
-#: rc.cpp:12
+#: rc.cpp:17
 msgid "Click here to browse for the mail program file."
 msgstr "Cliciwch yma i bori am y ffeil rhaglen ebost."
 
-#: rc.cpp:13
+#: rc.cpp:18
 msgid "&Run in terminal"
 msgstr "&Rhedeg mewn terfynnell"
 
-#: rc.cpp:14
+#: rc.cpp:19
 msgid ""
 "Activate this option if you want the selected email client to be executed in "
 "a terminal (e.g. <em>Konsole</em>)."
@@ -192,32 +208,48 @@ msgstr ""
 "Gweithredolwch y dewisiad yma os ydych am redeg y dibynnydd ebost dewisiedig "
 "mewn terfynnell (e.e. <em>Konsole</em>)."
 
-#: rc.cpp:15
+#: rc.cpp:20
 msgid "&Use KMail as preferred email client"
 msgstr "&Defnyddio KMail yn hoff ddibynnydd ebost"
 
-#: rc.cpp:16
+#: rc.cpp:21
 msgid "Kmail is the standard Mail program for the KDE desktop."
 msgstr " Kmail yw'r rhaglen safonol ebost ar gyfer y penbwrdd KDE."
 
-#: rc.cpp:17
+#: rc.cpp:22
 msgid "Use a different &email client:"
 msgstr "Defnyddio dibynnydd &ebost arall:"
 
-#: rc.cpp:18
+#: rc.cpp:23
 msgid "Select this option if you want to use any other mail program."
 msgstr "Dewiswch y dewisiad yma os hoffech ddefnyddio rhyw rhaglen ebost arall."
 
-#: rc.cpp:20
+#: rc.cpp:25
 msgid "Use a different &terminal program:"
 msgstr "Defnyddio rhaglen d&erfynnell arall:"
 
-#: rc.cpp:21
+#: rc.cpp:26
 msgid "&Use Konsole as terminal application"
 msgstr "&Defnyddio Konsole yn gymhwysiad terfynnell"
+
+#: rc.cpp:27
+msgid ""
+"Press this button to select your favorite terminal client. Please note that "
+"the file you select has to have the executable attribute set in order to be "
+"accepted."
+"<br> Also note that some programs that utilize Terminal Emulator will not "
+"work if you add command line arguments (Example: konsole -ls)."
+msgstr ""
+"Gwasgwch y botwm yma i ddewis eich hoff ddibynnydd terfynnell.  Noder bod rhaid gosod y priodoledd gweithredadwy ar y ffeil a ddewisir iddi gael ei derbyn. "
+"<br>Noder hefyd na fydd rhai rhaglenni sy'n defnyddio Efelychydd Terfynnell yn gweithio os ychwanegwch ymresymiadau llinell orchymyn (Enghraifft: knonsole -ls)."
+
+#: rc.cpp:29
+msgid "Click here to browse for terminal program."
+msgstr "Cliciwch yma i bori am y rhaglen derfynnell."
 
 #~ msgid "Form1"
 #~ msgstr "Ffurf1"
 
 #~ msgid "Form2"
 #~ msgstr "Ffurf2"
+
