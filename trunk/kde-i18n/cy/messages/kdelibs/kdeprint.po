@@ -1,3 +1,4 @@
+# translation of kdeprint.po to Cymraeg
 # Translation of kdelibs.po to Cymraeg
 # Translation of clearfuzzytest.po to Cymraeg
 # translation of clearfuzzytest.po to Cymraeg
@@ -5,21 +6,22 @@
 # KDE yn Gymraeg.
 # Copyright (C) 2003 Free Software Foundation, Inc.
 # www.kyfieithu.co.uk <kyfieithu@dotmon.com>, 2003.
-# Kgyfieithu <kyfieithu@dotmon.com>, 2003
-# KGyfieithu <kyfieithu@dotmon.com>, 2003
+# Kgyfieithu <kyfieithu@dotmon.com>, 2003.
+# KGyfieithu <kyfieithu@dotmon.com>, 2003.
+# KD at KGyfieithu <kyfieithu@dotmon.com>, 2003.
 #
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: kdelibs\n"
-"POT-Creation-Date: 2003-08-03 01:22+0200\n"
-"PO-Revision-Date: 2003-07-16 18:39+0100\n"
-"Last-Translator: KGyfieithu <kyfieithu@dotmon.com>\n"
+"Project-Id-Version: kdeprint\n"
+"POT-Creation-Date: 2003-11-07 01:31+0100\n"
+"PO-Revision-Date: 2003-11-12 14:56+0000\n"
+"Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.0.1\n"
+"X-Generator: KBabel 1.2\n"
 "\n"
 
 #: ext/kextprinterimpl.cpp:47
@@ -372,11 +374,11 @@ msgstr "Sbwlydd"
 msgid "Spooler Settings"
 msgstr "Gosodiadau Sbwlydd"
 
-#: cups/kmcupsuimanager.cpp:87 lpr/kmlpruimanager.cpp:58
+#: cups/kmcupsuimanager.cpp:117 lpr/kmlpruimanager.cpp:58
 msgid "&Local printer (parallel, serial, USB)"
 msgstr "Argraffydd &lleol (paralel, cyfresol, USB)"
 
-#: cups/kmcupsuimanager.cpp:88 lpr/kmlpruimanager.cpp:59
+#: cups/kmcupsuimanager.cpp:119 lpr/kmlpruimanager.cpp:59
 msgid "&Remote LPD queue"
 msgstr "Ciw LPD &pell"
 
@@ -384,7 +386,7 @@ msgstr "Ciw LPD &pell"
 msgid "&Network printer (TCP)"
 msgstr "Argraffydd &rhwydwaith (TCP)"
 
-#: cups/kmcupsuimanager.cpp:89 lpr/kmlpruimanager.cpp:61
+#: cups/kmcupsuimanager.cpp:121 lpr/kmlpruimanager.cpp:61
 msgid "&SMB shared printer (Windows)"
 msgstr "Argraffydd &SMB wedi ei rannu (Windows)"
 
@@ -476,7 +478,7 @@ msgstr "Methu gwaredu ffeil gyrrydd %1."
 msgid "Aliases:"
 msgstr "Arallenwau:"
 
-#: lpr/editentrydialog.cpp:46 management/kxmlcommanddlg.cpp:105
+#: lpr/editentrydialog.cpp:46 management/kxmlcommanddlg.cpp:107
 msgid "String"
 msgstr "Llinell"
 
@@ -484,7 +486,7 @@ msgstr "Llinell"
 msgid "Number"
 msgstr "Rhif"
 
-#: lpr/editentrydialog.cpp:48 management/kxmlcommanddlg.cpp:109
+#: lpr/editentrydialog.cpp:48 management/kxmlcommanddlg.cpp:111
 msgid "Boolean"
 msgstr "Boolaidd"
 
@@ -493,176 +495,432 @@ msgstr "Boolaidd"
 msgid "Printcap Entry: %1"
 msgstr "Cofnod Printcap: %1"
 
-#: kprintdialog.cpp:95 management/kmmainview.cpp:301 management/kmwend.cpp:92
+#: kprintdialog.cpp:95
+msgid ""
+" <qt> The <em>Location</em> may describe where the selected printer is "
+"located. The Location description is created by the administrator of the "
+"print system (or may be left empty). </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:100
+msgid " <qt> The <em>Type</em> indicates your printer type. </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:102
+msgid ""
+" <qt> The <em>State</em>"
+" indicates the state of the print queue on the print server (which could be "
+"your localhost). The state may be 'Idle', 'Processing', 'Stopped', 'Paused' "
+"or similar. </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:106
+msgid ""
+" <qt> The <em>Comment</em> may describe the selected printer. This comment "
+"is created by the administrator of the print system (or may be left empty). "
+"</qt>"
+msgstr ""
+
+#: kprintdialog.cpp:110
+msgid ""
+" <qt>"
+"Use this combo box to select the printer to which you want to print. If you "
+"only find the <em>KDE special printers</em> -- which save jobs to disk (as "
+"PostScript- or PDF-files), or deliver jobs via email (as a PDF attachment) "
+"-- but are missing a real printer, you need to... "
+"<ul> "
+"<li>...either create a local printer with the help of the <em>KDE Add "
+"Printer Wizard</em> which is available for the CUPS and RLPR printing "
+"systems (click button to the left of the 'Properties' button),</li> "
+"<li>...or you can try to connect to a remote CUPS print server by clicking "
+"the <em>System Options...</em> button below. A new dialog opens: click on "
+"the <em>CUPS server</em> icon and fill in the information required to use "
+"the remote server.</li> </ul> </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:126
+msgid ""
+" <qt> This button takes you to where you can make decisions regarding all "
+"supported print job options. </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:129
+msgid ""
+" <qt>"
+"<p> This button reduces the list of visible printers to a shorter, more "
+"convenient, pre-defined list.</p> "
+"<p>This is particularly useful in enterprise environments with lots of "
+"printers. The default is to show <b>all</b> printers.</p> "
+"<p>To create a personal filter list, click on the <em>\"System "
+"Options...</em>\" button at the bottom of this dialog. Then, in the new "
+"dialog, select <em>\"Filter\"</em> (left column in the <em>KDE Print "
+"Configuration</em> dialog).</p> </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:138
+msgid ""
+"<qt> This button starts the <em>KDE Add Printer Wizard</em>. (<b>NOT</b> if "
+"you use <em>\"Generic LPD</em>\" or <em>\"LPRng\"</em>, or <em>\"Print "
+"Through an External Program</em>\".) Use the Wizard (with <em>\"CUPS\"</em> "
+"or <em>\"RLPR\"</em>) to add locally defined printers to your system. </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:144
+msgid ""
+" <qt> You can enter any command that would also print for you in a "
+"<em>konsole</em> window. "
+"<br> <b>Example:</b> "
+"<pre>a2ps -P &lt;printername&gt; --medium=A3</pre>. </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:148
+msgid ""
+" <qt>This button expands or reduces the KDE printing dialog. KDEPrint will "
+"remember what you do here; next time, it will start this dialog 'expanded' "
+"or 'collapsed', depending on the mode you are using this time.... </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:154
+msgid ""
+" <qt> This button starts a new dialog where you can adjust various settings "
+"of your printing system. Amongst them: "
+"<ul>"
+"<li> Should KDE applications embed all fonts into the PostScript they "
+"generate for printing? "
+"<li> Should KDE use an external PostScript viewer like <em>gv</em>"
+" for print page previews? "
+"<li> Should KDEPrint use a local or a remote CUPS server?, </ul> and many "
+"more....  </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:165
+msgid " <qt> This button takes you to the complete <em>KDEPrint Manual</em>. </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:169
+msgid " <qt> This button cancels your print job and quits the kprinter dialog. </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:173
+msgid ""
+" <qt> This button sends the job to the printing process. If you are sending "
+"non-PostScript files, you may be asked if you want KDE to convert the files "
+"into PostScript, or if you want your print subsystem (like CUPS) to do this. "
+"</qt>"
+msgstr ""
+
+#: kprintdialog.cpp:179
+msgid ""
+" <qt>"
+"<p>"
+"If you enable this checkbox, the printing dialog stays open after you hit "
+"the <em>Print</em> button.</p> "
+"<p> This is especially useful, if you need to test various print settings "
+"(like color matching for an inkjet printer) or if you want to send your job "
+"to multiple printers (one after the other) to have it finished more "
+"quickly.</p> </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:188
+msgid ""
+" <qt> The \"Output file:\" shows you where your file will be saved if you "
+"decide to \"Print to File\" your job, using one of the KDE <em>Special "
+"Printers</em> named \"Print to File (PostScript)\" or \"Print to File "
+"(PDF)\". Choose a name and location that suits you by using the button "
+"and/or editing the line on the right. </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:195
+msgid ""
+" <qt> Edit this line to create a path and filename that suits you. (Only "
+"available if you \"Print to File\") </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:199
+msgid ""
+" <qt> This button calls the \"File Open\" dialog to let you choose a "
+"directory and file name where your \"Print-to-File\" job should be saved. "
+"</qt>"
+msgstr ""
+
+#: kprintdialog.cpp:204
+msgid ""
+" <qt> This button calls the \"File Open\" dialog to allow you to select a "
+"file for printing. Note, that  "
+"<ul>"
+"<li>"
+"you can select ASCII or International Text, PDF, PostScript, JPEG, TIFF, "
+"PNG, GIF and many other graphical formats. "
+"<li>you can select various files from different paths and send them as one "
+"\"multi-file job\" to the printing system. </ul> </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:215
+msgid ""
+" <qt> This button removes the highlighted file from the list of files to be "
+"printed. </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:219
+msgid ""
+" <qt> This button tries to open the highlighted file, so you can view or "
+"edit it before you send it to the printing system. </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:224
+msgid ""
+" <qt> This button moves the highlighted file up in the list of files to be "
+"printed. (In effect, this changes the order of the files' printout.) </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:229
+msgid ""
+" <qt>"
+" This button moves the highlighted file down in the list of files to be "
+"printed. (In effect, this changes the order of the files' printout.) </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:234
+msgid ""
+" <qt> Enable this checkbox if you want to see a preview of your printout. A "
+"preview lets you check if, for instance, your intended \"poster\" or "
+"\"pamphlet\" layout looks like you intended, without wasting paper first. It "
+"also lets you cancel the job if something looks wrong.  </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:241
+msgid ""
+" <qt>"
+" This button sets the current printer as the user's default. (Button is only "
+"visible if the <em>System Options...</em> --> <em>General</em> --> "
+"<em>Miscellaneous</em>: <em>\"Defaults to the last printer used in the "
+"application\"</em> is disabled.) </qt>"
+msgstr ""
+
+#: kprintdialog.cpp:254 management/kmmainview.cpp:301 management/kmwend.cpp:92
 #: management/smbview.cpp:36
 msgid "Printer"
 msgstr "Argraffydd"
 
-#: kprintdialog.cpp:102 management/kmspecialprinterdlg.cpp:56
-#: management/kxmlcommanddlg.cpp:112
+#: kprintdialog.cpp:267 management/kmspecialprinterdlg.cpp:56
+#: management/kxmlcommanddlg.cpp:114
 msgid "&Name:"
 msgstr "&Enw:"
 
-#: kprintdialog.cpp:103 management/kminfopage.cpp:52
+#: kprintdialog.cpp:269 management/kminfopage.cpp:52
 msgid ""
 "_: Status\n"
 "State:"
 msgstr "Cyflwr:"
 
-#: kprintdialog.cpp:104 management/kminfopage.cpp:50
+#: kprintdialog.cpp:271 management/kminfopage.cpp:50
 msgid "Type:"
 msgstr "Math:"
 
-#: kprintdialog.cpp:105 management/kmwname.cpp:42
+#: kprintdialog.cpp:273 management/kmwname.cpp:42
 msgid "Location:"
 msgstr "Lleoliad:"
 
-#: kprintdialog.cpp:106 management/kxmlcommanddlg.cpp:173
+#: kprintdialog.cpp:275 management/kxmlcommanddlg.cpp:175
 msgid "Comment:"
 msgstr "Esboniad:"
 
-#: kprintdialog.cpp:108
+#: kprintdialog.cpp:278
 msgid "P&roperties..."
 msgstr "&Priodweddau"
 
-#: kprintdialog.cpp:109
+#: kprintdialog.cpp:280
 msgid "System Op&tions..."
 msgstr "Dewisiadau C&ysawd"
 
-#: kprintdialog.cpp:110
+#: kprintdialog.cpp:282
 msgid "Set as &Default"
 msgstr "Gosod fel &Rhagosodiad"
 
-#: kprintdialog.cpp:116
+#: kprintdialog.cpp:289
 msgid "Toggle printer filtering"
 msgstr "Dechrau/Stopio Hidlo Argraffydd"
 
-#: kprintdialog.cpp:120
+#: kprintdialog.cpp:294
 msgid "Add printer..."
 msgstr "Ychwanegu argraffydd..."
 
-#: cups/ippreportdlg.cpp:34 cups/ippreportdlg.cpp:41 kprintdialog.cpp:121
+#: cups/ippreportdlg.cpp:34 cups/ippreportdlg.cpp:41 kprintdialog.cpp:296
 msgid "&Print"
 msgstr "&Argraffu"
 
-#: kprintdialog.cpp:125
+#: kprintdialog.cpp:302
 msgid "Previe&w"
 msgstr "Rhag&olygu"
 
-#: kprintdialog.cpp:126
+#: kprintdialog.cpp:304
 msgid "O&utput file:"
 msgstr "Ffeil &allbwn:"
 
-#: kprintdialog.cpp:130
+#: kprintdialog.cpp:310
 msgid "Print co&mmand:"
 msgstr "Gorchymyn ar&graffu:"
 
-#: kprintdialog.cpp:136
+#: kprintdialog.cpp:319
 msgid "Show/hide advanced options"
 msgstr "Dangos/cuddio dewisiadau uwch"
 
-#: kprintdialog.cpp:137
+#: kprintdialog.cpp:321
 msgid "&Keep this dialog open after printing"
 msgstr "&Cadw'r ymgom ym ar agor ar Ã´l argraffu"
 
-#: kprintdialog.cpp:347 kprintdialog.cpp:730
+#: kprintdialog.cpp:533 kprintdialog.cpp:905
 msgid "An error occurred while retrieving the printer list:"
 msgstr "Gwall wrth nÃ´l y rhestr argraffyddion:"
 
-#: kprintdialog.cpp:521
+#: kprintdialog.cpp:696
 msgid "The output filename is empty."
 msgstr "Mae'r enw ffeil allbwn yn wag."
 
-#: kprintdialog.cpp:554
+#: kprintdialog.cpp:729
 msgid "You don't have write permissions to this file."
 msgstr "Nid oes ganddoch ganiatadau i'r ffeil yma."
 
-#: kprintdialog.cpp:560
-#, fuzzy
+#: kprintdialog.cpp:735
 msgid "The output directory does not exist."
-msgstr "Nid ydy'r ffeil neu cyfeiriadur %1 mewn bod."
+msgstr "Nid yw'r cyfeiriadur allbwn mewn bod."
 
-#: kprintdialog.cpp:562
+#: kprintdialog.cpp:737
 msgid "You don't have write permissions in that directory."
 msgstr "Nid oes ganddoch ganiatadau yn y cyfeiriadur yma."
 
-#: kprintdialog.cpp:669
+#: kprintdialog.cpp:844
 msgid "Collaps&e"
 msgstr "Da&tchwyddo"
 
-#: kprintdialog.cpp:678
+#: kprintdialog.cpp:853
 msgid "&Expand"
 msgstr "Chwy&ddo"
 
-#: kprintdialog.cpp:720
+#: kprintdialog.cpp:895
 msgid "Initializing printing system..."
 msgstr "Cychwyn cysawd argraffu..."
 
-#: kprintdialog.cpp:756
+#: kprintdialog.cpp:931
 msgid "Print to File"
 msgstr "Argraffu i Ffeil"
 
-#: kmprinter.cpp:183 kprintdialog.cpp:774
+#: kmprinter.cpp:183 kprintdialog.cpp:949
 msgid "All Files"
 msgstr "Pob Ffeil"
 
-#: cups/kpschedulepage.cpp:38
+#: cups/kpschedulepage.cpp:39
+msgid ""
+" <qt> "
+"<p>"
+"Insert a meaningful string here to associate the current print job with a "
+"certain account. This string will appear in the CUPS \"page_log\" to help "
+"with the print accounting in your organization. (Leave it empty if you don't "
+"need it.) "
+"<p> It is useful for people who print on behalf of different \"customers\", "
+"like print service bureaux, letter shops, press and prepress companies, or "
+"secretaries who serve different bosses, etc. </qt>"
+msgstr ""
+
+#: cups/kpschedulepage.cpp:50
+msgid ""
+" <qt> "
+"<p>Scheduled printing lets you control the time of the actual printout, "
+"while you can still send away your job <b>now</b> and have it out of your "
+"way. "
+"<p>"
+" Especially useful is the \"Never (hold indefinitely)\" option. It allows "
+"you to park your job until a time when you (or a printer administrator) "
+"decides to manually release it. "
+"<p> This is often required in enterprise environments, where you normally "
+"are not allowed to directly and immediately access the huge production "
+"printers in your <em>Central Repro Department</em>. However it is okay to "
+"send jobs to the queue which is under the control of the operators (who, "
+"after all, need to make sure that the 10,000 sheets of pink paper which is "
+"required by the Marketing Department for a particular job are available and "
+"loaded into the paper trays). </qt>"
+msgstr ""
+
+#: cups/kpschedulepage.cpp:68
+msgid ""
+" <qt> "
+"<p>Page Labels are printed by CUPS at the top and bottom of each page. They "
+"appear on the pages surrounded by a little frame box. "
+"<p>They contain any string you type into the line edit field. </qt>"
+msgstr ""
+
+#: cups/kpschedulepage.cpp:74
+msgid ""
+" <qt> "
+"<p>Usually CUPS prints all jobs per queue according to the \"FIFO\" "
+"priniciple: <em>First In, First Out</em>. "
+"<p> The job priority option allows you to re-order the queue according to "
+"your needs. "
+"<p> It works in both directions: you can increase as well as decrease "
+"priorities. (Usually you can only control your <b>own</b> jobs). "
+"<p> Since the default job priority is \"50\", any job sent with, for "
+"example, \"49\" will be printed only after all those others have finished. "
+"Conversely, a \"51\" or higher priority job will go right at the top of a "
+"populated queue (if no other, higher prioritized one is present). </qt>"
+msgstr ""
+
+#: cups/kpschedulepage.cpp:89
 msgid "Advanced Options"
 msgstr "Dewisiadau Uwch"
 
-#: cups/kpschedulepage.cpp:49
+#: cups/kpschedulepage.cpp:100
 msgid "Immediately"
 msgstr "Syth bin"
 
-#: cups/kpschedulepage.cpp:50
+#: cups/kpschedulepage.cpp:101
 msgid "Never (hold indefinitely)"
 msgstr "Byth (cadw am gyfnod amhenodol)"
 
-#: cups/kpschedulepage.cpp:51
+#: cups/kpschedulepage.cpp:102
 msgid "Daytime (6 am - 6 pm)"
 msgstr "Amser dydd (6am-6pm)"
 
-#: cups/kpschedulepage.cpp:52
+#: cups/kpschedulepage.cpp:103
 msgid "Evening (6 pm - 6 am)"
 msgstr "Hwyrnos (6pm-6am)"
 
-#: cups/kpschedulepage.cpp:53
+#: cups/kpschedulepage.cpp:104
 msgid "Night (6 pm - 6 am)"
 msgstr "Nos (6pm-6am)"
 
-#: cups/kpschedulepage.cpp:54
+#: cups/kpschedulepage.cpp:105
 msgid "Weekend"
 msgstr "Penwythnos"
 
-#: cups/kpschedulepage.cpp:55
+#: cups/kpschedulepage.cpp:106
 msgid "Second Shift (4 pm - 12 am)"
 msgstr "Ail Gyfnod (4pm-12am)"
 
-#: cups/kpschedulepage.cpp:56
+#: cups/kpschedulepage.cpp:107
 msgid "Third Shift (12 am - 8 am)"
 msgstr "Trydydd Cyfnod (12am-8am)"
 
-#: cups/kpschedulepage.cpp:57
+#: cups/kpschedulepage.cpp:108
 msgid "Specified Time"
 msgstr "Amser Penodol"
 
-#: cups/kpschedulepage.cpp:67
+#: cups/kpschedulepage.cpp:123
 msgid "&Schedule printing:"
 msgstr "&Trefnlennu argraffu:"
 
-#: cups/kpschedulepage.cpp:69
+#: cups/kpschedulepage.cpp:126
 msgid "&Billing information:"
 msgstr "&Gwybodaeth anfonebau:"
 
-#: cups/kpschedulepage.cpp:71
+#: cups/kpschedulepage.cpp:129
 msgid "T&op/Bottom page label:"
 msgstr "Label &Pen/Gwaelod y dudalen"
 
-#: cups/kpschedulepage.cpp:73
+#: cups/kpschedulepage.cpp:132
 msgid "&Job priority:"
 msgstr "&Blaenoriaeth y Swydd"
 
-#: cups/kpschedulepage.cpp:103
+#: cups/kpschedulepage.cpp:163
 msgid "The time specified is not valid."
 msgstr "Mae'r amser a phenodwyd yn annilys."
 
@@ -781,8 +1039,8 @@ msgstr ""
 
 #: cups/cupsaddsmb2.cpp:266
 #, c-format
-msgid "Creating directory %1"
-msgstr "Creu cyfeiriadur %1"
+msgid "Creating folder %1"
+msgstr "Creu plygell %1"
 
 #: cups/cupsaddsmb2.cpp:274
 #, c-format
@@ -863,7 +1121,7 @@ msgstr ""
 msgid "Preparing to upload driver to host %1"
 msgstr "Paratoi llwytho'r gyrrydd i westeiwr %1"
 
-#: cups/cupsaddsmb2.cpp:408 management/networkscanner.cpp:146
+#: cups/cupsaddsmb2.cpp:408 management/networkscanner.cpp:148
 msgid "&Abort"
 msgstr "&Terfynnu"
 
@@ -884,7 +1142,27 @@ msgstr "Dewis Argraffydd IPP Pell"
 msgid "You must select a printer!"
 msgstr "Rhaid i chi ddewis argraffydd!"
 
-#: cups/ipprequest.cpp:226
+#: cups/ipprequest.cpp:103
+msgid "You don't have access to the requested resource."
+msgstr "Nid oes ganddoch gyrchiad at yr adnodd oedd ceisiedig."
+
+#: cups/ipprequest.cpp:106
+msgid "You are not authorized to access the requested resource."
+msgstr "Nid ydych wedi cael eich awdurdodi i gyrchu'r adnodd ceisiedig."
+
+#: cups/ipprequest.cpp:109
+msgid "The requested operation cannot be completed."
+msgstr "Methu cwblhau'r gweithred geisiedig."
+
+#: cups/ipprequest.cpp:112
+msgid "The requested service is currently unavailable."
+msgstr "Nid yw'r gwasanaeth ceisiedig ar gael ar hyn o bryd."
+
+#: cups/ipprequest.cpp:115
+msgid "The target printer is not accepting print jobs."
+msgstr ""
+
+#: cups/ipprequest.cpp:225
 msgid ""
 "Connection to CUPS server failed. Check that the CUPS server is correctly "
 "installed and running."
@@ -892,23 +1170,23 @@ msgstr ""
 "Methodd y cysylltiad i'r gweinydd CUPS.  Gwiriwch fod y gweinydd CUPS wedi "
 "ei osod yn iawn, a rhedeg."
 
-#: cups/ipprequest.cpp:229
+#: cups/ipprequest.cpp:228
 msgid "The IPP request failed for an unknown reason."
 msgstr "Methodd y cais IPP am reswm anhysbys."
 
-#: cups/ipprequest.cpp:330
+#: cups/ipprequest.cpp:329
 msgid "Attribute"
 msgstr "Priodoleddau"
 
-#: cups/ipprequest.cpp:331
+#: cups/ipprequest.cpp:330
 msgid "Values"
 msgstr "Gwerthoedd"
 
-#: cups/ipprequest.cpp:362
+#: cups/ipprequest.cpp:361
 msgid "True"
 msgstr "Gwir"
 
-#: cups/ipprequest.cpp:362
+#: cups/ipprequest.cpp:361
 msgid "False"
 msgstr "Ffug"
 
@@ -1013,7 +1291,7 @@ msgstr ""
 "Diffiniwch yma grwp o ddefnyddwyr a chaniateir neu a wrthodir am yr "
 "argraffydd yma."
 
-#: cups/kmwusers.cpp:45 management/kxmlcommanddlg.cpp:115
+#: cups/kmwusers.cpp:45 management/kxmlcommanddlg.cpp:117
 msgid "&Type:"
 msgstr "&Math:"
 
@@ -1054,72 +1332,97 @@ msgid "&Enabled"
 msgstr "All&uogir"
 
 #: cups/kmconfigcupsdir.cpp:34
-msgid "Directory"
-msgstr "Cyfeiriadur"
+msgid "Folder"
+msgstr "Plygell"
 
 #: cups/kmconfigcupsdir.cpp:35
-msgid "CUPS Directory Settings"
-msgstr "Gosodiadau Cyfeiriadur CUPS"
+msgid "CUPS Folder Settings"
+msgstr "Gosodiadau Plygell CUPS"
 
 #: cups/kmconfigcupsdir.cpp:38
-msgid "Installation Directory"
-msgstr "Cyfeiriadur Gosod"
+msgid "Installation Folder"
+msgstr "Plygell Gosod"
 
 #: cups/kmconfigcupsdir.cpp:41
 msgid "Standard installation (/)"
 msgstr "Gosod arferol (/)"
 
-#: cups/kptagspage.cpp:32
+#: cups/kptagspage.cpp:35
+msgid ""
+" <qt>"
+"<p>You may send additional messages to the operator(s) of your production "
+"printers (e.g. in your <em>Central Repro Department</p>) Your messages can "
+"be read by the operator(s) (or yourself) by viewing the <em>\"Job IPP "
+"Report\"</em> for the respective job.</p> <b>Examples:</b>"
+"<br>"
+"<pre> <em>Call_after_completion</em> (Name) -- <em>"
+"Joe User, phone extension 1234</em> (Value)"
+"<br> <em>Mail_after_completion</em> (Name) -- <em>Jill User "
+"&lt;juser@somecompany.com&gt;</em> (Value)"
+"<br> <em>Deliver_after_completion</em> (Name) -- <em>to Marketing "
+"Department</em> (Value) </pre> "
+"<p><b>Note:</b> the \"Name\" field must not include spaces or tabs. </qt>"
+msgstr ""
+
+#: cups/kptagspage.cpp:46
 msgid "Additional Tags"
 msgstr "Tagiau Ychwanegol"
 
-#: cups/kptagspage.cpp:37 kfilelist.cpp:43 kpfilterpage.cpp:308
+#: cups/kptagspage.cpp:51 kfilelist.cpp:93 kpfilterpage.cpp:308
 #: management/kmjobviewer.cpp:237 management/kmwend.cpp:53
-#: management/kxmlcommanddlg.cpp:139 management/kxmlcommanddlg.cpp:542
+#: management/kxmlcommanddlg.cpp:141 management/kxmlcommanddlg.cpp:544
 msgid "Name"
 msgstr "Enw"
 
-#: cups/kptagspage.cpp:38
+#: cups/kptagspage.cpp:52
 msgid "Value"
 msgstr "Gwerth"
 
-#: cups/kptagspage.cpp:46
+#: cups/kptagspage.cpp:61
 msgid "Read-Only"
 msgstr "Darllenadwy yn Unig"
 
-#: cups/kptagspage.cpp:69
+#: cups/kptagspage.cpp:84
 msgid "The tag name must not contain any spaces: <b>%1</b>."
 msgstr "Ni chaiff enw'r tag gynnwys bylchnodau: <b>%1</b>."
 
-#: cups/kmcupsuimanager.cpp:90
+#: cups/kmcupsuimanager.cpp:85 cups/kmcupsuimanager.cpp:88
+#: cups/kmcupsuimanager.cpp:91 cups/kmcupsuimanager.cpp:94
+#: cups/kmcupsuimanager.cpp:97 cups/kmcupsuimanager.cpp:100
+#: cups/kmcupsuimanager.cpp:103 cups/kmcupsuimanager.cpp:106
+#: cups/kmcupsuimanager.cpp:109 cups/kmcupsuimanager.cpp:112
+msgid "<qt><p> </p>. </qt>"
+msgstr ""
+
+#: cups/kmcupsuimanager.cpp:123
 msgid "Ne&twork printer (TCP)"
 msgstr "Argraffydd rhwydwai&th (TCP)"
 
-#: cups/kmcupsuimanager.cpp:91
+#: cups/kmcupsuimanager.cpp:125
 msgid "Re&mote CUPS server (IPP/HTTP)"
 msgstr "Gweinydd pell &CUPS (IPP/HTTP)"
 
-#: cups/kmcupsuimanager.cpp:92
+#: cups/kmcupsuimanager.cpp:127
 msgid "Network printer w/&IPP (IPP/HTTP)"
 msgstr "Argraffydd rhwydwaith efo &IPP (IPP/HTTP)"
 
-#: cups/kmcupsuimanager.cpp:93
+#: cups/kmcupsuimanager.cpp:129
 msgid "S&erial Fax/Modem printer"
 msgstr "Argraffydd &Cyfresol Ffacs/Modem"
 
-#: cups/kmcupsuimanager.cpp:94
+#: cups/kmcupsuimanager.cpp:131
 msgid "Other &printer type"
 msgstr "&Math arall o argraffydd"
 
-#: cups/kmcupsuimanager.cpp:96
+#: cups/kmcupsuimanager.cpp:135
 msgid "Cl&ass of printers"
 msgstr "D&osbarth o argraffyddion"
 
-#: cups/kmcupsuimanager.cpp:174
+#: cups/kmcupsuimanager.cpp:214
 msgid "Priority"
 msgstr "Blaenoriaeth"
 
-#: cups/kmcupsuimanager.cpp:176
+#: cups/kmcupsuimanager.cpp:216
 msgid "Billing Information"
 msgstr "Gwybodaeth Anfoneb"
 
@@ -1327,7 +1630,7 @@ msgid "&Host:"
 msgstr "&Gwesteiwr:"
 
 #: cups/kmcupsconfigwidget.cpp:70 management/kmwsocketutil.cpp:53
-#: management/networkscanner.cpp:336 rlpr/kmproxywidget.cpp:35
+#: management/networkscanner.cpp:338 rlpr/kmproxywidget.cpp:35
 msgid "&Port:"
 msgstr "&Porth:"
 
@@ -1413,61 +1716,61 @@ msgstr "Defnyddwyr a chaniateir"
 msgid "All users allowed"
 msgstr "Caniateir pob defnyddiwr"
 
-#: cups/kpimagepage.cpp:41
+#: cups/kpimagepage.cpp:42
 msgid "Image"
 msgstr "Delwedd"
 
-#: cups/kpimagepage.cpp:43
+#: cups/kpimagepage.cpp:44
 msgid "Color Settings"
 msgstr "Gosodiadau Lliw"
 
-#: cups/kpimagepage.cpp:44
+#: cups/kpimagepage.cpp:45
 msgid "Image Size"
 msgstr "Maint Delwedd"
 
-#: cups/kpimagepage.cpp:45
+#: cups/kpimagepage.cpp:46
 msgid "Image Position"
 msgstr "Safle'r Ddelwedd"
 
-#: cups/kpimagepage.cpp:48
+#: cups/kpimagepage.cpp:49
 msgid "&Brightness:"
 msgstr "&Glowyder:"
 
-#: cups/kpimagepage.cpp:51
+#: cups/kpimagepage.cpp:52
 msgid "&Hue (Color rotation):"
 msgstr "&Arlliw (Cylchdro lliw):"
 
-#: cups/kpimagepage.cpp:54
+#: cups/kpimagepage.cpp:55
 msgid "&Saturation:"
 msgstr "&Dirlawnder:"
 
-#: cups/kpimagepage.cpp:57
+#: cups/kpimagepage.cpp:58
 msgid "&Gamma (Color correction):"
 msgstr "&Gama (Cywiro lliw):"
 
-#: cups/kpimagepage.cpp:73
+#: cups/kpimagepage.cpp:74
 msgid "&Default Settings"
 msgstr "Gosodiadau &Rhagosodedig"
 
-#: cups/kpimagepage.cpp:78
+#: cups/kpimagepage.cpp:79
 msgid "Natural Image Size"
 msgstr "Llun ar goll"
 
-#: cups/kpimagepage.cpp:79
+#: cups/kpimagepage.cpp:80
 msgid "Resolution (ppi)"
 msgstr "Cydraniad (ppi)"
 
-#: cups/kpimagepage.cpp:81
+#: cups/kpimagepage.cpp:82
 #, no-c-format
 msgid "% of Page"
 msgstr "% o'r Dudalen"
 
-#: cups/kpimagepage.cpp:83
+#: cups/kpimagepage.cpp:84
 #, no-c-format
 msgid "% of Natural Image Size"
 msgstr "% o Faint Naturiol y Ddelwedd"
 
-#: cups/kpimagepage.cpp:90
+#: cups/kpimagepage.cpp:91
 msgid "&Image size type:"
 msgstr "&Math maint y ddelwedd"
 
@@ -1581,8 +1884,8 @@ msgid "Held"
 msgstr "Ar afael"
 
 #: kmjob.cpp:125
-msgid "Cancelled"
-msgstr "Canslwyd"
+msgid "Canceled"
+msgstr "Gwrthwnaed"
 
 #: kmjob.cpp:128
 msgid "Aborted"
@@ -2123,25 +2426,25 @@ msgstr "Enw'r argraffydd:"
 msgid "General Settings"
 msgstr "Gosodiadau Cyffredinol"
 
-#: management/kmwdrivertest.cpp:57 management/networkscanner.cpp:100
+#: management/kmwdrivertest.cpp:57 management/networkscanner.cpp:102
 msgid "&Settings..."
 msgstr " &Gosodiadau..."
 
-#: management/networkscanner.cpp:101 management/networkscanner.cpp:181
+#: management/networkscanner.cpp:103 management/networkscanner.cpp:183
 msgid "Sc&an"
 msgstr "Sy&llu"
 
-#: management/networkscanner.cpp:108
+#: management/networkscanner.cpp:110
 msgid "Network scan:"
 msgstr "Syllu ar y rhwydwaith:"
 
-#: management/networkscanner.cpp:109 management/networkscanner.cpp:296
-#: management/networkscanner.cpp:307
+#: management/networkscanner.cpp:111 management/networkscanner.cpp:298
+#: management/networkscanner.cpp:309
 #, c-format
 msgid "Subnet: %1"
 msgstr "Is-rwydwaith: %1"
 
-#: management/networkscanner.cpp:158
+#: management/networkscanner.cpp:160
 msgid ""
 "You are about to scan a subnet (%1.*) that does not correspond to the "
 "current subnet of this computer (%2.*). Do you want to scan the specified "
@@ -2151,32 +2454,32 @@ msgstr ""
 "cyfredol y cyfeiriadur yma (%2.*).  Ydych eisiau syllu ar yr is-rwydwaith "
 "penodol beth bynnag?"
 
-#: management/networkscanner.cpp:161
+#: management/networkscanner.cpp:163
 msgid "&Scan"
 msgstr "&Syllu"
 
-#: management/kmwsocketutil.cpp:52 management/networkscanner.cpp:335
+#: management/kmwsocketutil.cpp:52 management/networkscanner.cpp:337
 msgid "&Subnetwork:"
 msgstr "&Is-rwydwaith:"
 
-#: management/kmwsocketutil.cpp:54 management/networkscanner.cpp:337
+#: management/kmwsocketutil.cpp:54 management/networkscanner.cpp:339
 msgid "&Timeout (ms):"
 msgstr "&Goramser (ms):"
 
-#: management/kmwsocketutil.cpp:89 management/networkscanner.cpp:372
+#: management/kmwsocketutil.cpp:89 management/networkscanner.cpp:374
 msgid "Scan Configuration"
 msgstr "Syllu ar y Ffurfweddiad"
 
 #: management/kmwsocketutil.cpp:101 management/kmwsocketutil.cpp:107
-#: management/networkscanner.cpp:384 management/networkscanner.cpp:390
+#: management/networkscanner.cpp:386 management/networkscanner.cpp:392
 msgid "Wrong subnetwork specification."
 msgstr "Penodiad is-rwydwaith anghywir."
 
-#: management/kmwsocketutil.cpp:115 management/networkscanner.cpp:398
+#: management/kmwsocketutil.cpp:115 management/networkscanner.cpp:400
 msgid "Wrong timeout specification."
 msgstr "Penodiad goramser anghywir."
 
-#: management/kmwsocketutil.cpp:118 management/networkscanner.cpp:401
+#: management/kmwsocketutil.cpp:118 management/networkscanner.cpp:403
 msgid "Wrong port specification."
 msgstr "Penodiad porth anghywir."
 
@@ -2604,7 +2907,7 @@ msgstr "Esboniad"
 msgid "Confirmation"
 msgstr "Gwybodaeth"
 
-#: kfilelist.cpp:44 management/kmwend.cpp:52 management/kmwend.cpp:108
+#: kfilelist.cpp:94 management/kmwend.cpp:52 management/kmwend.cpp:108
 #: management/kmwend.cpp:111
 msgid "Type"
 msgstr "Math"
@@ -2614,7 +2917,7 @@ msgid "Location"
 msgstr "Lleoliad"
 
 #: management/kmwend.cpp:55 management/kmwend.cpp:114
-#: management/kxmlcommanddlg.cpp:140 management/kxmlcommanddlg.cpp:542
+#: management/kxmlcommanddlg.cpp:142 management/kxmlcommanddlg.cpp:544
 msgid "Description"
 msgstr "Disgrifiad"
 
@@ -2751,100 +3054,100 @@ msgstr "Mae enw'r gweinydd yn wag."
 msgid "Class Members"
 msgstr "Aelodau'r Dosbarthiad"
 
-#: management/kxmlcommanddlg.cpp:106
+#: management/kxmlcommanddlg.cpp:108
 msgid "Integer"
 msgstr "Cyfanrif"
 
-#: management/kxmlcommanddlg.cpp:107
+#: management/kxmlcommanddlg.cpp:109
 msgid "Float"
 msgstr "Rhif arnawf"
 
-#: management/kxmlcommanddlg.cpp:108
+#: management/kxmlcommanddlg.cpp:110
 msgid "List"
 msgstr "Rhestr"
 
-#: management/kmspecialprinterdlg.cpp:57 management/kxmlcommanddlg.cpp:113
-#: management/kxmlcommanddlg.cpp:863
+#: management/kmspecialprinterdlg.cpp:57 management/kxmlcommanddlg.cpp:115
+#: management/kxmlcommanddlg.cpp:865
 msgid "&Description:"
 msgstr "&Disgrifiad:"
 
-#: management/kmspecialprinterdlg.cpp:83 management/kxmlcommanddlg.cpp:114
+#: management/kmspecialprinterdlg.cpp:83 management/kxmlcommanddlg.cpp:116
 msgid "&Format:"
 msgstr "&Fformat:"
 
-#: management/kxmlcommanddlg.cpp:116
+#: management/kxmlcommanddlg.cpp:118
 msgid "Default &value:"
 msgstr "&Gwerth rhagosodedig:"
 
-#: management/kxmlcommanddlg.cpp:117
+#: management/kxmlcommanddlg.cpp:119
 msgid "Co&mmand:"
 msgstr "G&orchymyn:"
 
-#: management/kxmlcommanddlg.cpp:124
+#: management/kxmlcommanddlg.cpp:126
 msgid "&Persistent option"
 msgstr "Dewisiad &Parhaol "
 
-#: management/kxmlcommanddlg.cpp:126
+#: management/kxmlcommanddlg.cpp:128
 msgid "Va&lues"
 msgstr "Gwer&thoedd"
 
-#: management/kxmlcommanddlg.cpp:134
+#: management/kxmlcommanddlg.cpp:136
 msgid "Minimum v&alue:"
 msgstr "Gwerth i&safrif:"
 
-#: management/kxmlcommanddlg.cpp:135
+#: management/kxmlcommanddlg.cpp:137
 msgid "Ma&ximum value:"
 msgstr "Gwerth u&chafrif:"
 
-#: management/kxmlcommanddlg.cpp:148
+#: management/kxmlcommanddlg.cpp:150
 msgid "Add value"
 msgstr "Ychwanegu gwerth"
 
-#: management/kxmlcommanddlg.cpp:149
+#: management/kxmlcommanddlg.cpp:151
 msgid "Delete value"
 msgstr "Dileu gwerth"
 
-#: management/kxmlcommanddlg.cpp:151
+#: management/kxmlcommanddlg.cpp:153
 msgid "Apply changes"
 msgstr "Cymhwyso'r newidiadau"
 
-#: management/kxmlcommanddlg.cpp:152
+#: management/kxmlcommanddlg.cpp:154
 msgid "Add group"
 msgstr "Ychwanegu grwp"
 
-#: management/kxmlcommanddlg.cpp:153
+#: management/kxmlcommanddlg.cpp:155
 msgid "Add option"
 msgstr "Ychwanegu dewisiad"
 
-#: management/kxmlcommanddlg.cpp:154
+#: management/kxmlcommanddlg.cpp:156
 msgid "Delete item"
 msgstr " Dileu eitem"
 
-#: kfilelist.cpp:73 management/kxmlcommanddlg.cpp:155
+#: kfilelist.cpp:127 management/kxmlcommanddlg.cpp:157
 msgid "Move up"
 msgstr "Symud i fyny"
 
-#: kfilelist.cpp:79 management/kxmlcommanddlg.cpp:156
+#: kfilelist.cpp:134 management/kxmlcommanddlg.cpp:158
 msgid "Move down"
 msgstr "Symud i lawr"
 
-#: management/kxmlcommanddlg.cpp:160
+#: management/kxmlcommanddlg.cpp:162
 msgid "&Input From"
 msgstr "&Mewnosod Oddiwrth"
 
-#: management/kxmlcommanddlg.cpp:161
+#: management/kxmlcommanddlg.cpp:163
 msgid "O&utput To"
 msgstr "&Allosod I"
 
-#: management/kxmlcommanddlg.cpp:162 management/kxmlcommanddlg.cpp:164
+#: management/kxmlcommanddlg.cpp:164 management/kxmlcommanddlg.cpp:166
 msgid "File:"
 msgstr "Ffeil:"
 
-#: management/kxmlcommanddlg.cpp:163 management/kxmlcommanddlg.cpp:165
+#: management/kxmlcommanddlg.cpp:165 management/kxmlcommanddlg.cpp:167
 msgid "Pipe:"
 msgstr "Peipen:"
 
-#: management/kxmlcommanddlg.cpp:282
+#: management/kxmlcommanddlg.cpp:284
 msgid ""
 "An identification string. Use only alphanumeric characters except spaces. "
 "The string <b>__root__</b> is reserved for internal use."
@@ -2852,7 +3155,7 @@ msgstr ""
 "Llinyn dynodiad.  Defnyddiwch dim ond nodau'r wyddor a rhifau, ond dim "
 "gofodnodau. Mae'r llinyn <b>__root__</b> wedi'i neilltuo am ddefnydd mewnol."
 
-#: management/kxmlcommanddlg.cpp:286
+#: management/kxmlcommanddlg.cpp:288
 msgid ""
 "A description string. This string is shown in the interface, and should be "
 "explicit enough about the role of the corresponding option."
@@ -2860,13 +3163,13 @@ msgstr ""
 "Llinyn disgrifiad.  Mae'r llinyn yma yn cael ei ddangos yn y rhwngwyneb, a "
 "dylai fod yn ddigon fanwl am rol y ddewisiad cyfatebol."
 
-#: management/kxmlcommanddlg.cpp:290
+#: management/kxmlcommanddlg.cpp:292
 msgid ""
 "The type of the option. This determines how the option is presented "
 "graphically to the user."
 msgstr " "
 
-#: management/kxmlcommanddlg.cpp:294
+#: management/kxmlcommanddlg.cpp:296
 #, fuzzy
 msgid ""
 "The format of the option. This determines how the option is formatted for "
@@ -2875,7 +3178,7 @@ msgid ""
 "string representation of the option value."
 msgstr " "
 
-#: management/kxmlcommanddlg.cpp:300
+#: management/kxmlcommanddlg.cpp:302
 msgid ""
 "The default value of the option. For non persistent options, nothing is "
 "added to the command line if the option has that default value. If this "
@@ -2883,7 +3186,7 @@ msgid ""
 "utility, make the option persistent to avoid unwanted effects."
 msgstr " "
 
-#: management/kxmlcommanddlg.cpp:306
+#: management/kxmlcommanddlg.cpp:308
 msgid ""
 "Make the option persistent. A persistent option is always written to the "
 "command line, whatever its value. This is useful when the chosen default "
@@ -2894,7 +3197,7 @@ msgstr ""
 "ddefnydd pan nad yw'r rhagosodiad sydd wedi'i ddewis yn cyfweddu'r gwerth "
 "rhagosodedig gwirioneddol o'r cyfleuster gwaelodol."
 
-#: management/kxmlcommanddlg.cpp:310
+#: management/kxmlcommanddlg.cpp:312
 #, c-format
 msgid ""
 "The full command line to execute the associated underlying utility. This "
@@ -2917,7 +3220,7 @@ msgstr ""
 "<li><b>%psu</b>: maint y dudalen mewn llythrennau mawr </li>"
 "<li><b>%psl</b>: maint y dudalen mewn llythrennau bach</li></ul> "
 
-#: management/kxmlcommanddlg.cpp:320
+#: management/kxmlcommanddlg.cpp:322
 #, c-format
 msgid ""
 "Input specification when the underlying utility reads input data from a "
@@ -2927,7 +3230,7 @@ msgstr ""
 "oddiwrth ffeil.  Defnyddiwch y tag <b>%in</b> i gynrychioli'r enw ffeil "
 "mewnbwn.  "
 
-#: management/kxmlcommanddlg.cpp:324
+#: management/kxmlcommanddlg.cpp:326
 #, c-format
 msgid ""
 "Output specification when the underlying utility writes output data to a "
@@ -2937,7 +3240,7 @@ msgstr ""
 "oddiwrth ffeil.  Defnyddiwch y tag <b>%out</b> i gynrychioli'r enw ffeil "
 "mewnbwn.  "
 
-#: management/kxmlcommanddlg.cpp:328
+#: management/kxmlcommanddlg.cpp:330
 msgid ""
 "Input specification when the underlying utility reads input data from its "
 "standard input."
@@ -2945,7 +3248,7 @@ msgstr ""
 "Penodiad mewnbwn pan mae'r cyfleuster gwaelodol yn darllen data mewnbwn "
 "oddiwrth ei fewnbwn arferol."
 
-#: management/kxmlcommanddlg.cpp:332
+#: management/kxmlcommanddlg.cpp:334
 msgid ""
 "Output specification when the underlying utility writes output data to its "
 "standard output."
@@ -2953,7 +3256,7 @@ msgstr ""
 "Penodiad allbwn pan mae'r cyfleuster gwaelodol yn darllen data allbwn "
 "oddiwrth ei allbwn arferol."
 
-#: management/kxmlcommanddlg.cpp:336
+#: management/kxmlcommanddlg.cpp:338
 msgid ""
 "A comment about the underlying utility, which can be viewed by the user from "
 "the interface. This comment string supports basic HTML tags like &lt;a&gt;, "
@@ -2963,48 +3266,48 @@ msgstr ""
 "rhyngwyneb.  Mae'r llinyn sylwad yma yn cynnal tagiau sylfaenol HTML fel "
 "&lt;a&gt;, &lt;b&gt; or &lt;i&gt;."
 
-#: management/kxmlcommanddlg.cpp:565
+#: management/kxmlcommanddlg.cpp:567
 msgid "Invalid identification name. Empty strings and \"__root__\" are not allowed."
 msgstr "Enw dynodiad annilys.  Ni chaniateir llinynnau gwag a \"__root__\""
 
-#: management/kxmlcommanddlg.cpp:646 management/kxmlcommanddlg.cpp:649
+#: management/kxmlcommanddlg.cpp:648 management/kxmlcommanddlg.cpp:651
 msgid "New Group"
 msgstr "Grwp Newydd"
 
-#: management/kxmlcommanddlg.cpp:665 management/kxmlcommanddlg.cpp:668
+#: management/kxmlcommanddlg.cpp:667 management/kxmlcommanddlg.cpp:670
 msgid "New Option"
 msgstr "Dewisiad Newydd"
 
-#: management/kxmlcommanddlg.cpp:792 management/kxmlcommanddlg.cpp:936
+#: management/kxmlcommanddlg.cpp:794 management/kxmlcommanddlg.cpp:938
 #, c-format
 msgid "Command Edit for %1"
 msgstr "Golygu Gorchymyn i %1"
 
-#: management/kxmlcommanddlg.cpp:830
+#: management/kxmlcommanddlg.cpp:832
 msgid "&Mime Type Settings"
 msgstr "Gosodiadau Math &Mime "
 
-#: management/kxmlcommanddlg.cpp:836
+#: management/kxmlcommanddlg.cpp:838
 msgid "Supported &Input Formats"
 msgstr "Fformatau M&ewnbwn a Gynhelir"
 
-#: kpfilterpage.cpp:309 management/kxmlcommanddlg.cpp:837
+#: kpfilterpage.cpp:309 management/kxmlcommanddlg.cpp:839
 msgid "Requirements"
 msgstr "Gofynion"
 
-#: management/kxmlcommanddlg.cpp:848
+#: management/kxmlcommanddlg.cpp:850
 msgid "&Edit Command..."
 msgstr "&Golygu Gorchymyn..."
 
-#: management/kxmlcommanddlg.cpp:865
+#: management/kxmlcommanddlg.cpp:867
 msgid "Output &format:"
 msgstr "&Fformat allbwn:"
 
-#: management/kxmlcommanddlg.cpp:867
+#: management/kxmlcommanddlg.cpp:869
 msgid "ID name:"
 msgstr "Enw ID:"
 
-#: management/kxmlcommanddlg.cpp:1030
+#: management/kxmlcommanddlg.cpp:1032
 msgid "exec:/"
 msgstr "exec:/"
 
@@ -3029,19 +3332,19 @@ msgstr "Mae gwybodaeth ar goll!"
 msgid "Can't find queue %1 on server %2! Do you want to continue anyway?"
 msgstr "Methu canfod ciw %1 ar weinydd %2!  ydych eisiau mynd ymlaen beth bynnag?"
 
-#: management/kmconfigfilter.cpp:39
+#: management/kmconfigfilter.cpp:40
 msgid "Filter"
 msgstr "Hidl"
 
-#: management/kmconfigfilter.cpp:40
+#: management/kmconfigfilter.cpp:41
 msgid "Printer Filtering Settings"
 msgstr "Gosodiadau Hidl Argraffydd"
 
-#: management/kmconfigfilter.cpp:43
+#: management/kmconfigfilter.cpp:44
 msgid "Printer Filter"
 msgstr "Hidl Argraffydd"
 
-#: management/kmconfigfilter.cpp:55
+#: management/kmconfigfilter.cpp:56
 msgid ""
 "The printer filtering allows you to view only a specific set of printers "
 "instead of all of them. This may be useful when there are a lot of printers "
@@ -3056,7 +3359,7 @@ msgstr ""
 "i'r chwith, neu mewnosodwch hidl <b>Lleoliad</b> (ee: Group_1*).  Mae'r dau "
 "yn gronnus, ac eu anwybyddu os yn wag."
 
-#: management/kmconfigfilter.cpp:61
+#: management/kmconfigfilter.cpp:62
 msgid "Location filter:"
 msgstr "Hidl lleoliad:"
 
@@ -3147,9 +3450,8 @@ msgid "Unable to find the PostScript driver."
 msgstr "Methu canfod y gyrrydd PostScript."
 
 #: management/kmdriverdbwidget.cpp:232
-#, fuzzy
 msgid "Select Driver"
-msgstr "Dewiswch blwyddyn"
+msgstr "Dewiswch Gyrrydd"
 
 #: management/kmdriverdbwidget.cpp:249 management/kmdriverdbwidget.cpp:251
 msgid "<Unknown>"
@@ -3179,23 +3481,23 @@ msgstr "Gorchymyn newydd"
 msgid "Edit command"
 msgstr "Golygu gorchymyn"
 
-#: management/kxmlcommandselector.cpp:84
+#: management/kxmlcommandselector.cpp:85
 msgid "&Browse..."
 msgstr "&Pori..."
 
-#: management/kxmlcommandselector.cpp:85
+#: management/kxmlcommandselector.cpp:86
 msgid "Use co&mmand:"
 msgstr "Defnyddio G&orchymyn"
 
-#: management/kxmlcommandselector.cpp:186
+#: management/kxmlcommandselector.cpp:187
 msgid "Command Name"
 msgstr "Enw Gorchymyn"
 
-#: management/kxmlcommandselector.cpp:186
+#: management/kxmlcommandselector.cpp:187
 msgid "Enter an identification name for the new command:"
 msgstr "Mewnosodwch enw dynodiad i'r gorchymyn newydd:"
 
-#: management/kxmlcommandselector.cpp:195
+#: management/kxmlcommandselector.cpp:196
 msgid ""
 "A command named %1 already exists. Do you want to continue and edit the "
 "existing one?"
@@ -3203,23 +3505,23 @@ msgstr ""
 "Mae gorchymyn o'r enw %1 mewn bod yn barod.  Ydych eisiau mynd ymlaen a "
 "golygu yr un sy'n bodoli?"
 
-#: management/kxmlcommandselector.cpp:232
+#: management/kxmlcommandselector.cpp:233
 msgid "Internal Error. The XML driver for the command %1 could not be found."
 msgstr "Gwall mewnol.  Methu canfod y gyrrydd XML am y gorchymyn %1."
 
-#: management/kxmlcommandselector.cpp:250
+#: management/kxmlcommandselector.cpp:251
 msgid "output"
 msgstr "allbwn"
 
-#: management/kxmlcommandselector.cpp:254
+#: management/kxmlcommandselector.cpp:255
 msgid "undefined"
 msgstr "aniffiniedig"
 
-#: management/kxmlcommandselector.cpp:259
+#: management/kxmlcommandselector.cpp:260
 msgid "not allowed"
 msgstr "ni chaniateir"
 
-#: management/kxmlcommandselector.cpp:265
+#: management/kxmlcommandselector.cpp:266
 msgid "(Unavailable: requirements not satisfied)"
 msgstr "(Dim ar gael: nid yw'r anghenion wedi'u cyflawni)"
 
@@ -3426,19 +3728,16 @@ msgid "Command &Settings"
 msgstr "Gosodiadau &Gorchymyn"
 
 #: management/kmspecialprinterdlg.cpp:69
-#, fuzzy
 msgid "Outp&ut File"
-msgstr "Ffeil &allbwn:"
+msgstr "Ffeil &Allbwn"
 
 #: management/kmspecialprinterdlg.cpp:71
-#, fuzzy
 msgid "&Enable output file"
-msgstr "Ffeil &allbwn:"
+msgstr "Alluogi ffeil all&bwn"
 
 #: management/kmspecialprinterdlg.cpp:88
-#, fuzzy
 msgid "Filename e&xtension:"
-msgstr "estyniad addas"
+msgstr "Estyniad i'r en&w ffeil:"
 
 #: management/kmspecialprinterdlg.cpp:105
 msgid ""
@@ -3484,20 +3783,14 @@ msgstr ""
 "</li></ul>"
 
 #: management/kmspecialprinterdlg.cpp:118
-#, fuzzy
 msgid ""
 "<p>The default mimetype for the output file (e.g. "
 "application/postscript).</p>"
-msgstr ""
-"<p>Yr estyniad rhagosodedig am y ffeil allbwn (<u>ex</u>: ps, pdf, "
-"ps.gz).</p>"
+msgstr "<p>Y math mime rhagosodedig am y ffeil allbwn (e.e. application/postscript).</p>"
 
 #: management/kmspecialprinterdlg.cpp:121
-#, fuzzy
 msgid "<p>The default extension for the output file (e.g. ps, pdf, ps.gz).</p>"
-msgstr ""
-"<p>Yr estyniad rhagosodedig am y ffeil allbwn (<u>ex</u>: ps, pdf, "
-"ps.gz).</p>"
+msgstr "<p>Yr estyniad rhagosodedig am y ffeil allbwn (e.e. ps, pdf, ps.gz).</p>"
 
 #: management/kmspecialprinterdlg.cpp:170
 msgid "You must provide a non-empty name."
@@ -3513,23 +3806,82 @@ msgstr "Gosodiadau annilys. %1"
 msgid "Configuring %1"
 msgstr "Wrthi'n ffurfweddu %1"
 
-#: kfilelist.cpp:45
+#: kfilelist.cpp:41
+msgid ""
+" <qt> This button calls the \"File Open\" dialog to let you select a file "
+"for printing. Note, that  "
+"<ul>"
+"<li>"
+"you can select ASCII or International Text, PDF, PostScript, JPEG, TIFF, "
+"PNG, GIF and many other graphic formats. "
+"<li>you can select various files from different paths and send them as one "
+"\"multi-file job\" to the printing system. </ul> </qt>"
+msgstr ""
+
+#: kfilelist.cpp:52
+msgid ""
+" <qt> This button removes the highlighted file from the list of "
+"to-be-printed files. </qt>"
+msgstr ""
+
+#: kfilelist.cpp:56
+msgid ""
+" <qt> "
+"<p>This button moves the highlighted file up in the list of files to be "
+"printed.</p> "
+"<p>In effect, this changes the order of the files' printout.</p> </qt>"
+msgstr ""
+
+#: kfilelist.cpp:62
+msgid ""
+" <qt> "
+"<p>This button moves the highlighted file down in the list of files to be "
+"printed.</p> "
+"<p>In effect, this changes the order of the files' printout.</p> </qt>"
+msgstr ""
+
+#: kfilelist.cpp:68
+msgid ""
+" <qt> "
+"<p>This button tries to open the highlighted file, so you can view or edit "
+"it before you send it to the printing system.</p> "
+"<p>If you open files, KDEPrint will use the application matching the MIME "
+"type of the file.</p> </qt>"
+msgstr ""
+
+#: kfilelist.cpp:76
+msgid ""
+" <qt>"
+"<p>This list displays all the files you selected for printing. You can see "
+"the file name(s), file path(s) and the file (MIME) type(s) as determined by "
+"KDEPrint. The initial order of the list is the order of your initial "
+"selection.</p> "
+"<p>The list will be printed in the same order as displayed finally.</p> "
+"<p><b>Note:</b> You can select multiple files. The files may be in multiple "
+"locations. The files may be of multiple MIME types. The buttons on the right "
+"side let you add more files, remove already selected files from the list,  "
+"re-order the list (by moving files up or down), and open files. If you open "
+"files, KDEPrint will use the application matching the MIME type of the "
+"file.</p> </qt>"
+msgstr ""
+
+#: kfilelist.cpp:95
 msgid "Path"
 msgstr "Llwybr"
 
-#: kfilelist.cpp:56
+#: kfilelist.cpp:107
 msgid "Add file"
 msgstr "Ychwanegu  ffeil"
 
-#: kfilelist.cpp:61
+#: kfilelist.cpp:113
 msgid "Remove file"
 msgstr "Gwaredu ffeil"
 
-#: kfilelist.cpp:67
+#: kfilelist.cpp:120
 msgid "Open file"
 msgstr "Agor ffeil"
 
-#: kfilelist.cpp:85
+#: kfilelist.cpp:141
 msgid ""
 "Drag file(s) here or use the button to open a file dialog. Leave empty for "
 "<b>&lt;STDIN&gt;</b>."
@@ -3542,23 +3894,39 @@ msgid "Adjustments"
 msgstr "Addasiadau"
 
 #: plugincombobox.cpp:33
+msgid ""
+" <qt> This combo box shows (and lets you select)  a print subsystem to be "
+"used by KDEPrint. (This print subsystem must, of course, be installed inside "
+"your Operating System.) KDEPrint usually auto-detects it. Most Linux "
+"distributions have \"CUPS\", the <em>Common Unix Printing System</em>. </qt>"
+msgstr ""
+
+#: plugincombobox.cpp:43
 msgid "Print s&ystem currently used:"
 msgstr "&Cysawd argraffu mewn defnydd ar hyn o bryd:"
 
-#: kprinter.cpp:281
+#: plugincombobox.cpp:89
+msgid ""
+" <qt> This line shows to which CUPS server your PC currently is connected "
+"for printing and retrieving printer info. To switch to a different CUPS "
+"server, click \"System Options\", then select \"Cups server\" and fill in "
+"the required info. </qt>"
+msgstr ""
+
+#: kprinter.cpp:282
 msgid "Initialization..."
 msgstr "Ymgychwyn..."
 
-#: kprinter.cpp:284 kprinter.cpp:911
+#: kprinter.cpp:285 kprinter.cpp:904
 #, c-format
 msgid "Generating print data: page %1"
 msgstr "Cynhyrchu data argraffu: tudalen %1"
 
-#: kprinter.cpp:419
+#: kprinter.cpp:418
 msgid "Previewing..."
 msgstr "Rhagolygu..."
 
-#: kdeprintd.cpp:158 kprinter.cpp:693
+#: kdeprintd.cpp:158 kprinter.cpp:686
 #, c-format
 msgid ""
 "<p><nobr>A print error occurred. Error message received from "
@@ -3906,7 +4274,7 @@ msgstr "Gwerth llinyn:"
 msgid "No Option Selected"
 msgstr "Dim Dewis wedi ei Wneud"
 
-#: kmuimanager.cpp:162
+#: kmuimanager.cpp:160
 #, c-format
 msgid "Configuration of %1"
 msgstr "Ffurfweddiad %1"
@@ -3964,66 +4332,149 @@ msgstr "Methodd y dilysiant (enw'r defnyddiwr=%1)"
 msgid "&PageMarks"
 msgstr "&NodauDalen"
 
+#: kpcopiespage.cpp:48
+msgid ""
+" <qt>Here you can determine to print a certain selection only out of all "
+"pages from the complete document.</qt>"
+msgstr ""
+
 #: kpcopiespage.cpp:50
+msgid ""
+" <qt>Select \"All\" to print the complete document. Since this is the "
+"default, it is pre-selected.</qt>"
+msgstr ""
+
+#: kpcopiespage.cpp:52
+msgid ""
+" <qt>"
+"<p>Select <em>\"Current\"</em> if you want to print the page currently "
+"visible in your KDE application.</p> "
+"<p><b>Note:</b> this field is disabled if you print from non-KDE "
+"applications like Mozilla or OpenOffice.org, since here KDEPrint has no "
+"means to determine which document page you are currently viewing.</p></qt>"
+msgstr ""
+
+#: kpcopiespage.cpp:57
+msgid ""
+" <qt>"
+"<p>"
+"Choose a \"Page Range\" to select a subset of the complete document pages to "
+"be printed. The format is <em>\"n,m,o-p,q,r,s-t, u\"</em>.</p> "
+"<p><b>Example:</b> <em>\"4,6,10-13,17,20,23-25\"</em> will print the pages "
+"4, 6, 10, 11, 12, 13, 17, 20, 23, 24, 25 of your document.</p></qt>"
+msgstr ""
+
+#: kpcopiespage.cpp:61
+msgid ""
+" <qt>Choose <em>\"All Pages\"</em>, <em>\"Even Pages\"</em> or <em>\"Odd "
+"Pages\"</em> if you want to print a page selection matching one of these "
+"terms. The default is <em>\"All Pages\"</em>.</p> "
+"<p><b>Note:</b> If you combine a selection of a <em>\"Page Range\"</em>"
+" with a <em>\"Page Set\"</em> of <em>\"Odd\"</em> or <em>\"Even\"</em>, you "
+"will only get the odd or even pages from the originally selected page range. "
+"This is useful if you want to print a page range in duplex on a simplex-only "
+"printer. In this case you can feed the paper to the printer twice; in the "
+"first pass, select \"Odd\" or \"Even\" (depending on your printer model), in "
+"second pass select the other option. You may need to <em>\"Reverse\"</em> "
+"the output in one of the passes (depending on your printer model).</p>  </qt>"
+msgstr ""
+
+#: kpcopiespage.cpp:73
+msgid ""
+" <qt>Here you can determine the number of copies, the output order and the "
+"collate mode of your printjob.</qt>"
+msgstr ""
+
+#: kpcopiespage.cpp:75
+msgid ""
+" <qt>Determine the number of requested copies here. You can increase or "
+"decrease the number by clicking on the up and down arrows. You can also type "
+"the figure directly into the box.</qt>"
+msgstr ""
+
+#: kpcopiespage.cpp:78
+msgid ""
+" <qt>"
+"<p>If the <em>\"Collate\"</em> checkbox is enabled (default), the output "
+"order of a multi-page document will be \"1-2-3-..., 1-2-3-..., "
+"1-2-3-...\".</p> "
+"<p>If the <em>\"Collate\"</em> checkbox is disabled, the output order of a "
+"multi-page document will be \"1-1-1-..., 2-2-2-..., 3-3-3-...\".</p></qt>"
+msgstr ""
+
+#: kpcopiespage.cpp:82
+msgid ""
+" <qt>"
+"<p>If the <em>\"Reverse\"</em> checkbox is enabled, the output order of a "
+"multi-page document will be \"...-3-2-1, ...-3-2-1, ...-3-2-1\", if you also "
+"have <em>en</em>abled the <em>\"Collate\"</em> checkbox at the same time "
+"(the usual usecase).</p> "
+"<p>If the <em>\"Reverse\"</em> checkbox is enabled, the output order of a "
+"multi-page document will be \"...-3-3-3, ...-2-2-2, ...-1-1-1\", if you have "
+"<em>dis</em>abled the <em>\"Collate\"</em> checkbox at the same "
+"time.</p></qt>"
+msgstr ""
+
+#: kpcopiespage.cpp:93
 msgid "C&opies"
 msgstr "C&opiau"
 
-#: kpcopiespage.cpp:54
+#: kpcopiespage.cpp:97
 msgid "Page Selection"
 msgstr "Dewis Tudalen"
 
-#: kpcopiespage.cpp:55
+#: kpcopiespage.cpp:99
 msgid "&All"
 msgstr "&Popeth"
 
-#: kpcopiespage.cpp:56
+#: kpcopiespage.cpp:101
 msgid "Cu&rrent"
 msgstr "Cy&fredol"
 
-#: kpcopiespage.cpp:57
+#: kpcopiespage.cpp:103
 msgid "Ran&ge"
 msgstr "Amre&diad"
 
-#: kpcopiespage.cpp:60 kpcopiespage.cpp:61
+#: kpcopiespage.cpp:108
 msgid "<p>Enter pages or group of pages to print separated by commas (1,2-5,8).</p>"
 msgstr ""
 "<p>"
 "Mewnosodwch tudalennau neu grwpiau tudalennau i argraffu, wedi eu gwahanu "
 "gan gollnodau (1,2-5,8).</p>"
 
-#: kpcopiespage.cpp:64
+#: kpcopiespage.cpp:112
 msgid "Copies"
 msgstr "CopÃ¯au"
 
-#: kpcopiespage.cpp:65
+#: kpcopiespage.cpp:114
 msgid "Co&llate"
 msgstr "Co&ladu"
 
-#: kpcopiespage.cpp:66
+#: kpcopiespage.cpp:116
 msgid "Re&verse"
 msgstr "Gwrthd&roi"
 
-#: kpcopiespage.cpp:70
+#: kpcopiespage.cpp:121
 msgid "Cop&ies:"
 msgstr "Co&pÃ¯au"
 
-#: kpcopiespage.cpp:75
+#: kpcopiespage.cpp:128
 msgid "All Pages"
 msgstr "Pob tudalen"
 
-#: kpcopiespage.cpp:76
+#: kpcopiespage.cpp:129
 msgid "Odd Pages"
 msgstr "Tudalennau Odrif"
 
-#: kpcopiespage.cpp:77
+#: kpcopiespage.cpp:130
 msgid "Even Pages"
 msgstr "Tudalennau Ailrif"
 
-#: kpcopiespage.cpp:78
+#: kpcopiespage.cpp:132
 msgid "Page &set:"
 msgstr "&Set o dudalennau"
 
-#: kpcopiespage.cpp:132
+#: kpcopiespage.cpp:187
 msgid "Pages"
 msgstr "Tudalennau"
 
@@ -4260,6 +4711,12 @@ msgstr "&Graddlwyd"
 msgid "Ot&her"
 msgstr "E&raill"
 
+#~ msgid "Directory"
+#~ msgstr "Cyfeiriadur"
+
+#~ msgid "CUPS Directory Settings"
+#~ msgstr "Gosodiadau Cyfeiriadur CUPS"
+
 #~ msgid "Form3"
 #~ msgstr "Ffurf3"
 
@@ -4471,9 +4928,6 @@ msgstr "E&raill"
 
 #~ msgid "Page"
 #~ msgstr "Tudalen"
-
-#~ msgid "Border"
-#~ msgstr "Ymyl"
 
 #~ msgid "Orientation"
 #~ msgstr "Gogwydd"
@@ -5771,9 +6225,6 @@ msgstr "E&raill"
 #~ "Yr un un ffeil yw'r tarddiad a'r cyrchfan. \n"
 #~ " %1"
 
-#~ msgid "%1 is required by the server, but is not available."
-#~ msgstr "Mae angen %1 gan y gweinydd, ond nid yw ar gael."
-
 #~ msgid "Access to restricted port in POST denied"
 #~ msgstr "Gwaharddwyd cyrchiad i borth cyfyngedig yn POST"
 
@@ -6511,9 +6962,6 @@ msgstr "E&raill"
 #~ "Golygir hwn bod, er roedd yn bosib agor yr adnodd <strong>%1</strong>, "
 #~ "digwyddodd gwall wrth ysgrifennu at yr adnodd."
 
-#~ msgid "You may not have permissions to write to the resource."
-#~ msgstr "Efallai nad oes ganddoch caniatadau i ysgrifennu at yr adnodd."
-
 #~ msgid "Could Not Listen for Network Connections"
 #~ msgstr "Methu Gwrando am Gysylltiadau Rhwydwaith"
 
@@ -6905,9 +7353,6 @@ msgstr "E&raill"
 
 #~ msgid "You are not authorized to execute this file."
 #~ msgstr "Nid ydych wedi cael eich awdurdodi i weithredu'r ffeil yma."
-
-#~ msgid "You are not authorized to execute this service."
-#~ msgstr "Nid ydych wedi cael eich awdurdodi i weithredu'r gwasanaeth yma."
 
 #~ msgid ""
 #~ "<qt>Unable to run the command specified. The file or directory <b>%1</b> "
@@ -11235,9 +11680,6 @@ msgstr "E&raill"
 #~ msgid "Error: "
 #~ msgstr "Gwall:"
 
-#~ msgid "The requested operation could not be completed"
-#~ msgstr "Methu cwblhau'r gweithrediad ceisiedig"
-
 #~ msgid "Technical Reason: "
 #~ msgstr "Rheswm Technegol:"
 
@@ -14539,3 +14981,4 @@ msgstr "E&raill"
 
 #~ msgid "Cancel your edits?"
 #~ msgstr "Colli golygiadau?"
+
