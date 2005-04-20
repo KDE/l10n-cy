@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: all2.po\n"
-"POT-Creation-Date: 2005-03-11 01:29+0100\n"
+"POT-Creation-Date: 2005-04-20 15:12+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -21,14 +21,23 @@ msgid ""
 "Your emails"
 msgstr "kyfieithu@dotmon.com"
 
-#: gameManager.cpp:107
+#: dlgNewServer.cpp:33 kqf.cpp:149
+msgid "Add New Server"
+msgstr ""
+
+#: dlgNewServer.cpp:37
+#, fuzzy
+msgid "Server:"
+msgstr "&Gweinydd"
+
+#: gameManager.cpp:53
 #, c-format
 msgid ""
 "The required XML file with supported games' definitions does not exist:\n"
 "%1"
 msgstr ""
 
-#: gameManager.cpp:117
+#: gameManager.cpp:63
 #, c-format
 msgid ""
 "The required XML file with supported games' definitions cannot be opened for "
@@ -36,209 +45,296 @@ msgid ""
 "%1"
 msgstr ""
 
-#: gameManager.cpp:124
+#: gameManager.cpp:70
 msgid ""
 "The required XML file with supported games' definitions cannot be parsed:\n"
 "%1\n"
 "%2"
 msgstr ""
 
-#: kqf.cpp:80
+#: gameManager.cpp:395
+msgid "This game is not known to kqf."
+msgstr ""
+
+#: gameManager.cpp:403
+msgid "The game binary '%1' was not found in the system."
+msgstr ""
+
+#: gameManager.cpp:411
+msgid "Connecting to this server requires a password"
+msgstr ""
+
+#: kqf.cpp:84
 msgid "Game Server Browser"
 msgstr ""
 
-#: kqf.cpp:94
-msgid "Copy server address"
+#: kqf.cpp:88
+msgid ""
+"QStat was not found in the system; kqf will not run without it."
+"<br>You can get the latest version (2.8 at least) from the <a "
+"href=\"http://sourceforge.net/project/showfiles.php?group_id=56603&package_id"
+"=51888\">qstat</a> download page."
 msgstr ""
 
-#: kqf.cpp:96
-msgid "Copies the currently selected server's address to the clipboard"
-msgstr ""
-
-#: kqf.cpp:98
-msgid "Find Player"
-msgstr ""
-
-#: kqf.cpp:102
-msgid "Refresh View"
-msgstr "Ailfywio'r Olwg"
-
-#: kqf.cpp:105
-msgid "Refresh Selected"
+#: kqf.cpp:91
+msgid "QStat not found"
 msgstr ""
 
 #: kqf.cpp:107
+msgid "Copy server address"
+msgstr ""
+
+#: kqf.cpp:109
+msgid "Copies the currently selected server's address to the clipboard"
+msgstr ""
+
+#: kqf.cpp:111
+msgid "Find Player"
+msgstr ""
+
+#: kqf.cpp:115
+msgid "Refresh View"
+msgstr "Ailfywio'r Olwg"
+
+#: kqf.cpp:118
+msgid "Refresh Selected"
+msgstr ""
+
+#: kqf.cpp:120
 msgid "Refresh the server info"
 msgstr ""
 
-#: kqf.cpp:108
+#: kqf.cpp:121
 msgid "Refreshes the currently selected server's information."
 msgstr ""
 
-#: kqf.cpp:110
-msgid "Update from Master"
+#: kqf.cpp:123
+msgid "Update From Master"
 msgstr ""
 
-#: kqf.cpp:112
+#: kqf.cpp:125
 msgid "Update the server list from master"
 msgstr ""
 
-#: kqf.cpp:113
+#: kqf.cpp:126
 msgid "Rebuilds the whole server list by querying the master server."
 msgstr ""
 
-#: kqf.cpp:117
+#: kqf.cpp:130
 msgid "Stop updating data"
 msgstr ""
 
-#: kqf.cpp:118
+#: kqf.cpp:131
 msgid "Stops the current process of updating data from the server."
 msgstr ""
 
-#. i18n: file kqf.kcfg line 9
-#: kqf.cpp:120 rc.cpp:84
-#, no-c-format
-msgid "Resolve hostnames"
+#: kqf.cpp:133
+msgid "Resolve Hostnames"
 msgstr ""
 
-#: kqf.cpp:123
+#: kqf.cpp:136
 msgid "Show server hostname"
 msgstr ""
 
-#: kqf.cpp:124
+#: kqf.cpp:137
 msgid "Toggles showing server's hostname instead of its IP address."
 msgstr ""
 
-#: kqf.cpp:128
+#: kqf.cpp:141
 msgid "Connect"
 msgstr "Cysylltu"
 
-#: kqf.cpp:131
-msgid "DNS Lookup"
-msgstr ""
-
-#: kqf.cpp:134
-msgid "Add New Server"
-msgstr ""
-
-#: kqf.cpp:137
-msgid "Add to Favorites"
-msgstr ""
-
-#: kqf.cpp:139
-msgid "Add server to favorites"
-msgstr ""
-
-#: kqf.cpp:140
-msgid "Adds the currently selected server to favorites."
-msgstr ""
-
-#: kqf.cpp:142
-msgid "Remove from Favorites"
+#: kqf.cpp:143
+msgid "Connect to the server"
 msgstr ""
 
 #: kqf.cpp:144
+msgid "Start the game and connect to the selected server."
+msgstr ""
+
+#: kqf.cpp:146
+msgid "DNS Lookup"
+msgstr ""
+
+#: kqf.cpp:151
+msgid "Add a new server to favorites"
+msgstr ""
+
+#: kqf.cpp:152
+msgid "Manually adds a server to favorites."
+msgstr ""
+
+#: kqf.cpp:154
+msgid "Add to Favorites"
+msgstr ""
+
+#: kqf.cpp:156
+msgid "Add server to favorites"
+msgstr ""
+
+#: kqf.cpp:157
+msgid "Adds the currently selected server to favorites."
+msgstr ""
+
+#: kqf.cpp:159
+msgid "Remove from Favorites"
+msgstr ""
+
+#: kqf.cpp:161
 msgid "Remove server from favorites"
 msgstr ""
 
-#: kqf.cpp:145
+#: kqf.cpp:162
 msgid "Removes the currently selected server from favorites."
 msgstr ""
 
-#: kqf.cpp:162
-msgid "General"
-msgstr "Cyffredinol"
-
-#: kqfview.cpp:155
-msgid "This server is already included in Favorites."
+#: kqf.cpp:166
+msgid "Display server properties"
 msgstr ""
 
-#: kqfview.cpp:166 kqfview.cpp:175
+#: kqf.cpp:167
+msgid "Show a dialog with the selected server's properties."
+msgstr ""
+
+#. i18n: file kqfview_base.ui line 44
+#: kqf.cpp:180 rc.cpp:21
+#, no-c-format
+msgid "Games"
+msgstr "Gemau"
+
+#: kqf.cpp:180
+msgid "Configure games"
+msgstr ""
+
+#: kqf.cpp:181
+#, fuzzy
+msgid "Servers"
+msgstr "Gweinydd"
+
+#: kqf.cpp:181
+msgid "Configure servers"
+msgstr ""
+
+#: kqf.cpp:182
+msgid "IM presence"
+msgstr ""
+
+#: kqf.cpp:182
+msgid "Configure IM presence"
+msgstr ""
+
+#: kqfview.cpp:186
+msgid "This server is already included in favorites."
+msgstr ""
+
+#: kqfview.cpp:197 kqfview.cpp:206
 msgid "You have to select a server first."
 msgstr ""
 
-#: kqfview.cpp:179
+#: kqfview.cpp:210
 #, c-format
-msgid "Do you really want to remove this favorite server?\\%1"
+msgid ""
+"Do you really want to remove this favorite server?\n"
+"%1"
 msgstr ""
 
-#: kqfview.cpp:180
+#: kqfview.cpp:211
 msgid "Remove Favorite"
 msgstr ""
 
-#: kqfview.cpp:248
+#: kqfview.cpp:282
+msgid "You have to first select a server to connect to."
+msgstr ""
+
+#: kqfview.cpp:306
 msgid "Favorites"
 msgstr ""
 
-#: kqfview.cpp:293
+#: kqfview.cpp:351
 msgid "Updating server list from the master..."
 msgstr ""
 
-#: kqfview.cpp:310
+#: kqfview.cpp:368
 msgid "Obtained an empty response from the master server."
 msgstr ""
 
-#: kqfview.cpp:311
+#: kqfview.cpp:369
 msgid "The network or the master server may be down."
 msgstr ""
 
-#: kqfview.cpp:323
+#: kqfview.cpp:381
 #, c-format
 msgid ""
 "_n: Obtained 1 server\n"
 "Obtained %n servers"
 msgstr ""
 
-#: kqfview.cpp:389
+#: kqfview.cpp:460
 msgid "Aborted"
 msgstr "Terfynwyd"
 
-#: kqfview.cpp:486
+#: kqfview.cpp:562
 msgid "Loading servers from cache"
 msgstr ""
 
-#: kqfview.cpp:563
+#: kqfview.cpp:645
 #, c-format
 msgid ""
 "_n: Loaded 1 server from cache\n"
 "Loaded %n servers from cache"
 msgstr ""
 
-#: kqfview.cpp:602
+#: kqfview.cpp:684
 #, c-format
 msgid "Refreshing server %1"
 msgstr ""
 
-#: kqfview.cpp:621
+#: kqfview.cpp:703
 msgid "Obtained an empty response from the server."
 msgstr ""
 
-#: kqfview.cpp:622
+#: kqfview.cpp:704
 msgid "The server may be down or unresponsive."
 msgstr ""
 
-#: kqfview.cpp:691
+#: kqfview.cpp:786
 #, c-format
 msgid ""
 "_n: Server has 1 player\n"
 "Server has %n players"
 msgstr ""
 
-#: main.cpp:29
+#: launch.cpp:216
+msgid "The game exited abnormally."
+msgstr ""
+
+#: main.cpp:30
 msgid "An online game server browser"
 msgstr ""
 
-#: main.cpp:35
+#: main.cpp:36
 msgid "Document to open"
 msgstr "Dogfen i'w hagor"
 
-#: main.cpp:41
+#: main.cpp:42
 msgid "kqf"
 msgstr ""
 
-#: main.cpp:44
+#: main.cpp:45
 msgid "Author and maintainer"
 msgstr "Awdur a chynhaliwr"
+
+#: propDialog.cpp:37
+msgid "Server Properties"
+msgstr ""
+
+#: propDialog.cpp:47
+msgid "Resolving..."
+msgstr ""
+
+#: propDialog.cpp:55
+msgid "Unknown"
+msgstr ""
 
 #. i18n: file kqfui.rc line 17
 #: rc.cpp:9
@@ -258,140 +354,299 @@ msgstr ""
 msgid "ID"
 msgstr "ID"
 
-#. i18n: file kqfview_base.ui line 44
-#: rc.cpp:21
-#, no-c-format
-msgid "Games"
-msgstr "Gemau"
-
 #. i18n: file kqfview_base.ui line 103
 #: rc.cpp:24
 #, no-c-format
 msgid "..."
 msgstr "..."
 
-#. i18n: file kqfview_base.ui line 111
+#. i18n: file kqfview_base.ui line 106
 #: rc.cpp:27
 #, no-c-format
-msgid "Se&arch:"
-msgstr "&Chwiliad:"
+msgid "Clear the quick filter"
+msgstr ""
 
-#. i18n: file kqfview_base.ui line 127
-#: rc.cpp:30 rc.cpp:54
+#. i18n: file kqfview_base.ui line 114
+#: rc.cpp:30
+#, no-c-format
+msgid "&Quick filter:"
+msgstr ""
+
+#. i18n: file kqfview_base.ui line 130
+#: rc.cpp:33 rc.cpp:57
 #, no-c-format
 msgid "Name"
 msgstr "Enw"
 
-#. i18n: file kqfview_base.ui line 138
-#: rc.cpp:33
+#. i18n: file kqfview_base.ui line 141
+#: rc.cpp:36
 #, no-c-format
 msgid "Address"
 msgstr "Cyfeiriad"
 
-#. i18n: file kqfview_base.ui line 149
-#: rc.cpp:36 rc.cpp:60
+#. i18n: file kqfview_base.ui line 152
+#: rc.cpp:39 rc.cpp:63
 #, no-c-format
 msgid "Ping"
 msgstr "Ping"
 
-#. i18n: file kqfview_base.ui line 160
-#: rc.cpp:39
+#. i18n: file kqfview_base.ui line 163
+#: rc.cpp:42
 #, no-c-format
 msgid "Priv"
 msgstr ""
 
-#. i18n: file kqfview_base.ui line 171
-#: rc.cpp:42
+#. i18n: file kqfview_base.ui line 174
+#: rc.cpp:45
 #, no-c-format
 msgid "Players"
 msgstr "Chwaraewyr"
 
-#. i18n: file kqfview_base.ui line 182
-#: rc.cpp:45
+#. i18n: file kqfview_base.ui line 185
+#: rc.cpp:48
 #, no-c-format
 msgid "Map"
 msgstr ""
 
-#. i18n: file kqfview_base.ui line 193
-#: rc.cpp:48
+#. i18n: file kqfview_base.ui line 196
+#: rc.cpp:51
 #, no-c-format
 msgid "Game"
 msgstr "Gêm"
 
-#. i18n: file kqfview_base.ui line 204
-#: rc.cpp:51
-#, no-c-format
-msgid "Game type"
-msgstr ""
+#. i18n: file kqfview_base.ui line 207
+#: rc.cpp:54
+#, fuzzy, no-c-format
+msgid "Game Type"
+msgstr "Gêm"
 
-#. i18n: file kqfview_base.ui line 249
-#: rc.cpp:57
+#. i18n: file kqfview_base.ui line 252
+#: rc.cpp:60
 #, no-c-format
 msgid "Frags"
 msgstr ""
 
-#. i18n: file kqfview_base.ui line 285
-#: rc.cpp:63
+#. i18n: file kqfview_base.ui line 288
+#: rc.cpp:66
 #, no-c-format
 msgid "Rule"
 msgstr ""
 
-#. i18n: file kqfview_base.ui line 296
-#: rc.cpp:66
+#. i18n: file kqfview_base.ui line 299
+#: rc.cpp:69
 #, no-c-format
 msgid "Value"
 msgstr "Gwerth"
 
-#. i18n: file prefs-base.ui line 16
-#: rc.cpp:69
+#. i18n: file prefs_games.ui line 25
+#: rc.cpp:72
 #, no-c-format
-msgid "Prefs_base"
+msgid "Display all &games"
 msgstr ""
 
-#. i18n: file prefs-base.ui line 27
-#: rc.cpp:72
+#. i18n: file prefs_games.ui line 28
+#: rc.cpp:75
+#, no-c-format
+msgid "Display all supported games, not just those installed on the system"
+msgstr ""
+
+#. i18n: file prefs_im.ui line 17
+#: rc.cpp:78
+#, no-c-format
+msgid "Form2"
+msgstr ""
+
+#. i18n: file prefs_im.ui line 45
+#: rc.cpp:81
+#, no-c-format
+msgid "Custom &message:"
+msgstr ""
+
+#. i18n: file prefs_im.ui line 56
+#: rc.cpp:84
+#, no-c-format
+msgid "&Change IM presence when joining a game"
+msgstr ""
+
+#. i18n: file prefs_im.ui line 59
+#: rc.cpp:87
+#, fuzzy, no-c-format
+msgid "Alt+C"
+msgstr "Alt+A"
+
+#. i18n: file prefs_im.ui line 65
+#: rc.cpp:90
+#, no-c-format
+msgid "Change the IM status to \"away\" when joining a game"
+msgstr ""
+
+#. i18n: file prefs_im.ui line 68
+#: rc.cpp:93
+#, no-c-format
+msgid ""
+"If checked, instant messaging applications like Kopete or Konversation will "
+"be told to set your status to \"away\". After finishing the game, the status "
+"will be restored to \"online\"."
+msgstr ""
+
+#. i18n: file prefs_im.ui line 76
+#: rc.cpp:96
+#, no-c-format
+msgid "I am currently playing %game on %server"
+msgstr ""
+
+#. i18n: file prefs_im.ui line 95
+#: rc.cpp:99
+#, no-c-format
+msgid "More info..."
+msgstr ""
+
+#. i18n: file prefs_servers.ui line 24
+#: rc.cpp:102
 #, no-c-format
 msgid "&Display full servers"
 msgstr ""
 
-#. i18n: file prefs-base.ui line 30
-#: rc.cpp:75
-#, no-c-format
-msgid "Alt+D"
-msgstr ""
-
-#. i18n: file prefs-base.ui line 38
-#: rc.cpp:78
+#. i18n: file prefs_servers.ui line 32
+#: rc.cpp:105
 #, no-c-format
 msgid "Displ&ay empty servers"
 msgstr ""
 
-#. i18n: file prefs-base.ui line 41
-#: rc.cpp:81
+#. i18n: file propWidget.ui line 17
+#: rc.cpp:108
 #, no-c-format
-msgid "Alt+A"
-msgstr "Alt+A"
+msgid "Form1"
+msgstr ""
+
+#. i18n: file propWidget.ui line 28
+#: rc.cpp:111
+#, no-c-format
+msgid "Hostname:"
+msgstr ""
+
+#. i18n: file propWidget.ui line 36
+#: rc.cpp:114
+#, no-c-format
+msgid "textLabel13"
+msgstr ""
+
+#. i18n: file propWidget.ui line 44
+#: rc.cpp:117
+#, no-c-format
+msgid "textLabel9"
+msgstr ""
+
+#. i18n: file propWidget.ui line 52
+#: rc.cpp:120
+#, no-c-format
+msgid "textLabel15"
+msgstr ""
+
+#. i18n: file propWidget.ui line 60
+#: rc.cpp:123
+#, fuzzy, no-c-format
+msgid "IP address:"
+msgstr "Cyfeiriad"
+
+#. i18n: file propWidget.ui line 68
+#: rc.cpp:126
+#, no-c-format
+msgid "Last refresh:"
+msgstr ""
+
+#. i18n: file propWidget.ui line 76
+#: rc.cpp:129
+#, no-c-format
+msgid "Reserved slots:"
+msgstr ""
+
+#. i18n: file propWidget.ui line 84
+#: rc.cpp:132
+#, no-c-format
+msgid "Country:"
+msgstr ""
+
+#. i18n: file propWidget.ui line 92
+#: rc.cpp:135
+#, no-c-format
+msgid "textLabel7"
+msgstr ""
+
+#. i18n: file propWidget.ui line 124
+#: rc.cpp:139
+#, no-c-format
+msgid "textLabel11"
+msgstr ""
+
+#. i18n: file propWidget.ui line 191
+#: rc.cpp:142
+#, no-c-format
+msgid "textLabel2"
+msgstr ""
+
+#. i18n: file kqf.kcfg line 9
+#: rc.cpp:146
+#, no-c-format
+msgid "Resolve hostnames"
+msgstr ""
 
 #. i18n: file kqf.kcfg line 13
-#: rc.cpp:87
+#: rc.cpp:149
 #, no-c-format
 msgid "Display full servers"
 msgstr ""
 
 #. i18n: file kqf.kcfg line 17
-#: rc.cpp:90
+#: rc.cpp:152
 #, no-c-format
 msgid "Display empty servers"
 msgstr ""
 
-#: server.cpp:82
-msgid ""
-"_: players / max players\n"
-"%1/%2"
+#. i18n: file kqf.kcfg line 21
+#: rc.cpp:155
+#, no-c-format
+msgid "Display all games"
 msgstr ""
 
-#~ msgid "Server"
-#~ msgstr "Gweinydd"
+#. i18n: file kqf.kcfg line 23
+#: rc.cpp:158
+#, no-c-format
+msgid "Whether to display all games, not just those installed in the system."
+msgstr ""
+
+#. i18n: file kqf.kcfg line 26
+#: rc.cpp:161
+#, no-c-format
+msgid "Change IM presence"
+msgstr ""
+
+#. i18n: file kqf.kcfg line 28
+#: rc.cpp:164
+#, no-c-format
+msgid "Whether to change the IM presence to 'away' when joining a game."
+msgstr ""
+
+#. i18n: file kqf.kcfg line 31
+#: rc.cpp:167
+#, no-c-format
+msgid "Status change message"
+msgstr ""
+
+#: server.cpp:105
+msgid ""
+"_: players / max players\n"
+"%1/%2 (%3)"
+msgstr ""
+
+#~ msgid "Se&arch:"
+#~ msgstr "&Chwiliad:"
+
+#~ msgid "Alt+A"
+#~ msgstr "Alt+A"
+
+#~ msgid "General"
+#~ msgstr "Cyffredinol"
 
 #~ msgid "Colors"
 #~ msgstr "Lliwiau"

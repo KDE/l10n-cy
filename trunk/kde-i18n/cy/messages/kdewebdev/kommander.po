@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdewebdev/kommander.po\n"
-"POT-Creation-Date: 2005-03-08 01:43+0100\n"
+"POT-Creation-Date: 2005-04-20 15:12+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -353,12 +353,43 @@ msgstr "Grŵp Newydd o Weithredoedd"
 msgid "New &Dropdown Action Group"
 msgstr ""
 
-#: editor/messagelog.cpp:74
+#: editor/messagelog.cpp:34
+msgid "Copy current &line"
+msgstr ""
+
+#: editor/messagelog.cpp:35
+msgid "&Copy content"
+msgstr ""
+
+#: editor/messagelog.cpp:36
+#, fuzzy
+msgid "&Save As..."
+msgstr "Cadw &Fel..."
+
+#: editor/messagelog.cpp:122
+msgid ""
+"*.log|Log Files (*.log)\n"
+"*|All Files"
+msgstr ""
+
+#: editor/messagelog.cpp:122
+msgid "Save Log File"
+msgstr ""
+
+#: editor/messagelog.cpp:127
+msgid "<qt>File<br><b>%1</b><br>already exists. Overwrite it?</qt>"
+msgstr ""
+
+#: editor/messagelog.cpp:132
+msgid "<qt>Cannot save log file<br><b>%1</b></qt>"
+msgstr ""
+
+#: editor/messagelog.cpp:146
 #, fuzzy
 msgid "Stdout"
 msgstr "Trwylinellu"
 
-#: editor/messagelog.cpp:74
+#: editor/messagelog.cpp:146
 #, fuzzy
 msgid "Stderr"
 msgstr "Anfonwr"
@@ -1703,18 +1734,18 @@ msgstr ""
 msgid "Lay Out Children in a Grid"
 msgstr ""
 
-#: editor/functionsimpl.cpp:127
+#: editor/functionsimpl.cpp:130
 msgid "<p>Parameters are not obligatory."
 msgstr ""
 
-#: editor/functionsimpl.cpp:130
+#: editor/functionsimpl.cpp:133
 #, c-format
 msgid ""
 "_n: <p>Only first argument is obligatory.\n"
 "<p>Only first %n arguments are obligatory."
 msgstr ""
 
-#: editor/functionsimpl.cpp:138
+#: editor/functionsimpl.cpp:141
 msgid ""
 "<qt><h3>%1</h3><p><b>Description:</b> %2\n"
 "<p><b>Syntax:</b> <i>%3</i>%4</qt>"
@@ -3476,34 +3507,51 @@ msgstr "Tab"
 msgid "F1"
 msgstr "F1"
 
-#: widget/parser.cpp:148
-msgid "Expected '%1'"
+#: widget/parser.cpp:116
+msgid "Invalid character: '%1'"
 msgstr ""
 
-#: widget/parser.cpp:154
-msgid "Expected variable"
+#: widget/parser.cpp:206 widget/parser.cpp:458
+msgid "'%1' is not a widget"
 msgstr ""
 
-#: widget/parser.cpp:156
+#: widget/parser.cpp:211 widget/parser.cpp:460
+msgid "'%1' is not a function"
+msgstr ""
+
+#: widget/parser.cpp:222
 msgid "Expected value"
 msgstr ""
 
-#: widget/parser.cpp:158
-msgid "Invalid symbol"
+#: widget/parser.cpp:386 widget/parser.cpp:388 widget/parser.cpp:394
+msgid "in function '%1': %2"
 msgstr ""
 
-#: widget/parser.cpp:160
+#: widget/parser.cpp:386
 #, fuzzy
-msgid "Incorrect parameters"
+msgid "too few parameters"
 msgstr "Mewnosod Gwahanydd"
 
-#: widget/parser.cpp:162
-msgid "Undefined variable"
+#: widget/parser.cpp:388
+#, fuzzy
+msgid "too many parameters"
+msgstr "Mewnosod Gwahanydd"
+
+#: widget/parser.cpp:430
+msgid "in widget function '%1.%2': %3"
 msgstr ""
 
-#: widget/parser.cpp:164
-msgid "Unknown error"
-msgstr "Gwall anhysbys"
+#: widget/parser.cpp:462
+msgid "Unexpected symbol after variable '%1'"
+msgstr ""
+
+#: widget/parser.cpp:623
+msgid "Expected '%1'"
+msgstr ""
+
+#: widget/parser.cpp:636 widget/parser.cpp:649
+msgid "Expected variable"
+msgstr ""
 
 #: widget/specials.cpp:24
 msgid "Inserts the item if it will not create a duplicate."
@@ -3929,42 +3977,50 @@ msgid "Shows text selection dialog. Returns entered text."
 msgstr ""
 
 #: widget/specials.cpp:227
-msgid "Shows value selection dialog. Returns entered value."
+msgid "Shows a dialog asking user for password and returns it."
 msgstr ""
 
 #: widget/specials.cpp:229
-msgid "Shows existing file selection dialog. Returns selected file."
+msgid "Shows value selection dialog. Returns entered value."
 msgstr ""
 
 #: widget/specials.cpp:231
-msgid "Shows save file selection dialog. Returns selected file."
+msgid "Shows float value selection dialog. Returns entered value."
 msgstr ""
 
 #: widget/specials.cpp:233
-msgid "Shows directory selection dialog. Returns selected directory."
+msgid "Shows existing file selection dialog. Returns selected file."
 msgstr ""
 
 #: widget/specials.cpp:235
+msgid "Shows save file selection dialog. Returns selected file."
+msgstr ""
+
+#: widget/specials.cpp:237
+msgid "Shows directory selection dialog. Returns selected directory."
+msgstr ""
+
+#: widget/specials.cpp:239
 msgid ""
 "Shows multiple files selection dialog. Returns EOL-separated list of "
 "selected files."
 msgstr ""
 
-#: widget/specials.cpp:239
+#: widget/specials.cpp:243
 msgid "Shows an information dialog."
 msgstr ""
 
-#: widget/specials.cpp:241
+#: widget/specials.cpp:245
 msgid "Shows an error dialog."
 msgstr ""
 
-#: widget/specials.cpp:243
+#: widget/specials.cpp:247
 msgid ""
 "Shows a warning dialog with up to three buttons. Returns number of selected "
 "button."
 msgstr ""
 
-#: widget/specials.cpp:245
+#: widget/specials.cpp:249
 msgid ""
 "Shows a question dialog with up to three buttons. Returns number of selected "
 "button."
@@ -4009,7 +4065,7 @@ msgstr ""
 
 #: widget/kommanderwidget.cpp:136
 msgid ""
-"Line %1: error: %2\n"
+"Line %1: %2.\n"
 msgstr ""
 
 #: widget/kommanderwidget.cpp:237
@@ -4046,31 +4102,31 @@ msgid ""
 "  %2\n"
 msgstr ""
 
-#: widget/kommanderwidget.cpp:553
+#: widget/kommanderwidget.cpp:559
 msgid "Unmatched parenthesis after '%1'."
 msgstr ""
 
-#: widget/kommanderwidget.cpp:562
+#: widget/kommanderwidget.cpp:568
 msgid "Unmatched quotes in argument of '%1'."
 msgstr ""
 
-#: widget/kommanderwidget.cpp:564
+#: widget/kommanderwidget.cpp:570
 msgid "Unknown function group: '%1'."
 msgstr ""
 
-#: widget/kommanderwidget.cpp:566
+#: widget/kommanderwidget.cpp:572
 msgid "Unknown function: '%1' in group '%2'."
 msgstr ""
 
-#: widget/kommanderwidget.cpp:568
+#: widget/kommanderwidget.cpp:574
 msgid "Unknown widget function: '%1'."
 msgstr ""
 
-#: widget/kommanderwidget.cpp:570
+#: widget/kommanderwidget.cpp:576
 msgid "Not enough arguments for '%1' (%2 instead of %3).<p>Correct syntax is: %4"
 msgstr ""
 
-#: widget/kommanderwidget.cpp:575
+#: widget/kommanderwidget.cpp:581
 msgid "Too many arguments for '%1' (%2 instead of %3).<p>Correct syntax is: %4"
 msgstr ""
 
@@ -4110,7 +4166,18 @@ msgstr ""
 msgid "Unable to create dialog from input."
 msgstr ""
 
-#: executor/instance.cpp:150
+#: executor/instance.cpp:136
+msgid ""
+"<qt>This file does not have a <b>.kmdr</b> extension. As a security "
+"precaution Kommander will only run Kommander scripts with a clear "
+"identity.</qt>"
+msgstr ""
+
+#: executor/instance.cpp:138
+msgid "Wrong Extension"
+msgstr ""
+
+#: executor/instance.cpp:155
 msgid ""
 "<qt>This dialog is running from your <i>/tmp</i> directory.  This may mean "
 "that it was run from a KMail attachment or from a webpage. "
@@ -4228,6 +4295,9 @@ msgstr ""
 msgid "Failed to start shell process."
 msgstr ""
 
+#~ msgid "Unknown error"
+#~ msgstr "Gwall anhysbys"
+
 #~ msgid "Use &function:"
 #~ msgstr "Defn&yddio ffwythiant:"
 
@@ -4320,9 +4390,6 @@ msgstr ""
 
 #~ msgid "&New..."
 #~ msgstr "&Newydd..."
-
-#~ msgid "Save &As..."
-#~ msgstr "Cadw &Fel..."
 
 #~ msgid "Exit"
 #~ msgstr "Terfynu"

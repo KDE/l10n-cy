@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-2/kimdaba.po\n"
-"POT-Creation-Date: 2005-03-08 01:42+0100\n"
+"POT-Creation-Date: 2005-04-20 15:11+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -29,15 +29,15 @@ msgstr ""
 msgid "Count"
 msgstr "Cyfrif"
 
-#: category.cpp:28 mainview.cpp:833
+#: category.cpp:28 mainview.cpp:836 mysurvey.cpp:47
 msgid "Persons"
 msgstr ""
 
-#: category.cpp:30 mainview.cpp:834
+#: category.cpp:30 mainview.cpp:837 mysurvey.cpp:47
 msgid "Locations"
 msgstr ""
 
-#: category.cpp:32 mainview.cpp:835
+#: category.cpp:32 mainview.cpp:838 mysurvey.cpp:47
 msgid "Keywords"
 msgstr "Allweddeiriau"
 
@@ -92,35 +92,35 @@ msgstr "Nage %1"
 msgid "No other %1"
 msgstr ""
 
-#: contentfolder.cpp:138
+#: contentfolder.cpp:137
 msgid "Category"
 msgstr "Categori"
 
-#: contentfolder.cpp:143 imagefolder.cpp:111
+#: contentfolder.cpp:142
 #, c-format
 msgid ""
-"_n: 1 image\n"
-"%n images"
+"_n: 1 Image\n"
+"%n Images"
 msgstr ""
 
-#: datebar.cpp:470
+#: datebar.cpp:471
 msgid "Show Image Ranges"
 msgstr ""
 
-#: datebar.cpp:476
+#: datebar.cpp:477
 msgid "Show Resolution Indicator"
 msgstr ""
 
-#: datebar.cpp:595
+#: datebar.cpp:596
 msgid "%1 exact + %2 ranges = %3 images"
 msgstr ""
 
-#: datebar.cpp:597
+#: datebar.cpp:598
 #, fuzzy
 msgid "%1 images"
 msgstr "Delweddau"
 
-#: datebar.cpp:599
+#: datebar.cpp:600
 msgid "%1 to %2  %3"
 msgstr ""
 
@@ -141,29 +141,30 @@ msgstr "Oddiwrth:"
 msgid "To:"
 msgstr "I:"
 
-#: dateviewhandler.cpp:73
-msgid "1 year"
+#: dateviewhandler.cpp:74
+msgid "1 Year"
 msgstr ""
 
-#: dateviewhandler.cpp:105
+#: dateviewhandler.cpp:106
 msgid "1 Month"
 msgstr ""
 
-#: dateviewhandler.cpp:145
-msgid "1 week"
+#: dateviewhandler.cpp:146
+msgid "1 Week"
 msgstr ""
 
-#: dateviewhandler.cpp:180
+#: dateviewhandler.cpp:174
 #, fuzzy
-msgid "1 day"
+msgid "1 Day"
 msgstr "heddiw"
 
-#: dateviewhandler.cpp:223
-msgid "2 hours"
+#: dateviewhandler.cpp:217
+msgid "2 Hours"
 msgstr ""
 
-#: dateviewhandler.cpp:259
-msgid "10 minutes"
+#: dateviewhandler.cpp:253
+#, fuzzy
+msgid "10 Minutes"
 msgstr "10 munud "
 
 #: deletedialog.cpp:33 deletedialog.cpp:34
@@ -186,9 +187,9 @@ msgid ""
 msgstr ""
 
 #: deletedialog.cpp:75
-#, c-format
-msgid "Unable to delete file %1"
-msgstr ""
+#, fuzzy
+msgid "Unable to delete file '%1'."
+msgstr "Methru creu cyfeiriadur %1"
 
 #: deletedialog.cpp:76
 msgid "Error Deleting Files"
@@ -211,18 +212,11 @@ msgstr ""
 msgid ""
 "<qt>"
 "<p>"
-"<center><b>Donate Money to KimDaBa development</b></center></p>"
-"<p>If you like KimDaBa, and would like it to evolve, then please consider "
-"donating money to the KimDaBa developer.</p>"
-"<p>Donating money will have the following effects:"
-"<ul>"
-"<li>The KimDaBa developer will be motivated by your acknowledgement of his "
-"work."
-"<li>The KimDaBa developer will get a chance to take some time off from his "
-"daily work to be able to complete larger features or reorganizations (For "
-"example, in January 2004, he took a week off from work to focus on "
-"optimizations, EXIF handling and making KimDaBa independent of file "
-"reorganizations. This work resulted in version 1.1).</ul></p>"
+"<center><b>Donate Money to the KimDaBa developer</b></center></p>"
+"<p>My digital camera is starting to get old so I hope that all of you would "
+"show your appreciation of my work, by helping me buy a new one, that will "
+"ensure that I enjoy taking pictures - and sorting them for many years to "
+"come.</p>"
 "<p>Money may be donated by clicking on the Donate button below, which will "
 "take you to PayPal.</p>"
 "<p>Alternatively you may transfer money to:"
@@ -235,7 +229,7 @@ msgid ""
 "<p>Any donation is highly appreciated.</p></qt>"
 msgstr ""
 
-#: donate.cpp:63
+#: donate.cpp:54
 msgid "Donate"
 msgstr ""
 
@@ -285,7 +279,7 @@ msgstr ""
 
 #: export.cpp:87
 #, fuzzy
-msgid "Generate Thumbnails"
+msgid "Generate thumbnails"
 msgstr "Creu rhagolygon cryno"
 
 #: export.cpp:93
@@ -400,14 +394,15 @@ msgid "Description:"
 msgstr "Disgrifiad:"
 
 #: htmlexportdialog.cpp:133
-msgid "Create .kim Export File"
-msgstr ""
+#, fuzzy
+msgid "Create .kim export file"
+msgstr "Creu rhagolygon cryno"
 
 #: htmlexportdialog.cpp:138
 msgid "What to Include"
 msgstr ""
 
-#: htmlexportdialog.cpp:151 imageconfig.cpp:168
+#: htmlexportdialog.cpp:151 imageconfig.cpp:172
 msgid "Description"
 msgstr "Disgrifiad"
 
@@ -455,82 +450,86 @@ msgstr ""
 msgid "Output directory:"
 msgstr ""
 
-#: htmlexportdialog.cpp:356
+#: htmlexportdialog.cpp:263
+msgid "<b>Hint: Press the help button for descriptions of the fields</b>"
+msgstr ""
+
+#: htmlexportdialog.cpp:358
 msgid "Error copying %1 to %2"
 msgstr ""
 
-#: htmlexportdialog.cpp:584
+#: htmlexportdialog.cpp:586
 msgid "Could not create file '%1'."
 msgstr ""
 
-#: htmlexportdialog.cpp:585
+#: htmlexportdialog.cpp:587
 msgid "Could Not Create File"
 msgstr "Methwyd creu'r ffeil"
 
-#: htmlexportdialog.cpp:620
+#: htmlexportdialog.cpp:622
 msgid "Unable to write image '%1'."
 msgstr ""
 
-#: htmlexportdialog.cpp:631
+#: htmlexportdialog.cpp:633
 msgid "You must select at least one resolution."
 msgstr ""
 
-#: htmlexportdialog.cpp:635
+#: htmlexportdialog.cpp:637
 msgid "Generating images for HTML page "
 msgstr ""
 
-#: htmlexportdialog.cpp:678
+#: htmlexportdialog.cpp:680
 msgid ""
 "<qt>You did not specify a base directory. This is the topmost directory for "
 "your images. Under this directory you will find each generated collection in "
 "separate directories.</qt>"
 msgstr ""
 
-#: htmlexportdialog.cpp:682
+#: htmlexportdialog.cpp:684
 msgid "No Base Directory Specified"
 msgstr ""
 
-#: htmlexportdialog.cpp:688
+#: htmlexportdialog.cpp:690
 msgid ""
 "<qt>You did not specify an output directory. This is a directory containing "
 "the actual images. The directory will be in the base directory specified "
 "above.</qt>"
 msgstr ""
 
-#: htmlexportdialog.cpp:691
+#: htmlexportdialog.cpp:693
 msgid "No Output Directory Specified"
 msgstr ""
 
-#: htmlexportdialog.cpp:703
+#: htmlexportdialog.cpp:705
 msgid ""
 "<qt>Error while reading information about %1. This is most likely because "
 "the directory does not exist.</qt>"
 msgstr ""
 
-#: htmlexportdialog.cpp:711
+#: htmlexportdialog.cpp:713
 msgid "<qt>%1 does not exist, is not a directory or cannot be written to.</qt>"
 msgstr ""
 
-#: htmlexportdialog.cpp:725
+#: htmlexportdialog.cpp:727
 msgid ""
 "<qt>"
 "<p>Output directory %1 already exists. Usually you should specify a new "
 "directory.</p>Should I delete %2 first?</qt>"
 msgstr ""
 
-#: htmlexportdialog.cpp:728
+#: htmlexportdialog.cpp:730
 msgid "Directory Exists"
 msgstr ""
 
-#: htmlexportdialog.cpp:779
+#: htmlexportdialog.cpp:781
 msgid "<qt>Unable to make a symlink from %1 to %2</qt>"
 msgstr ""
 
-#: htmlexportdialog.cpp:825
+#: htmlexportdialog.cpp:827
 msgid "%1 (by %2)"
 msgstr ""
 
-#: htmlexportdialog.cpp:831
+#: htmlexportdialog.cpp:833
 msgid "Could not find any themes - this is very likely an installation error"
 msgstr ""
 
@@ -558,43 +557,43 @@ msgstr ""
 msgid "Image Preview"
 msgstr ""
 
-#: imageconfig.cpp:190
+#: imageconfig.cpp:194
 msgid "Revert This Image"
 msgstr ""
 
-#: imageconfig.cpp:193
+#: imageconfig.cpp:197
 msgid "Clear Form"
 msgstr ""
 
-#: imageconfig.cpp:368
+#: imageconfig.cpp:374
 msgid "KimDaBa Image Configuration (%1/%2)"
 msgstr ""
 
-#: imageconfig.cpp:477
+#: imageconfig.cpp:483
 msgid "&Search"
 msgstr " &Chwilio"
 
-#: imageconfig.cpp:480
+#: imageconfig.cpp:486
 msgid "Image Search"
 msgstr ""
 
-#: imageconfig.cpp:493
+#: imageconfig.cpp:499
 msgid "Image Configuration"
 msgstr ""
 
-#: imageconfig.cpp:533
+#: imageconfig.cpp:539
 msgid "Show/Hide Windows"
 msgstr ""
 
-#: imageconfig.cpp:534
+#: imageconfig.cpp:540
 msgid "Save Current Window Setup"
 msgstr ""
 
-#: imageconfig.cpp:653
+#: imageconfig.cpp:659
 msgid "<qt>Changes made to image info, really cancel?</qt>"
 msgstr ""
 
-#: imageconfig.cpp:751
+#: imageconfig.cpp:758
 msgid ""
 "<qt>"
 "<p>You have just opened the advanced search dialog; to get the most out of "
@@ -606,7 +605,7 @@ msgid ""
 "href=\"help:/kimdaba/chp-typingIn.html\">typing in</a>.</p></qt>"
 msgstr ""
 
-#: imageconfig.cpp:760
+#: imageconfig.cpp:767
 msgid ""
 "<qt>"
 "<p>You have just opened one of the most important windows in KimDaBa; it "
@@ -702,7 +701,7 @@ msgid ""
 "<br/>However, there is only a delay when new images are found.</p></qt>"
 msgstr ""
 
-#: imagedb.cpp:463
+#: imagedb.cpp:456
 msgid ""
 "<qt>"
 "<p><b>Calculating checksum of your images<b></p>"
@@ -711,23 +710,23 @@ msgid ""
 "even when you have moved them on the disk.</p></qt>"
 msgstr ""
 
-#: imagedb.cpp:500
+#: imagedb.cpp:493
 #, c-format
 msgid "Could not open %1"
 msgstr ""
 
-#: imagedb.cpp:544
+#: imagedb.cpp:537
 msgid ""
 "<qt>"
 "<p><b>Loading time information from images</b></p>"
 "<p>Depending on the number of images, this may take some time.</p></qt>"
 msgstr ""
 
-#: imagedb.cpp:591
+#: imagedb.cpp:584
 msgid "**NONE**"
 msgstr ""
 
-#: imagedb.cpp:661
+#: imagedb.cpp:654
 msgid ""
 "<qt>"
 "<p>Your images are not sorted, which means that navigating using the date "
@@ -743,11 +742,11 @@ msgid ""
 "database.</p></qt>"
 msgstr ""
 
-#: imagedb.cpp:670
+#: imagedb.cpp:663
 msgid "Images Are Not Sorted"
 msgstr ""
 
-#: imagedb.cpp:707
+#: imagedb.cpp:700
 msgid ""
 "<qt>"
 "<p>Not all the images in the database have information about image sizes; "
@@ -759,7 +758,7 @@ msgid ""
 "view - that is all - so there is no urgency in doing it.</p></qt>"
 msgstr ""
 
-#: imagedb.cpp:712
+#: imagedb.cpp:705
 msgid "Not All Images Have Size Information"
 msgstr ""
 
@@ -771,6 +770,13 @@ msgstr ""
 msgid "View Images (%1-%2)"
 msgstr ""
 
+#: imagefolder.cpp:111
+#, c-format
+msgid ""
+"_n: 1 image\n"
+"%n images"
+msgstr ""
+
 #: imageinfo.cpp:101
 msgid ""
 "<qt>"
@@ -778,7 +784,7 @@ msgid ""
 "<p>Expected one of: Options, Drawings</p></qt>"
 msgstr ""
 
-#: imageinfo.cpp:365
+#: imageinfo.cpp:330
 msgid ""
 "<qt>"
 "<p><b>KimDaBa was unable to read EXIF information.</b></p>"
@@ -790,11 +796,11 @@ msgid ""
 "did not install the package kde-graphics.</p></qt>"
 msgstr ""
 
-#: imageinfo.cpp:371
+#: imageinfo.cpp:336
 msgid "Unable to Read EXIF Information"
 msgstr ""
 
-#: imageinfo.cpp:400
+#: imageinfo.cpp:365
 msgid ""
 "<qt>"
 "<p><b>KimDaBa was unable to read the date from the EXIF "
@@ -807,7 +813,7 @@ msgid ""
 "you did not install the package kde-graphics.</p></qt>"
 msgstr ""
 
-#: imageinfo.cpp:406
+#: imageinfo.cpp:371
 msgid "Unable to Read Date From EXIF Information"
 msgstr ""
 
@@ -817,6 +823,11 @@ msgid ""
 "<br>This might result in an unexpected sort order</br>"
 "<p>Are you sure you want to continue?</p></qt>"
 msgstr ""
+
+#: imageinfolist.cpp:66
+#, fuzzy
+msgid "Sort Images?"
+msgstr "Delweddau"
 
 #: imagesearchinfo.cpp:180
 #, c-format
@@ -844,45 +855,45 @@ msgid ""
 "No other %1"
 msgstr ""
 
-#: import.cpp:120 mainview.cpp:844
-msgid "Unable to open '%1' for reading"
+#: import.cpp:121
+msgid "Unable to open '%1' for reading."
 msgstr ""
 
-#: import.cpp:120
+#: import.cpp:121
 msgid "Error Importing Data"
 msgstr ""
 
-#: import.cpp:126
+#: import.cpp:127
 msgid ""
 "Error reading directory contents of file %1; it is likely that the file is "
 "broken."
 msgstr ""
 
-#: import.cpp:132
+#: import.cpp:133
 msgid "Error reading index.xml file from %1; it is likely that the file is broken."
 msgstr ""
 
-#: import.cpp:161
+#: import.cpp:162
 msgid "Error in file %1 on line %2 col %3: %4"
 msgstr ""
 
-#: import.cpp:167
+#: import.cpp:168
 msgid ""
 "Unexpected top element while reading file %1. Expected KimDaBa-export found "
 "%2"
 msgstr ""
 
-#: import.cpp:175
+#: import.cpp:176
 msgid ""
 "<qt>XML file did not specify the source of the images, this is a strong "
 "indication that the file is corrupted</qt>"
 msgstr ""
 
-#: import.cpp:187
+#: import.cpp:188
 msgid "Unknown element while reading %1, expected image."
 msgstr ""
 
-#: import.cpp:212
+#: import.cpp:213
 msgid ""
 "<qt>"
 "<h1><font size=\"+2\">Welcome to KimDaBa Import</font></h1>This wizard will "
@@ -908,84 +919,84 @@ msgid ""
 "match.</li></p></qt>"
 msgstr ""
 
-#: import.cpp:231
+#: import.cpp:232
 msgid "Introduction"
 msgstr "Cyflwyniad"
 
-#: import.cpp:247
+#: import.cpp:248
 msgid "Deselect All"
 msgstr "Datddewis Popeth"
 
-#: import.cpp:272
+#: import.cpp:273
 msgid "Select Which Images to Import"
 msgstr ""
 
-#: import.cpp:339
+#: import.cpp:318
 msgid "Destination of images: "
 msgstr ""
 
-#: import.cpp:353
+#: import.cpp:332
 #, fuzzy
 msgid "Destination of Images"
 msgstr "Cyrchfan"
 
-#: import.cpp:361
+#: import.cpp:340
 #, c-format
 msgid "The directory must be a subdirectory of %1"
 msgstr ""
 
-#: import.cpp:399
+#: import.cpp:380
 msgid "Match Categories"
 msgstr ""
 
-#: import.cpp:429
+#: import.cpp:410
 msgid "Directory %1 does not exists. Should it be created?"
 msgstr ""
 
-#: import.cpp:433
+#: import.cpp:414
 #, c-format
 msgid "Error creating directory %1"
 msgstr ""
 
-#: import.cpp:482
+#: import.cpp:463
 #, c-format
 msgid "Error when writing image %s"
 msgstr ""
 
-#: import.cpp:495
+#: import.cpp:476
 msgid "Copying Images"
 msgstr ""
 
-#: import.cpp:615
+#: import.cpp:596
 msgid ""
 "Export file did not contain a Thumbnails subdirectory, this indicates that "
 "the file is broken."
 msgstr ""
 
-#: import.cpp:620
+#: import.cpp:601
 msgid ""
 "Thumbnail item in export file was not a directory, this indicates that the "
 "file is broken."
 msgstr ""
 
-#: import.cpp:629
+#: import.cpp:610
 #, c-format
 msgid "No thumbnail existed in export file for %1"
 msgstr ""
 
-#: import.cpp:659
+#: import.cpp:640
 msgid ""
 "export file did not contain a Images subdirectory, this indicates that the "
 "file is broken"
 msgstr ""
 
-#: import.cpp:664
+#: import.cpp:645
 msgid ""
 "Images item in export file was not a directory, this indicates that the file "
 "is broken"
 msgstr ""
 
-#: import.cpp:672
+#: import.cpp:653
 #, c-format
 msgid "No image existed in export file for %1"
 msgstr ""
@@ -1051,63 +1062,82 @@ msgstr "heddiw"
 msgid "yesterday"
 msgstr "ddoe"
 
-#: listselect.cpp:305
+#: listselect.cpp:307
 msgid "AND"
 msgstr "A"
 
-#: listselect.cpp:309
+#: listselect.cpp:311
 msgid "Merge"
 msgstr "Cyfuno"
 
-#: listselect.cpp:391
+#: listselect.cpp:393
 msgid "No Item Selected"
 msgstr ""
 
-#: listselect.cpp:402
-msgid "Rename"
+#: listselect.cpp:401
+#, fuzzy
+msgid "Rename..."
 msgstr "Ail-enwi"
 
-#: listselect.cpp:409
+#: listselect.cpp:408 mysurvey.cpp:54 optionsdialog.cpp:594
+msgid "Member Groups"
+msgstr ""
+
+#: listselect.cpp:422
+#, fuzzy
+msgid "New Group..."
+msgstr "Grwp Newydd"
+
+#: listselect.cpp:426
 msgid "<qt><b>Sorting</b></qt>"
 msgstr ""
 
-#: listselect.cpp:413
+#: listselect.cpp:429
 msgid "Usage"
 msgstr ""
 
-#: listselect.cpp:414
+#: listselect.cpp:430
 msgid "Alphabetical"
 msgstr ""
 
-#: listselect.cpp:420
+#: listselect.cpp:444
 msgid ""
 "<qt>Do you really want to delete \"%1\"?"
 "<br>Deleting the item will remove any information about about it from any "
 "image containing the item.</qt>"
 msgstr ""
 
-#: listselect.cpp:424
+#: listselect.cpp:448
 msgid "Really Delete %1?"
 msgstr ""
 
-#: listselect.cpp:432
+#: listselect.cpp:456
 msgid "Rename Item"
 msgstr "Ailenwi Eitem"
 
-#: listselect.cpp:432
-#, c-format
-msgid "Rename %1"
-msgstr "Ail-enwi %1"
+#: listselect.cpp:456
+msgid "Enter new name:"
+msgstr ""
 
-#: listselect.cpp:436
+#: listselect.cpp:460
 msgid ""
 "<qt>Do you really want to rename \"%1\" to \"%2\"?"
 "<br>Doing so will rename \"%3\" on any image containing it.</qt>"
 msgstr ""
 
-#: listselect.cpp:440
+#: listselect.cpp:464
 msgid "Really Rename %1?"
 msgstr ""
+
+#: listselect.cpp:487
+#, fuzzy
+msgid "Member Group Name"
+msgstr "Enw'r grwp:"
+
+#: listselect.cpp:487
+#, fuzzy
+msgid "Member group name:"
+msgstr "Enw'r grwp:"
 
 #: main.cpp:31
 msgid "Config file"
@@ -1133,27 +1163,27 @@ msgstr ""
 msgid "Development"
 msgstr "Datblygiad"
 
-#: mainview.cpp:96
+#: mainview.cpp:97
 msgid "Loading Database"
 msgstr ""
 
-#: mainview.cpp:99
+#: mainview.cpp:100
 msgid "Loading Main Window"
 msgstr ""
 
-#: mainview.cpp:191
+#: mainview.cpp:192
 msgid "Welcome to KimDaBa"
 msgstr ""
 
-#: mainview.cpp:201
+#: mainview.cpp:202
 msgid "Loading Plugins"
 msgstr ""
 
-#: mainview.cpp:206
+#: mainview.cpp:207
 msgid "Searching for New Images"
 msgstr ""
 
-#: mainview.cpp:231
+#: mainview.cpp:234
 msgid ""
 "<qt>"
 "<p><b>Delete Your Temporary Demo Database</b></p>"
@@ -1164,39 +1194,40 @@ msgid ""
 "session.</p></qt>"
 msgstr ""
 
-#: mainview.cpp:236
+#: mainview.cpp:239
 msgid "Delete Demo Database"
 msgstr ""
 
-#: mainview.cpp:250
+#: mainview.cpp:253
 msgid "Do you want to save the changes?"
 msgstr ""
 
-#: mainview.cpp:251
+#: mainview.cpp:254
 msgid "Save Changes?"
 msgstr ""
 
-#: mainview.cpp:294
+#: mainview.cpp:297
 msgid "No Selection"
 msgstr "Dim detholiad"
 
-#: mainview.cpp:294
+#: mainview.cpp:297
 msgid "No item is selected."
 msgstr ""
 
-#: mainview.cpp:368
+#: mainview.cpp:371
 msgid "Saving..."
 msgstr "Cadw..."
 
-#: mainview.cpp:372
+#: mainview.cpp:375
 msgid "Saving... Done"
 msgstr ""
 
-#: mainview.cpp:391
-msgid "Could not open file '%1'"
+#: mainview.cpp:394
+#, fuzzy
+msgid "Could not open file '%1'."
 msgstr "Methu agor ffeil '%1'"
 
-#: mainview.cpp:419
+#: mainview.cpp:422
 msgid ""
 "<qt>"
 "<p>Be aware that reading EXIF info from files may <b>overwrite</b> data you "
@@ -1207,156 +1238,161 @@ msgid ""
 "their filenames can be seen below.</p></qt>"
 msgstr ""
 
-#: mainview.cpp:426
-msgid "Read EXIF info from files..."
+#: mainview.cpp:429
+msgid "Read EXIF Info From Files"
 msgstr ""
 
-#: mainview.cpp:490 thumbnailview.cpp:66
+#: mainview.cpp:493 thumbnailview.cpp:67
 msgid "No Images to Display"
 msgstr ""
 
-#: mainview.cpp:491
+#: mainview.cpp:494
 msgid "None of the selected images were available on the disk."
 msgstr ""
 
-#: mainview.cpp:563
+#: mainview.cpp:568
 msgid "Generate HTML..."
 msgstr ""
 
-#: mainview.cpp:565
+#: mainview.cpp:570
 msgid "Import..."
 msgstr "Mewnforio..."
 
-#: mainview.cpp:566
+#: mainview.cpp:571
 msgid "Export..."
 msgstr "Allforio..."
 
-#: mainview.cpp:585
+#: mainview.cpp:590
 msgid "Delete Selected"
 msgstr ""
 
-#: mainview.cpp:587 tokeneditor.cpp:10
+#: mainview.cpp:592 tokeneditor.cpp:10
 msgid "Remove Tokens"
 msgstr ""
 
-#: mainview.cpp:588
-msgid "Configure Images &One at a Time"
+#: mainview.cpp:593
+msgid "Configure Images &One at a Time..."
 msgstr ""
 
-#: mainview.cpp:590
-msgid "Configure &All Images Simultaneously"
+#: mainview.cpp:595
+msgid "Configure &All Images Simultaneously..."
 msgstr ""
 
-#: mainview.cpp:597
+#: mainview.cpp:602
 msgid "View (In New Window)"
 msgstr ""
 
-#: mainview.cpp:599
+#: mainview.cpp:604
 msgid "Run Slide Show"
 msgstr ""
 
-#: mainview.cpp:601
+#: mainview.cpp:606
 msgid "Run Randomized Slide Show"
 msgstr ""
 
-#: mainview.cpp:604
+#: mainview.cpp:609
 msgid "Sort Selected by Date && Time"
 msgstr ""
 
-#: mainview.cpp:605
+#: mainview.cpp:610
 msgid "Limit View to Marked"
 msgstr ""
 
-#: mainview.cpp:607
+#: mainview.cpp:612
 msgid "Jump to Context"
 msgstr ""
 
-#: mainview.cpp:610
+#: mainview.cpp:615
 msgid "Lock Images"
 msgstr ""
 
-#: mainview.cpp:612
+#: mainview.cpp:617
 msgid "Unlock"
 msgstr "Datgloi"
 
-#: mainview.cpp:614
+#: mainview.cpp:619
 msgid "Change Password..."
 msgstr "Newid Cyfrinair..."
 
-#: mainview.cpp:617
+#: mainview.cpp:622
 msgid "Lock Away All Other Images"
 msgstr ""
 
-#: mainview.cpp:619
+#: mainview.cpp:624
 msgid "Lock Away Current Set of Images"
 msgstr ""
 
-#: mainview.cpp:623
+#: mainview.cpp:628
 msgid "Display Images Not on Disk"
 msgstr ""
 
-#: mainview.cpp:624
-msgid "Display Images with Incomplete Dates"
+#: mainview.cpp:629
+msgid "Display Images with Incomplete Dates..."
 msgstr ""
 
-#: mainview.cpp:625
+#: mainview.cpp:630
 msgid "Recalculate Checksum"
 msgstr ""
 
-#: mainview.cpp:626
+#: mainview.cpp:631
 msgid "Rescan for Images"
 msgstr ""
 
-#: mainview.cpp:627
+#: mainview.cpp:632
 msgid "Read EXIF Info From Files..."
 msgstr ""
 
-#: mainview.cpp:628
-msgid "Remove All Thumbnails..."
-msgstr ""
+#: mainview.cpp:633
+#, fuzzy
+msgid "Remove All Thumbnails"
+msgstr "Creu rhagolygon cryno"
 
-#: mainview.cpp:629
+#: mainview.cpp:634
 #, fuzzy
 msgid "Build Thumbnails"
 msgstr "Maint y rhagolygon cryno"
 
-#: mainview.cpp:635
+#: mainview.cpp:640
 msgid "Enable All Messages"
 msgstr ""
 
-#: mainview.cpp:637
+#: mainview.cpp:642
 msgid "Configure View"
 msgstr ""
 
-#: mainview.cpp:641 optionsdialog.cpp:350
+#: mainview.cpp:646 optionsdialog.cpp:350
 msgid "Small List View"
 msgstr ""
 
-#: mainview.cpp:646 optionsdialog.cpp:350
+#: mainview.cpp:651 optionsdialog.cpp:350
 msgid "Large List View"
 msgstr ""
 
-#: mainview.cpp:651 optionsdialog.cpp:350
+#: mainview.cpp:656 optionsdialog.cpp:350
 msgid "Small Icon View"
 msgstr ""
 
-#: mainview.cpp:656 optionsdialog.cpp:350
+#: mainview.cpp:661 optionsdialog.cpp:350
 msgid "Large Icon View"
 msgstr ""
 
-#: mainview.cpp:665
+#: mainview.cpp:670
 msgid "Show Tooltips on Images"
 msgstr ""
 
-#: mainview.cpp:667
+#: mainview.cpp:672
 msgid "Run KimDaBa Demo"
 msgstr ""
 
-#: mainview.cpp:668
+#: mainview.cpp:673
+msgid "Answer KimDaBa Survey..."
+msgstr ""
+
+#: mainview.cpp:674
 msgid "Donate Money..."
 msgstr ""
 
-#: mainview.cpp:683
+#: mainview.cpp:689
 msgid ""
 "<qt>You are about to generate an HTML page for %1 images, which are all the "
 "images in your current context. If you only want to generate HTML for the "
@@ -1364,15 +1400,15 @@ msgid ""
 "edit menu and choose generate.</qt>"
 msgstr ""
 
-#: mainview.cpp:713
+#: mainview.cpp:719
 msgid "Auto saving...."
 msgstr ""
 
-#: mainview.cpp:715
+#: mainview.cpp:721
 msgid "Auto saving.... Done"
 msgstr ""
 
-#: mainview.cpp:820
+#: mainview.cpp:823
 msgid ""
 "<qt>"
 "<p>KimDaBa was unable to load a default setup, which indicates an "
@@ -1389,56 +1425,60 @@ msgid ""
 "where setting the <b>PATH</b> environment variable</p></qt>"
 msgstr ""
 
-#: mainview.cpp:827
+#: mainview.cpp:830
 msgid "No default setup file found"
 msgstr ""
 
-#: mainview.cpp:844 util.cpp:235 util.cpp:255 util.cpp:269 util.cpp:282
+#: mainview.cpp:847
+msgid "Unable to open '%1' for reading"
+msgstr ""
+
+#: mainview.cpp:847 util.cpp:235 util.cpp:255 util.cpp:269 util.cpp:282
 #: util.cpp:294
 msgid "Error Running Demo"
 msgstr ""
 
-#: mainview.cpp:853
+#: mainview.cpp:856
 msgid "Error on line %1 column %2 in file %3: %4"
 msgstr ""
 
-#: mainview.cpp:861
+#: mainview.cpp:864
 msgid "Error in file %1: No elements found"
 msgstr ""
 
-#: mainview.cpp:866
+#: mainview.cpp:869
 msgid "Error in file %1: expected 'KimDaBa' as top element but found '%2'"
 msgstr ""
 
-#: mainview.cpp:894
+#: mainview.cpp:897
 msgid "Error in file %1: unexpected element: '%2*"
 msgstr ""
 
-#: mainview.cpp:900
+#: mainview.cpp:903
 #, c-format
-msgid "Unable to find 'Config' tag in configuration file %1"
+msgid "Unable to find 'Config' tag in configuration file %1."
 msgstr ""
 
-#: mainview.cpp:902
+#: mainview.cpp:905
 #, c-format
-msgid "Unable to find 'Options' tag in configuration file %1"
+msgid "Unable to find 'Options' tag in configuration file %1."
 msgstr ""
 
-#: mainview.cpp:904
+#: mainview.cpp:907
 #, c-format
-msgid "Unable to find 'ConfigWindowSetup' tag in configuration file %1"
+msgid "Unable to find 'ConfigWindowSetup' tag in configuration file %1."
 msgstr ""
 
-#: mainview.cpp:906
+#: mainview.cpp:909
 #, c-format
-msgid "Unable to find 'Images' tag in configuration file %1"
+msgid "Unable to find 'Images' tag in configuration file %1."
 msgstr ""
 
-#: mainview.cpp:938 viewer.cpp:227
+#: mainview.cpp:941 viewer.cpp:227
 msgid "Invoke External Program"
 msgstr ""
 
-#: mainview.cpp:982
+#: mainview.cpp:985
 msgid ""
 "<qt>"
 "<p>"
@@ -1449,39 +1489,39 @@ msgid ""
 "circumvent this password.</b></p>"
 msgstr ""
 
-#: mainview.cpp:987
+#: mainview.cpp:990
 msgid "Password Protection"
 msgstr ""
 
-#: mainview.cpp:1002
-msgid "Type in Password to unlock"
+#: mainview.cpp:1005
+msgid "Type in Password to Unlock"
 msgstr ""
 
-#: mainview.cpp:1008 mainview.cpp:1044
+#: mainview.cpp:1011 mainview.cpp:1047
 msgid "Invalid password."
 msgstr ""
 
-#: mainview.cpp:1038
-msgid "Type in old Password"
+#: mainview.cpp:1041
+msgid "Type in Old Password"
 msgstr ""
 
-#: mainview.cpp:1047
+#: mainview.cpp:1050
 msgid "Type in New Password"
 msgstr ""
 
-#: mainview.cpp:1056 optionsdialog.cpp:67
+#: mainview.cpp:1059 optionsdialog.cpp:67
 msgid "General"
 msgstr "Cyffredinol"
 
-#: mainview.cpp:1057 optionsdialog.cpp:803
+#: mainview.cpp:1060 optionsdialog.cpp:803
 msgid "Viewer"
 msgstr "Gwelydd"
 
-#: mainview.cpp:1191
-msgid "No images to export"
+#: mainview.cpp:1194
+msgid "No images to export."
 msgstr ""
 
-#: mainview.cpp:1199
+#: mainview.cpp:1202
 msgid ""
 "<qt>"
 "<p>Really enable all messageboxes where you previously checked the "
@@ -1498,6 +1538,169 @@ msgstr ""
 msgid "KimDaBa %1"
 msgstr ""
 
+#: mysurvey.cpp:17
+msgid ""
+"<qt>"
+"<p>"
+"This is the KimDaBa survey, its intention is to make KimDaBa fit the need of "
+"<i>you</i> - my valued user.</p>"
+"I have spent most of my sparetime on KimDaBa the last two and a half year, "
+"so I'd be really happy if you could spent the next five to ten minute "
+"telling me what you think about it, and giving me some feedback on which "
+"part of the application you are using.</p>"
+"<p>At any time you may quit the survey and get back to it later, it will "
+"remember your answers</p><p align=\"right\">Thanks in advance - "
+"Jesper</p></qt>"
+msgstr ""
+
+#: mysurvey.cpp:28
+msgid "Length of Usage"
+msgstr ""
+
+#: mysurvey.cpp:30
+msgid "How long have you used KimDaBa?"
+msgstr ""
+
+#: mysurvey.cpp:31
+msgid "< 1 Month"
+msgstr ""
+
+#: mysurvey.cpp:31
+msgid "1-6 Months"
+msgstr ""
+
+#: mysurvey.cpp:31
+msgid "6-12 Months"
+msgstr ""
+
+#: mysurvey.cpp:32
+msgid "1-2 Year"
+msgstr ""
+
+#: mysurvey.cpp:32
+msgid "> 2 Years"
+msgstr ""
+
+#: mysurvey.cpp:35
+#, fuzzy
+msgid "Image Count"
+msgstr "Delweddau"
+
+#: mysurvey.cpp:39
+msgid "Start Up Time"
+msgstr ""
+
+#: mysurvey.cpp:40
+msgid ""
+"It is always possible to get KimDaBa to start faster, but doing so would "
+"e.g. mean that KimDaBa's backend should be changed from an XML file to a "
+"database. Doing so would take time, time that otherwise could be spent on "
+"implementing other features in KimDaBa."
+msgstr ""
+
+#: mysurvey.cpp:44
+msgid "Would you prefer that time was spent on making KimDaBa faster?"
+msgstr ""
+
+#: mysurvey.cpp:49
+#, fuzzy
+msgid "Categories Used"
+msgstr "Categoriau"
+
+#: mysurvey.cpp:51
+msgid "Which categories are you using?"
+msgstr ""
+
+#: mysurvey.cpp:55
+msgid ""
+"One of the main features of KimDaBa is that it is possible to create member "
+"groups. Using this feature, you can specify that Las Vegas is in Nevada, "
+"which is in USA, which is on the earth and so on. Whenever you look for "
+"images from Nevada, USA, or the earth, you will also see the images from Las "
+"Vegas."
+msgstr ""
+
+#: mysurvey.cpp:59
+msgid "Are you using member groups?"
+msgstr ""
+
+#: mysurvey.cpp:62
+msgid "No but I expect to have within the next year"
+msgstr ""
+
+#: mysurvey.cpp:62
+msgid "No and I don't expect within the next year"
+msgstr ""
+
+#: mysurvey.cpp:63
+msgid "Offline Mode"
+msgstr ""
+
+#: mysurvey.cpp:64
+msgid ""
+"<p>If you have more images than can be stored on your disk, KimDaBa allows "
+"you to store some of them on offline medias like cd's or dvd's. If an image "
+"is not available, KimDaBa will show it with the corner cut off in the "
+"thumbnail viewer.</p>"
+"<p>Currently you need to restart KimDaBa when an image has become available "
+"(like a dvd has been mounted), and you need to do quite a bit of symlinks "
+"tricks to always show the thumbnails even when the real images is not "
+"available.</p>"
+msgstr ""
+
+#: mysurvey.cpp:69
+msgid "Are you having more images than fits on your disk?"
+msgstr ""
+
+#: mysurvey.cpp:74
+msgid "Other Image Applications"
+msgstr ""
+
+#: mysurvey.cpp:76
+msgid "Which other image applications are you using?"
+msgstr ""
+
+#: mysurvey.cpp:80
+msgid "Private albums"
+msgstr ""
+
+#: mysurvey.cpp:80
+msgid "Professional"
+msgstr ""
+
+#: mysurvey.cpp:83 mysurvey.cpp:84
+msgid "For what are you using KimDaBa?"
+msgstr ""
+
+#: mysurvey.cpp:88
+#, fuzzy
+msgid "General Comments"
+msgstr "Cyffredinol"
+
+#: mysurvey.cpp:89
+msgid ""
+"<qt>If you have any comments that you would like to make, here would be a "
+"good place. comments like <i>This is really an awesome piece of software, "
+"how did I live without</i> is of course very welcome, but I'd also like to "
+"know if you see a feature missing that would prevent you from getting your "
+"best friend using KimDaBa.</qt>"
+msgstr ""
+
+#: mysurvey.cpp:94
+msgid ""
+"<qt>"
+"<p>"
+"Thank you very much for your time, I hope you will continue using KimDaBa "
+"for many years to come, and that future versions will fit your purpose even "
+"better than it does today.</p>Finally, allow me to ask you to consider "
+"giving a donation. My own digital camera is starting to get old so I hope "
+"that all of you would show your appreciation of my work, by helping me buy a "
+"new one, that will ensure that I enjoy taking pictures - and sorting them "
+"for many years to come. See the Help->Donation menu on how to make a "
+"donation.</p><p align=\"right\">Once again thanks for filling out this "
+"survey - Jesper</p></qt>"
+msgstr ""
+
 #: options.cpp:294
 msgid "New images were found. Should I trust their time stamps?"
 msgstr ""
@@ -1511,8 +1714,8 @@ msgid "Unable to Create Directory"
 msgstr ""
 
 #: options.cpp:580
-#, c-format
-msgid "Unable to create directory %1"
+#, fuzzy
+msgid "Unable to create directory '%1'."
 msgstr "Methru creu cyfeiriadur %1"
 
 #: options.cpp:587
@@ -1520,8 +1723,7 @@ msgid "Error Saving Image"
 msgstr ""
 
 #: options.cpp:587
-#, c-format
-msgid "Error when saving image %1"
+msgid "Error when saving image '%1'."
 msgstr ""
 
 #: optionsdialog.cpp:72
@@ -1558,7 +1760,7 @@ msgid "Search for new images on startup"
 msgstr ""
 
 #: optionsdialog.cpp:97
-msgid "Size of histogram boxes in datebar"
+msgid "Size of histogram boxes in datebar:"
 msgstr ""
 
 #: optionsdialog.cpp:109
@@ -1672,7 +1874,7 @@ msgid "Automatically show thumbnail view when images matches gets below: "
 msgstr ""
 
 #: optionsdialog.cpp:237
-msgid "Align Columns"
+msgid "Align columns"
 msgstr ""
 
 #: optionsdialog.cpp:247
@@ -1708,7 +1910,7 @@ msgstr ""
 msgid ""
 "<qt>"
 "<p>When you are browsing the images, and the count gets below the value "
-"specified here, the thumbnils will automatically be shown. The alternative "
+"specified here, the thumbnails will be shown automatically. The alternative "
 "is to continue showing the browser until you press <i>Show "
 "Images</i>."
 "<p>"
@@ -1738,10 +1940,6 @@ msgstr "Newydd"
 msgid "<qt>Really delete group '%1'?<br>%2 images contains information in that group"
 msgstr ""
 
-#: optionsdialog.cpp:594
-msgid "Member Groups"
-msgstr ""
-
 #: optionsdialog.cpp:601
 msgid "Category:"
 msgstr "Categori :"
@@ -1762,7 +1960,7 @@ msgstr "Ychwanegu Grŵp"
 msgid "Rename Group..."
 msgstr "Ail-enwi'r Grŵp ..."
 
-#: optionsdialog.cpp:631
+#: optionsdialog.cpp:631 optionsdialog.cpp:728
 msgid "Delete Group"
 msgstr ""
 
@@ -1775,8 +1973,7 @@ msgid "Group name:"
 msgstr "Enw'r grwp:"
 
 #: optionsdialog.cpp:728
-#, c-format
-msgid "Really delete group %1"
+msgid "Really delete group %1?"
 msgstr ""
 
 #: optionsdialog.cpp:808
@@ -1905,7 +2102,7 @@ msgid "Search"
 msgstr "Chwilio"
 
 #: searchfolder.cpp:56
-msgid "Search did not match any images"
+msgid "Search did not match any images."
 msgstr ""
 
 #: searchfolder.cpp:56
@@ -1929,6 +2126,18 @@ msgstr ""
 msgid "<qt><center><font size=\"+4\">Ending Slideshow</font></center></qt>"
 msgstr ""
 
+#: survey-count.cpp:13
+msgid "How many images are in your database:"
+msgstr ""
+
+#: survey-count.cpp:19
+msgid "How many percentages of your images are scanned in: "
+msgstr ""
+
+#: survey-count.cpp:21
+msgid "None"
+msgstr ""
+
 #: thumbnail.cpp:123
 msgid "KimDaBa does not support data being dragged onto it."
 msgstr ""
@@ -1937,33 +2146,33 @@ msgstr ""
 msgid "Generating thumbnails"
 msgstr ""
 
-#: thumbnailview.cpp:67
+#: thumbnailview.cpp:68
 msgid "The selected image was not available on disk."
 msgstr ""
 
-#: thumbnailview.cpp:158
-msgid "Please drop onto an image"
+#: thumbnailview.cpp:169
+msgid "Please drop onto an image."
 msgstr ""
 
-#: thumbnailview.cpp:194
-msgid "Nothing Selected"
-msgstr ""
-
-#: thumbnailview.cpp:194
+#: thumbnailview.cpp:205
 msgid "To paste you have to select an image that the past should go after."
 msgstr ""
 
-#: thumbnailview.cpp:197
-msgid "Nothing on Clipboard"
+#: thumbnailview.cpp:205
+msgid "Nothing Selected"
 msgstr ""
 
-#: thumbnailview.cpp:197
+#: thumbnailview.cpp:208
 msgid ""
 "<qt>"
 "<p>No data on clipboard to paste.</p>"
 "<p>It really does not make any sense to the application to have an image "
 "represented twice, therefore you can only paste an image off the clipboard "
 "once.</p>"
+msgstr ""
+
+#: thumbnailview.cpp:211
+msgid "Nothing on Clipboard"
 msgstr ""
 
 #: tokeneditor.cpp:15
@@ -1977,8 +2186,8 @@ msgstr "Dewis Dim"
 #: typefolder.cpp:88
 #, c-format
 msgid ""
-"_n: 1 category\n"
-"%n categories"
+"_n: 1 Category\n"
+"%n Categories"
 msgstr ""
 
 #: util.cpp:151
@@ -2004,19 +2213,20 @@ msgid "Found Backup File"
 msgstr ""
 
 #: util.cpp:235 util.cpp:282
-msgid "Unable to create directory '%1' needed for demo"
-msgstr ""
+#, fuzzy
+msgid "Unable to create directory '%1' needed for demo."
+msgstr "Methru creu cyfeiriadur %1"
 
 #: util.cpp:255
-msgid "Unable to open '%1' for writting"
+msgid "Unable to open '%1' for writing."
 msgstr ""
 
 #: util.cpp:269
-msgid "Unable to copy '%1' to '%2'"
+msgid "Unable to copy '%1' to '%2'."
 msgstr ""
 
 #: util.cpp:294
-msgid "Unable to make symlink from '%1' to '%2'"
+msgid "Unable to make symlink from '%1' to '%2'."
 msgstr ""
 
 #: util.cpp:340
@@ -2153,7 +2363,7 @@ msgid "Draw on Image"
 msgstr ""
 
 #: viewer.cpp:234
-msgid "Edit Image Properties"
+msgid "Edit Image Properties..."
 msgstr ""
 
 #: viewer.cpp:238
@@ -2199,7 +2409,7 @@ msgid "Load Demo"
 msgstr ""
 
 #: welcomedialog.cpp:60
-msgid "Create My Own Database"
+msgid "Create My Own Database..."
 msgstr ""
 
 #: welcomedialog.cpp:89
@@ -2379,6 +2589,17 @@ msgid ""
 "please\n"
 "send an email to <a href=\"mailto:blackie@kde.org\">blackie@kde.org</a></p>\n"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Add to group"
+#~ msgstr "Ychwanegu Grŵp"
+
+#~ msgid "Rename %1"
+#~ msgstr "Ail-enwi %1"
+
+#, fuzzy
+#~ msgid "Images Ranges"
+#~ msgstr "Delweddau"
 
 #~ msgid "Group"
 #~ msgstr "Gr?p"

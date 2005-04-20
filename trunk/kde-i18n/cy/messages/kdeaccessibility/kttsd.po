@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: all2.po\n"
-"POT-Creation-Date: 2005-03-11 01:27+0100\n"
+"POT-Creation-Date: 2005-04-20 15:10+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. i18n: file kcmkttsmgr/addtalkerwidget.ui line 16
-#: kcmkttsmgr/kcmkttsmgr.cpp:1085 rc.cpp:9
+#: kcmkttsmgr/kcmkttsmgr.cpp:1131 rc.cpp:9
 #, no-c-format
 msgid "Add Talker"
 msgstr ""
@@ -31,7 +31,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file kcmkttsmgr/addtalkerwidget.ui line 95
-#: rc.cpp:19 rc.cpp:560
+#: rc.cpp:19 rc.cpp:406 rc.cpp:729
 #, no-c-format
 msgid "&Synthesizer:"
 msgstr ""
@@ -53,7 +53,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file kcmkttsmgr/addtalkerwidget.ui line 200
-#: rc.cpp:31 rc.cpp:546
+#: rc.cpp:31 rc.cpp:426 rc.cpp:715
 #, no-c-format
 msgid "&Language:"
 msgstr "&Iaith:"
@@ -94,54 +94,14 @@ msgstr ""
 msgid "Check to start the KTTS Deamon and enable Text-to-Speech."
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 87
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 67
 #: rc.cpp:54
 #, no-c-format
-msgid "&Notifications"
+msgid "Always em&bed Text-to-Speech Manager in system tray"
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 106
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 73
 #: rc.cpp:57
-#, no-c-format
-msgid "&Speak notifications (KNotify)"
-msgstr ""
-
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 109
-#: rc.cpp:60
-#, no-c-format
-msgid ""
-"Check to enable speaking of messages routed from applications through "
-"KNotify, the KDE Notification system."
-msgstr ""
-
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 144
-#: rc.cpp:63
-#, no-c-format
-msgid "&Passive popups only"
-msgstr ""
-
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 147
-#: rc.cpp:66 rc.cpp:72
-#, no-c-format
-msgid ""
-"Check to limit notification speaking to those messages displayed in passive "
-"popups only."
-msgstr ""
-
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 182
-#: rc.cpp:69
-#, no-c-format
-msgid "Messages in popup &windows only"
-msgstr ""
-
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 200
-#: rc.cpp:75
-#, no-c-format
-msgid "Em&bed Text-to-Speech Manager in system tray"
-msgstr ""
-
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 206
-#: rc.cpp:78
 #, no-c-format
 msgid ""
 "When checked, KTTSMgr displays an icon in the system tray, and clicking OK "
@@ -150,14 +110,14 @@ msgid ""
 "setting has no effect when running in the KDE Control Center."
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 256
-#: rc.cpp:81
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 123
+#: rc.cpp:60
 #, no-c-format
 msgid "Show &main window on startup"
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 262
-#: rc.cpp:84
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 129
+#: rc.cpp:63
 #, no-c-format
 msgid ""
 "When checked, the KTTSMgr window is displayed when KTTSMgr starts.  When "
@@ -165,257 +125,493 @@ msgid ""
 "window."
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 274
-#: rc.cpp:87
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 164
+#: rc.cpp:66
 #, no-c-format
-msgid "&Filters"
-msgstr "&Hidlenni"
-
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 291
-#: kcmkttsmgr/kcmkttsmgr.cpp:1294 rc.cpp:90
-#, no-c-format
-msgid "Filter"
-msgstr "Hidlo"
-
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 304
-#: rc.cpp:93 rc.cpp:130
-#, no-c-format
-msgid ""
-"This is a list of all the configured Filters.  Filters higher in the list "
-"are applied first."
+msgid "E&xit when speaking is finished"
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 328
-#: rc.cpp:96 rc.cpp:166
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 170
+#: rc.cpp:69
+#, no-c-format
+msgid ""
+"When checked, and KTTSMgr was automatically started when speech began, "
+"automatically exits when speech has finished.  Does not automatically exit "
+"if KTTSMgr was started manually or started from the Control Center."
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 180
+#: rc.cpp:72
+#, no-c-format
+msgid "Sta&rt minimized in system tray when speaking"
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 186
+#: rc.cpp:75
+#, no-c-format
+msgid ""
+"When checked, if KTTSMgr is not already running and speech begins, starts "
+"KTTSMgr and displays an icon in the system tray.  <em>Note<em>"
+": KTTSMgr only automatically starts for text jobs having 5 sentences or more."
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 196
+#: rc.cpp:78
+#, no-c-format
+msgid "&Talkers"
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 205
+#: rc.cpp:81
+#, no-c-format
+msgid "ID"
+msgstr "ID"
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 216
+#: filters/sbd/sbdconf.cpp:239
+#: filters/stringreplacer/stringreplacerconf.cpp:423
+#: filters/talkerchooser/talkerchooserconf.cpp:316
+#: kcmkttsmgr/kcmkttsmgr.cpp:1154 libkttsd/selecttalkerdlg.cpp:167 rc.cpp:84
+#: rc.cpp:446
+#, no-c-format
+msgid "Language"
+msgstr "Iaith"
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 227
+#: rc.cpp:87 rc.cpp:449
+#, no-c-format
+msgid "Speech Synthesizer"
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 238
+#: rc.cpp:90 rc.cpp:452
+#, no-c-format
+msgid "Voice"
+msgstr "Llais"
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 249
+#: rc.cpp:93 rc.cpp:455 rc.cpp:1209
+#, no-c-format
+msgid "Gender"
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 260
+#: rc.cpp:96 rc.cpp:458
+#, no-c-format
+msgid "Volume"
+msgstr "Lefel Sain"
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 271
+#: rc.cpp:99 rc.cpp:461
+#, no-c-format
+msgid "Rate"
+msgstr "Cyfradd"
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 284
+#: rc.cpp:102 rc.cpp:464
+#, no-c-format
+msgid ""
+"This is a list of all the configured Talkers.  A Talker is a speech "
+"synthesizer that has been configured with a language, voice, gender, "
+"speaking rate, and volume.  Talkers higher in the list have higher priority. "
+" The topmost Talker will be used when no talker attributes have been "
+"specified by an application."
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 308
+#: rc.cpp:105 rc.cpp:156 rc.cpp:242
 #, no-c-format
 msgid "Add..."
 msgstr "Ychwanegu..."
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 334
-#: rc.cpp:100
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 314
+#: rc.cpp:109
 #, no-c-format
-msgid "Click to add and configure a new Filter."
+msgid "Click to add and configure a new Talker (speech synthesizer)."
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 351
-#: kcmkttsmgr/kcmkttsmgr.cpp:141 rc.cpp:103 rc.cpp:173
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 331
+#: kcmkttsmgr/kcmkttsmgr.cpp:166 rc.cpp:112 rc.cpp:249
 #, no-c-format
 msgid "U&p"
 msgstr "I& fyny"
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 354
-#: rc.cpp:106
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 347
+#: kcmkttsmgr/kcmkttsmgr.cpp:168 rc.cpp:115 rc.cpp:255 rc.cpp:652
+#, no-c-format
+msgid "Do&wn"
+msgstr "I la&wr"
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 366
+#: kcmkttsmgr/kcmkttsmgr.cpp:164 rc.cpp:118 rc.cpp:261 rc.cpp:658
+#, no-c-format
+msgid "&Edit..."
+msgstr "&Golygu..."
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 372
+#: rc.cpp:121
+#, no-c-format
+msgid "Click to configure options for the highlighted Talker."
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 397
+#: rc.cpp:127
+#, no-c-format
+msgid "Click to remove the highlighted Talker."
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 426
+#: rc.cpp:130
+#, no-c-format
+msgid "&Notifications"
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 452
+#: rc.cpp:134
+#, no-c-format
+msgid "Application/Event"
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 463
+#: rc.cpp:137
+#, no-c-format
+msgid "Action"
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 474
+#: rc.cpp:140
+#, no-c-format
+msgid "Talker"
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 493
+#: rc.cpp:144
+#, no-c-format
+msgid ""
+"This is a list of configured application events and actions to be taken when "
+"received.  The \"default\" event governs all events not specifically "
+"configured."
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 517
+#: rc.cpp:147
+#, no-c-format
+msgid "Notifications to speak:"
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 523
+#: rc.cpp:150 rc.cpp:153
+#, no-c-format
+msgid ""
+"Applies only to the default event.  Does not affect application-specific "
+"events.  Only events that display in the manner which you select will be "
+"spoken."
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 555
+#: rc.cpp:160
+#, no-c-format
+msgid "Click to configure notification for a specific application event."
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 563
+#: kttsjobmgr/kttsjobmgr.cpp:207 rc.cpp:163
+#, fuzzy, no-c-format
+msgid "Re&move"
+msgstr "Ail-ddechrau"
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 566
+#: rc.cpp:166
+#, no-c-format
+msgid ""
+"Click to remove a specific notification event from the list.  You cannot "
+"remove the default event."
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 591
+#: rc.cpp:169
+#, fuzzy, no-c-format
+msgid "Cl&ear"
+msgstr "Clir&io"
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 594
+#: rc.cpp:172
+#, no-c-format
+msgid "Removes all the application specific events.  The default event remains."
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 602
+#: rc.cpp:175
+#, fuzzy, no-c-format
+msgid "&Load..."
+msgstr "Llwytho..."
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 605
+#: rc.cpp:178
+#, no-c-format
+msgid "Click to read configured notification events from a file."
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 613
+#: rc.cpp:181 rc.cpp:619
+#, no-c-format
+msgid "&Save..."
+msgstr "&Cadw..."
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 616
+#: rc.cpp:184
+#, no-c-format
+msgid "Click to write all the configured application events to a file."
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 637
+#: rc.cpp:188
+#, no-c-format
+msgid "Click to test notification"
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 640
+#: rc.cpp:191
+#, no-c-format
+msgid ""
+"Click this button to test the notification.  A sample message will be "
+"spoken.  Note: The Text-to-Speech system must be enabled."
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 656
+#: rc.cpp:194
+#, no-c-format
+msgid "Ac&tion:"
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 662
+#: rc.cpp:197 rc.cpp:200 rc.cpp:203
+#, no-c-format
+msgid ""
+"<qt>Specifies how KTTS should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the "
+"event</dd><dt>%m</dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 712
+#: rc.cpp:206
+#, no-c-format
+msgid "Talke&r:"
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 718
+#: rc.cpp:209 rc.cpp:212
+#, no-c-format
+msgid ""
+"The Talker that will speak the notification.  The \"default\" Talker is the "
+"topmost talker listed on the Talkers tab."
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 744
+#: rc.cpp:215 rc.cpp:432 rc.cpp:491 rc.cpp:524 rc.cpp:567 rc.cpp:603
+#: rc.cpp:703 rc.cpp:721
+#, no-c-format
+msgid "..."
+msgstr "..."
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 747
+#: rc.cpp:218
+#, no-c-format
+msgid "Click to select the Talker to speak the notification."
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 767
+#: rc.cpp:221
+#, no-c-format
+msgid "Speak notifications (&KNotify)"
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 770
+#: rc.cpp:224
+#, no-c-format
+msgid ""
+"When checked and KTTS is enabled, notification events from applications sent "
+"via KNotify will be spoken according to the options you set on this tab."
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 795
+#: rc.cpp:227
+#, no-c-format
+msgid "E&xclude notifications with a sound"
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 801
+#: rc.cpp:230
+#, no-c-format
+msgid "When checked, notification events that have a sound will not be spoken."
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 813
+#: rc.cpp:233
+#, no-c-format
+msgid "&Filters"
+msgstr "&Hidlenni"
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 830
+#: kcmkttsmgr/kcmkttsmgr.cpp:1347 rc.cpp:236
+#, no-c-format
+msgid "Filter"
+msgstr "Hidlo"
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 846
+#: rc.cpp:239
+#, no-c-format
+msgid ""
+"This is a list of all the configured Filters.  Filters higher in the list "
+"are applied first.  Filters modify text before it is spoken.  They can be "
+"used to substitute for mispronounced words, transform XML from one form to "
+"another, or change the default Talker to be used for speech output."
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 876
+#: rc.cpp:246
+#, no-c-format
+msgid "Click to add and configure a new Filter."
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 896
+#: rc.cpp:252
 #, no-c-format
 msgid ""
 "Click to move selected filter up in the list.  Filters higher in the list "
 "are applied first."
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 370
-#: kcmkttsmgr/kcmkttsmgr.cpp:143 rc.cpp:109 rc.cpp:176 rc.cpp:483
-#, no-c-format
-msgid "Do&wn"
-msgstr "I la&wr"
-
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 373
-#: rc.cpp:112
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 915
+#: rc.cpp:258
 #, no-c-format
 msgid ""
 "Click to move a filter down in the list.  Filters lower in the list are "
 "applied last."
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 392
-#: kcmkttsmgr/kcmkttsmgr.cpp:139 rc.cpp:115 rc.cpp:179 rc.cpp:489
-#, no-c-format
-msgid "&Edit..."
-msgstr "&Golygu..."
-
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 398
-#: rc.cpp:118
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 940
+#: rc.cpp:264
 #, no-c-format
 msgid "Click to configure options for the highlighted Filter."
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 423
-#: rc.cpp:124
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 965
+#: rc.cpp:270
 #, no-c-format
 msgid "Click to remove the highlighted Filter."
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 458
-#: rc.cpp:127
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1000
+#: rc.cpp:273
 #, no-c-format
 msgid "Sentence Boundary Detector"
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 495
-#: rc.cpp:133
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1016
+#: rc.cpp:276
+#, no-c-format
+msgid ""
+"This is a list of all the configured Sentence Boundary Detector (SBD) "
+"Filters.  SBDs break long text jobs up into sentences, which reduces the "
+"time before a job begins speaking, and permits you to advance or rewind "
+"through a job.  SBDs are applied in the order listed (top to bottom) after "
+"all the normal filters at the top of this screen have been applied.  "
+"Filtering stops when the first SBD modifies the text."
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1040
+#: rc.cpp:279
 #, no-c-format
 msgid "Co&nfigure"
 msgstr "Ff&urfweddu"
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 498
-#: rc.cpp:136
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1043
+#: rc.cpp:282
 #, no-c-format
 msgid ""
 "Click this button to edit the Sentence Boundary Detector (SBD) configuration "
 "or add additional SBD filters."
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 529
-#: rc.cpp:139
-#, no-c-format
-msgid "&Talkers"
-msgstr ""
-
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 538
-#: rc.cpp:142
-#, no-c-format
-msgid "ID"
-msgstr "ID"
-
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 549
-#: filters/sbd/sbdconf.cpp:233
-#: filters/stringreplacer/stringreplacerconf.cpp:417
-#: filters/talkerchooser/talkerchooserconf.cpp:310
-#: kcmkttsmgr/kcmkttsmgr.cpp:1108 rc.cpp:145 rc.cpp:277
-#, no-c-format
-msgid "Language"
-msgstr "Iaith"
-
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 560
-#: rc.cpp:148 rc.cpp:280
-#, no-c-format
-msgid "Speech Synthesizer"
-msgstr ""
-
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 571
-#: rc.cpp:151 rc.cpp:283
-#, no-c-format
-msgid "Voice"
-msgstr "Llais"
-
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 582
-#: rc.cpp:154 rc.cpp:286 rc.cpp:1040
-#, no-c-format
-msgid "Gender"
-msgstr ""
-
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 593
-#: rc.cpp:157 rc.cpp:289
-#, no-c-format
-msgid "Volume"
-msgstr "Lefel Sain"
-
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 604
-#: rc.cpp:160 rc.cpp:292
-#, no-c-format
-msgid "Rate"
-msgstr "Cyfradd"
-
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 617
-#: rc.cpp:163
-#, no-c-format
-msgid ""
-"This is a list of all the configured Talkers.  Talkers higher in the list "
-"have higher priority."
-msgstr ""
-
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 647
-#: rc.cpp:170
-#, no-c-format
-msgid "Click to add and configure a new Talker (speech synthesizer)."
-msgstr ""
-
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 705
-#: rc.cpp:182
-#, no-c-format
-msgid "Click to configure options for the highlighted Talker."
-msgstr ""
-
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 730
-#: rc.cpp:188
-#, no-c-format
-msgid "Click to remove the highlighted Talker."
-msgstr ""
-
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 759
-#: rc.cpp:191
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1074
+#: rc.cpp:285
 #, no-c-format
 msgid "&Interruption"
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 789
-#: rc.cpp:194 rc.cpp:210
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1104
+#: rc.cpp:288 rc.cpp:304
 #, no-c-format
 msgid ""
 "Check the Pre-sound box and choose a Pre-sound audio file, which will sound "
 "when a text job is interrupted by another message."
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 800
-#: rc.cpp:198 rc.cpp:204
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1115
+#: rc.cpp:292 rc.cpp:298
 #, no-c-format
 msgid ""
 "Check the Post-message box and enter a Post-message, which will be spoken "
 "when a text job resumes after being interrupted by another message."
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 809
-#: rc.cpp:201
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1124
+#: rc.cpp:295
 #, no-c-format
 msgid "Post-&message:"
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 831
-#: rc.cpp:207
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1146
+#: rc.cpp:301
 #, no-c-format
 msgid "Pre-sou&nd:"
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 845
-#: rc.cpp:213
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1160
+#: rc.cpp:307
 #, no-c-format
 msgid "&Pre-message:"
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 854
-#: rc.cpp:216 rc.cpp:229
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1169
+#: rc.cpp:310 rc.cpp:323
 #, no-c-format
 msgid ""
 "Check the Pre-message box and enter a Pre-message, which will be spoken "
 "whenever a text job is interrupted by another message."
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 873
-#: rc.cpp:219 rc.cpp:225
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1188
+#: rc.cpp:313 rc.cpp:319
 #, no-c-format
 msgid ""
 "Check the Post-sound and choose a Post-sound audio file, which will sound "
 "before a text job resumes after being interrupted by another message."
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 881
-#: rc.cpp:222
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1196
+#: rc.cpp:316
 #, no-c-format
 msgid "Post-s&ound:"
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 931
-#: rc.cpp:232
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1246
+#: rc.cpp:326
 #, no-c-format
 msgid "A&udio"
 msgstr "S&ain"
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 975
-#: rc.cpp:235
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1290
+#: rc.cpp:329
 #, no-c-format
 msgid "&Speed:"
 msgstr "&Cyflymder:"
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 981
-#: rc.cpp:238 rc.cpp:244 rc.cpp:247 rc.cpp:842 rc.cpp:860 rc.cpp:872
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1296
+#: rc.cpp:332 rc.cpp:338 rc.cpp:341 rc.cpp:1011 rc.cpp:1029 rc.cpp:1041
 #, no-c-format
 msgid ""
 "Sets the speed of speech.  Slide the slider to the left to slow speech down; "
@@ -424,73 +620,192 @@ msgid ""
 "\"fast\".  You cannot change the speed of MultiSyn voices."
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1000
-#: rc.cpp:241 rc.cpp:731 rc.cpp:737 rc.cpp:851 rc.cpp:857 rc.cpp:863
-#: rc.cpp:968 rc.cpp:983 rc.cpp:998
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1315
+#: rc.cpp:335 rc.cpp:900 rc.cpp:906 rc.cpp:1020 rc.cpp:1026 rc.cpp:1032
+#: rc.cpp:1137 rc.cpp:1152 rc.cpp:1167
 #, no-c-format
 msgid " %"
 msgstr " %"
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1076
-#: rc.cpp:250
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1391
+#: rc.cpp:344
 #, no-c-format
 msgid "Out&put Using"
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1087
-#: rc.cpp:253
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1394
+#: rc.cpp:347
+#, no-c-format
+msgid ""
+"<p>Select the audio output method desired.  If you select <b>GStreamer</b>, "
+"you must also select a <b>Sink</b>.</p>"
+"<p><em>Note</em>:  You must have GStreamer >= 0.87 to use GStreamer.</p>"
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1405
+#: rc.cpp:350
 #, no-c-format
 msgid "a&Rts"
 msgstr "c&elfyddydau"
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1104
-#: rc.cpp:256
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1414
+#: rc.cpp:353
+#, no-c-format
+msgid "Check to use the KDE aRts system for audio output."
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1425
+#: rc.cpp:356
 #, no-c-format
 msgid "GStrea&mer"
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1140
-#: rc.cpp:259
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1428
+#: rc.cpp:359
+#, no-c-format
+msgid ""
+"<p>Check to use the GStreamer audio output system.  You must also select a "
+"<b>Sink</b> plugin.</p>"
+msgstr ""
+
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1464
+#: rc.cpp:362
 #, no-c-format
 msgid "Sink:"
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1143
-#: rc.cpp:262 rc.cpp:265
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1467
+#: rc.cpp:365 rc.cpp:368
 #, no-c-format
 msgid "Select the sound sink to be used for GStreamer output."
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1182
-#: rc.cpp:268
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1506
+#: rc.cpp:371
 #, no-c-format
 msgid "&Keep audio files:"
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1185
-#: rc.cpp:271
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1509
+#: rc.cpp:374
 #, no-c-format
 msgid ""
 "Check this if you want to keep the generated audio (wav) files.  You will "
 "find them in the indicated directory."
 msgstr ""
 
-#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1204
-#: rc.cpp:274
+#. i18n: file kcmkttsmgr/kcmkttsmgrwidget.ui line 1528
+#: rc.cpp:377
 #, no-c-format
 msgid "Specify the directory in which the audio files will be copied."
 msgstr ""
 
-#. i18n: file kttsjobmgr/selecttalkerwidget.ui line 90
-#: rc.cpp:295
+#. i18n: file kcmkttsmgr/selecteventwidget.ui line 24
+#: rc.cpp:380
+#, no-c-format
+msgid "Event source:"
+msgstr ""
+
+#. i18n: file kcmkttsmgr/selecteventwidget.ui line 38
+#: rc.cpp:383
+#, no-c-format
+msgid "Events"
+msgstr ""
+
+#. i18n: file libkttsd/selecttalkerwidget.ui line 25
+#: kcmkttsmgr/kcmkttsmgr.cpp:2373 kttsjobmgr/kttsjobmgr.cpp:502
+#: libkttsd/selecttalkerdlg.h:61 rc.cpp:386
+#, no-c-format
+msgid "Select Talker"
+msgstr ""
+
+#. i18n: file libkttsd/selecttalkerwidget.ui line 61
+#: rc.cpp:390
+#, no-c-format
+msgid "&Use default Talker"
+msgstr ""
+
+#. i18n: file libkttsd/selecttalkerwidget.ui line 64
+#: rc.cpp:393
 #, no-c-format
 msgid ""
-"This is a list of all the configured Talkers.  To select a Talker, click it "
-"to highlight and click OK."
+"When checked, will use the default Talker, which is the topmost Talker "
+"listed in the Talkers tab."
+msgstr ""
+
+#. i18n: file libkttsd/selecttalkerwidget.ui line 72
+#: rc.cpp:396
+#, no-c-format
+msgid "Use closest &matching Talker having"
+msgstr ""
+
+#. i18n: file libkttsd/selecttalkerwidget.ui line 75
+#: rc.cpp:399
+#, no-c-format
+msgid ""
+"When checked, will use a configured Talker most closely matching the "
+"attributes you choose.  Attributes with checks next to them will be "
+"preferred over unchecked attributes.  Language is always preferred."
+msgstr ""
+
+#. i18n: file libkttsd/selecttalkerwidget.ui line 125
+#: rc.cpp:403 rc.cpp:739
+#, no-c-format
+msgid "Checked items are preferred over unchecked items."
+msgstr ""
+
+#. i18n: file libkttsd/selecttalkerwidget.ui line 192
+#: rc.cpp:411 rc.cpp:742
+#, no-c-format
+msgid "&Gender:"
+msgstr ""
+
+#. i18n: file libkttsd/selecttalkerwidget.ui line 257
+#: rc.cpp:416 rc.cpp:734 rc.cpp:1002
+#, no-c-format
+msgid "&Volume:"
+msgstr "&Lefel sain:"
+
+#. i18n: file libkttsd/selecttalkerwidget.ui line 305
+#: rc.cpp:421 rc.cpp:747
+#, no-c-format
+msgid "&Rate:"
+msgstr "&Cyfradd:"
+
+#. i18n: file libkttsd/selecttalkerwidget.ui line 374
+#: rc.cpp:429 rc.cpp:691 rc.cpp:700 rc.cpp:718
+#, no-c-format
+msgid ""
+"This filter is applied to text jobs of the specified language.  You may "
+"select more than one language by clicking the browse button and "
+"Ctrl-clicking on more than one in the list.  If blank, the filter applies to "
+"all text jobs of any language."
+msgstr ""
+
+#. i18n: file libkttsd/selecttalkerwidget.ui line 385
+#: rc.cpp:435 rc.cpp:527 rc.cpp:606 rc.cpp:706 rc.cpp:724
+#, no-c-format
+msgid ""
+"Click to select one or more languages.  This filter will be applied to text "
+"jobs of those languages."
+msgstr ""
+
+#. i18n: file libkttsd/selecttalkerwidget.ui line 421
+#: rc.cpp:440
+#, no-c-format
+msgid "Use specific &Talker"
+msgstr ""
+
+#. i18n: file libkttsd/selecttalkerwidget.ui line 424
+#: rc.cpp:443
+#, no-c-format
+msgid ""
+"When checked, will use the specific Talker (if it is still configured), "
+"otherwise the Talker most closely matching."
 msgstr ""
 
 #. i18n: file filters/sbd/sbdconfwidget.ui line 33
-#: rc.cpp:298
+#: rc.cpp:467
 #, no-c-format
 msgid ""
 "<b>WARNING: This filter is a key component of the KTTS system. Please read "
@@ -498,51 +813,45 @@ msgid ""
 msgstr ""
 
 #. i18n: file filters/sbd/sbdconfwidget.ui line 49
-#: rc.cpp:301 rc.cpp:404 rc.cpp:504 rc.cpp:619
+#: rc.cpp:470 rc.cpp:573 rc.cpp:673 rc.cpp:788
 #, no-c-format
 msgid "&Name:"
 msgstr "&Enw:"
 
 #. i18n: file filters/sbd/sbdconfwidget.ui line 58
-#: rc.cpp:304 rc.cpp:310
+#: rc.cpp:473 rc.cpp:479
 #, no-c-format
 msgid "The name of this filter.  Enter any descriptive name you like."
 msgstr ""
 
 #. i18n: file filters/sbd/sbdconfwidget.ui line 67
-#: filters/sbd/sbdconf.cpp:165 rc.cpp:307
+#: filters/sbd/sbdconf.cpp:171 kttsd/filtermgr.cpp:82 rc.cpp:476
 #, no-c-format
 msgid "Standard Sentence Boundary Detector"
 msgstr ""
 
 #. i18n: file filters/sbd/sbdconfwidget.ui line 88
-#: rc.cpp:313
+#: rc.cpp:482
 #, no-c-format
 msgid "&Sentence boundary regular expression:"
 msgstr ""
 
 #. i18n: file filters/sbd/sbdconfwidget.ui line 97
-#: rc.cpp:316 rc.cpp:319
+#: rc.cpp:485 rc.cpp:488
 #, no-c-format
 msgid ""
 "The regular expression that detects boundaries between sentences in text "
 "jobs."
 msgstr ""
 
-#. i18n: file filters/sbd/sbdconfwidget.ui line 114
-#: rc.cpp:322 rc.cpp:355 rc.cpp:398 rc.cpp:434 rc.cpp:534 rc.cpp:552
-#, no-c-format
-msgid "..."
-msgstr "..."
-
 #. i18n: file filters/sbd/sbdconfwidget.ui line 132
-#: rc.cpp:325
+#: rc.cpp:494
 #, no-c-format
 msgid "&Replacement sentence boundary:"
 msgstr ""
 
 #. i18n: file filters/sbd/sbdconfwidget.ui line 141
-#: rc.cpp:328 rc.cpp:331
+#: rc.cpp:497 rc.cpp:500
 #, no-c-format
 msgid ""
 "This string replaces the matched regular expression.  <b>Important</b>"
@@ -550,25 +859,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file filters/sbd/sbdconfwidget.ui line 160
-#: rc.cpp:334 rc.cpp:413 rc.cpp:637
+#: rc.cpp:503 rc.cpp:582 rc.cpp:806
 #, no-c-format
 msgid "Apply This &Filter When"
 msgstr ""
 
 #. i18n: file filters/sbd/sbdconfwidget.ui line 163
-#: rc.cpp:337 rc.cpp:416 rc.cpp:516
+#: rc.cpp:506 rc.cpp:585 rc.cpp:685
 #, no-c-format
 msgid "These settings determines when the filter is applied to text."
 msgstr ""
 
 #. i18n: file filters/sbd/sbdconfwidget.ui line 182
-#: rc.cpp:340
+#: rc.cpp:509
 #, no-c-format
 msgid "&Language is:"
 msgstr ""
 
 #. i18n: file filters/sbd/sbdconfwidget.ui line 191
-#: rc.cpp:343 rc.cpp:352 rc.cpp:422 rc.cpp:431
+#: rc.cpp:512 rc.cpp:521 rc.cpp:591 rc.cpp:600
 #, no-c-format
 msgid ""
 "This filter is applied to text jobs of the specified language.  You may "
@@ -578,14 +887,14 @@ msgid ""
 msgstr ""
 
 #. i18n: file filters/sbd/sbdconfwidget.ui line 200
-#: rc.cpp:346 rc.cpp:425 rc.cpp:525 rc.cpp:664
+#: rc.cpp:515 rc.cpp:594 rc.cpp:694 rc.cpp:833
 #, no-c-format
 msgid "Application &ID contains:"
 msgstr ""
 
 #. i18n: file filters/sbd/sbdconfwidget.ui line 209
-#: rc.cpp:349 rc.cpp:361 rc.cpp:428 rc.cpp:440 rc.cpp:528 rc.cpp:540
-#: rc.cpp:649 rc.cpp:667
+#: rc.cpp:518 rc.cpp:530 rc.cpp:597 rc.cpp:609 rc.cpp:697 rc.cpp:709
+#: rc.cpp:818 rc.cpp:836
 #, no-c-format
 msgid ""
 "Enter a DCOP Application ID.  This filter will only apply to text jobs "
@@ -595,166 +904,152 @@ msgid ""
 "IDs of running applications.  Example: \"konversation, kvirc,ksirc,kopete\""
 msgstr ""
 
-#. i18n: file filters/sbd/sbdconfwidget.ui line 249
-#: rc.cpp:358 rc.cpp:437 rc.cpp:537 rc.cpp:555
-#, no-c-format
-msgid ""
-"Click to select one or more languages.  This filter will be applied to text "
-"jobs of those languages."
-msgstr ""
-
 #. i18n: file filters/sbd/sbdconfwidget.ui line 287
-#: rc.cpp:364 rc.cpp:443 rc.cpp:583
+#: rc.cpp:533 rc.cpp:612 rc.cpp:752
 #, no-c-format
 msgid "Load..."
 msgstr "Llwytho..."
 
 #. i18n: file filters/sbd/sbdconfwidget.ui line 293
-#: rc.cpp:368
+#: rc.cpp:537
 #, no-c-format
 msgid "Click to load a Sentence Boundary Detection configuration from a file."
 msgstr ""
 
 #. i18n: file filters/sbd/sbdconfwidget.ui line 310
-#: rc.cpp:371
+#: rc.cpp:540
 #, no-c-format
 msgid "Sa&ve..."
 msgstr "Ca&dw..."
 
 #. i18n: file filters/sbd/sbdconfwidget.ui line 313
-#: rc.cpp:374
+#: rc.cpp:543
 #, no-c-format
 msgid "Click to save this Sentence Boundary Detection configuration to a file."
 msgstr ""
 
 #. i18n: file filters/sbd/sbdconfwidget.ui line 330
-#: rc.cpp:377
+#: rc.cpp:546
 #, no-c-format
 msgid "Clea&r"
 msgstr "Clir&io"
 
 #. i18n: file filters/sbd/sbdconfwidget.ui line 333
-#: rc.cpp:380 rc.cpp:601
+#: rc.cpp:549 rc.cpp:770
 #, no-c-format
 msgid "Click to clear everything."
 msgstr ""
 
 #. i18n: file filters/stringreplacer/editreplacementwidget.ui line 25
-#: rc.cpp:383
+#: rc.cpp:552
 #, no-c-format
 msgid "&Type"
 msgstr "&Math"
 
 #. i18n: file filters/stringreplacer/editreplacementwidget.ui line 44
-#: rc.cpp:386
+#: rc.cpp:555
 #, no-c-format
 msgid "&Word"
 msgstr "&Gair"
 
 #. i18n: file filters/stringreplacer/editreplacementwidget.ui line 55
-#: rc.cpp:389
+#: rc.cpp:558
 #, no-c-format
 msgid "Regular &expression"
 msgstr "Mynegiad& rheolaidd"
 
 #. i18n: file filters/stringreplacer/editreplacementwidget.ui line 75
-#: rc.cpp:392
+#: rc.cpp:561
 #, no-c-format
 msgid "&Match:"
 msgstr "&Cydweddu :"
 
 #. i18n: file filters/stringreplacer/editreplacementwidget.ui line 89
-#: rc.cpp:395
+#: rc.cpp:564
 #, no-c-format
 msgid "&Replace with:"
 msgstr "&Amnewid Efo:"
 
 #. i18n: file filters/stringreplacer/stringreplacerconfwidget.ui line 18
-#: rc.cpp:401
+#: rc.cpp:570
 #, no-c-format
 msgid "Configure String Replacer"
 msgstr ""
 
 #. i18n: file filters/stringreplacer/stringreplacerconfwidget.ui line 46
-#: rc.cpp:407 rc.cpp:410 rc.cpp:507 rc.cpp:510
+#: rc.cpp:576 rc.cpp:579 rc.cpp:676 rc.cpp:679
 #, no-c-format
 msgid "Enter any name you like for this filter."
 msgstr ""
 
 #. i18n: file filters/stringreplacer/stringreplacerconfwidget.ui line 87
-#: rc.cpp:419
+#: rc.cpp:588
 #, no-c-format
 msgid "Lan&guage is:"
 msgstr ""
 
 #. i18n: file filters/stringreplacer/stringreplacerconfwidget.ui line 198
-#: rc.cpp:447
+#: rc.cpp:616
 #, no-c-format
 msgid "Click to load a word list from a file."
 msgstr ""
 
-#. i18n: file filters/stringreplacer/stringreplacerconfwidget.ui line 215
-#: rc.cpp:450
-#, no-c-format
-msgid "&Save..."
-msgstr "&Cadw..."
-
 #. i18n: file filters/stringreplacer/stringreplacerconfwidget.ui line 218
-#: rc.cpp:453
+#: rc.cpp:622
 #, no-c-format
 msgid "Click to save word list to a file."
 msgstr ""
 
 #. i18n: file filters/stringreplacer/stringreplacerconfwidget.ui line 235
-#: rc.cpp:456
+#: rc.cpp:625
 #, no-c-format
 msgid "C&lear"
 msgstr "&Gwaredu"
 
 #. i18n: file filters/stringreplacer/stringreplacerconfwidget.ui line 238
-#: rc.cpp:459
+#: rc.cpp:628
 #, no-c-format
 msgid "Click to empty the word list."
 msgstr ""
 
 #. i18n: file filters/stringreplacer/stringreplacerconfwidget.ui line 255
-#: rc.cpp:462
+#: rc.cpp:631
 #, no-c-format
 msgid "Type"
 msgstr "Math"
 
 #. i18n: file filters/stringreplacer/stringreplacerconfwidget.ui line 266
-#: rc.cpp:465
+#: rc.cpp:634
 #, no-c-format
 msgid "Match"
 msgstr "Cydweddu"
 
 #. i18n: file filters/stringreplacer/stringreplacerconfwidget.ui line 277
-#: rc.cpp:468
+#: rc.cpp:637
 #, no-c-format
 msgid "Replace With"
 msgstr "Amnewid Efo"
 
 #. i18n: file filters/stringreplacer/stringreplacerconfwidget.ui line 314
-#: kcmkttsmgr/kcmkttsmgr.cpp:144 rc.cpp:471
+#: kcmkttsmgr/kcmkttsmgr.cpp:169 rc.cpp:640
 #, no-c-format
 msgid "&Add..."
 msgstr "Ychw&anegu..."
 
 #. i18n: file filters/stringreplacer/stringreplacerconfwidget.ui line 317
-#: rc.cpp:474
+#: rc.cpp:643
 #, no-c-format
 msgid "Click to add another word or regular expression to the list."
 msgstr ""
 
 #. i18n: file filters/stringreplacer/stringreplacerconfwidget.ui line 334
-#: rc.cpp:477
+#: rc.cpp:646
 #, no-c-format
 msgid "&Up"
 msgstr "I &Fyny"
 
 #. i18n: file filters/stringreplacer/stringreplacerconfwidget.ui line 337
-#: rc.cpp:480
+#: rc.cpp:649
 #, no-c-format
 msgid ""
 "Click to move selected word up in the list.  Words higher in the list are "
@@ -762,7 +1057,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file filters/stringreplacer/stringreplacerconfwidget.ui line 356
-#: rc.cpp:486
+#: rc.cpp:655
 #, no-c-format
 msgid ""
 "Click to move a word down in the list.  Words lower in the list are applied "
@@ -770,107 +1065,73 @@ msgid ""
 msgstr ""
 
 #. i18n: file filters/stringreplacer/stringreplacerconfwidget.ui line 381
-#: rc.cpp:492
+#: rc.cpp:661
 #, no-c-format
 msgid "Click to modify an existing word or regular expression in the list."
 msgstr ""
 
 #. i18n: file filters/stringreplacer/stringreplacerconfwidget.ui line 406
-#: rc.cpp:498
+#: rc.cpp:667
 #, no-c-format
 msgid "Click to remove a word or regular expression from the list."
 msgstr ""
 
 #. i18n: file filters/talkerchooser/talkerchooserconfwidget.ui line 18
-#: rc.cpp:501
+#: rc.cpp:670
 #, no-c-format
 msgid "Configure Talker Chooser"
 msgstr ""
 
 #. i18n: file filters/talkerchooser/talkerchooserconfwidget.ui line 65
-#: rc.cpp:513
+#: rc.cpp:682
 #, no-c-format
 msgid "&Apply This Filter When"
 msgstr ""
 
 #. i18n: file filters/talkerchooser/talkerchooserconfwidget.ui line 87
-#: rc.cpp:519
+#: rc.cpp:688
 #, no-c-format
 msgid "&Text contains:"
 msgstr ""
 
-#. i18n: file filters/talkerchooser/talkerchooserconfwidget.ui line 96
-#: rc.cpp:522 rc.cpp:531 rc.cpp:549
-#, no-c-format
-msgid ""
-"This filter is applied to text jobs of the specified language.  You may "
-"select more than one language by clicking the browse button and "
-"Ctrl-clicking on more than one in the list.  If blank, the filter applies to "
-"all text jobs of any language."
-msgstr ""
-
 #. i18n: file filters/talkerchooser/talkerchooserconfwidget.ui line 173
-#: rc.cpp:543
+#: rc.cpp:712
 #, no-c-format
 msgid "&Use Closest Matching Talker Having"
 msgstr ""
 
-#. i18n: file filters/talkerchooser/talkerchooserconfwidget.ui line 308
-#: rc.cpp:565 rc.cpp:833
-#, no-c-format
-msgid "&Volume:"
-msgstr "&Lefel sain:"
-
-#. i18n: file filters/talkerchooser/talkerchooserconfwidget.ui line 348
-#: rc.cpp:570
-#, no-c-format
-msgid "Checked items are preferred over unchecked items."
-msgstr ""
-
-#. i18n: file filters/talkerchooser/talkerchooserconfwidget.ui line 364
-#: rc.cpp:573
-#, no-c-format
-msgid "&Gender:"
-msgstr ""
-
-#. i18n: file filters/talkerchooser/talkerchooserconfwidget.ui line 412
-#: rc.cpp:578
-#, no-c-format
-msgid "&Rate:"
-msgstr "&Cyfradd:"
-
 #. i18n: file filters/talkerchooser/talkerchooserconfwidget.ui line 493
-#: rc.cpp:587
+#: rc.cpp:756
 #, no-c-format
 msgid "Click to load a Talker Chooser configuration from a file."
 msgstr ""
 
 #. i18n: file filters/talkerchooser/talkerchooserconfwidget.ui line 510
-#: rc.cpp:590
+#: rc.cpp:759
 #, no-c-format
 msgid "Save..."
 msgstr "Cadw..."
 
 #. i18n: file filters/talkerchooser/talkerchooserconfwidget.ui line 516
-#: rc.cpp:594
+#: rc.cpp:763
 #, no-c-format
 msgid "Click to save this Talker Chooser to a file."
 msgstr ""
 
 #. i18n: file filters/xmltransformer/xmltransformerconfwidget.ui line 17
-#: rc.cpp:604
+#: rc.cpp:773
 #, no-c-format
 msgid "Configure XML Transformer"
 msgstr ""
 
 #. i18n: file filters/xmltransformer/xmltransformerconfwidget.ui line 36
-#: rc.cpp:607 rc.cpp:622
+#: rc.cpp:776 rc.cpp:791
 #, no-c-format
 msgid "Enter any descriptive name you like for this filter."
 msgstr ""
 
 #. i18n: file filters/xmltransformer/xmltransformerconfwidget.ui line 44
-#: rc.cpp:610 rc.cpp:628
+#: rc.cpp:779 rc.cpp:797
 #, no-c-format
 msgid ""
 "Enter the full path to an XML Style Language - Transforms (XSLT) stylesheet "
@@ -878,13 +1139,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file filters/xmltransformer/xmltransformerconfwidget.ui line 52
-#: rc.cpp:613
+#: rc.cpp:782
 #, no-c-format
 msgid "xsltproc"
 msgstr ""
 
 #. i18n: file filters/xmltransformer/xmltransformerconfwidget.ui line 55
-#: rc.cpp:616 rc.cpp:634
+#: rc.cpp:785 rc.cpp:803
 #, no-c-format
 msgid ""
 "Enter the path to the xsltproc executable program.  If it is in the PATH "
@@ -892,25 +1153,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file filters/xmltransformer/xmltransformerconfwidget.ui line 91
-#: rc.cpp:625
+#: rc.cpp:794
 #, no-c-format
 msgid "&XSLT file:"
 msgstr ""
 
 #. i18n: file filters/xmltransformer/xmltransformerconfwidget.ui line 108
-#: rc.cpp:631
+#: rc.cpp:800
 #, no-c-format
 msgid "xsltproc &executable:"
 msgstr ""
 
 #. i18n: file filters/xmltransformer/xmltransformerconfwidget.ui line 130
-#: rc.cpp:640
+#: rc.cpp:809
 #, no-c-format
 msgid "These settings determines when the filter is applied to text of jobs."
 msgstr ""
 
 #. i18n: file filters/xmltransformer/xmltransformerconfwidget.ui line 149
-#: rc.cpp:643 rc.cpp:655
+#: rc.cpp:812 rc.cpp:824
 #, no-c-format
 msgid ""
 "This filter will be applied only to text jobs having the specified XML root "
@@ -919,7 +1180,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file filters/xmltransformer/xmltransformerconfwidget.ui line 157
-#: rc.cpp:646 rc.cpp:661
+#: rc.cpp:815 rc.cpp:830
 #, no-c-format
 msgid ""
 "This filter will be applied only to text jobs having the specified DOCTYPE "
@@ -928,31 +1189,31 @@ msgid ""
 msgstr ""
 
 #. i18n: file filters/xmltransformer/xmltransformerconfwidget.ui line 183
-#: rc.cpp:652
+#: rc.cpp:821
 #, no-c-format
 msgid "&Root element is:"
 msgstr ""
 
 #. i18n: file filters/xmltransformer/xmltransformerconfwidget.ui line 201
-#: rc.cpp:658
+#: rc.cpp:827
 #, no-c-format
 msgid "DOC&TYPE is:"
 msgstr ""
 
 #. i18n: file plugins/command/commandconfwidget.ui line 30
-#: rc.cpp:670
+#: rc.cpp:839
 #, no-c-format
 msgid "Co&mmand Configuration"
 msgstr ""
 
 #. i18n: file plugins/command/commandconfwidget.ui line 61
-#: rc.cpp:673
+#: rc.cpp:842
 #, no-c-format
 msgid "Command &for speaking texts:"
 msgstr "Gorchymyn ar &gyfer llafaru testunau:"
 
 #. i18n: file plugins/command/commandconfwidget.ui line 72
-#: rc.cpp:676
+#: rc.cpp:845
 #, no-c-format
 msgid ""
 "This field specifies both the command used for speaking texts and its "
@@ -963,13 +1224,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/command/commandconfwidget.ui line 88
-#: rc.cpp:679
+#: rc.cpp:848
 #, no-c-format
 msgid "&Send the data as standard input"
 msgstr ""
 
 #. i18n: file plugins/command/commandconfwidget.ui line 91
-#: rc.cpp:682
+#: rc.cpp:851
 #, no-c-format
 msgid ""
 "This check box specifies whether the text is sent as standard input (stdin) "
@@ -977,19 +1238,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/command/commandconfwidget.ui line 116
-#: rc.cpp:685 rc.cpp:794 rc.cpp:884 rc.cpp:920 rc.cpp:1028
+#: rc.cpp:854 rc.cpp:963 rc.cpp:1053 rc.cpp:1089 rc.cpp:1197
 #, no-c-format
 msgid "&Test"
 msgstr "&Profi"
 
 #. i18n: file plugins/command/commandconfwidget.ui line 142
-#: rc.cpp:688 rc.cpp:713
+#: rc.cpp:857 rc.cpp:882
 #, no-c-format
 msgid "Character &encoding:"
 msgstr "Amgo&dio nodau:"
 
 #. i18n: file plugins/command/commandconfwidget.ui line 161
-#: rc.cpp:691 rc.cpp:893
+#: rc.cpp:860 rc.cpp:1062
 #, no-c-format
 msgid ""
 "This combo box specifies which character encoding is used for passing the "
@@ -999,7 +1260,7 @@ msgstr ""
 "testun."
 
 #. i18n: file plugins/command/commandconfwidget.ui line 175
-#: rc.cpp:694
+#: rc.cpp:863
 #, no-c-format
 msgid ""
 "Parameters:\n"
@@ -1010,13 +1271,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/epos/eposconfwidget.ui line 25
-#: rc.cpp:701
+#: rc.cpp:870
 #, no-c-format
 msgid "Epos Config UI"
 msgstr ""
 
 #. i18n: file plugins/epos/eposconfwidget.ui line 28
-#: rc.cpp:704 rc.cpp:710
+#: rc.cpp:873 rc.cpp:879
 #, no-c-format
 msgid ""
 "This is the configuration dialog for the Epos Czech and Slovak speech "
@@ -1024,25 +1285,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/epos/eposconfwidget.ui line 53
-#: rc.cpp:707
+#: rc.cpp:876
 #, no-c-format
 msgid "E&pos Configuration"
 msgstr ""
 
 #. i18n: file plugins/epos/eposconfwidget.ui line 108
-#: rc.cpp:716
+#: rc.cpp:885
 #, no-c-format
 msgid "Specifies which character encoding is used for passing the text."
 msgstr ""
 
 #. i18n: file plugins/epos/eposconfwidget.ui line 142
-#: rc.cpp:719 rc.cpp:977
+#: rc.cpp:888 rc.cpp:1146
 #, no-c-format
 msgid "Speed:"
 msgstr "Cyflymder:"
 
 #. i18n: file plugins/epos/eposconfwidget.ui line 148
-#: rc.cpp:722 rc.cpp:734 rc.cpp:743
+#: rc.cpp:891 rc.cpp:903 rc.cpp:912
 #, no-c-format
 msgid ""
 "Sets the speed of speech.  Slide the slider to the left to slow speech down; "
@@ -1052,13 +1313,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/epos/eposconfwidget.ui line 164
-#: rc.cpp:725 rc.cpp:992
+#: rc.cpp:894 rc.cpp:1161
 #, no-c-format
 msgid "Pitch:"
 msgstr "Traw:"
 
 #. i18n: file plugins/epos/eposconfwidget.ui line 170
-#: rc.cpp:728 rc.cpp:740 rc.cpp:746
+#: rc.cpp:897 rc.cpp:909 rc.cpp:915
 #, no-c-format
 msgid ""
 "Sets the tone (frequency) of speech.  Slide the slider to the left to lower "
@@ -1068,13 +1329,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/epos/eposconfwidget.ui line 346
-#: rc.cpp:749
+#: rc.cpp:918
 #, no-c-format
 msgid "Epos server executable path:"
 msgstr ""
 
 #. i18n: file plugins/epos/eposconfwidget.ui line 355
-#: rc.cpp:752 rc.cpp:764
+#: rc.cpp:921 rc.cpp:933
 #, no-c-format
 msgid ""
 "If the Epos server program will be found due to your PATH environment "
@@ -1083,13 +1344,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/epos/eposconfwidget.ui line 371
-#: rc.cpp:755
+#: rc.cpp:924
 #, no-c-format
 msgid "Epos client executable path:"
 msgstr ""
 
 #. i18n: file plugins/epos/eposconfwidget.ui line 380
-#: rc.cpp:758 rc.cpp:770
+#: rc.cpp:927 rc.cpp:939
 #, no-c-format
 msgid ""
 "If the Epos client program will be found due to the PATH environment "
@@ -1098,25 +1359,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/epos/eposconfwidget.ui line 406
-#: rc.cpp:761
+#: rc.cpp:930
 #, no-c-format
 msgid "epos"
 msgstr ""
 
 #. i18n: file plugins/epos/eposconfwidget.ui line 425
-#: rc.cpp:767
+#: rc.cpp:936
 #, no-c-format
 msgid "say"
 msgstr ""
 
 #. i18n: file plugins/epos/eposconfwidget.ui line 440
-#: rc.cpp:773
+#: rc.cpp:942
 #, no-c-format
 msgid "Additional Options (advanced)"
 msgstr ""
 
 #. i18n: file plugins/epos/eposconfwidget.ui line 467
-#: rc.cpp:776
+#: rc.cpp:945
 #, no-c-format
 msgid ""
 "Optional.  Enter any server command line options here.  To see available "
@@ -1124,7 +1385,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/epos/eposconfwidget.ui line 475
-#: rc.cpp:779
+#: rc.cpp:948
 #, no-c-format
 msgid ""
 "Specify options to be passed to Epos client.  To see available options, "
@@ -1132,13 +1393,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/epos/eposconfwidget.ui line 501
-#: rc.cpp:782
+#: rc.cpp:951
 #, no-c-format
 msgid "Epos server:"
 msgstr ""
 
 #. i18n: file plugins/epos/eposconfwidget.ui line 510
-#: rc.cpp:785
+#: rc.cpp:954
 #, no-c-format
 msgid ""
 "Optional.  Enter any server command line options here.  To see available "
@@ -1146,13 +1407,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/epos/eposconfwidget.ui line 526
-#: rc.cpp:788
+#: rc.cpp:957
 #, no-c-format
 msgid "Epos client:"
 msgstr ""
 
 #. i18n: file plugins/epos/eposconfwidget.ui line 535
-#: rc.cpp:791
+#: rc.cpp:960
 #, no-c-format
 msgid ""
 "Specify options to be passed to Epos client.  Do not use -o.  To see "
@@ -1160,7 +1421,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/epos/eposconfwidget.ui line 577
-#: rc.cpp:797
+#: rc.cpp:966
 #, no-c-format
 msgid ""
 "Click to test the configuration.  If correct, you will hear a sentence "
@@ -1168,13 +1429,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/festivalintconfwidget.ui line 25
-#: rc.cpp:800
+#: rc.cpp:969
 #, no-c-format
 msgid "Festival Config UI"
 msgstr ""
 
 #. i18n: file plugins/festivalint/festivalintconfwidget.ui line 28
-#: rc.cpp:803 rc.cpp:809
+#: rc.cpp:972 rc.cpp:978
 #, no-c-format
 msgid ""
 "This is the dialog for configuring the Festival speech synthesizer in "
@@ -1182,19 +1443,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/festivalintconfwidget.ui line 53
-#: rc.cpp:806
+#: rc.cpp:975
 #, no-c-format
 msgid "Festival &Interactive Configuration"
 msgstr ""
 
 #. i18n: file plugins/festivalint/festivalintconfwidget.ui line 95
-#: rc.cpp:812
+#: rc.cpp:981
 #, no-c-format
 msgid "&Festival executable:"
 msgstr ""
 
 #. i18n: file plugins/festivalint/festivalintconfwidget.ui line 104
-#: rc.cpp:815 rc.cpp:818
+#: rc.cpp:984 rc.cpp:987
 #, no-c-format
 msgid ""
 "If Festival is in your PATH environment variable, just enter \"festival\", "
@@ -1202,13 +1463,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/festivalintconfwidget.ui line 144
-#: rc.cpp:821
+#: rc.cpp:990
 #, no-c-format
 msgid "&Select voice:"
 msgstr ""
 
 #. i18n: file plugins/festivalint/festivalintconfwidget.ui line 153
-#: rc.cpp:824 rc.cpp:827
+#: rc.cpp:993 rc.cpp:996
 #, no-c-format
 msgid ""
 "Select a voice to speak text with.  MultiSyn voices are high quality but are "
@@ -1219,13 +1480,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/festivalintconfwidget.ui line 177
-#: rc.cpp:830
+#: rc.cpp:999
 #, no-c-format
 msgid "&Rescan"
 msgstr "&Ailsyllu"
 
 #. i18n: file plugins/festivalint/festivalintconfwidget.ui line 218
-#: rc.cpp:836 rc.cpp:854 rc.cpp:869
+#: rc.cpp:1005 rc.cpp:1023 rc.cpp:1038
 #, no-c-format
 msgid ""
 "Sets the volume (loudness) of speech.  Slide the slider to the left to lower "
@@ -1235,19 +1496,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/festivalintconfwidget.ui line 234
-#: rc.cpp:839
+#: rc.cpp:1008
 #, no-c-format
 msgid "Sp&eed:"
 msgstr "Cy&flymder:"
 
 #. i18n: file plugins/festivalint/festivalintconfwidget.ui line 256
-#: rc.cpp:845
+#: rc.cpp:1014
 #, no-c-format
 msgid "&Pitch:"
 msgstr "&Traw:"
 
 #. i18n: file plugins/festivalint/festivalintconfwidget.ui line 262
-#: rc.cpp:848 rc.cpp:866 rc.cpp:875
+#: rc.cpp:1017 rc.cpp:1035 rc.cpp:1044
 #, no-c-format
 msgid ""
 "Sets the tone (frequency) of speech.  Slide the slider to the left to lower "
@@ -1257,13 +1518,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/festivalintconfwidget.ui line 485
-#: rc.cpp:878
+#: rc.cpp:1047
 #, no-c-format
 msgid "&Load this voice when starting KTTSD"
 msgstr ""
 
 #. i18n: file plugins/festivalint/festivalintconfwidget.ui line 488
-#: rc.cpp:881
+#: rc.cpp:1050
 #, no-c-format
 msgid ""
 "If checked, Festival will be started and this voice will be loaded when the "
@@ -1273,7 +1534,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/festivalintconfwidget.ui line 516
-#: rc.cpp:887
+#: rc.cpp:1056
 #, no-c-format
 msgid ""
 "Click to test the configuration.  Festival will be started and a test "
@@ -1281,19 +1542,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/festivalintconfwidget.ui line 542
-#: rc.cpp:890
+#: rc.cpp:1059
 #, no-c-format
 msgid "Character e&ncoding:"
 msgstr "A&mgodio nodau:"
 
 #. i18n: file plugins/flite/fliteconfwidget.ui line 25
-#: rc.cpp:896
+#: rc.cpp:1065
 #, no-c-format
 msgid "Flite Config UI"
 msgstr ""
 
 #. i18n: file plugins/flite/fliteconfwidget.ui line 28
-#: rc.cpp:899 rc.cpp:905
+#: rc.cpp:1068 rc.cpp:1074
 #, no-c-format
 msgid ""
 "This is the configuration dialog for the Festival Lite (Flite) speech "
@@ -1301,19 +1562,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/flite/fliteconfwidget.ui line 70
-#: rc.cpp:902
+#: rc.cpp:1071
 #, no-c-format
 msgid "Festival &Lite (flite) Configuration"
 msgstr ""
 
 #. i18n: file plugins/flite/fliteconfwidget.ui line 112
-#: rc.cpp:908
+#: rc.cpp:1077
 #, no-c-format
 msgid "&Flite executable path:"
 msgstr ""
 
 #. i18n: file plugins/flite/fliteconfwidget.ui line 121
-#: rc.cpp:911 rc.cpp:917
+#: rc.cpp:1080 rc.cpp:1086
 #, no-c-format
 msgid ""
 "If Flite is in your PATH environment variable, simply enter \"flite\", "
@@ -1321,43 +1582,43 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/flite/fliteconfwidget.ui line 137
-#: rc.cpp:914
+#: rc.cpp:1083
 #, no-c-format
 msgid "flite"
 msgstr ""
 
 #. i18n: file plugins/freetts/freettsconfigwidget.ui line 25
-#: rc.cpp:923
+#: rc.cpp:1092
 #, no-c-format
 msgid "FreeTTS Config UI"
 msgstr ""
 
 #. i18n: file plugins/freetts/freettsconfigwidget.ui line 67
-#: rc.cpp:926
+#: rc.cpp:1095
 #, no-c-format
 msgid "FreeTTS Interactive Configuration"
 msgstr ""
 
 #. i18n: file plugins/freetts/freettsconfigwidget.ui line 106
-#: rc.cpp:929
+#: rc.cpp:1098
 #, no-c-format
 msgid "&FreeTTS jar file:"
 msgstr ""
 
 #. i18n: file plugins/freetts/freettsconfigwidget.ui line 179
-#: rc.cpp:932
+#: rc.cpp:1101
 #, no-c-format
 msgid "Test"
 msgstr "Profi"
 
 #. i18n: file plugins/hadifix/hadifixconfigui.ui line 16
-#: rc.cpp:935
+#: rc.cpp:1104
 #, no-c-format
 msgid "Hadifix Configuration"
 msgstr ""
 
 #. i18n: file plugins/hadifix/hadifixconfigui.ui line 19
-#: rc.cpp:938 rc.cpp:944
+#: rc.cpp:1107 rc.cpp:1113
 #, no-c-format
 msgid ""
 "This is the configuration dialog for the Hadifix (txt2pho and Mbrola) speech "
@@ -1365,25 +1626,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/hadifix/hadifixconfigui.ui line 44
-#: rc.cpp:941
+#: rc.cpp:1110
 #, no-c-format
 msgid "Had&ifix Configuration"
 msgstr ""
 
 #. i18n: file plugins/hadifix/hadifixconfigui.ui line 78
-#: rc.cpp:947
+#: rc.cpp:1116
 #, no-c-format
 msgid "&Basic Options"
 msgstr ""
 
 #. i18n: file plugins/hadifix/hadifixconfigui.ui line 97
-#: rc.cpp:950
+#: rc.cpp:1119
 #, no-c-format
 msgid "Voice file:"
 msgstr ""
 
 #. i18n: file plugins/hadifix/hadifixconfigui.ui line 100
-#: rc.cpp:953 rc.cpp:956
+#: rc.cpp:1122 rc.cpp:1125
 #, no-c-format
 msgid ""
 "Select a voice for speaking text.  If no voices are listed, check your "
@@ -1391,19 +1652,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/hadifix/hadifixconfigui.ui line 132
-#: rc.cpp:959
+#: rc.cpp:1128
 #, no-c-format
 msgid "&Select..."
 msgstr "&Dewis..."
 
 #. i18n: file plugins/hadifix/hadifixconfigui.ui line 148
-#: rc.cpp:962
+#: rc.cpp:1131
 #, no-c-format
 msgid "Volume ratio:"
 msgstr ""
 
 #. i18n: file plugins/hadifix/hadifixconfigui.ui line 151
-#: rc.cpp:965 rc.cpp:971 rc.cpp:974
+#: rc.cpp:1134 rc.cpp:1140 rc.cpp:1143
 #, no-c-format
 msgid ""
 "Adjusts the volume of speech.  Slide to left for softer speech; to the right "
@@ -1411,7 +1672,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/hadifix/hadifixconfigui.ui line 236
-#: rc.cpp:980 rc.cpp:986 rc.cpp:989
+#: rc.cpp:1149 rc.cpp:1155 rc.cpp:1158
 #, no-c-format
 msgid ""
 "Adjusts the speed of speech.  Slide to left for slower speech; to the right "
@@ -1419,7 +1680,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/hadifix/hadifixconfigui.ui line 315
-#: rc.cpp:995 rc.cpp:1001 rc.cpp:1004
+#: rc.cpp:1164 rc.cpp:1170 rc.cpp:1173
 #, no-c-format
 msgid ""
 "Adjusts the pitch (tone) of speech.  Slide to left for lower speech; to the "
@@ -1427,19 +1688,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/hadifix/hadifixconfigui.ui line 387
-#: rc.cpp:1007
+#: rc.cpp:1176
 #, no-c-format
 msgid "&Advanced Options"
 msgstr "&Dewisiadau Uwch"
 
 #. i18n: file plugins/hadifix/hadifixconfigui.ui line 404
-#: rc.cpp:1010
+#: rc.cpp:1179
 #, no-c-format
 msgid "txt2pho executable:"
 msgstr ""
 
 #. i18n: file plugins/hadifix/hadifixconfigui.ui line 407
-#: rc.cpp:1013 rc.cpp:1016
+#: rc.cpp:1182 rc.cpp:1185
 #, no-c-format
 msgid ""
 "If the txt2pho program is in your PATH environment variable, simply enter "
@@ -1448,13 +1709,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/hadifix/hadifixconfigui.ui line 431
-#: rc.cpp:1019
+#: rc.cpp:1188
 #, no-c-format
 msgid "Mbrola executable:"
 msgstr ""
 
 #. i18n: file plugins/hadifix/hadifixconfigui.ui line 434
-#: rc.cpp:1022 rc.cpp:1025
+#: rc.cpp:1191 rc.cpp:1194
 #, no-c-format
 msgid ""
 "If the Mbrola program is in your PATH environment variable, simply enter "
@@ -1462,43 +1723,43 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/hadifix/hadifixconfigui.ui line 488
-#: rc.cpp:1031
+#: rc.cpp:1200
 #, no-c-format
 msgid "Click to test the configuration.  You should hear a spoken sentence."
 msgstr ""
 
 #. i18n: file plugins/hadifix/voicefileui.ui line 16
-#: rc.cpp:1034
+#: rc.cpp:1203
 #, no-c-format
 msgid "Selecting Voice File"
 msgstr ""
 
 #. i18n: file plugins/hadifix/voicefileui.ui line 33
-#: rc.cpp:1037
+#: rc.cpp:1206
 #, no-c-format
 msgid "Path of the voice file:"
 msgstr ""
 
 #. i18n: file plugins/hadifix/voicefileui.ui line 69
-#: rc.cpp:1043
+#: rc.cpp:1212
 #, no-c-format
 msgid "Female"
 msgstr ""
 
 #. i18n: file plugins/hadifix/voicefileui.ui line 77
-#: rc.cpp:1046
+#: rc.cpp:1215
 #, no-c-format
 msgid "Male"
 msgstr ""
 
 #. i18n: file plugins/hadifix/voicefileui.ui line 85
-#: rc.cpp:1049
+#: rc.cpp:1218
 #, no-c-format
 msgid "Try to Determine From Voice File"
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 14
-#: rc.cpp:1052 rc.cpp:1055
+#: rc.cpp:1221 rc.cpp:1224
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1506,7 +1767,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 38
-#: rc.cpp:1058
+#: rc.cpp:1227
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1514,7 +1775,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 50
-#: rc.cpp:1061 rc.cpp:1064
+#: rc.cpp:1230 rc.cpp:1233
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1522,7 +1783,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 74
-#: rc.cpp:1067 rc.cpp:1070
+#: rc.cpp:1236 rc.cpp:1239
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1530,7 +1791,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 98
-#: rc.cpp:1073
+#: rc.cpp:1242
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1538,7 +1799,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 110
-#: rc.cpp:1076 rc.cpp:1088 rc.cpp:1091
+#: rc.cpp:1245 rc.cpp:1257 rc.cpp:1260
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1546,7 +1807,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 122
-#: rc.cpp:1079
+#: rc.cpp:1248
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1554,7 +1815,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 134
-#: rc.cpp:1082
+#: rc.cpp:1251
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1562,7 +1823,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 146
-#: rc.cpp:1085
+#: rc.cpp:1254
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1570,7 +1831,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 182
-#: rc.cpp:1094
+#: rc.cpp:1263
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1578,7 +1839,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 194
-#: rc.cpp:1097
+#: rc.cpp:1266
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1586,7 +1847,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 206
-#: rc.cpp:1100 rc.cpp:1106
+#: rc.cpp:1269 rc.cpp:1275
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1594,7 +1855,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 218
-#: rc.cpp:1103
+#: rc.cpp:1272
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1602,7 +1863,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 242
-#: rc.cpp:1109
+#: rc.cpp:1278
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1610,7 +1871,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 254
-#: rc.cpp:1112
+#: rc.cpp:1281
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1618,7 +1879,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 266
-#: rc.cpp:1115 rc.cpp:1118 rc.cpp:1121 rc.cpp:1130
+#: rc.cpp:1284 rc.cpp:1287 rc.cpp:1290 rc.cpp:1299
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1626,7 +1887,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 302
-#: rc.cpp:1124 rc.cpp:1133
+#: rc.cpp:1293 rc.cpp:1302
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1634,7 +1895,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 314
-#: rc.cpp:1127
+#: rc.cpp:1296
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1642,7 +1903,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 350
-#: rc.cpp:1136
+#: rc.cpp:1305
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1650,7 +1911,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 362
-#: rc.cpp:1139
+#: rc.cpp:1308
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1658,7 +1919,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 374
-#: rc.cpp:1142
+#: rc.cpp:1311
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1666,7 +1927,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 386
-#: rc.cpp:1145
+#: rc.cpp:1314
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1674,7 +1935,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 398
-#: rc.cpp:1148 rc.cpp:1154
+#: rc.cpp:1317 rc.cpp:1323
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1682,7 +1943,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 410
-#: rc.cpp:1151 rc.cpp:1157
+#: rc.cpp:1320 rc.cpp:1326
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1690,7 +1951,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 446
-#: rc.cpp:1160
+#: rc.cpp:1329
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1698,7 +1959,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 460
-#: rc.cpp:1163
+#: rc.cpp:1332
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1706,7 +1967,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plugins/festivalint/voices line 472
-#: rc.cpp:1166
+#: rc.cpp:1335
 #, no-c-format
 msgid ""
 "_: FestivalVoiceName\n"
@@ -1749,25 +2010,31 @@ msgstr ""
 msgid "A utility for testing KTTSD filter plugins."
 msgstr ""
 
-#: filters/main.cpp:47 kcmkttsmgr/kcmkttsmgr.cpp:921 kttsd/main.cpp:34
-#: kttsmgr/kttsmgr.cpp:42
+#: filters/main.cpp:47 kcmkttsmgr/kcmkttsmgr.cpp:1000 kttsd/main.cpp:34
+#: kttsmgr/kttsmgr.cpp:57
 msgid "Maintainer"
 msgstr "Cynhaliwr"
 
-#: kcmkttsmgr/addtalker.cpp:124 kcmkttsmgr/kcmkttsmgr.cpp:423
-#: kttsjobmgr/kttsjobmgr.cpp:519 libkttsd/talkercode.cpp:186
+#: kcmkttsmgr/addtalker.cpp:131 kcmkttsmgr/kcmkttsmgr.cpp:489
+#: libkttsd/talkercode.cpp:217
 msgid "Other"
 msgstr "Arall"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:75
+#: kcmkttsmgr/kcmkttsmgr.cpp:83
 msgid "Text interrupted. Message."
 msgstr ""
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:81
+#: kcmkttsmgr/kcmkttsmgr.cpp:89
 msgid "Resuming text."
 msgstr ""
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:908
+#: kcmkttsmgr/kcmkttsmgr.cpp:825
+msgid ""
+"You have made changes to the configuration but have not saved them yet.  "
+"Click Apply to save the changes or Cancel to abandon the changes."
+msgstr ""
+
+#: kcmkttsmgr/kcmkttsmgr.cpp:987
 msgid ""
 "<h1>Text-to-Speech</h1>"
 "<p>This is the configuration for the text-to-speech dcop service</p>"
@@ -1778,121 +2045,124 @@ msgid ""
 "this will be the language used by most of the applications</p>"
 msgstr ""
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:916 kttsd/main.cpp:30
+#: kcmkttsmgr/kcmkttsmgr.cpp:995 kttsd/main.cpp:30
+#: players/artsplayer/artsplayer.cpp:243
 msgid "kttsd"
 msgstr ""
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:916
+#: kcmkttsmgr/kcmkttsmgr.cpp:995
 msgid "KCMKttsMgr"
 msgstr ""
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:918
+#: kcmkttsmgr/kcmkttsmgr.cpp:997
 msgid "(c) 2002, José Pablo Ezequiel Fernández"
 msgstr ""
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:920
+#: kcmkttsmgr/kcmkttsmgr.cpp:999
 msgid "Author"
 msgstr "Awdur"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:922 kcmkttsmgr/kcmkttsmgr.cpp:923
+#: kcmkttsmgr/kcmkttsmgr.cpp:1001 kcmkttsmgr/kcmkttsmgr.cpp:1002
 #: kttsd/main.cpp:35 kttsd/main.cpp:36 kttsd/main.cpp:37
-#: kttsmgr/kttsmgr.cpp:43 kttsmgr/kttsmgr.cpp:44 kttsmgr/kttsmgr.cpp:45
+#: kttsmgr/kttsmgr.cpp:58 kttsmgr/kttsmgr.cpp:59 kttsmgr/kttsmgr.cpp:60
 msgid "Contributor"
 msgstr "Cyfrannwr"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:1016 kttsjobmgr/kttsjobmgr.cpp:447
-#: libkttsd/talkercode.cpp:203 libkttsd/talkercode.cpp:212
-msgid "male"
-msgstr ""
-
-#: kcmkttsmgr/kcmkttsmgr.cpp:1018 kttsjobmgr/kttsjobmgr.cpp:449
-#: libkttsd/talkercode.cpp:205 libkttsd/talkercode.cpp:214
-msgid "female"
-msgstr ""
-
-#: kcmkttsmgr/kcmkttsmgr.cpp:1020 kttsjobmgr/kttsjobmgr.cpp:451
-#: libkttsd/talkercode.cpp:207 libkttsd/talkercode.cpp:216
-msgid ""
-"_: neutral gender\n"
-"neutral"
-msgstr ""
-
-#: kcmkttsmgr/kcmkttsmgr.cpp:1027 kttsjobmgr/kttsjobmgr.cpp:458
-#: libkttsd/talkercode.cpp:223 libkttsd/talkercode.cpp:232
-msgid ""
-"_: medium sound\n"
-"medium"
-msgstr ""
-
-#: kcmkttsmgr/kcmkttsmgr.cpp:1029 kttsjobmgr/kttsjobmgr.cpp:460
-#: libkttsd/talkercode.cpp:225 libkttsd/talkercode.cpp:234
-msgid ""
-"_: loud sound\n"
-"loud"
-msgstr ""
-
-#: kcmkttsmgr/kcmkttsmgr.cpp:1031 kttsjobmgr/kttsjobmgr.cpp:462
-#: libkttsd/talkercode.cpp:227 libkttsd/talkercode.cpp:236
-msgid ""
-"_: soft sound\n"
-"soft"
-msgstr ""
-
-#: kcmkttsmgr/kcmkttsmgr.cpp:1038 kttsjobmgr/kttsjobmgr.cpp:469
-#: libkttsd/talkercode.cpp:243 libkttsd/talkercode.cpp:252
-msgid ""
-"_: medium speed\n"
-"medium"
-msgstr ""
-
-#: kcmkttsmgr/kcmkttsmgr.cpp:1040 kttsjobmgr/kttsjobmgr.cpp:471
-#: libkttsd/talkercode.cpp:245 libkttsd/talkercode.cpp:254
-msgid ""
-"_: fast speed\n"
-"fast"
-msgstr ""
-
-#: kcmkttsmgr/kcmkttsmgr.cpp:1042 kttsjobmgr/kttsjobmgr.cpp:473
-#: libkttsd/talkercode.cpp:247 libkttsd/talkercode.cpp:256
-msgid ""
-"_: slow speed\n"
-"slow"
-msgstr ""
-
-#: filters/sbd/sbdconf.cpp:234
-#: filters/stringreplacer/stringreplacerconf.cpp:418
-#: filters/talkerchooser/talkerchooserconf.cpp:311
-#: kcmkttsmgr/kcmkttsmgr.cpp:1109
+#: filters/sbd/sbdconf.cpp:240
+#: filters/stringreplacer/stringreplacerconf.cpp:424
+#: filters/talkerchooser/talkerchooserconf.cpp:317
+#: kcmkttsmgr/kcmkttsmgr.cpp:1155 libkttsd/selecttalkerdlg.cpp:168
 msgid "Code"
 msgstr ""
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:1131
+#: kcmkttsmgr/kcmkttsmgr.cpp:1174
 msgid "Select Language"
 msgstr ""
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:1293
+#: kcmkttsmgr/kcmkttsmgr.cpp:1346
 msgid "Select Filter"
 msgstr "Dewis Hidlen"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:1666
+#: kcmkttsmgr/kcmkttsmgr.cpp:1727
 msgid "&Jobs"
 msgstr "&Swyddi"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:1830
+#: kcmkttsmgr/kcmkttsmgr.cpp:1915
 msgid "Talker Configuration"
 msgstr ""
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:1872
+#: kcmkttsmgr/kcmkttsmgr.cpp:1957
 msgid "Filter Configuration"
 msgstr ""
 
-#: kttsd/kttsd.cpp:115
+#: filters/stringreplacer/stringreplacerconf.cpp:149
+#: kcmkttsmgr/kcmkttsmgr.cpp:2113
+msgid "Unable to open file."
+msgstr ""
+
+#: filters/stringreplacer/stringreplacerconf.cpp:155
+#: kcmkttsmgr/kcmkttsmgr.cpp:2119
+msgid "File not in proper XML format."
+msgstr ""
+
+#: filters/stringreplacer/stringreplacerconf.cpp:280
+#: kcmkttsmgr/kcmkttsmgr.cpp:2163
+msgid "Unable to open file "
+msgstr ""
+
+#: kcmkttsmgr/kcmkttsmgr.cpp:2247 libkttsd/talkercode.cpp:140
+#, fuzzy
+msgid "default"
+msgstr "&Rhagosod"
+
+#: kcmkttsmgr/kcmkttsmgr.cpp:2353 kcmkttsmgr/kcmkttsmgr.cpp:2359
+msgid "sample notification message"
+msgstr ""
+
+#: kcmkttsmgr/kcmkttsmgr.cpp:2357
+msgid "sample application"
+msgstr ""
+
+#: kcmkttsmgr/kcmkttsmgr.cpp:2358
+msgid "sample event"
+msgstr ""
+
+#: kcmkttsmgr/kcmkttsmgr.cpp:2399
+msgid "Default (all other events)"
+msgstr ""
+
+#: kcmkttsmgr/kcmkttsmgr.cpp:2408 kcmkttsmgr/selectevent.cpp:113
+msgid "All other %1 events"
+msgstr ""
+
+#: kcmkttsmgr/kcmkttsmgr.cpp:2453
+#, fuzzy
+msgid "Select Event"
+msgstr "Dewis Hidlen"
+
+#: kcmkttsmgr/kcmkttsmgr.cpp:2535 kcmkttsmgr/kcmkttsmgr.cpp:2551
+msgid ""
+"_: file type\n"
+"Notification Event List"
+msgstr ""
+
+#: filters/stringreplacer/stringreplacerconf.cpp:696
+#: filters/stringreplacer/stringreplacerconf.cpp:712
+#: kcmkttsmgr/kcmkttsmgr.cpp:2542 kcmkttsmgr/kcmkttsmgr.cpp:2558
+msgid "Error Opening File"
+msgstr ""
+
+#: kcmkttsmgr/selectevent.cpp:68 libkttsd/notify.cpp:154
+msgid "No description available"
+msgstr ""
+
+#: kttsd/kttsd.cpp:132
 msgid ""
 "KTTS has not yet been configured.  At least one Talker must be configured.  "
 "Would you like to configure it now?"
 msgstr ""
 
-#: kttsd/kttsd.cpp:117
+#: kttsd/kttsd.cpp:134
 msgid "KTTS Not Configured"
 msgstr ""
 
@@ -1900,14 +2170,14 @@ msgstr ""
 msgid "Text-to-speech synthesis deamon"
 msgstr ""
 
-#: kttsd/main.cpp:33 kttsmgr/kttsmgr.cpp:41
+#: kttsd/main.cpp:33 kttsmgr/kttsmgr.cpp:56
 msgid "Original Author"
 msgstr "Awdur Gwreiddiol"
 
-#: kttsd/main.cpp:38 kttsd/main.cpp:39 kttsmgr/kttsmgr.cpp:46
-#: kttsmgr/kttsmgr.cpp:47 plugins/command/commandconf.cpp:163
-#: plugins/epos/eposconf.cpp:213 plugins/festivalint/festivalintconf.cpp:556
-#: plugins/flite/fliteconf.cpp:144 plugins/freetts/freettsconf.cpp:178
+#: kttsd/main.cpp:38 kttsd/main.cpp:39 kttsmgr/kttsmgr.cpp:61
+#: kttsmgr/kttsmgr.cpp:62 plugins/command/commandconf.cpp:163
+#: plugins/epos/eposconf.cpp:219 plugins/festivalint/festivalintconf.cpp:562
+#: plugins/flite/fliteconf.cpp:150 plugins/freetts/freettsconf.cpp:178
 #: plugins/hadifix/hadifixconf.cpp:277
 msgid "Testing"
 msgstr ""
@@ -1916,150 +2186,292 @@ msgstr ""
 msgid "KttsJobMgr"
 msgstr ""
 
-#: kttsjobmgr/kttsjobmgr.cpp:119 kttsjobmgr/kttsjobmgr.cpp:125
-#: kttsjobmgr/kttsjobmgr.cpp:130
-msgid "Text-to-Speech Job Manager Toolbar"
-msgstr ""
-
-#: kttsjobmgr/kttsjobmgr.cpp:149
+#: kttsjobmgr/kttsjobmgr.cpp:122
 msgid "Job Num"
 msgstr ""
 
-#: kttsjobmgr/kttsjobmgr.cpp:150
+#: kttsjobmgr/kttsjobmgr.cpp:123
 msgid "Owner"
 msgstr "Perchennog"
 
-#: kttsjobmgr/kttsjobmgr.cpp:151
+#: kttsjobmgr/kttsjobmgr.cpp:124
 msgid "Talker ID"
 msgstr ""
 
-#: kttsjobmgr/kttsjobmgr.cpp:152
+#: kttsjobmgr/kttsjobmgr.cpp:125
 msgid "State"
 msgstr "Cyflwr"
 
-#: kttsjobmgr/kttsjobmgr.cpp:153
+#: kttsjobmgr/kttsjobmgr.cpp:126
 msgid "Position"
 msgstr "Lleoliad"
 
-#: kttsjobmgr/kttsjobmgr.cpp:154
+#: kttsjobmgr/kttsjobmgr.cpp:127
 msgid "Sentences"
 msgstr "Brawddegau"
 
-#: kttsjobmgr/kttsjobmgr.cpp:155
+#: kttsjobmgr/kttsjobmgr.cpp:128
 msgid "Part Num"
 msgstr ""
 
-#: kttsjobmgr/kttsjobmgr.cpp:156
+#: kttsjobmgr/kttsjobmgr.cpp:129
 msgid "Parts"
 msgstr "Rhannau"
 
-#: kttsjobmgr/kttsjobmgr.cpp:170
-msgid "Current Sentence"
+#: kttsjobmgr/kttsjobmgr.cpp:135
+msgid ""
+"<p>These are all the text jobs.  The <b>State</b> column may "
+"be:"
+"<ul>"
+"<li><b>Queued</b> - the job is waiting and will not be spoken until its "
+"state is changed to <b>Waiting</b> by clicking the <b>Resume</b> or "
+"<b>Restart</b> buttons.</li>"
+"<li><b>Waiting</b> - the job is ready to be spoken.  It will be spoken when "
+"the jobs preceding it in the list have finished.</li>"
+"<li><b>Speaking</b> - the job is speaking.  The <b>Position</b>"
+" column shows the current sentence of the job being spoken.  You may pause a "
+"speaking job by clicking the <b>Hold</b> button.</li>"
+"<li><b>Paused</b> - the job is currently paused.  Paused jobs prevent jobs "
+"below them from speaking.  Use the <b>Resume</b> or <b>Restart</b> buttons "
+"to resume speaking the job, or click <b>Later</b> to move the job down in "
+"the list.</li>"
+"<li><b>Finished</b> - the job has finished speaking.  When a second job "
+"finishes, this one will be deleted.  You may click <b>Restart</b> to repeat "
+"the job.</li></ul><em>Note</em>: Messages, Warnings, and Screen Reader "
+"Output do not appear in this list.  See the Handbook for more "
+"information.</p>"
 msgstr ""
 
-#: kttsjobmgr/kttsjobmgr.cpp:272 kttsmgr/kttsmgr.cpp:116
-msgid "&Hold"
+#: kttsjobmgr/kttsjobmgr.cpp:184
+#, fuzzy
+msgid "Hold"
 msgstr "&Gafael"
 
-#: kttsjobmgr/kttsjobmgr.cpp:276
-msgid "&Resume"
-msgstr "Ai&l-ddechrau"
-
-#: kttsjobmgr/kttsjobmgr.cpp:280
-msgid "R&estart"
-msgstr "A&il-gychwyn"
-
-#: kttsjobmgr/kttsjobmgr.cpp:288
-msgid "Later"
-msgstr "Nes ymlaen"
-
-#: kttsjobmgr/kttsjobmgr.cpp:292
-msgid "Change Talker"
+#: kttsjobmgr/kttsjobmgr.cpp:186
+msgid ""
+"<p>Changes a job to Paused state.  If currently speaking, the job stops "
+"speaking.  Paused jobs prevent jobs that follow them from speaking, so "
+"either click <b>Resume</b> to make the job speakable, or click <b>Later</b> "
+"to move it down in the list.</p>"
 msgstr ""
 
-#: kttsjobmgr/kttsjobmgr.cpp:297
-msgid "Previous Part"
-msgstr ""
-
-#: kttsjobmgr/kttsjobmgr.cpp:301
-msgid "Previous Sentence"
-msgstr ""
-
-#: kttsjobmgr/kttsjobmgr.cpp:305
-msgid "Next Sentence"
-msgstr ""
-
-#: kttsjobmgr/kttsjobmgr.cpp:309
-msgid "Next Part"
-msgstr ""
-
-#: kttsjobmgr/kttsjobmgr.cpp:314
-msgid "Speak Clipboard"
-msgstr ""
-
-#: kttsjobmgr/kttsjobmgr.cpp:318
-msgid "Speak File"
-msgstr ""
-
-#: kttsjobmgr/kttsjobmgr.cpp:322
-msgid "Refresh"
-msgstr "Cyfredoli"
-
-#: kttsjobmgr/kttsjobmgr.cpp:584
-msgid "Select Talker"
-msgstr ""
-
-#: kttsjobmgr/kttsjobmgr.cpp:665
-msgid "Queued"
-msgstr "Mewn Ciw"
-
-#: kttsjobmgr/kttsjobmgr.cpp:666
-msgid "Waiting"
-msgstr "Aros"
-
-#: kttsjobmgr/kttsjobmgr.cpp:667
-msgid "Speaking"
-msgstr ""
-
-#: kttsjobmgr/kttsjobmgr.cpp:668
-msgid "Paused"
-msgstr ""
-
-#: kttsjobmgr/kttsjobmgr.cpp:669
-msgid "Finished"
-msgstr "Wedi Gorffen"
-
-#: kttsjobmgr/kttsjobmgr.cpp:670 plugins/festivalint/festivalintconf.cpp:303
-#: plugins/festivalint/festivalintconf.cpp:499
-msgid "Unknown"
-msgstr "Anhysbys"
-
-#: kttsmgr/kttsmgr.cpp:38
-msgid "KTTSMgr"
-msgstr ""
-
-#: kttsmgr/kttsmgr.cpp:39 kttsmgr/kttsmgr.cpp:107
-msgid "Text-to-Speech Manager"
-msgstr ""
-
-#: kttsmgr/kttsmgr.cpp:66
-msgid "KDE Text-to-Speech Manager"
-msgstr ""
-
-#: kttsmgr/kttsmgr.cpp:114
-msgid "&Speak Clipboard Contents"
-msgstr ""
-
-#: kttsmgr/kttsmgr.cpp:118
+#: kttsjobmgr/kttsjobmgr.cpp:193 kttsmgr/kttsmgr.cpp:151
 msgid "Resume"
 msgstr "Ail-ddechrau"
 
-#: kttsmgr/kttsmgr.cpp:121
+#: kttsjobmgr/kttsjobmgr.cpp:195
+msgid ""
+"<p>Resumes a paused job or changes a Queued job to Waiting.  If the job is "
+"the top speakable job in the list, it begins speaking.</p>"
+msgstr ""
+
+#: kttsjobmgr/kttsjobmgr.cpp:200
+msgid "R&estart"
+msgstr "A&il-gychwyn"
+
+#: kttsjobmgr/kttsjobmgr.cpp:202
+msgid ""
+"<p>Rewinds a job to the beginning and changes its state to Waiting.  If the "
+"job is the top speakable job in the list, it begins speaking.</p>"
+msgstr ""
+
+#: kttsjobmgr/kttsjobmgr.cpp:209
+msgid ""
+"<p>Deletes the job.  If it is currently speaking, it stops speaking.  The "
+"next speakable job in the list begins speaking.</p>"
+msgstr ""
+
+#: kttsjobmgr/kttsjobmgr.cpp:214
+#, fuzzy
+msgid "&Later"
+msgstr "Nes ymlaen"
+
+#: kttsjobmgr/kttsjobmgr.cpp:216
+msgid ""
+"<p>"
+"Moves a job downward in the list so that it will be spoken later.  If the "
+"job is currently speaking, its state changes to Paused.</p>"
+msgstr ""
+
+#: kttsjobmgr/kttsjobmgr.cpp:222
+msgid "Pre&vious Part"
+msgstr ""
+
+#: kttsjobmgr/kttsjobmgr.cpp:224
+msgid "<p>Rewinds a multi-part job to the previous part.</p>"
+msgstr ""
+
+#: kttsjobmgr/kttsjobmgr.cpp:228
+msgid "&Previous Sentence"
+msgstr ""
+
+#: kttsjobmgr/kttsjobmgr.cpp:230
+msgid "<p>Rewinds a job to the previous sentence.</p>"
+msgstr ""
+
+#: kttsjobmgr/kttsjobmgr.cpp:234
+#, fuzzy
+msgid "&Next Sentence"
+msgstr "Brawddegau"
+
+#: kttsjobmgr/kttsjobmgr.cpp:236
+msgid "<p>Advances a job to the next sentence.</p>"
+msgstr ""
+
+#: kttsjobmgr/kttsjobmgr.cpp:240
+msgid "Ne&xt Part"
+msgstr ""
+
+#: kttsjobmgr/kttsjobmgr.cpp:242
+msgid "<p>Advances a multi-part job to the next part.</p>"
+msgstr ""
+
+#: kttsjobmgr/kttsjobmgr.cpp:247
+msgid "&Speak Clipboard"
+msgstr ""
+
+#: kttsjobmgr/kttsjobmgr.cpp:249
+msgid ""
+"<p>Queues the current contents of the clipboard for speaking and sets its "
+"state to Waiting.  If the job is the topmost in the list, it begins "
+"speaking.  The job will be spoken by the topmost Talker in the "
+"<b>Talkers</b> tab.</p>"
+msgstr ""
+
+#: kttsjobmgr/kttsjobmgr.cpp:255
+msgid "Spea&k File"
+msgstr ""
+
+#: kttsjobmgr/kttsjobmgr.cpp:257
+msgid ""
+"<p>Prompts you for a file name and queues the contents of the file for "
+"speaking.  You must click the <b>Resume</b> button before the job will be "
+"speakable.  The job will be spoken by the topmost Talker in the "
+"<b>Talkers</b> tab.</p>"
+msgstr ""
+
+#: kttsjobmgr/kttsjobmgr.cpp:263
+msgid "Change Talker"
+msgstr ""
+
+#: kttsjobmgr/kttsjobmgr.cpp:265
+msgid ""
+"<p>Prompts you with a list of your configured Talkers from the "
+"<b>Talkers</b> tab.  The job will be spoken using the selected Talker.</p>"
+msgstr ""
+
+#: kttsjobmgr/kttsjobmgr.cpp:270
+#, fuzzy
+msgid "&Refresh"
+msgstr "Cyfredoli"
+
+#: kttsjobmgr/kttsjobmgr.cpp:272
+msgid "<p>Refresh the list of jobs.</p>"
+msgstr ""
+
+#: kttsjobmgr/kttsjobmgr.cpp:286
+msgid "Current Sentence"
+msgstr ""
+
+#: kttsjobmgr/kttsjobmgr.cpp:293
+msgid "<p>The text of the sentence currently speaking.</p>"
+msgstr ""
+
+#: kttsjobmgr/kttsjobmgr.cpp:568
+msgid "Queued"
+msgstr "Mewn Ciw"
+
+#: kttsjobmgr/kttsjobmgr.cpp:569
+msgid "Waiting"
+msgstr "Aros"
+
+#: kttsjobmgr/kttsjobmgr.cpp:570
+msgid "Speaking"
+msgstr ""
+
+#: kttsjobmgr/kttsjobmgr.cpp:571
+msgid "Paused"
+msgstr ""
+
+#: kttsjobmgr/kttsjobmgr.cpp:572
+msgid "Finished"
+msgstr "Wedi Gorffen"
+
+#: kttsjobmgr/kttsjobmgr.cpp:573 plugins/festivalint/festivalintconf.cpp:309
+#: plugins/festivalint/festivalintconf.cpp:505
+msgid "Unknown"
+msgstr "Anhysbys"
+
+#: kttsmgr/kttsmgr.cpp:44
+msgid "Start minimized in system tray."
+msgstr ""
+
+#: kttsmgr/kttsmgr.cpp:46
+msgid "Exit when speaking is finished and minimized in system tray."
+msgstr ""
+
+#: kttsmgr/kttsmgr.cpp:53
+msgid "KTTSMgr"
+msgstr ""
+
+#: kttsmgr/kttsmgr.cpp:54 kttsmgr/kttsmgr.cpp:140
+msgid "Text-to-Speech Manager"
+msgstr ""
+
+#: kttsmgr/kttsmgr.cpp:83
+msgid "KDE Text-to-Speech Manager"
+msgstr ""
+
+#: kttsmgr/kttsmgr.cpp:147
+msgid "&Speak Clipboard Contents"
+msgstr ""
+
+#: kttsmgr/kttsmgr.cpp:149
+msgid "&Hold"
+msgstr "&Gafael"
+
+#: kttsmgr/kttsmgr.cpp:154
 msgid "KTTS &Handbook"
 msgstr ""
 
-#: kttsmgr/kttsmgr.cpp:123
+#: kttsmgr/kttsmgr.cpp:156
 msgid "&About KTTSMgr"
+msgstr ""
+
+#: libkttsd/notify.cpp:49
+msgid "Speak event name"
+msgstr ""
+
+#: libkttsd/notify.cpp:50
+msgid "Speak the notification message"
+msgstr ""
+
+#: libkttsd/notify.cpp:51
+msgid "Do not speak the notification"
+msgstr ""
+
+#: libkttsd/notify.cpp:52
+msgid "Speak custom text:"
+msgstr ""
+
+#: libkttsd/notify.cpp:106
+msgid "none"
+msgstr ""
+
+#: libkttsd/notify.cpp:107
+msgid "notification dialogs"
+msgstr ""
+
+#: libkttsd/notify.cpp:108
+msgid "passive popups"
+msgstr ""
+
+#: libkttsd/notify.cpp:109
+msgid "notification dialogs and passive popups"
+msgstr ""
+
+#: libkttsd/notify.cpp:110
+msgid "all notifications"
 msgstr ""
 
 #: libkttsd/pluginproc.cpp:184
@@ -2073,6 +2485,63 @@ msgstr "Lladin1"
 #: libkttsd/pluginproc.cpp:189
 msgid "Unicode"
 msgstr "Ungôd"
+
+#: filters/sbd/sbdconf.cpp:268
+#: filters/stringreplacer/stringreplacerconf.cpp:452
+#: filters/talkerchooser/talkerchooserconf.cpp:345
+#: libkttsd/selecttalkerdlg.cpp:191
+msgid "Select Languages"
+msgstr ""
+
+#: libkttsd/talkercode.cpp:234 libkttsd/talkercode.cpp:243
+msgid "male"
+msgstr ""
+
+#: libkttsd/talkercode.cpp:236 libkttsd/talkercode.cpp:245
+msgid "female"
+msgstr ""
+
+#: libkttsd/talkercode.cpp:238 libkttsd/talkercode.cpp:247
+msgid ""
+"_: neutral gender\n"
+"neutral"
+msgstr ""
+
+#: libkttsd/talkercode.cpp:254 libkttsd/talkercode.cpp:263
+msgid ""
+"_: medium sound\n"
+"medium"
+msgstr ""
+
+#: libkttsd/talkercode.cpp:256 libkttsd/talkercode.cpp:265
+msgid ""
+"_: loud sound\n"
+"loud"
+msgstr ""
+
+#: libkttsd/talkercode.cpp:258 libkttsd/talkercode.cpp:267
+msgid ""
+"_: soft sound\n"
+"soft"
+msgstr ""
+
+#: libkttsd/talkercode.cpp:274 libkttsd/talkercode.cpp:283
+msgid ""
+"_: medium speed\n"
+"medium"
+msgstr ""
+
+#: libkttsd/talkercode.cpp:276 libkttsd/talkercode.cpp:285
+msgid ""
+"_: fast speed\n"
+"fast"
+msgstr ""
+
+#: libkttsd/talkercode.cpp:278 libkttsd/talkercode.cpp:287
+msgid ""
+"_: slow speed\n"
+"slow"
+msgstr ""
 
 #: app-plugins/kate/katekttsd.cpp:77
 msgid "Speak Text"
@@ -2094,59 +2563,36 @@ msgstr ""
 msgid "The DCOP call startText failed."
 msgstr ""
 
-#: filters/sbd/sbdconf.cpp:262
-#: filters/stringreplacer/stringreplacerconf.cpp:446
-#: filters/talkerchooser/talkerchooserconf.cpp:339
-msgid "Select Languages"
-msgstr ""
-
-#: filters/sbd/sbdproc.cpp:412
+#: filters/sbd/sbdproc.cpp:418
 msgid "Invalid S S M L."
 msgstr ""
 
-#: filters/stringreplacer/stringreplacerconf.cpp:143
-msgid "Unable to open file."
-msgstr ""
-
-#: filters/stringreplacer/stringreplacerconf.cpp:149
-msgid "File not in proper XML format."
-msgstr ""
-
-#: filters/stringreplacer/stringreplacerconf.cpp:274
-msgid "Unable to open file "
-msgstr ""
-
-#: filters/stringreplacer/stringreplacerconf.cpp:360
-#: filters/stringreplacer/stringreplacerconf.cpp:395
+#: filters/stringreplacer/stringreplacerconf.cpp:366
+#: filters/stringreplacer/stringreplacerconf.cpp:401
 msgid "String Replacer"
 msgstr ""
 
-#: filters/stringreplacer/stringreplacerconf.cpp:393
-#: filters/stringreplacer/stringreplacerconf.cpp:481
-#: filters/stringreplacer/stringreplacerconf.cpp:485
+#: filters/stringreplacer/stringreplacerconf.cpp:399
+#: filters/stringreplacer/stringreplacerconf.cpp:487
+#: filters/stringreplacer/stringreplacerconf.cpp:491
 msgid "Multiple Languages"
 msgstr ""
 
-#: filters/stringreplacer/stringreplacerconf.cpp:405
-#: filters/stringreplacer/stringreplacerconf.cpp:599
-#: filters/stringreplacer/stringreplacerproc.cpp:136
+#: filters/stringreplacer/stringreplacerconf.cpp:411
+#: filters/stringreplacer/stringreplacerconf.cpp:605
+#: filters/stringreplacer/stringreplacerproc.cpp:142
 msgid "Word"
 msgstr "Gair"
 
-#: filters/stringreplacer/stringreplacerconf.cpp:587
+#: filters/stringreplacer/stringreplacerconf.cpp:593
 msgid "Edit String Replacement"
 msgstr ""
 
-#: filters/stringreplacer/stringreplacerconf.cpp:690
-#: filters/stringreplacer/stringreplacerconf.cpp:706
-msgid "Error Opening File"
-msgstr ""
-
-#: filters/talkerchooser/talkerchooserconf.cpp:253
+#: filters/talkerchooser/talkerchooserconf.cpp:259
 msgid "Talker Chooser"
 msgstr ""
 
-#: filters/xmltransformer/xmltransformerconf.cpp:135
+#: filters/xmltransformer/xmltransformerconf.cpp:141
 msgid "XML Transformer"
 msgstr ""
 
@@ -2160,29 +2606,25 @@ msgid ""
 "configured properly."
 msgstr ""
 
-#: players/artsplayer/artsplayer.cpp:243
-msgid "JuK"
-msgstr ""
-
-#: plugins/command/commandconf.cpp:164 plugins/epos/eposconf.cpp:214
-#: plugins/flite/fliteconf.cpp:145 plugins/freetts/freettsconf.cpp:179
+#: plugins/command/commandconf.cpp:164 plugins/epos/eposconf.cpp:220
+#: plugins/flite/fliteconf.cpp:151 plugins/freetts/freettsconf.cpp:179
 #: plugins/hadifix/hadifixconf.cpp:278
 msgid "Testing."
 msgstr ""
 
-#: plugins/festivalint/festivalintconf.cpp:395
+#: plugins/festivalint/festivalintconf.cpp:401
 msgid "Scanning... Please wait."
 msgstr ""
 
-#: plugins/festivalint/festivalintconf.cpp:410
+#: plugins/festivalint/festivalintconf.cpp:416
 msgid "Query Voices"
 msgstr ""
 
-#: plugins/festivalint/festivalintconf.cpp:411
+#: plugins/festivalint/festivalintconf.cpp:417
 msgid "Querying Festival for available voices.  This could take up to 15 seconds."
 msgstr ""
 
-#: plugins/festivalint/festivalintconf.cpp:557
+#: plugins/festivalint/festivalintconf.cpp:563
 msgid ""
 "Testing.  MultiSyn voices require several seconds to load.  Please be "
 "patient."
@@ -2243,6 +2685,9 @@ msgid ""
 "Your emails"
 msgstr "kyfieithu@dotmon.com"
 
+#~ msgid "&Resume"
+#~ msgstr "Ai&l-ddechrau"
+
 #~ msgid "Edit..."
 #~ msgstr "Golygu..."
 
@@ -2257,9 +2702,6 @@ msgstr "kyfieithu@dotmon.com"
 
 #~ msgid "Languages"
 #~ msgstr "Ieithoedd"
-
-#~ msgid "&Default"
-#~ msgstr "&Rhagosod"
 
 #~ msgid "Form1"
 #~ msgstr "Ffurf1"

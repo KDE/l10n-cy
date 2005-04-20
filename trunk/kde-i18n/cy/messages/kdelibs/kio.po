@@ -14,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kio\n"
-"POT-Creation-Date: 2005-03-11 01:22+0100\n"
+"POT-Creation-Date: 2005-04-20 15:04+0200\n"
 "PO-Revision-Date: 2004-01-16 09:20+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -28,22 +28,27 @@ msgstr ""
 msgid "File '%1' is not readable"
 msgstr "Nid yw'r ffeil '%1' yn ddarllenadwy"
 
-#: kio/global.cpp:715 kio/job.cpp:1682 kio/job.cpp:3109 kio/job.cpp:3568
-#: kio/paste.cpp:60
+#: kio/global.cpp:715 kio/job.cpp:1695 kio/job.cpp:3123 kio/job.cpp:3582
+#: kio/paste.cpp:65
 msgid "File Already Exists"
 msgstr "Ffeil yn Bodoli'n Barod"
 
-#: kio/global.cpp:725 kio/job.cpp:2826
+#: kio/global.cpp:725 kio/job.cpp:2840
 msgid "Folder Already Exists"
 msgstr "Plygell yn Bodoli'n Barod"
 
-#: kio/job.cpp:3109 kio/job.cpp:3568
+#: kio/job.cpp:3123 kio/job.cpp:3582
 msgid "Already Exists as Folder"
 msgstr "Yn Bodoli'n Barod fel Plygell"
 
 #: kio/kimageio.cpp:231
 msgid "All Pictures"
 msgstr "Pob Delwedd"
+
+#: kio/pastedialog.cpp:49
+#, fuzzy
+msgid "Data format:"
+msgstr "Fformat ffeil:"
 
 #: kio/renamedlg.cpp:119
 msgid "&Rename"
@@ -120,7 +125,7 @@ msgstr "newidwyd ar %1"
 msgid "The source file is '%1'"
 msgstr "Mae'r ffeil tarddiad yn '%1'"
 
-#: kio/kdirlister.cpp:1989 kio/krun.cpp:777 kio/paste.cpp:97
+#: kio/kdirlister.cpp:2177 kio/krun.cpp:777 kio/paste.cpp:210
 #: kio/renamedlg.cpp:431
 #, c-format
 msgid ""
@@ -130,14 +135,46 @@ msgstr ""
 "URL Annilys \n"
 " %1"
 
-#: kio/paste.cpp:44
+#: kio/paste.cpp:49 kio/paste.cpp:115
 #, fuzzy
 msgid "Filename for clipboard content:"
 msgstr "Enw ffeil i gynnwys gludfwrdd:"
 
-#: kio/paste.cpp:107 kio/paste.cpp:147
+#: kio/paste.cpp:108
+#, fuzzy
+msgid "%1 (%2)"
+msgstr "%1 (porth %2)"
+
+#: kio/paste.cpp:123
+msgid ""
+"The clipboard has changed since you used 'paste': the chosen data format is "
+"no longer applicable. Please copy again what you wanted to paste."
+msgstr ""
+
+#: kio/paste.cpp:198 kio/paste.cpp:221 kio/paste.cpp:247
 msgid "The clipboard is empty"
 msgstr "Mae'r gludfwrdd yn wag "
+
+#: kio/paste.cpp:295
+#, fuzzy, c-format
+msgid ""
+"_n: &Paste file\n"
+"&Paste %n files"
+msgstr ""
+"%n ffeil\n"
+"%n o ffeiliau"
+
+#: kio/paste.cpp:297
+#, c-format
+msgid ""
+"_n: &Paste URL\n"
+"&Paste %n URLs"
+msgstr ""
+
+#: kio/paste.cpp:299
+#, fuzzy
+msgid "&Paste clipboard contents"
+msgstr "Enw ffeil i gynnwys gludfwrdd:"
 
 #: kio/observer.cpp:338 misc/uiserver.cpp:1218
 msgid "The peer SSL certificate appears to be corrupt."
@@ -228,11 +265,11 @@ msgstr ""
 "Methu canfod math MIME\n"
 " %1"
 
-#: kio/kmimetype.cpp:789
+#: kio/kmimetype.cpp:797
 msgid "The desktop entry file %1 has no Type=... entry."
 msgstr "Mae'r ffeil cofnod penbwrdd  %1 heb gofnod Type= ..."
 
-#: kio/kmimetype.cpp:810
+#: kio/kmimetype.cpp:818
 msgid ""
 "The desktop entry of type\n"
 "%1\n"
@@ -242,7 +279,7 @@ msgstr ""
 " %1\n"
 " yn anhysbys."
 
-#: kio/kmimetype.cpp:824 kio/kmimetype.cpp:926 kio/kmimetype.cpp:1076
+#: kio/kmimetype.cpp:832 kio/kmimetype.cpp:934 kio/kmimetype.cpp:1084
 msgid ""
 "The desktop entry file\n"
 "%1\n"
@@ -252,7 +289,7 @@ msgstr ""
 " %1\n"
 " o fath FSDevice ond nid oes cofnod Dev= ... ganddo."
 
-#: kio/kmimetype.cpp:870
+#: kio/kmimetype.cpp:878
 msgid ""
 "The desktop entry file\n"
 "%1\n"
@@ -262,19 +299,19 @@ msgstr ""
 " %1\n"
 " o fath Link ond nid oes  cofnod URL= ... ganddo."
 
-#: kio/kmimetype.cpp:936
+#: kio/kmimetype.cpp:944
 msgid "Mount"
 msgstr "Gosod"
 
-#: kio/kmimetype.cpp:947
+#: kio/kmimetype.cpp:955
 msgid "Eject"
 msgstr "Allfwrw"
 
-#: kio/kmimetype.cpp:949
+#: kio/kmimetype.cpp:957
 msgid "Unmount"
 msgstr "Datosod"
 
-#: kio/kmimetype.cpp:1034
+#: kio/kmimetype.cpp:1042
 msgid ""
 "The desktop entry file\n"
 "%1\n"
@@ -2326,30 +2363,30 @@ msgstr "Wedi seibio"
 msgid " %1/s "
 msgstr "%1/s"
 
-#: kio/passdlg.cpp:61
+#: kio/passdlg.cpp:57
 msgid "Password"
 msgstr "Cyfrinair"
 
-#: kio/passdlg.cpp:102
+#: kio/passdlg.cpp:98
 #, fuzzy
 msgid "You need to supply a username and a password"
 msgstr "Rhaid i chi ddarparu enw cyfrif a cyfrinair"
 
 #. i18n: file ./kfile/kpropertiesdesktopadvbase.ui line 134
-#: kfile/kpropertiesdialog.cpp:3524 kio/passdlg.cpp:112 rc.cpp:108
+#: kfile/kpropertiesdialog.cpp:3524 kio/passdlg.cpp:108 rc.cpp:108
 #, no-c-format
 msgid "&Username:"
 msgstr "&Enw Defnyddiwr:"
 
-#: kio/passdlg.cpp:129
+#: kio/passdlg.cpp:125
 msgid "&Password:"
 msgstr "&Cyfrinair"
 
-#: kio/passdlg.cpp:151
+#: kio/passdlg.cpp:147
 msgid "&Keep password"
 msgstr "&Cadw Cyfrinair"
 
-#: kio/passdlg.cpp:349 kpasswdserver/kpasswdserver.cpp:251
+#: kio/passdlg.cpp:345 kpasswdserver/kpasswdserver.cpp:251
 msgid "Authorization Dialog"
 msgstr "Ymgom Awdurdodi"
 
@@ -2404,47 +2441,47 @@ msgstr ""
 "<qt>Methu rhedeg y gorchymyn penodol. Nid yw'r ffeil neu plygell "
 "<b>%1</b>mewn bod.</qt>"
 
-#: kio/krun.cpp:1284
+#: kio/krun.cpp:1290
 #, fuzzy
 msgid "Could not find the program '%1'"
 msgstr "Methu darganfod y rhaglen '%1'"
 
-#: kio/kfileitem.cpp:649
+#: kio/kfileitem.cpp:654
 msgid "Symbolic Link"
 msgstr "Cyswllt Symbolaidd"
 
-#: kio/kfileitem.cpp:651
+#: kio/kfileitem.cpp:656
 msgid "%1 (Link)"
 msgstr "%1 (Cyswllt)"
 
 #: ../kioslave/http/kcookiejar/kcookiewin.cpp:270
-#: bookmarks/kbookmarkmenu.cc:791 kfile/kpropertiesdialog.cpp:3755
-#: kio/kfileitem.cpp:690
+#: bookmarks/kbookmarkmenu.cc:794 kfile/kpropertiesdialog.cpp:3755
+#: kio/kfileitem.cpp:695
 msgid "Name:"
 msgstr "Enw:"
 
-#: kfile/kpropertiesdialog.cpp:894 kio/kfileitem.cpp:691
+#: kfile/kpropertiesdialog.cpp:894 kio/kfileitem.cpp:696
 msgid "Type:"
 msgstr "Math:"
 
-#: kio/kfileitem.cpp:695
+#: kio/kfileitem.cpp:700
 #, fuzzy
 msgid "Link to %1 (%2)"
 msgstr "Cyswllt i %1"
 
-#: kfile/kpropertiesdialog.cpp:940 kio/kfileitem.cpp:700
+#: kfile/kpropertiesdialog.cpp:940 kio/kfileitem.cpp:705
 msgid "Size:"
 msgstr "Maint:"
 
-#: kfile/kpropertiesdialog.cpp:1002 kio/kfileitem.cpp:705
+#: kfile/kpropertiesdialog.cpp:1002 kio/kfileitem.cpp:710
 msgid "Modified:"
 msgstr "Newidwyd:"
 
-#: kio/kfileitem.cpp:708
+#: kio/kfileitem.cpp:713
 msgid "Owner:"
 msgstr "Perchennog:"
 
-#: kio/kfileitem.cpp:709
+#: kio/kfileitem.cpp:714
 msgid "Permissions:"
 msgstr "Caniatadau "
 
@@ -3648,7 +3685,7 @@ msgstr "Mae ffeil neu blygell o'r enw %1 mewn bod yn barod."
 msgid "You do not have permission to create that folder."
 msgstr "Does dim hawliau ganddoch i greu'r plygell yna."
 
-#: bookmarks/kbookmarkmenu.cc:797 kfile/kpropertiesdialog.cpp:932
+#: bookmarks/kbookmarkmenu.cc:800 kfile/kpropertiesdialog.cpp:932
 #: kfile/kurlrequesterdlg.cpp:47
 msgid "Location:"
 msgstr "Lleoliad:"
@@ -4110,9 +4147,9 @@ msgid "Delete File"
 msgstr "Dileu Ffeil"
 
 #: kfile/kdiroperator.cpp:478
-#, c-format
+#, fuzzy, c-format
 msgid ""
-"_n: translators: not called for n == 1\n"
+"_n: Do you really want to delete this item?\n"
 "Do you really want to delete these %n items?"
 msgstr ""
 "Ydych wir eisiau dileu'r %n eitem yma? \n"
@@ -4732,7 +4769,7 @@ msgstr "&Cymhwysiad"
 msgid "Add File Type for %1"
 msgstr "Ychwanegu Math Ffeil am %1"
 
-#: bookmarks/kbookmarkmenu.cc:829 kfile/kpropertiesdialog.cpp:3044
+#: bookmarks/kbookmarkmenu.cc:832 kfile/kpropertiesdialog.cpp:3044
 msgid "&Add"
 msgstr "&Ychwanegu"
 
@@ -4922,35 +4959,35 @@ msgstr ""
 "<p>Drwy dde-glicio ar gofnod, gallwch ychwanegu, golygu a diddymu "
 "byrlwybrau.</qt>"
 
-#: kfile/kurlbar.cpp:736
+#: kfile/kurlbar.cpp:730
 msgid "&Large Icons"
 msgstr "Eiconau &Mawr"
 
-#: kfile/kurlbar.cpp:736
+#: kfile/kurlbar.cpp:730
 msgid "&Small Icons"
 msgstr "Eiconau &Bach"
 
-#: kfile/kurlbar.cpp:742
+#: kfile/kurlbar.cpp:736
 msgid "&Edit Entry..."
 msgstr "&Golygu cofnod ..."
 
-#: kfile/kurlbar.cpp:746
+#: kfile/kurlbar.cpp:740
 msgid "&Add Entry..."
 msgstr "&Ychwanegu cofnod ..."
 
-#: kfile/kurlbar.cpp:750
+#: kfile/kurlbar.cpp:744
 msgid "&Remove Entry"
 msgstr "&Diddymu Cofnod"
 
-#: kfile/kurlbar.cpp:782
+#: kfile/kurlbar.cpp:776
 msgid "Enter a description"
 msgstr "Rhoi disgrifiad"
 
-#: kfile/kurlbar.cpp:928
+#: kfile/kurlbar.cpp:922
 msgid "Edit Quick Access Entry"
 msgstr "Golygu Cofnod Cyrchu ar Frys"
 
-#: kfile/kurlbar.cpp:931
+#: kfile/kurlbar.cpp:925
 msgid ""
 "<qt><b>Please provide a description, URL and icon for this Quick Access "
 "entry.</b></br></qt>"
@@ -4958,7 +4995,7 @@ msgstr ""
 "<qt><b>Mae angen darparu disgrifiad, URL ac eicon i'r cofnod Cyrchu ar Frys "
 "yma.</b></br></qt>"
 
-#: kfile/kurlbar.cpp:938
+#: kfile/kurlbar.cpp:932
 msgid ""
 "<qt>This is the text that will appear in the Quick Access panel."
 "<p>The description should consist of one or two words that will help you "
@@ -4970,12 +5007,12 @@ msgstr ""
 "mae'r cofnod hwn yn cyfeirio ato.</qt>"
 
 #. i18n: file ./kfile/kpropertiesdesktopbase.ui line 125
-#: kfile/kurlbar.cpp:941 rc.cpp:249
+#: kfile/kurlbar.cpp:935 rc.cpp:249
 #, no-c-format
 msgid "&Description:"
 msgstr "&Disgrifiad:"
 
-#: kfile/kurlbar.cpp:948
+#: kfile/kurlbar.cpp:942
 msgid ""
 "<qt>This is the location associated with the entry. Any valid URL may be "
 "used. For "
@@ -4994,11 +5031,11 @@ msgstr ""
 "<p>Gan glicio ar y botwm wrth ymyl y blwch golygu testun, gallwch pori at "
 "URL addas. </qt>"
 
-#: kfile/kurlbar.cpp:952
+#: kfile/kurlbar.cpp:946
 msgid "&URL:"
 msgstr "&URL:"
 
-#: kfile/kurlbar.cpp:959
+#: kfile/kurlbar.cpp:953
 msgid ""
 "<qt>This is the icon that will appear in the Quick Access panel."
 "<p>Click on the button to select a different icon.</qt>"
@@ -5006,15 +5043,15 @@ msgstr ""
 "<qt>Yr eicon a ymddenygs yn y panel Cyrchu ar Frys."
 "<p>Cliciwch ar y botwm i ddewis eicon gwahanol.</qt>"
 
-#: kfile/kurlbar.cpp:961
+#: kfile/kurlbar.cpp:955
 msgid "Choose an &icon:"
 msgstr "Dewis &eicon:"
 
-#: kfile/kurlbar.cpp:977
+#: kfile/kurlbar.cpp:971
 msgid "&Only show when using this application (%1)"
 msgstr "Dangos 'mond &pan ddefnyddir y cymhwysiad yma (%1)"
 
-#: kfile/kurlbar.cpp:980
+#: kfile/kurlbar.cpp:974
 msgid ""
 "<qt>Select this setting if you want this entry to show only when using the "
 "current application (%1)."
@@ -5653,11 +5690,11 @@ msgstr ""
 "Cliciwch ym i addasu'r ffordd y rheda'r cymhwysiad yma, ymgychwyn adborth, "
 "desisiadau DCOP, neu ei redeg fel defnyddiwr arall."
 
-#: ../kioslave/http/http.cc:4995 kpasswdserver/kpasswdserver.cpp:223
+#: ../kioslave/http/http.cc:4999 kpasswdserver/kpasswdserver.cpp:223
 msgid "  Do you want to retry?"
 msgstr "Ydych eisiau ail-geisio?"
 
-#: ../kioslave/http/http.cc:4996 kpasswdserver/kpasswdserver.cpp:225
+#: ../kioslave/http/http.cc:5000 kpasswdserver/kpasswdserver.cpp:225
 msgid "Authentication"
 msgstr "Dilysiant"
 
@@ -5715,72 +5752,72 @@ msgstr "Dileu y Tudnod"
 msgid "Bookmark Properties"
 msgstr "Priodweddau"
 
-#: bookmarks/kbookmarkmanager.cc:504 bookmarks/kbookmarkmenu.cc:340
+#: bookmarks/kbookmarkmanager.cc:504 bookmarks/kbookmarkmenu.cc:343
 #, fuzzy
 msgid "Cannot add bookmark with empty URL."
 msgstr "Methu ychwanegu tudnod efo URL gwag"
 
-#: bookmarks/kbookmarkmenu.cc:378
+#: bookmarks/kbookmarkmenu.cc:381
 #, fuzzy
 msgid ""
 "Are you sure you wish to remove the bookmark folder\n"
 "\"%1\"?"
 msgstr "Ydych wir eisiau gwaredu'r plygell tudnodau yma?"
 
-#: bookmarks/kbookmarkmenu.cc:379
+#: bookmarks/kbookmarkmenu.cc:382
 #, fuzzy
 msgid ""
 "Are you sure you wish to remove the bookmark\n"
 "\"%1\"?"
 msgstr "Ydych wir eisiau gwaredu'r tudnod yma?"
 
-#: bookmarks/kbookmarkmenu.cc:380
+#: bookmarks/kbookmarkmenu.cc:383
 #, fuzzy
 msgid "Bookmark Folder Deletion"
 msgstr "Gwaredu Plygell Tudnodau"
 
-#: bookmarks/kbookmarkmenu.cc:381
+#: bookmarks/kbookmarkmenu.cc:384
 #, fuzzy
 msgid "Bookmark Deletion"
 msgstr "Dewis y Baner"
 
-#: bookmarks/kbookmarkmenu.cc:483
+#: bookmarks/kbookmarkmenu.cc:486
 msgid "Bookmark Tabs as Folder..."
 msgstr "Creu Plygell allan o'r Tabiau Tudnodau..."
 
-#: bookmarks/kbookmarkmenu.cc:492
+#: bookmarks/kbookmarkmenu.cc:495
 msgid "Add a folder of bookmarks for all open tabs."
 msgstr "Ychwanegu plygell o dudnodau am bob tab sy'n agored."
 
-#: bookmarks/kbookmarkmenu.cc:515
+#: bookmarks/kbookmarkmenu.cc:518
 msgid "Add a bookmark for the current document"
 msgstr "Ychwanegu tudnod am y ddogfen gyfredol"
 
-#: bookmarks/kbookmarkmenu.cc:529
+#: bookmarks/kbookmarkmenu.cc:532
 msgid "Edit your bookmark collection in a separate window"
 msgstr "Golygu eich casgliad tudnodau mewn ffenest gwahanol"
 
-#: bookmarks/kbookmarkmenu.cc:538
+#: bookmarks/kbookmarkmenu.cc:541
 msgid "&New Bookmark Folder..."
 msgstr "&Plygell Newydd i Tudnodau..."
 
-#: bookmarks/kbookmarkmenu.cc:550
+#: bookmarks/kbookmarkmenu.cc:553
 msgid "Create a new bookmark folder in this menu"
 msgstr "Creu plygell newydd i dudnodau yn y ddewislen yma"
 
-#: bookmarks/kbookmarkmenu.cc:684
+#: bookmarks/kbookmarkmenu.cc:687
 msgid "Quick Actions"
 msgstr "Gweithrediadau Brys"
 
-#: bookmarks/kbookmarkmenu.cc:831
+#: bookmarks/kbookmarkmenu.cc:834
 msgid "&New Folder..."
 msgstr "&Plygell Newydd"
 
-#: bookmarks/kbookmarkmenu.cc:948
+#: bookmarks/kbookmarkmenu.cc:951
 msgid "Bookmark"
 msgstr "Tudnod"
 
-#: bookmarks/kbookmarkmenu.cc:1115
+#: bookmarks/kbookmarkmenu.cc:1118
 msgid "Netscape Bookmarks"
 msgstr "Tudnodau Netscape"
 
@@ -5852,12 +5889,12 @@ msgstr ""
 " %2 \n"
 "\n"
 
-#: ../kioslave/ftp/ftp.cc:595 ../kioslave/http/http.cc:5007
+#: ../kioslave/ftp/ftp.cc:595 ../kioslave/http/http.cc:5011
 #, fuzzy
 msgid "You need to supply a username and a password to access this site."
 msgstr "Rhaid i chi ddarparu defnydd-enw a cyfrinair i gyrchu'r wefan yma."
 
-#: ../kioslave/ftp/ftp.cc:597 ../kioslave/http/http.cc:5015
+#: ../kioslave/ftp/ftp.cc:597 ../kioslave/http/http.cc:5019
 msgid "Site:"
 msgstr "Gwefan:"
 
@@ -6234,41 +6271,41 @@ msgstr "%1 (porth %2)"
 msgid "%1 contacted. Waiting for reply..."
 msgstr "%1 wedi'i cysylltu. Yn disgwyl am ateb..."
 
-#: ../kioslave/http/http.cc:2917
+#: ../kioslave/http/http.cc:2918
 msgid "Server processing request, please wait..."
 msgstr "Mae'r gweinydd yn prosesu'r cais, arhoswch..."
 
-#: ../kioslave/http/http.cc:3760
+#: ../kioslave/http/http.cc:3762
 msgid "Requesting data to send"
 msgstr "Gofyn am ddata i'w danfon"
 
-#: ../kioslave/http/http.cc:3801
+#: ../kioslave/http/http.cc:3803
 #, c-format
 msgid "Sending data to %1"
 msgstr "Anfon data i %1"
 
-#: ../kioslave/http/http.cc:4210
+#: ../kioslave/http/http.cc:4212
 msgid "Retrieving %1 from %2..."
 msgstr "NÃ´l %1 oddiwrth %2..."
 
-#: ../kioslave/http/http.cc:4217
+#: ../kioslave/http/http.cc:4221
 msgid "Retrieving from %1..."
 msgstr "NÃ´l oddiwrth %1..."
 
-#: ../kioslave/http/http.cc:4987 ../kioslave/http/http.cc:5135
+#: ../kioslave/http/http.cc:4991 ../kioslave/http/http.cc:5139
 msgid "Authentication Failed."
 msgstr "Methodd dilysiant."
 
-#: ../kioslave/http/http.cc:4990 ../kioslave/http/http.cc:5138
+#: ../kioslave/http/http.cc:4994 ../kioslave/http/http.cc:5142
 #, fuzzy
 msgid "Proxy Authentication Failed."
 msgstr "Methodd Dilysiant Dirprwy!"
 
-#: ../kioslave/http/http.cc:5016 ../kioslave/http/http.cc:5033
+#: ../kioslave/http/http.cc:5020 ../kioslave/http/http.cc:5037
 msgid "<b>%1</b> at <b>%2</b>"
 msgstr "<b>%1</b> wrth <b>%2</b>"
 
-#: ../kioslave/http/http.cc:5023
+#: ../kioslave/http/http.cc:5027
 #, fuzzy
 msgid ""
 "You need to supply a username and a password for the proxy server listed "
@@ -6277,15 +6314,15 @@ msgstr ""
 "Rhaid i chi gynnig defnydd-enw a cyfrinair am y gweinydd dirprwy a rhestrir "
 "isod cyn caniateir cyrchiad i unrhyw fan."
 
-#: ../kioslave/http/http.cc:5032
+#: ../kioslave/http/http.cc:5036
 msgid "Proxy:"
 msgstr "Dirprwy:"
 
-#: ../kioslave/http/http.cc:5054
+#: ../kioslave/http/http.cc:5058
 msgid "Authentication needed for %1 but authentication is disabled."
 msgstr "Mae angen dilysiant am %1, ond analluogir dilysiant."
 
-#: ../kioslave/http/http.cc:5674
+#: ../kioslave/http/http.cc:5678
 msgid "Unsupported method: authentication will fail. Please submit a bug report."
 msgstr "Dull ni chynhelir: bydd dilysu yn methu.  Hysbyswch y nam!"
 
@@ -13407,9 +13444,6 @@ msgstr "Dim meta-wybodaeth am %1 "
 
 #~ msgid "Issued by:"
 #~ msgstr "Cyhoeddwyd gan:"
-
-#~ msgid "File format:"
-#~ msgstr "Fformat ffeil:"
 
 #~ msgid "State"
 #~ msgstr "Talaith"
