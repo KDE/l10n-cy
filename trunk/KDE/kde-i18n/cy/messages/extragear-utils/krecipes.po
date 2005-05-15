@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-3/krecipes.po\n"
-"POT-Creation-Date: 2005-05-14 01:25+0200\n"
+"POT-Creation-Date: 2005-05-15 01:31+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/dialogs/dbimportdialog.cpp:66 src/pref.cpp:249 src/setupwizard.cpp:552
+#: src/dialogs/dbimportdialog.cpp:66 src/pref.cpp:260 src/setupwizard.cpp:552
 msgid "Database file:"
 msgstr ""
 
@@ -22,22 +22,22 @@ msgstr "Enw defnyddiwr:"
 msgid "Database"
 msgstr "Cronfa ddata"
 
-#: src/dialogs/dbimportdialog.cpp:166 src/pref.cpp:82 src/pref.cpp:168
+#: src/dialogs/dbimportdialog.cpp:166 src/pref.cpp:93 src/pref.cpp:179
 #: src/setupwizard.cpp:463
 msgid "Server:"
 msgstr " Gweinydd:"
 
-#: src/dialogs/dbimportdialog.cpp:167 src/pref.cpp:95 src/pref.cpp:181
+#: src/dialogs/dbimportdialog.cpp:167 src/pref.cpp:106 src/pref.cpp:192
 #: src/setupwizard.cpp:197 src/setupwizard.cpp:305 src/setupwizard.cpp:398
 msgid "Username:"
 msgstr "Enw defnyddiwr:"
 
-#: src/dialogs/dbimportdialog.cpp:168 src/pref.cpp:108 src/pref.cpp:194
+#: src/dialogs/dbimportdialog.cpp:168 src/pref.cpp:119 src/pref.cpp:205
 #: src/setupwizard.cpp:203 src/setupwizard.cpp:311 src/setupwizard.cpp:418
 msgid "Password:"
 msgstr "Cyfrinair:"
 
-#: src/dialogs/dbimportdialog.cpp:169 src/pref.cpp:122 src/pref.cpp:208
+#: src/dialogs/dbimportdialog.cpp:169 src/pref.cpp:133 src/pref.cpp:219
 #: src/setupwizard.cpp:429
 msgid "Database name:"
 msgstr "Enw'r gronfa ddata: :"
@@ -550,7 +550,7 @@ msgstr ""
 msgid "Remove ingredient"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:519 src/pref.cpp:369
+#: src/dialogs/recipeinputdialog.cpp:519 src/pref.cpp:381
 #: src/widgets/ingredientlistview.cpp:104
 #: src/widgets/ingredientlistview.cpp:236
 msgid "Ingredient"
@@ -971,7 +971,7 @@ msgstr ""
 msgid "Database Type"
 msgstr ""
 
-#: src/pref.cpp:46 src/setupwizard.cpp:45 src/setupwizard.cpp:54
+#: src/pref.cpp:52 src/setupwizard.cpp:45 src/setupwizard.cpp:54
 msgid "Server Settings"
 msgstr "Gosodiadau Gweinydd"
 
@@ -1070,7 +1070,7 @@ msgstr "Dibynnydd:"
 msgid "In this dialog you can adjust SQLite settings."
 msgstr ""
 
-#: src/pref.cpp:257 src/setupwizard.cpp:561
+#: src/pref.cpp:268 src/setupwizard.cpp:561
 msgid "Open file dialog"
 msgstr "Agor ymgom ffeil"
 
@@ -1305,57 +1305,85 @@ msgstr ""
 msgid "Unsaved Changes"
 msgstr "Newidiadau Heb eu Cadw"
 
-#: src/pref.cpp:34
+#: src/pref.cpp:40
 msgid "Krecipes Preferences"
 msgstr ""
 
-#: src/pref.cpp:47
+#: src/pref.cpp:53
 msgid "Database Server Options (%1)"
 msgstr ""
 
-#: src/pref.cpp:53
+#: src/pref.cpp:59
 #, fuzzy
 msgid "Formatting"
 msgstr "Ffracsiwn"
 
-#: src/pref.cpp:53
+#: src/pref.cpp:59
 msgid "Customize Formatting"
 msgstr ""
 
-#: src/pref.cpp:58
+#: src/pref.cpp:64
 msgid "Recipe Import Options"
 msgstr ""
 
-#: src/pref.cpp:307
+#: src/pref.cpp:69
+msgid "Performance"
+msgstr ""
+
+#: src/pref.cpp:69
+msgid "Performance Options"
+msgstr ""
+
+#: src/pref.cpp:318
 msgid "Re-run wizard on next startup"
 msgstr ""
 
-#: src/pref.cpp:311
+#: src/pref.cpp:322
 msgid "Note: Krecipes must be restarted for most server preferences to take effect."
 msgstr ""
 
-#: src/pref.cpp:372
+#: src/pref.cpp:384
 msgid "Ingredient Format:"
 msgstr ""
 
-#: src/pref.cpp:374
+#: src/pref.cpp:386
 msgid "%n: Name<br>%p: Preparation method<br>%a: Amount<br>%u: Unit"
 msgstr ""
 
-#: src/pref.cpp:411
+#: src/pref.cpp:423
 msgid "Number Format"
 msgstr ""
 
-#: src/pref.cpp:412
+#: src/pref.cpp:424
 msgid "Fraction"
 msgstr "Ffracsiwn"
 
-#: src/pref.cpp:413
+#: src/pref.cpp:425
 msgid "Decimal"
 msgstr ""
 
-#: src/pref.cpp:428
+#: src/pref.cpp:440
 msgid "Overwrite recipes with same title"
+msgstr ""
+
+#: src/pref.cpp:473
+msgid ""
+"In most instances these options do not need to be changed.  However, "
+"limiting the amount of items displayed at once will <b>allow Krecipes to "
+"better perform when loaded with many thousands of recipes</b>."
+msgstr ""
+
+#: src/pref.cpp:478
+msgid "Number of recipes to display at once:"
+msgstr ""
+
+#: src/pref.cpp:480 src/pref.cpp:489
+#, fuzzy
+msgid "Unlimited"
+msgstr "Uned"
+
+#: src/pref.cpp:487
+msgid "Number of elements to display at once:"
 msgstr ""
 
 #: src/backends/qsqlrecipedb.cpp:53
