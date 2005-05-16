@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-3/krecipes.po\n"
-"POT-Creation-Date: 2005-05-15 01:31+0200\n"
+"POT-Creation-Date: 2005-05-16 01:28+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -91,7 +91,7 @@ msgstr "Dynodiad (Id)"
 
 #: src/dialogs/ingredientsdialog.cpp:96 src/dialogs/ingredientsdialog.cpp:133
 #: src/dialogs/recipeinputdialog.cpp:522 src/dialogs/unitsdialog.cpp:64
-#: src/krecipesview.cpp:284 src/krecipesview.cpp:336
+#: src/krecipesview.cpp:289 src/krecipesview.cpp:341
 #: src/widgets/propertylistview.cpp:84
 msgid "Units"
 msgstr "Unedau"
@@ -149,7 +149,7 @@ msgstr "Chwiliad:"
 msgid "Open Recipe(s)"
 msgstr ""
 
-#: src/dialogs/selectrecipedialog.cpp:94 src/krecipesview.cpp:354
+#: src/dialogs/selectrecipedialog.cpp:94 src/krecipesview.cpp:359
 msgid "Edit Recipe"
 msgstr ""
 
@@ -294,7 +294,7 @@ msgstr ""
 #: src/dialogs/advancedsearchdialog.cpp:391
 #: src/dialogs/recipeinputdialog.cpp:342 src/dialogs/setupdisplay.cpp:346
 #: src/dialogs/setupdisplay.cpp:351 src/exporters/htmlexporter.cpp:321
-#: src/krecipesview.cpp:287 src/krecipesview.cpp:348
+#: src/krecipesview.cpp:292 src/krecipesview.cpp:353
 msgid "Authors"
 msgstr "Awduron"
 
@@ -304,7 +304,7 @@ msgstr ""
 
 #: src/dialogs/recipeinputdialog.cpp:364 src/dialogs/setupdisplay.cpp:365
 #: src/dialogs/setupdisplay.cpp:370 src/exporters/htmlexporter.cpp:335
-#: src/krecipesview.cpp:286 src/krecipesview.cpp:344
+#: src/krecipesview.cpp:291 src/krecipesview.cpp:349
 msgid "Categories"
 msgstr "Categoriau"
 
@@ -326,8 +326,8 @@ msgstr ""
 #: src/dialogs/ingredientmatcherdialog.cpp:42
 #: src/dialogs/recipeinputdialog.cpp:558
 #: src/dialogs/refineshoppinglistdialog.cpp:109
-#: src/dialogs/setupdisplay.cpp:417 src/krecipesview.cpp:282
-#: src/krecipesview.cpp:328
+#: src/dialogs/setupdisplay.cpp:417 src/krecipesview.cpp:287
+#: src/krecipesview.cpp:333
 msgid "Ingredients"
 msgstr ""
 
@@ -369,8 +369,8 @@ msgstr ""
 
 #: src/dialogs/shoppinglistdialog.cpp:95
 #: src/dialogs/shoppinglistviewdialog.cpp:71
-#: src/dialogs/shoppinglistviewdialog.cpp:73 src/krecipesview.cpp:281
-#: src/krecipesview.cpp:315
+#: src/dialogs/shoppinglistviewdialog.cpp:73 src/krecipesview.cpp:286
+#: src/krecipesview.cpp:320
 msgid "Shopping List"
 msgstr ""
 
@@ -629,8 +629,8 @@ msgstr ""
 
 #: src/dialogs/recipeinputdialog.cpp:1550
 #: src/dialogs/recipeinputdialog.cpp:1576
-#: src/dialogs/recipeinputdialog.cpp:1586 src/krecipesview.cpp:427
-#: src/krecipesview.cpp:480
+#: src/dialogs/recipeinputdialog.cpp:1586 src/krecipesview.cpp:432
+#: src/krecipesview.cpp:485
 msgid "Unsaved changes"
 msgstr "Newidiadau Heb eu Cadw"
 
@@ -794,7 +794,7 @@ msgid "Opening recipes, please wait..."
 msgstr ""
 
 #: src/dialogs/dependanciesdialog.cpp:45 src/dialogs/recipeimportdialog.cpp:32
-#: src/krecipesview.cpp:409 src/recipeactionshandler.cpp:165
+#: src/krecipesview.cpp:414 src/recipeactionshandler.cpp:165
 msgid "Recipes"
 msgstr ""
 
@@ -1211,7 +1211,7 @@ msgstr ""
 msgid "&Collapse All"
 msgstr ""
 
-#: src/krecipesview.cpp:407 src/krecipesview.cpp:409
+#: src/krecipesview.cpp:412 src/krecipesview.cpp:414
 #: src/recipeactionshandler.cpp:156
 msgid "Export Recipe"
 msgstr ""
@@ -1362,27 +1362,39 @@ msgstr "Ffracsiwn"
 msgid "Decimal"
 msgstr ""
 
-#: src/pref.cpp:440
+#: src/pref.cpp:441
 msgid "Overwrite recipes with same title"
 msgstr ""
 
-#: src/pref.cpp:473
+#: src/pref.cpp:445
+msgid "Ask which recipes to import when importing multiple recipes"
+msgstr ""
+
+#: src/pref.cpp:455
+msgid ""
+"When this is enabled, the importer will show every recipe in the file(s) and "
+"allow you to select which recipes you want imported.\n"
+" \t\t\t\t\t\t\t\t\tDisable this to always import every recipe, which allows "
+"for faster and less memory-intensive imports."
+msgstr ""
+
+#: src/pref.cpp:486
 msgid ""
 "In most instances these options do not need to be changed.  However, "
 "limiting the amount of items displayed at once will <b>allow Krecipes to "
 "better perform when loaded with many thousands of recipes</b>."
 msgstr ""
 
-#: src/pref.cpp:478
+#: src/pref.cpp:491
 msgid "Number of recipes to display at once:"
 msgstr ""
 
-#: src/pref.cpp:480 src/pref.cpp:489
+#: src/pref.cpp:493 src/pref.cpp:502
 #, fuzzy
 msgid "Unlimited"
 msgstr "Uned"
 
-#: src/pref.cpp:487
+#: src/pref.cpp:500
 msgid "Number of elements to display at once:"
 msgstr ""
 
@@ -1690,114 +1702,114 @@ msgstr ""
 msgid "File does not appear to be a valid NYC export."
 msgstr ""
 
-#: src/importers/baseimporter.cpp:67
+#: src/importers/baseimporter.cpp:84
 msgid ""
 "<!doc>Import of recipes from the file <b>\"%1\"</b> <b>failed</b>"
 " due to the following error(s):"
 msgstr ""
 
-#: src/importers/baseimporter.cpp:73
+#: src/importers/baseimporter.cpp:90
 msgid "The file <b>%1</b> generated the following warning(s):"
 msgstr ""
 
-#: src/importers/baseimporter.cpp:114
+#: src/importers/baseimporter.cpp:104 src/importers/baseimporter.cpp:143
 msgid "Importing selected recipes"
 msgstr ""
 
-#: src/importers/baseimporter.cpp:117
+#: src/importers/baseimporter.cpp:146
 msgid "%v/%m Recipes"
 msgstr ""
 
-#: src/importers/baseimporter.cpp:129
+#: src/importers/baseimporter.cpp:179
 msgid "All recipes up unto this point have been successfully imported."
 msgstr ""
 
-#: src/importers/baseimporter.cpp:137
+#: src/importers/baseimporter.cpp:188
 #, c-format
 msgid "Importing recipe: %1"
 msgstr ""
 
-#: src/krecipesview.cpp:94 src/krecipesview.cpp:280 src/krecipesview.cpp:311
+#: src/krecipesview.cpp:96 src/krecipesview.cpp:285 src/krecipesview.cpp:316
 msgid "Find/Edit Recipes"
 msgstr ""
 
-#: src/krecipesview.cpp:121
+#: src/krecipesview.cpp:123
 msgid "Data"
 msgstr "Data"
 
-#: src/krecipesview.cpp:267
+#: src/krecipesview.cpp:269
 msgid ""
 "\n"
 "Would you like to run the setup wizard again? Otherwise, the application "
 "will be closed."
 msgstr ""
 
-#: src/krecipesview.cpp:273
+#: src/krecipesview.cpp:275
 msgid "Exiting"
 msgstr "Terfynu"
 
-#: src/krecipesview.cpp:285 src/krecipesview.cpp:340
+#: src/krecipesview.cpp:290 src/krecipesview.cpp:345
 msgid "Preparation Methods"
 msgstr ""
 
-#: src/krecipesview.cpp:288 src/krecipesview.cpp:319
+#: src/krecipesview.cpp:293 src/krecipesview.cpp:324
 msgid "Diet Helper"
 msgstr ""
 
-#: src/krecipesview.cpp:289 src/krecipesview.cpp:323
+#: src/krecipesview.cpp:294 src/krecipesview.cpp:328
 msgid "Ingredient Matcher"
 msgstr ""
 
-#: src/krecipesview.cpp:358
+#: src/krecipesview.cpp:363
 msgid "View Recipe"
 msgstr ""
 
-#: src/krecipesview.cpp:425
+#: src/krecipesview.cpp:430
 msgid ""
 "A recipe contains unsaved changes.\n"
 "Do you want to save changes made to this recipe before editing another "
 "recipe?"
 msgstr ""
 
-#: src/krecipesview.cpp:445
+#: src/krecipesview.cpp:450
 msgid "Are you sure you want to permanently remove the selected recipe?"
 msgstr ""
 
-#: src/krecipesview.cpp:446
+#: src/krecipesview.cpp:451
 msgid "Confirm remove"
 msgstr "Cadarnhau Gwaredu"
 
-#: src/krecipesview.cpp:478
+#: src/krecipesview.cpp:483
 msgid ""
 "A recipe contains unsaved changes.\n"
 "Do you want to save changes made to this recipe before creating a new recipe?"
 msgstr ""
 
-#: src/krecipesview.cpp:576
+#: src/krecipesview.cpp:581
 msgid "Nutrient Import"
 msgstr ""
 
-#: src/krecipesview.cpp:576
+#: src/krecipesview.cpp:581
 msgid "Importing USDA nutrient data"
 msgstr ""
 
-#: src/krecipesview.cpp:629
+#: src/krecipesview.cpp:634
 msgid "Unable to setup database"
 msgstr ""
 
-#: src/krecipesview.cpp:640
+#: src/krecipesview.cpp:645
 msgid "Code error. No DB support has been included. Exiting"
 msgstr ""
 
-#: src/krecipesview.cpp:720
+#: src/krecipesview.cpp:725
 msgid "<b>Recipe view</b>"
 msgstr ""
 
-#: src/krecipesview.cpp:725
+#: src/krecipesview.cpp:730
 msgid "<b>Recipes list</b>"
 msgstr ""
 
-#: src/krecipesview.cpp:726
+#: src/krecipesview.cpp:731
 msgid ""
 "<b>Search</b> for your favourite recipes easily: just type part of its "
 "name."
@@ -1818,11 +1830,11 @@ msgid ""
 "excellent Krecipes format obviously.<br><br>"
 msgstr ""
 
-#: src/krecipesview.cpp:734
+#: src/krecipesview.cpp:739
 msgid "<b>Shopping list</b>"
 msgstr ""
 
-#: src/krecipesview.cpp:735
+#: src/krecipesview.cpp:740
 msgid ""
 "Need to do your shopping list? Just <b>add your recipes</b> for the week, "
 "and <b>press Ok</b>. Krecipes will generate a shopping list for "
@@ -1833,11 +1845,11 @@ msgid ""
 "diet, and then the shopping list.<br><br>"
 msgstr ""
 
-#: src/krecipesview.cpp:741
+#: src/krecipesview.cpp:746
 msgid "<b>Diet Helper</b>"
 msgstr ""
 
-#: src/krecipesview.cpp:742
+#: src/krecipesview.cpp:747
 msgid ""
 "This dialog will help you in creating a diet for several "
 "weeks/days."
@@ -1849,11 +1861,11 @@ msgid ""
 "want to have pizza for breakfast too....<br><br>"
 msgstr ""
 
-#: src/krecipesview.cpp:749
+#: src/krecipesview.cpp:754
 msgid "<b>Ingredient Matcher</b>"
 msgstr ""
 
-#: src/krecipesview.cpp:750
+#: src/krecipesview.cpp:755
 msgid ""
 "Do you have a bunch a ingredients lying around, but you do not know what to "
 "make?  Use this dialog to find out what you can."
@@ -1863,11 +1875,11 @@ msgid ""
 "ingredients, it will automatically let you know what you are missing."
 msgstr ""
 
-#: src/krecipesview.cpp:756
+#: src/krecipesview.cpp:761
 msgid "<b>Edit recipe</b>"
 msgstr ""
 
-#: src/krecipesview.cpp:757
+#: src/krecipesview.cpp:762
 msgid ""
 "Write your succulent recipes here. Set the title, authors and ingredients of "
 "your recipe, add a nice photo, and start typing. You can also use the "
@@ -1882,11 +1894,11 @@ msgid ""
 "save it in Krecipes format, and send it to us."
 msgstr ""
 
-#: src/krecipesview.cpp:765
+#: src/krecipesview.cpp:770
 msgid "<b>Ingredients list</b>"
 msgstr ""
 
-#: src/krecipesview.cpp:766
+#: src/krecipesview.cpp:771
 msgid ""
 "Edit your ingredients: add/remove, double click to change their name, define "
 "the units used to measure them, and set their properties (<i>Energy, Fat, "
@@ -1896,11 +1908,11 @@ msgid ""
 "<i>Properties List</i> menu"
 msgstr ""
 
-#: src/krecipesview.cpp:772
+#: src/krecipesview.cpp:777
 msgid "<b>Properties list</b>"
 msgstr ""
 
-#: src/krecipesview.cpp:773
+#: src/krecipesview.cpp:778
 msgid ""
 "What properties do you want to know from your recipes? <i>Fat, Energy, "
 "Vitamins, Cost,...</i>?"
@@ -1908,11 +1920,11 @@ msgid ""
 "<br>Add those here and later define the characteristics in the ingredients."
 msgstr ""
 
-#: src/krecipesview.cpp:779
+#: src/krecipesview.cpp:784
 msgid "<b>Units list</b>"
 msgstr ""
 
-#: src/krecipesview.cpp:780
+#: src/krecipesview.cpp:785
 msgid ""
 "Double click to edit, or Add and Remove <b>new units</b> that you want to "
 "use to measure your ingredients. From a <i>gram</i>, to a <i>jar</i>, you "
@@ -1924,11 +1936,11 @@ msgid ""
 "properties of your recipes."
 msgstr ""
 
-#: src/krecipesview.cpp:785
+#: src/krecipesview.cpp:790
 msgid "<b>Preparation Methods list</b>"
 msgstr ""
 
-#: src/krecipesview.cpp:786
+#: src/krecipesview.cpp:791
 msgid ""
 "With the preparation method, you can give extra information about an "
 "ingredient. <i>sliced, cooked, optional,...</i> "
@@ -1938,23 +1950,23 @@ msgid ""
 "list or calculate nutrient information.<br><br>Just add and edit those here."
 msgstr ""
 
-#: src/krecipesview.cpp:790
+#: src/krecipesview.cpp:795
 #, fuzzy
 msgid "<b>Categories list</b>"
 msgstr "Categoriau"
 
-#: src/krecipesview.cpp:791
+#: src/krecipesview.cpp:796
 msgid ""
 "How do you want to classify your recipes? <i>"
 "Desserts, Main Course, Low Fat, Chocolate, Delicious, Vegetarian, ....</i> "
 "Just add and edit those here."
 msgstr ""
 
-#: src/krecipesview.cpp:797
+#: src/krecipesview.cpp:802
 msgid "<b>Authors list</b>"
 msgstr ""
 
-#: src/krecipesview.cpp:798
+#: src/krecipesview.cpp:803
 msgid ""
 "Keep track of the authors that created the recipes."
 "<br>"
@@ -1963,24 +1975,24 @@ msgid ""
 "them."
 msgstr ""
 
-#: src/krecipesview.cpp:854 src/krecipesview.cpp:878
+#: src/krecipesview.cpp:859 src/krecipesview.cpp:885
 msgid "Code error. No DB support was built in. Exiting"
 msgstr ""
 
-#: src/krecipesview.cpp:862
+#: src/krecipesview.cpp:867
 msgid "Unable to open database"
 msgstr ""
 
-#: src/krecipesview.cpp:882
+#: src/krecipesview.cpp:890
 msgid ""
 "DB started correctly\n"
 msgstr ""
 
-#: src/krecipesview.cpp:890
+#: src/krecipesview.cpp:898
 msgid "The configured database type (%1) is unsupported."
 msgstr ""
 
-#: src/krecipesview.cpp:890
+#: src/krecipesview.cpp:898
 msgid ""
 "Unsupported database type. Database must be either MySQL, SQLite, or "
 "PostgreSQL."
