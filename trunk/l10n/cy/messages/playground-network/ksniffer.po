@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: all2.po\n"
-"POT-Creation-Date: 2005-05-18 21:41+0200\n"
+"POT-Creation-Date: 2005-06-04 01:33+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -85,7 +85,7 @@ msgstr ""
 msgid "Start a new network packet-capture session."
 msgstr ""
 
-#: capturedialog.cpp:152 ksniffer.cpp:673
+#: capturedialog.cpp:152 ksniffer.cpp:720
 msgid "This feature is not yet available."
 msgstr ""
 
@@ -137,52 +137,67 @@ msgstr ""
 msgid "More details about the captured packets"
 msgstr ""
 
-#: kmainwidget.cpp:215 kmainwidget.cpp:221
-#, c-format
-msgid "Frame number: %1"
-msgstr ""
-
-#: kmainwidget.cpp:216
-#, c-format
-msgid "Capture time: %1"
-msgstr ""
-
-#: kmainwidget.cpp:218
-msgid "Delay from the previous packet: %1 s"
-msgstr ""
+#: kmainwidget.cpp:219
+#, fuzzy
+msgid "Protocol Information"
+msgstr "gwybodaeth"
 
 #: kmainwidget.cpp:220
-msgid "Delay from the first packet: %1 s"
-msgstr ""
+#, fuzzy, c-format
+msgid "protocol type: %1"
+msgstr "protocol"
 
 #: kmainwidget.cpp:222
-msgid "Packet length: %1 bytes"
-msgstr ""
-
-#: kmainwidget.cpp:224
-msgid "Captured packet length: %1 bytes"
-msgstr ""
-
-#: kmainwidget.cpp:226
 #, fuzzy, c-format
 msgid "source address: %1"
 msgstr "tarddiad : %1"
 
-#: kmainwidget.cpp:227
+#: kmainwidget.cpp:224
+#, fuzzy, c-format
+msgid "source port: %1"
+msgstr "tarddiad : %1"
+
+#: kmainwidget.cpp:225
 #, fuzzy, c-format
 msgid "destination address: %1"
 msgstr "cyrchfan : %1"
 
-#: kmainwidget.cpp:228
+#: kmainwidget.cpp:227
 #, c-format
 msgid "information: %1"
 msgstr "gwybodaeth : %1"
+
+#: kmainwidget.cpp:231 kmainwidget.cpp:238
+#, c-format
+msgid "Frame number: %1"
+msgstr ""
+
+#: kmainwidget.cpp:232
+#, c-format
+msgid "Capture time: %1"
+msgstr ""
+
+#: kmainwidget.cpp:235
+msgid "Delay from the previous packet: %1 s"
+msgstr ""
+
+#: kmainwidget.cpp:237
+msgid "Delay from the first packet: %1 s"
+msgstr ""
+
+#: kmainwidget.cpp:239
+msgid "Packet length: %1 bytes"
+msgstr ""
+
+#: kmainwidget.cpp:242
+msgid "Captured packet length: %1 bytes"
+msgstr ""
 
 #: ksniffer.cpp:89
 msgid "KSniffer - The KDE Network Sniffer"
 msgstr ""
 
-#: ksniffer.cpp:93 ksniffer.cpp:438 ksniffer.cpp:585
+#: ksniffer.cpp:93 ksniffer.cpp:485 ksniffer.cpp:632
 msgid "Ready."
 msgstr "Parod."
 
@@ -235,74 +250,66 @@ msgstr ""
 msgid "<b>Quit</b><br>Stop the packet-capture session and quit from KSniffer."
 msgstr ""
 
-#: ksniffer.cpp:342
-msgid "You have got data maybe you want to save to save."
-msgstr ""
-
-#: ksniffer.cpp:347 ksniffer.cpp:563
-msgid ""
-"<p>You are going to lost data.<br>Do you want to save them before to exit?</p>"
-msgstr ""
-
-#: ksniffer.cpp:348
-msgid "Save Captured-Packets"
-msgstr ""
-
-#: ksniffer.cpp:362
+#: ksniffer.cpp:374
 msgid ""
 "<qt>Closing the main window will keep KSniffer running in the system tray. Use "
 "'Quit' from the system tray menu to quit the application.</qt>"
 msgstr ""
 
-#: ksniffer.cpp:364
+#: ksniffer.cpp:376
 msgid "Docking in System Tray"
 msgstr ""
 
-#: ksniffer.cpp:381
+#: ksniffer.cpp:428
 msgid "New Capture: select the network interface to start sniffing packets."
 msgstr ""
 
-#: ksniffer.cpp:411
+#: ksniffer.cpp:458
 msgid "Sniffing network by \"%1\" interface."
 msgstr ""
 
-#: ksniffer.cpp:424
+#: ksniffer.cpp:471
 msgid "<p>You selected <b>%1</b> interface.<br>Now starting to sniff.</p>"
 msgstr ""
 
-#: ksniffer.cpp:425
+#: ksniffer.cpp:472
 msgid "Sniffing"
 msgstr ""
 
-#: ksniffer.cpp:542
+#: ksniffer.cpp:589
 msgid ""
 "_: libpcap format is a standard format used by a lot of sniffer programs\n"
 "Select the libpcap format file to open."
 msgstr ""
 
-#: ksniffer.cpp:548
+#: ksniffer.cpp:595
 msgid "Open file"
 msgstr "Agor ffeil"
 
-#: ksniffer.cpp:556
+#: ksniffer.cpp:603
 msgid ""
 "_: libpcap format is a standard format used by a lot of sniffer programs\n"
 "%1 is not a libpcap format file."
 msgstr ""
 
-#: ksniffer.cpp:639
+#: ksniffer.cpp:610
+msgid ""
+"<p>You are going to lost data.<br>Do you want to save them before to exit?</p>"
+msgstr ""
+
+#: ksniffer.cpp:686
 msgid "%1 not saved!"
 msgstr ""
 
-#: ksniffer.cpp:639
+#: ksniffer.cpp:686
 msgid "Saving..."
 msgstr ""
 
-#: ksniffer.cpp:682
+#: ksniffer.cpp:729
 msgid "You got no packets."
 msgstr ""
 
-#: ksniffer.cpp:699
+#: ksniffer.cpp:746
 msgid "Stopped sniffing. Now, ready again."
 msgstr ""
 
@@ -338,7 +345,7 @@ msgstr ""
 msgid "The code for detecting network devices"
 msgstr ""
 
-#: main.cpp:64
+#: main.cpp:63
 msgid "You need root privileges to run this application."
 msgstr ""
 
@@ -374,19 +381,25 @@ msgstr "Ôl-gylch"
 msgid "Unknown"
 msgstr "Anhysbys"
 
-#: packetmanager.cpp:169
+#: packetmanager.cpp:172
 msgid ""
 "_: Concatenation of date and time. Translate it according to your kdelibs.po.\n"
 "%1, %2"
 msgstr ""
 
-#: packetmanager.cpp:203 packetmanager.cpp:236
+#: packetmanager.cpp:207 packetmanager.cpp:244 packetmanager.cpp:280
 msgid ""
 "_: IP address not available\n"
 "n/a"
 msgstr ""
 
-#: packetmanager.cpp:274
+#: packetmanager.cpp:316
+msgid ""
+"_: information not available\n"
+"n/a"
+msgstr ""
+
+#: packetmanager.cpp:354
 #, c-format
 msgid ""
 "_: protocol not available\n"
