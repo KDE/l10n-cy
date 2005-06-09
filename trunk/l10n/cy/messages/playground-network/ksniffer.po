@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: all2.po\n"
-"POT-Creation-Date: 2005-06-06 01:37+0200\n"
+"POT-Creation-Date: 2005-06-09 01:33+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -93,111 +93,81 @@ msgstr ""
 msgid "not available"
 msgstr "dim ar gael"
 
-#: kmainwidget.cpp:58
+#: kmainwidget.cpp:61
 msgid ""
 "_: frame number\n"
 "frame no."
 msgstr ""
 
-#: kmainwidget.cpp:59
+#: kmainwidget.cpp:62
 msgid "time"
 msgstr "amser"
 
-#: kmainwidget.cpp:60
+#: kmainwidget.cpp:63
 msgid "source"
 msgstr "tarddiad"
 
-#: kmainwidget.cpp:61
+#: kmainwidget.cpp:64
 msgid "destination"
 msgstr "cyrchfan"
 
-#: kmainwidget.cpp:62
+#: kmainwidget.cpp:65
 msgid "protocol"
 msgstr "protocol"
 
-#: kmainwidget.cpp:63
+#: kmainwidget.cpp:66
 msgid "information"
 msgstr "gwybodaeth"
 
-#: kmainwidget.cpp:73
+#: kmainwidget.cpp:76
 msgid "Packet Details"
 msgstr ""
 
-#: kmainwidget.cpp:84
+#: kmainwidget.cpp:87
 msgid "In this area you get all the captured packets."
 msgstr ""
 
-#: kmainwidget.cpp:85
+#: kmainwidget.cpp:88
 msgid "The list of all captured packets"
 msgstr ""
 
-#: kmainwidget.cpp:87
+#: kmainwidget.cpp:90
 msgid "In this area you can see the details about a selected captured packet."
 msgstr ""
 
-#: kmainwidget.cpp:88
+#: kmainwidget.cpp:91
 msgid "More details about the captured packets"
 msgstr ""
 
-#: kmainwidget.cpp:219
-#, fuzzy
-msgid "Protocol Information"
-msgstr "gwybodaeth"
-
-#: kmainwidget.cpp:220
-#, fuzzy, c-format
-msgid "protocol type: %1"
-msgstr "protocol"
-
-#: kmainwidget.cpp:222
-#, fuzzy, c-format
-msgid "source address: %1"
-msgstr "tarddiad : %1"
-
-#: kmainwidget.cpp:225
-#, fuzzy, c-format
-msgid "source port: %1"
-msgstr "tarddiad : %1"
-
-#: kmainwidget.cpp:227
-#, fuzzy, c-format
-msgid "destination address: %1"
-msgstr "cyrchfan : %1"
-
-#: kmainwidget.cpp:230
-#, fuzzy, c-format
-msgid "destination port: %1"
-msgstr "cyrchfan : %1"
-
-#: kmainwidget.cpp:232
-#, c-format
-msgid "information: %1"
-msgstr "gwybodaeth : %1"
-
-#: kmainwidget.cpp:236 kmainwidget.cpp:243
+#: kmainwidget.cpp:275 kmainwidget.cpp:282
 #, c-format
 msgid "Frame number: %1"
 msgstr ""
 
-#: kmainwidget.cpp:237
+#: kmainwidget.cpp:276
 #, c-format
 msgid "Capture time: %1"
 msgstr ""
 
-#: kmainwidget.cpp:240
+#: kmainwidget.cpp:279
 msgid "Delay from the previous packet: %1 s"
 msgstr ""
 
-#: kmainwidget.cpp:242
+#: kmainwidget.cpp:281
 msgid "Delay from the first packet: %1 s"
 msgstr ""
 
-#: kmainwidget.cpp:244
+#: kmainwidget.cpp:283
 msgid "Packet length: %1 bytes"
 msgstr ""
 
-#: kmainwidget.cpp:247
+#: kmainwidget.cpp:286
 msgid "Captured packet length: %1 bytes"
+msgstr ""
+
+#: kmainwidget.cpp:289
+#, c-format
+msgid "Frame Header: %1"
 msgstr ""
 
 #: ksniffer.cpp:89
@@ -209,7 +179,7 @@ msgid "Ready."
 msgstr "Parod."
 
 #. i18n: file ksnifferui.rc line 5
-#: ksniffer.cpp:145 rc.cpp:3
+#: ksniffer.cpp:145 rc.cpp:3 rc.cpp:12
 #, no-c-format
 msgid "&Capture"
 msgstr ""
@@ -406,33 +376,14 @@ msgstr "Aml-ddarlledu"
 msgid "Loopback"
 msgstr "Ôl-gylch"
 
-#: networkdevice.cpp:127 networkdevice.cpp:140
+#: frames/frameheader.cpp:50 networkdevice.cpp:127 networkdevice.cpp:140
 msgid "Unknown"
 msgstr "Anhysbys"
 
-#: packetmanager.cpp:172
+#: packetmanager.cpp:163
 msgid ""
 "_: Concatenation of date and time. Translate it according to your kdelibs.po.\n"
 "%1, %2"
-msgstr ""
-
-#: packetmanager.cpp:207 packetmanager.cpp:243 packetmanager.cpp:280
-#: packetmanager.cpp:317
-msgid ""
-"_: IP address not available\n"
-"n/a"
-msgstr ""
-
-#: packetmanager.cpp:353
-msgid ""
-"_: information not available\n"
-"n/a"
-msgstr ""
-
-#: packetmanager.cpp:392
-msgid ""
-"_: protocol not available\n"
-"n/a (%1)"
 msgstr ""
 
 #: pref.cpp:30
@@ -459,9 +410,122 @@ msgstr "Dewisiadau'r Ail Dudalen"
 msgid "Add something here"
 msgstr "Ychwanegwch rywbeth yma"
 
-#: sniffer.cpp:465
-msgid "unknown Link Layer"
+#: protocols/icmpview.cpp:94
+msgid ""
+"_: ICMP type\n"
+"Echo Reply"
 msgstr ""
+
+#: protocols/icmpview.cpp:97
+msgid ""
+"_: ICMP type\n"
+"Destination Unreachable"
+msgstr ""
+
+#: protocols/icmpview.cpp:100
+msgid ""
+"_: ICMP type\n"
+"Source Quench"
+msgstr ""
+
+#: protocols/icmpview.cpp:103
+msgid ""
+"_: ICMP type\n"
+"Redirect"
+msgstr ""
+
+#: protocols/icmpview.cpp:106
+msgid ""
+"_: ICMP type\n"
+"Echo"
+msgstr ""
+
+#: protocols/icmpview.cpp:109
+msgid ""
+"_: ICMP type\n"
+"Time Exceeded"
+msgstr ""
+
+#: protocols/icmpview.cpp:112
+msgid ""
+"_: ICMP type\n"
+"Parameter Problem"
+msgstr ""
+
+#: protocols/icmpview.cpp:115
+msgid ""
+"_: ICMP type\n"
+"Timestamp"
+msgstr ""
+
+#: protocols/icmpview.cpp:118
+msgid ""
+"_: ICMP type\n"
+"Timestamp Reply"
+msgstr ""
+
+#: protocols/icmpview.cpp:121
+msgid ""
+"_: ICMP type\n"
+"Information Request"
+msgstr ""
+
+#: protocols/icmpview.cpp:127
+msgid "Unknown type for ICMP packet"
+msgstr ""
+
+#: frames/ethernet2.cpp:44
+msgid "MAC Source Address: %1:%2:%3:%4:%5:%6"
+msgstr ""
+
+#: frames/ethernet2.cpp:47
+#, fuzzy
+msgid "MAC Destination Address: %1:%2:%3:%4:%5:%6"
+msgstr "cyrchfan : %1"
+
+#: frames/ethernet2.cpp:50
+#, fuzzy, c-format
+msgid "Protocol Type: %1"
+msgstr "protocol"
+
+#: frames/frameheader.cpp:44
+msgid ""
+"_: type of frame\n"
+"Ethernet"
+msgstr ""
+
+#: frames/frameheader.cpp:47
+msgid ""
+"_: type of frame\n"
+"Linux Cooked Capture"
+msgstr ""
+
+#: frames/lcc.cpp:41
+msgid "LCC 1"
+msgstr ""
+
+#: frames/lcc.cpp:42
+msgid "LCC 2"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Protocol Information"
+#~ msgstr "gwybodaeth"
+
+#, fuzzy
+#~ msgid "source address: %1"
+#~ msgstr "tarddiad : %1"
+
+#, fuzzy
+#~ msgid "source port: %1"
+#~ msgstr "tarddiad : %1"
+
+#, fuzzy
+#~ msgid "destination port: %1"
+#~ msgstr "cyrchfan : %1"
+
+#~ msgid "information: %1"
+#~ msgstr "gwybodaeth : %1"
 
 #, fuzzy
 #~ msgid "you choose: %1"
