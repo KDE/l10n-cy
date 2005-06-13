@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-2/konversation.po\n"
-"POT-Creation-Date: 2005-06-09 01:32+0200\n"
+"POT-Creation-Date: 2005-06-13 01:36+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -34,8 +34,8 @@ msgstr ""
 msgid "Modes"
 msgstr ""
 
-#: src/ircview.cpp:893 src/nicklistview.cpp:59 src/nicksonline.cpp:760
-#: src/nicksonline.cpp:773
+#: src/ircview.cpp:893 src/nicklistview.cpp:59 src/nicksonline.cpp:748
+#: src/nicksonline.cpp:761
 msgid "&Whois"
 msgstr "Pw&y-ydi"
 
@@ -60,7 +60,7 @@ msgid "Send &File..."
 msgstr "Anfon& Ffeil..."
 
 #: src/linkaddressbook/addressbook_base.cpp:444 src/nicklistview.cpp:73
-#: src/nicksonline.cpp:766
+#: src/nicksonline.cpp:754
 msgid "&Send Email..."
 msgstr "Anfon E&bost ..."
 
@@ -69,7 +69,7 @@ msgid "Addressbook Associations"
 msgstr ""
 
 #: src/channel.cpp:1026 src/channel.cpp:1028 src/channel.cpp:1032
-#: src/channel.cpp:1034 src/channel.cpp:1047 src/channel.cpp:1049
+#: src/channel.cpp:1034 src/channel.cpp:1043 src/channel.cpp:1045
 #: src/ircview.cpp:902 src/nicklistview.cpp:81
 msgid "Kick"
 msgstr "Lluchio"
@@ -118,8 +118,8 @@ msgstr ""
 msgid "Kick / Ban"
 msgstr ""
 
-#: src/ircview.cpp:916 src/nicklistview.cpp:96 src/outputfilter.cpp:1010
-#: src/query.cpp:81
+#: src/channel.cpp:549 src/ircview.cpp:916 src/nicklistview.cpp:96
+#: src/outputfilter.cpp:1010 src/query.cpp:77
 msgid "Ignore"
 msgstr "Anwybyddu"
 
@@ -289,62 +289,62 @@ msgstr "C&ysylltu"
 msgid "Connect to the server"
 msgstr ""
 
-#: src/dccchat.cpp:133
+#: src/dccchat.cpp:128
 msgid "There is no vacant port for DCC chat."
 msgstr ""
 
-#: src/dccchat.cpp:156 src/dccchat.cpp:174 src/dccchat.cpp:193
-#: src/dccchat.cpp:198 src/dccchat.cpp:203 src/dccchat.cpp:331
-#: src/dccchat.cpp:336 src/outputfilter.cpp:1081 src/server.cpp:435
+#: src/dccchat.cpp:151 src/dccchat.cpp:169 src/dccchat.cpp:188
+#: src/dccchat.cpp:193 src/dccchat.cpp:198 src/dccchat.cpp:326
+#: src/dccchat.cpp:331 src/outputfilter.cpp:1081 src/server.cpp:435
 #: src/server.cpp:546 src/server.cpp:554 src/server.cpp:630
 msgid "Info"
 msgstr "Gwybo"
 
-#: src/dccchat.cpp:156
+#: src/dccchat.cpp:151
 msgid "Offering DCC Chat connection to %1 on port %2..."
 msgstr ""
 
-#: src/dccchat.cpp:157
+#: src/dccchat.cpp:152
 msgid "DCC chat with %1 on port %2"
 msgstr ""
 
-#: src/dccchat.cpp:174
+#: src/dccchat.cpp:169
 msgid "Establishing DCC Chat connection to %1 (%2:%3)..."
 msgstr ""
 
-#: src/dccchat.cpp:175
+#: src/dccchat.cpp:170
 msgid "DCC chat with %1 on %2:%3"
 msgstr ""
 
-#: src/dccchat.cpp:193
+#: src/dccchat.cpp:188
 msgid "Looking for host %1..."
 msgstr ""
 
-#: src/dccchat.cpp:198
+#: src/dccchat.cpp:193
 msgid "Host found, connecting..."
 msgstr ""
 
-#: src/dccchat.cpp:203 src/dccchat.cpp:331
+#: src/dccchat.cpp:198 src/dccchat.cpp:326
 msgid "Connection established."
 msgstr ""
 
-#: src/dccchat.cpp:211
+#: src/dccchat.cpp:206
 #, c-format
 msgid "Connection broken, error code %1."
 msgstr ""
 
-#: src/dccchat.cpp:250 src/inputfilter.cpp:186 src/inputfilter.cpp:191
+#: src/dccchat.cpp:245 src/inputfilter.cpp:186 src/inputfilter.cpp:191
 #: src/inputfilter.cpp:207 src/inputfilter.cpp:212 src/inputfilter.cpp:272
 #: src/inputfilter.cpp:280 src/inputfilter.cpp:300 src/inputfilter.cpp:380
 #: src/inputfilter.cpp:388 src/outputfilter.cpp:556
 msgid "CTCP"
 msgstr ""
 
-#: src/dccchat.cpp:250 src/inputfilter.cpp:301
+#: src/dccchat.cpp:245 src/inputfilter.cpp:301
 msgid "Received unknown CTCP-%1 request from %2"
 msgstr ""
 
-#: src/dccchat.cpp:381
+#: src/dccchat.cpp:376
 msgid "Default ( %1 )"
 msgstr ""
 
@@ -441,48 +441,47 @@ msgstr "Dewis Ffeil Sw^n"
 msgid "New"
 msgstr "Newydd"
 
-#: src/logfilereader.cpp:55
+#: src/logfilereader.cpp:50
 msgid "Show last:"
 msgstr ""
 
-#: src/logfilereader.cpp:57
+#: src/logfilereader.cpp:52
 msgid ""
 "Use this box to set the maximum size of the log file. This setting does not "
 "take effect until you restart Konversation. Each log file may have a separate "
 "setting."
 msgstr ""
 
-#: src/logfilereader.cpp:59
+#: src/logfilereader.cpp:54
 msgid " KB"
 msgstr "KB"
 
-#: src/logfilereader.cpp:62 src/logfilereader.cpp:115
-#: src/logfilereader.cpp:122
+#: src/logfilereader.cpp:57 src/logfilereader.cpp:109
 msgid "Clear Logfile"
 msgstr ""
 
-#: src/logfilereader.cpp:66
+#: src/logfilereader.cpp:61
 msgid ""
 "The messages in the log file are displayed here. The oldest messages are at the "
 "top and the most recent are at the bottom."
 msgstr ""
 
-#: src/logfilereader.cpp:114 src/logfilereader.cpp:121
+#: src/logfilereader.cpp:108
 msgid ""
 "Do you really want to permanently discard all log information of this file?"
 msgstr ""
 
-#: src/logfilereader.cpp:135
+#: src/logfilereader.cpp:121
 msgid ""
 "Note: By saving the logfile you will save all data in the file, not only the "
 "part you can see in this viewer."
 msgstr ""
 
-#: src/logfilereader.cpp:136
+#: src/logfilereader.cpp:122
 msgid "Save Logfile"
 msgstr ""
 
-#: src/logfilereader.cpp:142
+#: src/logfilereader.cpp:128
 msgid "Choose Destination Folder"
 msgstr ""
 
@@ -789,50 +788,50 @@ msgstr ""
 msgid "Close Tab"
 msgstr "Cau Tab"
 
-#: src/ledtabbar.cpp:132
+#: src/ledtabbar.cpp:130
 msgid "Edit &Contact..."
 msgstr "Golyg&u Cyswllt..."
 
-#: src/ledtabbar.cpp:134 src/nicksonline.cpp:120 src/nicksonline.cpp:710
-#: src/nicksonline.cpp:770
+#: src/ledtabbar.cpp:132 src/nicksonline.cpp:114 src/nicksonline.cpp:698
+#: src/nicksonline.cpp:758
 msgid "&Change Association..."
 msgstr ""
 
-#: src/ledtabbar.cpp:135 src/nicksonline.cpp:126 src/nicksonline.cpp:771
+#: src/ledtabbar.cpp:133 src/nicksonline.cpp:120 src/nicksonline.cpp:759
 msgid "&Delete Association"
 msgstr ""
 
-#: src/ledtabbar.cpp:138
+#: src/ledtabbar.cpp:136
 msgid ""
 "Sends an email to this contact using the preferred email address set in the "
 "contact's addressbook association.  This is currently disabled because the "
 "associated contact does not have any preferred email address set."
 msgstr ""
 
-#: src/ledtabbar.cpp:141
+#: src/ledtabbar.cpp:139
 msgid ""
 "Sends an email to this contact using the preferred email address (%1) set in "
 "the contact's addressbook association"
 msgstr ""
 
-#: src/ledtabbar.cpp:144
+#: src/ledtabbar.cpp:142
 #, fuzzy
 msgid "Choose &Contact..."
 msgstr "Cyswl&lt Newydd..."
 
-#: src/ledtabbar.cpp:145
+#: src/ledtabbar.cpp:143
 #, fuzzy
 msgid "Create &New Contact..."
 msgstr "Cyswl&lt Newydd..."
 
-#: src/ledtabbar.cpp:147
+#: src/ledtabbar.cpp:145
 msgid ""
 "Sends an email to this contact using the preferred email address set in the "
 "contact's addressbook association.  This is currently disabled because this "
 "nick does not have any association with any contacts in your addressbook."
 msgstr ""
 
-#: src/ledtabbar.cpp:441
+#: src/ledtabbar.cpp:439
 #, fuzzy
 msgid "%1 - Offline"
 msgstr "All-lein"
@@ -841,8 +840,8 @@ msgstr "All-lein"
 msgid "Konversation Bookmarks Editor"
 msgstr ""
 
-#: src/konversationapplication.cpp:295 src/server.cpp:1221 src/server.cpp:2741
-#: src/server.cpp:2745
+#: src/konversationapplication.cpp:295 src/server.cpp:1221 src/server.cpp:2739
+#: src/server.cpp:2743
 msgid "DCOP"
 msgstr "DCOP:"
 
@@ -878,11 +877,11 @@ msgstr "Copïo URL i'r Clipfwrdd"
 msgid "Add to Bookmarks"
 msgstr ""
 
-#: src/channel.cpp:974 src/channel.cpp:981 src/ircview.cpp:644
+#: src/channel.cpp:979 src/channel.cpp:986 src/ircview.cpp:644
 msgid "Join"
 msgstr "Uniad"
 
-#: src/channel.cpp:992 src/channel.cpp:1004 src/ircview.cpp:647
+#: src/channel.cpp:997 src/channel.cpp:1004 src/ircview.cpp:647
 msgid "Part"
 msgstr ""
 
@@ -894,154 +893,138 @@ msgstr ""
 msgid "No matches found for \"%1\"."
 msgstr ""
 
-#: src/konversationmainwindow.cpp:129
+#: src/konversationmainwindow.cpp:114
 msgid "&Server List..."
 msgstr ""
 
-#: src/konversationmainwindow.cpp:130
+#: src/konversationmainwindow.cpp:115
 msgid "Connect to a new server..."
 msgstr ""
 
-#: src/konversationmainwindow.cpp:131
+#: src/konversationmainwindow.cpp:116
 msgid "Quick &Connect..."
 msgstr ""
 
-#: src/konversationmainwindow.cpp:132
+#: src/konversationmainwindow.cpp:117
 msgid "Type in the address of a new IRC server to connect to..."
 msgstr ""
 
-#: src/konversationmainwindow.cpp:134
+#: src/konversationmainwindow.cpp:119
 msgid "&Reconnect"
 msgstr "&Ailgysylltu"
 
-#: src/konversationmainwindow.cpp:137
+#: src/konversationmainwindow.cpp:122
 #, fuzzy
 msgid "&Identities..."
 msgstr "Dynodiad"
 
-#: src/konversationmainwindow.cpp:138
+#: src/konversationmainwindow.cpp:123
 msgid "Set your nick, away message, etc..."
 msgstr ""
 
-#: src/konversationmainwindow.cpp:140
+#: src/konversationmainwindow.cpp:125
 msgid "&Watched Nicks Online"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:141 src/konversationmainwindow.cpp:1067
+#: src/konversationmainwindow.cpp:126 src/konversationmainwindow.cpp:878
 msgid "&Open Logfile"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:144 src/konversationmainwindow.cpp:1056
+#: src/konversationmainwindow.cpp:129 src/konversationmainwindow.cpp:867
 msgid "&Channel List"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:146
+#: src/konversationmainwindow.cpp:131
 msgid "&URL Catcher"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:148
+#: src/konversationmainwindow.cpp:133
 #, fuzzy
 msgid "New &Konsole"
 msgstr "Konsole"
 
-#: src/konversationmainwindow.cpp:155
+#: src/konversationmainwindow.cpp:140
 msgid "&Next Tab"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:158
+#: src/konversationmainwindow.cpp:143
 msgid "&Previous Tab"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:161
+#: src/konversationmainwindow.cpp:146
 msgid "Close &Tab"
 msgstr "Cau Ta&b"
 
-#: src/konversationmainwindow.cpp:167
+#: src/konversationmainwindow.cpp:152
 #, c-format
 msgid "Go to Tab %1"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:172
+#: src/konversationmainwindow.cpp:157
 msgid "&Clear Window"
 msgstr "&Clirio'r Ffenestr"
 
-#: src/konversationmainwindow.cpp:173
+#: src/konversationmainwindow.cpp:158
 msgid "Clear content of current window"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:175
+#: src/konversationmainwindow.cpp:160
 #, fuzzy
 msgid "Clear &All Windows"
 msgstr "&Clirio'r Ffenestr"
 
-#: src/konversationmainwindow.cpp:176
+#: src/konversationmainwindow.cpp:161
 msgid "Clear contents of all windows"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:179 src/server.cpp:2796
+#: src/konversationmainwindow.cpp:164 src/server.cpp:2794
 msgid "Set &Away Globally"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:182
+#: src/konversationmainwindow.cpp:167
 msgid "&Join Channel..."
 msgstr "Y&muno â'r Sianel..."
 
-#: src/konversationmainwindow.cpp:190
+#: src/konversationmainwindow.cpp:175
 msgid "&IRC Color..."
 msgstr ""
 
-#: src/konversationmainwindow.cpp:191
+#: src/konversationmainwindow.cpp:176
 msgid "Set the color of your current IRC message."
 msgstr ""
 
-#: src/konversationmainwindow.cpp:193
+#: src/konversationmainwindow.cpp:178
 msgid "&Remember Line"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:194
+#: src/konversationmainwindow.cpp:179
 msgid "Add a horizontal line that only you can see."
 msgstr ""
 
-#: src/konversationmainwindow.cpp:196
+#: src/konversationmainwindow.cpp:181
 msgid "Special &Character..."
 msgstr "Nod &Arbennig..."
 
-#: src/konversationmainwindow.cpp:197
+#: src/konversationmainwindow.cpp:182
 msgid "Insert any character into your current IRC message. "
 msgstr ""
 
-#: src/konversationmainwindow.cpp:200
+#: src/konversationmainwindow.cpp:185
 msgid "Close &All Open Queries"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:201
+#: src/konversationmainwindow.cpp:186
 #, fuzzy
 msgid "Hide Nicklist"
 msgstr "Lliwiau"
 
-#: src/konversationmainwindow.cpp:204
-msgid "Tabpage Mode"
-msgstr ""
-
-#: src/konversationmainwindow.cpp:205
-msgid "Toplevel Mode"
-msgstr "Modd Gwastad Uchaf"
-
-#: src/konversationmainwindow.cpp:206
-msgid "Childframe Mode"
-msgstr "Modd Ffrâm Plentyn"
-
-#: src/konversationmainwindow.cpp:207
-msgid "IDEAl Mode"
-msgstr "Modd IDEAI"
-
-#: src/konversationmainwindow.cpp:215
+#: src/konversationmainwindow.cpp:193
 msgid ""
 "All communication with the server is encrypted.  This makes it harder for "
 "someone to listen in on your communications."
 msgstr ""
 
-#: src/konversationmainwindow.cpp:218
+#: src/konversationmainwindow.cpp:196
 msgid ""
 "<qt>This shows the number of users in the channel, and the number of those that "
 "are operators (ops)."
@@ -1050,11 +1033,11 @@ msgid ""
 "operators</qt>"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:220 src/konversationmainwindow.cpp:1350
+#: src/konversationmainwindow.cpp:198 src/konversationmainwindow.cpp:1125
 msgid "Ready."
 msgstr "Parod."
 
-#: src/konversationmainwindow.cpp:224
+#: src/konversationmainwindow.cpp:202
 msgid ""
 "<qt>The status bar shows various messages, including any problems connecting to "
 "the server.  On the far right the current delay to the server is shown.  The "
@@ -1062,69 +1045,65 @@ msgid ""
 "the server back to you.</qt>"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:376
+#: src/konversationmainwindow.cpp:298
 msgid ""
 "<qt>This will hide the menu bar completely.You can show it again by typing "
 "%1.</qt>"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:643 src/konversationmainwindow.cpp:647
+#: src/konversationmainwindow.cpp:554
 #, c-format
 msgid "Logfile of %1"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:656 src/konversationmainwindow.cpp:660
+#: src/konversationmainwindow.cpp:562
 msgid "Konsole"
 msgstr "Konsole"
 
-#: src/konversationmainwindow.cpp:688
+#: src/konversationmainwindow.cpp:582
 msgid ""
 "Using this function may result in a lot of network traffic. If your connection "
 "is not fast enough, it is possible that your client will be disconnected by the "
 "server."
 msgstr ""
 
-#: src/konversationmainwindow.cpp:691
+#: src/konversationmainwindow.cpp:585
 msgid "Channel List Warning"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:703
+#: src/konversationmainwindow.cpp:597
 msgid ""
 "The channel list can only be opened from a query, channel or status window to "
 "find out, which server this list belongs to."
 msgstr ""
 
-#: src/konversationmainwindow.cpp:707 src/konversationmainwindow.cpp:963
-#: src/konversationmainwindow.cpp:973
+#: src/konversationmainwindow.cpp:601 src/konversationmainwindow.cpp:799
 msgid "Channel List"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:718 src/konversationmainwindow.cpp:722
-#: src/urlcatcher.cpp:44
+#: src/konversationmainwindow.cpp:612 src/urlcatcher.cpp:40
 msgid "URL Catcher"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:765 src/konversationmainwindow.cpp:769
-#: src/konversationmainwindow.cpp:782
+#: src/konversationmainwindow.cpp:654 src/konversationmainwindow.cpp:663
 msgid "DCC Status"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:943 src/konversationmainwindow.cpp:954
-#: src/rawlog.cpp:31
+#: src/konversationmainwindow.cpp:790 src/rawlog.cpp:27
 msgid "Raw Log"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:1053
+#: src/konversationmainwindow.cpp:864
 #, c-format
 msgid "&Channel List for %1"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:1069
+#: src/konversationmainwindow.cpp:880
 #, c-format
 msgid "&Open Logfile for %1"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:1219
+#: src/konversationmainwindow.cpp:1003
 msgid ""
 "<p>Closing the main window will keep Konversation running in the system tray. "
 "Use <b>Quit</b> from the <b>Konversation</b> menu to quit the application.</p>"
@@ -1132,27 +1111,27 @@ msgid ""
 "<center><img source=\"systray_shot\"></center></p>"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:1222
+#: src/konversationmainwindow.cpp:1006
 msgid "Docking in System Tray"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:1246 src/konversationmainwindow.cpp:1250
+#: src/konversationmainwindow.cpp:1030
 msgid "Nicks Online"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:1354 src/konversationmainwindow.cpp:1427
+#: src/konversationmainwindow.cpp:1129 src/konversationmainwindow.cpp:1202
 msgid "Lag: not known"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:1356
+#: src/konversationmainwindow.cpp:1131
 msgid "Lag: %1 ms"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:1358 src/konversationmainwindow.cpp:1419
+#: src/konversationmainwindow.cpp:1133 src/konversationmainwindow.cpp:1194
 msgid "Lag: %1 s"
 msgstr ""
 
-#: src/inputfilter.cpp:1125 src/konversationmainwindow.cpp:1391
+#: src/inputfilter.cpp:1125 src/konversationmainwindow.cpp:1166
 #, c-format
 msgid ""
 "_n: 1 day\n"
@@ -1160,7 +1139,7 @@ msgid ""
 msgstr ""
 
 #: src/inputfilter.cpp:1126 src/inputfilter.cpp:1140
-#: src/konversationmainwindow.cpp:1392 src/konversationmainwindow.cpp:1399
+#: src/konversationmainwindow.cpp:1167 src/konversationmainwindow.cpp:1174
 #, c-format
 msgid ""
 "_n: 1 hour\n"
@@ -1170,8 +1149,8 @@ msgstr ""
 "%n o awriau"
 
 #: src/inputfilter.cpp:1127 src/inputfilter.cpp:1141 src/inputfilter.cpp:1153
-#: src/konversationmainwindow.cpp:1393 src/konversationmainwindow.cpp:1400
-#: src/konversationmainwindow.cpp:1406
+#: src/konversationmainwindow.cpp:1168 src/konversationmainwindow.cpp:1175
+#: src/konversationmainwindow.cpp:1181
 #, c-format
 msgid ""
 "_n: 1 minute\n"
@@ -1181,44 +1160,44 @@ msgstr ""
 "%n o funudau"
 
 #: src/inputfilter.cpp:1128 src/inputfilter.cpp:1142 src/inputfilter.cpp:1154
-#: src/konversationmainwindow.cpp:1394 src/konversationmainwindow.cpp:1401
-#: src/konversationmainwindow.cpp:1407
+#: src/konversationmainwindow.cpp:1169 src/konversationmainwindow.cpp:1176
+#: src/konversationmainwindow.cpp:1182
 #, c-format
 msgid ""
 "_n: 1 second\n"
 "%n seconds"
 msgstr ""
 
-#: src/konversationmainwindow.cpp:1395
+#: src/konversationmainwindow.cpp:1170
 msgid ""
 "_: %1 = name of server, %2 = (x days), %3 = (x hours), %4 = (x minutes), %5 = "
 "(x seconds)\n"
 "No answer from server %1 for more than %2, %3, %4, and %5."
 msgstr ""
 
-#: src/konversationmainwindow.cpp:1402
+#: src/konversationmainwindow.cpp:1177
 msgid ""
 "_: %1 = name of server, %2 = (x hours), %3 = (x minutes), %4 = (x seconds)\n"
 "No answer from server %1 for more than %2, %3, and %4."
 msgstr ""
 
-#: src/konversationmainwindow.cpp:1408
+#: src/konversationmainwindow.cpp:1183
 msgid ""
 "_: %1 = name of server, %2 = (x minutes), %3 = (x seconds)\n"
 "No answer from server %1 for more than %2 and %3."
 msgstr ""
 
-#: src/konversationmainwindow.cpp:1412
+#: src/konversationmainwindow.cpp:1187
 msgid ""
 "_n: No answer from server %1 for more than 1 second.\n"
 "No answer from server %1 for more than %n seconds."
 msgstr ""
 
-#: src/konversationmainwindow.cpp:1481
+#: src/konversationmainwindow.cpp:1241
 msgid "You can only search in text fields."
 msgstr ""
 
-#: src/konversationmainwindow.cpp:1482
+#: src/konversationmainwindow.cpp:1242
 msgid "Find Text Information"
 msgstr ""
 
@@ -1300,8 +1279,8 @@ msgstr ""
 
 #: src/inputfilter.cpp:263 src/outputfilter.cpp:678 src/outputfilter.cpp:691
 #: src/outputfilter.cpp:705 src/prefsdialog.cpp:71 src/server.cpp:1666
-#: src/server.cpp:1744 src/server.cpp:1768 src/server.cpp:1788
-#: src/server.cpp:1790 src/server.cpp:1796 src/server.cpp:1798
+#: src/server.cpp:1742 src/server.cpp:1766 src/server.cpp:1786
+#: src/server.cpp:1788 src/server.cpp:1794 src/server.cpp:1796
 msgid "DCC"
 msgstr ""
 
@@ -1337,7 +1316,7 @@ msgstr ""
 msgid "Usage: RAW [OPEN | CLOSE]"
 msgstr ""
 
-#: src/outputfilter.cpp:810 src/server.cpp:2188 src/server.cpp:2223
+#: src/outputfilter.cpp:810 src/server.cpp:2186 src/server.cpp:2221
 msgid "Notify"
 msgstr ""
 
@@ -1614,30 +1593,34 @@ msgid "Firefox style searchbar"
 msgstr ""
 
 #: src/main.cpp:79
-msgid "System tray patch"
+msgid "Raw modes,Tab grouping per server"
 msgstr ""
 
 #: src/main.cpp:80
-msgid "Bug fixes"
+msgid "System tray patch"
 msgstr ""
 
 #: src/main.cpp:81
-msgid "Extended user modes patch"
+msgid "Bug fixes"
 msgstr ""
 
 #: src/main.cpp:82
-msgid "Close visible tab with shortcut patch"
+msgid "Extended user modes patch"
 msgstr ""
 
 #: src/main.cpp:83
-msgid "Cycle tabs with mouse scroll wheel"
+msgid "Close visible tab with shortcut patch"
 msgstr ""
 
 #: src/main.cpp:84
-msgid "Channel ownership mode patch"
+msgid "Cycle tabs with mouse scroll wheel"
 msgstr ""
 
 #: src/main.cpp:85
+msgid "Channel ownership mode patch"
+msgstr ""
+
+#: src/main.cpp:86
 msgid "Option to enable IRC color filtering"
 msgstr ""
 
@@ -1754,7 +1737,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./src/channeloptionsui.ui line 306
-#: rc.cpp:386 src/channel.cpp:1528 src/channelnick.cpp:178
+#: rc.cpp:386 src/channel.cpp:1524 src/channelnick.cpp:178
 #: src/inputfilter.cpp:699 src/inputfilter.cpp:701 src/inputfilter.cpp:1421
 #, no-c-format
 msgid "Mode"
@@ -1782,7 +1765,7 @@ msgid "End of NAMES list."
 msgstr ""
 
 #. i18n: file ./src/channeloptionsui.ui line 64
-#: rc.cpp:326 src/channel.cpp:1120 src/channel.cpp:1135 src/channel.cpp:1137
+#: rc.cpp:326 src/channel.cpp:1116 src/channel.cpp:1131 src/channel.cpp:1133
 #: src/inputfilter.cpp:744
 #, no-c-format
 msgid "Topic"
@@ -1796,9 +1779,9 @@ msgstr ""
 msgid "%1: No such nick/channel."
 msgstr ""
 
-#: src/channel.cpp:962 src/channel.cpp:965 src/inputfilter.cpp:763
+#: src/channel.cpp:967 src/channel.cpp:970 src/inputfilter.cpp:763
 #: src/inputfilter.cpp:773 src/inputfilter.cpp:783 src/inputfilter.cpp:790
-#: src/urlcatcher.cpp:48
+#: src/urlcatcher.cpp:44
 msgid "Nick"
 msgstr "Ffugenw"
 
@@ -1828,7 +1811,7 @@ msgstr ""
 msgid "End of message of the day"
 msgstr ""
 
-#: src/channellistpanel.cpp:106 src/inputfilter.cpp:827
+#: src/channellistpanel.cpp:102 src/inputfilter.cpp:827
 #: src/inputfilter.cpp:834 src/inputfilter.cpp:1357
 msgid "Users"
 msgstr "Defnyddwyr"
@@ -1844,7 +1827,7 @@ msgstr ""
 
 #: src/inputfilter.cpp:853 src/inputfilter.cpp:1291 src/inputfilter.cpp:1294
 #: src/inputfilter.cpp:1316 src/inputfilter.cpp:1319
-#: src/linkaddressbook/addressbook.cpp:92 src/nicksonline.cpp:210
+#: src/linkaddressbook/addressbook.cpp:92 src/nicksonline.cpp:204
 msgid "Away"
 msgstr "I ffwrdd"
 
@@ -1865,7 +1848,7 @@ msgstr ""
 #: src/inputfilter.cpp:1061 src/inputfilter.cpp:1068 src/inputfilter.cpp:1091
 #: src/inputfilter.cpp:1103 src/inputfilter.cpp:1130 src/inputfilter.cpp:1143
 #: src/inputfilter.cpp:1155 src/inputfilter.cpp:1163 src/inputfilter.cpp:1181
-#: src/inputfilter.cpp:1195 src/query.cpp:80
+#: src/inputfilter.cpp:1195 src/query.cpp:76
 msgid "Whois"
 msgstr "Pwy-ydi"
 
@@ -2144,23 +2127,23 @@ msgstr "Anfonwr"
 msgid "Self"
 msgstr ""
 
-#: src/dccdetaildialog.cpp:96 src/dccpanel.cpp:59
+#: src/dccdetaildialog.cpp:96 src/dccpanel.cpp:56
 msgid "Status"
 msgstr "Cyflwr"
 
-#: src/dccdetaildialog.cpp:105 src/dccpanel.cpp:62
+#: src/dccdetaildialog.cpp:105 src/dccpanel.cpp:59
 msgid "Progress"
 msgstr "Cynnydd"
 
-#: src/dccdetaildialog.cpp:111 src/dccpanel.cpp:63
+#: src/dccdetaildialog.cpp:111 src/dccpanel.cpp:60
 msgid "Position"
 msgstr "Lleoliad"
 
-#: src/dccdetaildialog.cpp:129 src/dccpanel.cpp:99 src/dccpanel.cpp:126
+#: src/dccdetaildialog.cpp:129 src/dccpanel.cpp:96 src/dccpanel.cpp:123
 msgid "&Accept"
 msgstr "&Derbyn"
 
-#: src/dccdetaildialog.cpp:135 src/dccpanel.cpp:100 src/dccpanel.cpp:127
+#: src/dccdetaildialog.cpp:135 src/dccpanel.cpp:97 src/dccpanel.cpp:124
 msgid "A&bort"
 msgstr "&Erthylu"
 
@@ -2184,7 +2167,7 @@ msgstr "anhysbys"
 msgid "Do you really want to remove the received file?"
 msgstr ""
 
-#: src/dccdetaildialog.cpp:287 src/dccpanel.cpp:325
+#: src/dccdetaildialog.cpp:287 src/dccpanel.cpp:322
 msgid "Delete Confirmation"
 msgstr ""
 
@@ -2268,11 +2251,11 @@ msgstr ""
 msgid "%1 has started a conversation (query) with you."
 msgstr ""
 
-#: src/notificationhandler.cpp:248 src/server.cpp:2189
+#: src/notificationhandler.cpp:248 src/server.cpp:2187
 msgid "%1 is online (%2)."
 msgstr ""
 
-#: src/notificationhandler.cpp:262 src/server.cpp:2224
+#: src/notificationhandler.cpp:262 src/server.cpp:2222
 msgid "%1 went offline (%2)."
 msgstr ""
 
@@ -2571,66 +2554,66 @@ msgstr ""
 msgid "unknown number of"
 msgstr ""
 
-#: src/server.cpp:1744 src/server.cpp:1768
+#: src/server.cpp:1742 src/server.cpp:1766
 msgid "Resuming file \"%1\", offered by %2 from position %3."
 msgstr ""
 
-#: src/server.cpp:1749
+#: src/server.cpp:1747
 #, c-format
 msgid "No DCC download running on port %1."
 msgstr ""
 
-#: src/server.cpp:1776
+#: src/server.cpp:1774
 msgid "Received invalid resume request for file \"%1\" (position %2) from %3."
 msgstr ""
 
-#: src/server.cpp:1781
+#: src/server.cpp:1779
 #, c-format
 msgid "No DCC upload running on port %1."
 msgstr ""
 
-#: src/server.cpp:1788
+#: src/server.cpp:1786
 msgid "DCC download of file \"%1\" finished."
 msgstr ""
 
-#: src/server.cpp:1790
+#: src/server.cpp:1788
 msgid "DCC download of file \"%1\" failed. reason: %2"
 msgstr ""
 
-#: src/server.cpp:1796
+#: src/server.cpp:1794
 msgid "DCC upload of file \"%1\" finished."
 msgstr ""
 
-#: src/server.cpp:1798
+#: src/server.cpp:1796
 msgid "DCC upload of file \"%1\" failed. reason: %2"
 msgstr ""
 
-#: src/server.cpp:2729
+#: src/server.cpp:2727
 msgid ""
 "You were invited by %1 to join channel %2. Do you accept the invitation?"
 msgstr ""
 
-#: src/server.cpp:2731
+#: src/server.cpp:2729
 msgid "Invitation"
 msgstr ""
 
-#: src/server.cpp:2741
+#: src/server.cpp:2739
 msgid "Error: Could not find script \"%1\"."
 msgstr ""
 
-#: src/server.cpp:2745
+#: src/server.cpp:2743
 msgid "Error: Could not execute script \"%1\". Check file permissions."
 msgstr ""
 
-#: src/server.cpp:2768
+#: src/server.cpp:2766
 msgid "Set &Available Globally"
 msgstr ""
 
-#: src/konvdcop.cpp:83 src/server.cpp:2780
+#: src/konvdcop.cpp:83 src/server.cpp:2778
 msgid "Gone away for now."
 msgstr ""
 
-#: src/server.cpp:2934
+#: src/server.cpp:2932
 msgid "Server already connected."
 msgstr ""
 
@@ -2692,23 +2675,23 @@ msgstr ""
 msgid "&Exception"
 msgstr ""
 
-#: src/nicksonline.cpp:53
+#: src/nicksonline.cpp:49
 msgid "Watched Nicks Online"
 msgstr ""
 
-#: src/linkaddressbook/addressbook.cpp:88 src/nicksonline.cpp:57
+#: src/linkaddressbook/addressbook.cpp:88 src/nicksonline.cpp:53
 msgid "Offline"
 msgstr "All-lein"
 
-#: src/nicksonline.cpp:68
+#: src/nicksonline.cpp:64
 msgid "Network/Nickname/Channel"
 msgstr ""
 
-#: src/nicksonline.cpp:70
+#: src/nicksonline.cpp:66
 msgid "Additional Information"
 msgstr "Gwybodaeth Ychwanegol"
 
-#: src/nicksonline.cpp:75
+#: src/nicksonline.cpp:71
 msgid ""
 "<p>These are all the nicknames on your Nickname Watch list, listed under the "
 "server network they are connected to.  The list also includes the nicknames in "
@@ -2721,86 +2704,86 @@ msgid ""
 "<p>Right-click with the mouse on a nickname to perform additional functions.</p>"
 msgstr ""
 
-#: src/nicksonline.cpp:96
+#: src/nicksonline.cpp:90
 msgid "&Edit Watch List..."
 msgstr ""
 
-#: src/nicksonline.cpp:99
+#: src/nicksonline.cpp:93
 msgid "Click to edit the list of nicknames that appear on this screen."
 msgstr ""
 
-#: src/nicksonline.cpp:106
+#: src/nicksonline.cpp:100
 msgid "Address book:"
 msgstr ""
 
-#: src/nicksonline.cpp:109
+#: src/nicksonline.cpp:103
 msgid ""
 "When you select a nickname in the list above, the buttons here are used to "
 "associate the nickname with an entry in KAddressBook."
 msgstr ""
 
-#: src/nicksonline.cpp:113 src/nicksonline.cpp:708 src/nicksonline.cpp:768
+#: src/nicksonline.cpp:107 src/nicksonline.cpp:696 src/nicksonline.cpp:756
 msgid "Edit C&ontact..."
 msgstr "Golygu& Cyswllt..."
 
-#: src/nicksonline.cpp:116
+#: src/nicksonline.cpp:110
 msgid ""
 "Click to create, view, or edit the KAddressBook entry associated with the "
 "nickname selected above."
 msgstr ""
 
-#: src/nicksonline.cpp:123
+#: src/nicksonline.cpp:117
 msgid ""
 "Click to associate the nickname selected above with an entry in KAddressBook."
 msgstr ""
 
-#: src/nicksonline.cpp:129
+#: src/nicksonline.cpp:123
 msgid ""
 "Click to remove the association between the nickname selected above and a "
 "KAddressBook entry."
 msgstr ""
 
-#: src/nicksonline.cpp:219
+#: src/nicksonline.cpp:213
 #, c-format
 msgid " online via %1"
 msgstr ""
 
-#: src/nicksonline.cpp:224
+#: src/nicksonline.cpp:218
 #, c-format
 msgid " since %1"
 msgstr ""
 
-#: src/nicksonline.cpp:311
+#: src/nicksonline.cpp:305
 msgid " Voice"
 msgstr ""
 
-#: src/nicksonline.cpp:312
+#: src/nicksonline.cpp:306
 msgid " HalfOp"
 msgstr ""
 
-#: src/nicksonline.cpp:313
+#: src/nicksonline.cpp:307
 msgid " Operator"
 msgstr ""
 
-#: src/nicksonline.cpp:314
+#: src/nicksonline.cpp:308
 msgid " Owner"
 msgstr ""
 
-#: src/nicksonline.cpp:315
+#: src/nicksonline.cpp:309
 msgid " Admin"
 msgstr ""
 
-#: src/nicksonline.cpp:700 src/nicksonline.cpp:758
+#: src/nicksonline.cpp:688 src/nicksonline.cpp:746
 #, fuzzy
 msgid "Create New C&ontact..."
 msgstr "Cyswl&lt Newydd..."
 
-#: src/nicksonline.cpp:702 src/nicksonline.cpp:757
+#: src/nicksonline.cpp:690 src/nicksonline.cpp:745
 msgid "&Choose Association..."
 msgstr ""
 
-#: src/channellistpanel.cpp:124 src/nicksonline.cpp:762
-#: src/nicksonline.cpp:775
+#: src/channellistpanel.cpp:120 src/nicksonline.cpp:750
+#: src/nicksonline.cpp:763
 msgid "&Join Channel"
 msgstr "Y&muno â'r Sianel"
 
@@ -2808,7 +2791,7 @@ msgstr "Y&muno â'r Sianel"
 msgid "Select Background Image"
 msgstr "Dewiswch Ddelwedd Cefndir"
 
-#: src/chatwindow.cpp:370
+#: src/chatwindow.cpp:274
 msgid ""
 "\n"
 "*** Logfile started\n"
@@ -2816,152 +2799,152 @@ msgid ""
 "\n"
 msgstr ""
 
-#: src/dccpanel.cpp:58
+#: src/dccpanel.cpp:55
 msgid "Date"
 msgstr "Dyddiad"
 
-#: src/dccpanel.cpp:61
+#: src/dccpanel.cpp:58
 msgid "Partner"
 msgstr ""
 
-#: src/dccpanel.cpp:64
+#: src/dccpanel.cpp:61
 msgid "Remain"
 msgstr ""
 
-#: src/dccpanel.cpp:65
+#: src/dccpanel.cpp:62
 msgid "Speed"
 msgstr "Cyflymder"
 
-#: src/dccpanel.cpp:66
+#: src/dccpanel.cpp:63
 #, fuzzy
 msgid "Sender Address"
 msgstr "Anfonwr"
 
-#: src/dccpanel.cpp:101 src/dccpanel.cpp:129
+#: src/dccpanel.cpp:98 src/dccpanel.cpp:126
 msgid "&Clear"
 msgstr "&Clirio"
 
-#: src/dccpanel.cpp:102 src/dccpanel.cpp:131
+#: src/dccpanel.cpp:99 src/dccpanel.cpp:128
 msgid "&Open File"
 msgstr "&Agor Ffeil"
 
-#: src/dccpanel.cpp:103 src/dccpanel.cpp:132
+#: src/dccpanel.cpp:100 src/dccpanel.cpp:129
 msgid "&Remove File"
 msgstr "&Gwaredu Ffeil"
 
-#: src/dccpanel.cpp:104
+#: src/dccpanel.cpp:101
 #, fuzzy
 msgid "DCC &Detail"
 msgstr "Manylder"
 
-#: src/dccpanel.cpp:106
+#: src/dccpanel.cpp:103
 msgid "Start receiving"
 msgstr ""
 
-#: src/dccpanel.cpp:107
+#: src/dccpanel.cpp:104
 msgid "Abort the transfer(s)"
 msgstr ""
 
-#: src/dccpanel.cpp:108
+#: src/dccpanel.cpp:105
 msgid "Remove from this panel"
 msgstr ""
 
-#: src/dccpanel.cpp:109
+#: src/dccpanel.cpp:106
 msgid "Run the file"
 msgstr ""
 
-#: src/dccpanel.cpp:110
+#: src/dccpanel.cpp:107
 msgid "Remove the received file(s)"
 msgstr ""
 
-#: src/dccpanel.cpp:111
+#: src/dccpanel.cpp:108
 msgid "View DCC detail information"
 msgstr ""
 
-#: src/dccpanel.cpp:123
+#: src/dccpanel.cpp:120
 msgid "&Select All Items"
 msgstr ""
 
-#: src/dccpanel.cpp:124
+#: src/dccpanel.cpp:121
 msgid "S&elect All Completed Items"
 msgstr ""
 
-#: src/dccpanel.cpp:133
+#: src/dccpanel.cpp:130
 #, fuzzy
 msgid "File &Information"
 msgstr "Gwybodaeth Ychwanegol"
 
-#: src/dccpanel.cpp:135
+#: src/dccpanel.cpp:132
 #, fuzzy
 msgid "DCC &Detail Information"
 msgstr "Gwybodaeth Ychwanegol"
 
-#: src/dccpanel.cpp:324
+#: src/dccpanel.cpp:321
 #, c-format
 msgid ""
 "_n: Do you really want to remove the selected file?\n"
 "Do you really want to remove the selected %n files?"
 msgstr ""
 
-#: src/channellistpanel.cpp:64
+#: src/channellistpanel.cpp:60
 msgid "Filter Settings"
 msgstr ""
 
-#: src/channellistpanel.cpp:68
+#: src/channellistpanel.cpp:64
 msgid "M&inimum users:"
 msgstr ""
 
-#: src/channellistpanel.cpp:69
+#: src/channellistpanel.cpp:65
 msgid "Ma&ximum users:"
 msgstr ""
 
-#: src/channellistpanel.cpp:71
+#: src/channellistpanel.cpp:67
 msgid ""
 "You can limit the channel list to those channels with a minimum number of users "
 "here. Choosing 0 disables this criterion."
 msgstr ""
 
-#: src/channellistpanel.cpp:73
+#: src/channellistpanel.cpp:69
 msgid ""
 "You can limit the channel list to those channels with a maximum number of users "
 "here. Choosing 0 disables this criterion."
 msgstr ""
 
-#: src/channellistpanel.cpp:79
+#: src/channellistpanel.cpp:75
 msgid "Filter &pattern:"
 msgstr ""
 
-#: src/channellistpanel.cpp:80
+#: src/channellistpanel.cpp:76
 msgid "Filter target:"
 msgstr ""
 
-#: src/channellistpanel.cpp:83
+#: src/channellistpanel.cpp:79
 msgid "Enter a filter string here."
 msgstr ""
 
-#: src/channellistpanel.cpp:91
+#: src/channellistpanel.cpp:87
 msgid "&Channel"
 msgstr "&Sianel"
 
-#: src/channellistpanel.cpp:92
+#: src/channellistpanel.cpp:88
 msgid "&Topic"
 msgstr ""
 
-#: src/channellistpanel.cpp:93
+#: src/channellistpanel.cpp:89
 msgid "&Regular expression"
 msgstr "&Mynegiad rheolaidd"
 
-#: src/channellistpanel.cpp:94
+#: src/channellistpanel.cpp:90
 msgid "Appl&y Filter"
 msgstr ""
 
-#: src/channellistpanel.cpp:95
+#: src/channellistpanel.cpp:91
 msgid ""
 "Click here to retrieve the list of channels from the server and apply the "
 "filter."
 msgstr ""
 
-#: src/channellistpanel.cpp:104
+#: src/channellistpanel.cpp:100
 msgid ""
 "The filtered list of channels is displayed here. Notice that if you do not use "
 "regular expressions, Konversation lists any channel whose name contains the "
@@ -2972,53 +2955,53 @@ msgid ""
 "to get a list of all web addresses mentioned in the channel's topic."
 msgstr ""
 
-#: src/channellistpanel.cpp:105
+#: src/channellistpanel.cpp:101
 msgid "Channel Name"
 msgstr ""
 
-#: src/channellistpanel.cpp:107
+#: src/channellistpanel.cpp:103
 msgid "Channel Topic"
 msgstr ""
 
-#: src/channellistpanel.cpp:122
+#: src/channellistpanel.cpp:118
 msgid "Re&fresh List"
 msgstr "Cy&fredoli Rhestr"
 
-#: src/channellistpanel.cpp:123
+#: src/channellistpanel.cpp:119
 msgid "&Save List..."
 msgstr ""
 
-#: src/channellistpanel.cpp:125
+#: src/channellistpanel.cpp:121
 msgid "Click here to join the channel. A new tab is created for the channel."
 msgstr ""
 
-#: src/channellistpanel.cpp:189
+#: src/channellistpanel.cpp:185
 msgid "Save Channel List"
 msgstr ""
 
-#: src/channellistpanel.cpp:220
+#: src/channellistpanel.cpp:216
 msgid ""
 "Konversation Channel List: %1 - %2\n"
 "\n"
 msgstr ""
 
-#: src/channellistpanel.cpp:408
+#: src/channellistpanel.cpp:404
 msgid "Channels: %1 (%2 shown)"
 msgstr ""
 
-#: src/channellistpanel.cpp:409
+#: src/channellistpanel.cpp:405
 msgid "Non-unique users: %1 (%2 shown)"
 msgstr ""
 
-#: src/channellistpanel.cpp:444
+#: src/channellistpanel.cpp:425
 msgid "Open URL"
 msgstr "URL Agored"
 
-#: src/channellistpanel.cpp:492
+#: src/channellistpanel.cpp:473
 msgid "<<No URL found>>"
 msgstr ""
 
-#: src/channellistpanel.cpp:519
+#: src/channellistpanel.cpp:500
 #, c-format
 msgid "Channel List for %1"
 msgstr ""
@@ -3206,21 +3189,21 @@ msgstr ""
 msgid "Name the new entry:"
 msgstr ""
 
-#: src/urlcatcher.cpp:49
+#: src/urlcatcher.cpp:45
 msgid "URL"
 msgstr "URL"
 
-#: src/urlcatcher.cpp:53
+#: src/urlcatcher.cpp:49
 msgid ""
 "List of Uniform Resource Locators mentioned in any of the Konversation windows "
 "during this session."
 msgstr ""
 
-#: src/urlcatcher.cpp:60
+#: src/urlcatcher.cpp:56
 msgid "&Open URL"
 msgstr "&URL Agored"
 
-#: src/urlcatcher.cpp:62
+#: src/urlcatcher.cpp:58
 msgid ""
 "<p>Select a <b>URL</b> above, then click this button to launch the application "
 "associated with the mimetype of the URL.</p>"
@@ -3228,43 +3211,43 @@ msgid ""
 ", you can specify a custom web browser for web URLs.</p>"
 msgstr ""
 
-#: src/urlcatcher.cpp:67
+#: src/urlcatcher.cpp:63
 msgid "&Copy URL"
 msgstr ""
 
-#: src/urlcatcher.cpp:69
+#: src/urlcatcher.cpp:65
 msgid ""
 "Select a <b>URL</b> above, then click this button to copy the URL to the "
 "clipboard."
 msgstr ""
 
-#: src/urlcatcher.cpp:71
+#: src/urlcatcher.cpp:67
 msgid "&Delete URL"
 msgstr ""
 
-#: src/urlcatcher.cpp:73
+#: src/urlcatcher.cpp:69
 msgid ""
 "Select a <b>URL</b> above, then click this button to delete the URL from the "
 "list."
 msgstr ""
 
-#: src/urlcatcher.cpp:75
+#: src/urlcatcher.cpp:71
 msgid "Sa&ve List..."
 msgstr ""
 
-#: src/urlcatcher.cpp:77
+#: src/urlcatcher.cpp:73
 msgid "Click to save the entire list to a file."
 msgstr ""
 
-#: src/urlcatcher.cpp:79
+#: src/urlcatcher.cpp:75
 msgid "C&lear List"
 msgstr "G&wagu'r Rhestr"
 
-#: src/urlcatcher.cpp:81
+#: src/urlcatcher.cpp:77
 msgid "Click to erase the entire list."
 msgstr ""
 
-#: src/urlcatcher.cpp:215
+#: src/urlcatcher.cpp:211
 msgid "Save URL List"
 msgstr ""
 
@@ -3549,7 +3532,7 @@ msgstr ""
 msgid "KIO error: %1"
 msgstr ""
 
-#: src/query.cpp:68
+#: src/query.cpp:64
 msgid ""
 "<qt>Some details of the person you are talking to in this query is shown in "
 "this bar.  The full name and hostmask is shown, along with any image or logo "
@@ -3559,23 +3542,23 @@ msgid ""
 "is.</qt>"
 msgstr ""
 
-#: src/channel.cpp:248 src/query.cpp:87 src/statuspanel.cpp:64
+#: src/channel.cpp:245 src/query.cpp:83 src/statuspanel.cpp:60
 msgid "(away)"
 msgstr ""
 
-#: src/query.cpp:271
+#: src/query.cpp:264
 msgid "Do you want to close this query after ignoring this nickname?"
 msgstr ""
 
-#: src/query.cpp:272
+#: src/query.cpp:265
 msgid "Close This Query"
 msgstr ""
 
-#: src/channel.cpp:2067 src/query.cpp:387 src/statuspanel.cpp:303
+#: src/channel.cpp:2044 src/query.cpp:380 src/statuspanel.cpp:289
 msgid "Identity Default ( %1 )"
 msgstr ""
 
-#: src/query.cpp:419
+#: src/query.cpp:398
 msgid "Talking to yourself"
 msgstr ""
 
@@ -3639,20 +3622,20 @@ msgstr "&Trosysgrifo"
 msgid "R&ename"
 msgstr "A&il-enwi"
 
-#: src/statuspanel.cpp:242
+#: src/statuspanel.cpp:232
 msgid "Do you want to disconnect from '%1'?"
 msgstr ""
 
-#: src/statuspanel.cpp:243
+#: src/statuspanel.cpp:233
 msgid "Disconnect From Server"
 msgstr ""
 
-#: src/channel.cpp:130
+#: src/channel.cpp:127
 #, fuzzy
 msgid "Edit topic"
 msgstr "Ffuge&nw:"
 
-#: src/channel.cpp:133
+#: src/channel.cpp:130
 msgid ""
 "<qt>Every channel on IRC has a topic associated with it.  This is simply a "
 "message that everybody can see."
@@ -3663,7 +3646,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./src/channeloptionsui.ui line 141
-#: rc.cpp:335 src/channel.cpp:150
+#: rc.cpp:335 src/channel.cpp:147
 #, no-c-format
 msgid ""
 "<qt>These control the <em>mode</em> of the channel.  Only an operator can "
@@ -3673,7 +3656,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./src/channeloptionsui.ui line 152
-#: rc.cpp:341 src/channel.cpp:151
+#: rc.cpp:341 src/channel.cpp:148
 #, no-c-format
 msgid ""
 "<qt>These control the <em>mode</em> of the channel.  Only an operator can "
@@ -3684,7 +3667,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./src/channeloptionsui.ui line 163
-#: rc.cpp:347 src/channel.cpp:152
+#: rc.cpp:347 src/channel.cpp:149
 #, no-c-format
 msgid ""
 "<qt>These control the <em>mode</em> of the channel.  Only an operator can "
@@ -3695,7 +3678,7 @@ msgid ""
 "know that you are in this channel, if this mode is set.</qt>"
 msgstr ""
 
-#: src/channel.cpp:153
+#: src/channel.cpp:150
 msgid ""
 "<qt>These control the <em>mode</em> of the channel.  Only an operator can "
 "change these."
@@ -3704,7 +3687,7 @@ msgid ""
 "command <em>/invite nick</em> from within the channel.</qt>"
 msgstr ""
 
-#: src/channel.cpp:154
+#: src/channel.cpp:151
 msgid ""
 "<qt>These control the <em>mode</em> of the channel.  Only an operator can "
 "change these."
@@ -3714,7 +3697,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./src/channeloptionsui.ui line 185
-#: rc.cpp:359 src/channel.cpp:155
+#: rc.cpp:359 src/channel.cpp:152
 #, no-c-format
 msgid ""
 "<qt>These control the <em>mode</em> of the channel.  Only an operator can "
@@ -3724,7 +3707,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./src/channeloptionsui.ui line 204
-#: rc.cpp:365 rc.cpp:377 src/channel.cpp:156
+#: rc.cpp:365 rc.cpp:377 src/channel.cpp:153
 #, no-c-format
 msgid ""
 "<qt>These control the <em>mode</em> of the channel.  Only an operator can "
@@ -3734,7 +3717,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./src/channeloptionsui.ui line 218
-#: rc.cpp:368 rc.cpp:374 src/channel.cpp:157
+#: rc.cpp:368 rc.cpp:374 src/channel.cpp:154
 #, no-c-format
 msgid ""
 "<qt>These control the <em>mode</em> of the channel.  Only an operator can "
@@ -3745,18 +3728,18 @@ msgid ""
 "is.</qt>"
 msgstr ""
 
-#: src/channel.cpp:169
+#: src/channel.cpp:166
 msgid "Maximum users allowed in channel"
 msgstr ""
 
-#: src/channel.cpp:170
+#: src/channel.cpp:167
 msgid ""
 "<qt>This is the channel user limit - the maximum number of users that can be in "
 "the channel at a time.  If you are an operator, you can set this.  The channel "
 "mode <b>T</b>opic (button to left) will automatically be set if set this.</qt>"
 msgstr ""
 
-#: src/channel.cpp:243
+#: src/channel.cpp:240
 msgid ""
 "<qt>This shows your current nick, and any alternatives you have set up.  If you "
 "select or type in a different nickname, then a request will be sent to the IRC "
@@ -3766,49 +3749,57 @@ msgid ""
 "option in the <em>File</em> menu.</qt>"
 msgstr ""
 
-#: src/channel.cpp:650
+#: src/channel.cpp:546
+msgid "Do you want to ignore %1?"
+msgstr ""
+
+#: src/channel.cpp:548
+msgid "Do you want to ignore the selected users?"
+msgstr ""
+
+#: src/channel.cpp:655
 msgid "Completion"
 msgstr "Cwblhad"
 
-#: src/channel.cpp:650
+#: src/channel.cpp:655
 #, c-format
 msgid "Possible completions: %1."
 msgstr ""
 
-#: src/channel.cpp:864
+#: src/channel.cpp:869
 msgid "Channel Password"
 msgstr ""
 
-#: src/channel.cpp:877
+#: src/channel.cpp:882
 msgid "Nick Limit"
 msgstr ""
 
-#: src/channel.cpp:878
+#: src/channel.cpp:883
 msgid "Enter the new nick limit:"
 msgstr ""
 
-#: src/channel.cpp:962
+#: src/channel.cpp:967
 #, c-format
 msgid "You are now known as %1."
 msgstr ""
 
-#: src/channel.cpp:965
+#: src/channel.cpp:970
 msgid "%1 is now known as %2."
 msgstr ""
 
-#: src/channel.cpp:974
+#: src/channel.cpp:979
 msgid "You have joined channel %1. (%2)"
 msgstr ""
 
-#: src/channel.cpp:981
+#: src/channel.cpp:986
 msgid "%1 has joined this channel. (%2)"
 msgstr ""
 
-#: src/channel.cpp:990
+#: src/channel.cpp:995
 msgid "You have left this server. (%1)"
 msgstr ""
 
-#: src/channel.cpp:992
+#: src/channel.cpp:997
 msgid "You have left channel %1. (%2)"
 msgstr ""
 
@@ -3836,419 +3827,419 @@ msgstr ""
 msgid "You have been kicked from channel %1 by %2. (%3)"
 msgstr ""
 
-#: src/channel.cpp:1047
+#: src/channel.cpp:1043
 msgid "You have kicked %1 from the channel. (%2)"
 msgstr ""
 
-#: src/channel.cpp:1049
+#: src/channel.cpp:1045
 msgid "%1 has been kicked from the channel by %2. (%3)"
 msgstr ""
 
-#: src/channel.cpp:1112
+#: src/channel.cpp:1108
 #, c-format
 msgid ""
 "_n: %n nick\n"
 "%n nicks"
 msgstr ""
 
-#: src/channel.cpp:1113
+#: src/channel.cpp:1109
 #, c-format
 msgid ""
 "_n:  (%n op)\n"
 " (%n ops)"
 msgstr ""
 
-#: src/channel.cpp:1120
+#: src/channel.cpp:1116
 msgid "The channel topic is \"%1\"."
 msgstr ""
 
-#: src/channel.cpp:1124
+#: src/channel.cpp:1120
 #, c-format
 msgid "<unknown> %1"
 msgstr "<anhysbys> %1"
 
-#: src/channel.cpp:1135
+#: src/channel.cpp:1131
 msgid "You set the channel topic to \"%1\"."
 msgstr ""
 
-#: src/channel.cpp:1137
+#: src/channel.cpp:1133
 msgid "%1 sets the channel topic to \"%2\"."
 msgstr ""
 
-#: src/channel.cpp:1187
+#: src/channel.cpp:1183
 msgid "You give channel owner privileges to yourself."
 msgstr ""
 
-#: src/channel.cpp:1189
+#: src/channel.cpp:1185
 #, c-format
 msgid "You give channel owner privileges to %1."
 msgstr ""
 
-#: src/channel.cpp:1194
+#: src/channel.cpp:1190
 msgid "%1 gives channel owner privileges to you."
 msgstr ""
 
-#: src/channel.cpp:1196
+#: src/channel.cpp:1192
 msgid "%1 gives channel owner privileges to %2."
 msgstr ""
 
-#: src/channel.cpp:1204
+#: src/channel.cpp:1200
 msgid "You take channel owner privileges from yourself."
 msgstr ""
 
-#: src/channel.cpp:1206
+#: src/channel.cpp:1202
 #, c-format
 msgid "You take channel owner privileges from %1."
 msgstr ""
 
-#: src/channel.cpp:1211
+#: src/channel.cpp:1207
 msgid "%1 takes channel owner privileges from you."
 msgstr ""
 
-#: src/channel.cpp:1213
+#: src/channel.cpp:1209
 msgid "%1 takes channel owner privileges from %2."
 msgstr ""
 
-#: src/channel.cpp:1232
+#: src/channel.cpp:1228
 msgid "You give channel operator privileges to yourself."
 msgstr ""
 
-#: src/channel.cpp:1234
+#: src/channel.cpp:1230
 #, c-format
 msgid "You give channel operator privileges to %1."
 msgstr ""
 
-#: src/channel.cpp:1239
+#: src/channel.cpp:1235
 msgid "%1 gives channel operator privileges to you."
 msgstr ""
 
-#: src/channel.cpp:1241
+#: src/channel.cpp:1237
 msgid "%1 gives channel operator privileges to %2."
 msgstr ""
 
-#: src/channel.cpp:1249
+#: src/channel.cpp:1245
 msgid "You take channel operator privileges from yourself."
 msgstr ""
 
-#: src/channel.cpp:1251
+#: src/channel.cpp:1247
 #, c-format
 msgid "You take channel operator privileges from %1."
 msgstr ""
 
-#: src/channel.cpp:1256
+#: src/channel.cpp:1252
 msgid "%1 takes channel operator privileges from you."
 msgstr ""
 
-#: src/channel.cpp:1258
+#: src/channel.cpp:1254
 msgid "%1 takes channel operator privileges from %2."
 msgstr ""
 
-#: src/channel.cpp:1278
+#: src/channel.cpp:1274
 msgid "You give channel halfop privileges to yourself."
 msgstr ""
 
-#: src/channel.cpp:1280
+#: src/channel.cpp:1276
 #, c-format
 msgid "You give channel halfop privileges to %1."
 msgstr ""
 
-#: src/channel.cpp:1285
+#: src/channel.cpp:1281
 msgid "%1 gives channel halfop privileges to you."
 msgstr ""
 
-#: src/channel.cpp:1287
+#: src/channel.cpp:1283
 msgid "%1 gives channel halfop privileges to %2."
 msgstr ""
 
-#: src/channel.cpp:1295
+#: src/channel.cpp:1291
 msgid "You take channel halfop privileges from yourself."
 msgstr ""
 
-#: src/channel.cpp:1297
+#: src/channel.cpp:1293
 #, c-format
 msgid "You take channel halfop privileges from %1."
 msgstr ""
 
-#: src/channel.cpp:1302
+#: src/channel.cpp:1298
 msgid "%1 takes channel halfop privileges from you."
 msgstr ""
 
-#: src/channel.cpp:1304
+#: src/channel.cpp:1300
 msgid "%1 takes channel halfop privileges from %2."
 msgstr ""
 
-#: src/channel.cpp:1324
+#: src/channel.cpp:1320
 msgid "You give yourself the permission to talk."
 msgstr ""
 
-#: src/channel.cpp:1325
+#: src/channel.cpp:1321
 msgid "You give %1 the permission to talk."
 msgstr ""
 
-#: src/channel.cpp:1329
+#: src/channel.cpp:1325
 msgid "%1 gives you the permission to talk."
 msgstr ""
 
-#: src/channel.cpp:1330
+#: src/channel.cpp:1326
 msgid "%1 gives %2 the permission to talk."
 msgstr ""
 
-#: src/channel.cpp:1337
+#: src/channel.cpp:1333
 msgid "You take the permission to talk from yourself."
 msgstr ""
 
-#: src/channel.cpp:1338
+#: src/channel.cpp:1334
 #, c-format
 msgid "You take the permission to talk from %1."
 msgstr ""
 
-#: src/channel.cpp:1342
+#: src/channel.cpp:1338
 msgid "%1 takes the permission to talk from you."
 msgstr ""
 
-#: src/channel.cpp:1343
+#: src/channel.cpp:1339
 msgid "%1 takes the permission to talk from %2."
 msgstr ""
 
-#: src/channel.cpp:1356
+#: src/channel.cpp:1352
 msgid "You set the channel mode to 'no colors allowed'."
 msgstr ""
 
-#: src/channel.cpp:1357
+#: src/channel.cpp:1353
 msgid "%1 sets the channel mode to 'no colors allowed'."
 msgstr ""
 
-#: src/channel.cpp:1361
+#: src/channel.cpp:1357
 msgid "You set the channel mode to 'allow color codes'."
 msgstr ""
 
-#: src/channel.cpp:1362
+#: src/channel.cpp:1358
 msgid "%1 sets the channel mode to 'allow color codes'."
 msgstr ""
 
-#: src/channel.cpp:1370
+#: src/channel.cpp:1366
 msgid "You set the channel mode to 'invite only'."
 msgstr ""
 
-#: src/channel.cpp:1371
+#: src/channel.cpp:1367
 msgid "%1 sets the channel mode to 'invite only'."
 msgstr ""
 
-#: src/channel.cpp:1375
+#: src/channel.cpp:1371
 msgid "You remove the 'invite only' mode from the channel."
 msgstr ""
 
-#: src/channel.cpp:1376
+#: src/channel.cpp:1372
 msgid "%1 removes the 'invite only' mode from the channel."
 msgstr ""
 
-#: src/channel.cpp:1384
+#: src/channel.cpp:1380
 msgid "You set the channel mode to 'moderated'."
 msgstr ""
 
-#: src/channel.cpp:1385
+#: src/channel.cpp:1381
 msgid "%1 sets the channel mode to 'moderated'."
 msgstr ""
 
-#: src/channel.cpp:1389
+#: src/channel.cpp:1385
 msgid "You set the channel mode to 'unmoderated'."
 msgstr ""
 
-#: src/channel.cpp:1390
+#: src/channel.cpp:1386
 msgid "%1 sets the channel mode to 'unmoderated'."
 msgstr ""
 
-#: src/channel.cpp:1398
+#: src/channel.cpp:1394
 msgid "You set the channel mode to 'no messages from outside'."
 msgstr ""
 
-#: src/channel.cpp:1399
+#: src/channel.cpp:1395
 msgid "%1 sets the channel mode to 'no messages from outside'."
 msgstr ""
 
-#: src/channel.cpp:1403
+#: src/channel.cpp:1399
 msgid "You set the channel mode to 'allow messages from outside'."
 msgstr ""
 
-#: src/channel.cpp:1404
+#: src/channel.cpp:1400
 msgid "%1 sets the channel mode to 'allow messages from outside'."
 msgstr ""
 
-#: src/channel.cpp:1412
+#: src/channel.cpp:1408
 #, c-format
 msgid "You set the channel mode to 'quiet' on %1."
 msgstr ""
 
-#: src/channel.cpp:1413
+#: src/channel.cpp:1409
 msgid "%1 sets the channel mode to 'quiet' on %2."
 msgstr ""
 
-#: src/channel.cpp:1417
+#: src/channel.cpp:1413
 #, c-format
 msgid "You remove the 'quiet' channel mode from %1."
 msgstr ""
 
-#: src/channel.cpp:1418
+#: src/channel.cpp:1414
 msgid "%1 removes the 'quiet' channel mode from %2."
 msgstr ""
 
-#: src/channel.cpp:1426
+#: src/channel.cpp:1422
 msgid "You set the channel mode to 'private'."
 msgstr ""
 
-#: src/channel.cpp:1427
+#: src/channel.cpp:1423
 msgid "%1 sets the channel mode to 'private'."
 msgstr ""
 
-#: src/channel.cpp:1431
+#: src/channel.cpp:1427
 msgid "You set the channel mode to 'public'."
 msgstr ""
 
-#: src/channel.cpp:1432
+#: src/channel.cpp:1428
 msgid "%1 sets the channel mode to 'public'."
 msgstr ""
 
-#: src/channel.cpp:1441
+#: src/channel.cpp:1437
 msgid "You set the channel mode to 'secret'."
 msgstr ""
 
-#: src/channel.cpp:1442
+#: src/channel.cpp:1438
 msgid "%1 sets the channel mode to 'secret'."
 msgstr ""
 
-#: src/channel.cpp:1446
+#: src/channel.cpp:1442
 msgid "You set the channel mode to 'visible'."
 msgstr ""
 
-#: src/channel.cpp:1447
+#: src/channel.cpp:1443
 msgid "%1 sets the channel mode to 'visible'."
 msgstr ""
 
-#: src/channel.cpp:1458
+#: src/channel.cpp:1454
 msgid "You switch on 'topic protection'."
 msgstr ""
 
-#: src/channel.cpp:1459
+#: src/channel.cpp:1455
 msgid "%1 switches on 'topic protection'."
 msgstr ""
 
-#: src/channel.cpp:1463
+#: src/channel.cpp:1459
 msgid "You switch off 'topic protection'."
 msgstr ""
 
-#: src/channel.cpp:1464
+#: src/channel.cpp:1460
 msgid "%1 switches off 'topic protection'."
 msgstr ""
 
-#: src/channel.cpp:1474
+#: src/channel.cpp:1470
 msgid "You set the channel limit to %1 nicks."
 msgstr ""
 
-#: src/channel.cpp:1475
+#: src/channel.cpp:1471
 msgid "%1 sets the channel limit to %2 nicks."
 msgstr ""
 
-#: src/channel.cpp:1479
+#: src/channel.cpp:1475
 msgid "You remove the channel limit."
 msgstr ""
 
-#: src/channel.cpp:1480
+#: src/channel.cpp:1476
 msgid "%1 removes the channel limit."
 msgstr ""
 
-#: src/channel.cpp:1490
+#: src/channel.cpp:1486
 #, c-format
 msgid "You set a ban on %1."
 msgstr ""
 
-#: src/channel.cpp:1491
+#: src/channel.cpp:1487
 msgid "%1 sets a ban on %2."
 msgstr ""
 
-#: src/channel.cpp:1495
+#: src/channel.cpp:1491
 #, c-format
 msgid "You remove the ban on %1."
 msgstr ""
 
-#: src/channel.cpp:1496
+#: src/channel.cpp:1492
 msgid "%1 removes the ban on %2."
 msgstr ""
 
-#: src/channel.cpp:1503
+#: src/channel.cpp:1499
 #, c-format
 msgid "You set a ban exception on %1."
 msgstr ""
 
-#: src/channel.cpp:1504
+#: src/channel.cpp:1500
 msgid "%1 sets a ban exception on %2."
 msgstr ""
 
-#: src/channel.cpp:1508
+#: src/channel.cpp:1504
 #, c-format
 msgid "You remove the ban exception on %1."
 msgstr ""
 
-#: src/channel.cpp:1509
+#: src/channel.cpp:1505
 msgid "%1 removes the ban exception on %2."
 msgstr ""
 
-#: src/channel.cpp:1516
+#: src/channel.cpp:1512
 #, c-format
 msgid "You set invitation mask %1."
 msgstr ""
 
-#: src/channel.cpp:1517
+#: src/channel.cpp:1513
 msgid "%1 sets invitation mask %2."
 msgstr ""
 
-#: src/channel.cpp:1521
+#: src/channel.cpp:1517
 #, c-format
 msgid "You remove the invitation mask %1."
 msgstr ""
 
-#: src/channel.cpp:1522
+#: src/channel.cpp:1518
 msgid "%1 removes the invitation mask %2."
 msgstr ""
 
-#: src/channel.cpp:1831
+#: src/channel.cpp:1827
 msgid "You have to be an operator to change this."
 msgstr ""
 
-#: src/channel.cpp:1833
+#: src/channel.cpp:1829
 #, c-format
 msgid "Topic can be changed by channel operator only.  %1"
 msgstr ""
 
-#: src/channel.cpp:1834
+#: src/channel.cpp:1830
 #, c-format
 msgid "No messages to channel from clients on the outside.  %1"
 msgstr ""
 
-#: src/channel.cpp:1835
+#: src/channel.cpp:1831
 #, c-format
 msgid "Secret channel.  %1"
 msgstr ""
 
-#: src/channel.cpp:1836
+#: src/channel.cpp:1832
 #, c-format
 msgid "Invite only channel.  %1"
 msgstr ""
 
-#: src/channel.cpp:1837
+#: src/channel.cpp:1833
 #, c-format
 msgid "Private channel.  %1"
 msgstr ""
 
-#: src/channel.cpp:1838
+#: src/channel.cpp:1834
 #, c-format
 msgid "Moderated channel.  %1"
 msgstr ""
 
-#: src/channel.cpp:1839
+#: src/channel.cpp:1835
 msgid "Protect channel with a password."
 msgstr ""
 
-#: src/channel.cpp:1840
+#: src/channel.cpp:1836
 msgid "Set user limit to channel."
 msgstr ""
 
@@ -5729,6 +5720,15 @@ msgstr "&Cyfrinair:"
 #, no-c-format
 msgid "Server:"
 msgstr " Gweinydd:"
+
+#~ msgid "Toplevel Mode"
+#~ msgstr "Modd Gwastad Uchaf"
+
+#~ msgid "Childframe Mode"
+#~ msgstr "Modd Ffrâm Plentyn"
+
+#~ msgid "IDEAl Mode"
+#~ msgstr "Modd IDEAI"
 
 #~ msgid "no error"
 #~ msgstr "dim gwall"
