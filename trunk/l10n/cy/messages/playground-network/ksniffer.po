@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: all2.po\n"
-"POT-Creation-Date: 2005-06-13 01:37+0200\n"
+"POT-Creation-Date: 2005-06-14 01:36+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -96,87 +96,103 @@ msgstr ""
 msgid "not available"
 msgstr "dim ar gael"
 
-#: kmainwidget.cpp:62
+#: kmainwidget.cpp:63
 msgid ""
 "_: frame number\n"
 "frame no."
 msgstr ""
 
-#: kmainwidget.cpp:63
+#: kmainwidget.cpp:64
 msgid "time"
 msgstr "amser"
 
-#: kmainwidget.cpp:64
+#: kmainwidget.cpp:65
 msgid "source"
 msgstr "tarddiad"
 
-#: kmainwidget.cpp:65
+#: kmainwidget.cpp:66
 msgid "destination"
 msgstr "cyrchfan"
 
-#: kmainwidget.cpp:66
+#: kmainwidget.cpp:67
 msgid "protocol"
 msgstr "protocol"
 
-#: kmainwidget.cpp:67
+#: kmainwidget.cpp:68
 msgid "information"
 msgstr "gwybodaeth"
 
-#: kmainwidget.cpp:77
+#: kmainwidget.cpp:78
 msgid "Packet Details"
 msgstr ""
 
-#: kmainwidget.cpp:88
+#: kmainwidget.cpp:89
 msgid "In this area you get all the captured packets."
 msgstr ""
 
-#: kmainwidget.cpp:89
+#: kmainwidget.cpp:90
 msgid "The list of all captured packets"
 msgstr ""
 
-#: kmainwidget.cpp:91
+#: kmainwidget.cpp:92
 msgid "In this area you can see the details about a selected captured packet."
 msgstr ""
 
-#: kmainwidget.cpp:92
+#: kmainwidget.cpp:93
 msgid "More details about the captured packets"
-msgstr ""
-
-#: kmainwidget.cpp:232
-#, c-format
-msgid "Frame number: %1"
 msgstr ""
 
 #: kmainwidget.cpp:233
 #, c-format
-msgid "Capture time: %1"
+msgid "Frame number: %1"
 msgstr ""
 
-#: kmainwidget.cpp:236
-msgid "Delay from the previous packet: %1 s"
+#: kmainwidget.cpp:234
+#, c-format
+msgid ""
+"_: general field for the frame header\n"
+"Capture time: %1"
 msgstr ""
 
-#: kmainwidget.cpp:238
-msgid "Delay from the first packet: %1 s"
+#: kmainwidget.cpp:237
+msgid ""
+"_: general field for the frame header\n"
+"Delay from the previous packet: %1 s"
 msgstr ""
 
-#: kmainwidget.cpp:239
-msgid "Packet length: %1 bytes"
+#: kmainwidget.cpp:240
+msgid ""
+"_: general field for the frame header\n"
+"Delay from the first packet: %1 s"
 msgstr ""
 
 #: kmainwidget.cpp:242
-msgid "Captured packet length: %1 bytes"
+msgid ""
+"_: general field for the frame header\n"
+"Packet length: %1 bytes"
 msgstr ""
 
-#: kmainwidget.cpp:249
+#: kmainwidget.cpp:245
+msgid ""
+"_: general field for the frame header\n"
+"Captured packet length: %1 bytes"
+msgstr ""
+
+#: kmainwidget.cpp:253
 #, c-format
 msgid "Frame Header: %1"
 msgstr ""
 
-#: kmainwidget.cpp:261
+#: kmainwidget.cpp:265
 #, fuzzy, c-format
 msgid "Protocol Information: %1"
 msgstr "gwybodaeth"
+
+#: kmainwidget.cpp:276
+msgid ""
+"_: specific x protocol information\n"
+"%1 Information:"
+msgstr ""
 
 #: ksniffer.cpp:87 ksniffer.cpp:453 ksniffer.cpp:464
 msgid "KSniffer - The KDE Network Sniffer"
@@ -476,18 +492,39 @@ msgid ""
 "Destination Address: %1"
 msgstr "cyrchfan : %1"
 
+#: protocols/tcp-protocol.cpp:59
+#, fuzzy, c-format
+msgid ""
+"_: TCP protocol field\n"
+"Source port: %1"
+msgstr "gwybodaeth"
+
+#: protocols/tcp-protocol.cpp:60
+#, fuzzy, c-format
+msgid ""
+"_: TCP protocol field\n"
+"Destination Port: %1"
+msgstr "cyrchfan : %1"
+
 #: frames/ethernet2.cpp:46
-msgid "MAC Source Address: %1:%2:%3:%4:%5:%6"
-msgstr ""
+#, fuzzy
+msgid ""
+"_: Ethernet2 Frame Field\n"
+"MAC Source Address: %1:%2:%3:%4:%5:%6"
+msgstr "cyrchfan : %1"
 
 #: frames/ethernet2.cpp:49
 #, fuzzy
-msgid "MAC Destination Address: %1:%2:%3:%4:%5:%6"
+msgid ""
+"_: Ethernet2 Frame Field\n"
+"MAC Destination Address: %1:%2:%3:%4:%5:%6"
 msgstr "cyrchfan : %1"
 
 #: frames/ethernet2.cpp:51
 #, fuzzy, c-format
-msgid "protocol Type: 0x%1"
+msgid ""
+"_: Ethernet2 Frame Field\n"
+"Protocol Type: 0x%1"
 msgstr "protocol"
 
 #: frames/frameheader.cpp:44
@@ -503,24 +540,40 @@ msgid ""
 msgstr ""
 
 #: frames/lcc.cpp:46
-#, fuzzy, c-format
-msgid "Packet Type: %1"
-msgstr "protocol"
+#, c-format
+msgid ""
+"_: Linux Cooked Capture Frame Field\n"
+"Packet Type: %1"
+msgstr ""
 
 #: frames/lcc.cpp:47
 #, c-format
-msgid "Link Layer Address Type: %1"
+msgid ""
+"_: Linux Cooked Capture Frame Field\n"
+"Link Layer Address Type: %1"
 msgstr ""
 
 #: frames/lcc.cpp:48
 #, c-format
-msgid "Link Layer Address Length: %1"
+msgid ""
+"_: Linux Cooked Capture Frame Field\n"
+"Link Layer Address Length: %1"
 msgstr ""
 
 #: frames/lcc.cpp:49
-#, fuzzy, c-format
-msgid "Protocol Type: 0x%1"
-msgstr "protocol"
+#, c-format
+msgid ""
+"_: Linux Cooked Capture Frame Field\n"
+"Protocol Type: 0x%1"
+msgstr ""
+
+#, fuzzy
+#~ msgid "protocol Type: 0x%1"
+#~ msgstr "protocol"
+
+#, fuzzy
+#~ msgid "Packet Type: %1"
+#~ msgstr "protocol"
 
 #, fuzzy
 #~ msgid "Version: %1"
