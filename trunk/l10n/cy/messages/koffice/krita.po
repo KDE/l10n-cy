@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
-"POT-Creation-Date: 2005-06-16 01:27+0200\n"
+"POT-Creation-Date: 2005-06-17 01:30+0200\n"
 "PO-Revision-Date: 2004-07-06 17:18+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -1046,8 +1046,8 @@ msgid "Selection Tools"
 msgstr "Offer Detholi"
 
 #. i18n: file krita_readonly.rc line 18
-#: core/kis_docker_manager.cc:332 core/kis_view.cc:242 rc.cpp:60 rc.cpp:679
-#: rc.cpp:1379 rc.cpp:1517 rc.cpp:1550
+#: core/kis_view.cc:242 rc.cpp:60 rc.cpp:679 rc.cpp:1379 rc.cpp:1517
+#: rc.cpp:1550
 #, no-c-format
 msgid "Layer"
 msgstr "Haen"
@@ -2026,8 +2026,8 @@ msgid "Sphere Dec."
 msgstr ""
 
 #. i18n: file ./plugins/defaultdockers/wdgautogradient.ui line 351
-#: core/kis_docker_manager.cc:500 plugins/defaultdockers/defaultdockers.cc:188
-#: rc.cpp:615 rc.cpp:897 rc.cpp:918
+#: plugins/defaultdockers/defaultdockers.cc:168 rc.cpp:615 rc.cpp:897
+#: rc.cpp:918
 #, no-c-format
 msgid "RGB"
 msgstr "RGB"
@@ -2045,7 +2045,7 @@ msgid "HSV CCW"
 msgstr "HSV"
 
 #. i18n: file ./plugins/defaultdockers/wdgtextbrush.ui line 16
-#: tools/kis_tool_text.cc:49 rc.cpp:624 rc.cpp:1172
+#: tools/kis_tool_text.cc:50 rc.cpp:624 rc.cpp:1172
 #, no-c-format
 msgid "Text"
 msgstr "Testun"
@@ -2093,8 +2093,7 @@ msgid "Fade:"
 msgstr "Pylu:"
 
 #. i18n: file ./plugins/defaultdockers/wdgbirdeye.ui line 24
-#: core/kis_docker_manager.cc:320 plugins/defaultdockers/defaultdockers.cc:141
-#: rc.cpp:658
+#: plugins/defaultdockers/defaultdockers.cc:121 rc.cpp:658
 #, no-c-format
 msgid "Overview"
 msgstr "Trosolwg"
@@ -2248,9 +2247,7 @@ msgid "Fill"
 msgstr "Llenwi"
 
 #. i18n: file ./plugins/performancetest/wdg_perftest.ui line 71
-#: core/kis_docker_manager.cc:452 core/kis_docker_manager.cc:458
-#: core/kis_docker_manager.cc:463 plugins/defaultdockers/defaultdockers.cc:246
-#: rc.cpp:814
+#: plugins/defaultdockers/defaultdockers.cc:224 rc.cpp:814
 #, fuzzy, no-c-format
 msgid "Gradients"
 msgstr "Graddfa:"
@@ -2268,8 +2265,7 @@ msgid "Shapes"
 msgstr "Eglurdeb:"
 
 #. i18n: file ./plugins/performancetest/wdg_perftest.ui line 104
-#: core/kis_docker_manager.cc:230 core/kis_docker_manager.cc:280
-#: core/kis_docker_manager.cc:333 core/kis_view.cc:243 rc.cpp:823
+#: core/kis_view.cc:243 rc.cpp:823
 #, no-c-format
 msgid "Layers"
 msgstr "Haenau"
@@ -3125,7 +3121,7 @@ msgstr "Ychwanegu Mwgwd"
 msgid "Remove Mask"
 msgstr "Gwaredu Mwgwd"
 
-#: ui/kis_layerbox.cc:471
+#: ui/kis_layerbox.cc:477
 #, c-format
 msgid "Can't find %1"
 msgstr "Methu dod o hyd i %1"
@@ -3133,7 +3129,7 @@ msgstr "Methu dod o hyd i %1"
 #: plugins/defaultdockers/kis_channelview.cc:160
 #: plugins/defaultdockers/kis_channelview.cc:168
 #: plugins/defaultdockers/kis_channelview.cc:173
-#: plugins/defaultdockers/kis_channelview.cc:180 ui/kis_layerbox.cc:472
+#: plugins/defaultdockers/kis_channelview.cc:180 ui/kis_layerbox.cc:478
 msgid "Canvas"
 msgstr "Cynfas"
 
@@ -3190,9 +3186,7 @@ msgstr "Dadwneud dyfnder mewn cof"
 msgid "Preferences"
 msgstr "Hoffterau"
 
-#: core/kis_docker_manager.cc:222 core/kis_docker_manager.cc:223
-#: core/kis_docker_manager.cc:274 core/kis_docker_manager.cc:299
-#: plugins/defaultdockers/defaultdockers.cc:123 ui/kis_dlg_preferences.cc:279
+#: ui/kis_dlg_preferences.cc:279
 msgid "General"
 msgstr "Cyffredin"
 
@@ -3261,6 +3255,21 @@ msgstr "Trawsnewid yr haen gyfredol"
 msgid "Shade or unshade the palette"
 msgstr ""
 
+#: core/kis_layer.cc:88
+#, fuzzy
+msgid "Link Layer"
+msgstr "&Cysylltu/Dadgysylltu Haen"
+
+#: core/kis_layer.cc:125
+#, fuzzy
+msgid "Lock Layer"
+msgstr "Gostwng Haen"
+
+#: core/kis_layer.cc:162
+#, fuzzy
+msgid "Layer Opacity"
+msgstr "Copio didreiddiad"
+
 #: core/kis_doc.cc:86
 msgid "Rename Image"
 msgstr "Ailenwi Delwedd"
@@ -3295,148 +3304,6 @@ msgstr "Didreiddiad: "
 msgid "Mode: "
 msgstr "Modd: "
 
-#: core/kis_docker_manager.cc:222 core/kis_docker_manager.cc:223
-#: core/kis_docker_manager.cc:274 core/kis_docker_manager.cc:291
-msgid "Tools"
-msgstr "Offer"
-
-#: core/kis_docker_manager.cc:231
-#, fuzzy
-msgid "&Layers"
-msgstr "Haenau"
-
-#: core/kis_docker_manager.cc:237 core/kis_docker_manager.cc:262
-#, fuzzy
-msgid "Brush Shapes"
-msgstr "Brwsh"
-
-#: core/kis_docker_manager.cc:238
-#, fuzzy
-msgid "&Shapes"
-msgstr "Eglurdeb:"
-
-#: core/kis_docker_manager.cc:244 core/kis_docker_manager.cc:265
-msgid "Fills"
-msgstr ""
-
-#: core/kis_docker_manager.cc:246
-#, fuzzy
-msgid "&Fills"
-msgstr "Erfyn &Llenwi"
-
-#: core/kis_docker_manager.cc:252 core/kis_docker_manager.cc:277
-msgid "Color Manager"
-msgstr "Rheolydd Lliw"
-
-#: core/kis_docker_manager.cc:253
-msgid "&Colors"
-msgstr "&Lliwiau"
-
-#: core/kis_docker_manager.cc:267 core/kis_docker_manager.cc:658
-#, fuzzy
-msgid "Hide &Shapes"
-msgstr "Eglurdeb:"
-
-#: core/kis_docker_manager.cc:268 core/kis_docker_manager.cc:644
-#, fuzzy
-msgid "Hide &Fills"
-msgstr "Erfyn &Llenwi"
-
-#: core/kis_docker_manager.cc:283 core/kis_docker_manager.cc:631
-#, fuzzy
-msgid "Hide &Layers"
-msgstr "&Cuddio/Dangos Haen"
-
-#: core/kis_docker_manager.cc:284 core/kis_docker_manager.cc:604
-#, fuzzy
-msgid "Hide &Color Manager"
-msgstr "Rheolydd &Lliw"
-
-#: core/kis_docker_manager.cc:285 core/kis_docker_manager.cc:616
-#, fuzzy
-msgid "Hide &Tool Properties"
-msgstr "Priodweddau &Offer"
-
-#: core/kis_docker_manager.cc:292 core/kis_docker_manager.cc:671
-#, fuzzy
-msgid "Hide &Tools"
-msgstr "Offer"
-
-#: core/kis_docker_manager.cc:363 plugins/defaultdockers/defaultdockers.cc:149
-msgid "Channels"
-msgstr "Sianeli"
-
-#: core/kis_docker_manager.cc:375 core/kis_docker_manager.cc:381
-#: core/kis_docker_manager.cc:386 plugins/defaultdockers/defaultdockers.cc:232
-msgid "Brushes"
-msgstr "Brwsh"
-
-#: core/kis_docker_manager.cc:397 core/kis_docker_manager.cc:401
-#: core/kis_docker_manager.cc:405 plugins/defaultdockers/defaultdockers.cc:155
-#, fuzzy
-msgid "Autobrush"
-msgstr "brwsh"
-
-#: core/kis_docker_manager.cc:412 core/kis_docker_manager.cc:416
-#: core/kis_docker_manager.cc:420 plugins/defaultdockers/defaultdockers.cc:162
-#, fuzzy
-msgid "Text Brush"
-msgstr "brwsh"
-
-#: core/kis_docker_manager.cc:431 core/kis_docker_manager.cc:436
-#: core/kis_docker_manager.cc:442 plugins/defaultdockers/defaultdockers.cc:215
-msgid "Patterns"
-msgstr "Patrymau"
-
-#: core/kis_docker_manager.cc:472 core/kis_docker_manager.cc:476
-#: core/kis_docker_manager.cc:480 plugins/defaultdockers/defaultdockers.cc:170
-#, fuzzy
-msgid "Autogradient"
-msgstr "Graddfa:"
-
-#: core/kis_docker_manager.cc:490 plugins/defaultdockers/defaultdockers.cc:179
-msgid "HSV"
-msgstr "HSV"
-
-#: core/kis_docker_manager.cc:510 plugins/defaultdockers/defaultdockers.cc:196
-msgid "Gray"
-msgstr "Llwyd"
-
-#: core/kis_docker_manager.cc:520 plugins/defaultdockers/defaultdockers.cc:204
-#, fuzzy
-msgid "Palettes"
-msgstr "Patrymau"
-
-#: core/kis_docker_manager.cc:608
-#, fuzzy
-msgid "Show &Color Manager"
-msgstr "Rheolydd &Lliw"
-
-#: core/kis_docker_manager.cc:621
-#, fuzzy
-msgid "Show &Tool Properties"
-msgstr "Priodweddau &Offer"
-
-#: core/kis_docker_manager.cc:635
-#, fuzzy
-msgid "Show &Layers"
-msgstr "&Cuddio/Dangos Haen"
-
-#: core/kis_docker_manager.cc:648
-#, fuzzy
-msgid "Show &Fills"
-msgstr "Erfyn &Llenwi"
-
-#: core/kis_docker_manager.cc:662
-#, fuzzy
-msgid "Show &Shapes"
-msgstr "Eglurdeb:"
-
-#: core/kis_docker_manager.cc:675
-#, fuzzy
-msgid "Show &Tools"
-msgstr "Dangos Mesuryddion"
-
 #: core/kis_aboutdata.h:31
 msgid "Krita"
 msgstr "Krita"
@@ -3455,7 +3322,7 @@ msgstr ""
 "(h)(c) 2002-2004 Patrick Julien.\n"
 "\n"
 
-#: core/kis_fill_painter.cc:275
+#: core/kis_fill_painter.cc:276
 msgid "Making fill outline..."
 msgstr ""
 
@@ -3475,15 +3342,23 @@ msgstr "Alffa"
 msgid "alpha"
 msgstr "alffa"
 
-#: core/kis_paint_device.cc:70
+#: core/kis_paint_device.cc:100
+msgid "Layer Visibility"
+msgstr ""
+
+#: core/kis_paint_device.cc:138
+#, fuzzy
+msgid "Layer Composite Mode"
+msgstr "Dull cyfansawdd:"
+
+#: core/kis_paint_device.cc:182
 #, fuzzy
 msgid "Moved Layer"
 msgstr "Tynnu Haen"
 
-#: core/kis_paint_device.cc:125
-#: plugins/colorspaceconversion/colorspaceconversion.cc:66
+#: core/kis_paint_device.cc:237
 #, fuzzy
-msgid "&Convert Layer Type..."
+msgid "Convert Layer Type"
 msgstr "M&ewnosod Delwedd fel Haen..."
 
 #: core/kis_composite_op.cc:92
@@ -3804,37 +3679,37 @@ msgstr "Graddio Haen..."
 msgid "The image contains hidden layers that will be lost."
 msgstr ""
 
-#: core/kis_view.cc:1820
+#: core/kis_view.cc:1824
 #, fuzzy
 msgid "Insert as New Layer"
 msgstr "M&ewnosod Delwedd fel Haen..."
 
-#: core/kis_view.cc:1822
+#: core/kis_view.cc:1826
 msgid "Open in New Document"
 msgstr ""
 
-#: core/kis_view.cc:1826
+#: core/kis_view.cc:1830
 #, fuzzy
 msgid "Insert as New Layers"
 msgstr "M&ewnosod Delwedd fel Haen..."
 
-#: core/kis_view.cc:1828
+#: core/kis_view.cc:1832
 msgid "Open in New Documents"
 msgstr ""
 
-#: core/kis_view.cc:1919
+#: core/kis_view.cc:1925
 msgid "Property changes"
 msgstr "Newidiadau priodweddau"
 
-#: core/kis_view.cc:1955 core/kis_view.cc:2002
+#: core/kis_view.cc:1961 core/kis_view.cc:2008
 msgid "Could not add layer to image."
 msgstr "Methwyd ychwanegu haen i ddelwedd."
 
-#: core/kis_view.cc:1955 core/kis_view.cc:2002
+#: core/kis_view.cc:1961 core/kis_view.cc:2008
 msgid "Layer Error"
 msgstr "Gwall Haen"
 
-#: core/kis_view.cc:1994
+#: core/kis_view.cc:2000
 #, fuzzy
 msgid "Duplicate of '%1'"
 msgstr "Dyblygu Delwedd"
@@ -3870,11 +3745,11 @@ msgstr "Cyfuno Haenau Cysylltiedig"
 msgid "&Merge Layers"
 msgstr "Cyfuno &Pob Haen"
 
-#: core/kis_gradient_painter.cc:551
+#: core/kis_gradient_painter.cc:550
 msgid "Rendering gradient..."
 msgstr ""
 
-#: core/kis_gradient_painter.cc:598
+#: core/kis_gradient_painter.cc:597
 #, fuzzy
 msgid "Anti-aliasing gradient..."
 msgstr "Ymgychwyn..."
@@ -4025,16 +3900,16 @@ msgstr "Erfyn Chwyddo"
 msgid "Rectangle tool"
 msgstr "Erfyn Hirsgwar"
 
-#: tools/kis_tool_colorpicker.cc:93
+#: tools/kis_tool_colorpicker.cc:96
 #, fuzzy
 msgid "Tool &Color Picker"
 msgstr "Dewisydd &Lliw"
 
-#: tools/kis_tool_colorpicker.cc:108
+#: tools/kis_tool_colorpicker.cc:111
 msgid "Color Picker"
 msgstr "Dewisydd Lliw"
 
-#: tools/kis_tool_colorpicker.cc:111
+#: tools/kis_tool_colorpicker.cc:114
 msgid "Update current color"
 msgstr "Diweddaru lliw cyfredol"
 
@@ -4086,21 +3961,21 @@ msgstr ""
 msgid "Ellipse tool"
 msgstr "Erfyn Hirgylch"
 
-#: tools/kis_tool_text.cc:76
+#: tools/kis_tool_text.cc:77
 #, fuzzy
 msgid "Font Tool"
 msgstr "Wynebfath: "
 
-#: tools/kis_tool_text.cc:76
+#: tools/kis_tool_text.cc:77
 #, fuzzy
 msgid "Enter text:"
 msgstr "Rhowch enw:"
 
-#: tools/kis_tool_text.cc:130
+#: tools/kis_tool_text.cc:132
 msgid "Font: "
 msgstr "Wynebfath: "
 
-#: tools/kis_tool_text.cc:152
+#: tools/kis_tool_text.cc:154
 msgid "Tool T&ext"
 msgstr ""
 
@@ -4710,6 +4585,46 @@ msgstr "Glas"
 msgid "Alpha"
 msgstr "Alffa"
 
+#: plugins/defaultdockers/defaultdockers.cc:129
+msgid "Channels"
+msgstr "Sianeli"
+
+#: plugins/defaultdockers/defaultdockers.cc:135
+#, fuzzy
+msgid "Autobrush"
+msgstr "brwsh"
+
+#: plugins/defaultdockers/defaultdockers.cc:142
+#, fuzzy
+msgid "Text Brush"
+msgstr "brwsh"
+
+#: plugins/defaultdockers/defaultdockers.cc:150
+#, fuzzy
+msgid "Autogradient"
+msgstr "Graddfa:"
+
+#: plugins/defaultdockers/defaultdockers.cc:159
+msgid "HSV"
+msgstr "HSV"
+
+#: plugins/defaultdockers/defaultdockers.cc:176
+msgid "Gray"
+msgstr "Llwyd"
+
+#: plugins/defaultdockers/defaultdockers.cc:184
+#, fuzzy
+msgid "Palettes"
+msgstr "Patrymau"
+
+#: plugins/defaultdockers/defaultdockers.cc:195
+msgid "Patterns"
+msgstr "Patrymau"
+
+#: plugins/defaultdockers/defaultdockers.cc:211
+msgid "Brushes"
+msgstr "Brwsh"
+
 #: plugins/defaultdockers/kis_brush_chooser.cc:32
 msgid "Spacing: "
 msgstr "Bylchu : "
@@ -4741,6 +4656,11 @@ msgstr "&Symud"
 #: plugins/colorspaceconversion/colorspaceconversion.cc:65
 #, fuzzy
 msgid "&Convert Image Type..."
+msgstr "M&ewnosod Delwedd fel Haen..."
+
+#: plugins/colorspaceconversion/colorspaceconversion.cc:66
+#, fuzzy
+msgid "&Convert Layer Type..."
 msgstr "M&ewnosod Delwedd fel Haen..."
 
 #: plugins/colorspaceconversion/colorspaceconversion.cc:90
@@ -5197,6 +5117,79 @@ msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
 msgstr "kyfieithu@dotmon.com"
+
+#~ msgid "Tools"
+#~ msgstr "Offer"
+
+#, fuzzy
+#~ msgid "&Layers"
+#~ msgstr "Haenau"
+
+#, fuzzy
+#~ msgid "Brush Shapes"
+#~ msgstr "Brwsh"
+
+#, fuzzy
+#~ msgid "&Shapes"
+#~ msgstr "Eglurdeb:"
+
+#, fuzzy
+#~ msgid "&Fills"
+#~ msgstr "Erfyn &Llenwi"
+
+#~ msgid "Color Manager"
+#~ msgstr "Rheolydd Lliw"
+
+#~ msgid "&Colors"
+#~ msgstr "&Lliwiau"
+
+#, fuzzy
+#~ msgid "Hide &Shapes"
+#~ msgstr "Eglurdeb:"
+
+#, fuzzy
+#~ msgid "Hide &Fills"
+#~ msgstr "Erfyn &Llenwi"
+
+#, fuzzy
+#~ msgid "Hide &Layers"
+#~ msgstr "&Cuddio/Dangos Haen"
+
+#, fuzzy
+#~ msgid "Hide &Color Manager"
+#~ msgstr "Rheolydd &Lliw"
+
+#, fuzzy
+#~ msgid "Hide &Tool Properties"
+#~ msgstr "Priodweddau &Offer"
+
+#, fuzzy
+#~ msgid "Hide &Tools"
+#~ msgstr "Offer"
+
+#, fuzzy
+#~ msgid "Show &Color Manager"
+#~ msgstr "Rheolydd &Lliw"
+
+#, fuzzy
+#~ msgid "Show &Tool Properties"
+#~ msgstr "Priodweddau &Offer"
+
+#, fuzzy
+#~ msgid "Show &Layers"
+#~ msgstr "&Cuddio/Dangos Haen"
+
+#, fuzzy
+#~ msgid "Show &Fills"
+#~ msgstr "Erfyn &Llenwi"
+
+#, fuzzy
+#~ msgid "Show &Shapes"
+#~ msgstr "Eglurdeb:"
+
+#, fuzzy
+#~ msgid "Show &Tools"
+#~ msgstr "Dangos Mesuryddion"
 
 #~ msgid "Select Foreground Color..."
 #~ msgstr "Dewis Lliw Blaendir..."
