@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: all2.po\n"
-"POT-Creation-Date: 2005-06-23 01:40+0200\n"
+"POT-Creation-Date: 2005-06-24 01:39+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid ""
 "Your emails"
 msgstr "kyfieithu@dotmon.com"
 
-#: capturedialog.cpp:37 ksniffer.cpp:212
+#: capturedialog.cpp:37 ksniffer.cpp:211
 msgid "New Capture"
 msgstr ""
 
@@ -88,7 +88,7 @@ msgstr ""
 msgid "Start a new network packet-capture session."
 msgstr ""
 
-#: capturedialog.cpp:152 ksniffer.cpp:601
+#: capturedialog.cpp:152 ksniffer.cpp:643
 msgid "This feature is not yet available."
 msgstr ""
 
@@ -194,94 +194,94 @@ msgid ""
 "%1 Information:"
 msgstr ""
 
-#: ksniffer.cpp:89 ksniffer.cpp:378 ksniffer.cpp:392
+#: ksniffer.cpp:88 ksniffer.cpp:377 ksniffer.cpp:391
 msgid "KSniffer - The KDE Network Sniffer"
 msgstr ""
 
-#: ksniffer.cpp:93 ksniffer.cpp:427 ksniffer.cpp:523
+#: ksniffer.cpp:92 ksniffer.cpp:426 ksniffer.cpp:553
 msgid "Ready."
 msgstr "Parod."
 
 #. i18n: file ksnifferui.rc line 5
-#: ksniffer.cpp:146 rc.cpp:3 rc.cpp:12
+#: ksniffer.cpp:145 rc.cpp:3 rc.cpp:12
 #, no-c-format
 msgid "&Capture"
 msgstr ""
 
-#: ksniffer.cpp:202
+#: ksniffer.cpp:201
 msgid ""
 "_: libpcap format is a standard format used by a lot of sniffer programs\n"
 "The file you choose to drag & drop is not in libpcap format!"
 msgstr ""
 
-#: ksniffer.cpp:203
+#: ksniffer.cpp:202
 msgid "Format Error"
 msgstr ""
 
-#: ksniffer.cpp:211
+#: ksniffer.cpp:210
 msgid "<b>New Capture</b><br>Start a new packet-capture session."
 msgstr ""
 
-#: ksniffer.cpp:216
+#: ksniffer.cpp:215
 msgid "<b>Open</b><br>Open a previous packet-capture session file."
 msgstr ""
 
-#: ksniffer.cpp:220
+#: ksniffer.cpp:219
 msgid "<b>Save</b><br>Save the current packet-capture session."
 msgstr ""
 
-#: ksniffer.cpp:225
+#: ksniffer.cpp:224
 msgid ""
 "<b>Save As...</b>"
 "<br>Save into a file the current packet-capture session."
 msgstr ""
 
-#: ksniffer.cpp:229
+#: ksniffer.cpp:228
 msgid "S&top"
 msgstr "S&topio"
 
-#: ksniffer.cpp:233
+#: ksniffer.cpp:232
 msgid "<b>Stop</b><br>Stop the packet-capture session."
 msgstr ""
 
-#: ksniffer.cpp:238
+#: ksniffer.cpp:237
 msgid "<b>Print...</b><br>Print the packet-capture session."
 msgstr ""
 
-#: ksniffer.cpp:243
+#: ksniffer.cpp:242
 msgid "<b>Quit</b><br>Stop the packet-capture session and quit from KSniffer."
 msgstr ""
 
-#: ksniffer.cpp:332
+#: ksniffer.cpp:331
 msgid ""
 "<qt>Closing the main window will keep KSniffer running in the system tray. Use "
 "'Quit' from the system tray menu to quit the application.</qt>"
 msgstr ""
 
-#: ksniffer.cpp:334
+#: ksniffer.cpp:333
 msgid "Docking in System Tray"
 msgstr ""
 
-#: ksniffer.cpp:351
+#: ksniffer.cpp:350
 msgid "New Capture: select the network interface to start sniffing packets."
 msgstr ""
 
-#: ksniffer.cpp:359
+#: ksniffer.cpp:358
 msgid ""
 "<p>Packet-capture session data available. If you want to start a"
 "<br>New Capture Session you are going to lose all captured data."
 "<br>Do you really want to continue?</p>"
 msgstr ""
 
-#: ksniffer.cpp:394
+#: ksniffer.cpp:393
 msgid "Sniffing network by \"%1\" interface."
 msgstr ""
 
-#: ksniffer.cpp:412
+#: ksniffer.cpp:411
 msgid "Sniffing"
 msgstr ""
 
-#: ksniffer.cpp:413
+#: ksniffer.cpp:412
 msgid "<p>You selected <b>%1</b> interface.<br>Now starting to sniff.</p>"
 msgstr ""
 
@@ -291,58 +291,79 @@ msgid ""
 "Select the libpcap format file to open."
 msgstr ""
 
-#: ksniffer.cpp:465
+#: ksniffer.cpp:464
 msgid "Open file"
 msgstr "Agor ffeil"
 
-#: ksniffer.cpp:478
-msgid ""
-"_: libpcap format is a standard format used by a lot of sniffer programs\n"
-"%1 is not a libpcap format file."
+#: ksniffer.cpp:484
+msgid "Unable to access to the temporary file '%1'. %2."
 msgstr ""
 
 #: ksniffer.cpp:485
+msgid "Load Failed"
+msgstr ""
+
+#: ksniffer.cpp:490
+msgid "Error during loading. Could not open '%1' temporary file for writing"
+msgstr ""
+
+#: ksniffer.cpp:491 ksniffer.cpp:496
+msgid "Load Captured File"
+msgstr ""
+
+#: ksniffer.cpp:495
+#, c-format
+msgid "Error during loading. Could not create temporary file: %1."
+msgstr ""
+
+#: ksniffer.cpp:505
+msgid ""
+"_: libpcap format is a standard format used by a lot of sniffer programs\n"
+"<b>%1</b> is not a libpcap format file."
+msgstr ""
+
+#: ksniffer.cpp:515
 msgid ""
 "<p>Packet-capture session data available. If you want to load a"
 "<br>File Captured Session you are going to lose all captured data."
 "<br>Do you really want to continue?</p>"
 msgstr ""
 
-#: ksniffer.cpp:558
+#: ksniffer.cpp:600
 msgid "Save captured-packets as..."
 msgstr ""
 
-#: ksniffer.cpp:576
+#: ksniffer.cpp:618
 msgid "%1 not saved!"
 msgstr ""
 
-#: ksniffer.cpp:576
+#: ksniffer.cpp:618
 msgid "Saving..."
 msgstr ""
 
-#: ksniffer.cpp:610
+#: ksniffer.cpp:652
 msgid "You got no packets."
 msgstr ""
 
-#: ksniffer.cpp:626
+#: ksniffer.cpp:668
 msgid "Stopped sniffing. Now, ready again."
 msgstr ""
 
-#: ksniffer.cpp:644
+#: ksniffer.cpp:686
 msgid "You have got data maybe you want to save them."
 msgstr ""
 
-#: ksniffer.cpp:648
+#: ksniffer.cpp:690
 msgid ""
 "<p>Quitting KSniffer you are going to lost Captured-Packets."
 "<br>Do you want to save them now?</p>"
 msgstr ""
 
-#: ksniffer.cpp:649
+#: ksniffer.cpp:691
 msgid "Save Captured-Packets"
 msgstr ""
 
-#: ksniffer.cpp:752
+#: ksniffer.cpp:794
 msgid "Saved captured-packets."
 msgstr ""
 
@@ -363,7 +384,7 @@ msgid "KSniffer"
 msgstr ""
 
 #: main.cpp:51
-msgid "Original Author && Current Maintainer"
+msgid "Original Author && Core Developer && Current Maintainer"
 msgstr ""
 
 #: main.cpp:52
