@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: all2.po\n"
-"POT-Creation-Date: 2005-06-24 01:39+0200\n"
+"POT-Creation-Date: 2005-06-25 01:39+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -188,7 +188,7 @@ msgstr ""
 msgid "Protocol Information: %1"
 msgstr "gwybodaeth"
 
-#: kmainwidget.cpp:276
+#: kmainwidget.cpp:286
 msgid ""
 "_: specific x protocol information\n"
 "%1 Information:"
@@ -296,24 +296,20 @@ msgid "Open file"
 msgstr "Agor ffeil"
 
 #: ksniffer.cpp:484
-msgid "Unable to access to the temporary file '%1'. %2."
+msgid "Unable to access to the temporary file '%1': %2."
 msgstr ""
 
-#: ksniffer.cpp:485
+#: ksniffer.cpp:485 ksniffer.cpp:491 ksniffer.cpp:496
 msgid "Load Failed"
 msgstr ""
 
 #: ksniffer.cpp:490
-msgid "Error during loading. Could not open '%1' temporary file for writing"
-msgstr ""
-
-#: ksniffer.cpp:491 ksniffer.cpp:496
-msgid "Load Captured File"
+msgid "Error during loading. Could not open '%1' temporary file for writing."
 msgstr ""
 
 #: ksniffer.cpp:495
 #, c-format
-msgid "Error during loading. Could not create temporary file: %1."
+msgid "Loading error. Could not create temporary file: %1."
 msgstr ""
 
 #: ksniffer.cpp:505
@@ -355,7 +351,7 @@ msgstr ""
 
 #: ksniffer.cpp:690
 msgid ""
-"<p>Quitting KSniffer you are going to lost Captured-Packets."
+"<p>Quiting KSniffer will cause the current packets to be lost."
 "<br>Do you want to save them now?</p>"
 msgstr ""
 
@@ -384,7 +380,7 @@ msgid "KSniffer"
 msgstr ""
 
 #: main.cpp:51
-msgid "Original Author && Core Developer && Current Maintainer"
+msgid "Original Author, Core Developer and Current Maintainer"
 msgstr ""
 
 #: main.cpp:52
@@ -557,62 +553,107 @@ msgid ""
 "Checksum: 0x%1"
 msgstr "gwybodaeth"
 
-#: protocols/ip-protocol.cpp:152
+#: protocols/ip-protocol.cpp:88 protocols/ip-protocol.cpp:104
+#: protocols/ip-protocol.cpp:120
+msgid "Set"
+msgstr ""
+
+#: protocols/ip-protocol.cpp:90 protocols/ip-protocol.cpp:106
+#: protocols/ip-protocol.cpp:122
+msgid "Not set"
+msgstr ""
+
+#: protocols/ip-protocol.cpp:209
 #, fuzzy, c-format
 msgid ""
 "_: IP protocol field\n"
 "Version: %1"
 msgstr "gwybodaeth"
 
-#: protocols/ip-protocol.cpp:153
+#: protocols/ip-protocol.cpp:210
 #, c-format
 msgid ""
 "_: IP protocol field\n"
 "Header Length: %1"
 msgstr ""
 
-#: protocols/ip-protocol.cpp:154
+#: protocols/ip-protocol.cpp:211
 #, c-format
 msgid ""
 "_: IP protocol field\n"
 "Total Length: %1"
 msgstr ""
 
-#: protocols/ip-protocol.cpp:155
+#: protocols/ip-protocol.cpp:212
 #, fuzzy
 msgid ""
 "_: IP protocol field\n"
 "Identification: 0x%1 (%2)"
 msgstr "gwybodaeth"
 
-#: protocols/ip-protocol.cpp:156
+#: protocols/ip-protocol.cpp:214
+#, fuzzy
+msgid ""
+"_: IP protocol field: flags\n"
+"Flags:"
+msgstr "gwybodaeth"
+
+#: protocols/ip-protocol.cpp:215
+#, fuzzy, c-format
+msgid ""
+"_: IP protocol field: flags (R)\n"
+"Reserved bit: %1"
+msgstr "gwybodaeth"
+
+#: protocols/ip-protocol.cpp:216
+#, fuzzy, c-format
+msgid ""
+"_: IP protocol field: flags (DF)\n"
+"Don't fragment: %1"
+msgstr "gwybodaeth"
+
+#: protocols/ip-protocol.cpp:217
+#, fuzzy, c-format
+msgid ""
+"_: IP protocol field: flags (MF)\n"
+"More fragments: %1"
+msgstr "gwybodaeth"
+
+#: protocols/ip-protocol.cpp:219
+#, fuzzy, c-format
+msgid ""
+"_: IP protocol field\n"
+"Fragment Offset: %1"
+msgstr "gwybodaeth"
+
+#: protocols/ip-protocol.cpp:220
 #, c-format
 msgid ""
 "_: IP protocol field\n"
 "Time To Live: %1"
 msgstr ""
 
-#: protocols/ip-protocol.cpp:157
+#: protocols/ip-protocol.cpp:221
 msgid ""
 "_: IP protocol field\n"
 "Protocol: %1 (0x%2)"
 msgstr ""
 
-#: protocols/ip-protocol.cpp:158
+#: protocols/ip-protocol.cpp:222
 #, c-format
 msgid ""
 "_: IP protocol field\n"
 "Header Checksum: 0x%1"
 msgstr ""
 
-#: protocols/ip-protocol.cpp:159
+#: protocols/ip-protocol.cpp:223
 #, c-format
 msgid ""
 "_: IP protocol field\n"
 "Source Address: %1"
 msgstr ""
 
-#: protocols/ip-protocol.cpp:160
+#: protocols/ip-protocol.cpp:224
 #, fuzzy, c-format
 msgid ""
 "_: IP protocol field\n"

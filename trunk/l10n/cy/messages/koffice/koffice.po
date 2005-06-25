@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
-"POT-Creation-Date: 2005-06-23 01:31+0200\n"
+"POT-Creation-Date: 2005-06-25 01:30+0200\n"
 "PO-Revision-Date: 2004-09-07 14:22+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -289,7 +289,7 @@ msgid "Symbol Names"
 msgstr "Enwau Symbolau"
 
 #: kformula/kformuladocument.cc:646 kotext/koSearchDia.cc:629
-#: kotext/kotextformat.cc:1560
+#: kotext/kotextformat.cc:1561
 msgid "Normal"
 msgstr "Arferol"
 
@@ -2750,7 +2750,7 @@ msgid "Autoinclude"
 msgstr "Hunan-gynnwys"
 
 #: kotext/koAutoFormatDia.cc:180 kotext/koAutoFormatDia.cc:1162
-#: kotext/koFontDia.cc:1157
+#: kotext/koFontDia.cc:53
 msgid "&Reset"
 msgstr "&Ailosod"
 
@@ -3117,104 +3117,29 @@ msgstr "Penodwch enw i'r arddull newydd:"
 msgid "Name already exists! Please choose another name"
 msgstr "Mae'r enw yn bodoli eisoes!  Dewiswch enw arall."
 
-#: kotext/koFontDia.cc:56
-#, fuzzy
-msgid ""
-"_: Test string for shadow dialog\n"
-"KOffice"
-msgstr "KOffice"
-
-#: kotext/koFontDia.cc:80
-msgid "Shadow"
-msgstr "Cysgod"
-
-#: kotext/koFontDia.cc:85 kotext/koParagDia.cc:1307
-msgid "Co&lor:"
-msgstr "&Lliw:"
-
-#: kotext/koFontDia.cc:94
-msgid "&Distance (pt):"
-msgstr "&Pellter (pt):"
-
-#: kotext/koFontDia.cc:99
-msgid "pt"
-msgstr "pt"
-
-#: kotext/koFontDia.cc:104
-msgid "Di&rection:"
-msgstr "Cy&feiriad:"
-
-#: kotext/koFontDia.cc:289
-msgid "S&hadow"
-msgstr "Cys&god"
-
-#: kotext/koFontDia.cc:392
-msgid "Colors"
-msgstr "Lliwiau"
-
-#: kotext/koFontDia.cc:395 kotext/koFontDia.cc:437
-msgid "Change Co&lor..."
-msgstr "Newid &Lliw..."
-
-#: kotext/koFontDia.cc:398
-msgid "Change Bac&kground Color..."
-msgstr "Newid Lliw &Cefndir..."
-
-#: kotext/koFontDia.cc:413
-msgid "Font &Effects"
-msgstr "Effeithiau &Wynebfath"
-
-#: kotext/koFontDia.cc:423
-msgid "&Underlining:"
-msgstr "&Tanlinellu:"
-
-#: kotext/koFontDia.cc:441
-msgid "&Strikethrough:"
-msgstr "T&rwylinellu:"
-
-#: kotext/koFontDia.cc:453
-msgid "&Word by word"
-msgstr "&Fesul gair"
-
-#: kotext/koFontDia.cc:456 kotext/kovariable.cc:2295
-msgid "Position"
-msgstr "Lleoliad"
-
-#: kotext/koFontDia.cc:464
-msgid "Su&perscript"
-msgstr "&Uwchysgrif"
-
-#: kotext/koFontDia.cc:467
-msgid "Su&bscript"
-msgstr "&Isysgrif"
-
-#: kotext/koFontDia.cc:470
-msgid "Relative &size:"
-msgstr "&Maint cymharol:"
-
-#: kotext/koFontDia.cc:482
-msgid "Offse&t from baseline:"
-msgstr "Atre&d o'r gwaelodlin:"
-
-#: kotext/koFontDia.cc:503
-msgid "A&ttribute:"
-msgstr "Pri&odoledd:"
-
-#: kotext/koFontDia.cc:513
-msgid "Capitalization"
-msgstr "Priflythrennu"
-
-#: kotext/koFontDia.cc:522
-msgid "La&nguage:"
-msgstr "I&aith:"
-
-#: kotext/koFontDia.cc:546
-msgid "Auto h&yphenation"
-msgstr "Hunan-&gysylltnodi"
-
-#: kotext/koFontDia.cc:1133 kotext/koFontDia.cc:1146
+#: kotext/kfontdialog_local.cpp:752 kotext/koFontDia.cc:50
 msgid "Select Font"
 msgstr "Dewis Wynebfath"
+
+#: kotext/koFontDia.cc:71 kotext/koStylist.cc:683
+#, fuzzy
+msgid "Highlighting"
+msgstr "Amlygu Cystrawen"
+
+#: kotext/koFontDia.cc:83 kotext/koStylist.cc:682
+#, fuzzy
+msgid "Decoration"
+msgstr "Disgrifiad:"
+
+#: kotext/koFontDia.cc:93 kotext/koStylist.cc:684
+#, fuzzy
+msgid "Layout"
+msgstr "Haenlun Dudalen"
+
+#: kotext/koFontDia.cc:101 kotext/koStylist.cc:685
+#, fuzzy
+msgid "Language"
+msgstr "Iaith:"
 
 #: kotext/koParagDia.cc:56
 msgid "St&yle"
@@ -3433,6 +3358,10 @@ msgstr "Cyffredinol"
 msgid "St&yle:"
 msgstr "&Arddull:"
 
+#: kotext/koParagDia.cc:1307
+msgid "Co&lor:"
+msgstr "&Lliw:"
+
 #: kotext/koParagDia.cc:1333
 #, fuzzy
 msgid "Merge with next paragraph"
@@ -3543,7 +3472,7 @@ msgstr "Amnewid Testun"
 msgid "Family:"
 msgstr "Teulu:"
 
-#: kotext/koSearchDia.cc:554
+#: kotext/kfontdialog_local.cpp:188 kotext/koSearchDia.cc:554
 msgid "Size:"
 msgstr "Maint:"
 
@@ -3678,6 +3607,15 @@ msgstr "Newid Isfath Newidyn"
 msgid "Change Variable Format"
 msgstr "Newid Fformat Newidyn"
 
+#: kotext/kofontdiapreview.cc:40 kotext/kofontdiapreview.cc:41
+#, fuzzy
+msgid "The quick brown dog jumps over the lazy cat."
+msgstr "Mae'r gwr o Fôn wedi cyrraedd heddiw."
+
+#: kotext/kofontdiapreview.cc:196
+msgid "Font too large for the preview pane"
+msgstr ""
+
 #: kotext/koimportstyledia.cc:34
 #, fuzzy
 msgid "Import Styles"
@@ -3703,43 +3641,43 @@ msgstr "Arferol"
 msgid "Numbering Style for %1"
 msgstr ""
 
-#: kotext/kotextformat.cc:1539
+#: kotext/kotextformat.cc:1540
 msgid ""
 "_: Underline Style\n"
 "None"
 msgstr ""
 
-#: kotext/kotextformat.cc:1540 kotext/kotextformat.cc:1551
+#: kotext/kotextformat.cc:1541 kotext/kotextformat.cc:1552
 msgid "Single"
 msgstr "Sengl"
-
-#: kotext/kotextformat.cc:1541 kotext/kotextformat.cc:1552
-msgid "Simple Bold"
-msgstr "Trwm Syml"
 
 #: kotext/kotextformat.cc:1542 kotext/kotextformat.cc:1553
 msgid "Double"
 msgstr "Dwbl"
 
-#: kotext/kotextformat.cc:1543
+#: kotext/kotextformat.cc:1543 kotext/kotextformat.cc:1554
+msgid "Simple Bold"
+msgstr "Trwm Syml"
+
+#: kotext/kotextformat.cc:1544
 msgid "Wave"
 msgstr "Ton"
 
-#: kotext/kotextformat.cc:1550
+#: kotext/kotextformat.cc:1551
 msgid ""
 "_: Strikeout Style\n"
 "None"
 msgstr ""
 
-#: kotext/kotextformat.cc:1561
+#: kotext/kotextformat.cc:1562
 msgid "Uppercase"
 msgstr "Priflythrennau"
 
-#: kotext/kotextformat.cc:1562
+#: kotext/kotextformat.cc:1563
 msgid "Lowercase"
 msgstr "Islythrennau"
 
-#: kotext/kotextformat.cc:1563
+#: kotext/kotextformat.cc:1564
 msgid "Small Caps"
 msgstr "Priflythrennau Bach"
 
@@ -4081,6 +4019,10 @@ msgstr "Blaenlythrennau"
 #: kotext/kovariable.cc:2006
 msgid "Field"
 msgstr "Maes"
+
+#: kotext/kovariable.cc:2295
+msgid "Position"
+msgstr "Lleoliad"
 
 #: kotext/kovariable.cc:2296
 msgid "Company"
@@ -4543,6 +4485,122 @@ msgstr ""
 msgid "Name"
 msgstr "Enw:"
 
+#: kotext/kfontdialog_local.cpp:106
+msgid "Here you can choose the font to be used."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:118
+#, fuzzy
+msgid "Requested Font"
+msgstr "Dewis Wynebfath"
+
+#: kotext/kfontdialog_local.cpp:141
+#, fuzzy
+msgid "Change font family?"
+msgstr "Newid Teulu Llythrennau"
+
+#: kotext/kfontdialog_local.cpp:143
+msgid "Enable this checkbox to change the font family settings."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:149
+#, fuzzy
+msgid "Font:"
+msgstr "Gwlad:"
+
+#: kotext/kfontdialog_local.cpp:156
+#, fuzzy
+msgid "Font style"
+msgstr "Arddull Wynebfath"
+
+#: kotext/kfontdialog_local.cpp:160
+#, fuzzy
+msgid "Change font style?"
+msgstr "Newid Arddull Llythyren"
+
+#: kotext/kfontdialog_local.cpp:162
+msgid "Enable this checkbox to change the font style settings."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:168
+#, fuzzy
+msgid "Font style:"
+msgstr "Arddull Wynebfath"
+
+#: kotext/kfontdialog_local.cpp:176
+#, fuzzy
+msgid "Size"
+msgstr "Maint:"
+
+#: kotext/kfontdialog_local.cpp:180
+#, fuzzy
+msgid "Change font size?"
+msgstr "Newid Prid/Islythrennau"
+
+#: kotext/kfontdialog_local.cpp:182
+msgid "Enable this checkbox to change the font size settings."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:204
+msgid "Here you can choose the font family to be used."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:226
+msgid "Here you can choose the font style to be used."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:229 kotext/kfontdialog_local.cpp:484
+#: kotext/kfontdialog_local.cpp:486 kotext/kfontdialog_local.cpp:495
+#: kotext/kfontdialog_local.cpp:496
+msgid "Regular"
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:231
+#, fuzzy
+msgid "Bold"
+msgstr "Trwm:"
+
+#: kotext/kfontdialog_local.cpp:232
+#, fuzzy
+msgid "Bold Italic"
+msgstr "Italig:"
+
+#: kotext/kfontdialog_local.cpp:249
+#, fuzzy
+msgid "Relative"
+msgstr "&Maint cymharol:"
+
+#: kotext/kfontdialog_local.cpp:251
+msgid "Font size<br><i>fixed</i> or <i>relative</i><br>to environment"
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:253
+msgid ""
+"Here you can switch between fixed font size and font size to be calculated "
+"dynamically and adjusted to changing environment (e.g. widget dimensions, paper "
+"size)."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:277
+msgid "Here you can choose the font size to be used."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:300
+#, fuzzy
+msgid "The Quick Brown Fox Jumps Over The Lazy Dog"
+msgstr "Mae'r gwr o Fôn wedi cyrraedd heddiw."
+
+#: kotext/kfontdialog_local.cpp:305
+msgid ""
+"This sample text illustrates the current settings. You may edit it to test "
+"special characters."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:314 kotext/kfontdialog_local.cpp:324
+#, fuzzy
+msgid "Actual Font"
+msgstr "Dewis Wynebfath"
+
 #: _translatorinfo.cpp:1
 msgid ""
 "_: NAME OF TRANSLATORS\n"
@@ -4554,6 +4612,69 @@ msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
 msgstr "kyfieithu@dotmon.com"
+
+#, fuzzy
+#~ msgid ""
+#~ "_: Test string for shadow dialog\n"
+#~ "KOffice"
+#~ msgstr "KOffice"
+
+#~ msgid "Shadow"
+#~ msgstr "Cysgod"
+
+#~ msgid "&Distance (pt):"
+#~ msgstr "&Pellter (pt):"
+
+#~ msgid "pt"
+#~ msgstr "pt"
+
+#~ msgid "Di&rection:"
+#~ msgstr "Cy&feiriad:"
+
+#~ msgid "S&hadow"
+#~ msgstr "Cys&god"
+
+#~ msgid "Colors"
+#~ msgstr "Lliwiau"
+
+#~ msgid "Change Co&lor..."
+#~ msgstr "Newid &Lliw..."
+
+#~ msgid "Change Bac&kground Color..."
+#~ msgstr "Newid Lliw &Cefndir..."
+
+#~ msgid "Font &Effects"
+#~ msgstr "Effeithiau &Wynebfath"
+
+#~ msgid "&Underlining:"
+#~ msgstr "&Tanlinellu:"
+
+#~ msgid "&Strikethrough:"
+#~ msgstr "T&rwylinellu:"
+
+#~ msgid "&Word by word"
+#~ msgstr "&Fesul gair"
+
+#~ msgid "Su&perscript"
+#~ msgstr "&Uwchysgrif"
+
+#~ msgid "Su&bscript"
+#~ msgstr "&Isysgrif"
+
+#~ msgid "Offse&t from baseline:"
+#~ msgstr "Atre&d o'r gwaelodlin:"
+
+#~ msgid "A&ttribute:"
+#~ msgstr "Pri&odoledd:"
+
+#~ msgid "Capitalization"
+#~ msgstr "Priflythrennu"
+
+#~ msgid "La&nguage:"
+#~ msgstr "I&aith:"
+
+#~ msgid "Auto h&yphenation"
+#~ msgstr "Hunan-&gysylltnodi"
 
 #~ msgid "Internal error: not a KOffice application, saving not allowed."
 #~ msgstr "Gwall mewnol: nid rhaglen KOffice yw hon, ni chaniateir ei chadw."
@@ -5831,9 +5952,6 @@ msgstr "kyfieithu@dotmon.com"
 
 #~ msgid "Al&ignment"
 #~ msgstr "A&linio"
-
-#~ msgid "The quick brown fox jumps over the lazy dog"
-#~ msgstr "Mae'r gwr o Fôn wedi cyrraedd heddiw."
 
 #~ msgid ""
 #~ "_: default spelling dictionary\n"
