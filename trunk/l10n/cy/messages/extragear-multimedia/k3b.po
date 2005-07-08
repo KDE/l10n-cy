@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-1/k3b.po\n"
-"POT-Creation-Date: 2005-07-06 01:41+0200\n"
+"POT-Creation-Date: 2005-07-08 01:42+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -57,6 +57,19 @@ msgstr ""
 #, fuzzy
 msgid "Files Exist"
 msgstr "Ffeil yn Bodoli"
+
+#: k3b.cpp:924 k3bdebuggingoutputdialog.cpp:142 k3bemptydiscwaiter.cpp:327
+#: k3bemptydiscwaiter.cpp:397 k3bwritingmodewidget.cpp:125
+#: k3bwritingmodewidget.cpp:149 k3bwritingmodewidget.cpp:179
+#: misc/k3bcdcopydialog.cpp:280 misc/k3bcdcopydialog.cpp:288
+#: misc/k3bdvdcopydialog.cpp:222 projects/k3bdataburndialog.cpp:196
+#: projects/k3bmovixburndialog.cpp:247 projects/k3bmovixdvdburndialog.cpp:206
+#: projects/k3bvcdburndialog.cpp:585
+#: rip/k3baudioprojectconvertingdialog.cpp:168
+#: rip/k3baudiorippingdialog.cpp:249 rip/k3bdvdrippingprocess.cpp:413
+#: rip/k3bdvdrippingprocess.cpp:434 videoEncoding/k3bdivxview.cpp:132
+msgid "Overwrite"
+msgstr "Trosysgrifo"
 
 #: rip/k3baudioconvertingoptionwidget.cpp:122
 #: rip/k3baudioprojectconvertingdialog.cpp:248
@@ -255,6 +268,14 @@ msgstr ""
 msgid "Found Cd-Text"
 msgstr ""
 
+#: rip/k3baudiocdview.cpp:212
+msgid "Use CD-Text"
+msgstr ""
+
+#: rip/k3baudiocdview.cpp:213
+msgid "Query CDDB"
+msgstr ""
+
 #: rip/k3baudiocdview.cpp:236
 msgid "Edit cddb Info"
 msgstr ""
@@ -388,11 +409,6 @@ msgstr ""
 #: rip/k3bdvdrippingprocess.cpp:413
 msgid "%1 already exists."
 msgstr ""
-
-#: k3bwritingmodewidget.cpp:125 k3bwritingmodewidget.cpp:149
-#: k3bwritingmodewidget.cpp:179 rip/k3bdvdrippingprocess.cpp:413
-msgid "Overwrite"
-msgstr "Trosysgrifo"
 
 #: rip/k3bdvdrippingprocess.cpp:433
 msgid "Log file already exists. Overwrite?"
@@ -1443,6 +1459,10 @@ msgid ""
 "but will work fine.)"
 msgstr ""
 
+#: misc/k3bisoimagewritingdialog.cpp:233 projects/k3bprojectburndialog.cpp:66
+msgid "Burn"
+msgstr ""
+
 #: misc/k3bisoimagewritingdialog.cpp:354
 msgid "Not an Iso9660 image"
 msgstr ""
@@ -1687,6 +1707,11 @@ msgstr ""
 #: k3bjobprogressdialog.cpp:484
 msgid "Do you really want to cancel?"
 msgstr ""
+
+#: k3bjobprogressdialog.cpp:484
+#, fuzzy
+msgid "Cancel Confirmation"
+msgstr "Gwiriad"
 
 #: k3bjobprogressdialog.cpp:522
 msgid "Elapsed time: %1 h"
@@ -2471,6 +2496,11 @@ msgstr ""
 msgid "Found %1 media in %2 - %3. Should it be formatted?"
 msgstr ""
 
+#: k3bemptydiscwaiter.cpp:432
+#, fuzzy
+msgid "Format"
+msgstr "Ffurf1"
+
 #: k3bemptydiscwaiter.cpp:453
 msgid "Formatting DVD-RW"
 msgstr ""
@@ -2482,6 +2512,15 @@ msgstr ""
 #: k3bemptydiscwaiter.cpp:509
 msgid "Found Rewritable Disk"
 msgstr ""
+
+#: k3bemptydiscwaiter.cpp:509
+msgid "&Erase"
+msgstr ""
+
+#: k3bemptydiscwaiter.cpp:509
+#, fuzzy
+msgid "E&ject"
+msgstr "Allfwrw"
 
 #: k3bemptydiscwaiter.cpp:567
 msgid "Waiting for Medium"
@@ -3531,6 +3570,11 @@ msgstr ""
 #: option/k3bmiscoptiontab.cpp:102
 msgid "Create Directory"
 msgstr ""
+
+#: option/k3bmiscoptiontab.cpp:102
+#, fuzzy
+msgid "Create"
+msgstr "Paramedrau"
 
 #: option/k3bmiscoptiontab.cpp:115
 msgid ""
@@ -7363,8 +7407,12 @@ msgstr ""
 
 #: projects/k3bdataurladdingdialog.cpp:299
 #, fuzzy
-msgid "Hidden files"
+msgid "Hidden Files"
 msgstr "Agor Ffeil"
+
+#: projects/k3bdataurladdingdialog.cpp:299
+msgid "Do Not Add"
+msgstr ""
 
 #: projects/k3bdataurladdingdialog.cpp:319
 msgid ""
@@ -7374,8 +7422,12 @@ msgstr ""
 
 #: projects/k3bdataurladdingdialog.cpp:321
 #, fuzzy
-msgid "System files"
+msgid "System Files"
 msgstr "Cysawd"
+
+#: projects/k3bdataurladdingdialog.cpp:321
+msgid "Do No Add"
+msgstr ""
 
 #: projects/k3bdatamultisessioncombobox.cpp:38
 msgid "Select the Multisession Mode for the project."
@@ -8099,10 +8151,6 @@ msgstr ""
 msgid "Saves the settings to the project and closes the burn dialog."
 msgstr ""
 
-#: projects/k3bprojectburndialog.cpp:66
-msgid "Burn"
-msgstr ""
-
 #: projects/k3bprojectburndialog.cpp:150
 msgid ""
 "K3b did not find a suitable writer. You will only be able to create an image."
@@ -8666,9 +8714,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Unable to Close the Tray"
 #~ msgstr "Methru creu cyfeiriadur %1"
-
-#~ msgid "Confirmation"
-#~ msgstr "Gwiriad"
 
 #~ msgid "Output"
 #~ msgstr "Allbwn"
