@@ -17,7 +17,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs\n"
-"POT-Creation-Date: 2005-07-08 01:30+0200\n"
+"POT-Creation-Date: 2005-07-09 01:30+0200\n"
 "PO-Revision-Date: 2005-01-28 17:54+0000\n"
 "Last-Translator: Kevin Donnelly <kevin@dotmon.com>\n"
 "Language-Team: Cymraeg\n"
@@ -867,7 +867,7 @@ msgstr "Terfynu"
 msgid "&Quit"
 msgstr "&Gorffen"
 
-#: common_texts.cpp:88 kdecore/kstdaccel.cpp:84
+#: common_texts.cpp:88 kdecore/kstdaccel.cpp:84 kded/kbuildsycoca.cpp:781
 msgid "Reload"
 msgstr "Ail-lwytho"
 
@@ -1004,8 +1004,10 @@ msgstr "cysylltiedig yn lleol"
 msgid "Browse..."
 msgstr "Pori..."
 
-#: common_texts.cpp:137 kdecore/kkeyserver_x11.cpp:127
-#: kdeui/kstdguiitem.cpp:257 khtml/ecma/kjs_debugwin.cpp:458
+#: common_texts.cpp:137 kdecore/kkeyserver_x11.cpp:127 kdeui/keditcl2.cpp:107
+#: kdeui/keditcl2.cpp:120 kdeui/keditcl2.cpp:377 kdeui/keditcl2.cpp:390
+#: kdeui/keditcl2.cpp:456 kdeui/keditcl2.cpp:469 kdeui/kstdguiitem.cpp:257
+#: khtml/ecma/kjs_debugwin.cpp:458 kutils/kreplace.cpp:319
 msgid "Stop"
 msgstr "Aros"
 
@@ -1125,8 +1127,9 @@ msgstr ""
 msgid "&Previous"
 msgstr "&Blaenorol"
 
-#: common_texts.cpp:170 kdecore/kstdaccel.cpp:69 kdeui/keditcl2.cpp:456
-#: kdeui/keditcl2.cpp:469 kdeui/keditcl2.cpp:830 kutils/kreplace.cpp:45
+#: common_texts.cpp:170 kcert/kcertpart.cc:730 kcert/kcertpart.cc:746
+#: kdecore/kstdaccel.cpp:69 kdeui/keditcl2.cpp:456 kdeui/keditcl2.cpp:469
+#: kdeui/keditcl2.cpp:830 kutils/kreplace.cpp:45 kutils/kreplace.cpp:49
 msgid "Replace"
 msgstr "Amnewid"
 
@@ -2483,6 +2486,11 @@ msgstr "Rheolydd Ffurfweddu KDE"
 #: kded/kbuildsycoca.cpp:781
 msgid "Do you want to reload KDE configuration?"
 msgstr "Ydych eisiau ail-lwytho ffurfweddiad KDE?"
+
+#: kded/kbuildsycoca.cpp:781
+#, fuzzy
+msgid "Do Not Reload"
+msgstr "&Peidiwch â Chadw"
 
 #: kded/kbuildsycoca.cpp:964
 msgid "Configuration information reloaded successfully."
@@ -4425,8 +4433,17 @@ msgstr "Rhowch enw, os gwelwch yn dda."
 msgid "Old upload information found, fill out fields?"
 msgstr "Canfuwyd hen wybodaeth lanlwytho, llenwi'r meyseydd?"
 
+#: knewstuff/uploaddialog.cpp:173
+msgid "Fill Out"
+msgstr ""
+
+#: knewstuff/uploaddialog.cpp:173
+msgid "Do Not Fill Out"
+msgstr ""
+
 #: knewstuff/knewstuffgeneric.cpp:133
-msgid "The file '%1' already exists. Do you want to override it?"
+#, fuzzy
+msgid "The file '%1' already exists. Do you want to overwrite it?"
 msgstr "Mae'r ffeil '%1' mewn bod eisoes.  Ydych eisiau ysgrifennu drosto?"
 
 #: khtml/khtml_ext.cpp:798 knewstuff/knewstuffgeneric.cpp:135
@@ -4893,6 +4910,11 @@ msgid ""
 msgstr ""
 "Mae cyfuniad bysell '%1' wedi ei dyrannu yn barod i'r weithred \"%2\".\n"
 "Ydych eisiau ei ail-neilltuo o'r weithred yna i'r un gyfredol?"
+
+#: kdeui/kkeydialog.cpp:975
+#, fuzzy
+msgid "Reassign"
+msgstr "Rwsieg"
 
 #: kdeui/kkeydialog.cpp:1089 kdeui/kkeydialog.cpp:1101
 msgid "Configure Shortcuts"
@@ -6185,7 +6207,7 @@ msgstr ""
 "adroddiad nam.\n"
 "Os gwthiwch \"Anfon\", anfonir neges ebost i ofalwr y rhaglen yma.\n"
 
-#: kdeui/kbugreport.cpp:253
+#: kdeui/kbugreport.cpp:252
 msgid ""
 "To submit a bug report, click on the button below.\n"
 "This will open a web browser window on http://bugs.kde.org where you will find "
@@ -6197,23 +6219,23 @@ msgstr ""
 " lle welwch ffurflen i'w llenwi.\n"
 " Trosglwyddir y wybodaeth a arddangosir uchod i'r gweinydd hwnnw."
 
-#: kdeui/kbugreport.cpp:261
+#: kdeui/kbugreport.cpp:260
 msgid "&Launch Bug Report Wizard"
 msgstr "&Cychwyn Dewin Adrodd Namau"
 
-#: kdeui/kbugreport.cpp:299
+#: kdeui/kbugreport.cpp:298
 msgid ""
 "_: unknown program name\n"
 "unknown"
 msgstr " anhysbys"
 
-#: kdeui/kbugreport.cpp:377
+#: kdeui/kbugreport.cpp:376
 msgid ""
 "You must specify both a subject and a description before the report can be "
 "sent."
 msgstr "Mae'n rhaid penodi pwnc a disgrifiad hefyd cyn anfonir yr adroddiad."
 
-#: kdeui/kbugreport.cpp:387
+#: kdeui/kbugreport.cpp:386
 msgid ""
 "<p>You chose the severity <b>Critical</b>. Please note that this severity is "
 "intended only for bugs that</p>"
@@ -6236,7 +6258,7 @@ msgstr ""
 "<p>Ydy'r nam yr ydych yn ei adrodd yn achosi unrhyw un o'r niweidiau uchod?  Os "
 "nac ydy, dewiswch llymder is.  Diolch!</p>"
 
-#: kdeui/kbugreport.cpp:398
+#: kdeui/kbugreport.cpp:397
 msgid ""
 "<p>You chose the severity <b>Grave</b>. Please note that this severity is "
 "intended only for bugs that</p>"
@@ -6258,7 +6280,7 @@ msgstr ""
 "<p>Ydy'r nam yr ydych yn ei adrodd yn achosi unrhyw un o'r niweidiau uchod? Os "
 "nac ydy, dewiswch llymder is. Diolch!</p>"
 
-#: kdeui/kbugreport.cpp:410
+#: kdeui/kbugreport.cpp:409
 msgid ""
 "Unable to send the bug report.\n"
 "Please submit a bug report manually...\n"
@@ -6268,11 +6290,11 @@ msgstr ""
 " Anfonwch adroddiad nam â llaw ...\n"
 " Gweler http://bugs.kde.org am fanylion."
 
-#: kdeui/kbugreport.cpp:419
+#: kdeui/kbugreport.cpp:417
 msgid "Bug report sent, thank you for your input."
 msgstr "Wedi gyrru'r adroddiad nam, diolch am eich cymorth."
 
-#: kdeui/kbugreport.cpp:428
+#: kdeui/kbugreport.cpp:426
 msgid ""
 "Close and discard\n"
 "edited message?"
@@ -6280,7 +6302,7 @@ msgstr ""
 "Cau a taflu'r neges\n"
 " a olygwyd?"
 
-#: kdeui/kbugreport.cpp:429
+#: kdeui/kbugreport.cpp:427
 msgid "Close Message"
 msgstr "Cau Neges"
 
@@ -7174,7 +7196,7 @@ msgstr ""
 "<qt>Bydd y ffurflen yn cael ei chyflwyno i <BR><B>%1</B><BR> "
 "ar eich cysawd ffeiliau lleol. <BR> Ydych eisiau cyflwyno'r ffurlen?"
 
-#: khtml/html/html_formimpl.cpp:1470 khtml/khtml_part.cpp:4777
+#: khtml/html/html_formimpl.cpp:1469 khtml/khtml_part.cpp:4777
 #: khtml/khtmlview.cpp:2408 khtml/khtmlview.cpp:2450
 #: khtml/rendering/render_form.cpp:296
 msgid "Submit"
@@ -7412,6 +7434,16 @@ msgstr ""
 "<p>%1</p> mewn ffenestr newydd i borydd, wrth ddefnyddio Javascript. <br /> "
 "Ydych eisiau gadael hynny?</qt>"
 
+#: khtml/ecma/kjs_html.cpp:2166 khtml/ecma/kjs_window.cpp:1330
+#, fuzzy
+msgid "Allow"
+msgstr "Cwbl"
+
+#: khtml/ecma/kjs_html.cpp:2166 khtml/ecma/kjs_window.cpp:1330
+#, fuzzy
+msgid "Do Not Allow"
+msgstr "Mewnforio &Popeth"
+
 #: khtml/ecma/kjs_window.cpp:1563
 msgid "Close window?"
 msgstr "Cau'r ffenest?"
@@ -7419,6 +7451,11 @@ msgstr "Cau'r ffenest?"
 #: khtml/ecma/kjs_window.cpp:1563
 msgid "Confirmation Required"
 msgstr "Angen Cadarnhad"
+
+#: khtml/ecma/kjs_window.cpp:1563
+#, fuzzy
+msgid "Do Not Close"
+msgstr "&Peidiwch â Chadw"
 
 #: khtml/ecma/kjs_window.cpp:2326
 msgid ""
@@ -7526,8 +7563,18 @@ msgid "Save Login Information"
 msgstr "Cadw Gwybodaeth Fewngofnodi"
 
 #: khtml/html/html_formimpl.cpp:610
+#, fuzzy
+msgid "Store"
+msgstr "Stryd"
+
+#: khtml/html/html_formimpl.cpp:610
 msgid "Ne&ver for This Site"
 msgstr "&Byth am y Wefan Yma"
+
+#: khtml/html/html_formimpl.cpp:610
+#, fuzzy
+msgid "Do Not Store"
+msgstr "&Peidiwch â Chadw"
 
 #: khtml/html/html_formimpl.cpp:614
 msgid ""
@@ -7694,6 +7741,16 @@ msgstr ""
 #: khtml/rendering/render_frames.cpp:824
 msgid "Missing Plugin"
 msgstr "Ategyn ar Goll"
+
+#: khtml/rendering/render_frames.cpp:824
+#, fuzzy
+msgid "Download"
+msgstr "Lawrlwythiadau"
+
+#: khtml/rendering/render_frames.cpp:824
+#, fuzzy
+msgid "Do Not Download"
+msgstr "Lawrlwythir yn Amlaf"
 
 #: kinit/kinit.cpp:440
 msgid ""
@@ -8255,6 +8312,11 @@ msgstr "Ydych eisiau ail-ddechrau'r chwiliad o'r diwedd?"
 msgid "Do you want to restart search at the beginning?"
 msgstr "Ydych eisiau ail-ddechrau'r chwiliad o'r dechrau?"
 
+#: kutils/kreplace.cpp:319
+#, fuzzy
+msgid "Restart"
+msgstr "Adfer"
+
 #: kutils/kpluginselector.cpp:111
 msgid ""
 "<qt>"
@@ -8678,6 +8740,11 @@ msgstr "Methu canfod y ffeil \"%1\".  Creu un newydd?"
 msgid "No Such File"
 msgstr "Dim Ffeil o'r Fath"
 
+#: kab/addressbook.cc:625
+#, fuzzy
+msgid "Create"
+msgstr "Canol"
+
 #: kab/addressbook.cc:629
 msgid "New file."
 msgstr "Ffeil newydd."
@@ -9008,6 +9075,10 @@ msgstr "Cyfrinair Tystysgrif"
 #: kcert/kcertpart.cc:496
 msgid "The certificate file could not be loaded. Try a different password?"
 msgstr "Methu llwytho'r ffeil tystysgrif. Ceisio cyfrinair gwahanol?"
+
+#: kcert/kcertpart.cc:496
+msgid "Try Different"
+msgstr ""
 
 #: kcert/kcertpart.cc:532 kcert/kcertpart.cc:566
 msgid "This file cannot be opened."
