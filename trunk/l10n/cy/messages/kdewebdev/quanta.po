@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdewebdev/quanta.po\n"
-"POT-Creation-Date: 2005-07-23 01:42+0200\n"
+"POT-Creation-Date: 2005-07-25 01:43+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: br <LL@li.org>\n"
@@ -3661,7 +3661,8 @@ msgid "Project Folder"
 msgstr "Plygell Cywaith"
 
 #. i18n: file ./plugins/plugineditor.ui line 32
-#: plugins/quantaplugineditor.cpp:45 rc.cpp:2555
+#: plugins/quantaplugineditor.cpp:45 plugins/quantaplugininterface.cpp:260
+#: rc.cpp:2555
 #, no-c-format
 msgid "Edit Plugins"
 msgstr ""
@@ -9029,6 +9030,10 @@ msgid ""
 " Do you want to remove it from the list?"
 msgstr ""
 
+#: project/project.cpp:238 src/quanta.cpp:391
+msgid "Keep"
+msgstr ""
+
 #: src/quanta.cpp:484
 msgid "Save File"
 msgstr ""
@@ -9036,6 +9041,12 @@ msgstr ""
 #: src/quanta.cpp:495
 msgid "<qt>Do you want to add the<br><b>%1</b><br>file to project?</qt>"
 msgstr ""
+
+#: components/cvsservice/cvsservice.cpp:333 src/quanta.cpp:495
+#: utility/quantanetaccess.cpp:183
+#, fuzzy
+msgid "Do Not Add"
+msgstr "&Peidiwch â Chadw"
 
 #: src/quanta.cpp:558
 #, c-format
@@ -9307,6 +9318,11 @@ msgstr ""
 #, fuzzy
 msgid "Review"
 msgstr "Rhagolwg"
+
+#: src/quanta.cpp:3837
+#, fuzzy
+msgid "Do Not Review"
+msgstr "&Peidiwch â Chadw"
 
 #: src/quanta.cpp:4039 src/quanta.cpp:4716 src/quanta.cpp:4755
 msgid ""
@@ -9591,6 +9607,11 @@ msgstr ""
 msgid "<qt>Do you want to replace the existing <b>%1</b> DTD?</qt>"
 msgstr ""
 
+#: src/dtds.cpp:865 src/dtds.cpp:897
+#, fuzzy
+msgid "Do Not Replace"
+msgstr "&Peidiwch â Chadw"
+
 #: src/dtds.cpp:875 src/dtds.cpp:919
 msgid "<qt>Use the newly loaded <b>%1</b> DTD for the current document?</qt>"
 msgstr ""
@@ -9598,6 +9619,16 @@ msgstr ""
 #: src/dtds.cpp:875 src/dtds.cpp:919
 msgid "Change DTD"
 msgstr ""
+
+#: src/dtds.cpp:875 src/dtds.cpp:919
+#, fuzzy
+msgid "Use"
+msgstr "Defnyddiwr:"
+
+#: src/dtds.cpp:875 src/dtds.cpp:919
+#, fuzzy
+msgid "Do Not Use"
+msgstr "&Peidiwch â Chadw"
 
 #: src/dtds.cpp:904
 msgid ""
@@ -9612,6 +9643,16 @@ msgstr ""
 #: src/dtds.cpp:908
 msgid "<qt>Autoload the <b>%1</b> DTD in the feature?</qt>"
 msgstr ""
+
+#: src/dtds.cpp:908 utility/newstuff.cpp:73
+#, fuzzy
+msgid "Load"
+msgstr "Lleol"
+
+#: src/dtds.cpp:908
+#, fuzzy
+msgid "Do Not Load"
+msgstr "&Peidiwch â Chadw"
 
 #: src/quantaview.cpp:294 src/quantaview.cpp:300
 msgid "[modified]"
@@ -10068,6 +10109,13 @@ msgstr ""
 msgid "<qt>File<br><b>%1</b><br>already exists. Overwrite it?</qt>"
 msgstr ""
 
+#: ../lib/compatibility/knewstuff/knewstuffgeneric.cpp:135
+#: messages/messageoutput.cpp:163 project/projectprivate.cpp:895
+#: treeviews/basetreeview.cpp:1028 treeviews/templatestreeview.cpp:470
+#: utility/quantacommon.cpp:683
+msgid "Overwrite"
+msgstr "Trosysgrifo"
+
 #: messages/messageoutput.cpp:168
 msgid "<qt>Cannot save log file<br><b>%1</b></qt>"
 msgstr ""
@@ -10257,6 +10305,15 @@ msgid ""
 "<qt>The file <b>%1</b> is not writable."
 "<br>Do you want to save the configuration to a different file?</qt>"
 msgstr ""
+
+#: dialogs/dtepeditdlg.cpp:204
+msgid "Save to Different File"
+msgstr ""
+
+#: dialogs/dtepeditdlg.cpp:204
+#, fuzzy
+msgid "Do Not Save"
+msgstr "&Peidiwch â Chadw"
 
 #: dialogs/dtepeditdlg.cpp:206
 #, fuzzy
@@ -11361,11 +11418,6 @@ msgid ""
 "<br>Do you want to overwrite it?</qt>"
 msgstr ""
 
-#: ../lib/compatibility/knewstuff/knewstuffgeneric.cpp:135
-#: treeviews/basetreeview.cpp:1028 treeviews/templatestreeview.cpp:470
-msgid "Overwrite"
-msgstr "Trosysgrifo"
-
 #: treeviews/templatestreeview.cpp:476
 msgid ""
 "<qt>Could not write to file <b>%1</b>."
@@ -11415,6 +11467,16 @@ msgid ""
 "project folder.\n"
 "Do you want to copy the folder into the main project folder?"
 msgstr ""
+
+#: treeviews/templatestreeview.cpp:1067
+#, fuzzy
+msgid "Copy Folder"
+msgstr "Plygell Wraidd"
+
+#: treeviews/templatestreeview.cpp:1067
+#, fuzzy
+msgid "Do Not Copy"
+msgstr "&Peidiwch â Chadw"
 
 #: treeviews/templatestreeview.cpp:1075
 msgid ""
@@ -11882,6 +11944,15 @@ msgstr ""
 msgid "Action Not Responding"
 msgstr ""
 
+#: utility/tagaction.cpp:998
+#, fuzzy
+msgid "Terminate"
+msgstr "Patrymlun"
+
+#: utility/tagaction.cpp:998
+msgid "Keep Running"
+msgstr ""
+
 #: utility/quantacommon.cpp:383
 msgid ""
 "<qt>Cannot create folder"
@@ -11901,6 +11972,11 @@ msgstr ""
 #: utility/quantacommon.cpp:672
 msgid "Unknown Type"
 msgstr "Math anhysbys"
+
+#: project/project.cpp:193 utility/quantacommon.cpp:672
+#, fuzzy
+msgid "Do Not Open"
+msgstr "&Peidiwch â Chadw"
 
 #: utility/quantabookmarks.cpp:88
 msgid "Set &Bookmark"
@@ -12167,6 +12243,10 @@ msgstr ""
 msgid "Event Triggered"
 msgstr ""
 
+#: utility/qpevents.cpp:88 utility/qpevents.cpp:92
+msgid "Execute"
+msgstr ""
+
 #: utility/qpevents.cpp:92
 msgid ""
 "<qt>An external action (<i>%1</i>) associated with an event (<i>%2</i>"
@@ -12356,6 +12436,10 @@ msgstr ""
 msgid "Invalid Plugin"
 msgstr ""
 
+#: plugins/quantapluginconfig.cpp:68
+msgid "Do Not Apply"
+msgstr ""
+
 #: plugins/quantapluginconfig.cpp:80
 msgid "Select Plugin Folder"
 msgstr ""
@@ -12385,6 +12469,11 @@ msgstr ""
 #: plugins/quantaplugininterface.cpp:260
 msgid "Invalid Plugins"
 msgstr ""
+
+#: plugins/quantaplugininterface.cpp:260
+#, fuzzy
+msgid "Do Not Edit"
+msgstr "&Peidiwch â Chadw"
 
 #: plugins/quantaplugininterface.cpp:267
 msgid "All plugins validated successfully."
@@ -12576,12 +12665,18 @@ msgid ""
 msgstr ""
 
 #: project/projectupload.cpp:741
-msgid "Do you really want to cancel the upload?"
+msgid "Do you really want to abort the upload?"
 msgstr ""
 
 #: project/projectupload.cpp:742
-msgid "Cancel Upload"
-msgstr ""
+#, fuzzy
+msgid "Abort Upload"
+msgstr "Lanlwytho"
+
+#: project/projectupload.cpp:742
+#, fuzzy
+msgid "Abort"
+msgstr "Porth:"
 
 #: project/teammembersdlg.cpp:48
 msgid "New Member"
@@ -12608,6 +12703,15 @@ msgstr ""
 msgid ""
 "<qt>The <b>%1</b> role is already assigned to <b>%2</b>"
 ". Do you want to reassign it to the current member?</qt>"
+msgstr ""
+
+#: project/teammembersdlg.cpp:169
+#, fuzzy
+msgid "Reassign"
+msgstr "Sesiwn"
+
+#: project/teammembersdlg.cpp:169
+msgid "Do Not Reassign"
 msgstr ""
 
 #: project/projectprivate.cpp:74
@@ -13132,6 +13236,14 @@ msgstr "Crynodeb:"
 msgid "Old upload information found, fill out fields?"
 msgstr "Canfuwyd hen wybodaeth lanlwytho, llenwi'r meyseydd?"
 
+#: ../lib/compatibility/knewstuff/uploaddialog.cpp:116
+msgid "Fill Out Fields"
+msgstr ""
+
+#: ../lib/compatibility/knewstuff/uploaddialog.cpp:116
+msgid "Do Not Fill Out"
+msgstr ""
+
 #: ../lib/compatibility/knewstuff/uploaddialog.cpp:139
 msgid "Please put in a name."
 msgstr "Rhowch enw, os gwelwch yn dda."
@@ -13475,10 +13587,6 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Before Upload"
-#~ msgstr "Lanlwytho"
-
-#, fuzzy
-#~ msgid "After Upload"
 #~ msgstr "Lanlwytho"
 
 #~ msgid "city"
