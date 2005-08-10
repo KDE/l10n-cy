@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
-"POT-Creation-Date: 2005-07-21 01:38+0200\n"
+"POT-Creation-Date: 2005-08-10 10:19+0200\n"
 "PO-Revision-Date: 2004-01-08 21:25+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -28,10 +28,11 @@ msgid ""
 "<p>This filter imports e-mails from the Mail client in Apple Mac OS X.</p>"
 msgstr ""
 
-#: filter_evolution.cxx:125 filter_evolution_v2.cxx:163 filter_mailapp.cxx:59
-#: filter_mbox.cxx:55 filter_opera.cxx:87 filter_outlook.cxx:60
-#: filter_pmail.cxx:165 filter_pmail.cxx:235 filter_pmail.cxx:253
-#: filter_pmail.cxx:294 filter_thebat.cxx:151 filter_thunderbird.cxx:161
+#: filter_evolution.cxx:125 filter_evolution_v2.cxx:163 filter_lnotes.cxx:89
+#: filter_mailapp.cxx:59 filter_mbox.cxx:55 filter_opera.cxx:87
+#: filter_outlook.cxx:60 filter_pmail.cxx:165 filter_pmail.cxx:235
+#: filter_pmail.cxx:253 filter_pmail.cxx:294 filter_thebat.cxx:151
+#: filter_thunderbird.cxx:161
 msgid "Unable to open %1, skipping"
 msgstr "Methwyd agor %1, yn hepgor"
 
@@ -174,14 +175,19 @@ msgid "KMail Import Filters"
 msgstr "Hidlenni Mewnforio KMail"
 
 #: main.cpp:35
-msgid "(c) 2000-2003, The KMailCVT developers"
+#, fuzzy
+msgid "(c) 2000-2005, The KMailCVT developers"
 msgstr "(c) 2000-2003, Y Datblygwyr KMailCVT"
 
 #: main.cpp:36
 msgid "Original author"
 msgstr "Awdur gwreiddiol"
 
-#: main.cpp:37 main.cpp:38 main.cpp:39
+#: main.cpp:37
+msgid "Maintainer & New filters"
+msgstr ""
+
+#: main.cpp:38 main.cpp:39
 msgid "New GUI & cleanups"
 msgstr "GUI newydd a glanhadau"
 
@@ -291,7 +297,7 @@ msgstr "Yn mewnforio plygelli ebost 'UNIX' ('.mbx')..."
 msgid "Importing %1"
 msgstr "Yn mewnforio %1"
 
-#: filter_pmail.cxx:279
+#: filter_lnotes.cxx:110 filter_pmail.cxx:279
 #, c-format
 msgid "Message %1"
 msgstr "Neges %1"
@@ -491,6 +497,39 @@ msgstr "Yn mewnforio blwch ebost OE5+ %1"
 msgid "Importing OE5+ Folder file %1"
 msgstr "Yn anwybyddu ffeil Blygelli OE5+ %1"
 
+#: filter_lnotes.cxx:30
+#, fuzzy
+msgid "Import Lotus Notes Emails"
+msgstr "Mewnforio Ebostau Outlook Express"
+
+#: filter_lnotes.cxx:32
+#, fuzzy
+msgid ""
+"<p><b>Lotus Notes Structured Text mail import filter</b></p>"
+"<p>This filter will import Structure Text files from an exported Lotus Notes "
+"email client into KMail. Use this filter if you want to import mails from Lotus "
+"or other mailers that use Lotus Notes' Structured Text format.</p>"
+"<p><b>Note:</b> Since it is possible to recreate the folder structure, the "
+"imported messages will be stored in subfolders named by the files they ame from "
+"under: \"Sylpheed-Import\" in your local folder.</p>"
+msgstr ""
+"<p><b>hidlen mewnforio mbox</b></p>"
+"<p>Bydd yr hidlen hon yn mewnforio ffeiliau mbox i KMail.  Defnyddiwch yr "
+"hidlen yma os hoffech fewnforio o Ximian Evolution neu ebostyddion eraill sy'n "
+"defnyddio'r ffromat traddodiadaol UNIX yma.</p>"
+"<p><b>Noder:</b> Mewnforir ebostau i blygelli wedi'u henwi ar ôl y ffeil y "
+"daethont ohoni, â'r rhagddodiad MBOX.</p>"
+
+#: filter_lnotes.cxx:56
+#, fuzzy
+msgid "All Files (*)"
+msgstr "ffeiliau mbox (*)"
+
+#: filter_lnotes.cxx:65
+#, fuzzy, c-format
+msgid "Importing emails from %1"
+msgstr "Yn mewnforio ebostau o %1"
+
 #: filter_thebat.cxx:33
 msgid "Import The Bat! Mails and Folder Structure"
 msgstr ""
@@ -506,7 +545,7 @@ msgid ""
 "stored under: \"TheBat-Import\" in your local account.</p>"
 msgstr ""
 
-#: kselfilterpage.cpp:74
+#: kselfilterpage.cpp:76
 msgid "<p><i>Written by %1.</i></p>"
 msgstr "<p><i>Ysgrifennwyd gan %1.</i></p>"
 

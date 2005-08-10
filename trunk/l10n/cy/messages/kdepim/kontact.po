@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kontact\n"
-"POT-Creation-Date: 2005-07-31 01:46+0200\n"
+"POT-Creation-Date: 2005-08-10 10:19+0200\n"
 "PO-Revision-Date: 2004-01-09 10:24+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -324,15 +324,19 @@ msgstr "Neges Newydd..."
 msgid "New Messages"
 msgstr "Negeseuon Newydd"
 
-#: plugins/kmail/summarywidget.cpp:145
+#: plugins/kmail/summarywidget.cpp:146
 msgid ""
 "_: %1: number of unread messages %2: total number of messages\n"
 "%1 / %2"
 msgstr ""
 
-#: plugins/kmail/summarywidget.cpp:157
+#: plugins/kmail/summarywidget.cpp:158
 msgid "No unread messages"
 msgstr "Dim negeseuon nas darllenwyd"
+
+#: plugins/kmail/summarywidget.cpp:170
+msgid "Open Folder: \"%1\""
+msgstr ""
 
 #: plugins/knode/knode_plugin.cpp:52
 #, fuzzy
@@ -375,9 +379,18 @@ msgstr "Nodyn Newydd ..."
 msgid "Notes Management"
 msgstr "Rheoli Nodau"
 
-#: plugins/knotes/summarywidget.cpp:61
+#: plugins/knotes/summarywidget.cpp:55
 msgid "Notes"
 msgstr "Nodau"
+
+#: plugins/knotes/summarywidget.cpp:120
+#, fuzzy
+msgid "No Notes Available"
+msgstr "Dim gwybodaeth 'ynglyn' ar gael."
+
+#: plugins/knotes/summarywidget.cpp:143
+msgid "Read Note: \"%1\""
+msgstr ""
 
 #: plugins/korganizer/journalplugin.cpp:51
 #, fuzzy
@@ -408,11 +421,12 @@ msgstr ""
 "mewn %n o ddiwrnodau"
 
 #: plugins/korganizer/kcmkorgsummary.cpp:95
-msgid "Calendar"
-msgstr "Calendr"
+#: plugins/korganizer/summarywidget.cpp:58
+msgid "Appointments"
+msgstr "Apwyntiadau"
 
 #: plugins/korganizer/kcmkorgsummary.cpp:99
-msgid "How many days should the calendar display at once?"
+msgid "How many days should the calendar show at once?"
 msgstr ""
 
 #: plugins/korganizer/kcmkorgsummary.cpp:102
@@ -436,17 +450,17 @@ msgid "One month"
 msgstr ""
 
 #: plugins/korganizer/kcmkorgsummary.cpp:127
-#: plugins/korganizer/todosummarywidget.cpp:56
+#: plugins/korganizer/todosummarywidget.cpp:58
 #, fuzzy
 msgid "To-dos"
 msgstr "I-Wneud Newydd"
 
 #: plugins/korganizer/kcmkorgsummary.cpp:128
-msgid "Show all tasks"
+msgid "Show all to-dos"
 msgstr ""
 
 #: plugins/korganizer/kcmkorgsummary.cpp:129
-msgid "Show today's tasks"
+msgid "Show today's to-dos only"
 msgstr ""
 
 #: plugins/korganizer/korganizerplugin.cpp:59
@@ -475,54 +489,64 @@ msgstr ""
 msgid "Mail: %1"
 msgstr "Ebost: %1"
 
-#: plugins/korganizer/summarywidget.cpp:58
-msgid "Appointments"
-msgstr "Apwyntiadau"
-
-#: plugins/korganizer/summarywidget.cpp:139
-#: plugins/specialdates/sdsummarywidget.cpp:393
+#: plugins/korganizer/summarywidget.cpp:143
+#: plugins/specialdates/sdsummarywidget.cpp:446
 msgid "Today"
 msgstr "Heddiw"
 
-#: plugins/korganizer/summarywidget.cpp:143
-#: plugins/specialdates/sdsummarywidget.cpp:395
+#: plugins/korganizer/summarywidget.cpp:147
+#: plugins/specialdates/sdsummarywidget.cpp:448
 msgid "Tomorrow"
 msgstr "Yfory"
 
-#: plugins/korganizer/summarywidget.cpp:184
+#: plugins/korganizer/summarywidget.cpp:197
 msgid ""
 "_: Time from - to\n"
 "%1 - %2"
 msgstr ""
 
-#: plugins/korganizer/summarywidget.cpp:201
-msgid "No appointments pending"
-msgstr "Dim apwyntiadau sy'n disgwyl"
+#: plugins/korganizer/summarywidget.cpp:216
+#, fuzzy, c-format
+msgid ""
+"_n: No appointments pending within the next day\n"
+"No appointments pending within the next %n days"
+msgstr ""
+"Dim penblwyddi neu ddathliadau yn y diwrnod nesaf\n"
+"Dim penblwyddi neu ddathliadau yn %n o ddiwrnodau nesaf"
+
+#: plugins/korganizer/summarywidget.cpp:239
+#, fuzzy
+msgid "Edit Appointment: \"%1\""
+msgstr "Apwyntiadau"
 
 #: plugins/korganizer/todoplugin.cpp:57
 msgid "New To-do..."
 msgstr "I'w-Wneud newydd..."
 
-#: plugins/korganizer/todosummarywidget.cpp:105
+#: plugins/korganizer/todosummarywidget.cpp:111
 msgid "overdue"
 msgstr ""
 
-#: plugins/korganizer/todosummarywidget.cpp:112
+#: plugins/korganizer/todosummarywidget.cpp:118
 msgid "in progress"
 msgstr ""
 
-#: plugins/korganizer/todosummarywidget.cpp:118
+#: plugins/korganizer/todosummarywidget.cpp:124
 msgid "starts today"
 msgstr ""
 
-#: plugins/korganizer/todosummarywidget.cpp:124
+#: plugins/korganizer/todosummarywidget.cpp:130
 msgid "ends today"
 msgstr ""
 
-#: plugins/korganizer/todosummarywidget.cpp:169
+#: plugins/korganizer/todosummarywidget.cpp:176
 #, fuzzy
 msgid "No to-dos pending"
 msgstr "Dim apwyntiadau sy'n disgwyl"
+
+#: plugins/korganizer/todosummarywidget.cpp:198
+msgid "Edit To-do: \"%1\""
+msgstr ""
 
 #: plugins/kpilot/kpilot_plugin.cpp:54 plugins/kpilot/summarywidget.cpp:63
 #, fuzzy
@@ -707,7 +731,7 @@ msgid "Special Dates Summary"
 msgstr ""
 
 #: plugins/specialdates/kcmsdsummary.cpp:94
-msgid "How many days should the special dates summary display at once?"
+msgid "How many days should the special dates summary show at once?"
 msgstr ""
 
 #: plugins/specialdates/kcmsdsummary.cpp:122
@@ -752,39 +776,39 @@ msgstr "Crynodeb Kyswllt"
 msgid "Special Dates Configuration Dialog"
 msgstr "Ymgom Ffurfweddu'r Ticer Newyddion"
 
-#: plugins/specialdates/sdsummarywidget.cpp:89
+#: plugins/specialdates/sdsummarywidget.cpp:90
 msgid "Special Dates"
 msgstr ""
 
-#: plugins/specialdates/sdsummarywidget.cpp:114
+#: plugins/specialdates/sdsummarywidget.cpp:116
 msgid "Default KOrganizer resource"
 msgstr "Adnodd rhagosod KTrefnydd"
 
-#: plugins/specialdates/sdsummarywidget.cpp:116
+#: plugins/specialdates/sdsummarywidget.cpp:118
 msgid "Active Calendar"
 msgstr "Calendr Gweithredol"
 
-#: plugins/specialdates/sdsummarywidget.cpp:252
+#: plugins/specialdates/sdsummarywidget.cpp:292
 msgid "BIRTHDAY"
 msgstr "PENBLWYDD"
 
-#: plugins/specialdates/sdsummarywidget.cpp:266
+#: plugins/specialdates/sdsummarywidget.cpp:307
 msgid "ANNIVERSARY"
 msgstr "DATHLIAD"
 
-#: plugins/specialdates/sdsummarywidget.cpp:280
+#: plugins/specialdates/sdsummarywidget.cpp:322
 msgid "HOLIDAY"
 msgstr "GŴYL"
 
-#: plugins/specialdates/sdsummarywidget.cpp:295
+#: plugins/specialdates/sdsummarywidget.cpp:340
 msgid "SPECIAL OCCASION"
 msgstr "ACHLYSUR ARBENNIG"
 
-#: plugins/specialdates/sdsummarywidget.cpp:417
+#: plugins/specialdates/sdsummarywidget.cpp:474
 msgid "now"
 msgstr "rwan"
 
-#: plugins/specialdates/sdsummarywidget.cpp:419
+#: plugins/specialdates/sdsummarywidget.cpp:476
 #, c-format
 msgid ""
 "_n: in 1 day\n"
@@ -793,23 +817,23 @@ msgstr ""
 "mewn un diwrnod\n"
 "mewn %n o ddiwrnodau"
 
-#: plugins/specialdates/sdsummarywidget.cpp:431
+#: plugins/specialdates/sdsummarywidget.cpp:488
 msgid "Birthday"
 msgstr "Penblwydd"
 
-#: plugins/specialdates/sdsummarywidget.cpp:433
+#: plugins/specialdates/sdsummarywidget.cpp:490
 msgid "Anniversary"
 msgstr "Dathliad"
 
-#: plugins/specialdates/sdsummarywidget.cpp:435
+#: plugins/specialdates/sdsummarywidget.cpp:492
 msgid "Holiday"
 msgstr "Gŵyl"
 
-#: plugins/specialdates/sdsummarywidget.cpp:437
+#: plugins/specialdates/sdsummarywidget.cpp:494
 msgid "Special Occasion"
 msgstr "Achlysur Arbennig"
 
-#: plugins/specialdates/sdsummarywidget.cpp:480
+#: plugins/specialdates/sdsummarywidget.cpp:537
 #, c-format
 msgid ""
 "_n: one year\n"
@@ -818,7 +842,7 @@ msgstr ""
 "un flynedd\n"
 "%n o flynyddoedd"
 
-#: plugins/specialdates/sdsummarywidget.cpp:493
+#: plugins/specialdates/sdsummarywidget.cpp:550
 #, fuzzy, c-format
 msgid ""
 "_n: No special dates within the next 1 day\n"
@@ -827,17 +851,17 @@ msgstr ""
 "Dim penblwyddi neu ddathliadau yn y diwrnod nesaf\n"
 "Dim penblwyddi neu ddathliadau yn %n o ddiwrnodau nesaf"
 
-#: plugins/specialdates/sdsummarywidget.cpp:530
+#: plugins/specialdates/sdsummarywidget.cpp:586
 msgid "Send &Mail"
 msgstr "Anfon &Ebost"
 
-#: plugins/specialdates/sdsummarywidget.cpp:532
+#: plugins/specialdates/sdsummarywidget.cpp:588
 msgid "View &Contact"
 msgstr "Gweld &Cyswllt"
 
-#: plugins/specialdates/sdsummarywidget.cpp:549
-#, c-format
-msgid "Mail to %1"
+#: plugins/specialdates/sdsummarywidget.cpp:605
+#, fuzzy
+msgid "Mail to:\"%1\""
 msgstr "Ebost i %1"
 
 #: plugins/specialdates/specialdates_plugin.cpp:61
@@ -930,6 +954,11 @@ msgstr "Cyflymder Gwynt"
 msgid "Rel. Humidity"
 msgstr "Lleithder Cymh."
 
+#: plugins/weather/summarywidget.cpp:192
+#, fuzzy
+msgid "View Weather Report for Station"
+msgstr "Gwybodaeth Dywydd"
+
 #: plugins/weather/weather_plugin.cpp:56
 msgid "Improvements and more code cleanups"
 msgstr "Gwelliannau a mwy o lanhadau côd"
@@ -949,6 +978,12 @@ msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
 msgstr "kyfieithu@dotmon.com"
+
+#~ msgid "Calendar"
+#~ msgstr "Calendr"
+
+#~ msgid "No appointments pending"
+#~ msgstr "Dim apwyntiadau sy'n disgwyl"
 
 #~ msgid "Birthdays and Anniversaries"
 #~ msgstr "Penblwyddi a Dathliadau"
