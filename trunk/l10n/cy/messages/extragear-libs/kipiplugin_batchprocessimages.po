@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: "
 "../cy/messages//kdeextragear-libs-1/kipiplugin_batchprocessimages.po\n"
-"POT-Creation-Date: 2005-08-10 10:24+0200\n"
+"POT-Creation-Date: 2005-08-18 04:37+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -156,31 +156,29 @@ msgid ""
 "do you want overwrite it?"
 msgstr ""
 
-#: batchprocessimagesdialog.cpp:529 renameimagesdialog.cpp:390
+#: batchprocessimagesdialog.cpp:529
 msgid "Overwrite Destination Image File"
 msgstr ""
 
 #: batchprocessimagesdialog.cpp:533 batchprocessimagesdialog.cpp:599
-#: recompressimagesdialog.cpp:289 renameimagesdialog.cpp:394
-#: renameimagesdialog.cpp:456 resizeimagesdialog.cpp:565
+#: recompressimagesdialog.cpp:289 resizeimagesdialog.cpp:565
 msgid "Skipped."
 msgstr ""
 
-#: batchprocessimagesdialog.cpp:534 renameimagesdialog.cpp:395
+#: batchprocessimagesdialog.cpp:534
 msgid "destination image file already exists (skipped by user)."
 msgstr ""
 
 #: batchprocessimagesdialog.cpp:571 batchprocessimagesdialog.cpp:715
-#: batchprocessimagesdialog.cpp:751 renameimagesdialog.cpp:216
-#: renameimagesdialog.cpp:252 renameimagesdialog.cpp:428
+#: batchprocessimagesdialog.cpp:751
 msgid "Failed."
 msgstr ""
 
-#: batchprocessimagesdialog.cpp:572 renameimagesdialog.cpp:429
+#: batchprocessimagesdialog.cpp:572
 msgid "destination image file already exists and cannot be renamed."
 msgstr ""
 
-#: batchprocessimagesdialog.cpp:600 renameimagesdialog.cpp:457
+#: batchprocessimagesdialog.cpp:600
 msgid "destination image file already exists (skipped automatically)."
 msgstr ""
 
@@ -191,7 +189,7 @@ msgid ""
 "please check your installation."
 msgstr ""
 
-#: batchprocessimagesdialog.cpp:683 renameimagesdialog.cpp:277
+#: batchprocessimagesdialog.cpp:683
 msgid "no processing error"
 msgstr ""
 
@@ -200,7 +198,7 @@ msgid ""
 "<qt>Error adding image to application; error message was: <b>%1</b></qt>"
 msgstr ""
 
-#: batchprocessimagesdialog.cpp:707 renameimagesdialog.cpp:245
+#: batchprocessimagesdialog.cpp:707
 msgid "Error Adding Image to Application"
 msgstr ""
 
@@ -265,15 +263,15 @@ msgstr ""
 msgid "Source Album"
 msgstr ""
 
-#: batchprocessimageslist.cpp:51
+#: batchprocessimageslist.cpp:51 renameimageswidget.cpp:68
 msgid "Source Image"
 msgstr ""
 
-#: batchprocessimageslist.cpp:52
+#: batchprocessimageslist.cpp:52 renameimageswidget.cpp:69
 msgid "Target Image"
 msgstr ""
 
-#: batchprocessimageslist.cpp:53
+#: batchprocessimageslist.cpp:53 renameimageswidget.cpp:70
 msgid "Result"
 msgstr "Canlyniad"
 
@@ -304,7 +302,7 @@ msgstr ""
 #: borderimagesdialog.cpp:77 colorimagesdialog.cpp:76
 #: convertimagesdialog.cpp:77 effectimagesdialog.cpp:77
 #: filterimagesdialog.cpp:77 imagepreview.cpp:101 outputdialog.cpp:72
-#: recompressimagesdialog.cpp:75 renameimagesdialog.cpp:97
+#: recompressimagesdialog.cpp:75 renameimagesdialog.cpp:60
 #: resizeimagesdialog.cpp:77
 msgid "Author and maintainer"
 msgstr "Awdur a chynhaliwr"
@@ -628,7 +626,6 @@ msgstr ""
 #: recompressimagesdialog.cpp:162 recompressimagesdialog.cpp:163
 #: recompressimagesdialog.cpp:240 recompressimagesdialog.cpp:254
 #: recompressoptionsdialog.cpp:111 recompressoptionsdialog.cpp:124
-#: renameimagesdialog.cpp:278
 msgid "None"
 msgstr "Dim"
 
@@ -1221,6 +1218,85 @@ msgstr ""
 msgid "Please select an album or a selection of images."
 msgstr ""
 
+#. i18n: file renameimagesbase.ui line 16
+#: rc.cpp:3
+#, fuzzy, no-c-format
+msgid "Form1"
+msgstr "Fformat:"
+
+#. i18n: file renameimagesbase.ui line 32
+#: rc.cpp:6
+#, no-c-format
+msgid "Template for renaming files"
+msgstr ""
+
+#. i18n: file renameimagesbase.ui line 43
+#: rc.cpp:9
+#, no-c-format
+msgid "Sequence number start value:"
+msgstr ""
+
+#. i18n: file renameimagesbase.ui line 56
+#: rc.cpp:12 renameimagesoptionsdialog.cpp:69
+#, no-c-format
+msgid "Prefix string:"
+msgstr ""
+
+#. i18n: file renameimagesbase.ui line 64
+#: rc.cpp:15 renameimagesoptionsdialog.cpp:77
+#, no-c-format
+msgid "Add original file name"
+msgstr ""
+
+#. i18n: file renameimagesbase.ui line 72
+#: rc.cpp:18 renameimagesoptionsdialog.cpp:82
+#, no-c-format
+msgid "Add file date"
+msgstr ""
+
+#. i18n: file renameimagesbase.ui line 80
+#: rc.cpp:21
+#, no-c-format
+msgid "Format datetime string"
+msgstr ""
+
+#. i18n: file renameimagesbase.ui line 117
+#: rc.cpp:24 renameimagesoptionsdialog.cpp:96
+#, no-c-format
+msgid "File List Order"
+msgstr ""
+
+#. i18n: file renameimagesbase.ui line 126
+#: rc.cpp:27 renameimagesoptionsdialog.cpp:100
+#: renameimagesoptionsdialog.cpp:103
+#, no-c-format
+msgid "By File Name"
+msgstr ""
+
+#. i18n: file renameimagesbase.ui line 131
+#: rc.cpp:30 renameimagesoptionsdialog.cpp:101
+#, no-c-format
+msgid "By File Size"
+msgstr ""
+
+#. i18n: file renameimagesbase.ui line 136
+#: rc.cpp:33
+#, no-c-format
+msgid "By File Date"
+msgstr ""
+
+#. i18n: file renameimagesbase.ui line 148
+#: rc.cpp:36
+#, no-c-format
+msgid "Sort Original List :"
+msgstr ""
+
+#. i18n: file renameimagesbase.ui line 156
+#: rc.cpp:39
+#, no-c-format
+msgid "Reverse Order"
+msgstr ""
+
 #: recompressimagesdialog.cpp:61
 msgid "Batch Recompress Images"
 msgstr ""
@@ -1289,53 +1365,16 @@ msgstr ""
 msgid "<p>Select here the TGA compression algorithm."
 msgstr ""
 
-#: renameimagesdialog.cpp:84
-msgid "Batch Rename Images"
-msgstr ""
-
-#: renameimagesdialog.cpp:89
+#: renameimagesdialog.cpp:52
 msgid "Batch-rename images"
 msgstr ""
 
-#: renameimagesdialog.cpp:91
+#: renameimagesdialog.cpp:54
 msgid "A Kipi plugin to batch-rename images"
 msgstr ""
 
-#: renameimagesdialog.cpp:103
+#: renameimagesdialog.cpp:66
 msgid "Batch-Rename Images Handbook"
-msgstr ""
-
-#: renameimagesdialog.cpp:112
-msgid "Image-Renaming Options"
-msgstr ""
-
-#: renameimagesdialog.cpp:217
-msgid "Cannot copy or move original image file."
-msgstr ""
-
-#: renameimagesdialog.cpp:218
-#, c-format
-msgid ""
-"Check the file's access rights or the amount of disk space.\n"
-"The internal error is:\n"
-"\n"
-"%1"
-msgstr ""
-
-#: renameimagesdialog.cpp:243
-msgid ""
-"<qt>Error adding image to the host application; error message was: <b>%1</b>"
-"</qt>"
-msgstr ""
-
-#: renameimagesdialog.cpp:388
-msgid ""
-"The destination file \"%1\" already exists.\n"
-"Do you want overwrite it?"
-msgstr ""
-
-#: renameimagesdialog.cpp:703
-msgid "-(%1)"
 msgstr ""
 
 #: renameimagesoptionsdialog.cpp:58
@@ -1344,10 +1383,6 @@ msgstr ""
 
 #: renameimagesoptionsdialog.cpp:67
 msgid "Template to Use for Renaming Images"
-msgstr ""
-
-#: renameimagesoptionsdialog.cpp:69
-msgid "Prefix string:"
 msgstr ""
 
 #: renameimagesoptionsdialog.cpp:71
@@ -1362,18 +1397,10 @@ msgstr ""
 msgid "<p>Enter here the first numeric enumerator value (1 to 100000)."
 msgstr ""
 
-#: renameimagesoptionsdialog.cpp:77
-msgid "Add original file name"
-msgstr ""
-
 #: renameimagesoptionsdialog.cpp:78
 msgid ""
 "<p>If you enable this option, the original file name will added in the new file "
 "name."
-msgstr ""
-
-#: renameimagesoptionsdialog.cpp:82
-msgid "Add file date"
 msgstr ""
 
 #: renameimagesoptionsdialog.cpp:83
@@ -1392,20 +1419,8 @@ msgid ""
 "name."
 msgstr ""
 
-#: renameimagesoptionsdialog.cpp:96
-msgid "File List Order"
-msgstr ""
-
 #: renameimagesoptionsdialog.cpp:98
 msgid "Sort original list:"
-msgstr ""
-
-#: renameimagesoptionsdialog.cpp:100 renameimagesoptionsdialog.cpp:103
-msgid "By File Name"
-msgstr ""
-
-#: renameimagesoptionsdialog.cpp:101
-msgid "By File Size"
 msgstr ""
 
 #: renameimagesoptionsdialog.cpp:102
@@ -1441,6 +1456,25 @@ msgstr ""
 #: renameimagesoptionsdialog.cpp:128
 msgid "<p>You can set here the time stamp of the image files."
 msgstr ""
+
+#: renameimageswidget.cpp:67
+msgid "Album"
+msgstr ""
+
+#: renameimageswidget.cpp:365
+#, fuzzy
+msgid "Rename File"
+msgstr "Ail-enwi"
+
+#: renameimageswidget.cpp:412
+#, fuzzy
+msgid "Skipped"
+msgstr "Hepgor"
+
+#: renameimageswidget.cpp:428
+#, fuzzy
+msgid "Failed"
+msgstr "Hidl:"
 
 #: resizeimagesdialog.cpp:63
 msgid "Batch Resize Images"
