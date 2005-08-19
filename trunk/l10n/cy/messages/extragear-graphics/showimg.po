@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-2/showimg.po\n"
-"POT-Creation-Date: 2005-08-18 04:36+0200\n"
+"POT-Creation-Date: 2005-08-19 02:55+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -9,12 +9,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: kexi/kexi_utils.h:39
-msgid "This function is not available for version %1 of %2 application."
+#: kexi/kexiutils/identifier.cpp:98
+msgid "Value of \"%1\" column must be an identifier."
 msgstr ""
 
-#: kexi/kexi_utils.h:43
-msgid "\"%1\" function is not available for version %2 of %3 application."
+#: kexi/kexiutils/identifier.cpp:99
+msgid "\"%1\" is not a valid identifier."
+msgstr ""
+
+#: kexi/kexiutils/validator.h:75
+msgid "\"%1\" value has to be entered."
 msgstr ""
 
 #: kexi/kexidb/field.cpp:631
@@ -41,8 +45,8 @@ msgstr "Cyfanrif mawr"
 msgid "Yes/No Value"
 msgstr "Gwerth Ie/Nage"
 
-#: kexi/kexidb/field.cpp:637 showimg/categorylistitem.cpp:458
-#: showimg/rename.cpp:971
+#: kexi/kexidb/field.cpp:637 showimg/categorylistitem.cpp:459
+#: showimg/categorylistitem.cpp:460 showimg/rename.cpp:971
 msgid "Date"
 msgstr "Dyddiad"
 
@@ -90,7 +94,17 @@ msgstr "Ie/Nage"
 msgid "Date/Time"
 msgstr "Dyddiad/Amser"
 
-#: kexi/kexidb/drivers/pqxx/pqxxcursor.cpp:66
+#: kexi/kexidb/dbobjectnamevalidator.cpp:46
+msgid ""
+"You cannot use name \"%1\" for your object.\n"
+"It is reserved for internal Kexi objects. Please choose another name."
+msgstr ""
+
+#: kexi/kexidb/dbobjectnamevalidator.cpp:49
+msgid "Names of internal Kexi objects are starting with \"kexi__\"."
+msgstr ""
+
+#: kexi/kexidb/drivers/pqxx/pqxxcursor.cpp:68
 msgid "No connection for cursor open operation specified"
 msgstr "Dim cysylltiad wedi'i benodi ar gyfer y weithred agor cwrchydd"
 
@@ -110,7 +124,7 @@ msgstr ""
 msgid "File-based database driver"
 msgstr ""
 
-#: kexi/kexidb/driver_p.cpp:62
+#: kexi/kexidb/driver_p.cpp:61
 msgid "File-based database's MIME type"
 msgstr ""
 
@@ -134,35 +148,44 @@ msgstr "Anwybyddwyd"
 msgid "None"
 msgstr "Dim"
 
-#: kexi/kexidb/driver_p.cpp:77
-msgid "Transaction support"
-msgstr ""
+#: kexi/kexidb/driver_p.cpp:80
+#, fuzzy
+msgid "Single transactions support"
+msgstr "Rhif gywirdeb sengl"
 
 #: kexi/kexidb/driver_p.cpp:82
+msgid "Multiple transactions support"
+msgstr ""
+
+#: kexi/kexidb/driver_p.cpp:84
+msgid "Nested transactions support"
+msgstr ""
+
+#: kexi/kexidb/driver_p.cpp:89
 msgid "KexiDB driver version"
 msgstr ""
 
-#: kexi/kexidb/cursor.cpp:119
+#: kexi/kexidb/cursor.cpp:122
 msgid "No query statement or schema defined."
 msgstr ""
 
-#: kexi/kexidb/cursor.cpp:125
+#: kexi/kexidb/cursor.cpp:128
 msgid "Query statement is empty."
 msgstr ""
 
-#: kexi/kexidb/cursor.cpp:134
+#: kexi/kexidb/cursor.cpp:137
 msgid "Error opening database cursor."
 msgstr ""
 
-#: kexi/kexidb/cursor.cpp:389 kexi/kexidb/cursor.cpp:412
+#: kexi/kexidb/cursor.cpp:392 kexi/kexidb/cursor.cpp:415
 msgid "Cannot fetch next record."
 msgstr "Methu nôl y cofnod nesaf"
 
-#: kexi/kexidb/object.cpp:60
+#: kexi/kexidb/object.cpp:55
 msgid "Unspecified error encountered"
 msgstr "Cafwyd gwall amhenodol"
 
-#: kexi/kexidb/queryschema.cpp:165
+#: kexi/kexidb/queryschema.cpp:166
 msgid ""
 "_: short for 'expression' word (only latin letters, please)\n"
 "expr"
@@ -290,11 +313,11 @@ msgstr ""
 msgid "Table not found"
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:1384 kexi/kexidb/expression.cpp:595
+#: kexi/kexidb/connection.cpp:1417 kexi/kexidb/expression.cpp:595
 msgid "Unknown table \"%1\""
 msgstr ""
 
-#: kexi/kexidb/connectiondata.cpp:98
+#: kexi/kexidb/connectiondata.cpp:99
 msgid "file"
 msgstr "ffeil"
 
@@ -317,260 +340,282 @@ msgstr "Nid yw gwerth \"%1\" wedi'i ymgychwyn ar gyfer y gyrrydd."
 msgid "File name expected for file-based database driver."
 msgstr "Disgwylwyd enw ffeil ar gyfer gyrrydd feil-seiliedig."
 
-#: kexi/kexidb/connection.cpp:69
+#: kexi/kexidb/connection.cpp:72
 msgid "Invalid database contents. "
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:73
+#: kexi/kexidb/connection.cpp:76
 msgid "It is a system object."
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:169
+#: kexi/kexidb/connection.cpp:182
 msgid "Connection already established."
 msgstr "Cysylltiad wedi'i sefydlu eisoes"
 
-#: kexi/kexidb/connection.cpp:175
+#: kexi/kexidb/connection.cpp:188
 msgid "Could not open \"%1\" project file."
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:176
+#: kexi/kexidb/connection.cpp:189
 msgid "Could not connect to \"%1\" database server."
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:213
+#: kexi/kexidb/connection.cpp:226
 msgid "Not connected to the database server."
 msgstr "Heb ei gysylltu â gweinydd y gronfa ddata"
 
-#: kexi/kexidb/connection.cpp:223
+#: kexi/kexidb/connection.cpp:236
 msgid "Currently no database is used."
 msgstr "Ni ddefnyddir cronfa ddata ar hyn o bryd."
 
-#: kexi/kexidb/connection.cpp:279
+#: kexi/kexidb/connection.cpp:292
 msgid "The database \"%1\" does not exist."
 msgstr "Nid yw'r gronfa ddata \"%1\" yn bodoli."
 
-#: kexi/kexidb/connection.cpp:299
+#: kexi/kexidb/connection.cpp:312
 msgid "Database file \"%1\" does not exist."
 msgstr "Nid yw'r ffeil gronfa ddata \"%1\" yn bodoli."
 
-#: kexi/kexidb/connection.cpp:304
+#: kexi/kexidb/connection.cpp:317
 msgid "Database file \"%1\" is not readable."
 msgstr "Ni ellir darllen y ffeil gronfa ddata \"%1\"."
 
-#: kexi/kexidb/connection.cpp:309
+#: kexi/kexidb/connection.cpp:322
 msgid "Database file \"%1\" is not writable."
 msgstr "Ni ellir ysgrifennu'r ffeil gronfa ddata \"%1\"."
 
-#: kexi/kexidb/connection.cpp:351
+#: kexi/kexidb/connection.cpp:364
 msgid "Database \"%1\" already exists."
 msgstr "Mae cronfa ddata \"%1\" yn bodoli eisoes."
 
-#: kexi/kexidb/connection.cpp:355
+#: kexi/kexidb/connection.cpp:368
 msgid ""
 "Cannot create database \"%1\". This name is reserved for system database."
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:370
+#: kexi/kexidb/connection.cpp:383
 msgid "Error creating database \"%1\" on the server."
 msgstr "Gwall wrth greu cronfa ddata \"%1\" ar y gweinydd."
 
-#: kexi/kexidb/connection.cpp:384
+#: kexi/kexidb/connection.cpp:397
 msgid "Database \"%1\" created but could not be opened."
 msgstr "Creuwyd cronfa ddata \"%1\" ond methwyd ei hagor"
 
-#: kexi/kexidb/connection.cpp:472
+#: kexi/kexidb/connection.cpp:485
 msgid "Opening database \"%1\" failed"
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:483
+#: kexi/kexidb/connection.cpp:496
 msgid "\"%1\" database property not found"
 msgstr "Ni chafwyd priodwedd cronfa ddata \"%1\""
 
-#: kexi/kexidb/connection.cpp:500
+#: kexi/kexidb/connection.cpp:513
 msgid "Database version (%1) does not match Kexi application's version (%2)"
 msgstr ""
 "Nid yw fersiwn (%1) y gronfa ddata yn cydweddu â fersiwn y cymhwysiad Kexi (%2)"
 
-#: kexi/kexidb/connection.cpp:564
+#: kexi/kexidb/connection.cpp:577
 msgid "Cannot find any database for temporary connection."
 msgstr "Methu cael hyd i gronfa ddata ar gyfer cysylltiad dros dro"
 
-#: kexi/kexidb/connection.cpp:568
+#: kexi/kexidb/connection.cpp:581
 msgid "Error during starting temporary connection using \"%1\" database name."
 msgstr ""
 "Gwall wrth gychwyn cysylltiad dros dro gan ddefnyddio enw cronfa ddata \"%1\"."
 
-#: kexi/kexidb/connection.cpp:585
+#: kexi/kexidb/connection.cpp:598
 msgid "Cannot drop database - name not specified."
 msgstr "Methu gollwng y gronfa ddata - ni roddwyd enw."
 
-#: kexi/kexidb/connection.cpp:603
+#: kexi/kexidb/connection.cpp:616
 msgid "Cannot delete database - name not specified."
 msgstr "Methu dileu'r gronfa ddata- ni roddwyd enw."
 
-#: kexi/kexidb/connection.cpp:608
+#: kexi/kexidb/connection.cpp:621
 msgid "Cannot delete system database \"%1\"."
 msgstr "Ni cheir dileu cronfa ddata'r cysawd \"%1\"."
 
-#: kexi/kexidb/connection.cpp:913
+#: kexi/kexidb/connection.cpp:926
 msgid "Error while executing SQL statement."
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:1101
+#: kexi/kexidb/connection.cpp:1128
 msgid "Cannot create table without fields."
 msgstr "Ni cheir creu tabl heb feysydd."
 
-#: kexi/kexidb/connection.cpp:1105
+#: kexi/kexidb/connection.cpp:1133
 msgid "System name \"%1\" cannot be used as table name."
 msgstr "Ni cheir defnyddio enw cysawd \"%1\" fel enw tabl."
 
-#: kexi/kexidb/connection.cpp:1112
+#: kexi/kexidb/connection.cpp:1141
 msgid "System name \"%1\" cannot be used as one of fields in \"%2\" table."
 msgstr "Ni cheir defnyddio enw cysawd \"%1\" fel un o feysydd tabl \"%2\"."
 
-#: kexi/kexidb/connection.cpp:1127
+#: kexi/kexidb/connection.cpp:1157
 msgid "Could not create the same table \"%1\" twice."
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:1140
+#: kexi/kexidb/connection.cpp:1171
 msgid "Table \"%1\" already exists."
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:1262
+#: kexi/kexidb/connection.cpp:1297
 msgid "Could not remove object's data."
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:1293
+#: kexi/kexidb/connection.cpp:1328
 #, fuzzy
 msgid ""
 "Table \"%1\" cannot be removed.\n"
 msgstr "Ni cheir gwaredu tabl \"%1\"."
 
-#: kexi/kexidb/connection.cpp:1300
+#: kexi/kexidb/connection.cpp:1335
 msgid "Unexpected name or identifier."
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:1347
+#: kexi/kexidb/connection.cpp:1380
 msgid "Table \"%1\" does not exist."
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:1362
+#: kexi/kexidb/connection.cpp:1395
 msgid "Could not alter table \"%1\" using the same table."
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:1388
+#: kexi/kexidb/connection.cpp:1421
 msgid "Invalid table name \"%1\""
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:1393
+#: kexi/kexidb/connection.cpp:1426
 msgid "Could rename table \"%1\" using the same name."
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:1416
+#: kexi/kexidb/connection.cpp:1449
 msgid "Could not rename table \"%1\" to \"%2\". Table \"%3\" already exists."
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:1524
+#: kexi/kexidb/connection.cpp:1556
 msgid "Query \"%1\" does not exist."
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:1604
+#: kexi/kexidb/connection.cpp:1653
 msgid "Transaction already started."
 msgstr "Cychwynwyd y trosglwyddiad eisoes."
 
-#: kexi/kexidb/connection.cpp:1643 kexi/kexidb/connection.cpp:1676
+#: kexi/kexidb/connection.cpp:1693 kexi/kexidb/connection.cpp:1727
 msgid "Transaction not started."
 msgstr "Trosglwyddiad heb ei gychwyn."
 
-#: kexi/kexidb/connection.cpp:1657
+#: kexi/kexidb/connection.cpp:1707
 msgid "Error on commit transaction"
 msgstr "Gwall wrth gadarnhau'r trawsweithrediad"
 
-#: kexi/kexidb/connection.cpp:1690
+#: kexi/kexidb/connection.cpp:1741
 msgid "Error on rollback transaction"
 msgstr "Gwall wrth ddadwneud y trosglwyddiad"
 
-#: kexi/kexidb/connection.cpp:1847 kexi/kexidb/connection.cpp:2105
+#: kexi/kexidb/connection.cpp:1898 kexi/kexidb/connection.cpp:2156
 msgid "Invalid object name \"%1\""
 msgstr "Enw gwrthrych annilys \"%1\""
 
-#: kexi/kexidb/connection.cpp:1949
+#: kexi/kexidb/connection.cpp:2000
 msgid "Column %1 does not exist for the query."
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:2386
+#: kexi/kexidb/connection.cpp:2437
 msgid "Could not update row because there is no master table defined."
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:2393
+#: kexi/kexidb/connection.cpp:2444
 msgid "Could not update row because master table has no primary key defined."
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:2414
+#: kexi/kexidb/connection.cpp:2466
 msgid ""
 "Could not update row because it does not contain entire master table's primary "
 "key."
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:2425 kexi/kexidb/connection.cpp:2603
+#: kexi/kexidb/connection.cpp:2477 kexi/kexidb/connection.cpp:2683
 msgid "Primary key's field \"%1\" cannot be empty."
 msgstr "Ni all maes y prif allwedd \"%1\" fod yn wag."
 
-#: kexi/kexidb/connection.cpp:2437
+#: kexi/kexidb/connection.cpp:2494
 msgid "Row updating on the server failed."
 msgstr "Methwyd diweddaru'r rhes ar y gweinydd."
 
-#: kexi/kexidb/connection.cpp:2462
+#: kexi/kexidb/connection.cpp:2519
 msgid "Could not insert row because there is no master table defined."
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:2481
+#: kexi/kexidb/connection.cpp:2538
 msgid "Could not insert row because master table has no primary key defined."
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:2489
+#: kexi/kexidb/connection.cpp:2547
 msgid ""
 "Could not insert row because it does not contain entire master table's primary "
 "key."
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:2519
+#: kexi/kexidb/connection.cpp:2583
 msgid "Row inserting on the server failed."
 msgstr "Methwyd mewnosod y rhes ar y gweinydd."
 
-#: kexi/kexidb/connection.cpp:2569
+#: kexi/kexidb/connection.cpp:2649
 msgid "Could not delete row because there is no master table defined."
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:2579
+#: kexi/kexidb/connection.cpp:2659
 msgid ""
 "Could not delete row because there is no primary key for master table defined."
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:2594
+#: kexi/kexidb/connection.cpp:2674
 msgid ""
 "Could not delete row because it does not contain entire master table's primary "
 "key."
 msgstr ""
 
-#: kexi/kexidb/connection.cpp:2616 kexi/kexidb/connection.cpp:2639
+#: kexi/kexidb/connection.cpp:2700 kexi/kexidb/connection.cpp:2723
 msgid "Row deletion on the server failed."
 msgstr ""
 
-#: kexi/kexidb/utils.cpp:123
+#: kexi/kexidb/utils.cpp:133
 msgid "Message from server:"
 msgstr "Neges gan y gweinydd:"
 
-#: kexi/kexidb/utils.cpp:125
+#: kexi/kexidb/utils.cpp:135
 msgid "SQL statement:"
 msgstr "Datganiad SQL:"
 
-#: kexi/kexidb/utils.cpp:137
+#: kexi/kexidb/utils.cpp:147
 msgid "Server result name:"
 msgstr "Enw canlyniad y gweinydd:"
 
-#: kexi/kexidb/utils.cpp:139
+#: kexi/kexidb/utils.cpp:149
 msgid "Server result number:"
+msgstr ""
+
+#: kexi/kexidb/utils.cpp:291 kexi/kexidb/utils.cpp:347
+#: kexi/kexidb/utils.cpp:353
+#, fuzzy
+msgid "Test Connection"
+msgstr "Gwall anhysbys"
+
+#: kexi/kexidb/utils.cpp:291
+#, fuzzy
+msgid "<qt>Testing connection to <b>%1</b> database server...</qt>"
+msgstr "Heb ei gysylltu â gweinydd y gronfa ddata"
+
+#: kexi/kexidb/utils.cpp:345
+msgid ""
+"<qt>Test connection to <b>%1</b> database server failed. The server is not "
+"responding.</qt>"
+msgstr ""
+
+#: kexi/kexidb/utils.cpp:351
+msgid ""
+"<qt>Test connection to <b>%1</b> database server established successfully.</qt>"
 msgstr ""
 
 #: showimg/batchrenamer.cpp:185
@@ -753,7 +798,7 @@ msgid "Move Directory %1 To"
 msgstr "Cyfeiriadur: "
 
 #: showimg/directory.cpp:649 showimg/directoryview.cpp:867
-#: showimg/dirfileiconitem.cpp:127
+#: showimg/dirfileiconitem.cpp:147
 msgid "The directory '<b>%1</b>' already exists"
 msgstr ""
 
@@ -873,7 +918,7 @@ msgstr "Data"
 msgid "Describe %1"
 msgstr "Disgrifiad"
 
-#: showimg/describe.cpp:136 showimg/describealbum.cpp:97
+#: showimg/describe.cpp:134 showimg/describealbum.cpp:97
 msgid "Title:"
 msgstr "Teitl:"
 
@@ -907,7 +952,7 @@ msgstr "Allwedd"
 msgid "Value"
 msgstr "Gwerth"
 
-#: showimg/imagelistview.cpp:378 showimg/imagelistview.cpp:465
+#: showimg/imagelistview.cpp:377 showimg/imagelistview.cpp:464
 #: showimg/imagemetainfo.cpp:164 showimg/imagemetainfo.cpp:211
 #: showimg/imageviewer.cpp:283
 msgid "Exif Information"
@@ -1087,16 +1132,16 @@ msgstr "llwytho %1 ..."
 msgid "Adding/checking files in database..."
 msgstr ""
 
-#: showimg/categorydbmanager.cpp:439 showimg/categorydbmanager.cpp:716
-#: showimg/categorydbmanager.cpp:757
+#: showimg/categorydbmanager.cpp:443 showimg/categorydbmanager.cpp:720
+#: showimg/categorydbmanager.cpp:761
 msgid "Setting category for files in database..."
 msgstr ""
 
-#: showimg/categorydbmanager.cpp:452 showimg/categorydbmanager.cpp:728
-#: showimg/categorydbmanager.cpp:777 showimg/categorydbmanager.cpp:808
-#: showimg/categorydbmanager.cpp:837 showimg/categoryview.cpp:145
-#: showimg/cdarchive.cpp:412 showimg/directory.cpp:602
-#: showimg/imagelistview.cpp:851 showimg/imageviewer.cpp:608
+#: showimg/categorydbmanager.cpp:456 showimg/categorydbmanager.cpp:732
+#: showimg/categorydbmanager.cpp:781 showimg/categorydbmanager.cpp:812
+#: showimg/categorydbmanager.cpp:841 showimg/categoryview.cpp:145
+#: showimg/cdarchive.cpp:411 showimg/directory.cpp:602
+#: showimg/imagelistview.cpp:850 showimg/imageviewer.cpp:608
 #: showimg/imageviewer.cpp:1078 showimg/imageviewer.cpp:2239
 #: showimg/imageviewer.cpp:2356 showimg/imageviewer.cpp:2366
 #: showimg/imageviewer.cpp:2375 showimg/imageviewer.cpp:2384
@@ -1107,99 +1152,99 @@ msgstr ""
 msgid "Ready"
 msgstr "Parod"
 
-#: showimg/categorydbmanager.cpp:742
+#: showimg/categorydbmanager.cpp:746
 msgid "Adding files in database..."
 msgstr ""
 
-#: showimg/categorydbmanager.cpp:789
+#: showimg/categorydbmanager.cpp:793
 msgid "Moving files in database..."
 msgstr ""
 
-#: showimg/categorydbmanager.cpp:818
+#: showimg/categorydbmanager.cpp:822
 msgid "Renaming files in database..."
 msgstr ""
 
-#: showimg/categorydbmanager.cpp:874
+#: showimg/categorydbmanager.cpp:878
 msgid "(Updating database...)"
 msgstr ""
 
-#: showimg/describe.cpp:137
+#: showimg/describe.cpp:135
 msgid "Type a short title for the picture"
 msgstr ""
 
-#: showimg/describe.cpp:139
+#: showimg/describe.cpp:137
 msgid "People:"
 msgstr ""
 
-#: showimg/describe.cpp:140
+#: showimg/describe.cpp:138
 msgid "The event where the image was taken"
 msgstr ""
 
-#: showimg/describe.cpp:141
+#: showimg/describe.cpp:139
 msgid "The names of the people on the picture"
 msgstr ""
 
-#: showimg/describe.cpp:142
+#: showimg/describe.cpp:140
 msgid ""
 "Should be a comma separated list without the word \"and\" to allow for easy "
 "parsing for a future search feature. For example: Colin, Mike, Steph, Jeff, "
 "Marc"
 msgstr ""
 
-#: showimg/describe.cpp:143
+#: showimg/describe.cpp:141
 msgid "Date:"
 msgstr "Dyddiad:"
 
-#: showimg/describe.cpp:144
+#: showimg/describe.cpp:142
 msgid "Event:"
 msgstr "Digwyddiad :"
 
-#: showimg/describe.cpp:145
+#: showimg/describe.cpp:143
 msgid "The location where the image was taken"
 msgstr ""
 
-#: showimg/describe.cpp:146
+#: showimg/describe.cpp:144
 msgid "The date and time the picture was taken"
 msgstr ""
 
-#: showimg/describe.cpp:147 showimg/fileiconitem.cpp:384
+#: showimg/describe.cpp:145 showimg/fileiconitem.cpp:390
 msgid "Location:"
 msgstr "Lleoliad:"
 
-#: showimg/describe.cpp:148
+#: showimg/describe.cpp:146
 #, fuzzy
 msgid "Describe"
 msgstr "Disgrifiad"
 
-#: showimg/describe.cpp:149
+#: showimg/describe.cpp:147
 msgid "A description of the picture and any other information"
 msgstr ""
 
-#: showimg/cdarchive.cpp:148
+#: showimg/cdarchive.cpp:146
 msgid "CD Archive folder"
 msgstr ""
 
-#: showimg/cdarchive.cpp:259
+#: showimg/cdarchive.cpp:258
 msgid "CD Archive Root"
 msgstr ""
 
-#: showimg/cdarchive.cpp:290
+#: showimg/cdarchive.cpp:289
 msgid "CD Archive"
 msgstr ""
 
-#: showimg/cdarchive.cpp:300
+#: showimg/cdarchive.cpp:299
 msgid "The given name is empty"
 msgstr ""
 
-#: showimg/cdarchive.cpp:307
+#: showimg/cdarchive.cpp:306
 msgid "The archive '<b>%1</b>' already exists"
 msgstr ""
 
-#: showimg/cdarchive.cpp:371
+#: showimg/cdarchive.cpp:370
 msgid "Loading CD archives..."
 msgstr ""
 
-#: showimg/cdarchive.cpp:400
+#: showimg/cdarchive.cpp:399
 msgid "Loading CD archive %1..."
 msgstr ""
 
@@ -1208,7 +1253,7 @@ msgstr ""
 msgid "Category properties: %1"
 msgstr "Categori"
 
-#: showimg/categoryproperties.cpp:148 showimg/fileiconitem.cpp:383
+#: showimg/categoryproperties.cpp:148 showimg/fileiconitem.cpp:389
 msgid "Name:"
 msgstr "Enw:"
 
@@ -1503,54 +1548,51 @@ msgstr "Enw'r archif:"
 msgid "Rename Series..."
 msgstr ""
 
-#: showimg/categoryimageproperties.cpp:315
-#: showimg/categoryimageproperties.cpp:471 showimg/categorylistitem.cpp:123
-#: showimg/confshowimg.cpp:1664 showimg/confshowimg.cpp:1768
-msgid "Categories"
-msgstr "Categoriau"
-
-#: showimg/categorylistitem.cpp:135 showimg/categorylistitem.cpp:195
+#: showimg/categorylistitem.cpp:124 showimg/categorylistitem.cpp:125
+#: showimg/categorylistitem.cpp:136 showimg/categorylistitem.cpp:196
 #: showimg/categoryview.cpp:231
 msgid "Category"
 msgstr "Categori"
 
-#: showimg/categorylistitem.cpp:572
-msgid "Search..."
+#: showimg/categorylistitem.cpp:573
+#, fuzzy
+msgid "Search"
 msgstr "Chwilio ..."
 
-#: showimg/categorylistitem.cpp:598
+#: showimg/categorylistitem.cpp:599
 #, fuzzy
 msgid "Search pattern"
 msgstr "&Ailenwi Eitem ..."
 
-#: showimg/categorylistitem.cpp:599
+#: showimg/categorylistitem.cpp:600
 #, fuzzy
 msgid "Enter pattern:"
 msgstr "&Ailenwi Eitem ..."
 
-#: showimg/categorylistitem.cpp:600
+#: showimg/categorylistitem.cpp:601
 msgid "pattern"
 msgstr "patrwm"
 
-#: showimg/categorylistitem.cpp:693
+#: showimg/categorylistitem.cpp:694
 #, fuzzy, c-format
-msgid "Note - %1"
+msgid "/Note/%1"
 msgstr "Noder"
 
-#: showimg/categorylistitem.cpp:703
-msgid "Note..."
-msgstr "Nodiad..."
+#: showimg/categoryimageproperties.cpp:472 showimg/categorylistitem.cpp:704
+#: showimg/categorylistitem.cpp:705
+msgid "Note"
+msgstr "Noder"
 
 #: showimg/listitemview.cpp:96
 msgid "Name"
 msgstr "Enw"
 
-#: showimg/fileiconitem.cpp:418 showimg/listitemview.cpp:97
+#: showimg/fileiconitem.cpp:424 showimg/listitemview.cpp:97
 #: showimg/rename.cpp:960
 msgid "Type"
 msgstr "Math"
 
-#: showimg/fileiconitem.cpp:424 showimg/listitemview.cpp:98
+#: showimg/fileiconitem.cpp:430 showimg/listitemview.cpp:98
 msgid "Size"
 msgstr "Maint"
 
@@ -1559,11 +1601,11 @@ msgstr "Maint"
 msgid "Rename %1"
 msgstr "Ail-enwi %1"
 
-#: showimg/imagelistview.cpp:733 showimg/listitemview.cpp:174
+#: showimg/imagelistview.cpp:732 showimg/listitemview.cpp:174
 msgid "Enter new name:"
 msgstr ""
 
-#: showimg/listitem.cpp:276 showimg/listitemview.cpp:548
+#: showimg/listitem.cpp:289 showimg/listitemview.cpp:548
 msgid "Loading %1..."
 msgstr "llwytho %1 ..."
 
@@ -1748,7 +1790,7 @@ msgstr ""
 msgid "Could not play movie \"%1\""
 msgstr ""
 
-#: showimg/imagelistview.cpp:436 showimg/imageviewer.cpp:778
+#: showimg/imagelistview.cpp:435 showimg/imageviewer.cpp:778
 msgid "Open With"
 msgstr "Agor Efo"
 
@@ -1785,7 +1827,7 @@ msgstr ""
 msgid "Flip..."
 msgstr ""
 
-#: showimg/imagelistview.cpp:2131 showimg/imageviewer.cpp:2587
+#: showimg/imagelistview.cpp:2159 showimg/imageviewer.cpp:2587
 msgid "This item has no Exif Information."
 msgstr ""
 
@@ -1837,16 +1879,16 @@ msgstr ""
 msgid "<b>name</b>: %1<br><b>archive</b>: %2<br>"
 msgstr ""
 
-#: showimg/fileiconitem.cpp:388
+#: showimg/fileiconitem.cpp:394
 msgid "Description:"
 msgstr "Disgrifiad:"
 
-#: showimg/fileiconitem.cpp:430
+#: showimg/fileiconitem.cpp:436
 #, fuzzy
 msgid "Modification"
 msgstr "Lleoliad"
 
-#: showimg/fileiconitem.cpp:620
+#: showimg/fileiconitem.cpp:626
 msgid "Pixels"
 msgstr "Picseli"
 
@@ -1863,7 +1905,7 @@ msgstr ""
 msgid "Dimension:"
 msgstr "Estyniad"
 
-#: showimg/dirfileiconitem.cpp:147
+#: showimg/dirfileiconitem.cpp:167
 msgid "The directory <b>%1</b> cannot be renamed"
 msgstr ""
 
@@ -1880,180 +1922,180 @@ msgstr ""
 msgid "<br><b>description</b>: %1"
 msgstr ""
 
-#: showimg/imagelistview.cpp:318
+#: showimg/imagelistview.cpp:317
 #, fuzzy
 msgid "Rename File"
 msgstr "Ail-&enwi..."
 
-#: showimg/imagelistview.cpp:319 showimg/mainwindow.cpp:1516
+#: showimg/imagelistview.cpp:318 showimg/mainwindow.cpp:1516
 msgid "Delete File"
 msgstr "Dileu Ffeil"
 
-#: showimg/imagelistview.cpp:320
+#: showimg/imagelistview.cpp:319
 msgid "Move File to Trash"
 msgstr ""
 
-#: showimg/imagelistview.cpp:321
+#: showimg/imagelistview.cpp:320
 msgid "Shred File"
 msgstr ""
 
-#: showimg/categoryview.cpp:136 showimg/imagelistview.cpp:324
+#: showimg/categoryview.cpp:136 showimg/imagelistview.cpp:323
 msgid "Category Properties"
 msgstr ""
 
-#: showimg/imagelistview.cpp:325
+#: showimg/imagelistview.cpp:324
 msgid "Image Info"
 msgstr ""
 
-#: showimg/imagelistview.cpp:328
+#: showimg/imagelistview.cpp:327
 msgid "Unselect All"
 msgstr "Dad-ddewis Popeth"
 
-#: showimg/imagelistview.cpp:329
+#: showimg/imagelistview.cpp:328
 msgid "Invert Selection"
 msgstr "Gwrthdroi Dewisiad"
 
-#: showimg/imagelistview.cpp:332
+#: showimg/imagelistview.cpp:331
 msgid "Small Icons"
 msgstr "Eiconau Bach"
 
-#: showimg/imagelistview.cpp:334
+#: showimg/imagelistview.cpp:333
 msgid "Medium Icons"
 msgstr ""
 
-#: showimg/imagelistview.cpp:336
+#: showimg/imagelistview.cpp:335
 msgid "Large Icons"
 msgstr "Eiconau Mawr"
 
-#: showimg/imagelistview.cpp:341
+#: showimg/imagelistview.cpp:340
 msgid "Icon Size"
 msgstr "Maint Eicon"
 
-#: showimg/imagelistview.cpp:348
+#: showimg/imagelistview.cpp:347
 msgid "By Name"
 msgstr "Gan Enw"
 
-#: showimg/imagelistview.cpp:349
+#: showimg/imagelistview.cpp:348
 msgid "By Type"
 msgstr "Gan Fath"
 
-#: showimg/imagelistview.cpp:350
+#: showimg/imagelistview.cpp:349
 msgid "By Size"
 msgstr "Gan Faint"
 
-#: showimg/imagelistview.cpp:351
+#: showimg/imagelistview.cpp:350
 msgid "By Date"
 msgstr "Gan Ddyddiad"
 
-#: showimg/imagelistview.cpp:352
+#: showimg/imagelistview.cpp:351
 #, fuzzy
 msgid "By Path && Name"
 msgstr "Gan Enw"
 
-#: showimg/imagelistview.cpp:361
+#: showimg/imagelistview.cpp:360
 msgid "Open with &Gimp"
 msgstr ""
 
-#: showimg/imagelistview.cpp:362
+#: showimg/imagelistview.cpp:361
 msgid "Edit with &showFoto"
 msgstr ""
 
-#: showimg/imagelistview.cpp:364
+#: showimg/imagelistview.cpp:363
 msgid "&Other..."
 msgstr "&Eraill..."
 
-#: showimg/imagelistview.cpp:368
+#: showimg/imagelistview.cpp:367
 #, fuzzy
 msgid "Move File to..."
 msgstr "Ail-&enwi..."
 
-#: showimg/imagelistview.cpp:369
+#: showimg/imagelistview.cpp:368
 msgid "Copy File to..."
 msgstr ""
 
-#: showimg/imagelistview.cpp:370
+#: showimg/imagelistview.cpp:369
 msgid "Move File to Last Directory"
 msgstr ""
 
-#: showimg/imagelistview.cpp:372
+#: showimg/imagelistview.cpp:371
 msgid "Copy File to Last Directory"
 msgstr ""
 
-#: showimg/confshowimg.cpp:1522 showimg/imagelistview.cpp:387
+#: showimg/confshowimg.cpp:1522 showimg/imagelistview.cpp:386
 msgid "Top Left"
 msgstr "Chwith Uchaf"
 
-#: showimg/confshowimg.cpp:1524 showimg/imagelistview.cpp:388
+#: showimg/confshowimg.cpp:1524 showimg/imagelistview.cpp:387
 msgid "Top Right"
 msgstr "De Uchaf"
 
-#: showimg/confshowimg.cpp:1520 showimg/imagelistview.cpp:390
+#: showimg/confshowimg.cpp:1520 showimg/imagelistview.cpp:389
 msgid "Bottom Left"
 msgstr "Chwith Gwaelod"
 
-#: showimg/imagelistview.cpp:392
+#: showimg/imagelistview.cpp:391
 msgid "Right Top"
 msgstr "Dde pen"
 
-#: showimg/imagelistview.cpp:394
+#: showimg/imagelistview.cpp:393
 msgid "Left Bottom"
 msgstr "Chwith gwaelod"
 
-#: showimg/imagelistview.cpp:396
+#: showimg/imagelistview.cpp:395
 #, fuzzy
 msgid "(Re)generate EXIF Thumbnail"
 msgstr "Rhagolygon cryno"
 
-#: showimg/imagelistview.cpp:398
+#: showimg/imagelistview.cpp:397
 #, fuzzy
 msgid "Regenerate Thumbnail"
 msgstr "Rhagolygon cryno"
 
-#: showimg/imagelistview.cpp:413
+#: showimg/imagelistview.cpp:412
 msgid "Sort"
 msgstr "Trefnu"
 
-#: showimg/imagelistview.cpp:464 showimg/rename.cpp:942
+#: showimg/imagelistview.cpp:463 showimg/rename.cpp:942
 msgid "EXIF"
 msgstr ""
 
-#: showimg/imagelistview.cpp:560
+#: showimg/imagelistview.cpp:559
 #, c-format
 msgid "Error while running %1."
 msgstr ""
 
-#: showimg/imagelistview.cpp:732
+#: showimg/imagelistview.cpp:731
 msgid "Rename %1:"
 msgstr "Ail-enwi %1 :"
 
-#: showimg/imagelistview.cpp:849
+#: showimg/imagelistview.cpp:848
 #, c-format
 msgid ""
 "_n: %n selected file\n"
 "%n selected files"
 msgstr ""
 
-#: showimg/imagelistview.cpp:1111
+#: showimg/imagelistview.cpp:1118
 msgid "%1 selected files"
 msgstr ""
 
-#: showimg/imagelistview.cpp:1477
+#: showimg/imagelistview.cpp:1488
 msgid ""
 "Error while running showFoto."
 "<br>Please check \"showfoto\" on your system."
 msgstr ""
 
-#: showimg/imagelistview.cpp:1493
+#: showimg/imagelistview.cpp:1504
 msgid ""
 "Error while running Gimp."
 "<br>Please check \"gimp-remote\" on your system."
 msgstr ""
 
-#: showimg/imagelistview.cpp:1857
+#: showimg/imagelistview.cpp:1868
 msgid "Move Selected Files To"
 msgstr ""
 
-#: showimg/imagelistview.cpp:1898
+#: showimg/imagelistview.cpp:1909
 msgid "Copy Selected Files To"
 msgstr ""
 
@@ -2093,19 +2135,19 @@ msgstr "Creu Ne&wydd"
 msgid "Enter category name:"
 msgstr ""
 
-#: showimg/categoryview.cpp:374
+#: showimg/categoryview.cpp:334
 msgid "Selection mode: AND"
 msgstr ""
 
-#: showimg/categoryview.cpp:390
+#: showimg/categoryview.cpp:350
 msgid "Selection mode: OR"
 msgstr ""
 
-#: showimg/categoryview.cpp:405
+#: showimg/categoryview.cpp:365
 msgid "Adding files..."
 msgstr ""
 
-#: showimg/categoryview.cpp:414
+#: showimg/categoryview.cpp:374
 msgid "Adding files (%1 left)..."
 msgstr ""
 
@@ -2521,7 +2563,7 @@ msgstr "L&leoliad:"
 msgid "Go"
 msgstr "Ewch"
 
-#: showimg/mainwindow.cpp:938 showimg/mainwindow.cpp:2573
+#: showimg/mainwindow.cpp:938 showimg/mainwindow.cpp:2574
 #, c-format
 msgid ""
 "_n: 1 image seen\n"
@@ -2589,30 +2631,30 @@ msgstr ""
 msgid "The directory '<b>%1</b>' is not local"
 msgstr ""
 
-#: showimg/mainwindow.cpp:2500
+#: showimg/mainwindow.cpp:2501
 msgid "Thumbnail progress"
 msgstr ""
 
-#: showimg/mainwindow.cpp:2503
+#: showimg/mainwindow.cpp:2504
 msgid "Updating in progress..."
 msgstr ""
 
-#: showimg/mainwindow.cpp:2526
+#: showimg/mainwindow.cpp:2527
 msgid "Updating in progress for:<center>%1</center>"
 msgstr ""
 
-#: showimg/mainwindow.cpp:2574
+#: showimg/mainwindow.cpp:2575
 #, c-format
 msgid ""
 "_n: You have already seen <b>1</b> image.\n"
 "You have already seen <b>%n</b> images."
 msgstr ""
 
-#: showimg/mainwindow.cpp:2664
+#: showimg/mainwindow.cpp:2666
 msgid "Unable to open the directory <b>%1</b>"
 msgstr ""
 
-#: showimg/mainwindow.cpp:2665
+#: showimg/mainwindow.cpp:2667
 #, fuzzy
 msgid "Directory does not exist"
 msgstr "Nid yw'r ffeil gronfa ddata \"%1\" yn bodoli."
@@ -2627,6 +2669,12 @@ msgstr ""
 msgid "Confirm"
 msgstr "Cadarnhau"
 
+#: showimg/categoryimageproperties.cpp:315
+#: showimg/categoryimageproperties.cpp:471 showimg/confshowimg.cpp:1664
+#: showimg/confshowimg.cpp:1765
+msgid "Categories"
+msgstr "Categoriau"
+
 #: showimg/categoryimageproperties.cpp:469
 msgid "Comments"
 msgstr "Sylwadau"
@@ -2634,10 +2682,6 @@ msgstr "Sylwadau"
 #: showimg/categoryimageproperties.cpp:470
 msgid "Change all comments"
 msgstr ""
-
-#: showimg/categoryimageproperties.cpp:472
-msgid "Note"
-msgstr "Noder"
 
 #: showimg/categoryimageproperties.cpp:473
 msgid "Change all notes"
@@ -3043,7 +3087,7 @@ msgstr ""
 msgid "Enable video support"
 msgstr ""
 
-#: showimg/confshowimg.cpp:1602 showimg/confshowimg.cpp:1771
+#: showimg/confshowimg.cpp:1602 showimg/confshowimg.cpp:1768
 msgid "Choose engine"
 msgstr ""
 
@@ -3052,36 +3096,36 @@ msgstr ""
 msgid "Categories support"
 msgstr "Categori"
 
-#: showimg/confshowimg.cpp:1769
+#: showimg/confshowimg.cpp:1766
 #, fuzzy
 msgid "Enable categories"
 msgstr "Categori"
 
-#: showimg/confshowimg.cpp:1770
+#: showimg/confshowimg.cpp:1767
 msgid "Add all images while browsing"
 msgstr ""
 
-#: showimg/confshowimg.cpp:1773 showimg/confshowimg.cpp:1777
+#: showimg/confshowimg.cpp:1770 showimg/confshowimg.cpp:1774
 msgid "SQLite (default)"
 msgstr ""
 
-#: showimg/confshowimg.cpp:1774 showimg/confshowimg.cpp:1782
+#: showimg/confshowimg.cpp:1771 showimg/confshowimg.cpp:1779
 msgid "MySQL"
 msgstr "MySQL"
 
-#: showimg/confshowimg.cpp:1776
+#: showimg/confshowimg.cpp:1773
 msgid "Database Path:"
 msgstr ""
 
-#: showimg/confshowimg.cpp:1779
+#: showimg/confshowimg.cpp:1776
 msgid "Username:"
 msgstr "Enw defnyddiwr:"
 
-#: showimg/confshowimg.cpp:1780
+#: showimg/confshowimg.cpp:1777
 msgid "Password:"
 msgstr "Cyfrinair:"
 
-#: showimg/confshowimg.cpp:1781
+#: showimg/confshowimg.cpp:1778
 msgid "Hostname:"
 msgstr "Enw Gwesteiwr:"
 
@@ -3255,40 +3299,40 @@ msgstr "Creu Ne&wydd"
 msgid "Unable to set category icon for '%1'."
 msgstr "Creu Ne&wydd"
 
-#: showimgdb/categories.cpp:123
+#: showimgdb/categories.cpp:125
 #, fuzzy
 msgid "Connection Error"
 msgstr "Gwall anhysbys"
 
-#: showimgdb/categories.cpp:351
+#: showimgdb/categories.cpp:353
 msgid "Location"
 msgstr "Lleoliad"
 
-#: showimgdb/categories.cpp:351
+#: showimgdb/categories.cpp:353
 msgid "Some places and locations"
 msgstr ""
 
-#: showimgdb/categories.cpp:352
+#: showimgdb/categories.cpp:354
 msgid "People"
 msgstr ""
 
-#: showimgdb/categories.cpp:352
+#: showimgdb/categories.cpp:354
 msgid "All people you know"
 msgstr ""
 
-#: showimgdb/categories.cpp:353
+#: showimgdb/categories.cpp:355
 msgid "Events"
 msgstr "Digwyddiadau"
 
-#: showimgdb/categories.cpp:353
+#: showimgdb/categories.cpp:355
 msgid "Some events"
 msgstr ""
 
-#: showimgdb/categories.cpp:354
+#: showimgdb/categories.cpp:356
 msgid "Keywords"
 msgstr "Allweddeiriau"
 
-#: showimgdb/categories.cpp:354
+#: showimgdb/categories.cpp:356
 msgid "All keywords you want"
 msgstr ""
 
@@ -3439,6 +3483,9 @@ msgid ""
 "src=\"crystalsvg/22x22/actions/locationbar_erase.png\">"
 "&nbsp;location&nbsp;toolbar and press enter.</p>\n"
 msgstr ""
+
+#~ msgid "Note..."
+#~ msgstr "Nodiad..."
 
 #, fuzzy
 #~ msgid "Icon View Toolbar"
