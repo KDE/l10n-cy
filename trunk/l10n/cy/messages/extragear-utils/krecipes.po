@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-3/krecipes.po\n"
-"POT-Creation-Date: 2005-08-20 02:49+0200\n"
+"POT-Creation-Date: 2005-08-21 02:48+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -1192,6 +1192,21 @@ msgstr ""
 msgid "Ingredient Name"
 msgstr ""
 
+#: src/dialogs/restoredialog.cpp:93
+msgid "Restore Backup"
+msgstr ""
+
+#: src/dialogs/restoredialog.cpp:94
+msgid ""
+"Please a select a backup file.<br /><br /><b>Important: A backup file created "
+"from one database backend can only be restored into the same database "
+"backend.</b>"
+msgstr ""
+
+#: src/dialogs/restoredialog.cpp:96
+msgid "Backup file:"
+msgstr ""
+
 #: src/dialogs/selectunitdialog.cpp:25
 msgid "Choose Unit"
 msgstr ""
@@ -1410,7 +1425,12 @@ msgid "PostgreSQL Superuser or Privileged Account"
 msgstr ""
 
 #: src/setupwizard.cpp:378
-msgid "In this dialog you can adjust the database server settings."
+msgid ""
+"In this dialog you can adjust the database server settings."
+"<br>"
+"<br><b>Warning: Passwords are stored in plain text and could potentially be "
+"compromised.  We recommend that you create a username and password combination "
+"solely for use by Krecipes.</b>"
 msgstr ""
 
 #: src/setupwizard.cpp:446
@@ -1615,51 +1635,60 @@ msgstr ""
 msgid "Saving recipes..."
 msgstr ""
 
-#: src/krecipes.cpp:108
+#: src/krecipes.cpp:111
 msgid ""
 "Gathering recipe data from file.\n"
 "Please wait..."
 msgstr ""
 
-#: src/krecipes.cpp:150
+#: src/krecipes.cpp:153
 msgid "Reloa&d"
 msgstr "Ail-l&wytho"
 
-#: src/krecipes.cpp:152
+#: src/krecipes.cpp:155
 msgid "&Edit Recipe"
 msgstr ""
 
-#: src/krecipes.cpp:158
+#: src/krecipes.cpp:161
 msgid "&New Recipe"
 msgstr ""
 
-#: src/krecipes.cpp:171
+#: src/krecipes.cpp:174
 msgid "Import from File..."
 msgstr "Mewnforio o Ffeil..."
 
-#: src/krecipes.cpp:175
+#: src/krecipes.cpp:178
 msgid "Import from Database..."
 msgstr ""
 
-#: src/krecipes.cpp:179
+#: src/krecipes.cpp:182
 msgid "Export..."
 msgstr "Allforio..."
 
-#: src/krecipes.cpp:183
+#: src/krecipes.cpp:186
 msgid "Page Setup..."
 msgstr "Gosodiad Tudalen ..."
 
-#: src/krecipes.cpp:302
+#: src/krecipes.cpp:190
+msgid "Backup..."
+msgstr ""
+
+#: src/krecipes.cpp:194
+#, fuzzy
+msgid "Restore..."
+msgstr "Ymyl ..."
+
+#: src/krecipes.cpp:313
 msgid ""
 "Filter \"%1\" not recognized.\n"
 "Please select one of the provided filters."
 msgstr ""
 
-#: src/krecipes.cpp:304
+#: src/krecipes.cpp:315
 msgid "Unrecognized Filter"
 msgstr ""
 
-#: src/krecipes.cpp:321
+#: src/krecipes.cpp:332
 msgid ""
 "NOTE: We recommend that all recipes generating warnings be checked to ensure "
 "that they were properly imported, and no loss of recipe data has occurred."
@@ -1667,17 +1696,30 @@ msgid ""
 "<br>"
 msgstr ""
 
-#: src/krecipes.cpp:324
+#: src/krecipes.cpp:335
 msgid "Import Warnings"
 msgstr ""
 
-#: src/krecipes.cpp:380
+#: src/krecipes.cpp:388
+#, fuzzy
+msgid "Save Backup As..."
+msgstr "&Cadw Fel..."
+
+#: src/krecipes.cpp:396
+msgid ""
+"<b>Restoring this file will erase all data currently in the database!</b>.<br />"
+"<br />If you want to keep the recipes in your database, click \"Cancel\" and "
+"first export your recipes.  These can then be imported once the restore is "
+"complete.<br /><br />Are you sure you want to proceed?"
+msgstr ""
+
+#: src/krecipes.cpp:411
 msgid ""
 "A recipe contains unsaved changes.\n"
 "Do you want to save the changes before exiting?"
 msgstr ""
 
-#: src/krecipes.cpp:382
+#: src/krecipes.cpp:413
 msgid "Unsaved Changes"
 msgstr "Newidiadau Heb eu Cadw"
 
@@ -1808,18 +1850,18 @@ msgid ""
 "Failing to open database. Exiting\n"
 msgstr ""
 
-#: src/backends/SQLite/literecipedb.cpp:78 src/backends/qsqlrecipedb.cpp:105
+#: src/backends/SQLite/literecipedb.cpp:74 src/backends/qsqlrecipedb.cpp:105
 msgid ""
 "This database was created with a newer version of Krecipes and cannot be "
 "opened."
 msgstr ""
 
-#: src/backends/SQLite/literecipedb.cpp:85 src/backends/qsqlrecipedb.cpp:111
+#: src/backends/SQLite/literecipedb.cpp:81 src/backends/qsqlrecipedb.cpp:114
 msgid ""
 "Failed to fix database structure. Exiting.\n"
 msgstr ""
 
-#: src/backends/qsqlrecipedb.cpp:1399
+#: src/backends/qsqlrecipedb.cpp:1390
 msgid ""
 "<!doc>The database was created with a previous version of Krecipes.  Would you "
 "like Krecipes to update this database to work with this version of Krecipes?"
@@ -1830,30 +1872,36 @@ msgstr ""
 
 #: src/backends/SQLite/literecipedb.cpp:53
 #: src/backends/SQLite/literecipedb.cpp:61
-#: src/backends/SQLite/literecipedb.cpp:72
+#: src/backends/SQLite/literecipedb.cpp:68
 msgid ""
 "Krecipes could not open the SQLite database. You may not have the necessary "
 "permissions.\n"
 msgstr ""
 
-#: src/backends/SQLite/literecipedb.cpp:71
+#: src/backends/SQLite/literecipedb.cpp:67
 msgid ""
 "Could not open DB. You may not have permissions. Exiting.\n"
 msgstr ""
 
-#: src/backends/SQLite/literecipedb.cpp:86
+#: src/backends/SQLite/literecipedb.cpp:82
 msgid ""
 "Krecipes failed to fix the SQLite database structure. You may not have the "
 "necessary permissions, or the database structure may be too corrupted.\n"
 msgstr ""
 
-#: src/backends/SQLite/literecipedb.cpp:1435
+#: src/backends/SQLite/literecipedb.cpp:1416
 msgid ""
 "<!doc>This database was created with a previous version of Krecipes.  Would you "
 "like Krecipes to update this database to work with this version of Krecipes?"
 "<br>"
 "<br><b>Warning: After updating, this database will no longer be compatible with "
 "previous versions of Krecipes.</b>"
+msgstr ""
+
+#: src/backends/recipedb.cpp:238
+msgid ""
+"This backup was created with a newer version of Krecipes and cannot be "
+"restored."
 msgstr ""
 
 #: src/widgets/unitlistview.cpp:58
@@ -2422,6 +2470,3 @@ msgstr "kyfieithu@dotmon.com"
 
 #~ msgid "Search Results"
 #~ msgstr "Canlyniadau Chwilio"
-
-#~ msgid "&Save As..."
-#~ msgstr "&Cadw Fel..."
