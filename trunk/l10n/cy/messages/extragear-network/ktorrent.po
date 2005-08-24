@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2005-08-22 02:47+0200\n"
+"POT-Creation-Date: 2005-08-24 02:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,36 +37,36 @@ msgstr ""
 msgid "Start"
 msgstr "Dechrau"
 
-#: src/ktorrent.cpp:325
+#: src/ktorrent.cpp:317
 #, fuzzy
 msgid "Torrent Files"
 msgstr "KTorrent"
 
-#: src/ktorrent.cpp:325
+#: src/ktorrent.cpp:317
 msgid "All files"
 msgstr "Pob Ffeil"
 
-#: src/ktorrent.cpp:326
+#: src/ktorrent.cpp:318
 msgid "Open Location"
 msgstr "Agor Lleoliad"
 
-#: src/ktorrent.cpp:341
+#: src/ktorrent.cpp:333
 msgid "Select Directory to Save To"
 msgstr ""
 
-#: src/ktorrent.cpp:361
+#: src/ktorrent.cpp:353
 msgid "The download %1 has finished. Do you want to save it now?"
 msgstr ""
 
-#: src/ktorrent.cpp:363
+#: src/ktorrent.cpp:355
 msgid "Save Torrent?"
 msgstr ""
 
-#: src/ktorrent.cpp:363
+#: src/ktorrent.cpp:355
 msgid "Do Not Save"
 msgstr "Peidiwch â Chadw"
 
-#: src/ktorrent.cpp:403
+#: src/ktorrent.cpp:395
 #, c-format
 msgid ""
 "_n: Cannot start more than 1 download. Go to Settings -> "
@@ -75,25 +75,25 @@ msgid ""
 "Configure KTorrent, if you want to change the limit."
 msgstr ""
 
-#: src/ktorrent.cpp:430 src/ktorrentview.cpp:118
+#: src/ktorrent.cpp:422 src/ktorrentview.cpp:118
 msgid ""
-"You will loose all data you downloaded if you do this. Are you sure you want to "
-"do this ?"
+"You will lose all data downloaded for this torrent, if you do this. Are you "
+"sure you want to do this?"
 msgstr ""
 
-#: src/ktorrent.cpp:432 src/ktorrentview.cpp:120
-msgid "Are you sure ?"
+#: src/ktorrent.cpp:424 src/ktorrentview.cpp:120
+msgid "Are you sure?"
 msgstr ""
 
-#: src/ktorrent.cpp:537
+#: src/ktorrent.cpp:529
 msgid "Speed up: %1 / down: %2"
 msgstr ""
 
-#: src/ktorrent.cpp:543
+#: src/ktorrent.cpp:535
 msgid "Transfered up: %1 / down: %2"
 msgstr ""
 
-#: src/functions.cpp:33
+#: src/functions.cpp:34
 msgid "%1 GB"
 msgstr "%1 GB"
 
@@ -101,7 +101,17 @@ msgstr "%1 GB"
 msgid "%1 MB"
 msgstr "%1 MB"
 
-#: src/functions.cpp:42
+#: src/functions.cpp:38
+#, fuzzy
+msgid "%1 KB"
+msgstr "%1 GB"
+
+#: src/functions.cpp:40
+#, fuzzy
+msgid "%1 B"
+msgstr "%1 MB"
+
+#: src/functions.cpp:46
 msgid "%1 KB/sec"
 msgstr ""
 
@@ -111,13 +121,7 @@ msgid ""
 "that the torrent file is corrupted, or it is not a torrent file at all."
 msgstr ""
 
-#: src/ktorrentcore.cpp:374
-msgid ""
-"The following error occurred: %1\n"
-"Stopping download ..."
-msgstr ""
-
-#: src/ktorrentcore.cpp:429
+#: src/ktorrentcore.cpp:417
 #, c-format
 msgid "Cannot create torrent: %1"
 msgstr ""
@@ -145,6 +149,10 @@ msgstr "Wedi Seibio"
 #: src/ktorrentviewitem.cpp:46
 msgid "Stopped"
 msgstr "Wedi aros"
+
+#: src/ktorrentviewitem.cpp:48
+msgid "Error : "
+msgstr ""
 
 #: src/ktorrentviewitem.cpp:118
 msgid "finished"
@@ -281,7 +289,9 @@ msgstr ""
 msgid "Time Left"
 msgstr ""
 
-#: src/infowidget.cpp:75 src/ktorrentview.cpp:49
+#. i18n: file ./src/infowidgetbase.ui line 242
+#: rc.cpp:162 src/infowidget.cpp:75 src/ktorrentview.cpp:49
+#, no-c-format
 msgid "Peers"
 msgstr ""
 
@@ -293,8 +303,8 @@ msgstr ""
 msgid "Manual Announce"
 msgstr ""
 
-#. i18n: file ./src/infowidgetbase.ui line 374
-#: rc.cpp:185 src/infowidget.cpp:61 src/ktorrentview.cpp:74
+#. i18n: file ./src/infowidgetbase.ui line 554
+#: rc.cpp:200 src/infowidget.cpp:61 src/ktorrentview.cpp:74
 #, no-c-format
 msgid "Preview"
 msgstr "Rhagolwg"
@@ -323,7 +333,9 @@ msgstr "Ar gael"
 msgid "Pending"
 msgstr ""
 
-#: src/infowidget.cpp:83
+#. i18n: file ./src/infowidgetbase.ui line 76
+#: rc.cpp:143 src/infowidget.cpp:83
+#, no-c-format
 msgid "Chunks"
 msgstr ""
 
@@ -336,7 +348,7 @@ msgid "Download Torrent"
 msgstr ""
 
 #. i18n: file ./src/fileselectdlgbase.ui line 47
-#: rc.cpp:12 rc.cpp:182 src/htmlpart.cpp:163
+#: rc.cpp:12 rc.cpp:197 src/htmlpart.cpp:163
 #, no-c-format
 msgid "Download"
 msgstr "Lawrlwytho"
@@ -385,35 +397,35 @@ msgstr ""
 msgid "Can't save chunk_info file : %1"
 msgstr ""
 
-#: libtorrent/torrentcontrol.cpp:231
+#: libtorrent/torrentcontrol.cpp:242
 msgid "Invalid repsonse"
 msgstr ""
 
-#: libtorrent/torrentcontrol.cpp:234
-msgid "The tracker %1 did not send a proper response, stopping download"
+#: libtorrent/torrentcontrol.cpp:245
+msgid "The tracker %1 did not send a proper response"
 msgstr ""
 
-#: libtorrent/torrentcontrol.cpp:242 libtorrent/torrentcontrol.cpp:250
+#: libtorrent/torrentcontrol.cpp:254 libtorrent/torrentcontrol.cpp:262
 msgid "Invalid repsonse, trying backup"
 msgstr ""
 
-#: libtorrent/torrentcontrol.cpp:262
+#: libtorrent/torrentcontrol.cpp:274
 msgid "Unreachable"
 msgstr ""
 
-#: libtorrent/torrentcontrol.cpp:265
-msgid "The tracker %1 is down, stopping download."
+#: libtorrent/torrentcontrol.cpp:277
+msgid "The tracker %1 is down."
 msgstr ""
 
-#: libtorrent/torrentcontrol.cpp:272 libtorrent/torrentcontrol.cpp:281
+#: libtorrent/torrentcontrol.cpp:286 libtorrent/torrentcontrol.cpp:295
 msgid "Unreachable, trying backup"
 msgstr ""
 
-#: libtorrent/peerid.cpp:124
+#: libtorrent/peerid.cpp:136
 msgid "Unknown client"
 msgstr ""
 
-#: libtorrent/chunkdownload.cpp:264
+#: libtorrent/chunkdownload.cpp:265
 #, c-format
 msgid ""
 "_n: 1 peer\n"
@@ -427,16 +439,16 @@ msgid "Cannot open file %1: %2"
 msgstr ""
 
 #: libtorrent/announcelist.cpp:51 libtorrent/announcelist.cpp:57
-#: libtorrent/httptracker.cpp:52 libtorrent/httptracker.cpp:68
+#: libtorrent/httptracker.cpp:52 libtorrent/httptracker.cpp:69
 msgid "Parse Error"
 msgstr ""
 
-#: libtorrent/httptracker.cpp:59
+#: libtorrent/httptracker.cpp:58
 #, c-format
 msgid "The tracker sent back the following error: %1"
 msgstr ""
 
-#: libtorrent/httptracker.cpp:82
+#: libtorrent/httptracker.cpp:91
 msgid "Parse error"
 msgstr ""
 
@@ -493,7 +505,7 @@ msgid "Select Which Files You Want to Download"
 msgstr ""
 
 #. i18n: file ./src/fileselectdlgbase.ui line 36
-#: rc.cpp:9 rc.cpp:179
+#: rc.cpp:9 rc.cpp:194
 #, no-c-format
 msgid "Size"
 msgstr "Maint"
@@ -612,80 +624,68 @@ msgstr ""
 msgid "Download Toolbar"
 msgstr ""
 
-#. i18n: file ./src/downloadpref.ui line 16
+#. i18n: file ./src/downloadpref.ui line 40
 #: rc.cpp:90
-#, fuzzy, no-c-format
-msgid "DownloadPref"
-msgstr "Lawrlwytho"
-
-#. i18n: file ./src/downloadpref.ui line 43
-#: rc.cpp:93
 #, no-c-format
 msgid "Maximum downloads:"
 msgstr ""
 
-#. i18n: file ./src/downloadpref.ui line 51
-#: rc.cpp:96
+#. i18n: file ./src/downloadpref.ui line 48
+#: rc.cpp:93
 #, no-c-format
 msgid "Maximum connections per download:"
 msgstr ""
 
-#. i18n: file ./src/downloadpref.ui line 59
-#: rc.cpp:99
+#. i18n: file ./src/downloadpref.ui line 56
+#: rc.cpp:96
 #, no-c-format
 msgid "Maximum upload rate:"
 msgstr ""
 
-#. i18n: file ./src/downloadpref.ui line 67
-#: rc.cpp:102
+#. i18n: file ./src/downloadpref.ui line 64
+#: rc.cpp:99
 #, no-c-format
 msgid "Maximum download rate:"
 msgstr ""
 
-#. i18n: file ./src/downloadpref.ui line 75
-#: rc.cpp:105
+#. i18n: file ./src/downloadpref.ui line 72
+#: rc.cpp:102
 #, no-c-format
 msgid "Port:"
 msgstr "Porth:"
 
-#. i18n: file ./src/downloadpref.ui line 83
-#: rc.cpp:108
+#. i18n: file ./src/downloadpref.ui line 80
+#: rc.cpp:105
 #, no-c-format
 msgid "UDP tracker port:"
 msgstr ""
 
-#. i18n: file ./src/downloadpref.ui line 180
-#: rc.cpp:111 rc.cpp:114
+#. i18n: file ./src/downloadpref.ui line 177
+#: rc.cpp:108 rc.cpp:111
 #, no-c-format
 msgid "(0 is no limit)"
 msgstr ""
 
-#. i18n: file ./src/downloadpref.ui line 196
-#: rc.cpp:117 rc.cpp:120
+#. i18n: file ./src/downloadpref.ui line 193
+#: rc.cpp:114 rc.cpp:117
 #, no-c-format
 msgid "KB/sec (0 is no limit)"
 msgstr ""
 
-#. i18n: file ./src/downloadpref.ui line 250
-#: rc.cpp:123
+#. i18n: file ./src/downloadpref.ui line 247
+#: rc.cpp:120
 #, no-c-format
 msgid "&Keep seeding after download is finished"
 msgstr ""
 
-#. i18n: file ./src/downloadpref.ui line 253
-#: rc.cpp:126
-#, no-c-format
-msgid "Alt+K"
-msgstr ""
-
-#. i18n: file ./src/downloadpref.ui line 264
-#: rc.cpp:129
+#. i18n: file ./src/downloadpref.ui line 258
+#: rc.cpp:123
 #, no-c-format
 msgid "Attention"
 msgstr "Taler Sylw"
 
-#. i18n: file ./src/downloadpref.ui line 277
-#: rc.cpp:132
+#. i18n: file ./src/downloadpref.ui line 271
+#: rc.cpp:126
 #, no-c-format
 msgid ""
 "If you are behind a NAT-enabled rooter, it is important that you forward \n"
@@ -693,173 +693,201 @@ msgid ""
 "do not know how to do this."
 msgstr ""
 
-#. i18n: file ./src/infowidgetbase.ui line 28
-#: rc.cpp:137
+#. i18n: file ./src/infowidgetbase.ui line 16
+#: rc.cpp:131
+#, no-c-format
+msgid "InfoWidgetBase"
+msgstr ""
+
+#. i18n: file ./src/infowidgetbase.ui line 31
+#: rc.cpp:134
 #, no-c-format
 msgid "St&atus"
 msgstr "Cy&flwr"
 
-#. i18n: file ./src/infowidgetbase.ui line 39
-#: rc.cpp:140
+#. i18n: file ./src/infowidgetbase.ui line 42
+#: rc.cpp:137
 #, no-c-format
 msgid "Parts of the file which have been downloaded:"
 msgstr ""
 
-#. i18n: file ./src/infowidgetbase.ui line 52
-#: rc.cpp:143
+#. i18n: file ./src/infowidgetbase.ui line 55
+#: rc.cpp:140
 #, no-c-format
 msgid "Parts of the file which are available:"
 msgstr ""
 
-#. i18n: file ./src/infowidgetbase.ui line 81
+#. i18n: file ./src/infowidgetbase.ui line 87
 #: rc.cpp:146
 #, no-c-format
-msgid "Total number of chunks:"
+msgid "Total:"
 msgstr ""
 
-#. i18n: file ./src/infowidgetbase.ui line 129
+#. i18n: file ./src/infowidgetbase.ui line 135
 #: rc.cpp:151
-#, no-c-format
-msgid "Chunks currently downloading:"
-msgstr ""
+#, fuzzy, no-c-format
+msgid "Currently downloading:"
+msgstr "Lawrlwytho"
 
-#. i18n: file ./src/infowidgetbase.ui line 137
+#. i18n: file ./src/infowidgetbase.ui line 143
 #: rc.cpp:154
-#, no-c-format
-msgid "Chunks downloaded:"
-msgstr ""
+#, fuzzy, no-c-format
+msgid "Downloaded:"
+msgstr "Lawrlwytho"
 
-#. i18n: file ./src/infowidgetbase.ui line 145
+#. i18n: file ./src/infowidgetbase.ui line 151
 #: rc.cpp:157
 #, no-c-format
-msgid "Chunks excluded:"
+msgid "Excluded:"
 msgstr ""
 
-#. i18n: file ./src/infowidgetbase.ui line 212
-#: rc.cpp:162
+#. i18n: file ./src/infowidgetbase.ui line 261
+#: rc.cpp:165
+#, no-c-format
+msgid "Leechers:"
+msgstr ""
+
+#. i18n: file ./src/infowidgetbase.ui line 309
+#: rc.cpp:170
+#, no-c-format
+msgid "Seeders:"
+msgstr ""
+
+#. i18n: file ./src/infowidgetbase.ui line 321
+#: rc.cpp:173
 #, no-c-format
 msgid "Tracker"
 msgstr ""
 
-#. i18n: file ./src/infowidgetbase.ui line 239
-#: rc.cpp:165
+#. i18n: file ./src/infowidgetbase.ui line 348
+#: rc.cpp:176
 #, no-c-format
 msgid "Status:"
 msgstr "Cyflwr:"
 
-#. i18n: file ./src/infowidgetbase.ui line 247
-#: rc.cpp:168
+#. i18n: file ./src/infowidgetbase.ui line 356
+#: rc.cpp:179
 #, no-c-format
 msgid "Next update in:"
 msgstr ""
 
+#. i18n: file ./src/infowidgetbase.ui line 457
+#: rc.cpp:184
+#, no-c-format
+msgid "Share ratio:"
+msgstr ""
+
 #. i18n: file ./src/torrentcreatordlgbase.ui line 16
-#: rc.cpp:188
+#: rc.cpp:203
 #, no-c-format
 msgid "Create Torrent"
 msgstr ""
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 38
-#: rc.cpp:191
+#: rc.cpp:206
 #, no-c-format
 msgid "The file or directory of which you want to create a torrent:"
 msgstr ""
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 53
-#: rc.cpp:194
+#: rc.cpp:209
 #, no-c-format
 msgid "File Options"
 msgstr ""
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 72
-#: rc.cpp:197
+#: rc.cpp:212
 #, no-c-format
 msgid "Name:"
 msgstr "Enw:"
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 112
-#: rc.cpp:200
+#: rc.cpp:215
 #, no-c-format
 msgid "Size of each chunk:"
 msgstr ""
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 118
-#: rc.cpp:203
+#: rc.cpp:218
 #, no-c-format
 msgid "32"
 msgstr "32"
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 123
-#: rc.cpp:206
+#: rc.cpp:221
 #, no-c-format
 msgid "64"
 msgstr "64"
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 128
-#: rc.cpp:209
+#: rc.cpp:224
 #, no-c-format
 msgid "128"
 msgstr ""
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 133
-#: rc.cpp:212
+#: rc.cpp:227
 #, no-c-format
 msgid "256"
 msgstr ""
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 138
-#: rc.cpp:215
+#: rc.cpp:230
 #, no-c-format
 msgid "512"
 msgstr ""
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 143
-#: rc.cpp:218
+#: rc.cpp:233
 #, no-c-format
 msgid "1024"
 msgstr ""
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 155
-#: rc.cpp:221
+#: rc.cpp:236
 #, no-c-format
 msgid "KB"
 msgstr "KB"
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 184
-#: rc.cpp:224
+#: rc.cpp:239
 #, no-c-format
 msgid "You must add a least one tracker."
 msgstr ""
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 192
-#: rc.cpp:227
+#: rc.cpp:242
 #, no-c-format
 msgid "Trackers"
 msgstr ""
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 208
-#: rc.cpp:230
+#: rc.cpp:245
 #, no-c-format
 msgid "Comments:"
 msgstr "Sylwadau :"
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 223
-#: rc.cpp:233
+#: rc.cpp:248
 #, no-c-format
 msgid "Start seedin&g the torrent"
 msgstr ""
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 265
-#: rc.cpp:236
+#: rc.cpp:251
 #, no-c-format
 msgid "Cre&ate"
 msgstr "Cre&u"
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 279
-#: rc.cpp:239
+#: rc.cpp:254
 #, no-c-format
 msgid "Ca&ncel"
 msgstr "Di&ddymu"
+
+#, fuzzy
+#~ msgid "DownloadPref"
+#~ msgstr "Lawrlwytho"
 
 #~ msgid "Finished"
 #~ msgstr "Wedi Gorffen"
