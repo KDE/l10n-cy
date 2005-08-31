@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-2/konversation.po\n"
-"POT-Creation-Date: 2005-08-28 02:55+0200\n"
+"POT-Creation-Date: 2005-08-31 02:56+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -503,7 +503,7 @@ msgid "Rename"
 msgstr "Ail-enwi"
 
 #. i18n: file ./src/chatwindowbehaviour_preferences.ui line 27
-#: rc.cpp:507 src/identitydialog.cpp:81 src/prefsdialog.cpp:55
+#: rc.cpp:507 src/identitydialog.cpp:81 src/prefsdialog.cpp:51
 #, no-c-format
 msgid "General"
 msgstr "Cyffredinol"
@@ -687,7 +687,7 @@ msgid "Change identity information"
 msgstr ""
 
 #: src/editnotifydialog.cpp:91 src/identitydialog.cpp:272
-#: src/prefsdialog.cpp:115 src/servergroupdialog.cpp:170
+#: src/prefsdialog.cpp:108 src/servergroupdialog.cpp:170
 msgid "Discards all changes made"
 msgstr ""
 
@@ -840,29 +840,101 @@ msgstr "All-lein"
 msgid "Konversation Bookmarks Editor"
 msgstr ""
 
-#: src/konversationapplication.cpp:308 src/server.cpp:1352 src/server.cpp:2939
+#: src/konversationapplication.cpp:329 src/server.cpp:1352 src/server.cpp:2939
 #: src/server.cpp:2944
 msgid "DCOP"
 msgstr "DCOP:"
 
-#: src/konversationapplication.cpp:339
+#: src/konversationapplication.cpp:360
 msgid "Please fill in your <b>ident</b>.<br>"
 msgstr ""
 
-#: src/konversationapplication.cpp:343
+#: src/konversationapplication.cpp:364
 msgid "Please fill in your <b>Real name</b>.<br>"
 msgstr ""
 
-#: src/konversationapplication.cpp:347
+#: src/konversationapplication.cpp:368
 msgid "Please provide at least one <b>Nickname</b>.<br>"
 msgstr ""
 
-#: src/konversationapplication.cpp:352
+#: src/konversationapplication.cpp:373
 msgid "<qt>Your identity \"%1\" is not set up correctly:<br>%2</qt>"
 msgstr ""
 
-#: src/konversationapplication.cpp:354
+#: src/konversationapplication.cpp:375
 msgid "Check Identity Settings"
+msgstr ""
+
+#. i18n: file ./src/alias_preferences.ui line 41
+#: rc.cpp:913 src/konversationapplication.cpp:1547
+#, no-c-format
+msgid "Alias"
+msgstr "Ffugenw"
+
+#: src/konversationapplication.cpp:1550
+msgid "Chat Window Appearance"
+msgstr ""
+
+#: src/konversationapplication.cpp:1553
+msgid "Chatwindow Behaviour"
+msgstr ""
+
+#: src/konversationapplication.cpp:1556
+msgid "Colors Appearance"
+msgstr ""
+
+#: src/konversationapplication.cpp:1559
+#, fuzzy
+msgid "Connection Behavior"
+msgstr "Cysylltiad"
+
+#: src/konversationapplication.cpp:1562
+msgid "Font Appearance"
+msgstr ""
+
+#: src/konversationapplication.cpp:1565
+#, fuzzy
+msgid "General Behavior"
+msgstr "Ymddygiad"
+
+#: src/konversationapplication.cpp:1568
+#, fuzzy
+msgid "Highlight"
+msgstr "Amlygiadau"
+
+#: src/konversationapplication.cpp:1571
+#, fuzzy
+msgid "Log"
+msgstr "Cofnodi"
+
+#: src/konversationapplication.cpp:1574
+#, fuzzy
+msgid "Nicklist Behavior"
+msgstr "Ymddygiad"
+
+#: src/konversationapplication.cpp:1577
+msgid "OSD"
+msgstr ""
+
+#: src/konversationapplication.cpp:1580 src/prefsdialog.cpp:62
+msgid "Quick Buttons"
+msgstr ""
+
+#: src/konversationapplication.cpp:1583 src/prefsdialog.cpp:56
+msgid "Tab Bar"
+msgstr "Bar Tab"
+
+#: src/konversationapplication.cpp:1586
+#, fuzzy
+msgid "Theme"
+msgstr "Themâu"
+
+#: src/konversationapplication.cpp:1589
+msgid "Warnings"
+msgstr ""
+
+#: src/konversationapplication.cpp:1592 src/prefsdialog.cpp:70
+msgid "Watched Nicknames"
 msgstr ""
 
 #: src/ircview.cpp:101 src/konversationmainwindow.cpp:993
@@ -1299,7 +1371,7 @@ msgid "Offering \"%1\" to %2 for upload..."
 msgstr ""
 
 #: src/inputfilter.cpp:279 src/outputfilter.cpp:740 src/outputfilter.cpp:753
-#: src/outputfilter.cpp:767 src/prefsdialog.cpp:71 src/server.cpp:1805
+#: src/outputfilter.cpp:767 src/prefsdialog.cpp:66 src/server.cpp:1805
 #: src/server.cpp:1874 src/server.cpp:1898 src/server.cpp:1918
 #: src/server.cpp:1920 src/server.cpp:1926 src/server.cpp:1928
 msgid "DCC"
@@ -2026,84 +2098,68 @@ msgstr "Sianel"
 msgid " sets mode: "
 msgstr ""
 
-#: src/prefsdialog.cpp:37
+#: src/prefsdialog.cpp:35
 msgid "Edit Preferences"
 msgstr ""
 
-#: src/prefsdialog.cpp:47 src/prefsdialog.cpp:59
+#: src/prefsdialog.cpp:45
 msgid "Chat Window"
 msgstr ""
 
-#: src/prefsdialog.cpp:49
-msgid "Colors"
-msgstr "Lliwiau"
-
-#: src/prefsdialog.cpp:51
+#: src/prefsdialog.cpp:47
 msgid "Themes"
 msgstr "Themâu"
 
-#: src/prefsdialog.cpp:54 src/prefsdialog.cpp:55 src/prefsdialog.cpp:57
-#: src/prefsdialog.cpp:59 src/prefsdialog.cpp:60 src/prefsdialog.cpp:61
-#: src/prefsdialog.cpp:63 src/prefsdialog.cpp:65 src/prefsdialog.cpp:67
-#: src/prefsdialog.cpp:69 src/prefsdialog.cpp:71
+#: src/prefsdialog.cpp:50 src/prefsdialog.cpp:51 src/prefsdialog.cpp:53
+#: src/prefsdialog.cpp:55 src/prefsdialog.cpp:56 src/prefsdialog.cpp:58
+#: src/prefsdialog.cpp:60 src/prefsdialog.cpp:62 src/prefsdialog.cpp:64
+#: src/prefsdialog.cpp:66
 msgid "Behavior"
 msgstr "Ymddygiad"
 
-#: src/prefsdialog.cpp:57
+#: src/prefsdialog.cpp:53
 msgid "Connection"
 msgstr "Cysylltiad"
 
-#: src/prefsdialog.cpp:60
+#: src/prefsdialog.cpp:55
 #, fuzzy
 msgid "Nickname List"
 msgstr "Ffuge&nw:"
 
-#: src/prefsdialog.cpp:61
-msgid "Tab Bar"
-msgstr "Bar Tab"
-
-#: src/prefsdialog.cpp:63
+#: src/prefsdialog.cpp:58
 msgid "Ignored Nicknames"
 msgstr ""
 
-#: src/prefsdialog.cpp:65
+#: src/prefsdialog.cpp:60
 msgid "Command Aliases"
 msgstr ""
 
-#: src/prefsdialog.cpp:67
-msgid "Quick Buttons"
-msgstr ""
-
-#: src/prefsdialog.cpp:69
+#: src/prefsdialog.cpp:64
 msgid "Logging"
 msgstr "Cofnodi"
 
-#: src/prefsdialog.cpp:74 src/prefsdialog.cpp:75 src/prefsdialog.cpp:77
-#: src/prefsdialog.cpp:78
+#: src/prefsdialog.cpp:69 src/prefsdialog.cpp:70 src/prefsdialog.cpp:72
+#: src/prefsdialog.cpp:73
 msgid "Notification"
 msgstr "Hysbysiad"
 
-#: src/prefsdialog.cpp:75
-msgid "Watched Nicknames"
-msgstr ""
-
-#: src/prefsdialog.cpp:77
+#: src/prefsdialog.cpp:72
 msgid "Highlighting"
 msgstr "Amlygu"
 
-#: src/prefsdialog.cpp:78
+#: src/prefsdialog.cpp:73
 msgid "On Screen Display"
 msgstr ""
 
-#: src/prefsdialog.cpp:81
+#: src/prefsdialog.cpp:76
 msgid "Warning Dialogs"
 msgstr ""
 
-#: src/prefsdialog.cpp:113
+#: src/prefsdialog.cpp:106
 msgid "Keep changes made to configuration and close the window"
 msgstr ""
 
-#: src/prefsdialog.cpp:114
+#: src/prefsdialog.cpp:107
 msgid "Keep changes made to configuration"
 msgstr ""
 
@@ -5283,7 +5339,7 @@ msgid "Max. number of users in a channel:"
 msgstr ""
 
 #. i18n: file ./src/chatwindowbehaviour_preferences.ui line 269
-#: rc.cpp:567
+#: rc.cpp:567 rc.cpp:711
 #, no-c-format
 msgid "&Show real names next to nicknames"
 msgstr ""
@@ -5372,13 +5428,13 @@ msgstr "&Patrwm:"
 msgid "Click to run Regular Expression Editor (KRegExpEditor)"
 msgstr ""
 
-#. i18n: file ./src/konversation.kcfg line 1201
+#. i18n: file ./src/konversation.kcfg line 1268
 #: rc.cpp:883
 #, fuzzy, no-c-format
 msgid "Enable emoticons"
 msgstr "Cofnodi"
 
-#. i18n: file ./src/konversation.kcfg line 1205
+#. i18n: file ./src/konversation.kcfg line 1272
 #: rc.cpp:886
 #, no-c-format
 msgid "Emoticons theme"
@@ -5395,12 +5451,6 @@ msgstr "&Ffenestr"
 #, no-c-format
 msgid "Warning Dialogs to Show"
 msgstr ""
-
-#. i18n: file ./src/alias_preferences.ui line 41
-#: rc.cpp:913
-#, no-c-format
-msgid "Alias"
-msgstr "Ffugenw"
 
 #. i18n: file ./src/alias_preferences.ui line 52
 #: rc.cpp:916
@@ -5759,6 +5809,9 @@ msgstr "&Cyfrinair:"
 #, no-c-format
 msgid "Server:"
 msgstr " Gweinydd:"
+
+#~ msgid "Colors"
+#~ msgstr "Lliwiau"
 
 #, fuzzy
 #~ msgid "Edit topic"
