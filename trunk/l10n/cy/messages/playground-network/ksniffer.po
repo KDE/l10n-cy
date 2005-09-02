@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: all2.po\n"
-"POT-Creation-Date: 2005-09-01 02:59+0200\n"
+"POT-Creation-Date: 2005-09-02 02:49+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -39,7 +39,7 @@ msgstr "&Dangos y dewisiadau i gyd"
 #: capturedialog.cpp:55
 msgid ""
 "<qt>"
-"<p>Opens the Preference Dialog where you can choose the settings about the "
+"<p>Opens the Configure Dialog where you can choose the settings about the "
 "capture.</p>"
 "<p>In case you don't request all the options, the capture will start using the "
 "default settings.</p></qt>"
@@ -218,14 +218,13 @@ msgstr ""
 
 #: ksniffermainwidget.cpp:100
 msgid ""
-"Type text here just after you stopped capture otherwise you are going to lost "
-"packets"
+"Type text here just after you stopped capture otherwise you could lost packets"
 msgstr ""
 
 #: ksniffermainwidget.cpp:103
 msgid ""
-"<p>This bar allows you to quickly find items in the list. Just type what you "
-"are looking for.</p>"
+"<p>This bar allows you to quickly find packets in the list. Just type what you "
+"want to look for.</p>"
 "<p>If you use it you could lost packets during capture, so use it just when you "
 "stopped capture or when the network traffic you are monitoring is low.</p>"
 msgstr ""
@@ -238,9 +237,9 @@ msgstr "protocol"
 #: ksniffermainwidget.cpp:123
 msgid ""
 "<p>In this area you get all the captured packets.</p>"
-"<p>You cannot sort view lines while you are capturing packets. After you "
+"<p>You cannot sort view lines while you are capturing packets. Just after you "
 "stopped packet-capture you can sort view lines again clicking on the column "
-"header you want.</p>"
+"header you want sort by.</p>"
 msgstr ""
 
 #: ksniffermainwidget.cpp:126
@@ -428,8 +427,8 @@ msgstr ""
 #: ksniffer.cpp:331
 msgid ""
 "<b>Pause Capture</b>"
-"<br>Pause the packet-capture. With this command you will not get any packet "
-"till you don't decide to continue to capture packets again."
+"<br>Pause the packet-capture. With this command you will not capture any packet "
+"till you don't decide to continue to capture them again."
 msgstr ""
 
 #: ksniffer.cpp:338
@@ -626,7 +625,7 @@ msgid "Display &Captured packets after stopped capturing"
 msgstr ""
 
 #. i18n: file ./options/base_snifferoptiontab.ui line 87
-#: rc.cpp:25
+#: options/ksnifferoptiondialog.cpp:101 rc.cpp:25
 #, no-c-format
 msgid "Capture Settings"
 msgstr ""
@@ -634,7 +633,7 @@ msgstr ""
 #. i18n: file ./options/base_snifferoptiontab.ui line 98
 #: rc.cpp:28
 #, no-c-format
-msgid "Stop Ma&nually"
+msgid "Stop ma&nually"
 msgstr ""
 
 #. i18n: file ./options/base_snifferoptiontab.ui line 114
@@ -704,11 +703,7 @@ msgid "day(s)"
 msgstr "diwrnod"
 
 #: options/ksnifferoptiondialog.cpp:101
-msgid "Sniffer"
-msgstr ""
-
-#: options/ksnifferoptiondialog.cpp:101
-msgid "Sniffer Settings"
+msgid "Capture"
 msgstr ""
 
 #: options/snifferoptiontab.cpp:48
@@ -718,9 +713,9 @@ msgstr ""
 #: options/snifferoptiontab.cpp:50
 msgid ""
 "<p>This is the default temporary directory where KSniffer will store temporary "
-"files like packets captured session.</p>"
-"<p>If you want the temporary directory can be changed here before starting "
-"capture.</p>"
+"files as packet-captured sessions.</p>"
+"<p>If you want the temporary directory can be changed here before starting a "
+"new capture session.</p>"
 msgstr ""
 
 #: options/snifferoptiontab.cpp:54
@@ -730,81 +725,75 @@ msgstr ""
 #: options/snifferoptiontab.cpp:56
 msgid ""
 "<p>The default option is showing packets when you capture it. If you check "
-"this, when KSniffer captures packets it will not display them. Just when you "
-"stop capturing all captured packets will be displayed.</p>"
+"this, when KSniffer will capture packets it will not display them. Just when "
+"you stop capturing all captured packets will be displayed.</p>"
 "<p>You can change this option during sniffing, but the effect will take effect "
-"after you make a <b>New capture</b>. If you want to stop packet-capture for a "
-"while you can use the <i>Pause Capture</i> feature from the <i>Capture</i> "
+"after you make a <b>New capture</b>. If you want simply to stop packet-capture "
+"for a while you can use the <i>Pause Capture</i> feature from the <i>Capture</i> "
 "menu.</p>"
 msgstr ""
 
 #: options/snifferoptiontab.cpp:65
 msgid ""
 "<p>If you check this, you can capture just a certain packets number. After that "
-"number, capture will stop.</p>"
+"number, capture will stop automatically.</p>"
 "<p>You can active just a kind of \"<b>Stop capture after</b>\". For <i>"
-"packets number</i>, for <i>packets size</i> or for <i>packets time</i>"
-". Be sure that KSniffer stops you to enable more than one kind of these "
-"options.</p>"
+"packets number</i>, for <i>packets size</i> or for <i>packets time</i>.</p>"
 msgstr ""
 
-#: options/snifferoptiontab.cpp:72
+#: options/snifferoptiontab.cpp:71
 msgid "Packets number after you want to stop capturing"
 msgstr ""
 
-#: options/snifferoptiontab.cpp:75
+#: options/snifferoptiontab.cpp:74
 msgid ""
-"<p>If you check this, you can capture just a certain packets number for a "
-"maximum packets size. After that size, capture will stop.</p>"
+"<p>If you check this, you can capture just a certain packets number for a total "
+"maximum packets size. After that size, capture will stop automatically.</p>"
 "<p>You can active just a kind of \"<b>Stop capture after</b>\". For <i>"
-"packets number</i>, for <i>packets size</i> or for <i>packets time</i>"
-". Be sure that KSniffer stops you to enable more than one kind of these "
-"options.</p>"
+"packets number</i>, for <i>packets size</i> or for <i>packets time</i>.</p>"
 msgstr ""
 
-#: options/snifferoptiontab.cpp:82
-msgid "Packets size after you want to stop capturing"
+#: options/snifferoptiontab.cpp:81
+msgid "Total packets size after you want to stop capturing"
 msgstr ""
 
-#: options/snifferoptiontab.cpp:85
+#: options/snifferoptiontab.cpp:84
 msgid ""
-"<p>If you check this, you can capture just a certain packets number for a "
+"<p>If you check this, you can capture just a certain packets number for a total "
 "specific maximum time. When you get all packets for a certain time, capture "
-"will stop.</p>"
+"will stop automatically.</p>"
 "<p>You can active just a kind of \"<b>Stop capture after</b>\". For <i>"
-"packets number</i>, for <i>packets size</i> or for <i>packets time</i>"
-". Be sure that KSniffer stops you to enable more than one kind of these "
-"options.</p>"
+"packets number</i>, for <i>packets size</i> or for <i>packets time</i>.</p>"
 msgstr ""
 
-#: options/snifferoptiontab.cpp:93
+#: options/snifferoptiontab.cpp:91
 msgid "Packets time after you want to stop capturing"
 msgstr ""
 
-#: options/snifferoptiontab.cpp:175
-msgid "Directory (%1) does not exist. Create?"
+#: options/snifferoptiontab.cpp:173
+msgid "Directory %1 does not exist. Do you want to create it?"
 msgstr ""
 
-#: options/snifferoptiontab.cpp:176
+#: options/snifferoptiontab.cpp:174
 msgid "Create Directory"
 msgstr ""
 
-#: options/snifferoptiontab.cpp:180
+#: options/snifferoptiontab.cpp:178
 #, c-format
 msgid "Unable to create directory %1"
 msgstr "Methru creu cyfeiriadur %1"
 
-#: options/snifferoptiontab.cpp:191
+#: options/snifferoptiontab.cpp:189
 msgid ""
 "You specified a file for the temporary directory. KSniffer will use its base "
 "path as the temporary directory."
 msgstr ""
 
-#: options/snifferoptiontab.cpp:193
+#: options/snifferoptiontab.cpp:191
 msgid "Don't show again."
 msgstr ""
 
-#: options/snifferoptiontab.cpp:200
+#: options/snifferoptiontab.cpp:198
 #, c-format
 msgid "You have not permission to write to %1."
 msgstr ""
