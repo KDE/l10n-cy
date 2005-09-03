@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2005-09-02 02:48+0200\n"
+"POT-Creation-Date: 2005-09-03 02:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -10,13 +10,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. i18n: file ./src/ktorrentui.rc line 4
-#: rc.cpp:128 src/ktorrent.cpp:104 src/pref.cpp:56
+#: rc.cpp:124 src/ktorrent.cpp:104 src/pref.cpp:57
 #, no-c-format
 msgid "Downloads"
 msgstr "Lawrlwythiadau"
 
 #. i18n: file ./src/searchbar.ui line 53
-#: rc.cpp:77 src/ktorrent.cpp:105 src/pref.cpp:69
+#: rc.cpp:73 src/ktorrent.cpp:105 src/pref.cpp:70
 #, no-c-format
 msgid "Search"
 msgstr "Chwilio"
@@ -254,44 +254,62 @@ msgstr ""
 msgid "Snubbed"
 msgstr ""
 
-#: src/pref.cpp:50
+#: src/pref.cpp:51
 msgid "Preferences"
 msgstr "Hoffterau"
 
-#: src/pref.cpp:56
+#: src/pref.cpp:57
 msgid "Download Options"
 msgstr ""
 
-#: src/pref.cpp:63
+#: src/pref.cpp:64
 msgid "General"
 msgstr "Cyffredinol"
 
 #. i18n: file ./src/generalpref.ui line 16
-#: rc.cpp:83 src/pref.cpp:63
+#: rc.cpp:79 src/pref.cpp:64
 #, no-c-format
 msgid "General Options"
 msgstr "Dewisiadau Cyffredinol"
 
-#: src/pref.cpp:69
+#: src/pref.cpp:70
 #, fuzzy
 msgid "Search engine options"
 msgstr "Peiriant chwilio :"
 
-#: src/pref.cpp:87
+#: src/pref.cpp:88
 msgid "The UDP Tracker Port and Port cannot have the same value !"
 msgstr ""
 
-#: src/pref.cpp:282
+#: src/pref.cpp:214
+msgid "Use your web browser to search for the string "
+msgstr ""
+
+#: src/pref.cpp:216
+msgid ""
+" (capital letters) on the search engine you want to add. Then copy the URL in "
+"the addressbar after the search is finished, and paste it here."
+"<br>Searching for "
+msgstr ""
+
+#: src/pref.cpp:218
+msgid ""
+" on google for example, will result in "
+"http://www.google.com/search?q=FOOBAR&ie=UTF-8&oe=UTF-8 . If you add this URL "
+"here, ktorrent can search using google."
+msgstr ""
+
+#: src/pref.cpp:289
 msgid "You must enter SE name and URL"
 msgstr ""
 
-#: src/pref.cpp:286
+#: src/pref.cpp:293
 msgid "Malformed URL."
 msgstr ""
 
-#: src/pref.cpp:292
+#: src/pref.cpp:299
 msgid ""
-"Bad URL. You should search for $QUERY with your internet browser and copy/paste "
+"Bad URL. You should search for FOOBAR with your internet browser and copy/paste "
 "exact URL here."
 msgstr ""
 
@@ -304,7 +322,7 @@ msgid "Downloaded"
 msgstr ""
 
 #. i18n: file ./src/fileselectdlgbase.ui line 36
-#: rc.cpp:9 rc.cpp:252 src/ktorrentview.cpp:45
+#: rc.cpp:9 rc.cpp:248 src/ktorrentview.cpp:45
 #, no-c-format
 msgid "Size"
 msgstr "Maint"
@@ -318,7 +336,7 @@ msgid "Time Left"
 msgstr ""
 
 #. i18n: file ./src/infowidgetbase.ui line 234
-#: rc.cpp:209 src/infowidget.cpp:76 src/ktorrentview.cpp:50
+#: rc.cpp:205 src/infowidget.cpp:76 src/ktorrentview.cpp:50
 #, no-c-format
 msgid "Peers"
 msgstr ""
@@ -332,7 +350,7 @@ msgid "Manual Announce"
 msgstr ""
 
 #. i18n: file ./src/infowidgetbase.ui line 623
-#: rc.cpp:258 src/infowidget.cpp:62 src/ktorrentview.cpp:76
+#: rc.cpp:254 src/infowidget.cpp:62 src/ktorrentview.cpp:76
 #, no-c-format
 msgid "Preview"
 msgstr "Rhagolwg"
@@ -375,7 +393,7 @@ msgid "Pending"
 msgstr ""
 
 #. i18n: file ./src/infowidgetbase.ui line 76
-#: rc.cpp:190 src/infowidget.cpp:84
+#: rc.cpp:186 src/infowidget.cpp:84
 #, no-c-format
 msgid "Chunks"
 msgstr ""
@@ -389,7 +407,7 @@ msgid "Download Torrent"
 msgstr ""
 
 #. i18n: file ./src/fileselectdlgbase.ui line 47
-#: rc.cpp:12 rc.cpp:255 src/htmlpart.cpp:164
+#: rc.cpp:12 rc.cpp:251 src/htmlpart.cpp:164
 #, no-c-format
 msgid "Download"
 msgstr "Lawrlwytho"
@@ -586,243 +604,230 @@ msgstr "Gwrthdroi Dewisiad"
 msgid "Search Preferences"
 msgstr "Hoffterau"
 
-#. i18n: file ./src/searchpref.ui line 51
-#: rc.cpp:30
-#, no-c-format
-msgid ""
-"Use your web browser to search for the string $QUERY on the search engine you "
-"want to add. Then copy the URL in the addressbar after the search is finished, "
-"and paste it here. \n"
-"<br>\n"
-"Searching for $QUERY on google for example, will result in "
-"http://www.google.com/search?q=$QUERY&ie=UTF-8&oe=UTF-8 . If you add this URL "
-"here, ktorrent can search using google."
-msgstr ""
-
-#. i18n: file ./src/searchpref.ui line 67
-#: rc.cpp:35
+#. i18n: file ./src/searchpref.ui line 65
+#: rc.cpp:31
 #, fuzzy, no-c-format
 msgid "Search engine name:"
 msgstr "Peiriant chwilio :"
 
-#. i18n: file ./src/searchpref.ui line 90
-#: rc.cpp:38
+#. i18n: file ./src/searchpref.ui line 88
+#: rc.cpp:34
 #, no-c-format
 msgid "URL:"
 msgstr ""
 
-#. i18n: file ./src/searchpref.ui line 111
-#: rc.cpp:41
+#. i18n: file ./src/searchpref.ui line 109
+#: rc.cpp:37
 #, no-c-format
 msgid "&Add"
 msgstr ""
 
-#. i18n: file ./src/searchpref.ui line 114
-#: rc.cpp:44
+#. i18n: file ./src/searchpref.ui line 112
+#: rc.cpp:40
 #, no-c-format
 msgid "Alt+A"
 msgstr ""
 
-#. i18n: file ./src/searchpref.ui line 132
-#: rc.cpp:47
+#. i18n: file ./src/searchpref.ui line 130
+#: rc.cpp:43
 #, fuzzy, no-c-format
 msgid "Search engines"
 msgstr "Peiriant chwilio :"
 
-#. i18n: file ./src/searchpref.ui line 141
-#: rc.cpp:50
+#. i18n: file ./src/searchpref.ui line 139
+#: rc.cpp:46
 #, no-c-format
 msgid "Engines"
 msgstr ""
 
-#. i18n: file ./src/searchpref.ui line 152
-#: rc.cpp:53
+#. i18n: file ./src/searchpref.ui line 150
+#: rc.cpp:49
 #, no-c-format
 msgid "URL"
 msgstr ""
 
-#. i18n: file ./src/searchpref.ui line 192
-#: rc.cpp:59
+#. i18n: file ./src/searchpref.ui line 190
+#: rc.cpp:55
 #, no-c-format
 msgid "Alt+R"
 msgstr ""
 
-#. i18n: file ./src/searchpref.ui line 200
-#: rc.cpp:62
+#. i18n: file ./src/searchpref.ui line 198
+#: rc.cpp:58
 #, no-c-format
 msgid "R&emove all"
 msgstr ""
 
-#. i18n: file ./src/searchpref.ui line 203
-#: rc.cpp:65
+#. i18n: file ./src/searchpref.ui line 201
+#: rc.cpp:61
 #, no-c-format
 msgid "Alt+E"
 msgstr ""
 
-#. i18n: file ./src/searchpref.ui line 228
-#: rc.cpp:68
+#. i18n: file ./src/searchpref.ui line 226
+#: rc.cpp:64
 #, no-c-format
 msgid "Add defau&lt"
 msgstr ""
 
-#. i18n: file ./src/searchpref.ui line 231
-#: rc.cpp:71
+#. i18n: file ./src/searchpref.ui line 229
+#: rc.cpp:67
 #, no-c-format
 msgid "Alt+L"
 msgstr ""
 
 #. i18n: file ./src/searchbar.ui line 78
-#: rc.cpp:80
+#: rc.cpp:76
 #, no-c-format
 msgid "Search engine:"
 msgstr "Peiriant chwilio :"
 
 #. i18n: file ./src/generalpref.ui line 27
-#: rc.cpp:86
+#: rc.cpp:82
 #, no-c-format
 msgid "Show s&ystem tray icon"
 msgstr "Dangos eicon y teclyn &cysawd"
 
 #. i18n: file ./src/generalpref.ui line 43
-#: rc.cpp:89
+#: rc.cpp:85
 #, no-c-format
 msgid "Directory to store temporary files:"
 msgstr ""
 
 #. i18n: file ./src/generalpref.ui line 66
-#: rc.cpp:92
+#: rc.cpp:88
 #, no-c-format
 msgid "&Automatically save downloads to:"
 msgstr ""
 
 #. i18n: file ./src/ktorrent.kcfg line 10
-#: rc.cpp:95
+#: rc.cpp:91
 #, no-c-format
 msgid "Maximum number of downloads (0 = no limit)"
 msgstr ""
 
 #. i18n: file ./src/ktorrent.kcfg line 15
-#: rc.cpp:98
+#: rc.cpp:94
 #, no-c-format
 msgid "Maximum number of connections per download (0 = no limit)"
 msgstr ""
 
 #. i18n: file ./src/ktorrent.kcfg line 20
-#: rc.cpp:101
+#: rc.cpp:97
 #, no-c-format
 msgid "Maximum upload speed in KB/sec (0 = no limit)"
 msgstr ""
 
 #. i18n: file ./src/ktorrent.kcfg line 25
-#: rc.cpp:104
+#: rc.cpp:100
 #, no-c-format
 msgid "Maximum downloadload speed in KB/sec (0 = no limit)"
 msgstr ""
 
 #. i18n: file ./src/ktorrent.kcfg line 30
-#: rc.cpp:107 rc.cpp:110
+#: rc.cpp:103 rc.cpp:106
 #, no-c-format
 msgid "Port"
 msgstr "Porth"
 
 #. i18n: file ./src/ktorrent.kcfg line 42
-#: rc.cpp:113
+#: rc.cpp:109
 #, no-c-format
 msgid "Show a system tray icon"
 msgstr ""
 
 #. i18n: file ./src/ktorrent.kcfg line 46
-#: rc.cpp:116
+#: rc.cpp:112
 #, no-c-format
 msgid "Keep seeding after download has finished"
 msgstr ""
 
 #. i18n: file ./src/ktorrent.kcfg line 50
-#: rc.cpp:119
+#: rc.cpp:115
 #, no-c-format
 msgid "Current search engine"
 msgstr ""
 
 #. i18n: file ./src/ktorrent.kcfg line 54
-#: rc.cpp:122
+#: rc.cpp:118
 #, no-c-format
 msgid "Directory to store temporary files"
 msgstr ""
 
 #. i18n: file ./src/ktorrent.kcfg line 58
-#: rc.cpp:125
+#: rc.cpp:121
 #, no-c-format
 msgid "Directory to store downloaded files"
 msgstr ""
 
 #. i18n: file ./src/ktorrentui.rc line 19
-#: rc.cpp:134
+#: rc.cpp:130
 #, no-c-format
 msgid "Download Toolbar"
 msgstr ""
 
 #. i18n: file ./src/downloadpref.ui line 40
-#: rc.cpp:137
+#: rc.cpp:133
 #, no-c-format
 msgid "Maximum downloads:"
 msgstr ""
 
 #. i18n: file ./src/downloadpref.ui line 48
-#: rc.cpp:140
+#: rc.cpp:136
 #, no-c-format
 msgid "Maximum connections per download:"
 msgstr ""
 
 #. i18n: file ./src/downloadpref.ui line 56
-#: rc.cpp:143
+#: rc.cpp:139
 #, no-c-format
 msgid "Maximum upload rate:"
 msgstr ""
 
 #. i18n: file ./src/downloadpref.ui line 64
-#: rc.cpp:146
+#: rc.cpp:142
 #, no-c-format
 msgid "Maximum download rate:"
 msgstr ""
 
 #. i18n: file ./src/downloadpref.ui line 72
-#: rc.cpp:149
+#: rc.cpp:145
 #, no-c-format
 msgid "Port:"
 msgstr "Porth:"
 
 #. i18n: file ./src/downloadpref.ui line 80
-#: rc.cpp:152
+#: rc.cpp:148
 #, no-c-format
 msgid "UDP tracker port:"
 msgstr ""
 
 #. i18n: file ./src/downloadpref.ui line 177
-#: rc.cpp:155 rc.cpp:158
+#: rc.cpp:151 rc.cpp:154
 #, no-c-format
 msgid "(0 is no limit)"
 msgstr ""
 
 #. i18n: file ./src/downloadpref.ui line 193
-#: rc.cpp:161 rc.cpp:164
+#: rc.cpp:157 rc.cpp:160
 #, no-c-format
 msgid "KB/sec (0 is no limit)"
 msgstr ""
 
 #. i18n: file ./src/downloadpref.ui line 247
-#: rc.cpp:167
+#: rc.cpp:163
 #, no-c-format
 msgid "&Keep seeding after download is finished"
 msgstr ""
 
 #. i18n: file ./src/downloadpref.ui line 258
-#: rc.cpp:170
+#: rc.cpp:166
 #, no-c-format
 msgid "Attention"
 msgstr "Taler Sylw"
 
 #. i18n: file ./src/downloadpref.ui line 271
-#: rc.cpp:173
+#: rc.cpp:169
 #, no-c-format
 msgid ""
 "If you are behind a NAT-enabled router, it is important that you forward \n"
@@ -831,211 +836,211 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./src/infowidgetbase.ui line 16
-#: rc.cpp:178
+#: rc.cpp:174
 #, no-c-format
 msgid "InfoWidgetBase"
 msgstr ""
 
 #. i18n: file ./src/infowidgetbase.ui line 31
-#: rc.cpp:181
+#: rc.cpp:177
 #, no-c-format
 msgid "St&atus"
 msgstr "Cy&flwr"
 
 #. i18n: file ./src/infowidgetbase.ui line 42
-#: rc.cpp:184
+#: rc.cpp:180
 #, no-c-format
 msgid "Parts of the file which have been downloaded:"
 msgstr ""
 
 #. i18n: file ./src/infowidgetbase.ui line 55
-#: rc.cpp:187
+#: rc.cpp:183
 #, no-c-format
 msgid "Parts of the file which are available:"
 msgstr ""
 
 #. i18n: file ./src/infowidgetbase.ui line 87
-#: rc.cpp:193
+#: rc.cpp:189
 #, no-c-format
 msgid "Total:"
 msgstr "Cyfanswm:"
 
 #. i18n: file ./src/infowidgetbase.ui line 135
-#: rc.cpp:198
+#: rc.cpp:194
 #, fuzzy, no-c-format
 msgid "Currently downloading:"
 msgstr "Lawrlwytho"
 
 #. i18n: file ./src/infowidgetbase.ui line 143
-#: rc.cpp:201
+#: rc.cpp:197
 #, fuzzy, no-c-format
 msgid "Downloaded:"
 msgstr "Lawrlwytho"
 
 #. i18n: file ./src/infowidgetbase.ui line 151
-#: rc.cpp:204
+#: rc.cpp:200
 #, no-c-format
 msgid "Excluded:"
 msgstr ""
 
 #. i18n: file ./src/infowidgetbase.ui line 253
-#: rc.cpp:212
+#: rc.cpp:208
 #, no-c-format
 msgid "Leechers:"
 msgstr ""
 
 #. i18n: file ./src/infowidgetbase.ui line 301
-#: rc.cpp:217
+#: rc.cpp:213
 #, no-c-format
 msgid "Seeders:"
 msgstr ""
 
 #. i18n: file ./src/infowidgetbase.ui line 313
-#: rc.cpp:220
+#: rc.cpp:216
 #, no-c-format
 msgid "Tracker"
 msgstr ""
 
 #. i18n: file ./src/infowidgetbase.ui line 340
-#: rc.cpp:223
+#: rc.cpp:219
 #, no-c-format
 msgid "Status:"
 msgstr "Cyflwr:"
 
 #. i18n: file ./src/infowidgetbase.ui line 348
-#: rc.cpp:226
+#: rc.cpp:222
 #, no-c-format
 msgid "Next update in:"
 msgstr ""
 
 #. i18n: file ./src/infowidgetbase.ui line 412
-#: rc.cpp:231
+#: rc.cpp:227
 #, no-c-format
 msgid "Average speed"
 msgstr ""
 
 #. i18n: file ./src/infowidgetbase.ui line 431
-#: rc.cpp:234
+#: rc.cpp:230
 #, no-c-format
 msgid "Down:"
 msgstr "I Lawr :"
 
 #. i18n: file ./src/infowidgetbase.ui line 439
-#: rc.cpp:237
+#: rc.cpp:233
 #, no-c-format
 msgid "Up:"
 msgstr "I fyny :"
 
 #. i18n: file ./src/infowidgetbase.ui line 526
-#: rc.cpp:242
+#: rc.cpp:238
 #, no-c-format
 msgid "Share ratio:"
 msgstr ""
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 16
-#: rc.cpp:261
+#: rc.cpp:257
 #, no-c-format
 msgid "Create Torrent"
 msgstr ""
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 38
-#: rc.cpp:264
+#: rc.cpp:260
 #, no-c-format
 msgid "The file or directory of which you want to create a torrent:"
 msgstr ""
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 53
-#: rc.cpp:267
+#: rc.cpp:263
 #, no-c-format
 msgid "File Options"
 msgstr ""
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 72
-#: rc.cpp:270
+#: rc.cpp:266
 #, no-c-format
 msgid "Name:"
 msgstr "Enw:"
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 112
-#: rc.cpp:273
+#: rc.cpp:269
 #, no-c-format
 msgid "Size of each chunk:"
 msgstr ""
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 118
-#: rc.cpp:276
+#: rc.cpp:272
 #, no-c-format
 msgid "32"
 msgstr "32"
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 123
-#: rc.cpp:279
+#: rc.cpp:275
 #, no-c-format
 msgid "64"
 msgstr "64"
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 128
-#: rc.cpp:282
+#: rc.cpp:278
 #, no-c-format
 msgid "128"
 msgstr ""
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 133
-#: rc.cpp:285
+#: rc.cpp:281
 #, no-c-format
 msgid "256"
 msgstr ""
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 138
-#: rc.cpp:288
+#: rc.cpp:284
 #, no-c-format
 msgid "512"
 msgstr ""
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 143
-#: rc.cpp:291
+#: rc.cpp:287
 #, no-c-format
 msgid "1024"
 msgstr ""
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 155
-#: rc.cpp:294
+#: rc.cpp:290
 #, no-c-format
 msgid "KB"
 msgstr "KB"
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 184
-#: rc.cpp:297
+#: rc.cpp:293
 #, no-c-format
 msgid "You must add a least one tracker."
 msgstr ""
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 192
-#: rc.cpp:300
+#: rc.cpp:296
 #, no-c-format
 msgid "Trackers"
 msgstr ""
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 208
-#: rc.cpp:303
+#: rc.cpp:299
 #, no-c-format
 msgid "Comments:"
 msgstr "Sylwadau :"
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 223
-#: rc.cpp:306
+#: rc.cpp:302
 #, no-c-format
 msgid "Start seedin&g the torrent"
 msgstr ""
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 265
-#: rc.cpp:309
+#: rc.cpp:305
 #, no-c-format
 msgid "Cre&ate"
 msgstr "Cre&u"
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 279
-#: rc.cpp:312
+#: rc.cpp:308
 #, no-c-format
 msgid "Ca&ncel"
 msgstr "Di&ddymu"
