@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2005-09-06 02:49+0200\n"
+"POT-Creation-Date: 2005-09-08 03:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgid "Downloads"
 msgstr "Lawrlwythiadau"
 
 #. i18n: file ./src/searchbar.ui line 53
-#: rc.cpp:61 src/ktorrent.cpp:105 src/pref.cpp:70
+#: rc.cpp:61 src/ktorrent.cpp:105
 #, no-c-format
 msgid "Search"
 msgstr "Chwilio"
@@ -34,8 +34,16 @@ msgid "Current speed of all torrents combined"
 msgstr ""
 
 #: src/ktorrent.cpp:273 src/ktorrentview.cpp:67
-msgid "Start"
-msgstr "Dechrau"
+msgid ""
+"_: to start\n"
+"Start"
+msgstr ""
+
+#: src/ktorrent.cpp:277 src/ktorrentview.cpp:63
+msgid ""
+"_: to stop\n"
+"Stop"
+msgstr ""
 
 #: src/ktorrent.cpp:319
 #, fuzzy
@@ -43,7 +51,8 @@ msgid "Torrent Files"
 msgstr "KTorrent"
 
 #: src/ktorrent.cpp:319
-msgid "All files"
+#, fuzzy
+msgid "All Files"
 msgstr "Pob Ffeil"
 
 #: src/ktorrent.cpp:320
@@ -51,7 +60,7 @@ msgid "Open Location"
 msgstr "Agor Lleoliad"
 
 #: src/ktorrent.cpp:335
-msgid "Select Directory to Save To"
+msgid "Select Folder to Save To"
 msgstr ""
 
 #: src/ktorrent.cpp:355
@@ -82,8 +91,9 @@ msgid ""
 msgstr ""
 
 #: src/ktorrent.cpp:426 src/ktorrentview.cpp:124
-msgid "Are you sure?"
-msgstr "Ydych Yn Sicr?"
+#, fuzzy
+msgid "Remove Download"
+msgstr "Lawrlwytho"
 
 #: src/ktorrent.cpp:547
 msgid "Speed up: %1 / down: %2"
@@ -204,7 +214,7 @@ msgid "Search finished"
 msgstr "wedi Gorffen"
 
 #: src/torrentcreatordlg.cpp:54
-msgid "You must select a file or a directory."
+msgid "You must select a file or a folder."
 msgstr ""
 
 #: src/torrentcreatordlg.cpp:60
@@ -278,6 +288,12 @@ msgid "General Options"
 msgstr "Dewisiadau Cyffredinol"
 
 #: src/pref.cpp:70
+msgid ""
+"_: a noun\n"
+"Search"
+msgstr ""
+
+#: src/pref.cpp:70
 #, fuzzy
 msgid "Search Engine Options"
 msgstr "Peiriant chwilio :"
@@ -287,32 +303,24 @@ msgid "The UDP Tracker Port and Port cannot have the same value !"
 msgstr ""
 
 #: src/pref.cpp:214
-msgid "Use your web browser to search for the string "
-msgstr ""
-
-#: src/pref.cpp:216
 msgid ""
-" (capital letters) on the search engine you want to add. Then copy the URL in "
-"the addressbar after the search is finished, and paste it here."
-"<br>Searching for "
+"Use your web browser to search for the string %1 (capital letters) on the "
+"search engine you want to add. Then copy the URL in the addressbar after the "
+"search is finished, and paste it here."
+"<br>Searching for %2 on Google for example, will result in "
+"http://www.google.com/search?q=FOOBAR&ie=UTF-8&oe=UTF-8. If you add this URL "
+"here, ktorrent can search using Google."
 msgstr ""
 
-#: src/pref.cpp:218
-msgid ""
-" on google for example, will result in "
-"http://www.google.com/search?q=FOOBAR&ie=UTF-8&oe=UTF-8 . If you add this URL "
-"here, ktorrent can search using google."
-msgstr ""
-
-#: src/pref.cpp:289
+#: src/pref.cpp:287
 msgid "You must enter SE name and URL"
 msgstr ""
 
-#: src/pref.cpp:293
+#: src/pref.cpp:291
 msgid "Malformed URL."
 msgstr "URL annilys."
 
-#: src/pref.cpp:299
+#: src/pref.cpp:297
 msgid ""
 "Bad URL. You should search for FOOBAR with your internet browser and copy/paste "
 "exact URL here."
@@ -411,11 +419,11 @@ msgstr ""
 msgid "Download Torrent"
 msgstr ""
 
-#. i18n: file ./src/fileselectdlgbase.ui line 47
-#: rc.cpp:12 rc.cpp:236 src/htmlpart.cpp:164
-#, no-c-format
-msgid "Download"
-msgstr "Lawrlwytho"
+#: src/htmlpart.cpp:164
+msgid ""
+"_: to download\n"
+"Download"
+msgstr ""
 
 #: libtorrent/bdecoder.cpp:61
 #, c-format
@@ -579,6 +587,12 @@ msgstr "kyfieithu@dotmon.com"
 msgid "Select Which Files You Want to Download"
 msgstr ""
 
+#. i18n: file ./src/fileselectdlgbase.ui line 47
+#: rc.cpp:12 rc.cpp:236
+#, no-c-format
+msgid "Download"
+msgstr "Lawrlwytho"
+
 #. i18n: file ./src/fileselectdlgbase.ui line 73
 #: rc.cpp:15
 #, no-c-format
@@ -630,7 +644,7 @@ msgstr "&Ychwanegu"
 #. i18n: file ./src/searchpref.ui line 127
 #: rc.cpp:40
 #, fuzzy, no-c-format
-msgid "Search engines"
+msgid "Search Engines"
 msgstr "Peiriant chwilio :"
 
 #. i18n: file ./src/searchpref.ui line 136
@@ -647,14 +661,14 @@ msgstr "URL"
 
 #. i18n: file ./src/searchpref.ui line 198
 #: rc.cpp:52
-#, no-c-format
-msgid "R&emove all"
+#, fuzzy, no-c-format
+msgid "R&emove All"
 msgstr "G&waredu Popeth"
 
 #. i18n: file ./src/searchpref.ui line 223
 #: rc.cpp:55
 #, no-c-format
-msgid "Add defau&lt"
+msgid "Add Defau&lt"
 msgstr ""
 
 #. i18n: file ./src/searchbar.ui line 78
@@ -672,7 +686,7 @@ msgstr "Dangos eicon y teclyn &cysawd"
 #. i18n: file ./src/generalpref.ui line 43
 #: rc.cpp:73
 #, no-c-format
-msgid "Directory to store temporary files:"
+msgid "Folder to store temporary files:"
 msgstr ""
 
 #. i18n: file ./src/generalpref.ui line 66
@@ -732,13 +746,13 @@ msgstr ""
 #. i18n: file ./src/ktorrent.kcfg line 54
 #: rc.cpp:106
 #, no-c-format
-msgid "Directory to store temporary files"
+msgid "Folder to store temporary files"
 msgstr ""
 
 #. i18n: file ./src/ktorrent.kcfg line 58
 #: rc.cpp:109
 #, no-c-format
-msgid "Directory to store downloaded files"
+msgid "Folder to store downloaded files"
 msgstr ""
 
 #. i18n: file ./src/ktorrentui.rc line 19
@@ -891,7 +905,7 @@ msgstr ""
 #. i18n: file ./src/infowidgetbase.ui line 409
 #: rc.cpp:212
 #, no-c-format
-msgid "Average speed"
+msgid "Average Speed"
 msgstr ""
 
 #. i18n: file ./src/infowidgetbase.ui line 428
@@ -921,7 +935,7 @@ msgstr ""
 #. i18n: file ./src/torrentcreatordlgbase.ui line 38
 #: rc.cpp:245
 #, no-c-format
-msgid "The file or directory of which you want to create a torrent:"
+msgid "The file or folder of which you want to create a torrent:"
 msgstr ""
 
 #. i18n: file ./src/torrentcreatordlgbase.ui line 53
@@ -1019,6 +1033,12 @@ msgstr "Cre&u"
 #, no-c-format
 msgid "Ca&ncel"
 msgstr "Di&ddymu"
+
+#~ msgid "Start"
+#~ msgstr "Dechrau"
+
+#~ msgid "Are you sure?"
+#~ msgstr "Ydych Yn Sicr?"
 
 #, fuzzy
 #~ msgid "DownloadPref"
