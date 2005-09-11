@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-3/krecipes.po\n"
-"POT-Creation-Date: 2005-09-08 03:01+0200\n"
+"POT-Creation-Date: 2005-09-11 02:04+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -556,7 +556,7 @@ msgstr ""
 msgid "Unable to scale a recipe with zero yield"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1124
+#: src/dialogs/recipeinputdialog.cpp:1128
 #: src/dialogs/resizerecipedialog.cpp:184
 #: src/dialogs/resizerecipedialog.cpp:193
 msgid "Invalid input"
@@ -659,68 +659,68 @@ msgstr ""
 msgid "Images"
 msgstr "Delweddau"
 
-#: src/dialogs/recipeinputdialog.cpp:1125
+#: src/dialogs/recipeinputdialog.cpp:1129
 msgid "Amount field contains invalid input."
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1135
+#: src/dialogs/recipeinputdialog.cpp:1139
 #: src/widgets/ingredientlistview.cpp:225
 msgid "Ingredient name cannot be longer than %1 characters."
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1142
-#: src/dialogs/recipeinputdialog.cpp:1284 src/widgets/unitlistview.cpp:182
+#: src/dialogs/recipeinputdialog.cpp:1146
+#: src/dialogs/recipeinputdialog.cpp:1296 src/widgets/unitlistview.cpp:182
 msgid "Unit name cannot be longer than %1 characters."
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1149
-#: src/dialogs/recipeinputdialog.cpp:1315
+#: src/dialogs/recipeinputdialog.cpp:1156
+#: src/dialogs/recipeinputdialog.cpp:1330
 #: src/widgets/prepmethodlistview.cpp:174
 msgid "Preparation method cannot be longer than %1 characters."
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1360
+#: src/dialogs/recipeinputdialog.cpp:1380
 msgid "Recipe title cannot be longer than %1 characters."
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1360
+#: src/dialogs/recipeinputdialog.cpp:1380
 msgid "Unable to save recipe"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1397
+#: src/dialogs/recipeinputdialog.cpp:1417
 msgid "Write the recipe instructions here"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1399
+#: src/dialogs/recipeinputdialog.cpp:1419
 msgid "Write the recipe title here"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1543
+#: src/dialogs/recipeinputdialog.cpp:1563
 msgid ""
 "This recipe contains unsaved changes.\n"
 "Would you like to save it before closing?"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1543
-#: src/dialogs/recipeinputdialog.cpp:1569
-#: src/dialogs/recipeinputdialog.cpp:1579 src/krecipesview.cpp:478
+#: src/dialogs/recipeinputdialog.cpp:1563
+#: src/dialogs/recipeinputdialog.cpp:1589
+#: src/dialogs/recipeinputdialog.cpp:1599 src/krecipesview.cpp:478
 #: src/krecipesview.cpp:530
 msgid "Unsaved changes"
 msgstr "Newidiadau Heb eu Cadw"
 
-#: src/dialogs/recipeinputdialog.cpp:1569
+#: src/dialogs/recipeinputdialog.cpp:1589
 msgid ""
 "You need to save the recipe before displaying it. Would you like to save it "
 "now?"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1579
+#: src/dialogs/recipeinputdialog.cpp:1599
 msgid ""
 "This recipe has changes that will not be displayed unless the recipe is saved. "
 "Would you like to save it now?"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1600
+#: src/dialogs/recipeinputdialog.cpp:1620
 msgid "Spell check complete."
 msgstr ""
 
@@ -1517,7 +1517,7 @@ msgstr ""
 msgid "Krecipes Recipes"
 msgstr ""
 
-#: src/exporters/recipemlexporter.cpp:92
+#: src/exporters/recipemlexporter.cpp:98
 msgid "Total"
 msgstr "Cyfanswm"
 
@@ -1880,17 +1880,22 @@ msgid ""
 "Failed to fix database structure. Exiting.\n"
 msgstr ""
 
-#: src/backends/qsqlrecipedb.cpp:1424
+#: src/backends/SQLite/literecipedb.cpp:1488
+#: src/backends/qsqlrecipedb.cpp:1445
 msgid ""
 "<!doc>The database was created with a previous version of Krecipes.  Would you "
-"like Krecipes to update this database to work with this version of Krecipes?"
+"like Krecipes to update this database to work with this version of Krecipes?  "
+"Depending on the number of recipes and amount of data, this could take some "
+"time."
 "<br>"
 "<br><b>Warning: After updating, this database will no longer be compatible with "
-"previous versions of Krecipes.</b>"
+"previous versions of Krecipes."
+"<br>"
+"<br>Cancelling this operation may result in corrupting the database.</b>"
 msgstr ""
 
-#: src/backends/SQLite/literecipedb.cpp:2009
-#: src/backends/qsqlrecipedb.cpp:1477
+#: src/backends/SQLite/literecipedb.cpp:2091
+#: src/backends/qsqlrecipedb.cpp:1498
 msgid "Loading category list"
 msgstr ""
 
@@ -1911,15 +1916,6 @@ msgstr ""
 msgid ""
 "Krecipes failed to fix the SQLite database structure. You may not have the "
 "necessary permissions, or the database structure may be too corrupted.\n"
-msgstr ""
-
-#: src/backends/SQLite/literecipedb.cpp:1476
-msgid ""
-"<!doc>This database was created with a previous version of Krecipes.  Would you "
-"like Krecipes to update this database to work with this version of Krecipes?"
-"<br>"
-"<br><b>Warning: After updating, this database will no longer be compatible with "
-"previous versions of Krecipes.</b>"
 msgstr ""
 
 #: src/backends/recipedb.cpp:169
@@ -2231,13 +2227,13 @@ msgstr ""
 msgid "Importing recipe: %1"
 msgstr ""
 
-#: src/importers/baseimporter.cpp:361
+#: src/importers/baseimporter.cpp:362
 msgid ""
 "<!doc>Import of recipes from the file <b>\"%1\"</b> <b>failed</b> "
 "due to the following error(s):"
 msgstr ""
 
-#: src/importers/baseimporter.cpp:367
+#: src/importers/baseimporter.cpp:368
 msgid "The file <b>%1</b> generated the following warning(s):"
 msgstr ""
 
