@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-3/krecipes.po\n"
-"POT-Creation-Date: 2005-09-11 02:04+0200\n"
+"POT-Creation-Date: 2005-09-13 02:57+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -108,7 +108,7 @@ msgid "Unit list"
 msgstr "Unedau:"
 
 #: src/dialogs/ingredientsdialog.cpp:95 src/dialogs/ingredientsdialog.cpp:132
-#: src/dialogs/recipeinputdialog.cpp:537 src/dialogs/unitsdialog.cpp:62
+#: src/dialogs/recipeinputdialog.cpp:426 src/dialogs/unitsdialog.cpp:62
 #: src/krecipesview.cpp:338 src/krecipesview.cpp:387
 #: src/widgets/propertylistview.cpp:84
 msgid "Units"
@@ -140,8 +140,10 @@ msgstr ""
 msgid "Property"
 msgstr "Priodwedd"
 
-#: src/dialogs/ingredientsdialog.cpp:131 src/dialogs/recipeinputdialog.cpp:394
-#: src/dialogs/recipeinputdialog.cpp:535
+#: src/dialogs/ingredientparserdialog.cpp:62
+#: src/dialogs/ingredientparserdialog.cpp:120
+#: src/dialogs/ingredientsdialog.cpp:131 src/dialogs/recipeinputdialog.cpp:273
+#: src/dialogs/recipeinputdialog.cpp:424
 #: src/dialogs/refineshoppinglistdialog.cpp:71
 #: src/dialogs/refineshoppinglistdialog.cpp:112
 msgid "Amount"
@@ -300,19 +302,19 @@ msgid "Title"
 msgstr "Teitl"
 
 #: src/dialogs/advancedsearchdialog.cpp:406
-#: src/dialogs/recipeinputdialog.cpp:572 src/dialogs/setupdisplay.cpp:338
+#: src/dialogs/recipeinputdialog.cpp:461 src/dialogs/setupdisplay.cpp:338
 #: src/dialogs/setupdisplay.cpp:349
 msgid "Instructions"
 msgstr "Cyfarwyddiadau"
 
 #: src/dialogs/advancedsearchdialog.cpp:395
-#: src/dialogs/recipeinputdialog.cpp:391 src/dialogs/setupdisplay.cpp:354
+#: src/dialogs/recipeinputdialog.cpp:270 src/dialogs/setupdisplay.cpp:354
 #: src/dialogs/setupdisplay.cpp:357 src/exporters/htmlexporter.cpp:317
 msgid "Yield"
 msgstr ""
 
 #: src/dialogs/advancedsearchdialog.cpp:401
-#: src/dialogs/recipeinputdialog.cpp:404 src/dialogs/setupdisplay.cpp:362
+#: src/dialogs/recipeinputdialog.cpp:283 src/dialogs/setupdisplay.cpp:362
 #: src/dialogs/setupdisplay.cpp:365 src/exporters/htmlexporter.cpp:323
 msgid "Preparation Time"
 msgstr ""
@@ -326,7 +328,7 @@ msgid "Author 1, Author 2, ..."
 msgstr ""
 
 #: src/dialogs/advancedsearchdialog.cpp:391
-#: src/dialogs/recipeinputdialog.cpp:345 src/dialogs/setupdisplay.cpp:393
+#: src/dialogs/recipeinputdialog.cpp:224 src/dialogs/setupdisplay.cpp:393
 #: src/dialogs/setupdisplay.cpp:398 src/exporters/htmlexporter.cpp:350
 #: src/krecipesview.cpp:341 src/krecipesview.cpp:399
 msgid "Authors"
@@ -336,7 +338,7 @@ msgstr "Awduron"
 msgid "Category 1, Category 2, ..."
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:367 src/dialogs/setupdisplay.cpp:412
+#: src/dialogs/recipeinputdialog.cpp:246 src/dialogs/setupdisplay.cpp:412
 #: src/dialogs/setupdisplay.cpp:417 src/exporters/htmlexporter.cpp:364
 #: src/krecipesview.cpp:340 src/krecipesview.cpp:395
 msgid "Categories"
@@ -357,7 +359,7 @@ msgstr ""
 
 #: src/dialogs/advancedsearchdialog.cpp:383
 #: src/dialogs/ingredientmatcherdialog.cpp:45
-#: src/dialogs/recipeinputdialog.cpp:571
+#: src/dialogs/recipeinputdialog.cpp:460
 #: src/dialogs/refineshoppinglistdialog.cpp:110
 #: src/dialogs/setupdisplay.cpp:464 src/krecipesview.cpp:336
 #: src/krecipesview.cpp:379
@@ -556,7 +558,7 @@ msgstr ""
 msgid "Unable to scale a recipe with zero yield"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1128
+#: src/dialogs/recipeinputdialog.cpp:1020
 #: src/dialogs/resizerecipedialog.cpp:184
 #: src/dialogs/resizerecipedialog.cpp:193
 msgid "Invalid input"
@@ -570,157 +572,165 @@ msgstr ""
 msgid "Finding Unit Ratios"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:311
+#: src/dialogs/recipeinputdialog.cpp:190
 msgid "Select photo"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:316
+#: src/dialogs/recipeinputdialog.cpp:195
 msgid "Clear photo"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:329
+#: src/dialogs/recipeinputdialog.cpp:208
 msgid "Recipe Name"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:395
+#: src/dialogs/recipeinputdialog.cpp:274
 msgid "Type"
 msgstr "Math"
 
-#: src/dialogs/recipeinputdialog.cpp:432
+#: src/dialogs/recipeinputdialog.cpp:311
 msgid "Ingredient:"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:433
+#: src/dialogs/recipeinputdialog.cpp:312
 msgid ""
 "_: Ingredient grouping name\n"
 "Header:"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:453
+#: src/dialogs/recipeinputdialog.cpp:332
 msgid "Amount:"
 msgstr "Maint:"
 
-#: src/dialogs/krepagelayoutdia.cpp:321 src/dialogs/recipeinputdialog.cpp:459
+#: src/dialogs/krepagelayoutdia.cpp:321 src/dialogs/recipeinputdialog.cpp:338
 msgid "Unit:"
 msgstr "Uned:"
 
-#: src/dialogs/recipeinputdialog.cpp:466
+#: src/dialogs/recipeinputdialog.cpp:345
 msgid "Preparation Method:"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:524
+#: src/dialogs/recipeinputdialog.cpp:411
 msgid "Add ingredient"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:526
+#: src/dialogs/recipeinputdialog.cpp:413
 msgid "Move ingredient up"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:528
+#: src/dialogs/recipeinputdialog.cpp:415
 msgid "Move ingredient down"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:530
+#: src/dialogs/recipeinputdialog.cpp:417
 msgid "Remove ingredient"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:534 src/pref.cpp:441
+#: src/dialogs/recipeinputdialog.cpp:419
+msgid "Paste Ingredients"
+msgstr ""
+
+#: src/dialogs/ingredientparserdialog.cpp:61
+#: src/dialogs/ingredientparserdialog.cpp:119
+#: src/dialogs/recipeinputdialog.cpp:423 src/pref.cpp:441
 #: src/widgets/ingredientlistview.cpp:104
 #: src/widgets/ingredientlistview.cpp:236
 msgid "Ingredient"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:538 src/widgets/prepmethodlistview.cpp:52
+#: src/dialogs/ingredientparserdialog.cpp:64
+#: src/dialogs/ingredientparserdialog.cpp:122
+#: src/dialogs/recipeinputdialog.cpp:427 src/widgets/prepmethodlistview.cpp:52
 msgid "Preparation Method"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:565
+#: src/dialogs/recipeinputdialog.cpp:454
 msgid "Check spelling"
 msgstr "Gwirio Sillafu"
 
-#: src/dialogs/recipeinputdialog.cpp:570 src/exporters/htmlexporter.cpp:369
+#: src/dialogs/recipeinputdialog.cpp:459 src/exporters/htmlexporter.cpp:369
 #: src/widgets/recipelistview.cpp:83
 msgid "Recipe"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:591
+#: src/dialogs/recipeinputdialog.cpp:480
 msgid "Save recipe"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:593
+#: src/dialogs/recipeinputdialog.cpp:482
 msgid "Show recipe"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:597
+#: src/dialogs/recipeinputdialog.cpp:486
 msgid "Resize recipe"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:826
+#: src/dialogs/recipeinputdialog.cpp:718
 msgid "Images"
 msgstr "Delweddau"
 
-#: src/dialogs/recipeinputdialog.cpp:1129
+#: src/dialogs/recipeinputdialog.cpp:1021
 msgid "Amount field contains invalid input."
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1139
+#: src/dialogs/recipeinputdialog.cpp:1031
 #: src/widgets/ingredientlistview.cpp:225
 msgid "Ingredient name cannot be longer than %1 characters."
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1146
-#: src/dialogs/recipeinputdialog.cpp:1296 src/widgets/unitlistview.cpp:182
+#: src/dialogs/recipeinputdialog.cpp:1038
+#: src/dialogs/recipeinputdialog.cpp:1188 src/widgets/unitlistview.cpp:182
 msgid "Unit name cannot be longer than %1 characters."
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1156
-#: src/dialogs/recipeinputdialog.cpp:1330
+#: src/dialogs/recipeinputdialog.cpp:1048
+#: src/dialogs/recipeinputdialog.cpp:1222
 #: src/widgets/prepmethodlistview.cpp:174
 msgid "Preparation method cannot be longer than %1 characters."
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1380
+#: src/dialogs/recipeinputdialog.cpp:1272
 msgid "Recipe title cannot be longer than %1 characters."
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1380
+#: src/dialogs/recipeinputdialog.cpp:1272
 msgid "Unable to save recipe"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1417
+#: src/dialogs/recipeinputdialog.cpp:1309
 msgid "Write the recipe instructions here"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1419
+#: src/dialogs/recipeinputdialog.cpp:1311
 msgid "Write the recipe title here"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1563
+#: src/dialogs/recipeinputdialog.cpp:1455
 msgid ""
 "This recipe contains unsaved changes.\n"
 "Would you like to save it before closing?"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1563
-#: src/dialogs/recipeinputdialog.cpp:1589
-#: src/dialogs/recipeinputdialog.cpp:1599 src/krecipesview.cpp:478
+#: src/dialogs/recipeinputdialog.cpp:1455
+#: src/dialogs/recipeinputdialog.cpp:1481
+#: src/dialogs/recipeinputdialog.cpp:1491 src/krecipesview.cpp:478
 #: src/krecipesview.cpp:530
 msgid "Unsaved changes"
 msgstr "Newidiadau Heb eu Cadw"
 
-#: src/dialogs/recipeinputdialog.cpp:1589
+#: src/dialogs/recipeinputdialog.cpp:1481
 msgid ""
 "You need to save the recipe before displaying it. Would you like to save it "
 "now?"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1599
+#: src/dialogs/recipeinputdialog.cpp:1491
 msgid ""
 "This recipe has changes that will not be displayed unless the recipe is saved. "
 "Would you like to save it now?"
 msgstr ""
 
-#: src/dialogs/recipeinputdialog.cpp:1620
+#: src/dialogs/recipeinputdialog.cpp:1512
 msgid "Spell check complete."
 msgstr ""
 
@@ -831,16 +841,43 @@ msgstr ""
 msgid "Border Preview"
 msgstr ""
 
-#: src/dialogs/refineshoppinglistdialog.cpp:70
-#: src/dialogs/refineshoppinglistdialog.cpp:111
-msgid "Ingredients in Shopping List"
-msgstr ""
-
+#: src/dialogs/ingredientparserdialog.cpp:63
+#: src/dialogs/ingredientparserdialog.cpp:121
 #: src/dialogs/refineshoppinglistdialog.cpp:72
 #: src/dialogs/refineshoppinglistdialog.cpp:113
 #: src/dialogs/selectunitdialog.cpp:36 src/widgets/unitlistview.cpp:57
 msgid "Unit"
 msgstr "Uned"
+
+#: src/dialogs/ingredientparserdialog.cpp:115
+msgid "Ingredient Parser"
+msgstr ""
+
+#: src/dialogs/ingredientparserdialog.cpp:116
+msgid ""
+"To use: Paste a list of ingredient below, click \"Parse Text\", and then you "
+"may correct any incorrectly parsed ingredients."
+"<br><b>Caution: Fields will be truncated if longer than the database allows</b>"
+msgstr ""
+
+#: src/dialogs/ingredientparserdialog.cpp:117
+msgid "Ingredients as understood by Krecipes:"
+msgstr ""
+
+#: src/dialogs/ingredientparserdialog.cpp:118
+msgid "Parse Text"
+msgstr ""
+
+#: src/dialogs/ingredientparserdialog.cpp:138
+msgid ""
+"There are no parsed ingredients.\n"
+"Continue anyway?"
+msgstr ""
+
+#: src/dialogs/refineshoppinglistdialog.cpp:70
+#: src/dialogs/refineshoppinglistdialog.cpp:111
+msgid "Ingredients in Shopping List"
+msgstr ""
 
 #: src/dialogs/refineshoppinglistdialog.cpp:109
 msgid ""
@@ -2124,7 +2161,6 @@ msgstr ""
 
 #: src/importers/mmfimporter.cpp:286 src/importers/mx2importer.cpp:101
 #: src/importers/mxpimporter.cpp:102 src/importers/mxpimporter.cpp:251
-#: src/importers/nycgenericimporter.cpp:123
 #, fuzzy
 msgid "servings"
 msgstr "Gosodiadau Gweinydd"
