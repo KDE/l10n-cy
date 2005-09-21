@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
-"POT-Creation-Date: 2005-09-08 02:50+0200\n"
+"POT-Creation-Date: 2005-09-21 02:59+0200\n"
 "PO-Revision-Date: 2004-08-12 18:36+0100\n"
 "Last-Translator: KD at Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -21,6 +21,11 @@ msgstr ""
 #: core/kexiguimsghandler.cpp:122
 msgid "Unknown error"
 msgstr "Gwall anhysbys"
+
+#: core/kexiscripting.cpp:244
+#, c-format
+msgid "Failed to read scriptingfile %1"
+msgstr ""
 
 #: core/kexidialogbase.cpp:291
 #, fuzzy
@@ -54,33 +59,33 @@ msgstr "Cymorth Cyd-destun"
 msgid "Could not open project \"%1\""
 msgstr "Methwyd agor cywaith \"%1\""
 
-#: core/kexiproject.cpp:122
+#: core/kexiproject.cpp:125
 msgid "Could not create project \"%1\""
 msgstr "Methwyd creu cywaith \"%1\""
 
-#: core/kexiproject.cpp:420
+#: core/kexiproject.cpp:462
 msgid "Opening object \"%1\" failed."
 msgstr ""
 
-#: core/kexiproject.cpp:471 main/keximainwindowimpl.cpp:3389
+#: core/kexiproject.cpp:513 main/keximainwindowimpl.cpp:3408
 msgid "Could not set empty name for this object."
 msgstr ""
 
-#: core/kexiproject.cpp:475
+#: core/kexiproject.cpp:517
 msgid "Could not use this name. Object with name \"%1\" already exists."
 msgstr ""
 
-#: core/kexiproject.cpp:481
+#: core/kexiproject.cpp:523
 #, fuzzy
 msgid "Could not rename object \"%1\"."
 msgstr "Methwyd creu cywaith \"%1\""
 
-#: core/kexiproject.cpp:592
+#: core/kexiproject.cpp:634
 #, fuzzy
 msgid "Warning: entire project's data will be removed."
 msgstr "Mewnosod enw cronfa ddata'r cywaith"
 
-#: core/kexiproject.cpp:607
+#: core/kexiproject.cpp:649
 #, fuzzy
 msgid ""
 "The project \"%1\" already exists.\n"
@@ -89,7 +94,7 @@ msgstr ""
 "Mae'r ffeil \"%1\" eisoes mewn bod.\n"
 " Ydych eisiau ysgrifennu drosti?\n"
 
-#: core/kexiproject.cpp:634
+#: core/kexiproject.cpp:676
 #, fuzzy
 msgid "Do you want to drop the project \"%1\"?"
 msgstr "Ydych eisiau dileu ymholiad \"%1\"?"
@@ -197,7 +202,7 @@ msgid ""
 "You can correct data in this row or use \"Cancel row changes\" function."
 msgstr ""
 
-#: main/kexibrowser.cpp:78 main/keximainwindowimpl.cpp:833
+#: main/kexibrowser.cpp:78 main/keximainwindowimpl.cpp:849
 msgid "Project Navigator"
 msgstr "Mordwywr Cywaith"
 
@@ -779,88 +784,88 @@ msgstr ""
 "<b>Mae cywaith o'r enw \"%1\" mewn bod eisoes.</b>"
 "<p>Ydych eisiau ei ddileu a chreu un newydd?"
 
-#: main/keximainwindowimpl.cpp:352
+#: main/keximainwindowimpl.cpp:356
 #, fuzzy
 msgid "Could not start %1 application."
 msgstr "Methwyd creu cywaith \"%1\""
 
-#: main/keximainwindowimpl.cpp:353
+#: main/keximainwindowimpl.cpp:357
 #, fuzzy
 msgid "Command \"%1\" failed."
 msgstr "Cadw gwrthrych fel"
 
-#. i18n: file data/kexiui.rc line 111
-#: main/keximainwindowimpl.cpp:522 main/keximainwindowimpl.cpp:553 rc.cpp:111
+#. i18n: file data/kexiui.rc line 112
+#: main/keximainwindowimpl.cpp:527 main/keximainwindowimpl.cpp:558 rc.cpp:111
 #, no-c-format
 msgid "&Window"
 msgstr "&Ffenestr"
 
-#: main/keximainwindowimpl.cpp:525
+#: main/keximainwindowimpl.cpp:530
 #, fuzzy
 msgid "Task Bar"
 msgstr "Bar tasgau"
 
-#: main/keximainwindowimpl.cpp:624
+#: main/keximainwindowimpl.cpp:629
 msgid ""
 "User interface mode will be switched to IDEAl at next %1 application startup."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:650
+#: main/keximainwindowimpl.cpp:655
 msgid ""
 "User interface mode will be switched to Childframe at next %1 application "
 "startup."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:677
+#: main/keximainwindowimpl.cpp:682
 msgid "&New..."
 msgstr "&Newydd..."
 
-#: main/keximainwindowimpl.cpp:679
+#: main/keximainwindowimpl.cpp:684
 msgid "Create a new project"
 msgstr "Creu cywaith newydd"
 
-#: main/keximainwindowimpl.cpp:680
+#: main/keximainwindowimpl.cpp:685
 msgid "Creates a new project. Currently opened project is not affected."
 msgstr "Creu cywaith newydd.  Ni effeithir ar y cywaith sydd ar agor eisoes."
 
-#: main/keximainwindowimpl.cpp:683
+#: main/keximainwindowimpl.cpp:688
 msgid "Open an existing project"
 msgstr "Agor hen gywaith"
 
-#: main/keximainwindowimpl.cpp:684
+#: main/keximainwindowimpl.cpp:689
 msgid "Opens an existing project. Currently opened project is not affected."
 msgstr "Yn agor hen gywaith.  Ni effeithir ar y cywaith sydd ar agor eisoes."
 
-#: main/keximainwindowimpl.cpp:687
+#: main/keximainwindowimpl.cpp:692
 #, fuzzy
 msgid "&Download Example Databases..."
 msgstr "Cyrchfan Mewnforio"
 
-#: main/keximainwindowimpl.cpp:689
+#: main/keximainwindowimpl.cpp:694
 msgid "Download example databases from the Internet"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:690
+#: main/keximainwindowimpl.cpp:695
 msgid "Downloads example databases from the Internet"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:716
+#: main/keximainwindowimpl.cpp:722
 msgid "Save object changes"
 msgstr "Cadw newidiadau i'r gwrthrych"
 
-#: main/keximainwindowimpl.cpp:717
+#: main/keximainwindowimpl.cpp:723
 msgid "Saves object changes from currently selected window."
 msgstr "Cadw newidiadau i'r gwrthrych o'r ffenestr a ddewisir ar hyn o bryd"
 
-#: main/keximainwindowimpl.cpp:720
+#: main/keximainwindowimpl.cpp:726
 msgid "Save &As..."
 msgstr "Cadw &Fel..."
 
-#: main/keximainwindowimpl.cpp:722 main/keximainwindowimpl.cpp:2458
+#: main/keximainwindowimpl.cpp:728 main/keximainwindowimpl.cpp:2474
 msgid "Save object as"
 msgstr "Cadw gwrthrych fel"
 
-#: main/keximainwindowimpl.cpp:723
+#: main/keximainwindowimpl.cpp:729
 #, fuzzy
 msgid ""
 "Saves object changes from currently selected window under a new name (within "
@@ -869,348 +874,352 @@ msgstr ""
 "Cadw gwrthrychau o'r ffenestr a ddewisir ar hyn o bryd o dan enw newydd (yn yr "
 "un cywaith)."
 
-#: main/keximainwindowimpl.cpp:725
+#: main/keximainwindowimpl.cpp:731
 #, fuzzy
 msgid "Project Properties"
 msgstr "Priodweddion y cywaith"
 
-#: main/keximainwindowimpl.cpp:732
+#: main/keximainwindowimpl.cpp:738
 msgid "&Close Project"
 msgstr "&Cau'r Cywaith"
 
-#: main/keximainwindowimpl.cpp:734
+#: main/keximainwindowimpl.cpp:740
 msgid "Close the current project"
 msgstr "Cau'r cywaith cyfredol"
 
-#: main/keximainwindowimpl.cpp:735
+#: main/keximainwindowimpl.cpp:741
 msgid "Closes the current project."
 msgstr "Cau'r cywaith cyfredol"
 
-#: main/keximainwindowimpl.cpp:740
+#: main/keximainwindowimpl.cpp:746
 msgid "&Relationships..."
 msgstr "&Perthnasau..."
 
-#: main/keximainwindowimpl.cpp:742
+#: main/keximainwindowimpl.cpp:748
 msgid "Project relationships"
 msgstr "Perthnasau'r cywaith"
 
-#: main/keximainwindowimpl.cpp:743
+#: main/keximainwindowimpl.cpp:749
 msgid "Shows project relationships."
 msgstr "Yn dangos perthnasau'r cywaith."
 
-#: main/keximainwindowimpl.cpp:749
+#: main/keximainwindowimpl.cpp:755
 #, fuzzy
 msgid "&Import Database..."
 msgstr "Cyrchfan Mewnforio"
 
-#: main/keximainwindowimpl.cpp:756
+#: main/keximainwindowimpl.cpp:762
+msgid "Scripts"
+msgstr "Sgriptiau"
+
+#: main/keximainwindowimpl.cpp:772
 msgid ""
 "_: Import->Data Table...\n"
 "Data &Table..."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:774
+#: main/keximainwindowimpl.cpp:790
 msgid ""
 "_: Paste Special->As Data &Table...\n"
 "As Data &Table..."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:788
+#: main/keximainwindowimpl.cpp:804
 msgid "Delete object"
 msgstr "Dileu gwrthrych"
 
-#: main/keximainwindowimpl.cpp:789
+#: main/keximainwindowimpl.cpp:805
 msgid "Deletes currently selected object."
 msgstr "Dileu'r gwrthrych a ddewisir ar hyn o bryd."
 
-#: main/keximainwindowimpl.cpp:791
+#: main/keximainwindowimpl.cpp:807
 msgid "Delete Row"
 msgstr "Dileu Rhes"
 
-#: main/keximainwindowimpl.cpp:793
+#: main/keximainwindowimpl.cpp:809
 #, fuzzy
 msgid "Delete currently selected row from a table"
 msgstr "Dileu'r rhes a ddewisir ar hyn o bryd o dabl."
 
-#: main/keximainwindowimpl.cpp:794
+#: main/keximainwindowimpl.cpp:810
 #, fuzzy
 msgid "Deletes currently selected row from a table."
 msgstr "Dileu'r rhes a ddewisir ar hyn o bryd o dabl."
 
-#: main/keximainwindowimpl.cpp:796
+#: main/keximainwindowimpl.cpp:812
 msgid "Clear Table Contents"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:798
+#: main/keximainwindowimpl.cpp:814
 #, fuzzy
 msgid "Clear table contents"
 msgstr "Cynnwys annilys yn y gronfa ddata "
 
-#: main/keximainwindowimpl.cpp:799
+#: main/keximainwindowimpl.cpp:815
 #, fuzzy
 msgid "Clears table contents."
 msgstr "Cynnwys annilys yn y gronfa ddata "
 
-#: main/keximainwindowimpl.cpp:802
+#: main/keximainwindowimpl.cpp:818
 #, fuzzy
 msgid "Edit Item"
 msgstr "Golygu Ymholiad"
 
-#: main/keximainwindowimpl.cpp:803
+#: main/keximainwindowimpl.cpp:819
 #, fuzzy
 msgid "Edit currently selected item"
 msgstr "Dileu'r gwrthrych a ddewisir ar hyn o bryd."
 
-#: main/keximainwindowimpl.cpp:804
+#: main/keximainwindowimpl.cpp:820
 #, fuzzy
 msgid "Edits currently selected item."
 msgstr "Dileu'r gwrthrych a ddewisir ar hyn o bryd."
 
-#: main/keximainwindowimpl.cpp:806
+#: main/keximainwindowimpl.cpp:822
 msgid "&Insert Empty Row"
 msgstr "Mewnosod Rhes &Wag"
 
-#: main/keximainwindowimpl.cpp:808
+#: main/keximainwindowimpl.cpp:824
 msgid "Insert one empty row above"
 msgstr "Mewnosod un rhes wag uwchben"
 
-#: main/keximainwindowimpl.cpp:809
+#: main/keximainwindowimpl.cpp:825
 msgid "Inserts one empty row above currently selected table row."
 msgstr "Mewnosod un rhes wag uwchben yr un wedi'i dewis ar hyn o bryd"
 
-#: main/keximainwindowimpl.cpp:812
+#: main/keximainwindowimpl.cpp:828
 msgid "&Data View"
 msgstr "Golwg &Data"
 
-#: main/keximainwindowimpl.cpp:816
+#: main/keximainwindowimpl.cpp:832
 msgid "Switch to Data View mode"
 msgstr "Newid i fodd Golwg Data"
 
-#: main/keximainwindowimpl.cpp:817
+#: main/keximainwindowimpl.cpp:833
 msgid "Switches to Data View mode."
 msgstr "Newid i fodd Golwg Data."
 
-#: main/keximainwindowimpl.cpp:819
+#: main/keximainwindowimpl.cpp:835
 msgid "D&esign View"
 msgstr "Golwg &Cynllunio"
 
-#: main/keximainwindowimpl.cpp:823
+#: main/keximainwindowimpl.cpp:839
 msgid "Switch to Design View mode"
 msgstr "Newid i fodd Golwg Cynllunio"
 
-#: main/keximainwindowimpl.cpp:824
+#: main/keximainwindowimpl.cpp:840
 msgid "Switches to Design View mode."
 msgstr "Newid i fodd Golwg Cynllunio."
 
-#: main/keximainwindowimpl.cpp:826
+#: main/keximainwindowimpl.cpp:842
 msgid "&Text View"
 msgstr "Golwg &Testun"
 
-#: main/keximainwindowimpl.cpp:830
+#: main/keximainwindowimpl.cpp:846
 msgid "Switch to Text View mode"
 msgstr "Newid i fodd Golwg Testun"
 
-#: main/keximainwindowimpl.cpp:831
+#: main/keximainwindowimpl.cpp:847
 msgid "Switches to Text View mode."
 msgstr "Newid i fodd Golwg Testun."
 
-#: main/keximainwindowimpl.cpp:835
+#: main/keximainwindowimpl.cpp:851
 msgid "Go to Project navigator panel"
 msgstr "Mynd i banel mordwywr cywaith"
 
-#: main/keximainwindowimpl.cpp:836
+#: main/keximainwindowimpl.cpp:852
 msgid "Goes to Project navigator panel."
 msgstr "Mynd i'r panel mordwyo cywaith."
 
-#: main/keximainwindowimpl.cpp:839
+#: main/keximainwindowimpl.cpp:855
 #, fuzzy
 msgid "Property Editor"
 msgstr "Golygydd priodweddau"
 
-#: main/keximainwindowimpl.cpp:841
+#: main/keximainwindowimpl.cpp:857
 msgid "Go to Property editor panel"
 msgstr "Mynd i banel y golygydd priodweddau"
 
-#: main/keximainwindowimpl.cpp:842
+#: main/keximainwindowimpl.cpp:858
 msgid "Goes to Property editor panel."
 msgstr "Mynd i'r panel golygu priodweddau."
 
-#: main/keximainwindowimpl.cpp:846
+#: main/keximainwindowimpl.cpp:862
 msgid "&Save Row"
 msgstr "Cadw &Rhes"
 
-#: main/keximainwindowimpl.cpp:847
+#: main/keximainwindowimpl.cpp:863
 msgid "Save currently selected table row's data"
 msgstr "Cadw data'r rhes a ddewisir ar hyn o bryd"
 
-#: main/keximainwindowimpl.cpp:848
+#: main/keximainwindowimpl.cpp:864
 msgid "Saves currently selected table row's data."
 msgstr "Cadw data'r rhes a dewisir ar hyn o bryd"
 
-#: main/keximainwindowimpl.cpp:851
+#: main/keximainwindowimpl.cpp:867
 msgid "&Cancel Row Changes"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:852
+#: main/keximainwindowimpl.cpp:868
 #, fuzzy
 msgid "Cancel changes made to currently selected table row"
 msgstr "Mewnosod un rhes wag uwchben yr un wedi'i dewis ar hyn o bryd"
 
-#: main/keximainwindowimpl.cpp:853
+#: main/keximainwindowimpl.cpp:869
 #, fuzzy
 msgid "Cancels changes made to currently selected table row."
 msgstr "Mewnosod un rhes wag uwchben yr un wedi'i dewis ar hyn o bryd"
 
-#: main/keximainwindowimpl.cpp:856
+#: main/keximainwindowimpl.cpp:872
 msgid "&Filter"
 msgstr "&Hidlen"
 
-#: main/keximainwindowimpl.cpp:862
+#: main/keximainwindowimpl.cpp:878
 msgid "&Ascending"
 msgstr "&Esgynnol"
 
-#: main/keximainwindowimpl.cpp:864
+#: main/keximainwindowimpl.cpp:880
 msgid "Sort data in ascending order"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:865
+#: main/keximainwindowimpl.cpp:881
 msgid ""
 "Sorts data in ascending order (from A to Z and from 0 to 9). Data from selected "
 "column is used for sorting."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:867
+#: main/keximainwindowimpl.cpp:883
 msgid "&Descending"
 msgstr "&Disgynnol"
 
-#: main/keximainwindowimpl.cpp:869
+#: main/keximainwindowimpl.cpp:885
 msgid "Sort data in descending order"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:870
+#: main/keximainwindowimpl.cpp:886
 msgid ""
 "Sorts data in descending (from Z to A and from 9 to 0). Data from selected "
 "column is used for sorting."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:873
+#: main/keximainwindowimpl.cpp:889
 msgid "&Font..."
 msgstr "W&ynebfath..."
 
-#: main/keximainwindowimpl.cpp:874
+#: main/keximainwindowimpl.cpp:890
 #, fuzzy
 msgid "Change font for selected object"
 msgstr "Dileu'r gwrthrych a ddewisir ar hyn o bryd."
 
-#: main/keximainwindowimpl.cpp:875
+#: main/keximainwindowimpl.cpp:891
 #, fuzzy
 msgid "Changes font for selected object."
 msgstr "Dileu'r gwrthrych a ddewisir ar hyn o bryd."
 
-#: main/keximainwindowimpl.cpp:880
+#: main/keximainwindowimpl.cpp:896
 #, fuzzy
 msgid "&Next Window"
 msgstr "&Ffenestr"
 
-#: main/keximainwindowimpl.cpp:887
+#: main/keximainwindowimpl.cpp:903
 #, fuzzy
 msgid "Next window"
 msgstr "Rhes nesaf"
 
-#: main/keximainwindowimpl.cpp:888
+#: main/keximainwindowimpl.cpp:904
 #, fuzzy
 msgid "Switches to the next window."
 msgstr "Newid i fodd Golwg Testun."
 
-#: main/keximainwindowimpl.cpp:890
+#: main/keximainwindowimpl.cpp:906
 #, fuzzy
 msgid "&Previous Window"
 msgstr "Rhes flaenorol"
 
-#: main/keximainwindowimpl.cpp:897
+#: main/keximainwindowimpl.cpp:913
 #, fuzzy
 msgid "Previous window"
 msgstr "Rhes flaenorol"
 
-#: main/keximainwindowimpl.cpp:898
+#: main/keximainwindowimpl.cpp:914
 #, fuzzy
 msgid "Switches to the previous window."
 msgstr "Newid i fodd Golwg Data."
 
-#: main/keximainwindowimpl.cpp:903
+#: main/keximainwindowimpl.cpp:919
 msgid "Lets you configure shortcut keys."
 msgstr "Gadael i chi ffurfweddu bysellau byrlwybr."
 
-#: main/keximainwindowimpl.cpp:907
+#: main/keximainwindowimpl.cpp:923
 msgid "Lets you configure toolbars."
 msgstr "Gadael i chi ffurfweddu bariau offer."
 
-#: main/keximainwindowimpl.cpp:910
+#: main/keximainwindowimpl.cpp:926
 msgid "Other"
 msgstr "Eraill"
 
-#: main/keximainwindowimpl.cpp:913
+#: main/keximainwindowimpl.cpp:929
 msgid "Show Context Help"
 msgstr "Dangos Cymorth Cyd-destun"
 
-#: main/keximainwindowimpl.cpp:916
+#: main/keximainwindowimpl.cpp:932
 #, fuzzy
 msgid "Hide Context Help"
 msgstr "Cymorth Cyd-destun"
 
-#: main/keximainwindowimpl.cpp:926
+#: main/keximainwindowimpl.cpp:942
 #, fuzzy
 msgid "Enable Forms"
 msgstr "Ffurflen Gronfa Ddata"
 
-#: main/keximainwindowimpl.cpp:928
+#: main/keximainwindowimpl.cpp:944
 #, fuzzy
 msgid "Disable Forms"
 msgstr "Ffurflen Gronfa Ddata"
 
-#: main/keximainwindowimpl.cpp:953
+#: main/keximainwindowimpl.cpp:969
 msgid "Lets you configure Kexi."
 msgstr "Gadael i chi ffurweddu Kexi."
 
-#: main/keximainwindowimpl.cpp:959
+#: main/keximainwindowimpl.cpp:975
 msgid "This shows useful tips on the use of this application."
 msgstr "Dengys hyn gynghorion defnyddiol ar ddefnydd y rhaglen hon."
 
-#: main/keximainwindowimpl.cpp:962 main/keximainwindowimpl.cpp:3507
+#: main/keximainwindowimpl.cpp:978 main/keximainwindowimpl.cpp:3526
 #, fuzzy
 msgid "Important Information"
 msgstr "Gwybodaeth bwysig"
 
-#: main/keximainwindowimpl.cpp:969
-msgid "Give feedback"
+#: main/keximainwindowimpl.cpp:985
+msgid "Give feedback..."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:1106
+#: main/keximainwindowimpl.cpp:1122
 msgid "reason:"
 msgstr "rheswm:"
 
-#: main/keximainwindowimpl.cpp:1151
+#: main/keximainwindowimpl.cpp:1167
 #, fuzzy
 msgid "cannot create object - "
 msgstr "methu creu gwrthrych -"
 
-#: main/keximainwindowimpl.cpp:1152
+#: main/keximainwindowimpl.cpp:1168
 msgid "unknown object type \"%1\""
 msgstr "math anhysbys o wrthrych \"%1\""
 
-#: main/keximainwindowimpl.cpp:1159
+#: main/keximainwindowimpl.cpp:1175
 msgid "cannot create object of type \"%1\""
 msgstr "methu creu gwrthrych o fath \"%1\""
 
-#: main/keximainwindowimpl.cpp:1171
+#: main/keximainwindowimpl.cpp:1187
 msgid "object not found"
 msgstr "ni chafwyd y gwrthrych"
 
-#: main/keximainwindowimpl.cpp:1184
+#: main/keximainwindowimpl.cpp:1200
 msgid "cannot open object"
 msgstr "methu agor y gwrthrych"
 
-#: main/keximainwindowimpl.cpp:1195
+#: main/keximainwindowimpl.cpp:1211
 #, fuzzy
 msgid ""
 "You have requested selected objects to be opened automatically on startup. "
@@ -1219,121 +1228,121 @@ msgstr ""
 "Rydych wedi gofyn agor sawl gwrthrych yn ymysgogol wrth ymgychwyn.  Ni cheir "
 "agor sawl gwrthrych."
 
-#: main/keximainwindowimpl.cpp:2399
+#: main/keximainwindowimpl.cpp:2415
 #, fuzzy
 msgid "Recently Opened Databases"
 msgstr "Cronfa ddata newydd"
 
-#: main/keximainwindowimpl.cpp:2418
+#: main/keximainwindowimpl.cpp:2434
 #, fuzzy
 msgid "Recently Connected Database Servers"
 msgstr "Heb ei gysylltu â gweinydd y gronfa ddata"
 
-#: main/keximainwindowimpl.cpp:2490
+#: main/keximainwindowimpl.cpp:2506
 msgid "From File..."
 msgstr "O Ffeil..."
 
-#: main/keximainwindowimpl.cpp:2495
+#: main/keximainwindowimpl.cpp:2511
 msgid "From Server..."
 msgstr "O Weinydd..."
 
-#: main/keximainwindowimpl.cpp:2556
+#: main/keximainwindowimpl.cpp:2572
 msgid "Selected view mode is not supported for \"%1\" object."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:2558
+#: main/keximainwindowimpl.cpp:2574
 msgid "Selected view mode (%1) is not supported by this object type (%2)"
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:2570
+#: main/keximainwindowimpl.cpp:2586
 #, fuzzy
 msgid "Switching to other view failed (%1)."
 msgstr "Methwyd mewnosod y rhes ar y gweinydd."
 
-#: main/keximainwindowimpl.cpp:2744
+#: main/keximainwindowimpl.cpp:2760
 msgid "Save Object As"
 msgstr "Cadw'r Gwrthrych Fel"
 
-#: main/keximainwindowimpl.cpp:2761
+#: main/keximainwindowimpl.cpp:2780
 #, fuzzy
 msgid "Do you want to replace it?"
 msgstr "Ydych eisiau gwaredu:"
 
-#: main/keximainwindowimpl.cpp:2762
+#: main/keximainwindowimpl.cpp:2781
 msgid "&Replace"
 msgstr "A&mnewid"
 
-#: main/keximainwindowimpl.cpp:2763
+#: main/keximainwindowimpl.cpp:2782
 msgid "&Choose other name..."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:2777
+#: main/keximainwindowimpl.cpp:2796
 #, fuzzy
 msgid "Please choose other name."
 msgstr "Rhowch yr enw."
 
-#: main/keximainwindowimpl.cpp:2800
+#: main/keximainwindowimpl.cpp:2819
 #, fuzzy
 msgid "Saving \"%1\" object failed."
 msgstr "Cadw gwrthrych fel"
 
-#: main/keximainwindowimpl.cpp:2817
+#: main/keximainwindowimpl.cpp:2836
 msgid "Saving new \"%1\" object failed."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:2863
+#: main/keximainwindowimpl.cpp:2882
 #, fuzzy
 msgid "Do you want to save changes?"
 msgstr "Ydych eisiau dileu'r rhes dewisiedig?"
 
-#: main/keximainwindowimpl.cpp:3354
+#: main/keximainwindowimpl.cpp:3373
 msgid "Do you want to remove:"
 msgstr "Ydych eisiau gwaredu:"
 
-#: main/keximainwindowimpl.cpp:3379
+#: main/keximainwindowimpl.cpp:3398
 #, fuzzy
 msgid "Could not remove object."
 msgstr "Methu gwaredu ffeil \"%1\". "
 
-#: main/keximainwindowimpl.cpp:3397
+#: main/keximainwindowimpl.cpp:3416
 #, fuzzy
 msgid "Renaming object \"%1\" failed."
 msgstr "Cadw gwrthrych fel"
 
-#: main/keximainwindowimpl.cpp:3548
+#: main/keximainwindowimpl.cpp:3567
 msgid ""
 "Please note that forms are currently unstable functionality, provided <u>"
 "only for your preview</u>."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:3551
+#: main/keximainwindowimpl.cpp:3570
 msgid "Forms will be available after restarting Kexi application."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:3555
+#: main/keximainwindowimpl.cpp:3574
 msgid "Forms will be hidden after restarting Kexi application."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:3581
+#: main/keximainwindowimpl.cpp:3600
 #, fuzzy
 msgid "Could not start project \"%1\" in Final Mode."
 msgstr "Methwyd creu cywaith \"%1\""
 
-#: main/keximainwindowimpl.cpp:3586
+#: main/keximainwindowimpl.cpp:3605
 msgid "No Final Mode data found."
 msgstr ""
 
-#: main/keximainwindowimpl.cpp:3594
+#: main/keximainwindowimpl.cpp:3613
 #, fuzzy
 msgid "Error reading Final Mode data."
 msgstr "Gwall tra'n darllen y ddogfen."
 
-#: main/keximainwindowimpl.cpp:3624
+#: main/keximainwindowimpl.cpp:3643
 #, fuzzy
 msgid "Specified plugin does not exist."
 msgstr "Nid yw ffeil %1 yn bodoli."
 
-#: main/keximainwindowimpl.cpp:3632
+#: main/keximainwindowimpl.cpp:3651
 #, fuzzy
 msgid "Specified object could not be opened."
 msgstr "Creuwyd cronfa ddata \"%1\" ond methwyd ei hagor"
@@ -1584,7 +1593,7 @@ msgid "Select Destination Database"
 msgstr "Maes Cyrchfan"
 
 #: migration/importwizard.cpp:116
-msgid "Type Of Import"
+msgid "Select Type Of Import"
 msgstr ""
 
 #: migration/importwizard.cpp:119
@@ -1597,20 +1606,25 @@ msgid ""
 "set into a Kexi database."
 msgstr ""
 
-#: migration/importwizard.cpp:203
+#: migration/importwizard.cpp:153 migration/importwizard.cpp:199
+#, fuzzy
+msgid "Source database type:"
+msgstr "Dewis Cronfa Ddata"
+
+#: migration/importwizard.cpp:215
 #, fuzzy
 msgid "Destination project's caption:"
 msgstr "Mewnosod pennawd y cywaith"
 
-#: migration/importwizard.cpp:243
-msgid "Structure and Data"
+#: migration/importwizard.cpp:256
+msgid "Structure and data"
 msgstr ""
 
-#: migration/importwizard.cpp:244
-msgid "Structure Only"
+#: migration/importwizard.cpp:257
+msgid "Structure only"
 msgstr ""
 
-#: migration/importwizard.cpp:265
+#: migration/importwizard.cpp:278
 msgid ""
 "All required information has now been gathered. Click Finish below to start the "
 "import process\n"
@@ -1618,72 +1632,77 @@ msgid ""
 "could not automatically determine this for you."
 msgstr ""
 
-#: migration/importwizard.cpp:294
+#: migration/importwizard.cpp:309
 #, fuzzy
 msgid "No new database name was entered."
 msgstr "Mewnosod enw cronfa ddata'r cywaith"
 
-#: migration/importwizard.cpp:299
+#: migration/importwizard.cpp:314
 msgid "Following problems were found with the data you entered:"
 msgstr ""
 
-#: migration/importwizard.cpp:303
+#: migration/importwizard.cpp:318
 msgid "Please click 'Back' button and correct these errors."
 msgstr ""
 
-#: migration/importwizard.cpp:307
+#: migration/importwizard.cpp:322
 msgid "No problems were found with the data you entered."
 msgstr ""
 
-#: migration/importwizard.cpp:374
+#: migration/importwizard.cpp:388
 #, fuzzy
 msgid "Imported Database"
 msgstr "Dewis Cronfa Ddata"
 
-#: migration/importwizard.cpp:496
+#: migration/importwizard.cpp:510
 msgid ""
 "No connection data is available. You did not select an SQLite destination "
 "filename."
 msgstr ""
 
-#: migration/importwizard.cpp:556
+#: migration/importwizard.cpp:570
 msgid "Import Succeeded."
 msgstr ""
 
-#: migration/importwizard.cpp:556
+#: migration/importwizard.cpp:570
 msgid "Success"
 msgstr "Llwyddiant"
 
-#: migration/importwizard.cpp:561
+#: migration/importwizard.cpp:575
 msgid "Import failed."
 msgstr "Methodd mewnforio."
 
-#: migration/importwizard.cpp:561
+#: migration/importwizard.cpp:575
 #, fuzzy
 msgid "Failure"
 msgstr "Gwerth"
 
-#: migration/importwizard.cpp:597 migration/importwizard.cpp:621
+#: migration/importwizard.cpp:586
+#, fuzzy
+msgid "Select source database filename."
+msgstr "Mewnosod enw cronfa ddata'r cywaith"
+
+#: migration/importwizard.cpp:629 migration/importwizard.cpp:653
 msgid "No help available for this page"
 msgstr ""
 
-#: migration/importwizard.cpp:601
+#: migration/importwizard.cpp:633
 msgid "Here you can choose the type of data to import data from"
 msgstr ""
 
-#: migration/importwizard.cpp:605
+#: migration/importwizard.cpp:637
 msgid "Here you can choose the location to import data from"
 msgstr ""
 
-#: migration/importwizard.cpp:609
+#: migration/importwizard.cpp:641
 msgid "Here you can choose the actual database to import data from"
 msgstr ""
 
-#: migration/importwizard.cpp:613
+#: migration/importwizard.cpp:645
 msgid "Here you can choose the location to save the data"
 msgstr ""
 
-#: migration/importwizard.cpp:617
+#: migration/importwizard.cpp:649
 msgid ""
 "Here you can choose the location to save the data in and the new database name"
 msgstr ""
@@ -1999,7 +2018,7 @@ msgstr ""
 msgid "Table not found"
 msgstr "ni chafwyd y gwrthrych"
 
-#: kexidb/connection.cpp:1417 kexidb/expression.cpp:595
+#: kexidb/connection.cpp:1425 kexidb/expression.cpp:595
 #, fuzzy
 msgid "Unknown table \"%1\""
 msgstr "math anhysbys o wrthrych \"%1\""
@@ -2080,11 +2099,11 @@ msgstr "Ni ellir darllen y ffeil gronfa ddata \"%1\"."
 msgid "Database file \"%1\" is not writable."
 msgstr "Ni ellir ysgrifennu'r ffeil gronfa ddata \"%1\"."
 
-#: kexidb/connection.cpp:364
+#: kexidb/connection.cpp:365
 msgid "Database \"%1\" already exists."
 msgstr "Mae cronfa ddata \"%1\" yn bodoli eisoes."
 
-#: kexidb/connection.cpp:368
+#: kexidb/connection.cpp:369
 #, fuzzy
 msgid ""
 "Cannot create database \"%1\". This name is reserved for system database."
@@ -2092,201 +2111,201 @@ msgstr ""
 "Methu creu cronfa ddata \"%1\". Neilltuir yr enw hwn ar gyfer cronfa ddata'r "
 "cysawd."
 
-#: kexidb/connection.cpp:383
+#: kexidb/connection.cpp:384
 msgid "Error creating database \"%1\" on the server."
 msgstr "Gwall wrth greu cronfa ddata \"%1\" ar y gweinydd."
 
-#: kexidb/connection.cpp:397
+#: kexidb/connection.cpp:398
 msgid "Database \"%1\" created but could not be opened."
 msgstr "Creuwyd cronfa ddata \"%1\" ond methwyd ei hagor"
 
-#: kexidb/connection.cpp:485
+#: kexidb/connection.cpp:486
 msgid "Opening database \"%1\" failed"
 msgstr ""
 
-#: kexidb/connection.cpp:496
+#: kexidb/connection.cpp:497
 msgid "\"%1\" database property not found"
 msgstr "Ni chafwyd priodwedd cronfa ddata \"%1\""
 
-#: kexidb/connection.cpp:513
+#: kexidb/connection.cpp:514
 msgid "Database version (%1) does not match Kexi application's version (%2)"
 msgstr ""
 "Nid yw fersiwn (%1) y gronfa ddata yn cydweddu â fersiwn y cymhwysiad Kexi (%2)"
 
-#: kexidb/connection.cpp:577
+#: kexidb/connection.cpp:578
 msgid "Cannot find any database for temporary connection."
 msgstr "Methu cael hyd i gronfa ddata ar gyfer cysylltiad dros dro"
 
-#: kexidb/connection.cpp:581
+#: kexidb/connection.cpp:582
 msgid "Error during starting temporary connection using \"%1\" database name."
 msgstr ""
 "Gwall wrth gychwyn cysylltiad dros dro gan ddefnyddio enw cronfa ddata \"%1\"."
 
-#: kexidb/connection.cpp:598
+#: kexidb/connection.cpp:599
 msgid "Cannot drop database - name not specified."
 msgstr "Methu gollwng y gronfa ddata - ni roddwyd enw."
 
-#: kexidb/connection.cpp:616
+#: kexidb/connection.cpp:617
 msgid "Cannot delete database - name not specified."
 msgstr "Methu dileu'r gronfa ddata- ni roddwyd enw."
 
-#: kexidb/connection.cpp:621
+#: kexidb/connection.cpp:622
 msgid "Cannot delete system database \"%1\"."
 msgstr "Ni cheir dileu cronfa ddata'r cysawd \"%1\"."
 
-#: kexidb/connection.cpp:926
+#: kexidb/connection.cpp:942
 #, fuzzy
 msgid "Error while executing SQL statement."
 msgstr "Gwall tra'n darllen y ddogfen."
 
-#: kexidb/connection.cpp:1128
+#: kexidb/connection.cpp:1144
 msgid "Cannot create table without fields."
 msgstr "Ni cheir creu tabl heb feysydd."
 
-#: kexidb/connection.cpp:1133
+#: kexidb/connection.cpp:1154
 msgid "System name \"%1\" cannot be used as table name."
 msgstr "Ni cheir defnyddio enw cysawd \"%1\" fel enw tabl."
 
-#: kexidb/connection.cpp:1141
+#: kexidb/connection.cpp:1163
 msgid "System name \"%1\" cannot be used as one of fields in \"%2\" table."
 msgstr "Ni cheir defnyddio enw cysawd \"%1\" fel un o feysydd tabl \"%2\"."
 
-#: kexidb/connection.cpp:1157
+#: kexidb/connection.cpp:1178
 #, fuzzy
 msgid "Could not create the same table \"%1\" twice."
 msgstr "Methwyd creu cywaith \"%1\""
 
-#: kexidb/connection.cpp:1171 plugins/tables/kexitablepart.cpp:187
+#: kexidb/connection.cpp:1192 plugins/tables/kexitablepart.cpp:187
 #, fuzzy
 msgid "Table \"%1\" already exists."
 msgstr "Mae cronfa ddata \"%1\" yn bodoli eisoes."
 
-#: kexidb/connection.cpp:1297
+#: kexidb/connection.cpp:1305
 #, fuzzy
 msgid "Could not remove object's data."
 msgstr "Methu gwaredu ffeil \"%1\". "
 
-#: kexidb/connection.cpp:1328
+#: kexidb/connection.cpp:1336
 #, fuzzy
 msgid ""
 "Table \"%1\" cannot be removed.\n"
 msgstr "Ni cheir gwaredu tabl \"%1\"."
 
-#: kexidb/connection.cpp:1335
+#: kexidb/connection.cpp:1343
 msgid "Unexpected name or identifier."
 msgstr ""
 
-#: kexidb/connection.cpp:1380
+#: kexidb/connection.cpp:1388
 #, fuzzy
 msgid "Table \"%1\" does not exist."
 msgstr "Nid yw'r gronfa ddata \"%1\" yn bodoli."
 
-#: kexidb/connection.cpp:1395
+#: kexidb/connection.cpp:1403
 msgid "Could not alter table \"%1\" using the same table."
 msgstr ""
 
-#: kexidb/connection.cpp:1421
+#: kexidb/connection.cpp:1429
 #, fuzzy
 msgid "Invalid table name \"%1\""
 msgstr "Enw gwrthrych annilys \"%1\""
 
-#: kexidb/connection.cpp:1426
+#: kexidb/connection.cpp:1434
 msgid "Could rename table \"%1\" using the same name."
 msgstr ""
 
-#: kexidb/connection.cpp:1449
+#: kexidb/connection.cpp:1457
 msgid "Could not rename table \"%1\" to \"%2\". Table \"%3\" already exists."
 msgstr ""
 
-#: kexidb/connection.cpp:1556
+#: kexidb/connection.cpp:1564
 #, fuzzy
 msgid "Query \"%1\" does not exist."
 msgstr "<qt>Nid yw'r ffeil \"%1\" mewn bod."
 
-#: kexidb/connection.cpp:1653
+#: kexidb/connection.cpp:1661
 msgid "Transaction already started."
 msgstr "Cychwynwyd y trosglwyddiad eisoes."
 
-#: kexidb/connection.cpp:1693 kexidb/connection.cpp:1727
+#: kexidb/connection.cpp:1701 kexidb/connection.cpp:1735
 msgid "Transaction not started."
 msgstr "Trosglwyddiad heb ei gychwyn."
 
-#: kexidb/connection.cpp:1707
+#: kexidb/connection.cpp:1715
 msgid "Error on commit transaction"
 msgstr "Gwall wrth gadarnhau'r trawsweithrediad"
 
-#: kexidb/connection.cpp:1741
+#: kexidb/connection.cpp:1749
 msgid "Error on rollback transaction"
 msgstr "Gwall wrth ddadwneud y trosglwyddiad"
 
-#: kexidb/connection.cpp:1898 kexidb/connection.cpp:2156
+#: kexidb/connection.cpp:1906 kexidb/connection.cpp:2171
 msgid "Invalid object name \"%1\""
 msgstr "Enw gwrthrych annilys \"%1\""
 
-#: kexidb/connection.cpp:2000
+#: kexidb/connection.cpp:2012
 #, fuzzy
 msgid "Column %1 does not exist for the query."
 msgstr "Nid yw'r gronfa ddata \"%1\" yn bodoli."
 
-#: kexidb/connection.cpp:2437
+#: kexidb/connection.cpp:2457
 #, fuzzy
 msgid "Could not update row because there is no master table defined."
 msgstr "Methwyd creu cywaith \"%1\""
 
-#: kexidb/connection.cpp:2444
+#: kexidb/connection.cpp:2464
 msgid "Could not update row because master table has no primary key defined."
 msgstr ""
 
-#: kexidb/connection.cpp:2466
+#: kexidb/connection.cpp:2486
 msgid ""
 "Could not update row because it does not contain entire master table's primary "
 "key."
 msgstr ""
 
-#: kexidb/connection.cpp:2477 kexidb/connection.cpp:2683
+#: kexidb/connection.cpp:2497 kexidb/connection.cpp:2703
 msgid "Primary key's field \"%1\" cannot be empty."
 msgstr "Ni all maes y prif allwedd \"%1\" fod yn wag."
 
-#: kexidb/connection.cpp:2494
+#: kexidb/connection.cpp:2514
 msgid "Row updating on the server failed."
 msgstr "Methwyd diweddaru'r rhes ar y gweinydd."
 
-#: kexidb/connection.cpp:2519
+#: kexidb/connection.cpp:2539
 #, fuzzy
 msgid "Could not insert row because there is no master table defined."
 msgstr "Methwyd creu cywaith \"%1\""
 
-#: kexidb/connection.cpp:2538
+#: kexidb/connection.cpp:2558
 msgid "Could not insert row because master table has no primary key defined."
 msgstr ""
 
-#: kexidb/connection.cpp:2547
+#: kexidb/connection.cpp:2567
 msgid ""
 "Could not insert row because it does not contain entire master table's primary "
 "key."
 msgstr ""
 
-#: kexidb/connection.cpp:2583
+#: kexidb/connection.cpp:2603
 msgid "Row inserting on the server failed."
 msgstr "Methwyd mewnosod y rhes ar y gweinydd."
 
-#: kexidb/connection.cpp:2649
+#: kexidb/connection.cpp:2669
 #, fuzzy
 msgid "Could not delete row because there is no master table defined."
 msgstr "Methwyd creu cywaith \"%1\""
 
-#: kexidb/connection.cpp:2659
+#: kexidb/connection.cpp:2679
 msgid ""
 "Could not delete row because there is no primary key for master table defined."
 msgstr ""
 
-#: kexidb/connection.cpp:2674
+#: kexidb/connection.cpp:2694
 msgid ""
 "Could not delete row because it does not contain entire master table's primary "
 "key."
 msgstr ""
 
-#: kexidb/connection.cpp:2700 kexidb/connection.cpp:2723
+#: kexidb/connection.cpp:2720 kexidb/connection.cpp:2743
 #, fuzzy
 msgid "Row deletion on the server failed."
 msgstr "Methwyd dileu y rhes ar y gweinydd."
@@ -2345,7 +2364,7 @@ msgid "&Format"
 msgstr "&Fformat"
 
 #. i18n: file data/kexiformpartinstui.rc line 30
-#: plugins/forms/kexiformpart.cpp:455 rc.cpp:9 rc.cpp:51
+#: plugins/forms/kexiformpart.cpp:457 rc.cpp:9 rc.cpp:51
 #, no-c-format
 msgid "Widgets"
 msgstr "Celfigion"
@@ -2434,19 +2453,19 @@ msgstr "Trefnu"
 msgid "&Migrate"
 msgstr "G&wybodaeth"
 
-#. i18n: file data/kexiui.rc line 126
+#. i18n: file data/kexiui.rc line 127
 #: rc.cpp:117
 #, no-c-format
 msgid "&Other"
 msgstr "A&rall"
 
-#. i18n: file data/kexiui.rc line 142
+#. i18n: file data/kexiui.rc line 143
 #: rc.cpp:123
 #, no-c-format
 msgid "Other &Licenses"
 msgstr "&Trwyddedau Eraill"
 
-#. i18n: file data/kexiui.rc line 172
+#. i18n: file data/kexiui.rc line 173
 #: rc.cpp:132
 #, no-c-format
 msgid "Data"
@@ -3200,7 +3219,7 @@ msgstr "Adroddiad"
 msgid "Label"
 msgstr "Label"
 
-#: plugins/forms/kexidbfactory.cpp:216
+#: plugins/forms/kexidbfactory.cpp:218
 #: plugins/reports/kexireportfactory.cpp:53
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
@@ -3271,314 +3290,341 @@ msgstr "Golygu Testun Cyfoethog"
 msgid "Set form's data source to \"%1\""
 msgstr "Tarddiad data"
 
-#: plugins/forms/kexidbfactory.cpp:164 plugins/forms/kexiformpart.cpp:81
+#: plugins/forms/kexidbfactory.cpp:166 plugins/forms/kexiformpart.cpp:81
 msgid "Form"
 msgstr "Ffurflen"
 
-#: plugins/forms/kexidbfactory.cpp:166
+#: plugins/forms/kexidbfactory.cpp:168
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters.\n"
 "form"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:167
+#: plugins/forms/kexidbfactory.cpp:169
 #, fuzzy
 msgid "A data-aware form widget"
 msgstr "Celfigyn blwch cyfun"
 
-#: plugins/forms/kexidbfactory.cpp:174
+#: plugins/forms/kexidbfactory.cpp:176
 #, fuzzy
 msgid "Sub Form"
 msgstr "Ffurflen"
 
-#: plugins/forms/kexidbfactory.cpp:176
+#: plugins/forms/kexidbfactory.cpp:178
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters.\n"
 "subForm"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:177
+#: plugins/forms/kexidbfactory.cpp:179
 msgid "A form widget included in another Form"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:190
+#: plugins/forms/kexidbfactory.cpp:192
 #, fuzzy
 msgid "Text Box"
 msgstr "Testun"
 
-#: plugins/forms/kexidbfactory.cpp:192
+#: plugins/forms/kexidbfactory.cpp:194
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters.\n"
 "textBox"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:193
+#: plugins/forms/kexidbfactory.cpp:195
 #, fuzzy
 msgid "A widget for entering and displaying text"
 msgstr "Celfigyn i fewnosod testun"
 
-#: plugins/forms/kexidbfactory.cpp:203
+#: plugins/forms/kexidbfactory.cpp:205
 msgid "Text Editor"
 msgstr "Golygydd testun"
 
-#: plugins/forms/kexidbfactory.cpp:205
+#: plugins/forms/kexidbfactory.cpp:207
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters.\n"
 "textEditor"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:206
+#: plugins/forms/kexidbfactory.cpp:208
 #, fuzzy
 msgid "A multiline text editor"
 msgstr "Golygydd testun cyfoethog ar gyfer un dudalen syml"
 
-#: plugins/forms/kexidbfactory.cpp:214
+#: plugins/forms/kexidbfactory.cpp:216
 #, fuzzy
 msgid ""
 "_: Text Label\n"
 "Label"
 msgstr "Label"
 
-#: plugins/forms/kexidbfactory.cpp:217
+#: plugins/forms/kexidbfactory.cpp:219
 #, fuzzy
 msgid "A widget for displaying text"
 msgstr "Celfigyn i fewnosod testun"
 
-#: plugins/forms/kexidbfactory.cpp:225
+#: plugins/forms/kexidbfactory.cpp:228 plugins/forms/kexidbwidgets.cpp:1325
+#: plugins/forms/kexidbwidgets.cpp:1632
 msgid "Image Box"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:227
+#: plugins/forms/kexidbfactory.cpp:230
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters.\n"
 "image"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:228
+#: plugins/forms/kexidbfactory.cpp:231
 #, fuzzy
 msgid "A widget for displaying images"
 msgstr "Celfigyn i fewnosod testun"
 
-#: plugins/forms/kexidbfactory.cpp:235
+#: plugins/forms/kexidbfactory.cpp:241
 msgid "Check Box"
 msgstr "Blwch Britho"
 
-#: plugins/forms/kexidbfactory.cpp:237
+#: plugins/forms/kexidbfactory.cpp:243
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters.\n"
 "checkBox"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:238
+#: plugins/forms/kexidbfactory.cpp:244
 #, fuzzy
 msgid "A check box with text label"
 msgstr "Blwch britho efo testun neu label pics-fap"
 
-#: plugins/forms/kexidbfactory.cpp:244
+#: plugins/forms/kexidbfactory.cpp:251
 #, fuzzy
 msgid "Auto Field"
 msgstr "Maes"
 
-#: plugins/forms/kexidbfactory.cpp:246
+#: plugins/forms/kexidbfactory.cpp:253
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters\n"
 "autoField"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:247
+#: plugins/forms/kexidbfactory.cpp:254
 msgid ""
 "A widget containing an automatically chosen editor and a label to edit value "
 "database field of any type."
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:259
+#: plugins/forms/kexidbfactory.cpp:267
 #, fuzzy
 msgid "Date Widget"
 msgstr "Dileu celfigyn"
 
-#: plugins/forms/kexidbfactory.cpp:261
+#: plugins/forms/kexidbfactory.cpp:269
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters.\n"
 "dateWidget"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:262
+#: plugins/forms/kexidbfactory.cpp:270
 #, fuzzy
 msgid "A widget to input and display a date"
 msgstr "Celfigyn i fewnosod testun"
 
-#: plugins/forms/kexidbfactory.cpp:274
+#: plugins/forms/kexidbfactory.cpp:282
 #, fuzzy
 msgid "Time Widget"
 msgstr "I'r Lletaf"
 
-#: plugins/forms/kexidbfactory.cpp:276
+#: plugins/forms/kexidbfactory.cpp:284
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters.\n"
 "timeWidget"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:277
+#: plugins/forms/kexidbfactory.cpp:285
 #, fuzzy
 msgid "A widget to input and display a time"
 msgstr "Celfigyn i fewnosod testun"
 
-#: plugins/forms/kexidbfactory.cpp:289
+#: plugins/forms/kexidbfactory.cpp:297
 #, fuzzy
 msgid "Date/Time Widget"
 msgstr "Dyddiad/Amser"
 
-#: plugins/forms/kexidbfactory.cpp:291
+#: plugins/forms/kexidbfactory.cpp:299
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters.\n"
 "dateTimeWidget"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:292
+#: plugins/forms/kexidbfactory.cpp:300
 #, fuzzy
 msgid "A widget to input and display a time and a date"
 msgstr "Celfigyn i fewnosod testun"
 
-#: plugins/forms/kexidbfactory.cpp:300
+#: plugins/forms/kexidbfactory.cpp:308
 #, fuzzy
-msgid "Integer Spin Box"
+msgid "Integer Number Spin Box"
 msgstr "Blwch Troelli"
 
-#: plugins/forms/kexidbfactory.cpp:302
+#: plugins/forms/kexidbfactory.cpp:310
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters.\n"
 "intSpinBox"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:303
+#: plugins/forms/kexidbfactory.cpp:311
 #, fuzzy
-msgid "A spin box widget to enter integers"
-msgstr "Celfigyn blwch troelli"
+msgid "A spin box widget to input and display integer numbers"
+msgstr "Celfigyn i fewnosod testun"
 
-#: plugins/forms/kexidbfactory.cpp:310
+#: plugins/forms/kexidbfactory.cpp:318
 #, fuzzy
-msgid "Decimal Spin Box"
-msgstr "Blwch Troelli"
+msgid "Floating-point Number Spin Box"
+msgstr "Rhif pwynt arnawf"
 
-#: plugins/forms/kexidbfactory.cpp:312
+#: plugins/forms/kexidbfactory.cpp:320
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters.\n"
 "dblSpinBox"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:313
+#: plugins/forms/kexidbfactory.cpp:321
 #, fuzzy
-msgid "A spin box widget to enter decimals"
-msgstr "Celfigyn blwch troelli"
+msgid "A spin box widget to input and display floating-point numbers"
+msgstr "Celfigyn i fewnosod testun"
 
-#: plugins/forms/kexidbfactory.cpp:320
+#: plugins/forms/kexidbfactory.cpp:328
 #, fuzzy
 msgid "Command Button"
 msgstr "Botwm Radio"
 
-#: plugins/forms/kexidbfactory.cpp:322
+#: plugins/forms/kexidbfactory.cpp:330
 msgid ""
 "_: Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters.\n"
 "button"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:323
+#: plugins/forms/kexidbfactory.cpp:331
 #, fuzzy
 msgid "A command button to execute actions"
 msgstr "Botwm gwthio syml i weithredu gorchymyn"
 
-#: plugins/forms/kexidbfactory.cpp:326 plugins/forms/kexiformpart.cpp:452
+#: plugins/forms/kexidbfactory.cpp:334 plugins/forms/kexiformpart.cpp:454
 #, fuzzy
 msgid "Data Source"
 msgstr "Tarddiad data"
 
-#: plugins/forms/kexidbfactory.cpp:327
+#: plugins/forms/kexidbfactory.cpp:335
 #, fuzzy
 msgid "Form Name"
 msgstr "Enw maes"
 
-#: plugins/forms/kexidbfactory.cpp:328
+#: plugins/forms/kexidbfactory.cpp:336
 msgid "On Click"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:329
+#: plugins/forms/kexidbfactory.cpp:337
 msgid "Auto Tab Stops"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:330
+#: plugins/forms/kexidbfactory.cpp:338
 #, fuzzy
 msgid "Shadow Enabled"
 msgstr "Alluog"
 
-#: plugins/forms/kexidbfactory.cpp:332
+#: plugins/forms/kexidbfactory.cpp:340
 #, fuzzy
 msgid "Editor Type"
 msgstr "Math data"
 
-#: plugins/forms/kexidbfactory.cpp:334
+#: plugins/forms/kexidbfactory.cpp:342
 msgid ""
 "_: AutoField editor's type\n"
 "Auto"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:342
+#: plugins/forms/kexidbfactory.cpp:350
 msgid ""
 "_: AutoField editor's type\n"
 "Multiline Text"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:343
+#: plugins/forms/kexidbfactory.cpp:351
 msgid ""
 "_: AutoField editor's type\n"
 "List of Values"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:346
+#: plugins/forms/kexidbfactory.cpp:352
+msgid ""
+"_: AutoField editor's type\n"
+"Image"
+msgstr ""
+
+#: plugins/forms/kexidbfactory.cpp:355
 #, fuzzy
 msgid "Auto Label"
 msgstr "Maes"
 
-#: plugins/forms/kexidbfactory.cpp:348
+#: plugins/forms/kexidbfactory.cpp:357
 msgid "Label Position"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:349
+#: plugins/forms/kexidbfactory.cpp:358
 msgid ""
 "_: Label Position\n"
 "Left"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:350
+#: plugins/forms/kexidbfactory.cpp:359
 msgid ""
 "_: Label Position\n"
 "Top"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:351
+#: plugins/forms/kexidbfactory.cpp:360
 #, fuzzy
 msgid ""
 "_: Label Position\n"
 "No Label"
 msgstr "Label"
 
-#: plugins/forms/kexidbfactory.cpp:353
+#: plugins/forms/kexidbfactory.cpp:362
 msgid "Size"
 msgstr "Maint"
 
-#: plugins/forms/kexidbfactory.cpp:429
+#: plugins/forms/kexidbfactory.cpp:363
+#, fuzzy
+msgid "Image"
+msgstr "Tudalen :"
+
+#: plugins/forms/kexidbfactory.cpp:364
+#, fuzzy
+msgid "Scaled Contents"
+msgstr "Cynnwys annilys yn y gronfa ddata "
+
+#: plugins/forms/kexidbfactory.cpp:365
+msgid ""
+"_: Keep Aspect Ratio (short)\n"
+"Keep Ratio"
+msgstr ""
+
+#: plugins/forms/kexidbfactory.cpp:446
+msgid "&Image"
+msgstr ""
+
+#: plugins/forms/kexidbfactory.cpp:464
 msgid "Assign Action..."
 msgstr ""
 
@@ -3587,11 +3633,11 @@ msgstr ""
 msgid "NAME"
 msgstr "ENW"
 
-#: plugins/forms/kexiformview.cpp:888
+#: plugins/forms/kexiformview.cpp:890
 msgid "Insert AutoField widget"
 msgstr ""
 
-#: plugins/forms/kexiformview.cpp:888
+#: plugins/forms/kexiformview.cpp:890
 #, fuzzy
 msgid "Insert %1 AutoField widgets"
 msgstr "Newid %1 o nifer o gelfigion"
@@ -3638,25 +3684,56 @@ msgstr ""
 msgid "Clear data source"
 msgstr "Newid Tarddiad Data"
 
-#: plugins/forms/kexidatasourcepage.cpp:136
+#: plugins/forms/kexidatasourcepage.cpp:142
 msgid ""
 "Select fields from the list below and drag them onto a form or click \"Insert\" "
 "button"
 msgstr ""
 
-#: plugins/forms/kexidatasourcepage.cpp:143
+#: plugins/forms/kexidatasourcepage.cpp:149
 #, fuzzy
 msgid "Available Fields:"
 msgstr "Enw'r tabl:"
 
-#: plugins/forms/kexidatasourcepage.cpp:152
+#: plugins/forms/kexidatasourcepage.cpp:158
 msgid ""
 "_: Insert selected field into form\n"
 "Insert"
 msgstr ""
 
-#: plugins/forms/kexidatasourcepage.cpp:158
+#: plugins/forms/kexidatasourcepage.cpp:164
 msgid "Insert selected fields into form"
+msgstr ""
+
+#: plugins/forms/kexidbwidgets.cpp:1257 plugins/forms/kexidbwidgets.cpp:1696
+msgid "No Image"
+msgstr ""
+
+#: plugins/forms/kexidbwidgets.cpp:1327
+#, fuzzy
+msgid "Insert From &File..."
+msgstr "O Ffeil..."
+
+#: plugins/forms/kexidbwidgets.cpp:1340
+#, fuzzy
+msgid "&Clear"
+msgstr "&Hidlen"
+
+#: plugins/forms/kexidbwidgets.cpp:1481 plugins/forms/kexidbwidgets.cpp:1484
+msgid "Insert Image From File"
+msgstr ""
+
+#: plugins/forms/kexidbwidgets.cpp:1522 plugins/forms/kexidbwidgets.cpp:1525
+#, fuzzy
+msgid "Save Image To File"
+msgstr "Cadw i ffeil..."
+
+#: plugins/forms/kexidbwidgets.cpp:1639
+msgid "Click to show actions for this Image Box"
+msgstr ""
+
+#: plugins/forms/kexidbwidgets.cpp:1641
+msgid "Click to show actions for \"%1\" Image Box"
 msgstr ""
 
 #: plugins/forms/kexiformpart.cpp:118 plugins/forms/kexiformpart.cpp:145
@@ -3717,65 +3794,65 @@ msgstr "Anfon Celfigyn i'r Blaen"
 msgid "Send Widget to Back"
 msgstr "Anfon Celfigyn i'r Cefn"
 
-#: plugins/forms/kexiformpart.cpp:174
+#: plugins/forms/kexiformpart.cpp:175
 #, fuzzy
 msgid "Other widgets"
 msgstr "Dileu celfigyn"
 
-#: plugins/forms/kexiformpart.cpp:176
+#: plugins/forms/kexiformpart.cpp:178
 msgid "Align Widgets Position"
 msgstr ""
 
-#: plugins/forms/kexiformpart.cpp:178
+#: plugins/forms/kexiformpart.cpp:180
 msgid "To Left"
 msgstr "I'r Chwith"
 
-#: plugins/forms/kexiformpart.cpp:179
+#: plugins/forms/kexiformpart.cpp:181
 msgid "To Right"
 msgstr "I'r Dde"
 
-#: plugins/forms/kexiformpart.cpp:180
+#: plugins/forms/kexiformpart.cpp:182
 msgid "To Top"
 msgstr "I'r Pen"
 
-#: plugins/forms/kexiformpart.cpp:181
+#: plugins/forms/kexiformpart.cpp:183
 msgid "To Bottom"
 msgstr "I'r Gwaelod"
 
-#: plugins/forms/kexiformpart.cpp:182 plugins/forms/kexiformpart.cpp:187
+#: plugins/forms/kexiformpart.cpp:184 plugins/forms/kexiformpart.cpp:189
 msgid "To Grid"
 msgstr "I'r Grid"
 
-#: plugins/forms/kexiformpart.cpp:184
+#: plugins/forms/kexiformpart.cpp:186
 msgid "Adjust Widgets Size"
 msgstr ""
 
-#: plugins/forms/kexiformpart.cpp:186
+#: plugins/forms/kexiformpart.cpp:188
 msgid "To Fit"
 msgstr "I Ffitio"
 
-#: plugins/forms/kexiformpart.cpp:188
+#: plugins/forms/kexiformpart.cpp:190
 msgid "To Shortest"
 msgstr "I'r Byrraf"
 
-#: plugins/forms/kexiformpart.cpp:189
+#: plugins/forms/kexiformpart.cpp:191
 msgid "To Tallest"
 msgstr "I'r Talaf"
 
-#: plugins/forms/kexiformpart.cpp:190
+#: plugins/forms/kexiformpart.cpp:192
 msgid "To Narrowest"
 msgstr "I'r Culaf"
 
-#: plugins/forms/kexiformpart.cpp:191
+#: plugins/forms/kexiformpart.cpp:193
 msgid "To Widest"
 msgstr "I'r Lletaf"
 
-#: plugins/forms/kexiformpart.cpp:398
+#: plugins/forms/kexiformpart.cpp:400
 #, fuzzy
 msgid "Design of form \"%1\" has been modified."
 msgstr "<p>Addasiwyd y gwrthrych: %1 \"%2\".</p><p>Ydych eisiau ei gadw?</p>"
 
-#: plugins/forms/kexiformpart.cpp:400
+#: plugins/forms/kexiformpart.cpp:402
 #, fuzzy
 msgid "Form \"%1\" already exists."
 msgstr "Mae cronfa ddata \"%1\" yn bodoli eisoes."
@@ -4382,33 +4459,45 @@ msgid ""
 "this table are opened:"
 msgstr ""
 
-#: plugins/scripting/kexiscriptpart.cpp:45
+#: plugins/scripting/kexiscriptpart.cpp:42
 msgid "Script"
 msgstr "Sgript"
 
-#: plugins/scripting/kexiscriptpart.cpp:59
+#: plugins/scripting/kexiscriptpart.cpp:56
 #, fuzzy
 msgid "Execute script"
 msgstr "Creu &Sgript..."
 
-#: plugins/scripting/kexiscriptpart.cpp:87
+#: plugins/scripting/kexiscriptpart.cpp:81
 #, fuzzy
 msgid "Design of script \"%1\" has been modified."
 msgstr "<p>Addasiwyd y gwrthrych: %1 \"%2\".</p><p>Ydych eisiau ei gadw?</p>"
 
-#: plugins/scripting/kexiscriptpart.cpp:89
+#: plugins/scripting/kexiscriptpart.cpp:83
 #, fuzzy
 msgid "Script \"%1\" already exists."
 msgstr "Mae cronfa ddata \"%1\" yn bodoli eisoes."
 
-#: plugins/scripting/kexiscriptdesignview.cpp:68
+#: plugins/scripting/kexiscriptdesignview.cpp:65
 #, fuzzy
 msgid "Interpreter"
 msgstr "Cyfanrif"
 
-#: plugins/scripting/kexiscriptdesignview.cpp:69
+#: plugins/scripting/kexiscriptdesignview.cpp:66
 msgid "The used scripting interpreter."
 msgstr ""
+
+#, fuzzy
+#~ msgid "A spin box widget to enter integers"
+#~ msgstr "Celfigyn blwch troelli"
+
+#, fuzzy
+#~ msgid "Decimal Spin Box"
+#~ msgstr "Blwch Troelli"
+
+#, fuzzy
+#~ msgid "A spin box widget to enter decimals"
+#~ msgstr "Celfigyn blwch troelli"
 
 #~ msgid "Tools"
 #~ msgstr "Offer"
@@ -4542,10 +4631,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Return database path."
 #~ msgstr "Cronfa ddata newydd"
-
-#, fuzzy
-#~ msgid "Return database filename."
-#~ msgstr "Mewnosod enw cronfa ddata'r cywaith"
 
 #, fuzzy
 #~ msgid "Return the name of the Schema."
@@ -5342,9 +5427,6 @@ msgstr ""
 
 #~ msgid "Edit Pixmap Collection"
 #~ msgstr "Golygu Casgliad Picsfap"
-
-#~ msgid "Scripts"
-#~ msgstr "Sgriptiau"
 
 #~ msgid "Create &Script..."
 #~ msgstr "Creu &Sgript..."
