@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-3/digikam.po\n"
-"POT-Creation-Date: 2005-09-24 02:41+0200\n"
+"POT-Creation-Date: 2005-09-29 02:45+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -314,7 +314,7 @@ msgstr "Sylwadau"
 msgid "Tags"
 msgstr ""
 
-#: digikam/imagedescedit.cpp:151 digikam/searchquickdialog.cpp:49
+#: digikam/imagedescedit.cpp:151 digikam/searchquickdialog.cpp:52
 msgid "Search:"
 msgstr "Chwiliad:"
 
@@ -744,8 +744,8 @@ msgstr ""
 msgid "Todo"
 msgstr ""
 
-#: digikam/searchadvanceddialog.cpp:127 digikam/searchfolderview.cpp:67
-#: digikam/searchquickdialog.cpp:59 digikam/searchquickdialog.cpp:152
+#: digikam/searchadvanceddialog.cpp:136 digikam/searchfolderview.cpp:67
+#: digikam/searchquickdialog.cpp:64 digikam/searchquickdialog.cpp:158
 msgid "Last Search"
 msgstr "Chwiliad Diwethaf"
 
@@ -768,8 +768,9 @@ msgid "New Simple Search..."
 msgstr ""
 
 #: digikam/searchfolderview.cpp:330
-msgid "New Extended Search..."
-msgstr ""
+#, fuzzy
+msgid "New Advanced Search..."
+msgstr "&Uwch %1"
 
 #: digikam/searchfolderview.cpp:353
 #, fuzzy
@@ -777,8 +778,9 @@ msgid "Edit Search..."
 msgstr "&Golygu..."
 
 #: digikam/searchfolderview.cpp:357
-msgid "Edit as Extended Search..."
-msgstr ""
+#, fuzzy
+msgid "Edit as Advanced Search..."
+msgstr "&Uwch %1"
 
 #: digikam/searchfolderview.cpp:359
 #, fuzzy
@@ -1216,50 +1218,76 @@ msgstr ""
 msgid "My Dates"
 msgstr "Gan Ddyddiad"
 
-#: digikam/searchadvanceddialog.cpp:42
+#: digikam/searchadvanceddialog.cpp:44
 #, fuzzy
 msgid "Advanced Search"
 msgstr "&Uwch %1"
 
-#: digikam/searchadvanceddialog.cpp:74
+#: digikam/searchadvanceddialog.cpp:61
+msgid ""
+"<p>You can see here the items found in album library using the current search "
+"settings."
+msgstr ""
+
+#: digikam/searchadvanceddialog.cpp:66
 #, fuzzy
-msgid "Add/Delete Option"
+msgid "Search Rules"
+msgstr "Chwiliadau"
+
+#: digikam/searchadvanceddialog.cpp:67
+msgid ""
+"<p>You can see here the search rules list used to process items searching in "
+"album library."
+msgstr ""
+
+#: digikam/searchadvanceddialog.cpp:80
+#, fuzzy
+msgid "Add/Delete Search Rules"
 msgstr "Dileu Ffeil"
 
-#: digikam/searchadvanceddialog.cpp:80 digikam/searchwidgets.cpp:227
+#: digikam/searchadvanceddialog.cpp:82
+msgid "<p>You can control here the search rules list contents."
+msgstr ""
+
+#: digikam/searchadvanceddialog.cpp:88 digikam/searchwidgets.cpp:227
 msgid "As Well As"
 msgstr ""
 
-#: digikam/searchadvanceddialog.cpp:81 digikam/searchwidgets.cpp:118
+#: digikam/searchadvanceddialog.cpp:89 digikam/searchwidgets.cpp:118
 #: digikam/searchwidgets.cpp:222 digikam/searchwidgets.cpp:401
 #: digikam/searchwidgets.cpp:514
 msgid "Or"
 msgstr "Neu"
 
-#: digikam/digikamview.cpp:547 digikam/searchadvanceddialog.cpp:83
+#: digikam/digikamview.cpp:547 digikam/searchadvanceddialog.cpp:91
 msgid "&Add"
 msgstr "&Ychwanegu"
 
-#: digikam/searchadvanceddialog.cpp:84
+#: digikam/searchadvanceddialog.cpp:92
 msgid "&Del"
 msgstr ""
 
-#: digikam/searchadvanceddialog.cpp:95
+#: digikam/searchadvanceddialog.cpp:103
 msgid "Group or Ungroup Options"
 msgstr ""
 
-#: digikam/searchadvanceddialog.cpp:100
+#: digikam/searchadvanceddialog.cpp:108
 msgid "&Group"
 msgstr "&Grŵp"
 
-#: digikam/searchadvanceddialog.cpp:101
+#: digikam/searchadvanceddialog.cpp:109
 msgid "&Ungroup"
 msgstr ""
 
-#: digikam/searchadvanceddialog.cpp:113
+#: digikam/searchadvanceddialog.cpp:121
 #, fuzzy
 msgid "&Save search as:"
 msgstr "Chwiliad:"
+
+#: digikam/searchadvanceddialog.cpp:123 digikam/searchquickdialog.cpp:65
+msgid ""
+"<p>Enter here the name used to save the current search in \"My Searches\" view"
+msgstr ""
 
 #: digikam/digikamapp.cpp:119
 msgid "Loading cameras"
@@ -1598,11 +1626,21 @@ msgstr "Syml"
 msgid "Full"
 msgstr "Llawn"
 
-#: digikam/searchquickdialog.cpp:40
+#: digikam/searchquickdialog.cpp:41
 msgid "Quick Search"
 msgstr ""
 
+#: digikam/searchquickdialog.cpp:54
+msgid "<p>Enter here your search arguments in albums library"
+msgstr ""
+
 #: digikam/searchquickdialog.cpp:57
+msgid ""
+"<p>You can see here the items found in albums library using the current search "
+"arguments"
+msgstr ""
+
+#: digikam/searchquickdialog.cpp:62
 #, fuzzy
 msgid "Save search as:"
 msgstr "Chwiliad:"
@@ -3851,6 +3889,10 @@ msgstr ""
 #: utilities/cameragui/cameraiconview.cpp:250
 msgid "Download"
 msgstr "Lawrlwytho"
+
+#, fuzzy
+#~ msgid "Add/Delete Option"
+#~ msgstr "Dileu Ffeil"
 
 #~ msgid "Scale:"
 #~ msgstr "Chwyddo :"
