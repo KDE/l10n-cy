@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
-"POT-Creation-Date: 2005-11-01 02:41+0100\n"
+"POT-Creation-Date: 2005-11-05 02:46+0100\n"
 "PO-Revision-Date: 2004-08-12 18:36+0100\n"
 "Last-Translator: KD at Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: KBabel 1.2\n"
 "\n"
 
-#: core/kexiguimsghandler.cpp:122
+#: core/kexiguimsghandler.cpp:123
 msgid "Unknown error"
 msgstr "Gwall anhysbys"
 
@@ -50,57 +50,59 @@ msgstr "Heb fodiwl rhannau ar gyfer teip MIME \"%1\""
 msgid "Context Help"
 msgstr "Cymorth Cyd-destun"
 
-#: core/kexiproject.cpp:164
-msgid "Could not open project \"%1\""
+#: core/kexiproject.cpp:180
+#, fuzzy
+msgid "Could not open project \"%1\"."
 msgstr "Methwyd agor cywaith \"%1\""
 
-#: core/kexiproject.cpp:189
-msgid "Could not create project \"%1\""
+#: core/kexiproject.cpp:205
+#, fuzzy
+msgid "Could not create project \"%1\"."
 msgstr "Methwyd creu cywaith \"%1\""
 
-#: core/kexiproject.cpp:231 core/kexiproject.cpp:287
+#: core/kexiproject.cpp:247 core/kexiproject.cpp:303
 #, fuzzy
 msgid "Project major version"
 msgstr "Egluryn y cywaith:"
 
-#: core/kexiproject.cpp:233 core/kexiproject.cpp:289
+#: core/kexiproject.cpp:249 core/kexiproject.cpp:305
 #, fuzzy
 msgid "Project minor version"
 msgstr "Perthnasau'r cywaith"
 
-#: core/kexiproject.cpp:235
+#: core/kexiproject.cpp:251
 #, fuzzy
 msgid "Project caption"
 msgstr "Egluryn y cywaith:"
 
-#: core/kexiproject.cpp:237
+#: core/kexiproject.cpp:253
 #, fuzzy
 msgid "Project description"
 msgstr "&Disgrifiad:"
 
-#: core/kexiproject.cpp:633
+#: core/kexiproject.cpp:650
 msgid "Opening object \"%1\" failed."
 msgstr ""
 
-#: core/kexiproject.cpp:689 main/keximainwindowimpl.cpp:3424
+#: core/kexiproject.cpp:706 main/keximainwindowimpl.cpp:3424
 msgid "Could not set empty name for this object."
 msgstr ""
 
-#: core/kexiproject.cpp:693
+#: core/kexiproject.cpp:710
 msgid "Could not use this name. Object with name \"%1\" already exists."
 msgstr ""
 
-#: core/kexiproject.cpp:700
+#: core/kexiproject.cpp:717
 #, fuzzy
 msgid "Could not rename object \"%1\"."
 msgstr "Methwyd creu cywaith \"%1\""
 
-#: core/kexiproject.cpp:811
+#: core/kexiproject.cpp:828
 #, fuzzy
 msgid "Warning: entire project's data will be removed."
 msgstr "Mewnosod enw cronfa ddata'r cywaith"
 
-#: core/kexiproject.cpp:826
+#: core/kexiproject.cpp:843
 #, fuzzy
 msgid ""
 "The project \"%1\" already exists.\n"
@@ -109,7 +111,7 @@ msgstr ""
 "Mae'r ffeil \"%1\" eisoes mewn bod.\n"
 " Ydych eisiau ysgrifennu drosti?\n"
 
-#: core/kexiproject.cpp:853
+#: core/kexiproject.cpp:870
 #, fuzzy
 msgid "Do you want to drop the project \"%1\"?"
 msgstr "Ydych eisiau dileu ymholiad \"%1\"?"
@@ -150,12 +152,12 @@ msgstr ""
 msgid "Data identifier: \"%1\"."
 msgstr ""
 
-#: core/kexi.h:116
+#: core/kexi.h:133
 #, fuzzy
 msgid "This function is not available for version %1 of %2 application."
 msgstr "Ni ellir darllen y ffeil \"%1\"."
 
-#: core/kexi.h:120
+#: core/kexi.h:137
 msgid "\"%1\" function is not available for version %2 of %3 application."
 msgstr ""
 
@@ -192,27 +194,27 @@ msgstr "Nid yw ffeil %1 yn bodoli."
 msgid "Specified document could not be opened."
 msgstr "Creuwyd cronfa ddata \"%1\" ond methwyd ei hagor"
 
-#: core/kexi.cpp:146
+#: core/kexi.cpp:147
 msgid "No View"
 msgstr ""
 
-#: core/kexi.cpp:147
+#: core/kexi.cpp:148
 msgid "Data View"
 msgstr "Golwg Data"
 
-#: core/kexi.cpp:148
+#: core/kexi.cpp:149
 msgid "Design View"
 msgstr "Golwg Cynllunio"
 
-#: core/kexi.cpp:149
+#: core/kexi.cpp:150
 msgid "Text View"
 msgstr "Golwg Testun"
 
-#: core/kexi.cpp:151
+#: core/kexi.cpp:152
 msgid "Unknown"
 msgstr "Anhysbys"
 
-#: core/kexi.cpp:157
+#: core/kexi.cpp:158
 msgid ""
 "You can correct data in this row or use \"Cancel row changes\" function."
 msgstr ""
@@ -1596,171 +1598,211 @@ msgstr "Methu canfod gyrrydd cronfa ddata \"%1\"."
 msgid "Could not load database driver \"%1\"."
 msgstr "Methu llwytho gyrrydd cronfa ddata \"%1\"."
 
-#: migration/importwizard.cpp:57
+#: migration/importwizard.cpp:58
 #, fuzzy
 msgid "Database Importing"
 msgstr "Lleoliad y Gronfa Ddata"
 
-#: migration/importwizard.cpp:100
+#. i18n: file data/kexiui.rc line 21
+#: migration/importwizard.cpp:59 rc.cpp:78
+#, no-c-format
+msgid "&Import"
+msgstr "&Mewnforio"
+
+#: migration/importwizard.cpp:102
 msgid "Introduction"
 msgstr "Cyflwyniad"
 
-#: migration/importwizard.cpp:103
+#: migration/importwizard.cpp:105
 #, fuzzy
 msgid "Select Source Database Type"
 msgstr "Dewis Cronfa Ddata"
 
-#: migration/importwizard.cpp:106
+#: migration/importwizard.cpp:108
 #, fuzzy
-msgid "Select Source Connection"
+msgid "Select Source Database Connection"
 msgstr "Cysylltiad"
 
-#: migration/importwizard.cpp:109
+#: migration/importwizard.cpp:111
 #, fuzzy
 msgid "Select Source Database"
 msgstr "Dewis Cronfa Ddata"
 
-#: migration/importwizard.cpp:112
+#: migration/importwizard.cpp:114
 #, fuzzy
 msgid "Select Destination Database Type"
 msgstr "Maes Cyrchfan"
 
-#: migration/importwizard.cpp:114
+#: migration/importwizard.cpp:116
 #, fuzzy
 msgid "Select Destination Project's Caption"
 msgstr "Dewiswch pennawd y prosiect"
 
-#: migration/importwizard.cpp:117
+#: migration/importwizard.cpp:119
 #, fuzzy
 msgid "Select Destination Database"
 msgstr "Maes Cyrchfan"
 
-#: migration/importwizard.cpp:120
+#: migration/importwizard.cpp:122
 msgid "Select Type Of Import"
 msgstr ""
 
-#: migration/importwizard.cpp:123
+#: migration/importwizard.cpp:125
 msgid "Finished"
 msgstr "Wedi Gorffen"
 
-#: migration/importwizard.cpp:144
+#: migration/importwizard.cpp:146
 msgid ""
 "This wizard will guide you through the process of converting an existing data "
 "set into a Kexi database."
 msgstr ""
 
-#: migration/importwizard.cpp:157
+#: migration/importwizard.cpp:159
 #, fuzzy
 msgid "Source database type:"
 msgstr "Dewis Cronfa Ddata"
 
-#: migration/importwizard.cpp:203
+#: migration/importwizard.cpp:205
 #, fuzzy
 msgid "Destination database type:"
 msgstr "Maes Cyrchfan"
 
-#: migration/importwizard.cpp:219
+#: migration/importwizard.cpp:221
 #, fuzzy
 msgid "Destination project's caption:"
 msgstr "Mewnosod pennawd y cywaith"
 
-#: migration/importwizard.cpp:262
+#: migration/importwizard.cpp:264
 msgid "Structure and data"
 msgstr ""
 
-#: migration/importwizard.cpp:263
+#: migration/importwizard.cpp:265
 msgid "Structure only"
 msgstr ""
 
-#: migration/importwizard.cpp:284
+#: migration/importwizard.cpp:286
 msgid ""
-"All required information has now been gathered. Click Finish below to start the "
-"import process\n"
-"Note: You may be asked for extra information such as field types if the wizard "
-"could not automatically determine this for you."
+"All required information has now been gathered. Click \"Import\" button to "
+"start importing."
 msgstr ""
 
-#: migration/importwizard.cpp:315
+#: migration/importwizard.cpp:316
 #, fuzzy
 msgid "No new database name was entered."
 msgstr "Mewnosod enw cronfa ddata'r cywaith"
 
-#: migration/importwizard.cpp:320
+#: migration/importwizard.cpp:321
 msgid "Following problems were found with the data you entered:"
 msgstr ""
 
-#: migration/importwizard.cpp:324
+#: migration/importwizard.cpp:325
 msgid "Please click 'Back' button and correct these errors."
 msgstr ""
 
-#: migration/importwizard.cpp:328
-msgid "No problems were found with the data you entered."
-msgstr ""
-
-#: migration/importwizard.cpp:394
+#: migration/importwizard.cpp:391
 #, fuzzy
-msgid "Imported Database"
-msgstr "Dewis Cronfa Ddata"
+msgid "Select source database to you wish to import:"
+msgstr "Mewnosod enw cronfa ddata'r cywaith"
 
-#: migration/importwizard.cpp:510
+#: migration/importwizard.cpp:533
 msgid ""
 "No connection data is available. You did not select an SQLite destination "
 "filename."
 msgstr ""
 
-#: migration/importwizard.cpp:585
+#: migration/importwizard.cpp:613
 msgid "Import Succeeded."
 msgstr ""
 
-#: migration/importwizard.cpp:585
+#: migration/importwizard.cpp:613
 msgid "Success"
 msgstr "Llwyddiant"
 
-#: migration/importwizard.cpp:596
+#: migration/importwizard.cpp:627
 msgid "Import failed."
 msgstr "Methodd mewnforio."
 
-#: migration/importwizard.cpp:596
-#, fuzzy
-msgid "Failure"
-msgstr "Gwerth"
-
-#: migration/importwizard.cpp:608
+#: migration/importwizard.cpp:647
 #, fuzzy
 msgid "Select source database filename."
 msgstr "Mewnosod enw cronfa ddata'r cywaith"
 
-#: migration/importwizard.cpp:651 migration/importwizard.cpp:675
+#: migration/importwizard.cpp:652
+#, fuzzy
+msgid "Select source database."
+msgstr "Dewis Cronfa Ddata"
+
+#: migration/importwizard.cpp:696 migration/importwizard.cpp:720
 msgid "No help available for this page"
 msgstr ""
 
-#: migration/importwizard.cpp:655
+#: migration/importwizard.cpp:700
 msgid "Here you can choose the type of data to import data from"
 msgstr ""
 
-#: migration/importwizard.cpp:659
+#: migration/importwizard.cpp:704
 msgid "Here you can choose the location to import data from"
 msgstr ""
 
-#: migration/importwizard.cpp:663
+#: migration/importwizard.cpp:708
 msgid "Here you can choose the actual database to import data from"
 msgstr ""
 
-#: migration/importwizard.cpp:667
+#: migration/importwizard.cpp:712
 msgid "Here you can choose the location to save the data"
 msgstr ""
 
-#: migration/importwizard.cpp:671
+#: migration/importwizard.cpp:716
 msgid ""
 "Here you can choose the location to save the data in and the new database name"
 msgstr ""
 
-#: migration/keximigrate.cpp:338
+#: migration/keximigrate.cpp:79
+#, fuzzy
+msgid "Could not connect to data source \"%1\"."
+msgstr "Methwyd agor cywaith \"%1\""
+
+#: migration/keximigrate.cpp:90
+#, fuzzy
+msgid "Could not get a list of table names for data source \"%1\"."
+msgstr "Methu canfod gyrrydd cronfa ddata \"%1\"."
+
+#: migration/keximigrate.cpp:100
+msgid "No tables to import found in data source \"%1\"."
+msgstr ""
+
+#: migration/keximigrate.cpp:136
+msgid ""
+"Could not import project from data source \"%1\". Error reading table \"%2\""
+msgstr ""
+
+#: migration/keximigrate.cpp:148
+#, fuzzy
+msgid "Could not import project from data source \"%1\"."
+msgstr "Methwyd agor cywaith \"%1\""
+
+#: migration/keximigrate.cpp:194
+#, fuzzy
+msgid "Could not copy table \"%1\" to destination database."
+msgstr "Heb ei gysylltu â gweinydd y gronfa ddata"
+
+#: migration/keximigrate.cpp:215 migration/keximigrate.cpp:289
+#: migration/keximigrate.cpp:308
+#, fuzzy
+msgid "Could not create database \"%1\"."
+msgstr "Methu llwytho gyrrydd cronfa ddata \"%1\"."
+
+#: migration/keximigrate.cpp:244
+#, fuzzy
+msgid "Could not import data from data source \"%1\"."
+msgstr "Methu canfod gyrrydd cronfa ddata \"%1\"."
+
+#: migration/keximigrate.cpp:404
 #, fuzzy
 msgid "Field Type"
 msgstr "Math o faes:"
 
-#: migration/keximigrate.cpp:339
+#: migration/keximigrate.cpp:405
 msgid ""
 "The data type for %1 could not be determined. Please select one of the "
 "following data types"
@@ -1853,13 +1895,15 @@ msgstr ""
 msgid "Names of internal Kexi objects are starting with \"kexi__\"."
 msgstr "Mae enwau gwrthrychau mewnol Kexi yn cychwyn hefo \"kexi__\"."
 
-#: kexidb/drivers/pqxx/pqxxcursor.cpp:68
+#: kexidb/drivers/pqxx/pqxxcursor.cpp:76
 msgid "No connection for cursor open operation specified"
 msgstr "Dim cysylltiad wedi'i benodi ar gyfer y weithred agor cwrchydd"
 
-#: kexidb/drivers/sqlite/sqliteconnection.cpp:181
-msgid "Could not remove file \"%1\"."
-msgstr "Methu gwaredu ffeil \"%1\". "
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:183
+msgid ""
+"Could not remove file \"%1\". Please check the file's permission and whether it "
+"is locked by other application."
+msgstr ""
 
 #: kexidb/driver_p.cpp:48
 msgid "Client library version"
@@ -1918,24 +1962,24 @@ msgstr "Trosglwyddiad heb ei gychwyn."
 msgid "KexiDB driver version"
 msgstr ""
 
-#: kexidb/cursor.cpp:122
+#: kexidb/cursor.cpp:124
 msgid "No query statement or schema defined."
 msgstr ""
 
-#: kexidb/cursor.cpp:128
+#: kexidb/cursor.cpp:130
 msgid "Query statement is empty."
 msgstr ""
 
-#: kexidb/cursor.cpp:137
+#: kexidb/cursor.cpp:140
 #, fuzzy
 msgid "Error opening database cursor."
 msgstr "Gwall yng nghysylltiad y gronfa ddata"
 
-#: kexidb/cursor.cpp:392 kexidb/cursor.cpp:415
+#: kexidb/cursor.cpp:395 kexidb/cursor.cpp:418
 msgid "Cannot fetch next record."
 msgstr "Methu nôl y cofnod nesaf"
 
-#: kexidb/object.cpp:55
+#: kexidb/object.cpp:60
 msgid "Unspecified error encountered"
 msgstr "Cafwyd gwall amhenodol"
 
@@ -2066,7 +2110,7 @@ msgstr ""
 msgid "Table not found"
 msgstr "ni chafwyd y gwrthrych"
 
-#: kexidb/connection.cpp:1452 kexidb/expression.cpp:595
+#: kexidb/connection.cpp:1453 kexidb/expression.cpp:595
 #, fuzzy
 msgid "Unknown table \"%1\""
 msgstr "math anhysbys o wrthrych \"%1\""
@@ -2219,159 +2263,164 @@ msgstr "Methu dileu'r gronfa ddata- ni roddwyd enw."
 msgid "Cannot delete system database \"%1\"."
 msgstr "Ni cheir dileu cronfa ddata'r cysawd \"%1\"."
 
-#: kexidb/connection.cpp:969
+#: kexidb/connection.cpp:970
 #, fuzzy
 msgid "Error while executing SQL statement."
 msgstr "Gwall tra'n darllen y ddogfen."
 
-#: kexidb/connection.cpp:1171
+#: kexidb/connection.cpp:1172
 msgid "Cannot create table without fields."
 msgstr "Ni cheir creu tabl heb feysydd."
 
-#: kexidb/connection.cpp:1181
+#: kexidb/connection.cpp:1182
 msgid "System name \"%1\" cannot be used as table name."
 msgstr "Ni cheir defnyddio enw cysawd \"%1\" fel enw tabl."
 
-#: kexidb/connection.cpp:1190
+#: kexidb/connection.cpp:1191
 msgid "System name \"%1\" cannot be used as one of fields in \"%2\" table."
 msgstr "Ni cheir defnyddio enw cysawd \"%1\" fel un o feysydd tabl \"%2\"."
 
-#: kexidb/connection.cpp:1205
+#: kexidb/connection.cpp:1206
 #, fuzzy
 msgid "Could not create the same table \"%1\" twice."
 msgstr "Methwyd creu cywaith \"%1\""
 
-#: kexidb/connection.cpp:1219 plugins/tables/kexitablepart.cpp:194
+#: kexidb/connection.cpp:1220 plugins/tables/kexitablepart.cpp:194
 #, fuzzy
 msgid "Table \"%1\" already exists."
 msgstr "Mae cronfa ddata \"%1\" yn bodoli eisoes."
 
-#: kexidb/connection.cpp:1332
+#: kexidb/connection.cpp:1333
 #, fuzzy
 msgid "Could not remove object's data."
 msgstr "Methu gwaredu ffeil \"%1\". "
 
-#: kexidb/connection.cpp:1363
+#: kexidb/connection.cpp:1364
 #, fuzzy
 msgid ""
 "Table \"%1\" cannot be removed.\n"
 msgstr "Ni cheir gwaredu tabl \"%1\"."
 
-#: kexidb/connection.cpp:1370
+#: kexidb/connection.cpp:1371
 msgid "Unexpected name or identifier."
 msgstr ""
 
-#: kexidb/connection.cpp:1415
+#: kexidb/connection.cpp:1416
 #, fuzzy
 msgid "Table \"%1\" does not exist."
 msgstr "Nid yw'r gronfa ddata \"%1\" yn bodoli."
 
-#: kexidb/connection.cpp:1430
+#: kexidb/connection.cpp:1431
 msgid "Could not alter table \"%1\" using the same table."
 msgstr ""
 
-#: kexidb/connection.cpp:1456
+#: kexidb/connection.cpp:1457
 #, fuzzy
 msgid "Invalid table name \"%1\""
 msgstr "Enw gwrthrych annilys \"%1\""
 
-#: kexidb/connection.cpp:1461
+#: kexidb/connection.cpp:1462
 msgid "Could rename table \"%1\" using the same name."
 msgstr ""
 
-#: kexidb/connection.cpp:1484
+#: kexidb/connection.cpp:1485
 msgid "Could not rename table \"%1\" to \"%2\". Table \"%3\" already exists."
 msgstr ""
 
-#: kexidb/connection.cpp:1591
+#: kexidb/connection.cpp:1592
 #, fuzzy
 msgid "Query \"%1\" does not exist."
 msgstr "<qt>Nid yw'r ffeil \"%1\" mewn bod."
 
-#: kexidb/connection.cpp:1688
+#: kexidb/connection.cpp:1689
 msgid "Transaction already started."
 msgstr "Cychwynwyd y trosglwyddiad eisoes."
 
-#: kexidb/connection.cpp:1728 kexidb/connection.cpp:1762
+#: kexidb/connection.cpp:1729 kexidb/connection.cpp:1763
 msgid "Transaction not started."
 msgstr "Trosglwyddiad heb ei gychwyn."
 
-#: kexidb/connection.cpp:1742
+#: kexidb/connection.cpp:1743
 msgid "Error on commit transaction"
 msgstr "Gwall wrth gadarnhau'r trawsweithrediad"
 
-#: kexidb/connection.cpp:1776
+#: kexidb/connection.cpp:1777
 msgid "Error on rollback transaction"
 msgstr "Gwall wrth ddadwneud y trosglwyddiad"
 
-#: kexidb/connection.cpp:1933 kexidb/connection.cpp:2211
+#: kexidb/connection.cpp:1934 kexidb/connection.cpp:2215
 msgid "Invalid object name \"%1\""
 msgstr "Enw gwrthrych annilys \"%1\""
 
-#: kexidb/connection.cpp:2051
+#: kexidb/connection.cpp:2052
 #, fuzzy
 msgid "Column %1 does not exist for the query."
 msgstr "Nid yw'r gronfa ddata \"%1\" yn bodoli."
 
-#: kexidb/connection.cpp:2508
+#: kexidb/connection.cpp:2189
+#, fuzzy
+msgid "Table has no fields defined."
+msgstr "Ni cheir gwaredu tabl \"%1\"."
+
+#: kexidb/connection.cpp:2512
 #, fuzzy
 msgid "Could not update row because there is no master table defined."
 msgstr "Methwyd creu cywaith \"%1\""
 
-#: kexidb/connection.cpp:2515
+#: kexidb/connection.cpp:2519
 msgid "Could not update row because master table has no primary key defined."
 msgstr ""
 
-#: kexidb/connection.cpp:2537
+#: kexidb/connection.cpp:2541
 msgid ""
 "Could not update row because it does not contain entire master table's primary "
 "key."
 msgstr ""
 
-#: kexidb/connection.cpp:2548 kexidb/connection.cpp:2754
+#: kexidb/connection.cpp:2552 kexidb/connection.cpp:2758
 msgid "Primary key's field \"%1\" cannot be empty."
 msgstr "Ni all maes y prif allwedd \"%1\" fod yn wag."
 
-#: kexidb/connection.cpp:2565
+#: kexidb/connection.cpp:2569
 msgid "Row updating on the server failed."
 msgstr "Methwyd diweddaru'r rhes ar y gweinydd."
 
-#: kexidb/connection.cpp:2590
+#: kexidb/connection.cpp:2594
 #, fuzzy
 msgid "Could not insert row because there is no master table defined."
 msgstr "Methwyd creu cywaith \"%1\""
 
-#: kexidb/connection.cpp:2609
+#: kexidb/connection.cpp:2613
 msgid "Could not insert row because master table has no primary key defined."
 msgstr ""
 
-#: kexidb/connection.cpp:2618
+#: kexidb/connection.cpp:2622
 msgid ""
 "Could not insert row because it does not contain entire master table's primary "
 "key."
 msgstr ""
 
-#: kexidb/connection.cpp:2654
+#: kexidb/connection.cpp:2658
 msgid "Row inserting on the server failed."
 msgstr "Methwyd mewnosod y rhes ar y gweinydd."
 
-#: kexidb/connection.cpp:2720
+#: kexidb/connection.cpp:2724
 #, fuzzy
 msgid "Could not delete row because there is no master table defined."
 msgstr "Methwyd creu cywaith \"%1\""
 
-#: kexidb/connection.cpp:2730
+#: kexidb/connection.cpp:2734
 msgid ""
 "Could not delete row because there is no primary key for master table defined."
 msgstr ""
 
-#: kexidb/connection.cpp:2745
+#: kexidb/connection.cpp:2749
 msgid ""
 "Could not delete row because it does not contain entire master table's primary "
 "key."
 msgstr ""
 
-#: kexidb/connection.cpp:2771 kexidb/connection.cpp:2794
+#: kexidb/connection.cpp:2775 kexidb/connection.cpp:2798
 #, fuzzy
 msgid "Row deletion on the server failed."
 msgstr "Methwyd dileu y rhes ar y gweinydd."
@@ -2393,23 +2442,23 @@ msgstr "Enw canlyniad y gweinydd:"
 msgid "Server result number:"
 msgstr "Enw canlyniad y gweinydd:"
 
-#: kexidb/utils.cpp:291 kexidb/utils.cpp:347 kexidb/utils.cpp:353
+#: kexidb/utils.cpp:298 kexidb/utils.cpp:354 kexidb/utils.cpp:360
 #, fuzzy
 msgid "Test Connection"
 msgstr "Cysylltiad"
 
-#: kexidb/utils.cpp:291
+#: kexidb/utils.cpp:298
 #, fuzzy
 msgid "<qt>Testing connection to <b>%1</b> database server...</qt>"
 msgstr "Heb ei gysylltu â gweinydd y gronfa ddata"
 
-#: kexidb/utils.cpp:345
+#: kexidb/utils.cpp:352
 msgid ""
 "<qt>Test connection to <b>%1</b> database server failed. The server is not "
 "responding.</qt>"
 msgstr ""
 
-#: kexidb/utils.cpp:351
+#: kexidb/utils.cpp:358
 msgid ""
 "<qt>Test connection to <b>%1</b> database server established successfully.</qt>"
 msgstr ""
@@ -2488,12 +2537,6 @@ msgstr "Cywaith"
 #, no-c-format
 msgid "Format Toolbar"
 msgstr ""
-
-#. i18n: file data/kexiui.rc line 21
-#: rc.cpp:78
-#, no-c-format
-msgid "&Import"
-msgstr "&Mewnforio"
 
 #. i18n: file data/kexiui.rc line 28
 #: rc.cpp:81
@@ -2580,13 +2623,13 @@ msgstr ""
 "hytrach na ffeil."
 
 #. i18n: file ./main/startup/KexiConnSelectorBase.ui line 52
-#: plugins/tables/kexialtertabledialog.cpp:299 rc.cpp:153 rc.cpp:285
+#: plugins/tables/kexialtertabledialog.cpp:299 rc.cpp:153 rc.cpp:288
 #, no-c-format
 msgid "Name"
 msgstr "Enw"
 
 #. i18n: file ./main/startup/KexiConnSelectorBase.ui line 63
-#: rc.cpp:156 rc.cpp:204
+#: rc.cpp:156
 #, no-c-format
 msgid "Engine"
 msgstr "Peiriant"
@@ -2663,8 +2706,14 @@ msgstr "Egluryn y cywaith:"
 msgid "Project's database name: "
 msgstr "Enw cronfa ddata'r cywaith:"
 
-#. i18n: file ./main/startup/KexiProjectSelectorBase.ui line 44
+#. i18n: file ./main/startup/KexiProjectSelectorBase.ui line 24
 #: rc.cpp:194
+#, no-c-format
+msgid "KexiProjectSelectorBase"
+msgstr "KexiProjectSelectorBase"
+
+#. i18n: file ./main/startup/KexiProjectSelectorBase.ui line 47
+#: rc.cpp:197
 #, fuzzy, no-c-format
 msgid ""
 "<b>There are Kexi projects you have recently opened.</b> "
@@ -2674,164 +2723,164 @@ msgstr ""
 "Dewiswch un yr hoffech ei agor:\n"
 "\n"
 
-#. i18n: file ./main/startup/KexiProjectSelectorBase.ui line 53
-#: rc.cpp:198
+#. i18n: file ./main/startup/KexiProjectSelectorBase.ui line 56
+#: rc.cpp:201
 #, no-c-format
 msgid "Project Name"
 msgstr "Enw'r Cywaith"
 
-#. i18n: file ./main/startup/KexiProjectSelectorBase.ui line 64
-#: rc.cpp:201 rc.cpp:257 widget/kexidbconnectionwidget.cpp:131
+#. i18n: file ./main/startup/KexiProjectSelectorBase.ui line 67
+#: rc.cpp:204 rc.cpp:260 widget/kexidbconnectionwidget.cpp:131
 #, no-c-format
 msgid "Database"
 msgstr "Cronfa ddata"
 
-#. i18n: file ./main/startup/KexiProjectSelectorBase.ui line 86
-#: rc.cpp:207
+#. i18n: file ./main/startup/KexiProjectSelectorBase.ui line 78
+#: plugins/tables/kexialtertabledialog.cpp:303 rc.cpp:207 rc.cpp:291
+#, no-c-format
+msgid "Type"
+msgstr "Math"
+
+#. i18n: file ./main/startup/KexiProjectSelectorBase.ui line 89
+#: rc.cpp:210
 #, no-c-format
 msgid "Connection"
 msgstr "Cysylltiad"
 
 #. i18n: file ./widget/kexidbconnectionwidgetdetailsbase.ui line 38
-#: rc.cpp:210
+#: rc.cpp:213
 #, no-c-format
 msgid "Use socket &file instead of TCP/IP port:"
 msgstr ""
 
 #. i18n: file ./widget/kexidbconnectionwidgetdetailsbase.ui line 151
-#: rc.cpp:217
+#: rc.cpp:220
 #, no-c-format
 msgid "&Description:"
 msgstr "&Disgrifiad:"
 
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 16
-#: rc.cpp:220
+#: rc.cpp:223
 #, fuzzy, no-c-format
 msgid "KexiConnectionWidget"
 msgstr "Cysylltiad"
 
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 101
-#: rc.cpp:223
+#: rc.cpp:226
 #, no-c-format
 msgid "Database Server"
 msgstr "Gweinydd Cronfa Ddata"
 
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 137
-#: rc.cpp:226
+#: rc.cpp:229
 #, no-c-format
 msgid "Port:"
 msgstr "Porth:"
 
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 150
-#: rc.cpp:229
+#: rc.cpp:232
 #, fuzzy, no-c-format
 msgid "Local Server"
 msgstr "O Weinydd..."
 
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 181
-#: rc.cpp:233
+#: rc.cpp:236
 #, no-c-format
 msgid "&Hostname:"
 msgstr "&Enw Gwesteiwr:"
 
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 192
-#: rc.cpp:236
+#: rc.cpp:239
 #, no-c-format
 msgid "default"
 msgstr "rhagosodiad"
 
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 204
-#: rc.cpp:239
+#: rc.cpp:242
 #, fuzzy, no-c-format
 msgid "Remote Server"
 msgstr "Pell"
 
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 218
-#: rc.cpp:242
+#: rc.cpp:245
 #, no-c-format
 msgid "&Engine:"
 msgstr "&Peiriant :"
 
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 250
-#: rc.cpp:245
+#: rc.cpp:248
 #, no-c-format
 msgid "Authentication"
 msgstr "Dilysiant"
 
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 261
-#: rc.cpp:248
+#: rc.cpp:251
 #, no-c-format
 msgid "&Username:"
 msgstr "&Enw Defnyddiwr:"
 
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 277
-#: rc.cpp:251
+#: rc.cpp:254
 #, no-c-format
 msgid "&Password:"
 msgstr "&Cyfrinair:"
 
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 296
-#: rc.cpp:254
+#: rc.cpp:257
 #, fuzzy, no-c-format
 msgid "Save password in the shortcut file"
 msgstr "Cadw'r cyfrinair yn ffeil y cywaith"
 
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 325
-#: rc.cpp:260 widget/pixmapcollection.cpp:160
+#: rc.cpp:263 widget/pixmapcollection.cpp:160
 #, no-c-format
 msgid "&Name:"
 msgstr "&Enw:"
 
 #. i18n: file ./widget/kexidbconnectionwidgetbase.ui line 341
-#: rc.cpp:263
+#: rc.cpp:266
 #, no-c-format
 msgid "&Title (optional):"
 msgstr ""
 
 #. i18n: file ./plugins/queries/kexiaddparamwidget.ui line 16
-#: rc.cpp:267
+#: rc.cpp:270
 #, no-c-format
 msgid "Parameter"
 msgstr "Paramedr"
 
 #. i18n: file ./plugins/queries/kexiaddparamwidget.ui line 35
-#: rc.cpp:270
+#: rc.cpp:273
 #, no-c-format
 msgid "Name:"
 msgstr "Enw:"
 
 #. i18n: file ./plugins/queries/kexiaddparamwidget.ui line 51
-#: rc.cpp:273
+#: rc.cpp:276
 #, no-c-format
 msgid "kexi_"
 msgstr "kexi_"
 
 #. i18n: file ./plugins/queries/kexiaddparamwidget.ui line 96
-#: rc.cpp:276
+#: rc.cpp:279
 #, no-c-format
 msgid "Message:"
 msgstr "Neges:"
 
 #. i18n: file ./plugins/queries/kexiaddparamwidget.ui line 119
-#: rc.cpp:279
+#: rc.cpp:282
 #, no-c-format
 msgid "Type:"
 msgstr "Math:"
 
 #. i18n: file ./plugins/queries/kexiparameterlisteditor.ui line 24
-#: rc.cpp:282
+#: rc.cpp:285
 #, no-c-format
 msgid "Parameters:"
 msgstr "Paramedrau:"
 
-#. i18n: file ./plugins/queries/kexiparameterlisteditor.ui line 41
-#: plugins/tables/kexialtertabledialog.cpp:303 rc.cpp:288
-#, no-c-format
-msgid "Type"
-msgstr "Math"
-
 #. i18n: file ./plugins/import/csv/kexicsvoptions.ui line 24
-#: rc.cpp:297
+#: rc.cpp:300
 #, no-c-format
 msgid "Text encoding:"
 msgstr ""
@@ -3604,11 +3653,11 @@ msgstr ""
 msgid "NAME"
 msgstr "ENW"
 
-#: plugins/forms/kexiformview.cpp:957
+#: plugins/forms/kexiformview.cpp:956
 msgid "Insert AutoField widget"
 msgstr ""
 
-#: plugins/forms/kexiformview.cpp:957
+#: plugins/forms/kexiformview.cpp:956
 #, fuzzy
 msgid "Insert %1 AutoField widgets"
 msgstr "Newid %1 o nifer o gelfigion"
@@ -4458,6 +4507,17 @@ msgid ""
 "this table are opened:"
 msgstr ""
 
+#, fuzzy
+#~ msgid "Imported Database"
+#~ msgstr "Dewis Cronfa Ddata"
+
+#, fuzzy
+#~ msgid "Failure"
+#~ msgstr "Gwerth"
+
+#~ msgid "Could not remove file \"%1\"."
+#~ msgstr "Methu gwaredu ffeil \"%1\". "
+
 #~ msgid "\"%1\" database property not found"
 #~ msgstr "Ni chafwyd priodwedd cronfa ddata \"%1\""
 
@@ -4507,9 +4567,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Alt+B"
 #~ msgstr "Alt+C"
-
-#~ msgid "KexiProjectSelectorBase"
-#~ msgstr "KexiProjectSelectorBase"
 
 #~ msgid "Script"
 #~ msgstr "Sgript"
