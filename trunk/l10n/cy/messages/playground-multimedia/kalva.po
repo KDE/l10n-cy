@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2005-11-06 02:57+0100\n"
+"POT-Creation-Date: 2005-11-08 03:00+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,11 +41,11 @@ msgstr "lleoliad"
 msgid "Settings changed"
 msgstr ""
 
-#: kalva_recorder.cpp:868 kalvaview.cpp:232
+#: kalva_recorder.cpp:1159 kalvaview.cpp:232
 msgid "recording immediatly"
 msgstr ""
 
-#: kalva_recorder.cpp:891 kalvaview.cpp:261
+#: kalva_recorder.cpp:1182 kalvaview.cpp:261
 msgid "recording Movie"
 msgstr ""
 
@@ -155,17 +155,17 @@ msgid "Short View"
 msgstr "Golwg Byr"
 
 #: fileselector.cpp:124 fileselector.cpp:138 fileselector.cpp:226
-#: fileselector.cpp:240 kalva.cpp:204 kalva.cpp:218 kalva_player.cpp:70
-#: kalva_player.cpp:84 kalva_recorder.cpp:172 kalva_recorder.cpp:186
-#: kalva_recorder.cpp:244 kalva_recorder.cpp:258 kalva_recorder.cpp:363
-#: kalva_recorder.cpp:377
+#: fileselector.cpp:240 kalva.cpp:204 kalva.cpp:218 kalva_player.cpp:79
+#: kalva_player.cpp:93 kalva_recorder.cpp:181 kalva_recorder.cpp:195
+#: kalva_recorder.cpp:259 kalva_recorder.cpp:273 kalva_recorder.cpp:384
+#: kalva_recorder.cpp:398
 msgid "Command to run"
 msgstr ""
 
 #. i18n: file ./moviebrowsergui.ui line 50
-#: fileselector.cpp:125 fileselector.cpp:227 kalva.cpp:205 kalva_player.cpp:71
-#: kalva_recorder.cpp:173 kalva_recorder.cpp:245 kalva_recorder.cpp:364
-#: rc.cpp:21 rc.cpp:1184
+#: fileselector.cpp:125 fileselector.cpp:227 kalva.cpp:205 kalva_player.cpp:80
+#: kalva_recorder.cpp:182 kalva_recorder.cpp:260 kalva_recorder.cpp:385
+#: rc.cpp:21 rc.cpp:1187
 #, no-c-format
 msgid "Command"
 msgstr "Gorchymyn"
@@ -284,7 +284,7 @@ msgstr ""
 msgid "tvapp.pl -cronls exited with errors."
 msgstr ""
 
-#: kalva_recorder.cpp:406 moviebrowser.cpp:95 moviebrowser.cpp:138
+#: kalva_recorder.cpp:427 moviebrowser.cpp:95 moviebrowser.cpp:138
 #: serialbrowser.cpp:92 serialbrowser.cpp:135
 #, c-format
 msgid ""
@@ -292,7 +292,7 @@ msgid ""
 "%1"
 msgstr ""
 
-#: kalva_recorder.cpp:407 moviebrowser.cpp:96 moviebrowser.cpp:139
+#: kalva_recorder.cpp:428 moviebrowser.cpp:96 moviebrowser.cpp:139
 #: serialbrowser.cpp:93 serialbrowser.cpp:136
 msgid "tvapp.pl failure"
 msgstr ""
@@ -309,72 +309,79 @@ msgstr ""
 msgid "unsupported recordmode"
 msgstr ""
 
-#: kalva_recorder.cpp:214
+#. i18n: file ./prefs-base.ui line 993
+#: kalva_player.cpp:69 kalva_recorder.cpp:171 kalva_recorder.cpp:240
+#: kalva_recorder.cpp:358 rc.cpp:466
+#, no-c-format
+msgid "DVB (experimental!)"
+msgstr ""
+
+#: kalva_recorder.cpp:223
 msgid "mencoder exited with errors."
 msgstr ""
 
-#: kalva_recorder.cpp:215
+#: kalva_recorder.cpp:224
 #, c-format
 msgid ""
 "mencoder output was:\n"
 "%1"
 msgstr ""
 
-#: kalva_recorder.cpp:216
+#: kalva_recorder.cpp:225
 msgid "mencoder failure"
 msgstr ""
 
-#: kalva_recorder.cpp:304
+#: kalva_recorder.cpp:319
 msgid "at-command exited with errors."
 msgstr ""
 
-#: kalva_recorder.cpp:305
+#: kalva_recorder.cpp:320
 #, c-format
 msgid ""
 "cmd output was:\n"
 "%1"
 msgstr ""
 
-#: kalva_recorder.cpp:306
+#: kalva_recorder.cpp:321
 msgid "at-command failure"
 msgstr ""
 
-#: kalva_recorder.cpp:405
+#: kalva_recorder.cpp:426
 msgid "tvapp.pl -cronaddcmd exited with errors."
 msgstr ""
 
-#: kalva_recorder.cpp:504
+#: kalva_recorder.cpp:525 kalva_recorder.cpp:839
 msgid "untitled"
 msgstr "heb deitl"
 
-#: kalva_recorder.cpp:584
+#: kalva_recorder.cpp:605
 msgid "Frequency is not set"
 msgstr ""
 
-#: kalva_recorder.cpp:585 kalva_recorder.cpp:595 kalva_recorder.cpp:821
+#: kalva_recorder.cpp:606 kalva_recorder.cpp:616 kalva_recorder.cpp:1112
 msgid "Command not build"
 msgstr ""
 
-#: kalva_recorder.cpp:594
+#: kalva_recorder.cpp:615
 msgid "Channel is not set"
 msgstr ""
 
-#: kalva_recorder.cpp:820
+#: kalva_recorder.cpp:1111
 msgid "Duration is not set"
 msgstr ""
 
-#: kalva_recorder.cpp:845
+#: kalva_recorder.cpp:1136
 msgid ""
 "<qt>Using the bitrate <b>%1</b> would result in a <i>filesize &gt;= 2GB</i>"
 ". Shall I <i>reduce</i> the bitrate to <b>%2</b> to keep the filesize &lt; 2GB "
 "?</qt>"
 msgstr ""
 
-#: kalva_recorder.cpp:848
+#: kalva_recorder.cpp:1139
 msgid "Reduce bitrate?"
 msgstr ""
 
-#: kalva_recorder.cpp:912
+#: kalva_recorder.cpp:1203
 msgid "recording serial"
 msgstr ""
 
@@ -397,25 +404,25 @@ msgid "MovieBrowser"
 msgstr ""
 
 #. i18n: file ./moviebrowsergui.ui line 25
-#: rc.cpp:6 rc.cpp:1169
+#: rc.cpp:6 rc.cpp:1172
 #, no-c-format
 msgid "Title"
 msgstr "Teitl"
 
 #. i18n: file ./moviebrowsergui.ui line 30
-#: rc.cpp:9 rc.cpp:33 rc.cpp:1052 rc.cpp:1172
+#: rc.cpp:9 rc.cpp:33 rc.cpp:1055 rc.cpp:1175
 #, no-c-format
 msgid "Station"
 msgstr ""
 
 #. i18n: file ./moviebrowsergui.ui line 35
-#: rc.cpp:12 rc.cpp:1175
+#: rc.cpp:12 rc.cpp:1178
 #, no-c-format
 msgid "Duration"
 msgstr "Hyd"
 
 #. i18n: file ./moviebrowsergui.ui line 40
-#: rc.cpp:15 rc.cpp:1178
+#: rc.cpp:15 rc.cpp:1181
 #, fuzzy, no-c-format
 msgid "Starttime"
 msgstr "amser"
@@ -445,13 +452,13 @@ msgid "kalva channellist"
 msgstr ""
 
 #. i18n: file ./kalva_channellistgui.ui line 50
-#: rc.cpp:36 rc.cpp:1055
+#: rc.cpp:36 rc.cpp:1058
 #, no-c-format
 msgid "Channel"
 msgstr "Sianel"
 
 #. i18n: file ./kalva_channellistgui.ui line 55
-#: rc.cpp:39 rc.cpp:1058
+#: rc.cpp:39 rc.cpp:1061
 #, no-c-format
 msgid "Frequence"
 msgstr ""
@@ -475,19 +482,19 @@ msgid "use frequency"
 msgstr ""
 
 #. i18n: file ./kalva.kcfg line 18
-#: rc.cpp:54 rc.cpp:469
+#: rc.cpp:54 rc.cpp:472
 #, no-c-format
 msgid "driver"
 msgstr "gyrrydd"
 
 #. i18n: file ./kalva.kcfg line 22
-#: rc.cpp:57 rc.cpp:604
+#: rc.cpp:57 rc.cpp:607
 #, no-c-format
 msgid "audio device"
 msgstr ""
 
 #. i18n: file ./kalva.kcfg line 26
-#: rc.cpp:60 rc.cpp:568
+#: rc.cpp:60 rc.cpp:571
 #, no-c-format
 msgid "input"
 msgstr "mewnbwn"
@@ -505,7 +512,7 @@ msgid "saturation"
 msgstr "dirlawnder"
 
 #. i18n: file ./kalva.kcfg line 40
-#: rc.cpp:69 rc.cpp:650
+#: rc.cpp:69 rc.cpp:653
 #, no-c-format
 msgid "brightness"
 msgstr "disgleirdeb"
@@ -517,7 +524,7 @@ msgid "contrast"
 msgstr "cyferbyniant"
 
 #. i18n: file ./kalva.kcfg line 52
-#: rc.cpp:75 rc.cpp:644
+#: rc.cpp:75 rc.cpp:647
 #, no-c-format
 msgid "hue"
 msgstr "arlliw"
@@ -553,19 +560,19 @@ msgid "device in aumix synthax"
 msgstr ""
 
 #. i18n: file ./kalva.kcfg line 77
-#: rc.cpp:93 rc.cpp:617
+#: rc.cpp:93 rc.cpp:620
 #, no-c-format
 msgid "Audio device volume"
 msgstr ""
 
 #. i18n: file ./kalva.kcfg line 81
-#: rc.cpp:96 rc.cpp:614
+#: rc.cpp:96 rc.cpp:617
 #, no-c-format
 msgid "Igain volume"
 msgstr ""
 
 #. i18n: file ./kalva.kcfg line 85
-#: rc.cpp:99 rc.cpp:707
+#: rc.cpp:99 rc.cpp:710
 #, no-c-format
 msgid "Maximum bitrate"
 msgstr ""
@@ -583,7 +590,7 @@ msgid "Warn only and ask me"
 msgstr ""
 
 #. i18n: file ./kalva.kcfg line 94
-#: rc.cpp:108 rc.cpp:580
+#: rc.cpp:108 rc.cpp:583
 #, no-c-format
 msgid "vbi device"
 msgstr ""
@@ -613,7 +620,7 @@ msgid "crop"
 msgstr ""
 
 #. i18n: file ./kalva.kcfg line 114
-#: rc.cpp:123 rc.cpp:668 rc.cpp:765
+#: rc.cpp:123 rc.cpp:671 rc.cpp:768
 #, no-c-format
 msgid "aspect"
 msgstr ""
@@ -625,19 +632,19 @@ msgid "Macroblock decision algorithm"
 msgstr ""
 
 #. i18n: file ./kalva.kcfg line 124
-#: rc.cpp:129 rc.cpp:867
+#: rc.cpp:129 rc.cpp:870
 #, no-c-format
 msgid "luma"
 msgstr ""
 
 #. i18n: file ./kalva.kcfg line 128
-#: rc.cpp:132 rc.cpp:861
+#: rc.cpp:132 rc.cpp:864
 #, no-c-format
 msgid "chroma"
 msgstr ""
 
 #. i18n: file ./kalva.kcfg line 132
-#: rc.cpp:135 rc.cpp:864
+#: rc.cpp:135 rc.cpp:867
 #, no-c-format
 msgid "time"
 msgstr "amser"
@@ -649,19 +656,19 @@ msgid "denoiser"
 msgstr ""
 
 #. i18n: file ./kalva.kcfg line 145
-#: rc.cpp:141 rc.cpp:911
+#: rc.cpp:141 rc.cpp:914
 #, no-c-format
 msgid "subcmp"
 msgstr ""
 
 #. i18n: file ./kalva.kcfg line 151
-#: rc.cpp:144 rc.cpp:908
+#: rc.cpp:144 rc.cpp:911
 #, no-c-format
 msgid "precmp"
 msgstr ""
 
 #. i18n: file ./kalva.kcfg line 155
-#: rc.cpp:147 rc.cpp:896
+#: rc.cpp:147 rc.cpp:899
 #, no-c-format
 msgid "cmp"
 msgstr ""
@@ -679,13 +686,13 @@ msgid "name of the quality profile"
 msgstr ""
 
 #. i18n: file ./kalva.kcfg line 169
-#: rc.cpp:159 rc.cpp:771
+#: rc.cpp:159 rc.cpp:774
 #, no-c-format
 msgid "targeted aspect"
 msgstr ""
 
 #. i18n: file ./kalva.kcfg line 177
-#: rc.cpp:162 rc.cpp:956
+#: rc.cpp:162 rc.cpp:959
 #, no-c-format
 msgid "Postprocessing options"
 msgstr ""
@@ -697,7 +704,7 @@ msgid "Append TV capture parameters"
 msgstr ""
 
 #. i18n: file ./kalva.kcfg line 184
-#: rc.cpp:168 rc.cpp:947
+#: rc.cpp:168 rc.cpp:950
 #, no-c-format
 msgid "Prepend more filter parameters"
 msgstr ""
@@ -709,13 +716,13 @@ msgid "Append more filter parameters"
 msgstr ""
 
 #. i18n: file ./kalva.kcfg line 190
-#: rc.cpp:174 rc.cpp:971
+#: rc.cpp:174 rc.cpp:974
 #, no-c-format
 msgid "Append more lavc options"
 msgstr ""
 
 #. i18n: file ./kalva.kcfg line 194
-#: rc.cpp:177 rc.cpp:929
+#: rc.cpp:177 rc.cpp:932
 #, no-c-format
 msgid "bitrate"
 msgstr ""
@@ -763,7 +770,7 @@ msgid "Editor"
 msgstr ""
 
 #. i18n: file ./kalva.kcfg line 237
-#: rc.cpp:201 rc.cpp:1098 rc.cpp:1110
+#: rc.cpp:201 rc.cpp:1101 rc.cpp:1113
 #, no-c-format
 msgid "program"
 msgstr ""
@@ -811,19 +818,19 @@ msgid "kalva_recorder"
 msgstr ""
 
 #. i18n: file ./kalva_recordgui.ui line 82
-#: rc.cpp:228 rc.cpp:1221
+#: rc.cpp:228 rc.cpp:1224
 #, no-c-format
 msgid "Shows the station"
 msgstr ""
 
 #. i18n: file ./kalva_recordgui.ui line 120
-#: rc.cpp:231 rc.cpp:1224
+#: rc.cpp:231 rc.cpp:1227
 #, no-c-format
 msgid "Shows the channel"
 msgstr ""
 
 #. i18n: file ./kalva_recordgui.ui line 155
-#: rc.cpp:234 rc.cpp:1227
+#: rc.cpp:234 rc.cpp:1230
 #, no-c-format
 msgid "Shows the frequence"
 msgstr ""
@@ -855,7 +862,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./kalva_recordgui.ui line 264
-#: rc.cpp:249 rc.cpp:1004
+#: rc.cpp:249 rc.cpp:1007
 #, no-c-format
 msgid "De&lete"
 msgstr "Di&leu"
@@ -1067,7 +1074,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 255
-#: rc.cpp:376 rc.cpp:1067
+#: rc.cpp:376 rc.cpp:1070
 #, no-c-format
 msgid "&nice"
 msgstr "&dymunol"
@@ -1101,13 +1108,13 @@ msgid "Alt+W"
 msgstr "Alt+C"
 
 #. i18n: file ./prefs-base.ui line 362
-#: rc.cpp:395 rc.cpp:1089
+#: rc.cpp:395 rc.cpp:1092
 #, no-c-format
 msgid "If activated You will be presented the build mencoder command in a box"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 365
-#: rc.cpp:398 rc.cpp:1092
+#: rc.cpp:398 rc.cpp:1095
 #, no-c-format
 msgid ""
 "If activated You will be presented the build mencoder command in a box."
@@ -1136,7 +1143,7 @@ msgid "Choose the active hardware profile"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 475
-#: rc.cpp:411 rc.cpp:716
+#: rc.cpp:411 rc.cpp:719
 #, no-c-format
 msgid "do&wnload"
 msgstr "la&wrlwytho..."
@@ -1148,7 +1155,7 @@ msgid "Get new hardware profiles from the net."
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 486
-#: rc.cpp:417 rc.cpp:722
+#: rc.cpp:417 rc.cpp:725
 #, no-c-format
 msgid "&upload"
 msgstr "&Lanlwytho"
@@ -1163,7 +1170,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 514
-#: rc.cpp:423 rc.cpp:728 rc.cpp:998
+#: rc.cpp:423 rc.cpp:731 rc.cpp:1001
 #, no-c-format
 msgid "Sa&ve"
 msgstr "Ca&dw..."
@@ -1193,7 +1200,7 @@ msgid "Profi&le"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 578
-#: rc.cpp:439 rc.cpp:753
+#: rc.cpp:439 rc.cpp:756
 #, no-c-format
 msgid "comment for the profile"
 msgstr ""
@@ -1214,7 +1221,7 @@ msgid "&Name"
 msgstr "&Enw"
 
 #. i18n: file ./prefs-base.ui line 954
-#: rc.cpp:448 rc.cpp:750
+#: rc.cpp:448 rc.cpp:753
 #, no-c-format
 msgid "name of the profile"
 msgstr ""
@@ -1249,366 +1256,366 @@ msgstr ""
 msgid "bsdbt848"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 995
-#: rc.cpp:466
+#. i18n: file ./prefs-base.ui line 1000
+#: rc.cpp:469
 #, no-c-format
 msgid "Choose the driver version that fits to Your system and  card"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1022
-#: rc.cpp:472
-#, no-c-format
-msgid "video device"
-msgstr ""
-
-#. i18n: file ./prefs-base.ui line 1031
+#. i18n: file ./prefs-base.ui line 1027
 #: rc.cpp:475
 #, no-c-format
-msgid "/dev/video"
+msgid "video device"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 1036
 #: rc.cpp:478
 #, no-c-format
-msgid "/dev/video0"
+msgid "/dev/video"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 1041
 #: rc.cpp:481
 #, no-c-format
-msgid "/dev/video1"
+msgid "/dev/video0"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 1046
 #: rc.cpp:484
 #, no-c-format
-msgid "/dev/video2"
+msgid "/dev/video1"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 1051
 #: rc.cpp:487
 #, no-c-format
-msgid "/dev/video3"
+msgid "/dev/video2"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 1056
 #: rc.cpp:490
 #, no-c-format
-msgid "/dev/video1394"
+msgid "/dev/video3"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 1061
 #: rc.cpp:493
 #, no-c-format
+msgid "/dev/video1394"
+msgstr ""
+
+#. i18n: file ./prefs-base.ui line 1066
+#: rc.cpp:496
+#, no-c-format
 msgid "/dev/video1394-0"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1068
-#: rc.cpp:496
+#. i18n: file ./prefs-base.ui line 1073
+#: rc.cpp:499
 #, no-c-format
 msgid "Specify TV device (default: /dev/:video0)"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1076
-#: rc.cpp:499
-#, no-c-format
-msgid "frequence table"
-msgstr ""
-
-#. i18n: file ./prefs-base.ui line 1085
+#. i18n: file ./prefs-base.ui line 1081
 #: rc.cpp:502
 #, no-c-format
-msgid "us-bcast"
+msgid "frequence table"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 1090
 #: rc.cpp:505
 #, no-c-format
-msgid "us-cable"
+msgid "us-bcast"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 1095
 #: rc.cpp:508
 #, no-c-format
-msgid "us-cable-hrc"
+msgid "us-cable"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 1100
 #: rc.cpp:511
 #, no-c-format
-msgid "japan-bcast"
+msgid "us-cable-hrc"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 1105
 #: rc.cpp:514
 #, no-c-format
-msgid "japan-cable"
+msgid "japan-bcast"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 1110
 #: rc.cpp:517
 #, no-c-format
-msgid "europe-west"
+msgid "japan-cable"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 1115
 #: rc.cpp:520
 #, no-c-format
-msgid "europe-east"
+msgid "europe-west"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 1120
 #: rc.cpp:523
 #, no-c-format
-msgid "italy"
-msgstr "yr Eidal"
+msgid "europe-east"
+msgstr ""
 
 #. i18n: file ./prefs-base.ui line 1125
 #: rc.cpp:526
 #, no-c-format
-msgid "newzealand"
-msgstr ""
+msgid "italy"
+msgstr "yr Eidal"
 
 #. i18n: file ./prefs-base.ui line 1130
 #: rc.cpp:529
 #, no-c-format
-msgid "australia"
-msgstr "awstralia"
+msgid "newzealand"
+msgstr ""
 
 #. i18n: file ./prefs-base.ui line 1135
 #: rc.cpp:532
 #, no-c-format
-msgid "ireland"
-msgstr "iwerddon"
+msgid "australia"
+msgstr "awstralia"
 
 #. i18n: file ./prefs-base.ui line 1140
 #: rc.cpp:535
 #, no-c-format
-msgid "france"
-msgstr "ffrainc"
+msgid "ireland"
+msgstr "iwerddon"
 
 #. i18n: file ./prefs-base.ui line 1145
 #: rc.cpp:538
 #, no-c-format
-msgid "china-bcast"
-msgstr ""
+msgid "france"
+msgstr "ffrainc"
 
 #. i18n: file ./prefs-base.ui line 1150
 #: rc.cpp:541
 #, no-c-format
-msgid "southafrica"
+msgid "china-bcast"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 1155
 #: rc.cpp:544
 #, no-c-format
-msgid "argentina"
-msgstr "ariannin"
+msgid "southafrica"
+msgstr ""
 
 #. i18n: file ./prefs-base.ui line 1160
 #: rc.cpp:547
 #, no-c-format
-msgid "australia-optus"
-msgstr ""
+msgid "argentina"
+msgstr "ariannin"
 
 #. i18n: file ./prefs-base.ui line 1165
 #: rc.cpp:550
 #, no-c-format
+msgid "australia-optus"
+msgstr ""
+
+#. i18n: file ./prefs-base.ui line 1170
+#: rc.cpp:553
+#, no-c-format
 msgid "russia"
 msgstr "rwsia"
 
-#. i18n: file ./prefs-base.ui line 1180
-#: rc.cpp:553
-#, no-c-format
-msgid "select a channel-to-freqency mapping."
-msgstr ""
-
-#. i18n: file ./prefs-base.ui line 1186
+#. i18n: file ./prefs-base.ui line 1185
 #: rc.cpp:556
 #, no-c-format
-msgid "pal"
+msgid "select a channel-to-freqency mapping."
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 1191
 #: rc.cpp:559
 #, no-c-format
+msgid "pal"
+msgstr ""
+
+#. i18n: file ./prefs-base.ui line 1196
+#: rc.cpp:562
+#, no-c-format
 msgid "ntsc"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1206
-#: rc.cpp:562
+#. i18n: file ./prefs-base.ui line 1211
+#: rc.cpp:565
 #, no-c-format
 msgid "Choose Your TV norm."
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1214
-#: rc.cpp:565
+#. i18n: file ./prefs-base.ui line 1219
+#: rc.cpp:568
 #, no-c-format
 msgid "specify input, default: 0 (TV), see console output for available inputs"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1233
-#: rc.cpp:571
+#. i18n: file ./prefs-base.ui line 1238
+#: rc.cpp:574
 #, no-c-format
 msgid "&norm"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1252
-#: rc.cpp:574
+#. i18n: file ./prefs-base.ui line 1257
+#: rc.cpp:577
 #, no-c-format
 msgid "use frequenc&y"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1255
-#: rc.cpp:577
+#. i18n: file ./prefs-base.ui line 1260
+#: rc.cpp:580
 #, no-c-format
 msgid ""
 "If Your tv-card has a buggy tuner like most saa7134 cards have, "
 "<br>I can switch the chanel through it's frequency"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1297
-#: rc.cpp:583
-#, no-c-format
-msgid "/dev/vbi"
-msgstr ""
-
 #. i18n: file ./prefs-base.ui line 1302
 #: rc.cpp:586
 #, no-c-format
-msgid "/dev/vbi0"
+msgid "/dev/vbi"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 1307
 #: rc.cpp:589
 #, no-c-format
-msgid "/dev/vbi1"
+msgid "/dev/vbi0"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 1312
 #: rc.cpp:592
 #, no-c-format
-msgid "/dev/vbi2"
+msgid "/dev/vbi1"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 1317
 #: rc.cpp:595
 #, no-c-format
+msgid "/dev/vbi2"
+msgstr ""
+
+#. i18n: file ./prefs-base.ui line 1322
+#: rc.cpp:598
+#, no-c-format
 msgid "/dev/vbi3"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1324
-#: rc.cpp:598
+#. i18n: file ./prefs-base.ui line 1329
+#: rc.cpp:601
 #, no-c-format
 msgid ""
 "If you want to use scantv  you can specify your vbi device (default: "
 "/dev/:vbi0)"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1334
-#: rc.cpp:601
+#. i18n: file ./prefs-base.ui line 1339
+#: rc.cpp:604
 #, no-c-format
 msgid "Audi&o"
 msgstr "Sai&n"
 
-#. i18n: file ./prefs-base.ui line 1362
-#: rc.cpp:607
+#. i18n: file ./prefs-base.ui line 1367
+#: rc.cpp:610
 #, no-c-format
 msgid "[don't touch (recommended)]"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1375
-#: rc.cpp:610
+#. i18n: file ./prefs-base.ui line 1380
+#: rc.cpp:613
 #, no-c-format
 msgid ""
 "I can try to switch the capturing for the chosen audiodevice (see man:aumix)."
 "<br>Be aware that not all soundcards provide this feature"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1449
-#: rc.cpp:620
+#. i18n: file ./prefs-base.ui line 1454
+#: rc.cpp:623
 #, no-c-format
 msgid ""
 "Volume, the audiodevice shall have when playing or watching tv"
 "<br>when recording the audio device is set to zero (mute)"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1460
-#: rc.cpp:623
+#. i18n: file ./prefs-base.ui line 1465
+#: rc.cpp:626
 #, no-c-format
 msgid ""
 "volume the igain shall have when recording"
 "<br>when playing or watching tv igain will be set to zero (mute)"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1504
-#: rc.cpp:626
+#. i18n: file ./prefs-base.ui line 1509
+#: rc.cpp:629
 #, no-c-format
 msgid "Image E&Q"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1532
-#: rc.cpp:629
+#. i18n: file ./prefs-base.ui line 1537
+#: rc.cpp:632
 #, no-c-format
 msgid "sa&turation"
 msgstr "di&rlawnder"
 
-#. i18n: file ./prefs-base.ui line 1560
-#: rc.cpp:632
+#. i18n: file ./prefs-base.ui line 1565
+#: rc.cpp:635
 #, no-c-format
 msgid "Adjust brightness"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1585
-#: rc.cpp:635
+#. i18n: file ./prefs-base.ui line 1590
+#: rc.cpp:638
 #, no-c-format
 msgid "Adjust hue"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1593
-#: rc.cpp:638
+#. i18n: file ./prefs-base.ui line 1598
+#: rc.cpp:641
 #, no-c-format
 msgid "Adjust saturation"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1618
-#: rc.cpp:641
+#. i18n: file ./prefs-base.ui line 1623
+#: rc.cpp:644
 #, no-c-format
 msgid "Adjust contrast"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1637
-#: rc.cpp:647
+#. i18n: file ./prefs-base.ui line 1642
+#: rc.cpp:650
 #, no-c-format
 msgid "&contrast"
 msgstr "&Cyferbyniant"
 
-#. i18n: file ./prefs-base.ui line 1678
-#: rc.cpp:653
+#. i18n: file ./prefs-base.ui line 1683
+#: rc.cpp:656
 #, no-c-format
 msgid "Overs&can"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1706
-#: rc.cpp:656
+#. i18n: file ./prefs-base.ui line 1711
+#: rc.cpp:659
 #, no-c-format
 msgid "overscan factor"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1720
-#: rc.cpp:659
+#. i18n: file ./prefs-base.ui line 1725
+#: rc.cpp:662
 #, no-c-format
 msgid "Define how much crop shall cut away from each side."
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1745
-#: rc.cpp:662 rc.cpp:768
+#. i18n: file ./prefs-base.ui line 1750
+#: rc.cpp:665 rc.cpp:771
 #, no-c-format
 msgid "&crop"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1766
-#: rc.cpp:665 rc.cpp:813
+#. i18n: file ./prefs-base.ui line 1771
+#: rc.cpp:668 rc.cpp:816
 #, no-c-format
 msgid ""
 "Store movie aspect internally, just like MPEG files."
@@ -1617,22 +1624,22 @@ msgid ""
 "will display them with the wrong aspect."
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1795
-#: rc.cpp:671 rc.cpp:810
+#. i18n: file ./prefs-base.ui line 1800
+#: rc.cpp:674 rc.cpp:813
 #, no-c-format
 msgid ""
 "Crops the given part of the image and discards the rest."
 "<br>Useful to remove black bands from widescreen movies."
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1805
-#: rc.cpp:674
+#. i18n: file ./prefs-base.ui line 1810
+#: rc.cpp:677
 #, no-c-format
 msgid "Other"
 msgstr "Arall"
 
-#. i18n: file ./prefs-base.ui line 1825
-#: rc.cpp:677
+#. i18n: file ./prefs-base.ui line 1830
+#: rc.cpp:680
 #, no-c-format
 msgid ""
 "Maximum interval between keyframes in frames (default: 250 or"
@@ -1646,8 +1653,8 @@ msgid ""
 "<br>For a strict MPEG-1/2/4 compliance this would have to be &lt;= 132."
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1842
-#: rc.cpp:680
+#. i18n: file ./prefs-base.ui line 1847
+#: rc.cpp:683
 #, no-c-format
 msgid ""
 "If this value is set to a value other than zero and is lower than the bitrate "
@@ -1656,14 +1663,14 @@ msgid ""
 "<br>Use this option to define the maximum bitrate your hardware can deliver."
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1850
-#: rc.cpp:683
+#. i18n: file ./prefs-base.ui line 1855
+#: rc.cpp:686
 #, no-c-format
 msgid "maximum &keyframe interval"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1853
-#: rc.cpp:686
+#. i18n: file ./prefs-base.ui line 1858
+#: rc.cpp:689
 #, no-c-format
 msgid ""
 "If Your video and audio are not in sync because your hardware is not fit "
@@ -1671,20 +1678,20 @@ msgid ""
 "<br>you might want to decrease the maximum interval between keyframes."
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1878
-#: rc.cpp:689
+#. i18n: file ./prefs-base.ui line 1883
+#: rc.cpp:692
 #, no-c-format
 msgid "Bitrate reduction"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1889
-#: rc.cpp:692
+#. i18n: file ./prefs-base.ui line 1894
+#: rc.cpp:695
 #, no-c-format
 msgid "warn onl&y, ask me"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1892
-#: rc.cpp:695
+#. i18n: file ./prefs-base.ui line 1897
+#: rc.cpp:698
 #, no-c-format
 msgid ""
 "If Kalva detects a filesize >= 2GB Kalva asks if it shall reduce the bitrate."
@@ -1692,44 +1699,44 @@ msgid ""
 "activated."
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1900
-#: rc.cpp:698
+#. i18n: file ./prefs-base.ui line 1905
+#: rc.cpp:701
 #, no-c-format
 msgid "keep filesize under &2 GB"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1903
-#: rc.cpp:701
+#. i18n: file ./prefs-base.ui line 1908
+#: rc.cpp:704
 #, no-c-format
 msgid "Alt+2"
 msgstr "Alt+2"
 
-#. i18n: file ./prefs-base.ui line 1906
-#: rc.cpp:704
+#. i18n: file ./prefs-base.ui line 1911
+#: rc.cpp:707
 #, no-c-format
 msgid "Tests if bitrate and duration results in filesize >= 2 GB"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 1924
-#: rc.cpp:710 rc.cpp:938
+#. i18n: file ./prefs-base.ui line 1929
+#: rc.cpp:713 rc.cpp:941
 #, no-c-format
 msgid "kbit/s"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 2017
-#: rc.cpp:713
+#. i18n: file ./prefs-base.ui line 2022
+#: rc.cpp:716
 #, no-c-format
 msgid "Choose the active quality profile"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 2036
-#: rc.cpp:719
+#. i18n: file ./prefs-base.ui line 2041
+#: rc.cpp:722
 #, no-c-format
 msgid "Get new quality profiles from the net."
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 2047
-#: rc.cpp:725
+#. i18n: file ./prefs-base.ui line 2052
+#: rc.cpp:728
 #, no-c-format
 msgid ""
 "Upload is not possible at the moment."
@@ -1737,32 +1744,32 @@ msgid ""
 "www.kde-files.org."
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 2075
-#: rc.cpp:731
+#. i18n: file ./prefs-base.ui line 2080
+#: rc.cpp:734
 #, no-c-format
 msgid "saves the active  quality profile"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 2083
-#: rc.cpp:734
+#. i18n: file ./prefs-base.ui line 2088
+#: rc.cpp:737
 #, no-c-format
 msgid "de&lete"
 msgstr "di&leu"
 
-#. i18n: file ./prefs-base.ui line 2086
-#: rc.cpp:737
+#. i18n: file ./prefs-base.ui line 2091
+#: rc.cpp:740
 #, no-c-format
 msgid "delets the active quality profile"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 2125
-#: rc.cpp:741
+#. i18n: file ./prefs-base.ui line 2130
+#: rc.cpp:744
 #, no-c-format
 msgid "Profile"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 2392
-#: rc.cpp:744
+#. i18n: file ./prefs-base.ui line 2397
+#: rc.cpp:747
 #, no-c-format
 msgid ""
 "shows the absolute path of the active quality profile."
@@ -1770,98 +1777,98 @@ msgid ""
 "<br>on the webinterface of www.kde-files.org"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 2400
-#: rc.cpp:747
+#. i18n: file ./prefs-base.ui line 2405
+#: rc.cpp:750
 #, no-c-format
 msgid "Name"
 msgstr "Enw"
 
-#. i18n: file ./prefs-base.ui line 2443
-#: rc.cpp:756
+#. i18n: file ./prefs-base.ui line 2448
+#: rc.cpp:759
 #, no-c-format
 msgid "&Scale"
 msgstr "&Graddfa"
 
-#. i18n: file ./prefs-base.ui line 2454
-#: rc.cpp:759
+#. i18n: file ./prefs-base.ui line 2459
+#: rc.cpp:762
 #, no-c-format
 msgid "&capture resolution"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 2465
-#: rc.cpp:762
+#. i18n: file ./prefs-base.ui line 2470
+#: rc.cpp:765
 #, no-c-format
 msgid "scale (post)"
-msgstr ""
-
-#. i18n: file ./prefs-base.ui line 2504
-#: rc.cpp:774
-#, no-c-format
-msgid "768:576 (PAL non standard high)"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 2509
 #: rc.cpp:777
 #, no-c-format
-msgid "720:576  (PAL full resolution)"
+msgid "768:576 (PAL non standard high)"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 2514
 #: rc.cpp:780
 #, no-c-format
-msgid "720:480 (NTSC full resolution)"
+msgid "720:576  (PAL full resolution)"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 2519
-#: rc.cpp:783 rc.cpp:825
+#: rc.cpp:783
 #, no-c-format
-msgid "640:480 (VGA)"
+msgid "720:480 (NTSC full resolution)"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 2524
 #: rc.cpp:786 rc.cpp:828
 #, no-c-format
-msgid "576:480 (SVCD invers for PCs)"
+msgid "640:480 (VGA)"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 2529
 #: rc.cpp:789 rc.cpp:831
 #, no-c-format
-msgid "576:432 (non standard medium resolution)"
+msgid "576:480 (SVCD invers for PCs)"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 2534
-#: rc.cpp:792 rc.cpp:822
+#: rc.cpp:792 rc.cpp:834
+#, no-c-format
+msgid "576:432 (non standard medium resolution)"
+msgstr ""
+
+#. i18n: file ./prefs-base.ui line 2539
+#: rc.cpp:795 rc.cpp:825
 #, no-c-format
 msgid "704:480 (NTSC f. (S)VCD still)"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 2539
-#: rc.cpp:795 rc.cpp:819
+#. i18n: file ./prefs-base.ui line 2544
+#: rc.cpp:798 rc.cpp:822
 #, no-c-format
 msgid "704:576 (PAL  f. (S)VCD still)"
-msgstr ""
-
-#. i18n: file ./prefs-base.ui line 2544
-#: rc.cpp:798 rc.cpp:834
-#, no-c-format
-msgid "480:576 (PAL  f. (S)VCD midle)"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 2549
 #: rc.cpp:801 rc.cpp:837
 #, no-c-format
-msgid "480:480 (NTSC f. (S)VCD midle)"
+msgid "480:576 (PAL  f. (S)VCD midle)"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 2554
 #: rc.cpp:804 rc.cpp:840
 #, no-c-format
+msgid "480:480 (NTSC f. (S)VCD midle)"
+msgstr ""
+
+#. i18n: file ./prefs-base.ui line 2559
+#: rc.cpp:807 rc.cpp:843
+#, no-c-format
 msgid "352:288 (PAL / NTSC f. (S)VCD low)"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 2572
-#: rc.cpp:807
+#. i18n: file ./prefs-base.ui line 2577
+#: rc.cpp:810
 #, no-c-format
 msgid ""
 "Choose the scaling that the tvcard shall output."
@@ -1870,72 +1877,72 @@ msgid ""
 "smaller supported scaling."
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 2614
-#: rc.cpp:816
+#. i18n: file ./prefs-base.ui line 2619
+#: rc.cpp:819
 #, no-c-format
 msgid "[don't use (recomended)]"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 2669
-#: rc.cpp:843
+#. i18n: file ./prefs-base.ui line 2674
+#: rc.cpp:846
 #, no-c-format
 msgid ""
 "The use of this filter during a live recording is not recomended as it might "
 "produce much CPU load."
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 2697
-#: rc.cpp:846
+#. i18n: file ./prefs-base.ui line 2702
+#: rc.cpp:849
 #, no-c-format
 msgid "4/3"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 2702
-#: rc.cpp:849
+#. i18n: file ./prefs-base.ui line 2707
+#: rc.cpp:852
 #, no-c-format
 msgid "16/9"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 2709
-#: rc.cpp:852
+#. i18n: file ./prefs-base.ui line 2714
+#: rc.cpp:855
 #, no-c-format
 msgid ""
 "The aspect You want to have. This is the base for the computation of the real "
 "aspect"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 2719
-#: rc.cpp:855
+#. i18n: file ./prefs-base.ui line 2724
+#: rc.cpp:858
 #, no-c-format
 msgid "De&noise"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 2730
-#: rc.cpp:858
+#. i18n: file ./prefs-base.ui line 2735
+#: rc.cpp:861
 #, no-c-format
 msgid "de&noiser"
-msgstr ""
-
-#. i18n: file ./prefs-base.ui line 2828
-#: rc.cpp:870
-#, no-c-format
-msgid "[none]"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 2833
 #: rc.cpp:873
 #, no-c-format
-msgid "denoise3d"
+msgid "[none]"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 2838
 #: rc.cpp:876
 #, no-c-format
+msgid "denoise3d"
+msgstr ""
+
+#. i18n: file ./prefs-base.ui line 2843
+#: rc.cpp:879
+#, no-c-format
 msgid "hqdn3d"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 2847
-#: rc.cpp:879
+#. i18n: file ./prefs-base.ui line 2852
+#: rc.cpp:882
 #, no-c-format
 msgid ""
 "Choose a denoise filter if you want  to reduce image noise"
@@ -1945,68 +1952,68 @@ msgid ""
 "(this should enhance compressibility)"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 2855
-#: rc.cpp:884
+#. i18n: file ./prefs-base.ui line 2860
+#: rc.cpp:887
 #, no-c-format
 msgid "spatial luma strength"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 2863
-#: rc.cpp:887
+#. i18n: file ./prefs-base.ui line 2868
+#: rc.cpp:890
 #, no-c-format
 msgid "spatial chroma strength"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 2871
-#: rc.cpp:890
+#. i18n: file ./prefs-base.ui line 2876
+#: rc.cpp:893
 #, no-c-format
 msgid "temporal strength"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 2898
-#: rc.cpp:893
+#. i18n: file ./prefs-base.ui line 2903
+#: rc.cpp:896
 #, no-c-format
 msgid "&Comparison"
 msgstr "&Cymharu"
 
-#. i18n: file ./prefs-base.ui line 2954
-#: rc.cpp:899
+#. i18n: file ./prefs-base.ui line 2959
+#: rc.cpp:902
 #, no-c-format
 msgid ""
 "Sets the comparison function for sub pel motion estimation"
 "<br>(look at mbcmp in the mencoder manpage for available comparison functions)"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 2962
-#: rc.cpp:902
+#. i18n: file ./prefs-base.ui line 2967
+#: rc.cpp:905
 #, no-c-format
 msgid ""
 "Sets the comparison function for full pel motion estimation"
 "<br>(look at mbcmp in the mencoder manpage for available comparison functions)"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 2973
-#: rc.cpp:905
+#. i18n: file ./prefs-base.ui line 2978
+#: rc.cpp:908
 #, no-c-format
 msgid ""
 "Sets the comparison function for motion estimation pre pass"
 "<br>(look at mbcmp in the mencoder manpage for available comparison functions)"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3039
-#: rc.cpp:914
+#. i18n: file ./prefs-base.ui line 3044
+#: rc.cpp:917
 #, no-c-format
 msgid "&Other"
 msgstr "&Arall"
 
-#. i18n: file ./prefs-base.ui line 3050
-#: rc.cpp:917
+#. i18n: file ./prefs-base.ui line 3055
+#: rc.cpp:920
 #, no-c-format
 msgid "&mbd"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3061
-#: rc.cpp:920
+#. i18n: file ./prefs-base.ui line 3066
+#: rc.cpp:923
 #, no-c-format
 msgid ""
 "Macroblock decision algorithm (high quality mode), encode each macro block in "
@@ -2018,14 +2025,14 @@ msgid ""
 "slower)."
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3069
-#: rc.cpp:923
+#. i18n: file ./prefs-base.ui line 3074
+#: rc.cpp:926
 #, no-c-format
 msgid "&vratetol"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3106
-#: rc.cpp:926
+#. i18n: file ./prefs-base.ui line 3111
+#: rc.cpp:929
 #, no-c-format
 msgid ""
 "Set the bitrate for the quality profile."
@@ -2033,28 +2040,28 @@ msgid ""
 "profile."
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3156
-#: rc.cpp:932
+#. i18n: file ./prefs-base.ui line 3161
+#: rc.cpp:935
 #, no-c-format
 msgid ""
 "approximated filesize tolerance in kBit. 1000-100000 is a sane range."
 "<br>(warning: 1kBit = 1000 Bits)"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3164
-#: rc.cpp:935
+#. i18n: file ./prefs-base.ui line 3169
+#: rc.cpp:938
 #, no-c-format
 msgid "kbit"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3199
-#: rc.cpp:941
+#. i18n: file ./prefs-base.ui line 3204
+#: rc.cpp:944
 #, no-c-format
 msgid "Exper&ts"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3227
-#: rc.cpp:944
+#. i18n: file ./prefs-base.ui line 3232
+#: rc.cpp:947
 #, no-c-format
 msgid ""
 "Here you can prepend more parameters to the filter options"
@@ -2063,180 +2070,180 @@ msgid ""
 "inserted after crop and before all other options."
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3246
-#: rc.cpp:950
+#. i18n: file ./prefs-base.ui line 3251
+#: rc.cpp:953
 #, no-c-format
 msgid "Append &more filter parameters"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3257
-#: rc.cpp:953
+#. i18n: file ./prefs-base.ui line 3262
+#: rc.cpp:956
 #, no-c-format
 msgid ""
 "Here you can append more parameters to the filter options"
 "<br>(see for MEncoder/MPlayer manpage for -vf options)"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3276
-#: rc.cpp:959
+#. i18n: file ./prefs-base.ui line 3281
+#: rc.cpp:962
 #, no-c-format
 msgid ""
 "see MEncoder manpage (-vf pp=?)"
 "<br>or apply \"mencoder --pphelp\" in a console"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3284
-#: rc.cpp:962
+#. i18n: file ./prefs-base.ui line 3289
+#: rc.cpp:965
 #, no-c-format
 msgid "Append more TV capture parameters"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3295
-#: rc.cpp:965
+#. i18n: file ./prefs-base.ui line 3300
+#: rc.cpp:968
 #, no-c-format
 msgid ""
 "Here you can append more TV capture parameters"
 "<br>(see for MEncoder/MPlayer manpage)"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3303
-#: rc.cpp:968
+#. i18n: file ./prefs-base.ui line 3308
+#: rc.cpp:971
 #, no-c-format
 msgid ""
 "Here you can append more parameters to the libavcodec options"
 "<br>(see for MEncoder/MPlayer manpage for -lavcopts)"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3324
-#: rc.cpp:974
+#. i18n: file ./prefs-base.ui line 3329
+#: rc.cpp:977
 #, no-c-format
 msgid "Special Fx"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3335
-#: rc.cpp:977
+#. i18n: file ./prefs-base.ui line 3340
+#: rc.cpp:980
 #, no-c-format
 msgid "black and &white"
 msgstr "du a Gwyn"
 
-#. i18n: file ./prefs-base.ui line 3338
-#: rc.cpp:980
+#. i18n: file ./prefs-base.ui line 3343
+#: rc.cpp:983
 #, no-c-format
 msgid "If You like old movies :-)"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3450
-#: rc.cpp:983
+#. i18n: file ./prefs-base.ui line 3455
+#: rc.cpp:986
 #, no-c-format
 msgid "Choose the active channellist"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3466
-#: rc.cpp:986
+#. i18n: file ./prefs-base.ui line 3471
+#: rc.cpp:989
 #, no-c-format
 msgid "Do&wnload"
 msgstr "La&wrlwytho..."
 
-#. i18n: file ./prefs-base.ui line 3469
-#: rc.cpp:989
+#. i18n: file ./prefs-base.ui line 3474
+#: rc.cpp:992
 #, no-c-format
 msgid "Get new channellists from the net."
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3477
-#: rc.cpp:992
+#. i18n: file ./prefs-base.ui line 3482
+#: rc.cpp:995
 #, no-c-format
 msgid "&Upload"
 msgstr "&Lanlwytho"
 
-#. i18n: file ./prefs-base.ui line 3480
-#: rc.cpp:995
+#. i18n: file ./prefs-base.ui line 3485
+#: rc.cpp:998
 #, no-c-format
 msgid ""
 "Upload is not possible at the moment."
 "<br>You might load Your channellist via the webinterface at www.kde-files.org."
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3508
-#: rc.cpp:1001
+#. i18n: file ./prefs-base.ui line 3513
+#: rc.cpp:1004
 #, no-c-format
 msgid "saves the active channellist"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3519
-#: rc.cpp:1007
+#. i18n: file ./prefs-base.ui line 3524
+#: rc.cpp:1010
 #, no-c-format
 msgid "delets the active channellist"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3535
-#: rc.cpp:1010
+#. i18n: file ./prefs-base.ui line 3540
+#: rc.cpp:1013
 #, no-c-format
 msgid "Pr&ofile"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3546
-#: rc.cpp:1013
+#. i18n: file ./prefs-base.ui line 3551
+#: rc.cpp:1016
 #, no-c-format
 msgid "t&ype"
 msgstr "m&ath"
 
-#. i18n: file ./prefs-base.ui line 3563
-#: rc.cpp:1016 rc.cpp:1101 rc.cpp:1113
+#. i18n: file ./prefs-base.ui line 3568
+#: rc.cpp:1019 rc.cpp:1104 rc.cpp:1116
 #, no-c-format
 msgid "Your location."
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3571
-#: rc.cpp:1019
+#. i18n: file ./prefs-base.ui line 3576
+#: rc.cpp:1022
 #, no-c-format
 msgid "loca&tion"
 msgstr "lleo&liad"
 
-#. i18n: file ./prefs-base.ui line 3580
-#: rc.cpp:1022 rc.cpp:1128
-#, no-c-format
-msgid "analog-antenna"
-msgstr ""
-
 #. i18n: file ./prefs-base.ui line 3585
 #: rc.cpp:1025 rc.cpp:1131
 #, no-c-format
-msgid "analog-cable"
+msgid "analog-antenna"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 3590
 #: rc.cpp:1028 rc.cpp:1134
 #, no-c-format
-msgid "analog-sat"
+msgid "analog-cable"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 3595
 #: rc.cpp:1031 rc.cpp:1137
 #, no-c-format
-msgid "dvbt"
+msgid "analog-sat"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 3600
 #: rc.cpp:1034 rc.cpp:1140
 #, no-c-format
-msgid "dvbc"
+msgid "dvbt"
 msgstr ""
 
 #. i18n: file ./prefs-base.ui line 3605
 #: rc.cpp:1037 rc.cpp:1143
 #, no-c-format
+msgid "dvbc"
+msgstr ""
+
+#. i18n: file ./prefs-base.ui line 3610
+#: rc.cpp:1040 rc.cpp:1146
+#, no-c-format
 msgid "dvbs"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3615
-#: rc.cpp:1040
+#. i18n: file ./prefs-base.ui line 3620
+#: rc.cpp:1043
 #, no-c-format
 msgid "Type of the tuner."
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3879
-#: rc.cpp:1043
+#. i18n: file ./prefs-base.ui line 3884
+#: rc.cpp:1046
 #, no-c-format
 msgid ""
 "shows the absolute path of the active channellist."
@@ -2244,152 +2251,152 @@ msgid ""
 "<br>on the webinterface of  www.kde-files.org"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3890
-#: rc.cpp:1046
+#. i18n: file ./prefs-base.ui line 3895
+#: rc.cpp:1049
 #, no-c-format
 msgid "&changed"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 3900
-#: rc.cpp:1049
+#. i18n: file ./prefs-base.ui line 3905
+#: rc.cpp:1052
 #, no-c-format
 msgid "Channellis&t"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 4029
-#: rc.cpp:1061
+#. i18n: file ./prefs-base.ui line 4034
+#: rc.cpp:1064
 #, no-c-format
 msgid "aumix"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 4045
-#: rc.cpp:1064
+#. i18n: file ./prefs-base.ui line 4050
+#: rc.cpp:1067
 #, no-c-format
 msgid "scant&v"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 4067
-#: rc.cpp:1070
+#. i18n: file ./prefs-base.ui line 4072
+#: rc.cpp:1073
 #, no-c-format
 msgid "mpla&yer"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 4083
-#: rc.cpp:1073
+#. i18n: file ./prefs-base.ui line 4088
+#: rc.cpp:1076
 #, no-c-format
 msgid "sud&o"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 4094
-#: rc.cpp:1076
+#. i18n: file ./prefs-base.ui line 4099
+#: rc.cpp:1079
 #, no-c-format
 msgid "&mencoder"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 4105
-#: rc.cpp:1079
+#. i18n: file ./prefs-base.ui line 4110
+#: rc.cpp:1082
 #, no-c-format
 msgid "da&te"
 msgstr "dy&ddiad"
 
-#. i18n: file ./prefs-base.ui line 4116
-#: rc.cpp:1082
+#. i18n: file ./prefs-base.ui line 4121
+#: rc.cpp:1085
 #, no-c-format
 msgid "editor"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 4127
-#: rc.cpp:1085
+#. i18n: file ./prefs-base.ui line 4132
+#: rc.cpp:1088
 #, no-c-format
 msgid "takes filenames"
 msgstr ""
 
-#. i18n: file ./prefs-base.ui line 4144
-#: rc.cpp:1095 rc.cpp:1107
+#. i18n: file ./prefs-base.ui line 4149
+#: rc.cpp:1098 rc.cpp:1110
 #, fuzzy, no-c-format
 msgid "options"
 msgstr "lleoliad"
 
-#. i18n: file ./prefs-base.ui line 4187
-#: rc.cpp:1104
+#. i18n: file ./prefs-base.ui line 4192
+#: rc.cpp:1107
 #, no-c-format
 msgid "electronic programguide"
 msgstr ""
 
 #. i18n: file ./savechannellistui.ui line 16
-#: rc.cpp:1116
+#: rc.cpp:1119
 #, no-c-format
 msgid "save channellist"
 msgstr ""
 
 #. i18n: file ./savechannellistui.ui line 62
-#: rc.cpp:1119
+#: rc.cpp:1122
 #, no-c-format
 msgid "Define Your location."
 msgstr ""
 
 #. i18n: file ./savechannellistui.ui line 96
-#: rc.cpp:1122
+#: rc.cpp:1125
 #, no-c-format
 msgid "Sorry, this is planned for a later release."
 msgstr ""
 
 #. i18n: file ./savechannellistui.ui line 110
-#: rc.cpp:1125
+#: rc.cpp:1128
 #, no-c-format
 msgid "comment"
 msgstr "sylwad"
 
 #. i18n: file ./savechannellistui.ui line 148
-#: rc.cpp:1146
+#: rc.cpp:1149
 #, no-c-format
 msgid "Define the tv type"
 msgstr ""
 
 #. i18n: file ./savechannellistui.ui line 156
-#: rc.cpp:1149
+#: rc.cpp:1152
 #, no-c-format
 msgid "type"
 msgstr "math"
 
 #. i18n: file ./savechannellistui.ui line 164
-#: rc.cpp:1152
+#: rc.cpp:1155
 #, no-c-format
 msgid "location"
 msgstr "lleoliad"
 
 #. i18n: file ./savechannellistui.ui line 188
-#: rc.cpp:1155
+#: rc.cpp:1158
 #, no-c-format
 msgid "He&lp"
 msgstr "Cy&morth"
 
 #. i18n: file ./serialbrowsergui.ui line 16
-#: rc.cpp:1166
+#: rc.cpp:1169
 #, no-c-format
 msgid "SerialBrowser"
 msgstr ""
 
 #. i18n: file ./serialbrowsergui.ui line 45
-#: rc.cpp:1181
+#: rc.cpp:1184
 #, no-c-format
 msgid "Days of the week"
 msgstr ""
 
 #. i18n: file ./serialbrowsergui.ui line 83
-#: rc.cpp:1187
+#: rc.cpp:1190
 #, no-c-format
 msgid "Serial manager"
 msgstr ""
 
 #. i18n: file ./kalva_playergui.ui line 36
-#: rc.cpp:1196
+#: rc.cpp:1199
 #, no-c-format
 msgid "kalva player"
 msgstr ""
 
 #. i18n: file ./kalva_playergui.ui line 90
-#: rc.cpp:1199
+#: rc.cpp:1202
 #, no-c-format
 msgid ""
 "&View active channel in external MPlayer\n"
@@ -2412,7 +2419,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./kalva_playergui.ui line 93
-#: rc.cpp:1218
+#: rc.cpp:1221
 #, no-c-format
 msgid "Runs an external MPlayer for previewing"
 msgstr ""
