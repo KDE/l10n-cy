@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2005-11-24 04:11+0100\n"
+"POT-Creation-Date: 2005-11-25 03:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -174,6 +174,8 @@ msgid "infinity"
 msgstr ""
 
 #: apps/ktorrent/ktorrentviewitem.cpp:162
+#: plugins/infowidget/infowidget.cpp:259
+#: plugins/infowidget/iwfiletreeitem.cpp:78
 msgid "%1 %"
 msgstr "%1 %"
 
@@ -270,7 +272,7 @@ msgid "Downloaded"
 msgstr ""
 
 #. i18n: file ./apps/ktorrent/fileselectdlgbase.ui line 36
-#: apps/ktorrent/ktorrentview.cpp:47 rc.cpp:9 rc.cpp:331
+#: apps/ktorrent/ktorrentview.cpp:47 rc.cpp:9 rc.cpp:334
 #, no-c-format
 msgid "Size"
 msgstr "Maint"
@@ -293,14 +295,16 @@ msgstr ""
 msgid "Time Left"
 msgstr ""
 
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 89
-#: apps/ktorrent/ktorrentview.cpp:52 plugins/infowidget/infowidget.cpp:98
-#: rc.cpp:266
+#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 92
+#: apps/ktorrent/ktorrentview.cpp:52 plugins/infowidget/infowidget.cpp:97
+#: rc.cpp:269
 #, no-c-format
 msgid "Peers"
 msgstr ""
 
-#: apps/ktorrent/ktorrentview.cpp:53
+#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 677
+#: apps/ktorrent/ktorrentview.cpp:53 rc.cpp:343
+#, no-c-format
 msgid "% Complete"
 msgstr ""
 
@@ -308,9 +312,9 @@ msgstr ""
 msgid "Manual Announce"
 msgstr ""
 
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 663
-#: apps/ktorrent/ktorrentview.cpp:78 plugins/infowidget/infowidget.cpp:67
-#: rc.cpp:337
+#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 666
+#: apps/ktorrent/ktorrentview.cpp:78 plugins/infowidget/infowidget.cpp:66
+#: rc.cpp:340
 #, no-c-format
 msgid "Preview"
 msgstr "Rhagolwg"
@@ -347,7 +351,7 @@ msgid "Select Which Files You Want to Download"
 msgstr ""
 
 #. i18n: file ./apps/ktorrent/fileselectdlgbase.ui line 47
-#: rc.cpp:12 rc.cpp:334
+#: rc.cpp:12 rc.cpp:337
 #, no-c-format
 msgid "Download"
 msgstr "Lawrlwytho"
@@ -775,260 +779,266 @@ msgstr ""
 msgid "Rescan"
 msgstr "Ailsyllu"
 
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 28
+#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 16
 #: rc.cpp:257
+#, no-c-format
+msgid "InfoWidgetBase"
+msgstr ""
+
+#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 31
+#: rc.cpp:260
 #, no-c-format
 msgid "St&atus"
 msgstr "Cy&flwr"
 
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 39
-#: rc.cpp:260
+#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 42
+#: rc.cpp:263
 #, no-c-format
 msgid "Parts of the file which have been downloaded:"
 msgstr ""
 
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 52
-#: rc.cpp:263
+#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 55
+#: rc.cpp:266
 #, no-c-format
 msgid "Parts of the file which are available:"
 msgstr ""
 
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 108
-#: rc.cpp:269
+#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 111
+#: rc.cpp:272
 #, no-c-format
 msgid "Leechers:"
 msgstr ""
 
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 156
-#: rc.cpp:274
+#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 159
+#: rc.cpp:277
 #, no-c-format
 msgid "Seeders:"
 msgstr ""
 
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 168
-#: rc.cpp:277
+#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 171
+#: rc.cpp:280
 #, no-c-format
 msgid "Tracker"
 msgstr ""
 
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 195
-#: rc.cpp:280
+#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 198
+#: rc.cpp:283
 #, no-c-format
 msgid "Status:"
 msgstr "Cyflwr:"
 
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 203
-#: rc.cpp:283
+#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 206
+#: rc.cpp:286
 #, no-c-format
 msgid "Next update in:"
 msgstr ""
 
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 267
-#: rc.cpp:288
+#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 270
+#: rc.cpp:291
 #, no-c-format
 msgid "Average Speed"
 msgstr ""
 
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 286
-#: rc.cpp:291
+#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 289
+#: rc.cpp:294
 #, no-c-format
 msgid "Down:"
 msgstr "I Lawr :"
 
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 294
-#: rc.cpp:294
+#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 297
+#: rc.cpp:297
 #, no-c-format
 msgid "Up:"
 msgstr "I fyny :"
 
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 346
-#: rc.cpp:299
+#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 349
+#: rc.cpp:302
 #, no-c-format
 msgid "Sharing"
 msgstr "Rhannu"
 
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 365
-#: rc.cpp:302
+#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 368
+#: rc.cpp:305
 #, no-c-format
 msgid "Share ratio:"
 msgstr ""
 
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 399
-#: plugins/infowidget/infowidget.cpp:135 rc.cpp:306
+#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 402
+#: plugins/infowidget/infowidget.cpp:134 rc.cpp:309
 #, no-c-format
 msgid "Chunks"
 msgstr ""
 
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 418
-#: rc.cpp:309
+#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 421
+#: rc.cpp:312
 #, no-c-format
 msgid "Total:"
 msgstr "Cyfanswm:"
 
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 456
-#: rc.cpp:313
+#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 459
+#: rc.cpp:316
 #, fuzzy, no-c-format
 msgid "Currently downloading:"
 msgstr "Lawrlwytho"
 
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 494
-#: rc.cpp:317
+#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 497
+#: rc.cpp:320
 #, fuzzy, no-c-format
 msgid "Downloaded:"
 msgstr "Lawrlwytho"
 
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 532
-#: rc.cpp:321
+#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 535
+#: rc.cpp:324
 #, no-c-format
 msgid "Excluded:"
 msgstr "Gwaharddwyd :"
 
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 621
-#: rc.cpp:325
+#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 624
+#: rc.cpp:328
 #, no-c-format
 msgid "Fi&les"
 msgstr "Ffei&liau"
 
 #. i18n: file ./plugins/infowidget/ktinfowidgetplugin.kcfg line 10
-#: rc.cpp:340
+#: rc.cpp:346
 #, no-c-format
 msgid "Show peer view tab in main window"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/ktinfowidgetplugin.kcfg line 14
-#: rc.cpp:343
+#: rc.cpp:349
 #, no-c-format
 msgid "Show chunk download view tab in main window"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/iwpref.ui line 24
-#: rc.cpp:346
+#: rc.cpp:352
 #, no-c-format
 msgid "Show list of peers"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/iwpref.ui line 35
-#: rc.cpp:350
+#: rc.cpp:356
 #, fuzzy, no-c-format
 msgid "Show list of chunks currentl&y downloading"
 msgstr "Lawrlwytho"
 
 #. i18n: file ./plugins/ipfilter/ipblockingpref.ui line 16
-#: rc.cpp:353
+#: rc.cpp:359
 #, fuzzy, no-c-format
 msgid "IPBlocking Preferences"
 msgstr "Hoffterau"
 
 #. i18n: file ./plugins/ipfilter/ipblockingpref.ui line 27
-#: rc.cpp:356
+#: rc.cpp:362
 #, no-c-format
 msgid "Select Filter File with IP Ranges in KTorrent Format"
 msgstr ""
 
 #. i18n: file ./plugins/ipfilter/ipblockingpref.ui line 46
-#: rc.cpp:359 rc.cpp:365
+#: rc.cpp:365 rc.cpp:371
 #, no-c-format
 msgid "IP filter file:"
 msgstr ""
 
 #. i18n: file ./plugins/ipfilter/ipblockingpref.ui line 97
-#: rc.cpp:362
+#: rc.cpp:368
 #, no-c-format
 msgid "Select Level1 Filter File (from Bluetack.co.uk or Openmedia.info)"
 msgstr ""
 
 #. i18n: file ./plugins/ipfilter/ipblockingpref.ui line 132
-#: rc.cpp:368
+#: rc.cpp:374
 #, no-c-format
 msgid "http://www.bluetack.co.uk/modules.php?name=Downloads&d_op=getit&lid=8"
 msgstr ""
 
 #. i18n: file ./plugins/ipfilter/ipblockingpref.ui line 170
-#: rc.cpp:371
+#: rc.cpp:377
 #, fuzzy, no-c-format
 msgid "Dow&nload/Convert"
 msgstr "Lawrlwytho"
 
 #. i18n: file ./plugins/ipfilter/ktipfilterplugin.kcfg line 10
-#: rc.cpp:375
+#: rc.cpp:381
 #, no-c-format
 msgid "IP filter file"
 msgstr ""
 
 #. i18n: file ./plugins/ipfilter/ktipfilterplugin.kcfg line 14
-#: rc.cpp:378
+#: rc.cpp:384
 #, no-c-format
 msgid "Level1 filter url"
 msgstr ""
 
 #. i18n: file ./plugins/search/searchpref.ui line 30
-#: rc.cpp:381
+#: rc.cpp:387
 #, fuzzy, no-c-format
 msgid "Search Preferences"
 msgstr "Hoffterau"
 
 #. i18n: file ./plugins/search/searchpref.ui line 65
-#: rc.cpp:385
+#: rc.cpp:391
 #, fuzzy, no-c-format
 msgid "Search engine name:"
 msgstr "Peiriant chwilio :"
 
 #. i18n: file ./plugins/search/searchpref.ui line 88
-#: rc.cpp:388
+#: rc.cpp:394
 #, no-c-format
 msgid "URL:"
 msgstr "URL:"
 
 #. i18n: file ./plugins/search/searchpref.ui line 109
-#: rc.cpp:391
+#: rc.cpp:397
 #, no-c-format
 msgid "&Add"
 msgstr "&Ychwanegu"
 
 #. i18n: file ./plugins/search/searchpref.ui line 127
-#: rc.cpp:394
+#: rc.cpp:400
 #, fuzzy, no-c-format
 msgid "Search Engines"
 msgstr "Peiriant chwilio :"
 
 #. i18n: file ./plugins/search/searchpref.ui line 136
-#: rc.cpp:397
+#: rc.cpp:403
 #, no-c-format
 msgid "Engines"
 msgstr ""
 
 #. i18n: file ./plugins/search/searchpref.ui line 147
-#: rc.cpp:400
+#: rc.cpp:406
 #, no-c-format
 msgid "URL"
 msgstr "URL"
 
 #. i18n: file ./plugins/search/searchpref.ui line 198
-#: rc.cpp:406
+#: rc.cpp:412
 #, no-c-format
 msgid "R&emove All"
 msgstr "G&waredu Popeth"
 
 #. i18n: file ./plugins/search/searchpref.ui line 223
-#: rc.cpp:409
+#: rc.cpp:415
 #, no-c-format
 msgid "Add Defau&lt"
 msgstr ""
 
 #. i18n: file ./plugins/search/searchbar.ui line 53
-#: plugins/search/searchplugin.cpp:62 rc.cpp:415
+#: plugins/search/searchplugin.cpp:62 rc.cpp:421
 #, no-c-format
 msgid "Search"
 msgstr "Chwilio"
 
 #. i18n: file ./plugins/search/searchbar.ui line 78
-#: rc.cpp:418
+#: rc.cpp:424
 #, no-c-format
 msgid "Search engine:"
 msgstr "Peiriant chwilio :"
 
 #. i18n: file ./plugins/search/ktsearchplugin.kcfg line 10
-#: rc.cpp:421
+#: rc.cpp:427
 #, no-c-format
 msgid "Current search engine"
 msgstr ""
@@ -1173,11 +1183,11 @@ msgstr ""
 msgid "Cannot open index file : %1"
 msgstr "Methu creu %1: %2"
 
-#: libktorrent/torrent/torrentcontrol.cpp:321
+#: libktorrent/torrent/torrentcontrol.cpp:323
 msgid "Invalid response"
 msgstr ""
 
-#: libktorrent/torrent/torrentcontrol.cpp:329
+#: libktorrent/torrent/torrentcontrol.cpp:331
 msgid "Unreachable"
 msgstr ""
 
@@ -1328,13 +1338,13 @@ msgstr ""
 msgid "Assigned Peers"
 msgstr ""
 
-#: plugins/infowidget/infowidget.cpp:249
-#: plugins/infowidget/iwfiletreeitem.cpp:47
+#: plugins/infowidget/infowidget.cpp:279
+#: plugins/infowidget/iwfiletreeitem.cpp:49
 msgid "Available"
 msgstr "Ar gael"
 
-#: plugins/infowidget/infowidget.cpp:251
-#: plugins/infowidget/iwfiletreeitem.cpp:51
+#: plugins/infowidget/infowidget.cpp:281
+#: plugins/infowidget/iwfiletreeitem.cpp:53
 msgid "Pending"
 msgstr ""
 
