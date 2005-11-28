@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
-"POT-Creation-Date: 2005-11-26 03:13+0100\n"
+"POT-Creation-Date: 2005-11-28 03:12+0100\n"
 "PO-Revision-Date: 2004-08-12 18:36+0100\n"
 "Last-Translator: KD at Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -217,36 +217,83 @@ msgid ""
 "You can correct data in this row or use \"Cancel row changes\" function."
 msgstr ""
 
-#: main/kexibrowser.cpp:78 main/keximainwindowimpl.cpp:848
+#: main/kexibrowser.cpp:79 main/keximainwindowimpl.cpp:848
 msgid "Project Navigator"
 msgstr "Mordwywr Cywaith"
 
-#: main/kexibrowser.cpp:102 main/startup/KexiProjectSelector.cpp:243
+#: main/kexibrowser.cpp:103 main/startup/KexiProjectSelector.cpp:243
 #: main/startup/KexiStartup.cpp:336 widget/kexidbconnectionwidget.cpp:330
 #: widget/kexidbconnectionwidget.cpp:345
 msgid "&Open"
 msgstr "&Agor"
 
-#: main/kexibrowser.cpp:110
+#: main/kexibrowser.cpp:105
+#, fuzzy
+msgid "Open object"
+msgstr "Agor cywaith"
+
+#: main/kexibrowser.cpp:106
+msgid "Opens object selected on the list"
+msgstr ""
+
+#: main/kexibrowser.cpp:113
 msgid "&Design"
 msgstr "&Cynllun"
 
-#: main/kexibrowser.cpp:118
+#: main/kexibrowser.cpp:115
+#, fuzzy
+msgid "Design object"
+msgstr "&Cynllunio Tabl"
+
+#: main/kexibrowser.cpp:116
+msgid "Starts designing of the object selected on the list"
+msgstr ""
+
+#: main/kexibrowser.cpp:123
 #, fuzzy
 msgid "Open in &Text View"
 msgstr "Golwg &Testun"
 
-#: main/kexibrowser.cpp:147
+#: main/kexibrowser.cpp:125 main/kexibrowser.cpp:130
+#, fuzzy
+msgid "Open object in Text View"
+msgstr "Golwg &Testun"
+
+#: main/kexibrowser.cpp:126 main/kexibrowser.cpp:131
+msgid "Opens object selected on the list in Text View"
+msgstr ""
+
+#: main/kexibrowser.cpp:156
 msgid "&Rename"
 msgstr "&Ail-enwi"
 
-#: main/kexibrowser.cpp:300
+#: main/kexibrowser.cpp:309
 msgid "&Create Object: %1..."
 msgstr "&Creu Gwrthrych: %1..."
 
-#: main/kexibrowser.cpp:306
+#: main/kexibrowser.cpp:315
+#, fuzzy, c-format
+msgid "Create object: %1"
+msgstr "&Creu Gwrthrych: %1..."
+
+#: main/kexibrowser.cpp:317
+#, fuzzy, c-format
+msgid "Creates a new object: %1"
+msgstr "Creu cywaith newydd"
+
+#: main/kexibrowser.cpp:319
 msgid "&Create Object..."
 msgstr "&Creu Gwrthrych..."
+
+#: main/kexibrowser.cpp:323
+#, fuzzy
+msgid "Create object"
+msgstr "Creu Cywaith"
+
+#: main/kexibrowser.cpp:324
+#, fuzzy
+msgid "Creates a new object"
+msgstr "Creu cywaith newydd"
 
 #: main/kexiaboutdata.h:29
 msgid "Database creation for everyone"
@@ -1790,12 +1837,12 @@ msgid ""
 "Here you can choose the location to save the data in and the new database name"
 msgstr ""
 
-#: migration/importoptionsdlg.cpp:38
+#: migration/importoptionsdlg.cpp:42
 #, fuzzy
-msgid "Import Options"
-msgstr "Dewisiadau CSV"
+msgid "Advanced Import Options"
+msgstr "&Uwch "
 
-#: migration/importoptionsdlg.cpp:54
+#: migration/importoptionsdlg.cpp:59
 msgid ""
 "<h3>Text encoding for Microsoft Access database</h3>\n"
 "<p>Database file \"%1\" appears to be created by version of Microsoft Access "
@@ -1805,9 +1852,13 @@ msgid ""
 "different character set.</p>"
 msgstr ""
 
-#: migration/importoptionsdlg.cpp:62
+#: migration/importoptionsdlg.cpp:68
 #: plugins/import/csv/kexicsvoptionsdlg.cpp:49
 msgid "Text encoding:"
+msgstr ""
+
+#: migration/importoptionsdlg.cpp:72
+msgid "Always use this encoding in similar situations"
 msgstr ""
 
 #: migration/keximigrate.cpp:77
@@ -3110,7 +3161,7 @@ msgstr "&Cuddio Tabl"
 msgid "Relationship"
 msgstr "Perthynas"
 
-#: widget/kexicharencodingcombobox.cpp:61
+#: widget/kexicharencodingcombobox.cpp:68
 #, c-format
 msgid ""
 "_: Text encoding: Default\n"
@@ -4605,6 +4656,10 @@ msgid ""
 "You are about to change the design of table \"%1\" but following objects using "
 "this table are opened:"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Import Options"
+#~ msgstr "Dewisiadau CSV"
 
 #~ msgid "All Kexi Files"
 #~ msgstr "Pob Ffeil Kexi"
