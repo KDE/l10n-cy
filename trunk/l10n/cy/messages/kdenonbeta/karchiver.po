@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdenonbeta/karchiver.po\n"
-"POT-Creation-Date: 2005-11-27 03:17+0100\n"
+"POT-Creation-Date: 2005-11-30 18:12+0100\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -27,13 +27,13 @@ msgstr ""
 msgid "Ratio"
 msgstr "Cyfartaledd"
 
-#: carj.cpp:30 clha.cpp:30 ctar.cpp:30 czip.cpp:38 karchiveurpart.cpp:284
+#: carj.cpp:30 clha.cpp:30 ctar.cpp:30 czip.cpp:38 karchiveurpart.cpp:312
 #: karchiveurview.cpp:34
 msgid "Owner"
 msgstr "Perchennog"
 
 #: carj.cpp:31 clha.cpp:31 crar.cpp:36 ctar.cpp:31 czip.cpp:39
-#: karchiveurpart.cpp:285 karchiveurview.cpp:35
+#: karchiveurpart.cpp:313 karchiveurview.cpp:35
 msgid "Permissions"
 msgstr "Caniatadau"
 
@@ -54,23 +54,23 @@ msgid ""
 "An unknown error occurred during extraction:\n"
 msgstr ""
 
-#: karchiveurpart.cpp:280 karchiveurview.cpp:30
+#: karchiveurpart.cpp:308 karchiveurview.cpp:30
 msgid "Name"
 msgstr "Enw"
 
-#: karchiveurpart.cpp:281 karchiveurview.cpp:31
+#: karchiveurpart.cpp:309 karchiveurview.cpp:31
 msgid "Size"
 msgstr "Maint"
 
-#: karchiveurpart.cpp:282 karchiveurview.cpp:32
+#: karchiveurpart.cpp:310 karchiveurview.cpp:32
 msgid "Time"
 msgstr "Amser"
 
-#: cpreferences.cpp:603 karchiveurpart.cpp:283 karchiveurview.cpp:33
+#: cpreferences.cpp:603 karchiveurpart.cpp:311 karchiveurview.cpp:33
 msgid "Date"
 msgstr "Dyddiad"
 
-#: karchiveurpart.cpp:286 karchiveurview.cpp:36
+#: karchiveurpart.cpp:314 karchiveurview.cpp:36
 msgid "Path"
 msgstr "Llwybr"
 
@@ -163,7 +163,7 @@ msgstr "Yn agor ffenestr gymhwysiad newydd..."
 msgid "Creating new document..."
 msgstr "Yn creu dogfen newydd..."
 
-#: karchiveur.cpp:406 karchiveur.cpp:1151
+#: karchiveur.cpp:406 karchiveur.cpp:1151 karchiveurpart.cpp:203
 msgid "Opening archive..."
 msgstr ""
 
@@ -179,7 +179,9 @@ msgstr ""
 msgid "Convert an archive"
 msgstr ""
 
-#: carchiveoperation.cpp:326 karchiveur.cpp:475 karchiveur.cpp:2617
+#: carchiveoperation.cpp:100 carchiveoperation.cpp:360
+#: carchiveoperation.cpp:408 carchiveoperation.cpp:435
+#: carchiveoperation.cpp:725 karchiveur.cpp:475 karchiveur.cpp:2617
 msgid "First open an archive!"
 msgstr ""
 
@@ -207,7 +209,7 @@ msgstr ""
 msgid "Toggle the statusbar..."
 msgstr "Dangos/cuddio'r bar cyflwr..."
 
-#: karchiveur.cpp:592 karchiveur.cpp:2622
+#: karchiveur.cpp:592 karchiveur.cpp:2622 karchiveurpart.cpp:213
 msgid "Extract files..."
 msgstr ""
 
@@ -215,13 +217,13 @@ msgstr ""
 msgid "Add files..."
 msgstr ""
 
-#: karchiveur.cpp:632
+#: carchiveoperation.cpp:770 karchiveur.cpp:632
 msgid "Create archive"
 msgstr ""
 
-#: carchiveoperation.cpp:99 carchiveoperation.cpp:235
-#: carchiveoperation.cpp:245 karchiveur.cpp:640 karchiveur.cpp:1634
-#: karchiveur.cpp:2440
+#: carchiveoperation.cpp:105 carchiveoperation.cpp:265
+#: carchiveoperation.cpp:275 carchiveoperation.cpp:795 karchiveur.cpp:640
+#: karchiveur.cpp:1634 karchiveur.cpp:2440
 msgid "Unknown archive type"
 msgstr ""
 
@@ -233,12 +235,12 @@ msgstr ""
 msgid "View this file..."
 msgstr ""
 
-#: karchiveur.cpp:699 karchiveur.cpp:749 karchiveur.cpp:1762
-#: karchiveur.cpp:1921 karchiveur.cpp:2535
+#: carchiveoperation.cpp:414 karchiveur.cpp:699 karchiveur.cpp:749
+#: karchiveur.cpp:1762 karchiveur.cpp:1921 karchiveur.cpp:2535
 msgid "First select a file"
 msgstr ""
 
-#: karchiveur.cpp:736
+#: karchiveur.cpp:736 karchiveurpart.cpp:223
 msgid "View all selected files..."
 msgstr ""
 
@@ -835,7 +837,7 @@ msgstr ""
 msgid "Next"
 msgstr "Nesaf"
 
-#: carchiveoperation.cpp:472 cfinddata.cpp:29
+#: carchiveoperation.cpp:593 cfinddata.cpp:29
 msgid "Done"
 msgstr "Wedi gorffen"
 
@@ -1272,11 +1274,11 @@ msgid ""
 "Released under GPL license"
 msgstr ""
 
-#: karchiveurpart.cpp:105
+#: karchiveurpart.cpp:107
 msgid "&Extract"
 msgstr "&Alldynnu"
 
-#: karchiveurpart.cpp:175 karchiveurpart.cpp:183
+#: karchiveurpart.cpp:117 karchiveurpart.cpp:125
 #, c-format
 msgid "Failed to create temporary attachment directory %1"
 msgstr ""
@@ -1749,53 +1751,84 @@ msgstr ""
 msgid "KArchiver Split Step 2"
 msgstr ""
 
-#: carchiveoperation.cpp:111
-msgid "Cannot write there"
-msgstr ""
-
-#: carchiveoperation.cpp:204
-msgid ""
-"Archives can only be converted in .tar, .tar.gz, .tar.bz2, .zip, .rar or .lha"
-msgstr ""
-
-#: carchiveoperation.cpp:208
-msgid "Conversion achieved"
-msgstr ""
-
-#: carchiveoperation.cpp:248
+#: carchiveoperation.cpp:110 carchiveoperation.cpp:278
+#: carchiveoperation.cpp:800
 msgid "Compressor not available"
 msgstr ""
 
-#: carchiveoperation.cpp:250
+#: carchiveoperation.cpp:120
+msgid "Cannot write there"
+msgstr ""
+
+#: carchiveoperation.cpp:166
+msgid "Gzip and Bzip2 archives can only contain one file!"
+msgstr ""
+
+#: carchiveoperation.cpp:233
+msgid "Conversion achieved"
+msgstr ""
+
+#: carchiveoperation.cpp:280
 msgid "Cannot read file"
 msgstr ""
 
-#: carchiveoperation.cpp:308
+#: carchiveoperation.cpp:338
 msgid "Some errors occurred while opening archive:"
 msgstr ""
 
-#: carchiveoperation.cpp:309 carchiveoperation.cpp:359
+#: carchiveoperation.cpp:339 carchiveoperation.cpp:389
+#: carchiveoperation.cpp:460 carchiveoperation.cpp:707
+#: carchiveoperation.cpp:753 carchiveoperation.cpp:855
 msgid "Ready"
 msgstr "Parod"
 
-#: carchiveoperation.cpp:343
+#: carchiveoperation.cpp:372
 msgid "Canceled"
 msgstr "Gwrthwnaed"
 
-#: carchiveoperation.cpp:492
+#: carchiveoperation.cpp:379 carchiveoperation.cpp:701
+#: carchiveoperation.cpp:702
+msgid "Some errors occurred while extracting this archive:"
+msgstr ""
+
+#: carchiveoperation.cpp:617
 msgid "Please first open an archive"
 msgstr ""
 
-#: carchiveoperation.cpp:516
+#: carchiveoperation.cpp:642
 msgid "Please give a name to your SelfExtracting archive"
 msgstr ""
 
-#: carchiveoperation.cpp:522
+#: carchiveoperation.cpp:648
 msgid "Sfx module not found"
 msgstr ""
 
-#: carchiveoperation.cpp:546
+#: carchiveoperation.cpp:676
 msgid "Sfx archive ready"
+msgstr ""
+
+#: carchiveoperation.cpp:706
+msgid "None errors found in this archive"
+msgstr ""
+
+#: carchiveoperation.cpp:730
+msgid "This is a read-only archive!"
+msgstr ""
+
+#: carchiveoperation.cpp:735
+msgid "No file to be added"
+msgstr ""
+
+#: carchiveoperation.cpp:774
+msgid "Please enter a valid archive name"
+msgstr ""
+
+#: carchiveoperation.cpp:781
+msgid "This file already exists"
+msgstr ""
+
+#: carchiveoperation.cpp:806
+msgid "None files selected!"
 msgstr ""
 
 #: cwizardstep2installdata.cpp:20
