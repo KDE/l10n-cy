@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-2/kimdaba.po\n"
-"POT-Creation-Date: 2005-11-29 03:17+0100\n"
+"POT-Creation-Date: 2005-12-04 08:08+0100\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -82,12 +82,12 @@ msgstr ""
 msgid "New image:"
 msgstr "Delwedd Newydd : :"
 
-#: contentfolder.cpp:56
+#: contentfolder.cpp:57
 #, c-format
 msgid "No %1"
 msgstr "Nage %1"
 
-#: contentfolder.cpp:58
+#: contentfolder.cpp:59
 #, c-format
 msgid "No other %1"
 msgstr ""
@@ -230,19 +230,9 @@ msgstr ""
 msgid "No Suggestions"
 msgstr ""
 
-#: exifdialog.cpp:15 optionsdialog.cpp:878
-msgid "EXIF Information"
+#: exiffolder.cpp:32
+msgid "Exif Info"
 msgstr ""
-
-#: exifdialog.cpp:43
-#, fuzzy
-msgid "Current Search: "
-msgstr "Chwiliad:"
-
-#: exifdialog.cpp:62
-#, fuzzy
-msgid "<No Search>"
-msgstr "Chwilio"
 
 #: export.cpp:68
 msgid "Export Configuration"
@@ -368,11 +358,11 @@ msgstr ""
 msgid "All Images in Viewer"
 msgstr ""
 
-#: featuredialog.cpp:8 mainview.cpp:670
+#: featuredialog.cpp:9 mainview.cpp:683
 msgid "KimDaBa Feature Status"
 msgstr ""
 
-#: featuredialog.cpp:27
+#: featuredialog.cpp:33
 msgid ""
 "<h1>Overview</h1>"
 "<p>Below you may see the list of compiling time features that may be compiled "
@@ -384,10 +374,13 @@ msgid ""
 "<td>%1</tr></tr>"
 "<tr>"
 "<td><a href=\"#exiv2\">EXIF info supported</a></td>"
-"<td>%2</td></tr></table></p>"
+"<td>%2</td></tr>"
+"<tr>"
+"<td><a href=\"#database\">SQL Database Support</a></td>"
+"<td>%3</td></tr></table></p>"
 msgstr ""
 
-#: featuredialog.cpp:37
+#: featuredialog.cpp:45
 msgid ""
 "<h1>What can I do if I miss a feature?</h1>"
 "<p>If you compiled KimDaBa yourself, then please review the sections below to "
@@ -408,7 +401,7 @@ msgid ""
 "distributions they go under names like kdelibs<i>-devel</i></p>"
 msgstr ""
 
-#: featuredialog.cpp:53
+#: featuredialog.cpp:61
 msgid ""
 "<h1><a name=\"kipi\">Plug-ins Support</a></h1>"
 "<p>KimDaBa has a plug-in system with lots of extensions. You may among other "
@@ -422,7 +415,7 @@ msgid ""
 "href=\"http://extragear.kde.org/apps/kipi/\">KIPI Home page</a></p>"
 msgstr ""
 
-#: featuredialog.cpp:65
+#: featuredialog.cpp:73
 msgid ""
 "<h1><a name=\"exiv2\">EXIF support</a></h1>"
 "<p>Images store information like date image was shot, angle it was shot with, "
@@ -434,6 +427,10 @@ msgid ""
 "example.</p>"
 "<p>KimDaBa uses the <a href=\"http://freshmeat.net/projects/exiv2/\">"
 "EXIV2 library</a> for reading EXIF information from images</p>"
+msgstr ""
+
+#: featuredialog.cpp:86
+msgid "<h1><a name=\"database\">SQL Database Support</a>TBD."
 msgstr ""
 
 #: htmlexportdialog.cpp:105
@@ -1156,7 +1153,7 @@ msgstr ""
 msgid "Searching for New Images"
 msgstr ""
 
-#: mainview.cpp:239
+#: mainview.cpp:252
 msgid ""
 "<qt>"
 "<p><b>Delete Your Temporary Demo Database</b></p>"
@@ -1166,35 +1163,35 @@ msgid ""
 "to keep it around with the changes you made through this session.</p></qt>"
 msgstr ""
 
-#: mainview.cpp:244
+#: mainview.cpp:257
 msgid "Delete Demo Database"
 msgstr ""
 
-#: mainview.cpp:258
+#: mainview.cpp:271
 msgid "Do you want to save the changes?"
 msgstr ""
 
-#: mainview.cpp:259
+#: mainview.cpp:272
 msgid "Save Changes?"
 msgstr ""
 
-#: mainview.cpp:303
+#: mainview.cpp:316
 msgid "No Selection"
 msgstr "Dim detholiad"
 
-#: mainview.cpp:303
+#: mainview.cpp:316
 msgid "No item is selected."
 msgstr ""
 
-#: mainview.cpp:389
+#: mainview.cpp:402
 msgid "Saving..."
 msgstr "Cadw..."
 
-#: mainview.cpp:393
+#: mainview.cpp:406
 msgid "Saving... Done"
 msgstr ""
 
-#: mainview.cpp:419
+#: mainview.cpp:432
 msgid ""
 "<qt>"
 "<p>Be aware that reading EXIF info from files may <b>overwrite</b> "
@@ -1205,164 +1202,164 @@ msgid ""
 "affected, their filenames can be seen below.</p></qt>"
 msgstr ""
 
-#: mainview.cpp:426
+#: mainview.cpp:439
 msgid "Read EXIF Info From Files"
 msgstr ""
 
-#: mainview.cpp:492 thumbnailview.cpp:66
+#: mainview.cpp:505 thumbnailview.cpp:66
 msgid "No Images to Display"
 msgstr ""
 
-#: mainview.cpp:493
+#: mainview.cpp:506
 msgid "None of the selected images were available on the disk."
 msgstr ""
 
-#: mainview.cpp:562
+#: mainview.cpp:575
 msgid "Generate HTML..."
 msgstr ""
 
-#: mainview.cpp:564
+#: mainview.cpp:577
 msgid "Import..."
 msgstr "Mewnforio..."
 
-#: mainview.cpp:565
+#: mainview.cpp:578
 msgid "Export..."
 msgstr "Allforio..."
 
-#: mainview.cpp:584
+#: mainview.cpp:597
 msgid "Delete Selected"
 msgstr ""
 
-#: mainview.cpp:586 tokeneditor.cpp:12
+#: mainview.cpp:599 tokeneditor.cpp:12
 msgid "Remove Tokens"
 msgstr ""
 
-#: mainview.cpp:587
+#: mainview.cpp:600
 msgid "Set Properties for Individual Images"
 msgstr ""
 
-#: mainview.cpp:589
+#: mainview.cpp:602
 msgid "Set Properties for Multiple Images at a Time"
 msgstr ""
 
-#: mainview.cpp:596
+#: mainview.cpp:609
 msgid "View (In New Window)"
 msgstr ""
 
-#: mainview.cpp:598
+#: mainview.cpp:611
 msgid "Run Slide Show"
 msgstr ""
 
-#: mainview.cpp:600
+#: mainview.cpp:613
 msgid "Run Randomized Slide Show"
 msgstr ""
 
-#: mainview.cpp:603
+#: mainview.cpp:616
 msgid "Sort Selected by Date && Time"
 msgstr ""
 
-#: mainview.cpp:604
+#: mainview.cpp:617
 msgid "Limit View to Marked"
 msgstr ""
 
-#: mainview.cpp:606
+#: mainview.cpp:619
 msgid "Jump to Context"
 msgstr ""
 
-#: mainview.cpp:609
+#: mainview.cpp:622
 msgid "Lock Images"
 msgstr ""
 
-#: mainview.cpp:611
+#: mainview.cpp:624
 msgid "Unlock"
 msgstr "Datgloi"
 
-#: mainview.cpp:613
+#: mainview.cpp:626
 msgid "Change Password..."
 msgstr "Newid Cyfrinair..."
 
-#: mainview.cpp:616
+#: mainview.cpp:629
 msgid "Lock Away All Other Images"
 msgstr ""
 
-#: mainview.cpp:618
+#: mainview.cpp:631
 msgid "Lock Away Current Set of Images"
 msgstr ""
 
-#: mainview.cpp:622
+#: mainview.cpp:635
 msgid "Display Images Not on Disk"
 msgstr ""
 
-#: mainview.cpp:623
+#: mainview.cpp:636
 msgid "Display Images with Incomplete Dates..."
 msgstr ""
 
-#: mainview.cpp:624
+#: mainview.cpp:637
 msgid "Recalculate Checksum"
 msgstr ""
 
-#: mainview.cpp:625
+#: mainview.cpp:638
 msgid "Rescan for Images"
 msgstr ""
 
-#: mainview.cpp:626
+#: mainview.cpp:639
 msgid "Read EXIF Info From Files..."
 msgstr ""
 
-#: mainview.cpp:627
+#: mainview.cpp:640
 msgid "Convert Backend...(Experimental!)"
 msgstr ""
 
-#: mainview.cpp:628
+#: mainview.cpp:641
 #, fuzzy
 msgid "Remove All KimDaBa 2.1 Thumbnails"
 msgstr "Creu rhagolygon cryno"
 
-#: mainview.cpp:634
+#: mainview.cpp:647
 msgid "Enable All Messages"
 msgstr ""
 
-#: mainview.cpp:636
+#: mainview.cpp:649
 msgid "Configure View"
 msgstr ""
 
-#: mainview.cpp:640 optionsdialog.cpp:372
+#: mainview.cpp:653 optionsdialog.cpp:372
 msgid "Small List View"
 msgstr ""
 
-#: mainview.cpp:645 optionsdialog.cpp:372
+#: mainview.cpp:658 optionsdialog.cpp:372
 msgid "Large List View"
 msgstr ""
 
-#: mainview.cpp:650 optionsdialog.cpp:372
+#: mainview.cpp:663 optionsdialog.cpp:372
 msgid "Small Icon View"
 msgstr ""
 
-#: mainview.cpp:655 optionsdialog.cpp:372
+#: mainview.cpp:668 optionsdialog.cpp:372
 msgid "Large Icon View"
 msgstr ""
 
-#: mainview.cpp:665
+#: mainview.cpp:678
 msgid "Show Tooltips on Images"
 msgstr ""
 
-#: mainview.cpp:667
+#: mainview.cpp:680
 msgid "Run KimDaBa Demo"
 msgstr ""
 
-#: mainview.cpp:668
+#: mainview.cpp:681
 msgid "Answer KimDaBa Survey..."
 msgstr ""
 
-#: mainview.cpp:669
+#: mainview.cpp:682
 msgid "Donate Money..."
 msgstr ""
 
-#: mainview.cpp:674
+#: mainview.cpp:687
 msgid "Show Exif Info"
 msgstr ""
 
-#: mainview.cpp:690
+#: mainview.cpp:703
 msgid ""
 "<qt>You are about to generate an HTML page for %1 images, which are all the "
 "images in your current context. If you only want to generate HTML for the set "
@@ -1370,19 +1367,19 @@ msgid ""
 "menu and choose generate.</qt>"
 msgstr ""
 
-#: mainview.cpp:721
+#: mainview.cpp:734
 msgid "Auto saving...."
 msgstr ""
 
-#: mainview.cpp:723
+#: mainview.cpp:736
 msgid "Auto saving.... Done"
 msgstr ""
 
-#: mainview.cpp:854 viewer.cpp:233
+#: mainview.cpp:867 viewer.cpp:233
 msgid "Invoke External Program"
 msgstr ""
 
-#: mainview.cpp:900
+#: mainview.cpp:913
 msgid ""
 "<qt>"
 "<p>The password protection is only a means of allowing your little sister to "
@@ -1392,39 +1389,39 @@ msgid ""
 "circumvent this password.</b></p>"
 msgstr ""
 
-#: mainview.cpp:905
+#: mainview.cpp:918
 msgid "Password Protection"
 msgstr ""
 
-#: mainview.cpp:920
+#: mainview.cpp:933
 msgid "Type in Password to Unlock"
 msgstr ""
 
-#: mainview.cpp:926 mainview.cpp:962
+#: mainview.cpp:939 mainview.cpp:975
 msgid "Invalid password."
 msgstr ""
 
-#: mainview.cpp:956
+#: mainview.cpp:969
 msgid "Type in Old Password"
 msgstr ""
 
-#: mainview.cpp:965
+#: mainview.cpp:978
 msgid "Type in New Password"
 msgstr ""
 
-#: mainview.cpp:974 optionsdialog.cpp:78
+#: mainview.cpp:987 optionsdialog.cpp:78
 msgid "General"
 msgstr "Cyffredinol"
 
-#: mainview.cpp:975 optionsdialog.cpp:826
+#: mainview.cpp:988 optionsdialog.cpp:826
 msgid "Viewer"
 msgstr "Gwelydd"
 
-#: mainview.cpp:1113
+#: mainview.cpp:1126
 msgid "No images to export."
 msgstr ""
 
-#: mainview.cpp:1121
+#: mainview.cpp:1134
 msgid ""
 "<qt>"
 "<p>Really enable all messageboxes where you previously checked the "
@@ -1942,6 +1939,10 @@ msgstr ""
 
 #: optionsdialog.cpp:870
 msgid "Delay loading plug-ins till plug-in menu is opened"
+msgstr ""
+
+#: optionsdialog.cpp:878
+msgid "EXIF Information"
 msgstr ""
 
 #: optionsdialog.cpp:878
@@ -2522,6 +2523,14 @@ msgid ""
 "please\n"
 "send an email to <a href=\"mailto:blackie@kde.org\">blackie@kde.org</a></p>\n"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Current Search: "
+#~ msgstr "Chwiliad:"
+
+#, fuzzy
+#~ msgid "<No Search>"
+#~ msgstr "Chwilio"
 
 #~ msgid "P&roperties"
 #~ msgstr "P&riodweddau"
