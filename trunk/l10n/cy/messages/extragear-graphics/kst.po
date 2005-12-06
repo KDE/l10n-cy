@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-2/kst.po\n"
-"POT-Creation-Date: 2005-12-05 08:15+0100\n"
+"POT-Creation-Date: 2005-12-06 08:16+0100\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -249,7 +249,7 @@ msgid "Anonymous String %1"
 msgstr ""
 
 #. i18n: file viewvectorsdialog.ui line 16
-#: kstviewvectorsdialog_i.cpp:107 rc.cpp:2486
+#: kstviewvectorsdialog_i.cpp:107 rc.cpp:2543
 #, no-c-format
 msgid "View Vector Values"
 msgstr ""
@@ -478,7 +478,7 @@ msgstr "Lled ffin"
 msgid "Fill Color"
 msgstr "Lliw'r Llenwad"
 
-#: kstviewbox.cpp:186 kstviewellipse.cpp:141 kstviewlegend.cpp:392
+#: kstviewbox.cpp:186 kstviewellipse.cpp:141
 msgid "Transparent fill"
 msgstr ""
 
@@ -1291,6 +1291,10 @@ msgstr "Symud i'r &Dde"
 msgid "R&ename..."
 msgstr "A&il-enwi..."
 
+#: kstviewobjectimagedrag.cpp:88
+msgid "Generating and storing images of objects..."
+msgstr ""
+
 #: kstfilterdialog_i.cpp:99
 msgid "%1 (v%2) - %3"
 msgstr ""
@@ -1547,24 +1551,6 @@ msgstr "Methu agor ffeil '%1'."
 #, fuzzy
 msgid "Failed to load file '%1'."
 msgstr "Methu agor ffeil '%1'."
-
-#: kstviewlegend.cpp:375
-msgid "Text"
-msgstr "Testun"
-
-#: kstviewlegend.cpp:381
-msgid "Font color"
-msgstr ""
-
-#: kstplotgroup.cpp:246 kstviewlegend.cpp:384
-msgid "Background color"
-msgstr "Lliw'r cefndir"
-
-#. i18n: file plotdialog.ui line 789
-#: kstviewlegend.cpp:387 rc.cpp:1775
-#, no-c-format
-msgid "Font size"
-msgstr "Maint yr wynebfath"
 
 #: kstvcurve.cpp:193
 msgid "Curve"
@@ -1853,7 +1839,7 @@ msgid "Select the current day"
 msgstr "Dewis y diwrnod cyfredol"
 
 #. i18n: file viewmatricesdialog.ui line 16
-#: kstviewmatricesdialog_i.cpp:108 rc.cpp:2474
+#: kstviewmatricesdialog_i.cpp:108 rc.cpp:2531
 #, fuzzy, no-c-format
 msgid "View Matrix Values"
 msgstr "Gwerthoedd"
@@ -1914,10 +1900,6 @@ msgstr ""
 msgid "<KDE Long Date and Time>"
 msgstr ""
 
-#: kstplotimagedrag.cpp:88
-msgid "Generating and storing images of plots..."
-msgstr ""
-
 #: kstviewwindow.cpp:223
 #, c-format
 msgid "Failed to save image to %1"
@@ -1941,6 +1923,10 @@ msgstr ""
 #: kstplotgroup.cpp:243
 msgid "Transparent background"
 msgstr ""
+
+#: kstplotgroup.cpp:246
+msgid "Background color"
+msgstr "Lliw'r cefndir"
 
 #: kstrmatrix.cpp:564 kstrvector.cpp:155 kstrvector.cpp:196
 msgid "Data file for vector %1 was not opened."
@@ -4960,19 +4946,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file plotdialog.ui line 342
-#: rc.cpp:1714
+#: rc.cpp:1714 rc.cpp:2477
 #, no-c-format
 msgid "Displayed objects:"
 msgstr ""
 
 #. i18n: file plotdialog.ui line 376
-#: rc.cpp:1717
+#: rc.cpp:1717 rc.cpp:2480
 #, no-c-format
 msgid "Available objects:"
 msgstr ""
 
 #. i18n: file plotdialog.ui line 436
-#: rc.cpp:1721
+#: rc.cpp:1721 rc.cpp:2484
 #, no-c-format
 msgid ""
 "Pressing this button will cause all curves selected in the \"Displayed Curves\" "
@@ -4980,7 +4966,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file plotdialog.ui line 461
-#: rc.cpp:1725
+#: rc.cpp:1725 rc.cpp:2488
 #, no-c-format
 msgid ""
 "Pressing this button will cause all curves selected in the \"Available Curves\" "
@@ -5059,6 +5045,12 @@ msgstr ""
 msgid "Label text"
 msgstr ""
 
+#. i18n: file plotdialog.ui line 789
+#: rc.cpp:1775
+#, no-c-format
+msgid "Font size"
+msgstr "Maint yr wynebfath"
+
 #. i18n: file plotdialog.ui line 805
 #: rc.cpp:1778
 #, no-c-format
@@ -5096,7 +5088,7 @@ msgid "Guesses default labels for the selected plots based on their contents."
 msgstr ""
 
 #. i18n: file plotdialog.ui line 893
-#: rc.cpp:1796 rc.cpp:1845 rc.cpp:2431
+#: rc.cpp:1796 rc.cpp:1845 rc.cpp:2431 rc.cpp:2494
 #, no-c-format
 msgid "Font:"
 msgstr "Wynebfath:"
@@ -5180,7 +5172,7 @@ msgid "transparent"
 msgstr "tryloyw"
 
 #. i18n: file plotdialog.ui line 1229
-#: rc.cpp:1848 rc.cpp:2452
+#: rc.cpp:1848 rc.cpp:2452 rc.cpp:2509
 #, no-c-format
 msgid "Size:"
 msgstr "Maint:"
@@ -5192,7 +5184,7 @@ msgid "Legend font size, relative to current default font."
 msgstr ""
 
 #. i18n: file plotdialog.ui line 1281
-#: rc.cpp:1854 rc.cpp:2468
+#: rc.cpp:1854 rc.cpp:2468 rc.cpp:2525
 #, no-c-format
 msgid "Colors:"
 msgstr "Lliwiau:"
@@ -5856,25 +5848,25 @@ msgid "Scalars: "
 msgstr ""
 
 #. i18n: file viewlabelwidget.ui line 77
-#: rc.cpp:2428
+#: rc.cpp:2428 rc.cpp:2491
 #, fuzzy, no-c-format
 msgid "Format"
 msgstr "Ffurf1"
 
 #. i18n: file viewlabelwidget.ui line 104
-#: rc.cpp:2434
+#: rc.cpp:2434 rc.cpp:2497
 #, fuzzy, no-c-format
 msgid "Justification -"
 msgstr "Dilysiant"
 
 #. i18n: file viewlabelwidget.ui line 123
-#: rc.cpp:2437
+#: rc.cpp:2437 rc.cpp:2500
 #, fuzzy, no-c-format
 msgid "Font Color:"
 msgstr "Lliw:"
 
 #. i18n: file viewlabelwidget.ui line 131
-#: rc.cpp:2440
+#: rc.cpp:2440 rc.cpp:2503
 #, fuzzy, no-c-format
 msgid "Horizontal:"
 msgstr "Ehangu'n &Llorweddol"
@@ -5886,7 +5878,7 @@ msgid "Rotation:"
 msgstr "Cylchdroi :"
 
 #. i18n: file viewlabelwidget.ui line 177
-#: rc.cpp:2446
+#: rc.cpp:2446 rc.cpp:2506
 #, fuzzy, no-c-format
 msgid "Vertical:"
 msgstr "Aliniad Fertigol"
@@ -5898,37 +5890,43 @@ msgid "Precision:"
 msgstr "Mynegiad:"
 
 #. i18n: file viewlabelwidget.ui line 233
-#: rc.cpp:2456
+#: rc.cpp:2456 rc.cpp:2513
 #, no-c-format
 msgid "Box"
 msgstr ""
 
 #. i18n: file viewlabelwidget.ui line 260
-#: rc.cpp:2459
+#: rc.cpp:2459 rc.cpp:2516
 #, fuzzy, no-c-format
 msgid "Margin:"
 msgstr "Matrics :"
 
 #. i18n: file viewlabelwidget.ui line 276
-#: rc.cpp:2462
+#: rc.cpp:2462 rc.cpp:2519
 #, fuzzy, no-c-format
 msgid "Transparent"
 msgstr "tryloyw"
 
 #. i18n: file viewlabelwidget.ui line 301
-#: rc.cpp:2465
+#: rc.cpp:2465 rc.cpp:2522
 #, no-c-format
 msgid "Auto Resize for Text"
 msgstr ""
 
 #. i18n: file viewlabelwidget.ui line 346
-#: rc.cpp:2471
+#: rc.cpp:2471 rc.cpp:2528
 #, fuzzy, no-c-format
 msgid "Border Width:"
 msgstr "Lled ffin"
 
+#. i18n: file viewlegendwidget.ui line 16
+#: rc.cpp:2474
+#, fuzzy, no-c-format
+msgid "Form1"
+msgstr "Ffurf1"
+
 #. i18n: file viewscalarsdialog.ui line 16
-#: kstviewscalarsdialog_i.cpp:84 rc.cpp:2480
+#: kstviewscalarsdialog_i.cpp:84 rc.cpp:2537
 #, no-c-format
 msgid "View Scalar Values"
 msgstr ""
@@ -7382,6 +7380,9 @@ msgstr ""
 #: kstdatasource.cpp:611
 msgid "-frames"
 msgstr ""
+
+#~ msgid "Text"
+#~ msgstr "Testun"
 
 #~ msgid "Rotation"
 #~ msgstr "Cylchdroi"
