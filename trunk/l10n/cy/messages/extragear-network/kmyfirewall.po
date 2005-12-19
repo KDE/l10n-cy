@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-2/kmyfirewall.po\n"
-"POT-Creation-Date: 2005-12-15 08:29+0100\n"
+"POT-Creation-Date: 2005-12-19 08:29+0100\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -62,23 +62,23 @@ msgstr ""
 msgid "Hint"
 msgstr "Awgrym"
 
-#: core/kmfpluginfactory.cpp:60
+#: core/kmfpluginfactory.cpp:62
 msgid "Could not cast plugin to type: KParts::ReadWritePart."
 msgstr ""
 
-#: core/kmfpluginfactory.cpp:64
+#: core/kmfpluginfactory.cpp:66
 msgid "Could not find %1 in the library search path."
 msgstr ""
 
-#: core/kmfpluginfactory.cpp:68
+#: core/kmfpluginfactory.cpp:70
 msgid "Could not find libkmfgenericinterfacepart in the library search path."
 msgstr ""
 
-#: core/kmfpluginfactory.cpp:81
+#: core/kmfpluginfactory.cpp:83
 msgid "<qt><b>Could not find a matching compiler plugin.</b></qt>"
 msgstr ""
 
-#: core/kmfpluginfactory.cpp:90 kmfconfigdialog.cpp:476
+#: core/kmfpluginfactory.cpp:92 kmfconfigdialog.cpp:476
 msgid "<qt><b>Compiler plugin could not be loaded.</b></qt>"
 msgstr ""
 
@@ -255,11 +255,11 @@ msgstr ""
 msgid "Sorry, can't find Rule: %1 in the Ruleset of this chain."
 msgstr ""
 
-#: core/iptchain.cpp:509
+#: core/iptchain.cpp:510
 msgid "Chain: %1 Drop Logging"
 msgstr ""
 
-#: core/iptchain.cpp:518
+#: core/iptchain.cpp:519
 msgid "Chain: %1 Default Target"
 msgstr ""
 
@@ -436,12 +436,12 @@ msgid ""
 "in the list to delete it."
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:282 kmfwizard.cpp:1356
+#: installer/linux/kmfiptinstaller.cpp:297 kmfwizard.cpp:1356
 msgid "Input file %1 could not be opened."
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:282
-#: installer/linux/kmfiptinstaller.cpp:285 kmfwizard.cpp:1356
+#: installer/linux/kmfiptinstaller.cpp:297
+#: installer/linux/kmfiptinstaller.cpp:300 kmfwizard.cpp:1356
 msgid "Output Viewer"
 msgstr ""
 
@@ -772,7 +772,8 @@ msgstr ""
 msgid "&Convert to IPTables Document and View"
 msgstr ""
 
-#: compilers/iptables/kmfiptablescompiler.cpp:96 kmyfirewall.cpp:812
+#: compilers/iptables/kmfiptablescompiler.cpp:96
+#: installer/kmfinstallerplugin.cpp:211 kmyfirewall.cpp:832
 msgid ""
 "<qt>File <b>%1</b> already exists!</p>"
 "<p><b>Overwrite the existing file?</b></p></qt>"
@@ -1142,7 +1143,11 @@ msgid "Files/URLs to Open."
 msgstr ""
 
 #: main.cpp:41
-msgid "A short option which takes an argument."
+msgid ""
+"Select the interface to use at startup. Use 'iptables' for the "
+"iptables/netfilter interface or 'generic' for the generic GUI. By default the "
+"interface selection dialog is shown if the user did not specify to allways use "
+"one of the interfaces by default."
 msgstr ""
 
 #: main.cpp:46
@@ -2173,58 +2178,58 @@ msgstr ""
 msgid "Start firewall"
 msgstr ""
 
-#: kmyfirewall.cpp:107 kmyfirewall.cpp:518
+#: kmyfirewall.cpp:124 kmyfirewall.cpp:537
 msgid "No File Loaded"
 msgstr "Heb Lwytho Ffeil"
 
-#: kmyfirewall.cpp:111
+#: kmyfirewall.cpp:128
 msgid "Init statusbar..."
 msgstr ""
 
-#: kmyfirewall.cpp:113
+#: kmyfirewall.cpp:130
 msgid "Init menu..."
 msgstr ""
 
-#: kmyfirewall.cpp:115
+#: kmyfirewall.cpp:132
 msgid "Init actions..."
 msgstr ""
 
-#: kmyfirewall.cpp:117
+#: kmyfirewall.cpp:134
 msgid "Init GUI..."
 msgstr ""
 
-#: kmyfirewall.cpp:119
+#: kmyfirewall.cpp:136
 msgid "Read configuration..."
 msgstr ""
 
-#: kmyfirewall.cpp:126
+#: kmyfirewall.cpp:143
 msgid "Restoring session..."
 msgstr "Yn adfer y sesiwn ..."
 
-#: kmyfirewall.cpp:164 kmyfirewall.cpp:197
+#: kmyfirewall.cpp:181 kmyfirewall.cpp:214
 msgid "KMFPluginFactory::KMFMainView( this, m_err ): returned a NULL pointer"
 msgstr ""
 
-#: kmyfirewall.cpp:231
+#: kmyfirewall.cpp:248
 msgid "Return to Editor View"
 msgstr ""
 
-#: kmyfirewall.cpp:244
+#: kmyfirewall.cpp:261
 msgid "&Edit Document Information"
 msgstr ""
 
-#: kmyfirewall.cpp:272
+#: kmyfirewall.cpp:289
 msgid "&Load Template..."
 msgstr "&Llwytho Patrymlun ..."
 
-#: kmyfirewall.cpp:289
+#: kmyfirewall.cpp:306
 msgid ""
 "<p>KMyFirewall::slotLoadDocument(KMFIPTDoc& doc)"
 "<p>doc == 0"
 "<p>This is a bug."
 msgstr ""
 
-#: kmyfirewall.cpp:324
+#: kmyfirewall.cpp:341
 msgid ""
 "<qt>"
 "<p><b>KMyFirewall was not started as user <i>root</i>.</b>"
@@ -2233,41 +2238,41 @@ msgid ""
 "<p><b>Do you still want to continue?</b></p></qt>"
 msgstr ""
 
-#: kmyfirewall.cpp:340
+#: kmyfirewall.cpp:357
 msgid ""
 "<qt><b>Compatibility Warning</b>."
 "<p> As the file format used to save the rulesets has changed, rulesets created "
 "with KMyFirewall &lt; 1.0beta1 <b>WILL NOT</b> work, don't even try it!</p></qt>"
 msgstr ""
 
-#: kmyfirewall.cpp:350
+#: kmyfirewall.cpp:367
 msgid "Warning - File format change"
 msgstr ""
 
-#: kmyfirewall.cpp:356
+#: kmyfirewall.cpp:373
 msgid "<p>Do you want to save the changes before you quit?"
 msgstr ""
 
-#: kmyfirewall.cpp:409
+#: kmyfirewall.cpp:426
 msgid "Starting Up"
 msgstr ""
 
-#: kmyfirewall.cpp:472 kmyfirewall.cpp:531
+#: kmyfirewall.cpp:491 kmyfirewall.cpp:550
 msgid "Open file: "
 msgstr "Agor ffeil : "
 
-#: kmyfirewall.cpp:491
+#: kmyfirewall.cpp:510
 msgid "Save Changed Data?"
 msgstr ""
 
-#: kmyfirewall.cpp:492
+#: kmyfirewall.cpp:511
 msgid ""
 "This firewall configuration has been changed since it was last saved.\n"
 "\n"
 "What do you want to do with these changes?\n"
 msgstr ""
 
-#: kmyfirewall.cpp:547
+#: kmyfirewall.cpp:566
 msgid ""
 "<qt>"
 "<p>The file <b>%1</b> could not be loaded.</p>"
@@ -2275,16 +2280,16 @@ msgid ""
 "network is up and the fileserver running.</qt>"
 msgstr ""
 
-#: kmyfirewall.cpp:557
+#: kmyfirewall.cpp:576
 msgid "<qt><p>You don't have the permissions to read file: <b>%1</b></p></qt>"
 msgstr ""
 
-#: kmyfirewall.cpp:576
+#: kmyfirewall.cpp:595
 #, c-format
 msgid "<p>Unable to load file %1"
 msgstr ""
 
-#: kmyfirewall.cpp:582
+#: kmyfirewall.cpp:601
 msgid ""
 "<qt>"
 "<p><b>Loading <i>%1</i> Failed.</b></p>"
@@ -2293,47 +2298,47 @@ msgid ""
 "host and the directory is reachable. </p></qt>"
 msgstr ""
 
-#: kmyfirewall.cpp:735
+#: kmyfirewall.cpp:755
 msgid "Wrote file: "
 msgstr ""
 
-#: kmyfirewall.cpp:737 kmyfirewall.cpp:838
+#: kmyfirewall.cpp:757 kmyfirewall.cpp:858
 msgid "Sorry could not write file: "
 msgstr ""
 
-#: kmyfirewall.cpp:775
+#: kmyfirewall.cpp:795
 msgid "|KMyFirewall IPTables Ruleset (*.kmfrs)"
 msgstr ""
 
-#: kmyfirewall.cpp:776
+#: kmyfirewall.cpp:796
 msgid "KMyFirewall IPTables Ruleset Template (*.tkmfrs)"
 msgstr ""
 
-#: kmyfirewall.cpp:777
+#: kmyfirewall.cpp:797
 msgid "|KMyFirewall Generic Ruleset (*.kmfgrs)"
 msgstr ""
 
-#: kmyfirewall.cpp:778
+#: kmyfirewall.cpp:798
 msgid "KMyFirewall Generic Ruleset Template (*.tkmfgrs)"
 msgstr ""
 
-#: kmyfirewall.cpp:836
+#: kmyfirewall.cpp:856
 msgid "Wrote File: "
 msgstr ""
 
-#: kmyfirewall.cpp:865
+#: kmyfirewall.cpp:885
 msgid "Firewall is installed"
 msgstr ""
 
-#: kmyfirewall.cpp:868
+#: kmyfirewall.cpp:888
 msgid "Firewall is not installed"
 msgstr ""
 
-#: kmyfirewall.cpp:907
+#: kmyfirewall.cpp:927
 msgid "Firewall is not running"
 msgstr ""
 
-#: kmyfirewall.cpp:909
+#: kmyfirewall.cpp:929
 msgid "Firewall is running"
 msgstr ""
 
@@ -2588,7 +2593,7 @@ msgstr ""
 msgid "Reenabled all warnings."
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:99
+#: installer/linux/kmfiptinstaller.cpp:101
 msgid ""
 "<p>Installation of the firewall finished successfully. The firewall will "
 "startup during the next reboot."
@@ -2596,14 +2601,14 @@ msgid ""
 "Run Firewall</b>"
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:106
+#: installer/linux/kmfiptinstaller.cpp:108
 msgid ""
 "<p><b>Installation of firewall failed</b>"
 "<br>"
 "<p>Please make sure you are logged in as <b>root</b>"
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:111
+#: installer/linux/kmfiptinstaller.cpp:113
 msgid ""
 "<p>Uninstallation of the firewall finished successfully. The firewall will no "
 "longer startup during boot."
@@ -2611,20 +2616,20 @@ msgid ""
 "Stop Firewall</b>"
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:117
+#: installer/linux/kmfiptinstaller.cpp:119
 msgid ""
 "<p><b>Uninstallation of Firewall failed</b>"
 "<br>Please make sure you are logged in as <b>root</b>"
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:122
+#: installer/linux/kmfiptinstaller.cpp:124
 msgid ""
 "<p>Execution of <b>%1</b> failed"
 "<p>Click <b>OK</b> to check your configuration and make sure you are logged in "
 "as <b>root</b>"
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:132
+#: installer/linux/kmfiptinstaller.cpp:134
 msgid ""
 "<p><b>Are you sure you want to execute the generated iptables script?</b>"
 "<p><b>A wrongly configured iptables script may make your computer unusable!</b>"
@@ -2652,39 +2657,39 @@ msgid ""
 "<li>iptables -t mangle -P POSTROUTING ACCEPT </li></ul>"
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:155
+#: installer/linux/kmfiptinstaller.cpp:157
 msgid "Run Firewall"
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:167
+#: installer/linux/kmfiptinstaller.cpp:169
 msgid "Starting Firewall"
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:188
+#: installer/linux/kmfiptinstaller.cpp:190
 msgid "Flushing Rules"
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:214
+#: installer/linux/kmfiptinstaller.cpp:229
 msgid "Show All Tables"
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:227
+#: installer/linux/kmfiptinstaller.cpp:242
 msgid "Show Filter Table"
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:241
+#: installer/linux/kmfiptinstaller.cpp:256
 msgid "Show Nat Table"
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:253
+#: installer/linux/kmfiptinstaller.cpp:268
 msgid "Show Mangle Table"
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:285
+#: installer/linux/kmfiptinstaller.cpp:300
 msgid "Unable to find input file"
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:293
+#: installer/linux/kmfiptinstaller.cpp:308
 msgid ""
 "<p><b>Are you sure you want to install the firewall on your computer?</b>"
 "<p>This will add the scripts to your init system that are required to start "
@@ -2693,13 +2698,14 @@ msgid ""
 "it.</b>"
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:297
-#: installer/linux/kmfiptinstaller.cpp:324
-#: installer/linux/kmfiptinstaller.cpp:340
+#: installer/linux/kmfiptinstaller.cpp:312
+#: installer/linux/kmfiptinstaller.cpp:339
+#: installer/linux/kmfiptinstaller.cpp:355
 msgid "Install Firewall"
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:304
+#: installer/linux/kmfiptinstaller.cpp:319
+#: installer/linux/kmfiptinstaller.cpp:603
 msgid ""
 "<p>Unable to find install script <b>kmfinstall.sh</b>"
 "<p>Please check your installation. Usually this script is installed in "
@@ -2707,7 +2713,7 @@ msgid ""
 "<p>Unable to install the firewall without this script."
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:314
+#: installer/linux/kmfiptinstaller.cpp:329
 msgid ""
 "<p>The following files will be created by installing the firewall"
 "<ul>"
@@ -2717,7 +2723,7 @@ msgid ""
 "<li>Link: %4 -&gt; %5</li></ul></ul>"
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:327
+#: installer/linux/kmfiptinstaller.cpp:342
 msgid ""
 "<p>The following files will be created by installing the firewall"
 "<ul>"
@@ -2728,19 +2734,19 @@ msgid ""
 "<li>Link: %6 -&gt; %7</li></ul></ul>"
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:375
+#: installer/linux/kmfiptinstaller.cpp:390
 msgid ""
 "<p><b>Are you sure you want to uninstall the firewall from your computer?</b>"
 "<br>The firewall will no longer start up during boot."
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:377
-#: installer/linux/kmfiptinstaller.cpp:404
-#: installer/linux/kmfiptinstaller.cpp:420
+#: installer/linux/kmfiptinstaller.cpp:392
+#: installer/linux/kmfiptinstaller.cpp:419
+#: installer/linux/kmfiptinstaller.cpp:435
 msgid "Uninstall Firewall"
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:384
+#: installer/linux/kmfiptinstaller.cpp:399
 msgid ""
 "<p>Unable to find uninstall script <b>kmfinstall.sh</b>"
 "<p>Please check your installation. Usually this script is installed in "
@@ -2748,7 +2754,7 @@ msgid ""
 "<p>Unable to uninstall the firewall without this script."
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:394
+#: installer/linux/kmfiptinstaller.cpp:409
 msgid ""
 "<p>The following files will be removed by uninstalling the firewall"
 "<ul>"
@@ -2758,7 +2764,7 @@ msgid ""
 "<li>Link: %4 -&gt; %5</li></ul></ul>"
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:407
+#: installer/linux/kmfiptinstaller.cpp:422
 msgid ""
 "<p>The following files will be removed by uninstalling the firewall"
 "<ul>"
@@ -2769,56 +2775,82 @@ msgid ""
 "<li>Link: %6 -&gt; %7</li></ul></ul>"
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:446
-#: installer/linux/kmfiptinstaller.cpp:475
+#: installer/linux/kmfiptinstaller.cpp:461
+#: installer/linux/kmfiptinstaller.cpp:490
 msgid "No filename given for script creation."
 msgstr ""
 
-#: installer/linux/kmfiptinstaller.cpp:460
-#: installer/linux/kmfiptinstaller.cpp:547
+#: installer/linux/kmfiptinstaller.cpp:475
+#: installer/linux/kmfiptinstaller.cpp:562
+#: installer/linux/kmfiptinstaller.cpp:692
 msgid ""
 "<p>Opening file for writing <b>failed</b>.Please make sure that you are logged "
 "in as <b>root</b>."
 msgstr ""
 
-#: installer/kmfinstallerplugin.cpp:64
+#: installer/linux/kmfiptinstaller.cpp:588
+msgid ""
+"<p>Unable to find the package README script <b>README.InstallerPackage.txt</b>"
+"<p>Please check your installation. Usually this file is installed in "
+"$KDEDIR/share/apps/kmyfirewall/"
+"<p>The package will be built without the README file."
+msgstr ""
+
+#: installer/kmfinstallerplugin.cpp:66
 msgid "&Reset IPTables"
 msgstr ""
 
-#: installer/kmfinstallerplugin.cpp:67
+#: installer/kmfinstallerplugin.cpp:69
 msgid "Run Fir&ewall"
 msgstr ""
 
-#: installer/kmfinstallerplugin.cpp:70
+#: installer/kmfinstallerplugin.cpp:72
 msgid "&Preview Script"
 msgstr ""
 
-#: installer/kmfinstallerplugin.cpp:73
+#: installer/kmfinstallerplugin.cpp:75
+msgid "&Generate Linux Installation Package"
+msgstr ""
+
+#: installer/kmfinstallerplugin.cpp:78
 msgid "Show &All Tables"
 msgstr ""
 
-#: installer/kmfinstallerplugin.cpp:76
+#: installer/kmfinstallerplugin.cpp:81
 msgid "Show &Filter Table"
 msgstr ""
 
-#: installer/kmfinstallerplugin.cpp:79
+#: installer/kmfinstallerplugin.cpp:84
 msgid "Show &Nat Table"
 msgstr ""
 
-#: installer/kmfinstallerplugin.cpp:82
+#: installer/kmfinstallerplugin.cpp:87
 msgid "Show &Mangle Table"
 msgstr ""
 
-#: installer/kmfinstallerplugin.cpp:85
+#: installer/kmfinstallerplugin.cpp:90
 msgid "Show IPTables Configuration"
 msgstr ""
 
-#: installer/kmfinstallerplugin.cpp:95
+#: installer/kmfinstallerplugin.cpp:100
 msgid "&Install Firewall"
 msgstr ""
 
-#: installer/kmfinstallerplugin.cpp:98
+#: installer/kmfinstallerplugin.cpp:103
 msgid "&Uninstall Firewall"
+msgstr ""
+
+#: installer/kmfinstallerplugin.cpp:199
+msgid ""
+"<qt>"
+"<p>The generated <b>.tar.gz</b> archive contains an install.sh script file that "
+"you need to call after extracting the package. <b>(sh ./install.sh)</b>"
+"<br>To unintall the package call the script unsing the uninstall parameter. <b>"
+"(sh ./install.sh uninstall)</b></p></qt>"
+msgstr ""
+
+#: installer/kmfinstallerplugin.cpp:200
+msgid "Generate Installation Package"
 msgstr ""
 
 #: kmfwidgets/kmflistviewitem.cpp:156 kmfwidgets/kmflistviewitem.cpp:177
