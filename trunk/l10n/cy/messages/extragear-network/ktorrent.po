@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2005-12-17 08:37+0100\n"
+"POT-Creation-Date: 2005-12-27 08:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,10 +122,11 @@ msgid "Cannot bind to port %1 or the 10 following ports."
 msgstr ""
 
 #: apps/ktorrent/ktorrentcore.cpp:166
+#: libktorrent/torrent/torrentcontrol.cpp:797
 msgid "Select Folder to Save To"
 msgstr ""
 
-#: apps/ktorrent/ktorrentcore.cpp:470
+#: apps/ktorrent/ktorrentcore.cpp:469
 #, c-format
 msgid "Cannot create torrent: %1"
 msgstr ""
@@ -279,11 +280,11 @@ msgstr ""
 
 #: apps/ktorrent/ktorrentview.cpp:49
 #: plugins/infowidget/chunkdownloadview.cpp:76
-#: plugins/infowidget/peerview.cpp:86
+#: plugins/infowidget/peerview.cpp:82
 msgid "Down Speed"
 msgstr ""
 
-#: apps/ktorrent/ktorrentview.cpp:50 plugins/infowidget/peerview.cpp:87
+#: apps/ktorrent/ktorrentview.cpp:50 plugins/infowidget/peerview.cpp:83
 msgid "Up Speed"
 msgstr ""
 
@@ -329,8 +330,8 @@ msgid "<b>%1</b> has been stopped with the following error: <br>%2"
 msgstr ""
 
 #: apps/ktcachecheck/cachechecker.cpp:47 apps/ktcachecheck/cachechecker.cpp:76
-#: libktorrent/torrent/chunkmanager.cpp:150
-#: libktorrent/torrent/chunkmanager.cpp:233
+#: libktorrent/torrent/chunkmanager.cpp:170
+#: libktorrent/torrent/chunkmanager.cpp:319
 #, fuzzy
 msgid "Cannot open index file %1 : %2"
 msgstr "Methu creu %1: %2"
@@ -1124,6 +1125,34 @@ msgstr "Methu creu %1: %2"
 msgid "Cannot read from %1"
 msgstr "Methu creu %1: %2"
 
+#: libktorrent/util/cachefile.cpp:57
+#: plugins/partfileimport/importdialog.cpp:164
+#: plugins/partfileimport/multidatachecker.cpp:90
+#: plugins/partfileimport/multidatachecker.cpp:105
+#, fuzzy
+msgid "Cannot open %1 : %2"
+msgstr "Methu creu %1: %2"
+
+#: libktorrent/util/cachefile.cpp:193
+#, c-format
+msgid "Error : Reading past the end of the file %1"
+msgstr ""
+
+#: libktorrent/util/cachefile.cpp:199
+#, fuzzy, c-format
+msgid "Error reading from %1"
+msgstr "Methu creu %1: %2"
+
+#: libktorrent/util/cachefile.cpp:217
+#, fuzzy
+msgid "Error writing to %1 : %2"
+msgstr "Gwall wrth ysgrifennu i %1"
+
+#: libktorrent/util/cachefile.cpp:221
+#, fuzzy, c-format
+msgid "Error writing to %1"
+msgstr "Gwall wrth ysgrifennu i %1"
+
 #: libktorrent/util/fileops.cpp:39
 msgid "Cannot create directory %1: %2"
 msgstr ""
@@ -1148,6 +1177,10 @@ msgstr ""
 msgid "Cannot create %1: %2"
 msgstr "Methu creu %1: %2"
 
+#: libktorrent/util/mmapfile.cpp:137
+msgid "Cannot write beyond end of the mmap buffer !"
+msgstr ""
+
 #: libktorrent/pluginmanagerprefpage.cpp:32
 msgid "Plugins"
 msgstr "Ategion"
@@ -1169,6 +1202,15 @@ msgstr "Wedi'i lwytho"
 #, fuzzy
 msgid "Not loaded"
 msgstr "Lawrlwytho"
+
+#: libktorrent/migrate/ccmigrate.cpp:116 libktorrent/migrate/ccmigrate.cpp:122
+#, fuzzy
+msgid "Cannot open file %1 : %2"
+msgstr "Methu creu %1: %2"
+
+#: libktorrent/migrate/migrate.cpp:45
+msgid "The directory %1 does not exist"
+msgstr ""
 
 #: libktorrent/torrent/bdecoder.cpp:62
 #, c-format
@@ -1208,28 +1250,40 @@ msgstr "Methu creu %1: %2"
 msgid "Corrupted torrent!"
 msgstr ""
 
-#: libktorrent/torrent/singlefilecache.cpp:54
-#: libktorrent/torrent/singlefilecache.cpp:69
-#, c-format
-msgid "Unable to open cache file: %1"
-msgstr ""
+#: libktorrent/torrent/singlefilecache.cpp:78
+#, fuzzy, c-format
+msgid "Cannot load chunk %1"
+msgstr "Methu creu %1: %2"
 
-#: libktorrent/torrent/torrentcontrol.cpp:280
+#: libktorrent/torrent/torrentcontrol.cpp:300
 msgid ""
 "An error occured whilst loading the torrent, the torrent is probably corrupt or "
 "it isn't a torrent file"
 msgstr ""
 
-#: libktorrent/torrent/torrentcontrol.cpp:287
+#: libktorrent/torrent/torrentcontrol.cpp:307
 msgid "You are allready downloading this torrent !"
 msgstr ""
 
-#: libktorrent/torrent/torrentcontrol.cpp:380
+#: libktorrent/torrent/torrentcontrol.cpp:343
+#, fuzzy
+msgid "Cannot migrate %1 : %2"
+msgstr "Methu creu %1: %2"
+
+#: libktorrent/torrent/torrentcontrol.cpp:422
 msgid "Invalid response"
 msgstr ""
 
-#: libktorrent/torrent/torrentcontrol.cpp:388
+#: libktorrent/torrent/torrentcontrol.cpp:430
 msgid "Unreachable"
+msgstr ""
+
+#: libktorrent/torrent/torrentcontrol.cpp:792
+msgid ""
+"The torrent %1 was started with a previous version of KTorrent. To make sure "
+"this torrent still works with this version of KTorrent, we will migrate this "
+"torrent. You will be asked for a location to save the torrent to. If you press "
+"cancel, we will select your home directory."
 msgstr ""
 
 #: libktorrent/torrent/queuemanager.cpp:84
@@ -1246,19 +1300,11 @@ msgstr "Gwall wrth ysgrifennu i %1"
 msgid "Unknown client"
 msgstr ""
 
-#: libktorrent/torrent/chunkdownload.cpp:290
+#: libktorrent/torrent/chunkdownload.cpp:288
 #, c-format
 msgid ""
 "_n: 1 peer\n"
 "%n peers"
-msgstr ""
-
-#: libktorrent/torrent/multifilecache.cpp:115
-#: libktorrent/torrent/multifilecache.cpp:159
-#: libktorrent/torrent/torrentcreator.cpp:120
-#: libktorrent/torrent/torrentcreator.cpp:208
-#: libktorrent/torrent/torrentcreator.cpp:254
-msgid "Cannot open file %1: %2"
 msgstr ""
 
 #: libktorrent/torrent/udptrackersocket.cpp:48
@@ -1280,6 +1326,12 @@ msgstr ""
 
 #: libktorrent/torrent/httptracker.cpp:100
 msgid "Parse error"
+msgstr ""
+
+#: libktorrent/torrent/torrentcreator.cpp:120
+#: libktorrent/torrent/torrentcreator.cpp:208
+#: libktorrent/torrent/torrentcreator.cpp:254
+msgid "Cannot open file %1: %2"
 msgstr ""
 
 #: libktorrent/torrent/torrentcreator.cpp:329
@@ -1306,36 +1358,36 @@ msgid ""
 "download."
 msgstr ""
 
-#: plugins/infowidget/peerview.cpp:56 plugins/infowidget/peerview.cpp:57
+#: plugins/infowidget/peerview.cpp:54 plugins/infowidget/peerview.cpp:55
 msgid "yes"
 msgstr "ie"
 
-#: plugins/infowidget/peerview.cpp:56 plugins/infowidget/peerview.cpp:57
+#: plugins/infowidget/peerview.cpp:54 plugins/infowidget/peerview.cpp:55
 msgid "no"
 msgstr "nage"
 
-#: plugins/infowidget/peerview.cpp:84
+#: plugins/infowidget/peerview.cpp:80
 msgid "IP"
 msgstr "IP"
 
-#: plugins/infowidget/peerview.cpp:85
+#: plugins/infowidget/peerview.cpp:81
 msgid "Client"
 msgstr "Dibynnydd:"
 
-#: plugins/infowidget/peerview.cpp:88
+#: plugins/infowidget/peerview.cpp:84
 msgid "Choked"
 msgstr ""
 
-#: plugins/infowidget/peerview.cpp:89
+#: plugins/infowidget/peerview.cpp:85
 msgid "Snubbed"
 msgstr ""
 
-#: plugins/infowidget/peerview.cpp:90
+#: plugins/infowidget/peerview.cpp:86
 #, fuzzy
 msgid "Availability"
 msgstr "Ar gael"
 
-#: plugins/infowidget/peerview.cpp:94
+#: plugins/infowidget/peerview.cpp:90
 msgid ""
 "_: to ban\n"
 "Ban Peer"
@@ -1434,13 +1486,6 @@ msgstr "Methu creu %1: %2"
 #: plugins/partfileimport/importdialog.cpp:101
 #, fuzzy, c-format
 msgid "Cannot verify data : %s"
-msgstr "Methu creu %1: %2"
-
-#: plugins/partfileimport/importdialog.cpp:164
-#: plugins/partfileimport/multidatachecker.cpp:90
-#: plugins/partfileimport/multidatachecker.cpp:105
-#, fuzzy
-msgid "Cannot open %1 : %2"
 msgstr "Methu creu %1: %2"
 
 #: plugins/partfileimport/partfileimportplugin.cpp:43
