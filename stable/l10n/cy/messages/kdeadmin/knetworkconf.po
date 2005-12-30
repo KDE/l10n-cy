@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: all2.po\n"
-"POT-Creation-Date: 2005-12-28 03:16+0100\n"
+"POT-Creation-Date: 2005-12-30 03:16+0100\n"
 "PO-Revision-Date: 2005-02-22 02:28+0100\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -61,7 +61,7 @@ msgid "Add New Alias"
 msgstr ""
 
 #: knetworkconf.cpp:66
-msgid "Could not load network info."
+msgid "Could not load network configuration information."
 msgstr ""
 
 #: knetworkconf.cpp:67
@@ -848,7 +848,7 @@ msgid "&Delete Selected"
 msgstr ""
 
 #. i18n: file kreloadnetworkdlg.ui line 28
-#: knetworkconfigparser.cpp:289 rc.cpp:385
+#: knetworkconfigparser.cpp:286 rc.cpp:385
 #, no-c-format
 msgid "Reloading Network"
 msgstr ""
@@ -926,77 +926,80 @@ msgstr ""
 
 #: knetworkconfigparser.cpp:41
 msgid ""
-"Could not find the network detection scripts. Something is wrong with your "
-"installation.\n"
+"Could not find the backend script for the network configuration detection. "
+"Something is wrong with your installation.\n"
 " Please check that  \n"
 "{KDE_PATH}/%1 \n"
 "file is present."
 msgstr ""
 
 #: knetworkconfigparser.cpp:42
-msgid "Could Not Find Network Backend Script"
+msgid "Could Not Find Network Configuration Backend Script"
 msgstr ""
 
-#: knetworkconfigparser.cpp:66 knetworkconfigparser.cpp:97
+#: knetworkconfigparser.cpp:65 knetworkconfigparser.cpp:95
+#: knetworkconfigparser.cpp:303 knetworkconfigparser.cpp:1001
 msgid ""
-"Could not execute network detection scripts. Something is wrong with your "
-"installation."
+"Could not execute backend script for the network configuration detection. "
+"Something is wrong with your installation."
 msgstr ""
 
-#: knetworkconfigparser.cpp:67 knetworkconfigparser.cpp:98
-#: knetworkconfigparser.cpp:307 knetworkconfigparser.cpp:1005
-msgid "Could Not Launch Network Backend Script"
+#: knetworkconfigparser.cpp:66 knetworkconfigparser.cpp:96
+#: knetworkconfigparser.cpp:304 knetworkconfigparser.cpp:1002
+msgid "Could Not Launch Network Configuration Backend Script"
 msgstr ""
 
-#: knetworkconfigparser.cpp:116 knetworkconfigparser.cpp:825
-#, fuzzy
-msgid "Could not parse the XML file."
-msgstr "Methwyd agor y ffeil"
+#: knetworkconfigparser.cpp:113 knetworkconfigparser.cpp:822
+msgid "Could not parse the XML output from the network configuration backend."
+msgstr ""
 
-#: knetworkconfigparser.cpp:117
+#: knetworkconfigparser.cpp:114
 msgid "Error While Listing Network Interfaces"
 msgstr ""
 
-#: knetworkconfigparser.cpp:195
+#: knetworkconfigparser.cpp:192
 #, fuzzy
 msgid "Could not open file /proc/net/route."
 msgstr "Methwyd agor y ffeil"
 
-#: knetworkconfigparser.cpp:196
+#: knetworkconfigparser.cpp:193
 msgid "Could Not Open File"
 msgstr "Methwyd agor y ffeil"
 
-#: knetworkconfigparser.cpp:290
+#: knetworkconfigparser.cpp:287
 msgid "%1Please wait while saving the network settings...%2"
 msgstr ""
 
-#: knetworkconfigparser.cpp:306
-msgid ""
-"Could not execute network saving scripts. Something is wrong with your "
-"installation."
-msgstr ""
-
-#: knetworkconfigparser.cpp:744
+#: knetworkconfigparser.cpp:741
 msgid "Ethernet Network Device"
 msgstr ""
 
-#: knetworkconfigparser.cpp:746
+#: knetworkconfigparser.cpp:743
 msgid "Wireless Network Device"
 msgstr ""
 
-#: knetworkconfigparser.cpp:1004
-msgid ""
-"Could not list supported platforms. Something is wrong with your installation."
+#: knetworkconfigparser.cpp:823
+msgid "Error Loading The Network Configuration"
 msgstr ""
 
-#: knetworkconfigparser.cpp:1019
-msgid "Could not parse the XML file of supported platforms."
+#: knetworkconfigparser.cpp:1015
+msgid ""
+"Could not parse the list of supported platforms from the network configuration "
+"backend."
+msgstr ""
+
+#: knetworkconfigparser.cpp:1016
+msgid "Error Obtaining Supported Platforms List"
 msgstr ""
 
 #: version.h:5
 msgid ""
 "KNetworkConf - A KDE Control Center module to configure TCP/IP settings."
 msgstr ""
+
+#, fuzzy
+#~ msgid "Could not parse the XML file."
+#~ msgstr "Methwyd agor y ffeil"
 
 #, fuzzy
 #~ msgid "Are you sure you want to delete the selected network profile?"
