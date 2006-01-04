@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-2/konversation.po\n"
-"POT-Creation-Date: 2006-01-03 08:55+0100\n"
+"POT-Creation-Date: 2006-01-04 09:13+0100\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -497,6 +497,7 @@ msgstr "Dewis Ffeil Sw^n"
 
 #: src/ex_alias_preferences.cpp:46 src/highlightconfigcontroller.cpp:209
 #: src/old_prefpages/prefspagehighlight.cpp:216
+#: src/watchednicknamesconfigcontroller.cpp:156
 msgid "New"
 msgstr "Newydd"
 
@@ -545,7 +546,7 @@ msgid "DCCs"
 msgstr ""
 
 #. i18n: file ./src/ignore_preferencesui.ui line 168
-#: rc.cpp:98 rc.cpp:930 src/old_prefpages/prefspageignore.cpp:58
+#: rc.cpp:98 rc.cpp:954 src/old_prefpages/prefspageignore.cpp:58
 #, no-c-format
 msgid "&New"
 msgstr "&Newydd"
@@ -600,7 +601,7 @@ msgid "Rename"
 msgstr "Ail-enwi"
 
 #. i18n: file ./src/chatwindowbehaviour_preferences.ui line 27
-#: rc.cpp:824 src/identitydialog.cpp:81 src/konvisettingsdialog.cpp:120
+#: rc.cpp:848 src/identitydialog.cpp:81 src/konvisettingsdialog.cpp:120
 #: src/konvisettingsdialog.cpp:121
 #, no-c-format
 msgid "General"
@@ -798,7 +799,9 @@ msgstr ""
 msgid "Add Nickname"
 msgstr "Ffuge&nw:"
 
-#: src/identitydialog.cpp:325 src/identitydialog.cpp:337
+#. i18n: file ./src/watchednicknames_preferences.ui line 215
+#: rc.cpp:813 src/identitydialog.cpp:325 src/identitydialog.cpp:337
+#, no-c-format
 msgid "Nickname:"
 msgstr "Ffugenw:"
 
@@ -3584,8 +3587,9 @@ msgstr "Ffuge&nw:"
 msgid "Logging"
 msgstr "Cofnodi"
 
-#: src/konvisettingsdialog.cpp:180 src/konvisettingsdialog.cpp:181
-#, fuzzy
+#. i18n: file ./src/watchednicknames_preferences.ui line 182
+#: rc.cpp:807 src/konvisettingsdialog.cpp:180 src/konvisettingsdialog.cpp:181
+#, fuzzy, no-c-format
 msgid "Watched Nicknames"
 msgstr "Ffuge&nw:"
 
@@ -4657,7 +4661,7 @@ msgid "Enable specific &ports for DCC send:"
 msgstr ""
 
 #. i18n: file ./src/dcc_preferences.ui line 352
-#: rc.cpp:216 rc.cpp:875
+#: rc.cpp:216 rc.cpp:899
 #, no-c-format
 msgid " sec"
 msgstr "eil"
@@ -4687,7 +4691,7 @@ msgid "Sort b&y user status"
 msgstr ""
 
 #. i18n: file ./src/nicklistbehavior_preferences.ui line 76
-#: rc.cpp:231 rc.cpp:234 rc.cpp:933
+#: rc.cpp:231 rc.cpp:234 rc.cpp:957
 #, no-c-format
 msgid "..."
 msgstr "..."
@@ -4857,7 +4861,7 @@ msgid "Te&xt color:"
 msgstr "Ll&iw testun:"
 
 #. i18n: file ./src/osd_preferences.ui line 152
-#: rc.cpp:326 rc.cpp:1195
+#: rc.cpp:326 rc.cpp:1219
 #, no-c-format
 msgid "&Background color:"
 msgstr "Lliw'r &cefndir:"
@@ -4917,7 +4921,7 @@ msgid "&Enable On Screen Display"
 msgstr ""
 
 #. i18n: file ./src/config/konversation.kcfg line 284
-#: rc.cpp:444 rc.cpp:884
+#: rc.cpp:444 rc.cpp:908
 #, no-c-format
 msgid "&Show real names next to nicknames"
 msgstr ""
@@ -5089,14 +5093,20 @@ msgstr ""
 msgid "S&earch:"
 msgstr "C&hwilio"
 
-#. i18n: file ./src/watchednicknames_preferences.ui line 38
+#. i18n: file ./src/watchednicknames_preferences.ui line 16
 #: rc.cpp:745
+#, fuzzy, no-c-format
+msgid "WatchedNicknames_Config"
+msgstr "Ffuge&nw:"
+
+#. i18n: file ./src/watchednicknames_preferences.ui line 41
+#: rc.cpp:748
 #, no-c-format
 msgid "Command e&xecuted when nickname is double clicked:"
 msgstr ""
 
-#. i18n: file ./src/watchednicknames_preferences.ui line 52
-#: rc.cpp:748
+#. i18n: file ./src/watchednicknames_preferences.ui line 55
+#: rc.cpp:751
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -5111,95 +5121,8 @@ msgid ""
 "</qt>"
 msgstr ""
 
-#. i18n: file ./src/watchednicknames_preferences.ui line 58
-#: rc.cpp:759
-#, no-c-format
-msgid "Watched Networks/Nicknames"
-msgstr ""
-
-#. i18n: file ./src/watchednicknames_preferences.ui line 91
+#. i18n: file ./src/watchednicknames_preferences.ui line 82
 #: rc.cpp:762
-#, no-c-format
-msgid ""
-"<qt>\n"
-"<p>\n"
-"When the nickname watcher is turned on, you will be notified when the nicknames "
-"appearing in the <b>Watched Networks/Nicknames</b> list come online or go "
-"offline.</p>\n"
-"<p>You can also open the <b>Nicks Online</b> window to see the status of all "
-"the watched nicknames.</p>\n"
-")\n"
-"</qt>"
-msgstr ""
-
-#. i18n: file ./src/watchednicknames_preferences.ui line 130
-#: rc.cpp:773
-#, no-c-format
-msgid "Click to remove the selected nickname from the list."
-msgstr ""
-
-#. i18n: file ./src/watchednicknames_preferences.ui line 149
-#: rc.cpp:776 rc.cpp:954
-#, no-c-format
-msgid "&New..."
-msgstr "&Newydd..."
-
-#. i18n: file ./src/watchednicknames_preferences.ui line 152
-#: rc.cpp:779
-#, no-c-format
-msgid "Click to add a nickname to the list."
-msgstr ""
-
-#. i18n: file ./src/watchednicknames_preferences.ui line 163
-#: rc.cpp:782
-#, no-c-format
-msgid "Update &interval:"
-msgstr "Cyfnod &diweddaru:"
-
-#. i18n: file ./src/watchednicknames_preferences.ui line 169
-#: rc.cpp:785 rc.cpp:818
-#, no-c-format
-msgid ""
-"Konversation will check the status of the nicknames listed below at this "
-"interval."
-msgstr ""
-
-#. i18n: file ./src/watchednicknames_preferences.ui line 180
-#: rc.cpp:788
-#, no-c-format
-msgid "&Show watched nicks online tab on application startup"
-msgstr ""
-
-#. i18n: file ./src/watchednicknames_preferences.ui line 183
-#: rc.cpp:791
-#, no-c-format
-msgid ""
-"<qt>When checked, the <b>Nicks Online</b> window will be automatically opened "
-"when starting Konversation.</qt>"
-msgstr ""
-
-#. i18n: file ./src/watchednicknames_preferences.ui line 191
-#: rc.cpp:794
-#, no-c-format
-msgid "&Enable nickname watcher"
-msgstr ""
-
-#. i18n: file ./src/watchednicknames_preferences.ui line 198
-#: rc.cpp:797
-#, no-c-format
-msgid ""
-"<qt>\n"
-"<p>\n"
-"When the nickname watcher is turned on, you will be notified when the nicknames "
-"appearing in the <b>Watched Networks/Nicknames</b> list come online or go "
-"offline.</p>\n"
-"<p>You can also open the <b>Nicks Online</b> window to see the status of all "
-"the watched nicknames.</p>\n"
-"</qt>"
-msgstr ""
-
-#. i18n: file ./src/watchednicknames_preferences.ui line 225
-#: rc.cpp:804
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -5214,14 +5137,131 @@ msgid ""
 "</qt>"
 msgstr ""
 
-#. i18n: file ./src/watchednicknames_preferences.ui line 253
-#: rc.cpp:815
+#. i18n: file ./src/watchednicknames_preferences.ui line 93
+#: rc.cpp:773
+#, no-c-format
+msgid "Update &interval:"
+msgstr "Cyfnod &diweddaru:"
+
+#. i18n: file ./src/watchednicknames_preferences.ui line 99
+#: rc.cpp:776 rc.cpp:782
+#, no-c-format
+msgid ""
+"Konversation will check the status of the nicknames listed below at this "
+"interval."
+msgstr ""
+
+#. i18n: file ./src/watchednicknames_preferences.ui line 127
+#: rc.cpp:779
 #, no-c-format
 msgid " seconds"
 msgstr "eiliadau"
 
+#. i18n: file ./src/watchednicknames_preferences.ui line 147
+#: rc.cpp:785
+#, no-c-format
+msgid "&Show watched nicks online tab on application startup"
+msgstr ""
+
+#. i18n: file ./src/watchednicknames_preferences.ui line 150
+#: rc.cpp:788
+#, fuzzy, no-c-format
+msgid "Alt+S"
+msgstr "Alt+4"
+
+#. i18n: file ./src/watchednicknames_preferences.ui line 153
+#: rc.cpp:791
+#, no-c-format
+msgid ""
+"<qt>When checked, the <b>Nicks Online</b> window will be automatically opened "
+"when starting Konversation.</qt>"
+msgstr ""
+
+#. i18n: file ./src/watchednicknames_preferences.ui line 161
+#: rc.cpp:794
+#, no-c-format
+msgid "&Enable nickname watcher"
+msgstr ""
+
+#. i18n: file ./src/watchednicknames_preferences.ui line 164
+#: rc.cpp:797
+#, fuzzy, no-c-format
+msgid "Alt+E"
+msgstr "Alt+4"
+
+#. i18n: file ./src/watchednicknames_preferences.ui line 171
+#: rc.cpp:800
+#, no-c-format
+msgid ""
+"<qt>\n"
+"<p>\n"
+"When the nickname watcher is turned on, you will be notified when the nicknames "
+"appearing in the <b>Watched Networks/Nicknames</b> list come online or go "
+"offline.</p>\n"
+"<p>You can also open the <b>Nicks Online</b> window to see the status of all "
+"the watched nicknames.</p>\n"
+"</qt>"
+msgstr ""
+
+#. i18n: file ./src/watchednicknames_preferences.ui line 196
+#: rc.cpp:810
+#, fuzzy, no-c-format
+msgid "Network:"
+msgstr "&Rhwydwaith :"
+
+#. i18n: file ./src/watchednicknames_preferences.ui line 229
+#: rc.cpp:816
+#, no-c-format
+msgid "Watched Networks/Nicknames"
+msgstr ""
+
+#. i18n: file ./src/watchednicknames_preferences.ui line 270
+#: rc.cpp:819
+#, no-c-format
+msgid ""
+"<qt>\n"
+"<p>\n"
+"When the nickname watcher is turned on, you will be notified when the nicknames "
+"appearing in the <b>Watched Networks/Nicknames</b> list come online or go "
+"offline.</p>\n"
+"<p>You can also open the <b>Nicks Online</b> window to see the status of all "
+"the watched nicknames.</p>\n"
+")\n"
+"</qt>"
+msgstr ""
+
+#. i18n: file ./src/watchednicknames_preferences.ui line 297
+#: rc.cpp:827 rc.cpp:978
+#, no-c-format
+msgid "&New..."
+msgstr "&Newydd..."
+
+#. i18n: file ./src/watchednicknames_preferences.ui line 300
+#: rc.cpp:830
+#, fuzzy, no-c-format
+msgid "Alt+N"
+msgstr "Alt+4"
+
+#. i18n: file ./src/watchednicknames_preferences.ui line 303
+#: rc.cpp:833
+#, no-c-format
+msgid "Click to add a nickname to the list."
+msgstr ""
+
+#. i18n: file ./src/watchednicknames_preferences.ui line 325
+#: rc.cpp:839
+#, fuzzy, no-c-format
+msgid "Alt+R"
+msgstr "Alt+4"
+
+#. i18n: file ./src/watchednicknames_preferences.ui line 328
+#: rc.cpp:842
+#, no-c-format
+msgid "Click to remove the selected nickname from the list."
+msgstr ""
+
 #. i18n: file ./src/chatwindowbehaviour_preferences.ui line 16
-#: rc.cpp:821
+#: rc.cpp:845
 #, no-c-format
 msgid ""
 "Keep channel mode string as a combination of characters instead of translating "
@@ -5230,13 +5270,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./src/chatwindowbehaviour_preferences.ui line 38
-#: rc.cpp:827
+#: rc.cpp:851
 #, no-c-format
 msgid "Disable variable (e.g. %C, %B, %G...) e&xpansion"
 msgstr ""
 
 #. i18n: file ./src/chatwindowbehaviour_preferences.ui line 41
-#: rc.cpp:830
+#: rc.cpp:854
 #, no-c-format
 msgid ""
 "Do not expand variables when sending text to the server. A variable starts with "
@@ -5244,416 +5284,416 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./src/chatwindowbehaviour_preferences.ui line 49
-#: rc.cpp:833
+#: rc.cpp:857
 #, no-c-format
 msgid "Enable s&ystem bell on incoming ASCII BEL"
 msgstr ""
 
 #. i18n: file ./src/chatwindowbehaviour_preferences.ui line 52
-#: rc.cpp:836
+#: rc.cpp:860
 #, no-c-format
 msgid ""
 "Sounds the system bell when you receive an ASCII BEL (0x07) control character"
 msgstr ""
 
 #. i18n: file ./src/chatwindowbehaviour_preferences.ui line 60
-#: rc.cpp:839
+#: rc.cpp:863
 #, no-c-format
 msgid "&Redirect all status messages to the server status window"
 msgstr ""
 
 #. i18n: file ./src/chatwindowbehaviour_preferences.ui line 68
-#: rc.cpp:842
+#: rc.cpp:866
 #, no-c-format
 msgid "Hide &Join/Part/Nick events"
 msgstr ""
 
 #. i18n: file ./src/chatwindowbehaviour_preferences.ui line 76
-#: rc.cpp:845
+#: rc.cpp:869
 #, no-c-format
 msgid "Show remember line in all channels and &queries"
 msgstr ""
 
 #. i18n: file ./src/chatwindowbehaviour_preferences.ui line 101
-#: rc.cpp:848
+#: rc.cpp:872
 #, no-c-format
 msgid "Scroll&back limit:"
 msgstr ""
 
 #. i18n: file ./src/chatwindowbehaviour_preferences.ui line 107
-#: rc.cpp:851 rc.cpp:860
+#: rc.cpp:875 rc.cpp:884
 #, no-c-format
 msgid "How many lines to keep in buffers, 0 = unlimitied"
 msgstr ""
 
 #. i18n: file ./src/chatwindowbehaviour_preferences.ui line 115
-#: rc.cpp:854
+#: rc.cpp:878
 #, no-c-format
 msgid " lines"
 msgstr "llinelli"
 
 #. i18n: file ./src/chatwindowbehaviour_preferences.ui line 118
-#: rc.cpp:857
+#: rc.cpp:881
 #, no-c-format
 msgid "Unlimited"
 msgstr "Heb derfyn"
 
 #. i18n: file ./src/chatwindowbehaviour_preferences.ui line 132
-#: rc.cpp:863
+#: rc.cpp:887
 #, no-c-format
 msgid "&Use raw modes for mode changes"
 msgstr ""
 
 #. i18n: file ./src/chatwindowbehaviour_preferences.ui line 159
-#: rc.cpp:866
+#: rc.cpp:890
 #, no-c-format
 msgid "Enable Automatic User Information Look Up (/WHO)"
 msgstr ""
 
 #. i18n: file ./src/chatwindowbehaviour_preferences.ui line 176
-#: rc.cpp:869
+#: rc.cpp:893
 #, no-c-format
 msgid "Update interval:"
 msgstr "Cyfnod diweddaru:"
 
 #. i18n: file ./src/chatwindowbehaviour_preferences.ui line 190
-#: rc.cpp:872
+#: rc.cpp:896
 #, no-c-format
 msgid "Every "
 msgstr ""
 
 #. i18n: file ./src/chatwindowbehaviour_preferences.ui line 224
-#: rc.cpp:878
+#: rc.cpp:902
 #, fuzzy, no-c-format
 msgid " nicks"
 msgstr "Ffugenw"
 
 #. i18n: file ./src/chatwindowbehaviour_preferences.ui line 258
-#: rc.cpp:881
+#: rc.cpp:905
 #, no-c-format
 msgid "Max. number of users in a channel:"
 msgstr ""
 
 #. i18n: file ./src/chatwindowbehaviour_preferences.ui line 272
-#: rc.cpp:887
+#: rc.cpp:911
 #, no-c-format
 msgid "Show the real name of a person next to his/her nick in nickname list."
 msgstr ""
 
 #. i18n: file ./src/highlight_preferences.ui line 27
-#: rc.cpp:890
+#: rc.cpp:914
 #, no-c-format
 msgid "Ena&ble sound for highlighted list items"
 msgstr ""
 
 #. i18n: file ./src/highlight_preferences.ui line 35
-#: rc.cpp:893
+#: rc.cpp:917
 #, no-c-format
 msgid "Alwa&ys highlight own current nick:"
 msgstr ""
 
 #. i18n: file ./src/highlight_preferences.ui line 43
-#: rc.cpp:896
+#: rc.cpp:920
 #, no-c-format
 msgid "Always highlight own &lines:"
 msgstr ""
 
 #. i18n: file ./src/highlight_preferences.ui line 51
-#: rc.cpp:899
+#: rc.cpp:923
 #, no-c-format
 msgid "&Highlight List"
 msgstr ""
 
 #. i18n: file ./src/highlight_preferences.ui line 65
-#: rc.cpp:902
+#: rc.cpp:926
 #, no-c-format
 msgid "&Sound:"
 msgstr "&Sain :"
 
 #. i18n: file ./src/highlight_preferences.ui line 79
-#: rc.cpp:905
+#: rc.cpp:929
 #, fuzzy, no-c-format
 msgid "&Auto text:"
 msgstr "Hunan-gysylltu"
 
 #. i18n: file ./src/highlight_preferences.ui line 104
-#: rc.cpp:911
+#: rc.cpp:935
 #, no-c-format
 msgid "RE"
 msgstr ""
 
 #. i18n: file ./src/highlight_preferences.ui line 115
-#: rc.cpp:914
+#: rc.cpp:938
 #, no-c-format
 msgid "Highlights"
 msgstr "Amlygiadau"
 
 #. i18n: file ./src/highlight_preferences.ui line 126
-#: rc.cpp:917
+#: rc.cpp:941
 #, no-c-format
 msgid "Sound"
 msgstr "Sw^n"
 
 #. i18n: file ./src/highlight_preferences.ui line 137
-#: rc.cpp:920
+#: rc.cpp:944
 #, no-c-format
 msgid "Auto Text"
 msgstr ""
 
 #. i18n: file ./src/highlight_preferences.ui line 214
-#: rc.cpp:924
+#: rc.cpp:948
 #, no-c-format
 msgid "audio/x-wav audio/x-mp3 application/ogg audio/x-adpcm"
 msgstr ""
 
 #. i18n: file ./src/highlight_preferences.ui line 225
-#: rc.cpp:927
+#: rc.cpp:951
 #, no-c-format
 msgid "&Pattern:"
 msgstr "&Patrwm:"
 
 #. i18n: file ./src/highlight_preferences.ui line 285
-#: rc.cpp:937
+#: rc.cpp:961
 #, no-c-format
 msgid "Click to run Regular Expression Editor (KRegExpEditor)"
 msgstr ""
 
 #. i18n: file ./src/konversationui.rc line 32
-#: rc.cpp:948
+#: rc.cpp:972
 #, no-c-format
 msgid "&Window"
 msgstr "&Ffenestr"
 
 #. i18n: file ./src/alias_preferences.ui line 41
-#: rc.cpp:957
+#: rc.cpp:981
 #, no-c-format
 msgid "Alias"
 msgstr "Ffugenw"
 
 #. i18n: file ./src/alias_preferences.ui line 52
-#: rc.cpp:960
+#: rc.cpp:984
 #, no-c-format
 msgid "Replacement"
 msgstr "Amnewidiad"
 
 #. i18n: file ./src/chatwindowappearance_preferences.ui line 31
-#: rc.cpp:963
+#: rc.cpp:987
 #, no-c-format
 msgid "Enable &Timestamps"
 msgstr ""
 
 #. i18n: file ./src/chatwindowappearance_preferences.ui line 45
-#: rc.cpp:966
+#: rc.cpp:990
 #, no-c-format
 msgid "Show &dates"
 msgstr ""
 
 #. i18n: file ./src/chatwindowappearance_preferences.ui line 53
-#: rc.cpp:969
+#: rc.cpp:993
 #, no-c-format
 msgid "&Format:"
 msgstr "&Fformat:"
 
 #. i18n: file ./src/chatwindowappearance_preferences.ui line 62
-#: rc.cpp:972
+#: rc.cpp:996
 #, no-c-format
 msgid "hh:mm"
 msgstr ""
 
 #. i18n: file ./src/chatwindowappearance_preferences.ui line 67
-#: rc.cpp:975
+#: rc.cpp:999
 #, no-c-format
 msgid "hh:mm:ss"
 msgstr ""
 
 #. i18n: file ./src/chatwindowappearance_preferences.ui line 101
-#: rc.cpp:978
+#: rc.cpp:1002
 #, fuzzy, no-c-format
 msgid "Enable Back&ground Image"
 msgstr "Dewiswch Ddelwedd Cefndir"
 
 #. i18n: file ./src/chatwindowappearance_preferences.ui line 115
-#: rc.cpp:981
+#: rc.cpp:1005
 #, no-c-format
 msgid "&Path:"
 msgstr "&Llwybr:"
 
 #. i18n: file ./src/chatwindowappearance_preferences.ui line 133
-#: rc.cpp:984
+#: rc.cpp:1008
 #, no-c-format
 msgid "&Layout"
 msgstr "&Cynllun"
 
 #. i18n: file ./src/chatwindowappearance_preferences.ui line 144
-#: rc.cpp:987
+#: rc.cpp:1011
 #, no-c-format
 msgid "&Show channel topic"
 msgstr ""
 
 #. i18n: file ./src/chatwindowappearance_preferences.ui line 152
-#: rc.cpp:990
+#: rc.cpp:1014
 #, no-c-format
 msgid "Show channel &mode buttons"
 msgstr ""
 
 #. i18n: file ./src/chatwindowappearance_preferences.ui line 160
-#: rc.cpp:993
+#: rc.cpp:1017
 #, no-c-format
 msgid "Show &quick buttons"
 msgstr ""
 
 #. i18n: file ./src/chatwindowappearance_preferences.ui line 168
-#: rc.cpp:996
+#: rc.cpp:1020
 #, no-c-format
 msgid "Show bo&x to change own nickname"
 msgstr ""
 
 #. i18n: file ./src/chatwindowappearance_preferences.ui line 176
-#: rc.cpp:999
+#: rc.cpp:1023
 #, no-c-format
 msgid "Show hostmasks &in nickname list"
 msgstr ""
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 32
-#: rc.cpp:1002
+#: rc.cpp:1026
 #, fuzzy, no-c-format
 msgid "Custom Colors"
 msgstr "L&liwiau IRC"
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 43
-#: rc.cpp:1005
+#: rc.cpp:1029
 #, no-c-format
 msgid "Input fields and nick list &uses custom colors"
 msgstr ""
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 301
-#: rc.cpp:1018
+#: rc.cpp:1042
 #, no-c-format
 msgid "&Background:"
 msgstr "&Cefndir:"
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 312
-#: rc.cpp:1021
+#: rc.cpp:1045
 #, no-c-format
 msgid "&Server message:"
 msgstr ""
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 323
-#: rc.cpp:1024
+#: rc.cpp:1048
 #, no-c-format
 msgid "H&yperlink:"
 msgstr ""
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 334
-#: rc.cpp:1027
+#: rc.cpp:1051
 #, no-c-format
 msgid "Channel &message:"
 msgstr ""
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 345
-#: rc.cpp:1030
+#: rc.cpp:1054
 #, no-c-format
 msgid "Actio&n:"
 msgstr "Gweit&hred:"
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 356
-#: rc.cpp:1033
+#: rc.cpp:1057
 #, no-c-format
 msgid "Bac&klog:"
 msgstr ""
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 367
-#: rc.cpp:1036
+#: rc.cpp:1060
 #, no-c-format
 msgid "Comman&d message:"
 msgstr ""
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 378
-#: rc.cpp:1039
+#: rc.cpp:1063
 #, no-c-format
 msgid "&Query message:"
 msgstr ""
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 389
-#: rc.cpp:1042
+#: rc.cpp:1066
 #, no-c-format
 msgid "&Timestamp:"
 msgstr ""
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 400
-#: rc.cpp:1045
+#: rc.cpp:1069
 #, no-c-format
 msgid "A&lternate background:"
 msgstr ""
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 416
-#: rc.cpp:1048
+#: rc.cpp:1072
 #, fuzzy, no-c-format
 msgid "Colored Nicks"
 msgstr "Lliwiau"
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 438
-#: rc.cpp:1051 rc.cpp:1115
+#: rc.cpp:1075 rc.cpp:1139
 #, no-c-format
 msgid "5:"
 msgstr "5 :"
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 462
-#: rc.cpp:1055 rc.cpp:1118
+#: rc.cpp:1079 rc.cpp:1142
 #, no-c-format
 msgid "4:"
 msgstr "4 :"
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 486
-#: rc.cpp:1059 rc.cpp:1099
+#: rc.cpp:1083 rc.cpp:1123
 #, no-c-format
 msgid "3:"
 msgstr "3 :"
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 518
-#: rc.cpp:1064 rc.cpp:1096
+#: rc.cpp:1088 rc.cpp:1120
 #, no-c-format
 msgid "2:"
 msgstr "2 :"
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 610
-#: rc.cpp:1068 rc.cpp:1106
+#: rc.cpp:1092 rc.cpp:1130
 #, no-c-format
 msgid "0:"
 msgstr "0 :"
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 634
-#: rc.cpp:1072 rc.cpp:1093
+#: rc.cpp:1096 rc.cpp:1117
 #, no-c-format
 msgid "1:"
 msgstr "1 :"
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 700
-#: rc.cpp:1077 rc.cpp:1109
+#: rc.cpp:1101 rc.cpp:1133
 #, no-c-format
 msgid "7:"
 msgstr "7 :"
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 716
-#: rc.cpp:1080 rc.cpp:1112
+#: rc.cpp:1104 rc.cpp:1136
 #, no-c-format
 msgid "6:"
 msgstr "6 :"
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 766
-#: rc.cpp:1083
+#: rc.cpp:1107
 #, fuzzy, no-c-format
 msgid "&Own nick color:"
 msgstr "L&liwiau IRC"
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 809
-#: rc.cpp:1087
+#: rc.cpp:1111
 #, no-c-format
 msgid "&Allow Colored Text in IRC Messages"
 msgstr ""
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 815
-#: rc.cpp:1090
+#: rc.cpp:1114
 #, no-c-format
 msgid ""
 "By enabling this option, color codes added to IRC messages will be displayed in "
@@ -5662,67 +5702,67 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 1130
-#: rc.cpp:1126
+#: rc.cpp:1150
 #, no-c-format
 msgid "11:"
 msgstr "11 :"
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 1162
-#: rc.cpp:1132
+#: rc.cpp:1156
 #, no-c-format
 msgid "9:"
 msgstr "9 :"
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 1170
-#: rc.cpp:1135
+#: rc.cpp:1159
 #, no-c-format
 msgid "8:"
 msgstr "8 :"
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 1178
-#: rc.cpp:1138
+#: rc.cpp:1162
 #, no-c-format
 msgid "10:"
 msgstr "10 :"
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 1262
-#: rc.cpp:1142
+#: rc.cpp:1166
 #, no-c-format
 msgid "12:"
 msgstr "12 :"
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 1278
-#: rc.cpp:1146
+#: rc.cpp:1170
 #, no-c-format
 msgid "15:"
 msgstr ""
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 1302
-#: rc.cpp:1151
+#: rc.cpp:1175
 #, no-c-format
 msgid "14:"
 msgstr "14 :"
 
 #. i18n: file ./src/colorsappearance_preferences.ui line 1310
-#: rc.cpp:1154
+#: rc.cpp:1178
 #, no-c-format
 msgid "13:"
 msgstr "13:"
 
 #. i18n: file ./src/irccolorchooserui.ui line 33
-#: rc.cpp:1157
+#: rc.cpp:1181
 #, no-c-format
 msgid "Preview"
 msgstr "Rhagolwg"
 
 #. i18n: file ./src/irccolorchooserui.ui line 39
-#: rc.cpp:1160
+#: rc.cpp:1184
 #, no-c-format
 msgid "This is how your message will look with these colors"
 msgstr ""
 
 #. i18n: file ./src/irccolorchooserui.ui line 44
-#: rc.cpp:1163
+#: rc.cpp:1187
 #, no-c-format
 msgid ""
 "<qt>This is a preview of how your readers may see view your message if you "
@@ -5734,13 +5774,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./src/irccolorchooserui.ui line 60
-#: rc.cpp:1168 rc.cpp:1178
+#: rc.cpp:1192 rc.cpp:1202
 #, no-c-format
 msgid "The chosen text color is added to the input line."
 msgstr ""
 
 #. i18n: file ./src/irccolorchooserui.ui line 64
-#: rc.cpp:1171 rc.cpp:1181
+#: rc.cpp:1195 rc.cpp:1205
 #, no-c-format
 msgid ""
 "<qt>Here you choose what color you want you the text in the next message you "
@@ -5752,19 +5792,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./src/irccolorchooserui.ui line 80
-#: rc.cpp:1175
+#: rc.cpp:1199
 #, no-c-format
 msgid "&Foreground color:"
 msgstr "Lliw'r &blaendir:"
 
 #. i18n: file ./src/irccolorchooserui.ui line 109
-#: rc.cpp:1185 rc.cpp:1198
+#: rc.cpp:1209 rc.cpp:1222
 #, no-c-format
 msgid "The chosen text-background color is added to the input line."
 msgstr ""
 
 #. i18n: file ./src/irccolorchooserui.ui line 116
-#: rc.cpp:1188 rc.cpp:1201
+#: rc.cpp:1212 rc.cpp:1225
 #, no-c-format
 msgid ""
 "<qt>Here you choose what color you want you background for the text in the next "
@@ -5783,25 +5823,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./src/warnings_preferencesui.ui line 25
-#: rc.cpp:1208
+#: rc.cpp:1232
 #, no-c-format
 msgid "Warning Dialogs to Show"
 msgstr ""
 
 #. i18n: file ./src/joinchannelui.ui line 33
-#: rc.cpp:1211
+#: rc.cpp:1235
 #, no-c-format
 msgid "C&hannel:"
 msgstr "S&ianel:"
 
 #. i18n: file ./src/joinchannelui.ui line 63
-#: rc.cpp:1214
+#: rc.cpp:1238
 #, no-c-format
 msgid "&Password:"
 msgstr "&Cyfrinair:"
 
 #. i18n: file ./src/joinchannelui.ui line 82
-#: rc.cpp:1217
+#: rc.cpp:1241
 #, no-c-format
 msgid "Server:"
 msgstr " Gweinydd:"
