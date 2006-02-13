@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
-"POT-Creation-Date: 2006-02-12 10:57+0100\n"
+"POT-Creation-Date: 2006-02-13 10:38+0100\n"
 "PO-Revision-Date: 2004-09-07 14:22+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -764,7 +764,7 @@ msgstr "Mewnosod Nod Arbennig"
 msgid "&Replace:"
 msgstr "&Amnewid:"
 
-#: kofficecore/koversiondialog.cc:56 kotext/KoAutoFormatDia.cpp:582
+#: kofficecore/Koversiondialog.cpp:56 kotext/KoAutoFormatDia.cpp:582
 #: kotext/KoAutoFormatDia.cpp:743 kotext/KoAutoFormatDia.cpp:762
 #: kotext/KoAutoFormatDia.cpp:809 kotext/KoAutoFormatDia.cpp:827
 #: kotext/KoAutoFormatDia.cpp:903
@@ -1062,7 +1062,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./kofficeui/KoGeneralPropertyUi.ui line 16
-#: kofficecore/koDocumentInfoDlg.cc:257 kotext/KoStyleManager.cpp:233
+#: kofficecore/KoDocumentInfoDlg.cpp:257 kotext/KoStyleManager.cpp:233
 #: rc.cpp:303
 #, no-c-format
 msgid "General"
@@ -2990,7 +2990,7 @@ msgstr "Mewnosod Gwrthrych"
 msgid "Object"
 msgstr "Gwrthrych"
 
-#: kofficecore/koversiondialog.cc:52 kofficecore/koversiondialog.cc:125
+#: kofficecore/Koversiondialog.cpp:52 kofficecore/Koversiondialog.cpp:125
 #: kofficeui/koPartSelectDia.cc:37
 msgid "Comment"
 msgstr "Sylwad"
@@ -3214,13 +3214,13 @@ msgid ""
 "DeepSkyBlue"
 msgstr "Awyr Las Dwfn"
 
-#: kofficecore/koDocument.cc:1392 kofficecore/koDocument.cc:1643
-#: kofficecore/koMainWindow.cc:546 kofficeui/koTemplateChooseDia.cc:87
+#: kofficecore/KoDocument.cpp:1392 kofficecore/KoDocument.cpp:1643
+#: kofficecore/KoMainWindow.cpp:546 kofficeui/koTemplateChooseDia.cc:87
 #: kofficeui/koTemplateChooseDia.cc:709
 msgid "The file %1 does not exist."
 msgstr "Nid yw'r ffeil %1 yn bodoli!."
 
-#: kofficecore/koMainWindow.cc:1100 kofficeui/koTemplateChooseDia.cc:187
+#: kofficecore/KoMainWindow.cpp:1100 kofficeui/koTemplateChooseDia.cc:187
 msgid "Open Document"
 msgstr "Agor Dogfen"
 
@@ -4043,204 +4043,111 @@ msgstr ""
 msgid " plus "
 msgstr "pt"
 
-#: kofficecore/koUnit.cc:48
-msgid "Millimeters (mm)"
-msgstr "Milimetrau (mm)"
-
-#: kofficecore/koUnit.cc:50
-msgid "Centimeters (cm)"
-msgstr "Centimetrau (cm)"
-
-#: kofficecore/koUnit.cc:52
-msgid "Decimeters (dm)"
-msgstr "Decimetrau (dm)"
-
-#: kofficecore/koUnit.cc:54
-msgid "Inches (in)"
-msgstr "Modfeddi (in)"
-
-#: kofficecore/koUnit.cc:56
-msgid "Pica (pi)"
-msgstr "Pica (pi)"
-
-#: kofficecore/koUnit.cc:58
-msgid "Didot (dd)"
-msgstr "Didot (dd)"
-
-#: kofficecore/koUnit.cc:60
-msgid "Cicero (cc)"
-msgstr "Cicero (cc)"
-
-#: kofficecore/koUnit.cc:62
-msgid "Points (pt)"
-msgstr "Pwyntiau (pt)"
-
-#: kofficecore/koUnit.cc:64
-msgid "Error!"
-msgstr "Gwall!"
-
-#: kofficecore/kofiledialog.cpp:93
-msgid "%1 (Uncompressed XML Files)"
-msgstr "%1 (Ffeiliau XML Heb eu Cywasgu)"
-
-#: kofficecore/kofiledialog.cpp:95
-#, fuzzy
-msgid "%1 (Flat XML File)"
-msgstr "%1 (Ffeiliau XML Heb eu Cywasgu)"
-
-#: kofficecore/kofiledialog.cpp:112
-msgid "%1 (%2 Compatible)"
-msgstr "%1 (Cydnaws â %2)"
-
-#: kofficecore/KoApplicationIface.cc:48
+#: kofficecore/KoDocument.cpp:1616 kofficecore/KoOasisStore.cpp:148
 #, c-format
-msgid "Unknown KOffice MimeType %s. Check your installation."
-msgstr ""
+msgid "Could not find %1"
+msgstr "Methodd ganfod %1"
 
-#: kofficecore/koDocumentInfoDlg.cc:95
+#: kofficecore/KoOasisStore.cpp:170
+msgid ""
+"Parsing error in the main document at line %1, column %2\n"
+"Error message: %3"
+msgstr ""
+"Gwall dosrannu yn y prif ddogfen wrth linell %1, colofn %2\n"
+"Neges wall: %3"
+
+#: kofficecore/KoFilterManager.cpp:52
+msgid "Choose Filter"
+msgstr "Dewis Hidlen"
+
+#: kofficecore/KoFilterManager.cpp:64
+msgid "Select a filter:"
+msgstr "Dewis hidlen:"
+
+#: kofficecore/KoFilterManager.cpp:294 kofficecore/KoFilterManager.cpp:303
+msgid "Could not export file."
+msgstr "Methu allforio'r ffeil."
+
+#: kofficecore/KoFilterManager.cpp:294 kofficecore/KoFilterManager.cpp:303
+msgid "Missing Export Filter"
+msgstr "Hidlen Allforio ar Goll"
+
+#: kofficecore/KoFilterManager.cpp:591
+#, c-format
+msgid ""
+"Could not import file of type\n"
+"%1"
+msgstr ""
+"Methu mewnforio ffeil o fath\n"
+" %1"
+
+#: kofficecore/KoFilterManager.cpp:593
+msgid "Missing Import Filter"
+msgstr "Hidlen Mewnforio ar Goll"
+
+#: kofficecore/KoDocumentInfoDlg.cpp:95
 msgid "Document Information"
 msgstr "Gwybodaeth Ddogfen"
 
-#: kofficecore/koDocumentInfoDlg.cc:146
+#: kofficecore/KoDocumentInfoDlg.cpp:146
 msgid ""
 "No personal contact data set, please use the option                             "
 "      \"Set as Personal Contact Data\" from the \"Edit\" menu in KAddressbook "
 "to set one."
 msgstr ""
 
-#: kofficecore/koDocumentInfoDlg.cc:203
+#: kofficecore/KoDocumentInfoDlg.cpp:203
 msgid "Author"
 msgstr "Awdur"
 
-#: kofficecore/koDocumentInfoDlg.cc:293
+#: kofficecore/KoDocumentInfoDlg.cpp:293
 msgid "User-Defined Metadata"
 msgstr ""
 
-#: kofficecore/koMainWindow.cc:223
-msgid "Versions..."
-msgstr ""
-
-#: kofficecore/koMainWindow.cc:227
-msgid "I&mport..."
-msgstr "&Mewnforio..."
-
-#: kofficecore/koMainWindow.cc:230
-msgid "E&xport..."
-msgstr "&Allforio..."
-
-#: kofficecore/koMainWindow.cc:236
-msgid "&Document Information"
-msgstr "&Gwybodaeth Ddogfen"
-
-#: kofficecore/koMainWindow.cc:261
-msgid "&Close All Views"
-msgstr "&Cau Pob Golwg"
-
-#: kofficecore/koMainWindow.cc:266
-msgid "&Split View"
-msgstr "Golwg wedi'i &Hollti"
-
-#: kofficecore/koMainWindow.cc:269
-msgid "&Remove View"
-msgstr "G&waredu Golwg"
-
-#: kofficecore/koMainWindow.cc:274
-msgid "Splitter &Orientation"
-msgstr "Cyfeiriadaeth H&olltydd"
-
-#: kofficecore/koMainWindow.cc:278
-msgid "&Vertical"
-msgstr "&Fertigol"
-
-#: kofficecore/koMainWindow.cc:279
-msgid "&Horizontal"
-msgstr "&Llorweddol"
-
-#: kofficecore/koMainWindow.cc:513
+#: kofficecore/KoApplicationIface.cc:48
 #, c-format
-msgid "Save as %1"
+msgid "Unknown KOffice MimeType %s. Check your installation."
 msgstr ""
 
-#: kofficecore/koMainWindow.cc:674
-msgid "%1 (unknown file type)"
-msgstr "%1 (math anhybys o ffeil)"
+#: kofficecore/KoDocumentChild.cpp:216 kofficecore/KoDocumentChild.cpp:255
+#, c-format
+msgid "No handler found for %1"
+msgstr "Ni chafwyd trinydd ar gyfer %1"
 
-#: kofficecore/koMainWindow.cc:684
+#: kofficecore/KoDocumentChild.cpp:309
+#, c-format
 msgid ""
-"<qt>Saving as a %1 may result in some loss of formatting."
-"<p>Do you still want to save in this format?</qt>"
+"This document contains an external link to a remote document\n"
+"%1"
 msgstr ""
-"<qt>Gall gadw fel %1 achosi colled fformatio."
-"<p>Ydych am gadw yn y fformat hwn serch hynny?</qt>"
+"Cynhwysa'r ddogfen hon gyswllt allanol i ddogfen bell\n"
+" %1"
 
-#: kofficecore/koMainWindow.cc:687
-msgid "Confirm Save"
-msgstr "Cadarnhau Cadw"
+#: kofficecore/KoDocumentChild.cpp:310
+msgid "Confirmation Required"
+msgstr "Mynnir Cadarnhad"
 
-#: kofficecore/koMainWindow.cc:698
-msgid ""
-"<qt>Exporting as a %1 may result in some loss of formatting."
-"<p>Do you still want to export to this format?</qt>"
-msgstr ""
-"<qt>Gall allforio fel %1 achosi colled fformatio."
-"<p>Ydych am allforio i'r fformat hwn serch hynny?</qt>"
+#: kofficecore/KoDocumentChild.cpp:310
+msgid "Download"
+msgstr "Lawrlwytho"
 
-#: kofficecore/koMainWindow.cc:701
-msgid "Confirm Export"
-msgstr "Cadarnhau Allforio"
+#: kofficecore/KoDocumentChild.cpp:310
+msgid "Skip"
+msgstr "Hepgor"
 
-#: kofficecore/koMainWindow.cc:790
-msgid "Save Document As"
-msgstr "Cadw'r Ddogfen Fel"
-
-#: kofficecore/koMainWindow.cc:792
-msgid "Export Document As"
-msgstr "Allforio'r Ddogfen Fel"
-
-#: kofficecore/koMainWindow.cc:839
-msgid ""
-"A document with this name already exists.\n"
-"Do you want to overwrite it?"
-msgstr ""
-"Mae dogfen efo'r enw hwn yn bodoli eisoes.\n"
-"Ydych eisiau ei throsysgrifo?"
-
-#: kofficecore/koDocument.cc:1971 kofficecore/koMainWindow.cc:1029
-msgid ""
-"<p>The document <b>'%1'</b> has been modified.</p>"
-"<p>Do you want to save it?</p>"
-msgstr ""
-"<p>Mae'r ddogfen <b>'%1'</b> wedi ei haddasu.</p>"
-"<p>Ydych am ei chadw? </p>"
-
-#: kofficecore/koMainWindow.cc:1102
-msgid "Import Document"
-msgstr "Mewnforio Dogfen"
-
-#: kofficecore/koMainWindow.cc:1514
-msgid "Show %1 Toolbar"
-msgstr "Dangos Bar Offer %1"
-
-#: kofficecore/koMainWindow.cc:1516
-msgid "Hide %1 Toolbar"
-msgstr "Cuddio Bar Offer %1"
-
-#: kofficecore/koMainWindow.cc:1593
-msgid "Document"
-msgstr "Dogfen"
-
-#: kofficecore/koMainWindow.cc:1603
+#: kofficecore/KoDocumentChild.cpp:338
 #, fuzzy, c-format
-msgid "Document - %1"
-msgstr "Teitl Dogfen"
-
-#: kofficecore/koMainWindow.cc:1632
 msgid ""
-"You will lose all your changes!\n"
-"Do you want to continue?"
-msgstr ""
-"Byddwch yn colli eich newidiadau i gyd!\n"
-"Ydych eisiau parhau?"
+"Could not load embedded object:\n"
+"%1"
+msgstr "Methu llwytho gwrthrych caeth."
+
+#: kofficecore/KoDocumentChild.cpp:340
+#, fuzzy
+msgid ""
+"Could not load external document %1:\n"
+"%2"
+msgstr "Methu llwytho gwrthrych caeth."
 
 #: kofficecore/kkbdaccessextensions.cpp:166
 msgid "Resize Panel Forward"
@@ -4254,17 +4161,17 @@ msgstr ""
 msgid "Access Keys"
 msgstr ""
 
-#: kofficecore/koDetailsPane.cc:97
+#: kofficecore/KoDetailsPane.cpp:97
 #, fuzzy
 msgid "Use This Template"
 msgstr "Creu Patrymlun"
 
-#: kofficecore/koDetailsPane.cc:288
+#: kofficecore/KoDetailsPane.cpp:288
 #, fuzzy
 msgid "Open This Document"
 msgstr "Agor Dogfen"
 
-#: kofficecore/koDetailsPane.cc:380
+#: kofficecore/KoDetailsPane.cpp:380
 msgid ""
 "_: File modification date and time. %1 is date time\n"
 "<tr>"
@@ -4272,7 +4179,7 @@ msgid ""
 "<td>%1</td></tr>"
 msgstr ""
 
-#: kofficecore/koDetailsPane.cc:382
+#: kofficecore/KoDetailsPane.cpp:382
 msgid ""
 "_: File access date and time. %1 is date time\n"
 "<tr>"
@@ -4280,112 +4187,108 @@ msgid ""
 "<td>%1</td></tr>"
 msgstr ""
 
-#: kofficecore/koDocumentChild.cc:216 kofficecore/koDocumentChild.cc:255
+#: kofficecore/KoUnit.cpp:48
+msgid "Millimeters (mm)"
+msgstr "Milimetrau (mm)"
+
+#: kofficecore/KoUnit.cpp:50
+msgid "Centimeters (cm)"
+msgstr "Centimetrau (cm)"
+
+#: kofficecore/KoUnit.cpp:52
+msgid "Decimeters (dm)"
+msgstr "Decimetrau (dm)"
+
+#: kofficecore/KoUnit.cpp:54
+msgid "Inches (in)"
+msgstr "Modfeddi (in)"
+
+#: kofficecore/KoUnit.cpp:56
+msgid "Pica (pi)"
+msgstr "Pica (pi)"
+
+#: kofficecore/KoUnit.cpp:58
+msgid "Didot (dd)"
+msgstr "Didot (dd)"
+
+#: kofficecore/KoUnit.cpp:60
+msgid "Cicero (cc)"
+msgstr "Cicero (cc)"
+
+#: kofficecore/KoUnit.cpp:62
+msgid "Points (pt)"
+msgstr "Pwyntiau (pt)"
+
+#: kofficecore/KoUnit.cpp:64
+msgid "Error!"
+msgstr "Gwall!"
+
+#: kofficecore/KoApplication.cpp:41
+msgid "Only print and exit"
+msgstr "Argraffu a terfynu yn unig"
+
+#: kofficecore/KoApplication.cpp:42
+msgid "Open a new document with a template"
+msgstr "Defnyddio patrymlun i agor dogfen newydd"
+
+#: kofficecore/KoApplication.cpp:43
+msgid "Override display DPI"
+msgstr "Disodli DPI'r sgrîn"
+
+#: kofficecore/KoApplication.cpp:76
+msgid "KOffice"
+msgstr "KOffice"
+
+#: kofficecore/KoApplication.cpp:183
+msgid "No template found for: %1 "
+msgstr "Methu canfod patrymlun ar gyfer: %1"
+
+#: kofficecore/KoApplication.cpp:186
 #, c-format
-msgid "No handler found for %1"
-msgstr "Ni chafwyd trinydd ar gyfer %1"
+msgid "Too many templates found for: %1"
+msgstr "Gormod o batrymluniau wedi eu canfod ar gyfer: %1"
 
-#: kofficecore/koDocumentChild.cc:309
-#, c-format
-msgid ""
-"This document contains an external link to a remote document\n"
-"%1"
-msgstr ""
-"Cynhwysa'r ddogfen hon gyswllt allanol i ddogfen bell\n"
-" %1"
+#: kofficecore/KoApplication.cpp:206
+msgid "Template %1 failed to load."
+msgstr "Methwyd patrymlun %1 lwytho"
 
-#: kofficecore/koDocumentChild.cc:310
-msgid "Confirmation Required"
-msgstr "Mynnir Cadarnhad"
-
-#: kofficecore/koDocumentChild.cc:310
-msgid "Download"
-msgstr "Lawrlwytho"
-
-#: kofficecore/koDocumentChild.cc:310
-msgid "Skip"
-msgstr "Hepgor"
-
-#: kofficecore/koDocumentChild.cc:338
-#, fuzzy, c-format
-msgid ""
-"Could not load embedded object:\n"
-"%1"
-msgstr "Methu llwytho gwrthrych caeth."
-
-#: kofficecore/koDocumentChild.cc:340
-#, fuzzy
-msgid ""
-"Could not load external document %1:\n"
-"%2"
-msgstr "Methu llwytho gwrthrych caeth."
-
-#: kofficecore/koFilterManager.cc:52
-msgid "Choose Filter"
-msgstr "Dewis Hidlen"
-
-#: kofficecore/koFilterManager.cc:64
-msgid "Select a filter:"
-msgstr "Dewis hidlen:"
-
-#: kofficecore/koFilterManager.cc:294 kofficecore/koFilterManager.cc:303
-msgid "Could not export file."
-msgstr "Methu allforio'r ffeil."
-
-#: kofficecore/koFilterManager.cc:294 kofficecore/koFilterManager.cc:303
-msgid "Missing Export Filter"
-msgstr "Hidlen Allforio ar Goll"
-
-#: kofficecore/koFilterManager.cc:591
-#, c-format
-msgid ""
-"Could not import file of type\n"
-"%1"
-msgstr ""
-"Methu mewnforio ffeil o fath\n"
-" %1"
-
-#: kofficecore/koFilterManager.cc:593
-msgid "Missing Import Filter"
-msgstr "Hidlen Mewnforio ar Goll"
-
-#: kofficecore/koDocument.cc:391
+#: kofficecore/KoDocument.cpp:391
 msgid "Making backup..."
 msgstr "Yn gwneud copi wrth gefn..."
 
-#: kofficecore/koDocument.cc:405
+#: kofficecore/KoDocument.cpp:405
 msgid "Saving..."
 msgstr "Yn cadw..."
 
-#: kofficecore/koDocument.cc:537
+#: kofficecore/KoDocument.cpp:537
 msgid "Autosaving..."
 msgstr "Hunangadw..."
 
-#: kofficecore/koDocument.cc:549
+#: kofficecore/KoDocument.cpp:549
 msgid "Error during autosave! Partition full?"
 msgstr "Digwyddodd gwall yn ystod y hunangadw!  Rhaniad llawn?"
 
-#: kofficecore/koDocument.cc:982
+#: kofficecore/KoDocument.cpp:982
 #, fuzzy
 msgid "Could not create the file for saving"
 msgstr "Methwyd agor y ffeil i'w gadw"
 
-#: kofficecore/koDocument.cc:1020 kofficecore/koDocument.cc:1036
-#: kofficecore/koDocument.cc:1075
+#: kofficecore/KoDocument.cpp:1020 kofficecore/KoDocument.cpp:1036
+#: kofficecore/KoDocument.cpp:1075
 #, fuzzy
 msgid "Not able to write '%1'. Partition full?"
 msgstr "Methu ysgrifennu 'maindoc.xml'."
 
-#: kofficecore/koDocument.cc:1028 kofficecore/koDocument.cc:1044
+#: kofficecore/KoDocument.cpp:1028 kofficecore/KoDocument.cpp:1044
 #, fuzzy
 msgid "Error while trying to write '%1'. Partition full?"
 msgstr "Methu ysgrifennu 'maindoc.xml'."
 
-#: kofficecore/koDocument.cc:1057
+#: kofficecore/KoDocument.cpp:1057
 msgid "Error while saving embedded documents"
 msgstr "Digwyddodd gwall wrth gadw dogfennau caeth"
 
-#: kofficecore/koDocument.cc:1280
+#: kofficecore/KoDocument.cpp:1280
 msgid ""
 "An autosaved file for an unnamed document exists in %1.\n"
 "This file is dated %2\n"
@@ -4395,7 +4298,7 @@ msgstr ""
 " Mae dyddiad %2ar y ffeil hwn.\n"
 "Ydych chi am ei agor?"
 
-#: kofficecore/koDocument.cc:1333
+#: kofficecore/KoDocument.cpp:1333
 #, c-format
 msgid ""
 "Malformed URL\n"
@@ -4404,7 +4307,7 @@ msgstr ""
 "URL wedi'i gamffurfio\n"
 " %1"
 
-#: kofficecore/koDocument.cc:1351
+#: kofficecore/KoDocument.cpp:1351
 msgid ""
 "An autosaved file exists for this document.\n"
 "Do you want to open it instead?"
@@ -4412,7 +4315,7 @@ msgstr ""
 "Mae ffeil wedi'i hunangadw yn bodoli ar gyfer y ddogfen hon.\n"
 " Ydych chi am ei agor yn ei lle?"
 
-#: kofficecore/koDocument.cc:1441 kofficecore/koDocument.cc:2337
+#: kofficecore/KoDocument.cpp:1441 kofficecore/KoDocument.cpp:2337
 #, c-format
 msgid ""
 "Could not open\n"
@@ -4421,60 +4324,60 @@ msgstr ""
 "Methwyd agor\n"
 " %1"
 
-#: kofficecore/koDocument.cc:1461
+#: kofficecore/KoDocument.cpp:1461
 #, fuzzy
 msgid "Creation error"
 msgstr "Gair Cwblhad"
 
-#: kofficecore/koDocument.cc:1464
+#: kofficecore/KoDocument.cpp:1464
 #, fuzzy
 msgid "File not found"
 msgstr "GWALL: Ni chanfuwyd y ffeil."
 
-#: kofficecore/koDocument.cc:1467
+#: kofficecore/KoDocument.cpp:1467
 msgid "Cannot create storage"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1470
+#: kofficecore/KoDocument.cpp:1470
 msgid "Bad MIME type"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1473
+#: kofficecore/KoDocument.cpp:1473
 #, fuzzy
 msgid "Error in embedded document"
 msgstr "Digwyddodd gwall wrth gadw dogfennau caeth"
 
-#: kofficecore/koDocument.cc:1476
+#: kofficecore/KoDocument.cpp:1476
 msgid "Format not recognized"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1479
+#: kofficecore/KoDocument.cpp:1479
 msgid "Not implemented"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1482
+#: kofficecore/KoDocument.cpp:1482
 msgid "Parsing error"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1485
+#: kofficecore/KoDocument.cpp:1485
 msgid "Document is password protected"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1492
+#: kofficecore/KoDocument.cpp:1492
 #, fuzzy
 msgid "Internal error"
 msgstr "Rhyngrwyd"
 
-#: kofficecore/koDocument.cc:1495
+#: kofficecore/KoDocument.cpp:1495
 msgid "Out of memory"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1502
+#: kofficecore/KoDocument.cpp:1502
 #, fuzzy
 msgid "Unknown error"
 msgstr "Anhysbys"
 
-#: kofficecore/koDocument.cc:1507
+#: kofficecore/KoDocument.cpp:1507
 #, fuzzy
 msgid ""
 "Could not open\n"
@@ -4484,12 +4387,7 @@ msgstr ""
 "Methwyd agor %1\n"
 " Rheswm: %2"
 
-#: kofficecore/koDocument.cc:1616 kofficecore/koOasisStore.cpp:148
-#, c-format
-msgid "Could not find %1"
-msgstr "Methodd ganfod %1"
-
-#: kofficecore/koDocument.cc:1628
+#: kofficecore/KoDocument.cpp:1628
 #, fuzzy
 msgid ""
 "Parsing error in %1 at line %2, column %3\n"
@@ -4498,21 +4396,21 @@ msgstr ""
 "Gwall dosrannu yn y prif ddogfen wrth linell %1, colofn %2\n"
 "  Neges wall: %3"
 
-#: kofficecore/koDocument.cc:1648
+#: kofficecore/KoDocument.cpp:1648
 msgid "%1 is not a file."
 msgstr "Nid ffeil yw %1."
 
-#: kofficecore/koDocument.cc:1664
+#: kofficecore/KoDocument.cpp:1664
 #, fuzzy
 msgid "Could not open the file for reading (check read permissions)."
 msgstr "Methodd agor y ffeil i'w ddarllen (gwiriwch y caniatadau darllen)."
 
-#: kofficecore/koDocument.cc:1674
+#: kofficecore/KoDocument.cpp:1674
 #, fuzzy
 msgid "Could not read the beginning of the file."
 msgstr "Methodd ddarllen dechrau'r ffeil."
 
-#: kofficecore/koDocument.cc:1701
+#: kofficecore/KoDocument.cpp:1701
 msgid ""
 "parsing error in the main document at line %1, column %2\n"
 "Error message: %3"
@@ -4520,20 +4418,28 @@ msgstr ""
 "gwall dosrannu yn y prif ddogfen wrth linell %1, colofn %2\n"
 "Neges wall: %3"
 
-#: kofficecore/koDocument.cc:1725
+#: kofficecore/KoDocument.cpp:1725
 #, fuzzy, c-format
 msgid "Not a valid KOffice file: %1"
 msgstr "Nid ffeil KOffice dilys yw hwn."
 
-#: kofficecore/koDocument.cc:1771
+#: kofficecore/KoDocument.cpp:1771
 msgid "Invalid document: no file 'maindoc.xml'."
 msgstr "Dogfen annilys: dim ffeil 'maindoc.xml'."
 
-#: kofficecore/koDocument.cc:2148
+#: kofficecore/KoDocument.cpp:1971 kofficecore/KoMainWindow.cpp:1029
+msgid ""
+"<p>The document <b>'%1'</b> has been modified.</p>"
+"<p>Do you want to save it?</p>"
+msgstr ""
+"<p>Mae'r ddogfen <b>'%1'</b> wedi ei haddasu.</p>"
+"<p>Ydych am ei chadw? </p>"
+
+#: kofficecore/KoDocument.cpp:2148
 msgid "Internal error: saveXML not implemented"
 msgstr "Gwall mewnol: saveXML heb ei weithredoli"
 
-#: kofficecore/koDocument.cc:2325
+#: kofficecore/KoDocument.cpp:2325
 #, c-format
 msgid ""
 "Could not save\n"
@@ -4542,7 +4448,7 @@ msgstr ""
 "Methodd gadw\n"
 " %1"
 
-#: kofficecore/koDocument.cc:2329
+#: kofficecore/KoDocument.cpp:2329
 msgid ""
 "Could not save %1\n"
 "Reason: %2"
@@ -4550,7 +4456,7 @@ msgstr ""
 "Methodd gadw %1\n"
 "Rheswm: %2"
 
-#: kofficecore/koDocument.cc:2341
+#: kofficecore/KoDocument.cpp:2341
 msgid ""
 "Could not open %1\n"
 "Reason: %2"
@@ -4558,220 +4464,314 @@ msgstr ""
 "Methwyd agor %1\n"
 " Rheswm: %2"
 
-#: kofficecore/koDocument.cc:2458
+#: kofficecore/KoDocument.cpp:2458
 msgid "a word processing"
 msgstr ""
 
-#: kofficecore/koDocument.cc:2459
+#: kofficecore/KoDocument.cpp:2459
 msgid "a spreadsheet"
 msgstr ""
 
-#: kofficecore/koDocument.cc:2460
+#: kofficecore/KoDocument.cpp:2460
 msgid "a presentation"
 msgstr ""
 
-#: kofficecore/koDocument.cc:2461
+#: kofficecore/KoDocument.cpp:2461
 msgid "a chart"
 msgstr ""
 
-#: kofficecore/koDocument.cc:2462
+#: kofficecore/KoDocument.cpp:2462
 #, fuzzy
 msgid "a drawing"
 msgstr "Oren Tywyll"
 
-#: kofficecore/koDocument.cc:2615
+#: kofficecore/KoDocument.cpp:2615
 #, fuzzy
 msgid "Embedding Object"
 msgstr "Methu llwytho gwrthrych caeth."
 
-#: kofficecore/koDocumentInfo.cc:722
-msgid "Unknown"
-msgstr "Anhysbys"
+#: kofficecore/KoMainWindow.cpp:223
+msgid "Versions..."
+msgstr ""
 
-#: kofficecore/koOpenPane.cc:114
+#: kofficecore/KoMainWindow.cpp:227
+msgid "I&mport..."
+msgstr "&Mewnforio..."
+
+#: kofficecore/KoMainWindow.cpp:230
+msgid "E&xport..."
+msgstr "&Allforio..."
+
+#: kofficecore/KoMainWindow.cpp:236
+msgid "&Document Information"
+msgstr "&Gwybodaeth Ddogfen"
+
+#: kofficecore/KoMainWindow.cpp:261
+msgid "&Close All Views"
+msgstr "&Cau Pob Golwg"
+
+#: kofficecore/KoMainWindow.cpp:266
+msgid "&Split View"
+msgstr "Golwg wedi'i &Hollti"
+
+#: kofficecore/KoMainWindow.cpp:269
+msgid "&Remove View"
+msgstr "G&waredu Golwg"
+
+#: kofficecore/KoMainWindow.cpp:274
+msgid "Splitter &Orientation"
+msgstr "Cyfeiriadaeth H&olltydd"
+
+#: kofficecore/KoMainWindow.cpp:278
+msgid "&Vertical"
+msgstr "&Fertigol"
+
+#: kofficecore/KoMainWindow.cpp:279
+msgid "&Horizontal"
+msgstr "&Llorweddol"
+
+#: kofficecore/KoMainWindow.cpp:513
+#, c-format
+msgid "Save as %1"
+msgstr ""
+
+#: kofficecore/KoMainWindow.cpp:674
+msgid "%1 (unknown file type)"
+msgstr "%1 (math anhybys o ffeil)"
+
+#: kofficecore/KoMainWindow.cpp:684
+msgid ""
+"<qt>Saving as a %1 may result in some loss of formatting."
+"<p>Do you still want to save in this format?</qt>"
+msgstr ""
+"<qt>Gall gadw fel %1 achosi colled fformatio."
+"<p>Ydych am gadw yn y fformat hwn serch hynny?</qt>"
+
+#: kofficecore/KoMainWindow.cpp:687
+msgid "Confirm Save"
+msgstr "Cadarnhau Cadw"
+
+#: kofficecore/KoMainWindow.cpp:698
+msgid ""
+"<qt>Exporting as a %1 may result in some loss of formatting."
+"<p>Do you still want to export to this format?</qt>"
+msgstr ""
+"<qt>Gall allforio fel %1 achosi colled fformatio."
+"<p>Ydych am allforio i'r fformat hwn serch hynny?</qt>"
+
+#: kofficecore/KoMainWindow.cpp:701
+msgid "Confirm Export"
+msgstr "Cadarnhau Allforio"
+
+#: kofficecore/KoMainWindow.cpp:790
+msgid "Save Document As"
+msgstr "Cadw'r Ddogfen Fel"
+
+#: kofficecore/KoMainWindow.cpp:792
+msgid "Export Document As"
+msgstr "Allforio'r Ddogfen Fel"
+
+#: kofficecore/KoMainWindow.cpp:839
+msgid ""
+"A document with this name already exists.\n"
+"Do you want to overwrite it?"
+msgstr ""
+"Mae dogfen efo'r enw hwn yn bodoli eisoes.\n"
+"Ydych eisiau ei throsysgrifo?"
+
+#: kofficecore/KoMainWindow.cpp:1102
+msgid "Import Document"
+msgstr "Mewnforio Dogfen"
+
+#: kofficecore/KoMainWindow.cpp:1514
+msgid "Show %1 Toolbar"
+msgstr "Dangos Bar Offer %1"
+
+#: kofficecore/KoMainWindow.cpp:1516
+msgid "Hide %1 Toolbar"
+msgstr "Cuddio Bar Offer %1"
+
+#: kofficecore/KoMainWindow.cpp:1593
+msgid "Document"
+msgstr "Dogfen"
+
+#: kofficecore/KoMainWindow.cpp:1603
+#, fuzzy, c-format
+msgid "Document - %1"
+msgstr "Teitl Dogfen"
+
+#: kofficecore/KoMainWindow.cpp:1632
+msgid ""
+"You will lose all your changes!\n"
+"Do you want to continue?"
+msgstr ""
+"Byddwch yn colli eich newidiadau i gyd!\n"
+"Ydych eisiau parhau?"
+
+#: kofficecore/KoOpenPane.cpp:114
 #, fuzzy
 msgid "Open Existing Document..."
 msgstr "Agor Dogfen Gyfredol"
 
-#: kofficecore/koOpenPane.cc:172
+#: kofficecore/KoOpenPane.cpp:172
 msgid "Recent Documents"
 msgstr "Dogfennau a Ddefnyddwyd yn Ddiweddar"
 
-#: kofficecore/koOpenPane.cc:245
+#: kofficecore/KoOpenPane.cpp:245
 #, fuzzy
 msgid "Custom Document"
 msgstr "Creu Dogfen"
 
-#: kofficecore/koApplication.cc:41
-msgid "Only print and exit"
-msgstr "Argraffu a terfynu yn unig"
+#: kofficecore/KoFileDialog.cpp:93
+msgid "%1 (Uncompressed XML Files)"
+msgstr "%1 (Ffeiliau XML Heb eu Cywasgu)"
 
-#: kofficecore/koApplication.cc:42
-msgid "Open a new document with a template"
-msgstr "Defnyddio patrymlun i agor dogfen newydd"
+#: kofficecore/KoFileDialog.cpp:95
+#, fuzzy
+msgid "%1 (Flat XML File)"
+msgstr "%1 (Ffeiliau XML Heb eu Cywasgu)"
 
-#: kofficecore/koApplication.cc:43
-msgid "Override display DPI"
-msgstr "Disodli DPI'r sgrîn"
+#: kofficecore/KoFileDialog.cpp:112
+msgid "%1 (%2 Compatible)"
+msgstr "%1 (Cydnaws â %2)"
 
-#: kofficecore/koApplication.cc:76
-msgid "KOffice"
-msgstr "KOffice"
-
-#: kofficecore/koApplication.cc:183
-msgid "No template found for: %1 "
-msgstr "Methu canfod patrymlun ar gyfer: %1"
-
-#: kofficecore/koApplication.cc:186
-#, c-format
-msgid "Too many templates found for: %1"
-msgstr "Gormod o batrymluniau wedi eu canfod ar gyfer: %1"
-
-#: kofficecore/koApplication.cc:206
-msgid "Template %1 failed to load."
-msgstr "Methwyd patrymlun %1 lwytho"
-
-#: kofficecore/koPageLayout.cpp:116
+#: kofficecore/KoPageLayout.cpp:116
 msgid "ISO A3"
 msgstr "ISO A3"
 
-#: kofficecore/koPageLayout.cpp:117
+#: kofficecore/KoPageLayout.cpp:117
 msgid "ISO A4"
 msgstr "ISO A4"
 
-#: kofficecore/koPageLayout.cpp:118
+#: kofficecore/KoPageLayout.cpp:118
 msgid "ISO A5"
 msgstr "ISO A5"
 
-#: kofficecore/koPageLayout.cpp:119
+#: kofficecore/KoPageLayout.cpp:119
 msgid "US Letter"
 msgstr "Llythyr UDA"
 
-#: kofficecore/koPageLayout.cpp:120
+#: kofficecore/KoPageLayout.cpp:120
 msgid "US Legal"
 msgstr "Cyfreithiol UDA"
 
-#: kofficecore/koPageLayout.cpp:121
+#: kofficecore/KoPageLayout.cpp:121
 msgid "Screen"
 msgstr "Sgrîn"
 
-#: kofficecore/koPageLayout.cpp:122
+#: kofficecore/KoPageLayout.cpp:122
 msgid ""
 "_: Custom size\n"
 "Custom"
 msgstr ""
 
-#: kofficecore/koPageLayout.cpp:123
+#: kofficecore/KoPageLayout.cpp:123
 msgid "ISO B5"
 msgstr "ISO B5"
 
-#: kofficecore/koPageLayout.cpp:125
+#: kofficecore/KoPageLayout.cpp:125
 msgid "US Executive"
 msgstr "Gweithredwr UDA"
 
-#: kofficecore/koPageLayout.cpp:126
+#: kofficecore/KoPageLayout.cpp:126
 msgid "ISO A0"
 msgstr "ISO A0"
 
-#: kofficecore/koPageLayout.cpp:127
+#: kofficecore/KoPageLayout.cpp:127
 msgid "ISO A1"
 msgstr "ISO A1"
 
-#: kofficecore/koPageLayout.cpp:128
+#: kofficecore/KoPageLayout.cpp:128
 msgid "ISO A2"
 msgstr "ISO A2"
 
-#: kofficecore/koPageLayout.cpp:129
+#: kofficecore/KoPageLayout.cpp:129
 msgid "ISO A6"
 msgstr "ISO A6"
 
-#: kofficecore/koPageLayout.cpp:130
+#: kofficecore/KoPageLayout.cpp:130
 msgid "ISO A7"
 msgstr "ISO A7"
 
-#: kofficecore/koPageLayout.cpp:131
+#: kofficecore/KoPageLayout.cpp:131
 msgid "ISO A8"
 msgstr "ISO A8"
 
-#: kofficecore/koPageLayout.cpp:132
+#: kofficecore/KoPageLayout.cpp:132
 msgid "ISO A9"
 msgstr "ISO A9"
 
-#: kofficecore/koPageLayout.cpp:133
+#: kofficecore/KoPageLayout.cpp:133
 msgid "ISO B0"
 msgstr "ISO B0"
 
-#: kofficecore/koPageLayout.cpp:134
+#: kofficecore/KoPageLayout.cpp:134
 msgid "ISO B1"
 msgstr "ISO B1"
 
-#: kofficecore/koPageLayout.cpp:135
+#: kofficecore/KoPageLayout.cpp:135
 msgid "ISO B10"
 msgstr "ISO B10"
 
-#: kofficecore/koPageLayout.cpp:136
+#: kofficecore/KoPageLayout.cpp:136
 msgid "ISO B2"
 msgstr "ISO B2"
 
-#: kofficecore/koPageLayout.cpp:137
+#: kofficecore/KoPageLayout.cpp:137
 msgid "ISO B3"
 msgstr "ISO B3"
 
-#: kofficecore/koPageLayout.cpp:138
+#: kofficecore/KoPageLayout.cpp:138
 msgid "ISO B4"
 msgstr "ISO B4"
 
-#: kofficecore/koPageLayout.cpp:139
+#: kofficecore/KoPageLayout.cpp:139
 msgid "ISO B6"
 msgstr "ISO B6"
 
-#: kofficecore/koPageLayout.cpp:140
+#: kofficecore/KoPageLayout.cpp:140
 msgid "ISO C5"
 msgstr "ISO C5"
 
-#: kofficecore/koPageLayout.cpp:141
+#: kofficecore/KoPageLayout.cpp:141
 msgid "US Common 10"
 msgstr "10 Cyffredinol UDA"
 
-#: kofficecore/koPageLayout.cpp:142
+#: kofficecore/KoPageLayout.cpp:142
 msgid "ISO DL"
 msgstr "ISO DL"
 
-#: kofficecore/koPageLayout.cpp:143
+#: kofficecore/KoPageLayout.cpp:143
 msgid "US Folio"
 msgstr "Ffolio UDA"
 
-#: kofficecore/koPageLayout.cpp:144
+#: kofficecore/KoPageLayout.cpp:144
 msgid "US Ledger"
 msgstr "Cyfriflyfr UDA"
 
-#: kofficecore/koPageLayout.cpp:145
+#: kofficecore/KoPageLayout.cpp:145
 msgid "US Tabloid"
 msgstr "Tabloid UDA"
 
-#: kofficecore/koOasisStore.cpp:170
-msgid ""
-"Parsing error in the main document at line %1, column %2\n"
-"Error message: %3"
-msgstr ""
-"Gwall dosrannu yn y prif ddogfen wrth linell %1, colofn %2\n"
-"Neges wall: %3"
-
-#: kofficecore/koversiondialog.cc:42
+#: kofficecore/Koversiondialog.cpp:42
 msgid "Version"
 msgstr "Fersiwn"
 
-#: kofficecore/koversiondialog.cc:50
+#: kofficecore/Koversiondialog.cpp:50
 msgid "Date & Time"
 msgstr "Dyddiad ac Amser"
 
-#: kofficecore/koversiondialog.cc:51
+#: kofficecore/Koversiondialog.cpp:51
 msgid "Saved By"
 msgstr ""
 
-#: kofficecore/koversiondialog.cc:65
+#: kofficecore/Koversiondialog.cpp:65
 msgid "&Open"
 msgstr "A&gor"
+
+#: kofficecore/KoDocumentInfo.cpp:722
+msgid "Unknown"
+msgstr "Anhysbys"
 
 #: kformula/kformulaconfigpage.cc:80
 msgid "Default font:"
