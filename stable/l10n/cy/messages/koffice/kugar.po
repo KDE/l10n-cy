@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kugar\n"
-"POT-Creation-Date: 2005-05-28 06:44+0200\n"
+"POT-Creation-Date: 2006-01-26 09:02+0100\n"
 "PO-Revision-Date: 2004-08-12 18:46+0100\n"
 "Last-Translator: KD at Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: KBabel 1.2\n"
 "\n"
 
-#: lib/kreportviewer.cpp:27 lib/kreportviewer.cpp:59
+#: lib/mreportviewer.cpp:155 lib/mreportviewer.cpp:293
 msgid ""
 "There are no pages in the\n"
 "report to print."
@@ -26,50 +26,49 @@ msgstr ""
 "Nid oes tudalennau yn yr\n"
 "adroddiad i'w hargraffu."
 
-#: lib/kreportviewer.cpp:89
+#: lib/mreportviewer.cpp:323
 msgid "Printing report..."
 msgstr "Yn argraffu adroddiad..."
 
-#: part/kugar_part.cpp:100
+#: part/kugar_part.cpp:92
 #, c-format
 msgid "Invalid data file %1"
 msgstr "Ffeil ddata annilys %1"
 
-#: part/kugar_part.cpp:105
+#: part/kugar_part.cpp:97
 msgid "The zero sized data file %1 can't be rendered"
 msgstr "Ni ellir llunio'r ffeil faint sero %1 "
 
-#: part/kugar_part.cpp:112 part/kugar_view.cpp:101 shell/report.cpp:86
+#: part/kugar_part.cpp:104 part/kugar_view.cpp:98
 #, c-format
 msgid "Unable to open data file: %1"
 msgstr "Methu agor y ffeil ddata: %1"
 
-#: part/kugar_part.cpp:176 part/kugar_part.cpp:193 part/kugar_part.cpp:202
-#: shell/report.cpp:110
+#: part/kugar_part.cpp:169 part/kugar_part.cpp:186 part/kugar_part.cpp:195
 #, c-format
 msgid "Unable to download template file: %1"
 msgstr "Methu lawrlwytho'r ffeil batrymlun: %1"
 
-#: part/kugar_part.cpp:225 shell/report.cpp:120
+#: part/kugar_part.cpp:218
 #, c-format
 msgid "Invalid template file: %1"
 msgstr "Ffeil Batrymlun Annilys: %1"
 
-#: part/kugar_part.cpp:239 part/kugar_part.cpp:245
+#: part/kugar_part.cpp:232 part/kugar_part.cpp:238
 msgid "%1 is not a valid Kugar Designer template file."
 msgstr "Nid ffeil batrymlun Dylunydd Kugar dilys ydi %1."
 
-#: part/kugar_part.cpp:254
+#: part/kugar_part.cpp:247
 #, c-format
 msgid "Couldn't read the beginning of the template file: %1"
 msgstr "Methwyd darllen dechrau'r ffeil batrymlun: %1"
 
-#: part/kugar_part.cpp:259 shell/report.cpp:125
+#: part/kugar_part.cpp:252
 #, c-format
 msgid "Unable to open template file: %1"
 msgstr "Methwyd agor ffeil batrymlun: %1"
 
-#: part/kugar_view.cpp:96 shell/report.cpp:81
+#: part/kugar_view.cpp:93
 #, c-format
 msgid "Invalid data file: %1"
 msgstr "Ffeil ddata annilys: %1"
@@ -78,482 +77,523 @@ msgstr "Ffeil ddata annilys: %1"
 msgid "File to open"
 msgstr "Ffeil i'w hagor"
 
-#: kudesigner/kudesigner_view.cpp:120 kudesigner_lib/canvreportheader.cpp:41
+#: kudesigner/kudesigner_view.cpp:143
+msgid "Grid size:"
+msgstr ""
+
+#: kudesigner/kudesigner_view.cpp:192 kudesigner_lib/reportheader.cpp:45
 msgid "Report Header"
 msgstr "Pennawd Adroddiad"
 
-#: kudesigner/kudesigner_view.cpp:122 kudesigner_lib/canvreportfooter.cpp:41
+#: kudesigner/kudesigner_view.cpp:194 kudesigner_lib/reportfooter.cpp:47
 msgid "Report Footer"
 msgstr "Troedyn Adroddiad"
 
-#: kudesigner/kudesigner_view.cpp:124 kudesigner_lib/canvpageheader.cpp:41
+#: kudesigner/kudesigner_view.cpp:196 kudesigner_lib/pageheader.cpp:46
 msgid "Page Header"
 msgstr "Pennawd Tudalen"
 
-#: kudesigner/kudesigner_view.cpp:126 kudesigner_lib/canvpagefooter.cpp:41
+#: kudesigner/kudesigner_view.cpp:198 kudesigner_lib/pagefooter.cpp:45
 msgid "Page Footer"
 msgstr "Troedyn Tudalen"
 
-#: kudesigner/kudesigner_view.cpp:128
+#: kudesigner/kudesigner_view.cpp:200 kudesigner_lib/detailheader.cpp:39
 msgid "Detail Header"
 msgstr "Penawd Manylder"
 
-#: kudesigner/kudesigner_view.cpp:130 kudesigner_lib/canvdetail.cpp:42
+#: kudesigner/kudesigner_view.cpp:202 kudesigner_lib/detail.cpp:42
+#: kudesigner_lib/detailbase.cpp:29
 msgid "Detail"
 msgstr "Manylder"
 
-#: kudesigner/kudesigner_view.cpp:132
+#: kudesigner/kudesigner_view.cpp:204 kudesigner_lib/detailfooter.cpp:39
 msgid "Detail Footer"
 msgstr "Troedyn Manylder "
 
-#: kudesigner/kudesigner_view.cpp:135
+#: kudesigner/kudesigner_view.cpp:207
 msgid "Clear Selection"
 msgstr "Gwagu'r Detholiad"
 
-#: kudesigner/kudesigner_view.cpp:139
+#: kudesigner/kudesigner_view.cpp:211 kudesigner_lib/commdefs.cpp:34
 msgid "Label"
 msgstr "Label"
 
-#: kudesigner/kudesigner_view.cpp:142
+#: kudesigner/kudesigner_view.cpp:214 kudesigner_lib/commdefs.cpp:36
+#: kudesigner_lib/field.cpp:36
 msgid "Field"
 msgstr "Maes"
 
-#: kudesigner/kudesigner_view.cpp:145
+#: kudesigner/kudesigner_view.cpp:217 kudesigner_lib/specialfield.cpp:33
 msgid "Special Field"
 msgstr "Maes Arbennig"
 
-#: kudesigner/kudesigner_view.cpp:148
+#: kudesigner/kudesigner_view.cpp:220 kudesigner_lib/commdefs.cpp:40
 msgid "Calculated Field"
 msgstr "Maes wedi'i Gyfrifo"
 
-#: kudesigner/kudesigner_view.cpp:151
+#: kudesigner/kudesigner_view.cpp:223 kudesigner_lib/commdefs.cpp:42
+#: kudesigner_lib/label.cpp:62 kudesigner_lib/line.cpp:35
 msgid "Line"
 msgstr "Llinell"
 
-#: kudesigner/kudesigner_view.cpp:209
-msgid "Add Detail Header"
-msgstr "Ychwanegu Penawd Manylder "
+#: kudesigner/kudesigner_view.cpp:227
+#, fuzzy
+msgid "Grid Label"
+msgstr "Label"
 
-#: kudesigner/kudesigner_view.cpp:209 kudesigner/kudesigner_view.cpp:220
-#: kudesigner/kudesigner_view.cpp:232
-msgid "Enter detail level:"
-msgstr "Rhowch y lefel manylder:"
+#: kudesigner/kudesigner_view.cpp:230
+msgid "Grid Size"
+msgstr ""
 
-#: kudesigner/kudesigner_view.cpp:220
-msgid "Add Detail"
-msgstr "Ychwanegu Manylder"
-
-#: kudesigner/kudesigner_view.cpp:232
-msgid "Add Detail Footer"
-msgstr "Ychwanegu Troedyn Manylder"
-
-#: kudesigner_lib/canvdefs.cpp:32
-msgid "Insert Label"
-msgstr "Mewnosod Label"
-
-#: kudesigner_lib/canvdefs.cpp:34
-msgid ""
-"_: candefs\n"
-"Insert Label"
-msgstr "Mewnosod Label"
-
-#: kudesigner_lib/canvdefs.cpp:38
-msgid "Insert Field"
-msgstr "Mewnosod Maes"
-
-#: kudesigner_lib/canvdefs.cpp:40
-msgid ""
-"_: candefs\n"
-"Insert Field"
-msgstr "Mewnosod Faes"
-
-#: kudesigner_lib/canvdefs.cpp:44
-msgid "Insert Special"
-msgstr "Mewnosodwch Arbenigyn"
-
-#: kudesigner_lib/canvdefs.cpp:46
-msgid ""
-"_: candefs\n"
-"Insert Special"
-msgstr "Mewnosod Arbenigyn"
-
-#: kudesigner_lib/canvdefs.cpp:50
-msgid "Insert Calculated Field"
-msgstr "Mewnosod Maes wedi'i Gyfrifo"
-
-#: kudesigner_lib/canvdefs.cpp:52
-msgid ""
-"_: candefs\n"
-"Insert Calculated Field"
-msgstr "Mewnosod Faes wedi'i Gyfrifo"
-
-#: kudesigner_lib/canvdefs.cpp:56
-msgid "Insert Line"
-msgstr "Mewnosod Llinell"
-
-#: kudesigner_lib/canvdefs.cpp:58
-msgid ""
-"_: candefs\n"
-"Insert Line"
-msgstr "Mewnosod Llinell"
-
-#: kudesigner_lib/canvdefs.cpp:63 kudesigner_lib/kudesigner_command.cpp:237
-msgid "Insert Report Item"
-msgstr "Mewnosod Eitem Adroddiad"
-
-#: kudesigner_lib/canvdefs.cpp:65
-msgid ""
-"_: candefs\n"
-"Insert Report Item"
-msgstr "Mewnosod Eitem Adroddiad"
-
-#: kudesigner_lib/canvdetail.cpp:35
-msgid "Detail height"
-msgstr "Uchder y manylder"
-
-#: kudesigner_lib/canvdetail.cpp:36
-msgid "Detail level"
-msgstr "Lefel y manylder"
-
-#: kudesigner_lib/canvdetailfooter.cpp:35
-msgid "Detail footer's height"
-msgstr "Uchder y troedyn manylder "
-
-#: kudesigner_lib/canvdetailfooter.cpp:36
-msgid "Detail footer's level"
-msgstr "Lefel y troedyn manylder"
-
-#: kudesigner_lib/canvdetailfooter.cpp:41
-msgid "Detail footer"
-msgstr "Troedyn manylder"
-
-#: kudesigner_lib/canvdetailheader.cpp:35
-msgid "Detail header's height"
-msgstr "Uchder y pennawd manylder"
-
-#: kudesigner_lib/canvdetailheader.cpp:37
-msgid "Detail header's level"
-msgstr "Lefel y pennawd manylder"
-
-#: kudesigner_lib/canvdetailheader.cpp:42
-msgid "Detail header"
-msgstr "Pennawd manylder"
-
-#: kudesigner_lib/canvkutemplate.cpp:89
-msgid "Page size"
-msgstr "Maint Tudalen"
-
-#: kudesigner_lib/canvkutemplate.cpp:95
-msgid "Page orientation"
-msgstr "Cyfeiriadaeth Tudalen"
-
-#: kudesigner_lib/canvkutemplate.cpp:98
-msgid "Top margin"
-msgstr "Ymyl Ben"
-
-#: kudesigner_lib/canvkutemplate.cpp:100
-msgid "Bottom margin"
-msgstr "Ymyl Waelod"
-
-#: kudesigner_lib/canvkutemplate.cpp:102
-msgid "Left margin"
-msgstr "Ymyl Chwith"
-
-#: kudesigner_lib/canvkutemplate.cpp:104
-msgid "Right margin"
-msgstr "Ymyl Dde"
-
-#: kudesigner_lib/canvpagefooter.cpp:35
-msgid "Page footer's height"
-msgstr "Uchder y troedyn tudalen"
-
-#: kudesigner_lib/canvpageheader.cpp:35
-msgid "Page header's height"
-msgstr "Uchder y pennawd tudalen"
-
-#: kudesigner_lib/canvreportfooter.cpp:35
-msgid "Report footer's height"
-msgstr "Uchder y troedyn adroddiad"
-
-#: kudesigner_lib/canvreportheader.cpp:35
-msgid "Report header's height"
-msgstr "Uchder y pennawd adroddiad"
-
-#: kudesigner_lib/ccalcfield.cpp:36
-msgid "Calculation type"
+#: kudesigner_lib/calcfield.cpp:35
+#, fuzzy
+msgid "Calculation"
 msgstr "Math cyfrifo"
 
-#: kudesigner_lib/cfield.cpp:34
-msgid "Field to display"
-msgstr "Maes i'w ddangos"
+#: kudesigner_lib/calcfield.cpp:36
+msgid "Count"
+msgstr ""
 
-#: kudesigner_lib/cfield.cpp:34
+#: kudesigner_lib/calcfield.cpp:37
+msgid "Sum"
+msgstr ""
+
+#: kudesigner_lib/calcfield.cpp:38
+msgid "Average"
+msgstr ""
+
+#: kudesigner_lib/calcfield.cpp:39
+msgid "Variance"
+msgstr ""
+
+#: kudesigner_lib/calcfield.cpp:40
+msgid "StandardDeviation"
+msgstr ""
+
+#: kudesigner_lib/calcfield.cpp:41 kudesigner_lib/field.cpp:45
+#: kudesigner_lib/specialfield.cpp:37
+msgid "Type"
+msgstr ""
+
+#: kudesigner_lib/calcfield.cpp:41
+#, fuzzy
+msgid "Calculation Type"
+msgstr "Math cyfrifo"
+
+#: kudesigner_lib/commdefs.cpp:38
+#, fuzzy
+msgid "Special"
+msgstr "Maes Arbennig"
+
+#: kudesigner_lib/commdefs.cpp:45
+#, fuzzy
+msgid "Report Item"
+msgstr "Mewnosod Eitem Adroddiad"
+
+#: kudesigner_lib/detail.cpp:34 kudesigner_lib/detailfooter.cpp:34
+#: kudesigner_lib/detailheader.cpp:34
+#, fuzzy
+msgid "Level"
+msgstr "Label"
+
+#: kudesigner_lib/detail.cpp:34 kudesigner_lib/detailfooter.cpp:34
+#: kudesigner_lib/detailheader.cpp:34
+#, fuzzy
+msgid "Detail Level"
+msgstr "Lefel y manylder"
+
+#: kudesigner_lib/detail.cpp:35
+msgid "Repeat"
+msgstr ""
+
+#: kudesigner_lib/detail.cpp:35
+msgid "Repeat After Page Break"
+msgstr ""
+
+#: kudesigner_lib/field.cpp:38
+msgid "Name"
+msgstr ""
+
+#: kudesigner_lib/field.cpp:38
 msgid "Field Name"
 msgstr "Enw Maes"
 
-#: kudesigner_lib/cfield.cpp:41
-msgid "Data type"
-msgstr "Math data"
+#: kudesigner_lib/field.cpp:40
+msgid "String"
+msgstr ""
 
-#: kudesigner_lib/cfield.cpp:57 kudesigner_lib/cspecialfield.cpp:49
-msgid "Date format"
-msgstr "Fformat dyddiad"
+#: kudesigner_lib/field.cpp:41
+msgid "Integer"
+msgstr ""
 
-#: kudesigner_lib/cfield.cpp:60
-msgid "Number of digits after comma"
-msgstr "Nifer o ddigidau ar ôl atalnod"
+#: kudesigner_lib/field.cpp:42
+msgid "Float"
+msgstr ""
 
-#: kudesigner_lib/cfield.cpp:63
-msgid "Currency symbol"
-msgstr "Symbol arian"
-
-#: kudesigner_lib/cfield.cpp:65
-msgid "Negative value color"
-msgstr "Lliw gwerth negatif"
-
-#: kudesigner_lib/cfield.cpp:67
-msgid "Comma separator"
-msgstr "Gwahannydd atalnod"
-
-#: kudesigner_lib/cfield.cpp:89 kudesigner_lib/cfield.cpp:92
-msgid "Change Field"
-msgstr "Newid Maes"
-
-#: kudesigner_lib/clabel.cpp:36
-msgid "Text to display"
-msgstr "Testun i'w ddangos"
-
-#: kudesigner_lib/clabel.cpp:36
-msgid "Text"
-msgstr "Testun"
-
-#: kudesigner_lib/clabel.cpp:38
-msgid "X coordinate corresponding to section"
-msgstr "Cyfesuryn X sy'n cyfateb i'r adran"
-
-#: kudesigner_lib/clabel.cpp:40
-msgid "Y coordinate corresponding to section"
-msgstr "Cyfesuryn Y sy'n cyfateb i'r adran"
-
-#: kudesigner_lib/clabel.cpp:46
-msgid "Background color"
-msgstr "Lliw cefndir"
-
-#: kudesigner_lib/clabel.cpp:48
-msgid "Text color"
-msgstr "Lliw testun"
-
-#: kudesigner_lib/clabel.cpp:50
-msgid "Border color"
-msgstr "Lliw ffîn "
-
-#: kudesigner_lib/clabel.cpp:52
-msgid "Border width"
-msgstr "Lled ffin"
-
-#: kudesigner_lib/clabel.cpp:54
-msgid "Border style"
-msgstr "Arddull ffin"
-
-#: kudesigner_lib/clabel.cpp:56
-msgid "Font family"
-msgstr "Teulu wynebfathau"
-
-#: kudesigner_lib/clabel.cpp:58
-msgid "Font size"
-msgstr "Maint yr wynebfath"
-
-#: kudesigner_lib/clabel.cpp:65
-msgid "Font weight"
-msgstr "Pwys yr wynebfath"
-
-#: kudesigner_lib/clabel.cpp:70
-msgid "Italic font"
-msgstr "Wynebfath italig"
-
-#: kudesigner_lib/clabel.cpp:76
-msgid "Text horizontal alignment"
-msgstr "Cyfuniad llorweddol testun"
-
-#: kudesigner_lib/clabel.cpp:83
-msgid "Text vertical alignment"
-msgstr "Cyfuniad fertigol testun"
-
-#: kudesigner_lib/clabel.cpp:88
-msgid "Word wrap"
-msgstr "Amlapio testun"
-
-#: kudesigner_lib/clabel.cpp:212 kudesigner_lib/clabel.cpp:215
-msgid "Change Label"
-msgstr "Newid Label"
-
-#: kudesigner_lib/cline.cpp:31
-msgid "X1 coordinate corresponding to section"
-msgstr "Cyfesuryn X1 sy'n cyfateb i'r adran"
-
-#: kudesigner_lib/cline.cpp:33
-msgid "Y1 coordinate corresponding to section"
-msgstr "Cyfesuryn Y1 sy'n cyfateb i'r adran"
-
-#: kudesigner_lib/cline.cpp:35
-msgid "X2 coordinate corresponding to section"
-msgstr "Cyfesuryn X2 sy'n cyfateb i'r adran"
-
-#: kudesigner_lib/cline.cpp:37
-msgid "Y2 coordinate corresponding to section"
-msgstr "Cyfesuryn Y2 sy'n cyfateb i'r adran"
-
-#: kudesigner_lib/cline.cpp:39
-msgid "Color"
-msgstr "Lliw"
-
-#: kudesigner_lib/cline.cpp:43
-msgid "Line style"
-msgstr "Arddull llinell"
-
-#: kudesigner_lib/cspecialfield.cpp:33
-msgid "Field type to display"
-msgstr "Math o faes i ddangos"
-
-#: kudesigner_lib/cspecialfield.cpp:55
-msgid "PageNo"
-msgstr "RhifTud"
-
-#: kudesigner_lib/cspecialfield.cpp:55
+#: kudesigner_lib/field.cpp:43 kudesigner_lib/specialfield.cpp:35
+#: kudesigner_lib/specialfield.cpp:59
 msgid "Date"
 msgstr "Dyddiad"
 
-#: kudesigner_lib/kudesigner_command.cpp:55
-msgid "Insert Detail Footer Section"
-msgstr "Mewnosod Adran y Troedyn Manylder"
+#: kudesigner_lib/field.cpp:44 kudesigner_lib/field.cpp:68
+#, fuzzy
+msgid "Currency"
+msgstr "Symbol arian"
 
-#: kudesigner_lib/kudesigner_command.cpp:82
-msgid "Insert Detail Section"
-msgstr "Mewnosod Adran Manylder"
+#: kudesigner_lib/field.cpp:45
+#, fuzzy
+msgid "Data Type"
+msgstr "Math data"
 
-#: kudesigner_lib/kudesigner_command.cpp:110
-msgid "Insert Detail Header Section"
-msgstr "Mewnosod Adran Pennawd Manylder"
+#: kudesigner_lib/field.cpp:48 kudesigner_lib/specialfield.cpp:40
+msgid "m/d/y"
+msgstr ""
 
-#: kudesigner_lib/kudesigner_command.cpp:137
-msgid "Insert Page Footer Section"
-msgstr "Mewnosod Adran Troedyn Tudalen"
+#: kudesigner_lib/field.cpp:49 kudesigner_lib/specialfield.cpp:41
+msgid "m-d-y"
+msgstr ""
 
-#: kudesigner_lib/kudesigner_command.cpp:162
-msgid "Insert Page Header Section"
-msgstr "Mewnosod Adran Pennawd Tudalen"
+#: kudesigner_lib/field.cpp:50 kudesigner_lib/specialfield.cpp:42
+msgid "mm/dd/y"
+msgstr ""
 
-#: kudesigner_lib/kudesigner_command.cpp:187
-msgid "Insert Report Footer Section"
-msgstr "Mewnosod Adran Troedyn Adroddiad"
+#: kudesigner_lib/field.cpp:51 kudesigner_lib/specialfield.cpp:43
+msgid "mm-dd-y"
+msgstr ""
 
-#: kudesigner_lib/kudesigner_command.cpp:212
-msgid "Insert Report Header Section"
-msgstr "Mewnosod Adran Troedyn Adroddiad"
+#: kudesigner_lib/field.cpp:52 kudesigner_lib/specialfield.cpp:44
+msgid "m/d/yyyy"
+msgstr ""
 
-#: kudesigner_lib/kudesigner_command.cpp:290
-msgid "Delete Report Item(s)"
-msgstr "Dileu Eitem(au) Adroddiad"
+#: kudesigner_lib/field.cpp:53 kudesigner_lib/specialfield.cpp:45
+msgid "m-d-yyyy"
+msgstr ""
 
-#: kudesigner_lib/mycolorcombo.cpp:150 kudesigner_lib/mycolorcombo.cpp:203
-msgid "Custom..."
-msgstr "Addasiedig..."
+#: kudesigner_lib/field.cpp:54 kudesigner_lib/specialfield.cpp:46
+msgid "mm/dd/yyyy"
+msgstr ""
 
-#: kudesigner_lib/mycommand.cpp:158 kudesigner_lib/mycommand.cpp:173
-#: kudesigner_lib/mycommand.cpp:204 kudesigner_lib/mycommand.cpp:244
-#, c-format
-msgid "&Undo: %1"
-msgstr "&Dadwneud: %1"
+#: kudesigner_lib/field.cpp:55 kudesigner_lib/specialfield.cpp:47
+msgid "mm-dd-yyyy"
+msgstr ""
 
-#: kudesigner_lib/mycommand.cpp:197 kudesigner_lib/mycommand.cpp:250
-#, c-format
-msgid "&Redo: %1"
-msgstr "&Ailwneud: %1"
+#: kudesigner_lib/field.cpp:56 kudesigner_lib/specialfield.cpp:48
+msgid "yyyy/m/d"
+msgstr ""
 
-#: kudesigner_lib/mycommand.cpp:325
-#, c-format
-msgid "Undo: %1"
-msgstr "Dadwneud: %1"
+#: kudesigner_lib/field.cpp:57 kudesigner_lib/specialfield.cpp:49
+msgid "yyyy-m-d"
+msgstr ""
 
-#: kudesigner_lib/mycommand.cpp:344 kudesigner_lib/mycommand.cpp:349
-#, c-format
-msgid "Redo: %1"
-msgstr "Ailwneud: %1"
+#: kudesigner_lib/field.cpp:58 kudesigner_lib/specialfield.cpp:50
+msgid "dd.mm.yy"
+msgstr ""
 
-#: kudesigner_lib/propertyeditor.cpp:41
-msgid "Property"
-msgstr "Priodwedd"
+#: kudesigner_lib/field.cpp:59 kudesigner_lib/specialfield.cpp:51
+msgid "dd.mm.yyyy"
+msgstr ""
 
-#: kudesigner_lib/propertyeditor.cpp:42
-msgid "Value"
+#: kudesigner_lib/field.cpp:62 kudesigner_lib/specialfield.cpp:53
+#, fuzzy
+msgid "Date Format"
+msgstr "Fformat dyddiad"
+
+#: kudesigner_lib/field.cpp:65
+msgid "Precision"
+msgstr ""
+
+#: kudesigner_lib/field.cpp:65
+#, fuzzy
+msgid "Number of Digits After Comma"
+msgstr "Nifer o ddigidau ar ôl atalnod"
+
+#: kudesigner_lib/field.cpp:68
+#, fuzzy
+msgid "Currency Symbol"
+msgstr "Symbol arian"
+
+#: kudesigner_lib/field.cpp:70
+#, fuzzy
+msgid "Negative Value Color"
+msgstr "Lliw gwerth negatif"
+
+#: kudesigner_lib/field.cpp:72
+#, fuzzy
+msgid "Comma Separator"
+msgstr "Gwahannydd atalnod"
+
+#: kudesigner_lib/field.cpp:74
+msgid "InputMask"
+msgstr ""
+
+#: kudesigner_lib/field.cpp:96
+msgid "Change Field"
+msgstr "Newid Maes"
+
+#: kudesigner_lib/kugartemplate.cpp:61
+msgid "Document Settings"
+msgstr ""
+
+#: kudesigner_lib/kugartemplate.cpp:95
+#, fuzzy
+msgid "Page Size"
+msgstr "Maint Tudalen"
+
+#: kudesigner_lib/kugartemplate.cpp:100
+#, fuzzy
+msgid "Page Orientation"
+msgstr "Cyfeiriadaeth Tudalen"
+
+#: kudesigner_lib/kugartemplate.cpp:103
+#, fuzzy
+msgid "Top Margin"
+msgstr "Ymyl Ben"
+
+#: kudesigner_lib/kugartemplate.cpp:104
+#, fuzzy
+msgid "Bottom Margin"
+msgstr "Ymyl Waelod"
+
+#: kudesigner_lib/kugartemplate.cpp:105
+#, fuzzy
+msgid "Left Margin"
+msgstr "Ymyl Chwith"
+
+#: kudesigner_lib/kugartemplate.cpp:106
+#, fuzzy
+msgid "Right Margin"
+msgstr "Ymyl Dde"
+
+#: kudesigner_lib/label.cpp:42
+msgid "Text"
+msgstr "Testun"
+
+#: kudesigner_lib/label.cpp:42
+#, fuzzy
+msgid "Text to Display"
+msgstr "Testun i'w ddangos"
+
+#: kudesigner_lib/label.cpp:44
+msgid "Geometry"
+msgstr ""
+
+#: kudesigner_lib/label.cpp:45
+msgid "X"
+msgstr ""
+
+#: kudesigner_lib/label.cpp:45
+#, fuzzy
+msgid "X value"
 msgstr "Gwerth"
 
-#: shell/main.cpp:21
-msgid "Kugar"
-msgstr "Kugar"
-
-#: shell/main.cpp:22
-msgid "A template driven report viewer for XML data."
-msgstr "Gwelydd adroddiad a seilir ar batrymlun ar gyfer data XML"
-
-#: shell/main.cpp:26
-msgid ""
-"Kugar merges XML data files with XML templates\n"
-"to display and print high quality reports."
+#: kudesigner_lib/label.cpp:47
+msgid "Y"
 msgstr ""
-"Mae Kugar yn cyfuno ffeiliau data XML gyda patrymluniau\n"
-" XML i ddangos ac argraffu adroddiadau o ansawdd uchel."
 
-#: shell/main.cpp:30
-msgid "Current maintainer, Report Designer, General Enhancements, Bugfixes"
+#: kudesigner_lib/label.cpp:47
+#, fuzzy
+msgid "Y value"
+msgstr "Gwerth"
+
+#: kudesigner_lib/label.cpp:53
+#, fuzzy
+msgid "Background Color"
+msgstr "Lliw cefndir"
+
+#: kudesigner_lib/label.cpp:55
+#, fuzzy
+msgid "Foreground Color"
+msgstr "Lliw cefndir"
+
+#: kudesigner_lib/label.cpp:57 kudesigner_lib/label.cpp:62
+#, fuzzy
+msgid "Border Style"
+msgstr "Arddull ffin"
+
+#: kudesigner_lib/label.cpp:58 kudesigner_lib/line.cpp:44
+msgid "Color"
+msgstr "Lliw"
+
+#: kudesigner_lib/label.cpp:58
+#, fuzzy
+msgid "Border Color"
+msgstr "Lliw ffîn "
+
+#: kudesigner_lib/label.cpp:60
+#, fuzzy
+msgid "Border Width"
+msgstr "Lled ffin"
+
+#: kudesigner_lib/label.cpp:65
+msgid "Draw Top Border"
 msgstr ""
-"Cynhaliwr Cyfredol, Dylunydd Adroddiadau, Gwelliannau Cyffredinol, Trwsio Namau"
 
-#: shell/main.cpp:32
-msgid "Former maintainer, Shell, Konqueror Part"
-msgstr "Cyn-gynhaliwr, Plisgyn, Rhan Konqueror"
+#: kudesigner_lib/label.cpp:66
+msgid "Draw Bottom Border"
+msgstr ""
 
-#: shell/main.cpp:34
-msgid "Original author"
-msgstr "Awdur Gwreiddiol"
+#: kudesigner_lib/label.cpp:67
+msgid "Draw Left Border"
+msgstr ""
 
-#: shell/main.cpp:39
-msgid "The XML data file"
-msgstr "Y ffeil data XML"
+#: kudesigner_lib/label.cpp:68
+msgid "Draw Right Border"
+msgstr ""
 
-#: shell/main.cpp:40
-msgid "The XML template file URL"
-msgstr "URL y ffeil patrymlun XML"
+#: kudesigner_lib/label.cpp:72
+#, fuzzy
+msgid "Family"
+msgstr "Teulu wynebfathau"
+
+#: kudesigner_lib/label.cpp:72
+#, fuzzy
+msgid "Font Family"
+msgstr "Teulu wynebfathau"
+
+#: kudesigner_lib/label.cpp:74
+msgid "Size"
+msgstr ""
+
+#: kudesigner_lib/label.cpp:76
+msgid "Light"
+msgstr ""
+
+#: kudesigner_lib/label.cpp:77
+msgid "Normal"
+msgstr ""
+
+#: kudesigner_lib/label.cpp:78
+msgid "DemiBold"
+msgstr ""
+
+#: kudesigner_lib/label.cpp:79
+msgid "Bold"
+msgstr ""
+
+#: kudesigner_lib/label.cpp:80
+msgid "Black"
+msgstr ""
+
+#: kudesigner_lib/label.cpp:81
+msgid "Weight"
+msgstr ""
+
+#: kudesigner_lib/label.cpp:84
+msgid "Regular"
+msgstr ""
+
+#: kudesigner_lib/label.cpp:93
+msgid "HAlignment"
+msgstr ""
+
+#: kudesigner_lib/label.cpp:97
+msgid "Middle"
+msgstr ""
+
+#: kudesigner_lib/label.cpp:99
+msgid "VAlignment"
+msgstr ""
+
+#: kudesigner_lib/label.cpp:102
+#, fuzzy
+msgid "False"
+msgstr "Gwerth"
+
+#: kudesigner_lib/label.cpp:103
+msgid "True"
+msgstr ""
+
+#: kudesigner_lib/label.cpp:104
+msgid "Word wrap"
+msgstr "Amlapio testun"
+
+#: kudesigner_lib/label.cpp:248
+msgid "Change Label"
+msgstr "Newid Label"
+
+#: kudesigner_lib/line.cpp:36
+msgid "X1"
+msgstr ""
+
+#: kudesigner_lib/line.cpp:38
+msgid "Y1"
+msgstr ""
+
+#: kudesigner_lib/line.cpp:40
+msgid "X2"
+msgstr ""
+
+#: kudesigner_lib/line.cpp:42
+msgid "Y2"
+msgstr ""
+
+#: kudesigner_lib/line.cpp:48
+#, fuzzy
+msgid "Line Style"
+msgstr "Arddull llinell"
+
+#: kudesigner_lib/pagefooter.cpp:36 kudesigner_lib/pageheader.cpp:36
+#: kudesigner_lib/reportfooter.cpp:37 kudesigner_lib/reportheader.cpp:36
+msgid "First Page"
+msgstr ""
+
+#: kudesigner_lib/pagefooter.cpp:37 kudesigner_lib/pageheader.cpp:37
+#: kudesigner_lib/reportfooter.cpp:38 kudesigner_lib/reportheader.cpp:37
+msgid "Every Page"
+msgstr ""
+
+#: kudesigner_lib/pagefooter.cpp:38 kudesigner_lib/pageheader.cpp:38
+#: kudesigner_lib/reportfooter.cpp:39 kudesigner_lib/reportheader.cpp:38
+msgid "Last Page"
+msgstr ""
+
+#: kudesigner_lib/pagefooter.cpp:40 kudesigner_lib/pageheader.cpp:40
+#: kudesigner_lib/reportfooter.cpp:41 kudesigner_lib/reportheader.cpp:40
+msgid "Print Frequency"
+msgstr ""
+
+#: kudesigner_lib/section.cpp:29
+#, fuzzy
+msgid "Section"
+msgstr "Adrannau"
+
+#: kudesigner_lib/specialfield.cpp:36
+#, fuzzy
+msgid "PageNumber"
+msgstr "RhifTud"
+
+#: kudesigner_lib/specialfield.cpp:37
+#, fuzzy
+msgid "Special Field Type"
+msgstr "Maes Arbennig"
+
+#: kudesigner_lib/specialfield.cpp:59
+msgid "PageNo"
+msgstr "RhifTud"
 
 #. i18n: file kudesigner/kudesignerui.rc line 16
-#: rc.cpp:9 rc.cpp:30
+#: rc.cpp:9
 #, no-c-format
 msgid "Sec&tions"
 msgstr "Ad&rannau"
 
 #. i18n: file kudesigner/kudesignerui.rc line 25
-#: rc.cpp:12 rc.cpp:33
+#: rc.cpp:12
 #, no-c-format
 msgid "&Items"
 msgstr "&Eitemau"
 
-#. i18n: file kudesigner/kudesignerui.rc line 46
-#: rc.cpp:18 rc.cpp:36
+#. i18n: file kudesigner/kudesignerui.rc line 49
+#: rc.cpp:18
 #, no-c-format
 msgid "Sections"
 msgstr "Adrannau"
 
-#. i18n: file kudesigner/kudesignerui.rc line 55
-#: rc.cpp:21 rc.cpp:39
+#. i18n: file kudesigner/kudesignerui.rc line 58
+#: rc.cpp:21
 #, no-c-format
 msgid "Items"
 msgstr "Eitemau"
-
-#. i18n: file shell/kugarui.rc line 4
-#: rc.cpp:45
-#, no-c-format
-msgid "&Go"
-msgstr "&Ewch"
 
 #: _translatorinfo.cpp:1
 msgid ""
@@ -566,6 +606,211 @@ msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
 msgstr "kyfieithu@dotmon.com"
+
+#~ msgid "Add Detail Header"
+#~ msgstr "Ychwanegu Penawd Manylder "
+
+#~ msgid "Enter detail level:"
+#~ msgstr "Rhowch y lefel manylder:"
+
+#~ msgid "Add Detail"
+#~ msgstr "Ychwanegu Manylder"
+
+#~ msgid "Add Detail Footer"
+#~ msgstr "Ychwanegu Troedyn Manylder"
+
+#~ msgid "Insert Label"
+#~ msgstr "Mewnosod Label"
+
+#~ msgid ""
+#~ "_: candefs\n"
+#~ "Insert Label"
+#~ msgstr "Mewnosod Label"
+
+#~ msgid "Insert Field"
+#~ msgstr "Mewnosod Maes"
+
+#~ msgid ""
+#~ "_: candefs\n"
+#~ "Insert Field"
+#~ msgstr "Mewnosod Faes"
+
+#~ msgid "Insert Special"
+#~ msgstr "Mewnosodwch Arbenigyn"
+
+#~ msgid ""
+#~ "_: candefs\n"
+#~ "Insert Special"
+#~ msgstr "Mewnosod Arbenigyn"
+
+#~ msgid "Insert Calculated Field"
+#~ msgstr "Mewnosod Maes wedi'i Gyfrifo"
+
+#~ msgid ""
+#~ "_: candefs\n"
+#~ "Insert Calculated Field"
+#~ msgstr "Mewnosod Faes wedi'i Gyfrifo"
+
+#~ msgid "Insert Line"
+#~ msgstr "Mewnosod Llinell"
+
+#~ msgid ""
+#~ "_: candefs\n"
+#~ "Insert Line"
+#~ msgstr "Mewnosod Llinell"
+
+#~ msgid ""
+#~ "_: candefs\n"
+#~ "Insert Report Item"
+#~ msgstr "Mewnosod Eitem Adroddiad"
+
+#~ msgid "Detail height"
+#~ msgstr "Uchder y manylder"
+
+#~ msgid "Detail footer's height"
+#~ msgstr "Uchder y troedyn manylder "
+
+#~ msgid "Detail footer's level"
+#~ msgstr "Lefel y troedyn manylder"
+
+#~ msgid "Detail footer"
+#~ msgstr "Troedyn manylder"
+
+#~ msgid "Detail header's height"
+#~ msgstr "Uchder y pennawd manylder"
+
+#~ msgid "Detail header's level"
+#~ msgstr "Lefel y pennawd manylder"
+
+#~ msgid "Detail header"
+#~ msgstr "Pennawd manylder"
+
+#~ msgid "Page footer's height"
+#~ msgstr "Uchder y troedyn tudalen"
+
+#~ msgid "Page header's height"
+#~ msgstr "Uchder y pennawd tudalen"
+
+#~ msgid "Report footer's height"
+#~ msgstr "Uchder y troedyn adroddiad"
+
+#~ msgid "Report header's height"
+#~ msgstr "Uchder y pennawd adroddiad"
+
+#~ msgid "Field to display"
+#~ msgstr "Maes i'w ddangos"
+
+#~ msgid "X coordinate corresponding to section"
+#~ msgstr "Cyfesuryn X sy'n cyfateb i'r adran"
+
+#~ msgid "Y coordinate corresponding to section"
+#~ msgstr "Cyfesuryn Y sy'n cyfateb i'r adran"
+
+#~ msgid "Text color"
+#~ msgstr "Lliw testun"
+
+#~ msgid "Font size"
+#~ msgstr "Maint yr wynebfath"
+
+#~ msgid "Font weight"
+#~ msgstr "Pwys yr wynebfath"
+
+#~ msgid "Italic font"
+#~ msgstr "Wynebfath italig"
+
+#~ msgid "Text horizontal alignment"
+#~ msgstr "Cyfuniad llorweddol testun"
+
+#~ msgid "Text vertical alignment"
+#~ msgstr "Cyfuniad fertigol testun"
+
+#~ msgid "X1 coordinate corresponding to section"
+#~ msgstr "Cyfesuryn X1 sy'n cyfateb i'r adran"
+
+#~ msgid "Y1 coordinate corresponding to section"
+#~ msgstr "Cyfesuryn Y1 sy'n cyfateb i'r adran"
+
+#~ msgid "X2 coordinate corresponding to section"
+#~ msgstr "Cyfesuryn X2 sy'n cyfateb i'r adran"
+
+#~ msgid "Y2 coordinate corresponding to section"
+#~ msgstr "Cyfesuryn Y2 sy'n cyfateb i'r adran"
+
+#~ msgid "Field type to display"
+#~ msgstr "Math o faes i ddangos"
+
+#~ msgid "Insert Detail Footer Section"
+#~ msgstr "Mewnosod Adran y Troedyn Manylder"
+
+#~ msgid "Insert Detail Section"
+#~ msgstr "Mewnosod Adran Manylder"
+
+#~ msgid "Insert Detail Header Section"
+#~ msgstr "Mewnosod Adran Pennawd Manylder"
+
+#~ msgid "Insert Page Footer Section"
+#~ msgstr "Mewnosod Adran Troedyn Tudalen"
+
+#~ msgid "Insert Page Header Section"
+#~ msgstr "Mewnosod Adran Pennawd Tudalen"
+
+#~ msgid "Insert Report Footer Section"
+#~ msgstr "Mewnosod Adran Troedyn Adroddiad"
+
+#~ msgid "Insert Report Header Section"
+#~ msgstr "Mewnosod Adran Troedyn Adroddiad"
+
+#~ msgid "Delete Report Item(s)"
+#~ msgstr "Dileu Eitem(au) Adroddiad"
+
+#~ msgid "Custom..."
+#~ msgstr "Addasiedig..."
+
+#~ msgid "&Undo: %1"
+#~ msgstr "&Dadwneud: %1"
+
+#~ msgid "&Redo: %1"
+#~ msgstr "&Ailwneud: %1"
+
+#~ msgid "Undo: %1"
+#~ msgstr "Dadwneud: %1"
+
+#~ msgid "Redo: %1"
+#~ msgstr "Ailwneud: %1"
+
+#~ msgid "Property"
+#~ msgstr "Priodwedd"
+
+#~ msgid "Kugar"
+#~ msgstr "Kugar"
+
+#~ msgid "A template driven report viewer for XML data."
+#~ msgstr "Gwelydd adroddiad a seilir ar batrymlun ar gyfer data XML"
+
+#~ msgid ""
+#~ "Kugar merges XML data files with XML templates\n"
+#~ "to display and print high quality reports."
+#~ msgstr ""
+#~ "Mae Kugar yn cyfuno ffeiliau data XML gyda patrymluniau\n"
+#~ " XML i ddangos ac argraffu adroddiadau o ansawdd uchel."
+
+#~ msgid "Current maintainer, Report Designer, General Enhancements, Bugfixes"
+#~ msgstr "Cynhaliwr Cyfredol, Dylunydd Adroddiadau, Gwelliannau Cyffredinol, Trwsio Namau"
+
+#~ msgid "Former maintainer, Shell, Konqueror Part"
+#~ msgstr "Cyn-gynhaliwr, Plisgyn, Rhan Konqueror"
+
+#~ msgid "Original author"
+#~ msgstr "Awdur Gwreiddiol"
+
+#~ msgid "The XML data file"
+#~ msgstr "Y ffeil data XML"
+
+#~ msgid "The XML template file URL"
+#~ msgstr "URL y ffeil patrymlun XML"
+
+#~ msgid "&Go"
+#~ msgstr "&Ewch"
 
 #~ msgid "Kugar Designer"
 #~ msgstr "Dylunudd Kugar"
