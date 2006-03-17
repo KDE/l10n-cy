@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
-"POT-Creation-Date: 2005-12-31 03:18+0100\n"
+"POT-Creation-Date: 2006-02-26 03:55+0100\n"
 "PO-Revision-Date: 2004-02-25 13:47+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -103,7 +103,7 @@ msgstr "cofnod amser am negeseuon cyflwr 'Trosglwyddiad wedi'i gwblhau'"
 msgid "multiple encryption keys per address"
 msgstr "allweddau cêl-ysgrifennaeth lluosol am bob cyfeiriad"
 
-#: aboutdata.cpp:212 kmreaderwin.cpp:1291 kmstartup.cpp:144
+#: aboutdata.cpp:212 kmreaderwin.cpp:1297 kmstartup.cpp:144
 #: mailinglistpropertiesdialog.cpp:97
 msgid "KMail"
 msgstr "KMail"
@@ -206,7 +206,7 @@ msgstr "Cyfnod y&mofyn:"
 
 #. i18n: file signatureconfigurationdialog.ui line 508
 #: accountdialog.cpp:434 accountdialog.cpp:527 accountdialog.cpp:721
-#: accountdialog.cpp:1028 configuredialog.cpp:2537 rc.cpp:636
+#: accountdialog.cpp:1028 configuredialog.cpp:2547 rc.cpp:726
 #, no-c-format
 msgid " min"
 msgstr "mun"
@@ -237,7 +237,7 @@ msgstr "Cynnwys yn yr ymofyn:"
 msgid "Account Type: POP Account"
 msgstr "Math y cyfrif: cyfrif POP"
 
-#: accountdialog.cpp:565 accountdialog.cpp:825 configuredialog.cpp:2426
+#: accountdialog.cpp:565 accountdialog.cpp:825 configuredialog.cpp:2436
 #: identitydialog.cpp:106 kmfilterdlg.cpp:140 kmtransport.cpp:376
 msgid "&General"
 msgstr "&Cyffredinol"
@@ -300,9 +300,9 @@ msgid "Leave messages on the server for"
 msgstr "Dileu negeseuon a waredwyd o'r gelc"
 
 #. i18n: file encryptionconfigurationdialog.ui line 350
-#: accountdialog.cpp:635 rc.cpp:248 rc.cpp:293 rc.cpp:321 rc.cpp:670
-#: rc.cpp:712 rc.cpp:726 rc.cpp:902 rc.cpp:916 rc.cpp:930 rc.cpp:944
-#: rc.cpp:958 rc.cpp:972 rulewidgethandlermanager.cpp:1437
+#: accountdialog.cpp:635 rc.cpp:338 rc.cpp:383 rc.cpp:411 rc.cpp:760
+#: rc.cpp:802 rc.cpp:816 rc.cpp:992 rc.cpp:1006 rc.cpp:1020 rc.cpp:1034
+#: rc.cpp:1048 rc.cpp:1062 rulewidgethandlermanager.cpp:1437
 #: vacationdialog.cpp:74
 #, no-c-format
 msgid " days"
@@ -364,8 +364,8 @@ msgid "Check &What the Server Supports"
 msgstr "Gwi&rio Beth a Gynhelir gan y Gweinydd"
 
 #. i18n: file encryptionconfigurationdialog.ui line 33
-#: accountdialog.cpp:756 accountdialog.cpp:1059 kmheaders.cpp:128
-#: kmtransport.cpp:502 rc.cpp:101
+#: accountdialog.cpp:756 accountdialog.cpp:1059 kmheaders.cpp:130
+#: kmtransport.cpp:502 rc.cpp:191
 #, no-c-format
 msgid "Encryption"
 msgstr "Cêl-ysgrifaeth"
@@ -542,7 +542,7 @@ msgid "<none>"
 msgstr "<dim>"
 
 #: accountdialog.cpp:1374 accountdialog.cpp:1381 kmfoldercachedimap.cpp:187
-#: kmfoldercachedimap.cpp:1751 kmfolderimap.cpp:181 kmfolderimap.cpp:870
+#: kmfoldercachedimap.cpp:1751 kmfolderimap.cpp:182 kmfolderimap.cpp:871
 #: kmkernel.cpp:1307 subscriptiondialog.cpp:166
 msgid "inbox"
 msgstr "blwch derbyn"
@@ -1057,18 +1057,27 @@ msgstr ""
 "Gwall wrth ysgrifennu'r ffeil:\n"
 " %1"
 
-#: callback.cpp:132
-msgid "Select Address"
-msgstr "Dewis Cyfeiriad"
-
-#: callback.cpp:133
+#: callback.cpp:137
 #, fuzzy
 msgid ""
 "<qt>None of your identities match the receiver of this message,"
+"<br>please choose which of the following addresses is yours, if any:"
+msgstr ""
+"Nid yw un o'ch dynodiadau yn cydweddu â derbyniwr y neges yma, "
+"<br> dewiswch pa un o'r cyfeiriadau dilynnol sy'n biau i chi:"
+
+#: callback.cpp:142
+#, fuzzy
+msgid ""
+"<qt>Several of your identities match the receiver of this message,"
 "<br>please choose which of the following addresses is yours:"
 msgstr ""
 "Nid yw un o'ch dynodiadau yn cydweddu â derbyniwr y neges yma, "
 "<br> dewiswch pa un o'r cyfeiriadau dilynnol sy'n biau i chi:"
+
+#: callback.cpp:149
+msgid "Select Address"
+msgstr "Dewis Cyfeiriad"
 
 #: chiasmuskeyselector.cpp:19
 msgid "Please select the Chiasmus key file to use:"
@@ -1110,7 +1119,7 @@ msgid "&Add..."
 msgstr "&Ychwanegu..."
 
 #: configuredialog.cpp:303 configuredialog.cpp:622 configuredialog.cpp:1073
-#: configuredialog.cpp:2995 simplestringlisteditor.cpp:108
+#: configuredialog.cpp:3005 simplestringlisteditor.cpp:108
 msgid "&Modify..."
 msgstr "&Addasu..."
 
@@ -1118,7 +1127,7 @@ msgstr "&Addasu..."
 msgid "&Rename"
 msgstr "&Ailenwi"
 
-#: configuredialog.cpp:305 configuredialog.cpp:2945 configuredialog.cpp:2994
+#: configuredialog.cpp:305 configuredialog.cpp:2955 configuredialog.cpp:3004
 msgid "Remo&ve"
 msgstr "Gware&du"
 
@@ -1135,11 +1144,11 @@ msgstr "<qt>Ydych wir eisiau gwaredu'r dynodiad o'r enw <b>%1</b>?</qt>"
 msgid "Remove Identity"
 msgstr "G&waredu"
 
-#: configuredialog.cpp:490 configuredialog.cpp:2944
+#: configuredialog.cpp:490 configuredialog.cpp:2954
 msgid "Add..."
 msgstr "Ychwanegu..."
 
-#: configuredialog.cpp:492 configuredialog.cpp:2946
+#: configuredialog.cpp:492 configuredialog.cpp:2956
 msgid "Modify..."
 msgstr "Addasu..."
 
@@ -1159,9 +1168,9 @@ msgstr "&Anfon"
 msgid "Outgoing accounts (add at least one):"
 msgstr "Cyfrifon allfynd (ychwanegwch o leiaf un):"
 
-#: configuredialog.cpp:601 configuredialog.cpp:1051 configuredialog.cpp:3120
+#: configuredialog.cpp:601 configuredialog.cpp:1051 configuredialog.cpp:3130
 #: distributionlistdialog.cpp:108 kmcomposewin.cpp:315
-#: recipientspicker.cpp:291
+#: recipientspicker.cpp:290
 msgid "Name"
 msgstr "Enw"
 
@@ -1170,8 +1179,8 @@ msgstr "Enw"
 msgid "Type"
 msgstr "Math\t"
 
-#: configuredialog.cpp:615 configuredialog.cpp:1066 configuredialog.cpp:2714
-#: configuredialog.cpp:2917 configuredialog.cpp:2994 configuredialog.cpp:3328
+#: configuredialog.cpp:615 configuredialog.cpp:1066 configuredialog.cpp:2724
+#: configuredialog.cpp:2927 configuredialog.cpp:3004 configuredialog.cpp:3338
 msgid "A&dd..."
 msgstr "Yc&hwanegu..."
 
@@ -1188,7 +1197,7 @@ msgid "Common Options"
 msgstr "Dewisiadau Cyffredin"
 
 #. i18n: file kmail.kcfg line 278
-#: configuredialog.cpp:655 rc.cpp:1121
+#: configuredialog.cpp:655 rc.cpp:1211
 #, no-c-format
 msgid "Confirm &before send"
 msgstr "Cadarnha&u cyn anfon"
@@ -1738,7 +1747,7 @@ msgid "Show s&pam status in fancy headers"
 msgstr "Dangos pob penawd y negeseuon"
 
 #. i18n: file kmail.kcfg line 410
-#: configuredialog.cpp:2149 rc.cpp:1176
+#: configuredialog.cpp:2149 rc.cpp:1266
 #, no-c-format
 msgid "Replace smileys by emoticons"
 msgstr ""
@@ -1748,7 +1757,7 @@ msgid "Use smaller font for quoted text"
 msgstr ""
 
 #. i18n: file kmail.kcfg line 415
-#: configuredialog.cpp:2157 rc.cpp:1182
+#: configuredialog.cpp:2157 rc.cpp:1272
 #, no-c-format
 msgid "Show expand/collapse quote marks"
 msgstr ""
@@ -1758,7 +1767,7 @@ msgstr ""
 msgid "Fallback ch&aracter encoding:"
 msgstr "Goso&d Amgodiad"
 
-#: configuredialog.cpp:2242 configuredialog.cpp:2289 kmreaderwin.cpp:635
+#: configuredialog.cpp:2242 configuredialog.cpp:2299 kmreaderwin.cpp:635
 msgid "Auto"
 msgstr "Ymysgogol"
 
@@ -1768,71 +1777,71 @@ msgid "&Override character encoding:"
 msgstr "Goso&d Amgodiad"
 
 #. i18n: file kmail.kcfg line 80
-#: configuredialog.cpp:2362 rc.cpp:1019
+#: configuredialog.cpp:2372 rc.cpp:1109
 #, fuzzy, no-c-format
 msgid "Enable system tray icon"
 msgstr "hysbysiad cafn cysawd"
 
-#: configuredialog.cpp:2368
+#: configuredialog.cpp:2378
 #, fuzzy
 msgid "System Tray Mode"
 msgstr "Moddau Cafn Cysawd"
 
-#: configuredialog.cpp:2376
+#: configuredialog.cpp:2386
 #, fuzzy
 msgid "Always show KMail in system tray"
 msgstr "&Dangos y cafn cysawd o hyd"
 
-#: configuredialog.cpp:2379
+#: configuredialog.cpp:2389
 msgid "Only show KMail in system tray if there are unread messages"
 msgstr ""
 
-#: configuredialog.cpp:2433
+#: configuredialog.cpp:2443
 msgid "&Phrases"
 msgstr "&Ymadroddion"
 
-#: configuredialog.cpp:2439
+#: configuredialog.cpp:2449
 msgid "&Subject"
 msgstr "&Pwnc"
 
-#: configuredialog.cpp:2446
+#: configuredialog.cpp:2456
 msgid "Cha&rset"
 msgstr "&Set Nodau"
 
-#: configuredialog.cpp:2452
+#: configuredialog.cpp:2462
 msgid "H&eaders"
 msgstr "&Penawdau"
 
-#: configuredialog.cpp:2458
+#: configuredialog.cpp:2468
 msgid ""
 "_: Config->Composer->Attachments\n"
 "A&ttachments"
 msgstr "A&todiadau"
 
-#: configuredialog.cpp:2536
+#: configuredialog.cpp:2546
 msgid "No autosave"
 msgstr "Dim hunan-gadw"
 
-#: configuredialog.cpp:2543
+#: configuredialog.cpp:2553
 #, fuzzy
 msgid "Configure Completion Order"
 msgstr "Ffurfweddu Cylchwedd"
 
-#: configuredialog.cpp:2551
+#: configuredialog.cpp:2561
 #, fuzzy
 msgid "Edit Recent Addresses"
 msgstr "Cyfeiriadau Diweddar"
 
-#: configuredialog.cpp:2558 kmedit.cpp:529
+#: configuredialog.cpp:2568 kmedit.cpp:531
 msgid "External Editor"
 msgstr "Golygydd Allanol"
 
-#: configuredialog.cpp:2589
+#: configuredialog.cpp:2599
 #, fuzzy, c-format
 msgid "<b>%f</b> will be replaced with the filename to edit."
 msgstr "Amnewidir <b>%f</b> efo'r enw ffeil i'w olygu."
 
-#: configuredialog.cpp:2695
+#: configuredialog.cpp:2705
 msgid ""
 "<qt>The following placeholders are supported in the reply phrases:"
 "<br><b>%D</b>: date, <b>%S</b>: subject,"
@@ -1851,52 +1860,52 @@ msgstr ""
 "carbon "
 "<br><b>%%</b>: nod canran, <b>%_</b>: gofodnod, <b>%L</b>: llin-dorriad</qt>"
 
-#: configuredialog.cpp:2708
+#: configuredialog.cpp:2718
 msgid "Lang&uage:"
 msgstr "&Iaith:"
 
-#: configuredialog.cpp:2717 configuredialog.cpp:2917 configuredialog.cpp:3133
-#: configuredialog.cpp:3328
+#: configuredialog.cpp:2727 configuredialog.cpp:2927 configuredialog.cpp:3143
+#: configuredialog.cpp:3338
 msgid "Re&move"
 msgstr "G&waredu"
 
-#: configuredialog.cpp:2731
+#: configuredialog.cpp:2741
 msgid "Reply to se&nder:"
 msgstr "Ate&b i'r anfonwr:"
 
-#: configuredialog.cpp:2739
+#: configuredialog.cpp:2749
 msgid "Repl&y to all:"
 msgstr "Ateb i &bawb:"
 
-#: configuredialog.cpp:2747
+#: configuredialog.cpp:2757
 msgid "&Forward:"
 msgstr "B&laenyrru:"
 
-#: configuredialog.cpp:2755
+#: configuredialog.cpp:2765
 msgid "&Quote indicator:"
 msgstr "&Dynodydd dyfynnod:"
 
-#: configuredialog.cpp:2800 kmmessage.cpp:3770
+#: configuredialog.cpp:2810 kmmessage.cpp:3770
 msgid "On %D, you wrote:"
 msgstr "Ar %D, wnaethoch ysgrifennu:"
 
-#: configuredialog.cpp:2801 kmmessage.cpp:3772
+#: configuredialog.cpp:2811 kmmessage.cpp:3772
 msgid "On %D, %F wrote:"
 msgstr "Ar %D, ysgrifennodd %F:"
 
-#: configuredialog.cpp:2802 kmmessage.cpp:3774
+#: configuredialog.cpp:2812 kmmessage.cpp:3774
 msgid "Forwarded Message"
 msgstr "Neges a Flaenyrrwyd"
 
-#: configuredialog.cpp:2803
+#: configuredialog.cpp:2813
 msgid ">%_"
 msgstr ">%_"
 
-#: configuredialog.cpp:2904
+#: configuredialog.cpp:2914
 msgid "Repl&y Subject Prefixes"
 msgstr "Rhagddodiadau ar gyfer P&wnc yr Ateb"
 
-#: configuredialog.cpp:2908 configuredialog.cpp:2937
+#: configuredialog.cpp:2918 configuredialog.cpp:2947
 msgid ""
 "Recognize any sequence of the following prefixes\n"
 "(entries are case-insensitive regular expressions):"
@@ -1905,23 +1914,23 @@ msgstr ""
 " (mae'r cofnodion yn fynegiadau rheolaidd efo llythrennau mawr/bach dim o "
 "bwys):"
 
-#: configuredialog.cpp:2918 configuredialog.cpp:3329
+#: configuredialog.cpp:2928 configuredialog.cpp:3339
 msgid "Mod&ify..."
 msgstr "A&ddasu..."
 
-#: configuredialog.cpp:2919
+#: configuredialog.cpp:2929
 msgid "Enter new reply prefix:"
 msgstr "Mewnodosd rhagddodiad ateb newydd:"
 
-#: configuredialog.cpp:2933
+#: configuredialog.cpp:2943
 msgid "For&ward Subject Prefixes"
 msgstr "Rha&gddodiadau ar gyfer Pwnc y Blaenyrriad"
 
-#: configuredialog.cpp:2947
+#: configuredialog.cpp:2957
 msgid "Enter new forward prefix:"
 msgstr "Mewnodosd rhagddodiad blaenyrriad newydd:"
 
-#: configuredialog.cpp:2986
+#: configuredialog.cpp:2996
 msgid ""
 "This list is checked for every outgoing message from the top to the bottom for "
 "a charset that contains all required characters."
@@ -1929,57 +1938,57 @@ msgstr ""
 "Gwirir y rhestr yma am bob un neges allfynd o'r pen i'r gwaelod ar gyfer set "
 "nodau sy'n cynnwys y nodau gorfodol i gyd."
 
-#: configuredialog.cpp:2995
+#: configuredialog.cpp:3005
 msgid "Enter charset:"
 msgstr "Mewnosod set nodau:"
 
-#: configuredialog.cpp:3001
+#: configuredialog.cpp:3011
 #, fuzzy
 msgid "&Keep original charset when replying or forwarding (if possible)"
 msgstr "&Cadw'r set nodau gwreiddiol wrth ateb neu flaenyrru (os yn bosibl)."
 
-#: configuredialog.cpp:3035
+#: configuredialog.cpp:3045
 msgid "This charset is not supported."
 msgstr "Ni chynhelir y set nodau yma."
 
-#: configuredialog.cpp:3086
+#: configuredialog.cpp:3096
 msgid "&Use custom message-id suffix"
 msgstr "&Defnyddio ôlddodiad dynodiad neges addasiedig."
 
-#: configuredialog.cpp:3099
+#: configuredialog.cpp:3109
 msgid "Custom message-&id suffix:"
 msgstr "Ôlddodiad dynodiad n&eges addasiedig:"
 
-#: configuredialog.cpp:3113
+#: configuredialog.cpp:3123
 msgid "Define custom mime header fields:"
 msgstr "Diffinio meyseydd pennawd mime addasiedig"
 
-#: configuredialog.cpp:3121
+#: configuredialog.cpp:3131
 msgid "Value"
 msgstr "Gwerth"
 
-#: configuredialog.cpp:3129
+#: configuredialog.cpp:3139
 msgid "Ne&w"
 msgstr "Ne&wydd"
 
 #. i18n: file folderpropertiesdialog.ui line 52
-#: configuredialog.cpp:3142 kmfolderdia.cpp:252 kmmsgpartdlg.cpp:110
-#: kmtransport.cpp:329 kmtransport.cpp:383 newfolderdialog.cpp:76 rc.cpp:369
+#: configuredialog.cpp:3152 kmfolderdia.cpp:252 kmmsgpartdlg.cpp:110
+#: kmtransport.cpp:329 kmtransport.cpp:383 newfolderdialog.cpp:76 rc.cpp:459
 #, no-c-format
 msgid "&Name:"
 msgstr "&Enw:"
 
-#: configuredialog.cpp:3151
+#: configuredialog.cpp:3161
 msgid "&Value:"
 msgstr "&Gwerth:"
 
 #. i18n: file kmail.kcfg line 255
-#: configuredialog.cpp:3298 rc.cpp:1115
+#: configuredialog.cpp:3308 rc.cpp:1205
 #, no-c-format
 msgid "Outlook-compatible attachment naming"
 msgstr ""
 
-#: configuredialog.cpp:3301
+#: configuredialog.cpp:3311
 #, fuzzy
 msgid ""
 "Turn this option on to make Outlook(tm) understand attachment names containing "
@@ -1988,29 +1997,29 @@ msgstr ""
 "Cynnau'r dewisiad yma er mwyn gwneud i Outlook(tm) ddeall eich atebion i "
 "wahoddiadau"
 
-#: configuredialog.cpp:3312
+#: configuredialog.cpp:3322
 msgid "E&nable detection of missing attachments"
 msgstr "G&alluogi darganfod atodiadau colledig"
 
-#: configuredialog.cpp:3319
+#: configuredialog.cpp:3329
 msgid "Recognize any of the following key words as intention to attach a file:"
 msgstr "Adnabod unrhyw un o'r allweddeiriau dilynnol fel bwriad o atodi ffeil:"
 
-#: configuredialog.cpp:3330
+#: configuredialog.cpp:3340
 msgid "Enter new key word:"
 msgstr "Rhowch allweddair newydd:"
 
-#: configuredialog.cpp:3354 configuredialog.cpp:3355 kmcomposewin.cpp:2034
-#: kmcomposewin.cpp:2035
+#: configuredialog.cpp:3364 configuredialog.cpp:3365 kmcomposewin.cpp:2035
+#: kmcomposewin.cpp:2036
 msgid "attachment"
 msgstr "atodiad"
 
-#: configuredialog.cpp:3356 configuredialog.cpp:3357 kmcomposewin.cpp:2036
-#: kmcomposewin.cpp:2037
+#: configuredialog.cpp:3366 configuredialog.cpp:3367 kmcomposewin.cpp:2037
+#: kmcomposewin.cpp:2038
 msgid "attached"
 msgstr "atodedig"
 
-#: configuredialog.cpp:3376
+#: configuredialog.cpp:3386
 msgid ""
 "You have chosen to encode attachment names containing non-English characters in "
 "a way that is understood by Outlook(tm) and other mail clients that do not "
@@ -2021,32 +2030,32 @@ msgid ""
 "option."
 msgstr ""
 
-#: configuredialog.cpp:3403
+#: configuredialog.cpp:3413
 #, fuzzy
 msgid "&Reading"
 msgstr "&Anfon"
 
-#: configuredialog.cpp:3409
+#: configuredialog.cpp:3419
 #, fuzzy
 msgid "Composing"
 msgstr "Cyfansoddydd"
 
 #. i18n: file encryptionconfigurationdialog.ui line 435
-#: configuredialog.cpp:3415 rc.cpp:276 rc.cpp:639
+#: configuredialog.cpp:3425 rc.cpp:366 rc.cpp:729
 #, no-c-format
 msgid "Warnings"
 msgstr "Rhybuddion"
 
-#: configuredialog.cpp:3421
+#: configuredialog.cpp:3431
 msgid "S/MIME &Validation"
 msgstr ""
 
-#: configuredialog.cpp:3427
+#: configuredialog.cpp:3437
 #, fuzzy
 msgid "Crypto Backe&nds"
 msgstr "Ategion &Cêl"
 
-#: configuredialog.cpp:3458
+#: configuredialog.cpp:3468
 msgid ""
 "<qt>"
 "<p>Messages sometimes come in both formats. This option controls whether you "
@@ -2079,7 +2088,7 @@ msgstr ""
 "<p><b>Noder:</b> Gallwch osod y dewisiad yma ar sail pob-plygell o'r ddewislen "
 "<i>Plygell</i> ym mhrif ffenestr KMail.</p></qt>"
 
-#: configuredialog.cpp:3475
+#: configuredialog.cpp:3485
 msgid ""
 "<qt>"
 "<p>Some mail advertisements are in HTML and contain references to, for example, "
@@ -2105,7 +2114,7 @@ msgstr ""
 "wedi'u atodi iddi, gallwch alluogi'r dewisiad yma, ond dylech chi fod yn "
 "ymwybodol o'r problem posibl.</p></qt>"
 
-#: configuredialog.cpp:3488
+#: configuredialog.cpp:3498
 msgid ""
 "<qt>"
 "<h3>Message Disposition Notification Policy</h3>"
@@ -2158,19 +2167,19 @@ msgstr ""
 "gan ei fod yn gwneud llawer o synnwyr ar gyfer e.e. rheoli'r berthynas efo "
 "cwsmeriaid.</li></ul></qt>"
 
-#: configuredialog.cpp:3521
+#: configuredialog.cpp:3531
 msgid "HTML Messages"
 msgstr "Negeseuon HTML"
 
-#: configuredialog.cpp:3524
+#: configuredialog.cpp:3534
 msgid "Prefer H&TML to plain text"
 msgstr "Hoffter yw H&TML yn lle testun plaen"
 
-#: configuredialog.cpp:3528
+#: configuredialog.cpp:3538
 msgid "Allow messages to load e&xternal references from the Internet"
 msgstr "&Caniatáu i negeseuon lwytho cyfeirnodau allanol o'r Ryngrwyd"
 
-#: configuredialog.cpp:3533
+#: configuredialog.cpp:3543
 msgid ""
 "<b>WARNING:</b> Allowing HTML in email may increase the risk that your system "
 "will be compromised by present and anticipated security exploits. <a "
@@ -2182,52 +2191,52 @@ msgstr ""
 "href=\"whatsthis:%1\">Mwy am ebostau HTML...</a> <a href=\"whatsthis:%2\">"
 "Mwy am cyfeiriadau allanol...</a>"
 
-#: configuredialog.cpp:3545
+#: configuredialog.cpp:3555
 msgid "Message Disposition Notifications"
 msgstr "Hysbysiadau Lleoliad Neges"
 
-#: configuredialog.cpp:3557
+#: configuredialog.cpp:3567
 msgid "Send policy:"
 msgstr "Polisi anfon:"
 
-#: configuredialog.cpp:3559 kmmessage.cpp:1294 kmmessage.cpp:1301
+#: configuredialog.cpp:3569 kmmessage.cpp:1294 kmmessage.cpp:1301
 msgid "&Ignore"
 msgstr "&Anwybyddu"
 
-#: configuredialog.cpp:3562
+#: configuredialog.cpp:3572
 msgid "As&k"
 msgstr "Go&fyn"
 
-#: configuredialog.cpp:3565
+#: configuredialog.cpp:3575
 msgid "&Deny"
 msgstr "Gwa&hardd"
 
-#: configuredialog.cpp:3568
+#: configuredialog.cpp:3578
 msgid "Al&ways send"
 msgstr "Anf&on o hyd"
 
-#: configuredialog.cpp:3586
+#: configuredialog.cpp:3596
 msgid "Quote original message:"
 msgstr "Dyfynnu'r neges wreiddiol"
 
-#: configuredialog.cpp:3588
+#: configuredialog.cpp:3598
 msgid "Nothin&g"
 msgstr "Dim by&d"
 
-#: configuredialog.cpp:3591
+#: configuredialog.cpp:3601
 msgid "&Full message"
 msgstr "Ne&ges gyfan"
 
-#: configuredialog.cpp:3594
+#: configuredialog.cpp:3604
 msgid "Onl&y headers"
 msgstr "Penawdau yn &unig"
 
-#: configuredialog.cpp:3600
+#: configuredialog.cpp:3610
 #, fuzzy
 msgid "Do not send MDNs in response to encrypted messages"
 msgstr "Rhy&buddio wrth geisio anfon negeseuon heb eu cêl-ysgrifo"
 
-#: configuredialog.cpp:3604
+#: configuredialog.cpp:3614
 msgid ""
 "<b>WARNING:</b> Unconditionally returning confirmations undermines your "
 "privacy. <a href=\"whatsthis:%1\">More...</a>"
@@ -2235,55 +2244,55 @@ msgstr ""
 "<b>RHYBUDD:</b> Bydd dychwelyd cadarnhadau yn ddiamod yn tanseilio eich "
 "preifatrwydd. <a href=\"whatsthis:%1\">Mwy...</a>"
 
-#: configuredialog.cpp:3613
+#: configuredialog.cpp:3623
 #, fuzzy
 msgid "Certificate && Key Bundle Attachments"
 msgstr "Rheoli Tystysgrifau"
 
-#: configuredialog.cpp:3616
+#: configuredialog.cpp:3626
 #, fuzzy
 msgid "Automatically import keys and certificates"
 msgstr "Atodi llo&fnod yn ymysgogol"
 
-#: configuredialog.cpp:3675
+#: configuredialog.cpp:3685
 msgid ""
 "Changing the global HTML setting will override all folder specific values."
 msgstr ""
 "Bydd newid y gosodiad HTML eang yn anwybyddu pob gwerth sy'n benodol i blygell."
 
-#: configuredialog.cpp:3962
+#: configuredialog.cpp:3972
 msgid "This option requires dirmngr >= 0.9.0"
 msgstr ""
 
 #. i18n: file smimeconfiguration.ui line 216
-#: configuredialog.cpp:4071 rc.cpp:808
+#: configuredialog.cpp:4081 rc.cpp:898
 #, no-c-format
 msgid "no proxy"
 msgstr ""
 
-#: configuredialog.cpp:4072
+#: configuredialog.cpp:4082
 msgid "(Current system setting: %1)"
 msgstr ""
 
-#: configuredialog.cpp:4249
+#: configuredialog.cpp:4259
 msgid "&Folders"
 msgstr "&Plygyll"
 
-#: configuredialog.cpp:4252
+#: configuredialog.cpp:4262
 msgid "&Groupware"
 msgstr "&Cylchwedd"
 
-#: configuredialog.cpp:4273
+#: configuredialog.cpp:4283
 msgid ""
 "_: Corresponds to Folder->Move All Messages to Trash\n"
 "Ask for co&nfirmation before moving all messages to trash"
 msgstr "Gofyn am gada&rnhad cyn symud pob neges i'r sbwriel"
 
-#: configuredialog.cpp:4280
+#: configuredialog.cpp:4290
 msgid "E&xclude important messages from expiry"
 msgstr ""
 
-#: configuredialog.cpp:4291
+#: configuredialog.cpp:4301
 #, fuzzy
 msgid ""
 "_: to be continued with \"do not loop\", \"loop in current folder\", and \"loop "
@@ -2291,97 +2300,97 @@ msgid ""
 "When trying to find unread messages:"
 msgstr "Wrth geisio canfod negeseuon nas darllenwyd:"
 
-#: configuredialog.cpp:4294
+#: configuredialog.cpp:4304
 #, fuzzy
 msgid ""
 "_: continuation of \"When trying to find unread messages:\"\n"
 "Do not Loop"
 msgstr "Peidio â Dolennu"
 
-#: configuredialog.cpp:4296
+#: configuredialog.cpp:4306
 msgid ""
 "_: continuation of \"When trying to find unread messages:\"\n"
 "Loop in Current Folder"
 msgstr "Dolennu yn y Blygell Gyfredol"
 
-#: configuredialog.cpp:4298
+#: configuredialog.cpp:4308
 msgid ""
 "_: continuation of \"When trying to find unread messages:\"\n"
 "Loop in All Folders"
 msgstr "Dolennu mewn Pob Plygell"
 
-#: configuredialog.cpp:4311
+#: configuredialog.cpp:4321
 msgid ""
 "_: to be continued with \"jump to first new message\", \"jump to first unread "
 "or new message\",and \"jump to last selected message\".\n"
 "When entering a folder:"
 msgstr ""
 
-#: configuredialog.cpp:4314
+#: configuredialog.cpp:4324
 #, fuzzy
 msgid ""
 "_: continuation of \"When entering a folder:\"\n"
 "Jump to First New Message"
 msgstr "Peidio â Dolennu"
 
-#: configuredialog.cpp:4316
+#: configuredialog.cpp:4326
 #, fuzzy
 msgid ""
 "_: continuation of \"When entering a folder:\"\n"
 "Jump to First Unread or New Message"
 msgstr "Peidio â Dolennu"
 
-#: configuredialog.cpp:4318
+#: configuredialog.cpp:4328
 #, fuzzy
 msgid ""
 "_: continuation of \"When entering a folder:\"\n"
 "Jump to Last Selected Message"
 msgstr "Peidio â Dolennu"
 
-#: configuredialog.cpp:4325
+#: configuredialog.cpp:4335
 msgid "Mar&k selected message as read after"
 msgstr "No&di'r neges benodol fel darllenedig ar ôl"
 
-#: configuredialog.cpp:4329
+#: configuredialog.cpp:4339
 msgid " sec"
 msgstr "eil"
 
-#: configuredialog.cpp:4342
+#: configuredialog.cpp:4352
 msgid "Ask for action after &dragging messages to another folder"
 msgstr "Gofyn am weithred ar ôl &llusgo negeseuon i blygell arall"
 
-#: configuredialog.cpp:4353
+#: configuredialog.cpp:4363
 msgid ""
 "_: to be continued with \"flat files\" and \"directories\", resp.\n"
 "By default, &message folders on disk are:"
 msgstr "Gan ragosod, mae'r plygyll ne&ges ar ddisg yn:"
 
-#: configuredialog.cpp:4356
+#: configuredialog.cpp:4366
 msgid ""
 "_: continuation of \"By default, &message folders on disk are\"\n"
 "Flat Files (\"mbox\" format)"
 msgstr "Ffeiliau Fflat (fformat \"mbox\")"
 
-#: configuredialog.cpp:4358
+#: configuredialog.cpp:4368
 msgid ""
 "_: continuation of \"By default, &message folders on disk are\"\n"
 "Directories (\"maildir\" format)"
 msgstr "Cyfeiriaduron (fformat \"maildir\")"
 
-#: configuredialog.cpp:4369
+#: configuredialog.cpp:4379
 msgid "Open this folder on startup:"
 msgstr "Agor y blygell yma wrth gychwyn:"
 
-#: configuredialog.cpp:4376
+#: configuredialog.cpp:4386
 #, fuzzy
 msgid "Empty local &trash folder on program exit"
 msgstr "Gwagu'r &sbwriel"
 
-#: configuredialog.cpp:4384
+#: configuredialog.cpp:4394
 msgid "Enable full text &indexing"
 msgstr ""
 
-#: configuredialog.cpp:4396
+#: configuredialog.cpp:4406
 msgid ""
 "_: what's this help\n"
 "<qt>"
@@ -2406,7 +2415,7 @@ msgstr ""
 "ar y ddisg, ond dylai fod yn fwy gadarn, e.e. wrth symud negeseuon rhwng "
 "plygyll.</p></qt>"
 
-#: configuredialog.cpp:4413
+#: configuredialog.cpp:4423
 #, fuzzy
 msgid ""
 "_: what's this help\n"
@@ -2438,7 +2447,7 @@ msgstr ""
 "chwiliad yn dechrau o waelod y rhestr negeseuon a mynd ymlaen i'r blygell "
 "flaenorol, yn dibynnu ar ba ddewisiad a ddewisir.</p></qt>"
 
-#: configuredialog.cpp:4430
+#: configuredialog.cpp:4440
 msgid ""
 "_: what's this help\n"
 "<qt>"
@@ -2451,91 +2460,91 @@ msgid ""
 "KMail while this operation is running.</p></qt>"
 msgstr ""
 
-#: configuredialog.cpp:4504
+#: configuredialog.cpp:4514
 msgid "&IMAP Resource Folder Options"
 msgstr "Dewisiadau &Plygell Adnodd IMAP"
 
-#: configuredialog.cpp:4508
+#: configuredialog.cpp:4518
 msgid "&Enable IMAP resource functionality"
 msgstr "&Galluogi swyddogaeth adnodd IMAP"
 
-#: configuredialog.cpp:4509
+#: configuredialog.cpp:4519
 msgid "This enables the IMAP storage for the Kontact applications"
 msgstr ""
 
-#: configuredialog.cpp:4522
+#: configuredialog.cpp:4532
 #, fuzzy
 msgid "&Format used for the groupware folders:"
 msgstr "&Iaith ar gyfer plygyll cylchwedd:"
 
-#: configuredialog.cpp:4524
+#: configuredialog.cpp:4534
 msgid ""
 "Choose the format to use to store the contents of the groupware folders."
 msgstr ""
 
-#: configuredialog.cpp:4533
+#: configuredialog.cpp:4543
 msgid "Standard (Ical / Vcard)"
 msgstr ""
 
-#: configuredialog.cpp:4533
+#: configuredialog.cpp:4543
 msgid "Kolab (XML)"
 msgstr ""
 
-#: configuredialog.cpp:4541
+#: configuredialog.cpp:4551
 #, fuzzy
 msgid "&Language of the groupware folders:"
 msgstr "&Iaith ar gyfer plygyll cylchwedd:"
 
-#: configuredialog.cpp:4544
+#: configuredialog.cpp:4554
 msgid "Set the language of the folder names"
 msgstr ""
 
-#: configuredialog.cpp:4553
+#: configuredialog.cpp:4563
 msgid "English"
 msgstr "Saesneg"
 
-#: configuredialog.cpp:4553
+#: configuredialog.cpp:4563
 msgid "German"
 msgstr "Almaeneg"
 
-#: configuredialog.cpp:4553
+#: configuredialog.cpp:4563
 msgid "French"
 msgstr "Ffrangeg"
 
-#: configuredialog.cpp:4553
+#: configuredialog.cpp:4563
 msgid "Dutch"
 msgstr "Iseldireg"
 
-#: configuredialog.cpp:4562
+#: configuredialog.cpp:4572
 msgid "Set the parent of the resource folders"
 msgstr ""
 
-#: configuredialog.cpp:4591
+#: configuredialog.cpp:4601
 #, fuzzy
 msgid "&Hide groupware folders"
 msgstr "&Iaith ar gyfer plygyll cylchwedd:"
 
-#: configuredialog.cpp:4595
+#: configuredialog.cpp:4605
 msgid ""
 "When this is checked, you will not see the IMAP resource folders in the folder "
 "tree."
 msgstr ""
 
-#: configuredialog.cpp:4603
+#: configuredialog.cpp:4613
 msgid "Groupware Compatibility && Legacy Options"
 msgstr ""
 
-#: configuredialog.cpp:4608
+#: configuredialog.cpp:4618
 msgid "&Enable groupware functionality"
 msgstr "&Galluogi swyddogaeth cylchwedd"
 
-#: configuredialog.cpp:4616
+#: configuredialog.cpp:4626
 #, fuzzy
 msgid "Mangle From:/To: headers in replies to invitations"
 msgstr ""
 "M&odd etifeddiaeth: Llarpio penawdau Oddiwrth:/I: mewn atebion i wahoddiadau"
 
-#: configuredialog.cpp:4617
+#: configuredialog.cpp:4627
 #, fuzzy
 msgid ""
 "Turn this option on in order to make Outlook(tm) understand your answers to "
@@ -2544,11 +2553,11 @@ msgstr ""
 "Cynnau'r dewisiad yma er mwyn gwneud i Outlook(tm) ddeall eich atebion i "
 "wahoddiadau"
 
-#: configuredialog.cpp:4622
+#: configuredialog.cpp:4632
 msgid "Send invitations in the mail body"
 msgstr ""
 
-#: configuredialog.cpp:4623
+#: configuredialog.cpp:4633
 msgid ""
 "Turn this option on in order to make Outlook(tm) understand your answers to "
 "invitations"
@@ -2557,18 +2566,18 @@ msgstr ""
 "wahoddiadau"
 
 #. i18n: file kmail.kcfg line 140
-#: configuredialog.cpp:4630 rc.cpp:1053
+#: configuredialog.cpp:4640 rc.cpp:1143
 #, no-c-format
 msgid "Automatic invitation sending"
 msgstr ""
 
-#: configuredialog.cpp:4631
+#: configuredialog.cpp:4641
 msgid ""
 "When this is on, the user will not see the mail composer window. Invitation "
 "mails are sent automatically"
 msgstr ""
 
-#: configuredialog.cpp:4644
+#: configuredialog.cpp:4654
 msgid ""
 "<qt>Invitations are normally sent as attachments to a mail. This switch changes "
 "the invitation mails to be sent in the text of the mail instead; this is "
@@ -2580,17 +2589,17 @@ msgid ""
 "be able to work with this.</qt>"
 msgstr ""
 
-#: configuredialog.cpp:4692
+#: configuredialog.cpp:4702
 #, fuzzy
 msgid "<Choose a Folder>"
 msgstr "Creu Plygell"
 
-#: configuredialog.cpp:4763
+#: configuredialog.cpp:4773
 #, fuzzy
 msgid "&Resource folders are subfolders of:"
 msgstr "Mae'r plygyll adnodd yn is-&blygyll o:"
 
-#: configuredialog.cpp:4766
+#: configuredialog.cpp:4776
 #, fuzzy
 msgid "&Resource folders are in account:"
 msgstr "Mae'r plygyll adnodd yn is-&blygyll o:"
@@ -2673,7 +2682,7 @@ msgstr "&Creu Hidlen"
 msgid "Name:"
 msgstr "Enw:"
 
-#: distributionlistdialog.cpp:109 recipientspicker.cpp:292
+#: distributionlistdialog.cpp:109 recipientspicker.cpp:291
 msgid "Email"
 msgstr "Ebost"
 
@@ -2863,7 +2872,7 @@ msgid ""
 msgstr ""
 
 #: filterlogdlg.cpp:262 kmcommands.cpp:2436 kmcommands.cpp:2456
-#: kmmainwidget.cpp:1556 kmmainwidget.cpp:1573 urlhandlermanager.cpp:438
+#: kmmainwidget.cpp:1560 kmmainwidget.cpp:1577 urlhandlermanager.cpp:438
 msgid "KMail Error"
 msgstr "Gwall KMail"
 
@@ -3441,7 +3450,7 @@ msgstr "&Llofnod"
 msgid "&Picture"
 msgstr "&Llun"
 
-#: identitydialog.cpp:448 identitydialog.cpp:460 kmcomposewin.cpp:3652
+#: identitydialog.cpp:448 identitydialog.cpp:460 kmcomposewin.cpp:3653
 msgid "Invalid Email Address"
 msgstr "Cyfeiriad Ebost Annilys"
 
@@ -3496,7 +3505,7 @@ msgstr ""
 "Nid yw'r blygell addasiedig ebost anfonedig ar gyfer dynodiad \"%1\" mewn "
 "bodolaeth (dim mwy).  Felly defnyddir y blygell ragosod ebost anfonedig."
 
-#: identitydialog.cpp:579 kmcomposewin.cpp:3819
+#: identitydialog.cpp:579 kmcomposewin.cpp:3820
 #, fuzzy
 msgid ""
 "The custom drafts folder for identity \"%1\" does not exist (anymore); "
@@ -3520,100 +3529,104 @@ msgstr "Enw Dynodiad"
 msgid "Email Address"
 msgstr "Cyfeiriad Ebost"
 
-#: imapaccountbase.cpp:277 popaccount.cpp:150
+#: imapaccountbase.cpp:276 popaccount.cpp:150
 msgid "You need to supply a username and a password to access this mailbox."
 msgstr ""
 "Rhaid i chi ddarparu defnydd-enw a chyfrinair i gyrchu'r blwch ebost yma."
+
+#: imapaccountbase.cpp:281
+msgid "Authorization Dialog"
+msgstr ""
 
 #: imapaccountbase.cpp:282 popaccount.cpp:151
 msgid "Account:"
 msgstr "Cyfrif:"
 
-#: imapaccountbase.cpp:302
+#: imapaccountbase.cpp:303
 #, c-format
 msgid "Could not start process for %1."
 msgstr "Methu cychwyn proses ar gyfer %1."
 
-#: imapaccountbase.cpp:383
+#: imapaccountbase.cpp:384
 #, fuzzy
 msgid "Error while trying to subscribe to %1:"
 msgstr ""
 "Gwall wrth ysgrifennu'r ffeil:\n"
 " %1"
 
-#: imapaccountbase.cpp:592
+#: imapaccountbase.cpp:593
 #, fuzzy
 msgid "Retrieving Namespaces"
 msgstr "Nôl y rhestr negeseuon"
 
-#: imapaccountbase.cpp:683
+#: imapaccountbase.cpp:684
 msgid ""
 "KMail has detected a prefix entry in the configuration of the account \"%1\" "
 "which is obsolete with the support of IMAP namespaces."
 msgstr ""
 
-#: imapaccountbase.cpp:697 imapaccountbase.cpp:711
+#: imapaccountbase.cpp:698 imapaccountbase.cpp:712
 msgid ""
 "The configuration was automatically migrated but you should check your account "
 "configuration."
 msgstr ""
 
-#: imapaccountbase.cpp:715
+#: imapaccountbase.cpp:716
 msgid ""
 "It was not possible to migrate your configuration automatically so please check "
 "your account configuration."
 msgstr ""
 
-#: imapaccountbase.cpp:829 imapaccountbase.cpp:830
+#: imapaccountbase.cpp:830 imapaccountbase.cpp:831
 msgid "<unknown>"
 msgstr "<anhysbys>"
 
-#: imapaccountbase.cpp:831
+#: imapaccountbase.cpp:832
 msgid "Error while uploading message"
 msgstr "Gwall wrth lanlwytho'r neges"
 
-#: imapaccountbase.cpp:833
+#: imapaccountbase.cpp:834
 #, fuzzy
 msgid ""
 "Could not upload the message dated %1 from %2 with subject %3 on the server."
 msgstr "Methu lanlwytho'r neges %1 ar y gweinydd o blygell %2 efo URL %3."
 
-#: imapaccountbase.cpp:835
+#: imapaccountbase.cpp:836
 msgid "The destination folder was %1, which has the URL %2."
 msgstr ""
 
-#: imapaccountbase.cpp:837
+#: imapaccountbase.cpp:838
 #, fuzzy
 msgid "The error message from the server communication is here:"
 msgstr ""
 "Gall hyn fod o achos nid oes gennych ganiatad i wneud hyn.  Dyma'r neges wall "
 "o'r cyfathrebiaeth gweinydd:"
 
-#: imapaccountbase.cpp:880
+#: imapaccountbase.cpp:881
 msgid ""
 "The connection to the server %1 was unexpectedly closed or timed out. It will "
 "be re-established automatically if possible."
 msgstr ""
 
-#: imapaccountbase.cpp:886
+#: imapaccountbase.cpp:887
 msgid "The connection to account %1 was broken."
 msgstr ""
 
-#: imapaccountbase.cpp:889
+#: imapaccountbase.cpp:890
 msgid "The connection to account %1 timed out."
 msgstr ""
 
-#: imapaccountbase.cpp:1148
+#: imapaccountbase.cpp:1149
 #, fuzzy
 msgid "Error while uploading status of messages to server: "
 msgstr "Gwall wrth lanlwytho'r neges"
 
-#: imapaccountbase.cpp:1193 listjob.cpp:114
+#: imapaccountbase.cpp:1194 listjob.cpp:114
 #, fuzzy
 msgid "retrieving folders"
 msgstr "Nôl rhestr plygyll"
 
-#: imapjob.cpp:154 kmfolderimap.cpp:467
+#: imapjob.cpp:154 kmfolderimap.cpp:468
 #, fuzzy
 msgid "Uploading message data"
 msgstr "Lanlwytho negeseuon i'r gweinydd"
@@ -4017,11 +4030,11 @@ msgstr ""
 msgid "Checking account: "
 msgstr "Ymofyn cyfrif %1 am ebost newydd."
 
-#: kmacctimap.cpp:385 kmfolderimap.cpp:821
+#: kmacctimap.cpp:385 kmfolderimap.cpp:822
 msgid " completed"
 msgstr " gorffenwyd"
 
-#: kmacctimap.cpp:594 kmheaders.cpp:1216
+#: kmacctimap.cpp:594 kmheaders.cpp:1215
 msgid "Unable to process messages: "
 msgstr "Methu prosesu'r negeseuon:"
 
@@ -4255,11 +4268,11 @@ msgstr ""
 msgid "Not enough free disk space?"
 msgstr "Dim digon o le gwag ar y ddisg?"
 
-#: kmcommands.cpp:1648 kmfoldertree.cpp:1813
+#: kmcommands.cpp:1648 kmfoldertree.cpp:1817
 msgid "Move to This Folder"
 msgstr "Symud i'r Blygell Yma"
 
-#: kmcommands.cpp:1650 kmfoldertree.cpp:1815
+#: kmcommands.cpp:1650 kmfoldertree.cpp:1819
 msgid "Copy to This Folder"
 msgstr "Copïo i'r Blygell Yma"
 
@@ -4382,7 +4395,7 @@ msgid ""
 " it is not possible to determine who to chat with."
 msgstr ""
 
-#: kmcommands.cpp:2899 kmcomposewin.cpp:4586 objecttreeparser.cpp:1614
+#: kmcommands.cpp:2899 kmcomposewin.cpp:4587 objecttreeparser.cpp:1614
 msgid ""
 "Chiasmus backend does not offer the \"x-obtain-keys\" function. Please report "
 "this bug."
@@ -4390,19 +4403,19 @@ msgstr ""
 
 #: kmcommands.cpp:2901 kmcommands.cpp:2906 kmcommands.cpp:2915
 #: kmcommands.cpp:2924 kmcommands.cpp:2942 kmcommands.cpp:2953
-#: kmcommands.cpp:3010 kmcomposewin.cpp:4588 kmcomposewin.cpp:4593
-#: kmcomposewin.cpp:4602 messagecomposer.cpp:521 messagecomposer.cpp:529
+#: kmcommands.cpp:3010 kmcomposewin.cpp:4589 kmcomposewin.cpp:4594
+#: kmcomposewin.cpp:4603 messagecomposer.cpp:521 messagecomposer.cpp:529
 #: messagecomposer.cpp:543 objecttreeparser.cpp:1620
 msgid "Chiasmus Backend Error"
 msgstr ""
 
-#: kmcommands.cpp:2912 kmcomposewin.cpp:4599 objecttreeparser.cpp:1626
+#: kmcommands.cpp:2912 kmcomposewin.cpp:4600 objecttreeparser.cpp:1626
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" function "
 "did not return a string list. Please report this bug."
 msgstr ""
 
-#: kmcommands.cpp:2921 kmcomposewin.cpp:4608 objecttreeparser.cpp:1634
+#: kmcommands.cpp:2921 kmcomposewin.cpp:4609 objecttreeparser.cpp:1634
 msgid ""
 "No keys have been found. Please check that a valid key path has been set in the "
 "Chiasmus configuration."
@@ -4453,7 +4466,7 @@ msgstr "Dewis cyfeiriad(au) ebost"
 msgid "Sticky"
 msgstr "Gludiog"
 
-#: kmcomposewin.cpp:316 kmheaders.cpp:129 kmheaders.cpp:177
+#: kmcomposewin.cpp:316 kmheaders.cpp:131 kmheaders.cpp:176
 #: kmmimeparttree.cpp:63 kmpopfiltercnfrmdlg.cpp:43
 msgid "Size"
 msgstr "Maint"
@@ -4462,7 +4475,7 @@ msgstr "Maint"
 msgid "Encoding"
 msgstr "Amgodiad"
 
-#: kmcomposewin.cpp:324 kmcomposewin.cpp:3001
+#: kmcomposewin.cpp:324 kmcomposewin.cpp:3002
 msgid "Compress"
 msgstr "Compress"
 
@@ -4474,7 +4487,7 @@ msgstr "Cêl-ysgrifo"
 msgid "Sign"
 msgstr "Llofnodi"
 
-#: kmcomposewin.cpp:491 kmcomposewin.cpp:3314
+#: kmcomposewin.cpp:491 kmcomposewin.cpp:3315
 #, fuzzy
 msgid "Name of the attachment:"
 msgstr "atodiad"
@@ -4588,7 +4601,7 @@ msgstr "&Anfon Ebost"
 msgid "&Send Mail Via"
 msgstr "&Sendmail"
 
-#: kmcomposewin.cpp:1105 kmcomposewin.cpp:1114 kmcomposewin.cpp:3930
+#: kmcomposewin.cpp:1105 kmcomposewin.cpp:1114 kmcomposewin.cpp:3931
 #: redirectdialog.cpp:83
 msgid "Send &Later"
 msgstr "Anfon yn &Nes Ymlaen"
@@ -4655,7 +4668,7 @@ msgid "Cl&ean Spaces"
 msgstr "Glan&hau Gofodnodau"
 
 #. i18n: file kmail.kcfg line 237
-#: kmcomposewin.cpp:1220 kmreaderwin.cpp:668 rc.cpp:1111
+#: kmcomposewin.cpp:1220 kmreaderwin.cpp:668 rc.cpp:1201
 #, no-c-format
 msgid "Use Fi&xed Font"
 msgstr "Def&nyddio Wynebfath Penodol"
@@ -4744,7 +4757,7 @@ msgstr "Atodi Allwedd &Gyhoeddus..."
 msgid "Attach &My Public Key"
 msgstr "Atodi &F'Allwedd Gyhoeddus..."
 
-#: kmcomposewin.cpp:1307 kmcomposewin.cpp:2074
+#: kmcomposewin.cpp:1307 kmcomposewin.cpp:2075
 msgid "&Attach File..."
 msgstr "A&todi Ffeil..."
 
@@ -4781,31 +4794,31 @@ msgstr "Llof&odi Neges"
 msgid "&Cryptographic Message Format"
 msgstr ""
 
-#: kmcomposewin.cpp:1399 kmcomposewin.cpp:4430
+#: kmcomposewin.cpp:1399 kmcomposewin.cpp:4431
 msgid "Standard"
 msgstr "Safonol"
 
-#: kmcomposewin.cpp:1400 kmcomposewin.cpp:4432
+#: kmcomposewin.cpp:1400 kmcomposewin.cpp:4433
 msgid "Bulleted List (Disc)"
 msgstr ""
 
-#: kmcomposewin.cpp:1401 kmcomposewin.cpp:4434
+#: kmcomposewin.cpp:1401 kmcomposewin.cpp:4435
 msgid "Bulleted List (Circle)"
 msgstr ""
 
-#: kmcomposewin.cpp:1402 kmcomposewin.cpp:4436
+#: kmcomposewin.cpp:1402 kmcomposewin.cpp:4437
 msgid "Bulleted List (Square)"
 msgstr ""
 
-#: kmcomposewin.cpp:1403 kmcomposewin.cpp:4438
+#: kmcomposewin.cpp:1403 kmcomposewin.cpp:4439
 msgid "Ordered List (Decimal)"
 msgstr ""
 
-#: kmcomposewin.cpp:1404 kmcomposewin.cpp:4440
+#: kmcomposewin.cpp:1404 kmcomposewin.cpp:4441
 msgid "Ordered List (Alpha lower)"
 msgstr ""
 
-#: kmcomposewin.cpp:1405 kmcomposewin.cpp:4442
+#: kmcomposewin.cpp:1405 kmcomposewin.cpp:4443
 msgid "Ordered List (Alpha upper)"
 msgstr ""
 
@@ -4859,27 +4872,27 @@ msgstr "Colofn: %1"
 msgid " Line: %1 "
 msgstr "Llinell: %1"
 
-#: kmcomposewin.cpp:2001
+#: kmcomposewin.cpp:2002
 #, fuzzy
 msgid "Do you want to save the message for later or discard it?"
 msgstr "Hoffech daflu'r neges neu ei chadw tan hwyrach?"
 
-#: kmcomposewin.cpp:2002
+#: kmcomposewin.cpp:2003
 #, fuzzy
 msgid "Close Composer"
 msgstr "Cyfan&soddydd Newydd"
 
-#: kmcomposewin.cpp:2003
+#: kmcomposewin.cpp:2004
 msgid "&Save as Draft"
 msgstr "&Cadw fel Drafft"
 
-#: kmcomposewin.cpp:2004
+#: kmcomposewin.cpp:2005
 msgid ""
 "Save this message in the Drafts folder. It can then be edited and sent at a "
 "later time."
 msgstr ""
 
-#: kmcomposewin.cpp:2070
+#: kmcomposewin.cpp:2071
 msgid ""
 "The message you have composed seems to refer to an attached file but you have "
 "not attached anything.\n"
@@ -4889,15 +4902,15 @@ msgstr ""
 "ond nid ydych wedi atodi rhywbeth.\n"
 "Ydych eisiau atodi ffeil i'ch neges?"
 
-#: kmcomposewin.cpp:2073
+#: kmcomposewin.cpp:2074
 msgid "File Attachment Reminder"
 msgstr "Atgoffydd Atodiad Ffeil"
 
-#: kmcomposewin.cpp:2075
+#: kmcomposewin.cpp:2076
 msgid "&Send as Is"
 msgstr "&Anfon e"
 
-#: kmcomposewin.cpp:2156
+#: kmcomposewin.cpp:2157
 #, fuzzy
 msgid ""
 "<qt>"
@@ -4908,71 +4921,71 @@ msgstr ""
 "<p>Methodd KMail adnabod lleoliad yr atodiad (%1).</p>"
 "<p>Rhaid i chi benodi'r llwybr llawn os hoffech atodi ffeil.</p></qt>"
 
-#: kmcomposewin.cpp:2492
+#: kmcomposewin.cpp:2493
 msgid "Attach File"
 msgstr "Atodi Ffeil"
 
 #. i18n: file kmcomposerui.rc line 63
-#: kmcomposewin.cpp:2493 rc.cpp:15
+#: kmcomposewin.cpp:2494 rc.cpp:60
 #, no-c-format
 msgid "&Attach"
 msgstr "&Atodi"
 
-#: kmcomposewin.cpp:2640
+#: kmcomposewin.cpp:2641
 msgid "Insert File"
 msgstr "Mewnosod Ffeil"
 
-#: kmcomposewin.cpp:2810
+#: kmcomposewin.cpp:2811
 msgid ""
 "<qt>"
 "<p>An error occurred while trying to export the key from the backend:</p>"
 "<p><b>%1</b></p></qt>"
 msgstr ""
 
-#: kmcomposewin.cpp:2814
+#: kmcomposewin.cpp:2815
 msgid "Key Export Failed"
 msgstr ""
 
-#: kmcomposewin.cpp:2841
+#: kmcomposewin.cpp:2842
 #, fuzzy
 msgid "Exporting key..."
 msgstr "Gwagu'r sbwriel..."
 
-#: kmcomposewin.cpp:2852
+#: kmcomposewin.cpp:2853
 #, c-format
 msgid "OpenPGP key 0x%1"
 msgstr "Allwedd OpenPGP 0x%1"
 
-#: kmcomposewin.cpp:2867
+#: kmcomposewin.cpp:2868
 msgid "Attach Public OpenPGP Key"
 msgstr "Atodi Allwedd OpenPGP Gyhoeddus"
 
-#: kmcomposewin.cpp:2868
+#: kmcomposewin.cpp:2869
 msgid "Select the public key which should be attached."
 msgstr "Dewis yr allwedd gyhoeddus a ddylid eu hatodi."
 
-#: kmcomposewin.cpp:2890 kmreaderwin.cpp:1882
+#: kmcomposewin.cpp:2891 kmreaderwin.cpp:1888
 msgid ""
 "_: to open\n"
 "Open"
 msgstr "Agor"
 
-#: kmcomposewin.cpp:2892
+#: kmcomposewin.cpp:2893
 msgid ""
 "_: to view\n"
 "View"
 msgstr "Gweld"
 
-#: kmcomposewin.cpp:2900
+#: kmcomposewin.cpp:2901
 msgid "Add Attachment..."
 msgstr "Ychwanegu Atodiad..."
 
-#: kmcomposewin.cpp:2986 kmcomposewin.cpp:2994
+#: kmcomposewin.cpp:2987 kmcomposewin.cpp:2995
 #, fuzzy
 msgid "KMail could not compress the file."
 msgstr "Methu ysgrifennu'r ffeil."
 
-#: kmcomposewin.cpp:3000
+#: kmcomposewin.cpp:3001
 #, fuzzy
 msgid ""
 "The compressed file is larger than the original. Do you want to keep the "
@@ -4981,25 +4994,25 @@ msgstr ""
 "Mae'r rhan yma o'r neges wedi'i llofnodi.  Ydych eisiau dal y llofnod wrth "
 "gadw?"
 
-#: kmcomposewin.cpp:3001
+#: kmcomposewin.cpp:3002
 msgid "Keep"
 msgstr "Cadw"
 
-#: kmcomposewin.cpp:3067 kmcomposewin.cpp:3075
+#: kmcomposewin.cpp:3068 kmcomposewin.cpp:3076
 #, fuzzy
 msgid "KMail could not uncompress the file."
 msgstr "Methu ysgrifennu'r ffeil."
 
-#: kmcomposewin.cpp:3221
+#: kmcomposewin.cpp:3222
 msgid "Save Attachment As"
 msgstr "Cadw Atodiad Fel..."
 
-#: kmcomposewin.cpp:3504 kmfilterdlg.cpp:667 kmfolderdia.cpp:258
-#: kmfolderdia.cpp:584 kmfoldertree.cpp:1487 managesievescriptsdialog.cpp:280
+#: kmcomposewin.cpp:3505 kmfilterdlg.cpp:667 kmfolderdia.cpp:258
+#: kmfolderdia.cpp:584 kmfoldertree.cpp:1491 managesievescriptsdialog.cpp:280
 msgid "unnamed"
 msgstr "di-enw"
 
-#: kmcomposewin.cpp:3528
+#: kmcomposewin.cpp:3529
 msgid ""
 "<qt>"
 "<p>You have requested that messages be encrypted to yourself, but the currently "
@@ -5008,11 +5021,11 @@ msgid ""
 "<p>Please select the key(s) to use in the identity configuration.</p></qt>"
 msgstr ""
 
-#: kmcomposewin.cpp:3535
+#: kmcomposewin.cpp:3536
 msgid "Undefined Encryption Key"
 msgstr "Allwedd Gêl-ysgrifo Anniffiniedig"
 
-#: kmcomposewin.cpp:3578
+#: kmcomposewin.cpp:3579
 #, fuzzy
 msgid ""
 "<qt>"
@@ -5026,139 +5039,139 @@ msgstr ""
 "<p>Gallwch ddiffinio'r allwedd OpenPGP a ddylir ei defnyddio efo'r dynodiad "
 "cyfredol yn y ffurfweddiad dynodiad.</p></qt>"
 
-#: kmcomposewin.cpp:3585
+#: kmcomposewin.cpp:3586
 msgid "Undefined Signing Key"
 msgstr "Allwedd Lofnodi heb ei Diffinio"
 
-#: kmcomposewin.cpp:3663
+#: kmcomposewin.cpp:3664
 msgid ""
 "KMail is currently in offline mode,your messages will be kept in the outbox "
 "until you go online."
 msgstr ""
 
-#: kmcomposewin.cpp:3665 kmkernel.cpp:1175
+#: kmcomposewin.cpp:3666 kmkernel.cpp:1175
 msgid "Online/Offline"
 msgstr ""
 
-#: kmcomposewin.cpp:3681
+#: kmcomposewin.cpp:3682
 msgid ""
 "You must enter your email address in the From: field. You should also set your "
 "email address for all identities, so that you do not have to enter it for each "
 "message."
 msgstr ""
 
-#: kmcomposewin.cpp:3691
+#: kmcomposewin.cpp:3692
 #, fuzzy
 msgid ""
 "You must specify at least one receiver,either in the To: field or as CC or as "
 "BCC."
 msgstr "Rhaid i chi benodi o leiaf un derbyniwr yn y maes I:."
 
-#: kmcomposewin.cpp:3714
+#: kmcomposewin.cpp:3715
 msgid "You did not specify a subject. Send message anyway?"
 msgstr "Nid ydych wedi penodi pwnc.  Anfon y neges beth bynnag?"
 
-#: kmcomposewin.cpp:3716
+#: kmcomposewin.cpp:3717
 msgid "No Subject Specified"
 msgstr "Ni Phenodwyd Pwnc"
 
-#: kmcomposewin.cpp:3717
+#: kmcomposewin.cpp:3718
 msgid "S&end as Is"
 msgstr "A&nfon e"
 
-#: kmcomposewin.cpp:3718
+#: kmcomposewin.cpp:3719
 #, fuzzy
 msgid "&Specify the Subject"
 msgstr "&Na, Gadewch i Mi Benodi'r Pwnc"
 
-#: kmcomposewin.cpp:3756
+#: kmcomposewin.cpp:3757
 msgid "&Keep markup, do not sign/encrypt"
 msgstr ""
 
-#: kmcomposewin.cpp:3757
+#: kmcomposewin.cpp:3758
 msgid "&Keep markup, do not encrypt"
 msgstr ""
 
-#: kmcomposewin.cpp:3758
+#: kmcomposewin.cpp:3759
 msgid "&Keep markup, do not sign"
 msgstr ""
 
-#: kmcomposewin.cpp:3760
+#: kmcomposewin.cpp:3761
 #, fuzzy
 msgid "Sign/Encrypt (delete markup)"
 msgstr "Llofnodi/Cêl-ysgrifo"
 
-#: kmcomposewin.cpp:3761
+#: kmcomposewin.cpp:3762
 msgid "Encrypt (delete markup)"
 msgstr ""
 
-#: kmcomposewin.cpp:3762
+#: kmcomposewin.cpp:3763
 msgid "Sign (delete markup)"
 msgstr ""
 
-#: kmcomposewin.cpp:3764
+#: kmcomposewin.cpp:3765
 msgid ""
 "<qt>"
 "<p>Inline signing/encrypting of HTML messages is not possible;</p>"
 "<p>do you want to delete your markup?</p></qt>"
 msgstr ""
 
-#: kmcomposewin.cpp:3766
+#: kmcomposewin.cpp:3767
 #, fuzzy
 msgid "Sign/Encrypt Message?"
 msgstr "Cêl-ysgrifo'r Neges?"
 
-#: kmcomposewin.cpp:3927
+#: kmcomposewin.cpp:3928
 msgid "About to send email..."
 msgstr "Ar fin anfon ebost..."
 
-#: kmcomposewin.cpp:3928
+#: kmcomposewin.cpp:3929
 msgid "Send Confirmation"
 msgstr "Anfon Cadarnhad"
 
-#: kmcomposewin.cpp:3929 redirectdialog.cpp:82
+#: kmcomposewin.cpp:3930 redirectdialog.cpp:82
 msgid "&Send Now"
 msgstr "Anfo&n Rwan"
 
-#: kmcomposewin.cpp:4077
+#: kmcomposewin.cpp:4078
 msgid " Spell check canceled."
 msgstr "Diddymwyd y gwirio sillafu."
 
-#: kmcomposewin.cpp:4080
+#: kmcomposewin.cpp:4081
 msgid " Spell check stopped."
 msgstr "Arhoswyd y gwiriad sillafu."
 
-#: kmcomposewin.cpp:4083
+#: kmcomposewin.cpp:4084
 msgid " Spell check complete."
 msgstr "Gwiriad sillafu yn gyflawn."
 
-#: kmcomposewin.cpp:4266 kmcomposewin.cpp:4274
+#: kmcomposewin.cpp:4267 kmcomposewin.cpp:4275
 msgid "Spellchecker"
 msgstr "Gwirydd Sillafu"
 
-#: kmcomposewin.cpp:4573
+#: kmcomposewin.cpp:4574
 msgid ""
 "Please configure a Crypto Backend to use for Chiasmus encryption first.\n"
 "You can do this in the Crypto Backends tab of the configure dialog's Security "
 "page."
 msgstr ""
 
-#: kmcomposewin.cpp:4577
+#: kmcomposewin.cpp:4578
 msgid ""
 "It looks as though libkleopatra was compiled without Chiasmus support. You "
 "might want to recompile libkleopatra with --enable-chiasmus."
 msgstr ""
 
-#: kmcomposewin.cpp:4580
+#: kmcomposewin.cpp:4581
 msgid "No Chiasmus Backend Configured"
 msgstr ""
 
-#: kmcomposewin.cpp:4611
+#: kmcomposewin.cpp:4612
 #, fuzzy
 msgid "No Chiasmus Keys Found"
 msgstr "Ni Chanfuwyd Tystysgrif"
 
-#: kmcomposewin.cpp:4615
+#: kmcomposewin.cpp:4616
 #, fuzzy
 msgid "Chiasmus Encryption Key Selection"
 msgstr "Dewis Allwedd Cêl-ysgrifo"
@@ -5172,19 +5185,19 @@ msgstr ""
 msgid "Add as Attachment"
 msgstr "Ychwanegu Atodiad..."
 
-#: kmedit.cpp:380
+#: kmedit.cpp:382
 msgid "Unable to start external editor."
 msgstr "Methu cychwyn golygydd allanol."
 
-#: kmedit.cpp:431
+#: kmedit.cpp:433
 msgid "Suggestions"
 msgstr "Awgrymiadau"
 
-#: kmedit.cpp:483
+#: kmedit.cpp:485
 msgid "Automatic spellchecking is not possible on text with markup."
 msgstr ""
 
-#: kmedit.cpp:527
+#: kmedit.cpp:529
 msgid ""
 "The external editor is still running.\n"
 "Abort the external editor or leave it open?"
@@ -5192,19 +5205,19 @@ msgstr ""
 "Mae'r golygydd allanol yn dal i redeg.\n"
 "Erthylu'r golygydd allanol, neu ei adael yn agored?"
 
-#: kmedit.cpp:530
+#: kmedit.cpp:532
 msgid "Abort Editor"
 msgstr "Erthylu'r Golygydd"
 
-#: kmedit.cpp:530
+#: kmedit.cpp:532
 msgid "Leave Editor Open"
 msgstr "Gadael y Golygydd yn Agored"
 
-#: kmedit.cpp:554
+#: kmedit.cpp:556
 msgid "Spellcheck - KMail"
 msgstr "Gwirydd Sillafu - KMail"
 
-#: kmedit.cpp:713
+#: kmedit.cpp:715
 msgid ""
 "ISpell/Aspell could not be started. Please make sure you have ISpell or Aspell "
 "properly configured and in your PATH."
@@ -5212,11 +5225,11 @@ msgstr ""
 "Ni ellid dechrau ISpell/Aspell.  Sicrhewch bod ISpell neu Aspell wedi ei "
 "ffurfweddu yn iawn, ac yn eich PATH."
 
-#: kmedit.cpp:722
+#: kmedit.cpp:724
 msgid "ISpell/Aspell seems to have crashed."
 msgstr "Ymddengys bod Spell/Aspell wedi chwalu."
 
-#: kmedit.cpp:731
+#: kmedit.cpp:733
 msgid "No misspellings encountered."
 msgstr "Ni chyfarfuwyd camsillafiannau."
 
@@ -5692,7 +5705,9 @@ msgstr "I Lawr"
 msgid "Rename..."
 msgstr "Ailenwi..."
 
-#: kmfilterdlg.cpp:595 kmsearchpattern.h:219
+#. i18n: file kmail_part.rc line 10
+#: kmfilterdlg.cpp:595 kmsearchpattern.h:219 rc.cpp:6 rc.cpp:75
+#, no-c-format
 msgid "New"
 msgstr "Newydd"
 
@@ -5799,11 +5814,11 @@ msgstr ""
 "Ydych yn sicr yr hoffech ailfywio celc IMAP plygell %1, a'i holl is-blygyll?n "
 "Bydd hyn yn gwaredu pob newid a wnaethoch yn lleol i'ch plygyll."
 
-#: kmfoldercachedimap.cpp:518 kmmainwidget.cpp:1155
+#: kmfoldercachedimap.cpp:518 kmmainwidget.cpp:1159
 msgid "Refresh IMAP Cache"
 msgstr "Ailfywio'r Gelc IMAP"
 
-#: kmfoldercachedimap.cpp:519 kmmainwidget.cpp:1155
+#: kmfoldercachedimap.cpp:519 kmmainwidget.cpp:1159
 msgid "&Refresh"
 msgstr "&Ailfywio"
 
@@ -5991,7 +6006,7 @@ msgid "Permissions (ACL)"
 msgstr "Caniatadau"
 
 #. i18n: file folderpropertiesdialog.ui line 30
-#: kmfolderdia.cpp:115 rc.cpp:366
+#: kmfolderdia.cpp:115 rc.cpp:456
 #, no-c-format
 msgid "General"
 msgstr "Cyffredinol"
@@ -6001,7 +6016,7 @@ msgid "Access Control"
 msgstr ""
 
 #. i18n: file folderpropertiesdialog.ui line 243
-#: kmfolderdia.cpp:273 rc.cpp:386
+#: kmfolderdia.cpp:273 rc.cpp:476
 #, no-c-format
 msgid "Use custom &icons"
 msgstr "Defnyddio &eiconau addasiedig"
@@ -6058,16 +6073,16 @@ msgid "Sho&w column:"
 msgstr "Colofn Faint"
 
 #. i18n: file folderpropertiesdialog.ui line 520
-#: kmfolderdia.cpp:385 kmheaders.cpp:175 kmheaders.cpp:234 kmheaders.cpp:350
-#: kmheaders.cpp:521 kmheaders.cpp:733 kmpopfiltercnfrmdlg.cpp:40 rc.cpp:434
+#: kmfolderdia.cpp:385 kmheaders.cpp:174 kmheaders.cpp:233 kmheaders.cpp:349
+#: kmheaders.cpp:520 kmheaders.cpp:732 kmpopfiltercnfrmdlg.cpp:40 rc.cpp:524
 #, no-c-format
 msgid "Sender"
 msgstr "Anfonwr"
 
 #. i18n: file folderpropertiesdialog.ui line 525
-#: kmfolderdia.cpp:386 kmheaders.cpp:130 kmheaders.cpp:178 kmheaders.cpp:231
-#: kmheaders.cpp:236 kmheaders.cpp:352 kmheaders.cpp:523 kmheaders.cpp:735
-#: kmpopfiltercnfrmdlg.cpp:41 rc.cpp:437
+#: kmfolderdia.cpp:386 kmheaders.cpp:132 kmheaders.cpp:177 kmheaders.cpp:230
+#: kmheaders.cpp:235 kmheaders.cpp:351 kmheaders.cpp:522 kmheaders.cpp:734
+#: kmpopfiltercnfrmdlg.cpp:41 rc.cpp:527
 #, no-c-format
 msgid "Receiver"
 msgstr "Derbyniwr"
@@ -6142,55 +6157,55 @@ msgstr "<qt>Methu mynd i mewn i blygell <b>%1</b>.</qt>"
 msgid "<qt>Folder <b>%1</b> is unreadable.</qt>"
 msgstr "<qt>Methu darllen plygell <b>%1</b>.</qt>"
 
-#: kmfolderimap.cpp:240
+#: kmfolderimap.cpp:241
 #, fuzzy
 msgid "Error while removing a folder."
 msgstr "Gwall wrth lanlwytho'r plygell"
 
-#: kmfolderimap.cpp:468
+#: kmfolderimap.cpp:469
 msgid "Destination folder: "
 msgstr "Plygell cyrchfan: "
 
-#: kmfolderimap.cpp:1029
+#: kmfolderimap.cpp:1030
 msgid "checking"
 msgstr ""
 
-#: kmfolderimap.cpp:1078
+#: kmfolderimap.cpp:1079
 #, fuzzy
 msgid "Error while querying the server status."
 msgstr "Gwall wrth lanlwytho'r neges"
 
-#: kmfolderimap.cpp:1185
+#: kmfolderimap.cpp:1186
 #, fuzzy
 msgid "Retrieving message status"
 msgstr "Nôl y rhestr negeseuon"
 
-#: kmfolderimap.cpp:1200 kmfolderimap.cpp:1290
+#: kmfolderimap.cpp:1201 kmfolderimap.cpp:1291
 #, fuzzy
 msgid "Retrieving messages"
 msgstr "Nôl y rhestr negeseuon"
 
-#: kmfolderimap.cpp:1225
+#: kmfolderimap.cpp:1226
 #, c-format
 msgid "Error while listing the contents of the folder %1."
 msgstr ""
 
-#: kmfolderimap.cpp:1581
+#: kmfolderimap.cpp:1582
 #, fuzzy
 msgid "Error while retrieving messages."
 msgstr "Gwall wrth lanlwytho'r neges"
 
-#: kmfolderimap.cpp:1645
+#: kmfolderimap.cpp:1646
 #, fuzzy
 msgid "Error while creating a folder."
 msgstr "Gwall wrth lanlwytho'r plygell"
 
-#: kmfolderimap.cpp:1969
+#: kmfolderimap.cpp:1970
 #, fuzzy
 msgid "updating message counts"
 msgstr "Ni chanfuwyd negeseuon dyblyg."
 
-#: kmfolderimap.cpp:1993
+#: kmfolderimap.cpp:1994
 #, fuzzy
 msgid "Error while getting folder information."
 msgstr "Gwall wrth lanlwytho'r plygell"
@@ -6327,11 +6342,11 @@ msgstr "Methu ychwanegu neges i'r blygell (dim lle ar ôl ar y ddyfais?)"
 msgid "Are you sure you want to expire old messages?"
 msgstr "Ydych wir eisiau darfod hen negeseuon?"
 
-#: kmfoldermgr.cpp:63 kmmainwidget.cpp:1169
+#: kmfoldermgr.cpp:63 kmmainwidget.cpp:1173
 msgid "Expire Old Messages?"
 msgstr "Darfod Hen Negeseuon?"
 
-#: kmfoldermgr.cpp:63 kmmainwidget.cpp:1169
+#: kmfoldermgr.cpp:63 kmmainwidget.cpp:1173
 msgid "Expire"
 msgstr "Darfod"
 
@@ -6379,7 +6394,7 @@ msgstr "I&s-blygell Newydd..."
 msgid "Create a new subfolder under the currently selected folder"
 msgstr "Cliciwch i waredu'r gwasanaeth a ddewisir yn gyfredol"
 
-#: kmfoldertree.cpp:335 kmheaders.cpp:119
+#: kmfoldertree.cpp:335 kmheaders.cpp:121
 msgid "View Columns"
 msgstr "Gwled Colofnau"
 
@@ -6412,11 +6427,11 @@ msgstr "Ewch I"
 msgid "Do Not Go To"
 msgstr ""
 
-#: kmfoldertree.cpp:982 kmmainwidget.cpp:2375
+#: kmfoldertree.cpp:982 kmmainwidget.cpp:2379
 msgid "&New Folder..."
 msgstr "&Plygell Newydd"
 
-#: kmfoldertree.cpp:993 kmmainwidget.cpp:2271
+#: kmfoldertree.cpp:993 kmmainwidget.cpp:2275
 msgid "Check &Mail"
 msgstr "Ymofyn am E&bost"
 
@@ -6425,109 +6440,109 @@ msgstr "Ymofyn am E&bost"
 msgid "&Move Folder To"
 msgstr "Symud i'r Blygell Yma"
 
-#: kmfoldertree.cpp:1034
+#: kmfoldertree.cpp:1038
 msgid "Subscription..."
 msgstr "Tanysgrifiad..."
 
-#: kmfoldertree.cpp:1041
+#: kmfoldertree.cpp:1045
 #, fuzzy
 msgid "Refresh Folder List"
 msgstr "Rhestr Plygyll"
 
-#: kmfoldertree.cpp:1048 kmmainwidget.cpp:3354
+#: kmfoldertree.cpp:1052 kmmainwidget.cpp:3359
 msgid "&Troubleshoot IMAP Cache..."
 msgstr "&Cywiro Celc IMAP..."
 
-#: kmfoldertree.cpp:1061 kmmainwidget.cpp:2385
+#: kmfoldertree.cpp:1065 kmmainwidget.cpp:2389
 msgid "&Assign Shortcut..."
 msgstr ""
 
-#: kmfoldertree.cpp:1066
+#: kmfoldertree.cpp:1070
 msgid "Expire..."
 msgstr "Darfod ..."
 
-#: kmfoldertree.cpp:1144
+#: kmfoldertree.cpp:1148
 msgid ""
 "<qt>Cannot create folder <b>%1</b> because of insufficient permissions on the "
 "server. If you think you should be able to create subfolders here, ask your "
 "administrator to grant you rights to do so.</qt> "
 msgstr ""
 
-#: kmfoldertree.cpp:1387
+#: kmfoldertree.cpp:1391
 msgid "&Move Here"
 msgstr "&Symud Yma"
 
-#: kmfoldertree.cpp:1388
+#: kmfoldertree.cpp:1392
 msgid "&Copy Here"
 msgstr "&Copïo Yma"
 
-#: kmfoldertree.cpp:1390
+#: kmfoldertree.cpp:1394
 msgid "C&ancel"
 msgstr "Didd&ymu"
 
-#: kmfoldertree.cpp:1598 kmmainwidget.cpp:363 kmmainwidget.cpp:367
+#: kmfoldertree.cpp:1602 kmmainwidget.cpp:363 kmmainwidget.cpp:367
 #: kmsearchpattern.h:220
 msgid "Unread"
 msgstr "Heb eu Darllen"
 
-#: kmfoldertree.cpp:1611 kmmainwidget.cpp:365
+#: kmfoldertree.cpp:1615 kmmainwidget.cpp:365
 msgid "Total"
 msgstr "Cyfanswm"
 
-#: kmfoldertree.cpp:1851
+#: kmfoldertree.cpp:1855
 msgid "<qt>Cannot move folder <b>%1</b> into a subfolder below itself.</qt>"
 msgstr "<qt>Methu symud plygell <b>%1</b> i mewn i is-blygell dan ei hun.</qt>"
 
-#: kmheaders.cpp:121
+#: kmheaders.cpp:123
 msgid "Status"
 msgstr "Cyflwr"
 
-#: kmheaders.cpp:122 kmsearchpattern.h:218
+#: kmheaders.cpp:124 kmsearchpattern.h:218
 msgid "Important"
 msgstr "Pwysig"
 
-#: kmheaders.cpp:123
+#: kmheaders.cpp:125
 #, fuzzy
 msgid "Todo"
 msgstr "I:"
 
-#: kmheaders.cpp:124
+#: kmheaders.cpp:126
 msgid "Attachment"
 msgstr "Atodiad"
 
-#: kmheaders.cpp:125
+#: kmheaders.cpp:127
 #, fuzzy
 msgid "Spam/Ham"
 msgstr "ebostach"
 
-#: kmheaders.cpp:126
+#: kmheaders.cpp:128
 #, fuzzy
 msgid "Watched/Ignored"
 msgstr "wedi'u anwybyddu"
 
-#: kmheaders.cpp:127
+#: kmheaders.cpp:129
 msgid "Signature"
 msgstr "Llofnod"
 
-#: kmheaders.cpp:174 kmheaders.cpp:743 kmheaders.cpp:2450
+#: kmheaders.cpp:173 kmheaders.cpp:742 kmheaders.cpp:2450
 #: kmpopfiltercnfrmdlg.cpp:39 searchwindow.cpp:179
 msgid "Subject"
 msgstr "Pwnc"
 
-#: kmheaders.cpp:176 kmheaders.cpp:738 kmheaders.cpp:2445
+#: kmheaders.cpp:175 kmheaders.cpp:737 kmheaders.cpp:2445
 #: kmpopfiltercnfrmdlg.cpp:42 searchwindow.cpp:183
 msgid "Date"
 msgstr "Dyddiad"
 
-#: kmheaders.cpp:740 kmheaders.cpp:2447
+#: kmheaders.cpp:739 kmheaders.cpp:2447
 msgid "Date (Order of Arrival)"
 msgstr "Dyddiad (Trefn Cyrraedd)"
 
-#: kmheaders.cpp:745 kmheaders.cpp:2452
+#: kmheaders.cpp:744 kmheaders.cpp:2452
 msgid " (Status)"
 msgstr "(Cyflwr)"
 
-#: kmheaders.cpp:1301
+#: kmheaders.cpp:1300
 #, fuzzy, c-format
 msgid ""
 "_n: 1 unsent\n"
@@ -6536,11 +6551,11 @@ msgstr ""
 "%n heb ei ddarllen\n"
 "%n heb eu darllen"
 
-#: kmheaders.cpp:1301
+#: kmheaders.cpp:1300
 msgid "0 unsent"
 msgstr ""
 
-#: kmheaders.cpp:1303
+#: kmheaders.cpp:1302
 #, fuzzy, c-format
 msgid ""
 "_n: 1 unread\n"
@@ -6549,12 +6564,12 @@ msgstr ""
 "%n heb ei ddarllen\n"
 "%n heb eu darllen"
 
-#: kmheaders.cpp:1303
+#: kmheaders.cpp:1302
 #, fuzzy
 msgid "0 unread"
 msgstr "heb eu darllen"
 
-#: kmheaders.cpp:1305
+#: kmheaders.cpp:1304
 #, fuzzy
 msgid ""
 "_n: 1 message, %1.\n"
@@ -6563,18 +6578,18 @@ msgstr ""
 "%n neges, %1.\n"
 "%n o negeseuon, %1."
 
-#: kmheaders.cpp:1306
+#: kmheaders.cpp:1305
 #, fuzzy
 msgid "0 messages"
 msgstr "<neges>"
 
-#: kmheaders.cpp:1308
+#: kmheaders.cpp:1307
 msgid ""
 "_: %1 = n messages, m unread.\n"
 "%1 Folder is read-only."
 msgstr ""
 
-#: kmheaders.cpp:1473
+#: kmheaders.cpp:1472
 #, fuzzy, c-format
 msgid ""
 "_n: <qt>Do you really want to delete the selected message?"
@@ -6585,55 +6600,55 @@ msgstr ""
 "<qt>Ydych wir eisiau dileu'r negeseuon dewisiedig?"
 "<br>Wedi'u dileu, ni ellir eu adfer!</qt>"
 
-#: kmheaders.cpp:1475
+#: kmheaders.cpp:1474
 msgid "Delete Messages"
 msgstr "Dileu Negeseuon"
 
-#: kmheaders.cpp:1475
+#: kmheaders.cpp:1474
 #, fuzzy
 msgid "Delete Message"
 msgstr "Dileu Negeseuon"
 
-#: kmheaders.cpp:1499
+#: kmheaders.cpp:1498
 #, fuzzy
 msgid "Messages deleted successfully."
 msgstr "Symudwyd y negeseuon yn llwyddiannus."
 
-#: kmheaders.cpp:1499
+#: kmheaders.cpp:1498
 #, fuzzy
 msgid "Messages moved successfully"
 msgstr "Symudwyd y negeseuon yn llwyddiannus."
 
-#: kmheaders.cpp:1522
+#: kmheaders.cpp:1521
 #, fuzzy
 msgid "Deleting messages failed."
 msgstr "Methwyd symud y negeseuon."
 
-#: kmheaders.cpp:1522
+#: kmheaders.cpp:1521
 msgid "Moving messages failed."
 msgstr "Methwyd symud y negeseuon."
 
-#: kmheaders.cpp:1525
+#: kmheaders.cpp:1524
 #, fuzzy
 msgid "Deleting messages canceled."
 msgstr "Diddymwyd symud y negeseuon."
 
-#: kmheaders.cpp:1525
+#: kmheaders.cpp:1524
 #, fuzzy
 msgid "Moving messages canceled."
 msgstr "Diddymwyd symud y negeseuon."
 
-#: kmheaders.cpp:2279 kmmainwidget.cpp:2611 kmreadermainwin.cpp:364
+#: kmheaders.cpp:2278 kmmainwidget.cpp:2615 kmreadermainwin.cpp:364
 #: searchwindow.cpp:737
 msgid "&Copy To"
 msgstr "&Copïo I"
 
-#: kmheaders.cpp:2282 kmheaders.cpp:2288 kmmainwidget.cpp:2608
+#: kmheaders.cpp:2281 kmheaders.cpp:2287 kmmainwidget.cpp:2612
 #: searchwindow.cpp:738
 msgid "&Move To"
 msgstr "&Symud I"
 
-#: kmheaders.cpp:2611 kmheaders.cpp:2651
+#: kmheaders.cpp:2612 kmheaders.cpp:2652
 msgid ""
 "Failure modifying %1\n"
 "(No space left on device?)"
@@ -6762,7 +6777,7 @@ msgstr "<qt>Methu cyrchu <b>%1</b>.</qt>"
 msgid "Edit Recent Addresses..."
 msgstr ""
 
-#: kmlineeditspell.cpp:167 recipientspicker.cpp:457
+#: kmlineeditspell.cpp:167 recipientspicker.cpp:467
 msgid "Recent Addresses"
 msgstr "Cyfeiriadau Diweddar"
 
@@ -6770,11 +6785,11 @@ msgstr "Cyfeiriadau Diweddar"
 msgid "S&earch:"
 msgstr "C&hwilio"
 
-#: kmmainwidget.cpp:574 kmmainwidget.cpp:1481
+#: kmmainwidget.cpp:574 kmmainwidget.cpp:1485
 msgid "Move Message to Folder"
 msgstr "Symud Neges i Blygell"
 
-#: kmmainwidget.cpp:577 kmmainwidget.cpp:1579
+#: kmmainwidget.cpp:577 kmmainwidget.cpp:1583
 msgid "Copy Message to Folder"
 msgstr "Copïo Neges i Blygell"
 
@@ -6897,38 +6912,47 @@ msgid "<qt>Are you sure you want to delete the empty folder <b>%1</b>?</qt>"
 msgstr "<qt>Ydych wir eisiau gwaredu'r blygell wag <b>%1</b>?</qt>"
 
 #: kmmainwidget.cpp:1040
+#, fuzzy
 msgid ""
 "<qt>Are you sure you want to delete the empty folder <b>%1</b> "
-"and all its subfolders? Those subfolders might not be empty and their  contents "
-"will be discarded as well.</qt>"
+"and all its subfolders? Those subfolders might not be empty and their contents "
+"will be discarded as well. "
+"<p><b>Beware</b> that discarded messages are not saved into your Trash folder "
+"and are permanently deleted.</qt>"
 msgstr ""
 "<qt>Ydych wir eisiau gwaredu'r blygell wag <b>%1</b> "
 "a;i holl is-blygyll?  Mae'n bosibl nad ydy'r is-blygyll yna yn wag, a bydd eu "
 "cynnwys yn cael eu gwaredu hefyd.</qt>"
 
-#: kmmainwidget.cpp:1048
+#: kmmainwidget.cpp:1049
+#, fuzzy
 msgid ""
 "<qt>Are you sure you want to delete the folder <b>%1</b>"
-", discarding its contents?</qt>"
+", discarding its contents? "
+"<p><b>Beware</b> that discarded messages are not saved into your Trash folder "
+"and are permanently deleted.</qt>"
 msgstr ""
 "<qt>Ydych wir eisiau dileu'r blygell <b>%1</b>, gan daflu ei chynnwys?</qt>"
 
-#: kmmainwidget.cpp:1053
+#: kmmainwidget.cpp:1056
+#, fuzzy
 msgid ""
 "<qt>Are you sure you want to delete the folder <b>%1</b> "
-"and all its subfolders, discarding their contents?</qt>"
+"and all its subfolders, discarding their contents? "
+"<p><b>Beware</b> that discarded messages are not saved into your Trash folder "
+"and are permanently deleted.</qt>"
 msgstr ""
 "<qt>Ydych wir eisiau dileu'r blygell <b>%1</b> a'i holl is-blygyll, gan daflu "
 "ei chynnwys?</qt>"
 
-#: kmmainwidget.cpp:1071
+#: kmmainwidget.cpp:1075
 msgid ""
 "<qt>The folder you deleted was associated with the account <b>%1</b> "
 "which delivered mail into it. The folder the account delivers new mail into was "
 "reset to the main Inbox folder.</qt>"
 msgstr ""
 
-#: kmmainwidget.cpp:1152
+#: kmmainwidget.cpp:1156
 msgid ""
 "Are you sure you want to refresh the IMAP cache?\n"
 "This will remove all changes that you have done locally to your IMAP folders."
@@ -6936,11 +6960,11 @@ msgstr ""
 "Ydych wir eisiau ailfywio'r gelc IMAP?\n"
 "Bydd hyn yn gwaredu pog newid a wnaeth yn lleol i'ch plygyll IMAP."
 
-#: kmmainwidget.cpp:1168
+#: kmmainwidget.cpp:1172
 msgid "Are you sure you want to expire all old messages?"
 msgstr "Ydych wir eisiau darfod pob hen neges?"
 
-#: kmmainwidget.cpp:1192
+#: kmmainwidget.cpp:1196
 msgid ""
 "Use of HTML in mail will make you more vulnerable to \"spam\" and may increase "
 "the likelihood that your system will be compromised by other present and "
@@ -6950,15 +6974,15 @@ msgstr ""
 "a gall cynyddu'r debygrwydd y peryglir eich cysawd gan ymelwadau cyfredol a "
 "disgwyliedig eraill."
 
-#: kmmainwidget.cpp:1195 kmmainwidget.cpp:1219 kmsender.cpp:487
+#: kmmainwidget.cpp:1199 kmmainwidget.cpp:1223 kmsender.cpp:487
 msgid "Security Warning"
 msgstr "Rhybudd Diogelwch"
 
-#: kmmainwidget.cpp:1196
+#: kmmainwidget.cpp:1200
 msgid "Use HTML"
 msgstr ""
 
-#: kmmainwidget.cpp:1216
+#: kmmainwidget.cpp:1220
 #, fuzzy
 msgid ""
 "Loading external references in html mail will make you more vulnerable to "
@@ -6969,19 +6993,19 @@ msgstr ""
 "a gall cynyddu'r debygrwydd y peryglir eich cysawd gan ymelwadau cyfredol a "
 "disgwyliedig eraill."
 
-#: kmmainwidget.cpp:1220
+#: kmmainwidget.cpp:1224
 msgid "Load External References"
 msgstr ""
 
-#: kmmainwidget.cpp:1449
+#: kmmainwidget.cpp:1453
 msgid "Filter on Mailing-List..."
 msgstr "Hidlo ar Restr Ebost..."
 
-#: kmmainwidget.cpp:1454
+#: kmmainwidget.cpp:1458
 msgid "Filter on Mailing-List %1..."
 msgstr "Hidlo ar Restr Ebost %1 ..."
 
-#: kmmainwidget.cpp:1522
+#: kmmainwidget.cpp:1526
 msgid ""
 "KMail's Out of Office Reply functionality relies on server-side filtering. You "
 "have not yet configured an IMAP server for this.\n"
@@ -6991,541 +7015,542 @@ msgstr ""
 "gweinydd.  Nid ydych wedi ffurfweddu gweinydd IMAP eto ar gyfer hyn.\n"
 "Gallwch wneud hyn ar dab \"Hidlo\" y ffurfweddiad cyfrif IMAP."
 
-#: kmmainwidget.cpp:1527
+#: kmmainwidget.cpp:1531
 msgid "No Server-Side Filtering Configured"
 msgstr "Ni Ffurfweddir Hidlo ar Ochr y Gweinydd"
 
-#: kmmainwidget.cpp:1554
+#: kmmainwidget.cpp:1558
 #, fuzzy
 msgid "Could not start certificate manager; please check your installation."
 msgstr "Methu cychwyn rheolydd tystysgrif.  Gwiriwch eich gosodiad!"
 
-#: kmmainwidget.cpp:1571
+#: kmmainwidget.cpp:1575
 #, fuzzy
 msgid ""
 "Could not start GnuPG LogViewer (kwatchgnupg); please check your installation."
 msgstr "Methu cychwyn rheolydd tystysgrif.  Gwiriwch eich gosodiad!"
 
-#: kmmainwidget.cpp:1647 kmmainwidget.cpp:3005
+#: kmmainwidget.cpp:1651 kmmainwidget.cpp:3010
 msgid "Go Online"
 msgstr ""
 
-#: kmmainwidget.cpp:1649
+#: kmmainwidget.cpp:1653
 msgid "KMail is set to be offline; all network jobs are suspended"
 msgstr ""
 
-#: kmmainwidget.cpp:1651 kmmainwidget.cpp:3003
+#: kmmainwidget.cpp:1655 kmmainwidget.cpp:3008
 #, fuzzy
 msgid "Go Offline"
 msgstr "Modd All-lein"
 
-#: kmmainwidget.cpp:1653
+#: kmmainwidget.cpp:1657
 msgid "KMail is set to be online; all network jobs resumed"
 msgstr ""
 
-#: kmmainwidget.cpp:2248 kmmimeparttree.cpp:130 kmreadermainwin.cpp:370
+#: kmmainwidget.cpp:2252 kmmimeparttree.cpp:130 kmreadermainwin.cpp:370
 msgid "Save &As..."
 msgstr "Cad&w Fel..."
 
-#: kmmainwidget.cpp:2255
+#: kmmainwidget.cpp:2259
 msgid "&Compact All Folders"
 msgstr "&Cywasgu Pob Plygell"
 
-#: kmmainwidget.cpp:2259
+#: kmmainwidget.cpp:2263
 msgid "&Expire All Folders"
 msgstr "&Darfod Pob Plygell"
 
-#: kmmainwidget.cpp:2263
+#: kmmainwidget.cpp:2267
 msgid "&Refresh Local IMAP Cache"
 msgstr "&Ail-fywio Celc IMAP Leol"
 
-#: kmmainwidget.cpp:2267
+#: kmmainwidget.cpp:2271
 #, fuzzy
 msgid "Empty All &Trash Folders"
 msgstr "&Cywasgu Pob Plygell"
 
-#: kmmainwidget.cpp:2276
+#: kmmainwidget.cpp:2280
 msgid "Check Mail &In"
 msgstr "Ymofyn Ebost &Cyrraedd"
 
-#: kmmainwidget.cpp:2286
+#: kmmainwidget.cpp:2290
 msgid "&Send Queued Messages"
 msgstr "An&fon Negeseuon yn y Rhes"
 
-#: kmmainwidget.cpp:2289
+#: kmmainwidget.cpp:2293
 msgid "Online Status (unknown)"
 msgstr ""
 
-#: kmmainwidget.cpp:2293
+#: kmmainwidget.cpp:2297
 #, fuzzy
 msgid "Send Queued Messages Via"
 msgstr "An&fon Negeseuon yn y Rhes"
 
-#: kmmainwidget.cpp:2304
+#: kmmainwidget.cpp:2308
 msgid "&Address Book..."
 msgstr "&Llyfr Cyfeiriadau..."
 
-#: kmmainwidget.cpp:2309
+#: kmmainwidget.cpp:2313
 msgid "Certificate Manager..."
 msgstr "Trefnydd Tysysgrifau ..."
 
-#: kmmainwidget.cpp:2314
+#: kmmainwidget.cpp:2318
 msgid "GnuPG Log Viewer..."
 msgstr ""
 
-#: kmmainwidget.cpp:2319
+#: kmmainwidget.cpp:2323
 msgid "&Import Messages..."
 msgstr "&Mewnforio Negeseuon..."
 
-#: kmmainwidget.cpp:2324
+#: kmmainwidget.cpp:2328
 #, fuzzy
 msgid "&Debug Sieve..."
 msgstr "&Ychwanegu Gwasanaeth..."
 
-#: kmmainwidget.cpp:2330
+#: kmmainwidget.cpp:2334
 msgid "Edit \"Out of Office\" Replies..."
 msgstr "Golygu Ymatebion \"Allan o'r Swyddfa\"..."
 
-#: kmmainwidget.cpp:2334
+#: kmmainwidget.cpp:2338
 #, fuzzy
 msgid "Filter &Log Viewer..."
 msgstr "Hidlo ar &Oddiwrth..."
 
-#: kmmainwidget.cpp:2337
+#: kmmainwidget.cpp:2341
 msgid "&Anti-Spam Wizard..."
 msgstr ""
 
-#: kmmainwidget.cpp:2339
+#: kmmainwidget.cpp:2343
 msgid "&Anti-Virus Wizard..."
 msgstr ""
 
-#: kmmainwidget.cpp:2343
+#: kmmainwidget.cpp:2347
 msgid "&Move to Trash"
 msgstr "&Symud i Sbwriel"
 
-#: kmmainwidget.cpp:2344
+#: kmmainwidget.cpp:2348
 msgid "Move message to trashcan"
 msgstr "Symud y neges i'r sbwriel"
 
-#: kmmainwidget.cpp:2356
+#: kmmainwidget.cpp:2360
 #, fuzzy
 msgid "M&ove Thread to Trash"
 msgstr "Symud i Sbwriel"
 
-#: kmmainwidget.cpp:2357
+#: kmmainwidget.cpp:2361
 #, fuzzy
 msgid "Move thread to trashcan"
 msgstr "Symud y neges i'r sbwriel"
 
-#: kmmainwidget.cpp:2361
+#: kmmainwidget.cpp:2365
 #, fuzzy
 msgid "Delete T&hread"
 msgstr "wedi'u dileu"
 
-#: kmmainwidget.cpp:2365
+#: kmmainwidget.cpp:2369
 msgid "&Find Messages..."
 msgstr "&Canfod Negeseuon..."
 
-#: kmmainwidget.cpp:2368
+#: kmmainwidget.cpp:2372
 msgid "&Find in Message..."
 msgstr "&Canfod mewn Neges..."
 
-#: kmmainwidget.cpp:2371
+#: kmmainwidget.cpp:2375
 msgid "Select &All Messages"
 msgstr "Dewis &Pob Neges"
 
-#: kmmainwidget.cpp:2378
+#: kmmainwidget.cpp:2382
 msgid "&Properties"
 msgstr "&Priodweddau"
 
-#: kmmainwidget.cpp:2381
+#: kmmainwidget.cpp:2385
 #, fuzzy
 msgid "&Mailing List Management"
 msgstr "Rhestr Ebost Gysylltiedig"
 
-#: kmmainwidget.cpp:2390
+#: kmmainwidget.cpp:2394
 msgid "Mark All Messages as &Read"
 msgstr "Nodi Pob Neges fel Dda&rllenedig"
 
-#: kmmainwidget.cpp:2393
+#: kmmainwidget.cpp:2397
 #, fuzzy
 msgid "&Expiration Settings"
 msgstr "Dynodiadau &sy'n bodoli:"
 
-#: kmmainwidget.cpp:2396
+#: kmmainwidget.cpp:2400
 msgid "&Compact Folder"
 msgstr "&Crynhoi Plygell"
 
-#: kmmainwidget.cpp:2399
+#: kmmainwidget.cpp:2403
 #, fuzzy
 msgid "Check Mail &in This Folder"
 msgstr "&Ymofyn Ebost yn y Blygell Yma"
 
-#: kmmainwidget.cpp:2411
+#: kmmainwidget.cpp:2415
 msgid "Prefer &HTML to Plain Text"
 msgstr "Gwell &HTML na Testun Plaen"
 
-#: kmmainwidget.cpp:2414
+#: kmmainwidget.cpp:2418
 msgid "Load E&xternal References"
 msgstr ""
 
-#: kmmainwidget.cpp:2417
+#: kmmainwidget.cpp:2421
 msgid "&Thread Messages"
 msgstr "&Edafu Negeseuon"
 
-#: kmmainwidget.cpp:2420
+#: kmmainwidget.cpp:2424
 msgid "Thread Messages also by &Subject"
 msgstr "Edafu Negeseuon gan &Bwnc hefyd"
 
-#: kmmainwidget.cpp:2425
+#: kmmainwidget.cpp:2429
 msgid "&New Message..."
 msgstr "&Neges Newydd..."
 
-#: kmmainwidget.cpp:2428
+#: kmmainwidget.cpp:2432
 msgid "New Message t&o Mailing-List..."
 msgstr "Neges Newydd i &Restr Ebost"
 
-#: kmmainwidget.cpp:2432 kmreadermainwin.cpp:239 searchwindow.cpp:268
+#: kmmainwidget.cpp:2436 kmreadermainwin.cpp:239 searchwindow.cpp:268
 msgid ""
 "_: Message->\n"
 "&Forward"
 msgstr "&Blaenyrru"
 
-#: kmmainwidget.cpp:2438 kmreadermainwin.cpp:250 searchwindow.cpp:277
+#: kmmainwidget.cpp:2442 kmreadermainwin.cpp:250 searchwindow.cpp:277
 msgid ""
 "_: Message->Forward->\n"
 "As &Attachment..."
 msgstr "&Fel Atodiad..."
 
-#: kmmainwidget.cpp:2443 kmreadermainwin.cpp:245 searchwindow.cpp:273
+#: kmmainwidget.cpp:2447 kmreadermainwin.cpp:245 searchwindow.cpp:273
 msgid "&Inline..."
 msgstr "&Mewnlin..."
 
-#: kmmainwidget.cpp:2449
+#: kmmainwidget.cpp:2453
 msgid "Send A&gain..."
 msgstr "Anfon E&to..."
 
-#: kmmainwidget.cpp:2452 kmreadermainwin.cpp:261
+#: kmmainwidget.cpp:2456 kmreadermainwin.cpp:261
 msgid ""
 "_: Message->\n"
 "&Reply"
 msgstr "&Ateb"
 
-#: kmmainwidget.cpp:2458 kmreadermainwin.cpp:267 searchwindow.cpp:259
+#: kmmainwidget.cpp:2462 kmreadermainwin.cpp:267 searchwindow.cpp:259
 msgid "&Reply..."
 msgstr "A&teb..."
 
-#: kmmainwidget.cpp:2462 kmreadermainwin.cpp:271
+#: kmmainwidget.cpp:2466 kmreadermainwin.cpp:271
 msgid "Reply to A&uthor..."
 msgstr "Ateb i'r A&wdur"
 
-#: kmmainwidget.cpp:2468 kmreadermainwin.cpp:277 searchwindow.cpp:261
+#: kmmainwidget.cpp:2472 kmreadermainwin.cpp:277 searchwindow.cpp:261
 msgid "Reply to &All..."
 msgstr "Ateb i &Bawb..."
 
-#: kmmainwidget.cpp:2473 kmreadermainwin.cpp:282 searchwindow.cpp:264
+#: kmmainwidget.cpp:2477 kmreadermainwin.cpp:282 searchwindow.cpp:264
 msgid "Reply to Mailing-&List..."
 msgstr "Ateb i &Rhestr Ebost..."
 
-#: kmmainwidget.cpp:2479 kmreadermainwin.cpp:256
+#: kmmainwidget.cpp:2483 kmreadermainwin.cpp:256
 msgid ""
 "_: Message->Forward->\n"
 "&Redirect..."
 msgstr "Ail-&gyfeirio..."
 
-#: kmmainwidget.cpp:2485
+#: kmmainwidget.cpp:2489
 msgid "Reply Without &Quote..."
 msgstr "Ateb heb &Dyfynnu..."
 
-#: kmmainwidget.cpp:2489
+#: kmmainwidget.cpp:2493
 msgid "&Create Filter"
 msgstr "&Creu Hidlen"
 
-#: kmmainwidget.cpp:2492
+#: kmmainwidget.cpp:2496
 msgid "Filter on &Subject..."
 msgstr "Hidlo ar &Pwnc..."
 
-#: kmmainwidget.cpp:2497
+#: kmmainwidget.cpp:2501
 msgid "Filter on &From..."
 msgstr "Hidlo ar &Oddiwrth..."
 
-#: kmmainwidget.cpp:2502
+#: kmmainwidget.cpp:2506
 msgid "Filter on &To..."
 msgstr "Hidlo ar &I..."
 
-#: kmmainwidget.cpp:2507
+#: kmmainwidget.cpp:2511
 msgid "Filter on Mailing-&List..."
 msgstr "Hidlo ar &Restr Ebost..."
 
-#: kmmainwidget.cpp:2514
+#: kmmainwidget.cpp:2518
 msgid "&Edit Message"
 msgstr "G&olygu Neges"
 
-#: kmmainwidget.cpp:2519
+#: kmmainwidget.cpp:2523
 msgid "Mar&k Message"
 msgstr "No&di Neges"
 
-#: kmmainwidget.cpp:2522
+#: kmmainwidget.cpp:2526
 msgid "Mark Message as &Read"
 msgstr "Nodi Neges fel Wedi'i Dar&llen"
 
-#: kmmainwidget.cpp:2523
+#: kmmainwidget.cpp:2527
 msgid "Mark selected messages as read"
 msgstr "Nodi negeseuon dewisiedig fel wedi'u darllen"
 
-#: kmmainwidget.cpp:2527
+#: kmmainwidget.cpp:2531
 msgid "Mark Message as &New"
 msgstr "Nodi Neges fel Ne&wydd"
 
-#: kmmainwidget.cpp:2528
+#: kmmainwidget.cpp:2532
 msgid "Mark selected messages as new"
 msgstr "Nodi negeseuon dewisiedig fel newydd"
 
-#: kmmainwidget.cpp:2532
+#: kmmainwidget.cpp:2536
 msgid "Mark Message as &Unread"
 msgstr "Nodi Neges fel &Heb ei Darllen"
 
-#: kmmainwidget.cpp:2533
+#: kmmainwidget.cpp:2537
 msgid "Mark selected messages as unread"
 msgstr "Nodi negeseuon dewisiedig fel heb eu darllen"
 
-#: kmmainwidget.cpp:2540
+#: kmmainwidget.cpp:2544
 msgid "Mark Message as &Important"
 msgstr "Nodi Neges fel &Bwysig"
 
-#: kmmainwidget.cpp:2543
+#: kmmainwidget.cpp:2547
 #, fuzzy
 msgid "Remove &Important Message Mark"
 msgstr "Neges bwysig"
 
-#: kmmainwidget.cpp:2546
+#: kmmainwidget.cpp:2550
 #, fuzzy
 msgid "Mark Message as &To-do"
 msgstr "Nodi Neges fel Wedi'i Dar&llen"
 
-#: kmmainwidget.cpp:2549
+#: kmmainwidget.cpp:2553
 #, fuzzy
 msgid "Mark Message as Not &To-do"
 msgstr "Nodi Neges fel Wedi'i &Rhoi yn y Rhes"
 
-#: kmmainwidget.cpp:2552
+#: kmmainwidget.cpp:2556
 msgid "Mark Message as &Sent"
 msgstr "Nodi Neges fel Wedi'i H&anfon"
 
-#: kmmainwidget.cpp:2555
+#: kmmainwidget.cpp:2559
 #, fuzzy
 msgid "Mark Message as Not &Sent"
 msgstr "Nodi Neges fel Wedi'i H&anfon"
 
-#: kmmainwidget.cpp:2559
+#: kmmainwidget.cpp:2563
 msgid "Mark &Thread"
 msgstr "Nodi &Edefyn"
 
-#: kmmainwidget.cpp:2562
+#: kmmainwidget.cpp:2566
 msgid "Mark Thread as &Read"
 msgstr "Nodi Edefyn fel Wedi'i Ddar&llen"
 
-#: kmmainwidget.cpp:2563
+#: kmmainwidget.cpp:2567
 msgid "Mark all messages in the selected thread as read"
 msgstr "Nodi pob neges yn yr edefyn dewisiedig fel wedi'i darllen"
 
-#: kmmainwidget.cpp:2568
+#: kmmainwidget.cpp:2572
 msgid "Mark Thread as &New"
 msgstr "Nodi Edefyn fel &Newydd"
 
-#: kmmainwidget.cpp:2569
+#: kmmainwidget.cpp:2573
 msgid "Mark all messages in the selected thread as new"
 msgstr "Nodi pob neges yn yr edefyn dewisiedig fel newydd"
 
-#: kmmainwidget.cpp:2574
+#: kmmainwidget.cpp:2578
 msgid "Mark Thread as &Unread"
 msgstr "Nodi Edefyn fel &Heb ei Ddarllen"
 
-#: kmmainwidget.cpp:2575
+#: kmmainwidget.cpp:2579
 msgid "Mark all messages in the selected thread as unread"
 msgstr "Nodi pob neges yn yr edefyn dewisiedig fel heb ei darllen"
 
-#: kmmainwidget.cpp:2583
+#: kmmainwidget.cpp:2587
 msgid "Mark Thread as &Important"
 msgstr "Nodi Edefyn fel &Pwysig"
 
-#: kmmainwidget.cpp:2586
+#: kmmainwidget.cpp:2590
 msgid "Remove &Important Thread Mark"
 msgstr ""
 
-#: kmmainwidget.cpp:2589
+#: kmmainwidget.cpp:2593
 #, fuzzy
 msgid "Mark Thread as &To-do"
 msgstr "Nodi Edefyn fel Wedi'i &Anfon"
 
-#: kmmainwidget.cpp:2592
+#: kmmainwidget.cpp:2596
 #, fuzzy
 msgid "Mark Thread as Not &To-do"
 msgstr "Nodi Edefyn fel Wedi'i &Roi yn y Rhes"
 
-#: kmmainwidget.cpp:2596
+#: kmmainwidget.cpp:2600
 msgid "&Watch Thread"
 msgstr "&Gwylio ar yr Edefyn"
 
-#: kmmainwidget.cpp:2600
+#: kmmainwidget.cpp:2604
 msgid "&Ignore Thread"
 msgstr "&Anwybyddu'r Edefyn"
 
-#: kmmainwidget.cpp:2604
+#: kmmainwidget.cpp:2608
 msgid "Save A&ttachments..."
 msgstr "Cadw A&todiadau..."
 
-#: kmmainwidget.cpp:2614
+#: kmmainwidget.cpp:2618
 #, fuzzy
 msgid "Appl&y All Filters"
 msgstr "Gweithred&u Hidlau"
 
-#: kmmainwidget.cpp:2619
-#, fuzzy
+#. i18n: file kmail_part.rc line 136
+#: kmmainwidget.cpp:2623 rc.cpp:33 rc.cpp:102
+#, fuzzy, no-c-format
 msgid "A&pply Filter"
 msgstr "Gweithred&u Hidlau"
 
-#: kmmainwidget.cpp:2626
+#: kmmainwidget.cpp:2630
 msgid ""
 "_: View->\n"
 "&Unread Count"
 msgstr "Cyfanswm &Heb eu Darllen"
 
-#: kmmainwidget.cpp:2628
+#: kmmainwidget.cpp:2632
 msgid "Choose how to display the count of unread messages"
 msgstr "Dewis sut i ddangos cyfanswm y negeseuon heb eu darllen"
 
-#: kmmainwidget.cpp:2630
+#: kmmainwidget.cpp:2634
 msgid ""
 "_: View->Unread Count\n"
 "View in &Separate Column"
 msgstr "Gwled mewn &Colofn Wahanol"
 
-#: kmmainwidget.cpp:2636
+#: kmmainwidget.cpp:2640
 msgid ""
 "_: View->Unread Count\n"
 "View After &Folder Name"
 msgstr "Gweld ar Ôl Enw'r &Blygell"
 
-#: kmmainwidget.cpp:2643
+#: kmmainwidget.cpp:2647
 msgid ""
 "_: View->\n"
 "&Total Column"
 msgstr "Colofn &Gyfanswm"
 
-#: kmmainwidget.cpp:2646
+#: kmmainwidget.cpp:2650
 msgid ""
 "Toggle display of column showing the total number of messages in folders."
 msgstr "Dangos/cuddio'r golofn sy'n dangos cyfanswm o negeseuon mewn plygyll."
 
-#: kmmainwidget.cpp:2649
+#: kmmainwidget.cpp:2653
 msgid ""
 "_: View->\n"
 "&Expand Thread"
 msgstr "&Ehangu Edefyn"
 
-#: kmmainwidget.cpp:2650
+#: kmmainwidget.cpp:2654
 msgid "Expand the current thread"
 msgstr "Ehangu'r edefyn cyfredol"
 
-#: kmmainwidget.cpp:2655
+#: kmmainwidget.cpp:2659
 msgid ""
 "_: View->\n"
 "&Collapse Thread"
 msgstr "&Dad-ehangu'r Edefyn"
 
-#: kmmainwidget.cpp:2656
+#: kmmainwidget.cpp:2660
 msgid "Collapse the current thread"
 msgstr "Dad-ehangu'r edefyn cyfredol"
 
-#: kmmainwidget.cpp:2661
+#: kmmainwidget.cpp:2665
 msgid ""
 "_: View->\n"
 "Ex&pand All Threads"
 msgstr "Ehangu &Pob Edefyn"
 
-#: kmmainwidget.cpp:2662
+#: kmmainwidget.cpp:2666
 msgid "Expand all threads in the current folder"
 msgstr "Ehangu pob edefyn yn y blygell gyfredol"
 
-#: kmmainwidget.cpp:2667
+#: kmmainwidget.cpp:2671
 msgid ""
 "_: View->\n"
 "C&ollapse All Threads"
 msgstr "Dad-ehangu Po&b Edefyn"
 
-#: kmmainwidget.cpp:2668
+#: kmmainwidget.cpp:2672
 msgid "Collapse all threads in the current folder"
 msgstr "Dad-ehangu pob edefyn yn y blygell gyfredol"
 
-#: kmmainwidget.cpp:2673 kmreadermainwin.cpp:234
+#: kmmainwidget.cpp:2677 kmreadermainwin.cpp:234
 msgid "&View Source"
 msgstr "&Gweld Tarddiad"
 
-#: kmmainwidget.cpp:2677
+#: kmmainwidget.cpp:2681
 msgid "&Display Message"
 msgstr "&Dangos Neges"
 
-#: kmmainwidget.cpp:2683
+#: kmmainwidget.cpp:2687
 msgid "&Next Message"
 msgstr "&Neges Nesaf"
 
-#: kmmainwidget.cpp:2684
+#: kmmainwidget.cpp:2688
 msgid "Go to the next message"
 msgstr "Mynd i'r neges nesaf"
 
-#: kmmainwidget.cpp:2688
+#: kmmainwidget.cpp:2692
 msgid "Next &Unread Message"
 msgstr "Neges Nesaf &Heb ei Darllen"
 
-#: kmmainwidget.cpp:2690
+#: kmmainwidget.cpp:2694
 msgid "Go to the next unread message"
 msgstr "Mynd i'r neges nesaf heb ei darllen"
 
 #. i18n("Go to the next important message") ),
-#: kmmainwidget.cpp:2701
+#: kmmainwidget.cpp:2705
 msgid "&Previous Message"
 msgstr "Neges &Blaenorol"
 
-#: kmmainwidget.cpp:2702
+#: kmmainwidget.cpp:2706
 msgid "Go to the previous message"
 msgstr "Mynd i'r neges blaenorol"
 
-#: kmmainwidget.cpp:2706
+#: kmmainwidget.cpp:2710
 msgid "Previous Unread &Message"
 msgstr "Neges Bl&aenorol Heb ei Darllen"
 
-#: kmmainwidget.cpp:2708
+#: kmmainwidget.cpp:2712
 msgid "Go to the previous unread message"
 msgstr "Mynd i'r neges blaenorol heb ei darllen"
 
-#: kmmainwidget.cpp:2720
+#: kmmainwidget.cpp:2724
 msgid "Next Unread &Folder"
 msgstr "&Plygell Nesaf Heb ei Darllen"
 
-#: kmmainwidget.cpp:2721
+#: kmmainwidget.cpp:2725
 msgid "Go to the next folder with unread messages"
 msgstr "Mynd i'r blygell nesaf efo negeseuon heb eu darllen"
 
-#: kmmainwidget.cpp:2729
+#: kmmainwidget.cpp:2733
 msgid "Previous Unread F&older"
 msgstr "Plyg&ell Flaenorol Heb ei Ddarllen"
 
-#: kmmainwidget.cpp:2730
+#: kmmainwidget.cpp:2734
 msgid "Go to the previous folder with unread messages"
 msgstr "Mynd i'r blygell flaenorol efo negeseuon heb eu darllen"
 
-#: kmmainwidget.cpp:2737
+#: kmmainwidget.cpp:2741
 msgid ""
 "_: Go->\n"
 "Next Unread &Text"
 msgstr "&Testun Nesaf heb ei Ddarllen"
 
-#: kmmainwidget.cpp:2738
+#: kmmainwidget.cpp:2742
 msgid "Go to the next unread text"
 msgstr "Mynd i'r testun nesaf heb ei ddarllen"
 
-#: kmmainwidget.cpp:2739
+#: kmmainwidget.cpp:2743
 msgid ""
 "Scroll down current message. If at end of current message, go to next unread "
 "message."
@@ -7533,57 +7558,57 @@ msgstr ""
 "Sgrolio i lawr y neges gyfredol.  Os wrth waelod y neges gyfredol, mynd i'r "
 "neges nesaf heb ei darllen."
 
-#: kmmainwidget.cpp:2746
+#: kmmainwidget.cpp:2750
 msgid "Show Quick Search"
 msgstr ""
 
-#: kmmainwidget.cpp:2753
+#: kmmainwidget.cpp:2757
 msgid "Configure &Filters..."
 msgstr "Ffurfweddu &Hidlau..."
 
-#: kmmainwidget.cpp:2755
+#: kmmainwidget.cpp:2759
 msgid "Configure &POP Filters..."
 msgstr "Ffurfweddu Hidlau &POP3..."
 
-#: kmmainwidget.cpp:2757
+#: kmmainwidget.cpp:2761
 #, fuzzy
 msgid "Manage &Sieve Scripts..."
 msgstr "Hidlau ar Gael"
 
-#: kmmainwidget.cpp:2760
+#: kmmainwidget.cpp:2764
 msgid "KMail &Introduction"
 msgstr "&Cyflwyniad KMail"
 
-#: kmmainwidget.cpp:2761
+#: kmmainwidget.cpp:2765
 msgid "Display KMail's Welcome Page"
 msgstr "Dangos Tudalen Groeso KMail"
 
-#: kmmainwidget.cpp:2767
+#: kmmainwidget.cpp:2771
 msgid "Configure &Notifications..."
 msgstr "Ffurfweddu &Hysbysiadau..."
 
-#: kmmainwidget.cpp:2772
+#: kmmainwidget.cpp:2776
 msgid "&Configure KMail..."
 msgstr "&Furffweddu KMail..."
 
-#: kmmainwidget.cpp:3050
+#: kmmainwidget.cpp:3055
 msgid "E&mpty Trash"
 msgstr "Gwagu'r &Sbwriel"
 
-#: kmmainwidget.cpp:3050
+#: kmmainwidget.cpp:3055
 msgid "&Move All Messages to Trash"
 msgstr "&Symud Pob Neges i'r Sbwriel"
 
-#: kmmainwidget.cpp:3054
+#: kmmainwidget.cpp:3059
 #, fuzzy
 msgid "&Delete Search"
 msgstr "Dile&u Plygell"
 
-#: kmmainwidget.cpp:3054
+#: kmmainwidget.cpp:3059
 msgid "&Delete Folder"
 msgstr "Dile&u Plygell"
 
-#: kmmainwidget.cpp:3232
+#: kmmainwidget.cpp:3237
 #, c-format
 msgid ""
 "_n: Removed %n duplicate message.\n"
@@ -7592,16 +7617,16 @@ msgstr ""
 "Gwaredwyd %n neges ddyblyg.\n"
 "Gwaredwyd %n o negeseuon dyblyg."
 
-#: kmmainwidget.cpp:3234
+#: kmmainwidget.cpp:3239
 msgid "No duplicate messages found."
 msgstr "Ni chanfuwyd negeseuon dyblyg."
 
-#: kmmainwidget.cpp:3304
+#: kmmainwidget.cpp:3309
 #, c-format
 msgid "Filter %1"
 msgstr "Hidlo %1"
 
-#: kmmainwidget.cpp:3422
+#: kmmainwidget.cpp:3427
 msgid "Subscription"
 msgstr "Tanysgrifiad"
 
@@ -8108,53 +8133,53 @@ msgstr "Cadw'r Cyswllt Fel..."
 msgid "Chat &With..."
 msgstr "Agor Efo..."
 
-#: kmreaderwin.cpp:1249
+#: kmreaderwin.cpp:1255
 msgid "Full namespace support for IMAP"
 msgstr ""
 
-#: kmreaderwin.cpp:1250
+#: kmreaderwin.cpp:1256
 msgid "Offline mode"
 msgstr "Modd All-lein"
 
-#: kmreaderwin.cpp:1251
+#: kmreaderwin.cpp:1257
 msgid "Sieve script management and editing"
 msgstr ""
 
-#: kmreaderwin.cpp:1252
+#: kmreaderwin.cpp:1258
 msgid "Account specific filtering"
 msgstr ""
 
-#: kmreaderwin.cpp:1253
+#: kmreaderwin.cpp:1259
 msgid "Filtering of incoming mail for online IMAP accounts"
 msgstr ""
 
-#: kmreaderwin.cpp:1254
+#: kmreaderwin.cpp:1260
 msgid "Online IMAP folders can be used when filtering into folders"
 msgstr ""
 
-#: kmreaderwin.cpp:1255
+#: kmreaderwin.cpp:1261
 #, fuzzy
 msgid "Automatically delete older mails on POP servers"
 msgstr "Anfon cada&rnhadau derbyn yn ymysgogol"
 
-#: kmreaderwin.cpp:1293
+#: kmreaderwin.cpp:1299
 msgid "The email client for the K Desktop Environment."
 msgstr ""
 
-#: kmreaderwin.cpp:1301
+#: kmreaderwin.cpp:1307
 msgid ""
 "<h2 style='margin-top: 0px;'>Retrieving Folder Contents</h2>"
 "<p>Please wait . . .</p>&nbsp;"
 msgstr ""
 
-#: kmreaderwin.cpp:1309
+#: kmreaderwin.cpp:1315
 msgid ""
 "<h2 style='margin-top: 0px;'>Offline</h2>"
 "<p>KMail is currently in offline mode. Click <a href=\"kmail:goOnline\">here</a> "
 "to go online . . .</p>&nbsp;"
 msgstr ""
 
-#: kmreaderwin.cpp:1326
+#: kmreaderwin.cpp:1332
 #, fuzzy
 msgid ""
 "_: %1: KMail version; %2: help:// URL; %3: homepage URL; %4: prior KMail "
@@ -8202,13 +8227,13 @@ msgstr ""
 "<p>Diolch,</p>\n"
 "<p>&nbsp; &nbsp; Y Tîm KMail</p>"
 
-#: kmreaderwin.cpp:1349 kmreaderwin.cpp:1371
+#: kmreaderwin.cpp:1355 kmreaderwin.cpp:1377
 msgid ""
 "<li>%1</li>\n"
 msgstr ""
 "<li>%1</li>\n"
 
-#: kmreaderwin.cpp:1354
+#: kmreaderwin.cpp:1360
 msgid ""
 "<p>Please take a moment to fill in the KMail configuration panel at "
 "Settings-&gt;Configure KMail.\n"
@@ -8220,41 +8245,41 @@ msgstr ""
 "Mae angen i chi greu o leiaf dynodiad rhagosod, cyfrif ebost derbyn, a chyfrif "
 "ebost anfon.</p>\n"
 
-#: kmreaderwin.cpp:1366
+#: kmreaderwin.cpp:1372
 msgid ""
 "<p><span style='font-size:125%; font-weight:bold;'>Important changes</span> "
 "(compared to KMail %1):</p>\n"
 msgstr ""
 
-#: kmreaderwin.cpp:1500
+#: kmreaderwin.cpp:1506
 msgid "( body part )"
 msgstr "( rhan gorff )"
 
-#: kmreaderwin.cpp:1776
+#: kmreaderwin.cpp:1782
 #, fuzzy
 msgid "Could not send MDN."
 msgstr "Methu anfon Hsbysiad Lleoliad Neges (MDN)!"
 
-#: kmreaderwin.cpp:1883
+#: kmreaderwin.cpp:1889
 msgid "Open With..."
 msgstr "Agor Efo..."
 
-#: kmreaderwin.cpp:1884
+#: kmreaderwin.cpp:1890
 msgid ""
 "_: to view something\n"
 "View"
 msgstr "Dangos"
 
-#: kmreaderwin.cpp:1888
+#: kmreaderwin.cpp:1894
 msgid "Decrypt With Chiasmus..."
 msgstr ""
 
-#: kmreaderwin.cpp:2024 kmreaderwin.cpp:2060 kmreaderwin.cpp:2077
+#: kmreaderwin.cpp:2029 kmreaderwin.cpp:2065 kmreaderwin.cpp:2082
 #, c-format
 msgid "View Attachment: %1"
 msgstr "Gweld Atodiad: %1"
 
-#: kmreaderwin.cpp:2071
+#: kmreaderwin.cpp:2076
 #, c-format
 msgid ""
 "_n: [KMail: Attachment contains binary data. Trying to show first character.]\n"
@@ -8264,15 +8289,15 @@ msgstr ""
 "[KMail: Mae'r atodiad yn cynnwys data deuol.  Ceisio dangos y %n o nodau "
 "cyntaf.]"
 
-#: kmreaderwin.cpp:2162
+#: kmreaderwin.cpp:2167
 msgid "&Open with '%1'"
 msgstr "&Agor efo '%1'"
 
-#: kmreaderwin.cpp:2164
+#: kmreaderwin.cpp:2169
 msgid "&Open With..."
 msgstr "&Agor Gyda..."
 
-#: kmreaderwin.cpp:2166
+#: kmreaderwin.cpp:2171
 #, fuzzy
 msgid ""
 "Open attachment '%1'?\n"
@@ -8281,7 +8306,7 @@ msgstr ""
 "Agor atodiad '%1'?\n"
 "Noder: gall agor atodiad beryglu diogelwch eich cysawd!"
 
-#: kmreaderwin.cpp:2171
+#: kmreaderwin.cpp:2176
 msgid "Open Attachment?"
 msgstr "Agor Atodiad?"
 
@@ -9726,38 +9751,62 @@ msgstr ""
 "Ni chynhelir y gorchymyn TOP gan eich gweinydd.  Felly ni ellir nôl penawdau "
 "ebostau mawr, cyn eu lawrlwytho."
 
-#. i18n: file kmcomposerui.rc line 4
-#: rc.cpp:3 rc.cpp:33
+#. i18n: file kmail_part.rc line 70
+#: rc.cpp:15 rc.cpp:84
+#, no-c-format
+msgid "&Go"
+msgstr "&Mynd"
+
+#. i18n: file kmail_part.rc line 82
+#: rc.cpp:18 rc.cpp:87
+#, no-c-format
+msgid "F&older"
+msgstr "P&lygell"
+
+#. i18n: file kmail_part.rc line 105
+#: rc.cpp:21 rc.cpp:48 rc.cpp:90 rc.cpp:123
 #, no-c-format
 msgid "&Message"
 msgstr "&Neges"
 
-#. i18n: file kmcomposerui.rc line 97
-#: rc.cpp:24
+#. i18n: file kmail_part.rc line 111
+#: rc.cpp:24 rc.cpp:93
 #, no-c-format
-msgid "HTML Toolbar"
+msgid "Reply Special"
 msgstr ""
 
-#. i18n: file kmreadermainwin.rc line 33
-#: rc.cpp:36
+#. i18n: file kmail_part.rc line 117
+#: rc.cpp:27 rc.cpp:96 rc.cpp:126
 #, no-c-format
 msgid "&Forward"
 msgstr "B&laenyrru"
 
+#. i18n: file kmail_part.rc line 129
+#: rc.cpp:30 rc.cpp:99
+#, fuzzy, no-c-format
+msgid "Mark Thread as"
+msgstr "Nodi Edefyn fel &Newydd"
+
+#. i18n: file kmcomposerui.rc line 97
+#: rc.cpp:69
+#, no-c-format
+msgid "HTML Toolbar"
+msgstr ""
+
 #. i18n: file composercryptoconfiguration.ui line 24
-#: rc.cpp:45
+#: rc.cpp:135
 #, fuzzy, no-c-format
 msgid "Signing"
 msgstr "Llofnodi"
 
 #. i18n: file composercryptoconfiguration.ui line 35
-#: rc.cpp:48
+#: rc.cpp:138
 #, fuzzy, no-c-format
 msgid "&Automatically sign messages"
 msgstr "L&lofnodi negeseuon yn ymysgogol gan ddefnyddio OpenPGP"
 
 #. i18n: file composercryptoconfiguration.ui line 38
-#: rc.cpp:51
+#: rc.cpp:141
 #, fuzzy, no-c-format
 msgid ""
 "When this option is enabled, all messages you send will be signed by default; "
@@ -9770,19 +9819,19 @@ msgstr ""
 "unigol.</p></qt>"
 
 #. i18n: file composercryptoconfiguration.ui line 48
-#: rc.cpp:54
+#: rc.cpp:144
 #, fuzzy, no-c-format
 msgid "Encrypting"
 msgstr "Cêl-ysgrifaeth"
 
 #. i18n: file composercryptoconfiguration.ui line 59
-#: rc.cpp:57
+#: rc.cpp:147
 #, no-c-format
 msgid "Always encr&ypt to self"
 msgstr "Cêl-ysgrifo i'ch &hunan o hyd"
 
 #. i18n: file composercryptoconfiguration.ui line 62
-#: rc.cpp:60
+#: rc.cpp:150
 #, no-c-format
 msgid ""
 "When this option is enabled, the message/file will not only be encrypted with "
@@ -9791,13 +9840,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file composercryptoconfiguration.ui line 70
-#: rc.cpp:63
+#: rc.cpp:153
 #, no-c-format
 msgid "Show s&igned/encrypted text after composing"
 msgstr "Dangos testun llofnodedig/cêl-ysgrifedig wedi cyfansoddi"
 
 #. i18n: file composercryptoconfiguration.ui line 73
-#: rc.cpp:66
+#: rc.cpp:156
 #, no-c-format
 msgid ""
 "When this option is enabled, the signed/encrypted text will be shown in a "
@@ -9806,19 +9855,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file composercryptoconfiguration.ui line 81
-#: rc.cpp:69
+#: rc.cpp:159
 #, fuzzy, no-c-format
 msgid "Store sent messages encry&pted"
 msgstr "Cadw negeseuon an&foniedig wedi'u cêl-ysgrifo"
 
 #. i18n: file composercryptoconfiguration.ui line 87
-#: rc.cpp:72 rc.cpp:110
+#: rc.cpp:162 rc.cpp:200
 #, no-c-format
 msgid "Check to store messages encrypted "
 msgstr "Brithwch i gadw negeseuon wedi'u cêl-ysgrifo"
 
 #. i18n: file composercryptoconfiguration.ui line 95
-#: rc.cpp:75 rc.cpp:113
+#: rc.cpp:165 rc.cpp:203
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -9842,13 +9891,13 @@ msgstr ""
 "</qt>"
 
 #. i18n: file composercryptoconfiguration.ui line 103
-#: rc.cpp:83
+#: rc.cpp:173
 #, no-c-format
 msgid "Always show the encryption keys &for approval"
 msgstr "Dangos yr allweddau &cêl-ysgrifo ar gyfer cymeradwydo o hyd"
 
 #. i18n: file composercryptoconfiguration.ui line 106
-#: rc.cpp:86
+#: rc.cpp:176
 #, no-c-format
 msgid ""
 "When this option is enabled, the application will always show you a list of "
@@ -9858,13 +9907,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file composercryptoconfiguration.ui line 114
-#: rc.cpp:89
+#: rc.cpp:179
 #, fuzzy, no-c-format
 msgid "Automatically encrypt &messages whenever possible"
 msgstr "Cêl-ysgrifennu negeseuon yn ymysgogol lle &bo'n bosibl."
 
 #. i18n: file composercryptoconfiguration.ui line 117
-#: rc.cpp:92
+#: rc.cpp:182
 #, fuzzy, no-c-format
 msgid ""
 "When this option is enabled, every message you send will be encrypted whenever "
@@ -9877,43 +9926,43 @@ msgstr ""
 "cêl-ysgrifaeth ymysgogol ar gyfer pob neges yn unigol.</p></qt>"
 
 #. i18n: file composercryptoconfiguration.ui line 125
-#: rc.cpp:95
+#: rc.cpp:185
 #, no-c-format
 msgid "Never sign/encrypt when sa&ving as draft"
 msgstr ""
 
 #. i18n: file encryptionconfigurationdialog.ui line 16
-#: rc.cpp:98
+#: rc.cpp:188
 #, no-c-format
 msgid "Encryption Configuration"
 msgstr "Ffurfweddiad Cêl-ysgrifo"
 
 #. i18n: file encryptionconfigurationdialog.ui line 50
-#: rc.cpp:104
+#: rc.cpp:194
 #, no-c-format
 msgid "Encryption &algorithm:"
 msgstr "Algorith&m cêl-ysgrifo:"
 
 #. i18n: file encryptionconfigurationdialog.ui line 61
-#: rc.cpp:107
+#: rc.cpp:197
 #, no-c-format
 msgid "Store sent messages &encrypted"
 msgstr "Cadw negeseuon an&foniedig wedi'u cêl-ysgrifo"
 
 #. i18n: file encryptionconfigurationdialog.ui line 83
-#: rc.cpp:121
+#: rc.cpp:211
 #, no-c-format
 msgid "Encr&ypt all message parts"
 msgstr "Cêl-&ysgrifo pob rhan y neges"
 
 #. i18n: file encryptionconfigurationdialog.ui line 89
-#: rc.cpp:124
+#: rc.cpp:214
 #, no-c-format
 msgid "Check to have all message parts encrypted by default"
 msgstr "Brithwch i gêl-ysgrifo pob rhan o'r neges gan ragosod"
 
 #. i18n: file encryptionconfigurationdialog.ui line 97
-#: rc.cpp:127
+#: rc.cpp:217
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -9934,19 +9983,19 @@ msgstr ""
 "</qt>"
 
 #. i18n: file encryptionconfigurationdialog.ui line 105
-#: rc.cpp:135
+#: rc.cpp:225
 #, no-c-format
 msgid "Ask &before encrypting each part"
 msgstr "G&ofyn cyn cêl-ysgrifo pob darn"
 
 #. i18n: file encryptionconfigurationdialog.ui line 108
-#: rc.cpp:138
+#: rc.cpp:228
 #, no-c-format
 msgid "Check to be asked for each part whether to encrypt"
 msgstr "Brithwch i gael eich gofyn am bob rhan a ddylid ei chêl-ysgrifo"
 
 #. i18n: file encryptionconfigurationdialog.ui line 114
-#: rc.cpp:141
+#: rc.cpp:231
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -9964,19 +10013,19 @@ msgstr ""
 "</qt>"
 
 #. i18n: file encryptionconfigurationdialog.ui line 122
-#: rc.cpp:147
+#: rc.cpp:237
 #, fuzzy, no-c-format
 msgid "&Do not encrypt messages"
 msgstr "&Peidio â chêl-ysgrifo negeseuon"
 
 #. i18n: file encryptionconfigurationdialog.ui line 125
-#: rc.cpp:150
+#: rc.cpp:240
 #, no-c-format
 msgid "Check for not encrypting a message by default"
 msgstr "Brithwch i beidio â chêl-ysgrigo neges gan ragosod"
 
 #. i18n: file encryptionconfigurationdialog.ui line 133
-#: rc.cpp:153
+#: rc.cpp:243
 #, fuzzy, no-c-format
 msgid ""
 "<qt>\n"
@@ -9995,19 +10044,19 @@ msgstr ""
 "</qt>"
 
 #. i18n: file encryptionconfigurationdialog.ui line 139
-#: rc.cpp:161
+#: rc.cpp:251
 #, no-c-format
 msgid "Triple-DES"
 msgstr "DES-Triphlyg"
 
 #. i18n: file encryptionconfigurationdialog.ui line 146
-#: rc.cpp:164
+#: rc.cpp:254
 #, no-c-format
 msgid "Selects the encryption algorithm"
 msgstr "Dewis yr algorithm cêl-ysgrifo"
 
 #. i18n: file encryptionconfigurationdialog.ui line 156
-#: rc.cpp:167
+#: rc.cpp:257
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -10041,25 +10090,25 @@ msgstr ""
 "</qt>"
 
 #. i18n: file encryptionconfigurationdialog.ui line 183
-#: rc.cpp:177
+#: rc.cpp:267
 #, no-c-format
 msgid "Certificates"
 msgstr "Tystysgrifau"
 
 #. i18n: file encryptionconfigurationdialog.ui line 228
-#: rc.cpp:181
+#: rc.cpp:271
 #, no-c-format
 msgid "Check can end with locally sa&ved certificate"
 msgstr "Gall gwirio orffen efo tystysgrif a g&edwir yn lleol"
 
 #. i18n: file encryptionconfigurationdialog.ui line 231
-#: rc.cpp:184
+#: rc.cpp:274
 #, no-c-format
 msgid "Check to end with locally saved certificate."
 msgstr "Rhaid i'r gwirio orffen efo tystysgrif a gedwir yn lleol"
 
 #. i18n: file encryptionconfigurationdialog.ui line 239
-#: rc.cpp:187
+#: rc.cpp:277
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -10082,19 +10131,19 @@ msgstr ""
 "</h1>"
 
 #. i18n: file encryptionconfigurationdialog.ui line 247
-#: rc.cpp:195
+#: rc.cpp:285
 #, no-c-format
 msgid "Always c&heck to root certificate"
 msgstr "G&wirio'r dystysgrif wraidd bob tro"
 
 #. i18n: file encryptionconfigurationdialog.ui line 253
-#: rc.cpp:198
+#: rc.cpp:288
 #, no-c-format
 msgid "Check here to check up to the root certificate"
 msgstr "Brithwch yma i wirio i fyny i'r dystysgrif wraidd"
 
 #. i18n: file encryptionconfigurationdialog.ui line 259
-#: rc.cpp:201
+#: rc.cpp:291
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -10110,19 +10159,19 @@ msgstr ""
 "</qt>"
 
 #. i18n: file encryptionconfigurationdialog.ui line 267
-#: rc.cpp:207
+#: rc.cpp:297
 #, no-c-format
 msgid "Check certificate &path"
 msgstr "Gwirio &llwybr y dystysgrif"
 
 #. i18n: file encryptionconfigurationdialog.ui line 273
-#: rc.cpp:210
+#: rc.cpp:300
 #, no-c-format
 msgid "Check here to have the whole certificate path checked"
 msgstr "Brithwch yma i wirio'r holl lwybr tystysgrif"
 
 #. i18n: file encryptionconfigurationdialog.ui line 281
-#: rc.cpp:213
+#: rc.cpp:303
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -10143,19 +10192,19 @@ msgstr ""
 "</qt>"
 
 #. i18n: file encryptionconfigurationdialog.ui line 308
-#: rc.cpp:222
+#: rc.cpp:312
 #, no-c-format
 msgid "&Use certificate revocation lists (CRLs)"
 msgstr "&Defnyddio rhestri dirymu tystysgrifau (CRLau)"
 
 #. i18n: file encryptionconfigurationdialog.ui line 314
-#: rc.cpp:225
+#: rc.cpp:315
 #, no-c-format
 msgid "Check to use CRLs"
 msgstr "Brithwch i ddefnyddio CRLau"
 
 #. i18n: file encryptionconfigurationdialog.ui line 322
-#: rc.cpp:228
+#: rc.cpp:318
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -10183,20 +10232,20 @@ msgstr ""
 "</qt>"
 
 #. i18n: file encryptionconfigurationdialog.ui line 330
-#: rc.cpp:236
+#: rc.cpp:326
 #, fuzzy, no-c-format
 msgid "Warn if CRL e&xpires in less than:"
 msgstr "&Rhybuddio os bydd yn CRL yn darfod mewn llai na"
 
 #. i18n: file encryptionconfigurationdialog.ui line 336
-#: rc.cpp:239
+#: rc.cpp:329
 #, no-c-format
 msgid "Check to be warned if a CRL expires in the near future"
 msgstr ""
 "Brithwch i gael eich rhybuddio os bydd CRL yn darfod yn y dyfodol nesaf"
 
 #. i18n: file encryptionconfigurationdialog.ui line 342
-#: rc.cpp:242
+#: rc.cpp:332
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -10212,13 +10261,13 @@ msgstr ""
 "</qt>"
 
 #. i18n: file encryptionconfigurationdialog.ui line 359
-#: rc.cpp:251
+#: rc.cpp:341
 #, no-c-format
 msgid "Number of days before warning"
 msgstr "Nifer o ddiwrnodau cyn rhybuddio"
 
 #. i18n: file encryptionconfigurationdialog.ui line 367
-#: rc.cpp:254
+#: rc.cpp:344
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -10238,13 +10287,13 @@ msgstr ""
 "</qt>"
 
 #. i18n: file encryptionconfigurationdialog.ui line 411
-#: rc.cpp:262
+#: rc.cpp:352
 #, no-c-format
 msgid "Always encrypt &to self"
 msgstr "Cêl-ysgrifo o hyd pan anfonir i chi eich &hun"
 
 #. i18n: file encryptionconfigurationdialog.ui line 417
-#: rc.cpp:265
+#: rc.cpp:355
 #, no-c-format
 msgid "Check to have encrypted messages also encrypted using your own key."
 msgstr ""
@@ -10252,7 +10301,7 @@ msgstr ""
 "eich hun hefyd."
 
 #. i18n: file encryptionconfigurationdialog.ui line 425
-#: rc.cpp:268
+#: rc.cpp:358
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -10274,20 +10323,20 @@ msgstr ""
 "</qt>"
 
 #. i18n: file encryptionconfigurationdialog.ui line 452
-#: rc.cpp:279 rc.cpp:865
+#: rc.cpp:369 rc.cpp:955
 #, no-c-format
 msgid "&Warn when trying to send unencrypted messages"
 msgstr "Rhy&buddio wrth geisio anfon negeseuon heb eu cêl-ysgrifo"
 
 #. i18n: file encryptionconfigurationdialog.ui line 458
-#: rc.cpp:282 rc.cpp:868
+#: rc.cpp:372 rc.cpp:958
 #, no-c-format
 msgid "Check to be warned when sending unencrypted messages."
 msgstr ""
 "Brithwch i gael eich rhybuddio wrth geisio anfon negeseuon heb eu cêl-ysgrifo."
 
 #. i18n: file encryptionconfigurationdialog.ui line 466
-#: rc.cpp:285 rc.cpp:871
+#: rc.cpp:375 rc.cpp:961
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -10307,14 +10356,14 @@ msgstr ""
 "</qt>"
 
 #. i18n: file encryptionconfigurationdialog.ui line 483
-#: rc.cpp:296 rc.cpp:324 rc.cpp:673 rc.cpp:715 rc.cpp:729 rc.cpp:905
-#: rc.cpp:919 rc.cpp:933 rc.cpp:947 rc.cpp:961 rc.cpp:975
+#: rc.cpp:386 rc.cpp:414 rc.cpp:763 rc.cpp:805 rc.cpp:819 rc.cpp:995
+#: rc.cpp:1009 rc.cpp:1023 rc.cpp:1037 rc.cpp:1051 rc.cpp:1065
 #, no-c-format
 msgid "Select the number of days here"
 msgstr "Dewis y nifer o ddiwrnodau yma"
 
 #. i18n: file encryptionconfigurationdialog.ui line 491
-#: rc.cpp:299 rc.cpp:936
+#: rc.cpp:389 rc.cpp:1026
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -10334,19 +10383,19 @@ msgstr ""
 "</qt>"
 
 #. i18n: file encryptionconfigurationdialog.ui line 499
-#: rc.cpp:307
+#: rc.cpp:397
 #, fuzzy, no-c-format
 msgid "Warn if a certificate in &the chain expires in less than:"
 msgstr "Rhybuddio os bydd &tystysgrif yn y cadwyn yn darfod mewn llai na"
 
 #. i18n: file encryptionconfigurationdialog.ui line 505
-#: rc.cpp:310 rc.cpp:338 rc.cpp:659 rc.cpp:687 rc.cpp:701
+#: rc.cpp:400 rc.cpp:428 rc.cpp:749 rc.cpp:777 rc.cpp:791
 #, no-c-format
 msgid "Check to be warned if the certificate expires soon"
 msgstr "Brithwch i gael eich rhybuddio os bydd y dystysgrif yn darfod yn fuan"
 
 #. i18n: file encryptionconfigurationdialog.ui line 513
-#: rc.cpp:313 rc.cpp:341
+#: rc.cpp:403 rc.cpp:431
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -10369,7 +10418,7 @@ msgstr ""
 "</qt>"
 
 #. i18n: file encryptionconfigurationdialog.ui line 538
-#: rc.cpp:327 rc.cpp:922
+#: rc.cpp:417 rc.cpp:1012
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -10389,25 +10438,25 @@ msgstr ""
 "</qt>"
 
 #. i18n: file encryptionconfigurationdialog.ui line 546
-#: rc.cpp:335
+#: rc.cpp:425
 #, fuzzy, no-c-format
 msgid "Warn if &receiver certificate expires in less than:"
 msgstr "Rhybuddio os bydd &tystysgrif derbyniwr yn darfod mewn llai na"
 
 #. i18n: file encryptionconfigurationdialog.ui line 585
-#: rc.cpp:349
+#: rc.cpp:439
 #, no-c-format
 msgid "Warn if receiver's email address is &not in certificate"
 msgstr "Rhybuddio os nad oes &cyfeiriad ebost y derbyniwr yn y dystysgrif"
 
 #. i18n: file encryptionconfigurationdialog.ui line 591
-#: rc.cpp:352 rc.cpp:743 rc.cpp:882
+#: rc.cpp:442 rc.cpp:833 rc.cpp:972
 #, no-c-format
 msgid "Check to be warned if the address is not in the certificate"
 msgstr "Brithwch i gael eich rhybuddio os nid yw'r cyfeiriad yn y dystysgrif"
 
 #. i18n: file encryptionconfigurationdialog.ui line 599
-#: rc.cpp:355 rc.cpp:885
+#: rc.cpp:445 rc.cpp:975
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -10427,133 +10476,133 @@ msgstr ""
 "</qt>"
 
 #. i18n: file folderpropertiesdialog.ui line 16
-#: rc.cpp:363
+#: rc.cpp:453
 #, no-c-format
 msgid "Folder Properties"
 msgstr "Priodweddau Plygell"
 
 #. i18n: file folderpropertiesdialog.ui line 63
-#: rc.cpp:372
+#: rc.cpp:462
 #, no-c-format
 msgid "Folder holds a &mailing list"
 msgstr "Mae'r &blygell yn cynnwys rhestr ebost"
 
 #. i18n: file folderpropertiesdialog.ui line 91
-#: rc.cpp:375
+#: rc.cpp:465
 #, no-c-format
 msgid "List &address:"
 msgstr "C&yfeiriad y rhestr:"
 
 #. i18n: file folderpropertiesdialog.ui line 122
-#: rc.cpp:378
+#: rc.cpp:468
 #, no-c-format
 msgid "N&ormal:"
 msgstr "Ar&ferol:"
 
 #. i18n: file folderpropertiesdialog.ui line 215
-#: rc.cpp:383
+#: rc.cpp:473
 #, no-c-format
 msgid "Unr&ead:"
 msgstr "&Heb eu darllen:"
 
 #. i18n: file folderpropertiesdialog.ui line 269
-#: rc.cpp:389
+#: rc.cpp:479
 #, no-c-format
 msgid "Message Expiring"
 msgstr "Neges yn Darfod"
 
 #. i18n: file folderpropertiesdialog.ui line 283
-#: rc.cpp:392
+#: rc.cpp:482
 #, no-c-format
 msgid "E&xpire after:"
 msgstr "Dar&fod ar ôl:"
 
 #. i18n: file folderpropertiesdialog.ui line 311
-#: rc.cpp:395
+#: rc.cpp:485
 #, no-c-format
 msgid "Expire &read messages"
 msgstr "&Darfod negeseuon darlleniedig"
 
 #. i18n: file folderpropertiesdialog.ui line 339
-#: rc.cpp:398
+#: rc.cpp:488
 #, no-c-format
 msgid "Expire a&fter:"
 msgstr "Darfod ar ô&l:"
 
 #. i18n: file folderpropertiesdialog.ui line 350
-#: rc.cpp:401
+#: rc.cpp:491
 #, no-c-format
 msgid "Expire &unread messages"
 msgstr "Darfod negeseuon &heb eu darllen"
 
 #. i18n: file folderpropertiesdialog.ui line 384
-#: rc.cpp:404 rc.cpp:413
+#: rc.cpp:494 rc.cpp:503
 #, no-c-format
 msgid "Day(s)"
 msgstr "Diwrnod(au)"
 
 #. i18n: file folderpropertiesdialog.ui line 389
-#: rc.cpp:407 rc.cpp:416
+#: rc.cpp:497 rc.cpp:506
 #, no-c-format
 msgid "Week(s)"
 msgstr "Wythnos(au)"
 
 #. i18n: file folderpropertiesdialog.ui line 394
-#: rc.cpp:410 rc.cpp:419
+#: rc.cpp:500 rc.cpp:509
 #, no-c-format
 msgid "Month(s)"
 msgstr "Mis(oedd)"
 
 #. i18n: file folderpropertiesdialog.ui line 451
-#: rc.cpp:422
+#: rc.cpp:512
 #, no-c-format
 msgid "Advanced"
 msgstr "Uwch"
 
 #. i18n: file folderpropertiesdialog.ui line 462
-#: rc.cpp:425
+#: rc.cpp:515
 #, fuzzy, no-c-format
 msgid "Sender identit&y:"
 msgstr "Dynodiad yr &Anfonwr:"
 
 #. i18n: file folderpropertiesdialog.ui line 483
-#: rc.cpp:428
+#: rc.cpp:518
 #, fuzzy, no-c-format
 msgid "&Storage format:"
 msgstr "Fformat &Cadw:"
 
 #. i18n: file folderpropertiesdialog.ui line 494
-#: rc.cpp:431
+#: rc.cpp:521
 #, fuzzy, no-c-format
 msgid "&List displays:"
 msgstr "&Ymddangosiad y Rhestri:"
 
 #. i18n: file signatureconfigurationdialog.ui line 16
-#: rc.cpp:440
+#: rc.cpp:530
 #, no-c-format
 msgid "Signature Configuration"
 msgstr "Ffurfweddu Llofnod"
 
 #. i18n: file signatureconfigurationdialog.ui line 27
-#: rc.cpp:443
+#: rc.cpp:533
 #, no-c-format
 msgid "Sending Certificates"
 msgstr "Anfon Tystysgrifau"
 
 #. i18n: file signatureconfigurationdialog.ui line 47
-#: rc.cpp:446
+#: rc.cpp:536
 #, fuzzy, no-c-format
 msgid "&Do not send certificates"
 msgstr "&Peidio ac anfon tystysgrifau"
 
 #. i18n: file signatureconfigurationdialog.ui line 50
-#: rc.cpp:449 rc.cpp:458 rc.cpp:467 rc.cpp:476
+#: rc.cpp:539 rc.cpp:548 rc.cpp:557 rc.cpp:566
 #, no-c-format
 msgid "Selects which certificates to send"
 msgstr "Dewis pa dystysgrif i'w hanfon"
 
 #. i18n: file signatureconfigurationdialog.ui line 53
-#: rc.cpp:452 rc.cpp:461 rc.cpp:470 rc.cpp:479
+#: rc.cpp:542 rc.cpp:551 rc.cpp:560 rc.cpp:569
 #, no-c-format
 msgid ""
 "<qt> "
@@ -10583,43 +10632,43 @@ msgstr ""
 "<p> Rhagosodiad yw hwn, gallwch ei anwybyddu ar gyfer pob gosodiad unigol. </qt>"
 
 #. i18n: file signatureconfigurationdialog.ui line 61
-#: rc.cpp:455
+#: rc.cpp:545
 #, no-c-format
 msgid "Send &your own certificate"
 msgstr "Anfon &eich tystysgrif eich hun"
 
 #. i18n: file signatureconfigurationdialog.ui line 78
-#: rc.cpp:464
+#: rc.cpp:554
 #, no-c-format
 msgid "Send certificate chain &without root"
 msgstr "Anfon cad&wyn tystysgrif heb wraidd"
 
 #. i18n: file signatureconfigurationdialog.ui line 92
-#: rc.cpp:473
+#: rc.cpp:563
 #, no-c-format
 msgid "Send certificate c&hain with root"
 msgstr "Anfon cadwyn tystysgrif efo &gwraidd"
 
 #. i18n: file signatureconfigurationdialog.ui line 125
-#: rc.cpp:482
+#: rc.cpp:572
 #, no-c-format
 msgid "Signatures"
 msgstr "Llofnodion"
 
 #. i18n: file signatureconfigurationdialog.ui line 159
-#: rc.cpp:485
+#: rc.cpp:575
 #, no-c-format
 msgid "Sign all message &parts"
 msgstr "Llofnodi pob &rhan y neges"
 
 #. i18n: file signatureconfigurationdialog.ui line 165
-#: rc.cpp:488
+#: rc.cpp:578
 #, no-c-format
 msgid "Check to have all message parts signed by default"
 msgstr "Brithwch i lofnodi pob rhan o'r neges gan ragosod"
 
 #. i18n: file signatureconfigurationdialog.ui line 173
-#: rc.cpp:491
+#: rc.cpp:581
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -10640,19 +10689,19 @@ msgstr ""
 "</qt>"
 
 #. i18n: file signatureconfigurationdialog.ui line 181
-#: rc.cpp:499
+#: rc.cpp:589
 #, no-c-format
 msgid "Ask &before signing each part"
 msgstr "Gofyn &cyn llofnodi pob rhan"
 
 #. i18n: file signatureconfigurationdialog.ui line 184
-#: rc.cpp:502
+#: rc.cpp:592
 #, no-c-format
 msgid "Check to be asked for each part whether to sign"
 msgstr "Brithwch i gael eich gofyn a ddylai pob rhan gael ei llofnodi"
 
 #. i18n: file signatureconfigurationdialog.ui line 190
-#: rc.cpp:505
+#: rc.cpp:595
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -10670,19 +10719,19 @@ msgstr ""
 "</qt>"
 
 #. i18n: file signatureconfigurationdialog.ui line 198
-#: rc.cpp:511
+#: rc.cpp:601
 #, fuzzy, no-c-format
 msgid "Do no&t sign messages"
 msgstr "Peidio â ll&ofnodi negeseuon"
 
 #. i18n: file signatureconfigurationdialog.ui line 201
-#: rc.cpp:514
+#: rc.cpp:604
 #, no-c-format
 msgid "Check for not signing a message by default"
 msgstr "Brithwch ar gyfer peidio â llofnodi neges gan ragosod"
 
 #. i18n: file signatureconfigurationdialog.ui line 209
-#: rc.cpp:517
+#: rc.cpp:607
 #, fuzzy, no-c-format
 msgid ""
 "<qt>\n"
@@ -10701,26 +10750,26 @@ msgstr ""
 "</qt>"
 
 #. i18n: file signatureconfigurationdialog.ui line 217
-#: rc.cpp:525
+#: rc.cpp:615
 #, fuzzy, no-c-format
 msgid ""
 "The signature certificate is configured on the <em>Certificates</em> page."
 msgstr "Ffurfweddir y dystysgrif lofnod ar y dudalen <em>Dystysgrifau</em>!"
 
 #. i18n: file signatureconfigurationdialog.ui line 226
-#: rc.cpp:528
+#: rc.cpp:618
 #, no-c-format
 msgid "RSA + SHA-1"
 msgstr "RSA + SHA-1"
 
 #. i18n: file signatureconfigurationdialog.ui line 233
-#: rc.cpp:531
+#: rc.cpp:621
 #, no-c-format
 msgid "Selects the signature algorithm"
 msgstr "Dewis yr algorithm ar gyfer y llofnod"
 
 #. i18n: file signatureconfigurationdialog.ui line 243
-#: rc.cpp:534
+#: rc.cpp:624
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -10754,25 +10803,25 @@ msgstr ""
 "</qt>"
 
 #. i18n: file signatureconfigurationdialog.ui line 251
-#: rc.cpp:544
+#: rc.cpp:634
 #, no-c-format
 msgid "Signature &algorithm:"
 msgstr "Algorithm y &llofnod:"
 
 #. i18n: file signatureconfigurationdialog.ui line 265
-#: rc.cpp:547
+#: rc.cpp:637
 #, no-c-format
 msgid "&Store messages with signatures"
 msgstr "Ca&dw negeseuon efo llofnodion"
 
 #. i18n: file signatureconfigurationdialog.ui line 271
-#: rc.cpp:550
+#: rc.cpp:640
 #, no-c-format
 msgid "Check to store messages with their signatures"
 msgstr "Brithwch i gadw negeseuon efo'u llofnodion"
 
 #. i18n: file signatureconfigurationdialog.ui line 277
-#: rc.cpp:553
+#: rc.cpp:643
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -10790,25 +10839,25 @@ msgstr ""
 "</qt>"
 
 #. i18n: file signatureconfigurationdialog.ui line 303
-#: rc.cpp:560
+#: rc.cpp:650
 #, no-c-format
 msgid "Compound mode:"
 msgstr "Modd cyfansawdd:"
 
 #. i18n: file signatureconfigurationdialog.ui line 319
-#: rc.cpp:563
+#: rc.cpp:653
 #, no-c-format
 msgid "Standa&rd MIME"
 msgstr "MIME &Safonol"
 
 #. i18n: file signatureconfigurationdialog.ui line 322
-#: rc.cpp:566
+#: rc.cpp:656
 #, no-c-format
 msgid "A Multipart/Signed holding Signature and signed data."
 msgstr "Amlran/Llofnodedig sy'n cynnwys Llofnod a data llofnodedig."
 
 #. i18n: file signatureconfigurationdialog.ui line 328
-#: rc.cpp:569
+#: rc.cpp:659
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -10828,19 +10877,19 @@ msgstr ""
 "</qt>"
 
 #. i18n: file signatureconfigurationdialog.ui line 344
-#: rc.cpp:575
+#: rc.cpp:665
 #, no-c-format
 msgid "Opa&que (only recommended for SPHINX)"
 msgstr "Af&loyw (argymhellir ar gyfer SPHINX yn unig)"
 
 #. i18n: file signatureconfigurationdialog.ui line 347
-#: rc.cpp:578
+#: rc.cpp:668
 #, no-c-format
 msgid "Signature and signed data encoded in one ASN.1 block."
 msgstr "Llofnod a data llofnodedig wedi'u amgodio mewn un bloc ASN.1"
 
 #. i18n: file signatureconfigurationdialog.ui line 353
-#: rc.cpp:581
+#: rc.cpp:671
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -10858,25 +10907,25 @@ msgstr ""
 "</qt>"
 
 #. i18n: file signatureconfigurationdialog.ui line 404
-#: rc.cpp:588
+#: rc.cpp:678
 #, no-c-format
 msgid "Entering PIN is required:"
 msgstr "Mae'n ofynnol i roi PIN:"
 
 #. i18n: file signatureconfigurationdialog.ui line 412
-#: rc.cpp:591
+#: rc.cpp:681
 #, no-c-format
 msgid "When adding certificates"
 msgstr "Wrth ychwanegu tystysgrifau"
 
 #. i18n: file signatureconfigurationdialog.ui line 415
-#: rc.cpp:594 rc.cpp:603 rc.cpp:612 rc.cpp:621 rc.cpp:630
+#: rc.cpp:684 rc.cpp:693 rc.cpp:702 rc.cpp:711 rc.cpp:720
 #, no-c-format
 msgid "Select how often the PIN must be entered"
 msgstr "Dewis faint mor aml a ddylai roi'r PIN"
 
 #. i18n: file signatureconfigurationdialog.ui line 418
-#: rc.cpp:597 rc.cpp:606 rc.cpp:615 rc.cpp:624 rc.cpp:633
+#: rc.cpp:687 rc.cpp:696 rc.cpp:705 rc.cpp:714 rc.cpp:723
 #, fuzzy, no-c-format
 msgid ""
 "<qt> "
@@ -10902,43 +10951,43 @@ msgstr ""
 "diogelwch.</qt>"
 
 #. i18n: file signatureconfigurationdialog.ui line 429
-#: rc.cpp:600
+#: rc.cpp:690
 #, no-c-format
 msgid "Once per session"
 msgstr "Unwaith bob sesiwn"
 
 #. i18n: file signatureconfigurationdialog.ui line 443
-#: rc.cpp:609
+#: rc.cpp:699
 #, no-c-format
 msgid "Always when signing"
 msgstr "O hyd wrth lofnodi"
 
 #. i18n: file signatureconfigurationdialog.ui line 457
-#: rc.cpp:618
+#: rc.cpp:708
 #, no-c-format
 msgid "Always"
 msgstr "O hyd"
 
 #. i18n: file signatureconfigurationdialog.ui line 491
-#: rc.cpp:627
+#: rc.cpp:717
 #, no-c-format
 msgid "After"
 msgstr "Ar ôl"
 
 #. i18n: file signatureconfigurationdialog.ui line 557
-#: rc.cpp:642 rc.cpp:851
+#: rc.cpp:732 rc.cpp:941
 #, no-c-format
 msgid "Warn when trying to send &unsigned messages"
 msgstr "Rhybuddio wrth geisio anfon negeseuon &heb eu llofnodi"
 
 #. i18n: file signatureconfigurationdialog.ui line 563
-#: rc.cpp:645 rc.cpp:854
+#: rc.cpp:735 rc.cpp:944
 #, no-c-format
 msgid "Check to be warned when sending unsigned messages."
 msgstr "Brithwch i gael eich rhybuddio wrth anfon negeseuon heb eu llofnodi."
 
 #. i18n: file signatureconfigurationdialog.ui line 571
-#: rc.cpp:648 rc.cpp:857
+#: rc.cpp:738 rc.cpp:947
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -10958,13 +11007,13 @@ msgstr ""
 "</qt>"
 
 #. i18n: file signatureconfigurationdialog.ui line 579
-#: rc.cpp:656
+#: rc.cpp:746
 #, fuzzy, no-c-format
 msgid "Warn if CA certificate e&xpires in less than:"
 msgstr "Rhybuddio os bydd y dystys&grif CA yn darfod mewn llai na"
 
 #. i18n: file signatureconfigurationdialog.ui line 593
-#: rc.cpp:662 rc.cpp:690 rc.cpp:704
+#: rc.cpp:752 rc.cpp:780 rc.cpp:794
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -10987,7 +11036,7 @@ msgstr ""
 "</qt>"
 
 #. i18n: file signatureconfigurationdialog.ui line 618
-#: rc.cpp:676 rc.cpp:908
+#: rc.cpp:766 rc.cpp:998
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -11007,19 +11056,19 @@ msgstr ""
 "</qt>"
 
 #. i18n: file signatureconfigurationdialog.ui line 626
-#: rc.cpp:684
+#: rc.cpp:774
 #, fuzzy, no-c-format
 msgid "Warn if s&ignature certificate expires in less than:"
 msgstr "Rhybuddio os bydd y dystysgrif l&ofnod yn darfod mewn llai na"
 
 #. i18n: file signatureconfigurationdialog.ui line 648
-#: rc.cpp:698
+#: rc.cpp:788
 #, fuzzy, no-c-format
 msgid "Warn if root certificate expires in &less than:"
 msgstr "Rhybuddio os bydd y dystysgrif &wraidd yn darfod mewn llai na"
 
 #. i18n: file signatureconfigurationdialog.ui line 687
-#: rc.cpp:718 rc.cpp:950
+#: rc.cpp:808 rc.cpp:1040
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -11039,7 +11088,7 @@ msgstr ""
 "</qt>"
 
 #. i18n: file signatureconfigurationdialog.ui line 712
-#: rc.cpp:732 rc.cpp:964 rc.cpp:978
+#: rc.cpp:822 rc.cpp:1054 rc.cpp:1068
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -11059,13 +11108,13 @@ msgstr ""
 "</qt>"
 
 #. i18n: file signatureconfigurationdialog.ui line 720
-#: rc.cpp:740
+#: rc.cpp:830
 #, no-c-format
 msgid "Warn if signer's email address is &not in certificate"
 msgstr "Rhybuddio os nad yw c&yfeiriad ebost yr anfonwr yn y dystysgrif"
 
 #. i18n: file signatureconfigurationdialog.ui line 734
-#: rc.cpp:746
+#: rc.cpp:836
 #, no-c-format
 msgid ""
 "<qt>\n"
@@ -11085,13 +11134,13 @@ msgstr ""
 "</qt>"
 
 #. i18n: file smimeconfiguration.ui line 24
-#: rc.cpp:754
+#: rc.cpp:844
 #, no-c-format
 msgid "Validate certificates using CRLs"
 msgstr ""
 
 #. i18n: file smimeconfiguration.ui line 30
-#: rc.cpp:757
+#: rc.cpp:847
 #, no-c-format
 msgid ""
 "If this option is selected, S/MIME certificates are validated using Certificate "
@@ -11099,13 +11148,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file smimeconfiguration.ui line 38
-#: rc.cpp:760
+#: rc.cpp:850
 #, no-c-format
 msgid "Validate certificates online (OCSP)"
 msgstr ""
 
 #. i18n: file smimeconfiguration.ui line 41
-#: rc.cpp:763
+#: rc.cpp:853
 #, no-c-format
 msgid ""
 "If this option is selected, S/MIME certificates are validated online using the "
@@ -11114,19 +11163,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file smimeconfiguration.ui line 49
-#: rc.cpp:766
+#: rc.cpp:856
 #, fuzzy, no-c-format
 msgid "Online Certificate Validation"
 msgstr "Creu Tystysgrif"
 
 #. i18n: file smimeconfiguration.ui line 68
-#: rc.cpp:769
+#: rc.cpp:859
 #, no-c-format
 msgid "OCSP responder URL:"
 msgstr ""
 
 #. i18n: file smimeconfiguration.ui line 76
-#: rc.cpp:772
+#: rc.cpp:862
 #, no-c-format
 msgid ""
 "Enter here the address of the server for online validation of certificates "
@@ -11134,25 +11183,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file smimeconfiguration.ui line 94
-#: rc.cpp:775
+#: rc.cpp:865
 #, fuzzy, no-c-format
 msgid "OCSP responder signature:"
 msgstr "Llofnod dilys"
 
 #. i18n: file smimeconfiguration.ui line 126
-#: rc.cpp:778
+#: rc.cpp:868
 #, fuzzy, no-c-format
 msgid "Ignore service URL of certificates"
 msgstr "Anfon &eich tystysgrif eich hun"
 
 #. i18n: file smimeconfiguration.ui line 136
-#: rc.cpp:781
+#: rc.cpp:871
 #, fuzzy, no-c-format
 msgid "Do not check certificate policies"
 msgstr "&Peidio ac anfon tystysgrifau"
 
 #. i18n: file smimeconfiguration.ui line 139
-#: rc.cpp:784
+#: rc.cpp:874
 #, no-c-format
 msgid ""
 "By default GnuPG uses the file ~/.gnupg/policies.txt to check if a certificate "
@@ -11160,13 +11209,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file smimeconfiguration.ui line 147
-#: rc.cpp:787
+#: rc.cpp:877
 #, no-c-format
 msgid "Never consult a CRL"
 msgstr ""
 
 #. i18n: file smimeconfiguration.ui line 150
-#: rc.cpp:790
+#: rc.cpp:880
 #, no-c-format
 msgid ""
 "If this option is checked, Certificate Revocation Lists are never used to "
@@ -11174,13 +11223,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file smimeconfiguration.ui line 158
-#: rc.cpp:793
+#: rc.cpp:883
 #, fuzzy, no-c-format
 msgid "Fetch missing issuer certificates"
 msgstr "Wrth ychwanegu tystysgrifau"
 
 #. i18n: file smimeconfiguration.ui line 161
-#: rc.cpp:796
+#: rc.cpp:886
 #, no-c-format
 msgid ""
 "If this option is checked, missing issuer certificates are fetched when "
@@ -11188,37 +11237,37 @@ msgid ""
 msgstr ""
 
 #. i18n: file smimeconfiguration.ui line 169
-#: rc.cpp:799
+#: rc.cpp:889
 #, no-c-format
 msgid "HTTP Requests"
 msgstr ""
 
 #. i18n: file smimeconfiguration.ui line 180
-#: rc.cpp:802
+#: rc.cpp:892
 #, no-c-format
 msgid "Do not perform any HTTP requests"
 msgstr ""
 
 #. i18n: file smimeconfiguration.ui line 183
-#: rc.cpp:805
+#: rc.cpp:895
 #, no-c-format
 msgid "Entirely disables the use of HTTP for S/MIME."
 msgstr ""
 
 #. i18n: file smimeconfiguration.ui line 224
-#: rc.cpp:811
+#: rc.cpp:901
 #, no-c-format
 msgid "Use this proxy for HTTP requests: "
 msgstr ""
 
 #. i18n: file smimeconfiguration.ui line 232
-#: rc.cpp:814
+#: rc.cpp:904
 #, no-c-format
 msgid "Use system HTTP proxy:"
 msgstr ""
 
 #. i18n: file smimeconfiguration.ui line 235
-#: rc.cpp:817
+#: rc.cpp:907
 #, no-c-format
 msgid ""
 "If this option is selected, the value of the HTTP proxy shown on the right "
@@ -11227,7 +11276,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file smimeconfiguration.ui line 243
-#: rc.cpp:820
+#: rc.cpp:910
 #, no-c-format
 msgid ""
 "Enter here the location of your HTTP Proxy, which will be used for all HTTP "
@@ -11236,13 +11285,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file smimeconfiguration.ui line 253
-#: rc.cpp:823
+#: rc.cpp:913
 #, fuzzy, no-c-format
 msgid "Ignore HTTP CRL distribution point of certificates"
 msgstr "Anfon &eich tystysgrif eich hun"
 
 #. i18n: file smimeconfiguration.ui line 256
-#: rc.cpp:826
+#: rc.cpp:916
 #, no-c-format
 msgid ""
 "When looking for the location of a CRL, the to-be-tested certificate usually "
@@ -11253,31 +11302,31 @@ msgid ""
 msgstr ""
 
 #. i18n: file smimeconfiguration.ui line 268
-#: rc.cpp:829
+#: rc.cpp:919
 #, no-c-format
 msgid "LDAP Requests"
 msgstr ""
 
 #. i18n: file smimeconfiguration.ui line 279
-#: rc.cpp:832
+#: rc.cpp:922
 #, no-c-format
 msgid "Do not perform any LDAP requests"
 msgstr ""
 
 #. i18n: file smimeconfiguration.ui line 282
-#: rc.cpp:835
+#: rc.cpp:925
 #, no-c-format
 msgid "Entirely disables the use of LDAP for S/MIME."
 msgstr ""
 
 #. i18n: file smimeconfiguration.ui line 307
-#: rc.cpp:838
+#: rc.cpp:928
 #, fuzzy, no-c-format
 msgid "Ignore LDAP CRL distribution point of certificates"
 msgstr "Anfon &eich tystysgrif eich hun"
 
 #. i18n: file smimeconfiguration.ui line 310
-#: rc.cpp:841
+#: rc.cpp:931
 #, no-c-format
 msgid ""
 "When looking for the location of a CRL, the to-be-tested certificate usually "
@@ -11288,13 +11337,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file smimeconfiguration.ui line 326
-#: rc.cpp:844
+#: rc.cpp:934
 #, no-c-format
 msgid "Primary host for LDAP requests:"
 msgstr ""
 
 #. i18n: file smimeconfiguration.ui line 335
-#: rc.cpp:847
+#: rc.cpp:937
 #, no-c-format
 msgid ""
 "Entering a LDAP server here will make all LDAP requests go to that server "
@@ -11307,61 +11356,61 @@ msgid ""
 msgstr ""
 
 #. i18n: file warningconfiguration.ui line 68
-#: rc.cpp:879
+#: rc.cpp:969
 #, fuzzy, no-c-format
 msgid "Warn if &Receiver's Email Address is Not in Certificate"
 msgstr "Rhybuddio os nad oes &cyfeiriad ebost y derbyniwr yn y dystysgrif"
 
 #. i18n: file warningconfiguration.ui line 90
-#: rc.cpp:893
+#: rc.cpp:983
 #, fuzzy, no-c-format
 msgid "Warn if certificates/keys expire soon (configure thresholds below)"
 msgstr "Rhybuddio os bydd y dystys&grif CA yn darfod mewn llai na"
 
 #. i18n: file warningconfiguration.ui line 104
-#: rc.cpp:896
+#: rc.cpp:986
 #, fuzzy, no-c-format
 msgid "For signing"
 msgstr "Defnyddio ar gyfer &Llofnodi"
 
 #. i18n: file warningconfiguration.ui line 115
-#: rc.cpp:899
+#: rc.cpp:989
 #, fuzzy, no-c-format
 msgid "For encryption"
 msgstr "Cêl-ysgrifaeth"
 
 #. i18n: file warningconfiguration.ui line 294
-#: rc.cpp:986
+#: rc.cpp:1076
 #, fuzzy, no-c-format
 msgid "For root certificates:"
 msgstr "Anfon &eich tystysgrif eich hun"
 
 #. i18n: file warningconfiguration.ui line 305
-#: rc.cpp:989
+#: rc.cpp:1079
 #, fuzzy, no-c-format
 msgid "For intermediate CA certificates:"
 msgstr "Chwilio am Dystysgrifau Eraill"
 
 #. i18n: file warningconfiguration.ui line 316
-#: rc.cpp:992
+#: rc.cpp:1082
 #, fuzzy, no-c-format
 msgid "For end-user certificates/keys:"
 msgstr "&Peidio ac anfon tystysgrifau"
 
 #. i18n: file warningconfiguration.ui line 388
-#: rc.cpp:995
+#: rc.cpp:1085
 #, no-c-format
 msgid "Re-enable All \"Don't Ask Again\" Warnings"
 msgstr ""
 
 #. i18n: file kmail.kcfg line 59
-#: rc.cpp:1010
+#: rc.cpp:1100
 #, no-c-format
 msgid "Send queued mail on mail check"
 msgstr ""
 
 #. i18n: file kmail.kcfg line 60
-#: rc.cpp:1013
+#: rc.cpp:1103
 #, no-c-format
 msgid ""
 "<qt>"
@@ -11371,25 +11420,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file kmail.kcfg line 73
-#: rc.cpp:1016
+#: rc.cpp:1106
 #, no-c-format
 msgid "The most recently selected folder in the folder selection dialog."
 msgstr ""
 
 #. i18n: file kmail.kcfg line 84
-#: rc.cpp:1022
+#: rc.cpp:1112
 #, fuzzy, no-c-format
 msgid "Policy for showing the system tray icon"
 msgstr "&Dangos y cafn cysawd o hyd"
 
 #. i18n: file kmail.kcfg line 92
-#: rc.cpp:1025
+#: rc.cpp:1115
 #, fuzzy, no-c-format
 msgid "Verbose new mail notification"
 msgstr "Hysbysiad Ebost Newydd"
 
 #. i18n: file kmail.kcfg line 93
-#: rc.cpp:1028
+#: rc.cpp:1118
 #, no-c-format
 msgid ""
 "If this option is enabled then for each folder the number of newly arrived "
@@ -11398,32 +11447,32 @@ msgid ""
 msgstr ""
 
 #. i18n: file kmail.kcfg line 97
-#: rc.cpp:1031
+#: rc.cpp:1121
 #, no-c-format
 msgid "Specify e&ditor:"
 msgstr "Penodi golyg&ydd"
 
 #. i18n: file kmail.kcfg line 101
-#: rc.cpp:1034
+#: rc.cpp:1124
 #, no-c-format
 msgid "Use e&xternal editor instead of composer"
 msgstr "Defny&ddio golygydd allanol yn lle cyfansoddydd"
 
 #. i18n: file kmail.kcfg line 122
-#: rc.cpp:1037
+#: rc.cpp:1127
 #, no-c-format
 msgid "Enable groupware functionality"
 msgstr "Galluogi swyddogaeth cylchwedd"
 
 #. i18n: file kmail.kcfg line 128
-#: rc.cpp:1041
+#: rc.cpp:1131
 #, fuzzy, no-c-format
 msgid "Mangle From:/To: headers in replies to replies"
 msgstr ""
 "M&odd etifeddiaeth: Llarpio penawdau Oddiwrth:/I: mewn atebion i wahoddiadau"
 
 #. i18n: file kmail.kcfg line 129
-#: rc.cpp:1044
+#: rc.cpp:1134
 #, no-c-format
 msgid ""
 "Microsoft Outlook has a number of shortcomings in its implementation of the "
@@ -11432,13 +11481,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file kmail.kcfg line 134
-#: rc.cpp:1047
+#: rc.cpp:1137
 #, no-c-format
 msgid "Send groupware invitations in the mail body"
 msgstr ""
 
 #. i18n: file kmail.kcfg line 135
-#: rc.cpp:1050
+#: rc.cpp:1140
 #, no-c-format
 msgid ""
 "Microsoft Outlook has a number of shortcomings  in its implementation of the "
@@ -11448,7 +11497,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file kmail.kcfg line 141
-#: rc.cpp:1056
+#: rc.cpp:1146
 #, no-c-format
 msgid ""
 "When this is checked, you will not see the mail composer window. Instead, all "
@@ -11459,7 +11508,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file kmail.kcfg line 148
-#: rc.cpp:1059
+#: rc.cpp:1149
 #, no-c-format
 msgid ""
 "<p>Enabling this makes it possible to store the entries from the Kontact "
@@ -11469,7 +11518,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file kmail.kcfg line 153
-#: rc.cpp:1062
+#: rc.cpp:1152
 #, no-c-format
 msgid ""
 "<p>Usually you will not have any reason to see the folders that hold the IMAP "
@@ -11477,7 +11526,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file kmail.kcfg line 158
-#: rc.cpp:1065
+#: rc.cpp:1155
 #, no-c-format
 msgid ""
 "<p>Choose the storage format of the groupware folders. "
@@ -11491,7 +11540,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file kmail.kcfg line 167
-#: rc.cpp:1068
+#: rc.cpp:1158
 #, no-c-format
 msgid ""
 "<p>This chooses the parent of the IMAP resource folders.</p>"
@@ -11499,13 +11548,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file kmail.kcfg line 172
-#: rc.cpp:1071
+#: rc.cpp:1161
 #, no-c-format
 msgid "<p>This is the ID of the account holding the IMAP resource folders.</p>"
 msgstr ""
 
 #. i18n: file kmail.kcfg line 177
-#: rc.cpp:1074
+#: rc.cpp:1164
 #, no-c-format
 msgid ""
 "<p>If you want to set the folder names of the IMAP storage to your local "
@@ -11517,7 +11566,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file kmail.kcfg line 187
-#: rc.cpp:1077
+#: rc.cpp:1167
 #, no-c-format
 msgid ""
 "This value is used to decide whether the KMail Introduction should be "
@@ -11525,13 +11574,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file kmail.kcfg line 194
-#: rc.cpp:1080
+#: rc.cpp:1170
 #, no-c-format
 msgid "Maximal number of connections per host"
 msgstr ""
 
 #. i18n: file kmail.kcfg line 195
-#: rc.cpp:1083
+#: rc.cpp:1173
 #, no-c-format
 msgid ""
 "This can be used to restrict the number of connections per host while checking "
@@ -11539,13 +11588,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file kmail.kcfg line 203
-#: rc.cpp:1086
+#: rc.cpp:1176
 #, no-c-format
 msgid "Show quick search line edit"
 msgstr ""
 
 #. i18n: file kmail.kcfg line 204
-#: rc.cpp:1089
+#: rc.cpp:1179
 #, no-c-format
 msgid ""
 "This option enables or disables the search line edit above the message list "
@@ -11553,19 +11602,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file kmail.kcfg line 212
-#: rc.cpp:1092
+#: rc.cpp:1182
 #, fuzzy, no-c-format
 msgid "Keep original charset when replying or forwarding if possible"
 msgstr "&Cadw'r set nodau gwreiddiol wrth ateb neu flaenyrru (os yn bosibl)."
 
 #. i18n: file kmail.kcfg line 216
-#: rc.cpp:1095
+#: rc.cpp:1185
 #, no-c-format
 msgid "A&utomatically append signature"
 msgstr "Atodi llo&fnod yn ymysgogol"
 
 #. i18n: file kmail.kcfg line 221
-#: rc.cpp:1098
+#: rc.cpp:1188
 #, no-c-format
 msgid ""
 "Remember this identity, so that it will be used in future composer windows as "
@@ -11574,7 +11623,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file kmail.kcfg line 225
-#: rc.cpp:1102
+#: rc.cpp:1192
 #, no-c-format
 msgid ""
 "Remember this folder for sent items, so that it will be used in future composer "
@@ -11582,7 +11631,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file kmail.kcfg line 229
-#: rc.cpp:1105
+#: rc.cpp:1195
 #, no-c-format
 msgid ""
 "Remember this mail transport, so that it will be used in future composer "
@@ -11590,13 +11639,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file kmail.kcfg line 233
-#: rc.cpp:1108
+#: rc.cpp:1198
 #, no-c-format
 msgid "Word &wrap at column:"
 msgstr "Lapio &geiriau wrth golofn:"
 
 #. i18n: file kmail.kcfg line 256
-#: rc.cpp:1118
+#: rc.cpp:1208
 #, fuzzy, no-c-format
 msgid ""
 "Turn this option on to make Outlook &#8482; understand attachment names "
@@ -11606,13 +11655,13 @@ msgstr ""
 "wahoddiadau"
 
 #. i18n: file kmail.kcfg line 282
-#: rc.cpp:1124
+#: rc.cpp:1214
 #, no-c-format
 msgid "Automatically request &message disposition notifications"
 msgstr "Gofyn yn ymysgogol am &hysbysiadau lleoliad negeseuon"
 
 #. i18n: file kmail.kcfg line 283
-#: rc.cpp:1127
+#: rc.cpp:1217
 #, fuzzy, no-c-format
 msgid ""
 "<qt>"
@@ -11631,13 +11680,13 @@ msgstr ""
 "<em>Dewisiadau</em>->&gt; <em>Gofyn am Hysbysiad Lleoliad</em>.</p></qt>"
 
 #. i18n: file kmail.kcfg line 287
-#: rc.cpp:1130
+#: rc.cpp:1220
 #, no-c-format
 msgid "Use recent addresses for autocompletion"
 msgstr ""
 
 #. i18n: file kmail.kcfg line 288
-#: rc.cpp:1133
+#: rc.cpp:1223
 #, no-c-format
 msgid ""
 "Disable this option if you do not want recently used addresses to appear in the "
@@ -11645,13 +11694,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file kmail.kcfg line 309
-#: rc.cpp:1136
+#: rc.cpp:1226
 #, fuzzy, no-c-format
 msgid "Autosave interval:"
 msgstr "Cyfnod y&mofyn:"
 
 #. i18n: file kmail.kcfg line 310
-#: rc.cpp:1139
+#: rc.cpp:1229
 #, no-c-format
 msgid ""
 "A backup copy of the text in the composer window can be created regularly. The "
@@ -11660,31 +11709,31 @@ msgid ""
 msgstr ""
 
 #. i18n: file kmail.kcfg line 317
-#: rc.cpp:1142
+#: rc.cpp:1232
 #, no-c-format
 msgid "Replace recognized prefi&x with \"Re:\""
 msgstr "Amnewid rha&gddodiad a adnabyddir gan \"Re:\""
 
 #. i18n: file kmail.kcfg line 324
-#: rc.cpp:1145
+#: rc.cpp:1235
 #, no-c-format
 msgid "Replace recognized prefix with \"&Fwd:\""
 msgstr "Amnewid rhagddodiad a adnabyddir gan \"&Fwd:\""
 
 #. i18n: file kmail.kcfg line 328
-#: rc.cpp:1148
+#: rc.cpp:1238
 #, no-c-format
 msgid "Use smart &quoting"
 msgstr "Defnyddion dyfynnu dea&llus"
 
 #. i18n: file kmail.kcfg line 333
-#: rc.cpp:1151
+#: rc.cpp:1241
 #, no-c-format
 msgid "Type of addressee selector"
 msgstr ""
 
 #. i18n: file kmail.kcfg line 335
-#: rc.cpp:1154
+#: rc.cpp:1244
 #, no-c-format
 msgid ""
 "Sets the type of the dialog for selecting recipients for To,\n"
@@ -11692,13 +11741,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file kmail.kcfg line 343
-#: rc.cpp:1158
+#: rc.cpp:1248
 #, no-c-format
 msgid "Type of recipients editor"
 msgstr ""
 
 #. i18n: file kmail.kcfg line 345
-#: rc.cpp:1161
+#: rc.cpp:1251
 #, no-c-format
 msgid ""
 "Sets the type of the recipients editor for editing To,\n"
@@ -11706,13 +11755,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file kmail.kcfg line 360
-#: rc.cpp:1165
+#: rc.cpp:1255
 #, no-c-format
 msgid "Maximum number of recipient editor lines."
 msgstr ""
 
 #. i18n: file kmail.kcfg line 399
-#: rc.cpp:1169
+#: rc.cpp:1259
 #, no-c-format
 msgid ""
 "Some emails, especially those generated automatically, do not specify the "
@@ -11723,7 +11772,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file kmail.kcfg line 405
-#: rc.cpp:1173
+#: rc.cpp:1263
 #, no-c-format
 msgid ""
 "Changing this from its default 'Auto' will force the use of the specified "
@@ -11731,7 +11780,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file kmail.kcfg line 411
-#: rc.cpp:1179
+#: rc.cpp:1269
 #, no-c-format
 msgid ""
 "Enable this if you want smileys like :-) appearing in the message text to be "
@@ -11739,7 +11788,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file kmail.kcfg line 416
-#: rc.cpp:1185
+#: rc.cpp:1275
 #, no-c-format
 msgid ""
 "Enable this option to show different levels of quoted text. Disable to hide the "
@@ -11747,31 +11796,31 @@ msgid ""
 msgstr ""
 
 #. i18n: file kmail.kcfg line 419
-#: rc.cpp:1188
+#: rc.cpp:1278
 #, no-c-format
 msgid "Automatic collapse level:"
 msgstr ""
 
 #. i18n: file kmail.kcfg line 427
-#: rc.cpp:1191
+#: rc.cpp:1281
 #, no-c-format
 msgid "Reduce font size for quoted text"
 msgstr ""
 
 #. i18n: file kmail.kcfg line 428
-#: rc.cpp:1194
+#: rc.cpp:1284
 #, no-c-format
 msgid "Enable this option to show quoted text with a smaller font."
 msgstr ""
 
 #. i18n: file kmail.kcfg line 449
-#: rc.cpp:1198
+#: rc.cpp:1288
 #, fuzzy, no-c-format
 msgid "Send Message Disposition Notifications with an empty sender."
 msgstr "Hysbysiadau Lleoliad Neges"
 
 #. i18n: file kmail.kcfg line 450
-#: rc.cpp:1201
+#: rc.cpp:1291
 #, no-c-format
 msgid ""
 "Send Message Disposition Notifications with an empty sender string. Some "
@@ -11855,62 +11904,62 @@ msgstr ""
 msgid "Truncating recipients list to %1 of %2 entries."
 msgstr ""
 
-#: recipientspicker.cpp:89
+#: recipientspicker.cpp:88
 #, fuzzy, c-format
 msgid ""
 "_n: 1 email address\n"
 "%n email addresses"
 msgstr "Dewis cyfeiriad(au) ebost"
 
-#: recipientspicker.cpp:114
+#: recipientspicker.cpp:113
 #, c-format
 msgid "Distribution List %1"
 msgstr "Rhestr Dosbarthu %1"
 
-#: recipientspicker.cpp:254
+#: recipientspicker.cpp:253
 #, fuzzy
 msgid "Select Recipient"
 msgstr "<derbynwyr>"
 
-#: recipientspicker.cpp:262
+#: recipientspicker.cpp:261
 msgid "Address book:"
 msgstr "Llyfr Cyfeiriadau :"
 
-#: recipientspicker.cpp:282
+#: recipientspicker.cpp:281
 msgid "&Search:"
 msgstr "&Chwilio:"
 
-#: recipientspicker.cpp:290
+#: recipientspicker.cpp:289
 msgid "->"
 msgstr ""
 
-#: recipientspicker.cpp:309
+#: recipientspicker.cpp:308
 msgid "Add as To"
 msgstr "Ychwanegu e"
 
-#: recipientspicker.cpp:313
+#: recipientspicker.cpp:312
 msgid "Add as CC"
 msgstr "Ychwanegu e"
 
-#: recipientspicker.cpp:317
+#: recipientspicker.cpp:316
 #, fuzzy
 msgid "Add as BCC"
 msgstr "Ychwanegu Cyfrif"
 
-#: recipientspicker.cpp:373
+#: recipientspicker.cpp:365
 msgid "All"
 msgstr "Popeth"
 
-#: recipientspicker.cpp:425
+#: recipientspicker.cpp:375
 #, fuzzy
 msgid "Selected Recipients"
 msgstr "<derbynwyr>"
 
-#: recipientspicker.cpp:432
+#: recipientspicker.cpp:442
 msgid "Distribution Lists"
 msgstr "Rhestri Dosbarthu"
 
-#: recipientspicker.cpp:617
+#: recipientspicker.cpp:627
 msgid ""
 "_n: You selected 1 recipient. The maximum supported number of recipients is %1. "
 "Please adapt the selection.\n"
@@ -12806,16 +12855,6 @@ msgstr "I:"
 #: kmsearchpattern.h:233
 msgid "Has Attachment"
 msgstr "Efo Atodiad"
-
-#~ msgid "&Go"
-#~ msgstr "&Mynd"
-
-#~ msgid "F&older"
-#~ msgstr "P&lygell"
-
-#, fuzzy
-#~ msgid "Mark Thread as"
-#~ msgstr "Nodi Edefyn fel &Newydd"
 
 #~ msgid "Sign/Encrypt"
 #~ msgstr "Llofnodi/Cêl-ysgrifo"
