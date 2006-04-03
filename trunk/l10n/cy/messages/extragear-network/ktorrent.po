@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2006-03-27 11:44+0200\n"
+"POT-Creation-Date: 2006-04-03 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,9 @@ msgstr "Lawrlwythiadau"
 msgid "Uploads"
 msgstr "Lawrlwytho"
 
-#: apps/ktorrent/ktorrent.cpp:193
+#. i18n: file ./apps/ktorrent/queuedlg.ui line 220
+#: apps/ktorrent/ktorrent.cpp:193 rc.cpp:261 rc.cpp:293
+#, no-c-format
 msgid "Info"
 msgstr "Gwybo"
 
@@ -117,7 +119,7 @@ msgid "Cannot bind to port %1 or the 10 following ports."
 msgstr ""
 
 #: apps/ktorrent/ktorrentcore.cpp:173
-#: libktorrent/torrent/torrentcontrol.cpp:896
+#: libktorrent/torrent/torrentcontrol.cpp:899
 msgid "Select Folder to Save To"
 msgstr ""
 
@@ -184,7 +186,7 @@ msgid "You must fill in the name field."
 msgstr ""
 
 #. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 184
-#: apps/ktorrent/torrentcreatordlg.cpp:66 rc.cpp:288
+#: apps/ktorrent/torrentcreatordlg.cpp:66 rc.cpp:364
 #, no-c-format
 msgid "You must add at least one tracker."
 msgstr ""
@@ -232,7 +234,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./libktorrent/pluginmanagerwidget.ui line 36
-#: apps/ktorrent/ktorrentview.cpp:45 rc.cpp:324
+#: apps/ktorrent/ktorrentview.cpp:45 rc.cpp:400
 #, no-c-format
 msgid "Status"
 msgstr "Cyflwr"
@@ -242,7 +244,7 @@ msgid "Downloaded"
 msgstr ""
 
 #. i18n: file ./apps/ktorrent/fileselectdlgbase.ui line 36
-#: apps/ktorrent/ktorrentview.cpp:47 rc.cpp:9 rc.cpp:521
+#: apps/ktorrent/ktorrentview.cpp:47 rc.cpp:9 rc.cpp:597
 #, no-c-format
 msgid "Size"
 msgstr "Maint"
@@ -267,13 +269,13 @@ msgstr ""
 
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 100
 #: apps/ktorrent/ktorrentview.cpp:52 plugins/infowidget/infowidget.cpp:119
-#: rc.cpp:430
+#: rc.cpp:506
 #, no-c-format
 msgid "Peers"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 789
-#: apps/ktorrent/ktorrentview.cpp:53 rc.cpp:530
+#: apps/ktorrent/ktorrentview.cpp:53 rc.cpp:606
 #, no-c-format
 msgid "% Complete"
 msgstr ""
@@ -284,7 +286,7 @@ msgstr ""
 
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 778
 #: apps/ktorrent/ktorrentview.cpp:78 plugins/infowidget/infowidget.cpp:69
-#: rc.cpp:527
+#: rc.cpp:603
 #, no-c-format
 msgid "Preview"
 msgstr "Rhagolwg"
@@ -307,14 +309,18 @@ msgid ""
 "want to change the limit."
 msgstr ""
 
-#: apps/ktorrent/queuedialog.cpp:55
+#: apps/ktorrent/queuedialog.cpp:69
 msgid "User"
 msgstr "Defnyddiwr"
 
-#: apps/ktorrent/queuedialog.cpp:57
+#: apps/ktorrent/queuedialog.cpp:71
 #, fuzzy
 msgid "Queue Manager"
 msgstr "Trefnydd Ategion"
+
+#: apps/ktorrent/queuedialog.cpp:300 apps/ktorrent/queuedialog.cpp:329
+msgid "No (private torrent)"
+msgstr ""
 
 #: apps/ktorrent/trayicon.cpp:63
 msgid "<b>%1</b> has completed downloading.<br>Average speed: %2 DL / %3 UL."
@@ -371,13 +377,13 @@ msgid "Select Which Files You Want to Download"
 msgstr ""
 
 #. i18n: file ./apps/ktorrent/fileselectdlgbase.ui line 47
-#: rc.cpp:12 rc.cpp:524
+#: rc.cpp:12 rc.cpp:600
 #, no-c-format
 msgid "Download"
 msgstr "Lawrlwytho"
 
 #. i18n: file ./apps/ktorrent/fileselectdlgbase.ui line 73
-#: rc.cpp:15 rc.cpp:246
+#: rc.cpp:15 rc.cpp:322
 #, no-c-format
 msgid "O&K"
 msgstr "I&awn"
@@ -431,7 +437,7 @@ msgid "&Use DHT to get additional peers (EXPERIMENTAL)"
 msgstr ""
 
 #. i18n: file ./apps/ktorrent/generalpref.ui line 100
-#: rc.cpp:45 rc.cpp:387
+#: rc.cpp:45 rc.cpp:243 rc.cpp:463
 #, fuzzy, no-c-format
 msgid "Alt+U"
 msgstr "Alt+A"
@@ -449,7 +455,7 @@ msgid "Show s&ystem tray icon"
 msgstr "Dangos eicon y teclyn &cysawd"
 
 #. i18n: file ./apps/ktorrent/generalpref.ui line 170
-#: rc.cpp:57 rc.cpp:552
+#: rc.cpp:57 rc.cpp:228 rc.cpp:628
 #, fuzzy, no-c-format
 msgid "Alt+Y"
 msgstr "Alt+A"
@@ -521,7 +527,7 @@ msgid "Se&nd the tracker a custom IP or hostname"
 msgstr ""
 
 #. i18n: file ./apps/ktorrent/generalpref.ui line 309
-#: rc.cpp:93 rc.cpp:406
+#: rc.cpp:93 rc.cpp:249 rc.cpp:482
 #, fuzzy, no-c-format
 msgid "Alt+N"
 msgstr "Alt+A"
@@ -720,718 +726,778 @@ msgstr ""
 msgid "KT Queue Dialog"
 msgstr ""
 
-#. i18n: file ./apps/ktorrent/queuedlg.ui line 25
-#: rc.cpp:213
-#, fuzzy, no-c-format
-msgid "Torrent"
-msgstr "KTorrent"
-
-#. i18n: file ./apps/ktorrent/queuedlg.ui line 36
+#. i18n: file ./apps/ktorrent/queuedlg.ui line 30
 #: rc.cpp:216
 #, no-c-format
-msgid "Controlled by"
+msgid "Alt+C"
+msgstr "Alt+C"
+
+#. i18n: file ./apps/ktorrent/queuedlg.ui line 41
+#: rc.cpp:222
+#, fuzzy, no-c-format
+msgid "Alt+O"
+msgstr "Alt+A"
+
+#. i18n: file ./apps/ktorrent/queuedlg.ui line 49
+#: rc.cpp:225
+#, no-c-format
+msgid "Appl&y"
 msgstr ""
 
 #. i18n: file ./apps/ktorrent/queuedlg.ui line 68
-#: rc.cpp:219
-#, no-c-format
-msgid "Move &up"
-msgstr "Symud i &fyny"
-
-#. i18n: file ./apps/ktorrent/queuedlg.ui line 76
-#: rc.cpp:222
-#, no-c-format
-msgid "Move dow&n"
-msgstr "Symud i la&wr"
-
-#. i18n: file ./apps/ktorrent/queuedlg.ui line 111
-#: rc.cpp:225
+#: rc.cpp:231
 #, no-c-format
 msgid "&QM Controlled"
 msgstr ""
 
-#. i18n: file ./apps/ktorrent/queuedlg.ui line 119
-#: rc.cpp:228
+#. i18n: file ./apps/ktorrent/queuedlg.ui line 71
+#: rc.cpp:234
+#, fuzzy, no-c-format
+msgid "Alt+Q"
+msgstr "Alt+A"
+
+#. i18n: file ./apps/ktorrent/queuedlg.ui line 79
+#: rc.cpp:237
 #, no-c-format
 msgid "&User Controlled"
 msgstr ""
 
-#. i18n: file ./apps/ktorrent/pastedlgbase.ui line 30
+#. i18n: file ./apps/ktorrent/queuedlg.ui line 114
 #: rc.cpp:240
+#, no-c-format
+msgid "Move &up"
+msgstr "Symud i &fyny"
+
+#. i18n: file ./apps/ktorrent/queuedlg.ui line 125
+#: rc.cpp:246
+#, no-c-format
+msgid "Move dow&n"
+msgstr "Symud i la&wr"
+
+#. i18n: file ./apps/ktorrent/queuedlg.ui line 176
+#: rc.cpp:252
+#, fuzzy, no-c-format
+msgid "Downlo&ad"
+msgstr "Lawrlwytho"
+
+#. i18n: file ./apps/ktorrent/queuedlg.ui line 185
+#: rc.cpp:255 rc.cpp:287
+#, fuzzy, no-c-format
+msgid "Torrent"
+msgstr "KTorrent"
+
+#. i18n: file ./apps/ktorrent/queuedlg.ui line 196
+#: rc.cpp:258 rc.cpp:290
+#, no-c-format
+msgid "Controlled by"
+msgstr ""
+
+#. i18n: file ./apps/ktorrent/queuedlg.ui line 247
+#: rc.cpp:264 rc.cpp:296 rc.cpp:520
+#, no-c-format
+msgid "Status:"
+msgstr "Cyflwr:"
+
+#. i18n: file ./apps/ktorrent/queuedlg.ui line 263
+#: rc.cpp:267 rc.cpp:299
+#, no-c-format
+msgid "Tracker:"
+msgstr ""
+
+#. i18n: file ./apps/ktorrent/queuedlg.ui line 271
+#: rc.cpp:270 rc.cpp:302
+#, no-c-format
+msgid "DHT:"
+msgstr ""
+
+#. i18n: file ./apps/ktorrent/queuedlg.ui line 287
+#: rc.cpp:273 rc.cpp:305 rc.cpp:542
+#, no-c-format
+msgid "Share ratio:"
+msgstr ""
+
+#. i18n: file ./apps/ktorrent/queuedlg.ui line 295
+#: rc.cpp:276
+#, no-c-format
+msgid "Bytes left:"
+msgstr ""
+
+#. i18n: file ./apps/ktorrent/queuedlg.ui line 359
+#: rc.cpp:284
+#, no-c-format
+msgid "&Seed"
+msgstr ""
+
+#. i18n: file ./apps/ktorrent/queuedlg.ui line 478
+#: rc.cpp:308
+#, fuzzy, no-c-format
+msgid "Uploaded:"
+msgstr "Lawrlwytho"
+
+#. i18n: file ./apps/ktorrent/pastedlgbase.ui line 30
+#: rc.cpp:316
 #, no-c-format
 msgid "Paste URL"
 msgstr ""
 
 #. i18n: file ./apps/ktorrent/pastedlgbase.ui line 52
-#: rc.cpp:243 rc.cpp:636
+#: rc.cpp:319 rc.cpp:712
 #, no-c-format
 msgid "URL:"
 msgstr "URL:"
 
 #. i18n: file ./apps/ktorrent/pastedlgbase.ui line 114
-#: rc.cpp:249
+#: rc.cpp:325
 #, no-c-format
 msgid "C&ancel"
 msgstr "&Diddymu"
 
 #. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 16
-#: rc.cpp:252
+#: rc.cpp:328
 #, no-c-format
 msgid "Create Torrent"
 msgstr ""
 
 #. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 38
-#: rc.cpp:255
+#: rc.cpp:331
 #, no-c-format
 msgid "The file or folder of which you want to create a torrent:"
 msgstr ""
 
 #. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 53
-#: rc.cpp:258
+#: rc.cpp:334
 #, no-c-format
 msgid "File Options"
 msgstr ""
 
 #. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 72
-#: rc.cpp:261
+#: rc.cpp:337
 #, no-c-format
 msgid "Name:"
 msgstr "Enw:"
 
 #. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 112
-#: rc.cpp:264
+#: rc.cpp:340
 #, no-c-format
 msgid "Size of each chunk:"
 msgstr ""
 
 #. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 118
-#: rc.cpp:267
+#: rc.cpp:343
 #, no-c-format
 msgid "32"
 msgstr "32"
 
 #. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 123
-#: rc.cpp:270
+#: rc.cpp:346
 #, no-c-format
 msgid "64"
 msgstr "64"
 
 #. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 128
-#: rc.cpp:273
+#: rc.cpp:349
 #, no-c-format
 msgid "128"
 msgstr ""
 
 #. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 133
-#: rc.cpp:276
+#: rc.cpp:352
 #, no-c-format
 msgid "256"
 msgstr ""
 
 #. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 138
-#: rc.cpp:279
+#: rc.cpp:355
 #, no-c-format
 msgid "512"
 msgstr ""
 
 #. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 143
-#: rc.cpp:282
+#: rc.cpp:358
 #, no-c-format
 msgid "1024"
 msgstr ""
 
 #. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 155
-#: rc.cpp:285
+#: rc.cpp:361
 #, no-c-format
 msgid "KB"
 msgstr "KB"
 
 #. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 192
-#: plugins/infowidget/infowidget.cpp:193 rc.cpp:291
+#: plugins/infowidget/infowidget.cpp:193 rc.cpp:367
 #, no-c-format
 msgid "Trackers"
 msgstr ""
 
 #. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 208
-#: rc.cpp:294
+#: rc.cpp:370
 #, no-c-format
 msgid "Comments:"
 msgstr "Sylwadau :"
 
 #. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 223
-#: rc.cpp:297
+#: rc.cpp:373
 #, no-c-format
 msgid "Start seedin&g the torrent"
 msgstr ""
 
 #. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 234
-#: rc.cpp:300
+#: rc.cpp:376
 #, no-c-format
 msgid "Private torrent (DHT not allowed)"
 msgstr ""
 
 #. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 273
-#: rc.cpp:303
+#: rc.cpp:379
 #, no-c-format
 msgid "Cre&ate"
 msgstr "Cre&u"
 
 #. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 287
-#: rc.cpp:306 rc.cpp:626
+#: rc.cpp:382 rc.cpp:702
 #, no-c-format
 msgid "Ca&ncel"
 msgstr "Di&ddymu"
 
 #. i18n: file ./apps/ktupnptest/mainwidget.ui line 16
-#: rc.cpp:309 rc.cpp:369
+#: rc.cpp:385 rc.cpp:445
 #, no-c-format
 msgid "Form1"
 msgstr "Ffurf1"
 
 #. i18n: file ./apps/ktupnptest/mainwidget.ui line 57
-#: rc.cpp:312
+#: rc.cpp:388
 #, no-c-format
 msgid "Test"
 msgstr "Profi"
 
 #. i18n: file ./libktorrent/pluginmanagerwidget.ui line 16
-#: rc.cpp:318
+#: rc.cpp:394
 #, no-c-format
 msgid "Plugin Manager"
 msgstr "Trefnydd Ategion"
 
 #. i18n: file ./libktorrent/pluginmanagerwidget.ui line 25
-#: rc.cpp:321
+#: rc.cpp:397
 #, no-c-format
 msgid "Name"
 msgstr "Enw"
 
 #. i18n: file ./libktorrent/pluginmanagerwidget.ui line 47
-#: rc.cpp:327
+#: rc.cpp:403
 #, no-c-format
 msgid "Description"
 msgstr "Disgrifiad"
 
 #. i18n: file ./libktorrent/pluginmanagerwidget.ui line 58
-#: rc.cpp:330
+#: rc.cpp:406
 #, no-c-format
 msgid "Author"
 msgstr "Awdur"
 
 #. i18n: file ./libktorrent/pluginmanagerwidget.ui line 84
-#: rc.cpp:333
+#: rc.cpp:409
 #, no-c-format
 msgid "Load"
 msgstr "Llwytho"
 
 #. i18n: file ./libktorrent/pluginmanagerwidget.ui line 92
-#: rc.cpp:336
+#: rc.cpp:412
 #, fuzzy, no-c-format
 msgid "U&nload"
 msgstr "Lawrlwytho"
 
 #. i18n: file ./libktorrent/pluginmanagerwidget.ui line 100
-#: rc.cpp:339
+#: rc.cpp:415
 #, no-c-format
 msgid "Load All"
 msgstr ""
 
 #. i18n: file ./libktorrent/pluginmanagerwidget.ui line 108
-#: rc.cpp:342
+#: rc.cpp:418
 #, no-c-format
 msgid "Unload All"
 msgstr ""
 
 #. i18n: file ./plugins/upnp/ktupnpplugin.kcfg line 10
-#: rc.cpp:345
+#: rc.cpp:421
 #, no-c-format
 msgid "Default UPnP device to use"
 msgstr ""
 
 #. i18n: file ./plugins/upnp/upnpwidget.ui line 16
-#: plugins/upnp/upnpprefpage.cpp:31 rc.cpp:348
+#: plugins/upnp/upnpprefpage.cpp:31 rc.cpp:424
 #, no-c-format
 msgid "UPnP"
 msgstr ""
 
 #. i18n: file ./plugins/upnp/upnpwidget.ui line 35
-#: rc.cpp:351
+#: rc.cpp:427
 #, no-c-format
 msgid "Detected devices:"
 msgstr ""
 
 #. i18n: file ./plugins/upnp/upnpwidget.ui line 41
-#: rc.cpp:354
+#: rc.cpp:430
 #, no-c-format
 msgid "Device"
 msgstr "Dyfais"
 
 #. i18n: file ./plugins/upnp/upnpwidget.ui line 52
-#: rc.cpp:357
+#: rc.cpp:433
 #, fuzzy, no-c-format
 msgid "Ports Forwarded"
 msgstr "Lawrlwytho"
 
 #. i18n: file ./plugins/upnp/upnpwidget.ui line 80
-#: rc.cpp:360
+#: rc.cpp:436
 #, no-c-format
 msgid "Forward Ports"
 msgstr ""
 
 #. i18n: file ./plugins/upnp/upnpwidget.ui line 88
-#: rc.cpp:363
+#: rc.cpp:439
 #, no-c-format
 msgid "Undo Port Forwarding"
 msgstr ""
 
 #. i18n: file ./plugins/upnp/upnpwidget.ui line 113
-#: rc.cpp:366
+#: rc.cpp:442
 #, no-c-format
 msgid "Rescan"
 msgstr "Ailsyllu"
 
 #. i18n: file ./plugins/infowidget/trackerviewbase.ui line 43
-#: rc.cpp:372
+#: rc.cpp:448
 #, no-c-format
 msgid "Tracker URL:"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/trackerviewbase.ui line 84
-#: rc.cpp:376
+#: rc.cpp:452
 #, no-c-format
 msgid "Tracker status:"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/trackerviewbase.ui line 125
-#: rc.cpp:380 rc.cpp:447
+#: rc.cpp:456 rc.cpp:523
 #, no-c-format
 msgid "Next update in:"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/trackerviewbase.ui line 158
-#: rc.cpp:384
+#: rc.cpp:460
 #, no-c-format
 msgid "&Update tracker"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/trackerviewbase.ui line 171
-#: rc.cpp:390
+#: rc.cpp:466
 #, fuzzy, no-c-format
 msgid "Available trackers:"
 msgstr "Ar gael"
 
 #. i18n: file ./plugins/infowidget/trackerviewbase.ui line 182
-#: rc.cpp:393
+#: rc.cpp:469
 #, no-c-format
 msgid "&Add tracker"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/trackerviewbase.ui line 185
-#: rc.cpp:396
+#: rc.cpp:472
 #, no-c-format
 msgid "Alt+A"
 msgstr "Alt+A"
 
 #. i18n: file ./plugins/infowidget/trackerviewbase.ui line 193
-#: rc.cpp:399
+#: rc.cpp:475
 #, no-c-format
 msgid "Remove tracker"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/trackerviewbase.ui line 204
-#: rc.cpp:403
+#: rc.cpp:479
 #, no-c-format
 msgid "Cha&nge tracker"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/trackerviewbase.ui line 215
-#: rc.cpp:409
+#: rc.cpp:485
 #, no-c-format
 msgid "Restore defau&lt"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/trackerviewbase.ui line 218
-#: rc.cpp:412
+#: rc.cpp:488
 #, fuzzy, no-c-format
 msgid "Alt+L"
 msgstr "Alt+A"
 
 #. i18n: file ./plugins/infowidget/trackerviewbase.ui line 229
-#: rc.cpp:415 rc.cpp:441
+#: rc.cpp:491 rc.cpp:517
 #, no-c-format
 msgid "Tracker"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 24
-#: rc.cpp:418
+#: rc.cpp:494
 #, no-c-format
 msgid "InfoWidgetBase"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 39
-#: rc.cpp:421
+#: rc.cpp:497
 #, no-c-format
 msgid "St&atus"
 msgstr "Cy&flwr"
 
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 50
-#: rc.cpp:424
+#: rc.cpp:500
 #, no-c-format
 msgid "Parts of the file which have been downloaded:"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 63
-#: rc.cpp:427
+#: rc.cpp:503
 #, no-c-format
 msgid "Parts of the file which are available:"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 119
-#: rc.cpp:433
+#: rc.cpp:509
 #, no-c-format
 msgid "Leechers:"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 167
-#: rc.cpp:438
+#: rc.cpp:514
 #, no-c-format
 msgid "Seeders:"
 msgstr ""
 
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 206
-#: rc.cpp:444
-#, no-c-format
-msgid "Status:"
-msgstr "Cyflwr:"
-
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 278
-#: rc.cpp:452
+#: rc.cpp:528
 #, no-c-format
 msgid "Average Speed"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 297
-#: rc.cpp:455
+#: rc.cpp:531
 #, no-c-format
 msgid "Down:"
 msgstr "I Lawr :"
 
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 305
-#: rc.cpp:458
+#: rc.cpp:534
 #, no-c-format
 msgid "Up:"
 msgstr "I fyny :"
 
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 357
-#: rc.cpp:463
+#: rc.cpp:539
 #, no-c-format
 msgid "Sharing"
 msgstr "Rhannu"
 
-#. i18n: file ./plugins/infowidget/infowidgetbase.ui line 376
-#: rc.cpp:466
-#, no-c-format
-msgid "Share ratio:"
-msgstr ""
-
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 414
-#: rc.cpp:470
+#: rc.cpp:546
 #, no-c-format
 msgid "Max ratio:"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 417
-#: rc.cpp:473 rc.cpp:489
+#: rc.cpp:549 rc.cpp:565
 #, no-c-format
 msgid "Limit works only in seed mode"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 439
-#: rc.cpp:476
+#: rc.cpp:552
 #, no-c-format
 msgid "."
 msgstr "."
 
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 445
-#: rc.cpp:479
+#: rc.cpp:555
 #, no-c-format
 msgid "9.99; "
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 448
-#: rc.cpp:482
+#: rc.cpp:558
 #, no-c-format
 msgid ""
 "Your upload will stop when share ratio gets to this value. Zero means no limit."
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 458
-#: rc.cpp:485
+#: rc.cpp:561
 #, no-c-format
 msgid "Use limit?"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 476
-#: plugins/infowidget/infowidget.cpp:156 rc.cpp:492
+#: plugins/infowidget/infowidget.cpp:156 rc.cpp:568
 #, no-c-format
 msgid "Chunks"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 495
-#: rc.cpp:495
+#: rc.cpp:571
 #, no-c-format
 msgid "Total:"
 msgstr "Cyfanswm:"
 
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 533
-#: rc.cpp:499
+#: rc.cpp:575
 #, fuzzy, no-c-format
 msgid "Currently downloading:"
 msgstr "Lawrlwytho"
 
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 571
-#: rc.cpp:503
+#: rc.cpp:579
 #, fuzzy, no-c-format
 msgid "Downloaded:"
 msgstr "Lawrlwytho"
 
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 609
-#: rc.cpp:507
+#: rc.cpp:583
 #, no-c-format
 msgid "Excluded:"
 msgstr "Gwaharddwyd :"
 
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 647
-#: rc.cpp:511
+#: rc.cpp:587
 #, no-c-format
 msgid "Size:"
 msgstr "Maint:"
 
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 736
-#: rc.cpp:515
+#: rc.cpp:591
 #, no-c-format
 msgid "Fi&les"
 msgstr "Ffei&liau"
 
 #. i18n: file ./plugins/infowidget/ktinfowidgetplugin.kcfg line 10
-#: rc.cpp:533
+#: rc.cpp:609
 #, no-c-format
 msgid "Show peer view tab in main window"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/ktinfowidgetplugin.kcfg line 14
-#: rc.cpp:536
+#: rc.cpp:612
 #, no-c-format
 msgid "Show chunk download view tab in main window"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/ktinfowidgetplugin.kcfg line 18
-#: rc.cpp:539
+#: rc.cpp:615
 #, no-c-format
 msgid "Show trackers view tab in main window"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/iwpref.ui line 16
-#: rc.cpp:542
+#: rc.cpp:618
 #, no-c-format
 msgid "IWPref"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/iwpref.ui line 27
-#: rc.cpp:545
+#: rc.cpp:621
 #, no-c-format
 msgid "Show list of peers"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/iwpref.ui line 38
-#: rc.cpp:549
+#: rc.cpp:625
 #, fuzzy, no-c-format
 msgid "Show list of chunks currentl&y downloading"
 msgstr "Lawrlwytho"
 
 #. i18n: file ./plugins/infowidget/iwpref.ui line 66
-#: rc.cpp:555
+#: rc.cpp:631
 #, no-c-format
 msgid "Show list of trackers"
 msgstr ""
 
 #. i18n: file ./plugins/ipfilter/ipblockingpref.ui line 16
-#: rc.cpp:559
+#: rc.cpp:635
 #, fuzzy, no-c-format
 msgid "IPBlocking Preferences"
 msgstr "Hoffterau"
 
 #. i18n: file ./plugins/ipfilter/ipblockingpref.ui line 44
-#: rc.cpp:562
+#: rc.cpp:638
 #, no-c-format
 msgid "Select Filter File with IP Ranges in KTorrent Format"
 msgstr ""
 
 #. i18n: file ./plugins/ipfilter/ipblockingpref.ui line 63
-#: rc.cpp:565 rc.cpp:581
+#: rc.cpp:641 rc.cpp:657
 #, no-c-format
 msgid "IP filter file:"
 msgstr ""
 
 #. i18n: file ./plugins/ipfilter/ipblockingpref.ui line 78
-#: rc.cpp:568
+#: rc.cpp:644
 #, fuzzy, no-c-format
 msgid "Use &KTorrent filter?"
 msgstr "KTorrent"
 
 #. i18n: file ./plugins/ipfilter/ipblockingpref.ui line 116
-#: rc.cpp:572
+#: rc.cpp:648
 #, no-c-format
 msgid "Select Level1 Filter File (from Bluetack.co.uk or Openmedia.info)"
 msgstr ""
 
 #. i18n: file ./plugins/ipfilter/ipblockingpref.ui line 127
-#: rc.cpp:575
+#: rc.cpp:651
 #, no-c-format
 msgid "Use level&1 filter?"
 msgstr ""
 
 #. i18n: file ./plugins/ipfilter/ipblockingpref.ui line 130
-#: rc.cpp:578
+#: rc.cpp:654
 #, no-c-format
 msgid "Alt+1"
 msgstr "Alt+1"
 
 #. i18n: file ./plugins/ipfilter/ipblockingpref.ui line 154
-#: rc.cpp:584
+#: rc.cpp:660
 #, no-c-format
 msgid "http://www.bluetack.co.uk/modules.php?name=Downloads&d_op=getit&lid=8"
 msgstr ""
 
 #. i18n: file ./plugins/ipfilter/ipblockingpref.ui line 192
-#: rc.cpp:587
+#: rc.cpp:663
 #, fuzzy, no-c-format
 msgid "Dow&nload/Convert"
 msgstr "Lawrlwytho"
 
 #. i18n: file ./plugins/ipfilter/ktipfilterplugin.kcfg line 10
-#: rc.cpp:591
+#: rc.cpp:667
 #, no-c-format
 msgid "IP filter file"
 msgstr ""
 
 #. i18n: file ./plugins/ipfilter/ktipfilterplugin.kcfg line 14
-#: rc.cpp:594
+#: rc.cpp:670
 #, no-c-format
 msgid "Level1 filter url"
 msgstr ""
 
 #. i18n: file ./plugins/ipfilter/ktipfilterplugin.kcfg line 18
-#: rc.cpp:597
+#: rc.cpp:673
 #, no-c-format
 msgid "Use level1 filter?"
 msgstr ""
 
 #. i18n: file ./plugins/ipfilter/ktipfilterplugin.kcfg line 22
-#: rc.cpp:600
+#: rc.cpp:676
 #, fuzzy, no-c-format
 msgid "Use KTorrent filter?"
 msgstr "KTorrent"
 
 #. i18n: file ./plugins/ipfilter/convert_dlg.ui line 24
-#: plugins/ipfilter/convertdialog.cpp:143 rc.cpp:603
+#: plugins/ipfilter/convertdialog.cpp:143 rc.cpp:679
 #, fuzzy, no-c-format
 msgid "Converting..."
 msgstr "Creu ... %1"
 
 #. i18n: file ./plugins/partfileimport/importdlgbase.ui line 16
-#: rc.cpp:611
+#: rc.cpp:687
 #, no-c-format
 msgid "Import an existing download"
 msgstr ""
 
 #. i18n: file ./plugins/partfileimport/importdlgbase.ui line 49
-#: rc.cpp:614
+#: rc.cpp:690
 #, fuzzy, no-c-format
 msgid "Torrent:"
 msgstr "KTorrent"
 
 #. i18n: file ./plugins/partfileimport/importdlgbase.ui line 63
-#: rc.cpp:617
+#: rc.cpp:693
 #, no-c-format
 msgid "Data:"
 msgstr "Data:"
 
 #. i18n: file ./plugins/partfileimport/importdlgbase.ui line 95
-#: rc.cpp:620
+#: rc.cpp:696
 #, no-c-format
 msgid ""
 "Please specify the torrent and the data already downloaded for that torrent."
 msgstr ""
 
 #. i18n: file ./plugins/partfileimport/importdlgbase.ui line 133
-#: rc.cpp:623
+#: rc.cpp:699
 #, no-c-format
 msgid "&Import"
 msgstr "&Mewnforio"
 
 #. i18n: file ./plugins/search/searchpref.ui line 30
-#: rc.cpp:629
+#: rc.cpp:705
 #, fuzzy, no-c-format
 msgid "Search Preferences"
 msgstr "Hoffterau"
 
 #. i18n: file ./plugins/search/searchpref.ui line 65
-#: rc.cpp:633
+#: rc.cpp:709
 #, fuzzy, no-c-format
 msgid "Search engine name:"
 msgstr "Peiriant chwilio :"
 
 #. i18n: file ./plugins/search/searchpref.ui line 109
-#: rc.cpp:639
+#: rc.cpp:715
 #, no-c-format
 msgid "&Add"
 msgstr "&Ychwanegu"
 
 #. i18n: file ./plugins/search/searchpref.ui line 127
-#: rc.cpp:642
+#: rc.cpp:718
 #, fuzzy, no-c-format
 msgid "Search Engines"
 msgstr "Peiriant chwilio :"
 
 #. i18n: file ./plugins/search/searchpref.ui line 136
-#: rc.cpp:645
+#: rc.cpp:721
 #, no-c-format
 msgid "Engines"
 msgstr ""
 
 #. i18n: file ./plugins/search/searchpref.ui line 147
-#: rc.cpp:648
+#: rc.cpp:724
 #, no-c-format
 msgid "URL"
 msgstr "URL"
 
 #. i18n: file ./plugins/search/searchpref.ui line 198
-#: rc.cpp:654
+#: rc.cpp:730
 #, no-c-format
 msgid "R&emove All"
 msgstr "G&waredu Popeth"
 
 #. i18n: file ./plugins/search/searchpref.ui line 223
-#: rc.cpp:657
+#: rc.cpp:733
 #, no-c-format
 msgid "Add Defau&lt"
 msgstr ""
 
 #. i18n: file ./plugins/search/searchbar.ui line 53
-#: plugins/search/searchplugin.cpp:62 rc.cpp:663
+#: plugins/search/searchplugin.cpp:62 rc.cpp:739
 #, no-c-format
 msgid "Search"
 msgstr "Chwilio"
 
 #. i18n: file ./plugins/search/searchbar.ui line 78
-#: rc.cpp:666
+#: rc.cpp:742
 #, no-c-format
 msgid "Search engine:"
 msgstr "Peiriant chwilio :"
 
 #. i18n: file ./plugins/search/ktsearchplugin.kcfg line 10
-#: rc.cpp:669
+#: rc.cpp:745
 #, no-c-format
 msgid "Current search engine"
 msgstr ""
@@ -1647,20 +1713,20 @@ msgstr ""
 msgid "You are already downloading this torrent."
 msgstr ""
 
-#: libktorrent/torrent/torrentcontrol.cpp:416
+#: libktorrent/torrent/torrentcontrol.cpp:417
 #, fuzzy
 msgid "Cannot migrate %1 : %2"
 msgstr "Methu creu %1: %2"
 
-#: libktorrent/torrent/torrentcontrol.cpp:507
+#: libktorrent/torrent/torrentcontrol.cpp:508
 msgid "Invalid response"
 msgstr ""
 
-#: libktorrent/torrent/torrentcontrol.cpp:515
+#: libktorrent/torrent/torrentcontrol.cpp:516
 msgid "Unreachable"
 msgstr ""
 
-#: libktorrent/torrent/torrentcontrol.cpp:891
+#: libktorrent/torrent/torrentcontrol.cpp:894
 msgid ""
 "The torrent %1 was started with a previous version of KTorrent. To make sure "
 "this torrent still works with this version of KTorrent, we will migrate this "
@@ -1668,36 +1734,40 @@ msgid ""
 "cancel, we will select your home directory."
 msgstr ""
 
-#: libktorrent/torrent/torrentcontrol.cpp:956
+#: libktorrent/torrent/torrentcontrol.cpp:964
 msgid "Not started"
 msgstr ""
 
-#: libktorrent/torrent/torrentcontrol.cpp:958
+#: libktorrent/torrent/torrentcontrol.cpp:966
 msgid "Completed"
 msgstr "Gorffenwyd"
 
-#: libktorrent/torrent/torrentcontrol.cpp:960
+#: libktorrent/torrent/torrentcontrol.cpp:968
 msgid "Seeding"
 msgstr ""
 
-#: libktorrent/torrent/torrentcontrol.cpp:962
+#: libktorrent/torrent/torrentcontrol.cpp:970
 msgid "Downloading"
 msgstr "Lawrlwytho"
 
-#: libktorrent/torrent/torrentcontrol.cpp:964
+#: libktorrent/torrent/torrentcontrol.cpp:972
 msgid "Stalled"
 msgstr "Wedi Seibio"
 
-#: libktorrent/torrent/torrentcontrol.cpp:966
+#: libktorrent/torrent/torrentcontrol.cpp:974
 msgid "Stopped"
 msgstr "Wedi aros"
 
-#: libktorrent/torrent/torrentcontrol.cpp:968
+#: libktorrent/torrent/torrentcontrol.cpp:976
 msgid "Error: "
 msgstr "Gwall:"
 
-#: libktorrent/torrent/torrentcontrol.cpp:970
+#: libktorrent/torrent/torrentcontrol.cpp:978
 msgid "Allocating diskspace"
+msgstr ""
+
+#: libktorrent/torrent/torrentcontrol.cpp:980
+msgid "Queued"
 msgstr ""
 
 #: libktorrent/torrent/queuemanager.cpp:96
@@ -2065,19 +2135,8 @@ msgstr "Lawrlwytho"
 #~ msgid "DownloadPref"
 #~ msgstr "Lawrlwytho"
 
-#, fuzzy
-#~ msgid "Alt+Q"
-#~ msgstr "Alt+A"
-
-#~ msgid "Alt+C"
-#~ msgstr "Alt+C"
-
 #~ msgid "&Ok"
 #~ msgstr "&Iawn"
-
-#, fuzzy
-#~ msgid "Alt+O"
-#~ msgstr "Alt+A"
 
 #, fuzzy
 #~ msgid "&Status"
