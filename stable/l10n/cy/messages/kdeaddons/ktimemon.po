@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ktimemon\n"
-"POT-Creation-Date: 2005-11-30 03:25+0100\n"
+"POT-Creation-Date: 2006-04-14 03:57+0200\n"
 "PO-Revision-Date: 2004-02-26 14:15+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -54,7 +54,7 @@ msgstr "&Swits cyd-destun:"
 msgid "C&olors"
 msgstr "&Lliwiau"
 
-#: confdlg.cc:98 confdlg.cc:109
+#: confdlg.cc:98 confdlg.cc:104
 msgid "Kernel:"
 msgstr "Cnewyllyn:"
 
@@ -62,79 +62,81 @@ msgstr "Cnewyllyn:"
 msgid "User:"
 msgstr "Defnyddiwr:"
 
-#: confdlg.cc:101
-msgid "Wait:"
-msgstr "Aros:"
-
-#: confdlg.cc:103
+#: confdlg.cc:100
 msgid "Nice:"
 msgstr "Addfwyn:"
 
-#: confdlg.cc:106
+#: confdlg.cc:101
+#, fuzzy
+msgid "IOWait:"
+msgstr "Aros:"
+
+#: confdlg.cc:105
 msgid "Used:"
 msgstr "Defnyddiwyd:"
 
-#: confdlg.cc:107
+#: confdlg.cc:106
 msgid "Buffers:"
 msgstr "Byfferi:"
 
-#: confdlg.cc:111
+#: confdlg.cc:107
 msgid "Cached:"
 msgstr "Celciedig:"
 
-#: confdlg.cc:117
-msgid "Memory/Swapping"
-msgstr "Cof/Cyfnewid"
+#: confdlg.cc:110
+msgid "CPU"
+msgstr ""
 
-#: confdlg.cc:118
-msgid "CPU/Paging"
-msgstr "CPU/Tudalennu"
+#: confdlg.cc:125
+msgid "Memory"
+msgstr ""
 
-#: confdlg.cc:133
-msgid "Swap/Background"
-msgstr "Cyfnewid/Cefndiro"
+#: confdlg.cc:139
+#, fuzzy
+msgid "Swap"
+msgstr "Cyfnewid:"
 
-#: confdlg.cc:136
+#: confdlg.cc:142
 msgid "Swap:"
 msgstr "Cyfnewid:"
 
-#: confdlg.cc:145
+#: confdlg.cc:151
 msgid "Backgd:"
 msgstr "Cefndir:"
 
-#: confdlg.cc:158
+#: confdlg.cc:164
 msgid "&Interaction"
 msgstr "C&ydadwaith"
 
-#: confdlg.cc:162
+#: confdlg.cc:168
 msgid "Mouse Events"
 msgstr "Digwyddiadau'r Llygoden"
 
-#: confdlg.cc:177
+#: confdlg.cc:183
 msgid "Left button:"
 msgstr "Botwm chwith:"
 
-#: confdlg.cc:178
+#: confdlg.cc:184
 msgid "Middle button:"
 msgstr "Botwm canol:"
 
-#: confdlg.cc:179
+#: confdlg.cc:185
 msgid "Right button:"
 msgstr "Botwm de:"
 
-#: confdlg.cc:187
+#: confdlg.cc:193
 msgid "Is Ignored"
 msgstr "Anwybyddir"
 
-#: confdlg.cc:190
+#: confdlg.cc:196
 msgid "Pops Up Menu"
 msgstr "Codi Naidlen"
 
-#: confdlg.cc:191
+#: confdlg.cc:197
 msgid "Starts"
 msgstr "Cychwyn"
 
-#: sample.cc:102
+#: sample.cc:103
 msgid ""
 "Unable to open the file '%1'. The diagnostics are:\n"
 "%2.\n"
@@ -146,7 +148,7 @@ msgstr ""
 " Mae angen y ffeil yma i benodi'r defnydd cof cyfredol.\n"
 " Hwyrach mai di-safon-Linux ydi'ch cysawd ffeilio?"
 
-#: sample.cc:112
+#: sample.cc:113
 msgid ""
 "Unable to open the file '%1'. The diagnostics are:\n"
 "%2.\n"
@@ -158,7 +160,7 @@ msgstr ""
 " Mae angen y ffeil yma i benodi'r wybodaeth gysawd gyfredol.\n"
 " Hwyrach mai di-safon-Linux ydi'ch cysawd ffeilio proc?"
 
-#: sample.cc:122
+#: sample.cc:123
 msgid ""
 "Unable to initialize the 'kstat' library. This library is used for accessing "
 "kernel information. The diagnostics are:\n"
@@ -172,7 +174,7 @@ msgstr ""
 " Ydych chi o ddifrif yn rhedeg Solaris? Cysylltwch â'r cynhaliwr yn "
 "mueller@kde.org a fydd yn ceisio canfod beth aeth o'i le."
 
-#: sample.cc:211
+#: sample.cc:212
 #, fuzzy
 msgid ""
 "Unable to read the memory usage file '%1'.\n"
@@ -181,7 +183,7 @@ msgstr ""
 "Methu darllen y ffeil defnydd cof '%1/%2'.\n"
 " Dyma'r deiagnostig: %3"
 
-#: sample.cc:221
+#: sample.cc:222
 #, fuzzy
 msgid ""
 "The memory usage file '%1' seems to use a different file format than expected.\n"
@@ -195,7 +197,7 @@ msgstr ""
 "ffeilio proc. Cysylltwch â'r datblygwr wrth m.maierhofer@tees.ac.uk fydd yn "
 "ceisio ei ddatrys."
 
-#: sample.cc:237
+#: sample.cc:239
 #, fuzzy
 msgid ""
 "Unable to read the system usage file '%1'.\n"
@@ -204,7 +206,7 @@ msgstr ""
 "Methu darllen y ffeil defnydd o'r cysawd '%1/%2'.\n"
 " Dyma'r deiagnostig: %3"
 
-#: sample.cc:264
+#: sample.cc:266
 msgid ""
 "Unable to obtain system information.\n"
 "The table(2) system call returned an error for table %1.\n"
@@ -216,49 +218,56 @@ msgstr ""
 " Cysylltwch â'r cynhaliwr wrth mueller@kde.org fydd yn ceisio canfod beth aeth "
 "o'i le."
 
-#: sample.cc:306
+#: sample.cc:309
+#, fuzzy
 msgid ""
 "Unable to find any entries for CPU statistics in the 'kstat' library. Are you "
 "running a non-standard version of Solaris?\n"
-"Please contact the maintainer at mueller@kde.org who will try to sort this out."
+"Please contact the maintainer via http://bugs.kde.org/ who will try to sort "
+"this out."
 msgstr ""
 "Methu cael hyd i unrhyw gofnodion ar gyfer ystadegau'r CPU yn llyfrgell "
 "'kstat'. Ydych yn rhedeg fersiwn ansafonol o Solaris?\n"
 " Cysylltwch â'r cynhaliwr yn mueller@kde.org fydd wrth ceisio datrys hyn."
 
-#: sample.cc:322
+#: sample.cc:325
+#, fuzzy
 msgid ""
 "Unable to read the CPU statistics entry from the 'kstat' library. The "
 "diagnostics are '%1'.\n"
-"Please contact the maintainer at mueller@kde.org who will try to sort this out."
+"Please contact the maintainer via http://bugs.kde.org/ who will try to sort "
+"this out."
 msgstr ""
 "Methu darllen y cofnod ystadegau'r CPU o rhaglengell 'kstat'. Y deiagnostig ydi "
 "'%1'.\n"
 " Cysylltwch â'r cynhaliwr wrth mueller@kde.org fydd yn ceisio datrys hyn."
 
-#: sample.cc:334
+#: sample.cc:338
+#, fuzzy
 msgid ""
 "The number of CPUs appears to have changed at very short notice, or the 'kstat' "
 "library returns inconsistent results (%1 vs. %2 CPUs).\n"
-"Please contact the maintainer at mueller@kde.org who will try to sort this out."
+"Please contact the maintainer via http://bugs.kde.org/ who will try to sort "
+"this out."
 msgstr ""
 "Ymddengys fod nifer y CPUs wedi newid ar rybudd byr iawn, neu fod y rhaglengell "
 "'kstat' yn dychwelyd canlyniadau anghyson (%1 vs. %2 CPU).\n"
 " Cysylltwch â'r cynhaliwr yn mueller@kde.org fydd yn ceisio datrys hyn."
 
-#: sample.cc:346
+#: sample.cc:350
+#, fuzzy
 msgid ""
 "Unable to read the memory statistics entry from the 'kstat' library. The "
 "diagnostics are '%1'\n"
-"You might want to contact the maintainer at mueller@kde.org who will try to "
-"sort this out."
+"You might want to contact the maintainer at http://bugs.kde.org/ who will try "
+"to sort this out."
 msgstr ""
 "Methu darllen cofnod ystadegau'r cof o rhaglengell 'kstat'. Y deiagnostig ydi "
 "'%1'\n"
 " Hwyrach byddwch eisiau cysylltu â'r cynhaliwr wrth mueller@kde.org fydd yn "
 "ceisio datrys hyn."
 
-#: sample.cc:363
+#: sample.cc:367
 msgid ""
 "There seems to be a problem with KTimeMon's handling of the 'kstat' library: 0 "
 "bytes of physical memory determined!\n"
@@ -270,47 +279,55 @@ msgstr ""
 " Cof rhydd ydi %1, cof ar gael ydi %2.\n"
 " Cysylltwch â'r cynhaliwr wrth mueller@kde.org fydd yn ceisio datrys hyn."
 
-#: sample.cc:375
+#: sample.cc:379
+#, fuzzy
 msgid ""
 "Unable to determine the number of swap spaces. The diagnostics are '%1'.\n"
-"Please contact the maintainer at mueller@kde.org who will try to sort this out."
+"Please contact the maintainer at http://bugs.kde.org/ who will try to sort this "
+"out."
 msgstr ""
 "Methu penodi faint o lefydd cyfnewid (swap) sydd yna. Y deiagnostig ydi '%1'.\n"
 " Cysylltwch â'r cynhaliwr wrth mueller@kde.org fydd yn datrys hyn."
 
-#: sample.cc:384
+#: sample.cc:388
+#, fuzzy
 msgid ""
 "KTimeMon ran out of memory while trying to determine the swap usage.\n"
 "Attempted to allocate %1 bytes of memory (2 * %2 + %3 * %4).\n"
-"Please contact the maintainer at mueller@kde.org who will try to sort this out."
+"Please contact the maintainer at http://bugs.kde.org/ who will try to sort this "
+"out."
 msgstr ""
 "Rhedodd KTimeMon allan o gof tra'n ceisio penodi'r defnydd cyfnewid (swap).\n"
 " Ceisiwyd neilltuo %1 beit o gof (2 * %2 + %3 * %4).\n"
 " Cysylltwch â'r cynhaliwr yn mueller@kde.org fydd yn ceisio datrys hyn."
 
-#: sample.cc:396
+#: sample.cc:400
+#, fuzzy
 msgid ""
 "Unable to determine the swap usage.\n"
 "The diagnostics are '%1'.\n"
-"Please contact the maintainer at mueller@kde.org who will try to sort this out."
+"Please contact the maintainer at http://bugs.kde.org/ who will try to sort this "
+"out."
 msgstr ""
 "Methu penodi'r defnydd cyfnewid (swap).\n"
 " Y deiagnostig ydi '%1'.\n"
 " Cysylltwch â'r cynhaliwr wrth  mueller@kde.org fydd yn ceisio datrys hyn."
 
-#: sample.cc:403
+#: sample.cc:407
+#, fuzzy
 msgid ""
 "Information was requested for %1 swap spaces, but only %2 swap entries were "
 "returned.\n"
 "KTimeMon will attempt to continue.\n"
-"Please contact the maintainer at mueller@kde.org who will try to sort this out."
+"Please contact the maintainer at http://bugs.kde.org/ who will try to sort this "
+"out."
 msgstr ""
 "Gofynnwyd am wybodaeth am %1 o lefydd cyfnewid (swap), ond dim ond %2 o "
 "gofnodion a ddychwelwyd.\n"
 " Ceisia KTimeMon barhau.\n"
 " Cysylltwch â'r cynhaliwr wrth mueller@kde.org fydd yn ceisio datrys hyn."
 
-#: timemon.cc:169
+#: timemon.cc:173
 msgid ""
 "cpu: %1% idle\n"
 "mem: %2 MB %3% free\n"
@@ -320,7 +337,7 @@ msgstr ""
 "cof: %2 MB %3% rhydd\n"
 "cyfnewid: %4 MB %5% rhydd"
 
-#: timemon.cc:231
+#: timemon.cc:237
 msgid ""
 "KTimeMon for KDE\n"
 "Maintained by Dirk A. Mueller <dmuell@gmx.net>\n"
@@ -332,25 +349,34 @@ msgstr ""
 " Ysgrifennwyd gan M. Maierhofer (m.maierhofer@tees.ac.uk)\n"
 " Seiliedig ar timemon gan H. Maierhofer"
 
-#: timemon.cc:239
+#: timemon.cc:245
 msgid "System Monitor"
 msgstr "Arsylwydd y Cysawd"
 
-#: timemon.cc:240
+#: timemon.cc:246
 msgid "Horizontal Bars"
 msgstr "Bariau Llorweddol"
 
-#: timemon.cc:241
+#: timemon.cc:247
 msgid "Preferences..."
 msgstr "Hoffterau..."
 
-#: timemon.cc:419
+#: timemon.cc:426
 msgid ""
 "Got diagnostic output from child command:\n"
 "\n"
 msgstr ""
 "Cafwyd allbwn deiagnostig o'r plentyn-orchymyn:\n"
 " \n"
+
+#~ msgid "Memory/Swapping"
+#~ msgstr "Cof/Cyfnewid"
+
+#~ msgid "CPU/Paging"
+#~ msgstr "CPU/Tudalennu"
+
+#~ msgid "Swap/Background"
+#~ msgstr "Cyfnewid/Cefndiro"
 
 #~ msgid ""
 #~ "Unable to open file '%1' to determine where the proc filesystem is mounted. The diagnostics are:\n"
