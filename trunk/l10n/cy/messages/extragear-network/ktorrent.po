@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2006-04-16 11:00+0200\n"
+"POT-Creation-Date: 2006-04-17 11:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -302,7 +302,7 @@ msgstr ""
 msgid "Preview"
 msgstr "Rhagolwg"
 
-#: apps/ktorrent/ktorrentview.cpp:142 libktorrent/torrent/queuemanager.cpp:127
+#: apps/ktorrent/ktorrentview.cpp:142 libktorrent/torrent/queuemanager.cpp:129
 #, c-format
 msgid ""
 "_n: Cannot start more than 1 download. Go to Settings -> "
@@ -311,7 +311,7 @@ msgid ""
 "Configure KTorrent, if you want to change the limit."
 msgstr ""
 
-#: apps/ktorrent/ktorrentview.cpp:152 libktorrent/torrent/queuemanager.cpp:137
+#: apps/ktorrent/ktorrentview.cpp:152 libktorrent/torrent/queuemanager.cpp:139
 #, c-format
 msgid ""
 "_n: Cannot start more than 1 seed. Go to Settings -> "
@@ -738,7 +738,7 @@ msgid "KT Queue Dialog"
 msgstr ""
 
 #. i18n: file ./apps/ktorrent/queuedlg.ui line 30
-#: rc.cpp:216
+#: rc.cpp:216 rc.cpp:690
 #, no-c-format
 msgid "Alt+C"
 msgstr "Alt+C"
@@ -852,7 +852,7 @@ msgid "Paste URL"
 msgstr ""
 
 #. i18n: file ./apps/ktorrent/pastedlgbase.ui line 52
-#: rc.cpp:319 rc.cpp:712
+#: rc.cpp:319 rc.cpp:893
 #, no-c-format
 msgid "URL:"
 msgstr "URL:"
@@ -966,7 +966,7 @@ msgid "Cre&ate"
 msgstr "Cre&u"
 
 #. i18n: file ./apps/ktorrent/torrentcreatordlgbase.ui line 287
-#: rc.cpp:382 rc.cpp:702
+#: rc.cpp:382 rc.cpp:708
 #, no-c-format
 msgid "Ca&ncel"
 msgstr "Di&ddymu"
@@ -1116,7 +1116,7 @@ msgid "&Add tracker"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/trackerviewbase.ui line 185
-#: rc.cpp:472
+#: rc.cpp:472 rc.cpp:717
 #, no-c-format
 msgid "Alt+A"
 msgstr "Alt+A"
@@ -1140,7 +1140,7 @@ msgid "Restore defau&lt"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/trackerviewbase.ui line 218
-#: rc.cpp:488
+#: rc.cpp:488 rc.cpp:723
 #, fuzzy, no-c-format
 msgid "Alt+L"
 msgstr "Alt+A"
@@ -1411,104 +1411,353 @@ msgid "Use KTorrent filter?"
 msgstr "KTorrent"
 
 #. i18n: file ./plugins/ipfilter/convert_dlg.ui line 24
-#: plugins/ipfilter/convertdialog.cpp:143 rc.cpp:679
+#: plugins/ipfilter/convertdialog.cpp:145 rc.cpp:679
 #, fuzzy, no-c-format
 msgid "Converting..."
 msgstr "Creu ... %1"
 
+#. i18n: file ./plugins/ipfilter/convert_dlg.ui line 41
+#: rc.cpp:682
+#, no-c-format
+msgid ""
+"Click on the 'convert' button to start converting antip2p file. NOTE: This "
+"process could take a while even on fast machines and during that time you won't "
+"be able to use KTorrent."
+msgstr ""
+
 #. i18n: file ./plugins/partfileimport/importdlgbase.ui line 16
-#: rc.cpp:687
+#: rc.cpp:693
 #, no-c-format
 msgid "Import an existing download"
 msgstr ""
 
 #. i18n: file ./plugins/partfileimport/importdlgbase.ui line 49
-#: rc.cpp:690
+#: rc.cpp:696
 #, fuzzy, no-c-format
 msgid "Torrent:"
 msgstr "KTorrent"
 
 #. i18n: file ./plugins/partfileimport/importdlgbase.ui line 63
-#: rc.cpp:693
+#: rc.cpp:699
 #, no-c-format
 msgid "Data:"
 msgstr "Data:"
 
 #. i18n: file ./plugins/partfileimport/importdlgbase.ui line 95
-#: rc.cpp:696
+#: rc.cpp:702
 #, no-c-format
 msgid ""
 "Please specify the torrent and the data already downloaded for that torrent."
 msgstr ""
 
 #. i18n: file ./plugins/partfileimport/importdlgbase.ui line 133
-#: rc.cpp:699
+#: rc.cpp:705
 #, no-c-format
 msgid "&Import"
 msgstr "&Mewnforio"
 
+#. i18n: file ./plugins/scheduler/bwspage.ui line 16
+#: rc.cpp:711
+#, no-c-format
+msgid "KTorrent Scheduler Page"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 38
+#: rc.cpp:714
+#, no-c-format
+msgid "S&ave to file"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 52
+#: rc.cpp:720
+#, no-c-format
+msgid "&Load from file"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 66
+#: rc.cpp:726
+#, no-c-format
+msgid "Reset S&chedule"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 125
+#: rc.cpp:750
+#, no-c-format
+msgid "00:00 - 00:59 h"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 130
+#: rc.cpp:753
+#, no-c-format
+msgid "01:00 - 01:59 h"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 135
+#: rc.cpp:756
+#, no-c-format
+msgid "02:00 - 02:59 h"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 140
+#: rc.cpp:759
+#, no-c-format
+msgid "03:00 - 03:59 h"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 145
+#: rc.cpp:762
+#, no-c-format
+msgid "04:00 - 04:59 h"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 150
+#: rc.cpp:765
+#, no-c-format
+msgid "05:00 - 05:59 h"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 155
+#: rc.cpp:768
+#, no-c-format
+msgid "06:00 - 06:59 h"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 160
+#: rc.cpp:771
+#, no-c-format
+msgid "07:00 - 07:59 h"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 165
+#: rc.cpp:774
+#, no-c-format
+msgid "08:00 - 08:59 h"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 170
+#: rc.cpp:777
+#, no-c-format
+msgid "09:00 - 09:59 h"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 175
+#: rc.cpp:780
+#, no-c-format
+msgid "10:00 - 10:59 h"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 180
+#: rc.cpp:783
+#, no-c-format
+msgid "11:00 - 11:59 h"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 185
+#: rc.cpp:786
+#, no-c-format
+msgid "12:00 - 12:59 h"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 190
+#: rc.cpp:789
+#, no-c-format
+msgid "13:00 - 13:59 h"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 195
+#: rc.cpp:792
+#, no-c-format
+msgid "14:00 - 14:59 h"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 200
+#: rc.cpp:795
+#, no-c-format
+msgid "15:00 - 15:59 h"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 205
+#: rc.cpp:798
+#, no-c-format
+msgid "16:00 - 16:59 h"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 210
+#: rc.cpp:801
+#, no-c-format
+msgid "17:00 - 17:59 h"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 215
+#: rc.cpp:804
+#, no-c-format
+msgid "18:00 - 18:59 h"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 220
+#: rc.cpp:807
+#, no-c-format
+msgid "19:00 - 19:59 h"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 225
+#: rc.cpp:810
+#, no-c-format
+msgid "20:00 - 20:59 h"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 230
+#: rc.cpp:813
+#, no-c-format
+msgid "21:00 - 21:59 h"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 235
+#: rc.cpp:816
+#, no-c-format
+msgid "22:00 - 22:59 h"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 240
+#: rc.cpp:819
+#, no-c-format
+msgid "23:00 - 23:59 h"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 253
+#: rc.cpp:822
+#, no-c-format
+msgid "Normal"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 258
+#: rc.cpp:825 rc.cpp:847
+#, no-c-format
+msgid "1. Category"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 263
+#: rc.cpp:828 rc.cpp:859
+#, no-c-format
+msgid "2. Category"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 268
+#: rc.cpp:831 rc.cpp:871
+#, no-c-format
+msgid "3. Category"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 273
+#: rc.cpp:834
+#, no-c-format
+msgid "Turn off (0 bandwidth)"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 290
+#: rc.cpp:837
+#, no-c-format
+msgid "Use ba&ndwidth scheduler?"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 326
+#: rc.cpp:840
+#, no-c-format
+msgid "* zero means no limit"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 365
+#: rc.cpp:844
+#, no-c-format
+msgid "Categories"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 417
+#: rc.cpp:850 rc.cpp:862 rc.cpp:874
+#, fuzzy, no-c-format
+msgid "download:"
+msgstr "Lawrlwytho"
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 455
+#: rc.cpp:853 rc.cpp:865 rc.cpp:877
+#, fuzzy, no-c-format
+msgid "upload:"
+msgstr "Lawrlwytho"
+
+#. i18n: file ./plugins/scheduler/bwspage.ui line 468
+#: rc.cpp:856 rc.cpp:868 rc.cpp:880
+#, no-c-format
+msgid "KB/s *"
+msgstr ""
+
+#. i18n: file ./plugins/scheduler/ktschedulerplugin.kcfg line 10
+#: rc.cpp:883
+#, no-c-format
+msgid "Enable bandwidth scheduler?"
+msgstr ""
+
 #. i18n: file ./plugins/search/searchpref.ui line 30
-#: rc.cpp:705
+#: rc.cpp:886
 #, fuzzy, no-c-format
 msgid "Search Preferences"
 msgstr "Hoffterau"
 
 #. i18n: file ./plugins/search/searchpref.ui line 65
-#: rc.cpp:709
+#: rc.cpp:890
 #, fuzzy, no-c-format
 msgid "Search engine name:"
 msgstr "Peiriant chwilio :"
 
 #. i18n: file ./plugins/search/searchpref.ui line 109
-#: rc.cpp:715
+#: rc.cpp:896
 #, no-c-format
 msgid "&Add"
 msgstr "&Ychwanegu"
 
 #. i18n: file ./plugins/search/searchpref.ui line 127
-#: rc.cpp:718
+#: rc.cpp:899
 #, fuzzy, no-c-format
 msgid "Search Engines"
 msgstr "Peiriant chwilio :"
 
 #. i18n: file ./plugins/search/searchpref.ui line 136
-#: rc.cpp:721
+#: rc.cpp:902
 #, no-c-format
 msgid "Engines"
 msgstr ""
 
 #. i18n: file ./plugins/search/searchpref.ui line 147
-#: rc.cpp:724
+#: rc.cpp:905
 #, no-c-format
 msgid "URL"
 msgstr "URL"
 
 #. i18n: file ./plugins/search/searchpref.ui line 198
-#: rc.cpp:730
+#: rc.cpp:911
 #, no-c-format
 msgid "R&emove All"
 msgstr "G&waredu Popeth"
 
 #. i18n: file ./plugins/search/searchpref.ui line 223
-#: rc.cpp:733
+#: rc.cpp:914
 #, no-c-format
 msgid "Add Defau&lt"
 msgstr ""
 
 #. i18n: file ./plugins/search/searchbar.ui line 53
-#: plugins/search/searchplugin.cpp:62 rc.cpp:739
+#: plugins/search/searchplugin.cpp:62 rc.cpp:920
 #, no-c-format
 msgid "Search"
 msgstr "Chwilio"
 
 #. i18n: file ./plugins/search/searchbar.ui line 78
-#: rc.cpp:742
+#: rc.cpp:923
 #, no-c-format
 msgid "Search engine:"
 msgstr "Peiriant chwilio :"
 
 #. i18n: file ./plugins/search/ktsearchplugin.kcfg line 10
-#: rc.cpp:745
+#: rc.cpp:926
 #, no-c-format
 msgid "Current search engine"
 msgstr ""
@@ -1781,22 +2030,22 @@ msgstr ""
 msgid "Queued"
 msgstr ""
 
-#: libktorrent/torrent/queuemanager.cpp:96
+#: libktorrent/torrent/queuemanager.cpp:98
 msgid ""
 "This torrent has reached its maximum share ratio. Ignore the limit and start "
 "seeding anyway?"
 msgstr ""
 
-#: libktorrent/torrent/queuemanager.cpp:96
+#: libktorrent/torrent/queuemanager.cpp:98
 msgid "Maximum share ratio limit reached."
 msgstr ""
 
-#: libktorrent/torrent/queuemanager.cpp:110
+#: libktorrent/torrent/queuemanager.cpp:112
 #, fuzzy
 msgid "Error starting torrent %1 : %2"
 msgstr "Gwall wrth ysgrifennu i %1"
 
-#: libktorrent/torrent/queuemanager.cpp:160
+#: libktorrent/torrent/queuemanager.cpp:162
 #, fuzzy
 msgid "Error stopping torrent %1 : %2"
 msgstr "Gwall wrth ysgrifennu i %1"
@@ -1960,23 +2209,23 @@ msgstr ""
 msgid "Convert"
 msgstr "Trosi"
 
-#: plugins/ipfilter/convertdialog.cpp:95
+#: plugins/ipfilter/convertdialog.cpp:96
 msgid "Loading txt file..."
 msgstr ""
 
-#: plugins/ipfilter/convertdialog.cpp:96
+#: plugins/ipfilter/convertdialog.cpp:97
 msgid "This could take a couple of minutes. Please wait..."
 msgstr ""
 
-#: plugins/ipfilter/convertdialog.cpp:177
+#: plugins/ipfilter/convertdialog.cpp:179
 msgid "File converted."
 msgstr ""
 
-#: plugins/ipfilter/convertdialog.cpp:182
+#: plugins/ipfilter/convertdialog.cpp:184
 msgid "Could not load filter:"
 msgstr ""
 
-#: plugins/ipfilter/convertdialog.cpp:182
+#: plugins/ipfilter/convertdialog.cpp:184
 msgid "Bad filter file. It may be corrupted or has a bad format."
 msgstr ""
 
@@ -2061,6 +2310,38 @@ msgstr ""
 #, fuzzy
 msgid "Cannot open file : %1 : %2"
 msgstr "Methu creu %1: %2"
+
+#: plugins/scheduler/bwsprefpage.cpp:32
+msgid "Bandwidth Scheduler"
+msgstr ""
+
+#: plugins/scheduler/bwsprefpage.cpp:32
+msgid "Bandwidth schedule plugin options"
+msgstr ""
+
+#: plugins/scheduler/bwsprefpagewidget.cpp:82
+msgid "Choose a filename to save under"
+msgstr ""
+
+#: plugins/scheduler/bwsprefpagewidget.cpp:92
+msgid "Choose a file"
+msgstr ""
+
+#: plugins/scheduler/bwsprefpagewidget.cpp:126
+msgid "Schedule saved."
+msgstr ""
+
+#: plugins/scheduler/bwsprefpagewidget.cpp:136
+msgid "File not found."
+msgstr ""
+
+#: plugins/scheduler/bwsprefpagewidget.cpp:172
+msgid "Schedule loaded."
+msgstr ""
+
+#: plugins/scheduler/schedulerplugin.cpp:52
+msgid "KTorrent's schedule plugin"
+msgstr ""
 
 #: plugins/logviewer/logviewerplugin.cpp:42
 msgid "KTorrent's log viewer plugin"
