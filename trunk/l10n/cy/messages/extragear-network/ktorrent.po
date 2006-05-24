@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2006-05-22 11:20+0200\n"
+"POT-Creation-Date: 2006-05-24 11:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,7 +120,7 @@ msgid "Cannot bind to port %1 or the 10 following ports."
 msgstr ""
 
 #: apps/ktorrent/ktorrentcore.cpp:174
-#: libktorrent/torrent/torrentcontrol.cpp:955
+#: libktorrent/torrent/torrentcontrol.cpp:970
 msgid "Select Folder to Save To"
 msgstr ""
 
@@ -272,11 +272,11 @@ msgstr ""
 
 #: apps/ktorrent/ktorrentview.cpp:49
 #: plugins/infowidget/chunkdownloadview.cpp:76
-#: plugins/infowidget/peerview.cpp:162
+#: plugins/infowidget/peerview.cpp:171
 msgid "Down Speed"
 msgstr ""
 
-#: apps/ktorrent/ktorrentview.cpp:50 plugins/infowidget/peerview.cpp:163
+#: apps/ktorrent/ktorrentview.cpp:50 plugins/infowidget/peerview.cpp:172
 msgid "Up Speed"
 msgstr ""
 
@@ -531,7 +531,7 @@ msgid "Custom IP or hostname:"
 msgstr ""
 
 #. i18n: file ./apps/ktorrent/generalpref.ui line 266
-#: plugins/infowidget/peerview.cpp:167 rc.cpp:81
+#: plugins/infowidget/peerview.cpp:176 rc.cpp:81
 #, no-c-format
 msgid "DHT"
 msgstr ""
@@ -1896,43 +1896,6 @@ msgstr "Methu creu %1: %2"
 msgid "Cannot read from %1"
 msgstr "Methu creu %1: %2"
 
-#: libktorrent/util/cachefile.cpp:76
-#: plugins/partfileimport/importdialog.cpp:194
-#, fuzzy
-msgid "Cannot open %1 : %2"
-msgstr "Methu creu %1: %2"
-
-#: libktorrent/util/cachefile.cpp:238
-#, fuzzy, c-format
-msgid "Cannot expand file %1"
-msgstr "Methu creu %1: %2"
-
-#: libktorrent/util/cachefile.cpp:306
-#, c-format
-msgid "Error : Reading past the end of the file %1"
-msgstr ""
-
-#: libktorrent/util/cachefile.cpp:312
-#, fuzzy, c-format
-msgid "Error reading from %1"
-msgstr "Methu creu %1: %2"
-
-#: libktorrent/util/cachefile.cpp:340
-#, fuzzy
-msgid "Error writing to %1 : %2"
-msgstr "Gwall wrth ysgrifennu i %1"
-
-#: libktorrent/util/cachefile.cpp:344
-#, c-format
-msgid "Error writing to %1"
-msgstr "Gwall wrth ysgrifennu i %1"
-
-#: libktorrent/torrent/preallocationthread.cpp:61
-#: libktorrent/util/cachefile.cpp:402
-#, fuzzy, c-format
-msgid "Cannot preallocate diskspace : %1"
-msgstr "Methu creu %1: %2"
-
 #: libktorrent/util/fileops.cpp:48
 msgid "Cannot create directory %1: %2"
 msgstr ""
@@ -2056,7 +2019,7 @@ msgstr ""
 msgid "Torrent has no announce or nodes field"
 msgstr ""
 
-#: libktorrent/torrent/singlefilecache.cpp:77
+#: libktorrent/torrent/singlefilecache.cpp:76
 #, fuzzy, c-format
 msgid "Cannot load chunk %1"
 msgstr "Methu creu %1: %2"
@@ -2084,7 +2047,7 @@ msgstr ""
 msgid "Unreachable"
 msgstr ""
 
-#: libktorrent/torrent/torrentcontrol.cpp:950
+#: libktorrent/torrent/torrentcontrol.cpp:965
 msgid ""
 "The torrent %1 was started with a previous version of KTorrent. To make sure "
 "this torrent still works with this version of KTorrent, we will migrate this "
@@ -2092,41 +2055,47 @@ msgid ""
 "cancel, we will select your home directory."
 msgstr ""
 
-#: libktorrent/torrent/torrentcontrol.cpp:1020
+#: libktorrent/torrent/torrentcontrol.cpp:1035
 msgid "Not started"
 msgstr ""
 
-#: libktorrent/torrent/torrentcontrol.cpp:1022
+#: libktorrent/torrent/torrentcontrol.cpp:1037
 msgid "Completed"
 msgstr "Gorffenwyd"
 
-#: libktorrent/torrent/torrentcontrol.cpp:1024
+#: libktorrent/torrent/torrentcontrol.cpp:1039
 msgid "Seeding"
 msgstr ""
 
-#: libktorrent/torrent/torrentcontrol.cpp:1026
+#: libktorrent/torrent/torrentcontrol.cpp:1041
 msgid "Downloading"
 msgstr "Lawrlwytho"
 
-#: libktorrent/torrent/torrentcontrol.cpp:1028
+#: libktorrent/torrent/torrentcontrol.cpp:1043
 msgid "Stalled"
 msgstr "Wedi Seibio"
 
-#: libktorrent/torrent/torrentcontrol.cpp:1030
+#: libktorrent/torrent/torrentcontrol.cpp:1045
 msgid "Stopped"
 msgstr "Wedi aros"
 
-#: libktorrent/torrent/torrentcontrol.cpp:1032
+#: libktorrent/torrent/torrentcontrol.cpp:1047
 msgid "Error: "
 msgstr "Gwall:"
 
-#: libktorrent/torrent/torrentcontrol.cpp:1034
+#: libktorrent/torrent/torrentcontrol.cpp:1049
 msgid "Allocating diskspace"
 msgstr ""
 
-#: libktorrent/torrent/torrentcontrol.cpp:1036
+#: libktorrent/torrent/torrentcontrol.cpp:1051
 msgid "Queued"
 msgstr ""
+
+#: libktorrent/torrent/cachefile.cpp:402
+#: libktorrent/torrent/preallocationthread.cpp:61
+#, fuzzy, c-format
+msgid "Cannot preallocate diskspace : %1"
+msgstr "Methu creu %1: %2"
 
 #: libktorrent/torrent/queuemanager.cpp:98
 msgid ""
@@ -2152,12 +2121,43 @@ msgstr "Gwall wrth ysgrifennu i %1"
 msgid "Unknown client"
 msgstr ""
 
-#: libktorrent/torrent/chunkdownload.cpp:324
+#: libktorrent/torrent/chunkdownload.cpp:339
 #, c-format
 msgid ""
 "_n: 1 peer\n"
 "%n peers"
 msgstr ""
+
+#: libktorrent/torrent/cachefile.cpp:76
+#: plugins/partfileimport/importdialog.cpp:194
+#, fuzzy
+msgid "Cannot open %1 : %2"
+msgstr "Methu creu %1: %2"
+
+#: libktorrent/torrent/cachefile.cpp:238
+#, fuzzy, c-format
+msgid "Cannot expand file %1"
+msgstr "Methu creu %1: %2"
+
+#: libktorrent/torrent/cachefile.cpp:306
+#, c-format
+msgid "Error : Reading past the end of the file %1"
+msgstr ""
+
+#: libktorrent/torrent/cachefile.cpp:312
+#, fuzzy, c-format
+msgid "Error reading from %1"
+msgstr "Methu creu %1: %2"
+
+#: libktorrent/torrent/cachefile.cpp:340
+#, fuzzy
+msgid "Error writing to %1 : %2"
+msgstr "Gwall wrth ysgrifennu i %1"
+
+#: libktorrent/torrent/cachefile.cpp:344
+#, c-format
+msgid "Error writing to %1"
+msgstr "Gwall wrth ysgrifennu i %1"
 
 #: libktorrent/torrent/udptrackersocket.cpp:49
 msgid ""
@@ -2196,7 +2196,7 @@ msgid "KTorrent's UPnP plugin"
 msgstr ""
 
 #: plugins/upnp/upnprouter.cpp:191 plugins/upnp/upnprouter.cpp:206
-#: plugins/upnp/upnprouter.cpp:262 plugins/upnp/upnprouter.cpp:303
+#: plugins/upnp/upnprouter.cpp:273 plugins/upnp/upnprouter.cpp:314
 msgid "Cannot find port forwarding service in the device's description!"
 msgstr ""
 
@@ -2263,45 +2263,45 @@ msgstr ""
 msgid "Cannot remove torrent default tracker."
 msgstr ""
 
-#: plugins/infowidget/peerview.cpp:159
+#: plugins/infowidget/peerview.cpp:168
 msgid "IP"
 msgstr "IP"
 
-#: plugins/infowidget/peerview.cpp:160
+#: plugins/infowidget/peerview.cpp:169
 msgid "Country"
 msgstr ""
 
-#: plugins/infowidget/peerview.cpp:161
+#: plugins/infowidget/peerview.cpp:170
 msgid "Client"
 msgstr "Dibynnydd:"
 
-#: plugins/infowidget/peerview.cpp:164
+#: plugins/infowidget/peerview.cpp:173
 msgid "Choked"
 msgstr ""
 
-#: plugins/infowidget/peerview.cpp:165
+#: plugins/infowidget/peerview.cpp:174
 msgid "Snubbed"
 msgstr ""
 
-#: plugins/infowidget/peerview.cpp:166
+#: plugins/infowidget/peerview.cpp:175
 #, fuzzy
 msgid "Availability"
 msgstr "Ar gael"
 
-#: plugins/infowidget/peerview.cpp:168
+#: plugins/infowidget/peerview.cpp:177
 msgid "Score"
 msgstr ""
 
-#: plugins/infowidget/peerview.cpp:169
+#: plugins/infowidget/peerview.cpp:178
 #, fuzzy
 msgid "Upload Slot"
 msgstr "Lawrlwytho"
 
-#: plugins/infowidget/peerview.cpp:171
+#: plugins/infowidget/peerview.cpp:180
 msgid "Requests"
 msgstr ""
 
-#: plugins/infowidget/peerview.cpp:176
+#: plugins/infowidget/peerview.cpp:185
 msgid ""
 "_: to ban\n"
 "Ban Peer"
