@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2006-06-05 11:20+0200\n"
+"POT-Creation-Date: 2006-06-06 11:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,287 +9,166 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: _translatorinfo.cpp:1
+#: ssh/sshOptions.cpp:52
 msgid ""
-"_: NAME OF TRANSLATORS\n"
-"Your names"
-msgstr "KD wrth KGyfieithu"
+"<qt>"
+"<p>These files will be analyzed to display <b>SSH log</b>"
+". This list also determines the order in which the files are read.</p></qt>"
+msgstr ""
 
-#: _translatorinfo.cpp:3
+#: acpid/acpidReader.cpp:40 apache/apacheAccessReader.cpp:39
+#: apache/apacheReader.cpp:42 cron/cronReader.cpp:39
+#: cups/cupsAccessReader.cpp:39 cups/cupsReader.cpp:43
+#: samba/sambaReader.cpp:40 ssh/sshReader.cpp:39 system/systemReader.cpp:38
+#, fuzzy
+msgid "Date"
+msgstr "Dyddiad:"
+
+#: ssh/sshReader.cpp:40
+#, fuzzy
+msgid "Hostname"
+msgstr "Enw Gwesteiwr:"
+
+#: cron/cronReader.cpp:41 ssh/sshReader.cpp:41 system/systemReader.cpp:40
+#, fuzzy
+msgid "Process"
+msgstr "Proses :"
+
+#. i18n: file ./loggerDialogBase.ui line 49
+#: acpid/acpidReader.cpp:42 apache/apacheReader.cpp:44 cron/cronReader.cpp:43
+#: cups/cupsReader.cpp:44 rc.cpp:33 rc.cpp:77 samba/sambaReader.cpp:44
+#: ssh/sshReader.cpp:42 system/systemReader.cpp:41 xorg/xorgReader.cpp:56
+#: xsession/xsessionReader.cpp:42
+#, no-c-format
+msgid "Message"
+msgstr "Neges"
+
+#: cron/cronOptions.cpp:52
 msgid ""
-"_: EMAIL OF TRANSLATORS\n"
-"Your emails"
-msgstr "kyfieithu@dotmon.com"
-
-#: defaultReader.cpp:93
-msgid "Opening file '%1'..."
-msgstr "Agor ffeil... '%1'"
-
-#: defaultReader.cpp:123
-msgid "No log line in '%1'."
+"<qt>"
+"<p>These files will be analyzed to display <b>Cron Logs</b> "
+"(i.e. planned tasks logs). This list also determines the order in which the "
+"files are read.</p></qt>"
 msgstr ""
 
-#: defaultReader.cpp:177
-msgid "Log file '%1' loaded successfully."
+#: apache/apacheAccessReader.cpp:40 cron/cronReader.cpp:40
+#: cups/cupsAccessReader.cpp:40 system/systemReader.cpp:39
+#, fuzzy
+msgid "Host Name"
+msgstr "Enw Gwesteiwr:"
+
+#: apache/apacheAccessReader.cpp:42 cron/cronReader.cpp:42
+#: cups/cupsAccessReader.cpp:42 loggerDialog.cpp:84 loggerDialog.cpp:105
+msgid "User"
+msgstr "Defnyddiwr"
+
+#: apache/apacheAccessReader.cpp:41 cups/cupsAccessReader.cpp:41
+msgid "Id."
 msgstr ""
 
-#: defaultReader.cpp:271
-msgid "Log file '%1' has changed."
+#: apache/apacheAccessReader.cpp:43 cups/cupsAccessReader.cpp:43
+msgid "Response"
 msgstr ""
 
-#: acpid/acpidReader.cpp:58 acpid/acpidReader.cpp:89 defaultReader.cpp:437
-#: globals.cpp:42 itemFactory.cpp:139 itemFactory.cpp:500 itemFactory.cpp:520
-msgid "none"
-msgstr "dim"
+#: apache/apacheAccessReader.cpp:44 cups/cupsAccessReader.cpp:44
+#, fuzzy
+msgid "Bytes Sent"
+msgstr "Didau Wedi'u Hanfon :"
 
-#: detailDialog.cpp:49
-msgid "&Next"
-msgstr "&Nesaf"
-
-#: fileList.cpp:64
-msgid "List of files used by this log type"
+#: apache/apacheAccessReader.cpp:46 cups/cupsAccessReader.cpp:45
+msgid "HTTP Request"
 msgstr ""
 
-#: fileList.cpp:65
+#: cups/cupsReader.cpp:79
+msgid "debug 2"
+msgstr ""
+
+#: apache/apacheReader.cpp:148 cups/cupsReader.cpp:99
 msgid ""
-"<qt>Here is a list of every files that will be read by KSystemLog to display "
-"the current log lines.</qt>"
+"New Log Level detected: Please send this log file to the KSystemLog developer "
+"to add it."
 msgstr ""
 
-#: fileList.cpp:68 fileList.cpp:96
-msgid "&Add File..."
-msgstr "&Ychwanegu Ffeil..."
-
-#: fileList.cpp:70
-msgid "Choose a new file"
-msgstr ""
-
-#: fileList.cpp:71
-msgid "Opens a dialog box to choose a new file to be added to the list."
-msgstr ""
-
-#: fileList.cpp:76
-msgid "Delete the current file(s)"
-msgstr ""
-
-#: fileList.cpp:77
-msgid "Deletes the selected files of the list."
-msgstr ""
-
-#: fileList.cpp:79 fileList.cpp:99
-msgid "Move &Up"
-msgstr "Symud i &Fyny"
-
-#: fileList.cpp:81
-msgid "Move up the current file(s)"
-msgstr ""
-
-#: fileList.cpp:82
+#: cups/cupsOptions.cpp:48
 msgid ""
-"<qt>Moves up the selected files in the list. This option allows the files to be "
-"read <b>in first</b> by KSystemLog.</qt>"
+"<qt>"
+"<p>These files will be analyzed to display <b>Cups log</b>"
+". This list also determines the order in which the files are read.</p></qt>"
 msgstr ""
 
-#: fileList.cpp:84 fileList.cpp:100
-msgid "Move &Down"
-msgstr "Symud i &Lawr"
-
-#: fileList.cpp:86
-msgid "Move down the current file(s)"
-msgstr ""
-
-#: fileList.cpp:87
+#: cups/cupsOptions.cpp:49
 msgid ""
-"<qt>Moves down the selected files in the list. This option allows the files to "
-"be read <b>at last</b> by KSystemLog.</qt>"
+"<qt>"
+"<p>These files will be analyzed to display <b>Cups Web Server log</b>"
+". This list also determines the order in which the files are read.</p></qt>"
 msgstr ""
 
-#: fileList.cpp:89 fileList.cpp:102
-msgid "Re&move All"
-msgstr "Gw&aredu Popeth"
+#: samba/sambaReader.cpp:43 xorg/xorgReader.cpp:54
+#: xsession/xsessionReader.cpp:40
+#, fuzzy
+msgid "Line"
+msgstr "Llinell :"
 
-#: fileList.cpp:91
-msgid "Remove all files"
+#: acpid/acpidReader.cpp:41 xorg/xorgReader.cpp:55
+#, fuzzy
+msgid "Type"
+msgstr "Math:"
+
+#: xorg/xorgReader.cpp:95
+msgid "probed"
 msgstr ""
 
-#: fileList.cpp:92
-msgid "<qt>Remove all files of the list, even if they are not selected.</qt>"
+#: xorg/xorgReader.cpp:96
+msgid "from config file"
 msgstr ""
 
-#: fileList.cpp:95
-msgid "File List"
-msgstr "Rhestr Ffeiliau"
-
-#: fileList.cpp:139 specificFileList.cpp:82
-msgid "All Files (*)"
+#: xorg/xorgReader.cpp:97
+msgid "default setting"
 msgstr ""
 
-#: fileList.cpp:139 specificFileList.cpp:82
-msgid "Log Files (*.log)"
+#: xorg/xorgReader.cpp:98
+msgid "from command Line"
 msgstr ""
 
-#: fileList.cpp:139 specificFileList.cpp:82
-msgid "Choose Log File"
+#: xorg/xorgReader.cpp:103
+msgid "not implemented"
 msgstr ""
 
-#: fileList.cpp:159
-msgid "'%1' is not valid."
-msgstr ""
-
-#: fileList.cpp:160 fileList.cpp:167 fileList.cpp:174
-msgid "File selection failed"
-msgstr ""
-
-#: fileList.cpp:166
-msgid "'%1' is not a local file."
-msgstr ""
-
-#: fileList.cpp:173
-msgid "'%1' is a folder."
-msgstr ""
-
-#: generalOptions.cpp:49
-msgid "Log Lines List"
-msgstr ""
-
-#: generalOptions.cpp:50
-msgid "Maximum lines displayed:"
-msgstr ""
-
-#: generalOptions.cpp:54
+#: xorg/xorgOptions.cpp:52
 msgid ""
-"<qt>Choose here the maximum number of log lines displayed in the main view.</qt>"
+"<qt>"
+"<p>These files will be analyzed to display <b>X.org log</b>"
+". This list also determines the order in which the files are read.</p></qt>"
 msgstr ""
 
-#: generalOptions.cpp:55
+#: parsingHelper.cpp:87
 msgid ""
-"<qt>You can choose here the maximum number of log lines displayed in the main "
-"view.</qt>"
-msgstr ""
+"_: Size format\n"
+"%1 B"
+msgstr "%1 B"
 
-#: generalOptions.cpp:57
-msgid "Delete duplicated log lines (may be slow)"
-msgstr ""
-
-#: generalOptions.cpp:60
+#: parsingHelper.cpp:92
 msgid ""
-"<qt>Select this option if you want to delete duplicated log lines <b>"
-"(may be slow)</b>.</qt>"
-msgstr ""
+"_: Size format\n"
+"%1 KB"
+msgstr "%1 KB"
 
-#: generalOptions.cpp:61
+#: parsingHelper.cpp:98
 msgid ""
-"<qt>You can select this option if you want to delete duplicated log lines. <b>"
-"This option can slow the reading</b>.</qt>"
+"_: Size format\n"
+"%1 MB"
+msgstr "%1 MB"
+
+#: options.cpp:92
+msgid "General"
+msgstr "Cyffredinol"
+
+#: options.cpp:121
+msgid "Boot / Authentication"
 msgstr ""
 
-#: generalOptions.cpp:66
-msgid "Maximum Characters to Read per Line"
-msgstr ""
-
-#: generalOptions.cpp:67
-msgid "Number of characters:"
-msgstr ""
-
-#: generalOptions.cpp:71
-msgid ""
-"<qt>Choose here the maximum number of characters to read from each log "
-"line.</qt>"
-msgstr ""
-
-#: generalOptions.cpp:72
-msgid ""
-"<qt>You can choose here the maximum number of characters to read from each log "
-"line.</qt>"
-msgstr ""
-
-#: generalOptions.cpp:77
-msgid "Delete process identifier from process name"
-msgstr ""
-
-#: generalOptions.cpp:80
-msgid "<qt>Delete process identifier from process name.</qt>"
-msgstr ""
-
-#: generalOptions.cpp:81
-msgid ""
-"<qt>You can select this option if you want to delete the process identifier "
-"from process name. For example, you will sometimes see in the <b>Process</b> "
-"column something like <i>cron<b>[3433]</b></i>. If this option is activated, "
-"the annoying bold part will be erased.</qt>"
-msgstr ""
-
-#: generalOptions.cpp:83
-msgid "Colorize log lines"
-msgstr ""
-
-#: generalOptions.cpp:86
-msgid ""
-"<qt>This option allows the colorization of log lines, depending on their log "
-"level.</qt>"
-msgstr ""
-
-#: generalOptions.cpp:87
-msgid ""
-"<qt>This option allows the colorization of log lines, depending on their log "
-"level. For example, an error will be in red, a warning in orange... This will "
-"help you to better see problems.</qt>"
-msgstr ""
-
-#: generalOptions.cpp:91
-msgid "System tray"
-msgstr "Bar Tasgau"
-
-#: generalOptions.cpp:93
-msgid "Show the system tray icon"
-msgstr ""
-
-#: generalOptions.cpp:96
-msgid "Show notifications on system tray"
-msgstr ""
-
-#: generalOptions.cpp:99
-msgid "Do not show an entry in the task bar"
-msgstr ""
-
-#: globals.cpp:45
-msgid "debug"
-msgstr ""
-
-#: globals.cpp:48
-msgid "information"
-msgstr "gwybodaeth"
-
-#: globals.cpp:51
-msgid "notice"
-msgstr "nodyn"
-
-#: globals.cpp:54
-msgid "warning"
-msgstr "rhybudd"
-
-#: globals.cpp:57
-msgid "error"
-msgstr "gwall"
-
-#: globals.cpp:60
-msgid "critical"
-msgstr "critigol"
-
-#: globals.cpp:63
-msgid "alert"
-msgstr ""
-
-#: globals.cpp:66
-msgid "emergency"
-msgstr ""
-
-#: globals.cpp:101 ksystemlog.cpp:730
-msgid "No Log"
-msgstr ""
-
-#: globals.cpp:104
-msgid "File Log"
+#: options.cpp:121
+msgid "Boot & Authentication Logs"
 msgstr ""
 
 #: globals.cpp:107 options.cpp:147
@@ -300,164 +179,61 @@ msgstr ""
 msgid "Kernel Log"
 msgstr ""
 
-#: globals.cpp:113 options.cpp:257
-msgid "X.org Log"
-msgstr ""
-
-#: globals.cpp:116 globals.cpp:149
-msgid "Samba Log"
-msgstr ""
-
-#: globals.cpp:119
-msgid "Boot Log"
-msgstr ""
-
-#: globals.cpp:122
-msgid "Authentication Log"
-msgstr ""
-
 #: globals.cpp:125 options.cpp:203
 msgid "Cron Log"
 msgstr ""
 
-#: globals.cpp:128
-msgid "Daemon Log"
+#: options.cpp:230
+msgid "Daemons Log"
+msgstr ""
+
+#: globals.cpp:113 options.cpp:257
+msgid "X.org Log"
 msgstr ""
 
 #: globals.cpp:131 options.cpp:286
 msgid "ACPI Log"
 msgstr ""
 
+#: options.cpp:286
+msgid "ACPI Daemon Log"
+msgstr ""
+
 #: globals.cpp:134 options.cpp:315
 msgid "CUPS Log"
 msgstr ""
 
-#: globals.cpp:137
-msgid "CUPS Access Log"
+#: options.cpp:315
+msgid "CUPS & CUPS Web Server Log"
 msgstr ""
 
 #: globals.cpp:140 options.cpp:343
 msgid "Apache Log"
 msgstr ""
 
-#: globals.cpp:143
-msgid "Apache Access Log"
+#: options.cpp:343
+msgid "Apache and Web Access Logs"
 msgstr ""
 
 #: globals.cpp:146 options.cpp:372
 msgid "Postfix Log"
 msgstr ""
 
-#: globals.cpp:152
-msgid "SSH Log"
-msgstr ""
-
 #: globals.cpp:155 options.cpp:399
 msgid "X Session Log"
 msgstr ""
 
-#: itemFactory.cpp:93
-msgid "Today"
-msgstr "Heddiw"
+#: acpid/acpidReader.cpp:58 acpid/acpidReader.cpp:89 defaultReader.cpp:437
+#: globals.cpp:42 itemFactory.cpp:139 itemFactory.cpp:500 itemFactory.cpp:520
+msgid "none"
+msgstr "dim"
 
-#: itemFactory.cpp:98
-msgid "Yesterday"
-msgstr "Ddoe"
-
-#: itemFactory.cpp:110
-msgid "%1, %2h"
+#: acpid/acpidOptions.cpp:52
+msgid ""
+"<qt>"
+"<p>These files will be analyzed to display <b>ACPId log</b>"
+". This list also determines the order in which the files are read.</p></qt>"
 msgstr ""
-
-#: itemFactory.cpp:298 itemFactory.cpp:301 itemFactory.cpp:305
-#: itemFactory.cpp:308 itemFactory.cpp:316
-msgid "<div align='center'><b>Group:</b> %1</div>"
-msgstr ""
-
-#: itemFactory.cpp:304
-msgid "%1, %2 hour"
-msgstr ""
-
-#: itemFactory.cpp:314
-msgid "<div align='center'><b>Group:</b> none</div>"
-msgstr ""
-
-#: itemFactory.cpp:329 itemFactory.cpp:348 itemFactory.cpp:366
-#: itemFactory.cpp:380 itemFactory.cpp:395 itemFactory.cpp:416
-#: itemFactory.cpp:432 itemFactory.cpp:455 itemFactory.cpp:483
-msgid "Date:"
-msgstr "Dyddiad:"
-
-#: itemFactory.cpp:330 itemFactory.cpp:349 itemFactory.cpp:397
-#: itemFactory.cpp:434
-msgid "Hostname:"
-msgstr "Enw Gwesteiwr:"
-
-#: itemFactory.cpp:331 itemFactory.cpp:350
-msgid "Process:"
-msgstr "Proses :"
-
-#: itemFactory.cpp:332
-msgid "User:"
-msgstr "Defnyddiwr:"
-
-#: itemFactory.cpp:333 itemFactory.cpp:351 itemFactory.cpp:367
-#: itemFactory.cpp:381 itemFactory.cpp:396 itemFactory.cpp:417
-#: itemFactory.cpp:433 itemFactory.cpp:456 itemFactory.cpp:484
-msgid "Level:"
-msgstr "Lefel :"
-
-#: itemFactory.cpp:334 itemFactory.cpp:352 itemFactory.cpp:485
-#: itemFactory.cpp:504 itemFactory.cpp:524
-msgid "Original file:"
-msgstr ""
-
-#: itemFactory.cpp:368 itemFactory.cpp:500 itemFactory.cpp:502
-msgid "Type:"
-msgstr "Math:"
-
-#: itemFactory.cpp:398 itemFactory.cpp:435
-msgid "Identification:"
-msgstr "Dynodiad :"
-
-#: itemFactory.cpp:399 itemFactory.cpp:436
-msgid "Username:"
-msgstr "Enw defnyddiwr:"
-
-#: itemFactory.cpp:400 itemFactory.cpp:437
-msgid "HTTP Response:"
-msgstr ""
-
-#: itemFactory.cpp:401 itemFactory.cpp:438
-msgid "Bytes Sent:"
-msgstr "Didau Wedi'u Hanfon :"
-
-#: itemFactory.cpp:418
-msgid "Client:"
-msgstr "Dibynnydd:"
-
-#: itemFactory.cpp:439
-msgid "Agent Identity:"
-msgstr ""
-
-#: itemFactory.cpp:440
-msgid "HTTP Request:"
-msgstr ""
-
-#: itemFactory.cpp:457
-msgid "Source File:"
-msgstr "Ffeil Tarddiad :"
-
-#: itemFactory.cpp:458
-msgid "Function:"
-msgstr "Ffwythiant"
-
-#: itemFactory.cpp:459
-msgid "Line:"
-msgstr "Llinell :"
-
-#: itemFactory.cpp:520 itemFactory.cpp:522
-msgid "Program:"
-msgstr "Rhaglen:"
 
 #: ksystemlog.cpp:184 ksystemlog.cpp:368
 msgid "Create a new tab"
@@ -957,6 +733,10 @@ msgid ""
 "related information.</qt>"
 msgstr ""
 
+#: globals.cpp:101 ksystemlog.cpp:730
+msgid "No Log"
+msgstr ""
+
 #: ksystemlog.cpp:930
 #, c-format
 msgid ""
@@ -1005,61 +785,22 @@ msgstr "Awr"
 msgid "Log File"
 msgstr "Ffeil Gofnod"
 
-#: ksystemlogtray.cpp:27
-msgid "KSystemlog - Log Viewer"
+#: samba/sambaOptions.cpp:52
+msgid ""
+"<qt>"
+"<p>These files will be analyzed to display <b>Samba log</b>"
+". This list also determines the order in which the files are read.</p></qt>"
 msgstr ""
 
-#: levelPrintPage.cpp:37
-msgid "Log Level Printing"
-msgstr ""
+#: samba/sambaReader.cpp:41
+#, fuzzy
+msgid "Source File"
+msgstr "Ffeil Tarddiad :"
 
-#: levelPrintPage.cpp:43
-msgid "Choose which log levels you wish to print in color."
-msgstr ""
-
-#: levelPrintPage.cpp:46
-msgid "Log Levels"
-msgstr ""
-
-#: loadingDialog.cpp:26
-msgid "Loading Progress"
-msgstr "Llwytho Cynnydd"
-
-#: loadingDialog.cpp:111
-msgid "<qt>Loading <b>%1</b> [<b>%2</b>/%3 file] (<b>%4</b>/%5)...</qt>"
-msgstr ""
-
-#: loadingDialog.cpp:113
-msgid "<qt>Reloading <b>%1</b> [<b>%2</b>/%3 file] (<b>%4</b>/%5)...</qt>"
-msgstr ""
-
-#: loadingDialog.cpp:118
-msgid "<qt>Loading <b>%1</b> [<b>%2</b>/%3 file]...</qt>"
-msgstr ""
-
-#: loadingDialog.cpp:120
-msgid "<qt>Reloading <b>%1</b> [<b>%2</b>/%3 file]...</qt>"
-msgstr ""
-
-#: loadingDialog.cpp:129
-msgid "<qt>Loading <b>%1</b> (<b>%2</b>/%3)...</qt>"
-msgstr ""
-
-#: loadingDialog.cpp:131
-msgid "<qt>Reloading <b>%1</b> (<b>%2</b>/%3)...</qt>"
-msgstr ""
-
-#: loadingDialog.cpp:136
-msgid "<qt>Loading <b>%1</b>...</qt>"
-msgstr ""
-
-#: loadingDialog.cpp:138
-msgid "<qt>Reloading <b>%1</b>...</qt>"
-msgstr ""
-
-#: logLineFilter.cpp:54
-msgid "Filter here..."
-msgstr ""
+#: samba/sambaReader.cpp:42
+#, fuzzy
+msgid "Function"
+msgstr "Ffwythiant"
 
 #: logManager.cpp:141
 msgid "Loading log..."
@@ -1125,111 +866,221 @@ msgid ""
 "%n log lines copied to clipboard."
 msgstr ""
 
-#: apache/apacheAccessReader.cpp:42 cron/cronReader.cpp:42
-#: cups/cupsAccessReader.cpp:42 loggerDialog.cpp:84 loggerDialog.cpp:105
-msgid "User"
-msgstr "Defnyddiwr"
-
-#: loggerDialog.cpp:95
-msgid "Authentication"
-msgstr "Dilysiant"
-
-#: loggerDialog.cpp:96
-msgid "Private Authentication"
+#: specificFileList.cpp:48
+msgid "&Change Status..."
 msgstr ""
 
-#: loggerDialog.cpp:97
-msgid "Cron"
+#: specificFileList.cpp:50
+msgid "Change the level of the current file(s)"
 msgstr ""
 
-#: loggerDialog.cpp:98
-msgid "Daemon"
-msgstr "Daemon"
-
-#: loggerDialog.cpp:99
-msgid "FTP"
-msgstr "FTP"
-
-#: loggerDialog.cpp:100
-msgid "Kernel"
-msgstr "Cnewyllyn"
-
-#: loggerDialog.cpp:101
-msgid "LPR"
-msgstr ""
-
-#: loggerDialog.cpp:102
-msgid "Mail"
-msgstr "Post"
-
-#: loggerDialog.cpp:103
-msgid "News"
-msgstr "Newyddion"
-
-#: loggerDialog.cpp:104
-msgid "Syslog"
-msgstr "Cofnod cysawd"
-
-#: loggerDialog.cpp:106
-msgid "UUCP"
-msgstr ""
-
-#: loggerDialog.cpp:108
-msgid "Local 0"
-msgstr ""
-
-#: loggerDialog.cpp:109
-msgid "Local 1"
-msgstr ""
-
-#: loggerDialog.cpp:110
-msgid "Local 2"
-msgstr ""
-
-#: loggerDialog.cpp:111
-msgid "Local 3"
-msgstr ""
-
-#: loggerDialog.cpp:112
-msgid "Local 4"
-msgstr ""
-
-#: loggerDialog.cpp:113
-msgid "Local 5"
-msgstr ""
-
-#: loggerDialog.cpp:114
-msgid "Local 6"
-msgstr ""
-
-#: loggerDialog.cpp:115
-msgid "Local 7"
-msgstr ""
-
-#: loggerDialog.cpp:225
+#: specificFileList.cpp:51
 msgid ""
-"Unable to find the 'logger' command on your system. Please type 'logger' in "
-"Konsole to be sure that this command is not installed."
+"<qt>Changes the level of the current file(s). See KSystemLog documentation for "
+"more information about each log level.</qt>"
 msgstr ""
 
-#: loggerDialog.cpp:225
-msgid "Command not found"
+#: specificFileList.cpp:54
+msgid "&Change Status"
 msgstr ""
 
-#: loggerDialog.cpp:230
-msgid "The 'logger' command has not been properly exited."
+#: fileList.cpp:139 specificFileList.cpp:82
+msgid "All Files (*)"
 msgstr ""
 
-#: loggerDialog.cpp:230
-msgid "Execution problem"
+#: fileList.cpp:139 specificFileList.cpp:82
+msgid "Log Files (*.log)"
 msgstr ""
 
-#: loggerDialog.cpp:237
-msgid "This file does not exist. Please choose a right file."
+#: fileList.cpp:139 specificFileList.cpp:82
+msgid "Choose Log File"
 msgstr ""
 
-#: loggerDialog.cpp:237
-msgid "File not valid"
+#: specificFileList.cpp:110
+msgid "Selecting File Type"
+msgstr ""
+
+#: specificFileList.cpp:116
+msgid "Please select the type of this file:"
+msgstr ""
+
+#: specificFileList.cpp:119
+msgid "List of existing log levels"
+msgstr ""
+
+#: specificFileList.cpp:120
+msgid ""
+"<qt>This is the list of all existing log levels. Please select one of them to "
+"be used for the selected files of the list.</qt>"
+msgstr ""
+
+#: specificFileList.cpp:184
+msgid ""
+"The two arrays size are different, skipping the reading of generic paths."
+msgstr ""
+
+#: detailDialog.cpp:49
+msgid "&Next"
+msgstr "&Nesaf"
+
+#: generalOptions.cpp:49
+msgid "Log Lines List"
+msgstr ""
+
+#: generalOptions.cpp:50
+msgid "Maximum lines displayed:"
+msgstr ""
+
+#: generalOptions.cpp:54
+msgid ""
+"<qt>Choose here the maximum number of log lines displayed in the main view.</qt>"
+msgstr ""
+
+#: generalOptions.cpp:55
+msgid ""
+"<qt>You can choose here the maximum number of log lines displayed in the main "
+"view.</qt>"
+msgstr ""
+
+#: generalOptions.cpp:57
+msgid "Delete duplicated log lines (may be slow)"
+msgstr ""
+
+#: generalOptions.cpp:60
+msgid ""
+"<qt>Select this option if you want to delete duplicated log lines <b>"
+"(may be slow)</b>.</qt>"
+msgstr ""
+
+#: generalOptions.cpp:61
+msgid ""
+"<qt>You can select this option if you want to delete duplicated log lines. <b>"
+"This option can slow the reading</b>.</qt>"
+msgstr ""
+
+#: generalOptions.cpp:66
+msgid "Maximum Characters to Read per Line"
+msgstr ""
+
+#: generalOptions.cpp:67
+msgid "Number of characters:"
+msgstr ""
+
+#: generalOptions.cpp:71
+msgid ""
+"<qt>Choose here the maximum number of characters to read from each log "
+"line.</qt>"
+msgstr ""
+
+#: generalOptions.cpp:72
+msgid ""
+"<qt>You can choose here the maximum number of characters to read from each log "
+"line.</qt>"
+msgstr ""
+
+#: generalOptions.cpp:77
+msgid "Delete process identifier from process name"
+msgstr ""
+
+#: generalOptions.cpp:80
+msgid "<qt>Delete process identifier from process name.</qt>"
+msgstr ""
+
+#: generalOptions.cpp:81
+msgid ""
+"<qt>You can select this option if you want to delete the process identifier "
+"from process name. For example, you will sometimes see in the <b>Process</b> "
+"column something like <i>cron<b>[3433]</b></i>. If this option is activated, "
+"the annoying bold part will be erased.</qt>"
+msgstr ""
+
+#: generalOptions.cpp:83
+msgid "Colorize log lines"
+msgstr ""
+
+#: generalOptions.cpp:86
+msgid ""
+"<qt>This option allows the colorization of log lines, depending on their log "
+"level.</qt>"
+msgstr ""
+
+#: generalOptions.cpp:87
+msgid ""
+"<qt>This option allows the colorization of log lines, depending on their log "
+"level. For example, an error will be in red, a warning in orange... This will "
+"help you to better see problems.</qt>"
+msgstr ""
+
+#: generalOptions.cpp:91
+msgid "System tray"
+msgstr "Bar Tasgau"
+
+#: generalOptions.cpp:93
+msgid "Show the system tray icon"
+msgstr ""
+
+#: generalOptions.cpp:96
+msgid "Show notifications on system tray"
+msgstr ""
+
+#: generalOptions.cpp:99
+msgid "Do not show an entry in the task bar"
+msgstr ""
+
+#: loadingDialog.cpp:26
+msgid "Loading Progress"
+msgstr "Llwytho Cynnydd"
+
+#: loadingDialog.cpp:111
+msgid "<qt>Loading <b>%1</b> [<b>%2</b>/%3 file] (<b>%4</b>/%5)...</qt>"
+msgstr ""
+
+#: loadingDialog.cpp:113
+msgid "<qt>Reloading <b>%1</b> [<b>%2</b>/%3 file] (<b>%4</b>/%5)...</qt>"
+msgstr ""
+
+#: loadingDialog.cpp:118
+msgid "<qt>Loading <b>%1</b> [<b>%2</b>/%3 file]...</qt>"
+msgstr ""
+
+#: loadingDialog.cpp:120
+msgid "<qt>Reloading <b>%1</b> [<b>%2</b>/%3 file]...</qt>"
+msgstr ""
+
+#: loadingDialog.cpp:129
+msgid "<qt>Loading <b>%1</b> (<b>%2</b>/%3)...</qt>"
+msgstr ""
+
+#: loadingDialog.cpp:131
+msgid "<qt>Reloading <b>%1</b> (<b>%2</b>/%3)...</qt>"
+msgstr ""
+
+#: loadingDialog.cpp:136
+msgid "<qt>Loading <b>%1</b>...</qt>"
+msgstr ""
+
+#: loadingDialog.cpp:138
+msgid "<qt>Reloading <b>%1</b>...</qt>"
+msgstr ""
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "KD wrth KGyfieithu"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "kyfieithu@dotmon.com"
+
+#: readerFactory.cpp:380 readerFactory.cpp:412 readerFactory.cpp:443
+msgid "URL '%1' is not valid, skipping this URL."
+msgstr ""
+
+#: readerFactory.cpp:393
+msgid "The two arrays size are different, skipping the reading of log files."
 msgstr ""
 
 #: main.cpp:31
@@ -1257,51 +1108,94 @@ msgstr ""
 msgid "System Tray notifier"
 msgstr "Bar Tasgau"
 
-#: options.cpp:92
-msgid "General"
-msgstr "Cyffredinol"
-
-#: options.cpp:121
-msgid "Boot / Authentication"
-msgstr ""
-
-#: options.cpp:121
-msgid "Boot & Authentication Logs"
-msgstr ""
-
-#: options.cpp:230
-msgid "Daemons Log"
-msgstr ""
-
-#: options.cpp:286
-msgid "ACPI Daemon Log"
-msgstr ""
-
-#: options.cpp:315
-msgid "CUPS & CUPS Web Server Log"
-msgstr ""
-
-#: options.cpp:343
-msgid "Apache and Web Access Logs"
-msgstr ""
-
-#: parsingHelper.cpp:87
+#: apache/apacheOptions.cpp:48
 msgid ""
-"_: Size format\n"
-"%1 B"
-msgstr "%1 B"
+"<qt>"
+"<p>These files will be analyzed to display <b>Apache log</b>"
+". This list also determines the order in which the files are read.</p></qt>"
+msgstr ""
 
-#: parsingHelper.cpp:92
+#: apache/apacheOptions.cpp:49
 msgid ""
-"_: Size format\n"
-"%1 KB"
-msgstr "%1 KB"
+"<qt>"
+"<p>These files will be analyzed to display <b>Apache Access log</b>"
+". This list also determines the order in which the files are read.</p></qt>"
+msgstr ""
 
-#: parsingHelper.cpp:98
+#: apache/apacheReader.cpp:43
+#, fuzzy
+msgid "Client"
+msgstr "Dibynnydd:"
+
+#: apache/apacheAccessReader.cpp:45
+msgid "Agent Identity"
+msgstr ""
+
+#: apache/apacheAccessReader.cpp:47
+msgid "URL"
+msgstr ""
+
+#: daemon/daemonOptions.cpp:52
 msgid ""
-"_: Size format\n"
-"%1 MB"
-msgstr "%1 MB"
+"<qt>"
+"<p>These files will be analyzed to display <b>daemons Logs</b>"
+". This list also determine the order in which the files are read.</p></qt>"
+msgstr ""
+
+#: reader.cpp:128
+msgid "This file is not valid. Please adjust it in the settings of KSystemLog."
+msgstr ""
+
+#: reader.cpp:129 reader.cpp:141
+msgid "The File Does Not Exist"
+msgstr ""
+
+#: reader.cpp:140
+msgid "The file '%1' does not exist."
+msgstr ""
+
+#: reader.cpp:149
+msgid "You do not have sufficient permissions to read '%1'."
+msgstr ""
+
+#: reader.cpp:150
+msgid "Insufficient Permissions"
+msgstr "Caniatadau Annigonol"
+
+#: logLineFilter.cpp:54
+msgid "Filter here..."
+msgstr ""
+
+#: kernel/kernelOptions.cpp:53
+msgid ""
+"<qt>"
+"<p>These files will be analyzed to display <b>Kernel logs</b>"
+". This list also determines the order in which the files are read.</p></qt>"
+msgstr ""
+
+#: xsession/xsessionReader.cpp:41
+#, fuzzy
+msgid "Program"
+msgstr "Rhaglen:"
+
+#: xsession/xsessionOptions.cpp:52
+msgid ""
+"<qt>"
+"<p>These files will be analyzed to display <b>X Session Log</b>"
+". This list also determines the order in which the files are read.</p></qt>"
+msgstr ""
+
+#: levelPrintPage.cpp:37
+msgid "Log Level Printing"
+msgstr ""
+
+#: levelPrintPage.cpp:43
+msgid "Choose which log levels you wish to print in color."
+msgstr ""
+
+#: levelPrintPage.cpp:46
+msgid "Log Levels"
+msgstr ""
 
 #. i18n: file ./ksystemlogui.rc line 30
 #: rc.cpp:9
@@ -1338,15 +1232,6 @@ msgstr ""
 #, no-c-format
 msgid "Log Message"
 msgstr ""
-
-#. i18n: file ./loggerDialogBase.ui line 49
-#: acpid/acpidReader.cpp:42 apache/apacheReader.cpp:44 cron/cronReader.cpp:43
-#: cups/cupsReader.cpp:44 rc.cpp:33 rc.cpp:77 samba/sambaReader.cpp:44
-#: ssh/sshReader.cpp:42 system/systemReader.cpp:41 xorg/xorgReader.cpp:56
-#: xsession/xsessionReader.cpp:42
-#, no-c-format
-msgid "Message"
-msgstr "Neges"
 
 #. i18n: file ./loggerDialogBase.ui line 74
 #: rc.cpp:36
@@ -1468,73 +1353,420 @@ msgstr ""
 msgid "Closes this Detail dialog."
 msgstr ""
 
-#: reader.cpp:128
-msgid "This file is not valid. Please adjust it in the settings of KSystemLog."
-msgstr ""
-
-#: reader.cpp:129 reader.cpp:141
-msgid "The File Does Not Exist"
-msgstr ""
-
-#: reader.cpp:140
-msgid "The file '%1' does not exist."
-msgstr ""
-
-#: reader.cpp:149
-msgid "You do not have sufficient permissions to read '%1'."
-msgstr ""
-
-#: reader.cpp:150
-msgid "Insufficient Permissions"
-msgstr "Caniatadau Annigonol"
-
-#: readerFactory.cpp:380 readerFactory.cpp:412 readerFactory.cpp:443
-msgid "URL '%1' is not valid, skipping this URL."
-msgstr ""
-
-#: readerFactory.cpp:393
-msgid "The two arrays size are different, skipping the reading of log files."
-msgstr ""
-
-#: specificFileList.cpp:48
-msgid "&Change Status..."
-msgstr ""
-
-#: specificFileList.cpp:50
-msgid "Change the level of the current file(s)"
-msgstr ""
-
-#: specificFileList.cpp:51
+#: system/systemOptions.cpp:52
 msgid ""
-"<qt>Changes the level of the current file(s). See KSystemLog documentation for "
-"more information about each log level.</qt>"
+"<qt>"
+"<p>These files will be analyzed to display <b>System logs</b>"
+". This list also determines the order in which the files are read.</p></qt>"
 msgstr ""
 
-#: specificFileList.cpp:54
-msgid "&Change Status"
+#: ksystemlogtray.cpp:27
+msgid "KSystemlog - Log Viewer"
 msgstr ""
 
-#: specificFileList.cpp:110
-msgid "Selecting File Type"
+#: loggerDialog.cpp:95
+msgid "Authentication"
+msgstr "Dilysiant"
+
+#: loggerDialog.cpp:96
+msgid "Private Authentication"
 msgstr ""
 
-#: specificFileList.cpp:116
-msgid "Please select the type of this file:"
+#: loggerDialog.cpp:97
+msgid "Cron"
 msgstr ""
 
-#: specificFileList.cpp:119
-msgid "List of existing log levels"
+#: loggerDialog.cpp:98
+msgid "Daemon"
+msgstr "Daemon"
+
+#: loggerDialog.cpp:99
+msgid "FTP"
+msgstr "FTP"
+
+#: loggerDialog.cpp:100
+msgid "Kernel"
+msgstr "Cnewyllyn"
+
+#: loggerDialog.cpp:101
+msgid "LPR"
 msgstr ""
 
-#: specificFileList.cpp:120
+#: loggerDialog.cpp:102
+msgid "Mail"
+msgstr "Post"
+
+#: loggerDialog.cpp:103
+msgid "News"
+msgstr "Newyddion"
+
+#: loggerDialog.cpp:104
+msgid "Syslog"
+msgstr "Cofnod cysawd"
+
+#: loggerDialog.cpp:106
+msgid "UUCP"
+msgstr ""
+
+#: loggerDialog.cpp:108
+msgid "Local 0"
+msgstr ""
+
+#: loggerDialog.cpp:109
+msgid "Local 1"
+msgstr ""
+
+#: loggerDialog.cpp:110
+msgid "Local 2"
+msgstr ""
+
+#: loggerDialog.cpp:111
+msgid "Local 3"
+msgstr ""
+
+#: loggerDialog.cpp:112
+msgid "Local 4"
+msgstr ""
+
+#: loggerDialog.cpp:113
+msgid "Local 5"
+msgstr ""
+
+#: loggerDialog.cpp:114
+msgid "Local 6"
+msgstr ""
+
+#: loggerDialog.cpp:115
+msgid "Local 7"
+msgstr ""
+
+#: loggerDialog.cpp:225
 msgid ""
-"<qt>This is the list of all existing log levels. Please select one of them to "
-"be used for the selected files of the list.</qt>"
+"Unable to find the 'logger' command on your system. Please type 'logger' in "
+"Konsole to be sure that this command is not installed."
 msgstr ""
 
-#: specificFileList.cpp:184
+#: loggerDialog.cpp:225
+msgid "Command not found"
+msgstr ""
+
+#: loggerDialog.cpp:230
+msgid "The 'logger' command has not been properly exited."
+msgstr ""
+
+#: loggerDialog.cpp:230
+msgid "Execution problem"
+msgstr ""
+
+#: loggerDialog.cpp:237
+msgid "This file does not exist. Please choose a right file."
+msgstr ""
+
+#: loggerDialog.cpp:237
+msgid "File not valid"
+msgstr ""
+
+#: itemFactory.cpp:93
+msgid "Today"
+msgstr "Heddiw"
+
+#: itemFactory.cpp:98
+msgid "Yesterday"
+msgstr "Ddoe"
+
+#: itemFactory.cpp:110
+msgid "%1, %2h"
+msgstr ""
+
+#: itemFactory.cpp:298 itemFactory.cpp:301 itemFactory.cpp:305
+#: itemFactory.cpp:308 itemFactory.cpp:316
+msgid "<div align='center'><b>Group:</b> %1</div>"
+msgstr ""
+
+#: itemFactory.cpp:304
+msgid "%1, %2 hour"
+msgstr ""
+
+#: itemFactory.cpp:314
+msgid "<div align='center'><b>Group:</b> none</div>"
+msgstr ""
+
+#: itemFactory.cpp:329 itemFactory.cpp:348 itemFactory.cpp:366
+#: itemFactory.cpp:380 itemFactory.cpp:395 itemFactory.cpp:416
+#: itemFactory.cpp:432 itemFactory.cpp:455 itemFactory.cpp:483
+msgid "Date:"
+msgstr "Dyddiad:"
+
+#: itemFactory.cpp:330 itemFactory.cpp:349 itemFactory.cpp:397
+#: itemFactory.cpp:434
+msgid "Hostname:"
+msgstr "Enw Gwesteiwr:"
+
+#: itemFactory.cpp:331 itemFactory.cpp:350
+msgid "Process:"
+msgstr "Proses :"
+
+#: itemFactory.cpp:332
+msgid "User:"
+msgstr "Defnyddiwr:"
+
+#: itemFactory.cpp:333 itemFactory.cpp:351 itemFactory.cpp:367
+#: itemFactory.cpp:381 itemFactory.cpp:396 itemFactory.cpp:417
+#: itemFactory.cpp:433 itemFactory.cpp:456 itemFactory.cpp:484
+msgid "Level:"
+msgstr "Lefel :"
+
+#: itemFactory.cpp:334 itemFactory.cpp:352 itemFactory.cpp:485
+#: itemFactory.cpp:504 itemFactory.cpp:524
+msgid "Original file:"
+msgstr ""
+
+#: itemFactory.cpp:368 itemFactory.cpp:500 itemFactory.cpp:502
+msgid "Type:"
+msgstr "Math:"
+
+#: itemFactory.cpp:398 itemFactory.cpp:435
+msgid "Identification:"
+msgstr "Dynodiad :"
+
+#: itemFactory.cpp:399 itemFactory.cpp:436
+msgid "Username:"
+msgstr "Enw defnyddiwr:"
+
+#: itemFactory.cpp:400 itemFactory.cpp:437
+msgid "HTTP Response:"
+msgstr ""
+
+#: itemFactory.cpp:401 itemFactory.cpp:438
+msgid "Bytes Sent:"
+msgstr "Didau Wedi'u Hanfon :"
+
+#: itemFactory.cpp:418
+msgid "Client:"
+msgstr "Dibynnydd:"
+
+#: itemFactory.cpp:439
+msgid "Agent Identity:"
+msgstr ""
+
+#: itemFactory.cpp:440
+msgid "HTTP Request:"
+msgstr ""
+
+#: itemFactory.cpp:457
+msgid "Source File:"
+msgstr "Ffeil Tarddiad :"
+
+#: itemFactory.cpp:458
+msgid "Function:"
+msgstr "Ffwythiant"
+
+#: itemFactory.cpp:459
+msgid "Line:"
+msgstr "Llinell :"
+
+#: itemFactory.cpp:520 itemFactory.cpp:522
+msgid "Program:"
+msgstr "Rhaglen:"
+
+#: bootauth/bootAuthenticationOptions.cpp:53
+#, fuzzy
+msgid "Boot Log File"
+msgstr "Ffeil Gofnod"
+
+#: bootauth/bootAuthenticationOptions.cpp:55
+#, fuzzy
+msgid "Boot Log File:"
+msgstr "Ffeil Gofnod"
+
+#: bootauth/bootAuthenticationOptions.cpp:59
 msgid ""
-"The two arrays size are different, skipping the reading of generic paths."
+"<qt>Here, you can type or choose the boot log file (example: <i>"
+"/var/log/boot.log</i>).</qt>"
+msgstr ""
+
+#: bootauth/bootAuthenticationOptions.cpp:60
+msgid ""
+"<qt>You can type or choose here the boot log file. This file will be analyzed "
+"by KSystemLog when you will choose the <b>Boot log</b> "
+"menu item. Generally, its name is <i>/var/log/boot.log</i></qt>"
+msgstr ""
+
+#: bootauth/bootAuthenticationOptions.cpp:65
+#, fuzzy
+msgid "Authentication Log File"
+msgstr "Dilysiant"
+
+#: bootauth/bootAuthenticationOptions.cpp:67
+#, fuzzy
+msgid "Authentication Log File:"
+msgstr "Dilysiant"
+
+#: bootauth/bootAuthenticationOptions.cpp:71
+msgid ""
+"<qt>Here, you can type or choose the authentication log file (example: <i>"
+"/var/log/auth.log</i>).</qt>"
+msgstr ""
+
+#: bootauth/bootAuthenticationOptions.cpp:72
+msgid ""
+"<qt>You can type or choose here the authentication log file. This file will be "
+"analyzed by KSystemLog when you will choose the <b>Authentication log</b> "
+"menu item. Generally, its name is <i>/var/log/auth.log</i></qt>"
+msgstr ""
+
+#: fileList.cpp:64
+msgid "List of files used by this log type"
+msgstr ""
+
+#: fileList.cpp:65
+msgid ""
+"<qt>Here is a list of every files that will be read by KSystemLog to display "
+"the current log lines.</qt>"
+msgstr ""
+
+#: fileList.cpp:68 fileList.cpp:96
+msgid "&Add File..."
+msgstr "&Ychwanegu Ffeil..."
+
+#: fileList.cpp:70
+msgid "Choose a new file"
+msgstr ""
+
+#: fileList.cpp:71
+msgid "Opens a dialog box to choose a new file to be added to the list."
+msgstr ""
+
+#: fileList.cpp:76
+msgid "Delete the current file(s)"
+msgstr ""
+
+#: fileList.cpp:77
+msgid "Deletes the selected files of the list."
+msgstr ""
+
+#: fileList.cpp:79 fileList.cpp:99
+msgid "Move &Up"
+msgstr "Symud i &Fyny"
+
+#: fileList.cpp:81
+msgid "Move up the current file(s)"
+msgstr ""
+
+#: fileList.cpp:82
+msgid ""
+"<qt>Moves up the selected files in the list. This option allows the files to be "
+"read <b>in first</b> by KSystemLog.</qt>"
+msgstr ""
+
+#: fileList.cpp:84 fileList.cpp:100
+msgid "Move &Down"
+msgstr "Symud i &Lawr"
+
+#: fileList.cpp:86
+msgid "Move down the current file(s)"
+msgstr ""
+
+#: fileList.cpp:87
+msgid ""
+"<qt>Moves down the selected files in the list. This option allows the files to "
+"be read <b>at last</b> by KSystemLog.</qt>"
+msgstr ""
+
+#: fileList.cpp:89 fileList.cpp:102
+msgid "Re&move All"
+msgstr "Gw&aredu Popeth"
+
+#: fileList.cpp:91
+msgid "Remove all files"
+msgstr ""
+
+#: fileList.cpp:92
+msgid "<qt>Remove all files of the list, even if they are not selected.</qt>"
+msgstr ""
+
+#: fileList.cpp:95
+msgid "File List"
+msgstr "Rhestr Ffeiliau"
+
+#: fileList.cpp:159
+msgid "'%1' is not valid."
+msgstr ""
+
+#: fileList.cpp:160 fileList.cpp:167 fileList.cpp:174
+msgid "File selection failed"
+msgstr ""
+
+#: fileList.cpp:166
+msgid "'%1' is not a local file."
+msgstr ""
+
+#: fileList.cpp:173
+msgid "'%1' is a folder."
+msgstr ""
+
+#: globals.cpp:45
+msgid "debug"
+msgstr ""
+
+#: globals.cpp:48
+msgid "information"
+msgstr "gwybodaeth"
+
+#: globals.cpp:51
+msgid "notice"
+msgstr "nodyn"
+
+#: globals.cpp:54
+msgid "warning"
+msgstr "rhybudd"
+
+#: globals.cpp:57
+msgid "error"
+msgstr "gwall"
+
+#: globals.cpp:60
+msgid "critical"
+msgstr "critigol"
+
+#: globals.cpp:63
+msgid "alert"
+msgstr ""
+
+#: globals.cpp:66
+msgid "emergency"
+msgstr ""
+
+#: globals.cpp:104
+msgid "File Log"
+msgstr ""
+
+#: globals.cpp:116 globals.cpp:149
+msgid "Samba Log"
+msgstr ""
+
+#: globals.cpp:119
+msgid "Boot Log"
+msgstr ""
+
+#: globals.cpp:122
+msgid "Authentication Log"
+msgstr ""
+
+#: globals.cpp:128
+msgid "Daemon Log"
+msgstr ""
+
+#: globals.cpp:137
+msgid "CUPS Access Log"
+msgstr ""
+
+#: globals.cpp:143
+msgid "Apache Access Log"
+msgstr ""
+
+#: globals.cpp:152
+msgid "SSH Log"
 msgstr ""
 
 #: view.cpp:79 view.cpp:82
@@ -1585,173 +1817,6 @@ msgstr ""
 msgid "Choose the filtered column here"
 msgstr ""
 
-#: acpid/acpidOptions.cpp:52
-msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>ACPId log</b>"
-". This list also determines the order in which the files are read.</p></qt>"
-msgstr ""
-
-#: acpid/acpidReader.cpp:40 apache/apacheAccessReader.cpp:39
-#: apache/apacheReader.cpp:42 cron/cronReader.cpp:39
-#: cups/cupsAccessReader.cpp:39 cups/cupsReader.cpp:43
-#: samba/sambaReader.cpp:40 ssh/sshReader.cpp:39 system/systemReader.cpp:38
-#, fuzzy
-msgid "Date"
-msgstr "Dyddiad:"
-
-#: acpid/acpidReader.cpp:41 xorg/xorgReader.cpp:55
-#, fuzzy
-msgid "Type"
-msgstr "Math:"
-
-#: apache/apacheAccessReader.cpp:40 cron/cronReader.cpp:40
-#: cups/cupsAccessReader.cpp:40 system/systemReader.cpp:39
-#, fuzzy
-msgid "Host Name"
-msgstr "Enw Gwesteiwr:"
-
-#: apache/apacheAccessReader.cpp:41 cups/cupsAccessReader.cpp:41
-msgid "Id."
-msgstr ""
-
-#: apache/apacheAccessReader.cpp:43 cups/cupsAccessReader.cpp:43
-msgid "Response"
-msgstr ""
-
-#: apache/apacheAccessReader.cpp:44 cups/cupsAccessReader.cpp:44
-#, fuzzy
-msgid "Bytes Sent"
-msgstr "Didau Wedi'u Hanfon :"
-
-#: apache/apacheAccessReader.cpp:45
-msgid "Agent Identity"
-msgstr ""
-
-#: apache/apacheAccessReader.cpp:46 cups/cupsAccessReader.cpp:45
-msgid "HTTP Request"
-msgstr ""
-
-#: apache/apacheAccessReader.cpp:47
-msgid "URL"
-msgstr ""
-
-#: apache/apacheOptions.cpp:48
-msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>Apache log</b>"
-". This list also determines the order in which the files are read.</p></qt>"
-msgstr ""
-
-#: apache/apacheOptions.cpp:49
-msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>Apache Access log</b>"
-". This list also determines the order in which the files are read.</p></qt>"
-msgstr ""
-
-#: apache/apacheReader.cpp:43
-#, fuzzy
-msgid "Client"
-msgstr "Dibynnydd:"
-
-#: apache/apacheReader.cpp:148 cups/cupsReader.cpp:99
-msgid ""
-"New Log Level detected: Please send this log file to the KSystemLog developer "
-"to add it."
-msgstr ""
-
-#: bootauth/bootAuthenticationOptions.cpp:53
-#, fuzzy
-msgid "Boot Log File"
-msgstr "Ffeil Gofnod"
-
-#: bootauth/bootAuthenticationOptions.cpp:55
-#, fuzzy
-msgid "Boot Log File:"
-msgstr "Ffeil Gofnod"
-
-#: bootauth/bootAuthenticationOptions.cpp:59
-msgid ""
-"<qt>Here, you can type or choose the boot log file (example: <i>"
-"/var/log/boot.log</i>).</qt>"
-msgstr ""
-
-#: bootauth/bootAuthenticationOptions.cpp:60
-msgid ""
-"<qt>You can type or choose here the boot log file. This file will be analyzed "
-"by KSystemLog when you will choose the <b>Boot log</b> "
-"menu item. Generally, its name is <i>/var/log/boot.log</i></qt>"
-msgstr ""
-
-#: bootauth/bootAuthenticationOptions.cpp:65
-#, fuzzy
-msgid "Authentication Log File"
-msgstr "Dilysiant"
-
-#: bootauth/bootAuthenticationOptions.cpp:67
-#, fuzzy
-msgid "Authentication Log File:"
-msgstr "Dilysiant"
-
-#: bootauth/bootAuthenticationOptions.cpp:71
-msgid ""
-"<qt>Here, you can type or choose the authentication log file (example: <i>"
-"/var/log/auth.log</i>).</qt>"
-msgstr ""
-
-#: bootauth/bootAuthenticationOptions.cpp:72
-msgid ""
-"<qt>You can type or choose here the authentication log file. This file will be "
-"analyzed by KSystemLog when you will choose the <b>Authentication log</b> "
-"menu item. Generally, its name is <i>/var/log/auth.log</i></qt>"
-msgstr ""
-
-#: cron/cronOptions.cpp:52
-msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>Cron Logs</b> "
-"(i.e. planned tasks logs). This list also determines the order in which the "
-"files are read.</p></qt>"
-msgstr ""
-
-#: cron/cronReader.cpp:41 ssh/sshReader.cpp:41 system/systemReader.cpp:40
-#, fuzzy
-msgid "Process"
-msgstr "Proses :"
-
-#: cups/cupsOptions.cpp:48
-msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>Cups log</b>"
-". This list also determines the order in which the files are read.</p></qt>"
-msgstr ""
-
-#: cups/cupsOptions.cpp:49
-msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>Cups Web Server log</b>"
-". This list also determines the order in which the files are read.</p></qt>"
-msgstr ""
-
-#: cups/cupsReader.cpp:79
-msgid "debug 2"
-msgstr ""
-
-#: daemon/daemonOptions.cpp:52
-msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>daemons Logs</b>"
-". This list also determine the order in which the files are read.</p></qt>"
-msgstr ""
-
-#: kernel/kernelOptions.cpp:53
-msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>Kernel logs</b>"
-". This list also determines the order in which the files are read.</p></qt>"
-msgstr ""
-
 #: postfix/postfixOptions.cpp:53
 msgid ""
 "<qt>"
@@ -1759,83 +1824,18 @@ msgid ""
 ". This list also determine the order in which the files are read.</p></qt>"
 msgstr ""
 
-#: samba/sambaOptions.cpp:52
-msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>Samba log</b>"
-". This list also determines the order in which the files are read.</p></qt>"
+#: defaultReader.cpp:93
+msgid "Opening file '%1'..."
+msgstr "Agor ffeil... '%1'"
+
+#: defaultReader.cpp:123
+msgid "No log line in '%1'."
 msgstr ""
 
-#: samba/sambaReader.cpp:41
-#, fuzzy
-msgid "Source File"
-msgstr "Ffeil Tarddiad :"
-
-#: samba/sambaReader.cpp:42
-#, fuzzy
-msgid "Function"
-msgstr "Ffwythiant"
-
-#: samba/sambaReader.cpp:43 xorg/xorgReader.cpp:54
-#: xsession/xsessionReader.cpp:40
-#, fuzzy
-msgid "Line"
-msgstr "Llinell :"
-
-#: ssh/sshOptions.cpp:52
-msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>SSH log</b>"
-". This list also determines the order in which the files are read.</p></qt>"
+#: defaultReader.cpp:177
+msgid "Log file '%1' loaded successfully."
 msgstr ""
 
-#: ssh/sshReader.cpp:40
-#, fuzzy
-msgid "Hostname"
-msgstr "Enw Gwesteiwr:"
-
-#: system/systemOptions.cpp:52
-msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>System logs</b>"
-". This list also determines the order in which the files are read.</p></qt>"
+#: defaultReader.cpp:271
+msgid "Log file '%1' has changed."
 msgstr ""
-
-#: xorg/xorgOptions.cpp:52
-msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>X.org log</b>"
-". This list also determines the order in which the files are read.</p></qt>"
-msgstr ""
-
-#: xorg/xorgReader.cpp:95
-msgid "probed"
-msgstr ""
-
-#: xorg/xorgReader.cpp:96
-msgid "from config file"
-msgstr ""
-
-#: xorg/xorgReader.cpp:97
-msgid "default setting"
-msgstr ""
-
-#: xorg/xorgReader.cpp:98
-msgid "from command Line"
-msgstr ""
-
-#: xorg/xorgReader.cpp:103
-msgid "not implemented"
-msgstr ""
-
-#: xsession/xsessionOptions.cpp:52
-msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>X Session Log</b>"
-". This list also determines the order in which the files are read.</p></qt>"
-msgstr ""
-
-#: xsession/xsessionReader.cpp:41
-#, fuzzy
-msgid "Program"
-msgstr "Rhaglen:"

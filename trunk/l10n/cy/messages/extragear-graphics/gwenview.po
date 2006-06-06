@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-1/gwenview.po\n"
-"POT-Creation-Date: 2006-06-04 11:14+0200\n"
+"POT-Creation-Date: 2006-06-06 11:20+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: app/dirviewcontroller.cpp:95 gvcore/fileviewcontroller.cpp:827
+#: app/dirviewcontroller.cpp:95 app/mainwindow.cpp:479
 msgid "New Folder..."
 msgstr "Plygell Newydd..."
 
@@ -17,103 +17,119 @@ msgstr "Plygell Newydd..."
 msgid "Rename..."
 msgstr "Ail-enwi..."
 
-#: app/dirviewcontroller.cpp:112 gvcore/fileviewcontroller.cpp:1408
+#: app/dirviewcontroller.cpp:112 gvcore/fileopobject.cpp:192
 msgid "Creating Folder"
 msgstr "Creu Plygell"
 
-#: app/dirviewcontroller.cpp:113 gvcore/fileviewcontroller.cpp:1409
+#: app/dirviewcontroller.cpp:113 gvcore/fileopobject.cpp:193
 msgid "Enter the name of the new folder:"
 msgstr ""
 
 #. i18n: file ./app/configslideshowpage.ui line 40
-#: app/main.cpp:33 rc.cpp:166
+#: app/main.cpp:34 rc.cpp:166
 #, no-c-format
 msgid "Start in fullscreen mode"
 msgstr ""
 
-#: app/main.cpp:34
+#: app/main.cpp:35
+msgid "Filter by file type"
+msgstr ""
+
+#: app/main.cpp:36
+msgid "Filter by file pattern (*.jpg, 01*...)"
+msgstr ""
+
+#: app/main.cpp:37
+msgid "Only show files newer than <date>"
+msgstr ""
+
+#: app/main.cpp:38
+msgid "Only show files older than <date>"
+msgstr ""
+
+#: app/main.cpp:39
 msgid "A starting file or folder"
 msgstr ""
 
-#: app/main.cpp:47
+#: app/main.cpp:102
 msgid "Gwenview"
 msgstr "Gwenview"
 
-#: app/main.cpp:48
+#: app/main.cpp:103
 msgid "An image viewer for KDE"
 msgstr ""
 
-#: app/main.cpp:50
+#: app/main.cpp:105
 msgid "Main developer"
 msgstr "Prif Ddatblygwr"
 
-#: app/main.cpp:51
+#: app/main.cpp:106
 msgid "Developer"
 msgstr "Datblygwr"
 
-#: app/main.cpp:53
+#: app/main.cpp:108
 msgid "Fast JPEG thumbnail generation (v0.13.0)"
 msgstr ""
 
-#: app/main.cpp:54
+#: app/main.cpp:109
 msgid ""
 "Address bar (v0.16.0)\n"
 "History support (v1.0.0)"
 msgstr ""
 
-#: app/main.cpp:55
+#: app/main.cpp:110
 msgid "File operation patch (v0.9.2)"
 msgstr ""
 
-#: app/main.cpp:56
+#: app/main.cpp:111
 msgid ""
 "Fixed crash when trying to generate a thumbnail for a broken JPEG file "
 "(v0.16.0)"
 msgstr ""
 
-#: app/main.cpp:57
+#: app/main.cpp:112
 msgid "Fixed compilation on KDE 3.0 (v0.16.1)"
 msgstr ""
 
-#: app/main.cpp:58
+#: app/main.cpp:113
 msgid "First RPM spec file"
 msgstr ""
 
-#: app/main.cpp:59
+#: app/main.cpp:114
 msgid "Toolbar layout patch for RTL languages (v0.16.0)"
 msgstr ""
 
-#: app/main.cpp:60
+#: app/main.cpp:115
 msgid "Printing support (v1.0.0)"
 msgstr ""
 
-#: app/main.cpp:61
+#: app/main.cpp:116
 msgid ""
 "File info view (v1.0.0)\n"
 "Patch to toggle auto-zoom on click (v1.0.0)"
 msgstr ""
 
-#: app/main.cpp:62
+#: app/main.cpp:117
 msgid "Configurable mouse wheel behavior (v1.1.1)"
 msgstr ""
 
-#: app/main.cpp:63
+#: app/main.cpp:118
 msgid ""
 "Option to prevent Gwenview from automatically loading the first image of a "
 "folder (v0.15.0)"
 msgstr ""
 
-#: app/main.cpp:64
+#: app/main.cpp:119
 msgid ""
 "Fixed thumbnail generation to share the thumbnail folder of Konqueror v3 "
 "(v0.15.0)"
 msgstr ""
 
-#: app/main.cpp:65
+#: app/main.cpp:120
 msgid "Patch for mouse navigation (v0.7.0)"
 msgstr ""
 
-#: app/main.cpp:66
+#: app/main.cpp:121
 msgid "Integration in Konqueror folder context menu"
 msgstr ""
 
@@ -279,133 +295,137 @@ msgstr ""
 msgid "No comment available."
 msgstr ""
 
-#: app/mainwindow.cpp:715
+#: app/mainwindow.cpp:474 gvcore/imageviewcontroller.cpp:489
+msgid "External Tools"
+msgstr "Offer Allanol"
+
+#: app/mainwindow.cpp:755
 msgid ""
 "You are about to revert the window setup to factory defaults, are you sure?"
 msgstr ""
 
-#: app/mainwindow.cpp:717 app/mainwindow.cpp:944
+#: app/mainwindow.cpp:757 app/mainwindow.cpp:984
 msgid "Reset"
 msgstr "Ailosod"
 
-#: app/mainwindow.cpp:752
+#: app/mainwindow.cpp:792
 #, fuzzy
 msgid "No Images"
 msgstr "Delweddau"
 
-#: app/mainwindow.cpp:754
+#: app/mainwindow.cpp:794
 msgid "%1/%2 - %3 %4x%5"
 msgstr ""
 
-#: app/mainwindow.cpp:828
+#: app/mainwindow.cpp:868
 msgid "Image"
 msgstr "Delwedd"
 
-#: app/mainwindow.cpp:835 app/mainwindow.cpp:840
+#: app/mainwindow.cpp:875 app/mainwindow.cpp:880
 msgid "Folders"
 msgstr "Plygyll"
 
-#: app/mainwindow.cpp:854
+#: app/mainwindow.cpp:894
 msgid "Image Comment"
 msgstr "Enw'r Ddelwedd"
 
-#: app/mainwindow.cpp:878
+#: app/mainwindow.cpp:918
 msgid ""
 "<qt><b>Configuration update</b>"
 "<br>Due to some changes in the dock behavior, your old dock configuration has "
 "been discarded. Please adjust your docks again.</qt>"
 msgstr ""
 
-#: app/mainwindow.cpp:906
+#: app/mainwindow.cpp:946
 msgid "Browse"
 msgstr "Pori"
 
-#: app/mainwindow.cpp:909
+#: app/mainwindow.cpp:949
 #, fuzzy
 msgid "View Image"
 msgstr "Delwedd"
 
-#: app/mainwindow.cpp:917 gvcore/fileviewcontroller.cpp:833
+#: app/mainwindow.cpp:957
 msgid "&Rename..."
 msgstr "Ail-&enwi..."
 
-#: app/mainwindow.cpp:918 gvcore/fileviewcontroller.cpp:839
+#: app/mainwindow.cpp:958
 msgid "&Copy To..."
 msgstr "&Copïo I ..."
 
-#: app/mainwindow.cpp:919 gvcore/fileviewcontroller.cpp:842
+#: app/mainwindow.cpp:959
 msgid "&Move To..."
 msgstr "&Symud I ..."
 
-#: app/mainwindow.cpp:920 gvcore/fileviewcontroller.cpp:845
+#: app/mainwindow.cpp:960
 #, fuzzy
 msgid "&Link To..."
 msgstr "&Symud I ..."
 
-#: app/mainwindow.cpp:926
+#: app/mainwindow.cpp:966
 msgid "Rotate &Left"
 msgstr "Cylchdro i'r &Chwith"
 
-#: app/mainwindow.cpp:927 gvdirpart/gvdirpart.cpp:115
+#: app/mainwindow.cpp:967 gvdirpart/gvdirpart.cpp:91
 #: gvimagepart/gvimagepart.cpp:103
 msgid "Rotate &Right"
 msgstr "Cylchdro i'r &Dde"
 
-#: app/mainwindow.cpp:928
+#: app/mainwindow.cpp:968
 msgid "&Mirror"
 msgstr "&Adlewyrchu"
 
-#: app/mainwindow.cpp:929
+#: app/mainwindow.cpp:969
 msgid "&Flip"
 msgstr ""
 
-#: app/mainwindow.cpp:936
+#: app/mainwindow.cpp:976
 msgid "Slide Show"
 msgstr "Sioe Tryloywderau"
 
-#: app/mainwindow.cpp:940
+#: app/mainwindow.cpp:980
 msgid "Up"
 msgstr "I fyny"
 
-#: app/mainwindow.cpp:941
+#: app/mainwindow.cpp:981
 msgid "Home"
 msgstr "Cartref"
 
-#: app/mainwindow.cpp:951 gvcore/externaltoolcontext.cpp:74
+#: app/mainwindow.cpp:991 gvcore/externaltoolcontext.cpp:74
 msgid "Configure External Tools..."
 msgstr ""
 
-#: app/mainwindow.cpp:1033
+#: app/mainwindow.cpp:1076
 #, c-format
 msgid "Hide %1"
 msgstr "Cuddio %1"
 
-#: app/mainwindow.cpp:1035
+#: app/mainwindow.cpp:1078
 #, c-format
 msgid "Show %1"
 msgstr "Dangos %1"
 
-#: app/mainwindow.cpp:1161
+#: app/mainwindow.cpp:1204
 msgid "Location Bar"
 msgstr "Bar Lleoliad"
 
-#: app/mainwindow.cpp:1167
+#: app/mainwindow.cpp:1210
 msgid "Clear Location Bar"
 msgstr "Clirio'r Bar Lleoliad"
 
-#: app/mainwindow.cpp:1175
+#: app/mainwindow.cpp:1218
 msgid "L&ocation:"
 msgstr "L&leoliad:"
 
-#: app/mainwindow.cpp:1176
+#: app/mainwindow.cpp:1219
 msgid "L&ocation: "
 msgstr "Ll&eoliad:"
 
-#: app/mainwindow.cpp:1181
+#: app/mainwindow.cpp:1224
 msgid "Go"
 msgstr "Ewch"
 
-#: app/mainwindow.cpp:1259
+#: app/mainwindow.cpp:1302
 #, fuzzy
 msgid "No Plugin"
 msgstr "&Ategion"
@@ -422,20 +442,20 @@ msgid ""
 "Your emails"
 msgstr "kyfieithu@dotmon.com"
 
-#: gvdirpart/gvdirpart.cpp:132
+#: gvdirpart/gvdirpart.cpp:120
 msgid "Slide Show..."
 msgstr "Sioe Tryloywderau ..."
 
-#: gvdirpart/gvdirpart.cpp:133
+#: gvdirpart/gvdirpart.cpp:121
 #, fuzzy
 msgid "Stop Slide Show"
 msgstr "Sioe Tryloywderau"
 
-#: gvdirpart/gvdirpart.cpp:156
+#: gvdirpart/gvdirpart.cpp:145
 msgid "GVDirPart"
 msgstr ""
 
-#: gvdirpart/gvdirpart.cpp:157
+#: gvdirpart/gvdirpart.cpp:146
 msgid "Image Browser"
 msgstr "Porydd Delweddau"
 
@@ -510,10 +530,6 @@ msgstr ""
 #, no-c-format
 msgid "Inches"
 msgstr "Modfeddi"
-
-#: gvcore/fileviewcontroller.cpp:819 gvcore/imageviewcontroller.cpp:482
-msgid "External Tools"
-msgstr "Offer Allanol"
 
 #: gvcore/documentanimatedloadedimpl.cpp:91
 msgid "Sorry, cannot save animated images."
@@ -632,65 +648,65 @@ msgstr "&Symud Yma"
 msgid "Select Folder Where Files Will be Moved"
 msgstr ""
 
-#: gvcore/fileopobject.cpp:202
+#: gvcore/fileopobject.cpp:221
 msgid "Do you really want to trash these files?"
 msgstr ""
 
-#: gvcore/fileopobject.cpp:202
+#: gvcore/fileopobject.cpp:221
 msgid ""
 "_: Trash used as a verb\n"
 "Trash Files"
 msgstr ""
 
-#: gvcore/fileopobject.cpp:202 gvcore/fileopobject.cpp:206
+#: gvcore/fileopobject.cpp:221 gvcore/fileopobject.cpp:225
 msgid ""
 "_: Trash used as a verb\n"
 "&Trash"
 msgstr ""
 
-#: gvcore/fileopobject.cpp:206
+#: gvcore/fileopobject.cpp:225
 msgid "<p>Do you really want to move <b>%1</b> to the trash?</p>"
 msgstr ""
 
-#: gvcore/fileopobject.cpp:206
+#: gvcore/fileopobject.cpp:225
 msgid ""
 "_: Trash used as a verb\n"
 "Trash File"
 msgstr ""
 
-#: gvcore/fileopobject.cpp:235
+#: gvcore/fileopobject.cpp:254
 msgid "Do you really want to delete these files?"
 msgstr ""
 
-#: gvcore/fileopobject.cpp:236
+#: gvcore/fileopobject.cpp:255
 msgid "Delete Files"
 msgstr "Dileu Ffeiliau"
 
-#: gvcore/fileopobject.cpp:242
+#: gvcore/fileopobject.cpp:261
 msgid "<p>Do you really want to delete <b>%1</b>?</p>"
 msgstr ""
 
-#: gvcore/fileopobject.cpp:243
+#: gvcore/fileopobject.cpp:262
 msgid "Delete File"
 msgstr "Dileu Ffeil"
 
-#: gvcore/fileopobject.cpp:265
+#: gvcore/fileopobject.cpp:284
 msgid "Renaming File"
 msgstr ""
 
-#: gvcore/fileopobject.cpp:266
+#: gvcore/fileopobject.cpp:285
 msgid "<p>Rename file <b>%1</b> to:</p>"
 msgstr ""
 
-#: gvcore/fileoperation.cpp:81
+#: gvcore/fileoperation.cpp:96
 msgid "&Move Here"
 msgstr "&Symud Yma"
 
-#: gvcore/fileoperation.cpp:83
+#: gvcore/fileoperation.cpp:98
 msgid "&Copy Here"
 msgstr "&Copïo Yma"
 
-#: gvcore/fileoperation.cpp:85
+#: gvcore/fileoperation.cpp:100
 msgid "&Link Here"
 msgstr "Creu Cysw&llt Yma "
 
@@ -770,111 +786,107 @@ msgstr "Fformat:"
 msgid "Other..."
 msgstr "Eraill..."
 
-#: gvcore/fileviewcontroller.cpp:221
+#: gvcore/fileviewcontroller.cpp:218
 #, fuzzy
 msgid "Filter:"
 msgstr "Plygyll"
 
 #. i18n: file ./gvcore/externaltooldialogbase.ui line 283
-#: gvcore/fileviewcontroller.cpp:224 rc.cpp:264
+#: gvcore/fileviewcontroller.cpp:221 rc.cpp:264
 #, no-c-format
 msgid "All files"
 msgstr "Pob Ffeil"
 
-#: gvcore/fileviewcontroller.cpp:225
+#: gvcore/fileviewcontroller.cpp:222
 #, fuzzy
 msgid "Images only"
 msgstr "Delweddau"
 
-#: gvcore/fileviewcontroller.cpp:226
+#: gvcore/fileviewcontroller.cpp:223
 msgid "Videos only"
 msgstr ""
 
-#: gvcore/fileviewcontroller.cpp:232
+#: gvcore/fileviewcontroller.cpp:229
 msgid "More"
 msgstr ""
 
-#: gvcore/fileviewcontroller.cpp:272
+#: gvcore/fileviewcontroller.cpp:269
 msgid "&First"
 msgstr "&Yn Gyntaf"
 
-#: gvcore/fileviewcontroller.cpp:276
+#: gvcore/fileviewcontroller.cpp:273
 msgid "&Last"
 msgstr "&Olaf"
 
-#: gvcore/fileviewcontroller.cpp:284
+#: gvcore/fileviewcontroller.cpp:281
 msgid "&Next"
 msgstr "&Nesaf"
 
-#: gvcore/fileviewcontroller.cpp:288
+#: gvcore/fileviewcontroller.cpp:285
 #, fuzzy
 msgid "&Previous Folder"
 msgstr "Plygell Rhiant"
 
-#: gvcore/fileviewcontroller.cpp:292
+#: gvcore/fileviewcontroller.cpp:289
 #, fuzzy
 msgid "&Next Folder"
 msgstr "Plygell Rhiant"
 
-#: gvcore/fileviewcontroller.cpp:296
+#: gvcore/fileviewcontroller.cpp:293
 #, fuzzy
 msgid "&First Sub Folder"
 msgstr "Plygell Rhiant"
 
-#: gvcore/fileviewcontroller.cpp:299
+#: gvcore/fileviewcontroller.cpp:296
 msgid "Details"
 msgstr "Manylion"
 
-#: gvcore/fileviewcontroller.cpp:301
+#: gvcore/fileviewcontroller.cpp:298
 #, fuzzy
 msgid "Thumbnails with Info on Side"
 msgstr "Maint y rhagolygon cryno"
 
-#: gvcore/fileviewcontroller.cpp:303
+#: gvcore/fileviewcontroller.cpp:300
 msgid "Thumbnails with Info on Bottom"
 msgstr ""
 
-#: gvcore/fileviewcontroller.cpp:316
+#: gvcore/fileviewcontroller.cpp:313
 msgid "Thumbnail Size"
 msgstr "Maint y rhagolygon cryno"
 
-#: gvcore/fileviewcontroller.cpp:320
+#: gvcore/fileviewcontroller.cpp:317
 msgid "Show &Hidden Files"
 msgstr "Dangos Ffeiliau &Cudd"
 
-#: gvcore/fileviewcontroller.cpp:322
+#: gvcore/fileviewcontroller.cpp:319
 msgid "Sort"
 msgstr "Trefnu"
 
-#: gvcore/fileviewcontroller.cpp:324
+#: gvcore/fileviewcontroller.cpp:321
 msgid "By Name"
 msgstr "Gan Enw"
 
-#: gvcore/fileviewcontroller.cpp:324
+#: gvcore/fileviewcontroller.cpp:321
 msgid "By Date"
 msgstr "Gan Ddyddiad"
 
-#: gvcore/fileviewcontroller.cpp:324
+#: gvcore/fileviewcontroller.cpp:321
 msgid "By Size"
 msgstr "Gan Faint"
 
-#: gvcore/fileviewcontroller.cpp:328
+#: gvcore/fileviewcontroller.cpp:325
 msgid "Descending"
 msgstr "Disgynnol"
 
-#: gvcore/fileviewcontroller.cpp:413
+#: gvcore/fileviewcontroller.cpp:410
 #, fuzzy
 msgid "Edit Thumbnail Details..."
 msgstr "Maint y rhagolygon cryno"
 
-#: gvcore/fileviewcontroller.cpp:736
+#: gvcore/fileviewcontroller.cpp:734
 #, c-format
 msgid "Thumbnail size: %1x%2"
 msgstr ""
-
-#: gvcore/fileviewcontroller.cpp:824
-msgid "Parent Folder"
-msgstr "Plygell Rhiant"
 
 #: gvcore/imageviewtools.cpp:128
 msgid ""
@@ -886,10 +898,6 @@ msgstr ""
 msgid ""
 "Drag to move the image, middle-click to toggle auto-zoom. Hold the Control key "
 "to switch to the zoom tool."
-msgstr ""
-
-#: gvcore/batchmanipulator.cpp:57
-msgid "Manipulating images..."
 msgstr ""
 
 #: gvcore/documentjpegloadedimpl.cpp:118
@@ -1524,6 +1532,9 @@ msgstr "&Ffenestr"
 #, no-c-format
 msgid "Location Toolbar"
 msgstr "Bar Lleoliad"
+
+#~ msgid "Parent Folder"
+#~ msgstr "Plygell Rhiant"
 
 #, fuzzy
 #~ msgid "FilterBar"
