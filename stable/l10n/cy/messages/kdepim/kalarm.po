@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
-"POT-Creation-Date: 2006-06-20 04:03+0200\n"
+"POT-Creation-Date: 2006-06-21 04:05+0200\n"
 "PO-Revision-Date: 2004-02-25 13:46+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -34,20 +34,20 @@ msgid ""
 "Your emails"
 msgstr "kyfieithu@dotmon.com"
 
-#: alarmcalendar.cpp:108
+#: alarmcalendar.cpp:110
 msgid "%1: file name not permitted: %2"
 msgstr "%1: ni chaniateir yr enw ffeil: %2"
 
-#: alarmcalendar.cpp:129
+#: alarmcalendar.cpp:131
 msgid "%1, %2: file names must be different"
 msgstr "%1, %2: rhaid i'r enwau ffeil fod yn wahanol"
 
-#: alarmcalendar.cpp:136
+#: alarmcalendar.cpp:138
 #, c-format
 msgid "Invalid calendar file name: %1"
 msgstr "Enw ffeil galendr annilys: %1"
 
-#: alarmcalendar.cpp:317
+#: alarmcalendar.cpp:319
 #, c-format
 msgid ""
 "Cannot open calendar:\n"
@@ -56,7 +56,7 @@ msgstr ""
 "Methu agor y calendr:\n"
 " %1"
 
-#: alarmcalendar.cpp:334
+#: alarmcalendar.cpp:336
 msgid ""
 "Error loading calendar:\n"
 "%1\n"
@@ -68,7 +68,7 @@ msgstr ""
 " \n"
 "  Trwsiwch new dilëwch y ffeil os gwelwch yn dda."
 
-#: alarmcalendar.cpp:379
+#: alarmcalendar.cpp:381
 msgid ""
 "Failed to save calendar to\n"
 "'%1'"
@@ -76,13 +76,34 @@ msgstr ""
 "Methu cadw'r calendr i\n"
 " '%1'"
 
-#: alarmcalendar.cpp:388
+#: alarmcalendar.cpp:390
 msgid ""
 "Cannot upload calendar to\n"
 "'%1'"
 msgstr ""
 "Methu lanlwytho'r calendr i\n"
 " '%1'"
+
+#: alarmcalendar.cpp:444
+#, fuzzy
+msgid "Calendar Files"
+msgstr "URL y ffeil galendr"
+
+#: alarmcalendar.cpp:466 alarmcalendar.cpp:488
+#, fuzzy
+msgid "Could not load calendar '%1'."
+msgstr ""
+"Methu lanlwytho'r calendr i\n"
+" '%1'"
+
+#: alarmcalendar.cpp:475
+#, fuzzy, c-format
+msgid ""
+"Cannot download calendar:\n"
+"%1"
+msgstr ""
+"Methu agor y calendr:\n"
+" %1"
 
 #: alarmevent.cpp:1981
 msgid ""
@@ -1698,34 +1719,39 @@ msgid "Hide From System &Tray"
 msgstr "Dangos yng &Nghafn y Cysawd"
 
 #: mainwindow.cpp:321
-msgid "Import &Birthdays..."
+#, fuzzy
+msgid "Import &Alarms..."
 msgstr "Mewnforio &Penblwyddi..."
 
 #: mainwindow.cpp:322
+msgid "Import &Birthdays..."
+msgstr "Mewnforio &Penblwyddi..."
+
+#: mainwindow.cpp:323
 msgid "&Refresh Alarms"
 msgstr "Ail&fywio Larymau"
 
-#: mainwindow.cpp:550
+#: mainwindow.cpp:551
 msgid "New Alarm"
 msgstr "Larwm Newydd"
 
-#: mainwindow.cpp:620 messagewin.cpp:1426
+#: mainwindow.cpp:621 messagewin.cpp:1426
 msgid "Edit Alarm"
 msgstr "Golygu Larwm"
 
-#: mainwindow.cpp:654
+#: mainwindow.cpp:655
 msgid "Expired Alarm"
 msgstr "Larwm Darfodedig"
 
-#: mainwindow.cpp:654
+#: mainwindow.cpp:655
 msgid "read-only"
 msgstr "darllen-yn-unig"
 
-#: mainwindow.cpp:655
+#: mainwindow.cpp:656
 msgid "View Alarm"
 msgstr "Gweld Larwm"
 
-#: mainwindow.cpp:672
+#: mainwindow.cpp:673
 #, c-format
 msgid ""
 "_n: Do you really want to delete the selected alarm?\n"
@@ -1734,7 +1760,7 @@ msgstr ""
 "A ydych wir am ddileu'r larwm dewisiedig?\n"
 " A ydych wir am ddileu'r %n lawrm dewisiedig?"
 
-#: mainwindow.cpp:673
+#: mainwindow.cpp:674
 msgid ""
 "_n: Delete Alarm\n"
 "Delete Alarms"
@@ -1742,17 +1768,17 @@ msgstr ""
 "Dileu Larwm\n"
 " Dileu Larymau"
 
-#: mainwindow.cpp:943
+#: mainwindow.cpp:954
 msgid ""
 "_: Undo [action]: message\n"
 "%1 %2: %3"
 msgstr ""
 
-#: mainwindow.cpp:1303
+#: mainwindow.cpp:1314
 msgid "Ena&ble"
 msgstr "Gal&luogi"
 
-#: mainwindow.cpp:1303
+#: mainwindow.cpp:1314
 msgid "Disa&ble"
 msgstr "Anal&luogi"
 
@@ -2547,7 +2573,7 @@ msgstr ""
 "Pa mor aml i ddiweddaru'r eicon cafn cysawd i ddangos a yw'r Ellyll Larymau'n "
 "arsylwi ar larymai ai peidio."
 
-#. i18n: file kalarmui.rc line 31
+#. i18n: file kalarmui.rc line 32
 #: rc.cpp:9 rc.cpp:21
 #, no-c-format
 msgid "&Actions"
