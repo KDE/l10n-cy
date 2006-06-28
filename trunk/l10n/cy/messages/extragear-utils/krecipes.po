@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-3/krecipes.po\n"
-"POT-Creation-Date: 2006-06-22 11:28+0200\n"
+"POT-Creation-Date: 2006-06-28 11:29+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -233,9 +233,9 @@ msgstr "Chwiliad:"
 msgid "Open Recipe(s)"
 msgstr ""
 
-#: src/dialogs/selectrecipedialog.cpp:103 src/krecipesview.cpp:414
-#: src/recipeactionshandler.cpp:214 src/recipeactionshandler.cpp:220
-#: src/recipeactionshandler.cpp:567
+#: src/dialogs/selectrecipedialog.cpp:103
+#: src/dialogs/similarcategoriesdialog.cpp:300 src/krecipesview.cpp:414
+#: src/recipeactionshandler.cpp:212 src/recipeactionshandler.cpp:218
 msgid "Edit Recipe"
 msgstr ""
 
@@ -1154,8 +1154,8 @@ msgid "The page height is smaller than the top and bottom margins."
 msgstr "Mae uchder y dudalen yn llai na'r ymylon pen a gwaelod."
 
 #: src/dialogs/dependanciesdialog.cpp:57 src/dialogs/recipeimportdialog.cpp:32
-#: src/krecipesview.cpp:462 src/recipeactionshandler.cpp:235
-#: src/recipeactionshandler.cpp:246
+#: src/krecipesview.cpp:462 src/recipeactionshandler.cpp:233
+#: src/recipeactionshandler.cpp:244
 msgid "Recipes"
 msgstr ""
 
@@ -1360,6 +1360,66 @@ msgstr ""
 
 #: src/dialogs/selectunitdialog.cpp:25
 msgid "Choose Unit"
+msgstr ""
+
+#: src/dialogs/similarcategoriesdialog.cpp:137
+#, fuzzy
+msgid "Similar Categories"
+msgstr "Categoriau"
+
+#: src/dialogs/similarcategoriesdialog.cpp:138
+msgid "Threshold:"
+msgstr ""
+
+#: src/dialogs/similarcategoriesdialog.cpp:139
+#, fuzzy
+msgid "Category:"
+msgstr "Categori"
+
+#: src/dialogs/similarcategoriesdialog.cpp:140
+#, fuzzy
+msgid "Search"
+msgstr "Chwiliad:"
+
+#: src/dialogs/similarcategoriesdialog.cpp:141
+#, fuzzy
+msgid "Similar Categories:"
+msgstr "Categoriau"
+
+#: src/dialogs/similarcategoriesdialog.cpp:142
+msgid "<<"
+msgstr ""
+
+#: src/dialogs/similarcategoriesdialog.cpp:143
+msgid ">>"
+msgstr ""
+
+#: src/dialogs/similarcategoriesdialog.cpp:144
+#, fuzzy
+msgid "Categories to Merge:"
+msgstr "Categoriau"
+
+#: src/dialogs/similarcategoriesdialog.cpp:145
+msgid "Merge"
+msgstr ""
+
+#: src/dialogs/similarcategoriesdialog.cpp:148
+#: src/dialogs/similarcategoriesdialog.cpp:150
+#: src/widgets/categorylistview.cpp:279 src/widgets/categorylistview.cpp:537
+msgid "Category"
+msgstr "Categori"
+
+#: src/dialogs/similarcategoriesdialog.cpp:271
+msgid "Please select only one category."
+msgstr ""
+
+#: src/dialogs/similarcategoriesdialog.cpp:300
+#: src/recipeactionshandler.cpp:218 src/recipeactionshandler.cpp:250
+msgid "No recipes selected."
+msgstr ""
+
+#: src/dialogs/similarcategoriesdialog.cpp:336
+msgid "No categories selected to merge."
 msgstr ""
 
 #: src/dialogs/createunitdialog.cpp:30
@@ -1746,7 +1806,7 @@ msgstr "Categori"
 msgid "&Add to Shopping List"
 msgstr ""
 
-#: src/krecipes.cpp:198 src/recipeactionshandler.cpp:64
+#: src/krecipes.cpp:203 src/recipeactionshandler.cpp:64
 msgid "&Copy to Clipboard"
 msgstr "&Copïo i'r Gludfwrdd"
 
@@ -1763,111 +1823,106 @@ msgstr ""
 msgid "&Collapse All"
 msgstr ""
 
-#: src/recipeactionshandler.cpp:79
-msgid "Merge similar"
-msgstr ""
-
-#: src/recipeactionshandler.cpp:214 src/recipeactionshandler.cpp:545
+#: src/recipeactionshandler.cpp:212
 msgid "Please select only one recipe."
 msgstr ""
 
-#: src/recipeactionshandler.cpp:220 src/recipeactionshandler.cpp:252
-#: src/recipeactionshandler.cpp:567
-msgid "No recipes selected."
-msgstr ""
-
 #: src/krecipesview.cpp:460 src/krecipesview.cpp:462
-#: src/recipeactionshandler.cpp:237
+#: src/recipeactionshandler.cpp:235
 msgid "Export Recipe"
 msgstr ""
 
-#: src/recipeactionshandler.cpp:243
+#: src/recipeactionshandler.cpp:241
 msgid ""
 "No recipes are currently selected.\n"
 "Would you like to export all recipes in the current view?"
 msgstr ""
 
-#: src/recipeactionshandler.cpp:246
+#: src/recipeactionshandler.cpp:244
 msgid "Export Recipes"
 msgstr ""
 
-#: src/recipeactionshandler.cpp:347
+#: src/recipeactionshandler.cpp:345
 msgid "Compressed Krecipes format"
 msgstr ""
 
-#: src/recipeactionshandler.cpp:347
+#: src/recipeactionshandler.cpp:345
 msgid "Web page"
 msgstr "Tudalen wê"
 
-#: src/pref.cpp:530 src/recipeactionshandler.cpp:347
+#: src/pref.cpp:530 src/recipeactionshandler.cpp:345
 msgid "Plain Text"
 msgstr "Testun Plaen"
 
-#: src/krecipes.cpp:444 src/recipeactionshandler.cpp:383
+#: src/krecipes.cpp:449 src/recipeactionshandler.cpp:381
 msgid "File \"%1\" exists.  Are you sure you want to overwrite it?"
 msgstr ""
 
-#: src/recipeactionshandler.cpp:383
+#: src/recipeactionshandler.cpp:381
 msgid "Saving recipe"
 msgstr ""
 
-#: src/recipeactionshandler.cpp:387
+#: src/recipeactionshandler.cpp:385
 msgid "Saving recipes..."
 msgstr ""
 
-#: src/krecipes.cpp:117
+#: src/krecipes.cpp:118
 msgid ""
 "Gathering recipe data from file.\n"
 "Please wait..."
 msgstr ""
 
-#: src/krecipes.cpp:165
+#: src/krecipes.cpp:166
 msgid "Reloa&d"
 msgstr "Ail-l&wytho"
 
-#: src/krecipes.cpp:167
+#: src/krecipes.cpp:168
 msgid "&Edit Recipe"
 msgstr ""
 
-#: src/krecipes.cpp:173
+#: src/krecipes.cpp:172
+msgid "&Merge Similar Categories..."
+msgstr ""
+
+#: src/krecipes.cpp:178
 msgid "&New Recipe"
 msgstr ""
 
-#: src/krecipes.cpp:186
+#: src/krecipes.cpp:191
 msgid "Import from File..."
 msgstr "Mewnforio o Ffeil..."
 
-#: src/krecipes.cpp:190
+#: src/krecipes.cpp:195
 msgid "Import from Database..."
 msgstr ""
 
-#: src/krecipes.cpp:194
+#: src/krecipes.cpp:199
 msgid "Export..."
 msgstr "Allforio..."
 
-#: src/krecipes.cpp:203
+#: src/krecipes.cpp:208
 msgid "Page Setup..."
 msgstr "Gosodiad Tudalen ..."
 
-#: src/krecipes.cpp:207
+#: src/krecipes.cpp:212
 msgid "Backup..."
 msgstr "Copïo wrth gefn..."
 
-#: src/krecipes.cpp:211
+#: src/krecipes.cpp:216
 msgid "Restore..."
 msgstr "Adfer..."
 
-#: src/krecipes.cpp:335
+#: src/krecipes.cpp:340
 msgid ""
 "Filter \"%1\" not recognized.\n"
 "Please select one of the provided filters."
 msgstr ""
 
-#: src/krecipes.cpp:337
+#: src/krecipes.cpp:342
 msgid "Unrecognized Filter"
 msgstr ""
 
-#: src/krecipes.cpp:369
+#: src/krecipes.cpp:374
 msgid ""
 "NOTE: We recommend that all recipes generating warnings be checked to ensure "
 "that they were properly imported, and no loss of recipe data has occurred."
@@ -1875,28 +1930,28 @@ msgid ""
 "<br>"
 msgstr ""
 
-#: src/krecipes.cpp:372
+#: src/krecipes.cpp:377
 msgid "Import Warnings"
 msgstr ""
 
-#: src/krecipes.cpp:440
+#: src/krecipes.cpp:445
 #, fuzzy
 msgid "Save Backup As..."
 msgstr "&Cadw Fel..."
 
-#: src/krecipes.cpp:453
+#: src/krecipes.cpp:458
 msgid "Backup Failed"
 msgstr ""
 
-#: src/krecipes.cpp:460
+#: src/krecipes.cpp:465
 msgid "Krecipes Backup File"
 msgstr ""
 
-#: src/krecipes.cpp:461
+#: src/krecipes.cpp:466
 msgid "Restore Backup"
 msgstr ""
 
-#: src/krecipes.cpp:464
+#: src/krecipes.cpp:469
 msgid ""
 "<b>Restoring this file will erase ALL data currently in the database!</b><br />"
 "<br />If you want to keep the recipes in your database, click \"Cancel\" and "
@@ -1904,21 +1959,21 @@ msgid ""
 "complete.<br /><br />Are you sure you want to proceed?"
 msgstr ""
 
-#: src/krecipes.cpp:471
+#: src/krecipes.cpp:476
 msgid "Restore successful."
 msgstr ""
 
-#: src/backends/recipedb.cpp:371 src/krecipes.cpp:473
+#: src/backends/recipedb.cpp:371 src/krecipes.cpp:478
 msgid "Restore Failed"
 msgstr "Methodd Adfer"
 
-#: src/krecipes.cpp:489
+#: src/krecipes.cpp:500
 msgid ""
 "A recipe contains unsaved changes.\n"
 "Do you want to save the changes before exiting?"
 msgstr ""
 
-#: src/krecipes.cpp:491
+#: src/krecipes.cpp:502
 msgid "Unsaved Changes"
 msgstr "Newidiadau Heb eu Cadw"
 
@@ -2247,10 +2302,6 @@ msgstr ""
 #: src/widgets/kdatepickerpopup.cpp:71
 msgid "No Date"
 msgstr ""
-
-#: src/widgets/categorylistview.cpp:279 src/widgets/categorylistview.cpp:537
-msgid "Category"
-msgstr "Categori"
 
 #: src/widgets/categorylistview.cpp:299
 msgid "Cu&t"
