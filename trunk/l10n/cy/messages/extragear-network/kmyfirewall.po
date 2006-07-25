@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-2/kmyfirewall.po\n"
-"POT-Creation-Date: 2006-03-27 11:44+0200\n"
+"POT-Creation-Date: 2006-07-25 11:48+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: core/kmfdoc.cpp:71 core/kmftarget.cpp:32 core/netfilterobject.cpp:53
+#: core/kmfdoc.cpp:71 core/kmftarget.cpp:34 core/netfilterobject.cpp:53
 msgid "No Description Available"
 msgstr "Dim disgrifiad ar gael"
 
@@ -154,10 +154,11 @@ msgstr ""
 
 #: core/kmfnetzone.cpp:43 core/kmfnetzone.cpp:52
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:642
+#: kmfwidgets/kmfmynetworkwidget.cpp:229
 msgid "New Zone"
 msgstr ""
 
-#: core/kmfnetzone.cpp:197
+#: core/kmfnetzone.cpp:202
 msgid "Zone %1 already exists, please try again with another name"
 msgstr ""
 
@@ -238,12 +239,12 @@ msgid ""
 "name that is unique within your configuration.</qt>"
 msgstr ""
 
-#: core/kmftarget.cpp:28
+#: core/kmftarget.cpp:30
 #, fuzzy
 msgid "New Target"
 msgstr "Targed:"
 
-#: core/iptchain.cpp:122
+#: core/iptchain.cpp:127
 msgid ""
 "<qt>"
 "<p>Unable to add rule: <b>%1</b> into chain: <b>%2</b>."
@@ -251,84 +252,85 @@ msgid ""
 "another name (must be unique in that chain).</p></qt>"
 msgstr ""
 
-#: core/iptchain.cpp:130
+#: core/iptchain.cpp:135
 msgid "Sorry, a bad internal error occurred. This is a bug ;-("
 msgstr ""
 
-#: core/iptchain.cpp:140
+#: core/iptchain.cpp:145
 msgid "Cannot insert rule at %1 This is a bug ;-("
 msgstr ""
 
-#: core/iptchain.cpp:164 core/iptchain.cpp:174
+#: core/iptchain.cpp:169 core/iptchain.cpp:179
 msgid "Sorry, can't find Rule: %1 in the Ruleset of this chain."
 msgstr ""
 
-#: core/iptchain.cpp:517
+#: core/iptchain.cpp:522
 msgid "Chain: %1 Drop Logging"
 msgstr ""
 
-#: core/iptchain.cpp:526
+#: core/iptchain.cpp:531
 msgid "Chain: %1 Default Target"
 msgstr ""
 
 #. i18n: file kmyfirewallwizard.ui line 1966
 #: core/kmfnethost.cpp:44 genericinterface/kmfgenericinterfacehost.cpp:143
 #: genericinterface/kmfgenericinterfacehost.cpp:146
-#: genericinterface/kmfgenericinterfaceprotocol.cpp:682 rc.cpp:520 rc.cpp:548
-#: rc.cpp:578 rc.cpp:602
+#: genericinterface/kmfgenericinterfaceprotocol.cpp:682
+#: kmfwidgets/kmfmynetworkwidget.cpp:198 rc.cpp:520 rc.cpp:548 rc.cpp:578
+#: rc.cpp:602
 #, no-c-format
 msgid "New Host"
 msgstr ""
 
-#: core/iptable.cpp:68
+#: core/iptable.cpp:73
 msgid ""
 "This table is the main table for filtering\n"
 "packets. Here you may define your\n"
 "access control rules"
 msgstr ""
 
-#: core/iptable.cpp:75
+#: core/iptable.cpp:80
 msgid ""
 "In this chain you can filter packets that\n"
 "are addressed directly to this computer."
 msgstr ""
 
-#: core/iptable.cpp:80 core/iptable.cpp:97 core/iptable.cpp:120
+#: core/iptable.cpp:85 core/iptable.cpp:102 core/iptable.cpp:125
 msgid ""
 "In this chain you can decide which\n"
 "packets are allowed to be sent away\n"
 "from this computer."
 msgstr ""
 
-#: core/iptable.cpp:86 core/iptable.cpp:126
+#: core/iptable.cpp:91 core/iptable.cpp:131
 msgid ""
 "In this chain you can filter the packets\n"
 "that are routed to other hosts by this\n"
 "computer."
 msgstr ""
 
-#: core/iptable.cpp:92
+#: core/iptable.cpp:97
 msgid ""
 "This table is made for every kind of\n"
 "NAT (Network Address Translation)."
 msgstr ""
 
-#: core/iptable.cpp:103 core/iptable.cpp:107 core/iptable.cpp:132
-#: core/iptable.cpp:136
+#: core/iptable.cpp:108 core/iptable.cpp:112 core/iptable.cpp:137
+#: core/iptable.cpp:141
 msgid "..."
 msgstr "..."
 
-#: core/iptable.cpp:111
+#: core/iptable.cpp:116
 msgid "This table is made for altering packets."
 msgstr ""
 
-#: core/iptable.cpp:115
+#: core/iptable.cpp:120
 msgid ""
 "In this chain you can filter packets that\n"
 "are addressed directly to this compter."
 msgstr ""
 
-#: core/iptable.cpp:180
+#: core/iptable.cpp:185
 msgid ""
 "<qt>"
 "<p>Chain: <b>%1</b> already exists in table: <b>%2</b>."
@@ -336,38 +338,38 @@ msgid ""
 "table.</p></qt>"
 msgstr ""
 
-#: core/iptable.cpp:204
+#: core/iptable.cpp:209
 #, c-format
 msgid "Cannot delete built-in chain: %1"
 msgstr ""
 
-#: core/iptable.cpp:212
+#: core/iptable.cpp:217
 msgid "Cannot delete nonexistent chain"
 msgstr ""
 
-#: core/iptable.cpp:230
+#: core/iptable.cpp:235
 msgid ""
 "IPTable::moveRuleToChain(IPTRule* rule, IPTChain *target_chainrule == 0. This "
 "is a bug."
 msgstr ""
 
-#: core/iptable.cpp:237
+#: core/iptable.cpp:242
 msgid ""
 "IPTable::moveRuleToChain(IPTRule* rule, IPTChain *target_chaintarget_chain == "
 "0. This is a bug."
 msgstr ""
 
-#: core/iptable.cpp:244 core/iptable.cpp:272
+#: core/iptable.cpp:249 core/iptable.cpp:277
 msgid "%1_Copy"
 msgstr "%1_copi"
 
-#: core/iptable.cpp:258
+#: core/iptable.cpp:263
 msgid ""
 "IPTable::moveRuleToChain(IPTRule* rule, IPTChain *target_chainrule == 0. This "
 "is a bug "
 msgstr ""
 
-#: core/iptable.cpp:265
+#: core/iptable.cpp:270
 msgid ""
 "IPTable::moveRuleToChain(IPTRule* rule, IPTChain *target_chaintarget_chain == "
 "0. This is a bug "
@@ -747,51 +749,51 @@ msgstr ""
 
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:273
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:774
-#: kmfwidgets/kmflistviewitem.cpp:152 kmfwidgets/kmfmynetworkwidget.cpp:114
+#: kmfwidgets/kmflistviewitem.cpp:152 kmfwidgets/kmfmynetworkwidget.cpp:118
 msgid "/%1]"
 msgstr ""
 
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:417
-#: kmfwidgets/kmfmynetworkwidget.cpp:160
+#: kmfwidgets/kmfmynetworkwidget.cpp:164
 #, c-format
 msgid "Zone: %1"
 msgstr ""
 
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:419
-#: kmfwidgets/kmfmynetworkwidget.cpp:162
+#: kmfwidgets/kmfmynetworkwidget.cpp:166
 msgid "Add Host..."
 msgstr "Ychwanegu Gwesteiwr..."
 
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:423
-#: kmfwidgets/kmfmynetworkwidget.cpp:166
+#: kmfwidgets/kmfmynetworkwidget.cpp:170
 msgid "Add Zone..."
 msgstr ""
 
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:425
-#: kmfwidgets/kmfmynetworkwidget.cpp:168
+#: kmfwidgets/kmfmynetworkwidget.cpp:172
 msgid "Rename Zone..."
 msgstr ""
 
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:427
-#: kmfwidgets/kmfmynetworkwidget.cpp:170
+#: kmfwidgets/kmfmynetworkwidget.cpp:174
 msgid "Delete Zone"
 msgstr ""
 
 #: genericinterface/kmfgenericinterfacehost.cpp:219
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:439
-#: kmfwidgets/kmfmynetworkwidget.cpp:182
+#: kmfwidgets/kmfmynetworkwidget.cpp:186
 #, c-format
 msgid "Host: %1"
 msgstr "Gwesteiwr: %1"
 
 #: genericinterface/kmfgenericinterfacehost.cpp:316
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:441
-#: kmfwidgets/kmfmynetworkwidget.cpp:184
+#: kmfwidgets/kmfmynetworkwidget.cpp:188
 msgid "Rename Host..."
 msgstr ""
 
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:442
-#: kmfwidgets/kmfmynetworkwidget.cpp:185
+#: kmfwidgets/kmfmynetworkwidget.cpp:189
 msgid "Delete Host..."
 msgstr ""
 
@@ -808,14 +810,17 @@ msgid "<b>Affected UDP ports: </b>"
 msgstr ""
 
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:642
+#: kmfwidgets/kmfmynetworkwidget.cpp:229
 msgid "Zone Name"
 msgstr ""
 
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:642
+#: kmfwidgets/kmfmynetworkwidget.cpp:229
 msgid "NewZone"
 msgstr ""
 
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:682
+#: kmfwidgets/kmfmynetworkwidget.cpp:198
 msgid "Host Name"
 msgstr "Enw Gwesteiwr"
 
@@ -1169,7 +1174,7 @@ msgid "Yes, I am using Gentoo"
 msgstr ""
 
 #. i18n: file kmyfirewallconfigdialog.ui line 169
-#: kmfwidgets/kmfmynetworkwidget.cpp:64 rc.cpp:40
+#: kmfwidgets/kmfmynetworkwidget.cpp:68 rc.cpp:40
 #, no-c-format
 msgid "Interfaces"
 msgstr "Rhyngwynebau"
@@ -2792,35 +2797,35 @@ msgstr ""
 msgid "Generate Installation Package"
 msgstr ""
 
-#: kmfwidgets/kmfmynetworkwidget.cpp:61
+#: kmfwidgets/kmfmynetworkwidget.cpp:65
 msgid "General"
 msgstr "Cyffredinol"
 
-#: kmfwidgets/kmfmynetworkwidget.cpp:67
+#: kmfwidgets/kmfmynetworkwidget.cpp:71
 msgid "System Settings"
 msgstr "Gosodiadau Cysawd"
 
-#: kmfwidgets/kmfmynetworkwidget.cpp:70
+#: kmfwidgets/kmfmynetworkwidget.cpp:74 kmfwidgets/kmfmynetworkwidget.cpp:247
 msgid "world"
 msgstr ""
 
-#: kmfwidgets/kmfmynetworkwidget.cpp:71
+#: kmfwidgets/kmfmynetworkwidget.cpp:75
 msgid "Gloabl Network"
 msgstr ""
 
-#: kmfwidgets/kmfmynetworkwidget.cpp:72
+#: kmfwidgets/kmfmynetworkwidget.cpp:76
 msgid "This is the global zone that contains all valid IP addresses."
 msgstr ""
 
-#: kmfwidgets/kmfmynetworkwidget.cpp:76 kmfwidgets/kmfmynetworkwidget.cpp:77
+#: kmfwidgets/kmfmynetworkwidget.cpp:80 kmfwidgets/kmfmynetworkwidget.cpp:81
 msgid "My Local Comuter"
 msgstr ""
 
-#: kmfwidgets/kmfmynetworkwidget.cpp:78
+#: kmfwidgets/kmfmynetworkwidget.cpp:82
 msgid "Local copmuter running KMyFirewall"
 msgstr ""
 
-#: kmfwidgets/kmfmynetworkwidget.cpp:81
+#: kmfwidgets/kmfmynetworkwidget.cpp:85
 msgid "localhost"
 msgstr "localhost (y gyfrifiadur yma)"
 
