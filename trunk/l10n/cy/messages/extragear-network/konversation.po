@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-2/konversation.po\n"
-"POT-Creation-Date: 2006-08-17 11:59+0200\n"
+"POT-Creation-Date: 2006-08-18 13:00+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -272,10 +272,9 @@ msgstr ""
 #. i18n: file ./src/ignore_preferencesui.ui line 135
 #: rc.cpp:74 src/ignorelistviewitem.cpp:46 src/inputfilter.cpp:296
 #: src/konvisettingsdialog.cpp:190 src/konvisettingsdialog.cpp:191
-#: src/outputfilter.cpp:785 src/outputfilter.cpp:805 src/outputfilter.cpp:826
-#: src/server.cpp:1794 src/server.cpp:1854 src/server.cpp:1878
-#: src/server.cpp:1898 src/server.cpp:1900 src/server.cpp:1906
-#: src/server.cpp:1908 src/server.cpp:1918
+#: src/outputfilter.cpp:785 src/server.cpp:1794 src/server.cpp:1854
+#: src/server.cpp:1878 src/server.cpp:1898 src/server.cpp:1900
+#: src/server.cpp:1906 src/server.cpp:1908 src/server.cpp:1918
 #, no-c-format
 msgid "DCC"
 msgstr ""
@@ -1295,14 +1294,6 @@ msgstr ""
 msgid "Offering \"%1\" to %2 for upload..."
 msgstr ""
 
-#: src/outputfilter.cpp:804
-msgid "Accepting DCC Resume request from \"%1\" for file \"%2\"."
-msgstr ""
-
-#: src/outputfilter.cpp:825
-msgid "Sending DCC Resume request to \"%1\" for file \"%2\"."
-msgstr ""
-
 #: src/outputfilter.cpp:837
 msgid "Usage: %1INVITE <nick> [channel]"
 msgstr ""
@@ -2232,11 +2223,11 @@ msgstr "Cynnydd :"
 msgid "Position:"
 msgstr "Lleoliad:"
 
-#: src/dccdetaildialog.cpp:128 src/dccpanel.cpp:96 src/dccpanel.cpp:123
+#: src/dccdetaildialog.cpp:128 src/dccpanel.cpp:123
 msgid "&Accept"
 msgstr "&Derbyn"
 
-#: src/dccdetaildialog.cpp:134 src/dccpanel.cpp:97 src/dccpanel.cpp:124
+#: src/dccdetaildialog.cpp:134 src/dccpanel.cpp:124
 msgid "A&bort"
 msgstr "&Erthylu"
 
@@ -2744,7 +2735,7 @@ msgid "unknown size"
 msgstr "anhysbys"
 
 #: src/server.cpp:1854 src/server.cpp:1878
-msgid "Resuming file \"%1\", offered by %2 from position %3."
+msgid "Resuming transfer of \"%1\" to %2 starting at %3%."
 msgstr ""
 
 #: src/server.cpp:1859
@@ -2753,7 +2744,7 @@ msgid "No DCC download running on port %1."
 msgstr ""
 
 #: src/server.cpp:1886
-msgid "Received invalid resume request for file \"%1\" (position %2) from %3."
+msgid "Received invalid resume request for \"%1\" from %2."
 msgstr ""
 
 #: src/server.cpp:1891
@@ -2762,23 +2753,23 @@ msgid "No DCC upload running on port %1."
 msgstr ""
 
 #: src/server.cpp:1898
-msgid "Download of file \"%1\" finished."
+msgid "Download of \"%1\" finished."
 msgstr ""
 
 #: src/server.cpp:1900
-msgid "Download of file \"%1\" failed. reason: %2"
+msgid "Download of \"%1\" failed. Reason: %2"
 msgstr ""
 
 #: src/server.cpp:1906
-msgid "Upload of file \"%1\" finished."
+msgid "Upload of \"%1\" finished."
 msgstr ""
 
 #: src/server.cpp:1908
-msgid "Upload of file \"%1\" failed. reason: %2"
+msgid "Upload of \"%1\" failed. Reason: %2"
 msgstr ""
 
 #: src/server.cpp:1918
-msgid "Upload of file \"%1\" was accepted by %2."
+msgid "Upload of \"%1\" was accepted by %2."
 msgstr ""
 
 #: src/server.cpp:2880
@@ -3041,21 +3032,29 @@ msgstr "Cyflymder"
 msgid "Sender Address"
 msgstr "Anfonwr"
 
-#: src/dccpanel.cpp:98 src/dccpanel.cpp:126
-msgid "&Clear"
-msgstr "&Clirio"
+#: src/dccpanel.cpp:96
+#, fuzzy
+msgid "Accept"
+msgstr "&Derbyn"
 
-#: src/dccpanel.cpp:99 src/dccpanel.cpp:128
-msgid "&Open File"
+#: src/dccpanel.cpp:97
+#, fuzzy
+msgid "Abort"
+msgstr "&Erthylu"
+
+#: src/dccpanel.cpp:99
+#, fuzzy
+msgid "Open File"
 msgstr "&Agor Ffeil"
 
-#: src/dccpanel.cpp:100 src/dccpanel.cpp:129
-msgid "&Remove File"
+#: src/dccpanel.cpp:100
+#, fuzzy
+msgid "Remove File"
 msgstr "&Gwaredu Ffeil"
 
-#: src/dccpanel.cpp:101 src/dccpanel.cpp:132
+#: src/dccpanel.cpp:101
 #, fuzzy
-msgid "DCC Transfer &Details"
+msgid "DCC Transfer Details"
 msgstr "Manylder"
 
 #: src/dccpanel.cpp:103
@@ -3090,10 +3089,27 @@ msgstr ""
 msgid "S&elect All Completed Items"
 msgstr ""
 
+#: src/dccpanel.cpp:126
+msgid "&Clear"
+msgstr "&Clirio"
+
+#: src/dccpanel.cpp:128
+msgid "&Open File"
+msgstr "&Agor Ffeil"
+
+#: src/dccpanel.cpp:129
+msgid "&Remove File"
+msgstr "&Gwaredu Ffeil"
+
 #: src/dccpanel.cpp:130
 #, fuzzy
 msgid "File &Information"
 msgstr "Gwybodaeth Ychwanegol"
+
+#: src/dccpanel.cpp:132
+#, fuzzy
+msgid "DCC Transfer &Details"
+msgstr "Manylder"
 
 #: src/dccpanel.cpp:347
 #, c-format
