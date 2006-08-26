@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-2/kile.po\n"
-"POT-Creation-Date: 2006-08-25 08:32+0200\n"
+"POT-Creation-Date: 2006-08-26 08:42+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -623,7 +623,7 @@ msgstr ""
 msgid "No factory installed, contact the author of Kile."
 msgstr ""
 
-#: kiletool.cpp:602 kiletoolmanager.cpp:148
+#: kiletool.cpp:603 kiletoolmanager.cpp:148
 #, c-format
 msgid "Unknown tool %1."
 msgstr ""
@@ -2015,42 +2015,42 @@ msgstr ""
 msgid "Project Error"
 msgstr "&Cywaith"
 
-#: kilelauncher.cpp:86 kilelauncher.cpp:258 kilelauncher.cpp:327
+#: kilelauncher.cpp:87 kilelauncher.cpp:263 kilelauncher.cpp:332
 msgid ""
 " output: \n"
 msgstr ""
 
-#: kilelauncher.cpp:155
+#: kilelauncher.cpp:160
 msgid "Launching failed, diagnostics:"
 msgstr ""
 
-#: kilelauncher.cpp:162
+#: kilelauncher.cpp:167
 msgid "There is no executable named \"%1\" in your path."
 msgstr ""
 
-#: kilelauncher.cpp:170
+#: kilelauncher.cpp:175
 #, c-format
 msgid "You do not have permission to run %1."
 msgstr ""
 
-#: kilelauncher.cpp:175
+#: kilelauncher.cpp:180
 msgid "Diagnostics could not find any obvious problems."
 msgstr ""
 
-#: kilelauncher.cpp:198
+#: kilelauncher.cpp:203
 #, c-format
 msgid "finished with exit status %1"
 msgstr ""
 
-#: kilelauncher.cpp:209
+#: kilelauncher.cpp:214
 msgid "finished abruptly"
 msgstr ""
 
-#: kilelauncher.cpp:272
+#: kilelauncher.cpp:277
 msgid "Could not find the %1 library."
 msgstr ""
 
-#: kilelauncher.cpp:283
+#: kilelauncher.cpp:288
 msgid "Could not create component %1 from the library %2."
 msgstr ""
 
@@ -2096,59 +2096,59 @@ msgstr "Pe&nnawd:"
 msgid "Table Environment"
 msgstr "Dogfenniaeth"
 
-#: kiletool.cpp:57
+#: kiletool.cpp:58
 #, c-format
 msgid "Could not change to the folder %1."
 msgstr ""
 
-#: kiletool.cpp:58
+#: kiletool.cpp:59
 msgid ""
 "The folder %1 is not writable, therefore %2 will not be able to save its "
 "results."
 msgstr ""
 
-#: kiletool.cpp:59
+#: kiletool.cpp:60
 msgid ""
 "The file %1/%2 does not exist. If you're surprised, check the file permissions."
 msgstr ""
 
-#: kiletool.cpp:60
+#: kiletool.cpp:61
 msgid ""
 "The file %1/%2 is not readable. If you're surprised, check the file "
 "permissions."
 msgstr ""
 
-#: kiletool.cpp:61
+#: kiletool.cpp:62
 msgid ""
 "Could not determine on which file to run %1, because there is no active "
 "document."
 msgstr ""
 
-#: kiletool.cpp:62
+#: kiletool.cpp:63
 msgid "Could not determine the master file for this document."
 msgstr ""
 
-#: kiletool.cpp:63
+#: kiletool.cpp:64
 msgid "Please save the untitled document first."
 msgstr ""
 
-#: kiletool.cpp:64
+#: kiletool.cpp:65
 msgid "Sorry, the file %1 does not exist."
 msgstr ""
 
-#: kiletool.cpp:65
+#: kiletool.cpp:66
 msgid "Sorry, the file %1 is not readable."
 msgstr ""
 
-#: kiletool.cpp:532
+#: kiletool.cpp:533
 msgid "The document %1 is not a LaTeX root document; continue anyway?"
 msgstr ""
 
-#: kiletool.cpp:532
+#: kiletool.cpp:533
 msgid "Continue?"
 msgstr "Mynd ymlaen?"
 
-#: kiletool.cpp:544
+#: kiletool.cpp:545
 msgid "The file %2/%3 does not exist; did you compile the source file?"
 msgstr ""
 
@@ -2329,7 +2329,7 @@ msgstr ""
 msgid "Could not read the style file."
 msgstr ""
 
-#: quickpreview.cpp:188 texdocdialog.cpp:345
+#: quickpreview.cpp:220 texdocdialog.cpp:345
 msgid "Could not create a temporary file."
 msgstr ""
 
@@ -4426,11 +4426,26 @@ msgstr ""
 #. i18n: file kile.kcfg line 98
 #: rc.cpp:571
 #, no-c-format
-msgid "Holds th BIBINPUTS environment variable."
+msgid "Holds the TEXINPUTS environment variable for QuickPreview tools."
 msgstr ""
 
 #. i18n: file kile.kcfg line 99
 #: rc.cpp:574
+#, no-c-format
+msgid ""
+"Set the TEXINPUTS environment variable for QuickPreview tools here. TEXINPUTS "
+"should be a colon-separated list of all paths TeX should look for additional "
+"packages and/or files. You do not have to add :$TEXINPUTS at the end."
+msgstr ""
+
+#. i18n: file kile.kcfg line 103
+#: rc.cpp:577
+#, no-c-format
+msgid "Holds th BIBINPUTS environment variable."
+msgstr ""
+
+#. i18n: file kile.kcfg line 104
+#: rc.cpp:580
 #, no-c-format
 msgid ""
 "Set the BIBINPUTS environment variable here. BIBINPUTS should be a "
@@ -4438,14 +4453,14 @@ msgid ""
 "You do not have to add :$BIBINPUTS at the end."
 msgstr ""
 
-#. i18n: file kile.kcfg line 103
-#: rc.cpp:577
+#. i18n: file kile.kcfg line 108
+#: rc.cpp:583
 #, no-c-format
 msgid "Holds th BSTINPUTS environment variable."
 msgstr ""
 
-#. i18n: file kile.kcfg line 104
-#: rc.cpp:580
+#. i18n: file kile.kcfg line 109
+#: rc.cpp:586
 #, no-c-format
 msgid ""
 "Set the BSTINPUTS environment variable here. BSTINPUTS should be a "
@@ -4453,200 +4468,200 @@ msgid ""
 "You do not have to add :$BSTINPUTS at the end."
 msgstr ""
 
-#. i18n: file kile.kcfg line 110
-#: rc.cpp:583
+#. i18n: file kile.kcfg line 115
+#: rc.cpp:589
 #, no-c-format
 msgid "Whether to show the bottom bar."
 msgstr ""
 
-#. i18n: file kile.kcfg line 114
-#: rc.cpp:586
+#. i18n: file kile.kcfg line 119
+#: rc.cpp:592
 #, no-c-format
 msgid "Height of the bottombar."
 msgstr ""
 
-#. i18n: file kile.kcfg line 118
-#: rc.cpp:589
+#. i18n: file kile.kcfg line 123
+#: rc.cpp:595
 #, no-c-format
 msgid "Width of the sidebar."
 msgstr ""
 
-#. i18n: file kile.kcfg line 122
-#: rc.cpp:592
+#. i18n: file kile.kcfg line 127
+#: rc.cpp:598
 #, no-c-format
 msgid "Whether to show the side bar."
 msgstr ""
 
-#. i18n: file kile.kcfg line 126
-#: rc.cpp:595
+#. i18n: file kile.kcfg line 131
+#: rc.cpp:601
 #, no-c-format
 msgid "Whether to show Bad Box warnings in the LogMsg view."
 msgstr ""
 
-#. i18n: file kile.kcfg line 130
-#: rc.cpp:598
+#. i18n: file kile.kcfg line 135
+#: rc.cpp:604
 #, no-c-format
 msgid "Whether to show (La)TeX warnings in the LogMsg view."
 msgstr ""
 
-#. i18n: file kile.kcfg line 134
-#: rc.cpp:601
+#. i18n: file kile.kcfg line 139
+#: rc.cpp:607
 #, no-c-format
 msgid "The identifier of the selected view in the left pane."
 msgstr ""
 
-#. i18n: file kile.kcfg line 140
-#: rc.cpp:604
+#. i18n: file kile.kcfg line 145
+#: rc.cpp:610
 #, no-c-format
 msgid "Automatic completion \\begin{env} with \\end{env}."
 msgstr ""
 
-#. i18n: file kile.kcfg line 144
-#: rc.cpp:607
+#. i18n: file kile.kcfg line 149
+#: rc.cpp:613
 #, no-c-format
 msgid "Enable auto indentation of environemnts"
 msgstr ""
 
-#. i18n: file kile.kcfg line 148
-#: rc.cpp:610
+#. i18n: file kile.kcfg line 153
+#: rc.cpp:616
 #, no-c-format
 msgid "Use spaces instead of a tabulator to autoindent environments"
 msgstr ""
 
-#. i18n: file kile.kcfg line 152
-#: rc.cpp:613
+#. i18n: file kile.kcfg line 157
+#: rc.cpp:619
 #, no-c-format
 msgid "Use this number of spaces to autoindent environments"
 msgstr ""
 
-#. i18n: file kile.kcfg line 160
-#: rc.cpp:617
+#. i18n: file kile.kcfg line 165
+#: rc.cpp:623
 #, no-c-format
 msgid "Automatic insertion of double quotes."
 msgstr ""
 
-#. i18n: file kile.kcfg line 164
-#: rc.cpp:620
+#. i18n: file kile.kcfg line 169
+#: rc.cpp:626
 #, no-c-format
 msgid "Language dependent type of double quotes."
 msgstr ""
 
-#. i18n: file kile.kcfg line 170
-#: rc.cpp:623
+#. i18n: file kile.kcfg line 175
+#: rc.cpp:629
 #, no-c-format
 msgid "Center the graphics."
 msgstr ""
 
-#. i18n: file kile.kcfg line 174
-#: rc.cpp:626
+#. i18n: file kile.kcfg line 179
+#: rc.cpp:632
 #, no-c-format
 msgid "Use PdfTeX or PdfLaTeX."
 msgstr ""
 
-#. i18n: file kile.kcfg line 178
-#: rc.cpp:629
+#. i18n: file kile.kcfg line 183
+#: rc.cpp:635
 #, no-c-format
 msgid "Filename is relative to a path given in graphicspath command."
 msgstr ""
 
-#. i18n: file kile.kcfg line 182
-#: rc.cpp:632
+#. i18n: file kile.kcfg line 187
+#: rc.cpp:638
 #, no-c-format
 msgid "Embed the graphics in a figure environment."
 msgstr ""
 
-#. i18n: file kile.kcfg line 186
-#: rc.cpp:635
+#. i18n: file kile.kcfg line 191
+#: rc.cpp:641
 #, no-c-format
 msgid "Whether ImageMagick is installed."
 msgstr ""
 
-#. i18n: file kile.kcfg line 190
-#: rc.cpp:638
+#. i18n: file kile.kcfg line 195
+#: rc.cpp:644
 #, no-c-format
 msgid "Try to determine the bounding box from the picture."
 msgstr ""
 
-#. i18n: file kile.kcfg line 194
-#: rc.cpp:641
+#. i18n: file kile.kcfg line 199
+#: rc.cpp:647
 #, no-c-format
 msgid "The default image resolution."
 msgstr ""
 
-#. i18n: file kile.kcfg line 200
-#: rc.cpp:644
+#. i18n: file kile.kcfg line 205
+#: rc.cpp:650
 #, no-c-format
 msgid "Location of the TeX documentation."
 msgstr ""
 
-#. i18n: file kile.kcfg line 204
-#: rc.cpp:647
+#. i18n: file kile.kcfg line 209
+#: rc.cpp:653
 #, no-c-format
 msgid "Use the system's TeX reference for the contextual help."
 msgstr ""
 
-#. i18n: file kile.kcfg line 208
-#: rc.cpp:650
+#. i18n: file kile.kcfg line 213
+#: rc.cpp:656
 #, no-c-format
 msgid "Use embedded viewer for user help."
 msgstr ""
 
-#. i18n: file kile.kcfg line 214
-#: rc.cpp:653
+#. i18n: file kile.kcfg line 219
+#: rc.cpp:659
 #, fuzzy, no-c-format
 msgid "The default encoding."
 msgstr "Gosodiadau Rhagosodedig ..."
 
-#. i18n: file kile.kcfg line 218
-#: rc.cpp:656
+#. i18n: file kile.kcfg line 223
+#: rc.cpp:662
 #, no-c-format
 msgid "Reopen files and projects on startup."
 msgstr ""
 
-#. i18n: file kile.kcfg line 222
-#: rc.cpp:659
+#. i18n: file kile.kcfg line 227
+#: rc.cpp:665
 #, no-c-format
 msgid "Automatic save."
 msgstr ""
 
-#. i18n: file kile.kcfg line 226
-#: rc.cpp:662
+#. i18n: file kile.kcfg line 231
+#: rc.cpp:668
 #, no-c-format
 msgid "Automatically clean-up files after close."
 msgstr ""
 
-#. i18n: file kile.kcfg line 230
-#: rc.cpp:665
+#. i18n: file kile.kcfg line 235
+#: rc.cpp:671
 #, no-c-format
 msgid "The autosave interval in minutes."
 msgstr ""
 
-#. i18n: file kile.kcfg line 234
-#: rc.cpp:668
+#. i18n: file kile.kcfg line 239
+#: rc.cpp:674
 #, no-c-format
 msgid "The file extensions to clean on exit."
 msgstr ""
 
-#. i18n: file kile.kcfg line 254
-#: rc.cpp:674
+#. i18n: file kile.kcfg line 259
+#: rc.cpp:680
 #, no-c-format
 msgid "The Author template variable."
 msgstr ""
 
-#. i18n: file kile.kcfg line 258
-#: rc.cpp:677
+#. i18n: file kile.kcfg line 263
+#: rc.cpp:683
 #, no-c-format
 msgid "The Documentclass template variable."
 msgstr ""
 
-#. i18n: file kile.kcfg line 262
-#: rc.cpp:680
+#. i18n: file kile.kcfg line 267
+#: rc.cpp:686
 #, no-c-format
 msgid "The Input encoding template variable."
 msgstr ""
 
-#. i18n: file kile.kcfg line 266
-#: rc.cpp:683
+#. i18n: file kile.kcfg line 271
+#: rc.cpp:689
 #, no-c-format
 msgid "The default location where the projects must be created."
 msgstr ""
@@ -6057,57 +6072,62 @@ msgstr ""
 msgid "Cases - \\begin{cases}"
 msgstr ""
 
-#: quickpreview.cpp:42
+#: quickpreview.cpp:43
 msgid "LaTeX ---> DVI"
 msgstr ""
 
-#: quickpreview.cpp:43
+#: quickpreview.cpp:44
 msgid "LaTeX ---> DVI (KDVI)"
 msgstr ""
 
-#: quickpreview.cpp:44
+#: quickpreview.cpp:45
 msgid "LaTeX ---> PS"
 msgstr ""
 
-#: quickpreview.cpp:45
+#: quickpreview.cpp:46
 msgid "LaTeX ---> PS (KGhostView)"
 msgstr ""
 
-#: quickpreview.cpp:46
+#: quickpreview.cpp:47
 msgid "PDFLaTeX ---> PDF"
 msgstr ""
 
-#: quickpreview.cpp:47
+#: quickpreview.cpp:48
 msgid "PDFLaTeX ---> PDF (KGhostView)"
 msgstr ""
 
-#: quickpreview.cpp:48
+#: quickpreview.cpp:49
 msgid "PDFLaTeX ---> PDF (KPDF)"
 msgstr ""
 
 #: quickpreview.cpp:77
+msgid ""
+"There is already a preview running, which you have to finish to run this one."
+msgstr ""
+
+#: quickpreview.cpp:85
 msgid "There is nothing to compile and preview."
 msgstr ""
 
-#: quickpreview.cpp:106
+#: quickpreview.cpp:118
 msgid ""
 "Could not run QuickPreview:\n"
 "unknown task '%1'"
 msgstr ""
 
-#: quickpreview.cpp:115 quickpreview.cpp:124 quickpreview.cpp:133
+#: quickpreview.cpp:128 quickpreview.cpp:139 quickpreview.cpp:150
 msgid "Could not run '%1' for QuickPreview."
 msgstr ""
 
-#: quickpreview.cpp:170
+#: quickpreview.cpp:200
 msgid "Could not determine the main document."
 msgstr ""
 
-#: quickpreview.cpp:177
+#: quickpreview.cpp:208
 msgid "Could not read the preamble."
 msgstr ""
 
-#: quickpreview.cpp:217
+#: quickpreview.cpp:252
 msgid "Could not find a '\\begin{document}' command."
 msgstr ""
 
