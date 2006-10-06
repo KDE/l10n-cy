@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2006-10-05 09:25+0200\n"
+"POT-Creation-Date: 2006-10-06 08:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,7 +77,7 @@ msgstr ""
 msgid "IPFilter"
 msgstr "Hoffterau"
 
-#: apps/ktorrent/ktorrent.cpp:462 apps/ktorrent/ktorrentview.cpp:183
+#: apps/ktorrent/ktorrent.cpp:462 apps/ktorrent/ktorrentview.cpp:191
 msgid "Check Data Integrity"
 msgstr ""
 
@@ -160,7 +160,7 @@ msgid "Cannot bind to port %1 or the 10 following ports."
 msgstr ""
 
 #: apps/ktorrent/ktorrentcore.cpp:245
-#: libktorrent/torrent/torrentcontrol.cpp:1071
+#: libktorrent/torrent/torrentcontrol.cpp:1089
 msgid "Select Folder to Save To"
 msgstr ""
 
@@ -386,8 +386,8 @@ msgstr ""
 msgid "The DHT port needs to be different then the UDP tracker port !"
 msgstr ""
 
-#. i18n: file ./apps/ktorrent/generalpref.ui line 299
-#: apps/ktorrent/pref.cpp:191 rc.cpp:79
+#. i18n: file ./apps/ktorrent/generalpref.ui line 86
+#: apps/ktorrent/pref.cpp:191 rc.cpp:42
 #, no-c-format
 msgid "General"
 msgstr "Cyffredinol"
@@ -464,72 +464,87 @@ msgid "Add peers..."
 msgstr ""
 
 #: apps/ktorrent/ktorrentview.cpp:163
+msgid "Additional peer sources"
+msgstr ""
+
+#: apps/ktorrent/ktorrentview.cpp:164
+msgid "Torrent peer sources:"
+msgstr ""
+
+#. i18n: file ./apps/ktorrent/generalpref.ui line 345
+#: apps/ktorrent/ktorrentview.cpp:166 plugins/infowidget/peerview.cpp:178
+#: rc.cpp:103
+#, no-c-format
+msgid "DHT"
+msgstr ""
+
+#: apps/ktorrent/ktorrentview.cpp:171
 msgid "Manual Announce"
 msgstr ""
 
 #. i18n: file ./plugins/infowidget/infowidgetbase.ui line 643
-#: apps/ktorrent/ktorrentview.cpp:167 plugins/infowidget/infowidget.cpp:77
+#: apps/ktorrent/ktorrentview.cpp:175 plugins/infowidget/infowidget.cpp:77
 #: rc.cpp:833
 #, no-c-format
 msgid "Preview"
 msgstr "Rhagolwg"
 
-#: apps/ktorrent/ktorrentview.cpp:172
+#: apps/ktorrent/ktorrentview.cpp:180
 msgid "Open directory..."
 msgstr ""
 
-#: apps/ktorrent/ktorrentview.cpp:173
+#: apps/ktorrent/ktorrentview.cpp:181
 #, fuzzy
 msgid "Data directory"
 msgstr "Cyfeiriaduron"
 
-#: apps/ktorrent/ktorrentview.cpp:174
+#: apps/ktorrent/ktorrentview.cpp:182
 msgid "Temporary directory"
 msgstr ""
 
-#: apps/ktorrent/ktorrentview.cpp:177
+#: apps/ktorrent/ktorrentview.cpp:185
 msgid "Remove From Group"
 msgstr ""
 
-#: apps/ktorrent/ktorrentview.cpp:180
+#: apps/ktorrent/ktorrentview.cpp:188
 msgid "Add To Group"
 msgstr ""
 
-#: apps/ktorrent/ktorrentview.cpp:239
+#: apps/ktorrent/ktorrentview.cpp:247
 #, c-format
 msgid ""
 "_n: Cannot start more than 1 download, \n"
 "Cannot start more than %n downloads, "
 msgstr ""
 
-#: apps/ktorrent/ktorrentview.cpp:241
+#: apps/ktorrent/ktorrentview.cpp:249
 #, c-format
 msgid ""
 "_n: and 1 seed. \n"
 "and %n seeds. "
 msgstr ""
 
-#: apps/ktorrent/ktorrentview.cpp:242
+#: apps/ktorrent/ktorrentview.cpp:250
 msgid "Go to Settings -> Configure KTorrent, if you want to change the limits."
 msgstr ""
 
-#: apps/ktorrent/ktorrentview.cpp:326
+#: apps/ktorrent/ktorrentview.cpp:334
 msgid ""
 "The torrent %1 has not finished downloading, do you want to delete the "
 "incomplete data, too?"
 msgstr ""
 
-#: apps/ktorrent/ktorrentview.cpp:328
+#: apps/ktorrent/ktorrentview.cpp:336
 #, fuzzy
 msgid "Remove Download"
 msgstr "Lawrlwytho"
 
-#: apps/ktorrent/ktorrentview.cpp:344
+#: apps/ktorrent/ktorrentview.cpp:352
 msgid ""
 "You will lose all the downloaded data. Are you sure you want to do this ?"
 msgstr ""
 
-#: apps/ktorrent/ktorrentview.cpp:649
+#: apps/ktorrent/ktorrentview.cpp:670
 msgid "Checking Data Integrity"
 msgstr ""
 
@@ -582,7 +597,7 @@ msgstr ""
 msgid "<b>%1</b> has completed downloading.<br>Average speed: %2 DL / %3 UL."
 msgstr ""
 
-#: apps/ktorrent/trayicon.cpp:103
+#: apps/ktorrent/trayicon.cpp:103 libktorrent/torrent/torrentcontrol.cpp:1155
 #, fuzzy
 msgid "Download completed"
 msgstr "Lawrlwytho"
@@ -593,7 +608,7 @@ msgid ""
 "<br>Uploaded %3 at an average speed of %4."
 msgstr ""
 
-#: apps/ktorrent/trayicon.cpp:124
+#: apps/ktorrent/trayicon.cpp:124 libktorrent/torrent/torrentcontrol.cpp:1157
 #, fuzzy
 msgid "Seeding completed"
 msgstr "Lawrlwytho"
@@ -680,195 +695,189 @@ msgstr "Dewis D&im"
 msgid "Invert Selection"
 msgstr "Gwrthdroi Dewisiad"
 
-#. i18n: file ./apps/ktorrent/generalpref.ui line 31
+#. i18n: file ./apps/ktorrent/generalpref.ui line 27
 #: rc.cpp:33
 #, no-c-format
 msgid "Folders"
 msgstr "Plygyll"
 
-#. i18n: file ./apps/ktorrent/generalpref.ui line 50
+#. i18n: file ./apps/ktorrent/generalpref.ui line 46
 #: rc.cpp:36
 #, no-c-format
 msgid "Folder to store temporary files:"
 msgstr ""
 
-#. i18n: file ./apps/ktorrent/generalpref.ui line 73
+#. i18n: file ./apps/ktorrent/generalpref.ui line 69
 #: rc.cpp:39
 #, no-c-format
 msgid "&Automatically save downloads to:"
 msgstr ""
 
-#. i18n: file ./apps/ktorrent/generalpref.ui line 123
-#: rc.cpp:42
-#, no-c-format
-msgid "Encryption"
-msgstr "Cêl-ysgrifaeth"
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 126
+#. i18n: file ./apps/ktorrent/generalpref.ui line 105
 #: rc.cpp:45
 #, no-c-format
-msgid ""
-"Secure connection with other clients. May also help if your ISP is shaping your "
-"traffic."
+msgid "GUI update interval:"
 msgstr ""
 
-#. i18n: file ./apps/ktorrent/generalpref.ui line 137
-#: rc.cpp:48 rc.cpp:206
+#. i18n: file ./apps/ktorrent/generalpref.ui line 111
+#: rc.cpp:48
 #, no-c-format
-msgid "Use protocol encryption"
+msgid "500ms"
 msgstr ""
 
-#. i18n: file ./apps/ktorrent/generalpref.ui line 148
-#: rc.cpp:52 rc.cpp:209
+#. i18n: file ./apps/ktorrent/generalpref.ui line 116
+#: rc.cpp:51
 #, no-c-format
-msgid "Allow unencrypted connections"
+msgid "1s"
 msgstr ""
 
-#. i18n: file ./apps/ktorrent/generalpref.ui line 151
-#: rc.cpp:55
+#. i18n: file ./apps/ktorrent/generalpref.ui line 121
+#: rc.cpp:54
 #, no-c-format
-msgid ""
-"If unchecked, you'll be able to connect only to clients supporting encryption."
+msgid "2s"
 msgstr ""
 
-#. i18n: file ./apps/ktorrent/generalpref.ui line 169
-#: plugins/infowidget/peerview.cpp:178 rc.cpp:58
+#. i18n: file ./apps/ktorrent/generalpref.ui line 126
+#: rc.cpp:57
 #, no-c-format
-msgid "DHT"
+msgid "5s"
 msgstr ""
 
-#. i18n: file ./apps/ktorrent/generalpref.ui line 172
-#: rc.cpp:61
+#. i18n: file ./apps/ktorrent/generalpref.ui line 165
+#: rc.cpp:60
+#, no-c-format
+msgid "Memory usage:"
+msgstr "Defnydd Cof :"
+
+#. i18n: file ./apps/ktorrent/generalpref.ui line 171
+#: rc.cpp:63
+#, no-c-format
+msgid "Low"
+msgstr "Isel"
+
+#. i18n: file ./apps/ktorrent/generalpref.ui line 176
+#: rc.cpp:66
+#, no-c-format
+msgid "Medium"
+msgstr "Canolig"
+
+#. i18n: file ./apps/ktorrent/generalpref.ui line 181
+#: rc.cpp:69
+#, no-c-format
+msgid "High"
+msgstr "Uchel"
+
+#. i18n: file ./apps/ktorrent/generalpref.ui line 212
+#: rc.cpp:72
+#, no-c-format
+msgid "Show s&ystem tray icon"
+msgstr "Dangos eicon y teclyn &cysawd"
+
+#. i18n: file ./apps/ktorrent/generalpref.ui line 215
+#: rc.cpp:75
+#, fuzzy, no-c-format
+msgid "Alt+Y"
+msgstr "Alt+A"
+
+#. i18n: file ./apps/ktorrent/generalpref.ui line 223
+#: rc.cpp:78
+#, fuzzy, no-c-format
+msgid "Show speed &bar in tray icon"
+msgstr "Dangos eicon y teclyn &cysawd"
+
+#. i18n: file ./apps/ktorrent/generalpref.ui line 226
+#: rc.cpp:81
+#, fuzzy, no-c-format
+msgid "Alt+B"
+msgstr "Alt+1"
+
+#. i18n: file ./apps/ktorrent/generalpref.ui line 234
+#: rc.cpp:84
+#, no-c-format
+msgid "Show \"torrent finished\" popup messages"
+msgstr ""
+
+#. i18n: file ./apps/ktorrent/generalpref.ui line 253
+#: rc.cpp:88 rc.cpp:167
+#, no-c-format
+msgid "Upload bandwidth (in kb/s):"
+msgstr ""
+
+#. i18n: file ./apps/ktorrent/generalpref.ui line 275
+#: rc.cpp:91 rc.cpp:164
+#, no-c-format
+msgid "Download bandwidth (in kb/s):"
+msgstr ""
+
+#. i18n: file ./apps/ktorrent/generalpref.ui line 301
+#: rc.cpp:94
+#, no-c-format
+msgid "Custom IP"
+msgstr ""
+
+#. i18n: file ./apps/ktorrent/generalpref.ui line 312
+#: rc.cpp:97
+#, no-c-format
+msgid "Se&nd the tracker a custom IP or hostname"
+msgstr ""
+
+#. i18n: file ./apps/ktorrent/generalpref.ui line 328
+#: rc.cpp:100
+#, no-c-format
+msgid "Custom IP or hostname:"
+msgstr ""
+
+#. i18n: file ./apps/ktorrent/generalpref.ui line 348
+#: rc.cpp:106
 #, no-c-format
 msgid ""
 "<b>D</b>istributed <b>H</b>ash <b>T</b>able protocol."
 "<br>Decentralized peers exchange protocol. See manual for more info."
 msgstr ""
 
-#. i18n: file ./apps/ktorrent/generalpref.ui line 183
-#: rc.cpp:64
+#. i18n: file ./apps/ktorrent/generalpref.ui line 359
+#: rc.cpp:109
 #, no-c-format
 msgid "&Use DHT to get additional peers"
 msgstr ""
 
-#. i18n: file ./apps/ktorrent/generalpref.ui line 199
-#: rc.cpp:67
+#. i18n: file ./apps/ktorrent/generalpref.ui line 375
+#: rc.cpp:112
 #, no-c-format
 msgid "UDP port for DHT communication:"
 msgstr ""
 
-#. i18n: file ./apps/ktorrent/generalpref.ui line 247
-#: rc.cpp:70
-#, no-c-format
-msgid "Custom IP"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 258
-#: rc.cpp:73
-#, no-c-format
-msgid "Se&nd the tracker a custom IP or hostname"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 274
-#: rc.cpp:76
-#, no-c-format
-msgid "Custom IP or hostname:"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 318
-#: rc.cpp:82
-#, no-c-format
-msgid "GUI update interval:"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 324
-#: rc.cpp:85
-#, no-c-format
-msgid "500ms"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 329
-#: rc.cpp:88
-#, no-c-format
-msgid "1s"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 334
-#: rc.cpp:91
-#, no-c-format
-msgid "2s"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 339
-#: rc.cpp:94
-#, no-c-format
-msgid "5s"
-msgstr ""
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 378
-#: rc.cpp:97
-#, no-c-format
-msgid "Memory usage:"
-msgstr "Defnydd Cof :"
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 384
-#: rc.cpp:100
-#, no-c-format
-msgid "Low"
-msgstr "Isel"
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 389
-#: rc.cpp:103
-#, no-c-format
-msgid "Medium"
-msgstr "Canolig"
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 394
-#: rc.cpp:106
-#, no-c-format
-msgid "High"
-msgstr "Uchel"
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 425
-#: rc.cpp:109
-#, no-c-format
-msgid "Show s&ystem tray icon"
-msgstr "Dangos eicon y teclyn &cysawd"
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 428
-#: rc.cpp:112
-#, fuzzy, no-c-format
-msgid "Alt+Y"
-msgstr "Alt+A"
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 436
+#. i18n: file ./apps/ktorrent/generalpref.ui line 415
 #: rc.cpp:115
-#, fuzzy, no-c-format
-msgid "Show speed &bar in tray icon"
-msgstr "Dangos eicon y teclyn &cysawd"
+#, no-c-format
+msgid "Encryption"
+msgstr "Cêl-ysgrifaeth"
 
-#. i18n: file ./apps/ktorrent/generalpref.ui line 439
+#. i18n: file ./apps/ktorrent/generalpref.ui line 418
 #: rc.cpp:118
-#, fuzzy, no-c-format
-msgid "Alt+B"
-msgstr "Alt+1"
-
-#. i18n: file ./apps/ktorrent/generalpref.ui line 447
-#: rc.cpp:121
 #, no-c-format
-msgid "Show \"torrent finished\" popup messages"
+msgid ""
+"Secure connection with other clients. May also help if your ISP is shaping your "
+"traffic."
 msgstr ""
 
-#. i18n: file ./apps/ktorrent/generalpref.ui line 466
-#: rc.cpp:125 rc.cpp:167
+#. i18n: file ./apps/ktorrent/generalpref.ui line 429
+#: rc.cpp:121 rc.cpp:206
 #, no-c-format
-msgid "Upload bandwidth (in kb/s):"
+msgid "Use protocol encryption"
 msgstr ""
 
-#. i18n: file ./apps/ktorrent/generalpref.ui line 488
-#: rc.cpp:128 rc.cpp:164
+#. i18n: file ./apps/ktorrent/generalpref.ui line 440
+#: rc.cpp:125 rc.cpp:209
 #, no-c-format
-msgid "Download bandwidth (in kb/s):"
+msgid "Allow unencrypted connections"
+msgstr ""
+
+#. i18n: file ./apps/ktorrent/generalpref.ui line 443
+#: rc.cpp:128
+#, no-c-format
+msgid ""
+"If unchecked, you'll be able to connect only to clients supporting encryption."
 msgstr ""
 
 #. i18n: file ./apps/ktorrent/ktorrent.kcfg line 10
@@ -2904,35 +2913,35 @@ msgstr ""
 msgid "Cannot load chunk %1"
 msgstr "Methu creu %1: %2"
 
-#: libktorrent/torrent/torrentcontrol.cpp:444
-#: libktorrent/torrent/torrentcontrol.cpp:472
+#: libktorrent/torrent/torrentcontrol.cpp:445
+#: libktorrent/torrent/torrentcontrol.cpp:473
 msgid ""
 "An error occurred while loading the torrent. The torrent is probably corrupt or "
 "is not a torrent file."
 msgstr ""
 
-#: libktorrent/torrent/torrentcontrol.cpp:481
+#: libktorrent/torrent/torrentcontrol.cpp:482
 #, fuzzy
 msgid "Unable to create %1 : %2"
 msgstr "Methu creu %1: %2"
 
-#: libktorrent/torrent/torrentcontrol.cpp:497
+#: libktorrent/torrent/torrentcontrol.cpp:498
 msgid ""
 "You are already downloading this torrent %1, the list of trackers of both "
 "torrents has been merged."
 msgstr ""
 
-#: libktorrent/torrent/torrentcontrol.cpp:501
+#: libktorrent/torrent/torrentcontrol.cpp:502
 #, c-format
 msgid "You are already downloading the torrent %1"
 msgstr ""
 
-#: libktorrent/torrent/torrentcontrol.cpp:612
+#: libktorrent/torrent/torrentcontrol.cpp:613
 #, fuzzy
 msgid "Cannot migrate %1 : %2"
 msgstr "Methu creu %1: %2"
 
-#: libktorrent/torrent/torrentcontrol.cpp:1066
+#: libktorrent/torrent/torrentcontrol.cpp:1084
 msgid ""
 "The torrent %1 was started with a previous version of KTorrent. To make sure "
 "this torrent still works with this version of KTorrent, we will migrate this "
@@ -2940,50 +2949,40 @@ msgid ""
 "cancel, we will select your home directory."
 msgstr ""
 
-#: libktorrent/torrent/torrentcontrol.cpp:1135
+#: libktorrent/torrent/torrentcontrol.cpp:1153
 msgid "Not started"
 msgstr ""
 
-#: libktorrent/torrent/torrentcontrol.cpp:1137
-#, fuzzy
-msgid "Download Completed"
-msgstr "Lawrlwytho"
-
-#: libktorrent/torrent/torrentcontrol.cpp:1139
-#, fuzzy
-msgid "Seeding Completed"
-msgstr "Lawrlwytho"
-
-#: libktorrent/torrent/torrentcontrol.cpp:1141
+#: libktorrent/torrent/torrentcontrol.cpp:1159
 msgid "Seeding"
 msgstr ""
 
-#: libktorrent/torrent/torrentcontrol.cpp:1143
+#: libktorrent/torrent/torrentcontrol.cpp:1161
 msgid "Downloading"
 msgstr "Lawrlwytho"
 
-#: libktorrent/torrent/torrentcontrol.cpp:1145
+#: libktorrent/torrent/torrentcontrol.cpp:1163
 msgid "Stalled"
 msgstr "Wedi Seibio"
 
-#: libktorrent/torrent/peersourcemanager.cpp:132
-#: libktorrent/torrent/torrentcontrol.cpp:1147
+#: libktorrent/torrent/peersourcemanager.cpp:133
+#: libktorrent/torrent/torrentcontrol.cpp:1165
 msgid "Stopped"
 msgstr "Wedi aros"
 
-#: libktorrent/torrent/torrentcontrol.cpp:1149
+#: libktorrent/torrent/torrentcontrol.cpp:1167
 msgid "Error: "
 msgstr "Gwall:"
 
-#: libktorrent/torrent/torrentcontrol.cpp:1151
+#: libktorrent/torrent/torrentcontrol.cpp:1169
 msgid "Allocating diskspace"
 msgstr ""
 
-#: libktorrent/torrent/torrentcontrol.cpp:1153
+#: libktorrent/torrent/torrentcontrol.cpp:1171
 msgid "Queued"
 msgstr "Mewn Ciw"
 
-#: libktorrent/torrent/torrentcontrol.cpp:1155
+#: libktorrent/torrent/torrentcontrol.cpp:1173
 msgid "Checking data"
 msgstr ""
 
@@ -3008,7 +3007,7 @@ msgstr "Gwall wrth ysgrifennu i %1"
 msgid "Error starting torrent %1 : %2"
 msgstr "Gwall wrth ysgrifennu i %1"
 
-#: libktorrent/torrent/peersourcemanager.cpp:404
+#: libktorrent/torrent/peersourcemanager.cpp:405
 msgid "Announcing"
 msgstr ""
 
@@ -3530,6 +3529,14 @@ msgid ""
 "_: to download\n"
 "Download"
 msgstr "Lawrlwytho"
+
+#, fuzzy
+#~ msgid "Download Completed"
+#~ msgstr "Lawrlwytho"
+
+#, fuzzy
+#~ msgid "Seeding Completed"
+#~ msgstr "Lawrlwytho"
 
 #, fuzzy
 #~ msgid "DownloadPref"
