@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kugar\n"
-"POT-Creation-Date: 2006-03-29 04:03+0200\n"
+"POT-Creation-Date: 2006-11-02 02:46+0100\n"
 "PO-Revision-Date: 2004-08-12 18:46+0100\n"
 "Last-Translator: KD at Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -17,6 +17,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.2\n"
 "\n"
+
+#: lib/mfieldobject.cpp:233
+msgid ","
+msgstr ""
 
 #: lib/mreportviewer.cpp:155 lib/mreportviewer.cpp:293
 msgid ""
@@ -87,31 +91,37 @@ msgid "Grid size:"
 msgstr "Maint grid:"
 
 #: kudesigner/kudesigner_view.cpp:192 kudesigner_lib/reportheader.cpp:45
+#: kudesigner_lib/structurewidget.cpp:123
 msgid "Report Header"
 msgstr "Pennawd Adroddiad"
 
 #: kudesigner/kudesigner_view.cpp:194 kudesigner_lib/reportfooter.cpp:47
+#: kudesigner_lib/structurewidget.cpp:126
 msgid "Report Footer"
 msgstr "Troedyn Adroddiad"
 
 #: kudesigner/kudesigner_view.cpp:196 kudesigner_lib/pageheader.cpp:46
+#: kudesigner_lib/structurewidget.cpp:132
 msgid "Page Header"
 msgstr "Pennawd Tudalen"
 
 #: kudesigner/kudesigner_view.cpp:198 kudesigner_lib/pagefooter.cpp:45
+#: kudesigner_lib/structurewidget.cpp:129
 msgid "Page Footer"
 msgstr "Troedyn Tudalen"
 
 #: kudesigner/kudesigner_view.cpp:200 kudesigner_lib/detailheader.cpp:39
+#: kudesigner_lib/structurewidget.cpp:138
 msgid "Detail Header"
 msgstr "Penawd Manylder"
 
 #: kudesigner/kudesigner_view.cpp:202 kudesigner_lib/detail.cpp:42
-#: kudesigner_lib/detailbase.cpp:29
+#: kudesigner_lib/detailbase.cpp:29 kudesigner_lib/structurewidget.cpp:135
 msgid "Detail"
 msgstr "Manylder"
 
 #: kudesigner/kudesigner_view.cpp:204 kudesigner_lib/detailfooter.cpp:39
+#: kudesigner_lib/structurewidget.cpp:141
 msgid "Detail Footer"
 msgstr "Troedyn Manylder "
 
@@ -138,6 +148,7 @@ msgstr "Maes wedi'i Gyfrifo"
 
 #: kudesigner/kudesigner_view.cpp:223 kudesigner_lib/commdefs.cpp:42
 #: kudesigner_lib/label.cpp:62 kudesigner_lib/line.cpp:35
+#: kudesigner_lib/structurewidget.cpp:182
 msgid "Line"
 msgstr "Llinell"
 
@@ -148,6 +159,23 @@ msgstr "Label Grid"
 #: kudesigner/kudesigner_view.cpp:230
 msgid "Grid Size"
 msgstr "Maint Grid"
+
+#: kudesigner/kudesigner_view.cpp:312
+msgid "Add Detail Header"
+msgstr "Ychwanegu Penawd Manylder "
+
+#: kudesigner/kudesigner_view.cpp:312 kudesigner/kudesigner_view.cpp:325
+#: kudesigner/kudesigner_view.cpp:339
+msgid "Enter detail level:"
+msgstr "Rhowch y lefel manylder:"
+
+#: kudesigner/kudesigner_view.cpp:325
+msgid "Add Detail"
+msgstr "Ychwanegu Manylder"
+
+#: kudesigner/kudesigner_view.cpp:339
+msgid "Add Detail Footer"
+msgstr "Ychwanegu Troedyn Manylder"
 
 #: kudesigner_lib/calcfield.cpp:35
 msgid "Calculation"
@@ -181,6 +209,43 @@ msgstr "Math"
 #: kudesigner_lib/calcfield.cpp:41
 msgid "Calculation Type"
 msgstr "Math Cyfrifiad"
+
+#: kudesigner_lib/command.cpp:54
+msgid "Insert Detail Footer Section"
+msgstr "Mewnosod Adran y Troedyn Manylder"
+
+#: kudesigner_lib/command.cpp:78
+msgid "Insert Detail Section"
+msgstr "Mewnosod Adran Manylder"
+
+#: kudesigner_lib/command.cpp:102
+msgid "Insert Detail Header Section"
+msgstr "Mewnosod Adran Pennawd Manylder"
+
+#: kudesigner_lib/command.cpp:126
+msgid "Insert Page Footer Section"
+msgstr "Mewnosod Adran Troedyn Tudalen"
+
+#: kudesigner_lib/command.cpp:149
+msgid "Insert Page Header Section"
+msgstr "Mewnosod Adran Pennawd Tudalen"
+
+#: kudesigner_lib/command.cpp:172
+msgid "Insert Report Footer Section"
+msgstr "Mewnosod Adran Troedyn Adroddiad"
+
+#: kudesigner_lib/command.cpp:195
+msgid "Insert Report Header Section"
+msgstr "Mewnosod Adran Troedyn Adroddiad"
+
+#: kudesigner_lib/command.cpp:218
+#, fuzzy
+msgid "Insert Report Item"
+msgstr "Mewnosod Eitem Adroddiad"
+
+#: kudesigner_lib/command.cpp:273
+msgid "Delete Report Item(s)"
+msgstr "Dileu Eitem(au) Adroddiad"
 
 #: kudesigner_lib/commdefs.cpp:38
 msgid "Special"
@@ -541,6 +606,110 @@ msgstr "Math Maes Arbennig"
 msgid "PageNo"
 msgstr "RhifTud"
 
+#: kudesigner_lib/structurewidget.cpp:82
+#, fuzzy
+msgid "Report Structure"
+msgstr "Eitem Adroddiad"
+
+#: kudesigner_lib/structurewidget.cpp:94
+#, fuzzy
+msgid "Report Template"
+msgstr "Pennawd Adroddiad"
+
+#: kudesigner_lib/structurewidget.cpp:145
+msgid " (level %1)"
+msgstr ""
+
+#: kudesigner_lib/structurewidget.cpp:163
+msgid "<unknown>"
+msgstr ""
+
+#: kudesigner_lib/structurewidget.cpp:168
+#, fuzzy, c-format
+msgid "Label: %1"
+msgstr "Label"
+
+#: kudesigner_lib/structurewidget.cpp:171
+#, fuzzy, c-format
+msgid "Field: %1"
+msgstr "Maes"
+
+#: kudesigner_lib/structurewidget.cpp:174
+#, fuzzy, c-format
+msgid "Calculated Field: %1"
+msgstr "Maes wedi'i Gyfrifo"
+
+#: kudesigner_lib/structurewidget.cpp:179
+#, fuzzy, c-format
+msgid "Special Field: %1"
+msgstr "Maes Arbennig"
+
+#: part/kugar_about.h:31
+msgid "Kugar"
+msgstr "Kugar"
+
+#: part/kugar_about.h:32
+msgid "Report viewer(generator)"
+msgstr ""
+
+#: part/kugar_about.h:33
+msgid "(c) 1999-2006, The Kugar Team"
+msgstr ""
+
+#: kudesigner/kudesigner_aboutdata.h:40 part/kugar_about.h:36
+#, fuzzy
+msgid "Maintainer, Report Designer, Kugar library enhancements"
+msgstr ""
+"Cynhaliwr Cyfredol, Dylunydd Adroddiadau, Gwelliannau Cyffredinol, Trwsio Namau"
+
+#: part/kugar_about.h:39
+msgid "Smaller fixes and Kexi integration"
+msgstr ""
+
+#: part/kugar_about.h:42
+msgid "Direct database support"
+msgstr ""
+
+#: part/kugar_about.h:45
+msgid "Former maintainer"
+msgstr ""
+
+#: part/kugar_about.h:48
+#, fuzzy
+msgid "Original author of Metaphrast"
+msgstr "Awdur Gwreiddiol"
+
+#: _translatorinfo.cpp:1 kudesigner/kudesigner_aboutdata.h:51
+#: part/kugar_about.h:50
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "KD wrth KGyfieithu"
+
+#: _translatorinfo.cpp:3 kudesigner/kudesigner_aboutdata.h:52
+#: part/kugar_about.h:50
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "kyfieithu@dotmon.com"
+
+#: kudesigner/kudesigner_aboutdata.h:27
+msgid "GUI report template designer for Kugar report engine"
+msgstr ""
+
+#: kudesigner/kudesigner_aboutdata.h:36
+#, fuzzy
+msgid "Kugar Report Designer"
+msgstr "Dylunudd Kugar"
+
+#: kudesigner/kudesigner_aboutdata.h:44
+msgid "Major bugfixes, additional features and Kexi integration"
+msgstr ""
+
+#: kudesigner/kudesigner_aboutdata.h:48
+msgid "Fast property editing for report items"
+msgstr ""
+
 #. i18n: file kudesigner/kudesignerui.rc line 16
 #: rc.cpp:9
 #, no-c-format
@@ -564,30 +733,6 @@ msgstr "Adrannau"
 #, no-c-format
 msgid "Items"
 msgstr "Eitemau"
-
-#: _translatorinfo.cpp:1
-msgid ""
-"_: NAME OF TRANSLATORS\n"
-"Your names"
-msgstr "KD wrth KGyfieithu"
-
-#: _translatorinfo.cpp:3
-msgid ""
-"_: EMAIL OF TRANSLATORS\n"
-"Your emails"
-msgstr "kyfieithu@dotmon.com"
-
-#~ msgid "Add Detail Header"
-#~ msgstr "Ychwanegu Penawd Manylder "
-
-#~ msgid "Enter detail level:"
-#~ msgstr "Rhowch y lefel manylder:"
-
-#~ msgid "Add Detail"
-#~ msgstr "Ychwanegu Manylder"
-
-#~ msgid "Add Detail Footer"
-#~ msgstr "Ychwanegu Troedyn Manylder"
 
 #~ msgid "Insert Label"
 #~ msgstr "Mewnosod Label"
@@ -628,11 +773,6 @@ msgstr "kyfieithu@dotmon.com"
 #~ "_: candefs\n"
 #~ "Insert Line"
 #~ msgstr "Mewnosod Llinell"
-
-#~ msgid ""
-#~ "_: candefs\n"
-#~ "Insert Report Item"
-#~ msgstr "Mewnosod Eitem Adroddiad"
 
 #~ msgid "Detail height"
 #~ msgstr "Uchder y manylder"
@@ -709,30 +849,6 @@ msgstr "kyfieithu@dotmon.com"
 #~ msgid "Field type to display"
 #~ msgstr "Math o faes i ddangos"
 
-#~ msgid "Insert Detail Footer Section"
-#~ msgstr "Mewnosod Adran y Troedyn Manylder"
-
-#~ msgid "Insert Detail Section"
-#~ msgstr "Mewnosod Adran Manylder"
-
-#~ msgid "Insert Detail Header Section"
-#~ msgstr "Mewnosod Adran Pennawd Manylder"
-
-#~ msgid "Insert Page Footer Section"
-#~ msgstr "Mewnosod Adran Troedyn Tudalen"
-
-#~ msgid "Insert Page Header Section"
-#~ msgstr "Mewnosod Adran Pennawd Tudalen"
-
-#~ msgid "Insert Report Footer Section"
-#~ msgstr "Mewnosod Adran Troedyn Adroddiad"
-
-#~ msgid "Insert Report Header Section"
-#~ msgstr "Mewnosod Adran Troedyn Adroddiad"
-
-#~ msgid "Delete Report Item(s)"
-#~ msgstr "Dileu Eitem(au) Adroddiad"
-
 #~ msgid "Custom..."
 #~ msgstr "Addasiedig..."
 
@@ -751,9 +867,6 @@ msgstr "kyfieithu@dotmon.com"
 #~ msgid "Property"
 #~ msgstr "Priodwedd"
 
-#~ msgid "Kugar"
-#~ msgstr "Kugar"
-
 #~ msgid "A template driven report viewer for XML data."
 #~ msgstr "Gwelydd adroddiad a seilir ar batrymlun ar gyfer data XML"
 
@@ -764,14 +877,8 @@ msgstr "kyfieithu@dotmon.com"
 #~ "Mae Kugar yn cyfuno ffeiliau data XML gyda patrymluniau\n"
 #~ " XML i ddangos ac argraffu adroddiadau o ansawdd uchel."
 
-#~ msgid "Current maintainer, Report Designer, General Enhancements, Bugfixes"
-#~ msgstr "Cynhaliwr Cyfredol, Dylunydd Adroddiadau, Gwelliannau Cyffredinol, Trwsio Namau"
-
 #~ msgid "Former maintainer, Shell, Konqueror Part"
 #~ msgstr "Cyn-gynhaliwr, Plisgyn, Rhan Konqueror"
-
-#~ msgid "Original author"
-#~ msgstr "Awdur Gwreiddiol"
 
 #~ msgid "The XML data file"
 #~ msgstr "Y ffeil data XML"
@@ -781,9 +888,6 @@ msgstr "kyfieithu@dotmon.com"
 
 #~ msgid "&Go"
 #~ msgstr "&Ewch"
-
-#~ msgid "Kugar Designer"
-#~ msgstr "Dylunudd Kugar"
 
 #~ msgid "Ok"
 #~ msgstr "Iawn"
