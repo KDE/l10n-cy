@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-2/kst.po\n"
-"POT-Creation-Date: 2006-10-18 08:38+0200\n"
+"POT-Creation-Date: 2006-11-24 08:42+0100\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -27,26 +27,46 @@ msgstr ""
 msgid "PSD: %1"
 msgstr ""
 
-#: kstpsd.cpp:470
+#: kstpsd.cpp:475
 msgid "ASD \\[%1/%2^{1/2} \\]"
 msgstr ""
 
-#: kstpsd.cpp:473
+#: kstpsd.cpp:478
 #, fuzzy
 msgid "PSD \\[%1^2/%2\\]"
 msgstr "Cromlin"
 
-#: kstpsd.cpp:476
+#: kstpsd.cpp:481
 msgid "Amplitude Spectrum\\[%1\\]"
 msgstr ""
 
-#: kstpsd.cpp:479
+#: kstpsd.cpp:484
 msgid "Power Spectrum \\[%1^2\\]"
 msgstr ""
 
-#: kstpsd.cpp:482
+#: kstpsd.cpp:487
 msgid "Frequency \\[%1\\]"
 msgstr ""
+
+#: kstbasicplugin.cpp:214
+msgid "There is an error in the %1 algorithm."
+msgstr ""
+
+#: kstbasicplugin.cpp:277 kstcplugin.cpp:647
+msgid "%1-%2"
+msgstr ""
+
+#: kstbasicplugin.cpp:298 kstcplugin.cpp:430
+#, fuzzy
+msgid "%1: %2"
+msgstr "%1 %2"
+
+#: kstbasicplugin.cpp:311 kstcplugin.cpp:443
+#, fuzzy
+msgid ""
+"\n"
+"%1: %2"
+msgstr "%1 %2"
 
 #: kstcsd.cpp:120
 msgid "Cumulative Spectral Decay"
@@ -73,19 +93,19 @@ msgstr ""
 msgid "CSD: %1"
 msgstr "Cromlin"
 
-#: kstcsd.cpp:416
+#: kstcsd.cpp:421
 msgid "ASD [%1/%2^{1/2}]"
 msgstr ""
 
-#: kstcsd.cpp:419
+#: kstcsd.cpp:424
 msgid "PSD [%1^2/%2]"
 msgstr ""
 
-#: kstcsd.cpp:422
+#: kstcsd.cpp:427
 msgid "Amplitude Spectrum [%1]"
 msgstr ""
 
-#: kstcsd.cpp:425
+#: kstcsd.cpp:430
 msgid "Power Spectrum [%1^2]"
 msgstr ""
 
@@ -121,66 +141,6 @@ msgstr ""
 #, c-format
 msgid "Histogram: %1"
 msgstr "Histogram : %1"
-
-#: kstplugin.cpp:91
-msgid "Unable to load plugin %1 for \"%2\"."
-msgstr ""
-
-#: kstplugin.cpp:163
-msgid "Plugin"
-msgstr "Ategyn"
-
-#: kstplugin.cpp:290
-msgid "Input vector [%1] for plugin %2 not found.  Unable to continue."
-msgstr ""
-
-#: kstplugin.cpp:324
-msgid "Output vector [%1] for plugin %2 not found.  Unable to continue."
-msgstr ""
-
-#: kstplugin.cpp:395
-msgid "Plugin %1 produced error: %2."
-msgstr ""
-
-#: kstplugin.cpp:405
-msgid "Generic Error"
-msgstr ""
-
-#: kstplugin.cpp:408
-msgid "Input Error"
-msgstr ""
-
-#: kstplugin.cpp:411
-msgid "Memory Error"
-msgstr ""
-
-#: kstplugin.cpp:414
-msgid "Unknown Error"
-msgstr "Gwall Anhysbys"
-
-#: kstplugin.cpp:419
-msgid "Plugin %2 produced error: %1."
-msgstr ""
-
-#: kstplugin.cpp:435
-#, fuzzy
-msgid "%1: %2"
-msgstr "%1 %2"
-
-#: kstplugin.cpp:448
-#, fuzzy
-msgid ""
-"\n"
-"%1: %2"
-msgstr "%1 %2"
-
-#: kstplugin.cpp:525
-msgid "Invalid plugin."
-msgstr ""
-
-#: kstplugin.cpp:654
-msgid "%1-%2"
-msgstr ""
 
 #: kstvcurve.cpp:194
 msgid "Curve"
@@ -426,29 +386,87 @@ msgstr ""
 msgid "Detected disappearance of '%1'."
 msgstr ""
 
-#: kstdataobject.cpp:115
+#: kstcplugin.cpp:90
+msgid "Unable to load plugin %1 for \"%2\"."
+msgstr ""
+
+#: kstcplugin.cpp:162
+msgid "Plugin"
+msgstr "Ategyn"
+
+#: kstcplugin.cpp:289
+msgid "Input vector [%1] for plugin %2 not found.  Unable to continue."
+msgstr ""
+
+#: kstcplugin.cpp:323
+msgid "Output vector [%1] for plugin %2 not found.  Unable to continue."
+msgstr ""
+
+#: kstcplugin.cpp:394
+msgid "Plugin %1 produced error: %2."
+msgstr ""
+
+#: kstcplugin.cpp:404
+msgid "Generic Error"
+msgstr ""
+
+#: kstcplugin.cpp:407
+msgid "Input Error"
+msgstr ""
+
+#: kstcplugin.cpp:410
+msgid "Memory Error"
+msgstr ""
+
+#: kstcplugin.cpp:413
+msgid "Unknown Error"
+msgstr "Gwall Anhysbys"
+
+#: kstcplugin.cpp:418
+msgid "Plugin %2 produced error: %1."
+msgstr ""
+
+#: kstcplugin.cpp:513
+msgid "Invalid plugin."
+msgstr ""
+
+#: kstdataobject.cpp:119
+#, c-format
+msgid "Loaded data-object plugin %1."
+msgstr ""
+
+#: kstdataobject.cpp:122
+#, c-format
+msgid "Could't load data-object plugin %1."
+msgstr ""
+
+#: kstdataobject.cpp:131
+msgid "Scanning for data-object plugins."
+msgstr ""
+
+#: kstdataobject.cpp:205
 msgid "Unable to find required vector [%1] for data object %2."
 msgstr ""
 
-#: kstdataobject.cpp:127
+#: kstdataobject.cpp:217
 msgid "Unable to find required scalar [%1] for data object %2."
 msgstr ""
 
-#: kstdataobject.cpp:139
+#: kstdataobject.cpp:229
 msgid "Unable to find required string [%1] for data object %2."
 msgstr ""
 
-#: kstdataobject.cpp:151
+#: kstdataobject.cpp:241
 msgid "Unable to find required matrix [%1] for data object %2."
 msgstr ""
 
-#: kstdataobject.cpp:272
+#: kstdataobject.cpp:365
 msgid ""
 "(%1) KstDataObject::readLock() by tid=%2: read locking output %3 (not provider) "
 "-- this is probably an error. Please email kst@kde.org with details."
 msgstr ""
 
-#: kstdataobject.cpp:352
+#: kstdataobject.cpp:445
 msgid ""
 "(%1) KstDataObject::writeLock() by tid=%2: write locking output %3 (not "
 "provider) -- this is probably an error. Please email kst@kde.org with details."
