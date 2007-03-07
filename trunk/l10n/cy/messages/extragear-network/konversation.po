@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-2/konversation.po\n"
-"POT-Creation-Date: 2007-03-05 09:43+0100\n"
+"POT-Creation-Date: 2007-03-06 09:11+0100\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -200,7 +200,7 @@ msgstr ""
 #: src/channel.cpp:552 src/ircview.cpp:1416 src/ircview.cpp:1474
 #: src/konvisettingsdialog.cpp:156 src/konvisettingsdialog.cpp:157
 #: src/nicklistview.cpp:83 src/outputfilter.cpp:1273 src/outputfilter.cpp:1345
-#: src/query.cpp:82 src/query.cpp:348 src/server.cpp:2994
+#: src/query.cpp:82 src/query.cpp:348 src/server.cpp:2999
 #: src/warnings_preferences.cpp:114
 msgid "Ignore"
 msgstr "Anwybyddu"
@@ -343,10 +343,10 @@ msgstr ""
 #: rc.cpp:119 src/dccchat.cpp:167 src/dccchat.cpp:179 src/dccchat.cpp:218
 #: src/dccchat.cpp:352 src/dccchat.cpp:357 src/ignorelistviewitem.cpp:46
 #: src/inputfilter.cpp:301 src/konvisettingsdialog.cpp:169
-#: src/konvisettingsdialog.cpp:170 src/server.cpp:1839 src/server.cpp:1874
-#: src/server.cpp:1923 src/server.cpp:1955 src/server.cpp:1982
-#: src/server.cpp:1985 src/server.cpp:1992 src/server.cpp:1995
-#: src/server.cpp:2005 src/server.cpp:2012
+#: src/konvisettingsdialog.cpp:170 src/server.cpp:1844 src/server.cpp:1879
+#: src/server.cpp:1928 src/server.cpp:1960 src/server.cpp:1987
+#: src/server.cpp:1990 src/server.cpp:1997 src/server.cpp:2000
+#: src/server.cpp:2010 src/server.cpp:2017
 #, no-c-format
 msgid "DCC"
 msgstr ""
@@ -950,8 +950,8 @@ msgstr ""
 msgid "Konversation Bookmarks Editor"
 msgstr ""
 
-#: src/konversationapplication.cpp:272 src/server.cpp:1397 src/server.cpp:3003
-#: src/server.cpp:3008
+#: src/konversationapplication.cpp:272 src/server.cpp:1397 src/server.cpp:3008
+#: src/server.cpp:3013
 msgid "DCOP"
 msgstr "DCOP:"
 
@@ -1026,13 +1026,13 @@ msgstr "Sianeli"
 msgid "MOTD"
 msgstr ""
 
-#: src/ircview.cpp:993 src/outputfilter.cpp:1047 src/server.cpp:2372
-#: src/server.cpp:2392
+#: src/ircview.cpp:993 src/outputfilter.cpp:1047 src/server.cpp:2377
+#: src/server.cpp:2397
 msgid "Notify"
 msgstr ""
 
 #: src/channel.cpp:1113 src/channel.cpp:1125 src/ircview.cpp:1015
-#: src/server.cpp:2993
+#: src/server.cpp:2998
 msgid "Join"
 msgstr "Uniad"
 
@@ -1229,7 +1229,7 @@ msgid "Clear the contents of all open tabs"
 msgstr ""
 
 #: src/konversationmainwindow.cpp:245 src/konversationmainwindow.cpp:530
-#: src/server.cpp:3059
+#: src/server.cpp:3064
 msgid "Set &Away Globally"
 msgstr ""
 
@@ -2395,11 +2395,11 @@ msgstr ""
 msgid "%1 has started a conversation (query) with you."
 msgstr ""
 
-#: src/notificationhandler.cpp:284 src/server.cpp:2373
+#: src/notificationhandler.cpp:284 src/server.cpp:2378
 msgid "%1 is online (%2)."
 msgstr ""
 
-#: src/notificationhandler.cpp:300 src/server.cpp:2392
+#: src/notificationhandler.cpp:300 src/server.cpp:2397
 msgid "%1 went offline (%2)."
 msgstr ""
 
@@ -2489,30 +2489,30 @@ msgstr ""
 msgid "The server address is required."
 msgstr ""
 
-#: src/dcctransfersend.cpp:89
+#: src/dcctransfersend.cpp:129
 msgid "The admin has restricted the right to send files"
 msgstr ""
 
-#: src/dcctransfersend.cpp:99
+#: src/dcctransfersend.cpp:159
 msgid "The url \"%1\" does not exist"
 msgstr ""
 
-#: src/dcctransfersend.cpp:107
+#: src/dcctransfersend.cpp:167
 msgid "Could not retrieve \"%1\""
 msgstr ""
 
-#: src/dcctransfersend.cpp:116
+#: src/dcctransfersend.cpp:176
 msgid "Enter Filename"
 msgstr ""
 
-#: src/dcctransfersend.cpp:116
+#: src/dcctransfersend.cpp:176
 msgid ""
 "<qt>The file that you are sending to <i>%1</i> does not have a filename."
 "<br>Please enter a filename to be presented to the receiver, or cancel the dcc "
 "transfer</qt>"
 msgstr ""
 
-#: src/dcctransfersend.cpp:120
+#: src/dcctransfersend.cpp:180
 msgid "No filename was given"
 msgstr ""
 
@@ -2587,30 +2587,40 @@ msgstr ""
 msgid "Unknown error. Code %1"
 msgstr ""
 
-#: src/dcctransferdetailedinfopanel.cpp:61
+#: src/dcctransferdetailedinfopanel.cpp:64
 #, fuzzy
 msgid "DCC Send"
 msgstr "Anfon"
 
-#: src/dcctransferdetailedinfopanel.cpp:61
+#: src/dcctransferdetailedinfopanel.cpp:64
 #, fuzzy
 msgid "DCC Receive"
 msgstr "Derbynnydd :"
 
-#: src/dcctransferdetailedinfopanel.cpp:78
-msgid "%1 %2 (port %3)"
+#: src/dcctransferdetailedinfopanel.cpp:77
+#, fuzzy
+msgid "%1 on %2"
+msgstr "<anhysbys> %1"
+
+#: src/dcctransferdetailedinfopanel.cpp:79
+#, fuzzy
+msgid "unknown server"
+msgstr "gwall anhysbys"
+
+#: src/dcctransferdetailedinfopanel.cpp:82
+msgid ", %1 (port %2)"
 msgstr ""
 
-#: src/dcctransferdetailedinfopanel.cpp:84
+#: src/dcctransferdetailedinfopanel.cpp:89
 msgid "%1 (port %2)"
 msgstr ""
 
-#: src/dcctransferdetailedinfopanel.cpp:109
+#: src/dcctransferdetailedinfopanel.cpp:114
 #, c-format
 msgid "Yes, %1"
 msgstr ""
 
-#: src/dcctransferdetailedinfopanel.cpp:122
+#: src/dcctransferdetailedinfopanel.cpp:127
 #, fuzzy
 msgid "< 1sec"
 msgstr "eil"
@@ -2755,108 +2765,108 @@ msgstr ""
 msgid "Select File(s) to Send to %1"
 msgstr ""
 
-#: src/server.cpp:1840
+#: src/server.cpp:1845
 msgid "Asking %1 to accept upload of \"%2\" (%3)..."
 msgstr ""
 
-#: src/server.cpp:1843 src/server.cpp:1878 src/server.cpp:1929
-#: src/server.cpp:1961 src/server.cpp:2015
+#: src/server.cpp:1848 src/server.cpp:1883 src/server.cpp:1934
+#: src/server.cpp:1966 src/server.cpp:2020
 #, fuzzy
 msgid "unknown size"
 msgstr "anhysbys"
 
-#: src/server.cpp:1875
+#: src/server.cpp:1880
 msgid "%1 offers to send you \"%2\" (%3)..."
 msgstr ""
 
-#: src/server.cpp:1925
+#: src/server.cpp:1930
 msgid ""
 "_: %1 = file name, %2 = nickname of sender, %3 = percentage of file size, %4 = "
 "file size\n"
 "Resuming download of \"%1\" from %2 starting at %3% of %4..."
 msgstr ""
 
-#: src/server.cpp:1934
+#: src/server.cpp:1939
 #, c-format
 msgid "No DCC download running on port %1."
 msgstr ""
 
-#: src/server.cpp:1957
+#: src/server.cpp:1962
 msgid ""
 "_: %1 = file name, %2 = nickname of recipient, %3 = percentage of file size, %4 "
 "= file size\n"
 "Resuming upload of \"%1\" to %2 starting at %3% of %4..."
 msgstr ""
 
-#: src/server.cpp:1970
+#: src/server.cpp:1975
 msgid ""
 "_: %1 = file name, %2 = nickname\n"
 "Received invalid resume request for \"%1\" from %2."
 msgstr ""
 
-#: src/server.cpp:1975
+#: src/server.cpp:1980
 #, c-format
 msgid "No DCC upload running on port %1."
 msgstr ""
 
-#: src/server.cpp:1983
+#: src/server.cpp:1988
 msgid ""
 "_: %1 = file name, %2 = nickname of sender\n"
 "Download of \"%1\" from %2 finished."
 msgstr ""
 
-#: src/server.cpp:1986
+#: src/server.cpp:1991
 msgid ""
 "_: %1 = file name, %2 = nickname of sender\n"
 "Download of \"%1\" from %2 failed. Reason: %3."
 msgstr ""
 
-#: src/server.cpp:1993
+#: src/server.cpp:1998
 msgid ""
 "_: %1 = file name, %2 = nickname of recipient\n"
 "Upload of \"%1\" to %2 finished."
 msgstr ""
 
-#: src/server.cpp:1996
+#: src/server.cpp:2001
 msgid ""
 "_: %1 = file name, %2 = nickname of recipient\n"
 "Upload of \"%1\" to %2 failed. Reason: %3."
 msgstr ""
 
-#: src/server.cpp:2006
+#: src/server.cpp:2011
 msgid ""
 "_: %1 = file name, %2 nickname of recipient\n"
 "Sending \"%1\" to %2..."
 msgstr ""
 
-#: src/server.cpp:2013
+#: src/server.cpp:2018
 msgid ""
 "_: %1 = file name, %2 = file size, %3 = nickname of sender\n"
 "Downloading \"%1\" (%2) from %3..."
 msgstr ""
 
-#: src/server.cpp:2990
+#: src/server.cpp:2995
 msgid ""
 "You were invited by %1 to join channel %2. Do you accept the invitation?"
 msgstr ""
 
-#: src/server.cpp:2992
+#: src/server.cpp:2997
 msgid "Invitation"
 msgstr ""
 
-#: src/server.cpp:3003
+#: src/server.cpp:3008
 msgid "Error: Could not find script \"%1\"."
 msgstr ""
 
-#: src/server.cpp:3008
+#: src/server.cpp:3013
 msgid "Error: Could not execute script \"%1\". Check file permissions."
 msgstr ""
 
-#: src/server.cpp:3035
+#: src/server.cpp:3040
 msgid "Set &Available Globally"
 msgstr ""
 
-#: src/nicksonline.cpp:52 src/viewcontainer.cpp:2355
+#: src/nicksonline.cpp:52 src/viewcontainer.cpp:2342
 msgid "Watched Nicks Online"
 msgstr ""
 
@@ -3047,8 +3057,8 @@ msgstr ""
 msgid "Warning on quitting Konversation"
 msgstr ""
 
-#: src/channellistpanel.cpp:45 src/viewcontainer.cpp:2295
-#: src/viewcontainer.cpp:2345
+#: src/channellistpanel.cpp:45 src/viewcontainer.cpp:2282
+#: src/viewcontainer.cpp:2332
 msgid "Channel List"
 msgstr ""
 
@@ -3439,7 +3449,7 @@ msgstr "S&ianel:"
 msgid "The channel name is required."
 msgstr ""
 
-#: src/rawlog.cpp:27 src/viewcontainer.cpp:2082
+#: src/rawlog.cpp:27 src/viewcontainer.cpp:2069
 msgid "Raw Log"
 msgstr ""
 
@@ -3480,23 +3490,22 @@ msgstr ""
 msgid "Logfile of %1"
 msgstr ""
 
-#: src/dcctransferpanel.cpp:46 src/viewcontainer.cpp:1976
-#: src/viewcontainer.cpp:1986
+#: src/dcctransferpanel.cpp:46 src/viewcontainer.cpp:1974
 msgid "DCC Status"
 msgstr ""
 
-#: src/viewcontainer.cpp:2321
+#: src/viewcontainer.cpp:2308
 msgid ""
 "Using this function may result in a lot of network traffic. If your connection "
 "is not fast enough, it is possible that your client will be disconnected by the "
 "server."
 msgstr ""
 
-#: src/viewcontainer.cpp:2324
+#: src/viewcontainer.cpp:2311
 msgid "Channel List Warning"
 msgstr ""
 
-#: src/viewcontainer.cpp:2341
+#: src/viewcontainer.cpp:2328
 msgid ""
 "The channel list can only be opened from a query, channel or status window to "
 "find out, which server this list belongs to."
@@ -6861,10 +6870,6 @@ msgstr " Gweinydd:"
 #~ msgid "Alt+X"
 #~ msgstr "Alt+4"
 
-#, fuzzy
-#~ msgid "%1 unknown %2"
-#~ msgstr "<anhysbys> %1"
-
 #~ msgid "Queries"
 #~ msgstr "Ymholiadau"
 
@@ -7056,9 +7061,6 @@ msgstr " Gweinydd:"
 
 #~ msgid "requested socket type not supported"
 #~ msgstr "ni chynhelir y math penodol o soced"
-
-#~ msgid "unknown error"
-#~ msgstr "gwall anhysbys"
 
 #~ msgid "system error: %1"
 #~ msgstr "gwall cysawd : %1"
