@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kioexec\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2006-04-15 09:22+0200\n"
+"POT-Creation-Date: 2007-03-14 07:00+0100\n"
 "PO-Revision-Date: 2003-11-20 20:13+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -15,16 +15,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "KD drwy KGyfieithu"
-
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "kyfieithu@dotmon.com"
 
 #: main.cpp:46
 msgid "KIO Exec - Opens remote files, watches modifications, asks for upload"
@@ -35,69 +25,91 @@ msgid "Treat URLs as local files and delete them afterwards"
 msgstr "Trin URLau fel ffeiliau lleol a'u dileu wedyn"
 
 #: main.cpp:51
+msgid "Suggested file name for the downloaded file"
+msgstr ""
+
+#: main.cpp:52
 msgid "Command to execute"
 msgstr "Gorchymyn i Weithredu"
 
-#: main.cpp:52
+#: main.cpp:53
 msgid "URL(s) or local file(s) used for 'command'"
 msgstr "URL(au) neu ffeil(iau) lleol i'w defnyddio fel 'gorchymyn'"
 
-#: main.cpp:61
+#: main.cpp:62
 msgid "'command' expected.\n"
 msgstr "'gorchymyn' a ddisgwylir.\n"
 
-#: main.cpp:218 main.cpp:225
+#: main.cpp:91
+#, qt-format
+msgid ""
+"The URL %1\n"
+"is malformed"
+msgstr ""
+"Mae'r URL %1\n"
+"wedi'i gam-fformatio"
+
+#: main.cpp:93
+#, qt-format
+msgid ""
+"Remote URL %1\n"
+"not allowed with --tempfiles switch"
+msgstr ""
+"Ni chaniateir URL pell %1\n"
+"efo'r cymal --tempfiles"
+
+#: main.cpp:222
+#, qt-format
+msgid ""
+"The supposedly temporary file\n"
+"%1\n"
+"has been modified.\n"
+"Do you still want to delete it?"
+msgstr ""
+"Mae'r ffeil\n"
+"%1\n"
+"(oedd i fod dros dro) wedi ei newid. \n"
+"Ydych eisiau ei dileu?"
+
+#: main.cpp:223 main.cpp:230
 msgid "File Changed"
 msgstr "Newidwyd y ffeil."
 
-#: main.cpp:218
+#: main.cpp:223
 msgid "Do Not Delete"
 msgstr ""
 
-#: main.cpp:225
+#: main.cpp:229
+#, qt-format
+msgid ""
+"The file\n"
+"%1\n"
+"has been modified.\n"
+"Do you want to upload the changes?"
+msgstr ""
+"Mae'r ffeil\n"
+"%1\n"
+"wedi ei newid. \n"
+"Ydych eisiau lanlwytho'r newidiadau?"
+
+#: main.cpp:230
 msgid "Upload"
 msgstr "Lanlwytho"
 
-#: main.cpp:225
+#: main.cpp:230
 msgid "Do Not Upload"
 msgstr ""
 
-#: main.cpp:251
+#: main.cpp:253
 msgid "KIOExec"
 msgstr "KIOExec"
 
-#~ msgid ""
-#~ "The URL %1\n"
-#~ "is malformed"
-#~ msgstr ""
-#~ "Mae'r URL %1\n"
-#~ "wedi'i gam-fformatio"
+#: rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "KD drwy KGyfieithu"
 
-#~ msgid ""
-#~ "Remote URL %1\n"
-#~ "not allowed with --tempfiles switch"
-#~ msgstr ""
-#~ "Ni chaniateir URL pell %1\n"
-#~ "efo'r cymal --tempfiles"
-
-#~ msgid ""
-#~ "The supposedly temporary file\n"
-#~ "%1\n"
-#~ "has been modified.\n"
-#~ "Do you still want to delete it?"
-#~ msgstr ""
-#~ "Mae'r ffeil\n"
-#~ "%1\n"
-#~ "(oedd i fod dros dro) wedi ei newid. \n"
-#~ "Ydych eisiau ei dileu?"
-
-#~ msgid ""
-#~ "The file\n"
-#~ "%1\n"
-#~ "has been modified.\n"
-#~ "Do you want to upload the changes?"
-#~ msgstr ""
-#~ "Mae'r ffeil\n"
-#~ "%1\n"
-#~ "wedi ei newid. \n"
-#~ "Ydych eisiau lanlwytho'r newidiadau?"
+#: rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kyfieithu@dotmon.com"
