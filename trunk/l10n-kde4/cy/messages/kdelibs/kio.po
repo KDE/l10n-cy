@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-03-31 21:43+0200\n"
+"POT-Creation-Date: 2007-04-01 05:35+0200\n"
 "PO-Revision-Date: 2004-01-16 09:20+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -3154,9 +3154,9 @@ msgstr "Lleoliad:"
 #: kfile/kurlrequesterdialog.cpp:120 kfile/kicondialog.cpp:563
 #: kfile/kencodingfiledialog.cpp:101 kfile/kencodingfiledialog.cpp:119
 #: kfile/kencodingfiledialog.cpp:134 kfile/kencodingfiledialog.cpp:152
-#: kfile/kfiledialog.cpp:1287 kfile/kfiledialog.cpp:1311
-#: kfile/kfiledialog.cpp:1327 kfile/kfiledialog.cpp:1341
-#: kfile/kfiledialog.cpp:1357 kfile/kfiledialog.cpp:1397
+#: kfile/kfiledialog.cpp:211 kfile/kfiledialog.cpp:235
+#: kfile/kfiledialog.cpp:251 kfile/kfiledialog.cpp:265
+#: kfile/kfiledialog.cpp:281 kfile/kfiledialog.cpp:321
 #, fuzzy
 msgid "Open"
 msgstr "&Agor"
@@ -3181,7 +3181,7 @@ msgstr "Dogfennau"
 msgid "Your personal documents folder"
 msgstr ""
 
-#: kfile/kfilespeedbar.cpp:60 kfile/kdiroperator.cpp:1274
+#: kfile/kfilespeedbar.cpp:60 kfile/kdiroperator.cpp:1275
 msgid "Home Folder"
 msgstr "Plygell Cartref"
 
@@ -3218,7 +3218,7 @@ msgstr ""
 msgid "Menu Editor"
 msgstr "Golygydd Dewislen"
 
-#: kfile/kcustommenueditor.cpp:99 kfile/kdiroperator.cpp:1263
+#: kfile/kcustommenueditor.cpp:99 kfile/kdiroperator.cpp:1264
 msgid "Menu"
 msgstr "Dewislen"
 
@@ -3241,8 +3241,8 @@ msgstr "Symud i Fyny"
 msgid "Move Down"
 msgstr "Symud i Lawr"
 
-#: kfile/k3filedetailview.cpp:63 kfile/kdiroperator.cpp:922
-#: kfile/kdiroperator.cpp:1345
+#: kfile/k3filedetailview.cpp:63 kfile/kdiroperator.cpp:923
+#: kfile/kdiroperator.cpp:1346
 msgid "Detailed View"
 msgstr "Golwg Manwl"
 
@@ -3250,7 +3250,7 @@ msgstr "Golwg Manwl"
 msgid "Date"
 msgstr "Dyddiad"
 
-#: kfile/kfilefiltercombo.cpp:33 kfile/kfiledialog.cpp:1652
+#: kfile/kfilefiltercombo.cpp:33 kfile/kfilewidget.cpp:1432
 msgid "*|All Files"
 msgstr "*|Pob Ffeil"
 
@@ -3358,6 +3358,291 @@ msgstr "Rhagweld"
 msgid "No preview available."
 msgstr "Dim rhagolwg ar gael."
 
+#: kfile/kfilewidget.cpp:184
+msgid ""
+"<p>While typing in the text area, you may be presented with possible "
+"matches. This feature can be controlled by clicking with the right mouse "
+"button and selecting a preferred mode from the <b>Text Completion</b> menu."
+msgstr ""
+"<p>Wrth deipio yn yr ardal testun, cyflwynir cydweddiadau posib.  Rheolir y "
+"nodwedd yma drwy glicio efo botwm de y llygoden, a dewis modd amgen oddiar y "
+"ddewislen <b>Cwblhau Testun</b>"
+
+#: kfile/kfilewidget.cpp:223
+#, fuzzy
+msgid "Current location"
+msgstr "Gweith&rediadau cyfredol:"
+
+#: kfile/kfilewidget.cpp:224
+#, fuzzy
+msgid ""
+"This is the currently listed location. The drop-down list also lists "
+"commonly used locations. This includes standard locations, such as your home "
+"folder, as well as locations that have been visited recently."
+msgstr ""
+"Rhestrir yma lleoliadau aml eu defnyddio.  Mae hynny yn cynnwys lleoliadau "
+"safonol, fel eich plygell cartref, ac hefyd lleoliadau sydd wedi cael eu "
+"ymweld yn ddiweddar."
+
+#: kfile/kfilewidget.cpp:234
+#, fuzzy, qt-format
+msgid "Drive: %1"
+msgstr "maint : %1"
+
+#: kfile/kfilewidget.cpp:241
+#, qt-format
+msgid "Root Folder: %1"
+msgstr "Plygell Gwraidd: %1"
+
+#: kfile/kfilewidget.cpp:248
+#, qt-format
+msgid "Home Folder: %1"
+msgstr "Plygell Cartref: %1"
+
+#: kfile/kfilewidget.cpp:257
+#, qt-format
+msgid "Documents: %1"
+msgstr "Dogfennau: %1"
+
+#: kfile/kfilewidget.cpp:264
+#, qt-format
+msgid "Desktop: %1"
+msgstr "Penbwrdd: %1"
+
+#: kfile/kfilewidget.cpp:306
+#, qt-format
+msgid ""
+"<qt>Click this button to enter the parent folder.<p>For instance, if the "
+"current location is file:/home/%1 clicking this button will take you to "
+"file:/home.</qt>"
+msgstr ""
+"<qt>Cliciwch y botwm yma i fynd i mewn i'r plygell rhiant.<p> Er enghraifft, "
+"os file:/home/%1 yw'r lleoliad cyfredol, bydd clicio'r botwm yma yn mynd â "
+"chi i file:/home.</qt>"
+
+#: kfile/kfilewidget.cpp:310
+msgid "Click this button to move backwards one step in the browsing history."
+msgstr "Cliciwch y botwm yma i symud un cam yn ôl yn yr hanes pori."
+
+#: kfile/kfilewidget.cpp:312
+msgid "Click this button to move forward one step in the browsing history."
+msgstr "Cliciwch y botwm yma i symud un cam ymlaen yn yr hanes pori."
+
+#: kfile/kfilewidget.cpp:314
+msgid "Click this button to reload the contents of the current location."
+msgstr "Cliciwch y botwm yma i ail-lwytho cynnwys y lleoliad cyfredol."
+
+#: kfile/kfilewidget.cpp:317
+msgid "Click this button to create a new folder."
+msgstr "Cliciwch y botwm yma i greu plygell newydd."
+
+#: kfile/kfilewidget.cpp:320
+msgid "Show Quick Access Navigation Panel"
+msgstr "Dangos Panel Morlywio Cyrchu ar Frys"
+
+#: kfile/kfilewidget.cpp:323
+#, fuzzy
+msgid "Hide Quick Access Navigation Panel"
+msgstr "Dangos Panel Morlywio Cyrchu ar Frys"
+
+#: kfile/kfilewidget.cpp:328
+#, fuzzy
+msgid "Show Bookmarks"
+msgstr "Nodau tudalen"
+
+#: kfile/kfilewidget.cpp:330
+#, fuzzy
+msgid "Hide Bookmarks"
+msgstr "Nodau tudalen"
+
+#: kfile/kfilewidget.cpp:334
+#, fuzzy
+msgid "Configure"
+msgstr "&Mynd ymlaen"
+
+#: kfile/kfilewidget.cpp:336
+msgid ""
+"<qt>This is the configuration menu for the file dialog. Various options can "
+"be accessed from this menu including: <ul><li>how files are sorted in the "
+"list</li><li>types of view, including icon and list</li><li>showing of "
+"hidden files</li><li>the Quick Access navigation panel</li><li>file "
+"previews</li><li>separating folders from files</li></ul></qt>"
+msgstr ""
+"<qt>Hon yw'r ddewislen osodiadau i'r ymgom ffeil.  Cyrchir amryw dewisiad "
+"o'r ddewislen yma, yn cynnwys: <ul><li>sut y didolir ffeiliau yn y rhestr</"
+"li><li>mathau golwg, yn cynnwys eicon a rhestr</li><li>dangos ffeiliau cudd</"
+"li><li>y panel morlywio Cyrchu ar Frys</li><li>rhagolygon ffeil</"
+"li><li>gwahanu plygyll oddiwrth ffeiliau</li></ul></qt>"
+
+#: kfile/kfilewidget.cpp:387
+msgid "&Location:"
+msgstr "&Lleoliad:"
+
+#: kfile/kfilewidget.cpp:412
+msgid ""
+"<qt>This is the filter to apply to the file list. File names that do not "
+"match the filter will not be shown.<p>You may select from one of the preset "
+"filters in the drop down menu, or you may enter a custom filter directly "
+"into the text area.<p>Wildcards such as * and ? are allowed.</qt>"
+msgstr ""
+"<qt>Yr hidl i weithredu i'r rhestr ffeil. Ni ddangosir enwau ffeil sy ddim "
+"yn cydweddu efo'r hidl.<p>Gallwch ddewis un o'r hidlau rhagosodedig yn y "
+"cwymplen, neu gallwch mewnosod hidl addasu yn syth i mewn i'r ardal testun."
+"<p> Caniateir nod-chwilwyr fel * a ?. </qt>"
+
+#: kfile/kfilewidget.cpp:418
+msgid "&Filter:"
+msgstr "&Hidl:"
+
+#: kfile/kfilewidget.cpp:583
+#, fuzzy
+msgid "Please specify the filename to save to."
+msgstr "Penodwch enw'r ffeil i ddefnyddio wrth gadw."
+
+#: kfile/kfilewidget.cpp:585
+msgid "Please select the file to open."
+msgstr "Penodwch enw'r ffeil i agor."
+
+#: kfile/kfilewidget.cpp:642 kfile/kfilewidget.cpp:685
+#: kfile/kfilewidget.cpp:1377
+msgid "You can only select local files."
+msgstr "Gallwch ddewis 'mond ffeiliau lleol."
+
+#: kfile/kfilewidget.cpp:643 kfile/kfilewidget.cpp:686
+#: kfile/kfilewidget.cpp:1378
+#, fuzzy
+msgid "Remote Files Not Accepted"
+msgstr "Ni derbynnir Ffeiliau Pell"
+
+#: kfile/kfilewidget.cpp:677
+#, qt-format
+msgid ""
+"%1\n"
+"does not appear to be a valid URL.\n"
+msgstr ""
+"Ymddengys nad yw \n"
+" %1 \n"
+" yn URL dilys.\n"
+
+#: kfile/kfilewidget.cpp:677
+msgid "Invalid URL"
+msgstr "URL Annilys"
+
+#: kfile/kfilewidget.cpp:998
+msgid "This is the name to save the file as."
+msgstr " Yr enw i ddefnyddio wrth gadw'r ffeil."
+
+#: kfile/kfilewidget.cpp:1003
+msgid ""
+"This is the list of files to open. More than one file can be specified by "
+"listing several files, separated by spaces."
+msgstr ""
+"Y rhestr o ffeiliau i agor.  Gellir benodi mwy nac un ffeil drwy restru "
+"amryw ffeil, wedi eu gwahanu gan fylchau."
+
+#: kfile/kfilewidget.cpp:1010
+msgid "This is the name of the file to open."
+msgstr " Enw'r ffeil i agor."
+
+#: kfile/kfilewidget.cpp:1309
+#, fuzzy
+msgid ""
+"The chosen filenames do not\n"
+"appear to be valid."
+msgstr ""
+"Ymddengys nad ydy \n"
+" enwau'r ffeiliau a ddewiswyd yn ddilys."
+
+#: kfile/kfilewidget.cpp:1311
+msgid "Invalid Filenames"
+msgstr "Enwau Ffeil Annilys"
+
+#: kfile/kfilewidget.cpp:1340
+#, fuzzy, qt-format
+msgid ""
+"The requested filenames\n"
+"%1\n"
+"do not appear to be valid;\n"
+"make sure every filename is enclosed in double quotes."
+msgstr ""
+"Nid ydy enwau'r ffeiliau a gofynwyd amdano \n"
+"%1\n"
+"yn edrych yn ddilys i mi. \n"
+"Sicrhewch bod pob enw ffeil ar amgau mewn dyfynodau dwbl."
+
+#: kfile/kfilewidget.cpp:1344
+msgid "Filename Error"
+msgstr "Gwall yn enw'r ffeil"
+
+#: kfile/kfilewidget.cpp:1429
+msgid "*|All Folders"
+msgstr "*|Pob Plygell"
+
+#: kfile/kfilewidget.cpp:1700
+#, fuzzy, qt-format
+msgid "Automatically select filename e&xtension (%1)"
+msgstr "Dewis e&styniad yr enw ffeil yn awtomatig (%1)"
+
+#: kfile/kfilewidget.cpp:1701
+#, qt-format
+msgid "the extension <b>%1</b>"
+msgstr "yr estyniad<b>%1</b>"
+
+#: kfile/kfilewidget.cpp:1709
+#, fuzzy
+msgid "Automatically select filename e&xtension"
+msgstr "Dewis e&styniad yr enw ffeil yn awtomatig"
+
+#: kfile/kfilewidget.cpp:1710
+msgid "a suitable extension"
+msgstr "estyniad addas"
+
+#: kfile/kfilewidget.cpp:1720
+#, fuzzy, qt-format
+msgid ""
+"This option enables some convenient features for saving files with "
+"extensions:<br><ol><li>Any extension specified in the <b>%1</b> text area "
+"will be updated if you change the file type to save in.<br><br></li><li>If "
+"no extension is specified in the <b>%2</b> text area when you click <b>Save</"
+"b>, %3 will be added to the end of the filename (if the filename does not "
+"already exist). This extension is based on the file type that you have "
+"chosen to save in.<br><br>If you do not want KDE to supply an extension for "
+"the filename, you can either turn this option off or you can suppress it by "
+"adding a period (.) to the end of the filename (the period will be "
+"automatically removed).</li></ol>If unsure, keep this option enabled as it "
+"makes your files more manageable."
+msgstr ""
+"Mae'r dewisiad yma yn alluogi rhai nodweddion hwylus am gadw ffeiliau efo  "
+"estyniadau:<br><ol><li>Bydd unrhyw estyniad wedi'i benodi yn y maes testun "
+"<b>%1</b>  yn cael ei ddiweddaru os newidwch math y ffeil i'w gadw.<br><br></"
+"li><li>Os nid oes estyniad wedi ei benodi yn y maes testun <b>%2</b> pan "
+"gliciwch <b>Cadw</b>, bydd %3 yn cael ei ychwanegu i ddiwedd yr enw ffeil "
+"(os nid yw'r enw ffeil mewn bod yn barod).  Mae'r estyniad ei seilio ar y "
+"math ffeil yr ydych wedi ei benodi.  <br><br>Os nad ydych eisiau i KDE "
+"ddarparu estyniad i'r enw ffeil, gallwch un ai troi'r dewisiad yma i ffwrdd, "
+"neu ei atal gan ychwanegu atalnod llawn (.) i ddiwedd yr enw ffeil (bydd yr "
+"atalnod llawn yn cael ei waredu yn awtomatig).</li></ol>Os nad ydych yn "
+"sicr, alluogwch y dewisiad yma, oherwydd mae'n gwneud eich ffeiliau yn haws "
+"eu trefnu."
+
+#: kfile/kfilewidget.cpp:1986 bookmarks/kbookmarkimporter_ns.cc:198
+#: bookmarks/kbookmarkimporter_ns.cc:199 bookmarks/kbookmarkmenu.cc:681
+#, fuzzy
+msgid "Bookmarks"
+msgstr "Tudnod"
+
+#: kfile/kfilewidget.cpp:1989
+msgid ""
+"<qt>This button allows you to bookmark specific locations. Click on this "
+"button to open the bookmark menu where you may add, edit or select a "
+"bookmark.<p>These bookmarks are specific to the file dialog, but otherwise "
+"operate like bookmarks elsewhere in KDE.</qt>"
+msgstr ""
+"<qt>Mae'r botwm yma yn gadael i chi nodi lleoliadau penodol.  Cliciwch ar y "
+"botwm yma i agor y ddewislen tudnodau lle gallwch ychwanegu, golygu, neu "
+"dewis tudnod.<p>Mae'r tudnodau yma yn benodol i'r deialog ffeil, ond ym mhob "
+"modd arall maent yn ymddwyn fel tudnodau mewn llefydd eraill yn KDE.</qt> "
+
 #: kfile/kacleditwidget.cpp:65 kfile/kacleditwidget.cpp:433
 #, fuzzy
 msgid "Owning Group"
@@ -3450,7 +3735,7 @@ msgid "Select Folder"
 msgstr "Dewis Plygell"
 
 #: kfile/kdirselectdialog.cpp:102 kfile/kdirselectdialog.cpp:139
-#: kfile/kdiroperator.cpp:1285
+#: kfile/kdiroperator.cpp:1286
 msgid "New Folder..."
 msgstr "Plygell Newydd..."
 
@@ -3464,11 +3749,11 @@ msgid "Show Hidden Folders"
 msgstr "Dangos Ffeiliau Cudd"
 
 #: kfile/kdirselectdialog.cpp:427 kfile/kdirselectdialog.cpp:431
-#: kfile/kdiroperator.cpp:397 kfile/kdiroperator.cpp:405
+#: kfile/kdiroperator.cpp:398 kfile/kdiroperator.cpp:406
 msgid "New Folder"
 msgstr "Plygell Newydd"
 
-#: kfile/kdirselectdialog.cpp:432 kfile/kdiroperator.cpp:406
+#: kfile/kdirselectdialog.cpp:432 kfile/kdiroperator.cpp:407
 #, qt-format
 msgid ""
 "Create new folder in:\n"
@@ -3477,306 +3762,21 @@ msgstr ""
 "Creu plygell newydd yn: \n"
 "%1"
 
-#: kfile/kdirselectdialog.cpp:455 kfile/kdiroperator.cpp:434
+#: kfile/kdirselectdialog.cpp:455 kfile/kdiroperator.cpp:435
 #, qt-format
 msgid "A file or folder named %1 already exists."
 msgstr "Mae ffeil neu blygell o'r enw %1 mewn bod yn barod."
 
-#: kfile/kdirselectdialog.cpp:459 kfile/kdiroperator.cpp:438
+#: kfile/kdirselectdialog.cpp:459 kfile/kdiroperator.cpp:439
 #, fuzzy
 msgid "You do not have permission to create that folder."
 msgstr "Does dim hawliau ganddoch i greu'r plygell yna."
 
 #: kfile/kencodingfiledialog.cpp:173 kfile/kencodingfiledialog.cpp:198
-#: kfile/kfiledialog.cpp:1569 kfile/kfiledialog.cpp:1602
-#: kfile/kfiledialog.cpp:1621
+#: kfile/kfiledialog.cpp:370 kfile/kfiledialog.cpp:403
+#: kfile/kfiledialog.cpp:422
 msgid "Save As"
 msgstr ""
-
-#: kfile/kfiledialog.cpp:332
-#, fuzzy
-msgid "Please specify the filename to save to."
-msgstr "Penodwch enw'r ffeil i ddefnyddio wrth gadw."
-
-#: kfile/kfiledialog.cpp:334
-msgid "Please select the file to open."
-msgstr "Penodwch enw'r ffeil i agor."
-
-#: kfile/kfiledialog.cpp:391 kfile/kfiledialog.cpp:434
-#: kfile/kfiledialog.cpp:1517
-msgid "You can only select local files."
-msgstr "Gallwch ddewis 'mond ffeiliau lleol."
-
-#: kfile/kfiledialog.cpp:392 kfile/kfiledialog.cpp:435
-#: kfile/kfiledialog.cpp:1518
-#, fuzzy
-msgid "Remote Files Not Accepted"
-msgstr "Ni derbynnir Ffeiliau Pell"
-
-#: kfile/kfiledialog.cpp:426
-#, qt-format
-msgid ""
-"%1\n"
-"does not appear to be a valid URL.\n"
-msgstr ""
-"Ymddengys nad yw \n"
-" %1 \n"
-" yn URL dilys.\n"
-
-#: kfile/kfiledialog.cpp:426
-msgid "Invalid URL"
-msgstr "URL Annilys"
-
-#: kfile/kfiledialog.cpp:745
-msgid ""
-"<p>While typing in the text area, you may be presented with possible "
-"matches. This feature can be controlled by clicking with the right mouse "
-"button and selecting a preferred mode from the <b>Text Completion</b> menu."
-msgstr ""
-"<p>Wrth deipio yn yr ardal testun, cyflwynir cydweddiadau posib.  Rheolir y "
-"nodwedd yma drwy glicio efo botwm de y llygoden, a dewis modd amgen oddiar y "
-"ddewislen <b>Cwblhau Testun</b>"
-
-#: kfile/kfiledialog.cpp:754
-msgid "This is the name to save the file as."
-msgstr " Yr enw i ddefnyddio wrth gadw'r ffeil."
-
-#: kfile/kfiledialog.cpp:759
-msgid ""
-"This is the list of files to open. More than one file can be specified by "
-"listing several files, separated by spaces."
-msgstr ""
-"Y rhestr o ffeiliau i agor.  Gellir benodi mwy nac un ffeil drwy restru "
-"amryw ffeil, wedi eu gwahanu gan fylchau."
-
-#: kfile/kfiledialog.cpp:766
-msgid "This is the name of the file to open."
-msgstr " Enw'r ffeil i agor."
-
-#: kfile/kfiledialog.cpp:807
-#, fuzzy
-msgid "Current location"
-msgstr "Gweith&rediadau cyfredol:"
-
-#: kfile/kfiledialog.cpp:808
-#, fuzzy
-msgid ""
-"This is the currently listed location. The drop-down list also lists "
-"commonly used locations. This includes standard locations, such as your home "
-"folder, as well as locations that have been visited recently."
-msgstr ""
-"Rhestrir yma lleoliadau aml eu defnyddio.  Mae hynny yn cynnwys lleoliadau "
-"safonol, fel eich plygell cartref, ac hefyd lleoliadau sydd wedi cael eu "
-"ymweld yn ddiweddar."
-
-#: kfile/kfiledialog.cpp:818
-#, fuzzy, qt-format
-msgid "Drive: %1"
-msgstr "maint : %1"
-
-#: kfile/kfiledialog.cpp:825
-#, qt-format
-msgid "Root Folder: %1"
-msgstr "Plygell Gwraidd: %1"
-
-#: kfile/kfiledialog.cpp:832
-#, qt-format
-msgid "Home Folder: %1"
-msgstr "Plygell Cartref: %1"
-
-#: kfile/kfiledialog.cpp:841
-#, qt-format
-msgid "Documents: %1"
-msgstr "Dogfennau: %1"
-
-#: kfile/kfiledialog.cpp:848
-#, qt-format
-msgid "Desktop: %1"
-msgstr "Penbwrdd: %1"
-
-#: kfile/kfiledialog.cpp:890
-#, qt-format
-msgid ""
-"<qt>Click this button to enter the parent folder.<p>For instance, if the "
-"current location is file:/home/%1 clicking this button will take you to "
-"file:/home.</qt>"
-msgstr ""
-"<qt>Cliciwch y botwm yma i fynd i mewn i'r plygell rhiant.<p> Er enghraifft, "
-"os file:/home/%1 yw'r lleoliad cyfredol, bydd clicio'r botwm yma yn mynd â "
-"chi i file:/home.</qt>"
-
-#: kfile/kfiledialog.cpp:894
-msgid "Click this button to move backwards one step in the browsing history."
-msgstr "Cliciwch y botwm yma i symud un cam yn ôl yn yr hanes pori."
-
-#: kfile/kfiledialog.cpp:896
-msgid "Click this button to move forward one step in the browsing history."
-msgstr "Cliciwch y botwm yma i symud un cam ymlaen yn yr hanes pori."
-
-#: kfile/kfiledialog.cpp:898
-msgid "Click this button to reload the contents of the current location."
-msgstr "Cliciwch y botwm yma i ail-lwytho cynnwys y lleoliad cyfredol."
-
-#: kfile/kfiledialog.cpp:901
-msgid "Click this button to create a new folder."
-msgstr "Cliciwch y botwm yma i greu plygell newydd."
-
-#: kfile/kfiledialog.cpp:904
-msgid "Show Quick Access Navigation Panel"
-msgstr "Dangos Panel Morlywio Cyrchu ar Frys"
-
-#: kfile/kfiledialog.cpp:907
-#, fuzzy
-msgid "Hide Quick Access Navigation Panel"
-msgstr "Dangos Panel Morlywio Cyrchu ar Frys"
-
-#: kfile/kfiledialog.cpp:912
-#, fuzzy
-msgid "Show Bookmarks"
-msgstr "Nodau tudalen"
-
-#: kfile/kfiledialog.cpp:914
-#, fuzzy
-msgid "Hide Bookmarks"
-msgstr "Nodau tudalen"
-
-#: kfile/kfiledialog.cpp:918
-#, fuzzy
-msgid "Configure"
-msgstr "&Mynd ymlaen"
-
-#: kfile/kfiledialog.cpp:920
-msgid ""
-"<qt>This is the configuration menu for the file dialog. Various options can "
-"be accessed from this menu including: <ul><li>how files are sorted in the "
-"list</li><li>types of view, including icon and list</li><li>showing of "
-"hidden files</li><li>the Quick Access navigation panel</li><li>file "
-"previews</li><li>separating folders from files</li></ul></qt>"
-msgstr ""
-"<qt>Hon yw'r ddewislen osodiadau i'r ymgom ffeil.  Cyrchir amryw dewisiad "
-"o'r ddewislen yma, yn cynnwys: <ul><li>sut y didolir ffeiliau yn y rhestr</"
-"li><li>mathau golwg, yn cynnwys eicon a rhestr</li><li>dangos ffeiliau cudd</"
-"li><li>y panel morlywio Cyrchu ar Frys</li><li>rhagolygon ffeil</"
-"li><li>gwahanu plygyll oddiwrth ffeiliau</li></ul></qt>"
-
-#: kfile/kfiledialog.cpp:971
-msgid "&Location:"
-msgstr "&Lleoliad:"
-
-#: kfile/kfiledialog.cpp:996
-msgid ""
-"<qt>This is the filter to apply to the file list. File names that do not "
-"match the filter will not be shown.<p>You may select from one of the preset "
-"filters in the drop down menu, or you may enter a custom filter directly "
-"into the text area.<p>Wildcards such as * and ? are allowed.</qt>"
-msgstr ""
-"<qt>Yr hidl i weithredu i'r rhestr ffeil. Ni ddangosir enwau ffeil sy ddim "
-"yn cydweddu efo'r hidl.<p>Gallwch ddewis un o'r hidlau rhagosodedig yn y "
-"cwymplen, neu gallwch mewnosod hidl addasu yn syth i mewn i'r ardal testun."
-"<p> Caniateir nod-chwilwyr fel * a ?. </qt>"
-
-#: kfile/kfiledialog.cpp:1002
-msgid "&Filter:"
-msgstr "&Hidl:"
-
-#: kfile/kfiledialog.cpp:1447
-#, fuzzy
-msgid ""
-"The chosen filenames do not\n"
-"appear to be valid."
-msgstr ""
-"Ymddengys nad ydy \n"
-" enwau'r ffeiliau a ddewiswyd yn ddilys."
-
-#: kfile/kfiledialog.cpp:1449
-msgid "Invalid Filenames"
-msgstr "Enwau Ffeil Annilys"
-
-#: kfile/kfiledialog.cpp:1479
-#, fuzzy, qt-format
-msgid ""
-"The requested filenames\n"
-"%1\n"
-"do not appear to be valid;\n"
-"make sure every filename is enclosed in double quotes."
-msgstr ""
-"Nid ydy enwau'r ffeiliau a gofynwyd amdano \n"
-"%1\n"
-"yn edrych yn ddilys i mi. \n"
-"Sicrhewch bod pob enw ffeil ar amgau mewn dyfynodau dwbl."
-
-#: kfile/kfiledialog.cpp:1483
-msgid "Filename Error"
-msgstr "Gwall yn enw'r ffeil"
-
-#: kfile/kfiledialog.cpp:1649
-msgid "*|All Folders"
-msgstr "*|Pob Plygell"
-
-#: kfile/kfiledialog.cpp:1927
-#, fuzzy, qt-format
-msgid "Automatically select filename e&xtension (%1)"
-msgstr "Dewis e&styniad yr enw ffeil yn awtomatig (%1)"
-
-#: kfile/kfiledialog.cpp:1928
-#, qt-format
-msgid "the extension <b>%1</b>"
-msgstr "yr estyniad<b>%1</b>"
-
-#: kfile/kfiledialog.cpp:1936
-#, fuzzy
-msgid "Automatically select filename e&xtension"
-msgstr "Dewis e&styniad yr enw ffeil yn awtomatig"
-
-#: kfile/kfiledialog.cpp:1937
-msgid "a suitable extension"
-msgstr "estyniad addas"
-
-#: kfile/kfiledialog.cpp:1947
-#, fuzzy, qt-format
-msgid ""
-"This option enables some convenient features for saving files with "
-"extensions:<br><ol><li>Any extension specified in the <b>%1</b> text area "
-"will be updated if you change the file type to save in.<br><br></li><li>If "
-"no extension is specified in the <b>%2</b> text area when you click <b>Save</"
-"b>, %3 will be added to the end of the filename (if the filename does not "
-"already exist). This extension is based on the file type that you have "
-"chosen to save in.<br><br>If you do not want KDE to supply an extension for "
-"the filename, you can either turn this option off or you can suppress it by "
-"adding a period (.) to the end of the filename (the period will be "
-"automatically removed).</li></ol>If unsure, keep this option enabled as it "
-"makes your files more manageable."
-msgstr ""
-"Mae'r dewisiad yma yn alluogi rhai nodweddion hwylus am gadw ffeiliau efo  "
-"estyniadau:<br><ol><li>Bydd unrhyw estyniad wedi'i benodi yn y maes testun "
-"<b>%1</b>  yn cael ei ddiweddaru os newidwch math y ffeil i'w gadw.<br><br></"
-"li><li>Os nid oes estyniad wedi ei benodi yn y maes testun <b>%2</b> pan "
-"gliciwch <b>Cadw</b>, bydd %3 yn cael ei ychwanegu i ddiwedd yr enw ffeil "
-"(os nid yw'r enw ffeil mewn bod yn barod).  Mae'r estyniad ei seilio ar y "
-"math ffeil yr ydych wedi ei benodi.  <br><br>Os nad ydych eisiau i KDE "
-"ddarparu estyniad i'r enw ffeil, gallwch un ai troi'r dewisiad yma i ffwrdd, "
-"neu ei atal gan ychwanegu atalnod llawn (.) i ddiwedd yr enw ffeil (bydd yr "
-"atalnod llawn yn cael ei waredu yn awtomatig).</li></ol>Os nad ydych yn "
-"sicr, alluogwch y dewisiad yma, oherwydd mae'n gwneud eich ffeiliau yn haws "
-"eu trefnu."
-
-#: kfile/kfiledialog.cpp:2224 bookmarks/kbookmarkimporter_ns.cc:198
-#: bookmarks/kbookmarkimporter_ns.cc:199 bookmarks/kbookmarkmenu.cc:681
-#, fuzzy
-msgid "Bookmarks"
-msgstr "Tudnod"
-
-#: kfile/kfiledialog.cpp:2227
-msgid ""
-"<qt>This button allows you to bookmark specific locations. Click on this "
-"button to open the bookmark menu where you may add, edit or select a "
-"bookmark.<p>These bookmarks are specific to the file dialog, but otherwise "
-"operate like bookmarks elsewhere in KDE.</qt>"
-msgstr ""
-"<qt>Mae'r botwm yma yn gadael i chi nodi lleoliadau penodol.  Cliciwch ar y "
-"botwm yma i agor y ddewislen tudnodau lle gallwch ychwanegu, golygu, neu "
-"dewis tudnod.<p>Mae'r tudnodau yma yn benodol i'r deialog ffeil, ond ym mhob "
-"modd arall maent yn ymddwyn fel tudnodau mewn llefydd eraill yn KDE.</qt> "
 
 #: kfile/kurlrequester.cpp:198
 msgid "Open file dialog"
@@ -3874,16 +3874,16 @@ msgstr "&Peidiwch a chau pan terfynir y gorchymyn"
 msgid "&Remember application association for this type of file"
 msgstr "&Cofio cyd-gymhwysiad i'r math yma o ffeil"
 
-#: kfile/kdiroperator.cpp:460
+#: kfile/kdiroperator.cpp:461
 #, fuzzy
 msgid "You did not select a file to delete."
 msgstr "Wnaethoch chi ddim dewis ffeil i ddileu."
 
-#: kfile/kdiroperator.cpp:461
+#: kfile/kdiroperator.cpp:462
 msgid "Nothing to Delete"
 msgstr "Dim byd i'w dileu."
 
-#: kfile/kdiroperator.cpp:475
+#: kfile/kdiroperator.cpp:476
 #, qt-format
 msgid ""
 "<qt>Do you really want to delete\n"
@@ -3892,32 +3892,32 @@ msgstr ""
 "<qt>Ydych wir eisiau dileu\n"
 " <b>'%1'</b>?</qt>"
 
-#: kfile/kdiroperator.cpp:477
+#: kfile/kdiroperator.cpp:478
 msgid "Delete File"
 msgstr "Dileu Ffeil"
 
-#: kfile/kdiroperator.cpp:482
+#: kfile/kdiroperator.cpp:483
 #, fuzzy, qt-format
 msgid "Do you really want to delete this item?"
 msgid_plural "Do you really want to delete these %1 items?"
 msgstr[0] "Ydych wir eisiau dileu yr eitem yma?"
 msgstr[1] "Ydych wir eisiau dileu y %1 o eitemau yma?"
 
-#: kfile/kdiroperator.cpp:484
+#: kfile/kdiroperator.cpp:485
 msgid "Delete Files"
 msgstr "Dileu Ffeiliau"
 
-#: kfile/kdiroperator.cpp:515
+#: kfile/kdiroperator.cpp:516
 #, fuzzy
 msgid "You did not select a file to trash."
 msgstr "Wnaethoch chi ddim dewis ffeil i ddileu."
 
-#: kfile/kdiroperator.cpp:516
+#: kfile/kdiroperator.cpp:517
 #, fuzzy
 msgid "Nothing to Trash"
 msgstr "Dim byd i'w Ddadwneud"
 
-#: kfile/kdiroperator.cpp:530
+#: kfile/kdiroperator.cpp:531
 #, fuzzy, qt-format
 msgid ""
 "<qt>Do you really want to trash\n"
@@ -3926,105 +3926,105 @@ msgstr ""
 "<qt>Ydych wir eisiau dileu\n"
 " <b>'%1'</b>?</qt>"
 
-#: kfile/kdiroperator.cpp:532
+#: kfile/kdiroperator.cpp:533
 #, fuzzy
 msgid "Trash File"
 msgstr "Sbwriel"
 
-#: kfile/kdiroperator.cpp:533 kfile/kdiroperator.cpp:540
+#: kfile/kdiroperator.cpp:534 kfile/kdiroperator.cpp:541
 msgctxt "to trash"
 msgid "&Trash"
 msgstr ""
 
-#: kfile/kdiroperator.cpp:537
+#: kfile/kdiroperator.cpp:538
 #, fuzzy, qt-format
 msgid "translators: not called for n == 1"
 msgid_plural "Do you really want to trash these %1 items?"
 msgstr[0] "Ydych wir eisiau dileu'r %1 eitem yma? "
 msgstr[1] "Ydych wir eisiau dileu'r %1 eitem yma?"
 
-#: kfile/kdiroperator.cpp:539
+#: kfile/kdiroperator.cpp:540
 #, fuzzy
 msgid "Trash Files"
 msgstr "Ffeiliau dros dro"
 
-#: kfile/kdiroperator.cpp:658 kfile/kdiroperator.cpp:727
+#: kfile/kdiroperator.cpp:659 kfile/kdiroperator.cpp:728
 msgid "The specified folder does not exist or was not readable."
 msgstr "Nid ydy'r plygell penodol yn bodoli, neu doedd o ddim yn ddarllenadwy."
 
-#: kfile/kdiroperator.cpp:927 kfile/kdiroperator.cpp:1340
+#: kfile/kdiroperator.cpp:928 kfile/kdiroperator.cpp:1341
 msgid "Short View"
 msgstr "Golwg Byr"
 
-#: kfile/kdiroperator.cpp:1267
+#: kfile/kdiroperator.cpp:1268
 msgid "Parent Folder"
 msgstr "Plygell Rhiant"
 
-#: kfile/kdiroperator.cpp:1277
+#: kfile/kdiroperator.cpp:1278
 #, fuzzy
 msgid "Reload"
 msgstr "Darllen"
 
-#: kfile/kdiroperator.cpp:1290
+#: kfile/kdiroperator.cpp:1291
 msgid "Move to Trash"
 msgstr "Symud i'r Sbwriel"
 
-#: kfile/kdiroperator.cpp:1296
+#: kfile/kdiroperator.cpp:1297
 #, fuzzy
 msgid "Delete"
 msgstr "Dileu"
 
-#: kfile/kdiroperator.cpp:1303
+#: kfile/kdiroperator.cpp:1304
 msgid "Sorting"
 msgstr "Didoli"
 
-#: kfile/kdiroperator.cpp:1306
+#: kfile/kdiroperator.cpp:1307
 msgid "By Name"
 msgstr "Gan Enw"
 
-#: kfile/kdiroperator.cpp:1310
+#: kfile/kdiroperator.cpp:1311
 msgid "By Date"
 msgstr "Gan Ddyddiad"
 
-#: kfile/kdiroperator.cpp:1314
+#: kfile/kdiroperator.cpp:1315
 msgid "By Size"
 msgstr "Gan Faint"
 
-#: kfile/kdiroperator.cpp:1318
+#: kfile/kdiroperator.cpp:1319
 msgid "Reverse"
 msgstr "Gwrthwyneb"
 
-#: kfile/kdiroperator.cpp:1327
+#: kfile/kdiroperator.cpp:1328
 msgid "Folders First"
 msgstr "Plygyll yn Gyntaf"
 
-#: kfile/kdiroperator.cpp:1331
+#: kfile/kdiroperator.cpp:1332
 msgid "Case Insensitive"
 msgstr "Dim bwys am lythrennau bras"
 
-#: kfile/kdiroperator.cpp:1336
+#: kfile/kdiroperator.cpp:1337
 #, fuzzy
 msgid "&View"
 msgstr "&Rhagolwg"
 
-#: kfile/kdiroperator.cpp:1350
+#: kfile/kdiroperator.cpp:1351
 msgid "Show Hidden Files"
 msgstr "Dangos Ffeiliau Cudd"
 
-#: kfile/kdiroperator.cpp:1354
+#: kfile/kdiroperator.cpp:1355
 msgid "Separate Folders"
 msgstr "Plygyll ar Wahân"
 
-#: kfile/kdiroperator.cpp:1358
+#: kfile/kdiroperator.cpp:1359
 msgid "Show Preview"
 msgstr "Dangos Rhagolwg"
 
-#: kfile/kdiroperator.cpp:1361
+#: kfile/kdiroperator.cpp:1362
 #, fuzzy
 msgid "Hide Preview"
 msgstr "Rhagweld"
 
-#: kfile/kdiroperator.cpp:1370 bookmarks/kbookmarkmenu.cc:256
+#: kfile/kdiroperator.cpp:1371 bookmarks/kbookmarkmenu.cc:256
 #, fuzzy
 msgid "Properties"
 msgstr "Priodweddau i %1"
