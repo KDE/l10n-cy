@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-2/kile.po\n"
-"POT-Creation-Date: 2007-03-31 07:04+0200\n"
+"POT-Creation-Date: 2007-04-04 07:17+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -552,7 +552,7 @@ msgstr "Disgrifiad"
 msgid "Scripting Support"
 msgstr ""
 
-#: kileconfigdialog.cpp:196
+#: configcodecompletion.cpp:474 kileconfigdialog.cpp:196
 msgid "Complete"
 msgstr "Cyflawn"
 
@@ -646,8 +646,8 @@ msgstr "&Label:"
 msgid "All Files"
 msgstr "Pob Ffeil"
 
-#: configcodecompletion.cpp:390 includegraphicsdialog.cpp:373
-#: kileactions.cpp:324 kiledocmanager.cpp:1741 userhelpdialog.cpp:407
+#: includegraphicsdialog.cpp:373 kileactions.cpp:324 kiledocmanager.cpp:1741
+#: userhelpdialog.cpp:407
 msgid "Select File"
 msgstr "Dewis Ffeil"
 
@@ -1170,7 +1170,7 @@ msgid ""
 "it in math mode, presssing CTRL in curly brackets."
 msgstr ""
 
-#: configcodecompletion.cpp:78 kile.cpp:390 kile.cpp:549
+#: configcodecompletion.cpp:57 kile.cpp:390 kile.cpp:549
 msgid "Abbreviation"
 msgstr ""
 
@@ -2308,112 +2308,110 @@ msgstr ""
 msgid "Archive Project"
 msgstr ""
 
-#: configcodecompletion.cpp:45
+#: configcodecompletion.cpp:47
 msgid "Complete Modes"
 msgstr ""
 
-#: configcodecompletion.cpp:56
-msgid "Complete Files for TeX/LaTeX Mode"
-msgstr ""
-
-#: configcodecompletion.cpp:64
-msgid "Complete Files for Dictionary Mode"
-msgstr ""
-
-#: configcodecompletion.cpp:72
-msgid "Complete Files for Abbreviation Mode"
-msgstr ""
-
-#: configcodecompletion.cpp:76
+#: configcodecompletion.cpp:55
 msgid "TeX/LaTeX"
 msgstr ""
 
-#: configcodecompletion.cpp:77
+#: configcodecompletion.cpp:56
 msgid "Dictionary"
 msgstr "Geiriadur"
 
-#: configcodecompletion.cpp:81
+#: configcodecompletion.cpp:60
 msgid "Add..."
 msgstr "Ychwanegu..."
 
-#: configcodecompletion.cpp:96
+#: configcodecompletion.cpp:75
 msgid "Place cursor"
 msgstr ""
 
-#: configcodecompletion.cpp:97
+#: configcodecompletion.cpp:76
 msgid "Insert bullets"
 msgstr ""
 
-#: configcodecompletion.cpp:98
+#: configcodecompletion.cpp:77
 msgid "Close environments"
 msgstr ""
 
-#: configcodecompletion.cpp:99
+#: configcodecompletion.cpp:78
 msgid "Use complete"
 msgstr ""
 
-#: configcodecompletion.cpp:100
+#: configcodecompletion.cpp:79
 msgid "Auto completion (LaTeX)"
 msgstr ""
 
-#: configcodecompletion.cpp:104
+#: configcodecompletion.cpp:83
 msgid "Auto completion (text)"
 msgstr ""
 
-#: configcodecompletion.cpp:108
+#: configcodecompletion.cpp:87
 msgid "Show abbreviations"
 msgstr ""
 
-#: configcodecompletion.cpp:109
+#: configcodecompletion.cpp:88
 msgid "Auto completion (abbrev.)"
 msgstr ""
 
-#: configcodecompletion.cpp:110
+#: configcodecompletion.cpp:89
 msgid "Move out of braces (citation keylists)"
 msgstr ""
 
-#: configcodecompletion.cpp:134
+#: configcodecompletion.cpp:113
 msgid "Try to place the cursor."
 msgstr ""
 
-#: configcodecompletion.cpp:135
+#: configcodecompletion.cpp:114
 msgid "Insert bullets, where the user must input data."
 msgstr ""
 
-#: configcodecompletion.cpp:136
+#: configcodecompletion.cpp:115
 msgid "Also close an environment, when an opening command is inserted."
 msgstr ""
 
-#: configcodecompletion.cpp:137
+#: configcodecompletion.cpp:116
 msgid "Enable components of word completion."
 msgstr ""
 
-#: configcodecompletion.cpp:138
+#: configcodecompletion.cpp:117
 msgid ""
 "Directional or popup-based completion with TeX/LaTeX commands, which are given "
 "in all selected word completion lists. This mode can only be selected, if no "
 "other plugin for autocompletion is active."
 msgstr ""
 
-#: configcodecompletion.cpp:139
+#: configcodecompletion.cpp:118
 msgid ""
 "Directional or popup-based completion from words in the current document. This "
 "mode can only be selected, if no other plugin for autocompletion is active."
 msgstr ""
 
-#: configcodecompletion.cpp:140
+#: configcodecompletion.cpp:119
 msgid ""
 "Automatically show a completion list of TeX/LaTeX commands, when the word has "
 "this length."
 msgstr ""
 
-#: configcodecompletion.cpp:141
+#: configcodecompletion.cpp:120
 msgid "Automatically show a completion list, when the word has this length."
 msgstr ""
 
-#: configcodecompletion.cpp:142
+#: configcodecompletion.cpp:121
 msgid "Move cursor out of braces after selecting from a citation keylist."
 msgstr ""
+
+#: configcodecompletion.cpp:156 configcodecompletion.cpp:455
+#, fuzzy
+msgid "Complete Files"
+msgstr "Dileu Ffeiliau"
+
+#: configcodecompletion.cpp:157
+#, fuzzy
+msgid "Local File"
+msgstr "Dileu Ffeiliau"
 
 #: configcodecompletion.cpp:240
 msgid ""
@@ -2426,25 +2424,18 @@ msgstr ""
 msgid "Autocomplete warning"
 msgstr ""
 
-#: configcodecompletion.cpp:390
-msgid "*.cwl|Complete Files"
-msgstr ""
-
-#: configcodecompletion.cpp:410
-msgid "Wordlist '%1' is already used."
-msgstr ""
-
-#: configcodecompletion.cpp:410
+#: configcodecompletion.cpp:303
 #, fuzzy
-msgid "Duplicate Files"
-msgstr "Dileu Ffeiliau"
+msgid "File not found"
+msgstr "Ni chanfuwyd y ffeil"
 
-#: configcodecompletion.cpp:410
-msgid "&Skip"
-msgstr "&Hepgor"
+#: configcodecompletion.cpp:455
+#, fuzzy
+msgid "Select Files"
+msgstr "Dewis Ffeil"
 
-#: configcodecompletion.cpp:421
-msgid "Maybe you have changed the directory?"
+#: configcodecompletion.cpp:474
+msgid "Wordlist '%1' is already used."
 msgstr ""
 
 #: usermenudialog.cpp:46
@@ -7468,6 +7459,13 @@ msgstr ""
 #: kileprojectdlgs.cpp:532
 msgid "&MakeIndex options"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Duplicate Files"
+#~ msgstr "Dileu Ffeiliau"
+
+#~ msgid "&Skip"
+#~ msgstr "&Hepgor"
 
 #~ msgid "not specified"
 #~ msgstr "ni phenodir"
