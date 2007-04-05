@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-2/konversation.po\n"
-"POT-Creation-Date: 2007-04-04 07:16+0200\n"
+"POT-Creation-Date: 2007-04-05 07:00+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -200,7 +200,7 @@ msgstr ""
 #: src/channel.cpp:552 src/ircview.cpp:1416 src/ircview.cpp:1474
 #: src/konvisettingsdialog.cpp:156 src/konvisettingsdialog.cpp:157
 #: src/nicklistview.cpp:83 src/outputfilter.cpp:1306 src/outputfilter.cpp:1378
-#: src/query.cpp:82 src/query.cpp:348 src/server.cpp:3001
+#: src/query.cpp:82 src/query.cpp:348 src/server.cpp:3074
 #: src/warnings_preferences.cpp:114
 msgid "Ignore"
 msgstr "Anwybyddu"
@@ -343,10 +343,10 @@ msgstr ""
 #: rc.cpp:119 src/dccchat.cpp:167 src/dccchat.cpp:179 src/dccchat.cpp:218
 #: src/dccchat.cpp:352 src/dccchat.cpp:357 src/ignorelistviewitem.cpp:46
 #: src/inputfilter.cpp:301 src/konvisettingsdialog.cpp:169
-#: src/konvisettingsdialog.cpp:170 src/server.cpp:1843 src/server.cpp:1877
-#: src/server.cpp:1931 src/server.cpp:1962 src/server.cpp:1989
-#: src/server.cpp:1992 src/server.cpp:1999 src/server.cpp:2002
-#: src/server.cpp:2012 src/server.cpp:2019
+#: src/konvisettingsdialog.cpp:170 src/server.cpp:1880 src/server.cpp:1900
+#: src/server.cpp:1937 src/server.cpp:1997 src/server.cpp:2062
+#: src/server.cpp:2065 src/server.cpp:2072 src/server.cpp:2075
+#: src/server.cpp:2085 src/server.cpp:2092
 #, no-c-format
 msgid "DCC"
 msgstr ""
@@ -950,8 +950,8 @@ msgstr ""
 msgid "Konversation Bookmarks Editor"
 msgstr ""
 
-#: src/konversationapplication.cpp:272 src/server.cpp:1397 src/server.cpp:3010
-#: src/server.cpp:3015
+#: src/konversationapplication.cpp:272 src/server.cpp:1399 src/server.cpp:3083
+#: src/server.cpp:3088
 msgid "DCOP"
 msgstr "DCOP:"
 
@@ -1026,13 +1026,13 @@ msgstr "Sianeli"
 msgid "MOTD"
 msgstr ""
 
-#: src/ircview.cpp:993 src/outputfilter.cpp:1080 src/server.cpp:2379
-#: src/server.cpp:2399
+#: src/ircview.cpp:993 src/outputfilter.cpp:1080 src/server.cpp:2452
+#: src/server.cpp:2472
 msgid "Notify"
 msgstr ""
 
 #: src/channel.cpp:1113 src/channel.cpp:1125 src/ircview.cpp:1015
-#: src/server.cpp:3000
+#: src/server.cpp:3073
 msgid "Join"
 msgstr "Uniad"
 
@@ -1229,7 +1229,7 @@ msgid "Clear the contents of all open tabs"
 msgstr ""
 
 #: src/konversationmainwindow.cpp:248 src/konversationmainwindow.cpp:535
-#: src/server.cpp:3066
+#: src/server.cpp:3139
 msgid "Set &Away Globally"
 msgstr ""
 
@@ -1353,7 +1353,7 @@ msgstr ""
 msgid "%1TOPIC without channel name only works from within a channel."
 msgstr ""
 
-#: src/konvdcop.cpp:65 src/outputfilter.cpp:573 src/server.cpp:813
+#: src/konvdcop.cpp:65 src/outputfilter.cpp:573 src/server.cpp:815
 msgid "Gone away for now."
 msgstr ""
 
@@ -1497,9 +1497,9 @@ msgstr ""
 msgid "Usage"
 msgstr ""
 
-#: src/outputfilter.cpp:1460 src/server.cpp:116 src/server.cpp:401
-#: src/server.cpp:459 src/server.cpp:592 src/server.cpp:602 src/server.cpp:730
-#: src/server.cpp:749
+#: src/outputfilter.cpp:1460 src/server.cpp:116 src/server.cpp:403
+#: src/server.cpp:461 src/server.cpp:594 src/server.cpp:604 src/server.cpp:732
+#: src/server.cpp:751
 msgid "Info"
 msgstr "Gwybo"
 
@@ -2395,11 +2395,11 @@ msgstr ""
 msgid "%1 has started a conversation (query) with you."
 msgstr ""
 
-#: src/notificationhandler.cpp:284 src/server.cpp:2380
+#: src/notificationhandler.cpp:284 src/server.cpp:2453
 msgid "%1 is online (%2)."
 msgstr ""
 
-#: src/notificationhandler.cpp:300 src/server.cpp:2399
+#: src/notificationhandler.cpp:300 src/server.cpp:2472
 msgid "%1 went offline (%2)."
 msgstr ""
 
@@ -2702,172 +2702,168 @@ msgid ""
 "No answer from server %1 for more than %n seconds."
 msgstr ""
 
-#: src/server.cpp:459
+#: src/server.cpp:461
 msgid "Looking for server %1:%2..."
 msgstr ""
 
-#: src/server.cpp:580
+#: src/server.cpp:582
 msgid "Server %1 not found.  %2"
 msgstr ""
 
-#: src/server.cpp:592
+#: src/server.cpp:594
 msgid "Server found, connecting..."
 msgstr ""
 
-#: src/server.cpp:602
+#: src/server.cpp:604
 msgid "Connected; logging in..."
 msgstr ""
 
-#: src/server.cpp:671
+#: src/server.cpp:673
 msgid "Connection to Server %1 lost: %2. Trying to reconnect."
 msgstr ""
 
-#: src/server.cpp:684 src/server.cpp:738
+#: src/server.cpp:686 src/server.cpp:740
 msgid "Connection to Server %1 failed: %2."
 msgstr ""
 
-#: src/server.cpp:719
+#: src/server.cpp:721
 msgid "Trying server %1 instead."
 msgstr ""
 
-#: src/server.cpp:729
+#: src/server.cpp:731
 msgid "Waiting for 2 minutes before another reconnection attempt..."
 msgstr ""
 
-#: src/server.cpp:749
+#: src/server.cpp:751
 msgid "Disconnected from server."
 msgstr ""
 
-#: src/server.cpp:772
+#: src/server.cpp:774
 msgid ""
 "Could not connect to %1:%2 using SSL encryption.Maybe the server does not "
 "support SSL, or perhaps you have the wrong port? %3"
 msgstr ""
 
-#: src/server.cpp:776
+#: src/server.cpp:778
 #, fuzzy
 msgid "SSL Connection Error"
 msgstr "Cysylltiad"
 
-#: src/server.cpp:991
+#: src/server.cpp:993
 msgid ""
 "No nicknames from the \"%1\" identity were accepted by the connection \"%2\".\n"
 "Please enter a new one or press Cancel to disconnect:"
 msgstr ""
 
-#: src/server.cpp:992
+#: src/server.cpp:994
 #, fuzzy
 msgid "Nickname error"
 msgstr "Ffugenw"
 
-#: src/server.cpp:1054
+#: src/server.cpp:1056
 #, c-format
 msgid "There was an error reading the data from the server: %1"
 msgstr ""
 
-#: src/server.cpp:1804
+#: src/server.cpp:1806
 #, c-format
 msgid "Select File(s) to Send to %1"
 msgstr ""
 
-#: src/server.cpp:1844
-msgid "Asking %1 to accept upload of \"%2\" (%3)..."
+#: src/server.cpp:1881
+msgid "%1 offers to send you \"%2\" (%3)..."
 msgstr ""
 
-#: src/server.cpp:1847 src/server.cpp:1881 src/server.cpp:1937
-#: src/server.cpp:1968 src/server.cpp:2022
+#: src/server.cpp:1884 src/server.cpp:1904 src/server.cpp:1943
+#: src/server.cpp:2003 src/server.cpp:2095
 #, fuzzy
 msgid "unknown size"
 msgstr "anhysbys"
 
-#: src/server.cpp:1878
-msgid "%1 offers to send you \"%2\" (%3)..."
+#: src/server.cpp:1901
+msgid "Asking %1 to accept upload of \"%2\" (%3)..."
 msgstr ""
 
-#: src/server.cpp:1933
+#: src/server.cpp:1939
 msgid ""
 "_: %1 = file name, %2 = nickname of sender, %3 = percentage of file size, %4 = "
 "file size\n"
 "Resuming download of \"%1\" from %2 starting at %3% of %4..."
 msgstr ""
 
-#: src/server.cpp:1942
-#, c-format
-msgid "No DCC download running on port %1."
+#: src/server.cpp:1949
+msgid ""
+"_: %1 = file name, %2 = nickname\n"
+"Received invalid resume acceptance message for \"%1\" from %2."
 msgstr ""
 
-#: src/server.cpp:1964
+#: src/server.cpp:1999
 msgid ""
 "_: %1 = file name, %2 = nickname of recipient, %3 = percentage of file size, %4 "
 "= file size\n"
 "Resuming upload of \"%1\" to %2 starting at %3% of %4..."
 msgstr ""
 
-#: src/server.cpp:1977
+#: src/server.cpp:2014
 msgid ""
 "_: %1 = file name, %2 = nickname\n"
 "Received invalid resume request for \"%1\" from %2."
 msgstr ""
 
-#: src/server.cpp:1982
-#, c-format
-msgid "No DCC upload running on port %1."
-msgstr ""
-
-#: src/server.cpp:1990
+#: src/server.cpp:2063
 msgid ""
 "_: %1 = file name, %2 = nickname of sender\n"
 "Download of \"%1\" from %2 finished."
 msgstr ""
 
-#: src/server.cpp:1993
+#: src/server.cpp:2066
 msgid ""
 "_: %1 = file name, %2 = nickname of sender\n"
 "Download of \"%1\" from %2 failed. Reason: %3."
 msgstr ""
 
-#: src/server.cpp:2000
+#: src/server.cpp:2073
 msgid ""
 "_: %1 = file name, %2 = nickname of recipient\n"
 "Upload of \"%1\" to %2 finished."
 msgstr ""
 
-#: src/server.cpp:2003
+#: src/server.cpp:2076
 msgid ""
 "_: %1 = file name, %2 = nickname of recipient\n"
 "Upload of \"%1\" to %2 failed. Reason: %3."
 msgstr ""
 
-#: src/server.cpp:2013
+#: src/server.cpp:2086
 msgid ""
 "_: %1 = file name, %2 nickname of recipient\n"
 "Sending \"%1\" to %2..."
 msgstr ""
 
-#: src/server.cpp:2020
+#: src/server.cpp:2093
 msgid ""
 "_: %1 = file name, %2 = file size, %3 = nickname of sender\n"
 "Downloading \"%1\" (%2) from %3..."
 msgstr ""
 
-#: src/server.cpp:2997
+#: src/server.cpp:3070
 msgid ""
 "You were invited by %1 to join channel %2. Do you accept the invitation?"
 msgstr ""
 
-#: src/server.cpp:2999
+#: src/server.cpp:3072
 msgid "Invitation"
 msgstr ""
 
-#: src/server.cpp:3010
+#: src/server.cpp:3083
 msgid "Error: Could not find script \"%1\"."
 msgstr ""
 
-#: src/server.cpp:3015
+#: src/server.cpp:3088
 msgid "Error: Could not execute script \"%1\". Check file permissions."
 msgstr ""
 
-#: src/server.cpp:3042
+#: src/server.cpp:3115
 msgid "Set &Available Globally"
 msgstr ""
 
@@ -4019,31 +4015,36 @@ msgstr "&Derbyn"
 msgid "A&bort"
 msgstr "&Erthylu"
 
-#: src/dcctransferpanel.cpp:152
+#: src/dcctransferpanel.cpp:153
+#, fuzzy
+msgid "Resend"
+msgstr "Ai&l-ddechrau"
+
+#: src/dcctransferpanel.cpp:154
 msgid "&Clear"
 msgstr "&Clirio"
 
-#: src/dcctransferpanel.cpp:154
+#: src/dcctransferpanel.cpp:156
 msgid "&Open File"
 msgstr "&Agor Ffeil"
 
-#: src/dcctransferpanel.cpp:155
+#: src/dcctransferpanel.cpp:157
 msgid "&Remove File"
 msgstr "&Gwaredu Ffeil"
 
-#: src/dcctransferpanel.cpp:156
+#: src/dcctransferpanel.cpp:158
 #, fuzzy
 msgid "File &Information"
 msgstr "Gwybodaeth Ychwanegol"
 
-#: src/dcctransferpanel.cpp:380
+#: src/dcctransferpanel.cpp:410
 #, c-format
 msgid ""
 "_n: Do you really want to remove the selected file?\n"
 "Do you really want to remove the selected %n files?"
 msgstr ""
 
-#: src/dcctransferpanel.cpp:381
+#: src/dcctransferpanel.cpp:411
 msgid "Delete Confirmation"
 msgstr ""
 
