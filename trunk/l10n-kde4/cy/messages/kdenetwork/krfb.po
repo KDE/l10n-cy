@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krfb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-04-11 05:39+0200\n"
+"POT-Creation-Date: 2007-04-12 05:48+0200\n"
 "PO-Revision-Date: 2004-01-06 16:42+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -20,85 +20,23 @@ msgstr ""
 "\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: configuration.cpp:443
-#, fuzzy
-msgid ""
-"When sending an invitation by email, note that everybody who reads this "
-"email will be able to connect to your computer for one hour, or until the "
-"first successful connection took place, whichever comes first. \n"
-"You should either encrypt the email or at least send it only in a secure "
-"network, but not over the Internet."
-msgstr ""
-"Pan yn anfon gwahoddiad drwy ebost, noder gall bob un a ddarllena'r ebost "
-"hwn gysylltu â'ch cyfrifiadur am un awr, neu nes i'r cysylltiad llwyddiannus "
-"cyntaf ddigwydd, pa un bynnag ddaw gyntaf.\n"
-" Dylech naill ai gêl-ysgrifo'r ebost neu o leiaf ei anfon mewn rhwydwaith "
-"diogel yn unig, ac nid dros y Rhyngrwyd."
-
-#: configuration.cpp:448
-msgid "Send Invitation via Email"
-msgstr "Anfon Gwahoddiad trwy Ebost"
-
-#: configuration.cpp:460
-msgid "Desktop Sharing (VNC) invitation"
-msgstr "Gwahoddiad Rhannu Bwrdd Gwaith (VNC)"
-
-#: configuration.cpp:461
-#, qt-format
-msgid ""
-"You have been invited to a VNC session. If you have the KDE Remote Desktop "
-"Connection installed, just click on the link below.\n"
-"\n"
-"vnc://invitation:%1@%2:%3\n"
-"\n"
-"Otherwise you can use any VNC client with the following parameters:\n"
-"\n"
-"Host: %4:%5\n"
-"Password: %6\n"
-"\n"
-"Alternatively you can click on the link below to start the VNC session\n"
-"within your web browser.\n"
-"\n"
-"\thttp://%7:%8/\n"
-"\n"
-"For security reasons this invitation will expire at %9."
-msgstr ""
-"Rydych wedi'ch gwahodd i sesiwn VNC. Os ose gennych Gysylltiad Penbwrdd Pell "
-"KDE wedi'i sefydlu, cliciwch ar y cyswllt isod.\n"
-" \n"
-" vnc://invitation:%1@%2:%3\n"
-" \n"
-" Fel arall gallwch ddefnyddio unrhyw ddibynnydd VNC â'r paramedrau "
-"canlynol:\n"
-" \n"
-" Gwesteiwr:%4:%5\n"
-" Cyfrinair:%6\n"
-" \n"
-" Yn lle hynny gallwch glicio ar y cyswllt isod i ddechrau sesiwn VNC\n"
-" o fewn eich porwr gwe.\n"
-" \n"
-" \thttp://%7.%8/\n"
-" \n"
-" Am resymau diogelwch daw'r gwahoddiad yma i ben am %9."
-
-#: connectioncontroller.cpp:91
+#: connectioncontroller.cpp:92
 #, fuzzy, qt-format
 #| msgid "Accepted uninvited connection from %1"
 msgid "Attepted uninvited connection from %1: connection refused"
 msgstr "Derbynwyd cysylltiad anwahoddedig o %1"
 
-#: connectioncontroller.cpp:98 rfbcontroller.cpp:761
+#: connectioncontroller.cpp:99
 #, qt-format
 msgid "Accepted uninvited connection from %1"
 msgstr "Derbynwyd cysylltiad anwahoddedig o %1"
 
-#: connectioncontroller.cpp:106 rfbcontroller.cpp:769
+#: connectioncontroller.cpp:107
 #, qt-format
 msgid "Received connection from %1, on hold (waiting for confirmation)"
 msgstr "Derbynwyd cysylltiad o %1, wedi' ddal (yn aros am wiriad)"
 
-#: connectioncontroller.cpp:152 connectioncontroller.cpp:156
-#: rfbcontroller.cpp:705 rfbcontroller.cpp:710
+#: connectioncontroller.cpp:153 connectioncontroller.cpp:157
 #, qt-format
 msgid "Failed login attempt from %1: wrong password"
 msgstr "Cais mewngofnodi methedig o %1: cyfrinair anghywir"
@@ -158,7 +96,7 @@ msgstr ""
 "cyfrinair parhaol ar gyfer Rhannu Penbwrdd, caniatewch \"Cysylltiadau "
 "Anwahoddedig\" yn y ffurfweddiad.\">Rhagor ynglyn â gwahoddiadau...</a>"
 
-#: krfbserver.cpp:179 rfbcontroller.cpp:375
+#: krfbserver.cpp:179
 #, qt-format
 msgid "%1@%2 (shared desktop)"
 msgstr "%1@%2 (Penbwrdd wedi'i Rannu)"
@@ -641,38 +579,6 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kyfieithu@dotmon.com"
 
-#: rfbcontroller.cpp:513
-#, qt-format
-msgid "User accepts connection from %1"
-msgstr "Derbynna'r defnyddiwr gysylltiad o %1"
-
-#: rfbcontroller.cpp:526
-#, qt-format
-msgid "User refuses connection from %1"
-msgstr "Gwrthoda'r defnyddiwr gysylltiad o %1"
-
-#: rfbcontroller.cpp:576
-#, qt-format
-msgid "Closed connection: %1."
-msgstr "Ceuwyd y Cysylltiad: %1."
-
-#: rfbcontroller.cpp:751
-#, qt-format
-msgid "Connection refused from %1, already connected."
-msgstr "Gwrthodwyd cysylltiad o %1, eisioes yn gysylltiedig."
-
-#: rfbcontroller.cpp:894
-msgid ""
-"Your X11 Server does not support the required XTest extension version 2.2. "
-"Sharing your desktop is not possible."
-msgstr ""
-"Nid yw'ch Gweinydd X11 yn cynnal yr estyniad XTest angenrheidiol fersiwn "
-"2.2. Nid yw rhannu'ch penbwrdd yn bosib."
-
-#: rfbcontroller.cpp:895
-msgid "Desktop Sharing Error"
-msgstr "Gwall Rhannu Penbwrdd"
-
 #: trayicon.cpp:39 trayicon.cpp:89
 msgid "Desktop Sharing - disconnected"
 msgstr "Rhannu Bwrdd Gwaith - datgysylltwyd"
@@ -698,6 +604,84 @@ msgstr "Rhannu Bwrdd Gwaith - Cysylltwyd gyda %1"
 #: trayicon.cpp:92
 msgid "The remote user has closed the connection."
 msgstr "Ceuodd y defnyddiwr pell y cysylltiad."
+
+#, fuzzy
+#~ msgid ""
+#~ "When sending an invitation by email, note that everybody who reads this "
+#~ "email will be able to connect to your computer for one hour, or until the "
+#~ "first successful connection took place, whichever comes first. \n"
+#~ "You should either encrypt the email or at least send it only in a secure "
+#~ "network, but not over the Internet."
+#~ msgstr ""
+#~ "Pan yn anfon gwahoddiad drwy ebost, noder gall bob un a ddarllena'r ebost "
+#~ "hwn gysylltu â'ch cyfrifiadur am un awr, neu nes i'r cysylltiad "
+#~ "llwyddiannus cyntaf ddigwydd, pa un bynnag ddaw gyntaf.\n"
+#~ " Dylech naill ai gêl-ysgrifo'r ebost neu o leiaf ei anfon mewn rhwydwaith "
+#~ "diogel yn unig, ac nid dros y Rhyngrwyd."
+
+#~ msgid "Send Invitation via Email"
+#~ msgstr "Anfon Gwahoddiad trwy Ebost"
+
+#~ msgid "Desktop Sharing (VNC) invitation"
+#~ msgstr "Gwahoddiad Rhannu Bwrdd Gwaith (VNC)"
+
+#~ msgid ""
+#~ "You have been invited to a VNC session. If you have the KDE Remote "
+#~ "Desktop Connection installed, just click on the link below.\n"
+#~ "\n"
+#~ "vnc://invitation:%1@%2:%3\n"
+#~ "\n"
+#~ "Otherwise you can use any VNC client with the following parameters:\n"
+#~ "\n"
+#~ "Host: %4:%5\n"
+#~ "Password: %6\n"
+#~ "\n"
+#~ "Alternatively you can click on the link below to start the VNC session\n"
+#~ "within your web browser.\n"
+#~ "\n"
+#~ "\thttp://%7:%8/\n"
+#~ "\n"
+#~ "For security reasons this invitation will expire at %9."
+#~ msgstr ""
+#~ "Rydych wedi'ch gwahodd i sesiwn VNC. Os ose gennych Gysylltiad Penbwrdd "
+#~ "Pell KDE wedi'i sefydlu, cliciwch ar y cyswllt isod.\n"
+#~ " \n"
+#~ " vnc://invitation:%1@%2:%3\n"
+#~ " \n"
+#~ " Fel arall gallwch ddefnyddio unrhyw ddibynnydd VNC â'r paramedrau "
+#~ "canlynol:\n"
+#~ " \n"
+#~ " Gwesteiwr:%4:%5\n"
+#~ " Cyfrinair:%6\n"
+#~ " \n"
+#~ " Yn lle hynny gallwch glicio ar y cyswllt isod i ddechrau sesiwn VNC\n"
+#~ " o fewn eich porwr gwe.\n"
+#~ " \n"
+#~ " \thttp://%7.%8/\n"
+#~ " \n"
+#~ " Am resymau diogelwch daw'r gwahoddiad yma i ben am %9."
+
+#~ msgid "User accepts connection from %1"
+#~ msgstr "Derbynna'r defnyddiwr gysylltiad o %1"
+
+#~ msgid "User refuses connection from %1"
+#~ msgstr "Gwrthoda'r defnyddiwr gysylltiad o %1"
+
+#~ msgid "Closed connection: %1."
+#~ msgstr "Ceuwyd y Cysylltiad: %1."
+
+#~ msgid "Connection refused from %1, already connected."
+#~ msgstr "Gwrthodwyd cysylltiad o %1, eisioes yn gysylltiedig."
+
+#~ msgid ""
+#~ "Your X11 Server does not support the required XTest extension version "
+#~ "2.2. Sharing your desktop is not possible."
+#~ msgstr ""
+#~ "Nid yw'ch Gweinydd X11 yn cynnal yr estyniad XTest angenrheidiol fersiwn "
+#~ "2.2. Nid yw rhannu'ch penbwrdd yn bosib."
+
+#~ msgid "Desktop Sharing Error"
+#~ msgstr "Gwall Rhannu Penbwrdd"
 
 #, fuzzy
 #~ msgid ""
