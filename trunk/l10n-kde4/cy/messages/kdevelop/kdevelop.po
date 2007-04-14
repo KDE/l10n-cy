@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: all.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-04-13 06:11+0200\n"
+"POT-Creation-Date: 2007-04-14 05:46+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -183,13 +183,13 @@ msgstr "Neges"
 
 #. i18n: tag string
 #. i18n: file ./lib/plugins/vcs/cvs/editorsview.ui line 13
-#: rc.cpp:66 lib/plugins/vcs/cvs/cvs_part.cpp:396
+#: rc.cpp:66 lib/plugins/vcs/cvs/cvspart.cpp:396
 msgid "Editors"
 msgstr "Golygyddion"
 
 #. i18n: tag string
 #. i18n: file ./lib/plugins/vcs/cvs/logview.ui line 13
-#: rc.cpp:69 lib/plugins/vcs/cvs/cvs_part.cpp:281
+#: rc.cpp:69 lib/plugins/vcs/cvs/cvspart.cpp:281
 #, fuzzy
 #| msgid "Long"
 msgid "Log"
@@ -1740,34 +1740,89 @@ msgstr "Dogfen i'w hagor"
 msgid "Process exited with status %1"
 msgstr ""
 
-#: lib/plugins/vcs/cvs/editorsview.cpp:55
+#: lib/plugins/vcs/cvs/editorsview.cpp:47
 msgid "Listing editors failed"
 msgstr ""
 
-#: lib/plugins/vcs/cvs/editorsview.cpp:107
+#: lib/plugins/vcs/cvs/editorsview.cpp:62
 msgid "No files from your query are marked as being edited."
 msgstr ""
 
-#: lib/plugins/vcs/cvs/editorsview.cpp:115 lib/plugins/vcs/cvs/logview.cpp:119
+#: lib/plugins/vcs/cvs/editorsview.cpp:70 lib/plugins/vcs/cvs/logview.cpp:67
 msgid "User"
 msgstr "Defnyddiwr"
 
-#: lib/plugins/vcs/cvs/editorsview.cpp:116 lib/plugins/vcs/cvs/logview.cpp:120
+#: lib/plugins/vcs/cvs/editorsview.cpp:71 lib/plugins/vcs/cvs/logview.cpp:68
 #: lib/plugins/vcs/subversion/svn_models.cpp:209
 #: lib/plugins/vcs/subversion/svn_models.cpp:264
 msgid "Date"
 msgstr "Dyddiad"
 
-#: lib/plugins/vcs/cvs/editorsview.cpp:117
+#: lib/plugins/vcs/cvs/editorsview.cpp:72
 #, fuzzy
 #| msgid "Search engine"
 msgid "Machine"
 msgstr "Peiriant Chwilio"
 
-#: lib/plugins/vcs/cvs/editorsview.cpp:118 plugins/snippet/snippetview.cpp:135
+#: lib/plugins/vcs/cvs/editorsview.cpp:73 plugins/snippet/snippetview.cpp:135
 #, fuzzy
 msgid "Repository"
 msgstr "&Adfer"
+
+#: lib/plugins/vcs/cvs/cvspart.cpp:96
+#, fuzzy
+#| msgid "Show"
+msgid "Show log"
+msgstr "Dangos"
+
+#: lib/plugins/vcs/cvs/cvspart.cpp:100
+#, fuzzy
+msgid "Show differences..."
+msgstr "Hoffterau"
+
+#: lib/plugins/vcs/cvs/cvspart.cpp:104
+msgid "Edit..."
+msgstr "Golygu..."
+
+#: lib/plugins/vcs/cvs/cvspart.cpp:108
+#, fuzzy
+msgid "Unedit..."
+msgstr "Datosod"
+
+#: lib/plugins/vcs/cvs/cvspart.cpp:112
+#, fuzzy
+msgid "Show Editors..."
+msgstr "Golygydd"
+
+#: lib/plugins/vcs/cvs/cvspart.cpp:116
+#, fuzzy
+msgid "Add Files..."
+msgstr "Ychwanegu Ffeil"
+
+#: lib/plugins/vcs/cvs/cvspart.cpp:120
+#, fuzzy
+#| msgid "Customize..."
+msgid "Commit Files..."
+msgstr "Addasu..."
+
+#: lib/plugins/vcs/cvs/cvspart.cpp:124
+#, fuzzy
+msgid "Update Files..."
+msgstr "Diweddaru"
+
+#: lib/plugins/vcs/cvs/cvspart.cpp:350
+#: lib/plugins/vcs/subversion/subversion_view.cpp:149
+msgid "Diff"
+msgstr "Diff"
+
+#: lib/plugins/vcs/cvs/cvspart.cpp:372
+msgid "Do you really want to unedit the selected files?"
+msgstr ""
+
+#: lib/plugins/vcs/cvs/cvspart.cpp:373
+#, fuzzy
+msgid "Unedit Files"
+msgstr "Canfod mewn Ffeiliau"
 
 #: lib/plugins/vcs/cvs/cvsmainview.cpp:37
 msgid "CVS"
@@ -1777,73 +1832,18 @@ msgstr ""
 msgid "Job exited normally"
 msgstr ""
 
-#: lib/plugins/vcs/cvs/logview.cpp:55
+#: lib/plugins/vcs/cvs/logview.cpp:48
 msgid "Listing the files's log failed"
 msgstr ""
 
-#: lib/plugins/vcs/cvs/logview.cpp:113
+#: lib/plugins/vcs/cvs/logview.cpp:61
 msgid "No log information found"
 msgstr ""
 
-#: lib/plugins/vcs/cvs/logview.cpp:118
+#: lib/plugins/vcs/cvs/logview.cpp:66
 #, fuzzy
 msgid "Revision"
 msgstr "Fersiwn %1"
-
-#: lib/plugins/vcs/cvs/cvs_part.cpp:96
-#, fuzzy
-#| msgid "Show"
-msgid "Show log"
-msgstr "Dangos"
-
-#: lib/plugins/vcs/cvs/cvs_part.cpp:100
-#, fuzzy
-msgid "Show differences..."
-msgstr "Hoffterau"
-
-#: lib/plugins/vcs/cvs/cvs_part.cpp:104
-msgid "Edit..."
-msgstr "Golygu..."
-
-#: lib/plugins/vcs/cvs/cvs_part.cpp:108
-#, fuzzy
-msgid "Unedit..."
-msgstr "Datosod"
-
-#: lib/plugins/vcs/cvs/cvs_part.cpp:112
-#, fuzzy
-msgid "Show Editors..."
-msgstr "Golygydd"
-
-#: lib/plugins/vcs/cvs/cvs_part.cpp:116
-#, fuzzy
-msgid "Add Files..."
-msgstr "Ychwanegu Ffeil"
-
-#: lib/plugins/vcs/cvs/cvs_part.cpp:120
-#, fuzzy
-#| msgid "Customize..."
-msgid "Commit Files..."
-msgstr "Addasu..."
-
-#: lib/plugins/vcs/cvs/cvs_part.cpp:124
-#, fuzzy
-msgid "Update Files..."
-msgstr "Diweddaru"
-
-#: lib/plugins/vcs/cvs/cvs_part.cpp:350
-#: lib/plugins/vcs/subversion/subversion_view.cpp:149
-msgid "Diff"
-msgstr "Diff"
-
-#: lib/plugins/vcs/cvs/cvs_part.cpp:372
-msgid "Do you really want to unedit the selected files?"
-msgstr ""
-
-#: lib/plugins/vcs/cvs/cvs_part.cpp:373
-#, fuzzy
-msgid "Unedit Files"
-msgstr "Canfod mewn Ffeiliau"
 
 #: lib/plugins/vcs/subversion/subversion_part.cpp:81
 msgid "Checkout from repository..."
