@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krfb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-04-18 05:45+0200\n"
+"POT-Creation-Date: 2007-04-19 05:47+0200\n"
 "PO-Revision-Date: 2004-01-06 16:42+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -54,12 +54,12 @@ msgstr "Derbyn Cysylltiad"
 msgid "Refuse Connection"
 msgstr "Gwrthod Cysylltiad"
 
-#: invitedialog.cpp:35 manageinvitationsdialog.cpp:54
+#: invitedialog.cpp:35 manageinvitationsdialog.cpp:55
 #, fuzzy
 msgid "Invitation"
 msgstr "Trefnu &Gwahoddiadau"
 
-#: invitedialog.cpp:71 rc.cpp:57
+#: invitedialog.cpp:71 rc.cpp:60
 #, qt-format
 msgid "&Manage Invitations (%1)..."
 msgstr "&Trefnu Gwahoddiadau (%1)..."
@@ -94,12 +94,12 @@ msgstr ""
 "cyfrinair parhaol ar gyfer Rhannu Penbwrdd, caniatewch \"Cysylltiadau "
 "Anwahoddedig\" yn y ffurfweddiad.\">Rhagor ynglyn â gwahoddiadau...</a>"
 
-#: krfbserver.cpp:184
+#: krfbserver.cpp:185 krfbserver.cpp:202
 #, qt-format
 msgid "%1@%2 (shared desktop)"
 msgstr "%1@%2 (Penbwrdd wedi'i Rannu)"
 
-#: krfbserver.cpp:273
+#: krfbserver.cpp:279
 msgid ""
 "Your X11 Server does not support the required XTest extension version 2.2. "
 "Sharing your desktop is not possible."
@@ -107,7 +107,7 @@ msgstr ""
 "Nid yw'ch Gweinydd X11 yn cynnal yr estyniad XTest angenrheidiol fersiwn "
 "2.2. Nid yw rhannu'ch penbwrdd yn bosib."
 
-#: krfbserver.cpp:274
+#: krfbserver.cpp:280
 msgid "Desktop Sharing Error"
 msgstr "Gwall Rhannu Penbwrdd"
 
@@ -115,7 +115,7 @@ msgstr "Gwall Rhannu Penbwrdd"
 msgid "VNC-compatible server to share KDE desktops"
 msgstr "Gweinydd VNC-gytûn i rannu penbyrddau KDE"
 
-#: main.cpp:46 trayicon.cpp:77 trayicon.cpp:90
+#: main.cpp:46 trayicon.cpp:74 trayicon.cpp:87
 msgid "Desktop Sharing"
 msgstr "Rhannu Penbwrdd"
 
@@ -155,7 +155,7 @@ msgstr "Delwedd ochr cysylltiad"
 msgid "KDesktop background deactivation"
 msgstr "Datweithredoli cefndir KDesktop"
 
-#: manageinvitationsdialog.cpp:86
+#: manageinvitationsdialog.cpp:93
 #, fuzzy
 msgid ""
 "An invitation creates a one-time password that allows the receiver to "
@@ -185,12 +185,26 @@ msgstr ""
 "cyfrinair parhaol ar gyfer Rhannu Penbwrdd, caniatewch \"Cysylltiadau "
 "Anwahoddedig\" yn y ffurfweddiad.\">Rhagor ynglyn â gwahoddiadau...</a>"
 
-#: manageinvitationsdialog.cpp:128
+#: manageinvitationsdialog.cpp:137
 msgid "Network"
 msgstr ""
 
-#: manageinvitationsdialog.cpp:129
+#: manageinvitationsdialog.cpp:138
 msgid "Security"
+msgstr ""
+
+#: manageinvitationsdialog.cpp:146
+msgid "<qt>Are you sure you want to delete all invitations?</qt>"
+msgstr ""
+
+#: manageinvitationsdialog.cpp:147 manageinvitationsdialog.cpp:163
+#, fuzzy
+#| msgid "Delete all invitations"
+msgid "Confirm delete Invitations"
+msgstr "Dileu pob gwahoddiad"
+
+#: manageinvitationsdialog.cpp:162
+msgid "<qt>Are you sure you want to delete this invitation?</qt>"
 msgstr ""
 
 #: personalinvitedialog.cpp:35
@@ -264,19 +278,23 @@ msgstr "Derbynwyd cysylltiad anwahoddedig o %1"
 msgid "Uninvited connections password"
 msgstr "Derbynwyd cysylltiad anwahoddedig o %1"
 
-#: rc.cpp:21
-msgid "Use default port"
+#: rc.cpp:21 rc.cpp:78
+msgid "Announce the service on the local network"
 msgstr ""
 
 #: rc.cpp:24
-msgid "Listening Port:"
+msgid "Use default port"
 msgstr ""
 
 #: rc.cpp:27
+msgid "Listening Port:"
+msgstr ""
+
+#: rc.cpp:30
 msgid "Attention"
 msgstr "Taler Sylw"
 
-#: rc.cpp:30
+#: rc.cpp:33
 msgid ""
 "Somebody is requesting a connection to your computer. Granting this will "
 "allow the remote user to watch your desktop. "
@@ -284,11 +302,11 @@ msgstr ""
 "Mae rhywun yn ceisio cysylltiad i'ch cyfrifiadur. Bydd caniatáu hyn yn "
 "galluogi i'r defnyddiwr pell wylio'ch penbwrdd."
 
-#: rc.cpp:33
+#: rc.cpp:36
 msgid "123.234.123.234"
 msgstr "123.234.123.234"
 
-#: rc.cpp:36
+#: rc.cpp:39
 msgid ""
 "If you turn this option on, the remote user can enter keystrokes and use "
 "your mouse pointer. This gives them full control over your computer, so be "
@@ -300,15 +318,15 @@ msgstr ""
 "dros eich cyfrifiadur, felly byddwch yn ofalus. Pan fo'r dewisiad yn "
 "analluog, gwylio'ch sgrîn yn unig gall y defnyddiwr pell ei wneud."
 
-#: rc.cpp:39
+#: rc.cpp:42
 msgid "Allow remote user to &control keyboard and mouse"
 msgstr "Caniatáu i'r defnyddiwr pell &reoli'r bysellfwrdd a'r lygoden"
 
-#: rc.cpp:42
+#: rc.cpp:45
 msgid "Remote system:"
 msgstr "Cysawd pell:"
 
-#: rc.cpp:45 rc.cpp:135
+#: rc.cpp:48 rc.cpp:141
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -322,7 +340,7 @@ msgid ""
 "body></html>"
 msgstr ""
 
-#: rc.cpp:51
+#: rc.cpp:54
 msgid ""
 "This button will start your email application with a pre-configured text "
 "that explains to the recipient how to connect to your computer. "
@@ -330,11 +348,11 @@ msgstr ""
 "Dechreua'r botwm yma eich cymhwysiad ebost gyda testun parod sy'n esbonio "
 "i'r derbynnydd sut i gysylltu â'ch cyfrifiadur."
 
-#: rc.cpp:54
+#: rc.cpp:57
 msgid "Invite via &Email..."
 msgstr "Gwahodd drwy &Ebost..."
 
-#: rc.cpp:60
+#: rc.cpp:63
 msgid ""
 "Create a new invitation and display the connection data. Use this option if "
 "you want to invite somebody personally, for example, to give the connection "
@@ -344,57 +362,57 @@ msgstr ""
 "hoffech wahodd rhywun yn bersonol, er eghraifft, i roi'r data cysylltiad "
 "dros y ffôn."
 
-#: rc.cpp:63
+#: rc.cpp:66
 msgid "Create &Personal Invitation..."
 msgstr "Creu Gwahoddiad &Personol..."
 
-#: rc.cpp:66 rc.cpp:90
+#: rc.cpp:69 rc.cpp:96
 msgid "Welcome to KDE Desktop Sharing"
 msgstr "Croeso i Rannu Penbwrdd KDE"
 
-#: rc.cpp:69
+#: rc.cpp:72
 msgid "Use the default port for VNC (5900)"
 msgstr ""
 
-#: rc.cpp:72
+#: rc.cpp:75
 msgid "This is the port on wich krfb will listen."
 msgstr ""
 
-#: rc.cpp:75
+#: rc.cpp:81
 msgid "Allow remote connections to manage the desktop."
 msgstr ""
 
-#: rc.cpp:78
+#: rc.cpp:84
 msgid "Ask before allowing a remote connection."
 msgstr ""
 
-#: rc.cpp:81
+#: rc.cpp:87
 msgid "Allow connections without an invitation."
 msgstr ""
 
-#: rc.cpp:84
+#: rc.cpp:90
 #, fuzzy
 #| msgid "Accepted uninvited connection from %1"
 msgid "Password for uninvited connections."
 msgstr "Derbynwyd cysylltiad anwahoddedig o %1"
 
-#: rc.cpp:87
+#: rc.cpp:93
 msgid "Manage Invitations - Desktop Sharing"
 msgstr "Trefnu Gwahoddiadau - Rhannu Penbwrdd"
 
-#: rc.cpp:93
+#: rc.cpp:99
 msgid "Created"
 msgstr "Crëwyd"
 
-#: rc.cpp:96
+#: rc.cpp:102
 msgid "Expire Time"
 msgstr ""
 
-#: rc.cpp:99
+#: rc.cpp:105
 msgid "Delete the selected invitation"
 msgstr "Dileu'r gwahoddiad dewisiedig"
 
-#: rc.cpp:102
+#: rc.cpp:108
 msgid ""
 "Delete the selected invitation. The invited person will not be able to "
 "connect using this invitation anymore."
@@ -402,47 +420,47 @@ msgstr ""
 "Dileu'r gwahoddiad dewisiedig. Ni fydd modd i'r person gwahoddiedig gysylltu "
 "gan ddefnyddio'r gwahoddiad yma mwyach."
 
-#: rc.cpp:105
+#: rc.cpp:111
 msgid "&Delete"
 msgstr ""
 
-#: rc.cpp:108
+#: rc.cpp:114
 msgid "Delete all invitations"
 msgstr "Dileu pob gwahoddiad"
 
-#: rc.cpp:111
+#: rc.cpp:117
 msgid "Deletes all open invitations."
 msgstr "Dileu pob gwahoddiad agored"
 
-#: rc.cpp:114
+#: rc.cpp:120
 msgid "Delete All"
 msgstr ""
 
-#: rc.cpp:117
+#: rc.cpp:123
 msgid "Send a new invitation via email..."
 msgstr "Anfon gwahoddiad newydd drwy ebost..."
 
-#: rc.cpp:120
+#: rc.cpp:126
 msgid "Click this button to send a new invitation via email."
 msgstr "Cliciwch ar y botwm yma i anfon gwahoddiad newydd drwy ebost."
 
-#: rc.cpp:123
+#: rc.cpp:129
 msgid "&New Email Invitation..."
 msgstr "Gwahoddiad Ebost &Newydd..."
 
-#: rc.cpp:126
+#: rc.cpp:132
 msgid "Create a new personal invitation..."
 msgstr "Creu gwahoddiad personol newydd..."
 
-#: rc.cpp:129
+#: rc.cpp:135
 msgid "Click this button to create a new personal invitation."
 msgstr "Cliciwch ar y botwm yma i greu gwahoddiad personol newydd."
 
-#: rc.cpp:132
+#: rc.cpp:138
 msgid "New &Personal Invitation..."
 msgstr "Gwahoddiad &Personol Newydd..."
 
-#: rc.cpp:141
+#: rc.cpp:147
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -459,19 +477,19 @@ msgid ""
 "body></html>"
 msgstr ""
 
-#: rc.cpp:148
+#: rc.cpp:154
 msgid "<b>Password:</b>"
 msgstr "<b>Cyfrinair:</b>"
 
-#: rc.cpp:151
+#: rc.cpp:157
 msgid "<b>Expiration time:</b>"
 msgstr "<b>Amser daw i ben:</b>"
 
-#: rc.cpp:154
+#: rc.cpp:160
 msgid "<b>Host:</b>"
 msgstr "<b>Gwesteiwr:</b>"
 
-#: rc.cpp:157
+#: rc.cpp:163
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -483,17 +501,17 @@ msgid ""
 "p></body></html>"
 msgstr ""
 
-#: rc.cpp:161
+#: rc.cpp:167
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "KGyfieithu - Meddalwedd Gymraeg"
 
-#: rc.cpp:162
+#: rc.cpp:168
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kyfieithu@dotmon.com"
 
-#: trayicon.cpp:38 trayicon.cpp:88
+#: trayicon.cpp:38 trayicon.cpp:85
 msgid "Desktop Sharing - disconnected"
 msgstr "Rhannu Bwrdd Gwaith - datgysylltwyd"
 
@@ -506,16 +524,16 @@ msgstr "Galluogi Rheolaeth Pell"
 msgid "Disable Remote Control"
 msgstr "Galluogi Rheolaeth Pell"
 
-#: trayicon.cpp:78
+#: trayicon.cpp:75
 msgid "The remote user has been authenticated and is now connected."
 msgstr "Dilyswyd y defnyddiwr pell ac mae'n gysylltiedig nawr."
 
-#: trayicon.cpp:81
+#: trayicon.cpp:78
 #, qt-format
 msgid "Desktop Sharing - connected with %1"
 msgstr "Rhannu Bwrdd Gwaith - Cysylltwyd gyda %1"
 
-#: trayicon.cpp:91
+#: trayicon.cpp:88
 msgid "The remote user has closed the connection."
 msgstr "Ceuodd y defnyddiwr pell y cysylltiad."
 
