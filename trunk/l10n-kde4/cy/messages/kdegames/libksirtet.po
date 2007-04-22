@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libksirtet\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-04-16 05:50+0200\n"
+"POT-Creation-Date: 2007-04-22 05:50+0200\n"
 "PO-Revision-Date: 2005-10-10 09:35+0100\n"
 "Last-Translator: Kevin Donnelly <kevin@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -24,23 +24,19 @@ msgstr ""
 msgid "Blocks removed"
 msgstr "Blociau wedi'u gwaredu"
 
-#: base/factory.cpp:25
-msgid "Core engine"
-msgstr "Peiriant craidd"
-
-#: base/field.cpp:15
+#: base/basefield.cpp:21
 msgid "Start"
 msgstr "Dechrau"
 
-#: base/field.cpp:15
+#: base/basefield.cpp:21
 msgid "Resume"
 msgstr "Ail-ddechrau"
 
-#: base/field.cpp:15
+#: base/basefield.cpp:21
 msgid "Proceed"
 msgstr "Mynd Ymlaen"
 
-#: base/field.cpp:40
+#: base/basefield.cpp:45
 #, qt-format
 msgid ""
 "%1\n"
@@ -49,7 +45,7 @@ msgstr ""
 "%1\n"
 "(Chwaraewr DA)"
 
-#: base/field.cpp:41
+#: base/basefield.cpp:46
 #, qt-format
 msgid ""
 "%1\n"
@@ -58,7 +54,7 @@ msgstr ""
 "%1\n"
 "(Chwaraewr dynol)"
 
-#: base/field.cpp:43
+#: base/basefield.cpp:48
 msgid ""
 "\n"
 "Waiting for server"
@@ -66,34 +62,38 @@ msgstr ""
 "\n"
 "Aros am weinydd"
 
-#: base/field.cpp:52
+#: base/basefield.cpp:57
 msgid "Stage #1"
 msgstr "Rhan #1"
 
-#: base/field.cpp:77
+#: base/basefield.cpp:82
 msgid "Arcade game"
 msgstr "Gêm Arcêd"
 
-#: base/field.cpp:111
+#: base/basefield.cpp:116
 msgid "Game paused"
 msgstr "Wedi'i seibio"
 
-#: base/field.cpp:122
+#: base/basefield.cpp:127
 msgid "Game over"
 msgstr "Gêm drosodd"
 
-#: base/field.cpp:125
+#: base/basefield.cpp:130
 msgid "The End"
 msgstr "Y Diwedd"
 
-#: base/field.cpp:127
+#: base/basefield.cpp:132
 #, qt-format
 msgid "Stage #%1 done"
 msgstr "Rhan #%1 wedi gorffen"
 
-#: base/field.cpp:136
+#: base/basefield.cpp:141
 msgid "Game Over"
 msgstr "Gêm Drosodd"
+
+#: base/factory.cpp:25
+msgid "Core engine"
+msgstr "Peiriant craidd"
 
 #: base/main.cpp:89
 msgid "Game"
@@ -377,43 +377,43 @@ msgstr "Dyfnder meddwl:"
 msgid "Piece glued"
 msgstr "Darn wedi'i gludo"
 
-#: common/field.cpp:45
+#: common/field.cpp:51
 msgid "Display the progress to complete the current level or stage."
 msgstr "Dangos y cynnydd i gwbwlhau'r  lefel neu ran gyfredol."
 
-#: common/field.cpp:52
+#: common/field.cpp:62
 msgid "Previous player's height"
 msgstr "Taldra'r chwaraewr blaenorol"
 
-#: common/field.cpp:62
+#: common/field.cpp:70
 msgid "Shadow of the current piece"
 msgstr "Cysgod y darn cyfredol"
 
-#: common/field.cpp:68
+#: common/field.cpp:75
 msgid "Next player's height"
 msgstr "Taldra'r chwaraewr nesaf"
 
-#: common/field.cpp:78
+#: common/field.cpp:85
 msgid "Next Tile"
 msgstr "Teil Nesaf"
 
-#: common/field.cpp:174
+#: common/field.cpp:177
 msgid "Elapsed time"
 msgstr "Amser sydd wedi mynd heibio"
 
-#: common/field.cpp:177
+#: common/field.cpp:180
 msgid "Display the elapsed time."
 msgstr "Dangos yr amser aeth heibio."
 
-#: common/field.cpp:178
+#: common/field.cpp:181
 msgid "Stage"
 msgstr "Rhan"
 
-#: common/field.cpp:181
+#: common/field.cpp:184
 msgid "Score"
 msgstr "Sgôr"
 
-#: common/field.cpp:184
+#: common/field.cpp:187
 msgid ""
 "<qt>Display the current score.<br/>It turns <font color=\"blue\">blue</font> "
 "if it is a highscore and <font color=\"red\">red</font> if it is the best "
@@ -423,7 +423,7 @@ msgstr ""
 "font> os mae'n sgôr gorau ac yn <font color=\"red\">goch</font> os mae'n "
 "sgôr gorau lleol.</qt>"
 
-#: common/field.cpp:185 common/highscores.cpp:15
+#: common/field.cpp:188 common/highscores.cpp:15
 msgid "Level"
 msgstr "Lefel"
 
