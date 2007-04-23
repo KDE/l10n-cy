@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: all.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-04-21 05:46+0200\n"
+"POT-Creation-Date: 2007-04-23 05:42+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -165,7 +165,8 @@ msgid "Tag/Branch:"
 msgstr ""
 
 #: rc.cpp:102 rc.cpp:147 rc.cpp:201 rc.cpp:510 rc.cpp:516 rc.cpp:531
-#: rc.cpp:611
+#: rc.cpp:648 rc.cpp:654 rc.cpp:657 rc.cpp:678 rc.cpp:780 rc.cpp:804
+#: rc.cpp:849 rc.cpp:885 rc.cpp:945 rc.cpp:999 rc.cpp:1079
 #, fuzzy
 msgid "Form"
 msgstr "Ffurflenni"
@@ -175,7 +176,7 @@ msgstr "Ffurflenni"
 msgid "Commit to Repository"
 msgstr "&Adfer"
 
-#: rc.cpp:108
+#: rc.cpp:108 rc.cpp:588
 msgid "Message"
 msgstr "Neges"
 
@@ -183,7 +184,7 @@ msgstr "Neges"
 msgid "Editors"
 msgstr "Golygyddion"
 
-#: rc.cpp:114 lib/plugins/vcs/cvs/cvspart.cpp:347
+#: rc.cpp:114 rc.cpp:633 rc.cpp:663 lib/plugins/vcs/cvs/cvspart.cpp:347
 #, fuzzy
 #| msgid "Long"
 msgid "Log"
@@ -297,7 +298,7 @@ msgstr "Alt+1"
 msgid "C&ancel"
 msgstr "&Rhaeadr"
 
-#: rc.cpp:198 rc.cpp:563
+#: rc.cpp:198 rc.cpp:1031
 #, fuzzy
 msgid "Alt+A"
 msgstr "Alt+1"
@@ -336,12 +337,12 @@ msgstr ""
 msgid "Specify By number"
 msgstr ""
 
-#: rc.cpp:228 rc.cpp:285 rc.cpp:294 rc.cpp:605
+#: rc.cpp:228 rc.cpp:285 rc.cpp:294 rc.cpp:1073
 #: lib/plugins/vcs/subversion/svn_blamewidgets.cpp:56
 msgid "OK"
 msgstr ""
 
-#: rc.cpp:231 rc.cpp:288 rc.cpp:297 rc.cpp:608
+#: rc.cpp:231 rc.cpp:288 rc.cpp:297 rc.cpp:1076
 #: lib/plugins/vcs/subversion/svn_blamewidgets.cpp:57
 #, fuzzy
 msgid "Cancel"
@@ -425,12 +426,12 @@ msgstr "&Adfer"
 msgid "&Build"
 msgstr ""
 
-#: rc.cpp:342 rc.cpp:671
+#: rc.cpp:342 rc.cpp:1139
 #, fuzzy
 msgid "&File"
 msgstr "&Ffeiliau:"
 
-#: rc.cpp:345 rc.cpp:674
+#: rc.cpp:345 rc.cpp:1142
 #, fuzzy
 msgid "&Edit"
 msgstr "&Golygu..."
@@ -448,7 +449,7 @@ msgstr "&Cywaith"
 msgid "Bu&ild"
 msgstr ""
 
-#: rc.cpp:357 rc.cpp:668
+#: rc.cpp:357 rc.cpp:1136
 msgid "&Debug"
 msgstr ""
 
@@ -471,7 +472,7 @@ msgstr "Gosodiadau"
 msgid "&Help"
 msgstr "Helo"
 
-#: rc.cpp:372 rc.cpp:680
+#: rc.cpp:372 rc.cpp:1148
 #, fuzzy
 msgid "Main Toolbar"
 msgstr "Bar offer"
@@ -497,11 +498,12 @@ msgstr ""
 msgid "Add Profile"
 msgstr "&Ychwanegu Ffeil..."
 
-#: rc.cpp:390 rc.cpp:438 rc.cpp:453 rc.cpp:492 rc.cpp:584 rc.cpp:599
+#: rc.cpp:390 rc.cpp:438 rc.cpp:453 rc.cpp:492 rc.cpp:906 rc.cpp:1052
+#: rc.cpp:1067
 msgid "Name"
 msgstr "Enw"
 
-#: rc.cpp:393
+#: rc.cpp:393 rc.cpp:894
 msgid "Description"
 msgstr "Disgrifiad"
 
@@ -511,17 +513,17 @@ msgstr "Disgrifiad"
 msgid "Remove Profile"
 msgstr "Gwaredu ffeil"
 
-#: rc.cpp:399 rc.cpp:459 rc.cpp:534
+#: rc.cpp:399 rc.cpp:459 rc.cpp:1002
 #, fuzzy
 msgid "Properties"
 msgstr "P&riodweddau"
 
-#: rc.cpp:402
+#: rc.cpp:402 rc.cpp:792
 #, fuzzy
 msgid "Add"
 msgstr "&Ychwcanegu"
 
-#: rc.cpp:405 plugins/snippet/snippetview.cpp:154
+#: rc.cpp:405 rc.cpp:798 plugins/snippet/snippetview.cpp:154
 #, fuzzy
 msgid "Remove"
 msgstr "G&waredu"
@@ -658,30 +660,723 @@ msgstr ""
 msgid "Number of simultaneous jobs:"
 msgstr ""
 
+#: rc.cpp:534
+msgid "Connection"
+msgstr "Cysylltiad"
+
 #: rc.cpp:537
+#, fuzzy
+msgid "Local server"
+msgstr "Cywaith Newydd"
+
+#: rc.cpp:540
+#, fuzzy
+#| msgid "&Connections:"
+msgid "Connected clients:"
+msgstr "C&ysylltiadau :"
+
+#: rc.cpp:543
+msgid "Allow incoming"
+msgstr ""
+
+#: rc.cpp:546
+#, fuzzy
+#| msgid "Never"
+msgid "Servers"
+msgstr "Byth"
+
+#: rc.cpp:549
+msgid "the password for logging into the server"
+msgstr ""
+
+#: rc.cpp:552
+msgid ""
+"connect to the given server using the given login-information(if the name is "
+"blank the local name is used)"
+msgstr ""
+
+#: rc.cpp:555
+#, fuzzy
+#| msgid "Connec&t"
+msgid "Connect"
+msgstr "Cysyll&tu"
+
+#: rc.cpp:558
+msgid "the server to connect"
+msgstr ""
+
+#: rc.cpp:561
+msgid "Connected servers:"
+msgstr ""
+
+#: rc.cpp:564
+msgid "the user-name for logging into the server"
+msgstr ""
+
+#: rc.cpp:567 rc.cpp:870
+#, fuzzy
+#| msgid "Developer"
+msgid "Developers"
+msgstr "Datblygwr"
+
+#: rc.cpp:570
+#, fuzzy
+#| msgid "&Available:"
+msgid "Available:"
+msgstr "&Ar gael:"
+
+#: rc.cpp:573
+msgid "Collaborating:"
+msgstr ""
+
+#: rc.cpp:576
+#, fuzzy
+#| msgid "Message"
+msgid "Messaging"
+msgstr "Neges"
+
+#: rc.cpp:579
+msgid "target-user"
+msgstr ""
+
+#: rc.cpp:582 plugins/teamwork/kdevteamwork.cpp:1155
+msgid "Answer To"
+msgstr ""
+
+#: rc.cpp:585 rc.cpp:864
+msgid "Type:"
+msgstr "Math:"
+
+#: rc.cpp:591 lib/plugins/vcs/subversion/svn_models.cpp:277
+#, fuzzy
+msgid "Comment"
+msgstr "S&ylwad:"
+
+#: rc.cpp:594
+msgid "Source-discussion"
+msgstr ""
+
+#: rc.cpp:597
+msgid "Thread:"
+msgstr ""
+
+#: rc.cpp:600
+#, fuzzy
+#| msgid "Preferences"
+msgid "Reference:"
+msgstr "Hoffterau"
+
+#: rc.cpp:603 rc.cpp:627 rc.cpp:636
+#, fuzzy
+#| msgid "Clean"
+msgid "Clear"
+msgstr "Glan"
+
+#: rc.cpp:606
+#, fuzzy
+msgid "&Send message"
+msgstr "&Neges:"
+
+#: rc.cpp:609
+msgid "S"
+msgstr ""
+
+#: rc.cpp:612
+msgid "the message you wish to send"
+msgstr ""
+
+#: rc.cpp:615
+#, fuzzy
+#| msgid "Local"
+msgid "Local state"
+msgstr "Lleol"
+
+#: rc.cpp:618
+msgid "Manage local patches"
+msgstr ""
+
+#: rc.cpp:621 rc.cpp:852
+msgid "Messages"
+msgstr "Negeseuon"
+
+#: rc.cpp:624
+#, fuzzy
+#| msgid "All Files"
+msgid "All Users"
+msgstr "Pob Ffeil"
+
+#: rc.cpp:630 rc.cpp:891 rc.cpp:951
+#, fuzzy
+msgid "History"
+msgstr "&Adfer"
+
+#: rc.cpp:639
+#, fuzzy
+#| msgid "Save All"
+msgid "Save"
+msgstr "Cadw Popeth"
+
+#: rc.cpp:642 plugins/teamwork/kdevteamwork.cpp:231
+#: plugins/codeview/kdevcodeview.cpp:112 plugins/codeview/kdevcodeview.cpp:116
+#, fuzzy
+msgid "Filter"
+msgstr "Ffeil: %1"
+
+#: rc.cpp:645
+#, fuzzy
+msgid "Enable Collaboration"
+msgstr "Galluogi"
+
+#: rc.cpp:651
+msgid "Jump to Position"
+msgstr ""
+
+#: rc.cpp:660
+msgid "Timestamps"
+msgstr ""
+
+#: rc.cpp:666
+msgid "To Tail State"
+msgstr ""
+
+#: rc.cpp:669
+msgid "Clear Log"
+msgstr ""
+
+#: rc.cpp:672
+msgid "Current State:    Tail State: "
+msgstr ""
+
+#: rc.cpp:675
+#, fuzzy
+#| msgid "Find"
+msgid "Finish"
+msgstr "Canfod:"
+
+#: rc.cpp:681
+#, fuzzy
+#| msgid "Tile"
+msgid "Tail"
+msgstr "Teilio"
+
+#: rc.cpp:684
+#, fuzzy
+#| msgctxt "no version control system"
+#| msgid "None"
+msgid "None"
+msgstr "Dim"
+
+#: rc.cpp:687
+#, fuzzy
+#| msgid "Enable"
+msgid "Enable All(x)"
+msgstr "Galluogi"
+
+#: rc.cpp:690
+msgid "(last stamp)"
+msgstr ""
+
+#: rc.cpp:693
+msgid "(last date)"
+msgstr ""
+
+#: rc.cpp:696
+msgid "Enable"
+msgstr "Galluogi"
+
+#: rc.cpp:699
+#, fuzzy
+#| msgid "&Replacement text:"
+msgid "replacement-text"
+msgstr "&Testun amnewid:"
+
+#: rc.cpp:702
+#, fuzzy
+msgid "Edit Patch"
+msgstr "Golygu..."
+
+#: rc.cpp:705
+#, fuzzy
+msgid "File"
+msgstr "&Ffeiliau:"
+
+#: rc.cpp:708
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style=\" "
+"white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\"><p style=\" margin-"
+"top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
+"indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">File:</span></"
+"p></body></html>"
+msgstr ""
+
+#: rc.cpp:711
+msgid "command-output"
+msgstr ""
+
+#: rc.cpp:714
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style=\" "
+"white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\"><p style=\" margin-"
+"top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
+"indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Command:</"
+"span></p></body></html>"
+msgstr ""
+
+#: rc.cpp:717
+#, fuzzy
+msgid "To File"
+msgstr "Gwaredu Ffeil"
+
+#: rc.cpp:720
+#, fuzzy
+msgid "Files"
+msgstr "&Ffeiliau:"
+
+#: rc.cpp:723
+#, fuzzy
+#| msgid "height"
+msgid "Highlight"
+msgstr "taldra"
+
+#: rc.cpp:726
+#, fuzzy
+#| msgid "Previous"
+msgid "Previous Hunk"
+msgstr "Cynt"
+
+#: rc.cpp:729
+#, fuzzy
+#| msgid "Next"
+msgid "Next Hunk"
+msgstr "Nesaf"
+
+#: rc.cpp:732
+#, fuzzy
+#| msgid "&Author:"
+msgid "Author:"
+msgstr "Aw&dur:"
+
+#: rc.cpp:735 rc.cpp:987 lib/plugins/vcs/cvs/editorsview.cpp:70
+#: lib/plugins/vcs/cvs/logview.cpp:67
+msgid "User"
+msgstr "Defnyddiwr"
+
+#: rc.cpp:738
+#, fuzzy
+#| msgid "Delete item"
+msgid "Determine"
+msgstr " Dileu eitem"
+
+#: rc.cpp:741
+#, fuzzy
+#| msgctxt "the beginning"
+#| msgid "Start:"
+msgid "State:"
+msgstr "Cychwyn:"
+
+#: rc.cpp:744
+#, fuzzy
+#| msgid "Acce&ss:"
+msgid "Access:"
+msgstr "Cyr&chiad:"
+
+#: rc.cpp:747
+msgid "recommended unapply-command:"
+msgstr ""
+
+#: rc.cpp:750
+#, fuzzy
+#| msgid "&Dependencies"
+msgid "Dependencies:"
+msgstr "&Dibyniaethau"
+
+#: rc.cpp:753
+msgid "recommended apply-command:"
+msgstr ""
+
+#: rc.cpp:756
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style=\" "
+"white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\"><p style=\" margin-"
+"top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
+"indent:0; text-indent:0px;\">N<span style=\" font-weight:600;\">ame:</span></"
+"p></body></html>"
+msgstr ""
+
+#: rc.cpp:759
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style=\" "
+"white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\"><p style=\" margin-"
+"top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
+"indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Type:</span></"
+"p></body></html>"
+msgstr ""
+
+#: rc.cpp:762
+#, fuzzy
+#| msgid "C&lose"
+msgid "Choose"
+msgstr "C&au"
+
+#: rc.cpp:765
+#, fuzzy
+#| msgid "&Description:"
+msgid "Description:"
+msgstr "&Disgrifiad:"
+
+#: rc.cpp:768
+msgid "Apply"
+msgstr ""
+
+#: rc.cpp:771
+msgid "Unapply"
+msgstr ""
+
+#: rc.cpp:774
+#, fuzzy
+#| msgid "Shadow"
+msgid "Show"
+msgstr "Cysgod"
+
+#: rc.cpp:777 rc.cpp:801 lib/plugins/vcs/subversion/subversion_view.cpp:65
+#, fuzzy
+#| msgid "C&lose"
+msgid "Close"
+msgstr "C&au"
+
+#: rc.cpp:783
+#, fuzzy
+#| msgid "&Connections:"
+msgid "Context-Lines:"
+msgstr "C&ysylltiadau :"
+
+#: rc.cpp:786
+#, fuzzy
+#| msgid "Patches"
+msgid "Manage Patches"
+msgstr "Ysbeidiau"
+
+#: rc.cpp:789
+#, fuzzy
+#| msgid "A&vailable actions:"
+msgid "Available patches:"
+msgstr "&Gweithredoedd ar gael:"
+
+#: rc.cpp:795 plugins/snippet/snippetview.cpp:124
+#: plugins/snippet/snippetview.cpp:146
+#, fuzzy
+msgid "Edit"
+msgstr "&Golygu..."
+
+#: rc.cpp:807
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">File</span>:</p></body></html>"
+msgstr ""
+
+#: rc.cpp:813
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration: underline;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-"
+"decoration:none;\">file</span></p></body></html>"
+msgstr ""
+
+#: rc.cpp:819
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:Sans;\"><span "
+"style=\" font-weight:600;\">Position</span>: </p></body></html>"
+msgstr ""
+
+#: rc.cpp:825
+#, fuzzy
+#| msgid "Condition"
+msgid "position"
+msgstr "Cyflwr"
+
+#: rc.cpp:828
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px; font-family:Sans;\"><span "
+"style=\" font-weight:600;\">Context</span>: </p></body></html>"
+msgstr ""
+
+#: rc.cpp:834
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration: underline;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-"
+"decoration:none;\">Context</span></p></body></html>"
+msgstr ""
+
+#: rc.cpp:840
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Reference-Type</span>: </p></body></html>"
+msgstr ""
+
+#: rc.cpp:846
+#, fuzzy
+#| msgid "Preferences"
+msgid "referenceType"
+msgstr "Hoffterau"
+
+#: rc.cpp:855
+#, fuzzy
+msgid "From:"
+msgstr "Ffurflenni"
+
+#: rc.cpp:858
+#, fuzzy
+msgid "Until:"
+msgstr "Teitl"
+
+#: rc.cpp:861 rc.cpp:873
+msgid "All"
+msgstr "Popeth"
+
+#: rc.cpp:867
+#, fuzzy
+msgid "Context:"
+msgstr " Dileu eitem"
+
+#: rc.cpp:876
+msgid "Exit"
+msgstr "Terfynu"
+
+#: rc.cpp:879
+#, fuzzy
+#| msgid "Message"
+msgid "Internal Message"
+msgstr "Neges"
+
+#: rc.cpp:882
+#, fuzzy
+#| msgid "Actions"
+msgid "actions"
+msgstr "Gweithredoedd"
+
+#: rc.cpp:888 rc.cpp:948
+#, fuzzy
+msgid "Menu"
+msgstr "Canfod Testun"
+
+#: rc.cpp:897
+#, fuzzy
+#| msgid "&Label:"
+msgid "TextLabel"
+msgstr "&Label:"
+
+#: rc.cpp:900
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Name</span>:</p></body></html>"
+msgstr ""
+
+#: rc.cpp:909
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">E-Mail</span>:</p></body></html>"
+msgstr ""
+
+#: rc.cpp:915
+#, fuzzy
+#| msgid "Email:"
+msgid "E-Mail"
+msgstr "Ebost:"
+
+#: rc.cpp:918
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">State</span>:</p></body></html>"
+msgstr ""
+
+#: rc.cpp:924
+#, fuzzy
+#| msgid "Address"
+msgid "IP-Adress"
+msgstr "Cyfeiriad"
+
+#: rc.cpp:927 rc.cpp:969
+#, fuzzy
+#| msgctxt "To start something"
+#| msgid "Start"
+msgid "State"
+msgstr "Dechrau"
+
+#: rc.cpp:930
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">IP-Adress</span>:</p></body></html>"
+msgstr ""
+
+#: rc.cpp:936
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Rights</span>: </p></body></html>"
+msgstr ""
+
+#: rc.cpp:942
+#, fuzzy
+#| msgid "Light"
+msgid "Rights"
+msgstr "Golau"
+
+#: rc.cpp:954
+msgid "Is Reply To"
+msgstr ""
+
+#: rc.cpp:957 rc.cpp:960
+msgid "Text"
+msgstr "Testun"
+
+#: rc.cpp:963
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">State</span>: </p></body></html>"
+msgstr ""
+
+#: rc.cpp:972
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Time</span>: </p></body></html>"
+msgstr ""
+
+#: rc.cpp:978
+#, fuzzy
+#| msgid "Tile"
+msgid "Time"
+msgstr "Teilio"
+
+#: rc.cpp:981
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">User</span>:</p></body></html>"
+msgstr ""
+
+#: rc.cpp:990
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:Sans Serif; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Direction</span>: </p></body></html>"
+msgstr ""
+
+#: rc.cpp:996
+msgid "Direction"
+msgstr "Cyfeiriad:"
+
+#: rc.cpp:1005
 #, fuzzy
 msgid "Final Location:"
 msgstr "Lleolia&d:"
 
-#: rc.cpp:540 rc.cpp:575
+#: rc.cpp:1008 rc.cpp:1043
 #, fuzzy
 msgid "Location:"
 msgstr "Lleolia&d:"
 
-#: rc.cpp:543
+#: rc.cpp:1011
 #, fuzzy
 msgid "Application Name:"
 msgstr "Cymhwysiad"
 
-#: rc.cpp:546
+#: rc.cpp:1014
 msgid "(invalid)"
 msgstr ""
 
-#: rc.cpp:549
+#: rc.cpp:1017
 msgid "Display document categories (mimetypes) in the view"
 msgstr ""
 
-#: rc.cpp:552
+#: rc.cpp:1020
 msgid ""
 "If this option is set, the Document View will organize documents\n"
 "        by their mimetype. If this option is not set, the Document View will "
@@ -689,121 +1384,121 @@ msgid ""
 "        organize the open documents by type."
 msgstr ""
 
-#: rc.cpp:557
+#: rc.cpp:1025
 #, fuzzy
 msgid "Form2"
 msgstr "Ffurf1"
 
-#: rc.cpp:560
+#: rc.cpp:1028
 msgid "Display document &categories"
 msgstr ""
 
-#: rc.cpp:566
+#: rc.cpp:1034
 msgid "Add an existing Repository"
 msgstr ""
 
-#: rc.cpp:569 rc.cpp:593 rc.cpp:620
+#: rc.cpp:1037 rc.cpp:1061 rc.cpp:1088
 msgid "..."
 msgstr "..."
 
-#: rc.cpp:572
+#: rc.cpp:1040
 msgid "Name:"
 msgstr "Enw:"
 
-#: rc.cpp:578
+#: rc.cpp:1046
 #, fuzzy
 msgid "Edit Snippet"
 msgstr "Golygydd"
 
-#: rc.cpp:581 plugins/snippet/snippetview.cpp:119
+#: rc.cpp:1049 plugins/snippet/snippetview.cpp:119
 #, fuzzy
 msgid "Snippet"
 msgstr "Sgript"
 
-#: rc.cpp:587
+#: rc.cpp:1055
 msgid "Keywords"
 msgstr ""
 
-#: rc.cpp:590
+#: rc.cpp:1058
 #, fuzzy
 msgid "Move Repository"
 msgstr "&Adfer"
 
-#: rc.cpp:596
+#: rc.cpp:1064
 #, fuzzy
 msgid "New Location"
 msgstr "Lleoliad"
 
-#: rc.cpp:602
+#: rc.cpp:1070
 #, fuzzy
 msgid "Variable Substitution"
 msgstr "Newidynnau"
 
-#: rc.cpp:614
+#: rc.cpp:1082
 msgid "Define filter here"
 msgstr ""
 
-#: rc.cpp:617
+#: rc.cpp:1085
 #, fuzzy
 msgid "Apply filter"
 msgstr "Gweithredu'r hidlen ddiwethaf (\"%1\")"
 
-#: rc.cpp:623
+#: rc.cpp:1091
 msgid "Valgrind"
 msgstr ""
 
-#: rc.cpp:626
+#: rc.cpp:1094
 msgid "&Executable:"
 msgstr "&Gweithredadwyn:"
 
-#: rc.cpp:629
+#: rc.cpp:1097
 msgid "&Parameters:"
 msgstr "&Paramedrau:"
 
-#: rc.cpp:632
+#: rc.cpp:1100
 #, fuzzy
 msgid "Callgrind"
 msgstr "KCachegrind"
 
-#: rc.cpp:635 rc.cpp:659
+#: rc.cpp:1103 rc.cpp:1127
 msgid "&Trace children"
 msgstr ""
 
-#: rc.cpp:638 rc.cpp:665
+#: rc.cpp:1106 rc.cpp:1133
 msgid "E&xecutable:"
 msgstr "G&weithredadwyn:"
 
-#: rc.cpp:641 rc.cpp:662
+#: rc.cpp:1109 rc.cpp:1130
 msgid "Additional p&arameters:"
 msgstr ""
 
-#: rc.cpp:644
+#: rc.cpp:1112
 #, fuzzy
 msgid "KCacheGrind"
 msgstr "KCachegrind"
 
-#: rc.cpp:647
+#: rc.cpp:1115
 msgid "Executable:"
 msgstr "Gweithredadwyn:"
 
-#: rc.cpp:650
+#: rc.cpp:1118
 msgid "Memcheck"
 msgstr ""
 
-#: rc.cpp:653
+#: rc.cpp:1121
 msgid "Memory &leak check"
 msgstr ""
 
-#: rc.cpp:656
+#: rc.cpp:1124
 msgid "&Show still reachable blocks"
 msgstr ""
 
-#: rc.cpp:677
+#: rc.cpp:1145
 #, fuzzy
 msgid "F&orm"
 msgstr "Ffurflenni"
 
-#: rc.cpp:683
+#: rc.cpp:1151
 #, fuzzy
 msgid "Designer Layout Toolbar"
 msgstr "Bar offer"
@@ -1221,6 +1916,66 @@ msgstr ""
 msgid "Document Externally Modified"
 msgstr "Dogfen i'w hagor"
 
+#: lib/libdiff2/komparemodellist.cpp:240 lib/libdiff2/komparemodellist.cpp:264
+#, qt-format
+msgid ""
+"<qt>No models or no differences, this file: <b>%1</b>, is not a valid diff "
+"file.</qt>"
+msgstr ""
+
+#: lib/libdiff2/komparemodellist.cpp:248
+#, qt-format
+msgid ""
+"<qt>There were problems applying the diff <b>%1</b> to the file <b>%2</b>.</"
+"qt>"
+msgstr ""
+
+#: lib/libdiff2/komparemodellist.cpp:273
+#, qt-format
+msgid ""
+"<qt>There were problems applying the diff <b>%1</b> to the folder <b>%2</b>."
+"</qt>"
+msgstr ""
+
+#: lib/libdiff2/komparemodellist.cpp:301 lib/libdiff2/komparemodellist.cpp:578
+#, fuzzy
+msgid "Could not open a temporary file."
+msgstr "Methu llwytho ffeil. '%1'"
+
+#: lib/libdiff2/komparemodellist.cpp:352
+#, qt-format
+msgid "<qt>Could not write to the temporary file <b>%1</b>, deleting it.</qt>"
+msgstr ""
+
+#: lib/libdiff2/komparemodellist.cpp:371
+#, qt-format
+msgid ""
+"<qt>Could not create destination directory <b>%1</b>.\n"
+"The file has not been saved.</qt>"
+msgstr ""
+
+#: lib/libdiff2/komparemodellist.cpp:386
+#, qt-format
+msgid ""
+"<qt>Could not upload the temporary file to the destination location <b>%1</"
+"b>. The temporary file is still available under: <b>%2</b>. You can manually "
+"copy it to the right place.</qt>"
+msgstr ""
+
+#: lib/libdiff2/komparemodellist.cpp:431 lib/libdiff2/komparemodellist.cpp:544
+#, fuzzy
+msgid "Could not parse diff output."
+msgstr "Methu canfod ein rhan."
+
+#: lib/libdiff2/komparemodellist.cpp:447
+msgid "The files are identical."
+msgstr ""
+
+#: lib/libdiff2/komparemodellist.cpp:609
+#, fuzzy
+msgid "Could not write to the temporary file."
+msgstr "Methu Cyfieithu'r Testun Tarddiad"
+
 #: lib/plugins/vcs/cvs/importdialog.cpp:50
 msgid "Error on importing"
 msgstr ""
@@ -1248,10 +2003,6 @@ msgstr ""
 #: lib/plugins/vcs/cvs/editorsview.cpp:62
 msgid "No files from your query are marked as being edited."
 msgstr ""
-
-#: lib/plugins/vcs/cvs/editorsview.cpp:70 lib/plugins/vcs/cvs/logview.cpp:67
-msgid "User"
-msgstr "Defnyddiwr"
 
 #: lib/plugins/vcs/cvs/editorsview.cpp:71 lib/plugins/vcs/cvs/logview.cpp:68
 #: lib/plugins/vcs/subversion/svn_models.cpp:220
@@ -1632,12 +2383,6 @@ msgstr ""
 msgid "Notification"
 msgstr "Lleolia&d:"
 
-#: lib/plugins/vcs/subversion/subversion_view.cpp:65
-#, fuzzy
-#| msgid "C&lose"
-msgid "Close"
-msgstr "C&au"
-
 #: lib/plugins/vcs/subversion/subversion_view.cpp:69
 #, fuzzy
 msgid "Subversion"
@@ -1729,11 +2474,6 @@ msgstr "Awdur:"
 #, fuzzy
 msgid "Contents"
 msgstr "Cysylltu"
-
-#: lib/plugins/vcs/subversion/svn_models.cpp:277
-#, fuzzy
-msgid "Comment"
-msgstr "S&ylwad:"
 
 #: lib/plugins/vcs/subversion/svnkjobbase.cpp:67
 msgid "An error occured during subversion operation"
@@ -2190,6 +2930,11 @@ msgstr ""
 msgid "Uninstalled headers"
 msgstr ""
 
+#: plugins/teamwork/documentwrapper.cpp:172
+#, qt-format
+msgid "The buffer of %1 is modified, should the content be replaced?"
+msgstr ""
+
 #: plugins/filemanager/filemanager.cpp:140
 #: plugins/filemanager/filemanager.cpp:260
 #, fuzzy
@@ -2304,11 +3049,6 @@ msgstr "Modd Arferol"
 msgid "&Aggregate"
 msgstr "C&reu"
 
-#: plugins/codeview/kdevcodeview.cpp:112 plugins/codeview/kdevcodeview.cpp:116
-#, fuzzy
-msgid "Filter"
-msgstr "Ffeil: %1"
-
 #: plugins/snippet/snippetview.cpp:103 plugins/snippet/snippetpart.cpp:52
 #, fuzzy
 msgid "Snippets"
@@ -2322,11 +3062,6 @@ msgstr "&Adfer"
 #: plugins/snippet/snippetview.cpp:121 plugins/snippet/snippetview.cpp:137
 msgid "Sync"
 msgstr "Cydweddu"
-
-#: plugins/snippet/snippetview.cpp:124 plugins/snippet/snippetview.cpp:146
-#, fuzzy
-msgid "Edit"
-msgstr "&Golygu..."
 
 #: plugins/snippet/snippetview.cpp:127
 #, fuzzy
@@ -2512,10 +3247,6 @@ msgstr "Datblygwr"
 #~ msgstr "Wyn&ebfath safonol: "
 
 #, fuzzy
-#~ msgid "Local Project"
-#~ msgstr "Cywaith Newydd"
-
-#, fuzzy
 #~ msgid "Global Project"
 #~ msgstr "C&au Cywaith"
 
@@ -2545,9 +3276,6 @@ msgstr "Datblygwr"
 
 #~ msgid "Version:"
 #~ msgstr "Fersiwn :"
-
-#~ msgid "Email:"
-#~ msgstr "Ebost:"
 
 #, fuzzy
 #~ msgid "New Environment Variable"
@@ -2603,10 +3331,6 @@ msgstr "Datblygwr"
 
 #~ msgid " Line: %1 Col: %2 "
 #~ msgstr "Llinell: %1 Col: %2"
-
-#, fuzzy
-#~ msgid "Untitled"
-#~ msgstr "Teitl"
 
 #~ msgid "Document to open"
 #~ msgstr "Dogfen i'w hagor"
@@ -2726,9 +3450,6 @@ msgstr "Datblygwr"
 #~ msgid "&Text to find:"
 #~ msgstr "&Testun i ganfod:"
 
-#~ msgid "&Replacement text:"
-#~ msgstr "&Testun amnewid:"
-
 #~ msgid "External Tools"
 #~ msgstr "Offer Allanol"
 
@@ -2774,9 +3495,6 @@ msgstr "Datblygwr"
 
 #~ msgid "KDE"
 #~ msgstr "KDE"
-
-#~ msgid "Developer"
-#~ msgstr "Datblygwr"
 
 #~ msgid "Cannot Translate Source"
 #~ msgstr "Methu Cyfieithu'r Testun Tarddiad"
@@ -2893,9 +3611,6 @@ msgstr "Datblygwr"
 #~ msgid "Set"
 #~ msgstr "Set"
 
-#~ msgid "Messages"
-#~ msgstr "Negeseuon"
-
 #~ msgid "&Previous Error"
 #~ msgstr "&Gwall Blaenorol"
 
@@ -2907,9 +3622,6 @@ msgstr "Datblygwr"
 
 #~ msgid "Open With"
 #~ msgstr "Agor Efo"
-
-#~ msgid "&Available:"
-#~ msgstr "&Ar gael:"
 
 #~ msgid "&Selected:"
 #~ msgstr "&Wedi'u dewis:"
@@ -2938,9 +3650,6 @@ msgstr "Datblygwr"
 
 #~ msgid "Clear filter"
 #~ msgstr "Gwagio hidlen"
-
-#~ msgid "A&vailable actions:"
-#~ msgstr "&Gweithredoedd ar gael:"
 
 #~ msgid "Auto Synchronization"
 #~ msgstr "Cydweddu Ymysgogol"
@@ -3034,9 +3743,6 @@ msgstr "Datblygwr"
 #~ msgid "Move &Down"
 #~ msgstr "Symud i &Lawr"
 
-#~ msgid "Local"
-#~ msgstr "Lleol"
-
 #~ msgid "Public"
 #~ msgstr "Cyhoeddus"
 
@@ -3104,9 +3810,6 @@ msgstr "Datblygwr"
 #~ msgid "&Inline"
 #~ msgstr "&Mewnlin"
 
-#~ msgid "Acce&ss:"
-#~ msgstr "Cyr&chiad:"
-
 #~ msgid "T&ype:"
 #~ msgstr "M&ath:"
 
@@ -3128,10 +3831,6 @@ msgstr "Datblygwr"
 #, fuzzy
 #~ msgid "Tracing Configuration"
 #~ msgstr "Ffurfwedd :"
-
-#, fuzzy
-#~ msgid "Enable tracing"
-#~ msgstr "Galluogi"
 
 #, fuzzy
 #~ msgid "Expressions to print:"
@@ -3201,9 +3900,6 @@ msgstr "Datblygwr"
 
 #~ msgid "Ar&guments:"
 #~ msgstr "Ym&resymiadau:"
-
-#~ msgid "All"
-#~ msgstr "Popeth"
 
 #~ msgid "&2"
 #~ msgstr "&2"
@@ -3279,9 +3975,6 @@ msgstr "Datblygwr"
 
 #~ msgid "&Email:"
 #~ msgstr "E&bost:"
-
-#~ msgid "&Author:"
-#~ msgstr "Aw&dur:"
 
 #~ msgid "&Location:"
 #~ msgstr "&Lleoliad:"
@@ -3445,23 +4138,14 @@ msgstr "Datblygwr"
 #~ msgid "100"
 #~ msgstr "100"
 
-#~ msgid "Type:"
-#~ msgstr "Math:"
-
 #~ msgid "Search"
 #~ msgstr "Chwilio"
 
 #~ msgid "Always"
 #~ msgstr "Bob tro"
 
-#~ msgid "Never"
-#~ msgstr "Byth"
-
 #~ msgid "Icons"
 #~ msgstr "Eiconau"
-
-#~ msgid "Text"
-#~ msgstr "Testun"
 
 #~ msgid "Tabbed Browsing"
 #~ msgstr "Pori â Thabiau"
@@ -3559,9 +4243,6 @@ msgstr "Datblygwr"
 #~ msgid "External Libraries"
 #~ msgstr "Offer Allanol"
 
-#~ msgid "&Dependencies"
-#~ msgstr "&Dibyniaethau"
-
 #, fuzzy
 #~ msgid "Bu&ild Options"
 #~ msgstr "&Dewisiadau :"
@@ -3651,10 +4332,6 @@ msgstr "Datblygwr"
 #~ msgid "C"
 #~ msgstr "C"
 
-#, fuzzy
-#~ msgid "Menu Text"
-#~ msgstr "Canfod Testun"
-
 #~ msgid "Command"
 #~ msgstr "Gorchymyn"
 
@@ -3698,9 +4375,6 @@ msgstr "Datblygwr"
 #~ msgid "ComboBox"
 #~ msgstr "Blwch Cyfuno"
 
-#~ msgid "&Connections:"
-#~ msgstr "C&ysylltiadau :"
-
 #~ msgid "Auto"
 #~ msgstr "Ymysgogol"
 
@@ -3719,17 +4393,11 @@ msgstr "Datblygwr"
 #~ msgid "Link"
 #~ msgstr "Cyswllt"
 
-#~ msgid "Light"
-#~ msgstr "Golau"
-
 #~ msgid "Mid"
 #~ msgstr "Canol"
 
 #~ msgid "Dark"
 #~ msgstr "Tywyll"
-
-#~ msgid "Shadow"
-#~ msgstr "Cysgod"
 
 #~ msgid "Replace Text"
 #~ msgstr "Amnewid Testun"
@@ -3749,9 +4417,6 @@ msgstr "Datblygwr"
 #~ msgid "Case &sensitive"
 #~ msgstr "Mae llythrennau bras o &bwys"
 
-#~ msgid "Direction"
-#~ msgstr "Cyfeiriad:"
-
 #~ msgid "Forwar&d"
 #~ msgstr "Ymlaen"
 
@@ -3761,9 +4426,6 @@ msgstr "Datblygwr"
 #~ msgid "&Delete Item"
 #~ msgstr "&Dileu Eitem"
 
-#~ msgid "Delete item"
-#~ msgstr " Dileu eitem"
-
 #~ msgid "&Text:"
 #~ msgstr "&Testun:"
 
@@ -3772,9 +4434,6 @@ msgstr "Datblygwr"
 
 #~ msgid "&Pixmap:"
 #~ msgstr "&Picsfap :"
-
-#~ msgid "Preferences"
-#~ msgstr "Hoffterau"
 
 #~ msgid "Ge&neral"
 #~ msgstr "Cy&ffredinol"
@@ -3966,9 +4625,6 @@ msgstr "Datblygwr"
 #~ msgid "Table:"
 #~ msgstr "Tabl:"
 
-#~ msgid "&Label:"
-#~ msgstr "&Label:"
-
 #~ msgid "&Field:"
 #~ msgstr "&Maes :"
 
@@ -3992,12 +4648,6 @@ msgstr "Datblygwr"
 
 #~ msgid "0"
 #~ msgstr "0"
-
-#~ msgid "Connection"
-#~ msgstr "Cysylltiad"
-
-#~ msgid "Connec&t"
-#~ msgstr "Cysyll&tu"
 
 #~ msgid "Function"
 #~ msgstr "Ffwythiant"
@@ -4084,10 +4734,6 @@ msgstr "Datblygwr"
 #~ msgid "Running program"
 #~ msgstr "Rhaglen"
 
-#~ msgctxt "To start something"
-#~ msgid "Start"
-#~ msgstr "Dechrau"
-
 #~ msgid "Activate"
 #~ msgstr "Gweithredoli"
 
@@ -4095,14 +4741,8 @@ msgstr "Datblygwr"
 #~ msgid "Could not run application"
 #~ msgstr "Cymhwysiannau Hysbys"
 
-#~ msgid "Address"
-#~ msgstr "Cyfeiriad"
-
 #~ msgid "Method()"
 #~ msgstr "Dull()"
-
-#~ msgid "Condition"
-#~ msgstr "Cyflwr"
 
 #~ msgid "Hits"
 #~ msgstr "Trawiadau"
@@ -4113,9 +4753,6 @@ msgstr "Datblygwr"
 
 #~ msgid "Disable"
 #~ msgstr "Analluogi"
-
-#~ msgid "Enable"
-#~ msgstr "Galluogi"
 
 #, fuzzy
 #~ msgid "&Evaluate"
@@ -4197,19 +4834,11 @@ msgstr "Datblygwr"
 #~ msgid "Watch:"
 #~ msgstr "Gwylio :"
 
-#~ msgctxt "the beginning"
-#~ msgid "Start:"
-#~ msgstr "Cychwyn:"
-
 #~ msgid "Memory"
 #~ msgstr "Cof"
 
 #~ msgid "&Enable"
 #~ msgstr "&Galluogi"
-
-#, fuzzy
-#~ msgid "Cannot write to file"
-#~ msgstr "Methu Cyfieithu'r Testun Tarddiad"
 
 #, fuzzy
 #~ msgid "RDB Output"
@@ -4225,10 +4854,6 @@ msgstr "Datblygwr"
 #, fuzzy
 #~ msgid "Remove Watch Expression"
 #~ msgstr "&Mynegiad rheolaidd :"
-
-#, fuzzy
-#~ msgid "rdb message:\n"
-#~ msgstr "&Neges:"
 
 #~ msgid "Language"
 #~ msgstr "Iaith"
@@ -4557,10 +5182,6 @@ msgstr "Datblygwr"
 #~ msgid "External"
 #~ msgstr "Allanol"
 
-#~ msgctxt "no version control system"
-#~ msgid "None"
-#~ msgstr "Dim"
-
 #, fuzzy
 #~ msgid "Cannot open project template."
 #~ msgstr "&Ffeil y cywaith:"
@@ -4848,9 +5469,6 @@ msgstr "Datblygwr"
 #~ msgid "Remove file"
 #~ msgstr "Gwaredu ffeil"
 
-#~ msgid "All Files"
-#~ msgstr "Pob Ffeil"
-
 #~ msgid "Properties..."
 #~ msgstr "Priodweddau"
 
@@ -4915,9 +5533,6 @@ msgstr "Datblygwr"
 
 #~ msgid "Add Application..."
 #~ msgstr "Ychwanegu Cymhwysiad ..."
-
-#~ msgid "Clean"
-#~ msgstr "Glan"
 
 #~ msgid "Action"
 #~ msgstr "Gweithred"
@@ -4992,9 +5607,6 @@ msgstr "Datblygwr"
 #~ msgid "width"
 #~ msgstr "lled"
 
-#~ msgid "height"
-#~ msgstr "taldra"
-
 #~ msgid "Green"
 #~ msgstr "Gwyrdd"
 
@@ -5044,9 +5656,6 @@ msgstr "Datblygwr"
 #, fuzzy
 #~ msgid "Add Function"
 #~ msgstr "Ffwythiant"
-
-#~ msgid "Actions"
-#~ msgstr "Gweithredoedd"
 
 #~ msgid "New &Action"
 #~ msgstr "Gwei&thred Newydd"
@@ -5116,9 +5725,6 @@ msgstr "Datblygwr"
 #~ msgid "Preferences..."
 #~ msgstr "Hoffterau..."
 
-#~ msgid "Find"
-#~ msgstr "Canfod:"
-
 #, fuzzy
 #~ msgid "Adjust Size"
 #~ msgstr "Addasu"
@@ -5175,18 +5781,12 @@ msgstr "Datblygwr"
 #~ msgid "Save &As..."
 #~ msgstr "Cadw &Fel..."
 
-#~ msgid "Save All"
-#~ msgstr "Cadw Popeth"
-
 #~ msgid "Sa&ve All"
 #~ msgstr "Ca&dw Popeth"
 
 #, fuzzy
 #~ msgid "Recently Opened Projects"
 #~ msgstr "Agor Cywaith"
-
-#~ msgid "Exit"
-#~ msgstr "Terfynu"
 
 #~ msgid "Pr&oject"
 #~ msgstr "Cy&waith"
@@ -5218,9 +5818,6 @@ msgstr "Datblygwr"
 #~ msgid "Preview Form in %1 Style"
 #~ msgstr "Rhagolyg&u Ffurflen"
 
-#~ msgid "Tile"
-#~ msgstr "Teilio"
-
 #~ msgid "Cascade"
 #~ msgstr "Rhaeadr"
 
@@ -5234,14 +5831,8 @@ msgstr "Datblygwr"
 #~ msgid "Close Al&l"
 #~ msgstr "Cau Pope&th"
 
-#~ msgid "Next"
-#~ msgstr "Nesaf"
-
 #~ msgid "Ne&xt"
 #~ msgstr "Ne&saf"
-
-#~ msgid "Previous"
-#~ msgstr "Cynt"
 
 #~ msgid "Pre&vious"
 #~ msgstr "Cyn&t"
@@ -5266,10 +5857,6 @@ msgstr "Datblygwr"
 
 #~ msgid "Open a file..."
 #~ msgstr "Agor Ffeil ..."
-
-#, fuzzy
-#~ msgid "Load File"
-#~ msgstr "Gwaredu Ffeil"
 
 #, fuzzy
 #~ msgid "Project '%1' saved."
@@ -5497,10 +6084,6 @@ msgstr "Datblygwr"
 
 #~ msgid "Next Page"
 #~ msgstr "Tudalen Nesaf"
-
-#, fuzzy
-#~ msgid "Edit Pages..."
-#~ msgstr "Golygu..."
 
 #, fuzzy
 #~ msgid "Add Menu Item"
