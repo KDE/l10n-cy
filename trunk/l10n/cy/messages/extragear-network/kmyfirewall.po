@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-2/kmyfirewall.po\n"
-"POT-Creation-Date: 2007-04-07 07:11+0200\n"
+"POT-Creation-Date: 2007-05-06 07:21+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -9,15 +9,55 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: core/kmfdoc.cpp:71 core/kmftarget.cpp:42 core/netfilterobject.cpp:53
+#: core/kmfdoc.cpp:67 core/kmfdoc.cpp:98 core/kmftarget.cpp:43
+#: core/netfilterobject.cpp:56
 msgid "No Description Available"
 msgstr "Dim disgrifiad ar gael"
 
-#: core/kmfdoc.cpp:72
+#: core/kmferror.cpp:34 core/kmferror.cpp:52
+msgid "WARNING: "
+msgstr ""
+
+#: core/kmferror.cpp:36 core/kmferror.cpp:54
+msgid "ERROR: "
+msgstr ""
+
+#: core/kmferror.cpp:50
+msgid "SUCCESS: "
+msgstr ""
+
+#: core/kmfdoc.cpp:66 core/kmfdoc.cpp:97
 msgid "Unnamed Document"
 msgstr ""
 
-#: core/kmfdoc.cpp:302
+#: core/kmfdoc.cpp:121
+msgid "|KMyFirewall IPTables Ruleset (*.kmfrs)"
+msgstr ""
+
+#: core/kmfdoc.cpp:122
+msgid "KMyFirewall IPTables Ruleset Template (*.tkmfrs)"
+msgstr ""
+
+#: core/kmfdoc.cpp:124
+msgid "|KMyFirewall Generic Ruleset (*.kmfgrs)"
+msgstr ""
+
+#: core/kmfdoc.cpp:125
+msgid "KMyFirewall Generic Ruleset Template (*.tkmfgrs)"
+msgstr ""
+
+#: core/kmfdoc.cpp:127
+msgid "|KMyFirewall Network (*.kmfnet)"
+msgstr ""
+
+#: compilers/iptables/kmfiptablescompiler.cpp:96 core/kmfdoc.cpp:167
+#: installer/kmfinstallerplugin.cpp:259
+msgid ""
+"<qt>File <b>%1</b> already exists!</p>"
+"<p><b>Overwrite the existing file?</b></p></qt>"
+msgstr ""
+
+#: core/kmfdoc.cpp:197
 msgid ""
 "<qt>"
 "<p><b>Saving <i>%1</i> Failed.</b></p>"
@@ -26,40 +66,43 @@ msgid ""
 "host and the directory is reachable. </p></qt>"
 msgstr ""
 
-#: core/kmfdoc.cpp:325 core/kmfdoc.cpp:335 core/kmfprotocol.cpp:304
-#: core/kmfprotocol.cpp:315
+#: core/kmfdoc.cpp:222 core/kmfdoc.cpp:232 core/kmfprotocol.cpp:307
+#: core/kmfprotocol.cpp:318
 msgid ""
 "Opening file %1 for writing failed.\n"
 "Please make sure that you are logged in as root"
 msgstr ""
 
-#: core/kmfdoc.cpp:343 core/kmfprotocol.cpp:326
+#: core/kmfdoc.cpp:240 core/kmfprotocol.cpp:329
 msgid "File to save = QString::null. This is a bug."
 msgstr ""
 
-#: core/kmfgenericdoc.cpp:122 core/kmfiptdoc.cpp:136 core/kmfnetwork.cpp:71
-#: core/kmfnetwork.cpp:98
+#: core/kmfiptdoc.cpp:143 core/kmfnetwork.cpp:130
 msgid "Unamed Ruleset"
 msgstr ""
 
-#: core/kmfgenericdoc.cpp:123 core/kmfiptdoc.cpp:137 core/kmfnetwork.cpp:72
+#: core/kmfgenericdoc.cpp:144 core/kmfiptdoc.cpp:144 core/kmfnetwork.cpp:90
 msgid "No description available"
 msgstr "Dim disgrifiad ar gael"
 
-#: core/kmfiptdoc.cpp:385
+#: core/kmfiptdoc.cpp:290
+msgid "Wrong XML format <b>%1</b> found! Expected kmfrs"
+msgstr ""
+
+#: core/kmfiptdoc.cpp:414
 msgid ""
 "<qt>You didn't configure KMyFirewall yet."
 "<br>Click <b>Settings-&gt;Configure KMyFirewall...</b> "
 "to setup a valid configuration.</qt>"
 msgstr ""
 
-#: core/kmfiptdoc.cpp:404 core/kmfiptdoc.cpp:416
+#: core/kmfiptdoc.cpp:433 core/kmfiptdoc.cpp:445
 msgid ""
 "Opening file for writing failed.\n"
 "Please make sure that you are logged in as root."
 msgstr ""
 
-#: core/kmfprotocol.cpp:160 kmyfirewall.cpp:593
+#: core/kmfprotocol.cpp:161 kmyfirewall.cpp:712
 msgid ""
 "<qt>"
 "<p>The file <b>%1</b> could not be loaded.</p>"
@@ -67,19 +110,19 @@ msgid ""
 "network is up and the fileserver running.</qt>"
 msgstr ""
 
-#: core/kmfprotocol.cpp:171 kmyfirewall.cpp:603
+#: core/kmfprotocol.cpp:172 kmyfirewall.cpp:722
 msgid "<qt><p>You don't have the permissions to read file: <b>%1</b></p></qt>"
 msgstr ""
 
-#: core/kmfprotocol.cpp:179
+#: core/kmfprotocol.cpp:180
 msgid "<qt><p>Could not download file: <b>%1</b></p></qt>"
 msgstr ""
 
-#: core/kmfprotocol.cpp:186
+#: core/kmfprotocol.cpp:187
 msgid "<qt><p>No File found at URL: <b>%1</b></p></qt>"
 msgstr ""
 
-#: core/kmfprotocol.cpp:285
+#: core/kmfprotocol.cpp:288
 msgid ""
 "<qt>"
 "<p><b>Saving <i>%1</i> Failed.</b></p>"
@@ -185,97 +228,101 @@ msgstr ""
 
 #: core/kmfnetzone.cpp:48 core/kmfnetzone.cpp:56
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:647
-#: kmfwidgets/kmfmynetworkwidget.cpp:316
+#: kmfwidgets/kmfmynetworkwidget.cpp:321
 msgid "New Zone"
 msgstr ""
 
-#: core/kmfnetzone.cpp:386
+#: core/kmfnetzone.cpp:379
 msgid "Zone %1 already exists, please try again with another name"
 msgstr ""
 
-#: core/kmfgenericdoc.cpp:142
+#: core/kmfgenericdoc.cpp:163
 msgid "Incoming Connections"
 msgstr ""
 
-#: core/kmfgenericdoc.cpp:143
+#: core/kmfgenericdoc.cpp:164
 msgid "Outgoing Connections"
 msgstr ""
 
 #. i18n: file kmyfirewallwizard.ui line 2063
-#: core/kmfgenericdoc.cpp:144 rc.cpp:538
+#: core/kmfgenericdoc.cpp:165 rc.cpp:538
 #, no-c-format
 msgid "Trusted Hosts"
 msgstr ""
 
 #. i18n: file kmyfirewallwizard.ui line 1898
-#: core/kmfgenericdoc.cpp:145 rc.cpp:511
+#: core/kmfgenericdoc.cpp:166 rc.cpp:511
 #, no-c-format
 msgid "Malicious Hosts"
 msgstr ""
 
 #. i18n: file kmyfirewallwizard.ui line 2412
-#: core/kmfgenericdoc.cpp:146 rc.cpp:593
+#: core/kmfgenericdoc.cpp:167 rc.cpp:593
 #, no-c-format
 msgid "Forbidden Clients"
 msgstr ""
 
 #. i18n: file kmyfirewallwizard.ui line 2245
-#: core/kmfgenericdoc.cpp:147 rc.cpp:569
+#: core/kmfgenericdoc.cpp:168 rc.cpp:569
 #, no-c-format
 msgid "Forbidden Servers"
 msgstr ""
 
-#: core/kmfgenericdoc.cpp:156 core/kmfgenericdoc.cpp:158
+#: core/kmfgenericdoc.cpp:177 core/kmfgenericdoc.cpp:179
 msgid ""
 "This is the global zone that contains\n"
 "all valid IP addresses."
 msgstr ""
 
-#: core/kmfgenericdoc.cpp:160
+#: core/kmfgenericdoc.cpp:181
 msgid ""
 "Traffic coming from and going to hosts\n"
 "will  be accepted always.\n"
 "Only add really trusted Hosts to this Zone"
 msgstr ""
 
-#: core/kmfgenericdoc.cpp:163
+#: core/kmfgenericdoc.cpp:184
 msgid ""
 "Traffic coming from and going to hosts\n"
 "will  be dropped always."
 msgstr ""
 
-#: core/kmfgenericdoc.cpp:165
+#: core/kmfgenericdoc.cpp:186
 msgid ""
 "Hosts in this zone will not be able\n"
 "to use services your computer provides."
 msgstr ""
 
-#: core/kmfgenericdoc.cpp:167
+#: core/kmfgenericdoc.cpp:188
 msgid ""
 "You will not be able to use the services\n"
 "of the hosts in that list."
 msgstr ""
 
-#: core/kmfgenericdoc.cpp:244
+#: core/kmfgenericdoc.cpp:265
 msgid ""
 "<qt>Sorry, cannot create Zone with name '<b>%1</b>':"
 "<br>there already exists a zone with that name. Please try again with another "
 "name that is unique within your configuration.</qt>"
 msgstr ""
 
-#: core/kmfgenericdoc.cpp:273
+#: core/kmfgenericdoc.cpp:295
 msgid ""
 "<qt>Sorry, cannot create Zone with name: <b>%1</b>."
 "<br>There already exists a zone with that name; please try again with another "
 "name that is unique within your configuration.</qt>"
 msgstr ""
 
-#: core/kmftarget.cpp:38
+#: core/kmfgenericdoc.cpp:513
+msgid "Wrong XML format <b>%1</b> found! Expected kmfgrs"
+msgstr ""
+
+#: core/kmftarget.cpp:39
 #, fuzzy
 msgid "New Target"
 msgstr "Targed:"
 
-#: core/iptchain.cpp:127
+#: core/iptchain.cpp:134
 msgid ""
 "<qt>"
 "<p>Unable to add rule: <b>%1</b> into chain: <b>%2</b>."
@@ -283,23 +330,23 @@ msgid ""
 "another name (must be unique in that chain).</p></qt>"
 msgstr ""
 
-#: core/iptchain.cpp:135
+#: core/iptchain.cpp:142
 msgid "Sorry, a bad internal error occurred. This is a bug ;-("
 msgstr ""
 
-#: core/iptchain.cpp:145
+#: core/iptchain.cpp:152
 msgid "Cannot insert rule at %1 This is a bug ;-("
 msgstr ""
 
-#: core/iptchain.cpp:169 core/iptchain.cpp:179
+#: core/iptchain.cpp:176 core/iptchain.cpp:186
 msgid "Sorry, can't find Rule: %1 in the Ruleset of this chain."
 msgstr ""
 
-#: core/iptchain.cpp:529
+#: core/iptchain.cpp:536
 msgid "Chain: %1 Drop Logging"
 msgstr ""
 
-#: core/iptchain.cpp:538
+#: core/iptchain.cpp:545
 msgid "Chain: %1 Default Target"
 msgstr ""
 
@@ -307,30 +354,34 @@ msgstr ""
 #: core/kmfnethost.cpp:45 genericinterface/kmfgenericinterfacehost.cpp:145
 #: genericinterface/kmfgenericinterfacehost.cpp:148
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:689
-#: kmfwidgets/kmfmynetworkwidget.cpp:279 rc.cpp:517 rc.cpp:545 rc.cpp:575
+#: kmfwidgets/kmfmynetworkwidget.cpp:284 rc.cpp:517 rc.cpp:545 rc.cpp:575
 #: rc.cpp:599
 #, no-c-format
 msgid "New Host"
 msgstr ""
 
-#: core/kmfnetwork.cpp:80
+#: core/kmfnetwork.cpp:112
 msgid "My Local Comuter"
 msgstr ""
 
-#: core/kmfnetwork.cpp:81
+#: core/kmfnetwork.cpp:113
 msgid "My Local Computer"
 msgstr ""
 
-#: core/kmfnetwork.cpp:82
+#: core/kmfnetwork.cpp:114
 msgid "Local copmuter running KMyFirewall"
 msgstr ""
 
-#: core/kmfnetwork.cpp:100
+#: core/kmfnetwork.cpp:132
 msgid "Gloabl Network"
 msgstr ""
 
-#: core/kmfnetwork.cpp:101
+#: core/kmfnetwork.cpp:133
 msgid "This is the global zone that contains all valid IP addresses."
+msgstr ""
+
+#: core/kmfnetwork.cpp:333
+msgid "Wrong XML format <b>%1</b> found! Expected kmfnet"
 msgstr ""
 
 #: core/iptable.cpp:73
@@ -426,123 +477,127 @@ msgid ""
 "0. This is a bug "
 msgstr ""
 
-#: ipteditor/kmfnewchaindlg.cpp:49
+#: ipteditor/kmfnewchaindlg.cpp:51
 msgid "KMFNewChainDlg: kmfdoc = 0. This happened because of a bug."
 msgstr ""
 
-#: ipteditor/kmfnewchaindlg.cpp:106
+#: ipteditor/kmfnewchaindlg.cpp:108
 msgid "You must set a name for your chain."
 msgstr ""
 
-#: ipteditor/kmfchainedit.cpp:153
+#: ipteditor/kmfchainedit.cpp:156
 msgid "Your config is not valid; it appears to be a bug."
 msgstr ""
 
-#: ipteditor/kmfipteditorpart.cpp:79
+#: ipteditor/kmfipteditorpart.cpp:78
 msgid "&Edit Chain"
 msgstr ""
 
-#: ipteditor/kmfipteditorpart.cpp:82
+#: ipteditor/kmfipteditorpart.cpp:81
 msgid "Add New Chain..."
 msgstr ""
 
-#: ipteditor/kmfipteditorpart.cpp:85 ipteditor/kmfruleedit.cpp:582
-#: ipteditor/kmfruleedit.cpp:1077 ipteditor/kmfruleedit.cpp:1106
+#: ipteditor/kmfipteditorpart.cpp:84 ipteditor/kmfruleedit.cpp:595
+#: ipteditor/kmfruleedit.cpp:1104 ipteditor/kmfruleedit.cpp:1133
 msgid "Delete Chain"
 msgstr ""
 
-#: ipteditor/kmfipteditorpart.cpp:89
+#: ipteditor/kmfipteditorpart.cpp:88
 msgid "Add New Rule..."
 msgstr ""
 
-#: ipteditor/kmfipteditorpart.cpp:94 ipteditor/kmfruleedit.cpp:737
-#: ipteditor/kmfruleedit.cpp:1097
+#: ipteditor/kmfipteditorpart.cpp:93 ipteditor/kmfruleedit.cpp:750
+#: ipteditor/kmfruleedit.cpp:1124
 msgid "Delete Rule"
 msgstr ""
 
-#: ipteditor/kmfipteditorpart.cpp:97
+#: ipteditor/kmfipteditorpart.cpp:96
 msgid "&Configure Firewall Options..."
 msgstr ""
 
-#: ipteditor/kmfipteditorpart.cpp:281
+#: ipteditor/kmfipteditorpart.cpp:100
+msgid "&Configure the Network"
+msgstr ""
+
+#: ipteditor/kmfipteditorpart.cpp:290
 msgid "kmfipteditorpartPart"
 msgstr ""
 
-#: ipteditor/kmfruleedit.cpp:187
+#: ipteditor/kmfruleedit.cpp:198
 msgid ""
 "KMFRuleEdit:::loadDoc(KMFIPTDoc* doc)\n"
 "KMFIPTDoc* doc == 0. This is a bug."
 msgstr ""
 
-#: ipteditor/kmfruleedit.cpp:307 ipteditor/kmfruleedit.cpp:1089
+#: ipteditor/kmfruleedit.cpp:318 ipteditor/kmfruleedit.cpp:1116
 #, c-format
 msgid "Edit %1"
 msgstr "Golygu %1"
 
-#: ipteditor/kmfruleedit.cpp:516
+#: ipteditor/kmfruleedit.cpp:527
 msgid ""
 "<qt>No Chain Found to add the Rule."
 "<br>Please make sure that you selected a Chain or Rule before you try to add a "
 "Rule."
 msgstr ""
 
-#: ipteditor/kmfruleedit.cpp:522
+#: ipteditor/kmfruleedit.cpp:533
 msgid "New Rule"
 msgstr "Rheol newydd"
 
-#: ipteditor/kmfruleedit.cpp:523
+#: ipteditor/kmfruleedit.cpp:534
 msgid "Please enter a name for the new rule:"
 msgstr ""
 
-#: ipteditor/kmfruleedit.cpp:550
+#: ipteditor/kmfruleedit.cpp:563
 msgid "An error occurred while trying to setup a new rule."
 msgstr ""
 
-#: ipteditor/kmfruleedit.cpp:550
+#: ipteditor/kmfruleedit.cpp:563
 msgid "Rule Editor"
 msgstr "Golygydd Rheol"
 
-#: ipteditor/kmfruleedit.cpp:565
+#: ipteditor/kmfruleedit.cpp:578
 msgid ""
 "<qt>No Chain Found for deleting."
 "<br>Please make sure that you selected a Chain or Rule before you try to delete "
 "the current chain."
 msgstr ""
 
-#: ipteditor/kmfruleedit.cpp:572
+#: ipteditor/kmfruleedit.cpp:585
 msgid ""
 "<qt><b>Cannot delete built-in chain: %1</b>"
 "<br>Built-in chains cannot be deleted; you can only delete chains that you have "
 "defined yourself."
 msgstr ""
 
-#: ipteditor/kmfruleedit.cpp:578
+#: ipteditor/kmfruleedit.cpp:591
 msgid ""
 "<p>Are you sure that you want to delete chain: <b>%1</b> from table: <b>%2</b>?"
 "<br><b>Note:</b> By deleting the chain all rules that belong to the chain will "
 "be deleted too."
 msgstr ""
 
-#: ipteditor/kmfruleedit.cpp:730
+#: ipteditor/kmfruleedit.cpp:743
 msgid ""
 "<qt>No Rule defined to delete."
 "<br>Please make sure that you selected a Rule before you try to delete one."
 msgstr ""
 
-#: ipteditor/kmfruleedit.cpp:735
+#: ipteditor/kmfruleedit.cpp:748
 msgid ""
 "<p>Are you sure that you want to delete rule: <b>%1</b> from chain: <b>%2</b>"
 "?</p>"
 msgstr ""
 
-#: ipteditor/kmfruleedit.cpp:951
+#: ipteditor/kmfruleedit.cpp:978
 msgid ""
 "<qt>"
 "<p>Sorry, you <b>cannot</b> set the target of this rule to be its own chain. "
 "Constructing endless loops is not allowed.</qt>"
 msgstr ""
 
-#: ipteditor/kmfruleedit.cpp:958
+#: ipteditor/kmfruleedit.cpp:985
 msgid ""
 "<qt>By changing the Target of the Rule all previous defined <b>"
 "Target Options</b> will be deleted."
@@ -550,78 +605,78 @@ msgid ""
 "<br>Click <b>Cancel</b> keep your current Target. </qt>"
 msgstr ""
 
-#: ipteditor/kmfruleedit.cpp:1057
+#: ipteditor/kmfruleedit.cpp:1084
 #, c-format
 msgid "Table: %1"
 msgstr "Tabl: %1"
 
-#: ipteditor/kmfruleedit.cpp:1060 ipteditor/kmfruleedit.cpp:1074
+#: ipteditor/kmfruleedit.cpp:1087 ipteditor/kmfruleedit.cpp:1101
 msgid "Add Chain..."
 msgstr ""
 
-#: ipteditor/kmfruleedit.cpp:1067
+#: ipteditor/kmfruleedit.cpp:1094
 #, c-format
 msgid "Chain: %1"
 msgstr "Cadwyn: %1"
 
-#: ipteditor/kmfruleedit.cpp:1070
+#: ipteditor/kmfruleedit.cpp:1097
 msgid "Add Rule..."
 msgstr ""
 
-#: ipteditor/kmfruleedit.cpp:1073 kmfwidgets/kmfobjectinfo.cpp:52
+#: ipteditor/kmfruleedit.cpp:1100 kmfwidgets/kmfobjectinfo.cpp:54
 msgid "Chain Documentation"
 msgstr ""
 
-#: ipteditor/kmfruleedit.cpp:1075 ipteditor/kmfruleedit.cpp:1104
+#: ipteditor/kmfruleedit.cpp:1102 ipteditor/kmfruleedit.cpp:1131
 msgid "Edit Chain"
 msgstr ""
 
-#: ipteditor/kmfruleedit.cpp:1083 kmfwidgets/kmflistview.cpp:525
+#: ipteditor/kmfruleedit.cpp:1110 kmfwidgets/kmflistview.cpp:526
 #, c-format
 msgid "Rule: %1"
 msgstr ""
 
-#: ipteditor/kmfruleedit.cpp:1087 ipteditor/kmfruleedit.cpp:1093
+#: ipteditor/kmfruleedit.cpp:1114 ipteditor/kmfruleedit.cpp:1120
 msgid "Edit Rule Option"
 msgstr ""
 
-#: ipteditor/kmfruleedit.cpp:1095
+#: ipteditor/kmfruleedit.cpp:1122
 msgid "Insert Rule..."
 msgstr ""
 
-#: ipteditor/kmfruleedit.cpp:1099
+#: ipteditor/kmfruleedit.cpp:1126
 msgid "Rename Rule"
 msgstr ""
 
-#: ipteditor/kmfruleedit.cpp:1100 kmfwidgets/kmfobjectinfo.cpp:49
+#: ipteditor/kmfruleedit.cpp:1127 kmfwidgets/kmfobjectinfo.cpp:51
 msgid "Rule Documentation"
 msgstr ""
 
-#: ipteditor/kmfruleedit.cpp:1101
+#: ipteditor/kmfruleedit.cpp:1128
 msgid "Move Up"
 msgstr "Symud i Fyny"
 
-#: ipteditor/kmfruleedit.cpp:1102
+#: ipteditor/kmfruleedit.cpp:1129
 msgid "Move Down"
 msgstr "Symud i Lawr"
 
-#: ipteditor/kmfruleedit.cpp:1111
+#: ipteditor/kmfruleedit.cpp:1138
 msgid "Copy to Chain"
 msgstr ""
 
-#: ipteditor/kmfruleedit.cpp:1117
+#: ipteditor/kmfruleedit.cpp:1144
 msgid "Copy Rule"
 msgstr "Copïo'r rheol"
 
-#: ipteditor/kmfruleedit.cpp:1121
+#: ipteditor/kmfruleedit.cpp:1148
 msgid "Move to Chain"
 msgstr ""
 
-#: ipteditor/kmfruleedit.cpp:1127
+#: ipteditor/kmfruleedit.cpp:1154
 msgid "Move Rule"
 msgstr ""
 
-#: ipteditor/kmfruleedit.cpp:1194
+#: ipteditor/kmfruleedit.cpp:1223
 msgid ""
 "<qt>"
 "<p>Sorry, there is already a rule named: <b>%1</b> in the chain."
@@ -759,13 +814,6 @@ msgstr ""
 msgid "&Convert to IPTables Document and View"
 msgstr ""
 
-#: compilers/iptables/kmfiptablescompiler.cpp:96
-#: installer/kmfinstallerplugin.cpp:259 kmyfirewall.cpp:869
-msgid ""
-"<qt>File <b>%1</b> already exists!</p>"
-"<p><b>Overwrite the existing file?</b></p></qt>"
-msgstr ""
-
 #: compilers/iptables/kmfiptablescompiler.cpp:127
 msgid "<qt><p>Saving file: <b>%1</b> Failed.</p></qt>"
 msgstr ""
@@ -778,13 +826,13 @@ msgid ""
 msgstr ""
 
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:67
-#: kmfwidgets/kmfmynetworkwidget.cpp:105
+#: kmfwidgets/kmfmynetworkwidget.cpp:111
 msgid ""
 "<qt>Define your network zone here by defining the Networks IP and netmask.</qt>"
 msgstr ""
 
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:69
-#: kmfwidgets/kmfmynetworkwidget.cpp:107
+#: kmfwidgets/kmfmynetworkwidget.cpp:113
 msgid "Zone Documentation:"
 msgstr ""
 
@@ -808,52 +856,52 @@ msgstr ""
 
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:276
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:789
-#: kmfwidgets/kmflistviewitem.cpp:229 kmfwidgets/kmfmynetworkwidget.cpp:162
-#: kmfwidgets/kmfmynetworkwidget.cpp:201
+#: kmfwidgets/kmflistviewitem.cpp:229 kmfwidgets/kmfmynetworkwidget.cpp:166
+#: kmfwidgets/kmfmynetworkwidget.cpp:205
 msgid "/%1]"
 msgstr ""
 
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:430
-#: kmfwidgets/kmfmynetworkwidget.cpp:229
+#: kmfwidgets/kmfmynetworkwidget.cpp:233
 #, c-format
 msgid "Zone: %1"
 msgstr ""
 
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:432
-#: kmfwidgets/kmfmynetworkwidget.cpp:231
+#: kmfwidgets/kmfmynetworkwidget.cpp:235
 msgid "Add Host..."
 msgstr "Ychwanegu Gwesteiwr..."
 
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:436
-#: kmfwidgets/kmfmynetworkwidget.cpp:235
+#: kmfwidgets/kmfmynetworkwidget.cpp:239
 msgid "Add Zone..."
 msgstr ""
 
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:438
-#: kmfwidgets/kmfmynetworkwidget.cpp:237
+#: kmfwidgets/kmfmynetworkwidget.cpp:241
 msgid "Rename Zone..."
 msgstr ""
 
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:440
-#: kmfwidgets/kmfmynetworkwidget.cpp:239
+#: kmfwidgets/kmfmynetworkwidget.cpp:243
 msgid "Delete Zone"
 msgstr ""
 
 #: genericinterface/kmfgenericinterfacehost.cpp:221
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:452
-#: kmfwidgets/kmfmynetworkwidget.cpp:251
+#: kmfwidgets/kmfmynetworkwidget.cpp:255
 #, c-format
 msgid "Host: %1"
 msgstr "Gwesteiwr: %1"
 
 #: genericinterface/kmfgenericinterfacehost.cpp:318
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:454
-#: kmfwidgets/kmfmynetworkwidget.cpp:254
+#: kmfwidgets/kmfmynetworkwidget.cpp:258
 msgid "Rename Host..."
 msgstr ""
 
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:455
-#: kmfwidgets/kmfmynetworkwidget.cpp:256
+#: kmfwidgets/kmfmynetworkwidget.cpp:260
 msgid "Delete Host..."
 msgstr ""
 
@@ -870,17 +918,17 @@ msgid "<b>Affected UDP ports: </b>"
 msgstr ""
 
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:647
-#: kmfwidgets/kmfmynetworkwidget.cpp:316
+#: kmfwidgets/kmfmynetworkwidget.cpp:321
 msgid "Zone Name"
 msgstr ""
 
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:647
-#: kmfwidgets/kmfmynetworkwidget.cpp:316
+#: kmfwidgets/kmfmynetworkwidget.cpp:321
 msgid "NewZone"
 msgstr ""
 
 #: genericinterface/kmfgenericinterfaceprotocol.cpp:689
-#: kmfwidgets/kmfmynetworkwidget.cpp:279
+#: kmfwidgets/kmfmynetworkwidget.cpp:284
 msgid "Host Name"
 msgstr "Enw Gwesteiwr"
 
@@ -1007,33 +1055,33 @@ msgstr ""
 msgid "This plugin manages the NAT options of iptables."
 msgstr ""
 
-#: ruleoptionplugins/tos_option/kmfruleeditortos.cpp:47
-#: ruleoptionplugins/tos_target_option/kmfruleeditortos.cpp:47
+#: ruleoptionplugins/tos_option/kmfruleeditortos.cpp:48
+#: ruleoptionplugins/tos_target_option/kmfruleeditortos.cpp:49
 msgid "Set Type of Service"
 msgstr ""
 
-#: ruleoptionplugins/tos_option/kmfruleeditortos.cpp:48
-#: ruleoptionplugins/tos_target_option/kmfruleeditortos.cpp:48
+#: ruleoptionplugins/tos_option/kmfruleeditortos.cpp:49
+#: ruleoptionplugins/tos_target_option/kmfruleeditortos.cpp:50
 msgid "Set TOS"
 msgstr ""
 
-#: ruleoptionplugins/tos_option/kmfruleeditortos.cpp:51
-#: ruleoptionplugins/tos_target_option/kmfruleeditortos.cpp:51
+#: ruleoptionplugins/tos_option/kmfruleeditortos.cpp:52
+#: ruleoptionplugins/tos_target_option/kmfruleeditortos.cpp:53
 msgid "Match Type of Service"
 msgstr ""
 
-#: ruleoptionplugins/tos_option/kmfruleeditortos.cpp:52
-#: ruleoptionplugins/tos_target_option/kmfruleeditortos.cpp:52
+#: ruleoptionplugins/tos_option/kmfruleeditortos.cpp:53
+#: ruleoptionplugins/tos_target_option/kmfruleeditortos.cpp:54
 msgid "Check TOS"
 msgstr ""
 
-#: ruleoptionplugins/tos_option/kmfruleeditortos.cpp:55
-#: ruleoptionplugins/tos_target_option/kmfruleeditortos.cpp:55
+#: ruleoptionplugins/tos_option/kmfruleeditortos.cpp:56
+#: ruleoptionplugins/tos_target_option/kmfruleeditortos.cpp:57
 msgid "Reject with icmp-type"
 msgstr ""
 
-#: ruleoptionplugins/tos_option/kmfruleeditortos.cpp:56
-#: ruleoptionplugins/tos_target_option/kmfruleeditortos.cpp:56
+#: ruleoptionplugins/tos_option/kmfruleeditortos.cpp:57
+#: ruleoptionplugins/tos_target_option/kmfruleeditortos.cpp:58
 msgid "Reject with type:"
 msgstr ""
 
@@ -1055,11 +1103,11 @@ msgstr ""
 msgid "This plugin manages the IP based options of iptables."
 msgstr ""
 
-#: ruleoptionplugins/state_option/kmfruleeditorstate.cpp:65
+#: ruleoptionplugins/state_option/kmfruleeditorstate.cpp:66
 msgid "You must at least choose one of the available states."
 msgstr ""
 
-#: ruleoptionplugins/state_option/kmfruleeditorstate.cpp:65
+#: ruleoptionplugins/state_option/kmfruleeditorstate.cpp:66
 msgid "Configure Connection Tracking"
 msgstr ""
 
@@ -1087,7 +1135,7 @@ msgstr ""
 msgid "This plugin manages the MAC address based options of iptables."
 msgstr ""
 
-#: ruleoptionplugins/mac_option/kmfruleeditmac.cpp:155
+#: ruleoptionplugins/mac_option/kmfruleeditmac.cpp:156
 msgid ""
 "One ore more of the fields are empty. Please fill out all fields to define a "
 "valid MAC address."
@@ -1101,11 +1149,11 @@ msgstr ""
 msgid "This plugin manages the Limit options of iptables."
 msgstr ""
 
-#: ruleoptionplugins/limit_option/kmfruleeditorlimit.cpp:99
+#: ruleoptionplugins/limit_option/kmfruleeditorlimit.cpp:100
 msgid "You cannot enable a limit without at least the rate."
 msgstr ""
 
-#: ruleoptionplugins/limit_option/kmfruleeditorlimit.cpp:99
+#: ruleoptionplugins/limit_option/kmfruleeditorlimit.cpp:100
 msgid "Limit Matches"
 msgstr ""
 
@@ -1117,32 +1165,32 @@ msgstr ""
 msgid "This plugin manages the Tos options of iptables."
 msgstr ""
 
-#: ruleoptionplugins/nat_target_option/kmfruleeditortargetnat.cpp:188
+#: ruleoptionplugins/nat_target_option/kmfruleeditortargetnat.cpp:190
 msgid "You need as a minimum to define an IP address to make NAT working."
 msgstr ""
 
-#: ruleoptionplugins/nat_target_option/kmfruleeditortargetnat.cpp:189
-#: ruleoptionplugins/nat_target_option/kmfruleeditortargetnat.cpp:195
+#: ruleoptionplugins/nat_target_option/kmfruleeditortargetnat.cpp:191
+#: ruleoptionplugins/nat_target_option/kmfruleeditortargetnat.cpp:197
 msgid "Argument not Valid"
 msgstr ""
 
-#: ruleoptionplugins/nat_target_option/kmfruleeditortargetnat.cpp:194
+#: ruleoptionplugins/nat_target_option/kmfruleeditortargetnat.cpp:196
 msgid "Please also set the upper boundary for your address range.."
 msgstr ""
 
-#: ruleoptionplugins/nat_target_option/kmfruleeditortargetnat.cpp:268
-#: ruleoptionplugins/nat_target_option/kmfruleeditortargetnat.cpp:291
+#: ruleoptionplugins/nat_target_option/kmfruleeditortargetnat.cpp:270
+#: ruleoptionplugins/nat_target_option/kmfruleeditortargetnat.cpp:293
 msgid ""
 "Unable to work without values.\n"
 "Please specify at least an IP address."
 msgstr ""
 
-#: ruleoptionplugins/nat_target_option/kmfruleeditortargetnat.cpp:270
-#: ruleoptionplugins/nat_target_option/kmfruleeditortargetnat.cpp:293
+#: ruleoptionplugins/nat_target_option/kmfruleeditortargetnat.cpp:272
+#: ruleoptionplugins/nat_target_option/kmfruleeditortargetnat.cpp:295
 msgid "Nat Options"
 msgstr ""
 
-#: ruleoptionplugins/protocol_option/kmfruleeditorprotocol.cpp:607
+#: ruleoptionplugins/protocol_option/kmfruleeditorprotocol.cpp:609
 msgid ""
 "<qt>"
 "<p>You need to select the TCP flags you like to check and those your rule "
@@ -1215,13 +1263,13 @@ msgstr ""
 msgid "&Export.."
 msgstr "&Allforio.."
 
-#. i18n: file kmyfirewallui.rc line 22
+#. i18n: file kmyfirewallui.rc line 23
 #: rc.cpp:9
 #, no-c-format
 msgid "&Run"
 msgstr "R&hedeg"
 
-#. i18n: file kmyfirewallui.rc line 27
+#. i18n: file kmyfirewallui.rc line 28
 #: rc.cpp:12
 #, no-c-format
 msgid "Main"
@@ -1262,7 +1310,7 @@ msgid "Yes, I am using Gentoo"
 msgstr ""
 
 #. i18n: file kmyfirewallconfigdialog.ui line 166
-#: kmfwidgets/kmfmynetworkwidget.cpp:96 rc.cpp:37
+#: kmfwidgets/kmfmynetworkwidget.cpp:102 rc.cpp:37
 #, no-c-format
 msgid "Interfaces"
 msgstr "Rhyngwynebau"
@@ -2125,7 +2173,7 @@ msgid "Log incoming packets"
 msgstr ""
 
 #. i18n: file kmyfirewallwizard.ui line 2049
-#: kmfwidgets/kmflistview.cpp:832 kmfwidgets/kmflistview.cpp:838 rc.cpp:535
+#: kmfwidgets/kmflistview.cpp:833 kmfwidgets/kmflistview.cpp:839 rc.cpp:535
 #: rc.cpp:563 rc.cpp:590 rc.cpp:614
 #, no-c-format
 msgid "Logging:"
@@ -2207,71 +2255,81 @@ msgstr ""
 msgid "Start firewall"
 msgstr ""
 
-#: kmyfirewall.cpp:114
+#: kmyfirewall.cpp:115
+msgid "Initialise Document..."
+msgstr ""
+
+#: kmyfirewall.cpp:119
 msgid "Loading Plugins..."
 msgstr ""
 
-#: kmyfirewall.cpp:137
+#: kmyfirewall.cpp:142
 msgid "Init statusbar..."
 msgstr ""
 
-#: kmyfirewall.cpp:139
+#: kmyfirewall.cpp:144
 msgid "Init menu..."
 msgstr ""
 
-#: kmyfirewall.cpp:141
+#: kmyfirewall.cpp:146
 msgid "Init actions..."
 msgstr ""
 
-#: kmyfirewall.cpp:143
+#: kmyfirewall.cpp:148
 msgid "Init GUI..."
 msgstr ""
 
-#: kmyfirewall.cpp:145
+#: kmyfirewall.cpp:150
 msgid "Read configuration..."
 msgstr ""
 
-#: kmyfirewall.cpp:148
+#: kmyfirewall.cpp:153
 msgid ""
 "<qt>"
 "<p><b>Compatibility Warning!</b>"
 "<br>Since KMyFirewall 1.0.2 the configuration handling has changed to allow "
-"multi target rulesets. Due this change the all installation target dependent "
-"settings (paths, interfaces etc.) are stored within the ruleset document itself "
-"which is per default saved to $KDEHOME/share/apps/kmyfirewall/mynetwork.kmfnet "
-"including the configuration for all targets that are defined."
+"multi target rulesets. Because of this change the all installation target "
+"dependent settings (paths, interfaces etc.) are stored within the ruleset "
+"document itself which is per default saved to "
+"$KDEHOME/share/apps/kmyfirewall/mynetwork.kmfnet including the configuration "
+"for all targets that are defined."
 "<br>If there are allready settings defined those will be applied to the "
 "localhost target.</p></qt>"
 msgstr ""
 
-#: kmyfirewall.cpp:163
+#: kmyfirewall.cpp:168
 msgid "Restoring session..."
 msgstr "Yn adfer y sesiwn ..."
 
-#: kmyfirewall.cpp:201 kmyfirewall.cpp:231
+#: kmyfirewall.cpp:206 kmyfirewall.cpp:227
 msgid "KMFPluginFactory::KMFMainView( this, m_err ): returned a NULL pointer"
 msgstr ""
 
-#: kmyfirewall.cpp:265
+#: kmyfirewall.cpp:261
 msgid "Return to Editor View"
 msgstr ""
 
-#: kmyfirewall.cpp:278
+#: kmyfirewall.cpp:274
 msgid "&Edit Document Information"
 msgstr ""
 
-#: kmyfirewall.cpp:306
+#: kmyfirewall.cpp:302
+#, fuzzy
+msgid "&Export Target Configuration..."
+msgstr "&Cadw Ffurfweddiad"
+
+#: kmyfirewall.cpp:305
 msgid "&Load Template..."
 msgstr "&Llwytho Patrymlun ..."
 
-#: kmyfirewall.cpp:323
+#: kmyfirewall.cpp:327
 msgid ""
 "<p>KMyFirewall::slotLoadDocument(KMFNetwork& doc)"
 "<p>doc == 0"
 "<p>This is a bug."
 msgstr ""
 
-#: kmyfirewall.cpp:358
+#: kmyfirewall.cpp:362
 msgid ""
 "<qt>"
 "<p><b>KMyFirewall was not started as user <i>root</i>.</b>"
@@ -2280,95 +2338,80 @@ msgid ""
 "<p><b>Do you still want to continue?</b></p></qt>"
 msgstr ""
 
-#: kmyfirewall.cpp:374
+#: kmyfirewall.cpp:378
 msgid ""
 "<qt><b>Compatibility Warning</b>."
 "<p> As the file format used to save the rulesets has changed, rulesets created "
 "with KMyFirewall &lt; 1.0beta1 <b>WILL NOT</b> work, don't even try it!</p></qt>"
 msgstr ""
 
-#: kmyfirewall.cpp:384
+#: kmyfirewall.cpp:388
 msgid "Warning - File format change"
 msgstr ""
 
-#: kmyfirewall.cpp:390
+#: kmyfirewall.cpp:394
 msgid "<p>Do you want to save the changes before you quit?"
 msgstr ""
 
-#: kmyfirewall.cpp:447
+#: kmyfirewall.cpp:451
 msgid "Starting Up"
 msgstr ""
 
-#: kmyfirewall.cpp:464
+#: kmyfirewall.cpp:467
 #, c-format
 msgid " Configuring Target %1"
 msgstr ""
 
-#: kmyfirewall.cpp:466
-msgid "No File Loaded"
-msgstr "Heb Lwytho Ffeil"
+#: kmyfirewall.cpp:469
+msgid "[modified]"
+msgstr ""
 
-#: kmyfirewall.cpp:518 kmyfirewall.cpp:577
+#: kmyfirewall.cpp:529 kmyfirewall.cpp:593
 msgid "Open file: "
 msgstr "Agor ffeil : "
 
-#: kmyfirewall.cpp:537
+#: kmyfirewall.cpp:552
 msgid "Save Changed Data?"
 msgstr ""
 
-#: kmyfirewall.cpp:538
+#: kmyfirewall.cpp:553
 msgid ""
 "This firewall configuration has been changed since it was last saved.\n"
 "\n"
 "What do you want to do with these changes?\n"
 msgstr ""
 
-#: kmyfirewall.cpp:625
+#: kmyfirewall.cpp:695
+msgid ""
+"Please select the Target host that should load the selected configuration"
+msgstr ""
+
+#: kmyfirewall.cpp:735
+msgid "<qt><p>No loader found for file: <b>%1</b></p></qt>"
+msgstr ""
+
+#: kmyfirewall.cpp:758
 #, c-format
 msgid "<p>Unable to load file %1"
 msgstr ""
 
-#: kmyfirewall.cpp:792
+#: kmyfirewall.cpp:915
 msgid "Wrote file: "
 msgstr ""
 
-#: kmyfirewall.cpp:794 kmyfirewall.cpp:895
-msgid "Sorry could not write file: "
-msgstr ""
-
-#: kmyfirewall.cpp:833
-msgid "|KMyFirewall IPTables Ruleset (*.kmfrs)"
-msgstr ""
-
-#: kmyfirewall.cpp:834
-msgid "KMyFirewall IPTables Ruleset Template (*.tkmfrs)"
-msgstr ""
-
-#: kmyfirewall.cpp:835
-msgid "|KMyFirewall Generic Ruleset (*.kmfgrs)"
-msgstr ""
-
-#: kmyfirewall.cpp:836
-msgid "KMyFirewall Generic Ruleset Template (*.tkmfgrs)"
-msgstr ""
-
-#: kmyfirewall.cpp:893
-msgid "Wrote File: "
-msgstr ""
-
-#: kmyfirewall.cpp:922
+#: kmyfirewall.cpp:1027
 msgid "Firewall is installed"
 msgstr ""
 
-#: kmyfirewall.cpp:925
+#: kmyfirewall.cpp:1030
 msgid "Firewall is not installed"
 msgstr ""
 
-#: kmyfirewall.cpp:964
+#: kmyfirewall.cpp:1069
 msgid "Firewall is not running"
 msgstr ""
 
-#: kmyfirewall.cpp:966
+#: kmyfirewall.cpp:1071
 msgid "Firewall is running"
 msgstr ""
 
@@ -2858,19 +2901,19 @@ msgstr ""
 msgid "Generate Installation Package"
 msgstr ""
 
-#: kmfwidgets/kmfmynetworkwidget.cpp:89 kmfwidgets/kmfmynetworkwidget.cpp:123
+#: kmfwidgets/kmfmynetworkwidget.cpp:95 kmfwidgets/kmfmynetworkwidget.cpp:129
 msgid "General"
 msgstr "Cyffredinol"
 
-#: kmfwidgets/kmfmynetworkwidget.cpp:99
+#: kmfwidgets/kmfmynetworkwidget.cpp:105
 msgid "System Settings"
 msgstr "Gosodiadau Cysawd"
 
-#: kmfwidgets/kmfmynetworkwidget.cpp:260
+#: kmfwidgets/kmfmynetworkwidget.cpp:264
 msgid "Make Active Target..."
 msgstr ""
 
-#: kmfwidgets/kmfmynetworkwidget.cpp:344
+#: kmfwidgets/kmfmynetworkwidget.cpp:349
 msgid "world"
 msgstr ""
 
@@ -2891,36 +2934,36 @@ msgstr ""
 msgid "Localhost -> %1"
 msgstr ""
 
-#: kmfwidgets/kmflistview.cpp:292 kmfwidgets/kmflistview.cpp:301
-#: kmfwidgets/kmflistview.cpp:664 kmfwidgets/kmflistview.cpp:672
-#: kmfwidgets/kmflistview.cpp:682 kmfwidgets/kmflistview.cpp:847
-#: kmfwidgets/kmflistview.cpp:856 kmfwidgets/kmflistviewitem.cpp:321
+#: kmfwidgets/kmflistview.cpp:293 kmfwidgets/kmflistview.cpp:302
+#: kmfwidgets/kmflistview.cpp:665 kmfwidgets/kmflistview.cpp:673
+#: kmfwidgets/kmflistview.cpp:683 kmfwidgets/kmflistview.cpp:848
+#: kmfwidgets/kmflistview.cpp:857 kmfwidgets/kmflistviewitem.cpp:321
 #: kmfwidgets/kmflistviewitem.cpp:325 kmfwidgets/kmflistviewitem.cpp:343
 msgid "Documentation:"
 msgstr "Dogfenniaeth :"
 
-#: kmfwidgets/kmflistview.cpp:380 kmfwidgets/kmflistview.cpp:392
+#: kmfwidgets/kmflistview.cpp:381 kmfwidgets/kmflistview.cpp:393
 #: kmfwidgets/kmflistviewitem.cpp:327
 msgid "Chain logging:"
 msgstr ""
 
-#: kmfwidgets/kmflistview.cpp:462 kmfwidgets/kmflistview.cpp:470
+#: kmfwidgets/kmflistview.cpp:463 kmfwidgets/kmflistview.cpp:471
 #: kmfwidgets/kmflistviewitem.cpp:329
 msgid "Chain Feeds:"
 msgstr ""
 
-#: kmfwidgets/kmflistview.cpp:501 kmfwidgets/kmflistview.cpp:510
+#: kmfwidgets/kmflistview.cpp:502 kmfwidgets/kmflistview.cpp:511
 #: kmfwidgets/kmflistviewitem.cpp:331
 msgid "Chain forwards:"
 msgstr ""
 
-#: kmfwidgets/kmflistview.cpp:537 kmfwidgets/kmflistview.cpp:547
+#: kmfwidgets/kmflistview.cpp:538 kmfwidgets/kmflistview.cpp:548
 #: kmfwidgets/kmflistviewitem.cpp:333
 msgid "Rule(s):"
 msgstr ""
 
-#: kmfwidgets/kmflistview.cpp:360 kmfwidgets/kmflistview.cpp:369
-#: kmfwidgets/kmflistview.cpp:776 kmfwidgets/kmflistview.cpp:784
+#: kmfwidgets/kmflistview.cpp:361 kmfwidgets/kmflistview.cpp:370
+#: kmfwidgets/kmflistview.cpp:777 kmfwidgets/kmflistview.cpp:785
 #: kmfwidgets/kmflistviewitem.cpp:335 kmfwidgets/kmflistviewitem.cpp:345
 msgid "Cmd:"
 msgstr ""
@@ -2929,8 +2972,8 @@ msgstr ""
 msgid "Chain (User-Defined):"
 msgstr ""
 
-#: kmfwidgets/kmflistview.cpp:621 kmfwidgets/kmflistview.cpp:635
-#: kmfwidgets/kmflistview.cpp:753 kmfwidgets/kmflistview.cpp:758
+#: kmfwidgets/kmflistview.cpp:622 kmfwidgets/kmflistview.cpp:636
+#: kmfwidgets/kmflistview.cpp:754 kmfwidgets/kmflistview.cpp:759
 #: kmfwidgets/kmflistviewitem.cpp:347
 msgid "Target:"
 msgstr "Targed:"
@@ -2949,7 +2992,7 @@ msgstr ""
 msgid "You have to select an interface first before you can delete it."
 msgstr ""
 
-#: kmfwidgets/kmfiptdocoptions.cpp:51
+#: kmfwidgets/kmfiptdocoptions.cpp:52
 msgid ""
 "<p>Sorry, you need to use at least one of the three tables -- <b> "
 "filter, nat</b> or <b>mangle</b>:"
@@ -2989,76 +3032,76 @@ msgstr "Gwerth"
 msgid "Found invalid ListViewItem."
 msgstr ""
 
-#: kmfwidgets/kmflistview.cpp:215 kmfwidgets/kmflistview.cpp:224
+#: kmfwidgets/kmflistview.cpp:225
 msgid "Table:"
 msgstr "Tabl:"
 
-#: kmfwidgets/kmflistview.cpp:311 kmfwidgets/kmflistview.cpp:318
-#: kmfwidgets/kmflistview.cpp:690 kmfwidgets/kmflistview.cpp:697
-#: kmfwidgets/kmflistview.cpp:865 kmfwidgets/kmflistview.cpp:872
-#: kmfwidgets/kmflistview.cpp:953 kmfwidgets/kmflistview.cpp:959
+#: kmfwidgets/kmflistview.cpp:312 kmfwidgets/kmflistview.cpp:319
+#: kmfwidgets/kmflistview.cpp:691 kmfwidgets/kmflistview.cpp:698
+#: kmfwidgets/kmflistview.cpp:866 kmfwidgets/kmflistview.cpp:873
+#: kmfwidgets/kmflistview.cpp:954 kmfwidgets/kmflistview.cpp:960
 msgid "Object ID:"
 msgstr ""
 
-#: kmfwidgets/kmflistview.cpp:343
+#: kmfwidgets/kmflistview.cpp:344
 msgid "Chain:"
 msgstr "Cadwyn:"
 
-#: kmfwidgets/kmflistview.cpp:395
+#: kmfwidgets/kmflistview.cpp:396
 msgid "Dropped Packets"
 msgstr "Pecynnau wedi'u Disgyn"
 
-#: kmfwidgets/kmflistview.cpp:400 kmfwidgets/kmflistview.cpp:413
+#: kmfwidgets/kmflistview.cpp:401 kmfwidgets/kmflistview.cpp:414
 msgid "Limit rate:"
 msgstr ""
 
-#: kmfwidgets/kmflistview.cpp:417 kmfwidgets/kmflistview.cpp:430
+#: kmfwidgets/kmflistview.cpp:418 kmfwidgets/kmflistview.cpp:431
 msgid "Limit burst:"
 msgstr ""
 
-#: kmfwidgets/kmflistview.cpp:436 kmfwidgets/kmflistview.cpp:450
+#: kmfwidgets/kmflistview.cpp:437 kmfwidgets/kmflistview.cpp:451
 msgid "Log prefix:"
 msgstr ""
 
-#: kmfwidgets/kmflistview.cpp:473
+#: kmfwidgets/kmflistview.cpp:474
 msgid "System Feed"
 msgstr ""
 
-#: kmfwidgets/kmflistview.cpp:476
+#: kmfwidgets/kmflistview.cpp:477
 #, c-format
 msgid ""
 "_n: 1 Feed\n"
 "%n Feeds"
 msgstr ""
 
-#: kmfwidgets/kmflistview.cpp:490
+#: kmfwidgets/kmflistview.cpp:491
 #, c-format
 msgid "From chain: %1"
 msgstr ""
 
-#: kmfwidgets/kmflistview.cpp:508
+#: kmfwidgets/kmflistview.cpp:509
 #, c-format
 msgid ""
 "_n: 1 Forward\n"
 "%n Forwards"
 msgstr ""
 
-#: kmfwidgets/kmflistview.cpp:545
+#: kmfwidgets/kmflistview.cpp:546
 #, c-format
 msgid ""
 "_n: 1 Rule\n"
 "%n Rules"
 msgstr ""
 
-#: kmfwidgets/kmflistview.cpp:597
+#: kmfwidgets/kmflistview.cpp:598
 msgid "Rule"
 msgstr ""
 
-#: kmfwidgets/kmflistview.cpp:646 kmfwidgets/kmflistview.cpp:654
+#: kmfwidgets/kmflistview.cpp:647 kmfwidgets/kmflistview.cpp:655
 msgid "Policy Cmd:"
 msgstr ""
 
-#: kmfwidgets/kmflistview.cpp:840
+#: kmfwidgets/kmflistview.cpp:841
 msgid "Logging matching Packets"
 msgstr ""
 
@@ -3159,13 +3202,16 @@ msgstr ""
 msgid "Template %1 does not contain the \"abstract\" tag."
 msgstr ""
 
-#: kmfwidgets/kmfobjectinfo.cpp:55
+#: kmfwidgets/kmfobjectinfo.cpp:57
 msgid "Object Documentation"
 msgstr ""
 
-#: kmfwidgets/kmfobjectinfo.cpp:66
+#: kmfwidgets/kmfobjectinfo.cpp:68
 msgid "Firewall Documentation"
 msgstr ""
+
+#~ msgid "No File Loaded"
+#~ msgstr "Heb Lwytho Ffeil"
 
 #~ msgid "Gentoo"
 #~ msgstr "Gentoo"
