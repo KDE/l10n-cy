@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kbattleship\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-06-13 17:42+0200\n"
+"POT-Creation-Date: 2007-06-21 05:10+0200\n"
 "PO-Revision-Date: 2005-09-08 22:52+0100\n"
 "Last-Translator: Kevin Donnelly <kevin@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -21,19 +21,49 @@ msgstr ""
 "\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: generalcontroller.cpp:47 gamechooser.cpp:312
+#: generalcontroller.cpp:47 gamechooser.cpp:314
 #, fuzzy
 #| msgid "Computer Player"
 msgid "Computer"
 msgstr "Chwaraewr Cyfrifiadur"
 
-#: main.cpp:27
+#: main.cpp:25
 msgid "KBattleship"
 msgstr "KBattleship"
 
-#: main.cpp:27
+#: main.cpp:25
 msgid "The KDE Battleship clone"
 msgstr "Clôn Llong Ryfel KDE"
+
+#: simplemenu.cpp:25
+#, fuzzy
+#| msgid "S&ingle Player"
+msgid "Single player"
+msgstr "Chwaraewr &Sengl"
+
+#: simplemenu.cpp:26
+msgid "Host network game"
+msgstr ""
+
+#: simplemenu.cpp:27
+#, fuzzy
+#| msgid "Connect to Server"
+msgid "Connect to network game"
+msgstr "Cysylltu â'r Gweinydd"
+
+#: networkdialog.cpp:24
+#, fuzzy
+#| msgid "&Nick name:"
+msgid "&Nickname:"
+msgstr "&Ffugenw:"
+
+#: networkdialog.cpp:37
+msgid "&Hostname:"
+msgstr ""
+
+#: networkdialog.cpp:53
+msgid "&Port:"
+msgstr "&Porth:"
 
 #: playfield.cpp:59
 msgid "Shots"
@@ -47,67 +77,87 @@ msgstr "Trawiadau"
 msgid "Misses"
 msgstr ""
 
-#: playfield.cpp:197
+#: playfield.cpp:195
 msgid "You win!"
 msgstr ""
 
-#: playfield.cpp:200
+#: playfield.cpp:198
 #, fuzzy
 #| msgid "You lost the game. :("
 msgid "You lose."
 msgstr "Rydych wedi colli'r gêm. :("
 
+#. i18n: tag label
+#. i18n: file kbattleship.kcfg line 9
+#: rc.cpp:3
+msgid "Default hostname for multiplayer games."
+msgstr ""
+
+#. i18n: tag label
+#. i18n: file kbattleship.kcfg line 13
+#: rc.cpp:6
+msgid "Default port for multiplayer games."
+msgstr ""
+
+#. i18n: tag label
+#. i18n: file kbattleship.kcfg line 19
+#: rc.cpp:9
+msgid "User nickname."
+msgstr ""
+
 #. i18n: tag text
 #. i18n: file kbattleshipui.rc line 6
-#: rc.cpp:3
+#: rc.cpp:12
 #, fuzzy
 msgid "&Game"
 msgstr "&Enw'r gêm:"
 
 #. i18n: tag text
 #. i18n: file kbattleshipui.rc line 10
-#: rc.cpp:6
+#: rc.cpp:15
 msgid "&Settings"
 msgstr ""
 
-#: rc.cpp:7
+#: rc.cpp:16
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Kyfieithu: Thierry Vignaud, KD, dylunio"
 
-#: rc.cpp:8
+#: rc.cpp:17
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kyfieithu@dotmon.com"
 
-#: gamechooser.cpp:133
+#: gamechooser.cpp:135
 msgid "Easy"
 msgstr ""
 
-#: gamechooser.cpp:136
+#: gamechooser.cpp:138
 msgid "Medium"
 msgstr ""
 
-#: gamechooser.cpp:139
+#: gamechooser.cpp:141
 msgid "Hard"
 msgstr ""
 
-#: gamechooser.cpp:190
+#: gamechooser.cpp:192
 msgid "Wait for a connection"
 msgstr ""
 
-#: gamechooser.cpp:193
+#: gamechooser.cpp:195
 #, fuzzy
 #| msgid "&Connect to server"
 msgid "Connect to a server"
 msgstr "Cysyll&tu â'r gweinydd"
 
-#: gamechooser.cpp:308
-msgid "You"
-msgstr ""
+#: gamechooser.cpp:310
+#, fuzzy
+#| msgid "LAN games:"
+msgid "Local game"
+msgstr "Gemau LAN:"
 
-#: gamechooser.cpp:316
-msgid "Over the network"
+#: gamechooser.cpp:318
+msgid "Network play"
 msgstr ""
 
 #: kwelcomescreen/test.cpp:32
@@ -122,16 +172,6 @@ msgstr ""
 msgid "Test class for KWelcomeScreen"
 msgstr ""
 
-#: mainwindow.cpp:53
-#, fuzzy
-#| msgid "Start Server"
-msgid "Start Ser&ver"
-msgstr "Cychwyn y Gweinydd"
-
-#: mainwindow.cpp:57
-msgid "&Connect"
-msgstr "&Cysylltu"
-
 #: playerentity.cpp:166
 #, qt-format
 msgid "Your opponent is now known as %1"
@@ -143,6 +183,14 @@ msgid ""
 "to the rules enforced by old clients, ships cannot be placed adjacent to one "
 "another."
 msgstr ""
+
+#, fuzzy
+#~| msgid "Start Server"
+#~ msgid "Start Ser&ver"
+#~ msgstr "Cychwyn y Gweinydd"
+
+#~ msgid "&Connect"
+#~ msgstr "&Cysylltu"
 
 #~ msgid "     Player 1: %1     "
 #~ msgstr "Chwaraewr 1: %1       "
@@ -291,9 +339,6 @@ msgstr ""
 #~ msgid "The connection broke down!"
 #~ msgstr "Torrodd y cysylltiad!"
 
-#~ msgid "Connect to Server"
-#~ msgstr "Cysylltu â'r Gweinydd"
-
 #~ msgid "Connection to client lost. Aborting the game."
 #~ msgstr "Collwyd y cysylltiad i'r dibynnydd.  Yn erthylu'r gem."
 
@@ -398,20 +443,11 @@ msgstr ""
 #~ msgid "Chat Dialog:"
 #~ msgstr "Ymgom sgwrs:"
 
-#~ msgid "&Nick name:"
-#~ msgstr "&Ffugenw:"
-
 #~ msgid "Enter a name that identifies you in the game"
 #~ msgstr "Rhowch enw sy'n eich dynodi yn y gêm"
 
 #~ msgid "&Server:"
 #~ msgstr "&Gweinydd:"
-
-#~ msgid "LAN games:"
-#~ msgstr "Gemau LAN:"
-
-#~ msgid "&Port:"
-#~ msgstr "&Porth:"
 
 #~ msgid "Choose a port to connect to"
 #~ msgstr "Dewiswch borth i gysylltu â hi"
@@ -460,9 +496,6 @@ msgstr ""
 
 #~ msgid "Shows all water shots"
 #~ msgstr "Dangos pob ergyd dŵr"
-
-#~ msgid "S&ingle Player"
-#~ msgstr "Chwaraewr &Sengl"
 
 #~ msgid "S&ingle game"
 #~ msgstr "Gêm sen&gl"
