@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kspread\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-07-14 05:36+0200\n"
+"POT-Creation-Date: 2007-07-15 05:35+0200\n"
 "PO-Revision-Date: 2004-09-09 12:35+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -2751,10 +2751,11 @@ msgstr "Pennawd"
 msgid "Header1"
 msgstr "Pennawd1"
 
-#: StyleManager.cpp:382 dialogs/StylesDialog.cpp:117
-#: dialogs/StylesDialog.cpp:161 dialogs/StylesDialog.cpp:204
-#: dialogs/StylesDialog.cpp:220 dialogs/StylesDialog.cpp:263
-#: dialogs/StylesDialog.cpp:285 dialogs/StylesDialog.cpp:308 ui/View.cpp:541
+#: StyleManager.cpp:382 dialogs/StyleManagerDialog.cpp:100
+#: dialogs/StyleManagerDialog.cpp:144 dialogs/StyleManagerDialog.cpp:182
+#: dialogs/StyleManagerDialog.cpp:196 dialogs/StyleManagerDialog.cpp:239
+#: dialogs/StyleManagerDialog.cpp:259 dialogs/StyleManagerDialog.cpp:280
+#: ui/View.cpp:541
 #, fuzzy
 msgid "Default"
 msgstr "Canlyniad"
@@ -4428,6 +4429,18 @@ msgstr "Daduno Celloedd"
 msgid "Merging of columns or rows is not supported."
 msgstr ""
 
+#: commands/NamedAreaCommand.cpp:33 commands/NamedAreaCommand.cpp:49
+#: dialogs/AddNamedAreaDialog.cpp:49
+#, fuzzy
+#| msgid "Edit Area"
+msgid "Add Named Area"
+msgstr "Golygu Ardal"
+
+#: commands/NamedAreaCommand.cpp:51 dialogs/NamedAreaDialog.cpp:191
+#, fuzzy
+msgid "Remove Named Area"
+msgstr "Gwaredu Popeth"
+
 #: commands/RowColumnManipulators.cpp:42 dialogs/Resize2Dialog.cpp:124
 msgid "Resize Column"
 msgstr "Newid Maint Colofn"
@@ -4555,26 +4568,26 @@ msgstr "Yr Aifft"
 msgid "Non-empty"
 msgstr "Dim"
 
-#: dialogs/AngleDialog.cpp:62
-msgid "Angle:"
-msgstr "Ongl:"
-
-#: dialogs/AreaDialog.cpp:46
-msgid "Area Name"
-msgstr "Enw Ardal"
-
-#: dialogs/AreaDialog.cpp:60
+#: dialogs/AddNamedAreaDialog.cpp:58
 msgid "Enter the area name:"
 msgstr "Rhowch enw'r ardal:"
 
-#: dialogs/AreaDialog.cpp:95 ui/View.cpp:6591
-msgid "This name is already used."
-msgstr "Defnyddir yr enw hwn eisoes."
+#: dialogs/AddNamedAreaDialog.cpp:91
+#, qt-format
+msgid ""
+"The named area '%1' already exists.\n"
+"Do you want to replace it?"
+msgstr ""
 
-#: dialogs/AreaDialog.cpp:99
+#: dialogs/AddNamedAreaDialog.cpp:93 dialogs/AddNamedAreaDialog.cpp:99
+#: dialogs/NamedAreaDialog.cpp:309
 #, fuzzy
-msgid "Area text is empty."
-msgstr "Nae'r testun ardal yn wag!"
+msgid "Replace Named Area"
+msgstr "Dangos ardal a enwir."
+
+#: dialogs/AngleDialog.cpp:62
+msgid "Angle:"
+msgstr "Ongl:"
 
 #: dialogs/CSVDialog.cpp:73 dialogs/CSVDialog.cpp:170
 msgid "Inserting From Clipboard"
@@ -4754,7 +4767,7 @@ msgid "&Add"
 msgstr "&Ychwanegu"
 
 #: dialogs/ConsolidateDialog.cpp:125 dialogs/ListDialog.cpp:76
-#: dialogs/NamedAreaDialog.cpp:68
+#: dialogs/NamedAreaDialog.cpp:70
 #, fuzzy
 msgid "&Remove"
 msgstr "&Gwaredu Cyswllt"
@@ -5260,7 +5273,7 @@ msgstr "Gwaredu rhesi"
 msgid "Remove columns"
 msgstr "Gwaredu colofnau"
 
-#: dialogs/LayoutDialog.cpp:173
+#: dialogs/LayoutDialog.cpp:173 dialogs/StyleManagerDialog.cpp:60
 msgid "Style"
 msgstr "Arddull"
 
@@ -5674,74 +5687,58 @@ msgstr ""
 "Nid yw'r ardal wag yn wag.\n"
 "Ydych am barhau?"
 
-#: dialogs/NamedAreaDialog.cpp:67
+#: dialogs/NamedAreaDialog.cpp:69
 #, fuzzy
 #| msgid "&Sheet"
 msgid "&Select"
 msgstr "Dal&en"
 
-#: dialogs/NamedAreaDialog.cpp:69
+#: dialogs/NamedAreaDialog.cpp:71
 msgid "&Edit..."
 msgstr "&Golygu..."
 
-#: dialogs/NamedAreaDialog.cpp:70 dialogs/StylesDialog.cpp:80
+#: dialogs/NamedAreaDialog.cpp:72 dialogs/StyleManagerDialog.cpp:48
 msgid "&New..."
 msgstr "&Newydd..."
 
-#: dialogs/NamedAreaDialog.cpp:71
+#: dialogs/NamedAreaDialog.cpp:73
 #, fuzzy
 msgid "Named Areas"
 msgstr "Gwaredu Popeth"
 
-#: dialogs/NamedAreaDialog.cpp:87 dialogs/NamedAreaDialog.cpp:115
+#: dialogs/NamedAreaDialog.cpp:89 dialogs/NamedAreaDialog.cpp:117
 #, qt-format
 msgid "Area: %1"
 msgstr "Ardal: %1"
 
-#: dialogs/NamedAreaDialog.cpp:150
+#: dialogs/NamedAreaDialog.cpp:152
 #, fuzzy
 msgid "New Named Area"
 msgstr "Gwaredu Popeth"
 
-#: dialogs/NamedAreaDialog.cpp:176
+#: dialogs/NamedAreaDialog.cpp:178
 #, fuzzy
 #| msgid "Edit Area"
 msgid "Edit Named Area"
 msgstr "Golygu Ardal"
 
-#: dialogs/NamedAreaDialog.cpp:188
+#: dialogs/NamedAreaDialog.cpp:190
 #, fuzzy
 #| msgid "Do you really want to remove this area name?"
 msgid "Do you really want to remove this named area?"
 msgstr "Ydych wir eisiau gwaredu'r enw ardal yma?"
 
-#: dialogs/NamedAreaDialog.cpp:189
-#, fuzzy
-msgid "Remove Named Area"
-msgstr "Gwaredu Popeth"
-
-#: dialogs/NamedAreaDialog.cpp:233
+#: dialogs/NamedAreaDialog.cpp:239
 msgid "Cells:"
 msgstr "Celloedd"
 
-#: dialogs/NamedAreaDialog.cpp:240
+#: dialogs/NamedAreaDialog.cpp:246
 msgid "Sheet:"
 msgstr "Dalen:"
 
-#: dialogs/NamedAreaDialog.cpp:247
+#: dialogs/NamedAreaDialog.cpp:253
 msgid "Area name:"
 msgstr "Enw ardal:"
-
-#: dialogs/NamedAreaDialog.cpp:304
-#, fuzzy
-#| msgid "Do you really want to remove this area name?"
-msgid "Do you really want to replace this named area?"
-msgstr "Ydych wir eisiau gwaredu'r enw ardal yma?"
-
-#: dialogs/NamedAreaDialog.cpp:305
-#, fuzzy
-msgid "Replace Named Area"
-msgstr "Dangos ardal a enwir."
 
 #: dialogs/PaperLayoutDialog.cpp:83
 msgid "&Apply to all sheets"
@@ -6417,41 +6414,33 @@ msgstr "Mae'r rhes &gyntaf yn cynnwys pennawd"
 msgid "Special Paste"
 msgstr "Gludo Arbennig"
 
-#: dialogs/StylesDialog.cpp:49 dialogs/StylesDialog.cpp:56
-msgid "Styles"
-msgstr "Arddulliau"
-
-#: dialogs/StylesDialog.cpp:58
-msgid "All Styles"
-msgstr "Pob Arddull"
-
-#: dialogs/StylesDialog.cpp:59
-msgid "Applied Styles"
-msgstr "Arddulliau a Weithredwyd"
-
-#: dialogs/StylesDialog.cpp:60
-msgid "Custom Styles"
-msgstr "Arddulliau Addasiedig"
-
-#: dialogs/StylesDialog.cpp:61
-#, fuzzy
-msgid "Hierarchical"
-msgstr "Cyllidol"
-
-#: dialogs/StylesDialog.cpp:78 ui/View.cpp:1189
-msgid "Style Manager"
-msgstr "Rheoydd Arddull"
-
-#: dialogs/StylesDialog.cpp:81
+#: dialogs/StyleManagerDialog.cpp:49
 msgid "&Modify..."
 msgstr "&Addasu..."
 
-#: dialogs/StylesDialog.cpp:82
+#: dialogs/StyleManagerDialog.cpp:50
 #, fuzzy
 msgid "&Delete..."
 msgstr "&Ymofyn Cyrchnod..."
 
-#: dialogs/StylesDialog.cpp:229 dialogs/StylesDialog.cpp:233
+#: dialogs/StyleManagerDialog.cpp:52 ui/View.cpp:1189
+msgid "Style Manager"
+msgstr "Rheoydd Arddull"
+
+#: dialogs/StyleManagerDialog.cpp:64
+msgid "All Styles"
+msgstr "Pob Arddull"
+
+#: dialogs/StyleManagerDialog.cpp:65
+msgid "Custom Styles"
+msgstr "Arddulliau Addasiedig"
+
+#: dialogs/StyleManagerDialog.cpp:66
+#, fuzzy
+msgid "Hierarchical"
+msgstr "Cyllidol"
+
+#: dialogs/StyleManagerDialog.cpp:205 dialogs/StyleManagerDialog.cpp:209
 #, qt-format
 msgid "style%1"
 msgstr "arddull %1"
@@ -6869,12 +6858,12 @@ msgstr "Agor Cyswllt?"
 msgid "Cell Tool"
 msgstr "Arddull cell"
 
-#: ui/Editors.cpp:1715
+#: ui/Editors.cpp:1710
 #, fuzzy
 msgid "Select Single Cell"
 msgstr "Ail-gyfrifo Dalen"
 
-#: ui/Editors.cpp:1719
+#: ui/Editors.cpp:1714
 #, fuzzy
 msgid "Select Multiple Cells"
 msgstr "Rhaid dewis cellau lluosol."
@@ -8206,6 +8195,10 @@ msgstr "Newid Enw Dalen"
 msgid "Sheet name cannot be empty."
 msgstr "Ni all enw dalen fod yn wag."
 
+#: ui/View.cpp:6591
+msgid "This name is already used."
+msgstr "Defnyddir yr enw hwn eisoes."
+
 #: ui/View.cpp:6835
 msgid "Sum: "
 msgstr "Swm : "
@@ -8229,6 +8222,24 @@ msgstr "Cyfrif: "
 #: ui/View.cpp:6850
 msgid "CountA: "
 msgstr "CountA : "
+
+#~ msgid "Area Name"
+#~ msgstr "Enw Ardal"
+
+#, fuzzy
+#~ msgid "Area text is empty."
+#~ msgstr "Nae'r testun ardal yn wag!"
+
+#, fuzzy
+#~| msgid "Do you really want to remove this area name?"
+#~ msgid "Do you really want to replace this named area?"
+#~ msgstr "Ydych wir eisiau gwaredu'r enw ardal yma?"
+
+#~ msgid "Styles"
+#~ msgstr "Arddulliau"
+
+#~ msgid "Applied Styles"
+#~ msgstr "Arddulliau a Weithredwyd"
 
 #~ msgid "Show Page Borders"
 #~ msgstr "Dangos Ffiniau Tudalen"
