@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-07-23 05:26+0200\n"
+"POT-Creation-Date: 2007-07-24 05:33+0200\n"
 "PO-Revision-Date: 2004-01-16 09:20+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -36,72 +36,72 @@ msgstr "Nid yw'r ffeil '%1' yn ddarllenadwy"
 msgid "ERROR: Unknown protocol '%1'"
 msgstr "Protocol anhysbys '%1'. \n"
 
-#: kio/job.cpp:151
+#: kio/job.cpp:143
 msgid "Moving"
 msgstr "Symud"
 
-#: kio/job.cpp:152 kio/job.cpp:159 kio/job.cpp:184
+#: kio/job.cpp:144 kio/job.cpp:151 kio/job.cpp:176
 #, fuzzy
 msgid "Source"
 msgstr "Tarddiad:"
 
-#: kio/job.cpp:153 kio/job.cpp:160
+#: kio/job.cpp:145 kio/job.cpp:152
 #, fuzzy
 msgid "Destination"
 msgstr "Cyrchfan:"
 
-#: kio/job.cpp:158
+#: kio/job.cpp:150
 msgid "Copying"
 msgstr "Copïo"
 
-#: kio/job.cpp:165
+#: kio/job.cpp:157
 #, fuzzy
 msgid "Creating directory"
 msgstr "Creu Plygell"
 
-#: kio/job.cpp:166
+#: kio/job.cpp:158
 msgid "Directory"
 msgstr ""
 
-#: kio/job.cpp:171
+#: kio/job.cpp:163
 #, fuzzy
 msgid "Deleting"
 msgstr "(Dileu)"
 
-#: kio/job.cpp:172 kio/job.cpp:178
+#: kio/job.cpp:164 kio/job.cpp:170
 #, fuzzy
 msgid "File"
 msgstr "&Hidl:"
 
-#: kio/job.cpp:177
+#: kio/job.cpp:169
 #, fuzzy
 msgid "Stating"
 msgstr "Didoli"
 
-#: kio/job.cpp:183
+#: kio/job.cpp:175
 msgid "Transferring"
 msgstr ""
 
-#: kio/job.cpp:189
+#: kio/job.cpp:181
 msgid "Mounting"
 msgstr "Gosod"
 
-#: kio/job.cpp:190
+#: kio/job.cpp:182
 #, fuzzy
 msgid "Device"
 msgstr "Dyfais:"
 
-#: kio/job.cpp:191 kio/job.cpp:197
+#: kio/job.cpp:183 kio/job.cpp:189
 #, fuzzy
 msgid "Mountpoint"
 msgstr "Man gosod:"
 
-#: kio/job.cpp:196
+#: kio/job.cpp:188
 msgid "Unmounting"
 msgstr "Ddi-osod"
 
-#: kio/job.cpp:1831 kio/paste.cpp:62 kio/copyjob.cpp:1101 kio/copyjob.cpp:1605
-#: kio/global.cpp:698
+#: kio/job.cpp:1889 kio/paste.cpp:62 kio/copyjob.cpp:1154 kio/copyjob.cpp:1666
+#: kio/global.cpp:703
 msgid "File Already Exists"
 msgstr "Ffeil yn Bodoli'n Barod"
 
@@ -174,13 +174,13 @@ msgstr "Enw ffeil i gynnwys gludfwrdd:"
 msgid "Authorization Dialog"
 msgstr "Ymgom Awdurdodi"
 
-#: kio/kfileitemdelegate.cpp:194
+#: kio/kfileitemdelegate.cpp:198
 #, fuzzy
 msgctxt "Items in a folder"
 msgid "? items"
 msgstr "Nodyn"
 
-#: kio/kfileitemdelegate.cpp:196
+#: kio/kfileitemdelegate.cpp:200
 #, fuzzy, qt-format
 msgctxt "Items in a folder"
 msgid "1 item"
@@ -188,7 +188,7 @@ msgid_plural "%1 items"
 msgstr[0] "%1 ffeil"
 msgstr[1] "%1 o ffeiliau"
 
-#: kio/kfileitemdelegate.cpp:234 kio/kfileitemdelegate.cpp:237
+#: kio/kfileitemdelegate.cpp:238 kio/kfileitemdelegate.cpp:241
 #: kssl/ksslcertificate.cpp:201
 msgid "Unknown"
 msgstr "Anhysbys"
@@ -277,7 +277,7 @@ msgstr "Mae'r ffeil tarddiad yn '%1'"
 msgid "The desktop is offline"
 msgstr ""
 
-#: kio/chmodjob.cpp:200
+#: kio/chmodjob.cpp:207
 #, fuzzy, qt-format
 msgid ""
 "<qt>Could not modify the ownership of file <b>%1</b>. You have insufficient "
@@ -286,7 +286,7 @@ msgstr ""
 "<qt>Methu newid perchnogaeth y ffeil <b>%1</b> Does ganddych dim digon o "
 "hawliau i gyflawni'r newid.</qt>"
 
-#: kio/chmodjob.cpp:200
+#: kio/chmodjob.cpp:207
 #, fuzzy
 msgid "&Skip File"
 msgstr "&Ffeil"
@@ -436,11 +436,11 @@ msgstr "Hepgor"
 msgid "AutoSkip"
 msgstr "Awto Hepgor"
 
-#: kio/copyjob.cpp:828 kio/global.cpp:708
+#: kio/copyjob.cpp:878 kio/global.cpp:713
 msgid "Folder Already Exists"
 msgstr "Plygell yn Bodoli'n Barod"
 
-#: kio/copyjob.cpp:1101 kio/copyjob.cpp:1605
+#: kio/copyjob.cpp:1154 kio/copyjob.cpp:1666
 msgid "Already Exists as Folder"
 msgstr "Yn Bodoli'n Barod fel Plygell"
 
@@ -725,15 +725,20 @@ msgstr "Methu newid caniatàd i %1"
 
 #: kio/global.cpp:308
 #, fuzzy, qt-format
+msgid "Could not change ownership for %1."
+msgstr "Methu newid caniatàd i %1"
+
+#: kio/global.cpp:311
+#, fuzzy, qt-format
 msgid "Could not delete file %1."
 msgstr "Methu dileu ffeil %1"
 
-#: kio/global.cpp:311
+#: kio/global.cpp:314
 #, qt-format
 msgid "The process for the %1 protocol died unexpectedly."
 msgstr "Marwodd y broses i brotocol %1 yn annisgwyl."
 
-#: kio/global.cpp:314
+#: kio/global.cpp:317
 #, fuzzy, qt-format
 msgid ""
 "Error. Out of memory.\n"
@@ -742,7 +747,7 @@ msgstr ""
 "Gwall.  Allan o Gof. \n"
 " %1"
 
-#: kio/global.cpp:317
+#: kio/global.cpp:320
 #, qt-format
 msgid ""
 "Unknown proxy host\n"
@@ -751,12 +756,12 @@ msgstr ""
 "Gwesteiwr dirprwy anhysbys\n"
 " %1"
 
-#: kio/global.cpp:320
+#: kio/global.cpp:323
 #, qt-format
 msgid "Authorization failed, %1 authentication not supported"
 msgstr "Methu awdurdodi, ni chynhelir dilysiant %1"
 
-#: kio/global.cpp:323
+#: kio/global.cpp:326
 #, qt-format
 msgid ""
 "User canceled action\n"
@@ -765,7 +770,7 @@ msgstr ""
 "Diddymodd y defnyddiwr y weithred\n"
 " %1"
 
-#: kio/global.cpp:326
+#: kio/global.cpp:329
 #, qt-format
 msgid ""
 "Internal error in server\n"
@@ -774,7 +779,7 @@ msgstr ""
 "Gwall mewnol yng gweinydd\n"
 " %1"
 
-#: kio/global.cpp:329
+#: kio/global.cpp:332
 #, qt-format
 msgid ""
 "Timeout on server\n"
@@ -783,7 +788,7 @@ msgstr ""
 "Goramser ar y gweinydd \n"
 " %1"
 
-#: kio/global.cpp:332
+#: kio/global.cpp:335
 #, qt-format
 msgid ""
 "Unknown error\n"
@@ -792,7 +797,7 @@ msgstr ""
 "Gwall anhysbys \n"
 " %1"
 
-#: kio/global.cpp:335
+#: kio/global.cpp:338
 #, qt-format
 msgid ""
 "Unknown interrupt\n"
@@ -801,7 +806,7 @@ msgstr ""
 "Ymyriad anhysbys\n"
 " %1"
 
-#: kio/global.cpp:346
+#: kio/global.cpp:349
 #, qt-format
 msgid ""
 "Could not delete original file %1.\n"
@@ -810,7 +815,7 @@ msgstr ""
 "Methu dileu'r ffeil gwreiddiol %1.\n"
 " Cywirwch y caniatadau."
 
-#: kio/global.cpp:349
+#: kio/global.cpp:352
 #, qt-format
 msgid ""
 "Could not delete partial file %1.\n"
@@ -819,7 +824,7 @@ msgstr ""
 "Methu dileu ffeil rhannol %1.\n"
 " Cywirwch y caniatadau."
 
-#: kio/global.cpp:352
+#: kio/global.cpp:355
 #, qt-format
 msgid ""
 "Could not rename original file %1.\n"
@@ -828,7 +833,7 @@ msgstr ""
 "Methu ail-enwi ffeil gwreiddiol %1.\n"
 " Cywirwch y caniatadau."
 
-#: kio/global.cpp:355
+#: kio/global.cpp:358
 #, qt-format
 msgid ""
 "Could not rename partial file %1.\n"
@@ -837,7 +842,7 @@ msgstr ""
 "Methu ail-enwi ffeil rhannol %1.\n"
 " Cywirwch y caniatadau."
 
-#: kio/global.cpp:358
+#: kio/global.cpp:361
 #, qt-format
 msgid ""
 "Could not create symlink %1.\n"
@@ -846,7 +851,7 @@ msgstr ""
 "Methu creu cyswllt symbolaidd %1.\n"
 " Cywirwch y caniatadau."
 
-#: kio/global.cpp:364
+#: kio/global.cpp:367
 #, qt-format
 msgid ""
 "Could not write file %1.\n"
@@ -855,7 +860,7 @@ msgstr ""
 "Methu ysgrifennu ffeil %1. \n"
 " Mae'r ddisg yn llawn."
 
-#: kio/global.cpp:367
+#: kio/global.cpp:370
 #, qt-format
 msgid ""
 "The source and destination are the same file.\n"
@@ -864,17 +869,17 @@ msgstr ""
 "Yr un un ffeil yw'r tarddiad a'r cyrchfan. \n"
 " %1"
 
-#: kio/global.cpp:373
+#: kio/global.cpp:376
 #, qt-format
 msgid "%1 is required by the server, but is not available."
 msgstr "Mae angen %1 gan y gweinydd, ond nid yw ar gael."
 
-#: kio/global.cpp:376
+#: kio/global.cpp:379
 #, fuzzy
 msgid "Access to restricted port in POST denied."
 msgstr "Gwaharddwyd cyrchiad i borth cyfyngedig yn POST"
 
-#: kio/global.cpp:379
+#: kio/global.cpp:382
 #, qt-format
 msgid ""
 "Unknown error code %1\n"
@@ -885,137 +890,142 @@ msgstr ""
 " %2\n"
 " Anfonwch adroddiad nam llawn i http://bugs.kde.org."
 
-#: kio/global.cpp:389
+#: kio/global.cpp:392
 #, fuzzy, qt-format
 msgid "Opening connections is not supported with the protocol %1."
 msgstr "Ni chynhelir agor cysylltiadau efo'r protocol %1"
 
-#: kio/global.cpp:391
+#: kio/global.cpp:394
 #, fuzzy, qt-format
 msgid "Closing connections is not supported with the protocol %1."
 msgstr "Ni chynhelir cau cysylltiadau efo'r protocol %1"
 
-#: kio/global.cpp:393
+#: kio/global.cpp:396
 #, fuzzy, qt-format
 msgid "Accessing files is not supported with the protocol %1."
 msgstr "Ni chynhelir cyrchu cysylltiadau efo'r protocol %1"
 
-#: kio/global.cpp:395
+#: kio/global.cpp:398
 #, fuzzy, qt-format
 msgid "Writing to %1 is not supported."
 msgstr "Ni chynhelir ysgrifennu at %1"
 
-#: kio/global.cpp:397
+#: kio/global.cpp:400
 #, fuzzy, qt-format
 msgid "There are no special actions available for protocol %1."
 msgstr "Dim gweithrediadau arbennig ar gael i brotocol %1"
 
-#: kio/global.cpp:399
+#: kio/global.cpp:402
 #, fuzzy, qt-format
 msgid "Listing folders is not supported for protocol %1."
 msgstr "Ni chynhelir rhestru plygyll efo'r protocol %1"
 
-#: kio/global.cpp:401
+#: kio/global.cpp:404
 #, fuzzy, qt-format
 msgid "Retrieving data from %1 is not supported."
 msgstr "Ni chynhelir nôl data oddiwrth %1"
 
-#: kio/global.cpp:403
+#: kio/global.cpp:406
 #, fuzzy, qt-format
 msgid "Retrieving mime type information from %1 is not supported."
 msgstr "Ni chynhelir nôl data math mime oddiwrth %1"
 
-#: kio/global.cpp:405
+#: kio/global.cpp:408
 #, fuzzy, qt-format
 msgid "Renaming or moving files within %1 is not supported."
 msgstr "Ni chynhelir ail-enwi neu symud ffeiliau tu mewn i %1"
 
-#: kio/global.cpp:407
+#: kio/global.cpp:410
 #, fuzzy, qt-format
 msgid "Creating symlinks is not supported with protocol %1."
 msgstr "Ni chynhelir creu cysylltau symbolaidd efo'r protocol %1"
 
-#: kio/global.cpp:409
+#: kio/global.cpp:412
 #, fuzzy, qt-format
 msgid "Copying files within %1 is not supported."
 msgstr "Ni chynhelir copïo ffeiliau tu mewn i %1"
 
-#: kio/global.cpp:411
+#: kio/global.cpp:414
 #, fuzzy, qt-format
 msgid "Deleting files from %1 is not supported."
 msgstr "Ni chynhelir dileu ffeiliau o %1"
 
-#: kio/global.cpp:413
+#: kio/global.cpp:416
 #, fuzzy, qt-format
 msgid "Creating folders is not supported with protocol %1."
 msgstr "Ni chynhelir creu plygyll efo'r protocol %1"
 
-#: kio/global.cpp:415
+#: kio/global.cpp:418
 #, fuzzy, qt-format
 msgid "Changing the attributes of files is not supported with protocol %1."
 msgstr "Ni chynhelir newid priodoleddau ffeiliau efo'r protocol %1"
 
-#: kio/global.cpp:417
+#: kio/global.cpp:420
+#, fuzzy, qt-format
+msgid "Changing the ownership of files is not supported with protocol %1."
+msgstr "Ni chynhelir newid priodoleddau ffeiliau efo'r protocol %1"
+
+#: kio/global.cpp:422
 #, fuzzy, qt-format
 msgid "Using sub-URLs with %1 is not supported."
 msgstr "Ni chynhelir defnyddio is-URLs efo %1"
 
-#: kio/global.cpp:419
+#: kio/global.cpp:424
 #, fuzzy, qt-format
 msgid "Multiple get is not supported with protocol %1."
 msgstr "Ni chynhelir nôl lluosol efo'r protocol %1"
 
-#: kio/global.cpp:421
+#: kio/global.cpp:426
 #, fuzzy, qt-format
 msgid "Opening files is not supported with protocol %1."
 msgstr "Ni chynhelir creu plygyll efo'r protocol %1"
 
-#: kio/global.cpp:423
+#: kio/global.cpp:428
 #, fuzzy, qt-format
 msgid "Protocol %1 does not support action %2."
 msgstr "Nid yw protocol %1 yn cynnal gweithred %2"
 
-#: kio/global.cpp:443 kio/global.cpp:525
+#: kio/global.cpp:448 kio/global.cpp:530
 msgid "(unknown)"
 msgstr "(anhysbys)"
 
-#: kio/global.cpp:455
+#: kio/global.cpp:460
 msgid "<b>Technical reason</b>: "
 msgstr "<b>Rheswm technegol</b>:"
 
-#: kio/global.cpp:456
+#: kio/global.cpp:461
 msgid "</p><p><b>Details of the request</b>:"
 msgstr "</p><p><b>Manylion y cais</b>:"
 
-#: kio/global.cpp:457
+#: kio/global.cpp:462
 #, qt-format
 msgid "</p><ul><li>URL: %1</li>"
 msgstr "</p><ul><li>URL: %1</li>"
 
-#: kio/global.cpp:459
+#: kio/global.cpp:464
 #, qt-format
 msgid "<li>Protocol: %1</li>"
 msgstr "<li>Protocol: %1</li>"
 
-#: kio/global.cpp:461
+#: kio/global.cpp:466
 #, qt-format
 msgid "<li>Date and time: %1</li>"
 msgstr "<li>Dyddiad ac Amser: %1</li>"
 
-#: kio/global.cpp:462
+#: kio/global.cpp:467
 #, qt-format
 msgid "<li>Additional information: %1</li></ul>"
 msgstr "<li>Gwybodaeth ychwanegol: %1</li></ul>"
 
-#: kio/global.cpp:464
+#: kio/global.cpp:469
 msgid "<p><b>Possible causes</b>:</p><ul><li>"
 msgstr "<p><b>Achosion Posibl</b>:</p><ul><li> "
 
-#: kio/global.cpp:469
+#: kio/global.cpp:474
 msgid "<p><b>Possible solutions</b>:</p><ul><li>"
 msgstr "<p><b>Datrysiadau Posibl</b>:</p><ul><li> "
 
-#: kio/global.cpp:535
+#: kio/global.cpp:540
 msgid ""
 "Contact your appropriate computer support system, whether the system "
 "administrator, or technical support group for further assistance."
@@ -1023,15 +1033,15 @@ msgstr ""
 "Cysylltwch â'ch cysawd cynnal cyfrifiadur addas (ai'r gwasanaethwr cysawd, "
 "neu'r grw^p cynnal technegol) am fwy o gymorth."
 
-#: kio/global.cpp:538
+#: kio/global.cpp:543
 msgid "Contact the administrator of the server for further assistance."
 msgstr "Cysylltwch â gwasanaethwr y gweinydd am fwy o gymorth."
 
-#: kio/global.cpp:541
+#: kio/global.cpp:546
 msgid "Check your access permissions on this resource."
 msgstr "Cywirwch eich caniatadau cyrch ar yr adnodd yma."
 
-#: kio/global.cpp:542
+#: kio/global.cpp:547
 msgid ""
 "Your access permissions may be inadequate to perform the requested operation "
 "on this resource."
@@ -1039,14 +1049,14 @@ msgstr ""
 "Efallai bod eich caniatadau cyrch yn annigonol i gyflawni'r gweithrediad a "
 "gofynwyd ar yr adnodd yma."
 
-#: kio/global.cpp:544
+#: kio/global.cpp:549
 msgid ""
 "The file may be in use (and thus locked) by another user or application."
 msgstr ""
 "Efallai y defnyddir y ffeil gan ddefnyddiwr neu cymhwysiad arall - felly mae "
 "o ar glo."
 
-#: kio/global.cpp:546
+#: kio/global.cpp:551
 msgid ""
 "Check to make sure that no other application or user is using the file or "
 "has locked the file."
@@ -1054,15 +1064,15 @@ msgstr ""
 "Cywirwch i sicrhau nad yw cymhwysiad neu ddefnyddiwr arall yn defnyddio'r "
 "ffeil, neu wedi cloi'r ffeil."
 
-#: kio/global.cpp:548
+#: kio/global.cpp:553
 msgid "Although unlikely, a hardware error may have occurred."
 msgstr "Er annhebygol, efallai bod gwall caletwedd wedi digwydd."
 
-#: kio/global.cpp:550
+#: kio/global.cpp:555
 msgid "You may have encountered a bug in the program."
 msgstr "Efallai eich bod wedi cyfarfod nam yn y rhaglen."
 
-#: kio/global.cpp:551
+#: kio/global.cpp:556
 msgid ""
 "This is most likely to be caused by a bug in the program. Please consider "
 "submitting a full bug report as detailed below."
@@ -1070,7 +1080,7 @@ msgstr ""
 "Mae'n eitha debyg yr achosir hynny gan nam yn y rhaglen.  Ystyriedwch "
 "gyflwyno adroddiad nam llawn fel yn y manylion isod."
 
-#: kio/global.cpp:553
+#: kio/global.cpp:558
 msgid ""
 "Update your software to the latest version. Your distribution should provide "
 "tools to update your software."
@@ -1078,7 +1088,7 @@ msgstr ""
 "Diweddarwch eich meddalwedd i'r fersiwn diweddaraf.  Mae'n debyg y mae eich "
 "dosbarthiad yn darparu offer i ddiweddaru eich meddalwedd."
 
-#: kio/global.cpp:555
+#: kio/global.cpp:560
 msgid ""
 "When all else fails, please consider helping the KDE team or the third party "
 "maintainer of this software by submitting a high quality bug report. If the "
@@ -1097,11 +1107,11 @@ msgstr ""
 "cynnwys yn eich adroddiad nam, efo cymaint o fanylion eraill ac y meddyliwch "
 "bydd o gymorth."
 
-#: kio/global.cpp:563
+#: kio/global.cpp:568
 msgid "There may have been a problem with your network connection."
 msgstr "Efallai yr oedd problem efo'ch cysylltiad rhwydwaith."
 
-#: kio/global.cpp:566
+#: kio/global.cpp:571
 msgid ""
 "There may have been a problem with your network configuration. If you have "
 "been accessing the Internet with no problems recently, this is unlikely."
@@ -1109,7 +1119,7 @@ msgstr ""
 "Efallai yr oedd problem efo'ch ffurfweddiad rhwydwaith.  Os ydych wedi bod "
 "yn cyrchu'r Rhyngrwyd yn ddiweddar heb broblemau, mae hynny'n annhebyg."
 
-#: kio/global.cpp:569
+#: kio/global.cpp:574
 msgid ""
 "There may have been a problem at some point along the network path between "
 "the server and this computer."
@@ -1117,40 +1127,40 @@ msgstr ""
 "Efallai yr oedd problem rhywle ar y llwybr rhwydwaith rhwng y gweinydd a'r "
 "cyfrifiadur yma."
 
-#: kio/global.cpp:571
+#: kio/global.cpp:576
 msgid "Try again, either now or at a later time."
 msgstr "Ceisiwch eto, un ai rwan neu yn hwyrach."
 
-#: kio/global.cpp:572
+#: kio/global.cpp:577
 msgid "A protocol error or incompatibility may have occurred."
 msgstr "Effallai y ddigwyddodd gwall protocol neu anghydnawsedd."
 
-#: kio/global.cpp:573
+#: kio/global.cpp:578
 msgid "Ensure that the resource exists, and try again."
 msgstr "Sicrhewch fod yr adnodd mewn bod, a ceisiwch eto."
 
-#: kio/global.cpp:574
+#: kio/global.cpp:579
 msgid "The specified resource may not exist."
 msgstr "Efallai nad yw'r adnodd penodol mewn bod."
 
-#: kio/global.cpp:575
+#: kio/global.cpp:580
 msgid "You may have incorrectly typed the location."
 msgstr "Efallai yr ydych wedi cam-deipio'r lleoliad."
 
-#: kio/global.cpp:576
+#: kio/global.cpp:581
 msgid "Double-check that you have entered the correct location and try again."
 msgstr ""
 "Sicrhewch yn ofalus yr ydych wedi mewnosod y lleoliad cywir a ceisiwch eto."
 
-#: kio/global.cpp:578
+#: kio/global.cpp:583
 msgid "Check your network connection status."
 msgstr "Cywirwch statws eich cysylltiad rhwydwaith."
 
-#: kio/global.cpp:582
+#: kio/global.cpp:587
 msgid "Cannot Open Resource For Reading"
 msgstr "Methu Agor Adnodd i'w Ddarllen"
 
-#: kio/global.cpp:583
+#: kio/global.cpp:588
 #, qt-format
 msgid ""
 "This means that the contents of the requested file or folder <strong>%1</"
@@ -1159,16 +1169,16 @@ msgstr ""
 "Golygir hwn nad oedd yn bosib nôl cynnwys y ffeil neu blygell<strong>%1</"
 "strong> a ofynwyd amdano, gan ni ellid cael cyrchiad darllen."
 
-#: kio/global.cpp:586
+#: kio/global.cpp:591
 msgid "You may not have permissions to read the file or open the folder."
 msgstr ""
 "Efallai nid oes ganddoch ganiatadau i ddarllen y ffeil neu agor y plygell."
 
-#: kio/global.cpp:592
+#: kio/global.cpp:597
 msgid "Cannot Open Resource For Writing"
 msgstr "Methu Agor Adnodd i Ysgrifennu."
 
-#: kio/global.cpp:593
+#: kio/global.cpp:598
 #, qt-format
 msgid ""
 "This means that the file, <strong>%1</strong>, could not be written to as "
@@ -1177,16 +1187,16 @@ msgstr ""
 "Golygir hwn nad oedd yn bosib ysgrifennu at y ffeil, <strong>%1</strong>, a "
 "ofynwyd amdano, gan ni ellid cael cyrchiad ysgrifennu."
 
-#: kio/global.cpp:601
+#: kio/global.cpp:606
 #, qt-format
 msgid "Cannot Initiate the %1 Protocol"
 msgstr "Methu Cychwyn y protocol %1"
 
-#: kio/global.cpp:602
+#: kio/global.cpp:607
 msgid "Unable to Launch Process"
 msgstr "Methu Lansio Proses"
 
-#: kio/global.cpp:603
+#: kio/global.cpp:608
 #, qt-format
 msgid ""
 "The program on your computer which provides access to the <strong>%1</"
@@ -1197,7 +1207,7 @@ msgstr ""
 "protocol <strong>%1</strong>.  Fel arfer, mae hynny o achos rhesymau "
 "technegol."
 
-#: kio/global.cpp:606
+#: kio/global.cpp:611
 msgid ""
 "The program which provides compatibility with this protocol may not have "
 "been updated with your last update of KDE. This can cause the program to be "
@@ -1207,11 +1217,11 @@ msgstr ""
 "diweddaru efo'ch diweddariad diwetha o KDE.  Gall hynny achosi'r rhaglen i "
 "fod yn anghytu^n efo'r fersiwn cyfredol, ac felly ni fydd hi'n cychwyn."
 
-#: kio/global.cpp:614
+#: kio/global.cpp:619
 msgid "Internal Error"
 msgstr "Gwall Mewnol"
 
-#: kio/global.cpp:615
+#: kio/global.cpp:620
 #, qt-format
 msgid ""
 "The program on your computer which provides access to the <strong>%1</"
@@ -1220,11 +1230,11 @@ msgstr ""
 "Mae'r rhaglen ar eich cyfrifiadur sy'n darparu cyrchiad i'r protocol <strong>"
 "%1</strong> wedi adrodd gwall mewnol."
 
-#: kio/global.cpp:623
+#: kio/global.cpp:628
 msgid "Improperly Formatted URL"
 msgstr "URL heb ei Fformatio yn Ddilys "
 
-#: kio/global.cpp:624
+#: kio/global.cpp:629
 msgid ""
 "The <strong>U</strong>niform <strong>R</strong>esource <strong>L</"
 "strong>ocator (URL) that you entered was not properly formatted. The format "
@@ -1238,12 +1248,12 @@ msgstr ""
 "user@password:www.example.org:port/directory/filename.extension?query "
 "=value</strong></blockquote> "
 
-#: kio/global.cpp:633
+#: kio/global.cpp:638
 #, qt-format
 msgid "Unsupported Protocol %1"
 msgstr "Ni chyhelir y Protocol %1"
 
-#: kio/global.cpp:634
+#: kio/global.cpp:639
 #, qt-format
 msgid ""
 "The protocol <strong>%1</strong> is not supported by the KDE programs "
@@ -1252,11 +1262,11 @@ msgstr ""
 "Ni chynhelir y protocol <strong>%1</strong> gan y rhaglenni KDE sydd wedi eu "
 "gosod ar hyn o bryd ar y cyfrifiadur yma. "
 
-#: kio/global.cpp:637
+#: kio/global.cpp:642
 msgid "The requested protocol may not be supported."
 msgstr "Efallai na chynhelir y protocol a ofynwyd amdano."
 
-#: kio/global.cpp:638
+#: kio/global.cpp:643
 #, qt-format
 msgid ""
 "The versions of the %1 protocol supported by this computer and the server "
@@ -1265,7 +1275,7 @@ msgstr ""
 "Efallai mae fersiynau'r protocol %1 a gynhelir gan y cyfrifiadur yma a'r "
 "gweinydd yn anghytûn."
 
-#: kio/global.cpp:640
+#: kio/global.cpp:645
 #, fuzzy
 msgid ""
 "You may perform a search on the Internet for a KDE program (called a "
@@ -1278,15 +1288,15 @@ msgstr ""
 "\"http://apps.kde.com/\">http://apps.kde.com/</a> a <a href=\"http://"
 "freshmeat.net/\">http://freshmeat.net/</a>."
 
-#: kio/global.cpp:649
+#: kio/global.cpp:654
 msgid "URL Does Not Refer to a Resource."
 msgstr "Nid yw'r URL yn cyfeirio at adnodd."
 
-#: kio/global.cpp:650
+#: kio/global.cpp:655
 msgid "Protocol is a Filter Protocol"
 msgstr "Protocol Hidl yw'r Protocol"
 
-#: kio/global.cpp:651
+#: kio/global.cpp:656
 msgid ""
 "The <strong>U</strong>niform <strong>R</strong>esource <strong>L</"
 "strong>ocator (URL) that you entered did not refer to a specific resource."
@@ -1294,7 +1304,7 @@ msgstr ""
 "Nid oedd y <strong>L</strong>leolydd <strong>A</strong>dnoddau <strong>U</"
 "strong>nffurf (URL) yr ydych wedi cyflwyno yn cyfeirio at adnodd penodol."
 
-#: kio/global.cpp:654
+#: kio/global.cpp:659
 msgid ""
 "KDE is able to communicate through a protocol within a protocol; the "
 "protocol specified is only for use in such situations, however this is not "
@@ -1306,12 +1316,12 @@ msgstr ""
 "o'r sefyllfaoedd yma. Mae hwn yn ddigwyddiad eithriadol, a mae'n debyg o "
 "ddynodi gwall rhaglennu."
 
-#: kio/global.cpp:662
+#: kio/global.cpp:667
 #, qt-format
 msgid "Unsupported Action: %1"
 msgstr "Ni Chynhelir y Gweithrediad: %1"
 
-#: kio/global.cpp:663
+#: kio/global.cpp:668
 #, qt-format
 msgid ""
 "The requested action is not supported by the KDE program which is "
@@ -1320,7 +1330,7 @@ msgstr ""
 "Ni chynhelir y gwethrediad a gofynwyd amdano gan y rhaglen KDE sydd yn "
 "gweithredu y protocol <strong>%1</strong>."
 
-#: kio/global.cpp:666
+#: kio/global.cpp:671
 msgid ""
 "This error is very much dependent on the KDE program. The additional "
 "information should give you more information than is available to the KDE "
@@ -1330,15 +1340,15 @@ msgstr ""
 "ychwanegol rhoi fwy o wybodaeth i chi nag sydd ar gael i'r pensaernïaeth "
 "mewnbwn/allbwn KDE."
 
-#: kio/global.cpp:669
+#: kio/global.cpp:674
 msgid "Attempt to find another way to accomplish the same outcome."
 msgstr "Ceisio canfod ffordd arall i gyflawni'r un canlyniad."
 
-#: kio/global.cpp:674
+#: kio/global.cpp:679
 msgid "File Expected"
 msgstr "Ffeil a Ddisgwylir."
 
-#: kio/global.cpp:675
+#: kio/global.cpp:680
 #, qt-format
 msgid ""
 "The request expected a file, however the folder <strong>%1</strong> was "
@@ -1347,15 +1357,15 @@ msgstr ""
 "Disgwylodd y cais ffeil, ond wnaeth ganfod y plygell <strong>%1</strong> yn "
 "lle."
 
-#: kio/global.cpp:677
+#: kio/global.cpp:682
 msgid "This may be an error on the server side."
 msgstr "Efallai mae gwall ar ochr y gweinydd."
 
-#: kio/global.cpp:682
+#: kio/global.cpp:687
 msgid "Folder Expected"
 msgstr "Plygell a Ddisgwylir."
 
-#: kio/global.cpp:683
+#: kio/global.cpp:688
 #, qt-format
 msgid ""
 "The request expected a folder, however the file <strong>%1</strong> was "
@@ -1364,16 +1374,16 @@ msgstr ""
 "Disgwylodd y cais blygell, ond wnaeth ganfod y ffeil <strong>%1</strong> yn "
 "lle."
 
-#: kio/global.cpp:690
+#: kio/global.cpp:695
 msgid "File or Folder Does Not Exist"
 msgstr "Nid yw'r Ffeil neu'r Plygell mewn Bod."
 
-#: kio/global.cpp:691
+#: kio/global.cpp:696
 #, qt-format
 msgid "The specified file or folder <strong>%1</strong> does not exist."
 msgstr "Nid yw'r ffeil neu'r plygell penodol <strong>%1</strong> mewn bod."
 
-#: kio/global.cpp:699
+#: kio/global.cpp:704
 msgid ""
 "The requested file could not be created because a file with the same name "
 "already exists."
@@ -1381,21 +1391,21 @@ msgstr ""
 "Ni ellir creu'r ffeil a ofynwyd amdano gan fod ffeil efo'r un enw mewn bod "
 "yn barod."
 
-#: kio/global.cpp:701
+#: kio/global.cpp:706
 msgid "Try moving the current file out of the way first, and then try again."
 msgstr ""
 "Ceisiwch symud y ffeil cyfredol allan o'r ffordd yn gyntaf, ac wedyn "
 "ceisiwch eto."
 
-#: kio/global.cpp:703
+#: kio/global.cpp:708
 msgid "Delete the current file and try again."
 msgstr "Dileuwch y ffeil cyfredol a ceisiwch eto."
 
-#: kio/global.cpp:704
+#: kio/global.cpp:709
 msgid "Choose an alternate filename for the new file."
 msgstr "Dewiswch enw ffeil amgen i'r ffeil newydd."
 
-#: kio/global.cpp:709
+#: kio/global.cpp:714
 msgid ""
 "The requested folder could not be created because a folder with the same "
 "name already exists."
@@ -1403,25 +1413,25 @@ msgstr ""
 "Ni ellir creu'r plygell a ofynwyd amdano gan fod plygell efo'r un enw mewn "
 "bod yn barod."
 
-#: kio/global.cpp:711
+#: kio/global.cpp:716
 msgid "Try moving the current folder out of the way first, and then try again."
 msgstr ""
 "Ceisiwch symud y plygell cyfredol allan o'r ffordd yn gyntaf, ac wedyn "
 "ceisiwch eto."
 
-#: kio/global.cpp:713
+#: kio/global.cpp:718
 msgid "Delete the current folder and try again."
 msgstr "Dileuwch y plygell cyfredol a ceisiwch eto."
 
-#: kio/global.cpp:714
+#: kio/global.cpp:719
 msgid "Choose an alternate name for the new folder."
 msgstr "Dewiswch enw amgen i'r plygell newydd."
 
-#: kio/global.cpp:718
+#: kio/global.cpp:723
 msgid "Unknown Host"
 msgstr "Gwesteiwr anhysbys"
 
-#: kio/global.cpp:719
+#: kio/global.cpp:724
 #, qt-format
 msgid ""
 "An unknown host error indicates that the server with the requested name, "
@@ -1430,7 +1440,7 @@ msgstr ""
 "Mae gwall gweinydd anhysbys yn dynodi na allir darganfod y gwesteiwr efo'r "
 "enw a ofynwyd amdano, <strong>%1</strong>, ar y Rhyngrwyd. "
 
-#: kio/global.cpp:722
+#: kio/global.cpp:727
 #, qt-format
 msgid ""
 "The name that you typed, %1, may not exist: it may be incorrectly typed."
@@ -1438,36 +1448,36 @@ msgstr ""
 "Efallai nad yw'r enw yr ydych wedi ei deipio, %1, mewn bod: efallai mae o "
 "wedi ei deipio yn anghywir.  "
 
-#: kio/global.cpp:729
+#: kio/global.cpp:734
 msgid "Access Denied"
 msgstr "Gwaharddwyd Cyrchiad."
 
-#: kio/global.cpp:730
+#: kio/global.cpp:735
 #, qt-format
 msgid "Access was denied to the specified resource, <strong>%1</strong>."
 msgstr "Gwaharddwyd cyrchiad i'r adnodd penodol, <strong>%1</strong>."
 
-#: kio/global.cpp:732 kio/global.cpp:948
+#: kio/global.cpp:737 kio/global.cpp:953
 msgid "You may have supplied incorrect authentication details or none at all."
 msgstr ""
 "Efallai yr ydych wedi darparu manylion dilysu anghywir, neu dim byd o gwbl."
 
-#: kio/global.cpp:734 kio/global.cpp:950
+#: kio/global.cpp:739 kio/global.cpp:955
 msgid "Your account may not have permission to access the specified resource."
 msgstr "Efallai nad oes caniatàd gan eich cyfrif i gyrchu'r adnodd penodol."
 
-#: kio/global.cpp:736 kio/global.cpp:952 kio/global.cpp:964
+#: kio/global.cpp:741 kio/global.cpp:957 kio/global.cpp:969
 msgid ""
 "Retry the request and ensure your authentication details are entered "
 "correctly."
 msgstr ""
 "Ail-geisiwch, a sicrhewch bod eich manylion dilysu wedi eu mewnosod yn gywir."
 
-#: kio/global.cpp:742
+#: kio/global.cpp:747
 msgid "Write Access Denied"
 msgstr "Gwaharddwyd Cyrchiad Ysgrifennu"
 
-#: kio/global.cpp:743
+#: kio/global.cpp:748
 #, qt-format
 msgid ""
 "This means that an attempt to write to the file <strong>%1</strong> was "
@@ -1476,11 +1486,11 @@ msgstr ""
 "Golygir hwn y gafodd cais i ysgrifennu i'r ffeil <strong>%1</strong> ei "
 "wrthod."
 
-#: kio/global.cpp:750
+#: kio/global.cpp:755
 msgid "Unable to Enter Folder"
 msgstr "Methu Mynd i mewn i'r Plygell."
 
-#: kio/global.cpp:751
+#: kio/global.cpp:756
 #, qt-format
 msgid ""
 "This means that an attempt to enter (in other words, to open) the requested "
@@ -1489,16 +1499,16 @@ msgstr ""
 "Golygir hwn y gafodd cais i fynd i mewn i'r plygell <strong>%1</strong> "
 "(hynny yw, i'w agor) ei wrthod."
 
-#: kio/global.cpp:759
+#: kio/global.cpp:764
 msgid "Folder Listing Unavailable"
 msgstr "Nid oes Rhestriad Plygell ar Gael."
 
-#: kio/global.cpp:760
+#: kio/global.cpp:765
 #, qt-format
 msgid "Protocol %1 is not a Filesystem"
 msgstr "Dim cysawd ffeil yw Protocol %1"
 
-#: kio/global.cpp:761
+#: kio/global.cpp:766
 msgid ""
 "This means that a request was made which requires determining the contents "
 "of the folder, and the KDE program supporting this protocol is unable to do "
@@ -1507,11 +1517,11 @@ msgstr ""
 "Golygir hwn y gwnaed cais lle mae angen pederfynu cynnwys y plygell, ac "
 "mae'r rhaglen KDE sy'n cynnal y protocol yma yn methu gwneud."
 
-#: kio/global.cpp:769
+#: kio/global.cpp:774
 msgid "Cyclic Link Detected"
 msgstr "Datgelwyd Cyswllt Cylchol"
 
-#: kio/global.cpp:770
+#: kio/global.cpp:775
 msgid ""
 "UNIX environments are commonly able to link a file or folder to a separate "
 "name and/or location. KDE detected a link or series of links that results in "
@@ -1523,7 +1533,7 @@ msgstr ""
 "gysylltiadau sy'n creu dolen ddiddiwedd - h.y., roedd y ffeil wedi ei "
 "gysylltu (efallai mewn ffordd cylchfannol) i'w hun."
 
-#: kio/global.cpp:774 kio/global.cpp:796
+#: kio/global.cpp:779 kio/global.cpp:801
 msgid ""
 "Delete one part of the loop in order that it does not cause an infinite "
 "loop, and try again."
@@ -1531,23 +1541,23 @@ msgstr ""
 "Dileuwch un rhan o'r ddolen fel nad yw'n achosi dolen ddiddiwedd, a ceisiwch "
 "eto."
 
-#: kio/global.cpp:783
+#: kio/global.cpp:788
 msgid "Request Aborted By User"
 msgstr "Terfynwyd y Cais gan y Defnyddiwr"
 
-#: kio/global.cpp:784 kio/global.cpp:1077
+#: kio/global.cpp:789 kio/global.cpp:1090
 msgid "The request was not completed because it was aborted."
 msgstr "Ni chyflawnwyd y cais achos terfynwyd."
 
-#: kio/global.cpp:786 kio/global.cpp:980 kio/global.cpp:1079
+#: kio/global.cpp:791 kio/global.cpp:985 kio/global.cpp:1092
 msgid "Retry the request."
 msgstr "Ail-geisio'r cais."
 
-#: kio/global.cpp:790
+#: kio/global.cpp:795
 msgid "Cyclic Link Detected During Copy"
 msgstr "Datgelwyd Cyswllt Cylchol wrth Gopïo "
 
-#: kio/global.cpp:791
+#: kio/global.cpp:796
 msgid ""
 "UNIX environments are commonly able to link a file or folder to a separate "
 "name and/or location. During the requested copy operation, KDE detected a "
@@ -1560,15 +1570,15 @@ msgstr ""
 "- h.y., roedd y ffeil wedi ei gysylltu (efallai mewn ffordd cylchfannol) i'w "
 "hun."
 
-#: kio/global.cpp:801
+#: kio/global.cpp:806
 msgid "Could Not Create Network Connection"
 msgstr "Methu Creu Cysylltiad Rhwydwaith"
 
-#: kio/global.cpp:802
+#: kio/global.cpp:807
 msgid "Could Not Create Socket"
 msgstr "Methu Creu Soced"
 
-#: kio/global.cpp:803
+#: kio/global.cpp:808
 msgid ""
 "This is a fairly technical error in which a required device for network "
 "communications (a socket) could not be created."
@@ -1576,7 +1586,7 @@ msgstr ""
 "Mae hwn yn wall go dechnegol, lle ni ellir creu dyfais gofynnol (soced) i "
 "gyfathrebion rhwydwaith."
 
-#: kio/global.cpp:805 kio/global.cpp:918 kio/global.cpp:929 kio/global.cpp:938
+#: kio/global.cpp:810 kio/global.cpp:923 kio/global.cpp:934 kio/global.cpp:943
 msgid ""
 "The network connection may be incorrectly configured, or the network "
 "interface may not be enabled."
@@ -1584,11 +1594,11 @@ msgstr ""
 "Efallai mae'r cysylltiad rhwydwaith wedi ei ffurfweddu yn anghywir, neu "
 "analluogir y rhyngwyneb rhwydwaith."
 
-#: kio/global.cpp:811
+#: kio/global.cpp:816
 msgid "Connection to Server Refused"
 msgstr "Gwrthodwyd y Cysylltiad i'r Gweinydd"
 
-#: kio/global.cpp:812
+#: kio/global.cpp:817
 #, qt-format
 msgid ""
 "The server <strong>%1</strong> refused to allow this computer to make a "
@@ -1597,7 +1607,7 @@ msgstr ""
 "Gwrthododd y gweinydd <strong>%1</strong> adael i'r cyfrifiadur yma wneud "
 "cyswlltiad."
 
-#: kio/global.cpp:814
+#: kio/global.cpp:819
 msgid ""
 "The server, while currently connected to the Internet, may not be configured "
 "to allow requests."
@@ -1605,7 +1615,7 @@ msgstr ""
 "Efallai nad yw'r gweinydd, er ei fod yn gysylltiedig i'r Rhyngrwyd ar hyn o "
 "bryd, wedi ei ffurfweddu i ganiatàu ceisiadau.  "
 
-#: kio/global.cpp:816
+#: kio/global.cpp:821
 #, qt-format
 msgid ""
 "The server, while currently connected to the Internet, may not be running "
@@ -1614,7 +1624,7 @@ msgstr ""
 "Efallai nad yw'r gweinydd, er ei fod yn gysylltiedig i'r Rhyngrwyd ar hyn o "
 "bryd, yn rhedeg y wasanaeth a ofynwyd amdani (%1).  "
 
-#: kio/global.cpp:818
+#: kio/global.cpp:823
 msgid ""
 "A network firewall (a device which restricts Internet requests), either "
 "protecting your network or the network of the server, may have intervened, "
@@ -1624,11 +1634,11 @@ msgstr ""
 "Rhyngrwyd), sy'n amddiffyn un ai eich rhwydwaith neu rhwydwaith y gweinydd, "
 "wedi ymyrryd, a gwrthod y cais yma. "
 
-#: kio/global.cpp:825
+#: kio/global.cpp:830
 msgid "Connection to Server Closed Unexpectedly"
 msgstr "Cauwyd y Cysylltiad i'r Gweinydd yn Annisgwyl"
 
-#: kio/global.cpp:826
+#: kio/global.cpp:831
 #, qt-format
 msgid ""
 "Although a connection was established to <strong>%1</strong>, the connection "
@@ -1637,7 +1647,7 @@ msgstr ""
 "Er bod cysylltiad wedi eu greu i <strong>%1</strong>, cauwyd y cysylltiad "
 "wrth fan annisgwyl yn y cyfathrebu."
 
-#: kio/global.cpp:829
+#: kio/global.cpp:834
 msgid ""
 "A protocol error may have occurred, causing the server to close the "
 "connection as a response to the error."
@@ -1645,16 +1655,16 @@ msgstr ""
 "Efallai mae gwall protocol wedi digwydd, yn achosi i'r gweinydd gau'r "
 "cysylltiad fel ymateb i'r gwall."
 
-#: kio/global.cpp:835
+#: kio/global.cpp:840
 msgid "URL Resource Invalid"
 msgstr "Adnodd URL Annilys"
 
-#: kio/global.cpp:836
+#: kio/global.cpp:841
 #, qt-format
 msgid "Protocol %1 is not a Filter Protocol"
 msgstr "Nid yw protocol %1 yn Brotocol Hidl"
 
-#: kio/global.cpp:837
+#: kio/global.cpp:842
 #, qt-format
 msgid ""
 "The <strong>U</strong>niform <strong>R</strong>esource <strong>L</"
@@ -1665,7 +1675,7 @@ msgstr ""
 "strong>nffurf (URL) yr ydych wedi cyflwyno yn cyfeirio at ffordd dilys o "
 "gyrchu'r adnodd penodol, <strong>%1%2</strong>."
 
-#: kio/global.cpp:842
+#: kio/global.cpp:847
 msgid ""
 "KDE is able to communicate through a protocol within a protocol. This "
 "request specified a protocol be used as such, however this protocol is not "
@@ -1677,15 +1687,15 @@ msgstr ""
 "gweithrediad o'r fath.  Mae hwn yn ddigwyddiad eithriadol, a mae'n debyg o "
 "ddynodi gwall rhaglennu."
 
-#: kio/global.cpp:850
+#: kio/global.cpp:855
 msgid "Unable to Initialize Input/Output Device"
 msgstr "Methu Cychwyn Dyfais Mewnbwn/Allbwn"
 
-#: kio/global.cpp:851
+#: kio/global.cpp:856
 msgid "Could Not Mount Device"
 msgstr "Methu Gosod Dyfais"
 
-#: kio/global.cpp:852
+#: kio/global.cpp:857
 #, qt-format
 msgid ""
 "The requested device could not be initialized (\"mounted\"). The reported "
@@ -1694,7 +1704,7 @@ msgstr ""
 "Ni ellid ymgychwyn (\"mount\") y dyfais a ofynwyd amdano.  Y gwall a "
 "adroddwyd oedd: <strong>%1</strong>"
 
-#: kio/global.cpp:855
+#: kio/global.cpp:860
 msgid ""
 "The device may not be ready, for example there may be no media in a "
 "removable media device (i.e. no CD-ROM in a CD drive), or in the case of a "
@@ -1705,7 +1715,7 @@ msgstr ""
 "achos dyfais perifferol/cludadwy efallai nad yw'r dyfais wedi ei gysylltu yn "
 "gywir."
 
-#: kio/global.cpp:859
+#: kio/global.cpp:864
 msgid ""
 "You may not have permissions to initialize (\"mount\") the device. On UNIX "
 "systems, often system administrator privileges are required to initialize a "
@@ -1715,7 +1725,7 @@ msgstr ""
 "gysodau Unix, y rhan fwyaf o'r amser mae angen hawliau gwasanaethydd cysawd "
 "i ymgychwyn dyfais."
 
-#: kio/global.cpp:863
+#: kio/global.cpp:868
 msgid ""
 "Check that the device is ready; removable drives must contain media, and "
 "portable devices must be connected and powered on.; and try again."
@@ -1724,15 +1734,15 @@ msgstr ""
 "cyfryngau, a rhaid i dyfeisiau cludadwy fod wedi eu cysylltu a bod arnodd; "
 "ceisiwch eto."
 
-#: kio/global.cpp:869
+#: kio/global.cpp:874
 msgid "Unable to Uninitialize Input/Output Device"
 msgstr "Methu Ddi-ymgychwyn Dyfais Mewnbwn/Allbwn"
 
-#: kio/global.cpp:870
+#: kio/global.cpp:875
 msgid "Could Not Unmount Device"
 msgstr "Methu Datosod Dyfais"
 
-#: kio/global.cpp:871
+#: kio/global.cpp:876
 #, qt-format
 msgid ""
 "The requested device could not be uninitialized (\"unmounted\"). The "
@@ -1741,7 +1751,7 @@ msgstr ""
 "Ni ellid ddi-ymgychwyn (\"unmount\") y dyfais a ofynwyd amdano.  Y gwall a "
 "adroddwyd oedd: <strong>%1</strong>"
 
-#: kio/global.cpp:874
+#: kio/global.cpp:879
 msgid ""
 "The device may be busy, that is, still in use by another application or "
 "user. Even such things as having an open browser window on a location on "
@@ -1752,7 +1762,7 @@ msgstr ""
 "ar agor ar leoliad ar y dyfais yma yn gallu achosi i'r dyfais barhau  mewn "
 "defnydd."
 
-#: kio/global.cpp:878
+#: kio/global.cpp:883
 msgid ""
 "You may not have permissions to uninitialize (\"unmount\") the device. On "
 "UNIX systems, system administrator privileges are often required to "
@@ -1762,15 +1772,15 @@ msgstr ""
 "Ar gysodau Unix, y rhan fwyaf o'r amser mae angen hawliau gwasanaethydd "
 "cysawd i ddi-ymgychwyn dyfais."
 
-#: kio/global.cpp:882
+#: kio/global.cpp:887
 msgid "Check that no applications are accessing the device, and try again."
 msgstr "Cywirwch nad oes cymhwysiadau yn cyrchu'r dyfais, a ceisiwch eto."
 
-#: kio/global.cpp:887
+#: kio/global.cpp:892
 msgid "Cannot Read From Resource"
 msgstr "Methu Darllen oddiwrth yr Adnodd"
 
-#: kio/global.cpp:888
+#: kio/global.cpp:893
 #, qt-format
 msgid ""
 "This means that although the resource, <strong>%1</strong>, was able to be "
@@ -1779,15 +1789,15 @@ msgstr ""
 "Golygir hwn bod, er roedd yn bosib agor yr adnodd <strong>%1</strong>, "
 "digwyddodd gwall wrth ddarllen cynnwys yr adnodd."
 
-#: kio/global.cpp:891
+#: kio/global.cpp:896
 msgid "You may not have permissions to read from the resource."
 msgstr "Efallai nad oes ganddoch caniatadau i ddarllen oddiwrth yr adnodd."
 
-#: kio/global.cpp:900
+#: kio/global.cpp:905
 msgid "Cannot Write to Resource"
 msgstr "Methu ysgrifennu at yr adnodd."
 
-#: kio/global.cpp:901
+#: kio/global.cpp:906
 #, qt-format
 msgid ""
 "This means that although the resource, <strong>%1</strong>, was able to be "
@@ -1796,19 +1806,19 @@ msgstr ""
 "Golygir hwn bod, er roedd yn bosib agor yr adnodd <strong>%1</strong>, "
 "digwyddodd gwall wrth ysgrifennu at yr adnodd."
 
-#: kio/global.cpp:904
+#: kio/global.cpp:909
 msgid "You may not have permissions to write to the resource."
 msgstr "Efallai nad oes ganddoch caniatadau i ysgrifennu at yr adnodd."
 
-#: kio/global.cpp:913 kio/global.cpp:924
+#: kio/global.cpp:918 kio/global.cpp:929
 msgid "Could Not Listen for Network Connections"
 msgstr "Methu Gwrando am Gysylltiadau Rhwydwaith"
 
-#: kio/global.cpp:914
+#: kio/global.cpp:919
 msgid "Could Not Bind"
 msgstr "Methu Ymrwymo"
 
-#: kio/global.cpp:915 kio/global.cpp:926
+#: kio/global.cpp:920 kio/global.cpp:931
 msgid ""
 "This is a fairly technical error in which a required device for network "
 "communications (a socket) could not be established to listen for incoming "
@@ -1817,15 +1827,15 @@ msgstr ""
 "Mae hwn yn wall go dechnegol, lle ni ellir creu dyfais gofynnol (soced) i "
 "gyfathrebion rhwydwaith i wrando am gysylltiadau rhwydwaith cyrhaeddol."
 
-#: kio/global.cpp:925
+#: kio/global.cpp:930
 msgid "Could Not Listen"
 msgstr "Methu Gwrando"
 
-#: kio/global.cpp:935
+#: kio/global.cpp:940
 msgid "Could Not Accept Network Connection"
 msgstr "Methu Derbyn Cysylltiad Rhwydwaith"
 
-#: kio/global.cpp:936
+#: kio/global.cpp:941
 msgid ""
 "This is a fairly technical error in which an error occurred while attempting "
 "to accept an incoming network connection."
@@ -1833,31 +1843,31 @@ msgstr ""
 "Mae hwn yn wall go dechnegol, lle ddigwyddodd gwall wrth ceisio derbyn "
 "cysylltiad rhwydwaith cyrhaeddol."
 
-#: kio/global.cpp:940
+#: kio/global.cpp:945
 msgid "You may not have permissions to accept the connection."
 msgstr "Efallai nad oes ganddoch caniatadau i dderbyn y cysylltiad."
 
-#: kio/global.cpp:945
+#: kio/global.cpp:950
 #, qt-format
 msgid "Could Not Login: %1"
 msgstr "Methu Mewngofnodi: %1"
 
-#: kio/global.cpp:946
+#: kio/global.cpp:951
 msgid ""
 "An attempt to login to perform the requested operation was unsuccessful."
 msgstr ""
 "Roedd cais i fewngofnodi i gyflawni'r gweithrediad ceisiedig yn "
 "aflwyddiannus."
 
-#: kio/global.cpp:957
+#: kio/global.cpp:962
 msgid "Could Not Determine Resource Status"
 msgstr "Methu Pennu Statws yr Adnodd"
 
-#: kio/global.cpp:958
+#: kio/global.cpp:963
 msgid "Could Not Stat Resource"
 msgstr "Methu Canfod Statws yr Adnodd"
 
-#: kio/global.cpp:959
+#: kio/global.cpp:964
 #, qt-format
 msgid ""
 "An attempt to determine information about the status of the resource <strong>"
@@ -1866,56 +1876,56 @@ msgstr ""
 "Roedd cais i bennu gwybodaeth am statws yr adnodd <strong>%1</strong>, er "
 "enghraifft enw yr adnodd, ei fath, ei faint ac yn y blaen, yn aflwyddiannus."
 
-#: kio/global.cpp:962
+#: kio/global.cpp:967
 msgid "The specified resource may not have existed or may not be accessible."
 msgstr "Efallai nad oedd yr adnodd penodol mewn bod, neu ar gael."
 
-#: kio/global.cpp:970
+#: kio/global.cpp:975
 msgid "Could Not Cancel Listing"
 msgstr "Methu Diddymu'r Rhestriad"
 
-#: kio/global.cpp:971
+#: kio/global.cpp:976
 msgid "FIXME: Document this"
 msgstr "FIXME: Mae angen dogfennu hyn"
 
-#: kio/global.cpp:975
+#: kio/global.cpp:980
 msgid "Could Not Create Folder"
 msgstr "Methu Creu Plygell"
 
-#: kio/global.cpp:976
+#: kio/global.cpp:981
 msgid "An attempt to create the requested folder failed."
 msgstr "Methwyd cais i greu'r plygell a ofynwyd amdano."
 
-#: kio/global.cpp:977
+#: kio/global.cpp:982
 msgid "The location where the folder was to be created may not exist."
 msgstr "Efallai nad oedd y lleoliad lle roedd eisiau creu'r plygell mewn bod."
 
-#: kio/global.cpp:984
+#: kio/global.cpp:989
 msgid "Could Not Remove Folder"
 msgstr "Methu Gwaredu Plygell"
 
-#: kio/global.cpp:985
+#: kio/global.cpp:990
 #, qt-format
 msgid "An attempt to remove the specified folder, <strong>%1</strong>, failed."
 msgstr "Methwyd cais i ddileu'r plygell penodol, <strong>%1</strong>."
 
-#: kio/global.cpp:987
+#: kio/global.cpp:992
 msgid "The specified folder may not exist."
 msgstr "Efallai nad yw'r plygell penodol mewn bod."
 
-#: kio/global.cpp:988
+#: kio/global.cpp:993
 msgid "The specified folder may not be empty."
 msgstr "Efallai nad yw'r plygell penodol yn wag."
 
-#: kio/global.cpp:991
+#: kio/global.cpp:996
 msgid "Ensure that the folder exists and is empty, and try again."
 msgstr "Sicrhewch fod y plygell mewn bod ac yn wag, a ceisiwch eto."
 
-#: kio/global.cpp:996
+#: kio/global.cpp:1001
 msgid "Could Not Resume File Transfer"
 msgstr "Methu Ail-gychwyn Trosglwyddo'r Ffeil"
 
-#: kio/global.cpp:997
+#: kio/global.cpp:1002
 #, qt-format
 msgid ""
 "The specified request asked that the transfer of file <strong>%1</strong> be "
@@ -1924,29 +1934,29 @@ msgstr ""
 "Gofynnodd y cais penodol i trosglwyddiad y ffeil <strong>%1</strong> gael ei "
 "ail-gychwyn mewn man arbennig o'r trosglwyddiad.  Nid oedd hyn yn bosib."
 
-#: kio/global.cpp:1000
+#: kio/global.cpp:1005
 msgid "The protocol, or the server, may not support file resuming."
 msgstr ""
 "Efallai nid yw'r protocol neu'r gweinydd yn cynnal ail-gychwyn y ffeil."
 
-#: kio/global.cpp:1002
+#: kio/global.cpp:1007
 msgid "Retry the request without attempting to resume transfer."
 msgstr "Ail-geisiwch, heb geisio ail-gychwyn y trosgwyddiad."
 
-#: kio/global.cpp:1007
+#: kio/global.cpp:1012
 msgid "Could Not Rename Resource"
 msgstr "Methu Ail-enwi yr Adnodd"
 
-#: kio/global.cpp:1008
+#: kio/global.cpp:1013
 #, qt-format
 msgid "An attempt to rename the specified resource <strong>%1</strong> failed."
 msgstr "Methwyd cais i ail-enwi'r adnodd penodol <strong>%1</strong>."
 
-#: kio/global.cpp:1016
+#: kio/global.cpp:1021
 msgid "Could Not Alter Permissions of Resource"
 msgstr "Methu Newid Caniatadau'r Adnodd"
 
-#: kio/global.cpp:1017
+#: kio/global.cpp:1022
 #, qt-format
 msgid ""
 "An attempt to alter the permissions on the specified resource <strong>%1</"
@@ -1954,20 +1964,37 @@ msgid ""
 msgstr ""
 "Methwyd cais i newid caniatadau ar yr adnodd penodol <strong>%1</strong>."
 
-#: kio/global.cpp:1024
+#: kio/global.cpp:1029
+#, fuzzy
+#| msgid "Could Not Alter Permissions of Resource"
+msgid "Could Not Change Ownership of Resource"
+msgstr "Methu Newid Caniatadau'r Adnodd"
+
+#: kio/global.cpp:1030
+#, fuzzy, qt-format
+#| msgid ""
+#| "An attempt to alter the permissions on the specified resource <strong>%1</"
+#| "strong> failed."
+msgid ""
+"An attempt to change the ownership of the specified resource <strong>%1</"
+"strong> failed."
+msgstr ""
+"Methwyd cais i newid caniatadau ar yr adnodd penodol <strong>%1</strong>."
+
+#: kio/global.cpp:1037
 msgid "Could Not Delete Resource"
 msgstr "Methu Dileu'r Adnodd"
 
-#: kio/global.cpp:1025
+#: kio/global.cpp:1038
 #, qt-format
 msgid "An attempt to delete the specified resource <strong>%1</strong> failed."
 msgstr "Methwyd cais i ddileu'r adnodd penodol <strong>%1</strong>."
 
-#: kio/global.cpp:1032
+#: kio/global.cpp:1045
 msgid "Unexpected Program Termination"
 msgstr "Terfynwyd y Rhaglen yn Annisgwyl"
 
-#: kio/global.cpp:1033
+#: kio/global.cpp:1046
 #, qt-format
 msgid ""
 "The program on your computer which provides access to the <strong>%1</"
@@ -1976,11 +2003,11 @@ msgstr ""
 "Mae'r rhaglen ar eich cyfrifiadur sy'n darparu cyrchiad i'r protocol <strong>"
 "%1</strong> wedi terfynu yn annisgwyl."
 
-#: kio/global.cpp:1041
+#: kio/global.cpp:1054
 msgid "Out of Memory"
 msgstr "Allan o Gof."
 
-#: kio/global.cpp:1042
+#: kio/global.cpp:1055
 #, qt-format
 msgid ""
 "The program on your computer which provides access to the <strong>%1</"
@@ -1989,11 +2016,11 @@ msgstr ""
 "Ni allai'r rhaglen ar eich cyfrifiadur sy'n darparu cyrchiad i'r protocol "
 "<strong>%1</strong> gael digon o gof i barhau."
 
-#: kio/global.cpp:1050
+#: kio/global.cpp:1063
 msgid "Unknown Proxy Host"
 msgstr "Gwesteiwr Dirpwry Anhysbys"
 
-#: kio/global.cpp:1051
+#: kio/global.cpp:1064
 #, qt-format
 msgid ""
 "While retrieving information about the specified proxy host, <strong>%1</"
@@ -2004,7 +2031,7 @@ msgstr ""
 "canfodwyd gwall Gwesteiwr Anhysbys.  Mae gwall gwesteiwr anhysbys yn dynodi "
 "na ellid lleoli'r enw ceisiedig ar y Rhyngrwyd."
 
-#: kio/global.cpp:1055
+#: kio/global.cpp:1068
 #, fuzzy
 msgid ""
 "There may have been a problem with your network configuration, specifically "
@@ -2015,16 +2042,16 @@ msgstr ""
 "gwesteiwr dirpwry.  Os ydych wedi bod yn cyrchu'r Rhyngrwyd heb broblemau yn "
 "ddiweddar, mae hyn yn anhebyg."
 
-#: kio/global.cpp:1059
+#: kio/global.cpp:1072
 msgid "Double-check your proxy settings and try again."
 msgstr "Cywirwch eich gosodiadau dirprwy a ceisiwch eto."
 
-#: kio/global.cpp:1064
+#: kio/global.cpp:1077
 #, qt-format
 msgid "Authentication Failed: Method %1 Not Supported"
 msgstr "Methodd Dilysiant: Ni Chynhelir Dull %1"
 
-#: kio/global.cpp:1066
+#: kio/global.cpp:1079
 #, qt-format
 msgid ""
 "Although you may have supplied the correct authentication details, the "
@@ -2035,7 +2062,7 @@ msgstr ""
 "achos ni chynhelir y dull a ddefnyddir gan y gweinydd gan y rhaglen KDE sy'n "
 "cyflawni'r protocol %1."
 
-#: kio/global.cpp:1070
+#: kio/global.cpp:1083
 msgid ""
 "Please file a bug at <a href=\"http://bugs.kde.org/\">http://bugs.kde.org/</"
 "a> to inform the KDE team of the unsupported authentication method."
@@ -2043,15 +2070,15 @@ msgstr ""
 "Cyflwynwch nam wrth <a href=\"http://bugs.kde.org/\">http://bugs.kde.org/</"
 "a> i hysbysu'r tîm KDE am y dull dilysiant na chynhelir."
 
-#: kio/global.cpp:1076
+#: kio/global.cpp:1089
 msgid "Request Aborted"
 msgstr "Ataliwyd y Cais"
 
-#: kio/global.cpp:1083
+#: kio/global.cpp:1096
 msgid "Internal Error in Server"
 msgstr "Camgymeriad Mewnol yn y Gweinydd"
 
-#: kio/global.cpp:1084
+#: kio/global.cpp:1097
 #, fuzzy, qt-format
 msgid ""
 "The program on the server which provides access to the <strong>%1</strong> "
@@ -2060,7 +2087,7 @@ msgstr ""
 "Mae'r rhaglen ar y gweinydd sy'n darparu cyrchiad i'r protocol <strong>%1</"
 "strong> wedi adrodd gwall mewnol: %0."
 
-#: kio/global.cpp:1087
+#: kio/global.cpp:1100
 msgid ""
 "This is most likely to be caused by a bug in the server program. Please "
 "consider submitting a full bug report as detailed below."
@@ -2068,11 +2095,11 @@ msgstr ""
 "Achosir hyn gan nam, mwy na thebyg.  Ystyriedwch cyflwyno adrodd nam llawn, "
 "yn ôl y manylion isod."
 
-#: kio/global.cpp:1090
+#: kio/global.cpp:1103
 msgid "Contact the administrator of the server to advise them of the problem."
 msgstr "Cysylltwch â gwasanaethwr y gweinuydd i'w gynghori am y problem."
 
-#: kio/global.cpp:1092
+#: kio/global.cpp:1105
 msgid ""
 "If you know who the authors of the server software are, submit the bug "
 "report directly to them."
@@ -2080,11 +2107,11 @@ msgstr ""
 "Os wyddoch pwy yw awduron y feddalwedd weinydd, cyflwynwch yr adrodd nam yn "
 "uniongyrchol iddynt."
 
-#: kio/global.cpp:1097
+#: kio/global.cpp:1110
 msgid "Timeout Error"
 msgstr "Gwall goramser"
 
-#: kio/global.cpp:1098
+#: kio/global.cpp:1111
 #, qt-format
 msgid ""
 "Although contact was made with the server, a response was not received "
@@ -2101,15 +2128,15 @@ msgstr ""
 "gallwch newid y gosodiadau goramser yn y Ganolfan Rheoli KDE, drwy ddewis "
 "Rhwydwaith -> Hoffiannau."
 
-#: kio/global.cpp:1109
+#: kio/global.cpp:1122
 msgid "The server was too busy responding to other requests to respond."
 msgstr "Roedd y gweinydd yn rhy brysur yn ymateb i geisiadau eraill i ymateb."
 
-#: kio/global.cpp:1115
+#: kio/global.cpp:1128
 msgid "Unknown Error"
 msgstr "Gwall Anhysbys"
 
-#: kio/global.cpp:1116
+#: kio/global.cpp:1129
 #, qt-format
 msgid ""
 "The program on your computer which provides access to the <strong>%1</"
@@ -2118,11 +2145,11 @@ msgstr ""
 "Mae'r rhaglen ar y gweinydd sy'n darparu cyrchiad i'r protocol <strong>%1</"
 "strong> wedi adrodd gwall mewnol: %2."
 
-#: kio/global.cpp:1124
+#: kio/global.cpp:1137
 msgid "Unknown Interruption"
 msgstr "Ymyriad Anhysbys"
 
-#: kio/global.cpp:1125
+#: kio/global.cpp:1138
 #, qt-format
 msgid ""
 "The program on your computer which provides access to the <strong>%1</"
@@ -2131,11 +2158,11 @@ msgstr ""
 "Mae'r rhaglen ar y gweinydd sy'n darparu cyrchiad i'r protocol <strong>%1</"
 "strong> wedi adrodd ymyriad o fath anhysbys: %2."
 
-#: kio/global.cpp:1133
+#: kio/global.cpp:1146
 msgid "Could Not Delete Original File"
 msgstr "Methu Dileu Ffeil Gwreiddiol"
 
-#: kio/global.cpp:1134
+#: kio/global.cpp:1147
 #, qt-format
 msgid ""
 "The requested operation required the deleting of the original file, most "
@@ -2146,11 +2173,11 @@ msgstr ""
 "ddiwedd gweithrediad symud ffeil, mwy na thebyg.  Ni ellid dileu'r ffeil "
 "gwreiddiol <strong>%1</strong>."
 
-#: kio/global.cpp:1143
+#: kio/global.cpp:1156
 msgid "Could Not Delete Temporary File"
 msgstr "Methu Dileu Ffeil Dros Dro"
 
-#: kio/global.cpp:1144
+#: kio/global.cpp:1157
 #, qt-format
 msgid ""
 "The requested operation required the creation of a temporary file in which "
@@ -2161,11 +2188,11 @@ msgstr ""
 "newydd  wrth iddo gael ei lawrlwytho.  Ni ellid dileu'r ffeil dros dro "
 "<strong>%1</strong>."
 
-#: kio/global.cpp:1153
+#: kio/global.cpp:1166
 msgid "Could Not Rename Original File"
 msgstr "Methu Ail-enwi Ffeil Gwreiddiol"
 
-#: kio/global.cpp:1154
+#: kio/global.cpp:1167
 #, qt-format
 msgid ""
 "The requested operation required the renaming of the original file <strong>%"
@@ -2174,11 +2201,11 @@ msgstr ""
 "Roedd gan y weithrediad ceisiedig angen ail-enwi'r ffeil gwreiddiol <strong>%"
 "1</strong>.  Ond ni ellid ail-enwi'r ffeil."
 
-#: kio/global.cpp:1162
+#: kio/global.cpp:1175
 msgid "Could Not Rename Temporary File"
 msgstr "Methu Ail-enwi Ffeil Dro Dro"
 
-#: kio/global.cpp:1163
+#: kio/global.cpp:1176
 #, qt-format
 msgid ""
 "The requested operation required the creation of a temporary file <strong>%"
@@ -2187,28 +2214,28 @@ msgstr ""
 "Roedd gan y weithrediad ceisiedig angen greu ffeil dros dro <strong>%1</"
 "strong>.  Ond ni ellid creu'r ffeil."
 
-#: kio/global.cpp:1171
+#: kio/global.cpp:1184
 msgid "Could Not Create Link"
 msgstr "Methu Creu Cyswllt"
 
-#: kio/global.cpp:1172
+#: kio/global.cpp:1185
 msgid "Could Not Create Symbolic Link"
 msgstr "Methu Creu Cyswllt Symbolaidd"
 
-#: kio/global.cpp:1173
+#: kio/global.cpp:1186
 #, qt-format
 msgid "The requested symbolic link %1 could not be created."
 msgstr "Methu creu y cyswllt symbolaidd %1 a ofynwyd amdano."
 
-#: kio/global.cpp:1180
+#: kio/global.cpp:1193
 msgid "No Content"
 msgstr "Dim Cynnwys"
 
-#: kio/global.cpp:1185
+#: kio/global.cpp:1198
 msgid "Disk Full"
 msgstr "Disg Llawn"
 
-#: kio/global.cpp:1186
+#: kio/global.cpp:1199
 #, qt-format
 msgid ""
 "The requested file <strong>%1</strong> could not be written to as there is "
@@ -2217,7 +2244,7 @@ msgstr ""
 "Ni ellid ysgrifennu at y ffeil ceisiedig <strong>%1</strong> gan fod diffyg "
 "lle ar y ddisg."
 
-#: kio/global.cpp:1188
+#: kio/global.cpp:1201
 msgid ""
 "Free up enough disk space by 1) deleting unwanted and temporary files; 2) "
 "archiving files to removable media storage such as CD-Recordable discs; or "
@@ -2227,11 +2254,11 @@ msgstr ""
 "2) archifo ffeiliau i gronfa cyfryngau symudadwy fel disgiau CD-Cofnodi; neu "
 "3) darganfod mwy o le cronfa."
 
-#: kio/global.cpp:1195
+#: kio/global.cpp:1208
 msgid "Source and Destination Files Identical"
 msgstr "Ffeiliau Tarddiad a Cyrchfan yn Unwy"
 
-#: kio/global.cpp:1196
+#: kio/global.cpp:1209
 msgid ""
 "The operation could not be completed because the source and destination "
 "files are the same file."
@@ -2239,12 +2266,12 @@ msgstr ""
 "Methu cwblhau'r gweithrediad gan fod ffeil tarddiad a ffeil cyrchfan yr un "
 "un ffeil."
 
-#: kio/global.cpp:1198
+#: kio/global.cpp:1211
 #, fuzzy
 msgid "Choose a different filename for the destination file."
 msgstr "Dewiswch enw ffeil gwahanol i'r ffeil cyrchfan."
 
-#: kio/global.cpp:1209
+#: kio/global.cpp:1222
 msgid "Undocumented Error"
 msgstr "Gwall Heb ei Ddogfennu"
 
@@ -2391,44 +2418,44 @@ msgstr ""
 " gyda cofnod dewislen annilys\n"
 " %2."
 
-#: kio/kfileitem.cpp:909
+#: kio/kfileitem.cpp:919
 #, fuzzy, qt-format
 #| msgid "Symbolic Link"
 msgid "(Symbolic Link to %1)"
 msgstr "Cyswllt Symbolaidd"
 
-#: kio/kfileitem.cpp:911
+#: kio/kfileitem.cpp:921
 #, fuzzy, qt-format
 msgid "(%1, Link to %2)"
 msgstr "Cyswllt i %1"
 
-#: kio/kfileitem.cpp:938 bookmarks/kbookmarkmenu.cc:641
+#: kio/kfileitem.cpp:948 bookmarks/kbookmarkmenu.cc:641
 #: ../kioslave/http/kcookiejar/kcookiewin.cpp:218
 msgid "Name:"
 msgstr "Enw:"
 
-#: kio/kfileitem.cpp:939 kfile/kpropertiesdialog.cpp:973
+#: kio/kfileitem.cpp:949 kfile/kpropertiesdialog.cpp:973
 msgid "Type:"
 msgstr "Math:"
 
-#: kio/kfileitem.cpp:943
+#: kio/kfileitem.cpp:953
 #, fuzzy, qt-format
 msgid "Link to %1 (%2)"
 msgstr "Cyswllt i %1"
 
-#: kio/kfileitem.cpp:948 kfile/kpropertiesdialog.cpp:1021
+#: kio/kfileitem.cpp:958 kfile/kpropertiesdialog.cpp:1021
 msgid "Size:"
 msgstr "Maint:"
 
-#: kio/kfileitem.cpp:953 kfile/kpropertiesdialog.cpp:1084
+#: kio/kfileitem.cpp:963 kfile/kpropertiesdialog.cpp:1084
 msgid "Modified:"
 msgstr "Newidwyd:"
 
-#: kio/kfileitem.cpp:956
+#: kio/kfileitem.cpp:966
 msgid "Owner:"
 msgstr "Perchennog:"
 
-#: kio/kfileitem.cpp:957
+#: kio/kfileitem.cpp:967
 msgid "Permissions:"
 msgstr "Caniatadau "
 
@@ -4911,7 +4938,17 @@ msgstr "Methu mewngofnodi i %1"
 msgid "Setting ACL for %1"
 msgstr "Anfon data i %1"
 
-#: ../kioslave/file/file.cpp:734 ../kioslave/file/file.cpp:968
+#: ../kioslave/file/file.cpp:234
+#, fuzzy, qt-format
+msgid "Could not get user id for given user name %1"
+msgstr "Methu mynd i mewn i blygell %1"
+
+#: ../kioslave/file/file.cpp:247
+#, qt-format
+msgid "Could not get group id for given group name %1"
+msgstr ""
+
+#: ../kioslave/file/file.cpp:787 ../kioslave/file/file.cpp:1021
 #, qt-format
 msgid ""
 "Could not change permissions for\n"
@@ -4920,36 +4957,36 @@ msgstr ""
 "Methu newid caniatadau i \n"
 " %1"
 
-#: ../kioslave/file/file.cpp:899
+#: ../kioslave/file/file.cpp:952
 #, qt-format
 msgid "Cannot copy file from %1 to %2. (Errno: %3)"
 msgstr ""
 
-#: ../kioslave/file/file.cpp:1342
+#: ../kioslave/file/file.cpp:1395
 #, fuzzy, qt-format
 msgid "No media in device for %1"
 msgstr "Dim meta-wybodaeth am %1 "
 
-#: ../kioslave/file/file.cpp:1494
+#: ../kioslave/file/file.cpp:1547
 #, fuzzy
 msgid "No Media inserted or Media not recognized."
 msgstr "Ni adnabyddwyd math yr argraffydd."
 
-#: ../kioslave/file/file.cpp:1504 ../kioslave/file/file.cpp:1705
+#: ../kioslave/file/file.cpp:1557 ../kioslave/file/file.cpp:1758
 msgid "\"vold\" is not running."
 msgstr ""
 
-#: ../kioslave/file/file.cpp:1539
+#: ../kioslave/file/file.cpp:1592
 #, fuzzy
 msgid "Could not find program \"mount\""
 msgstr "Methu darganfod y rhaglen '%1'"
 
-#: ../kioslave/file/file.cpp:1718
+#: ../kioslave/file/file.cpp:1771
 #, fuzzy
 msgid "Could not find program \"umount\""
 msgstr "Methu darganfod y rhaglen '%1'"
 
-#: ../kioslave/file/file.cpp:1806
+#: ../kioslave/file/file.cpp:1859
 #, qt-format
 msgid "Could not read %1"
 msgstr "Methu darllen %1"
