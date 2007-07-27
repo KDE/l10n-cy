@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-07-26 05:31+0200\n"
+"POT-Creation-Date: 2007-07-27 05:45+0200\n"
 "PO-Revision-Date: 2004-01-15 16:48+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -87,6 +87,12 @@ msgstr "Dechrau KGet â tharged ollwng"
 
 #: main.cpp:128
 #, fuzzy
+#| msgid "Start KGet with drop target"
+msgid "Start KGet with hidden main window"
+msgstr "Dechrau KGet â tharged ollwng"
+
+#: main.cpp:129
+#, fuzzy
 msgid "URL(s) to download"
 msgstr "URL(au) i'w lawrlwytho."
 
@@ -107,14 +113,13 @@ msgstr "&Allforio Rhestr Drosglwyddo..."
 msgid "Edit Groups..."
 msgstr ""
 
-#: mainwindow.cpp:120
-#, fuzzy
-msgid "Delete Group."
-msgstr "Plygell Ragosodedig"
+#: mainwindow.cpp:120 ui/groupseditdialog.cpp:37
+msgid "Delete Group"
+msgstr ""
 
 #: mainwindow.cpp:125
 #, fuzzy
-msgid "Rename Group."
+msgid "Rename Group"
 msgstr "Plygell Ragosodedig"
 
 #: mainwindow.cpp:130
@@ -186,40 +191,40 @@ msgstr "kyfieithu@dotmon.com"
 msgid "Copy URL to Clipboard"
 msgstr "&Copïo URL i'r Clipfwrdd"
 
-#: mainwindow.cpp:253
+#: mainwindow.cpp:250
 #, fuzzy
 msgid ""
 "This is the first time you have run KGet.\n"
-"Would you like to use KGet as the download manager for Konqueror?"
+"Would you like to enable KGet as the download manager for Konqueror?"
 msgstr ""
 "Dyma'r tro cyntaf i chi redeg KGet.\n"
 " A ydych am weithredoli'r cyfuno â Konqueror?"
 
-#: mainwindow.cpp:255
+#: mainwindow.cpp:252
 #, fuzzy
 msgid "Konqueror Integration"
 msgstr "Cyfuno â Konqueror"
 
-#: mainwindow.cpp:255
+#: mainwindow.cpp:252
 msgid "Enable"
 msgstr "Galluogi"
 
-#: mainwindow.cpp:256
+#: mainwindow.cpp:253
 #, fuzzy
 #| msgid "Enable"
 msgid "Do Not Enable"
 msgstr "Galluogi"
 
-#: mainwindow.cpp:282
+#: mainwindow.cpp:284
 msgid "All Openable Files"
 msgstr ""
 
-#: mainwindow.cpp:283
+#: mainwindow.cpp:285
 #, fuzzy
 msgid "Open File"
 msgstr "Agor &Ffeil"
 
-#: mainwindow.cpp:299
+#: mainwindow.cpp:301
 #, fuzzy
 msgid ""
 "Some transfers are still running.\n"
@@ -228,38 +233,38 @@ msgstr ""
 "Mae rhai trosglwyddiadau'n dal i redeg.\n"
 " A ydych yn sicr eich bod am gau KGet?"
 
-#: mainwindow.cpp:301
+#: mainwindow.cpp:303
 msgid "Confirm Quit"
 msgstr ""
 
-#: mainwindow.cpp:334
+#: mainwindow.cpp:336
 #, fuzzy
 msgid "KGet Transfer List"
 msgstr "Agor trosglwyddiad:"
 
-#: mainwindow.cpp:336
+#: mainwindow.cpp:338
 #, fuzzy
 msgid "Export Transfers"
 msgstr "&Allforio Rhestr Drosglwyddo..."
 
-#: mainwindow.cpp:366 ui/groupseditdialog.cpp:65
+#: mainwindow.cpp:368 ui/groupseditdialog.cpp:65
 #, fuzzy
 msgid "Enter Group Name"
 msgstr "KGyfieithu - Meddalwedd Gymraeg"
 
-#: mainwindow.cpp:367 ui/groupseditdialog.cpp:66
+#: mainwindow.cpp:369 ui/groupseditdialog.cpp:66
 #, fuzzy
 msgid "Group name:"
 msgstr "KGyfieithu - Meddalwedd Gymraeg"
 
-#: mainwindow.cpp:545
+#: mainwindow.cpp:547
 msgid ""
 "KGet has been temporarily disabled as download manager for Konqueror. If you "
 "want to disable it forever, go to Settings->Advanced and disable \"Use as "
 "download manager for Konqueror\"."
 msgstr ""
 
-#: mainwindow.cpp:548
+#: mainwindow.cpp:550
 #, fuzzy
 msgid "Konqueror Integration disabled"
 msgstr "Cyfuno â Konqueror"
@@ -798,32 +803,42 @@ msgstr "Ymgom Gynnydd"
 msgid "Speed"
 msgstr "Cyflymder"
 
-#: ui/droptarget.cpp:82
-#, fuzzy
-msgid "Hide Me"
-msgstr "Enw Ffeil"
-
 #: ui/droptarget.cpp:83
+#, fuzzy
+msgid "Hide Drop Target"
+msgstr "&Targed Ollwng"
+
+#: ui/droptarget.cpp:84
 msgid "Sticky"
 msgstr "Gludiog"
 
-#: ui/droptarget.cpp:254
+#: ui/droptarget.cpp:260
 #, fuzzy
 msgid "Show Main Window"
 msgstr "Dangos y brif ffenestr wrth gychwyn"
 
-#: ui/droptarget.cpp:255
+#: ui/droptarget.cpp:261
 #, fuzzy
 msgid "Hide Main Window"
 msgstr "Ffenestr Gofnodion"
 
-#: ui/droptarget.cpp:375
+#: ui/droptarget.cpp:338
+#, fuzzy
+#| msgid "Drop target"
+msgid "Drop Target"
+msgstr "Targed ollwng"
+
+#: ui/droptarget.cpp:339
+msgid "You can drag download links into the drop target."
+msgstr ""
+
+#: ui/droptarget.cpp:385
 msgid ""
 "Drop target has been hidden. If you want to show it again, go to Settings-"
 ">Configure KGet->Look & Feel."
 msgstr ""
 
-#: ui/droptarget.cpp:377
+#: ui/droptarget.cpp:387
 #, fuzzy
 msgid "Hiding drop target"
 msgstr "&Targed Ollwng"
@@ -834,10 +849,6 @@ msgstr ""
 
 #: ui/groupseditdialog.cpp:32
 msgid "Add Group..."
-msgstr ""
-
-#: ui/groupseditdialog.cpp:37
-msgid "Delete Group"
 msgstr ""
 
 #: ui/groupseditdialog.cpp:74
@@ -896,6 +907,14 @@ msgstr "&Trosglwyddo"
 #, fuzzy
 msgid "Transfer details:"
 msgstr "Trosglwyddiadau: %1"
+
+#, fuzzy
+#~ msgid "Delete Group."
+#~ msgstr "Plygell Ragosodedig"
+
+#, fuzzy
+#~ msgid "Hide Me"
+#~ msgstr "Enw Ffeil"
 
 #, fuzzy
 #~ msgid ""
@@ -1581,9 +1600,6 @@ msgstr "Trosglwyddiadau: %1"
 
 #~ msgid "Normal"
 #~ msgstr "Arferol"
-
-#~ msgid "Drop target"
-#~ msgstr "Targed ollwng"
 
 #~ msgid "Copy file from: %1"
 #~ msgstr "Copĩo ffeil o: %1"
