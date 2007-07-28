@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-07-27 05:47+0200\n"
+"POT-Creation-Date: 2007-07-28 05:34+0200\n"
 "PO-Revision-Date: 2005-11-02 13:59+0000\n"
 "Last-Translator: Kevin Donnelly <kevin@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -44,9 +44,9 @@ msgstr "Atebion cywir: %1/%2"
 msgid "&Accept"
 msgstr "&Derbyn"
 
-#: capitaldivisionasker.cpp:30 divisioncapitalasker.cpp:32
+#: capitaldivisionasker.cpp:30
 #, qt-format
-msgctxt "@item:intable column Question"
+msgctxt "@item:intable column Question, %1 is capital name"
 msgid "%1"
 msgstr ""
 
@@ -77,6 +77,13 @@ msgctxt "@title:group"
 msgid "The capital of %1 is..."
 msgstr "Prifddinas %1 yw..."
 
+#: divisioncapitalasker.cpp:32 divisionflagasker.cpp:34 mapasker.cpp:134
+#: placeasker.cpp:153
+#, qt-format
+msgctxt "@item:intable column Question, %1 is region name"
+msgid "%1"
+msgstr ""
+
 #: divisioncapitalasker.cpp:34 divisioncapitalasker.cpp:35
 #: divisioncapitalasker.cpp:47 divisioncapitalasker.cpp:65
 #, qt-format
@@ -91,12 +98,15 @@ msgid "Capital of %1"
 msgstr "Prifddinas Rhanbarth"
 
 #: divisionflagasker.cpp:32
-#, qt-format
+#, fuzzy, qt-format
+#| msgid "The flag of %1 is..."
+msgctxt "@title:group"
 msgid "The flag of %1 is..."
 msgstr "Baner %1 yw..."
 
 #: divisionflagasker.cpp:56
 #, fuzzy, qt-format
+msgctxt "@title"
 msgid "Flag of %1"
 msgstr "Baner Rhanbarth"
 
@@ -320,7 +330,11 @@ msgid "Regions"
 msgstr "Regina"
 
 #: mapasker.cpp:104 placeasker.cpp:110
-#, qt-format
+#, fuzzy, qt-format
+#| msgid ""
+#| "You have found a bug in a map. Please contact the author and tell the %1 "
+#| "map has nothing associated to color %2,%3,%4."
+msgctxt "@info"
 msgid ""
 "You have found a bug in a map. Please contact the author and tell the %1 map "
 "has nothing associated to color %2,%3,%4."
@@ -345,12 +359,16 @@ msgstr ""
 #| msgid ""
 #| "Please click on:\n"
 #| "%1"
+msgctxt "@info"
 msgid "<qt>Please click on:<br />%1</qt>"
 msgstr ""
 "Cliciwch ar:\n"
 "%1"
 
 #: mapasker.cpp:141
+#, fuzzy
+#| msgid "Division in Map"
+msgctxt "@title"
 msgid "Division in Map"
 msgstr "Rhanbarth mewn Map"
 
@@ -19741,6 +19759,7 @@ msgstr "Gers"
 
 #: placeasker.cpp:151
 #, fuzzy, qt-format
+msgctxt "@info"
 msgid "<qt>Please place in the map:<br />%1</qt>"
 msgstr ""
 "Cliciwch ar:\n"
@@ -19748,6 +19767,7 @@ msgstr ""
 
 #: placeasker.cpp:162
 #, qt-format
+msgctxt "@title"
 msgid "Place %1 in map"
 msgstr ""
 
