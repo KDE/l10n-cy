@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kbruch\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-07-03 05:08+0200\n"
+"POT-Creation-Date: 2007-08-06 05:40+0200\n"
 "PO-Revision-Date: 2005-11-02 21:59+0000\n"
 "Last-Translator: Kevin Donnelly <kevin@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -17,12 +17,6 @@ msgstr ""
 #: exercisecompare.cpp:99
 msgid "Click on this button to change the comparison sign."
 msgstr "Cliciwch ar y botwm yma i newid yr arwydd cymharu."
-
-#: exercisecompare.cpp:117 exercisecompare.cpp:247 taskview.cpp:128
-#: taskview.cpp:308 exercisefactorize.cpp:195 exercisefactorize.cpp:395
-#: exerciseconvert.cpp:129 exerciseconvert.cpp:378
-msgid "WRONG"
-msgstr "ANGHYWIR"
 
 #: exercisecompare.cpp:137 exercisecompare.cpp:179 exercisecompare.cpp:297
 #: taskview.cpp:152 taskview.cpp:228 taskview.cpp:375
@@ -57,8 +51,19 @@ msgstr "Cliciwch ar y botwm yma i fynd i'r tasg nesaf."
 
 #: exercisecompare.cpp:236 taskview.cpp:297 exercisefactorize.cpp:385
 #: exerciseconvert.cpp:367
+#, fuzzy
+#| msgid "CORRECT"
+msgctxt "@info:status"
 msgid "CORRECT"
 msgstr "CYWIR"
+
+#: exercisecompare.cpp:247 taskview.cpp:308 exercisefactorize.cpp:395
+#: exerciseconvert.cpp:378
+#, fuzzy
+#| msgid "WRONG"
+msgctxt "@info:status"
+msgid "WRONG"
+msgstr "ANGHYWIR"
 
 #: exercisecompare.cpp:293 taskview.cpp:371 exercisefactorize.cpp:504
 #: exerciseconvert.cpp:445
@@ -308,58 +313,66 @@ msgid "Colors"
 msgstr "Lliwiau"
 
 #. i18n: tag string
-#. i18n: file taskvieweroptionsbase.ui line 49
+#. i18n: file taskvieweroptionsbase.ui line 75
 #: rc.cpp:87
-msgid "Number:"
+#, fuzzy
+#| msgid "Number:"
+msgid "&Number:"
 msgstr "Rhif:"
 
 #. i18n: tag string
-#. i18n: file taskvieweroptionsbase.ui line 64
+#. i18n: file taskvieweroptionsbase.ui line 85
 #: rc.cpp:90
-msgid "Operation sign:"
-msgstr "Arwydd gweithrediad:"
+msgid "Change the color of the fraction bar"
+msgstr "Newid lliw y bar ffracsiynau"
 
 #. i18n: tag string
-#. i18n: file taskvieweroptionsbase.ui line 79
+#. i18n: file taskvieweroptionsbase.ui line 103
 #: rc.cpp:93
-msgid "Fraction bar:"
-msgstr "Bar ffracsiynau:"
+msgid "Change the color of the operation signs"
+msgstr "Newid lliw yr arwyddion gweithrediad"
 
 #. i18n: tag string
-#. i18n: file taskvieweroptionsbase.ui line 86
+#. i18n: file taskvieweroptionsbase.ui line 113
 #: rc.cpp:96
 msgid "Change the color of the numbers"
 msgstr "Newid lliw y rhifau"
 
 #. i18n: tag string
-#. i18n: file taskvieweroptionsbase.ui line 111
+#. i18n: file taskvieweroptionsbase.ui line 131
 #: rc.cpp:99
-msgid "Change the color of the operation signs"
-msgstr "Newid lliw yr arwyddion gweithrediad"
+#, fuzzy
+#| msgid "Operation sign:"
+msgid "&Operation sign:"
+msgstr "Arwydd gweithrediad:"
 
 #. i18n: tag string
-#. i18n: file taskvieweroptionsbase.ui line 128
+#. i18n: file taskvieweroptionsbase.ui line 149
 #: rc.cpp:102
-msgid "Change the color of the fraction bar"
-msgstr "Newid lliw y bar ffracsiynau"
+#, fuzzy
+#| msgid "Fraction bar:"
+msgid "&Fraction bar:"
+msgstr "Bar ffracsiynau:"
 
 #. i18n: tag string
-#. i18n: file taskvieweroptionsbase.ui line 148
+#. i18n: file taskvieweroptionsbase.ui line 162
 #: rc.cpp:105
 msgid "General"
 msgstr "Cyffredinol"
 
 #. i18n: tag string
-#. i18n: file taskvieweroptionsbase.ui line 160
+#. i18n: file taskvieweroptionsbase.ui line 174
 #: rc.cpp:108
 msgid ""
 "Here you can enable/disable showing the result in mixed-number notation."
 msgstr "Yma, gallwch (an)alluogi dangos y canlyniad mewn nodiant rhif-cymysg."
 
 #. i18n: tag string
-#. i18n: file taskvieweroptionsbase.ui line 163
+#. i18n: file taskvieweroptionsbase.ui line 177
 #: rc.cpp:111
-msgid "Show result also as a mixed number, like 1 2/3."
+#, fuzzy
+#| msgid "Show result also as a mixed number, like 1 2/3."
+msgid "&Show result also as a mixed number, like 1 2/3."
 msgstr "Dangos canlyniad fel rhif cymysg hefyd, megis 1 2/3."
 
 #: rc.cpp:112
@@ -401,6 +414,9 @@ msgid "Factorization"
 msgstr "Ffactorio"
 
 #: mainqtwidget.cpp:203
+#, fuzzy
+#| msgid "&New"
+msgctxt "@action opens a new task"
 msgid "&New"
 msgstr "&Newydd"
 
@@ -476,7 +492,9 @@ msgstr ""
 "tynnu, lluosi, a/neu rannu."
 
 #: mainqtwidget.cpp:496
-msgid "Task Viewer Settings"
+#, fuzzy
+#| msgid "Task Viewer Settings"
+msgid "Task Viewer"
 msgstr "Gosodiadau Gwelydd Tasg"
 
 #: exercisefactorize.cpp:199
@@ -579,6 +597,9 @@ msgid "This is the current total number of solved tasks."
 msgstr "Dyma'r cyfanswm cyfredol o dasgau wedi'u datrys."
 
 #: statisticsview.cpp:77
+#, fuzzy
+#| msgid "Correct:"
+msgctxt "@info:status"
 msgid "Correct:"
 msgstr "Cywir:"
 
@@ -587,6 +608,9 @@ msgid "This is the current total number of correctly solved tasks."
 msgstr "Dyma'r cyfanswm cyfredol o dasgau wedi'u datrys yn gywir."
 
 #: statisticsview.cpp:93
+#, fuzzy
+#| msgid "Incorrect:"
+msgctxt "@info:status"
 msgid "Incorrect:"
 msgstr "Anghywir:"
 
