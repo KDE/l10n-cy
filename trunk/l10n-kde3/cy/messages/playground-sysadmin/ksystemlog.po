@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2007-08-07 08:15+0200\n"
+"POT-Creation-Date: 2007-08-08 08:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 #: acpid/acpidReader.cpp:42 apache/apacheAccessReader.cpp:41
 #: apache/apacheReader.cpp:44 cron/cronReader.cpp:41
 #: cups/cupsAccessReader.cpp:41 cups/cupsReader.cpp:45
-#: samba/sambaReader.cpp:42 ssh/sshReader.cpp:41 system/systemReader.cpp:40
+#: samba/sambaReader.cpp:42 ssh/sshReader.cpp:41 system/systemReader.cpp:38
 msgid "Date"
 msgstr "Dyddiad"
 
@@ -27,13 +27,13 @@ msgstr "Dyddiad"
 msgid "Hostname"
 msgstr "Enw gwesteiwr"
 
-#: cron/cronReader.cpp:43 ssh/sshReader.cpp:43 system/systemReader.cpp:42
+#: cron/cronReader.cpp:43 ssh/sshReader.cpp:43 system/systemReader.cpp:40
 msgid "Process"
 msgstr "Proses"
 
 #: acpid/acpidReader.cpp:44 apache/apacheReader.cpp:46 cron/cronReader.cpp:45
 #: cups/cupsReader.cpp:46 samba/sambaReader.cpp:46 ssh/sshReader.cpp:44
-#: system/systemReader.cpp:43 xorg/xorgReader.cpp:57
+#: system/systemReader.cpp:41 xorg/xorgReader.cpp:57
 #: xsession/xsessionReader.cpp:44
 msgid "Message"
 msgstr "Neges"
@@ -47,7 +47,7 @@ msgid ""
 msgstr ""
 
 #: apache/apacheAccessReader.cpp:42 cron/cronReader.cpp:42
-#: cups/cupsAccessReader.cpp:42 system/systemReader.cpp:41
+#: cups/cupsAccessReader.cpp:42 system/systemReader.cpp:39
 msgid "Host Name"
 msgstr "Enw Gwesteiwr"
 
@@ -132,16 +132,17 @@ msgid ""
 ". This list also determines the order in which the files are read.</p></qt>"
 msgstr ""
 
-#: options.cpp:99 options.cpp:100
+#: options.cpp:101 options.cpp:102
 msgid "General"
 msgstr "Cyffredinol"
 
-#: acpid/acpidReader.cpp:60 acpid/acpidReader.cpp:91 defaultReader.cpp:420
-#: globals.cpp:43 itemFactory.cpp:142 itemFactory.cpp:503 itemFactory.cpp:523
+#: acpid/acpidReader.cpp:60 acpid/acpidReader.cpp:91 defaultReader.cpp:426
+#: globals.cpp:177 logViewWidgetItemFactory.cpp:503
+#: logViewWidgetItemFactory.cpp:524
 msgid "none"
 msgstr "dim"
 
-#: acpid/acpidOptions.cpp:49
+#: acpid/acpidOptions.cpp:50
 msgid ""
 "<qt>"
 "<p>These files will be analyzed to display <b>ACPId log</b>"
@@ -163,72 +164,72 @@ msgstr "Ffeil Tarddiad"
 msgid "Function"
 msgstr "Ffwythiant"
 
-#: logManager.cpp:140
+#: logManager.cpp:176
 msgid "Loading log..."
 msgstr ""
 
-#: logManager.cpp:157
+#: logManager.cpp:193
 msgid "Log successfully loaded."
 msgstr ""
 
-#: logManager.cpp:249
+#: logManager.cpp:282
 msgid "%1 (%2)"
 msgstr "%1(%2)"
 
-#: specificFileList.cpp:48
+#: specificFileList.cpp:56
 msgid "&Change Status..."
 msgstr ""
 
-#: specificFileList.cpp:50
+#: specificFileList.cpp:58
 msgid "Change the level of the current file(s)"
 msgstr ""
 
-#: specificFileList.cpp:51
+#: specificFileList.cpp:59
 msgid ""
 "<qt>Changes the level of the current file(s). See KSystemLog documentation for "
 "more information about each log level.</qt>"
 msgstr ""
 
-#: specificFileList.cpp:54
+#: specificFileList.cpp:62
 msgid "&Change Status"
 msgstr ""
 
-#: fileList.cpp:161 specificFileList.cpp:82
+#: fileList.cpp:165 specificFileList.cpp:95
 msgid "All Files (*)"
 msgstr ""
 
-#: fileList.cpp:161 specificFileList.cpp:82
+#: fileList.cpp:165 specificFileList.cpp:95
 msgid "Log Files (*.log)"
 msgstr ""
 
-#: fileList.cpp:161 specificFileList.cpp:82
+#: fileList.cpp:165 specificFileList.cpp:95
 msgid "Choose Log File"
 msgstr ""
 
-#: specificFileList.cpp:111
+#: specificFileList.cpp:126
 msgid "Selecting File Type"
 msgstr ""
 
-#: specificFileList.cpp:123
+#: specificFileList.cpp:138
 msgid "Please select the type of this file:"
 msgstr ""
 
-#: specificFileList.cpp:129
+#: specificFileList.cpp:144
 msgid "List of existing log levels"
 msgstr ""
 
-#: specificFileList.cpp:130
+#: specificFileList.cpp:145
 msgid ""
 "<qt>This is the list of all existing log levels. Please select one of them to "
 "be used for the selected files of the list.</qt>"
 msgstr ""
 
-#: specificFileList.cpp:191
+#: specificFileList.cpp:210
 msgid ""
 "The two arrays size are different, skipping the reading of generic paths."
 msgstr ""
 
-#: detailDialog.cpp:50
+#: detailDialog.cpp:53
 msgid "&Next"
 msgstr "&Nesaf"
 
@@ -368,11 +369,11 @@ msgid ""
 "Your emails"
 msgstr "kyfieithu@dotmon.com"
 
-#: readerFactory.cpp:349 readerFactory.cpp:384 readerFactory.cpp:409
+#: readerFactory.cpp:352 readerFactory.cpp:387 readerFactory.cpp:412
 msgid "URL '%1' is not valid, skipping this URL."
 msgstr ""
 
-#: readerFactory.cpp:362
+#: readerFactory.cpp:365
 msgid "The two arrays size are different, skipping the reading of log files."
 msgstr ""
 
@@ -475,6 +476,90 @@ msgid ""
 ". This list also determines the order in which the files are read.</p></qt>"
 msgstr ""
 
+#: logViewWidgetItemFactory.cpp:330 logViewWidgetItemFactory.cpp:349
+#: logViewWidgetItemFactory.cpp:367 logViewWidgetItemFactory.cpp:381
+#: logViewWidgetItemFactory.cpp:396 logViewWidgetItemFactory.cpp:417
+#: logViewWidgetItemFactory.cpp:434 logViewWidgetItemFactory.cpp:457
+#: logViewWidgetItemFactory.cpp:485
+msgid "Date:"
+msgstr "Dyddiad:"
+
+#: logViewWidgetItemFactory.cpp:331 logViewWidgetItemFactory.cpp:350
+#: logViewWidgetItemFactory.cpp:398 logViewWidgetItemFactory.cpp:436
+msgid "Hostname:"
+msgstr "Enw Gwesteiwr:"
+
+#: logViewWidgetItemFactory.cpp:332 logViewWidgetItemFactory.cpp:351
+msgid "Process:"
+msgstr "Proses :"
+
+#: logViewWidgetItemFactory.cpp:333
+msgid "User:"
+msgstr "Defnyddiwr:"
+
+#: logViewWidgetItemFactory.cpp:334 logViewWidgetItemFactory.cpp:352
+#: logViewWidgetItemFactory.cpp:368 logViewWidgetItemFactory.cpp:382
+#: logViewWidgetItemFactory.cpp:397 logViewWidgetItemFactory.cpp:418
+#: logViewWidgetItemFactory.cpp:435 logViewWidgetItemFactory.cpp:458
+#: logViewWidgetItemFactory.cpp:486
+msgid "Level:"
+msgstr "Lefel :"
+
+#: logViewWidgetItemFactory.cpp:335 logViewWidgetItemFactory.cpp:353
+#: logViewWidgetItemFactory.cpp:487 logViewWidgetItemFactory.cpp:507
+#: logViewWidgetItemFactory.cpp:528
+msgid "Original file:"
+msgstr ""
+
+#: logViewWidgetItemFactory.cpp:369 logViewWidgetItemFactory.cpp:503
+#: logViewWidgetItemFactory.cpp:505
+msgid "Type:"
+msgstr "Math:"
+
+#: logViewWidgetItemFactory.cpp:399 logViewWidgetItemFactory.cpp:437
+msgid "Identification:"
+msgstr "Dynodiad :"
+
+#: logViewWidgetItemFactory.cpp:400 logViewWidgetItemFactory.cpp:438
+msgid "Username:"
+msgstr "Enw defnyddiwr:"
+
+#: logViewWidgetItemFactory.cpp:401 logViewWidgetItemFactory.cpp:439
+msgid "HTTP Response:"
+msgstr ""
+
+#: logViewWidgetItemFactory.cpp:402 logViewWidgetItemFactory.cpp:440
+msgid "Bytes Sent:"
+msgstr "Didau Wedi'u Hanfon :"
+
+#: logViewWidgetItemFactory.cpp:419
+msgid "Client:"
+msgstr "Dibynnydd:"
+
+#: logViewWidgetItemFactory.cpp:441
+msgid "Agent Identity:"
+msgstr ""
+
+#: logViewWidgetItemFactory.cpp:442
+msgid "HTTP Request:"
+msgstr ""
+
+#: logViewWidgetItemFactory.cpp:459
+msgid "Source File:"
+msgstr "Ffeil Tarddiad :"
+
+#: logViewWidgetItemFactory.cpp:460
+msgid "Function:"
+msgstr "Ffwythiant"
+
+#: logViewWidgetItemFactory.cpp:461
+msgid "Line:"
+msgstr "Llinell :"
+
+#: logViewWidgetItemFactory.cpp:524 logViewWidgetItemFactory.cpp:526
+msgid "Program:"
+msgstr "Rhaglen:"
+
 #: levelPrintPage.cpp:39
 msgid "Log Level Printing"
 msgstr ""
@@ -517,7 +602,7 @@ msgstr "&Ffenestr"
 msgid "Main Logs Toolbar"
 msgstr ""
 
-#: system/systemOptions.cpp:54
+#: system/systemOptions.cpp:49
 msgid ""
 "<qt>"
 "<p>These files will be analyzed to display <b>System logs</b>"
@@ -626,349 +711,349 @@ msgstr ""
 msgid "File not valid"
 msgstr ""
 
-#: mainWindow.cpp:157 mainWindow.cpp:350
+#: mainWindow.cpp:227 mainWindow.cpp:418
 msgid "Create a new tab"
 msgstr ""
 
-#: mainWindow.cpp:158 mainWindow.cpp:351
+#: mainWindow.cpp:228 mainWindow.cpp:419
 msgid "Creates a new tab which can display another log."
 msgstr ""
 
-#: mainWindow.cpp:163 mainWindow.cpp:357
+#: mainWindow.cpp:233 mainWindow.cpp:425
 msgid "Close the current tab"
 msgstr "Cau'r tab cyfredol"
 
-#: mainWindow.cpp:164 mainWindow.cpp:358
+#: mainWindow.cpp:234 mainWindow.cpp:426
 msgid "Closes the current tab."
 msgstr ""
 
-#: mainWindow.cpp:275
+#: mainWindow.cpp:343
 msgid "Open a file in KSystemLog"
 msgstr ""
 
-#: mainWindow.cpp:276
+#: mainWindow.cpp:344
 msgid "Opens a file in KSystemLog and displays its content in the current tab."
 msgstr ""
 
-#: mainWindow.cpp:279
+#: mainWindow.cpp:347
 msgid "&Print selection..."
 msgstr ""
 
-#: mainWindow.cpp:280
+#: mainWindow.cpp:348
 msgid "Print the selection"
 msgstr ""
 
-#: mainWindow.cpp:281
+#: mainWindow.cpp:349
 msgid ""
 "Prints the selection. Simply select the important lines and click on this menu "
 "entry to print the selection."
 msgstr ""
 
-#: mainWindow.cpp:287
+#: mainWindow.cpp:355
 msgid "Save the selection to a file"
 msgstr ""
 
-#: mainWindow.cpp:288
+#: mainWindow.cpp:356
 msgid ""
 "Saves the selection to a file. This action is useful if you want to create an "
 "attachment or a backup of a particular log."
 msgstr ""
 
-#: mainWindow.cpp:292
+#: mainWindow.cpp:360
 msgid "Quit KSystemLog"
 msgstr ""
 
-#: mainWindow.cpp:293
+#: mainWindow.cpp:361
 msgid "Quits KSystemLog."
 msgstr ""
 
-#: mainWindow.cpp:296
+#: mainWindow.cpp:364
 msgid "Copy the selection to the clipboard"
 msgstr ""
 
-#: mainWindow.cpp:297
+#: mainWindow.cpp:365
 msgid ""
 "Copies the selection to the clipboard. This action is useful if you want to "
 "paste the selection in a chat or an email."
 msgstr ""
 
-#: mainWindow.cpp:301
+#: mainWindow.cpp:369
 msgid "Ex&pand All"
 msgstr ""
 
-#: mainWindow.cpp:303
+#: mainWindow.cpp:371
 msgid "Expand all categories"
 msgstr ""
 
-#: mainWindow.cpp:304
+#: mainWindow.cpp:372
 msgid ""
 "<qt>This action opens all main categories. This is enabled only if an option "
 "has been selected in the <b>Group By</b> menu.</qt>"
 msgstr ""
 
-#: mainWindow.cpp:308
+#: mainWindow.cpp:376
 msgid "Col&lapse All"
 msgstr ""
 
-#: mainWindow.cpp:310
+#: mainWindow.cpp:378
 msgid "Collapse all categories"
 msgstr ""
 
-#: mainWindow.cpp:311
+#: mainWindow.cpp:379
 msgid ""
 "<qt>This action closes all main categories. This is enabled only if an option "
 "has been selected in the <b>Group By</b> menu.</qt>"
 msgstr ""
 
-#: mainWindow.cpp:315
+#: mainWindow.cpp:383
 msgid "&Email Selection..."
 msgstr ""
 
-#: mainWindow.cpp:318
+#: mainWindow.cpp:386
 msgid "Send the selection by mail"
 msgstr ""
 
-#: mainWindow.cpp:319
+#: mainWindow.cpp:387
 msgid ""
 "Sends the selection by mail. Simply select the important lines and click on "
 "this menu entry to send the selection to a friend or a mailing list."
 msgstr ""
 
-#: mainWindow.cpp:323
+#: mainWindow.cpp:391
 msgid "&Add Log Entry..."
 msgstr ""
 
-#: mainWindow.cpp:326
+#: mainWindow.cpp:394
 msgid "Add a log entry to the log system"
 msgstr ""
 
-#: mainWindow.cpp:327
+#: mainWindow.cpp:395
 msgid ""
 "This action will open a dialog which lets you send a message to the log system."
 msgstr ""
 
-#: mainWindow.cpp:330
+#: mainWindow.cpp:398
 msgid "Select all lines of the current log"
 msgstr ""
 
-#: mainWindow.cpp:331
+#: mainWindow.cpp:399
 msgid ""
 "Selects all lines of the current log. This action is useful if you want, for "
 "example, to save all the content of the current log in a file."
 msgstr ""
 
-#: mainWindow.cpp:340
+#: mainWindow.cpp:408
 msgid "Show &Filter Bar"
 msgstr ""
 
-#: mainWindow.cpp:347
+#: mainWindow.cpp:415
 msgid "&New Tab"
 msgstr "Tab &Newydd"
 
-#: mainWindow.cpp:354
+#: mainWindow.cpp:422
 msgid "&Close Tab"
 msgstr "&Cau Tab"
 
-#: mainWindow.cpp:361
+#: mainWindow.cpp:429
 msgid "&Duplicate Tab"
 msgstr "&Dyblygu Tab"
 
-#: mainWindow.cpp:364
+#: mainWindow.cpp:432
 msgid "Duplicate the current tab"
 msgstr ""
 
-#: mainWindow.cpp:365
+#: mainWindow.cpp:433
 msgid "Duplicates the current tab."
 msgstr ""
 
-#: mainWindow.cpp:368
+#: mainWindow.cpp:436
 msgid "Move Tab &Left"
 msgstr "Symud Tab i'r &Chwith"
 
-#: mainWindow.cpp:371
+#: mainWindow.cpp:439
 msgid "Move the current tab to the left"
 msgstr ""
 
-#: mainWindow.cpp:372
+#: mainWindow.cpp:440
 msgid "Moves the current tab to the left."
 msgstr ""
 
-#: mainWindow.cpp:375
+#: mainWindow.cpp:443
 msgid "Move Tab &Right"
 msgstr "Symud Tab i'r &Dde"
 
-#: mainWindow.cpp:378
+#: mainWindow.cpp:446
 msgid "Move the current tab to the right"
 msgstr ""
 
-#: mainWindow.cpp:379
+#: mainWindow.cpp:447
 msgid "Moves the current tab to the right."
 msgstr ""
 
-#: mainWindow.cpp:385
+#: mainWindow.cpp:453
 msgid "Reload the current log"
 msgstr ""
 
-#: mainWindow.cpp:386
+#: mainWindow.cpp:454
 msgid ""
 "Reloads the current log, if you want to be sure that the view is correctly "
 "updated."
 msgstr ""
 
-#: mainWindow.cpp:389
+#: mainWindow.cpp:457
 msgid "Resu&me Parsing"
 msgstr ""
 
-#: mainWindow.cpp:392
+#: mainWindow.cpp:460
 msgid "Resume the watching of the current log"
 msgstr ""
 
-#: mainWindow.cpp:393
+#: mainWindow.cpp:461
 msgid ""
 "Resumes the watching of the current log. This action is only available when the "
 "user has already paused the reading."
 msgstr ""
 
-#: mainWindow.cpp:397
+#: mainWindow.cpp:465
 msgid "S&top Parsing"
 msgstr ""
 
-#: mainWindow.cpp:400
+#: mainWindow.cpp:468
 msgid "Pause the watching of the current log"
 msgstr ""
 
-#: mainWindow.cpp:401
+#: mainWindow.cpp:469
 msgid ""
 "Pauses the watching of the current log. This action is particularly useful when "
 "the system is writing too many lines to log files, causing KSystemLog to reload "
 "too frequently."
 msgstr ""
 
-#: mainWindow.cpp:404
+#: mainWindow.cpp:472
 msgid "&Details"
 msgstr "&Manylion"
 
-#: mainWindow.cpp:407
+#: mainWindow.cpp:475
 msgid "Display details on the currently selected line"
 msgstr ""
 
-#: mainWindow.cpp:408
+#: mainWindow.cpp:476
 msgid ""
 "Displays a dialog box which contains details on the currently selected line. "
 "You are able to navigate through the logs from this dialog box with the <b>"
 "Previous</b> / <b>Next</b> buttons."
 msgstr ""
 
-#: mainWindow.cpp:411
+#: mainWindow.cpp:479
 msgid "&Enable Detailed Tooltips"
 msgstr ""
 
-#: mainWindow.cpp:412
+#: mainWindow.cpp:480
 msgid "Disable/Enable the tooltips on the current view"
 msgstr ""
 
-#: mainWindow.cpp:413
+#: mainWindow.cpp:481
 msgid ""
 "Disables/Enables the tooltips displayed when the cursor hovers a log line."
 msgstr ""
 
-#: mainWindow.cpp:416
+#: mainWindow.cpp:484
 msgid "&Display New Lines"
 msgstr ""
 
-#: mainWindow.cpp:417
+#: mainWindow.cpp:485
 msgid "Display or not new lines if the log changes"
 msgstr ""
 
-#: mainWindow.cpp:418
+#: mainWindow.cpp:486
 msgid ""
 "Displays or not the new lines if the log changes. This option is useful when "
 "you want to see an old log lines and that KSystemLog often refreshes the "
 "current view."
 msgstr ""
 
-#: mainWindow.cpp:443
+#: mainWindow.cpp:511
 msgid "S&ystem Log"
 msgstr ""
 
-#: mainWindow.cpp:444
+#: mainWindow.cpp:512
 msgid "Display the system log."
 msgstr ""
 
-#: mainWindow.cpp:445
+#: mainWindow.cpp:513
 msgid ""
 "Displays the system log in the current tab. This log is generally used by "
 "non-specialized processes (like \"sudo\" or \"fsck\" commands)"
 msgstr ""
 
-#: mainWindow.cpp:451
+#: mainWindow.cpp:519
 msgid "&Kernel Log"
 msgstr ""
 
-#: mainWindow.cpp:452
+#: mainWindow.cpp:520
 msgid "Display the kernel log."
 msgstr ""
 
-#: mainWindow.cpp:453
+#: mainWindow.cpp:521
 msgid ""
 "<qt>Displays the kernel log in the current tab. This log is only useful for "
 "users who want to know why the Kernel does not detect their hardware or what is "
 "the cause of the last <i>kernel panic/oops</i>.</qt>"
 msgstr ""
 
-#: mainWindow.cpp:459
+#: mainWindow.cpp:527
 msgid "&Boot Log"
 msgstr ""
 
-#: mainWindow.cpp:460
+#: mainWindow.cpp:528
 msgid "Display the boot log."
 msgstr ""
 
-#: mainWindow.cpp:461
+#: mainWindow.cpp:529
 msgid ""
 "<qt>Displays the boot log in the current tab. This log is useful if you want to "
 "verify if all startup services have been correctly started.</qt>"
 msgstr ""
 
-#: mainWindow.cpp:467
+#: mainWindow.cpp:535
 msgid "A&uthentication Log"
 msgstr ""
 
-#: mainWindow.cpp:468
+#: mainWindow.cpp:536
 msgid "Display the authentication log."
 msgstr ""
 
-#: mainWindow.cpp:469
+#: mainWindow.cpp:537
 msgid ""
 "<qt>Displays the authentication log in the current tab. This log displays all "
 "log in made by each user of the system, and can help you to know if someone "
 "tried to crack your system.</qt>"
 msgstr ""
 
-#: mainWindow.cpp:475
+#: mainWindow.cpp:543
 msgid "&Daemons Log"
 msgstr ""
 
-#: mainWindow.cpp:476
+#: mainWindow.cpp:544
 msgid "Display the daemons log."
 msgstr ""
 
-#: mainWindow.cpp:477
+#: mainWindow.cpp:545
 msgid ""
 "<qt>Displays the daemons log in the current tab. The daemons are all processes "
 "launched in the background of the system. See this log if you want to know what "
 "it occurs in the background of your system.</qt>"
 msgstr ""
 
-#: mainWindow.cpp:483
+#: mainWindow.cpp:551
 msgid "&Planned Tasks Log"
 msgstr ""
 
-#: mainWindow.cpp:484
+#: mainWindow.cpp:552
 msgid "Display the planned tasks log (or Cron log)."
 msgstr ""
 
-#: mainWindow.cpp:485
+#: mainWindow.cpp:553
 msgid ""
 "<qt>Displays the planned tasks log in the current tab. Cron process is a "
 "program in charged of launching planned tasks on your system, like security "
@@ -976,15 +1061,15 @@ msgid ""
 "last-launched processes.</qt>"
 msgstr ""
 
-#: mainWindow.cpp:491
+#: mainWindow.cpp:559
 msgid "&X.org Log"
 msgstr ""
 
-#: mainWindow.cpp:492
+#: mainWindow.cpp:560
 msgid "Display the X.org log."
 msgstr ""
 
-#: mainWindow.cpp:493
+#: mainWindow.cpp:561
 msgid ""
 "<qt>Displays the X.org log in the current tab. X.org is the service which "
 "displays on screen your desktop and manage your graphical hardware. See this "
@@ -992,15 +1077,15 @@ msgid ""
 "device is not recognized.</qt>"
 msgstr ""
 
-#: mainWindow.cpp:498
+#: mainWindow.cpp:566
 msgid "X &Session Log"
 msgstr ""
 
-#: mainWindow.cpp:499
+#: mainWindow.cpp:567
 msgid "Display the X Session log."
 msgstr ""
 
-#: mainWindow.cpp:500
+#: mainWindow.cpp:568
 msgid ""
 "<qt>Displays the X Session log in the current tab. X Session log is the place "
 "where graphical programs write their output. See this log if you want to know "
@@ -1008,44 +1093,44 @@ msgid ""
 "started.</qt>"
 msgstr ""
 
-#: mainWindow.cpp:507
+#: mainWindow.cpp:575
 msgid "&ACPI Log"
 msgstr ""
 
-#: mainWindow.cpp:508
+#: mainWindow.cpp:576
 msgid "Display the ACPI log."
 msgstr ""
 
-#: mainWindow.cpp:509
+#: mainWindow.cpp:577
 msgid ""
 "<qt>Displays the ACPI log in the current tab. ACPI is used to manage the "
 "hardware components of your computer, like notebook batteries, reset "
 "buttons...</qt>"
 msgstr ""
 
-#: mainWindow.cpp:515
+#: mainWindow.cpp:583
 msgid "&CUPS Log"
 msgstr ""
 
-#: mainWindow.cpp:516
+#: mainWindow.cpp:584
 msgid "Display the CUPS log."
 msgstr ""
 
-#: mainWindow.cpp:517
+#: mainWindow.cpp:585
 msgid ""
 "<qt>Displays the CUPS log in the current tab. CUPS is the program which manage "
 "printing on your computer.</qt>"
 msgstr ""
 
-#: mainWindow.cpp:523
+#: mainWindow.cpp:591
 msgid "&CUPS Web Log"
 msgstr ""
 
-#: mainWindow.cpp:524
+#: mainWindow.cpp:592
 msgid "Display the CUPS Web Server Access log."
 msgstr ""
 
-#: mainWindow.cpp:525
+#: mainWindow.cpp:593
 msgid ""
 "<qt>Displays the CUPS Web Server Access log in the current tab. CUPS is the "
 "program which manage printing on your computer. This log saves all requests "
@@ -1053,200 +1138,97 @@ msgid ""
 ").</qt>"
 msgstr ""
 
-#: mainWindow.cpp:532
+#: mainWindow.cpp:600
 msgid "&Apache log"
 msgstr ""
 
-#: mainWindow.cpp:533
+#: mainWindow.cpp:601
 msgid "Display the Apache log."
 msgstr ""
 
-#: mainWindow.cpp:534
+#: mainWindow.cpp:602
 msgid ""
 "<qt>Displays the Apache log in the current tab. Apache is the main used Web "
 "server in the world.</qt>"
 msgstr ""
 
-#: mainWindow.cpp:540
+#: mainWindow.cpp:608
 msgid "&Apache Web log"
 msgstr ""
 
-#: mainWindow.cpp:541
+#: mainWindow.cpp:609
 msgid "Display the Apache Access log."
 msgstr ""
 
-#: mainWindow.cpp:542
+#: mainWindow.cpp:610
 msgid ""
 "<qt>Displays the Apache Access log in the current tab. Apache is the main used "
 "Web server in the world. This log saves all requests performed by the Apache "
 "web server.</qt>"
 msgstr ""
 
-#: mainWindow.cpp:548
+#: mainWindow.cpp:616
 msgid "&Postfix Log"
 msgstr ""
 
-#: mainWindow.cpp:549
+#: mainWindow.cpp:617
 msgid "Display the Postfix log."
 msgstr ""
 
-#: mainWindow.cpp:550
+#: mainWindow.cpp:618
 msgid ""
 "<qt>Displays the Postfix log in the current tab. Postfix is the most known and "
 "used mail server in the Linux world.</qt>"
 msgstr ""
 
-#: mainWindow.cpp:556
+#: mainWindow.cpp:624
 msgid "&Samba Log"
 msgstr ""
 
-#: mainWindow.cpp:557
+#: mainWindow.cpp:625
 msgid "Display the Samba log."
 msgstr ""
 
-#: mainWindow.cpp:558
+#: mainWindow.cpp:626
 msgid ""
 "<qt>Displays the Samba log in the current tab. Samba is the file sharing server "
 "which interacts with Microsoft Windows network.</qt>"
 msgstr ""
 
-#: mainWindow.cpp:564
+#: mainWindow.cpp:632
 msgid "SS&H Log"
 msgstr ""
 
-#: mainWindow.cpp:565
+#: mainWindow.cpp:633
 msgid "Display the SSH log."
 msgstr ""
 
-#: mainWindow.cpp:566
+#: mainWindow.cpp:634
 msgid ""
 "<qt>Displays the SSH log in the current tab. SSH log lists security and SSH "
 "related information.</qt>"
 msgstr ""
 
-#: globals.cpp:102 mainWindow.cpp:735
+#: globals.cpp:116 mainWindow.cpp:800
 msgid "No Log"
 msgstr ""
 
-#: mainWindow.cpp:916
+#: mainWindow.cpp:980
 #, c-format
 msgid "Last updated: %1."
 msgstr ""
 
-#: mainWindow.cpp:1001
+#: mainWindow.cpp:1063
 msgid "Open Location"
 msgstr "Agor Lleoliad"
 
-#: mainWindow.cpp:1014
+#: mainWindow.cpp:1076
 msgid "Malformed URL. Unable to open this file."
 msgstr ""
 
-#: mainWindow.cpp:1015
+#: mainWindow.cpp:1077
 msgid "Unable to open this file."
 msgstr ""
-
-#: itemFactory.cpp:96
-msgid "Today"
-msgstr "Heddiw"
-
-#: itemFactory.cpp:101
-msgid "Yesterday"
-msgstr "Ddoe"
-
-#: itemFactory.cpp:113
-msgid "%1, %2h"
-msgstr ""
-
-#: itemFactory.cpp:301 itemFactory.cpp:304 itemFactory.cpp:308
-#: itemFactory.cpp:311 itemFactory.cpp:319
-msgid "<div align='center'><b>Group:</b> %1</div>"
-msgstr ""
-
-#: itemFactory.cpp:307
-msgid "%1, %2 hour"
-msgstr ""
-
-#: itemFactory.cpp:317
-msgid "<div align='center'><b>Group:</b> none</div>"
-msgstr ""
-
-#: itemFactory.cpp:332 itemFactory.cpp:351 itemFactory.cpp:369
-#: itemFactory.cpp:383 itemFactory.cpp:398 itemFactory.cpp:419
-#: itemFactory.cpp:435 itemFactory.cpp:458 itemFactory.cpp:486
-msgid "Date:"
-msgstr "Dyddiad:"
-
-#: itemFactory.cpp:333 itemFactory.cpp:352 itemFactory.cpp:400
-#: itemFactory.cpp:437
-msgid "Hostname:"
-msgstr "Enw Gwesteiwr:"
-
-#: itemFactory.cpp:334 itemFactory.cpp:353
-msgid "Process:"
-msgstr "Proses :"
-
-#: itemFactory.cpp:335
-msgid "User:"
-msgstr "Defnyddiwr:"
-
-#: itemFactory.cpp:336 itemFactory.cpp:354 itemFactory.cpp:370
-#: itemFactory.cpp:384 itemFactory.cpp:399 itemFactory.cpp:420
-#: itemFactory.cpp:436 itemFactory.cpp:459 itemFactory.cpp:487
-msgid "Level:"
-msgstr "Lefel :"
-
-#: itemFactory.cpp:337 itemFactory.cpp:355 itemFactory.cpp:488
-#: itemFactory.cpp:507 itemFactory.cpp:527
-msgid "Original file:"
-msgstr ""
-
-#: itemFactory.cpp:371 itemFactory.cpp:503 itemFactory.cpp:505
-msgid "Type:"
-msgstr "Math:"
-
-#: itemFactory.cpp:401 itemFactory.cpp:438
-msgid "Identification:"
-msgstr "Dynodiad :"
-
-#: itemFactory.cpp:402 itemFactory.cpp:439
-msgid "Username:"
-msgstr "Enw defnyddiwr:"
-
-#: itemFactory.cpp:403 itemFactory.cpp:440
-msgid "HTTP Response:"
-msgstr ""
-
-#: itemFactory.cpp:404 itemFactory.cpp:441
-msgid "Bytes Sent:"
-msgstr "Didau Wedi'u Hanfon :"
-
-#: itemFactory.cpp:421
-msgid "Client:"
-msgstr "Dibynnydd:"
-
-#: itemFactory.cpp:442
-msgid "Agent Identity:"
-msgstr ""
-
-#: itemFactory.cpp:443
-msgid "HTTP Request:"
-msgstr ""
-
-#: itemFactory.cpp:460
-msgid "Source File:"
-msgstr "Ffeil Tarddiad :"
-
-#: itemFactory.cpp:461
-msgid "Function:"
-msgstr "Ffwythiant"
-
-#: itemFactory.cpp:462
-msgid "Line:"
-msgstr "Llinell :"
-
-#: itemFactory.cpp:523 itemFactory.cpp:525
-msgid "Program:"
-msgstr "Rhaglen:"
 
 #: bootauth/bootAuthenticationOptions.cpp:52
 #, fuzzy
@@ -1294,157 +1276,157 @@ msgid ""
 "menu item. Generally, its name is <i>/var/log/auth.log</i></qt>"
 msgstr ""
 
-#: fileList.cpp:79
+#: fileList.cpp:84
 msgid "List of files used by this log type"
 msgstr ""
 
-#: fileList.cpp:80
+#: fileList.cpp:85
 msgid ""
 "<qt>Here is a list of every files that will be read by KSystemLog to display "
 "the current log lines.</qt>"
 msgstr ""
 
-#: fileList.cpp:181
+#: fileList.cpp:185
 msgid "'%1' is not valid."
 msgstr ""
 
-#: fileList.cpp:182 fileList.cpp:189 fileList.cpp:196
+#: fileList.cpp:186 fileList.cpp:193 fileList.cpp:200
 msgid "File selection failed"
 msgstr ""
 
-#: fileList.cpp:188
+#: fileList.cpp:192
 msgid "'%1' is not a local file."
 msgstr ""
 
-#: fileList.cpp:195
+#: fileList.cpp:199
 msgid "'%1' is a folder."
 msgstr ""
 
-#: globals.cpp:46
-msgid "debug"
-msgstr ""
-
-#: globals.cpp:49
-msgid "information"
-msgstr "gwybodaeth"
-
-#: globals.cpp:52
-msgid "notice"
-msgstr "nodyn"
-
-#: globals.cpp:55
-msgid "warning"
-msgstr "rhybudd"
-
-#: globals.cpp:58
-msgid "error"
-msgstr "gwall"
-
-#: globals.cpp:61
-msgid "critical"
-msgstr "critigol"
-
-#: globals.cpp:64
-msgid "alert"
-msgstr ""
-
-#: globals.cpp:67
-msgid "emergency"
-msgstr ""
-
-#: globals.cpp:105
+#: globals.cpp:119
 msgid "File Log"
 msgstr ""
 
-#: globals.cpp:108
+#: globals.cpp:122
 msgid "System Log"
 msgstr ""
 
-#: globals.cpp:111
+#: globals.cpp:125
 msgid "Kernel Log"
 msgstr ""
 
-#: globals.cpp:114
+#: globals.cpp:128
 msgid "X.org Log"
 msgstr ""
 
-#: globals.cpp:117 globals.cpp:150
+#: globals.cpp:131 globals.cpp:164
 msgid "Samba Log"
 msgstr ""
 
-#: globals.cpp:120
+#: globals.cpp:134
 msgid "Boot Log"
 msgstr ""
 
-#: globals.cpp:123
+#: globals.cpp:137
 msgid "Authentication Log"
 msgstr ""
 
-#: globals.cpp:126
+#: globals.cpp:140
 msgid "Cron Log"
 msgstr ""
 
-#: globals.cpp:129
+#: globals.cpp:143
 msgid "Daemon Log"
 msgstr ""
 
-#: globals.cpp:132
+#: globals.cpp:146
 msgid "ACPI Log"
 msgstr ""
 
-#: globals.cpp:135
+#: globals.cpp:149
 msgid "CUPS Log"
 msgstr ""
 
-#: globals.cpp:138
+#: globals.cpp:152
 msgid "CUPS Access Log"
 msgstr ""
 
-#: globals.cpp:141
+#: globals.cpp:155
 msgid "Apache Log"
 msgstr ""
 
-#: globals.cpp:144
+#: globals.cpp:158
 msgid "Apache Access Log"
 msgstr ""
 
-#: globals.cpp:147
+#: globals.cpp:161
 msgid "Postfix Log"
 msgstr ""
 
-#: globals.cpp:153
+#: globals.cpp:167
 msgid "SSH Log"
 msgstr ""
 
-#: globals.cpp:156
+#: globals.cpp:170
 msgid "X Session Log"
 msgstr ""
 
-#: view.cpp:83 view.cpp:85
+#: globals.cpp:180
+msgid "debug"
+msgstr ""
+
+#: globals.cpp:183
+msgid "information"
+msgstr "gwybodaeth"
+
+#: globals.cpp:186
+msgid "notice"
+msgstr "nodyn"
+
+#: globals.cpp:189
+msgid "warning"
+msgstr "rhybudd"
+
+#: globals.cpp:192
+msgid "error"
+msgstr "gwall"
+
+#: globals.cpp:195
+msgid "critical"
+msgstr "critigol"
+
+#: globals.cpp:198
+msgid "alert"
+msgstr ""
+
+#: globals.cpp:201
+msgid "emergency"
+msgstr ""
+
+#: view.cpp:113 view.cpp:115
 msgid "Clear the filter"
 msgstr ""
 
-#: view.cpp:86
+#: view.cpp:116
 msgid "This button clears the filter in one click."
 msgstr ""
 
-#: view.cpp:90
+#: view.cpp:119
 msgid "Filter:"
 msgstr "Hidl:"
 
-#: view.cpp:103
+#: view.cpp:132
 msgid "Column:"
 msgstr "Colofn:"
 
-#: view.cpp:273 view.cpp:394
+#: view.cpp:279 view.cpp:399
 msgid "All"
 msgstr "Popeth"
 
-#: view.cpp:391
+#: view.cpp:396
 msgid "Choose the filtered column here"
 msgstr ""
 
-#: view.cpp:392
+#: view.cpp:397
 msgid ""
 "<qt>Allows you to apply the item filter only on the specified column here. \"<i>"
 "All</i>\" column means no specific filter.</qt>"
@@ -1457,21 +1439,27 @@ msgid ""
 ". This list also determine the order in which the files are read.</p></qt>"
 msgstr ""
 
-#: defaultReader.cpp:93
+#: defaultReader.cpp:97
 msgid "Opening file '%1'..."
 msgstr "Agor ffeil... '%1'"
 
-#: defaultReader.cpp:121
+#: defaultReader.cpp:125
 msgid "No log line in '%1'."
 msgstr ""
 
-#: defaultReader.cpp:173
+#: defaultReader.cpp:177
 msgid "Log file '%1' loaded successfully."
 msgstr ""
 
-#: defaultReader.cpp:263
+#: defaultReader.cpp:267
 msgid "Log file '%1' has changed."
 msgstr ""
+
+#~ msgid "Today"
+#~ msgstr "Heddiw"
+
+#~ msgid "Yesterday"
+#~ msgstr "Ddoe"
 
 #~ msgid ""
 #~ "_: Size format\n"
