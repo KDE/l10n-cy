@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-06 05:39+0200\n"
+"POT-Creation-Date: 2007-08-09 05:29+0200\n"
 "PO-Revision-Date: 2004-02-25 13:46+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -338,13 +338,14 @@ msgstr ""
 "Rhowch nifer y diwrnodau cyn pob penblwydd i ddangos atgof. Mae hyn yn "
 "ychwanegol i'r larwm a ddangosir ar y penblwydd."
 
-#: birthdaydlg.cpp:188 editdlg.cpp:138
+#: birthdaydlg.cpp:188 editdlg.cpp:137
 msgid "Special Actions..."
 msgstr ""
 
-#: birthdaydlg.cpp:204 editdlg.cpp:408
-msgid "Simple Repetition"
-msgstr ""
+#: birthdaydlg.cpp:204 recurrenceedit.cpp:349
+#, fuzzy
+msgid "Sub-Repetition"
+msgstr "Ffurfwedd Larwm"
 
 #: birthdaydlg.cpp:207
 #, fuzzy
@@ -355,7 +356,7 @@ msgstr "Cyfnod rhwng ail-ddigwyddiadau'r larwm"
 msgid "Error reading address book"
 msgstr "Gwall tra'n darllen y llyfr cyfeiriadau"
 
-#: birthdaymodel.cpp:113 eventlistmodel.cpp:289
+#: birthdaymodel.cpp:113 eventlistmodel.cpp:315
 msgid "Name"
 msgstr "Enw"
 
@@ -453,108 +454,108 @@ msgstr "Methu gohirio tu hwnt i atgof nesaf y larwm (%1 yn gyfredol)"
 msgid "Cannot defer reminder past the main alarm time (%1)"
 msgstr "Methu gohirio'r atgof tu hwnt i brif amser y larwm (%1 yn gyfredol)"
 
-#: editdlg.cpp:106
+#: editdlg.cpp:105
 msgid "Choose Text or Image File to Display"
 msgstr "Dewiswch Ffeil Destun i'w Dangos"
 
-#: editdlg.cpp:123
+#: editdlg.cpp:122
 #, fuzzy
 msgid "Choose Log File"
 msgstr "Dewiswch Ffeil Sain"
 
-#: editdlg.cpp:137
+#: editdlg.cpp:136
 msgid "Confirm acknowledgment"
 msgstr "Cadarnhau &cydnabyddiaeth"
 
 #. i18n: tag label
 #. i18n: file kalarmconfig.kcfg line 270
-#: editdlg.cpp:139 rc.cpp:235
+#: editdlg.cpp:138 rc.cpp:235
 msgid "Show in KOrganizer"
 msgstr ""
 
-#: editdlg.cpp:140
+#: editdlg.cpp:139
 msgid "Enter a script"
 msgstr ""
 
-#: editdlg.cpp:141
+#: editdlg.cpp:140
 msgid "Enter a scri&pt"
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kalarmconfig.kcfg line 312
-#: editdlg.cpp:142 rc.cpp:286
+#: editdlg.cpp:141 rc.cpp:286
 msgid "Execute in terminal window"
 msgstr ""
 
-#: editdlg.cpp:143
+#: editdlg.cpp:142
 msgid "Execute in terminal &window"
 msgstr ""
 
-#: editdlg.cpp:144
+#: editdlg.cpp:143
 msgid "Exec&ute in terminal window"
 msgstr ""
 
-#: editdlg.cpp:145
+#: editdlg.cpp:144
 msgid "Lo&g to file"
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kalarmconfig.kcfg line 321
-#: editdlg.cpp:146 rc.cpp:295
+#: editdlg.cpp:145 rc.cpp:295
 msgid "Copy email to self"
 msgstr "Copïo ebost atoch chi eich hun"
 
-#: editdlg.cpp:147
+#: editdlg.cpp:146
 msgid "Copy &email to self"
 msgstr "Copïo ebost atoch chi eich hun"
 
-#: editdlg.cpp:148
+#: editdlg.cpp:147
 msgid "Copy email to &self"
 msgstr "Copïo'r ebost ataf i fy &hun"
 
-#: editdlg.cpp:149
+#: editdlg.cpp:148
 msgctxt "'From' email address"
 msgid "From:"
 msgstr "Oddiwrth:"
 
-#: editdlg.cpp:150
+#: editdlg.cpp:149
 msgctxt "'From' email address"
 msgid "&From:"
 msgstr "&Oddiwrth:"
 
-#: editdlg.cpp:151 messagewin.cpp:494
+#: editdlg.cpp:150 messagewin.cpp:494
 msgctxt "Email addressee"
 msgid "To:"
 msgstr "I:"
 
-#: editdlg.cpp:152 messagewin.cpp:501
+#: editdlg.cpp:151 messagewin.cpp:501
 msgctxt "Email subject"
 msgid "Subject:"
 msgstr "Pwnc:"
 
-#: editdlg.cpp:153
+#: editdlg.cpp:152
 msgctxt "Email subject"
 msgid "Sub&ject:"
 msgstr "P&wnc:"
 
-#: editdlg.cpp:188
+#: editdlg.cpp:187
 msgid "Load Template..."
 msgstr "Llwytho Patrymlun ..."
 
-#: editdlg.cpp:216
+#: editdlg.cpp:215
 msgid "Template name:"
 msgstr ""
 
-#: editdlg.cpp:221
+#: editdlg.cpp:220
 #, fuzzy
 msgid "Enter the name of the alarm template"
 msgstr "Rhowch destun y neges larwm. Gall fod yn aml-linell."
 
-#: editdlg.cpp:229
+#: editdlg.cpp:228
 msgid "&Alarm"
 msgstr "&Larwm"
 
-#: editdlg.cpp:240
+#: editdlg.cpp:239
 msgid "&Recurrence"
 msgstr "&Ail-ddigwyddiad"
 
@@ -614,7 +615,7 @@ msgstr "&Newid..."
 msgid "Change the alarm's deferred time, or cancel the deferral"
 msgstr "Newid amser gohiriedig y larwm, neu ddiddymu'r gohiriad"
 
-#: editdlg.cpp:324 editdlg.cpp:386 eventlistmodel.cpp:277
+#: editdlg.cpp:324 editdlg.cpp:386 eventlistmodel.cpp:303
 msgid "Time"
 msgstr "Amser"
 
@@ -646,7 +647,7 @@ msgstr "Rhowch yr amser olaf i ailadrodd y larwm."
 msgid "An&y time"
 msgstr "&Unrhyw amser"
 
-#: editdlg.cpp:360 recurrenceedit.cpp:265
+#: editdlg.cpp:360 recurrenceedit.cpp:266
 msgid "Any time"
 msgstr "Unrhyw amser"
 
@@ -662,11 +663,11 @@ msgid ""
 "from when the alarm is created."
 msgstr "Ail-drefnlennu'r larwm wedi'r cyfnod amser wedi nawr."
 
-#: editdlg.cpp:399
+#: editdlg.cpp:395
 msgid "Recurrence:"
 msgstr "Ail-ddigwyddiad:"
 
-#: editdlg.cpp:402
+#: editdlg.cpp:398
 #, fuzzy
 msgid ""
 "How often the alarm recurs.\n"
@@ -676,96 +677,92 @@ msgstr ""
 "Pa mor aml yr ail-ddigwydda'r larwm.\n"
 " Ffurfweddir yr ail-ddigwydd yn y tab Ail-ddigwydd."
 
-#: editdlg.cpp:412
-msgid "Set up a simple, or additional, alarm repetition"
-msgstr ""
-
-#: editdlg.cpp:416
+#: editdlg.cpp:403
 msgid ""
 "Enter how long in advance of the main alarm to display a reminder alarm."
 msgstr "Rhowch faint o amser cyn y prif larwm i ddangos larwm atgof."
 
-#: editdlg.cpp:417
+#: editdlg.cpp:404
 msgid "Rem&inder:"
 msgstr "&Atgof:"
 
-#: editdlg.cpp:418
+#: editdlg.cpp:405
 msgid ""
 "Check to additionally display a reminder in advance of the main alarm time"
 "(s)."
 msgstr "Brithwch i ddangos atgof ychwanegol cyn y prif amser(au) larwm."
 
-#: editdlg.cpp:442
+#: editdlg.cpp:429
 msgid "Check to copy the alarm into KOrganizer's calendar"
 msgstr ""
 
-#: editdlg.cpp:446
+#: editdlg.cpp:433
 msgid "Schedule the alarm at the specified time."
 msgstr "Trefnlennu'r larwm am yr amser a benodir."
 
-#: editdlg.cpp:481
+#: editdlg.cpp:468
 msgid "Enter the text of the alarm message. It may be multi-line."
 msgstr "Rhowch destun y neges larwm. Gall fod yn aml-linell."
 
-#: editdlg.cpp:490
+#: editdlg.cpp:477
 msgid "Enter the name or URL of a text or image file to display."
 msgstr "Rhowch enw ffeil destun neu ddelwedd, neu URL iddi, i'w dangos."
 
-#: editdlg.cpp:496 editdlg.cpp:600 sounddlg.cpp:97
+#: editdlg.cpp:483 editdlg.cpp:587 sounddlg.cpp:97
 msgid "Choose a file"
 msgstr "Dewiswch ffeil"
 
-#: editdlg.cpp:497
+#: editdlg.cpp:484
 msgid "Select a text or image file to display."
 msgstr "Dewiswch ffeil destun i'w dangos."
 
-#: editdlg.cpp:556
+#: editdlg.cpp:543
 msgid "Check to enter the contents of a script instead of a shell command line"
 msgstr ""
 
-#: editdlg.cpp:560
+#: editdlg.cpp:547
 msgid "Enter a shell command to execute."
 msgstr "Rhowch orchymyn plisgyn i'w weithredu."
 
-#: editdlg.cpp:564
+#: editdlg.cpp:551
 #, fuzzy
 msgid "Enter the contents of a script to execute"
 msgstr "Rhowch orchymyn plisgyn i'w weithredu."
 
-#: editdlg.cpp:569
+#: editdlg.cpp:556
 #, fuzzy
 msgid "Command Output"
 msgstr "Gorchy&myn"
 
-#: editdlg.cpp:579
+#: editdlg.cpp:566
 msgid "Check to execute the command in a terminal window"
 msgstr ""
 
-#: editdlg.cpp:593
+#: editdlg.cpp:580
 #, fuzzy
 msgid "Enter the name or path of the log file."
 msgstr "Rhowch enw ffeil destun neu ddelwedd, neu URL iddi, i'w dangos."
 
-#: editdlg.cpp:601
+#: editdlg.cpp:588
 #, fuzzy
 msgid "Select a log file."
 msgstr "Dewiswch ffeil destun i'w dangos."
 
-#: editdlg.cpp:606
+#: editdlg.cpp:593
 msgid ""
 "Check to log the command output to a local file. The output will be appended "
 "to any existing contents of the file."
 msgstr ""
 
-#: editdlg.cpp:612
+#: editdlg.cpp:599
 msgid "Discard"
 msgstr ""
 
-#: editdlg.cpp:614
+#: editdlg.cpp:601
 msgid "Check to discard command output."
 msgstr ""
 
-#: editdlg.cpp:650
+#: editdlg.cpp:637
 #, fuzzy
 msgid ""
 "Your email identity, used to identify you as the sender when sending email "
@@ -774,7 +771,7 @@ msgstr ""
 "Eich cyfeiriad ebost, a ddefnyddir i'ch dynodi fel yr anfonwr wrth anfon "
 "larymau ebost."
 
-#: editdlg.cpp:661
+#: editdlg.cpp:648
 msgid ""
 "Enter the addresses of the email recipients. Separate multiple addresses by "
 "commas or semicolons."
@@ -782,121 +779,121 @@ msgstr ""
 "Rhowch gyfeiriadau y derbynwyr ebost. Gwahanwch gyfeiriadau gwahanol âg "
 "atalnodau neu wahannodau."
 
-#: editdlg.cpp:669
+#: editdlg.cpp:656
 msgid "Open address book"
 msgstr "Agor llyfr cyfeiriadau"
 
-#: editdlg.cpp:670
+#: editdlg.cpp:657
 msgid "Select email addresses from your address book."
 msgstr "Dewiswch gyfeiriadau ebost o'ch llyfr cyfeiriadau."
 
-#: editdlg.cpp:681
+#: editdlg.cpp:668
 msgid "Enter the email subject."
 msgstr "Rhowch bwnc yr ebost."
 
-#: editdlg.cpp:686
+#: editdlg.cpp:673
 msgid "Enter the email message."
 msgstr "Rhowch neges yr ebost."
 
-#: editdlg.cpp:693
+#: editdlg.cpp:680
 msgid "Attachment&s:"
 msgstr "&Atodiadau:"
 
-#: editdlg.cpp:706
+#: editdlg.cpp:693
 msgid "Files to send as attachments to the email."
 msgstr "Ffeiliau i'w hanfon yn atodiadau at yr ebost."
 
-#: editdlg.cpp:710 resourceselector.cpp:96
+#: editdlg.cpp:697 resourceselector.cpp:97
 msgid "Add..."
 msgstr "Ychwanegu..."
 
-#: editdlg.cpp:712
+#: editdlg.cpp:699
 msgid "Add an attachment to the email."
 msgstr "Ychwanegu atodiad at yr ebost."
 
-#: editdlg.cpp:715
+#: editdlg.cpp:702
 msgid "Remo&ve"
 msgstr "&Gwaredu"
 
-#: editdlg.cpp:717
+#: editdlg.cpp:704
 msgid "Remove the highlighted attachment from the email."
 msgstr "Gwaredu'r atodiad amlygedig o'r ebost."
 
-#: editdlg.cpp:723
+#: editdlg.cpp:710
 msgid "If checked, the email will be blind copied to you."
 msgstr "Os yn frith, copïir yr ebost yn ddall atoch."
 
-#: editdlg.cpp:1054 fontcolour.cpp:89
+#: editdlg.cpp:1039 fontcolour.cpp:89
 msgid "&Background color:"
 msgstr "Lliw &cefndir:"
 
-#: editdlg.cpp:1059
+#: editdlg.cpp:1044
 msgid "Message color"
 msgstr "Lliw neges"
 
-#: editdlg.cpp:1062
+#: editdlg.cpp:1047
 msgid "Choose the background color for the alarm message."
 msgstr "Dewiswch liw cefndir i'r neges larwm."
 
-#: editdlg.cpp:1072
+#: editdlg.cpp:1057
 msgid "Check to be prompted for confirmation when you acknowledge the alarm."
 msgstr ""
 "Brithwch os ydych am eich annog am wiriad pan rydych yn cydnabod y larwm."
 
-#: editdlg.cpp:1458
+#: editdlg.cpp:1436
 msgid "You must enter a name for the alarm template"
 msgstr ""
 
-#: editdlg.cpp:1462
+#: editdlg.cpp:1440
 msgid "Template name is already in use"
 msgstr ""
 
-#: editdlg.cpp:1506
+#: editdlg.cpp:1484
 msgid "Recurrence has already expired"
 msgstr "Mae'r ail-ddigwyddiad eisioes wedi darfod"
 
-#: editdlg.cpp:1511
+#: editdlg.cpp:1489
 msgid "The alarm will never occur during working hours"
 msgstr ""
 
-#: editdlg.cpp:1542
+#: editdlg.cpp:1518
 #, fuzzy, qt-format
 msgid ""
 "Reminder period must be less than the recurrence interval, unless '%1' is "
 "checked."
 msgstr "Rhaid i'r adeg atgof fod yn fyrach na'r cyfnod ail-ddigwydd"
 
-#: editdlg.cpp:1565
+#: editdlg.cpp:1532
 #, fuzzy
 msgid ""
-"Simple alarm repetition duration must be less than the recurrence interval "
-"minus any reminder period"
+"The duration of a repetition within the recurrence must be less than the "
+"recurrence interval minus any reminder period"
 msgstr "Rhaid i'r adeg atgof fod yn fyrach na'r cyfnod ail-ddigwydd"
 
-#: editdlg.cpp:1574
+#: editdlg.cpp:1539
 msgid ""
-"Simple alarm repetition period must be in units of days or weeks for a date-"
-"only alarm"
+"For a repetition within the recurrence, its period must be in units of days "
+"or weeks for a date-only alarm"
 msgstr ""
 
-#: editdlg.cpp:1603
+#: editdlg.cpp:1567
 #, fuzzy
 msgid "You must select a resource to save the alarm in"
 msgstr "Rhowch y dyddiad i drefnlennu'r larwm."
 
-#: editdlg.cpp:1623
+#: editdlg.cpp:1587
 msgid "Do you really want to send the email now to the specified recipient(s)?"
 msgstr "A ydych wir am anfon yr ebost nawr at y derbynw(y)r penodedig?"
 
-#: editdlg.cpp:1624
+#: editdlg.cpp:1588
 msgid "Confirm Email"
 msgstr "Cadarnhau Ebost"
 
-#: editdlg.cpp:1624
+#: editdlg.cpp:1588
 msgid "&Send"
 msgstr "&Anfon"
 
-#: editdlg.cpp:1635
+#: editdlg.cpp:1599
 #, qt-format
 msgid ""
 "Command executed:\n"
@@ -905,7 +902,7 @@ msgstr ""
 "Gweithredwyd y gorchymyn:\n"
 " %1"
 
-#: editdlg.cpp:1642
+#: editdlg.cpp:1606
 #, qt-format
 msgid ""
 "\n"
@@ -914,7 +911,7 @@ msgstr ""
 "\n"
 "Bcc: %1"
 
-#: editdlg.cpp:1643
+#: editdlg.cpp:1607
 #, qt-format
 msgid ""
 "Email sent to:\n"
@@ -923,16 +920,16 @@ msgstr ""
 "Anfonwyd ebost at:\n"
 " %1%2"
 
-#: editdlg.cpp:1701 messagewin.cpp:1495
+#: editdlg.cpp:1666 messagewin.cpp:1495
 msgid "Defer Alarm"
 msgstr "Gohirio'r Larwm"
 
-#: editdlg.cpp:1864
+#: editdlg.cpp:1822
 msgid ""
 "Log file must be the name or path of a local file, with write permission."
 msgstr ""
 
-#: editdlg.cpp:1890
+#: editdlg.cpp:1848
 #, qt-format
 msgid ""
 "Invalid email address:\n"
@@ -941,11 +938,11 @@ msgstr ""
 "Cyfeiriad ebost annilys:\n"
 " %1"
 
-#: editdlg.cpp:1897
+#: editdlg.cpp:1855
 msgid "No email address specified"
 msgstr "Ni benodwyd cyfeiriad ebost"
 
-#: editdlg.cpp:1914
+#: editdlg.cpp:1872
 #, qt-format
 msgid ""
 "Invalid email attachment:\n"
@@ -954,32 +951,32 @@ msgstr ""
 "Atodiad ebost annilys:\n"
 " %1"
 
-#: editdlg.cpp:1942
+#: editdlg.cpp:1900
 msgid "Display the alarm message now"
 msgstr "Dangos y neges larwm nawr"
 
-#: editdlg.cpp:1958
+#: editdlg.cpp:1916
 msgid "Display the file now"
 msgstr "Dangos y ffeil destun nawr"
 
-#: editdlg.cpp:1970
+#: editdlg.cpp:1928
 msgid "Execute the specified command now"
 msgstr "Gweithredu'r gorchymyn penodedig nawr"
 
-#: editdlg.cpp:1981
+#: editdlg.cpp:1939
 msgid "Send the email to the specified addressees now"
 msgstr "Anfon yr ebost at y cyfeiriadau penodedig nawr"
 
-#: editdlg.cpp:2073
+#: editdlg.cpp:2031
 msgid "Choose File to Attach"
 msgstr "Dewiswch Ffeil i'w Atodi"
 
-#: editdlg.cpp:2180
+#: editdlg.cpp:2138
 #, fuzzy
 msgid "Please select a file to display"
 msgstr "Dewiswch ffeil destun i'w dangos."
 
-#: editdlg.cpp:2182
+#: editdlg.cpp:2140
 #, qt-format
 msgid ""
 "%1\n"
@@ -988,7 +985,7 @@ msgstr ""
 "%1\n"
 " heb ei chanfod"
 
-#: editdlg.cpp:2183
+#: editdlg.cpp:2141
 #, qt-format
 msgid ""
 "%1\n"
@@ -997,7 +994,7 @@ msgstr ""
 "Mae %1\n"
 " yn gyfeiriadur"
 
-#: editdlg.cpp:2184
+#: editdlg.cpp:2142
 #, qt-format
 msgid ""
 "%1\n"
@@ -1006,7 +1003,7 @@ msgstr ""
 "Nid yw %1\n"
 " yn ddarllenadwy"
 
-#: editdlg.cpp:2185
+#: editdlg.cpp:2143
 #, qt-format
 msgid ""
 "%1\n"
@@ -1015,61 +1012,61 @@ msgstr ""
 "Nid yw %1\n"
 " i weld yn ffeil destun"
 
-#: eventlistmodel.cpp:279
+#: eventlistmodel.cpp:305
 msgid "Time To"
 msgstr "Amser I"
 
-#: eventlistmodel.cpp:281 sounddlg.cpp:53
+#: eventlistmodel.cpp:307 sounddlg.cpp:53
 msgid "Repeat"
 msgstr "Ailadrodd"
 
-#: eventlistmodel.cpp:287
+#: eventlistmodel.cpp:313
 msgid "Message, File or Command"
 msgstr "Neges, Ffeil, neu Orchymyn"
 
-#: eventlistmodel.cpp:520 eventlistmodel.cpp:557
+#: eventlistmodel.cpp:579 eventlistmodel.cpp:616
 msgid "Never"
 msgstr ""
 
-#: eventlistmodel.cpp:563
+#: eventlistmodel.cpp:622
 #, no-c-format, qt-format
 msgctxt "n days"
 msgid " %1d "
 msgstr " %1d "
 
-#: eventlistmodel.cpp:572
+#: eventlistmodel.cpp:631
 #, qt-format
 msgctxt "hours:minutes"
 msgid " %1:%2 "
 msgstr " %1:%2 "
 
-#: eventlistmodel.cpp:575
+#: eventlistmodel.cpp:634
 #, qt-format
 msgctxt "days hours:minutes"
 msgid " %1d %2:%3 "
 msgstr " %1d %2:%3 "
 
-#: eventlistmodel.cpp:651
+#: eventlistmodel.cpp:710
 msgid "Next scheduled date and time of the alarm"
 msgstr "Dyddiad trefnlenedig nesaf ac amser y larwm"
 
-#: eventlistmodel.cpp:653
+#: eventlistmodel.cpp:712
 msgid "How long until the next scheduled trigger of the alarm"
 msgstr "Faint mor hir tan taniad trefnlenedig nesaf y larwm"
 
-#: eventlistmodel.cpp:655
+#: eventlistmodel.cpp:714
 msgid "How often the alarm recurs"
 msgstr "Pa mor aml yr ailadrodda'r larwm"
 
-#: eventlistmodel.cpp:657
+#: eventlistmodel.cpp:716
 msgid "Background color of alarm message"
 msgstr "Lliw cefndir y neges larwm"
 
-#: eventlistmodel.cpp:659
+#: eventlistmodel.cpp:718
 msgid "Alarm type (message, file, command or email)"
 msgstr ""
 
-#: eventlistmodel.cpp:661
+#: eventlistmodel.cpp:720
 #, fuzzy
 msgid ""
 "Alarm message text, URL of text file to display, command to execute, or "
@@ -1078,11 +1075,11 @@ msgstr ""
 "Testun y neges larwm, URL y ffeil destun i'w dangos, gorchymyn i weithredu, "
 "neu linell bwnc ebost. Nodir math y larwm gan yr eicon ar y chwith."
 
-#: eventlistmodel.cpp:663
+#: eventlistmodel.cpp:722
 msgid "Name of the alarm template"
 msgstr ""
 
-#: eventlistmodel.cpp:665
+#: eventlistmodel.cpp:724
 msgid "List of scheduled alarms"
 msgstr "Rhestr larymau trefnlenedig"
 
@@ -1858,7 +1855,7 @@ msgstr ""
 msgid "&Copy..."
 msgstr "&Copïo..."
 
-#: mainwindow.cpp:408 messagewin.cpp:571 resourceselector.cpp:288
+#: mainwindow.cpp:408 messagewin.cpp:571 resourceselector.cpp:295
 #: templatedlg.cpp:92
 msgid "&Edit..."
 msgstr "&Golygu..."
@@ -2410,7 +2407,7 @@ msgid ""
 "resource."
 msgstr ""
 
-#: prefdlg.cpp:725 resourceselector.cpp:75
+#: prefdlg.cpp:725 resourceselector.cpp:76
 #, fuzzy
 msgid "Archived Alarms"
 msgstr "Gweithredoli %1"
@@ -3594,7 +3591,7 @@ msgstr "Rhagosodiad y reol ailddigwydd yn yr ymgom olygu larymau."
 
 #. i18n: tag label
 #. i18n: file kalarmconfig.kcfg line 329
-#: rc.cpp:307 recurrenceedit.cpp:67
+#: rc.cpp:307 recurrenceedit.cpp:68
 msgid "No recurrence"
 msgstr "Dim Ailddigwydd"
 
@@ -3747,67 +3744,67 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kyfieithu@dotmon.com"
 
-#: recurrenceedit.cpp:68
+#: recurrenceedit.cpp:69
 msgid "No Recurrence"
 msgstr "Dim Ailddigwydd"
 
-#: recurrenceedit.cpp:69
+#: recurrenceedit.cpp:70
 msgid "At Login"
 msgstr "Ar Fewngofnodi"
 
-#: recurrenceedit.cpp:70
+#: recurrenceedit.cpp:71
 msgid "At &login"
 msgstr "Ar &fewngofnodi"
 
-#: recurrenceedit.cpp:71
+#: recurrenceedit.cpp:72
 msgid "Hourly/Minutely"
 msgstr "Awrol/Munudol"
 
-#: recurrenceedit.cpp:72
+#: recurrenceedit.cpp:73
 msgid "Ho&urly/Minutely"
 msgstr "A&wrol/Munudol"
 
-#: recurrenceedit.cpp:73
+#: recurrenceedit.cpp:74
 msgid "Daily"
 msgstr "Dyddiol"
 
-#: recurrenceedit.cpp:74
+#: recurrenceedit.cpp:75
 msgid "&Daily"
 msgstr "&Dyddiol"
 
-#: recurrenceedit.cpp:75
+#: recurrenceedit.cpp:76
 msgid "Weekly"
 msgstr "Wythnosol"
 
-#: recurrenceedit.cpp:76
+#: recurrenceedit.cpp:77
 msgid "&Weekly"
 msgstr "&Wythnosol"
 
-#: recurrenceedit.cpp:77
+#: recurrenceedit.cpp:78
 msgid "Monthly"
 msgstr "Misol"
 
-#: recurrenceedit.cpp:78
+#: recurrenceedit.cpp:79
 msgid "&Monthly"
 msgstr "&Misol"
 
-#: recurrenceedit.cpp:79
+#: recurrenceedit.cpp:80
 msgid "Yearly"
 msgstr "Blynyddol"
 
-#: recurrenceedit.cpp:80
+#: recurrenceedit.cpp:81
 msgid "&Yearly"
 msgstr "&Blynyddol"
 
-#: recurrenceedit.cpp:106
+#: recurrenceedit.cpp:107
 msgid "Recurrence Rule"
 msgstr "Rheol Ailddigwydd"
 
-#: recurrenceedit.cpp:122
+#: recurrenceedit.cpp:123
 msgid "Do not repeat the alarm"
 msgstr "Peidio ac ailadrodd y larwm"
 
-#: recurrenceedit.cpp:129
+#: recurrenceedit.cpp:130
 msgid ""
 "Trigger the alarm at the specified date/time and at every login until then.\n"
 "Note that it will also be triggered any time the alarm daemon is restarted."
@@ -3816,76 +3813,76 @@ msgstr ""
 "hynny.\n"
 " Noder y'i achosir ar unrhyw adeg y caiff yr ellyll larymau ei ailgychwyn."
 
-#: recurrenceedit.cpp:137
+#: recurrenceedit.cpp:138
 msgid "Repeat the alarm at hourly/minutely intervals"
 msgstr "Ailadrodd y larwm ar gyfnodau awrol/munudol"
 
-#: recurrenceedit.cpp:144
+#: recurrenceedit.cpp:145
 msgid "Repeat the alarm at daily intervals"
 msgstr "Ailadrodd y larwm yn ddyddiol"
 
-#: recurrenceedit.cpp:151
+#: recurrenceedit.cpp:152
 msgid "Repeat the alarm at weekly intervals"
 msgstr "Ailadrodd y larwm yn wythnosol"
 
-#: recurrenceedit.cpp:158
+#: recurrenceedit.cpp:159
 msgid "Repeat the alarm at monthly intervals"
 msgstr "Ailadrodd y larwm yn fisol"
 
-#: recurrenceedit.cpp:165
+#: recurrenceedit.cpp:166
 msgid "Repeat the alarm at annual intervals"
 msgstr "Ailadrodd y larwm yn flynyddol"
 
-#: recurrenceedit.cpp:206
+#: recurrenceedit.cpp:207
 msgid "Recurrence End"
 msgstr "Diwedd Ailddigwydd"
 
-#: recurrenceedit.cpp:214
+#: recurrenceedit.cpp:215
 msgid "No &end"
 msgstr "Dim &diwedd"
 
-#: recurrenceedit.cpp:217
+#: recurrenceedit.cpp:218
 msgid "Repeat the alarm indefinitely"
 msgstr "Ailadrodd y larwm am byth"
 
-#: recurrenceedit.cpp:225
+#: recurrenceedit.cpp:226
 msgid "End a&fter:"
 msgstr "Gor&ffen wedi:"
 
-#: recurrenceedit.cpp:227
+#: recurrenceedit.cpp:228
 msgid "Repeat the alarm for the number of times specified"
 msgstr "Ailadrodd y larwm am y nifer penodedig o achosion"
 
-#: recurrenceedit.cpp:235
+#: recurrenceedit.cpp:236
 msgid "Enter the total number of times to trigger the alarm"
 msgstr "Rhowch gyfanswm nifer yr adegau i achosi'r larwm"
 
-#: recurrenceedit.cpp:237
+#: recurrenceedit.cpp:238
 msgid "occurrence(s)"
 msgstr "achosiad"
 
-#: recurrenceedit.cpp:249
+#: recurrenceedit.cpp:250
 msgid "End &by:"
 msgstr "Gorffen er&byn:"
 
-#: recurrenceedit.cpp:251
+#: recurrenceedit.cpp:252
 msgid "Repeat the alarm until the date/time specified"
 msgstr "Ailadrydd y larwm tan y dyddiad/amser penodedig"
 
-#: recurrenceedit.cpp:256
+#: recurrenceedit.cpp:257
 msgid "This uses the same time zone as the start time."
 msgstr ""
 
-#: recurrenceedit.cpp:257
+#: recurrenceedit.cpp:258
 #, fuzzy
 msgid "Enter the last date to repeat the alarm."
 msgstr "Rhowch y dyddiad olaf i ailadrodd y larwm"
 
-#: recurrenceedit.cpp:263
+#: recurrenceedit.cpp:264
 msgid "Enter the last time to repeat the alarm."
 msgstr "Rhowch yr amser olaf i ailadrodd y larwm."
 
-#: recurrenceedit.cpp:269
+#: recurrenceedit.cpp:270
 msgid ""
 "Stop repeating the alarm after your first login on or after the specified "
 "end date"
@@ -3893,16 +3890,16 @@ msgstr ""
 "Peidio ailadrodd y larwm wedi'ch mewngofnod cyntaf ar neu wedi'r dyddiad "
 "gorffen penodedig"
 
-#: recurrenceedit.cpp:285
+#: recurrenceedit.cpp:286
 msgid "E&xceptions"
 msgstr "&Eithriadau"
 
-#: recurrenceedit.cpp:298
+#: recurrenceedit.cpp:299
 msgid "The list of exceptions, i.e. dates/times excluded from the recurrence"
 msgstr ""
 "Y rhestr eithriadau, h.y. dyddiadau/amseroedd a eithrir o'r ail-ddigwyddiad"
 
-#: recurrenceedit.cpp:315
+#: recurrenceedit.cpp:316
 msgid ""
 "Enter a date to insert in the exceptions list. Use in conjunction with the "
 "Add or Change button below."
@@ -3910,21 +3907,21 @@ msgstr ""
 "Rhowch ddyddiad i'w fewnosod yn y rhestr eithriadau.  Defnyddiwch ynghyd â'r "
 "botwm Ychwanegu neu Newid isod."
 
-#: recurrenceedit.cpp:322
+#: recurrenceedit.cpp:323
 #, fuzzy
 msgid "Add"
 msgstr "Ychwanegu..."
 
-#: recurrenceedit.cpp:325
+#: recurrenceedit.cpp:326
 msgid "Add the date entered above to the exceptions list"
 msgstr "Ychwanegu'r dyddiad a fewnosodwyd uchod i'r rhestr eithriadau"
 
-#: recurrenceedit.cpp:328
+#: recurrenceedit.cpp:329
 #, fuzzy
 msgid "Change"
 msgstr "&Newid..."
 
-#: recurrenceedit.cpp:331
+#: recurrenceedit.cpp:332
 msgid ""
 "Replace the currently highlighted item in the exceptions list with the date "
 "entered above"
@@ -3932,269 +3929,275 @@ msgstr ""
 "Amnewid yr eitem sy'n amlygedig ar hyn o bryd yn y rhestr eithriadau efo'r "
 "dyddiad a fewnosodwyd uchod"
 
-#: recurrenceedit.cpp:334
+#: recurrenceedit.cpp:335
 #, fuzzy
 msgid "Delete"
 msgstr "Dileu Larwm"
 
-#: recurrenceedit.cpp:337
+#: recurrenceedit.cpp:338
 msgid "Remove the currently highlighted item from the exceptions list"
 msgstr "Gwaredu'r eitem sy'n amlygedig ar hyn o bryd o'r rhestr eithriadau"
 
-#: recurrenceedit.cpp:341
+#: recurrenceedit.cpp:342
 msgid "Only during working hours"
 msgstr ""
 
-#: recurrenceedit.cpp:344
+#: recurrenceedit.cpp:345
 msgid ""
 "Only execute the alarm during working hours.\n"
 "You can specify working hours in the Preferences dialog."
 msgstr ""
 
-#: recurrenceedit.cpp:372
+#: recurrenceedit.cpp:354
+msgid ""
+"Set up a repetition within the recurrence, to trigger the alarm multiple "
+"times each time the recurrence is due."
+msgstr ""
+
+#: recurrenceedit.cpp:382
 msgid "End date is earlier than start date"
 msgstr "Mae'r dyddiad gorffen cyn y dyddiad dechrau"
 
-#: recurrenceedit.cpp:373
+#: recurrenceedit.cpp:383
 msgid "End date/time is earlier than start date/time"
 msgstr "Mae'r dyddiad/amser gorffen cyn y dyddiad/amser dechrau"
 
-#: recurrenceedit.cpp:593
+#: recurrenceedit.cpp:655
 msgctxt "Date cannot be earlier than start date"
 msgid "start date"
 msgstr "dyddiad dechrau"
 
-#: recurrenceedit.cpp:988
+#: recurrenceedit.cpp:1064
 msgid "Recur e&very"
 msgstr "Ail-ddigwydd &pob"
 
-#: recurrenceedit.cpp:1056
+#: recurrenceedit.cpp:1132
 msgid "hours:minutes"
 msgstr "awr:munud"
 
-#: recurrenceedit.cpp:1057
+#: recurrenceedit.cpp:1133
 msgid "Enter the number of hours and minutes between repetitions of the alarm"
 msgstr "Rhowch y nifer o oriau a munudau rhwng ailadroddion y larwm"
 
-#: recurrenceedit.cpp:1077
+#: recurrenceedit.cpp:1153
 msgctxt "On: Tuesday"
 msgid "O&n:"
 msgstr "A&r:"
 
-#: recurrenceedit.cpp:1157
+#: recurrenceedit.cpp:1233
 msgid "No day selected"
 msgstr "Dim diwrnod wedi'i ddewis"
 
-#: recurrenceedit.cpp:1186
+#: recurrenceedit.cpp:1262
 msgid "day(s)"
 msgstr "diwrnod"
 
-#: recurrenceedit.cpp:1187
+#: recurrenceedit.cpp:1263
 msgid "Enter the number of days between repetitions of the alarm"
 msgstr "Rhowch y nifer o ddiwrnodau rhwng ailadroddion y larwm"
 
-#: recurrenceedit.cpp:1188
+#: recurrenceedit.cpp:1264
 #, fuzzy
 msgid "Select the days of the week on which the alarm is allowed to occur"
 msgstr "Dewiswch ddiwrnod yr wythnos i ailadrodd y larwm arni"
 
-#: recurrenceedit.cpp:1199
+#: recurrenceedit.cpp:1275
 msgid "week(s)"
 msgstr "wythnos"
 
-#: recurrenceedit.cpp:1200
+#: recurrenceedit.cpp:1276
 msgid "Enter the number of weeks between repetitions of the alarm"
 msgstr "Rhowch y nifer o wythnosau rhwng ailadroddion y larwm"
 
-#: recurrenceedit.cpp:1201
+#: recurrenceedit.cpp:1277
 msgid "Select the days of the week on which to repeat the alarm"
 msgstr "Dewiswch ddiwrnod yr wythnos i ailadrodd y larwm arni"
 
-#: recurrenceedit.cpp:1224
+#: recurrenceedit.cpp:1300
 msgctxt "On day number in the month"
 msgid "O&n day"
 msgstr ""
 
-#: recurrenceedit.cpp:1228
+#: recurrenceedit.cpp:1304
 msgid "Repeat the alarm on the selected day of the month"
 msgstr "Ailadrodd y larwm ar y diwrnod dewisiedig o'r mis"
 
-#: recurrenceedit.cpp:1235
+#: recurrenceedit.cpp:1311
 msgctxt "Last day of month"
 msgid "Last"
 msgstr "Olaf"
 
-#: recurrenceedit.cpp:1238
+#: recurrenceedit.cpp:1314
 msgid "Select the day of the month on which to repeat the alarm"
 msgstr "Dewiswch ba ddiwrnod o'r mis i ailadrodd y larwm arno"
 
-#: recurrenceedit.cpp:1251
+#: recurrenceedit.cpp:1327
 msgctxt "On the 1st Tuesday"
 msgid "On t&he"
 msgstr "Ar &y"
 
-#: recurrenceedit.cpp:1255
+#: recurrenceedit.cpp:1331
 msgid ""
 "Repeat the alarm on one day of the week, in the selected week of the month"
 msgstr ""
 "Ailadrodd y larwm ar un diwrnod o'r wythnos, yn wythnos ddewisiedig y mis"
 
-#: recurrenceedit.cpp:1259
+#: recurrenceedit.cpp:1335
 msgid "1st"
 msgstr "1af"
 
-#: recurrenceedit.cpp:1260
+#: recurrenceedit.cpp:1336
 msgid "2nd"
 msgstr "2il"
 
-#: recurrenceedit.cpp:1261
+#: recurrenceedit.cpp:1337
 msgid "3rd"
 msgstr "3ydd"
 
-#: recurrenceedit.cpp:1262
+#: recurrenceedit.cpp:1338
 msgid "4th"
 msgstr "4ydd"
 
-#: recurrenceedit.cpp:1263
+#: recurrenceedit.cpp:1339
 msgid "5th"
 msgstr "5ed"
 
-#: recurrenceedit.cpp:1264
+#: recurrenceedit.cpp:1340
 msgctxt "Last Monday in March"
 msgid "Last"
 msgstr "Olaf"
 
-#: recurrenceedit.cpp:1265
+#: recurrenceedit.cpp:1341
 msgid "2nd Last"
 msgstr "Ail Olaf"
 
-#: recurrenceedit.cpp:1266
+#: recurrenceedit.cpp:1342
 msgid "3rd Last"
 msgstr "Trydydd Olaf"
 
-#: recurrenceedit.cpp:1267
+#: recurrenceedit.cpp:1343
 msgid "4th Last"
 msgstr "Pedwerydd Olaf"
 
-#: recurrenceedit.cpp:1268
+#: recurrenceedit.cpp:1344
 msgid "5th Last"
 msgstr "Pumed Olaf"
 
-#: recurrenceedit.cpp:1271
+#: recurrenceedit.cpp:1347
 msgctxt "Every (Monday...) in month"
 msgid "Every"
 msgstr ""
 
-#: recurrenceedit.cpp:1274
+#: recurrenceedit.cpp:1350
 msgid "Select the week of the month in which to repeat the alarm"
 msgstr "Dewiswch wythnos o'r mis i ailadrodd y larwm ynddi"
 
-#: recurrenceedit.cpp:1288
+#: recurrenceedit.cpp:1364
 msgid "Select the day of the week on which to repeat the alarm"
 msgstr "Dewiswch ddiwrnod yr wythnos i ailadrodd y larwm arni"
 
-#: recurrenceedit.cpp:1409
+#: recurrenceedit.cpp:1485
 msgid "month(s)"
 msgstr "mis"
 
-#: recurrenceedit.cpp:1410
+#: recurrenceedit.cpp:1486
 msgid "Enter the number of months between repetitions of the alarm"
 msgstr "Rhowch y nifer o fisoedd rhwng ailadroddion y larwm"
 
-#: recurrenceedit.cpp:1421
+#: recurrenceedit.cpp:1497
 msgid "year(s)"
 msgstr "blwyddyn"
 
-#: recurrenceedit.cpp:1422
+#: recurrenceedit.cpp:1498
 msgid "Enter the number of years between repetitions of the alarm"
 msgstr "Rhowch y nifer o flynyddoedd rhwn ailadroddion y larwm"
 
-#: recurrenceedit.cpp:1429
+#: recurrenceedit.cpp:1505
 msgctxt "first week of January"
 msgid "of:"
 msgstr "o"
 
-#: recurrenceedit.cpp:1440
+#: recurrenceedit.cpp:1516
 msgid "January"
 msgstr ""
 
-#: recurrenceedit.cpp:1441
+#: recurrenceedit.cpp:1517
 #, fuzzy
 msgid "February"
 msgstr "Chwefror 2&8ed"
 
-#: recurrenceedit.cpp:1442
+#: recurrenceedit.cpp:1518
 #, fuzzy
 msgid "March"
 msgstr "Mawrth &1af"
 
-#: recurrenceedit.cpp:1443
+#: recurrenceedit.cpp:1519
 msgid "April"
 msgstr ""
 
-#: recurrenceedit.cpp:1444
+#: recurrenceedit.cpp:1520
 msgid "May"
 msgstr ""
 
-#: recurrenceedit.cpp:1445
+#: recurrenceedit.cpp:1521
 msgid "June"
 msgstr ""
 
-#: recurrenceedit.cpp:1446
+#: recurrenceedit.cpp:1522
 msgid "July"
 msgstr ""
 
-#: recurrenceedit.cpp:1447
+#: recurrenceedit.cpp:1523
 msgid "August"
 msgstr ""
 
-#: recurrenceedit.cpp:1448
+#: recurrenceedit.cpp:1524
 msgid "September"
 msgstr ""
 
-#: recurrenceedit.cpp:1449
+#: recurrenceedit.cpp:1525
 #, fuzzy
 msgid "October"
 msgstr "Arall:"
 
-#: recurrenceedit.cpp:1450
+#: recurrenceedit.cpp:1526
 msgid "November"
 msgstr ""
 
-#: recurrenceedit.cpp:1451
+#: recurrenceedit.cpp:1527
 msgid "December"
 msgstr ""
 
-#: recurrenceedit.cpp:1460
+#: recurrenceedit.cpp:1536
 msgid "Select the months of the year in which to repeat the alarm"
 msgstr "Dewiswch fis o'r flwyddyn i ailadrodd y larwm ynddi"
 
-#: recurrenceedit.cpp:1469
+#: recurrenceedit.cpp:1545
 msgid "February 2&9th alarm in non-leap years:"
 msgstr ""
 
-#: recurrenceedit.cpp:1473
+#: recurrenceedit.cpp:1549
 msgctxt "No date"
 msgid "None"
 msgstr "Dim"
 
-#: recurrenceedit.cpp:1474
+#: recurrenceedit.cpp:1550
 msgctxt "1st March (short form)"
 msgid "1 Mar"
 msgstr ""
 
-#: recurrenceedit.cpp:1475
+#: recurrenceedit.cpp:1551
 msgctxt "28th February (short form)"
 msgid "28 Feb"
 msgstr ""
 
-#: recurrenceedit.cpp:1480
+#: recurrenceedit.cpp:1556
 msgid ""
 "Select which date, if any, the February 29th alarm should trigger in non-"
 "leap years"
 msgstr ""
 
-#: recurrenceedit.cpp:1564
+#: recurrenceedit.cpp:1640
 msgid "No month selected"
 msgstr "Dim mis wedi'i ddewis"
 
@@ -4211,69 +4214,62 @@ msgstr "o flaen llaw"
 msgid "Display the reminder only before the first time the alarm is scheduled"
 msgstr ""
 
-#: repetition.cpp:88
+#: repetition.cpp:85
 #, fuzzy
-msgid "Alarm Repetition"
+msgid "Alarm Sub-Repetition"
 msgstr "Ffurfwedd Larwm"
 
-#: repetition.cpp:173
-msgid ""
-"Use this dialog either:\n"
-"- instead of the Recurrence tab, or\n"
-"- after using the Recurrence tab, to set up a repetition within a repetition."
-msgstr ""
-
-#: repetition.cpp:193
+#: repetition.cpp:161
 #, fuzzy
 #| msgid "Repeat"
 msgctxt "Repeat every 10 minutes"
 msgid "Repeat every"
 msgstr "Ailadrodd"
 
-#: repetition.cpp:194
+#: repetition.cpp:162
 msgid ""
 "Check to repeat the alarm each time it recurs. Instead of the alarm "
 "triggering once at each recurrence, this option makes the alarm trigger "
 "multiple times at each recurrence."
 msgstr ""
 
-#: repetition.cpp:197
+#: repetition.cpp:165
 #, fuzzy
 msgid "Enter the time between repetitions of the alarm"
 msgstr "Rhowch y nifer o ddiwrnodau rhwng ailadroddion y larwm"
 
-#: repetition.cpp:215
+#: repetition.cpp:183
 msgid "Number of repetitions:"
 msgstr ""
 
-#: repetition.cpp:217
+#: repetition.cpp:185
 msgid ""
 "Check to specify the number of times the alarm should repeat after each "
 "recurrence"
 msgstr ""
 
-#: repetition.cpp:225
+#: repetition.cpp:193
 #, fuzzy
 msgid ""
 "Enter the number of times to trigger the alarm after its initial occurrence"
 msgstr "Rhowch gyfanswm nifer yr adegau i achosi'r larwm"
 
-#: repetition.cpp:233
+#: repetition.cpp:201
 #, fuzzy
 #| msgid "&Duration:"
 msgid "Duration:"
 msgstr "&Hyd:"
 
-#: repetition.cpp:235
+#: repetition.cpp:203
 msgid "Check to specify how long the alarm is to be repeated"
 msgstr ""
 
-#: repetition.cpp:241
+#: repetition.cpp:209
 #, fuzzy
 msgid "Enter the length of time to repeat the alarm"
 msgstr "Rhowch yr amser olaf i ailadrodd y larwm."
 
-#: resourceconfigdialog.cpp:47 resourceselector.cpp:154
+#: resourceconfigdialog.cpp:47 resourceselector.cpp:155
 #, fuzzy
 msgid "Resource Configuration"
 msgstr "Ffurfwedd Larwm"
@@ -4288,7 +4284,7 @@ msgstr "Gweld Gosodiadau"
 msgid "Name:"
 msgstr "Enw"
 
-#: resourceconfigdialog.cpp:67 resourcemodelview.cpp:111
+#: resourceconfigdialog.cpp:67 resourcemodelview.cpp:115
 #, fuzzy
 msgid "Read-only"
 msgstr "darllen-yn-unig"
@@ -4302,178 +4298,187 @@ msgstr "Gweld Gosodiadau"
 msgid "Please enter a resource name."
 msgstr ""
 
-#: resourcemodelview.cpp:109
+#: resourcemodelview.cpp:113
 #, fuzzy
 msgid "Disabled"
 msgstr "Anal&luogi"
 
-#: resourcemodelview.cpp:370
+#: resourcemodelview.cpp:381
 msgid "You cannot disable your default active alarm resource."
 msgstr ""
 
-#: resourcemodelview.cpp:379
+#: resourcemodelview.cpp:390
 msgid ""
 "You cannot disable your default archived alarm resource while expired alarms "
 "are configured to be kept."
 msgstr ""
 
-#: resourcemodelview.cpp:384
+#: resourcemodelview.cpp:395
 #, fuzzy
 msgid "Do you really want to disable your default resource?"
 msgstr "A ydych wir am ddileu'r larwm dewisiedig?"
 
-#: resourceselector.cpp:69
+#: resourceselector.cpp:70
 #, fuzzy
 msgid "Resources"
 msgstr "&Ail-ddigwyddiad"
 
-#: resourceselector.cpp:74
+#: resourceselector.cpp:75
 #, fuzzy
 msgid "Active Alarms"
 msgstr "Gweithredoli %1"
 
-#: resourceselector.cpp:76 templatedlg.cpp:64
+#: resourceselector.cpp:77 templatedlg.cpp:64
 #, fuzzy
 msgid "Alarm Templates"
 msgstr "Testun Larwm"
 
-#: resourceselector.cpp:78
+#: resourceselector.cpp:79
 msgid "Choose which type of data to show alarm resources for"
 msgstr ""
 
-#: resourceselector.cpp:90
+#: resourceselector.cpp:91
 msgid ""
 "List of available resources of the selected type. The checked state shows "
 "whether a resource is enabled (checked) or disabled (unchecked). The default "
 "resource is shown in bold."
 msgstr ""
 
-#: resourceselector.cpp:97
+#: resourceselector.cpp:98
 #, fuzzy
 msgid "Edit..."
 msgstr "&Golygu..."
 
-#: resourceselector.cpp:98
+#: resourceselector.cpp:99
 #, fuzzy
 msgid "Remove"
 msgstr "&Gwaredu"
 
-#: resourceselector.cpp:104
+#: resourceselector.cpp:105
 #, fuzzy
 msgid "Edit the highlighted resource"
 msgstr "Gwaredu'r eitem sy'n amlygedig ar hyn o bryd o'r rhestr eithriadau"
 
-#: resourceselector.cpp:105
+#: resourceselector.cpp:106
 msgid ""
 "Remove the highlighted resource from the list.\n"
 "The resource itself is left intact, and may subsequently be reinstated in "
 "the list if desired."
 msgstr ""
 
-#: resourceselector.cpp:129
+#: resourceselector.cpp:130
 msgid "Add a new active alarm resource"
 msgstr ""
 
-#: resourceselector.cpp:133
+#: resourceselector.cpp:134
 msgid "Add a new archived alarm resource"
 msgstr ""
 
-#: resourceselector.cpp:137
+#: resourceselector.cpp:138
 #, fuzzy
 msgid "Add a new alarm template resource"
 msgstr "Gwall wrth galw KMail"
 
-#: resourceselector.cpp:155
+#: resourceselector.cpp:156
 msgid "Select storage type of new resource:"
 msgstr ""
 
-#: resourceselector.cpp:162
+#: resourceselector.cpp:163
 #, qt-format
 msgid "<qt>Unable to create resource of type <b>%1</b>.</qt>"
 msgstr ""
 
-#: resourceselector.cpp:165
+#: resourceselector.cpp:166
 #, fuzzy, qt-format
 msgid "%1 resource"
 msgstr "Mae angen %2 ar %1"
 
-#: resourceselector.cpp:204
+#: resourceselector.cpp:205
 msgid "You cannot make your default active alarm resource read-only."
 msgstr ""
 
-#: resourceselector.cpp:211
+#: resourceselector.cpp:212
 msgid ""
 "You cannot make your default archived alarm resource read-only while expired "
 "alarms are configured to be kept."
 msgstr ""
 
-#: resourceselector.cpp:215
+#: resourceselector.cpp:216
 #, fuzzy
 msgid "Do you really want to make your default resource read-only?"
 msgstr "A ydych wir am ddileu'r larwm dewisiedig?"
 
-#: resourceselector.cpp:238
+#: resourceselector.cpp:239
 msgid "You cannot remove your default active alarm resource."
 msgstr ""
 
-#: resourceselector.cpp:245
+#: resourceselector.cpp:246
 msgid ""
 "You cannot remove your default archived alarm resource while expired alarms "
 "are configured to be kept."
 msgstr ""
 
-#: resourceselector.cpp:250
+#: resourceselector.cpp:251
 #, fuzzy, qt-format
 msgid ""
 "<qt>Do you really want to remove your default resource (<b>%1</b>) from the "
 "list?</qt>"
 msgstr "A ydych wir am ddileu'r larwm dewisiedig?"
 
-#: resourceselector.cpp:251
+#: resourceselector.cpp:252
 #, fuzzy, qt-format
 msgid ""
 "<qt>Do you really want to remove the resource <b>%1</b> from the list?</qt>"
 msgstr "A ydych wir am ddileu'r larwm dewisiedig?"
 
-#: resourceselector.cpp:279
+#: resourceselector.cpp:280
 msgid "Re&load"
 msgstr ""
 
-#: resourceselector.cpp:282
+#: resourceselector.cpp:283
 #, fuzzy
 msgid "&Save"
 msgstr "&Anfon"
 
-#: resourceselector.cpp:285
+#: resourceselector.cpp:286
 #, fuzzy
 msgid "Show &Details"
 msgstr "Dangos Amserau &Larwm"
 
-#: resourceselector.cpp:291
+#: resourceselector.cpp:289
+#, fuzzy
+msgid "Set &Color"
+msgstr "Wynebfath a Lliw"
+
+#: resourceselector.cpp:292
+msgid "Clear C&olor"
+msgstr ""
+
+#: resourceselector.cpp:298
 #, fuzzy
 msgid "&Remove"
 msgstr "&Gwaredu"
 
-#: resourceselector.cpp:297
+#: resourceselector.cpp:304
 #, fuzzy
 msgid "&Add..."
 msgstr "Ychwanegu..."
 
-#: resourceselector.cpp:300
+#: resourceselector.cpp:307
 #, fuzzy
 msgid "Im&port..."
 msgstr "Mewnforio &Penblwyddi..."
 
-#: resourceselector.cpp:350
+#: resourceselector.cpp:360
 #, fuzzy
 msgid "Use as &Default for Active Alarms"
 msgstr "Defnyddio wynebfath &ragosodedig"
 
-#: resourceselector.cpp:351
+#: resourceselector.cpp:361
 msgid "Use as &Default for Archived Alarms"
 msgstr ""
 
-#: resourceselector.cpp:352
+#: resourceselector.cpp:362
 #, fuzzy
 msgid "Use as &Default for Alarm Templates"
 msgstr "Dileu Larwm"
