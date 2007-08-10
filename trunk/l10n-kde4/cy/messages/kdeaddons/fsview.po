@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fsview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-07-03 05:07+0200\n"
+"POT-Creation-Date: 2007-08-10 05:32+0200\n"
 "PO-Revision-Date: 2004-02-24 11:29+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -20,21 +20,87 @@ msgstr ""
 "\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: main.cpp:21 fsview_part.cpp:90
-msgid "FSView"
-msgstr "FSView"
+#: fsview.cpp:52 fsview.cpp:392
+msgid "Name"
+msgstr "Enw"
 
-#: main.cpp:22
-msgid "Filesystem Viewer"
-msgstr "Gwelydd y Cysawd Ffeiliau"
+#: fsview.cpp:53
+msgid "Size"
+msgstr "Maint"
 
-#: main.cpp:24
-msgid "(c) 2002, Josef Weidendorfer"
-msgstr "(h) 2002, Josef Weidendorfer"
+#: fsview.cpp:54
+msgid "File Count"
+msgstr "Cyfrif Ffeiliau"
 
-#: main.cpp:28
-msgid "View filesystem starting from this folder"
-msgstr "Edrych ar y cysawd ffeiliau gan gychwyn o'r blygell hon"
+#: fsview.cpp:55
+#, fuzzy
+msgid "Directory Count"
+msgstr "Cyfrif Ffeiliau"
+
+#: fsview.cpp:56
+msgid "Last Modified"
+msgstr "Newid Diwethaf"
+
+#: fsview.cpp:57 fsview.cpp:393
+msgid "Owner"
+msgstr "Perchennog"
+
+#: fsview.cpp:58 fsview.cpp:394
+msgid "Group"
+msgstr "Gr?p"
+
+#: fsview.cpp:59 fsview.cpp:395
+msgid "Mime Type"
+msgstr "Math Mime"
+
+#: fsview.cpp:283
+msgid "Go To"
+msgstr "Ewch I"
+
+#: fsview.cpp:285
+msgid "Go Up"
+msgstr "Ewch i Fyny"
+
+#: fsview.cpp:287
+msgid "Stop Refresh"
+msgstr "Peidio ? chyfredoli"
+
+#: fsview.cpp:289
+msgid "Refresh"
+msgstr "Cyfredoli"
+
+#: fsview.cpp:292
+#, qt-format
+msgid "Refresh '%1'"
+msgstr "Cyfredoli '%1'"
+
+#: fsview.cpp:295 fsview_part.cpp:125
+msgid "Stop at Depth"
+msgstr "Aros wrth Ddyfnder"
+
+#: fsview.cpp:297 fsview_part.cpp:122
+msgid "Stop at Area"
+msgstr "Aros wrth Ardal"
+
+#: fsview.cpp:299
+msgid "Stop at Name"
+msgstr "Aros wrth Enw"
+
+#: fsview.cpp:305 fsview_part.cpp:132
+msgid "Color Mode"
+msgstr "Modd Lliw"
+
+#: fsview.cpp:308 fsview_part.cpp:128
+msgid "Visualization"
+msgstr "Delweddu"
+
+#: fsview.cpp:390
+msgid "None"
+msgstr "Dim"
+
+#: fsview.cpp:391
+msgid "Depth"
+msgstr "Dyfnder"
 
 #: fsview_part.cpp:76
 #, fuzzy, qt-format
@@ -49,6 +115,10 @@ msgid "1 folder"
 msgid_plural "%1 folders"
 msgstr[0] "1 blygell"
 msgstr[1] " %1 o blygyll"
+
+#: fsview_part.cpp:90 main.cpp:21
+msgid "FSView"
+msgstr "FSView"
 
 #: fsview_part.cpp:91
 msgid "Filesystem Utilization Viewer"
@@ -73,22 +143,6 @@ msgstr ""
 "newid.</p><p>Am fanylion ar ddefnydd a'r dewisiadau sydd ar gael, gweler y "
 "gymorth arlein o dan y ddewislen 'Cymorth/Llawlyfr FSView'.</p>"
 
-#: fsview_part.cpp:122 fsview.cpp:297
-msgid "Stop at Area"
-msgstr "Aros wrth Ardal"
-
-#: fsview_part.cpp:125 fsview.cpp:295
-msgid "Stop at Depth"
-msgstr "Aros wrth Ddyfnder"
-
-#: fsview_part.cpp:128 fsview.cpp:308
-msgid "Visualization"
-msgstr "Delweddu"
-
-#: fsview_part.cpp:132 fsview.cpp:305
-msgid "Color Mode"
-msgstr "Modd Lliw"
-
 #: fsview_part.cpp:138
 msgid "&FSView Manual"
 msgstr "&Llawlyfr FSView"
@@ -112,6 +166,18 @@ msgstr ""
 "tu allan i'r cysawd ffeiliau neu cyfeiriadau sy'n weledol ar y pryd yn "
 "FSView.\n"
 " Am fanylion, gweler 'Cymorth/Llawlyfr FSView'."
+
+#: main.cpp:22
+msgid "Filesystem Viewer"
+msgstr "Gwelydd y Cysawd Ffeiliau"
+
+#: main.cpp:24
+msgid "(c) 2002, Josef Weidendorfer"
+msgstr "(h) 2002, Josef Weidendorfer"
+
+#: main.cpp:28
+msgid "View filesystem starting from this folder"
+msgstr "Edrych ar y cysawd ffeiliau gan gychwyn o'r blygell hon"
 
 #. i18n: tag Text
 #. i18n: file fsview_part.rc line 4
@@ -288,69 +354,3 @@ msgstr "Iselhau fesul un (hyd at %1)"
 #, qt-format
 msgid "Increment (to %1)"
 msgstr "Cynyddu fesul un (hyd at %1)"
-
-#: fsview.cpp:52 fsview.cpp:392
-msgid "Name"
-msgstr "Enw"
-
-#: fsview.cpp:53
-msgid "Size"
-msgstr "Maint"
-
-#: fsview.cpp:54
-msgid "File Count"
-msgstr "Cyfrif Ffeiliau"
-
-#: fsview.cpp:55
-#, fuzzy
-msgid "Directory Count"
-msgstr "Cyfrif Ffeiliau"
-
-#: fsview.cpp:56
-msgid "Last Modified"
-msgstr "Newid Diwethaf"
-
-#: fsview.cpp:57 fsview.cpp:393
-msgid "Owner"
-msgstr "Perchennog"
-
-#: fsview.cpp:58 fsview.cpp:394
-msgid "Group"
-msgstr "Gr?p"
-
-#: fsview.cpp:59 fsview.cpp:395
-msgid "Mime Type"
-msgstr "Math Mime"
-
-#: fsview.cpp:283
-msgid "Go To"
-msgstr "Ewch I"
-
-#: fsview.cpp:285
-msgid "Go Up"
-msgstr "Ewch i Fyny"
-
-#: fsview.cpp:287
-msgid "Stop Refresh"
-msgstr "Peidio ? chyfredoli"
-
-#: fsview.cpp:289
-msgid "Refresh"
-msgstr "Cyfredoli"
-
-#: fsview.cpp:292
-#, qt-format
-msgid "Refresh '%1'"
-msgstr "Cyfredoli '%1'"
-
-#: fsview.cpp:299
-msgid "Stop at Name"
-msgstr "Aros wrth Enw"
-
-#: fsview.cpp:390
-msgid "None"
-msgstr "Dim"
-
-#: fsview.cpp:391
-msgid "Depth"
-msgstr "Dyfnder"
