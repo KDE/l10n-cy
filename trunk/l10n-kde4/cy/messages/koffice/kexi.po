@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-05 05:39+0200\n"
+"POT-Creation-Date: 2007-08-25 05:37+0200\n"
 "PO-Revision-Date: 2004-08-12 18:36+0100\n"
 "Last-Translator: KD at Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -281,7 +281,7 @@ msgstr ""
 msgid "This project is opened as read only."
 msgstr ""
 
-#: core/kexiproject.cpp:822 main/KexiMainWindow.cpp:4274
+#: core/kexiproject.cpp:822 main/KexiMainWindow.cpp:4309
 msgid "Could not set empty name for this object."
 msgstr ""
 
@@ -309,7 +309,7 @@ msgstr ""
 "Mae'r ffeil \"%1\" eisoes mewn bod.\n"
 " Ydych eisiau ysgrifennu drosti?\n"
 
-#: core/kexiproject.cpp:973 main/kexifinddialog.cpp:232
+#: core/kexiproject.cpp:973 main/kexifinddialog.cpp:233
 #, fuzzy
 msgid "Replace"
 msgstr "A&mnewid"
@@ -330,22 +330,67 @@ msgstr ""
 msgid "Could not load \"%1\" plugin."
 msgstr "Methwyd creu cywaith \"%1\""
 
-#: core/KexiWindow.cpp:450
+#: core/KexiWindow.cpp:76
+#, fuzzy
+msgid "Switch to data view"
+msgstr "Newid i fodd Golwg Data"
+
+#: core/KexiWindow.cpp:77
+#, fuzzy
+msgid "Switches to data view."
+msgstr "Newid i fodd Golwg Data."
+
+#: core/KexiWindow.cpp:81
+#, fuzzy
+msgid "Switch to design view"
+msgstr "Newid i fodd Golwg Cynllunio"
+
+#: core/KexiWindow.cpp:82
+#, fuzzy
+msgid "Switches to design view."
+msgstr "Newid i fodd Golwg Cynllunio."
+
+#: core/KexiWindow.cpp:86
+#, fuzzy
+msgid "Switch to text view"
+msgstr "Newid i fodd Golwg Testun"
+
+#: core/KexiWindow.cpp:87
+#, fuzzy
+msgid "Switches to text view."
+msgstr "Newid i fodd Golwg Testun."
+
+#: core/KexiWindow.cpp:268
+#, fuzzy
+#| msgid "&Design"
+msgid "Save Design"
+msgstr "&Cynllun"
+
+#: core/KexiWindow.cpp:269
+msgid "Save current design"
+msgstr ""
+
+#: core/KexiWindow.cpp:270
+#, fuzzy
+msgid "Saves changes made to the current design."
+msgstr "Mewnosod un rhes wag uwchben yr un wedi'i dewis ar hyn o bryd"
+
+#: core/KexiWindow.cpp:641
 #, fuzzy
 msgid ""
 "Design has been changed. You must save it before switching to other view."
 msgstr "Newidwyd y cynllun. Rhaid i chi ei gadw cyn newid i olwg arall."
 
-#: core/KexiWindow.cpp:514 main/KexiMainWindow.cpp:3403
+#: core/KexiWindow.cpp:705 main/KexiMainWindow.cpp:3427
 #, fuzzy, qt-format
 msgid "Switching to other view failed (%1)."
 msgstr "Methwyd mewnosod y rhes ar y gweinydd."
 
-#: core/KexiWindow.cpp:669
+#: core/KexiWindow.cpp:878
 msgid "Saving object's definition failed."
 msgstr ""
 
-#: core/KexiWindow.cpp:749
+#: core/KexiWindow.cpp:958
 #, fuzzy
 msgid "Saving object's data failed."
 msgstr "Cadw gwrthrych fel"
@@ -621,31 +666,43 @@ msgstr "Creuwyd cronfa ddata \"%1\" ond methwyd ei hagor"
 msgid "Do you want to open it in Text View?"
 msgstr "Ydych eisiau dileu'r rhes dewisiedig?"
 
-#: core/kexipart.cpp:311
+#: core/kexipart.cpp:150
+#, fuzzy, qt-format
+#| msgid "cannot create object of type \"%1\""
+msgid "Create new object of type \"%1\""
+msgstr "methu creu gwrthrych o fath \"%1\""
+
+#: core/kexipart.cpp:152
+#, fuzzy, qt-format
+#| msgid "cannot create object of type \"%1\""
+msgid "Creates new object of type \"%1\""
+msgstr "methu creu gwrthrych o fath \"%1\""
+
+#: core/kexipart.cpp:304
 #, fuzzy
 msgid "Could not load object's definition."
 msgstr "Methu gwaredu ffeil \"%1\". "
 
-#: core/kexipart.cpp:311
+#: core/kexipart.cpp:304
 msgid "Object design may be corrupted."
 msgstr ""
 
-#: core/kexipart.cpp:313
+#: core/kexipart.cpp:306
 #, qt-format
 msgid "You can delete \"%1\" object and create it again."
 msgstr ""
 
-#: core/kexipart.cpp:400
+#: core/kexipart.cpp:394
 #, fuzzy
 msgid "Could not load object's data."
 msgstr "Methu gwaredu ffeil \"%1\". "
 
-#: core/kexipart.cpp:400
+#: core/kexipart.cpp:394
 #, qt-format
 msgid "Data identifier: \"%1\"."
 msgstr ""
 
-#: core/kexipart.cpp:449
+#: core/kexipart.cpp:443
 #, fuzzy
 #| msgid "Object"
 msgctxt ""
@@ -656,7 +713,7 @@ msgctxt ""
 msgid "object"
 msgstr "Gwrthrych"
 
-#: core/kexipart.cpp:454 kexidb/field.cpp:718 kexidb/field.cpp:742
+#: core/kexipart.cpp:448 kexidb/field.cpp:718 kexidb/field.cpp:742
 msgid "Object"
 msgstr "Gwrthrych"
 
@@ -699,37 +756,52 @@ msgstr "Nid yw ffeil %1 yn bodoli."
 msgid "Specified document could not be opened."
 msgstr "Creuwyd cronfa ddata \"%1\" ond methwyd ei hagor"
 
-#: core/kexi.cpp:144
-msgid "No View"
-msgstr ""
+#: core/kexi.cpp:131
+#, fuzzy
+msgid "&No View"
+msgstr "Golwg &Data"
 
-#: core/kexi.cpp:145
-msgid "Data View"
-msgstr "Golwg Data"
+#: core/kexi.cpp:133
+msgid "&Data View"
+msgstr "Golwg &Data"
 
-#: core/kexi.cpp:146
-msgid "Design View"
-msgstr "Golwg Cynllunio"
+#: core/kexi.cpp:135
+msgid "D&esign View"
+msgstr "Golwg &Cynllunio"
 
-#: core/kexi.cpp:147
-msgid "Text View"
-msgstr "Golwg Testun"
+#: core/kexi.cpp:137
+msgid "&Text View"
+msgstr "Golwg &Testun"
 
-#: core/kexi.cpp:149
-msgid "Unknown"
+#: core/kexi.cpp:139
+#, fuzzy
+#| msgid "Unknown"
+msgid "&Unknown"
 msgstr "Anhysbys"
 
-#: core/kexi.cpp:155
+#: core/kexi.cpp:146
+msgid "state_data"
+msgstr ""
+
+#: core/kexi.cpp:148
+msgid "state_edit"
+msgstr ""
+
+#: core/kexi.cpp:150
+msgid "state_sql"
+msgstr ""
+
+#: core/kexi.cpp:157
 msgid ""
 "You can correct data in this row or use \"Cancel row changes\" function."
 msgstr ""
 
-#: core/kexi.cpp:322
+#: core/kexi.cpp:324
 #, fuzzy, qt-format
 msgid "This function is not available for version %1 of %2 application."
 msgstr "Ni ellir darllen y ffeil \"%1\"."
 
-#: core/kexi.cpp:327
+#: core/kexi.cpp:329
 #, qt-format
 msgid "\"%1\" function is not available for version %2 of %3 application."
 msgstr ""
@@ -1164,7 +1236,7 @@ msgstr ""
 msgid "Creating New Project"
 msgstr "Wrthi'n creu cywaith newydd"
 
-#: main/startup/KexiNewProjectWizard.cpp:116 main/KexiMainWindow_p.h:89
+#: main/startup/KexiNewProjectWizard.cpp:116 main/KexiMainWindow_p.h:140
 msgid "Create"
 msgstr "Creu"
 
@@ -1251,108 +1323,108 @@ msgid "Close the current tab"
 msgstr "Cau'r cywaith cyfredol"
 
 #. i18n: tag text
-#. i18n: file data/kexiui.rc line 125
-#: main/KexiMainWindow.cpp:427 main/KexiMainWindow.cpp:513 rc.cpp:47
-msgid "&Window"
-msgstr "&Ffenestr"
-
-#. i18n: tag text
 #. i18n: file data/kexiui.rc line 88
-#: main/KexiMainWindow.cpp:434 rc.cpp:29
+#: main/KexiMainWindow.cpp:411 rc.cpp:29
 #, fuzzy
 msgid "&Insert"
 msgstr "Rhyngosod"
 
 #. i18n: tag text
 #. i18n: file data/kexiui.rc line 21
-#: main/KexiMainWindow.cpp:440 rc.cpp:11
+#: main/KexiMainWindow.cpp:417 rc.cpp:11
 msgid "&Import"
 msgstr "&Mewnforio"
 
 #. i18n: tag text
 #. i18n: file data/kexiui.rc line 57
-#: main/KexiMainWindow.cpp:441 rc.cpp:23
+#: main/KexiMainWindow.cpp:418 rc.cpp:23
 msgid "Paste &Special"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:471
+#: main/KexiMainWindow.cpp:448
 #, fuzzy
 #| msgid "Close the current project"
 msgctxt "Close the current tab page in Kexi tab interface"
 msgid "Close the current tab"
 msgstr "Cau'r cywaith cyfredol"
 
-#: main/KexiMainWindow.cpp:584
+#. i18n: tag text
+#. i18n: file data/kexiui.rc line 125
+#: main/KexiMainWindow.cpp:490 rc.cpp:47
+msgid "&Window"
+msgstr "&Ffenestr"
+
+#: main/KexiMainWindow.cpp:561
 #, qt-format
 msgid ""
 "User interface mode will be switched to IDEAl at next %1 application startup."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:611
+#: main/KexiMainWindow.cpp:588
 #, qt-format
 msgid ""
 "User interface mode will be switched to Childframe at next %1 application "
 "startup."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:658
+#: main/KexiMainWindow.cpp:635
 msgid "&New..."
 msgstr "&Newydd..."
 
-#: main/KexiMainWindow.cpp:660
+#: main/KexiMainWindow.cpp:637
 msgid "Create a new project"
 msgstr "Creu cywaith newydd"
 
-#: main/KexiMainWindow.cpp:662
+#: main/KexiMainWindow.cpp:639
 msgid "Creates a new project. Currently opened project is not affected."
 msgstr "Creu cywaith newydd.  Ni effeithir ar y cywaith sydd ar agor eisoes."
 
-#: main/KexiMainWindow.cpp:667
+#: main/KexiMainWindow.cpp:644
 msgid "Open an existing project"
 msgstr "Agor hen gywaith"
 
-#: main/KexiMainWindow.cpp:669
+#: main/KexiMainWindow.cpp:646
 msgid "Opens an existing project. Currently opened project is not affected."
 msgstr "Yn agor hen gywaith.  Ni effeithir ar y cywaith sydd ar agor eisoes."
 
-#: main/KexiMainWindow.cpp:673
+#: main/KexiMainWindow.cpp:650
 #, fuzzy
 msgid "&Download Example Databases..."
 msgstr "Cyrchfan Mewnforio"
 
-#: main/KexiMainWindow.cpp:674
+#: main/KexiMainWindow.cpp:651
 msgid "Download example databases from the Internet"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:675
+#: main/KexiMainWindow.cpp:652
 #, fuzzy
 msgid "Downloads example databases from the Internet."
 msgstr "Cyrchfan Mewnforio"
 
 #. i18n: tag text
 #. i18n: file data/kexiui.rc line 11
-#: main/KexiMainWindow.cpp:684 main/KexiMainWindow.cpp:3211 rc.cpp:8
+#: main/KexiMainWindow.cpp:661 main/KexiMainWindow.cpp:3229 rc.cpp:8
 #, fuzzy
 msgid "Open Recent"
 msgstr "Agor Cywaith Diweddar"
 
-#: main/KexiMainWindow.cpp:704
+#: main/KexiMainWindow.cpp:681
 msgid "Save object changes"
 msgstr "Cadw newidiadau i'r gwrthrych"
 
-#: main/KexiMainWindow.cpp:705
+#: main/KexiMainWindow.cpp:682
 msgid "Saves object changes from currently selected window."
 msgstr "Cadw newidiadau i'r gwrthrych o'r ffenestr a ddewisir ar hyn o bryd"
 
-#: main/KexiMainWindow.cpp:710
+#: main/KexiMainWindow.cpp:687
 msgid "Save &As..."
 msgstr "Cadw &Fel..."
 
-#: main/KexiMainWindow.cpp:711 main/KexiMainWindow.cpp:3227
+#: main/KexiMainWindow.cpp:688 main/KexiMainWindow.cpp:3245
 msgid "Save object as"
 msgstr "Cadw gwrthrych fel"
 
-#: main/KexiMainWindow.cpp:713
+#: main/KexiMainWindow.cpp:690
 #, fuzzy
 msgid ""
 "Saves object changes from currently selected window under a new name (within "
@@ -1361,532 +1433,526 @@ msgstr ""
 "Cadw gwrthrychau o'r ffenestr a ddewisir ar hyn o bryd o dan enw newydd (yn "
 "yr un cywaith)."
 
-#: main/KexiMainWindow.cpp:719
+#: main/KexiMainWindow.cpp:696
 #, fuzzy
 msgid "Project Properties"
 msgstr "Priodweddion y cywaith"
 
-#: main/KexiMainWindow.cpp:728
+#: main/KexiMainWindow.cpp:705
 msgid "&Close Project"
 msgstr "&Cau'r Cywaith"
 
-#: main/KexiMainWindow.cpp:729
+#: main/KexiMainWindow.cpp:706
 msgid "Close the current project"
 msgstr "Cau'r cywaith cyfredol"
 
-#: main/KexiMainWindow.cpp:730
+#: main/KexiMainWindow.cpp:707
 msgid "Closes the current project."
 msgstr "Cau'r cywaith cyfredol"
 
-#: main/KexiMainWindow.cpp:740
+#: main/KexiMainWindow.cpp:713
+msgid "Quits Kexi application. Kexi prompts you to save changes."
+msgstr ""
+
+#: main/KexiMainWindow.cpp:718
 msgid "&Relationships..."
 msgstr "&Perthnasau..."
 
-#: main/KexiMainWindow.cpp:742
+#: main/KexiMainWindow.cpp:720
 msgid "Project relationships"
 msgstr "Perthnasau'r cywaith"
 
-#: main/KexiMainWindow.cpp:743
+#: main/KexiMainWindow.cpp:721
 msgid "Shows project relationships."
 msgstr "Yn dangos perthnasau'r cywaith."
 
-#: main/KexiMainWindow.cpp:752
+#: main/KexiMainWindow.cpp:730
 #, fuzzy
 msgid "&Import Database..."
 msgstr "Cyrchfan Mewnforio"
 
-#: main/KexiMainWindow.cpp:753
+#: main/KexiMainWindow.cpp:731
 #, fuzzy
 msgid "Import entire database as a Kexi project"
 msgstr "Cau'r cywaith cyfredol"
 
-#: main/KexiMainWindow.cpp:755
+#: main/KexiMainWindow.cpp:733
 #, fuzzy
 msgid "Imports entire database as a Kexi project."
 msgstr "Cau'r cywaith cyfredol"
 
-#: main/KexiMainWindow.cpp:763
+#: main/KexiMainWindow.cpp:741
 #, fuzzy
 msgid "&Compact Database..."
 msgstr "Cyrchfan Mewnforio"
 
-#: main/KexiMainWindow.cpp:764
+#: main/KexiMainWindow.cpp:742
 #, fuzzy
 msgid "Compact the current database project"
 msgstr "Cau'r cywaith cyfredol"
 
-#: main/KexiMainWindow.cpp:766
+#: main/KexiMainWindow.cpp:744
 msgid ""
 "Compacts the current database project, so it will take less space and work "
 "faster."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:776
+#: main/KexiMainWindow.cpp:754
 #, fuzzy
 msgctxt "Import->Table Data From File..."
 msgid "Table Data From &File..."
 msgstr "O Ffeil..."
 
-#: main/KexiMainWindow.cpp:777
+#: main/KexiMainWindow.cpp:755
 msgid "Import table data from a file"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:778
+#: main/KexiMainWindow.cpp:756
 msgid "Imports table data from a file."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:786
+#: main/KexiMainWindow.cpp:764
 #, fuzzy
 msgctxt "Export->Table or Query Data to File..."
 msgid "Table or Query Data to &File..."
 msgstr "O Ffeil..."
 
-#: main/KexiMainWindow.cpp:788
+#: main/KexiMainWindow.cpp:766
 msgid "Export data from the active table or query data to a file"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:790
+#: main/KexiMainWindow.cpp:768
 msgid "Exports data from the active table or query data to a file."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:801
+#: main/KexiMainWindow.cpp:779
 msgid "Print data from the active table or query"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:802
+#: main/KexiMainWindow.cpp:780
 msgid "Prints data from the active table or query."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:808
+#: main/KexiMainWindow.cpp:786
 msgid "Show print preview for the active table or query"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:810
+#: main/KexiMainWindow.cpp:788
 msgid "Shows print preview for the active table or query."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:816
+#: main/KexiMainWindow.cpp:794
 #: main/printing/kexisimpleprintpreviewwindow.cpp:184
 msgid "Page Set&up..."
 msgstr "G&osodiad Tudalen ..."
 
-#: main/KexiMainWindow.cpp:818
+#: main/KexiMainWindow.cpp:796
 msgid "Show page setup for printing the active table or query"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:820 widget/kexibrowser.cpp:222
+#: main/KexiMainWindow.cpp:798 widget/kexibrowser.cpp:222
 msgid "Shows page setup for printing the active table or query."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:835
+#: main/KexiMainWindow.cpp:813
 #, fuzzy
 msgctxt "Paste Special->As Data &Table..."
 msgid "As Data &Table..."
 msgstr "Math data"
 
-#: main/KexiMainWindow.cpp:837
+#: main/KexiMainWindow.cpp:815
 msgid "Paste clipboard data as a table"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:839
+#: main/KexiMainWindow.cpp:817
 msgid "Pastes clipboard data to a table."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:847
+#: main/KexiMainWindow.cpp:825
 msgctxt "Copy Special->Table or Query Data..."
 msgid "Table or Query as Data Table..."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:850
+#: main/KexiMainWindow.cpp:828
 msgid "Copy selected table or query data to clipboard"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:852
+#: main/KexiMainWindow.cpp:830
 msgid "Copies selected table or query data to clipboard."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:857
+#: main/KexiMainWindow.cpp:835
 msgid "Reverts the most recent editing action."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:859
+#: main/KexiMainWindow.cpp:837
 msgid "Reverts the most recent undo action."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:888 widget/kexibrowser.cpp:154
+#: main/KexiMainWindow.cpp:866 widget/kexibrowser.cpp:154
 #, fuzzy
 msgid "&Delete"
 msgstr "&Dileu Rhes"
 
-#: main/KexiMainWindow.cpp:890
+#: main/KexiMainWindow.cpp:868
 #, fuzzy
 msgid "Delete selected object"
 msgstr "Dileu'r gwrthrych a ddewisir ar hyn o bryd."
 
-#: main/KexiMainWindow.cpp:891
+#: main/KexiMainWindow.cpp:869
 msgid "Deletes currently selected object."
 msgstr "Dileu'r gwrthrych a ddewisir ar hyn o bryd."
 
-#: main/KexiMainWindow.cpp:893
+#: main/KexiMainWindow.cpp:871
 msgid "Delete Row"
 msgstr "Dileu Rhes"
 
-#: main/KexiMainWindow.cpp:895
+#: main/KexiMainWindow.cpp:873
 #, fuzzy
 msgid "Delete currently selected row"
 msgstr "Dileu'r gwrthrych a ddewisir ar hyn o bryd."
 
-#: main/KexiMainWindow.cpp:896
+#: main/KexiMainWindow.cpp:874
 #, fuzzy
 msgid "Deletes currently selected row."
 msgstr "Dileu'r gwrthrych a ddewisir ar hyn o bryd."
 
-#: main/KexiMainWindow.cpp:898
+#: main/KexiMainWindow.cpp:876
 msgid "Clear Table Contents"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:900
+#: main/KexiMainWindow.cpp:878
 #, fuzzy
 msgid "Clear table contents"
 msgstr "Cynnwys annilys yn y gronfa ddata "
 
-#: main/KexiMainWindow.cpp:901
+#: main/KexiMainWindow.cpp:879
 #, fuzzy
 msgid "Clears table contents."
 msgstr "Cynnwys annilys yn y gronfa ddata "
 
-#: main/KexiMainWindow.cpp:904
+#: main/KexiMainWindow.cpp:882
 #, fuzzy
 msgid "Edit Item"
 msgstr "Golygu Ymholiad"
 
-#: main/KexiMainWindow.cpp:907
+#: main/KexiMainWindow.cpp:885
 #, fuzzy
 msgid "Edit currently selected item"
 msgstr "Dileu'r gwrthrych a ddewisir ar hyn o bryd."
 
-#: main/KexiMainWindow.cpp:908
+#: main/KexiMainWindow.cpp:886
 #, fuzzy
 msgid "Edits currently selected item."
 msgstr "Dileu'r gwrthrych a ddewisir ar hyn o bryd."
 
-#: main/KexiMainWindow.cpp:910
+#: main/KexiMainWindow.cpp:888
 msgid "&Insert Empty Row"
 msgstr "Mewnosod Rhes &Wag"
 
-#: main/KexiMainWindow.cpp:914
+#: main/KexiMainWindow.cpp:892
 msgid "Insert one empty row above"
 msgstr "Mewnosod un rhes wag uwchben"
 
-#: main/KexiMainWindow.cpp:916
+#: main/KexiMainWindow.cpp:894
 msgid "Inserts one empty row above currently selected table row."
 msgstr "Mewnosod un rhes wag uwchben yr un wedi'i dewis ar hyn o bryd"
 
-#: main/KexiMainWindow.cpp:923
-msgid "&Data View"
-msgstr "Golwg &Data"
-
-#: main/KexiMainWindow.cpp:927
-#, fuzzy
-msgid "Switch to data view"
-msgstr "Newid i fodd Golwg Data"
-
-#: main/KexiMainWindow.cpp:928
-#, fuzzy
-msgid "Switches to data view."
-msgstr "Newid i fodd Golwg Data."
-
-#: main/KexiMainWindow.cpp:941
-msgid "D&esign View"
-msgstr "Golwg &Cynllunio"
-
-#: main/KexiMainWindow.cpp:945
-#, fuzzy
-msgid "Switch to design view"
-msgstr "Newid i fodd Golwg Cynllunio"
-
-#: main/KexiMainWindow.cpp:946
-#, fuzzy
-msgid "Switches to design view."
-msgstr "Newid i fodd Golwg Cynllunio."
-
-#: main/KexiMainWindow.cpp:957
-msgid "&Text View"
-msgstr "Golwg &Testun"
-
-#: main/KexiMainWindow.cpp:961
-#, fuzzy
-msgid "Switch to text view"
-msgstr "Newid i fodd Golwg Testun"
-
-#: main/KexiMainWindow.cpp:962
-#, fuzzy
-msgid "Switches to text view."
-msgstr "Newid i fodd Golwg Testun."
-
-#: main/KexiMainWindow.cpp:972 widget/kexibrowser.cpp:88
+#: main/KexiMainWindow.cpp:951 widget/kexibrowser.cpp:88
 msgid "Project Navigator"
 msgstr "Mordwywr Cywaith"
 
-#: main/KexiMainWindow.cpp:974
+#: main/KexiMainWindow.cpp:953
 msgid "Go to project navigator panel"
 msgstr "Mynd i banel mordwywr cywaith"
 
-#: main/KexiMainWindow.cpp:975
+#: main/KexiMainWindow.cpp:954
 msgid "Goes to project navigator panel."
 msgstr "Mynd i'r panel mordwyo cywaith."
 
-#: main/KexiMainWindow.cpp:983
+#: main/KexiMainWindow.cpp:962
 #, fuzzy
 msgid "Main Area"
 msgstr "Prif"
 
-#: main/KexiMainWindow.cpp:985
+#: main/KexiMainWindow.cpp:964
 msgid "Go to main area"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:986
+#: main/KexiMainWindow.cpp:965
 msgid "Goes to main area."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:992 main/KexiMainWindow.cpp:2123
+#: main/KexiMainWindow.cpp:971 main/KexiMainWindow.cpp:2102
 #, fuzzy
 msgid "Property Editor"
 msgstr "Golygydd priodweddau"
 
-#: main/KexiMainWindow.cpp:994
+#: main/KexiMainWindow.cpp:973
 msgid "Go to property editor panel"
 msgstr "Mynd i banel y golygydd priodweddau"
 
-#: main/KexiMainWindow.cpp:995
+#: main/KexiMainWindow.cpp:974
 msgid "Goes to property editor panel."
 msgstr "Mynd i'r panel golygu priodweddau."
 
-#: main/KexiMainWindow.cpp:1003
+#: main/KexiMainWindow.cpp:982
 msgid "&Save Row"
 msgstr "Cadw &Rhes"
 
-#: main/KexiMainWindow.cpp:1005
+#: main/KexiMainWindow.cpp:984
 #, fuzzy
 msgid "Save changes made to the current row"
 msgstr "Gwall yng nghysylltiad y gronfa ddata"
 
-#: main/KexiMainWindow.cpp:1006
+#: main/KexiMainWindow.cpp:985
 #, fuzzy
 msgid "Saves changes made to the current row."
 msgstr "Mewnosod un rhes wag uwchben yr un wedi'i dewis ar hyn o bryd"
 
-#: main/KexiMainWindow.cpp:1009
+#: main/KexiMainWindow.cpp:988
 msgid "&Cancel Row Changes"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:1012
+#: main/KexiMainWindow.cpp:991
 #, fuzzy
 msgid "Cancel changes made to the current row"
 msgstr "Mewnosod un rhes wag uwchben yr un wedi'i dewis ar hyn o bryd"
 
-#: main/KexiMainWindow.cpp:1014
+#: main/KexiMainWindow.cpp:993
 #, fuzzy
 msgid "Cancels changes made to the current row."
 msgstr "Mewnosod un rhes wag uwchben yr un wedi'i dewis ar hyn o bryd"
 
-#: main/KexiMainWindow.cpp:1018
+#: main/KexiMainWindow.cpp:997
 #, fuzzy
 msgid "&Execute"
 msgstr "Creu &Sgript..."
 
-#: main/KexiMainWindow.cpp:1023
+#: main/KexiMainWindow.cpp:1002
 msgid "&Filter"
 msgstr "&Hidlen"
 
-#: main/KexiMainWindow.cpp:1030
+#: main/KexiMainWindow.cpp:1009
 msgid "&Ascending"
 msgstr "&Esgynnol"
 
-#: main/KexiMainWindow.cpp:1032
+#: main/KexiMainWindow.cpp:1011
 msgid "Sort data in ascending order"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:1033
+#: main/KexiMainWindow.cpp:1012
 msgid ""
 "Sorts data in ascending order (from A to Z and from 0 to 9). Data from "
 "selected column is used for sorting."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:1035
+#: main/KexiMainWindow.cpp:1014
 msgid "&Descending"
 msgstr "&Disgynnol"
 
-#: main/KexiMainWindow.cpp:1037
+#: main/KexiMainWindow.cpp:1016
 msgid "Sort data in descending order"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:1038
+#: main/KexiMainWindow.cpp:1017
 msgid ""
 "Sorts data in descending (from Z to A and from 9 to 0). Data from selected "
 "column is used for sorting."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:1048
+#: main/KexiMainWindow.cpp:1027
 msgid "&Font..."
 msgstr "W&ynebfath..."
 
-#: main/KexiMainWindow.cpp:1050
+#: main/KexiMainWindow.cpp:1029
 #, fuzzy
 msgid "Change font for selected object"
 msgstr "Dileu'r gwrthrych a ddewisir ar hyn o bryd."
 
-#: main/KexiMainWindow.cpp:1051
+#: main/KexiMainWindow.cpp:1030
 #, fuzzy
 msgid "Changes font for selected object."
 msgstr "Dileu'r gwrthrych a ddewisir ar hyn o bryd."
 
-#: main/KexiMainWindow.cpp:1075
+#: main/KexiMainWindow.cpp:1054
 #, fuzzy
 msgid "&Next Window"
 msgstr "&Ffenestr"
 
-#: main/KexiMainWindow.cpp:1083
+#: main/KexiMainWindow.cpp:1062
 #, fuzzy
 msgid "Next window"
 msgstr "Rhes nesaf"
 
-#: main/KexiMainWindow.cpp:1084
+#: main/KexiMainWindow.cpp:1063
 #, fuzzy
 msgid "Switches to the next window."
 msgstr "Newid i fodd Golwg Testun."
 
-#: main/KexiMainWindow.cpp:1089
+#: main/KexiMainWindow.cpp:1068
 #, fuzzy
 msgid "&Previous Window"
 msgstr "Rhes flaenorol"
 
-#: main/KexiMainWindow.cpp:1097
+#: main/KexiMainWindow.cpp:1076
 #, fuzzy
 msgid "Previous window"
 msgstr "Rhes flaenorol"
 
-#: main/KexiMainWindow.cpp:1098
+#: main/KexiMainWindow.cpp:1077
 #, fuzzy
 msgid "Switches to the previous window."
 msgstr "Newid i fodd Golwg Data."
 
-#: main/KexiMainWindow.cpp:1109
+#: main/KexiMainWindow.cpp:1088
 msgid "Lets you configure shortcut keys."
 msgstr "Gadael i chi ffurfweddu bysellau byrlwybr."
 
-#: main/KexiMainWindow.cpp:1160
+#: main/KexiMainWindow.cpp:1130
+msgid "Lets you configure Kexi."
+msgstr "Gadael i chi ffurweddu Kexi."
+
+#: main/KexiMainWindow.cpp:1139
+msgid "Shows bug reporting tool for Kexi application."
+msgstr ""
+
+#: main/KexiMainWindow.cpp:1141
+msgid "Shows \"What's This\" tool."
+msgstr ""
+
+#: main/KexiMainWindow.cpp:1143 migration/importwizard.cpp:1005
+#: migration/importwizard.cpp:1013 migration/importwizard.cpp:1017
+#: migration/importwizard.cpp:1021 migration/importwizard.cpp:1025
+#: migration/importwizard.cpp:1029
+msgid "Help"
+msgstr ""
+
+#: main/KexiMainWindow.cpp:1144
+msgid "Shows Kexi Handbook."
+msgstr ""
+
+#: main/KexiMainWindow.cpp:1146
+#, fuzzy
+msgid "Shows information about Kexi application."
+msgstr "Methwyd creu cywaith \"%1\""
+
+#: main/KexiMainWindow.cpp:1148
+msgid "Shows information about K Desktop Environment."
+msgstr ""
+
+#: main/KexiMainWindow.cpp:1152
 msgid "This shows useful tips on the use of this application."
 msgstr "Dengys hyn gynghorion defnyddiol ar ddefnydd y rhaglen hon."
 
-#: main/KexiMainWindow.cpp:1163 main/KexiMainWindow.cpp:4408
+#: main/KexiMainWindow.cpp:1155 main/KexiMainWindow.cpp:4446
 #, fuzzy
 msgid "Important Information"
 msgstr "Gwybodaeth bwysig"
 
-#: main/KexiMainWindow.cpp:1170
+#: main/KexiMainWindow.cpp:1162
 msgid "Give Feedback..."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:1536
+#: main/KexiMainWindow.cpp:1533
 msgid "reason:"
 msgstr "rheswm:"
 
-#: main/KexiMainWindow.cpp:1573
+#: main/KexiMainWindow.cpp:1570
 #, qt-format
 msgid ""
 "<qt>Database project %1 does not appear to have been created using Kexi."
 "<br><br>Do you want to import it as a new Kexi project?</qt>"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:1575
+#: main/KexiMainWindow.cpp:1572
 msgctxt "Import Database"
 msgid "&Import..."
 msgstr "&Mewnforio..."
 
-#: main/KexiMainWindow.cpp:1610
+#: main/KexiMainWindow.cpp:1607
 #, fuzzy
 msgid "Select New Project's Location"
 msgstr "Dewiswch leoliad y cywaith"
 
-#: main/KexiMainWindow.cpp:1708
+#: main/KexiMainWindow.cpp:1705
 #, fuzzy, qt-format
 msgid "cannot create object - unknown object type \"%1\""
 msgstr "methu creu gwrthrych o fath \"%1\""
 
-#: main/KexiMainWindow.cpp:1710
+#: main/KexiMainWindow.cpp:1707
 #, qt-format
 msgid "unknown object type \"%1\""
 msgstr "math anhysbys o wrthrych \"%1\""
 
-#: main/KexiMainWindow.cpp:1718
+#: main/KexiMainWindow.cpp:1715
 #, qt-format
 msgid "cannot create object of type \"%1\""
 msgstr "methu creu gwrthrych o fath \"%1\""
 
-#: main/KexiMainWindow.cpp:1731
+#: main/KexiMainWindow.cpp:1728
 msgid "making print preview for"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:1733
+#: main/KexiMainWindow.cpp:1730
 msgid "printing"
 msgstr "argraffu"
 
-#: main/KexiMainWindow.cpp:1735
+#: main/KexiMainWindow.cpp:1732
 #, fuzzy
 msgctxt "\"executing object\" action"
 msgid "executing"
 msgstr "Creu &Sgript..."
 
-#: main/KexiMainWindow.cpp:1737
+#: main/KexiMainWindow.cpp:1734
 #, fuzzy
 msgid "opening"
 msgstr "Esgynnol"
 
-#: main/KexiMainWindow.cpp:1741
+#: main/KexiMainWindow.cpp:1738
 #, fuzzy
 msgid "table not found"
 msgstr "ni chafwyd y gwrthrych"
 
-#: main/KexiMainWindow.cpp:1743
+#: main/KexiMainWindow.cpp:1740
 #, fuzzy
 msgid "query not found"
 msgstr "ni chafwyd y gwrthrych"
 
-#: main/KexiMainWindow.cpp:1745
+#: main/KexiMainWindow.cpp:1742
 #, fuzzy
 msgid "macro not found"
 msgstr "ni chafwyd y gwrthrych"
 
-#: main/KexiMainWindow.cpp:1747
+#: main/KexiMainWindow.cpp:1744
 #, fuzzy
 msgid "script not found"
 msgstr "ni chafwyd y gwrthrych"
 
-#: main/KexiMainWindow.cpp:1749
+#: main/KexiMainWindow.cpp:1746
 msgid "object not found"
 msgstr "ni chafwyd y gwrthrych"
 
-#: main/KexiMainWindow.cpp:1757
+#: main/KexiMainWindow.cpp:1754
 #, fuzzy
 msgid "cannot execute object"
 msgstr "methu creu gwrthrych -"
 
-#: main/KexiMainWindow.cpp:1765
+#: main/KexiMainWindow.cpp:1762
 #, fuzzy
 msgid "cannot print object"
 msgstr "methu agor y gwrthrych"
 
-#: main/KexiMainWindow.cpp:1773
+#: main/KexiMainWindow.cpp:1770
 #, fuzzy
 msgid "cannot make print preview of object"
 msgstr "methu agor y gwrthrych"
 
-#: main/KexiMainWindow.cpp:1795
+#: main/KexiMainWindow.cpp:1792
 msgid "cannot open object"
 msgstr "methu agor y gwrthrych"
 
-#: main/KexiMainWindow.cpp:1810
+#: main/KexiMainWindow.cpp:1807
 #, fuzzy
 msgid ""
 "You have requested selected objects to be automatically opened or processed "
@@ -1895,103 +1961,103 @@ msgstr ""
 "Rydych wedi gofyn agor sawl gwrthrych yn ymysgogol wrth ymgychwyn.  Ni cheir "
 "agor sawl gwrthrych."
 
-#: main/KexiMainWindow.cpp:2130 widget/utils/kexicontextmenuutils.cpp:99
+#: main/KexiMainWindow.cpp:2116 widget/utils/kexicontextmenuutils.cpp:99
 #: widget/kexipropertyeditorview.cpp:114
 #, fuzzy
 msgid "Properties"
 msgstr "Priodweddion y cywaith"
 
-#: main/KexiMainWindow.cpp:3168
+#: main/KexiMainWindow.cpp:3186
 #, fuzzy
 msgid "Recently Opened Databases"
 msgstr "Cronfa ddata newydd"
 
-#: main/KexiMainWindow.cpp:3187
+#: main/KexiMainWindow.cpp:3205
 #, fuzzy
 msgid "Recently Connected Database Servers"
 msgstr "Heb ei gysylltu â gweinydd y gronfa ddata"
 
-#: main/KexiMainWindow.cpp:3281
+#: main/KexiMainWindow.cpp:3299
 msgid "From File..."
 msgstr "O Ffeil..."
 
-#: main/KexiMainWindow.cpp:3286
+#: main/KexiMainWindow.cpp:3304
 msgid "From Server..."
 msgstr "O Weinydd..."
 
-#: main/KexiMainWindow.cpp:3389
+#: main/KexiMainWindow.cpp:3412
 #, qt-format
 msgid "Selected view is not supported for \"%1\" object."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:3391
+#: main/KexiMainWindow.cpp:3414
 #, qt-format
 msgid "Selected view (%1) is not supported by this object type (%2)."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:3485
+#: main/KexiMainWindow.cpp:3513
 msgid "Save Object As"
 msgstr "Cadw'r Gwrthrych Fel"
 
-#: main/KexiMainWindow.cpp:3506
+#: main/KexiMainWindow.cpp:3534
 #, fuzzy
 msgid "Do you want to replace it?"
 msgstr "Ydych eisiau gwaredu:"
 
 #. i18n: tag string
 #. i18n: file ./main/kexifinddialog.ui line 103
-#: main/KexiMainWindow.cpp:3508 migration/importwizard.cpp:836 rc.cpp:184
+#: main/KexiMainWindow.cpp:3536 migration/importwizard.cpp:836 rc.cpp:184
 #: widget/utils/kexicontextmenuutils.cpp:231
 msgid "&Replace"
 msgstr "A&mnewid"
 
-#: main/KexiMainWindow.cpp:3509
+#: main/KexiMainWindow.cpp:3537
 msgid "&Choose Other Name..."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:3527
+#: main/KexiMainWindow.cpp:3555
 #, fuzzy
 msgid "Please choose other name."
 msgstr "Rhowch yr enw."
 
-#: main/KexiMainWindow.cpp:3551
+#: main/KexiMainWindow.cpp:3579
 #, fuzzy, qt-format
 msgid "Saving \"%1\" object failed."
 msgstr "Cadw gwrthrych fel"
 
-#: main/KexiMainWindow.cpp:3568
+#: main/KexiMainWindow.cpp:3596
 #, qt-format
 msgid "Saving new \"%1\" object failed."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:3617 main/KexiMainWindow.cpp:4850
+#: main/KexiMainWindow.cpp:3645 main/KexiMainWindow.cpp:4888
 msgid "Save changes"
 msgstr "Cadw Newidiadau"
 
-#: main/KexiMainWindow.cpp:3619 main/KexiMainWindow.cpp:4852
+#: main/KexiMainWindow.cpp:3647 main/KexiMainWindow.cpp:4890
 #, qt-format
 msgid ""
 "Pressing this button will save all recent changes made in \"%1\" object."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:3623
+#: main/KexiMainWindow.cpp:3651
 #, qt-format
 msgid ""
 "Pressing this button will discard all recent changes made in \"%1\" object."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:3641
+#: main/KexiMainWindow.cpp:3669
 #, fuzzy
 msgid "Do you want to save changes?"
 msgstr "Ydych eisiau dileu'r rhes dewisiedig?"
 
-#: main/KexiMainWindow.cpp:4016
+#: main/KexiMainWindow.cpp:4044
 #, qt-format
 msgctxt "opening is not allowed in \"data view/design view/text view\" mode"
 msgid "opening is not allowed in \"%1\" mode"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:4207
+#: main/KexiMainWindow.cpp:4242
 #, qt-format
 msgid ""
 "Do you want to permanently delete:\n"
@@ -2001,51 +2067,51 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./plugins/queries/kexiparameterlisteditor.ui line 75
-#: main/KexiMainWindow.cpp:4211 rc.cpp:313
+#: main/KexiMainWindow.cpp:4246 rc.cpp:313
 #, fuzzy
 msgid "Delete"
 msgstr "Dileu Rhes"
 
-#: main/KexiMainWindow.cpp:4259
+#: main/KexiMainWindow.cpp:4294
 #, fuzzy
 msgid "Could not remove object."
 msgstr "Methu gwaredu ffeil \"%1\". "
 
-#: main/KexiMainWindow.cpp:4282
+#: main/KexiMainWindow.cpp:4317
 #, fuzzy, qt-format
 msgid "Renaming object \"%1\" failed."
 msgstr "Cadw gwrthrych fel"
 
-#: main/KexiMainWindow.cpp:4469
+#: main/KexiMainWindow.cpp:4507
 #, fuzzy, qt-format
 msgid "Could not start project \"%1\" in Final Mode."
 msgstr "Methwyd creu cywaith \"%1\""
 
-#: main/KexiMainWindow.cpp:4474
+#: main/KexiMainWindow.cpp:4512
 msgid "No Final Mode data found."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:4482
+#: main/KexiMainWindow.cpp:4520
 #, fuzzy
 msgid "Error reading Final Mode data."
 msgstr "Gwall tra'n darllen y ddogfen."
 
-#: main/KexiMainWindow.cpp:4512
+#: main/KexiMainWindow.cpp:4550
 #, fuzzy
 msgid "Specified plugin does not exist."
 msgstr "Nid yw ffeil %1 yn bodoli."
 
-#: main/KexiMainWindow.cpp:4521
+#: main/KexiMainWindow.cpp:4559
 #, fuzzy
 msgid "Specified object could not be opened."
 msgstr "Creuwyd cronfa ddata \"%1\" ond methwyd ei hagor"
 
-#: main/KexiMainWindow.cpp:4591
+#: main/KexiMainWindow.cpp:4629
 #, fuzzy, qt-format
 msgid "Compacting database file <nobr>\"%1\"</nobr> is not supported."
 msgstr "Ni ellir darllen y ffeil \"%1\"."
 
-#: main/KexiMainWindow.cpp:4604
+#: main/KexiMainWindow.cpp:4642
 msgid ""
 "The current project has to be closed before compacting the database. It will "
 "be open again after compacting.\n"
@@ -2053,28 +2119,38 @@ msgid ""
 "Do you want to continue?"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:4856
+#: main/KexiMainWindow.cpp:4894
 #, qt-format
 msgid ""
 "Pressing this button will ignore all unsaved changes made in \"%1\" object."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:4861
+#: main/KexiMainWindow.cpp:4899
 #, fuzzy
 msgid "Do you want to save changes before printing?"
 msgstr "Ydych eisiau dileu'r rhes dewisiedig?"
 
-#: main/KexiMainWindow.cpp:4863
+#: main/KexiMainWindow.cpp:4901
 #, fuzzy
 msgid "Do you want to save changes before making print preview?"
 msgstr "Ydych eisiau dileu'r rhes dewisiedig?"
 
-#: main/KexiMainWindow.cpp:4865
+#: main/KexiMainWindow.cpp:4903
 #, fuzzy
 msgid "Do you want to save changes before showing page setup?"
 msgstr "Ydych eisiau dileu'r rhes dewisiedig?"
 
-#: main/KexiMainWindow_p.h:43
+#: main/KexiMainWindow_p.h:83
+msgid "Task-based tabbed toolbar groups commands for application using tabs."
+msgstr ""
+
+#: main/KexiMainWindow_p.h:115
+#, fuzzy
+msgctxt "Application name as menu entry"
+msgid "Kexi"
+msgstr "kexi_"
+
+#: main/KexiMainWindow_p.h:127
 #, fuzzy
 #| msgid "&Project"
 msgid "Project"
@@ -2082,68 +2158,56 @@ msgstr "&Cywaith"
 
 #. i18n: tag text
 #. i18n: file data/kexiui.rc line 185
-#: main/KexiMainWindow_p.h:69 rc.cpp:68
+#: main/KexiMainWindow_p.h:144 rc.cpp:68
 msgid "Data"
 msgstr "Data"
 
-#: main/KexiMainWindow_p.h:92
+#: main/KexiMainWindow_p.h:158
 msgid "External Data"
 msgstr ""
 
-#: main/KexiMainWindow_p.h:121
+#: main/KexiMainWindow_p.h:186
 #, fuzzy
 msgid "Tools"
 msgstr "Cyfansymiau"
 
-#: main/KexiMainWindow_p.h:129
-#, fuzzy
-msgid "Settings"
-msgstr "Didoli"
-
-#: main/KexiMainWindow_p.h:134 migration/importwizard.cpp:1005
-#: migration/importwizard.cpp:1013 migration/importwizard.cpp:1017
-#: migration/importwizard.cpp:1021 migration/importwizard.cpp:1025
-#: migration/importwizard.cpp:1029
-msgid "Help"
-msgstr ""
-
-#: main/KexiMainWindow_p.h:475
+#: main/KexiMainWindow_p.h:611
 #, fuzzy, qt-format
 msgid "Could not start %1 application."
 msgstr "Methwyd creu cywaith \"%1\""
 
-#: main/KexiMainWindow_p.h:476
+#: main/KexiMainWindow_p.h:612
 #, fuzzy, qt-format
 msgid "Command \"%1\" failed."
 msgstr "Cadw gwrthrych fel"
 
-#: main/kexifinddialog.cpp:178
+#: main/kexifinddialog.cpp:179
 #, fuzzy
 msgid "(All fields)"
 msgstr "Enw'r tabl:"
 
-#: main/kexifinddialog.cpp:179
+#: main/kexifinddialog.cpp:180
 #, fuzzy
 msgid "(Current field)"
 msgstr "Arian"
 
-#: main/kexifinddialog.cpp:234
+#: main/kexifinddialog.cpp:235
 #, fuzzy, qt-format
 msgid "Replace in \"%1\""
 msgstr "A&mnewid"
 
 #. i18n: tag string
 #. i18n: file ./main/kexifinddialog.ui line 13
-#: main/kexifinddialog.cpp:238 rc.cpp:178
+#: main/kexifinddialog.cpp:239 rc.cpp:178
 msgid "Find"
 msgstr ""
 
-#: main/kexifinddialog.cpp:240
+#: main/kexifinddialog.cpp:241
 #, qt-format
 msgid "Find in \"%1\""
 msgstr ""
 
-#: main/kexifinddialog.cpp:263
+#: main/kexifinddialog.cpp:264
 #, fuzzy
 msgid "The search item was not found"
 msgstr "ni chafwyd y gwrthrych"
@@ -2882,20 +2946,20 @@ msgstr "Trosglwyddiad heb ei gychwyn."
 msgid "KexiDB driver version"
 msgstr ""
 
-#: kexidb/cursor.cpp:142
+#: kexidb/cursor.cpp:145
 msgid "No query statement or schema defined."
 msgstr ""
 
-#: kexidb/cursor.cpp:152
+#: kexidb/cursor.cpp:155
 msgid "Query statement is empty."
 msgstr ""
 
-#: kexidb/cursor.cpp:162
+#: kexidb/cursor.cpp:165
 #, fuzzy
 msgid "Error opening database cursor."
 msgstr "Gwall yng nghysylltiad y gronfa ddata"
 
-#: kexidb/cursor.cpp:418 kexidb/cursor.cpp:441
+#: kexidb/cursor.cpp:421 kexidb/cursor.cpp:444
 msgid "Cannot fetch next record."
 msgstr "Methu nôl y cofnod nesaf"
 
@@ -3266,7 +3330,7 @@ msgstr "Ni cheir defnyddio enw cysawd \"%1\" fel un o feysydd tabl \"%2\"."
 msgid "Could not create the same table \"%1\" twice."
 msgstr "Methwyd creu cywaith \"%1\""
 
-#: kexidb/connection.cpp:1596 plugins/tables/kexitablepart.cpp:217
+#: kexidb/connection.cpp:1596 plugins/tables/kexitablepart.cpp:219
 #, fuzzy, qt-format
 msgid "Table \"%1\" already exists."
 msgstr "Mae cronfa ddata \"%1\" yn bodoli eisoes."
@@ -4111,8 +4175,10 @@ msgid "Open object"
 msgstr "Agor cywaith"
 
 #: widget/kexibrowser.cpp:134
-msgid "Opens object selected in the list"
-msgstr ""
+#, fuzzy
+#| msgid "Deletes currently selected object."
+msgid "Opens object selected in the list."
+msgstr "Dileu'r gwrthrych a ddewisir ar hyn o bryd."
 
 #: widget/kexibrowser.cpp:155
 #, fuzzy
@@ -4123,7 +4189,7 @@ msgstr "Dileu Gwrthrych"
 #: widget/kexibrowser.cpp:155
 #, fuzzy
 #| msgid "Deletes currently selected object."
-msgid "Deletes the object selected in the list"
+msgid "Deletes the object selected in the list."
 msgstr "Dileu'r gwrthrych a ddewisir ar hyn o bryd."
 
 #: widget/kexibrowser.cpp:158
@@ -4138,7 +4204,7 @@ msgstr "Creu Cywaith"
 #: widget/kexibrowser.cpp:159
 #, fuzzy
 #| msgid "Deletes currently selected object."
-msgid "Renames the object selected in the list"
+msgid "Renames the object selected in the list."
 msgstr "Dileu'r gwrthrych a ddewisir ar hyn o bryd."
 
 #: widget/kexibrowser.cpp:167
@@ -4151,8 +4217,10 @@ msgid "Design object"
 msgstr "&Cynllunio Tabl"
 
 #: widget/kexibrowser.cpp:168
-msgid "Starts designing of the object selected in the list"
-msgstr ""
+#, fuzzy
+#| msgid "Deletes currently selected object."
+msgid "Starts designing of the object selected in the list."
+msgstr "Dileu'r gwrthrych a ddewisir ar hyn o bryd."
 
 #: widget/kexibrowser.cpp:176
 #, fuzzy
@@ -4166,7 +4234,7 @@ msgstr "Golwg &Testun"
 
 #: widget/kexibrowser.cpp:177
 #, fuzzy
-msgid "Opens selected object in the list in text view"
+msgid "Opens selected object in the list in text view."
 msgstr "Golwg &Testun"
 
 #: widget/kexibrowser.cpp:201 plugins/forms/kexiactionselectiondialog.cpp:277
@@ -4305,75 +4373,94 @@ msgstr ""
 msgid "(autonumber)"
 msgstr "Rhif y canlyniad:"
 
-#: widget/utils/kexirecordnavigator.cpp:88
+#: widget/utils/kexirecordnavigator.cpp:107
 msgid "Row:"
 msgstr "Rhes:"
 
-#: widget/utils/kexirecordnavigator.cpp:100
-#: widget/utils/kexirecordnavigator.cpp:485
-msgid "First row"
-msgstr "Rhes gyntaf"
-
-#: widget/utils/kexirecordnavigator.cpp:107
-#: widget/utils/kexirecordnavigator.cpp:486
-msgid "Previous row"
-msgstr "Rhes flaenorol"
-
-#: widget/utils/kexirecordnavigator.cpp:119
+#: widget/utils/kexirecordnavigator.cpp:128
 msgid "Current row number"
 msgstr "Rhif y rhes gyfredol"
 
-#: widget/utils/kexirecordnavigator.cpp:121
+#: widget/utils/kexirecordnavigator.cpp:130
 msgid "of"
 msgstr "o"
 
-#: widget/utils/kexirecordnavigator.cpp:136
+#: widget/utils/kexirecordnavigator.cpp:140
 msgid "Number of rows"
 msgstr "Nifer rhesi"
 
-#: widget/utils/kexirecordnavigator.cpp:148
-#: widget/utils/kexirecordnavigator.cpp:487
-msgid "Next row"
-msgstr "Rhes nesaf"
-
-#: widget/utils/kexirecordnavigator.cpp:154
-#: widget/utils/kexirecordnavigator.cpp:488
-msgid "Last row"
-msgstr "Rhes olaf"
-
-#: widget/utils/kexirecordnavigator.cpp:161
-#: widget/utils/kexirecordnavigator.cpp:489
-msgid "New row"
-msgstr "Rhes newydd"
-
-#: widget/utils/kexirecordnavigator.cpp:471
+#: widget/utils/kexirecordnavigator.cpp:461
 msgid "Editing indicator"
 msgstr ""
 
-#: widget/utils/kexirecordnavigator.cpp:485
+#: widget/utils/kexirecordnavigator.cpp:488
+msgid "First row"
+msgstr "Rhes gyntaf"
+
+#: widget/utils/kexirecordnavigator.cpp:488
 #, fuzzy
 msgid "Go to first row"
 msgstr "Rhes gyntaf"
 
-#: widget/utils/kexirecordnavigator.cpp:486
+#: widget/utils/kexirecordnavigator.cpp:489
+msgid "Previous row"
+msgstr "Rhes flaenorol"
+
+#: widget/utils/kexirecordnavigator.cpp:489
 #, fuzzy
 msgid "Go to previous row"
 msgstr "Rhes flaenorol"
 
-#: widget/utils/kexirecordnavigator.cpp:487
+#: widget/utils/kexirecordnavigator.cpp:490
+msgid "Next row"
+msgstr "Rhes nesaf"
+
+#: widget/utils/kexirecordnavigator.cpp:490
 #, fuzzy
 msgid "Go to next row"
 msgstr "Rhes nesaf"
 
-#: widget/utils/kexirecordnavigator.cpp:488
+#: widget/utils/kexirecordnavigator.cpp:491
+msgid "Last row"
+msgstr "Rhes olaf"
+
+#: widget/utils/kexirecordnavigator.cpp:491
 #, fuzzy
 msgid "Go to last row"
 msgstr "Rhes olaf"
 
-#: widget/utils/kexirecordnavigator.cpp:489
+#: widget/utils/kexirecordnavigator.cpp:492
+msgid "New row"
+msgstr "Rhes newydd"
+
+#: widget/utils/kexirecordnavigator.cpp:492
 #, fuzzy
 msgid "Go to new row"
 msgstr "Rhes newydd"
+
+#: widget/utils/kexirecordnavigator.cpp:494
+#, fuzzy
+msgid "Moves cursor to first row."
+msgstr "Rhes gyntaf"
+
+#: widget/utils/kexirecordnavigator.cpp:495
+#, fuzzy
+msgid "Moves cursor to previous row."
+msgstr "Rhes flaenorol"
+
+#: widget/utils/kexirecordnavigator.cpp:496
+#, fuzzy
+msgid "Moves cursor to next row."
+msgstr "Rhes nesaf"
+
+#: widget/utils/kexirecordnavigator.cpp:497
+#, fuzzy
+msgid "Moves cursor to last row."
+msgstr "Rhes olaf"
+
+#: widget/utils/kexirecordnavigator.cpp:498
+msgid "Moves cursor to new row and allows inserting."
+msgstr ""
 
 #: widget/utils/kexicontextmenuutils.cpp:74
 #, fuzzy
@@ -4411,12 +4498,12 @@ msgctxt "Object name : Object type"
 msgid "%1 : %2"
 msgstr ""
 
-#: widget/kexiscrollview.cpp:358
+#: widget/kexiscrollview.cpp:360
 #, fuzzy
 msgid "Outer Area"
 msgstr "Ardal ddata:"
 
-#: widget/kexiscrollview.cpp:359
+#: widget/kexiscrollview.cpp:361
 #, fuzzy
 msgid ""
 "Outer\n"
@@ -4454,7 +4541,7 @@ msgid "&Open Selected Table/Query"
 msgstr "&Agor y Tabl/Ymholiad Dewisiedig"
 
 #: widget/relations/kexirelationwidget.cpp:65
-#: widget/relations/kexirelationwidget.cpp:351
+#: widget/relations/kexirelationwidget.cpp:352
 #: plugins/queries/kexiquerydesignerguieditor.cpp:227
 #: plugins/tables/kexitablepart.cpp:70
 msgid "Table"
@@ -4472,7 +4559,7 @@ msgstr "&Cynllunio Tabl"
 msgid "&Hide Table"
 msgstr "&Cuddio Tabl"
 
-#: widget/relations/kexirelationwidget.cpp:356
+#: widget/relations/kexirelationwidget.cpp:357
 msgid "Relationship"
 msgstr "Perthynas"
 
@@ -4596,18 +4683,18 @@ msgstr "Cynnwys annilys yn y gronfa ddata "
 msgid "Row: "
 msgstr "Rhes: "
 
-#: widget/tableview/kexidataawareobjectiface.cpp:1854
+#: widget/tableview/kexidataawareobjectiface.cpp:1861
 #, fuzzy
 msgctxt "Correct Changes"
 msgid "Correct"
 msgstr "Arian"
 
-#: widget/tableview/kexidataawareobjectiface.cpp:1856
+#: widget/tableview/kexidataawareobjectiface.cpp:1863
 #, fuzzy
 msgid "Correct changes"
 msgstr "Cadw newidiadau i'r gwrthrych"
 
-#: widget/tableview/kexidataawareobjectiface.cpp:1857
+#: widget/tableview/kexidataawareobjectiface.cpp:1864
 #, fuzzy
 msgid "Discard Changes"
 msgstr "Cadw Newidiadau"
@@ -4644,13 +4731,17 @@ msgstr "Mewnosod un rhes wag uwchben yr un wedi'i dewis ar hyn o bryd"
 msgid "Row navigator"
 msgstr "Mordwywr cywaith"
 
-#: widget/tableview/kexitableview.cpp:252
+#: widget/tableview/kexitableview.cpp:253
 msgid "Add Record"
 msgstr "Ychwanegu Cofnod"
 
-#: widget/tableview/kexitableview.cpp:255
+#: widget/tableview/kexitableview.cpp:256
 msgid "Remove Record"
 msgstr "Dileu Cofnod"
+
+#: widget/tableview/kexitableview.cpp:260
+msgid "Row"
+msgstr "Rhes"
 
 #: plugins/reports/kexireportview.cpp:50
 msgid "Page:"
@@ -4669,12 +4760,26 @@ msgstr ""
 msgid "Report"
 msgstr "Adroddiad"
 
-#: plugins/reports/kexireportpart.cpp:123
+#: plugins/reports/kexireportpart.cpp:58
+#, fuzzy
+#| msgid "Create a new project"
+msgctxt "tooltip"
+msgid "Create new report"
+msgstr "Creu cywaith newydd"
+
+#: plugins/reports/kexireportpart.cpp:59
+#, fuzzy
+#| msgid "Create a new project"
+msgctxt "what's this"
+msgid "Creates new report."
+msgstr "Creu cywaith newydd"
+
+#: plugins/reports/kexireportpart.cpp:125
 #, fuzzy, qt-format
 msgid "Design of report \"%1\" has been modified."
 msgstr "<p>Addasiwyd y gwrthrych: %1 \"%2\".</p><p>Ydych eisiau ei gadw?</p>"
 
-#: plugins/reports/kexireportpart.cpp:125
+#: plugins/reports/kexireportpart.cpp:127
 #, fuzzy, qt-format
 msgid "Report \"%1\" already exists."
 msgstr "Mae cronfa ddata \"%1\" yn bodoli eisoes."
@@ -4935,7 +5040,7 @@ msgid "A command button to execute actions"
 msgstr "Botwm gwthio syml i weithredu gorchymyn"
 
 #: plugins/forms/kexidbfactory.cpp:295 plugins/forms/kexidatasourcepage.cpp:63
-#: plugins/forms/kexiformpart.cpp:548
+#: plugins/forms/kexiformpart.cpp:550
 #, fuzzy
 msgid "Data Source"
 msgstr "Tarddiad data"
@@ -5302,130 +5407,143 @@ msgctxt ""
 msgid "form"
 msgstr "Ffurflen"
 
-#: plugins/forms/kexiformpart.cpp:150 plugins/forms/kexiformpart.cpp:187
+#: plugins/forms/kexiformpart.cpp:95
+#, fuzzy
+#| msgid "Create a new project"
+msgctxt "tooltip"
+msgid "Create new form"
+msgstr "Creu cywaith newydd"
+
+#: plugins/forms/kexiformpart.cpp:96
+#, fuzzy
+msgctxt "what's this"
+msgid "Creates new form."
+msgstr "Creu cywaith newydd"
+
+#: plugins/forms/kexiformpart.cpp:152 plugins/forms/kexiformpart.cpp:189
 #, fuzzy
 msgid "Edit Tab Order..."
 msgstr "Golygu Trefn Tabiau"
 
-#: plugins/forms/kexiformpart.cpp:151
+#: plugins/forms/kexiformpart.cpp:153
 msgid "Adjust Size"
 msgstr ""
 
-#: plugins/forms/kexiformpart.cpp:171
+#: plugins/forms/kexiformpart.cpp:173
 msgid "Show Form UI Code"
 msgstr ""
 
-#: plugins/forms/kexiformpart.cpp:185
+#: plugins/forms/kexiformpart.cpp:187
 #, fuzzy
 msgid "Clear Widget Contents"
 msgstr "Cynnwys annilys yn y gronfa ddata "
 
-#: plugins/forms/kexiformpart.cpp:194
+#: plugins/forms/kexiformpart.cpp:196
 #, fuzzy
 msgid "Layout Widgets"
 msgstr "Mewnosod celfigyn"
 
-#: plugins/forms/kexiformpart.cpp:198
+#: plugins/forms/kexiformpart.cpp:200
 #, fuzzy
 msgid "&Horizontally"
 msgstr "Maint Llorweddol"
 
-#: plugins/forms/kexiformpart.cpp:200
+#: plugins/forms/kexiformpart.cpp:202
 #, fuzzy
 msgid "&Vertically"
 msgstr "Maint Fertigol"
 
-#: plugins/forms/kexiformpart.cpp:202
+#: plugins/forms/kexiformpart.cpp:204
 #, fuzzy
 msgid "In &Grid"
 msgstr "I'r Grid"
 
-#: plugins/forms/kexiformpart.cpp:205
+#: plugins/forms/kexiformpart.cpp:207
 #, fuzzy
 msgid "Horizontally in &Splitter"
 msgstr "Aliniad Llorweddol"
 
-#: plugins/forms/kexiformpart.cpp:207
+#: plugins/forms/kexiformpart.cpp:209
 #, fuzzy
 msgid "Verti&cally in Splitter"
 msgstr "Aliniad Llorweddol"
 
-#: plugins/forms/kexiformpart.cpp:211
+#: plugins/forms/kexiformpart.cpp:213
 msgid "&Break Layout"
 msgstr "&Torri'r Haenlun"
 
-#: plugins/forms/kexiformpart.cpp:218
+#: plugins/forms/kexiformpart.cpp:220
 msgid "Bring Widget to Front"
 msgstr "Anfon Celfigyn i'r Blaen"
 
-#: plugins/forms/kexiformpart.cpp:220
+#: plugins/forms/kexiformpart.cpp:222
 msgid "Send Widget to Back"
 msgstr "Anfon Celfigyn i'r Cefn"
 
-#: plugins/forms/kexiformpart.cpp:224
+#: plugins/forms/kexiformpart.cpp:226
 #, fuzzy
 msgid "Other Widgets"
 msgstr "Celfigion"
 
-#: plugins/forms/kexiformpart.cpp:228
+#: plugins/forms/kexiformpart.cpp:230
 msgid "Align Widgets Position"
 msgstr ""
 
-#: plugins/forms/kexiformpart.cpp:231
+#: plugins/forms/kexiformpart.cpp:233
 msgid "To Left"
 msgstr "I'r Chwith"
 
-#: plugins/forms/kexiformpart.cpp:233
+#: plugins/forms/kexiformpart.cpp:235
 msgid "To Right"
 msgstr "I'r Dde"
 
-#: plugins/forms/kexiformpart.cpp:235
+#: plugins/forms/kexiformpart.cpp:237
 msgid "To Top"
 msgstr "I'r Pen"
 
-#: plugins/forms/kexiformpart.cpp:237
+#: plugins/forms/kexiformpart.cpp:239
 msgid "To Bottom"
 msgstr "I'r Gwaelod"
 
-#: plugins/forms/kexiformpart.cpp:239 plugins/forms/kexiformpart.cpp:247
+#: plugins/forms/kexiformpart.cpp:241 plugins/forms/kexiformpart.cpp:249
 msgid "To Grid"
 msgstr "I'r Grid"
 
-#: plugins/forms/kexiformpart.cpp:242
+#: plugins/forms/kexiformpart.cpp:244
 msgid "Adjust Widgets Size"
 msgstr ""
 
-#: plugins/forms/kexiformpart.cpp:245
+#: plugins/forms/kexiformpart.cpp:247
 msgid "To Fit"
 msgstr "I Ffitio"
 
-#: plugins/forms/kexiformpart.cpp:249
+#: plugins/forms/kexiformpart.cpp:251
 msgid "To Shortest"
 msgstr "I'r Byrraf"
 
-#: plugins/forms/kexiformpart.cpp:251
+#: plugins/forms/kexiformpart.cpp:253
 msgid "To Tallest"
 msgstr "I'r Talaf"
 
-#: plugins/forms/kexiformpart.cpp:253
+#: plugins/forms/kexiformpart.cpp:255
 msgid "To Narrowest"
 msgstr "I'r Culaf"
 
-#: plugins/forms/kexiformpart.cpp:255
+#: plugins/forms/kexiformpart.cpp:257
 msgid "To Widest"
 msgstr "I'r Lletaf"
 
-#: plugins/forms/kexiformpart.cpp:480
+#: plugins/forms/kexiformpart.cpp:482
 #, fuzzy, qt-format
 msgid "Design of form \"%1\" has been modified."
 msgstr "<p>Addasiwyd y gwrthrych: %1 \"%2\".</p><p>Ydych eisiau ei gadw?</p>"
 
-#: plugins/forms/kexiformpart.cpp:482
+#: plugins/forms/kexiformpart.cpp:484
 #, fuzzy, qt-format
 msgid "Form \"%1\" already exists."
 msgstr "Mae cronfa ddata \"%1\" yn bodoli eisoes."
 
-#: plugins/forms/kexiformpart.cpp:551
+#: plugins/forms/kexiformpart.cpp:553
 msgid "Widgets"
 msgstr "Celfigion"
 
@@ -5683,29 +5801,47 @@ msgstr "ymholiad"
 msgid "Query"
 msgstr "Ymholiad"
 
-#: plugins/queries/kexiquerypart.cpp:151 plugins/queries/kexiquerypart.cpp:153
+#: plugins/queries/kexiquerypart.cpp:51
+#, fuzzy
+#| msgid "Create a new project"
+msgctxt "tooltip"
+msgid "Create new query"
+msgstr "Creu cywaith newydd"
+
+#: plugins/queries/kexiquerypart.cpp:52
+#, fuzzy
+msgctxt "what's this"
+msgid "Creates new query."
+msgstr "Creu cywaith newydd"
+
+#: plugins/queries/kexiquerypart.cpp:53
+#, fuzzy
+msgid "&SQL View"
+msgstr "Golwg &Data"
+
+#: plugins/queries/kexiquerypart.cpp:154 plugins/queries/kexiquerypart.cpp:156
 #, fuzzy
 msgid "Check Query"
 msgstr "Ail-ymholi"
 
-#: plugins/queries/kexiquerypart.cpp:154
+#: plugins/queries/kexiquerypart.cpp:157
 msgid "Checks query for validity."
 msgstr ""
 
-#: plugins/queries/kexiquerypart.cpp:157
+#: plugins/queries/kexiquerypart.cpp:160
 msgid "Show SQL History"
 msgstr ""
 
-#: plugins/queries/kexiquerypart.cpp:159
+#: plugins/queries/kexiquerypart.cpp:162
 msgid "Shows or hides SQL editor's history."
 msgstr ""
 
-#: plugins/queries/kexiquerypart.cpp:202
+#: plugins/queries/kexiquerypart.cpp:205
 #, fuzzy, qt-format
 msgid "Design of query \"%1\" has been modified."
 msgstr "<p>Addasiwyd y gwrthrych: %1 \"%2\".</p><p>Ydych eisiau ei gadw?</p>"
 
-#: plugins/queries/kexiquerypart.cpp:204
+#: plugins/queries/kexiquerypart.cpp:207
 #, fuzzy, qt-format
 msgid "Query \"%1\" already exists."
 msgstr "Mae cronfa ddata \"%1\" yn bodoli eisoes."
@@ -6109,43 +6245,55 @@ msgctxt ""
 msgid "table"
 msgstr "tabl"
 
-#: plugins/tables/kexitablepart.cpp:88
+#: plugins/tables/kexitablepart.cpp:71
+#, fuzzy
+msgctxt "tooltip"
+msgid "Create new table"
+msgstr "Creu cywaith newydd"
+
+#: plugins/tables/kexitablepart.cpp:72
+#, fuzzy
+msgctxt "what's this"
+msgid "Creates new table."
+msgstr "Creu cywaith newydd"
+
+#: plugins/tables/kexitablepart.cpp:90
 #: plugins/tables/kexitabledesignerview.cpp:426
 msgid "Primary Key"
 msgstr "Prif Allwedd"
 
-#: plugins/tables/kexitablepart.cpp:91
+#: plugins/tables/kexitablepart.cpp:93
 #, fuzzy
 msgid "Sets or removes primary key for currently selected field."
 msgstr "Cadw newidiadau i'r gwrthrych o'r ffenestr a ddewisir ar hyn o bryd"
 
-#: plugins/tables/kexitablepart.cpp:142
+#: plugins/tables/kexitablepart.cpp:144
 #, qt-format
 msgid ""
 "You are about to remove table \"%1\" but following objects using this table "
 "are opened:"
 msgstr ""
 
-#: plugins/tables/kexitablepart.cpp:194
+#: plugins/tables/kexitablepart.cpp:196
 #, fuzzy
 msgid "Do you want to close all windows for these objects?"
 msgstr "Ydych eisiau dileu ymholiad \"%1\"?"
 
-#: plugins/tables/kexitablepart.cpp:195
+#: plugins/tables/kexitablepart.cpp:197
 #, fuzzy
 msgid "Close windows"
 msgstr "Rhes nesaf"
 
-#: plugins/tables/kexitablepart.cpp:214
+#: plugins/tables/kexitablepart.cpp:216
 #, fuzzy, qt-format
 msgid "Design of table \"%1\" has been modified."
 msgstr "<p>Addasiwyd y gwrthrych: %1 \"%2\".</p><p>Ydych eisiau ei gadw?</p>"
 
-#: plugins/tables/kexitablepart.cpp:221
+#: plugins/tables/kexitablepart.cpp:223
 msgid "Warning! Any data in this table will be removed upon design's saving!"
 msgstr ""
 
-#: plugins/tables/kexitablepart.cpp:251
+#: plugins/tables/kexitablepart.cpp:253
 #, fuzzy
 msgid "Lookup column"
 msgstr "Colofnau'r ymholiad"
@@ -6413,6 +6561,19 @@ msgctxt "Empty table row"
 msgid "Empty Row"
 msgstr "Mewnosod Rhes &Wag"
 
+#~ msgid "Data View"
+#~ msgstr "Golwg Data"
+
+#~ msgid "Design View"
+#~ msgstr "Golwg Cynllunio"
+
+#~ msgid "Text View"
+#~ msgstr "Golwg Testun"
+
+#, fuzzy
+#~ msgid "Settings"
+#~ msgstr "Didoli"
+
 #~ msgid "&Create Object: %1..."
 #~ msgstr "&Creu Gwrthrych: %1..."
 
@@ -6432,16 +6593,8 @@ msgstr "Mewnosod Rhes &Wag"
 #~ msgstr "Creu Cywaith"
 
 #, fuzzy
-#~ msgid "Creates a new object"
-#~ msgstr "Creu cywaith newydd"
-
-#, fuzzy
 #~ msgid "KOffice Database Application"
 #~ msgstr "Gwall yng nghysylltiad y gronfa ddata"
-
-#, fuzzy
-#~ msgid "Kexi"
-#~ msgstr "kexi_"
 
 #, fuzzy
 #~ msgid "Text Label"
@@ -6484,9 +6637,6 @@ msgstr "Mewnosod Rhes &Wag"
 #, fuzzy
 #~ msgid "Hide Context Help"
 #~ msgstr "Cymorth Cyd-destun"
-
-#~ msgid "Lets you configure Kexi."
-#~ msgstr "Gadael i chi ffurweddu Kexi."
 
 #, fuzzy
 #~ msgid "Close the current window"
@@ -6577,9 +6727,6 @@ msgstr "Mewnosod Rhes &Wag"
 #, fuzzy
 #~ msgid "Navigate"
 #~ msgstr "G&wybodaeth"
-
-#~ msgid "Row"
-#~ msgstr "Rhes"
 
 #, fuzzy
 #~ msgid "The view for \"%1\" could not handle data."
