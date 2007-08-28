@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-27 05:31+0200\n"
+"POT-Creation-Date: 2007-08-28 05:43+0200\n"
 "PO-Revision-Date: 2004-02-25 13:46+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -184,8 +184,8 @@ msgid "To:"
 msgstr "I:"
 
 #: alarmtext.cpp:250
-msgctxt "@info/plain"
-msgid "Copy-to in email headers"
+msgctxt "@info/plain Copy-to in email headers"
+msgid "Cc:"
 msgstr ""
 
 #: alarmtext.cpp:251
@@ -457,12 +457,11 @@ msgstr "Dewiswch Benblwyddi"
 #| "the list, or by clicking the mouse while pressing Ctrl or Shift."
 msgctxt "@info:whatsthis"
 msgid ""
-"Select birthdays to set alarms for.\n"
-"This list shows all birthdays in <application>KAddressBook</application> "
-"except those for which alarms already exist.\n"
-"\n"
-"You can select multiple birthdays at one time by dragging the mouse over the "
-"list, or by clicking the mouse while pressing Ctrl or Shift."
+"<para>Select birthdays to set alarms for.<br />This list shows all birthdays "
+"in <application>KAddressBook</application> except those for which alarms "
+"already exist.</para><para>You can select multiple birthdays at one time by "
+"dragging the mouse over the list, or by clicking the mouse while pressing "
+"Ctrl or Shift.</para>"
 msgstr ""
 "Dewiswch benblwyddi i osod larymau iddynt.\n"
 " Dangosa'r restr hon yr holl benblwyddi yn KLlyfrCyfeiriadau heblaw am y "
@@ -517,10 +516,10 @@ msgctxt "@info"
 msgid "Error reading address book"
 msgstr "Gwall tra'n darllen y llyfr cyfeiriadau"
 
-#: birthdaymodel.cpp:113 eventlistmodel.cpp:315
+#: birthdaymodel.cpp:113
 #, fuzzy
 #| msgid "Name"
-msgctxt "@title:column"
+msgctxt "@title:column Name of person"
 msgid "Name"
 msgstr "Enw"
 
@@ -569,7 +568,7 @@ msgstr "Ellyll Larymau heb ei ganfod"
 #, qt-format
 msgctxt "@info"
 msgid ""
-"Alarms will be disabled if you stop <application>KAlarm</application>.\n"
+"Alarms will be disabled if you stop <application>KAlarm</application>.<br />"
 "(Installation or configuration error: <command>%1</command> cannot locate "
 "<command>%2</command> executable.)"
 msgstr ""
@@ -578,21 +577,20 @@ msgstr ""
 #, qt-format
 msgctxt "@info"
 msgid ""
-"Cannot enable alarms:\n"
-"Failed to register with <application>Alarm Daemon</application> (<command>%"
-"1</command>)"
+"Cannot enable alarms:<br />Failed to register with <application>Alarm "
+"Daemon</application> (<command>%1</command>)"
 msgstr ""
 
-#: daemon.cpp:308
-#, qt-format
+#: daemon.cpp:309
+#, fuzzy, qt-format
+#| msgid "An email has been queued to be sent by KMail"
 msgctxt "@info"
 msgid ""
-"Cannot enable alarms:\n"
-"Failed to start <application>Alarm Daemon</application> (<command>%1</"
-"command>)"
-msgstr ""
+"Cannot enable alarms:<br />Failed to start <application>Alarm Daemon</"
+"application> (<command>%1</command>)"
+msgstr "Rhoddwyd ebost yn y rhes i'w anfon gan KMail"
 
-#: daemon.cpp:794
+#: daemon.cpp:795
 #, fuzzy
 msgctxt "@action"
 msgid "Enable &Alarms"
@@ -1492,8 +1490,15 @@ msgctxt "@title:column"
 msgid "Message, File or Command"
 msgstr "Neges, Ffeil, neu Orchymyn"
 
+#: eventlistmodel.cpp:315
+#, fuzzy
+#| msgid "Name"
+msgctxt "@title:column Template name"
+msgid "Name"
+msgstr "Enw"
+
 #: eventlistmodel.cpp:579 eventlistmodel.cpp:616
-msgctxt "@info"
+msgctxt "@info Alarm never occurs"
 msgid "Never"
 msgstr ""
 
@@ -1902,8 +1907,7 @@ msgstr "Anal&luogi"
 #| msgid "An email has been queued to be sent by KMail"
 msgctxt "@info"
 msgid ""
-"Unable to start <application>KMail</application>\n"
-"(<message>%1</message>)"
+"Unable to start <application>KMail</application><br />(<message>%1</message>)"
 msgstr "Rhoddwyd ebost yn y rhes i'w anfon gan KMail"
 
 #: functions.cpp:1377
@@ -1948,7 +1952,7 @@ msgctxt "Name of the weekday"
 msgid "Sunday"
 msgstr "Sw^n"
 
-#: kalarmapp.cpp:322
+#: kalarmapp.cpp:321
 #, fuzzy, qt-format
 #| msgid "%1 incompatible with %2"
 msgctxt "@info:shell"
@@ -1956,69 +1960,69 @@ msgid ""
 "<icode>%1</icode>, <icode>%2</icode>, <icode>%3</icode> mutually exclusive"
 msgstr "%1 yn anghytun â %2"
 
-#: kalarmapp.cpp:354
+#: kalarmapp.cpp:353
 #, qt-format
 msgctxt "@info:shell"
 msgid ""
 "<icode>%1</icode>: Event <resource>%2</resource> not found, or not editable"
 msgstr ""
 
-#: kalarmapp.cpp:386 kalarmapp.cpp:388 kalarmapp.cpp:398 kalarmapp.cpp:487
-#: kalarmapp.cpp:489 kalarmapp.cpp:498 kalarmapp.cpp:569 kalarmapp.cpp:571
-#: kalarmapp.cpp:573 kalarmapp.cpp:589 kalarmapp.cpp:599 kalarmapp.cpp:602
-#: kalarmapp.cpp:604
+#: kalarmapp.cpp:385 kalarmapp.cpp:387 kalarmapp.cpp:397 kalarmapp.cpp:486
+#: kalarmapp.cpp:488 kalarmapp.cpp:497 kalarmapp.cpp:568 kalarmapp.cpp:570
+#: kalarmapp.cpp:572 kalarmapp.cpp:588 kalarmapp.cpp:598 kalarmapp.cpp:601
+#: kalarmapp.cpp:603
 #, fuzzy, qt-format
 #| msgid "%1 incompatible with %2"
 msgctxt "@info:shell"
 msgid "<icode>%1</icode> incompatible with <icode>%2</icode>"
 msgstr "%1 yn anghytun â %2"
 
-#: kalarmapp.cpp:390
+#: kalarmapp.cpp:389
 #, fuzzy, qt-format
 #| msgid "message incompatible with %1"
 msgctxt "@info:shell"
 msgid "message incompatible with <icode>%1</icode>"
 msgstr "neges yn anghytun â %1"
 
-#: kalarmapp.cpp:420
+#: kalarmapp.cpp:419
 #, fuzzy, qt-format
 #| msgid "%1: invalid email address"
 msgctxt "@info:shell"
 msgid "<icode>%1</icode>: invalid email address"
 msgstr "%1: cyfeiriad ebost annilys"
 
-#: kalarmapp.cpp:438 kalarmapp.cpp:440 kalarmapp.cpp:442 kalarmapp.cpp:444
-#: kalarmapp.cpp:507 kalarmapp.cpp:557 kalarmapp.cpp:559 kalarmapp.cpp:634
+#: kalarmapp.cpp:437 kalarmapp.cpp:439 kalarmapp.cpp:441 kalarmapp.cpp:443
+#: kalarmapp.cpp:506 kalarmapp.cpp:556 kalarmapp.cpp:558 kalarmapp.cpp:633
 #, fuzzy, qt-format
 #| msgid "%1 incompatible with %2"
 msgctxt "@info:shell"
 msgid "<icode>%1</icode> requires <icode>%2</icode>"
 msgstr "%1 yn anghytun â %2"
 
-#: kalarmapp.cpp:461 kalarmapp.cpp:471 kalarmapp.cpp:478 kalarmapp.cpp:504
-#: kalarmapp.cpp:518 kalarmapp.cpp:534 kalarmapp.cpp:580 kalarmapp.cpp:622
-#: kalarmapp.cpp:631
+#: kalarmapp.cpp:460 kalarmapp.cpp:470 kalarmapp.cpp:477 kalarmapp.cpp:503
+#: kalarmapp.cpp:517 kalarmapp.cpp:533 kalarmapp.cpp:579 kalarmapp.cpp:621
+#: kalarmapp.cpp:630
 #, fuzzy, qt-format
 #| msgid "Invalid %1 parameter"
 msgctxt "@info:shell"
 msgid "Invalid <icode>%1</icode> parameter"
 msgstr "Paramedr %1 annilys"
 
-#: kalarmapp.cpp:520 kalarmapp.cpp:536 kalarmapp.cpp:614
+#: kalarmapp.cpp:519 kalarmapp.cpp:535 kalarmapp.cpp:613
 #, fuzzy, qt-format
 #| msgid "Invalid %1 parameter for date-only alarm"
 msgctxt "@info:shell"
 msgid "Invalid <icode>%1</icode> parameter for date-only alarm"
 msgstr "Paramedr %1 annilys ar gyfer larwm dyddiad-yn-unig"
 
-#: kalarmapp.cpp:524
+#: kalarmapp.cpp:523
 #, fuzzy, qt-format
 #| msgid "%1 incompatible with %2"
 msgctxt "@info:shell"
 msgid "<icode>%1</icode> earlier than <icode>%2</icode>"
 msgstr "%1 yn anghytun â %2"
 
-#: kalarmapp.cpp:543
+#: kalarmapp.cpp:542
 #, qt-format
 msgctxt "@info:shell"
 msgid ""
@@ -2026,21 +2030,21 @@ msgid ""
 "longer than <icode>%3</icode> interval"
 msgstr ""
 
-#: kalarmapp.cpp:585
+#: kalarmapp.cpp:584
 #, fuzzy, qt-format
 #| msgid "%1 incompatible with %2"
 msgctxt "@info:shell"
 msgid "<icode>%1</icode> requires <icode>%2</icode> or <icode>%3</icode>"
 msgstr "%1 yn anghytun â %2"
 
-#: kalarmapp.cpp:591
+#: kalarmapp.cpp:590
 #, qt-format
 msgctxt "@info:shell"
 msgid ""
 "<icode>%1</icode> requires speech synthesis to be configured using KTTSD"
 msgstr ""
 
-#: kalarmapp.cpp:719
+#: kalarmapp.cpp:718
 #, fuzzy, qt-format
 #| msgid ": option(s) only valid with a message/%1/%2"
 msgctxt "@info:shell"
@@ -2048,7 +2052,7 @@ msgid ""
 ": option(s) only valid with a message/<icode>%1</icode>/<icode>%2</icode>"
 msgstr ": dewisiad(au) yn ddilys â neges yn unig/%1/%2"
 
-#: kalarmapp.cpp:739
+#: kalarmapp.cpp:738
 #, fuzzy
 #| msgid ""
 #| "\n"
@@ -2062,7 +2066,7 @@ msgstr ""
 "Defnyddiwch --help i gael rhestr o ddewisiadau llinell orchymyn sydd ar "
 "gael.\n"
 
-#: kalarmapp.cpp:811
+#: kalarmapp.cpp:810
 #, fuzzy
 #| msgid ""
 #| "Quitting will disable alarms\n"
@@ -2074,19 +2078,19 @@ msgstr ""
 "Bydd cau'n analluogi larymau\n"
 " (unwaith y ceuir unrhwy ffenestri neges larwm)."
 
-#: kalarmapp.cpp:1764
+#: kalarmapp.cpp:1763
 #, fuzzy
 msgctxt "@info"
 msgid "Error creating temporary script file"
 msgstr "Gwall wrth galw KMail"
 
-#: kalarmapp.cpp:1856
+#: kalarmapp.cpp:1855
 #, fuzzy
 msgctxt "@info"
 msgid "Pre-alarm action:"
 msgstr "Gosodiadau Larwm Ebost"
 
-#: kalarmapp.cpp:1861
+#: kalarmapp.cpp:1860
 #, fuzzy
 msgctxt "@info"
 msgid "Post-alarm action:"
@@ -2114,105 +2118,102 @@ msgid "sent-mail"
 msgstr "ebostau anfonedig"
 
 #: kamail.cpp:117
-#, qt-format
+#, fuzzy, qt-format
+#| msgid "An email has been queued to be sent by KMail"
 msgctxt "@info"
 msgid ""
-"Invalid 'From' email address.\n"
-"<application>KMail</application> identity <resource>%1</resource> not found."
-msgstr ""
+"Invalid 'From' email address.<br /><application>KMail</application> identity "
+"<resource>%1</resource> not found."
+msgstr "Rhoddwyd ebost yn y rhes i'w anfon gan KMail"
 
 #: kamail.cpp:126
 #, fuzzy
 msgctxt "@info"
 msgid ""
-"No 'From' email address is configured (no default <application>KMail</"
-"application> identity found)\n"
-"Please set it in <application>KMail</application> or in the "
-"<application>KAlarm</application> Preferences dialog."
+"<para>No 'From' email address is configured (no default <application>KMail</"
+"application> identity found)</para><para>Please set it in "
+"<application>KMail</application> or in the <application>KAlarm</application> "
+"Preferences dialog.</para>"
 msgstr ""
 "Ni ffurfweddir cyfeiriad ebost 'Oddi wrth'.\n"
 "Gallwch ei osod yn yr ymgom Hoffterau %1."
 
-#: kamail.cpp:129
+#: kamail.cpp:130
 #, fuzzy
 msgctxt "@info"
 msgid ""
-"No 'From' email address is configured.\n"
-"Please set it in the KDE Control Center or in the <application>KAlarm</"
-"application> Preferences dialog."
+"<para>No 'From' email address is configured.</para><para>Please set it in "
+"the KDE Control Center or in the <application>KAlarm</application> "
+"Preferences dialog.</para>"
 msgstr ""
 "Ni ffurfweddir cyfeiriad ebost 'Oddi wrth'.\n"
 "Gallwch ei osod yn y Ganolfan Reoli KDE neu yn yr ymgom Hoffterau %1."
 
-#: kamail.cpp:133
+#: kamail.cpp:135
 #, fuzzy
 msgctxt "@info"
 msgid ""
-"No 'From' email address is configured.\n"
-"Please set it in the <application>KAlarm</application> Preferences dialog."
+"<para>No 'From' email address is configured.</para><para>Please set it in "
+"the <application>KAlarm</application> Preferences dialog.</para>"
 msgstr ""
 "Ni ffurfweddir cyfeiriad ebost 'Oddi wrth'.\n"
 "Gallwch ei osod yn yr ymgom Hoffterau %1."
 
-#: kamail.cpp:160
+#: kamail.cpp:163
 #, qt-format
 msgctxt "@info"
 msgid "<command>%1</command> not found"
 msgstr ""
 
-#: kamail.cpp:259 kamail.cpp:304
+#: kamail.cpp:262 kamail.cpp:307
 msgctxt "@info"
 msgid "Error calling <application>KMail</application>"
 msgstr ""
 
-#: kamail.cpp:375
+#: kamail.cpp:378
 #, fuzzy, qt-format
 #| msgid ""
 #| "Error attaching file:\n"
 #| "%1"
 msgctxt "@info"
-msgid ""
-"Error attaching file:\n"
-"<filename>%1</filename>"
+msgid "Error attaching file: <filename>%1</filename>"
 msgstr ""
 "Gwall wrth atodi ffeil:\n"
 "%1"
 
-#: kamail.cpp:380
+#: kamail.cpp:383
 #, fuzzy, qt-format
 #| msgid ""
 #| "Attachment not found:\n"
 #| "%1"
 msgctxt "@info"
-msgid ""
-"Attachment not found:\n"
-"<filename>%1</filename>"
+msgid "Attachment not found: <filename>%1</filename>"
 msgstr ""
 "Ni ganfuwyd atodiad:\n"
 "%1"
 
-#: kamail.cpp:460
+#: kamail.cpp:463
 #, fuzzy
 #| msgid "An email has been queued to be sent by KMail"
 msgctxt "@info"
 msgid "An email has been queued to be sent by <application>KMail</application>"
 msgstr "Rhoddwyd ebost yn y rhes i'w anfon gan KMail"
 
-#: kamail.cpp:461
+#: kamail.cpp:464
 #, fuzzy
 #| msgid "An email has been queued to be sent"
 msgctxt "@info"
 msgid "An email has been queued to be sent"
 msgstr "Rhoddwyd ebost yn y rhes i'w anfon"
 
-#: kamail.cpp:743
+#: kamail.cpp:746
 #, fuzzy
 #| msgid "Failed to send email"
 msgctxt "@info"
 msgid "Failed to send email"
 msgstr "Methwyd anfon ebost"
 
-#: kamail.cpp:744
+#: kamail.cpp:747
 #, qt-format
 msgctxt "@info"
 msgid ""
@@ -2264,7 +2265,7 @@ msgstr "&Diddymu os yn hwyr"
 
 #: latecancel.cpp:75
 #, fuzzy
-msgctxt "@label:whatsthis"
+msgctxt "@info:whatsthis"
 msgid "Enter how late will cause the alarm to be canceled"
 msgstr "Rhowch destun y neges larwm. Gall fod yn aml-linell."
 
@@ -2506,12 +2507,17 @@ msgid "Hide Archived Alarms"
 msgstr "Larymau Darfodedig"
 
 #: mainwindow.cpp:357
-#, qt-format
+#, fuzzy, qt-format
+#| msgid ""
+#| "Failed to save calendar to\n"
+#| "'%1'"
 msgctxt "@info"
 msgid ""
-"Failure to create menus\n"
-"(perhaps <filename>%1</filename> missing or corrupted)"
+"Failure to create menus (perhaps <filename>%1</filename> missing or "
+"corrupted)"
 msgstr ""
+"Methu cadw'r calendr i\n"
+" '%1'"
 
 #: mainwindow.cpp:388
 #, fuzzy
@@ -2853,7 +2859,7 @@ msgstr "&Sain"
 #, fuzzy
 #| msgid "An email has been queued to be sent by KMail"
 msgctxt "@info:tooltip Locate this email in KMail"
-msgid "Locate in <application>KMail<application>"
+msgid "Locate in <application>KMail</application>"
 msgstr "Rhoddwyd ebost yn y rhes i'w anfon gan KMail"
 
 #: messagewin.cpp:615
@@ -5846,7 +5852,7 @@ msgstr "Gweld Gosodiadau"
 
 #: resourceconfigdialog.cpp:62
 #, fuzzy
-msgctxt "@label:textbox"
+msgctxt "@label:textbox Resource name"
 msgid "Name:"
 msgstr "Enw"
 
@@ -5973,9 +5979,9 @@ msgstr "Gwaredu'r eitem sy'n amlygedig ar hyn o bryd o'r rhestr eithriadau"
 #: resourceselector.cpp:107
 msgctxt "@info:whatsthis"
 msgid ""
-"Remove the highlighted resource from the list.\n"
-"The resource itself is left intact, and may subsequently be reinstated in "
-"the list if desired."
+"<para>Remove the highlighted resource from the list.</para><para>The "
+"resource itself is left intact, and may subsequently be reinstated in the "
+"list if desired.</para>"
 msgstr ""
 
 #: resourceselector.cpp:131
@@ -6167,7 +6173,7 @@ msgstr "Os yn frith, dangosa'r larwm gynnwys ffeil destun neu ffeil ddelwedd."
 #: sounddlg.cpp:104
 #, fuzzy
 #| msgid "Volume"
-msgctxt "@title:group"
+msgctxt "@title:group Sound volume"
 msgid "Volume"
 msgstr "Lefel Sain"
 
