@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeutils/kgpg.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-31 05:50+0200\n"
+"POT-Creation-Date: 2007-09-01 05:36+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -130,7 +130,7 @@ msgstr "&Mewnforio"
 
 #: keylistview.cpp:386 keylistview.cpp:442 keylistview.cpp:557
 #: keylistview.cpp:624 keysmanager.cpp:577 keysmanager.cpp:1232
-#: keysmanager.cpp:1753 keysmanager.cpp:1819 keysmanager.cpp:2393
+#: keysmanager.cpp:1753 keysmanager.cpp:1833 keysmanager.cpp:2407
 #, qt-format
 msgid "%1 Keys, %2 Groups"
 msgstr ""
@@ -144,7 +144,7 @@ msgstr "Parod"
 msgid "Loading Keys..."
 msgstr ""
 
-#: keylistview.cpp:619
+#: keylistview.cpp:619 keysmanager.cpp:1766
 #, qt-format
 msgid "%1 key"
 msgid_plural "%1 keys"
@@ -648,8 +648,8 @@ msgid ""
 "Continue key export?"
 msgstr ""
 
-#: keysmanager.cpp:1488 keysmanager.cpp:1736 keysmanager.cpp:2254
-#: keysmanager.cpp:2328 kgpg.cpp:648 kgpgeditor.cpp:314 kgpgeditor.cpp:324
+#: keysmanager.cpp:1488 keysmanager.cpp:1736 keysmanager.cpp:2268
+#: keysmanager.cpp:2342 kgpg.cpp:648 kgpgeditor.cpp:314 kgpgeditor.cpp:324
 #: kgpglibrary.cpp:210
 msgid "Warning"
 msgstr ""
@@ -723,52 +723,52 @@ msgstr ""
 msgid "<qt>Are you sure you want to delete group <b>%1</b> ?</qt>"
 msgstr ""
 
-#: keysmanager.cpp:1736 keysmanager.cpp:2255
+#: keysmanager.cpp:1736 keysmanager.cpp:2269
 msgid "Delete"
 msgstr ""
 
-#: keysmanager.cpp:1796
+#: keysmanager.cpp:1810
 msgid ""
 "<qt>You cannot create a group containing signatures, subkeys or other groups."
 "</qt>"
 msgstr ""
 
-#: keysmanager.cpp:1800
+#: keysmanager.cpp:1814
 msgid "Create New Group"
 msgstr ""
 
-#: keysmanager.cpp:1800
+#: keysmanager.cpp:1814
 msgid "Enter new group name:"
 msgstr ""
 
-#: keysmanager.cpp:1806
+#: keysmanager.cpp:1820
 msgid ""
 "Following keys are not valid or not trusted and will not be added to the "
 "group:"
 msgstr ""
 
-#: keysmanager.cpp:1822
+#: keysmanager.cpp:1836
 #, qt-format
 msgid ""
 "<qt>No valid or trusted key was selected. The group <b>%1</b> will not be "
 "created.</qt>"
 msgstr ""
 
-#: keysmanager.cpp:1853
+#: keysmanager.cpp:1867
 msgid ""
 "Following keys are in the group but are not valid or not in your keyring. "
 "They will be removed from the group."
 msgstr ""
 
-#: keysmanager.cpp:1863
+#: keysmanager.cpp:1877
 msgid "Group Properties"
 msgstr "Priodweddau'r Grwp"
 
-#: keysmanager.cpp:1933
+#: keysmanager.cpp:1947
 msgid "You can only sign primary keys. Please check your selection."
 msgstr ""
 
-#: keysmanager.cpp:1948
+#: keysmanager.cpp:1962
 #, qt-format
 msgid ""
 "<qt>You are about to sign key:<br /><br />%1<br />ID: %2<br />Fingerprint: "
@@ -777,91 +777,91 @@ msgid ""
 "your communications</qt>"
 msgstr ""
 
-#: keysmanager.cpp:1965
+#: keysmanager.cpp:1979
 msgid ""
 "<qt>You are about to sign the following keys in one pass.<br/><b>If you have "
 "not carefully checked all fingerprints, the security of your communications "
 "may be compromised.</b></qt>"
 msgstr ""
 
-#: keysmanager.cpp:2009 keysmanager.cpp:2012
+#: keysmanager.cpp:2023 keysmanager.cpp:2026
 msgid " ("
 msgstr " ("
 
-#: keysmanager.cpp:2009 keysmanager.cpp:2012
+#: keysmanager.cpp:2023 keysmanager.cpp:2026
 msgid ")"
 msgstr ")"
 
-#: keysmanager.cpp:2009
+#: keysmanager.cpp:2023
 #, qt-format
 msgid "<qt>Bad passphrase, key <b>%1</b> not signed.</qt>"
 msgstr ""
 
-#: keysmanager.cpp:2012
+#: keysmanager.cpp:2026
 #, qt-format
 msgid "<qt>The key <b>%1</b> is already signed.</qt>"
 msgstr ""
 
-#: keysmanager.cpp:2053
+#: keysmanager.cpp:2067
 msgid "All signatures for this key are already in your keyring"
 msgid_plural "All signatures for this keys are already in your keyring"
 msgstr[0] ""
 msgstr[1] ""
 
-#: keysmanager.cpp:2144
+#: keysmanager.cpp:2158
 msgid "Edit key manually to delete this signature."
 msgstr ""
 
-#: keysmanager.cpp:2163
+#: keysmanager.cpp:2177
 msgid "Edit key manually to delete a self-signature."
 msgstr ""
 
-#: keysmanager.cpp:2167
+#: keysmanager.cpp:2181
 #, qt-format
 msgid ""
 "<qt>Are you sure you want to delete signature<br /><b>%1</b> from key:<br /"
 "><b>%2</b>?</qt>"
 msgstr ""
 
-#: keysmanager.cpp:2189
+#: keysmanager.cpp:2203
 msgid "Requested operation was unsuccessful, please edit the key manually."
 msgstr ""
 
-#: keysmanager.cpp:2232
+#: keysmanager.cpp:2246
 #, qt-format
 msgid "<qt>Cannot open file <b>%1</b> for printing...</qt>"
 msgstr ""
 
-#: keysmanager.cpp:2253
+#: keysmanager.cpp:2267
 #, qt-format
 msgid ""
 "<p>Delete <b>SECRET KEY</b> pair <b>%1</b>?</p>Deleting this key pair means "
 "you will never be able to decrypt files encrypted with this key again."
 msgstr ""
 
-#: keysmanager.cpp:2320
+#: keysmanager.cpp:2334
 #, qt-format
 msgid ""
 "<qt>The following are secret key pairs:<br/><b>%1</b>They will not be "
 "deleted.</qt>"
 msgstr ""
 
-#: keysmanager.cpp:2328
+#: keysmanager.cpp:2342
 #, qt-format
 msgid "<qt><b>Delete the following public key?</b></qt>"
 msgid_plural "<qt><b>Delete the following %1 public keys?</b></qt>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: keysmanager.cpp:2399
+#: keysmanager.cpp:2413
 msgid "Key Import"
 msgstr ""
 
-#: keysmanager.cpp:2406
+#: keysmanager.cpp:2420
 msgid "Open File"
 msgstr "Agor Ffeil"
 
-#: keysmanager.cpp:2413
+#: keysmanager.cpp:2427
 msgid "Importing..."
 msgstr "Mewnforio..."
 
