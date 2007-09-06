@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeprint4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-05 05:30+0200\n"
+"POT-Creation-Date: 2007-09-06 05:36+0200\n"
 "PO-Revision-Date: 2004-08-19 09:54+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -2422,6 +2422,64 @@ msgstr "Gosodiadau Dirprwy"
 msgid "&Use proxy server"
 msgstr "&Defnyddio gweinydd dirprwy"
 
+#: kdeprintd/kprintprocess.cpp:79
+msgid "File transfer failed."
+msgstr "Methu trosglwyddo'r ffeil."
+
+#: kdeprintd/kprintprocess.cpp:86
+#, qt-format
+msgid "Abnormal process termination (<b>%1</b>)."
+msgstr "Terfyniad proses anarferol  (<b>%1</b>)."
+
+#: kdeprintd/kprintprocess.cpp:88
+#, qt-format
+msgid "<b>%1</b>: execution failed with message:<p>%2</p>"
+msgstr "<b>%1</b>: methodd gweithrediad efo'r neges:<p>%2</p>"
+
+#: kdeprintd/kdeprintd.cpp:169 kprinter.cpp:807
+#, fuzzy, qt-format
+#| msgid ""
+#| "<p><nobr>A print error occurred. Error message received from system:</"
+#| "nobr></p><br>%1"
+msgid ""
+"<p><nobr>A print error occurred. Error message received from system:</nobr></"
+"p><br />%1"
+msgstr ""
+"<p><nobr>Digwyddodd gwall argraffu. Y neges gwall a dderbynwyd o'r cysawd "
+"oedd:</nobr></p><br>%1"
+
+#: kdeprintd/kdeprintd.cpp:190
+#, fuzzy
+msgid ""
+"Some of the files to printed are not readable by the KDE print daemon. This "
+"may happen if you are trying to print as a different user to the one "
+"currently logged in. To continue printing, you need to provide root's "
+"password."
+msgstr ""
+"Mae'r daemon argraffu KDE yn methu darllen rhai o'r ffeiliau i'w argraffu.  "
+"Gall hyn ddigwydd os ydych yn ceisio argraffu fel  defnyddiwr gwahanol o'r "
+"un sydd wedi mewngofnodi.  I fynd ymlaen efo argraffu, rhaid i chi ddarparu "
+"cyfrinair gwraidd. "
+
+#: kdeprintd/kdeprintd.cpp:195
+#, fuzzy
+msgid "Enter the root password"
+msgstr "Darparu cyfrinair gwraidd"
+
+#: kdeprintd/kdeprintd.cpp:214 kdeprintd/kdeprintd.cpp:216
+#, qt-format
+msgid "Printing Status - %1"
+msgstr "Cyflwr Argraffu - %1"
+
+#: kdeprintd/kdeprintd.cpp:277
+msgid "Printing system"
+msgstr " Cysawd argraffu"
+
+#: kdeprintd/kdeprintd.cpp:283
+#, qt-format
+msgid "Authentication failed (user name=%1)"
+msgstr "Methodd y dilysiant (enw'r defnyddiwr=%1)"
+
 #: kmjob.cpp:115
 msgid "Queued"
 msgstr "Mewn Ciw"
@@ -3792,11 +3850,11 @@ msgstr "Ychwanegu dewisiad"
 msgid "Delete item"
 msgstr " Dileu eitem"
 
-#: management/kxmlcommanddlg.cpp:157 kfilelist.cpp:128
+#: management/kxmlcommanddlg.cpp:157 kfilelist.cpp:129
 msgid "Move up"
 msgstr "Symud i fyny"
 
-#: management/kxmlcommanddlg.cpp:158 kfilelist.cpp:135
+#: management/kxmlcommanddlg.cpp:158 kfilelist.cpp:136
 msgid "Move down"
 msgstr "Symud i lawr"
 
@@ -4604,19 +4662,19 @@ msgstr ""
 msgid "Path"
 msgstr "Llwybr"
 
-#: kfilelist.cpp:108
+#: kfilelist.cpp:109
 msgid "Add file"
 msgstr "Ychwanegu  ffeil"
 
-#: kfilelist.cpp:114
+#: kfilelist.cpp:115
 msgid "Remove file"
 msgstr "Gwaredu ffeil"
 
-#: kfilelist.cpp:121
+#: kfilelist.cpp:122
 msgid "Open file"
 msgstr "Agor ffeil"
 
-#: kfilelist.cpp:142
+#: kfilelist.cpp:143
 msgid ""
 "Drag file(s) here or use the button to open a file dialog. Leave empty for "
 "<b>&lt;STDIN&gt;</b>."
@@ -4712,18 +4770,6 @@ msgstr "Cynhyrchu data argraffu: tudalen %1"
 #: kprinter.cpp:536
 msgid "Previewing..."
 msgstr "Rhagolygu..."
-
-#: kprinter.cpp:807 kdeprintd.cpp:168
-#, fuzzy, qt-format
-#| msgid ""
-#| "<p><nobr>A print error occurred. Error message received from system:</"
-#| "nobr></p><br>%1"
-msgid ""
-"<p><nobr>A print error occurred. Error message received from system:</nobr></"
-"p><br />%1"
-msgstr ""
-"<p><nobr>Digwyddodd gwall argraffu. Y neges gwall a dderbynwyd o'r cysawd "
-"oedd:</nobr></p><br>%1"
 
 #: foomatic/kfoomaticprinterimpl.cpp:51 lpdunix/klpdunixprinterimpl.cpp:73
 msgid ""
@@ -5236,52 +5282,6 @@ msgstr "(gwrthod swyddi)"
 msgid "(accepting jobs)"
 msgstr "(derbyn swyddi)"
 
-#: kprintprocess.cpp:73
-msgid "File transfer failed."
-msgstr "Methu trosglwyddo'r ffeil."
-
-#: kprintprocess.cpp:81
-#, qt-format
-msgid "Abnormal process termination (<b>%1</b>)."
-msgstr "Terfyniad proses anarferol  (<b>%1</b>)."
-
-#: kprintprocess.cpp:83
-#, qt-format
-msgid "<b>%1</b>: execution failed with message:<p>%2</p>"
-msgstr "<b>%1</b>: methodd gweithrediad efo'r neges:<p>%2</p>"
-
-#: kdeprintd.cpp:189
-#, fuzzy
-msgid ""
-"Some of the files to printed are not readable by the KDE print daemon. This "
-"may happen if you are trying to print as a different user to the one "
-"currently logged in. To continue printing, you need to provide root's "
-"password."
-msgstr ""
-"Mae'r daemon argraffu KDE yn methu darllen rhai o'r ffeiliau i'w argraffu.  "
-"Gall hyn ddigwydd os ydych yn ceisio argraffu fel  defnyddiwr gwahanol o'r "
-"un sydd wedi mewngofnodi.  I fynd ymlaen efo argraffu, rhaid i chi ddarparu "
-"cyfrinair gwraidd. "
-
-#: kdeprintd.cpp:194
-#, fuzzy
-msgid "Enter the root password"
-msgstr "Darparu cyfrinair gwraidd"
-
-#: kdeprintd.cpp:213 kdeprintd.cpp:215
-#, qt-format
-msgid "Printing Status - %1"
-msgstr "Cyflwr Argraffu - %1"
-
-#: kdeprintd.cpp:276
-msgid "Printing system"
-msgstr " Cysawd argraffu"
-
-#: kdeprintd.cpp:282
-#, qt-format
-msgid "Authentication failed (user name=%1)"
-msgstr "Methodd y dilysiant (enw'r defnyddiwr=%1)"
-
 #. i18n: tag text
 #. i18n: file kprintpreviewui.rc line 4
 #. i18n: tag text
@@ -5575,11 +5575,11 @@ msgstr ""
 "b> wedi'i osod yn iawn, neu nid oes gennych y fersiwn priodol; mae hi ar "
 "gael wrth http://printing.kde.org/downloads/."
 
-#: kprinterpropertydialog.cpp:87 kprinterpropertydialog.cpp:147
+#: kprinterpropertydialog.cpp:84 kprinterpropertydialog.cpp:144
 msgid "Printer Configuration"
 msgstr "Ffurfweddiad Argraffydd"
 
-#: kprinterpropertydialog.cpp:147
+#: kprinterpropertydialog.cpp:144
 #, fuzzy
 msgid "No configurable options for that printer."
 msgstr "Dim dewisiadau ffurfweddiedadwy i'r argraffydd yna!"
