@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeutils/kgpg.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-12 05:40+0200\n"
+"POT-Creation-Date: 2007-09-14 05:34+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -23,41 +23,121 @@ msgstr "Manylion"
 msgid "Info"
 msgstr "Gwybo"
 
-#. i18n: tag string
-#. i18n: file keyproperties.ui line 19
-#: keyinfodialog.cpp:39 rc.cpp:327
-msgid "Key Properties"
-msgstr ""
-
-#: keyinfodialog.cpp:143 keyinfodialog.cpp:148
-msgid "none"
-msgstr "dim"
-
-#: keyinfodialog.cpp:178
+#: keyinfodialog.cpp:98
 msgid "Choose New Expiration"
 msgstr ""
 
-#: keyinfodialog.cpp:183
+#: keyinfodialog.cpp:104
 msgid "Unlimited"
 msgstr "Heb derfyn"
 
+#: keyinfodialog.cpp:211
+#, fuzzy
+#| msgid "Group Properties"
+msgid "Key properties"
+msgstr "Priodweddau'r Grwp"
+
+#. i18n: tag string
+#. i18n: file newkey.ui line 91
+#: keyinfodialog.cpp:230 rc.cpp:617
+msgid "Key ID:"
+msgstr "ID Allwedd :"
+
+#: keyinfodialog.cpp:231
+msgid "Comment:"
+msgstr "Sylwad:"
+
+#: keyinfodialog.cpp:232
+msgid "Creation:"
+msgstr ""
+
+#: keyinfodialog.cpp:233 kgpgkeygenerate.cpp:63
+msgid "Expiration:"
+msgstr "Dilys Hyd :"
+
+#: keyinfodialog.cpp:234
+msgid "Trust:"
+msgstr ""
+
+#: keyinfodialog.cpp:235
+msgid "Owner trust:"
+msgstr ""
+
+#: keyinfodialog.cpp:236
+msgid "Algorithm:"
+msgstr ""
+
+#: keyinfodialog.cpp:237
+msgid "Length:"
+msgstr "Hyd:"
+
+#: keyinfodialog.cpp:248
+msgid "Don't Know"
+msgstr ""
+
+#: keyinfodialog.cpp:249
+msgid "Do NOT Trust"
+msgstr ""
+
 #: keyinfodialog.cpp:250
-msgid "Could not change expiration"
+msgid "Marginally"
 msgstr ""
 
 #: keyinfodialog.cpp:251
+msgid "Fully"
+msgstr ""
+
+#: keyinfodialog.cpp:252
+msgid "Ultimately"
+msgstr ""
+
+#: keyinfodialog.cpp:300
+msgid "Photo"
+msgstr ""
+
+#: keyinfodialog.cpp:301
+msgid "No Photo"
+msgstr ""
+
+#: keyinfodialog.cpp:332
+msgid "Disable key"
+msgstr ""
+
+#: keyinfodialog.cpp:336
+msgid "Change Expiration..."
+msgstr ""
+
+#: keyinfodialog.cpp:337
+msgid "Change Passphrase..."
+msgstr ""
+
+#: keyinfodialog.cpp:360
+#, fuzzy
+#| msgid "Fingerprint:"
+msgid "Fingerprint"
+msgstr "Olion Bys :"
+
+#: keyinfodialog.cpp:386 keyinfodialog.cpp:409
+msgid "none"
+msgstr "dim"
+
+#: keyinfodialog.cpp:513
+msgid "Could not change expiration"
+msgstr ""
+
+#: keyinfodialog.cpp:513
 msgid "Bad passphrase. Expiration of the key has not been changed."
 msgstr ""
 
-#: keyinfodialog.cpp:268
+#: keyinfodialog.cpp:542
 msgid "Passphrase for the key was changed"
 msgstr ""
 
-#: keyinfodialog.cpp:271
+#: keyinfodialog.cpp:545
 msgid "Bad old passphrase, the passphrase for the key was not changed"
 msgstr ""
 
-#: keyinfodialog.cpp:271
+#: keyinfodialog.cpp:545
 msgid "Could not change passphrase"
 msgstr ""
 
@@ -118,7 +198,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 32
-#: keylistview.cpp:348 kgpginterface.cpp:3122 rc.cpp:398
+#: keylistview.cpp:348 kgpginterface.cpp:3122 rc.cpp:327
 #, fuzzy
 msgid "Import"
 msgstr "&Mewnforio"
@@ -292,7 +372,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 141
-#: keyservers.cpp:276 kgpgview.cpp:392 rc.cpp:425
+#: keyservers.cpp:276 kgpgview.cpp:392 rc.cpp:354
 msgid "&Import"
 msgstr "&Mewnforio"
 
@@ -567,7 +647,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file newkey.ui line 13
-#: keysmanager.cpp:581 rc.cpp:667
+#: keysmanager.cpp:581 rc.cpp:596
 msgid "New Key Pair Created"
 msgstr ""
 
@@ -669,7 +749,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 167
-#: keysmanager.cpp:1493 rc.cpp:428
+#: keysmanager.cpp:1493 rc.cpp:357
 #, fuzzy
 msgid "Export"
 msgstr "&Allforio"
@@ -1464,12 +1544,6 @@ msgstr "Ebost:"
 msgid "Commen&t (optional):"
 msgstr ""
 
-#. i18n: tag string
-#. i18n: file keyproperties.ui line 152
-#: kgpgkeygenerate.cpp:63 rc.cpp:342
-msgid "Expiration:"
-msgstr "Dilys Hyd :"
-
 #: kgpgkeygenerate.cpp:76
 #, fuzzy
 #| msgid "Never"
@@ -1850,10 +1924,8 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file adduid.ui line 29
 #. i18n: tag string
-#. i18n: file keyproperties.ui line 65
-#. i18n: tag string
 #. i18n: file newkey.ui line 67
-#: rc.cpp:6 rc.cpp:333 rc.cpp:682
+#: rc.cpp:6 rc.cpp:611
 msgid "Email:"
 msgstr "Ebost:"
 
@@ -2421,7 +2493,7 @@ msgstr ""
 #. i18n: file keyexport.ui line 41
 #. i18n: tag string
 #. i18n: file sourceselect.ui line 34
-#: rc.cpp:306 rc.cpp:723
+#: rc.cpp:306 rc.cpp:652
 msgid "Clipboard"
 msgstr "Gludfwrdd"
 
@@ -2436,7 +2508,7 @@ msgstr "&Allweddi"
 #. i18n: file keyexport.ui line 58
 #. i18n: tag string
 #. i18n: file sourceselect.ui line 43
-#: rc.cpp:312 rc.cpp:726
+#: rc.cpp:312 rc.cpp:655
 msgid "File:"
 msgstr "Ffeil:"
 
@@ -2467,140 +2539,8 @@ msgid "Clean key"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file keyproperties.ui line 29
-#. i18n: tag string
-#. i18n: file newkey.ui line 37
-#: rc.cpp:330 rc.cpp:676
-msgid "Name:"
-msgstr "Enw:"
-
-#. i18n: tag string
-#. i18n: file keyproperties.ui line 92
-#: rc.cpp:336
-msgid "Comment:"
-msgstr "Sylwad:"
-
-#. i18n: tag string
-#. i18n: file keyproperties.ui line 122
-#: rc.cpp:339
-msgid "Creation:"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file keyproperties.ui line 188
-#: rc.cpp:345
-msgid "Trust:"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file keyproperties.ui line 246
-#: rc.cpp:348
-msgid "Owner trust:"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file keyproperties.ui line 260
-#: rc.cpp:351
-msgid "Don't Know"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file keyproperties.ui line 265
-#: rc.cpp:354
-msgid "Do NOT Trust"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file keyproperties.ui line 270
-#: rc.cpp:357
-msgid "Marginally"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file keyproperties.ui line 275
-#: rc.cpp:360
-msgid "Fully"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file keyproperties.ui line 280
-#: rc.cpp:363
-msgid "Ultimately"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file keyproperties.ui line 292
-#. i18n: tag string
-#. i18n: file newkey.ui line 91
-#: rc.cpp:366 rc.cpp:688
-msgid "Key ID:"
-msgstr "ID Allwedd :"
-
-#. i18n: tag string
-#. i18n: file keyproperties.ui line 322
-#: rc.cpp:369
-msgid "Algorithm:"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file keyproperties.ui line 355
-#: rc.cpp:372
-msgid "Length:"
-msgstr "Hyd:"
-
-#. i18n: tag string
-#. i18n: file keyproperties.ui line 386
-#. i18n: tag string
-#. i18n: file newkey.ui line 115
-#: rc.cpp:375 rc.cpp:694
-msgid "Fingerprint:"
-msgstr "Olion Bys :"
-
-#. i18n: tag string
-#. i18n: file keyproperties.ui line 444
-#: rc.cpp:378
-msgid ""
-"<qt><b>Photo:</b><br />\n"
-"\t\t\t<p>A photo can be included with a public key for extra security. The "
-"photo can be used as an additional method of authenticating the key. "
-"However, it should not be relied upon as the only form of authentication.</"
-"p>\n"
-"\t\t\t</qt>"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file keyproperties.ui line 453
-#: rc.cpp:383
-msgid "No Photo"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file keyproperties.ui line 483
-#: rc.cpp:386
-msgid "Photo Id:"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file keyproperties.ui line 530
-#: rc.cpp:389
-msgid "Disable key"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file keyproperties.ui line 546
-#: rc.cpp:392
-msgid "Change Expiration..."
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file keyproperties.ui line 562
-#: rc.cpp:395
-msgid "Change Passphrase..."
-msgstr ""
-
-#. i18n: tag string
 #. i18n: file keyserver.ui line 38
-#: rc.cpp:401
+#: rc.cpp:330
 msgid ""
 "<qt><b>Key Server:</b><br /> <p>A Key Server is a centralized repository of "
 "PGP/GnuPG keys connected to the Internet which can be conveniently accessed "
@@ -2616,13 +2556,13 @@ msgstr ""
 #. i18n: file keyserver.ui line 41
 #. i18n: tag string
 #. i18n: file keyserver.ui line 173
-#: rc.cpp:404 rc.cpp:431
+#: rc.cpp:333 rc.cpp:360
 msgid "Key server:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 52
-#: rc.cpp:407
+#: rc.cpp:336
 msgid ""
 "<b>Key Server Drop Down Dialog:</b>\n"
 "Allows the user to select the Key Server which will be used to import PGP/"
@@ -2631,7 +2571,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 61
-#: rc.cpp:411
+#: rc.cpp:340
 msgid ""
 "<qt><b>Text to search or ID of the key to import:</b><br />\n"
 "\t\t\t\t<p>There are multiple ways to search for a key, you can use a text "
@@ -2645,7 +2585,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 70
-#: rc.cpp:416
+#: rc.cpp:345
 msgid "Text to search or ID of the key to import:"
 msgstr ""
 
@@ -2653,19 +2593,19 @@ msgstr ""
 #. i18n: file keyserver.ui line 88
 #. i18n: tag string
 #. i18n: file keyserver.ui line 219
-#: rc.cpp:419 rc.cpp:445
+#: rc.cpp:348 rc.cpp:374
 msgid "Honor HTTP proxy:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 131
-#: rc.cpp:422
+#: rc.cpp:351
 msgid "&Search"
 msgstr " &Chwilio"
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 188
-#: rc.cpp:434
+#: rc.cpp:363
 msgid ""
 "<qt><b>Key to be exported:</b><br />\n"
 "\t\t\t\t<p>This allows the user to specify the key from the drop down list "
@@ -2675,19 +2615,19 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 191
-#: rc.cpp:439
+#: rc.cpp:368
 msgid "Key to be exported:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 204
-#: rc.cpp:442
+#: rc.cpp:371
 msgid "Export attributes (photo id)"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 264
-#: rc.cpp:448
+#: rc.cpp:377
 msgid ""
 "<qt><b>Export:</b><br />\n"
 "\t\t\t\t<p>Depressing this key will export the specified key to the "
@@ -2697,13 +2637,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 267
-#: rc.cpp:453
+#: rc.cpp:382
 msgid "&Export"
 msgstr "&Allforio"
 
 #. i18n: tag text
 #. i18n: file keysmanager.rc line 6
-#: rc.cpp:456
+#: rc.cpp:385
 msgid "&Keys"
 msgstr "&Allweddi"
 
@@ -2711,158 +2651,158 @@ msgstr "&Allweddi"
 #. i18n: file keysmanager.rc line 23
 #. i18n: tag text
 #. i18n: file kgpg.rc line 13
-#: rc.cpp:459 rc.cpp:588
+#: rc.cpp:388 rc.cpp:517
 msgid "&View"
 msgstr ""
 
 #. i18n: tag text
 #. i18n: file keysmanager.rc line 27
-#: rc.cpp:462
+#: rc.cpp:391
 msgid "&Show Details"
 msgstr "&Dangos Manylion"
 
 #. i18n: tag text
 #. i18n: file keysmanager.rc line 38
-#: rc.cpp:465
+#: rc.cpp:394
 msgid "&Groups"
 msgstr "&Grwpiau"
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 12
-#: rc.cpp:468
+#: rc.cpp:397
 msgid "Custom decryption command."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 18
-#: rc.cpp:471
+#: rc.cpp:400
 msgid "Custom encryption options"
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 21
-#: rc.cpp:474
+#: rc.cpp:403
 msgid "Allow custom encryption options"
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 25
-#: rc.cpp:477
+#: rc.cpp:406
 msgid "File encryption key."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 28
-#: rc.cpp:480
+#: rc.cpp:409
 #, fuzzy
 msgid "Encrypt files"
 msgstr "Cêl-ysgrifo"
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 32
-#: rc.cpp:483
+#: rc.cpp:412
 msgid "Use ASCII armored encryption."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 36
-#: rc.cpp:486
+#: rc.cpp:415
 msgid "Allow encryption with untrusted keys."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 40
-#: rc.cpp:489
+#: rc.cpp:418
 msgid "Hide the user ID."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 44
-#: rc.cpp:492
+#: rc.cpp:421
 msgid "Shred the source file after encryption."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 48
-#: rc.cpp:495
+#: rc.cpp:424
 msgid "Enable PGP 6 compatibility."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 52
-#: rc.cpp:498
+#: rc.cpp:427
 msgid "Use *.pgp extension for encrypted files."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 59
-#: rc.cpp:501
+#: rc.cpp:430
 msgid "The path of the gpg configuration file."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 62
-#: rc.cpp:504
+#: rc.cpp:433
 msgid "The path of the gpg binary used by KGpg."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 66
-#: rc.cpp:507
+#: rc.cpp:436
 msgid "GPG groups"
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 81
-#: rc.cpp:510
+#: rc.cpp:439
 msgid "Is the first time the application runs."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 85
-#: rc.cpp:513
+#: rc.cpp:442
 msgid "The size of the editor window."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 88
-#: rc.cpp:516
+#: rc.cpp:445
 msgid "Show the trust value in key manager."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 92
-#: rc.cpp:519
+#: rc.cpp:448
 msgid "Show the expiration value in key manager."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 96
-#: rc.cpp:522
+#: rc.cpp:451
 msgid "Show the size value in key manager."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 100
-#: rc.cpp:525
+#: rc.cpp:454
 msgid "Show the creation value in key manager."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 104
-#: rc.cpp:528
+#: rc.cpp:457
 msgid "Show only secret keys in key manager."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 108
-#: rc.cpp:531
+#: rc.cpp:460
 msgid "Hide revoked and disabled keys in key manager."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 115
-#: rc.cpp:534
+#: rc.cpp:463
 msgid "Use the mouse selection instead of the clipboard."
 msgstr ""
 
@@ -2870,13 +2810,13 @@ msgstr ""
 #. i18n: file kgpg.kcfg line 119
 #. i18n: tag string
 #. i18n: file kgpgwizard.ui line 288
-#: rc.cpp:537 rc.cpp:658
+#: rc.cpp:466 rc.cpp:587
 msgid "Start KGpg automatically at KDE startup."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 123
-#: rc.cpp:540
+#: rc.cpp:469
 msgid ""
 "Display a warning before creating temporary files during remote file "
 "operations."
@@ -2884,183 +2824,183 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 127
-#: rc.cpp:543
+#: rc.cpp:472
 msgid "Choose default left-click behavior"
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 134
-#: rc.cpp:546
+#: rc.cpp:475
 msgid "Handle encrypted drops"
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 142
-#: rc.cpp:549
+#: rc.cpp:478
 msgid "Handle unencrypted drops"
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 150
-#: rc.cpp:552
+#: rc.cpp:481
 msgid "Show the \"sign file\" service menu."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 158
-#: rc.cpp:555
+#: rc.cpp:484
 msgid "Show the \"decrypt file\" service menu."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 170
-#: rc.cpp:558
+#: rc.cpp:487
 msgid "Show tip of the day."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 177
-#: rc.cpp:561
+#: rc.cpp:490
 msgid "Color used for trusted keys."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 181
-#: rc.cpp:564
+#: rc.cpp:493
 msgid "Color used for revoked keys."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 185
-#: rc.cpp:567
+#: rc.cpp:496
 msgid "Color used for unknown keys."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 189
-#: rc.cpp:570
+#: rc.cpp:499
 msgid "Color used for untrusted keys."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 193
-#: rc.cpp:573
+#: rc.cpp:502
 msgid "Color used for ulitmately trusted keys."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 197
-#: rc.cpp:576
+#: rc.cpp:505
 msgid "Color used for marginally trusted keys."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 201
-#: rc.cpp:579
+#: rc.cpp:508
 msgid "Color used for expired keys."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 208
-#: rc.cpp:582
+#: rc.cpp:511
 #, fuzzy
 msgid "Font"
 msgstr "Misoedd"
 
 #. i18n: tag label
 #. i18n: file kgpg.kcfg line 215
-#: rc.cpp:585
+#: rc.cpp:514
 msgid "Use HTTP proxy when available."
 msgstr ""
 
 #. i18n: tag text
 #. i18n: file kgpg.rc line 18
-#: rc.cpp:591
+#: rc.cpp:520
 msgid "Si&gnature"
 msgstr "Ll&ofnod"
 
 #. i18n: tag text
 #. i18n: file kgpg.rc line 25
-#: rc.cpp:594
+#: rc.cpp:523
 #, fuzzy
 msgid "&Settings"
 msgstr "Gosodiadau Eang"
 
 #. i18n: tag string
 #. i18n: file kgpgrevokewidget.ui line 18
-#: rc.cpp:597
+#: rc.cpp:526
 msgid "Create revocation certificate for"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgrevokewidget.ui line 28
-#: rc.cpp:600
+#: rc.cpp:529
 msgid "key id"
 msgstr "iD Allwedd"
 
 #. i18n: tag string
 #. i18n: file kgpgrevokewidget.ui line 45
-#: rc.cpp:603
+#: rc.cpp:532
 msgid "Reason for revocation:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgrevokewidget.ui line 56
-#: rc.cpp:606
+#: rc.cpp:535
 msgid "No Reason"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgrevokewidget.ui line 61
-#: rc.cpp:609
+#: rc.cpp:538
 msgid "Key Has Been Compromised"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgrevokewidget.ui line 66
-#: rc.cpp:612
+#: rc.cpp:541
 msgid "Key is Superseded"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgrevokewidget.ui line 71
-#: rc.cpp:615
+#: rc.cpp:544
 msgid "Key is No Longer Used"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgrevokewidget.ui line 81
-#: rc.cpp:618
+#: rc.cpp:547
 msgid "Description:"
 msgstr "Disgrifiad:"
 
 #. i18n: tag string
 #. i18n: file kgpgrevokewidget.ui line 96
-#: rc.cpp:621
+#: rc.cpp:550
 msgid "Save certificate:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgrevokewidget.ui line 111
-#: rc.cpp:624
+#: rc.cpp:553
 msgid "Print certificate"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgrevokewidget.ui line 121
-#: rc.cpp:627
+#: rc.cpp:556
 msgid "Import into keyring"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgwizard.ui line 13
-#: rc.cpp:630
+#: rc.cpp:559
 msgid "KGpg Wizard"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgwizard.ui line 57
-#: rc.cpp:633
+#: rc.cpp:562
 msgid ""
 "<h1>Welcome to the KGpg Wizard</h1>\n"
 "This wizard will first setup some basic configuration options required for "
@@ -3070,13 +3010,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgwizard.ui line 86
-#: rc.cpp:637
+#: rc.cpp:566
 msgid "You have GnuPG version:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgwizard.ui line 108
-#: rc.cpp:640
+#: rc.cpp:569
 msgid ""
 "Unless you want to try some unusual settings, just click on the \"next\" "
 "button."
@@ -3084,25 +3024,25 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgwizard.ui line 121
-#: rc.cpp:643
+#: rc.cpp:572
 msgid "KGpg needs to know where your GnuPG configuration file is stored."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgwizard.ui line 153
-#: rc.cpp:646
+#: rc.cpp:575
 msgid "<br>Path to your GnuPG options file:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgwizard.ui line 206
-#: rc.cpp:649
+#: rc.cpp:578
 msgid "Install shredder on my desktop"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgwizard.ui line 263
-#: rc.cpp:652
+#: rc.cpp:581
 #, c-format
 msgid ""
 "<qt>This will install a shredder icon on your desktop.<br>\n"
@@ -3117,13 +3057,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgwizard.ui line 316
-#: rc.cpp:661
+#: rc.cpp:590
 msgid "Your default key:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file kgpgwizard.ui line 335
-#: rc.cpp:664
+#: rc.cpp:593
 msgid ""
 "KGpg will now launch the key generation dialog to create your own key pair "
 "for encryption and decryption."
@@ -3131,37 +3071,49 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file newkey.ui line 19
-#: rc.cpp:670
+#: rc.cpp:599
 msgid "New Key Created"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file newkey.ui line 25
-#: rc.cpp:673
+#: rc.cpp:602
 msgid "You have successfully created the following key:"
 msgstr ""
 
 #. i18n: tag string
+#. i18n: file newkey.ui line 37
+#: rc.cpp:605
+msgid "Name:"
+msgstr "Enw:"
+
+#. i18n: tag string
 #. i18n: file newkey.ui line 53
-#: rc.cpp:679
+#: rc.cpp:608
 msgid "textLabel7"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file newkey.ui line 77
-#: rc.cpp:685
+#: rc.cpp:614
 msgid "textLabel8"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file newkey.ui line 101
-#: rc.cpp:691
+#: rc.cpp:620
 msgid "textLabel10"
 msgstr ""
 
 #. i18n: tag string
+#. i18n: file newkey.ui line 115
+#: rc.cpp:623
+msgid "Fingerprint:"
+msgstr "Olion Bys :"
+
+#. i18n: tag string
 #. i18n: file newkey.ui line 137
-#: rc.cpp:697
+#: rc.cpp:626
 msgid ""
 "<qt><b>Set as your default key:</b><br />\n"
 "\t\t\t<p>Checking this option sets the newly created key pair as the default "
@@ -3171,19 +3123,19 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file newkey.ui line 140
-#: rc.cpp:702
+#: rc.cpp:631
 msgid "Set as your default key"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file newkey.ui line 152
-#: rc.cpp:705
+#: rc.cpp:634
 msgid "Revocation Certificate"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file newkey.ui line 158
-#: rc.cpp:708
+#: rc.cpp:637
 msgid ""
 "It is recommended to save or print a revocation certificate in case your key "
 "is compromised."
@@ -3191,36 +3143,36 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file newkey.ui line 170
-#: rc.cpp:711
+#: rc.cpp:640
 msgid "Save as:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file newkey.ui line 186
-#: rc.cpp:714
+#: rc.cpp:643
 #, fuzzy
 msgid "Print"
 msgstr "Preivat :"
 
 #. i18n: tag string
 #. i18n: file searchres.ui line 42
-#: rc.cpp:717
+#: rc.cpp:646
 #, fuzzy
 msgid "Keys"
 msgstr "&Allweddi"
 
 #. i18n: tag string
 #. i18n: file searchres.ui line 52
-#: rc.cpp:720
+#: rc.cpp:649
 msgid "Key to import:"
 msgstr ""
 
-#: rc.cpp:727
+#: rc.cpp:656
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "KD wrth KGyfieithu"
 
-#: rc.cpp:728
+#: rc.cpp:657
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kyfieithu@dotmon.com"
