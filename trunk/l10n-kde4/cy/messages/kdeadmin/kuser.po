@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kuser\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-10 05:33+0200\n"
+"POT-Creation-Date: 2007-10-11 05:42+0200\n"
 "PO-Revision-Date: 2004-02-26 13:58+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -37,17 +37,17 @@ msgid "Copy skeleton"
 msgstr "Copio sgerbwd"
 
 #: ku_adduser.cpp:71
-#, qt-format
+#, kde-format
 msgid "User with UID %1 already exists."
 msgstr "Mae defnyddiwr UID%1 eisioes yn bodoli."
 
 #: ku_adduser.cpp:78
-#, qt-format
+#, kde-format
 msgid "User with RID %1 already exists."
 msgstr "Mae defnyddiwr RID%1 eisioes yn bodoli."
 
 #: ku_adduser.cpp:120
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "Folder %1 already exists.\n"
 "%2 may become owner and permissions may change.\n"
@@ -58,22 +58,23 @@ msgstr ""
 " A ydych yn bendant am ddefnyddio %3?\n"
 
 #: ku_adduser.cpp:127
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "%1 is not a folder."
 msgstr "Nid yw %1 yn blygell"
 
 #: ku_adduser.cpp:129 ku_adduser.cpp:156
-#, qt-format
+#, kde-format
+#| msgid "stat() failed on %1."
 msgid "stat() failed on %1."
 msgstr ""
 
 #: ku_adduser.cpp:149
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Mailbox %1 already exists (uid=%2)."
 msgstr "Mae'r blwch ebost %1 eisioes yn bodoli (uid=%2)"
 
 #: ku_adduser.cpp:153
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "%1 exists but is not a regular file."
 msgstr "Mae %1 yn bodoli ond nid yw'n  ffeil safonol"
 
@@ -133,19 +134,19 @@ msgid "Delete User"
 msgstr "Dileu Defnyddiwr"
 
 #: ku_deluser.cpp:38
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 #| msgid "<p>Deleting user <b>%1</b><p>Also perform the following actions:"
 msgid "<p>Deleting user <b>%1</b><br />Also perform the following actions:</p>"
 msgstr ""
 "<p>Yn dileu defnyddiwr <b>%1</b><p>Cyflawna hefyd y gweithrediadau canlynol:"
 
 #: ku_deluser.cpp:41
-#, qt-format
+#, kde-format
 msgid "Delete &home folder: %1"
 msgstr "Dileu'r &blygell gartref: %1"
 
 #: ku_deluser.cpp:43
-#, qt-format
+#, kde-format
 msgid "Delete &mailbox: %1"
 msgstr "Dileu'r blwch &ebost: %1"
 
@@ -245,17 +246,17 @@ msgid "You need to type a group name."
 msgstr ""
 
 #: ku_editgroup.cpp:287
-#, qt-format
+#, kde-format
 msgid "Group with name %1 already exists."
 msgstr "Mae grwp o'r enw %1 eisioes yn bodoli"
 
 #: ku_editgroup.cpp:294
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Group with SID %1 already exists."
 msgstr "Mae grwp â gid %1 eisioes yn bodoli"
 
 #: ku_editgroup.cpp:299
-#, qt-format
+#, kde-format
 msgid "Group with gid %1 already exists."
 msgstr "Mae grwp â gid %1 eisioes yn bodoli"
 
@@ -454,7 +455,7 @@ msgid "User Properties"
 msgstr "Priodweddau Defnyddwyr"
 
 #: ku_edituser.cpp:357
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "User Properties - %1 Selected Users"
 msgstr "Priodweddau Defnyddwyr"
 
@@ -479,17 +480,17 @@ msgid "You need to specify a samba RID."
 msgstr ""
 
 #: ku_edituser.cpp:972
-#, qt-format
+#, kde-format
 msgid "User with UID %1 already exists"
 msgstr "Mae defnyddiwr UID%1 eisioes yn bodoli"
 
 #: ku_edituser.cpp:982
-#, qt-format
+#, kde-format
 msgid "User with RID %1 already exists"
 msgstr "Mae defnyddiwr RID%1 eisioes yn bodoli."
 
 #: ku_edituser.cpp:996
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "<p>The shell %1 is not yet listed in the file %2. In order to use this shell "
 "you must add it to this file first.<br />Do you want to add it now?</p>"
@@ -515,7 +516,7 @@ msgid "Groups file name not set, please check 'Settings/Files'"
 msgstr ""
 
 #: ku_groupfiles.cpp:82
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "stat() call on file %1 failed: %2\n"
 "Check KUser settings."
@@ -525,13 +526,13 @@ msgstr ""
 "\n"
 
 #: ku_groupfiles.cpp:96 ku_userfiles.cpp:194
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Error opening %1 for reading."
 msgstr "Gwall tra'n agor %1 i'w ddarllen"
 
 #: ku_groupfiles.cpp:172 ku_groupfiles.cpp:179 ku_userfiles.cpp:293
 #: ku_userfiles.cpp:300
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Error opening %1 for writing."
 msgstr "Gwall tra'n agor %1 i ysgrifennu ynddo"
 
@@ -608,7 +609,10 @@ msgid "KDE User Manager"
 msgstr "Rheolydd Defnyddwyr KDE"
 
 #: ku_mainview.cpp:144
-#, qt-format
+#, kde-format
+#| msgid ""
+#| "You have selected %1 users. Do you really want to change the password for "
+#| "all the selected users?"
 msgid ""
 "You have selected %1 users. Do you really want to change the password for "
 "all the selected users?"
@@ -629,12 +633,12 @@ msgid "Please type the name of the new user:"
 msgstr ""
 
 #: ku_mainview.cpp:204
-#, qt-format
+#, kde-format
 msgid "User with name %1 already exists."
 msgstr "Mae defnyddiwr o'r enw %1 yn bod eisoes."
 
 #: ku_mainview.cpp:357
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "You are using private groups.\n"
 "Do you want to delete the user's private group '%1'?"
@@ -653,19 +657,22 @@ msgstr ""
 "Mae gennych fwy na 65534 o grwpiau!?!? Rydych wedi rhedeg allan o le gid!"
 
 #: ku_mainview.cpp:455
-#, qt-format
+#, kde-format
+#| msgid ""
+#| "The group '%1' is the primary group of one or more users (such as '%2'); "
+#| "it cannot be deleted."
 msgid ""
 "The group '%1' is the primary group of one or more users (such as '%2'); it "
 "cannot be deleted."
 msgstr ""
 
 #: ku_mainview.cpp:464
-#, qt-format
+#, kde-format
 msgid "Do you really want to delete the group '%1'?"
 msgstr "Ydych wir eisiau dileu'r grŵp '%1'?"
 
 #: ku_mainview.cpp:468
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Do you really want to delete the %1 selected groups?"
 msgstr "Ydych wir eisiau dileu'r grŵp '%1'?"
 
@@ -711,13 +718,13 @@ msgid "Hide System Users/Groups"
 msgstr ""
 
 #: ku_misc.cpp:54
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 #| msgid "Can't create backup file for %1"
 msgid "Can not create backup file for %1"
 msgstr "Methu creu ffeil wrth gefn ar gyfer %1"
 
 #: ku_misc.cpp:104
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "Error creating symlink %1.\n"
 "Error: %2"
@@ -726,7 +733,7 @@ msgstr ""
 " Gwall: %2\n"
 
 #: ku_misc.cpp:114
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "Cannot change owner of folder %1.\n"
 "Error: %2"
@@ -735,7 +742,7 @@ msgstr ""
 " Gwall: %2\n"
 
 #: ku_misc.cpp:119
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "Cannot change permissions on folder %1.\n"
 "Error: %2"
@@ -744,7 +751,7 @@ msgstr ""
 " Gwall: %2\n"
 
 #: ku_misc.cpp:129
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "Cannot change owner of file %1.\n"
 "Error: %2"
@@ -753,7 +760,7 @@ msgstr ""
 " Gwall: %2\n"
 
 #: ku_misc.cpp:134
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "Cannot change permissions on file %1.\n"
 "Error: %2"
@@ -762,17 +769,17 @@ msgstr ""
 " Gwall: %2\n"
 
 #: ku_misc.cpp:153
-#, qt-format
+#, kde-format
 msgid "File %1 does not exist."
 msgstr "Nid yw'r ffeil %1 mewn bod."
 
 #: ku_misc.cpp:158
-#, qt-format
+#, kde-format
 msgid "Cannot open file %1 for reading."
 msgstr "Methu agor ffeil %1 i'w ddarllen."
 
 #: ku_misc.cpp:163
-#, qt-format
+#, kde-format
 msgid "Cannot open file %1 for writing."
 msgstr "Methu agor ffeil %1 i'w ysgrifennu."
 
@@ -829,7 +836,7 @@ msgid "A connection with this name already exists."
 msgstr "Mae defnyddiwr o'r enw %1 yn bod eisoes."
 
 #: ku_selectconn.cpp:128
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Do you really want to delete the connection '%1'?"
 msgstr "Ydych wir eisiau dileu'r grŵp '%1'?"
 
@@ -839,14 +846,14 @@ msgid "Delete Connection"
 msgstr "&Ymlaen"
 
 #: ku_user.cpp:161
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Cannot create home folder for %1: it is null or empty."
 msgstr ""
 "Methu creu plygell gartref ar gyfer %1: 'null' ydi o, neu'n wag\n"
 "\n"
 
 #: ku_user.cpp:167
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "Cannot create home folder %1.\n"
 "Error: %2"
@@ -855,7 +862,7 @@ msgstr ""
 " Gwall: %2\n"
 
 #: ku_user.cpp:173
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "Cannot change owner of home folder %1.\n"
 "Error: %2"
@@ -864,7 +871,7 @@ msgstr ""
 " Gwall: %2\n"
 
 #: ku_user.cpp:178
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "Cannot change permissions on home folder %1.\n"
 "Error: %2"
@@ -873,7 +880,7 @@ msgstr ""
 " Gwall: %2\n"
 
 #: ku_user.cpp:193
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "Folder %1 already exists.\n"
 "Will make %2 owner and change permissions.\n"
@@ -884,7 +891,7 @@ msgstr ""
 " Ydych chi eisiau fynd ymlaen?\n"
 
 #: ku_user.cpp:197 ku_user.cpp:215
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "Cannot change owner of %1 folder.\n"
 "Error: %2"
@@ -893,7 +900,7 @@ msgstr ""
 " Gwall: %2\n"
 
 #: ku_user.cpp:201
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "Folder %1 left 'as is'.\n"
 "Verify ownership and permissions for user %2 who may not be able to log in."
@@ -903,14 +910,14 @@ msgstr ""
 "efallai, yn gallu mewngofnodi!\n"
 
 #: ku_user.cpp:205
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "%1 exists and is not a folder. User %2 will not be able to log in."
 msgstr ""
 "Mae %1 mewn bod ac nid plygell ydi o.  Ni fydd defnyddiwr %2 yn gallu "
 "mewngofnodi!"
 
 #: ku_user.cpp:211
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "Cannot create %1 folder.\n"
 "Error: %2"
@@ -919,7 +926,7 @@ msgstr ""
 " Gwall: %2\n"
 
 #: ku_user.cpp:219
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "stat call on %1 failed.\n"
 "Error: %2"
@@ -928,12 +935,12 @@ msgstr ""
 " Gwall: %2\n"
 
 #: ku_user.cpp:234
-#, qt-format
+#, kde-format
 msgid "Cannot create %1: %2"
 msgstr "Methu creu %1: %2"
 
 #: ku_user.cpp:244
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "Cannot change owner on mailbox: %1\n"
 "Error: %2"
@@ -942,7 +949,7 @@ msgstr ""
 " Gwall: %2\n"
 
 #: ku_user.cpp:250
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "Cannot change permissions on mailbox: %1\n"
 "Error: %2"
@@ -951,17 +958,17 @@ msgstr ""
 " Gwall: %2\n"
 
 #: ku_user.cpp:265
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Folder %1 does not exist, cannot copy skeleton for %2."
 msgstr "Nid yw'r blygell %1 mewn bod, methu copïo sgerbwd ar gyfer %2"
 
 #: ku_user.cpp:270
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Folder %1 does not exist, cannot copy skeleton."
 msgstr "Nid yw'r blygell %1 mewn bod, methu copïo sgerbwd"
 
 #: ku_user.cpp:288
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "Cannot remove home folder %1.\n"
 "Error: %2"
@@ -970,12 +977,12 @@ msgstr ""
 " Gwall: %2\n"
 
 #: ku_user.cpp:292
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Removal of home folder %1 failed (uid = %2, gid = %3)."
 msgstr "Methwyd gwaredu'r blygell gartref %1 (uid = %2, gid = %3)"
 
 #: ku_user.cpp:295
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "stat call on file %1 failed.\n"
 "Error: %2"
@@ -984,7 +991,7 @@ msgstr ""
 " Gwall: %2\n"
 
 #: ku_user.cpp:313
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "Cannot remove crontab %1.\n"
 "Error: %2"
@@ -993,7 +1000,7 @@ msgstr ""
 " Gwall: %2\n"
 
 #: ku_user.cpp:327
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "Cannot remove mailbox %1.\n"
 "Error: %2"
@@ -1013,7 +1020,7 @@ msgstr ""
 "\n"
 
 #: ku_userfiles.cpp:110
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "Stat call on file %1 failed: %2\n"
 "Check KUser settings."
@@ -1023,12 +1030,12 @@ msgstr ""
 "\n"
 
 #: ku_userfiles.cpp:124
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Error opening %1 for reading.\n"
 msgstr "Gwall tra'n agor %1 i'w ddarllen"
 
 #: ku_userfiles.cpp:206
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "No /etc/passwd entry for %1.\n"
 "Entry will be removed at the next `Save'-operation."
