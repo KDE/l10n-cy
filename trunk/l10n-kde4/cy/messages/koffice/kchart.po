@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kchart\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-11 05:44+0200\n"
+"POT-Creation-Date: 2007-10-13 05:36+0200\n"
 "PO-Revision-Date: 2004-07-06 15:47+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -21,54 +21,54 @@ msgstr ""
 "\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: KChartPart.cpp:175
+#: KChartPart.cpp:177 shape/ChartShapeFactory.cpp:82
 #, kde-format
 msgid "Column %1"
 msgstr "Colofn %1"
 
-#: KChartPart.cpp:181
+#: KChartPart.cpp:183 shape/ChartShapeFactory.cpp:88
 #, kde-format
 msgid "Row %1"
 msgstr "Rhes %1"
 
-#: KChartPart.cpp:990
+#: KChartPart.cpp:1000
 msgid "Invalid OASIS OpenDocument file. No office:body tag found."
 msgstr "Dogfen OASIS OpenDocument annilys.  Ni chanfuwyd y tag office:body."
 
-#: KChartPart.cpp:1006
+#: KChartPart.cpp:1016
 msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
 msgstr ""
 "Dogfen OASIS OpenDocument annilys.  Ni chanfuwyd tag tu mewn i office:body."
 
-#: KChartPart.cpp:1008
+#: KChartPart.cpp:1018
 #, kde-format
 msgid ""
 "This document is not a chart, but %1. Please try opening it with the "
 "appropriate application."
 msgstr ""
 
-#: KChartPart.cpp:1016
+#: KChartPart.cpp:1026
 msgid "Invalid OASIS OpenDocument file. No chart:chart tag found."
 msgstr ""
 
-#: KChartView.cpp:97
+#: KChartView.cpp:98
 #, fuzzy
 msgid "Import Data..."
 msgstr "Golygu &Data..."
 
-#: KChartView.cpp:100
+#: KChartView.cpp:101
 msgid "&Create Template From Document..."
 msgstr "&Creu Patrymlun O Ddogfen....."
 
-#: KChartView.cpp:104
+#: KChartView.cpp:105
 msgid "Edit &Data..."
 msgstr "Golygu &Data..."
 
-#: KChartView.cpp:648
+#: KChartView.cpp:649
 msgid "Import Data"
 msgstr ""
 
-#: KChartView.cpp:656
+#: KChartView.cpp:657
 #, kde-format
 msgid "The file %1 could not be read."
 msgstr ""
@@ -211,13 +211,13 @@ msgstr "Lled: "
 msgid "Height: "
 msgstr "Taldra: "
 
-#: commands/ChartTypeCommand.cpp:110
+#: commands/ChartTypeCommand.cpp:110 shape/ChartTypeConfigWidget.cpp:94
 #, fuzzy
 #| msgid "KChart"
 msgid "Bar Chart"
 msgstr "KChart"
 
-#: commands/ChartTypeCommand.cpp:113
+#: commands/ChartTypeCommand.cpp:113 shape/ChartTypeConfigWidget.cpp:98
 #, fuzzy
 #| msgid "Line marker"
 msgid "Line Chart"
@@ -266,71 +266,53 @@ msgstr ""
 msgid "Gantt Chart"
 msgstr ""
 
-#: shape/ChartShape.cpp:139
+#: shape/ChartShape.cpp:141
 msgid "Legend"
 msgstr "Mynegai"
 
-#: shape/ChartShapeFactory.cpp:51
+#: shape/ChartShapeFactory.cpp:53
 #, fuzzy
 #| msgid "KChart"
 msgid "Chart"
 msgstr "KChart"
 
-#: shape/ChartShapeFactory.cpp:53
+#: shape/ChartShapeFactory.cpp:55
 msgid "A shape that shows a chart"
 msgstr ""
 
-#: shape/ChartTypeConfigWidget.cpp:62
+#: shape/ChartTypeConfigWidget.cpp:83
 #, fuzzy
-#| msgid "Bar"
-msgid "Bars"
-msgstr "Bar"
+#| msgid "KChart"
+msgid "Normal Chart"
+msgstr "KChart"
 
-#: shape/ChartTypeConfigWidget.cpp:66
-msgid "Lines"
-msgstr "Llinellau"
+#: shape/ChartTypeConfigWidget.cpp:87
+#, fuzzy
+#| msgid "Select Chart Type"
+msgid "Stacked Chart"
+msgstr "Dewis Math y Siart"
 
-#: shape/ChartTypeConfigWidget.cpp:70
+#: shape/ChartTypeConfigWidget.cpp:90
+#, fuzzy
+#| msgid "Percent"
+msgid "Percent Chart"
+msgstr "Canran"
+
+#: shape/ChartTypeConfigWidget.cpp:101
 msgid "Area"
 msgstr "Ardal"
 
-#: shape/ChartTypeConfigWidget.cpp:76
-msgid "Pie"
-msgstr "Pei"
-
-#: shape/ChartTypeConfigWidget.cpp:81
-msgid "Ring"
-msgstr "Cylch"
-
-#: shape/ChartTypeConfigWidget.cpp:87
-msgid "Polar"
-msgstr "Pegynnol"
-
-#: shape/ChartTypeConfigWidget.cpp:93
-#, fuzzy
-#| msgid "Scaled"
-msgid "Scatter"
-msgstr "Graddedig"
-
-#: shape/ChartTypeConfigWidget.cpp:99
-msgid "Bubble"
-msgstr ""
-
 #: shape/ChartTypeConfigWidget.cpp:105
 #, fuzzy
-#| msgid "Stacked"
-msgid "Stock"
-msgstr "Wedi'u pentyrru"
+#| msgid "Line marker"
+msgid "Pie Chart"
+msgstr "Nodydd llinell"
 
-#: shape/ChartTypeConfigWidget.cpp:111
+#: shape/ChartTypeConfigWidget.cpp:108
 #, fuzzy
-#| msgid "Space"
-msgid "Surface"
-msgstr "Gofodnod"
-
-#: shape/ChartTypeConfigWidget.cpp:117
-msgid "Gantt"
-msgstr ""
+#| msgid "KChart"
+msgid "Polar Chart"
+msgstr "KChart"
 
 #: shape/ChartTypeTool.cpp:53
 msgid "Do something"
@@ -349,6 +331,38 @@ msgstr "Isfath y Siart"
 #: shape/ChartTypeToolFactory.cpp:33
 msgid "ChartType editing tool"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Bar"
+#~ msgid "Bars"
+#~ msgstr "Bar"
+
+#~ msgid "Lines"
+#~ msgstr "Llinellau"
+
+#~ msgid "Pie"
+#~ msgstr "Pei"
+
+#~ msgid "Ring"
+#~ msgstr "Cylch"
+
+#~ msgid "Polar"
+#~ msgstr "Pegynnol"
+
+#, fuzzy
+#~| msgid "Scaled"
+#~ msgid "Scatter"
+#~ msgstr "Graddedig"
+
+#, fuzzy
+#~| msgid "Stacked"
+#~ msgid "Stock"
+#~ msgstr "Wedi'u pentyrru"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgid "Surface"
+#~ msgstr "Gofodnod"
 
 #~ msgid "&Bar"
 #~ msgstr "&Bar"
@@ -962,9 +976,6 @@ msgstr ""
 
 #~ msgid "Example"
 #~ msgstr "Enghraifft"
-
-#~ msgid "Percent"
-#~ msgstr "Canran"
 
 #~ msgid "Number of lines: "
 #~ msgstr "Nifel llinellau: "
