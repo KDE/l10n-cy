@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: knewsticker_new\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-29 06:06+0100\n"
+"POT-Creation-Date: 2007-11-01 05:56+0100\n"
 "PO-Revision-Date: 2004-01-01 20:28+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -20,35 +20,87 @@ msgstr ""
 "\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: knewsticker.cpp:156
+#: feedsettingswidget.cpp:66
+msgid "New Newsfeed"
+msgstr ""
+
+#: feedsettingswidget.cpp:67
+msgid "Enter the Address (URL) of the Newsfeed to be added:"
+msgstr ""
+
+#: feedsettingswidget.cpp:74
+msgid "Please wait while the newsfeed is downloaded..."
+msgstr ""
+
+#: feedsettingswidget.cpp:75
+msgid "Cancel"
+msgstr ""
+
+#: knewsticker.cpp:169
 msgid "Appearance"
 msgstr ""
 
-#: knewsticker.cpp:163
+#: knewsticker.cpp:172
 msgid "Feed Access"
 msgstr ""
 
-#: knewsticker.cpp:245
+#: knewsticker.cpp:261
 #, fuzzy
 #| msgid "No Articles Available"
 msgid "No unread news available"
 msgstr "Dim Erthygl ar Gael"
 
 #. i18n: tag string
-#. i18n: file feedsettings.ui line 16
-#: rc.cpp:3 rc.cpp:33
+#. i18n: file feedsettings.ui line 21
+#: rc.cpp:3 rc.cpp:60
+#, fuzzy
+#| msgid "Add..."
+msgid "&Add..."
+msgstr "Ychwanegu..."
+
+#. i18n: tag string
+#. i18n: file feedsettings.ui line 41
+#: rc.cpp:6 rc.cpp:63
+#, fuzzy
+#| msgid "R&emove"
+msgid "&Remove"
+msgstr "G&waredu"
+
+#. i18n: tag string
+#. i18n: file feedsettings.ui line 57
+#: rc.cpp:9 rc.cpp:66
+msgid "Feed Title"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file feedsettings.ui line 101
+#: rc.cpp:12 rc.cpp:69
+msgid "FeedURL"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file feedsettings.ui line 108
+#: rc.cpp:15 rc.cpp:72
+#, fuzzy
+#| msgid "Description:"
+msgid "FeedDescription"
+msgstr "Disgrifiad:"
+
+#. i18n: tag string
+#. i18n: file feedsettings.ui line 115
+#: rc.cpp:18 rc.cpp:75
 msgid "Update Interval:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file feedsettings.ui line 26
-#: rc.cpp:6 rc.cpp:36
+#. i18n: file feedsettings.ui line 125
+#: rc.cpp:21 rc.cpp:78
 msgid " Minutes"
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file settings.kcfg line 8
-#: rc.cpp:9
+#: rc.cpp:24
 #, fuzzy
 #| msgid "Show icons in the scrolling text"
 msgid "Font used for the scrolling text"
@@ -56,7 +108,7 @@ msgstr "Dangos eiconau yn y testun sy'n sgrolio"
 
 #. i18n: tag label
 #. i18n: file settings.kcfg line 12
-#: rc.cpp:12
+#: rc.cpp:27
 #, fuzzy
 #| msgid "Show icons in the scrolling text"
 msgid "The color used for the scrolling text"
@@ -64,42 +116,68 @@ msgstr "Dangos eiconau yn y testun sy'n sgrolio"
 
 #. i18n: tag label
 #. i18n: file settings.kcfg line 16
-#: rc.cpp:15
+#: rc.cpp:30
 msgid "Whether news which have been read should be shown in the scroller again"
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file settings.kcfg line 22
-#: rc.cpp:18
-msgid "List of URLs to RSS feeds which should be shown"
+#. i18n: file settings.kcfg line 20
+#: rc.cpp:33
+msgid "How fast the scrolling should be."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file settings.kcfg line 26
-#: rc.cpp:21
+#: rc.cpp:36
+msgid "List of URLs to RSS feeds which should be shown"
+msgstr ""
+
+#. i18n: tag label
+#. i18n: file settings.kcfg line 30
+#: rc.cpp:39
 msgid ""
 "The update interval (in minutes) defining how often the feeds are updated"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file visualsettings.ui line 16
-#: rc.cpp:24 rc.cpp:39
+#: rc.cpp:42 rc.cpp:81
 msgid "Color:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file visualsettings.ui line 24
-#: rc.cpp:27 rc.cpp:42
+#: rc.cpp:45 rc.cpp:84
 msgid "Custom..."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file visualsettings.ui line 32
-#: rc.cpp:30 rc.cpp:45
+#: rc.cpp:48 rc.cpp:87
 #, fuzzy
 #| msgid "F&ont:"
 msgid "Font:"
 msgstr "&Wynebfath"
+
+#. i18n: tag string
+#. i18n: file visualsettings.ui line 42
+#: rc.cpp:51 rc.cpp:90
+#, fuzzy
+#| msgid "&Scrolling speed:"
+msgid "Scrolling speed:"
+msgstr "&Cyflymder sgrolio:"
+
+#. i18n: tag string
+#. i18n: file visualsettings.ui line 51
+#: rc.cpp:54 rc.cpp:93
+msgid "Slow"
+msgstr "Araf"
+
+#. i18n: tag string
+#. i18n: file visualsettings.ui line 80
+#: rc.cpp:57 rc.cpp:96
+msgid "Fast"
+msgstr "Cyflym"
 
 #~ msgid "KNewsTicker"
 #~ msgstr "KTicerNewyddion"
@@ -406,9 +484,6 @@ msgstr "&Wynebfath"
 #~ msgid "Max. Articles"
 #~ msgstr "Uchafswm Erthyglau"
 
-#~ msgid "R&emove"
-#~ msgstr "G&waredu"
-
 #~ msgid "Remove selected site"
 #~ msgstr "Gwaredu gwefan benodol"
 
@@ -416,9 +491,6 @@ msgstr "&Wynebfath"
 #~ "Click this button to remove the currently selected news site from the "
 #~ "list."
 #~ msgstr "Gwasgwch y botwm yma i waredu'r wefan benodol o'r rhestr."
-
-#~ msgid "Add..."
-#~ msgstr "Ychwanegu..."
 
 #~ msgid "Add a new site"
 #~ msgstr "Ychwanegu gwefan newydd "
@@ -656,9 +728,6 @@ msgstr "&Wynebfath"
 #~ msgid "Behavior"
 #~ msgstr "Ymddygiad"
 
-#~ msgid "&Scrolling speed:"
-#~ msgstr "&Cyflymder sgrolio:"
-
 #~ msgid "Scrolling speed"
 #~ msgstr "Cyflymder sgrolio"
 
@@ -677,12 +746,6 @@ msgstr "&Wynebfath"
 #~ "gael gyfle i ddarllen y pennawdau.  Am ticeri newyddion lletach (a "
 #~ "llygaid gwell), mae sgrolio cyflymach yn addas, i osgoi i chi aros yn rhy "
 #~ "hir am y pennawd nesaf."
-
-#~ msgid "Slow"
-#~ msgstr "Araf"
-
-#~ msgid "Fast"
-#~ msgstr "Cyflym"
 
 #~ msgid "Di&rection of scrolling:"
 #~ msgstr "Cy&feiriad sgrolio:"
@@ -1342,9 +1405,6 @@ msgstr "&Wynebfath"
 
 #~ msgid "http://www.heise.de/newsticker/"
 #~ msgstr "http://www.heise.de/newsticker/"
-
-#~ msgid "Description:"
-#~ msgstr "Disgrifiad:"
 
 #~ msgid "Brief description of the news site"
 #~ msgstr "Disgrifiad byr o'r safwe newyddion"
