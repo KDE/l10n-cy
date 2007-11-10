@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-11-09 06:05+0100\n"
+"POT-Creation-Date: 2007-11-10 05:58+0100\n"
 "PO-Revision-Date: 2004-02-25 13:46+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -4631,7 +4631,17 @@ msgctxt "@info"
 msgid "Alarm daemon not found."
 msgstr "Ellyll Larymau heb ei ganfod"
 
-#: daemon.cpp:248
+#: daemon.cpp:252
+#, fuzzy, kde-format
+#| msgid "An email has been queued to be sent by KMail"
+msgctxt "@info"
+msgid ""
+"Cannot enable alarms.<br />Installation or configuration error: "
+"<application>Alarm Daemon</application> (<command>%1</command>) version is "
+"incompatible."
+msgstr "Rhoddwyd ebost yn y rhes i'w anfon gan KMail"
+
+#: daemon.cpp:267
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -4640,15 +4650,17 @@ msgid ""
 "<command>%2</command> executable.)"
 msgstr ""
 
-#: daemon.cpp:263
-#, kde-format
+#: daemon.cpp:280
+#, fuzzy, kde-format
+#| msgid "An email has been queued to be sent by KMail"
 msgctxt "@info"
 msgid ""
 "Cannot enable alarms:<br />Failed to register with <application>Alarm "
-"Daemon</application> (<command>%1</command>)"
-msgstr ""
+"Daemon</application> (<command>%1</command>)(Possible installation or "
+"configuration error)"
+msgstr "Rhoddwyd ebost yn y rhes i'w anfon gan KMail"
 
-#: daemon.cpp:313
+#: daemon.cpp:346
 #, fuzzy, kde-format
 #| msgid "An email has been queued to be sent by KMail"
 msgctxt "@info"
@@ -4657,7 +4669,7 @@ msgid ""
 "application> (<command>%1</command>)"
 msgstr "Rhoddwyd ebost yn y rhes i'w anfon gan KMail"
 
-#: daemon.cpp:809
+#: daemon.cpp:842
 #, fuzzy
 msgctxt "@action"
 msgid "Enable &Alarms"
