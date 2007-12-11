@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: all.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-12-10 05:59+0100\n"
+"POT-Creation-Date: 2007-12-11 06:01+0100\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -1497,7 +1497,7 @@ msgid "Class"
 msgstr "Dosbarth"
 
 #: languages/cpp/cppduchain/navigationwidget.cpp:222
-#: languages/cpp/debugger/variablecollection.cpp:190
+#: languages/cpp/debugger/variablecollection.cpp:185
 msgid "Variable"
 msgstr "Newidyn"
 
@@ -1510,6 +1510,7 @@ msgid "Namespace alias"
 msgstr ""
 
 #: languages/cpp/cppduchain/navigationwidget.cpp:232
+#: languages/cpp/debugger/stackmanager.cpp:267
 msgid "Function"
 msgstr "Ffwythiant"
 
@@ -1591,6 +1592,22 @@ msgstr "&Disgrifiad:"
 #: languages/cpp/cppduchain/navigationwidget.cpp:697
 msgid "not parsed yet"
 msgstr ""
+
+#: languages/cpp/debugger/stackmanager.cpp:250
+#: languages/cpp/debugger/framestackwidget.cpp:529
+#, kde-format
+msgid "Thread %1"
+msgstr ""
+
+#: languages/cpp/debugger/stackmanager.cpp:265
+msgid "ID"
+msgstr ""
+
+#: languages/cpp/debugger/stackmanager.cpp:269
+#, fuzzy
+#| msgid "Source"
+msgid "Source"
+msgstr "Tarddiad"
 
 #: languages/cpp/debugger/breakpoint.cpp:269
 msgid "Disabled"
@@ -1827,11 +1844,6 @@ msgid ""
 "values in any of the previous calling functions."
 msgstr ""
 
-#: languages/cpp/debugger/framestackwidget.cpp:529
-#, kde-format
-msgid "Thread %1"
-msgstr ""
-
 #: languages/cpp/debugger/variableitem.cpp:871
 #, kde-format
 msgid "<b>Debugger error</b><br>%1"
@@ -1859,7 +1871,7 @@ msgid ""
 msgstr ""
 
 #: languages/cpp/debugger/gdbbreakpointwidget.cpp:240
-#: languages/cpp/debugger/variablecollection.cpp:196
+#: languages/cpp/debugger/variablecollection.cpp:191
 #: buildtools/managers/cmake/cmakecachemodel.cpp:14
 #, fuzzy
 #| msgid "Type:"
@@ -2124,6 +2136,10 @@ msgstr ""
 #| msgid "Value"
 msgid "Copy Value"
 msgstr "Gwerth"
+
+#: languages/cpp/debugger/framestackitem.cpp:39
+msgid "<Loading...>"
+msgstr ""
 
 #: languages/cpp/debugger/memviewdlg.cpp:97
 #, fuzzy
@@ -2519,7 +2535,7 @@ msgid ""
 "breakpoint has been activated or the interrupt was pressed)."
 msgstr ""
 
-#: languages/cpp/debugger/variablecollection.cpp:193
+#: languages/cpp/debugger/variablecollection.cpp:188
 #: buildtools/managers/cmake/cmakecachemodel.cpp:15
 msgid "Value"
 msgstr "Gwerth"
@@ -4489,11 +4505,6 @@ msgstr ""
 #~| msgid "Port"
 #~ msgid " Abort"
 #~ msgstr "Porth"
-
-#, fuzzy
-#~| msgid "Source"
-#~ msgid "Source:"
-#~ msgstr "Tarddiad"
 
 #, fuzzy
 #~| msgid "Description:"
