@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-12-19 06:24+0100\n"
+"POT-Creation-Date: 2007-12-20 06:16+0100\n"
 "PO-Revision-Date: 2004-07-06 17:18+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -1680,13 +1680,13 @@ msgstr ""
 #. i18n: file ./ui/wdglayerbox.ui line 87
 #: rc.cpp:347
 #, fuzzy
-msgid "Create a new layer"
+msgid "Create a new mask or layer"
 msgstr "Creu %1 newydd "
 
 #. i18n: tag string
-#. i18n: file ./ui/wdglayerbox.ui line 115
+#. i18n: file ./ui/wdglayerbox.ui line 112
 #. i18n: tag string
-#. i18n: file ./ui/wdglayerbox.ui line 118
+#. i18n: file ./ui/wdglayerbox.ui line 115
 #: rc.cpp:350 rc.cpp:353
 #, fuzzy
 #| msgid "Duplicate"
@@ -1694,31 +1694,35 @@ msgid "Duplicate layer or mask"
 msgstr "Dyblyg"
 
 #. i18n: tag string
-#. i18n: file ./ui/wdglayerbox.ui line 121
+#. i18n: file ./ui/wdglayerbox.ui line 118
 #: rc.cpp:356
 msgid "Duplicate the currently selected layer or mask"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./ui/wdglayerbox.ui line 146
+#. i18n: file ./ui/wdglayerbox.ui line 140
 #: rc.cpp:359
-msgid "Move layer down"
+#, fuzzy
+#| msgid "Move layer down"
+msgid "Move layer or mask down"
 msgstr "Symud Haen i Fyny"
 
 #. i18n: tag string
-#. i18n: file ./ui/wdglayerbox.ui line 171
+#. i18n: file ./ui/wdglayerbox.ui line 162
 #: rc.cpp:362
-msgid "Move layer up"
+#, fuzzy
+#| msgid "Move layer up"
+msgid "Move layer or mask up"
 msgstr "Symud Haen i Lawr"
 
 #. i18n: tag string
-#. i18n: file ./ui/wdglayerbox.ui line 196
+#. i18n: file ./ui/wdglayerbox.ui line 184
 #: rc.cpp:365
 msgid "View or change the layer properties"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./ui/wdglayerbox.ui line 199
+#. i18n: file ./ui/wdglayerbox.ui line 187
 #. i18n: tag string
 #. i18n: file ./ui/wdgtextbrush.ui line 93
 #. i18n: tag string
@@ -1730,10 +1734,10 @@ msgid "..."
 msgstr "..."
 
 #. i18n: tag string
-#. i18n: file ./ui/wdglayerbox.ui line 234
+#. i18n: file ./ui/wdglayerbox.ui line 222
 #: rc.cpp:371
 #, fuzzy
-msgid "Delete the layer"
+msgid "Delete the layer or mask"
 msgstr "&Gwaredu Haen"
 
 #. i18n: tag string
@@ -4311,7 +4315,7 @@ msgstr "Allan o Resaid"
 
 #. i18n: tag string
 #. i18n: file ./plugins/viewplugins/colorrange/wdg_colorrange.ui line 91
-#: rc.cpp:1822 ui/kis_selection_manager.cc:163
+#: rc.cpp:1822 ui/kis_selection_manager.cc:159
 #: plugins/filters/example/example.cc:67
 msgid "&Invert"
 msgstr "&Gwrthdroi"
@@ -6164,8 +6168,12 @@ msgstr "Hidlenni"
 msgid "Selection"
 msgstr "Detholiad"
 
-#: ui/kis_mask_manager.cc:381 ui/kis_mask_manager.cc:406
-#: ui/kis_layer_manager.cc:723
+#: ui/kis_mask_manager.cc:381
+#, fuzzy
+msgid "Mirror Mask X"
+msgstr "Gostwng Haen"
+
+#: ui/kis_mask_manager.cc:406 ui/kis_layer_manager.cc:723
 #, fuzzy
 msgid "Mirror Layer X"
 msgstr "Gostwng Haen"
@@ -6666,118 +6674,101 @@ msgid ""
 "canvas. <p>Uncheck this to hide the rulers."
 msgstr ""
 
-#: ui/kis_selection_manager.cc:147
+#: ui/kis_selection_manager.cc:143
 #, fuzzy
 msgid "Paste into &New Image"
 msgstr "Delwedd Newydd :"
 
-#: ui/kis_selection_manager.cc:158 ui/kis_selection_manager.cc:710
+#: ui/kis_selection_manager.cc:154 ui/kis_selection_manager.cc:685
 #, fuzzy
 msgid "&Reselect"
 msgstr "&Detholi"
 
-#: ui/kis_selection_manager.cc:168
+#: ui/kis_selection_manager.cc:164
 msgid "Copy Selection to New Layer"
 msgstr "Copio Detholiad i Haen Newydd"
 
-#: ui/kis_selection_manager.cc:173
+#: ui/kis_selection_manager.cc:169
 #, fuzzy
 msgid "Cut Selection to New Layer"
 msgstr "Copio Detholiad i Haen Newydd"
 
-#: ui/kis_selection_manager.cc:178
+#: ui/kis_selection_manager.cc:174
 #, fuzzy
 msgid "Feather"
 msgstr "Haen"
 
-#: ui/kis_selection_manager.cc:183 ui/kis_selection_manager.cc:686
+#: ui/kis_selection_manager.cc:179 ui/kis_selection_manager.cc:661
 msgid "Fill with Foreground Color"
 msgstr "Llenwi gyda Lliw Blaendir"
 
-#: ui/kis_selection_manager.cc:188 ui/kis_selection_manager.cc:691
+#: ui/kis_selection_manager.cc:184 ui/kis_selection_manager.cc:666
 #, fuzzy
 msgid "Fill with Background Color"
 msgstr "Llenwi gyda Lliw Blaendir"
 
-#: ui/kis_selection_manager.cc:193 ui/kis_selection_manager.cc:696
+#: ui/kis_selection_manager.cc:189 ui/kis_selection_manager.cc:671
 #, fuzzy
 msgid "Fill with Pattern"
 msgstr "Llenwi gyda patrwm"
 
-#: ui/kis_selection_manager.cc:197
+#: ui/kis_selection_manager.cc:193
 #, fuzzy
 msgid "Display Selection"
 msgstr "Llenwi Detholiad."
 
-#: ui/kis_selection_manager.cc:202
+#: ui/kis_selection_manager.cc:198
 #, fuzzy
 msgid "Hide Selection"
 msgstr "Symud Detholiad"
 
-#: ui/kis_selection_manager.cc:205
-msgid "Expand..."
-msgstr "Chwyddo ..."
-
-#: ui/kis_selection_manager.cc:209
+#: ui/kis_selection_manager.cc:201
 msgid "Smooth..."
 msgstr ""
 
-#: ui/kis_selection_manager.cc:213
-#, fuzzy
-msgid "Contract..."
-msgstr "Cyferbyniad:"
-
-#: ui/kis_selection_manager.cc:217
-msgid "Similar"
-msgstr ""
-
-#: ui/kis_selection_manager.cc:221
-msgid "Transform..."
-msgstr "Trawsffurfio ..."
-
-#: ui/kis_selection_manager.cc:429
+#: ui/kis_selection_manager.cc:404
 #, fuzzy
 msgid "Cut"
 msgstr "&Addasiedig :"
 
-#: ui/kis_selection_manager.cc:500
+#: ui/kis_selection_manager.cc:475
 msgid "(pasted)"
 msgstr ""
 
-#: ui/kis_selection_manager.cc:583
+#: ui/kis_selection_manager.cc:558
 #, fuzzy
 msgid "Select All"
 msgstr "&Dewis Popeth"
 
-#: ui/kis_selection_manager.cc:605
+#: ui/kis_selection_manager.cc:580
 msgid "Deselect"
 msgstr "Dad-ddewis"
 
-#: ui/kis_selection_manager.cc:635
+#: ui/kis_selection_manager.cc:610
 #, fuzzy
 msgid "Clear"
 msgstr "Brwsh"
 
-#: ui/kis_selection_manager.cc:735 plugins/filters/example/example.h:47
+#: ui/kis_selection_manager.cc:710 plugins/filters/example/example.h:47
 msgid "Invert"
 msgstr "Gwrthdroi"
 
-#: ui/kis_selection_manager.cc:789
+#: ui/kis_selection_manager.cc:764
 msgid "Feather..."
 msgstr ""
 
-#: ui/kis_selection_manager.cc:868
+#: ui/kis_selection_manager.cc:843
 #, fuzzy
 msgid "Grow"
 msgstr "Saeth"
 
-#: ui/kis_selection_manager.cc:1000
+#: ui/kis_selection_manager.cc:975
 #, fuzzy
 #| msgid "Sharpen"
 msgid "Shrink"
 msgstr "Miniogi"
 
-#: ui/kis_selection_manager.cc:1380
+#: ui/kis_selection_manager.cc:1355
 #, fuzzy
 #| msgid "Borders"
 msgid "Border"
@@ -7041,21 +7032,21 @@ msgstr ""
 msgid "YCBCR (8-bit integer/channel)"
 msgstr ""
 
-#: colorspaces/gray_u16/gray_u16_plugin.cc:46
+#: colorspaces/gray_u16_no_alpa/gray_u16_plugin.cc:46
 #, fuzzy
 msgid "GRAY/Alpha16 Histogram"
 msgstr "RGB + Alffa"
 
-#: colorspaces/gray_u16/kis_gray_u16_colorspace.h:48
+#: colorspaces/gray_u16_no_alpa/kis_gray_u16_colorspace.h:48
 msgid "Grayscale (16-bit integer/channel)"
 msgstr ""
 
-#: colorspaces/gray_u16/kis_gray_u16_colorspace.cc:34
+#: colorspaces/gray_u16_no_alpa/kis_gray_u16_colorspace.cc:34
 msgid "Grayscale 16-bit integer/channel)"
 msgstr ""
 
-#: colorspaces/gray_u16/kis_gray_u16_colorspace.cc:36
-#: colorspaces/gray_u8/kis_gray_colorspace.cc:34
+#: colorspaces/gray_u16_no_alpa/kis_gray_u16_colorspace.cc:36
+#: colorspaces/gray_u8_no_alpha/kis_gray_colorspace.cc:34
 msgid "Gray"
 msgstr "Llwyd"
 
@@ -7114,15 +7105,15 @@ msgstr "Byr"
 msgid "LMS Cone Space (32-bit float/channel)"
 msgstr ""
 
-#: colorspaces/gray_u8/kis_gray_colorspace.cc:32
+#: colorspaces/gray_u8_no_alpha/kis_gray_colorspace.cc:32
 msgid "Grayscale without alpha (8-bit integer/channel)"
 msgstr ""
 
-#: colorspaces/gray_u8/kis_gray_colorspace.h:48
+#: colorspaces/gray_u8_no_alpha/kis_gray_colorspace.h:48
 msgid "Grayscale (8-bit integer/channel)"
 msgstr ""
 
-#: colorspaces/gray_u8/gray_plugin.cc:51
+#: colorspaces/gray_u8_no_alpha/gray_plugin.cc:51
 #, fuzzy
 msgid "GRAY/Alpha8 Histogram"
 msgstr "RGB + Alffa"
@@ -7421,12 +7412,12 @@ msgid "Select similar colors"
 msgstr "Offer Detholi"
 
 #: plugins/tools/tool_selectsimilar/kis_tool_selectsimilar.cc:146
-#: plugins/tools/tool_selectsimilar/kis_tool_selectsimilar.cc:218
+#: plugins/tools/tool_selectsimilar/kis_tool_selectsimilar.cc:216
 #, fuzzy
 msgid "Similar Selection"
 msgstr "Gludo Detholiad"
 
-#: plugins/tools/tool_selectsimilar/kis_tool_selectsimilar.cc:239
+#: plugins/tools/tool_selectsimilar/kis_tool_selectsimilar.cc:237
 #: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:155
 msgid "Fuzziness: "
 msgstr "Niwlaiddrwydd: "
@@ -8478,6 +8469,16 @@ msgstr "Cnwcfap"
 #, fuzzy
 msgid "&Bumpmap..."
 msgstr "Cnwcfap"
+
+#~ msgid "Expand..."
+#~ msgstr "Chwyddo ..."
+
+#, fuzzy
+#~ msgid "Contract..."
+#~ msgstr "Cyferbyniad:"
+
+#~ msgid "Transform..."
+#~ msgstr "Trawsffurfio ..."
 
 #, fuzzy
 #~ msgid "Rotate Image CW"
