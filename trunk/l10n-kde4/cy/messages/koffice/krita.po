@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-12-29 06:18+0100\n"
+"POT-Creation-Date: 2007-12-30 06:23+0100\n"
 "PO-Revision-Date: 2004-07-06 17:18+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -3459,7 +3459,7 @@ msgstr "Ongl"
 
 #. i18n: tag string
 #. i18n: file ./plugins/paintops/dynamicbrush/programs/basicshape/BasicDynamicProgramEditor.ui line 244
-#: rc.cpp:1285 plugins/painterlyframework/kis_ks_colorspace.h:114
+#: rc.cpp:1285 plugins/painterlyframework/kis_ks_colorspace.h:86
 #, fuzzy
 #| msgid "Pattern"
 msgid "Scattering"
@@ -6625,65 +6625,65 @@ msgstr "&Enw:"
 msgid "No configuration options are available for this filter"
 msgstr ""
 
-#: ui/kis_controlframe.cc:93 ui/kis_controlframe.cc:94
+#: ui/kis_controlframe.cc:94 ui/kis_controlframe.cc:95
 #, fuzzy
 msgid "Brush Shapes"
 msgstr "Brwsh"
 
-#: ui/kis_controlframe.cc:96
+#: ui/kis_controlframe.cc:97
 msgid "&Brush"
 msgstr "&Brws"
 
-#: ui/kis_controlframe.cc:102 ui/kis_controlframe.cc:103
+#: ui/kis_controlframe.cc:103 ui/kis_controlframe.cc:104
 #, fuzzy
 msgid "Fill Patterns"
 msgstr "Patrymau"
 
-#: ui/kis_controlframe.cc:104
+#: ui/kis_controlframe.cc:105
 msgid "&Patterns"
 msgstr "&Patrymau"
 
-#: ui/kis_controlframe.cc:109 ui/kis_controlframe.cc:110
-#: ui/kis_controlframe.cc:339
+#: ui/kis_controlframe.cc:110 ui/kis_controlframe.cc:111
+#: ui/kis_controlframe.cc:340
 #, fuzzy
 msgid "Gradients"
 msgstr "Graddfa:"
 
-#: ui/kis_controlframe.cc:111
+#: ui/kis_controlframe.cc:112
 #, fuzzy
 msgid "&Gradients"
 msgstr "Graddfa:"
 
-#: ui/kis_controlframe.cc:116 ui/kis_controlframe.cc:122
+#: ui/kis_controlframe.cc:117 ui/kis_controlframe.cc:123
 #, fuzzy
 msgid "&Painter's Tools"
 msgstr "Offer Peintio"
 
-#: ui/kis_controlframe.cc:221 ui/kis_controlframe.cc:222
+#: ui/kis_controlframe.cc:222 ui/kis_controlframe.cc:223
 #, fuzzy
 msgid "Autobrush"
 msgstr "brwsh"
 
-#: ui/kis_controlframe.cc:230
+#: ui/kis_controlframe.cc:231
 #, fuzzy
 msgid "Predefined Brushes"
 msgstr "brwsh"
 
-#: ui/kis_controlframe.cc:233 ui/kis_controlframe.cc:234
+#: ui/kis_controlframe.cc:234 ui/kis_controlframe.cc:235
 #, fuzzy
 msgid "Custom Brush"
 msgstr "brwsh"
 
-#: ui/kis_controlframe.cc:243 ui/kis_controlframe.cc:244
+#: ui/kis_controlframe.cc:244 ui/kis_controlframe.cc:245
 #, fuzzy
 msgid "Text Brush"
 msgstr "brwsh"
 
-#: ui/kis_controlframe.cc:290
+#: ui/kis_controlframe.cc:291
 msgid "Patterns"
 msgstr "Patrymau"
 
-#: ui/kis_controlframe.cc:293 ui/kis_controlframe.cc:295
+#: ui/kis_controlframe.cc:294 ui/kis_controlframe.cc:296
 #, fuzzy
 msgid "Custom Pattern"
 msgstr "Patrwm"
@@ -6913,11 +6913,6 @@ msgstr "%1%"
 msgid "Composite Mode"
 msgstr "Dull cyfansawdd:"
 
-#: image/kis_node_commands.h:35
-#, fuzzy
-msgid "Change Filter"
-msgstr "Hidlo"
-
 #: image/kis_paint_layer.cc:164
 #, fuzzy
 msgid "ColorSpace"
@@ -6973,31 +6968,48 @@ msgstr ""
 msgid "Mitchell"
 msgstr ""
 
-#: image/kis_image_commands.cc:86 image/kis_image.cc:390
+#: image/commands/kis_node_commands.h:35
+#, fuzzy
+msgid "Change Filter"
+msgstr "Hidlo"
+
+#: image/commands/kis_image_commands.cc:86 image/kis_image.cc:390
 msgid "Resize Image"
 msgstr "Newid Maint Delwedd"
 
-#: image/kis_image_commands.cc:109 image/kis_image.cc:577
+#: image/commands/kis_image_commands.cc:109 image/kis_image.cc:577
 #, fuzzy
 msgid "Convert Image Type"
 msgstr "M&ewnosod Delwedd fel Haen..."
 
-#: image/kis_image_commands.cc:134 image/kis_image_commands.cc:250
+#: image/commands/kis_image_commands.cc:134
+#: image/commands/kis_image_commands.cc:250
 msgid "Property Changes"
 msgstr "Newidiadau priodweddau"
 
-#: image/kis_image_commands.cc:186
+#: image/commands/kis_image_commands.cc:186
 msgid "Add Layer"
 msgstr "Ychwanegu Haen"
 
-#: image/kis_image_commands.cc:206
+#: image/commands/kis_image_commands.cc:206
 msgid "Remove Layer"
 msgstr "Tynnu Haen"
 
-#: image/kis_image_commands.cc:227 image/kis_layer_commands.cc:80
+#: image/commands/kis_image_commands.cc:227
+#: image/commands/kis_layer_commands.cc:80
 #, fuzzy
 msgid "Move Layer"
 msgstr "Tynnu Haen"
+
+#: image/commands/kis_layer_commands.cc:37
+#, fuzzy
+msgid "Layer Opacity"
+msgstr "Copio didreiddiad"
+
+#: image/commands/kis_layer_commands.cc:59
+#, fuzzy
+msgid "Layer Composite Mode"
+msgstr "Dull cyfansawdd:"
 
 #: image/kis_image.cc:279
 msgid "background"
@@ -7026,16 +7038,6 @@ msgstr "Cyfuno &Pob Haen"
 #: image/kis_bookmarked_configuration_manager.cc:41
 msgid "Last used"
 msgstr ""
-
-#: image/kis_layer_commands.cc:37
-#, fuzzy
-msgid "Layer Opacity"
-msgstr "Copio didreiddiad"
-
-#: image/kis_layer_commands.cc:59
-#, fuzzy
-msgid "Layer Composite Mode"
-msgstr "Dull cyfansawdd:"
 
 #: image/kis_filter.cc:31
 msgid "Adjust"
@@ -7106,7 +7108,7 @@ msgstr ""
 #: colorspaces/xyz_float_hdr/kis_xyz_hdr_colorspace.h:70
 #: colorspaces/lms_f32/kis_lms_f32_colorspace.cc:57
 #: colorspaces/rgb_float_hdr/kis_rgb_float_hdr_colorspace.h:121
-#: plugins/painterlyframework/kis_ks_colorspace.h:122
+#: plugins/painterlyframework/kis_ks_colorspace.h:94
 msgid "Alpha"
 msgstr "Alffa"
 
@@ -7750,13 +7752,27 @@ msgstr ""
 msgid "Perspective grid"
 msgstr "Erfyn Trawsffurfio"
 
-#: plugins/painterlyframework/kis_ks_colorspace.h:107
+#: plugins/painterlyframework/kis_ks_colorspace.h:79
 #, fuzzy
 msgid "Absorption"
 msgstr "Alffa"
 
-#: plugins/painterlyframework/kis_kslin_colorspace.h:42
+#: plugins/painterlyframework/kis_kslinear_colorspace.h:27
 msgid "3-pairs Absorption-Scattering Linear"
+msgstr ""
+
+#: plugins/painterlyframework/kis_kslinear_colorspace.h:36
+#: plugins/painterlyframework/kis_kslinear_colorspace.h:61
+msgid "3-pairs Absorption-Scattering Linear (32 Bits Float)"
+msgstr ""
+
+#: plugins/painterlyframework/kis_ksqp_colorspace.h:26
+msgid "9-pairs Absorption-Scattering QP"
+msgstr ""
+
+#: plugins/painterlyframework/kis_ksqp_colorspace.h:35
+#: plugins/painterlyframework/kis_ksqp_colorspace.h:59
+msgid "9-pairs Absorption-Scattering QP (32 Bits Float)"
 msgstr ""
 
 #: plugins/paintops/defaultpaintops/kis_eraseop.h:41
@@ -8435,7 +8451,7 @@ msgstr "Dad-ddirlenwi"
 msgid "&Auto Contrast"
 msgstr "Cyferbyniad:"
 
-#: plugins/filters/colorsfilters/colorsfilters.cc:246
+#: plugins/filters/colorsfilters/colorsfilters.cc:247
 msgid "&Desaturate"
 msgstr "&Dad-ddirlenwi"
 
