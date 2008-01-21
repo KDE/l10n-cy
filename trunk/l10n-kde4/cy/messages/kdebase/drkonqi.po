@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: drkonqi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-15 09:40+0100\n"
+"POT-Creation-Date: 2008-01-21 07:42+0100\n"
 "PO-Revision-Date: 2004-06-30 11:27+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -17,35 +17,38 @@ msgstr ""
 "X-Generator: KBabel 1.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: backtrace.cpp:80
+#: backtrace.cpp:76
 #, kde-format
 msgid "Could not generate a backtrace as the debugger '%1' was not found."
 msgstr "Methu creu ôlrhain, gan na chanfuwyd y dadnamydd '%1'"
 
-#: debugger.cpp:75
+#: debugger.cpp:71
 msgid "C&opy"
 msgstr "C&opïo"
 
-#: debugger.cpp:96
+#: debugger.cpp:92
+#, fuzzy
+#| msgid "Done."
+msgctxt "debugging finished"
 msgid "Done."
 msgstr "Wedi'i wneud."
 
-#: debugger.cpp:121
+#: debugger.cpp:117
 #, kde-format
 msgid "Backtrace saved to %1"
 msgstr "Cadwyd yr ôlrhain i %1"
 
-#: debugger.cpp:125
+#: debugger.cpp:121
 #, fuzzy
 msgid "Cannot create a file to save the backtrace in"
 msgstr "Methu creu ffeil i gadw'r ôlrhain iddo"
 
-#: debugger.cpp:130
+#: debugger.cpp:126
 #, fuzzy
 msgid "Select Filename"
 msgstr "Dewiswch Enw Ffeil"
 
-#: debugger.cpp:138
+#: debugger.cpp:134
 #, kde-format
 msgid ""
 "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
@@ -53,24 +56,24 @@ msgstr ""
 "Mae ffeil o'r enw \"%1\" mewn bod eisoes.  Ydych wir eisiau ysgrifennu "
 "drosti?"
 
-#: debugger.cpp:140
+#: debugger.cpp:136
 msgid "Overwrite File?"
 msgstr "Trosysgrifo'r Ffeil?"
 
-#: debugger.cpp:141
+#: debugger.cpp:137
 msgid "&Overwrite"
 msgstr "&Trosysgrifo"
 
-#: debugger.cpp:153
+#: debugger.cpp:149
 #, kde-format
 msgid "Cannot open file %1 for writing"
 msgstr "Methu agor y ffeil %1 ar gyfer ysgrifennu"
 
-#: debugger.cpp:161
+#: debugger.cpp:157
 msgid "Unable to create a valid backtrace."
 msgstr "Methu creu olrheiniad dilys."
 
-#: debugger.cpp:162
+#: debugger.cpp:158
 msgid ""
 "This backtrace appears to be of no use.\n"
 "This is probably because your packages are built in a way which prevents "
@@ -84,17 +87,17 @@ msgstr ""
 "yn ddifrifol yn y chwalfa.\n"
 "\n"
 
-#: debugger.cpp:171
+#: debugger.cpp:167
 msgid "Loading backtrace..."
 msgstr "Yn llwytho olrheiniad..."
 
-#: debugger.cpp:194
+#: debugger.cpp:190
 msgid ""
 "The following options are enabled:\n"
 "\n"
 msgstr ""
 
-#: debugger.cpp:196
+#: debugger.cpp:192
 msgid ""
 "\n"
 "As the usage of these options is not recommended - because they can, in rare "
@@ -103,15 +106,15 @@ msgid ""
 "to get a backtrace.\n"
 msgstr ""
 
-#: debugger.cpp:201
+#: debugger.cpp:197
 msgid "Backtrace will not be created."
 msgstr ""
 
-#: debugger.cpp:209
+#: debugger.cpp:205
 msgid "Loading symbols..."
 msgstr "Yn llwytho nôdau..."
 
-#: debugger.cpp:230
+#: debugger.cpp:226
 msgid "System configuration startup check disabled.\n"
 msgstr ""
 
@@ -120,6 +123,9 @@ msgid "You have to edit the description before the report can be sent."
 msgstr "Rhaid i chi olygu'r disgrifiad cyn y gellir anfon yr adroddiad."
 
 #: krashconf.cpp:78
+#, fuzzy
+#| msgid "unknown"
+msgctxt "unknown application"
 msgid "unknown"
 msgstr "anhysbys"
 
@@ -191,47 +197,36 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kyfieithu@dotmon.com"
 
-#: toplevel.cpp:64
+#: toplevel.cpp:54
 #, fuzzy
 #| msgid "&Bug report"
 msgid "&Bug Report"
 msgstr "Adroddiad &Nam"
 
-#: toplevel.cpp:65
+#: toplevel.cpp:55
 msgid "&Debugger"
 msgstr "&Dadnamydd"
 
-#: toplevel.cpp:71
-#, fuzzy
-msgid "General"
-msgstr "&Cyffredinol"
+#: toplevel.cpp:88
+msgid "Please attach the following backtrace to your bugreport."
+msgstr ""
 
-#: toplevel.cpp:95
-#, fuzzy
-msgid "Backtrace"
-msgstr "&Olrhain"
+#: toplevel.cpp:130
+msgid "A fatal error occurred"
+msgstr ""
 
-#: toplevel.cpp:119
-#, kde-format
-msgid "<p><b>Short description</b></p><p>%1</p>"
-msgstr "<p><b>Disgrifiad byr</b></p><p>%1</p>"
+#: toplevel.cpp:134
+msgid "What can I do?"
+msgstr ""
 
-#: toplevel.cpp:123
-#, kde-format
-msgid "<p><b>What is this?</b></p><p>%1</p>"
-msgstr "<p><b>Beth yw hyn?</b></p><p>%1</p>"
-
-#: toplevel.cpp:127
-#, kde-format
-msgid "<p><b>What can I do?</b></p><p>%1</p>"
-msgstr "<p><b>Beth allaf i ei wneud?</b></p><p>%1</p>"
-
-#: toplevel.cpp:132
-#, c-format
-msgid "<p><b>Application crashed</b></p><p>The program %appname crashed.</p>"
+#: toplevel.cpp:139
+#, fuzzy, c-format
+#| msgid ""
+#| "<p><b>Application crashed</b></p><p>The program %appname crashed.</p>"
+msgid "<p>Application crashed</p><p>The program %appname crashed.</p>"
 msgstr "<p><b>Chwalodd y cymhwysiad</b></p><p>Chwalodd y rhaglen %appname.</p>"
 
-#: toplevel.cpp:151
+#: toplevel.cpp:158
 msgid ""
 "<p>Do you want to generate a backtrace? This will help the developers to "
 "figure out what went wrong.</p>\n"
@@ -246,22 +241,39 @@ msgstr ""
 "yw olhreiniad yn cymryd lle disgrifiad cywir o'r nam a gwybodaeth ar sut i'w "
 "ail-achosi. Nid yw'n bosib i gywiro'r nam heb ddisgrifiad cywir.</b></p>"
 
-#: toplevel.cpp:163
+#: toplevel.cpp:170
 msgid "Include Backtrace"
 msgstr "Cynnwys Olrheiniad"
 
-#: toplevel.cpp:163
+#: toplevel.cpp:170
 msgid "Generate"
 msgstr "Creu"
 
-#: toplevel.cpp:163
+#: toplevel.cpp:170
 msgid "Do Not Generate"
 msgstr ""
 
-#: toplevel.cpp:230
+#: toplevel.cpp:237
 msgid "It was not possible to generate a backtrace."
 msgstr "Nid oedd yn bosib creu olrheiniad."
 
-#: toplevel.cpp:231
+#: toplevel.cpp:238
 msgid "Backtrace Not Possible"
 msgstr "Dim Olrheiniad Yn Bosibl"
+
+#, fuzzy
+#~ msgid "General"
+#~ msgstr "&Cyffredinol"
+
+#, fuzzy
+#~ msgid "Backtrace"
+#~ msgstr "&Olrhain"
+
+#~ msgid "<p><b>Short description</b></p><p>%1</p>"
+#~ msgstr "<p><b>Disgrifiad byr</b></p><p>%1</p>"
+
+#~ msgid "<p><b>What is this?</b></p><p>%1</p>"
+#~ msgstr "<p><b>Beth yw hyn?</b></p><p>%1</p>"
+
+#~ msgid "<p><b>What can I do?</b></p><p>%1</p>"
+#~ msgstr "<p><b>Beth allaf i ei wneud?</b></p><p>%1</p>"
