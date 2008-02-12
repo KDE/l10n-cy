@@ -1,7 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ksystemlog\n"
-"POT-Creation-Date: 2007-08-08 08:21+0200\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2008-01-24 10:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Welsh <LL@li.org>\n"
@@ -10,1451 +11,1639 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ssh/sshOptions.cpp:54
+#: src/lib/logViewExport.cpp:56
+msgid "Here are my logs:\n"
+msgstr ""
+
+#: src/lib/logViewExport.cpp:58 src/lib/logViewExport.cpp:72
+msgid "---------------------------------------\n"
+msgstr ""
+
+#: src/lib/logViewExport.cpp:76
 msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>SSH log</b>"
-". This list also determines the order in which the files are read.</p></qt>"
+"You have selected too many lines. Please only select important log lines."
 msgstr ""
 
-#: acpid/acpidReader.cpp:42 apache/apacheAccessReader.cpp:41
-#: apache/apacheReader.cpp:44 cron/cronReader.cpp:41
-#: cups/cupsAccessReader.cpp:41 cups/cupsReader.cpp:45
-#: samba/sambaReader.cpp:42 ssh/sshReader.cpp:41 system/systemReader.cpp:38
-msgid "Date"
-msgstr "Dyddiad"
-
-#: ssh/sshReader.cpp:42
-msgid "Hostname"
-msgstr "Enw gwesteiwr"
-
-#: cron/cronReader.cpp:43 ssh/sshReader.cpp:43 system/systemReader.cpp:40
-msgid "Process"
-msgstr "Proses"
-
-#: acpid/acpidReader.cpp:44 apache/apacheReader.cpp:46 cron/cronReader.cpp:45
-#: cups/cupsReader.cpp:46 samba/sambaReader.cpp:46 ssh/sshReader.cpp:44
-#: system/systemReader.cpp:41 xorg/xorgReader.cpp:57
-#: xsession/xsessionReader.cpp:44
-msgid "Message"
-msgstr "Neges"
-
-#: cron/cronOptions.cpp:54
-msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>Cron Logs</b> "
-"(i.e. planned tasks logs). This list also determines the order in which the "
-"files are read.</p></qt>"
+#: src/lib/logViewExport.cpp:76
+msgid "Too Many Lines Selected"
 msgstr ""
 
-#: apache/apacheAccessReader.cpp:42 cron/cronReader.cpp:42
-#: cups/cupsAccessReader.cpp:42 system/systemReader.cpp:39
-msgid "Host Name"
-msgstr "Enw Gwesteiwr"
-
-#: apache/apacheAccessReader.cpp:44 cron/cronReader.cpp:44
-#: cups/cupsAccessReader.cpp:44 loggerDialog.cpp:86 loggerDialog.cpp:107
-msgid "User"
-msgstr "Defnyddiwr"
-
-#: apache/apacheAccessReader.cpp:43 cups/cupsAccessReader.cpp:43
-msgid "Id."
-msgstr "Dynodiad (Id)."
-
-#: apache/apacheAccessReader.cpp:45 cups/cupsAccessReader.cpp:45
-msgid "Response"
-msgstr "Ymateb"
-
-#: apache/apacheAccessReader.cpp:46 cups/cupsAccessReader.cpp:46
-msgid "Bytes Sent"
-msgstr "Didau Wedi'u Hanfon"
-
-#: apache/apacheAccessReader.cpp:48 cups/cupsAccessReader.cpp:47
-msgid "HTTP Request"
+#: src/lib/logViewExport.cpp:89
+msgid "Log Lines of my problem"
 msgstr ""
 
-#: cups/cupsReader.cpp:81
-msgid "debug 2"
+#: src/lib/logViewExport.cpp:210
+msgid "No items selected. Nothing copied to clipboard."
 msgstr ""
 
-#: apache/apacheReader.cpp:150 cups/cupsReader.cpp:101
-msgid ""
-"New Log Level detected: Please send this log file to the KSystemLog developer "
-"to add it."
+#: src/lib/logViewExport.cpp:216
+#, kde-format
+msgid "1 log line copied to clipboard."
+msgid_plural "%1 log lines copied to clipboard."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/lib/logViewExport.cpp:230
+msgid "No items selected. Please select items to be able to save them."
 msgstr ""
 
-#: cups/cupsOptions.cpp:50
-msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>Cups log</b>"
-". This list also determines the order in which the files are read.</p></qt>"
+#: src/lib/logViewExport.cpp:261
+#, kde-format
+msgid "1 log line saved to '%2'."
+msgid_plural "%1 log lines saved to '%2'."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/lib/logViewExport.cpp:264
+#, kde-format
+msgid "Unable to save file '%1': Permission Denied."
 msgstr ""
 
-#: cups/cupsOptions.cpp:51
-msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>Cups Web Server log</b>"
-". This list also determines the order in which the files are read.</p></qt>"
+#: src/lib/logViewExport.cpp:265
+msgid "Unable to save file."
 msgstr ""
 
-#: samba/sambaReader.cpp:45 xorg/xorgReader.cpp:55
-#: xsession/xsessionReader.cpp:42
-msgid "Line"
-msgstr "Llinell"
-
-#: acpid/acpidReader.cpp:43 xorg/xorgReader.cpp:56
-msgid "Type"
-msgstr "Math"
-
-#: xorg/xorgReader.cpp:96
-msgid "probed"
-msgstr ""
-
-#: xorg/xorgReader.cpp:97
-msgid "from config file"
-msgstr ""
-
-#: xorg/xorgReader.cpp:98
-msgid "default setting"
-msgstr "gosodiad Rhagosod"
-
-#: xorg/xorgReader.cpp:99
-msgid "from command Line"
-msgstr ""
-
-#: xorg/xorgReader.cpp:104
-msgid "not implemented"
-msgstr "heb ei weithredoli"
-
-#: xorg/xorgOptions.cpp:54
-msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>X.org log</b>"
-". This list also determines the order in which the files are read.</p></qt>"
-msgstr ""
-
-#: options.cpp:101 options.cpp:102
-msgid "General"
-msgstr "Cyffredinol"
-
-#: acpid/acpidReader.cpp:60 acpid/acpidReader.cpp:91 defaultReader.cpp:426
-#: globals.cpp:177 logViewWidgetItemFactory.cpp:503
-#: logViewWidgetItemFactory.cpp:524
-msgid "none"
-msgstr "dim"
-
-#: acpid/acpidOptions.cpp:50
-msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>ACPId log</b>"
-". This list also determines the order in which the files are read.</p></qt>"
-msgstr ""
-
-#: samba/sambaOptions.cpp:54
-msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>Samba log</b>"
-". This list also determines the order in which the files are read.</p></qt>"
-msgstr ""
-
-#: samba/sambaReader.cpp:43
-msgid "Source File"
-msgstr "Ffeil Tarddiad"
-
-#: samba/sambaReader.cpp:44
-msgid "Function"
-msgstr "Ffwythiant"
-
-#: logManager.cpp:176
+#: src/lib/logManager.cpp:82
 msgid "Loading log..."
 msgstr ""
 
-#: logManager.cpp:193
+#: src/lib/logManager.cpp:105
 msgid "Log successfully loaded."
 msgstr ""
 
-#: logManager.cpp:282
+#: src/lib/localLogFileReader.cpp:115
+#: src/lib/processOutputLogFileReader.cpp:109
+msgid "This file is not valid. Please adjust it in the settings of KSystemLog."
+msgstr ""
+
+#: src/lib/localLogFileReader.cpp:116
+#: src/lib/processOutputLogFileReader.cpp:110
+msgid "The File Does Not Exist"
+msgstr ""
+
+#: src/lib/localLogFileReader.cpp:129
+#, kde-format
+#| msgid "The file '%1' does not exist."
+msgid "The file '%1' does not exist."
+msgstr ""
+
+#: src/lib/localLogFileReader.cpp:130
+msgid "The file does not exist"
+msgstr ""
+
+#: src/lib/localLogFileReader.cpp:149
+#, kde-format
+msgid "Unable to uncompress the '%2' format of '%1'."
+msgstr ""
+
+#: src/lib/localLogFileReader.cpp:150
+msgid "Unable to uncompress the file"
+msgstr ""
+
+#: src/lib/localLogFileReader.cpp:157
+#, kde-format
+#| msgid "You do not have sufficient permissions to read '%1'."
+msgid "You do not have sufficient permissions to read '%1'."
+msgstr ""
+
+#: src/lib/localLogFileReader.cpp:158
+msgid "Insufficient Permissions"
+msgstr "Caniatadau Annigonol"
+
+#: src/lib/logViewFilterWidget.cpp:80
+msgid "Type your filter here"
+msgstr ""
+
+#: src/lib/logViewFilterWidget.cpp:81
+msgid "Allows you to only list items that match the content of this text."
+msgstr ""
+
+#: src/lib/logViewFilterWidget.cpp:82
+msgid "Enter your search here..."
+msgstr ""
+
+#: src/lib/logViewFilterWidget.cpp:89
+msgid "Filter:"
+msgstr "Hidl:"
+
+#: src/lib/logViewFilterWidget.cpp:109
+msgid "Choose the filtered column here"
+msgstr ""
+
+#: src/lib/logViewFilterWidget.cpp:110
+msgid ""
+"<qt>Allows you to apply the item filter only on the specified column here. "
+"\"<i>All</i>\" column means no specific filter.</qt>"
+msgstr ""
+
+#: src/lib/logViewFilterWidget.cpp:112 src/lib/logViewFilterWidget.cpp:129
+msgid "All"
+msgstr "Popeth"
+
+#: src/lib/processOutputLogFileReader.cpp:154
+#, kde-format
+msgid "The process '%1' crashed."
+msgstr ""
+
+#: src/lib/processOutputLogFileReader.cpp:155
+#, fuzzy
+#| msgid "Process"
+msgid "Process crashed."
+msgstr "Proses"
+
+#: src/lib/loadingBar.cpp:94
+#, kde-format
+msgid "<qt>Loading <b>%1</b>...<br /><i>%2</i> - (<b>%3</b>/%4 files)</qt>"
+msgstr ""
+
+#: src/lib/loadingBar.cpp:96
+#, kde-format
+msgid "<qt>Reloading <b>%1</b>...<br /><i>%2</i> - (<b>%3</b>/%4 files)</qt>"
+msgstr ""
+
+#: src/lib/loadingBar.cpp:101
+#, kde-format
+msgid "<qt>Loading <b>%1</b>...<br /><i>%2</i></qt>"
+msgstr ""
+
+#: src/lib/loadingBar.cpp:103
+#, kde-format
+msgid "<qt>Reloading <b>%1</b>...<br /><i>%2</i></qt>"
+msgstr ""
+
+#: src/lib/logModeItemBuilder.cpp:68 src/lib/logModeItemBuilder.cpp:85
+msgid "Date:"
+msgstr "Dyddiad:"
+
+#: src/lib/logModeItemBuilder.cpp:69
+msgid "Hostname:"
+msgstr "Enw Gwesteiwr:"
+
+#: src/lib/logModeItemBuilder.cpp:70
+msgid "Process:"
+msgstr "Proses :"
+
+#: src/lib/logModeItemBuilder.cpp:71 src/lib/logModeItemBuilder.cpp:86
+msgid "Level:"
+msgstr "Lefel :"
+
+#: src/lib/logModeItemBuilder.cpp:72 src/lib/logModeItemBuilder.cpp:87
+msgid "Original file:"
+msgstr ""
+
+#: src/lib/logViewWidget.cpp:124
+#, kde-format
+msgid "Display/Hide the '%1' column"
+msgstr ""
+
+#: src/lib/levelPrintPage.cpp:41
+msgid "Log Level Printing"
+msgstr ""
+
+#: src/lib/levelPrintPage.cpp:48
+msgid "Choose which log levels you wish to print in color."
+msgstr ""
+
+#: src/lib/logViewSearchWidget.cpp:177
+msgid "Reached end of list."
+msgstr ""
+
+#: src/lib/logViewSearchWidget.cpp:264
+msgid "Phrase not found."
+msgstr ""
+
+#: src/lib/analyzer.cpp:146
+#, fuzzy, kde-format
+#| msgid "Opening file '%1'..."
+msgid "Opening '%1'..."
+msgstr "Agor ffeil... '%1'"
+
+#: src/lib/analyzer.cpp:153
+#, kde-format
+#| msgid "Log file '%1' loaded successfully."
+msgid "Log file '%1' loaded successfully."
+msgstr ""
+
+#: src/lib/analyzer.cpp:167
+#, kde-format
+#| msgid "Log file '%1' has changed."
+msgid "Log file '%1' has changed."
+msgstr ""
+
+#: src/lib/logModeConfiguration.cpp:217 src/lib/logModeConfiguration.cpp:245
+#: src/modes/base/genericConfiguration.cpp:100
+#, kde-format
+#| msgid "URL '%1' is not valid, skipping this URL."
+msgid "URL '%1' is not valid, skipping this URL."
+msgstr ""
+
+#: src/lib/globals.cpp:135
+msgid "None"
+msgstr "Dim"
+
+#: src/lib/globals.cpp:138
+msgid "Debug"
+msgstr ""
+
+#: src/lib/globals.cpp:141
+#, fuzzy
+#| msgid "information"
+msgid "Information"
+msgstr "gwybodaeth"
+
+#: src/lib/globals.cpp:144
+#, fuzzy
+#| msgid "notice"
+msgid "Notice"
+msgstr "nodyn"
+
+#: src/lib/globals.cpp:147
+#, fuzzy
+#| msgid "warning"
+msgid "Warning"
+msgstr "rhybudd"
+
+#: src/lib/globals.cpp:150
+#, fuzzy
+#| msgid "error"
+msgid "Error"
+msgstr "gwall"
+
+#: src/lib/globals.cpp:153
+#, fuzzy
+#| msgid "critical"
+msgid "Critical"
+msgstr "critigol"
+
+#: src/lib/globals.cpp:156
+msgid "Alert"
+msgstr ""
+
+#: src/lib/globals.cpp:159
+msgid "Emergency"
+msgstr ""
+
+#: src/tabLogManager.cpp:77
+#, fuzzy, kde-format
+#| msgid "%1 (%2)"
+msgctxt "Log mode name (added lines count)"
 msgid "%1 (%2)"
 msgstr "%1(%2)"
 
-#: specificFileList.cpp:56
-msgid "&Change Status..."
+#: src/tabLogManager.cpp:82 src/mainWindow.cpp:491
+msgctxt "Newly created tab"
+msgid "Empty Log"
 msgstr ""
 
-#: specificFileList.cpp:58
-msgid "Change the level of the current file(s)"
+#: src/modes/base/syslogAnalyzer.cpp:58
+msgid "Date"
+msgstr "Dyddiad"
+
+#: src/modes/base/syslogAnalyzer.cpp:59
+#, fuzzy
+#| msgid "Hostname"
+msgid "Host"
+msgstr "Enw gwesteiwr"
+
+#: src/modes/base/syslogAnalyzer.cpp:60
+msgid "Process"
+msgstr "Proses"
+
+#. i18n: tag string
+#. i18n: file src/detailDialogBase.ui line 28
+#. i18n: tag string
+#. i18n: file src/loggerDialogBase.ui line 33
+#: src/modes/base/syslogAnalyzer.cpp:61 rc.cpp:26 rc.cpp:134
+msgid "Message"
+msgstr "Neges"
+
+#: src/modes/base/parsingHelper.cpp:157
+#, kde-format
+msgctxt "Size format"
+msgid "%1 B"
 msgstr ""
 
-#: specificFileList.cpp:59
-msgid ""
-"<qt>Changes the level of the current file(s). See KSystemLog documentation for "
-"more information about each log level.</qt>"
+#: src/modes/base/parsingHelper.cpp:162
+#, kde-format
+msgctxt "Size format"
+msgid "%1 KB"
 msgstr ""
 
-#: specificFileList.cpp:62
-msgid "&Change Status"
+#: src/modes/base/parsingHelper.cpp:168
+#, kde-format
+msgctxt "Size format"
+msgid "%1 MB"
 msgstr ""
 
-#: fileList.cpp:165 specificFileList.cpp:95
+#: src/modes/base/parsingHelper.cpp:176
+#, fuzzy, kde-format
+#| msgid "%1 (%2)"
+msgctxt "HttpResponseNumber HttpResponseDescription"
+msgid "%1 %2"
+msgstr "%1(%2)"
+
+#: src/modes/base/fileListHelper.cpp:113
+#, kde-format
+#| msgid "'%1' is not a local file."
+msgid "'%1' is not a local file."
+msgstr ""
+
+#: src/modes/base/fileListHelper.cpp:114
+msgid "File selection failed"
+msgstr ""
+
+#: src/modes/base/fileListHelper.cpp:127 src/modes/base/fileListHelper.cpp:131
 msgid "All Files (*)"
 msgstr ""
 
-#: fileList.cpp:165 specificFileList.cpp:95
+#: src/modes/base/fileListHelper.cpp:127 src/modes/base/fileListHelper.cpp:131
 msgid "Log Files (*.log)"
 msgstr ""
 
-#: fileList.cpp:165 specificFileList.cpp:95
+#: src/modes/base/fileListHelper.cpp:127 src/modes/base/fileListHelper.cpp:131
 msgid "Choose Log File"
 msgstr ""
 
-#: specificFileList.cpp:126
-msgid "Selecting File Type"
+#: src/modes/base/multipleFileList.cpp:395
+msgid "No log file..."
 msgstr ""
 
-#: specificFileList.cpp:138
-msgid "Please select the type of this file:"
+#: src/modes/base/logLevelFileList.cpp:59
+msgid "&Change Status..."
 msgstr ""
 
-#: specificFileList.cpp:144
-msgid "List of existing log levels"
+#: src/modes/base/logLevelFileList.cpp:60
+msgid "Change the level of the current file(s)"
 msgstr ""
 
-#: specificFileList.cpp:145
+#: src/modes/base/logLevelFileList.cpp:61
 msgid ""
-"<qt>This is the list of all existing log levels. Please select one of them to "
-"be used for the selected files of the list.</qt>"
+"<qt>Changes the level of the current file(s). See KSystemLog documentation "
+"for more information about each log level.</qt>"
 msgstr ""
 
-#: specificFileList.cpp:210
+#: src/modes/base/logLevelFileList.cpp:168
 msgid ""
 "The two arrays size are different, skipping the reading of generic paths."
 msgstr ""
 
-#: detailDialog.cpp:53
-msgid "&Next"
-msgstr "&Nesaf"
-
-#: generalOptions.cpp:46
-msgid "Log Lines List"
-msgstr ""
-
-#: generalOptions.cpp:50
-msgid "Maximum lines displayed:"
-msgstr ""
-
-#: generalOptions.cpp:57
-msgid ""
-"<qt>Choose here the maximum number of log lines displayed in the main view.</qt>"
-msgstr ""
-
-#: generalOptions.cpp:58
-msgid ""
-"<qt>You can choose here the maximum number of log lines displayed in the main "
-"view.</qt>"
-msgstr ""
-
-#: generalOptions.cpp:61
-msgid "Delete duplicated log lines (may be slow)"
-msgstr ""
-
-#: generalOptions.cpp:64
-msgid ""
-"<qt>Select this option if you want to delete duplicated log lines <b>"
-"(may be slow)</b>.</qt>"
-msgstr ""
-
-#: generalOptions.cpp:65
-msgid ""
-"<qt>You can select this option if you want to delete duplicated log lines. <b>"
-"This option can slow the reading</b>.</qt>"
-msgstr ""
-
-#: generalOptions.cpp:70
-msgid "Maximum Characters to Read per Line"
-msgstr ""
-
-#: generalOptions.cpp:74
-msgid "Number of characters:"
-msgstr ""
-
-#: generalOptions.cpp:81
-msgid ""
-"<qt>Choose here the maximum number of characters to read from each log "
-"line.</qt>"
-msgstr ""
-
-#: generalOptions.cpp:82
-msgid ""
-"<qt>You can choose here the maximum number of characters to read from each log "
-"line.</qt>"
-msgstr ""
-
-#: generalOptions.cpp:89
-msgid "Delete process identifier from process name"
-msgstr ""
-
-#: generalOptions.cpp:92
-msgid "<qt>Delete process identifier from process name.</qt>"
-msgstr ""
-
-#: generalOptions.cpp:93
-msgid ""
-"<qt>You can select this option if you want to delete the process identifier "
-"from process name. For example, you will sometimes see in the <b>Process</b> "
-"column something like <i>cron<b>[3433]</b></i>. If this option is activated, "
-"the annoying bold part will be erased.</qt>"
-msgstr ""
-
-#: generalOptions.cpp:96
-msgid "Colorize log lines"
-msgstr ""
-
-#: generalOptions.cpp:99
-msgid ""
-"<qt>This option allows the colorization of log lines, depending on their log "
-"level.</qt>"
-msgstr ""
-
-#: generalOptions.cpp:100
-msgid ""
-"<qt>This option allows the colorization of log lines, depending on their log "
-"level. For example, an error will be in red, a warning in orange... This will "
-"help you to better see problems.</qt>"
-msgstr ""
-
-#: loadingDialog.cpp:27
-msgid "Loading Progress"
-msgstr "Llwytho Cynnydd"
-
-#: loadingDialog.cpp:112
-msgid "<qt>Loading <b>%1</b> [<b>%2</b>/%3 file] (<b>%4</b>/%5)...</qt>"
-msgstr ""
-
-#: loadingDialog.cpp:114
-msgid "<qt>Reloading <b>%1</b> [<b>%2</b>/%3 file] (<b>%4</b>/%5)...</qt>"
-msgstr ""
-
-#: loadingDialog.cpp:119
-msgid "<qt>Loading <b>%1</b> [<b>%2</b>/%3 file]...</qt>"
-msgstr ""
-
-#: loadingDialog.cpp:121
-msgid "<qt>Reloading <b>%1</b> [<b>%2</b>/%3 file]...</qt>"
-msgstr ""
-
-#: loadingDialog.cpp:130
-msgid "<qt>Loading <b>%1</b> (<b>%2</b>/%3)...</qt>"
-msgstr ""
-
-#: loadingDialog.cpp:132
-msgid "<qt>Reloading <b>%1</b> (<b>%2</b>/%3)...</qt>"
-msgstr ""
-
-#: loadingDialog.cpp:137
-msgid "<qt>Loading <b>%1</b>...</qt>"
-msgstr ""
-
-#: loadingDialog.cpp:139
-msgid "<qt>Reloading <b>%1</b>...</qt>"
-msgstr ""
-
-#: _translatorinfo.cpp:1
-msgid ""
-"_: NAME OF TRANSLATORS\n"
-"Your names"
-msgstr "KD wrth KGyfieithu"
-
-#: _translatorinfo.cpp:3
-msgid ""
-"_: EMAIL OF TRANSLATORS\n"
-"Your emails"
-msgstr "kyfieithu@dotmon.com"
-
-#: readerFactory.cpp:352 readerFactory.cpp:387 readerFactory.cpp:412
-msgid "URL '%1' is not valid, skipping this URL."
-msgstr ""
-
-#: readerFactory.cpp:365
+#: src/modes/base/genericConfiguration.cpp:80
 msgid "The two arrays size are different, skipping the reading of log files."
 msgstr ""
 
-#: main.cpp:36
-msgid "KSystemlog"
+#: src/modes/cron/cronLogMode.cpp:39
+msgid "Cron Log"
 msgstr ""
 
-#: main.cpp:38
-msgid "System Logs Viewer Tool for KDE"
+#: src/modes/cron/cronLogMode.cpp:48
+msgid "Display the planned tasks log (Cron log)."
 msgstr ""
 
-#: main.cpp:40
-msgid "(C) 2007, Nicolas Ternisien"
-msgstr ""
-
-#: main.cpp:48
-msgid "Ideas, Code improvements"
-msgstr ""
-
-#: main.cpp:49
-msgid "SSH mode, Printing feature"
-msgstr ""
-
-#: main.cpp:54
-msgid "Document to open"
-msgstr "Dogfen i'w hagor"
-
-#: apache/apacheOptions.cpp:50
+#: src/modes/cron/cronLogMode.cpp:49
 msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>Apache log</b>"
-". This list also determines the order in which the files are read.</p></qt>"
+"Displays the planned tasks log in the current tab. Cron process is a program "
+"in charged of launching planned tasks on your system, like security checks, "
+"or auto-restarting of some services. Use this menu to see the last-launched "
+"processes."
 msgstr ""
 
-#: apache/apacheOptions.cpp:51
+#: src/modes/cups/cupsFactory.cpp:58
+msgid "Cups"
+msgstr ""
+
+#: src/modes/cups/cupsPdfLogMode.cpp:40
+msgid "Cups PDF Log"
+msgstr ""
+
+#: src/modes/cups/cupsPdfLogMode.cpp:49
+msgid "Display the CUPS PDF log."
+msgstr ""
+
+#: src/modes/cups/cupsPdfLogMode.cpp:50
 msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>Apache Access log</b>"
-". This list also determines the order in which the files are read.</p></qt>"
+"Displays the CUPS PDF log in the current tab. CUPS is the program which "
+"manage printing on your computer. This log saves all requests performed to "
+"the CUPS embedded web server (default: <i>http://localhost:631</i>)."
 msgstr ""
 
-#: apache/apacheReader.cpp:45
-msgid "Client"
-msgstr "Dibynnydd:"
-
-#: apache/apacheAccessReader.cpp:47
-msgid "Agent Identity"
-msgstr ""
-
-#: apache/apacheAccessReader.cpp:49
-msgid "URL"
-msgstr "URL"
-
-#: daemon/daemonOptions.cpp:54
-msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>daemons Logs</b>"
-". This list also determine the order in which the files are read.</p></qt>"
-msgstr ""
-
-#: reader.cpp:112
-msgid "This file is not valid. Please adjust it in the settings of KSystemLog."
-msgstr ""
-
-#: reader.cpp:113 reader.cpp:125
-msgid "The File Does Not Exist"
-msgstr ""
-
-#: reader.cpp:124
-msgid "The file '%1' does not exist."
-msgstr ""
-
-#: reader.cpp:133
-msgid "You do not have sufficient permissions to read '%1'."
-msgstr ""
-
-#: reader.cpp:134
-msgid "Insufficient Permissions"
-msgstr "Caniatadau Annigonol"
-
-#: logLineFilter.cpp:50
-msgid "Filter here..."
-msgstr ""
-
-#: kernel/kernelOptions.cpp:55
-msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>Kernel logs</b>"
-". This list also determines the order in which the files are read.</p></qt>"
-msgstr ""
-
-#: xsession/xsessionReader.cpp:43
-msgid "Program"
-msgstr "Rhaglen"
-
-#: xsession/xsessionOptions.cpp:56
-msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>X Session Log</b>"
-". This list also determines the order in which the files are read.</p></qt>"
-msgstr ""
-
-#: logViewWidgetItemFactory.cpp:330 logViewWidgetItemFactory.cpp:349
-#: logViewWidgetItemFactory.cpp:367 logViewWidgetItemFactory.cpp:381
-#: logViewWidgetItemFactory.cpp:396 logViewWidgetItemFactory.cpp:417
-#: logViewWidgetItemFactory.cpp:434 logViewWidgetItemFactory.cpp:457
-#: logViewWidgetItemFactory.cpp:485
-msgid "Date:"
-msgstr "Dyddiad:"
-
-#: logViewWidgetItemFactory.cpp:331 logViewWidgetItemFactory.cpp:350
-#: logViewWidgetItemFactory.cpp:398 logViewWidgetItemFactory.cpp:436
-msgid "Hostname:"
-msgstr "Enw Gwesteiwr:"
-
-#: logViewWidgetItemFactory.cpp:332 logViewWidgetItemFactory.cpp:351
-msgid "Process:"
-msgstr "Proses :"
-
-#: logViewWidgetItemFactory.cpp:333
-msgid "User:"
-msgstr "Defnyddiwr:"
-
-#: logViewWidgetItemFactory.cpp:334 logViewWidgetItemFactory.cpp:352
-#: logViewWidgetItemFactory.cpp:368 logViewWidgetItemFactory.cpp:382
-#: logViewWidgetItemFactory.cpp:397 logViewWidgetItemFactory.cpp:418
-#: logViewWidgetItemFactory.cpp:435 logViewWidgetItemFactory.cpp:458
-#: logViewWidgetItemFactory.cpp:486
-msgid "Level:"
-msgstr "Lefel :"
-
-#: logViewWidgetItemFactory.cpp:335 logViewWidgetItemFactory.cpp:353
-#: logViewWidgetItemFactory.cpp:487 logViewWidgetItemFactory.cpp:507
-#: logViewWidgetItemFactory.cpp:528
-msgid "Original file:"
-msgstr ""
-
-#: logViewWidgetItemFactory.cpp:369 logViewWidgetItemFactory.cpp:503
-#: logViewWidgetItemFactory.cpp:505
-msgid "Type:"
-msgstr "Math:"
-
-#: logViewWidgetItemFactory.cpp:399 logViewWidgetItemFactory.cpp:437
-msgid "Identification:"
-msgstr "Dynodiad :"
-
-#: logViewWidgetItemFactory.cpp:400 logViewWidgetItemFactory.cpp:438
-msgid "Username:"
-msgstr "Enw defnyddiwr:"
-
-#: logViewWidgetItemFactory.cpp:401 logViewWidgetItemFactory.cpp:439
-msgid "HTTP Response:"
-msgstr ""
-
-#: logViewWidgetItemFactory.cpp:402 logViewWidgetItemFactory.cpp:440
-msgid "Bytes Sent:"
-msgstr "Didau Wedi'u Hanfon :"
-
-#: logViewWidgetItemFactory.cpp:419
-msgid "Client:"
-msgstr "Dibynnydd:"
-
-#: logViewWidgetItemFactory.cpp:441
-msgid "Agent Identity:"
-msgstr ""
-
-#: logViewWidgetItemFactory.cpp:442
-msgid "HTTP Request:"
-msgstr ""
-
-#: logViewWidgetItemFactory.cpp:459
-msgid "Source File:"
-msgstr "Ffeil Tarddiad :"
-
-#: logViewWidgetItemFactory.cpp:460
-msgid "Function:"
-msgstr "Ffwythiant"
-
-#: logViewWidgetItemFactory.cpp:461
-msgid "Line:"
-msgstr "Llinell :"
-
-#: logViewWidgetItemFactory.cpp:524 logViewWidgetItemFactory.cpp:526
-msgid "Program:"
-msgstr "Rhaglen:"
-
-#: levelPrintPage.cpp:39
-msgid "Log Level Printing"
-msgstr ""
-
-#: levelPrintPage.cpp:45
-msgid "Choose which log levels you wish to print in color."
-msgstr ""
-
-#: levelPrintPage.cpp:48
-msgid "Log Levels"
-msgstr ""
-
-#. i18n: file ./ksystemlogui.rc line 30
-#: rc.cpp:9
-#, no-c-format
-msgid "&Logs"
-msgstr ""
-
-#. i18n: file ./ksystemlogui.rc line 41
-#: rc.cpp:12
-#, no-c-format
-msgid "&CUPS"
-msgstr "&CUPS"
-
-#. i18n: file ./ksystemlogui.rc line 47
-#: rc.cpp:15
-#, no-c-format
-msgid "&Apache"
-msgstr "&Apache"
-
-#. i18n: file ./ksystemlogui.rc line 63
-#: rc.cpp:21
-#, no-c-format
-msgid "&Window"
-msgstr "&Ffenestr"
-
-#. i18n: file ./ksystemlogui.rc line 76
-#: rc.cpp:24
-#, no-c-format
-msgid "Main Logs Toolbar"
-msgstr ""
-
-#: system/systemOptions.cpp:49
-msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>System logs</b>"
-". This list also determines the order in which the files are read.</p></qt>"
-msgstr ""
-
-#: loggerDialog.cpp:97
-msgid "Authentication"
-msgstr "Dilysiant"
-
-#: loggerDialog.cpp:98
-msgid "Private Authentication"
-msgstr ""
-
-#: loggerDialog.cpp:99
-msgid "Cron"
-msgstr ""
-
-#: loggerDialog.cpp:100
-msgid "Daemon"
-msgstr "Daemon"
-
-#: loggerDialog.cpp:101
-msgid "FTP"
-msgstr "FTP"
-
-#: loggerDialog.cpp:102
-msgid "Kernel"
-msgstr "Cnewyllyn"
-
-#: loggerDialog.cpp:103
-msgid "LPR"
-msgstr ""
-
-#: loggerDialog.cpp:104
-msgid "Mail"
-msgstr "Post"
-
-#: loggerDialog.cpp:105
-msgid "News"
-msgstr "Newyddion"
-
-#: loggerDialog.cpp:106
-msgid "Syslog"
-msgstr "Cofnod cysawd"
-
-#: loggerDialog.cpp:108
-msgid "UUCP"
-msgstr ""
-
-#: loggerDialog.cpp:110
-msgid "Local 0"
-msgstr ""
-
-#: loggerDialog.cpp:111
-msgid "Local 1"
-msgstr ""
-
-#: loggerDialog.cpp:112
-msgid "Local 2"
-msgstr ""
-
-#: loggerDialog.cpp:113
-msgid "Local 3"
-msgstr ""
-
-#: loggerDialog.cpp:114
-msgid "Local 4"
-msgstr ""
-
-#: loggerDialog.cpp:115
-msgid "Local 5"
-msgstr ""
-
-#: loggerDialog.cpp:116
-msgid "Local 6"
-msgstr ""
-
-#: loggerDialog.cpp:117
-msgid "Local 7"
-msgstr ""
-
-#: loggerDialog.cpp:227
-msgid ""
-"Unable to find the 'logger' command on your system. Please type 'logger' in "
-"Konsole to be sure that this command is not installed."
-msgstr ""
-
-#: loggerDialog.cpp:227
-msgid "Command not found"
-msgstr ""
-
-#: loggerDialog.cpp:232
-msgid "The 'logger' command has not been properly exited."
-msgstr ""
-
-#: loggerDialog.cpp:232
-msgid "Execution problem"
-msgstr ""
-
-#: loggerDialog.cpp:239
-msgid "This file does not exist. Please choose a right file."
-msgstr ""
-
-#: loggerDialog.cpp:239
-msgid "File not valid"
-msgstr ""
-
-#: mainWindow.cpp:227 mainWindow.cpp:418
-msgid "Create a new tab"
-msgstr ""
-
-#: mainWindow.cpp:228 mainWindow.cpp:419
-msgid "Creates a new tab which can display another log."
-msgstr ""
-
-#: mainWindow.cpp:233 mainWindow.cpp:425
-msgid "Close the current tab"
-msgstr "Cau'r tab cyfredol"
-
-#: mainWindow.cpp:234 mainWindow.cpp:426
-msgid "Closes the current tab."
-msgstr ""
-
-#: mainWindow.cpp:343
-msgid "Open a file in KSystemLog"
-msgstr ""
-
-#: mainWindow.cpp:344
-msgid "Opens a file in KSystemLog and displays its content in the current tab."
-msgstr ""
-
-#: mainWindow.cpp:347
-msgid "&Print selection..."
-msgstr ""
-
-#: mainWindow.cpp:348
-msgid "Print the selection"
-msgstr ""
-
-#: mainWindow.cpp:349
-msgid ""
-"Prints the selection. Simply select the important lines and click on this menu "
-"entry to print the selection."
-msgstr ""
-
-#: mainWindow.cpp:355
-msgid "Save the selection to a file"
-msgstr ""
-
-#: mainWindow.cpp:356
-msgid ""
-"Saves the selection to a file. This action is useful if you want to create an "
-"attachment or a backup of a particular log."
-msgstr ""
-
-#: mainWindow.cpp:360
-msgid "Quit KSystemLog"
-msgstr ""
-
-#: mainWindow.cpp:361
-msgid "Quits KSystemLog."
-msgstr ""
-
-#: mainWindow.cpp:364
-msgid "Copy the selection to the clipboard"
-msgstr ""
-
-#: mainWindow.cpp:365
-msgid ""
-"Copies the selection to the clipboard. This action is useful if you want to "
-"paste the selection in a chat or an email."
-msgstr ""
-
-#: mainWindow.cpp:369
-msgid "Ex&pand All"
-msgstr ""
-
-#: mainWindow.cpp:371
-msgid "Expand all categories"
-msgstr ""
-
-#: mainWindow.cpp:372
-msgid ""
-"<qt>This action opens all main categories. This is enabled only if an option "
-"has been selected in the <b>Group By</b> menu.</qt>"
-msgstr ""
-
-#: mainWindow.cpp:376
-msgid "Col&lapse All"
-msgstr ""
-
-#: mainWindow.cpp:378
-msgid "Collapse all categories"
-msgstr ""
-
-#: mainWindow.cpp:379
-msgid ""
-"<qt>This action closes all main categories. This is enabled only if an option "
-"has been selected in the <b>Group By</b> menu.</qt>"
-msgstr ""
-
-#: mainWindow.cpp:383
-msgid "&Email Selection..."
-msgstr ""
-
-#: mainWindow.cpp:386
-msgid "Send the selection by mail"
-msgstr ""
-
-#: mainWindow.cpp:387
-msgid ""
-"Sends the selection by mail. Simply select the important lines and click on "
-"this menu entry to send the selection to a friend or a mailing list."
-msgstr ""
-
-#: mainWindow.cpp:391
-msgid "&Add Log Entry..."
-msgstr ""
-
-#: mainWindow.cpp:394
-msgid "Add a log entry to the log system"
-msgstr ""
-
-#: mainWindow.cpp:395
-msgid ""
-"This action will open a dialog which lets you send a message to the log system."
-msgstr ""
-
-#: mainWindow.cpp:398
-msgid "Select all lines of the current log"
-msgstr ""
-
-#: mainWindow.cpp:399
-msgid ""
-"Selects all lines of the current log. This action is useful if you want, for "
-"example, to save all the content of the current log in a file."
-msgstr ""
-
-#: mainWindow.cpp:408
-msgid "Show &Filter Bar"
-msgstr ""
-
-#: mainWindow.cpp:415
-msgid "&New Tab"
-msgstr "Tab &Newydd"
-
-#: mainWindow.cpp:422
-msgid "&Close Tab"
-msgstr "&Cau Tab"
-
-#: mainWindow.cpp:429
-msgid "&Duplicate Tab"
-msgstr "&Dyblygu Tab"
-
-#: mainWindow.cpp:432
-msgid "Duplicate the current tab"
-msgstr ""
-
-#: mainWindow.cpp:433
-msgid "Duplicates the current tab."
-msgstr ""
-
-#: mainWindow.cpp:436
-msgid "Move Tab &Left"
-msgstr "Symud Tab i'r &Chwith"
-
-#: mainWindow.cpp:439
-msgid "Move the current tab to the left"
-msgstr ""
-
-#: mainWindow.cpp:440
-msgid "Moves the current tab to the left."
-msgstr ""
-
-#: mainWindow.cpp:443
-msgid "Move Tab &Right"
-msgstr "Symud Tab i'r &Dde"
-
-#: mainWindow.cpp:446
-msgid "Move the current tab to the right"
-msgstr ""
-
-#: mainWindow.cpp:447
-msgid "Moves the current tab to the right."
-msgstr ""
-
-#: mainWindow.cpp:453
-msgid "Reload the current log"
-msgstr ""
-
-#: mainWindow.cpp:454
-msgid ""
-"Reloads the current log, if you want to be sure that the view is correctly "
-"updated."
-msgstr ""
-
-#: mainWindow.cpp:457
-msgid "Resu&me Parsing"
-msgstr ""
-
-#: mainWindow.cpp:460
-msgid "Resume the watching of the current log"
-msgstr ""
-
-#: mainWindow.cpp:461
-msgid ""
-"Resumes the watching of the current log. This action is only available when the "
-"user has already paused the reading."
-msgstr ""
-
-#: mainWindow.cpp:465
-msgid "S&top Parsing"
-msgstr ""
-
-#: mainWindow.cpp:468
-msgid "Pause the watching of the current log"
-msgstr ""
-
-#: mainWindow.cpp:469
-msgid ""
-"Pauses the watching of the current log. This action is particularly useful when "
-"the system is writing too many lines to log files, causing KSystemLog to reload "
-"too frequently."
-msgstr ""
-
-#: mainWindow.cpp:472
-msgid "&Details"
-msgstr "&Manylion"
-
-#: mainWindow.cpp:475
-msgid "Display details on the currently selected line"
-msgstr ""
-
-#: mainWindow.cpp:476
-msgid ""
-"Displays a dialog box which contains details on the currently selected line. "
-"You are able to navigate through the logs from this dialog box with the <b>"
-"Previous</b> / <b>Next</b> buttons."
-msgstr ""
-
-#: mainWindow.cpp:479
-msgid "&Enable Detailed Tooltips"
-msgstr ""
-
-#: mainWindow.cpp:480
-msgid "Disable/Enable the tooltips on the current view"
-msgstr ""
-
-#: mainWindow.cpp:481
-msgid ""
-"Disables/Enables the tooltips displayed when the cursor hovers a log line."
-msgstr ""
-
-#: mainWindow.cpp:484
-msgid "&Display New Lines"
-msgstr ""
-
-#: mainWindow.cpp:485
-msgid "Display or not new lines if the log changes"
-msgstr ""
-
-#: mainWindow.cpp:486
-msgid ""
-"Displays or not the new lines if the log changes. This option is useful when "
-"you want to see an old log lines and that KSystemLog often refreshes the "
-"current view."
-msgstr ""
-
-#: mainWindow.cpp:511
-msgid "S&ystem Log"
-msgstr ""
-
-#: mainWindow.cpp:512
-msgid "Display the system log."
-msgstr ""
-
-#: mainWindow.cpp:513
-msgid ""
-"Displays the system log in the current tab. This log is generally used by "
-"non-specialized processes (like \"sudo\" or \"fsck\" commands)"
-msgstr ""
-
-#: mainWindow.cpp:519
-msgid "&Kernel Log"
-msgstr ""
-
-#: mainWindow.cpp:520
-msgid "Display the kernel log."
-msgstr ""
-
-#: mainWindow.cpp:521
-msgid ""
-"<qt>Displays the kernel log in the current tab. This log is only useful for "
-"users who want to know why the Kernel does not detect their hardware or what is "
-"the cause of the last <i>kernel panic/oops</i>.</qt>"
-msgstr ""
-
-#: mainWindow.cpp:527
-msgid "&Boot Log"
-msgstr ""
-
-#: mainWindow.cpp:528
-msgid "Display the boot log."
-msgstr ""
-
-#: mainWindow.cpp:529
-msgid ""
-"<qt>Displays the boot log in the current tab. This log is useful if you want to "
-"verify if all startup services have been correctly started.</qt>"
-msgstr ""
-
-#: mainWindow.cpp:535
-msgid "A&uthentication Log"
-msgstr ""
-
-#: mainWindow.cpp:536
-msgid "Display the authentication log."
-msgstr ""
-
-#: mainWindow.cpp:537
-msgid ""
-"<qt>Displays the authentication log in the current tab. This log displays all "
-"log in made by each user of the system, and can help you to know if someone "
-"tried to crack your system.</qt>"
-msgstr ""
-
-#: mainWindow.cpp:543
-msgid "&Daemons Log"
-msgstr ""
-
-#: mainWindow.cpp:544
-msgid "Display the daemons log."
-msgstr ""
-
-#: mainWindow.cpp:545
-msgid ""
-"<qt>Displays the daemons log in the current tab. The daemons are all processes "
-"launched in the background of the system. See this log if you want to know what "
-"it occurs in the background of your system.</qt>"
-msgstr ""
-
-#: mainWindow.cpp:551
-msgid "&Planned Tasks Log"
-msgstr ""
-
-#: mainWindow.cpp:552
-msgid "Display the planned tasks log (or Cron log)."
-msgstr ""
-
-#: mainWindow.cpp:553
-msgid ""
-"<qt>Displays the planned tasks log in the current tab. Cron process is a "
-"program in charged of launching planned tasks on your system, like security "
-"checks, or auto-restarting of some services. Use this menu to see the "
-"last-launched processes.</qt>"
-msgstr ""
-
-#: mainWindow.cpp:559
-msgid "&X.org Log"
-msgstr ""
-
-#: mainWindow.cpp:560
-msgid "Display the X.org log."
-msgstr ""
-
-#: mainWindow.cpp:561
-msgid ""
-"<qt>Displays the X.org log in the current tab. X.org is the service which "
-"displays on screen your desktop and manage your graphical hardware. See this "
-"log if you want to know why you do not have 3D accelerations or why your input "
-"device is not recognized.</qt>"
-msgstr ""
-
-#: mainWindow.cpp:566
-msgid "X &Session Log"
-msgstr ""
-
-#: mainWindow.cpp:567
-msgid "Display the X Session log."
-msgstr ""
-
-#: mainWindow.cpp:568
-msgid ""
-"<qt>Displays the X Session log in the current tab. X Session log is the place "
-"where graphical programs write their output. See this log if you want to know "
-"why a program has crashed, or why your display manager (KDE, Gnome,...) has not "
-"started.</qt>"
-msgstr ""
-
-#: mainWindow.cpp:575
-msgid "&ACPI Log"
-msgstr ""
-
-#: mainWindow.cpp:576
-msgid "Display the ACPI log."
-msgstr ""
-
-#: mainWindow.cpp:577
-msgid ""
-"<qt>Displays the ACPI log in the current tab. ACPI is used to manage the "
-"hardware components of your computer, like notebook batteries, reset "
-"buttons...</qt>"
-msgstr ""
-
-#: mainWindow.cpp:583
-msgid "&CUPS Log"
-msgstr ""
-
-#: mainWindow.cpp:584
-msgid "Display the CUPS log."
-msgstr ""
-
-#: mainWindow.cpp:585
-msgid ""
-"<qt>Displays the CUPS log in the current tab. CUPS is the program which manage "
-"printing on your computer.</qt>"
-msgstr ""
-
-#: mainWindow.cpp:591
-msgid "&CUPS Web Log"
+#: src/modes/cups/cupsAccessLogMode.cpp:40
+msgid "Cups Web Log"
 msgstr ""
 
-#: mainWindow.cpp:592
+#: src/modes/cups/cupsAccessLogMode.cpp:49
 msgid "Display the CUPS Web Server Access log."
 msgstr ""
 
-#: mainWindow.cpp:593
+#: src/modes/cups/cupsAccessLogMode.cpp:50
 msgid ""
-"<qt>Displays the CUPS Web Server Access log in the current tab. CUPS is the "
+"Displays the CUPS Web Server Access log in the current tab. CUPS is the "
 "program which manage printing on your computer. This log saves all requests "
-"performed to the CUPS embedded web server (default: <i>http://localhost:631</i>"
-").</qt>"
+"performed to the CUPS embedded web server (default: <i>http://localhost:631</"
+"i>)."
 msgstr ""
 
-#: mainWindow.cpp:600
-msgid "&Apache log"
+#: src/modes/cups/cupsLogMode.cpp:40
+msgid "Cups Log"
 msgstr ""
 
-#: mainWindow.cpp:601
+#: src/modes/cups/cupsLogMode.cpp:49
+msgid "Display the Cups log."
+msgstr ""
+
+#: src/modes/cups/cupsLogMode.cpp:50
+msgid ""
+"Displays the CUPS log in the current tab. CUPS is the program which manage "
+"printing on your computer."
+msgstr ""
+
+#: src/modes/cups/cupsPageLogMode.cpp:40
+msgid "Cups Page Log"
+msgstr ""
+
+#: src/modes/cups/cupsPageLogMode.cpp:49
+msgid "Display the CUPS Page log."
+msgstr ""
+
+#: src/modes/cups/cupsPageLogMode.cpp:50
+msgid ""
+"Displays the CUPS Page log in the current tab. CUPS is the program which "
+"manage printing on your computer. This log saves all requests performed to "
+"the CUPS embedded web server (default: <i>http://localhost:631</i>)."
+msgstr ""
+
+#: src/modes/open/openLogMode.cpp:43
+msgid "Log File"
+msgstr "Ffeil Gofnod"
+
+#: src/modes/open/openLogMode.cpp:66
+msgid "Open Location"
+msgstr "Agor Lleoliad"
+
+#: src/modes/open/openLogMode.cpp:82
+msgid "Malformed URL. Unable to open this file."
+msgstr ""
+
+#: src/modes/open/openLogMode.cpp:83
+msgid "Unable to open this file."
+msgstr ""
+
+#: src/modes/xorg/xorgLogMode.cpp:39
+msgid "X.org Log"
+msgstr ""
+
+#: src/modes/xorg/xorgLogMode.cpp:48
+msgid "Display the X.org log."
+msgstr ""
+
+#: src/modes/xorg/xorgLogMode.cpp:49
+msgid ""
+"Displays the X.org log in the current tab. X.org is the service which "
+"displays on screen your desktop and manage your graphical hardware. See this "
+"log if you want to know why you do not have 3D accelerations or why your "
+"input device is not recognized."
+msgstr ""
+
+#: src/modes/acpid/acpidLogMode.cpp:39
+msgid "ACPI Log"
+msgstr ""
+
+#: src/modes/acpid/acpidLogMode.cpp:48
+msgid "Display the ACPI log."
+msgstr ""
+
+#: src/modes/acpid/acpidLogMode.cpp:49
+msgid ""
+"Displays the ACPI log in the current tab. ACPI is used to manage the "
+"hardware components of your computer, like notebook batteries, reset "
+"buttons..."
+msgstr ""
+
+#: src/modes/samba/sambaAccessLogMode.cpp:40
+msgid "Samba Access Log"
+msgstr ""
+
+#: src/modes/samba/sambaAccessLogMode.cpp:48
+msgid "Display the Samba Access log."
+msgstr ""
+
+#: src/modes/samba/sambaAccessLogMode.cpp:49
+msgid ""
+"<qt>Displays the Samba Access log in the current tab. This log mode allows "
+"you to see connections between your shares and remote hosts.</qt>"
+msgstr ""
+
+#: src/modes/samba/sambaLogMode.cpp:40
+msgid "Samba Log"
+msgstr ""
+
+#: src/modes/samba/sambaLogMode.cpp:48
+msgid "Display the Samba log."
+msgstr ""
+
+#: src/modes/samba/sambaLogMode.cpp:49
+msgid ""
+"<qt>Displays the Samba log in the current tab. Samba is the file sharing "
+"server which interacts with Microsoft Windows network.</qt>"
+msgstr ""
+
+#: src/modes/samba/netbiosLogMode.cpp:40
+msgid "Netbios Log"
+msgstr ""
+
+#: src/modes/samba/netbiosLogMode.cpp:48
+msgid "Display the Netbios log."
+msgstr ""
+
+#: src/modes/samba/netbiosLogMode.cpp:49
+msgid ""
+"<qt>Displays the Netbios log in the current tab. Netbios is the file sharing "
+"protocol developed by Microsoft.</qt>"
+msgstr ""
+
+#: src/modes/samba/sambaFactory.cpp:58
+msgid "Samba"
+msgstr ""
+
+#: src/modes/apache/apacheLogMode.cpp:40
+msgid "Apache Log"
+msgstr ""
+
+#: src/modes/apache/apacheLogMode.cpp:49
 msgid "Display the Apache log."
 msgstr ""
 
-#: mainWindow.cpp:602
+#: src/modes/apache/apacheLogMode.cpp:50
 msgid ""
 "<qt>Displays the Apache log in the current tab. Apache is the main used Web "
 "server in the world.</qt>"
 msgstr ""
 
-#: mainWindow.cpp:608
-msgid "&Apache Web log"
-msgstr ""
-
-#: mainWindow.cpp:609
-msgid "Display the Apache Access log."
-msgstr ""
-
-#: mainWindow.cpp:610
-msgid ""
-"<qt>Displays the Apache Access log in the current tab. Apache is the main used "
-"Web server in the world. This log saves all requests performed by the Apache "
-"web server.</qt>"
-msgstr ""
-
-#: mainWindow.cpp:616
-msgid "&Postfix Log"
-msgstr ""
-
-#: mainWindow.cpp:617
-msgid "Display the Postfix log."
-msgstr ""
-
-#: mainWindow.cpp:618
-msgid ""
-"<qt>Displays the Postfix log in the current tab. Postfix is the most known and "
-"used mail server in the Linux world.</qt>"
-msgstr ""
-
-#: mainWindow.cpp:624
-msgid "&Samba Log"
-msgstr ""
-
-#: mainWindow.cpp:625
-msgid "Display the Samba log."
-msgstr ""
-
-#: mainWindow.cpp:626
-msgid ""
-"<qt>Displays the Samba log in the current tab. Samba is the file sharing server "
-"which interacts with Microsoft Windows network.</qt>"
-msgstr ""
-
-#: mainWindow.cpp:632
-msgid "SS&H Log"
-msgstr ""
-
-#: mainWindow.cpp:633
-msgid "Display the SSH log."
-msgstr ""
-
-#: mainWindow.cpp:634
-msgid ""
-"<qt>Displays the SSH log in the current tab. SSH log lists security and SSH "
-"related information.</qt>"
-msgstr ""
-
-#: globals.cpp:116 mainWindow.cpp:800
-msgid "No Log"
-msgstr ""
-
-#: mainWindow.cpp:980
-#, c-format
-msgid "Last updated: %1."
-msgstr ""
-
-#: mainWindow.cpp:1063
-msgid "Open Location"
-msgstr "Agor Lleoliad"
-
-#: mainWindow.cpp:1076
-msgid "Malformed URL. Unable to open this file."
-msgstr ""
-
-#: mainWindow.cpp:1077
-msgid "Unable to open this file."
-msgstr ""
-
-#: bootauth/bootAuthenticationOptions.cpp:52
+#: src/modes/apache/apacheFactory.cpp:54
 #, fuzzy
-msgid "Boot Log File"
-msgstr "Ffeil Gofnod"
+#| msgid "&Apache"
+msgid "Apache"
+msgstr "&Apache"
 
-#: bootauth/bootAuthenticationOptions.cpp:54
-#, fuzzy
-msgid "Boot Log File:"
-msgstr "Ffeil Gofnod"
-
-#: bootauth/bootAuthenticationOptions.cpp:58
-msgid ""
-"<qt>Here, you can type or choose the boot log file (example: <i>"
-"/var/log/boot.log</i>).</qt>"
-msgstr ""
-
-#: bootauth/bootAuthenticationOptions.cpp:59
-msgid ""
-"<qt>You can type or choose here the boot log file. This file will be analyzed "
-"by KSystemLog when you will choose the <b>Boot log</b> "
-"menu item. Generally, its name is <i>/var/log/boot.log</i></qt>"
-msgstr ""
-
-#: bootauth/bootAuthenticationOptions.cpp:64
-#, fuzzy
-msgid "Authentication Log File"
-msgstr "Dilysiant"
-
-#: bootauth/bootAuthenticationOptions.cpp:66
-#, fuzzy
-msgid "Authentication Log File:"
-msgstr "Dilysiant"
-
-#: bootauth/bootAuthenticationOptions.cpp:70
-msgid ""
-"<qt>Here, you can type or choose the authentication log file (example: <i>"
-"/var/log/auth.log</i>).</qt>"
-msgstr ""
-
-#: bootauth/bootAuthenticationOptions.cpp:71
-msgid ""
-"<qt>You can type or choose here the authentication log file. This file will be "
-"analyzed by KSystemLog when you will choose the <b>Authentication log</b> "
-"menu item. Generally, its name is <i>/var/log/auth.log</i></qt>"
-msgstr ""
-
-#: fileList.cpp:84
-msgid "List of files used by this log type"
-msgstr ""
-
-#: fileList.cpp:85
-msgid ""
-"<qt>Here is a list of every files that will be read by KSystemLog to display "
-"the current log lines.</qt>"
-msgstr ""
-
-#: fileList.cpp:185
-msgid "'%1' is not valid."
-msgstr ""
-
-#: fileList.cpp:186 fileList.cpp:193 fileList.cpp:200
-msgid "File selection failed"
-msgstr ""
-
-#: fileList.cpp:192
-msgid "'%1' is not a local file."
-msgstr ""
-
-#: fileList.cpp:199
-msgid "'%1' is a folder."
-msgstr ""
-
-#: globals.cpp:119
-msgid "File Log"
-msgstr ""
-
-#: globals.cpp:122
-msgid "System Log"
-msgstr ""
-
-#: globals.cpp:125
-msgid "Kernel Log"
-msgstr ""
-
-#: globals.cpp:128
-msgid "X.org Log"
-msgstr ""
-
-#: globals.cpp:131 globals.cpp:164
-msgid "Samba Log"
-msgstr ""
-
-#: globals.cpp:134
-msgid "Boot Log"
-msgstr ""
-
-#: globals.cpp:137
-msgid "Authentication Log"
-msgstr ""
-
-#: globals.cpp:140
-msgid "Cron Log"
-msgstr ""
-
-#: globals.cpp:143
-msgid "Daemon Log"
-msgstr ""
-
-#: globals.cpp:146
-msgid "ACPI Log"
-msgstr ""
-
-#: globals.cpp:149
-msgid "CUPS Log"
-msgstr ""
-
-#: globals.cpp:152
-msgid "CUPS Access Log"
-msgstr ""
-
-#: globals.cpp:155
-msgid "Apache Log"
-msgstr ""
-
-#: globals.cpp:158
+#: src/modes/apache/apacheAccessLogMode.cpp:40
 msgid "Apache Access Log"
 msgstr ""
 
-#: globals.cpp:161
-msgid "Postfix Log"
+#: src/modes/apache/apacheAccessLogMode.cpp:49
+msgid "Display the Apache Access log."
 msgstr ""
 
-#: globals.cpp:167
-msgid "SSH Log"
+#: src/modes/apache/apacheAccessLogMode.cpp:50
+msgid ""
+"<qt>Displays the Apache Access log in the current tab. Apache is the main "
+"used Web server in the world. This log saves all requests performed by the "
+"Apache web server.</qt>"
 msgstr ""
 
-#: globals.cpp:170
+#: src/modes/daemon/daemonLogMode.cpp:40
+#, fuzzy
+#| msgid "Daemon"
+msgid "Daemons Log"
+msgstr "Daemon"
+
+#: src/modes/daemon/daemonLogMode.cpp:49
+msgid "Display the daemons log."
+msgstr ""
+
+#: src/modes/daemon/daemonLogMode.cpp:50
+msgid ""
+"Displays the daemons log in the current tab. The daemons are all processes "
+"launched in the background of the system. See this log if you want to know "
+"what it occurs in the background of your system."
+msgstr ""
+
+#: src/modes/kernel/kernelLogMode.cpp:39
+msgid "Kernel Log"
+msgstr ""
+
+#: src/modes/kernel/kernelLogMode.cpp:48
+msgid "Display the kernel log."
+msgstr ""
+
+#: src/modes/kernel/kernelLogMode.cpp:49
+msgid ""
+"<qt>Displays the kernel log in the current tab. This log is only useful for "
+"users who want to know why the Kernel does not detect their hardware or what "
+"is the cause of the last <i>kernel panic/oops</i>.</qt>"
+msgstr ""
+
+#: src/modes/xsession/xsessionLogMode.cpp:39
 msgid "X Session Log"
 msgstr ""
 
-#: globals.cpp:180
-msgid "debug"
+#: src/modes/xsession/xsessionLogMode.cpp:48
+msgid "Display the X Session log."
 msgstr ""
 
-#: globals.cpp:183
-msgid "information"
+#: src/modes/xsession/xsessionLogMode.cpp:49
+msgid ""
+"Displays the X Session log in the current tab. X Session log is the place "
+"where graphical programs write their output. See this log if you want to "
+"know why a program has crashed, or why your display manager (KDE, Gnome,...) "
+"has not started."
+msgstr ""
+
+#: src/modes/authentication/authenticationLogMode.cpp:39
+msgid "Authentication Log"
+msgstr ""
+
+#: src/modes/authentication/authenticationLogMode.cpp:48
+msgid "Display the authentication log."
+msgstr ""
+
+#: src/modes/authentication/authenticationLogMode.cpp:49
+msgid ""
+"Displays the authentication log in the current tab. This log displays all "
+"log in made by each user of the system, and can help you to know if someone "
+"tried to crack your system."
+msgstr ""
+
+#: src/modes/system/systemLogMode.cpp:40
+msgid "System Log"
+msgstr ""
+
+#: src/modes/system/systemLogMode.cpp:49
+msgid "Display the system log."
+msgstr ""
+
+#: src/modes/system/systemLogMode.cpp:50
+msgid ""
+"Displays the system log in the current tab. This log is generally used by "
+"non-specialized processes (like \"sudo\" or \"fsck\" commands)"
+msgstr ""
+
+#: src/modes/postfix/postfixLogMode.cpp:40
+msgid "Postfix Log"
+msgstr ""
+
+#: src/modes/postfix/postfixLogMode.cpp:49
+msgid "Display the Postfix log."
+msgstr ""
+
+#: src/modes/postfix/postfixLogMode.cpp:50
+msgid ""
+"Displays the Postfix log in the current tab. Postfix is the most known and "
+"used mail server in the Linux world."
+msgstr ""
+
+#: src/detailDialog.cpp:41
+msgid "&Previous"
+msgstr ""
+
+#: src/detailDialog.cpp:45
+msgid "&Next"
+msgstr "&Nesaf"
+
+#: src/main.cpp:36
+msgid "KSystemlog"
+msgstr ""
+
+#: src/main.cpp:38
+msgid "System Logs Viewer for KDE"
+msgstr ""
+
+#: src/main.cpp:40
+msgid "(C) 2007, Nicolas Ternisien"
+msgstr ""
+
+#: src/main.cpp:41
+msgid ""
+"Do not hesitate to report bugs and problems to Nicolas Ternisien <a "
+"href='mailto:nicolas.ternisien@gmail.com'>nicolas.ternisien@gmail.com</a>"
+msgstr ""
+
+#: src/main.cpp:47
+msgid "Nicolas Ternisien"
+msgstr ""
+
+#: src/main.cpp:48
+msgid "Main developer"
+msgstr ""
+
+#: src/main.cpp:53
+msgid "Bojan Djurkovic"
+msgstr ""
+
+#: src/main.cpp:53
+msgid "Log Printing"
+msgstr ""
+
+#: src/main.cpp:58
+msgid "Document to open"
+msgstr "Dogfen i'w hagor"
+
+#: src/configurationDialog.cpp:54
+msgid "Settings"
+msgstr ""
+
+#: src/configurationDialog.cpp:108
+msgid "General"
+msgstr "Cyffredinol"
+
+#: src/loggerDialog.cpp:91 src/loggerDialog.cpp:123
+msgid "User"
+msgstr "Defnyddiwr"
+
+#: src/loggerDialog.cpp:113
+msgid "Authentication"
+msgstr "Dilysiant"
+
+#: src/loggerDialog.cpp:114
+msgid "Private Authentication"
+msgstr ""
+
+#: src/loggerDialog.cpp:115
+msgid "Cron"
+msgstr ""
+
+#: src/loggerDialog.cpp:116
+msgid "Daemon"
+msgstr "Daemon"
+
+#: src/loggerDialog.cpp:117
+msgid "FTP"
+msgstr "FTP"
+
+#: src/loggerDialog.cpp:118
+msgid "Kernel"
+msgstr "Cnewyllyn"
+
+#: src/loggerDialog.cpp:119
+msgid "LPR"
+msgstr ""
+
+#: src/loggerDialog.cpp:120
+msgid "Mail"
+msgstr "Post"
+
+#: src/loggerDialog.cpp:121
+msgid "News"
+msgstr "Newyddion"
+
+#: src/loggerDialog.cpp:122
+msgid "Syslog"
+msgstr "Cofnod cysawd"
+
+#: src/loggerDialog.cpp:124
+msgid "UUCP"
+msgstr ""
+
+#: src/loggerDialog.cpp:126
+msgid "Local 0"
+msgstr ""
+
+#: src/loggerDialog.cpp:127
+msgid "Local 1"
+msgstr ""
+
+#: src/loggerDialog.cpp:128
+msgid "Local 2"
+msgstr ""
+
+#: src/loggerDialog.cpp:129
+msgid "Local 3"
+msgstr ""
+
+#: src/loggerDialog.cpp:130
+msgid "Local 4"
+msgstr ""
+
+#: src/loggerDialog.cpp:131
+msgid "Local 5"
+msgstr ""
+
+#: src/loggerDialog.cpp:132
+msgid "Local 6"
+msgstr ""
+
+#: src/loggerDialog.cpp:133
+msgid "Local 7"
+msgstr ""
+
+#: src/loggerDialog.cpp:241
+msgid ""
+"Unable to find the 'logger' command on your system. Please type 'logger' in "
+"Konsole to be sure that this command is not installed."
+msgstr ""
+
+#: src/loggerDialog.cpp:241
+msgid "Command not found"
+msgstr ""
+
+#: src/loggerDialog.cpp:246
+msgid "The 'logger' command has not been properly exited."
+msgstr ""
+
+#: src/loggerDialog.cpp:246
+msgid "Execution problem"
+msgstr ""
+
+#: src/loggerDialog.cpp:252
+msgid "This file does not exist. Please choose a right file."
+msgstr ""
+
+#: src/loggerDialog.cpp:252
+msgid "File not valid"
+msgstr ""
+
+#: src/mainWindow.cpp:386
+#, kde-format
+msgctxt "Total displayed lines"
+msgid "1 line."
+msgid_plural "%1 lines."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/mainWindow.cpp:389
+#, kde-format
+msgctxt "Line not hidden by search / Total displayed lines"
+msgid "1 line / %2 total."
+msgid_plural "%1 lines / %2 total."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/mainWindow.cpp:410
+msgid "Resu&me"
+msgstr ""
+
+#: src/mainWindow.cpp:413
+msgid "Resume the watching of the current log"
+msgstr ""
+
+#: src/mainWindow.cpp:414
+msgid ""
+"Resumes the watching of the current log. This action is only available when "
+"the user has already paused the reading."
+msgstr ""
+
+#: src/mainWindow.cpp:418
+msgid "S&top"
+msgstr ""
+
+#: src/mainWindow.cpp:421
+msgid "Pause the watching of the current log"
+msgstr ""
+
+#: src/mainWindow.cpp:422
+msgid ""
+"Pauses the watching of the current log. This action is particularly useful "
+"when the system is writing too many lines to log files, causing KSystemLog "
+"to reload too frequently."
+msgstr ""
+
+#: src/mainWindow.cpp:584
+msgid "Open a file in KSystemLog"
+msgstr ""
+
+#: src/mainWindow.cpp:585
+msgid "Opens a file in KSystemLog and displays its content in the current tab."
+msgstr ""
+
+#: src/mainWindow.cpp:588
+msgid "&Print selection..."
+msgstr ""
+
+#: src/mainWindow.cpp:589
+msgid "Print the selection"
+msgstr ""
+
+#: src/mainWindow.cpp:590
+msgid ""
+"Prints the selection. Simply select the important lines and click on this "
+"menu entry to print the selection."
+msgstr ""
+
+#: src/mainWindow.cpp:596
+msgid "Save the selection to a file"
+msgstr ""
+
+#: src/mainWindow.cpp:597
+msgid ""
+"Saves the selection to a file. This action is useful if you want to create "
+"an attachment or a backup of a particular log."
+msgstr ""
+
+#: src/mainWindow.cpp:601
+msgid "Quit KSystemLog"
+msgstr ""
+
+#: src/mainWindow.cpp:602
+msgid "Quits KSystemLog."
+msgstr ""
+
+#: src/mainWindow.cpp:605
+msgid "Copy the selection to the clipboard"
+msgstr ""
+
+#: src/mainWindow.cpp:606
+msgid ""
+"Copies the selection to the clipboard. This action is useful if you want to "
+"paste the selection in a chat or an email."
+msgstr ""
+
+#: src/mainWindow.cpp:610
+msgid "Ex&pand All"
+msgstr ""
+
+#: src/mainWindow.cpp:612
+msgid "Expand all categories"
+msgstr ""
+
+#: src/mainWindow.cpp:613
+msgid ""
+"<qt>This action opens all main categories. This is enabled only if an option "
+"has been selected in the <b>Group By</b> menu.</qt>"
+msgstr ""
+
+#: src/mainWindow.cpp:617
+msgid "Col&lapse All"
+msgstr ""
+
+#: src/mainWindow.cpp:619
+msgid "Collapse all categories"
+msgstr ""
+
+#: src/mainWindow.cpp:620
+msgid ""
+"<qt>This action closes all main categories. This is enabled only if an "
+"option has been selected in the <b>Group By</b> menu.</qt>"
+msgstr ""
+
+#: src/mainWindow.cpp:624
+msgid "&Email Selection..."
+msgstr ""
+
+#: src/mainWindow.cpp:627
+msgid "Send the selection by mail"
+msgstr ""
+
+#: src/mainWindow.cpp:628
+msgid ""
+"Sends the selection by mail. Simply select the important lines and click on "
+"this menu entry to send the selection to a friend or a mailing list."
+msgstr ""
+
+#: src/mainWindow.cpp:632
+msgid "&Add Log Entry..."
+msgstr ""
+
+#: src/mainWindow.cpp:635
+msgid "Add a log entry to the log system"
+msgstr ""
+
+#: src/mainWindow.cpp:636
+msgid ""
+"This action will open a dialog which lets you send a message to the log "
+"system."
+msgstr ""
+
+#: src/mainWindow.cpp:639
+msgid "Select all lines of the current log"
+msgstr ""
+
+#: src/mainWindow.cpp:640
+msgid ""
+"Selects all lines of the current log. This action is useful if you want, for "
+"example, to save all the content of the current log in a file."
+msgstr ""
+
+#: src/mainWindow.cpp:651
+msgid "Show &Filter Bar"
+msgstr ""
+
+#: src/mainWindow.cpp:657
+msgid "&New Tab"
+msgstr "Tab &Newydd"
+
+#: src/mainWindow.cpp:660 src/tabLogViewsWidget.cpp:59
+msgid "Create a new tab"
+msgstr ""
+
+#: src/mainWindow.cpp:661 src/tabLogViewsWidget.cpp:60
+msgid "Creates a new tab which can display another log."
+msgstr ""
+
+#: src/mainWindow.cpp:665
+msgid "&Close Tab"
+msgstr "&Cau Tab"
+
+#: src/mainWindow.cpp:668 src/tabLogViewsWidget.cpp:65
+msgid "Close the current tab"
+msgstr "Cau'r tab cyfredol"
+
+#: src/mainWindow.cpp:669 src/tabLogViewsWidget.cpp:66
+msgid "Closes the current tab."
+msgstr ""
+
+#: src/mainWindow.cpp:673
+msgid "&Duplicate Tab"
+msgstr "&Dyblygu Tab"
+
+#: src/mainWindow.cpp:676
+msgid "Duplicate the current tab"
+msgstr ""
+
+#: src/mainWindow.cpp:677
+msgid "Duplicates the current tab."
+msgstr ""
+
+#: src/mainWindow.cpp:685
+msgid "Move Tab &Left"
+msgstr "Symud Tab i'r &Chwith"
+
+#: src/mainWindow.cpp:688
+msgid "Move the current tab to the left"
+msgstr ""
+
+#: src/mainWindow.cpp:689
+msgid "Moves the current tab to the left."
+msgstr ""
+
+#: src/mainWindow.cpp:693
+msgid "Move Tab &Right"
+msgstr "Symud Tab i'r &Dde"
+
+#: src/mainWindow.cpp:696
+msgid "Move the current tab to the right"
+msgstr ""
+
+#: src/mainWindow.cpp:697
+msgid "Moves the current tab to the right."
+msgstr ""
+
+#: src/mainWindow.cpp:701
+msgid "&Reload"
+msgstr ""
+
+#: src/mainWindow.cpp:704
+msgid "Reload the current log"
+msgstr ""
+
+#: src/mainWindow.cpp:705
+msgid ""
+"Reloads the current log, if you want to be sure that the view is correctly "
+"updated."
+msgstr ""
+
+#: src/mainWindow.cpp:714
+msgid "&Details"
+msgstr "&Manylion"
+
+#: src/mainWindow.cpp:717
+msgid "Display details on the selected line"
+msgstr ""
+
+#: src/mainWindow.cpp:718
+msgid ""
+"Displays a dialog box which contains details on the selected line. You are "
+"able to navigate through the logs from this dialog box with the <b>Previous</"
+"b> and <b>Next</b> buttons."
+msgstr ""
+
+#: src/mainWindow.cpp:722
+msgid "&Enable Detailed Tooltips"
+msgstr ""
+
+#: src/mainWindow.cpp:723
+msgid "Disable/Enable the tooltip on the current view"
+msgstr ""
+
+#: src/mainWindow.cpp:724
+msgid ""
+"Disables/Enables the tooltip displayed when the cursor hovers a log line."
+msgstr ""
+
+#: src/mainWindow.cpp:730
+msgid "&Scroll to New Lines"
+msgstr ""
+
+#: src/mainWindow.cpp:731
+msgid "Scrolls or not to the new lines when the log changes"
+msgstr ""
+
+#: src/mainWindow.cpp:732
+msgid ""
+"Scrolls or not to the new lines when the log changes. Check this option if "
+"you do not want the application to scroll automatically at the bottom of the "
+"log each time it is refreshed."
+msgstr ""
+
+#: src/mainWindow.cpp:779
+msgid "Services"
+msgstr ""
+
+#: src/mainWindow.cpp:780
+msgid "Others"
+msgstr ""
+
+#: src/statusBar.cpp:118
+#, kde-format
+#| msgid "Last updated: %1."
+msgid "Last updated: %1."
+msgstr ""
+
+#: src/statusBar.cpp:123
+#, fuzzy, kde-format
+#| msgid "%1 (%2)"
+msgid "%1: %2"
+msgstr "%1(%2)"
+
+#: src/tabLogViewsWidget.cpp:112
+msgid "No Log"
+msgstr ""
+
+#: src/generalConfigurationWidget.cpp:50
+msgid "No Log Mode"
+msgstr ""
+
+#: src/generalConfigurationWidget.cpp:95
+#, fuzzy, kde-format
+#| msgid "%1 (%2)"
+msgctxt "Date format Option (Date example)"
+msgid "%1 (%2)"
+msgstr "%1(%2)"
+
+#: rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+
+#: rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+
+#. i18n: tag text
+#. i18n: file src/ksystemlogui.rc line 13
+#: rc.cpp:5
+msgid "&Edit"
+msgstr ""
+
+#. i18n: tag text
+#. i18n: file src/ksystemlogui.rc line 31
+#: rc.cpp:8
+msgid "Logs"
+msgstr ""
+
+#. i18n: tag text
+#. i18n: file src/ksystemlogui.rc line 36
+#: rc.cpp:11
+msgid "&Window"
+msgstr "&Ffenestr"
+
+#. i18n: tag text
+#. i18n: file src/ksystemlogui.rc line 55
+#: rc.cpp:14
+msgid "Logs Toolbar"
+msgstr ""
+
+#. i18n: tag text
+#. i18n: file src/ksystemlogui.rc line 60
+#: rc.cpp:17
+msgid "Main Toolbar"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/detailDialogBase.ui line 13
+#: rc.cpp:20
+msgid "Log Line Details"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/detailDialogBase.ui line 16
+#: rc.cpp:23
+msgid ""
+"This dialog displays detailed information about the currently selected log "
+"line."
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/detailDialogBase.ui line 44
+#: rc.cpp:29
+msgid "Icon"
+msgstr "Eicon"
+
+#. i18n: tag string
+#. i18n: file src/detailDialogBase.ui line 60
+#: rc.cpp:32
+#, fuzzy
+#| msgid "information"
+msgid "Main information"
 msgstr "gwybodaeth"
 
-#: globals.cpp:186
-msgid "notice"
-msgstr "nodyn"
-
-#: globals.cpp:189
-msgid "warning"
-msgstr "rhybudd"
-
-#: globals.cpp:192
-msgid "error"
-msgstr "gwall"
-
-#: globals.cpp:195
-msgid "critical"
-msgstr "critigol"
-
-#: globals.cpp:198
-msgid "alert"
+#. i18n: tag string
+#. i18n: file src/detailDialogBase.ui line 90
+#: rc.cpp:35
+msgid "Move to the previous line"
 msgstr ""
 
-#: globals.cpp:201
-msgid "emergency"
-msgstr ""
-
-#: view.cpp:113 view.cpp:115
-msgid "Clear the filter"
-msgstr ""
-
-#: view.cpp:116
-msgid "This button clears the filter in one click."
-msgstr ""
-
-#: view.cpp:119
-msgid "Filter:"
-msgstr "Hidl:"
-
-#: view.cpp:132
-msgid "Column:"
-msgstr "Colofn:"
-
-#: view.cpp:279 view.cpp:399
-msgid "All"
-msgstr "Popeth"
-
-#: view.cpp:396
-msgid "Choose the filtered column here"
-msgstr ""
-
-#: view.cpp:397
+#. i18n: tag string
+#. i18n: file src/detailDialogBase.ui line 93
+#: rc.cpp:38
 msgid ""
-"<qt>Allows you to apply the item filter only on the specified column here. \"<i>"
-"All</i>\" column means no specific filter.</qt>"
+"Moves to the previous line. This button is deactivated if there is no "
+"previous log line."
 msgstr ""
 
-#: postfix/postfixOptions.cpp:55
+#. i18n: tag string
+#. i18n: file src/detailDialogBase.ui line 96
+#: rc.cpp:41
+msgid "&Back"
+msgstr "&Yn ôl"
+
+#. i18n: tag string
+#. i18n: file src/detailDialogBase.ui line 112
+#: rc.cpp:44
+msgid "Move to the next line"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/detailDialogBase.ui line 115
+#: rc.cpp:47
 msgid ""
-"<qt>"
-"<p>These files will be analyzed to display <b>Postfix Logs</b>"
-". This list also determine the order in which the files are read.</p></qt>"
+"Moves to the next line. This button is deactivated if there is no next log "
+"line."
 msgstr ""
 
-#: defaultReader.cpp:97
-msgid "Opening file '%1'..."
-msgstr "Agor ffeil... '%1'"
+#. i18n: tag string
+#. i18n: file src/detailDialogBase.ui line 118
+#: rc.cpp:50
+msgid "&Forward"
+msgstr "&Ymlaen"
 
-#: defaultReader.cpp:125
-msgid "No log line in '%1'."
+#. i18n: tag string
+#. i18n: file src/detailDialogBase.ui line 150
+#: rc.cpp:53
+#, fuzzy
+#| msgid "Close the current tab"
+msgid "Close the Detail dialog."
+msgstr "Cau'r tab cyfredol"
+
+#. i18n: tag string
+#. i18n: file src/detailDialogBase.ui line 153
+#: rc.cpp:56
+msgid "Closes this Detail dialog."
 msgstr ""
 
-#: defaultReader.cpp:177
-msgid "Log file '%1' loaded successfully."
+#. i18n: tag string
+#. i18n: file src/detailDialogBase.ui line 156
+#: rc.cpp:59
+#, fuzzy
+#| msgid "&Close Tab"
+msgid "&Close"
+msgstr "&Cau Tab"
+
+#. i18n: tag string
+#. i18n: file src/generalConfigurationWidgetBase.ui line 17
+#: rc.cpp:62
+msgid "Startup"
 msgstr ""
 
-#: defaultReader.cpp:267
-msgid "Log file '%1' has changed."
+#. i18n: tag string
+#. i18n: file src/generalConfigurationWidgetBase.ui line 23
+#: rc.cpp:65
+msgid "Load this log mode at startup:"
 msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/generalConfigurationWidgetBase.ui line 33
+#: rc.cpp:68
+msgid "The log mode which is loaded by default at startup"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/generalConfigurationWidgetBase.ui line 36
+#: rc.cpp:71
+msgid ""
+"The log mode which is loaded by default at startup. Choose 'No Log Mode' if "
+"you don't want to load a log mode."
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/generalConfigurationWidgetBase.ui line 46
+#: rc.cpp:74
+msgid "Log Lines List"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/generalConfigurationWidgetBase.ui line 54
+#: rc.cpp:77
+msgid "Maximum Lines Displayed:"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/generalConfigurationWidgetBase.ui line 70
+#: rc.cpp:80
+msgid "Choose here the maximum number of log lines displayed in the main view."
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/generalConfigurationWidgetBase.ui line 73
+#: rc.cpp:83
+msgid ""
+"You can choose here the maximum number of log lines displayed in the main "
+"view."
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/generalConfigurationWidgetBase.ui line 91
+#: rc.cpp:86
+msgid ""
+"Select this option if you want to delete duplicated log lines <b>(may be "
+"slow)</b>."
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/generalConfigurationWidgetBase.ui line 94
+#: rc.cpp:89
+msgid ""
+"You can select this option if you want to delete duplicated log lines. "
+"<b>This option can slow the reading</b>."
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/generalConfigurationWidgetBase.ui line 97
+#: rc.cpp:92
+msgid "Remove &duplicated log lines (may be slower)"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/generalConfigurationWidgetBase.ui line 107
+#. i18n: tag string
+#. i18n: file src/loggerDialogBase.ui line 206
+#: rc.cpp:95 rc.cpp:152
+#, fuzzy
+#| msgid "Open Location"
+msgid "Options"
+msgstr "Agor Lleoliad"
+
+#. i18n: tag string
+#. i18n: file src/generalConfigurationWidgetBase.ui line 113
+#: rc.cpp:98
+msgid "Delete process identifier from process name."
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/generalConfigurationWidgetBase.ui line 116
+#: rc.cpp:101
+msgid ""
+"You can select this option if you want to delete the process identifier from "
+"process name. For example, you will sometimes see in the <b>Process</b> "
+"column something like <i>cron<b>[3433]</b></i>. If this option is activated, "
+"the annoying bold part will be erased."
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/generalConfigurationWidgetBase.ui line 119
+#: rc.cpp:104
+msgid "Remove &identifier from process name"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/generalConfigurationWidgetBase.ui line 126
+#: rc.cpp:107
+msgid ""
+"This option allows the colorization of log lines, depending on their log "
+"level."
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/generalConfigurationWidgetBase.ui line 129
+#: rc.cpp:110
+msgid ""
+"This option allows the colorization of log lines, depending on their log "
+"level. For example, an error will be in red, a warning in orange... This "
+"will help you to better see problems."
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/generalConfigurationWidgetBase.ui line 132
+#: rc.cpp:113
+msgid "&Colorize log lines"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/generalConfigurationWidgetBase.ui line 142
+#: rc.cpp:116
+msgid "Date Format"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/generalConfigurationWidgetBase.ui line 151
+#: rc.cpp:119
+msgid "&Short date format"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/generalConfigurationWidgetBase.ui line 158
+#: rc.cpp:122
+msgid "&Fancy short date format"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/generalConfigurationWidgetBase.ui line 165
+#: rc.cpp:125
+msgid "&Long date format"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/generalConfigurationWidgetBase.ui line 172
+#: rc.cpp:128
+msgid "Fanc&y long date format"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/loggerDialogBase.ui line 24
+#: rc.cpp:131
+#, fuzzy
+#| msgid "Message"
+msgid "Log Message"
+msgstr "Neges"
+
+#. i18n: tag string
+#. i18n: file src/loggerDialogBase.ui line 39
+#: rc.cpp:137
+msgid "&Message:"
+msgstr "&Neges:"
+
+#. i18n: tag string
+#. i18n: file src/loggerDialogBase.ui line 52
+#: rc.cpp:140
+msgid "&File Content:"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/loggerDialogBase.ui line 75
+#: rc.cpp:143
+msgid "Properties"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/loggerDialogBase.ui line 101
+#: rc.cpp:146
+msgid "&Priority:"
+msgstr "&Blaenoriaeth:"
+
+#. i18n: tag string
+#. i18n: file src/loggerDialogBase.ui line 162
+#: rc.cpp:149
+#, fuzzy
+#| msgid "&Priority:"
+msgid "&Facility:"
+msgstr "&Blaenoriaeth:"
+
+#. i18n: tag string
+#. i18n: file src/loggerDialogBase.ui line 229
+#: rc.cpp:155
+msgid "&Tag:"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/loggerDialogBase.ui line 241
+#: rc.cpp:158
+msgid "Log Process &Identifier"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/loggerDialogBase.ui line 290
+#: rc.cpp:161
+msgid "Open the 'logger' command manual."
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/loggerDialogBase.ui line 293
+#: rc.cpp:164
+msgid "This link opens the 'logger' command manual."
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/loggerDialogBase.ui line 296
+#: rc.cpp:167
+msgid "<qt><a href=\"man:/logger\">Logger Manual</a></qt>"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/loggerDialogBase.ui line 322
+#: rc.cpp:170
+msgid "&OK"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/loggerDialogBase.ui line 338
+#: rc.cpp:173
+msgid "&Cancel"
+msgstr ""
+
+#~ msgid "Host Name"
+#~ msgstr "Enw Gwesteiwr"
+
+#~ msgid "Id."
+#~ msgstr "Dynodiad (Id)."
+
+#~ msgid "Response"
+#~ msgstr "Ymateb"
+
+#~ msgid "Bytes Sent"
+#~ msgstr "Didau Wedi'u Hanfon"
+
+#~ msgid "Line"
+#~ msgstr "Llinell"
+
+#~ msgid "Type"
+#~ msgstr "Math"
+
+#~ msgid "default setting"
+#~ msgstr "gosodiad Rhagosod"
+
+#~ msgid "not implemented"
+#~ msgstr "heb ei weithredoli"
+
+#~ msgid "none"
+#~ msgstr "dim"
+
+#~ msgid "Source File"
+#~ msgstr "Ffeil Tarddiad"
+
+#~ msgid "Function"
+#~ msgstr "Ffwythiant"
+
+#~ msgid "Loading Progress"
+#~ msgstr "Llwytho Cynnydd"
+
+#~ msgid ""
+#~ "_: NAME OF TRANSLATORS\n"
+#~ "Your names"
+#~ msgstr "KD wrth KGyfieithu"
+
+#~ msgid ""
+#~ "_: EMAIL OF TRANSLATORS\n"
+#~ "Your emails"
+#~ msgstr "kyfieithu@dotmon.com"
+
+#~ msgid "Client"
+#~ msgstr "Dibynnydd:"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid "Program"
+#~ msgstr "Rhaglen"
+
+#~ msgid "User:"
+#~ msgstr "Defnyddiwr:"
+
+#~ msgid "Type:"
+#~ msgstr "Math:"
+
+#~ msgid "Identification:"
+#~ msgstr "Dynodiad :"
+
+#~ msgid "Username:"
+#~ msgstr "Enw defnyddiwr:"
+
+#~ msgid "Bytes Sent:"
+#~ msgstr "Didau Wedi'u Hanfon :"
+
+#~ msgid "Client:"
+#~ msgstr "Dibynnydd:"
+
+#~ msgid "Source File:"
+#~ msgstr "Ffeil Tarddiad :"
+
+#~ msgid "Function:"
+#~ msgstr "Ffwythiant"
+
+#~ msgid "Line:"
+#~ msgstr "Llinell :"
+
+#~ msgid "Program:"
+#~ msgstr "Rhaglen:"
+
+#~ msgid "&CUPS"
+#~ msgstr "&CUPS"
+
+#, fuzzy
+#~ msgid "Boot Log File"
+#~ msgstr "Ffeil Gofnod"
+
+#, fuzzy
+#~ msgid "Boot Log File:"
+#~ msgstr "Ffeil Gofnod"
+
+#, fuzzy
+#~ msgid "Authentication Log File"
+#~ msgstr "Dilysiant"
+
+#, fuzzy
+#~ msgid "Authentication Log File:"
+#~ msgstr "Dilysiant"
+
+#~ msgid "Column:"
+#~ msgstr "Colofn:"
 
 #~ msgid "Today"
 #~ msgstr "Heddiw"
@@ -1480,36 +1669,15 @@ msgstr ""
 #~ msgid "Group By"
 #~ msgstr "Casglu yn ôl"
 
-#~ msgid "None"
-#~ msgstr "Dim"
-
 #~ msgid "Day"
 #~ msgstr "Diwrnod"
 
 #~ msgid "Hour"
 #~ msgstr "Awr"
 
-#~ msgid "Log File"
-#~ msgstr "Ffeil Gofnod"
-
 #, fuzzy
 #~ msgid "System Tray notifier"
 #~ msgstr "Bar Tasgau"
-
-#~ msgid "&Message:"
-#~ msgstr "&Neges:"
-
-#~ msgid "&Priority:"
-#~ msgstr "&Blaenoriaeth:"
-
-#~ msgid "Icon"
-#~ msgstr "Eicon"
-
-#~ msgid "&Back"
-#~ msgstr "&Yn ôl"
-
-#~ msgid "&Forward"
-#~ msgstr "&Ymlaen"
 
 #~ msgid "&Add File..."
 #~ msgstr "&Ychwanegu Ffeil..."
