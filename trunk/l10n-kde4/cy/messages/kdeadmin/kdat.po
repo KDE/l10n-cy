@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdat\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-11-14 06:10+0100\n"
+"POT-Creation-Date: 2008-03-03 14:22+0100\n"
 "PO-Revision-Date: 2004-02-26 16:47+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -859,12 +859,12 @@ msgstr "Ail-greu"
 msgid "Reading version number failed."
 msgstr "Methwyd darllen rhif y fersiwn."
 
-#: Tape.cpp:185 Tape.cpp:640 Tape.cpp:646 Tape.cpp:652 Tape.cpp:659
-#: Tape.cpp:666 Tape.cpp:674 Tape.cpp:681 Tape.cpp:689 Tape.cpp:697
-#: Tape.cpp:704 Tape.cpp:711 Tape.cpp:724 Tape.cpp:736 Tape.cpp:744
-#: Tape.cpp:751 Tape.cpp:758 Tape.cpp:787 Tape.cpp:793 Tape.cpp:799
-#: Tape.cpp:806 Tape.cpp:813 Tape.cpp:821 Tape.cpp:828 Tape.cpp:849
-#: Tape.cpp:855 Tape.cpp:892 Tape.cpp:898
+#: Tape.cpp:185 Tape.cpp:621 Tape.cpp:627 Tape.cpp:633 Tape.cpp:640
+#: Tape.cpp:647 Tape.cpp:655 Tape.cpp:662 Tape.cpp:670 Tape.cpp:678
+#: Tape.cpp:685 Tape.cpp:692 Tape.cpp:705 Tape.cpp:717 Tape.cpp:725
+#: Tape.cpp:732 Tape.cpp:739 Tape.cpp:768 Tape.cpp:774 Tape.cpp:780
+#: Tape.cpp:787 Tape.cpp:794 Tape.cpp:802 Tape.cpp:809 Tape.cpp:830
+#: Tape.cpp:836 Tape.cpp:873 Tape.cpp:879
 msgid "Index File Error"
 msgstr "Gwall Ffeil Mynegai"
 
@@ -879,92 +879,100 @@ msgstr ""
 "ddarllen y mynegai. Hwyrach creuwyd ffeil mynegai'r tâp gan fersiwn "
 "diweddarach o KDat?"
 
-#: Tape.cpp:386
-msgid "Error during fseek #1 while accessing archive: \""
+#: Tape.cpp:382
+#, fuzzy, kde-format
+#| msgid "Error during fseek #1 while accessing archive: \""
+msgid "Error during fseek #1 while accessing archive: \"%1\": %2"
 msgstr "Gwall yn ystod fseek #1 tra'n cyrchu archif:\""
 
-#: Tape.cpp:391 Tape.cpp:404 Tape.cpp:417 Tape.cpp:430 Tape.cpp:445
+#: Tape.cpp:384 Tape.cpp:394 Tape.cpp:404 Tape.cpp:414 Tape.cpp:426
 msgid "File Access Error"
 msgstr "Gwall Cyrchu Ffeil"
 
-#: Tape.cpp:399
-msgid "Error while accessing string #1 in archive: \""
+#: Tape.cpp:392
+#, fuzzy, kde-format
+#| msgid "Error while accessing string #1 in archive: \""
+msgid "Error while accessing string #1 in archive: \"%1\": %2"
 msgstr "Gwall tra'n cyrchu llinyn #1 yn archif: \""
 
-#: Tape.cpp:412
-msgid "Error while accessing string #2 in archive: \""
+#: Tape.cpp:402
+#, fuzzy, kde-format
+#| msgid "Error while accessing string #2 in archive: \""
+msgid "Error while accessing string #2 in archive: \"%1\": %2"
 msgstr "Gwall tra'n cyrchu llinyn #2 yn archif: \""
 
-#: Tape.cpp:425
-msgid "Error during fseek #2 while accessing archive: \""
+#: Tape.cpp:412
+#, fuzzy, kde-format
+#| msgid "Error during fseek #2 while accessing archive: \""
+msgid "Error during fseek #2 while accessing archive: \"%1\": %2"
 msgstr "Gwall yn ystod fseek #2 tra'n cyrchu archif:\""
 
-#: Tape.cpp:442
+#: Tape.cpp:423
 msgid "Error while updating archive name: "
 msgstr "Gwall tra'n diweddaru enw'r archif:"
 
-#: Tape.cpp:640 Tape.cpp:787 Tape.cpp:849 Tape.cpp:892 TapeDrive.cpp:262
+#: Tape.cpp:621 Tape.cpp:768 Tape.cpp:830 Tape.cpp:873 TapeDrive.cpp:262
 msgid "Reading tape ID failed."
 msgstr "Methwyd darllen clustnod y tâp."
 
-#: Tape.cpp:646 Tape.cpp:793 Tape.cpp:855 Tape.cpp:898
+#: Tape.cpp:627 Tape.cpp:774 Tape.cpp:836 Tape.cpp:879
 msgid "Tape ID on tape does not match tape ID in index file."
 msgstr ""
 "Nid yw'r clustnod ar y tâp ddim yn cyfateb i'r clustnod yn y ffeil mynegai."
 
-#: Tape.cpp:652 Tape.cpp:799
+#: Tape.cpp:633 Tape.cpp:780
 msgid "Reading creation time failed."
 msgstr "Methwyd darllen amser y creu."
 
-#: Tape.cpp:659 Tape.cpp:806
+#: Tape.cpp:640 Tape.cpp:787
 msgid "Reading modification time failed."
 msgstr "Methwyd darllen amser y newid."
 
-#: Tape.cpp:666 Tape.cpp:813
+#: Tape.cpp:647 Tape.cpp:794
 msgid "Reading tape name failed."
 msgstr "Methwyd darllen enw'r tâp."
 
-#: Tape.cpp:674 Tape.cpp:821
+#: Tape.cpp:655 Tape.cpp:802
 msgid "Reading tape size failed."
 msgstr "Methwyd darllen maint y tâp."
 
-#: Tape.cpp:681 Tape.cpp:828
+#: Tape.cpp:662 Tape.cpp:809
 msgid "Reading archive count failed."
 msgstr "Methwyd darllen cyfrif yr archif."
 
-#: Tape.cpp:689
+#: Tape.cpp:670
 msgid "Reading archive name failed."
 msgstr "Methwyd darllen yr archif."
 
-#: Tape.cpp:697
+#: Tape.cpp:678
 msgid "Reading archive time stamp failed."
 msgstr "Methwyd darllen stamp amser yr archif."
 
-#: Tape.cpp:704
+#: Tape.cpp:685
 msgid "Reading archive start block failed."
 msgstr "Methwyd darllen bloc cychwyn yr archif."
 
-#: Tape.cpp:711
+#: Tape.cpp:692
 msgid "Reading archive end block failed."
 msgstr "Methwyd darllen bloc gorffen yr archif."
 
-#: Tape.cpp:724
+#: Tape.cpp:705
 msgid "Reading archive file count failed."
 msgstr "Methwyd darllen cyfrif ffeiliau'r archif."
 
-#: Tape.cpp:736
+#: Tape.cpp:717
 msgid "Reading file name failed."
 msgstr "Methwyd darllen enw'r ffeil."
 
-#: Tape.cpp:744
+#: Tape.cpp:725
 msgid "Reading file size failed."
 msgstr "Methwyd darllen maint y ffeil."
 
-#: Tape.cpp:751
+#: Tape.cpp:732
 msgid "Reading file modification time failed."
 msgstr "Methwyd darllen amser newid y ffeil."
 
-#: Tape.cpp:758
+#: Tape.cpp:739
 msgid "Reading file record number failed."
 msgstr "Methwyd darllen rhif cofnod y ffeil."
 
