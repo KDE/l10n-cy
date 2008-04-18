@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-04-16 16:07+0200\n"
+"POT-Creation-Date: 2008-04-18 12:03+0200\n"
 "PO-Revision-Date: 2005-11-02 13:59+0000\n"
 "Last-Translator: Kevin Donnelly <kevin@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -227,74 +227,93 @@ msgstr ""
 msgid "&Move"
 msgstr "Sy&mud"
 
-#: kgeography.cpp:129 kgeography.cpp:382
+#: kgeography.cpp:129 kgeography.cpp:388
 msgid "Disclaimer"
 msgstr "Ymwadiad"
 
-#: kgeography.cpp:159
+#: kgeography.cpp:133
+#, fuzzy
+#| msgctxt "africa.kgm"
+#| msgid "Maputo"
+msgid "Map author"
+msgstr "Mapwto"
+
+#: kgeography.cpp:164
 #, kde-format
 msgid "Could not open last used map. Error parsing %1: %2"
 msgstr ""
 "Methu agor y map diwethaf a gafodd ei ddefnyddio.  Gwall wrth ddosrannu %1:%2"
 
-#: kgeography.cpp:167
+#: kgeography.cpp:172
 msgid "There is no current map"
 msgstr "Nid oes map cyfredol"
 
-#: kgeography.cpp:219 kgeography.cpp:235 kgeography.cpp:251 kgeography.cpp:270
-#: kgeography.cpp:289 kgeography.cpp:305
+#: kgeography.cpp:224 kgeography.cpp:240 kgeography.cpp:256 kgeography.cpp:275
+#: kgeography.cpp:294 kgeography.cpp:310
 msgid "Number of Questions"
 msgstr "Nifer Cwestiynau"
 
-#: kgeography.cpp:219 kgeography.cpp:235 kgeography.cpp:251 kgeography.cpp:270
-#: kgeography.cpp:289 kgeography.cpp:305
+#: kgeography.cpp:224 kgeography.cpp:240 kgeography.cpp:256 kgeography.cpp:275
+#: kgeography.cpp:294 kgeography.cpp:310
 #, kde-format
 msgid "How many questions do you want? (1 to %1)"
 msgstr "Faint o gwestiynau ydych eisiau? (1 i %1)"
 
-#: kgeography.cpp:362
+#: kgeography.cpp:368
 #, kde-format
 msgid "&Location of %1"
 msgstr ""
 
-#: kgeography.cpp:363
+#: kgeography.cpp:369
 #, kde-format
 msgid "&Place %1 in the Map"
 msgstr ""
 
-#: kgeography.cpp:364
+#: kgeography.cpp:370
 #, kde-format
 msgid "%1 by Capital"
 msgstr ""
 
-#: kgeography.cpp:365
+#: kgeography.cpp:371
 #, fuzzy, kde-format
 msgid "&Capitals of %1"
 msgstr "Prifddinas Rhanbarth"
 
-#: kgeography.cpp:366
+#: kgeography.cpp:372
 #, kde-format
 msgid "%1 by Flag"
 msgstr ""
 
-#: kgeography.cpp:367
+#: kgeography.cpp:373
 #, kde-format
 msgid "&Flags of %1"
 msgstr ""
 
-#: kgeography.cpp:369
+#: kgeography.cpp:375
 #, fuzzy, kde-format
 #| msgid "<qt>Current map:<br><b>%1<b></qt>"
 msgid "<qt>Current map:<br /><b>%1</b></qt>"
 msgstr "<qt>Map cyfredol:<br><b>%1<b></qt>"
 
-#: kgeography.cpp:382
+#: kgeography.cpp:388
 msgid ""
 "Maps, flags, translations, etc. are as accurate as their respective authors "
 "could achieve, but KGeography should not be taken as an authoritative source."
 msgstr ""
 "Mae mapiau, baneri, cyfieithiadau, ayyb mor cywir ac y gallent eu hawduron "
 "gyflawni, ond ni ddylid cymryd KGeography fel ffynhonell awdurdodol."
+
+#: kgeography.cpp:395
+#, kde-format
+msgid "This map has been created by %1."
+msgstr ""
+
+#: kgeography.cpp:395
+#, fuzzy
+#| msgctxt "africa.kgm"
+#| msgid "Maputo"
+msgid "Map Author"
+msgstr "Mapwto"
 
 #: main.cpp:19
 msgid "KGeography"
@@ -324,7 +343,7 @@ msgstr "Casgliad baneri Sodipodi"
 msgid "Got some flags from it"
 msgstr "Wedi cael rhai baneri ganddo"
 
-#: map.cpp:114
+#: map.cpp:119
 #, fuzzy
 msgid "Regions"
 msgstr "Regina"
@@ -386,49 +405,44 @@ msgstr "Gwall wrth ddosrannu %1:%2"
 msgid "The map image file for %1 does not exist"
 msgstr "Nid yw'r ffeil %1 mewn bod"
 
-#: mapparser.cpp:60
-#, kde-format
-msgid "The map %1 misses mandatory divisionsName tag"
-msgstr ""
-
-#: mapparser.cpp:81
+#: mapparser.cpp:76
 #, fuzzy, kde-format
 msgid "The flag image file for %1 does not exist"
 msgstr "Nid yw'r ffeil %1 mewn bod"
 
-#: mapparser.cpp:95
+#: mapparser.cpp:90
 #, kde-format
 msgid "Invalid value in tag %1"
 msgstr "Gwerth annilys tu mewn i dag %1"
 
-#: mapparser.cpp:118
+#: mapparser.cpp:113
 #, kde-format
 msgid ""
 "There is already either a division called %1 or a division with the same "
 "colors as %2"
 msgstr "Mae rhanbarth eisoes o'r enw %1, neu ranbarth efo'r un lliwiau â %2"
 
-#: mapparser.cpp:127
+#: mapparser.cpp:122
 #, kde-format
 msgid "The map description file should begin with the %1 tag"
 msgstr "Dylai'r disgrifiad map ddechrau efo'r tag %1"
 
-#: mapparser.cpp:133
+#: mapparser.cpp:128
 #, kde-format
 msgid "Could not open %1 for reading."
 msgstr ""
 
-#: mapparser.cpp:138
+#: mapparser.cpp:133
 #, kde-format
 msgid "%1 does not exist."
 msgstr "Nid yw %1 yn bodoli."
 
-#: mapparser.cpp:162 mapparser.cpp:184
+#: mapparser.cpp:157 mapparser.cpp:179
 #, fuzzy, kde-format
 msgid "The map description file should have a %1 tag inside %2"
 msgstr "Dylai'r disgrifiad map ddechrau efo'r tag %1"
 
-#: mapparser.cpp:173 mapparser.cpp:190
+#: mapparser.cpp:168 mapparser.cpp:185
 #, fuzzy, kde-format
 msgid "The map description file should have exactly one %1 tag inside %2"
 msgstr "Dylai'r disgrifiad map ddechrau efo'r tag %1"
@@ -19334,9 +19348,12 @@ msgid "Cork"
 msgstr "Como"
 
 #: mapsdatatranslation.cpp:3112
+#, fuzzy
+#| msgctxt "usa.kgm"
+#| msgid "Connecticut"
 msgctxt "ireland_provinces.kgm"
-msgid "Connaucht"
-msgstr ""
+msgid "Connacht"
+msgstr "Connecticut"
 
 #: mapsdatatranslation.cpp:3113
 #, fuzzy
@@ -23752,7 +23769,7 @@ msgstr ""
 #| msgctxt "asia.kgm"
 #| msgid "North Korea"
 msgctxt "north_korea.kgm"
-msgid "North (Korea)"
+msgid "North Korea"
 msgstr "Gogledd Corea"
 
 #: mapsdatatranslation.cpp:3978
@@ -39194,6 +39211,13 @@ msgstr "Kyfieithu: KD"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kyfieithu@dotmon.com"
+
+#, fuzzy
+#~| msgctxt "asia.kgm"
+#~| msgid "North Korea"
+#~ msgctxt "north_korea.kgm"
+#~ msgid "North (Korea)"
+#~ msgstr "Gogledd Corea"
 
 #, fuzzy
 #~| msgctxt "ncamerica.kgm"
