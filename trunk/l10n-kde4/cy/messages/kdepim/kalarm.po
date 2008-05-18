@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-05-11 10:13+0200\n"
+"POT-Creation-Date: 2008-05-18 07:31+0200\n"
 "PO-Revision-Date: 2004-02-25 13:46+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -55,22 +55,33 @@ msgstr ""
 #, fuzzy
 #| msgid "Failed to execute command (shell access not authorized):"
 msgctxt "@info"
-msgid "Failed to execute command (shell access not authorized):"
+msgid "Failed to execute command (shell access not authorized)"
 msgstr "Methwyd gweithredu gorchymyn (hychyrchu plisgyn heb ei awdurdodi):"
 
 #: lib/shellprocess.cpp:161
 #, fuzzy
 #| msgid "Failed to execute command:"
 msgctxt "@info"
-msgid "Failed to execute command:"
+msgid "Failed to execute command"
 msgstr "Methwyd gweithredu gorchymyn:"
 
 #: lib/shellprocess.cpp:163
 #, fuzzy
 #| msgid "Command execution error:"
 msgctxt "@info"
-msgid "Command execution error:"
+msgid "Command execution error"
 msgstr "Gwall gweithredu gorchymyn:"
+
+#: lib/shellprocess.cpp:166
+#, fuzzy, kde-format
+#| msgid ""
+#| "Command executed:\n"
+#| "%1"
+msgctxt "@info"
+msgid "Command exit code: %1"
+msgstr ""
+"Gweithredwyd y gorchymyn:\n"
+" %1"
 
 #: lib/timespinbox.cpp:77
 #, fuzzy
@@ -231,19 +242,19 @@ msgstr ""
 "Bydd cau'n analluogi larymau\n"
 " (unwaith y ceuir unrhwy ffenestri neges larwm)."
 
-#: kalarmapp.cpp:1862
+#: kalarmapp.cpp:1866
 #, fuzzy
 msgctxt "@info"
 msgid "Error creating temporary script file"
 msgstr "Gwall wrth galw KMail"
 
-#: kalarmapp.cpp:1926
+#: kalarmapp.cpp:1944
 #, fuzzy
 msgctxt "@info"
 msgid "Pre-alarm action:"
 msgstr "Gosodiadau Larwm Ebost"
 
-#: kalarmapp.cpp:1931
+#: kalarmapp.cpp:1949
 #, fuzzy
 msgctxt "@info"
 msgid "Post-alarm action:"
@@ -2334,26 +2345,26 @@ msgstr ""
 "Brithwch i ddefnyddio'r wynebfath ragosodedig sy'n gyfredol pan ddengys y "
 "larwm."
 
-#: specialactions.cpp:100
+#: specialactions.cpp:103
 #, fuzzy
 msgctxt "@title:window"
 msgid "Special Alarm Actions"
 msgstr "Gosodiadau Larwm Ebost"
 
-#: specialactions.cpp:158
+#: specialactions.cpp:161
 #, fuzzy
 msgctxt "@title:group"
 msgid "Pre-Alarm Action"
 msgstr "Gosodiadau Larwm Ebost"
 
-#: specialactions.cpp:168 specialactions.cpp:194
+#: specialactions.cpp:171 specialactions.cpp:197
 #, fuzzy
 #| msgid "Co&mmand"
 msgctxt "@label:textbox"
 msgid "Command:"
 msgstr "Gorchy&myn"
 
-#: specialactions.cpp:173
+#: specialactions.cpp:176
 msgctxt "@info:whatsthis"
 msgid ""
 "<para>Enter a shell command to execute before the alarm is displayed.</"
@@ -2363,25 +2374,25 @@ msgid ""
 "para>"
 msgstr ""
 
-#: specialactions.cpp:179
+#: specialactions.cpp:182
 msgctxt "@option:check"
 msgid "Cancel alarm on error"
 msgstr ""
 
-#: specialactions.cpp:180
+#: specialactions.cpp:183
 msgctxt "@info:whatsthis"
 msgid ""
 "Cancel the alarm if the pre-alarm command fails, i.e. do not display the "
 "alarm or execute any post-alarm action command."
 msgstr ""
 
-#: specialactions.cpp:184
+#: specialactions.cpp:187
 #, fuzzy
 msgctxt "@title:group"
 msgid "Post-Alarm Action"
 msgstr "Gosodiadau Larwm Ebost"
 
-#: specialactions.cpp:198
+#: specialactions.cpp:201
 msgctxt "@info:whatsthis"
 msgid ""
 "<para>Enter a shell command to execute after the alarm window is closed.</"
@@ -6311,7 +6322,7 @@ msgctxt "@info"
 msgid "Error reading address book"
 msgstr "Gwall tra'n darllen y llyfr cyfeiriadau"
 
-#: alarmevent.cpp:2858
+#: alarmevent.cpp:2856
 #, fuzzy
 #| msgctxt "Brief form of 'At Login'"
 #| msgid "Login"
@@ -6319,14 +6330,14 @@ msgctxt "@info/plain Brief form of 'At Login'"
 msgid "Login"
 msgstr "Mewngofnodi"
 
-#: alarmevent.cpp:2858
+#: alarmevent.cpp:2856
 #, fuzzy
 #| msgid "At login"
 msgctxt "@info/plain"
 msgid "At login"
 msgstr "Wrth Fewngofnodi"
 
-#: alarmevent.cpp:2866 alarmevent.cpp:2904
+#: alarmevent.cpp:2864 alarmevent.cpp:2902
 #, fuzzy, kde-format
 msgctxt "@info/plain"
 msgid "1 Minute"
@@ -6334,7 +6345,7 @@ msgid_plural "%1 Minutes"
 msgstr[0] "1 Funud"
 msgstr[1] "%1 o Funudau:"
 
-#: alarmevent.cpp:2868 alarmevent.cpp:2906
+#: alarmevent.cpp:2866 alarmevent.cpp:2904
 #, fuzzy, kde-format
 msgctxt "@info/plain"
 msgid "1 Hour"
@@ -6342,7 +6353,7 @@ msgid_plural "%1 Hours"
 msgstr[0] "1 Awr"
 msgstr[1] " %1 o Oriau"
 
-#: alarmevent.cpp:2872 alarmevent.cpp:2908
+#: alarmevent.cpp:2870 alarmevent.cpp:2906
 #, fuzzy, kde-format
 #| msgctxt "Hours and Minutes"
 #| msgid "%1H %2M"
@@ -6350,7 +6361,7 @@ msgctxt "@info/plain Hours and minutes"
 msgid "%1h %2m"
 msgstr "%1A %2M"
 
-#: alarmevent.cpp:2875 alarmevent.cpp:2912
+#: alarmevent.cpp:2873 alarmevent.cpp:2910
 #, fuzzy, kde-format
 msgctxt "@info/plain"
 msgid "1 Day"
@@ -6358,7 +6369,7 @@ msgid_plural "%1 Days"
 msgstr[0] "1 Diwrnod"
 msgstr[1] " %1 o Ddiwrnodau"
 
-#: alarmevent.cpp:2877 alarmevent.cpp:2913
+#: alarmevent.cpp:2875 alarmevent.cpp:2911
 #, fuzzy, kde-format
 msgctxt "@info/plain"
 msgid "1 Week"
@@ -6366,7 +6377,7 @@ msgid_plural "%1 Weeks"
 msgstr[0] "1 Wythnos"
 msgstr[1] " %1 Wythnos"
 
-#: alarmevent.cpp:2879
+#: alarmevent.cpp:2877
 #, fuzzy, kde-format
 msgctxt "@info/plain"
 msgid "1 Month"
@@ -6374,7 +6385,7 @@ msgid_plural "%1 Months"
 msgstr[0] "1 Mis"
 msgstr[1] " %1 o Fisoedd"
 
-#: alarmevent.cpp:2881
+#: alarmevent.cpp:2879
 #, fuzzy, kde-format
 msgctxt "@info/plain"
 msgid "1 Year"
@@ -6382,14 +6393,14 @@ msgid_plural "%1 Years"
 msgstr[0] "1 Flwyddyn"
 msgstr[1] " %1 o Flynyddoedd"
 
-#: alarmevent.cpp:2887
+#: alarmevent.cpp:2885
 #, fuzzy
 #| msgid "None"
 msgctxt "@info/plain No recurrence"
 msgid "None"
 msgstr "Dim"
 
-#: alarmevent.cpp:2915
+#: alarmevent.cpp:2913
 #, fuzzy
 #| msgid "None"
 msgctxt "@info/plain No repetition"
