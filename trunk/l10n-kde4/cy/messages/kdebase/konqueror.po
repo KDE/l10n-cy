@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konqueror\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-05-11 10:11+0200\n"
+"POT-Creation-Date: 2008-05-19 07:51+0200\n"
 "PO-Revision-Date: 2003-12-27 14:40+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -353,16 +353,16 @@ msgstr "Agor tab newydd"
 msgid "Close the current tab"
 msgstr "Cau'r tab cyfredol"
 
-#: src/konqtabs.cpp:413 src/konqmainwindow.cpp:3719
+#: src/konqtabs.cpp:413 src/konqmainwindow.cpp:3782
 msgid "&Reload All Tabs"
 msgstr "&Ail-lwytho bob tab"
 
-#: src/konqtabs.cpp:435 src/konqmainwindow.cpp:2578
-#: src/konqmainwindow.cpp:3659
+#: src/konqtabs.cpp:435 src/konqmainwindow.cpp:2586
+#: src/konqmainwindow.cpp:3722
 msgid "Close &Other Tabs"
 msgstr "Cau Tabiau &Eraill"
 
-#: src/konqtabs.cpp:552 src/konqmainwindow.cpp:3633
+#: src/konqtabs.cpp:552 src/konqmainwindow.cpp:3696
 msgid "&New Tab"
 msgstr "Tab &Newydd"
 
@@ -388,7 +388,33 @@ msgstr "D&atglymu Tab"
 msgid "&Close Tab"
 msgstr "&Cau Tab"
 
-#: src/konqmainwindow.cpp:520
+#: src/konqsessionmanager.cpp:229
+msgid "Konqueror didn't close correctly. Would you like to restore session?"
+msgstr ""
+
+#: src/konqsessionmanager.cpp:230
+msgid "Restore session?"
+msgstr ""
+
+#: src/konqsessionmanager.cpp:231
+msgid "Restore session"
+msgstr ""
+
+#: src/konqsessionmanager.cpp:232
+msgid "Do not restore"
+msgstr ""
+
+#: src/konqsessionmanager.cpp:233
+#, fuzzy
+#| msgid "As New Folder"
+msgid "Ask me later"
+msgstr "Fel Plygell Newydd"
+
+#: src/konqsessionmanager.cpp:234
+msgid "Don't ask me again"
+msgstr ""
+
+#: src/konqmainwindow.cpp:523
 #, kde-format
 msgid ""
 "Malformed URL\n"
@@ -397,7 +423,7 @@ msgstr ""
 "URL annilys\n"
 " %1"
 
-#: src/konqmainwindow.cpp:525
+#: src/konqmainwindow.cpp:528
 #, kde-format
 msgid ""
 "Protocol not supported\n"
@@ -406,304 +432,320 @@ msgstr ""
 "Ni chynhelir protocol\n"
 " %1"
 
-#: src/konqmainwindow.cpp:1490
+#: src/konqmainwindow.cpp:1498
 #, fuzzy
 msgid "Cannot create the find part, check your installation."
 msgstr "Methu creu'r rhan ganfod, gwiriwch eich gosodiad."
 
-#: src/konqmainwindow.cpp:1667
+#: src/konqmainwindow.cpp:1675
 msgid "Canceled."
 msgstr "Wedi'i ddiddymu"
 
-#: src/konqmainwindow.cpp:1705
+#: src/konqmainwindow.cpp:1713
 msgid ""
 "This page contains changes that have not been submitted.\n"
 "Reloading the page will discard these changes."
 msgstr ""
 
-#: src/konqmainwindow.cpp:1706 src/konqmainwindow.cpp:2403
-#: src/konqmainwindow.cpp:2421 src/konqmainwindow.cpp:2518
-#: src/konqmainwindow.cpp:2536 src/konqmainwindow.cpp:2556
-#: src/konqmainwindow.cpp:2593 src/konqmainwindow.cpp:2626
-#: src/konqmainwindow.cpp:4989 src/konqviewmanager.cpp:1355
+#: src/konqmainwindow.cpp:1714 src/konqmainwindow.cpp:2411
+#: src/konqmainwindow.cpp:2429 src/konqmainwindow.cpp:2526
+#: src/konqmainwindow.cpp:2544 src/konqmainwindow.cpp:2564
+#: src/konqmainwindow.cpp:2601 src/konqmainwindow.cpp:2634
+#: src/konqmainwindow.cpp:5057 src/konqviewmanager.cpp:1361
 msgid "Discard Changes?"
 msgstr "Taflu Newidiadau?"
 
-#: src/konqmainwindow.cpp:1706 src/konqmainwindow.cpp:2403
-#: src/konqmainwindow.cpp:2421 src/konqmainwindow.cpp:2518
-#: src/konqmainwindow.cpp:2536 src/konqmainwindow.cpp:2556
-#: src/konqmainwindow.cpp:2593 src/konqmainwindow.cpp:2626
-#: src/konqmainwindow.cpp:4989 src/konqviewmanager.cpp:1355
+#: src/konqmainwindow.cpp:1714 src/konqmainwindow.cpp:2411
+#: src/konqmainwindow.cpp:2429 src/konqmainwindow.cpp:2526
+#: src/konqmainwindow.cpp:2544 src/konqmainwindow.cpp:2564
+#: src/konqmainwindow.cpp:2601 src/konqmainwindow.cpp:2634
+#: src/konqmainwindow.cpp:5057 src/konqviewmanager.cpp:1361
 msgid "&Discard Changes"
 msgstr "&Taflu Newidiadau"
 
-#: src/konqmainwindow.cpp:1764
+#: src/konqmainwindow.cpp:1772
 #, fuzzy
 msgid "Your sidebar is not functional or unavailable."
 msgstr ""
 "Nid yw'ch bar ochr yn gweithio, neu nid yw ar gael. Nid oes modd ychwanegu "
 "cofnod newydd."
 
-#: src/konqmainwindow.cpp:1764 src/konqmainwindow.cpp:1783
+#: src/konqmainwindow.cpp:1772 src/konqmainwindow.cpp:1791
 msgid "Show History Sidebar"
 msgstr ""
 
-#: src/konqmainwindow.cpp:1783
+#: src/konqmainwindow.cpp:1791
 msgid "Cannot find running history plugin in your sidebar."
 msgstr ""
 
-#: src/konqmainwindow.cpp:1813
+#: src/konqmainwindow.cpp:1821
 #, fuzzy
 #| msgid "Profile Management"
 msgid "File Management"
 msgstr "Trefnu Proffilau"
 
-#: src/konqmainwindow.cpp:1826 about/konq_aboutpage.cc:237
+#: src/konqmainwindow.cpp:1834 about/konq_aboutpage.cc:237
 msgid "Web Browsing"
 msgstr "Pori'r Wê"
 
-#: src/konqmainwindow.cpp:2402 src/konqmainwindow.cpp:2420
+#: src/konqmainwindow.cpp:2410 src/konqmainwindow.cpp:2428
 msgid ""
 "This tab contains changes that have not been submitted.\n"
 "Detaching the tab will discard these changes."
 msgstr ""
 
-#: src/konqmainwindow.cpp:2517
+#: src/konqmainwindow.cpp:2525
 msgid ""
 "This view contains changes that have not been submitted.\n"
 "Closing the view will discard these changes."
 msgstr ""
 
-#: src/konqmainwindow.cpp:2535 src/konqmainwindow.cpp:2555
+#: src/konqmainwindow.cpp:2543 src/konqmainwindow.cpp:2563
 msgid ""
 "This tab contains changes that have not been submitted.\n"
 "Closing the tab will discard these changes."
 msgstr ""
 
-#: src/konqmainwindow.cpp:2577
+#: src/konqmainwindow.cpp:2585
 #, fuzzy
 msgid "Do you really want to close all other tabs?"
 msgstr "Ydych wir am glirio'r hanes gyfan?"
 
-#: src/konqmainwindow.cpp:2578
+#: src/konqmainwindow.cpp:2586
 #, fuzzy
 msgid "Close Other Tabs Confirmation"
 msgstr "Cau Tabiau &Eraill"
 
-#: src/konqmainwindow.cpp:2592
+#: src/konqmainwindow.cpp:2600
 msgid ""
 "This tab contains changes that have not been submitted.\n"
 "Closing other tabs will discard these changes."
 msgstr ""
 
-#: src/konqmainwindow.cpp:2625
+#: src/konqmainwindow.cpp:2633
 msgid ""
 "This tab contains changes that have not been submitted.\n"
 "Reloading all tabs will discard these changes."
 msgstr ""
 
-#: src/konqmainwindow.cpp:2669
+#: src/konqmainwindow.cpp:2677
 msgid "Enter Target"
 msgstr "Mewnosodwch Targed"
 
-#: src/konqmainwindow.cpp:2678
+#: src/konqmainwindow.cpp:2686
 #, fuzzy, kde-format
 msgid "<qt><b>%1</b> is not valid</qt>"
 msgstr "<qt>Nid yw <b>%1</b> yn ddilys<qt>"
 
-#: src/konqmainwindow.cpp:2694
+#: src/konqmainwindow.cpp:2702
 #, fuzzy, kde-format
 msgid "Copy selected files from %1 to:"
 msgstr "Copio ffeiliau dewisiedig o"
 
-#: src/konqmainwindow.cpp:2704
+#: src/konqmainwindow.cpp:2712
 #, fuzzy, kde-format
 msgid "Move selected files from %1 to:"
 msgstr "Symud ffeiliau dewisiedig o"
 
-#: src/konqmainwindow.cpp:2894
+#: src/konqmainwindow.cpp:2902
 #, fuzzy
 #| msgid "Clear History"
 msgid "Empty Closed Items History"
 msgstr "Gwaredu Hanes"
 
-#: src/konqmainwindow.cpp:3472
+#: src/konqmainwindow.cpp:2927
+#, fuzzy
+msgid "Save as.."
+msgstr "Gosod URL..."
+
+#: src/konqmainwindow.cpp:2929
+#, fuzzy
+msgid "Manage.."
+msgstr "Ne&wid Eicon..."
+
+#: src/konqmainwindow.cpp:3528
 #: sidebar/trees/history_module/history_module.cpp:88
 msgid "New &Window"
 msgstr "&Ffenestr Newydd"
 
-#: src/konqmainwindow.cpp:3477
+#: src/konqmainwindow.cpp:3533
 msgid "&Duplicate Window"
 msgstr "&Dyblygu Ffenestr"
 
-#: src/konqmainwindow.cpp:3482
+#: src/konqmainwindow.cpp:3538
 #, fuzzy
 msgid "Send &Link Address..."
 msgstr "Anfon &Cyswllt"
 
-#: src/konqmainwindow.cpp:3486
+#: src/konqmainwindow.cpp:3542
 msgid "S&end File..."
 msgstr "A&nfon Ffeil"
 
-#: src/konqmainwindow.cpp:3492
+#: src/konqmainwindow.cpp:3548
 msgid "Open &Terminal"
 msgstr "Agor &Terfynell"
 
-#: src/konqmainwindow.cpp:3498
+#: src/konqmainwindow.cpp:3554
 #, fuzzy
 #| msgid "Open Location"
 msgid "&Open Location"
 msgstr "Agor Lleoliad"
 
-#: src/konqmainwindow.cpp:3504
+#: src/konqmainwindow.cpp:3560
 #, fuzzy
 #| msgid "S&end File..."
 msgid "&Open File..."
 msgstr "A&nfon Ffeil"
 
-#: src/konqmainwindow.cpp:3509
+#: src/konqmainwindow.cpp:3565
 msgid "&Find File..."
 msgstr "&Canfod Ffeil..."
 
-#: src/konqmainwindow.cpp:3518
+#: src/konqmainwindow.cpp:3574
 msgid "&Use index.html"
 msgstr "&Defnyddio index.html"
 
-#: src/konqmainwindow.cpp:3521
+#: src/konqmainwindow.cpp:3577
 msgid "Lock to Current Location"
 msgstr "Cloi i'r Lleoliad Cyfredol"
 
-#: src/konqmainwindow.cpp:3524
+#: src/konqmainwindow.cpp:3580
 msgid "Lin&k View"
 msgstr "Cysyll&tu Golwg"
 
-#: src/konqmainwindow.cpp:3529
+#: src/konqmainwindow.cpp:3585
 msgid "&Up"
 msgstr "I &Fyny"
 
-#: src/konqmainwindow.cpp:3541
+#: src/konqmainwindow.cpp:3597
 #, fuzzy
-#| msgid "&Close Tab"
-msgid "Closed Tabs"
-msgstr "&Cau Tab"
+#| msgid "Copy Items"
+msgid "Closed Items"
+msgstr "Copïo Eitemau"
 
-#: src/konqmainwindow.cpp:3575
+#: src/konqmainwindow.cpp:3611
+#, fuzzy
+#| msgid "Permissions"
+msgid "Sessions"
+msgstr "Caniatadau"
+
+#: src/konqmainwindow.cpp:3638
 #, fuzzy
 #| msgid "Most Often Visited"
 msgctxt "@action:inmenu Go"
 msgid "Most Often Visited"
 msgstr "Wedi'i Ymweld yr Amlaf"
 
-#: src/konqmainwindow.cpp:3579
+#: src/konqmainwindow.cpp:3642
 msgctxt "@action:inmenu Go"
 msgid "Recently Visited"
 msgstr ""
 
-#: src/konqmainwindow.cpp:3585
+#: src/konqmainwindow.cpp:3648
 msgctxt "@action:inmenu Go"
 msgid "Show History in Sidebar"
 msgstr ""
 
-#: src/konqmainwindow.cpp:3591 src/konqmainwindow.cpp:4212
+#: src/konqmainwindow.cpp:3654 src/konqmainwindow.cpp:4275
 msgid "&Save View Profile..."
 msgstr "&Cadw Proffil Golwg..."
 
-#: src/konqmainwindow.cpp:3613
+#: src/konqmainwindow.cpp:3676
 #, fuzzy
 msgid "Configure Extensions..."
 msgstr "Ffurfweddu Gwirio Sillafu..."
 
-#: src/konqmainwindow.cpp:3617
+#: src/konqmainwindow.cpp:3680
 msgid "Configure Spell Checking..."
 msgstr "Ffurfweddu Gwirio Sillafu..."
 
-#: src/konqmainwindow.cpp:3623
+#: src/konqmainwindow.cpp:3686
 msgid "Split View &Left/Right"
 msgstr "Hollti Golwg &Chwith/Dde"
 
-#: src/konqmainwindow.cpp:3628
+#: src/konqmainwindow.cpp:3691
 msgid "Split View &Top/Bottom"
 msgstr "Hollti Golwg &Pen/Gwaelod"
 
-#: src/konqmainwindow.cpp:3639
+#: src/konqmainwindow.cpp:3702
 msgid "&Duplicate Current Tab"
 msgstr "&Dyblygu'r Tab Cyfredol"
 
-#: src/konqmainwindow.cpp:3644
+#: src/konqmainwindow.cpp:3707
 msgid "Detach Current Tab"
 msgstr "Datglymu'r Tab Cyfredol"
 
-#: src/konqmainwindow.cpp:3649
+#: src/konqmainwindow.cpp:3712
 #, fuzzy
 msgid "&Close Active View"
 msgstr "&Gwaredu'r Olwg Weithredol"
 
-#: src/konqmainwindow.cpp:3654
+#: src/konqmainwindow.cpp:3717
 msgid "Close Current Tab"
 msgstr "Cau'r Tab Cyfredol"
 
-#: src/konqmainwindow.cpp:3663
+#: src/konqmainwindow.cpp:3726
 msgid "Activate Next Tab"
 msgstr "Gweithredu'r Tab Nesaf"
 
-#: src/konqmainwindow.cpp:3667
+#: src/konqmainwindow.cpp:3730
 msgid "Activate Previous Tab"
 msgstr "Gweithredu'r Tab Cynt"
 
-#: src/konqmainwindow.cpp:3675
+#: src/konqmainwindow.cpp:3738
 #, fuzzy, kde-format
 msgid "Activate Tab %1"
 msgstr "Gweithredu'r Tab Nesaf"
 
-#: src/konqmainwindow.cpp:3680
+#: src/konqmainwindow.cpp:3743
 msgid "Move Tab Left"
 msgstr "Symud Tab i'r Chwith"
 
-#: src/konqmainwindow.cpp:3684
+#: src/konqmainwindow.cpp:3747
 msgid "Move Tab Right"
 msgstr "Symud Tab i'r Dde"
 
-#: src/konqmainwindow.cpp:3691
+#: src/konqmainwindow.cpp:3754
 msgid "Dump Debug Info"
 msgstr "Tomenu Gwybodaeth Dadnamu"
 
-#: src/konqmainwindow.cpp:3696
+#: src/konqmainwindow.cpp:3759
 msgid "C&onfigure View Profiles..."
 msgstr "Ff&urfweddu Proffilau Golwg..."
 
-#: src/konqmainwindow.cpp:3698
+#: src/konqmainwindow.cpp:3761
 msgid "Load &View Profile"
 msgstr "Llwytho Proffil &Golwg"
 
-#: src/konqmainwindow.cpp:3714 sidebar/web_module/web_module.h:61
+#: src/konqmainwindow.cpp:3777 sidebar/web_module/web_module.h:61
 #, fuzzy
 msgid "&Reload"
 msgstr "&Ail-lwytho bob tab"
 
-#: src/konqmainwindow.cpp:3741
+#: src/konqmainwindow.cpp:3804
 msgid "&Stop"
 msgstr "&Atal"
 
-#: src/konqmainwindow.cpp:3757 src/konqmainwindow.cpp:3760
+#: src/konqmainwindow.cpp:3820 src/konqmainwindow.cpp:3823
 msgid "L&ocation: "
 msgstr "Ll&eoliad:"
 
-#: src/konqmainwindow.cpp:3767
+#: src/konqmainwindow.cpp:3830
 msgid "Location Bar"
 msgstr "Bar Lleoliad"
 
-#: src/konqmainwindow.cpp:3773
+#: src/konqmainwindow.cpp:3836
 #, fuzzy
 #| msgid "Location Bar<p>Enter a web address or search term."
 msgid ""
 "<html>Location Bar<br /><br />Enter a web address or search term.</html>"
 msgstr "Bar Lleoliad<p>Rhowch cyfeiriad gwê neu derm chwilio."
 
-#: src/konqmainwindow.cpp:3777
+#: src/konqmainwindow.cpp:3840
 msgid "Clear Location Bar"
 msgstr "Clirio'r Bar Lleoliad"
 
-#: src/konqmainwindow.cpp:3781
+#: src/konqmainwindow.cpp:3844
 #, fuzzy
 #| msgid "Clear Location bar<p>Clears the content of the location bar."
 msgid ""
@@ -711,24 +753,24 @@ msgid ""
 "</html>"
 msgstr "Clirio'r Bar Lleoliad<p>Cliria gynnwys y bar lleoliad."
 
-#: src/konqmainwindow.cpp:3786
+#: src/konqmainwindow.cpp:3849
 #, fuzzy
 msgid "&Bookmarks"
 msgstr "&Tudnod"
 
-#: src/konqmainwindow.cpp:3797
+#: src/konqmainwindow.cpp:3860
 msgid "Bookmark This Location"
 msgstr "Tudnodi'r Lleoliad Yma"
 
-#: src/konqmainwindow.cpp:3803
+#: src/konqmainwindow.cpp:3866
 msgid "Kon&queror Introduction"
 msgstr "Cyflwyniad Kon&queror"
 
-#: src/konqmainwindow.cpp:3808
+#: src/konqmainwindow.cpp:3871
 msgid "Go"
 msgstr "Ewch"
 
-#: src/konqmainwindow.cpp:3810
+#: src/konqmainwindow.cpp:3873
 #, fuzzy
 #| msgid "Go<p>Goes to the page that has been entered into the location bar."
 msgid ""
@@ -736,7 +778,7 @@ msgid ""
 "bar.</html>"
 msgstr "Ewch<p>Â i'r dudalen a roddir yn y bar lleoliad."
 
-#: src/konqmainwindow.cpp:3816
+#: src/konqmainwindow.cpp:3879
 #, fuzzy, kde-format
 #| msgid ""
 #| "Enter the parent folder<p>For instance, if the current location is file:/"
@@ -749,25 +791,25 @@ msgstr ""
 "Mynd i'r blygell riant<p>Er enghraifft, os file:/home/%1 yw'r lleoliad "
 "cyfredol, â'r botwm yma â chi i file:/home"
 
-#: src/konqmainwindow.cpp:3819
+#: src/konqmainwindow.cpp:3882
 msgid "Enter the parent folder"
 msgstr "Mynd i mewn i'r blygell riant"
 
-#: src/konqmainwindow.cpp:3821 src/konqmainwindow.cpp:3822
+#: src/konqmainwindow.cpp:3884 src/konqmainwindow.cpp:3885
 msgid "Move backwards one step in the browsing history"
 msgstr "Symud yn ôl un cam drwy'r hanes pori"
 
-#: src/konqmainwindow.cpp:3824 src/konqmainwindow.cpp:3825
+#: src/konqmainwindow.cpp:3887 src/konqmainwindow.cpp:3888
 msgid "Move forward one step in the browsing history"
 msgstr "Symud ymlaen un cam drwy'r hanes pori"
 
-#: src/konqmainwindow.cpp:3828 src/konqmainwindow.cpp:3829
+#: src/konqmainwindow.cpp:3891 src/konqmainwindow.cpp:3892
 #, fuzzy
 #| msgid "Move backwards one step in the browsing history"
 msgid "Move backwards one step in the closed tabs history"
 msgstr "Symud yn ôl un cam drwy'r hanes pori"
 
-#: src/konqmainwindow.cpp:3832
+#: src/konqmainwindow.cpp:3895
 #, fuzzy
 msgid ""
 "<html>Navigate to your 'Home Location'<br /><br />You can configure the "
@@ -778,12 +820,12 @@ msgstr ""
 "â'r botwm yma a chi yn y <b>Ganolfan Reolaeth KDE</b>, o dan <b>Trefnydd "
 "Ffeiliau</b>/<b>Ymddygiad</b>."
 
-#: src/konqmainwindow.cpp:3835
+#: src/konqmainwindow.cpp:3898
 #, fuzzy
 msgid "Navigate to your 'Home Location'"
 msgstr "Llywio i'ch 'URL gartref' neu hafan"
 
-#: src/konqmainwindow.cpp:3837
+#: src/konqmainwindow.cpp:3900
 #, fuzzy
 #| msgid ""
 #| "Reload the currently displayed document<p>This may, for example, be "
@@ -798,11 +840,11 @@ msgstr ""
 "tudalennau gwê, er enghraifft rhai sydd wedi eu addasu ers eu llwytho, er "
 "mwyn dangos y newidiadau."
 
-#: src/konqmainwindow.cpp:3840
+#: src/konqmainwindow.cpp:3903
 msgid "Reload the currently displayed document"
 msgstr "Ail-lwytho'r ddogfen arddangosedig cyfredol"
 
-#: src/konqmainwindow.cpp:3842
+#: src/konqmainwindow.cpp:3905
 #, fuzzy
 msgid ""
 "<html>Reload all currently displayed documents in tabs<br /><br />This may, "
@@ -813,12 +855,12 @@ msgstr ""
 "tudalennau gwê, er enghraifft rhai sydd wedi eu addasu ers eu llwytho, er "
 "mwyn dangos y newidiadau."
 
-#: src/konqmainwindow.cpp:3845
+#: src/konqmainwindow.cpp:3908
 #, fuzzy
 msgid "Reload all currently displayed document in tabs"
 msgstr "Ail-lwytho'r ddogfen arddangosedig cyfredol"
 
-#: src/konqmainwindow.cpp:3847
+#: src/konqmainwindow.cpp:3910
 #, fuzzy
 #| msgid ""
 #| "Stop loading the document<p>All network transfers will be stopped and "
@@ -831,11 +873,11 @@ msgstr ""
 "Atal llwytho'r ddogfen<p>Terfynir pob drosglwyddiad rhwydwaith, a dengys "
 "Konqueror y cynnwys a dderbyniwyd hyd hynny."
 
-#: src/konqmainwindow.cpp:3850
+#: src/konqmainwindow.cpp:3913
 msgid "Stop loading the document"
 msgstr "Atal llwytho'r ddogfen"
 
-#: src/konqmainwindow.cpp:3852
+#: src/konqmainwindow.cpp:3915
 #, fuzzy
 #| msgid ""
 #| "Cut the currently selected text or item(s) and move it to the system "
@@ -850,11 +892,11 @@ msgstr ""
 "gludfwrdd<p> Mae hyn yn ei wneud ar gael i'r gorchymyn <b>Gludo</b> yn "
 "Konqueror a chymhwysiadau eraill KDE."
 
-#: src/konqmainwindow.cpp:3856
+#: src/konqmainwindow.cpp:3919
 msgid "Move the selected text or item(s) to the clipboard"
 msgstr "Symud y testun neu eitem(au) dewisiedig i'r gludfwrdd"
 
-#: src/konqmainwindow.cpp:3858
+#: src/konqmainwindow.cpp:3921
 #, fuzzy
 #| msgid ""
 #| "Copy the currently selected text or item(s) to the system "
@@ -869,11 +911,11 @@ msgstr ""
 "ei wneud ar gael i'r gorchymyn <b>Gludo</b> yn Konqueror a chymhwysiadau "
 "eraill KDE."
 
-#: src/konqmainwindow.cpp:3862
+#: src/konqmainwindow.cpp:3925
 msgid "Copy the selected text or item(s) to the clipboard"
 msgstr "Copïo'r testun neu eitem(au) dewisiedig cyfredol i'r clipfwrdd"
 
-#: src/konqmainwindow.cpp:3864
+#: src/konqmainwindow.cpp:3927
 #, fuzzy
 #| msgid ""
 #| "Paste the previously cut or copied clipboard contents<p>This also works "
@@ -885,11 +927,11 @@ msgstr ""
 "Gludo cynnwys y gludfwrdd a dorwyd neu gopïwyd gynt<p>Gweithia hyn hefyd "
 "gyda testun wedi ei gopïo neu'i dorri o gymhwysiadau eraill KDE."
 
-#: src/konqmainwindow.cpp:3867
+#: src/konqmainwindow.cpp:3930
 msgid "Paste the clipboard contents"
 msgstr "Gludo cynnwys y gludfwrdd"
 
-#: src/konqmainwindow.cpp:3869
+#: src/konqmainwindow.cpp:3932
 #, fuzzy
 #| msgid ""
 #| "Print the currently displayed document<p>You will be presented with a "
@@ -909,15 +951,15 @@ msgstr ""
 "argraffydd i'w ddefnyddio.<p>Darpara'r ymgom yma hefyd hygyrchedd i "
 "wasanaethau argraffu arbennig KDE, megis creu ffeil PDF o'r ddogfen cyfredol."
 
-#: src/konqmainwindow.cpp:3875
+#: src/konqmainwindow.cpp:3938
 msgid "Print the current document"
 msgstr "Argraffu'r ddogfen cyfredol"
 
-#: src/konqmainwindow.cpp:3881
+#: src/konqmainwindow.cpp:3944
 msgid "If present, open index.html when entering a folder."
 msgstr "Agor index.html wrth fynd i blygell, os mae'n bresennol."
 
-#: src/konqmainwindow.cpp:3882
+#: src/konqmainwindow.cpp:3945
 #, fuzzy
 msgid ""
 "A locked view cannot change folders. Use in combination with 'link view' to "
@@ -926,7 +968,7 @@ msgstr ""
 "Ni all golwg wedi'i gloi newid plygyll.  Defnyddiwch ynghyd â 'golwg "
 "gyswllt' i archwilio sawl ffeil o un blygell"
 
-#: src/konqmainwindow.cpp:3883
+#: src/konqmainwindow.cpp:3946
 msgid ""
 "Sets the view as 'linked'. A linked view follows folder changes made in "
 "other linked views."
@@ -934,58 +976,58 @@ msgstr ""
 "Gosoda'r golwg yn 'olwg gyswllt'. Dilyna golygion cyswllt newidion plygell a "
 "wnaed mewn golygon cyswllt eraill."
 
-#: src/konqmainwindow.cpp:4061
+#: src/konqmainwindow.cpp:4124
 msgid "Copy &Files..."
 msgstr "Copïo &Ffeiliau..."
 
-#: src/konqmainwindow.cpp:4065
+#: src/konqmainwindow.cpp:4128
 msgid "M&ove Files..."
 msgstr "S&ymud Ffeiliau..."
 
-#: src/konqmainwindow.cpp:4211
+#: src/konqmainwindow.cpp:4274
 #, kde-format
 msgid "&Save View Profile \"%1\"..."
 msgstr "&Cadw Proffil Golwg \"%1\"..."
 
-#: src/konqmainwindow.cpp:4580
+#: src/konqmainwindow.cpp:4643
 msgid "Open in T&his Window"
 msgstr "Agor yn y Ffenest &Hon"
 
-#: src/konqmainwindow.cpp:4581
+#: src/konqmainwindow.cpp:4644
 #, fuzzy
 msgid "Open the document in current window"
 msgstr "Agor y ddogfen mewn ffenestr newydd"
 
-#: src/konqmainwindow.cpp:4587 sidebar/web_module/web_module.h:54
+#: src/konqmainwindow.cpp:4650 sidebar/web_module/web_module.h:54
 #: sidebar/web_module/web_module.h:57
 msgid "Open in New &Window"
 msgstr "Agor mewn Ffenestr &Newydd"
 
-#: src/konqmainwindow.cpp:4588
+#: src/konqmainwindow.cpp:4651
 msgid "Open the document in a new window"
 msgstr "Agor y ddogfen mewn ffenestr newydd"
 
-#: src/konqmainwindow.cpp:4594
+#: src/konqmainwindow.cpp:4657
 msgid "Open in &New Tab"
 msgstr "Agor mewn Tab &Newydd"
 
-#: src/konqmainwindow.cpp:4596
+#: src/konqmainwindow.cpp:4659
 msgid "Open the document in a new tab"
 msgstr "Agor y ddogfen mewn tab newydd"
 
-#: src/konqmainwindow.cpp:4800
+#: src/konqmainwindow.cpp:4868
 #, kde-format
 msgid "Open with %1"
 msgstr "Agor gyda %1"
 
-#: src/konqmainwindow.cpp:4833
+#: src/konqmainwindow.cpp:4901
 #, fuzzy
 #| msgid "&View Mode"
 msgctxt "@action:inmenu View"
 msgid "&View Mode"
 msgstr "Modd &Golwg"
 
-#: src/konqmainwindow.cpp:4949
+#: src/konqmainwindow.cpp:5017
 #, fuzzy
 msgid ""
 "You have multiple tabs open in this window, are you sure you want to quit?"
@@ -993,54 +1035,54 @@ msgstr ""
 "Mae gennych amryw dabiau ar agor yn y ffenestr hon; a ydych yn sicr eich bod "
 "am ei chau?"
 
-#: src/konqmainwindow.cpp:4951 src/konqviewmanager.cpp:1337
+#: src/konqmainwindow.cpp:5019 src/konqviewmanager.cpp:1343
 msgid "Confirmation"
 msgstr "Cadarnhâd"
 
-#: src/konqmainwindow.cpp:4953
+#: src/konqmainwindow.cpp:5021
 msgid "C&lose Current Tab"
 msgstr "C&au'r Tab Cyfredol"
 
-#: src/konqmainwindow.cpp:4988
+#: src/konqmainwindow.cpp:5056
 msgid ""
 "This tab contains changes that have not been submitted.\n"
 "Closing the window will discard these changes."
 msgstr ""
 
-#: src/konqmainwindow.cpp:5030 src/konqmainwindow.cpp:5100
-#: src/konqundomanager.cpp:701
+#: src/konqmainwindow.cpp:5097 src/konqmainwindow.cpp:5157
+#: src/konqundomanager.cpp:700
 #, fuzzy
 #| msgctxt "NAME OF TRANSLATORS"
 #| msgid "Your names"
 msgid "no name"
 msgstr "Owain Green drwy KGyfieithu"
 
-#: src/konqmainwindow.cpp:5167
+#: src/konqmainwindow.cpp:5224
 msgid ""
 "Your sidebar is not functional or unavailable. A new entry cannot be added."
 msgstr ""
 "Nid yw'ch bar ochr yn gweithio, neu nid yw ar gael. Nid oes modd ychwanegu "
 "cofnod newydd."
 
-#: src/konqmainwindow.cpp:5167 src/konqmainwindow.cpp:5174
+#: src/konqmainwindow.cpp:5224 src/konqmainwindow.cpp:5231
 msgid "Web Sidebar"
 msgstr "Bar Ochr Gwê"
 
-#: src/konqmainwindow.cpp:5172
+#: src/konqmainwindow.cpp:5229
 #, kde-format
 msgid "Add new web extension \"%1\" to your sidebar?"
 msgstr "Ychwanegu estyniad gwê newydd \"%1\" i'ch bar ochr?"
 
-#: src/konqmainwindow.cpp:5174
+#: src/konqmainwindow.cpp:5231
 #, fuzzy
 msgid "Add"
 msgstr "Cyfeiriad"
 
-#: src/konqmainwindow.cpp:5174
+#: src/konqmainwindow.cpp:5231
 msgid "Do Not Add"
 msgstr "Na Ychwaneger"
 
-#: src/konqmainwindow.cpp:5471
+#: src/konqmainwindow.cpp:5528
 #, kde-format
 msgid ""
 "There appears to be a configuration error. You have associated Konqueror "
@@ -1048,6 +1090,37 @@ msgid ""
 msgstr ""
 "Ymddengys bod gwall ffurfweddu.  Rydych wedi cysylltu Konqueror efo %1, ond "
 "ni all drin y math yma o ffeil."
+
+#: src/konqsessiondlg.cpp:77
+#, fuzzy
+msgid "Manage Sessions"
+msgstr "Newid &Sylwad"
+
+#: src/konqsessiondlg.cpp:82
+#, fuzzy
+#| msgid "&Open Link"
+msgid "&Open"
+msgstr "&Agor Cyswllt"
+
+#: src/konqsessiondlg.cpp:173
+#, fuzzy
+#| msgid "Renaming"
+msgid "Rename session"
+msgstr "Ailenwi"
+
+#: src/konqsessiondlg.cpp:220
+msgid "Save Session"
+msgstr ""
+
+#: src/konqsessiondlg.cpp:245
+#, kde-format
+msgid ""
+"A session with the name '%1' already exists, ¿do you want to overwrite it?"
+msgstr ""
+
+#: src/konqsessiondlg.cpp:246
+msgid "Session exists. Overwrite?"
+msgstr ""
 
 #: src/konqview.cpp:1299
 msgid ""
@@ -1089,7 +1162,7 @@ msgstr "&Cau Tab"
 msgid "Und&o: Closed Window"
 msgstr "&Cau Tab"
 
-#: src/konqviewmanager.cpp:1335
+#: src/konqviewmanager.cpp:1341
 #, fuzzy
 msgid ""
 "You have multiple tabs open in this window.\n"
@@ -1098,11 +1171,11 @@ msgstr ""
 "Mae gennych amryw dabiau ar agor yn y ffenestr hon; a ydych yn sicr eich bod "
 "am ei chau?"
 
-#: src/konqviewmanager.cpp:1338
+#: src/konqviewmanager.cpp:1344
 msgid "Load View Profile"
 msgstr "Llwytho Proffil Golwg"
 
-#: src/konqviewmanager.cpp:1354
+#: src/konqviewmanager.cpp:1360
 msgid ""
 "This tab contains changes that have not been submitted.\n"
 "Loading a profile will discard these changes."
@@ -1164,43 +1237,43 @@ msgstr "&Ail-enwi Proffil"
 msgid "&Delete Profile"
 msgstr "&Dileu Proffil"
 
-#: src/konqmain.cpp:50
+#: src/konqmain.cpp:51
 #, fuzzy
 msgid "Start without a default window"
 msgstr "Dechrau heb ffenestr rhagosodedig"
 
-#: src/konqmain.cpp:52
+#: src/konqmain.cpp:53
 #, fuzzy
 msgid "Preload for later use"
 msgstr "Cynlwytho er defnydd nes ymlaen"
 
-#: src/konqmain.cpp:54
+#: src/konqmain.cpp:55
 msgid "Konqueror mode: FileManager or WebBrowser"
 msgstr ""
 
-#: src/konqmain.cpp:56
+#: src/konqmain.cpp:57
 #, fuzzy
 msgid "Profile to open"
 msgstr "Proffeil i agor."
 
-#: src/konqmain.cpp:58
+#: src/konqmain.cpp:59
 #, fuzzy
 msgid "List available profiles"
 msgstr "Rhestru'r proffilau sydd ar gael."
 
-#: src/konqmain.cpp:60
+#: src/konqmain.cpp:61
 #, fuzzy
 msgid "Mimetype to use for this URL (e.g. text/html or inode/directory)"
 msgstr ""
 "Math MIME i ddefnyddio i'r URL hwn, (e.e. text/html neu inode/directory)."
 
-#: src/konqmain.cpp:62
+#: src/konqmain.cpp:63
 msgid ""
 "For URLs that point to files, opens the directory and selects the file, "
 "instead of opening the actual file"
 msgstr ""
 
-#: src/konqmain.cpp:64
+#: src/konqmain.cpp:65
 #, fuzzy
 msgid "Location to open"
 msgstr "Lleoliad i agor."
@@ -1387,7 +1460,9 @@ msgstr "Ychwanegu Tudnod"
 msgid "&Create New Folder..."
 msgstr "&Creu Plygell Newydd..."
 
-#: sidebar/trees/konq_sidebartree.cpp:940
+#. i18n: tag string
+#. i18n: file src/konqsessiondlg_base.ui line 39
+#: sidebar/trees/konq_sidebartree.cpp:940 rc.cpp:161
 msgid "Rename"
 msgstr "Ail-enwi"
 
@@ -1823,7 +1898,7 @@ msgstr "Nodwedd"
 
 #. i18n: tag string
 #. i18n: file sidebar/trees/history_module/history_dlg.ui line 134
-#: about/konq_aboutpage.cc:266 rc.cpp:179
+#: about/konq_aboutpage.cc:266 rc.cpp:197
 msgid "Details"
 msgstr "Manylion"
 
@@ -2093,11 +2168,11 @@ msgstr "&Lleoliad"
 #. i18n: tag text
 #. i18n: file src/konq-simplebrowser.rc line 23
 #. i18n: tag text
-#. i18n: file src/konq-webbrowsing.rc line 22
+#. i18n: file src/konq-webbrowsing.rc line 23
 #. i18n: tag text
-#. i18n: file src/konqueror.rc line 22
+#. i18n: file src/konqueror.rc line 23
 #. i18n: tag text
-#. i18n: file src/konq-filemanagement.rc line 22
+#. i18n: file src/konq-filemanagement.rc line 23
 #: rc.cpp:8 rc.cpp:38 rc.cpp:74 rc.cpp:110
 msgid "&Edit"
 msgstr ""
@@ -2105,11 +2180,11 @@ msgstr ""
 #. i18n: tag text
 #. i18n: file src/konq-simplebrowser.rc line 31
 #. i18n: tag text
-#. i18n: file src/konq-webbrowsing.rc line 31
+#. i18n: file src/konq-webbrowsing.rc line 32
 #. i18n: tag text
-#. i18n: file src/konqueror.rc line 33
+#. i18n: file src/konqueror.rc line 34
 #. i18n: tag text
-#. i18n: file src/konq-filemanagement.rc line 33
+#. i18n: file src/konq-filemanagement.rc line 34
 #: rc.cpp:11 rc.cpp:41 rc.cpp:77 rc.cpp:113
 #, fuzzy
 msgid "&View"
@@ -2118,11 +2193,11 @@ msgstr "Cysyll&tu Golwg"
 #. i18n: tag text
 #. i18n: file src/konq-simplebrowser.rc line 39
 #. i18n: tag text
-#. i18n: file src/konq-webbrowsing.rc line 56
+#. i18n: file src/konq-webbrowsing.rc line 57
 #. i18n: tag text
-#. i18n: file src/konqueror.rc line 54
+#. i18n: file src/konqueror.rc line 55
 #. i18n: tag text
-#. i18n: file src/konq-filemanagement.rc line 54
+#. i18n: file src/konq-filemanagement.rc line 55
 #. i18n: tag text
 #. i18n: file remoteencodingplugin/kremoteencodingplugin.rc line 4
 #. i18n: tag text
@@ -2135,11 +2210,11 @@ msgstr "Offer"
 #. i18n: tag text
 #. i18n: file src/konq-simplebrowser.rc line 44
 #. i18n: tag text
-#. i18n: file src/konq-webbrowsing.rc line 62
+#. i18n: file src/konq-webbrowsing.rc line 63
 #. i18n: tag text
-#. i18n: file src/konqueror.rc line 60
+#. i18n: file src/konqueror.rc line 61
 #. i18n: tag text
-#. i18n: file src/konq-filemanagement.rc line 60
+#. i18n: file src/konq-filemanagement.rc line 61
 #: rc.cpp:17 rc.cpp:50 rc.cpp:86 rc.cpp:122
 #, fuzzy
 msgid "&Settings"
@@ -2148,11 +2223,11 @@ msgstr "Gosodiadau"
 #. i18n: tag text
 #. i18n: file src/konq-simplebrowser.rc line 57
 #. i18n: tag text
-#. i18n: file src/konq-webbrowsing.rc line 98
+#. i18n: file src/konq-webbrowsing.rc line 99
 #. i18n: tag text
-#. i18n: file src/konqueror.rc line 93
+#. i18n: file src/konqueror.rc line 94
 #. i18n: tag text
-#. i18n: file src/konq-filemanagement.rc line 96
+#. i18n: file src/konq-filemanagement.rc line 97
 #: rc.cpp:20 rc.cpp:56 rc.cpp:92 rc.cpp:128
 msgid "&Help"
 msgstr ""
@@ -2160,11 +2235,11 @@ msgstr ""
 #. i18n: tag text
 #. i18n: file src/konq-simplebrowser.rc line 63
 #. i18n: tag text
-#. i18n: file src/konq-webbrowsing.rc line 103
+#. i18n: file src/konq-webbrowsing.rc line 104
 #. i18n: tag text
-#. i18n: file src/konqueror.rc line 98
+#. i18n: file src/konqueror.rc line 99
 #. i18n: tag text
-#. i18n: file src/konq-filemanagement.rc line 101
+#. i18n: file src/konq-filemanagement.rc line 102
 #: rc.cpp:23 rc.cpp:59 rc.cpp:95 rc.cpp:131
 #, fuzzy
 msgid "Main Toolbar"
@@ -2173,11 +2248,11 @@ msgstr "Bar Lleoliad"
 #. i18n: tag text
 #. i18n: file src/konq-simplebrowser.rc line 73
 #. i18n: tag text
-#. i18n: file src/konq-webbrowsing.rc line 113
+#. i18n: file src/konq-webbrowsing.rc line 114
 #. i18n: tag text
-#. i18n: file src/konqueror.rc line 114
+#. i18n: file src/konqueror.rc line 115
 #. i18n: tag text
-#. i18n: file src/konq-filemanagement.rc line 109
+#. i18n: file src/konq-filemanagement.rc line 110
 #: rc.cpp:26 rc.cpp:62 rc.cpp:98 rc.cpp:134
 msgid "Extra Toolbar"
 msgstr "Bar Offer Ychwanegol"
@@ -2185,11 +2260,11 @@ msgstr "Bar Offer Ychwanegol"
 #. i18n: tag text
 #. i18n: file src/konq-simplebrowser.rc line 76
 #. i18n: tag text
-#. i18n: file src/konq-webbrowsing.rc line 120
+#. i18n: file src/konq-webbrowsing.rc line 121
 #. i18n: tag text
-#. i18n: file src/konqueror.rc line 121
+#. i18n: file src/konqueror.rc line 122
 #. i18n: tag text
-#. i18n: file src/konq-filemanagement.rc line 116
+#. i18n: file src/konq-filemanagement.rc line 117
 #: rc.cpp:29 rc.cpp:65 rc.cpp:101 rc.cpp:137
 msgid "Location Toolbar"
 msgstr "Bar Lleoliad"
@@ -2197,11 +2272,11 @@ msgstr "Bar Lleoliad"
 #. i18n: tag text
 #. i18n: file src/konq-simplebrowser.rc line 90
 #. i18n: tag text
-#. i18n: file src/konq-webbrowsing.rc line 124
+#. i18n: file src/konq-webbrowsing.rc line 125
 #. i18n: tag text
-#. i18n: file src/konqueror.rc line 126
+#. i18n: file src/konqueror.rc line 127
 #. i18n: tag text
-#. i18n: file src/konq-filemanagement.rc line 121
+#. i18n: file src/konq-filemanagement.rc line 122
 #: rc.cpp:32 rc.cpp:68 rc.cpp:104 rc.cpp:140
 msgid "Bookmark Toolbar"
 msgstr "Bar Tudnodau"
@@ -2218,21 +2293,21 @@ msgid "&File"
 msgstr "&Plygell"
 
 #. i18n: tag text
-#. i18n: file src/konq-webbrowsing.rc line 42
+#. i18n: file src/konq-webbrowsing.rc line 43
 #. i18n: tag text
-#. i18n: file src/konqueror.rc line 44
+#. i18n: file src/konqueror.rc line 45
 #. i18n: tag text
-#. i18n: file src/konq-filemanagement.rc line 44
+#. i18n: file src/konq-filemanagement.rc line 45
 #: rc.cpp:44 rc.cpp:80 rc.cpp:116
 msgid "&Go"
 msgstr "&Ewch"
 
 #. i18n: tag text
-#. i18n: file src/konq-webbrowsing.rc line 82
+#. i18n: file src/konq-webbrowsing.rc line 83
 #. i18n: tag text
-#. i18n: file src/konqueror.rc line 77
+#. i18n: file src/konqueror.rc line 78
 #. i18n: tag text
-#. i18n: file src/konq-filemanagement.rc line 80
+#. i18n: file src/konq-filemanagement.rc line 81
 #: rc.cpp:53 rc.cpp:89 rc.cpp:125
 msgid "&Window"
 msgstr "&Ffenestr"
@@ -2250,32 +2325,64 @@ msgid "Save &URLs in profile"
 msgstr "Cadw &URLau yn y proffil"
 
 #. i18n: tag string
-#. i18n: file sidebar/trees/history_module/history_dlg.ui line 22
+#. i18n: file src/konqsessiondlg_base.ui line 25
 #: rc.cpp:155
+#, fuzzy
+msgid "New"
+msgstr "&Plygell Newydd"
+
+#. i18n: tag string
+#. i18n: file src/konqsessiondlg_base.ui line 32
+#: rc.cpp:158
+msgid "Save current"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/konqsessiondlg_base.ui line 46
+#: rc.cpp:164
+#, fuzzy
+msgid "Delete"
+msgstr "&Dileu Proffil"
+
+#. i18n: tag string
+#. i18n: file src/konqnewsessiondlg_base.ui line 33
+#: rc.cpp:167
+msgid "Save open tabs and windows for easy retrieval"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file src/konqnewsessiondlg_base.ui line 45
+#: rc.cpp:170
+msgid "&Session name:"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file sidebar/trees/history_module/history_dlg.ui line 22
+#: rc.cpp:173
 msgid "Limits"
 msgstr "Terfynau"
 
 #. i18n: tag string
 #. i18n: file sidebar/trees/history_module/history_dlg.ui line 47
-#: rc.cpp:158
+#: rc.cpp:176
 msgid "URLs e&xpire after"
 msgstr "URLau yn &darfod ar ôl"
 
 #. i18n: tag string
 #. i18n: file sidebar/trees/history_module/history_dlg.ui line 57
-#: rc.cpp:161
+#: rc.cpp:179
 msgid "Maximum &number of URLs:"
 msgstr "&Nifer Mwyaf o URLau"
 
 #. i18n: tag string
 #. i18n: file sidebar/trees/history_module/history_dlg.ui line 76
-#: rc.cpp:164
+#: rc.cpp:182
 msgid "Custom Fonts For"
 msgstr "Addasu Ffont Am"
 
 #. i18n: tag string
 #. i18n: file sidebar/trees/history_module/history_dlg.ui line 94
-#: rc.cpp:167
+#: rc.cpp:185
 msgid "URLs newer than"
 msgstr "URLau iau na"
 
@@ -2283,25 +2390,25 @@ msgstr "URLau iau na"
 #. i18n: file sidebar/trees/history_module/history_dlg.ui line 107
 #. i18n: tag string
 #. i18n: file sidebar/trees/history_module/history_dlg.ui line 124
-#: rc.cpp:170 rc.cpp:176
+#: rc.cpp:188 rc.cpp:194
 msgid "Choose Font..."
 msgstr "Dewis Ffont..."
 
 #. i18n: tag string
 #. i18n: file sidebar/trees/history_module/history_dlg.ui line 114
-#: rc.cpp:173
+#: rc.cpp:191
 msgid "URLs older than"
 msgstr "URLau hyn na"
 
 #. i18n: tag string
 #. i18n: file sidebar/trees/history_module/history_dlg.ui line 143
-#: rc.cpp:182
+#: rc.cpp:200
 msgid "Detailed tooltips"
 msgstr "Cymorth offer manwl"
 
 #. i18n: tag string
 #. i18n: file sidebar/trees/history_module/history_dlg.ui line 146
-#: rc.cpp:185
+#: rc.cpp:203
 msgid ""
 "Shows the number of times visited and the dates of the first and last "
 "visits, in addition to the URL"
@@ -2311,9 +2418,14 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file sidebar/trees/history_module/history_dlg.ui line 161
-#: rc.cpp:188
+#: rc.cpp:206
 msgid "Clear History"
 msgstr "Gwaredu Hanes"
+
+#, fuzzy
+#~| msgid "&Close Tab"
+#~ msgid "Closed Tabs"
+#~ msgstr "&Cau Tab"
 
 #~ msgid "Unknown"
 #~ msgstr "Anhysbys"
@@ -2406,10 +2518,6 @@ msgstr "Gwaredu Hanes"
 #~ msgstr "Dangos Botwm Ffurfweddu"
 
 #, fuzzy
-#~ msgid "&Management"
-#~ msgstr "Newid &Sylwad"
-
-#, fuzzy
 #~ msgid "Update Failed"
 #~ msgstr "Diweddaru Hoffeicon"
 
@@ -2421,10 +2529,6 @@ msgstr "Gwaredu Hanes"
 #~| msgid "Manual"
 #~ msgid "Menu"
 #~ msgstr "Â llaw"
-
-#, fuzzy
-#~ msgid "New..."
-#~ msgstr "&Plygell Newydd"
 
 #, fuzzy
 #~ msgid "Move Up"
@@ -2474,10 +2578,6 @@ msgstr "Gwaredu Hanes"
 #, fuzzy
 #~ msgid "&Move to trash"
 #~ msgstr "&Symud i'r Sbwriel"
-
-#, fuzzy
-#~ msgid "D&elete"
-#~ msgstr "&Dileu Proffil"
 
 #~ msgid "Sound Files"
 #~ msgstr "Ffeiliau Sain"
@@ -2601,10 +2701,6 @@ msgstr "Gwaredu Hanes"
 #, fuzzy
 #~ msgid "&New..."
 #~ msgstr "&Plygell Newydd"
-
-#, fuzzy
-#~ msgid "Chan&ge..."
-#~ msgstr "Ne&wid Eicon..."
 
 #, fuzzy
 #~ msgid "De&lete"
@@ -2908,9 +3004,6 @@ msgstr "Gwaredu Hanes"
 
 #~ msgid "Created"
 #~ msgstr "Crëwyd"
-
-#~ msgid "Permissions"
-#~ msgstr "Caniatadau"
 
 #~ msgid "Owner"
 #~ msgstr "Perchennog"
@@ -3285,9 +3378,6 @@ msgstr "Gwaredu Hanes"
 #~ msgid "%1 Change"
 #~ msgstr "%1 Newid"
 
-#~ msgid "Renaming"
-#~ msgstr "Ailenwi"
-
 #~ msgid "Set as Bookmark Toolbar"
 #~ msgstr "Gosod fel Bar Offer Tudnod"
 
@@ -3299,9 +3389,6 @@ msgstr "Gwaredu Hanes"
 
 #~ msgid "Hide"
 #~ msgstr "Cuddio"
-
-#~ msgid "Copy Items"
-#~ msgstr "Copïo Eitemau"
 
 #~ msgid "Move Items"
 #~ msgstr "Symud Eitemau"
@@ -3330,9 +3417,6 @@ msgstr "Gwaredu Hanes"
 
 #~ msgid "%1 Import"
 #~ msgstr "%1 Mewnforiad"
-
-#~ msgid "As New Folder"
-#~ msgstr "Fel Plygell Newydd"
 
 #~ msgid "*.xbel|Galeon Bookmark Files (*.xbel)"
 #~ msgstr "*.xbel|Ffeiliau Tudnod Galeon (*.xbel)"
