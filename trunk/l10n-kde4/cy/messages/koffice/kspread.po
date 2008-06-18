@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kspread\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-06-14 19:38+0200\n"
+"POT-Creation-Date: 2008-06-18 10:53+0200\n"
 "PO-Revision-Date: 2004-09-09 12:35+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -36,20 +36,16 @@ msgstr "S&iart"
 msgid "Picture"
 msgstr "&Llun"
 
-#: plugins/scripting/ScriptingWriter.h:242
+#: plugins/scripting/ScriptingWriter.h:243
 #, fuzzy
 #| msgid "Insert Values"
 msgid "Set Values"
 msgstr "Mewnosod Gwerthoedd"
 
-#: Cell.cpp:712 Cell.cpp:786
+#: Cell.cpp:711 Cell.cpp:786
 #, kde-format
-msgid ""
-"Error in cell %1\n"
-"\n"
+msgid "Parsing of formula in cell <i>%1</i> failed."
 msgstr ""
-"Gwall yng nghell %1\n"
-"\n"
 
 #: Currency.cpp:49 Currency.cpp:87
 msgid "Australia"
@@ -2493,23 +2489,23 @@ msgstr "Doler Simbabwe"
 msgid "ZWD"
 msgstr "ZWD"
 
-#: Doc.cpp:759
+#: Doc.cpp:537
 msgid "Invalid OASIS OpenDocument file. No office:body tag found."
 msgstr "Dogfen OASIS OpenDocument annilys.  Ni chanfuwyd y tag office:body."
 
-#: Doc.cpp:774
+#: Doc.cpp:552
 msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
 msgstr ""
 "Dogfen OASIS OpenDocument annilys.  Ni chanfuwyd tag tu mewn i office:body."
 
-#: Doc.cpp:776
+#: Doc.cpp:554
 #, kde-format
 msgid ""
 "This document is not a spreadsheet, but %1. Please try opening it with the "
 "appropriate application."
 msgstr ""
 
-#: Doc.cpp:868
+#: Doc.cpp:599
 #, kde-format
 msgid ""
 "Invalid document. Expected mimetype application/x-kspread or application/vnd."
@@ -2518,7 +2514,7 @@ msgstr ""
 "Dogfen annilys. Disgwyliwyd math mime application/x-kspread neu application/"
 "vnd. kde.kspread, cafwyd %1"
 
-#: Doc.cpp:878
+#: Doc.cpp:609
 #, kde-format
 msgid ""
 "This document was created with a newer version of KSpread (syntax version: %"
@@ -2529,15 +2525,15 @@ msgstr ""
 "1)\n"
 "Gellir colli gwybodaeth wrth ei hagor â'r fersiwn yma o KSpread."
 
-#: Doc.cpp:880
+#: Doc.cpp:611
 msgid "File Format Mismatch"
 msgstr "Camgydweddiad Fformat Ffeil"
 
-#: Doc.cpp:937
+#: Doc.cpp:668
 msgid "Styles cannot be loaded."
 msgstr "Ni ellir llwytho arddulliau."
 
-#: Doc.cpp:947
+#: Doc.cpp:678
 msgid "Invalid document. No map tag."
 msgstr "Dogfen annilys. Dim tag fap."
 
@@ -2557,7 +2553,7 @@ msgstr "Dogfen annilys. Dim tag fap."
 #. i18n: file functions/text.xml line 596
 #: Functions.cpp:377 rc.cpp:171 rc.cpp:636 xml_doc.cpp:6532 xml_doc.cpp:6904
 #: xml_doc.cpp:7006 xml_doc.cpp:7018 xml_doc.cpp:7078
-#: dialogs/LayoutDialog.cpp:969 dialogs/ValidityDialog.cpp:81
+#: dialogs/LayoutDialog.cpp:962 dialogs/ValidityDialog.cpp:82
 msgid "Text"
 msgstr "Testun"
 
@@ -2607,7 +2603,7 @@ msgstr "<p><b>Math dychwelyd: </b>"
 msgid "Syntax"
 msgstr ""
 
-#: Functions.cpp:530 dialogs/FormulaDialog.cpp:184 dialogs/SeriesDialog.cpp:97
+#: Functions.cpp:530 dialogs/FormulaDialog.cpp:184 dialogs/SeriesDialog.cpp:96
 msgid "Parameters"
 msgstr "Paramedrau"
 
@@ -2615,7 +2611,7 @@ msgstr "Paramedrau"
 msgid "Comment:"
 msgstr "Sylwad:"
 
-#: Functions.cpp:536 dialogs/DatabaseDialog.cpp:82
+#: Functions.cpp:536 dialogs/DatabaseDialog.cpp:83
 msgid "Type:"
 msgstr "Math:"
 
@@ -2642,12 +2638,12 @@ msgstr "Ffeil i agor"
 msgid "Execute the scriptfile after startup."
 msgstr ""
 
-#: Map.cpp:126
+#: Map.cpp:294
 #, kde-format
 msgid "Sheet%1"
 msgstr "Llen %1"
 
-#: Map.cpp:411
+#: Map.cpp:655
 #, fuzzy
 msgid "This document has no sheets (tables)."
 msgstr "Nid oes tabl gan y ddogfen hon."
@@ -2672,26 +2668,26 @@ msgstr "Gwarchod Dalen"
 msgid "Keep Ratio"
 msgstr "Adbryniad"
 
-#: PropertyEditor.cpp:365 dialogs/LayoutDialog.cpp:783
+#: PropertyEditor.cpp:365 dialogs/LayoutDialog.cpp:789
 msgid "&General"
 msgstr "&Cyffredin"
 
-#: Sheet.cpp:1019
+#: Sheet.cpp:1024
 msgid "Dependency"
 msgstr "Dibyniaeth"
 
-#: Sheet.cpp:1331
+#: Sheet.cpp:1336
 #, fuzzy
 msgid "Set Word Spelling"
 msgstr "Sillafu"
 
-#: Sheet.cpp:1495
+#: Sheet.cpp:1500
 #, fuzzy
 #| msgid "Count"
 msgid "Cut"
 msgstr "Cyfrif"
 
-#: Sheet.cpp:3929
+#: Sheet.cpp:3932
 #, fuzzy
 msgid "Invalid document. Sheet name is empty."
 msgstr "Dogfen annilys.  Mae enw'r tabl yn wag."
@@ -2745,26 +2741,26 @@ msgstr "org"
 msgid "sheet"
 msgstr "dalen"
 
-#: StyleManager.cpp:247
+#: StyleManager.cpp:250
 msgid "Header"
 msgstr "Pennawd"
 
-#: StyleManager.cpp:256
+#: StyleManager.cpp:259
 msgid "Header1"
 msgstr "Pennawd1"
 
-#: StyleManager.cpp:382 dialogs/LayoutDialog.cpp:196
-#: dialogs/LayoutDialog.cpp:197 dialogs/LayoutDialog.cpp:203
-#: dialogs/LayoutDialog.cpp:276 dialogs/LayoutDialog.cpp:295
+#: StyleManager.cpp:385 dialogs/LayoutDialog.cpp:199
+#: dialogs/LayoutDialog.cpp:200 dialogs/LayoutDialog.cpp:206
+#: dialogs/LayoutDialog.cpp:279 dialogs/LayoutDialog.cpp:298
 #: dialogs/StyleManagerDialog.cpp:102 dialogs/StyleManagerDialog.cpp:147
 #: dialogs/StyleManagerDialog.cpp:185 dialogs/StyleManagerDialog.cpp:211
 #: dialogs/StyleManagerDialog.cpp:254 dialogs/StyleManagerDialog.cpp:279
-#: dialogs/StyleManagerDialog.cpp:300 ui/CellToolBase.cpp:175
+#: dialogs/StyleManagerDialog.cpp:300 ui/CellToolBase.cpp:164
 #, fuzzy
 msgid "Default"
 msgstr "Canlyniad"
 
-#: Validity.cpp:913
+#: Validity.cpp:916
 #, kde-format
 msgid "Validation for cell <i>%1</i> failed"
 msgstr ""
@@ -2820,12 +2816,12 @@ msgctxt "Error: wrong (number of) function argument(s)"
 msgid "#VALUE!"
 msgstr ""
 
-#: ValueConverter.cpp:285
+#: ValueConverter.cpp:281
 #, fuzzy
 msgid "True"
 msgstr "Maw"
 
-#: ValueConverter.cpp:286
+#: ValueConverter.cpp:282
 #, fuzzy
 msgid "False"
 msgstr "Bôn"
@@ -2842,7 +2838,7 @@ msgstr "YB"
 msgid "h"
 msgstr "h"
 
-#: ValueFormatter.cpp:503 dialogs/PreferenceDialog.cpp:256
+#: ValueFormatter.cpp:503 dialogs/PreferenceDialog.cpp:257
 msgid "min"
 msgstr "mun"
 
@@ -2850,21 +2846,21 @@ msgstr "mun"
 msgid "s"
 msgstr "s"
 
-#: ValueParser.cpp:108
+#: ValueParser.cpp:103
 #, fuzzy
 msgid "true"
 msgstr "Os yn wir"
 
-#: ValueParser.cpp:114
+#: ValueParser.cpp:109
 #, fuzzy
 msgid "false"
 msgstr "Os yn ffug"
 
-#: ValueParser.cpp:393 ValueParser.cpp:484
+#: ValueParser.cpp:388 ValueParser.cpp:479
 msgid "pm"
 msgstr ""
 
-#: ValueParser.cpp:394 ValueParser.cpp:493
+#: ValueParser.cpp:389 ValueParser.cpp:488
 #, fuzzy
 msgid "am"
 msgstr "Gwám"
@@ -2914,7 +2910,7 @@ msgstr "Blwyddyn"
 
 #. i18n: tag text
 #. i18n: file kspread.rc line 38
-#: rc.cpp:100 commands/DeleteCommand.cpp:33 commands/Undo.cpp:1382
+#: rc.cpp:100 commands/DeleteCommand.cpp:33 commands/Undo.cpp:1376
 #, fuzzy
 msgid "Delete"
 msgstr "Dileu Rhesi"
@@ -2951,8 +2947,8 @@ msgstr "&Fformat"
 #. i18n: file kspread.rc line 98
 #. i18n: tag string
 #. i18n: file dialogs/PositionWidget.ui line 206
-#: rc.cpp:115 rc.cpp:428 commands/MergeCommand.cpp:156 commands/Undo.cpp:2064
-#: ui/CellToolBase.cpp:417
+#: rc.cpp:115 rc.cpp:428 commands/MergeCommand.cpp:155 commands/Undo.cpp:2050
+#: ui/CellToolBase.cpp:406
 msgid "Merge Cells"
 msgstr "Uno Celloedd"
 
@@ -3029,7 +3025,7 @@ msgstr "Llywio"
 #. i18n: tag Comment
 #. i18n: file functions/conversion.xml line 251
 #: rc.cpp:148 rc.cpp:162 rc.cpp:639 xml_doc.cpp:297
-#: dialogs/LayoutDialog.cpp:929 ui/CellToolBase.cpp:169
+#: dialogs/LayoutDialog.cpp:922 ui/CellToolBase.cpp:158
 msgid "Format"
 msgstr "Fformat"
 
@@ -3053,8 +3049,8 @@ msgstr "kyfieithu@dotmon.com"
 #. i18n: file dialogs/DataFormatWidget.ui line 40
 #. i18n: tag string
 #. i18n: file dialogs/FontWidget.ui line 183
-#: rc.cpp:165 rc.cpp:274 dialogs/LayoutDialog.cpp:979
-#: dialogs/LayoutDialog.cpp:2642 dialogs/LayoutDialog.cpp:3507
+#: rc.cpp:165 rc.cpp:274 dialogs/LayoutDialog.cpp:972
+#: dialogs/LayoutDialog.cpp:2635 dialogs/LayoutDialog.cpp:3500
 msgid "Preview"
 msgstr "Rhagolwg"
 
@@ -3067,14 +3063,14 @@ msgstr "Testun"
 
 #. i18n: tag string
 #. i18n: file dialogs/DataFormatWidget.ui line 66
-#: rc.cpp:174 ui/CellToolBase_p.cpp:818
+#: rc.cpp:174 ui/CellToolBase_p.cpp:820
 #, fuzzy
 msgid "Time Format"
 msgstr "Fformat amser"
 
 #. i18n: tag string
 #. i18n: file dialogs/DataFormatWidget.ui line 73
-#: rc.cpp:177 ui/CellToolBase_p.cpp:823
+#: rc.cpp:177 ui/CellToolBase_p.cpp:825
 #, fuzzy
 msgid "Date Format"
 msgstr "Fformat dyddiad"
@@ -3085,7 +3081,7 @@ msgstr "Fformat dyddiad"
 #. i18n: file functions/financial.xml line 384
 #. i18n: tag Comment
 #. i18n: file functions/financial.xml line 404
-#: rc.cpp:180 xml_doc.cpp:2294 xml_doc.cpp:2309 dialogs/LayoutDialog.cpp:957
+#: rc.cpp:180 xml_doc.cpp:2294 xml_doc.cpp:2309 dialogs/LayoutDialog.cpp:950
 msgid "Fraction"
 msgstr "Ffracsiwn"
 
@@ -3099,19 +3095,19 @@ msgstr "Arian"
 
 #. i18n: tag string
 #. i18n: file dialogs/DataFormatWidget.ui line 94
-#: rc.cpp:186 dialogs/LayoutDialog.cpp:949 ui/CellToolBase.cpp:375
+#: rc.cpp:186 dialogs/LayoutDialog.cpp:942 ui/CellToolBase.cpp:364
 msgid "Money"
 msgstr "Arian"
 
 #. i18n: tag string
 #. i18n: file dialogs/DataFormatWidget.ui line 101
-#: rc.cpp:189 dialogs/LayoutDialog.cpp:945 ui/CellToolBase.cpp:369
+#: rc.cpp:189 dialogs/LayoutDialog.cpp:938 ui/CellToolBase.cpp:358
 msgid "Percent"
 msgstr "Canran"
 
 #. i18n: tag string
 #. i18n: file dialogs/DataFormatWidget.ui line 108
-#: rc.cpp:192 dialogs/LayoutDialog.cpp:937
+#: rc.cpp:192 dialogs/LayoutDialog.cpp:930
 msgid "Generic"
 msgstr "Generig"
 
@@ -3169,37 +3165,37 @@ msgstr "Generig"
 #: xml_doc.cpp:5367 xml_doc.cpp:5401 xml_doc.cpp:5431 xml_doc.cpp:5620
 #: xml_doc.cpp:5743 xml_doc.cpp:5809 xml_doc.cpp:5866 xml_doc.cpp:6190
 #: xml_doc.cpp:6412 xml_doc.cpp:6520 xml_doc.cpp:6535 xml_doc.cpp:6553
-#: dialogs/LayoutDialog.cpp:941 dialogs/ValidityDialog.cpp:79
+#: dialogs/LayoutDialog.cpp:934 dialogs/ValidityDialog.cpp:80
 msgid "Number"
 msgstr "Rhif"
 
 #. i18n: tag string
 #. i18n: file dialogs/DataFormatWidget.ui line 151
-#: rc.cpp:198 dialogs/LayoutDialog.cpp:1054
+#: rc.cpp:198 dialogs/LayoutDialog.cpp:1047
 msgid "Currency:"
 msgstr "Arian:"
 
 #. i18n: tag string
 #. i18n: file dialogs/DataFormatWidget.ui line 158
-#: rc.cpp:201 dialogs/LayoutDialog.cpp:1050
+#: rc.cpp:201 dialogs/LayoutDialog.cpp:1043
 msgid "Format:"
 msgstr "Fformat:"
 
 #. i18n: tag string
 #. i18n: file dialogs/DataFormatWidget.ui line 165
-#: rc.cpp:204 dialogs/LayoutDialog.cpp:1027
+#: rc.cpp:204 dialogs/LayoutDialog.cpp:1020
 msgid "Postfix:"
 msgstr "Ôlddodiad:"
 
 #. i18n: tag string
 #. i18n: file dialogs/DataFormatWidget.ui line 202
-#: rc.cpp:207 dialogs/LayoutDialog.cpp:1037
+#: rc.cpp:207 dialogs/LayoutDialog.cpp:1030
 msgid "Precision:"
 msgstr "Trachywiredd:"
 
 #. i18n: tag string
 #. i18n: file dialogs/DataFormatWidget.ui line 209
-#: rc.cpp:210 dialogs/LayoutDialog.cpp:1033
+#: rc.cpp:210 dialogs/LayoutDialog.cpp:1026
 msgid "Prefix:"
 msgstr "Rhagddodiad:"
 
@@ -3238,14 +3234,14 @@ msgstr "Amrywio (Dim Newid)"
 
 #. i18n: tag string
 #. i18n: file dialogs/FontWidget.ui line 52
-#: rc.cpp:223 dialogs/LayoutDialog.cpp:1942
+#: rc.cpp:223 dialogs/LayoutDialog.cpp:1935
 #, fuzzy
 msgid "Roman"
 msgstr "Romania"
 
 #. i18n: tag string
 #. i18n: file dialogs/FontWidget.ui line 57
-#: rc.cpp:226 dialogs/LayoutDialog.cpp:1944 ui/CellToolBase.cpp:203
+#: rc.cpp:226 dialogs/LayoutDialog.cpp:1937 ui/CellToolBase.cpp:192
 #, fuzzy
 msgid "Italic"
 msgstr "Yr Eidal"
@@ -3263,19 +3259,19 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file dialogs/FontWidget.ui line 77
-#: rc.cpp:235 dialogs/LayoutDialog.cpp:1931
+#: rc.cpp:235 dialogs/LayoutDialog.cpp:1924
 msgid "Normal"
 msgstr "Arferol"
 
 #. i18n: tag string
 #. i18n: file dialogs/FontWidget.ui line 82
-#: rc.cpp:238 dialogs/LayoutDialog.cpp:1933 ui/CellToolBase.cpp:198
+#: rc.cpp:238 dialogs/LayoutDialog.cpp:1926 ui/CellToolBase.cpp:187
 msgid "Bold"
 msgstr "Trwm"
 
 #. i18n: tag string
 #. i18n: file dialogs/FontWidget.ui line 90
-#: rc.cpp:241 dialogs/LayoutDialog.cpp:2606 dialogs/LayoutDialog.cpp:3470
+#: rc.cpp:241 dialogs/LayoutDialog.cpp:2599 dialogs/LayoutDialog.cpp:3463
 msgid "Color:"
 msgstr "Lliw:"
 
@@ -3287,7 +3283,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file dialogs/FontWidget.ui line 100
-#: rc.cpp:247 ui/CellToolBase.cpp:208
+#: rc.cpp:247 ui/CellToolBase.cpp:197
 msgid "Underline"
 msgstr "Tanlinellu"
 
@@ -3515,7 +3511,7 @@ msgstr "Terfyn is"
 #. i18n: file dialogs/PageLayoutSheetPage.ui line 314
 #. i18n: tag string
 #. i18n: file dialogs/PositionWidget.ui line 47
-#: rc.cpp:349 rc.cpp:362 dialogs/SeriesDialog.cpp:73
+#: rc.cpp:349 rc.cpp:362 dialogs/SeriesDialog.cpp:72
 #, fuzzy
 msgid "Horizontal"
 msgstr "Forint"
@@ -3524,7 +3520,7 @@ msgstr "Forint"
 #. i18n: file dialogs/PageLayoutSheetPage.ui line 334
 #. i18n: tag string
 #. i18n: file dialogs/PositionWidget.ui line 90
-#: rc.cpp:352 rc.cpp:383 dialogs/SeriesDialog.cpp:71 ui/CellToolBase.cpp:345
+#: rc.cpp:352 rc.cpp:383 dialogs/SeriesDialog.cpp:70 ui/CellToolBase.cpp:334
 #, fuzzy
 msgid "Vertical"
 msgstr "Metical"
@@ -3550,23 +3546,23 @@ msgstr "Safonol"
 
 #. i18n: tag string
 #. i18n: file dialogs/PositionWidget.ui line 60
-#: rc.cpp:368 dialogs/PreferenceDialog.cpp:466 ui/CellToolBase.cpp:243
-#: ui/CellToolBase.cpp:290
+#: rc.cpp:368 dialogs/PreferenceDialog.cpp:465 ui/CellToolBase.cpp:232
+#: ui/CellToolBase.cpp:279
 #, fuzzy
 msgid "Left"
 msgstr "&Chwith"
 
 #. i18n: tag string
 #. i18n: file dialogs/PositionWidget.ui line 67
-#: rc.cpp:371 ui/CellToolBase.cpp:250
+#: rc.cpp:371 ui/CellToolBase.cpp:239
 #, fuzzy
 msgid "Center"
 msgstr "Alinio i'r Canol"
 
 #. i18n: tag string
 #. i18n: file dialogs/PositionWidget.ui line 74
-#: rc.cpp:374 dialogs/PreferenceDialog.cpp:465 ui/CellToolBase.cpp:257
-#: ui/CellToolBase.cpp:296
+#: rc.cpp:374 dialogs/PreferenceDialog.cpp:464 ui/CellToolBase.cpp:246
+#: ui/CellToolBase.cpp:285
 #, fuzzy
 msgid "Right"
 msgstr "&De"
@@ -3585,19 +3581,19 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file dialogs/PositionWidget.ui line 96
-#: rc.cpp:386 ui/CellToolBase.cpp:267 ui/CellToolBase.cpp:302
+#: rc.cpp:386 ui/CellToolBase.cpp:256 ui/CellToolBase.cpp:291
 msgid "Top"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file dialogs/PositionWidget.ui line 103
-#: rc.cpp:389 ui/CellToolBase.cpp:274
+#: rc.cpp:389 ui/CellToolBase.cpp:263
 msgid "Middle"
 msgstr "Canol"
 
 #. i18n: tag string
 #. i18n: file dialogs/PositionWidget.ui line 110
-#: rc.cpp:392 ui/CellToolBase.cpp:281 ui/CellToolBase.cpp:308
+#: rc.cpp:392 ui/CellToolBase.cpp:270 ui/CellToolBase.cpp:297
 #, fuzzy
 msgid "Bottom"
 msgstr "Alinio i'r Gwaelod"
@@ -3712,7 +3708,7 @@ msgstr "Uchder rhagosodol (%1 %2)"
 
 #. i18n: tag string
 #. i18n: file dialogs/PositionWidget.ui line 259
-#: rc.cpp:447 dialogs/Resize2Dialog.cpp:74
+#: rc.cpp:447 dialogs/Resize2Dialog.cpp:75
 msgid "Height:"
 msgstr "Uchder:"
 
@@ -3740,7 +3736,7 @@ msgstr "Lled rhagosodol (%1 %2)"
 
 #. i18n: tag string
 #. i18n: file dialogs/PositionWidget.ui line 322
-#: rc.cpp:460 dialogs/Resize2Dialog.cpp:133
+#: rc.cpp:460 dialogs/Resize2Dialog.cpp:134
 msgid "Width:"
 msgstr "Lled:"
 
@@ -4157,13 +4153,13 @@ msgstr "Popeth"
 
 #. i18n: tag string
 #. i18n: file dialogs/SpecialPasteWidget.ui line 77
-#: rc.cpp:642 ui/CellToolBase.cpp:553
+#: rc.cpp:642 ui/CellToolBase.cpp:542
 msgid "Comment"
 msgstr "Sylwad"
 
 #. i18n: tag string
 #. i18n: file dialogs/SpecialPasteWidget.ui line 84
-#: rc.cpp:645 dialogs/DatabaseDialog.cpp:345 dialogs/SubtotalDialog.cpp:108
+#: rc.cpp:645 dialogs/DatabaseDialog.cpp:346 dialogs/SubtotalDialog.cpp:107
 msgid "Result"
 msgstr "Canlyniad"
 
@@ -4238,14 +4234,14 @@ msgstr "Gyda bob newid yn:"
 
 #. i18n: tag string
 #. i18n: file dialogs/SubtotalWidget.ui line 81
-#: rc.cpp:684 dialogs/DatabaseDialog.cpp:203 ui/CellToolBase.cpp:444
-#: ui/CellToolBase.cpp:450
+#: rc.cpp:684 dialogs/DatabaseDialog.cpp:204 ui/CellToolBase.cpp:433
+#: ui/CellToolBase.cpp:439
 msgid "Columns"
 msgstr "Colofnau"
 
 #. i18n: tag string
 #. i18n: file dialogs/SubtotalWidget.ui line 90
-#: rc.cpp:687 dialogs/PaperLayoutDialog.cpp:78 dialogs/SortDialog.cpp:242
+#: rc.cpp:687 dialogs/PaperLayoutDialog.cpp:78 dialogs/SortDialog.cpp:241
 #, fuzzy
 msgid "Options"
 msgstr "Gweithrediad"
@@ -5049,7 +5045,7 @@ msgstr "Mae ARABIC(\"XCIX\") yn dychwelyd 99"
 #. i18n: tag GroupName
 #. i18n: file functions/database.xml line 5
 #: xml_doc.cpp:327 chart/ChartDatabaseSelectorFactory.cpp:40
-#: dialogs/DatabaseDialog.cpp:137 ui/CellToolBase.cpp:656
+#: dialogs/DatabaseDialog.cpp:138 ui/CellToolBase.cpp:645
 msgid "Database"
 msgstr "Cronfa Ddata"
 
@@ -5474,7 +5470,7 @@ msgstr "Dyddiad ac Amser"
 #. i18n: file functions/datetime.xml line 716
 #: xml_doc.cpp:561 xml_doc.cpp:606 xml_doc.cpp:618 xml_doc.cpp:636
 #: xml_doc.cpp:657 xml_doc.cpp:672 xml_doc.cpp:687 xml_doc.cpp:1056
-#: xml_doc.cpp:1068 xml_doc.cpp:1173 dialogs/ValidityDialog.cpp:82
+#: xml_doc.cpp:1068 xml_doc.cpp:1173 dialogs/ValidityDialog.cpp:83
 msgid "Date"
 msgstr "Dyddiad"
 
@@ -5573,7 +5569,7 @@ msgstr "Mae DAYS360(\"2/22/2002\", \"4/21/2002\", FALSE) yn dychwelyd 59"
 #. i18n: file functions/datetime.xml line 475
 #: xml_doc.cpp:594 xml_doc.cpp:702 xml_doc.cpp:717 xml_doc.cpp:732
 #: xml_doc.cpp:888 xml_doc.cpp:951 xml_doc.cpp:963
-#: dialogs/ValidityDialog.cpp:83
+#: dialogs/ValidityDialog.cpp:84
 msgid "Time"
 msgstr "Amser"
 
@@ -10622,18 +10618,18 @@ msgstr "Mae ZERO_COUPON(1000;.1;20) yn dychwelyd 148.64"
 
 #. i18n: tag GroupName
 #. i18n: file functions/information.xml line 5
-#: xml_doc.cpp:3190 dialogs/ValidityDialog.cpp:177
+#: xml_doc.cpp:3190 dialogs/ValidityDialog.cpp:178
 #, fuzzy
 msgid "Information"
 msgstr "Math gwybodaeth"
 
 #. i18n: tag Comment
 #. i18n: file functions/information.xml line 11
-#: xml_doc.cpp:3193 dialogs/ValidityDialog.cpp:563
-#: dialogs/ValidityDialog.cpp:570 dialogs/ValidityDialog.cpp:581
-#: dialogs/ValidityDialog.cpp:588 dialogs/ValidityDialog.cpp:597
-#: dialogs/ValidityDialog.cpp:603 dialogs/ValidityDialog.cpp:612
-#: dialogs/ValidityDialog.cpp:618
+#: xml_doc.cpp:3193 dialogs/ValidityDialog.cpp:566
+#: dialogs/ValidityDialog.cpp:573 dialogs/ValidityDialog.cpp:584
+#: dialogs/ValidityDialog.cpp:591 dialogs/ValidityDialog.cpp:600
+#: dialogs/ValidityDialog.cpp:606 dialogs/ValidityDialog.cpp:615
+#: dialogs/ValidityDialog.cpp:621
 #, fuzzy
 msgid "Error"
 msgstr "Euro"
@@ -14118,7 +14114,7 @@ msgstr "&Rhes"
 #. i18n: file functions/reference.xml line 121
 #. i18n: tag Comment
 #. i18n: file functions/reference.xml line 243
-#: xml_doc.cpp:4896 xml_doc.cpp:5007 dialogs/DatabaseDialog.cpp:190
+#: xml_doc.cpp:4896 xml_doc.cpp:5007 dialogs/DatabaseDialog.cpp:191
 msgid "Column"
 msgstr "Colofn"
 
@@ -18824,11 +18820,11 @@ msgstr "PI()"
 msgid "PI() equals 3.141592654..."
 msgstr "Mae PI() yn hafal i 3.141592654..."
 
-#: commands/AbstractRegionCommand.cpp:145
+#: commands/AbstractRegionCommand.cpp:147
 msgid "Processing is not possible, because some cells are protected."
 msgstr ""
 
-#: commands/AbstractRegionCommand.cpp:154
+#: commands/AbstractRegionCommand.cpp:156
 msgid ""
 "Processing is not possible, because some cells are locked as elements of a "
 "matrix."
@@ -18840,62 +18836,62 @@ msgid "Apply Filter"
 msgstr "Gweithredu Arddull"
 
 #: commands/AutoFillCommand.cpp:126 dialogs/ListDialog.cpp:124
-#: dialogs/SortDialog.cpp:291
+#: dialogs/SortDialog.cpp:290
 msgid "January"
 msgstr "Ionawr"
 
 #: commands/AutoFillCommand.cpp:127 dialogs/ListDialog.cpp:125
-#: dialogs/SortDialog.cpp:291
+#: dialogs/SortDialog.cpp:290
 msgid "February"
 msgstr "Chwefror"
 
 #: commands/AutoFillCommand.cpp:128 dialogs/ListDialog.cpp:126
-#: dialogs/SortDialog.cpp:291
+#: dialogs/SortDialog.cpp:290
 msgid "March"
 msgstr "Mawrth"
 
 #: commands/AutoFillCommand.cpp:129 dialogs/ListDialog.cpp:127
-#: dialogs/SortDialog.cpp:292
+#: dialogs/SortDialog.cpp:291
 msgid "April"
 msgstr "Ebrill"
 
 #: commands/AutoFillCommand.cpp:130 dialogs/ListDialog.cpp:128
-#: dialogs/ListDialog.cpp:144 dialogs/SortDialog.cpp:292
+#: dialogs/ListDialog.cpp:144 dialogs/SortDialog.cpp:291
 msgid "May"
 msgstr "Mai"
 
 #: commands/AutoFillCommand.cpp:131 dialogs/ListDialog.cpp:129
-#: dialogs/SortDialog.cpp:292
+#: dialogs/SortDialog.cpp:291
 msgid "June"
 msgstr "Mehefin"
 
 #: commands/AutoFillCommand.cpp:132 dialogs/ListDialog.cpp:130
-#: dialogs/SortDialog.cpp:293
+#: dialogs/SortDialog.cpp:292
 msgid "July"
 msgstr "Gorffennaf"
 
 #: commands/AutoFillCommand.cpp:133 dialogs/ListDialog.cpp:131
-#: dialogs/SortDialog.cpp:293
+#: dialogs/SortDialog.cpp:292
 msgid "August"
 msgstr "Awst"
 
 #: commands/AutoFillCommand.cpp:134 dialogs/ListDialog.cpp:132
-#: dialogs/SortDialog.cpp:293
+#: dialogs/SortDialog.cpp:292
 msgid "September"
 msgstr "Medi"
 
 #: commands/AutoFillCommand.cpp:135 dialogs/ListDialog.cpp:133
-#: dialogs/SortDialog.cpp:294
+#: dialogs/SortDialog.cpp:293
 msgid "October"
 msgstr "Hydref"
 
 #: commands/AutoFillCommand.cpp:136 dialogs/ListDialog.cpp:134
-#: dialogs/SortDialog.cpp:294
+#: dialogs/SortDialog.cpp:293
 msgid "November"
 msgstr "Tachwedd"
 
 #: commands/AutoFillCommand.cpp:137 dialogs/ListDialog.cpp:135
-#: dialogs/SortDialog.cpp:295
+#: dialogs/SortDialog.cpp:294
 msgid "December"
 msgstr "Rhagfyr"
 
@@ -18949,41 +18945,41 @@ msgid "Dec"
 msgstr "Rhag"
 
 #: commands/AutoFillCommand.cpp:160 dialogs/ListDialog.cpp:154
-#: dialogs/SortDialog.cpp:297
+#: dialogs/SortDialog.cpp:296
 #, fuzzy
 msgid "Monday"
 msgstr "Arian"
 
 #: commands/AutoFillCommand.cpp:161 dialogs/ListDialog.cpp:155
-#: dialogs/SortDialog.cpp:297
+#: dialogs/SortDialog.cpp:296
 #, fuzzy
 msgid "Tuesday"
 msgstr "Twrci"
 
 #: commands/AutoFillCommand.cpp:162 dialogs/ListDialog.cpp:156
-#: dialogs/SortDialog.cpp:297
+#: dialogs/SortDialog.cpp:296
 msgid "Wednesday"
 msgstr ""
 
 #: commands/AutoFillCommand.cpp:163 dialogs/ListDialog.cpp:157
-#: dialogs/SortDialog.cpp:298
+#: dialogs/SortDialog.cpp:297
 msgid "Thursday"
 msgstr ""
 
 #: commands/AutoFillCommand.cpp:164 dialogs/ListDialog.cpp:158
-#: dialogs/SortDialog.cpp:298
+#: dialogs/SortDialog.cpp:297
 #, fuzzy
 msgid "Friday"
 msgstr "Gwe"
 
 #: commands/AutoFillCommand.cpp:165 dialogs/ListDialog.cpp:159
-#: dialogs/SortDialog.cpp:298
+#: dialogs/SortDialog.cpp:297
 #, fuzzy
 msgid "Saturday"
 msgstr "Aeddfedrwydd"
 
 #: commands/AutoFillCommand.cpp:166 dialogs/ListDialog.cpp:160
-#: dialogs/SortDialog.cpp:299
+#: dialogs/SortDialog.cpp:298
 #, fuzzy
 msgid "Sunday"
 msgstr "Swdan"
@@ -19016,7 +19012,7 @@ msgstr "Sad"
 msgid "Sun"
 msgstr "Sul"
 
-#: commands/AutoFillCommand.cpp:778 commands/Undo.cpp:2117
+#: commands/AutoFillCommand.cpp:778 commands/Undo.cpp:2103
 msgid "Autofill"
 msgstr "Hunan-lenwi"
 
@@ -19032,18 +19028,18 @@ msgstr "Hunan-lenwi"
 msgid "Auto-Format"
 msgstr "HunanFformatio..."
 
-#: commands/BorderColorCommand.cpp:40
+#: commands/BorderColorCommand.cpp:39
 #, fuzzy
 msgid "Change Border Color"
 msgstr "Newid Lliw'r Ffin"
 
-#: commands/CommentCommand.cpp:64 ui/CellToolBase.cpp:554
-#: ui/CellToolBase.cpp:2143
+#: commands/CommentCommand.cpp:64 ui/CellToolBase.cpp:543
+#: ui/CellToolBase.cpp:2132
 msgid "Remove Comment"
 msgstr "Gwaredu Sylwad"
 
-#: commands/CommentCommand.cpp:66 dialogs/CommentDialog.cpp:85
-#: ui/View.cpp:1868
+#: commands/CommentCommand.cpp:66 dialogs/CommentDialog.cpp:84
+#: ui/View.cpp:1819
 msgid "Add Comment"
 msgstr "Ychwanegu Sylwad"
 
@@ -19057,36 +19053,36 @@ msgstr "Gwaredu'r fformatio amodol y gell."
 msgid "Add Conditional Formatting"
 msgstr "Gwaredu'r fformatio amodol y gell."
 
-#: commands/DataManipulators.cpp:162
+#: commands/DataManipulators.cpp:164
 msgid "Change Value"
 msgstr "Newid Gwerth"
 
-#: commands/DataManipulators.cpp:237
+#: commands/DataManipulators.cpp:239
 #, fuzzy
 msgid "Insert Series"
 msgstr "Mewnosod cyfres."
 
-#: commands/DataManipulators.cpp:317
+#: commands/DataManipulators.cpp:319
 #, fuzzy
 msgid "Fill Selection"
 msgstr "Dewis Fformiwla"
 
-#: commands/DataManipulators.cpp:361
+#: commands/DataManipulators.cpp:363
 #, fuzzy
 msgid "Change Case"
 msgstr "Newid Gwerth"
 
-#: commands/DataManipulators.cpp:410 commands/DataManipulators.cpp:423
-#: dialogs/InsertDialog.cpp:76
+#: commands/DataManipulators.cpp:412 commands/DataManipulators.cpp:425
+#: dialogs/InsertDialog.cpp:75
 msgid "Insert Cells"
 msgstr "Mewnosod Celloedd"
 
-#: commands/DataManipulators.cpp:425 dialogs/InsertDialog.cpp:85
+#: commands/DataManipulators.cpp:427 dialogs/InsertDialog.cpp:84
 msgid "Remove Cells"
 msgstr "Gwaredu Celloedd"
 
-#: commands/DefinePrintRangeCommand.cpp:40 commands/PaperLayoutCommand.cpp:51
-#: commands/Undo.cpp:673
+#: commands/DefinePrintRangeCommand.cpp:40 commands/PageLayoutCommand.cpp:35
+#: commands/Undo.cpp:672 dialogs/PageLayoutDialog.cpp:235
 msgid "Set Page Layout"
 msgstr "Gosod Haenllun y Tudalen"
 
@@ -19095,17 +19091,17 @@ msgstr "Gosod Haenllun y Tudalen"
 msgid "Resize Object"
 msgstr "Newid maint"
 
-#: commands/EmbeddedObjectCommands.cpp:144
+#: commands/EmbeddedObjectCommands.cpp:142
 #, fuzzy
 msgid "Cut Object"
 msgstr "&Gwrthrych"
 
-#: commands/EmbeddedObjectCommands.cpp:146
+#: commands/EmbeddedObjectCommands.cpp:144
 #, fuzzy
 msgid "Remove Object"
 msgstr "Gwaredu Dalen"
 
-#: commands/EmbeddedObjectCommands.cpp:248
+#: commands/EmbeddedObjectCommands.cpp:246
 msgid "Insert Object"
 msgstr "Mewnosod Gwrthrych"
 
@@ -19119,30 +19115,30 @@ msgstr "Cynyddu Mewnoliad"
 msgid "Decrease Indentation"
 msgstr "Lleihau Mewnoliad"
 
-#: commands/LinkCommand.cpp:41 ui/CellToolBase.cpp:576
+#: commands/LinkCommand.cpp:40 ui/CellToolBase.cpp:565
 msgid "Remove Link"
 msgstr "Gwaredu Cyswllt"
 
-#: commands/LinkCommand.cpp:41
+#: commands/LinkCommand.cpp:40
 #, fuzzy
 msgid "Set Link"
 msgstr "Mewnosod Cyswllt"
 
-#: commands/MergeCommand.cpp:148 ui/CellToolBase.cpp:422
+#: commands/MergeCommand.cpp:147 ui/CellToolBase.cpp:411
 #, fuzzy
 msgid "Merge Cells Horizontally"
 msgstr "Cyfuno Celloedd %1"
 
-#: commands/MergeCommand.cpp:152 ui/CellToolBase.cpp:427
+#: commands/MergeCommand.cpp:151 ui/CellToolBase.cpp:416
 #, fuzzy
 msgid "Merge Cells Vertically"
 msgstr "Cyfuno Celloedd %1"
 
-#: commands/MergeCommand.cpp:159 ui/CellToolBase.cpp:432
+#: commands/MergeCommand.cpp:158 ui/CellToolBase.cpp:421
 msgid "Dissociate Cells"
 msgstr "Daduno Celloedd"
 
-#: commands/MergeCommand.cpp:166
+#: commands/MergeCommand.cpp:165
 msgid "Merging of columns or rows is not supported."
 msgstr ""
 
@@ -19153,66 +19149,66 @@ msgstr ""
 msgid "Add Named Area"
 msgstr "Golygu Ardal"
 
-#: commands/NamedAreaCommand.cpp:51 dialogs/NamedAreaDialog.cpp:193
+#: commands/NamedAreaCommand.cpp:51 dialogs/NamedAreaDialog.cpp:189
 #, fuzzy
 msgid "Remove Named Area"
 msgstr "Gwaredu Popeth"
 
-#: commands/PrecisionCommand.cpp:37 commands/PrecisionCommand.cpp:66
-#: ui/CellToolBase.cpp:380
+#: commands/PrecisionCommand.cpp:36 commands/PrecisionCommand.cpp:65
+#: ui/CellToolBase.cpp:369
 msgid "Increase Precision"
 msgstr "Cynyddu Trachywiredd"
 
-#: commands/PrecisionCommand.cpp:68 ui/CellToolBase.cpp:385
+#: commands/PrecisionCommand.cpp:67 ui/CellToolBase.cpp:374
 msgid "Decrease Precision"
 msgstr "Lleihau Trachywiredd"
 
-#: commands/RowColumnManipulators.cpp:46 dialogs/Resize2Dialog.cpp:118
+#: commands/RowColumnManipulators.cpp:47 dialogs/Resize2Dialog.cpp:119
 msgid "Resize Column"
 msgstr "Newid Maint Colofn"
 
-#: commands/RowColumnManipulators.cpp:74 dialogs/Resize2Dialog.cpp:59
+#: commands/RowColumnManipulators.cpp:76 dialogs/Resize2Dialog.cpp:60
 msgid "Resize Row"
 msgstr "Newid Maint Rhes"
 
-#: commands/RowColumnManipulators.cpp:624
+#: commands/RowColumnManipulators.cpp:626
 #, fuzzy
 msgid "Adjust Columns/Rows"
 msgstr "Addasu Colofn"
 
-#: commands/RowColumnManipulators.cpp:628
+#: commands/RowColumnManipulators.cpp:630
 #, fuzzy
 msgid "Adjust Columns"
 msgstr "Addasu Colofn"
 
-#: commands/RowColumnManipulators.cpp:632
+#: commands/RowColumnManipulators.cpp:634
 #, fuzzy
 msgid "Adjust Rows"
 msgstr "Addasu Rhes"
 
-#: commands/RowColumnManipulators.cpp:644
-#: commands/RowColumnManipulators.cpp:657 commands/Undo.cpp:285
-#: ui/CellToolBase.cpp:445 ui/CellToolBase_p.cpp:1294
+#: commands/RowColumnManipulators.cpp:646
+#: commands/RowColumnManipulators.cpp:659 commands/Undo.cpp:285
+#: ui/CellToolBase.cpp:434 ui/CellToolBase_p.cpp:1298
 msgid "Insert Columns"
 msgstr "Mewnosod Colofnau"
 
-#: commands/RowColumnManipulators.cpp:659 commands/Undo.cpp:222
-#: ui/CellToolBase.cpp:451
+#: commands/RowColumnManipulators.cpp:661 commands/Undo.cpp:222
+#: ui/CellToolBase.cpp:440
 msgid "Remove Columns"
 msgstr "Gwaredu Colofnau"
 
-#: commands/RowColumnManipulators.cpp:711
-#: commands/RowColumnManipulators.cpp:724 commands/Undo.cpp:399
-#: ui/CellToolBase.cpp:483 ui/CellToolBase_p.cpp:1306
+#: commands/RowColumnManipulators.cpp:713
+#: commands/RowColumnManipulators.cpp:726 commands/Undo.cpp:399
+#: ui/CellToolBase.cpp:472 ui/CellToolBase_p.cpp:1310
 msgid "Insert Rows"
 msgstr "Mewnosod Rhesi"
 
-#: commands/RowColumnManipulators.cpp:726 commands/Undo.cpp:328
-#: ui/CellToolBase.cpp:489
+#: commands/RowColumnManipulators.cpp:728 commands/Undo.cpp:328
+#: ui/CellToolBase.cpp:478
 msgid "Remove Rows"
 msgstr "Gwaredu Rhesi"
 
-#: commands/SheetCommands.cpp:39 ui/View.cpp:2137
+#: commands/SheetCommands.cpp:39 ui/View.cpp:2086
 msgid "Rename Sheet"
 msgstr "Ail-enwi Dalen"
 
@@ -19225,32 +19221,32 @@ msgstr "Cuddio Dalen %1"
 msgid "Hide Sheet"
 msgstr "Cuddio Dalen"
 
-#: commands/SheetCommands.cpp:87
+#: commands/SheetCommands.cpp:88
 #, kde-format
 msgid "Show Sheet %1"
 msgstr "Dangos Dalen %1"
 
-#: commands/SheetCommands.cpp:88 dialogs/ShowDialog.cpp:47
-#: dialogs/ShowDialog.cpp:109
+#: commands/SheetCommands.cpp:89 dialogs/ShowDialog.cpp:47
+#: dialogs/ShowDialog.cpp:107
 msgid "Show Sheet"
 msgstr "Dangos Dalen"
 
-#: commands/SheetCommands.cpp:112
+#: commands/SheetCommands.cpp:113
 msgid "Add Sheet"
 msgstr "Ychwanegu Dalen"
 
-#: commands/SheetCommands.cpp:144 ui/View.cpp:309
+#: commands/SheetCommands.cpp:145 ui/View.cpp:309
 #, fuzzy
 #| msgid "Recalculate Sheet"
 msgid "Duplicate Sheet"
 msgstr "Ail-gyfrifo Dalen"
 
-#: commands/SheetCommands.cpp:188 ui/View.cpp:315 ui/View.cpp:2097
-#: ui/View.cpp:2101 ui/View.cpp:2439
+#: commands/SheetCommands.cpp:189 ui/View.cpp:315 ui/View.cpp:2048
+#: ui/View.cpp:2052 ui/View.cpp:2372
 msgid "Remove Sheet"
 msgstr "Gwaredu Dalen"
 
-#: commands/SheetCommands.cpp:220
+#: commands/SheetCommands.cpp:221
 #, fuzzy
 msgid "Change Sheet Properties"
 msgstr "Priodweddau Dalen"
@@ -19260,88 +19256,99 @@ msgstr "Priodweddau Dalen"
 msgid "Sort Data"
 msgstr "Meini Prawf Trefnu"
 
-#: commands/StyleCommand.cpp:189
+#: commands/SpellCheckCommand.cpp:101
+#, fuzzy
+msgid "Do you want to check the spelling in the next sheet?"
+msgstr "Hoffech gywiro'r sillafu yn y tabl nesaf?"
+
+#: commands/SpellCheckCommand.cpp:130
+#, fuzzy
+#| msgid "Correct Misspelled Word"
+msgid "Correct Misspelled Words"
+msgstr "Cywiro Gair a Gamsillafwyd?"
+
+#: commands/StyleCommand.cpp:191
 #, fuzzy
 msgid "Reset Style"
 msgstr "Arddull Dalen"
 
-#: commands/StyleCommand.cpp:191
+#: commands/StyleCommand.cpp:193
 #, fuzzy
 msgid "Change Style"
 msgstr "Newid Ongl"
 
-#: commands/Undo.cpp:443 ui/CellToolBase.cpp:494
+#: commands/Undo.cpp:443 ui/CellToolBase.cpp:483
 msgid "Hide Rows"
 msgstr "Cuddio Rhesi"
 
-#: commands/Undo.cpp:499 ui/CellToolBase.cpp:456
+#: commands/Undo.cpp:499 ui/CellToolBase.cpp:445
 msgid "Hide Columns"
 msgstr "Cuddio Colofnau"
 
-#: commands/Undo.cpp:556 dialogs/ShowColRowDialog.cpp:68
-#: ui/CellToolBase.cpp:509
+#: commands/Undo.cpp:556 dialogs/ShowColRowDialog.cpp:67
+#: ui/CellToolBase.cpp:498
 msgid "Show Rows"
 msgstr "Dangos Rhesi"
 
-#: commands/Undo.cpp:613 dialogs/ShowColRowDialog.cpp:64
-#: ui/CellToolBase.cpp:471
+#: commands/Undo.cpp:613 dialogs/ShowColRowDialog.cpp:63
+#: ui/CellToolBase.cpp:460
 msgid "Show Columns"
 msgstr "Dangos Colofnau"
 
-#: commands/Undo.cpp:795
+#: commands/Undo.cpp:793
 msgid "Change Format"
 msgstr "Newid Fformat"
 
-#: commands/Undo.cpp:1097 dialogs/AngleDialog.cpp:47
+#: commands/Undo.cpp:1093 dialogs/AngleDialog.cpp:47
 #: dialogs/AngleDialog.cpp:79
 msgid "Change Angle"
 msgstr "Newid Ongl"
 
-#: commands/Undo.cpp:1129 dialogs/SortDialog.cpp:68
+#: commands/Undo.cpp:1125 dialogs/SortDialog.cpp:67
 msgid "Sort"
 msgstr "Trefnu"
 
-#: commands/Undo.cpp:1537
+#: commands/Undo.cpp:1529
 msgid "Drag & Drop"
 msgstr "Llusgo a Gollwng"
 
-#: commands/Undo.cpp:1629
+#: commands/Undo.cpp:1619
 msgid "Resize"
 msgstr "Newid maint"
 
-#: commands/Undo.cpp:1830
+#: commands/Undo.cpp:1820
 msgid "Change Text"
 msgstr "Newid Testun"
 
-#: commands/Undo.cpp:2184 commands/Undo.cpp:2228
+#: commands/Undo.cpp:2166 commands/Undo.cpp:2210
 msgid "Insert Cell"
 msgstr "Mewnosod Cell"
 
-#: commands/Undo.cpp:2271 commands/Undo.cpp:2320
+#: commands/Undo.cpp:2253 commands/Undo.cpp:2302
 msgid "Remove Cell"
 msgstr "Gwaredu Cell"
 
-#: commands/Undo.cpp:2369 dialogs/ConditionalDialog.cpp:279
-#: ui/CellToolBase.cpp:564
+#: commands/Undo.cpp:2351 dialogs/ConditionalDialog.cpp:279
+#: ui/CellToolBase.cpp:553
 #, fuzzy
 #| msgid "Conditional Cell Attributes"
 msgid "Conditional Styles"
 msgstr "Priodoleddau Cell Amodol"
 
-#: commands/Undo.cpp:2431
+#: commands/Undo.cpp:2413
 #, fuzzy
 msgid "Paste"
 msgstr "Dosrannu"
 
-#: commands/Undo.cpp:2433
+#: commands/Undo.cpp:2415
 msgid "Paste & Insert"
 msgstr "Gludo a Mewnosod"
 
-#: commands/Undo.cpp:2760
+#: commands/Undo.cpp:2740
 msgid "Style of Cell"
 msgstr "Arddull Cell"
 
-#: commands/Undo.cpp:2877 dialogs/DatabaseDialog.cpp:74
+#: commands/Undo.cpp:2855 dialogs/DatabaseDialog.cpp:75
 msgid "Insert Data From Database"
 msgstr "Mewnosod Data o Gronfa Ddata"
 
@@ -19356,9 +19363,9 @@ msgid "Add Validity Check"
 msgstr "Meini Prawf Dilysrwydd"
 
 #: database/FilterPopup.cpp:69 dialogs/FormulaDialog.cpp:102
-#: dialogs/FormulaDialog.cpp:204 dialogs/FormulaDialog.cpp:772
-#: dialogs/ValidityDialog.cpp:78 ui/CellToolBase.cpp:314
-#: ui/CellToolBase.cpp:536
+#: dialogs/FormulaDialog.cpp:204 dialogs/FormulaDialog.cpp:767
+#: dialogs/ValidityDialog.cpp:79 ui/CellToolBase.cpp:303
+#: ui/CellToolBase.cpp:525
 msgid "All"
 msgstr "Popeth"
 
@@ -19386,7 +19393,7 @@ msgid ""
 msgstr ""
 
 #: dialogs/AddNamedAreaDialog.cpp:92 dialogs/AddNamedAreaDialog.cpp:98
-#: dialogs/NamedAreaDialog.cpp:311
+#: dialogs/NamedAreaDialog.cpp:308
 #, fuzzy
 msgid "Replace Named Area"
 msgstr "Dangos ardal a enwir."
@@ -19395,60 +19402,60 @@ msgstr "Dangos ardal a enwir."
 msgid "Angle:"
 msgstr "Ongl:"
 
-#: dialogs/AutoFormatDialog.cpp:80
+#: dialogs/AutoFormatDialog.cpp:79
 msgid "Sheet Style"
 msgstr "Arddull Dalen"
 
-#: dialogs/AutoFormatDialog.cpp:92
+#: dialogs/AutoFormatDialog.cpp:91
 msgid "Select the sheet style to apply:"
 msgstr "Dewiswch yr arddull dalen i weithredu:"
 
-#: dialogs/AutoFormatDialog.cpp:139
+#: dialogs/AutoFormatDialog.cpp:138
 #, kde-format
 msgid "Could not find image %1."
 msgstr "Methwyd canfod y ddelwedd %1."
 
-#: dialogs/AutoFormatDialog.cpp:147
+#: dialogs/AutoFormatDialog.cpp:146
 #, kde-format
 msgid "Could not load image %1."
 msgstr "Methwyd llwytho'r ddelwedd %1."
 
-#: dialogs/AutoFormatDialog.cpp:159
+#: dialogs/AutoFormatDialog.cpp:158
 #, fuzzy, kde-format
 msgid "Could not find sheet-style XML file '%1'."
 msgstr "Methwyd canfod y ffeil XML '%1' efo'r arddull tabl."
 
-#: dialogs/AutoFormatDialog.cpp:171
+#: dialogs/AutoFormatDialog.cpp:170
 #, fuzzy, kde-format
 msgid "Parsing error in sheet-style XML file %1."
 msgstr "Gwall dosrannu yn y ffeil XML '%1' efo'r arddull tabl."
 
-#: dialogs/CSVDialog.cpp:64 dialogs/CSVDialog.cpp:193
+#: dialogs/CSVDialog.cpp:63 dialogs/CSVDialog.cpp:192
 msgid "Inserting From Clipboard"
 msgstr "Mewnosod o'r Gludfwrdd"
 
-#: dialogs/CSVDialog.cpp:68
+#: dialogs/CSVDialog.cpp:67
 msgid "There is no data in the clipboard."
 msgstr "Nid oes data ar y gludfwrdd."
 
-#: dialogs/CSVDialog.cpp:73
+#: dialogs/CSVDialog.cpp:72
 msgid "There is no usable data in the clipboard."
 msgstr "Nid oes data defnyddiadwy ar y gludfwrdd."
 
-#: dialogs/CSVDialog.cpp:79 dialogs/CSVDialog.cpp:195
+#: dialogs/CSVDialog.cpp:78 dialogs/CSVDialog.cpp:194
 msgid "Inserting Text File"
 msgstr "Mewnosod Ffeil Testun"
 
-#: dialogs/CSVDialog.cpp:92 dialogs/CSVDialog.cpp:197
+#: dialogs/CSVDialog.cpp:91 dialogs/CSVDialog.cpp:196
 msgid "Text to Columns"
 msgstr "Testun i Golofnau"
 
-#: dialogs/CSVDialog.cpp:123
+#: dialogs/CSVDialog.cpp:122
 #, fuzzy
 msgid "Cannot open input file."
 msgstr "Methu agor y ffeil mewnbwn!"
 
-#: dialogs/CommentDialog.cpp:47
+#: dialogs/CommentDialog.cpp:46
 msgid "Cell Comment"
 msgstr "Sylwad Cell"
 
@@ -19457,29 +19464,29 @@ msgstr "Sylwad Cell"
 msgid "<none>"
 msgstr "<dim>"
 
-#: dialogs/ConditionalDialog.cpp:160 dialogs/ValidityDialog.cpp:99
+#: dialogs/ConditionalDialog.cpp:160 dialogs/ValidityDialog.cpp:100
 msgid "equal to"
 msgstr "yn hafal i"
 
-#: dialogs/ConditionalDialog.cpp:161 dialogs/ValidityDialog.cpp:100
+#: dialogs/ConditionalDialog.cpp:161 dialogs/ValidityDialog.cpp:101
 msgid "greater than"
 msgstr "yn fwy na"
 
-#: dialogs/ConditionalDialog.cpp:162 dialogs/ValidityDialog.cpp:101
+#: dialogs/ConditionalDialog.cpp:162 dialogs/ValidityDialog.cpp:102
 msgid "less than"
 msgstr "yn llai na"
 
-#: dialogs/ConditionalDialog.cpp:163 dialogs/ValidityDialog.cpp:102
+#: dialogs/ConditionalDialog.cpp:163 dialogs/ValidityDialog.cpp:103
 msgid "equal to or greater than"
 msgstr "yn hafal i neu yn fwy na"
 
-#: dialogs/ConditionalDialog.cpp:164 dialogs/ValidityDialog.cpp:103
+#: dialogs/ConditionalDialog.cpp:164 dialogs/ValidityDialog.cpp:104
 msgid "equal to or less than"
 msgstr "yn hafal i neu yn llai na"
 
 #: dialogs/ConditionalDialog.cpp:165 dialogs/ConditionalDialog.cpp:207
 #: dialogs/ConditionalDialog.cpp:232 dialogs/ConditionalDialog.cpp:256
-#: dialogs/ValidityDialog.cpp:104
+#: dialogs/ValidityDialog.cpp:105
 msgid "between"
 msgstr "rhwng"
 
@@ -19488,7 +19495,7 @@ msgstr "rhwng"
 msgid "outside range"
 msgstr "Amrediad"
 
-#: dialogs/ConditionalDialog.cpp:167 dialogs/ValidityDialog.cpp:106
+#: dialogs/ConditionalDialog.cpp:167 dialogs/ValidityDialog.cpp:107
 #, fuzzy
 msgid "different to"
 msgstr "yn wahanol i"
@@ -19516,7 +19523,7 @@ msgid "Cell style"
 msgstr "Arddull cell"
 
 #: dialogs/ConditionalDialog.cpp:207 dialogs/ConditionalDialog.cpp:232
-#: dialogs/ConditionalDialog.cpp:256 dialogs/ValidityDialog.cpp:105
+#: dialogs/ConditionalDialog.cpp:256 dialogs/ValidityDialog.cpp:106
 msgid "different from"
 msgstr "yn wahanol i"
 
@@ -19539,32 +19546,32 @@ msgstr "Cyfnerthu"
 msgid "&Function:"
 msgstr "&Ffwythiant"
 
-#: dialogs/ConsolidateDialog.cpp:89 dialogs/PreferenceDialog.cpp:477
-#: dialogs/SubtotalDialog.cpp:290 ui/View.cpp:457
+#: dialogs/ConsolidateDialog.cpp:89 dialogs/PreferenceDialog.cpp:476
+#: dialogs/SubtotalDialog.cpp:286 ui/View.cpp:457
 msgid "Sum"
 msgstr "Swm"
 
-#: dialogs/ConsolidateDialog.cpp:90 dialogs/PreferenceDialog.cpp:480
-#: dialogs/SubtotalDialog.cpp:282 ui/View.cpp:478
+#: dialogs/ConsolidateDialog.cpp:90 dialogs/PreferenceDialog.cpp:479
+#: dialogs/SubtotalDialog.cpp:278 ui/View.cpp:478
 msgid "Average"
 msgstr "Cyfartaledd"
 
-#: dialogs/ConsolidateDialog.cpp:91 dialogs/PreferenceDialog.cpp:481
-#: dialogs/SubtotalDialog.cpp:283 ui/View.cpp:485
+#: dialogs/ConsolidateDialog.cpp:91 dialogs/PreferenceDialog.cpp:480
+#: dialogs/SubtotalDialog.cpp:279 ui/View.cpp:485
 msgid "Count"
 msgstr "Cyfrif"
 
-#: dialogs/ConsolidateDialog.cpp:92 dialogs/PreferenceDialog.cpp:479
-#: dialogs/SubtotalDialog.cpp:285 ui/View.cpp:471
+#: dialogs/ConsolidateDialog.cpp:92 dialogs/PreferenceDialog.cpp:478
+#: dialogs/SubtotalDialog.cpp:281 ui/View.cpp:471
 msgid "Max"
 msgstr "Uchafswm"
 
-#: dialogs/ConsolidateDialog.cpp:93 dialogs/PreferenceDialog.cpp:478
-#: dialogs/SubtotalDialog.cpp:286 ui/View.cpp:464
+#: dialogs/ConsolidateDialog.cpp:93 dialogs/PreferenceDialog.cpp:477
+#: dialogs/SubtotalDialog.cpp:282 ui/View.cpp:464
 msgid "Min"
 msgstr "Lleiafswm"
 
-#: dialogs/ConsolidateDialog.cpp:94 dialogs/SubtotalDialog.cpp:287
+#: dialogs/ConsolidateDialog.cpp:94 dialogs/SubtotalDialog.cpp:283
 msgid "Product"
 msgstr "Cynnyrch"
 
@@ -19605,7 +19612,7 @@ msgstr "&Ychwanegu"
 msgid "&Remove"
 msgstr "&Gwaredu Cyswllt"
 
-#: dialogs/ConsolidateDialog.cpp:207
+#: dialogs/ConsolidateDialog.cpp:205
 #, kde-format
 msgid ""
 "The range\n"
@@ -19616,7 +19623,7 @@ msgstr ""
 "%1\n"
 "yn rhy fach"
 
-#: dialogs/ConsolidateDialog.cpp:214 dialogs/ConsolidateDialog.cpp:230
+#: dialogs/ConsolidateDialog.cpp:212 dialogs/ConsolidateDialog.cpp:228
 #, kde-format
 msgid ""
 "The range\n"
@@ -19627,7 +19634,7 @@ msgstr ""
 "%1\n"
 "yn rhy fawr"
 
-#: dialogs/ConsolidateDialog.cpp:238
+#: dialogs/ConsolidateDialog.cpp:236
 #, kde-format
 msgid ""
 "The ranges\n"
@@ -19641,12 +19648,12 @@ msgstr ""
 "a %2\n"
 "o faint gwahanol"
 
-#: dialogs/ConsolidateDialog.cpp:263 dialogs/ConsolidateDialog.cpp:333
-#: dialogs/ConsolidateDialog.cpp:415 dialogs/ConsolidateDialog.cpp:518
+#: dialogs/ConsolidateDialog.cpp:261 dialogs/ConsolidateDialog.cpp:331
+#: dialogs/ConsolidateDialog.cpp:413 dialogs/ConsolidateDialog.cpp:516
 msgid "The source tables intersect with the destination table"
 msgstr "Mae'r tablau tarddiad yn croestorri â'r tabl cyrchfan"
 
-#: dialogs/ConsolidateDialog.cpp:659
+#: dialogs/ConsolidateDialog.cpp:657
 #, kde-format
 msgid ""
 "The range\n"
@@ -19657,7 +19664,7 @@ msgstr ""
 "%1\n"
 "wedi'i gamffurfio"
 
-#: dialogs/DatabaseDialog.cpp:87
+#: dialogs/DatabaseDialog.cpp:88
 msgid ""
 "User name:\n"
 "(if necessary)"
@@ -19665,11 +19672,11 @@ msgstr ""
 "Enw Defnyddiwr:\n"
 "(os bo angen)"
 
-#: dialogs/DatabaseDialog.cpp:92
+#: dialogs/DatabaseDialog.cpp:93
 msgid "Host:"
 msgstr "Gwesteiwr:"
 
-#: dialogs/DatabaseDialog.cpp:106
+#: dialogs/DatabaseDialog.cpp:107
 msgid ""
 "Port:\n"
 "(if necessary)"
@@ -19677,11 +19684,11 @@ msgstr ""
 "Porth:\n"
 "(os bo angen)"
 
-#: dialogs/DatabaseDialog.cpp:118
+#: dialogs/DatabaseDialog.cpp:119
 msgid "Database name: "
 msgstr "Enw'r gronfa ddata:"
 
-#: dialogs/DatabaseDialog.cpp:125
+#: dialogs/DatabaseDialog.cpp:126
 msgid ""
 "Password:\n"
 "(if necessary)"
@@ -19689,192 +19696,192 @@ msgstr ""
 "Cyfrinair:\n"
 "(os bo angen)"
 
-#: dialogs/DatabaseDialog.cpp:167
+#: dialogs/DatabaseDialog.cpp:168
 msgid "Select tables:"
 msgstr "Dewis Tablau:"
 
-#: dialogs/DatabaseDialog.cpp:171 dialogs/DatabaseDialog.cpp:191
+#: dialogs/DatabaseDialog.cpp:172 dialogs/DatabaseDialog.cpp:192
 #, fuzzy
 #| msgid "Tala"
 msgid "Table"
 msgstr "Tala"
 
-#: dialogs/DatabaseDialog.cpp:177
+#: dialogs/DatabaseDialog.cpp:178
 #, fuzzy
 #| msgid "Values"
 msgid "Tables"
 msgstr "Gwerthoedd"
 
-#: dialogs/DatabaseDialog.cpp:186
+#: dialogs/DatabaseDialog.cpp:187
 msgid "Select columns:"
 msgstr "Dewis colofnau:"
 
-#: dialogs/DatabaseDialog.cpp:192
+#: dialogs/DatabaseDialog.cpp:193
 msgid "Data Type"
 msgstr "Math data"
 
-#: dialogs/DatabaseDialog.cpp:212
+#: dialogs/DatabaseDialog.cpp:213
 msgid "Match all of the following (AND)"
 msgstr "Cydweddu â phob un o'r dilynnol (AND)"
 
-#: dialogs/DatabaseDialog.cpp:217
+#: dialogs/DatabaseDialog.cpp:218
 msgid "Match any of the following (OR)"
 msgstr "Cydwedduag unrhyw un o'r dilynnol (OR)"
 
-#: dialogs/DatabaseDialog.cpp:224 dialogs/DatabaseDialog.cpp:243
-#: dialogs/DatabaseDialog.cpp:259
+#: dialogs/DatabaseDialog.cpp:225 dialogs/DatabaseDialog.cpp:244
+#: dialogs/DatabaseDialog.cpp:260
 msgid "equals"
 msgstr "yn hafal"
 
-#: dialogs/DatabaseDialog.cpp:225 dialogs/DatabaseDialog.cpp:244
-#: dialogs/DatabaseDialog.cpp:260
+#: dialogs/DatabaseDialog.cpp:226 dialogs/DatabaseDialog.cpp:245
+#: dialogs/DatabaseDialog.cpp:261
 msgid "not equal"
 msgstr "dim yn hafal"
 
-#: dialogs/DatabaseDialog.cpp:226 dialogs/DatabaseDialog.cpp:245
-#: dialogs/DatabaseDialog.cpp:261
+#: dialogs/DatabaseDialog.cpp:227 dialogs/DatabaseDialog.cpp:246
+#: dialogs/DatabaseDialog.cpp:262
 msgid "in"
 msgstr "yn "
 
-#: dialogs/DatabaseDialog.cpp:227 dialogs/DatabaseDialog.cpp:246
-#: dialogs/DatabaseDialog.cpp:262
+#: dialogs/DatabaseDialog.cpp:228 dialogs/DatabaseDialog.cpp:247
+#: dialogs/DatabaseDialog.cpp:263
 msgid "not in"
 msgstr "dim yn "
 
-#: dialogs/DatabaseDialog.cpp:228 dialogs/DatabaseDialog.cpp:247
-#: dialogs/DatabaseDialog.cpp:263
+#: dialogs/DatabaseDialog.cpp:229 dialogs/DatabaseDialog.cpp:248
+#: dialogs/DatabaseDialog.cpp:264
 msgid "like"
 msgstr "megis"
 
-#: dialogs/DatabaseDialog.cpp:229 dialogs/DatabaseDialog.cpp:248
-#: dialogs/DatabaseDialog.cpp:264
+#: dialogs/DatabaseDialog.cpp:230 dialogs/DatabaseDialog.cpp:249
+#: dialogs/DatabaseDialog.cpp:265
 msgid "greater"
 msgstr "yn fwy"
 
-#: dialogs/DatabaseDialog.cpp:230 dialogs/DatabaseDialog.cpp:249
-#: dialogs/DatabaseDialog.cpp:265
+#: dialogs/DatabaseDialog.cpp:231 dialogs/DatabaseDialog.cpp:250
+#: dialogs/DatabaseDialog.cpp:266
 msgid "lesser"
 msgstr "yn llai"
 
-#: dialogs/DatabaseDialog.cpp:231
+#: dialogs/DatabaseDialog.cpp:232
 msgid "greater or equal"
 msgstr "yn fwy neu yn hafal"
 
-#: dialogs/DatabaseDialog.cpp:232
+#: dialogs/DatabaseDialog.cpp:233
 msgid "less or equal"
 msgstr "yn llai neu yn hafal"
 
-#: dialogs/DatabaseDialog.cpp:272 dialogs/DatabaseDialog.cpp:284
+#: dialogs/DatabaseDialog.cpp:273 dialogs/DatabaseDialog.cpp:285
 msgid "Sorted by"
 msgstr "Trefnir gan"
 
-#: dialogs/DatabaseDialog.cpp:279 dialogs/DatabaseDialog.cpp:291
-#: dialogs/SortDialog.cpp:131 dialogs/SortDialog.cpp:150
-#: dialogs/SortDialog.cpp:170
+#: dialogs/DatabaseDialog.cpp:280 dialogs/DatabaseDialog.cpp:292
+#: dialogs/SortDialog.cpp:130 dialogs/SortDialog.cpp:149
+#: dialogs/SortDialog.cpp:169
 msgid "Ascending"
 msgstr "Esgynnol"
 
-#: dialogs/DatabaseDialog.cpp:280 dialogs/DatabaseDialog.cpp:292
-#: dialogs/SortDialog.cpp:132 dialogs/SortDialog.cpp:151
-#: dialogs/SortDialog.cpp:171
+#: dialogs/DatabaseDialog.cpp:281 dialogs/DatabaseDialog.cpp:293
+#: dialogs/SortDialog.cpp:131 dialogs/SortDialog.cpp:150
+#: dialogs/SortDialog.cpp:170
 msgid "Descending"
 msgstr "Disgynnol"
 
-#: dialogs/DatabaseDialog.cpp:301
+#: dialogs/DatabaseDialog.cpp:302
 msgid "Distinct"
 msgstr "Gwahanadwy"
 
-#: dialogs/DatabaseDialog.cpp:306
+#: dialogs/DatabaseDialog.cpp:307
 msgid "Query Options"
 msgstr "Dewisiadau Ymholiad"
 
-#: dialogs/DatabaseDialog.cpp:315
+#: dialogs/DatabaseDialog.cpp:316
 msgid "SQL query:"
 msgstr "Ymholiad SQL:"
 
-#: dialogs/DatabaseDialog.cpp:327
+#: dialogs/DatabaseDialog.cpp:328
 msgid "Insert in region"
 msgstr "Mewnosod mewn ardal"
 
-#: dialogs/DatabaseDialog.cpp:337
+#: dialogs/DatabaseDialog.cpp:338
 msgid "Starting in cell"
 msgstr "Dechrau yng nghell"
 
-#: dialogs/DatabaseDialog.cpp:472 dialogs/DatabaseDialog.cpp:496
+#: dialogs/DatabaseDialog.cpp:473 dialogs/DatabaseDialog.cpp:497
 #, fuzzy
 msgid "You cannot specify a table here."
 msgstr "Ni ellir penodi tabl yma!"
 
-#: dialogs/DatabaseDialog.cpp:480
+#: dialogs/DatabaseDialog.cpp:481
 #, fuzzy
 msgid "You have to specify a valid region."
 msgstr "Rhaid i chi benodi ardal dilys!"
 
-#: dialogs/DatabaseDialog.cpp:504
+#: dialogs/DatabaseDialog.cpp:505
 #, fuzzy
 msgid "You have to specify a valid cell."
 msgstr "Rhaid i chi benodi cell ddilys!"
 
-#: dialogs/DatabaseDialog.cpp:538
+#: dialogs/DatabaseDialog.cpp:539
 #, fuzzy
 msgid "You are not allowed to change data in the database."
 msgstr "Ni chaniateir newid data yn y gronfa ddata!"
 
-#: dialogs/DatabaseDialog.cpp:545
+#: dialogs/DatabaseDialog.cpp:546
 #, fuzzy
 msgid "Executing query failed."
 msgstr "Methodd gweithredu'r ymholiad!"
 
-#: dialogs/DatabaseDialog.cpp:552
+#: dialogs/DatabaseDialog.cpp:553
 #, fuzzy
 msgid "You did not get any results with this query."
 msgstr "Ni chafwyd canlyniadau â'r ymholiad yma."
 
-#: dialogs/DatabaseDialog.cpp:647
+#: dialogs/DatabaseDialog.cpp:646
 msgid "The port must be a number"
 msgstr "Rhaid i'r borth fod yn rhif"
 
-#: dialogs/DatabaseDialog.cpp:653
+#: dialogs/DatabaseDialog.cpp:652
 msgid "Connecting to database..."
 msgstr "Cysylltu â'r gronfa ddata..."
 
-#: dialogs/DatabaseDialog.cpp:656
+#: dialogs/DatabaseDialog.cpp:655
 msgid "Connected. Retrieving table information..."
 msgstr "Cysylltir.  Nôl gwybodaeth tabl..."
 
-#: dialogs/DatabaseDialog.cpp:661
+#: dialogs/DatabaseDialog.cpp:660
 msgid "This database contains no tables"
 msgstr "Nid yw'r gronfa ddata yma yn cynnwys tablau"
 
-#: dialogs/DatabaseDialog.cpp:703
+#: dialogs/DatabaseDialog.cpp:702
 msgid "Driver could not be loaded"
 msgstr "Methwyd llwytho'r gyrrydd"
 
-#: dialogs/DatabaseDialog.cpp:714
+#: dialogs/DatabaseDialog.cpp:713
 msgid "Retrieving meta data of tables..."
 msgstr "Nôl meta-data y tablau..."
 
-#: dialogs/DatabaseDialog.cpp:730
+#: dialogs/DatabaseDialog.cpp:729
 #, fuzzy
 msgid "You have to select at least one table."
 msgstr "Rhaid i chi ddewis o leiaf un tabl!"
 
-#: dialogs/DatabaseDialog.cpp:773
+#: dialogs/DatabaseDialog.cpp:772
 #, fuzzy
 msgid "You have to select at least one column."
 msgstr "Rhaid i chi ddewis o leiaf un golofn!"
 
-#: dialogs/DatabaseDialog.cpp:785 dialogs/DatabaseDialog.cpp:786
-#: dialogs/PreferenceDialog.cpp:449 dialogs/PreferenceDialog.cpp:483
-#: dialogs/SortDialog.cpp:146 dialogs/SortDialog.cpp:165
-#: dialogs/SortDialog.cpp:471 dialogs/SortDialog.cpp:473
-#: dialogs/SortDialog.cpp:483 dialogs/SortDialog.cpp:485
-#: ui/CellToolBase.cpp:320 ui/View.cpp:450
+#: dialogs/DatabaseDialog.cpp:784 dialogs/DatabaseDialog.cpp:785
+#: dialogs/PreferenceDialog.cpp:448 dialogs/PreferenceDialog.cpp:482
+#: dialogs/SortDialog.cpp:145 dialogs/SortDialog.cpp:164
+#: dialogs/SortDialog.cpp:470 dialogs/SortDialog.cpp:472
+#: dialogs/SortDialog.cpp:482 dialogs/SortDialog.cpp:484
+#: ui/CellToolBase.cpp:309 ui/View.cpp:450
 msgid "None"
 msgstr "Dim"
 
-#: dialogs/DatabaseDialog.cpp:906 dialogs/DatabaseDialog.cpp:920
-#: dialogs/DatabaseDialog.cpp:934
+#: dialogs/DatabaseDialog.cpp:905 dialogs/DatabaseDialog.cpp:919
+#: dialogs/DatabaseDialog.cpp:933
 #, no-c-format
 msgid ""
 "'*' or '?' are not valid wildcards in SQL. The proper replacements are '%' "
@@ -19931,11 +19938,11 @@ msgstr "Mewnosod Ffwythiant"
 msgid "Help"
 msgstr ""
 
-#: dialogs/FormulaDialog.cpp:690
+#: dialogs/FormulaDialog.cpp:685
 msgid "This function has no parameters."
 msgstr "Nid oes paramedrau gan y ffwythiant hwn."
 
-#: dialogs/FormulaDialog.cpp:707
+#: dialogs/FormulaDialog.cpp:702
 #, fuzzy
 msgid "Description is not available."
 msgstr "Disgrifiad yn y &golofn"
@@ -19965,49 +19972,49 @@ msgstr "Dechrau"
 msgid "Current value:"
 msgstr "Gwerth cyfredol:"
 
-#: dialogs/GoalSeekDialog.cpp:149 dialogs/GoalSeekDialog.cpp:418
+#: dialogs/GoalSeekDialog.cpp:149 dialogs/GoalSeekDialog.cpp:414
 msgid "New value:"
 msgstr "Gwerth newydd:"
 
-#: dialogs/GoalSeekDialog.cpp:229 dialogs/GoalSeekDialog.cpp:240
+#: dialogs/GoalSeekDialog.cpp:226 dialogs/GoalSeekDialog.cpp:237
 #, fuzzy
 msgid "Cell reference is invalid."
 msgstr "Mae'r cyfeirnod cell yn annilys!"
 
-#: dialogs/GoalSeekDialog.cpp:252
+#: dialogs/GoalSeekDialog.cpp:249
 #, fuzzy
 msgid "Target value is invalid."
 msgstr "Mae'r gwerth cyrchfan yn annilys!"
 
-#: dialogs/GoalSeekDialog.cpp:265
+#: dialogs/GoalSeekDialog.cpp:262
 #, fuzzy
 msgid "Source cell must contain a numeric value."
 msgstr "Rhaid i'r gell darddiad gynnwys gwerth rhifol!"
 
-#: dialogs/GoalSeekDialog.cpp:275
+#: dialogs/GoalSeekDialog.cpp:272
 #, fuzzy
 msgid "Target cell must contain a formula."
 msgstr "Rhaid i'r gell gyrchfan gynnwys fformiwla!"
 
-#: dialogs/GoalSeekDialog.cpp:283
+#: dialogs/GoalSeekDialog.cpp:280
 #, fuzzy
 msgid "&OK"
 msgstr "NOK"
 
-#: dialogs/GoalSeekDialog.cpp:343
+#: dialogs/GoalSeekDialog.cpp:339
 msgid "Starting..."
 msgstr "Cychwyn..."
 
-#: dialogs/GoalSeekDialog.cpp:344
+#: dialogs/GoalSeekDialog.cpp:340
 msgid "Iteration:"
 msgstr "Adrifiad:"
 
-#: dialogs/GoalSeekDialog.cpp:423
+#: dialogs/GoalSeekDialog.cpp:419
 #, kde-format
 msgid "Goal seeking with cell %1 found a solution:"
 msgstr "Mi wnaeth ymofyn cyrchnod efo cell %1 ganfod datrysiad:"
 
-#: dialogs/GoalSeekDialog.cpp:433
+#: dialogs/GoalSeekDialog.cpp:429
 #, kde-format
 msgid "Goal seeking with cell %1 has found NO solution."
 msgstr "Ni wnaeth ymofyn cyrchnod efo cell %1 DDIM canfod datrysiad:"
@@ -20020,123 +20027,123 @@ msgstr "Ewch i Gell"
 msgid "Enter cell:"
 msgstr "Mynd i mewn i gell:"
 
-#: dialogs/InsertDialog.cpp:66 dialogs/PasteInsertDialog.cpp:58
+#: dialogs/InsertDialog.cpp:65 dialogs/PasteInsertDialog.cpp:57
 #, fuzzy
 msgid "Insert"
 msgstr "Rhyngrwyd"
 
-#: dialogs/InsertDialog.cpp:72 dialogs/PasteInsertDialog.cpp:62
+#: dialogs/InsertDialog.cpp:71 dialogs/PasteInsertDialog.cpp:61
 msgid "Move towards right"
 msgstr "Symud i'r dde"
 
-#: dialogs/InsertDialog.cpp:73 dialogs/PasteInsertDialog.cpp:63
+#: dialogs/InsertDialog.cpp:72 dialogs/PasteInsertDialog.cpp:62
 msgid "Move towards bottom"
 msgstr "Symud i'r gwaelod"
 
-#: dialogs/InsertDialog.cpp:74
+#: dialogs/InsertDialog.cpp:73
 msgid "Insert rows"
 msgstr "Mewnosod rhesi"
 
-#: dialogs/InsertDialog.cpp:75
+#: dialogs/InsertDialog.cpp:74
 msgid "Insert columns"
 msgstr "Mewnosod colofnau"
 
-#: dialogs/InsertDialog.cpp:80 dialogs/ListDialog.cpp:85
+#: dialogs/InsertDialog.cpp:79 dialogs/ListDialog.cpp:85
 #, fuzzy
 msgid "Remove"
 msgstr "Gwaredu Popeth"
 
-#: dialogs/InsertDialog.cpp:81
+#: dialogs/InsertDialog.cpp:80
 msgid "Move towards left"
 msgstr "Symud i'r chwith"
 
-#: dialogs/InsertDialog.cpp:82
+#: dialogs/InsertDialog.cpp:81
 msgid "Move towards top"
 msgstr "Symud i'r pen"
 
-#: dialogs/InsertDialog.cpp:83
+#: dialogs/InsertDialog.cpp:82
 msgid "Remove rows"
 msgstr "Gwaredu rhesi"
 
-#: dialogs/InsertDialog.cpp:84
+#: dialogs/InsertDialog.cpp:83
 msgid "Remove columns"
 msgstr "Gwaredu colofnau"
 
-#: dialogs/LayoutDialog.cpp:168 dialogs/StyleManagerDialog.cpp:62
-#: ui/CellToolBase.cpp:185
+#: dialogs/LayoutDialog.cpp:171 dialogs/StyleManagerDialog.cpp:62
+#: ui/CellToolBase.cpp:174
 msgid "Style"
 msgstr "Arddull"
 
-#: dialogs/LayoutDialog.cpp:176
+#: dialogs/LayoutDialog.cpp:179
 msgid "Name:"
 msgstr "Enw:"
 
-#: dialogs/LayoutDialog.cpp:188
+#: dialogs/LayoutDialog.cpp:191
 msgid "Inherit style:"
 msgstr "Etifeddu arddull:"
 
-#: dialogs/LayoutDialog.cpp:238 ui/CellToolBase.cpp:1425
+#: dialogs/LayoutDialog.cpp:241 ui/CellToolBase.cpp:1414
 msgid "A style with this name already exists."
 msgstr "Mae arddull â'r enw yma yn bodoli eisioes."
 
-#: dialogs/LayoutDialog.cpp:244
+#: dialogs/LayoutDialog.cpp:247
 #, fuzzy
 #| msgid "The style name cannot be empty."
 msgid "The style name can not be empty."
 msgstr "Ni all enw arddull fod yn wag."
 
-#: dialogs/LayoutDialog.cpp:259
+#: dialogs/LayoutDialog.cpp:262
 msgid "A style cannot inherit from itself."
 msgstr "Ni all arddull etifeddu o'i hun."
 
-#: dialogs/LayoutDialog.cpp:265
+#: dialogs/LayoutDialog.cpp:268
 #, kde-format
 msgid "The style cannot inherit from '%1' because of recursive references."
 msgstr "Ni all yr arddull etifeddu o '%1' o achos cyfeirnodau ymgylchol."
 
-#: dialogs/LayoutDialog.cpp:773
+#: dialogs/LayoutDialog.cpp:779
 msgid "Cell Format"
 msgstr "Fformatio Cell"
 
-#: dialogs/LayoutDialog.cpp:789
+#: dialogs/LayoutDialog.cpp:795
 msgid "&Data Format"
 msgstr "Fformat &Data"
 
-#: dialogs/LayoutDialog.cpp:792
+#: dialogs/LayoutDialog.cpp:798
 msgid "&Font"
 msgstr "&Wynebfath"
 
-#: dialogs/LayoutDialog.cpp:798
+#: dialogs/LayoutDialog.cpp:804
 msgid "&Position"
 msgstr "&Lleoliad"
 
-#: dialogs/LayoutDialog.cpp:801
+#: dialogs/LayoutDialog.cpp:807
 msgid "&Border"
 msgstr "&Ffin"
 
-#: dialogs/LayoutDialog.cpp:804
+#: dialogs/LayoutDialog.cpp:810
 msgid "Back&ground"
 msgstr "Cef&ndir"
 
-#: dialogs/LayoutDialog.cpp:807
+#: dialogs/LayoutDialog.cpp:813
 msgid "&Cell Protection"
 msgstr "Gwarc&hodaeth Gell"
 
-#: dialogs/LayoutDialog.cpp:938
+#: dialogs/LayoutDialog.cpp:931
 msgid ""
 "This is the default format and KSpread autodetects the actual data type "
 "depending on the current cell data. By default, KSpread right justifies "
 "numbers, dates and times within a cell and left justifies anything else."
 msgstr ""
 
-#: dialogs/LayoutDialog.cpp:942
+#: dialogs/LayoutDialog.cpp:935
 msgid ""
 "The number notation uses the notation you globally choose in KControl -> "
 "Regional & Accessibility -> Numbers tab. Numbers are right justified by "
 "default."
 msgstr ""
 
-#: dialogs/LayoutDialog.cpp:946
+#: dialogs/LayoutDialog.cpp:939
 msgid ""
 "When you have a number in the current cell and you switch from the dcell "
 "format from Generic to Percent, the current cell number will be multiplied "
@@ -20147,7 +20154,7 @@ msgid ""
 "You can also use the Percent icon in the Format Toolbar."
 msgstr ""
 
-#: dialogs/LayoutDialog.cpp:950
+#: dialogs/LayoutDialog.cpp:943
 msgid ""
 "The Money format converts your number into money notation using the settings "
 "globally fixed in KControl in Regional & Accessibility -> Money. The "
@@ -20157,18 +20164,18 @@ msgid ""
 "formatting to look like your current currency."
 msgstr ""
 
-#: dialogs/LayoutDialog.cpp:953
+#: dialogs/LayoutDialog.cpp:946
 msgid "Scientific"
 msgstr "Gwyddonol"
 
-#: dialogs/LayoutDialog.cpp:954
+#: dialogs/LayoutDialog.cpp:947
 msgid ""
 "The scientific format changes your number using the scientific notation. For "
 "example, 0.0012 will be changed to 1.2E-03. Going back using Generic cell "
 "format will display 0.0012 again."
 msgstr ""
 
-#: dialogs/LayoutDialog.cpp:958
+#: dialogs/LayoutDialog.cpp:951
 msgid ""
 "The fraction format changes your number into a fraction. For example, 0.1 "
 "can be changed to 1/8, 2/16, 1/10, etc. You define the type of fraction by "
@@ -20181,11 +20188,11 @@ msgid ""
 "closest Sixteenth fraction."
 msgstr ""
 
-#: dialogs/LayoutDialog.cpp:961
+#: dialogs/LayoutDialog.cpp:954
 msgid "Date format"
 msgstr "Fformat dyddiad"
 
-#: dialogs/LayoutDialog.cpp:962
+#: dialogs/LayoutDialog.cpp:955
 msgid ""
 "To enter a date, you should enter it in one of the formats set in KControl "
 "in Regional & Accessibility ->Time & Dates. There are two formats set here: "
@@ -20194,11 +20201,11 @@ msgid ""
 "next cells will also get dates."
 msgstr ""
 
-#: dialogs/LayoutDialog.cpp:965
+#: dialogs/LayoutDialog.cpp:958
 msgid "Time format"
 msgstr "Fformat amser"
 
-#: dialogs/LayoutDialog.cpp:966
+#: dialogs/LayoutDialog.cpp:959
 msgid ""
 "This formats your cell content as a time. To enter a time, you should enter "
 "it in the Time format set in KControl in Regional & Accessibility ->Time & "
@@ -20209,7 +20216,7 @@ msgid ""
 "format you have in KControl."
 msgstr ""
 
-#: dialogs/LayoutDialog.cpp:970
+#: dialogs/LayoutDialog.cpp:963
 msgid ""
 "This formats your cell content as text. This can be useful if you want a "
 "number treated as text instead as a number, for example for a ZIP code. "
@@ -20218,158 +20225,158 @@ msgid ""
 "change the way the cell is justified."
 msgstr ""
 
-#: dialogs/LayoutDialog.cpp:973
+#: dialogs/LayoutDialog.cpp:966
 msgid "Custom"
 msgstr "Addasiedig"
 
-#: dialogs/LayoutDialog.cpp:974
+#: dialogs/LayoutDialog.cpp:967
 msgid "The custom format does not work yet. To be enabled in the next release."
 msgstr ""
 
-#: dialogs/LayoutDialog.cpp:985
+#: dialogs/LayoutDialog.cpp:978
 msgid ""
 "This will display a preview of your choice so you can know what it does "
 "before clicking the OK button to validate it."
 msgstr ""
 
-#: dialogs/LayoutDialog.cpp:996
+#: dialogs/LayoutDialog.cpp:989
 msgid "Displays choices of format for the fraction, date or time formats."
 msgstr ""
 
-#: dialogs/LayoutDialog.cpp:1008
+#: dialogs/LayoutDialog.cpp:1001
 msgid ""
 "You can add here a Postfix such as a $HK symbol to the end of each cell "
 "content in the checked format."
 msgstr ""
 
-#: dialogs/LayoutDialog.cpp:1011
+#: dialogs/LayoutDialog.cpp:1004
 msgid "variable"
 msgstr "newidyn"
 
-#: dialogs/LayoutDialog.cpp:1013
+#: dialogs/LayoutDialog.cpp:1006
 msgid ""
 "You can control how many digits are displayed after the decimal point for "
 "numeric values. This can also be changed using the Increase precision or "
 "Decrease precision icons in the Format toolbar. "
 msgstr ""
 
-#: dialogs/LayoutDialog.cpp:1017
+#: dialogs/LayoutDialog.cpp:1010
 msgid ""
 "You can add here a Prefix such as a $ symbol at the start of each cell "
 "content in the checked format."
 msgstr ""
 
-#: dialogs/LayoutDialog.cpp:1021
+#: dialogs/LayoutDialog.cpp:1014
 msgid ""
 "You can choose whether positive values are displayed with a leading + sign "
 "and whether negative values are shown in red."
 msgstr ""
 
-#: dialogs/LayoutDialog.cpp:1060 dialogs/LayoutDialog.cpp:1616
-#: dialogs/LayoutDialog.cpp:1685 dialogs/PreferenceDialog.cpp:452
-#: functions/information.cpp:173
+#: dialogs/LayoutDialog.cpp:1053 dialogs/LayoutDialog.cpp:1609
+#: dialogs/LayoutDialog.cpp:1678 dialogs/PreferenceDialog.cpp:451
+#: functions/information.cpp:174
 msgid "Automatic"
 msgstr "Ymysgogol"
 
-#: dialogs/LayoutDialog.cpp:1205
+#: dialogs/LayoutDialog.cpp:1198
 msgid "Halves 1/2"
 msgstr "Haneri 1/2"
 
-#: dialogs/LayoutDialog.cpp:1206
+#: dialogs/LayoutDialog.cpp:1199
 msgid "Quarters 1/4"
 msgstr "Chwarteri 1/4"
 
-#: dialogs/LayoutDialog.cpp:1207
+#: dialogs/LayoutDialog.cpp:1200
 msgid "Eighths 1/8"
 msgstr "Wythfedau 1/8"
 
-#: dialogs/LayoutDialog.cpp:1208
+#: dialogs/LayoutDialog.cpp:1201
 msgid "Sixteenths 1/16"
 msgstr "Unfedau ar bymtheg 1/16"
 
-#: dialogs/LayoutDialog.cpp:1209
+#: dialogs/LayoutDialog.cpp:1202
 msgid "Tenths 1/10"
 msgstr "Degfedau 1/10"
 
-#: dialogs/LayoutDialog.cpp:1210
+#: dialogs/LayoutDialog.cpp:1203
 msgid "Hundredths 1/100"
 msgstr "Canfedau 1/100"
 
-#: dialogs/LayoutDialog.cpp:1211
+#: dialogs/LayoutDialog.cpp:1204
 msgid "One digit 5/9"
 msgstr "Un digid 5/9"
 
-#: dialogs/LayoutDialog.cpp:1212
+#: dialogs/LayoutDialog.cpp:1205
 msgid "Two digits 15/22"
 msgstr "Dau ddigid 15/22"
 
-#: dialogs/LayoutDialog.cpp:1213
+#: dialogs/LayoutDialog.cpp:1206
 msgid "Three digits 153/652"
 msgstr "Tri digid 153/652"
 
-#: dialogs/LayoutDialog.cpp:1245 dialogs/LayoutDialog.cpp:1246
-#: dialogs/LayoutDialog.cpp:1308 dialogs/LayoutDialog.cpp:1309
+#: dialogs/LayoutDialog.cpp:1238 dialogs/LayoutDialog.cpp:1239
+#: dialogs/LayoutDialog.cpp:1301 dialogs/LayoutDialog.cpp:1302
 msgid "System: "
 msgstr "Cysawd:"
 
-#: dialogs/LayoutDialog.cpp:1256
+#: dialogs/LayoutDialog.cpp:1249
 #, fuzzy
 #| msgid " (=[mm]::ss)"
 msgid " (=[mm]:ss)"
 msgstr " (=[mm]::ee)"
 
-#: dialogs/LayoutDialog.cpp:1257
+#: dialogs/LayoutDialog.cpp:1250
 #, fuzzy
 #| msgid " (=[hh]::mm::ss)"
 msgid " (=[hh]:mm:ss)"
 msgstr " (=[aa]::mm::ee)"
 
-#: dialogs/LayoutDialog.cpp:1258
+#: dialogs/LayoutDialog.cpp:1251
 #, fuzzy
 #| msgid " (=[hh]::mm)"
 msgid " (=[hh]:mm)"
 msgstr " (=[aa]::mm)"
 
-#: dialogs/LayoutDialog.cpp:1845
+#: dialogs/LayoutDialog.cpp:1838
 msgid "Dolor Ipse"
 msgstr "Dolor Ipse"
 
-#: dialogs/LayoutDialog.cpp:2104
+#: dialogs/LayoutDialog.cpp:2097
 #, kde-format
 msgid "Default width (%1 %2)"
 msgstr "Lled rhagosodol (%1 %2)"
 
-#: dialogs/LayoutDialog.cpp:2122
+#: dialogs/LayoutDialog.cpp:2115
 #, kde-format
 msgid "Default height (%1 %2)"
 msgstr "Uchder rhagosodol (%1 %2)"
 
-#: dialogs/LayoutDialog.cpp:2504
+#: dialogs/LayoutDialog.cpp:2497
 #, fuzzy
 msgid "Border"
 msgstr "&Ffin"
 
-#: dialogs/LayoutDialog.cpp:2534
+#: dialogs/LayoutDialog.cpp:2527
 msgid "Preselect"
 msgstr "Rhagddewis"
 
-#: dialogs/LayoutDialog.cpp:2574 dialogs/LayoutDialog.cpp:3395
+#: dialogs/LayoutDialog.cpp:2567 dialogs/LayoutDialog.cpp:3388
 msgid "Pattern"
 msgstr "Patrwm"
 
-#: dialogs/LayoutDialog.cpp:2610
+#: dialogs/LayoutDialog.cpp:2603
 msgid "Customize"
 msgstr "Addasu"
 
-#: dialogs/LayoutDialog.cpp:3480
+#: dialogs/LayoutDialog.cpp:3473
 msgid "Background color:"
 msgstr "Lliw cefndir:"
 
-#: dialogs/LayoutDialog.cpp:3496
+#: dialogs/LayoutDialog.cpp:3489
 msgid "No Color"
 msgstr "Dim Lliw"
 
-#: dialogs/LinkDialog.cpp:74 ui/CellToolBase.cpp:2176
+#: dialogs/LinkDialog.cpp:74 ui/CellToolBase.cpp:2165
 msgid "Insert Link"
 msgstr "Mewnosod Cyswllt"
 
@@ -20430,8 +20437,8 @@ msgstr "Ffeil diweddar:"
 msgid "No Entries"
 msgstr "Dim Cofnodion"
 
-#: dialogs/LinkDialog.cpp:154 ui/View.cpp:384 ui/View.cpp:1061
-#: ui/View.cpp:1667
+#: dialogs/LinkDialog.cpp:154 ui/View.cpp:384 ui/View.cpp:1059
+#: ui/View.cpp:1629
 msgid "Cell"
 msgstr "Cell"
 
@@ -20446,21 +20453,21 @@ msgstr "Maint y Gell"
 msgid "Cell or Named Area:"
 msgstr "Gwaredu Popeth"
 
-#: dialogs/LinkDialog.cpp:319
+#: dialogs/LinkDialog.cpp:318
 #, fuzzy
 msgid "Internet address is empty"
 msgstr "Cyfeiriad Rhyngrwyd:"
 
-#: dialogs/LinkDialog.cpp:321
+#: dialogs/LinkDialog.cpp:320
 #, fuzzy
 msgid "Mail address is empty"
 msgstr "Nae'r testun ardal yn wag!"
 
-#: dialogs/LinkDialog.cpp:323
+#: dialogs/LinkDialog.cpp:322
 msgid "File name is empty"
 msgstr "Mae'r enw ffeil yn wag"
 
-#: dialogs/LinkDialog.cpp:325
+#: dialogs/LinkDialog.cpp:324
 #, fuzzy
 msgid "Destination cell is empty"
 msgstr "Mae'r testun ardal neu gell yn wag!"
@@ -20535,7 +20542,7 @@ msgstr "&Golygu..."
 msgid "&New..."
 msgstr "&Newydd..."
 
-#: dialogs/NamedAreaDialog.cpp:69 ui/CellToolBase.cpp:706
+#: dialogs/NamedAreaDialog.cpp:69 ui/CellToolBase.cpp:695
 #, fuzzy
 msgid "Named Areas"
 msgstr "Gwaredu Popeth"
@@ -20545,48 +20552,48 @@ msgstr "Gwaredu Popeth"
 msgid "Area: %1"
 msgstr "Ardal: %1"
 
-#: dialogs/NamedAreaDialog.cpp:154
+#: dialogs/NamedAreaDialog.cpp:150
 #, fuzzy
 msgid "New Named Area"
 msgstr "Gwaredu Popeth"
 
-#: dialogs/NamedAreaDialog.cpp:180
+#: dialogs/NamedAreaDialog.cpp:176
 #, fuzzy
 #| msgid "Edit Area"
 msgid "Edit Named Area"
 msgstr "Golygu Ardal"
 
-#: dialogs/NamedAreaDialog.cpp:192
+#: dialogs/NamedAreaDialog.cpp:188
 #, fuzzy
 #| msgid "Do you really want to remove this area name?"
 msgid "Do you really want to remove this named area?"
 msgstr "Ydych wir eisiau gwaredu'r enw ardal yma?"
 
-#: dialogs/NamedAreaDialog.cpp:241
+#: dialogs/NamedAreaDialog.cpp:237
 msgid "Cells:"
 msgstr "Celloedd"
 
-#: dialogs/NamedAreaDialog.cpp:248
+#: dialogs/NamedAreaDialog.cpp:244
 msgid "Sheet:"
 msgstr "Dalen:"
 
-#: dialogs/NamedAreaDialog.cpp:255
+#: dialogs/NamedAreaDialog.cpp:251
 msgid "Area name:"
 msgstr "Enw ardal:"
 
-#: dialogs/PageLayoutDialog.cpp:102 dialogs/PageLayoutDialog.cpp:106
-#: dialogs/PageLayoutDialog.cpp:110 dialogs/PaperLayoutDialog.cpp:209
+#: dialogs/PageLayoutDialog.cpp:106 dialogs/PageLayoutDialog.cpp:110
+#: dialogs/PageLayoutDialog.cpp:114 dialogs/PaperLayoutDialog.cpp:209
 #: dialogs/PaperLayoutDialog.cpp:213 dialogs/PaperLayoutDialog.cpp:219
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
 
-#: dialogs/PageLayoutDialog.cpp:117 dialogs/PaperLayoutDialog.cpp:240
+#: dialogs/PageLayoutDialog.cpp:121 dialogs/PaperLayoutDialog.cpp:240
 #: dialogs/PaperLayoutDialog.cpp:264
 msgid "No Limit"
 msgstr "Dim Cyfyngiad"
 
-#: dialogs/PageLayoutDialog.cpp:148 ui/View.cpp:303 ui/View.cpp:314
+#: dialogs/PageLayoutDialog.cpp:152 ui/View.cpp:303 ui/View.cpp:314
 msgid "Sheet"
 msgstr "Dalen"
 
@@ -20655,11 +20662,11 @@ msgstr "X:"
 msgid "Y:"
 msgstr "Y:"
 
-#: dialogs/PaperLayoutDialog.cpp:367
+#: dialogs/PaperLayoutDialog.cpp:366
 msgid "Print range wrong, changes are ignored."
 msgstr "Mae'r amrediad argraffu yn anghywir, anwybyddir newidiadau."
 
-#: dialogs/PaperLayoutDialog.cpp:393
+#: dialogs/PaperLayoutDialog.cpp:392
 msgid ""
 "Repeated columns range wrong, changes are ignored.\n"
 "Must be in format column:column (eg. B:C)"
@@ -20667,7 +20674,7 @@ msgstr ""
 "Mae'r amrediad colofnau a ailadroddir yn anghywir, anwybyddir newidiadau.\n"
 "Rhaid i'r fformat fod yn golofn:colofn (e.e. B:C)"
 
-#: dialogs/PaperLayoutDialog.cpp:419
+#: dialogs/PaperLayoutDialog.cpp:418
 msgid ""
 "Repeated rows range wrong, changes are ignored.\n"
 "Must be in format row:row (eg. 2:3)"
@@ -20675,302 +20682,291 @@ msgstr ""
 "Mae'r amrediad rhesi a ailadroddir yn anghywir, anwybyddir newidiadau.\n"
 "Rhaid i'r fformat fod yn res:rhes (e.e. 2:3)"
 
-#: dialogs/PasteInsertDialog.cpp:45
+#: dialogs/PasteInsertDialog.cpp:44
 msgid "Paste Inserting Cells"
 msgstr "Gludo gan Fewnosod Celloedd"
 
-#: dialogs/PreferenceDialog.cpp:64
+#: dialogs/PreferenceDialog.cpp:68
 msgid "Configure KSpread"
 msgstr "Ffurfweddu KSpread"
 
-#: dialogs/PreferenceDialog.cpp:73
+#: dialogs/PreferenceDialog.cpp:77
 #, fuzzy
 msgid "Locale Settings"
 msgstr "Paramedrau Bro"
 
-#: dialogs/PreferenceDialog.cpp:78
+#: dialogs/PreferenceDialog.cpp:82
 msgid "Interface"
 msgstr "Rhyngwyneb"
 
-#: dialogs/PreferenceDialog.cpp:83
+#: dialogs/PreferenceDialog.cpp:87
 msgid "Misc"
 msgstr "Amrywiol"
 
-#: dialogs/PreferenceDialog.cpp:88
+#: dialogs/PreferenceDialog.cpp:92
 msgid "Color"
 msgstr "Lliw"
 
-#: dialogs/PreferenceDialog.cpp:93
+#: dialogs/PreferenceDialog.cpp:97
 msgid "Page Layout"
 msgstr "Haenlun Tudalen"
 
-#: dialogs/PreferenceDialog.cpp:98
+#: dialogs/PreferenceDialog.cpp:102
 msgid "Spelling"
 msgstr "Sillafu"
 
-#: dialogs/PreferenceDialog.cpp:100
+#: dialogs/PreferenceDialog.cpp:104
 msgid "Spell Checker Behavior"
 msgstr "Ymddygiad y Gwirydd Sillafu"
 
-#: dialogs/PreferenceDialog.cpp:168
+#: dialogs/PreferenceDialog.cpp:171
 #, fuzzy
 msgid "&Update Locale Settings"
 msgstr "Diweddaru i'r Fro ar y Cysa&wd"
 
-#: dialogs/PreferenceDialog.cpp:194
+#: dialogs/PreferenceDialog.cpp:195
 #, kde-format
 msgid "Language: %1"
 msgstr "Iaith: %1"
 
-#: dialogs/PreferenceDialog.cpp:195
+#: dialogs/PreferenceDialog.cpp:196
 #, fuzzy, kde-format
 msgid "Default number format: %1"
 msgstr "Fformat dyddiad"
 
-#: dialogs/PreferenceDialog.cpp:196
+#: dialogs/PreferenceDialog.cpp:197
 #, fuzzy, kde-format
 msgid "Long date format: %1"
 msgstr "Fformat dyddiad"
 
-#: dialogs/PreferenceDialog.cpp:197
+#: dialogs/PreferenceDialog.cpp:198
 #, kde-format
 msgid "Short date format: %1"
 msgstr "Fformat dyddiad byr: %1"
 
-#: dialogs/PreferenceDialog.cpp:198
+#: dialogs/PreferenceDialog.cpp:199
 #, kde-format
 msgid "Time format: %1"
 msgstr "Fformat amser : %1"
 
-#: dialogs/PreferenceDialog.cpp:199
+#: dialogs/PreferenceDialog.cpp:200
 #, fuzzy, kde-format
 msgid "Currency format: %1"
 msgstr "Arian:"
 
-#: dialogs/PreferenceDialog.cpp:244
+#: dialogs/PreferenceDialog.cpp:245
 #, fuzzy
 msgid "Number of sheets open at the &beginning:"
 msgstr "Nifer o dudalennau ar agor wrth dde&chrau:"
 
-#: dialogs/PreferenceDialog.cpp:245
+#: dialogs/PreferenceDialog.cpp:246
 msgid ""
 "Controls how many worksheets will be created if the option Start with an "
 "empty document is chosen when KSpread is started."
 msgstr ""
 
-#: dialogs/PreferenceDialog.cpp:249
+#: dialogs/PreferenceDialog.cpp:250
 #, fuzzy
 msgid "&Number of files to show in Recent Files list:"
 msgstr "&Nifer o ffeiliau diweddar:"
 
-#: dialogs/PreferenceDialog.cpp:250
+#: dialogs/PreferenceDialog.cpp:251
 msgid ""
 "Controls the maximum number of filenames that are shown when you select File-"
 "> Open Recent."
 msgstr ""
 
-#: dialogs/PreferenceDialog.cpp:254
+#: dialogs/PreferenceDialog.cpp:255
 #, fuzzy
 msgid "Au&tosave delay (minutes):"
 msgstr "Hunanga&dw (mun):"
 
-#: dialogs/PreferenceDialog.cpp:255
+#: dialogs/PreferenceDialog.cpp:256
 msgid "Do not save automatically"
 msgstr ""
 
-#: dialogs/PreferenceDialog.cpp:257
+#: dialogs/PreferenceDialog.cpp:258
 msgid ""
 "Here you can select the time between autosaves, or disable this feature "
 "altogether by choosing Do not save automatically (drag the slider to the far "
 "left)."
 msgstr ""
 
-#: dialogs/PreferenceDialog.cpp:259
+#: dialogs/PreferenceDialog.cpp:260
 #, fuzzy
 msgid "Create backup files"
 msgstr "Creu ffeil wrth gefn"
 
-#: dialogs/PreferenceDialog.cpp:261
+#: dialogs/PreferenceDialog.cpp:262
 msgid ""
 "Check this box if you want some backup files created. This is checked per "
 "default."
 msgstr ""
 
-#: dialogs/PreferenceDialog.cpp:263
+#: dialogs/PreferenceDialog.cpp:264
 msgid "Show &vertical scrollbar"
 msgstr "Dangos bar sgrolio &fertigol"
 
-#: dialogs/PreferenceDialog.cpp:265
+#: dialogs/PreferenceDialog.cpp:266
 msgid ""
 "Check or uncheck this box to show or hide the vertical scrollbar in all "
 "sheets."
 msgstr ""
 
-#: dialogs/PreferenceDialog.cpp:267
+#: dialogs/PreferenceDialog.cpp:268
 msgid "Show &horizontal scrollbar"
 msgstr "Dangos bar sgrolio &llorweddol"
 
-#: dialogs/PreferenceDialog.cpp:269
+#: dialogs/PreferenceDialog.cpp:270
 msgid ""
 "Check or uncheck this box to show or hide the horizontal scrollbar in all "
 "sheets."
 msgstr ""
 
-#: dialogs/PreferenceDialog.cpp:271
+#: dialogs/PreferenceDialog.cpp:272
 msgid "Show c&olumn header"
 msgstr "Dangos pennawd &colofn"
 
-#: dialogs/PreferenceDialog.cpp:273
+#: dialogs/PreferenceDialog.cpp:274
 msgid ""
 "Check this box to show the column letters across the top of each worksheet."
 msgstr ""
 
-#: dialogs/PreferenceDialog.cpp:275
+#: dialogs/PreferenceDialog.cpp:276
 msgid "Show &row header"
 msgstr "Dangos pennawd &rhes"
 
-#: dialogs/PreferenceDialog.cpp:277
+#: dialogs/PreferenceDialog.cpp:278
 msgid "Check this box to show the row numbers down the left side."
 msgstr ""
 
-#: dialogs/PreferenceDialog.cpp:279
+#: dialogs/PreferenceDialog.cpp:280
 msgid "Show ta&bs"
 msgstr "Dangos ta&blyddion"
 
-#: dialogs/PreferenceDialog.cpp:281
+#: dialogs/PreferenceDialog.cpp:282
 msgid ""
 "This check box controls whether the sheet tabs are shown at the bottom of "
 "the worksheet."
 msgstr ""
 
-#: dialogs/PreferenceDialog.cpp:284
+#: dialogs/PreferenceDialog.cpp:285
 msgid "Sho&w formula toolbar"
 msgstr "Dangos bar offer &fformiwlau"
 
-#: dialogs/PreferenceDialog.cpp:286
+#: dialogs/PreferenceDialog.cpp:287
 msgid "Here is where you can choose to show or hide the Formula bar."
 msgstr ""
 
-#: dialogs/PreferenceDialog.cpp:289
+#: dialogs/PreferenceDialog.cpp:290
 msgid "Show stat&us bar"
 msgstr "Dangos y bar cyfl&wr"
 
-#: dialogs/PreferenceDialog.cpp:291
+#: dialogs/PreferenceDialog.cpp:292
 msgid "Uncheck this box if you want to hide the status bar."
 msgstr ""
 
-#: dialogs/PreferenceDialog.cpp:438
+#: dialogs/PreferenceDialog.cpp:437
 msgid "Undo/redo limit:"
 msgstr "Dadwneud/ailwneud y terfyn:"
 
-#: dialogs/PreferenceDialog.cpp:443
+#: dialogs/PreferenceDialog.cpp:442
 msgid "&Completion mode:"
 msgstr "Modd &cwblhau:"
 
-#: dialogs/PreferenceDialog.cpp:447
+#: dialogs/PreferenceDialog.cpp:446
 msgid ""
 "Lets you choose the (auto) text completion mode from a range of options in "
 "the drop down selection box."
 msgstr ""
 
-#: dialogs/PreferenceDialog.cpp:450
+#: dialogs/PreferenceDialog.cpp:449
 msgid "Manual"
 msgstr "Â llaw"
 
-#: dialogs/PreferenceDialog.cpp:451
+#: dialogs/PreferenceDialog.cpp:450
 msgid "Popup"
 msgstr "Naidlen"
 
-#: dialogs/PreferenceDialog.cpp:453
+#: dialogs/PreferenceDialog.cpp:452
 msgid "Semi-Automatic"
 msgstr "Hanner-Ymysgogol"
 
-#: dialogs/PreferenceDialog.cpp:459
+#: dialogs/PreferenceDialog.cpp:458
 #, fuzzy
 msgid "&Pressing enter moves cell cursor:"
 msgstr "G&wasgwch Dychwelyd i symud y detholiad i'r:"
 
-#: dialogs/PreferenceDialog.cpp:463
+#: dialogs/PreferenceDialog.cpp:462
 msgid "Down"
 msgstr "I Lawr"
 
-#: dialogs/PreferenceDialog.cpp:464
+#: dialogs/PreferenceDialog.cpp:463
 msgid "Up"
 msgstr "I fyny"
 
-#: dialogs/PreferenceDialog.cpp:467
+#: dialogs/PreferenceDialog.cpp:466
 #, fuzzy
 msgid "Down, First Column"
 msgstr "Mewnosod Colofnau"
 
-#: dialogs/PreferenceDialog.cpp:470
+#: dialogs/PreferenceDialog.cpp:469
 msgid ""
 "When you have selected a cell, pressing the Enter key will move the cell "
 "cursor one cell left, right, up or down, as determined by this setting."
 msgstr ""
 
-#: dialogs/PreferenceDialog.cpp:472
+#: dialogs/PreferenceDialog.cpp:471
 msgid "&Method of calc:"
 msgstr "&Dull cyfrifo:"
 
-#: dialogs/PreferenceDialog.cpp:482 dialogs/SubtotalDialog.cpp:284
+#: dialogs/PreferenceDialog.cpp:481 dialogs/SubtotalDialog.cpp:280
 #: ui/View.cpp:492
 msgid "CountA"
 msgstr "CountA"
 
-#: dialogs/PreferenceDialog.cpp:486
+#: dialogs/PreferenceDialog.cpp:485
 msgid ""
 "This drop down selection box can be used to choose the calculation performed "
 "by the Statusbar Summary  function."
 msgstr ""
 
-#: dialogs/PreferenceDialog.cpp:495
+#: dialogs/PreferenceDialog.cpp:494
 msgid ""
 "Lets you define the amount of indenting used by the Increase Indent and "
 "Decrease Indent option in the Format menu."
 msgstr ""
 
-#: dialogs/PreferenceDialog.cpp:496
+#: dialogs/PreferenceDialog.cpp:495
 #, kde-format
 msgid "&Indentation step (%1):"
 msgstr ""
 
-#: dialogs/PreferenceDialog.cpp:498
-#, fuzzy
-msgid "&Show error message for invalid formulae"
-msgstr "Dangos n&eges wall"
-
-#: dialogs/PreferenceDialog.cpp:500
-msgid ""
-"If this box is checked a message box will pop up when what you have entered "
-"into a cell cannot be understood by KSpread."
-msgstr ""
-
-#: dialogs/PreferenceDialog.cpp:736
+#: dialogs/PreferenceDialog.cpp:723
 msgid "&Grid color:"
 msgstr "Lliw &grid:"
 
-#: dialogs/PreferenceDialog.cpp:741
+#: dialogs/PreferenceDialog.cpp:728
 msgid ""
 "Click here to change the grid color ie the color of the borders of each cell."
 msgstr ""
 
-#: dialogs/PreferenceDialog.cpp:746
+#: dialogs/PreferenceDialog.cpp:733
 msgid "&Page borders:"
 msgstr "Ffiniau &tudalen:"
 
-#: dialogs/PreferenceDialog.cpp:751
+#: dialogs/PreferenceDialog.cpp:738
 msgid ""
 "When the View ->Show Page Borders menu item is checked, the page borders are "
 "displayed. Click here to choose another color for the borders than the "
 "default red."
 msgstr ""
 
-#: dialogs/PreferenceDialog.cpp:800
+#: dialogs/PreferenceDialog.cpp:787
 msgid "Default page &size:"
 msgstr "&Maint rhagosodol y dudalen:"
 
-#: dialogs/PreferenceDialog.cpp:808
+#: dialogs/PreferenceDialog.cpp:795
 msgid ""
 "Choose the default page size for your worksheet among all the most common "
 "page sizes.\n"
@@ -20978,84 +20974,63 @@ msgid ""
 "Format -> Page Layout... dialog."
 msgstr ""
 
-#: dialogs/PreferenceDialog.cpp:811
+#: dialogs/PreferenceDialog.cpp:798
 msgid "Default page &orientation:"
 msgstr "Cy&feiriad rhagosodol y dudalen:"
 
-#: dialogs/PreferenceDialog.cpp:818
+#: dialogs/PreferenceDialog.cpp:805
 #, fuzzy
 msgid "Portrait"
 msgstr "Portiwgal"
 
-#: dialogs/PreferenceDialog.cpp:819
+#: dialogs/PreferenceDialog.cpp:806
 msgid "Landscape"
 msgstr ""
 
-#: dialogs/PreferenceDialog.cpp:822
+#: dialogs/PreferenceDialog.cpp:809
 msgid ""
 "Choose the sheet orientation: portrait or lanscape.\n"
 "Note that you can overwrite the orientation for the current sheet using the "
 "Format -> Page Layout... dialog."
 msgstr ""
 
-#: dialogs/PreferenceDialog.cpp:826
+#: dialogs/PreferenceDialog.cpp:813
 #, fuzzy
 msgid "Default page &unit:"
 msgstr "&Unedau rhagosodol y dudalen:"
 
-#: dialogs/PreferenceDialog.cpp:833
+#: dialogs/PreferenceDialog.cpp:820
 msgid ""
 "Choose the default unit that will be used in your sheet.\n"
 "Note that you can overwrite the unit for the current sheet using the Format -"
 "> Page Layout... dialog."
 msgstr ""
 
-#: dialogs/PreferenceDialog.cpp:901
-msgid "Skip all uppercase words"
-msgstr "Hepgor pob gair mewn PRIFLYTHRENNAU"
-
-#: dialogs/PreferenceDialog.cpp:902
-msgid ""
-"If checked, the words written in uppercase letters are not spell checked. "
-"This might be useful if you have a lot of acronyms such as KDE for example."
-msgstr ""
-
-#: dialogs/PreferenceDialog.cpp:903
-msgid "Do not check title case"
-msgstr "Peidiwch â gwirio prif/is-lythrennau yn y tetil"
-
-#: dialogs/PreferenceDialog.cpp:904
-msgid ""
-"Check this box if you want the spellchecker to ignore the title case, for "
-"example My Own Spreadsheet or My own spreadsheet. If this is unchecked, the "
-"spell checker will ask for a uppercase letter in the title nouns."
-msgstr ""
-
-#: dialogs/SeriesDialog.cpp:56
+#: dialogs/SeriesDialog.cpp:55
 msgid "Series"
 msgstr "Cyfres"
 
-#: dialogs/SeriesDialog.cpp:68
+#: dialogs/SeriesDialog.cpp:67
 msgid "Insert Values"
 msgstr "Mewnosod Gwerthoedd"
 
-#: dialogs/SeriesDialog.cpp:72
+#: dialogs/SeriesDialog.cpp:71
 msgid "Insert the series vertically, one below the other"
 msgstr "Mewnosod y gyfres yn fertigol, un islaw y llall"
 
-#: dialogs/SeriesDialog.cpp:74
+#: dialogs/SeriesDialog.cpp:73
 msgid "Insert the series horizontally, from left to right"
 msgstr "Mewnosod y gyfres yn llorweddol, o'r chwith i'r dde"
 
-#: dialogs/SeriesDialog.cpp:80
+#: dialogs/SeriesDialog.cpp:79
 msgid "Type"
 msgstr "Math"
 
-#: dialogs/SeriesDialog.cpp:83
+#: dialogs/SeriesDialog.cpp:82
 msgid "Linear (2,4,6,...)"
 msgstr "Llinynnol (2,4,6,...)"
 
-#: dialogs/SeriesDialog.cpp:84
+#: dialogs/SeriesDialog.cpp:83
 msgid ""
 "Generate a series from 'start' to 'end' and for each step add the value "
 "provided in step. This creates a series where each value is 'step' larger "
@@ -21065,11 +21040,11 @@ msgstr ""
 "a roddir yn y cam.  Mae hyn yn creu cyfres lle mae pob gwerth yn 'gam' mwy "
 "na'r gwerth o'i flaen."
 
-#: dialogs/SeriesDialog.cpp:87
+#: dialogs/SeriesDialog.cpp:86
 msgid "Geometric (2,4,8,...)"
 msgstr "Geometreg (2,4,8,...)"
 
-#: dialogs/SeriesDialog.cpp:88
+#: dialogs/SeriesDialog.cpp:87
 msgid ""
 "Generate a series from 'start' to 'end' and for each step multiply the value "
 "with the value provided in step. Using a step of 5 produces a list like: 5, "
@@ -21081,54 +21056,54 @@ msgstr ""
 "5, 25, 125, 625, oherwydd mae 5 lluosi 5 (yn y cam) yn gwneud 25, ac mae hyn "
 "lluosi 5 yn gwneud 125, ac mae 125 lluosi yr un gwerth cam o 5 yn gwneud 625."
 
-#: dialogs/SeriesDialog.cpp:101
+#: dialogs/SeriesDialog.cpp:100
 msgid "Start value:"
 msgstr "Gwerth dechrau:"
 
-#: dialogs/SeriesDialog.cpp:107
+#: dialogs/SeriesDialog.cpp:106
 msgid "Stop value:"
 msgstr "Gwerth diwedd:"
 
-#: dialogs/SeriesDialog.cpp:113
+#: dialogs/SeriesDialog.cpp:112
 msgid "Step value:"
 msgstr "Gwerth cam:"
 
-#: dialogs/SeriesDialog.cpp:149
+#: dialogs/SeriesDialog.cpp:148
 msgid "End and start value must be positive."
 msgstr ""
 
-#: dialogs/SeriesDialog.cpp:154
+#: dialogs/SeriesDialog.cpp:153
 msgid ""
 "End value must be greater than the start value or the step must be less than "
 "'1'."
 msgstr ""
 
-#: dialogs/SeriesDialog.cpp:160
+#: dialogs/SeriesDialog.cpp:159
 msgid "None of the Start, Stop or Step values may be equal to zero."
 msgstr ""
 
-#: dialogs/SeriesDialog.cpp:166
+#: dialogs/SeriesDialog.cpp:165
 msgid "Step value must be different from 1"
 msgstr ""
 
-#: dialogs/SeriesDialog.cpp:171
+#: dialogs/SeriesDialog.cpp:170
 #, fuzzy
 msgid "Step is negative."
 msgstr "Mynegai arae negyddol %1"
 
-#: dialogs/SeriesDialog.cpp:180
+#: dialogs/SeriesDialog.cpp:179
 msgid ""
 "The step value must be greater than zero; otherwise, the linear series is "
 "infinite."
 msgstr ""
 
-#: dialogs/SeriesDialog.cpp:186
+#: dialogs/SeriesDialog.cpp:185
 msgid ""
 "If the start value is greater than the end value the step must be less than "
 "zero."
 msgstr ""
 
-#: dialogs/SeriesDialog.cpp:192
+#: dialogs/SeriesDialog.cpp:191
 msgid ""
 "If the step is negative, the start value must be greater then the end value."
 msgstr ""
@@ -21143,20 +21118,20 @@ msgstr "Priodweddau Dalen"
 msgid "Sheets"
 msgstr "Dalen:"
 
-#: dialogs/ShowColRowDialog.cpp:65
+#: dialogs/ShowColRowDialog.cpp:64
 msgid "Select hidden columns to show:"
 msgstr "Dewis colofnau cudd i'w dangos:"
 
-#: dialogs/ShowColRowDialog.cpp:69
+#: dialogs/ShowColRowDialog.cpp:68
 msgid "Select hidden rows to show:"
 msgstr "Dewis rhesi cudd i'w dangos:"
 
-#: dialogs/ShowColRowDialog.cpp:94 dialogs/ShowColRowDialog.cpp:96
+#: dialogs/ShowColRowDialog.cpp:93 dialogs/ShowColRowDialog.cpp:95
 #, kde-format
 msgid "Column: %1"
 msgstr "Colofn: %1"
 
-#: dialogs/ShowColRowDialog.cpp:114
+#: dialogs/ShowColRowDialog.cpp:113
 #, kde-format
 msgid "Row: %1"
 msgstr "Rhes: %1"
@@ -21165,83 +21140,83 @@ msgstr "Rhes: %1"
 msgid "Select hidden sheets to show:"
 msgstr "Dewis dalenni cudd i'w dangos:"
 
-#: dialogs/SortDialog.cpp:75
+#: dialogs/SortDialog.cpp:74
 msgid "Sorting"
 msgstr "Trefnu"
 
-#: dialogs/SortDialog.cpp:92
+#: dialogs/SortDialog.cpp:91
 msgid "Layout"
 msgstr "Cynllun"
 
-#: dialogs/SortDialog.cpp:100
+#: dialogs/SortDialog.cpp:99
 #, fuzzy
 msgid "Sort &Rows"
 msgstr "Dangos Rhesi"
 
-#: dialogs/SortDialog.cpp:103
+#: dialogs/SortDialog.cpp:102
 #, fuzzy
 msgid "Sort &Columns"
 msgstr "Dangos Colofnau"
 
-#: dialogs/SortDialog.cpp:120
+#: dialogs/SortDialog.cpp:119
 msgid "Sort By"
 msgstr "Trefnu Gan"
 
-#: dialogs/SortDialog.cpp:138 dialogs/SortDialog.cpp:157
+#: dialogs/SortDialog.cpp:137 dialogs/SortDialog.cpp:156
 msgid "Then By"
 msgstr "Wedyn Gan"
 
-#: dialogs/SortDialog.cpp:176
+#: dialogs/SortDialog.cpp:175
 msgid "Sort Criteria"
 msgstr "Meini Prawf Trefnu"
 
-#: dialogs/SortDialog.cpp:188
+#: dialogs/SortDialog.cpp:187
 msgid "First Key"
 msgstr "Allwedd Gyntaf"
 
-#: dialogs/SortDialog.cpp:195
+#: dialogs/SortDialog.cpp:194
 msgid "&Use custom list"
 msgstr "D&efnyddio rhestr addasiedig"
 
-#: dialogs/SortDialog.cpp:245
+#: dialogs/SortDialog.cpp:244
 msgid "Copy cell &formatting (Borders, Colors, Text Style)"
 msgstr ""
 
-#: dialogs/SortDialog.cpp:250
+#: dialogs/SortDialog.cpp:249
 msgid "Case sensitive sort"
 msgstr ""
 
-#: dialogs/SortDialog.cpp:348 dialogs/SortDialog.cpp:416
+#: dialogs/SortDialog.cpp:347 dialogs/SortDialog.cpp:415
 #, fuzzy, kde-format
 msgid " (Column %1)"
 msgstr "Colofn %1"
 
-#: dialogs/SortDialog.cpp:356 dialogs/SortDialog.cpp:422
+#: dialogs/SortDialog.cpp:355 dialogs/SortDialog.cpp:421
 #, kde-format
 msgid "Column %1"
 msgstr "Colofn %1"
 
-#: dialogs/SortDialog.cpp:374 dialogs/SortDialog.cpp:432
+#: dialogs/SortDialog.cpp:373 dialogs/SortDialog.cpp:431
 #, fuzzy, kde-format
 msgid " (Row %1)"
 msgstr "Rhes %1"
 
-#: dialogs/SortDialog.cpp:382 dialogs/SortDialog.cpp:438
+#: dialogs/SortDialog.cpp:381 dialogs/SortDialog.cpp:437
 #, kde-format
 msgid "Row %1"
 msgstr "Rhes %1"
 
-#: dialogs/SortDialog.cpp:475
+#: dialogs/SortDialog.cpp:474
 #, fuzzy
 msgid "&First row contains headers"
 msgstr "Mae'r rhes &gyntaf yn cynnwys pennawd"
 
-#: dialogs/SortDialog.cpp:487
+#: dialogs/SortDialog.cpp:486
 #, fuzzy
 msgid "&First column contains headers"
 msgstr "Mae'r rhes &gyntaf yn cynnwys pennawd"
 
-#: dialogs/SpecialPasteDialog.cpp:42
+#: dialogs/SpecialPasteDialog.cpp:41
 msgid "Special Paste"
 msgstr "Gludo Arbennig"
 
@@ -21254,7 +21229,7 @@ msgstr "&Addasu..."
 msgid "&Delete..."
 msgstr "&Ymofyn Cyrchnod..."
 
-#: dialogs/StyleManagerDialog.cpp:54 ui/CellToolBase.cpp:180
+#: dialogs/StyleManagerDialog.cpp:54 ui/CellToolBase.cpp:169
 msgid "Style Manager"
 msgstr "Rheoydd Arddull"
 
@@ -21276,171 +21251,171 @@ msgstr "Cyllidol"
 msgid "style%1"
 msgstr "arddull %1"
 
-#: dialogs/SubtotalDialog.cpp:52
+#: dialogs/SubtotalDialog.cpp:51
 msgid "Subtotals"
 msgstr "Is-gyfansymiau"
 
-#: dialogs/SubtotalDialog.cpp:54
+#: dialogs/SubtotalDialog.cpp:53
 msgid "Remove All"
 msgstr "Gwaredu Popeth"
 
-#: dialogs/SubtotalDialog.cpp:95
+#: dialogs/SubtotalDialog.cpp:94
 msgid "You need to select at least one column for adding subtotals."
 msgstr "Rhaid i chi ddewis o leiaf un golofn i adio is-gyfansymiau."
 
-#: dialogs/SubtotalDialog.cpp:178
+#: dialogs/SubtotalDialog.cpp:176
 msgid "Grand Total"
 msgstr "Cyfanswm Terfynol"
 
-#: dialogs/SubtotalDialog.cpp:266
+#: dialogs/SubtotalDialog.cpp:262
 #, kde-format
 msgid "Column '%1' "
 msgstr "Colofn '%1'"
 
-#: dialogs/SubtotalDialog.cpp:288
+#: dialogs/SubtotalDialog.cpp:284
 msgid "StDev"
 msgstr "StDev"
 
-#: dialogs/SubtotalDialog.cpp:289
+#: dialogs/SubtotalDialog.cpp:285
 msgid "StDevP"
 msgstr "StDevP"
 
-#: dialogs/SubtotalDialog.cpp:291
+#: dialogs/SubtotalDialog.cpp:287
 msgid "Var"
 msgstr "Var"
 
-#: dialogs/SubtotalDialog.cpp:292
+#: dialogs/SubtotalDialog.cpp:288
 msgid "VarP"
 msgstr "VarP"
 
-#: dialogs/ValidityDialog.cpp:57 ui/CellToolBase.cpp:586
+#: dialogs/ValidityDialog.cpp:58 ui/CellToolBase.cpp:575
 msgid "Validity"
 msgstr "Dilysrwydd"
 
-#: dialogs/ValidityDialog.cpp:60
+#: dialogs/ValidityDialog.cpp:61
 msgid "Clear &All"
 msgstr "Gwagu'r Cwbl"
 
-#: dialogs/ValidityDialog.cpp:65
+#: dialogs/ValidityDialog.cpp:66
 #, fuzzy
 #| msgid "Criteria"
 msgid "&Criteria"
 msgstr "Meini prawf"
 
-#: dialogs/ValidityDialog.cpp:72
+#: dialogs/ValidityDialog.cpp:73
 msgid "Allow:"
 msgstr "Caniatáu:"
 
-#: dialogs/ValidityDialog.cpp:80
+#: dialogs/ValidityDialog.cpp:81
 msgid "Integer"
 msgstr "Cyfanrif"
 
-#: dialogs/ValidityDialog.cpp:84
+#: dialogs/ValidityDialog.cpp:85
 msgid "Text Length"
 msgstr "Hyd Testun"
 
-#: dialogs/ValidityDialog.cpp:85
+#: dialogs/ValidityDialog.cpp:86
 msgid "List"
 msgstr "Rhestr"
 
-#: dialogs/ValidityDialog.cpp:89
+#: dialogs/ValidityDialog.cpp:90
 msgid "Allow blanks"
 msgstr ""
 
-#: dialogs/ValidityDialog.cpp:93
+#: dialogs/ValidityDialog.cpp:94
 msgid "Data:"
 msgstr "Data:"
 
-#: dialogs/ValidityDialog.cpp:111 dialogs/ValidityDialog.cpp:141
-#: dialogs/ValidityDialog.cpp:294 dialogs/ValidityDialog.cpp:313
-#: dialogs/ValidityDialog.cpp:397
+#: dialogs/ValidityDialog.cpp:112 dialogs/ValidityDialog.cpp:142
+#: dialogs/ValidityDialog.cpp:295 dialogs/ValidityDialog.cpp:314
+#: dialogs/ValidityDialog.cpp:398
 msgid "Minimum:"
 msgstr "Lleiafswm:"
 
-#: dialogs/ValidityDialog.cpp:119 dialogs/ValidityDialog.cpp:143
-#: dialogs/ValidityDialog.cpp:295 dialogs/ValidityDialog.cpp:314
-#: dialogs/ValidityDialog.cpp:398
+#: dialogs/ValidityDialog.cpp:120 dialogs/ValidityDialog.cpp:144
+#: dialogs/ValidityDialog.cpp:296 dialogs/ValidityDialog.cpp:315
+#: dialogs/ValidityDialog.cpp:399
 msgid "Maximum:"
 msgstr "Uchafswm:"
 
-#: dialogs/ValidityDialog.cpp:129 dialogs/ValidityDialog.cpp:327
-#: dialogs/ValidityDialog.cpp:336 dialogs/ValidityDialog.cpp:386
+#: dialogs/ValidityDialog.cpp:130 dialogs/ValidityDialog.cpp:328
+#: dialogs/ValidityDialog.cpp:337 dialogs/ValidityDialog.cpp:387
 msgid "Date:"
 msgstr "Dyddiad:"
 
-#: dialogs/ValidityDialog.cpp:131 dialogs/ValidityDialog.cpp:342
-#: dialogs/ValidityDialog.cpp:407
+#: dialogs/ValidityDialog.cpp:132 dialogs/ValidityDialog.cpp:343
+#: dialogs/ValidityDialog.cpp:408
 msgid "Date minimum:"
 msgstr "Dyddiad lleiaf:"
 
-#: dialogs/ValidityDialog.cpp:133 dialogs/ValidityDialog.cpp:343
-#: dialogs/ValidityDialog.cpp:408
+#: dialogs/ValidityDialog.cpp:134 dialogs/ValidityDialog.cpp:344
+#: dialogs/ValidityDialog.cpp:409
 msgid "Date maximum:"
 msgstr "Dyddiad mywaf:"
 
-#: dialogs/ValidityDialog.cpp:135 dialogs/ValidityDialog.cpp:354
-#: dialogs/ValidityDialog.cpp:388
+#: dialogs/ValidityDialog.cpp:136 dialogs/ValidityDialog.cpp:355
+#: dialogs/ValidityDialog.cpp:389
 msgid "Time:"
 msgstr "Amser:"
 
-#: dialogs/ValidityDialog.cpp:137 dialogs/ValidityDialog.cpp:360
-#: dialogs/ValidityDialog.cpp:412
+#: dialogs/ValidityDialog.cpp:138 dialogs/ValidityDialog.cpp:361
+#: dialogs/ValidityDialog.cpp:413
 msgid "Time minimum:"
 msgstr "Amser lleiaf:"
 
-#: dialogs/ValidityDialog.cpp:139 dialogs/ValidityDialog.cpp:361
-#: dialogs/ValidityDialog.cpp:413
+#: dialogs/ValidityDialog.cpp:140 dialogs/ValidityDialog.cpp:362
+#: dialogs/ValidityDialog.cpp:414
 msgid "Time maximum:"
 msgstr "Amser mwyaf:"
 
-#: dialogs/ValidityDialog.cpp:145 dialogs/ValidityDialog.cpp:288
-#: dialogs/ValidityDialog.cpp:307 dialogs/ValidityDialog.cpp:382
+#: dialogs/ValidityDialog.cpp:146 dialogs/ValidityDialog.cpp:289
+#: dialogs/ValidityDialog.cpp:308 dialogs/ValidityDialog.cpp:383
 msgid "Number:"
 msgstr "Rhif:"
 
-#: dialogs/ValidityDialog.cpp:152
+#: dialogs/ValidityDialog.cpp:153
 msgid "Entries:"
 msgstr "Cofnodion:"
 
-#: dialogs/ValidityDialog.cpp:158
+#: dialogs/ValidityDialog.cpp:159
 msgid "&Error Alert"
 msgstr "&Rhybudd Gwall"
 
-#: dialogs/ValidityDialog.cpp:164
+#: dialogs/ValidityDialog.cpp:165
 msgid "Show error message when invalid values are entered"
 msgstr ""
 
-#: dialogs/ValidityDialog.cpp:169
+#: dialogs/ValidityDialog.cpp:170
 msgid "Action:"
 msgstr "Gweithred:"
 
-#: dialogs/ValidityDialog.cpp:175
+#: dialogs/ValidityDialog.cpp:176
 msgid "Stop"
 msgstr ""
 
-#: dialogs/ValidityDialog.cpp:176
+#: dialogs/ValidityDialog.cpp:177
 #, fuzzy
 msgid "Warning"
 msgstr "Argraffu"
 
-#: dialogs/ValidityDialog.cpp:182 dialogs/ValidityDialog.cpp:207
+#: dialogs/ValidityDialog.cpp:183 dialogs/ValidityDialog.cpp:208
 msgid "Title:"
 msgstr "Teitl:"
 
-#: dialogs/ValidityDialog.cpp:189 dialogs/ValidityDialog.cpp:214
+#: dialogs/ValidityDialog.cpp:190 dialogs/ValidityDialog.cpp:215
 msgid "Message:"
 msgstr "Neges:"
 
-#: dialogs/ValidityDialog.cpp:196
+#: dialogs/ValidityDialog.cpp:197
 msgid "Input Help"
 msgstr ""
 
-#: dialogs/ValidityDialog.cpp:202
+#: dialogs/ValidityDialog.cpp:203
 msgid "Show input help when cell is selected"
 msgstr ""
 
-#: dialogs/ValidityDialog.cpp:563 dialogs/ValidityDialog.cpp:570
-#: dialogs/ValidityDialog.cpp:581 dialogs/ValidityDialog.cpp:588
+#: dialogs/ValidityDialog.cpp:566 dialogs/ValidityDialog.cpp:573
+#: dialogs/ValidityDialog.cpp:584 dialogs/ValidityDialog.cpp:591
 #, fuzzy
 msgid "This is not a valid value."
 msgstr ""
@@ -21448,12 +21423,12 @@ msgstr ""
 " %1 \n"
 " ddim yn dilys."
 
-#: dialogs/ValidityDialog.cpp:597 dialogs/ValidityDialog.cpp:603
+#: dialogs/ValidityDialog.cpp:600 dialogs/ValidityDialog.cpp:606
 #, fuzzy
 msgid "This is not a valid time."
 msgstr "Mae'r amser a phenodwyd yn annilys."
 
-#: dialogs/ValidityDialog.cpp:612 dialogs/ValidityDialog.cpp:618
+#: dialogs/ValidityDialog.cpp:615 dialogs/ValidityDialog.cpp:621
 #, fuzzy
 msgid "This is not a valid date."
 msgstr ""
@@ -21613,10 +21588,10 @@ msgstr ""
 msgid "Implemented, reviewed and tested various functions"
 msgstr ""
 
-#: ui/Border.cpp:310 ui/Border.cpp:970 ui/CellToolBase.cpp:1881
-#: ui/CellToolBase.cpp:1908 ui/CellToolBase.cpp:1922 ui/CellToolBase.cpp:1943
-#: ui/CellToolBase.cpp:1983 ui/CellToolBase.cpp:2010 ui/CellToolBase.cpp:2024
-#: ui/CellToolBase.cpp:2045
+#: ui/Border.cpp:310 ui/Border.cpp:970 ui/CellToolBase.cpp:1870
+#: ui/CellToolBase.cpp:1897 ui/CellToolBase.cpp:1911 ui/CellToolBase.cpp:1932
+#: ui/CellToolBase.cpp:1972 ui/CellToolBase.cpp:1999 ui/CellToolBase.cpp:2013
+#: ui/CellToolBase.cpp:2034
 #, fuzzy
 msgid "Area is too large."
 msgstr "Ardal rhy fawr."
@@ -21639,733 +21614,733 @@ msgstr "Lled: %1 %2"
 msgid "Hide Column"
 msgstr "Cuddio Colofn"
 
-#: ui/CellToolBase.cpp:168
+#: ui/CellToolBase.cpp:157
 msgid "Cell Format..."
 msgstr "Fformat Cell..."
 
-#: ui/CellToolBase.cpp:173
+#: ui/CellToolBase.cpp:162
 #, fuzzy
 msgid "Set the cell formatting"
 msgstr "Gosod fformatio'r gell."
 
-#: ui/CellToolBase.cpp:178
+#: ui/CellToolBase.cpp:167
 #, fuzzy
 msgid "Resets to the default format"
 msgstr "Ailosod i'r fformat rhagosodol."
 
-#: ui/CellToolBase.cpp:183
+#: ui/CellToolBase.cpp:172
 #, fuzzy
 msgid "Edit and organize cell styles"
 msgstr "Golygu a threfnu arddulliau cell."
 
-#: ui/CellToolBase.cpp:187
+#: ui/CellToolBase.cpp:176
 #, fuzzy
 msgid "Apply a predefined style to the selected cells"
 msgstr "Gweithredu arddull rhag-ddiffiniedig i'r celloedd detholedig."
 
-#: ui/CellToolBase.cpp:190
+#: ui/CellToolBase.cpp:179
 msgid "Create Style From Cell..."
 msgstr "Creu Arddull o Gell..."
 
-#: ui/CellToolBase.cpp:191
+#: ui/CellToolBase.cpp:180
 #, fuzzy
 #| msgid "Style of Cell"
 msgid "Style From Cell"
 msgstr "Arddull Cell"
 
-#: ui/CellToolBase.cpp:194
+#: ui/CellToolBase.cpp:183
 #, fuzzy
 msgid "Create a new style based on the currently selected cell"
 msgstr "Creu arddull newydd a seilir ar y gell ddetholedig."
 
-#: ui/CellToolBase.cpp:213
+#: ui/CellToolBase.cpp:202
 msgid "Strike Out"
 msgstr "Trwylinellu"
 
-#: ui/CellToolBase.cpp:217
+#: ui/CellToolBase.cpp:206
 msgid "Select Font..."
 msgstr "Dewis Wynebfath..."
 
-#: ui/CellToolBase.cpp:218
+#: ui/CellToolBase.cpp:207
 #, fuzzy
 #| msgid "&Font"
 msgid "Font"
 msgstr "&Wynebfath"
 
-#: ui/CellToolBase.cpp:222
+#: ui/CellToolBase.cpp:211
 msgid "Select Font Size"
 msgstr "Dewis Maint Wynebfath"
 
-#: ui/CellToolBase.cpp:223
+#: ui/CellToolBase.cpp:212
 #, fuzzy
 #| msgid "Select Font Size"
 msgid "Font Size"
 msgstr "Dewis Maint Wynebfath"
 
-#: ui/CellToolBase.cpp:227
+#: ui/CellToolBase.cpp:216
 msgid "Increase Font Size"
 msgstr "Cynyddu Maint Wynebfath"
 
-#: ui/CellToolBase.cpp:231
+#: ui/CellToolBase.cpp:220
 msgid "Decrease Font Size"
 msgstr "Lleihau Maint Wynebfath"
 
-#: ui/CellToolBase.cpp:235
+#: ui/CellToolBase.cpp:224
 msgid "Text Color"
 msgstr "Lliw Testun"
 
-#: ui/CellToolBase.cpp:242
+#: ui/CellToolBase.cpp:231
 msgid "Align Left"
 msgstr "Alinio i'r Chwith"
 
-#: ui/CellToolBase.cpp:246
+#: ui/CellToolBase.cpp:235
 #, fuzzy
 msgid "Left justify the cell contents"
 msgstr "Alinio cynnwys y gell i'r chwith."
 
-#: ui/CellToolBase.cpp:249
+#: ui/CellToolBase.cpp:238
 msgid "Align Center"
 msgstr "Alinio i'r Canol"
 
-#: ui/CellToolBase.cpp:253
+#: ui/CellToolBase.cpp:242
 #, fuzzy
 msgid "Center the cell contents"
 msgstr "Alinio cynnwys y gell i'r canol."
 
-#: ui/CellToolBase.cpp:256
+#: ui/CellToolBase.cpp:245
 msgid "Align Right"
 msgstr "Alinio i'r Dde"
 
-#: ui/CellToolBase.cpp:260
+#: ui/CellToolBase.cpp:249
 #, fuzzy
 msgid "Right justify the cell contents"
 msgstr "Alinio cynnwys y gell i'r dde."
 
-#: ui/CellToolBase.cpp:266
+#: ui/CellToolBase.cpp:255
 msgid "Align Top"
 msgstr "Alinio i'r Pen"
 
-#: ui/CellToolBase.cpp:270
+#: ui/CellToolBase.cpp:259
 #, fuzzy
 msgid "Align cell contents along the top of the cell"
 msgstr "Alinio cynnwys y gell ar hyd pen y gell."
 
-#: ui/CellToolBase.cpp:273
+#: ui/CellToolBase.cpp:262
 msgid "Align Middle"
 msgstr "Alinio i'r Canol"
 
-#: ui/CellToolBase.cpp:277
+#: ui/CellToolBase.cpp:266
 #, fuzzy
 msgid "Align cell contents centered in the cell"
 msgstr "Alinio cynnwys y gell yng nghanol y gell."
 
-#: ui/CellToolBase.cpp:280
+#: ui/CellToolBase.cpp:269
 msgid "Align Bottom"
 msgstr "Alinio i'r Gwaelod"
 
-#: ui/CellToolBase.cpp:284
+#: ui/CellToolBase.cpp:273
 #, fuzzy
 msgid "Align cell contents along the bottom of the cell"
 msgstr "Alinio cynnwys y gell ar hyd gwaelod y gell."
 
-#: ui/CellToolBase.cpp:289
+#: ui/CellToolBase.cpp:278
 msgid "Border Left"
 msgstr "Ffin Chwith"
 
-#: ui/CellToolBase.cpp:293
+#: ui/CellToolBase.cpp:282
 #, fuzzy
 msgid "Set a left border to the selected area"
 msgstr "Gosod ffin chwith i'r ardal ddetholedig."
 
-#: ui/CellToolBase.cpp:295
+#: ui/CellToolBase.cpp:284
 msgid "Border Right"
 msgstr "Ffin Dde"
 
-#: ui/CellToolBase.cpp:299
+#: ui/CellToolBase.cpp:288
 #, fuzzy
 msgid "Set a right border to the selected area"
 msgstr "Gosod ffin de i'r ardal ddetholedig."
 
-#: ui/CellToolBase.cpp:301
+#: ui/CellToolBase.cpp:290
 msgid "Border Top"
 msgstr "Ffin Pen"
 
-#: ui/CellToolBase.cpp:305
+#: ui/CellToolBase.cpp:294
 #, fuzzy
 msgid "Set a top border to the selected area"
 msgstr "Gosod ffin pen i'r ardal ddetholedig."
 
-#: ui/CellToolBase.cpp:307
+#: ui/CellToolBase.cpp:296
 msgid "Border Bottom"
 msgstr "FFin Gwaelod"
 
-#: ui/CellToolBase.cpp:311
+#: ui/CellToolBase.cpp:300
 #, fuzzy
 msgid "Set a bottom border to the selected area"
 msgstr "Gosod ffin gwaelod i'r ardal ddetholedig."
 
-#: ui/CellToolBase.cpp:313
+#: ui/CellToolBase.cpp:302
 msgid "All Borders"
 msgstr "Pob Ffin"
 
-#: ui/CellToolBase.cpp:317
+#: ui/CellToolBase.cpp:306
 #, fuzzy
 msgid "Set a border around all cells in the selected area"
 msgstr "Gosod ffin o gwmpas pob cylch yn yr ardal ddetholedig."
 
-#: ui/CellToolBase.cpp:319
+#: ui/CellToolBase.cpp:308
 #, fuzzy
 #| msgid "All Borders"
 msgid "No Borders"
 msgstr "Pob Ffin"
 
-#: ui/CellToolBase.cpp:323
+#: ui/CellToolBase.cpp:312
 #, fuzzy
 msgid "Remove all borders in the selected area"
 msgstr "Gwaredu pob ffin yn yr ardal ddetholedig."
 
-#: ui/CellToolBase.cpp:325
+#: ui/CellToolBase.cpp:314
 msgid "Border Outline"
 msgstr "Amlinell Ffin"
 
-#: ui/CellToolBase.cpp:326
+#: ui/CellToolBase.cpp:315
 #, fuzzy
 #| msgid "Border Outline"
 msgid "Outline"
 msgstr "Amlinell Ffin"
 
-#: ui/CellToolBase.cpp:329
+#: ui/CellToolBase.cpp:318
 #, fuzzy
 msgid "Set a border to the outline of the selected area"
 msgstr "Gosod ffin i amlinell o'r ardal ddetholedig."
 
-#: ui/CellToolBase.cpp:331
+#: ui/CellToolBase.cpp:320
 msgid "Border Color"
 msgstr "Lliw Ffin"
 
-#: ui/CellToolBase.cpp:334
+#: ui/CellToolBase.cpp:323
 #, fuzzy
 msgid "Select a new border color"
 msgstr "Gosod lliw newydd i'r ffin."
 
-#: ui/CellToolBase.cpp:338 ui/CellToolBase.cpp:1733
+#: ui/CellToolBase.cpp:327 ui/CellToolBase.cpp:1722
 msgid "Wrap Text"
 msgstr "Lapio Testun"
 
-#: ui/CellToolBase.cpp:339
+#: ui/CellToolBase.cpp:328
 #, fuzzy
 #| msgid "Wrap text"
 msgid "Wrap"
 msgstr "Lapio Testun"
 
-#: ui/CellToolBase.cpp:342
+#: ui/CellToolBase.cpp:331
 #, fuzzy
 msgid "Make the cell text wrap onto multiple lines"
 msgstr "Gwneud i destun y gell lapio ar linellau lluosol."
 
-#: ui/CellToolBase.cpp:344 ui/CellToolBase.cpp:1745
+#: ui/CellToolBase.cpp:333 ui/CellToolBase.cpp:1734
 msgid "Vertical Text"
 msgstr "Testun Fertigol"
 
-#: ui/CellToolBase.cpp:348
+#: ui/CellToolBase.cpp:337
 #, fuzzy
 msgid "Print cell contents vertically"
 msgstr "Argraffu cynnwys y gell yn fertigol."
 
-#: ui/CellToolBase.cpp:350
+#: ui/CellToolBase.cpp:339
 msgid "Increase Indent"
 msgstr "Cynyddu Mewnoliad"
 
-#: ui/CellToolBase.cpp:353
+#: ui/CellToolBase.cpp:342
 #, fuzzy
 msgid "Increase the indentation"
 msgstr "Cynyddu'r mewnoliad."
 
-#: ui/CellToolBase.cpp:355
+#: ui/CellToolBase.cpp:344
 msgid "Decrease Indent"
 msgstr "Lleihau Mewnoliad"
 
-#: ui/CellToolBase.cpp:358
+#: ui/CellToolBase.cpp:347
 #, fuzzy
 msgid "Decrease the indentation"
 msgstr "Lleihau'r mewnoliad."
 
-#: ui/CellToolBase.cpp:360
+#: ui/CellToolBase.cpp:349
 msgid "Change Angle..."
 msgstr "Newid Ongl"
 
-#: ui/CellToolBase.cpp:361
+#: ui/CellToolBase.cpp:350
 #, fuzzy
 #| msgid "Angle:"
 msgid "Angle"
 msgstr "Ongl:"
 
-#: ui/CellToolBase.cpp:364
+#: ui/CellToolBase.cpp:353
 #, fuzzy
 msgid "Change the angle that cell contents are printed"
 msgstr "Newid yr ongl a ddefnyddir i argraffu cynnwys y gell"
 
-#: ui/CellToolBase.cpp:368
+#: ui/CellToolBase.cpp:357
 msgid "Percent Format"
 msgstr "Fformat Canran"
 
-#: ui/CellToolBase.cpp:372
+#: ui/CellToolBase.cpp:361
 #, fuzzy
 msgid "Set the cell formatting to look like a percentage"
 msgstr "Gosod fformat y gell i edrych fel canran."
 
-#: ui/CellToolBase.cpp:374
+#: ui/CellToolBase.cpp:363
 msgid "Money Format"
 msgstr "Fformat Arian"
 
-#: ui/CellToolBase.cpp:378
+#: ui/CellToolBase.cpp:367
 #, fuzzy
 msgid "Set the cell formatting to look like your local currency"
 msgstr "Gosod fformat y gell i edrych fel eich arian lleol."
 
-#: ui/CellToolBase.cpp:383
+#: ui/CellToolBase.cpp:372
 #, fuzzy
 msgid "Increase the decimal precision shown onscreen"
 msgstr "Cynyddu'r trachywiredd degol a ddangosir ar y sgrin."
 
-#: ui/CellToolBase.cpp:388
+#: ui/CellToolBase.cpp:377
 #, fuzzy
 msgid "Decrease the decimal precision shown onscreen"
 msgstr "Lleihau'r trachywiredd degol a ddangosir ar y sgrin."
 
-#: ui/CellToolBase.cpp:392
+#: ui/CellToolBase.cpp:381
 msgid "Upper Case"
 msgstr "Priflythrennau"
 
-#: ui/CellToolBase.cpp:393
+#: ui/CellToolBase.cpp:382
 #, fuzzy
 #| msgid "Upper Case"
 msgid "Upper"
 msgstr "Priflythrennau"
 
-#: ui/CellToolBase.cpp:396
+#: ui/CellToolBase.cpp:385
 #, fuzzy
 msgid "Convert all letters to upper case"
 msgstr "Trosi pob llythyren i briflythyren."
 
-#: ui/CellToolBase.cpp:398
+#: ui/CellToolBase.cpp:387
 msgid "Lower Case"
 msgstr "Is-lythrennau"
 
-#: ui/CellToolBase.cpp:399
+#: ui/CellToolBase.cpp:388
 #, fuzzy
 #| msgid "Power"
 msgid "Lower"
 msgstr "Pŵer"
 
-#: ui/CellToolBase.cpp:402
+#: ui/CellToolBase.cpp:391
 #, fuzzy
 msgid "Convert all letters to lower case"
 msgstr "Trosi pob llythyren i is-lythyren."
 
-#: ui/CellToolBase.cpp:404
+#: ui/CellToolBase.cpp:393
 msgid "Convert First Letter to Upper Case"
 msgstr "Trosi'r Llythyren Gyntaf i Briflythyren"
 
-#: ui/CellToolBase.cpp:405
+#: ui/CellToolBase.cpp:394
 #, fuzzy
 msgid "First Letter Upper"
 msgstr "Trosi'r Llythyren &Gyntaf ym Mhriflythyren"
 
-#: ui/CellToolBase.cpp:408
+#: ui/CellToolBase.cpp:397
 #, fuzzy
 msgid "Capitalize the first letter"
 msgstr "Priflythrennu'r llythyren gyntaf."
 
-#: ui/CellToolBase.cpp:410
+#: ui/CellToolBase.cpp:399
 msgid "Background Color"
 msgstr "Lliw Cefndir"
 
-#: ui/CellToolBase.cpp:413
+#: ui/CellToolBase.cpp:402
 #, fuzzy
 msgid "Set the background color"
 msgstr "Gosod lliw'r cefndir"
 
-#: ui/CellToolBase.cpp:420
+#: ui/CellToolBase.cpp:409
 #, fuzzy
 msgid "Merge the selected region"
 msgstr "Uno'r ardal ddetholedig mewn un gell fawr."
 
-#: ui/CellToolBase.cpp:423
+#: ui/CellToolBase.cpp:412
 #, fuzzy
 msgid "Merge the selected Region.horizontally"
 msgstr "Uno'r ardal ddetholedig mewn un gell fawr."
 
-#: ui/CellToolBase.cpp:428
+#: ui/CellToolBase.cpp:417
 #, fuzzy
 msgid "Merge the selected region vertically"
 msgstr "Uno'r ardal ddetholedig mewn un gell fawr."
 
-#: ui/CellToolBase.cpp:433
+#: ui/CellToolBase.cpp:422
 #, fuzzy
 msgid "Unmerge the selected region"
 msgstr "Uno'r ardal ddetholedig mewn un gell fawr."
 
-#: ui/CellToolBase.cpp:439
+#: ui/CellToolBase.cpp:428
 msgid "Resize Column..."
 msgstr "Newid Maint Colofn..."
 
-#: ui/CellToolBase.cpp:442
+#: ui/CellToolBase.cpp:431
 #, fuzzy
 msgid "Change the width of a column"
 msgstr "Newid lled colofn."
 
-#: ui/CellToolBase.cpp:446
+#: ui/CellToolBase.cpp:435
 #, fuzzy
 msgid "Inserts a new column into the spreadsheet"
 msgstr "Mewnosod colofn newydd yn y daenlen."
 
-#: ui/CellToolBase.cpp:452
+#: ui/CellToolBase.cpp:441
 #, fuzzy
 msgid "Removes a column from the spreadsheet"
 msgstr "Gwaredu colofn o'r daenlen."
 
-#: ui/CellToolBase.cpp:459
+#: ui/CellToolBase.cpp:448
 #, fuzzy
 msgid "Hide the column from this"
 msgstr "Cuddio'r golofn."
 
-#: ui/CellToolBase.cpp:461
+#: ui/CellToolBase.cpp:450
 msgid "Show Columns..."
 msgstr "Dangos Colofnau..."
 
-#: ui/CellToolBase.cpp:464
+#: ui/CellToolBase.cpp:453
 #, fuzzy
 msgid "Show hidden columns"
 msgstr "Dangos colofnau cudd."
 
-#: ui/CellToolBase.cpp:466
+#: ui/CellToolBase.cpp:455
 msgid "Equalize Column"
 msgstr "Hafalu Colofn"
 
-#: ui/CellToolBase.cpp:469
+#: ui/CellToolBase.cpp:458
 #, fuzzy
 msgid "Resizes selected columns to be the same size"
 msgstr "Newid maint y colofnau detholedig i fod yr un maint."
 
-#: ui/CellToolBase.cpp:474
+#: ui/CellToolBase.cpp:463
 #, fuzzy
 msgid "Show hidden columns in the selection"
 msgstr "Dangos colofnau cudd yn y detholiad."
 
-#: ui/CellToolBase.cpp:477
+#: ui/CellToolBase.cpp:466
 msgid "Resize Row..."
 msgstr "Newid Maint Rhes..."
 
-#: ui/CellToolBase.cpp:480
+#: ui/CellToolBase.cpp:469
 #, fuzzy
 msgid "Change the height of a row"
 msgstr "Newid uchder rhes."
 
-#: ui/CellToolBase.cpp:482 ui/CellToolBase.cpp:488
+#: ui/CellToolBase.cpp:471 ui/CellToolBase.cpp:477
 #, fuzzy
 #| msgid "Row"
 msgid "Rows"
 msgstr "Rhes"
 
-#: ui/CellToolBase.cpp:484
+#: ui/CellToolBase.cpp:473
 #, fuzzy
 msgid "Inserts a new row into the spreadsheet"
 msgstr "Mewnosod rhes newydd yn y daenlen."
 
-#: ui/CellToolBase.cpp:490
+#: ui/CellToolBase.cpp:479
 #, fuzzy
 msgid "Removes a row from the spreadsheet"
 msgstr "Dileu rhes o'r daenlen."
 
-#: ui/CellToolBase.cpp:497
+#: ui/CellToolBase.cpp:486
 #, fuzzy
 msgid "Hide a row from this"
 msgstr "Cuddio rhes."
 
-#: ui/CellToolBase.cpp:499
+#: ui/CellToolBase.cpp:488
 msgid "Show Rows..."
 msgstr "Dangos Rhesi..."
 
-#: ui/CellToolBase.cpp:502
+#: ui/CellToolBase.cpp:491
 #, fuzzy
 msgid "Show hidden rows"
 msgstr "Dangos rhesi cudd."
 
-#: ui/CellToolBase.cpp:504
+#: ui/CellToolBase.cpp:493
 msgid "Equalize Row"
 msgstr "Hafalu Rhes"
 
-#: ui/CellToolBase.cpp:507
+#: ui/CellToolBase.cpp:496
 #, fuzzy
 msgid "Resizes selected rows to be the same size"
 msgstr "Newid maint y rhesi detholedig i fod yr un maint."
 
-#: ui/CellToolBase.cpp:513
+#: ui/CellToolBase.cpp:502
 #, fuzzy
 msgid "Show hidden rows in the selection"
 msgstr "Dangos rhesi cudd yn y detholiad."
 
-#: ui/CellToolBase.cpp:515
+#: ui/CellToolBase.cpp:504
 msgid "Adjust Row && Column"
 msgstr "Addasu Rhes a Cholofn"
 
-#: ui/CellToolBase.cpp:518
+#: ui/CellToolBase.cpp:507
 #, fuzzy
 msgid "Adjusts row/column size so that the contents will fit"
 msgstr "Addasu maint y rhes/colofn er mwyn i'r cynnwys ffitio."
 
-#: ui/CellToolBase.cpp:522 ui/CellToolBase.cpp:528 ui/CellToolBase_p.cpp:1286
+#: ui/CellToolBase.cpp:511 ui/CellToolBase.cpp:517 ui/CellToolBase_p.cpp:1290
 #, fuzzy
 #| msgid "Cells:"
 msgid "Cells..."
 msgstr "Celloedd"
 
-#: ui/CellToolBase.cpp:523 ui/CellToolBase_p.cpp:1282
+#: ui/CellToolBase.cpp:512 ui/CellToolBase_p.cpp:1286
 msgid "Insert Cells..."
 msgstr "Mewnosod Celloedd..."
 
-#: ui/CellToolBase.cpp:524
+#: ui/CellToolBase.cpp:513
 #, fuzzy
 msgid "Insert a blank cell into the spreadsheet"
 msgstr "Mewnosod cell wag yn y daenlen."
 
-#: ui/CellToolBase.cpp:529
+#: ui/CellToolBase.cpp:518
 msgid "Remove Cells..."
 msgstr "Gwaredu Celloedd..."
 
-#: ui/CellToolBase.cpp:530
+#: ui/CellToolBase.cpp:519
 #, fuzzy
 msgid "Removes the cells from the spreadsheet"
 msgstr "Gwaredu'r gell gyfredol o'r daenlen."
 
-#: ui/CellToolBase.cpp:537
+#: ui/CellToolBase.cpp:526
 #, fuzzy
 #| msgid "Clear &All"
 msgid "Clear All"
 msgstr "Gwagu'r Cwbl"
 
-#: ui/CellToolBase.cpp:538
+#: ui/CellToolBase.cpp:527
 #, fuzzy
 msgid "Clear all contents and formatting of the current cell"
 msgstr "Dileu cynnwys a fformatio y gell gyfredol."
 
-#: ui/CellToolBase.cpp:542
+#: ui/CellToolBase.cpp:531
 #, fuzzy
 msgid "Contents"
 msgstr "Sylwadau"
 
-#: ui/CellToolBase.cpp:543
+#: ui/CellToolBase.cpp:532
 #, fuzzy
 msgid "Clear Contents"
 msgstr "Sylwadau"
 
-#: ui/CellToolBase.cpp:544
+#: ui/CellToolBase.cpp:533
 #, fuzzy
 msgid "Remove the contents of the current cell"
 msgstr "Dileu cynnwys y gell gyfredol."
 
-#: ui/CellToolBase.cpp:548
+#: ui/CellToolBase.cpp:537
 #, fuzzy
 #| msgid "Comment"
 msgid "Comment..."
 msgstr "Sylwad"
 
-#: ui/CellToolBase.cpp:549
+#: ui/CellToolBase.cpp:538
 #, fuzzy
 msgid "Edit a comment for this cell"
 msgstr "Golygu sylwad ar gyfer y gell hon."
 
-#: ui/CellToolBase.cpp:555
+#: ui/CellToolBase.cpp:544
 #, fuzzy
 msgid "Remove this cell's comment"
 msgstr "Gwaredu'r sylwad o'r gell hon."
 
-#: ui/CellToolBase.cpp:559
+#: ui/CellToolBase.cpp:548
 #, fuzzy
 #| msgid "Conditional Cell Attributes..."
 msgid "Conditional Styles..."
 msgstr "Priodoleddau Cell Amodol ..."
 
-#: ui/CellToolBase.cpp:560
+#: ui/CellToolBase.cpp:549
 #, fuzzy
 msgid "Set cell style based on certain conditions"
 msgstr "Gosod fformat y gell wedi'i seilio ar rai amodau."
 
-#: ui/CellToolBase.cpp:565
+#: ui/CellToolBase.cpp:554
 #, fuzzy
 msgid "Remove Conditional Styles"
 msgstr "Gwaredu'r fformatio amodol y gell."
 
-#: ui/CellToolBase.cpp:566
+#: ui/CellToolBase.cpp:555
 #, fuzzy
 msgid "Remove the conditional cell styles"
 msgstr "Gwaredu'r fformatio amodol y gell."
 
-#: ui/CellToolBase.cpp:570
+#: ui/CellToolBase.cpp:559
 msgid "&Link..."
 msgstr "C&yswllt..."
 
-#: ui/CellToolBase.cpp:573
+#: ui/CellToolBase.cpp:562
 #, fuzzy
 msgid "Insert an Internet hyperlink"
 msgstr "Mewnosod cyswllt Rhyngrwyd."
 
-#: ui/CellToolBase.cpp:575
+#: ui/CellToolBase.cpp:564
 #, fuzzy
 msgid "Link"
 msgstr "Mewnosod Cyswllt"
 
-#: ui/CellToolBase.cpp:577
+#: ui/CellToolBase.cpp:566
 #, fuzzy
 msgid "Remove a link"
 msgstr "Dileu &Pob Gwesteiwr"
 
-#: ui/CellToolBase.cpp:581
+#: ui/CellToolBase.cpp:570
 msgid "Validity..."
 msgstr "Dilysrwydd..."
 
-#: ui/CellToolBase.cpp:582
+#: ui/CellToolBase.cpp:571
 #, fuzzy
 msgid "Set tests to confirm cell data is valid"
 msgstr "Gosod profion i gadarnhau bod data'r gell yn ddilys."
 
-#: ui/CellToolBase.cpp:587
+#: ui/CellToolBase.cpp:576
 #, fuzzy
 msgid "Remove Validity"
 msgstr "Dileu &Pob Gwesteiwr"
 
-#: ui/CellToolBase.cpp:588
+#: ui/CellToolBase.cpp:577
 #, fuzzy
 msgid "Remove the validity tests on this cell"
 msgstr "Gwaredu'r profion dilysrwydd ar y gell yma."
 
-#: ui/CellToolBase.cpp:594
+#: ui/CellToolBase.cpp:583
 msgid "&Sort..."
 msgstr "&Trefnu..."
 
-#: ui/CellToolBase.cpp:597
+#: ui/CellToolBase.cpp:586
 #, fuzzy
 msgid "Sort a group of cells"
 msgstr "Trefnu grŵp o gelloedd."
 
-#: ui/CellToolBase.cpp:599
+#: ui/CellToolBase.cpp:588
 msgid "Sort &Decreasing"
 msgstr "Trefnu &Disgynnol"
 
-#: ui/CellToolBase.cpp:602
+#: ui/CellToolBase.cpp:591
 #, fuzzy
 msgid "Sort a group of cells in decreasing(last to first) order"
 msgstr "Trefnu grŵp o gelloedd mewn trefn ddisgynnol (olaf i gyntaf)."
 
-#: ui/CellToolBase.cpp:604
+#: ui/CellToolBase.cpp:593
 msgid "Sort &Increasing"
 msgstr "Trefnu &Esgynnol"
 
-#: ui/CellToolBase.cpp:607
+#: ui/CellToolBase.cpp:596
 #, fuzzy
 msgid "Sort a group of cells in ascending(first to last) order"
 msgstr "Trefnu grŵp o gelloedd mewn trefn esgynnol (cyntaf i olaf)."
 
-#: ui/CellToolBase.cpp:609
+#: ui/CellToolBase.cpp:598
 #, fuzzy
 #| msgid "Autofill"
 msgid "&Auto-Filter"
 msgstr "Hunan-lenwi"
 
-#: ui/CellToolBase.cpp:612
+#: ui/CellToolBase.cpp:601
 msgid "Add an automatic filter to a cell range"
 msgstr ""
 
-#: ui/CellToolBase.cpp:616
+#: ui/CellToolBase.cpp:605
 msgid "&Left"
 msgstr "&Chwith"
 
-#: ui/CellToolBase.cpp:620
+#: ui/CellToolBase.cpp:609
 msgid "&Right"
 msgstr "&De"
 
-#: ui/CellToolBase.cpp:624
+#: ui/CellToolBase.cpp:613
 msgid "&Up"
 msgstr "I &Fyny"
 
-#: ui/CellToolBase.cpp:628
+#: ui/CellToolBase.cpp:617
 msgid "&Down"
 msgstr "I &Lawr"
 
-#: ui/CellToolBase.cpp:632
+#: ui/CellToolBase.cpp:621
 msgid "Autosum"
 msgstr "Hunan-swm"
 
-#: ui/CellToolBase.cpp:635
+#: ui/CellToolBase.cpp:624
 msgid "Insert the 'sum' function"
 msgstr "Mewnosod y ffwythiant 'swm'"
 
-#: ui/CellToolBase.cpp:639
+#: ui/CellToolBase.cpp:628
 msgid "&Series..."
 msgstr "&Cyfres..."
 
-#: ui/CellToolBase.cpp:642
+#: ui/CellToolBase.cpp:631
 #, fuzzy
 msgid "Insert a series"
 msgstr "Mewnosod cyfres."
 
-#: ui/CellToolBase.cpp:644
+#: ui/CellToolBase.cpp:633
 msgid "&Function..."
 msgstr "&Ffwythiant..."
 
-#: ui/CellToolBase.cpp:647
+#: ui/CellToolBase.cpp:636
 #, fuzzy
 msgid "Insert math expression"
 msgstr "Mewnosod mynegiad mathemateg"
 
-#: ui/CellToolBase.cpp:649
+#: ui/CellToolBase.cpp:638
 msgid "S&pecial Character..."
 msgstr "N&od Arbennig..."
 
-#: ui/CellToolBase.cpp:651
+#: ui/CellToolBase.cpp:640
 #, fuzzy
 msgid "Insert one or more symbols or letters not found on the keyboard"
 msgstr ""
 "Mewnosod un neu fwy o symbolau neu lythrennau ni chanfyddir ar y bysellfwrdd."
 
-#: ui/CellToolBase.cpp:655
+#: ui/CellToolBase.cpp:644
 msgid "From &Database..."
 msgstr "O Gronfa &Ddata..."
 
-#: ui/CellToolBase.cpp:659
+#: ui/CellToolBase.cpp:648
 #, fuzzy
 msgid "Insert data from a SQL database"
 msgstr "Mewnosod data o gronfa ddata SQL."
 
-#: ui/CellToolBase.cpp:662
+#: ui/CellToolBase.cpp:651
 msgid "From &Text File..."
 msgstr "O &Ffeil Testun..."
 
-#: ui/CellToolBase.cpp:663
+#: ui/CellToolBase.cpp:652
 #, fuzzy
 #| msgid "From &Text File..."
 msgid "Text File"
 msgstr "O &Ffeil Testun..."
 
-#: ui/CellToolBase.cpp:666
+#: ui/CellToolBase.cpp:655
 #, fuzzy
 msgid "Insert data from a text file to the current cursor position/selection"
 msgstr ""
 "Mewnosod data o ffeil testun i leoliad cyfredol y cyrchydd neu i'r detholiad "
 "cyfredol."
 
-#: ui/CellToolBase.cpp:668
+#: ui/CellToolBase.cpp:657
 msgid "From &Clipboard..."
 msgstr "O'r &Gludfwrdd..."
 
-#: ui/CellToolBase.cpp:669
+#: ui/CellToolBase.cpp:658
 #, fuzzy
 #| msgid "From &Clipboard..."
 msgid "Clipboard"
 msgstr "O'r &Gludfwrdd..."
 
-#: ui/CellToolBase.cpp:672
+#: ui/CellToolBase.cpp:661
 #, fuzzy
 msgid ""
 "Insert CSV data from the clipboard to the current cursor position/selection"
@@ -22373,250 +22348,250 @@ msgstr ""
 "Mewnosod data CSV o'r gludfwrdd i leoliad cyfredol y cyrchydd neu i'r "
 "detholiad cyfredol."
 
-#: ui/CellToolBase.cpp:674
+#: ui/CellToolBase.cpp:663
 msgid "&Text to Columns..."
 msgstr "&Testun i Golofnau..."
 
-#: ui/CellToolBase.cpp:677
+#: ui/CellToolBase.cpp:666
 #, fuzzy
 msgid "Expand the content of cells to multiple columns"
 msgstr "Ehangu cynnwys y celloedd i golofnau lluosog."
 
-#: ui/CellToolBase.cpp:679
+#: ui/CellToolBase.cpp:668
 msgid "Custom Lists..."
 msgstr "Rhestr Addasiedig..."
 
-#: ui/CellToolBase.cpp:682
+#: ui/CellToolBase.cpp:671
 #, fuzzy
 msgid "Create custom lists for sorting or autofill"
 msgstr "Creu rhestri addasiedig i drefnu neu hunan-lenwi. "
 
-#: ui/CellToolBase.cpp:684
+#: ui/CellToolBase.cpp:673
 msgid "&Consolidate..."
 msgstr "&Cyfnerthu..."
 
-#: ui/CellToolBase.cpp:687
+#: ui/CellToolBase.cpp:676
 #, fuzzy
 msgid "Create a region of summary data from a group of similar regions"
 msgstr "Creu ardal o ddata crynodeb oddi wrth grŵp o ardalau tebyg."
 
-#: ui/CellToolBase.cpp:689
+#: ui/CellToolBase.cpp:678
 msgid "&Goal Seek..."
 msgstr "&Ymofyn Cyrchnod..."
 
-#: ui/CellToolBase.cpp:692
+#: ui/CellToolBase.cpp:681
 #, fuzzy
 msgid "Repeating calculation to find a specific value"
 msgstr "Ailadrodd cyfrifiad i ganfod gwerth penodol."
 
-#: ui/CellToolBase.cpp:694
+#: ui/CellToolBase.cpp:683
 msgid "&Subtotals..."
 msgstr "&Is-gyfansymiau..."
 
-#: ui/CellToolBase.cpp:697
+#: ui/CellToolBase.cpp:686
 #, fuzzy
 msgid "Create different kind of subtotals to a list or database"
 msgstr "Creu gwahanol mathau o is-gyfansymiau mewn rhestr neu gronfa ddata."
 
-#: ui/CellToolBase.cpp:699
+#: ui/CellToolBase.cpp:688
 msgid "Area Name..."
 msgstr "Enw Ardal..."
 
-#: ui/CellToolBase.cpp:702
+#: ui/CellToolBase.cpp:691
 #, fuzzy
 msgid "Set a name for a region of the spreadsheet"
 msgstr "Gosod enw ar gyfer ardal yn y daenlen."
 
-#: ui/CellToolBase.cpp:704
+#: ui/CellToolBase.cpp:693
 #, fuzzy
 #| msgid "Show Area..."
 msgid "Named Areas..."
 msgstr "Dangos Ardal..."
 
-#: ui/CellToolBase.cpp:708
+#: ui/CellToolBase.cpp:697
 #, fuzzy
 msgid "Edit or select named areas"
 msgstr "Dangos ardal a enwir."
 
-#: ui/CellToolBase.cpp:712
+#: ui/CellToolBase.cpp:701
 msgid "Formula Selection"
 msgstr "Dewis Fformiwla"
 
-#: ui/CellToolBase.cpp:714
+#: ui/CellToolBase.cpp:703
 #, fuzzy
 msgid "Insert a function"
 msgstr "Mewnosod ffwythiant."
 
-#: ui/CellToolBase.cpp:722 ui/CellToolBase.cpp:2567
+#: ui/CellToolBase.cpp:711 ui/CellToolBase.cpp:2556
 msgid "Others..."
 msgstr "Eraill..."
 
-#: ui/CellToolBase.cpp:730
+#: ui/CellToolBase.cpp:719
 msgid "Modify Cell"
 msgstr "Addasu Cell"
 
-#: ui/CellToolBase.cpp:734
+#: ui/CellToolBase.cpp:723
 #, fuzzy
 msgid "Edit the highlighted cell"
 msgstr "Golygu'r gell amlygedig."
 
-#: ui/CellToolBase.cpp:737
+#: ui/CellToolBase.cpp:726
 #, fuzzy
 msgid "Move the cell object to the clipboard"
 msgstr "Symud y gwrthrych cell i'r gludfwrdd."
 
-#: ui/CellToolBase.cpp:741
+#: ui/CellToolBase.cpp:730
 #, fuzzy
 msgid "Copy the cell object to the clipboard"
 msgstr "Copïo'r gwrthrych cell i'r gludfwrdd."
 
-#: ui/CellToolBase.cpp:745
+#: ui/CellToolBase.cpp:734
 #, fuzzy
 msgid "Paste the contents of the clipboard at the cursor"
 msgstr "Mewnosod cynnwys y gludfwrdd wrth leoliad cyfredol y cyrchydd."
 
-#: ui/CellToolBase.cpp:748
+#: ui/CellToolBase.cpp:737
 msgid "Special Paste..."
 msgstr "Gludo Arbennig..."
 
-#: ui/CellToolBase.cpp:751
+#: ui/CellToolBase.cpp:740
 #, fuzzy
 msgid "Paste the contents of the clipboard with special options"
 msgstr "Gludo cynnwys y gludfwrdd efo dewisiadau arbennig."
 
-#: ui/CellToolBase.cpp:753
+#: ui/CellToolBase.cpp:742
 msgid "Paste with Insertion"
 msgstr "Gludo wrth Fewnosod"
 
-#: ui/CellToolBase.cpp:756
+#: ui/CellToolBase.cpp:745
 #, fuzzy
 msgid "Inserts a cell from the clipboard into the spreadsheet"
 msgstr "Mewnosod cell o'r gludfwrdd yn y daenlen."
 
-#: ui/CellToolBase.cpp:759
+#: ui/CellToolBase.cpp:748
 #, fuzzy
 msgid "Selects all cells in the current sheet"
 msgstr "Ail-gyfrifo gwerth pob cell yn y weithlen gyfredol."
 
-#: ui/CellToolBase.cpp:776
+#: ui/CellToolBase.cpp:765
 msgid "Goto Cell..."
 msgstr "Mynd i Gell..."
 
-#: ui/CellToolBase.cpp:777
+#: ui/CellToolBase.cpp:766
 #, fuzzy
 #| msgid "Goto Cell"
 msgid "Goto"
 msgstr "Ewch i Gell"
 
-#: ui/CellToolBase.cpp:781
+#: ui/CellToolBase.cpp:770
 #, fuzzy
 msgid "Move to a particular cell"
 msgstr "Mynd i gell benodol."
 
-#: ui/CellToolBase.cpp:784
+#: ui/CellToolBase.cpp:773
 #, fuzzy
 msgid "Check the spelling"
 msgstr "Cywiro sillafu."
 
-#: ui/CellToolBase.cpp:787
+#: ui/CellToolBase.cpp:776
 msgid "Run Inspector..."
 msgstr ""
 
-#: ui/CellToolBase.cpp:792
+#: ui/CellToolBase.cpp:781
 #, fuzzy
 #| msgid "AutoFormat..."
 msgid "Auto-Format..."
 msgstr "HunanFformatio..."
 
-#: ui/CellToolBase.cpp:795
+#: ui/CellToolBase.cpp:784
 #, fuzzy
 msgid "Set the worksheet formatting"
 msgstr "Gosod fformatio'r weithlen."
 
-#: ui/CellToolBase.cpp:1411
+#: ui/CellToolBase.cpp:1400
 msgid "Create Style From Cell"
 msgstr "Creu Arddull o Gell "
 
-#: ui/CellToolBase.cpp:1412 ui/View.cpp:2137
+#: ui/CellToolBase.cpp:1401 ui/View.cpp:2086
 msgid "Enter name:"
 msgstr "Rhowch enw:"
 
-#: ui/CellToolBase.cpp:1420
+#: ui/CellToolBase.cpp:1409
 msgid "The style name cannot be empty."
 msgstr "Ni all enw arddull fod yn wag."
 
-#: ui/CellToolBase.cpp:1446 ui/CellToolBase.cpp:1460 ui/CellToolBase.cpp:1474
-#: ui/CellToolBase.cpp:1489 ui/CellToolBase.cpp:1503 ui/CellToolBase.cpp:1521
-#: ui/CellToolBase.cpp:1542 ui/CellToolBase.cpp:1555
+#: ui/CellToolBase.cpp:1435 ui/CellToolBase.cpp:1449 ui/CellToolBase.cpp:1463
+#: ui/CellToolBase.cpp:1478 ui/CellToolBase.cpp:1492 ui/CellToolBase.cpp:1510
+#: ui/CellToolBase.cpp:1531 ui/CellToolBase.cpp:1544
 #, fuzzy
 msgid "Change Font"
 msgstr "Newid Fformat"
 
-#: ui/CellToolBase.cpp:1565 ui/View.cpp:1218
+#: ui/CellToolBase.cpp:1554 ui/View.cpp:1213
 #, fuzzy
 msgid "Change Text Color"
 msgstr "Newid Testun"
 
-#: ui/CellToolBase.cpp:1575 ui/CellToolBase.cpp:1585 ui/CellToolBase.cpp:1595
+#: ui/CellToolBase.cpp:1564 ui/CellToolBase.cpp:1574 ui/CellToolBase.cpp:1584
 msgid "Change Horizontal Alignment"
 msgstr ""
 
-#: ui/CellToolBase.cpp:1605 ui/CellToolBase.cpp:1615 ui/CellToolBase.cpp:1625
+#: ui/CellToolBase.cpp:1594 ui/CellToolBase.cpp:1604 ui/CellToolBase.cpp:1614
 msgid "Change Vertical Alignment"
 msgstr ""
 
-#: ui/CellToolBase.cpp:1635 ui/CellToolBase.cpp:1648 ui/CellToolBase.cpp:1661
-#: ui/CellToolBase.cpp:1671 ui/CellToolBase.cpp:1681 ui/CellToolBase.cpp:1696
-#: ui/CellToolBase.cpp:1711 ui/CellToolBase_p.cpp:833 ui/View.cpp:1252
-#: ui/View.cpp:1262 ui/View.cpp:1275 ui/View.cpp:1290 ui/View.cpp:1300
-#: ui/View.cpp:1313
+#: ui/CellToolBase.cpp:1624 ui/CellToolBase.cpp:1637 ui/CellToolBase.cpp:1650
+#: ui/CellToolBase.cpp:1660 ui/CellToolBase.cpp:1670 ui/CellToolBase.cpp:1685
+#: ui/CellToolBase.cpp:1700 ui/CellToolBase_p.cpp:835 ui/View.cpp:1247
+#: ui/View.cpp:1257 ui/View.cpp:1270 ui/View.cpp:1285 ui/View.cpp:1295
+#: ui/View.cpp:1308
 #, fuzzy
 msgid "Change Border"
 msgstr "Newid Lliw'r Ffin"
 
-#: ui/CellToolBase.cpp:1782
+#: ui/CellToolBase.cpp:1771
 msgid "Format Percent"
 msgstr "Fformatio Canran"
 
-#: ui/CellToolBase.cpp:1792
+#: ui/CellToolBase.cpp:1781
 msgid "Format Money"
 msgstr "Fformatio Arian"
 
-#: ui/CellToolBase.cpp:1822
+#: ui/CellToolBase.cpp:1811
 #, fuzzy
 msgid "Switch to uppercase"
 msgstr "Hepgor pob gair mewn PRIFLYTHRENNAU"
 
-#: ui/CellToolBase.cpp:1832
+#: ui/CellToolBase.cpp:1821
 msgid "Switch to lowercase"
 msgstr ""
 
-#: ui/CellToolBase.cpp:1842
+#: ui/CellToolBase.cpp:1831
 #, fuzzy
 msgid "First letter uppercase"
 msgstr "Trosi'r Llythyren &Gyntaf ym Mhriflythyren"
 
-#: ui/CellToolBase.cpp:1852 ui/View.cpp:1228
+#: ui/CellToolBase.cpp:1841 ui/View.cpp:1223
 #, fuzzy
 msgid "Change Background Color"
 msgstr "Lliw Cefndir"
 
-#: ui/CellToolBase.cpp:2120 ui/CellToolBase_p.cpp:460
+#: ui/CellToolBase.cpp:2109 ui/CellToolBase_p.cpp:462
 #, fuzzy
 msgid "Clear Text"
 msgstr "Newid Testun"
 
-#: ui/CellToolBase.cpp:2180
+#: ui/CellToolBase.cpp:2169
 #, fuzzy
 msgid "Edit Link"
 msgstr "Mewnosod Cyswllt"
 
-#: ui/CellToolBase.cpp:2234 ui/CellToolBase.cpp:2245 ui/CellToolBase.cpp:2267
-#: ui/CellToolBase.cpp:2542
+#: ui/CellToolBase.cpp:2223 ui/CellToolBase.cpp:2234 ui/CellToolBase.cpp:2256
+#: ui/CellToolBase.cpp:2531
 msgid "You must select multiple cells."
 msgstr "Rhaid dewis cellau lluosol."
 
-#: ui/CellToolBase.cpp:2468
+#: ui/CellToolBase.cpp:2457
 #, fuzzy
 msgid ""
 "No database drivers available.  To use this feature you need to install the "
@@ -22625,72 +22600,43 @@ msgstr ""
 "Dim gyrryddion cronfa ddata ar gael!  Rhaid i chi grynhoi Qt efo'r "
 "gyrryddion angenrheidiol."
 
-#: ui/CellToolBase.cpp:3061
-msgid "Spell Checking"
-msgstr "Cywiro sillafu"
-
-#: ui/CellToolBase.cpp:3192
-msgid "Spell checking is complete."
-msgstr "Cwblhawyd y cywiro sillafu."
-
-#: ui/CellToolBase.cpp:3235
-#, fuzzy
-msgid "Do you want to check the spelling in the next sheet?"
-msgstr "Hoffech gywiro'r sillafu yn y tabl nesaf?"
-
-#: ui/CellToolBase.cpp:3285 ui/CellToolBase.cpp:3297
-msgid "Correct Misspelled Word"
-msgstr "Cywiro Gair a Gamsillafwyd?"
-
-#: ui/CellToolBase.cpp:3348
-msgid ""
-"ISpell could not be started.\n"
-"Please make sure you have ISpell properly configured and in your PATH."
-msgstr ""
-"Methwyd cychwyn ISpell.\n"
-"Sicrhewch bod ISpell wedi ei arsefydlu yn gywir ac yn eich PATH."
-
-#: ui/CellToolBase.cpp:3352
-msgid "ISpell seems to have crashed."
-msgstr "Mae ISpell wedi chwalu!"
-
-#: ui/CellToolBase_p.cpp:801
+#: ui/CellToolBase_p.cpp:803
 #, fuzzy
 msgid "Number Format"
 msgstr "Nifer o arbrofion"
 
-#: ui/CellToolBase_p.cpp:807
+#: ui/CellToolBase_p.cpp:809
 #, fuzzy
 msgid "Currency Format"
 msgstr "Arian:"
 
-#: ui/CellToolBase_p.cpp:813
+#: ui/CellToolBase_p.cpp:815
 #, fuzzy
 msgid "Percentage Format"
 msgstr "Fformat Canran"
 
-#: ui/CellToolBase_p.cpp:828
+#: ui/CellToolBase_p.cpp:830
 #, fuzzy
 msgid "Scientific Format"
 msgstr "Gwyddonol"
 
-#: ui/CellToolBase_p.cpp:1290
+#: ui/CellToolBase_p.cpp:1294
 msgid "Adjust Column"
 msgstr "Addasu Colofn"
 
-#: ui/CellToolBase_p.cpp:1298
+#: ui/CellToolBase_p.cpp:1302
 msgid "Delete Columns"
 msgstr "Dileu Colofnau"
 
-#: ui/CellToolBase_p.cpp:1302
+#: ui/CellToolBase_p.cpp:1306
 msgid "Adjust Row"
 msgstr "Addasu Rhes"
 
-#: ui/CellToolBase_p.cpp:1310
+#: ui/CellToolBase_p.cpp:1314
 msgid "Delete Rows"
 msgstr "Dileu Rhesi"
 
-#: ui/CellToolBase_p.cpp:1314
+#: ui/CellToolBase_p.cpp:1318
 msgid "Selection List..."
 msgstr "Rhestr Dewisiadau..."
 
@@ -22703,12 +22649,12 @@ msgstr "Diffinio Amrediad Argraffu"
 msgid "Define the print range in the current sheet"
 msgstr "Diffinio'r amrediad argraffu yn y dalen gyfredol."
 
-#: ui/DefaultTool.cpp:577
+#: ui/DefaultTool.cpp:587
 #, kde-format
 msgid "Link <i>%1</i> activated"
 msgstr ""
 
-#: ui/DefaultTool.cpp:601
+#: ui/DefaultTool.cpp:611
 #, kde-format
 msgid ""
 "This link points to the program or script '%1'.\n"
@@ -22716,7 +22662,7 @@ msgid ""
 "this program?"
 msgstr ""
 
-#: ui/DefaultTool.cpp:606
+#: ui/DefaultTool.cpp:616
 msgid "Open Link?"
 msgstr "Agor Cyswllt?"
 
@@ -22726,12 +22672,12 @@ msgstr "Agor Cyswllt?"
 msgid "Cell Tool"
 msgstr "Arddull cell"
 
-#: ui/Editors.cpp:1818
+#: ui/Editors.cpp:1817
 #, fuzzy
 msgid "Select Single Cell"
 msgstr "Ail-gyfrifo Dalen"
 
-#: ui/Editors.cpp:1822
+#: ui/Editors.cpp:1821
 #, fuzzy
 msgid "Select Multiple Cells"
 msgstr "Rhaid dewis cellau lluosol."
@@ -22751,7 +22697,7 @@ msgstr "Dim i'w argraffu."
 msgid "Modify current sheet's properties"
 msgstr "Addasu priodweddau'r ddalen gyfredol."
 
-#: ui/View.cpp:304 ui/View.cpp:2434
+#: ui/View.cpp:304 ui/View.cpp:2367
 msgid "Insert Sheet"
 msgstr "Mewnosod Dalen"
 
@@ -22765,7 +22711,7 @@ msgstr "Mewnosod dalen newydd."
 msgid "Duplicate the selected sheet"
 msgstr "Cuddio'r ddalen weithredol."
 
-#: ui/View.cpp:316 ui/View.cpp:2435 ui/View.cpp:2440
+#: ui/View.cpp:316 ui/View.cpp:2368 ui/View.cpp:2373
 #, fuzzy
 msgid "Remove the active sheet"
 msgstr "Gwaredu'r ddalen weithredol."
@@ -22876,7 +22822,7 @@ msgstr "&Creu Patrymlun O Ddogfen....."
 msgid "Anchor"
 msgstr "Andora"
 
-#: ui/View.cpp:385 ui/View.cpp:1061
+#: ui/View.cpp:385 ui/View.cpp:1059
 #, fuzzy
 #| msgid "page"
 msgid "Page"
@@ -23012,49 +22958,49 @@ msgstr "Cyfrifo gan ddefnyddio'r cyfrif"
 msgid "Calculate using the countA"
 msgstr "Cyfrifo gan ddefnyddio'r cyfrif"
 
-#: ui/View.cpp:1575 ui/View.cpp:1599 ui/View.cpp:2131
+#: ui/View.cpp:1544 ui/View.cpp:1565 ui/View.cpp:2080
 msgid "You cannot change a protected sheet."
 msgstr "Ni chewch newid dalen a warchodir."
 
-#: ui/View.cpp:1621
+#: ui/View.cpp:1587
 #, fuzzy
 msgid "You cannot hide the last visible sheet."
 msgstr "Ni fedrwch guddio y tabl gweladwy olaf."
 
-#: ui/View.cpp:1679 ui/View.cpp:1736
+#: ui/View.cpp:1641 ui/View.cpp:1698
 msgid "Enter a password."
 msgstr ""
 
-#: ui/View.cpp:1680
+#: ui/View.cpp:1642
 msgid "Protect Document"
 msgstr "Gwarchod Dogfen"
 
-#: ui/View.cpp:1698 ui/View.cpp:1755
+#: ui/View.cpp:1660 ui/View.cpp:1717
 #, fuzzy
 msgid "Enter the password."
 msgstr "Rhowch enw'r ardal:"
 
-#: ui/View.cpp:1699
+#: ui/View.cpp:1661
 msgid "Unprotect Document"
 msgstr "Di-warchod Dogfen"
 
-#: ui/View.cpp:1714 ui/View.cpp:1773
+#: ui/View.cpp:1676 ui/View.cpp:1735
 msgid "Password is incorrect."
 msgstr ""
 
-#: ui/View.cpp:1737
+#: ui/View.cpp:1699
 msgid "Protect Sheet"
 msgstr "Gwarchod Dalen"
 
-#: ui/View.cpp:1756
+#: ui/View.cpp:1718
 msgid "Unprotect Sheet"
 msgstr "Di-warchod Dalen"
 
-#: ui/View.cpp:2097
+#: ui/View.cpp:2048
 msgid "You cannot delete the only sheet."
 msgstr "Ni chewch ddileu'r unig ddalen."
 
-#: ui/View.cpp:2100
+#: ui/View.cpp:2051
 msgid ""
 "You are about to remove the active sheet.\n"
 "Do you want to continue?"
@@ -23062,46 +23008,79 @@ msgstr ""
 "Rydych ar fin gwaredu'r ddalen gyfredol.\n"
 "Ydych am barhau?"
 
-#: ui/View.cpp:2101
+#: ui/View.cpp:2052
 #, fuzzy
 msgid "&Delete"
 msgstr "Dileu Rhesi"
 
-#: ui/View.cpp:2143
+#: ui/View.cpp:2092
 msgid "Sheet name cannot be empty."
 msgstr "Ni all enw dalen fod yn wag."
 
-#: ui/View.cpp:2143 ui/View.cpp:2152
+#: ui/View.cpp:2092 ui/View.cpp:2101
 msgid "Change Sheet Name"
 msgstr "Newid Enw Dalen"
 
-#: ui/View.cpp:2152
+#: ui/View.cpp:2101
 msgid "This name is already used."
 msgstr "Defnyddir yr enw hwn eisoes."
 
-#: ui/View.cpp:2319
+#: ui/View.cpp:2257
 msgid "Sum: "
 msgstr "Swm : "
 
-#: ui/View.cpp:2322
+#: ui/View.cpp:2260
 msgid "Average: "
 msgstr "Cyfartaledd: [1]"
 
-#: ui/View.cpp:2325
+#: ui/View.cpp:2263
 msgid "Min: "
 msgstr "Isaf : "
 
-#: ui/View.cpp:2328
+#: ui/View.cpp:2266
 msgid "Max: "
 msgstr "Uchaf : "
 
-#: ui/View.cpp:2331
+#: ui/View.cpp:2269
 msgid "Count: "
 msgstr "Cyfrif: "
 
-#: ui/View.cpp:2334
+#: ui/View.cpp:2272
 msgid "CountA: "
 msgstr "CountA : "
+
+#~ msgid ""
+#~ "Error in cell %1\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Gwall yng nghell %1\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid "&Show error message for invalid formulae"
+#~ msgstr "Dangos n&eges wall"
+
+#~ msgid "Skip all uppercase words"
+#~ msgstr "Hepgor pob gair mewn PRIFLYTHRENNAU"
+
+#~ msgid "Do not check title case"
+#~ msgstr "Peidiwch â gwirio prif/is-lythrennau yn y tetil"
+
+#~ msgid "Spell Checking"
+#~ msgstr "Cywiro sillafu"
+
+#~ msgid "Spell checking is complete."
+#~ msgstr "Cwblhawyd y cywiro sillafu."
+
+#~ msgid ""
+#~ "ISpell could not be started.\n"
+#~ "Please make sure you have ISpell properly configured and in your PATH."
+#~ msgstr ""
+#~ "Methwyd cychwyn ISpell.\n"
+#~ "Sicrhewch bod ISpell wedi ei arsefydlu yn gywir ac yn eich PATH."
+
+#~ msgid "ISpell seems to have crashed."
+#~ msgstr "Mae ISpell wedi chwalu!"
 
 #~ msgid "&Multiple Operations..."
 #~ msgstr "&Gweithredoedd Lluosog..."
