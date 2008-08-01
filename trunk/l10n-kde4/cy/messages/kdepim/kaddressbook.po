@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-07-31 08:23+0200\n"
+"POT-Creation-Date: 2008-08-01 08:31+0200\n"
 "PO-Revision-Date: 2004-01-07 21:14+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -1037,115 +1037,58 @@ msgstr "Golygu Cyswllt '%1'"
 msgid "Contact Editor"
 msgstr "Golygydd Cysylltiadau"
 
-#: addresseeeditorwidget.cpp:165
-msgid "Edit Name..."
-msgstr "Golygu Enw..."
-
-#: addresseeeditorwidget.cpp:166
-msgid "Edit the contact's name"
-msgstr "Golygu enw'r cyswllt"
-
-#: addresseeeditorwidget.cpp:184
+#: addresseeeditorwidget.cpp:171
 #, kde-format
 msgctxt "<roleLabel>:"
 msgid "%1:"
 msgstr " %1:"
 
-#: addresseeeditorwidget.cpp:193
+#: addresseeeditorwidget.cpp:176
 #, kde-format
 msgctxt "<organizationLabel>:"
 msgid "%1:"
 msgstr "%1:"
 
-#: addresseeeditorwidget.cpp:202 nameeditdialog.cpp:105
-msgid "Formatted name:"
-msgstr "Enw wedi ei fformadu:"
-
-#: addresseeeditorwidget.cpp:261
+#: addresseeeditorwidget.cpp:208
 #, kde-format
 msgctxt "<urlLabel>:"
 msgid "%1:"
 msgstr " %1:"
 
-#: addresseeeditorwidget.cpp:270
-msgid "Blog feed:"
-msgstr ""
-
-#: addresseeeditorwidget.cpp:292 kabcore.cpp:1302
-msgid "Select Categories..."
-msgstr "Gosod Categorïau..."
-
-#: addresseeeditorwidget.cpp:308
+#: addresseeeditorwidget.cpp:231
 msgid "&General"
 msgstr "&Cyffredinol"
 
-#: addresseeeditorwidget.cpp:332
-msgid "Department:"
-msgstr "Adran:"
-
-#: addresseeeditorwidget.cpp:340
-msgid "Office:"
-msgstr "Swyddfa:"
-
-#: addresseeeditorwidget.cpp:348
-msgid "Profession:"
-msgstr "Galwedigaeth:"
-
-#: addresseeeditorwidget.cpp:356
-msgid "Manager's name:"
-msgstr "Enw'r Rheolwr:"
-
-#: addresseeeditorwidget.cpp:364
-msgid "Assistant's name:"
-msgstr "Enw'r Cynorthwy-ydd"
-
-#: addresseeeditorwidget.cpp:372
+#: addresseeeditorwidget.cpp:256
 #, kde-format
 msgctxt "<titleLabel>:"
 msgid "%1:"
 msgstr " %1:"
 
-#: addresseeeditorwidget.cpp:391
-msgid "Nickname:"
-msgstr "Ffugenw:"
-
-#: addresseeeditorwidget.cpp:399
+#: addresseeeditorwidget.cpp:267
 #, fuzzy
 msgctxt "Wife/Husband/..."
 msgid "Partner's name:"
 msgstr "Enw'r Rheolwr:"
 
-#: addresseeeditorwidget.cpp:407
-#, fuzzy
-msgid "Birthdate:"
-msgstr "Penblwydd:"
-
-#: addresseeeditorwidget.cpp:417
-msgid "Anniversary:"
-msgstr "Dathliad:"
-
-#: addresseeeditorwidget.cpp:432
-msgid "Note:"
-msgstr "Nodyn:"
-
-#: addresseeeditorwidget.cpp:445
+#: addresseeeditorwidget.cpp:284
 msgid "&Details"
 msgstr "&Manylion"
 
-#: addresseeeditorwidget.cpp:458
+#: addresseeeditorwidget.cpp:297
 msgid "Misc"
 msgstr "Amrywiol"
 
-#: addresseeeditorwidget.cpp:837
+#: addresseeeditorwidget.cpp:676
 msgid "You must specify a valid date"
 msgstr "Rhaid i chi benodi dyddiad dilys"
 
-#: addresseeeditorwidget.cpp:857
+#: addresseeeditorwidget.cpp:696
 #, fuzzy
 msgid "You have to enter a valid birthdate."
 msgstr "Rhaid i chi benodi dyddiad dilys"
 
-#: addresseeeditorwidget.cpp:863
+#: addresseeeditorwidget.cpp:702
 msgid "You have to enter a valid anniversary."
 msgstr ""
 
@@ -1166,7 +1109,9 @@ msgstr "Math yr Olwg"
 msgid "Add Field"
 msgstr "Pob Maes"
 
-#: customfieldswidget.cpp:64
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 93
+#: customfieldswidget.cpp:64 rc.cpp:24
 msgid "Title:"
 msgstr "Teitl:"
 
@@ -1721,7 +1666,7 @@ msgstr "&Cyswllt Newydd..."
 #. i18n: file kaddressbook_part.rc line 5
 #. i18n: tag text
 #. i18n: file kaddressbookui.rc line 5
-#: kabcore.cpp:1198 rc.cpp:6 rc.cpp:33
+#: kabcore.cpp:1198 rc.cpp:96 rc.cpp:123
 #, fuzzy
 #| msgid "New..."
 msgid "New"
@@ -1916,6 +1861,12 @@ msgstr ""
 "amryw o raglenni KDE, fel nad oes rhaid mewnosod eich manylion personol fwy "
 "nag unwaith."
 
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 179
+#: kabcore.cpp:1302 rc.cpp:78
+msgid "Select Categories..."
+msgstr "Gosod Categorïau..."
+
 #: kabcore.cpp:1304
 msgid "Set the categories for all selected contacts."
 msgstr "Gosod categorïau ar gyfer pob cyswllt a ddewiswyd."
@@ -2000,8 +1951,10 @@ msgstr "Teitl"
 msgid "Full Name"
 msgstr "Enw Llawn"
 
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 156
 #: ldapsearchdialog.cpp:86 ldapsearchdialog.cpp:180 ldapsearchdialog.cpp:304
-#: ldapsearchdialog.cpp:471
+#: ldapsearchdialog.cpp:471 rc.cpp:75
 msgid "Email"
 msgstr "Ebost"
 
@@ -2046,7 +1999,7 @@ msgstr "Dinas"
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 144
 #: ldapsearchdialog.cpp:96 ldapsearchdialog.cpp:186 nameeditdialog.cpp:314
-#: rc.cpp:194
+#: rc.cpp:284
 msgid "Organization"
 msgstr "Sefydliad"
 
@@ -2088,7 +2041,9 @@ msgctxt "In LDAP attribute"
 msgid "in"
 msgstr "in"
 
-#: ldapsearchdialog.cpp:303 ldapsearchdialog.cpp:466
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 85
+#: ldapsearchdialog.cpp:303 ldapsearchdialog.cpp:466 rc.cpp:69
 msgid "Name"
 msgstr "Enw"
 
@@ -2206,6 +2161,12 @@ msgid ""
 "The predefined honorific suffixes can be extended in the settings dialog."
 msgstr ""
 
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 69
+#: nameeditdialog.cpp:105 rc.cpp:66
+msgid "Formatted name:"
+msgstr "Enw wedi ei fformadu:"
+
 #: nameeditdialog.cpp:117
 msgid "Parse name automatically"
 msgstr "Dosrannu'r enw yn ymosgogol"
@@ -2287,11 +2248,162 @@ msgstr "Hwn yw'r hoff rif ffôn "
 msgid "Types"
 msgstr "Mathau"
 
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 13
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 13
+#: rc.cpp:3 rc.cpp:51
+msgid "Form"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 21
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 109
+#: rc.cpp:6 rc.cpp:27
+#, fuzzy
+#| msgid "Text"
+msgid "TextLabel"
+msgstr "Testun"
+
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 28
+#: rc.cpp:9
+msgid "Department:"
+msgstr "Adran:"
+
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 41
+#: rc.cpp:12
+msgid "Manager's name:"
+msgstr "Enw'r Rheolwr:"
+
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 54
+#: rc.cpp:15
+msgid "Office:"
+msgstr "Swyddfa:"
+
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 67
+#: rc.cpp:18
+msgid "Assistant's name:"
+msgstr "Enw'r Cynorthwy-ydd"
+
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 80
+#: rc.cpp:21
+msgid "Profession:"
+msgstr "Galwedigaeth:"
+
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 116
+#: rc.cpp:30
+msgid "Nickname:"
+msgstr "Ffugenw:"
+
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 129
+#: rc.cpp:33
+#, fuzzy
+msgid "Birthday:"
+msgstr "Penblwydd:"
+
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 140
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 172
+#: rc.cpp:36 rc.cpp:45
+msgid "2008-07-31"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 148
+#: rc.cpp:39
+#, fuzzy
+msgid "Partners name:"
+msgstr "Enw'r Rheolwr:"
+
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 161
+#: rc.cpp:42
+msgid "Anniversary:"
+msgstr "Dathliad:"
+
+#. i18n: tag string
+#. i18n: file addresseditdetailstab.ui line 183
+#: rc.cpp:48
+msgid "Note:"
+msgstr "Nodyn:"
+
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 27
+#: rc.cpp:54
+msgid "Edit the contact's name"
+msgstr "Golygu enw'r cyswllt"
+
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 30
+#: rc.cpp:57
+msgid "Edit Name..."
+msgstr "Golygu Enw..."
+
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 43
+#: rc.cpp:60
+#, fuzzy
+msgid "&Role:"
+msgstr "Gwaredu Rhestr"
+
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 56
+#: rc.cpp:63
+#, fuzzy
+#| msgid "Organization"
+msgid "&Organization"
+msgstr "Sefydliad"
+
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 117
+#. i18n: tag label
+#. i18n: file common/kaddressbook.kcfg line 18
+#: rc.cpp:72 rc.cpp:306
+msgid "Phone"
+msgstr "Ffôn"
+
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 208
+#: rc.cpp:81
+#, fuzzy
+#| msgid "Address:"
+msgid "Address"
+msgstr "Cyfeiriad:"
+
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 217
+#: rc.cpp:84
+#, fuzzy
+#| msgid "Web page:"
+msgid "Home&page:"
+msgstr "Tudalen wê:"
+
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 230
+#: rc.cpp:87
+msgid "&Blog feed:"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file addresseditgeneraltab.ui line 251
+#: rc.cpp:90
+msgid "INet"
+msgstr ""
+
 #. i18n: tag text
 #. i18n: file kaddressbook_part.rc line 4
 #. i18n: tag text
 #. i18n: file kaddressbookui.rc line 4
-#: rc.cpp:3 rc.cpp:30
+#: rc.cpp:93 rc.cpp:120
 #, fuzzy
 msgid "&File"
 msgstr "Hidlen:"
@@ -2300,7 +2412,7 @@ msgstr "Hidlen:"
 #. i18n: file kaddressbook_part.rc line 11
 #. i18n: tag text
 #. i18n: file kaddressbookui.rc line 11
-#: rc.cpp:9 rc.cpp:36
+#: rc.cpp:99 rc.cpp:126
 msgid "&Import"
 msgstr "&Mewnforio"
 
@@ -2308,7 +2420,7 @@ msgstr "&Mewnforio"
 #. i18n: file kaddressbook_part.rc line 13
 #. i18n: tag text
 #. i18n: file kaddressbookui.rc line 13
-#: rc.cpp:12 rc.cpp:39
+#: rc.cpp:102 rc.cpp:129
 msgid "&Export"
 msgstr "&Allforio"
 
@@ -2316,7 +2428,7 @@ msgstr "&Allforio"
 #. i18n: file kaddressbook_part.rc line 24
 #. i18n: tag text
 #. i18n: file kaddressbookui.rc line 24
-#: rc.cpp:15 rc.cpp:42
+#: rc.cpp:105 rc.cpp:132
 #, fuzzy
 msgid "&Edit"
 msgstr "&Golygu..."
@@ -2325,14 +2437,14 @@ msgstr "&Golygu..."
 #. i18n: file kaddressbook_part.rc line 43
 #. i18n: tag text
 #. i18n: file kaddressbookui.rc line 43
-#: rc.cpp:18 rc.cpp:45
+#: rc.cpp:108 rc.cpp:135
 #, fuzzy
 msgid "&View"
 msgstr "Ychwanegu Golwg"
 
 #. i18n: tag text
 #. i18n: file kaddressbook_part.rc line 54
-#: rc.cpp:21
+#: rc.cpp:111
 msgid "Tools"
 msgstr "Offer"
 
@@ -2340,7 +2452,7 @@ msgstr "Offer"
 #. i18n: file kaddressbook_part.rc line 58
 #. i18n: tag text
 #. i18n: file kaddressbookui.rc line 58
-#: rc.cpp:24 rc.cpp:51
+#: rc.cpp:114 rc.cpp:141
 #, fuzzy
 msgid "&Settings"
 msgstr "Gosodiadau Wynebfath"
@@ -2349,73 +2461,73 @@ msgstr "Gosodiadau Wynebfath"
 #. i18n: file kaddressbook_part.rc line 90
 #. i18n: tag text
 #. i18n: file kaddressbookui.rc line 93
-#: rc.cpp:27 rc.cpp:54
+#: rc.cpp:117 rc.cpp:144
 #, fuzzy
 msgid "Main Toolbar"
 msgstr "Bar Offer Cysylltiadau"
 
 #. i18n: tag text
 #. i18n: file kaddressbookui.rc line 54
-#: rc.cpp:48
+#: rc.cpp:138
 #, fuzzy
 msgid "&Tools"
 msgstr "Offer"
 
-#: rc.cpp:55
+#: rc.cpp:145
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "KGyfieithu - Meddalwedd Gymraeg"
 
-#: rc.cpp:56
+#: rc.cpp:146
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kyfieithu@dotmon.com"
 
 #. i18n: tag string
 #. i18n: file editors/imaddressbase.ui line 24
-#: rc.cpp:59 editors/imeditorwidget.cpp:362
+#: rc.cpp:149 editors/imeditorwidget.cpp:362
 msgctxt "Instant messaging"
 msgid "Edit Address"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file editors/imaddressbase.ui line 33
-#: rc.cpp:62
+#: rc.cpp:152
 msgctxt "Instant messaging"
 msgid "&Protocol:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file editors/imaddressbase.ui line 49
-#: rc.cpp:65
+#: rc.cpp:155
 msgctxt "Instant messaging"
 msgid "&Address:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file editors/imaddressbase.ui line 62
-#: rc.cpp:68
+#: rc.cpp:158
 msgctxt "Instant messaging"
 msgid "&Network:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 24
-#: rc.cpp:71
+#: rc.cpp:161
 msgctxt "Instant messaging"
 msgid "IM Addresses"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 46
-#: rc.cpp:74
+#: rc.cpp:164
 msgctxt "Instant messaging"
 msgid "&Set Standard"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 49
-#: rc.cpp:77
+#: rc.cpp:167
 msgctxt "Instant messaging"
 msgid ""
 "The IM Address that is set as the standard is the address that is shown in "
@@ -2424,7 +2536,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 52
-#: rc.cpp:80
+#: rc.cpp:170
 msgctxt "Instant messaging"
 msgid ""
 "<qt>Only one IM Address can be set as the standard IM Address.<br>The "
@@ -2434,42 +2546,42 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 59
-#: rc.cpp:83
+#: rc.cpp:173
 msgctxt "Instant messaging"
 msgid "&Remove"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 66
-#: rc.cpp:86
+#: rc.cpp:176
 msgctxt "Instant messaging"
 msgid "&Edit..."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 73
-#: rc.cpp:89
+#: rc.cpp:179
 msgctxt "Instant messaging"
 msgid "&Add..."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 104
-#: rc.cpp:92
+#: rc.cpp:182
 msgctxt "Instant messaging"
 msgid "Protocol"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 115
-#: rc.cpp:95
+#: rc.cpp:185
 msgctxt "Instant messaging"
 msgid "Address"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 137
-#: rc.cpp:98
+#: rc.cpp:188
 msgctxt "Instant messaging"
 msgid ""
 "<em>Note:</em> Please read the help page before adding or editing Instant "
@@ -2478,31 +2590,31 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 16
-#: rc.cpp:101
+#: rc.cpp:191
 msgid "Appearance Page"
 msgstr "Tudalen Olwg"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 53
-#: rc.cpp:104 printing/detailledstyle.cpp:87
+#: rc.cpp:194 printing/detailledstyle.cpp:87
 msgid "Detailed Print Style - Appearance"
 msgstr "Arddull Manwl Argraffu - Ymddanosiad"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 74
-#: rc.cpp:107
+#: rc.cpp:197
 msgid "Font Settings"
 msgstr "Gosodiadau Wynebfath"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 86
-#: rc.cpp:110
+#: rc.cpp:200
 msgid "Use standard KDE fonts"
 msgstr "Defnyddio wynebfathau arferol KDE"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 108
-#: rc.cpp:113
+#: rc.cpp:203
 msgid "Details font:"
 msgstr "Wynebfath manylion:"
 
@@ -2516,74 +2628,74 @@ msgstr "Wynebfath manylion:"
 #. i18n: file printing/ds_appearance.ui line 226
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 236
-#: rc.cpp:116 rc.cpp:122 rc.cpp:128 rc.cpp:134 rc.cpp:137
+#: rc.cpp:206 rc.cpp:212 rc.cpp:218 rc.cpp:224 rc.cpp:227
 msgid "Size:"
 msgstr "Maint:"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 128
-#: rc.cpp:119
+#: rc.cpp:209
 msgid "Body font:"
 msgstr "Wynebfath corff:"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 148
-#: rc.cpp:125
+#: rc.cpp:215
 msgid "Fixed font:"
 msgstr "Wynebfath gosodedig:"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 201
-#: rc.cpp:131
+#: rc.cpp:221
 msgid "Contact header font:"
 msgstr "Wynebfath pennawd cyswllt:"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 249
-#: rc.cpp:140
+#: rc.cpp:230
 msgid "Headlines:"
 msgstr "Penawdau"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 279
-#: rc.cpp:143
+#: rc.cpp:233
 msgid "Contact Headers"
 msgstr "Penawdau Cyswllt"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 291
-#: rc.cpp:146
+#: rc.cpp:236
 msgid "Use colored contact headers"
 msgstr "Defnyddio penawdau cyswllt lliw"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 327
-#: rc.cpp:149
+#: rc.cpp:239
 msgid "Headline background color:"
 msgstr "Lliw cefndir y pennawd"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 337
-#: rc.cpp:152
+#: rc.cpp:242
 msgid "Headline text color:"
 msgstr "Lliw testun y pennawd"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 16
-#: rc.cpp:155
+#: rc.cpp:245
 #, fuzzy
 msgid "Appearance"
 msgstr "Tudalen Olwg"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 28
-#: rc.cpp:158
+#: rc.cpp:248
 msgid "Miscellaneous"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 56
-#: rc.cpp:161
+#: rc.cpp:251
 msgid ""
 "If this box is checked, at least one page will be printed for every letter "
 "group, regardless of whether entries exist for this letter group. This is "
@@ -2593,13 +2705,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 59
-#: rc.cpp:164
+#: rc.cpp:254
 msgid "Always print pages for all tabs"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 69
-#: rc.cpp:167
+#: rc.cpp:257
 msgid ""
 "This is the minimum number of empty fields that have to be printed in "
 "addition to real entries; if this number is not reached on the first page, "
@@ -2608,7 +2720,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 76
-#: rc.cpp:170
+#: rc.cpp:260
 msgid ""
 "If you often add contacts to your printout manually before entering them "
 "into the KDE addressbook, you should set this option to a value greater than "
@@ -2619,14 +2731,14 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 79
-#: rc.cpp:173
+#: rc.cpp:263
 #, fuzzy
 msgid "Min. number of empty fields:"
 msgstr "Dangos meysydd &gwag"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 86
-#: rc.cpp:176
+#: rc.cpp:266
 msgid ""
 "If this option is turned on, behind the contacts on a page the remaining "
 "space will be filled with empty fields so you can add contacts manually later"
@@ -2634,53 +2746,53 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 89
-#: rc.cpp:179
+#: rc.cpp:269
 msgid "Fill pages with empty address fields"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 102
-#: rc.cpp:182
+#: rc.cpp:272
 msgid "Print Contact's Information"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 114
-#: rc.cpp:185
+#: rc.cpp:275
 #, fuzzy
 msgid "Phone numbers"
 msgstr "Golygu Rhif Ffôn"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 124
-#: rc.cpp:188
+#: rc.cpp:278
 #, fuzzy
 msgid "Email addresses"
 msgstr "Cyfeiriadau ebost:"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 134
-#: rc.cpp:191
+#: rc.cpp:281
 #, fuzzy
 msgid "Street addresses"
 msgstr "Argraffu Cyfeiriadau"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 151
-#: rc.cpp:197
+#: rc.cpp:287
 #, fuzzy
 msgid "Birthday"
 msgstr "Penblwydd:"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 185
-#: rc.cpp:200
+#: rc.cpp:290
 msgid "Letter Groups"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 197
-#: rc.cpp:203
+#: rc.cpp:293
 msgid ""
 "Here you can group letters together as they are grouped in your time "
 "planner. Press 'group letter' to combine the selected letter with the letter "
@@ -2690,55 +2802,49 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 216
-#: rc.cpp:206
+#: rc.cpp:296
 msgid "Group Letter"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 223
-#: rc.cpp:209
+#: rc.cpp:299
 msgid "Ungroup Letter"
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file common/kaddressbook.kcfg line 10
-#: rc.cpp:212
+#: rc.cpp:302
 msgid "Automatic name parsing for new addressees"
 msgstr "Dyrannu enwau ymysgogol ar gyfer cyferiadwyr newydd"
 
 #. i18n: tag label
-#. i18n: file common/kaddressbook.kcfg line 18
-#: rc.cpp:216
-msgid "Phone"
-msgstr "Ffôn"
-
-#. i18n: tag label
 #. i18n: file common/kaddressbook.kcfg line 22
-#: rc.cpp:220
+#: rc.cpp:310
 msgid "Fax"
 msgstr "Ffacs"
 
 #. i18n: tag label
 #. i18n: file common/kaddressbook.kcfg line 27
-#: rc.cpp:224
+#: rc.cpp:314
 msgid "SMS"
 msgstr "SMS"
 
 #. i18n: tag whatsthis
 #. i18n: file common/kaddressbook.kcfg line 28
-#: rc.cpp:227
+#: rc.cpp:317
 msgid "The script used to send a GSM SMS text message to the mobile phone"
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file common/kaddressbook.kcfg line 34
-#: rc.cpp:230
+#: rc.cpp:320
 msgid "Honor KDE single click"
 msgstr "Parchu clic unigol KDE"
 
 #. i18n: tag whatsthis
 #. i18n: file common/kaddressbook.kcfg line 59
-#: rc.cpp:234
+#: rc.cpp:324
 msgid ""
 "If true, the contact list will be placed above the extensions on the left "
 "(distribution list editor etc.) instead of in the middle of the main window"
@@ -4164,6 +4270,10 @@ msgstr "Meysydd &dewisiedig:"
 #: xxport/vcard_xxport.cpp:500
 msgid "Encryption keys"
 msgstr "Allweddau cêl-ysgrifo"
+
+#, fuzzy
+#~ msgid "Birthdate:"
+#~ msgstr "Penblwydd:"
 
 #~ msgid "Picture"
 #~ msgstr "Llun"
