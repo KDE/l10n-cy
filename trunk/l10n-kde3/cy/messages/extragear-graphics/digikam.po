@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-3/digikam.po\n"
-"POT-Creation-Date: 2008-08-02 08:34+0200\n"
+"POT-Creation-Date: 2008-08-05 07:24+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -705,6 +705,7 @@ msgstr "Yn dileu'r ffeil... %1"
 #: imageplugins/coreplugin/imageeffect_rgb.cpp:87
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:125
 #: libs/imageproperties/imagepropertiescolorstab.cpp:160
+#: utilities/rawimport/rawimportdlg.cpp:141
 msgid "Channel:"
 msgstr "Sianel:"
 
@@ -722,6 +723,7 @@ msgstr "Sianel:"
 #: imageplugins/coreplugin/imageeffect_rgb.cpp:90
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:128
 #: libs/imageproperties/imagepropertiescolorstab.cpp:163
+#: utilities/rawimport/rawimportdlg.cpp:144
 msgid "Luminosity"
 msgstr ""
 
@@ -741,6 +743,7 @@ msgstr ""
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:129
 #: libs/imageproperties/imagepropertiescolorstab.cpp:164
 #: libs/imageproperties/imagepropertiescolorstab.cpp:208
+#: utilities/rawimport/rawimportdlg.cpp:145
 msgid "Red"
 msgstr "Coch"
 
@@ -759,6 +762,7 @@ msgstr "Coch"
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:130
 #: libs/imageproperties/imagepropertiescolorstab.cpp:165
 #: libs/imageproperties/imagepropertiescolorstab.cpp:209
+#: utilities/rawimport/rawimportdlg.cpp:146
 msgid "Green"
 msgstr "Gwyrdd"
 
@@ -777,6 +781,7 @@ msgstr "Gwyrdd"
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:131
 #: libs/imageproperties/imagepropertiescolorstab.cpp:166
 #: libs/imageproperties/imagepropertiescolorstab.cpp:210
+#: utilities/rawimport/rawimportdlg.cpp:147
 msgid "Blue"
 msgstr "Glas"
 
@@ -826,6 +831,7 @@ msgstr ""
 #: imageplugins/coreplugin/imageeffect_rgb.cpp:110
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:149
 #: libs/imageproperties/imagepropertiescolorstab.cpp:190
+#: utilities/rawimport/rawimportdlg.cpp:164
 #, fuzzy
 msgid "<p>Linear"
 msgstr "Llinynnol"
@@ -843,6 +849,7 @@ msgstr "Llinynnol"
 #: imageplugins/coreplugin/imageeffect_rgb.cpp:118
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:157
 #: libs/imageproperties/imagepropertiescolorstab.cpp:198
+#: utilities/rawimport/rawimportdlg.cpp:172
 msgid "<p>Logarithmic"
 msgstr ""
 
@@ -1020,6 +1027,7 @@ msgstr ""
 #: libs/dialogs/ctrlpaneldlg.cpp:100 libs/dialogs/imageguidedlg.cpp:135
 #: utilities/batch/batchalbumssyncmetadata.cpp:80
 #: utilities/batch/batchthumbsgenerator.cpp:84
+#: utilities/rawimport/rawimportdlg.cpp:113
 msgid "&Abort"
 msgstr "&Erthylu"
 
@@ -3091,6 +3099,7 @@ msgstr ""
 
 #: digikam/imagepreviewview.cpp:146
 #: utilities/imageeditor/canvas/canvas.cpp:168
+#: utilities/rawimport/rawpreview.cpp:109
 msgid "Pan the image to a region"
 msgstr ""
 
@@ -5004,6 +5013,7 @@ msgstr ""
 #: imageplugins/coreplugin/imageeffect_bwsepia.cpp:208
 #: imageplugins/coreplugin/imageeffect_rgb.cpp:104
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:142
+#: utilities/rawimport/rawimportdlg.cpp:158
 msgid ""
 "<p>Select the histogram scale here."
 "<p>If the image's maximal counts are small, you can use the linear scale."
@@ -5130,6 +5140,7 @@ msgstr ""
 #: imageplugins/coreplugin/imageeffect_bwsepia.cpp:198
 #: imageplugins/coreplugin/imageeffect_rgb.cpp:94
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:132
+#: utilities/rawimport/rawimportdlg.cpp:148
 msgid ""
 "<p>Select the histogram channel to display here:"
 "<p><b>Luminosity</b>: display the image's luminosity values."
@@ -5145,6 +5156,7 @@ msgstr ""
 #: imageplugins/coreplugin/imageeffect_bcg.cpp:139
 #: imageplugins/coreplugin/imageeffect_bwsepia.cpp:241
 #: imageplugins/coreplugin/imageeffect_rgb.cpp:137
+#: utilities/rawimport/rawimportdlg.cpp:189
 msgid ""
 "<p>Here you can see the target preview image histogram drawing of the selected "
 "image channel. This one is re-computed at any settings changes."
@@ -11531,6 +11543,45 @@ msgstr "Yn dileu'r ffeil... %1"
 #, fuzzy
 msgid "&Upload to camera"
 msgstr "Yn dileu'r ffeil... %1"
+
+#: utilities/rawimport/rawimportdlg.cpp:113
+#, fuzzy
+msgid "&Preview"
+msgstr "Rhagolwg"
+
+#: utilities/rawimport/rawimportdlg.cpp:113
+#, fuzzy
+msgid "&Load"
+msgstr "&Llwytho..."
+
+#: utilities/rawimport/rawimportdlg.cpp:118
+#, c-format
+msgid "Raw Import - %1"
+msgstr ""
+
+#: utilities/rawimport/rawimportdlg.cpp:120
+msgid ""
+"<p>Generate a Preview from current settings. Uses a simple bilinear "
+"interpolation for quick results."
+msgstr ""
+
+#: utilities/rawimport/rawimportdlg.cpp:124
+msgid "<p>Load image to editor using current settings."
+msgstr ""
+
+#: utilities/rawimport/rawimportdlg.cpp:126
+msgid "<p>Abort the current Preview"
+msgstr ""
+
+#: utilities/rawimport/rawimportdlg.cpp:128
+msgid "<p>Exit Raw Import Tool"
+msgstr ""
+
+#: utilities/rawimport/rawpreview.cpp:200
+msgid ""
+"Cannot decode RAW image for\n"
+"\"%1\""
+msgstr ""
 
 #: utilities/slideshow/slideshow.cpp:433
 msgid ""
