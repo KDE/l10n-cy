@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdegraphics/kcoloredit.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-19 08:48+0200\n"
+"POT-Creation-Date: 2008-08-25 09:11+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -133,17 +133,17 @@ msgstr ""
 msgid "Last position"
 msgstr ""
 
-#: src/core/palettedocument.cpp:70
+#: src/core/palettedocument.cpp:68
 #, fuzzy
 #| msgid "File to open"
 msgid "File not found"
 msgstr "Ffeil i agor"
 
-#: src/core/palettedocument.cpp:77
+#: src/core/palettedocument.cpp:75
 msgid "Couldn't open the file"
 msgstr ""
 
-#: src/core/palettedocument.cpp:90
+#: src/core/palettedocument.cpp:88
 #, fuzzy
 #| msgid "Could not open file"
 msgid "Is not a palette file"
@@ -187,19 +187,19 @@ msgstr ""
 msgid "If is checked, views will be synchronized"
 msgstr ""
 
-#: src/itemviews/palettebriefview.cpp:227
-#: src/itemviews/palettebriefview.cpp:249
+#: src/itemviews/palettebriefview.cpp:222
+#: src/itemviews/palettebriefview.cpp:244
 #, fuzzy
 #| msgid "Name"
 msgid "Name : "
 msgstr "Enw"
 
-#: src/itemviews/palettebriefview.cpp:269
+#: src/itemviews/palettebriefview.cpp:260
 msgid "Comment : "
 msgstr ""
 
 #: src/itemviews/palettedetailview.cpp:57
-#: src/itemviews/palettedetailview.cpp:210
+#: src/itemviews/palettedetailview.cpp:205
 msgid "Add description"
 msgstr ""
 
@@ -211,35 +211,52 @@ msgstr ""
 msgid " for this palette"
 msgstr ""
 
-#: src/itemviews/palettedetailview.cpp:208
+#: src/itemviews/palettedetailview.cpp:203
 msgid "Edit description"
 msgstr ""
 
-#: src/widgets/kcoloreditwidget.cpp:40
+#: src/widgets/kcoloreditwidget.cpp:41
 msgid "Color tool:"
 msgstr ""
 
-#: src/widgets/kcoloreditwidget.cpp:55
+#: src/widgets/kcoloreditwidget.cpp:44
+msgid "KDE selector"
+msgstr ""
+
+#: src/widgets/kcoloreditwidget.cpp:48
+msgid "GTK selector"
+msgstr ""
+
+#: src/widgets/kcoloreditwidget.cpp:52
+msgid "Gradient selector"
+msgstr ""
+
+#: src/widgets/kcoloreditwidget.cpp:56
+msgctxt "Set of extra tools apart of color selectors"
+msgid "Extra"
+msgstr ""
+
+#: src/widgets/kcoloreditwidget.cpp:65
 msgid "Color information:"
 msgstr ""
 
-#: src/widgets/kcoloreditwidget.cpp:68
+#: src/widgets/kcoloreditwidget.cpp:78
 msgid "Color scheme:"
 msgstr ""
 
-#: src/widgets/colorinfo/colorinfovisual.cpp:68
+#: src/widgets/colorinfo/colorinfovisual.cpp:54
 msgid "Complement"
 msgstr ""
 
-#: src/widgets/colorinfo/colorinfovisual.cpp:100
+#: src/widgets/colorinfo/colorinfovisual.cpp:82
 msgid "Triadic"
 msgstr ""
 
-#: src/widgets/colorinfo/colorinfovisual.cpp:135
+#: src/widgets/colorinfo/colorinfovisual.cpp:113
 msgid "Tetradic"
 msgstr ""
 
-#: src/widgets/colorinfo/colorinfovisual.cpp:171
+#: src/widgets/colorinfo/colorinfovisual.cpp:145
 msgid "Analogous"
 msgstr ""
 
@@ -252,16 +269,19 @@ msgid "RGB Model"
 msgstr ""
 
 #: src/widgets/colorinfo/colorinfotext.cpp:106
+#: src/widgets/colorselectors/kdeselector/kdecolorselector.cpp:39
 #, fuzzy
 #| msgid "Ready."
 msgid "Red"
 msgstr "Parod."
 
 #: src/widgets/colorinfo/colorinfotext.cpp:106
+#: src/widgets/colorselectors/kdeselector/kdecolorselector.cpp:40
 msgid "Green"
 msgstr ""
 
 #: src/widgets/colorinfo/colorinfotext.cpp:106
+#: src/widgets/colorselectors/kdeselector/kdecolorselector.cpp:41
 msgid "Blue"
 msgstr ""
 
@@ -270,14 +290,18 @@ msgid "HSV Model"
 msgstr ""
 
 #: src/widgets/colorinfo/colorinfotext.cpp:125
+#: src/widgets/colorselectors/kdeselector/kdecolorselector.cpp:36
 msgid "Hue"
 msgstr ""
 
 #: src/widgets/colorinfo/colorinfotext.cpp:125
+#: src/widgets/colorselectors/kdeselector/kdecolorselector.cpp:37
+#: src/widgets/colortoolwidget.cpp:51
 msgid "Saturation"
 msgstr ""
 
 #: src/widgets/colorinfo/colorinfotext.cpp:125
+#: src/widgets/colorselectors/kdeselector/kdecolorselector.cpp:38
 #, fuzzy
 #| msgid "Variable"
 msgid "Value"
@@ -319,16 +343,8 @@ msgstr ""
 msgid "Copy color hexadecimal value to clipboard"
 msgstr ""
 
-#: src/widgets/colorselectors/kdeselector/kdecolorselector.cpp:34
-msgid "KDE selector"
-msgstr ""
-
-#: src/widgets/colorselectors/blenderselector/blendercolorselector.cpp:34
-msgid "Gradient selector"
-msgstr ""
-
-#: src/widgets/colorselectors/gtkselector/gtkcolorselector.cpp:33
-msgid "GTK selector"
+#: src/widgets/colorselectors/kdeselector/kdecolorselector.cpp:45
+msgid "Chooser mode:"
 msgstr ""
 
 #: src/widgets/colorwidget.cpp:47
@@ -351,18 +367,22 @@ msgctxt "@action:button"
 msgid "Cancel"
 msgstr ""
 
-#: src/widgets/colortoolwidget.cpp:40
-msgid "Lighting tool"
+#: src/widgets/colortoolwidget.cpp:37
+msgid "Brightness"
 msgstr ""
 
-#: src/widgets/colortoolwidget.cpp:53
+#: src/widgets/colortoolwidget.cpp:68
+msgid "Extra color selectors"
+msgstr ""
+
+#: src/widgets/colortoolwidget.cpp:70
 msgid "pick a color from desktop"
 msgstr ""
 
-#: src/widgets/colortoolwidget.cpp:58
+#: src/widgets/colortoolwidget.cpp:71
 #, fuzzy
 #| msgid "&Color"
-msgid "random colors"
+msgid "Generate a random color"
 msgstr "&Lliw"
 
 #: rc.cpp:1
@@ -375,14 +395,14 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kyfieithu@dotmon.com"
 
-#. i18n: tag text
-#. i18n: file desktop/kcoloreditui.rc line 10
+#. i18n: file: desktop/kcoloreditui.rc:10
+#. i18n: ectx: Menu (palette)
 #: rc.cpp:5
 msgid "Palette"
 msgstr ""
 
-#. i18n: tag text
-#. i18n: file desktop/kcoloreditui.rc line 17
+#. i18n: file: desktop/kcoloreditui.rc:17
+#. i18n: ectx: ToolBar (palette-toolbar)
 #: rc.cpp:8
 msgid "Palette Toolbar"
 msgstr ""
