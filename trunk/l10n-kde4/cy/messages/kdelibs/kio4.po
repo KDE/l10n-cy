@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-10-02 09:44+0200\n"
+"POT-Creation-Date: 2008-10-03 09:40+0200\n"
 "PO-Revision-Date: 2004-01-16 09:20+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -116,7 +116,7 @@ msgctxt "@title job"
 msgid "Unmounting"
 msgstr "Ddi-osod"
 
-#: kio/job.cpp:1987 kio/paste.cpp:63 kio/copyjob.cpp:1185 kio/copyjob.cpp:1715
+#: kio/job.cpp:1987 kio/paste.cpp:63 kio/copyjob.cpp:1191 kio/copyjob.cpp:1722
 #: kio/global.cpp:652
 msgid "File Already Exists"
 msgstr "Ffeil yn Bodoli'n Barod"
@@ -170,7 +170,7 @@ msgstr ""
 msgid "The clipboard is empty"
 msgstr "Mae'r gludfwrdd yn wag "
 
-#: kio/paste.cpp:203 kio/renamedialog.cpp:392 kio/kdirlister.cpp:321
+#: kio/paste.cpp:203 kio/renamedialog.cpp:400 kio/kdirlister.cpp:321
 #: kio/krun.cpp:820
 #, kde-format
 msgid ""
@@ -230,27 +230,82 @@ msgstr "Awgrymu Enw &Newydd"
 msgid "&Skip"
 msgstr "&Hepgor"
 
-#: kio/renamedialog.cpp:113
+#: kio/renamedialog.cpp:111
+msgid "Do not copy or move this folder, skip to the next item instead"
+msgstr ""
+
+#: kio/renamedialog.cpp:112
+msgid "Do not copy or move this file, skip to the next item instead"
+msgstr ""
+
+#: kio/renamedialog.cpp:115
 msgid "&Auto Skip"
 msgstr "Aw&to Hepgor"
 
-#: kio/renamedialog.cpp:118
+#: kio/renamedialog.cpp:116
+msgid ""
+"Do not copy or move any folder that already exists in the destination "
+"folder.\n"
+"You will be prompted again in case of a conflict with an existing file "
+"though."
+msgstr ""
+
+#: kio/renamedialog.cpp:117
+msgid ""
+"Do not copy or move any file that already exists in the destination folder.\n"
+"You will be prompted again in case of a conflict with an existing directory "
+"though."
+msgstr ""
+
+#: kio/renamedialog.cpp:122
+#, fuzzy
+#| msgid "Write"
+msgctxt "Write files into an existing folder"
+msgid "&Write Into"
+msgstr "Ysgrifennu"
+
+#: kio/renamedialog.cpp:122
 msgid "&Overwrite"
 msgstr "&Dros-ysgrifennu"
 
-#: kio/renamedialog.cpp:122
-msgid "O&verwrite All"
+#: kio/renamedialog.cpp:124
+msgid ""
+"Files and folders will be copied into the existing directory, alongside its "
+"existing contents.\n"
+"You will be prompted again in case of a conflict with an existing file in "
+"the directory."
+msgstr ""
+
+#: kio/renamedialog.cpp:128
+#, fuzzy
+#| msgid "O&verwrite All"
+msgctxt "Write files into any existing directory"
+msgid "&Write Into All"
 msgstr "D&ros-ysgrifennu Popeth"
 
 #: kio/renamedialog.cpp:128
+#, fuzzy
+#| msgid "O&verwrite All"
+msgid "&Overwrite All"
+msgstr "D&ros-ysgrifennu Popeth"
+
+#: kio/renamedialog.cpp:130
+msgid ""
+"Files and folders will be copied into any existing directory, alongside its "
+"existing contents.\n"
+"You will be prompted again in case of a conflict with an existing file in a "
+"directory, but not in case of another existing directory."
+msgstr ""
+
+#: kio/renamedialog.cpp:136
 msgid "&Resume"
 msgstr "Ai&l-ddechrau"
 
-#: kio/renamedialog.cpp:133
+#: kio/renamedialog.cpp:141
 msgid "R&esume All"
 msgstr "Ail-ddech&rau Popeth"
 
-#: kio/renamedialog.cpp:145
+#: kio/renamedialog.cpp:153
 #, kde-format
 msgid ""
 "This action would overwrite '%1' with itself.\n"
@@ -259,41 +314,41 @@ msgstr ""
 "Buasai'r gweithrediad yma yn ysgrifennu '%1' dros ei hun.\n"
 "Mewnosodwch enw ffeil newydd:"
 
-#: kio/renamedialog.cpp:147
+#: kio/renamedialog.cpp:155
 msgid "C&ontinue"
 msgstr "&Mynd ymlaen"
 
-#: kio/renamedialog.cpp:194 kio/renamedialog.cpp:272
+#: kio/renamedialog.cpp:202 kio/renamedialog.cpp:280
 #, kde-format
 msgid "An older item named '%1' already exists."
 msgstr "Mae eitem hyn o'r enw '%1' mewn bod yn barod."
 
-#: kio/renamedialog.cpp:196 kio/renamedialog.cpp:274
+#: kio/renamedialog.cpp:204 kio/renamedialog.cpp:282
 #, kde-format
 msgid "A similar file named '%1' already exists."
 msgstr "Mae ffeil tebyg o'r enw '%1' mewn bod yn barod."
 
-#: kio/renamedialog.cpp:198 kio/renamedialog.cpp:276
+#: kio/renamedialog.cpp:206 kio/renamedialog.cpp:284
 #, kde-format
 msgid "A newer item named '%1' already exists."
 msgstr "Mae eitem iau o'r enw '%1' mewn bod yn barod."
 
-#: kio/renamedialog.cpp:210 kio/renamedialog.cpp:245
+#: kio/renamedialog.cpp:218 kio/renamedialog.cpp:253
 #, kde-format
 msgid "size %1"
 msgstr "maint : %1"
 
-#: kio/renamedialog.cpp:218 kio/renamedialog.cpp:252
+#: kio/renamedialog.cpp:226 kio/renamedialog.cpp:260
 #, kde-format
 msgid "created on %1"
 msgstr "creuwyd ar %1"
 
-#: kio/renamedialog.cpp:225 kio/renamedialog.cpp:259
+#: kio/renamedialog.cpp:233 kio/renamedialog.cpp:267
 #, kde-format
 msgid "modified on %1"
 msgstr "newidwyd ar %1"
 
-#: kio/renamedialog.cpp:234
+#: kio/renamedialog.cpp:242
 #, kde-format
 msgid "The source file is '%1'"
 msgstr "Mae'r ffeil tarddiad yn '%1'"
@@ -443,14 +498,14 @@ msgstr ""
 "Gwrthodir y tystysgrif fel a ofynwyd.  Gallwch analluogi hyn yn y ganolfan "
 "rheoli KDE."
 
-#: kio/jobuidelegate.cpp:130 ../kfile/kdiroperator.cpp:748
+#: kio/jobuidelegate.cpp:130 ../kfile/kdiroperator.cpp:766
 #, fuzzy, kde-format
 msgid "Do you really want to delete this item?"
 msgid_plural "Do you really want to delete these %1 items?"
 msgstr[0] "Ydych wir eisiau dileu yr eitem yma?"
 msgstr[1] "Ydych wir eisiau dileu y %1 o eitemau yma?"
 
-#: kio/jobuidelegate.cpp:132 ../kfile/kdiroperator.cpp:750
+#: kio/jobuidelegate.cpp:132 ../kfile/kdiroperator.cpp:768
 msgid "Delete Files"
 msgstr "Dileu Ffeiliau"
 
@@ -461,7 +516,7 @@ msgid_plural "Do you really want to move these %1 items to the trash?"
 msgstr[0] "Ydych wir eisiau dileu yr eitem yma?"
 msgstr[1] "Ydych wir eisiau dileu y %1 o eitemau yma?"
 
-#: kio/jobuidelegate.cpp:144 ../kfile/kdiroperator.cpp:1653
+#: kio/jobuidelegate.cpp:144 ../kfile/kdiroperator.cpp:1733
 msgid "Move to Trash"
 msgstr "Symud i'r Sbwriel"
 
@@ -485,11 +540,11 @@ msgstr "Hepgor"
 msgid "AutoSkip"
 msgstr "Awto Hepgor"
 
-#: kio/copyjob.cpp:902 kio/global.cpp:662
+#: kio/copyjob.cpp:910 kio/global.cpp:662
 msgid "Folder Already Exists"
 msgstr "Plygell yn Bodoli'n Barod"
 
-#: kio/copyjob.cpp:1185 kio/copyjob.cpp:1715
+#: kio/copyjob.cpp:1191 kio/copyjob.cpp:1722
 msgid "Already Exists as Folder"
 msgstr "Yn Bodoli'n Barod fel Plygell"
 
@@ -2634,49 +2689,49 @@ msgstr "Cliciwch y botwm yma i greu plygell newydd."
 msgid "Unable to create io-slave: %1"
 msgstr "Methu creu gwas-io: %1"
 
-#: kio/kdirmodel.cpp:767
+#: kio/kdirmodel.cpp:771
 #, fuzzy
 #| msgid "Name"
 msgctxt "@title:column"
 msgid "Name"
 msgstr "Enw"
 
-#: kio/kdirmodel.cpp:769
+#: kio/kdirmodel.cpp:773
 #, fuzzy
 #| msgid "Size"
 msgctxt "@title:column"
 msgid "Size"
 msgstr "Maint"
 
-#: kio/kdirmodel.cpp:771
+#: kio/kdirmodel.cpp:775
 #, fuzzy
 #| msgid "Date"
 msgctxt "@title:column"
 msgid "Date"
 msgstr "Dyddiad"
 
-#: kio/kdirmodel.cpp:773
+#: kio/kdirmodel.cpp:777
 #, fuzzy
 #| msgid "Permissions"
 msgctxt "@title:column"
 msgid "Permissions"
 msgstr "Caniatad"
 
-#: kio/kdirmodel.cpp:775
+#: kio/kdirmodel.cpp:779
 #, fuzzy
 #| msgid "Owner"
 msgctxt "@title:column"
 msgid "Owner"
 msgstr "Perchennog"
 
-#: kio/kdirmodel.cpp:777
+#: kio/kdirmodel.cpp:781
 #, fuzzy
 #| msgid "Group"
 msgctxt "@title:column"
 msgid "Group"
 msgstr "Grw^p"
 
-#: kio/kdirmodel.cpp:779
+#: kio/kdirmodel.cpp:783
 #, fuzzy
 #| msgid "Type"
 msgctxt "@title:column"
@@ -3346,7 +3401,7 @@ msgstr "Rhyngwladol"
 msgid "Mimetypes"
 msgstr "Mathau MIME"
 
-#: kfile/kicondialog.cpp:364 ../kfile/kfilewidget.cpp:1022
+#: kfile/kicondialog.cpp:364 ../kfile/kfilewidget.cpp:1063
 #, fuzzy
 msgid "Places"
 msgstr "Tudalennau"
@@ -4592,7 +4647,7 @@ msgstr ""
 
 #. i18n: file: kfile/kpropertiesdesktopbase.ui:102
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
-#: rc.cpp:184 ../kfile/kfilewidget.cpp:467
+#: rc.cpp:184 ../kfile/kfilewidget.cpp:500
 msgid "&Name:"
 msgstr "&Enw:"
 
@@ -4781,7 +4836,7 @@ msgid "<!-- This file was generated by Konqueror -->"
 msgstr "<!-- Creuwyd y ffeil yma gan Konqueror -->"
 
 #: bookmarks/kbookmarkimporter_ns.cc:165 bookmarks/kbookmarkimporter_ns.cc:166
-#: bookmarks/kbookmarkdialog.cc:325 ../kfile/kfilewidget.cpp:2105
+#: bookmarks/kbookmarkdialog.cc:325 ../kfile/kfilewidget.cpp:2146
 #, fuzzy
 msgid "Bookmarks"
 msgstr "Tudnod"
@@ -4803,7 +4858,7 @@ msgstr "Agor y Blygell yn y Golygydd Tudnodau"
 msgid "Delete Folder"
 msgstr "Dileu Plygell"
 
-#: bookmarks/kbookmarkmenu.cc:281 ../kfile/kdiroperator.cpp:1731
+#: bookmarks/kbookmarkmenu.cc:281 ../kfile/kdiroperator.cpp:1829
 #, fuzzy
 msgid "Properties"
 msgstr "Priodweddau i %1"
@@ -5613,7 +5668,7 @@ msgctxt "@action:button"
 msgid "Empty Trash"
 msgstr "Sbwriel"
 
-#: ../kfile/kfilefiltercombo.cpp:36 ../kfile/kfilewidget.cpp:1479
+#: ../kfile/kfilefiltercombo.cpp:36 ../kfile/kfilewidget.cpp:1520
 msgid "*|All Files"
 msgstr "*|Pob Ffeil"
 
@@ -5621,7 +5676,7 @@ msgstr "*|Pob Ffeil"
 msgid "All Supported Files"
 msgstr "Pob Ffeil a Cynhelir"
 
-#: ../kfile/kfilewidget.cpp:270
+#: ../kfile/kfilewidget.cpp:277
 #, fuzzy
 #| msgid ""
 #| "<p>While typing in the text area, you may be presented with possible "
@@ -5637,12 +5692,12 @@ msgstr ""
 "nodwedd yma drwy glicio efo botwm de y llygoden, a dewis modd amgen oddiar y "
 "ddewislen <b>Cwblhau Testun</b>"
 
-#: ../kfile/kfilewidget.cpp:331
+#: ../kfile/kfilewidget.cpp:338
 #, fuzzy, kde-format
 msgid "Drive: %1"
 msgstr "maint : %1"
 
-#: ../kfile/kfilewidget.cpp:386
+#: ../kfile/kfilewidget.cpp:393
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Click this button to enter the parent folder.<p>For instance, if the "
@@ -5657,40 +5712,40 @@ msgstr ""
 "os file:/home/%1 yw'r lleoliad cyfredol, bydd clicio'r botwm yma yn mynd â "
 "chi i file:/home.</qt>"
 
-#: ../kfile/kfilewidget.cpp:390
+#: ../kfile/kfilewidget.cpp:397
 msgid "Click this button to move backwards one step in the browsing history."
 msgstr "Cliciwch y botwm yma i symud un cam yn ôl yn yr hanes pori."
 
-#: ../kfile/kfilewidget.cpp:391
+#: ../kfile/kfilewidget.cpp:398
 msgid "Click this button to move forward one step in the browsing history."
 msgstr "Cliciwch y botwm yma i symud un cam ymlaen yn yr hanes pori."
 
-#: ../kfile/kfilewidget.cpp:393
+#: ../kfile/kfilewidget.cpp:400
 msgid "Click this button to reload the contents of the current location."
 msgstr "Cliciwch y botwm yma i ail-lwytho cynnwys y lleoliad cyfredol."
 
-#: ../kfile/kfilewidget.cpp:395
+#: ../kfile/kfilewidget.cpp:402
 msgid "Click this button to create a new folder."
 msgstr "Cliciwch y botwm yma i greu plygell newydd."
 
-#: ../kfile/kfilewidget.cpp:401
+#: ../kfile/kfilewidget.cpp:408
 #, fuzzy
 #| msgid "Show Quick Access Navigation Panel"
 msgid "Show Places Navigation Panel"
 msgstr "Dangos Panel Morlywio Cyrchu ar Frys"
 
-#: ../kfile/kfilewidget.cpp:408
+#: ../kfile/kfilewidget.cpp:415
 #, fuzzy
 msgid "Show Bookmarks"
 msgstr "Nodau tudalen"
 
-#: ../kfile/kfilewidget.cpp:413
+#: ../kfile/kfilewidget.cpp:420
 #, fuzzy
 #| msgid "Operation"
 msgid "Options"
 msgstr "Gweithrediad"
 
-#: ../kfile/kfilewidget.cpp:415
+#: ../kfile/kfilewidget.cpp:422
 #, fuzzy
 #| msgid ""
 #| "<qt>This is the configuration menu for the file dialog. Various options "
@@ -5711,7 +5766,19 @@ msgstr ""
 "li><li>y panel morlywio Cyrchu ar Frys</li><li>rhagolygon ffeil</"
 "li><li>gwahanu plygyll oddiwrth ffeiliau</li></ul></qt>"
 
-#: ../kfile/kfilewidget.cpp:507
+#: ../kfile/kfilewidget.cpp:449
+#, fuzzy
+#| msgid "Show Preview"
+msgid "Show Inline Preview"
+msgstr "Dangos Rhagolwg"
+
+#: ../kfile/kfilewidget.cpp:466
+#, fuzzy
+#| msgid "Icon View"
+msgid "Icon Size"
+msgstr "Golwg Eicon"
+
+#: ../kfile/kfilewidget.cpp:540
 #, fuzzy
 #| msgid ""
 #| "<qt>This is the filter to apply to the file list. File names that do not "
@@ -5729,36 +5796,36 @@ msgstr ""
 "cwymplen, neu gallwch mewnosod hidl addasu yn syth i mewn i'r ardal testun."
 "<p> Caniateir nod-chwilwyr fel * a ?. </qt>"
 
-#: ../kfile/kfilewidget.cpp:513
+#: ../kfile/kfilewidget.cpp:546
 msgid "&Filter:"
 msgstr "&Hidl:"
 
-#: ../kfile/kfilewidget.cpp:693
+#: ../kfile/kfilewidget.cpp:734
 #, fuzzy
 #| msgid "You can only select local files."
 msgid "You can only select one file"
 msgstr "Gallwch ddewis 'mond ffeiliau lleol."
 
-#: ../kfile/kfilewidget.cpp:694
+#: ../kfile/kfilewidget.cpp:735
 msgid "More than one file provided"
 msgstr ""
 
-#: ../kfile/kfilewidget.cpp:715
+#: ../kfile/kfilewidget.cpp:756
 #, fuzzy
 #| msgid "You can only select local files."
 msgid "You can only select local files"
 msgstr "Gallwch ddewis 'mond ffeiliau lleol."
 
-#: ../kfile/kfilewidget.cpp:716
+#: ../kfile/kfilewidget.cpp:757
 #, fuzzy
 msgid "Remote files not accepted"
 msgstr "Ni derbynnir Ffeiliau Pell"
 
-#: ../kfile/kfilewidget.cpp:996
+#: ../kfile/kfilewidget.cpp:1037
 msgid "This is the name to save the file as."
 msgstr " Yr enw i ddefnyddio wrth gadw'r ffeil."
 
-#: ../kfile/kfilewidget.cpp:1001
+#: ../kfile/kfilewidget.cpp:1042
 msgid ""
 "This is the list of files to open. More than one file can be specified by "
 "listing several files, separated by spaces."
@@ -5766,22 +5833,22 @@ msgstr ""
 "Y rhestr o ffeiliau i agor.  Gellir benodi mwy nac un ffeil drwy restru "
 "amryw ffeil, wedi eu gwahanu gan fylchau."
 
-#: ../kfile/kfilewidget.cpp:1008
+#: ../kfile/kfilewidget.cpp:1049
 msgid "This is the name of the file to open."
 msgstr " Enw'r ffeil i agor."
 
-#: ../kfile/kfilewidget.cpp:1210
+#: ../kfile/kfilewidget.cpp:1251
 #, kde-format
 msgid "The file \"%1\" already exists. Do you wish to overwrite it?"
 msgstr ""
 
-#: ../kfile/kfilewidget.cpp:1211
+#: ../kfile/kfilewidget.cpp:1252
 #, fuzzy
 #| msgid "O&verwrite All"
 msgid "Overwrite File?"
 msgstr "D&ros-ysgrifennu Popeth"
 
-#: ../kfile/kfilewidget.cpp:1342
+#: ../kfile/kfilewidget.cpp:1383
 #, fuzzy
 msgid ""
 "The chosen filenames do not\n"
@@ -5790,48 +5857,48 @@ msgstr ""
 "Ymddengys nad ydy \n"
 " enwau'r ffeiliau a ddewiswyd yn ddilys."
 
-#: ../kfile/kfilewidget.cpp:1344
+#: ../kfile/kfilewidget.cpp:1385
 msgid "Invalid Filenames"
 msgstr "Enwau Ffeil Annilys"
 
-#: ../kfile/kfilewidget.cpp:1405
+#: ../kfile/kfilewidget.cpp:1446
 msgid "You can only select local files."
 msgstr "Gallwch ddewis 'mond ffeiliau lleol."
 
-#: ../kfile/kfilewidget.cpp:1406
+#: ../kfile/kfilewidget.cpp:1447
 #, fuzzy
 msgid "Remote Files Not Accepted"
 msgstr "Ni derbynnir Ffeiliau Pell"
 
-#: ../kfile/kfilewidget.cpp:1476
+#: ../kfile/kfilewidget.cpp:1517
 msgid "*|All Folders"
 msgstr "*|Pob Plygell"
 
-#: ../kfile/kfilewidget.cpp:1630
+#: ../kfile/kfilewidget.cpp:1671
 #, fuzzy
 msgid "&Open"
 msgstr "&Agor"
 
-#: ../kfile/kfilewidget.cpp:1797
+#: ../kfile/kfilewidget.cpp:1838
 #, fuzzy, kde-format
 msgid "Automatically select filename e&xtension (%1)"
 msgstr "Dewis e&styniad yr enw ffeil yn awtomatig (%1)"
 
-#: ../kfile/kfilewidget.cpp:1798
+#: ../kfile/kfilewidget.cpp:1839
 #, kde-format
 msgid "the extension <b>%1</b>"
 msgstr "yr estyniad<b>%1</b>"
 
-#: ../kfile/kfilewidget.cpp:1806
+#: ../kfile/kfilewidget.cpp:1847
 #, fuzzy
 msgid "Automatically select filename e&xtension"
 msgstr "Dewis e&styniad yr enw ffeil yn awtomatig"
 
-#: ../kfile/kfilewidget.cpp:1807
+#: ../kfile/kfilewidget.cpp:1848
 msgid "a suitable extension"
 msgstr "estyniad addas"
 
-#: ../kfile/kfilewidget.cpp:1817
+#: ../kfile/kfilewidget.cpp:1858
 #, fuzzy, kde-format
 msgid ""
 "This option enables some convenient features for saving files with "
@@ -5859,7 +5926,7 @@ msgstr ""
 "sicr, alluogwch y dewisiad yma, oherwydd mae'n gwneud eich ffeiliau yn haws "
 "eu trefnu."
 
-#: ../kfile/kfilewidget.cpp:2109
+#: ../kfile/kfilewidget.cpp:2150
 #, fuzzy
 #| msgid ""
 #| "<qt>This button allows you to bookmark specific locations. Click on this "
@@ -5962,12 +6029,12 @@ msgstr ""
 "Creu plygell newydd yn: \n"
 "%1"
 
-#: ../kfile/kdirselectdialog.cpp:143 ../kfile/kdiroperator.cpp:701
+#: ../kfile/kdirselectdialog.cpp:143 ../kfile/kdiroperator.cpp:719
 #, kde-format
 msgid "A file or folder named %1 already exists."
 msgstr "Mae ffeil neu blygell o'r enw %1 mewn bod yn barod."
 
-#: ../kfile/kdirselectdialog.cpp:147 ../kfile/kdiroperator.cpp:704
+#: ../kfile/kdirselectdialog.cpp:147 ../kfile/kdiroperator.cpp:722
 #, fuzzy
 msgid "You do not have permission to create that folder."
 msgstr "Does dim hawliau ganddoch i greu'r plygell yna."
@@ -6075,11 +6142,11 @@ msgstr ""
 msgid "Show Hidden Folders"
 msgstr "Dangos Ffeiliau Cudd"
 
-#: ../kfile/kdiroperator.cpp:666 ../kfile/kdiroperator.cpp:674
+#: ../kfile/kdiroperator.cpp:684 ../kfile/kdiroperator.cpp:692
 msgid "New Folder"
 msgstr "Plygell Newydd"
 
-#: ../kfile/kdiroperator.cpp:675
+#: ../kfile/kdiroperator.cpp:693
 #, kde-format
 msgid ""
 "Create new folder in:\n"
@@ -6088,16 +6155,16 @@ msgstr ""
 "Creu plygell newydd yn: \n"
 "%1"
 
-#: ../kfile/kdiroperator.cpp:719
+#: ../kfile/kdiroperator.cpp:737
 #, fuzzy
 msgid "You did not select a file to delete."
 msgstr "Wnaethoch chi ddim dewis ffeil i ddileu."
 
-#: ../kfile/kdiroperator.cpp:720
+#: ../kfile/kdiroperator.cpp:738
 msgid "Nothing to Delete"
 msgstr "Dim byd i'w dileu."
 
-#: ../kfile/kdiroperator.cpp:741
+#: ../kfile/kdiroperator.cpp:759
 #, kde-format
 msgid ""
 "<qt>Do you really want to delete\n"
@@ -6106,21 +6173,21 @@ msgstr ""
 "<qt>Ydych wir eisiau dileu\n"
 " <b>'%1'</b>?</qt>"
 
-#: ../kfile/kdiroperator.cpp:743
+#: ../kfile/kdiroperator.cpp:761
 msgid "Delete File"
 msgstr "Dileu Ffeil"
 
-#: ../kfile/kdiroperator.cpp:781
+#: ../kfile/kdiroperator.cpp:799
 #, fuzzy
 msgid "You did not select a file to trash."
 msgstr "Wnaethoch chi ddim dewis ffeil i ddileu."
 
-#: ../kfile/kdiroperator.cpp:782
+#: ../kfile/kdiroperator.cpp:800
 #, fuzzy
 msgid "Nothing to Trash"
 msgstr "Dim byd i'w Ddadwneud"
 
-#: ../kfile/kdiroperator.cpp:799
+#: ../kfile/kdiroperator.cpp:817
 #, fuzzy, kde-format
 msgid ""
 "<qt>Do you really want to trash\n"
@@ -6129,114 +6196,126 @@ msgstr ""
 "<qt>Ydych wir eisiau dileu\n"
 " <b>'%1'</b>?</qt>"
 
-#: ../kfile/kdiroperator.cpp:801
+#: ../kfile/kdiroperator.cpp:819
 #, fuzzy
 msgid "Trash File"
 msgstr "Sbwriel"
 
-#: ../kfile/kdiroperator.cpp:802 ../kfile/kdiroperator.cpp:809
+#: ../kfile/kdiroperator.cpp:820 ../kfile/kdiroperator.cpp:827
 msgctxt "to trash"
 msgid "&Trash"
 msgstr ""
 
-#: ../kfile/kdiroperator.cpp:806
+#: ../kfile/kdiroperator.cpp:824
 #, fuzzy, kde-format
 msgid "translators: not called for n == 1"
 msgid_plural "Do you really want to trash these %1 items?"
 msgstr[0] "Ydych wir eisiau dileu'r %1 eitem yma? "
 msgstr[1] "Ydych wir eisiau dileu'r %1 eitem yma?"
 
-#: ../kfile/kdiroperator.cpp:808
+#: ../kfile/kdiroperator.cpp:826
 #, fuzzy
 msgid "Trash Files"
 msgstr "Ffeiliau dros dro"
 
-#: ../kfile/kdiroperator.cpp:935 ../kfile/kdiroperator.cpp:1052
+#: ../kfile/kdiroperator.cpp:1014 ../kfile/kdiroperator.cpp:1131
 msgid "The specified folder does not exist or was not readable."
 msgstr "Nid ydy'r plygell penodol yn bodoli, neu doedd o ddim yn ddarllenadwy."
 
-#: ../kfile/kdiroperator.cpp:1631
+#: ../kfile/kdiroperator.cpp:1711
 msgid "Menu"
 msgstr "Dewislen"
 
-#: ../kfile/kdiroperator.cpp:1635
+#: ../kfile/kdiroperator.cpp:1715
 msgid "Parent Folder"
 msgstr "Plygell Rhiant"
 
-#: ../kfile/kdiroperator.cpp:1642
+#: ../kfile/kdiroperator.cpp:1722
 msgid "Home Folder"
 msgstr "Plygell Cartref"
 
-#: ../kfile/kdiroperator.cpp:1645
+#: ../kfile/kdiroperator.cpp:1725
 #, fuzzy
 msgid "Reload"
 msgstr "Darllen"
 
-#: ../kfile/kdiroperator.cpp:1648
+#: ../kfile/kdiroperator.cpp:1728
 msgid "New Folder..."
 msgstr "Plygell Newydd..."
 
-#: ../kfile/kdiroperator.cpp:1659
+#: ../kfile/kdiroperator.cpp:1739
 #, fuzzy
 msgid "Delete"
 msgstr "Dileu"
 
-#: ../kfile/kdiroperator.cpp:1666
+#: ../kfile/kdiroperator.cpp:1746
 msgid "Sorting"
 msgstr "Didoli"
 
-#: ../kfile/kdiroperator.cpp:1669
+#: ../kfile/kdiroperator.cpp:1749
 msgid "By Name"
 msgstr "Gan Enw"
 
-#: ../kfile/kdiroperator.cpp:1673
+#: ../kfile/kdiroperator.cpp:1753
 msgid "By Size"
 msgstr "Gan Faint"
 
-#: ../kfile/kdiroperator.cpp:1677
+#: ../kfile/kdiroperator.cpp:1757
 msgid "By Date"
 msgstr "Gan Ddyddiad"
 
-#: ../kfile/kdiroperator.cpp:1681
+#: ../kfile/kdiroperator.cpp:1761
 #, fuzzy
 #| msgid "Type"
 msgid "By Type"
 msgstr "Math"
 
-#: ../kfile/kdiroperator.cpp:1685
+#: ../kfile/kdiroperator.cpp:1765
 #, fuzzy
 msgid "Descending"
 msgstr "(Dileu)"
 
-#: ../kfile/kdiroperator.cpp:1695
+#: ../kfile/kdiroperator.cpp:1775
+msgid "Icon Position"
+msgstr ""
+
+#: ../kfile/kdiroperator.cpp:1778
+msgid "Next to the filename"
+msgstr ""
+
+#: ../kfile/kdiroperator.cpp:1782
+msgid "Above the filename"
+msgstr ""
+
+#: ../kfile/kdiroperator.cpp:1793
 msgid "Short View"
 msgstr "Golwg Byr"
 
-#: ../kfile/kdiroperator.cpp:1700
+#: ../kfile/kdiroperator.cpp:1798
 msgid "Detailed View"
 msgstr "Golwg Manwl"
 
-#: ../kfile/kdiroperator.cpp:1705
+#: ../kfile/kdiroperator.cpp:1803
 #, fuzzy
 #| msgid "Detailed View"
 msgid "Tree View"
 msgstr "Golwg Manwl"
 
-#: ../kfile/kdiroperator.cpp:1710
+#: ../kfile/kdiroperator.cpp:1808
 #, fuzzy
 #| msgid "Detailed View"
 msgid "Detailed Tree View"
 msgstr "Golwg Manwl"
 
-#: ../kfile/kdiroperator.cpp:1721
+#: ../kfile/kdiroperator.cpp:1819
 msgid "Show Hidden Files"
 msgstr "Dangos Ffeiliau Cudd"
 
-#: ../kfile/kdiroperator.cpp:1725
+#: ../kfile/kdiroperator.cpp:1823
 msgid "Show Preview"
 msgstr "Dangos Rhagolwg"
 
-#: ../kfile/kdiroperator.cpp:1738
+#: ../kfile/kdiroperator.cpp:1836
 #, fuzzy
 msgid "&View"
 msgstr "&Rhagolwg"
@@ -6641,9 +6720,6 @@ msgstr ""
 
 #~ msgid "Thumbnail Previews"
 #~ msgstr "Rhagolygon Cryno"
-
-#~ msgid "Icon View"
-#~ msgstr "Golwg Eicon"
 
 #~ msgid "Size"
 #~ msgstr "Maint"
