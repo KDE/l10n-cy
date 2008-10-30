@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksystemlog\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-25 09:08+0200\n"
+"POT-Creation-Date: 2008-10-30 10:07+0100\n"
 "PO-Revision-Date: 2008-07-12 06:19+0200\n"
 "Last-Translator: cy@li.org\n"
 "Language-Team: Welsh <cy@li.org>\n"
@@ -176,22 +176,41 @@ msgid "Reloading <b>%1</b>...<br /><i>%2</i>"
 msgstr ""
 
 #: src/lib/logModeItemBuilder.cpp:68 src/lib/logModeItemBuilder.cpp:85
+#: src/modes/cron/cronItemBuilder.h:55
+#: src/modes/cups/cupsAccessItemBuilder.h:55
+#: src/modes/cups/cupsPdfItemBuilder.h:55
+#: src/modes/cups/cupsPageItemBuilder.h:55 src/modes/cups/cupsItemBuilder.h:53
+#: src/modes/acpid/acpidItemBuilder.h:57 src/modes/samba/sambaItemBuilder.h:55
+#: src/modes/apache/apacheItemBuilder.h:55
+#: src/modes/apache/apacheAccessItemBuilder.h:55
+#: src/modes/kernel/kernelItemBuilder.h:57
 msgid "Date:"
 msgstr "Dyddiad:"
 
-#: src/lib/logModeItemBuilder.cpp:69
+#: src/lib/logModeItemBuilder.cpp:69 src/modes/cron/cronItemBuilder.h:56
+#: src/modes/cups/cupsAccessItemBuilder.h:57
 msgid "Hostname:"
 msgstr "Enw Gwesteiwr:"
 
-#: src/lib/logModeItemBuilder.cpp:70
+#: src/lib/logModeItemBuilder.cpp:70 src/modes/cron/cronItemBuilder.h:57
 msgid "Process:"
 msgstr "Proses :"
 
 #: src/lib/logModeItemBuilder.cpp:71 src/lib/logModeItemBuilder.cpp:86
+#: src/modes/cron/cronItemBuilder.h:59
+#: src/modes/cups/cupsAccessItemBuilder.h:56
+#: src/modes/cups/cupsPdfItemBuilder.h:56
+#: src/modes/cups/cupsPageItemBuilder.h:56 src/modes/cups/cupsItemBuilder.h:54
+#: src/modes/acpid/acpidItemBuilder.h:58 src/modes/samba/sambaItemBuilder.h:56
+#: src/modes/apache/apacheItemBuilder.h:56
+#: src/modes/apache/apacheAccessItemBuilder.h:56
+#: src/modes/kernel/kernelItemBuilder.h:58
 msgid "Level:"
 msgstr "Lefel :"
 
 #: src/lib/logModeItemBuilder.cpp:72 src/lib/logModeItemBuilder.cpp:87
+#: src/modes/cron/cronItemBuilder.h:60 src/modes/xorg/xorgItemBuilder.h:78
+#: src/modes/xsession/xsessionItemBuilder.h:78
 msgid "Original file:"
 msgstr ""
 
@@ -296,17 +315,24 @@ msgctxt "Newly created tab"
 msgid "Empty Log"
 msgstr ""
 
-#: src/modes/base/syslogAnalyzer.cpp:58
+#: src/modes/base/syslogAnalyzer.cpp:58 src/modes/cron/cronAnalyzer.h:51
+#: src/modes/cups/cupsPageAnalyzer.h:53 src/modes/cups/cupsAccessAnalyzer.h:53
+#: src/modes/cups/cupsPdfAnalyzer.h:54 src/modes/cups/cupsAnalyzer.h:55
+#: src/modes/acpid/acpidAnalyzer.h:49 src/modes/samba/sambaAnalyzer.h:54
+#: src/modes/apache/apacheAnalyzer.h:53
+#: src/modes/apache/apacheAccessAnalyzer.h:53
+#: src/modes/kernel/kernelAnalyzer.h:58
 msgid "Date"
 msgstr "Dyddiad"
 
-#: src/modes/base/syslogAnalyzer.cpp:59
+#: src/modes/base/syslogAnalyzer.cpp:59 src/modes/cron/cronAnalyzer.h:52
+#: src/modes/cups/cupsAccessAnalyzer.h:54
 #, fuzzy
 #| msgid "Hostname"
 msgid "Host"
 msgstr "Enw gwesteiwr"
 
-#: src/modes/base/syslogAnalyzer.cpp:60
+#: src/modes/base/syslogAnalyzer.cpp:60 src/modes/cron/cronAnalyzer.h:53
 msgid "Process"
 msgstr "Proses"
 
@@ -314,7 +340,11 @@ msgstr "Proses"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #. i18n: file: src/detailDialogBase.ui:28
 #. i18n: ectx: property (text), widget (KTextEdit, message)
-#: src/modes/base/syslogAnalyzer.cpp:61 rc.cpp:351 rc.cpp:399
+#: src/modes/base/syslogAnalyzer.cpp:61 src/modes/cups/cupsPdfAnalyzer.h:55
+#: src/modes/cups/cupsAnalyzer.h:56 src/modes/xorg/xorgAnalyzer.h:61
+#: src/modes/acpid/acpidAnalyzer.h:51 src/modes/samba/sambaAnalyzer.h:58
+#: src/modes/apache/apacheAnalyzer.h:55 src/modes/kernel/kernelAnalyzer.h:60
+#: src/modes/xsession/xsessionAnalyzer.h:55 rc.cpp:351 rc.cpp:399
 msgid "Message"
 msgstr "Neges"
 
@@ -391,8 +421,38 @@ msgstr ""
 msgid "The two arrays size are different, skipping the reading of log files."
 msgstr ""
 
+#: src/modes/cron/cronAnalyzer.h:54 src/modes/cups/cupsPageAnalyzer.h:55
+#: src/modes/cups/cupsAccessAnalyzer.h:56
+#: src/modes/apache/apacheAccessAnalyzer.h:56 src/loggerDialog.cpp:91
+#: src/loggerDialog.cpp:123
+msgid "User"
+msgstr "Defnyddiwr"
+
+#: src/modes/cron/cronAnalyzer.h:55
+msgid "Command"
+msgstr ""
+
+#: src/modes/cron/cronItemBuilder.h:58
+msgid "User:"
+msgstr "Defnyddiwr:"
+
+#: src/modes/cron/cronConfigurationWidget.h:49
 #: src/modes/cron/cronLogMode.cpp:38
 msgid "Cron Log"
+msgstr ""
+
+#: src/modes/cron/cronConfigurationWidget.h:55
+msgid ""
+"<p>These files will be analyzed to show the <b>Cron Logs</b> (i.e. planned "
+"tasks logs). <a href='man:/cron'>More information...</a></p>"
+msgstr ""
+
+#: src/modes/cron/cronConfigurationWidget.h:63
+msgid "Enable Process Filtering"
+msgstr ""
+
+#: src/modes/cron/cronConfigurationWidget.h:75
+msgid "Only keeps lines which matches this process :"
 msgstr ""
 
 #: src/modes/cron/cronLogMode.cpp:47
@@ -407,8 +467,172 @@ msgid ""
 "launched processes."
 msgstr ""
 
+#: src/modes/cups/cupsAccessItemBuilder.h:58
+#: src/modes/apache/apacheAccessItemBuilder.h:58
+msgid "Identification:"
+msgstr "Dynodiad :"
+
+#: src/modes/cups/cupsAccessItemBuilder.h:59
+#: src/modes/cups/cupsPageItemBuilder.h:58
+#: src/modes/apache/apacheAccessItemBuilder.h:59
+msgid "Username:"
+msgstr "Enw defnyddiwr:"
+
+#: src/modes/cups/cupsAccessItemBuilder.h:60
+#: src/modes/apache/apacheAccessItemBuilder.h:60
+#, fuzzy
+#| msgid "Response"
+msgid "HTTP Response:"
+msgstr "Ymateb"
+
+#: src/modes/cups/cupsAccessItemBuilder.h:61
+#: src/modes/apache/apacheAccessItemBuilder.h:61
+msgid "Bytes Sent:"
+msgstr "Didau Wedi'u Hanfon :"
+
+#: src/modes/cups/cupsConfigurationWidget.h:45
+#: src/modes/cups/cupsLogMode.cpp:39
+msgid "Cups Log"
+msgstr ""
+
+#: src/modes/cups/cupsConfigurationWidget.h:45
+msgid "Cups &amp; Cups Web Server Log"
+msgstr ""
+
+#: src/modes/cups/cupsConfigurationWidget.h:51
+msgid ""
+"<p>These files will be analyzed to show the <b>Cups log</b> and the <b>Cups "
+"Web Access log</b>.</p>"
+msgstr ""
+
+#: src/modes/cups/cupsConfigurationWidget.h:53
+#, fuzzy
+#| msgid "Log File"
+msgid "Cups Log Files"
+msgstr "Ffeil Gofnod"
+
+#: src/modes/cups/cupsConfigurationWidget.h:53
+#, fuzzy
+#| msgid "&Add File..."
+msgid "Add Cups File..."
+msgstr "&Ychwanegu Ffeil..."
+
+#: src/modes/cups/cupsConfigurationWidget.h:54
+#, fuzzy
+msgid "Cups Access Log Files"
+msgstr "Ffeil Gofnod"
+
+#: src/modes/cups/cupsConfigurationWidget.h:54
+#, fuzzy
+#| msgid "&Add File..."
+msgid "Add Cups Access File..."
+msgstr "&Ychwanegu Ffeil..."
+
+#: src/modes/cups/cupsConfigurationWidget.h:55
+#, fuzzy
+#| msgid "Log File"
+msgid "Cups Page Log Files"
+msgstr "Ffeil Gofnod"
+
+#: src/modes/cups/cupsConfigurationWidget.h:55
+#, fuzzy
+#| msgid "&Add File..."
+msgid "Add Cups Page File..."
+msgstr "&Ychwanegu Ffeil..."
+
+#: src/modes/cups/cupsConfigurationWidget.h:56
+#, fuzzy
+#| msgid "Log File"
+msgid "Cups PDF Log Files"
+msgstr "Ffeil Gofnod"
+
+#: src/modes/cups/cupsConfigurationWidget.h:56
+#, fuzzy
+#| msgid "&Add File..."
+msgid "Add Cups PDF File..."
+msgstr "&Ychwanegu Ffeil..."
+
+#: src/modes/cups/cupsPdfItemBuilder.h:57
+#, fuzzy
+#| msgid "&Message:"
+msgid "Message:"
+msgstr "&Neges:"
+
+#: src/modes/cups/cupsPageItemBuilder.h:57
+#, fuzzy
+#| msgid "Filter:"
+msgid "Printer:"
+msgstr "Hidl:"
+
+#: src/modes/cups/cupsPageItemBuilder.h:59
+msgid "Job Id:"
+msgstr ""
+
+#: src/modes/cups/cupsPageItemBuilder.h:60
+msgid "Page Number:"
+msgstr ""
+
+#: src/modes/cups/cupsPageItemBuilder.h:61
+msgid "Num Copies:"
+msgstr ""
+
+#: src/modes/cups/cupsPageItemBuilder.h:62
+msgid "Job Billing:"
+msgstr ""
+
 #: src/modes/cups/cupsFactory.cpp:58
 msgid "Cups"
+msgstr ""
+
+#: src/modes/cups/cupsPageAnalyzer.h:54
+msgid "Printer"
+msgstr ""
+
+#: src/modes/cups/cupsPageAnalyzer.h:56
+msgid "Job Id"
+msgstr ""
+
+#: src/modes/cups/cupsPageAnalyzer.h:57
+msgid "Page Number"
+msgstr ""
+
+#: src/modes/cups/cupsPageAnalyzer.h:58
+msgid "Num Copies"
+msgstr ""
+
+#: src/modes/cups/cupsPageAnalyzer.h:59
+msgid "Job Billing"
+msgstr ""
+
+#: src/modes/cups/cupsAccessAnalyzer.h:55
+#, fuzzy
+#| msgid "Group By"
+msgid "Group"
+msgstr "Casglu yn ôl"
+
+#: src/modes/cups/cupsAccessAnalyzer.h:57
+#: src/modes/apache/apacheAccessAnalyzer.h:60
+msgid "HTTP Request"
+msgstr ""
+
+#: src/modes/cups/cupsAccessAnalyzer.h:58
+msgid "Status"
+msgstr ""
+
+#: src/modes/cups/cupsAccessAnalyzer.h:59
+#, fuzzy
+#| msgid "Bytes Sent"
+msgid "Bytes"
+msgstr "Didau Wedi'u Hanfon"
+
+#: src/modes/cups/cupsAccessAnalyzer.h:60
+#, fuzzy
+#| msgid "Open Location"
+msgid "IPP Operation"
+msgstr "Agor Lleoliad"
+
+#: src/modes/cups/cupsAccessAnalyzer.h:61
+msgid "IPP Status"
 msgstr ""
 
 #: src/modes/cups/cupsPdfLogMode.cpp:39
@@ -442,10 +666,6 @@ msgid ""
 "i>)."
 msgstr ""
 
-#: src/modes/cups/cupsLogMode.cpp:39
-msgid "Cups Log"
-msgstr ""
-
 #: src/modes/cups/cupsLogMode.cpp:48
 msgid "Display the Cups log."
 msgstr ""
@@ -454,6 +674,16 @@ msgstr ""
 msgid ""
 "Displays the CUPS log in the current tab. CUPS is the program which manages "
 "printing on your computer."
+msgstr ""
+
+#: src/modes/cups/cupsAnalyzer.h:119
+msgid "debug 2"
+msgstr ""
+
+#: src/modes/cups/cupsAnalyzer.h:139
+msgid ""
+"New Log Level detected: Please send this log file to the KSystemLog "
+"developer to add it."
 msgstr ""
 
 #: src/modes/cups/cupsPageLogMode.cpp:39
@@ -487,7 +717,18 @@ msgstr ""
 msgid "Unable to open this file."
 msgstr ""
 
+#: src/modes/xorg/xorgItemBuilder.h:74 src/modes/xorg/xorgItemBuilder.h:76
+#: src/modes/acpid/acpidItemBuilder.h:59
+msgid "Type:"
+msgstr "Math:"
+
+#: src/modes/xorg/xorgItemBuilder.h:74
+#: src/modes/xsession/xsessionItemBuilder.h:74
+msgid "none"
+msgstr "dim"
+
 #: src/modes/xorg/xorgLogMode.cpp:38
+#: src/modes/xorg/xorgConfigurationWidget.h:46
 msgid "X.org Log"
 msgstr ""
 
@@ -501,6 +742,45 @@ msgid ""
 "displays on screen your desktop and manage your graphical hardware. See this "
 "log if you want to know why you do not have 3D accelerations or why your "
 "input device is not recognized."
+msgstr ""
+
+#: src/modes/xorg/xorgAnalyzer.h:59 src/modes/samba/sambaAnalyzer.h:57
+#: src/modes/xsession/xsessionAnalyzer.h:53
+msgid "Line"
+msgstr "Llinell"
+
+#: src/modes/xorg/xorgAnalyzer.h:60 src/modes/acpid/acpidAnalyzer.h:50
+msgid "Type"
+msgstr "Math"
+
+#: src/modes/xorg/xorgAnalyzer.h:116
+#, fuzzy
+#| msgid "Process"
+msgid "Probed"
+msgstr "Proses"
+
+#: src/modes/xorg/xorgAnalyzer.h:117
+msgid "From config file"
+msgstr ""
+
+#: src/modes/xorg/xorgAnalyzer.h:118
+#, fuzzy
+#| msgid "default setting"
+msgid "Default setting"
+msgstr "gosodiad Rhagosod"
+
+#: src/modes/xorg/xorgAnalyzer.h:119
+msgid "From command Line"
+msgstr ""
+
+#: src/modes/xorg/xorgAnalyzer.h:124
+#, fuzzy
+#| msgid "not implemented"
+msgid "Not implemented"
+msgstr "heb ei weithredoli"
+
+#: src/modes/xorg/xorgConfigurationWidget.h:52
+msgid "<p>These files will be analyzed to show the <b>X.org log</b>.</p>"
 msgstr ""
 
 #: src/modes/acpid/acpidLogMode.cpp:38
@@ -518,6 +798,28 @@ msgid ""
 "buttons..."
 msgstr ""
 
+#: src/modes/acpid/acpidConfigurationWidget.h:47
+msgid "Acpid Log"
+msgstr ""
+
+#: src/modes/acpid/acpidConfigurationWidget.h:53
+msgid "<p>These files will be analyzed to show the <b>Acpid log</b>.</p>"
+msgstr ""
+
+#: src/modes/samba/sambaItemBuilder.h:57
+msgid "Source File:"
+msgstr "Ffeil Tarddiad :"
+
+#: src/modes/samba/sambaItemBuilder.h:58
+msgid "Function:"
+msgstr "Ffwythiant"
+
+#: src/modes/samba/sambaItemBuilder.h:59
+#, fuzzy
+#| msgid "Line"
+msgid "Line:"
+msgstr "Llinell"
+
 #: src/modes/samba/sambaAccessLogMode.cpp:39
 msgid "Samba Access Log"
 msgstr ""
@@ -533,6 +835,7 @@ msgid ""
 msgstr ""
 
 #: src/modes/samba/sambaLogMode.cpp:39
+#: src/modes/samba/sambaConfigurationWidget.h:45
 msgid "Samba Log"
 msgstr ""
 
@@ -545,6 +848,47 @@ msgid ""
 "Displays the Samba log in the current tab. Samba is the file sharing server "
 "which interacts with Microsoft Windows network."
 msgstr ""
+
+#: src/modes/samba/sambaConfigurationWidget.h:51
+msgid ""
+"<p>These files will be analyzed to show <b>Samba log</b>, <b>Samba Access "
+"log</b> and <b>Netbios log</b>.</p>"
+msgstr ""
+
+#: src/modes/samba/sambaConfigurationWidget.h:53
+#, fuzzy
+#| msgid "Log File"
+msgid "Samba Log Files"
+msgstr "Ffeil Gofnod"
+
+#: src/modes/samba/sambaConfigurationWidget.h:53
+#, fuzzy
+#| msgid "&Add File..."
+msgid "Add Samba File..."
+msgstr "&Ychwanegu Ffeil..."
+
+#: src/modes/samba/sambaConfigurationWidget.h:54
+#, fuzzy
+msgid "Samba Access Log Files"
+msgstr "Ffeil Gofnod"
+
+#: src/modes/samba/sambaConfigurationWidget.h:54
+#, fuzzy
+#| msgid "&Add File..."
+msgid "Add Samba Access File..."
+msgstr "&Ychwanegu Ffeil..."
+
+#: src/modes/samba/sambaConfigurationWidget.h:55
+#, fuzzy
+#| msgid "Log File"
+msgid "Netbios Log Files"
+msgstr "Ffeil Gofnod"
+
+#: src/modes/samba/sambaConfigurationWidget.h:55
+#, fuzzy
+#| msgid "&Add File..."
+msgid "Add Netbios File..."
+msgstr "&Ychwanegu Ffeil..."
 
 #: src/modes/samba/netbiosLogMode.cpp:39
 msgid "Netbios Log"
@@ -564,9 +908,73 @@ msgstr ""
 msgid "Samba"
 msgstr ""
 
+#: src/modes/samba/sambaAnalyzer.h:55
+msgid "Source File"
+msgstr "Ffeil Tarddiad"
+
+#: src/modes/samba/sambaAnalyzer.h:56
+msgid "Function"
+msgstr "Ffwythiant"
+
+#: src/modes/apache/apacheConfigurationWidget.h:45
 #: src/modes/apache/apacheLogMode.cpp:39
 msgid "Apache Log"
 msgstr ""
+
+#: src/modes/apache/apacheConfigurationWidget.h:51
+msgid ""
+"<p>These files will be analyzed to show the <b>Apache log</b> and the "
+"<b>Apache Access log</b>.</p>"
+msgstr ""
+
+#: src/modes/apache/apacheConfigurationWidget.h:53
+#, fuzzy
+#| msgid "Log File"
+msgid "Apache Log Files"
+msgstr "Ffeil Gofnod"
+
+#: src/modes/apache/apacheConfigurationWidget.h:53
+#, fuzzy
+#| msgid "&Add File..."
+msgid "Add Apache File..."
+msgstr "&Ychwanegu Ffeil..."
+
+#: src/modes/apache/apacheConfigurationWidget.h:54
+#, fuzzy
+msgid "Apache Access Log Files"
+msgstr "Ffeil Gofnod"
+
+#: src/modes/apache/apacheConfigurationWidget.h:54
+msgid "Add Apache Access File..."
+msgstr ""
+
+#: src/modes/apache/apacheAnalyzer.h:54
+msgid "Client"
+msgstr "Dibynnydd:"
+
+#: src/modes/apache/apacheAccessAnalyzer.h:54
+msgid "Host Name"
+msgstr "Enw Gwesteiwr"
+
+#: src/modes/apache/apacheAccessAnalyzer.h:55
+msgid "Id."
+msgstr "Dynodiad (Id)."
+
+#: src/modes/apache/apacheAccessAnalyzer.h:57
+msgid "Response"
+msgstr "Ymateb"
+
+#: src/modes/apache/apacheAccessAnalyzer.h:58
+msgid "Bytes Sent"
+msgstr "Didau Wedi'u Hanfon"
+
+#: src/modes/apache/apacheAccessAnalyzer.h:59
+msgid "Agent Identity"
+msgstr ""
+
+#: src/modes/apache/apacheAccessAnalyzer.h:61
+msgid "URL"
+msgstr "URL"
 
 #: src/modes/apache/apacheLogMode.cpp:48
 msgid "Display the Apache log."
@@ -576,6 +984,24 @@ msgstr ""
 msgid ""
 "Displays the Apache log in the current tab. Apache is the main used Web "
 "server in the world."
+msgstr ""
+
+#: src/modes/apache/apacheItemBuilder.h:57
+msgid "Client:"
+msgstr "Dibynnydd:"
+
+#: src/modes/apache/apacheAccessItemBuilder.h:57
+#, fuzzy
+#| msgid "Host Name"
+msgid "Host Name:"
+msgstr "Enw Gwesteiwr"
+
+#: src/modes/apache/apacheAccessItemBuilder.h:62
+msgid "Agent Identity:"
+msgstr ""
+
+#: src/modes/apache/apacheAccessItemBuilder.h:63
+msgid "HTTP Request:"
 msgstr ""
 
 #: src/modes/apache/apacheFactory.cpp:54
@@ -600,6 +1026,7 @@ msgid ""
 msgstr ""
 
 #: src/modes/daemon/daemonLogMode.cpp:39
+#: src/modes/daemon/daemonConfigurationWidget.h:47
 #, fuzzy
 #| msgid "Daemon"
 msgid "Daemons Log"
@@ -614,6 +1041,18 @@ msgid ""
 "Displays the daemons log in the current tab. The daemons are all processes "
 "launched in the background of the system. See this log if you want to know "
 "what it occurs in the background of your system."
+msgstr ""
+
+#: src/modes/daemon/daemonConfigurationWidget.h:53
+msgid "<p>These files will be analyzed to show the <b>Daemons Logs</b>.</p>"
+msgstr ""
+
+#: src/modes/kernel/kernelAnalyzer.h:59
+msgid "Component"
+msgstr ""
+
+#: src/modes/kernel/kernelItemBuilder.h:59
+msgid "Component:"
 msgstr ""
 
 #: src/modes/kernel/kernelLogMode.cpp:38
@@ -631,9 +1070,37 @@ msgid ""
 "is the cause of the last <i>kernel panic/oops</i>."
 msgstr ""
 
+#: src/modes/xsession/xsessionConfigurationWidget.h:51
 #: src/modes/xsession/xsessionLogMode.cpp:38
 msgid "X Session Log"
 msgstr ""
+
+#: src/modes/xsession/xsessionConfigurationWidget.h:79
+msgid ""
+"You can type or choose the X Session log file (example: <i>~/.xsession-"
+"errors</i>)."
+msgstr ""
+
+#: src/modes/xsession/xsessionConfigurationWidget.h:80
+msgid ""
+"You can type or choose here the authentication log file. This file will be "
+"analyzed when you select the <b>X Session log</b> menu. Generally, its name "
+"is <i>~/.xsession-errors</i>"
+msgstr ""
+
+#: src/modes/xsession/xsessionConfigurationWidget.h:140
+#, kde-format
+msgid "<li><b>%1</b>: ...</li>"
+msgstr ""
+
+#: src/modes/xsession/xsessionItemBuilder.h:74
+#: src/modes/xsession/xsessionItemBuilder.h:76
+msgid "Program:"
+msgstr "Rhaglen:"
+
+#: src/modes/xsession/xsessionAnalyzer.h:54
+msgid "Program"
+msgstr "Rhaglen"
 
 #: src/modes/xsession/xsessionLogMode.cpp:47
 msgid "Display the X Session log."
@@ -647,8 +1114,32 @@ msgid ""
 "has not started."
 msgstr ""
 
+#: src/modes/authentication/authenticationConfigurationWidget.h:49
 #: src/modes/authentication/authenticationLogMode.cpp:38
 msgid "Authentication Log"
+msgstr ""
+
+#: src/modes/authentication/authenticationConfigurationWidget.h:56
+#, fuzzy
+msgid "Authentication Log File"
+msgstr "Dilysiant"
+
+#: src/modes/authentication/authenticationConfigurationWidget.h:62
+#, fuzzy
+msgid "Authentication Log File:"
+msgstr "Dilysiant"
+
+#: src/modes/authentication/authenticationConfigurationWidget.h:67
+msgid ""
+"You can type or choose the authentication log file (example: <i>/var/log/"
+"auth.log</i>)."
+msgstr ""
+
+#: src/modes/authentication/authenticationConfigurationWidget.h:68
+msgid ""
+"You can type or choose here the authentication log file. This file will be "
+"analyzed when you select the <b>Authentication log</b> menu. Generally, its "
+"name is <i>/var/log/auth.log</i>"
 msgstr ""
 
 #: src/modes/authentication/authenticationLogMode.cpp:47
@@ -662,8 +1153,13 @@ msgid ""
 "tried to crack your system."
 msgstr ""
 
+#: src/modes/system/systemConfigurationWidget.h:48
 #: src/modes/system/systemLogMode.cpp:39
 msgid "System Log"
+msgstr ""
+
+#: src/modes/system/systemConfigurationWidget.h:54
+msgid "<p>These files will be analyzed to show the <b>System logs</b>.</p>"
 msgstr ""
 
 #: src/modes/system/systemLogMode.cpp:48
@@ -676,8 +1172,13 @@ msgid ""
 "non-specialized processes (like \"sudo\" or \"fsck\" commands)"
 msgstr ""
 
+#: src/modes/postfix/postfixConfigurationWidget.h:48
 #: src/modes/postfix/postfixLogMode.cpp:39
 msgid "Postfix Log"
+msgstr ""
+
+#: src/modes/postfix/postfixConfigurationWidget.h:54
+msgid "<p>These files will be analyzed to show the <b>Postfix Logs</b>.</p>"
 msgstr ""
 
 #: src/modes/postfix/postfixLogMode.cpp:48
@@ -747,10 +1248,6 @@ msgstr ""
 #: src/configurationDialog.cpp:108
 msgid "General"
 msgstr "Cyffredinol"
-
-#: src/loggerDialog.cpp:91 src/loggerDialog.cpp:123
-msgid "User"
-msgstr "Defnyddiwr"
 
 #: src/loggerDialog.cpp:113
 msgid "Authentication"
@@ -1985,39 +2482,6 @@ msgstr ""
 msgid "&Close"
 msgstr "&Cau Tab"
 
-#~ msgid "Host Name"
-#~ msgstr "Enw Gwesteiwr"
-
-#~ msgid "Id."
-#~ msgstr "Dynodiad (Id)."
-
-#~ msgid "Response"
-#~ msgstr "Ymateb"
-
-#~ msgid "Bytes Sent"
-#~ msgstr "Didau Wedi'u Hanfon"
-
-#~ msgid "Line"
-#~ msgstr "Llinell"
-
-#~ msgid "Type"
-#~ msgstr "Math"
-
-#~ msgid "default setting"
-#~ msgstr "gosodiad Rhagosod"
-
-#~ msgid "not implemented"
-#~ msgstr "heb ei weithredoli"
-
-#~ msgid "none"
-#~ msgstr "dim"
-
-#~ msgid "Source File"
-#~ msgstr "Ffeil Tarddiad"
-
-#~ msgid "Function"
-#~ msgstr "Ffwythiant"
-
 #~ msgid ""
 #~ "_: NAME OF TRANSLATORS\n"
 #~ "Your names"
@@ -2028,56 +2492,12 @@ msgstr "&Cau Tab"
 #~ "Your emails"
 #~ msgstr "kyfieithu@dotmon.com"
 
-#~ msgid "Client"
-#~ msgstr "Dibynnydd:"
-
-#~ msgid "URL"
-#~ msgstr "URL"
-
-#~ msgid "Program"
-#~ msgstr "Rhaglen"
-
-#~ msgid "User:"
-#~ msgstr "Defnyddiwr:"
-
-#~ msgid "Type:"
-#~ msgstr "Math:"
-
-#~ msgid "Identification:"
-#~ msgstr "Dynodiad :"
-
-#~ msgid "Username:"
-#~ msgstr "Enw defnyddiwr:"
-
-#~ msgid "Bytes Sent:"
-#~ msgstr "Didau Wedi'u Hanfon :"
-
-#~ msgid "Client:"
-#~ msgstr "Dibynnydd:"
-
-#~ msgid "Source File:"
-#~ msgstr "Ffeil Tarddiad :"
-
-#~ msgid "Function:"
-#~ msgstr "Ffwythiant"
-
-#~ msgid "Program:"
-#~ msgstr "Rhaglen:"
-
 #~ msgid "&CUPS"
 #~ msgstr "&CUPS"
 
 #, fuzzy
 #~ msgid "Boot Log File:"
 #~ msgstr "Ffeil Gofnod"
-
-#, fuzzy
-#~ msgid "Authentication Log File"
-#~ msgstr "Dilysiant"
-
-#, fuzzy
-#~ msgid "Authentication Log File:"
-#~ msgstr "Dilysiant"
 
 #~ msgid "Column:"
 #~ msgstr "Colofn:"
@@ -2102,9 +2522,6 @@ msgstr "&Cau Tab"
 #~ "_: Size format\n"
 #~ "%1 MB"
 #~ msgstr "%1 MB"
-
-#~ msgid "Group By"
-#~ msgstr "Casglu yn ôl"
 
 #~ msgid "Day"
 #~ msgstr "Diwrnod"
