@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-08 10:52+0100\n"
+"POT-Creation-Date: 2008-11-10 10:15+0100\n"
 "PO-Revision-Date: 2004-08-12 18:36+0100\n"
 "Last-Translator: KD at Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -1880,7 +1880,7 @@ msgstr ""
 msgid "This shows useful tips on the use of this application."
 msgstr "Dengys hyn gynghorion defnyddiol ar ddefnydd y rhaglen hon."
 
-#: main/KexiMainWindow.cpp:1156 main/KexiMainWindow.cpp:4421
+#: main/KexiMainWindow.cpp:1156 main/KexiMainWindow.cpp:4425
 #, fuzzy
 msgid "Important Information"
 msgstr "Gwybodaeth bwysig"
@@ -1997,7 +1997,7 @@ msgstr ""
 "agor sawl gwrthrych."
 
 #: main/KexiMainWindow.cpp:2083 widget/utils/kexicontextmenuutils.cpp:98
-#: widget/kexipropertyeditorview.cpp:113
+#: widget/kexipropertyeditorview.cpp:111
 #, fuzzy
 msgid "Properties"
 msgstr "Priodweddion y cywaith"
@@ -2065,11 +2065,11 @@ msgstr "Cadw gwrthrych fel"
 msgid "Saving new \"%1\" object failed."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:3603 main/KexiMainWindow.cpp:4863
+#: main/KexiMainWindow.cpp:3603 main/KexiMainWindow.cpp:4867
 msgid "Save changes"
 msgstr "Cadw Newidiadau"
 
-#: main/KexiMainWindow.cpp:3605 main/KexiMainWindow.cpp:4865
+#: main/KexiMainWindow.cpp:3605 main/KexiMainWindow.cpp:4869
 #, kde-format
 msgid ""
 "Pressing this button will save all recent changes made in \"%1\" object."
@@ -2121,36 +2121,36 @@ msgstr "Methu gwaredu ffeil \"%1\". "
 msgid "Renaming object \"%1\" failed."
 msgstr "Cadw gwrthrych fel"
 
-#: main/KexiMainWindow.cpp:4482
+#: main/KexiMainWindow.cpp:4486
 #, fuzzy, kde-format
 msgid "Could not start project \"%1\" in Final Mode."
 msgstr "Methwyd creu cywaith \"%1\""
 
-#: main/KexiMainWindow.cpp:4486
+#: main/KexiMainWindow.cpp:4490
 msgid "No Final Mode data found."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:4493
+#: main/KexiMainWindow.cpp:4497
 #, fuzzy
 msgid "Error reading Final Mode data."
 msgstr "Gwall tra'n darllen y ddogfen."
 
-#: main/KexiMainWindow.cpp:4522
+#: main/KexiMainWindow.cpp:4526
 #, fuzzy
 msgid "Specified plugin does not exist."
 msgstr "Nid yw ffeil %1 yn bodoli."
 
-#: main/KexiMainWindow.cpp:4531
+#: main/KexiMainWindow.cpp:4535
 #, fuzzy
 msgid "Specified object could not be opened."
 msgstr "Creuwyd cronfa ddata \"%1\" ond methwyd ei hagor"
 
-#: main/KexiMainWindow.cpp:4600
+#: main/KexiMainWindow.cpp:4604
 #, fuzzy, kde-format
 msgid "Compacting database file <nobr>\"%1\"</nobr> is not supported."
 msgstr "Ni ellir darllen y ffeil \"%1\"."
 
-#: main/KexiMainWindow.cpp:4612
+#: main/KexiMainWindow.cpp:4616
 msgid ""
 "The current project has to be closed before compacting the database. It will "
 "be open again after compacting.\n"
@@ -2158,23 +2158,23 @@ msgid ""
 "Do you want to continue?"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:4869
+#: main/KexiMainWindow.cpp:4873
 #, kde-format
 msgid ""
 "Pressing this button will ignore all unsaved changes made in \"%1\" object."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:4874
+#: main/KexiMainWindow.cpp:4878
 #, fuzzy
 msgid "Do you want to save changes before printing?"
 msgstr "Ydych eisiau dileu'r rhes dewisiedig?"
 
-#: main/KexiMainWindow.cpp:4876
+#: main/KexiMainWindow.cpp:4880
 #, fuzzy
 msgid "Do you want to save changes before making print preview?"
 msgstr "Ydych eisiau dileu'r rhes dewisiedig?"
 
-#: main/KexiMainWindow.cpp:4878
+#: main/KexiMainWindow.cpp:4882
 #, fuzzy
 msgid "Do you want to save changes before showing page setup?"
 msgstr "Ydych eisiau dileu'r rhes dewisiedig?"
@@ -2871,6 +2871,7 @@ msgid "Closed hand"
 msgstr "Rhes nesaf"
 
 #: koproperty2/koproperty/editors/pixmapedit.cpp:79
+#: koproperty2/koproperty/editors/utils.cpp:29
 #, fuzzy
 #| msgid "&New..."
 msgctxt "Three dots for 'Insert image from file' button"
@@ -3378,6 +3379,11 @@ msgstr "Gwall anhysbys."
 msgid "No connection for cursor open operation specified"
 msgstr "Dim cysylltiad wedi'i benodi ar gyfer y weithred agor cwrchydd"
 
+#: kexidb/drivers/mySQL/mysqlconnection.cpp:127 kexidb/connection.cpp:464
+#, kde-format
+msgid "The database \"%1\" does not exist."
+msgstr "Nid yw'r gronfa ddata \"%1\" yn bodoli."
+
 #: kexidb/drivers/xbase/xbaseexport.cpp:263
 msgid "Data not set for migration"
 msgstr ""
@@ -3779,11 +3785,6 @@ msgstr "Heb ei gysylltu â gweinydd y gronfa ddata"
 #: kexidb/connection.cpp:408
 msgid "Currently no database is used."
 msgstr "Ni ddefnyddir cronfa ddata ar hyn o bryd."
-
-#: kexidb/connection.cpp:464
-#, kde-format
-msgid "The database \"%1\" does not exist."
-msgstr "Nid yw'r gronfa ddata \"%1\" yn bodoli."
 
 #: kexidb/connection.cpp:484
 #, kde-format
