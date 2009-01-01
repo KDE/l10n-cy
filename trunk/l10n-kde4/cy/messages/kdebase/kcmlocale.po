@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmlocale\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-12-31 11:06+0100\n"
+"POT-Creation-Date: 2009-01-01 09:42+0100\n"
 "PO-Revision-Date: 2004-07-04 14:21+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -493,7 +493,63 @@ msgstr "DIWRNODYRWYTHNOSBYR"
 msgid "WEEKDAY"
 msgstr "DIWRNODYRWYTHNOS"
 
-#: localetime.cpp:458
+#: localetime.cpp:207
+msgid "Calendar system:"
+msgstr "Cysawd galendr:"
+
+#. i18n: file: localetime.ui:60
+#. i18n: ectx: property (text), widget (QLabel, m_labTimeFmt)
+#: localetime.cpp:215 rc.cpp:81
+msgid "Time format:"
+msgstr "Fformat amser:"
+
+#. i18n: file: localetime.ui:74
+#. i18n: ectx: property (text), widget (QLabel, m_labDateFmt)
+#: localetime.cpp:220 rc.cpp:84
+msgid "Date format:"
+msgstr "Fformat dyddiad:"
+
+#. i18n: file: localetime.ui:88
+#. i18n: ectx: property (text), widget (QLabel, m_labDateFmtShort)
+#: localetime.cpp:225 rc.cpp:87
+msgid "Short date format:"
+msgstr "Fformat dyddiad byr:"
+
+#. i18n: file: localetime.ui:100
+#. i18n: ectx: property (text), widget (QCheckBox, m_chDateMonthNamePossessive)
+#: localetime.cpp:230 rc.cpp:90
+msgid "Use declined form of month name"
+msgstr "Defnyddio ffurf ffurfdroedig yr enw mis"
+
+#. i18n: file: localetime.ui:118
+#. i18n: ectx: property (text), widget (QLabel, labWeekStartDay)
+#: localetime.cpp:234 rc.cpp:93
+msgid "First day of the week:"
+msgstr "Diwrnod cyntaf yr wythnos:"
+
+#. i18n: file: localetime.ui:132
+#. i18n: ectx: property (text), widget (QLabel, labWorkingWeekStartDay)
+#: localetime.cpp:239 rc.cpp:96
+#, fuzzy
+#| msgid "First day of the week:"
+msgid "First working day of the week:"
+msgstr "Diwrnod cyntaf yr wythnos:"
+
+#. i18n: file: localetime.ui:146
+#. i18n: ectx: property (text), widget (QLabel, labWorkingWeekEndDay)
+#: localetime.cpp:244 rc.cpp:99
+#, fuzzy
+#| msgid "First day of the week:"
+msgid "Last working day of the week:"
+msgstr "Diwrnod cyntaf yr wythnos:"
+
+#. i18n: file: localetime.ui:160
+#. i18n: ectx: property (text), widget (QLabel, labWeekDayOfPray)
+#: localetime.cpp:249 rc.cpp:102
+msgid "Day of the week for religious observance:"
+msgstr ""
+
+#: localetime.cpp:469
 msgctxt "some reasonable time formats for the language"
 msgid ""
 "HH:MM:SS\n"
@@ -502,7 +558,7 @@ msgstr ""
 "AA:MM:EE\n"
 "pA:MM:EE yByP"
 
-#: localetime.cpp:466
+#: localetime.cpp:477
 msgctxt "some reasonable date formats for the language"
 msgid ""
 "WEEKDAY MONTH dD YYYY\n"
@@ -511,7 +567,7 @@ msgstr ""
 "DIWRNODYRWYTHNOS MIS dD BBBB\n"
 "DIWRNODYRWYTHNOSBYR MIS dD BBBB"
 
-#: localetime.cpp:474
+#: localetime.cpp:485
 msgctxt "some reasonable short date formats for the language"
 msgid ""
 "YYYY-MM-DD\n"
@@ -522,27 +578,27 @@ msgstr ""
 "dD.mM.BBBB\n"
 "DD.MM.BBBB"
 
-#: localetime.cpp:485
+#: localetime.cpp:496
 msgctxt "Calendar System Gregorian"
 msgid "Gregorian"
 msgstr "Gregoraidd"
 
-#: localetime.cpp:487
+#: localetime.cpp:498
 msgctxt "Calendar System Hijri"
 msgid "Hijri"
 msgstr "Hijri"
 
-#: localetime.cpp:489
+#: localetime.cpp:500
 msgctxt "Calendar System Hebrew"
 msgid "Hebrew"
 msgstr "Hebraeg"
 
-#: localetime.cpp:491
+#: localetime.cpp:502
 msgctxt "Calendar System Jalali"
 msgid "Jalali"
 msgstr "Jalali"
 
-#: localetime.cpp:494
+#: localetime.cpp:505
 #, fuzzy
 #| msgid ""
 #| "<p>The text in this textbox will be used to format time strings. The "
@@ -582,7 +638,7 @@ msgstr ""
 "amser penodol. Mae canol dydd yn \"yb\" a chanol nos yn \"yp\".</td></tr></"
 "table> "
 
-#: localetime.cpp:517
+#: localetime.cpp:528
 msgid ""
 "<table><tr><td><b>YYYY</b></td><td>The year with century as a decimal number."
 "</td></tr><tr><td><b>YY</b></td><td>The year without century as a decimal "
@@ -608,7 +664,7 @@ msgstr ""
 "diwrnod yr wythnos.</td></tr><tr><td><b>DIWRNODYRWYTHNOS</b></ td><td>Enw "
 "llawn diwrnod yr wythnos.</td></tr></table>"
 
-#: localetime.cpp:538
+#: localetime.cpp:549
 msgid ""
 "<p>The text in this textbox will be used to format long dates. The sequences "
 "below will be replaced:</p>"
@@ -616,7 +672,7 @@ msgstr ""
 "<p> Defnyddir y testun yn y blwch testun yma i fformadu dyddiadau hir. Câ'r "
 "dilynnianau isod eu amnewid:</p>"
 
-#: localetime.cpp:544
+#: localetime.cpp:555
 msgid ""
 "<p>The text in this textbox will be used to format short dates. For "
 "instance, this is used when listing files. The sequences below will be "
@@ -626,14 +682,14 @@ msgstr ""
 "Defnyddir hwn wrth restru ffeiliau, er enghraifft. Câ'r dilynnianau isod eu "
 "amnewid:</p>"
 
-#: localetime.cpp:551
+#: localetime.cpp:562
 msgid ""
 "<p>This option determines which day will be considered as the first one of "
 "the week.</p>"
 msgstr ""
 "<p>Penna'r gosodiad yma pa ddiwrnod ystyrir fel un cytaf yr wythnos.</p>"
 
-#: localetime.cpp:556
+#: localetime.cpp:567
 #, fuzzy
 #| msgid ""
 #| "<p>This option determines which day will be considered as the first one "
@@ -644,7 +700,7 @@ msgid ""
 msgstr ""
 "<p>Penna'r gosodiad yma pa ddiwrnod ystyrir fel un cytaf yr wythnos.</p>"
 
-#: localetime.cpp:561
+#: localetime.cpp:572
 #, fuzzy
 #| msgid ""
 #| "<p>This option determines which day will be considered as the first one "
@@ -655,7 +711,7 @@ msgid ""
 msgstr ""
 "<p>Penna'r gosodiad yma pa ddiwrnod ystyrir fel un cytaf yr wythnos.</p>"
 
-#: localetime.cpp:566
+#: localetime.cpp:577
 #, fuzzy
 #| msgid ""
 #| "<p>This option determines which day will be considered as the first one "
@@ -666,7 +722,7 @@ msgid ""
 msgstr ""
 "<p>Penna'r gosodiad yma pa ddiwrnod ystyrir fel un cytaf yr wythnos.</p>"
 
-#: localetime.cpp:573
+#: localetime.cpp:584
 msgid ""
 "<p>This option determines whether possessive form of month names should be "
 "used in dates.</p>"
@@ -674,7 +730,7 @@ msgstr ""
 "<p>Penna'r gosodiad yma a ddylid defnyddio ffurf feddiannol enwau misoedd "
 "mewn dyddiadau.</p>"
 
-#: localetime.cpp:583
+#: localetime.cpp:594
 #, fuzzy
 #| msgid "Money:"
 msgctxt "Day name list, option for no day of religious observance"
@@ -708,58 +764,6 @@ msgstr ""
 #| msgid "Calendar system:"
 msgid "Calendar system"
 msgstr "Cysawd galendr:"
-
-#. i18n: file: localetime.ui:60
-#. i18n: ectx: property (text), widget (QLabel, m_labTimeFmt)
-#: rc.cpp:81
-msgid "Time format:"
-msgstr "Fformat amser:"
-
-#. i18n: file: localetime.ui:74
-#. i18n: ectx: property (text), widget (QLabel, m_labDateFmt)
-#: rc.cpp:84
-msgid "Date format:"
-msgstr "Fformat dyddiad:"
-
-#. i18n: file: localetime.ui:88
-#. i18n: ectx: property (text), widget (QLabel, m_labDateFmtShort)
-#: rc.cpp:87
-msgid "Short date format:"
-msgstr "Fformat dyddiad byr:"
-
-#. i18n: file: localetime.ui:100
-#. i18n: ectx: property (text), widget (QCheckBox, m_chDateMonthNamePossessive)
-#: rc.cpp:90
-msgid "Use declined form of month name"
-msgstr "Defnyddio ffurf ffurfdroedig yr enw mis"
-
-#. i18n: file: localetime.ui:118
-#. i18n: ectx: property (text), widget (QLabel, labWeekStartDay)
-#: rc.cpp:93
-msgid "First day of the week:"
-msgstr "Diwrnod cyntaf yr wythnos:"
-
-#. i18n: file: localetime.ui:132
-#. i18n: ectx: property (text), widget (QLabel, labWorkingWeekStartDay)
-#: rc.cpp:96
-#, fuzzy
-#| msgid "First day of the week:"
-msgid "First working day of the week:"
-msgstr "Diwrnod cyntaf yr wythnos:"
-
-#. i18n: file: localetime.ui:146
-#. i18n: ectx: property (text), widget (QLabel, labWorkingWeekEndDay)
-#: rc.cpp:99
-#, fuzzy
-#| msgid "First day of the week:"
-msgid "Last working day of the week:"
-msgstr "Diwrnod cyntaf yr wythnos:"
-
-#. i18n: file: localetime.ui:160
-#. i18n: ectx: property (text), widget (QLabel, labWeekDayOfPray)
-#: rc.cpp:102
-msgid "Day of the week for religious observance:"
-msgstr ""
 
 #: rc.cpp:103
 msgctxt "NAME OF TRANSLATORS"
@@ -840,9 +844,6 @@ msgstr "&Amser && Dyddiadau"
 #: toplevel.cpp:266
 msgid "&Other"
 msgstr "&Arall"
-
-#~ msgid "Calendar system:"
-#~ msgstr "Cysawd galendr:"
 
 #~ msgid "Other"
 #~ msgstr "Arall"
