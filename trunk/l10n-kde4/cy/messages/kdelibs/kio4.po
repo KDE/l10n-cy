@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-26 10:40+0100\n"
+"POT-Creation-Date: 2009-02-27 10:50+0100\n"
 "PO-Revision-Date: 2004-01-16 09:20+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -174,7 +174,7 @@ msgid "The clipboard is empty"
 msgstr "Mae'r gludfwrdd yn wag "
 
 #: kio/paste.cpp:228 kio/renamedialog.cpp:403 kio/kdirlister.cpp:313
-#: kio/krun.cpp:1005
+#: kio/krun.cpp:1071
 #, kde-format
 msgid ""
 "Malformed URL\n"
@@ -2409,7 +2409,7 @@ msgstr "Gwall Heb ei Ddogfennu"
 msgid "Default"
 msgstr "(Rhagosodedig)"
 
-#: kio/krun.cpp:120
+#: kio/krun.cpp:126
 #, kde-format
 msgid ""
 "<qt>Unable to enter <b>%1</b>.\n"
@@ -2418,7 +2418,7 @@ msgstr ""
 "<qt> Methu mynd i mewn i  <b>%1</b>.\n"
 " Nid oes ganddoch  hawliau cyrchu'r lleoliad yma.</qt>"
 
-#: kio/krun.cpp:154
+#: kio/krun.cpp:160
 #, kde-format
 msgid ""
 "<qt>The file <b>%1</b> is an executable program. For safety it will not be "
@@ -2427,84 +2427,60 @@ msgstr ""
 "<qt>Mae'r ffeil <b>%1</b> yn raglen weithredadwy. Er mwyn diogelwch, ni fydd "
 "hi'n cael ei chychwyn.</qt>"
 
-#: kio/krun.cpp:160
+#: kio/krun.cpp:166
 #, kde-format
 msgid "<qt>You do not have permission to run <b>%1</b>.</qt>"
 msgstr "<qt>nid oes ganddoch ganiatàd i redeg <b>%1</b>.</qt>"
 
-#: kio/krun.cpp:184
+#: kio/krun.cpp:190
 #, fuzzy
 msgid "You are not authorized to select an application to open this file."
 msgstr "Nid ydych wedi cael eich awdurdodi i weithredu'r ffeil yma."
 
-#: kio/krun.cpp:195
+#: kio/krun.cpp:201
 msgid "Open with:"
 msgstr "Agor Efo:"
 
-#: kio/krun.cpp:524
+#: kio/krun.cpp:530
 msgid "You are not authorized to execute this file."
 msgstr "Nid ydych wedi cael eich awdurdodi i weithredu'r ffeil yma."
 
-#: kio/krun.cpp:547
+#: kio/krun.cpp:553
 #, kde-format
 msgid "Launching %1"
 msgstr "Ymgychwyn %1"
 
-#: kio/krun.cpp:653
+#: kio/krun.cpp:659
 #, kde-format
 msgid "Error processing Exec field in %1"
 msgstr ""
 
-#: kio/krun.cpp:794
+#: kio/krun.cpp:853
 msgid "You are not authorized to execute this service."
 msgstr "Nid ydych wedi cael eich awdurdodi i weithredu'r gwasanaeth yma."
 
-#: kio/krun.cpp:803
-msgctxt "@action:button"
-msgid "Make program executable and continue"
-msgstr ""
-
-#: kio/krun.cpp:806
-#, kde-format
-msgctxt "@info"
-msgid ""
-"<para><b>Warning</b>: The program you are trying to run, \"<application>%1</"
-"application>\", is not marked as an executable program.  This could be due "
-"to a mistake in the system configuration, but could also be a malicious "
-"program attempting to run.</para><para>Click <interface>%2</interface> to "
-"make the program executable and run if:</para>• You know this is a program "
-"(for example, if you created the shortcut), or<br/>• You downloaded the "
-"program and know that it is safe.<para>Click <interface>Cancel</interface> "
-"to cancel execution if:</para>• You did not know you were about to run a "
-"program, or<br/>• You downloaded or were emailed this program and are not "
-"sure it's safe"
-msgstr ""
-
-#: kio/krun.cpp:817
-#, kde-format
-msgid "This program will run the following command: %1"
-msgstr ""
-
-#: kio/krun.cpp:820
-#, kde-format
-msgid ""
-"\n"
-"The command will run in: %1"
-msgstr ""
-
-#: kio/krun.cpp:835
+#: kio/krun.cpp:865
 #, fuzzy
 #| msgid "Examining"
 msgctxt "Warning about executing unknown .desktop file"
 msgid "Warning"
 msgstr "Arholi"
 
-#: kio/krun.cpp:860
+#: kio/krun.cpp:879
+msgctxt "program name follows in a line edit below"
+msgid "This will start the program:"
+msgstr ""
+
+#: kio/krun.cpp:893
+msgid "If you do not trust this program, click Cancel"
+msgstr ""
+
+#: kio/krun.cpp:926
 #, kde-format
 msgid "Unable to make the service %1 executable, aborting execution"
 msgstr ""
 
-#: kio/krun.cpp:1038
+#: kio/krun.cpp:1104
 #, kde-format
 msgid ""
 "<qt>Unable to run the command specified. The file or folder <b>%1</b> does "
@@ -2513,7 +2489,7 @@ msgstr ""
 "<qt>Methu rhedeg y gorchymyn penodol. Nid yw'r ffeil neu plygell <b>%1</"
 "b>mewn bod.</qt>"
 
-#: kio/krun.cpp:1658
+#: kio/krun.cpp:1724
 #, fuzzy, kde-format
 msgid "Could not find the program '%1'"
 msgstr "Methu darganfod y rhaglen '%1'"
@@ -5860,8 +5836,8 @@ msgstr "Ni derbynnir Ffeiliau Pell"
 #: ../kfile/kfilewidget.cpp:914
 msgid ""
 "More than one folder has been selected and this dialog does not accept "
-"folders, so it is not possible to decide in which one enter. Please select "
-"only one folder to list it"
+"folders, so it is not possible to decide which one to enter. Please select "
+"only one folder to list it."
 msgstr ""
 
 #: ../kfile/kfilewidget.cpp:914
@@ -6065,9 +6041,10 @@ msgid "&Eject '%1'"
 msgstr "Allfwrw"
 
 #: ../kfile/kfileplacesmodel.cpp:756
-#, kde-format
-msgid "The device '%1' is not a disc and can't be ejected."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "The specified resource may not exist."
+msgid "The device '%1' is not a disc and cannot be ejected."
+msgstr "Efallai nad yw'r adnodd penodol mewn bod."
 
 #: ../kfile/kfileplacesmodel.cpp:792
 #, fuzzy, kde-format
