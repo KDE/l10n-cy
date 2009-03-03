@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-02 10:00+0100\n"
+"POT-Creation-Date: 2009-03-03 10:24+0100\n"
 "PO-Revision-Date: 2004-02-25 13:53+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -22,12 +22,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: koeventpopupmenu.cpp:55 views/todoview/kotodoview.cpp:150
-#: actionmanager.cpp:517 actionmanager.cpp:1595 actionmanager.cpp:1628
+#: actionmanager.cpp:527 actionmanager.cpp:1605 actionmanager.cpp:1638
 msgid "&Show"
 msgstr "&Dangos"
 
 #: koeventpopupmenu.cpp:56 views/todoview/kotodoview.cpp:153
-#: actionmanager.cpp:522 actionmanager.cpp:1598 actionmanager.cpp:1629
+#: actionmanager.cpp:532 actionmanager.cpp:1608 actionmanager.cpp:1639
 #: resourceview.cpp:669
 msgid "&Edit..."
 msgstr "&Golygu..."
@@ -1728,17 +1728,17 @@ msgstr ""
 #. i18n: file: filteredit_base.ui:35
 #. i18n: ectx: property (text), widget (QPushButton, mDeleteButton)
 #: views/todoview/kotodoview.cpp:169 views/journalview/journalview.cpp:185
-#: calendarview.cpp:825 actionmanager.cpp:330 actionmanager.cpp:527
-#: actionmanager.cpp:1601 actionmanager.cpp:1630 rc.cpp:6 rc.cpp:2852
+#: calendarview.cpp:825 actionmanager.cpp:340 actionmanager.cpp:537
+#: actionmanager.cpp:1611 actionmanager.cpp:1640 rc.cpp:6 rc.cpp:2852
 #, fuzzy
 msgid "&Delete"
 msgstr "Dileu %1"
 
-#: views/todoview/kotodoview.cpp:176 kodaymatrix.cpp:420 actionmanager.cpp:495
+#: views/todoview/kotodoview.cpp:176 kodaymatrix.cpp:420 actionmanager.cpp:505
 msgid "New &To-do..."
 msgstr "&I'w-Gwneud Newydd..."
 
-#: views/todoview/kotodoview.cpp:179 actionmanager.cpp:502
+#: views/todoview/kotodoview.cpp:179 actionmanager.cpp:512
 msgid "New Su&b-to-do..."
 msgstr "Is-I'w-&Gwneud Newydd..."
 
@@ -3081,11 +3081,11 @@ msgstr "(EnwGwag)"
 msgid "(EmptyEmail)"
 msgstr "(EbostGwag)"
 
-#: kodaymatrix.cpp:418 actionmanager.cpp:488
+#: kodaymatrix.cpp:418 actionmanager.cpp:498
 msgid "New E&vent..."
 msgstr "D&igwyddiad Newydd..."
 
-#: kodaymatrix.cpp:422 actionmanager.cpp:510
+#: kodaymatrix.cpp:422 actionmanager.cpp:520
 #, fuzzy
 msgid "New &Journal..."
 msgstr "&Dyddlyfr"
@@ -3132,7 +3132,7 @@ msgstr ""
 msgid "Delete Old Items"
 msgstr "Dileu Hen Ddigwyddiadau"
 
-#: eventarchiver.cpp:220
+#: eventarchiver.cpp:220 calendarview.cpp:1622 calendarview.cpp:1663
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr ""
@@ -3328,7 +3328,7 @@ msgid "The item \"%1\" will be permanently deleted."
 msgstr "My fydd yr eitem hyn yn cael ei ddileu am byth."
 
 #: calendarview.cpp:824 calendarview.cpp:1268 calendarview.cpp:1281
-#: calendarview.cpp:2117 calendarview.cpp:2180 calendarview.cpp:2191
+#: calendarview.cpp:2140 calendarview.cpp:2203 calendarview.cpp:2214
 msgid "KOrganizer Confirmation"
 msgstr "Cadarnhâd KOrganizer"
 
@@ -3461,51 +3461,65 @@ msgid ""
 msgstr ""
 
 #: calendarview.cpp:1607
-msgid "*.ics|ICalendars"
+#, fuzzy
+#| msgid "*.ics|ICalendars"
+msgid "*.ics|iCalendars"
 msgstr "*.ics|ICalendrau"
 
-#: calendarview.cpp:1625
+#: calendarview.cpp:1626
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "Cannot write iCalendar file %1. %2"
+msgstr "Methu ysgrifennu'r ffeil archif."
+
+#: calendarview.cpp:1637
 msgid "The journal entries can not be exported to a vCalendar file."
 msgstr "Ni ellir allforio cofnodion y dyddlyfr i ffeil vCalendr."
 
-#: calendarview.cpp:1626
+#: calendarview.cpp:1638
 msgid "Data Loss Warning"
 msgstr "Rhybydd Colled Data"
 
-#: calendarview.cpp:1627 actionmanager.cpp:1040
+#: calendarview.cpp:1639 actionmanager.cpp:1050
 msgid "Proceed"
 msgstr "Mynd Ymlaen"
 
-#: calendarview.cpp:1637
+#: calendarview.cpp:1649
 #, fuzzy
 msgid "*.vcs|vCalendars"
 msgstr "*.vcs|VCalendrau"
 
-#: calendarview.cpp:1663
+#: calendarview.cpp:1667
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "Cannot write vCalendar file %1. %2"
+msgstr "Methu ysgrifennu'r ffeil archif."
+
+#: calendarview.cpp:1686
 msgid "&Previous Day"
 msgstr "Dyddiad &Blaenorol"
 
-#: calendarview.cpp:1664 actionmanager.cpp:366 actionmanager.cpp:1320
+#: calendarview.cpp:1687 actionmanager.cpp:376 actionmanager.cpp:1330
 #, fuzzy, kde-format
 msgid "&Next Day"
 msgid_plural "&Next %1 Days"
 msgstr[0] "Diwrnod &Nesaf"
 msgstr[1] "%1 o Ddiwrnodau &Nesaf"
 
-#: calendarview.cpp:1666
+#: calendarview.cpp:1689
 msgid "&Previous Week"
 msgstr "Wythnos &Blaenorol"
 
-#: calendarview.cpp:1667
+#: calendarview.cpp:1690
 msgid "&Next Week"
 msgstr "Wythnos &Nesaf"
 
-#: calendarview.cpp:1751 calendarview.cpp:1791
+#: calendarview.cpp:1774 calendarview.cpp:1814
 #, fuzzy
 msgid "No filter"
 msgstr "Dangos Hidlen"
 
-#: calendarview.cpp:2112
+#: calendarview.cpp:2135
 #, kde-format
 msgid ""
 "The item \"%1\" has sub-to-dos. Do you want to delete just this item and "
@@ -3513,33 +3527,33 @@ msgid ""
 "dos?"
 msgstr ""
 
-#: calendarview.cpp:2118
+#: calendarview.cpp:2141
 #, fuzzy
 msgid "Delete Only This"
 msgstr "Dileu Hen Ddigwyddiadau"
 
-#: calendarview.cpp:2119 calendarview.cpp:2181
+#: calendarview.cpp:2142 calendarview.cpp:2204
 #, fuzzy
 msgid "Delete All"
 msgstr "Dileu'r& cwbl"
 
-#: calendarview.cpp:2121
+#: calendarview.cpp:2144
 #, fuzzy
 msgid "Deleting sub-to-dos"
 msgstr "Dileu I'w-Wneud"
 
-#: calendarview.cpp:2145
+#: calendarview.cpp:2168
 #, kde-format
 msgid ""
 "The item \"%1\" is marked read-only and cannot be deleted; it probably "
 "belongs to a read-only calendar resource."
 msgstr ""
 
-#: calendarview.cpp:2149
+#: calendarview.cpp:2172
 msgid "Removing not possible"
 msgstr ""
 
-#: calendarview.cpp:2177
+#: calendarview.cpp:2200
 #, fuzzy, kde-format
 msgid ""
 "The calendar item \"%1\" recurs over multiple dates; are you sure you want "
@@ -3548,7 +3562,7 @@ msgstr ""
 "Mae'r digwyddiad hyn yn ail-ddigwydd dros mwy nag un dyddiad. A ydych chi'n "
 "siŵr eich bod eisiau dileu y digwyddiad a phob un o'i ail-ddigwyddiadau?"
 
-#: calendarview.cpp:2186
+#: calendarview.cpp:2209
 #, fuzzy, kde-format
 msgid ""
 "The calendar item \"%1\" recurs over multiple dates. Do you want to delete "
@@ -3559,66 +3573,66 @@ msgstr ""
 "siŵr eich bod eisiau dileu pob un o'i ail-ddigwyddiadau, neu dim ond y "
 "digwyddiad cyfredol sydd ar %1?"
 
-#: calendarview.cpp:2192
+#: calendarview.cpp:2215
 msgid "Delete C&urrent"
 msgstr "Dileu'r &Cyfredol"
 
-#: calendarview.cpp:2193
+#: calendarview.cpp:2216
 #, fuzzy
 msgid "Delete &Future"
 msgstr "Dileu'r Cyfredol"
 
-#: calendarview.cpp:2194
+#: calendarview.cpp:2217
 msgid "Delete &All"
 msgstr "Dileu'r& cwbl"
 
-#: calendarview.cpp:2280
+#: calendarview.cpp:2303
 msgid "Delete all completed to-dos?"
 msgstr "Dileu pob I'w-Wneud sydd wedi eu gorffen?"
 
-#: calendarview.cpp:2281
+#: calendarview.cpp:2304
 msgid "Purge To-dos"
 msgstr "Carthu I-Wneudau"
 
-#: calendarview.cpp:2282
+#: calendarview.cpp:2305
 msgid "Purge"
 msgstr "Carthu"
 
-#: calendarview.cpp:2286
+#: calendarview.cpp:2309
 #, fuzzy
 msgid "Purging completed to-dos"
 msgstr "Cuddio i'w-wneudau a gwblhawyd"
 
-#: calendarview.cpp:2303
+#: calendarview.cpp:2326
 #, fuzzy
 msgid "Unable to purge to-dos with uncompleted children."
 msgstr "Methu carthu I-Wneud sydd efo plant ni chwblhawyd."
 
-#: calendarview.cpp:2304
+#: calendarview.cpp:2327
 msgid "Delete To-do"
 msgstr "Dileu I'w-Wneud"
 
-#: calendarview.cpp:2313
+#: calendarview.cpp:2336
 #, fuzzy
 msgid "Unable to edit item: it is locked by another process."
 msgstr "Methu golygu'r nifer.  Cloir gan broses arall."
 
-#: calendarview.cpp:2346
+#: calendarview.cpp:2369
 #, fuzzy, kde-format
 msgid "Unable to copy the item to %1."
 msgstr "Methu cadw'r eitem i-wneud"
 
-#: calendarview.cpp:2347
+#: calendarview.cpp:2370
 #, fuzzy
 msgid "Copying Failed"
 msgstr "Methodd y gosod."
 
-#: calendarview.cpp:2391
+#: calendarview.cpp:2414
 #, fuzzy, kde-format
 msgid "Unable to move the item to  %1."
 msgstr "Methu cadw'r eitem i-wneud"
 
-#: calendarview.cpp:2392
+#: calendarview.cpp:2415
 #, fuzzy
 msgid "Moving Failed"
 msgstr "Methodd y gosod."
@@ -4265,295 +4279,317 @@ msgstr "Nid yw'r patrymlun '%1' yn cynnwys i-wneud dilys."
 msgid "Import &Calendar..."
 msgstr "Mewnforio Calendr"
 
+#: actionmanager.cpp:273
+#, fuzzy
+msgid "Merge the contents of another iCalendar"
+msgstr "Ychwanegu Atodiad"
+
 #: actionmanager.cpp:275
+msgid ""
+"Select this menu entry if you would like to merge the contents of another "
+"iCalendar into your current calendar."
+msgstr ""
+
+#: actionmanager.cpp:280
 #, fuzzy
 msgid "&Import From UNIX Ical tool"
 msgstr "&Mewnforio o Ical"
 
-#: actionmanager.cpp:279
+#: actionmanager.cpp:282
+#, fuzzy
+msgid "Import a calendar in another format"
+msgstr "Ydych eisiau ychwanegu calendr wrth '%1' i KTrefnydd"
+
+#: actionmanager.cpp:284
+msgid ""
+"Select this menu entry if you would like to import the contents of a non-"
+"iCalendar formatted file into your current calendar."
+msgstr ""
+
+#: actionmanager.cpp:289
 msgid "Get &Hot New Stuff..."
 msgstr "Cael& y Diweddaraf..."
 
-#: actionmanager.cpp:283
+#: actionmanager.cpp:293
 msgid "Export &Web Page..."
 msgstr "Allfori&o Tudalen Wê"
 
-#: actionmanager.cpp:287
+#: actionmanager.cpp:297
 msgid "&iCalendar..."
 msgstr "&iCalendr..."
 
-#: actionmanager.cpp:291
+#: actionmanager.cpp:301
 msgid "&vCalendar..."
 msgstr "&vCalendr..."
 
-#: actionmanager.cpp:295
+#: actionmanager.cpp:305
 msgid "Upload &Hot New Stuff..."
 msgstr "Fyny-lw&ytho'r Diweddaraf..."
 
-#: actionmanager.cpp:299
+#: actionmanager.cpp:309
 msgid "Archive O&ld Entries..."
 msgstr "Archifio &Hen Gofnodion..."
 
-#: actionmanager.cpp:303
+#: actionmanager.cpp:313
 #, fuzzy
 msgid "Pur&ge Completed To-dos"
 msgstr "&Carthiad wedi'i Gwblhau"
 
-#: actionmanager.cpp:352
+#: actionmanager.cpp:362
 msgid "What's &Next"
 msgstr "Beth sy'n &Nesaf"
 
-#: actionmanager.cpp:357
+#: actionmanager.cpp:367
 msgid "&Day"
 msgstr "&Dydd"
 
-#: actionmanager.cpp:367
+#: actionmanager.cpp:377
 msgid "&Month"
 msgstr "&Mis"
 
-#: actionmanager.cpp:372
+#: actionmanager.cpp:382
 msgid "W&ork Week"
 msgstr "W&ythnos Gwaith"
 
-#: actionmanager.cpp:377
+#: actionmanager.cpp:387
 msgid "&Week"
 msgstr "&Wythnos"
 
-#: actionmanager.cpp:382
+#: actionmanager.cpp:392
 #, fuzzy
 #| msgid "&Events"
 msgid "&Event List"
 msgstr "&Digwyddiadau:"
 
-#: actionmanager.cpp:387
+#: actionmanager.cpp:397
 msgid "&To-do List"
 msgstr "&Rhestr I'w-Wneud"
 
-#: actionmanager.cpp:392
+#: actionmanager.cpp:402
 msgid "&Journal"
 msgstr "&Dyddlyfr"
 
-#: actionmanager.cpp:397
+#: actionmanager.cpp:407
 #, fuzzy
 msgid "Time&line"
 msgstr "Cylchfa amser:"
 
-#: actionmanager.cpp:402
+#: actionmanager.cpp:412
 #, fuzzy
 msgid "Time&spent"
 msgstr "&Amrediad Amser"
 
-#: actionmanager.cpp:408
+#: actionmanager.cpp:418
 msgid "&Refresh"
 msgstr "&Ailfywio"
 
-#: actionmanager.cpp:416
+#: actionmanager.cpp:426
 msgid "F&ilter"
 msgstr "&Hidlo"
 
-#: actionmanager.cpp:431
+#: actionmanager.cpp:441
 msgid "In Horizontally"
 msgstr ""
 
-#: actionmanager.cpp:436
+#: actionmanager.cpp:446
 msgid "Out Horizontally"
 msgstr ""
 
-#: actionmanager.cpp:441
+#: actionmanager.cpp:451
 msgid "In Vertically"
 msgstr ""
 
-#: actionmanager.cpp:446
+#: actionmanager.cpp:456
 msgid "Out Vertically"
 msgstr ""
 
-#: actionmanager.cpp:455
+#: actionmanager.cpp:465
 #, fuzzy
 #| msgid "day"
 msgctxt "@action Jump to today"
 msgid "To &Today"
 msgstr "dydd"
 
-#: actionmanager.cpp:456
+#: actionmanager.cpp:466
 #, fuzzy
 #| msgid "day"
 msgid "Today"
 msgstr "dydd"
 
-#: actionmanager.cpp:457
+#: actionmanager.cpp:467
 #, fuzzy
 #| msgid "Go to &Today"
 msgid "Scroll to Today"
 msgstr "Mynd at &Heddiw"
 
-#: actionmanager.cpp:462
+#: actionmanager.cpp:472
 #, fuzzy
 #| msgid "Go &Backward"
 msgctxt "scroll backward"
 msgid "&Backward"
 msgstr "Mynd &Yn Ôl"
 
-#: actionmanager.cpp:463
+#: actionmanager.cpp:473
 #, fuzzy
 #| msgid "Balak"
 msgctxt "scroll backward"
 msgid "Back"
 msgstr "Balak"
 
-#: actionmanager.cpp:464
+#: actionmanager.cpp:474
 #, fuzzy
 #| msgid "Go &Backward"
 msgid "Scroll Backward"
 msgstr "Mynd &Yn Ôl"
 
-#: actionmanager.cpp:477
+#: actionmanager.cpp:487
 #, fuzzy
 #| msgid "Go &Forward"
 msgctxt "scroll forward"
 msgid "&Forward"
 msgstr "Mynd &Ymlaen"
 
-#: actionmanager.cpp:478
+#: actionmanager.cpp:488
 #, fuzzy
 #| msgid "Go &Forward"
 msgctxt "scoll forward"
 msgid "Forward"
 msgstr "Mynd &Ymlaen"
 
-#: actionmanager.cpp:479
+#: actionmanager.cpp:489
 #, fuzzy
 #| msgid "Go &Forward"
 msgid "Scroll Forward"
 msgstr "Mynd &Ymlaen"
 
-#: actionmanager.cpp:489
+#: actionmanager.cpp:499
 #, fuzzy
 #| msgid "Events"
 msgctxt "@action:intoolbar create a new event"
 msgid "Event"
 msgstr "Digwyddiadau"
 
-#: actionmanager.cpp:490
+#: actionmanager.cpp:500
 msgid "Create a new Event"
 msgstr ""
 
-#: actionmanager.cpp:496
+#: actionmanager.cpp:506
 #, fuzzy
 #| msgid "To-do:"
 msgid "To-do"
 msgstr "I'w-Wneud:"
 
-#: actionmanager.cpp:497
+#: actionmanager.cpp:507
 #, fuzzy
 msgid "Create a new To-do"
 msgstr "Cliciwch i ychwanegu I-Wneud newydd"
 
-#: actionmanager.cpp:511
+#: actionmanager.cpp:521
 #, fuzzy
 #| msgid "&Journal"
 msgid "Journal"
 msgstr "&Dyddlyfr"
 
-#: actionmanager.cpp:512
+#: actionmanager.cpp:522
 msgid "Create a new Journal"
 msgstr ""
 
-#: actionmanager.cpp:533
+#: actionmanager.cpp:543
 msgid "&Make Sub-to-do Independent"
 msgstr "&Gwneud Is-I'w-Wneud yn Annibynnol"
 
-#: actionmanager.cpp:550
+#: actionmanager.cpp:560
 msgid "&Publish Item Information..."
 msgstr ""
 
-#: actionmanager.cpp:555
+#: actionmanager.cpp:565
 msgid "Send &Invitation to Attendees"
 msgstr ""
 
-#: actionmanager.cpp:562
+#: actionmanager.cpp:572
 #, fuzzy
 msgid "Re&quest Update"
 msgstr "Ca&is"
 
-#: actionmanager.cpp:569
+#: actionmanager.cpp:579
 msgid "Send &Cancellation to Attendees"
 msgstr ""
 
-#: actionmanager.cpp:576
+#: actionmanager.cpp:586
 #, fuzzy
 msgid "Send Status &Update"
 msgstr "Dyddiad gorffen:"
 
-#: actionmanager.cpp:583
+#: actionmanager.cpp:593
 #, fuzzy
 msgctxt "counter proposal"
 msgid "Request Chan&ge"
 msgstr "Gwr&thgynnig"
 
-#: actionmanager.cpp:590
+#: actionmanager.cpp:600
 #, fuzzy
 msgid "&Mail Free Busy Information..."
 msgstr "Cyhoeddi Gwybodaeth Rhydd Brysur"
 
-#: actionmanager.cpp:595
+#: actionmanager.cpp:605
 #, fuzzy
 #| msgid "&iCalendar..."
 msgid "&Send as iCalendar..."
 msgstr "&iCalendr..."
 
-#: actionmanager.cpp:600
+#: actionmanager.cpp:610
 #, fuzzy
 msgid "&Upload Free Busy Information"
 msgstr "Cyhoeddi Gwybodaeth Rhydd Brysur"
 
-#: actionmanager.cpp:606
+#: actionmanager.cpp:616
 msgid "&Addressbook"
 msgstr "&Llyfr Cyfeiriadau"
 
-#: actionmanager.cpp:614
+#: actionmanager.cpp:624
 #, fuzzy
 msgid "Show Date Navigator"
 msgstr "Dangos diwrnod Omer"
 
-#: actionmanager.cpp:618
+#: actionmanager.cpp:628
 #, fuzzy
 msgid "Show To-do View"
 msgstr "Math Golwg"
 
-#: actionmanager.cpp:622
+#: actionmanager.cpp:632
 #, fuzzy
 msgid "Show Item Viewer"
 msgstr "Gwelydd Digwyddiadau"
 
-#: actionmanager.cpp:637
+#: actionmanager.cpp:647
 #, fuzzy
 msgid "Show Resource View"
 msgstr "Ffurfweddu Adnoddau"
 
-#: actionmanager.cpp:647
+#: actionmanager.cpp:657
 msgid "Configure &Date && Time..."
 msgstr "Ffurfweddu &Dyddiad && Amser..."
 
-#: actionmanager.cpp:656
+#: actionmanager.cpp:666
 #, fuzzy
 msgid "Manage View &Filters..."
 msgstr "Golygu'r &Hidlenni"
 
-#: actionmanager.cpp:661
+#: actionmanager.cpp:671
 #, fuzzy
 msgid "Manage C&ategories..."
 msgstr "Golygu'r C&ategorïau..."
 
-#: actionmanager.cpp:667
+#: actionmanager.cpp:677
 #, fuzzy
 msgid "&Configure Calendar..."
 msgstr "Ffurfweddu'r &Ategion"
 
-#: actionmanager.cpp:750 actionmanager.cpp:842
+#: actionmanager.cpp:760 actionmanager.cpp:852
 msgid "*.vcs *.ics|Calendar Files"
 msgstr "*.vcs *.ics|Ffeiliau Calendr"
 
-#: actionmanager.cpp:795
+#: actionmanager.cpp:805
 msgid ""
 "You have no ical file in your home directory.\n"
 "Import cannot proceed.\n"
@@ -4561,7 +4597,7 @@ msgstr ""
 "Nid oes gennych ffeil ical yn eich cyfeiriadur cartref.\n"
 " Ni all y mewnforiad fynd ymlaen.\n"
 
-#: actionmanager.cpp:816
+#: actionmanager.cpp:826
 msgid ""
 "KOrganizer successfully imported and merged your .calendar file from ical "
 "into the currently opened calendar."
@@ -4569,7 +4605,7 @@ msgstr ""
 "Mi wnaeth KTrefnydd fewnforio a chyfuno eich ffeil .calendar o ical i'r "
 "calendr agoredig cyfredol."
 
-#: actionmanager.cpp:822
+#: actionmanager.cpp:832
 #, fuzzy
 msgid ""
 "KOrganizer encountered some unknown fields while parsing your .calendar ical "
@@ -4580,12 +4616,12 @@ msgstr ""
 "calendar ical, ac mi roedd rhaid eu taflu nhw. Os gwelwch yn dda, edrychwch "
 "i weld os oedd pob darn o ddata pwysig wedi ei fewnforio yn gywir."
 
-#: actionmanager.cpp:826
+#: actionmanager.cpp:836
 #, fuzzy
 msgid "ICal Import Successful with Warning"
 msgstr "Mewnforiad Ical Yn Gywir Ond Gyda Rhybydd"
 
-#: actionmanager.cpp:830
+#: actionmanager.cpp:840
 #, fuzzy
 msgid ""
 "KOrganizer encountered an error parsing your .calendar file from ical; "
@@ -4594,7 +4630,7 @@ msgstr ""
 "My wnaeth KTrefnydd ganfod gwall pan yn dosrannu eich ffeil .calendar o "
 "ical. Mae'r mewnforiad wedi methu."
 
-#: actionmanager.cpp:834
+#: actionmanager.cpp:844
 #, fuzzy
 msgid ""
 "KOrganizer does not think that your .calendar file is a valid ical calendar; "
@@ -4603,37 +4639,37 @@ msgstr ""
 "Nid yw KTrefnydd yn meddwl bod eich ffeil .calendar yn galendr ical dilys. "
 "Mae'r mewnforiad wedi methu."
 
-#: actionmanager.cpp:920
+#: actionmanager.cpp:930
 #, fuzzy, kde-format
 msgid "New calendar '%1'."
 msgstr "Wedi cadw'r calendr '%1'."
 
-#: actionmanager.cpp:955
+#: actionmanager.cpp:965
 #, kde-format
 msgid "Cannot download calendar from '%1'."
 msgstr "Methu lawrlywtho calendr oddi wrth '%1'."
 
-#: actionmanager.cpp:992
+#: actionmanager.cpp:1002
 #, kde-format
 msgid "Added calendar resource for URL '%1'."
 msgstr ""
 
-#: actionmanager.cpp:1000
+#: actionmanager.cpp:1010
 #, fuzzy, kde-format
 msgid "Unable to create calendar resource '%1'."
 msgstr "Methu cadw'r eitem i-wneud"
 
-#: actionmanager.cpp:1010
+#: actionmanager.cpp:1020
 #, kde-format
 msgid "Merged calendar '%1'."
 msgstr "Calendr '%1' wedi ei gyfuno."
 
-#: actionmanager.cpp:1013
+#: actionmanager.cpp:1023
 #, kde-format
 msgid "Opened calendar '%1'."
 msgstr "Calendr '%1' wedi ei agor."
 
-#: actionmanager.cpp:1038
+#: actionmanager.cpp:1048
 msgid ""
 "Your calendar will be saved in iCalendar format. Use 'Export vCalendar' to "
 "save in vCalendar format."
@@ -4641,35 +4677,35 @@ msgstr ""
 "Cedwir eich calendr yn fformat iCalendar. Defnyddiwch 'Allforio vCalendar' "
 "i'w gadw mewn fformat vCalendar."
 
-#: actionmanager.cpp:1040
+#: actionmanager.cpp:1050
 msgid "Format Conversion"
 msgstr "Trosiad Fformat"
 
-#: actionmanager.cpp:1068
+#: actionmanager.cpp:1078
 #, kde-format
 msgid "Cannot upload calendar to '%1'"
 msgstr "Methu llwytho calendr i fyny i '%1'"
 
-#: actionmanager.cpp:1081
+#: actionmanager.cpp:1091
 #, kde-format
 msgid "Saved calendar '%1'."
 msgstr "Wedi cadw'r calendr '%1'."
 
-#: actionmanager.cpp:1143
+#: actionmanager.cpp:1153
 msgid "Could not upload file."
 msgstr "Methu llwytho ffeil."
 
-#: actionmanager.cpp:1186
+#: actionmanager.cpp:1196
 #, fuzzy, kde-format
 msgid "Unable to save calendar to the file %1."
 msgstr "Methu cadw'r eitem i-wneud"
 
-#: actionmanager.cpp:1187
+#: actionmanager.cpp:1197
 #, fuzzy
 msgid "Error"
 msgstr "Dim Gwall"
 
-#: actionmanager.cpp:1213
+#: actionmanager.cpp:1223
 msgid ""
 "The calendar has been modified.\n"
 "Do you want to save it?"
@@ -4677,101 +4713,101 @@ msgstr ""
 "Mae'r calendr wedi newid.\n"
 "A ydych chi eisiau ei gadw?"
 
-#: actionmanager.cpp:1240
+#: actionmanager.cpp:1250
 #, fuzzy
 #| msgid "*.vcs *.ics|Calendar Files"
 msgid "*.ics *.vcs|Calendar Files"
 msgstr "*.vcs *.ics|Ffeiliau Calendr"
 
-#: actionmanager.cpp:1362
+#: actionmanager.cpp:1372
 #, fuzzy
 msgid "Could not start control module for date and time format."
 msgstr "Methu dechrau modwl reoli'r fformat dyddiad ac amser."
 
-#: actionmanager.cpp:1497
+#: actionmanager.cpp:1507
 #, fuzzy
 msgid "Could not load calendar."
 msgstr "Wedi methu llwytho calendr."
 
-#: actionmanager.cpp:1512
+#: actionmanager.cpp:1522
 msgid "The downloaded events will be merged into your current calendar."
 msgstr ""
 "Mi fydd y disgwyddiadau â lawrlwythwyd yn cael eu cyfuno i'ch calendr "
 "cyfredol."
 
-#: actionmanager.cpp:1568
+#: actionmanager.cpp:1578
 msgid "&Show Event"
 msgstr "Dango&s Digwyddiad"
 
-#: actionmanager.cpp:1571
+#: actionmanager.cpp:1581
 msgid "&Edit Event..."
 msgstr "&Golygu Digwyddiad..."
 
-#: actionmanager.cpp:1574
+#: actionmanager.cpp:1584
 msgid "&Delete Event"
 msgstr "&Dileu Digwyddiad"
 
-#: actionmanager.cpp:1580
+#: actionmanager.cpp:1590
 msgid "&Show To-do"
 msgstr "Dango&s I'w-Wneud"
 
-#: actionmanager.cpp:1583
+#: actionmanager.cpp:1593
 msgid "&Edit To-do..."
 msgstr "&Golygu I'w-Wneud"
 
-#: actionmanager.cpp:1586
+#: actionmanager.cpp:1596
 msgid "&Delete To-do"
 msgstr "&Dileu I'w-Wneud"
 
-#: actionmanager.cpp:1717 actionmanager.cpp:1814
+#: actionmanager.cpp:1727 actionmanager.cpp:1824
 msgid "Attach as &link"
 msgstr ""
 
-#: actionmanager.cpp:1718 actionmanager.cpp:1815
+#: actionmanager.cpp:1728 actionmanager.cpp:1825
 #, fuzzy
 msgid "Attach &inline"
 msgstr "Ychwanegu Atodiad"
 
-#: actionmanager.cpp:1719
+#: actionmanager.cpp:1729
 msgid "Attach inline &without attachments"
 msgstr ""
 
-#: actionmanager.cpp:1721 actionmanager.cpp:1817
+#: actionmanager.cpp:1731 actionmanager.cpp:1827
 msgid "C&ancel"
 msgstr ""
 
-#: actionmanager.cpp:1752
+#: actionmanager.cpp:1762
 msgid "Removing attachments from an email might invalidate its signature."
 msgstr ""
 
-#: actionmanager.cpp:1753
+#: actionmanager.cpp:1763
 #, fuzzy
 #| msgid "Attach&ments"
 msgid "Remove Attachments"
 msgstr "Atodia&dau"
 
-#: actionmanager.cpp:1897 actionmanager.cpp:1906
+#: actionmanager.cpp:1907 actionmanager.cpp:1916
 #, fuzzy
 msgid "Undo"
 msgstr "Datwneud (%1)"
 
-#: actionmanager.cpp:1903
+#: actionmanager.cpp:1913
 #, fuzzy, kde-format
 #| msgid "Undo (%1)"
 msgid "Undo: %1"
 msgstr "Datwneud (%1)"
 
-#: actionmanager.cpp:1913 actionmanager.cpp:1917
+#: actionmanager.cpp:1923 actionmanager.cpp:1927
 #, fuzzy
 msgid "Redo"
 msgstr "Ailwneud (%1)"
 
-#: actionmanager.cpp:1919
+#: actionmanager.cpp:1929
 #, kde-format
 msgid "Redo (%1)"
 msgstr "Ailwneud (%1)"
 
-#: actionmanager.cpp:1933
+#: actionmanager.cpp:1943
 #, fuzzy
 msgid ""
 "The calendar contains unsaved changes. Do you want to save them before "
@@ -4780,15 +4816,15 @@ msgstr ""
 "Mae'r calendr wedi newid.\n"
 "A ydych chi eisiau ei gadw?"
 
-#: actionmanager.cpp:1941
+#: actionmanager.cpp:1951
 msgid "Unable to save the calendar. Do you still want to close this window?"
 msgstr ""
 
-#: actionmanager.cpp:1965
+#: actionmanager.cpp:1975
 msgid "Unable to exit. Saving still in progress."
 msgstr ""
 
-#: actionmanager.cpp:2009
+#: actionmanager.cpp:2019
 #, fuzzy, kde-format
 msgid ""
 "Saving of '%1' failed. Check that the resource is properly configured.\n"
@@ -4797,20 +4833,20 @@ msgstr ""
 "Methodd cadw '%1'.  Gwiriwch bod yr adnodd wedi'i ffurfweddu'n gywir.\n"
 "Anwybyddu'r problem a parhau heb gadw, neu ddiddymu'r cadw?"
 
-#: actionmanager.cpp:2012
+#: actionmanager.cpp:2022
 msgid "Save Error"
 msgstr "Gwall Cadw"
 
-#: actionmanager.cpp:2013
+#: actionmanager.cpp:2023
 msgid "Continue Save"
 msgstr ""
 
-#: actionmanager.cpp:2014
+#: actionmanager.cpp:2024
 #, fuzzy
 msgid "Cancel Save"
 msgstr "&Newid"
 
-#: actionmanager.cpp:2027
+#: actionmanager.cpp:2037
 #, kde-format
 msgid "URL '%1' is invalid."
 msgstr ""
@@ -8409,7 +8445,7 @@ msgid ""
 "calendar, which can take a lot of space depending on the size of the "
 "attachment. If this option is not checked, then only a link pointing to the "
 "attachment will be stored.  Do not use a link for attachments that change "
-"often or may be moved (or removed) from its current location."
+"often or may be moved (or removed) from their current location."
 msgstr ""
 
 #: koeditorattachments.cpp:253
@@ -11277,10 +11313,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "9 (lowest)"
 #~ msgstr "5 (Isaf)"
-
-#, fuzzy
-#~ msgid "Import calendar at '%1' into KOrganizer."
-#~ msgstr "Ydych eisiau ychwanegu calendr wrth '%1' i KTrefnydd"
 
 #, fuzzy
 #~| msgid "Month View"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-01 10:37+0100\n"
+"POT-Creation-Date: 2009-03-03 10:24+0100\n"
 "PO-Revision-Date: 2004-02-25 13:47+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -1488,7 +1488,7 @@ msgstr "Golygu Dynodiad"
 
 #: editorwatcher.cpp:157
 msgid ""
-"KMail is unable to detect when the choosen editor is closed. To avoid data "
+"KMail is unable to detect when the chosen editor is closed. To avoid data "
 "loss, editing the attachment will be aborted."
 msgstr ""
 
@@ -1807,7 +1807,7 @@ msgid "Connecting to server %1, please wait..."
 msgstr ""
 
 #: folderdialogacltab.cpp:461 folderdialogquotatab.cpp:140
-#: kmfoldercachedimap.cpp:884
+#: kmfoldercachedimap.cpp:896
 #, kde-format
 msgid "Error connecting to server %1"
 msgstr ""
@@ -1993,7 +1993,7 @@ msgid "Search folder &name:"
 msgstr "&Enw'r blygell chwilio:"
 
 #: searchwindow.cpp:255 searchwindow.cpp:480 searchwindow.cpp:634
-#: kmkernel.cpp:1432
+#: kmkernel.cpp:1439
 msgid "Last Search"
 msgstr "Chwiliad Diwethaf"
 
@@ -2784,7 +2784,7 @@ msgstr "Darfod Plygell"
 msgid "&Expire"
 msgstr "Darf&od"
 
-#: kmmainwidget.cpp:1330 kmkernel.cpp:2094
+#: kmmainwidget.cpp:1330 kmkernel.cpp:2101
 msgid "Empty Trash"
 msgstr "Gwagu'r Sbwriel"
 
@@ -2921,11 +2921,11 @@ msgstr ""
 "Ydych wir eisiau ailfywio'r gelc IMAP?\n"
 "Bydd hyn yn gwaredu pog newid a wnaeth yn lleol i'ch plygyll IMAP."
 
-#: kmmainwidget.cpp:1530 kmfoldercachedimap.cpp:729
+#: kmmainwidget.cpp:1530 kmfoldercachedimap.cpp:741
 msgid "Refresh IMAP Cache"
 msgstr "Ailfywio'r Gelc IMAP"
 
-#: kmmainwidget.cpp:1530 kmfoldercachedimap.cpp:730
+#: kmmainwidget.cpp:1530 kmfoldercachedimap.cpp:742
 msgid "&Refresh"
 msgstr "&Ailfywio"
 
@@ -3034,7 +3034,7 @@ msgstr "Methwyd symud y negeseuon."
 msgid "Moving messages canceled."
 msgstr "Diddymwyd symud y negeseuon."
 
-#: kmmainwidget.cpp:1823 kmfoldercachedimap.cpp:3165
+#: kmmainwidget.cpp:1823 kmfoldercachedimap.cpp:3196
 #, fuzzy
 msgid "Move Messages to Folder"
 msgstr "Symud Neges i Blygell"
@@ -3137,11 +3137,11 @@ msgid ""
 "installation."
 msgstr "Methu cychwyn rheolydd tystysgrif.  Gwiriwch eich gosodiad!"
 
-#: kmmainwidget.cpp:2774 kmkernel.cpp:1175
+#: kmmainwidget.cpp:2774 kmkernel.cpp:1182
 msgid "Work Offline"
 msgstr ""
 
-#: kmmainwidget.cpp:2778 kmkernel.cpp:1174
+#: kmmainwidget.cpp:2778 kmkernel.cpp:1181
 msgid "Work Online"
 msgstr ""
 
@@ -6127,15 +6127,15 @@ msgstr "Methu cydamseru'r blygell maildir."
 msgid "Message could not be added to the folder, possibly disk space is low."
 msgstr ""
 
-#: kmfoldermaildir.cpp:486
+#: kmfoldermaildir.cpp:485
 msgid "KMFolderMaildir::addMsg: abnormally terminating to prevent data loss."
 msgstr "KMFolderMaildir::addMsg: yn terfynu yn anarferol i atal colli data."
 
-#: kmfoldermaildir.cpp:837 kmfoldermbox.cpp:856
+#: kmfoldermaildir.cpp:836 kmfoldermbox.cpp:856
 msgid "Writing index file"
 msgstr "Ysgrifennu ffeil mynegai."
 
-#: kmfoldermaildir.cpp:850 kmfoldermbox.cpp:870
+#: kmfoldermaildir.cpp:849 kmfoldermbox.cpp:870
 #, fuzzy
 msgid ""
 "Your outbox contains messages which were most-likely not created by KMail;\n"
@@ -6424,8 +6424,8 @@ msgctxt "Do not start another kmail instance."
 msgid "Exit"
 msgstr "Terfynu"
 
-#: subscriptiondialog.cpp:171 kmfoldercachedimap.cpp:265
-#: kmfoldercachedimap.cpp:2205 kmkernel.cpp:1305 accountdialog.cpp:605
+#: subscriptiondialog.cpp:171 kmfoldercachedimap.cpp:266
+#: kmfoldercachedimap.cpp:2236 kmkernel.cpp:1312 accountdialog.cpp:605
 #: accountdialog.cpp:612 kmfolderimap.cpp:207 kmfolderimap.cpp:923
 msgid "inbox"
 msgstr "blwch derbyn"
@@ -6906,7 +6906,7 @@ msgstr ""
 msgid ""
 "If enabled, the unread state of messages in this folder will be the same for "
 "all users having access to this folder. If disabled (the default), every "
-"user with access to this folder has her own unread state."
+"user with access to this folder has their own unread state."
 msgstr ""
 
 #: kmfolderdialog.cpp:712
@@ -7368,18 +7368,20 @@ msgstr "Gwall wrth lanlwytho'r neges"
 
 #: actionscheduler.cpp:528
 #, fuzzy, kde-format
-msgid "%1 messages waiting to be filtered"
-msgstr "Anfon negeseuon yn y b&lwch anfon wrth ymofyn"
+msgid "1 message waiting to be filtered"
+msgid_plural "%1 messages waiting to be filtered"
+msgstr[0] "Anfon negeseuon yn y b&lwch anfon wrth ymofyn"
+msgstr[1] "Anfon negeseuon yn y b&lwch anfon wrth ymofyn"
 
-#: actionscheduler.cpp:630 kmfiltermgr.cpp:273 kmfiltermgr.cpp:291
+#: actionscheduler.cpp:631 kmfiltermgr.cpp:273 kmfiltermgr.cpp:291
 msgid "<b>Evaluating filter rules:</b> "
 msgstr ""
 
-#: actionscheduler.cpp:636 kmfiltermgr.cpp:279 kmfiltermgr.cpp:297
+#: actionscheduler.cpp:637 kmfiltermgr.cpp:279 kmfiltermgr.cpp:297
 msgid "<b>Filter rules have matched.</b>"
 msgstr ""
 
-#: actionscheduler.cpp:659 kmfilter.cpp:126
+#: actionscheduler.cpp:660 kmfilter.cpp:126
 #, fuzzy, kde-format
 msgid "<b>Applying filter action:</b> %1"
 msgstr "G&weithredu Gweithredoedd Hidlo"
@@ -7916,28 +7918,39 @@ msgstr "Derbyniwr"
 msgid "Sender"
 msgstr "Anfonwr"
 
-#: messagelistview/core/model.cpp:3526
-#, kde-format
-msgid "Processed %1 Messages of %2"
-msgstr ""
-
-#: messagelistview/core/model.cpp:3529 messagelistview/core/model.cpp:3532
+#: messagelistview/core/model.cpp:3535
 #, fuzzy, kde-format
 #| msgid "&Thread Messages"
-msgid "Threaded %1 Messages of %2"
-msgstr "&Edafu Negeseuon"
+msgid "Processed 1 Message of %2"
+msgid_plural "Processed %1 Messages of %2"
+msgstr[0] "&Edafu Negeseuon"
+msgstr[1] "&Edafu Negeseuon"
 
-#: messagelistview/core/model.cpp:3535
+#: messagelistview/core/model.cpp:3538 messagelistview/core/model.cpp:3541
+#, fuzzy, kde-format
+#| msgid "&Thread Messages"
+msgid "Threaded 1 Message of %2"
+msgid_plural "Threaded %1 Messages of %2"
+msgstr[0] "&Edafu Negeseuon"
+msgstr[1] "&Edafu Negeseuon"
+
+#: messagelistview/core/model.cpp:3544
+#, fuzzy, kde-format
+#| msgctxt "View->"
+#| msgid "&Expand Thread"
+msgid "Grouped 1 Thread of %2"
+msgid_plural "Grouped %1 Threads of %2"
+msgstr[0] "&Ehangu Edefyn"
+msgstr[1] "&Ehangu Edefyn"
+
+#: messagelistview/core/model.cpp:3547
 #, kde-format
-msgid "Grouped %1 Threads of %2"
-msgstr ""
+msgid "Updated 1 Group of %2"
+msgid_plural "Updated %1 Groups of %2"
+msgstr[0] ""
+msgstr[1] ""
 
-#: messagelistview/core/model.cpp:3538
-#, kde-format
-msgid "Updated %1 Groups of %2"
-msgstr ""
-
-#: messagelistview/core/model.cpp:3622
+#: messagelistview/core/model.cpp:3631
 #, fuzzy
 #| msgid "Ready."
 msgctxt "@info:status Finished view fill"
@@ -9339,7 +9352,7 @@ msgstr ""
 "Ymddengys nad yw '%1' yn blygell.\n"
 "Symudwch y ffeil allan o'r ffordd."
 
-#: kmfoldermgr.cpp:146 kmkernel.cpp:1255
+#: kmfoldermgr.cpp:146 kmkernel.cpp:1262
 #, fuzzy, kde-format
 msgid ""
 "The permissions of the folder '%1' are incorrect;\n"
@@ -9348,7 +9361,7 @@ msgstr ""
 "Mae caniatadau plygell '%1' yn anghywir.\n"
 "Sicrhewch y gallwch ddarllen ac addasu cynnwys y blygell yma."
 
-#: kmfoldermgr.cpp:156 kmkernel.cpp:1247
+#: kmfoldermgr.cpp:156 kmkernel.cpp:1254
 #, fuzzy, kde-format
 msgid ""
 "KMail could not create folder '%1';\n"
@@ -9369,7 +9382,7 @@ msgstr ""
 msgid "Could Not Create Folder"
 msgstr "Methwyd creu plygell"
 
-#: kmfoldermgr.cpp:322 kmkernel.cpp:1561
+#: kmfoldermgr.cpp:322 kmkernel.cpp:1568
 #, kde-format
 msgid ""
 "Cannot create file `%1' in %2.\n"
@@ -9701,7 +9714,7 @@ msgstr "&Dangos y cafn cysawd o hyd"
 #. i18n: ectx: label, entry (CloseDespiteSystemTray), group (General)
 #: rc.cpp:59 rc.cpp:1626
 msgid ""
-"Close the application when the mainwindow is closed, even if there is a "
+"Close the application when the main window is closed, even if there is a "
 "system tray icon active."
 msgstr ""
 
@@ -9784,7 +9797,7 @@ msgstr ""
 #. i18n: file: kmail.kcfg:181
 #. i18n: ectx: label, entry (ExchangeCompatibleInvitations), group (Groupware)
 #: rc.cpp:95 rc.cpp:1662
-msgid "Exchange compatible invitations naming"
+msgid "Exchange-compatible invitation naming"
 msgstr ""
 
 #. i18n: file: kmail.kcfg:182
@@ -10287,8 +10300,9 @@ msgstr ""
 #. i18n: ectx: label, entry (AllowOutOfOfficeUploadButNoSettings), group (OutOfOffice)
 #: rc.cpp:320 rc.cpp:1887
 msgid ""
-"Allow users to upload out-of-office sieve scripts, but disallow them changin "
-"any settings, such as the domain to react to and the spam reaction switch."
+"Allow users to upload out-of-office sieve scripts, but prevent them from "
+"changing any settings, such as the domain to react to or the spam reaction "
+"switch."
 msgstr ""
 
 #. i18n: file: kmail.kcfg:632
@@ -11925,7 +11939,7 @@ msgstr "&Ychwanegu..."
 #. i18n: ectx: property (windowTitle), widget (QWidget, TemplatesConfigurationBase)
 #: rc.cpp:1110
 #, fuzzy
-msgid "TemplatesConfiguration"
+msgid "Template Configuration"
 msgstr "Ffurfweddu Llofnod"
 
 #. i18n: file: ui/templatesconfiguration_base.ui:67
@@ -12494,7 +12508,7 @@ msgstr ""
 #. i18n: file: ui/miscpagegroupwaretab.ui:222
 #. i18n: ectx: property (text), widget (QCheckBox, mExchangeCompatibleInvitations)
 #: rc.cpp:1370
-msgid "Exchange compatible invitation &naming"
+msgid "Exchange-compatible invitation &naming"
 msgstr ""
 
 #. i18n: file: ui/miscpagegroupwaretab.ui:229
@@ -12502,7 +12516,7 @@ msgstr ""
 #: rc.cpp:1373
 msgid ""
 "When this is on, the user will not see the mail composer window. Invitation "
-"mails are sent automatically"
+"mails are sent automatically."
 msgstr ""
 
 #. i18n: file: ui/miscpagegroupwaretab.ui:232
@@ -12980,7 +12994,7 @@ msgstr ""
 msgid "Turn Debug Off"
 msgstr ""
 
-#: kmfolderindex_sqlite.cpp:378 kmfolderindex.cpp:317
+#: kmfolderindex_sqlite.cpp:376 kmfolderindex.cpp:317
 #, kde-format
 msgid ""
 "The mail index for '%1' is from an unknown version of KMail (%2).\n"
@@ -12993,16 +13007,16 @@ msgstr ""
 "cynnwys baneri cyflwr, yn cael ei cholli.  Ydych eisiau israddio eich ffeil "
 "mynegai?"
 
-#: kmfolderindex_sqlite.cpp:382 kmfolderindex.cpp:320
+#: kmfolderindex_sqlite.cpp:380 kmfolderindex.cpp:320
 #, fuzzy
 msgid "Downgrade"
 msgstr "I Lawr"
 
-#: kmfolderindex_sqlite.cpp:382 kmfolderindex.cpp:320
+#: kmfolderindex_sqlite.cpp:380 kmfolderindex.cpp:320
 msgid "Do Not Downgrade"
 msgstr ""
 
-#: kmfolderindex_sqlite.cpp:535 kmfolderindex.cpp:480
+#: kmfolderindex_sqlite.cpp:533 kmfolderindex.cpp:480
 #, fuzzy, kde-format
 #| msgid ""
 #| "The mail index for '%1' is from an unknown version of KMail (%2).\n"
@@ -13072,25 +13086,25 @@ msgstr "Mae'r plygyll adnodd yn is-&blygyll o:"
 msgid "Refresh &cache"
 msgstr "Ailfywio &Celc"
 
-#: kmfoldercachedimap.cpp:219
+#: kmfoldercachedimap.cpp:220
 #, kde-format
 msgid ""
 "The UID cache file for folder %1 could not be read. There could be a problem "
 "with file system permission, or it is corrupted."
 msgstr ""
 
-#: kmfoldercachedimap.cpp:482
+#: kmfoldercachedimap.cpp:494
 #, kde-format
 msgid ""
 "The UID cache file for folder %1 could not be written. There could be a "
 "problem with file system permission."
 msgstr ""
 
-#: kmfoldercachedimap.cpp:595
+#: kmfoldercachedimap.cpp:607
 msgid "You must synchronize with the server before renaming IMAP folders."
 msgstr "Rhaid i chi gydamseru efo'r gweinydd cyn ailenwi plygyll IMAP"
 
-#: kmfoldercachedimap.cpp:721
+#: kmfoldercachedimap.cpp:733
 msgid ""
 "No account setup for this folder.\n"
 "Please try running a sync before this."
@@ -13098,7 +13112,7 @@ msgstr ""
 "Ni osodwyd cyfrif ar gyfer y blygell yma.\n"
 "Ceisiwch gydamseru cyn wneud hyn."
 
-#: kmfoldercachedimap.cpp:725
+#: kmfoldercachedimap.cpp:737
 #, fuzzy, kde-format
 msgid ""
 "Are you sure you want to refresh the IMAP cache of the folder %1 and all its "
@@ -13108,11 +13122,11 @@ msgstr ""
 "Ydych yn sicr yr hoffech ailfywio celc IMAP plygell %1, a'i holl is-blygyll?"
 "n Bydd hyn yn gwaredu pob newid a wnaethoch yn lleol i'ch plygyll."
 
-#: kmfoldercachedimap.cpp:756
+#: kmfoldercachedimap.cpp:768
 msgid "The index of this folder has been recreated."
 msgstr "Ailgreuwyd mynegai y blygell yma."
 
-#: kmfoldercachedimap.cpp:769
+#: kmfoldercachedimap.cpp:781
 #, fuzzy, kde-format
 msgid ""
 "Folder %1 is not in initial sync state (state was %2). Do you want to reset "
@@ -13121,190 +13135,190 @@ msgstr ""
 "Nid yw plygell %1 mewn cyflwr cydamseru cychwynnol (%2 oedd y cyflwr). \n"
 "Ydych am ei ailosod i'r cyflwr cydamseru cychwynnol a cydamseru serch hynny?"
 
-#: kmfoldercachedimap.cpp:772
+#: kmfoldercachedimap.cpp:784
 msgid "Reset && Sync"
 msgstr ""
 
-#: kmfoldercachedimap.cpp:872
+#: kmfoldercachedimap.cpp:884
 msgid "Synchronizing"
 msgstr "Cydamseru"
 
-#: kmfoldercachedimap.cpp:890
+#: kmfoldercachedimap.cpp:902
 #, kde-format
 msgid "Connecting to %1"
 msgstr "Wrthi'n cysylltu i %1... "
 
-#: kmfoldercachedimap.cpp:909
+#: kmfoldercachedimap.cpp:921
 msgid "Checking permissions"
 msgstr ""
 
-#: kmfoldercachedimap.cpp:923
+#: kmfoldercachedimap.cpp:935
 #, fuzzy
 msgid "Renaming folder"
 msgstr "Atgoffydd"
 
-#: kmfoldercachedimap.cpp:985
+#: kmfoldercachedimap.cpp:998
 msgid "Retrieving folderlist"
 msgstr "Nôl rhestr plygyll"
 
-#: kmfoldercachedimap.cpp:989
+#: kmfoldercachedimap.cpp:1002
 #, fuzzy
 msgid "Error while retrieving the folderlist"
 msgstr "Nôl rhestr plygyll"
 
-#: kmfoldercachedimap.cpp:996
+#: kmfoldercachedimap.cpp:1009
 msgid "Retrieving subfolders"
 msgstr "Nôl is-blygyll"
 
-#: kmfoldercachedimap.cpp:1003
+#: kmfoldercachedimap.cpp:1016
 msgid "Deleting folders from server"
 msgstr "Dileu plygyll oddiar y gweinydd"
 
-#: kmfoldercachedimap.cpp:1018
+#: kmfoldercachedimap.cpp:1031
 #, fuzzy
 msgid "Retrieving message list"
 msgstr "Nôl y rhestr negeseuon"
 
-#: kmfoldercachedimap.cpp:1031
+#: kmfoldercachedimap.cpp:1044
 msgid "No messages to delete..."
 msgstr "Dim negeseuon i'w dileu..."
 
-#: kmfoldercachedimap.cpp:1042
+#: kmfoldercachedimap.cpp:1055
 msgid "Expunging deleted messages"
 msgstr "Gwaredu negeseuon a ddileuwyd"
 
-#: kmfoldercachedimap.cpp:1056
+#: kmfoldercachedimap.cpp:1069
 msgid "Retrieving new messages"
 msgstr "Nôl negeseuon newydd"
 
-#: kmfoldercachedimap.cpp:1068
+#: kmfoldercachedimap.cpp:1081
 msgid "No new messages from server"
 msgstr "Dim negeseuon newydd o'r gweinydd"
 
-#: kmfoldercachedimap.cpp:1106
+#: kmfoldercachedimap.cpp:1119
 #, fuzzy
 msgid "Checking annotation support"
 msgstr "Nôl y rhestr negeseuon"
 
-#: kmfoldercachedimap.cpp:1160
+#: kmfoldercachedimap.cpp:1173
 #, fuzzy
 msgid "Retrieving annotations"
 msgstr "Nôl y rhestr negeseuon"
 
-#: kmfoldercachedimap.cpp:1182
+#: kmfoldercachedimap.cpp:1195
 msgid "Setting annotations"
 msgstr ""
 
-#: kmfoldercachedimap.cpp:1234
+#: kmfoldercachedimap.cpp:1247
 msgid "Setting permissions"
 msgstr ""
 
-#: kmfoldercachedimap.cpp:1254
+#: kmfoldercachedimap.cpp:1267
 #, fuzzy
 msgid "Retrieving permissions"
 msgstr "Nôl y rhestr negeseuon"
 
-#: kmfoldercachedimap.cpp:1264
+#: kmfoldercachedimap.cpp:1277
 #, fuzzy
 msgid "Getting quota information"
 msgstr "Gwall wrth lanlwytho'r plygell"
 
-#: kmfoldercachedimap.cpp:1279
+#: kmfoldercachedimap.cpp:1292
 msgid "Updating cache file"
 msgstr "Diweddaru ffeil celc"
 
-#: kmfoldercachedimap.cpp:1308
+#: kmfoldercachedimap.cpp:1321
 msgid "Synchronization done"
 msgstr "Cydamseru wedi'i gyflawni"
 
-#: kmfoldercachedimap.cpp:1388
+#: kmfoldercachedimap.cpp:1401
 msgid "Uploading messages to server"
 msgstr "Lanlwytho negeseuon i'r gweinydd"
 
-#: kmfoldercachedimap.cpp:1407
+#: kmfoldercachedimap.cpp:1420
 #, kde-format
 msgid ""
 "<p>Your access rights to folder <b>%1</b> have been restricted, it will no "
 "longer be possible to add messages to this folder.</p>"
 msgstr ""
 
-#: kmfoldercachedimap.cpp:1410
+#: kmfoldercachedimap.cpp:1423
 msgid "Access rights revoked"
 msgstr ""
 
-#: kmfoldercachedimap.cpp:1413 kmfoldercachedimap.cpp:1470
-#: kmfoldercachedimap.cpp:1515
+#: kmfoldercachedimap.cpp:1426 kmfoldercachedimap.cpp:1487
+#: kmfoldercachedimap.cpp:1537
 msgid "No messages to upload to server"
 msgstr "Dim negeseuon i lanlwytho i'r gweinydd"
 
-#: kmfoldercachedimap.cpp:1433 kmfoldercachedimap.cpp:1478
+#: kmfoldercachedimap.cpp:1446 kmfoldercachedimap.cpp:1495
 #, fuzzy
 msgid "Uploading status of messages to server"
 msgstr "Lanlwytho negeseuon i'r gweinydd"
 
-#: kmfoldercachedimap.cpp:1558
+#: kmfoldercachedimap.cpp:1588
 msgid "Creating subfolders on server"
 msgstr "Creu is-blygyll ar y gweinydd"
 
-#: kmfoldercachedimap.cpp:1615
+#: kmfoldercachedimap.cpp:1645
 #, kde-format
 msgid ""
 "<qt><p>Mails on the server in folder <b>%1</b> were deleted. Do you want to "
 "delete them locally?</p><p>UIDs: %2</p></qt>"
 msgstr ""
 
-#: kmfoldercachedimap.cpp:1628
+#: kmfoldercachedimap.cpp:1658
 msgid "Deleting removed messages from server"
 msgstr "Dileu negeseuon a waredwyd o'r gelc"
 
-#: kmfoldercachedimap.cpp:1667
+#: kmfoldercachedimap.cpp:1697
 msgid "Checking folder validity"
 msgstr "Gwirio dilysrwydd y blygell"
 
-#: kmfoldercachedimap.cpp:1898
+#: kmfoldercachedimap.cpp:1928
 msgid "Folder listing failed in interesting ways."
 msgstr ""
 
-#: kmfoldercachedimap.cpp:1996
+#: kmfoldercachedimap.cpp:2027
 #, fuzzy, kde-format
 msgid "Retrieving folders for namespace %1"
 msgstr "Nôl rhestr plygyll"
 
-#: kmfoldercachedimap.cpp:2254
+#: kmfoldercachedimap.cpp:2285
 #, kde-format
 msgid ""
 "<qt><p>It seems that the folder <b>%1</b> was deleted. Do you want to delete "
 "it from the server?</p></qt>"
 msgstr ""
 
-#: kmfoldercachedimap.cpp:2566
+#: kmfoldercachedimap.cpp:2597
 msgid "Aborted"
 msgstr "Terfynwyd"
 
-#: kmfoldercachedimap.cpp:2783
+#: kmfoldercachedimap.cpp:2814
 #, kde-format
 msgid ""
 "The IMAP server %1 does not have support for IMAP annotations. The XML "
 "storage cannot be used on this server; please re-configure KMail differently."
 msgstr ""
 
-#: kmfoldercachedimap.cpp:2823
+#: kmfoldercachedimap.cpp:2854
 #, kde-format
 msgid ""
 "The IMAP server %1 does not support annotations. The XML storage cannot be "
 "used on this server, please re-configure KMail differently"
 msgstr ""
 
-#: kmfoldercachedimap.cpp:2971
+#: kmfoldercachedimap.cpp:3002
 #, fuzzy
 msgid "Error while setting annotation: "
 msgstr "Gwall wrth lanlwytho'r plygell"
 
-#: kmfoldercachedimap.cpp:3105 kmfoldercachedimap.cpp:3108
+#: kmfoldercachedimap.cpp:3136 kmfoldercachedimap.cpp:3139
 msgid "lost+found"
 msgstr ""
 
-#: kmfoldercachedimap.cpp:3143
+#: kmfoldercachedimap.cpp:3174
 #, kde-format
 msgid ""
 "<p>There are new messages in folder <b>%1</b>, which have not been uploaded "
@@ -13314,11 +13328,11 @@ msgid ""
 "p>"
 msgstr ""
 
-#: kmfoldercachedimap.cpp:3149
+#: kmfoldercachedimap.cpp:3180
 msgid "Insufficient access rights"
 msgstr ""
 
-#: kmfoldercachedimap.cpp:3155
+#: kmfoldercachedimap.cpp:3186
 #, kde-format
 msgid ""
 "<p>There are new messages in this folder (%1), which have not been uploaded "
@@ -13329,12 +13343,12 @@ msgid ""
 "another folder now?</p>"
 msgstr ""
 
-#: kmfoldercachedimap.cpp:3162 kmkernel.cpp:1777
+#: kmfoldercachedimap.cpp:3193 kmkernel.cpp:1784
 #, fuzzy
 msgid "Move"
 msgstr "&Symud I"
 
-#: kmfoldercachedimap.cpp:3162 kmkernel.cpp:1779
+#: kmfoldercachedimap.cpp:3193 kmkernel.cpp:1786
 msgid "Do Not Move"
 msgstr ""
 
@@ -13468,7 +13482,7 @@ msgstr "CCD (BCC)"
 #: recipientseditor.cpp:106
 #, fuzzy
 msgctxt "@label:listbox"
-msgid "<placeholder>Undefined RecipientType</placeholder>"
+msgid "<placeholder>Undefined Recipient Type</placeholder>"
 msgstr "<derbynwyr>"
 
 #: recipientseditor.cpp:159
@@ -13638,79 +13652,79 @@ msgstr "Dibynnydd Ebost KDE"
 msgid "(c) 1997-2009, The KMail developers"
 msgstr "(h) 1997-2003, Datblygwyr KMail"
 
-#: kmkernel.cpp:679
+#: kmkernel.cpp:686
 msgid "Certificate Signature Request"
 msgstr "Cais Llofnod Tystysgrif"
 
-#: kmkernel.cpp:682
+#: kmkernel.cpp:689
 #, fuzzy
 msgid "Please create a certificate from attachment and return to sender."
 msgstr "Llofnodwch y dystysgrif yma a'i dychwelyd i'r anfonwr."
 
-#: kmkernel.cpp:1139
+#: kmkernel.cpp:1146
 msgid "KMail is set to be offline; all network jobs are suspended"
 msgstr ""
 
-#: kmkernel.cpp:1150
+#: kmkernel.cpp:1157
 msgid "KMail is set to be online; all network jobs resumed"
 msgstr ""
 
-#: kmkernel.cpp:1171
+#: kmkernel.cpp:1178
 msgid "KMail is currently in offline mode. How do you want to proceed?"
 msgstr ""
 
-#: kmkernel.cpp:1173 kmcomposewin.cpp:3435
+#: kmkernel.cpp:1180 kmcomposewin.cpp:3435
 msgid "Online/Offline"
 msgstr ""
 
-#: kmkernel.cpp:1310
+#: kmkernel.cpp:1317
 msgid "You do not have read/write permission to your inbox folder."
 msgstr "Nid oes gennych ganiatád darllen/ysgrifennu i'ch plygell blwch derbyn."
 
-#: kmkernel.cpp:1318
+#: kmkernel.cpp:1325
 msgid "outbox"
 msgstr "blwch anfon"
 
-#: kmkernel.cpp:1320
+#: kmkernel.cpp:1327
 msgid "You do not have read/write permission to your outbox folder."
 msgstr "Nid oes gennych ganiatád darllen/ysgrifennu i'ch plygell blwch anfon."
 
-#: kmkernel.cpp:1337
+#: kmkernel.cpp:1344
 msgid "sent-mail"
 msgstr "ebostau anfonedig"
 
-#: kmkernel.cpp:1339
+#: kmkernel.cpp:1346
 msgid "You do not have read/write permission to your sent-mail folder."
 msgstr ""
 "Nid oes gennych ganiatád darllen/ysgrifennu i'ch plygell blwch anfonedig."
 
-#: kmkernel.cpp:1346
+#: kmkernel.cpp:1353
 msgid "trash"
 msgstr "sbwriel"
 
-#: kmkernel.cpp:1348
+#: kmkernel.cpp:1355
 msgid "You do not have read/write permission to your trash folder."
 msgstr "Nid oes gennych ganiatád darllen/ysgrifennu i'ch plygell sbwriel."
 
-#: kmkernel.cpp:1355
+#: kmkernel.cpp:1362
 msgid "drafts"
 msgstr "drafftiau"
 
-#: kmkernel.cpp:1357
+#: kmkernel.cpp:1364
 msgid "You do not have read/write permission to your drafts folder."
 msgstr "Nid oes gennych ganiatád darllen/ysgrifennu i'ch plygell drafftiau."
 
-#: kmkernel.cpp:1364
+#: kmkernel.cpp:1371
 #, fuzzy
 msgid "templates"
 msgstr "&Amnewid"
 
-#: kmkernel.cpp:1366
+#: kmkernel.cpp:1373
 #, fuzzy
 msgid "You do not have read/write permission to your templates folder."
 msgstr "Nid oes gennych ganiatád darllen/ysgrifennu i'ch plygell sbwriel."
 
-#: kmkernel.cpp:1752
+#: kmkernel.cpp:1759
 #, kde-format
 msgctxt "%1-%3 is the application name, %4-%7 are folder path"
 msgid ""
@@ -13720,7 +13734,7 @@ msgid ""
 "p><p><strong>Would you like %3 to move the mail files now?</strong></p></qt>"
 msgstr ""
 
-#: kmkernel.cpp:1766
+#: kmkernel.cpp:1773
 #, kde-format
 msgctxt "%1-%3 is the application name, %4-%6 are folder path"
 msgid ""
@@ -13729,11 +13743,11 @@ msgid ""
 "<p><strong>Would you like %3 to move the mail files now?</strong></p></qt>"
 msgstr ""
 
-#: kmkernel.cpp:1776
+#: kmkernel.cpp:1783
 msgid "Migrate Mail Files?"
 msgstr ""
 
-#: kmkernel.cpp:1886 kmcommands.cpp:947
+#: kmkernel.cpp:1893 kmcommands.cpp:947
 #, kde-format
 msgid ""
 "File %1 exists.\n"
@@ -13742,19 +13756,19 @@ msgstr ""
 "Mae ffeil %1 mewn bod.\n"
 " Ydych eisiau ei amnewid?"
 
-#: kmkernel.cpp:1887 kmcommands.cpp:643 kmcommands.cpp:948
+#: kmkernel.cpp:1894 kmcommands.cpp:643 kmcommands.cpp:948
 msgid "Save to File"
 msgstr "Cadw i Ffeil"
 
-#: kmkernel.cpp:1887 kmcommands.cpp:643 kmcommands.cpp:948
+#: kmkernel.cpp:1894 kmcommands.cpp:643 kmcommands.cpp:948
 msgid "&Replace"
 msgstr "&Amnewid"
 
-#: kmkernel.cpp:1968
+#: kmkernel.cpp:1975
 msgid "KMail encountered a fatal error and will terminate now"
 msgstr "Ddaeth KMail ar draws gwall angheuol, a bydd yn terfynu rwan."
 
-#: kmkernel.cpp:1971
+#: kmkernel.cpp:1978
 #, kde-format
 msgid ""
 "KMail encountered a fatal error and will terminate now.\n"
@@ -13764,12 +13778,12 @@ msgstr ""
 "Ddaeth KMail ar draws gwall angheuol, a bydd yn terfynu rwan.\n"
 "Y gwall oedd:n %1"
 
-#: kmkernel.cpp:2095
+#: kmkernel.cpp:2102
 #, fuzzy
 msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr "Ydych wir eisiau gwagu'r blygell sbwriel?"
 
-#: kmkernel.cpp:2354
+#: kmkernel.cpp:2361
 #, kde-format
 msgid "This identity has been changed to use the default transport:"
 msgid_plural ""
@@ -13777,7 +13791,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: kmkernel.cpp:2377
+#: kmkernel.cpp:2384
 #, kde-format
 msgid "This identity has been changed to use the modified transport:"
 msgid_plural ""
@@ -16054,8 +16068,7 @@ msgid ""
 "<p>Sending failed:</p><p>%1</p><p>The message will stay in the 'outbox' "
 "folder until you either fix the problem (e.g. a broken address) or remove "
 "the message from the 'outbox' folder.</p><p>The following transport was "
-"used:  %2</p><p>Do you want me to continue sending the remaining messages?</"
-"p>"
+"used:  %2</p><p>Continue sending the remaining messages?</p>"
 msgstr ""
 "<p>Methwyd anfon:</p><p>%1</p><p>Bydd y neges yn aros yn y blygell 'blwch "
 "anfon' tan i chi drwsio'r broblem (e.e. cyferiad wedi'i dorri) neu symud y "
