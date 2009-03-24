@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpoker\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-19 10:35+0100\n"
+"POT-Creation-Date: 2009-03-24 11:04+0100\n"
 "PO-Revision-Date: 2005-09-21 13:39+0100\n"
 "Last-Translator: Kevin Donnelly <kevin@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -66,20 +66,276 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kyfieithu@dotmon.com"
 
+#: gameengine/kpoker.cpp:193 gameengine/player.cpp:104
+#, kde-format
+msgid ""
+"Received an admin message from a non-admin client.\n"
+"Admin: %1\n"
+"Message Id: %2\n"
+"Sender: %3\n"
+"\n"
+"The message has been ignored."
+msgstr ""
+
+#: gameengine/kpoker.cpp:306
+msgid ""
+"Tried to start a game, but there is already a game running. You've found a "
+"bug"
+msgstr ""
+
+#: gameengine/kpoker.cpp:324
+msgid ""
+"A network command tried to start a game, but there is already a game "
+"running. You've found a bug"
+msgstr ""
+
+#: gameengine/kpoker.cpp:333
+msgid ""
+"No KPokerDealer object was created, although you are the admin. You have "
+"found a bug - cannot start a game"
+msgstr ""
+
+#: gameengine/kpokerdealer.cpp:340
+#, kde-format
+msgid ""
+"No player is left in the round. You have encountered a bug!\n"
+"Status: %1\n"
+"Players in the game: %2\n"
+"\n"
+"Trying to start a new round now"
+msgstr ""
+
+#: gameengine/kcard.cpp:82
+#, fuzzy
+#| msgid "Flush"
+msgid "Clubs"
+msgstr "Rhesaid"
+
+#: gameengine/kcard.cpp:85
+msgid "Diamonds"
+msgstr ""
+
+#: gameengine/kcard.cpp:88
+msgid "Hearts"
+msgstr ""
+
+#: gameengine/kcard.cpp:91
+msgid "Spades"
+msgstr ""
+
+#: gameengine/kcard.cpp:94 gameengine/kcard.cpp:138
+msgid "Error"
+msgstr ""
+
+#: gameengine/kcard.cpp:99
+msgid "Ace"
+msgstr ""
+
+#: gameengine/kcard.cpp:102
+msgid "King"
+msgstr ""
+
+#: gameengine/kcard.cpp:105
+msgid "Queen"
+msgstr ""
+
+#: gameengine/kcard.cpp:108
+msgid "Jack"
+msgstr ""
+
+#: gameengine/kcard.cpp:111
+msgid "Two"
+msgstr ""
+
+#: gameengine/kcard.cpp:114
+msgid "Three"
+msgstr ""
+
+#: gameengine/kcard.cpp:117
+msgid "Four"
+msgstr ""
+
+#: gameengine/kcard.cpp:120
+msgid "Five"
+msgstr ""
+
+#: gameengine/kcard.cpp:123
+msgid "Six"
+msgstr ""
+
+#: gameengine/kcard.cpp:126
+#, fuzzy
+#| msgid "&See!"
+msgid "Seven"
+msgstr "&Gweld!"
+
+#: gameengine/kcard.cpp:129
+#, fuzzy
+#| msgid "Straight"
+msgid "Eight"
+msgstr "Syth"
+
+#: gameengine/kcard.cpp:132
+msgid "Nine"
+msgstr ""
+
+#: gameengine/kcard.cpp:135
+msgid "Ten"
+msgstr ""
+
+#: gameengine/kcard.cpp:144
+#, fuzzy, kde-format
+#| msgid "%1 won %2"
+msgctxt "[SuitesString] [ValueString]"
+msgid "%1 %2"
+msgstr "Mae %1 wedi ennill %2"
+
+#: gameview/playerbox.cpp:92
+msgid "Fold"
+msgstr "Plygu"
+
+#: gameview/playerbox.cpp:154 gameview/graphicsitems/playermoney.cpp:58
+#, kde-format
+msgid "Cash: %1"
+msgstr "Pres parod: %1"
+
+#: gameview/playerbox.cpp:164
+#, kde-format
+msgid "Bet: %1"
+msgstr "Bet: %1"
+
+#: gameview/playerbox.cpp:339
+#: gameview/graphicsitems/playercardcontainer.cpp:60
+msgid "Held"
+msgstr "Ar afael"
+
+#: gameview/topwidget.cpp:62
+msgid "New single player game"
+msgstr ""
+
+#: gameview/topwidget.cpp:66
+msgid "New multi player game"
+msgstr ""
+
+#: gameview/topwidget.cpp:103
+msgid "Debug KGame"
+msgstr ""
+
+#: gameview/topwidget.cpp:110
+#, fuzzy
+#| msgid "&Draw New Cards"
+msgid "Draw Cards"
+msgstr "&Tynnu Cerdiau Newydd"
+
+#: gameview/topwidget.cpp:119
+#, fuzzy, kde-format
+#| msgid "Exchange Card 1"
+msgid "Exchange Card %1"
+msgstr "Newid Cerdyn 1"
+
+#: gameview/topwidget.cpp:132
+msgid "Bet More"
+msgstr ""
+
+#: gameview/topwidget.cpp:138
+msgid "Bet Less"
+msgstr ""
+
+#: gameview/topwidget.cpp:251
+#, fuzzy
+#| msgid "Do you want to save this game?"
+msgid "Do you really want to end the current game?"
+msgstr "Ydych eisiau cadw'r gêm yma?"
+
+#: gameview/localiowidget.cpp:63
+#, fuzzy
+#| msgid "Draw"
+msgid "&Draw"
+msgstr "Tynnu"
+
+#: gameview/localiowidget.cpp:253
+msgid "Round over"
+msgstr ""
+
+#: gameview/localiowidget.cpp:256
+#, kde-format
+msgid "You won %1"
+msgstr "Rydych wedi ennill %1"
+
+#: gameview/localiowidget.cpp:259
+#, kde-format
+msgid "%1 won %2"
+msgstr "Mae %1 wedi ennill %2"
+
+#: gameview/localiowidget.cpp:298
+#, fuzzy
+#| msgid "You won %1"
+msgid "You won 500"
+msgstr "Rydych wedi ennill %1"
+
+#: gameview/kpokerwidget.cpp:135
+msgid "Phase: "
+msgstr ""
+
+#: gameview/kpokerwidget.cpp:197
+msgid "You"
+msgstr "Chi"
+
+#: gameview/kpokerwidget.cpp:212
+#, kde-format
+msgid "Computer %1"
+msgstr "Cyfrifiadur %1"
+
+#: gameview/kpokerwidget.cpp:354
+msgid "Draw"
+msgstr "Tynnu"
+
+#: gameview/kpokerwidget.cpp:372
+msgid "Bet/Exchange"
+msgstr ""
+
+#: gameview/kpokerwidget.cpp:376
+#, fuzzy
+#| msgid "Exchange Card 1"
+msgid "Exchange"
+msgstr "Newid Cerdyn 1"
+
+#: gameview/kpokerwidget.cpp:380
+msgid "Raise"
+msgstr ""
+
+#: gameview/kpokerwidget.cpp:383
+#, fuzzy
+#| msgid "&See!"
+msgid "See"
+msgstr "&Gweld!"
+
+#: gameview/kpokerwidget.cpp:430
+msgid ""
+"The game is over, you lost\n"
+"A new game is started now."
+msgstr ""
+
+#: gameview/kpokerwidget.cpp:436
+msgid "The game is over, you won the game!\n"
+msgstr ""
+
+#: gameview/kpokerwidget.cpp:439
+#, kde-format
+msgid ""
+"The game is over, you lost.\n"
+"%1 has won this game."
+msgstr ""
+
+#: gameview/kpokerwidget.cpp:444
+msgid "The game is over"
+msgstr ""
+
 #~ msgid "Adjust Bet"
 #~ msgstr "Addasu Bet"
 
-#~ msgid "Fold"
-#~ msgstr "Plygu"
-
-#~ msgid "You"
-#~ msgstr "Chi"
-
 #~ msgid "&Deal"
 #~ msgstr "&Delio"
-
-#~ msgid "You won %1"
-#~ msgstr "Rydych wedi ennill %1"
 
 #~ msgid "Continue the round"
 #~ msgstr "Parhau efo'r tro"
@@ -102,17 +358,8 @@ msgstr "kyfieithu@dotmon.com"
 #~ msgid "Pot: %1"
 #~ msgstr "Potyn: %1"
 
-#~ msgid "%1 won %2"
-#~ msgstr "Mae %1 wedi ennill %2"
-
 #~ msgid "&Deal New Round"
 #~ msgstr "D&elio Tro Newydd"
-
-#~ msgid "&See!"
-#~ msgstr "&Gweld!"
-
-#~ msgid "&Draw New Cards"
-#~ msgstr "&Tynnu Cerdiau Newydd"
 
 #~ msgid "One Pair"
 #~ msgstr "Un Pâr"
@@ -122,12 +369,6 @@ msgstr "kyfieithu@dotmon.com"
 
 #~ msgid "3 of a Kind"
 #~ msgstr "3 o'r Fath"
-
-#~ msgid "Straight"
-#~ msgstr "Syth"
-
-#~ msgid "Flush"
-#~ msgstr "Rhesaid"
 
 #~ msgid "Full House"
 #~ msgstr "Tŷ Llawn"
@@ -198,9 +439,6 @@ msgstr "kyfieithu@dotmon.com"
 #~ msgid "Show this dialog every time on startup"
 #~ msgstr "Dangos yr ymgom yma bob tro wrth ddechrau"
 
-#~ msgid "Computer %1"
-#~ msgstr "Cyfrifiadur %1"
-
 #~ msgid "Player"
 #~ msgstr "Chwaraewr"
 
@@ -216,23 +454,14 @@ msgstr "kyfieithu@dotmon.com"
 #~ msgid "Minimal bet:"
 #~ msgstr "Bet isaf:"
 
-#~ msgid "Held"
-#~ msgstr "Ar afael"
-
 #~ msgid "Money of %1"
 #~ msgstr "Pres sy'n biau i %1"
-
-#~ msgid "Cash: %1"
-#~ msgstr "Pres parod: %1"
 
 #~ msgid "Out"
 #~ msgstr "Allan"
 
 #~ msgid "Cash per round: %1"
 #~ msgstr "Pres bob tro: %1"
-
-#~ msgid "Bet: %1"
-#~ msgstr "Bet: %1"
 
 #~ msgid "Soun&d"
 #~ msgstr "Sŵ&n"
@@ -242,12 +471,6 @@ msgstr "kyfieithu@dotmon.com"
 
 #~ msgid "&Adjust Bet is Default"
 #~ msgstr "&Addasu Bet yw'r rhagosodiad"
-
-#~ msgid "Draw"
-#~ msgstr "Tynnu"
-
-#~ msgid "Exchange Card 1"
-#~ msgstr "Newid Cerdyn 1"
 
 #~ msgid "Exchange Card 2"
 #~ msgstr "Newid Cerdyn 2"
@@ -260,9 +483,6 @@ msgstr "kyfieithu@dotmon.com"
 
 #~ msgid "Exchange Card 5"
 #~ msgstr "Newid Cerdyn 5"
-
-#~ msgid "Do you want to save this game?"
-#~ msgstr "Ydych eisiau cadw'r gêm yma?"
 
 #~ msgid "Last hand: "
 #~ msgstr "Dyrnaid olaf:"
