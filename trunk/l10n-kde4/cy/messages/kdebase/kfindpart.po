@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-28 11:06+0100\n"
+"POT-Creation-Date: 2009-04-01 11:15+0200\n"
 "PO-Revision-Date: 2003-12-28 14:15+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -21,40 +21,41 @@ msgstr ""
 "X-Generator: KBabel 1.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: kfinddlg.cpp:37
+#: kfinddlg.cpp:50
 #, fuzzy
 msgid "Find Files/Folders"
 msgstr "Canfod Ffeiliau"
 
-#: kfinddlg.cpp:58 kfinddlg.cpp:179
-msgid "Ready."
-msgstr "Yn barod."
+#: kfinddlg.cpp:71 kfinddlg.cpp:191
+msgctxt "the application is currently idle, there is no active search"
+msgid "Idle."
+msgstr ""
 
-#: kfinddlg.cpp:114 kfinddlg.cpp:218 kfinddlg.cpp:247
+#: kfinddlg.cpp:126 kfinddlg.cpp:230 kfinddlg.cpp:259
 #, fuzzy, kde-format
 msgid "one file found"
 msgid_plural "%1 files found"
 msgstr[0] "Canfuwyd 1 ffeil"
 msgstr[1] "Canfuwyd %1 o ffeiliau"
 
-#: kfinddlg.cpp:154
+#: kfinddlg.cpp:166
 msgid "Searching..."
 msgstr "Yn chwilio..."
 
-#: kfinddlg.cpp:181
+#: kfinddlg.cpp:193
 msgid "Aborted."
 msgstr "Erthylwyd."
 
-#: kfinddlg.cpp:184 kfinddlg.cpp:189 kfinddlg.cpp:195
+#: kfinddlg.cpp:196 kfinddlg.cpp:201 kfinddlg.cpp:207
 msgid "Error."
 msgstr "Gwall."
 
-#: kfinddlg.cpp:185
+#: kfinddlg.cpp:197
 msgid "Please specify an absolute path in the \"Look in\" box."
 msgstr ""
 "Penodwch lwybr uniongyrchol yn y blwch \"Edrych yn\" os gwelwch yn dda."
 
-#: kfinddlg.cpp:190
+#: kfinddlg.cpp:202
 msgid "Could not find the specified folder."
 msgstr "Methu canfod y blygell a benodwyd."
 
@@ -65,41 +66,139 @@ msgctxt "Name of the component that finds things"
 msgid "Find Component"
 msgstr "Canfod Cydran"
 
-#: kftabdlg.cpp:60
+#: kfindtreeview.cpp:47
+msgid "Read-write"
+msgstr "Darllen-ysgrifennu"
+
+#: kfindtreeview.cpp:48
+msgid "Read-only"
+msgstr "Darllen-yn-unig"
+
+#: kfindtreeview.cpp:49
+msgid "Write-only"
+msgstr "Ysgrifennu-yn-unig"
+
+#: kfindtreeview.cpp:50
+msgid "Inaccessible"
+msgstr "Anhygyrch"
+
+#: kfindtreeview.cpp:69
+#, fuzzy
+#| msgid "Name"
+msgctxt "file name column"
+msgid "Name"
+msgstr "Enw"
+
+#: kfindtreeview.cpp:71
+#, fuzzy
+#| msgid "In Subfolder"
+msgctxt "name of the containing folder"
+msgid "In Subfolder"
+msgstr "Yn Is-blygell"
+
+#: kfindtreeview.cpp:73
+#, fuzzy
+#| msgid "Size"
+msgctxt "file size column"
+msgid "Size"
+msgstr "Maint"
+
+#: kfindtreeview.cpp:75
+#, fuzzy
+#| msgid "Modified"
+msgctxt "modified date column"
+msgid "Modified"
+msgstr "Addaswyd"
+
+#: kfindtreeview.cpp:77
+#, fuzzy
+#| msgid "Permissions"
+msgctxt "file permissions column"
+msgid "Permissions"
+msgstr "Caniatadau"
+
+#: kfindtreeview.cpp:79
+#, fuzzy
+#| msgid "First Matching Line"
+msgctxt "first matching line of the query string in this file"
+msgid "First Matching Line"
+msgstr "Llinell Gydwedd Gyntaf"
+
+#: kfindtreeview.cpp:340
+msgid "&Open containing folder(s)"
+msgstr ""
+
+#: kfindtreeview.cpp:344
+msgid "&Delete"
+msgstr ""
+
+#: kfindtreeview.cpp:349
+msgid "&Move to Trash"
+msgstr ""
+
+#: kfindtreeview.cpp:432
+msgid "Save Results As"
+msgstr "Cadw'r Canlyniadau Fel"
+
+#: kfindtreeview.cpp:433
+msgid "HTML page"
+msgstr ""
+
+#: kfindtreeview.cpp:433
+msgid "Text file"
+msgstr ""
+
+#: kfindtreeview.cpp:453
+#, fuzzy
+msgid "Unable to save results."
+msgstr "Nid oedd modd cadw'r canlyniadau!"
+
+#: kfindtreeview.cpp:469
+msgid "KFind Results File"
+msgstr "Ffeil Ganlyniadau KFind"
+
+#: kfindtreeview.cpp:490
+msgid "Results were saved to file\n"
+msgstr "Cadwyd y canlyniadau i ffeil\n"
+
+#: kftabdlg.cpp:73
+#, fuzzy
+#| msgid "&Named:"
+msgctxt "this is the label for the name textfield"
 msgid "&Named:"
 msgstr "O'r E&nw:"
 
-#: kftabdlg.cpp:63
+#: kftabdlg.cpp:76
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr "Gallwch ddefnyddio cydweddu gwylltnod a \";\" i wahanu sawl enw"
 
-#: kftabdlg.cpp:67
+#: kftabdlg.cpp:80
 #, fuzzy
 msgid "Look &in:"
 msgstr "&Edrych yn:"
 
-#: kftabdlg.cpp:70
+#: kftabdlg.cpp:83
 msgid "Include &subfolders"
 msgstr "Cynnwys i&s-blygyll"
 
-#: kftabdlg.cpp:71
+#: kftabdlg.cpp:84
 msgid "Case s&ensitive search"
 msgstr "Chwiliad â &braslythrennau o bwys"
 
-#: kftabdlg.cpp:72
+#: kftabdlg.cpp:85
 msgid "&Browse..."
 msgstr "&Pori..."
 
-#: kftabdlg.cpp:73
+#: kftabdlg.cpp:86
 #, fuzzy
 msgid "&Use files index"
 msgstr "Defnyddio mynegai ffeiliau"
 
-#: kftabdlg.cpp:74
+#: kftabdlg.cpp:87
 msgid "Show &hidden files"
 msgstr ""
 
-#: kftabdlg.cpp:92
+#: kftabdlg.cpp:105
 #, fuzzy
 msgid ""
 "<qt>Enter the filename you are looking for. <br />Alternatives may be "
@@ -124,7 +223,7 @@ msgstr ""
 "gorffen âg \"ô\", a sydd ag yn union un nôd rhyngddynt</li><li>Mae "
 "<b>FyNogfen.kwd</b> yn canfod ffeil â'r union enw yna</li></ul></qt>"
 
-#: kftabdlg.cpp:113
+#: kftabdlg.cpp:126
 #, fuzzy
 msgid ""
 "<qt>This lets you use the files' index created by the <i>slocate</i> package "
@@ -135,101 +234,110 @@ msgstr ""
 "pecyn <i>slocate</i> i <i>gyflymu</i>'r chwiliad. Peidiwch ag anghofio "
 "diweddaru'r mynegai yn achlysurol (gan ddefnyddio <i>updatedb</i>)</qt>"
 
-#: kftabdlg.cpp:159
+#: kftabdlg.cpp:172
 msgid "Find all files created or &modified:"
 msgstr "Canfod yr holl ffeiliau a grëwyd neu &addaswyd:"
 
-#: kftabdlg.cpp:161
+#: kftabdlg.cpp:174
 msgid "&between"
 msgstr "&rhwng"
 
-#: kftabdlg.cpp:162
+#: kftabdlg.cpp:175
 msgid "&during the previous"
 msgstr "&yn ystod y cyfnod blaenorol"
 
-#: kftabdlg.cpp:163
+#: kftabdlg.cpp:176
 msgid "and"
 msgstr "a"
 
-#: kftabdlg.cpp:168
+#: kftabdlg.cpp:181
 msgid "minute(s)"
 msgstr "munud"
 
-#: kftabdlg.cpp:169
+#: kftabdlg.cpp:182
 msgid "hour(s)"
 msgstr "awr"
 
-#: kftabdlg.cpp:170
+#: kftabdlg.cpp:183
+#, fuzzy
+#| msgid "day(s)"
+msgctxt "use date ranges to search files by modified time"
 msgid "day(s)"
 msgstr "diwrnod"
 
-#: kftabdlg.cpp:171
+#: kftabdlg.cpp:184
 msgid "month(s)"
 msgstr "mis"
 
-#: kftabdlg.cpp:172
+#: kftabdlg.cpp:185
 msgid "year(s)"
 msgstr "blwyddyn"
 
-#: kftabdlg.cpp:190
+#: kftabdlg.cpp:203
 msgid "File &size is:"
 msgstr "&Maint y ffeil yw:"
 
-#: kftabdlg.cpp:204
+#: kftabdlg.cpp:217
 msgid "Files owned by &user:"
 msgstr "Ffeiliau'n perchen i'r &defnyddiwr:"
 
-#: kftabdlg.cpp:209
+#: kftabdlg.cpp:222
 msgid "Owned by &group:"
 msgstr "Yn perchen i'r &grŵp:"
 
-#: kftabdlg.cpp:212
+#: kftabdlg.cpp:225
+#, fuzzy
+#| msgid "(none)"
+msgctxt "file size isn't considered in the search"
 msgid "(none)"
 msgstr "(dim)"
 
-#: kftabdlg.cpp:213
+#: kftabdlg.cpp:226
 msgid "At Least"
 msgstr "O leiaf"
 
-#: kftabdlg.cpp:214
+#: kftabdlg.cpp:227
 msgid "At Most"
 msgstr "Ar y mwyaf"
 
-#: kftabdlg.cpp:215
+#: kftabdlg.cpp:228
 msgid "Equal To"
 msgstr "Yn hafal â"
 
-#: kftabdlg.cpp:217
+#: kftabdlg.cpp:230
 msgid "Bytes"
 msgstr "Beit"
 
-#: kftabdlg.cpp:218
+#: kftabdlg.cpp:231
 #, fuzzy
 #| msgid "KB"
 msgid "KiB"
 msgstr "KB"
 
-#: kftabdlg.cpp:219
+#: kftabdlg.cpp:232
 #, fuzzy
 #| msgid "MB"
 msgid "MiB"
 msgstr "MB"
 
-#: kftabdlg.cpp:220
+#: kftabdlg.cpp:233
 #, fuzzy
 #| msgid "GB"
 msgid "GiB"
 msgstr "GB"
 
-#: kftabdlg.cpp:285
+#: kftabdlg.cpp:298
+#, fuzzy
+#| msgid "File &type:"
+msgctxt "label for the file type combobox"
 msgid "File &type:"
 msgstr "&Math ffeil:"
 
-#: kftabdlg.cpp:290
+#: kftabdlg.cpp:303
 msgid "C&ontaining text:"
 msgstr "Yn cy&nnwys testun:"
 
-#: kftabdlg.cpp:296
+#: kftabdlg.cpp:309
 msgid ""
 "<qt>If specified, only files that contain this text are found. Note that not "
 "all file types from the list above are supported. Please refer to the "
@@ -239,19 +347,19 @@ msgstr ""
 "ganfyddir. Noder nas cynhelir bob math ffeil o'r restr uchod. Cyfeiriwch at "
 "y ddogfennaeth am restr o'r mathau ffeil y cynhelir os gwelwch yn dda.</qt>"
 
-#: kftabdlg.cpp:304
+#: kftabdlg.cpp:317
 msgid "Case s&ensitive"
 msgstr "Priflythrennau &o bwys"
 
-#: kftabdlg.cpp:305
+#: kftabdlg.cpp:318
 msgid "Include &binary files"
 msgstr "Cynnwys ffeiliau &deuol"
 
-#: kftabdlg.cpp:306
+#: kftabdlg.cpp:319
 msgid "Regular e&xpression"
 msgstr "Mynegiad &rheolaidd"
 
-#: kftabdlg.cpp:309
+#: kftabdlg.cpp:322
 msgid ""
 "<qt>This lets you search in any type of file, even those that usually do not "
 "contain text (for example program files and images).</qt>"
@@ -260,75 +368,78 @@ msgstr ""
 "sy ddim yn cynnwys testun fel arfer (er enghraifft, ffeiliau rhaglen a "
 "delweddau).</qt>"
 
-#: kftabdlg.cpp:317
+#: kftabdlg.cpp:330
 msgid "&Edit..."
 msgstr "&Golygu"
 
-#: kftabdlg.cpp:323
+#: kftabdlg.cpp:336
 msgid "fo&r:"
 msgstr "ar gyfe&r:"
 
-#: kftabdlg.cpp:325
+#: kftabdlg.cpp:338
 msgid "Search &metainfo sections:"
 msgstr "Chwilio adrannau &metagwybodaeth:"
 
-#: kftabdlg.cpp:329
+#: kftabdlg.cpp:342
 msgid "All Files & Folders"
 msgstr "Pob Ffeil a Plygell"
 
-#: kftabdlg.cpp:330
+#: kftabdlg.cpp:343
 #, fuzzy
 msgid "Files"
 msgstr "Plygyll"
 
-#: kftabdlg.cpp:331
+#: kftabdlg.cpp:344
 msgid "Folders"
 msgstr "Plygyll"
 
-#: kftabdlg.cpp:332
+#: kftabdlg.cpp:345
 msgid "Symbolic Links"
 msgstr "Cysylltau Symbolaidd"
 
-#: kftabdlg.cpp:333
+#: kftabdlg.cpp:346
 #, fuzzy
 msgid "Special Files (Sockets, Device Files, ...)"
 msgstr "Ffeiliau Arbennig (Socedi, Ffeiliau Dyfais...)"
 
-#: kftabdlg.cpp:334
+#: kftabdlg.cpp:347
 msgid "Executable Files"
 msgstr "Ffeiliau Gweithredadwy"
 
-#: kftabdlg.cpp:335
+#: kftabdlg.cpp:348
 msgid "SUID Executable Files"
 msgstr "Ffeiliau Gweithredadwy SUID"
 
-#: kftabdlg.cpp:336
+#: kftabdlg.cpp:349
 msgid "All Images"
 msgstr "Pob Delwedd"
 
-#: kftabdlg.cpp:337
+#: kftabdlg.cpp:350
 #, fuzzy
 msgid "All Video"
 msgstr "Pob fideo"
 
-#: kftabdlg.cpp:338
+#: kftabdlg.cpp:351
 #, fuzzy
 msgid "All Sounds"
 msgstr "Pob sŵn"
 
-#: kftabdlg.cpp:389
+#: kftabdlg.cpp:402
 msgid "Name/&Location"
 msgstr "Enw/&Lleoliad"
 
-#: kftabdlg.cpp:390
+#: kftabdlg.cpp:403
+#, fuzzy
+#| msgid "C&ontents"
+msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "C&ynnwys"
 
-#: kftabdlg.cpp:391
+#: kftabdlg.cpp:404
 msgid "&Properties"
 msgstr "&Priodweddau"
 
-#: kftabdlg.cpp:396
+#: kftabdlg.cpp:409
 #, fuzzy
 #| msgid ""
 #| "<qt>Search within files' specific comments/metainfo<br>These are some "
@@ -346,7 +457,7 @@ msgstr ""
 "am deitl, neu albwm</li><li><b>Delweddau (png...)</b> Chwilio delweddau â "
 "chydraniad arbennig, neu sylw...</li></ul></qt>"
 
-#: kftabdlg.cpp:404
+#: kftabdlg.cpp:417
 #, fuzzy
 #| msgid ""
 #| "<qt>If specified, search only in this field<br><ul><li><b>Audio files "
@@ -362,231 +473,136 @@ msgstr ""
 "li><li><b>Delweddau (png...)</b>Chwilio yn y Cydraniad,Dyfnder did... yn "
 "unig</li></ul></qt>"
 
-#: kftabdlg.cpp:597
+#: kftabdlg.cpp:610
 msgid "Unable to search within a period which is less than a minute."
 msgstr "Methu chwilio o fewn cyfnod sy'n fyrrach na munud."
 
-#: kftabdlg.cpp:608
+#: kftabdlg.cpp:621
 #, fuzzy
 msgid "The date is not valid."
 msgstr "Nid yw'r dyddiad yn ddilys!"
 
-#: kftabdlg.cpp:610
+#: kftabdlg.cpp:623
 #, fuzzy
 msgid "Invalid date range."
 msgstr "Amrediad dyddiadau annilys!"
 
-#: kftabdlg.cpp:612
+#: kftabdlg.cpp:625
 msgid "Unable to search dates in the future."
 msgstr "Methu chwilio am ddydiadau sydd yn y dyfodol."
 
-#: kftabdlg.cpp:674
+#: kftabdlg.cpp:687
 #, fuzzy
 msgid "Size is too big. Set maximum size value?"
 msgstr "Mae'r maint yn rhy fawr... Gosod  gwerth uchafswm maint?"
 
-#: kftabdlg.cpp:674
+#: kftabdlg.cpp:687
 #, fuzzy
 msgid "Error"
 msgstr "Gwall."
 
-#: kftabdlg.cpp:674
+#: kftabdlg.cpp:687
 msgid "Set"
 msgstr "Set"
 
-#: kftabdlg.cpp:674
+#: kftabdlg.cpp:687
 msgid "Do Not Set"
 msgstr ""
 
-#: kfwin.cpp:46
-msgid "Read-write"
-msgstr "Darllen-ysgrifennu"
-
-#: kfwin.cpp:47
-msgid "Read-only"
-msgstr "Darllen-yn-unig"
-
-#: kfwin.cpp:48
-msgid "Write-only"
-msgstr "Ysgrifennu-yn-unig"
-
-#: kfwin.cpp:49
-msgid "Inaccessible"
-msgstr "Anhygyrch"
-
-#: kfwin.cpp:60
-#, fuzzy
-#| msgid "Name"
-msgctxt "file name column"
-msgid "Name"
-msgstr "Enw"
-
-#: kfwin.cpp:60
-#, fuzzy
-#| msgid "In Subfolder"
-msgctxt "name of the containing folder"
-msgid "In Subfolder"
-msgstr "Yn Is-blygell"
-
-#: kfwin.cpp:60
-#, fuzzy
-#| msgid "Size"
-msgctxt "file size column"
-msgid "Size"
-msgstr "Maint"
-
-#: kfwin.cpp:60
-#, fuzzy
-#| msgid "Modified"
-msgctxt "modified date column"
-msgid "Modified"
-msgstr "Addaswyd"
-
-#: kfwin.cpp:60
-#, fuzzy
-#| msgid "Permissions"
-msgctxt "file permissions column"
-msgid "Permissions"
-msgstr "Caniatadau"
-
-#: kfwin.cpp:60
-#, fuzzy
-#| msgid "First Matching Line"
-msgctxt "first matching line of the query string in this file"
-msgid "First Matching Line"
-msgstr "Llinell Gydwedd Gyntaf"
-
-#: kfwin.cpp:235
-msgid "&Open containing folder(s)"
-msgstr ""
-
-#: kfwin.cpp:239
-msgid "&Delete"
-msgstr ""
-
-#: kfwin.cpp:244
-msgid "&Move to Trash"
-msgstr ""
-
-#: kfwin.cpp:305
-msgid "Save Results As"
-msgstr "Cadw'r Canlyniadau Fel"
-
-#: kfwin.cpp:306
-msgid "HTML page"
-msgstr ""
-
-#: kfwin.cpp:306
-msgid "Text file"
-msgstr ""
-
-#: kfwin.cpp:326
-#, fuzzy
-msgid "Unable to save results."
-msgstr "Nid oedd modd cadw'r canlyniadau!"
-
-#: kfwin.cpp:341
-msgid "KFind Results File"
-msgstr "Ffeil Ganlyniadau KFind"
-
-#: kfwin.cpp:364
-msgid "Results were saved to file\n"
-msgstr "Cadwyd y canlyniadau i ffeil\n"
-
-#: kquery.cpp:497
+#: kquery.cpp:527
 msgid "Error while using locate"
 msgstr "Gwall tra'n defnyddio locate"
 
-#: main.cpp:12
+#: main.cpp:30
 #, fuzzy
 msgid "KDE file find utility"
 msgstr "Cyfleuster canfod ffeiliau KDE."
 
-#: main.cpp:16
+#: main.cpp:34
 msgid "KFind"
 msgstr "KFind"
 
-#: main.cpp:18
+#: main.cpp:36
 msgid "(c) 1998-2003, The KDE Developers"
 msgstr "(h)(c) 1998-2003, Datblygwyr KDE"
 
-#: main.cpp:20
+#: main.cpp:38
 msgid "Eric Coquelle"
 msgstr ""
 
-#: main.cpp:20
+#: main.cpp:38
 msgid "Current Maintainer"
 msgstr "Cynhaliwr Cyfredol"
 
-#: main.cpp:21
+#: main.cpp:39
 msgid "Mark W. Webb"
 msgstr ""
 
-#: main.cpp:21
+#: main.cpp:39
 msgid "Developer"
 msgstr "Datblygwr"
 
-#: main.cpp:22
+#: main.cpp:40
 msgid "Beppe Grimaldi"
 msgstr ""
 
-#: main.cpp:22
+#: main.cpp:40
 msgid "UI Design & more search options"
 msgstr "Dylunio RhD a rhagor o ddewisiadau chwilio"
 
-#: main.cpp:23
+#: main.cpp:41
 msgid "Martin Hartig"
 msgstr ""
 
-#: main.cpp:24
+#: main.cpp:42
 msgid "Stephan Kulow"
 msgstr ""
 
-#: main.cpp:25
+#: main.cpp:43
 msgid "Mario Weilguni"
 msgstr ""
 
-#: main.cpp:26
+#: main.cpp:44
 msgid "Alex Zepeda"
 msgstr ""
 
-#: main.cpp:27
+#: main.cpp:45
 msgid "Miroslav Flídr"
 msgstr ""
 
-#: main.cpp:28
+#: main.cpp:46
 msgid "Harri Porten"
 msgstr ""
 
-#: main.cpp:29
+#: main.cpp:47
 msgid "Dima Rogozin"
 msgstr ""
 
-#: main.cpp:30
+#: main.cpp:48
 msgid "Carsten Pfeiffer"
 msgstr ""
 
-#: main.cpp:31
+#: main.cpp:49
 msgid "Hans Petter Bieker"
 msgstr ""
 
-#: main.cpp:32
+#: main.cpp:50
 msgid "Waldo Bastian"
 msgstr ""
 
-#: main.cpp:32
+#: main.cpp:50
 msgid "UI Design"
 msgstr "Dylunio RhD"
 
-#: main.cpp:33
+#: main.cpp:51
 msgid "Alexander Neundorf"
 msgstr ""
 
-#: main.cpp:34
+#: main.cpp:52
 msgid "Clarence Dang"
 msgstr ""
 
-#: main.cpp:39
+#: main.cpp:57
 #, fuzzy
 msgid "Path(s) to search"
 msgstr "Llwybr(au) i'w chwilio."
@@ -600,6 +616,9 @@ msgstr "Owain Green ar ran KGyfieithu"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kyfieithu@dotmon.com"
+
+#~ msgid "Ready."
+#~ msgstr "Yn barod."
 
 #, fuzzy
 #~ msgid "Do you really want to delete the selected file?"
