@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: desktop_kdepim\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-27 00:17+0000\n"
+"POT-Creation-Date: 2009-05-10 23:18+0000\n"
 "PO-Revision-Date: 2004-01-07 14:04+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -482,11 +482,6 @@ msgstr "Name=KLarwm"
 msgid "GenericName=Personal Alarm Scheduler"
 msgstr "GenericName=Trefnlennydd Larwm Personol"
 
-#: kalarm/kalarm.tray.desktop:22
-msgid "Comment=Personal Alarm Scheduler: start as system tray icon"
-msgstr ""
-"Comment=Trefnlennydd Larwm Personol: cychwynnwch fel eicon yn y cafn cysawd"
-
 #: kalarm/kalarmd/kalarmd.autostart.desktop:3 kalarm/kalarmd/kalarmd.desktop:3
 #, fuzzy
 msgid "Name=KAlarm Daemon"
@@ -497,6 +492,11 @@ msgstr "Name=Ellyll Larwm"
 msgid "Comment=KAlarm alarm daemon autostart at login"
 msgstr ""
 "Comment=Cychwyn yr ellyll larwm KTrefnydd/KLarwm yn ymysgogol wrth fewngofnodi"
+
+#: kalarm/kalarm.tray.desktop:22
+msgid "Comment=Personal Alarm Scheduler: start as system tray icon"
+msgstr ""
+"Comment=Trefnlennydd Larwm Personol: cychwynnwch fel eicon yn y cafn cysawd"
 
 #: kandy/src/kandy.desktop:2
 msgid "Name=Kandy"
@@ -553,14 +553,6 @@ msgstr "Name=Trinydd KitchenSync"
 #: kitchensync/src/kitchensync.desktop:5
 msgid "GenericName=Synchronization"
 msgstr "GenericName=Cydamseriad"
-
-#: kmail/KMail.desktop:2 kmail/kmail_view.desktop:2
-msgid "Name=KMail"
-msgstr "Name=KMail"
-
-#: kmail/KMail.desktop:17
-msgid "GenericName=Mail Client"
-msgstr "GenericName=Dibynnydd Ebost"
 
 #: kmail/application_octetstream.desktop:2
 #: plugins/kmail/bodypartformatter/text_calendar.desktop:2
@@ -667,6 +659,14 @@ msgstr ""
 #, fuzzy
 msgid "Keywords=kmail,security"
 msgstr "Keywords=komposer,kyfansoddydd"
+
+#: kmail/KMail.desktop:2 kmail/kmail_view.desktop:2
+msgid "Name=KMail"
+msgstr "Name=KMail"
+
+#: kmail/KMail.desktop:17
+msgid "GenericName=Mail Client"
+msgstr "GenericName=Dibynnydd Ebost"
 
 #: kmail/profiles/profile-default-rc.desktop:2
 msgid "Name=Default"
@@ -782,14 +782,6 @@ msgstr "Comment=Rheolydd Dyfeisiau Symudol KDE"
 msgid "Name=KDE Mobile Device Lowlevel Hardware Driver"
 msgstr "Name=Gyrrydd Caledwedd Lefel Isel KDE ar gyfer Dyfeisiau Symudol"
 
-#: knode/KNode.desktop:7
-msgid "Name=KNode"
-msgstr "Name=KNode"
-
-#: knode/KNode.desktop:16
-msgid "GenericName=News Reader"
-msgstr "GenericName=Darllenydd Newyddion"
-
 #: knode/knode_config_accounts.desktop:71
 msgid "Comment=Setup for Newsgroup and Mail Servers"
 msgstr ""
@@ -829,6 +821,14 @@ msgstr ""
 msgid "Name=Reading News"
 msgstr "Name=Newyddion"
 
+#: knode/KNode.desktop:7
+msgid "Name=KNode"
+msgstr "Name=KNode"
+
+#: knode/KNode.desktop:16
+msgid "GenericName=News Reader"
+msgstr "GenericName=Darllenydd Newyddion"
+
 #: knotes/knotes.desktop:8
 msgid "GenericName=Popup Notes"
 msgstr "GenericName=Naid-nodiadau"
@@ -855,20 +855,20 @@ msgstr "Name=KonsoleKalendar"
 msgid "Name=Kontact Plugin"
 msgstr "Name=Ategyn Kontact"
 
-#: kontact/plugins/akregator/akregatorplugin.desktop:16
+#: kontact/plugins/akregator/akregatorplugin3.2.desktop:15
 #, fuzzy
-msgid "Comment=Feed Reader Component (Akregator Plugin)"
+msgid "Comment=Akregator Plugin"
 msgstr "Comment=Ategyn Calendr"
 
-#: kontact/plugins/akregator/akregatorplugin.desktop:40
 #: kontact/plugins/akregator/akregatorplugin3.2.desktop:65
+#: kontact/plugins/akregator/akregatorplugin.desktop:40
 #, fuzzy
 msgid "Name=Feeds"
 msgstr "Name=Rhydd/Prysur"
 
-#: kontact/plugins/akregator/akregatorplugin3.2.desktop:15
+#: kontact/plugins/akregator/akregatorplugin.desktop:16
 #, fuzzy
-msgid "Comment=Akregator Plugin"
+msgid "Comment=Feed Reader Component (Akregator Plugin)"
 msgstr "Comment=Ategyn Calendr"
 
 #: kontact/plugins/kaddressbook/kaddressbookplugin.desktop:18
@@ -1077,10 +1077,18 @@ msgstr "Comment=Ategyn Tywydd Kontact"
 msgid "Name=Weather Service"
 msgstr "Name=GwasanaethTywydd"
 
-#: kontact/src/Kontact.desktop:2 kontact/src/kontactconfig.desktop:15
-#: kontact/src/kontactdcop.desktop:2
+#: kontact/src/kontactconfig.desktop:15 kontact/src/kontactdcop.desktop:2
+#: kontact/src/Kontact.desktop:2
 msgid "Name=Kontact"
 msgstr "Name=Kontact"
+
+#: kontact/src/kontactconfig.desktop:23
+msgid "Comment=KDE Kontact"
+msgstr "Comment=Kontact KDE"
+
+#: kontact/src/kontactconfig.desktop:39
+msgid "Keywords=kontact"
+msgstr "Keywords=kontact"
 
 #: kontact/src/Kontact.desktop:13
 msgid "GenericName=Personal Information Manager"
@@ -1146,14 +1154,6 @@ msgstr "Comment=Gwybodaeth Dywydd"
 msgid "Comment=News Ticker Component"
 msgstr "Comment=Ebost newydd wedi cyrraedd"
 
-#: kontact/src/kontactconfig.desktop:23
-msgid "Comment=KDE Kontact"
-msgstr "Comment=Kontact KDE"
-
-#: kontact/src/kontactconfig.desktop:39
-msgid "Keywords=kontact"
-msgstr "Keywords=kontact"
-
 #: korganizer/dcopcalendar.desktop:4
 msgid "Comment=Organizer with a DCOP interface"
 msgstr "Comment=Trefnydd gyda rhyngwyneb DCOP"
@@ -1180,18 +1180,6 @@ msgstr "Name=Dibynnydd Larwm KTrefnydd"
 #, fuzzy
 msgid "GenericName=KOrganizer Reminder Daemon Client"
 msgstr "GenericName=Dibynnydd ellyll larwm KTrefnydd"
-
-#: korganizer/korganizer.desktop:3
-msgid "Comment=Calendar and Scheduling Program"
-msgstr "Comment=Rhaglen Galendr a Drefnlennu"
-
-#: korganizer/korganizer.desktop:74
-msgid "Name=KOrganizer"
-msgstr "Name=KTrefnydd"
-
-#: korganizer/korganizer.desktop:88
-msgid "GenericName=Personal Organizer"
-msgstr "GenericName=Trefnydd Personol"
 
 #: korganizer/korganizer_configcolors.desktop:14
 msgid "Name=Colors"
@@ -1307,6 +1295,18 @@ msgstr "Comment=Ffurfweddiad Golygon KTrefnydd"
 #: korganizer/korganizer_configviews.desktop:124
 msgid "Keywords=korganizer,view"
 msgstr "Keywords=korganizer,ktrefnydd,golwg"
+
+#: korganizer/korganizer.desktop:3
+msgid "Comment=Calendar and Scheduling Program"
+msgstr "Comment=Rhaglen Galendr a Drefnlennu"
+
+#: korganizer/korganizer.desktop:74
+msgid "Name=KOrganizer"
+msgstr "Name=KTrefnydd"
+
+#: korganizer/korganizer.desktop:88
+msgid "GenericName=Personal Organizer"
+msgstr "GenericName=Trefnydd Personol"
 
 #: korganizer/plugins/datenums/datenums.desktop:3
 #, fuzzy
@@ -1550,13 +1550,9 @@ msgid ""
 msgstr ""
 "Comment=Mae'r cwndid yma yn cydamseru'ch Pilot efo Llyfr Dyddiadau KTrefnydd."
 
-#: kpilot/kpilot/kpilot.desktop:3
-msgid "Name=KPilot"
-msgstr "Name=KPilot"
-
-#: kpilot/kpilot/kpilot.desktop:16
-msgid "GenericName=PalmPilot Tool"
-msgstr "GenericName=Erfyn PalmPilot"
+#: kpilot/kpilot/kpilotconduit.desktop:4
+msgid "Comment=KPilot Conduit"
+msgstr "Comment=Cwndid KPilot"
 
 #: kpilot/kpilot/kpilot_config.desktop:13
 #, fuzzy
@@ -1573,13 +1569,17 @@ msgstr "Comment=Prif Ffurfweddiad KTrefnydd"
 msgid "Keywords=kpilot,main"
 msgstr "Keywords=kontact"
 
-#: kpilot/kpilot/kpilotconduit.desktop:4
-msgid "Comment=KPilot Conduit"
-msgstr "Comment=Cwndid KPilot"
-
 #: kpilot/kpilot/kpilotdaemon.desktop:3
 msgid "Name=KPilotDaemon"
 msgstr "Name=KPilotDaemon"
+
+#: kpilot/kpilot/kpilot.desktop:3
+msgid "Name=KPilot"
+msgstr "Name=KPilot"
+
+#: kpilot/kpilot/kpilot.desktop:16
+msgid "GenericName=PalmPilot Tool"
+msgstr "GenericName=Erfyn PalmPilot"
 
 #: kresources/birthdays/kabc.desktop:2
 msgid "Name=Birthdays From KAddressBook"
@@ -1596,14 +1596,14 @@ msgstr ""
 msgid "Name=eGroupware Server (via XML-RPC)"
 msgstr "Name=Newyddion"
 
-#: kresources/exchange/exchange.desktop:7
-#, fuzzy
-msgid "Name=Exchange 2000 Server"
-msgstr "Name=Calendr ar weinydd Exchange2000"
-
 #: kresources/exchange/exchange_deprecated.desktop:3
 #, fuzzy
 msgid "Name=Exchange 2000 Server (deprecated)"
+msgstr "Name=Calendr ar weinydd Exchange2000"
+
+#: kresources/exchange/exchange.desktop:7
+#, fuzzy
+msgid "Name=Exchange 2000 Server"
 msgstr "Name=Calendr ar weinydd Exchange2000"
 
 #: kresources/featureplan/kcal_resourcefeatureplan.desktop:2

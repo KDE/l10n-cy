@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: all.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-20 23:18+0000\n"
+"POT-Creation-Date: 2009-05-10 23:18+0000\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -181,15 +181,6 @@ msgstr "GenericName=Dylunydd Rhyngwyneb"
 msgid "Comment=GUI Designer for Qt/KDE"
 msgstr ""
 
-#: kdevelop.desktop:8
-#, fuzzy
-msgid "Name=KDevelop: Multilanguage"
-msgstr "Name=GwasanaethCVS"
-
-#: kdevelop.desktop:40
-msgid "GenericName=IDE"
-msgstr "GenericName=IDE"
-
 #: kdevelop_c_cpp.desktop:8
 msgid "Name=KDevelop: C/C++"
 msgstr ""
@@ -198,6 +189,15 @@ msgstr ""
 #, fuzzy
 msgid "GenericName=IDE for C/C++"
 msgstr "GenericName=Tudnodau"
+
+#: kdevelop.desktop:8
+#, fuzzy
+msgid "Name=KDevelop: Multilanguage"
+msgstr "Name=GwasanaethCVS"
+
+#: kdevelop.desktop:40
+msgid "GenericName=IDE"
+msgstr "GenericName=IDE"
 
 #: kdevelop_kde_cpp.desktop:8
 msgid "Name=KDevelop: KDE/C++"
@@ -314,8 +314,8 @@ msgid "Comment=A simple C project was created in %{dest}."
 msgstr ""
 
 #: languages/cpp/app_templates/chello_gba/chellogba.kdevtemplate:3
-#: languages/cpp/app_templates/cmakesimple/cmakesimple.kdevtemplate:3
 #: languages/cpp/app_templates/cmakesimplec/cmakesimplec.kdevtemplate:3
+#: languages/cpp/app_templates/cmakesimple/cmakesimple.kdevtemplate:3
 #: languages/cpp/app_templates/prc-tool/prc-tool.kdevtemplate:3
 msgid "Name=Hello world program"
 msgstr ""
@@ -387,23 +387,23 @@ msgstr "Comment=Cymhwysiad KPart KDE"
 msgid "Comment=A CMake based Qt3 application was created in %{dest}"
 msgstr "Comment=Cymhwysiad KPart KDE"
 
-#: languages/cpp/app_templates/cmakesimple/cmakesimple.kdevtemplate:34
-msgid ""
-"Comment=Generates a simple Hello world program in C++ using the CMake build "
-"tool instead of the automake/autoconf/libtool combination. It requires cmake "
-"2.1 or cmake 2.2."
-msgstr ""
-
-#: languages/cpp/app_templates/cmakesimple/cmakesimple.kdevtemplate:83
-#: languages/cpp/app_templates/cmakesimplec/cmakesimplec.kdevtemplate:86
-msgid "Comment=A CMake based hello world program was created in %{dest}"
-msgstr ""
-
 #: languages/cpp/app_templates/cmakesimplec/cmakesimplec.kdevtemplate:34
 msgid ""
 "Comment=Generates a simple Hello world program in C using the CMake build tool "
 "instead of the automake/autoconf/libtool combination. It requires cmake 2.1 "
 "(available from cmake cvs) or the upcoming cmake 2.2 release."
+msgstr ""
+
+#: languages/cpp/app_templates/cmakesimplec/cmakesimplec.kdevtemplate:86
+#: languages/cpp/app_templates/cmakesimple/cmakesimple.kdevtemplate:83
+msgid "Comment=A CMake based hello world program was created in %{dest}"
+msgstr ""
+
+#: languages/cpp/app_templates/cmakesimple/cmakesimple.kdevtemplate:34
+msgid ""
+"Comment=Generates a simple Hello world program in C++ using the CMake build "
+"tool instead of the automake/autoconf/libtool combination. It requires cmake "
+"2.1 or cmake 2.2."
 msgstr ""
 
 #: languages/cpp/app_templates/cppcurseshello/cppcurseshello.kdevtemplate:3
@@ -443,8 +443,8 @@ msgstr ""
 #: languages/cpp/app_templates/dcopservice/dcopservice.desktop:3
 #: languages/cpp/app_templates/kapp/app.desktop:2
 #: languages/cpp/app_templates/kconfig35/app.desktop:2
-#: languages/cpp/app_templates/khello/app.desktop:2
 #: languages/cpp/app_templates/khello2/app.desktop:2
+#: languages/cpp/app_templates/khello/app.desktop:2
 #: languages/cpp/app_templates/kmake/app.desktop:2
 #: languages/cpp/app_templates/kofficepart/kopart.desktop:2
 #: languages/cpp/app_templates/kscreensaver/kscreensaver.desktop:7
@@ -542,6 +542,28 @@ msgstr ""
 msgid "Comment=A KDE Application was created at %{dest}"
 msgstr "Comment=Cymhwysiad KPart KDE"
 
+#: languages/cpp/app_templates/kateplugin2/kateplugin2.kdevtemplate:3
+msgid "Name=Kate plugin with config page"
+msgstr ""
+
+#: languages/cpp/app_templates/kateplugin2/kateplugin2.kdevtemplate:35
+msgid "Comment=Generates a plugin with config page for Kate the text editor."
+msgstr ""
+
+#: languages/cpp/app_templates/kateplugin2/kateplugin2.kdevtemplate:185
+msgid "Comment=A plugin for Kate with a config page was created in %{dest}"
+msgstr ""
+
+#: languages/cpp/app_templates/kateplugin2/plugin.desktop:6
+#: languages/cpp/app_templates/kateplugin/plugin.desktop:6
+msgid "Name=My First Kate Plugin"
+msgstr "Name=F'ategyn cyntaf Kate"
+
+#: languages/cpp/app_templates/kateplugin2/plugin.desktop:39
+#: languages/cpp/app_templates/kateplugin/plugin.desktop:39
+msgid "Comment=Your short description about the plugin goes here"
+msgstr "Comment=Mae eich disgrifiad byr am yr ategyn yn mynd yma"
+
 #: languages/cpp/app_templates/kateplugin/kateplugin.kdevtemplate:3
 #, fuzzy
 msgid "Name=Kate plugin"
@@ -553,28 +575,6 @@ msgstr ""
 
 #: languages/cpp/app_templates/kateplugin/kateplugin.kdevtemplate:184
 msgid "Comment=A plugin for Kate was created at %{dest}"
-msgstr ""
-
-#: languages/cpp/app_templates/kateplugin/plugin.desktop:6
-#: languages/cpp/app_templates/kateplugin2/plugin.desktop:6
-msgid "Name=My First Kate Plugin"
-msgstr "Name=F'ategyn cyntaf Kate"
-
-#: languages/cpp/app_templates/kateplugin/plugin.desktop:39
-#: languages/cpp/app_templates/kateplugin2/plugin.desktop:39
-msgid "Comment=Your short description about the plugin goes here"
-msgstr "Comment=Mae eich disgrifiad byr am yr ategyn yn mynd yma"
-
-#: languages/cpp/app_templates/kateplugin2/kateplugin2.kdevtemplate:3
-msgid "Name=Kate plugin with config page"
-msgstr ""
-
-#: languages/cpp/app_templates/kateplugin2/kateplugin2.kdevtemplate:35
-msgid "Comment=Generates a plugin with config page for Kate the text editor."
-msgstr ""
-
-#: languages/cpp/app_templates/kateplugin2/kateplugin2.kdevtemplate:185
-msgid "Comment=A plugin for Kate with a config page was created in %{dest}"
 msgstr ""
 
 #: languages/cpp/app_templates/kcmodule/kcmodule.kdevtemplate:3
@@ -604,8 +604,8 @@ msgid "Name=The %{APPNAME} Applet"
 msgstr ""
 
 #: languages/cpp/app_templates/kconfig35/app.desktop:6
-#: languages/cpp/app_templates/khello/app.desktop:6
 #: languages/cpp/app_templates/khello2/app.desktop:6
+#: languages/cpp/app_templates/khello/app.desktop:6
 #: languages/cpp/app_templates/kxt/app.desktop:6
 #: languages/ruby/app_templates/kxt/app.desktop:6
 msgid "Comment=A simple KDE Application"
@@ -671,8 +671,8 @@ msgid "Comment=%{APPNAME}"
 msgstr ""
 
 #: languages/cpp/app_templates/kdevlang/kdevlang.desktop:6
-#: languages/cpp/app_templates/kdevpart/kdevpart.desktop:4
 #: languages/cpp/app_templates/kdevpart2/kdevpart.desktop:4
+#: languages/cpp/app_templates/kdevpart/kdevpart.desktop:4
 msgid "Name=KDev%{APPNAME}"
 msgstr ""
 
@@ -692,13 +692,38 @@ msgid ""
 "%{dest}"
 msgstr ""
 
-#: languages/cpp/app_templates/kdevpart/kdevpart.desktop:8
+#: languages/cpp/app_templates/kdevpart2/kdevpart2.kdevtemplate:3
+msgid "Name=KDevelop Plugin (Standalone build)"
+msgstr ""
+
+#: languages/cpp/app_templates/kdevpart2/kdevpart2.kdevtemplate:34
+msgid ""
+"Comment=This generates a KPart for KDevelop, to be built outside of the "
+"KDevelop source tree."
+msgstr ""
+
+#: languages/cpp/app_templates/kdevpart2/kdevpart2.kdevtemplate:69
+#: languages/cpp/app_templates/kdevpart/kdevpart.kdevtemplate:67
+msgid "Comment= The scope of a plugin (Global, Project, Core)"
+msgstr ""
+
+#: languages/cpp/app_templates/kdevpart2/kdevpart2.kdevtemplate:103
+#: languages/cpp/app_templates/kdevpart/kdevpart.kdevtemplate:101
+msgid "Comment= The list of supported KDevelop properties"
+msgstr ""
+
+#: languages/cpp/app_templates/kdevpart2/kdevpart2.kdevtemplate:247
+#: languages/cpp/app_templates/kdevpart/kdevpart.kdevtemplate:213
+msgid "Comment=A KDevelop plugin was created in %{dest}"
+msgstr ""
+
 #: languages/cpp/app_templates/kdevpart2/kdevpart.desktop:8
+#: languages/cpp/app_templates/kdevpart/kdevpart.desktop:8
 msgid "GenericName=%{APPNAME} Plugin"
 msgstr ""
 
-#: languages/cpp/app_templates/kdevpart/kdevpart.desktop:39
 #: languages/cpp/app_templates/kdevpart2/kdevpart.desktop:39
+#: languages/cpp/app_templates/kdevpart/kdevpart.desktop:39
 msgid "Comment=%{APPNAME} Description"
 msgstr ""
 
@@ -710,31 +735,6 @@ msgstr ""
 msgid ""
 "Comment=This generates a plugin for KDevelop, for building within the KDevelop "
 "source tree"
-msgstr ""
-
-#: languages/cpp/app_templates/kdevpart/kdevpart.kdevtemplate:67
-#: languages/cpp/app_templates/kdevpart2/kdevpart2.kdevtemplate:69
-msgid "Comment= The scope of a plugin (Global, Project, Core)"
-msgstr ""
-
-#: languages/cpp/app_templates/kdevpart/kdevpart.kdevtemplate:101
-#: languages/cpp/app_templates/kdevpart2/kdevpart2.kdevtemplate:103
-msgid "Comment= The list of supported KDevelop properties"
-msgstr ""
-
-#: languages/cpp/app_templates/kdevpart/kdevpart.kdevtemplate:213
-#: languages/cpp/app_templates/kdevpart2/kdevpart2.kdevtemplate:247
-msgid "Comment=A KDevelop plugin was created in %{dest}"
-msgstr ""
-
-#: languages/cpp/app_templates/kdevpart2/kdevpart2.kdevtemplate:3
-msgid "Name=KDevelop Plugin (Standalone build)"
-msgstr ""
-
-#: languages/cpp/app_templates/kdevpart2/kdevpart2.kdevtemplate:34
-msgid ""
-"Comment=This generates a KPart for KDevelop, to be built outside of the "
-"KDevelop source tree."
 msgstr ""
 
 #: languages/cpp/app_templates/kfileplugin/kfile_plugin.desktop:3
@@ -751,19 +751,6 @@ msgid ""
 "Comment=Generates a KFile plugin for konqueror to display meta information."
 msgstr ""
 
-#: languages/cpp/app_templates/khello/khello.kdevtemplate:3
-#, fuzzy
-msgid "Name=Simple KDE Application"
-msgstr "Comment=Cymhwysiad KPart KDE"
-
-#: languages/cpp/app_templates/khello/khello.kdevtemplate:35
-msgid "Comment=Generates a simple KDE application with one widget."
-msgstr ""
-
-#: languages/cpp/app_templates/khello/khello.kdevtemplate:190
-msgid "Comment=A KDE Hello world program was created in %{dest}"
-msgstr ""
-
 #: languages/cpp/app_templates/khello2/khello2.kdevtemplate:3
 msgid "Name=Simple Designer based KDE Application"
 msgstr ""
@@ -775,6 +762,19 @@ msgstr ""
 
 #: languages/cpp/app_templates/khello2/khello2.kdevtemplate:202
 msgid "Comment=A simple designer based KDE application was created in %{dest}"
+msgstr ""
+
+#: languages/cpp/app_templates/khello/khello.kdevtemplate:3
+#, fuzzy
+msgid "Name=Simple KDE Application"
+msgstr "Comment=Cymhwysiad KPart KDE"
+
+#: languages/cpp/app_templates/khello/khello.kdevtemplate:35
+msgid "Comment=Generates a simple KDE application with one widget."
+msgstr ""
+
+#: languages/cpp/app_templates/khello/khello.kdevtemplate:190
+msgid "Comment=A KDE Hello world program was created in %{dest}"
 msgstr ""
 
 #: languages/cpp/app_templates/kicker/applet.desktop:2
@@ -1021,19 +1021,6 @@ msgstr ""
 msgid "Comment=An %{APPNAME} Program"
 msgstr ""
 
-#: languages/cpp/app_templates/opieapp/opieapp.kdevtemplate:3
-msgid "Name=Opie Application"
-msgstr ""
-
-#: languages/cpp/app_templates/opieapp/opieapp.kdevtemplate:36
-#, fuzzy
-msgid "Comment=Generate an Opie application."
-msgstr "Comment=Cymhwysiad KPart KDE"
-
-#: languages/cpp/app_templates/opieapp/opieapp.kdevtemplate:120
-msgid "Comment=An opie application was created in %{dest}"
-msgstr ""
-
 #: languages/cpp/app_templates/opieapplet/opieapplet.kdevtemplate:3
 msgid "Name=Opie Applet"
 msgstr ""
@@ -1046,6 +1033,19 @@ msgstr ""
 #, fuzzy
 msgid "Comment=An opie applet was created in %{dest}"
 msgstr "Comment=Rhaglennig panel o'r enw $NAME$"
+
+#: languages/cpp/app_templates/opieapp/opieapp.kdevtemplate:3
+msgid "Name=Opie Application"
+msgstr ""
+
+#: languages/cpp/app_templates/opieapp/opieapp.kdevtemplate:36
+#, fuzzy
+msgid "Comment=Generate an Opie application."
+msgstr "Comment=Cymhwysiad KPart KDE"
+
+#: languages/cpp/app_templates/opieapp/opieapp.kdevtemplate:120
+msgid "Comment=An opie application was created in %{dest}"
+msgstr ""
 
 #: languages/cpp/app_templates/opieinput/opieinput.kdevtemplate:3
 msgid "Name=Opie Input"
@@ -1689,18 +1689,6 @@ msgstr ""
 msgid "Comment=A Korundum KConfig XT Application was created at %{dest}"
 msgstr ""
 
-#: languages/ruby/app_templates/qtruby/qtruby.kdevtemplate:3
-msgid "Name=QtRuby Hello World"
-msgstr ""
-
-#: languages/ruby/app_templates/qtruby/qtruby.kdevtemplate:26
-msgid "Comment=This generates a simple QtRuby Hello World application"
-msgstr ""
-
-#: languages/ruby/app_templates/qtruby/qtruby.kdevtemplate:86
-msgid "Comment=A simple QtRuby application was created in %{dest}"
-msgstr ""
-
 #: languages/ruby/app_templates/qtruby4app/qtruby4app.kdevtemplate:3
 #, fuzzy
 msgid "Name=QtRuby4 Application"
@@ -1728,6 +1716,18 @@ msgstr ""
 
 #: languages/ruby/app_templates/qtrubyapp/qtrubyapp.kdevtemplate:113
 msgid "Comment=A QtRuby based application was created in %{dest}"
+msgstr ""
+
+#: languages/ruby/app_templates/qtruby/qtruby.kdevtemplate:3
+msgid "Name=QtRuby Hello World"
+msgstr ""
+
+#: languages/ruby/app_templates/qtruby/qtruby.kdevtemplate:26
+msgid "Comment=This generates a simple QtRuby Hello World application"
+msgstr ""
+
+#: languages/ruby/app_templates/qtruby/qtruby.kdevtemplate:86
+msgid "Comment=A simple QtRuby application was created in %{dest}"
 msgstr ""
 
 #: languages/ruby/app_templates/rails/rails.kdevtemplate:3
@@ -2537,6 +2537,11 @@ msgstr ""
 msgid "GenericName=Subversion"
 msgstr ""
 
+#: vcs/subversion/kdevsvnd.desktop:3
+#, fuzzy
+msgid "Name=KDevelop subversion module"
+msgstr "Name=Cymhorthwr KDevelop"
+
 #: vcs/subversion/kdevsvn+file.protocol:16
 #: vcs/subversion/kdevsvn+http.protocol:16
 #: vcs/subversion/kdevsvn+https.protocol:16
@@ -2544,11 +2549,6 @@ msgstr ""
 #: vcs/subversion/kdevsvn+svn.protocol:16
 msgid "Description=Subversion ioslave for KDevelop"
 msgstr ""
-
-#: vcs/subversion/kdevsvnd.desktop:3
-#, fuzzy
-msgid "Name=KDevelop subversion module"
-msgstr "Name=Cymhorthwr KDevelop"
 
 #: x-kdevelop.desktop:2
 msgid "Comment=KDevelop Project File"
