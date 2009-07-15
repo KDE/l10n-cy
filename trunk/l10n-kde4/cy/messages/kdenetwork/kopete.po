@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-07-14 11:35+0200\n"
+"POT-Creation-Date: 2009-07-15 13:07+0200\n"
 "PO-Revision-Date: 2005-10-14 12:01+0100\n"
 "Last-Translator: Kevin Donnelly <kevin@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -243,7 +243,7 @@ msgstr "All-lein"
 #: protocols/oscar/icq/icqstatusmanager.cpp:37
 #: protocols/oscar/icq/icqprotocol.cpp:450
 #: protocols/oscar/icq/icqprotocol.cpp:532
-#: protocols/skype/libskype/skype.cpp:388
+#: protocols/skype/libskype/skype.cpp:389
 #: protocols/jabber/jingle/jinglecontentdialog.cpp:38
 #: protocols/groupwise/gwprotocol.cpp:66
 msgid "Unknown"
@@ -290,7 +290,7 @@ msgid "File transfer %1 cancelled."
 msgstr "Hidlenni"
 
 #: libkopete/kopetetransfermanager.cpp:469 protocols/qq/qqcontact.cpp:418
-#: protocols/wlm/wlmcontact.cpp:163 protocols/gadu/gaducontact.cpp:100
+#: protocols/wlm/wlmcontact.cpp:180 protocols/gadu/gaducontact.cpp:100
 #: protocols/oscar/oscarcontact.cpp:356
 #: protocols/jabber/jabbercontact.cpp:1078
 #: protocols/jabber/jabbergroupmembercontact.cpp:159
@@ -8111,7 +8111,7 @@ msgstr ""
 #. i18n: file: protocols/gadu/ui/gadusearch.ui:264
 #. i18n: ectx: property (text), item, widget (QComboBox, gender)
 #: rc.cpp:2356 rc.cpp:3654 rc.cpp:3702 protocols/oscar/icq/icqprotocol.cpp:199
-#: protocols/skype/skypecontact.cpp:238
+#: protocols/skype/skypecontact.cpp:237
 msgid "Male"
 msgstr ""
 
@@ -8128,7 +8128,7 @@ msgstr ""
 #. i18n: file: protocols/gadu/ui/gadusearch.ui:269
 #. i18n: ectx: property (text), item, widget (QComboBox, gender)
 #: rc.cpp:2359 rc.cpp:3651 rc.cpp:3705 protocols/oscar/icq/icqprotocol.cpp:198
-#: protocols/skype/skypecontact.cpp:240
+#: protocols/skype/skypecontact.cpp:239
 msgid "Female"
 msgstr ""
 
@@ -17040,7 +17040,7 @@ msgstr ""
 msgid "Block User"
 msgstr ""
 
-#: protocols/qq/qqcontact.cpp:143 protocols/wlm/wlmcontact.cpp:61
+#: protocols/qq/qqcontact.cpp:143 protocols/wlm/wlmcontact.cpp:62
 #: protocols/gadu/gaducontact.cpp:192
 msgid "Show Profile"
 msgstr ""
@@ -17666,39 +17666,45 @@ msgid "MSN Plugin"
 msgstr "Ategyn MSN"
 
 #: protocols/wlm/ui/wlmeditaccountwidget.cpp:213
-#: protocols/wlm/wlmcontact.cpp:364
+#: protocols/wlm/wlmcontact.cpp:384
 #, fuzzy
 #| msgid "MSN Plugin"
 msgid "WLM Plugin"
 msgstr "Ategyn MSN"
 
-#: protocols/wlm/wlmcontact.cpp:58
+#: protocols/wlm/wlmcontact.cpp:59
 #, fuzzy
 #| msgid "&Block Contact"
 msgid "Block Contact"
 msgstr "&Atal Cyswllt"
 
-#: protocols/wlm/wlmcontact.cpp:64
+#: protocols/wlm/wlmcontact.cpp:65
 #, fuzzy
 msgid "Update Photo"
 msgstr "Dynodiad Defnyddiwr"
 
-#: protocols/wlm/wlmcontact.cpp:363
+#: protocols/wlm/wlmcontact.cpp:69
+#, fuzzy
+#| msgid "Use custom &icons"
+msgid "&Block custom emoticons"
+msgstr "Defnyddio &eiconau addasiedig"
+
+#: protocols/wlm/wlmcontact.cpp:383
 #, fuzzy
 msgid ""
 "<qt>You need to go online to remove a contact from your contact list. This "
 "contact will appear again when you reconnect.</qt>"
 msgstr "&Dileu y Cyswllt"
 
-#: protocols/wlm/wlmcontact.cpp:406
+#: protocols/wlm/wlmcontact.cpp:426
 msgid "This contact does not have you in his/her list"
 msgstr ""
 
-#: protocols/wlm/wlmcontact.cpp:413
+#: protocols/wlm/wlmcontact.cpp:433
 msgid "This contact is blocked"
 msgstr ""
 
-#: protocols/wlm/wlmcontact.cpp:415
+#: protocols/wlm/wlmcontact.cpp:435
 msgid "This contact does not have you in his/her list and is blocked"
 msgstr ""
 
@@ -20390,137 +20396,150 @@ msgstr "Gofodnod"
 msgid "Make Test Call"
 msgstr "Meta Gyswllt"
 
-#: protocols/skype/libskype/skype.cpp:246
-msgid "This version of Skype is too old, consider upgrading"
+#: protocols/skype/skypeaccount.cpp:1010 protocols/skype/skypeaccount.cpp:1027
+#: protocols/skype/skypeaccount.cpp:1032 protocols/skype/skypeaccount.cpp:1058
+msgid "Unknow action from SkypeActionHandler"
 msgstr ""
 
+#: protocols/skype/skypeaccount.cpp:1010 protocols/skype/skypeaccount.cpp:1027
+#: protocols/skype/skypeaccount.cpp:1032 protocols/skype/skypeaccount.cpp:1050
+#: protocols/skype/skypeaccount.cpp:1058
 #: protocols/skype/libskype/skype.cpp:280
 #, fuzzy
 #| msgid "Protocol"
 msgid "Skype protocol"
 msgstr "Protocol"
 
-#: protocols/skype/libskype/skype.cpp:390
+#: protocols/skype/skypeaccount.cpp:1050
+#, fuzzy
+msgid "Contact are not in contact list"
+msgstr "Methu agor ffeil ar gyfer ysgrifennu"
+
+#: protocols/skype/libskype/skype.cpp:246
+msgid "This version of Skype is too old, consider upgrading"
+msgstr ""
+
+#: protocols/skype/libskype/skype.cpp:391
 #: protocols/groupwise/libgroupwise/gwerror.cpp:41
 #, fuzzy
 #| msgid "Host not found."
 msgid "User not found"
 msgstr "Ni chafwyd gweinydd."
 
-#: protocols/skype/libskype/skype.cpp:392
+#: protocols/skype/libskype/skype.cpp:393
 msgid "Does not have multi-user chat capability"
 msgstr ""
 
-#: protocols/skype/libskype/skype.cpp:394
+#: protocols/skype/libskype/skype.cpp:395
 #, fuzzy
 #| msgid "connected"
 msgid "Chat denied"
 msgstr "wedi cysylltu"
 
-#: protocols/skype/libskype/skype.cpp:460
+#: protocols/skype/libskype/skype.cpp:461
 #: protocols/yahoo/libkyahoo/sendfiletask.cpp:103
 #, fuzzy
 #| msgid "Unknown error."
 msgid "Unknown error"
 msgstr "Gwall anhysbys."
 
-#: protocols/skype/libskype/skype.cpp:463
+#: protocols/skype/libskype/skype.cpp:464
 #, fuzzy
 #| msgid "error"
 msgid "Misc error"
 msgstr "gwall"
 
-#: protocols/skype/libskype/skype.cpp:466
+#: protocols/skype/libskype/skype.cpp:467
 msgid "User or phone number does not exist"
 msgstr ""
 
-#: protocols/skype/libskype/skype.cpp:469
+#: protocols/skype/libskype/skype.cpp:470
 #, fuzzy
 msgid "User is offline"
 msgstr "Diffinir gan y Defnyddiwr"
 
-#: protocols/skype/libskype/skype.cpp:472
+#: protocols/skype/libskype/skype.cpp:473
 #, fuzzy
 #| msgid "Host not found."
 msgid "No proxy found"
 msgstr "Ni chafwyd gweinydd."
 
-#: protocols/skype/libskype/skype.cpp:475
+#: protocols/skype/libskype/skype.cpp:476
 #, fuzzy
 msgid "Session terminated"
 msgstr "Cyfrinair cyfredol:"
 
-#: protocols/skype/libskype/skype.cpp:478
+#: protocols/skype/libskype/skype.cpp:479
 msgid "No common codec found"
 msgstr ""
 
-#: protocols/skype/libskype/skype.cpp:481
+#: protocols/skype/libskype/skype.cpp:482
 msgid "Sound I/O error"
 msgstr ""
 
-#: protocols/skype/libskype/skype.cpp:484
+#: protocols/skype/libskype/skype.cpp:485
 msgid "Problem with remote sound device"
 msgstr ""
 
-#: protocols/skype/libskype/skype.cpp:487
+#: protocols/skype/libskype/skype.cpp:488
 msgid "Call blocked by recipient"
 msgstr ""
 
-#: protocols/skype/libskype/skype.cpp:490
+#: protocols/skype/libskype/skype.cpp:491
 msgid "Recipient not a friend"
 msgstr ""
 
-#: protocols/skype/libskype/skype.cpp:493
+#: protocols/skype/libskype/skype.cpp:494
 msgid "User not authorized by recipient"
 msgstr ""
 
-#: protocols/skype/libskype/skype.cpp:496
+#: protocols/skype/libskype/skype.cpp:497
 msgid "Sound recording error"
 msgstr ""
 
-#: protocols/skype/libskype/skype.cpp:759
+#: protocols/skype/libskype/skype.cpp:762
 msgid "This version of Skype does not support adding users to chat."
 msgstr ""
 
-#: protocols/skype/libskype/skype.cpp:759
+#: protocols/skype/libskype/skype.cpp:762
 #, fuzzy
 #| msgid "Protocol"
 msgid "Skype Protocol"
 msgstr "Protocol"
 
-#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:91
+#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:90
 #, fuzzy
 msgid "Could not ping Skype"
 msgstr "Methu agor ffeil ar gyfer ysgrifennu"
 
-#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:111
+#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:110
 msgid "Skype did not accept this application"
 msgstr ""
 
-#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:122
+#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:121
 msgid "Skype API syntax error"
 msgstr ""
 
-#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:131
+#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:130
 msgid "Skype API not ready yet, wait a bit longer"
 msgstr ""
 
-#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:187
+#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:186
 msgid ""
 "Could not launch Skype.\n"
 "You need to install the original dynamic linked Skype version 2.0 binary "
 "from http://www.skype.com"
 msgstr ""
 
-#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:194
-#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:299
+#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:193
+#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:298
 msgid ""
 "Could not find Skype.\n"
 "You need to install the original dynamic linked Skype version 2.0 binary "
 "from http://www.skype.com"
 msgstr ""
 
-#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:238
+#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:237
 #, fuzzy, kde-format
 msgid ""
 "Could not ping Skype.\n"
@@ -20528,22 +20547,22 @@ msgid ""
 "Error while sending a message to Skype (%1)."
 msgstr "Gwall anhysbys."
 
-#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:240
+#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:239
 #, fuzzy, kde-format
 msgid "Error while sending a message to Skype (%1)."
 msgstr "Gwall anhysbys."
 
-#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:248
+#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:247
 msgid ""
 "Could not ping Skype.\n"
 "You are logged out from Skype, please log in."
 msgstr ""
 
-#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:301
+#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:300
 msgid "Please login to Skype first"
 msgstr ""
 
-#: protocols/skype/skypeconference.cpp:44
+#: protocols/skype/skypeconference.cpp:45
 #, fuzzy
 #| msgid "Host not found."
 msgid "Conference Call"
