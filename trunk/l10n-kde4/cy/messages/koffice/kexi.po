@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-07-23 07:17+0200\n"
+"POT-Creation-Date: 2009-07-25 06:53+0200\n"
 "PO-Revision-Date: 2004-08-12 18:36+0100\n"
 "Last-Translator: KD at Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -2109,8 +2109,8 @@ msgstr ""
 #. i18n: file: plugins/reportspgz/koreport/wrtembed/sectioneditor.ui:255
 #. i18n: ectx: property (text), widget (QPushButton, btnRemove)
 #: main/KexiMainWindow.cpp:4217 rc.cpp:315 rc.cpp:372
-#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1102
-#: plugins/reportspgz/kexireportdesignview.cpp:45
+#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1075
+#: plugins/reportspgz/kexireportdesignview.cpp:43
 #, fuzzy
 msgid "Delete"
 msgstr "Dileu Rhes"
@@ -2310,13 +2310,13 @@ msgid "Changes page size and margins."
 msgstr ""
 
 #: main/printing/kexisimpleprintingpagesetup.cpp:449
-#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:874
+#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:849
 #, fuzzy
 msgid "Portrait"
 msgstr "Porth:"
 
 #: main/printing/kexisimpleprintingpagesetup.cpp:449
-#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:874
+#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:849
 msgid "Landscape"
 msgstr ""
 
@@ -3390,7 +3390,7 @@ msgid "Double Precision Number"
 msgstr "Rhif cywirdeb dwbl"
 
 #: kexidb/field.cpp:716 kexidb/field.cpp:737
-#: plugins/reportspgz/reportentityselector.cpp:31
+#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1499
 msgid "Text"
 msgstr "Testun"
 
@@ -4184,7 +4184,7 @@ msgstr "Rhif"
 
 #: kexidb/utils.cpp:1239 widget/utils/kexicontextmenuutils.cpp:290
 #: plugins/forms/kexidbfactory.cpp:313
-#: plugins/reportspgz/reportentityselector.cpp:34
+#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1511
 msgid "Image"
 msgstr "Delwedd"
 
@@ -4774,7 +4774,7 @@ msgstr "&Ychwanegu"
 
 #. i18n: file: plugins/reportspgz/koreport/wrtembed/sectioneditor.ui:31
 #. i18n: ectx: property (windowTitle), widget (QDialog, SectionEditor)
-#: rc.cpp:318 plugins/reportspgz/kexireportdesignview.cpp:48
+#: rc.cpp:318 plugins/reportspgz/kexireportdesignview.cpp:46
 #, fuzzy
 #| msgid "Text Editor"
 msgid "Section Editor"
@@ -6722,24 +6722,57 @@ msgstr ""
 msgid "Page Footer (Last)"
 msgstr ""
 
-#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1094
-#: plugins/reportspgz/kexireportdesignview.cpp:39
+#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1067
+#: plugins/reportspgz/kexireportdesignview.cpp:37
 msgid "Cut"
 msgstr ""
 
-#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1095
-#: plugins/reportspgz/kexireportdesignview.cpp:41
+#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1068
+#: plugins/reportspgz/kexireportdesignview.cpp:39
 #: plugins/importexport/csv/kexicsvexportwizard.cpp:66
 #, fuzzy
 msgid "Copy"
 msgstr "Copïo"
 
-#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1098
-#: plugins/reportspgz/kexireportdesignview.cpp:43
+#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1071
+#: plugins/reportspgz/kexireportdesignview.cpp:41
 #, fuzzy
 #| msgid "Date"
 msgid "Paste"
 msgstr "Dyddiad"
+
+#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1491
+msgid "Label"
+msgstr "Label"
+
+#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1495
+#, fuzzy
+msgid "Field"
+msgstr "Maes"
+
+#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1503
+#: plugins/reportspgz/koreport/common/krchartdata.cpp:145
+msgid "Line"
+msgstr "Llinell"
+
+#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1507
+msgid "Barcode"
+msgstr ""
+
+#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1515
+msgid "Chart"
+msgstr ""
+
+#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1519
+#, fuzzy
+msgid "Shape"
+msgstr "Cadw &Rhes"
+
+#: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1523
+#, fuzzy
+#| msgid "Check Box"
+msgid "Check"
+msgstr "Blwch Britho"
 
 #: plugins/reportspgz/koreport/wrtembed/sectioneditor.cpp:286
 #: plugins/reportspgz/koreport/wrtembed/sectioneditor.cpp:322
@@ -6815,11 +6848,6 @@ msgstr ""
 #: plugins/reportspgz/koreport/common/krchartdata.cpp:145
 msgid "Bar"
 msgstr ""
-
-#: plugins/reportspgz/koreport/common/krchartdata.cpp:145
-#: plugins/reportspgz/reportentityselector.cpp:32
-msgid "Line"
-msgstr "Llinell"
 
 #: plugins/reportspgz/koreport/common/krchartdata.cpp:145
 msgid "Pie"
@@ -6904,15 +6932,15 @@ msgstr "Top"
 msgid "Bottom"
 msgstr "I'r Gwaelod"
 
-#: plugins/reportspgz/kexireportdesignview.cpp:51
+#: plugins/reportspgz/kexireportdesignview.cpp:49
 msgid "Raise"
 msgstr ""
 
-#: plugins/reportspgz/kexireportdesignview.cpp:53
+#: plugins/reportspgz/kexireportdesignview.cpp:51
 msgid "Lower"
 msgstr ""
 
-#: plugins/reportspgz/kexireportpart.cpp:60
+#: plugins/reportspgz/kexireportpart.cpp:57
 #, fuzzy
 msgctxt ""
 "Translate this word using only lowercase alphanumeric characters (a..z, "
@@ -6922,62 +6950,28 @@ msgctxt ""
 msgid "report"
 msgstr "Adroddiad"
 
-#: plugins/reportspgz/kexireportpart.cpp:61
+#: plugins/reportspgz/kexireportpart.cpp:58
 msgid "Report"
 msgstr "Adroddiad"
 
-#: plugins/reportspgz/kexireportpart.cpp:62
+#: plugins/reportspgz/kexireportpart.cpp:59
 #, fuzzy
 #| msgid "Create a new project"
 msgctxt "tooltip"
 msgid "Create new report"
 msgstr "Creu cywaith newydd"
 
-#: plugins/reportspgz/kexireportpart.cpp:63
+#: plugins/reportspgz/kexireportpart.cpp:60
 #, fuzzy
 #| msgid "Create a new project"
 msgctxt "what's this"
 msgid "Creates new report."
 msgstr "Creu cywaith newydd"
 
-#: plugins/reportspgz/kexireportpart.cpp:135
+#: plugins/reportspgz/kexireportpart.cpp:143
 #, fuzzy
 msgid "Source"
 msgstr "Tarddiad"
-
-#: plugins/reportspgz/kexireportpart.cpp:139
-#, fuzzy
-#| msgid "Comments"
-msgid "Controls"
-msgstr "Sylwadau"
-
-#: plugins/reportspgz/reportentityselector.cpp:29
-msgid "Label"
-msgstr "Label"
-
-#: plugins/reportspgz/reportentityselector.cpp:30
-#, fuzzy
-msgid "Field"
-msgstr "Maes"
-
-#: plugins/reportspgz/reportentityselector.cpp:33
-msgid "Barcode"
-msgstr ""
-
-#: plugins/reportspgz/reportentityselector.cpp:35
-msgid "Chart"
-msgstr ""
-
-#: plugins/reportspgz/reportentityselector.cpp:36
-#, fuzzy
-msgid "Shape"
-msgstr "Cadw &Rhes"
-
-#: plugins/reportspgz/reportentityselector.cpp:37
-#, fuzzy
-#| msgid "Check Box"
-msgid "Check"
-msgstr "Blwch Britho"
 
 #: plugins/importexport/csv/kexicsvwidgets.cpp:68
 msgid "Comma \",\""
@@ -7722,6 +7716,11 @@ msgstr "Enw'r tabl:"
 msgctxt "Empty table row"
 msgid "Empty Row"
 msgstr "Mewnosod Rhes &Wag"
+
+#, fuzzy
+#~| msgid "Comments"
+#~ msgid "Controls"
+#~ msgstr "Sylwadau"
 
 #, fuzzy
 #~| msgid "Change..."
