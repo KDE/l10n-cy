@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdepim/kleopatra.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-06 06:22+0200\n"
+"POT-Creation-Date: 2009-08-20 06:14+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -411,8 +411,9 @@ msgstr[1] ""
 
 #: dialogs/deletecertificatesdialog.cpp:218
 #, fuzzy
-msgid "Secret Key Deletion"
-msgstr "Creu Tystygrifau Datganoledig"
+#| msgid "&Certificates"
+msgid "Secret Certificate Deletion"
+msgstr "&Tystysgrifau"
 
 #: dialogs/certificateselectiondialog.cpp:110
 msgid "Please select one or more of the following certificates:"
@@ -768,16 +769,22 @@ msgid "FlatKeyListModel Test"
 msgstr ""
 
 #: tests/test_keylistmodels.cpp:94
-msgid "Perform flat key listing"
-msgstr ""
+#, fuzzy
+#| msgid "&Certificates"
+msgid "Perform flat certificate listing"
+msgstr "&Tystysgrifau"
 
 #: tests/test_keylistmodels.cpp:95
-msgid "Perform hierarchical key listing"
-msgstr ""
+#, fuzzy
+#| msgid "In External Certificates"
+msgid "Perform hierarchical certificate listing"
+msgstr "Mewn tystysgrifau lleol"
 
 #: tests/test_keylistmodels.cpp:96
-msgid "Do not list SMIME keys"
-msgstr ""
+#, fuzzy
+#| msgid "In Local Certificates"
+msgid "Do not list SMIME certificates"
+msgstr "Mewn tystysgrifau lleol"
 
 #: utils/formatting.cpp:205 utils/formatting.cpp:208
 #, kde-format
@@ -786,7 +793,7 @@ msgstr ""
 
 #: utils/formatting.cpp:217
 #, kde-format
-msgid "%1-bit %2 (secret key available)"
+msgid "%1-bit %2 (secret certificate available)"
 msgstr ""
 
 #: utils/formatting.cpp:219
@@ -980,8 +987,10 @@ msgid "good"
 msgstr ""
 
 #: utils/formatting.cpp:468
-msgid "key expired"
-msgstr ""
+#, fuzzy
+#| msgid "&Certificates"
+msgid "certificate expired"
+msgstr "&Tystysgrifau"
 
 #: utils/formatting.cpp:469
 msgctxt "fake/invalid signature"
@@ -996,13 +1005,14 @@ msgstr ""
 
 #: utils/formatting.cpp:528
 #, kde-format
-msgid "Bad signature by unknown key %1: %2"
+msgid "Bad signature by unknown certificate %1: %2"
 msgstr ""
 
 #: utils/formatting.cpp:530
-#, kde-format
-msgid "Bad signature by an unknown key: %1"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Could not generate certificate: %1"
+msgid "Bad signature by an unknown certificate: %1"
+msgstr "Methwyd creu tysysgrif : %1"
 
 #: utils/formatting.cpp:532
 #, kde-format
@@ -1010,13 +1020,16 @@ msgid "Bad signature by %1: %2"
 msgstr ""
 
 #: utils/formatting.cpp:537
-#, kde-format
-msgid "Good signature by unknown key %1."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "&Certificates"
+msgid "Good signature by unknown certificate %1."
+msgstr "&Tystysgrifau"
 
 #: utils/formatting.cpp:539
-msgid "Good signature by an unknown key."
-msgstr ""
+#, fuzzy
+#| msgid "&Certificates"
+msgid "Good signature by an unknown certificate."
+msgstr "&Tystysgrifau"
 
 #: utils/formatting.cpp:541
 #, kde-format
@@ -1025,13 +1038,14 @@ msgstr ""
 
 #: utils/formatting.cpp:546
 #, kde-format
-msgid "Invalid signature by unknown key %1: %2"
+msgid "Invalid signature by unknown certificate %1: %2"
 msgstr ""
 
 #: utils/formatting.cpp:548
-#, kde-format
-msgid "Invalid signature by an unknown key: %1"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Could not generate certificate: %1"
+msgid "Invalid signature by an unknown certificate: %1"
+msgstr "Methwyd creu tysysgrif : %1"
 
 #: utils/formatting.cpp:550
 #, kde-format
@@ -1987,7 +2001,7 @@ msgid "Signing certificate expired"
 msgstr "&Tystysgrifau"
 
 #: crypto/decryptverifytask.cpp:177
-msgid "No public key to verify the signature"
+msgid "No public certificate to verify the signature"
 msgstr ""
 
 #: crypto/decryptverifytask.cpp:179
@@ -1995,8 +2009,10 @@ msgid "Signature expired"
 msgstr ""
 
 #: crypto/decryptverifytask.cpp:181
-msgid "Key missing"
-msgstr ""
+#, fuzzy
+#| msgid "&Certificates"
+msgid "Certificate missing"
+msgstr "&Tystysgrifau"
 
 #: crypto/decryptverifytask.cpp:183
 msgid "CRL missing"
@@ -2044,18 +2060,22 @@ msgid "The signature is valid but the certificate's validity is undefined."
 msgstr ""
 
 #: crypto/decryptverifytask.cpp:225 crypto/decryptverifytask.cpp:231
-msgid "Unknown key"
-msgstr ""
+#, fuzzy
+#| msgid "&Certificates"
+msgid "Unknown certificate"
+msgstr "&Tystysgrifau"
 
 #: crypto/decryptverifytask.cpp:250
-#, kde-format
-msgid "Signed on %1 with unknown key %2."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "&Certificates"
+msgid "Signed on %1 with unknown certificate %2."
+msgstr "&Tystysgrifau"
 
 #: crypto/decryptverifytask.cpp:252
-#, kde-format
-msgid "Signed with unknown key %1."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "&Certificates"
+msgid "Signed with unknown certificate %1."
+msgstr "&Tystysgrifau"
 
 #: crypto/decryptverifytask.cpp:257
 #, kde-format
@@ -2064,19 +2084,22 @@ msgid "Signed on %1 by %2 (Key ID: %3)."
 msgstr ""
 
 #: crypto/decryptverifytask.cpp:262
-#, kde-format
-msgid "Signed by %1 with key %2."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "&Certificates"
+msgid "Signed by %1 with certificate %2."
+msgstr "&Tystysgrifau"
 
 #: crypto/decryptverifytask.cpp:265
-#, kde-format
-msgid "Signed on %1 with key %2."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "&Certificates"
+msgid "Signed on %1 with certificate %2."
+msgstr "&Tystysgrifau"
 
 #: crypto/decryptverifytask.cpp:266
-#, kde-format
-msgid "Signed with key %1."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "&Certificates"
+msgid "Signed with certificate %1."
+msgstr "&Tystysgrifau"
 
 #: crypto/decryptverifytask.cpp:371
 #, fuzzy
@@ -2582,14 +2605,15 @@ msgstr ""
 #, kde-format
 msgctxt "@info"
 msgid ""
-"<para>An error occurred while trying to learn the smart card's keys.</para> "
-"<para>The output from <command>%1</command> was: <message>%2</message></para>"
+"<para>An error occurred while trying to learn the smart card's certificates."
+"</para> <para>The output from <command>%1</command> was: <message>%2</"
+"message></para>"
 msgstr ""
 
 #: commands/learncardkeyscommand.cpp:94
 #, fuzzy
 #| msgid "Certificate Manager Error"
-msgid "Smart card keys successfully learned."
+msgid "Smart card certificates successfully learned."
 msgstr "Gwall Rheolwr Tystysgrifau"
 
 #: commands/adduseridcommand.cpp:212
@@ -2631,7 +2655,7 @@ msgstr "Gwall Rheolwr Tystysgrifau"
 #, kde-format
 msgctxt "@info"
 msgid ""
-"Failed to search on keyserver. The error returned was:\n"
+"Failed to search on certificate server. The error returned was:\n"
 "%1"
 msgstr ""
 
@@ -2666,38 +2690,40 @@ msgstr ""
 
 #: commands/exportsecretkeycommand.cpp:129
 #, fuzzy
+#| msgid "Certificate Manager Error"
 msgctxt "@title:window"
-msgid "Secret Key Export Error"
-msgstr "Creu Tystygrifau Datganoledig"
+msgid "Secret Certificate Export Error"
+msgstr "Gwall Rheolwr Tystysgrifau"
 
 #: commands/exportsecretkeycommand.cpp:133
 #, fuzzy
 msgctxt "@title:window"
-msgid "Secret Key Export Finished"
-msgstr "Creu Tystygrifau Datganoledig"
+msgid "Secret Certificate Export Finished"
+msgstr "&Creu Tysysgrif"
 
 #: commands/exportsecretkeycommand.cpp:138
 #, kde-format
 msgctxt "@info"
 msgid ""
-"<para>The GPG or GpgSM process that tried to export the secret key ended "
-"prematurely because of an unexpected error.</para><para>Please check the "
-"output of <icode>%1</icode> for details.</para>"
+"<para>The GPG or GpgSM process that tried to export the secret certificate "
+"ended prematurely because of an unexpected error.</para><para>Please check "
+"the output of <icode>%1</icode> for details.</para>"
 msgstr ""
 
 #: commands/exportsecretkeycommand.cpp:145
 #, kde-format
 msgctxt "@info"
 msgid ""
-"<para>An error occurred while trying to export the secret key.</para> "
-"<para>The output from <command>%1</command> was: <message>%2</message></para>"
+"<para>An error occurred while trying to export the secret certificate.</"
+"para> <para>The output from <command>%1</command> was: <message>%2</"
+"message></para>"
 msgstr ""
 
 #: commands/exportsecretkeycommand.cpp:151
 #, fuzzy
 #| msgid "Certificate Manager Error"
 msgctxt "@info"
-msgid "Secret key successfully exported."
+msgid "Secret certificate successfully exported."
 msgstr "Gwall Rheolwr Tystysgrifau"
 
 #: commands/encryptclipboardcommand.cpp:146
@@ -2790,20 +2816,26 @@ msgid "Unchanged:"
 msgstr ""
 
 #: commands/importcertificatescommand.cpp:271
-msgid "Secret keys processed:"
-msgstr ""
+#, fuzzy
+#| msgid "Select Certificate File"
+msgid "Secret certificates processed:"
+msgstr "Dewiswch Ffeil Dysysgrif"
 
 #: commands/importcertificatescommand.cpp:274
-msgid "Secret keys imported:"
-msgstr ""
+#, fuzzy
+#| msgid "Select Certificate File"
+msgid "Secret certificates imported:"
+msgstr "Dewiswch Ffeil Dysysgrif"
 
 #: commands/importcertificatescommand.cpp:278
-msgid "Secret keys <em>not</em> imported:"
+msgid "Secret certificates <em>not</em> imported:"
 msgstr ""
 
 #: commands/importcertificatescommand.cpp:281
-msgid "Secret keys unchanged:"
-msgstr ""
+#, fuzzy
+#| msgid "Select Certificate File"
+msgid "Secret certificates unchanged:"
+msgstr "Dewiswch Ffeil Dysysgrif"
 
 #: commands/importcertificatescommand.cpp:294
 msgid "No imports (should not happen, please report a bug)."
@@ -3560,20 +3592,28 @@ msgid ""
 msgstr ""
 
 #: models/keycache.cpp:902
-msgid "Listing public X.509 keys"
-msgstr ""
+#, fuzzy
+#| msgid "&Certificates"
+msgid "Listing public X.509 certificates"
+msgstr "&Tystysgrifau"
 
 #: models/keycache.cpp:902
-msgid "Listing private X.509 keys"
-msgstr ""
+#, fuzzy
+#| msgid "&Certificates"
+msgid "Listing private X.509 certificates"
+msgstr "&Tystysgrifau"
 
 #: models/keycache.cpp:903
-msgid "Listing public OpenPGP keys"
-msgstr ""
+#, fuzzy
+#| msgid "Certificate Manager Error"
+msgid "Listing public OpenPGP certificates"
+msgstr "Gwall Rheolwr Tystysgrifau"
 
 #: models/keycache.cpp:903
-msgid "Listing private OpenPGP keys"
-msgstr ""
+#, fuzzy
+#| msgid "&Certificates"
+msgid "Listing private OpenPGP certificates"
+msgstr "&Tystysgrifau"
 
 #: models/keylistmodel.cpp:248 models/useridlistmodel.cpp:249
 #: newcertificatewizard/newcertificatewizard.cpp:921
@@ -4209,7 +4249,7 @@ msgstr ""
 #: rc.cpp:261
 #, fuzzy
 #| msgid "In Local Certificates"
-msgid "Export Secret Key"
+msgid "Export Secret Certificate"
 msgstr "Mewn tystysgrifau lleol"
 
 #. i18n: file: dialogs/exportsecretkeydialog.ui:26
@@ -4235,7 +4275,7 @@ msgstr ""
 #: rc.cpp:273
 #, fuzzy
 #| msgid "&Certificates"
-msgid "Keyserver Certificate Lookup"
+msgid "Certificateserver Certificate Lookup"
 msgstr "&Tystysgrifau"
 
 #. i18n: file: dialogs/lookupcertificatesdialog.ui:24
@@ -4287,7 +4327,7 @@ msgstr ""
 #. i18n: file: dialogs/certificationoptionswidget.ui:30
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: rc.cpp:297
-msgid "Choose which of your keys to sign with:"
+msgid "Choose which of your certificates to sign with:"
 msgstr ""
 
 #. i18n: file: dialogs/certificationoptionswidget.ui:60
@@ -4425,8 +4465,8 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:358
 msgid ""
-"<b>Step 2:</b> How thoroughly have you checked that this key actually "
-"belongs to the person it claims it is from?"
+"<b>Step 2:</b> How thoroughly have you checked that this certificate "
+"actually belongs to the person it claims it is from?"
 msgstr ""
 
 #. i18n: file: dialogs/selectchecklevelwidget.ui:26
@@ -4452,8 +4492,8 @@ msgstr ""
 #: rc.cpp:370
 msgid ""
 "Choose this if you know the person, and have asked them whether this was "
-"their key, but you have not verified they are actually in possession of the "
-"secret key."
+"their certificate, but you have not verified they are actually in possession "
+"of the secret certificate."
 msgstr ""
 
 #. i18n: file: dialogs/selectchecklevelwidget.ui:98
@@ -5872,7 +5912,7 @@ msgid "Michel Boyer de la Giroday"
 msgstr ""
 
 #: aboutdata.cpp:68
-msgid "Key-state dependant colors and fonts in the key list"
+msgid "Key-state dependant colors and fonts in the certificates list"
 msgstr ""
 
 #: aboutdata.cpp:70
@@ -6225,8 +6265,10 @@ msgid "Export Certificates to Server..."
 msgstr "Gwall Rheolwr Tystysgrifau"
 
 #: mainwindow.cpp:400
-msgid "Export Secret Key..."
-msgstr ""
+#, fuzzy
+#| msgid "In Local Certificates"
+msgid "Export Secret Certificate..."
+msgstr "Mewn tystysgrifau lleol"
 
 #: mainwindow.cpp:402
 #, fuzzy
@@ -6379,6 +6421,25 @@ msgstr "Gwall Rheolwr Tystysgrifau"
 #: crlview.cpp:145
 msgid "The GpgSM process ended prematurely because of an unexpected error."
 msgstr ""
+
+#, fuzzy
+#~ msgid "Secret Key Deletion"
+#~ msgstr "Creu Tystygrifau Datganoledig"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Secret Key Export Error"
+#~ msgstr "Creu Tystygrifau Datganoledig"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Secret Key Export Finished"
+#~ msgstr "Creu Tystygrifau Datganoledig"
+
+#, fuzzy
+#~| msgid "In Local Certificates"
+#~ msgid "Export Secret Key"
+#~ msgstr "Mewn tystysgrifau lleol"
 
 #, fuzzy
 #~| msgid "&Certificates"
@@ -6550,11 +6611,6 @@ msgstr ""
 #~ msgid "Change Trust in Certificate Owner"
 #~ msgstr "&Tystysgrifau"
 
-#, fuzzy
-#~| msgid "&Certificates"
-#~ msgid "Sign Certificate..."
-#~ msgstr "&Tystysgrifau"
-
 #~ msgid "Search for external certificates initially"
 #~ msgstr "Chwilio am dystysgrifau allanol i gychwyn"
 
@@ -6565,8 +6621,3 @@ msgstr ""
 #~| msgid "Certificate Manager Error"
 #~ msgid "<b>Verification succeeded.</b>"
 #~ msgstr "Gwall Rheolwr Tystysgrifau"
-
-#, fuzzy
-#~| msgid "&Certificates"
-#~ msgid "Certificate Listing"
-#~ msgstr "&Tystysgrifau"
