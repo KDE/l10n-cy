@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-31 06:06+0200\n"
+"POT-Creation-Date: 2009-09-01 06:21+0200\n"
 "PO-Revision-Date: 2005-01-28 17:54+0000\n"
 "Last-Translator: Kevin Donnelly <kevin@dotmon.com>\n"
 "Language-Team: Cymraeg\n"
@@ -7327,7 +7327,7 @@ msgstr "Peidiwch â dangos y neges yma eto"
 msgid "About %1"
 msgstr "Ynglyn â %1"
 
-#: kdeui/dialogs/kconfigdialog.cpp:69 kutils/kcmultidialog.cpp:123
+#: kdeui/dialogs/kconfigdialog.cpp:69 kutils/kcmultidialog.cpp:125
 msgid "Configure"
 msgstr "Ffurfweddu"
 
@@ -9614,6 +9614,16 @@ msgstr "Barrau Offer:"
 #| msgid "New hostname"
 msgid "without name"
 msgstr "Enw newydd y gwesteiwr"
+
+#: kdeui/widgets/kcmodule.cpp:170
+msgid "You will be asked to authenticate before saving"
+msgstr ""
+
+#: kdeui/widgets/kcmodule.cpp:174
+#, fuzzy
+#| msgid "Could not create the new configuration file."
+msgid "You are not allowed to save the configuration"
+msgstr "Methu creu'r ffeil ffurfweddiad newydd."
 
 #: kdeui/widgets/kactionselector.cpp:94
 msgid "&Available:"
@@ -12825,8 +12835,12 @@ msgid "Send Confirmation"
 msgstr "Anfon Cadarnhad"
 
 #: khtml/html/html_formimpl.cpp:440
-msgid "&Send Files"
-msgstr "Anfon &Ffeiliau"
+#, fuzzy
+#| msgid "&Send Files"
+msgid "&Send File"
+msgid_plural "&Send Files"
+msgstr[0] "Anfon &Ffeiliau"
+msgstr[1] "Anfon &Ffeiliau"
 
 #: khtml/html/html_formimpl.cpp:2619
 #, fuzzy
@@ -13713,21 +13727,7 @@ msgstr ""
 msgid "Print Preview"
 msgstr "&Rhagweld Argraffiad"
 
-#: kutils/kcmoduleproxy.cpp:131
-msgid ""
-"<b>Changes in this section require root access.</b><br />On applying your "
-"changes you will have to supply your root password."
-msgstr ""
-
-#: kutils/kcmoduleproxy.cpp:138
-msgid ""
-"This section requires special permissions, probably for system-wide changes; "
-"therefore, it is required that you provide the root password to be able to "
-"change the module's properties. If you cannot provide the password, the "
-"changes of the module cannot be saved "
-msgstr ""
-
-#: kutils/kcmoduleproxy.cpp:159
+#: kutils/kcmoduleproxy.cpp:165
 #, kde-format
 msgctxt "Argument is application name"
 msgid "This configuration section is already opened in %1"
@@ -17776,9 +17776,6 @@ msgstr "Dim eitem dewislen '%1'."
 #~ msgstr ""
 #~ "Methu darllen patrymlun ffurfweddiad kab. \n"
 #~ " Ni ellir ffurfweddu kab."
-
-#~ msgid "Could not create the new configuration file."
-#~ msgstr "Methu creu'r ffeil ffurfweddiad newydd."
 
 #~ msgid ""
 #~ "Cannot load kab's local configuration file.\n"
