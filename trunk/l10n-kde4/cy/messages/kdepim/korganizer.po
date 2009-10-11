@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-29 06:12+0200\n"
+"POT-Creation-Date: 2009-10-11 06:22+0200\n"
 "PO-Revision-Date: 2004-02-25 13:53+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -1587,12 +1587,15 @@ msgstr "Amser Gorffen"
 msgid "Categories"
 msgstr "Categorïau"
 
-#: views/listview/kolistview.cpp:387
+#: views/listview/kolistview.cpp:387 views/monthview/monthitem.cpp:293
+#: views/agendaview/koagendaitem.cpp:83
 #, fuzzy, kde-format
 #| msgctxt "short_weekday date (e.g. Mon 13)"
 #| msgid "%1 %2"
-msgid "%1 (%2  years)"
-msgstr "%1 %2"
+msgid "%2 (1 year)"
+msgid_plural "%2 (%1 years)"
+msgstr[0] "%1 %2"
+msgstr[1] "%1 %2"
 
 #: views/monthview/monthview.cpp:66
 msgid "Go back one month"
@@ -1628,13 +1631,6 @@ msgstr "%1 %2"
 #, kde-format
 msgctxt "'Month day' for month view cells"
 msgid "%1 %2"
-msgstr "%1 %2"
-
-#: views/monthview/monthitem.cpp:293 views/agendaview/koagendaitem.cpp:83
-#, fuzzy, kde-format
-#| msgctxt "short_weekday date (e.g. Mon 13)"
-#| msgid "%1 %2"
-msgid "%1 (%2 years)"
 msgstr "%1 %2"
 
 #: views/monthview/monthitem.cpp:454 views/agendaview/koagenda.cpp:1044
@@ -2101,7 +2097,7 @@ msgstr "Peidio ac anfon"
 #| msgid ""
 #| "You have no ical file in your home directory.\n"
 #| "Import cannot proceed.\n"
-msgid "No calendars found. We can not add event."
+msgid "No calendars found, event cannot be added."
 msgstr ""
 "Nid oes gennych ffeil ical yn eich cyfeiriadur cartref.\n"
 " Ni all y mewnforiad fynd ymlaen.\n"
@@ -4799,7 +4795,7 @@ msgstr "Wedi cadw'r calendr '%1'."
 
 #: actionmanager.cpp:1137
 #, fuzzy, kde-format
-msgid "Do you want to overwrite file \"%1\""
+msgid "Do you want to overwrite file \"%1\"?"
 msgstr "<qt>A ydych yn wir eisiau dileu'r adnodd? <b>%1</b>?</qt>"
 
 #: actionmanager.cpp:1170
@@ -5548,10 +5544,11 @@ msgstr ""
 #. i18n: file: koeditoralarms_base.ui:539
 #. i18n: ectx: property (whatsThis), widget (KTextEdit, mEmailText)
 #: rc.cpp:236 rc.cpp:3287
+#, fuzzy
 msgid ""
-"Enter any text you desire for the email message that will be sent when the "
-"alarm triggers."
-msgstr ""
+"Enter the text you would like to be in the email message sent when the "
+"reminder triggers."
+msgstr "Dangos eiliadau ar linell Marcus Bain"
 
 #. i18n: file: koeditoralarms_base.ui:546
 #. i18n: ectx: property (toolTip), widget (KPIM::AddresseeLineEdit, mEmailAddress)
@@ -5562,10 +5559,11 @@ msgstr ""
 #. i18n: file: koeditoralarms_base.ui:549
 #. i18n: ectx: property (whatsThis), widget (KPIM::AddresseeLineEdit, mEmailAddress)
 #: rc.cpp:242 rc.cpp:3293
+#, fuzzy
 msgid ""
-"Enter a list comma-sepatered addresses where an email will be sent when the "
-"reminder triggers"
-msgstr ""
+"Enter a list of comma-separated addresses to which an email should be sent "
+"when the reminder triggers."
+msgstr "Dangos eiliadau ar linell Marcus Bain"
 
 #. i18n: file: koeditoralarms_base.ui:556
 #. i18n: ectx: property (text), widget (QLabel, mEmailToLabel)
@@ -8182,7 +8180,7 @@ msgstr ""
 #: rc.cpp:1402 rc.cpp:1732
 msgid ""
 "Check this box if you want to include Events that occur within the date "
-"range specified.  Events that don't fall completely within the date range "
+"range specified.  Events that do not fall completely within the date range "
 "will be excluded from the search results."
 msgstr ""
 
@@ -11952,6 +11950,12 @@ msgstr "Beth sy'n &Nesaf"
 #: plugins/printing/whatsnext/whatsnextprint.h:42
 msgid "Prints a list of all upcoming events and todos."
 msgstr ""
+
+#, fuzzy
+#~| msgctxt "short_weekday date (e.g. Mon 13)"
+#~| msgid "%1 %2"
+#~ msgid "%1 (%2  years)"
+#~ msgstr "%1 %2"
 
 #, fuzzy
 #~ msgid "&Timespan"
