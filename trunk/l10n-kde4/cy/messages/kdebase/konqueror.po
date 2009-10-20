@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konqueror\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-17 06:44+0200\n"
+"POT-Creation-Date: 2009-10-20 06:07+0200\n"
 "PO-Revision-Date: 2003-12-27 14:40+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -1437,11 +1437,18 @@ msgstr ""
 msgid "Location to open"
 msgstr "Lleoliad i agor."
 
-#: sidebar/trees/konqsidebar_tree.cpp:138
+#: sidebar/test/modulemanagertest.cpp:87
+#: sidebar/test/modulemanagertest.cpp:114
+#, fuzzy
+#| msgid "Web SideBar Plugin"
+msgid "SideBar Test Plugin"
+msgstr "Ategyn Bar Ochr Gwê"
+
+#: sidebar/trees/konqsidebar_tree.cpp:161
 msgid "Select Type"
 msgstr "Dewiswch Fath"
 
-#: sidebar/trees/konqsidebar_tree.cpp:139
+#: sidebar/trees/konqsidebar_tree.cpp:162
 msgid "Select type:"
 msgstr "Dewiswch fath:"
 
@@ -1483,7 +1490,7 @@ msgid "&Create New Folder"
 msgstr "&Creu Plygell Newydd"
 
 #: sidebar/trees/bookmark_module/bookmark_module.cpp:77
-#: sidebar/trees/konq_sidebartree.cpp:932
+#: sidebar/trees/konq_sidebartree.cpp:905
 msgid "Delete Folder"
 msgstr "Dileu Plygell"
 
@@ -1492,18 +1499,18 @@ msgid "Delete Bookmark"
 msgstr "Dileu y Tudnod"
 
 #: sidebar/trees/bookmark_module/bookmark_module.cpp:85
-#: sidebar/trees/konq_sidebartree.cpp:941
+#: sidebar/trees/konq_sidebartree.cpp:914
 #, fuzzy
 msgid "Properties"
 msgstr "Gwaredu Priodweddau Plygell"
 
 #: sidebar/trees/bookmark_module/bookmark_module.cpp:89
-#: sidebar/trees/konq_sidebartree.cpp:944
+#: sidebar/trees/konq_sidebartree.cpp:917
 msgid "Open in New Window"
 msgstr "Agor mewn Ffenestr Newydd"
 
 #: sidebar/trees/bookmark_module/bookmark_module.cpp:93
-#: sidebar/trees/konq_sidebartree.cpp:947
+#: sidebar/trees/konq_sidebartree.cpp:920
 msgid "Open in New Tab"
 msgstr "Agor mewn Tab Newydd"
 
@@ -1512,7 +1519,7 @@ msgid "Open Folder in Tabs"
 msgstr "Agor Plygell mewn Tabiau"
 
 #: sidebar/trees/bookmark_module/bookmark_module.cpp:101
-#: sidebar/trees/konq_sidebartree.cpp:950
+#: sidebar/trees/konq_sidebartree.cpp:923
 msgid "Copy Link Address"
 msgstr "Copïo Cyfeiriad Cyswllt"
 
@@ -1562,28 +1569,28 @@ msgstr "Lleoliad:"
 msgid "Add Bookmark"
 msgstr "Ychwanegu Tudnod"
 
-#: sidebar/trees/konq_sidebartree.cpp:929
+#: sidebar/trees/konq_sidebartree.cpp:902
 msgid "&Create New Folder..."
 msgstr "&Creu Plygell Newydd..."
 
-#: sidebar/trees/konq_sidebartree.cpp:935
+#: sidebar/trees/konq_sidebartree.cpp:908
 msgid "Rename"
 msgstr "Ail-enwi"
 
-#: sidebar/trees/konq_sidebartree.cpp:938
+#: sidebar/trees/konq_sidebartree.cpp:911
 #, fuzzy
 msgid "Delete Link"
 msgstr "&Dileu Proffil"
 
-#: sidebar/trees/konq_sidebartree.cpp:989
+#: sidebar/trees/konq_sidebartree.cpp:962
 msgid "New Folder"
 msgstr "Plygell Newydd:"
 
-#: sidebar/trees/konq_sidebartree.cpp:993
+#: sidebar/trees/konq_sidebartree.cpp:966
 msgid "Create New Folder"
 msgstr "Creu Plygell Newydd"
 
-#: sidebar/trees/konq_sidebartree.cpp:994
+#: sidebar/trees/konq_sidebartree.cpp:967
 msgid "Enter folder name:"
 msgstr "Rhowch enw'r blygell:"
 
@@ -1591,11 +1598,39 @@ msgstr "Rhowch enw'r blygell:"
 msgid "Extended Sidebar"
 msgstr "Bar Ochr Estynedig"
 
-#: sidebar/sidebar_widget.cpp:99
+#: sidebar/sidebar_widget.cpp:84
 msgid "Rollback to System Default"
 msgstr "Rholio'n ôl i Ragosodyn y Cysawd"
 
-#: sidebar/sidebar_widget.cpp:105
+#: sidebar/sidebar_widget.cpp:171
+msgid "Configure Navigation Panel"
+msgstr "Ffurfweddu'r Panel Llywio"
+
+#: sidebar/sidebar_widget.cpp:173
+msgid "Add New"
+msgstr "Ychwanegu Un Newydd"
+
+#: sidebar/sidebar_widget.cpp:177
+msgid "Multiple Views"
+msgstr "Golygon Lluosol"
+
+#: sidebar/sidebar_widget.cpp:179 sidebar/sidebar_widget.cpp:276
+msgid "Show Tabs Left"
+msgstr "Dangos Tabiau ar y Chwith"
+
+#: sidebar/sidebar_widget.cpp:180
+msgid "Show Configuration Button"
+msgstr "Dangos Botwm Ffurfweddu"
+
+#: sidebar/sidebar_widget.cpp:183
+msgid "Close Navigation Panel"
+msgstr "Cau'r Panel Llywio"
+
+#: sidebar/sidebar_widget.cpp:211
+msgid "This entry already exists."
+msgstr "Mae'r gofnod hon yn bodoli eisioes."
+
+#: sidebar/sidebar_widget.cpp:234
 #, fuzzy
 #| msgid ""
 #| "<qt>This removes all your entries from the sidebar and adds the system "
@@ -1610,69 +1645,32 @@ msgstr ""
 "cysawd.<BR><B>Nid oes modd datwneud y weithred hon</B>.<BR>A ydych am fynd "
 "ymlaen?</qt>"
 
-#: sidebar/sidebar_widget.cpp:234
-msgid "Configure Navigation Panel"
-msgstr "Ffurfweddu'r Panel Llywio"
-
-#: sidebar/sidebar_widget.cpp:236
-msgid "Add New"
-msgstr "Ychwanegu Un Newydd"
-
-#: sidebar/sidebar_widget.cpp:238
-msgid "Multiple Views"
-msgstr "Golygon Lluosol"
-
-#: sidebar/sidebar_widget.cpp:240 sidebar/sidebar_widget.cpp:353
-msgid "Show Tabs Left"
-msgstr "Dangos Tabiau ar y Chwith"
-
-#: sidebar/sidebar_widget.cpp:241
-msgid "Show Configuration Button"
-msgstr "Dangos Botwm Ffurfweddu"
-
-#: sidebar/sidebar_widget.cpp:244
-msgid "Close Navigation Panel"
-msgstr "Cau'r Panel Llywio"
-
-#: sidebar/sidebar_widget.cpp:287
-msgid "This entry already exists."
-msgstr "Mae'r gofnod hon yn bodoli eisioes."
-
-#: sidebar/sidebar_widget.cpp:301 sidebar/web_module/web_module.cpp:217
-msgid "Web SideBar Plugin"
-msgstr "Ategyn Bar Ochr Gwê"
-
-#: sidebar/sidebar_widget.cpp:353
+#: sidebar/sidebar_widget.cpp:276
 #, fuzzy
 #| msgid "Move Tab Right"
 msgid "Show Tabs Right"
 msgstr "Symud Tab i'r Dde"
 
-#: sidebar/sidebar_widget.cpp:424
+#: sidebar/sidebar_widget.cpp:286
 #, fuzzy
 msgid "Set Name"
 msgstr "Enw"
 
-#: sidebar/sidebar_widget.cpp:424
+#: sidebar/sidebar_widget.cpp:286
 #, fuzzy
 msgid "Enter the name:"
 msgstr "Mewnosodwch enw cyfeiriadur:"
 
-#: sidebar/sidebar_widget.cpp:442
+#: sidebar/sidebar_widget.cpp:301
 msgid "Enter a URL:"
 msgstr "Rhowch URL:"
 
-#: sidebar/sidebar_widget.cpp:450
-#, fuzzy, kde-format
-msgid "<qt><b>%1</b> does not exist</qt>"
-msgstr "<qt>Nid yw <b>%1</b> yn bodoli<qt>"
-
-#: sidebar/sidebar_widget.cpp:481
+#: sidebar/sidebar_widget.cpp:324
 #, kde-format
 msgid "<qt>Do you really want to remove the <b>%1</b> tab?</qt>"
 msgstr "<qt>Ydych wir am waredu'r tab<b>%1</b>?</qt>"
 
-#: sidebar/sidebar_widget.cpp:529
+#: sidebar/sidebar_widget.cpp:370
 msgid ""
 "You have hidden the navigation panel configuration button. To make it "
 "visible again, click the right mouse button on any of the navigation panel "
@@ -1682,39 +1680,43 @@ msgstr ""
 "dde y llygoden ar unrhyw fotwm ar y panel llywio a dewiswch \"Dangos Botwm "
 "Ffurfweddu\"."
 
-#: sidebar/sidebar_widget.cpp:598
+#: sidebar/sidebar_widget.cpp:438
 msgid "Configure Sidebar"
 msgstr "Ffurfweddu Bar Ochr"
 
-#: sidebar/sidebar_widget.cpp:715
+#: sidebar/sidebar_widget.cpp:551
 #, fuzzy
 msgid "Set Name..."
 msgstr "Gosod URL..."
 
-#: sidebar/sidebar_widget.cpp:716
+#: sidebar/sidebar_widget.cpp:552
 msgid "Set URL..."
 msgstr "Gosod URL..."
 
-#: sidebar/sidebar_widget.cpp:717
+#: sidebar/sidebar_widget.cpp:553
 msgid "Set Icon..."
 msgstr "Gosod Eicon..."
 
-#: sidebar/sidebar_widget.cpp:719
+#: sidebar/sidebar_widget.cpp:555
 #, fuzzy
 msgid "Remove"
 msgstr "Ail-enwi"
 
-#: sidebar/web_module/web_module.cpp:90
+#: sidebar/web_module/web_module.cpp:86
 msgid "Set Refresh Timeout (0 disables)"
 msgstr ""
 
-#: sidebar/web_module/web_module.cpp:98
+#: sidebar/web_module/web_module.cpp:94
 msgid " min"
 msgstr "munud"
 
-#: sidebar/web_module/web_module.cpp:100
+#: sidebar/web_module/web_module.cpp:96
 msgid " sec"
 msgstr "eil"
+
+#: sidebar/web_module/web_module.cpp:210
+msgid "Web SideBar Plugin"
+msgstr "Ategyn Bar Ochr Gwê"
 
 #: sidebar/web_module/web_module.h:52
 msgid "&Open Link"
@@ -2611,6 +2613,10 @@ msgid ""
 "If true, when opening a session from within the sessions dialog the tabs "
 "will be opened inside current window."
 msgstr ""
+
+#, fuzzy
+#~ msgid "<qt><b>%1</b> does not exist</qt>"
+#~ msgstr "<qt>Nid yw <b>%1</b> yn bodoli<qt>"
 
 #~ msgid "Minutes"
 #~ msgstr "Munud"
