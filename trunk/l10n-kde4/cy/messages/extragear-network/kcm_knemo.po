@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_knemo\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-26 06:49+0100\n"
+"POT-Creation-Date: 2009-10-28 07:26+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Welsh <LL@li.org>\n"
@@ -29,118 +29,123 @@ msgstr "Testun"
 msgid "KNemo theme that shows text of upload/download speed"
 msgstr ""
 
-#: configdialog.cpp:654
+#: configdialog.cpp:110
+#, kde-format
+msgid "%1 sec"
+msgstr ""
+
+#: configdialog.cpp:663
 msgid "Add new interface"
 msgstr ""
 
-#: configdialog.cpp:655
+#: configdialog.cpp:664
 msgid ""
 "Please enter the name of the interface to be monitored.\n"
 "It should be something like 'eth1', 'wlan2' or 'ppp0'."
 msgstr ""
 
-#: configdialog.cpp:956
+#: configdialog.cpp:965
 #, kde-format
 msgid ""
 "The billing day of the month can be any day from 1 - %1, and the complete "
 "date must be a valid, non-future date."
 msgstr ""
 
-#: configdialog.cpp:1182
+#: configdialog.cpp:1191
 msgid "Interface"
 msgstr "Rhyngwyneb"
 
-#: configdialog.cpp:1184
+#: configdialog.cpp:1193
 msgid "Alias"
 msgstr "Ffugenw"
 
-#: configdialog.cpp:1186
+#: configdialog.cpp:1195
 msgid "Status"
 msgstr "Cyflwr"
 
-#: configdialog.cpp:1187
-msgid "Uptime"
+#: configdialog.cpp:1196
+msgid "Connection Time"
 msgstr ""
 
-#: configdialog.cpp:1188
+#: configdialog.cpp:1197
 msgid "IP Address"
 msgstr ""
 
-#: configdialog.cpp:1189
+#: configdialog.cpp:1198
 msgid "Scope & Flags"
 msgstr ""
 
-#: configdialog.cpp:1190
+#: configdialog.cpp:1199
 msgid "MAC Address"
 msgstr ""
 
-#: configdialog.cpp:1191
+#: configdialog.cpp:1200
 msgid "Broadcast Address"
 msgstr "Cyfeiriad Darlledu"
 
-#: configdialog.cpp:1192
+#: configdialog.cpp:1201
 msgid "Default Gateway"
 msgstr "All-borth rhagosodedig"
 
-#: configdialog.cpp:1193
+#: configdialog.cpp:1202
 #, fuzzy
 #| msgid "Broadcast Address"
 msgid "PtP Address"
 msgstr "Cyfeiriad Darlledu"
 
-#: configdialog.cpp:1194
+#: configdialog.cpp:1203
 msgid "Packets Received"
 msgstr ""
 
-#: configdialog.cpp:1195
+#: configdialog.cpp:1204
 msgid "Packets Sent"
 msgstr ""
 
-#: configdialog.cpp:1196
+#: configdialog.cpp:1205
 msgid "Bytes Received"
 msgstr ""
 
-#: configdialog.cpp:1197
+#: configdialog.cpp:1206
 msgid "Bytes Sent"
 msgstr "Didau Wedi'u Hanfon"
 
-#: configdialog.cpp:1198
+#: configdialog.cpp:1207
 msgid "Download Speed"
 msgstr ""
 
-#: configdialog.cpp:1199
+#: configdialog.cpp:1208
 msgid "Upload Speed"
 msgstr ""
 
-#: configdialog.cpp:1200
+#: configdialog.cpp:1209
 msgid "ESSID"
 msgstr "ESSID"
 
-#: configdialog.cpp:1201
+#: configdialog.cpp:1210
 msgid "Mode"
 msgstr "Modd"
 
-#: configdialog.cpp:1202
+#: configdialog.cpp:1211
 msgid "Frequency"
 msgstr "Amlder"
 
-#: configdialog.cpp:1203
+#: configdialog.cpp:1212
 msgid "Bit Rate"
 msgstr ""
 
-#: configdialog.cpp:1204
+#: configdialog.cpp:1213
 msgid "Access Point"
 msgstr ""
 
-#: configdialog.cpp:1205
+#: configdialog.cpp:1214
 msgid "Link Quality"
 msgstr ""
 
-#: configdialog.cpp:1206
+#: configdialog.cpp:1215
 msgid "Nickname"
 msgstr ""
 
-#: configdialog.cpp:1207
+#: configdialog.cpp:1216
 msgid "Encryption"
 msgstr ""
 
@@ -295,7 +300,7 @@ msgstr ""
 #. i18n: file: configdlg.ui:179
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, spinBoxTrafficThreshold)
 #: rc.cpp:49 rc.cpp:263
-msgid " packets/s"
+msgid " packets/sec"
 msgstr ""
 
 #. i18n: file: configdlg.ui:199
@@ -370,11 +375,11 @@ msgstr "Ar gael:"
 
 #. i18n: file: configdlg.ui:408
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#. i18n: file: configdlg.ui:954
+#. i18n: file: configdlg.ui:945
 #. i18n: ectx: property (title), widget (QGroupBox, groupBoxStatistics)
 #. i18n: file: configdlg.ui:408
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#. i18n: file: configdlg.ui:954
+#. i18n: file: configdlg.ui:945
 #. i18n: ectx: property (title), widget (QGroupBox, groupBoxStatistics)
 #: rc.cpp:85 rc.cpp:199 rc.cpp:299 rc.cpp:413
 msgid "Statistics"
@@ -622,25 +627,21 @@ msgstr "Cyfnod diweddaru"
 msgid "Update interface information every"
 msgstr ""
 
-#. i18n: file: configdlg.ui:928
-#. i18n: ectx: property (suffix), widget (KIntNumInput, numInputPollInterval)
-#. i18n: file: configdlg.ui:982
-#. i18n: ectx: property (suffix), widget (KIntNumInput, numInputSaveInterval)
-#. i18n: file: configdlg.ui:928
-#. i18n: ectx: property (suffix), widget (KIntNumInput, numInputPollInterval)
-#. i18n: file: configdlg.ui:982
-#. i18n: ectx: property (suffix), widget (KIntNumInput, numInputSaveInterval)
-#: rc.cpp:196 rc.cpp:208 rc.cpp:410 rc.cpp:422
-msgid "s"
-msgstr "s"
+#. i18n: file: configdlg.ui:919
+#. i18n: ectx: property (whatsThis), widget (QComboBox, comboBoxPoll)
+#: rc.cpp:196 rc.cpp:410
+msgid ""
+"Set how often KNemo polls interfaces for information. A lower value will "
+"speed up reaction to changes, but it will also increase CPU load."
+msgstr ""
 
-#. i18n: file: configdlg.ui:960
+#. i18n: file: configdlg.ui:951
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_6)
 #: rc.cpp:202 rc.cpp:416
 msgid "Save statistics every"
 msgstr ""
 
-#. i18n: file: configdlg.ui:970
+#. i18n: file: configdlg.ui:961
 #. i18n: ectx: property (whatsThis), widget (KIntNumInput, numInputSaveInterval)
 #: rc.cpp:205 rc.cpp:419
 msgid ""
@@ -648,7 +649,13 @@ msgid ""
 "statistics when it closes."
 msgstr ""
 
-#. i18n: file: configdlg.ui:1005
+#. i18n: file: configdlg.ui:973
+#. i18n: ectx: property (suffix), widget (KIntNumInput, numInputSaveInterval)
+#: rc.cpp:208 rc.cpp:422
+msgid " sec"
+msgstr ""
+
+#. i18n: file: configdlg.ui:996
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_5)
 #: rc.cpp:211 rc.cpp:425
 #, fuzzy
@@ -656,11 +663,14 @@ msgstr ""
 msgid "Statistics directory:"
 msgstr "Ystadegau"
 
-#. i18n: file: configdlg.ui:1015
+#. i18n: file: configdlg.ui:1006
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, lineEditStatisticsDir)
 #: rc.cpp:214 rc.cpp:428
 msgid "KNemo will log interface statistics in this directory."
 msgstr ""
+
+#~ msgid "s"
+#~ msgstr "s"
 
 #~ msgid "Display:"
 #~ msgstr "Dangos :"
