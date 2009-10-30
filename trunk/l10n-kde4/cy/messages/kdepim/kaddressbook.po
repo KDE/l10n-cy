@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-27 07:05+0100\n"
+"POT-Creation-Date: 2009-10-30 06:21+0100\n"
 "PO-Revision-Date: 2004-01-07 21:14+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -303,22 +303,35 @@ msgid "Delete the selected address book folders from the address book."
 msgstr "Argraffu'r llyfr cyfeiriadau yn gyfan "
 
 #: standardcontactactionmanager.cpp:57
+#, fuzzy, kde-format
+#| msgid "Edit Address Book Filter"
+msgid "Cut Address Book Folder"
+msgid_plural "Cut %1 Address Book Folders"
+msgstr[0] "Golygu Hidlen y Llyfr Cyfeiriadau"
+msgstr[1] "Golygu Hidlen y Llyfr Cyfeiriadau"
+
+#: standardcontactactionmanager.cpp:58
+#, fuzzy
+msgid "Cut the selected address book folders from the address book."
+msgstr "Argraffu'r llyfr cyfeiriadau yn gyfan "
+
+#: standardcontactactionmanager.cpp:59
 msgid "Folder Properties..."
 msgstr ""
 
-#: standardcontactactionmanager.cpp:58
+#: standardcontactactionmanager.cpp:60
 msgid ""
 "Open a dialog to edit the properties of the selected address book folder."
 msgstr ""
 
-#: standardcontactactionmanager.cpp:59 standardcontactactionmanager.cpp:81
+#: standardcontactactionmanager.cpp:61 standardcontactactionmanager.cpp:85
 #, fuzzy, kde-format
 msgid "Copy Contact"
 msgid_plural "Copy %1 Contacts"
 msgstr[0] "Canfuwyd un cyswllt:"
 msgstr[1] "Canfuwyd %1 o gysylltau:"
 
-#: standardcontactactionmanager.cpp:60
+#: standardcontactactionmanager.cpp:62
 #, fuzzy
 #| msgid ""
 #| "Copy the currently selected contact(s) to system clipboard in vCard "
@@ -327,77 +340,96 @@ msgid "Copy the selected contacts to the clipboard."
 msgstr ""
 "Copïo y cyswllt/cysylltau a ddewiswyd i'r clipfwrdd mewn fformat vCard."
 
-#: standardcontactactionmanager.cpp:61 standardcontactactionmanager.cpp:83
+#: standardcontactactionmanager.cpp:63 standardcontactactionmanager.cpp:87
 #, fuzzy, kde-format
 msgid "Delete Contact"
 msgid_plural "Delete %1 Contacts"
 msgstr[0] "Canfuwyd un cyswllt:"
 msgstr[1] "Canfuwyd %1 o gysylltau:"
 
-#: standardcontactactionmanager.cpp:62
+#: standardcontactactionmanager.cpp:64
 #, fuzzy
 msgid "Delete the selected contacts from the address book."
 msgstr "Argraffu'r llyfr cyfeiriadau yn gyfan "
 
-#: standardcontactactionmanager.cpp:85 standardcontactactionmanager.cpp:296
+#: standardcontactactionmanager.cpp:65 standardcontactactionmanager.cpp:89
+#, fuzzy, kde-format
+msgid "Cut Contact"
+msgid_plural "Cut %1 Contacts"
+msgstr[0] "Canfuwyd un cyswllt:"
+msgstr[1] "Canfuwyd %1 o gysylltau:"
+
+#: standardcontactactionmanager.cpp:66
+#, fuzzy
+msgid "Cut the selected contacts from the address book."
+msgstr "Argraffu'r llyfr cyfeiriadau yn gyfan "
+
+#: standardcontactactionmanager.cpp:91 standardcontactactionmanager.cpp:304
 #, fuzzy
 #| msgid "&Edit Contact..."
 msgid "Edit Contact..."
 msgstr "&Golygu Cyswllt..."
 
-#: standardcontactactionmanager.cpp:88
+#: standardcontactactionmanager.cpp:94
 #, kde-format
 msgid "Copy Group"
 msgid_plural "Copy %1 Groups"
 msgstr[0] ""
 msgstr[1] ""
 
-#: standardcontactactionmanager.cpp:90
+#: standardcontactactionmanager.cpp:96
 #, fuzzy, kde-format
 msgid "Delete Group"
 msgid_plural "Delete %1 Groups"
 msgstr[0] "Dileu Golwg"
 msgstr[1] "Dileu Golwg"
 
-#: standardcontactactionmanager.cpp:92
+#: standardcontactactionmanager.cpp:98
+#, fuzzy, kde-format
+msgid "Cut Group"
+msgid_plural "Cut %1 Groups"
+msgstr[0] "Dileu Golwg"
+msgstr[1] "Dileu Golwg"
+
+#: standardcontactactionmanager.cpp:100
 #, fuzzy
 #| msgid "Edit..."
 msgid "Edit Group..."
 msgstr "Golygu..."
 
-#: standardcontactactionmanager.cpp:155
+#: standardcontactactionmanager.cpp:163
 #, fuzzy
 msgid "Add Address Book"
 msgstr "LlyfrCyfeiriadau"
 
-#: standardcontactactionmanager.cpp:175
+#: standardcontactactionmanager.cpp:183
 #, fuzzy, kde-format
 msgid "Could not add address book: %1"
 msgstr "LlyfrCyfeiriadau"
 
-#: standardcontactactionmanager.cpp:176
+#: standardcontactactionmanager.cpp:184
 #, fuzzy
 msgid "Adding Address Book failed"
 msgstr "LlyfrCyfeiriadau"
 
-#: standardcontactactionmanager.cpp:196
+#: standardcontactactionmanager.cpp:204
 #, fuzzy, kde-format
 msgid "Do you really want to delete address book '%1'?"
 msgstr "<qt>Ydych chi wir am waredu'r allwedd <b>%1</b>?</qt>"
 
-#: standardcontactactionmanager.cpp:199
+#: standardcontactactionmanager.cpp:207
 #, fuzzy
 #| msgid "Address Book"
 msgid "Delete Address Book?"
 msgstr "Llyfr Cyfeiriadau"
 
-#: standardcontactactionmanager.cpp:278
+#: standardcontactactionmanager.cpp:286
 #, fuzzy
 #| msgid "&New Contact..."
 msgid "New &Contact..."
 msgstr "&Cyswllt Newydd..."
 
-#: standardcontactactionmanager.cpp:280
+#: standardcontactactionmanager.cpp:288
 #, fuzzy
 msgid ""
 "Create a new contact<p>You will be presented with a dialog where you can add "
@@ -406,13 +438,13 @@ msgstr ""
 "Creu cyswllt newydd<p>Cyflwynir ymgom i chi lle y gallwch ychwanegu holl "
 "ddata ar gyfer person, yn cynnwys cyfeiriadau a rhifau ffôn."
 
-#: standardcontactactionmanager.cpp:287
+#: standardcontactactionmanager.cpp:295
 #, fuzzy
 #| msgid "New..."
 msgid "New &Group..."
 msgstr "Newydd..."
 
-#: standardcontactactionmanager.cpp:289
+#: standardcontactactionmanager.cpp:297
 #, fuzzy
 #| msgid ""
 #| "Edit the contact filters<p>You will be presented with a dialog, where you "
@@ -424,7 +456,7 @@ msgstr ""
 "Golygu'r hidlennu cysylltau<p>Ymddengys ymgom, lle gallwch ychwanegu, "
 "waredu, a golygu hidlenni."
 
-#: standardcontactactionmanager.cpp:297
+#: standardcontactactionmanager.cpp:305
 #, fuzzy
 msgid ""
 "Edit the selected contact<p>You will be presented with a dialog where you "
@@ -434,12 +466,12 @@ msgstr ""
 "Golygu cyswllt<p>Cyflwynir ymgom i chi lle y gallwch newid data ar gyfer "
 "person, yn cynnwys cyfeiriadau a rhifau ffôn."
 
-#: standardcontactactionmanager.cpp:306
+#: standardcontactactionmanager.cpp:314
 #, fuzzy
 msgid "Add &Address Book..."
 msgstr "LlyfrCyfeiriadau"
 
-#: standardcontactactionmanager.cpp:307
+#: standardcontactactionmanager.cpp:315
 #, fuzzy
 msgid ""
 "Add a new address book<p>You will be presented with a dialog where you can "
@@ -448,25 +480,25 @@ msgstr ""
 "Golygu'r hidlennu cysylltau<p>Ymddengys ymgom, lle gallwch ychwanegu, "
 "waredu, a golygu hidlenni."
 
-#: standardcontactactionmanager.cpp:315
+#: standardcontactactionmanager.cpp:323
 #, fuzzy
 #| msgid "Address Book"
 msgid "&Delete Address Book"
 msgstr "Llyfr Cyfeiriadau"
 
-#: standardcontactactionmanager.cpp:316
+#: standardcontactactionmanager.cpp:324
 msgid ""
 "Delete the selected address book<p>The currently selected address book will "
 "be deleted, along with all the contacts and contact groups it contains.</p>"
 msgstr ""
 
-#: standardcontactactionmanager.cpp:325
+#: standardcontactactionmanager.cpp:333
 #, fuzzy
 #| msgid "Address Book Browser"
 msgid "Address Book Properties..."
 msgstr "Porydd Llyfrau Cyfeiriadau"
 
-#: standardcontactactionmanager.cpp:326
+#: standardcontactactionmanager.cpp:334
 msgid "Open a dialog to edit properties of the selected address book."
 msgstr ""
 
@@ -608,14 +640,14 @@ msgstr "&Allforio"
 msgid "&Edit"
 msgstr "&Golygu..."
 
-#. i18n: file: kaddressbookui.rc:46
+#. i18n: file: kaddressbookui.rc:47
 #. i18n: ectx: Menu (settings)
 #: rc.cpp:18
 #, fuzzy
 msgid "&Settings"
 msgstr "Gosodiadau Wynebfath"
 
-#. i18n: file: kaddressbookui.rc:77
+#. i18n: file: kaddressbookui.rc:80
 #. i18n: ectx: ToolBar (mainToolBar)
 #: rc.cpp:21
 #, fuzzy
