@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-11-18 06:30+0100\n"
+"POT-Creation-Date: 2009-11-19 06:18+0100\n"
 "PO-Revision-Date: 2004-01-16 09:20+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -508,14 +508,14 @@ msgstr ""
 "Gwrthodir y tystysgrif fel a ofynwyd.  Gallwch analluogi hyn yn y ganolfan "
 "rheoli KDE."
 
-#: kio/jobuidelegate.cpp:130 ../kfile/kdiroperator.cpp:817
+#: kio/jobuidelegate.cpp:130 ../kfile/kdiroperator.cpp:841
 #, fuzzy, kde-format
 msgid "Do you really want to delete this item?"
 msgid_plural "Do you really want to delete these %1 items?"
 msgstr[0] "Ydych wir eisiau dileu yr eitem yma?"
 msgstr[1] "Ydych wir eisiau dileu y %1 o eitemau yma?"
 
-#: kio/jobuidelegate.cpp:132 ../kfile/kdiroperator.cpp:819
+#: kio/jobuidelegate.cpp:132 ../kfile/kdiroperator.cpp:843
 msgid "Delete Files"
 msgstr "Dileu Ffeiliau"
 
@@ -526,7 +526,7 @@ msgid_plural "Do you really want to move these %1 items to the trash?"
 msgstr[0] "Ydych wir eisiau dileu yr eitem yma?"
 msgstr[1] "Ydych wir eisiau dileu y %1 o eitemau yma?"
 
-#: kio/jobuidelegate.cpp:144 ../kfile/kdiroperator.cpp:1859
+#: kio/jobuidelegate.cpp:144 ../kfile/kdiroperator.cpp:1883
 msgid "Move to Trash"
 msgstr "Symud i'r Sbwriel"
 
@@ -4956,7 +4956,7 @@ msgstr "Agor y Blygell yn y Golygydd Tudnodau"
 msgid "Delete Folder"
 msgstr "Dileu Plygell"
 
-#: bookmarks/kbookmarkmenu.cc:281 ../kfile/kdiroperator.cpp:1959
+#: bookmarks/kbookmarkmenu.cc:281 ../kfile/kdiroperator.cpp:1983
 #, fuzzy
 msgid "Properties"
 msgstr "Priodweddau i %1"
@@ -5938,7 +5938,7 @@ msgstr "Ffeil yw %1, ond disgwylwyd plygell."
 #: ../kfile/kfilewidget.cpp:988
 #, fuzzy, kde-format
 #| msgid "The requested lock could not be granted. %1"
-msgid "The file %1 could not be found"
+msgid "The file \"%1\" could not be found"
 msgstr "Methu rhoi'r clo penodol. %1"
 
 #: ../kfile/kfilewidget.cpp:988
@@ -6167,12 +6167,12 @@ msgstr ""
 "Creu plygell newydd yn: \n"
 "%1"
 
-#: ../kfile/kdirselectdialog.cpp:156 ../kfile/kdiroperator.cpp:770
+#: ../kfile/kdirselectdialog.cpp:156 ../kfile/kdiroperator.cpp:794
 #, kde-format
 msgid "A file or folder named %1 already exists."
 msgstr "Mae ffeil neu blygell o'r enw %1 mewn bod yn barod."
 
-#: ../kfile/kdirselectdialog.cpp:160 ../kfile/kdiroperator.cpp:773
+#: ../kfile/kdirselectdialog.cpp:160 ../kfile/kdiroperator.cpp:797
 #, fuzzy
 msgid "You do not have permission to create that folder."
 msgstr "Does dim hawliau ganddoch i greu'r plygell yna."
@@ -6312,11 +6312,36 @@ msgstr ""
 msgid "Show Hidden Folders"
 msgstr "Dangos Ffeiliau Cudd"
 
-#: ../kfile/kdiroperator.cpp:735 ../kfile/kdiroperator.cpp:743
+#: ../kfile/kdiroperator.cpp:735
+#, fuzzy
+msgctxt "@action:button"
+msgid "Create directory"
+msgstr "Creu Plygell"
+
+#: ../kfile/kdiroperator.cpp:737
+#, fuzzy
+#| msgid "Ru&n as a different user"
+msgctxt "@action:button"
+msgid "Enter a different name"
+msgstr "Rhede&g fel defnyddiwr gwahanol"
+
+#: ../kfile/kdiroperator.cpp:740
+#, kde-format
+msgid ""
+"The name \"%1\" starts with a dot and will therefore the directory will be "
+"hidden by default."
+msgstr ""
+
+#: ../kfile/kdiroperator.cpp:741
+#, fuzzy
+msgid "Create hidden directory?"
+msgstr "Creu Plygell"
+
+#: ../kfile/kdiroperator.cpp:751 ../kfile/kdiroperator.cpp:758
 msgid "New Folder"
 msgstr "Plygell Newydd"
 
-#: ../kfile/kdiroperator.cpp:744
+#: ../kfile/kdiroperator.cpp:759
 #, kde-format
 msgid ""
 "Create new folder in:\n"
@@ -6325,16 +6350,16 @@ msgstr ""
 "Creu plygell newydd yn: \n"
 "%1"
 
-#: ../kfile/kdiroperator.cpp:788
+#: ../kfile/kdiroperator.cpp:812
 #, fuzzy
 msgid "You did not select a file to delete."
 msgstr "Wnaethoch chi ddim dewis ffeil i ddileu."
 
-#: ../kfile/kdiroperator.cpp:789
+#: ../kfile/kdiroperator.cpp:813
 msgid "Nothing to Delete"
 msgstr "Dim byd i'w dileu."
 
-#: ../kfile/kdiroperator.cpp:810
+#: ../kfile/kdiroperator.cpp:834
 #, kde-format
 msgid ""
 "<qt>Do you really want to delete\n"
@@ -6343,21 +6368,21 @@ msgstr ""
 "<qt>Ydych wir eisiau dileu\n"
 " <b>'%1'</b>?</qt>"
 
-#: ../kfile/kdiroperator.cpp:812
+#: ../kfile/kdiroperator.cpp:836
 msgid "Delete File"
 msgstr "Dileu Ffeil"
 
-#: ../kfile/kdiroperator.cpp:850
+#: ../kfile/kdiroperator.cpp:874
 #, fuzzy
 msgid "You did not select a file to trash."
 msgstr "Wnaethoch chi ddim dewis ffeil i ddileu."
 
-#: ../kfile/kdiroperator.cpp:851
+#: ../kfile/kdiroperator.cpp:875
 #, fuzzy
 msgid "Nothing to Trash"
 msgstr "Dim byd i'w Ddadwneud"
 
-#: ../kfile/kdiroperator.cpp:868
+#: ../kfile/kdiroperator.cpp:892
 #, fuzzy, kde-format
 msgid ""
 "<qt>Do you really want to trash\n"
@@ -6366,133 +6391,133 @@ msgstr ""
 "<qt>Ydych wir eisiau dileu\n"
 " <b>'%1'</b>?</qt>"
 
-#: ../kfile/kdiroperator.cpp:870
+#: ../kfile/kdiroperator.cpp:894
 #, fuzzy
 msgid "Trash File"
 msgstr "Sbwriel"
 
-#: ../kfile/kdiroperator.cpp:871 ../kfile/kdiroperator.cpp:878
+#: ../kfile/kdiroperator.cpp:895 ../kfile/kdiroperator.cpp:902
 msgctxt "to trash"
 msgid "&Trash"
 msgstr ""
 
-#: ../kfile/kdiroperator.cpp:875
+#: ../kfile/kdiroperator.cpp:899
 #, fuzzy, kde-format
 msgid "translators: not called for n == 1"
 msgid_plural "Do you really want to trash these %1 items?"
 msgstr[0] "Ydych wir eisiau dileu'r %1 eitem yma? "
 msgstr[1] "Ydych wir eisiau dileu'r %1 eitem yma?"
 
-#: ../kfile/kdiroperator.cpp:877
+#: ../kfile/kdiroperator.cpp:901
 #, fuzzy
 msgid "Trash Files"
 msgstr "Ffeiliau dros dro"
 
-#: ../kfile/kdiroperator.cpp:1069 ../kfile/kdiroperator.cpp:1195
+#: ../kfile/kdiroperator.cpp:1093 ../kfile/kdiroperator.cpp:1219
 msgid "The specified folder does not exist or was not readable."
 msgstr "Nid ydy'r plygell penodol yn bodoli, neu doedd o ddim yn ddarllenadwy."
 
-#: ../kfile/kdiroperator.cpp:1837
+#: ../kfile/kdiroperator.cpp:1861
 msgid "Menu"
 msgstr "Dewislen"
 
-#: ../kfile/kdiroperator.cpp:1841
+#: ../kfile/kdiroperator.cpp:1865
 msgid "Parent Folder"
 msgstr "Plygell Rhiant"
 
-#: ../kfile/kdiroperator.cpp:1848
+#: ../kfile/kdiroperator.cpp:1872
 msgid "Home Folder"
 msgstr "Plygell Cartref"
 
-#: ../kfile/kdiroperator.cpp:1851
+#: ../kfile/kdiroperator.cpp:1875
 #, fuzzy
 msgid "Reload"
 msgstr "Darllen"
 
-#: ../kfile/kdiroperator.cpp:1854
+#: ../kfile/kdiroperator.cpp:1878
 msgid "New Folder..."
 msgstr "Plygell Newydd..."
 
-#: ../kfile/kdiroperator.cpp:1865
+#: ../kfile/kdiroperator.cpp:1889
 #, fuzzy
 msgid "Delete"
 msgstr "Dileu"
 
-#: ../kfile/kdiroperator.cpp:1872
+#: ../kfile/kdiroperator.cpp:1896
 msgid "Sorting"
 msgstr "Didoli"
 
-#: ../kfile/kdiroperator.cpp:1875
+#: ../kfile/kdiroperator.cpp:1899
 msgid "By Name"
 msgstr "Gan Enw"
 
-#: ../kfile/kdiroperator.cpp:1879
+#: ../kfile/kdiroperator.cpp:1903
 msgid "By Size"
 msgstr "Gan Faint"
 
-#: ../kfile/kdiroperator.cpp:1883
+#: ../kfile/kdiroperator.cpp:1907
 msgid "By Date"
 msgstr "Gan Ddyddiad"
 
-#: ../kfile/kdiroperator.cpp:1887
+#: ../kfile/kdiroperator.cpp:1911
 #, fuzzy
 #| msgid "Type"
 msgid "By Type"
 msgstr "Math"
 
-#: ../kfile/kdiroperator.cpp:1891
+#: ../kfile/kdiroperator.cpp:1915
 #, fuzzy
 msgid "Descending"
 msgstr "(Dileu)"
 
-#: ../kfile/kdiroperator.cpp:1901
+#: ../kfile/kdiroperator.cpp:1925
 msgid "Icon Position"
 msgstr ""
 
-#: ../kfile/kdiroperator.cpp:1904
+#: ../kfile/kdiroperator.cpp:1928
 msgid "Next to File Name"
 msgstr ""
 
-#: ../kfile/kdiroperator.cpp:1908
+#: ../kfile/kdiroperator.cpp:1932
 #, fuzzy
 msgid "Above File Name"
 msgstr "Enw Ffeil Lleol"
 
-#: ../kfile/kdiroperator.cpp:1919
+#: ../kfile/kdiroperator.cpp:1943
 msgid "Short View"
 msgstr "Golwg Byr"
 
-#: ../kfile/kdiroperator.cpp:1924
+#: ../kfile/kdiroperator.cpp:1948
 msgid "Detailed View"
 msgstr "Golwg Manwl"
 
-#: ../kfile/kdiroperator.cpp:1929
+#: ../kfile/kdiroperator.cpp:1953
 #, fuzzy
 #| msgid "Detailed View"
 msgid "Tree View"
 msgstr "Golwg Manwl"
 
-#: ../kfile/kdiroperator.cpp:1934
+#: ../kfile/kdiroperator.cpp:1958
 #, fuzzy
 #| msgid "Detailed View"
 msgid "Detailed Tree View"
 msgstr "Golwg Manwl"
 
-#: ../kfile/kdiroperator.cpp:1945
+#: ../kfile/kdiroperator.cpp:1969
 msgid "Show Hidden Files"
 msgstr "Dangos Ffeiliau Cudd"
 
-#: ../kfile/kdiroperator.cpp:1949
+#: ../kfile/kdiroperator.cpp:1973
 #, fuzzy
 #| msgid "Show Preview"
 msgid "Show Aside Preview"
 msgstr "Dangos Rhagolwg"
 
-#: ../kfile/kdiroperator.cpp:1955
+#: ../kfile/kdiroperator.cpp:1979
 msgid "Show Preview"
 msgstr "Dangos Rhagolwg"
 
-#: ../kfile/kdiroperator.cpp:1966
+#: ../kfile/kdiroperator.cpp:1990
 #, fuzzy
 msgid "&View"
 msgstr "&Rhagolwg"
