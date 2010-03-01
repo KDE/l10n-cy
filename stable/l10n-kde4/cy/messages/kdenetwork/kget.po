@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-26 20:28+0100\n"
+"POT-Creation-Date: 2010-03-01 01:14+0100\n"
 "PO-Revision-Date: 2004-01-15 16:48+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -505,7 +505,14 @@ msgstr "Wedi Seibio"
 msgid "Downloading...."
 msgstr "Parhäwyd â'r lawrlwythiad"
 
-#: core/transfer.cpp:244 core/transfer.cpp:269
+#: core/transfer.cpp:38
+#, fuzzy
+#| msgid "Delayed"
+msgctxt "transfer state: delayed"
+msgid "Delayed"
+msgstr "Oediad"
+
+#: core/transfer.cpp:39 core/transfer.cpp:244 core/transfer.cpp:269
 #: transfer-plugins/contentfetch/contentfetch.cpp:69
 #: transfer-plugins/mmsclient/mmsTransfer.cpp:48
 #: transfer-plugins/bittorrent/bttransfer.cpp:326
@@ -515,6 +522,25 @@ msgstr "Parhäwyd â'r lawrlwythiad"
 msgctxt "transfer state: stopped"
 msgid "Stopped"
 msgstr "Wedi aros"
+
+#: core/transfer.cpp:40
+msgctxt "transfer state: aborted"
+msgid "Aborted"
+msgstr ""
+
+#: core/transfer.cpp:41 transfer-plugins/bittorrent/bttransfer.cpp:240
+#: transfer-plugins/bittorrent/bttransfer.cpp:322
+#, fuzzy
+#| msgid "Finished"
+msgctxt "transfer state: finished"
+msgid "Finished"
+msgstr "Wedi Gorffen"
+
+#: core/transfer.cpp:43 transfer-plugins/bittorrent/bttransfer.cpp:179
+#, fuzzy
+msgctxt "changing the destination of the file"
+msgid "Changing destination"
+msgstr "Agor &Cyrchfan"
 
 #: core/transfertreemodel.cpp:544
 #, fuzzy
@@ -1208,26 +1234,12 @@ msgstr "Agor &Ffeil"
 msgid "Downloading Torrent File...."
 msgstr "Parhäwyd â'r lawrlwythiad"
 
-#: transfer-plugins/bittorrent/bttransfer.cpp:179
-#, fuzzy
-msgctxt "changing the destination of the file"
-msgid "Changing destination"
-msgstr "Agor &Cyrchfan"
-
 #: transfer-plugins/bittorrent/bttransfer.cpp:196
 #: transfer-plugins/bittorrent/bttransfer.cpp:301
 #, fuzzy
 msgctxt "transfer state: downloading"
 msgid "Downloading...."
 msgstr "Parhäwyd â'r lawrlwythiad"
-
-#: transfer-plugins/bittorrent/bttransfer.cpp:240
-#: transfer-plugins/bittorrent/bttransfer.cpp:322
-#, fuzzy
-#| msgid "Finished"
-msgctxt "transfer state: finished"
-msgid "Finished"
-msgstr "Wedi Gorffen"
 
 #: transfer-plugins/bittorrent/bttransfer.cpp:274
 msgid "Cannot add a tracker to a private torrent."
@@ -4977,12 +4989,6 @@ msgstr ""
 #: rc.cpp:992
 msgid "List of whether the script is enabled"
 msgstr ""
-
-#, fuzzy
-#~| msgid "Delayed"
-#~ msgctxt "transfer state: delayed"
-#~ msgid "Delayed"
-#~ msgstr "Oediad"
 
 #, fuzzy
 #~| msgid "Number of retries:"
