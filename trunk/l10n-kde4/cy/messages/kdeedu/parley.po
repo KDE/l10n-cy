@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeedu/kvoctrain.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-04-14 04:52+0200\n"
+"POT-Creation-Date: 2010-04-15 04:33+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -204,11 +204,17 @@ msgstr "&Gwaredu Iaith"
 msgid "Internet"
 msgstr ""
 
-#: src/editor/editor.cpp:387
+#: src/editor/editor.cpp:352 src/editor/editor.cpp:353
+#, fuzzy
+#| msgid "Article"
+msgid "Practice"
+msgstr "Erthygl"
+
+#: src/editor/editor.cpp:389
 msgid "Enter search terms here"
 msgstr ""
 
-#: src/editor/editor.cpp:391
+#: src/editor/editor.cpp:393
 #, fuzzy
 msgid "S&earch:"
 msgstr "Mawrth"
@@ -262,7 +268,7 @@ msgstr ""
 #. i18n: ectx: Menu (learning)
 #. i18n: file: src/practice/practicesummaryui.rc:11
 #. i18n: ectx: Menu (learning)
-#: src/welcomescreen/buttondelegate.cpp:45 rc.cpp:272 rc.cpp:1159 rc.cpp:1269
+#: src/welcomescreen/buttondelegate.cpp:45 rc.cpp:272 rc.cpp:1159 rc.cpp:1266
 #, fuzzy
 #| msgid "&Articles"
 msgid "&Practice"
@@ -1295,6 +1301,13 @@ msgctxt "Grade in language, table header"
 msgid "Grade (%1)"
 msgstr "G&radd:"
 
+#: src/practice/practicesummarycomponent.cpp:58
+#: src/practice/practicesummarycomponent.cpp:59
+#, fuzzy
+#| msgid "View Settings"
+msgid "Practice Again"
+msgstr "Gweld Gosodiadau"
+
 #: src/practice/entryfilter.cpp:74
 msgid ""
 "The vocabulary document contains no entries that can be used for the chosen "
@@ -1379,14 +1392,14 @@ msgstr "&Erhyglau"
 msgid "Stop practicing"
 msgstr "&Erhyglau"
 
-#: src/practice/guifrontend.cpp:115
+#: src/practice/guifrontend.cpp:116
 #, fuzzy, kde-format
 #| msgid "&Expression:"
 msgctxt "Display of the current lesson during practice"
 msgid "Lesson: %1"
 msgstr "&Mynegiad:"
 
-#: src/practice/guifrontend.cpp:167
+#: src/practice/guifrontend.cpp:171
 #, kde-format
 msgid ""
 "You answered %1 of a total of %2 words.\n"
@@ -2095,7 +2108,7 @@ msgstr "M&ath"
 #. i18n: ectx: Menu (file)
 #. i18n: file: src/practice/practiceui.rc:7
 #. i18n: ectx: Menu (file)
-#: rc.cpp:260 rc.cpp:1156 rc.cpp:1266 rc.cpp:1305
+#: rc.cpp:260 rc.cpp:1156 rc.cpp:1263 rc.cpp:1302
 #, fuzzy
 #| msgid "&Fixed"
 msgid "&File"
@@ -3718,7 +3731,7 @@ msgstr ""
 #. i18n: ectx: property (windowTitle), widget (QWidget, PracticeMainWindow)
 #. i18n: file: src/practice/practice_widget_written.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, WrittenPracticeWidget)
-#: rc.cpp:1129 rc.cpp:1165 rc.cpp:1229 rc.cpp:1238 rc.cpp:1275
+#: rc.cpp:1129 rc.cpp:1165 rc.cpp:1229 rc.cpp:1238 rc.cpp:1272
 #, fuzzy
 #| msgid "From %1"
 msgid "Form"
@@ -3775,7 +3788,7 @@ msgstr "C&ymharu"
 #. i18n: ectx: ToolBar (practiceSummaryToolbar)
 #. i18n: file: src/practice/practiceui.rc:13
 #. i18n: ectx: ToolBar (statisticsToolBar)
-#: rc.cpp:1162 rc.cpp:1272 rc.cpp:1308
+#: rc.cpp:1162 rc.cpp:1269 rc.cpp:1305
 #, fuzzy
 msgid "Statistics Toolbar"
 msgstr "&Dangos Ystadegau"
@@ -3788,7 +3801,7 @@ msgstr "&Dangos Ystadegau"
 #. i18n: ectx: property (text), widget (QLabel, mixedSolutionLabel)
 #. i18n: file: src/practice/practice_widget_written.ui:138
 #. i18n: ectx: property (text), widget (QLabel, questionLabel)
-#: rc.cpp:1168 rc.cpp:1232 rc.cpp:1296 rc.cpp:1299
+#: rc.cpp:1168 rc.cpp:1232 rc.cpp:1293 rc.cpp:1296
 #, fuzzy
 #| msgid "Basque"
 msgid "Baum"
@@ -3800,7 +3813,7 @@ msgstr "Basgeg"
 #. i18n: ectx: property (text), widget (KLineEdit, answerEdit)
 #. i18n: file: src/practice/practice_widget_written.ui:80
 #. i18n: ectx: property (text), widget (QLabel, solutionLabel)
-#: rc.cpp:1171 rc.cpp:1284 rc.cpp:1287
+#: rc.cpp:1171 rc.cpp:1281 rc.cpp:1284
 #, fuzzy
 #| msgid "Greek"
 msgid "tree"
@@ -3905,7 +3918,7 @@ msgstr "Sotho, De"
 #. i18n: ectx: property (text), widget (QTableWidget, tableWidget)
 #. i18n: file: plasmoid/config.ui:81
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:1220 rc.cpp:1323
+#: rc.cpp:1220 rc.cpp:1320
 #, fuzzy
 #| msgid "Sotho, Southern"
 msgid "Solution"
@@ -3938,49 +3951,43 @@ msgstr ""
 msgid "Lesson 2: Nature Destroyed"
 msgstr ""
 
-#. i18n: file: src/practice/practice_mainwindow.ui:120
-#. i18n: ectx: property (text), widget (QPushButton, toggleButton)
-#: rc.cpp:1244
-msgid "✓ → ✗"
-msgstr ""
-
-#. i18n: file: src/practice/practice_mainwindow.ui:130
+#. i18n: file: src/practice/practice_mainwindow.ui:108
 #. i18n: ectx: property (text), widget (QPushButton, answerLaterButton)
-#: rc.cpp:1247
+#: rc.cpp:1244
 msgid "Answer Later"
 msgstr ""
 
-#. i18n: file: src/practice/practice_mainwindow.ui:140
+#. i18n: file: src/practice/practice_mainwindow.ui:118
 #. i18n: ectx: property (text), widget (QPushButton, hintButton)
-#: rc.cpp:1250
+#: rc.cpp:1247
 #, fuzzy
 #| msgid "minutes"
 msgid "Hint"
 msgstr "munudau"
 
-#. i18n: file: src/practice/practice_mainwindow.ui:188
+#. i18n: file: src/practice/practice_mainwindow.ui:166
 #. i18n: ectx: property (text), widget (QPushButton, continueButton)
-#: rc.cpp:1253
+#: rc.cpp:1250
 #, fuzzy
 #| msgid "Interlingue"
 msgid "Continue"
 msgstr "Interlingue"
 
-#. i18n: file: src/practice/practice_mainwindow.ui:205
+#. i18n: file: src/practice/practice_mainwindow.ui:183
 #. i18n: ectx: property (text), widget (QPushButton, countAsWrongButton)
-#: rc.cpp:1256
+#: rc.cpp:1253
 msgid "I didn't know it"
 msgstr ""
 
-#. i18n: file: src/practice/practice_mainwindow.ui:212
+#. i18n: file: src/practice/practice_mainwindow.ui:190
 #. i18n: ectx: property (text), widget (QPushButton, countAsCorrectButton)
-#: rc.cpp:1259
+#: rc.cpp:1256
 msgid "I knew it"
 msgstr ""
 
-#. i18n: file: src/practice/practice_mainwindow.ui:298
+#. i18n: file: src/practice/practice_mainwindow.ui:276
 #. i18n: ectx: property (format), widget (QProgressBar, totalProgress)
-#: rc.cpp:1263
+#: rc.cpp:1260
 #, no-c-format
 msgid "%v/%m"
 msgstr ""
@@ -3989,7 +3996,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, questionPronunciationLabel)
 #. i18n: file: src/practice/practice_widget_written.ui:98
 #. i18n: ectx: property (text), widget (QLabel, solutionPronunciationLabel)
-#: rc.cpp:1278 rc.cpp:1290
+#: rc.cpp:1275 rc.cpp:1287
 msgid "[foo]"
 msgstr ""
 
@@ -3997,7 +4004,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (Practice::AudioButton, questionSoundButton)
 #. i18n: file: src/practice/practice_widget_written.ui:108
 #. i18n: ectx: property (text), widget (Practice::AudioButton, solutionSoundButton)
-#: rc.cpp:1281 rc.cpp:1293
+#: rc.cpp:1278 rc.cpp:1290
 #, fuzzy
 #| msgid "&New..."
 msgid "..."
@@ -4005,20 +4012,20 @@ msgstr "&Newydd..."
 
 #. i18n: file: src/practice/practice_widget_written.ui:162
 #. i18n: ectx: property (text), widget (QLabel, helpLabel)
-#: rc.cpp:1302
+#: rc.cpp:1299
 msgid "Waiting for an answer..."
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:18
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:1311
+#: rc.cpp:1308
 #, fuzzy
 msgid "Vocabulary collection:"
 msgstr "Agor dogfen gyfredol"
 
 #. i18n: file: plasmoid/config.ui:30
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:1314
+#: rc.cpp:1311
 #, fuzzy
 #| msgid "Languages"
 msgid "Language Selection"
@@ -4026,38 +4033,38 @@ msgstr "Ieithoedd"
 
 #. i18n: file: plasmoid/config.ui:38
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:1317
+#: rc.cpp:1314
 #, fuzzy
 msgid "Top:"
 msgstr "Teitl:"
 
 #. i18n: file: plasmoid/config.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:1320
+#: rc.cpp:1317
 msgid "Bottom:"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:87
 #. i18n: ectx: property (text), widget (QRadioButton, solutionOnHover)
-#: rc.cpp:1326
+#: rc.cpp:1323
 msgid "Reveal solution when mouse cursor is over the widget"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:97
 #. i18n: ectx: property (text), widget (QRadioButton, solutionAlways)
-#: rc.cpp:1329
+#: rc.cpp:1326
 msgid "Always show the solution"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:112
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:1332
+#: rc.cpp:1329
 msgid "Update interval:"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:153
 #. i18n: ectx: property (text), widget (KPushButton, fontSelectButton)
-#: rc.cpp:1335
+#: rc.cpp:1332
 #, fuzzy
 msgid "Select Font..."
 msgstr "De&wis Popeth"
@@ -4555,11 +4562,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Declension"
 #~ msgstr "&Ailosod"
-
-#, fuzzy
-#~| msgid "Article"
-#~ msgid "Practice"
-#~ msgstr "Erthygl"
 
 #, fuzzy
 #~ msgid "Declensions"
