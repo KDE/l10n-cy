@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-03-08 04:21+0100\n"
+"POT-Creation-Date: 2010-04-24 01:33+0200\n"
 "PO-Revision-Date: 2004-09-07 14:09+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -153,13 +153,13 @@ msgstr "Llinellau Llorweddol"
 #: plugins/pageeffects/matrixwipe/waterfallwipe/KPrWaterfallWipeEffectFactory.cpp:64
 #: plugins/pageeffects/matrixwipe/boxsnakes/KPrBoxSnakesWipeEffectFactory.cpp:69
 #: plugins/pageeffects/iriswipe/ellipseWipe/KPrEllipseWipeEffectFactory.cpp:77
-#: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:100
 #: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:68
+#: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:100
 #: plugins/pageeffects/iriswipe/irisWipe/KPrIrisWipeEffectFactory.cpp:71
 #: plugins/pageeffects/iriswipe/starWipe/KPrStarWipeEffectFactory.cpp:116
 #: plugins/pageeffects/iriswipe/pentagonWipe/KPrPentagonWipeEffectFactory.cpp:77
-#: plugins/pageeffects/iriswipe/miscShapeWipe/KPrMiscShapeWipeEffectFactory.cpp:73
 #: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:103
+#: plugins/pageeffects/iriswipe/miscShapeWipe/KPrMiscShapeWipeEffectFactory.cpp:73
 #: plugins/pageeffects/iriswipe/eyeWipe/KPrEyeWipeEffectFactory.cpp:72
 #: plugins/pageeffects/iriswipe/hexagonWipe/KPrHexagonWipeEffectFactory.cpp:89
 msgid "Unknown subtype"
@@ -1106,6 +1106,12 @@ msgstr "Cylch"
 msgid "Circle Reverse"
 msgstr "Llinellau Fertigol"
 
+#: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:32
+#, fuzzy
+#| msgid "Sound effect"
+msgid "RoundRect"
+msgstr "Effaith sŵn"
+
 #: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:31
 #, fuzzy
 #| msgid "Tiled"
@@ -1141,12 +1147,6 @@ msgstr "&Hyd:"
 #| msgid "Vertical Lines"
 msgid "Left Reverse"
 msgstr "Llinellau Fertigol"
-
-#: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:32
-#, fuzzy
-#| msgid "Sound effect"
-msgid "RoundRect"
-msgstr "Effaith sŵn"
 
 #: plugins/pageeffects/iriswipe/irisWipe/KPrIrisWipeEffectFactory.cpp:30
 msgid "Iris"
@@ -1217,6 +1217,12 @@ msgstr "Llinellau Llorweddol"
 msgid "Pentagon"
 msgstr "Cyflwyniad"
 
+#: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:31
+#, fuzzy
+#| msgid "Image &effect:"
+msgid "ArrowHead"
+msgstr "&Effaith ddelwedd:"
+
 #: plugins/pageeffects/iriswipe/miscShapeWipe/KPrMiscShapeWipeEffectFactory.cpp:30
 msgid "Misc"
 msgstr "Amrywiol"
@@ -1242,12 +1248,6 @@ msgstr ""
 #| msgid "Vertical Lines"
 msgid "Keyhole Reverse"
 msgstr "Llinellau Fertigol"
-
-#: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:31
-#, fuzzy
-#| msgid "Image &effect:"
-msgid "ArrowHead"
-msgstr "&Effaith ddelwedd:"
 
 #: plugins/pageeffects/iriswipe/eyeWipe/KPrEyeWipeEffectFactory.cpp:32
 msgid "Eye"
@@ -1416,15 +1416,140 @@ msgstr "Hoffech waredu'r tryloywder cyfredol?"
 msgid "Confirm action"
 msgstr "Cadw Ffurfweddiad..."
 
-#: part/KPrPlaceholderShapeFactory.cpp:31
-msgid "Placeholder shape"
+#: part/KPrView.cpp:65
+#, fuzzy
+#| msgid "Paste Slide"
+msgid "Show Master Slides"
+msgstr "Gludo Tryloywder"
+
+#: part/KPrView.cpp:66
+#, fuzzy
+#| msgid "Goto Slide..."
+msgid "Import Slideshow..."
+msgstr "Ewch i Dryloywder..."
+
+#: part/KPrView.cpp:67
+msgid "Insert Slide"
+msgstr "Mewnosod Tryloywder"
+
+#: part/KPrView.cpp:68 part/KPrView.cpp:69
+msgid "Insert a new slide after the current one"
 msgstr ""
 
-#: part/KPrPresenterViewInterface.cpp:67 part/KPrView.cpp:78
+#: part/KPrView.cpp:70
+msgid "Copy Slide"
+msgstr "Copïo Tryloywder"
+
+#: part/KPrView.cpp:71 part/KPrView.cpp:72
+#, fuzzy
+#| msgid "Before Current Slide"
+msgid "Copy the current slide"
+msgstr "Cyn y Tryloywder Cyfredol"
+
+#. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:136
+#. i18n: ectx: property (text), widget (QPushButton, deleteSlideButton)
+#: part/KPrView.cpp:73 rc.cpp:206
+#, fuzzy
+#| msgid "Delete Slide"
+msgid "Delete Slide"
+msgstr "Dileu Tryloywder"
+
+#: part/KPrView.cpp:74 part/KPrView.cpp:75
+#, fuzzy
+#| msgid "Before Current Slide"
+msgid "Delete the current slide"
+msgstr "Cyn y Tryloywder Cyfredol"
+
+#: part/KPrView.cpp:76
+#, fuzzy
+#| msgid "Insert &Slide..."
+msgid "Master Slide..."
+msgstr "Mewnosod T&ryloywder..."
+
+#: part/KPrView.cpp:77
+#, fuzzy
+#| msgid "&Previous Slide"
+msgid "Previous Slide"
+msgstr "Tryloywder &Blaenorol"
+
+#: part/KPrView.cpp:78 part/KPrPresenterViewInterface.cpp:67
 #, fuzzy
 #| msgid "&Next Slide"
 msgid "Next Slide"
 msgstr "Tryloywder &Nesaf"
+
+#: part/KPrView.cpp:79
+#, fuzzy
+#| msgid "Paste Slide"
+msgid "First Slide"
+msgstr "Gludo Tryloywder"
+
+#: part/KPrView.cpp:80
+#, fuzzy
+#| msgid "Paste Slide"
+msgid "Last Slide"
+msgstr "Gludo Tryloywder"
+
+#: part/KPrView.cpp:81
+#, fuzzy
+#| msgid "Configure KPresenter..."
+msgid "Configure KPresenter..."
+msgstr "Ffurweddu KPresenter..."
+
+#: part/KPrView.cpp:142
+msgid "Normal"
+msgstr "Arferol"
+
+#: part/KPrView.cpp:148
+#, fuzzy
+#| msgid "Note"
+msgid "Notes"
+msgstr "Nodyn"
+
+#: part/KPrView.cpp:157
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgid "Create Appear Animation"
+msgstr "Creu Cyflwyniad HTML"
+
+#: part/KPrView.cpp:161
+#, fuzzy
+msgid "Edit Custom Slide Shows..."
+msgstr "Ffurfweddu Sioe Tryloy&wderau..."
+
+#: part/KPrView.cpp:165
+#, fuzzy
+#| msgid "Presentation"
+msgid "Start Presentation"
+msgstr "Cyflwyniad"
+
+#: part/KPrView.cpp:168
+#, fuzzy
+#| msgid "After Current Slide"
+msgid "From Current Slide"
+msgstr "Ar ôl y Tryloywder Cyfredol"
+
+#: part/KPrView.cpp:173
+#, fuzzy
+#| msgid "Start From &First Slide"
+msgid "From First Slide"
+msgstr "Dechrau o'r Tryloywder Cyn&taf"
+
+#: part/KPrView.cpp:178
+#, fuzzy
+#| msgid "&Configure Slide Show..."
+msgid "Configure Slide Show..."
+msgstr "Ffurfweddu Sioe Tryloy&wderau..."
+
+#: part/KPrView.cpp:182
+#, fuzzy
+#| msgid "Configure KPresenter..."
+msgid "Configure Presenter View..."
+msgstr "Ffurweddu KPresenter..."
+
+#: part/KPrPlaceholderShapeFactory.cpp:31
+msgid "Placeholder shape"
+msgstr ""
 
 #: part/KPrPresenterViewInterface.cpp:77
 #, fuzzy
@@ -1590,6 +1715,10 @@ msgstr ""
 msgid "File to open"
 msgstr "Ffeil i agor"
 
+#: part/KPrEndOfSlideShowPage.cpp:68
+msgid "End of presentation. Click to exit."
+msgstr "Diwedd y Cyflwyniad.  Cliciwch i adael."
+
 #: part/KPrPresentationDrawWidget.cpp:102
 #, fuzzy
 #| msgid "Color"
@@ -1629,135 +1758,6 @@ msgstr "Glas"
 #| msgid "Slow"
 msgid "Yellow"
 msgstr "Araf"
-
-#: part/KPrView.cpp:65
-#, fuzzy
-#| msgid "Paste Slide"
-msgid "Show Master Slides"
-msgstr "Gludo Tryloywder"
-
-#: part/KPrView.cpp:66
-#, fuzzy
-#| msgid "Goto Slide..."
-msgid "Import Slideshow..."
-msgstr "Ewch i Dryloywder..."
-
-#: part/KPrView.cpp:67
-msgid "Insert Slide"
-msgstr "Mewnosod Tryloywder"
-
-#: part/KPrView.cpp:68 part/KPrView.cpp:69
-msgid "Insert a new slide after the current one"
-msgstr ""
-
-#: part/KPrView.cpp:70
-msgid "Copy Slide"
-msgstr "Copïo Tryloywder"
-
-#: part/KPrView.cpp:71 part/KPrView.cpp:72
-#, fuzzy
-#| msgid "Before Current Slide"
-msgid "Copy the current slide"
-msgstr "Cyn y Tryloywder Cyfredol"
-
-#. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:136
-#. i18n: ectx: property (text), widget (QPushButton, deleteSlideButton)
-#: part/KPrView.cpp:73 rc.cpp:206
-#, fuzzy
-#| msgid "Delete Slide"
-msgid "Delete Slide"
-msgstr "Dileu Tryloywder"
-
-#: part/KPrView.cpp:74 part/KPrView.cpp:75
-#, fuzzy
-#| msgid "Before Current Slide"
-msgid "Delete the current slide"
-msgstr "Cyn y Tryloywder Cyfredol"
-
-#: part/KPrView.cpp:76
-#, fuzzy
-#| msgid "Insert &Slide..."
-msgid "Master Slide..."
-msgstr "Mewnosod T&ryloywder..."
-
-#: part/KPrView.cpp:77
-#, fuzzy
-#| msgid "&Previous Slide"
-msgid "Previous Slide"
-msgstr "Tryloywder &Blaenorol"
-
-#: part/KPrView.cpp:79
-#, fuzzy
-#| msgid "Paste Slide"
-msgid "First Slide"
-msgstr "Gludo Tryloywder"
-
-#: part/KPrView.cpp:80
-#, fuzzy
-#| msgid "Paste Slide"
-msgid "Last Slide"
-msgstr "Gludo Tryloywder"
-
-#: part/KPrView.cpp:81
-#, fuzzy
-#| msgid "Configure KPresenter..."
-msgid "Configure KPresenter..."
-msgstr "Ffurweddu KPresenter..."
-
-#: part/KPrView.cpp:142
-msgid "Normal"
-msgstr "Arferol"
-
-#: part/KPrView.cpp:148
-#, fuzzy
-#| msgid "Note"
-msgid "Notes"
-msgstr "Nodyn"
-
-#: part/KPrView.cpp:157
-#, fuzzy
-#| msgid "Create HTML Presentation"
-msgid "Create Appear Animation"
-msgstr "Creu Cyflwyniad HTML"
-
-#: part/KPrView.cpp:161
-#, fuzzy
-msgid "Edit Custom Slide Shows..."
-msgstr "Ffurfweddu Sioe Tryloy&wderau..."
-
-#: part/KPrView.cpp:165
-#, fuzzy
-#| msgid "Presentation"
-msgid "Start Presentation"
-msgstr "Cyflwyniad"
-
-#: part/KPrView.cpp:168
-#, fuzzy
-#| msgid "After Current Slide"
-msgid "From Current Slide"
-msgstr "Ar ôl y Tryloywder Cyfredol"
-
-#: part/KPrView.cpp:173
-#, fuzzy
-#| msgid "Start From &First Slide"
-msgid "From First Slide"
-msgstr "Dechrau o'r Tryloywder Cyn&taf"
-
-#: part/KPrView.cpp:178
-#, fuzzy
-#| msgid "&Configure Slide Show..."
-msgid "Configure Slide Show..."
-msgstr "Ffurfweddu Sioe Tryloy&wderau..."
-
-#: part/KPrView.cpp:182
-#, fuzzy
-#| msgid "Configure KPresenter..."
-msgid "Configure Presenter View..."
-msgstr "Ffurweddu KPresenter..."
-
-#: part/KPrEndOfSlideShowPage.cpp:68
-msgid "End of presentation. Click to exit."
-msgstr "Diwedd y Cyflwyniad.  Cliciwch i adael."
 
 #. i18n: file: kpresenter.rc:3
 #. i18n: ectx: Menu (file)
