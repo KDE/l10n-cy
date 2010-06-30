@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-29 08:15+0200\n"
+"POT-Creation-Date: 2010-06-30 05:32+0200\n"
 "PO-Revision-Date: 2004-02-25 13:47+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -1815,12 +1815,12 @@ msgid ""
 "all available addresses."
 msgstr ""
 
-#: redirectdialog.cpp:87 kmcomposewin.cpp:2626
+#: redirectdialog.cpp:87 kmcomposewin.cpp:2636
 msgid "&Send Now"
 msgstr "Anfo&n Rwan"
 
 #: redirectdialog.cpp:88 kmcomposewin.cpp:1072 kmcomposewin.cpp:1081
-#: kmcomposewin.cpp:2627
+#: kmcomposewin.cpp:2637
 msgid "Send &Later"
 msgstr "Anfon yn &Nes Ymlaen"
 
@@ -1839,7 +1839,7 @@ msgid "Distribution list \"%1\" is empty, it cannot be used."
 msgstr ""
 
 #: addressvalidationjob.cpp:71 addressvalidationjob.cpp:80
-#: identitydialog.cpp:557
+#: identitydialog.cpp:589
 msgid "Invalid Email Address"
 msgstr "Cyfeiriad Ebost Annilys"
 
@@ -3042,7 +3042,7 @@ msgstr ""
 
 #. i18n: file: ui/securitypagegeneraltab.ui:91
 #. i18n: ectx: property (text), widget (QRadioButton, radioIgnore)
-#: rc.cpp:357 vacation.cpp:644
+#: rc.cpp:357 vacation.cpp:647
 #, fuzzy
 #| msgctxt "MDN type"
 #| msgid "Ignore"
@@ -6161,7 +6161,7 @@ msgstr ""
 "Yr eiddoch yn gywir,\n"
 "-- <rhowch eich enw a cyhyfeiriad ebost yma>\n"
 
-#: vacation.cpp:596
+#: vacation.cpp:599
 #, fuzzy
 msgid ""
 "Your server did not list \"vacation\" in its list of supported Sieve "
@@ -6174,11 +6174,11 @@ msgstr ""
 "Hebddo, ni all KMail osod atebion allan-o'r-swyddfa i chi.\n"
 "Cysylltwch a'ch gweinyddwr cysawd."
 
-#: vacation.cpp:606
+#: vacation.cpp:609
 msgid "Configure \"Out of Office\" Replies"
 msgstr "Ffurfweddu Atebion \"Allan o'r Swyddfa\""
 
-#: vacation.cpp:616
+#: vacation.cpp:619
 msgid ""
 "Someone (probably you) changed the vacation script on the server.\n"
 "KMail is no longer able to determine the parameters for the autoreplies.\n"
@@ -6188,28 +6188,28 @@ msgstr ""
 "Ni all KMail benodi'r paramedrau ar gyfer yr atebion mwyach.\n"
 "Defnyddir gwerthoedd rhagosod."
 
-#: vacation.cpp:641
+#: vacation.cpp:644
 msgid ""
 "There is still an active out-of-office reply configured.\n"
 "Do you want to edit it?"
 msgstr ""
 
-#: vacation.cpp:642
+#: vacation.cpp:645
 msgid "Out-of-office reply still active"
 msgstr ""
 
-#: vacation.cpp:643
+#: vacation.cpp:646
 #, fuzzy
 msgid "Edit"
 msgstr "Terfynu"
 
-#: vacation.cpp:708 sievedebugdialog.cpp:370
+#: vacation.cpp:711 sievedebugdialog.cpp:370
 msgid ""
 "Sieve script installed successfully on the server.\n"
 "Out of Office reply is now active."
 msgstr ""
 
-#: vacation.cpp:710 sievedebugdialog.cpp:372
+#: vacation.cpp:713 sievedebugdialog.cpp:372
 msgid ""
 "Sieve script installed successfully on the server.\n"
 "Out of Office reply has been deactivated."
@@ -6306,22 +6306,22 @@ msgid ""
 "not be able to access it afterwards."
 msgstr ""
 
-#: identitydialog.cpp:95
+#: identitydialog.cpp:96
 msgid "Edit Identity"
 msgstr "Golygu Dynodiad"
 
-#: identitydialog.cpp:120
+#: identitydialog.cpp:121
 #, fuzzy
 #| msgid "General"
 msgctxt "@title:tab General identity settings."
 msgid "General"
 msgstr "Cyffredinol"
 
-#: identitydialog.cpp:131
+#: identitydialog.cpp:132
 msgid "&Your name:"
 msgstr "&Eich enw:"
 
-#: identitydialog.cpp:134
+#: identitydialog.cpp:135
 #, fuzzy
 msgid ""
 "<qt><h3>Your name</h3><p>This field should contain your name as you would "
@@ -6332,11 +6332,11 @@ msgstr ""
 "iddo ymddangos ym mhenawd yr ebost a anfonir.</p><p>Os gadewch hwn yn wag, "
 "ni ddengys eich enw go iawn, ond cyfeiriad ebost yn unig.</p></qt>"
 
-#: identitydialog.cpp:146
+#: identitydialog.cpp:147
 msgid "Organi&zation:"
 msgstr "Mu&diad:"
 
-#: identitydialog.cpp:149
+#: identitydialog.cpp:150
 #, fuzzy
 #| msgid ""
 #| "<qt><h3>Organization</h3><p>This field should have the name of your "
@@ -6351,37 +6351,60 @@ msgstr ""
 "iddo ei ddangos ym mhenawd yr ebost a anfonir.</p><p>Mae'n ddiogel (ac "
 "arferol) i adael hwn yn wag.</p></qt>"
 
-#: identitydialog.cpp:162
+#: identitydialog.cpp:163
 msgid "&Email address:"
 msgstr "C&yfeiriad ebost:"
 
-#: identitydialog.cpp:165
+#: identitydialog.cpp:166
+#, fuzzy
+#| msgid ""
+#| "<qt><h3>Email address</h3><p>This field should have your full email "
+#| "address.</p><p>If you leave this blank, or get it wrong, people will have "
+#| "trouble replying to you.</p></qt>"
 msgid ""
 "<qt><h3>Email address</h3><p>This field should have your full email address."
-"</p><p>If you leave this blank, or get it wrong, people will have trouble "
-"replying to you.</p></qt>"
+"</p><p>This address is the primary one, used for all outgoing mail. If you "
+"have more than one address, either create a new identiy, or add additional "
+"alias addresses in the field below.</p><p>If you leave this blank, or get it "
+"wrong, people will have trouble replying to you.</p></qt>"
 msgstr ""
 "<qt><h3>Cyfeiriad ebost</h3><p>Dylai'r maes yma gynnwys eich cyfeiriad ebost "
 "llawn.</p><p>Os gadewch hwn yn wag, neu roi un anghywir, bydd pawb yn cael "
 "trafferth wrth ateb i chi.</p></qt>"
 
-#: identitydialog.cpp:177
+#: identitydialog.cpp:180
+#, fuzzy
+#| msgid "&Email address:"
+msgid "Email a&liases:"
+msgstr "C&yfeiriad ebost:"
+
+#: identitydialog.cpp:183
+msgid ""
+"<qt><h3>Email aliases</h3><p>This field contains alias addresses that should "
+"also be considered as belonging to this identity (as opposed to representing "
+"a different identity).</p><p>Example:</p><table><tr><th>Primary address:</"
+"th><td>first.last@example.org</td></tr><tr><th>Aliases:</"
+"th><td>first@example.org<br>last@example.org</td></tr></table><p>Type one "
+"alias address per line.</p></qt>"
+msgstr ""
+
+#: identitydialog.cpp:201
 #, fuzzy
 #| msgid "Cryptograph&y"
 msgid "Cryptography"
 msgstr "C&êl-ysgrifennaeth"
 
-#: identitydialog.cpp:187 identitydialog.cpp:212 identitydialog.cpp:238
-#: identitydialog.cpp:265
+#: identitydialog.cpp:211 identitydialog.cpp:236 identitydialog.cpp:262
+#: identitydialog.cpp:289
 msgid "Chang&e..."
 msgstr "Ne&wid..."
 
-#: identitydialog.cpp:188
+#: identitydialog.cpp:212
 #, fuzzy
 msgid "Your OpenPGP Signature Key"
 msgstr "Eich Allwedd OpenPGP"
 
-#: identitydialog.cpp:189
+#: identitydialog.cpp:213
 #, fuzzy
 msgid ""
 "Select the OpenPGP key which should be used to digitally sign your messages."
@@ -6389,7 +6412,7 @@ msgstr ""
 "Dewiswch yr allwedd OpenPGP a ddylai ei defnyddio i lofnodi eich negeseuon "
 "ac wrth gêl-ysgrifennu i'ch hunan."
 
-#: identitydialog.cpp:193
+#: identitydialog.cpp:217
 #, fuzzy
 msgid ""
 "<qt><p>The OpenPGP key you choose here will be used to digitally sign "
@@ -6404,17 +6427,17 @@ msgstr ""
 "ysgrifol.  Ni fydd effaith ar swyddogaethau ebostio arferol.</p>Gallwch "
 "ddarganfod mwy ynglyn ag allweddau wrth <a>http://www.gnupg.org</a></qt>"
 
-#: identitydialog.cpp:200
+#: identitydialog.cpp:224
 #, fuzzy
 msgid "OpenPGP signing key:"
 msgstr "Allwedd OpenPGP:"
 
-#: identitydialog.cpp:213
+#: identitydialog.cpp:237
 #, fuzzy
 msgid "Your OpenPGP Encryption Key"
 msgstr "Eich Allwedd OpenPGP"
 
-#: identitydialog.cpp:214
+#: identitydialog.cpp:238
 #, fuzzy
 msgid ""
 "Select the OpenPGP key which should be used when encrypting to yourself and "
@@ -6423,7 +6446,7 @@ msgstr ""
 "Dewiswch yr allwedd OpenPGP a ddylai ei defnyddio i lofnodi eich negeseuon "
 "ac wrth gêl-ysgrifennu i'ch hunan."
 
-#: identitydialog.cpp:219
+#: identitydialog.cpp:243
 #, fuzzy
 msgid ""
 "<qt><p>The OpenPGP key you choose here will be used to encrypt messages to "
@@ -6439,17 +6462,17 @@ msgstr ""
 "ysgrifol.  Ni fydd effaith ar swyddogaethau ebostio arferol.</p>Gallwch "
 "ddarganfod mwy ynglyn ag allweddau wrth <a>http://www.gnupg.org</a></qt>"
 
-#: identitydialog.cpp:226
+#: identitydialog.cpp:250
 #, fuzzy
 msgid "OpenPGP encryption key:"
 msgstr "Allwedd OpenPGP:"
 
-#: identitydialog.cpp:239
+#: identitydialog.cpp:263
 #, fuzzy
 msgid "Your S/MIME Signature Certificate"
 msgstr "Gwall: Ni wiriwyd y llofnod"
 
-#: identitydialog.cpp:240
+#: identitydialog.cpp:264
 #, fuzzy
 msgid ""
 "Select the S/MIME certificate which should be used to digitally sign your "
@@ -6458,7 +6481,7 @@ msgstr ""
 "Dewiswch yr allwedd OpenPGP a ddylai ei defnyddio i lofnodi eich negeseuon "
 "ac wrth gêl-ysgrifennu i'ch hunan."
 
-#: identitydialog.cpp:244
+#: identitydialog.cpp:268
 #, fuzzy
 msgid ""
 "<qt><p>The S/MIME (X.509) certificate you choose here will be used to "
@@ -6472,22 +6495,22 @@ msgstr ""
 "ysgrifol.  Ni fydd effaith ar swyddogaethau ebostio arferol.</p>Gallwch "
 "ddarganfod mwy ynglyn ag allweddau wrth <a>http://www.gnupg.org</a></qt>"
 
-#: identitydialog.cpp:249
+#: identitydialog.cpp:273
 #, fuzzy
 msgid "S/MIME signing certificate:"
 msgstr "Anfon Tystysgrifau"
 
-#: identitydialog.cpp:266
+#: identitydialog.cpp:290
 msgid "Your S/MIME Encryption Certificate"
 msgstr ""
 
-#: identitydialog.cpp:267
+#: identitydialog.cpp:291
 msgid ""
 "Select the S/MIME certificate which should be used when encrypting to "
 "yourself and for the \"Attach My Certificate\" feature in the composer."
 msgstr ""
 
-#: identitydialog.cpp:272
+#: identitydialog.cpp:296
 #, fuzzy
 msgid ""
 "<qt><p>The S/MIME certificate you choose here will be used to encrypt "
@@ -6502,27 +6525,27 @@ msgstr ""
 "ysgrifol.  Ni fydd effaith ar swyddogaethau ebostio arferol.</p>Gallwch "
 "ddarganfod mwy ynglyn ag allweddau wrth <a>http://www.gnupg.org</a></qt>"
 
-#: identitydialog.cpp:278
+#: identitydialog.cpp:302
 #, fuzzy
 msgid "S/MIME encryption certificate:"
 msgstr "&Dewis tystysgrif:"
 
-#: identitydialog.cpp:301
+#: identitydialog.cpp:325
 msgid "Preferred crypto message format:"
 msgstr ""
 
-#: identitydialog.cpp:315
+#: identitydialog.cpp:339
 #, fuzzy
 #| msgid "Advanced"
 msgctxt "@title:tab Advanced identity settings."
 msgid "Advanced"
 msgstr "Uwch"
 
-#: identitydialog.cpp:328
+#: identitydialog.cpp:352
 msgid "&Reply-To address:"
 msgstr "&Cyfeiriad Ateb-I:"
 
-#: identitydialog.cpp:331
+#: identitydialog.cpp:355
 msgid ""
 "<qt><h3>Reply-To addresses</h3><p>This sets the <tt>Reply-to:</tt> header to "
 "contain a different email address to the normal <tt>From:</tt> address.</"
@@ -6539,11 +6562,11 @@ msgstr ""
 "fynd i gyfeiriad cylch.</p><p>Os mewn amheuaeth, gadewch y maes yma'n wag.</"
 "p></qt>"
 
-#: identitydialog.cpp:349
+#: identitydialog.cpp:373
 msgid "&BCC addresses:"
 msgstr "Cyfeiriadau &BCC:"
 
-#: identitydialog.cpp:352
+#: identitydialog.cpp:376
 #, fuzzy
 msgid ""
 "<qt><h3>BCC (Blind Carbon Copy) addresses</h3><p>The addresses that you "
@@ -6559,52 +6582,58 @@ msgstr ""
 "copi o bob neges anfonedig i gyfrif arall sy'n biau i chi.</p><p>Os mewn "
 "amheuaeth, gadewch y maes yma'n wag.</p></qt>"
 
-#: identitydialog.cpp:368
+#: identitydialog.cpp:392
 msgid "D&ictionary:"
 msgstr "&Geiriadur:"
 
-#: identitydialog.cpp:378
+#: identitydialog.cpp:402
 msgid "Sent-mail &folder:"
 msgstr "&Plygell ebost a anfonwyd:"
 
-#: identitydialog.cpp:387
+#: identitydialog.cpp:411
 msgid "&Drafts folder:"
 msgstr "Plygell &brasluniau:"
 
-#: identitydialog.cpp:396
+#: identitydialog.cpp:420
 #, fuzzy
 msgid "&Templates folder:"
 msgstr "Plygell S&bwriel:"
 
-#: identitydialog.cpp:403
+#: identitydialog.cpp:427
 msgid "Special &transport:"
 msgstr "Cludiant &arbennig:"
 
-#: identitydialog.cpp:424
+#: identitydialog.cpp:448
 #, fuzzy
 msgid "&Use custom message templates for this identity"
 msgstr "&Defnyddio ôlddodiad dynodiad neges addasiedig."
 
-#: identitydialog.cpp:439 collectiontemplatespage.cpp:73
+#: identitydialog.cpp:463 collectiontemplatespage.cpp:73
 #, fuzzy
 msgid "&Copy Global Templates"
 msgstr "&Amnewid"
 
-#: identitydialog.cpp:452 collectiontemplatespage.cpp:35
+#: identitydialog.cpp:476 collectiontemplatespage.cpp:35
 msgid "Templates"
 msgstr ""
 
-#: identitydialog.cpp:460
+#: identitydialog.cpp:484
 msgid "Signature"
 msgstr "Llofnod"
 
-#: identitydialog.cpp:470
+#: identitydialog.cpp:494
 #, fuzzy
 #| msgid "&Picture"
 msgid "Picture"
 msgstr "&Llun"
 
-#: identitydialog.cpp:593
+#: identitydialog.cpp:580
+#, fuzzy, kde-format
+#| msgid "Invalid Email Address"
+msgid "Invalid Email Alias \"%1\""
+msgstr "Cyfeiriad Ebost Annilys"
+
+#: identitydialog.cpp:625
 #, kde-format
 msgid ""
 "One of the configured OpenPGP signing keys does not contain any user ID with "
@@ -6613,14 +6642,14 @@ msgid ""
 "verify signatures made with this configuration."
 msgstr ""
 
-#: identitydialog.cpp:601
+#: identitydialog.cpp:633
 #, kde-format
 msgid ""
 "One of the configured OpenPGP encryption keys does not contain any user ID "
 "with the configured email address for this identity (%1)."
 msgstr ""
 
-#: identitydialog.cpp:607
+#: identitydialog.cpp:639
 #, kde-format
 msgid ""
 "One of the configured S/MIME signing certificates does not contain the "
@@ -6629,29 +6658,29 @@ msgid ""
 "verify signatures made with this configuration."
 msgstr ""
 
-#: identitydialog.cpp:615
+#: identitydialog.cpp:647
 #, kde-format
 msgid ""
 "One of the configured S/MIME encryption certificates does not contain the "
 "configured email address for this identity (%1)."
 msgstr ""
 
-#: identitydialog.cpp:623
+#: identitydialog.cpp:655
 #, fuzzy
 msgid "Email Address Not Found in Key/Certificates"
 msgstr "Cy&feiriad ebost y CA sy'n cyhoeddi tystysgrifau:"
 
-#: identitydialog.cpp:639
+#: identitydialog.cpp:671
 #, fuzzy
 msgid "The signature file is not valid"
 msgstr "Mae'r llofnod wedi darfod."
 
-#: identitydialog.cpp:662
+#: identitydialog.cpp:694
 #, kde-format
 msgid "Edit Identity \"%1\""
 msgstr "Golygu Dynodiad \"%1\""
 
-#: identitydialog.cpp:695
+#: identitydialog.cpp:728
 #, fuzzy, kde-format
 msgid ""
 "The custom sent-mail folder for identity \"%1\" does not exist (anymore); "
@@ -6660,7 +6689,7 @@ msgstr ""
 "Nid yw'r blygell addasiedig ebost anfonedig ar gyfer dynodiad \"%1\" mewn "
 "bodolaeth (dim mwy).  Felly defnyddir y blygell ragosod ebost anfonedig."
 
-#: identitydialog.cpp:707
+#: identitydialog.cpp:740
 #, fuzzy, kde-format
 msgid ""
 "The custom drafts folder for identity \"%1\" does not exist (anymore); "
@@ -6669,7 +6698,7 @@ msgstr ""
 "Nid yw'r blygell addasiedig drafftiau ar gyfer dynodiad \"%1\" mewn "
 "bodolaeth (dim mwy).  Felly defnyddir y blygell ragosod drafftiau."
 
-#: identitydialog.cpp:719
+#: identitydialog.cpp:752
 #, fuzzy, kde-format
 msgid ""
 "The custom templates folder for identity \"%1\" does not exist (anymore); "
@@ -7239,12 +7268,12 @@ msgstr "&Furffweddu KMail..."
 msgid " Spellcheck: %1 "
 msgstr "Gwirydd Sillafu"
 
-#: kmcomposewin.cpp:1371 kmcomposewin.cpp:2984
+#: kmcomposewin.cpp:1371 kmcomposewin.cpp:2994
 #, kde-format
 msgid " Column: %1 "
 msgstr "Colofn: %1"
 
-#: kmcomposewin.cpp:1373 kmcomposewin.cpp:2982
+#: kmcomposewin.cpp:1373 kmcomposewin.cpp:2992
 #, fuzzy, kde-format
 #| msgid " Line: %1 "
 msgctxt "Shows the linenumber of the cursor position."
@@ -7300,7 +7329,7 @@ msgstr "Atgoffydd Atodiad Ffeil"
 msgid "&Attach File..."
 msgstr "A&todi Ffeil..."
 
-#: kmcomposewin.cpp:1805 kmcomposewin.cpp:2647
+#: kmcomposewin.cpp:1805 kmcomposewin.cpp:2657
 msgid "&Send as Is"
 msgstr "&Anfon e"
 
@@ -7389,123 +7418,129 @@ msgstr "A&nfon e"
 msgid "&Specify the Subject"
 msgstr "&Na, Gadewch i Mi Benodi'r Pwnc"
 
-#: kmcomposewin.cpp:2624
+#: kmcomposewin.cpp:2513
+#, fuzzy
+msgid ""
+"You must specify at least one receiverin order to be able to encrypt a draft."
+msgstr "Rhaid i chi benodi o leiaf un derbyniwr yn y maes I:."
+
+#: kmcomposewin.cpp:2634
 msgid "About to send email..."
 msgstr "Ar fin anfon ebost..."
 
-#: kmcomposewin.cpp:2625
+#: kmcomposewin.cpp:2635
 msgid "Send Confirmation"
 msgstr "Anfon Cadarnhad"
 
-#: kmcomposewin.cpp:2645
+#: kmcomposewin.cpp:2655
 #, kde-format
 msgid ""
 "You are trying to send the mail to more than %1 recipients. Send message "
 "anyway?"
 msgstr ""
 
-#: kmcomposewin.cpp:2646
+#: kmcomposewin.cpp:2656
 #, fuzzy
 msgid "Too many recipients"
 msgstr "<derbynwyr>"
 
-#: kmcomposewin.cpp:2648
+#: kmcomposewin.cpp:2658
 #, fuzzy
 msgid "&Edit Recipients"
 msgstr "<derbynwyr>"
 
-#: kmcomposewin.cpp:2690
+#: kmcomposewin.cpp:2700
 msgid ""
 "Turning HTML mode off will cause the text to lose the formatting. Are you "
 "sure?"
 msgstr ""
 
-#: kmcomposewin.cpp:2692
+#: kmcomposewin.cpp:2702
 msgid "Lose the formatting?"
 msgstr ""
 
-#: kmcomposewin.cpp:2692
+#: kmcomposewin.cpp:2702
 #, fuzzy
 msgid "Lose Formatting"
 msgstr "Anfon Cadarnhad"
 
-#: kmcomposewin.cpp:2746
+#: kmcomposewin.cpp:2756
 #, fuzzy
 msgid "Spellcheck: on"
 msgstr "Gwirydd Sillafu"
 
-#: kmcomposewin.cpp:2748
+#: kmcomposewin.cpp:2758
 #, fuzzy
 msgid "Spellcheck: off"
 msgstr "Gwirydd Sillafu"
 
-#: kmcomposewin.cpp:3030
+#: kmcomposewin.cpp:3040
 msgid ""
 "Please configure a Crypto Backend to use for Chiasmus encryption first.\n"
 "You can do this in the Crypto Backends tab of the configure dialog's "
 "Security page."
 msgstr ""
 
-#: kmcomposewin.cpp:3034
+#: kmcomposewin.cpp:3044
 msgid ""
 "It looks as though libkleopatra was compiled without Chiasmus support. You "
 "might want to recompile libkleopatra with --enable-chiasmus."
 msgstr ""
 
-#: kmcomposewin.cpp:3037
+#: kmcomposewin.cpp:3047
 msgid "No Chiasmus Backend Configured"
 msgstr ""
 
-#: kmcomposewin.cpp:3043
+#: kmcomposewin.cpp:3053
 msgid ""
 "Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
 "report this bug."
 msgstr ""
 
-#: kmcomposewin.cpp:3045 kmcomposewin.cpp:3050 kmcomposewin.cpp:3059
+#: kmcomposewin.cpp:3055 kmcomposewin.cpp:3060 kmcomposewin.cpp:3069
 msgid "Chiasmus Backend Error"
 msgstr ""
 
-#: kmcomposewin.cpp:3056
+#: kmcomposewin.cpp:3066
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
 "function did not return a string list. Please report this bug."
 msgstr ""
 
-#: kmcomposewin.cpp:3065
+#: kmcomposewin.cpp:3075
 msgid ""
 "No keys have been found. Please check that a valid key path has been set in "
 "the Chiasmus configuration."
 msgstr ""
 
-#: kmcomposewin.cpp:3068
+#: kmcomposewin.cpp:3078
 #, fuzzy
 msgid "No Chiasmus Keys Found"
 msgstr "Ni Chanfuwyd Tystysgrif"
 
-#: kmcomposewin.cpp:3072
+#: kmcomposewin.cpp:3082
 #, fuzzy
 msgid "Chiasmus Encryption Key Selection"
 msgstr "Dewis Allwedd Cêl-ysgrifo"
 
-#: kmcomposewin.cpp:3101
+#: kmcomposewin.cpp:3111
 #, fuzzy
 #| msgid "Message was signed by %1."
 msgid "Message will be signed"
 msgstr "Llofnodwyd y neges gan %1."
 
-#: kmcomposewin.cpp:3102
+#: kmcomposewin.cpp:3112
 #, fuzzy
 #| msgid "Message List - Date Field"
 msgid "Message will not be signed"
 msgstr "Rhestr Negeseuon - Maes Dyddiad"
 
-#: kmcomposewin.cpp:3104
+#: kmcomposewin.cpp:3114
 #, fuzzy
 msgid "Message will be encrypted"
 msgstr "Cadw negeseuon an&foniedig wedi'u cêl-ysgrifo"
 
-#: kmcomposewin.cpp:3105
+#: kmcomposewin.cpp:3115
 #, fuzzy
 msgid "Message will not be encrypted"
 msgstr "Cadw negeseuon an&foniedig wedi'u cêl-ysgrifo"
