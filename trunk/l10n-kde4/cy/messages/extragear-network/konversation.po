@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-2/konversation.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-04 05:11+0200\n"
+"POT-Creation-Date: 2010-08-05 05:21+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -1564,37 +1564,6 @@ msgstr ""
 msgctxt "(Offline) nickname details (e.g. real name from address book)"
 msgid "(Offline) %1"
 msgstr "All-lein"
-
-#: src/irc/nickinfo.cpp:373
-msgid " (identified)"
-msgstr ""
-
-#. i18n: file: src/linkaddressbook/linkaddressbookui_base.ui:97
-#. i18n: ectx: property (text), widget (QTreeWidget, addresseeListView)
-#: src/irc/nickinfo.cpp:379 src/linkaddressbook/linkaddressbookui.cpp:59
-#: rc.cpp:1741
-msgid "Email"
-msgstr "Ebost"
-
-#. i18n: file: src/irc/channeloptionsui.ui:268
-#. i18n: ectx: property (text), widget (QLabel, hostmaskLabel)
-#: src/irc/nickinfo.cpp:403 rc.cpp:1543
-msgid "Hostmask:"
-msgstr ""
-
-#: src/irc/nickinfo.cpp:407
-#, fuzzy
-msgid "Away Message:"
-msgstr "Negeseuon"
-
-#: src/irc/nickinfo.cpp:411
-msgid "(unknown)"
-msgstr "(anhysbys)"
-
-#: src/irc/nickinfo.cpp:416
-#, fuzzy
-msgid "Online Since:"
-msgstr "Ar-lein"
 
 #: src/irc/servergroupdialog.cpp:79
 msgid "Change network information"
@@ -3758,6 +3727,37 @@ msgstr "Sianeli"
 msgid "%1 sets mode: %2"
 msgstr "Moddau Sianel : "
 
+#: src/irc/nickinfo.cpp:335
+msgid " (identified)"
+msgstr ""
+
+#. i18n: file: src/linkaddressbook/linkaddressbookui_base.ui:97
+#. i18n: ectx: property (text), widget (QTreeWidget, addresseeListView)
+#: src/irc/nickinfo.cpp:341 src/linkaddressbook/linkaddressbookui.cpp:59
+#: rc.cpp:1741
+msgid "Email"
+msgstr "Ebost"
+
+#. i18n: file: src/irc/channeloptionsui.ui:268
+#. i18n: ectx: property (text), widget (QLabel, hostmaskLabel)
+#: src/irc/nickinfo.cpp:365 rc.cpp:1543
+msgid "Hostmask:"
+msgstr ""
+
+#: src/irc/nickinfo.cpp:369
+#, fuzzy
+msgid "Away Message:"
+msgstr "Negeseuon"
+
+#: src/irc/nickinfo.cpp:373
+msgid "(unknown)"
+msgstr "(anhysbys)"
+
+#: src/irc/nickinfo.cpp:378
+#, fuzzy
+msgid "Online Since:"
+msgstr "Ar-lein"
+
 #: src/irc/server.cpp:404 src/irc/server.cpp:414
 #, fuzzy
 #| msgid "Preparing"
@@ -3972,10 +3972,10 @@ msgstr ""
 msgid "%1 is online (%2)."
 msgstr ""
 
-#: src/irc/server.cpp:2837
-#, fuzzy, kde-format
-msgid "%1 went online (%2)."
-msgstr "Moddau Sianel : "
+#: src/irc/server.cpp:2837 src/notificationhandler.cpp:321
+#, kde-format
+msgid "%1 went offline (%2)."
+msgstr ""
 
 #: src/irc/server.cpp:3472
 #, kde-format
@@ -5720,11 +5720,6 @@ msgstr ""
 #: src/notificationhandler.cpp:294
 #, kde-format
 msgid "%1 has started a conversation (query) with you."
-msgstr ""
-
-#: src/notificationhandler.cpp:321
-#, kde-format
-msgid "%1 went offline (%2)."
 msgstr ""
 
 #: src/notificationhandler.cpp:335
@@ -8929,6 +8924,10 @@ msgstr "Canfod Blaenorol"
 #: rc.cpp:1948
 msgid "&Options"
 msgstr ""
+
+#, fuzzy
+#~ msgid "%1 went online (%2)."
+#~ msgstr "Moddau Sianel : "
 
 #, fuzzy
 #~ msgid "Filter pattern:"
