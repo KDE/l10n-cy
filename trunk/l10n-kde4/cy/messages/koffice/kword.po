@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-10 06:11+0200\n"
+"POT-Creation-Date: 2010-08-30 05:27+0200\n"
 "PO-Revision-Date: 2004-08-16 18:16+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -242,7 +242,7 @@ msgstr "Maint Tudalen && Ymylon"
 
 #. i18n: file: part/dialogs/KWStartupWidget.ui:51
 #. i18n: ectx: attribute (title), widget (QWidget, columnsTab)
-#: rc.cpp:96 part/dialogs/KWPageSettingsDialog.cpp:42
+#: rc.cpp:96 part/dialogs/KWPageSettingsDialog.cpp:40
 msgid "Columns"
 msgstr "Colofnau"
 
@@ -1022,6 +1022,12 @@ msgstr "Cysylltu Fframiau Testun"
 msgid "Geometry"
 msgstr "Geometreg"
 
+#: part/dialogs/KWPageSettingsDialog.cpp:92
+#, fuzzy
+#| msgid "Frame Properties"
+msgid "Change Page Properties"
+msgstr "Priodweddau Fframiau"
+
 #: part/dialogs/KWSelectBookmarkDialog.cpp:79
 msgid "Rename Bookmark"
 msgstr "Ailenwi Tudnod"
@@ -1070,12 +1076,6 @@ msgstr "Creu Ffrâm Testun"
 msgid "Create custom outline"
 msgstr "Creu tabl"
 
-#: part/commands/KWPagePropertiesCommand.cpp:36
-#, fuzzy
-#| msgid "Frame Properties"
-msgid "Page Properties"
-msgstr "Priodweddau Fframiau"
-
 #: part/commands/KWPageRemoveCommand.cpp:32
 #, fuzzy
 #| msgid "Remove entry"
@@ -1088,33 +1088,45 @@ msgstr "Gwaredu eitem"
 msgid "Clip Frame"
 msgstr "Ffrâm Fewnlein"
 
-#: part/frames/KWTextFrameSet.cpp:88
+#: part/commands/KWChangePageStyleCommand.cpp:25
+#, fuzzy
+#| msgid "Framestyle:"
+msgid "Set Page Style"
+msgstr "Arddull Ffrâm:"
+
+#: part/commands/KWNewPageStyleCommand.cpp:27
+#, fuzzy
+#| msgid "Insert Page"
+msgid "Insert Page Style"
+msgstr "Mewnosod Tudalen"
+
+#: part/commands/KWPageStylePropertiesCommand.cpp:36
+#, fuzzy
+#| msgid "Frame Properties"
+msgid "Page Properties"
+msgstr "Priodweddau Fframiau"
+
+#: part/frames/KWTextFrameSet.cpp:90
 msgid "Odd Pages Header"
 msgstr "Pennawd Tudalennau Odrif"
 
-#: part/frames/KWTextFrameSet.cpp:91
+#: part/frames/KWTextFrameSet.cpp:93
 msgid "Even Pages Header"
 msgstr "Pennawd Tudalennau Eilrif"
 
-#: part/frames/KWTextFrameSet.cpp:94
+#: part/frames/KWTextFrameSet.cpp:96
 msgid "Odd Pages Footer"
 msgstr "Troedyn Tudalennau Odrif"
 
-#: part/frames/KWTextFrameSet.cpp:97
+#: part/frames/KWTextFrameSet.cpp:99
 msgid "Even Pages Footer"
 msgstr "Troedyn Tudalennau Eilrif"
 
-#: part/frames/KWTextFrameSet.cpp:100
+#: part/frames/KWTextFrameSet.cpp:102
 #, fuzzy
 #| msgid "Plain text"
 msgid "Main text"
 msgstr "Testun Plaen"
-
-#: part/frames/KWTextFrameSet.cpp:103
-#, fuzzy
-#| msgid "Background"
-msgid "Page Background"
-msgstr "Cefndir"
 
 #: part/KWStatusBar.cpp:39
 msgid "Modified"
@@ -1777,6 +1789,11 @@ msgstr ""
 #: part/KWDocument.cpp:835
 msgid "Installation Error"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Background"
+#~ msgid "Page Background"
+#~ msgstr "Cefndir"
 
 #, fuzzy
 #~| msgid "Format"
