@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krfb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-22 05:46+0200\n"
+"POT-Creation-Date: 2010-10-24 06:22+0200\n"
 "PO-Revision-Date: 2004-01-06 16:42+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -20,26 +20,21 @@ msgstr ""
 "\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: connectioncontroller.cpp:112
-#, fuzzy, kde-format
-#| msgid "Accepted uninvited connection from %1"
-msgid "Refused uninvited connection attempt from %1"
-msgstr "Derbynwyd cysylltiad anwahoddedig o %1"
+#: abstractrfbserver.cpp:221
+msgid "Address already in use"
+msgstr ""
 
-#: connectioncontroller.cpp:123
-#, kde-format
-msgid "Accepted uninvited connection from %1"
-msgstr "Derbynwyd cysylltiad anwahoddedig o %1"
+#: abstractrfbserver.cpp:306
+msgid ""
+"Your X11 Server does not support the required XTest extension version 2.2. "
+"Sharing your desktop is not possible."
+msgstr ""
+"Nid yw'ch Gweinydd X11 yn cynnal yr estyniad XTest angenrheidiol fersiwn "
+"2.2. Nid yw rhannu'ch penbwrdd yn bosib."
 
-#: connectioncontroller.cpp:131
-#, kde-format
-msgid "Received connection from %1, on hold (waiting for confirmation)"
-msgstr "Derbynwyd cysylltiad o %1, wedi' ddal (yn aros am wiriad)"
-
-#: connectioncontroller.cpp:174 connectioncontroller.cpp:178
-#, kde-format
-msgid "Failed login attempt from %1: wrong password"
-msgstr "Cais mewngofnodi methedig o %1: cyfrinair anghywir"
+#: abstractrfbserver.cpp:307
+msgid "Desktop Sharing Error"
+msgstr "Gwall Rhannu Penbwrdd"
 
 #: connectiondialog.cpp:32
 #, fuzzy
@@ -54,7 +49,7 @@ msgstr "Derbyn Cysylltiad"
 msgid "Refuse Connection"
 msgstr "Gwrthod Cysylltiad"
 
-#: invitedialog.cpp:34 manageinvitationsdialog.cpp:57
+#: invitedialog.cpp:34 manageinvitationsdialog.cpp:55
 #, fuzzy
 msgid "Invitation"
 msgstr "Trefnu &Gwahoddiadau"
@@ -96,26 +91,31 @@ msgstr ""
 "cyfrinair parhaol ar gyfer Rhannu Penbwrdd, caniatewch \"Cysylltiadau "
 "Anwahoddedig\" yn y ffurfweddiad.\">Rhagor ynglyn â gwahoddiadau...</a>"
 
-#: krfbserver.cpp:194 krfbserver.cpp:214
+#: krfbconnectioncontroller.cpp:97
+#, fuzzy, kde-format
+#| msgid "Accepted uninvited connection from %1"
+msgid "Refused uninvited connection attempt from %1"
+msgstr "Derbynwyd cysylltiad anwahoddedig o %1"
+
+#: krfbconnectioncontroller.cpp:108
+#, kde-format
+msgid "Accepted uninvited connection from %1"
+msgstr "Derbynwyd cysylltiad anwahoddedig o %1"
+
+#: krfbconnectioncontroller.cpp:116
+#, kde-format
+msgid "Received connection from %1, on hold (waiting for confirmation)"
+msgstr "Derbynwyd cysylltiad o %1, wedi' ddal (yn aros am wiriad)"
+
+#: krfbconnectioncontroller.cpp:159 krfbconnectioncontroller.cpp:163
+#, kde-format
+msgid "Failed login attempt from %1: wrong password"
+msgstr "Cais mewngofnodi methedig o %1: cyfrinair anghywir"
+
+#: krfbserver.cpp:60 krfbserver.cpp:65
 #, kde-format
 msgid "%1@%2 (shared desktop)"
 msgstr "%1@%2 (Penbwrdd wedi'i Rannu)"
-
-#: krfbserver.cpp:207
-msgid "Address already in use"
-msgstr ""
-
-#: krfbserver.cpp:302
-msgid ""
-"Your X11 Server does not support the required XTest extension version 2.2. "
-"Sharing your desktop is not possible."
-msgstr ""
-"Nid yw'ch Gweinydd X11 yn cynnal yr estyniad XTest angenrheidiol fersiwn "
-"2.2. Nid yw rhannu'ch penbwrdd yn bosib."
-
-#: krfbserver.cpp:303
-msgid "Desktop Sharing Error"
-msgstr "Gwall Rhannu Penbwrdd"
 
 #: main.cpp:40
 msgid "VNC-compatible server to share KDE desktops"
@@ -216,7 +216,7 @@ msgstr "Datweithredoli cefndir KDesktop"
 msgid "Do not show the invitations management dialog at startup"
 msgstr ""
 
-#: manageinvitationsdialog.cpp:95
+#: manageinvitationsdialog.cpp:93
 #, fuzzy
 msgid ""
 "An invitation creates a one-time password that allows the receiver to "
@@ -246,7 +246,7 @@ msgstr ""
 "cyfrinair parhaol ar gyfer Rhannu Penbwrdd, caniatewch \"Cysylltiadau "
 "Anwahoddedig\" yn y ffurfweddiad.\">Rhagor ynglyn â gwahoddiadau...</a>"
 
-#: manageinvitationsdialog.cpp:117
+#: manageinvitationsdialog.cpp:115
 #, fuzzy
 msgid ""
 "When sending an invitation by email, note that everybody who reads this "
@@ -261,15 +261,15 @@ msgstr ""
 " Dylech naill ai gêl-ysgrifo'r ebost neu o leiaf ei anfon mewn rhwydwaith "
 "diogel yn unig, ac nid dros y Rhyngrwyd."
 
-#: manageinvitationsdialog.cpp:122
+#: manageinvitationsdialog.cpp:120
 msgid "Send Invitation via Email"
 msgstr "Anfon Gwahoddiad trwy Ebost"
 
-#: manageinvitationsdialog.cpp:143
+#: manageinvitationsdialog.cpp:141
 msgid "Desktop Sharing (VNC) invitation"
 msgstr "Gwahoddiad Rhannu Bwrdd Gwaith (VNC)"
 
-#: manageinvitationsdialog.cpp:144
+#: manageinvitationsdialog.cpp:142
 #, fuzzy, kde-format
 #| msgid ""
 #| "You have been invited to a VNC session. If you have the KDE Remote "
@@ -319,25 +319,25 @@ msgstr ""
 " \n"
 " Am resymau diogelwch daw'r gwahoddiad yma i ben am %9."
 
-#: manageinvitationsdialog.cpp:182
+#: manageinvitationsdialog.cpp:180
 msgid "Network"
 msgstr ""
 
-#: manageinvitationsdialog.cpp:183
+#: manageinvitationsdialog.cpp:181
 msgid "Security"
 msgstr ""
 
-#: manageinvitationsdialog.cpp:192
+#: manageinvitationsdialog.cpp:190
 msgid "<qt>Are you sure you want to delete all invitations?</qt>"
 msgstr ""
 
-#: manageinvitationsdialog.cpp:193 manageinvitationsdialog.cpp:209
+#: manageinvitationsdialog.cpp:191 manageinvitationsdialog.cpp:207
 #, fuzzy
 #| msgid "Delete all invitations"
 msgid "Confirm delete Invitations"
 msgstr "Dileu pob gwahoddiad"
 
-#: manageinvitationsdialog.cpp:208
+#: manageinvitationsdialog.cpp:206
 msgid "<qt>Are you sure you want to delete this invitation?</qt>"
 msgstr ""
 
@@ -752,31 +752,31 @@ msgstr "Derbynwyd cysylltiad anwahoddedig o %1"
 msgid "Preferred Frame Buffer Plugin"
 msgstr ""
 
-#: trayicon.cpp:39 trayicon.cpp:91
+#: trayicon.cpp:38 trayicon.cpp:90
 msgid "Desktop Sharing - disconnected"
 msgstr "Rhannu Bwrdd Gwaith - datgysylltwyd"
 
-#: trayicon.cpp:48
+#: trayicon.cpp:47
 msgid "Enable Remote Control"
 msgstr "Galluogi Rheolaeth Pell"
 
-#: trayicon.cpp:49
+#: trayicon.cpp:48
 #, fuzzy
 msgid "Disable Remote Control"
 msgstr "Galluogi Rheolaeth Pell"
 
-#: trayicon.cpp:79
+#: trayicon.cpp:78
 #, fuzzy, kde-format
 #| msgid "The remote user has closed the connection."
 msgid "The remote user %1 is now connected."
 msgstr "Ceuodd y defnyddiwr pell y cysylltiad."
 
-#: trayicon.cpp:81
+#: trayicon.cpp:80
 #, kde-format
 msgid "Desktop Sharing - connected with %1"
 msgstr "Rhannu Bwrdd Gwaith - Cysylltwyd gyda %1"
 
-#: trayicon.cpp:93
+#: trayicon.cpp:92
 msgid "The remote user has closed the connection."
 msgstr "Ceuodd y defnyddiwr pell y cysylltiad."
 
