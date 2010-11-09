@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdegraphics/ksnapshot.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-10-30 06:14+0200\n"
+"POT-Creation-Date: 2010-11-09 07:02+0100\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgid ""
 "or double click. Press Esc to quit."
 msgstr ""
 
-#: kbackgroundsnapshot.cpp:91 ksnapshot.cpp:228
+#: kbackgroundsnapshot.cpp:91 ksnapshot.cpp:239
 msgid "snapshot"
 msgstr ""
 
@@ -57,15 +57,19 @@ msgstr "KCiplun"
 msgid "(c) 2007, Montel Laurent"
 msgstr ""
 
-#: ksnapshot.cpp:98
+#: kipiaction.cpp:49 main.cpp:38
+msgid "KSnapshot"
+msgstr "KCiplun"
+
+#: ksnapshot.cpp:103
 msgid "Copy"
 msgstr ""
 
-#: ksnapshot.cpp:99
-msgid "Open With..."
+#: ksnapshot.cpp:104
+msgid "Send To..."
 msgstr ""
 
-#: ksnapshot.cpp:128
+#: ksnapshot.cpp:133
 #, fuzzy
 #| msgid " sec"
 msgid " second"
@@ -73,40 +77,50 @@ msgid_plural " seconds"
 msgstr[0] "eil"
 msgstr[1] "eil"
 
-#: ksnapshot.cpp:237
+#: ksnapshot.cpp:248
 msgid "Quick Save Snapshot &As..."
 msgstr ""
 
-#: ksnapshot.cpp:238
+#: ksnapshot.cpp:249
 msgid ""
 "Save the snapshot to the file specified by the user without showing the file "
 "dialog."
 msgstr ""
 
-#: ksnapshot.cpp:240
+#: ksnapshot.cpp:251
 msgid "Save Snapshot &As..."
 msgstr "Cadw'r Ciplun &Fel..."
 
-#: ksnapshot.cpp:241
+#: ksnapshot.cpp:252
 msgid "Save the snapshot to the file specified by the user."
 msgstr ""
 
-#: ksnapshot.cpp:304
+#: ksnapshot.cpp:315
 #, fuzzy
 msgid "Save As"
 msgstr "&Cadw Fel..."
 
-#: ksnapshot.cpp:481
+#: ksnapshot.cpp:506
 msgid "Other Application..."
 msgstr ""
 
-#: ksnapshot.cpp:589
+#: ksnapshot.cpp:614
 msgid "The screen has been successfully grabbed."
 msgstr "Mae'r sgrin wedi'i gipio'n lwyddiannus."
 
-#: ksnapshot.cpp:762
+#: ksnapshot.cpp:787
 #, kde-format
 msgid "Preview of the snapshot image (%1 x %2)"
+msgstr ""
+
+#: ksnapshotjobtracker.cpp:60
+msgctxt "Used to join urls"
+msgid ", "
+msgstr ""
+
+#: ksnapshotjobtracker.cpp:60
+#, kde-format
+msgid "Done: %1"
 msgstr ""
 
 #: ksnapshotobject.cpp:112
@@ -148,10 +162,6 @@ msgstr ""
 #: main.cpp:34
 msgid "KDE Screenshot Utility"
 msgstr "Defnyddioldeb Sgrinlun KDE"
-
-#: main.cpp:38
-msgid "KSnapshot"
-msgstr "KCiplun"
 
 #: main.cpp:40
 msgid ""
@@ -285,15 +295,15 @@ msgstr "Ffenestr Dan y Cyrchydd"
 #. i18n: file: ksnapshotwidget.ui:129
 #. i18n: ectx: property (text), item, widget (QComboBox, comboMode)
 #: rc.cpp:37
-msgid "Region"
-msgstr "Ardal"
+msgid "Rectangular Region"
+msgstr ""
 
 #. i18n: file: ksnapshotwidget.ui:134
 #. i18n: ectx: property (text), item, widget (QComboBox, comboMode)
 #: rc.cpp:40
 #, fuzzy
 #| msgid "Region"
-msgid "Free Region"
+msgid "Freehand Region"
 msgstr "Ardal"
 
 #. i18n: file: ksnapshotwidget.ui:139
@@ -398,6 +408,9 @@ msgid "Snapshot will be taken in 1 second"
 msgid_plural "Snapshot will be taken in %1 seconds"
 msgstr[0] "Saib ciplunio mewn eiliadau"
 msgstr[1] "Saib ciplunio mewn eiliadau"
+
+#~ msgid "Region"
+#~ msgstr "Ardal"
 
 #~ msgid ""
 #~ "Click this button to save the current snapshot. To quickly save the "
