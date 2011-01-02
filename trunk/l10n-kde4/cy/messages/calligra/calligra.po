@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-30 02:59+0100\n"
+"POT-Creation-Date: 2011-01-02 03:00+0100\n"
 "PO-Revision-Date: 2004-09-07 14:22+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -74,6 +74,7 @@ msgid "Paste Shapes"
 msgstr "Creu Patrymlun"
 
 #: flake/KoToolBase.cpp:175 flake/KoToolManager.cpp:350
+#: main/KoToolDocker.cpp:205
 #, fuzzy
 msgid "Tool Options"
 msgstr "Gair Cwblhad"
@@ -453,7 +454,7 @@ msgstr ""
 msgid "Script Manager"
 msgstr "Rheolydd Arddull"
 
-#: kokross/KoScriptManager.cpp:299 main/KoMainWindow.cpp:592
+#: kokross/KoScriptManager.cpp:299 main/KoMainWindow.cpp:595
 #, fuzzy
 msgid "Save"
 msgstr "Ton"
@@ -574,7 +575,7 @@ msgstr "Wedi'i lwytho"
 msgid "Reparent shapes"
 msgstr "Dileu Testun"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:95 main/KoMainWindow.cpp:1687
+#: kopageapp/KoPADocumentStructureDocker.cpp:95 main/KoMainWindow.cpp:1700
 msgid "Document"
 msgstr "Dogfen"
 
@@ -716,113 +717,6 @@ msgid "Paste Page"
 msgid_plural "Paste Pages"
 msgstr[0] "Gludo Testun"
 msgstr[1] "Gludo Testun"
-
-#: kopageapp/KoPAView.cpp:239 main/KoToolBoxFactory.cpp:36
-#, fuzzy
-msgid "Tools"
-msgstr "Lliw Rhagosodol"
-
-#: kopageapp/KoPAView.cpp:276
-#, fuzzy
-msgid "D&elete"
-msgstr "Dileu Testun"
-
-#: kopageapp/KoPAView.cpp:287
-msgid "Snap to Grid"
-msgstr ""
-
-#: kopageapp/KoPAView.cpp:297
-msgid "Show Master Pages"
-msgstr ""
-
-#: kopageapp/KoPAView.cpp:301
-msgid "Show Rulers"
-msgstr ""
-
-#: kopageapp/KoPAView.cpp:303
-msgid "Show/hide the view's rulers"
-msgstr ""
-
-#: kopageapp/KoPAView.cpp:307
-#, fuzzy
-msgid "Insert Page"
-msgstr "Mewnosod Testun"
-
-#: kopageapp/KoPAView.cpp:309 kopageapp/KoPAView.cpp:310
-msgid "Insert a new page after the current one"
-msgstr ""
-
-#: kopageapp/KoPAView.cpp:313
-#, fuzzy
-#| msgid "Company Name"
-msgid "Copy Page"
-msgstr "Enw Cwmni"
-
-#: kopageapp/KoPAView.cpp:315 kopageapp/KoPAView.cpp:316
-msgid "Copy the current page"
-msgstr ""
-
-#: kopageapp/KoPAView.cpp:319
-#, fuzzy
-msgid "Delete Page"
-msgstr "Dileu Testun"
-
-#: kopageapp/KoPAView.cpp:322 kopageapp/KoPAView.cpp:323
-#, fuzzy
-msgid "Delete the current page"
-msgstr "Dileu Testun"
-
-#: kopageapp/KoPAView.cpp:326
-#, fuzzy
-#| msgid "Paste Text"
-msgid "Master Page..."
-msgstr "Gludo Testun"
-
-#: kopageapp/KoPAView.cpp:330
-msgid "Page Layout..."
-msgstr "Haenlun y Dudalen..."
-
-#. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:63
-#. i18n: ectx: property (text), widget (QTableWidget, variables)
-#: kopageapp/KoPAView.cpp:339 rc.cpp:317
-msgid "Variable"
-msgstr "Newidyn"
-
-#: kopageapp/KoPAView.cpp:344
-#, fuzzy
-#| msgid "Import Document"
-msgid "Import Document..."
-msgstr "Mewnforio Dogfen"
-
-#: kopageapp/KoPAView.cpp:348
-msgid "Configure..."
-msgstr ""
-
-#: kopageapp/KoPAView.cpp:401
-#, fuzzy
-msgid "Import Slideshow"
-msgstr "Mewnforio Arddull"
-
-#: kopageapp/KoPAView.cpp:404 main/KoMainWindow.cpp:1204
-msgid "Import Document"
-msgstr "Mewnforio Dogfen"
-
-#: kopageapp/KoPAView.cpp:433 kopageapp/KoPAView.cpp:437
-#, fuzzy, kde-format
-#| msgid ""
-#| "Could not open\n"
-#| "%1"
-msgid ""
-"Could not import\n"
-"%1"
-msgstr ""
-"Methwyd agor\n"
-" %1"
-
-#: kopageapp/KoPAView.cpp:541
-#, fuzzy
-msgid "Change page layout"
-msgstr "Newid Tablydd"
 
 #: kopageapp/commands/KoPAChangeMasterPageCommand.cpp:35
 #, fuzzy
@@ -982,6 +876,113 @@ msgstr "Dewisiadau Fformatio"
 #, fuzzy
 msgid "Change background image"
 msgstr "Eiliad"
+
+#: kopageapp/KoPAView.cpp:239 main/KoToolBoxFactory.cpp:36
+#, fuzzy
+msgid "Tools"
+msgstr "Lliw Rhagosodol"
+
+#: kopageapp/KoPAView.cpp:276
+#, fuzzy
+msgid "D&elete"
+msgstr "Dileu Testun"
+
+#: kopageapp/KoPAView.cpp:287
+msgid "Snap to Grid"
+msgstr ""
+
+#: kopageapp/KoPAView.cpp:297
+msgid "Show Master Pages"
+msgstr ""
+
+#: kopageapp/KoPAView.cpp:301
+msgid "Show Rulers"
+msgstr ""
+
+#: kopageapp/KoPAView.cpp:303
+msgid "Show/hide the view's rulers"
+msgstr ""
+
+#: kopageapp/KoPAView.cpp:307
+#, fuzzy
+msgid "Insert Page"
+msgstr "Mewnosod Testun"
+
+#: kopageapp/KoPAView.cpp:309 kopageapp/KoPAView.cpp:310
+msgid "Insert a new page after the current one"
+msgstr ""
+
+#: kopageapp/KoPAView.cpp:313
+#, fuzzy
+#| msgid "Company Name"
+msgid "Copy Page"
+msgstr "Enw Cwmni"
+
+#: kopageapp/KoPAView.cpp:315 kopageapp/KoPAView.cpp:316
+msgid "Copy the current page"
+msgstr ""
+
+#: kopageapp/KoPAView.cpp:319
+#, fuzzy
+msgid "Delete Page"
+msgstr "Dileu Testun"
+
+#: kopageapp/KoPAView.cpp:322 kopageapp/KoPAView.cpp:323
+#, fuzzy
+msgid "Delete the current page"
+msgstr "Dileu Testun"
+
+#: kopageapp/KoPAView.cpp:326
+#, fuzzy
+#| msgid "Paste Text"
+msgid "Master Page..."
+msgstr "Gludo Testun"
+
+#: kopageapp/KoPAView.cpp:330
+msgid "Page Layout..."
+msgstr "Haenlun y Dudalen..."
+
+#. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:63
+#. i18n: ectx: property (text), widget (QTableWidget, variables)
+#: kopageapp/KoPAView.cpp:339 rc.cpp:317
+msgid "Variable"
+msgstr "Newidyn"
+
+#: kopageapp/KoPAView.cpp:344
+#, fuzzy
+#| msgid "Import Document"
+msgid "Import Document..."
+msgstr "Mewnforio Dogfen"
+
+#: kopageapp/KoPAView.cpp:348
+msgid "Configure..."
+msgstr ""
+
+#: kopageapp/KoPAView.cpp:401
+#, fuzzy
+msgid "Import Slideshow"
+msgstr "Mewnforio Arddull"
+
+#: kopageapp/KoPAView.cpp:404 main/KoMainWindow.cpp:1211
+msgid "Import Document"
+msgstr "Mewnforio Dogfen"
+
+#: kopageapp/KoPAView.cpp:433 kopageapp/KoPAView.cpp:437
+#, fuzzy, kde-format
+#| msgid ""
+#| "Could not open\n"
+#| "%1"
+msgid ""
+"Could not import\n"
+"%1"
+msgstr ""
+"Methwyd agor\n"
+" %1"
+
+#: kopageapp/KoPAView.cpp:541
+#, fuzzy
+msgid "Change page layout"
+msgstr "Newid Tablydd"
 
 #. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1508,6 +1509,16 @@ msgstr "Fformat Dyddiad"
 msgid "Default"
 msgstr "&Rhagosodyn"
 
+#: kotext/commands/DeleteTableColumnCommand.cpp:39
+#, fuzzy
+msgid "Delete Column"
+msgstr "Dileu Testun"
+
+#: kotext/commands/DeleteTableRowCommand.cpp:39
+#, fuzzy
+msgid "Delete Row"
+msgstr "Dileu Testun"
+
 #: kotext/KoTextEditor.cpp:435 kotext/KoTextEditor.cpp:440
 msgid "Bold"
 msgstr "Trwm"
@@ -1675,16 +1686,6 @@ msgstr ""
 msgid "Line Break"
 msgstr "Newid Ffiniau"
 
-#: kotext/commands/DeleteTableColumnCommand.cpp:39
-#, fuzzy
-msgid "Delete Column"
-msgstr "Dileu Testun"
-
-#: kotext/commands/DeleteTableRowCommand.cpp:39
-#, fuzzy
-msgid "Delete Row"
-msgstr "Dileu Testun"
-
 #: main/KoApplication.cpp:77
 msgid "Only print and exit"
 msgstr "Argraffu a terfynu yn unig"
@@ -1746,6 +1747,10 @@ msgstr "Methwyd patrymlun %1 lwytho"
 #: main/KoApplicationAdaptor.cpp:50
 #, kde-format
 msgid "Unknown Calligra MimeType %1. Check your installation."
+msgstr ""
+
+#: main/KoDockerManager.cpp:68
+msgid "Tool Bars Docker"
 msgstr ""
 
 #: main/KoDocument.cpp:503
@@ -1824,7 +1829,7 @@ msgstr ""
 "Mae ffeil wedi'i hunangadw yn bodoli ar gyfer y ddogfen hon.\n"
 " Ydych chi am ei agor yn ei lle?"
 
-#: main/KoDocument.cpp:1279 main/KoDocument.cpp:1546 main/KoMainWindow.cpp:635
+#: main/KoDocument.cpp:1279 main/KoDocument.cpp:1546 main/KoMainWindow.cpp:638
 #, kde-format
 msgid "The file %1 does not exist."
 msgstr "Nid yw'r ffeil %1 yn bodoli!."
@@ -1955,13 +1960,13 @@ msgid ""
 "an old version."
 msgstr ""
 
-#: main/KoDocument.cpp:1924 main/KoMainWindow.cpp:1132
+#: main/KoDocument.cpp:1924 main/KoMainWindow.cpp:1139
 #: pigment/resources/KoColorSet.cpp:214
 #, fuzzy
 msgid "Untitled"
 msgstr "Teitl"
 
-#: main/KoDocument.cpp:1927 main/KoMainWindow.cpp:1135
+#: main/KoDocument.cpp:1927 main/KoMainWindow.cpp:1142
 #, kde-format
 msgid ""
 "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save it?"
@@ -2039,7 +2044,7 @@ msgstr "Methu llwytho gwrthrych caeth."
 msgid "Unknown"
 msgstr "Anhysbys"
 
-#: main/KoDocumentInfoDlg.cpp:90 main/KoMainWindow.cpp:283
+#: main/KoDocumentInfoDlg.cpp:90 main/KoMainWindow.cpp:287
 msgid "Document Information"
 msgstr "Gwybodaeth Ddogfen"
 
@@ -2144,7 +2149,7 @@ msgid ""
 "document now?</qt>"
 msgstr ""
 
-#: main/KoDocumentInfoDlg.cpp:489 main/KoMainWindow.cpp:757
+#: main/KoDocumentInfoDlg.cpp:489 main/KoMainWindow.cpp:760
 #, kde-format
 msgid "%1 (unknown file type)"
 msgstr "%1 (math anhybys o ffeil)"
@@ -2195,7 +2200,7 @@ msgstr ""
 msgid "No"
 msgstr "Nodiad"
 
-#: main/KoExistingDocumentPane.cpp:44 main/KoMainWindow.cpp:1202
+#: main/KoExistingDocumentPane.cpp:44 main/KoMainWindow.cpp:1209
 #: main/KoOpenPane.cpp:358 main/KoOpenPane.cpp:362
 msgid "Open Document"
 msgstr "Agor Dogfen"
@@ -2255,87 +2260,87 @@ msgstr "Cyfeiryddion"
 msgid "Shows or hides grid"
 msgstr ""
 
-#: main/KoMainWindow.cpp:154
+#: main/KoMainWindow.cpp:158
 #, fuzzy, kde-format
 msgid "%1 unsaved document (%2)"
 msgstr "Cadw'r Ddogfen Fel"
 
-#: main/KoMainWindow.cpp:255
+#: main/KoMainWindow.cpp:259
 #, fuzzy
 #| msgid "E&xport..."
 msgid "Export as PDF..."
 msgstr "&Allforio..."
 
-#: main/KoMainWindow.cpp:265
+#: main/KoMainWindow.cpp:269
 #, fuzzy
 msgid "Reload"
 msgstr "Lawrlwytho"
 
-#: main/KoMainWindow.cpp:269
+#: main/KoMainWindow.cpp:273
 msgid "Versions..."
 msgstr ""
 
-#: main/KoMainWindow.cpp:273
+#: main/KoMainWindow.cpp:277
 msgid "I&mport..."
 msgstr "&Mewnforio..."
 
-#: main/KoMainWindow.cpp:277
+#: main/KoMainWindow.cpp:281
 msgid "E&xport..."
 msgstr "&Allforio..."
 
-#: main/KoMainWindow.cpp:308
+#: main/KoMainWindow.cpp:312
 msgid "&Close All Views"
 msgstr "&Cau Pob Golwg"
 
-#: main/KoMainWindow.cpp:315
+#: main/KoMainWindow.cpp:319
 msgid "&Split View"
 msgstr "Golwg wedi'i &Hollti"
 
-#: main/KoMainWindow.cpp:320
+#: main/KoMainWindow.cpp:324
 msgid "&Remove View"
 msgstr "G&waredu Golwg"
 
-#: main/KoMainWindow.cpp:326
+#: main/KoMainWindow.cpp:330
 msgid "Full Screen Mode"
 msgstr ""
 
-#: main/KoMainWindow.cpp:331
+#: main/KoMainWindow.cpp:335
 msgid "Splitter &Orientation"
 msgstr "Cyfeiriadaeth H&olltydd"
 
-#: main/KoMainWindow.cpp:335
+#: main/KoMainWindow.cpp:339
 msgid "&Horizontal"
 msgstr "&Llorweddol"
 
-#: main/KoMainWindow.cpp:335
+#: main/KoMainWindow.cpp:339
 msgid "&Vertical"
 msgstr "&Fertigol"
 
-#: main/KoMainWindow.cpp:343
+#: main/KoMainWindow.cpp:347
 msgid "Show Dockers"
 msgstr ""
 
-#: main/KoMainWindow.cpp:344
+#: main/KoMainWindow.cpp:348
 #, fuzzy
 #| msgid "Guide Lines"
 msgid "Hide Dockers"
 msgstr "Cyfeiryddion"
 
-#: main/KoMainWindow.cpp:351
+#: main/KoMainWindow.cpp:355
 msgid "Dockers"
 msgstr ""
 
-#: main/KoMainWindow.cpp:586
+#: main/KoMainWindow.cpp:589
 #, fuzzy
 msgid "(write protected)"
 msgstr "atal ysgrifennu"
 
-#: main/KoMainWindow.cpp:590
+#: main/KoMainWindow.cpp:593
 #, kde-format
 msgid "Save as %1"
 msgstr "Cadw e %1"
 
-#: main/KoMainWindow.cpp:765
+#: main/KoMainWindow.cpp:768
 #, kde-format
 msgid ""
 "<qt>Saving as a %1 may result in some loss of formatting.<p>Do you still "
@@ -2344,11 +2349,11 @@ msgstr ""
 "<qt>Gall gadw fel %1 achosi colled fformatio.<p>Ydych am gadw yn y fformat "
 "hwn serch hynny?</qt>"
 
-#: main/KoMainWindow.cpp:768
+#: main/KoMainWindow.cpp:771
 msgid "Confirm Save"
 msgstr "Cadarnhau Cadw"
 
-#: main/KoMainWindow.cpp:777
+#: main/KoMainWindow.cpp:780
 #, kde-format
 msgid ""
 "<qt>Exporting as a %1 may result in some loss of formatting.<p>Do you still "
@@ -2357,24 +2362,24 @@ msgstr ""
 "<qt>Gall allforio fel %1 achosi colled fformatio.<p>Ydych am allforio i'r "
 "fformat hwn serch hynny?</qt>"
 
-#: main/KoMainWindow.cpp:780
+#: main/KoMainWindow.cpp:783
 msgid "Confirm Export"
 msgstr "Cadarnhau Allforio"
 
-#: main/KoMainWindow.cpp:781
+#: main/KoMainWindow.cpp:784
 #, fuzzy
 msgid "Export"
 msgstr "&Allforio..."
 
-#: main/KoMainWindow.cpp:864
+#: main/KoMainWindow.cpp:867
 msgid "Save Document As"
 msgstr "Cadw'r Ddogfen Fel"
 
-#: main/KoMainWindow.cpp:866
+#: main/KoMainWindow.cpp:869
 msgid "Export Document As"
 msgstr "Allforio'r Ddogfen Fel"
 
-#: main/KoMainWindow.cpp:924 main/KoMainWindow.cpp:1337
+#: main/KoMainWindow.cpp:927 main/KoMainWindow.cpp:1344
 msgid ""
 "A document with this name already exists.\n"
 "Do you want to overwrite it?"
@@ -2382,32 +2387,32 @@ msgstr ""
 "Mae dogfen efo'r enw hwn yn bodoli eisoes.\n"
 "Ydych eisiau ei throsysgrifo?"
 
-#: main/KoMainWindow.cpp:926 main/KoMainWindow.cpp:1339
-#: main/KoMainWindow.cpp:1727
+#: main/KoMainWindow.cpp:929 main/KoMainWindow.cpp:1346
+#: main/KoMainWindow.cpp:1740
 #, fuzzy
 msgid "Warning"
 msgstr "Oren Tywyll"
 
-#: main/KoMainWindow.cpp:1331
+#: main/KoMainWindow.cpp:1338
 msgid "Write PDF"
 msgstr ""
 
-#: main/KoMainWindow.cpp:1621
+#: main/KoMainWindow.cpp:1632
 #, kde-format
 msgid "Show %1 Toolbar"
 msgstr "Dangos Bar Offer %1"
 
-#: main/KoMainWindow.cpp:1623
+#: main/KoMainWindow.cpp:1634
 #, kde-format
 msgid "Hide %1 Toolbar"
 msgstr "Cuddio Bar Offer %1"
 
-#: main/KoMainWindow.cpp:1695
+#: main/KoMainWindow.cpp:1708
 #, fuzzy, kde-format
 msgid "Document - %1"
 msgstr "Teitl Dogfen"
 
-#: main/KoMainWindow.cpp:1725
+#: main/KoMainWindow.cpp:1738
 #, fuzzy
 #| msgid ""
 #| "You will lose all your changes!\n"
@@ -2602,6 +2607,14 @@ msgstr "Dim llun ar gael."
 #, fuzzy
 msgid "Use This Template"
 msgstr "Creu Patrymlun"
+
+#: main/KoToolDocker.cpp:232
+msgid "Toggles showing a title bar"
+msgstr ""
+
+#: main/KoToolDocker.cpp:241
+msgid "Toggles organising the options in tabs or not"
+msgstr ""
 
 #: main/KoVersionDialog.cpp:48
 msgid "Version"
