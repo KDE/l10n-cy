@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-08 03:05+0100\n"
+"POT-Creation-Date: 2011-01-09 03:03+0100\n"
 "PO-Revision-Date: 2004-07-06 17:18+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -3157,6 +3157,7 @@ msgstr "Lluosi"
 #. i18n: file: ui/forms/wdgshapeoptions.ui:66
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbFill)
 #: rc.cpp:861 rc.cpp:4013
+#: plugins/paintops/libpaintop/kis_color_source_option.cpp:57
 msgid "Pattern"
 msgstr "Patrwm"
 
@@ -3933,6 +3934,7 @@ msgstr "Dull cyfansawdd:"
 #. i18n: file: plugins/extensions/separate_channels/wdg_separations.ui:43
 #. i18n: ectx: property (title), widget (QGroupBox, grpSource)
 #: rc.cpp:1219
+#: plugins/paintops/libpaintop/kis_color_source_option_widget.cpp:37
 msgid "Source"
 msgstr "Tarddiad"
 
@@ -4453,7 +4455,7 @@ msgstr "Radiws"
 #. i18n: file: plugins/paintops/spray/wdgshapedynamicsoptions.ui:42
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: rc.cpp:1399 rc.cpp:2400 rc.cpp:2954
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:42
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:43
 #: plugins/paintops/libpaintop/kis_pressure_rotation_option.cpp:27
 #, fuzzy
 msgid "Rotation"
@@ -6329,7 +6331,7 @@ msgstr "Dirlawnder"
 
 #. i18n: file: plugins/paintops/experiment/wdgexperimentoptions.ui:57
 #. i18n: ectx: property (text), widget (QCheckBox, speedCHBox)
-#: rc.cpp:2358 plugins/paintops/libpaintop/kis_dynamic_sensor.h:37
+#: rc.cpp:2358 plugins/paintops/libpaintop/kis_dynamic_sensor.h:38
 #, fuzzy
 #| msgid "Shape:"
 msgid "Speed"
@@ -6372,7 +6374,7 @@ msgstr "Dadleoli"
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeBox)
 #: rc.cpp:2373 rc.cpp:2442 rc.cpp:2751 rc.cpp:2975
 #: image/recorder/kis_recorded_shape_paint_action.cpp:54
-#: plugins/assistants/RulerAssistant/EllipseAssistant.cc:99
+#: plugins/assistants/RulerAssistant/EllipseAssistant.cc:101
 #: plugins/tools/defaulttools/kis_tool_ellipse.cc:68
 msgid "Ellipse"
 msgstr "Hirgylch"
@@ -7054,7 +7056,7 @@ msgstr "Cyfartaledd:"
 
 #. i18n: file: plugins/paintops/libpaintop/wdgautobrush.ui:155
 #. i18n: ectx: property (title), widget (QGroupBox, grpFade_2)
-#: rc.cpp:2682 plugins/paintops/libpaintop/kis_dynamic_sensor.h:38
+#: rc.cpp:2682 plugins/paintops/libpaintop/kis_dynamic_sensor.h:39
 #, fuzzy
 #| msgid "&Fade"
 msgid "Fade"
@@ -7301,7 +7303,7 @@ msgstr ""
 
 #. i18n: file: plugins/paintops/libpaintop/wdgcustombrush.ui:74
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
-#: rc.cpp:2815 plugins/paintops/libpaintop/kis_dynamic_sensor.h:43
+#: rc.cpp:2815 plugins/paintops/libpaintop/kis_dynamic_sensor.h:44
 msgid "Pressure"
 msgstr ""
 
@@ -7566,7 +7568,7 @@ msgstr "Dadleoli"
 
 #. i18n: file: plugins/paintops/spray/wdgshapedynamicsoptions.ui:132
 #. i18n: ectx: property (text), widget (QCheckBox, drawingAngle)
-#: rc.cpp:2969 plugins/paintops/libpaintop/kis_dynamic_sensor.h:41
+#: rc.cpp:2969 plugins/paintops/libpaintop/kis_dynamic_sensor.h:42
 #, fuzzy
 msgid "Drawing angle"
 msgstr "hirsgwâr"
@@ -10274,19 +10276,13 @@ msgstr "Ffeil(iau) neu URL(au) i'w hagor"
 msgid "Ruler assistant editor tool"
 msgstr "Gaussaidd :"
 
-#: plugins/assistants/RulerAssistant/EllipseAssistant.cc:33
-#, fuzzy
-#| msgid "Gaussian:"
-msgid "Ellipse assistant"
-msgstr "Gaussaidd :"
-
 #: plugins/assistants/RulerAssistant/PerspectiveAssistant.cc:34
 #, fuzzy
 msgid "Perspective assistant"
 msgstr "Erfyn Trawsffurfio"
 
 #: plugins/assistants/RulerAssistant/PerspectiveAssistant.cc:311
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:46
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:49
 #, fuzzy
 msgid "Perspective"
 msgstr "Erfyn Trawsffurfio"
@@ -10317,6 +10313,12 @@ msgstr "llinell"
 #: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.cc:420
 msgid "Errors were encountered. Not all assistants were successfully loaded."
 msgstr ""
+
+#: plugins/assistants/RulerAssistant/EllipseAssistant.cc:33
+#, fuzzy
+#| msgid "Gaussian:"
+msgid "Ellipse assistant"
+msgstr "Gaussaidd :"
 
 #: plugins/colorspaces/ctlcs/KoCtlCompositeOp.cpp:135
 #, fuzzy
@@ -11821,27 +11823,17 @@ msgstr "Brwsh"
 msgid "Color options"
 msgstr "Alffa"
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:36
-msgid "Fuzzy"
-msgstr ""
-
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:39
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.cc:29
+#: plugins/paintops/libpaintop/kis_curve_option.cpp:31
 #, fuzzy
-msgid "Distance"
-msgstr "Dadleoli"
+msgid "0.0"
+msgstr "100"
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:40
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.cc:30
+#: plugins/paintops/libpaintop/kis_curve_option.cpp:32
 #, fuzzy
-msgid "Time"
-msgstr "Mewnforio Delwedd"
-
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:44
-msgid "X-Tilt"
-msgstr ""
-
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:45
-msgid "Y-Tilt"
-msgstr ""
+msgid "1.0"
+msgstr "100"
 
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:95
 #, fuzzy
@@ -11859,17 +11851,37 @@ msgstr "Cylchdroi"
 msgid "Spacing: "
 msgstr "Bylchu : "
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.cc:28
-#: plugins/paintops/libpaintop/kis_curve_option.cpp:31
-#, fuzzy
-msgid "0.0"
-msgstr "100"
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:37
+msgid "Fuzzy"
+msgstr ""
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.cc:29
-#: plugins/paintops/libpaintop/kis_curve_option.cpp:32
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:40
 #, fuzzy
-msgid "1.0"
-msgstr "100"
+msgid "Distance"
+msgstr "Dadleoli"
+
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:41
+#, fuzzy
+msgid "Time"
+msgstr "Mewnforio Delwedd"
+
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:45
+msgid "X-Tilt"
+msgstr ""
+
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:46
+msgid "Y-Tilt"
+msgstr ""
+
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:47
+#, fuzzy
+msgid "Ascension"
+msgstr "Dimensiynau mewn &Picseli:"
+
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:48
+#, fuzzy
+msgid "Declination"
+msgstr "Disgrifiad:"
 
 #: plugins/paintops/libpaintop/kis_pressure_darken_option.cpp:27
 msgid "Darken"
@@ -11918,14 +11930,17 @@ msgid "Rate: "
 msgstr "Ail-adrodd: "
 
 #: plugins/paintops/libpaintop/kis_pressure_rotation_option.cpp:29
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:41
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:47
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:42
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:48
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:78
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:85
 msgid "0°"
 msgstr ""
 
 #: plugins/paintops/libpaintop/kis_pressure_rotation_option.cpp:30
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:42
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:48
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:43
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:49
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:79
 msgid "360°"
 msgstr ""
 
@@ -12009,46 +12024,75 @@ msgstr ""
 msgid "%1 s"
 msgstr ""
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:27
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:28
 #, fuzzy
 msgid "Slow"
 msgstr "&Cysgodion"
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:28
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:29
 #, fuzzy
 msgid "Fast"
 msgstr "&Hidl:"
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:59
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:60
 #, fuzzy
 #| msgid "Lower"
 msgid "Low"
 msgstr "Gostwng"
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:60
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:61
 #, fuzzy
 msgid "High"
 msgstr "Taldra:"
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:65
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:71
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:66
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:72
 msgid "-30°"
 msgstr ""
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:66
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:72
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:67
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:73
 msgid "30°"
 msgstr ""
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:77
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:84
+#, fuzzy
+msgid "90°"
+msgstr "Chwith:"
+
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:91
 #, fuzzy
 msgid "Far"
 msgstr "Haen"
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:78
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:92
 #, fuzzy
 msgid "Near"
 msgstr "Delwedd Newydd :"
+
+#: plugins/paintops/libpaintop/kis_color_source_option.cpp:53
+#, fuzzy
+msgid "Plain color"
+msgstr "Lliw Lab"
+
+#: plugins/paintops/libpaintop/kis_color_source_option.cpp:54
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:267
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:273
+msgid "Gradient"
+msgstr "Graddfa"
+
+#: plugins/paintops/libpaintop/kis_color_source_option.cpp:55
+msgid "Uniform random"
+msgstr ""
+
+#: plugins/paintops/libpaintop/kis_color_source_option.cpp:56
+msgid "Total random"
+msgstr ""
+
+#: plugins/paintops/libpaintop/kis_color_source_option.cpp:58
+#, fuzzy
+msgid "Locked pattern"
+msgstr "Defnyddio'r patrwm cyfredol"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:81
 msgid ""
@@ -12650,11 +12694,6 @@ msgstr ""
 #: plugins/tools/defaulttools/kis_tool_fill.h:91
 msgid "Fill a contiguous area of color with a color, or fill a selection."
 msgstr ""
-
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:267
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:273
-msgid "Gradient"
-msgstr "Graddfa"
 
 #: plugins/tools/defaulttools/kis_tool_gradient.cc:327
 msgid "Repeat:"
@@ -14659,11 +14698,6 @@ msgstr "Patrymau"
 #~ msgctxt "rotate image 90 degrees to the right"
 #~ msgid "Right 90°"
 #~ msgstr "De:"
-
-#, fuzzy
-#~ msgctxt "rotate image 90 degrees to the left"
-#~ msgid "Left 90°"
-#~ msgstr "Chwith:"
 
 #, fuzzy
 #~ msgctxt "rotate the layer 90 degrees to the right"
