@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kbruch\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-29 02:25+0100\n"
+"POT-Creation-Date: 2011-01-11 02:37+0100\n"
 "PO-Revision-Date: 2005-11-02 21:59+0000\n"
 "Last-Translator: Kevin Donnelly <kevin@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -24,15 +24,15 @@ msgstr "KBruch"
 msgid "Open standard KBruch"
 msgstr ""
 
-#: AppMenuWidget.cpp:126
-msgid "Freestyle"
+#: AppMenuWidget.cpp:126 mainqtwidget.cpp:86
+msgid "Exercise"
 msgstr ""
 
 #: AppMenuWidget.cpp:135
 msgid "Open learning KBruch"
 msgstr ""
 
-#: AppMenuWidget.cpp:141
+#: AppMenuWidget.cpp:141 FractionRingWidget.cpp:63
 msgid "Learning"
 msgstr ""
 
@@ -66,19 +66,20 @@ msgstr ""
 msgid "Click on this button to select the 'equals' sign."
 msgstr "Cliciwch ar y botwm yma i fynd i'r tasg nesaf."
 
-#: exercisecompare.cpp:131 exercisecompare.cpp:298 exerciseconvert.cpp:149
-#: exercisefactorize.cpp:177 exercisepercentage.cpp:131 taskview.cpp:167
+#: exercisecompare.cpp:131 exercisecompare.cpp:294 exerciseconvert.cpp:149
+#: exercisefactorize.cpp:175 ExerciseMixedNumbers.cpp:170
+#: exercisepercentage.cpp:131 taskview.cpp:166
 msgid "&Skip"
 msgstr ""
 
-#: exercisecompare.cpp:132 exerciseconvert.cpp:150 exercisefactorize.cpp:178
-#: exercisepercentage.cpp:132
+#: exercisecompare.cpp:132 exerciseconvert.cpp:150 exercisefactorize.cpp:176
+#: ExerciseMixedNumbers.cpp:171 exercisepercentage.cpp:132
 #, fuzzy
 #| msgid "Click on this button to check your result."
 msgid "Click on this button to skip this question."
 msgstr "Cliciwch ar y botwm yma i wirio'r canlyniad."
 
-#: exercisecompare.cpp:147
+#: exercisecompare.cpp:147 mainqtwidget.cpp:511
 #, fuzzy
 #| msgid "In this exercise you have to compare 2 given fractions."
 msgid "In this exercise you have to compare two given fractions."
@@ -92,37 +93,39 @@ msgid ""
 "correct comparison sign."
 msgstr "Yn yr ymarfer yma, rhaid i chi gymharu 2 ffracsiwn penodol."
 
-#: exercisecompare.cpp:263 exercisecompare.cpp:264 exercisecompare.cpp:265
+#: exercisecompare.cpp:260 exercisecompare.cpp:261 exercisecompare.cpp:262
 msgid "Click on this button to check your result."
 msgstr "Cliciwch ar y botwm yma i wirio'r canlyniad."
 
-#: exercisecompare.cpp:313 exercisecompare.cpp:327 exercisecompare.cpp:341
+#: exercisecompare.cpp:309 exercisecompare.cpp:323 exercisecompare.cpp:337
 #, fuzzy
 #| msgid "&New"
 msgid "&Next"
 msgstr "&Newydd"
 
-#: exerciseconvert.cpp:103 taskview.cpp:121
+#: exerciseconvert.cpp:103 taskview.cpp:120
 msgid "Enter the numerator of your result"
 msgstr "Rhowch rhifiadur eich canlyniad"
 
-#: exerciseconvert.cpp:121 taskview.cpp:139
+#: exerciseconvert.cpp:121 taskview.cpp:138
 msgid "Enter the denominator of your result"
 msgstr "Rhowch enwadur eich canlyniad"
 
-#: exerciseconvert.cpp:139 exerciseconvert.cpp:189 exerciseconvert.cpp:430
-#: exercisefactorize.cpp:186 exercisefactorize.cpp:292
-#: exercisefactorize.cpp:513 exercisepercentage.cpp:121
-#: exercisepercentage.cpp:175 exercisepercentage.cpp:405 taskview.cpp:157
-#: taskview.cpp:265 taskview.cpp:479
+#: exerciseconvert.cpp:139 exerciseconvert.cpp:188 exerciseconvert.cpp:425
+#: exercisefactorize.cpp:184 exercisefactorize.cpp:289
+#: exercisefactorize.cpp:502 ExerciseMixedNumbers.cpp:160
+#: ExerciseMixedNumbers.cpp:201 ExerciseMixedNumbers.cpp:258
+#: exercisepercentage.cpp:121 exercisepercentage.cpp:175
+#: exercisepercentage.cpp:403 taskview.cpp:156 taskview.cpp:261
+#: taskview.cpp:458
 #, fuzzy
 #| msgid "&Check Task"
 msgid "&Check"
 msgstr "&Gwirio Tasg"
 
-#: exerciseconvert.cpp:141 exerciseconvert.cpp:391 exercisefactorize.cpp:187
-#: exercisefactorize.cpp:415 exercisepercentage.cpp:123
-#: exercisepercentage.cpp:368
+#: exerciseconvert.cpp:141 exerciseconvert.cpp:387 exercisefactorize.cpp:185
+#: exercisefactorize.cpp:407 ExerciseMixedNumbers.cpp:162
+#: exercisepercentage.cpp:123 exercisepercentage.cpp:367
 msgid ""
 "Click on this button to check your result. The button will not work if you "
 "have not entered a result yet."
@@ -130,7 +133,7 @@ msgstr ""
 "Cliciwch ar y botwm yma i wirio eich canlyniad.  Ni fydd y botwm yn gweithio "
 "os nad ydych wedi rhoi canlyniad eto."
 
-#: exerciseconvert.cpp:160
+#: exerciseconvert.cpp:160 mainqtwidget.cpp:517
 msgid "In this exercise you have to convert a number into a fraction."
 msgstr "Yn yr ymarfer yma, rhaid i chi drosi rhif i ffracsiwn."
 
@@ -143,14 +146,14 @@ msgstr ""
 "Yn yr ymarfer yma, rhaid i chi drosi rhif i ffracsiwn gan roi rhifiadur ac "
 "enwadur.  Peidiwch ag anghofio lleihau'r canlyniad!"
 
-#: exerciseconvert.cpp:327 exercisefactorize.cpp:361
-#: exercisepercentage.cpp:334
+#: exerciseconvert.cpp:325 exercisefactorize.cpp:356
+#: exercisepercentage.cpp:333
 #, fuzzy
 #| msgid "Click on this button to get to the next task."
 msgid "Click on this button to get to the next question."
 msgstr "Cliciwch ar y botwm yma i fynd i'r tasg nesaf."
 
-#: exerciseconvert.cpp:374
+#: exerciseconvert.cpp:370
 #, fuzzy
 #| msgid ""
 #| "You entered a 0 as the denominator. This means division by zero, which is "
@@ -162,7 +165,7 @@ msgstr ""
 "Rydych wedi rhoi 0 fel yr enwadur.  Mae hyn yn golygu rhannu efo 0, sydd yn "
 "anghywir.  Bydd y dasg hon yn cael ei chyfrif fel heb ei datrys yn gywir."
 
-#: exerciseconvert.cpp:380
+#: exerciseconvert.cpp:376
 #, fuzzy
 #| msgid ""
 #| "You entered the correct result, but not reduced.\n"
@@ -177,90 +180,90 @@ msgstr ""
 "Rhowch eich canlyniadau wedi'u lleihau o hyd.  Bydd y dasg hon yn cael ei "
 "chyfrif fel heb ei datrys yn gywir."
 
-#: exerciseconvert.cpp:426 exercisefactorize.cpp:509
-#: exercisepercentage.cpp:401 taskview.cpp:475
+#: exerciseconvert.cpp:421 exercisefactorize.cpp:498
+#: ExerciseMixedNumbers.cpp:299 exercisepercentage.cpp:399 taskview.cpp:454
 #, fuzzy
 #| msgid "N&ext Task"
 msgid "N&ext"
 msgstr "Tasg &Nesaf"
 
-#: exercisefactorize.cpp:170
+#: exercisefactorize.cpp:168
 msgid "Backspace"
 msgstr ""
 
-#: exercisefactorize.cpp:214
+#: exercisefactorize.cpp:212
 msgid "2"
 msgstr "2"
 
-#: exercisefactorize.cpp:215
+#: exercisefactorize.cpp:213
 msgid "3"
 msgstr "3"
 
-#: exercisefactorize.cpp:216
+#: exercisefactorize.cpp:214
 msgid "5"
 msgstr "5"
 
-#: exercisefactorize.cpp:217
+#: exercisefactorize.cpp:215
 msgid "7"
 msgstr "7"
 
-#: exercisefactorize.cpp:218
+#: exercisefactorize.cpp:216
 msgid "11"
 msgstr "11"
 
-#: exercisefactorize.cpp:219
+#: exercisefactorize.cpp:217
 msgid "13"
 msgstr "13"
 
-#: exercisefactorize.cpp:220
+#: exercisefactorize.cpp:218
 msgid "17"
 msgstr "17"
 
-#: exercisefactorize.cpp:221
+#: exercisefactorize.cpp:219
 msgid "19"
 msgstr "19"
 
-#: exercisefactorize.cpp:232
+#: exercisefactorize.cpp:230
 msgid "Add prime factor 2."
 msgstr "Ychwanegu ffactor gysefin 2."
 
-#: exercisefactorize.cpp:233
+#: exercisefactorize.cpp:231
 msgid "Add prime factor 3."
 msgstr "Ychwanegu ffactor gysefin 3."
 
-#: exercisefactorize.cpp:234
+#: exercisefactorize.cpp:232
 msgid "Add prime factor 5."
 msgstr "Ychwanegu ffactor gysefin 5."
 
-#: exercisefactorize.cpp:235
+#: exercisefactorize.cpp:233
 msgid "Add prime factor 7."
 msgstr "Ychwanegu ffactor gysefin 7."
 
-#: exercisefactorize.cpp:236
+#: exercisefactorize.cpp:234
 msgid "Add prime factor 11."
 msgstr "Ychwanegu ffactor gysefin 11."
 
-#: exercisefactorize.cpp:237
+#: exercisefactorize.cpp:235
 msgid "Add prime factor 13."
 msgstr "Ychwanegu ffactor gysefin 13."
 
-#: exercisefactorize.cpp:238
+#: exercisefactorize.cpp:236
 msgid "Add prime factor 17."
 msgstr "Ychwanegu ffactor gysefin 17."
 
-#: exercisefactorize.cpp:239
+#: exercisefactorize.cpp:237
 msgid "Add prime factor 19."
 msgstr "Ychwanegu ffactor gysefin 19."
 
-#: exercisefactorize.cpp:244
+#: exercisefactorize.cpp:242
 msgid "Removes the last entered prime factor."
 msgstr "Gwaredu'r ffactor gysefin a roddwyd yn ddiwethaf."
 
-#: exercisefactorize.cpp:261
+#: exercisefactorize.cpp:259 mainqtwidget.cpp:529
 msgid "In this exercise you have to factorize a given number."
 msgstr "Yn yr ymarfer yma, rhaid i chi ffactorio rhif penodol."
 
-#: exercisefactorize.cpp:262
+#: exercisefactorize.cpp:260
 #, fuzzy
 msgid ""
 "In this exercise you have to factorize a given number. You have to enter all "
@@ -276,7 +279,100 @@ msgstr ""
 "maes mewnbwn.  Peidiwch ag anghofio rhoi pob ffactor gysefin, hyd yn oed pan "
 "mae ffactor gysefin yn ymddangos nifer o weithiau!"
 
-#: exercisepercentage.cpp:97 exercisepercentage.cpp:385
+#: ExerciseMixedNumbers.cpp:105 taskview.cpp:108
+#, fuzzy
+#| msgid "Change the color of the fraction bar"
+msgid "Enter the integer part of the fraction"
+msgstr "Newid lliw y bar ffracsiynau"
+
+#: ExerciseMixedNumbers.cpp:120
+#, fuzzy
+#| msgid "Change the color of the fraction bar"
+msgid "Enter the numerator of the fraction"
+msgstr "Newid lliw y bar ffracsiynau"
+
+#: ExerciseMixedNumbers.cpp:138
+#, fuzzy
+#| msgid "Change the color of the fraction bar"
+msgid "Enter the denomintor of the fraction"
+msgstr "Newid lliw y bar ffracsiynau"
+
+#: ExerciseMixedNumbers.cpp:177 mainqtwidget.cpp:523
+#, fuzzy
+#| msgid "In this exercise you have to convert a number into a fraction."
+msgid ""
+"In this exercise you have to convert a mixed number into a ratio and vice "
+"versa."
+msgstr "Yn yr ymarfer yma, rhaid i chi drosi rhif i ffracsiwn."
+
+#: ExerciseMixedNumbers.cpp:178
+#, fuzzy
+msgid ""
+"In this exercise you have to convert a mixed number into a ratio and vice "
+"versa. Do not forget to reduce the result."
+msgstr ""
+"Yn yr ymarfer yma, rhaid i chi drosi rhif i ffracsiwn gan roi rhifiadur ac "
+"enwadur.  Peidiwch ag anghofio lleihau'r canlyniad!"
+
+#: ExerciseMixedNumbers.cpp:257 taskview.cpp:158 taskview.cpp:399
+#, fuzzy
+#| msgid ""
+#| "Click on this button to check your result. The button will not work if "
+#| "you have not entered a result yet."
+msgid ""
+"Click this button to check your result. The button will not work if you have "
+"not entered a result yet."
+msgstr ""
+"Cliciwch ar y botwm yma i wirio eich canlyniad.  Ni fydd y botwm yn gweithio "
+"os nad ydych wedi rhoi canlyniad eto."
+
+#: ExerciseMixedNumbers.cpp:298 taskview.cpp:283
+#, fuzzy
+#| msgid "Click on this button to get to the next task."
+msgid "Click this button to get the next question."
+msgstr "Cliciwch ar y botwm yma i fynd i'r tasg nesaf."
+
+#: ExerciseMixedNumbers.cpp:352 taskview.cpp:372
+#, fuzzy
+#| msgid ""
+#| "You entered a 0 as the denominator. This means division by zero, which is "
+#| "not allowed. This task will be counted as not correctly solved."
+msgid ""
+"You entered 0 as the denominator. This means division by zero, which is not "
+"allowed. This question will be counted as not correctly solved."
+msgstr ""
+"Rydych wedi rhoi 0 fel yr enwadur.  Mae hyn yn golygu rhannu efo 0, sydd yn "
+"anghywir.  Bydd y dasg hon yn cael ei chyfrif fel heb ei datrys yn gywir."
+
+#: ExerciseMixedNumbers.cpp:359 taskview.cpp:382
+#, fuzzy
+#| msgid ""
+#| "You entered the correct result, but not reduced.\n"
+#| "Always enter your results as reduced. This task will be counted as not "
+#| "correctly solved."
+msgid ""
+"You entered the correct result, but not in the mixed number notation. This "
+"question will be counted as not correctly solved."
+msgstr ""
+"Rydych wedi rhoi'r canlyniad cywir, ond heb ei leihau.\n"
+"Rhowch eich canlyniadau wedi'u lleihau o hyd.  Bydd y dasg hon yn cael ei "
+"chyfrif fel heb ei datrys yn gywir."
+
+#: ExerciseMixedNumbers.cpp:362 taskview.cpp:379
+#, fuzzy
+#| msgid ""
+#| "You entered the correct result, but not reduced.\n"
+#| "Always enter your results as reduced. This task will be counted as not "
+#| "correctly solved."
+msgid ""
+"You entered the correct result, but not reduced. This question will be "
+"counted as not correctly solved."
+msgstr ""
+"Rydych wedi rhoi'r canlyniad cywir, ond heb ei leihau.\n"
+"Rhowch eich canlyniadau wedi'u lleihau o hyd.  Bydd y dasg hon yn cael ei "
+"chyfrif fel heb ei datrys yn gywir."
+
+#: exercisepercentage.cpp:97 exercisepercentage.cpp:384
 #, kde-format
 msgctxt "%1 percentage of %2"
 msgid "%1% of %2 = "
@@ -286,13 +382,19 @@ msgstr ""
 msgid "Enter the result of percentage question"
 msgstr ""
 
-#: exercisepercentage.cpp:146
+#: exercisepercentage.cpp:146 mainqtwidget.cpp:535
 #, fuzzy
 #| msgid "In this exercise you have to solve a given task with fractions."
 msgid "In this exercise you have to work with percentage questions."
 msgstr "Yn yr ymarfer yma, rhaid i chi ddatrys tasg benodol efo ffracsiynau."
 
-#: FractionRingWidget.cpp:113 FractionRingWidget.cpp:118
+#: exercisepercentage.cpp:147
+#, fuzzy
+#| msgid "In this exercise you have to factorize a given number."
+msgid "In this exercise you have to enter the fraction of the given number."
+msgstr "Yn yr ymarfer yma, rhaid i chi ffactorio rhif penodol."
+
+#: FractionRingWidget.cpp:115 FractionRingWidget.cpp:120
 msgctxt ""
 "Expands the ratio shown on the left by the given factor. Please note, "
 "expanding is not the same as multiplying. For example, expanding a ratio by "
@@ -300,36 +402,36 @@ msgctxt ""
 msgid "Expand"
 msgstr ""
 
-#: FractionRingWidget.cpp:144 mainqtwidget.cpp:494
+#: FractionRingWidget.cpp:146 mainqtwidget.cpp:490
 #, fuzzy
 #| msgid "&New"
 msgid "New"
 msgstr "&Newydd"
 
-#: FractionRingWidget.cpp:197 mainqtwidget.cpp:526
+#: FractionRingWidget.cpp:199 mainqtwidget.cpp:539
 #, fuzzy
 #| msgid "&New"
 msgctxt "@action opens a new question"
 msgid "&New"
 msgstr "&Newydd"
 
-#: FractionRingWidget.cpp:203 mainqtwidget.cpp:541
+#: FractionRingWidget.cpp:205 mainqtwidget.cpp:554
 msgctxt "@action go to the main screen"
 msgid "Back"
 msgstr ""
 
-#: FractionRingWidget.cpp:208
+#: FractionRingWidget.cpp:210
 msgctxt "@action opens hint"
 msgid "Hint"
 msgstr ""
 
 #. i18n: file: taskcolorsbase.ui:16
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: FractionRingWidget.cpp:236 mainqtwidget.cpp:795 rc.cpp:14
+#: FractionRingWidget.cpp:238 mainqtwidget.cpp:804 rc.cpp:14
 msgid "Colors"
 msgstr "Lliwiau"
 
-#: FractionRingWidget.cpp:364 FractionRingWidget.cpp:396
+#: FractionRingWidget.cpp:361 FractionRingWidget.cpp:389
 msgid ""
 "Now the parts of the inside ring and outside ring have the same size, and we "
 "can add the fractions!\n"
@@ -338,11 +440,11 @@ msgid ""
 "the rings into equal parts."
 msgstr ""
 
-#: FractionRingWidget.cpp:371 FractionRingWidget.cpp:403
+#: FractionRingWidget.cpp:367 FractionRingWidget.cpp:395
 msgid "There is a smaller main denominator. Can you find it?"
 msgstr ""
 
-#: FractionRingWidget.cpp:378
+#: FractionRingWidget.cpp:372
 #, kde-format
 msgid ""
 "You have just expanded the first fraction by %1. Our main goal is to make "
@@ -350,7 +452,7 @@ msgid ""
 "second fraction by %3."
 msgstr ""
 
-#: FractionRingWidget.cpp:410
+#: FractionRingWidget.cpp:400
 #, kde-format
 msgid ""
 "You have just expanded the second fraction by %1. Our main goal is to make "
@@ -358,7 +460,7 @@ msgid ""
 "second fraction by %3."
 msgstr ""
 
-#: FractionRingWidget.cpp:449
+#: FractionRingWidget.cpp:438
 #, kde-format
 msgctxt "Inserted as %1 in the message below."
 msgid "%2 of 1 painted part."
@@ -366,7 +468,7 @@ msgid_plural "%2 of %1 painted parts."
 msgstr[0] ""
 msgstr[1] ""
 
-#: FractionRingWidget.cpp:452
+#: FractionRingWidget.cpp:441
 #, kde-format
 msgctxt "Inserted as %2 in the message below."
 msgid "%2 of 1 painted part."
@@ -374,7 +476,7 @@ msgid_plural "%2 of %1 painted parts."
 msgstr[0] ""
 msgstr[1] ""
 
-#: FractionRingWidget.cpp:455
+#: FractionRingWidget.cpp:444
 #, kde-format
 msgctxt "%1 and %2 are the two messages translated above."
 msgid ""
@@ -391,7 +493,7 @@ msgid "Learn calculating with fractions"
 msgstr "Dysgu cyfrifiannu efo ffracsiynau"
 
 #: kbruch.cpp:47
-msgid "(c) 2002-2004, Sebastian Stein"
+msgid "(c) 2002-2011, Sebastian Stein"
 msgstr ""
 
 #: kbruch.cpp:48
@@ -399,7 +501,7 @@ msgid "Sebastian Stein"
 msgstr ""
 
 #: kbruch.cpp:48
-msgid "Original Author"
+msgid "Current maintainer, original author"
 msgstr ""
 
 #: kbruch.cpp:49
@@ -426,41 +528,37 @@ msgstr ""
 msgid "Tiago Porangaba"
 msgstr ""
 
-#: mainqtwidget.cpp:122
+#: mainqtwidget.cpp:117
 #, fuzzy
 #| msgid "Operations:"
 msgid "Question:"
 msgstr "Gweithrediadau :"
 
-#: mainqtwidget.cpp:123
+#: mainqtwidget.cpp:118
 msgid "Answer:"
 msgstr ""
 
-#: mainqtwidget.cpp:124 resultwidget.cpp:101
-msgid "Solution:"
-msgstr ""
-
-#: mainqtwidget.cpp:125
+#: mainqtwidget.cpp:119
 msgid "Operations:"
 msgstr "Gweithrediadau :"
 
-#: mainqtwidget.cpp:131 mainqtwidget.cpp:897
+#: mainqtwidget.cpp:125 mainqtwidget.cpp:905
 msgid "Arithmetic"
 msgstr ""
 
-#: mainqtwidget.cpp:169
+#: mainqtwidget.cpp:167
 #, fuzzy
 #| msgid "Operations:"
 msgid "Options:"
 msgstr "Gweithrediadau :"
 
-#: mainqtwidget.cpp:170
+#: mainqtwidget.cpp:168
 #, fuzzy
 #| msgid "Press the button to reset the statistics."
 msgid "Set the options to solve the exercises."
 msgstr "Gwasgwch y botwm i ailosod yr ystadegau."
 
-#: mainqtwidget.cpp:171
+#: mainqtwidget.cpp:169
 msgid ""
 "This part of the window shows the options to solve the exercises. Use the "
 "handle between the options and main window to change the size of this window "
@@ -468,79 +566,73 @@ msgid ""
 "window."
 msgstr ""
 
-#: mainqtwidget.cpp:175 mainqtwidget.cpp:186 mainqtwidget.cpp:197
+#: mainqtwidget.cpp:173 mainqtwidget.cpp:184
 msgid "Mixed number:"
 msgstr ""
 
-#: mainqtwidget.cpp:176
+#: mainqtwidget.cpp:174
 msgid ""
 "Set if the fractions will appear as mixed numbers or not in the question "
 "expression (mixed number example: 1 4/5 = 9/5 )."
 msgstr ""
 
-#: mainqtwidget.cpp:187
+#: mainqtwidget.cpp:185
 msgid ""
 "Set if the fractions will appear as mixed numbers or not in the answer "
 "(mixed number example: 1 4/5 = 9/5 )."
 msgstr ""
 
-#: mainqtwidget.cpp:198
-msgid ""
-"Set if the fractions will appear as mixed numbers or not in the solution "
-"(mixed number example: 1 4/5 = 9/5 )."
-msgstr ""
-
-#: mainqtwidget.cpp:208
+#: mainqtwidget.cpp:195
 msgid "Addition:"
 msgstr ""
 
-#: mainqtwidget.cpp:209
+#: mainqtwidget.cpp:196
 msgid "Check this to use addition operator."
 msgstr ""
 
-#: mainqtwidget.cpp:218
+#: mainqtwidget.cpp:205
 #, fuzzy
 #| msgid "Addition/Subtraction"
 msgid "Subtraction:"
 msgstr "Adio/Tynnu"
 
-#: mainqtwidget.cpp:219
+#: mainqtwidget.cpp:206
 msgid "Check this to use subtraction operator."
 msgstr ""
 
-#: mainqtwidget.cpp:228
+#: mainqtwidget.cpp:215
 #, fuzzy
 #| msgid "Multiplication/Division"
 msgid "Multiplication:"
 msgstr "Lluosi/Rhannu"
 
-#: mainqtwidget.cpp:229
+#: mainqtwidget.cpp:216
 msgid "Check this to use multiplication operator."
 msgstr ""
 
-#: mainqtwidget.cpp:238
+#: mainqtwidget.cpp:225
 msgid "Division:"
 msgstr ""
 
-#: mainqtwidget.cpp:239
+#: mainqtwidget.cpp:226
 msgid "Check this to use division operator."
 msgstr ""
 
-#: mainqtwidget.cpp:248
+#: mainqtwidget.cpp:235
 msgid "Reduced form:"
 msgstr ""
 
-#: mainqtwidget.cpp:249
+#: mainqtwidget.cpp:236
 msgid "Check this to force the use of the reduced form."
 msgstr ""
 
-#: mainqtwidget.cpp:259
+#: mainqtwidget.cpp:246
 #, fuzzy
 #| msgid "Number of Terms"
 msgid "Number of terms:"
 msgstr "Nifer Termau"
 
-#: mainqtwidget.cpp:260 mainqtwidget.cpp:270
+#: mainqtwidget.cpp:247 mainqtwidget.cpp:257
 #, fuzzy
 #| msgid "The number of terms you want"
 msgid ""
@@ -548,7 +640,7 @@ msgid ""
 "terms you want"
 msgstr "Nifer y termau sydd angen"
 
-#: mainqtwidget.cpp:271
+#: mainqtwidget.cpp:258
 #, fuzzy
 #| msgid ""
 #| "Choose the number of terms (2, 3, 4 or 5) you want for calculating "
@@ -560,17 +652,17 @@ msgstr ""
 "Dewiswch nifer y termau (2, 3, 4 neu 5) sydd angen ar gyfer cyfrifiannu "
 "ffracsiynau."
 
-#: mainqtwidget.cpp:274
+#: mainqtwidget.cpp:261
 #, fuzzy
 #| msgid "Max. main denominator:"
 msgid "Maximum denominator:"
 msgstr "Prif enwadur mwyaf:"
 
-#: mainqtwidget.cpp:284
+#: mainqtwidget.cpp:271
 msgid "The maximum number you can have as main denominator"
 msgstr "Y rhif mwyaf i'w gael fel prif enwadur"
 
-#: mainqtwidget.cpp:285
+#: mainqtwidget.cpp:272
 msgid ""
 "Choose the number which will be the maximum for the main denominator: 10, "
 "20, 30, 40 or 50."
@@ -578,26 +670,32 @@ msgstr ""
 "Dewiswch y rhif fydd yr un mwyaf ar gyfer y prif enwadur: 10, 20, 30, 40 neu "
 "50."
 
-#: mainqtwidget.cpp:496
+#: mainqtwidget.cpp:492
 msgid "Reset statistics and set a new task."
 msgstr ""
 
-#: mainqtwidget.cpp:501
+#: mainqtwidget.cpp:497
 msgid "Back"
 msgstr ""
 
-#: mainqtwidget.cpp:503
+#: mainqtwidget.cpp:499
 msgid "Go back to Modes screen."
 msgstr ""
 
-#: mainqtwidget.cpp:508
+#: mainqtwidget.cpp:504
 msgid ""
 "\n"
 "\n"
 "Arithmetic"
 msgstr ""
 
-#: mainqtwidget.cpp:512
+#: mainqtwidget.cpp:505 taskview.cpp:176
+#, fuzzy
+#| msgid "In this exercise you have to solve a given task with fractions."
+msgid "In this exercise you have to solve a given question with fractions."
+msgstr "Yn yr ymarfer yma, rhaid i chi ddatrys tasg benodol efo ffracsiynau."
+
+#: mainqtwidget.cpp:510
 #, fuzzy
 #| msgid "Comparison"
 msgid ""
@@ -615,7 +713,14 @@ msgid ""
 "Conversion"
 msgstr "Trosi"
 
-#: mainqtwidget.cpp:520
+#: mainqtwidget.cpp:522
+msgid ""
+"\n"
+"\n"
+"Mixed Numbers"
+msgstr ""
+
+#: mainqtwidget.cpp:528
 #, fuzzy
 #| msgid "Factorization"
 msgid ""
@@ -624,79 +729,90 @@ msgid ""
 "Factorization"
 msgstr "Ffactorio"
 
-#: mainqtwidget.cpp:524
+#: mainqtwidget.cpp:534
 msgid ""
 "\n"
 "\n"
 "Percentage"
 msgstr ""
 
-#: mainqtwidget.cpp:531
+#: mainqtwidget.cpp:544
 #, fuzzy
 #| msgid "&New"
 msgctxt "@action opens a new question"
 msgid "New"
 msgstr "&Newydd"
 
-#: mainqtwidget.cpp:536
+#: mainqtwidget.cpp:549
 #, fuzzy
 #| msgid "&Task"
 msgctxt "@action go to the main screen"
 msgid "&Back"
 msgstr "&Tasg"
 
-#: mainqtwidget.cpp:546
+#: mainqtwidget.cpp:559
 msgctxt "Arithmetic Exercise"
 msgid "Arithmetic"
 msgstr ""
 
-#: mainqtwidget.cpp:551
+#: mainqtwidget.cpp:564
 #, fuzzy
 #| msgid "Comparison"
 msgctxt "Comparison Exercise"
 msgid "Comparison"
 msgstr "Cymharu"
 
-#: mainqtwidget.cpp:556
+#: mainqtwidget.cpp:569
 #, fuzzy
 #| msgid "Conversion"
 msgctxt "Conversion Exercise"
 msgid "Conversion"
 msgstr "Trosi"
 
-#: mainqtwidget.cpp:561
+#: mainqtwidget.cpp:574
+#, fuzzy
+#| msgid "Number:"
+msgctxt "Mixed Numbers Exercise"
+msgid "MixedNumbers"
+msgstr "Rhif:"
+
+#: mainqtwidget.cpp:579
 #, fuzzy
 #| msgid "Factorization"
 msgctxt "Factorization Exercise"
 msgid "Factorization"
 msgstr "Ffactorio"
 
-#: mainqtwidget.cpp:566
+#: mainqtwidget.cpp:584
 msgctxt "Percentage Exercise"
 msgid "Percentage"
 msgstr ""
 
-#: mainqtwidget.cpp:798
+#: mainqtwidget.cpp:807
 msgid "Fonts"
 msgstr ""
 
-#: mainqtwidget.cpp:882
+#: mainqtwidget.cpp:889
 msgid "Percentage"
 msgstr ""
 
-#: mainqtwidget.cpp:912
+#: mainqtwidget.cpp:921
 #, fuzzy
 #| msgid "Comparison"
 msgid "Comparison"
 msgstr "Cymharu"
 
-#: mainqtwidget.cpp:927
+#: mainqtwidget.cpp:937
 #, fuzzy
 #| msgid "Conversion"
 msgid "Conversion"
 msgstr "Trosi"
 
-#: mainqtwidget.cpp:942
+#: mainqtwidget.cpp:953
+msgid "Mixed Numbers"
+msgstr ""
+
+#: mainqtwidget.cpp:969
 #, fuzzy
 #| msgid "Factorization"
 msgid "Factorization"
@@ -1000,21 +1116,21 @@ msgid ""
 msgstr ""
 "(An)alluogi dangos y canlyniad yn y nodiant rhif-cymysg arbennig hefyd."
 
-#: resultwidget.cpp:140
+#: resultwidget.cpp:101
+msgid "Solution:"
+msgstr ""
+
+#: resultwidget.cpp:139
 #, fuzzy
 #| msgid "Correct:"
 msgid "Correct!"
 msgstr "Cywir:"
 
-#: resultwidget.cpp:147 resultwidget.cpp:154
+#: resultwidget.cpp:146 resultwidget.cpp:153
 #, fuzzy
 #| msgid "Incorrect:"
 msgid "Incorrect!"
 msgstr "Anghywir:"
-
-#: resultwidget.cpp:244
-msgid " or "
-msgstr ""
 
 #: statisticsview.cpp:72
 msgid "This is the current total number of solved tasks."
@@ -1080,37 +1196,23 @@ msgstr ""
 "Hefyd, os nad ydych eisiau gweld yr ystadegau, defnyddiwch y bar fertigol ar "
 "y chwith i leihau maint rhan yma'r ffenestr."
 
-#: taskview.cpp:108
-#, fuzzy
-#| msgid "Change the color of the fraction bar"
-msgid "Enter the integer part of the fraction"
-msgstr "Newid lliw y bar ffracsiynau"
+#: statisticsview.cpp:134
+msgid "&Reset"
+msgstr "&Ailosod"
 
-#: taskview.cpp:159 taskview.cpp:419
+#: statisticsview.cpp:135
 #, fuzzy
-#| msgid ""
-#| "Click on this button to check your result. The button will not work if "
-#| "you have not entered a result yet."
-msgid ""
-"Click this button to check your result. The button will not work if you have "
-"not entered a result yet."
-msgstr ""
-"Cliciwch ar y botwm yma i wirio eich canlyniad.  Ni fydd y botwm yn gweithio "
-"os nad ydych wedi rhoi canlyniad eto."
+#| msgid "Click on this button to get to the next task."
+msgid "Click this button to reset the statistics."
+msgstr "Cliciwch ar y botwm yma i fynd i'r tasg nesaf."
 
-#: taskview.cpp:168
+#: taskview.cpp:167
 #, fuzzy
 #| msgid "Click on this button to check your result."
 msgid "Click this button to skip this question."
 msgstr "Cliciwch ar y botwm yma i wirio'r canlyniad."
 
-#: taskview.cpp:181
-#, fuzzy
-#| msgid "In this exercise you have to solve a given task with fractions."
-msgid "In this exercise you have to solve a given question with fractions."
-msgstr "Yn yr ymarfer yma, rhaid i chi ddatrys tasg benodol efo ffracsiynau."
-
-#: taskview.cpp:182
+#: taskview.cpp:177
 #, fuzzy
 msgid ""
 "In this exercise you have to solve the generated question. You have to enter "
@@ -1122,53 +1224,7 @@ msgstr ""
 "roi'r rhifiadur a'r enwadur.  Cewch addasu anhawster y dasg efo'r blychau yn "
 "y bar offer.  Peidiwch ag anghofio lleihau'r canlyniad!"
 
-#: taskview.cpp:299
-#, fuzzy
-#| msgid "Click on this button to get to the next task."
-msgid "Click this button to get the next question."
-msgstr "Cliciwch ar y botwm yma i fynd i'r tasg nesaf."
-
-#: taskview.cpp:392
-#, fuzzy
-#| msgid ""
-#| "You entered a 0 as the denominator. This means division by zero, which is "
-#| "not allowed. This task will be counted as not correctly solved."
-msgid ""
-"You entered 0 as the denominator. This means division by zero, which is not "
-"allowed. This question will be counted as not correctly solved."
-msgstr ""
-"Rydych wedi rhoi 0 fel yr enwadur.  Mae hyn yn golygu rhannu efo 0, sydd yn "
-"anghywir.  Bydd y dasg hon yn cael ei chyfrif fel heb ei datrys yn gywir."
-
-#: taskview.cpp:399
-#, fuzzy
-#| msgid ""
-#| "You entered the correct result, but not reduced.\n"
-#| "Always enter your results as reduced. This task will be counted as not "
-#| "correctly solved."
-msgid ""
-"You entered the correct result, but not reduced. This question will be "
-"counted as not correctly solved."
-msgstr ""
-"Rydych wedi rhoi'r canlyniad cywir, ond heb ei leihau.\n"
-"Rhowch eich canlyniadau wedi'u lleihau o hyd.  Bydd y dasg hon yn cael ei "
-"chyfrif fel heb ei datrys yn gywir."
-
-#: taskview.cpp:402
-#, fuzzy
-#| msgid ""
-#| "You entered the correct result, but not reduced.\n"
-#| "Always enter your results as reduced. This task will be counted as not "
-#| "correctly solved."
-msgid ""
-"You entered the correct result, but not in the mixed number notation. This "
-"question will be counted as not correctly solved."
-msgstr ""
-"Rydych wedi rhoi'r canlyniad cywir, ond heb ei leihau.\n"
-"Rhowch eich canlyniadau wedi'u lleihau o hyd.  Bydd y dasg hon yn cael ei "
-"chyfrif fel heb ei datrys yn gywir."
-
-#: taskwidget.cpp:119
+#: taskwidget.cpp:117
 msgctxt "division symbol"
 msgid "/"
 msgstr "/"
@@ -1304,9 +1360,6 @@ msgstr "KBruch"
 
 #~ msgid "Tasks so far:"
 #~ msgstr "Tasgau hyd yn hyn:"
-
-#~ msgid "&Reset"
-#~ msgstr "&Ailosod"
 
 #, fuzzy
 #~| msgid "Task Viewer Settings"
