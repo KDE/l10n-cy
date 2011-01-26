@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-25 03:40+0100\n"
+"POT-Creation-Date: 2011-01-26 03:31+0100\n"
 "PO-Revision-Date: 2004-07-06 17:18+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -1472,7 +1472,7 @@ msgstr "Priodweddau Haen"
 
 #. i18n: file: plugins/extensions/compose/wdg_compose.ui:52
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:210 ui/tool/kis_tool_paint.cc:250
+#: rc.cpp:210 ui/tool/kis_tool_paint.cc:247
 #, fuzzy
 msgid "Opacity: "
 msgstr "Didreiddiad:"
@@ -1965,7 +1965,7 @@ msgstr "Cyfeiriad: :"
 #. i18n: ectx: property (text), widget (QRadioButton, lastUsedColorsAlignVertical)
 #. i18n: file: plugins/extensions/dockers/colorselectorng/wdg_color_selector_settings.ui:741
 #. i18n: ectx: property (text), widget (QRadioButton, commonColorsAlignVertical)
-#: rc.cpp:395 rc.cpp:431 ui/tool/kis_tool_paint.cc:259
+#: rc.cpp:395 rc.cpp:431
 #, fuzzy
 msgid "Vertical"
 msgstr "Croesrwygo Fertigol"
@@ -1978,7 +1978,7 @@ msgstr "Croesrwygo Fertigol"
 #. i18n: ectx: property (text), widget (QRadioButton, lastUsedColorsAlignHorizontal)
 #. i18n: file: plugins/extensions/dockers/colorselectorng/wdg_color_selector_settings.ui:748
 #. i18n: ectx: property (text), widget (QRadioButton, commonColorsAlignHorizontal)
-#: rc.cpp:398 rc.cpp:434 ui/tool/kis_tool_paint.cc:258
+#: rc.cpp:398 rc.cpp:434
 #, fuzzy
 msgid "Horizontal"
 msgstr "Croesrwygo Llorweddol "
@@ -9984,11 +9984,6 @@ msgstr "Newid Maint Delwedd"
 msgid "Convert Image Type"
 msgstr "M&ewnosod Delwedd fel Haen..."
 
-#: image/commands/kis_layer_props_command.cpp:42
-#: image/commands/kis_node_property_list_command.cpp:25
-msgid "Property Changes"
-msgstr "Newidiadau priodweddau"
-
 #: image/commands/kis_node_compositeop_command.cpp:28
 #, fuzzy
 msgid "Node Composite Mode"
@@ -9998,6 +9993,11 @@ msgstr "Dull cyfansawdd:"
 #, fuzzy
 msgid "Node Opacity"
 msgstr "Copio didreiddiad"
+
+#: image/commands/kis_node_property_list_command.cpp:25
+#: image/commands/kis_layer_props_command.cpp:43
+msgid "Property Changes"
+msgstr "Newidiadau priodweddau"
 
 #: image/commands/kis_reselect_global_selection_command.cpp:30
 #, fuzzy
@@ -10138,7 +10138,7 @@ msgstr "ProffiliauÂ :"
 msgid "Convert Projection Color Space"
 msgstr ""
 
-#: image/kis_image.cc:730 ui/kis_layer_manager.cc:799
+#: image/kis_image.cc:730 ui/kis_layer_manager.cc:802
 #, fuzzy
 msgid "Flatten Image"
 msgstr "Dyblygu Delwedd"
@@ -11013,7 +11013,7 @@ msgid "Rotate Layer of 90° to the Left"
 msgstr ""
 
 #: plugins/extensions/rotateimage/rotateimage.cc:151
-#: ui/kis_layer_manager.cc:737
+#: ui/kis_layer_manager.cc:740
 #, fuzzy
 msgid "Rotate Layer"
 msgstr "&Gwaredu Haen"
@@ -11072,7 +11072,7 @@ msgid "Separate Image"
 msgstr "Delwedd Newydd :"
 
 #: plugins/extensions/separate_channels/kis_channel_separator.cc:242
-#: ui/kis_layer_manager.cc:890
+#: ui/kis_layer_manager.cc:893
 msgid "Export Layer"
 msgstr "Allforio Haen"
 
@@ -13716,7 +13716,7 @@ msgstr "Cyfuno &Pob Haen"
 msgid "&Flatten Layer"
 msgstr "Hidlenni"
 
-#: ui/kis_layer_manager.cc:147 ui/kis_layer_manager.cc:862
+#: ui/kis_layer_manager.cc:147 ui/kis_layer_manager.cc:865
 #, fuzzy
 msgid "Rasterize Layer"
 msgstr "&Gwaredu Haen"
@@ -13747,50 +13747,50 @@ msgstr "Priodweddau Haen"
 msgid "Generator Layer Properties"
 msgstr "Priodweddau Haen"
 
-#: ui/kis_layer_manager.cc:350 ui/kis_layer_manager.cc:366
-#: ui/kis_layer_manager.cc:409 ui/kis_layer_manager.cc:442
-#: ui/kis_layer_manager.cc:580
+#: ui/kis_layer_manager.cc:353 ui/kis_layer_manager.cc:369
+#: ui/kis_layer_manager.cc:412 ui/kis_layer_manager.cc:445
+#: ui/kis_layer_manager.cc:583
 msgid "Could not add layer to image."
 msgstr "Methwyd ychwanegu haen i ddelwedd."
 
-#: ui/kis_layer_manager.cc:350 ui/kis_layer_manager.cc:366
-#: ui/kis_layer_manager.cc:409 ui/kis_layer_manager.cc:442
-#: ui/kis_layer_manager.cc:580
+#: ui/kis_layer_manager.cc:353 ui/kis_layer_manager.cc:369
+#: ui/kis_layer_manager.cc:412 ui/kis_layer_manager.cc:445
+#: ui/kis_layer_manager.cc:583
 msgid "Layer Error"
 msgstr "Gwall Haen"
 
-#: ui/kis_layer_manager.cc:472
+#: ui/kis_layer_manager.cc:475
 #, fuzzy
 #| msgid "Filters"
 msgid "New Filter Layer"
 msgstr "Hidlenni"
 
-#: ui/kis_layer_manager.cc:657 ui/kis_layer_manager.cc:667
+#: ui/kis_layer_manager.cc:660 ui/kis_layer_manager.cc:670
 #, fuzzy
 msgid "Mirror Layer X"
 msgstr "Gostwng Haen"
 
-#: ui/kis_layer_manager.cc:684 ui/kis_layer_manager.cc:694
+#: ui/kis_layer_manager.cc:687 ui/kis_layer_manager.cc:697
 #: ui/kis_mask_manager.cc:378
 #, fuzzy
 msgid "Mirror Layer Y"
 msgstr "Gostwng Haen"
 
-#: ui/kis_layer_manager.cc:716
+#: ui/kis_layer_manager.cc:719
 #, fuzzy
 msgid "Scale Layer"
 msgstr "Graddio Haen..."
 
-#: ui/kis_layer_manager.cc:769 ui/kis_layer_manager.cc:772
+#: ui/kis_layer_manager.cc:772 ui/kis_layer_manager.cc:775
 #, fuzzy
 msgid "Shear layer"
 msgstr "Graddio Haen..."
 
-#: ui/kis_layer_manager.cc:798
+#: ui/kis_layer_manager.cc:801
 msgid "The image contains hidden layers that will be lost."
 msgstr ""
 
-#: ui/kis_layer_manager.cc:800
+#: ui/kis_layer_manager.cc:803
 #, fuzzy
 msgid "&Flatten Image"
 msgstr "Dyblygu Delwedd"
@@ -13877,41 +13877,51 @@ msgstr "Dangos Mesuryddion"
 msgid "Hide Painting Assistants"
 msgstr ""
 
-#: ui/kis_paintop_box.cc:98
+#: ui/kis_paintop_box.cc:99
 #, fuzzy
 msgid "Painter's Toolchest"
 msgstr "Offer Peintio"
 
-#: ui/kis_paintop_box.cc:102
+#: ui/kis_paintop_box.cc:103
 msgid "Artist's materials"
 msgstr ""
 
-#: ui/kis_paintop_box.cc:110
+#: ui/kis_paintop_box.cc:111
 #, fuzzy
 msgid "Edit brush settings"
 msgstr "&Priodweddau"
 
-#: ui/kis_paintop_box.cc:116
+#: ui/kis_paintop_box.cc:117
 #, fuzzy
 msgid "Choose brush preset"
 msgstr "&Priodweddau"
 
-#: ui/kis_paintop_box.cc:123
+#: ui/kis_paintop_box.cc:124
 #, fuzzy
 msgid "Set eraser mode"
 msgstr "Detholiad"
 
-#: ui/kis_paintop_box.cc:132
+#: ui/kis_paintop_box.cc:134
+#, fuzzy
+msgid "Set horizontal mirror mode"
+msgstr "Croesrwygo Llorweddol "
+
+#: ui/kis_paintop_box.cc:144
+#, fuzzy
+msgid "Set vertical mirror mode"
+msgstr "Detholiad"
+
+#: ui/kis_paintop_box.cc:155
 #, fuzzy
 msgid "Mode: "
 msgstr "&Modd:"
 
-#: ui/kis_paintop_box.cc:143
+#: ui/kis_paintop_box.cc:166
 #, fuzzy
 msgid "Save to Palette"
 msgstr "Patrymau"
 
-#: ui/kis_paintop_box.cc:151
+#: ui/kis_paintop_box.cc:174
 #, fuzzy
 msgid "Choose workspace"
 msgstr "Dewisydd Lliw"
@@ -14152,11 +14162,6 @@ msgstr "&Polylinell"
 msgid "Selection"
 msgstr "Detholiad"
 
-#: ui/tool/kis_tool_paint.cc:257
-#, fuzzy
-msgid "Mirror: "
-msgstr "Haen i Ddelwedd"
-
 #: ui/tool/kis_tool_freehand.cc:90
 #, fuzzy
 msgid "Increase Brush Size"
@@ -14250,6 +14255,10 @@ msgstr "Dewisydd Lliw"
 #, fuzzy, kde-format
 msgid "Workspace %1"
 msgstr "Dewisydd Lliw"
+
+#, fuzzy
+#~ msgid "Mirror: "
+#~ msgstr "Haen i Ddelwedd"
 
 #, fuzzy
 #~ msgid "Move a layer (SHIFT+V)"
