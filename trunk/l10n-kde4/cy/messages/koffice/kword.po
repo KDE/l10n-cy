@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-26 03:29+0100\n"
+"POT-Creation-Date: 2011-01-27 03:25+0100\n"
 "PO-Revision-Date: 2004-08-16 18:16+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -33,7 +33,7 @@ msgstr "kyfieithu@dotmon.com"
 
 #. i18n: file: part/dialogs/KWCreateBookmark.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, CreateBookmark)
-#: rc.cpp:5
+#: rc.cpp:5 part/dialogs/KWCreateBookmarkDialog.cpp:48
 msgid "Create New Bookmark"
 msgstr "Creu Tudnod Newydd"
 
@@ -319,7 +319,8 @@ msgstr "Cadw cymhareb ymddangosiad gwreiddiol"
 
 #. i18n: file: part/dialogs/KWInsertPageDialog.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:135
+#: rc.cpp:135 part/commands/KWPageInsertCommand.cpp:72
+#: part/dialogs/KWInsertPageDialog.cpp:32
 msgid "Insert Page"
 msgstr "Mewnosod Tudalen"
 
@@ -395,13 +396,13 @@ msgstr "Maint Tudalen && Ymylon"
 
 #. i18n: file: part/dialogs/KWStartupWidget.ui:51
 #. i18n: ectx: attribute (title), widget (QWidget, columnsTab)
-#: rc.cpp:166
+#: rc.cpp:166 part/dialogs/KWPageSettingsDialog.cpp:41
 msgid "Columns"
 msgstr "Colofnau"
 
 #. i18n: file: part/dialogs/KWStartupWidget.ui:102
 #. i18n: ectx: property (text), widget (QPushButton, createButton)
-#: rc.cpp:169
+#: rc.cpp:169 part/KWView.cpp:323
 msgid "Create"
 msgstr "Creu"
 
@@ -663,7 +664,7 @@ msgstr "Hunangywiro"
 
 #. i18n: file: part/kword.rc:130
 #. i18n: ectx: Menu (Changes)
-#: rc.cpp:288
+#: rc.cpp:288 part/KWAboutData.h:43 part/KWAboutData.h:44
 #, fuzzy
 #| msgid "Change Link"
 msgid "Change Tracking"
@@ -749,738 +750,1054 @@ msgstr "Canlyniad Gwirio Sillafu"
 msgid "Change Variable To"
 msgstr "Newid Newidyn i"
 
-#~ msgid "Invalid document. No mimetype specified."
-#~ msgstr "Dogfen annilys.  Ni phenodwyd math mime."
-
-#~ msgid ""
-#~ "Invalid document. Expected mimetype application/x-kword or application/"
-#~ "vnd.kde.kword, got %1"
-#~ msgstr ""
-#~ "Dogfen annilys.  Disgwylwyd math mime application/x-kword neu application/"
-#~ "vnd.kde.kword, cafwyd %1"
-
-#~ msgid "Invalid document. Paper size: %1x%2"
-#~ msgstr "Dogfen annilys.  Maint papur: %1x%2"
-
-#, fuzzy
-#~| msgid "Unable to create database object"
-#~ msgid "Unable to locate footnote text"
-#~ msgstr "Methu creu gwrthrych cronfa ddata"
-
-#, fuzzy
-#~| msgid "Unable to create database object"
-#~ msgid "Unable to locate note-text"
-#~ msgstr "Methu creu gwrthrych cronfa ddata"
-
-#, fuzzy
-#~| msgid "Copy%1-%2"
-#~ msgid "Copy"
-#~ msgstr "Copio %1-%2 "
-
-#, fuzzy
-#~| msgctxt "Style name"
-#~| msgid "Head 1"
-#~ msgid "Head 1"
-#~ msgstr "Pennawd 1"
-
-#, fuzzy
-#~| msgctxt "Style name"
-#~| msgid "Head 2"
-#~ msgid "Head 2"
-#~ msgstr "Pennawd 2"
-
-#, fuzzy
-#~| msgctxt "Style name"
-#~| msgid "Head 3"
-#~ msgid "Head 3"
-#~ msgstr "Pennawd 3"
-
-#, fuzzy
-#~| msgctxt "Style name"
-#~| msgid "Bullet List"
-#~ msgid "Bullet List"
-#~ msgstr "Rhestr efo Bwledi"
-
-#~ msgid "Invalid OASIS OpenDocument file. No office:body tag found."
-#~ msgstr "Dogfen OASIS OpenDocument annilys.  Ni chanfuwyd y tag office:body."
-
-#~ msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
-#~ msgstr ""
-#~ "Dogfen OASIS OpenDocument annilys.  Ni chanfuwyd tag tu mewn i office:"
-#~ "body."
-
-#~ msgid ""
-#~ "This is not a word processing document, but %1. Please try opening it "
-#~ "with the appropriate application."
-#~ msgstr ""
-#~ "Dim dogfen brosesu geiriau ydy hon, ond %1.  Ceisiwch ei hagor efo'r "
-#~ "cymhwysiad dilys."
-
-#, fuzzy
-#~| msgid "Save Failed"
-#~ msgid "Saved"
-#~ msgstr "Methodd y cadw"
-
-#, fuzzy
-#~| msgid "Page %1"
-#~ msgid "Page: %1/%2"
-#~ msgstr "Tudalen %1"
-
-#, fuzzy
-#~| msgid "F&rame/Frameset Properties"
-#~ msgid "Frame/Frameset Properties"
-#~ msgstr "Priodweddau Ff&râm/Set Fframiau..."
-
-#, fuzzy
-#~ msgid "Alter frameset properties"
-#~ msgstr "Addasu priodweddau set fframiau."
-
-#~ msgid "Page Break"
-#~ msgstr "Toriad Tudalen"
-
-#, fuzzy
-#~ msgid "Force the remainder of the text into the next page"
-#~ msgstr "Gorfodi gweddill y testun i mewn i'r dudalen nesaf."
-
-#, fuzzy
-#~| msgid ""
-#~| "This inserts a non-printing character at the current cursor position. "
-#~| "All text after this point will be moved into the next page."
-#~ msgid "All text after this point will be moved into the next page."
-#~ msgstr ""
-#~ "Mae hyn yn mewnosod nod di-argraffu wrth leoliad cyfredol y cyrchydd.  "
-#~ "Bydd pob testun ar ôl y pwynt yma yn cael ei symud i mewn i'r dudalen "
-#~ "nesaf."
-
-#, fuzzy
-#~ msgid "Enable Document Headers"
-#~ msgstr "Gwneud y Ddogfen yn Allanol"
-
-#, fuzzy
-#~ msgid "Disable Document Headers"
-#~ msgstr "Gwneud y Ddogfen yn Allanol"
-
-#, fuzzy
-#~ msgid "Shows and hides header display"
-#~ msgstr "Dangos/cuddio pennawd."
-
-#, fuzzy
-#~| msgid ""
-#~| "Selecting this option toggles the display of headers in KWord."
-#~| "<br><br>Headers are special frames at the top of each page which can "
-#~| "contain page numbers or other information."
-#~ msgid ""
-#~ "Selecting this option toggles the display of headers in KWord.<br/><br/"
-#~ ">Headers are special frames at the top of each page which can contain "
-#~ "page numbers or other information."
-#~ msgstr ""
-#~ "Bydd y dewisiad yma yn dangos neu guddio penawdau yn KWord.  <br> "
-#~ "<br>Fframiau arbennig wrth ben pob tudalen yw penawdau, a all gynnwys "
-#~ "rhifau tudalen neu wybodaeth arall."
-
-#, fuzzy
-#~ msgid "Enable Document Footers"
-#~ msgstr "Gwneud y Ddogfen yn Mewnol"
-
-#, fuzzy
-#~ msgid "Disable Document Footers"
-#~ msgstr "Gwneud y Ddogfen yn Allanol"
-
-#, fuzzy
-#~ msgid "Shows and hides footer display"
-#~ msgstr "Dangos/cuddio troedyn."
-
-#, fuzzy
-#~| msgid ""
-#~| "Selecting this option toggles the display of footers in KWord. "
-#~| "<br><br>Footers are special frames at the bottom of each page which can "
-#~| "contain page numbers or other information."
-#~ msgid ""
-#~ "Selecting this option toggles the display of footers in KWord. <br/><br/"
-#~ ">Footers are special frames at the bottom of each page which can contain "
-#~ "page numbers or other information."
-#~ msgstr ""
-#~ "Bydd y dewisiad yma yn dangos neu guddio troedynnau yn KWord.  <br> "
-#~ "<br>Fframiau arbennig wrth waelod pob tudalen yw troedynnau, a all "
-#~ "gynnwys rhifau tudalen neu wybodaeth arall."
-
-#~ msgid "Snap to Grid"
-#~ msgstr "Snapio i'r Grid"
-
-#~ msgid "Raise Frame"
-#~ msgstr "Codi'r Ffrâm"
-
-#~ msgid ""
-#~ "Raise the currently selected frame so that it appears above all the other "
-#~ "frames"
-#~ msgstr ""
-#~ "Codi'r ffrâm a ddewisir yn gyfredol er mwyn iddi ymddangos uwchben pob "
-#~ "ffrâm arall"
-
-#~ msgid ""
-#~ "Raise the currently selected frame so that it appears above all the other "
-#~ "frames. This is only useful if frames overlap each other. If multiple "
-#~ "frames are selected they are all raised in turn."
-#~ msgstr ""
-#~ "Codi'r ffrâm a ddewisir yn gyfredol er mwyn iddi ymddangos uwchben pob "
-#~ "ffrâm arall.  Nid yw hyn yn ddefnyddiol ond os mae'r fframiau yn "
-#~ "gorgyffwrdd eu gilydd.  Os dewisir fframiau lluosol, cânt eu codi i gyd "
-#~ "yn eu tro."
-
-#~ msgid "Lower Frame"
-#~ msgstr "Gostwng y Ffrâm"
-
-#~ msgid ""
-#~ "Lower the currently selected frame so that it disappears under any frame "
-#~ "that overlaps it"
-#~ msgstr ""
-#~ "Gostwng y ffrâm a ddewisir yn gyfredol er mwyn iddi ddiflannu dan unrhyw "
-#~ "ffrâm sy'n gorgyffwrdd â hi"
-
-#~ msgid ""
-#~ "Lower the currently selected frame so that it disappears under any frame "
-#~ "that overlaps it. If multiple frames are selected they are all lowered in "
-#~ "turn."
-#~ msgstr ""
-#~ "Gostwng y ffrâm a ddewisir yn gyfredol er mwyn iddi ddiflannu dan unrhyw "
-#~ "ffrâm sy'n gorgyffwrdd â hi.  Os dewisir fframiau lluosol, cânt eu codi i "
-#~ "gyd yn eu tro."
-
-#~ msgid "Bring to Front"
-#~ msgstr "Anfon i'r Blaen"
-
-#~ msgid "Send to Back"
-#~ msgstr "Anfon i'r Cefn"
-
-#, fuzzy
-#~| msgid "&Variable"
-#~ msgid "Variable"
-#~ msgstr "&Newidyn"
-
-#, fuzzy
-#~| msgid "&Bookmark..."
-#~ msgid "Bookmark..."
-#~ msgstr "&Tudnod..."
-
-#, fuzzy
-#~| msgid "Select &Bookmark..."
-#~ msgid "Select Bookmark..."
-#~ msgstr "Dewis T&udnod..."
-
-#, fuzzy
-#~| msgid "Insert Picture"
-#~ msgid "Insert Picture..."
-#~ msgstr "Mewnosod Llun"
-
-#, fuzzy
-#~| msgid "Insert picture inline"
-#~ msgid "Insert a picture into document"
-#~ msgstr "Mewnosod y llun mewnlein"
-
-#, fuzzy
-#~| msgid "Frame &Borders"
-#~ msgid "Text Area Borders"
-#~ msgstr "Ffiniau &Ffrâm"
-
-#, fuzzy
-#~ msgid "Turns the border display of the text areas on and off"
-#~ msgstr "Dangos/cuddio borderi."
-
-#, fuzzy
-#~| msgid ""
-#~| "Turns the border display on and off.<br><br>The borders are never "
-#~| "printed. This option is useful to see how the document will appear on "
-#~| "the printed page."
-#~ msgid ""
-#~ "Turns the border display on and off.<br/><br/>The borders are never "
-#~ "printed. This option is useful to see how the document will appear on the "
-#~ "printed page."
-#~ msgstr ""
-#~ "Dangos/cuddio ffiniau. <br> <br> Ni argraffir y ffiniau byth.  Mae'r "
-#~ "dewisiad yma o ddefnydd wrth weld sut bydd y ddogfen yn ymddangos ar y "
-#~ "dudalen wedi'i hargraffu."
-
-#, fuzzy
-#~| msgid "Page &Layout..."
-#~ msgid "Page Layout..."
-#~ msgstr "Haenlun Tu&dalen..."
-
-#, fuzzy
-#~ msgid "Change properties of entire page"
-#~ msgstr "Newid priodweddau tudalen gyfan."
-
+#: part/KWDLoader.cpp:75
+msgid "Invalid document. No mimetype specified."
+msgstr "Dogfen annilys.  Ni phenodwyd math mime."
+
+#: part/KWDLoader.cpp:79
+#, kde-format
+msgid ""
+"Invalid document. Expected mimetype application/x-kword or application/vnd."
+"kde.kword, got %1"
+msgstr ""
+"Dogfen annilys.  Disgwylwyd math mime application/x-kword neu application/"
+"vnd.kde.kword, cafwyd %1"
+
+#: part/KWDLoader.cpp:105
+#, kde-format
+msgid "Invalid document. Paper size: %1x%2"
+msgstr "Dogfen annilys.  Maint papur: %1x%2"
+
+#: part/KWDLoader.cpp:691
+#, fuzzy
+#| msgid "Unable to create database object"
+msgid "Unable to locate footnote text"
+msgstr "Methu creu gwrthrych cronfa ddata"
+
+#: part/KWDLoader.cpp:711
+#, fuzzy
+#| msgid "Unable to create database object"
+msgid "Unable to locate note-text"
+msgstr "Methu creu gwrthrych cronfa ddata"
+
+#: part/KWDocument.cpp:438
 #, fuzzy
-#~| msgid ""
-#~| "Change properties of the entire page.<p>Currently you can change paper "
-#~| "size, paper orientation, header and footer sizes, and column settings."
-#~ msgid ""
-#~ "Change properties of the entire page.<p>Currently you can change paper "
-#~ "size, paper orientation, header and footer sizes, and column settings.</p>"
-#~ msgstr ""
-#~ "Newid priodweddau'r dudalen gyfan.<p>Yn gyfredol, gallwch newid maint "
-#~ "papur, cyfeiriadaeth y papur, maint y pennawd a'r troedyn, a gosodiadau "
-#~ "colofn."
+#| msgid "Copy%1-%2"
+msgid "Copy"
+msgstr "Copio %1-%2 "
 
+#: part/KWDocument.cpp:521
 #, fuzzy
-#~ msgid "Semantic Stylesheets..."
-#~ msgstr "Mewnforio Arddull..."
+#| msgctxt "Style name"
+#| msgid "Head 1"
+msgid "Head 1"
+msgstr "Pennawd 1"
 
+#: part/KWDocument.cpp:528
 #, fuzzy
-#~| msgid "Frame is inline"
-#~ msgid "Make inline"
-#~ msgstr "Mewnlein yw'r ffrâm"
+#| msgctxt "Style name"
+#| msgid "Head 2"
+msgid "Head 2"
+msgstr "Pennawd 2"
 
+#: part/KWDocument.cpp:535
 #, fuzzy
-#~ msgid "Convert current frame to an inline frame"
-#~ msgstr "Trosi'r ffrâm gyfredol i ffrâm fewnlein."
+#| msgctxt "Style name"
+#| msgid "Head 3"
+msgid "Head 3"
+msgstr "Pennawd 3"
 
-#~ msgid ""
-#~ "Convert the current frame to an inline frame.<br><br>Place the inline "
-#~ "frame within the text at the point nearest to the frames current position."
-#~ msgstr ""
-#~ "Trosi'r ffrâm gyfredol i ffrâm fewnlein. <br> <br>Lleoli'r ffrâm fewnlein "
-#~ "tu mewn i'r testun wrth y pwynt sy'n agosaf i leoliad cyfredol y ffrâm."
-
-#, fuzzy
-#~| msgid "Preview"
-#~ msgid "Previous Page"
-#~ msgstr "Rhagolwg"
-
-#, fuzzy
-#~| msgid "Insert Page"
-#~ msgid "Next Page"
-#~ msgstr "Mewnosod Tudalen"
-
-#~ msgid "Statistics"
-#~ msgstr "Ystadegau"
-
-#~ msgid "Sentence, word and letter counts for this document"
-#~ msgstr "Cyfrifon brawddeg, gair a llythyren ar gyfer y ddogfen yma"
-
-#, fuzzy
-#~| msgid ""
-#~| "Information on the number of letters, words, syllables and sentences for "
-#~| "this document.<p>Evaluates readability using the Flesch reading score."
-#~ msgid ""
-#~ "Information on the number of letters, words, syllables and sentences for "
-#~ "this document.<p>Evaluates readability using the Flesch reading score.</p>"
-#~ msgstr ""
-#~ "Gwybodaeth am y nifer o lythrennau, geiriau a brawddegau ar gyfer y "
-#~ "ddogfen yma. <p> Gwerthuso darllenadwyedd gan ddefnyddio'r sgôr darllen "
-#~ "Flesch."
-
-#~ msgid "Show Rulers"
-#~ msgstr "Dangos Mesuryddion"
-
-#, fuzzy
-#~ msgid "Shows or hides rulers"
-#~ msgstr "Dangos neu guddio mesuryddion."
-
-#, fuzzy
-#~| msgid ""
-#~| "The rulers are the white measuring spaces top and left of the document. "
-#~| "The rulers show the position and width of pages and of frames and can be "
-#~| "used to position tabulators among others.<p>Uncheck this to disable the "
-#~| "rulers from being displayed."
-#~ msgid ""
-#~ "The rulers are the white measuring spaces top and left of the document. "
-#~ "The rulers show the position and width of pages and of frames and can be "
-#~ "used to position tabulators among others.<p>Uncheck this to disable the "
-#~ "rulers from being displayed.</p>"
-#~ msgstr ""
-#~ "Y llefydd mesuro gwyn wrth pen y ddogfen ac i'w chwith yw'r mesuryddion.  "
-#~ "Mae'r mesuryddion yn dangos lleoliad a lled tudalennau a fframiau, a "
-#~ "gellir eu defnyddio i leoli tablyddion a phethau o'r fath. <p>Dadfrithwch "
-#~ "hyn i atal dangos y mesuryddion."
-
-#~ msgid "Page..."
-#~ msgstr "Tudalen..."
-
-#~ msgid "Delete Page"
-#~ msgstr "Dileu Tudalen"
-
-#, fuzzy
-#~| msgid "&Formatting Characters"
-#~ msgid "Formatting Characters"
-#~ msgstr "Noda&u Fformatio"
-
-#, fuzzy
-#~ msgid "Toggle the display of non-printing characters"
-#~ msgstr "Dangos/cuddio nodau di-argraffu."
-
-#, fuzzy
-#~| msgid ""
-#~| "Toggle the display of non-printing characters.<br><br>When this is "
-#~| "enabled, KWord shows you tabs, spaces, carriage returns and other non-"
-#~| "printing characters."
-#~ msgid ""
-#~ "Toggle the display of non-printing characters.<br/><br/>When this is "
-#~ "enabled, KWord shows you tabs, spaces, carriage returns and other non-"
-#~ "printing characters."
-#~ msgstr ""
-#~ "Dangos/cuddio nodau di-argraffu. <br> <br> Os yn alluog, mae KWord yn "
-#~ "dangos i chi tabnodau, gofodnodau, dychwelnodau, a nodau eraill di-"
-#~ "argraffu."
-
-#~ msgid "Select All Frames"
-#~ msgstr "Dewis Pob Ffrâm"
-
+#: part/KWDocument.cpp:542
 #, fuzzy
-#~ msgid "Delete"
-#~ msgstr "Dileu Rhes"
-
-#~ msgid "Create Linked Copy"
-#~ msgstr "Creu Copi Cysylltiedig"
+#| msgctxt "Style name"
+#| msgid "Bullet List"
+msgid "Bullet List"
+msgstr "Rhestr efo Bwledi"
 
-#~ msgid "Create a copy of the current frame, always showing the same contents"
-#~ msgstr "Creu copi o'r ffrâm gyfredol, sy o hyd yn dangos yr un cynnwys"
+#: part/KWDocument.cpp:850
+msgid "Can not find needed text component, KWord will quit now"
+msgstr ""
 
-#~ msgid ""
-#~ "Create a copy of the current frame, that remains linked to it. This means "
-#~ "they always show the same contents: modifying the contents in such a "
-#~ "frame will update all its linked copies."
-#~ msgstr ""
-#~ "Creu copi o'r ffrâm gyfredol, sy'n aros yn gysylltiedig iddi.  Golyga hyn "
-#~ "eu bod nhw o hyd yn dangos yr un cynnwys: bydd addasu'r cynnwys mewn "
-#~ "ffrâm o'r math yn diweddaru ei copiau cysylltiedig i gyd."
+#: part/KWDocument.cpp:851
+msgid "Installation Error"
+msgstr ""
 
-#, fuzzy
-#~ msgid "Create Custom Outline"
-#~ msgstr "Creu tabl"
-
-#, fuzzy
-#~| msgid "Create Text Frame"
-#~ msgid "Create Frame-clip"
-#~ msgstr "Creu Ffrâm Testun"
-
-#, fuzzy
-#~| msgid "Remove record"
-#~ msgid "Remove Frame-clip"
-#~ msgstr "Gwaredu cofnod"
+#: part/KWOdfLoader.cpp:85
+msgid "Invalid OASIS OpenDocument file. No office:body tag found."
+msgstr "Dogfen OASIS OpenDocument annilys.  Ni chanfuwyd y tag office:body."
 
-#, fuzzy
-#~| msgid "Show &status bar"
-#~ msgid "Show Status Bar"
-#~ msgstr "Dangos bar &cyflwr"
+#: part/KWOdfLoader.cpp:97
+msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
+msgstr ""
+"Dogfen OASIS OpenDocument annilys.  Ni chanfuwyd tag tu mewn i office:body."
 
-#, fuzzy
-#~| msgid "Show &status bar"
-#~ msgid "Hide Status Bar"
-#~ msgstr "Dangos bar &cyflwr"
+#: part/KWOdfLoader.cpp:99
+#, kde-format
+msgid ""
+"This is not a word processing document, but %1. Please try opening it with "
+"the appropriate application."
+msgstr ""
+"Dim dogfen brosesu geiriau ydy hon, ond %1.  Ceisiwch ei hagor efo'r "
+"cymhwysiad dilys."
 
-#, fuzzy
-#~| msgid "Show &status bar"
-#~ msgid "Shows or hides the status bar"
-#~ msgstr "Dangos bar &cyflwr"
+#: part/KWStatusBar.cpp:39
+msgid "Modified"
+msgstr ""
 
+#: part/KWStatusBar.cpp:40
 #, fuzzy
-#~ msgid "Create outlines"
-#~ msgstr "Creu tabl"
+#| msgid "Save Failed"
+msgid "Saved"
+msgstr "Methodd y cadw"
 
-#, fuzzy
-#~| msgid "Framestyle:"
-#~ msgid "Set Page Style"
-#~ msgstr "Arddull Ffrâm:"
+#: part/KWStatusBar.cpp:41
+#, fuzzy, kde-format
+#| msgid "Page %1"
+msgid "Page: %1/%2"
+msgstr "Tudalen %1"
 
-#, fuzzy
-#~| msgid "Inline Frame"
-#~ msgid "Clip Frame"
-#~ msgstr "Ffrâm Fewnlein"
+#: part/KWStatusBar.cpp:63
+msgid "Page: current/total"
+msgstr ""
 
-#, fuzzy
-#~ msgid "Create custom outline"
-#~ msgstr "Creu tabl"
+#: part/KWStatusBar.cpp:80
+msgid "State: saved/modified"
+msgstr ""
 
-#, fuzzy
-#~| msgid "Create Text Frame"
-#~ msgid "Create Frame"
-#~ msgstr "Creu Ffrâm Testun"
+#: part/KWStatusBar.cpp:94
+msgid "Mouseposition: X:Y"
+msgstr ""
 
-#~ msgid "Delete Frame"
-#~ msgstr "Dileu Ffrâm"
+#: part/KWStatusBar.cpp:107
+msgid "Zoom Controller"
+msgstr ""
 
+#: part/commands/KWChangePageStyleCommand.cpp:25
 #, fuzzy
-#~| msgid "Insert Page"
-#~ msgid "Insert Page Style"
-#~ msgstr "Mewnosod Tudalen"
+#| msgid "Framestyle:"
+msgid "Set Page Style"
+msgstr "Arddull Ffrâm:"
 
+#: part/commands/KWClipFrameCommand.cpp:41
 #, fuzzy
-#~| msgid "Remove entry"
-#~ msgid "Remove Page"
-#~ msgstr "Gwaredu eitem"
+#| msgid "Inline Frame"
+msgid "Clip Frame"
+msgstr "Ffrâm Fewnlein"
 
+#: part/commands/KWCreateOutlineCommand.cpp:30
 #, fuzzy
-#~| msgid "Frame Properties"
-#~ msgid "Page Properties"
-#~ msgstr "Priodweddau Fframiau"
+msgid "Create custom outline"
+msgstr "Creu tabl"
 
+#: part/commands/KWFrameCreateCommand.cpp:29
 #, fuzzy
-#~| msgid "Fra&mes"
-#~ msgid "frameset"
-#~ msgstr "Ffra&miau"
+#| msgid "Create Text Frame"
+msgid "Create Frame"
+msgstr "Creu Ffrâm Testun"
 
-#~ msgid "Text Run Around"
-#~ msgstr "Rhedeg y Testun o Gwmpas"
+#: part/commands/KWFrameDeleteCommand.cpp:29
+msgid "Delete Frame"
+msgstr "Dileu Ffrâm"
 
-#~ msgid "Connect Text Frames"
-#~ msgstr "Cysylltu Fframiau Testun"
-
-#~ msgid "Geometry"
-#~ msgstr "Geometreg"
-
+#: part/commands/KWNewPageStyleCommand.cpp:27
 #, fuzzy
-#~| msgid "Synchronize changes"
-#~ msgid "Frame changes"
-#~ msgstr "Cydamseru newidiadau"
+#| msgid "Insert Page"
+msgid "Insert Page Style"
+msgstr "Mewnosod Tudalen"
 
+#: part/commands/KWPageRemoveCommand.cpp:32
 #, fuzzy
-#~| msgid "Frame Properties"
-#~ msgid "Change Page Properties"
-#~ msgstr "Priodweddau Fframiau"
-
-#~ msgid "Rename Bookmark"
-#~ msgstr "Ailenwi Tudnod"
+#| msgid "Remove entry"
+msgid "Remove Page"
+msgstr "Gwaredu eitem"
 
+#: part/commands/KWPageStylePropertiesCommand.cpp:36
 #, fuzzy
-#~| msgid ""
-#~| "A frameset with the name '%1' already exists. Please enter another name."
-#~ msgid "A bookmark with the name \"%1\" already exists."
-#~ msgstr "Mae set fframiau â'r enw '%1' eisioes yn bodoli. Rhowch enw arall."
+#| msgid "Frame Properties"
+msgid "Page Properties"
+msgstr "Priodweddau Fframiau"
 
-#~ msgid "Select Bookmark"
-#~ msgstr "Dewiswch Tudnod"
-
-#~ msgid "approximately %1"
-#~ msgstr "tua %1"
-
-#~ msgid "Odd Pages Header"
-#~ msgstr "Pennawd Tudalennau Odrif"
-
-#~ msgid "Even Pages Header"
-#~ msgstr "Pennawd Tudalennau Eilrif"
-
-#~ msgid "Odd Pages Footer"
-#~ msgstr "Troedyn Tudalennau Odrif"
-
-#~ msgid "Even Pages Footer"
-#~ msgstr "Troedyn Tudalennau Eilrif"
-
+#: part/dialogs/KWFrameConnectSelector.cpp:48
 #, fuzzy
-#~| msgid "Plain text"
-#~ msgid "Main text"
-#~ msgstr "Testun Plaen"
-
-#~ msgctxt "Style name"
-#~ msgid "Standard"
-#~ msgstr "Arferol"
-
-#~ msgctxt "Style name"
-#~ msgid "Head 1"
-#~ msgstr "Pennawd 1"
-
-#~ msgctxt "Style name"
-#~ msgid "Head 2"
-#~ msgstr "Pennawd 2"
-
-#~ msgctxt "Style name"
-#~ msgid "Head 3"
-#~ msgstr "Pennawd 3"
-
-#~ msgctxt "Style name"
-#~ msgid "Enumerated List"
-#~ msgstr "Rhestr wedi'i Rhifo"
-
-#~ msgctxt "Style name"
-#~ msgid "Alphabetical List"
-#~ msgstr "Rhestr yn ôl yr Wyddor"
-
-#~ msgctxt "Style name"
-#~ msgid "Bullet List"
-#~ msgstr "Rhestr efo Bwledi"
-
-#~ msgctxt "Style name"
-#~ msgid "Contents Title"
-#~ msgstr "Teitl Cynnwys"
-
-#~ msgctxt "Style name"
-#~ msgid "Contents Head 1"
-#~ msgstr "Pennawd Cynnwys 1"
-
-#~ msgctxt "Style name"
-#~ msgid "Contents Head 2"
-#~ msgstr "Pennawd Cynnwys 2"
-
-#~ msgctxt "Style name"
-#~ msgid "Contents Head 3"
-#~ msgstr "Pennawd Cynnwys 3"
-
-#~ msgctxt "Style name"
-#~ msgid "Document Title"
-#~ msgstr "Teitl Dogfen"
-
-#~ msgctxt "Style name"
-#~ msgid "Header"
-#~ msgstr "Pennawd"
+#| msgid "Fra&mes"
+msgid "frameset"
+msgstr "Ffra&miau"
 
-#~ msgctxt "Style name"
-#~ msgid "Footer"
-#~ msgstr "Troedyn"
+#: part/dialogs/KWFrameConnectSelector.cpp:75
+msgid "No framesets in document"
+msgstr ""
 
-#~ msgctxt "Style name"
-#~ msgid "Plain"
-#~ msgstr "Plaen"
-
-#~ msgctxt "Style name"
-#~ msgid "Borders 1"
-#~ msgstr "Ffiniau 1"
-
-#~ msgctxt "Style name"
-#~ msgid "Borders 2"
-#~ msgstr "Ffiniau 2"
-
-#~ msgctxt "Style name"
-#~ msgid "Borders 3"
-#~ msgstr "Ffiniau 3"
-
-#~ msgctxt "Style name"
-#~ msgid "Row"
-#~ msgstr "Rhes"
-
-#~ msgctxt "Style name"
-#~ msgid "Column"
-#~ msgstr "Colofn"
-
-#~ msgctxt "Style name"
-#~ msgid "Light Gray"
-#~ msgstr "Llwyd Ysgafn"
-
-#~ msgctxt "Style name"
-#~ msgid "Dark Gray"
-#~ msgstr "Llwyd Tywyll"
-
-#~ msgctxt "Style name"
-#~ msgid "Black"
-#~ msgstr "Du"
-
-#~ msgctxt "Style name"
-#~ msgid "Light Blue"
-#~ msgstr "Glas Ysgafn"
-
-#~ msgctxt "Style name"
-#~ msgid "Dark Blue"
-#~ msgstr "Glas Tywyll"
-
-#~ msgctxt "Style name"
-#~ msgid "Red"
-#~ msgstr "Coch"
-
-#~ msgctxt "Style name"
-#~ msgid "Yellow"
-#~ msgstr "Melyn"
-
-#~ msgctxt "Style name"
-#~ msgid "Colorful"
-#~ msgstr "Lliwgar"
-
+#: part/dialogs/KWFrameDialog.cpp:41 part/dialogs/KWShapeConfigFactory.cpp:94
 #, fuzzy
-#~ msgctxt "Style name"
-#~ msgid "Bluish"
-#~ msgstr "Glasaidd"
-
-#~ msgctxt "Style name"
-#~ msgid "Simple 1"
-#~ msgstr "Syml 1"
+#| msgid "Instructions"
+msgid "Options"
+msgstr "Cyfarwyddiadau"
 
-#~ msgctxt "Style name"
-#~ msgid "Simple 2"
-#~ msgstr "Syml 2"
+#: part/dialogs/KWFrameDialog.cpp:43 part/dialogs/KWShapeConfigFactory.cpp:76
+msgid "Text Run Around"
+msgstr "Rhedeg y Testun o Gwmpas"
 
-#~ msgctxt "Style name"
-#~ msgid "Simple 3"
-#~ msgstr "Syml 3"
+#: part/dialogs/KWFrameDialog.cpp:50 part/dialogs/KWShapeConfigFactory.cpp:40
+msgid "Connect Text Frames"
+msgstr "Cysylltu Fframiau Testun"
 
-#~ msgctxt "Style name"
-#~ msgid "Header 1"
-#~ msgstr "Ardal Pennawd 1"
+#: part/dialogs/KWFrameDialog.cpp:57 part/dialogs/KWShapeConfigFactory.cpp:58
+msgid "Geometry"
+msgstr "Geometreg"
 
-#~ msgctxt "Style name"
-#~ msgid "Header 2"
-#~ msgstr "Ardal Pennawd 2"
-
-#~ msgctxt "Style name"
-#~ msgid "Header 3"
-#~ msgstr "Ardal Pennawd 3"
-
-#~ msgctxt "Style name"
-#~ msgid "Header 4"
-#~ msgstr "Ardal Pennawd 4"
-
+#: part/dialogs/KWFrameDialog.cpp:73
 #, fuzzy
-#~ msgctxt "Style name"
-#~ msgid "Columns 1"
-#~ msgstr "Colofn"
+#| msgid "Synchronize changes"
+msgid "Frame changes"
+msgstr "Cydamseru newidiadau"
 
+#: part/dialogs/KWPageSettingsDialog.cpp:97
 #, fuzzy
-#~ msgctxt "Style name"
-#~ msgid "Columns 2"
-#~ msgstr "Colofn"
+#| msgid "Frame Properties"
+msgid "Change Page Properties"
+msgstr "Priodweddau Fframiau"
 
-#~ msgctxt "Style name"
-#~ msgid "Grid 1"
-#~ msgstr "Grid 1"
+#: part/dialogs/KWSelectBookmarkDialog.cpp:79
+msgid "Rename Bookmark"
+msgstr "Ailenwi Tudnod"
 
-#~ msgctxt "Style name"
-#~ msgid "Grid 2"
-#~ msgstr "Grid 2"
+#: part/dialogs/KWSelectBookmarkDialog.cpp:80
+msgid "Please provide a new name for the bookmark"
+msgstr ""
 
-#~ msgctxt "Style name"
-#~ msgid "Grid 3"
-#~ msgstr "Grid 3"
+#: part/dialogs/KWSelectBookmarkDialog.cpp:89
+#, fuzzy, kde-format
+#| msgid ""
+#| "A frameset with the name '%1' already exists. Please enter another name."
+msgid "A bookmark with the name \"%1\" already exists."
+msgstr "Mae set fframiau â'r enw '%1' eisioes yn bodoli. Rhowch enw arall."
 
-#~ msgctxt "Style name"
-#~ msgid "Gray Heading"
-#~ msgstr "Pennawd Llwyd"
+#: part/dialogs/KWSelectBookmarkDialog.cpp:121
+msgid "Select Bookmark"
+msgstr "Dewiswch Tudnod"
 
-#~ msgctxt "Style name"
-#~ msgid "Blue Heading"
-#~ msgstr "Pennawd Glas"
+#: part/dialogs/KWStatistics.cpp:269
+#, kde-format
+msgid "approximately %1"
+msgstr "tua %1"
 
-#~ msgctxt "Style name"
-#~ msgid "Blue Traditional"
-#~ msgstr "Traddodiadol Glas"
+#: part/dialogs/KWStatisticsDialog.cpp:29
+#: part/dockers/KWStatisticsDocker.cpp:36 part/KWView.cpp:391
+msgid "Statistics"
+msgstr "Ystadegau"
 
-#~ msgctxt "Style name"
-#~ msgid "Gray Traditional"
-#~ msgstr "Traddodiadol Llwyd"
+#: part/dockers/KWRdfDocker.cpp:50
+msgid "RDF"
+msgstr ""
 
-#~ msgctxt "Style name"
-#~ msgid "Blue Top and Bottom"
-#~ msgstr "Pen a Gwaelod Glas"
+#: part/frames/KWTextFrameSet.cpp:90
+msgid "Odd Pages Header"
+msgstr "Pennawd Tudalennau Odrif"
 
-#~ msgctxt "Style name"
-#~ msgid "Gray Top and Bottom"
-#~ msgstr "Pen a Gwaelod Llwyd"
+#: part/frames/KWTextFrameSet.cpp:93
+msgid "Even Pages Header"
+msgstr "Pennawd Tudalennau Eilrif"
 
-#~ msgid "File to open"
-#~ msgstr "Ffeil i agor"
+#: part/frames/KWTextFrameSet.cpp:96
+msgid "Odd Pages Footer"
+msgstr "Troedyn Tudalennau Odrif"
+
+#: part/frames/KWTextFrameSet.cpp:99
+msgid "Even Pages Footer"
+msgstr "Troedyn Tudalennau Eilrif"
+
+#: part/frames/KWTextFrameSet.cpp:102
+#, fuzzy
+#| msgid "Plain text"
+msgid "Main text"
+msgstr "Testun Plaen"
+
+#: part/i18n/stylenames.cpp:21
+msgctxt "Style name"
+msgid "Standard"
+msgstr "Arferol"
+
+#: part/i18n/stylenames.cpp:22
+msgctxt "Style name"
+msgid "Head 1"
+msgstr "Pennawd 1"
+
+#: part/i18n/stylenames.cpp:23
+msgctxt "Style name"
+msgid "Head 2"
+msgstr "Pennawd 2"
+
+#: part/i18n/stylenames.cpp:24
+msgctxt "Style name"
+msgid "Head 3"
+msgstr "Pennawd 3"
+
+#: part/i18n/stylenames.cpp:25
+msgctxt "Style name"
+msgid "Enumerated List"
+msgstr "Rhestr wedi'i Rhifo"
+
+#: part/i18n/stylenames.cpp:26
+msgctxt "Style name"
+msgid "Alphabetical List"
+msgstr "Rhestr yn ôl yr Wyddor"
+
+#: part/i18n/stylenames.cpp:27
+msgctxt "Style name"
+msgid "Bullet List"
+msgstr "Rhestr efo Bwledi"
+
+#: part/i18n/stylenames.cpp:28
+msgctxt "Style name"
+msgid "Contents Title"
+msgstr "Teitl Cynnwys"
+
+#: part/i18n/stylenames.cpp:29
+msgctxt "Style name"
+msgid "Contents Head 1"
+msgstr "Pennawd Cynnwys 1"
+
+#: part/i18n/stylenames.cpp:30
+msgctxt "Style name"
+msgid "Contents Head 2"
+msgstr "Pennawd Cynnwys 2"
+
+#: part/i18n/stylenames.cpp:31
+msgctxt "Style name"
+msgid "Contents Head 3"
+msgstr "Pennawd Cynnwys 3"
+
+#: part/i18n/stylenames.cpp:32
+msgctxt "Style name"
+msgid "Document Title"
+msgstr "Teitl Dogfen"
+
+#: part/i18n/stylenames.cpp:33
+msgctxt "Style name"
+msgid "Header"
+msgstr "Pennawd"
+
+#: part/i18n/stylenames.cpp:34
+msgctxt "Style name"
+msgid "Footer"
+msgstr "Troedyn"
+
+#: part/i18n/stylenames.cpp:37
+msgctxt "Style name"
+msgid "Plain"
+msgstr "Plaen"
+
+#: part/i18n/stylenames.cpp:38
+msgctxt "Style name"
+msgid "Borders 1"
+msgstr "Ffiniau 1"
+
+#: part/i18n/stylenames.cpp:39
+msgctxt "Style name"
+msgid "Borders 2"
+msgstr "Ffiniau 2"
+
+#: part/i18n/stylenames.cpp:40
+msgctxt "Style name"
+msgid "Borders 3"
+msgstr "Ffiniau 3"
+
+#: part/i18n/stylenames.cpp:41
+msgctxt "Style name"
+msgid "Row"
+msgstr "Rhes"
+
+#: part/i18n/stylenames.cpp:42
+msgctxt "Style name"
+msgid "Column"
+msgstr "Colofn"
+
+#: part/i18n/stylenames.cpp:43
+msgctxt "Style name"
+msgid "Light Gray"
+msgstr "Llwyd Ysgafn"
+
+#: part/i18n/stylenames.cpp:44
+msgctxt "Style name"
+msgid "Dark Gray"
+msgstr "Llwyd Tywyll"
+
+#: part/i18n/stylenames.cpp:45
+msgctxt "Style name"
+msgid "Black"
+msgstr "Du"
+
+#: part/i18n/stylenames.cpp:46
+msgctxt "Style name"
+msgid "Light Blue"
+msgstr "Glas Ysgafn"
+
+#: part/i18n/stylenames.cpp:47
+msgctxt "Style name"
+msgid "Dark Blue"
+msgstr "Glas Tywyll"
+
+#: part/i18n/stylenames.cpp:48
+msgctxt "Style name"
+msgid "Red"
+msgstr "Coch"
+
+#: part/i18n/stylenames.cpp:49
+msgctxt "Style name"
+msgid "Yellow"
+msgstr "Melyn"
+
+#: part/i18n/stylenames.cpp:50
+msgctxt "Style name"
+msgid "Colorful"
+msgstr "Lliwgar"
+
+#: part/i18n/stylenames.cpp:51
+#, fuzzy
+msgctxt "Style name"
+msgid "Bluish"
+msgstr "Glasaidd"
+
+#: part/i18n/stylenames.cpp:54
+msgctxt "Style name"
+msgid "Simple 1"
+msgstr "Syml 1"
+
+#: part/i18n/stylenames.cpp:55
+msgctxt "Style name"
+msgid "Simple 2"
+msgstr "Syml 2"
+
+#: part/i18n/stylenames.cpp:56
+msgctxt "Style name"
+msgid "Simple 3"
+msgstr "Syml 3"
+
+#: part/i18n/stylenames.cpp:57
+msgctxt "Style name"
+msgid "Header 1"
+msgstr "Ardal Pennawd 1"
+
+#: part/i18n/stylenames.cpp:58
+msgctxt "Style name"
+msgid "Header 2"
+msgstr "Ardal Pennawd 2"
+
+#: part/i18n/stylenames.cpp:59
+msgctxt "Style name"
+msgid "Header 3"
+msgstr "Ardal Pennawd 3"
+
+#: part/i18n/stylenames.cpp:60
+msgctxt "Style name"
+msgid "Header 4"
+msgstr "Ardal Pennawd 4"
+
+#: part/i18n/stylenames.cpp:63
+#, fuzzy
+msgctxt "Style name"
+msgid "Columns 1"
+msgstr "Colofn"
+
+#: part/i18n/stylenames.cpp:64
+#, fuzzy
+msgctxt "Style name"
+msgid "Columns 2"
+msgstr "Colofn"
+
+#: part/i18n/stylenames.cpp:65
+msgctxt "Style name"
+msgid "Grid 1"
+msgstr "Grid 1"
+
+#: part/i18n/stylenames.cpp:66
+msgctxt "Style name"
+msgid "Grid 2"
+msgstr "Grid 2"
+
+#: part/i18n/stylenames.cpp:67
+msgctxt "Style name"
+msgid "Grid 3"
+msgstr "Grid 3"
+
+#: part/i18n/stylenames.cpp:68
+msgctxt "Style name"
+msgid "Gray Heading"
+msgstr "Pennawd Llwyd"
+
+#: part/i18n/stylenames.cpp:69
+msgctxt "Style name"
+msgid "Blue Heading"
+msgstr "Pennawd Glas"
+
+#: part/i18n/stylenames.cpp:70
+msgctxt "Style name"
+msgid "Blue Traditional"
+msgstr "Traddodiadol Glas"
+
+#: part/i18n/stylenames.cpp:71
+msgctxt "Style name"
+msgid "Gray Traditional"
+msgstr "Traddodiadol Llwyd"
+
+#: part/i18n/stylenames.cpp:72
+msgctxt "Style name"
+msgid "Blue Top and Bottom"
+msgstr "Pen a Gwaelod Glas"
+
+#: part/i18n/stylenames.cpp:73
+msgctxt "Style name"
+msgid "Gray Top and Bottom"
+msgstr "Pen a Gwaelod Llwyd"
+
+#: part/main.cpp:31
+msgid "File to open"
+msgstr "Ffeil i agor"
+
+#: part/KWAboutData.h:27
+msgid "KOffice Word Processor"
+msgstr "Prosesydd Geiriau KWord"
+
+#: part/KWAboutData.h:37
+msgid "KWord"
+msgstr "KWord"
+
+#: part/KWAboutData.h:39
+#, fuzzy
+msgid "(c) 1998-2011, The KWord Team"
+msgstr "(h)(c) 1998-2004, Y Tîm KWord"
+
+#: part/KWAboutData.h:41
+msgid "Thomas Zander"
+msgstr ""
+
+#: part/KWAboutData.h:42
+msgid "Girish Ramakrishnan"
+msgstr ""
+
+#: part/KWAboutData.h:42
+msgid "ODF Support"
+msgstr ""
+
+#: part/KWAboutData.h:43
+msgid "Pierre Stirnweiss"
+msgstr ""
+
+#: part/KWAboutData.h:44
+msgid "Ganesh Paramasivam"
+msgstr ""
+
+#: part/KWAboutData.h:45
+msgid "David Faure"
+msgstr ""
+
+#: part/KWAboutData.h:46
+msgid "Laurent Montel"
+msgstr ""
+
+#: part/KWAboutData.h:47
+msgid "Sven Lüppken"
+msgstr ""
+
+#: part/KWAboutData.h:48
+msgid "Frank Dekervel"
+msgstr ""
+
+#: part/KWAboutData.h:49
+msgid "Krister Wicksell Eriksson"
+msgstr ""
+
+#: part/KWAboutData.h:50
+msgid "Dag Andersen"
+msgstr ""
 
-#~ msgid "KOffice Word Processor"
-#~ msgstr "Prosesydd Geiriau KWord"
+#: part/KWAboutData.h:51
+msgid "Nash Hoogwater"
+msgstr ""
 
-#~ msgid "KWord"
-#~ msgstr "KWord"
+#: part/KWAboutData.h:52
+msgid "Ulrich Kuettler"
+msgstr ""
+
+#: part/KWAboutData.h:52
+msgid "KFormula"
+msgstr "KFormula"
+
+#: part/KWAboutData.h:54
+msgid "Shaheed Haque"
+msgstr ""
+
+#: part/KWAboutData.h:55
+msgid "Werner Trobin"
+msgstr ""
+
+#: part/KWAboutData.h:56
+msgid "Nicolas Goutte"
+msgstr ""
+
+#: part/KWAboutData.h:57
+msgid "Ariya Hidayat"
+msgstr ""
 
-#, fuzzy
-#~ msgid "(c) 1998-2011, The KWord Team"
-#~ msgstr "(h)(c) 1998-2004, Y Tîm KWord"
+#: part/KWAboutData.h:58
+msgid "Clarence Dang"
+msgstr ""
 
-#~ msgid "KFormula"
-#~ msgstr "KFormula"
+#: part/KWAboutData.h:59
+msgid "Robert Jacolin"
+msgstr ""
 
-#, fuzzy
-#~| msgid "Endnotes"
-#~ msgid "Enno Bartels"
-#~ msgstr "Diweddnodiadau"
+#: part/KWAboutData.h:60
+#, fuzzy
+#| msgid "Endnotes"
+msgid "Enno Bartels"
+msgstr "Diweddnodiadau"
+
+#: part/KWAboutData.h:61
+msgid "Ewald Snel"
+msgstr ""
+
+#: part/KWAboutData.h:62
+msgid "Tomasz Grobelny"
+msgstr ""
+
+#: part/KWAboutData.h:63
+msgid "Michael Johnson"
+msgstr ""
+
+#: part/KWView.cpp:249
+#, fuzzy
+#| msgid "F&rame/Frameset Properties"
+msgid "Frame/Frameset Properties"
+msgstr "Priodweddau Ff&râm/Set Fframiau..."
+
+#: part/KWView.cpp:251
+#, fuzzy
+msgid "Alter frameset properties"
+msgstr "Addasu priodweddau set fframiau."
+
+#: part/KWView.cpp:259
+msgid "Page Break"
+msgstr "Toriad Tudalen"
+
+#: part/KWView.cpp:260
+#, fuzzy
+msgid "Force the remainder of the text into the next page"
+msgstr "Gorfodi gweddill y testun i mewn i'r dudalen nesaf."
+
+#: part/KWView.cpp:261
+#, fuzzy
+#| msgid ""
+#| "This inserts a non-printing character at the current cursor position. All "
+#| "text after this point will be moved into the next page."
+msgid "All text after this point will be moved into the next page."
+msgstr ""
+"Mae hyn yn mewnosod nod di-argraffu wrth leoliad cyfredol y cyrchydd.  Bydd "
+"pob testun ar ôl y pwynt yma yn cael ei symud i mewn i'r dudalen nesaf."
+
+#: part/KWView.cpp:263
+#, fuzzy
+msgid "Enable Document Headers"
+msgstr "Gwneud y Ddogfen yn Allanol"
+
+#: part/KWView.cpp:265
+#, fuzzy
+msgid "Disable Document Headers"
+msgstr "Gwneud y Ddogfen yn Allanol"
+
+#: part/KWView.cpp:266
+#, fuzzy
+msgid "Shows and hides header display"
+msgstr "Dangos/cuddio pennawd."
+
+#: part/KWView.cpp:267
+#, fuzzy
+#| msgid ""
+#| "Selecting this option toggles the display of headers in KWord."
+#| "<br><br>Headers are special frames at the top of each page which can "
+#| "contain page numbers or other information."
+msgid ""
+"Selecting this option toggles the display of headers in KWord.<br/><br/"
+">Headers are special frames at the top of each page which can contain page "
+"numbers or other information."
+msgstr ""
+"Bydd y dewisiad yma yn dangos neu guddio penawdau yn KWord.  <br> "
+"<br>Fframiau arbennig wrth ben pob tudalen yw penawdau, a all gynnwys rhifau "
+"tudalen neu wybodaeth arall."
+
+#: part/KWView.cpp:272
+#, fuzzy
+msgid "Enable Document Footers"
+msgstr "Gwneud y Ddogfen yn Mewnol"
+
+#: part/KWView.cpp:274
+#, fuzzy
+msgid "Disable Document Footers"
+msgstr "Gwneud y Ddogfen yn Allanol"
+
+#: part/KWView.cpp:275
+#, fuzzy
+msgid "Shows and hides footer display"
+msgstr "Dangos/cuddio troedyn."
+
+#: part/KWView.cpp:276
+#, fuzzy
+#| msgid ""
+#| "Selecting this option toggles the display of footers in KWord. "
+#| "<br><br>Footers are special frames at the bottom of each page which can "
+#| "contain page numbers or other information."
+msgid ""
+"Selecting this option toggles the display of footers in KWord. <br/><br/"
+">Footers are special frames at the bottom of each page which can contain "
+"page numbers or other information."
+msgstr ""
+"Bydd y dewisiad yma yn dangos neu guddio troedynnau yn KWord.  <br> "
+"<br>Fframiau arbennig wrth waelod pob tudalen yw troedynnau, a all gynnwys "
+"rhifau tudalen neu wybodaeth arall."
+
+#: part/KWView.cpp:281
+msgid "Snap to Grid"
+msgstr "Snapio i'r Grid"
+
+#: part/KWView.cpp:286
+msgid "Raise Frame"
+msgstr "Codi'r Ffrâm"
+
+#: part/KWView.cpp:289
+msgid ""
+"Raise the currently selected frame so that it appears above all the other "
+"frames"
+msgstr ""
+"Codi'r ffrâm a ddewisir yn gyfredol er mwyn iddi ymddangos uwchben pob ffrâm "
+"arall"
+
+#: part/KWView.cpp:291
+msgid ""
+"Raise the currently selected frame so that it appears above all the other "
+"frames. This is only useful if frames overlap each other. If multiple frames "
+"are selected they are all raised in turn."
+msgstr ""
+"Codi'r ffrâm a ddewisir yn gyfredol er mwyn iddi ymddangos uwchben pob ffrâm "
+"arall.  Nid yw hyn yn ddefnyddiol ond os mae'r fframiau yn gorgyffwrdd eu "
+"gilydd.  Os dewisir fframiau lluosol, cânt eu codi i gyd yn eu tro."
+
+#: part/KWView.cpp:296
+msgid "Lower Frame"
+msgstr "Gostwng y Ffrâm"
+
+#: part/KWView.cpp:299
+msgid ""
+"Lower the currently selected frame so that it disappears under any frame "
+"that overlaps it"
+msgstr ""
+"Gostwng y ffrâm a ddewisir yn gyfredol er mwyn iddi ddiflannu dan unrhyw "
+"ffrâm sy'n gorgyffwrdd â hi"
+
+#: part/KWView.cpp:301
+msgid ""
+"Lower the currently selected frame so that it disappears under any frame "
+"that overlaps it. If multiple frames are selected they are all lowered in "
+"turn."
+msgstr ""
+"Gostwng y ffrâm a ddewisir yn gyfredol er mwyn iddi ddiflannu dan unrhyw "
+"ffrâm sy'n gorgyffwrdd â hi.  Os dewisir fframiau lluosol, cânt eu codi i "
+"gyd yn eu tro."
+
+#: part/KWView.cpp:305
+msgid "Bring to Front"
+msgstr "Anfon i'r Blaen"
+
+#: part/KWView.cpp:309
+msgid "Send to Back"
+msgstr "Anfon i'r Cefn"
+
+#: part/KWView.cpp:313
+#, fuzzy
+#| msgid "&Variable"
+msgid "Variable"
+msgstr "&Newidyn"
+
+#: part/KWView.cpp:331
+#, fuzzy
+#| msgid "&Bookmark..."
+msgid "Bookmark..."
+msgstr "&Tudnod..."
+
+#: part/KWView.cpp:336
+#, fuzzy
+#| msgid "Select &Bookmark..."
+msgid "Select Bookmark..."
+msgstr "Dewis T&udnod..."
+
+#: part/KWView.cpp:342
+#, fuzzy
+#| msgid "Insert Picture"
+msgid "Insert Picture..."
+msgstr "Mewnosod Llun"
+
+#: part/KWView.cpp:343
+#, fuzzy
+#| msgid "Insert picture inline"
+msgid "Insert a picture into document"
+msgstr "Mewnosod y llun mewnlein"
+
+#: part/KWView.cpp:347
+#, fuzzy
+#| msgid "Frame &Borders"
+msgid "Text Area Borders"
+msgstr "Ffiniau &Ffrâm"
+
+#: part/KWView.cpp:348
+#, fuzzy
+msgid "Turns the border display of the text areas on and off"
+msgstr "Dangos/cuddio borderi."
+
+#: part/KWView.cpp:353
+#, fuzzy
+#| msgid ""
+#| "Turns the border display on and off.<br><br>The borders are never "
+#| "printed. This option is useful to see how the document will appear on the "
+#| "printed page."
+msgid ""
+"Turns the border display on and off.<br/><br/>The borders are never printed. "
+"This option is useful to see how the document will appear on the printed "
+"page."
+msgstr ""
+"Dangos/cuddio ffiniau. <br> <br> Ni argraffir y ffiniau byth.  Mae'r "
+"dewisiad yma o ddefnydd wrth weld sut bydd y ddogfen yn ymddangos ar y "
+"dudalen wedi'i hargraffu."
+
+#: part/KWView.cpp:355
+#, fuzzy
+#| msgid "Page &Layout..."
+msgid "Page Layout..."
+msgstr "Haenlun Tu&dalen..."
+
+#: part/KWView.cpp:357
+#, fuzzy
+msgid "Change properties of entire page"
+msgstr "Newid priodweddau tudalen gyfan."
+
+#: part/KWView.cpp:358
+#, fuzzy
+#| msgid ""
+#| "Change properties of the entire page.<p>Currently you can change paper "
+#| "size, paper orientation, header and footer sizes, and column settings."
+msgid ""
+"Change properties of the entire page.<p>Currently you can change paper size, "
+"paper orientation, header and footer sizes, and column settings.</p>"
+msgstr ""
+"Newid priodweddau'r dudalen gyfan.<p>Yn gyfredol, gallwch newid maint papur, "
+"cyfeiriadaeth y papur, maint y pennawd a'r troedyn, a gosodiadau colofn."
+
+#: part/KWView.cpp:362
+#, fuzzy
+msgid "Semantic Stylesheets..."
+msgstr "Mewnforio Arddull..."
+
+#: part/KWView.cpp:364
+#, fuzzy
+msgid "Modify and add semantic stylesheets"
+msgstr "Mewnforio Arddull..."
+
+#: part/KWView.cpp:365
+msgid ""
+"Stylesheets are used to format contact, event, and location information "
+"which is stored in Rdf"
+msgstr ""
+
+#: part/KWView.cpp:369
+#, fuzzy
+#| msgid "Frame is inline"
+msgid "Make inline"
+msgstr "Mewnlein yw'r ffrâm"
+
+#: part/KWView.cpp:370
+#, fuzzy
+msgid "Convert current frame to an inline frame"
+msgstr "Trosi'r ffrâm gyfredol i ffrâm fewnlein."
+
+#: part/KWView.cpp:371
+msgid ""
+"Convert the current frame to an inline frame.<br><br>Place the inline frame "
+"within the text at the point nearest to the frames current position."
+msgstr ""
+"Trosi'r ffrâm gyfredol i ffrâm fewnlein. <br> <br>Lleoli'r ffrâm fewnlein tu "
+"mewn i'r testun wrth y pwynt sy'n agosaf i leoliad cyfredol y ffrâm."
+
+#: part/KWView.cpp:375
+#, fuzzy
+#| msgid "Preview"
+msgid "Previous Page"
+msgstr "Rhagolwg"
+
+#: part/KWView.cpp:379
+#, fuzzy
+#| msgid "Insert Page"
+msgid "Next Page"
+msgstr "Mewnosod Tudalen"
+
+#: part/KWView.cpp:393
+msgid "Sentence, word and letter counts for this document"
+msgstr "Cyfrifon brawddeg, gair a llythyren ar gyfer y ddogfen yma"
+
+#: part/KWView.cpp:394
+#, fuzzy
+#| msgid ""
+#| "Information on the number of letters, words, syllables and sentences for "
+#| "this document.<p>Evaluates readability using the Flesch reading score."
+msgid ""
+"Information on the number of letters, words, syllables and sentences for "
+"this document.<p>Evaluates readability using the Flesch reading score.</p>"
+msgstr ""
+"Gwybodaeth am y nifer o lythrennau, geiriau a brawddegau ar gyfer y ddogfen "
+"yma. <p> Gwerthuso darllenadwyedd gan ddefnyddio'r sgôr darllen Flesch."
+
+#: part/KWView.cpp:397
+msgid "Show Rulers"
+msgstr "Dangos Mesuryddion"
+
+#: part/KWView.cpp:399
+#, fuzzy
+msgid "Shows or hides rulers"
+msgstr "Dangos neu guddio mesuryddion."
+
+#: part/KWView.cpp:400
+#, fuzzy
+#| msgid ""
+#| "The rulers are the white measuring spaces top and left of the document. "
+#| "The rulers show the position and width of pages and of frames and can be "
+#| "used to position tabulators among others.<p>Uncheck this to disable the "
+#| "rulers from being displayed."
+msgid ""
+"The rulers are the white measuring spaces top and left of the document. The "
+"rulers show the position and width of pages and of frames and can be used to "
+"position tabulators among others.<p>Uncheck this to disable the rulers from "
+"being displayed.</p>"
+msgstr ""
+"Y llefydd mesuro gwyn wrth pen y ddogfen ac i'w chwith yw'r mesuryddion.  "
+"Mae'r mesuryddion yn dangos lleoliad a lled tudalennau a fframiau, a gellir "
+"eu defnyddio i leoli tablyddion a phethau o'r fath. <p>Dadfrithwch hyn i "
+"atal dangos y mesuryddion."
+
+#: part/KWView.cpp:408
+msgid "Page..."
+msgstr "Tudalen..."
+
+#: part/KWView.cpp:412
+msgid "Delete Page"
+msgstr "Dileu Tudalen"
+
+#: part/KWView.cpp:419
+#, fuzzy
+#| msgid "&Formatting Characters"
+msgid "Formatting Characters"
+msgstr "Noda&u Fformatio"
+
+#: part/KWView.cpp:423
+#, fuzzy
+msgid "Toggle the display of non-printing characters"
+msgstr "Dangos/cuddio nodau di-argraffu."
+
+#: part/KWView.cpp:424
+#, fuzzy
+#| msgid ""
+#| "Toggle the display of non-printing characters.<br><br>When this is "
+#| "enabled, KWord shows you tabs, spaces, carriage returns and other non-"
+#| "printing characters."
+msgid ""
+"Toggle the display of non-printing characters.<br/><br/>When this is "
+"enabled, KWord shows you tabs, spaces, carriage returns and other non-"
+"printing characters."
+msgstr ""
+"Dangos/cuddio nodau di-argraffu. <br> <br> Os yn alluog, mae KWord yn dangos "
+"i chi tabnodau, gofodnodau, dychwelnodau, a nodau eraill di-argraffu."
+
+#: part/KWView.cpp:427
+msgid "Select All Frames"
+msgstr "Dewis Pob Ffrâm"
+
+#: part/KWView.cpp:432
+#, fuzzy
+msgid "Delete"
+msgstr "Dileu Rhes"
+
+#: part/KWView.cpp:445 part/KWView.cpp:1243
+msgid "Create Linked Copy"
+msgstr "Creu Copi Cysylltiedig"
+
+#: part/KWView.cpp:447
+msgid "Create a copy of the current frame, always showing the same contents"
+msgstr "Creu copi o'r ffrâm gyfredol, sy o hyd yn dangos yr un cynnwys"
+
+#: part/KWView.cpp:448
+msgid ""
+"Create a copy of the current frame, that remains linked to it. This means "
+"they always show the same contents: modifying the contents in such a frame "
+"will update all its linked copies."
+msgstr ""
+"Creu copi o'r ffrâm gyfredol, sy'n aros yn gysylltiedig iddi.  Golyga hyn eu "
+"bod nhw o hyd yn dangos yr un cynnwys: bydd addasu'r cynnwys mewn ffrâm o'r "
+"math yn diweddaru ei copiau cysylltiedig i gyd."
+
+#: part/KWView.cpp:451
+#, fuzzy
+msgid "Create Custom Outline"
+msgstr "Creu tabl"
+
+#: part/KWView.cpp:453
+msgid "Create a custom vector outline that text will run around"
+msgstr ""
+
+#: part/KWView.cpp:454
+msgid ""
+"Text normally runs around the content of a shape, when you want a custom "
+"outline that is independent of the content you can create one and alter it "
+"with the vector tools"
+msgstr ""
+
+#: part/KWView.cpp:457
+#, fuzzy
+#| msgid "Create Text Frame"
+msgid "Create Frame-clip"
+msgstr "Creu Ffrâm Testun"
+
+#: part/KWView.cpp:461
+#, fuzzy
+#| msgid "Remove record"
+msgid "Remove Frame-clip"
+msgstr "Gwaredu cofnod"
+
+#: part/KWView.cpp:465
+msgid "Add Text on Shape"
+msgstr ""
+
+#: part/KWView.cpp:469
+#, fuzzy
+#| msgid "Show &status bar"
+msgid "Show Status Bar"
+msgstr "Dangos bar &cyflwr"
+
+#: part/KWView.cpp:470
+#, fuzzy
+#| msgid "Show &status bar"
+msgid "Hide Status Bar"
+msgstr "Dangos bar &cyflwr"
+
+#: part/KWView.cpp:471
+#, fuzzy
+#| msgid "Show &status bar"
+msgid "Shows or hides the status bar"
+msgstr "Dangos bar &cyflwr"
+
+#: part/KWView.cpp:1182
+msgid "Please select at least one non-locked shape and try again"
+msgstr ""
+
+#: part/KWView.cpp:1322
+#, fuzzy
+msgid "Create outlines"
+msgstr "Creu tabl"
 
 #, fuzzy
 #~| msgid "New..."
@@ -1924,11 +2241,6 @@ msgstr "Newid Newidyn i"
 #, fuzzy
 #~ msgid "Properties"
 #~ msgstr "&Priodweddau"
-
-#, fuzzy
-#~| msgid "Instructions"
-#~ msgid "Functions"
-#~ msgstr "Cyfarwyddiadau"
 
 #, fuzzy
 #~| msgid "&Variable"
