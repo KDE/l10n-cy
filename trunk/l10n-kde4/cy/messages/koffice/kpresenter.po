@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-22 03:22+0100\n"
+"POT-Creation-Date: 2011-02-04 02:57+0100\n"
 "PO-Revision-Date: 2004-09-07 14:09+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -133,7 +133,7 @@ msgstr ""
 msgid "Timothée Lacroix "
 msgstr ""
 
-#: part/KPrDocument.cpp:409
+#: part/KPrDocument.cpp:399
 msgid "Installation Error"
 msgstr ""
 
@@ -275,7 +275,7 @@ msgstr "Cyn y Tryloywder Cyfredol"
 
 #. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:136
 #. i18n: ectx: property (text), widget (QPushButton, deleteSlideButton)
-#: part/KPrView.cpp:86 rc.cpp:248
+#: part/KPrView.cpp:86 rc.cpp:212
 #, fuzzy
 #| msgid "Delete Slide"
 msgid "Delete Slide"
@@ -396,15 +396,6 @@ msgstr ""
 msgid "Blackscreen on the presentation..."
 msgstr ""
 
-#: part/KPrViewModeSlidesSorter.cpp:293
-#: part/ui/KPrCustomSlideShowsDialog.cpp:82
-#: part/ui/KPrCustomSlideShowsDialog.cpp:239
-#: part/ui/KPrCustomSlideShowsDialog.cpp:257
-#: part/ui/KPrHtmlExportDialog.cpp:119
-#, kde-format
-msgid "Slide %1"
-msgstr "Tryloywder %1"
-
 #: part/commands/KPrAnimationCreateCommand.cpp:34
 #, fuzzy
 #| msgid "Create HTML Presentation"
@@ -443,16 +434,46 @@ msgstr ""
 msgid "Slide Layouts"
 msgstr "&Haenlun Tudalen..."
 
-#: part/main.cpp:36
-msgid "File to open"
-msgstr "Ffeil i agor"
-
 #: part/pagelayout/KPrPlaceholders.cpp:58
 #: part/pagelayout/KPrPlaceholders.cpp:59
 #, fuzzy
 #| msgid "Page &Layout..."
 msgid "Set Layout"
 msgstr "&Haenlun Tudalen..."
+
+#: part/tools/KPrAnimationTool.cpp:85
+#, fuzzy
+#| msgid "Slide Transition"
+msgid "Transitions"
+msgstr "Trawsnewid Tryloywder"
+
+#: part/tools/KPrAnimationTool.cpp:86
+msgid "Click Actions"
+msgstr ""
+
+#: part/tools/KPrAnimationTool.cpp:87
+msgid "Not implemented in 2.0"
+msgstr ""
+
+#: part/tools/KPrAnimationTool.cpp:90
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgid "Shape Animation"
+msgstr "Creu Cyflwyniad HTML"
+
+#: part/tools/KPrAnimationToolFactory.cpp:32
+msgid "Animation tool"
+msgstr ""
+
+#: part/tools/KPrPageEffectDocker.cpp:56
+msgid "No Effect"
+msgstr "Dim Effaith"
+
+#: part/tools/KPrPageEffectDocker.cpp:79
+#, fuzzy
+#| msgid " seconds"
+msgid " sec"
+msgstr " eiliad(au)"
 
 #: part/tools/KPrPlaceholderTool.cpp:92
 #, fuzzy
@@ -463,40 +484,6 @@ msgstr "Siâp"
 #: part/tools/KPrPlaceholderToolFactory.cpp:28
 msgid "Layout Tool"
 msgstr ""
-
-#: part/tools/animationtool/KPrAnimationTool.cpp:85
-#, fuzzy
-#| msgid "Slide Transition"
-msgid "Transitions"
-msgstr "Trawsnewid Tryloywder"
-
-#: part/tools/animationtool/KPrAnimationTool.cpp:86
-msgid "Click Actions"
-msgstr ""
-
-#: part/tools/animationtool/KPrAnimationTool.cpp:87
-msgid "Not implemented in 2.0"
-msgstr ""
-
-#: part/tools/animationtool/KPrAnimationTool.cpp:90
-#, fuzzy
-#| msgid "Create HTML Presentation"
-msgid "Shape Animation"
-msgstr "Creu Cyflwyniad HTML"
-
-#: part/tools/animationtool/KPrAnimationToolFactory.cpp:32
-msgid "Animation tool"
-msgstr ""
-
-#: part/tools/animationtool/KPrPageEffectDocker.cpp:56
-msgid "No Effect"
-msgstr "Dim Effaith"
-
-#: part/tools/animationtool/KPrPageEffectDocker.cpp:79
-#, fuzzy
-#| msgid " seconds"
-msgid " sec"
-msgstr " eiliad(au)"
 
 #: part/ui/KPrConfigurePresenterViewDialog.cpp:42
 #, kde-format
@@ -523,9 +510,17 @@ msgstr "Pob Ffeil"
 
 #. i18n: file: part/ui/KPrConfigureSlideShow.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, KPrConfigureSlideShow)
-#: part/ui/KPrConfigureSlideShowDialog.cpp:46 rc.cpp:215
+#: part/ui/KPrConfigureSlideShowDialog.cpp:46 rc.cpp:179
 msgid "Configure Slide Show"
 msgstr "Ffurfweddu Sioe Tryloywderau"
+
+#: part/ui/KPrCustomSlideShowsDialog.cpp:82
+#: part/ui/KPrCustomSlideShowsDialog.cpp:239
+#: part/ui/KPrCustomSlideShowsDialog.cpp:257
+#: part/ui/KPrHtmlExportDialog.cpp:119 part/KPrViewModeSlidesSorter.cpp:293
+#, kde-format
+msgid "Slide %1"
+msgstr "Tryloywder %1"
 
 #: part/ui/KPrCustomSlideShowsDialog.cpp:96
 #: part/ui/KPrCustomSlideShowsDialog.cpp:100
@@ -604,6 +599,10 @@ msgstr "Cadw Ffurfweddiad..."
 #| msgid "Do you want to remove the current slide?"
 msgid "Are you sure you want to remove \"%1\"?"
 msgstr "Hoffech waredu'r tryloywder cyfredol?"
+
+#: part/main.cpp:36
+msgid "File to open"
+msgstr "Ffeil i agor"
 
 #: plugins/eventactions/sound/KPrSoundEventActionWidget.cpp:94
 #, fuzzy
@@ -2119,98 +2118,15 @@ msgstr "Cyflwyniad"
 msgid "&Slide"
 msgstr "&Tryloywderau"
 
-#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:16
-#. i18n: ectx: property (windowTitle), widget (QWidget, WdgToolCrop)
-#: rc.cpp:170
-#, fuzzy
-#| msgid "Co&py"
-msgid "Crop"
-msgstr "Co&pïo"
-
-#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:36
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:173
-msgid "X:"
-msgstr ""
-
-#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:60
-#. i18n: ectx: property (text), widget (QCheckBox, boolWidth)
-#: rc.cpp:176
-#, fuzzy
-#| msgid "Width:"
-msgid "W&idth:"
-msgstr "Lled:"
-
-#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:63
-#. i18n: ectx: property (toolTip), widget (QCheckBox, boolWidth)
-#: rc.cpp:179
-#, fuzzy
-msgid "Will keep the width of the crop constant"
-msgstr "Creu Lluniau o'r Tryloywderau"
-
-#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:84
-#. i18n: ectx: property (text), widget (QCheckBox, boolHeight)
-#: rc.cpp:182
-msgid "&Height:"
-msgstr "&Uchder:"
-
-#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:87
-#. i18n: ectx: property (toolTip), widget (QCheckBox, boolHeight)
-#: rc.cpp:185
-msgid "Will keep the height of the crop constant"
-msgstr ""
-
-#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:94
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:188
-msgid "Y:"
-msgstr ""
-
-#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:111
-#. i18n: ectx: property (text), widget (QCheckBox, boolRatio)
-#: rc.cpp:191
-#, fuzzy
-#| msgid "&Location:"
-msgid "R&atio:"
-msgstr "&Lleoliad:"
-
-#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:114
-#. i18n: ectx: property (toolTip), widget (QCheckBox, boolRatio)
-#: rc.cpp:194
-msgid "Will keep the ratio constant"
-msgstr ""
-
-#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:132
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbType)
-#: rc.cpp:197
-msgid "Layer"
-msgstr ""
-
-#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:137
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbType)
-#: rc.cpp:200
-#, fuzzy
-#| msgid "&Page"
-msgid "Image"
-msgstr "&Tudalen"
-
-#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:145
-#. i18n: ectx: property (text), widget (QPushButton, bnCrop)
-#: rc.cpp:203
-#, fuzzy
-#| msgid "&Top:"
-msgid "&Crop"
-msgstr "&Pen:"
-
 #. i18n: file: part/ui/KPrConfigurePresenterView.ui:16
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:206
+#: rc.cpp:170
 msgid "Multiple monitors"
 msgstr ""
 
 #. i18n: file: part/ui/KPrConfigurePresenterView.ui:24
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:209
+#: rc.cpp:173
 #, fuzzy
 #| msgid "Presentation Pen"
 msgid "Presentation monitor:"
@@ -2218,13 +2134,13 @@ msgstr "Pensil ar gyfer y Cyflwyniad"
 
 #. i18n: file: part/ui/KPrConfigurePresenterView.ui:39
 #. i18n: ectx: property (text), widget (QCheckBox, presenterViewCheckBox)
-#: rc.cpp:212
+#: rc.cpp:176
 msgid "Enable presenter view"
 msgstr ""
 
 #. i18n: file: part/ui/KPrConfigureSlideShow.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:218
+#: rc.cpp:182
 #, fuzzy
 #| msgid "&Slides"
 msgid "Slides"
@@ -2232,7 +2148,7 @@ msgstr "&Tryloywderau"
 
 #. i18n: file: part/ui/KPrConfigureSlideShow.ui:27
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:221
+#: rc.cpp:185
 #, fuzzy
 #| msgid "Presentation"
 msgid "Presentation Slides:"
@@ -2240,28 +2156,28 @@ msgstr "Cyflwyniad"
 
 #. i18n: file: part/ui/KPrConfigureSlideShow.ui:54
 #. i18n: ectx: property (text), widget (QPushButton, editSlidesButton)
-#: rc.cpp:224
+#: rc.cpp:188
 #, fuzzy
 msgid "Edit Custom Slide Shows ..."
 msgstr "Ffurfweddu Sioe Tryloy&wderau..."
 
 #. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:22
 #. i18n: ectx: property (windowTitle), widget (QWidget, CustomSlideShowsWidget)
-#: rc.cpp:227
+#: rc.cpp:191
 #, fuzzy
 msgid "Custom Slideshows editor"
 msgstr "Sioe Tryloywderau"
 
 #. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:36
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:230
+#: rc.cpp:194
 #, fuzzy
 msgid "Customs Slideshows"
 msgstr "Sioe Tryloywderau"
 
 #. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:59
 #. i18n: ectx: property (text), widget (QPushButton, addButton)
-#: rc.cpp:233
+#: rc.cpp:197
 #, fuzzy
 #| msgid "Slideshow"
 msgid "Add new slideshow"
@@ -2269,7 +2185,7 @@ msgstr "Sioe Tryloywderau"
 
 #. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:66
 #. i18n: ectx: property (text), widget (QPushButton, deleteButton)
-#: rc.cpp:236
+#: rc.cpp:200
 #, fuzzy
 #| msgid "Delete Slide"
 msgid "Delete slideshow"
@@ -2277,7 +2193,7 @@ msgstr "Dileu Tryloywder"
 
 #. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:75
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:239
+#: rc.cpp:203
 #, fuzzy
 #| msgid "Duplicate Slide"
 msgid "Available Slides"
@@ -2285,7 +2201,7 @@ msgstr "Dyblygu Tryloywder"
 
 #. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:106
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:242
+#: rc.cpp:206
 #, fuzzy
 #| msgid "Create HTML Slideshow"
 msgid "Current Slideshow:"
@@ -2293,7 +2209,7 @@ msgstr "Creu Cyflwyniad HTML"
 
 #. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:129
 #. i18n: ectx: property (text), widget (QPushButton, addSlideButton)
-#: rc.cpp:245
+#: rc.cpp:209
 #, fuzzy
 #| msgid "Slide"
 msgid "Add Slide"
@@ -2301,19 +2217,19 @@ msgstr "Tryloywder"
 
 #. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:182
 #. i18n: ectx: property (text), widget (QPushButton, undoButton)
-#: rc.cpp:251
+#: rc.cpp:215
 msgid "Undo"
 msgstr ""
 
 #. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:189
 #. i18n: ectx: property (text), widget (QPushButton, okButton)
-#: rc.cpp:254
+#: rc.cpp:218
 msgid "Ok"
 msgstr ""
 
 #. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:196
 #. i18n: ectx: property (text), widget (QPushButton, closeButton)
-#: rc.cpp:257
+#: rc.cpp:221
 #, fuzzy
 #| msgid "C&olors:"
 msgid "Close"
@@ -2321,19 +2237,19 @@ msgstr "L&liwiau:"
 
 #. i18n: file: part/ui/KPrHtmlExport.ui:20
 #. i18n: ectx: property (windowTitle), widget (QWidget, KPrHtmlExport)
-#: rc.cpp:260
+#: rc.cpp:224
 msgid "HTML Export"
 msgstr ""
 
 #. i18n: file: part/ui/KPrHtmlExport.ui:29
 #. i18n: ectx: property (text), widget (QLabel, textLabel_slideslist)
-#: rc.cpp:263
+#: rc.cpp:227
 msgid "Tick the slide should be exported :"
 msgstr ""
 
 #. i18n: file: part/ui/KPrHtmlExport.ui:55
 #. i18n: ectx: property (text), widget (KPushButton, kPushButton_selectAll)
-#: rc.cpp:266
+#: rc.cpp:230
 #, fuzzy
 #| msgid "Select &All"
 msgid "Select all"
@@ -2341,14 +2257,14 @@ msgstr "Dewis Pope&th"
 
 #. i18n: file: part/ui/KPrHtmlExport.ui:65
 #. i18n: ectx: property (text), widget (QLabel, textLabel_css)
-#: rc.cpp:269
+#: rc.cpp:233
 #, fuzzy
 msgid "Select template (.css) :"
 msgstr "Dileu Trylowyder"
 
 #. i18n: file: part/ui/KPrHtmlExport.ui:78
 #. i18n: ectx: property (text), widget (KPushButton, kPushButton_deselectAll)
-#: rc.cpp:272
+#: rc.cpp:236
 #, fuzzy
 #| msgid "&Deselect All"
 msgid "Deselect all"
@@ -2356,7 +2272,7 @@ msgstr "Da&tddewis Popeth"
 
 #. i18n: file: part/ui/KPrHtmlExport.ui:101
 #. i18n: ectx: property (text), widget (QLabel, textlable_top)
-#: rc.cpp:275
+#: rc.cpp:239
 #, fuzzy
 #| msgid "Title:"
 msgid "Title"
@@ -2364,7 +2280,7 @@ msgstr "Teitl:"
 
 #. i18n: file: part/ui/KPrHtmlExport.ui:117
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_preview)
-#: rc.cpp:278
+#: rc.cpp:242
 #, fuzzy
 #| msgid "Automatic preview"
 msgid "Output preview"
@@ -2374,7 +2290,7 @@ msgstr "Rhagolwg Ymysgogol"
 #. i18n: ectx: property (text), widget (QToolButton, toolButton_previous)
 #. i18n: file: part/ui/KPrHtmlExport.ui:164
 #. i18n: ectx: property (text), widget (QToolButton, toolButton_next)
-#: rc.cpp:281 rc.cpp:284
+#: rc.cpp:245 rc.cpp:248
 #, fuzzy
 #| msgid "New..."
 msgid "..."
@@ -2382,13 +2298,13 @@ msgstr "Newydd ..."
 
 #. i18n: file: part/ui/KPrHtmlExport.ui:227
 #. i18n: ectx: property (text), widget (KPushButton, kpushbuttonBrowseTemplate)
-#: rc.cpp:287
+#: rc.cpp:251
 msgid "Browse"
 msgstr ""
 
 #. i18n: file: part/ui/KPrHtmlExport.ui:243
 #. i18n: ectx: property (text), widget (QLabel, label_author)
-#: rc.cpp:290
+#: rc.cpp:254
 #, fuzzy
 #| msgid "Author:"
 msgid "Author"
@@ -2396,7 +2312,7 @@ msgstr "Awdur:"
 
 #. i18n: file: part/ui/KPrHtmlExport.ui:258
 #. i18n: ectx: property (text), widget (KPushButton, kPushButton_Favorite)
-#: rc.cpp:293
+#: rc.cpp:257
 #, fuzzy
 #| msgid "Delete Slide"
 msgid "Delete Favorite"
@@ -2404,9 +2320,41 @@ msgstr "Dileu Tryloywder"
 
 #. i18n: file: part/ui/KPrHtmlExport.ui:286
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox_browser)
-#: rc.cpp:296
+#: rc.cpp:260
 msgid "Open in browser"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Co&py"
+#~ msgid "Crop"
+#~ msgstr "Co&pïo"
+
+#, fuzzy
+#~| msgid "Width:"
+#~ msgid "W&idth:"
+#~ msgstr "Lled:"
+
+#, fuzzy
+#~ msgid "Will keep the width of the crop constant"
+#~ msgstr "Creu Lluniau o'r Tryloywderau"
+
+#~ msgid "&Height:"
+#~ msgstr "&Uchder:"
+
+#, fuzzy
+#~| msgid "&Location:"
+#~ msgid "R&atio:"
+#~ msgstr "&Lleoliad:"
+
+#, fuzzy
+#~| msgid "&Page"
+#~ msgid "Image"
+#~ msgstr "&Tudalen"
+
+#, fuzzy
+#~| msgid "&Top:"
+#~ msgid "&Crop"
+#~ msgstr "&Pen:"
 
 #, fuzzy
 #~| msgid "Set Page Layout"

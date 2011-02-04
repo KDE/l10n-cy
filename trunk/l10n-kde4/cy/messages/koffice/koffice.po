@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-02 03:38+0100\n"
+"POT-Creation-Date: 2011-02-04 02:57+0100\n"
 "PO-Revision-Date: 2004-09-07 14:22+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -100,10 +100,6 @@ msgstr "Newid Tablydd"
 msgid "Convert to Path"
 msgstr "Trosi i'r Groeg"
 
-#: flake/commands/KoPathBreakAtPointCommand.cpp:38
-msgid "Break Subpath at Points"
-msgstr ""
-
 #: flake/commands/KoPathCombineCommand.cpp:58
 #, fuzzy
 msgid "Combine paths"
@@ -117,6 +113,18 @@ msgstr "Cadarnhau Allforio"
 #: flake/commands/KoPathFillRuleCommand.cpp:44
 msgid "Set Fill Rule"
 msgstr ""
+
+#: flake/commands/KoShapeGroupCommand.cpp:93
+#, fuzzy
+#| msgid "Current Section"
+msgid "Group Shapes"
+msgstr "Adran Gyfredol"
+
+#: flake/commands/KoShapeGroupCommand.cpp:95
+#, fuzzy
+#| msgid "Add Group"
+msgid "Add Shapes to Group"
+msgstr "Ychwanegu Grŵp"
 
 #: flake/commands/KoPathPointMergeCommand.cpp:152
 #, fuzzy
@@ -204,18 +212,6 @@ msgstr "Dileu Testun"
 msgid "Distribute Shapes"
 msgstr "Creu Patrymlun"
 
-#: flake/commands/KoShapeGroupCommand.cpp:93
-#, fuzzy
-#| msgid "Current Section"
-msgid "Group Shapes"
-msgstr "Adran Gyfredol"
-
-#: flake/commands/KoShapeGroupCommand.cpp:95
-#, fuzzy
-#| msgid "Add Group"
-msgid "Add Shapes to Group"
-msgstr "Ychwanegu Grŵp"
-
 #: flake/commands/KoShapeKeepAspectRatioCommand.cpp:40
 msgid "Keep Aspect Ratio"
 msgstr ""
@@ -278,6 +274,10 @@ msgstr "Bwled Addasiedig"
 msgid "Remove Subpath"
 msgstr "Gwaredu Grŵp"
 
+#: flake/commands/KoPathBreakAtPointCommand.cpp:38
+msgid "Break Subpath at Points"
+msgstr ""
+
 #: flake/tools/KoCreatePathTool.cpp:369 flake/tools/KoPathTool.cpp:181
 msgid "Snapping"
 msgstr ""
@@ -306,12 +306,6 @@ msgstr "Creu Dogfen"
 #, fuzzy
 msgid "Pan"
 msgstr "Melynddu"
-
-#: flake/tools/KoPathSegmentChangeStrategy.cpp:145
-#, fuzzy
-#| msgid "Change Alignment"
-msgid "Change Segment"
-msgstr "Newid Aliniad"
 
 #: flake/tools/KoPathTool.cpp:87
 #, fuzzy
@@ -411,6 +405,12 @@ msgstr ""
 #: widgets/KoZoomController.cpp:38 widgets/KoZoomInput.cpp:52
 msgid "Zoom"
 msgstr ""
+
+#: flake/tools/KoPathSegmentChangeStrategy.cpp:145
+#, fuzzy
+#| msgid "Change Alignment"
+msgid "Change Segment"
+msgstr "Newid Aliniad"
 
 #: kokross/KoScriptManager.cpp:177
 msgid "Install Script Package"
@@ -715,11 +715,6 @@ msgstr "Cwmni"
 msgid "Paste"
 msgstr "Dyddiad"
 
-#: kopageapp/KoPAPageThumbnailModel.cpp:69
-#, fuzzy, kde-format
-msgid "Page %1"
-msgstr "Dyddiad:"
-
 #: kopageapp/KoPAPastePage.cpp:132
 #, fuzzy
 #| msgid "Paste Text"
@@ -1002,6 +997,11 @@ msgstr "Dewisiadau Fformatio"
 msgid "Change background image"
 msgstr "Eiliad"
 
+#: kopageapp/KoPAPageThumbnailModel.cpp:69
+#, fuzzy, kde-format
+msgid "Page %1"
+msgstr "Dyddiad:"
+
 #: kotext/InsertTextLocator.cpp:29
 msgid "Index Reference"
 msgstr ""
@@ -1050,23 +1050,6 @@ msgstr[1] "Amnewid Testun"
 #| msgid "Re&place 1/2... with %1..."
 msgid "Replace %1 with %2?"
 msgstr "Am&newid 1/2... gyda %1..."
-
-#: kotext/KoText.cpp:29
-msgctxt "Underline Style"
-msgid "None"
-msgstr "Dim"
-
-#: kotext/KoText.cpp:30
-#, fuzzy
-msgctxt "Underline Style"
-msgid "Single"
-msgstr "Sengl"
-
-#: kotext/KoText.cpp:31
-#, fuzzy
-msgctxt "Underline Style"
-msgid "Double"
-msgstr "Dwbl"
 
 #: kotext/KoTextEditor.cpp:105 kotext/KoTextEditor.cpp:161
 #: kotext/KoTextEditor.cpp:319 widgets/KoCsvImportDialog.cpp:216
@@ -1220,6 +1203,23 @@ msgstr "Newid Ffiniau"
 #, fuzzy
 msgid "Format"
 msgstr "Fformat Dyddiad"
+
+#: kotext/KoText.cpp:47
+msgctxt "Underline Style"
+msgid "None"
+msgstr "Dim"
+
+#: kotext/KoText.cpp:48
+#, fuzzy
+msgctxt "Underline Style"
+msgid "Single"
+msgstr "Sengl"
+
+#: kotext/KoText.cpp:49
+#, fuzzy
+msgctxt "Underline Style"
+msgid "Double"
+msgstr "Dwbl"
 
 #: main/KoApplication.cpp:77
 msgid "Only print and exit"
@@ -1560,7 +1560,7 @@ msgstr ""
 msgid "a drawing"
 msgstr "Oren Tywyll"
 
-#: main/KoDocument.cpp:2504
+#: main/KoDocument.cpp:2499
 #, fuzzy
 msgid "Embedding Object"
 msgstr "Methu llwytho gwrthrych caeth."
@@ -2821,10 +2821,6 @@ msgstr ""
 msgid "b*"
 msgstr ""
 
-#: pigment/KoBasicHistogramProducers.h:231
-msgid "Generic L*a*b* Histogram"
-msgstr ""
-
 #: pigment/KoColorModelStandardIds.cpp:25
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:261
 #: pigment/colorspaces/KoLabColorSpace.cpp:44
@@ -2988,10 +2984,6 @@ msgstr ""
 msgid "Simple Color Conversion Engine"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOpAlphaDarken.h:42
-msgid "Alpha darken"
-msgstr ""
-
 #: pigment/compositeops/KoCompositeOpBurn.h:36
 #, fuzzy
 #| msgctxt "color"
@@ -3043,8 +3035,16 @@ msgstr "Sgrîn"
 msgid "Soft light"
 msgstr "Llinyn:"
 
+#: pigment/compositeops/KoCompositeOpAlphaDarken.h:42
+msgid "Alpha darken"
+msgstr ""
+
 #: pigment/resources/KoStopGradient.cpp:421
 msgid "SVG Gradient"
+msgstr ""
+
+#: pigment/KoBasicHistogramProducers.h:231
+msgid "Generic L*a*b* Histogram"
 msgstr ""
 
 #: widgets/KoColorPopupAction.cpp:85 widgets/KoUniColorChooser.cpp:418
