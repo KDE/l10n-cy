@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-09 03:50+0100\n"
+"POT-Creation-Date: 2011-03-10 03:47+0100\n"
 "PO-Revision-Date: 2004-09-07 14:09+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -259,7 +259,7 @@ msgstr "Cyn y Tryloywder Cyfredol"
 
 #. i18n: file: part/ui/SCCustomSlideShowsDialog.ui:136
 #. i18n: ectx: property (text), widget (QPushButton, deleteSlideButton)
-#: part/SCView.cpp:86 rc.cpp:68
+#: part/SCView.cpp:86 rc.cpp:47
 #, fuzzy
 #| msgid "Delete Slide"
 msgid "Delete Slide"
@@ -339,9 +339,9 @@ msgstr "Ffurfweddu Sioe Tryloy&wderau..."
 
 #: part/SCView.cpp:224
 #, fuzzy
-#| msgid "Presentation"
-msgid "Start Presentation"
-msgstr "Cyflwyniad"
+msgctxt "Start of presentation"
+msgid "Start"
+msgstr "S&iart"
 
 #: part/SCView.cpp:227
 #, fuzzy
@@ -404,7 +404,9 @@ msgstr "&Effaith ddelwedd:"
 msgid "Delete page effect"
 msgstr "&Effaith ddelwedd:"
 
-#: part/commands/SCSetCustomSlideShowsCommand.cpp:33
+#. i18n: file: part/showcase.rc:91
+#. i18n: ectx: ToolBar (editToolBar)
+#: part/commands/SCSetCustomSlideShowsCommand.cpp:33 rc.cpp:119
 msgid "Edit"
 msgstr ""
 
@@ -493,7 +495,7 @@ msgstr "Pob Ffeil"
 
 #. i18n: file: part/ui/SCConfigureSlideShow.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, SCConfigureSlideShow)
-#: part/ui/SCConfigureSlideShowDialog.cpp:46 rc.cpp:35
+#: part/ui/SCConfigureSlideShowDialog.cpp:46 rc.cpp:14
 msgid "Configure Slide Show"
 msgstr "Ffurfweddu Sioe Tryloywderau"
 
@@ -1865,63 +1867,15 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kyfieithu@dotmon.com"
 
-#. i18n: file: part/showcase.rc:8
-#. i18n: ectx: Menu (edit)
-#: rc.cpp:5
-#, fuzzy
-msgid "&Edit"
-msgstr "&Diwedd"
-
-#. i18n: file: part/showcase.rc:27
-#. i18n: ectx: Menu (view)
-#: rc.cpp:8
-#, fuzzy
-msgid "&View"
-msgstr "&Pei"
-
-#. i18n: file: part/showcase.rc:50
-#. i18n: ectx: Menu (insert)
-#: rc.cpp:11
-#, fuzzy
-msgid "&Insert"
-msgstr "Mewnosod Ffeil"
-
-#. i18n: file: part/showcase.rc:55
-#. i18n: ectx: Menu (format)
-#: rc.cpp:14
-msgid "F&ormat"
-msgstr "Ff&ormat"
-
-#. i18n: file: part/showcase.rc:64
-#. i18n: ectx: Menu (page)
-#: rc.cpp:17
-#, fuzzy
-#| msgid "&Slides"
-msgid "&Slide"
-msgstr "&Tryloywderau"
-
-#. i18n: file: part/showcase.rc:75
-#. i18n: ectx: Menu (slideshow)
-#: rc.cpp:20
-msgid "Sli&de Show"
-msgstr "Sioe T&ryloywder"
-
-#. i18n: file: part/showcase.rc:82
-#. i18n: ectx: Menu (settings)
-#: rc.cpp:23
-#, fuzzy
-msgid "&Settings"
-msgstr "Gosodiadau Llwybr"
-
 #. i18n: file: part/ui/SCConfigurePresenterView.ui:16
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:26
+#: rc.cpp:5
 msgid "Multiple monitors"
 msgstr ""
 
 #. i18n: file: part/ui/SCConfigurePresenterView.ui:24
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:29
+#: rc.cpp:8
 #, fuzzy
 #| msgid "Presentation Pen"
 msgid "Presentation monitor:"
@@ -1929,13 +1883,13 @@ msgstr "Pensil ar gyfer y Cyflwyniad"
 
 #. i18n: file: part/ui/SCConfigurePresenterView.ui:39
 #. i18n: ectx: property (text), widget (QCheckBox, presenterViewCheckBox)
-#: rc.cpp:32
+#: rc.cpp:11
 msgid "Enable presenter view"
 msgstr ""
 
 #. i18n: file: part/ui/SCConfigureSlideShow.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:38
+#: rc.cpp:17
 #, fuzzy
 #| msgid "&Slides"
 msgid "Slides"
@@ -1943,7 +1897,7 @@ msgstr "&Tryloywderau"
 
 #. i18n: file: part/ui/SCConfigureSlideShow.ui:27
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:41
+#: rc.cpp:20
 #, fuzzy
 #| msgid "Presentation"
 msgid "Presentation Slides:"
@@ -1951,28 +1905,28 @@ msgstr "Cyflwyniad"
 
 #. i18n: file: part/ui/SCConfigureSlideShow.ui:54
 #. i18n: ectx: property (text), widget (QPushButton, editSlidesButton)
-#: rc.cpp:44
+#: rc.cpp:23
 #, fuzzy
 msgid "Edit Custom Slide Shows ..."
 msgstr "Ffurfweddu Sioe Tryloy&wderau..."
 
 #. i18n: file: part/ui/SCCustomSlideShowsDialog.ui:22
 #. i18n: ectx: property (windowTitle), widget (QWidget, CustomSlideShowsWidget)
-#: rc.cpp:47
+#: rc.cpp:26
 #, fuzzy
 msgid "Custom Slideshows editor"
 msgstr "Sioe Tryloywderau"
 
 #. i18n: file: part/ui/SCCustomSlideShowsDialog.ui:36
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:50
+#: rc.cpp:29
 #, fuzzy
 msgid "Customs Slideshows"
 msgstr "Sioe Tryloywderau"
 
 #. i18n: file: part/ui/SCCustomSlideShowsDialog.ui:59
 #. i18n: ectx: property (text), widget (QPushButton, addButton)
-#: rc.cpp:53
+#: rc.cpp:32
 #, fuzzy
 #| msgid "Slideshow"
 msgid "Add new slideshow"
@@ -1980,7 +1934,7 @@ msgstr "Sioe Tryloywderau"
 
 #. i18n: file: part/ui/SCCustomSlideShowsDialog.ui:66
 #. i18n: ectx: property (text), widget (QPushButton, deleteButton)
-#: rc.cpp:56
+#: rc.cpp:35
 #, fuzzy
 #| msgid "Delete Slide"
 msgid "Delete slideshow"
@@ -1988,7 +1942,7 @@ msgstr "Dileu Tryloywder"
 
 #. i18n: file: part/ui/SCCustomSlideShowsDialog.ui:75
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:59
+#: rc.cpp:38
 #, fuzzy
 #| msgid "Duplicate Slide"
 msgid "Available Slides"
@@ -1996,7 +1950,7 @@ msgstr "Dyblygu Tryloywder"
 
 #. i18n: file: part/ui/SCCustomSlideShowsDialog.ui:106
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:62
+#: rc.cpp:41
 #, fuzzy
 #| msgid "Create HTML Slideshow"
 msgid "Current Slideshow:"
@@ -2004,7 +1958,7 @@ msgstr "Creu Cyflwyniad HTML"
 
 #. i18n: file: part/ui/SCCustomSlideShowsDialog.ui:129
 #. i18n: ectx: property (text), widget (QPushButton, addSlideButton)
-#: rc.cpp:65
+#: rc.cpp:44
 #, fuzzy
 #| msgid "Slide"
 msgid "Add Slide"
@@ -2012,19 +1966,19 @@ msgstr "Tryloywder"
 
 #. i18n: file: part/ui/SCCustomSlideShowsDialog.ui:182
 #. i18n: ectx: property (text), widget (QPushButton, undoButton)
-#: rc.cpp:71
+#: rc.cpp:50
 msgid "Undo"
 msgstr ""
 
 #. i18n: file: part/ui/SCCustomSlideShowsDialog.ui:189
 #. i18n: ectx: property (text), widget (QPushButton, okButton)
-#: rc.cpp:74
+#: rc.cpp:53
 msgid "Ok"
 msgstr ""
 
 #. i18n: file: part/ui/SCCustomSlideShowsDialog.ui:196
 #. i18n: ectx: property (text), widget (QPushButton, closeButton)
-#: rc.cpp:77
+#: rc.cpp:56
 #, fuzzy
 #| msgid "C&olors:"
 msgid "Close"
@@ -2032,19 +1986,19 @@ msgstr "L&liwiau:"
 
 #. i18n: file: part/ui/SCHtmlExport.ui:20
 #. i18n: ectx: property (windowTitle), widget (QWidget, SCHtmlExport)
-#: rc.cpp:80
+#: rc.cpp:59
 msgid "HTML Export"
 msgstr ""
 
 #. i18n: file: part/ui/SCHtmlExport.ui:29
 #. i18n: ectx: property (text), widget (QLabel, textLabel_slideslist)
-#: rc.cpp:83
+#: rc.cpp:62
 msgid "Tick the slide should be exported :"
 msgstr ""
 
 #. i18n: file: part/ui/SCHtmlExport.ui:55
 #. i18n: ectx: property (text), widget (KPushButton, kPushButton_selectAll)
-#: rc.cpp:86
+#: rc.cpp:65
 #, fuzzy
 #| msgid "Select &All"
 msgid "Select all"
@@ -2052,14 +2006,14 @@ msgstr "Dewis Pope&th"
 
 #. i18n: file: part/ui/SCHtmlExport.ui:65
 #. i18n: ectx: property (text), widget (QLabel, textLabel_css)
-#: rc.cpp:89
+#: rc.cpp:68
 #, fuzzy
 msgid "Select template (.css) :"
 msgstr "Dileu Trylowyder"
 
 #. i18n: file: part/ui/SCHtmlExport.ui:78
 #. i18n: ectx: property (text), widget (KPushButton, kPushButton_deselectAll)
-#: rc.cpp:92
+#: rc.cpp:71
 #, fuzzy
 #| msgid "&Deselect All"
 msgid "Deselect all"
@@ -2067,7 +2021,7 @@ msgstr "Da&tddewis Popeth"
 
 #. i18n: file: part/ui/SCHtmlExport.ui:101
 #. i18n: ectx: property (text), widget (QLabel, textlable_top)
-#: rc.cpp:95
+#: rc.cpp:74
 #, fuzzy
 #| msgid "Title:"
 msgid "Title"
@@ -2075,7 +2029,7 @@ msgstr "Teitl:"
 
 #. i18n: file: part/ui/SCHtmlExport.ui:117
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_preview)
-#: rc.cpp:98
+#: rc.cpp:77
 #, fuzzy
 #| msgid "Automatic preview"
 msgid "Output preview"
@@ -2085,7 +2039,7 @@ msgstr "Rhagolwg Ymysgogol"
 #. i18n: ectx: property (text), widget (QToolButton, toolButton_previous)
 #. i18n: file: part/ui/SCHtmlExport.ui:164
 #. i18n: ectx: property (text), widget (QToolButton, toolButton_next)
-#: rc.cpp:101 rc.cpp:104
+#: rc.cpp:80 rc.cpp:83
 #, fuzzy
 #| msgid "New..."
 msgid "..."
@@ -2093,13 +2047,13 @@ msgstr "Newydd ..."
 
 #. i18n: file: part/ui/SCHtmlExport.ui:227
 #. i18n: ectx: property (text), widget (KPushButton, kpushbuttonBrowseTemplate)
-#: rc.cpp:107
+#: rc.cpp:86
 msgid "Browse"
 msgstr ""
 
 #. i18n: file: part/ui/SCHtmlExport.ui:243
 #. i18n: ectx: property (text), widget (QLabel, label_author)
-#: rc.cpp:110
+#: rc.cpp:89
 #, fuzzy
 #| msgid "Author:"
 msgid "Author"
@@ -2107,7 +2061,7 @@ msgstr "Awdur:"
 
 #. i18n: file: part/ui/SCHtmlExport.ui:258
 #. i18n: ectx: property (text), widget (KPushButton, kPushButton_Favorite)
-#: rc.cpp:113
+#: rc.cpp:92
 #, fuzzy
 #| msgid "Delete Slide"
 msgid "Delete Favorite"
@@ -2115,9 +2069,62 @@ msgstr "Dileu Tryloywder"
 
 #. i18n: file: part/ui/SCHtmlExport.ui:286
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox_browser)
-#: rc.cpp:116
+#: rc.cpp:95
 msgid "Open in browser"
 msgstr ""
+
+#. i18n: file: part/showcase.rc:8
+#. i18n: ectx: Menu (edit)
+#: rc.cpp:98
+#, fuzzy
+msgid "&Edit"
+msgstr "&Diwedd"
+
+#. i18n: file: part/showcase.rc:27
+#. i18n: ectx: Menu (view)
+#: rc.cpp:101
+#, fuzzy
+msgid "&View"
+msgstr "&Pei"
+
+#. i18n: file: part/showcase.rc:50
+#. i18n: ectx: Menu (insert)
+#: rc.cpp:104
+#, fuzzy
+msgid "&Insert"
+msgstr "Mewnosod Ffeil"
+
+#. i18n: file: part/showcase.rc:55
+#. i18n: ectx: Menu (format)
+#: rc.cpp:107
+msgid "F&ormat"
+msgstr "Ff&ormat"
+
+#. i18n: file: part/showcase.rc:64
+#. i18n: ectx: Menu (page)
+#: rc.cpp:110
+#, fuzzy
+#| msgid "&Slides"
+msgid "&Slide"
+msgstr "&Tryloywderau"
+
+#. i18n: file: part/showcase.rc:75
+#. i18n: ectx: Menu (slideshow)
+#: rc.cpp:113
+msgid "Sli&de Show"
+msgstr "Sioe T&ryloywder"
+
+#. i18n: file: part/showcase.rc:82
+#. i18n: ectx: Menu (settings)
+#: rc.cpp:116
+#, fuzzy
+msgid "&Settings"
+msgstr "Gosodiadau Llwybr"
+
+#, fuzzy
+#~| msgid "Presentation"
+#~ msgid "Start Presentation"
+#~ msgstr "Cyflwyniad"
 
 #~ msgid "KPresenter"
 #~ msgstr "KPresenter"
