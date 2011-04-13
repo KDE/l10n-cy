@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-04-12 03:43+0200\n"
+"POT-Creation-Date: 2011-04-13 03:25+0200\n"
 "PO-Revision-Date: 2004-09-07 14:22+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -726,7 +726,7 @@ msgstr "Cadarnhau Cadw"
 
 #: kopageapp/dialogs/KoPAConfigureDialog.cpp:40
 #: kopageapp/dialogs/KoPAConfigureDialog.cpp:41
-#: main/config/KoConfigMiscPage.cpp:78 pigment/KoCompositeOp.cpp:43
+#: main/config/KoConfigMiscPage.cpp:78 pigment/KoCompositeOp.cpp:39
 msgid "Misc"
 msgstr ""
 
@@ -988,7 +988,7 @@ msgstr "Addasiedig"
 #: kopageapp/KoPADocumentStructureDocker.cpp:641
 #: koreport/wrtembed/KoReportDesigner.cpp:833
 #: pigment/compositeops/KoCompositeOpCopy.h:37
-#: pigment/compositeops/KoCompositeOpCopy2.h:52
+#: pigment/compositeops/KoCompositeOpCopy2.h:42
 #, fuzzy
 msgid "Copy"
 msgstr "Cwmni"
@@ -3455,41 +3455,20 @@ msgstr ""
 msgid "32 Bits Float"
 msgstr ""
 
-#: pigment/KoCompositeOp.cpp:27
-msgid "Mix"
-msgstr ""
-
-#: pigment/KoCompositeOp.cpp:31
-#, fuzzy
-#| msgctxt "color"
-#| msgid "LightGreen"
-msgid "Light"
-msgstr "GwyrddGolau"
-
-#: pigment/KoCompositeOp.cpp:35
-#, fuzzy
-#| msgid "Autoinclude"
-msgid "Arithmetic"
-msgstr "Hunan-gynnwys"
-
-#: pigment/KoCompositeOp.cpp:39
-#, fuzzy
-#| msgid "Color:"
-msgid "Color"
-msgstr "Lliw:"
-
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:48
 msgid "Clear"
 msgstr ""
 
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:121
 #: pigment/compositeops/KoCompositeOpSubtract.h:37
+#: pigment/compositeops/KoCompositeOps.h:87
 #, fuzzy
 msgid "Subtract"
 msgstr "Crynodeb"
 
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:193
 #: pigment/compositeops/KoCompositeOpMultiply.h:35
+#: pigment/compositeops/KoCompositeOps.h:88
 msgid "Multiply"
 msgstr ""
 
@@ -3514,7 +3493,7 @@ msgid "L*a*b* (16-bit integer/channel, unmanaged)"
 msgstr ""
 
 #: pigment/colorspaces/KoLabColorSpace.cpp:42
-#: widgets/KoUniColorChooser.cpp:201
+#: pigment/compositeops/KoCompositeOps.h:152 widgets/KoUniColorChooser.cpp:201
 #, fuzzy
 msgid "Lightness"
 msgstr "GwyrddlasGolau"
@@ -3569,6 +3548,7 @@ msgid "Alpha darken"
 msgstr ""
 
 #: pigment/compositeops/KoCompositeOpDivide.h:36
+#: pigment/compositeops/KoCompositeOps.h:89
 msgid "Divide"
 msgstr ""
 
@@ -3597,12 +3577,14 @@ msgid "Normal"
 msgstr "Arferol"
 
 #: pigment/compositeops/KoCompositeOpOverlay.h:36
+#: pigment/compositeops/KoCompositeOps.h:62
 #, fuzzy
 #| msgid "Overline"
 msgid "Overlay"
 msgstr "Troslinellu"
 
 #: pigment/compositeops/KoCompositeOpScreen.h:36
+#: pigment/compositeops/KoCompositeOps.h:70
 msgid "Screen"
 msgstr "Sgrîn"
 
@@ -3625,8 +3607,381 @@ msgstr "Brown"
 msgid "Copy Opacy"
 msgstr "Enw Cwmni"
 
+#: pigment/compositeops/KoCompositeOpDissolve.h:61
+msgid "Dissolve"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:63
+#, fuzzy
+#| msgid "Mail Merge"
+msgid "Grain Merge"
+msgstr "Uno Post"
+
+#: pigment/compositeops/KoCompositeOps.h:64
+msgid "Grain Extract"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:65
+#, fuzzy
+msgid "Hard Mix"
+msgstr "&Uchder:"
+
+#: pigment/compositeops/KoCompositeOps.h:66
+msgid "Geometric Mean"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:67
+#, fuzzy
+#| msgid "Variable"
+msgid "Parallel"
+msgstr "Newidyn"
+
+#: pigment/compositeops/KoCompositeOps.h:68
+msgid "Allanon"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:71
+#, fuzzy
+msgid "Color Dodge"
+msgstr "Lliwiau"
+
+#: pigment/compositeops/KoCompositeOps.h:72
+#, fuzzy
+#| msgid "Change Borders"
+msgid "Linear Dodge"
+msgstr "Newid Ffiniau"
+
+#: pigment/compositeops/KoCompositeOps.h:73 pigment/KoCompositeOp.cpp:32
+#, fuzzy
+#| msgctxt "color"
+#| msgid "LightGreen"
+msgid "Lighten"
+msgstr "GwyrddGolau"
+
+#: pigment/compositeops/KoCompositeOps.h:74
+#, fuzzy
+msgid "Hard Light"
+msgstr "&Uchder:"
+
+#: pigment/compositeops/KoCompositeOps.h:75
+#, fuzzy
+#| msgid "String:"
+msgid "Soft Light"
+msgstr "Llinyn:"
+
+#: pigment/compositeops/KoCompositeOps.h:76
+#, fuzzy
+#| msgctxt "color"
+#| msgid "LightGreen"
+msgid "Gamma Light"
+msgstr "GwyrddGolau"
+
+#: pigment/compositeops/KoCompositeOps.h:77
+#, fuzzy
+#| msgctxt "color"
+#| msgid "LightGreen"
+msgid "Vivid Light"
+msgstr "GwyrddGolau"
+
+#: pigment/compositeops/KoCompositeOps.h:78
+#, fuzzy
+#| msgctxt "color"
+#| msgid "LightGreen"
+msgid "Pin Light"
+msgstr "GwyrddGolau"
+
+#: pigment/compositeops/KoCompositeOps.h:79
+#, fuzzy
+#| msgid "Line width:"
+msgid "Linear Light"
+msgstr "Lled y llinell:"
+
+#: pigment/compositeops/KoCompositeOps.h:81
+#, fuzzy
+#| msgid "Color:"
+msgid "Color Burn"
+msgstr "Lliw:"
+
+#: pigment/compositeops/KoCompositeOps.h:82
+#, fuzzy
+#| msgid "Change Borders"
+msgid "Linear Burn"
+msgstr "Newid Ffiniau"
+
+#: pigment/compositeops/KoCompositeOps.h:83 pigment/KoCompositeOp.cpp:33
+#, fuzzy
+msgid "Darken"
+msgstr "Gwyrdd Tywyll"
+
+#: pigment/compositeops/KoCompositeOps.h:84
+msgid "Gamma Dark"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:86
+#, fuzzy
+#| msgid "Add Fraction"
+msgid "Addition"
+msgstr "Ychwanegu Ffracsiwn"
+
+#: pigment/compositeops/KoCompositeOps.h:91
+msgid "Arcus Tangent"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:92
+msgid "Difference"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:93
+#, fuzzy
+#| msgid "Exceptions"
+msgid "Exclusion"
+msgstr "Eithriadau"
+
+#: pigment/compositeops/KoCompositeOps.h:94
+msgid "Equivalence"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:95
+#, fuzzy
+msgid "Additive-Substractive"
+msgstr "Crynodeb"
+
+#: pigment/compositeops/KoCompositeOps.h:100
+#, fuzzy
+#| msgid "Company Name"
+msgid "Copy Alpha"
+msgstr "Enw Cwmni"
+
+#: pigment/compositeops/KoCompositeOps.h:125
+#, fuzzy
+#| msgid "Company Name"
+msgid "Copy Red"
+msgstr "Enw Cwmni"
+
+#: pigment/compositeops/KoCompositeOps.h:126
+#, fuzzy
+#| msgid "Green"
+msgid "Copy Green"
+msgstr "Gwyrdd"
+
+#: pigment/compositeops/KoCompositeOps.h:127
+#, fuzzy
+#| msgid "Company Name"
+msgid "Copy Blue"
+msgstr "Enw Cwmni"
+
+#: pigment/compositeops/KoCompositeOps.h:129 pigment/KoCompositeOp.cpp:27
+#, fuzzy
+#| msgid "Color:"
+msgid "Color"
+msgstr "Lliw:"
+
+#: pigment/compositeops/KoCompositeOps.h:130 widgets/KoUniColorChooser.cpp:116
+msgid "Hue"
+msgstr "Arlliw"
+
+#: pigment/compositeops/KoCompositeOps.h:131 widgets/KoUniColorChooser.cpp:125
+msgid "Saturation"
+msgstr "Dirlawnder"
+
+#: pigment/compositeops/KoCompositeOps.h:132
+#, fuzzy
+#| msgid "Saturation"
+msgid "Increase Saturation"
+msgstr "Dirlawnder"
+
+#: pigment/compositeops/KoCompositeOps.h:133
+#, fuzzy
+#| msgid "Saturation"
+msgid "Decrease Saturation"
+msgstr "Dirlawnder"
+
+#: pigment/compositeops/KoCompositeOps.h:134
+msgid "Luminosity"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:135
+#, fuzzy
+#| msgid "Change font size?"
+msgid "Increase Luminosity"
+msgstr "Newid maint yr wynebfath?"
+
+#: pigment/compositeops/KoCompositeOps.h:136
+#, fuzzy
+#| msgid "Change font size?"
+msgid "Decrease Luminosity"
+msgstr "Newid maint yr wynebfath?"
+
+#: pigment/compositeops/KoCompositeOps.h:138
+#, fuzzy
+#| msgid "Color:"
+msgid "Color HSI"
+msgstr "Lliw:"
+
+#: pigment/compositeops/KoCompositeOps.h:139
+#, fuzzy
+#| msgid "Hue"
+msgid "Hue HSI"
+msgstr "Arlliw"
+
+#: pigment/compositeops/KoCompositeOps.h:140
+#, fuzzy
+#| msgid "Saturation"
+msgid "Saturation HSI"
+msgstr "Dirlawnder"
+
+#: pigment/compositeops/KoCompositeOps.h:141
+#, fuzzy
+#| msgid "Saturation"
+msgid "Increase Saturation HSI"
+msgstr "Dirlawnder"
+
+#: pigment/compositeops/KoCompositeOps.h:142
+#, fuzzy
+#| msgid "Saturation"
+msgid "Decrease Saturation HSI"
+msgstr "Dirlawnder"
+
+#: pigment/compositeops/KoCompositeOps.h:143
+#, fuzzy
+#| msgid "Internet"
+msgid "Intensity"
+msgstr "Rhyngrwyd"
+
+#: pigment/compositeops/KoCompositeOps.h:144
+#, fuzzy
+#| msgid "Change Indent"
+msgid "Increase Intensity"
+msgstr "Newid Mewnoliad"
+
+#: pigment/compositeops/KoCompositeOps.h:145
+#, fuzzy
+#| msgid "Change Indent"
+msgid "Decrease Intensity"
+msgstr "Newid Mewnoliad"
+
+#: pigment/compositeops/KoCompositeOps.h:147
+#, fuzzy
+#| msgid "Color:"
+msgid "Color HSL"
+msgstr "Lliw:"
+
+#: pigment/compositeops/KoCompositeOps.h:148
+#, fuzzy
+#| msgid "Hue"
+msgid "Hue HSL"
+msgstr "Arlliw"
+
+#: pigment/compositeops/KoCompositeOps.h:149
+#, fuzzy
+#| msgid "Saturation"
+msgid "Saturation HSL"
+msgstr "Dirlawnder"
+
+#: pigment/compositeops/KoCompositeOps.h:150
+#, fuzzy
+#| msgid "Saturation"
+msgid "Increase Saturation HSL"
+msgstr "Dirlawnder"
+
+#: pigment/compositeops/KoCompositeOps.h:151
+#, fuzzy
+#| msgid "Saturation"
+msgid "Decrease Saturation HSL"
+msgstr "Dirlawnder"
+
+#: pigment/compositeops/KoCompositeOps.h:153
+#, fuzzy
+#| msgid "Change Indent"
+msgid "Increase Lightness"
+msgstr "Newid Mewnoliad"
+
+#: pigment/compositeops/KoCompositeOps.h:154
+#, fuzzy
+#| msgid "Change Indent"
+msgid "Decrease Lightness"
+msgstr "Newid Mewnoliad"
+
+#: pigment/compositeops/KoCompositeOps.h:156
+#, fuzzy
+#| msgid "Color:"
+msgid "Color HSV"
+msgstr "Lliw:"
+
+#: pigment/compositeops/KoCompositeOps.h:157
+#, fuzzy
+#| msgid "Hue"
+msgid "Hue HSV"
+msgstr "Arlliw"
+
+#: pigment/compositeops/KoCompositeOps.h:158
+#, fuzzy
+#| msgid "Saturation"
+msgid "Saturation HSV"
+msgstr "Dirlawnder"
+
+#: pigment/compositeops/KoCompositeOps.h:159
+#, fuzzy
+#| msgid "Saturation"
+msgid "Increase Saturation HSV"
+msgstr "Dirlawnder"
+
+#: pigment/compositeops/KoCompositeOps.h:160
+#, fuzzy
+#| msgid "Saturation"
+msgid "Decrease Saturation HSV"
+msgstr "Dirlawnder"
+
+#: pigment/compositeops/KoCompositeOps.h:161
+msgid "Value"
+msgstr "Gwerth"
+
+#: pigment/compositeops/KoCompositeOps.h:162
+#, fuzzy
+#| msgid "Change Indent"
+msgid "Increase Value"
+msgstr "Newid Mewnoliad"
+
+#: pigment/compositeops/KoCompositeOps.h:163
+#, fuzzy
+#| msgid "Change Indent"
+msgid "Decrease Value"
+msgstr "Newid Mewnoliad"
+
 #: pigment/resources/KoStopGradient.cpp:421
 msgid "SVG Gradient"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:30
+#, fuzzy
+#| msgid "Autoinclude"
+msgid "Arithmetic"
+msgstr "Hunan-gynnwys"
+
+#: pigment/KoCompositeOp.cpp:31
+#, fuzzy
+#| msgid "Relative"
+msgid "Negative"
+msgstr " Cymharol"
+
+#: pigment/KoCompositeOp.cpp:34
+msgid "HSY"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:35
+msgid "HSI"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:36
+msgid "HSL"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:37
+msgid "HSV"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:38
+msgid "Mix"
 msgstr ""
 
 #: widgets/KoColorSetWidget.cpp:189
@@ -3808,14 +4163,6 @@ msgstr "Ton"
 #| msgid "Choose Filter"
 msgid "Choose File to Add"
 msgstr "Dewis Hidlen"
-
-#: widgets/KoUniColorChooser.cpp:116
-msgid "Hue"
-msgstr "Arlliw"
-
-#: widgets/KoUniColorChooser.cpp:125
-msgid "Saturation"
-msgstr "Dirlawnder"
 
 #: widgets/KoUniColorChooser.cpp:134
 msgid "Value (brightness)"
@@ -5056,6 +5403,12 @@ msgid "Blur radius:"
 msgstr ""
 
 #, fuzzy
+#~| msgctxt "color"
+#~| msgid "LightGreen"
+#~ msgid "Light"
+#~ msgstr "GwyrddGolau"
+
+#, fuzzy
 #~| msgid "Guide Lines"
 #~ msgid "Hide Dockers"
 #~ msgstr "Cyfeiryddion"
@@ -5064,110 +5417,6 @@ msgstr ""
 #~| msgid "Author"
 #~ msgid "Atop"
 #~ msgstr "Awdur"
-
-#, fuzzy
-#~| msgid "Mail Merge"
-#~ msgid "Grain Merge"
-#~ msgstr "Uno Post"
-
-#, fuzzy
-#~ msgid "Hard Mix"
-#~ msgstr "&Uchder:"
-
-#, fuzzy
-#~| msgid "Color:"
-#~ msgid "Color Burn"
-#~ msgstr "Lliw:"
-
-#, fuzzy
-#~ msgid "Color Dodge"
-#~ msgstr "Lliwiau"
-
-#, fuzzy
-#~| msgid "Change Borders"
-#~ msgid "Linear Burn"
-#~ msgstr "Newid Ffiniau"
-
-#, fuzzy
-#~| msgid "Change Borders"
-#~ msgid "Linear Dodge"
-#~ msgstr "Newid Ffiniau"
-
-#, fuzzy
-#~ msgid "Darken"
-#~ msgstr "Gwyrdd Tywyll"
-
-#, fuzzy
-#~| msgctxt "color"
-#~| msgid "LightGreen"
-#~ msgid "Lighten"
-#~ msgstr "GwyrddGolau"
-
-#, fuzzy
-#~ msgid "Hard Light"
-#~ msgstr "&Uchder:"
-
-#, fuzzy
-#~| msgid "String:"
-#~ msgid "Soft Light"
-#~ msgstr "Llinyn:"
-
-#, fuzzy
-#~| msgctxt "color"
-#~| msgid "LightGreen"
-#~ msgid "Gamma Light"
-#~ msgstr "GwyrddGolau"
-
-#, fuzzy
-#~| msgctxt "color"
-#~| msgid "LightGreen"
-#~ msgid "Vivid Light"
-#~ msgstr "GwyrddGolau"
-
-#, fuzzy
-#~| msgctxt "color"
-#~| msgid "LightGreen"
-#~ msgid "Pin Light"
-#~ msgstr "GwyrddGolau"
-
-#, fuzzy
-#~| msgid "Line width:"
-#~ msgid "Linear Light"
-#~ msgstr "Lled y llinell:"
-
-#, fuzzy
-#~| msgid "Add Fraction"
-#~ msgid "Addition"
-#~ msgstr "Ychwanegu Ffracsiwn"
-
-#, fuzzy
-#~| msgid "Exceptions"
-#~ msgid "Exclusion"
-#~ msgstr "Eithriadau"
-
-#, fuzzy
-#~| msgid "Variable"
-#~ msgid "Parallel"
-#~ msgstr "Newidyn"
-
-#, fuzzy
-#~ msgid "Additive-Substractive"
-#~ msgstr "Crynodeb"
-
-#, fuzzy
-#~| msgid "Company Name"
-#~ msgid "Copy Red"
-#~ msgstr "Enw Cwmni"
-
-#, fuzzy
-#~| msgid "Green"
-#~ msgid "Copy Green"
-#~ msgstr "Gwyrdd"
-
-#, fuzzy
-#~| msgid "Company Name"
-#~ msgid "Copy Blue"
-#~ msgstr "Enw Cwmni"
 
 #, fuzzy
 #~| msgid "Strikeout:"
@@ -5270,9 +5519,6 @@ msgstr ""
 #~| msgid "Background color:"
 #~ msgid "Background tool"
 #~ msgstr "Lliw cefndir:"
-
-#~ msgid "Value"
-#~ msgstr "Gwerth"
 
 #, fuzzy
 #~| msgid "Custom"
@@ -5766,9 +6012,6 @@ msgstr ""
 
 #~ msgid "Insert Link"
 #~ msgstr "Mewnosod Cyswllt"
-
-#~ msgid "Internet"
-#~ msgstr "Rhyngrwyd"
 
 #~ msgid "Mail & News"
 #~ msgstr "Post a Newyddion"
@@ -7539,9 +7782,6 @@ msgstr ""
 
 #~ msgid "Bold Italic"
 #~ msgstr "Trwm Italig"
-
-#~ msgid "Relative"
-#~ msgstr " Cymharol"
 
 #~ msgid "Font size<br><i>fixed</i> or <i>relative</i><br>to environment"
 #~ msgstr ""
