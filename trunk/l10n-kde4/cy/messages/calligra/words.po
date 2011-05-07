@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-05-06 03:32+0200\n"
+"POT-Creation-Date: 2011-05-07 03:32+0200\n"
 "PO-Revision-Date: 2004-08-16 18:16+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -714,45 +714,75 @@ msgstr "Canlyniad Gwirio Sillafu"
 msgid "Change Variable To"
 msgstr "Newid Newidyn i"
 
-#: part/KWDocument.cpp:574
+#: part/KWDLoader.cpp:74
+msgid "Invalid document. No mimetype specified."
+msgstr "Dogfen annilys.  Ni phenodwyd math mime."
+
+#: part/KWDLoader.cpp:78
+#, kde-format
+msgid ""
+"Invalid document. Expected mimetype application/x-kword or application/vnd."
+"kde.kword, got %1"
+msgstr ""
+"Dogfen annilys.  Disgwylwyd math mime application/x-kword neu application/"
+"vnd.kde.kword, cafwyd %1"
+
+#: part/KWDLoader.cpp:104
+#, kde-format
+msgid "Invalid document. Paper size: %1x%2"
+msgstr "Dogfen annilys.  Maint papur: %1x%2"
+
+#: part/KWDLoader.cpp:691
+#, fuzzy
+#| msgid "Unable to create database object"
+msgid "Unable to locate footnote text"
+msgstr "Methu creu gwrthrych cronfa ddata"
+
+#: part/KWDLoader.cpp:717
+#, fuzzy
+#| msgid "Unable to create database object"
+msgid "Unable to locate note-text"
+msgstr "Methu creu gwrthrych cronfa ddata"
+
+#: part/KWDocument.cpp:573
 #, fuzzy
 #| msgid "Copy%1-%2"
 msgid "Copy"
 msgstr "Copio %1-%2 "
 
-#: part/KWDocument.cpp:619
+#: part/KWDocument.cpp:618
 #, fuzzy
 #| msgctxt "Style name"
 #| msgid "Head 1"
 msgid "Head 1"
 msgstr "Pennawd 1"
 
-#: part/KWDocument.cpp:626
+#: part/KWDocument.cpp:625
 #, fuzzy
 #| msgctxt "Style name"
 #| msgid "Head 2"
 msgid "Head 2"
 msgstr "Pennawd 2"
 
-#: part/KWDocument.cpp:633
+#: part/KWDocument.cpp:632
 #, fuzzy
 #| msgctxt "Style name"
 #| msgid "Head 3"
 msgid "Head 3"
 msgstr "Pennawd 3"
 
-#: part/KWDocument.cpp:640
+#: part/KWDocument.cpp:639
 #, fuzzy
 #| msgctxt "Style name"
 #| msgid "Bullet List"
 msgid "Bullet List"
 msgstr "Rhestr efo Bwledi"
 
-#: part/KWDocument.cpp:993
+#: part/KWDocument.cpp:986
 msgid "Can not find needed text component, Words will quit now"
 msgstr ""
 
-#: part/KWDocument.cpp:994
+#: part/KWDocument.cpp:987
 msgid "Installation Error"
 msgstr ""
 
@@ -816,17 +846,17 @@ msgstr "Dileu Ffrâm"
 msgid "Insert Page Style"
 msgstr "Mewnosod Tudalen"
 
-#: part/commands/KWPageRemoveCommand.cpp:32
-#, fuzzy
-#| msgid "Remove entry"
-msgid "Remove Page"
-msgstr "Gwaredu eitem"
-
 #: part/commands/KWPageStylePropertiesCommand.cpp:36
 #, fuzzy
 #| msgid "Frame Properties"
 msgid "Page Properties"
 msgstr "Priodweddau Fframiau"
+
+#: part/commands/KWPageRemoveCommand.cpp:33
+#, fuzzy
+#| msgid "Remove entry"
+msgid "Remove Page"
+msgstr "Gwaredu eitem"
 
 #: part/dialogs/KWFrameDialog.cpp:38 part/dialogs/KWShapeConfigFactory.cpp:94
 msgid "Options"
@@ -1360,36 +1390,6 @@ msgstr "Testun Plaen"
 #| msgid "Insert Page"
 msgid "Other text"
 msgstr "Mewnosod Tudalen"
-
-#: part/KWDLoader.cpp:74
-msgid "Invalid document. No mimetype specified."
-msgstr "Dogfen annilys.  Ni phenodwyd math mime."
-
-#: part/KWDLoader.cpp:78
-#, kde-format
-msgid ""
-"Invalid document. Expected mimetype application/x-kword or application/vnd."
-"kde.kword, got %1"
-msgstr ""
-"Dogfen annilys.  Disgwylwyd math mime application/x-kword neu application/"
-"vnd.kde.kword, cafwyd %1"
-
-#: part/KWDLoader.cpp:104
-#, kde-format
-msgid "Invalid document. Paper size: %1x%2"
-msgstr "Dogfen annilys.  Maint papur: %1x%2"
-
-#: part/KWDLoader.cpp:690
-#, fuzzy
-#| msgid "Unable to create database object"
-msgid "Unable to locate footnote text"
-msgstr "Methu creu gwrthrych cronfa ddata"
-
-#: part/KWDLoader.cpp:716
-#, fuzzy
-#| msgid "Unable to create database object"
-msgid "Unable to locate note-text"
-msgstr "Methu creu gwrthrych cronfa ddata"
 
 #: part/KWView.cpp:256
 #, fuzzy
