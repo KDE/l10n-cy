@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-05-17 03:41+0200\n"
+"POT-Creation-Date: 2011-05-20 03:32+0200\n"
 "PO-Revision-Date: 2004-09-07 14:22+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -62,7 +62,7 @@ msgstr ""
 
 #: flake/KoShapeController.cpp:65 kotext/InsertTextReferenceAction.cpp:63
 #: kotext/InsertVariableAction.cpp:51
-#: main/rdf/InsertSemanticObjectReferenceAction.cpp:63
+#: main/rdf/InsertSemanticObjectReferenceAction.cpp:64
 #: main/rdf/InsertSemanticObjectCreateAction.cpp:59
 #, fuzzy, kde-format
 msgid "%1 Options"
@@ -1821,7 +1821,7 @@ msgid "Could not create the file for saving"
 msgstr "Methwyd agor y ffeil i'w gadw"
 
 #: main/KoDocument.cpp:916 main/KoDocument.cpp:938 main/KoDocument.cpp:969
-#: main/KoDocument.cpp:1003 main/rdf/KoDocumentRdf.cpp:306
+#: main/KoDocument.cpp:1003 main/rdf/KoDocumentRdf.cpp:309
 #, fuzzy, kde-format
 msgid "Not able to write '%1'. Partition full?"
 msgstr "Methu ysgrifennu 'maindoc.xml'."
@@ -2706,38 +2706,52 @@ msgstr "Dyddiad:"
 msgid "&New View"
 msgstr "G&waredu Golwg"
 
-#: main/rdf/InsertSemanticObjectReferenceAction.cpp:55
+#: main/rdf/InsertSemanticObjectReferenceAction.cpp:56
 msgid "Select the object you want to reference"
 msgstr ""
 
-#: main/rdf/KoRdfSemanticTreeWidgetItem.cpp:111
+#: main/rdf/KoRdfSemanticTreeWidgetItem.cpp:112
 #, fuzzy
 #| msgid "Apply Style %1"
 msgid "Apply Stylesheet"
 msgstr "Gweithredu Arddull %1"
 
-#: main/rdf/KoRdfSemanticTreeWidgetItem.cpp:113
+#: main/rdf/KoRdfSemanticTreeWidgetItem.cpp:114
 #: main/rdf/KoSemanticStylesheetsEditor.cpp:113
 msgid "System"
 msgstr ""
 
-#: main/rdf/KoRdfSemanticTreeWidgetItem.cpp:122
+#: main/rdf/KoRdfSemanticTreeWidgetItem.cpp:123
 #: main/rdf/KoSemanticStylesheetsEditor.cpp:129
 #, fuzzy
 msgid "User"
 msgstr "&Mewnosod:"
 
-#: main/rdf/KoRdfSemanticTreeWidgetItem.cpp:136
+#: main/rdf/KoRdfSemanticTreeWidgetItem.cpp:137
 msgid "Reapply Current"
 msgstr ""
 
-#: main/rdf/KoRdfSemanticTreeWidgetItem.cpp:141
+#: main/rdf/KoRdfSemanticTreeWidgetItem.cpp:142
 msgid "Disassociate"
 msgstr ""
 
-#: main/rdf/KoRdfSemanticTreeWidgetItem.cpp:161
+#: main/rdf/KoRdfSemanticTreeWidgetItem.cpp:162
 #, kde-format
 msgid "Edit %1"
+msgstr ""
+
+#: main/rdf/KoDocumentRdfEditWidget.cpp:274
+#, kde-format
+msgctxt "statement is an Rdf related term"
+msgid "<qt>Edits will be lost.<p>There is %1 invalid statement left.</qt>"
+msgid_plural ""
+"<qt>Edits will be lost.<p>There are %1 invalid statements left.</qt>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: main/rdf/KoDocumentRdfEditWidget.cpp:277
+msgctxt "statement is an Rdf related term"
+msgid "Discard invalid statements?"
 msgstr ""
 
 #: main/rdf/KoRdfCalendarEventTreeWidgetItem.cpp:43
@@ -2782,7 +2796,7 @@ msgstr "&Allforio..."
 msgid "Location Information"
 msgstr "Gwybodaeth Ddogfen"
 
-#: main/rdf/KoRdfSemanticTree.cpp:49
+#: main/rdf/KoRdfSemanticTree.cpp:50
 #, fuzzy
 #| msgctxt "color"
 #| msgid "Purple"
@@ -2791,13 +2805,13 @@ msgstr "Porffor"
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:240
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: main/rdf/KoRdfSemanticTree.cpp:52 rc.cpp:253
+#: main/rdf/KoRdfSemanticTree.cpp:53 rc.cpp:253
 msgid "Events"
 msgstr ""
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:256
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: main/rdf/KoRdfSemanticTree.cpp:55 rc.cpp:256
+#: main/rdf/KoRdfSemanticTree.cpp:56 rc.cpp:256
 #, fuzzy
 #| msgid "Location:"
 msgid "Locations"
@@ -2860,38 +2874,20 @@ msgstr "Dyddiad"
 msgid "Stored In"
 msgstr ""
 
-#: main/rdf/KoDocumentRdf.cpp:851
-msgid "Reference"
-msgstr ""
-
-#: main/rdf/KoDocumentRdfEditWidget.cpp:270
-#, kde-format
-msgctxt "statement is an Rdf related term"
-msgid "<qt>Edits will be lost.<p>There is %1 invalid statement left.</qt>"
-msgid_plural ""
-"<qt>Edits will be lost.<p>There are %1 invalid statements left.</qt>"
-msgstr[0] ""
-msgstr[1] ""
-
-#: main/rdf/KoDocumentRdfEditWidget.cpp:273
-msgctxt "statement is an Rdf related term"
-msgid "Discard invalid statements?"
-msgstr ""
-
-#: main/rdf/KoRdfCalendarEvent.cpp:201
+#: main/rdf/KoRdfCalendarEvent.cpp:162
 #, fuzzy
 #| msgctxt "color"
 #| msgid "Azure"
 msgid "Area"
 msgstr "Asur"
 
-#: main/rdf/KoRdfCalendarEvent.cpp:202
+#: main/rdf/KoRdfCalendarEvent.cpp:163
 #, fuzzy
 #| msgid "Version"
 msgid "Region"
 msgstr "Fersiwn"
 
-#: main/rdf/KoRdfCalendarEvent.cpp:453
+#: main/rdf/KoRdfCalendarEvent.cpp:404
 #, fuzzy, kde-format
 #| msgid ""
 #| "Could not save\n"
@@ -2903,7 +2899,7 @@ msgstr ""
 "Methodd gadw\n"
 " %1"
 
-#: main/rdf/KoRdfCalendarEvent.cpp:477
+#: main/rdf/KoRdfCalendarEvent.cpp:428
 #, fuzzy, kde-format
 #| msgid ""
 #| "Could not save\n"
@@ -2914,6 +2910,10 @@ msgid ""
 msgstr ""
 "Methodd gadw\n"
 " %1"
+
+#: main/rdf/KoDocumentRdf.cpp:854
+msgid "Reference"
+msgstr ""
 
 #: main/config/KoConfigDocumentPage.cpp:75
 #, fuzzy
