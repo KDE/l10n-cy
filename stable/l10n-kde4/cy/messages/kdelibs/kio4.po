@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-01 14:12+0200\n"
+"POT-Creation-Date: 2011-06-06 14:19+0200\n"
 "PO-Revision-Date: 2004-01-16 09:20+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -72,15 +72,15 @@ msgctxt "@title:window"
 msgid "Add Bookmarks"
 msgstr "Ychwanegu Tudnod"
 
-#: bookmarks/kbookmarkdialog.cc:132 ../kfile/kdirselectdialog.cpp:278
+#: bookmarks/kbookmarkdialog.cc:132 ../kfile/kdirselectdialog.cpp:281
 #, fuzzy
 #| msgid "Select Folder"
 msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "Dewis Plygell"
 
-#: bookmarks/kbookmarkdialog.cc:159 ../kfile/kdirselectdialog.cpp:132
-#: ../kfile/knewfilemenu.cpp:1013
+#: bookmarks/kbookmarkdialog.cc:159 ../kfile/knewfilemenu.cpp:1013
+#: ../kfile/kdirselectdialog.cpp:135
 #, fuzzy
 #| msgid "New Folder"
 msgctxt "@title:window"
@@ -6370,75 +6370,6 @@ msgstr "Dim meta-wybodaeth am %1 "
 msgid "No metainfo for %1"
 msgstr "Dim meta-wybodaeth am %1 "
 
-#: ../kfile/kdirselectdialog.cpp:128
-#, fuzzy
-#| msgid "New Folder"
-msgctxt "folder name"
-msgid "New Folder"
-msgstr "Plygell Newydd"
-
-#: ../kfile/kdirselectdialog.cpp:133
-#, fuzzy, kde-format
-#| msgid ""
-#| "Create new folder in:\n"
-#| "%1"
-msgctxt "@label:textbox"
-msgid ""
-"Create new folder in:\n"
-"%1"
-msgstr ""
-"Creu plygell newydd yn: \n"
-"%1"
-
-#: ../kfile/kdirselectdialog.cpp:156 ../kfile/kdiroperator.cpp:766
-#, kde-format
-msgid "A file or folder named %1 already exists."
-msgstr "Mae ffeil neu blygell o'r enw %1 mewn bod yn barod."
-
-#: ../kfile/kdirselectdialog.cpp:160 ../kfile/kdiroperator.cpp:768
-#, fuzzy
-msgid "You do not have permission to create that folder."
-msgstr "Does dim hawliau ganddoch i greu'r plygell yna."
-
-#: ../kfile/kdirselectdialog.cpp:280
-#, fuzzy
-#| msgid "New Folder..."
-msgctxt "@action:button"
-msgid "New Folder..."
-msgstr "Plygell Newydd..."
-
-#: ../kfile/kdirselectdialog.cpp:321
-#, fuzzy
-#| msgid "New Folder..."
-msgctxt "@action:inmenu"
-msgid "New Folder..."
-msgstr "Plygell Newydd..."
-
-#: ../kfile/kdirselectdialog.cpp:328
-#, fuzzy
-#| msgid "Move to Trash"
-msgctxt "@action:inmenu"
-msgid "Move to Trash"
-msgstr "Symud i'r Sbwriel"
-
-#: ../kfile/kdirselectdialog.cpp:335
-#, fuzzy
-msgctxt "@action:inmenu"
-msgid "Delete"
-msgstr "Dileu"
-
-#: ../kfile/kdirselectdialog.cpp:344
-#, fuzzy
-msgctxt "@option:check"
-msgid "Show Hidden Folders"
-msgstr "Dangos Ffeiliau Cudd"
-
-#: ../kfile/kdirselectdialog.cpp:351
-#, fuzzy
-msgctxt "@action:inmenu"
-msgid "Properties"
-msgstr "Priodweddau i %1"
-
 #: ../kfile/kfilefiltercombo.cpp:36 ../kfile/kfilewidget.cpp:1790
 msgid "*|All Files"
 msgstr "*|Pob Ffeil"
@@ -6603,11 +6534,6 @@ msgstr ""
 #| msgid "An unexpected error (%1) occurred while attempting to %2."
 msgid "An error occurred while accessing '%1'"
 msgstr "Digwyddodd gwall annisgwyl (%1) wrth geisio cysylltu i %2"
-
-#: ../kfile/kfiletreeview.cpp:187
-#, fuzzy
-msgid "Show Hidden Folders"
-msgstr "Dangos Ffeiliau Cudd"
 
 #: ../kfile/kfilewidget.cpp:285
 #, fuzzy
@@ -7011,6 +6937,11 @@ msgstr ""
 "Creu plygell newydd yn: \n"
 "%1"
 
+#: ../kfile/kfiletreeview.cpp:187
+#, fuzzy
+msgid "Show Hidden Folders"
+msgstr "Dangos Ffeiliau Cudd"
+
 #: ../kfile/kfileplacesview.cpp:575
 #, fuzzy
 msgctxt "@action:inmenu"
@@ -7115,6 +7046,16 @@ msgstr ""
 #: ../kfile/kurlnavigatortogglebutton.cpp:92
 msgid "Click to Edit Location"
 msgstr ""
+
+#: ../kfile/kdiroperator.cpp:766 ../kfile/kdirselectdialog.cpp:159
+#, kde-format
+msgid "A file or folder named %1 already exists."
+msgstr "Mae ffeil neu blygell o'r enw %1 mewn bod yn barod."
+
+#: ../kfile/kdiroperator.cpp:768 ../kfile/kdirselectdialog.cpp:163
+#, fuzzy
+msgid "You do not have permission to create that folder."
+msgstr "Does dim hawliau ganddoch i greu'r plygell yna."
 
 #: ../kfile/kdiroperator.cpp:783
 #, fuzzy
@@ -7297,6 +7238,65 @@ msgstr "Agor Ymgom Ffeil"
 #, fuzzy
 msgid "&View"
 msgstr "&Rhagolwg"
+
+#: ../kfile/kdirselectdialog.cpp:131
+#, fuzzy
+#| msgid "New Folder"
+msgctxt "folder name"
+msgid "New Folder"
+msgstr "Plygell Newydd"
+
+#: ../kfile/kdirselectdialog.cpp:136
+#, fuzzy, kde-format
+#| msgid ""
+#| "Create new folder in:\n"
+#| "%1"
+msgctxt "@label:textbox"
+msgid ""
+"Create new folder in:\n"
+"%1"
+msgstr ""
+"Creu plygell newydd yn: \n"
+"%1"
+
+#: ../kfile/kdirselectdialog.cpp:283
+#, fuzzy
+#| msgid "New Folder..."
+msgctxt "@action:button"
+msgid "New Folder..."
+msgstr "Plygell Newydd..."
+
+#: ../kfile/kdirselectdialog.cpp:324
+#, fuzzy
+#| msgid "New Folder..."
+msgctxt "@action:inmenu"
+msgid "New Folder..."
+msgstr "Plygell Newydd..."
+
+#: ../kfile/kdirselectdialog.cpp:331
+#, fuzzy
+#| msgid "Move to Trash"
+msgctxt "@action:inmenu"
+msgid "Move to Trash"
+msgstr "Symud i'r Sbwriel"
+
+#: ../kfile/kdirselectdialog.cpp:338
+#, fuzzy
+msgctxt "@action:inmenu"
+msgid "Delete"
+msgstr "Dileu"
+
+#: ../kfile/kdirselectdialog.cpp:347
+#, fuzzy
+msgctxt "@option:check"
+msgid "Show Hidden Folders"
+msgstr "Dangos Ffeiliau Cudd"
+
+#: ../kfile/kdirselectdialog.cpp:354
+#, fuzzy
+msgctxt "@action:inmenu"
+msgid "Properties"
+msgstr "Priodweddau i %1"
 
 #, fuzzy
 #~| msgid "Size:"
