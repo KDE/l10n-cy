@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konqueror\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-20 04:05+0200\n"
+"POT-Creation-Date: 2011-07-05 04:21+0200\n"
 "PO-Revision-Date: 2003-12-27 14:40+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -21,6 +21,17 @@ msgstr ""
 "X-Generator: KBabel 1.2\n"
 "\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: src/konqextensionmanager.cpp:54
+#, fuzzy
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Ffurfweddu Bar Ochr"
+
+#: src/konqextensionmanager.cpp:74 src/konqextensionmanager.cpp:77
+#: src/konqextensionmanager.cpp:78
+msgid "Extensions"
+msgstr ""
 
 #: src/konqclosedwindowsmanager.cpp:418 src/konqmainwindow.cpp:5010
 #: src/konqmainwindow.cpp:5070
@@ -381,31 +392,6 @@ msgstr "%1/s"
 msgid "Stalled"
 msgstr "Wedi Seibio"
 
-#: src/konqguiclients.cpp:66
-#, fuzzy, kde-format
-#| msgid "Preview in %1"
-msgid "Preview &in %1"
-msgstr "Rhagolygon mewn %1"
-
-#: src/konqguiclients.cpp:135
-#, kde-format
-msgid "Show %1"
-msgstr "Dangos %1"
-
-#: src/konqhistorydialog.cpp:45
-#, fuzzy
-#| msgid "History"
-msgctxt "@title:window"
-msgid "History"
-msgstr "Hanes"
-
-#: src/konqhistorydialog.cpp:61 src/konqhistoryview.cpp:143
-#, fuzzy
-#| msgid "Sort"
-msgctxt "@action:inmenu Parent of 'By Name' and 'By Date'"
-msgid "Sort"
-msgstr "Trefnu"
-
 #: src/konqhistorymodel.cpp:137
 #, fuzzy, kde-format
 msgid ""
@@ -425,56 +411,66 @@ msgstr "Ffeil Lleol"
 msgid "Miscellaneous"
 msgstr ""
 
-#: src/konqmain.cpp:96
-#, fuzzy
-msgid "Start without a default window, when called without URLs"
-msgstr "Dechrau heb ffenestr rhagosodedig"
+#: src/konqhistoryview.cpp:62 src/konqmainwindow.cpp:4537
+#: sidebar/web_module/web_module.cpp:61
+msgid "Open in New &Window"
+msgstr "Agor mewn Ffenestr &Newydd"
 
-#: src/konqmain.cpp:98
-msgid ""
-"Preload for later use. This mode does not support URLs on the command line"
+#: src/konqhistoryview.cpp:67
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:94
+#: sidebar/trees/konq_sidebartree.cpp:232
+msgid "Open in New Tab"
+msgstr "Agor mewn Tab Newydd"
+
+#: src/konqhistoryview.cpp:71
+#, fuzzy
+#| msgid "Copy Link Address"
+msgid "&Copy Link Address"
+msgstr "Copïo Cyfeiriad Cyswllt"
+
+#: src/konqhistoryview.cpp:76
+msgid "&Remove Entry"
+msgstr "&Gwaredu Cofnod"
+
+#: src/konqhistoryview.cpp:83
+msgid "C&lear History"
+msgstr "C&lirio'r Hanes"
+
+#: src/konqhistoryview.cpp:88
+msgid "&Preferences..."
 msgstr ""
 
-#: src/konqmain.cpp:100
+#: src/konqhistoryview.cpp:95
+msgid "By &Name"
+msgstr "Gan &Enw"
+
+#: src/konqhistoryview.cpp:101
+msgid "By &Date"
+msgstr "Gan &Ddyddiad"
+
+#: src/konqhistoryview.cpp:111
 #, fuzzy
-msgid "Profile to open"
-msgstr "Proffeil i agor."
+#| msgid "Clear History"
+msgid "Search in history"
+msgstr "Gwaredu Hanes"
 
-#: src/konqmain.cpp:102
+#: src/konqhistoryview.cpp:143 src/konqhistorydialog.cpp:61
 #, fuzzy
-msgid "List available profiles"
-msgstr "Rhestru'r proffilau sydd ar gael."
+#| msgid "Sort"
+msgctxt "@action:inmenu Parent of 'By Name' and 'By Date'"
+msgid "Sort"
+msgstr "Trefnu"
 
-#: src/konqmain.cpp:104
+#: src/konqhistoryview.cpp:171 sidebar/history_module/kcmhistory.cpp:254
+msgid "Do you really want to clear the entire history?"
+msgstr "Ydych wir am glirio'r hanes gyfan?"
+
+#: src/konqhistoryview.cpp:172 sidebar/history_module/kcmhistory.cpp:256
 #, fuzzy
-msgid "List available sessions"
-msgstr "Rhestru'r proffilau sydd ar gael."
-
-#: src/konqmain.cpp:106
-#, fuzzy
-msgid "Session to open"
-msgstr "Lleoliad i agor."
-
-#: src/konqmain.cpp:108
-#, fuzzy
-msgid "Mimetype to use for this URL (e.g. text/html or inode/directory)"
-msgstr ""
-"Math MIME i ddefnyddio i'r URL hwn, (e.e. text/html neu inode/directory)."
-
-#: src/konqmain.cpp:109
-msgid "Part to use (e.g. khtml or kwebkitpart)"
-msgstr ""
-
-#: src/konqmain.cpp:111
-msgid ""
-"For URLs that point to files, opens the directory and selects the file, "
-"instead of opening the actual file"
-msgstr ""
-
-#: src/konqmain.cpp:113
-#, fuzzy
-msgid "Location to open"
-msgstr "Lleoliad i agor."
+#| msgid "Clear History?"
+msgctxt "@title:window"
+msgid "Clear History?"
+msgstr "Clirio'r Hanes?"
 
 #: src/konqtabs.cpp:66
 msgid ""
@@ -545,86 +541,6 @@ msgstr "&Cau Tab"
 msgid "Und&o"
 msgstr ""
 
-#: src/konqextensionmanager.cpp:54
-#, fuzzy
-msgctxt "@title:window"
-msgid "Configure"
-msgstr "Ffurfweddu Bar Ochr"
-
-#: src/konqextensionmanager.cpp:74 src/konqextensionmanager.cpp:77
-#: src/konqextensionmanager.cpp:78
-msgid "Extensions"
-msgstr ""
-
-#: src/konqhistoryview.cpp:62 src/konqmainwindow.cpp:4537
-#: sidebar/web_module/web_module.cpp:61
-msgid "Open in New &Window"
-msgstr "Agor mewn Ffenestr &Newydd"
-
-#: src/konqhistoryview.cpp:67
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:94
-#: sidebar/trees/konq_sidebartree.cpp:232
-msgid "Open in New Tab"
-msgstr "Agor mewn Tab Newydd"
-
-#: src/konqhistoryview.cpp:71
-#, fuzzy
-#| msgid "Copy Link Address"
-msgid "&Copy Link Address"
-msgstr "Copïo Cyfeiriad Cyswllt"
-
-#: src/konqhistoryview.cpp:76
-msgid "&Remove Entry"
-msgstr "&Gwaredu Cofnod"
-
-#: src/konqhistoryview.cpp:83
-msgid "C&lear History"
-msgstr "C&lirio'r Hanes"
-
-#: src/konqhistoryview.cpp:88
-msgid "&Preferences..."
-msgstr ""
-
-#: src/konqhistoryview.cpp:95
-msgid "By &Name"
-msgstr "Gan &Enw"
-
-#: src/konqhistoryview.cpp:101
-msgid "By &Date"
-msgstr "Gan &Ddyddiad"
-
-#: src/konqhistoryview.cpp:111
-#, fuzzy
-#| msgid "Clear History"
-msgid "Search in history"
-msgstr "Gwaredu Hanes"
-
-#: src/konqhistoryview.cpp:171 sidebar/history_module/kcmhistory.cpp:254
-msgid "Do you really want to clear the entire history?"
-msgstr "Ydych wir am glirio'r hanes gyfan?"
-
-#: src/konqhistoryview.cpp:172 sidebar/history_module/kcmhistory.cpp:256
-#, fuzzy
-#| msgid "Clear History?"
-msgctxt "@title:window"
-msgid "Clear History?"
-msgstr "Clirio'r Hanes?"
-
-#: src/konqprofiledlg.cpp:111
-#, fuzzy
-#| msgid "Profile Management"
-msgctxt "@title:window"
-msgid "Profile Management"
-msgstr "Trefnu Proffilau"
-
-#: src/konqprofiledlg.cpp:114
-msgid "&Rename Profile"
-msgstr "&Ail-enwi Proffil"
-
-#: src/konqprofiledlg.cpp:115
-msgid "&Delete Profile"
-msgstr "&Dileu Proffil"
-
 #: src/konqsessiondlg.cpp:77
 #, fuzzy
 msgctxt "@title:window"
@@ -662,96 +578,74 @@ msgctxt "@title:window"
 msgid "Session exists. Overwrite?"
 msgstr ""
 
-#: src/konqsessionmanager.cpp:330
-msgid ""
-"Konqueror did not close correctly. Would you like to restore the previous "
-"session?"
-msgstr ""
+#: src/konqguiclients.cpp:66
+#, fuzzy, kde-format
+#| msgid "Preview in %1"
+msgid "Preview &in %1"
+msgstr "Rhagolygon mewn %1"
 
-#: src/konqsessionmanager.cpp:332
+#: src/konqguiclients.cpp:135
+#, kde-format
+msgid "Show %1"
+msgstr "Dangos %1"
+
+#: src/konqhistorydialog.cpp:45
 #, fuzzy
-#| msgid "Renaming"
+#| msgid "History"
 msgctxt "@title:window"
-msgid "Restore Session?"
-msgstr "Ailenwi"
+msgid "History"
+msgstr "Hanes"
 
-#: src/konqsessionmanager.cpp:333
+#: src/konqmain.cpp:96
 #, fuzzy
-#| msgid "Renaming"
-msgid "Restore Session"
-msgstr "Ailenwi"
+msgid "Start without a default window, when called without URLs"
+msgstr "Dechrau heb ffenestr rhagosodedig"
 
-#: src/konqsessionmanager.cpp:334
-msgid "Do Not Restore"
-msgstr ""
-
-#: src/konqsessionmanager.cpp:335
-#, fuzzy
-#| msgid "As New Folder"
-msgid "Ask Me Later"
-msgstr "Fel Plygell Newydd"
-
-#: src/konqviewmanager.cpp:1411
-#, fuzzy
+#: src/konqmain.cpp:98
 msgid ""
-"You have multiple tabs open in this window.\n"
-"Loading a view profile will close them."
+"Preload for later use. This mode does not support URLs on the command line"
 msgstr ""
-"Mae gennych amryw dabiau ar agor yn y ffenestr hon; a ydych yn sicr eich bod "
-"am ei chau?"
 
-#: src/konqviewmanager.cpp:1413 src/konqmainwindow.cpp:4937
+#: src/konqmain.cpp:100
 #, fuzzy
-#| msgid "Confirmation"
-msgctxt "@title:window"
-msgid "Confirmation"
-msgstr "Cadarnhâd"
+msgid "Profile to open"
+msgstr "Proffeil i agor."
 
-#: src/konqviewmanager.cpp:1414
-msgid "Load View Profile"
-msgstr "Llwytho Proffil Golwg"
-
-#: src/konqviewmanager.cpp:1426
-msgid ""
-"This tab contains changes that have not been submitted.\n"
-"Loading a profile will discard these changes."
-msgstr ""
-
-#: src/konqviewmanager.cpp:1427 src/konqmainwindow.cpp:1615
-#: src/konqmainwindow.cpp:2342 src/konqmainwindow.cpp:2420
-#: src/konqmainwindow.cpp:2450 src/konqmainwindow.cpp:2492
-#: src/konqmainwindow.cpp:2514 src/konqmainwindow.cpp:4972
+#: src/konqmain.cpp:102
 #, fuzzy
-#| msgid "Discard Changes?"
-msgctxt "@title:window"
-msgid "Discard Changes?"
-msgstr "Taflu Newidiadau?"
+msgid "List available profiles"
+msgstr "Rhestru'r proffilau sydd ar gael."
 
-#: src/konqviewmanager.cpp:1427 src/konqmainwindow.cpp:1615
-#: src/konqmainwindow.cpp:2342 src/konqmainwindow.cpp:2420
-#: src/konqmainwindow.cpp:2450 src/konqmainwindow.cpp:2492
-#: src/konqmainwindow.cpp:2515 src/konqmainwindow.cpp:4972
-msgid "&Discard Changes"
-msgstr "&Taflu Newidiadau"
+#: src/konqmain.cpp:104
+#, fuzzy
+msgid "List available sessions"
+msgstr "Rhestru'r proffilau sydd ar gael."
 
-#: src/konqview.cpp:1203
+#: src/konqmain.cpp:106
+#, fuzzy
+msgid "Session to open"
+msgstr "Lleoliad i agor."
+
+#: src/konqmain.cpp:108
+#, fuzzy
+msgid "Mimetype to use for this URL (e.g. text/html or inode/directory)"
+msgstr ""
+"Math MIME i ddefnyddio i'r URL hwn, (e.e. text/html neu inode/directory)."
+
+#: src/konqmain.cpp:109
+msgid "Part to use (e.g. khtml or kwebkitpart)"
+msgstr ""
+
+#: src/konqmain.cpp:111
 msgid ""
-"The page you are trying to view is the result of posted form data. If you "
-"resend the data, any action the form carried out (such as search or online "
-"purchase) will be repeated. "
-msgstr ""
-"Mae'r dudalen rydych yn ceisio ei weld yn ganlyniad o ddata ffurflen "
-"bostedig. Os ail-anfonwch y data, ailadroddir unrhyw weithred (megis "
-"chwiliad neu brynu ar-lein)."
-
-#: src/konqview.cpp:1205
-msgctxt "@title:window"
-msgid "Warning"
+"For URLs that point to files, opens the directory and selects the file, "
+"instead of opening the actual file"
 msgstr ""
 
-#: src/konqview.cpp:1205
-msgid "Resend"
-msgstr "Ail-anfon"
+#: src/konqmain.cpp:113
+#, fuzzy
+msgid "Location to open"
+msgstr "Lleoliad i agor."
 
 #: src/konqmainwindow.cpp:574
 msgctxt "@title:tab"
@@ -767,6 +661,23 @@ msgid ""
 "This page contains changes that have not been submitted.\n"
 "Reloading the page will discard these changes."
 msgstr ""
+
+#: src/konqmainwindow.cpp:1615 src/konqmainwindow.cpp:2342
+#: src/konqmainwindow.cpp:2420 src/konqmainwindow.cpp:2450
+#: src/konqmainwindow.cpp:2492 src/konqmainwindow.cpp:2514
+#: src/konqmainwindow.cpp:4972 src/konqviewmanager.cpp:1427
+#, fuzzy
+#| msgid "Discard Changes?"
+msgctxt "@title:window"
+msgid "Discard Changes?"
+msgstr "Taflu Newidiadau?"
+
+#: src/konqmainwindow.cpp:1615 src/konqmainwindow.cpp:2342
+#: src/konqmainwindow.cpp:2420 src/konqmainwindow.cpp:2450
+#: src/konqmainwindow.cpp:2492 src/konqmainwindow.cpp:2515
+#: src/konqmainwindow.cpp:4972 src/konqviewmanager.cpp:1427
+msgid "&Discard Changes"
+msgstr "&Taflu Newidiadau"
 
 #: src/konqmainwindow.cpp:1725
 #, fuzzy
@@ -1397,6 +1308,13 @@ msgstr ""
 "Mae gennych amryw dabiau ar agor yn y ffenestr hon; a ydych yn sicr eich bod "
 "am ei chau?"
 
+#: src/konqmainwindow.cpp:4937 src/konqviewmanager.cpp:1413
+#, fuzzy
+#| msgid "Confirmation"
+msgctxt "@title:window"
+msgid "Confirmation"
+msgstr "Cadarnhâd"
+
 #: src/konqmainwindow.cpp:4939
 msgid "C&lose Current Tab"
 msgstr "C&au'r Tab Cyfredol"
@@ -1449,6 +1367,88 @@ msgid ""
 msgstr ""
 "Ymddengys bod gwall ffurfweddu.  Rydych wedi cysylltu Konqueror efo %1, ond "
 "ni all drin y math yma o ffeil."
+
+#: src/konqprofiledlg.cpp:111
+#, fuzzy
+#| msgid "Profile Management"
+msgctxt "@title:window"
+msgid "Profile Management"
+msgstr "Trefnu Proffilau"
+
+#: src/konqprofiledlg.cpp:114
+msgid "&Rename Profile"
+msgstr "&Ail-enwi Proffil"
+
+#: src/konqprofiledlg.cpp:115
+msgid "&Delete Profile"
+msgstr "&Dileu Proffil"
+
+#: src/konqsessionmanager.cpp:330
+msgid ""
+"Konqueror did not close correctly. Would you like to restore the previous "
+"session?"
+msgstr ""
+
+#: src/konqsessionmanager.cpp:332
+#, fuzzy
+#| msgid "Renaming"
+msgctxt "@title:window"
+msgid "Restore Session?"
+msgstr "Ailenwi"
+
+#: src/konqsessionmanager.cpp:333
+#, fuzzy
+#| msgid "Renaming"
+msgid "Restore Session"
+msgstr "Ailenwi"
+
+#: src/konqsessionmanager.cpp:334
+msgid "Do Not Restore"
+msgstr ""
+
+#: src/konqsessionmanager.cpp:335
+#, fuzzy
+#| msgid "As New Folder"
+msgid "Ask Me Later"
+msgstr "Fel Plygell Newydd"
+
+#: src/konqviewmanager.cpp:1411
+#, fuzzy
+msgid ""
+"You have multiple tabs open in this window.\n"
+"Loading a view profile will close them."
+msgstr ""
+"Mae gennych amryw dabiau ar agor yn y ffenestr hon; a ydych yn sicr eich bod "
+"am ei chau?"
+
+#: src/konqviewmanager.cpp:1414
+msgid "Load View Profile"
+msgstr "Llwytho Proffil Golwg"
+
+#: src/konqviewmanager.cpp:1426
+msgid ""
+"This tab contains changes that have not been submitted.\n"
+"Loading a profile will discard these changes."
+msgstr ""
+
+#: src/konqview.cpp:1203
+msgid ""
+"The page you are trying to view is the result of posted form data. If you "
+"resend the data, any action the form carried out (such as search or online "
+"purchase) will be repeated. "
+msgstr ""
+"Mae'r dudalen rydych yn ceisio ei weld yn ganlyniad o ddata ffurflen "
+"bostedig. Os ail-anfonwch y data, ailadroddir unrhyw weithred (megis "
+"chwiliad neu brynu ar-lein)."
+
+#: src/konqview.cpp:1205
+msgctxt "@title:window"
+msgid "Warning"
+msgstr ""
+
+#: src/konqview.cpp:1205
+msgid "Resend"
+msgstr "Ail-anfon"
 
 #: sidebar/history_module/history_module.cpp:126
 #, fuzzy

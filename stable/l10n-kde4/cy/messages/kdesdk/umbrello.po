@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdesdk/umbrello.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-05-12 04:32+0200\n"
+"POT-Creation-Date: 2011-07-05 05:34+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -10,6 +10,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: debug/debug_utils.cpp:44
+#, fuzzy
+#| msgid "Class"
+msgid "Class Name"
+msgstr "Dosbarth"
 
 #: clipboard/umlclipboard.cpp:828
 msgid ""
@@ -92,15 +98,15 @@ msgid "Template Properties"
 msgstr "Priodweddau Cyffredinol"
 
 #: dialogs/umltemplatedialog.cpp:65 dialogs/umlentityattributedialog.cpp:71
-#: dialogs/activitydialog.cpp:142 dialogs/umlattributedialog.cpp:69
+#: dialogs/umlattributedialog.cpp:69 dialogs/activitydialog.cpp:142
 #: dialogs/objectnodedialog.cpp:141 dialogs/umloperationdialog.cpp:88
 #: dialogs/statedialog.cpp:121
 msgid "General Properties"
 msgstr "Priodweddau Cyffredinol"
 
 #: dialogs/umltemplatedialog.cpp:70 dialogs/umlentityattributedialog.cpp:76
-#: dialogs/umlattributedialog.cpp:74 dialogs/parmpropdlg.cpp:78
-#: dialogs/umloperationdialog.cpp:101
+#: dialogs/umlattributedialog.cpp:74 dialogs/umloperationdialog.cpp:101
+#: dialogs/parmpropdlg.cpp:78
 msgid "&Type:"
 msgstr "&Math:"
 
@@ -152,8 +158,8 @@ msgid "&Default value:"
 msgstr "&Gwerth ragosod :"
 
 #: dialogs/umlentityattributedialog.cpp:92 dialogs/umlattributedialog.cpp:90
-#: dialogs/parmpropdlg.cpp:93 dialogs/classgenpage.cpp:346
-#: dialogs/umloperationdialog.cpp:108
+#: dialogs/classgenpage.cpp:346 dialogs/umloperationdialog.cpp:108
+#: dialogs/parmpropdlg.cpp:93
 #, fuzzy
 #| msgid "Enter name:"
 msgid "Stereotype name:"
@@ -213,11 +219,17 @@ msgstr ""
 msgid "Entity Attribute Name Not Unique"
 msgstr "Priodweddion"
 
+#. i18n: file: dialogs/umlrolepropertiesbase.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, ui_propsGroupBox)
+#: dialogs/umlroledialog.cpp:25 rc.cpp:990
+msgid "Role Properties"
+msgstr ""
+
 #: dialogs/assocgenpage.cpp:60 dialogs/umlviewdialog.cpp:35
 #: dialogs/classpropdlg.cpp:128 dialogs/activitydialog.cpp:36
-#: dialogs/activitydialog.cpp:146 dialogs/parmpropdlg.cpp:71
-#: dialogs/objectnodedialog.cpp:39 dialogs/statedialog.cpp:37
-#: dialogs/statedialog.cpp:125 refactoring/refactoringassistant.cpp:453
+#: dialogs/activitydialog.cpp:146 dialogs/objectnodedialog.cpp:39
+#: dialogs/statedialog.cpp:37 dialogs/statedialog.cpp:125
+#: dialogs/parmpropdlg.cpp:71 refactoring/refactoringassistant.cpp:453
 #: listpopupmenu.cpp:583
 #, fuzzy
 msgid "Properties"
@@ -235,13 +247,13 @@ msgstr "&Priodweddau"
 #. i18n: ectx: property (title), widget (QGroupBox, ui_groupBoxDocumentation)
 #. i18n: file: dialogs/umlrolepropertiesbase.ui:140
 #. i18n: ectx: property (title), widget (QGroupBox, ui_groupBoxDocumentation)
-#: dialogs/assocgenpage.cpp:61 dialogs/activitydialog.cpp:200
-#: dialogs/notedialog.cpp:38 dialogs/parmpropdlg.cpp:115
-#: dialogs/classifierlistpage.cpp:219 dialogs/assocrolepage.cpp:80
-#: dialogs/assocrolepage.cpp:81 dialogs/objectnodedialog.cpp:197
-#: dialogs/classgenpage.cpp:225 dialogs/classgenpage.cpp:305
-#: dialogs/classgenpage.cpp:368 dialogs/statedialog.cpp:140 rc.cpp:38
-#: rc.cpp:740 rc.cpp:800 rc.cpp:863 rc.cpp:943 rc.cpp:1026
+#: dialogs/assocgenpage.cpp:61 dialogs/classifierlistpage.cpp:219
+#: dialogs/activitydialog.cpp:200 dialogs/assocrolepage.cpp:80
+#: dialogs/assocrolepage.cpp:81 dialogs/classgenpage.cpp:225
+#: dialogs/classgenpage.cpp:305 dialogs/classgenpage.cpp:368
+#: dialogs/objectnodedialog.cpp:197 dialogs/statedialog.cpp:140
+#: dialogs/notedialog.cpp:38 dialogs/parmpropdlg.cpp:115 rc.cpp:38 rc.cpp:740
+#: rc.cpp:800 rc.cpp:863 rc.cpp:958 rc.cpp:1026
 msgid "Documentation"
 msgstr "Dogfenniaeth"
 
@@ -256,11 +268,11 @@ msgstr "Enw:"
 msgid "Type:"
 msgstr "Math:"
 
-#. i18n: file: dialogs/umlrolepropertiesbase.ui:16
-#. i18n: ectx: property (title), widget (QGroupBox, ui_propsGroupBox)
-#: dialogs/umlroledialog.cpp:25 rc.cpp:990
-msgid "Role Properties"
-msgstr ""
+#: dialogs/assocpage.cpp:30 dialogs/classpropdlg.cpp:371
+#, fuzzy
+#| msgid "Association"
+msgid "Associations"
+msgstr "Cyd"
 
 #: dialogs/selectopdlg.cpp:37 dialogs/selectopdlg.cpp:49
 #, fuzzy
@@ -284,70 +296,130 @@ msgstr "Gweithrediad"
 msgid "Custom operation:"
 msgstr "Gweithrediad"
 
-#: dialogs/assocpage.cpp:30 dialogs/classpropdlg.cpp:371
+#: dialogs/umlforeignkeyconstraintdialog.cpp:50
+msgid "Foreign Key Setup"
+msgstr ""
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:196
+#, fuzzy
+#| msgid "General"
+msgctxt "general page title"
+msgid "General"
+msgstr "Cyffredinol"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:197 dialogs/umlviewdialog.cpp:84
+#: dialogs/settingsdlg.cpp:120 dialogs/classpropdlg.cpp:249
+#: dialogs/classpropdlg.cpp:383 dialogs/assocpropdlg.cpp:93
+msgid "General Settings"
+msgstr "Gosodiadau Cyffredinol"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:201
+#, fuzzy
+#| msgid "General"
+msgctxt "general group title"
+msgid "General"
+msgstr "Cyffredinol"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:208
+#, fuzzy
+#| msgid "Name"
+msgctxt "label for entering name"
+msgid "Name"
+msgstr "Enw"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:211
+msgid "Referenced Entity"
+msgstr ""
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:218
 #, fuzzy
 #| msgid "Association"
-msgid "Associations"
+msgid "Actions"
 msgstr "Cyd"
 
-#. i18n: file: dialogs/exportallviewsdialogbase.ui:52
-#. i18n: ectx: property (toolTip), widget (QLabel, ui_imageTypeLabel)
-#: dialogs/exportallviewsdialog.cpp:86 rc.cpp:973
-msgid "The format that the images will be exported to"
+#: dialogs/umlforeignkeyconstraintdialog.cpp:224
+msgid "On Update"
 msgstr ""
 
-#: dialogs/classoptionspage.cpp:76 dialogs/classoptionspage.cpp:146
-#: dialogs/codeeditor.cpp:696 listpopupmenu.cpp:905
-msgid "Show"
-msgstr "Dangos"
+#: dialogs/umlforeignkeyconstraintdialog.cpp:230
+#, fuzzy
+msgid "On Delete"
+msgstr "Dewis"
 
-#: dialogs/classoptionspage.cpp:83 dialogs/classoptionspage.cpp:152
-msgid "Operatio&ns"
-msgstr "Gweithre&diadau"
+#: dialogs/umlforeignkeyconstraintdialog.cpp:262
+#, fuzzy
+#| msgid "Association"
+msgid "No Action"
+msgstr "Cyd"
 
-#: dialogs/classoptionspage.cpp:87 dialogs/classoptionspage.cpp:169
-msgid "&Visibility"
+#: dialogs/umlforeignkeyconstraintdialog.cpp:262
+msgid "Restrict"
 msgstr ""
 
-#: dialogs/classoptionspage.cpp:96 dialogs/classoptionspage.cpp:156
-#, fuzzy
-#| msgid "Operations"
-msgid "O&peration signature"
-msgstr "Gweithrediadau"
-
-#: dialogs/classoptionspage.cpp:100 dialogs/classoptionspage.cpp:173
-msgid "Pac&kage"
-msgstr "Pec&yn"
-
-#: dialogs/classoptionspage.cpp:107 dialogs/classoptionspage.cpp:161
-msgid "Att&ributes"
-msgstr "Pri&odweddion"
-
-#: dialogs/classoptionspage.cpp:111 dialogs/classoptionspage.cpp:177
-msgid "Stereot&ype"
+#: dialogs/umlforeignkeyconstraintdialog.cpp:262
+msgid "Cascade"
 msgstr ""
 
-#: dialogs/classoptionspage.cpp:115 dialogs/classoptionspage.cpp:165
+#: dialogs/umlforeignkeyconstraintdialog.cpp:262
 #, fuzzy
-#| msgid "Attributes"
-msgid "Attr&ibute signature"
-msgstr "Priodweddion"
+#| msgid "&Default"
+msgid "Set Null"
+msgstr "&Rhagosod"
 
-#: dialogs/classoptionspage.cpp:124 dialogs/classoptionspage.cpp:185
+#: dialogs/umlforeignkeyconstraintdialog.cpp:263
 #, fuzzy
-#| msgid "&Public"
-msgid "&Public Only"
-msgstr "&Cyhoeddus"
+#| msgid "&Default"
+msgid "Set Default"
+msgstr "&Rhagosod"
 
-#: dialogs/classoptionspage.cpp:130
-msgid "Draw as circle"
+#: dialogs/umlforeignkeyconstraintdialog.cpp:281
+#: dialogs/umlforeignkeyconstraintdialog.cpp:282
+#, fuzzy
+#| msgid "Colors"
+msgid "Columns"
+msgstr "Lliwiau"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:289
+#, fuzzy
+#| msgid "Label"
+msgctxt "column header local"
+msgid "Local"
+msgstr "Label"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:289
+msgctxt "column header referenced"
+msgid "Referenced"
 msgstr ""
 
-#: dialogs/classoptionspage.cpp:181
+#: dialogs/umlforeignkeyconstraintdialog.cpp:295
 #, fuzzy
-#| msgid "Attributes"
-msgid "&Attribute associations"
-msgstr "Priodweddion"
+#| msgid "Colors"
+msgid "Local Column"
+msgstr "Lliwiau"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:301
+msgid "Referenced Column"
+msgstr ""
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:308
+#: dialogs/umluniqueconstraintdialog.cpp:112
+msgid "&Add"
+msgstr ""
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:310
+#: dialogs/umluniqueconstraintdialog.cpp:114
+#: dialogs/classifierlistpage.cpp:207 dialogs/umloperationdialog.cpp:166
+#: uml.cpp:414 umldoc.cpp:1406 umlview.cpp:2959
+#, fuzzy
+msgid "&Delete"
+msgstr "&Rhagosod"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:383
+msgid ""
+"You are attempting to change the Referenced Entity of this ForeignKey "
+"Constraint. Any unapplied changes to the mappings between local and "
+"referenced entities will be lost. Are you sure you want to continue ?"
+msgstr ""
 
 #: dialogs/umluniqueconstraintdialog.cpp:42
 #, fuzzy
@@ -369,19 +441,6 @@ msgstr "Enw"
 msgid "Attribute Details"
 msgstr "Priodweddion"
 
-#: dialogs/umluniqueconstraintdialog.cpp:112
-#: dialogs/umlforeignkeyconstraintdialog.cpp:308
-msgid "&Add"
-msgstr ""
-
-#: dialogs/umluniqueconstraintdialog.cpp:114
-#: dialogs/classifierlistpage.cpp:207 dialogs/umloperationdialog.cpp:166
-#: dialogs/umlforeignkeyconstraintdialog.cpp:310 uml.cpp:414 umldoc.cpp:1406
-#: umlview.cpp:2959
-#, fuzzy
-msgid "&Delete"
-msgstr "&Rhagosod"
-
 #: dialogs/umluniqueconstraintdialog.cpp:241
 msgid "You have entered an invalid constraint name."
 msgstr ""
@@ -390,18 +449,73 @@ msgstr ""
 msgid "Constraint Name Invalid"
 msgstr ""
 
+#: dialogs/constraintlistpage.cpp:70 listpopupmenu.cpp:1178
+msgid "Unique Constraint..."
+msgstr ""
+
+#: dialogs/constraintlistpage.cpp:73 listpopupmenu.cpp:1177
+msgid "Primary Key Constraint..."
+msgstr ""
+
+#: dialogs/constraintlistpage.cpp:76 listpopupmenu.cpp:1179
+msgid "Foreign Key Constraint..."
+msgstr ""
+
+#: dialogs/constraintlistpage.cpp:79 listpopupmenu.cpp:1180
+#, fuzzy
+msgid "Check Constraint..."
+msgstr "Priodoleddau ..."
+
+#. i18n: file: dialogs/exportallviewsdialogbase.ui:52
+#. i18n: ectx: property (toolTip), widget (QLabel, ui_imageTypeLabel)
+#: dialogs/exportallviewsdialog.cpp:86 rc.cpp:973
+msgid "The format that the images will be exported to"
+msgstr ""
+
+#: dialogs/codeeditor.cpp:690
+msgid "Hide"
+msgstr ""
+
+#: dialogs/codeeditor.cpp:696 dialogs/classoptionspage.cpp:76
+#: dialogs/classoptionspage.cpp:146 listpopupmenu.cpp:905
+msgid "Show"
+msgstr "Dangos"
+
+#: dialogs/codeeditor.cpp:705
+msgid "Hide Comment"
+msgstr ""
+
+#: dialogs/codeeditor.cpp:711
+msgid "Show Comment"
+msgstr ""
+
+#: dialogs/codeeditor.cpp:719
+msgid "Insert Code Block Before"
+msgstr ""
+
+#: dialogs/codeeditor.cpp:724
+msgid "Insert Code Block After"
+msgstr ""
+
+#: dialogs/codeeditor.cpp:731 listpopupmenu.cpp:595
+msgid "Copy"
+msgstr ""
+
+#: dialogs/codeeditor.cpp:736 listpopupmenu.cpp:598
+#, fuzzy
+msgid "Paste"
+msgstr "Preivat"
+
+#: dialogs/codeeditor.cpp:741 listpopupmenu.cpp:592
+msgid "Cut"
+msgstr ""
+
 #: dialogs/umlviewdialog.cpp:83 dialogs/settingsdlg.cpp:119
 #, fuzzy
 #| msgid "General"
 msgctxt "general settings page"
 msgid "General"
 msgstr "Cyffredinol"
-
-#: dialogs/umlviewdialog.cpp:84 dialogs/settingsdlg.cpp:120
-#: dialogs/classpropdlg.cpp:249 dialogs/classpropdlg.cpp:383
-#: dialogs/assocpropdlg.cpp:93 dialogs/umlforeignkeyconstraintdialog.cpp:197
-msgid "General Settings"
-msgstr "Gosodiadau Cyffredinol"
 
 #: dialogs/umlviewdialog.cpp:113
 #, fuzzy
@@ -467,55 +581,53 @@ msgstr ""
 msgid "Name Not Unique"
 msgstr ""
 
-#: dialogs/constraintlistpage.cpp:70 listpopupmenu.cpp:1178
-msgid "Unique Constraint..."
+#: dialogs/classoptionspage.cpp:83 dialogs/classoptionspage.cpp:152
+msgid "Operatio&ns"
+msgstr "Gweithre&diadau"
+
+#: dialogs/classoptionspage.cpp:87 dialogs/classoptionspage.cpp:169
+msgid "&Visibility"
 msgstr ""
 
-#: dialogs/constraintlistpage.cpp:73 listpopupmenu.cpp:1177
-msgid "Primary Key Constraint..."
-msgstr ""
-
-#: dialogs/constraintlistpage.cpp:76 listpopupmenu.cpp:1179
-msgid "Foreign Key Constraint..."
-msgstr ""
-
-#: dialogs/constraintlistpage.cpp:79 listpopupmenu.cpp:1180
+#: dialogs/classoptionspage.cpp:96 dialogs/classoptionspage.cpp:156
 #, fuzzy
-msgid "Check Constraint..."
-msgstr "Priodoleddau ..."
+#| msgid "Operations"
+msgid "O&peration signature"
+msgstr "Gweithrediadau"
 
-#: dialogs/codeeditor.cpp:690
-msgid "Hide"
+#: dialogs/classoptionspage.cpp:100 dialogs/classoptionspage.cpp:173
+msgid "Pac&kage"
+msgstr "Pec&yn"
+
+#: dialogs/classoptionspage.cpp:107 dialogs/classoptionspage.cpp:161
+msgid "Att&ributes"
+msgstr "Pri&odweddion"
+
+#: dialogs/classoptionspage.cpp:111 dialogs/classoptionspage.cpp:177
+msgid "Stereot&ype"
 msgstr ""
 
-#: dialogs/codeeditor.cpp:705
-msgid "Hide Comment"
-msgstr ""
-
-#: dialogs/codeeditor.cpp:711
-msgid "Show Comment"
-msgstr ""
-
-#: dialogs/codeeditor.cpp:719
-msgid "Insert Code Block Before"
-msgstr ""
-
-#: dialogs/codeeditor.cpp:724
-msgid "Insert Code Block After"
-msgstr ""
-
-#: dialogs/codeeditor.cpp:731 listpopupmenu.cpp:595
-msgid "Copy"
-msgstr ""
-
-#: dialogs/codeeditor.cpp:736 listpopupmenu.cpp:598
+#: dialogs/classoptionspage.cpp:115 dialogs/classoptionspage.cpp:165
 #, fuzzy
-msgid "Paste"
-msgstr "Preivat"
+#| msgid "Attributes"
+msgid "Attr&ibute signature"
+msgstr "Priodweddion"
 
-#: dialogs/codeeditor.cpp:741 listpopupmenu.cpp:592
-msgid "Cut"
+#: dialogs/classoptionspage.cpp:124 dialogs/classoptionspage.cpp:185
+#, fuzzy
+#| msgid "&Public"
+msgid "&Public Only"
+msgstr "&Cyhoeddus"
+
+#: dialogs/classoptionspage.cpp:130
+msgid "Draw as circle"
 msgstr ""
+
+#: dialogs/classoptionspage.cpp:181
+#, fuzzy
+#| msgid "Attributes"
+msgid "&Attribute associations"
+msgstr "Priodweddion"
 
 #: dialogs/defaultcodegenpolicypage.cpp:37
 #, fuzzy
@@ -702,7 +814,7 @@ msgstr "Pecyn"
 #. i18n: ectx: property (text), widget (QCheckBox, ui_showOpSigs)
 #. i18n: file: umbrello.kcfg:184
 #. i18n: ectx: whatsthis, entry (showOpSig), group (Class Options)
-#: dialogs/settingsdlg.cpp:274 rc.cpp:915 rc.cpp:1355
+#: dialogs/settingsdlg.cpp:274 rc.cpp:930 rc.cpp:1355
 msgid "Show operation signature"
 msgstr ""
 
@@ -926,124 +1038,6 @@ msgctxt "instance general settings page name"
 msgid "General"
 msgstr "Cyffredinol"
 
-#: dialogs/classwizard.cpp:45 model_utils.cpp:404
-msgid "new_class"
-msgstr ""
-
-#: dialogs/classwizard.cpp:60
-#, fuzzy
-#| msgid "Create Folder"
-msgid "Class Wizard"
-msgstr "Creu Plygell"
-
-#: dialogs/classwizard.cpp:83
-#, fuzzy
-#| msgid "Class"
-msgid "New Class"
-msgstr "Dosbarth"
-
-#: dialogs/classwizard.cpp:84
-msgid "Add general info about the new class."
-msgstr ""
-
-#: dialogs/classwizard.cpp:101
-#, fuzzy
-#| msgid "Attributes"
-msgid "Class Attributes"
-msgstr "Priodweddion"
-
-#: dialogs/classwizard.cpp:102
-msgid "Add attributes to the new class."
-msgstr ""
-
-#: dialogs/classwizard.cpp:119
-#, fuzzy
-#| msgid "Operations"
-msgid "Class Operations"
-msgstr "Gweithrediadau"
-
-#: dialogs/classwizard.cpp:120
-msgid "Add operations to the new class."
-msgstr ""
-
-#: dialogs/activitydialog.cpp:137
-msgid "Initial activity"
-msgstr ""
-
-#: dialogs/activitydialog.cpp:137 worktoolbar.cpp:349 association.cpp:54
-msgid "Activity"
-msgstr ""
-
-#: dialogs/activitydialog.cpp:137
-msgid "End activity"
-msgstr ""
-
-#: dialogs/activitydialog.cpp:137
-#, fuzzy
-#| msgid "Rename"
-msgid "Final activity"
-msgstr "Ail-enwi"
-
-#: dialogs/activitydialog.cpp:137 worktoolbar.cpp:325 listpopupmenu.cpp:1146
-msgid "Branch/Merge"
-msgstr ""
-
-#: dialogs/activitydialog.cpp:137
-#, fuzzy
-msgid "Invoke action"
-msgstr "Gweithrediad"
-
-#: dialogs/activitydialog.cpp:137
-#, fuzzy
-#| msgid "Rename"
-msgid "Parameter activity"
-msgstr "Ail-enwi"
-
-#: dialogs/activitydialog.cpp:141
-#, fuzzy
-#| msgid "General"
-msgctxt "general properties page"
-msgid "General"
-msgstr "Cyffredinol"
-
-#: dialogs/activitydialog.cpp:154
-msgid "Activity type:"
-msgstr ""
-
-#: dialogs/activitydialog.cpp:159
-#, fuzzy
-msgid "Activity name:"
-msgstr "Rhowch enw:"
-
-#: dialogs/activitydialog.cpp:163
-#, fuzzy
-msgid "Precondition :"
-msgstr "Rhowch enw:"
-
-#: dialogs/activitydialog.cpp:167
-msgid "Postcondition :"
-msgstr ""
-
-#: dialogs/activitydialog.cpp:174
-msgid "&Normal activity"
-msgstr ""
-
-#: dialogs/activitydialog.cpp:177
-#, fuzzy
-msgid "&Invoke action "
-msgstr "Gweithrediad"
-
-#: dialogs/activitydialog.cpp:180
-msgid "&Parameter activity node"
-msgstr ""
-
-#: dialogs/activitydialog.cpp:254
-#, fuzzy
-#| msgid "Color"
-msgctxt "widget color page"
-msgid "Color"
-msgstr "Lliw"
-
 #: dialogs/umlattributedialog.cpp:45
 #, fuzzy
 #| msgid "Attributes"
@@ -1113,96 +1107,6 @@ msgstr ""
 #| msgid "Attributes"
 msgid "Attribute Name Not Unique"
 msgstr "Priodweddion"
-
-#: dialogs/notedialog.cpp:27
-#, fuzzy
-#| msgid "Documentation"
-msgid "Note Documentation"
-msgstr "Dogfenniaeth"
-
-#: dialogs/parmpropdlg.cpp:47
-#, fuzzy
-#| msgid "General Properties"
-msgid "Parameter Properties"
-msgstr "Priodweddau Cyffredinol"
-
-#: dialogs/parmpropdlg.cpp:86
-#, fuzzy
-#| msgid "&Name:"
-msgctxt "property name"
-msgid "&Name:"
-msgstr "&Enw:"
-
-#: dialogs/parmpropdlg.cpp:98
-msgid "Passing Direction"
-msgstr ""
-
-#: dialogs/parmpropdlg.cpp:99
-msgid ""
-"\"in\" is a readonly parameter, \"out\" is a writeonly parameter and \"inout"
-"\" is a parameter for reading and writing."
-msgstr ""
-
-#: dialogs/parmpropdlg.cpp:264
-msgid "You have entered an invalid parameter name."
-msgstr ""
-
-#: dialogs/parmpropdlg.cpp:265
-msgid "Parameter Name Invalid"
-msgstr ""
-
-#: dialogs/importprojectdlg.cpp:122
-msgid "You have to choose a directory."
-msgstr ""
-
-#: dialogs/importprojectdlg.cpp:127
-#, fuzzy
-msgid "This directory does not exist."
-msgstr "Nid yw'r ffeil %1 yn bodoli!."
-
-#: dialogs/importprojectdlg.cpp:154
-msgid "No source file in this directory."
-msgstr ""
-
-#: dialogs/diagramprintpage.cpp:42
-#, fuzzy
-msgid "&Diagrams"
-msgstr "Rhowch enw:"
-
-#: dialogs/diagramprintpage.cpp:47
-msgid "Filter"
-msgstr "Hidlo"
-
-#: dialogs/diagramprintpage.cpp:54
-#, fuzzy
-#| msgid "Create Folder"
-msgid "&Current diagram"
-msgstr "Creu Plygell"
-
-#: dialogs/diagramprintpage.cpp:58
-msgid "&All diagrams"
-msgstr ""
-
-#: dialogs/diagramprintpage.cpp:61
-#, fuzzy
-#| msgid "Create Folder"
-msgid "&Select diagrams"
-msgstr "Creu Plygell"
-
-#: dialogs/diagramprintpage.cpp:64
-msgid "&Type of diagram"
-msgstr ""
-
-#: dialogs/diagramprintpage.cpp:67
-#, fuzzy
-#| msgid "Selection"
-msgctxt "diagram selection for printing"
-msgid "Selection"
-msgstr "Dewisiad"
-
-#: dialogs/diagramprintpage.cpp:157
-msgid "No diagrams selected."
-msgstr ""
 
 #: dialogs/codeviewerdialog.cpp:107
 #, fuzzy
@@ -1280,16 +1184,83 @@ msgstr ""
 msgid "Source Code"
 msgstr ""
 
-#: dialogs/umlcheckconstraintdialog.cpp:30
-#, fuzzy
-#| msgid "General Properties"
-msgid "Check Constraint Properties"
-msgstr "Priodweddau Cyffredinol"
+#: dialogs/activitydialog.cpp:137
+msgid "Initial activity"
+msgstr ""
 
-#: dialogs/umlcheckconstraintdialog.cpp:73
+#: dialogs/activitydialog.cpp:137 association.cpp:54 worktoolbar.cpp:349
+msgid "Activity"
+msgstr ""
+
+#: dialogs/activitydialog.cpp:137
+msgid "End activity"
+msgstr ""
+
+#: dialogs/activitydialog.cpp:137
 #, fuzzy
-msgid "Check Condition :"
-msgstr "Priodoleddau ..."
+#| msgid "Rename"
+msgid "Final activity"
+msgstr "Ail-enwi"
+
+#: dialogs/activitydialog.cpp:137 worktoolbar.cpp:325 listpopupmenu.cpp:1146
+msgid "Branch/Merge"
+msgstr ""
+
+#: dialogs/activitydialog.cpp:137
+#, fuzzy
+msgid "Invoke action"
+msgstr "Gweithrediad"
+
+#: dialogs/activitydialog.cpp:137
+#, fuzzy
+#| msgid "Rename"
+msgid "Parameter activity"
+msgstr "Ail-enwi"
+
+#: dialogs/activitydialog.cpp:141
+#, fuzzy
+#| msgid "General"
+msgctxt "general properties page"
+msgid "General"
+msgstr "Cyffredinol"
+
+#: dialogs/activitydialog.cpp:154
+msgid "Activity type:"
+msgstr ""
+
+#: dialogs/activitydialog.cpp:159
+#, fuzzy
+msgid "Activity name:"
+msgstr "Rhowch enw:"
+
+#: dialogs/activitydialog.cpp:163
+#, fuzzy
+msgid "Precondition :"
+msgstr "Rhowch enw:"
+
+#: dialogs/activitydialog.cpp:167
+msgid "Postcondition :"
+msgstr ""
+
+#: dialogs/activitydialog.cpp:174
+msgid "&Normal activity"
+msgstr ""
+
+#: dialogs/activitydialog.cpp:177
+#, fuzzy
+msgid "&Invoke action "
+msgstr "Gweithrediad"
+
+#: dialogs/activitydialog.cpp:180
+msgid "&Parameter activity node"
+msgstr ""
+
+#: dialogs/activitydialog.cpp:254
+#, fuzzy
+#| msgid "Color"
+msgctxt "widget color page"
+msgid "Color"
+msgstr "Lliw"
 
 #: dialogs/assocrolepage.cpp:54
 #, fuzzy
@@ -1467,77 +1438,45 @@ msgstr "Ail-enwi"
 msgid "Enter the new name of the activity:"
 msgstr "Rhowch enw:"
 
-#: dialogs/pkgcontentspage.cpp:40
-msgid "Contained Items"
+#: dialogs/diagramprintpage.cpp:42
+#, fuzzy
+msgid "&Diagrams"
+msgstr "Rhowch enw:"
+
+#: dialogs/diagramprintpage.cpp:47
+msgid "Filter"
+msgstr "Hidlo"
+
+#: dialogs/diagramprintpage.cpp:54
+#, fuzzy
+#| msgid "Create Folder"
+msgid "&Current diagram"
+msgstr "Creu Plygell"
+
+#: dialogs/diagramprintpage.cpp:58
+msgid "&All diagrams"
 msgstr ""
 
-#: dialogs/objectnodedialog.cpp:136
-msgid "Central Buffer"
+#: dialogs/diagramprintpage.cpp:61
+#, fuzzy
+#| msgid "Create Folder"
+msgid "&Select diagrams"
+msgstr "Creu Plygell"
+
+#: dialogs/diagramprintpage.cpp:64
+msgid "&Type of diagram"
 msgstr ""
 
-#: dialogs/objectnodedialog.cpp:136
-msgid "Data Store"
+#: dialogs/diagramprintpage.cpp:67
+#, fuzzy
+#| msgid "Selection"
+msgctxt "diagram selection for printing"
+msgid "Selection"
+msgstr "Dewisiad"
+
+#: dialogs/diagramprintpage.cpp:157
+msgid "No diagrams selected."
 msgstr ""
-
-#: dialogs/objectnodedialog.cpp:136
-#, fuzzy
-#| msgid "Object"
-msgid "ObjectFlow"
-msgstr "Gwrthrych"
-
-#. i18n: file: codegenerators/cpp/cppcodegenerationformbase.ui:51
-#. i18n: ectx: attribute (title), widget (QWidget, ui_tabGeneral)
-#. i18n: file: codegenwizard/codegenoptionspage.ui:39
-#. i18n: ectx: attribute (title), widget (QWidget, ui_tabGeneral)
-#: dialogs/objectnodedialog.cpp:140 rc.cpp:95 rc.cpp:1050
-msgid "General"
-msgstr "Cyffredinol"
-
-#: dialogs/objectnodedialog.cpp:145
-#, fuzzy
-msgctxt "properties group title"
-msgid "Properties"
-msgstr "&Priodweddau"
-
-#: dialogs/objectnodedialog.cpp:159
-#, fuzzy
-#| msgid "Object"
-msgid "Object Node type:"
-msgstr "Gwrthrych"
-
-#: dialogs/objectnodedialog.cpp:164
-#, fuzzy
-#| msgid "Object"
-msgid "Object Node name:"
-msgstr "Gwrthrych"
-
-#: dialogs/objectnodedialog.cpp:168
-#, fuzzy
-#| msgid "State"
-msgctxt "enter state label"
-msgid "State :"
-msgstr "Cyflwr"
-
-#: dialogs/objectnodedialog.cpp:173
-msgid "&Central Buffer"
-msgstr ""
-
-#: dialogs/objectnodedialog.cpp:176
-msgid "&Data Store "
-msgstr ""
-
-#: dialogs/objectnodedialog.cpp:179
-#, fuzzy
-#| msgid "Object"
-msgid "&Object Flow"
-msgstr "Gwrthrych"
-
-#: dialogs/objectnodedialog.cpp:247
-#, fuzzy
-#| msgid "Color"
-msgctxt "color page title"
-msgid "Color"
-msgstr "Lliw"
 
 #: dialogs/classgenpage.cpp:60
 msgid "Class &name:"
@@ -1722,6 +1661,89 @@ msgstr ""
 msgid "Name is Not Unique"
 msgstr ""
 
+#: dialogs/objectnodedialog.cpp:136
+msgid "Central Buffer"
+msgstr ""
+
+#: dialogs/objectnodedialog.cpp:136
+msgid "Data Store"
+msgstr ""
+
+#: dialogs/objectnodedialog.cpp:136
+#, fuzzy
+#| msgid "Object"
+msgid "ObjectFlow"
+msgstr "Gwrthrych"
+
+#. i18n: file: codegenerators/cpp/cppcodegenerationformbase.ui:51
+#. i18n: ectx: attribute (title), widget (QWidget, ui_tabGeneral)
+#. i18n: file: codegenwizard/codegenoptionspage.ui:39
+#. i18n: ectx: attribute (title), widget (QWidget, ui_tabGeneral)
+#: dialogs/objectnodedialog.cpp:140 rc.cpp:95 rc.cpp:1050
+msgid "General"
+msgstr "Cyffredinol"
+
+#: dialogs/objectnodedialog.cpp:145
+#, fuzzy
+msgctxt "properties group title"
+msgid "Properties"
+msgstr "&Priodweddau"
+
+#: dialogs/objectnodedialog.cpp:159
+#, fuzzy
+#| msgid "Object"
+msgid "Object Node type:"
+msgstr "Gwrthrych"
+
+#: dialogs/objectnodedialog.cpp:164
+#, fuzzy
+#| msgid "Object"
+msgid "Object Node name:"
+msgstr "Gwrthrych"
+
+#: dialogs/objectnodedialog.cpp:168
+#, fuzzy
+#| msgid "State"
+msgctxt "enter state label"
+msgid "State :"
+msgstr "Cyflwr"
+
+#: dialogs/objectnodedialog.cpp:173
+msgid "&Central Buffer"
+msgstr ""
+
+#: dialogs/objectnodedialog.cpp:176
+msgid "&Data Store "
+msgstr ""
+
+#: dialogs/objectnodedialog.cpp:179
+#, fuzzy
+#| msgid "Object"
+msgid "&Object Flow"
+msgstr "Gwrthrych"
+
+#: dialogs/objectnodedialog.cpp:247
+#, fuzzy
+#| msgid "Color"
+msgctxt "color page title"
+msgid "Color"
+msgstr "Lliw"
+
+#: dialogs/umlcheckconstraintdialog.cpp:30
+#, fuzzy
+#| msgid "General Properties"
+msgid "Check Constraint Properties"
+msgstr "Priodweddau Cyffredinol"
+
+#: dialogs/umlcheckconstraintdialog.cpp:73
+#, fuzzy
+msgid "Check Condition :"
+msgstr "Priodoleddau ..."
+
+#: dialogs/pkgcontentspage.cpp:40
+msgid "Contained Items"
+msgstr ""
+
 #: dialogs/umloperationdialog.cpp:57
 #, fuzzy
 #| msgid "General Properties"
@@ -1875,6 +1897,96 @@ msgstr ""
 msgid "&Do Not Generate File"
 msgstr "&Creu"
 
+#: dialogs/notedialog.cpp:27
+#, fuzzy
+#| msgid "Documentation"
+msgid "Note Documentation"
+msgstr "Dogfenniaeth"
+
+#: dialogs/classwizard.cpp:45 model_utils.cpp:404
+msgid "new_class"
+msgstr ""
+
+#: dialogs/classwizard.cpp:60
+#, fuzzy
+#| msgid "Create Folder"
+msgid "Class Wizard"
+msgstr "Creu Plygell"
+
+#: dialogs/classwizard.cpp:83
+#, fuzzy
+#| msgid "Class"
+msgid "New Class"
+msgstr "Dosbarth"
+
+#: dialogs/classwizard.cpp:84
+msgid "Add general info about the new class."
+msgstr ""
+
+#: dialogs/classwizard.cpp:101
+#, fuzzy
+#| msgid "Attributes"
+msgid "Class Attributes"
+msgstr "Priodweddion"
+
+#: dialogs/classwizard.cpp:102
+msgid "Add attributes to the new class."
+msgstr ""
+
+#: dialogs/classwizard.cpp:119
+#, fuzzy
+#| msgid "Operations"
+msgid "Class Operations"
+msgstr "Gweithrediadau"
+
+#: dialogs/classwizard.cpp:120
+msgid "Add operations to the new class."
+msgstr ""
+
+#: dialogs/parmpropdlg.cpp:47
+#, fuzzy
+#| msgid "General Properties"
+msgid "Parameter Properties"
+msgstr "Priodweddau Cyffredinol"
+
+#: dialogs/parmpropdlg.cpp:86
+#, fuzzy
+#| msgid "&Name:"
+msgctxt "property name"
+msgid "&Name:"
+msgstr "&Enw:"
+
+#: dialogs/parmpropdlg.cpp:98
+msgid "Passing Direction"
+msgstr ""
+
+#: dialogs/parmpropdlg.cpp:99
+msgid ""
+"\"in\" is a readonly parameter, \"out\" is a writeonly parameter and \"inout"
+"\" is a parameter for reading and writing."
+msgstr ""
+
+#: dialogs/parmpropdlg.cpp:264
+msgid "You have entered an invalid parameter name."
+msgstr ""
+
+#: dialogs/parmpropdlg.cpp:265
+msgid "Parameter Name Invalid"
+msgstr ""
+
+#: dialogs/importprojectdlg.cpp:122
+msgid "You have to choose a directory."
+msgstr ""
+
+#: dialogs/importprojectdlg.cpp:127
+#, fuzzy
+msgid "This directory does not exist."
+msgstr "Nid yw'r ffeil %1 yn bodoli!."
+
+#: dialogs/importprojectdlg.cpp:154
+msgid "No source file in this directory."
+msgstr ""
+
 #: dialogs/assocpropdlg.cpp:43
 #, fuzzy
 #| msgid "Association"
@@ -1905,112 +2017,6 @@ msgstr "Gosodiadau Ffont"
 #| msgid "Association"
 msgid "Association font"
 msgstr "Cyd"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:50
-msgid "Foreign Key Setup"
-msgstr ""
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:196
-#, fuzzy
-#| msgid "General"
-msgctxt "general page title"
-msgid "General"
-msgstr "Cyffredinol"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:201
-#, fuzzy
-#| msgid "General"
-msgctxt "general group title"
-msgid "General"
-msgstr "Cyffredinol"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:208
-#, fuzzy
-#| msgid "Name"
-msgctxt "label for entering name"
-msgid "Name"
-msgstr "Enw"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:211
-msgid "Referenced Entity"
-msgstr ""
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:218
-#, fuzzy
-#| msgid "Association"
-msgid "Actions"
-msgstr "Cyd"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:224
-msgid "On Update"
-msgstr ""
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:230
-#, fuzzy
-msgid "On Delete"
-msgstr "Dewis"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:262
-#, fuzzy
-#| msgid "Association"
-msgid "No Action"
-msgstr "Cyd"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:262
-msgid "Restrict"
-msgstr ""
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:262
-msgid "Cascade"
-msgstr ""
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:262
-#, fuzzy
-#| msgid "&Default"
-msgid "Set Null"
-msgstr "&Rhagosod"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:263
-#, fuzzy
-#| msgid "&Default"
-msgid "Set Default"
-msgstr "&Rhagosod"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:281
-#: dialogs/umlforeignkeyconstraintdialog.cpp:282
-#, fuzzy
-#| msgid "Colors"
-msgid "Columns"
-msgstr "Lliwiau"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:289
-#, fuzzy
-#| msgid "Label"
-msgctxt "column header local"
-msgid "Local"
-msgstr "Label"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:289
-msgctxt "column header referenced"
-msgid "Referenced"
-msgstr ""
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:295
-#, fuzzy
-#| msgid "Colors"
-msgid "Local Column"
-msgstr "Lliwiau"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:301
-msgid "Referenced Column"
-msgstr ""
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:383
-msgid ""
-"You are attempting to change the Referenced Entity of this ForeignKey "
-"Constraint. Any unapplied changes to the mappings between local and "
-"referenced entities will be lost. Are you sure you want to continue ?"
-msgstr ""
 
 #: dialogs/umlwidgetcolorpage.cpp:77
 #, fuzzy
@@ -2189,16 +2195,6 @@ msgstr "Creu Plygell"
 msgid "Please select a valid folder."
 msgstr ""
 
-#: widgets/notewidget.cpp:378
-#, fuzzy
-#| msgid "Note"
-msgid "Note Type"
-msgstr "Noder"
-
-#: widgets/notewidget.cpp:378
-msgid "Select the Note Type"
-msgstr ""
-
 #: widgets/activitywidget.cpp:265 toolbarstateother.cpp:227 umlview.cpp:2763
 msgid "Enter Activity Name"
 msgstr ""
@@ -2272,6 +2268,16 @@ msgstr ""
 msgid "Enter object name:"
 msgstr ""
 
+#: widgets/notewidget.cpp:378
+#, fuzzy
+#| msgid "Note"
+msgid "Note Type"
+msgstr "Noder"
+
+#: widgets/notewidget.cpp:378
+msgid "Select the Note Type"
+msgstr ""
+
 #: widgets/combinedfragmentwidget.cpp:253
 msgid "Enter the name of the diagram referenced"
 msgstr ""
@@ -2315,6 +2321,18 @@ msgstr "Rhowch enw:"
 
 #: widgets/combinedfragmentwidget.cpp:348
 msgid "Enter the guard of the loop:"
+msgstr ""
+
+#: widgets/associationwidget.cpp:2694
+msgid "Multiplicity"
+msgstr ""
+
+#: widgets/associationwidget.cpp:2712
+msgid "Association Name"
+msgstr ""
+
+#: widgets/associationwidget.cpp:2732
+msgid "Role Name"
 msgstr ""
 
 #: widgets/objectnodewidget.cpp:200
@@ -2368,18 +2386,6 @@ msgstr ""
 
 #: widgets/objectnodewidget.cpp:279
 msgid "Enter State (keep '-' if there is no state for the object) "
-msgstr ""
-
-#: widgets/associationwidget.cpp:2694
-msgid "Multiplicity"
-msgstr ""
-
-#: widgets/associationwidget.cpp:2712
-msgid "Association Name"
-msgstr ""
-
-#: widgets/associationwidget.cpp:2732
-msgid "Role Name"
 msgstr ""
 
 #: widgets/signalwidget.cpp:217
@@ -2485,35 +2491,6 @@ msgstr "Creu Plygell"
 msgid "Create class diagram : %1"
 msgstr "Creu Plygell"
 
-#: cmds/cmd_create_entityrelationdiag.cpp:25
-#, fuzzy, kde-format
-#| msgid "Relationship"
-msgid "Create entity relationship diagram : %1"
-msgstr "Perthynas"
-
-#: cmds/cmd_create_usecasediag.cpp:25
-#, fuzzy, kde-format
-#| msgid "Create Folder"
-msgid "Create use case diagram : %1"
-msgstr "Creu Plygell"
-
-#: cmds/cmd_set_visibility.cpp:24
-#, kde-format
-msgid "Change visibility : %1"
-msgstr ""
-
-#: cmds/cmd_create_activitydiag.cpp:25
-#, fuzzy, kde-format
-#| msgid "Create Folder"
-msgid "Create activity diagram : %1"
-msgstr "Creu Plygell"
-
-#: cmds/cmd_moveWidget.cpp:26
-#, fuzzy, kde-format
-#| msgid "Create Folder"
-msgid "Move widget : %1"
-msgstr "Creu Plygell"
-
 #: cmds/cmd_set_stereotype.cpp:25
 #, kde-format
 msgid "Set stereotype : %1 to %2"
@@ -2524,6 +2501,12 @@ msgstr ""
 #| msgid "Change Text"
 msgid "Change text : %1 to %2"
 msgstr "Newid y Testun"
+
+#: cmds/cmd_create_entityrelationdiag.cpp:25
+#, fuzzy, kde-format
+#| msgid "Relationship"
+msgid "Create entity relationship diagram : %1"
+msgstr "Perthynas"
 
 #: cmds/cmd_create_statediag.cpp:25
 #, fuzzy, kde-format
@@ -2543,10 +2526,27 @@ msgstr "Creu Plygell"
 msgid "Create sequence diagram : %1"
 msgstr "Creu Plygell"
 
+#: cmds/cmd_create_usecasediag.cpp:25
+#, fuzzy, kde-format
+#| msgid "Create Folder"
+msgid "Create use case diagram : %1"
+msgstr "Creu Plygell"
+
+#: cmds/cmd_set_visibility.cpp:24
+#, kde-format
+msgid "Change visibility : %1"
+msgstr ""
+
 #: cmds/cmd_create_deploydiag.cpp:25
 #, fuzzy, kde-format
 #| msgid "Create Folder"
 msgid "Create deployment diagram : %1"
+msgstr "Creu Plygell"
+
+#: cmds/cmd_create_activitydiag.cpp:25
+#, fuzzy, kde-format
+#| msgid "Create Folder"
+msgid "Create activity diagram : %1"
 msgstr "Creu Plygell"
 
 #: cmds/cmd_resizeWidget.cpp:26
@@ -2559,6 +2559,12 @@ msgstr "Creu Plygell"
 #, fuzzy, kde-format
 #| msgid "Create Folder"
 msgid "Create component diagram : %1"
+msgstr "Creu Plygell"
+
+#: cmds/cmd_moveWidget.cpp:26
+#, fuzzy, kde-format
+#| msgid "Create Folder"
+msgid "Move widget : %1"
 msgstr "Creu Plygell"
 
 #: refactoring/refactoringassistant.cpp:49
@@ -2877,62 +2883,81 @@ msgctxt "class scope"
 msgid "Class"
 msgstr "Dosbarth"
 
-#: debug/debug_utils.cpp:44
-#, fuzzy
-#| msgid "Class"
-msgid "Class Name"
-msgstr "Dosbarth"
-
-#: folder.cpp:405
-#, kde-format
-msgid "The folderfile %1 does not exist."
+#: association.cpp:39
+msgid "Generalization"
 msgstr ""
 
-#: folder.cpp:405 folder.cpp:409 umldoc.cpp:418 umldoc.cpp:440 umldoc.cpp:478
-#: umldoc.cpp:490 umldoc.cpp:504 umldoc.cpp:516 umldoc.cpp:528 umldoc.cpp:546
-msgid "Load Error"
-msgstr "Gwall Llwytho"
-
-#: folder.cpp:409
-#, kde-format
-msgid "The folderfile %1 cannot be opened."
+#: association.cpp:40 worktoolbar.cpp:315
+msgid "Aggregation"
 msgstr ""
 
-#: umlcanvasobject.cpp:191 model_utils.cpp:428
-msgid "new_association"
+#: association.cpp:41 worktoolbar.cpp:314
+msgid "Dependency"
+msgstr "Dibyniaeth"
+
+#: association.cpp:42 worktoolbar.cpp:307
+msgid "Association"
+msgstr "Cyd"
+
+#: association.cpp:43
+msgid "Self Association"
 msgstr ""
 
-#: umlcanvasobject.cpp:194
-msgid "new_attribute"
+#: association.cpp:44
+msgid "Collaboration Message"
 msgstr ""
 
-#: umlcanvasobject.cpp:197
-msgid "new_template"
+#: association.cpp:45
+msgid "Sequence Message"
 msgstr ""
 
-#: umlcanvasobject.cpp:200
-msgid "new_operation"
+#: association.cpp:46
+msgid "Collaboration Self Message"
 msgstr ""
 
-#: umlcanvasobject.cpp:203
-msgid "new_literal"
+#: association.cpp:47
+msgid "Sequence Self Message"
 msgstr ""
 
-#: umlcanvasobject.cpp:206
-msgid "new_field"
+#: association.cpp:48 worktoolbar.cpp:308
+msgid "Containment"
 msgstr ""
 
-#: umlcanvasobject.cpp:209
-msgid "new_unique_constraint"
+#: association.cpp:49 worktoolbar.cpp:319
+msgid "Composition"
 msgstr ""
 
-#: umlcanvasobject.cpp:212
-msgid "new_fkey_constraint"
+#: association.cpp:50
+msgid "Realization"
 msgstr ""
 
-#: umlcanvasobject.cpp:215
-msgid "new_check_constraint"
+#: association.cpp:51
+msgid "Uni Association"
 msgstr ""
+
+#: association.cpp:52 worktoolbar.cpp:309
+msgid "Anchor"
+msgstr ""
+
+#: association.cpp:53 worktoolbar.cpp:347
+msgid "State Transition"
+msgstr ""
+
+#: association.cpp:55 worktoolbar.cpp:356
+msgid "Exception"
+msgstr ""
+
+#: association.cpp:56 worktoolbar.cpp:360
+msgid "Category to Parent"
+msgstr ""
+
+#: association.cpp:57 worktoolbar.cpp:361
+msgid "Child to Category"
+msgstr ""
+
+#: association.cpp:58 worktoolbar.cpp:316
+msgid "Relationship"
+msgstr "Perthynas"
 
 #: stereotype.cpp:112 listpopupmenu.cpp:931
 msgid "Stereotype"
@@ -2942,52 +2967,6 @@ msgstr ""
 #: umldoc.cpp:1235 umldoc.cpp:1278 umldoc.cpp:1309 umldoc.cpp:1343
 msgid "Enter name:"
 msgstr "Rhowch enw:"
-
-#: toolbarstateother.cpp:235
-#, fuzzy
-msgid "Enter Signal Name"
-msgstr "Rhowch enw:"
-
-#: toolbarstateother.cpp:236
-#, fuzzy
-#| msgid "Enter name:"
-msgid "Enter Signal"
-msgstr "Rhowch enw:"
-
-#: toolbarstateother.cpp:236
-msgid "new Signal"
-msgstr ""
-
-#: toolbarstateother.cpp:242
-#, fuzzy
-msgid "Enter Time Event Name"
-msgstr "Rhowch enw:"
-
-#: toolbarstateother.cpp:243
-#, fuzzy
-msgid "Enter Time Event"
-msgstr "Rhowch enw:"
-
-#: toolbarstateother.cpp:243
-msgid "new time event"
-msgstr ""
-
-#: toolbarstateother.cpp:249
-#, fuzzy
-msgid "Enter Combined Fragment Name"
-msgstr "Rhowch enw:"
-
-#: toolbarstateother.cpp:250
-msgid "Enter the Combined Fragment"
-msgstr ""
-
-#: toolbarstateother.cpp:250
-msgid "new Combined Fragment"
-msgstr ""
-
-#: toolbarstateother.cpp:257 umlview.cpp:2733
-msgid "new state"
-msgstr ""
 
 #: worktoolbar.cpp:300
 msgid "Object"
@@ -3021,18 +3000,6 @@ msgstr ""
 msgid "Precondition"
 msgstr ""
 
-#: worktoolbar.cpp:307 association.cpp:42
-msgid "Association"
-msgstr "Cyd"
-
-#: worktoolbar.cpp:308 association.cpp:48
-msgid "Containment"
-msgstr ""
-
-#: worktoolbar.cpp:309 association.cpp:52
-msgid "Anchor"
-msgstr ""
-
 #: worktoolbar.cpp:310
 msgid "Label"
 msgstr "Label"
@@ -3049,18 +3016,6 @@ msgstr ""
 msgid "Actor"
 msgstr ""
 
-#: worktoolbar.cpp:314 association.cpp:41
-msgid "Dependency"
-msgstr "Dibyniaeth"
-
-#: worktoolbar.cpp:315 association.cpp:40
-msgid "Aggregation"
-msgstr ""
-
-#: worktoolbar.cpp:316 association.cpp:58
-msgid "Relationship"
-msgstr "Perthynas"
-
 #: worktoolbar.cpp:317
 msgid "Directional Association"
 msgstr ""
@@ -3069,10 +3024,6 @@ msgstr ""
 #, fuzzy
 msgid "Implements"
 msgstr "Dogfenniaeth"
-
-#: worktoolbar.cpp:319 association.cpp:49
-msgid "Composition"
-msgstr ""
 
 #: worktoolbar.cpp:320 listpopupmenu.cpp:717
 msgid "Use Case"
@@ -3181,10 +3132,6 @@ msgstr ""
 msgid "And Line"
 msgstr "Llinellau"
 
-#: worktoolbar.cpp:347 association.cpp:53
-msgid "State Transition"
-msgstr ""
-
 #: worktoolbar.cpp:348
 msgid "Activity Transition"
 msgstr ""
@@ -3216,10 +3163,6 @@ msgstr ""
 msgid "Message"
 msgstr "Neges"
 
-#: worktoolbar.cpp:356 association.cpp:55
-msgid "Exception"
-msgstr ""
-
 #: worktoolbar.cpp:357
 #, fuzzy
 #| msgid "Object"
@@ -3234,20 +3177,94 @@ msgstr ""
 msgid "Category"
 msgstr ""
 
-#: worktoolbar.cpp:360 association.cpp:56
-msgid "Category to Parent"
-msgstr ""
-
-#: worktoolbar.cpp:361 association.cpp:57
-msgid "Child to Category"
-msgstr ""
-
 #: worktoolbar.cpp:372
 #, fuzzy
 #| msgid "Select"
 msgctxt "selection arrow"
 msgid "Select"
 msgstr "Dewis"
+
+#: umlcanvasobject.cpp:191 model_utils.cpp:428
+msgid "new_association"
+msgstr ""
+
+#: umlcanvasobject.cpp:194
+msgid "new_attribute"
+msgstr ""
+
+#: umlcanvasobject.cpp:197
+msgid "new_template"
+msgstr ""
+
+#: umlcanvasobject.cpp:200
+msgid "new_operation"
+msgstr ""
+
+#: umlcanvasobject.cpp:203
+msgid "new_literal"
+msgstr ""
+
+#: umlcanvasobject.cpp:206
+msgid "new_field"
+msgstr ""
+
+#: umlcanvasobject.cpp:209
+msgid "new_unique_constraint"
+msgstr ""
+
+#: umlcanvasobject.cpp:212
+msgid "new_fkey_constraint"
+msgstr ""
+
+#: umlcanvasobject.cpp:215
+msgid "new_check_constraint"
+msgstr ""
+
+#: toolbarstateother.cpp:235
+#, fuzzy
+msgid "Enter Signal Name"
+msgstr "Rhowch enw:"
+
+#: toolbarstateother.cpp:236
+#, fuzzy
+#| msgid "Enter name:"
+msgid "Enter Signal"
+msgstr "Rhowch enw:"
+
+#: toolbarstateother.cpp:236
+msgid "new Signal"
+msgstr ""
+
+#: toolbarstateother.cpp:242
+#, fuzzy
+msgid "Enter Time Event Name"
+msgstr "Rhowch enw:"
+
+#: toolbarstateother.cpp:243
+#, fuzzy
+msgid "Enter Time Event"
+msgstr "Rhowch enw:"
+
+#: toolbarstateother.cpp:243
+msgid "new time event"
+msgstr ""
+
+#: toolbarstateother.cpp:249
+#, fuzzy
+msgid "Enter Combined Fragment Name"
+msgstr "Rhowch enw:"
+
+#: toolbarstateother.cpp:250
+msgid "Enter the Combined Fragment"
+msgstr ""
+
+#: toolbarstateother.cpp:250
+msgid "new Combined Fragment"
+msgstr ""
+
+#: toolbarstateother.cpp:257 umlview.cpp:2733
+msgid "new state"
+msgstr ""
 
 #: enumliteral.cpp:104
 #, fuzzy
@@ -3294,6 +3311,13 @@ msgid ""
 "already exists in the package %2.\n"
 "Please enter a new name:"
 msgstr ""
+
+#: umlviewimageexporterall.cpp:84 uml.cpp:1319 umlviewimageexporter.cpp:77
+#, fuzzy
+#| msgid "Ready."
+msgctxt "reset status bar"
+msgid "Ready."
+msgstr "Parod."
 
 #: uml.cpp:242
 msgid "&Export model to DocBook"
@@ -3628,13 +3652,6 @@ msgid ""
 "clipboard may be of the wrong type to be pasted here."
 msgstr ""
 
-#: uml.cpp:1319 umlviewimageexporterall.cpp:84 umlviewimageexporter.cpp:77
-#, fuzzy
-#| msgid "Ready."
-msgctxt "reset status bar"
-msgid "Ready."
-msgstr "Parod."
-
 #: uml.cpp:1857
 msgid "Cannot view code until you generate some first."
 msgstr ""
@@ -3681,38 +3698,6 @@ msgstr ""
 
 #: uml.cpp:2756
 msgid "XHTML Generation failed ."
-msgstr ""
-
-#: association.cpp:39
-msgid "Generalization"
-msgstr ""
-
-#: association.cpp:43
-msgid "Self Association"
-msgstr ""
-
-#: association.cpp:44
-msgid "Collaboration Message"
-msgstr ""
-
-#: association.cpp:45
-msgid "Sequence Message"
-msgstr ""
-
-#: association.cpp:46
-msgid "Collaboration Self Message"
-msgstr ""
-
-#: association.cpp:47
-msgid "Sequence Self Message"
-msgstr ""
-
-#: association.cpp:50
-msgid "Realization"
-msgstr ""
-
-#: association.cpp:51
-msgid "Uni Association"
 msgstr ""
 
 #: model_utils.cpp:406
@@ -3852,6 +3837,840 @@ msgstr "Perthynas"
 #, fuzzy
 msgid "No Diagram"
 msgstr "Rhowch enw:"
+
+#: object_factory.cpp:191
+#, fuzzy
+#| msgid "Name"
+msgctxt "UMLObject name"
+msgid "Name"
+msgstr "Enw"
+
+#: object_factory.cpp:202
+msgid ""
+"This is a reserved keyword for the language of the configured code generator."
+msgstr ""
+
+#: object_factory.cpp:203
+msgid "Reserved Keyword"
+msgstr ""
+
+#: umlviewimageexportermodel.cpp:214
+#, kde-format
+msgid "Can not create directory: %1"
+msgstr ""
+
+#: umlviewimageexportermodel.cpp:232
+msgid "Can not save an empty diagram"
+msgstr ""
+
+#: umlviewimageexportermodel.cpp:237
+#, kde-format
+msgid "A problem occurred while saving diagram in %1"
+msgstr ""
+
+#: umlviewimageexportermodel.cpp:243 umllistview.cpp:476 umldoc.cpp:616
+#: umldoc.cpp:626 umldoc.cpp:643 umldoc.cpp:676 umldoc.cpp:694
+#, kde-format
+msgid "There was a problem saving file: %1"
+msgstr ""
+
+#: folder.cpp:405
+#, kde-format
+msgid "The folderfile %1 does not exist."
+msgstr ""
+
+#: folder.cpp:405 folder.cpp:409 umldoc.cpp:418 umldoc.cpp:440 umldoc.cpp:478
+#: umldoc.cpp:490 umldoc.cpp:504 umldoc.cpp:516 umldoc.cpp:528 umldoc.cpp:546
+msgid "Load Error"
+msgstr "Gwall Llwytho"
+
+#: folder.cpp:409
+#, kde-format
+msgid "The folderfile %1 cannot be opened."
+msgstr ""
+
+#: toolbarstateassociation.cpp:182 toolbarstateassociation.cpp:251
+msgid "Incorrect use of associations."
+msgstr ""
+
+#: toolbarstateassociation.cpp:182 toolbarstateassociation.cpp:251
+msgid "Association Error"
+msgstr ""
+
+#: umllistviewitem.cpp:525 umllistviewitem.cpp:558 umllistviewitem.cpp:589
+#: umllistviewitem.cpp:616
+msgid "Rename canceled"
+msgstr ""
+
+#: umllistviewitem.cpp:649
+#, kde-format
+msgid "Renaming an item of listview type %1 is not yet implemented."
+msgstr ""
+
+#: umllistviewitem.cpp:650
+msgid "Function Not Implemented"
+msgstr ""
+
+#: umllistviewitem.cpp:663
+msgid ""
+"The name you entered was invalid.\n"
+"Renaming process has been canceled."
+msgstr ""
+
+#: umllistviewitem.cpp:664 umllistview.cpp:2188
+msgid "Name Not Valid"
+msgstr ""
+
+#: listpopupmenu.cpp:286 listpopupmenu.cpp:601
+msgid "Change Font..."
+msgstr "Newid Wynebfath..."
+
+#: listpopupmenu.cpp:287
+msgid "Delete Selected Items"
+msgstr ""
+
+#: listpopupmenu.cpp:293 listpopupmenu.cpp:958
+msgid "Draw as Circle"
+msgstr ""
+
+#: listpopupmenu.cpp:295 listpopupmenu.cpp:960
+#, fuzzy
+msgid "Change into Class"
+msgstr "Newid Wynebfath"
+
+#: listpopupmenu.cpp:299 listpopupmenu.cpp:966
+#, fuzzy
+msgid "Change into Interface"
+msgstr "Newid Wynebfath"
+
+#: listpopupmenu.cpp:320 listpopupmenu.cpp:1478
+#, fuzzy
+#| msgid "Note"
+msgid "Category Type"
+msgstr "Noder"
+
+#: listpopupmenu.cpp:371
+msgid "Move Up"
+msgstr "Symud i Fyny"
+
+#: listpopupmenu.cpp:372
+msgid "Move Down"
+msgstr "Symud i Lawr"
+
+#: listpopupmenu.cpp:378
+msgid "Rename Class..."
+msgstr ""
+
+#: listpopupmenu.cpp:379
+msgid "Rename Object..."
+msgstr ""
+
+#: listpopupmenu.cpp:398
+#, fuzzy
+msgctxt "clear note"
+msgid "Clear"
+msgstr "Dosbarth"
+
+#: listpopupmenu.cpp:400 listpopupmenu.cpp:487 listpopupmenu.cpp:506
+#: listpopupmenu.cpp:547
+msgid "Change Text..."
+msgstr "Newid y Testun ..."
+
+#: listpopupmenu.cpp:419
+msgid "Change State Name..."
+msgstr ""
+
+#: listpopupmenu.cpp:430
+msgid "Flip Horizontal"
+msgstr ""
+
+#: listpopupmenu.cpp:433
+msgid "Flip Vertical"
+msgstr ""
+
+#: listpopupmenu.cpp:450
+msgid "Change Activity Name..."
+msgstr ""
+
+#: listpopupmenu.cpp:469
+#, fuzzy
+#| msgid "Change Text..."
+msgid "Change Object Node Name..."
+msgstr "Newid y Testun ..."
+
+#: listpopupmenu.cpp:485
+#, fuzzy
+msgctxt "clear precondition"
+msgid "Clear"
+msgstr "Dosbarth"
+
+#: listpopupmenu.cpp:496
+msgid "Add Interaction Operand"
+msgstr ""
+
+#: listpopupmenu.cpp:504
+#, fuzzy
+msgctxt "clear combined fragment"
+msgid "Clear"
+msgstr "Dosbarth"
+
+#: listpopupmenu.cpp:514 listpopupmenu.cpp:517 listpopupmenu.cpp:1623
+#: listpopupmenu.cpp:1627
+msgid "Change Multiplicity..."
+msgstr ""
+
+#: listpopupmenu.cpp:520 listpopupmenu.cpp:1631
+msgid "Change Name"
+msgstr ""
+
+#: listpopupmenu.cpp:523 listpopupmenu.cpp:1615 listpopupmenu.cpp:1637
+msgid "Change Role A Name..."
+msgstr ""
+
+#: listpopupmenu.cpp:526 listpopupmenu.cpp:1619 listpopupmenu.cpp:1638
+msgid "Change Role B Name..."
+msgstr ""
+
+#: listpopupmenu.cpp:540 listpopupmenu.cpp:634
+msgid "New Operation..."
+msgstr ""
+
+#: listpopupmenu.cpp:541 listpopupmenu.cpp:1657
+msgid "Select Operation..."
+msgstr ""
+
+#: listpopupmenu.cpp:586 listpopupmenu.cpp:1661
+msgid "Rename..."
+msgstr "Ail-enwi..."
+
+#: listpopupmenu.cpp:604 listpopupmenu.cpp:979
+msgid "Line Color..."
+msgstr "Lliw y llinell..."
+
+#: listpopupmenu.cpp:607
+msgid "Expand All"
+msgstr ""
+
+#: listpopupmenu.cpp:610
+msgid "Collapse All"
+msgstr ""
+
+#: listpopupmenu.cpp:613
+#, fuzzy
+#| msgid "Duplicate"
+msgctxt "duplicate action"
+msgid "Duplicate"
+msgstr "Dyblyg"
+
+#: listpopupmenu.cpp:616
+msgid "Externalize Folder..."
+msgstr ""
+
+#: listpopupmenu.cpp:619
+#, fuzzy
+msgid "Internalize Folder"
+msgstr "Gwall Mewnol"
+
+#: listpopupmenu.cpp:622
+#, fuzzy
+msgid "Import Classes..."
+msgstr "Dosbarth ..."
+
+#: listpopupmenu.cpp:625
+#, fuzzy
+msgid "Import Project..."
+msgstr "Dosbarth ..."
+
+#: listpopupmenu.cpp:628
+msgid "Reset Label Positions"
+msgstr ""
+
+#: listpopupmenu.cpp:631
+msgid "New Parameter..."
+msgstr ""
+
+#: listpopupmenu.cpp:637
+msgid "New Attribute..."
+msgstr ""
+
+#: listpopupmenu.cpp:640 listpopupmenu.cpp:1563
+msgid "New Template..."
+msgstr ""
+
+#: listpopupmenu.cpp:643
+msgid "New Literal..."
+msgstr ""
+
+#: listpopupmenu.cpp:646
+#, fuzzy
+msgid "New Entity Attribute..."
+msgstr "Priodoleddau ..."
+
+#: listpopupmenu.cpp:649
+msgid "Export as Picture..."
+msgstr ""
+
+#: listpopupmenu.cpp:668
+msgid "Subsystem"
+msgstr ""
+
+#: listpopupmenu.cpp:698 listpopupmenu.cpp:832
+msgid "Folder"
+msgstr "Plygell"
+
+#: listpopupmenu.cpp:727
+msgid "Text Line..."
+msgstr ""
+
+#: listpopupmenu.cpp:829
+#, fuzzy
+#| msgid "New"
+msgctxt "new container menu"
+msgid "New"
+msgstr "Newydd"
+
+#: listpopupmenu.cpp:833
+#, fuzzy
+#| msgid "Class"
+msgctxt "new class menu item"
+msgid "Class"
+msgstr "Dosbarth"
+
+#: listpopupmenu.cpp:914
+msgid "Public Only"
+msgstr ""
+
+#: listpopupmenu.cpp:918
+msgid "Operation Signature"
+msgstr ""
+
+#: listpopupmenu.cpp:923
+msgid "Attribute Signature"
+msgstr ""
+
+#: listpopupmenu.cpp:943
+#, fuzzy
+#| msgid "New"
+msgctxt "new classifier menu"
+msgid "New"
+msgstr "Newydd"
+
+#: listpopupmenu.cpp:946
+msgid "Attribute..."
+msgstr "Priodoleddau ..."
+
+#: listpopupmenu.cpp:947
+msgid "Operation..."
+msgstr "Gweithrediad ..."
+
+#: listpopupmenu.cpp:948
+#, fuzzy
+#| msgid "Template"
+msgid "Template..."
+msgstr "Patrymlun"
+
+#: listpopupmenu.cpp:962
+msgid "Refactor"
+msgstr ""
+
+#: listpopupmenu.cpp:963
+msgid "View Code"
+msgstr ""
+
+#: listpopupmenu.cpp:978
+#, fuzzy
+#| msgid "Color"
+msgctxt "color menu"
+msgid "Color"
+msgstr "Lliw"
+
+#: listpopupmenu.cpp:980
+msgid "Fill Color..."
+msgstr "Lliw Llenwad ..."
+
+#. i18n: file: umbrello.kcfg:96
+#. i18n: ectx: label, entry (useFillColor), group (UI Options)
+#: listpopupmenu.cpp:981 rc.cpp:1250
+msgid "Use Fill Color"
+msgstr ""
+
+#: listpopupmenu.cpp:1075
+#, fuzzy
+#| msgid "New"
+msgctxt "new sub menu"
+msgid "New"
+msgstr "Newydd"
+
+#: listpopupmenu.cpp:1124
+msgid "Actor..."
+msgstr ""
+
+#: listpopupmenu.cpp:1125
+msgid "Use Case..."
+msgstr ""
+
+#: listpopupmenu.cpp:1129
+#, fuzzy
+#| msgid "Class..."
+msgctxt "new class menu item"
+msgid "Class..."
+msgstr "Dosbarth ..."
+
+#: listpopupmenu.cpp:1130
+msgid "Interface..."
+msgstr "Rhyngwyneb ..."
+
+#: listpopupmenu.cpp:1131
+msgid "Datatype..."
+msgstr ""
+
+#: listpopupmenu.cpp:1132
+msgid "Enum..."
+msgstr ""
+
+#: listpopupmenu.cpp:1133
+msgid "Package..."
+msgstr "Pecyn ..."
+
+#: listpopupmenu.cpp:1139
+#, fuzzy
+#| msgid "State..."
+msgctxt "add new state"
+msgid "State..."
+msgstr "Cyflwr ..."
+
+#: listpopupmenu.cpp:1145 listpopupmenu.cpp:1187
+msgid "Activity..."
+msgstr ""
+
+#: listpopupmenu.cpp:1150
+#, fuzzy
+msgid "Subsystem..."
+msgstr "Cyflwr ..."
+
+#: listpopupmenu.cpp:1151
+msgid "Component..."
+msgstr ""
+
+#: listpopupmenu.cpp:1152
+msgid "Artifact..."
+msgstr ""
+
+#: listpopupmenu.cpp:1155
+msgid "Node..."
+msgstr "Nôd ..."
+
+#: listpopupmenu.cpp:1158
+#, fuzzy
+msgid "Entity..."
+msgstr "Terfynu..."
+
+#: listpopupmenu.cpp:1159
+#, fuzzy
+#| msgid "Note"
+msgid "Category..."
+msgstr "Noder"
+
+#: listpopupmenu.cpp:1163
+msgid "Object..."
+msgstr "Gwrthrych ..."
+
+#: listpopupmenu.cpp:1167
+msgid "Attribute"
+msgstr "Priodoleddau"
+
+#: listpopupmenu.cpp:1169 listpopupmenu.cpp:1173
+msgid "Template"
+msgstr "Patrymlun"
+
+#: listpopupmenu.cpp:1176
+#, fuzzy
+msgid "Entity Attribute..."
+msgstr "Priodoleddau ..."
+
+#: listpopupmenu.cpp:1183
+msgid "Enum Literal..."
+msgstr ""
+
+#: listpopupmenu.cpp:1611
+msgid "Delete Anchor"
+msgstr ""
+
+#: listpopupmenu.cpp:1636
+msgid "Change Association Name..."
+msgstr ""
+
+#: listpopupmenu.cpp:1686
+msgid "Undo"
+msgstr ""
+
+#: listpopupmenu.cpp:1687
+#, fuzzy
+msgid "Redo"
+msgstr "Parod."
+
+#: listpopupmenu.cpp:1693
+msgid "Clear Diagram"
+msgstr ""
+
+#: listpopupmenu.cpp:1696
+msgid "Snap to Grid"
+msgstr "Snapio i'r Grid"
+
+#: listpopupmenu.cpp:1698
+msgid "Show Grid"
+msgstr "Dangos Grid"
+
+#: listpopupmenu.cpp:1710
+msgid "Disjoint(Specialisation)"
+msgstr ""
+
+#: listpopupmenu.cpp:1711
+msgid "Overlapping(Specialisation)"
+msgstr ""
+
+#: listpopupmenu.cpp:1712
+msgid "Union"
+msgstr ""
+
+#: main.cpp:36 main.cpp:68
+msgid "Umbrello UML Modeller"
+msgstr ""
+
+#: main.cpp:70
+msgid "(c) 2001 Paul Hensgen, (c) 2002-2006 Umbrello UML Modeller Authors"
+msgstr ""
+
+#: main.cpp:72
+msgid "Paul Hensgen"
+msgstr ""
+
+#: main.cpp:77
+msgid "File to open"
+msgstr "Ffeil i agor"
+
+#: main.cpp:78
+msgid "export diagrams to extension and exit"
+msgstr ""
+
+#: main.cpp:79
+msgid "list available export extensions"
+msgstr ""
+
+#: main.cpp:80
+msgid "the local directory to save the exported diagrams in"
+msgstr ""
+
+#: main.cpp:80
+msgid "the directory of the file"
+msgstr ""
+
+#: main.cpp:81
+msgid ""
+"keep the tree structure used to store the views in the document in the "
+"target directory"
+msgstr ""
+
+#: umllistview.cpp:437
+msgid "Externalize Folder"
+msgstr ""
+
+#: umllistview.cpp:477 umldoc.cpp:616 umldoc.cpp:626 umldoc.cpp:643
+#: umldoc.cpp:676 umldoc.cpp:694 umldoc.cpp:701
+msgid "Save Error"
+msgstr "Gwall Cadw"
+
+#: umllistview.cpp:506
+#, fuzzy
+msgid "Enter Model Name"
+msgstr "Rhowch enw:"
+
+#: umllistview.cpp:507
+msgid "Enter the new name of the model:"
+msgstr ""
+
+#: umllistview.cpp:1234
+msgid "Views"
+msgstr "Golygon"
+
+#: umllistview.cpp:2187
+msgid ""
+"The name you entered was invalid.\n"
+"Creation process has been canceled."
+msgstr ""
+
+#: umllistview.cpp:2197 umldoc.cpp:1353
+msgid ""
+"The name you entered was not unique.\n"
+"Is this what you wanted?"
+msgstr ""
+
+#: umllistview.cpp:2198 umldoc.cpp:1354
+#, fuzzy
+msgid "Use Name"
+msgstr "Enw"
+
+#: umllistview.cpp:2198 umldoc.cpp:1354
+#, fuzzy
+msgid "Enter New Name"
+msgstr "Rhowch enw:"
+
+#: umllistview.cpp:2204 umllistview.cpp:2466
+msgid ""
+"The name you entered was not unique.\n"
+"Creation process has been canceled."
+msgstr ""
+
+#: umllistview.cpp:2424 umllistview.cpp:2441 umllistview.cpp:2456
+#: umllistview.cpp:2486
+msgid "Creation canceled"
+msgstr ""
+
+#: umllistview.cpp:2697
+#, fuzzy
+msgid "Loading listview..."
+msgstr "Yn cadw ffeil..."
+
+#: umllistview.cpp:3072
+msgid "The folder must be emptied before it can be deleted."
+msgstr ""
+
+#: umllistview.cpp:3073
+msgid "Folder Not Empty"
+msgstr ""
+
+#: umlviewimageexporter.cpp:71
+#, fuzzy
+msgid "Exporting view..."
+msgstr "Terfynu..."
+
+#: umlviewimageexporter.cpp:75
+msgid "An error happened when exporting the image:\n"
+msgstr ""
+
+#: umlviewimageexporter.cpp:102
+#, kde-format
+msgid ""
+"The selected file %1 exists.\n"
+"Do you want to overwrite it?"
+msgstr ""
+
+#: umlviewimageexporter.cpp:103
+msgid "File Already Exists"
+msgstr "Ffeil yn Bodoli'n Barod"
+
+#: operation.cpp:273
+msgid "new_parameter"
+msgstr ""
+
+#: umldoc.cpp:87 umldoc.cpp:1878
+msgid "UML Model"
+msgstr ""
+
+#: umldoc.cpp:120
+msgid "Logical View"
+msgstr ""
+
+#: umldoc.cpp:121
+msgid "Use Case View"
+msgstr ""
+
+#: umldoc.cpp:122
+msgid "Component View"
+msgstr ""
+
+#: umldoc.cpp:123
+msgid "Deployment View"
+msgstr ""
+
+#: umldoc.cpp:124
+msgid "Entity Relationship Model"
+msgstr ""
+
+#: umldoc.cpp:131 umldoc.cpp:343
+msgid "Datatypes"
+msgstr ""
+
+#: umldoc.cpp:271
+msgid ""
+"The current file has been modified.\n"
+"Do you want to save it?"
+msgstr ""
+"Addaswyd y ffeil gyfredol.\n"
+"Hoffech ei chadw?"
+
+#: umldoc.cpp:272
+#, fuzzy
+msgctxt "warning message"
+msgid "Warning"
+msgstr "llinell"
+
+#: umldoc.cpp:418
+#, kde-format
+msgid "The file %1 does not exist."
+msgstr "Nid yw'r ffeil %1 yn bodoli!."
+
+#: umldoc.cpp:440
+#, kde-format
+msgid "The file %1 seems to be corrupted."
+msgstr ""
+
+#: umldoc.cpp:477 umldoc.cpp:489 umldoc.cpp:515
+#, kde-format
+msgid "There was no XMI file found in the compressed file %1."
+msgstr ""
+
+#: umldoc.cpp:503
+#, kde-format
+msgid "There was a problem loading the extracted file: %1"
+msgstr ""
+
+#: umldoc.cpp:527 umldoc.cpp:545
+#, kde-format
+msgid "There was a problem loading file: %1"
+msgstr ""
+
+#: umldoc.cpp:701
+#, kde-format
+msgid "There was a problem uploading file: %1"
+msgstr ""
+
+#: umldoc.cpp:1154
+msgid "use case diagram"
+msgstr ""
+
+#: umldoc.cpp:1157
+msgid "class diagram"
+msgstr ""
+
+#: umldoc.cpp:1160
+msgid "sequence diagram"
+msgstr ""
+
+#: umldoc.cpp:1163
+msgid "collaboration diagram"
+msgstr ""
+
+#: umldoc.cpp:1166
+msgid "state diagram"
+msgstr ""
+
+#: umldoc.cpp:1169
+msgid "activity diagram"
+msgstr ""
+
+#: umldoc.cpp:1172
+msgid "component diagram"
+msgstr ""
+
+#: umldoc.cpp:1175
+msgid "deployment diagram"
+msgstr ""
+
+#: umldoc.cpp:1178
+msgid "entity relationship diagram"
+msgstr ""
+
+#: umldoc.cpp:1235
+#, fuzzy
+#| msgid "Name"
+msgctxt "diagram name"
+msgid "Name"
+msgstr "Enw"
+
+#: umldoc.cpp:1243 umldoc.cpp:1284
+msgid "That is an invalid name for a diagram."
+msgstr ""
+
+#: umldoc.cpp:1257 umldoc.cpp:1293
+msgid "A diagram is already using that name."
+msgstr ""
+
+#: umldoc.cpp:1278
+#, fuzzy
+#| msgid "Name"
+msgctxt "renaming diagram"
+msgid "Name"
+msgstr "Enw"
+
+#: umldoc.cpp:1309
+#, fuzzy
+#| msgid "Name"
+msgctxt "renaming uml object"
+msgid "Name"
+msgstr "Enw"
+
+#: umldoc.cpp:1343
+#, fuzzy
+#| msgid "Name"
+msgctxt "renaming child uml object"
+msgid "Name"
+msgstr "Enw"
+
+#: umldoc.cpp:1404
+#, kde-format
+msgid "Are you sure you want to delete diagram %1?"
+msgstr ""
+
+#: umldoc.cpp:1405
+msgid "Delete Diagram"
+msgstr ""
+
+#: umldoc.cpp:1934
+msgid "Setting up the document..."
+msgstr ""
+
+#: umldoc.cpp:1963
+msgid "Resolving object references..."
+msgstr ""
+
+#: umldoc.cpp:2014
+msgid "Loading UML elements..."
+msgstr ""
+
+#: umldoc.cpp:2209
+msgid "Loading diagrams..."
+msgstr ""
+
+#: umldoc.cpp:2703
+#, kde-format
+msgid "/autosave%1"
+msgstr ""
+
+#: umlview.cpp:317 umlview.cpp:387
+#, kde-format
+msgid "Diagram: %2 Page %1"
+msgstr ""
+
+#: umlview.cpp:1057
+#, fuzzy
+msgid "Change Line Color"
+msgstr "Newid Wynebfath"
+
+#: umlview.cpp:1086
+#, fuzzy
+#| msgid "Fill Color..."
+msgid "Change Fill Color"
+msgstr "Lliw Llenwad ..."
+
+#: umlview.cpp:2795
+#, fuzzy
+msgid "Enter Diagram Name"
+msgstr "Rhowch enw:"
+
+#: umlview.cpp:2796
+msgid "Enter the new name of the diagram:"
+msgstr ""
+
+#: umlview.cpp:2957
+msgid ""
+"You are about to delete the entire diagram.\n"
+"Are you sure?"
+msgstr ""
+
+#: umlview.cpp:2959
+msgid "Delete Diagram?"
+msgstr ""
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -4686,46 +5505,73 @@ msgstr ""
 msgid "<p align=\"right\">Editable text:</p>"
 msgstr ""
 
+#. i18n: file: dialogs/importprojectdlgbase.ui:23
+#. i18n: ectx: property (toolTip), widget (QLabel, kURLRequesterLabel)
+#. i18n: file: dialogs/importprojectdlgbase.ui:39
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, m_kURL)
+#: rc.cpp:902 rc.cpp:908
+msgid "The base directory that contains the project"
+msgstr ""
+
+#. i18n: file: dialogs/importprojectdlgbase.ui:26
+#. i18n: ectx: property (text), widget (QLabel, kURLRequesterLabel)
+#: rc.cpp:905
+msgid "&Directory of the project:"
+msgstr ""
+
+#. i18n: file: dialogs/importprojectdlgbase.ui:50
+#. i18n: ectx: property (toolTip), widget (QLabel, languageLabel)
+#: rc.cpp:911
+msgid "The language of the project"
+msgstr ""
+
+#. i18n: file: dialogs/importprojectdlgbase.ui:53
+#. i18n: ectx: property (text), widget (QLabel, languageLabel)
+#: rc.cpp:914
+#, fuzzy
+msgid "Language:"
+msgstr "Iaith"
+
 #. i18n: file: dialogs/diagrampropertiespage.ui:16
 #. i18n: ectx: property (title), widget (QGroupBox, ui_groupBoxDiagramProperties)
-#: rc.cpp:902
+#: rc.cpp:917
 msgid "Diagram Properties"
 msgstr ""
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:39
 #. i18n: ectx: property (text), widget (QLabel, ui_labelDiagramName)
-#: rc.cpp:905
+#: rc.cpp:920
 msgid "Name:"
 msgstr "Enw:"
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:82
 #. i18n: ectx: property (text), widget (QLabel, ui_labelZoom)
-#: rc.cpp:908
+#: rc.cpp:923
 msgid "Zoom:"
 msgstr "Chwyddo:"
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:108
 #. i18n: ectx: property (text), widget (QLabel, ui_labelZoomUnit)
-#: rc.cpp:912
+#: rc.cpp:927
 #, no-c-format
 msgid "%"
 msgstr "%"
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:153
 #. i18n: ectx: property (text), widget (QCheckBox, ui_checkBoxShowGrid)
-#: rc.cpp:918
+#: rc.cpp:933
 msgid "Show &grid"
 msgstr "Dangos &grid"
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:160
 #. i18n: ectx: property (text), widget (QCheckBox, ui_snapToGrid)
-#: rc.cpp:921
+#: rc.cpp:936
 msgid "Snap &to grid"
 msgstr "Snapio &i'r grid"
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:168
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, ui_snapComponentSizeToGrid)
-#: rc.cpp:924
+#: rc.cpp:939
 msgid ""
 "Snap the size of the components to be a multiple of the grid spacing.\n"
 "If 'Snap to Grid' is enabled a component will always be aligned with the "
@@ -4734,60 +5580,33 @@ msgstr ""
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:171
 #. i18n: ectx: property (text), widget (QCheckBox, ui_snapComponentSizeToGrid)
-#: rc.cpp:928
+#: rc.cpp:943
 msgid "Snap component size"
 msgstr ""
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:197
 #. i18n: ectx: property (text), widget (QLabel, ui_labelGridSpacing)
-#: rc.cpp:931
+#: rc.cpp:946
 msgid "Grid spacing:  "
 msgstr ""
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:207
 #. i18n: ectx: property (text), widget (QLabel, ui_labelX)
-#: rc.cpp:934
+#: rc.cpp:949
 msgid "X"
 msgstr "X"
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:243
 #. i18n: ectx: property (text), widget (QLabel, ui_labelY)
-#: rc.cpp:937
+#: rc.cpp:952
 msgid "Y"
 msgstr "Y"
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:282
 #. i18n: ectx: property (text), widget (QLabel, ui_labeLineWidth)
-#: rc.cpp:940
+#: rc.cpp:955
 msgid "Line width:  "
 msgstr "Lled y llinell:  "
-
-#. i18n: file: dialogs/importprojectdlgbase.ui:23
-#. i18n: ectx: property (toolTip), widget (QLabel, kURLRequesterLabel)
-#. i18n: file: dialogs/importprojectdlgbase.ui:39
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, m_kURL)
-#: rc.cpp:946 rc.cpp:952
-msgid "The base directory that contains the project"
-msgstr ""
-
-#. i18n: file: dialogs/importprojectdlgbase.ui:26
-#. i18n: ectx: property (text), widget (QLabel, kURLRequesterLabel)
-#: rc.cpp:949
-msgid "&Directory of the project:"
-msgstr ""
-
-#. i18n: file: dialogs/importprojectdlgbase.ui:50
-#. i18n: ectx: property (toolTip), widget (QLabel, languageLabel)
-#: rc.cpp:955
-msgid "The language of the project"
-msgstr ""
-
-#. i18n: file: dialogs/importprojectdlgbase.ui:53
-#. i18n: ectx: property (text), widget (QLabel, languageLabel)
-#: rc.cpp:958
-#, fuzzy
-msgid "Language:"
-msgstr "Iaith"
 
 #. i18n: file: dialogs/exportallviewsdialogbase.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, ExportAllViewsDialogBase)
@@ -5350,12 +6169,6 @@ msgstr "&Gwerth ragosod :"
 #. i18n: ectx: whatsthis, entry (defaultLanguage), group (General Options)
 #: rc.cpp:1247
 msgid "The Language that Umbrello should start with by default"
-msgstr ""
-
-#. i18n: file: umbrello.kcfg:96
-#. i18n: ectx: label, entry (useFillColor), group (UI Options)
-#: rc.cpp:1250 listpopupmenu.cpp:981
-msgid "Use Fill Color"
 msgstr ""
 
 #. i18n: file: umbrello.kcfg:97
@@ -6217,819 +7030,6 @@ msgstr ""
 #. i18n: ectx: whatsthis, entry (autoGenerateAssocAccessorsRuby), group (Ruby Code Generation)
 #: rc.cpp:1649
 msgid "Enables/Disables auto generation of association accessors (Ruby)"
-msgstr ""
-
-#: object_factory.cpp:191
-#, fuzzy
-#| msgid "Name"
-msgctxt "UMLObject name"
-msgid "Name"
-msgstr "Enw"
-
-#: object_factory.cpp:202
-msgid ""
-"This is a reserved keyword for the language of the configured code generator."
-msgstr ""
-
-#: object_factory.cpp:203
-msgid "Reserved Keyword"
-msgstr ""
-
-#: main.cpp:36 main.cpp:68
-msgid "Umbrello UML Modeller"
-msgstr ""
-
-#: main.cpp:70
-msgid "(c) 2001 Paul Hensgen, (c) 2002-2006 Umbrello UML Modeller Authors"
-msgstr ""
-
-#: main.cpp:72
-msgid "Paul Hensgen"
-msgstr ""
-
-#: main.cpp:77
-msgid "File to open"
-msgstr "Ffeil i agor"
-
-#: main.cpp:78
-msgid "export diagrams to extension and exit"
-msgstr ""
-
-#: main.cpp:79
-msgid "list available export extensions"
-msgstr ""
-
-#: main.cpp:80
-msgid "the local directory to save the exported diagrams in"
-msgstr ""
-
-#: main.cpp:80
-msgid "the directory of the file"
-msgstr ""
-
-#: main.cpp:81
-msgid ""
-"keep the tree structure used to store the views in the document in the "
-"target directory"
-msgstr ""
-
-#: umlviewimageexportermodel.cpp:214
-#, kde-format
-msgid "Can not create directory: %1"
-msgstr ""
-
-#: umlviewimageexportermodel.cpp:232
-msgid "Can not save an empty diagram"
-msgstr ""
-
-#: umlviewimageexportermodel.cpp:237
-#, kde-format
-msgid "A problem occurred while saving diagram in %1"
-msgstr ""
-
-#: umlviewimageexportermodel.cpp:243 umllistview.cpp:476 umldoc.cpp:616
-#: umldoc.cpp:626 umldoc.cpp:643 umldoc.cpp:676 umldoc.cpp:694
-#, kde-format
-msgid "There was a problem saving file: %1"
-msgstr ""
-
-#: toolbarstateassociation.cpp:182 toolbarstateassociation.cpp:251
-msgid "Incorrect use of associations."
-msgstr ""
-
-#: toolbarstateassociation.cpp:182 toolbarstateassociation.cpp:251
-msgid "Association Error"
-msgstr ""
-
-#: listpopupmenu.cpp:286 listpopupmenu.cpp:601
-msgid "Change Font..."
-msgstr "Newid Wynebfath..."
-
-#: listpopupmenu.cpp:287
-msgid "Delete Selected Items"
-msgstr ""
-
-#: listpopupmenu.cpp:293 listpopupmenu.cpp:958
-msgid "Draw as Circle"
-msgstr ""
-
-#: listpopupmenu.cpp:295 listpopupmenu.cpp:960
-#, fuzzy
-msgid "Change into Class"
-msgstr "Newid Wynebfath"
-
-#: listpopupmenu.cpp:299 listpopupmenu.cpp:966
-#, fuzzy
-msgid "Change into Interface"
-msgstr "Newid Wynebfath"
-
-#: listpopupmenu.cpp:320 listpopupmenu.cpp:1478
-#, fuzzy
-#| msgid "Note"
-msgid "Category Type"
-msgstr "Noder"
-
-#: listpopupmenu.cpp:371
-msgid "Move Up"
-msgstr "Symud i Fyny"
-
-#: listpopupmenu.cpp:372
-msgid "Move Down"
-msgstr "Symud i Lawr"
-
-#: listpopupmenu.cpp:378
-msgid "Rename Class..."
-msgstr ""
-
-#: listpopupmenu.cpp:379
-msgid "Rename Object..."
-msgstr ""
-
-#: listpopupmenu.cpp:398
-#, fuzzy
-msgctxt "clear note"
-msgid "Clear"
-msgstr "Dosbarth"
-
-#: listpopupmenu.cpp:400 listpopupmenu.cpp:487 listpopupmenu.cpp:506
-#: listpopupmenu.cpp:547
-msgid "Change Text..."
-msgstr "Newid y Testun ..."
-
-#: listpopupmenu.cpp:419
-msgid "Change State Name..."
-msgstr ""
-
-#: listpopupmenu.cpp:430
-msgid "Flip Horizontal"
-msgstr ""
-
-#: listpopupmenu.cpp:433
-msgid "Flip Vertical"
-msgstr ""
-
-#: listpopupmenu.cpp:450
-msgid "Change Activity Name..."
-msgstr ""
-
-#: listpopupmenu.cpp:469
-#, fuzzy
-#| msgid "Change Text..."
-msgid "Change Object Node Name..."
-msgstr "Newid y Testun ..."
-
-#: listpopupmenu.cpp:485
-#, fuzzy
-msgctxt "clear precondition"
-msgid "Clear"
-msgstr "Dosbarth"
-
-#: listpopupmenu.cpp:496
-msgid "Add Interaction Operand"
-msgstr ""
-
-#: listpopupmenu.cpp:504
-#, fuzzy
-msgctxt "clear combined fragment"
-msgid "Clear"
-msgstr "Dosbarth"
-
-#: listpopupmenu.cpp:514 listpopupmenu.cpp:517 listpopupmenu.cpp:1623
-#: listpopupmenu.cpp:1627
-msgid "Change Multiplicity..."
-msgstr ""
-
-#: listpopupmenu.cpp:520 listpopupmenu.cpp:1631
-msgid "Change Name"
-msgstr ""
-
-#: listpopupmenu.cpp:523 listpopupmenu.cpp:1615 listpopupmenu.cpp:1637
-msgid "Change Role A Name..."
-msgstr ""
-
-#: listpopupmenu.cpp:526 listpopupmenu.cpp:1619 listpopupmenu.cpp:1638
-msgid "Change Role B Name..."
-msgstr ""
-
-#: listpopupmenu.cpp:540 listpopupmenu.cpp:634
-msgid "New Operation..."
-msgstr ""
-
-#: listpopupmenu.cpp:541 listpopupmenu.cpp:1657
-msgid "Select Operation..."
-msgstr ""
-
-#: listpopupmenu.cpp:586 listpopupmenu.cpp:1661
-msgid "Rename..."
-msgstr "Ail-enwi..."
-
-#: listpopupmenu.cpp:604 listpopupmenu.cpp:979
-msgid "Line Color..."
-msgstr "Lliw y llinell..."
-
-#: listpopupmenu.cpp:607
-msgid "Expand All"
-msgstr ""
-
-#: listpopupmenu.cpp:610
-msgid "Collapse All"
-msgstr ""
-
-#: listpopupmenu.cpp:613
-#, fuzzy
-#| msgid "Duplicate"
-msgctxt "duplicate action"
-msgid "Duplicate"
-msgstr "Dyblyg"
-
-#: listpopupmenu.cpp:616
-msgid "Externalize Folder..."
-msgstr ""
-
-#: listpopupmenu.cpp:619
-#, fuzzy
-msgid "Internalize Folder"
-msgstr "Gwall Mewnol"
-
-#: listpopupmenu.cpp:622
-#, fuzzy
-msgid "Import Classes..."
-msgstr "Dosbarth ..."
-
-#: listpopupmenu.cpp:625
-#, fuzzy
-msgid "Import Project..."
-msgstr "Dosbarth ..."
-
-#: listpopupmenu.cpp:628
-msgid "Reset Label Positions"
-msgstr ""
-
-#: listpopupmenu.cpp:631
-msgid "New Parameter..."
-msgstr ""
-
-#: listpopupmenu.cpp:637
-msgid "New Attribute..."
-msgstr ""
-
-#: listpopupmenu.cpp:640 listpopupmenu.cpp:1563
-msgid "New Template..."
-msgstr ""
-
-#: listpopupmenu.cpp:643
-msgid "New Literal..."
-msgstr ""
-
-#: listpopupmenu.cpp:646
-#, fuzzy
-msgid "New Entity Attribute..."
-msgstr "Priodoleddau ..."
-
-#: listpopupmenu.cpp:649
-msgid "Export as Picture..."
-msgstr ""
-
-#: listpopupmenu.cpp:668
-msgid "Subsystem"
-msgstr ""
-
-#: listpopupmenu.cpp:698 listpopupmenu.cpp:832
-msgid "Folder"
-msgstr "Plygell"
-
-#: listpopupmenu.cpp:727
-msgid "Text Line..."
-msgstr ""
-
-#: listpopupmenu.cpp:829
-#, fuzzy
-#| msgid "New"
-msgctxt "new container menu"
-msgid "New"
-msgstr "Newydd"
-
-#: listpopupmenu.cpp:833
-#, fuzzy
-#| msgid "Class"
-msgctxt "new class menu item"
-msgid "Class"
-msgstr "Dosbarth"
-
-#: listpopupmenu.cpp:914
-msgid "Public Only"
-msgstr ""
-
-#: listpopupmenu.cpp:918
-msgid "Operation Signature"
-msgstr ""
-
-#: listpopupmenu.cpp:923
-msgid "Attribute Signature"
-msgstr ""
-
-#: listpopupmenu.cpp:943
-#, fuzzy
-#| msgid "New"
-msgctxt "new classifier menu"
-msgid "New"
-msgstr "Newydd"
-
-#: listpopupmenu.cpp:946
-msgid "Attribute..."
-msgstr "Priodoleddau ..."
-
-#: listpopupmenu.cpp:947
-msgid "Operation..."
-msgstr "Gweithrediad ..."
-
-#: listpopupmenu.cpp:948
-#, fuzzy
-#| msgid "Template"
-msgid "Template..."
-msgstr "Patrymlun"
-
-#: listpopupmenu.cpp:962
-msgid "Refactor"
-msgstr ""
-
-#: listpopupmenu.cpp:963
-msgid "View Code"
-msgstr ""
-
-#: listpopupmenu.cpp:978
-#, fuzzy
-#| msgid "Color"
-msgctxt "color menu"
-msgid "Color"
-msgstr "Lliw"
-
-#: listpopupmenu.cpp:980
-msgid "Fill Color..."
-msgstr "Lliw Llenwad ..."
-
-#: listpopupmenu.cpp:1075
-#, fuzzy
-#| msgid "New"
-msgctxt "new sub menu"
-msgid "New"
-msgstr "Newydd"
-
-#: listpopupmenu.cpp:1124
-msgid "Actor..."
-msgstr ""
-
-#: listpopupmenu.cpp:1125
-msgid "Use Case..."
-msgstr ""
-
-#: listpopupmenu.cpp:1129
-#, fuzzy
-#| msgid "Class..."
-msgctxt "new class menu item"
-msgid "Class..."
-msgstr "Dosbarth ..."
-
-#: listpopupmenu.cpp:1130
-msgid "Interface..."
-msgstr "Rhyngwyneb ..."
-
-#: listpopupmenu.cpp:1131
-msgid "Datatype..."
-msgstr ""
-
-#: listpopupmenu.cpp:1132
-msgid "Enum..."
-msgstr ""
-
-#: listpopupmenu.cpp:1133
-msgid "Package..."
-msgstr "Pecyn ..."
-
-#: listpopupmenu.cpp:1139
-#, fuzzy
-#| msgid "State..."
-msgctxt "add new state"
-msgid "State..."
-msgstr "Cyflwr ..."
-
-#: listpopupmenu.cpp:1145 listpopupmenu.cpp:1187
-msgid "Activity..."
-msgstr ""
-
-#: listpopupmenu.cpp:1150
-#, fuzzy
-msgid "Subsystem..."
-msgstr "Cyflwr ..."
-
-#: listpopupmenu.cpp:1151
-msgid "Component..."
-msgstr ""
-
-#: listpopupmenu.cpp:1152
-msgid "Artifact..."
-msgstr ""
-
-#: listpopupmenu.cpp:1155
-msgid "Node..."
-msgstr "Nôd ..."
-
-#: listpopupmenu.cpp:1158
-#, fuzzy
-msgid "Entity..."
-msgstr "Terfynu..."
-
-#: listpopupmenu.cpp:1159
-#, fuzzy
-#| msgid "Note"
-msgid "Category..."
-msgstr "Noder"
-
-#: listpopupmenu.cpp:1163
-msgid "Object..."
-msgstr "Gwrthrych ..."
-
-#: listpopupmenu.cpp:1167
-msgid "Attribute"
-msgstr "Priodoleddau"
-
-#: listpopupmenu.cpp:1169 listpopupmenu.cpp:1173
-msgid "Template"
-msgstr "Patrymlun"
-
-#: listpopupmenu.cpp:1176
-#, fuzzy
-msgid "Entity Attribute..."
-msgstr "Priodoleddau ..."
-
-#: listpopupmenu.cpp:1183
-msgid "Enum Literal..."
-msgstr ""
-
-#: listpopupmenu.cpp:1611
-msgid "Delete Anchor"
-msgstr ""
-
-#: listpopupmenu.cpp:1636
-msgid "Change Association Name..."
-msgstr ""
-
-#: listpopupmenu.cpp:1686
-msgid "Undo"
-msgstr ""
-
-#: listpopupmenu.cpp:1687
-#, fuzzy
-msgid "Redo"
-msgstr "Parod."
-
-#: listpopupmenu.cpp:1693
-msgid "Clear Diagram"
-msgstr ""
-
-#: listpopupmenu.cpp:1696
-msgid "Snap to Grid"
-msgstr "Snapio i'r Grid"
-
-#: listpopupmenu.cpp:1698
-msgid "Show Grid"
-msgstr "Dangos Grid"
-
-#: listpopupmenu.cpp:1710
-msgid "Disjoint(Specialisation)"
-msgstr ""
-
-#: listpopupmenu.cpp:1711
-msgid "Overlapping(Specialisation)"
-msgstr ""
-
-#: listpopupmenu.cpp:1712
-msgid "Union"
-msgstr ""
-
-#: umllistviewitem.cpp:525 umllistviewitem.cpp:558 umllistviewitem.cpp:589
-#: umllistviewitem.cpp:616
-msgid "Rename canceled"
-msgstr ""
-
-#: umllistviewitem.cpp:649
-#, kde-format
-msgid "Renaming an item of listview type %1 is not yet implemented."
-msgstr ""
-
-#: umllistviewitem.cpp:650
-msgid "Function Not Implemented"
-msgstr ""
-
-#: umllistviewitem.cpp:663
-msgid ""
-"The name you entered was invalid.\n"
-"Renaming process has been canceled."
-msgstr ""
-
-#: umllistviewitem.cpp:664 umllistview.cpp:2188
-msgid "Name Not Valid"
-msgstr ""
-
-#: umllistview.cpp:437
-msgid "Externalize Folder"
-msgstr ""
-
-#: umllistview.cpp:477 umldoc.cpp:616 umldoc.cpp:626 umldoc.cpp:643
-#: umldoc.cpp:676 umldoc.cpp:694 umldoc.cpp:701
-msgid "Save Error"
-msgstr "Gwall Cadw"
-
-#: umllistview.cpp:506
-#, fuzzy
-msgid "Enter Model Name"
-msgstr "Rhowch enw:"
-
-#: umllistview.cpp:507
-msgid "Enter the new name of the model:"
-msgstr ""
-
-#: umllistview.cpp:1234
-msgid "Views"
-msgstr "Golygon"
-
-#: umllistview.cpp:2187
-msgid ""
-"The name you entered was invalid.\n"
-"Creation process has been canceled."
-msgstr ""
-
-#: umllistview.cpp:2197 umldoc.cpp:1353
-msgid ""
-"The name you entered was not unique.\n"
-"Is this what you wanted?"
-msgstr ""
-
-#: umllistview.cpp:2198 umldoc.cpp:1354
-#, fuzzy
-msgid "Use Name"
-msgstr "Enw"
-
-#: umllistview.cpp:2198 umldoc.cpp:1354
-#, fuzzy
-msgid "Enter New Name"
-msgstr "Rhowch enw:"
-
-#: umllistview.cpp:2204 umllistview.cpp:2466
-msgid ""
-"The name you entered was not unique.\n"
-"Creation process has been canceled."
-msgstr ""
-
-#: umllistview.cpp:2424 umllistview.cpp:2441 umllistview.cpp:2456
-#: umllistview.cpp:2486
-msgid "Creation canceled"
-msgstr ""
-
-#: umllistview.cpp:2697
-#, fuzzy
-msgid "Loading listview..."
-msgstr "Yn cadw ffeil..."
-
-#: umllistview.cpp:3072
-msgid "The folder must be emptied before it can be deleted."
-msgstr ""
-
-#: umllistview.cpp:3073
-msgid "Folder Not Empty"
-msgstr ""
-
-#: umlviewimageexporter.cpp:71
-#, fuzzy
-msgid "Exporting view..."
-msgstr "Terfynu..."
-
-#: umlviewimageexporter.cpp:75
-msgid "An error happened when exporting the image:\n"
-msgstr ""
-
-#: umlviewimageexporter.cpp:102
-#, kde-format
-msgid ""
-"The selected file %1 exists.\n"
-"Do you want to overwrite it?"
-msgstr ""
-
-#: umlviewimageexporter.cpp:103
-msgid "File Already Exists"
-msgstr "Ffeil yn Bodoli'n Barod"
-
-#: operation.cpp:273
-msgid "new_parameter"
-msgstr ""
-
-#: umldoc.cpp:87 umldoc.cpp:1878
-msgid "UML Model"
-msgstr ""
-
-#: umldoc.cpp:120
-msgid "Logical View"
-msgstr ""
-
-#: umldoc.cpp:121
-msgid "Use Case View"
-msgstr ""
-
-#: umldoc.cpp:122
-msgid "Component View"
-msgstr ""
-
-#: umldoc.cpp:123
-msgid "Deployment View"
-msgstr ""
-
-#: umldoc.cpp:124
-msgid "Entity Relationship Model"
-msgstr ""
-
-#: umldoc.cpp:131 umldoc.cpp:343
-msgid "Datatypes"
-msgstr ""
-
-#: umldoc.cpp:271
-msgid ""
-"The current file has been modified.\n"
-"Do you want to save it?"
-msgstr ""
-"Addaswyd y ffeil gyfredol.\n"
-"Hoffech ei chadw?"
-
-#: umldoc.cpp:272
-#, fuzzy
-msgctxt "warning message"
-msgid "Warning"
-msgstr "llinell"
-
-#: umldoc.cpp:418
-#, kde-format
-msgid "The file %1 does not exist."
-msgstr "Nid yw'r ffeil %1 yn bodoli!."
-
-#: umldoc.cpp:440
-#, kde-format
-msgid "The file %1 seems to be corrupted."
-msgstr ""
-
-#: umldoc.cpp:477 umldoc.cpp:489 umldoc.cpp:515
-#, kde-format
-msgid "There was no XMI file found in the compressed file %1."
-msgstr ""
-
-#: umldoc.cpp:503
-#, kde-format
-msgid "There was a problem loading the extracted file: %1"
-msgstr ""
-
-#: umldoc.cpp:527 umldoc.cpp:545
-#, kde-format
-msgid "There was a problem loading file: %1"
-msgstr ""
-
-#: umldoc.cpp:701
-#, kde-format
-msgid "There was a problem uploading file: %1"
-msgstr ""
-
-#: umldoc.cpp:1154
-msgid "use case diagram"
-msgstr ""
-
-#: umldoc.cpp:1157
-msgid "class diagram"
-msgstr ""
-
-#: umldoc.cpp:1160
-msgid "sequence diagram"
-msgstr ""
-
-#: umldoc.cpp:1163
-msgid "collaboration diagram"
-msgstr ""
-
-#: umldoc.cpp:1166
-msgid "state diagram"
-msgstr ""
-
-#: umldoc.cpp:1169
-msgid "activity diagram"
-msgstr ""
-
-#: umldoc.cpp:1172
-msgid "component diagram"
-msgstr ""
-
-#: umldoc.cpp:1175
-msgid "deployment diagram"
-msgstr ""
-
-#: umldoc.cpp:1178
-msgid "entity relationship diagram"
-msgstr ""
-
-#: umldoc.cpp:1235
-#, fuzzy
-#| msgid "Name"
-msgctxt "diagram name"
-msgid "Name"
-msgstr "Enw"
-
-#: umldoc.cpp:1243 umldoc.cpp:1284
-msgid "That is an invalid name for a diagram."
-msgstr ""
-
-#: umldoc.cpp:1257 umldoc.cpp:1293
-msgid "A diagram is already using that name."
-msgstr ""
-
-#: umldoc.cpp:1278
-#, fuzzy
-#| msgid "Name"
-msgctxt "renaming diagram"
-msgid "Name"
-msgstr "Enw"
-
-#: umldoc.cpp:1309
-#, fuzzy
-#| msgid "Name"
-msgctxt "renaming uml object"
-msgid "Name"
-msgstr "Enw"
-
-#: umldoc.cpp:1343
-#, fuzzy
-#| msgid "Name"
-msgctxt "renaming child uml object"
-msgid "Name"
-msgstr "Enw"
-
-#: umldoc.cpp:1404
-#, kde-format
-msgid "Are you sure you want to delete diagram %1?"
-msgstr ""
-
-#: umldoc.cpp:1405
-msgid "Delete Diagram"
-msgstr ""
-
-#: umldoc.cpp:1934
-msgid "Setting up the document..."
-msgstr ""
-
-#: umldoc.cpp:1963
-msgid "Resolving object references..."
-msgstr ""
-
-#: umldoc.cpp:2014
-msgid "Loading UML elements..."
-msgstr ""
-
-#: umldoc.cpp:2209
-msgid "Loading diagrams..."
-msgstr ""
-
-#: umldoc.cpp:2703
-#, kde-format
-msgid "/autosave%1"
-msgstr ""
-
-#: umlview.cpp:317 umlview.cpp:387
-#, kde-format
-msgid "Diagram: %2 Page %1"
-msgstr ""
-
-#: umlview.cpp:1057
-#, fuzzy
-msgid "Change Line Color"
-msgstr "Newid Wynebfath"
-
-#: umlview.cpp:1086
-#, fuzzy
-#| msgid "Fill Color..."
-msgid "Change Fill Color"
-msgstr "Lliw Llenwad ..."
-
-#: umlview.cpp:2795
-#, fuzzy
-msgid "Enter Diagram Name"
-msgstr "Rhowch enw:"
-
-#: umlview.cpp:2796
-msgid "Enter the new name of the diagram:"
-msgstr ""
-
-#: umlview.cpp:2957
-msgid ""
-"You are about to delete the entire diagram.\n"
-"Are you sure?"
-msgstr ""
-
-#: umlview.cpp:2959
-msgid "Delete Diagram?"
 msgstr ""
 
 #~ msgid "&Hide Grid"

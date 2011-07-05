@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdemultimedia/kmix.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-17 04:17+0200\n"
+"POT-Creation-Date: 2011-07-05 05:16+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -235,6 +235,10 @@ msgstr "&Sianeli"
 msgid "Mixer"
 msgstr "KMix"
 
+#: core/mixdevice.cpp:112 backends/mixer_oss.cpp:67 backends/mixer_oss.cpp:68
+msgid "unknown"
+msgstr "anhysbys"
+
 #: core/mixertoolbox.cpp:204
 msgid "Sound drivers supported:"
 msgstr ""
@@ -242,10 +246,6 @@ msgstr ""
 #: core/mixertoolbox.cpp:205
 msgid "Sound drivers used:"
 msgstr ""
-
-#: core/mixdevice.cpp:112 backends/mixer_oss.cpp:67 backends/mixer_oss.cpp:68
-msgid "unknown"
-msgstr "anhysbys"
 
 #: apps/main.cpp:33
 msgid "KMix - KDE's full featured mini mixer"
@@ -665,6 +665,15 @@ msgstr ""
 msgid "kmix: Unknown error. Please report how you produced this error."
 msgstr ""
 
+#: backends/mixer_oss4.cpp:495
+msgid ""
+"kmix: Mixer cannot be found.\n"
+"Please check that the soundcard is installed and the\n"
+"soundcard driver is loaded.\n"
+"On Linux you might need to use 'insmod' to load the driver.\n"
+"Use 'soundon' when using OSS4 from 4front."
+msgstr ""
+
 #: backends/mixer_pulse.cpp:318 backends/mixer_pulse.cpp:377
 msgid "Unknown Application"
 msgstr ""
@@ -687,15 +696,6 @@ msgstr ""
 
 #: backends/mixer_pulse.cpp:985
 msgid "Capture Streams"
-msgstr ""
-
-#: backends/mixer_oss4.cpp:495
-msgid ""
-"kmix: Mixer cannot be found.\n"
-"Please check that the soundcard is installed and the\n"
-"soundcard driver is loaded.\n"
-"On Linux you might need to use 'insmod' to load the driver.\n"
-"Use 'soundon' when using OSS4 from 4front."
 msgstr ""
 
 #: rc.cpp:1
