@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: karbon\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-22 03:41+0200\n"
+"POT-Creation-Date: 2011-07-06 03:51+0200\n"
 "PO-Revision-Date: 2004-07-06 15:43+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -158,16 +158,25 @@ msgid "Master Page"
 msgstr "Mewnosod Delwedd"
 
 #: common/commands/KarbonBooleanCommand.cpp:68 ui/KarbonView.cpp:809
+#, fuzzy
+#| msgid "Boolean Operation"
+msgctxt "(qtundo-format)"
 msgid "Boolean Operation"
 msgstr "Gweithred Booleaidd"
 
 #: common/commands/KarbonLayerReorderCommand.cpp:37
 #: common/commands/KarbonLayerReorderCommand.cpp:46
+#, fuzzy
+#| msgid "Raise Layer"
+msgctxt "(qtundo-format)"
 msgid "Raise Layer"
 msgstr "Codi Haen"
 
 #: common/commands/KarbonLayerReorderCommand.cpp:39
 #: common/commands/KarbonLayerReorderCommand.cpp:48
+#, fuzzy
+#| msgid "Lower Layer"
+msgctxt "(qtundo-format)"
 msgid "Lower Layer"
 msgstr "Gostwng Haen"
 
@@ -492,6 +501,7 @@ msgstr "Gwastadrwydd:"
 #: plugins/flattenpath/KarbonPathFlattenCommand.cpp:165
 #, fuzzy
 #| msgid "Flatten Path"
+msgctxt "(qtundo-format)"
 msgid "Flatten path"
 msgstr "Lleddfu Llwybr"
 
@@ -512,18 +522,25 @@ msgstr ""
 
 #: plugins/refinepath/KarbonPathRefineCommand.cpp:41
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Refine path"
 msgstr "Cau Llwybr"
 
 #: plugins/roundcorners/RoundCornersCommand.cpp:41
 #: plugins/roundcorners/RoundCornersPlugin.cpp:87
-#: plugins/roundcorners/RoundCornersPlugin.cpp:104
+#, fuzzy
+#| msgid "Round Corners"
+msgctxt "(qtundo-format)"
 msgid "Round Corners"
 msgstr "Corneli Crwn"
 
 #: plugins/roundcorners/RoundCornersPlugin.cpp:58
 msgid "&Round Corners..."
 msgstr "C&orneli Crwn..."
+
+#: plugins/roundcorners/RoundCornersPlugin.cpp:104
+msgid "Round Corners"
+msgstr "Corneli Crwn"
 
 #: plugins/roundcorners/RoundCornersPlugin.cpp:112
 #: plugins/whirlpinch/WhirlPinchPlugin.cpp:133
@@ -559,6 +576,7 @@ msgstr "Gwasgu:"
 #: plugins/whirlpinch/KarbonWhirlPinchCommand.cpp:108
 #, fuzzy
 #| msgid "Whirl Pinch"
+msgctxt "(qtundo-format)"
 msgid "Whirl & pinch"
 msgstr "Troelli/Gwasgu"
 
@@ -675,10 +693,14 @@ msgstr "Haen newydd"
 
 #: ui/dockers/KarbonLayerDocker.cpp:284
 #, fuzzy
+msgctxt "(qtundo-format)"
 msgid "Create Layer"
 msgstr "Ail-enwi Haen"
 
 #: ui/dockers/KarbonLayerDocker.cpp:308
+#, fuzzy
+#| msgid "Delete Layer"
+msgctxt "(qtundo-format)"
 msgid "Delete Layer"
 msgstr "Dileu Haen"
 
@@ -747,6 +769,7 @@ msgid "no"
 msgstr ""
 
 #: ui/dockers/KarbonLayerModel.cpp:477
+msgctxt "(qtundo-format)"
 msgid "Reparent shapes"
 msgstr ""
 
@@ -1000,12 +1023,6 @@ msgstr ""
 msgid "Helpful patches and advice"
 msgstr ""
 
-#: ui/KarbonDocumentMergeCommand.cpp:59 ui/KarbonView.cpp:479
-#, fuzzy
-#| msgid "Insert Sinus"
-msgid "Insert graphics"
-msgstr "Mewnosod Sinws"
-
 #: ui/KarbonPart.cpp:203
 msgid "Invalid OASIS document. No office:body tag found."
 msgstr "Dogfen OASIS annilys.  Ni chanfuwyd tag office:body."
@@ -1017,6 +1034,13 @@ msgstr "Dogfen OASIS annilys.  Ni chanfuwyd tag office:drawing."
 #: ui/KarbonPart.cpp:217
 msgid "Invalid OASIS document. No draw:page tag found."
 msgstr "Dogfen OASIS annilys.  Ni chanfuwyd tag draw:page."
+
+#: ui/KarbonDocumentMergeCommand.cpp:59 ui/KarbonView.cpp:479
+#, fuzzy
+#| msgid "Insert Sinus"
+msgctxt "(qtundo-format)"
+msgid "Insert graphics"
+msgstr "Mewnosod Sinws"
 
 #: ui/KarbonView.cpp:408
 #, fuzzy
@@ -1038,19 +1062,26 @@ msgstr "&Mewnforio Graffeg..."
 msgid "Could not create image shape."
 msgstr ""
 
-#: ui/KarbonView.cpp:706 ui/KarbonView.cpp:1036
+#: ui/KarbonView.cpp:706
 #, fuzzy
 #| msgid "H&orizontal:"
+msgctxt "(qtundo-format)"
 msgid "Mirror Horizontally"
 msgstr "Ll&orweddol:"
 
-#: ui/KarbonView.cpp:708 ui/KarbonView.cpp:1032
+#: ui/KarbonView.cpp:708
+#, fuzzy
+#| msgid "H&orizontal:"
+msgctxt "(qtundo-format)"
 msgid "Mirror Vertically"
-msgstr ""
+msgstr "Ll&orweddol:"
 
 #: ui/KarbonView.cpp:710
+#, fuzzy
+#| msgid "H&orizontal:"
+msgctxt "(qtundo-format)"
 msgid "Mirror Horizontally and Vertically"
-msgstr ""
+msgstr "Ll&orweddol:"
 
 #: ui/KarbonView.cpp:920
 #, fuzzy
@@ -1154,6 +1185,16 @@ msgstr "&Gwrthrych"
 #| msgid "&Ungroup Objects"
 msgid "&Unclip Objects"
 msgstr "&Dadgasglu gwrthrychau"
+
+#: ui/KarbonView.cpp:1032
+msgid "Mirror Vertically"
+msgstr ""
+
+#: ui/KarbonView.cpp:1036
+#, fuzzy
+#| msgid "H&orizontal:"
+msgid "Mirror Horizontally"
+msgstr "Ll&orweddol:"
 
 #: ui/KarbonView.cpp:1043
 msgid "&Close Path"
