@@ -9,10 +9,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-07-30 03:40+0200\n"
+"POT-Creation-Date: 2011-08-02 03:59+0200\n"
 "PO-Revision-Date: 2004-09-07 14:22+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -256,6 +257,11 @@ msgstr "Alinio i'r Chwith"
 msgctxt "(qtundo-format)"
 msgid "Move shapes"
 msgstr "Dileu Testun"
+
+#: flake/commands/KoShapeRenameCommand.cpp:44
+#, fuzzy
+msgid "Rename Shape"
+msgstr "Creu Patrymlun"
 
 #: flake/commands/KoShapeReorderCommand.cpp:51
 #, fuzzy
@@ -606,7 +612,7 @@ msgstr "Rheolydd Arddull"
 msgid "Execute Script File"
 msgstr "Sgript"
 
-#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:166
+#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:172
 #, fuzzy, kde-format
 #| msgid "Hide %1"
 msgid "Slide %1"
@@ -792,47 +798,137 @@ msgctxt "(qtundo-format)"
 msgid "Change background image"
 msgstr "Eiliad"
 
-#: kopageapp/KoPADocumentModel.cpp:168
-#, fuzzy, kde-format
-msgid "Page  %1"
-msgstr "Dyddiad:"
+#: kopageapp/KoPADocumentStructureDocker.cpp:96 main/KoMainWindow.cpp:1732
+msgid "Document"
+msgstr "Dogfen"
 
-#: kopageapp/KoPADocumentModel.cpp:172
-#: kopageapp/KoPADocumentStructureDocker.cpp:118
+#: kopageapp/KoPADocumentStructureDocker.cpp:105
+#, fuzzy
+#| msgid "Add Newline"
+msgid "Add a new slide or layer"
+msgstr "Ychwanegu Llinell Newydd"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:107
+#, fuzzy
+#| msgid "Add Newline"
+msgid "Add a new page or layer"
+msgstr "Ychwanegu Llinell Newydd"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:115
+#, fuzzy
+#| msgid "Size:"
+msgid "Slide"
+msgstr "Maint:"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:117
+#: widgets/KoPageLayoutDialog.cpp:50
+#, fuzzy
+msgid "Page"
+msgstr "Ffitio i Dudalen"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:119
+#: kopageapp/KoPADocumentModel.cpp:178
 #, fuzzy
 #| msgctxt "color"
 #| msgid "Lavender"
 msgid "Layer"
 msgstr "Lafant"
 
-#: kopageapp/KoPADocumentModel.cpp:175
+#: kopageapp/KoPADocumentStructureDocker.cpp:126
+#: kopageapp/KoPADocumentStructureDocker.cpp:647
 #, fuzzy
-#| msgid "Group:"
-msgid "Group"
-msgstr "Grŵp:"
+#| msgid "Remove Selected Text"
+msgid "Delete selected objects"
+msgstr "Gwaredu'r Testun Dewisiedig"
 
-#: kopageapp/KoPADocumentModel.cpp:178
+#: kopageapp/KoPADocumentStructureDocker.cpp:132
 #, fuzzy
-msgid "Shape"
-msgstr "Ton"
+#| msgid "Remove Selected Text"
+msgid "Raise selected objects"
+msgstr "Gwaredu'r Testun Dewisiedig"
 
-#: kopageapp/KoPADocumentModel.cpp:291
+#: kopageapp/KoPADocumentStructureDocker.cpp:138
 #, fuzzy
-#| msgid "Variable"
-msgid "Visible"
-msgstr "Newidyn"
+msgid "Lower selected objects"
+msgstr "Creu Dogfen"
 
-#: kopageapp/KoPADocumentModel.cpp:292
+#: kopageapp/KoPADocumentStructureDocker.cpp:147
+msgid "Minimal View"
+msgstr ""
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:149
+msgid "Detailed View"
+msgstr ""
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:151
+msgid "Thumbnail View"
+msgstr ""
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:161
 #, fuzzy
-#| msgid "Loaded"
-msgid "Locked"
-msgstr "Wedi'i lwytho"
+#| msgid "Change Borders"
+msgid "View mode"
+msgstr "Newid Ffiniau"
 
-#: kopageapp/KoPADocumentModel.cpp:505 kopageapp/KoPADocumentModel.cpp:526
+#: kopageapp/KoPADocumentStructureDocker.cpp:330
+msgid "New Layer"
+msgstr ""
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:330
+msgid "Enter the name of the new layer:"
+msgstr ""
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:331
+msgid "New layer"
+msgstr ""
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:345
 #, fuzzy
 msgctxt "(qtundo-format)"
-msgid "Reparent shapes"
+msgid "Create Layer"
+msgstr "Creu Patrymlun"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:374
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Delete Layer"
 msgstr "Dileu Testun"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:378
+msgid "Could not delete all layers. At least one layer is required."
+msgstr ""
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:378
+msgid "Error deleting layers"
+msgstr ""
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:646
+#, fuzzy
+#| msgid "Add Newline"
+msgid "Add a new slide"
+msgstr "Ychwanegu Llinell Newydd"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:649
+#: koreport/wrtembed/KoReportDesigner.cpp:830
+#, fuzzy
+#| msgid "Custom"
+msgid "Cut"
+msgstr "Addasiedig"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:650
+#: koreport/wrtembed/KoReportDesigner.cpp:831
+#: pigment/compositeops/KoCompositeOpCopy.h:37
+#: pigment/compositeops/KoCompositeOpCopy2.h:42
+#, fuzzy
+msgid "Copy"
+msgstr "Cwmni"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:651
+#: koreport/wrtembed/KoReportDesigner.cpp:834
+#, fuzzy
+#| msgid "Date"
+msgid "Paste"
+msgstr "Dyddiad"
 
 #: kopageapp/KoPAPastePage.cpp:131
 #, fuzzy
@@ -960,129 +1056,71 @@ msgctxt "(qtundo-format)"
 msgid "Change page layout"
 msgstr "Newid Tablydd"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:95 main/KoMainWindow.cpp:1732
-msgid "Document"
-msgstr "Dogfen"
+#: kopageapp/KoPADocumentModel.cpp:174
+#, fuzzy, kde-format
+msgid "Page  %1"
+msgstr "Dyddiad:"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:104
+#: kopageapp/KoPADocumentModel.cpp:181
 #, fuzzy
-#| msgid "Add Newline"
-msgid "Add a new slide or layer"
-msgstr "Ychwanegu Llinell Newydd"
+#| msgid "Group:"
+msgid "Group"
+msgstr "Grŵp:"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:106
+#: kopageapp/KoPADocumentModel.cpp:184
 #, fuzzy
-#| msgid "Add Newline"
-msgid "Add a new page or layer"
-msgstr "Ychwanegu Llinell Newydd"
+msgid "Shape"
+msgstr "Ton"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:114
+#: kopageapp/KoPADocumentModel.cpp:270
 #, fuzzy
-#| msgid "Size:"
-msgid "Slide"
-msgstr "Maint:"
+#| msgid "Paste Text"
+msgid "Rename Slide"
+msgstr "Gludo Testun"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:116
-#: widgets/KoPageLayoutDialog.cpp:50
+#: kopageapp/KoPADocumentModel.cpp:273
 #, fuzzy
-msgid "Page"
-msgstr "Ffitio i Dudalen"
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:125
-#: kopageapp/KoPADocumentStructureDocker.cpp:644
-#, fuzzy
-#| msgid "Remove Selected Text"
-msgid "Delete selected objects"
-msgstr "Gwaredu'r Testun Dewisiedig"
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:131
-#, fuzzy
-#| msgid "Remove Selected Text"
-msgid "Raise selected objects"
-msgstr "Gwaredu'r Testun Dewisiedig"
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:137
-#, fuzzy
-msgid "Lower selected objects"
-msgstr "Creu Dogfen"
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:146
-msgid "Minimal View"
-msgstr ""
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:148
-msgid "Detailed View"
-msgstr ""
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:150
-msgid "Thumbnail View"
-msgstr ""
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:160
-#, fuzzy
-#| msgid "Change Borders"
-msgid "View mode"
-msgstr "Newid Ffiniau"
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:327
-msgid "New Layer"
-msgstr ""
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:327
-msgid "Enter the name of the new layer:"
-msgstr ""
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:328
-msgid "New layer"
-msgstr ""
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:342
-#, fuzzy
-msgctxt "(qtundo-format)"
-msgid "Create Layer"
-msgstr "Creu Patrymlun"
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:371
-#, fuzzy
-msgctxt "(qtundo-format)"
-msgid "Delete Layer"
+msgid "Rename Page"
 msgstr "Dileu Testun"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:375
-msgid "Could not delete all layers. At least one layer is required."
-msgstr ""
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:375
-msgid "Error deleting layers"
-msgstr ""
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:643
+#: kopageapp/KoPADocumentModel.cpp:277
 #, fuzzy
-#| msgid "Add Newline"
-msgid "Add a new slide"
-msgstr "Ychwanegu Llinell Newydd"
+msgid "Rename Layer"
+msgstr "Creu Patrymlun"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:646
-#: koreport/wrtembed/KoReportDesigner.cpp:830
+#: kopageapp/KoPADocumentModel.cpp:307
 #, fuzzy
-#| msgid "Custom"
-msgid "Cut"
-msgstr "Addasiedig"
+#| msgid "Variable"
+msgid "Visible"
+msgstr "Newidyn"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:647
-#: koreport/wrtembed/KoReportDesigner.cpp:831
-#: pigment/compositeops/KoCompositeOpCopy.h:37
-#: pigment/compositeops/KoCompositeOpCopy2.h:42
+#: kopageapp/KoPADocumentModel.cpp:308
 #, fuzzy
-msgid "Copy"
-msgstr "Cwmni"
+#| msgid "Loaded"
+msgid "Locked"
+msgstr "Wedi'i lwytho"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:648
-#: koreport/wrtembed/KoReportDesigner.cpp:834
+#: kopageapp/KoPADocumentModel.cpp:532 kopageapp/KoPADocumentModel.cpp:553
 #, fuzzy
-#| msgid "Date"
-msgid "Paste"
-msgstr "Dyddiad"
+msgctxt "(qtundo-format)"
+msgid "Reparent shapes"
+msgstr "Dileu Testun"
+
+#: kopageapp/KoPADocumentModel.cpp:674
+#, fuzzy
+msgid "&Move Here"
+msgstr "Dileu Testun"
+
+#: kopageapp/KoPADocumentModel.cpp:678
+#, fuzzy
+#| msgid "Green"
+msgid "&Copy Here"
+msgstr "Gwyrdd"
+
+#: kopageapp/KoPADocumentModel.cpp:682
+#, fuzzy
+msgid "C&ancel"
+msgstr "Newid Prid/Islythrennau"
 
 #. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1339,8 +1377,8 @@ msgid "Label"
 msgstr "LabelTestun1 :"
 
 #: koreport/items/text/KoReportTextPlugin.cpp:34 kotext/KoTextEditor.cpp:169
-#: kotext/KoTextEditor.cpp:322 widgets/KoCsvImportDialog.cpp:216
-#: widgets/KoCsvImportDialog.cpp:569
+#: kotext/KoTextEditor.cpp:322 widgets/KoCsvImportDialog.cpp:217
+#: widgets/KoCsvImportDialog.cpp:581
 #, fuzzy
 msgid "Text"
 msgstr "Ychwanegu Testun"
@@ -4152,63 +4190,6 @@ msgstr ""
 msgid "Add / Remove Colors..."
 msgstr "Rhagor o Liwiau..."
 
-#: widgets/KoCsvImportDialog.cpp:92
-#, fuzzy
-msgid "Import Data"
-msgstr "Mewnforio Dogfen"
-
-#: widgets/KoCsvImportDialog.cpp:95
-#, kde-format
-msgctxt "Descriptive encoding name"
-msgid "Recommended ( %1 )"
-msgstr ""
-
-#: widgets/KoCsvImportDialog.cpp:96
-#, kde-format
-msgctxt "Descriptive encoding name"
-msgid "Locale ( %1 )"
-msgstr ""
-
-#: widgets/KoCsvImportDialog.cpp:99
-#, kde-format
-msgctxt "Descriptive encoding name"
-msgid "Other ( %1 )"
-msgstr ""
-
-#: widgets/KoCsvImportDialog.cpp:214 widgets/KoCsvImportDialog.cpp:544
-#: widgets/KoCsvImportDialog.cpp:567
-#, fuzzy
-#| msgid "General"
-msgid "Generic"
-msgstr "Cyffredinol"
-
-#: widgets/KoCsvImportDialog.cpp:218 widgets/KoCsvImportDialog.cpp:571
-msgid "Date"
-msgstr "Dyddiad"
-
-#: widgets/KoCsvImportDialog.cpp:220 widgets/KoCsvImportDialog.cpp:573
-#, fuzzy
-msgid "Currency"
-msgstr "Adran Gyfredol"
-
-#. i18n: file: widgets/KoCsvImportDialog.ui:268
-#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
-#: widgets/KoCsvImportDialog.cpp:222 widgets/KoCsvImportDialog.cpp:575
-#: widgets/KoCsvImportDialog.cpp:682 rc.cpp:499
-msgid "None"
-msgstr "Dim"
-
-#: widgets/KoCsvImportDialog.cpp:709
-msgid ""
-"Please check the ranges you specified. The start value must be lower than "
-"the end value."
-msgstr ""
-
-#: widgets/KoCsvImportDialog.cpp:755
-#, kde-format
-msgid "Cannot find encoding: %1"
-msgstr ""
-
 #: widgets/KoEditColorSetDialog.cpp:159
 msgid "Add Color To Palette"
 msgstr ""
@@ -4236,6 +4217,75 @@ msgstr "GwyrddGwan"
 #| msgid "Remove Column"
 msgid "Add/Remove Colors"
 msgstr "Gwaredu Colofn"
+
+#: widgets/KoCsvImportDialog.cpp:93
+#, fuzzy
+msgid "Import Data"
+msgstr "Mewnforio Dogfen"
+
+#: widgets/KoCsvImportDialog.cpp:96
+#, kde-format
+msgctxt "Descriptive encoding name"
+msgid "Recommended ( %1 )"
+msgstr ""
+
+#: widgets/KoCsvImportDialog.cpp:97
+#, kde-format
+msgctxt "Descriptive encoding name"
+msgid "Locale ( %1 )"
+msgstr ""
+
+#: widgets/KoCsvImportDialog.cpp:100
+#, kde-format
+msgctxt "Descriptive encoding name"
+msgid "Other ( %1 )"
+msgstr ""
+
+#: widgets/KoCsvImportDialog.cpp:215 widgets/KoCsvImportDialog.cpp:556
+#: widgets/KoCsvImportDialog.cpp:579
+#, fuzzy
+#| msgid "General"
+msgid "Generic"
+msgstr "Cyffredinol"
+
+#: widgets/KoCsvImportDialog.cpp:219 widgets/KoCsvImportDialog.cpp:583
+msgid "Date"
+msgstr "Dyddiad"
+
+#: widgets/KoCsvImportDialog.cpp:221 widgets/KoCsvImportDialog.cpp:585
+#, fuzzy
+msgid "Currency"
+msgstr "Adran Gyfredol"
+
+#. i18n: file: widgets/KoCsvImportDialog.ui:268
+#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
+#: widgets/KoCsvImportDialog.cpp:223 widgets/KoCsvImportDialog.cpp:587
+#: widgets/KoCsvImportDialog.cpp:694 rc.cpp:499
+msgid "None"
+msgstr "Dim"
+
+#: widgets/KoCsvImportDialog.cpp:721
+msgid ""
+"Please check the ranges you specified. The start value must be lower than "
+"the end value."
+msgstr ""
+
+#: widgets/KoCsvImportDialog.cpp:767
+#, kde-format
+msgid "Cannot find encoding: %1"
+msgstr ""
+
+#: widgets/KoSelectionToggle.cpp:133
+msgctxt "@info:tooltip"
+msgid "Deselect Item"
+msgstr ""
+
+#: widgets/KoSelectionToggle.cpp:134
+#, fuzzy
+#| msgid "Select Character"
+msgctxt "@info:tooltip"
+msgid "Select Item"
+msgstr "Dewis Nod"
 
 #: widgets/KoUniColorChooser.cpp:134
 msgid "Value (brightness)"
@@ -5904,10 +5954,6 @@ msgstr ""
 #~ msgstr "Lliw Rhagosodol"
 
 #, fuzzy
-#~ msgid "Create Shapes"
-#~ msgstr "Creu Patrymlun"
-
-#, fuzzy
 #~| msgid "Background color:"
 #~ msgid "Background tool"
 #~ msgstr "Lliw cefndir:"
@@ -5926,9 +5972,6 @@ msgstr ""
 #~| msgid "Bookmark"
 #~ msgid "Add Bookmark"
 #~ msgstr "Tudnod"
-
-#~ msgid "Select Character"
-#~ msgstr "Dewis Nod"
 
 #, fuzzy
 #~ msgid "&Insert"

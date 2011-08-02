@@ -11,10 +11,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-07-30 03:59+0200\n"
+"POT-Creation-Date: 2011-08-02 05:15+0200\n"
 "PO-Revision-Date: 2004-06-30 15:15+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -513,6 +514,260 @@ msgid ""
 "The file '%1' could not be opened: it is not a normal file, it is a folder."
 msgstr "Methwyd agor y ffeil '%1'; plygell yw hi, dim ffeil arferol."
 
+#: app/kateappcommands.cpp:87
+#, fuzzy
+msgid "All documents written to disk"
+msgstr "Dogfen i'w hagor"
+
+#: app/kateappcommands.cpp:90
+#, fuzzy
+msgid "Document written to disk"
+msgstr "Dogfen i'w hagor"
+
+#: app/kateappcommands.cpp:176
+#, fuzzy
+#| msgid "Create a new document"
+msgid "Cannot go to the document"
+msgstr "Creu dogfen newydd"
+
+#: app/kateappcommands.cpp:199
+msgid ""
+"<p><b>w/wa &mdash; write document(s) to disk</b></p><p>Usage: <tt><b>w[a]</"
+"b></tt></p><p>Writes the current document(s) to disk. It can be called in "
+"two ways:<br /> <tt>w</tt> &mdash; writes the current document to disk<br /> "
+"<tt>wa</tt> &mdash; writes all documents to disk.</p><p>If no file name is "
+"associated with the document, a file dialog will be shown.</p>"
+msgstr ""
+
+#: app/kateappcommands.cpp:210
+msgid ""
+"<p><b>q/qa/wq/wqa &mdash; [write and] quit</b></p><p>Usage: <tt><b>[w]q[a]</"
+"b></tt></p><p>Quits the application. If <tt>w</tt> is prepended, it also "
+"writes the document(s) to disk. This command can be called in several ways:"
+"<br /> <tt>q</tt> &mdash; closes the current view.<br /> <tt>qa</tt> &mdash; "
+"closes all views, effectively quitting the application.<br /> <tt>wq</tt> "
+"&mdash; writes the current document to disk and closes its view.<br /> "
+"<tt>wqa</tt> &mdash; writes all documents to disk and quits.</p><p>In all "
+"cases, if the view being closed is the last view, the application quits. If "
+"no file name is associated with the document and it should be written to "
+"disk, a file dialog will be shown.</p>"
+msgstr ""
+
+#: app/kateappcommands.cpp:225
+msgid ""
+"<p><b>x/xa &mdash; write and quit</b></p><p>Usage: <tt><b>x[a]</b></tt></"
+"p><p>Saves document(s) and quits (e<b>x</b>its). This command can be called "
+"in two ways:<br /> <tt>x</tt> &mdash; closes the current view.<br /> <tt>xa</"
+"tt> &mdash; closes all views, effectively quitting the application.</p><p>In "
+"all cases, if the view being closed is the last view, the application quits. "
+"If no file name is associated with the document and it should be written to "
+"disk, a file dialog will be shown.</p><p>Unlike the 'w' commands, this "
+"command only writes the document if it is modified.</p>"
+msgstr ""
+
+#: app/kateappcommands.cpp:239
+msgid ""
+"<p><b>bn,bnext &mdash; switch to next document</b></p><p>Usage: <tt><b>bn"
+"[ext] [N]</b></tt></p><p>Goes to <b>[N]</b>th next document (\"<b>b</b>uffer"
+"\") in document list.<b>[N]</b> defaults to one. </p><p>Wraps around the end "
+"of the document list.</p>"
+msgstr ""
+
+#: app/kateappcommands.cpp:247
+msgid ""
+"<p><b>bp,bprev &mdash; previous buffer</b></p><p>Usage: <tt><b>bp[revious] "
+"[N]</b></tt></p><p>Goes to <b>[N]</b>th previous document (\"<b>b</b>uffer"
+"\") in document list. </p><p> <b>[N]</b> defaults to one. </p><p>Wraps "
+"around the start of the document list.</p>"
+msgstr ""
+
+#: app/kateappcommands.cpp:255
+msgid ""
+"<p><b>bf,bfirst &mdash; first document</b></p><p>Usage: <tt><b>bf[irst]</b></"
+"tt></p><p>Goes to the <b>f</b>irst document (\"<b>b</b>uffer\") in document "
+"list.</p>"
+msgstr ""
+
+#: app/kateappcommands.cpp:261
+msgid ""
+"<p><b>bl,blast &mdash; last document</b></p><p>Usage: <tt><b>bl[ast]</b></"
+"tt></p><p>Goes to the <b>l</b>ast document (\"<b>b</b>uffer\") in document "
+"list.</p>"
+msgstr ""
+
+#: app/kateappcommands.cpp:267
+msgid ""
+"<p><b>b,buffer &mdash; Edit document N from the document list</b></"
+"p><p>Usage: <tt><b>b[uffer] [N]</b></tt></p>"
+msgstr ""
+
+#: app/kateappcommands.cpp:272
+msgid ""
+"<p><b>sp,split&mdash; Split horizontally the current view into two</b></"
+"p><p>Usage: <tt><b>sp[lit]</b></tt></p><p>The result is two views on the "
+"same document</p>."
+msgstr ""
+
+#: app/kateappcommands.cpp:278
+msgid ""
+"<p><b>vs,vsplit&mdash; Split vertically the current view into two</b></"
+"p><p>Usage: <tt><b>vs[lit]</b></tt></p><p>The result is two views on the "
+"same document.</p>"
+msgstr ""
+
+#: app/kateappcommands.cpp:284
+msgid ""
+"<p><b>[v]new &mdash; split view and create new document</b></p><p>Usage: "
+"<tt><b>[v]new</b></tt></p><p>Splits the current view and opens a new "
+"document in the new view. This command can be called in two ways:<br /> "
+"<tt>new</tt> &mdash; splits the view horizontally and opens a new document."
+"<br /> <tt>vnew</tt> &mdash; splits the view vertically and opens a new "
+"document.<br /></p>"
+msgstr ""
+
+#: app/kateappcommands.cpp:294
+msgid ""
+"<p><b>e[dit] &mdash; reload current document</b></p><p>Usage: <tt><b>e[dit]</"
+"b></tt></p><p>Starts <b>e</b>diting the current document again. This is "
+"useful to re-edit the current file, when it has been changed by another "
+"program.</p>"
+msgstr ""
+
+#: app/kateconfigdialog.cpp:59
+msgid "Configure"
+msgstr ""
+
+#: app/kateconfigdialog.cpp:70
+msgid "Application"
+msgstr "Cymhwysiad"
+
+#: app/kateconfigdialog.cpp:72
+#, fuzzy
+msgid "Application Options"
+msgstr "Cymhwysiad"
+
+#: app/kateconfigdialog.cpp:77
+msgid "General"
+msgstr "Cyffredinol"
+
+#: app/kateconfigdialog.cpp:78
+msgid "General Options"
+msgstr "Dewisiadau Cyffredinol"
+
+#: app/kateconfigdialog.cpp:85
+msgid "&Behavior"
+msgstr "&Ymddygiad"
+
+#: app/kateconfigdialog.cpp:91
+msgid "Wa&rn about files modified by foreign processes"
+msgstr "Rhy&buddio am ffeiliau a addasir gan brosesau allanol"
+
+#: app/kateconfigdialog.cpp:94
+msgid ""
+"If enabled, when Kate receives focus you will be asked what to do with files "
+"that have been modified on the hard disk. If not enabled, you will be asked "
+"what to do with a file that has been modified on the hard disk only when "
+"that file is tried to be saved."
+msgstr ""
+
+#: app/kateconfigdialog.cpp:105
+#, fuzzy
+msgid "Meta-Information"
+msgstr "Meta-wybodaeth"
+
+#: app/kateconfigdialog.cpp:111
+msgid "Keep &meta-information past sessions"
+msgstr "Cadw m&eta-wybodaeth tu hwnt i'r sesiwn"
+
+#: app/kateconfigdialog.cpp:114
+msgid ""
+"Check this if you want document configuration like for example bookmarks to "
+"be saved past editor sessions. The configuration will be restored if the "
+"document has not changed when reopened."
+msgstr ""
+"Brithwch hyn os hoffech i ffurfweddiad dogfennau, fel tudnodau er "
+"enghraifft, gael ei gadw tu hwnt i'r sesiwn golygydd.  Adferir y "
+"ffurfweddiad os nid yw'r ddogfen wedi'i newid pan ail-agorir."
+
+#: app/kateconfigdialog.cpp:124
+msgid "&Delete unused meta-information after:"
+msgstr "&Dileu meta-wybodaeth nas defnyddwyd ar ôl:"
+
+#: app/kateconfigdialog.cpp:127
+msgid "(never)"
+msgstr "(byth)"
+
+#: app/kateconfigdialog.cpp:148
+msgid "Sessions"
+msgstr "Sesiynau"
+
+#: app/kateconfigdialog.cpp:149
+#, fuzzy
+msgid "Session Management"
+msgstr "Sesiwn"
+
+#: app/kateconfigdialog.cpp:156
+#, fuzzy
+msgid "Elements of Sessions"
+msgstr "Sesiwn"
+
+#: app/kateconfigdialog.cpp:162
+#, fuzzy
+msgid "Include &window configuration"
+msgstr "Adfer ffurfwedd &golwg"
+
+#: app/kateconfigdialog.cpp:164
+msgid ""
+"Check this if you want all your views and frames restored each time you open "
+"Kate"
+msgstr ""
+"Dewiswch hwn os ydych am adfer eich holl olygon a'ch holl fframau bob tro yr "
+"agorwch Kate"
+
+#: app/kateconfigdialog.cpp:170
+msgid "Behavior on Application Startup"
+msgstr ""
+
+#: app/kateconfigdialog.cpp:174
+msgid "&Start new session"
+msgstr "Dechrau &Sesiwn Newydd"
+
+#: app/kateconfigdialog.cpp:175
+#, fuzzy
+msgid "&Load last-used session"
+msgstr "Sesiwn"
+
+#: app/kateconfigdialog.cpp:176
+msgid "&Manually choose a session"
+msgstr ""
+
+#: app/kateconfigdialog.cpp:204
+msgid "Plugins"
+msgstr "Ategion"
+
+#: app/kateconfigdialog.cpp:205
+msgid "Plugin Manager"
+msgstr "Trefnydd Ategion"
+
+#: app/kateconfigdialog.cpp:218
+#, fuzzy
+msgid "Editor Component"
+msgstr "Dewiswch Gydran Olygu"
+
+#: app/kateconfigdialog.cpp:220
+#, fuzzy
+msgid "Editor Component Options"
+msgstr "Dewiswch Gydran Olygu"
+
+#: app/kateconfigdialog.cpp:408
+#, fuzzy
+#| msgid " day(s)"
+msgctxt "The suffix of 'Delete unused meta-information after'"
+msgid " day"
+msgid_plural " days"
+msgstr[0] "diwrnod(au)"
+msgstr[1] "diwrnod(au)"
+
 #: app/kateconfigplugindialogpage.cpp:71
 msgid "Name"
 msgstr "Enw"
@@ -528,6 +783,72 @@ msgid ""
 msgstr ""
 "Yma gallwch weld pob ategyn Kate sydd ar gael. Mae'r sawl a nôd brith yn eu "
 "herbyn yn llwythiedig, ac fe'i llwythir tro nesaf y cychwynnir Kate."
+
+#: app/katedocmanager.cpp:68
+#, fuzzy
+#| msgid ""
+#| "A KDE text-editor component could not be found;\n"
+#| "please check your KDE installation."
+msgid ""
+"A KDE text-editor component could not be found.\n"
+"Please check your KDE installation."
+msgstr ""
+"Methwyd canfod cydran olygu testun KDE;\n"
+"gwiriwch eich gosodiad KDE os gwelwch yn dda."
+
+#: app/katedocmanager.cpp:308
+#, kde-format
+msgid ""
+"The supposedly temporary file %1 has been modified. Do you want to delete it "
+"anyway?"
+msgstr ""
+
+#: app/katedocmanager.cpp:310
+#, fuzzy
+msgid "Delete File?"
+msgstr "Wedi'u dileu"
+
+#: app/katedocmanager.cpp:450
+#, fuzzy, kde-format
+#| msgid ""
+#| "<p>The document '%1' has been modified, but not saved.<p>Do you want to "
+#| "save your changes or discard them?"
+msgid ""
+"<p>The document '%1' has been modified, but not saved.</p><p>Do you want to "
+"save your changes or discard them?</p>"
+msgstr ""
+"<p>Addaswyd y ddogfen '%1', ond ni'i gadwyd. <p>Ydych am gadw eich "
+"newidiadu, neu eu taflu?"
+
+#: app/katedocmanager.cpp:452
+msgid "Close Document"
+msgstr "Cau Dogfen"
+
+#: app/katedocmanager.cpp:459
+#, fuzzy
+msgid "Save As"
+msgstr "Cadw &Fel..."
+
+#: app/katedocmanager.cpp:485 app/katemainwindow.cpp:437
+msgid "New file opened while trying to close Kate, closing aborted."
+msgstr ""
+
+#: app/katedocmanager.cpp:486 app/katemainwindow.cpp:438
+msgid "Closing Aborted"
+msgstr ""
+
+#: app/katedocmanager.cpp:558
+#, fuzzy
+msgid "Starting Up"
+msgstr "Ymgyc&hwyn"
+
+#: app/katedocmanager.cpp:559
+msgid "Reopening files from the last session..."
+msgstr "Ailagor ffeiliau o'r sesiwn blaenorol..."
+
+#: app/katedocmanager.cpp:738
+msgid "Errors/Warnings while opening documents"
+msgstr ""
 
 #: app/katemain.cpp:81
 msgid "Kate"
@@ -808,749 +1129,6 @@ msgstr ""
 msgid "Document to open"
 msgstr "Dogfen i'w hagor"
 
-#: app/katemwmodonhddialog.cpp:65
-#, fuzzy
-msgid "Documents Modified on Disk"
-msgstr "Dogfen i'w hagor"
-
-#: app/katemwmodonhddialog.cpp:67
-msgid "&Ignore"
-msgstr "&Anwybyddu"
-
-#: app/katemwmodonhddialog.cpp:69
-msgid "&Reload"
-msgstr ""
-
-#: app/katemwmodonhddialog.cpp:76
-msgid ""
-"Removes the modified flag from the selected documents and closes the dialog "
-"if there are no more unhandled documents."
-msgstr ""
-
-#: app/katemwmodonhddialog.cpp:79
-msgid ""
-"Overwrite selected documents, discarding the disk changes and closes the "
-"dialog if there are no more unhandled documents."
-msgstr ""
-
-#: app/katemwmodonhddialog.cpp:82
-msgid ""
-"Reloads the selected documents from disk and closes the dialog if there are "
-"no more unhandled documents."
-msgstr ""
-
-#: app/katemwmodonhddialog.cpp:96
-msgid ""
-"<qt>The documents listed below have changed on disk.<p>Select one or more at "
-"once, and press an action button until the list is empty.</p></qt>"
-msgstr ""
-
-#: app/katemwmodonhddialog.cpp:103
-msgid "Filename"
-msgstr "Enw Ffeil"
-
-#: app/katemwmodonhddialog.cpp:103
-msgid "Status on Disk"
-msgstr ""
-
-#: app/katemwmodonhddialog.cpp:109
-msgid "Modified"
-msgstr "Addaswyd"
-
-#: app/katemwmodonhddialog.cpp:109
-msgid "Created"
-msgstr "Crëwyd"
-
-#: app/katemwmodonhddialog.cpp:109
-msgid "Deleted"
-msgstr "Wedi'u dileu"
-
-#: app/katemwmodonhddialog.cpp:124
-msgid "&View Difference"
-msgstr ""
-
-#: app/katemwmodonhddialog.cpp:127
-msgid ""
-"Calculates the difference between the editor contents and the disk file for "
-"the selected document, and shows the difference with the default "
-"application. Requires diff(1)."
-msgstr ""
-
-#: app/katemwmodonhddialog.cpp:187
-#, fuzzy, kde-format
-msgid ""
-"Could not save the document \n"
-"'%1'"
-msgstr "Cau`r ddogfen cyfredol"
-
-#: app/katemwmodonhddialog.cpp:285
-msgid ""
-"The diff command failed. Please make sure that diff(1) is installed and in "
-"your PATH."
-msgstr ""
-
-#: app/katemwmodonhddialog.cpp:287
-msgid "Error Creating Diff"
-msgstr ""
-
-#: app/katemwmodonhddialog.cpp:296
-msgid "Besides white space changes, the files are identical."
-msgstr ""
-
-#: app/katemwmodonhddialog.cpp:297
-msgid "Diff Output"
-msgstr ""
-
-#: app/kateviewspace.cpp:256 app/kateviewspace.cpp:361
-#, kde-format
-msgid " Line: %1 Col: %2 "
-msgstr "Llinell: %1 Col: %2"
-
-#: app/kateviewspace.cpp:270
-msgid " INS "
-msgstr "MEWN"
-
-#: app/kateviewspace.cpp:275 app/kateviewspace.cpp:370
-#, fuzzy
-#| msgid " INS "
-msgid " LINE "
-msgstr "MEWN"
-
-#: app/kateviewspace.cpp:370
-#, fuzzy
-#| msgid " BLK "
-msgid " BLOCK "
-msgstr "BLC"
-
-#: app/kateconfigdialog.cpp:59
-msgid "Configure"
-msgstr ""
-
-#: app/kateconfigdialog.cpp:70
-msgid "Application"
-msgstr "Cymhwysiad"
-
-#: app/kateconfigdialog.cpp:72
-#, fuzzy
-msgid "Application Options"
-msgstr "Cymhwysiad"
-
-#: app/kateconfigdialog.cpp:77
-msgid "General"
-msgstr "Cyffredinol"
-
-#: app/kateconfigdialog.cpp:78
-msgid "General Options"
-msgstr "Dewisiadau Cyffredinol"
-
-#: app/kateconfigdialog.cpp:85
-msgid "&Behavior"
-msgstr "&Ymddygiad"
-
-#: app/kateconfigdialog.cpp:91
-msgid "Wa&rn about files modified by foreign processes"
-msgstr "Rhy&buddio am ffeiliau a addasir gan brosesau allanol"
-
-#: app/kateconfigdialog.cpp:94
-msgid ""
-"If enabled, when Kate receives focus you will be asked what to do with files "
-"that have been modified on the hard disk. If not enabled, you will be asked "
-"what to do with a file that has been modified on the hard disk only when "
-"that file is tried to be saved."
-msgstr ""
-
-#: app/kateconfigdialog.cpp:105
-#, fuzzy
-msgid "Meta-Information"
-msgstr "Meta-wybodaeth"
-
-#: app/kateconfigdialog.cpp:111
-msgid "Keep &meta-information past sessions"
-msgstr "Cadw m&eta-wybodaeth tu hwnt i'r sesiwn"
-
-#: app/kateconfigdialog.cpp:114
-msgid ""
-"Check this if you want document configuration like for example bookmarks to "
-"be saved past editor sessions. The configuration will be restored if the "
-"document has not changed when reopened."
-msgstr ""
-"Brithwch hyn os hoffech i ffurfweddiad dogfennau, fel tudnodau er "
-"enghraifft, gael ei gadw tu hwnt i'r sesiwn golygydd.  Adferir y "
-"ffurfweddiad os nid yw'r ddogfen wedi'i newid pan ail-agorir."
-
-#: app/kateconfigdialog.cpp:124
-msgid "&Delete unused meta-information after:"
-msgstr "&Dileu meta-wybodaeth nas defnyddwyd ar ôl:"
-
-#: app/kateconfigdialog.cpp:127
-msgid "(never)"
-msgstr "(byth)"
-
-#: app/kateconfigdialog.cpp:148
-msgid "Sessions"
-msgstr "Sesiynau"
-
-#: app/kateconfigdialog.cpp:149
-#, fuzzy
-msgid "Session Management"
-msgstr "Sesiwn"
-
-#: app/kateconfigdialog.cpp:156
-#, fuzzy
-msgid "Elements of Sessions"
-msgstr "Sesiwn"
-
-#: app/kateconfigdialog.cpp:162
-#, fuzzy
-msgid "Include &window configuration"
-msgstr "Adfer ffurfwedd &golwg"
-
-#: app/kateconfigdialog.cpp:164
-msgid ""
-"Check this if you want all your views and frames restored each time you open "
-"Kate"
-msgstr ""
-"Dewiswch hwn os ydych am adfer eich holl olygon a'ch holl fframau bob tro yr "
-"agorwch Kate"
-
-#: app/kateconfigdialog.cpp:170
-msgid "Behavior on Application Startup"
-msgstr ""
-
-#: app/kateconfigdialog.cpp:174
-msgid "&Start new session"
-msgstr "Dechrau &Sesiwn Newydd"
-
-#: app/kateconfigdialog.cpp:175
-#, fuzzy
-msgid "&Load last-used session"
-msgstr "Sesiwn"
-
-#: app/kateconfigdialog.cpp:176
-msgid "&Manually choose a session"
-msgstr ""
-
-#: app/kateconfigdialog.cpp:204
-msgid "Plugins"
-msgstr "Ategion"
-
-#: app/kateconfigdialog.cpp:205
-msgid "Plugin Manager"
-msgstr "Trefnydd Ategion"
-
-#: app/kateconfigdialog.cpp:218
-#, fuzzy
-msgid "Editor Component"
-msgstr "Dewiswch Gydran Olygu"
-
-#: app/kateconfigdialog.cpp:220
-#, fuzzy
-msgid "Editor Component Options"
-msgstr "Dewiswch Gydran Olygu"
-
-#: app/kateconfigdialog.cpp:408
-#, fuzzy
-#| msgid " day(s)"
-msgctxt "The suffix of 'Delete unused meta-information after'"
-msgid " day"
-msgid_plural " days"
-msgstr[0] "diwrnod(au)"
-msgstr[1] "diwrnod(au)"
-
-#: app/katesavemodifieddialog.cpp:91
-#, kde-format
-msgid "Save As (%1)"
-msgstr ""
-
-#: app/katesavemodifieddialog.cpp:103
-#, kde-format
-msgid ""
-"A file named \"%1\" already exists. Are you sure you want to overwrite it?"
-msgstr ""
-
-#: app/katesavemodifieddialog.cpp:105
-#, fuzzy
-msgid "Overwrite File?"
-msgstr "&Trosysgrifo"
-
-#: app/katesavemodifieddialog.cpp:181
-#, fuzzy
-msgid "Save Documents"
-msgstr "Dogfennau"
-
-#: app/katesavemodifieddialog.cpp:187
-#, fuzzy
-msgid "&Save Selected"
-msgstr "&Dewisiedig:"
-
-#: app/katesavemodifieddialog.cpp:195
-#, fuzzy
-#| msgid "Do Not Save"
-msgid "Do &Not Close"
-msgstr "Peidiwch â Chadw"
-
-#: app/katesavemodifieddialog.cpp:202
-#, fuzzy
-msgid ""
-"<qt>The following documents have been modified. Do you want to save them "
-"before closing?</qt>"
-msgstr ""
-"<p>Addaswyd y ddogfen '%1', ond ni'i gadwyd. <p>Ydych am gadw eich "
-"newidiadu, neu eu taflu?"
-
-#: app/katesavemodifieddialog.cpp:205
-#: plugins/filetree/katefiletreeplugin.cpp:159
-msgid "Documents"
-msgstr "Dogfennau"
-
-#: app/katesavemodifieddialog.cpp:205
-msgid "Location"
-msgstr "Lleoliad"
-
-#: app/katesavemodifieddialog.cpp:214
-msgid "Se&lect All"
-msgstr "De&wis Popeth"
-
-#: app/katesavemodifieddialog.cpp:265
-msgid ""
-"Data you requested to be saved could not be written. Please choose how you "
-"want to proceed."
-msgstr ""
-
-#: app/katesession.cpp:269
-msgid ""
-"Internal error: there is more than one instance open for a given session."
-msgstr ""
-
-#: app/katesession.cpp:275
-#, kde-format
-msgid ""
-"Session '%1' is already opened in another kate instance, change there "
-"instead of reopening?"
-msgstr ""
-
-#: app/katesession.cpp:466
-#, fuzzy
-msgid "No session selected to open."
-msgstr "&Dewisiedig:"
-
-#: app/katesession.cpp:466 app/katesession.cpp:491
-#, fuzzy
-msgid "No Session Selected"
-msgstr "&Dewisiedig:"
-
-#: app/katesession.cpp:491
-#, fuzzy
-msgid "No session selected to copy."
-msgstr "&Dewisiedig:"
-
-#: app/katesession.cpp:577
-msgid "Specify New Name for Current Session"
-msgstr ""
-
-#: app/katesession.cpp:578
-msgid ""
-"There is already an existing session with your chosen name.\n"
-"Please choose a different one\n"
-"Session name:"
-msgstr ""
-
-#: app/katesession.cpp:578 app/katesession.cpp:894
-msgid "Session name:"
-msgstr "Enw sesiwn:"
-
-#: app/katesession.cpp:585 app/katesession.cpp:901
-msgid "To save a session, you must specify a name."
-msgstr ""
-
-#: app/katesession.cpp:585 app/katesession.cpp:901
-msgid "Missing Session Name"
-msgstr ""
-
-#: app/katesession.cpp:624
-#, fuzzy
-msgid "Session Chooser"
-msgstr "Sesiwn"
-
-#: app/katesession.cpp:627 app/katesession.cpp:737
-#, fuzzy
-msgid "Open Session"
-msgstr "Sesiwn"
-
-#: app/katesession.cpp:628
-msgid "New Session"
-msgstr "Sesiwn Newydd"
-
-#: app/katesession.cpp:639 app/katesession.cpp:758 app/katesession.cpp:835
-#, fuzzy
-msgid "Session Name"
-msgstr "Sesiwn"
-
-#: app/katesession.cpp:640 app/katesession.cpp:759 app/katesession.cpp:836
-#, fuzzy
-msgctxt "The number of open documents"
-msgid "Open Documents"
-msgstr "Dogfennau"
-
-#: app/katesession.cpp:652
-msgid "Use selected session as template"
-msgstr ""
-
-#: app/katesession.cpp:668
-msgid "&Always use this choice"
-msgstr ""
-
-#: app/katesession.cpp:741 app/katesession.cpp:821
-#, fuzzy
-msgid "&Open"
-msgstr "A&gor"
-
-#: app/katesession.cpp:817
-#, fuzzy
-msgid "Manage Sessions"
-msgstr "Sesiwn"
-
-#: app/katesession.cpp:853
-msgid "&Rename..."
-msgstr "Ail-&enwi..."
-
-#: app/katesession.cpp:894
-msgid "Specify New Name for Session"
-msgstr ""
-
-#: app/katesession.cpp:912
-#, kde-format
-msgid ""
-"The session could not be renamed to \"%1\", there already exists another "
-"session with the same name"
-msgstr ""
-
-#: app/katesession.cpp:912
-#, fuzzy
-msgid "Session Renaming"
-msgstr "Enw sesiwn:"
-
-#: app/kateappcommands.cpp:87
-#, fuzzy
-msgid "All documents written to disk"
-msgstr "Dogfen i'w hagor"
-
-#: app/kateappcommands.cpp:90
-#, fuzzy
-msgid "Document written to disk"
-msgstr "Dogfen i'w hagor"
-
-#: app/kateappcommands.cpp:176
-#, fuzzy
-#| msgid "Create a new document"
-msgid "Cannot go to the document"
-msgstr "Creu dogfen newydd"
-
-#: app/kateappcommands.cpp:199
-msgid ""
-"<p><b>w/wa &mdash; write document(s) to disk</b></p><p>Usage: <tt><b>w[a]</"
-"b></tt></p><p>Writes the current document(s) to disk. It can be called in "
-"two ways:<br /> <tt>w</tt> &mdash; writes the current document to disk<br /> "
-"<tt>wa</tt> &mdash; writes all documents to disk.</p><p>If no file name is "
-"associated with the document, a file dialog will be shown.</p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:210
-msgid ""
-"<p><b>q/qa/wq/wqa &mdash; [write and] quit</b></p><p>Usage: <tt><b>[w]q[a]</"
-"b></tt></p><p>Quits the application. If <tt>w</tt> is prepended, it also "
-"writes the document(s) to disk. This command can be called in several ways:"
-"<br /> <tt>q</tt> &mdash; closes the current view.<br /> <tt>qa</tt> &mdash; "
-"closes all views, effectively quitting the application.<br /> <tt>wq</tt> "
-"&mdash; writes the current document to disk and closes its view.<br /> "
-"<tt>wqa</tt> &mdash; writes all documents to disk and quits.</p><p>In all "
-"cases, if the view being closed is the last view, the application quits. If "
-"no file name is associated with the document and it should be written to "
-"disk, a file dialog will be shown.</p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:225
-msgid ""
-"<p><b>x/xa &mdash; write and quit</b></p><p>Usage: <tt><b>x[a]</b></tt></"
-"p><p>Saves document(s) and quits (e<b>x</b>its). This command can be called "
-"in two ways:<br /> <tt>x</tt> &mdash; closes the current view.<br /> <tt>xa</"
-"tt> &mdash; closes all views, effectively quitting the application.</p><p>In "
-"all cases, if the view being closed is the last view, the application quits. "
-"If no file name is associated with the document and it should be written to "
-"disk, a file dialog will be shown.</p><p>Unlike the 'w' commands, this "
-"command only writes the document if it is modified.</p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:239
-msgid ""
-"<p><b>bn,bnext &mdash; switch to next document</b></p><p>Usage: <tt><b>bn"
-"[ext] [N]</b></tt></p><p>Goes to <b>[N]</b>th next document (\"<b>b</b>uffer"
-"\") in document list.<b>[N]</b> defaults to one. </p><p>Wraps around the end "
-"of the document list.</p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:247
-msgid ""
-"<p><b>bp,bprev &mdash; previous buffer</b></p><p>Usage: <tt><b>bp[revious] "
-"[N]</b></tt></p><p>Goes to <b>[N]</b>th previous document (\"<b>b</b>uffer"
-"\") in document list. </p><p> <b>[N]</b> defaults to one. </p><p>Wraps "
-"around the start of the document list.</p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:255
-msgid ""
-"<p><b>bf,bfirst &mdash; first document</b></p><p>Usage: <tt><b>bf[irst]</b></"
-"tt></p><p>Goes to the <b>f</b>irst document (\"<b>b</b>uffer\") in document "
-"list.</p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:261
-msgid ""
-"<p><b>bl,blast &mdash; last document</b></p><p>Usage: <tt><b>bl[ast]</b></"
-"tt></p><p>Goes to the <b>l</b>ast document (\"<b>b</b>uffer\") in document "
-"list.</p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:267
-msgid ""
-"<p><b>b,buffer &mdash; Edit document N from the document list</b></"
-"p><p>Usage: <tt><b>b[uffer] [N]</b></tt></p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:272
-msgid ""
-"<p><b>sp,split&mdash; Split horizontally the current view into two</b></"
-"p><p>Usage: <tt><b>sp[lit]</b></tt></p><p>The result is two views on the "
-"same document</p>."
-msgstr ""
-
-#: app/kateappcommands.cpp:278
-msgid ""
-"<p><b>vs,vsplit&mdash; Split vertically the current view into two</b></"
-"p><p>Usage: <tt><b>vs[lit]</b></tt></p><p>The result is two views on the "
-"same document.</p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:284
-msgid ""
-"<p><b>[v]new &mdash; split view and create new document</b></p><p>Usage: "
-"<tt><b>[v]new</b></tt></p><p>Splits the current view and opens a new "
-"document in the new view. This command can be called in two ways:<br /> "
-"<tt>new</tt> &mdash; splits the view horizontally and opens a new document."
-"<br /> <tt>vnew</tt> &mdash; splits the view vertically and opens a new "
-"document.<br /></p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:294
-msgid ""
-"<p><b>e[dit] &mdash; reload current document</b></p><p>Usage: <tt><b>e[dit]</"
-"b></tt></p><p>Starts <b>e</b>diting the current document again. This is "
-"useful to re-edit the current file, when it has been changed by another "
-"program.</p>"
-msgstr ""
-
-#: app/katemdi.cpp:120
-msgid "Tool &Views"
-msgstr "Golygfeydd &Offer"
-
-#: app/katemdi.cpp:122
-msgid "Show Side&bars"
-msgstr ""
-
-#: app/katemdi.cpp:161
-#, kde-format
-msgid "Show %1"
-msgstr "Dangos %1"
-
-#: app/katemdi.cpp:453
-msgid "Behavior"
-msgstr "Ymddygiad"
-
-#: app/katemdi.cpp:456
-msgid "Make Non-Persistent"
-msgstr ""
-
-#: app/katemdi.cpp:456
-msgid "Make Persistent"
-msgstr ""
-
-#: app/katemdi.cpp:458
-msgid "Move To"
-msgstr "Symud I"
-
-#: app/katemdi.cpp:461
-msgid "Left Sidebar"
-msgstr ""
-
-#: app/katemdi.cpp:464
-msgid "Right Sidebar"
-msgstr ""
-
-#: app/katemdi.cpp:467
-msgid "Top Sidebar"
-msgstr ""
-
-#: app/katemdi.cpp:470
-msgid "Bottom Sidebar"
-msgstr ""
-
-#: app/katemdi.cpp:776
-msgid ""
-"<qt>You are about to hide the sidebars. With hidden sidebars it is not "
-"possible to directly access the tool views with the mouse anymore, so if you "
-"need to access the sidebars again invoke <b>View &gt; Tool Views &gt; Show "
-"Sidebars</b> in the menu. It is still possible to show/hide the tool views "
-"with the assigned shortcuts.</qt>"
-msgstr ""
-
-#: app/kateviewmanager.cpp:120
-msgid "Split Ve&rtical"
-msgstr "Hollti'n& Fertigol"
-
-#: app/kateviewmanager.cpp:124
-msgid "Split the currently active view vertically into two views."
-msgstr "Rhannu'r golwg gweithredol cyfredol yn fertigol yn ddau olwg."
-
-#: app/kateviewmanager.cpp:128
-msgid "Split &Horizontal"
-msgstr "Rhannu'n &Llorweddol"
-
-#: app/kateviewmanager.cpp:132
-msgid "Split the currently active view horizontally into two views."
-msgstr "Rhannu'r golwg gweithredol cyfredol yn llorweddol yn ddau olwg."
-
-#: app/kateviewmanager.cpp:136
-msgid "Cl&ose Current View"
-msgstr "C&au'r Olwg Cyfredol"
-
-#: app/kateviewmanager.cpp:140
-msgid "Close the currently active splitted view"
-msgstr "Cau'r olwg rhanedig gweithredol cyfredol"
-
-#: app/kateviewmanager.cpp:143
-#, fuzzy
-#| msgid "Next View"
-msgid "Next Split View"
-msgstr "Golwg Nesaf"
-
-#: app/kateviewmanager.cpp:147
-msgid "Make the next split view the active one."
-msgstr "Dewis yr olwg ranedig nesaf fel yr un weithredol."
-
-#: app/kateviewmanager.cpp:150
-#, fuzzy
-#| msgid "Previous View"
-msgid "Previous Split View"
-msgstr "Golwg Blaenorol"
-
-#: app/kateviewmanager.cpp:154
-msgid "Make the previous split view the active one."
-msgstr "Dewis yr olwg ranedig flaenorol fel yr un weithredol."
-
-#: app/kateviewmanager.cpp:157
-msgid "Move Splitter Right"
-msgstr ""
-
-#: app/kateviewmanager.cpp:160
-msgid "Move the splitter of the current view to the right"
-msgstr ""
-
-#: app/kateviewmanager.cpp:163
-msgid "Move Splitter Left"
-msgstr ""
-
-#: app/kateviewmanager.cpp:166
-msgid "Move the splitter of the current view to the left"
-msgstr ""
-
-#: app/kateviewmanager.cpp:169
-msgid "Move Splitter Up"
-msgstr ""
-
-#: app/kateviewmanager.cpp:172
-msgid "Move the splitter of the current view up"
-msgstr ""
-
-#: app/kateviewmanager.cpp:175
-msgid "Move Splitter Down"
-msgstr ""
-
-#: app/kateviewmanager.cpp:178
-#, fuzzy
-#| msgid "Make the next split view the active one."
-msgid "Move the splitter of the current view down"
-msgstr "Dewis yr olwg ranedig nesaf fel yr un weithredol."
-
-#: app/kateviewmanager.cpp:207
-msgid "Open File"
-msgstr "Agor Ffeil"
-
-#: app/katedocmanager.cpp:68
-#, fuzzy
-#| msgid ""
-#| "A KDE text-editor component could not be found;\n"
-#| "please check your KDE installation."
-msgid ""
-"A KDE text-editor component could not be found.\n"
-"Please check your KDE installation."
-msgstr ""
-"Methwyd canfod cydran olygu testun KDE;\n"
-"gwiriwch eich gosodiad KDE os gwelwch yn dda."
-
-#: app/katedocmanager.cpp:308
-#, kde-format
-msgid ""
-"The supposedly temporary file %1 has been modified. Do you want to delete it "
-"anyway?"
-msgstr ""
-
-#: app/katedocmanager.cpp:310
-#, fuzzy
-msgid "Delete File?"
-msgstr "Wedi'u dileu"
-
-#: app/katedocmanager.cpp:450
-#, fuzzy, kde-format
-#| msgid ""
-#| "<p>The document '%1' has been modified, but not saved.<p>Do you want to "
-#| "save your changes or discard them?"
-msgid ""
-"<p>The document '%1' has been modified, but not saved.</p><p>Do you want to "
-"save your changes or discard them?</p>"
-msgstr ""
-"<p>Addaswyd y ddogfen '%1', ond ni'i gadwyd. <p>Ydych am gadw eich "
-"newidiadu, neu eu taflu?"
-
-#: app/katedocmanager.cpp:452
-msgid "Close Document"
-msgstr "Cau Dogfen"
-
-#: app/katedocmanager.cpp:459
-#, fuzzy
-msgid "Save As"
-msgstr "Cadw &Fel..."
-
-#: app/katedocmanager.cpp:485 app/katemainwindow.cpp:437
-msgid "New file opened while trying to close Kate, closing aborted."
-msgstr ""
-
-#: app/katedocmanager.cpp:486 app/katemainwindow.cpp:438
-msgid "Closing Aborted"
-msgstr ""
-
-#: app/katedocmanager.cpp:558
-#, fuzzy
-msgid "Starting Up"
-msgstr "Ymgyc&hwyn"
-
-#: app/katedocmanager.cpp:559
-msgid "Reopening files from the last session..."
-msgstr "Ailagor ffeiliau o'r sesiwn blaenorol..."
-
-#: app/katedocmanager.cpp:738
-msgid "Errors/Warnings while opening documents"
-msgstr ""
-
 #: app/katemainwindow.cpp:234
 msgid "Use this command to show or hide the view's statusbar"
 msgstr "Defnyddiwch y gorchymyn yma i ddangos neu guddio bar cyflwr yr olwg"
@@ -1727,25 +1305,510 @@ msgstr ""
 msgid "Close all documents"
 msgstr "Cau bob dogfen agored."
 
-#: app/katemainwindow.cpp:610
+#: app/katemainwindow.cpp:579
 #, kde-format
 msgctxt "'document name [*]', [*] means modified"
 msgid "%1 [*]"
 msgstr ""
 
-#: app/katemainwindow.cpp:797
+#: app/katemainwindow.cpp:742
 msgid "&Other..."
 msgstr "A&rall..."
 
-#: app/katemainwindow.cpp:823
+#: app/katemainwindow.cpp:768
 #, fuzzy, kde-format
 msgid "Application '%1' not found."
 msgstr "Cymhwysiad"
 
-#: app/katemainwindow.cpp:823
+#: app/katemainwindow.cpp:768
 #, fuzzy
 msgid "Application not found"
 msgstr "Cymhwysiad"
+
+#: app/katemdi.cpp:120
+msgid "Tool &Views"
+msgstr "Golygfeydd &Offer"
+
+#: app/katemdi.cpp:122
+msgid "Show Side&bars"
+msgstr ""
+
+#: app/katemdi.cpp:161
+#, kde-format
+msgid "Show %1"
+msgstr "Dangos %1"
+
+#: app/katemdi.cpp:453
+msgid "Behavior"
+msgstr "Ymddygiad"
+
+#: app/katemdi.cpp:456
+msgid "Make Non-Persistent"
+msgstr ""
+
+#: app/katemdi.cpp:456
+msgid "Make Persistent"
+msgstr ""
+
+#: app/katemdi.cpp:458
+msgid "Move To"
+msgstr "Symud I"
+
+#: app/katemdi.cpp:461
+msgid "Left Sidebar"
+msgstr ""
+
+#: app/katemdi.cpp:464
+msgid "Right Sidebar"
+msgstr ""
+
+#: app/katemdi.cpp:467
+msgid "Top Sidebar"
+msgstr ""
+
+#: app/katemdi.cpp:470
+msgid "Bottom Sidebar"
+msgstr ""
+
+#: app/katemdi.cpp:776
+msgid ""
+"<qt>You are about to hide the sidebars. With hidden sidebars it is not "
+"possible to directly access the tool views with the mouse anymore, so if you "
+"need to access the sidebars again invoke <b>View &gt; Tool Views &gt; Show "
+"Sidebars</b> in the menu. It is still possible to show/hide the tool views "
+"with the assigned shortcuts.</qt>"
+msgstr ""
+
+#: app/katemwmodonhddialog.cpp:65
+#, fuzzy
+msgid "Documents Modified on Disk"
+msgstr "Dogfen i'w hagor"
+
+#: app/katemwmodonhddialog.cpp:67
+msgid "&Ignore"
+msgstr "&Anwybyddu"
+
+#: app/katemwmodonhddialog.cpp:69
+msgid "&Reload"
+msgstr ""
+
+#: app/katemwmodonhddialog.cpp:76
+msgid ""
+"Removes the modified flag from the selected documents and closes the dialog "
+"if there are no more unhandled documents."
+msgstr ""
+
+#: app/katemwmodonhddialog.cpp:79
+msgid ""
+"Overwrite selected documents, discarding the disk changes and closes the "
+"dialog if there are no more unhandled documents."
+msgstr ""
+
+#: app/katemwmodonhddialog.cpp:82
+msgid ""
+"Reloads the selected documents from disk and closes the dialog if there are "
+"no more unhandled documents."
+msgstr ""
+
+#: app/katemwmodonhddialog.cpp:96
+msgid ""
+"<qt>The documents listed below have changed on disk.<p>Select one or more at "
+"once, and press an action button until the list is empty.</p></qt>"
+msgstr ""
+
+#: app/katemwmodonhddialog.cpp:103
+msgid "Filename"
+msgstr "Enw Ffeil"
+
+#: app/katemwmodonhddialog.cpp:103
+msgid "Status on Disk"
+msgstr ""
+
+#: app/katemwmodonhddialog.cpp:109
+msgid "Modified"
+msgstr "Addaswyd"
+
+#: app/katemwmodonhddialog.cpp:109
+msgid "Created"
+msgstr "Crëwyd"
+
+#: app/katemwmodonhddialog.cpp:109
+msgid "Deleted"
+msgstr "Wedi'u dileu"
+
+#: app/katemwmodonhddialog.cpp:124
+msgid "&View Difference"
+msgstr ""
+
+#: app/katemwmodonhddialog.cpp:127
+msgid ""
+"Calculates the difference between the editor contents and the disk file for "
+"the selected document, and shows the difference with the default "
+"application. Requires diff(1)."
+msgstr ""
+
+#: app/katemwmodonhddialog.cpp:187
+#, fuzzy, kde-format
+msgid ""
+"Could not save the document \n"
+"'%1'"
+msgstr "Cau`r ddogfen cyfredol"
+
+#: app/katemwmodonhddialog.cpp:285
+msgid ""
+"The diff command failed. Please make sure that diff(1) is installed and in "
+"your PATH."
+msgstr ""
+
+#: app/katemwmodonhddialog.cpp:287
+msgid "Error Creating Diff"
+msgstr ""
+
+#: app/katemwmodonhddialog.cpp:296
+msgid "Besides white space changes, the files are identical."
+msgstr ""
+
+#: app/katemwmodonhddialog.cpp:297
+msgid "Diff Output"
+msgstr ""
+
+#: app/katesavemodifieddialog.cpp:91
+#, kde-format
+msgid "Save As (%1)"
+msgstr ""
+
+#: app/katesavemodifieddialog.cpp:103
+#, kde-format
+msgid ""
+"A file named \"%1\" already exists. Are you sure you want to overwrite it?"
+msgstr ""
+
+#: app/katesavemodifieddialog.cpp:105
+#, fuzzy
+msgid "Overwrite File?"
+msgstr "&Trosysgrifo"
+
+#: app/katesavemodifieddialog.cpp:181
+#, fuzzy
+msgid "Save Documents"
+msgstr "Dogfennau"
+
+#: app/katesavemodifieddialog.cpp:187
+#, fuzzy
+msgid "&Save Selected"
+msgstr "&Dewisiedig:"
+
+#: app/katesavemodifieddialog.cpp:195
+#, fuzzy
+#| msgid "Do Not Save"
+msgid "Do &Not Close"
+msgstr "Peidiwch â Chadw"
+
+#: app/katesavemodifieddialog.cpp:202
+#, fuzzy
+msgid ""
+"<qt>The following documents have been modified. Do you want to save them "
+"before closing?</qt>"
+msgstr ""
+"<p>Addaswyd y ddogfen '%1', ond ni'i gadwyd. <p>Ydych am gadw eich "
+"newidiadu, neu eu taflu?"
+
+#: app/katesavemodifieddialog.cpp:205
+#: plugins/filetree/katefiletreeplugin.cpp:159
+msgid "Documents"
+msgstr "Dogfennau"
+
+#: app/katesavemodifieddialog.cpp:205
+msgid "Location"
+msgstr "Lleoliad"
+
+#: app/katesavemodifieddialog.cpp:214
+msgid "Se&lect All"
+msgstr "De&wis Popeth"
+
+#: app/katesavemodifieddialog.cpp:265
+msgid ""
+"Data you requested to be saved could not be written. Please choose how you "
+"want to proceed."
+msgstr ""
+
+#: app/katesession.cpp:269
+msgid ""
+"Internal error: there is more than one instance open for a given session."
+msgstr ""
+
+#: app/katesession.cpp:275
+#, kde-format
+msgid ""
+"Session '%1' is already opened in another kate instance, change there "
+"instead of reopening?"
+msgstr ""
+
+#: app/katesession.cpp:466
+#, fuzzy
+msgid "No session selected to open."
+msgstr "&Dewisiedig:"
+
+#: app/katesession.cpp:466 app/katesession.cpp:491
+#, fuzzy
+msgid "No Session Selected"
+msgstr "&Dewisiedig:"
+
+#: app/katesession.cpp:491
+#, fuzzy
+msgid "No session selected to copy."
+msgstr "&Dewisiedig:"
+
+#: app/katesession.cpp:577
+msgid "Specify New Name for Current Session"
+msgstr ""
+
+#: app/katesession.cpp:578
+msgid ""
+"There is already an existing session with your chosen name.\n"
+"Please choose a different one\n"
+"Session name:"
+msgstr ""
+
+#: app/katesession.cpp:578 app/katesession.cpp:894
+msgid "Session name:"
+msgstr "Enw sesiwn:"
+
+#: app/katesession.cpp:585 app/katesession.cpp:901
+msgid "To save a session, you must specify a name."
+msgstr ""
+
+#: app/katesession.cpp:585 app/katesession.cpp:901
+msgid "Missing Session Name"
+msgstr ""
+
+#: app/katesession.cpp:624
+#, fuzzy
+msgid "Session Chooser"
+msgstr "Sesiwn"
+
+#: app/katesession.cpp:627 app/katesession.cpp:737
+#, fuzzy
+msgid "Open Session"
+msgstr "Sesiwn"
+
+#: app/katesession.cpp:628
+msgid "New Session"
+msgstr "Sesiwn Newydd"
+
+#: app/katesession.cpp:639 app/katesession.cpp:758 app/katesession.cpp:835
+#, fuzzy
+msgid "Session Name"
+msgstr "Sesiwn"
+
+#: app/katesession.cpp:640 app/katesession.cpp:759 app/katesession.cpp:836
+#, fuzzy
+msgctxt "The number of open documents"
+msgid "Open Documents"
+msgstr "Dogfennau"
+
+#: app/katesession.cpp:652
+msgid "Use selected session as template"
+msgstr ""
+
+#: app/katesession.cpp:668
+msgid "&Always use this choice"
+msgstr ""
+
+#: app/katesession.cpp:741 app/katesession.cpp:821
+#, fuzzy
+msgid "&Open"
+msgstr "A&gor"
+
+#: app/katesession.cpp:817
+#, fuzzy
+msgid "Manage Sessions"
+msgstr "Sesiwn"
+
+#: app/katesession.cpp:853
+msgid "&Rename..."
+msgstr "Ail-&enwi..."
+
+#: app/katesession.cpp:894
+msgid "Specify New Name for Session"
+msgstr ""
+
+#: app/katesession.cpp:912
+#, kde-format
+msgid ""
+"The session could not be renamed to \"%1\", there already exists another "
+"session with the same name"
+msgstr ""
+
+#: app/katesession.cpp:912
+#, fuzzy
+msgid "Session Renaming"
+msgstr "Enw sesiwn:"
+
+#: app/kateviewmanager.cpp:120
+msgid "Split Ve&rtical"
+msgstr "Hollti'n& Fertigol"
+
+#: app/kateviewmanager.cpp:124
+msgid "Split the currently active view vertically into two views."
+msgstr "Rhannu'r golwg gweithredol cyfredol yn fertigol yn ddau olwg."
+
+#: app/kateviewmanager.cpp:128
+msgid "Split &Horizontal"
+msgstr "Rhannu'n &Llorweddol"
+
+#: app/kateviewmanager.cpp:132
+msgid "Split the currently active view horizontally into two views."
+msgstr "Rhannu'r golwg gweithredol cyfredol yn llorweddol yn ddau olwg."
+
+#: app/kateviewmanager.cpp:136
+msgid "Cl&ose Current View"
+msgstr "C&au'r Olwg Cyfredol"
+
+#: app/kateviewmanager.cpp:140
+msgid "Close the currently active splitted view"
+msgstr "Cau'r olwg rhanedig gweithredol cyfredol"
+
+#: app/kateviewmanager.cpp:143
+#, fuzzy
+#| msgid "Next View"
+msgid "Next Split View"
+msgstr "Golwg Nesaf"
+
+#: app/kateviewmanager.cpp:147
+msgid "Make the next split view the active one."
+msgstr "Dewis yr olwg ranedig nesaf fel yr un weithredol."
+
+#: app/kateviewmanager.cpp:150
+#, fuzzy
+#| msgid "Previous View"
+msgid "Previous Split View"
+msgstr "Golwg Blaenorol"
+
+#: app/kateviewmanager.cpp:154
+msgid "Make the previous split view the active one."
+msgstr "Dewis yr olwg ranedig flaenorol fel yr un weithredol."
+
+#: app/kateviewmanager.cpp:157
+msgid "Move Splitter Right"
+msgstr ""
+
+#: app/kateviewmanager.cpp:160
+msgid "Move the splitter of the current view to the right"
+msgstr ""
+
+#: app/kateviewmanager.cpp:163
+msgid "Move Splitter Left"
+msgstr ""
+
+#: app/kateviewmanager.cpp:166
+msgid "Move the splitter of the current view to the left"
+msgstr ""
+
+#: app/kateviewmanager.cpp:169
+msgid "Move Splitter Up"
+msgstr ""
+
+#: app/kateviewmanager.cpp:172
+msgid "Move the splitter of the current view up"
+msgstr ""
+
+#: app/kateviewmanager.cpp:175
+msgid "Move Splitter Down"
+msgstr ""
+
+#: app/kateviewmanager.cpp:178
+#, fuzzy
+#| msgid "Make the next split view the active one."
+msgid "Move the splitter of the current view down"
+msgstr "Dewis yr olwg ranedig nesaf fel yr un weithredol."
+
+#: app/kateviewmanager.cpp:207
+msgid "Open File"
+msgstr "Agor Ffeil"
+
+#: app/kateviewspace.cpp:256 app/kateviewspace.cpp:361
+#, kde-format
+msgid " Line: %1 Col: %2 "
+msgstr "Llinell: %1 Col: %2"
+
+#: app/kateviewspace.cpp:270
+msgid " INS "
+msgstr "MEWN"
+
+#: app/kateviewspace.cpp:275 app/kateviewspace.cpp:370
+#, fuzzy
+#| msgid " INS "
+msgid " LINE "
+msgstr "MEWN"
+
+#: app/kateviewspace.cpp:370
+#, fuzzy
+#| msgid " BLK "
+msgid " BLOCK "
+msgstr "BLC"
+
+#: plugins/filetree/katefiletree.cpp:50
+#, fuzzy
+#| msgid "Clos&e All"
+msgid "Close"
+msgstr "Cau pop&eth"
+
+#: plugins/filetree/katefiletree.cpp:56
+msgid "Tree Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:57
+msgid "Set view style to Tree Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:60
+msgid "List Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:61
+msgid "Set view style to List Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:66
+#: plugins/filetree/katefiletreeconfigpage.cpp:87
+#, fuzzy
+msgid "Document Name"
+msgstr "Dogfennau"
+
+#: plugins/filetree/katefiletree.cpp:67
+#, fuzzy
+msgid "Sort by Document Name"
+msgstr "Dogfennau"
+
+#: plugins/filetree/katefiletree.cpp:71
+#, fuzzy
+msgid "Document Path"
+msgstr "Dogfennau"
+
+#: plugins/filetree/katefiletree.cpp:72
+#, fuzzy
+#| msgid "&Show All Documents >>"
+msgid "Sort by Document Path"
+msgstr "&Dangos Pob Dogfen >>"
+
+#: plugins/filetree/katefiletree.cpp:75
+#: plugins/filetree/katefiletreeconfigpage.cpp:86
+msgid "Opening Order"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:76
+msgid "Sort by Opening Order"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:183
+msgid "View Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:187
+#, fuzzy
+msgid "Sort By"
+msgstr "Trefn&u Gan"
 
 #: plugins/filetree/katefiletreeconfigpage.cpp:60
 msgid "Background Shading"
@@ -1765,17 +1828,6 @@ msgstr "Dogfennau"
 #, fuzzy
 msgid "&Sort by:"
 msgstr "Trefn&u Gan"
-
-#: plugins/filetree/katefiletreeconfigpage.cpp:86
-#: plugins/filetree/katefiletree.cpp:75
-msgid "Opening Order"
-msgstr ""
-
-#: plugins/filetree/katefiletreeconfigpage.cpp:87
-#: plugins/filetree/katefiletree.cpp:66
-#, fuzzy
-msgid "Document Name"
-msgstr "Dogfennau"
 
 #: plugins/filetree/katefiletreeconfigpage.cpp:88
 msgid "Url"
@@ -1827,56 +1879,12 @@ msgid ""
 "path rather than just the last folder name."
 msgstr ""
 
-#: plugins/filetree/katefiletree.cpp:50
-#, fuzzy
-#| msgid "Clos&e All"
-msgid "Close"
-msgstr "Cau pop&eth"
-
-#: plugins/filetree/katefiletree.cpp:56
-msgid "Tree Mode"
+#: plugins/filetree/katefiletreemodel.cpp:459
+#, kde-format
+msgctxt "%1 is the full path"
+msgid ""
+"<p><b>%1</b></p><p>The document has been modified by another application.</p>"
 msgstr ""
-
-#: plugins/filetree/katefiletree.cpp:57
-msgid "Set view style to Tree Mode"
-msgstr ""
-
-#: plugins/filetree/katefiletree.cpp:60
-msgid "List Mode"
-msgstr ""
-
-#: plugins/filetree/katefiletree.cpp:61
-msgid "Set view style to List Mode"
-msgstr ""
-
-#: plugins/filetree/katefiletree.cpp:67
-#, fuzzy
-msgid "Sort by Document Name"
-msgstr "Dogfennau"
-
-#: plugins/filetree/katefiletree.cpp:71
-#, fuzzy
-msgid "Document Path"
-msgstr "Dogfennau"
-
-#: plugins/filetree/katefiletree.cpp:72
-#, fuzzy
-#| msgid "&Show All Documents >>"
-msgid "Sort by Document Path"
-msgstr "&Dangos Pob Dogfen >>"
-
-#: plugins/filetree/katefiletree.cpp:76
-msgid "Sort by Opening Order"
-msgstr ""
-
-#: plugins/filetree/katefiletree.cpp:183
-msgid "View Mode"
-msgstr ""
-
-#: plugins/filetree/katefiletree.cpp:187
-#, fuzzy
-msgid "Sort By"
-msgstr "Trefn&u Gan"
 
 #: plugins/filetree/katefiletreeplugin.cpp:48
 #, fuzzy
@@ -1894,13 +1902,6 @@ msgstr "Golwg Blaenorol"
 
 #: plugins/filetree/katefiletreeplugin.cpp:202
 msgid "&Show Active"
-msgstr ""
-
-#: plugins/filetree/katefiletreemodel.cpp:459
-#, kde-format
-msgctxt "%1 is the full path"
-msgid ""
-"<p><b>%1</b></p><p>The document has been modified by another application.</p>"
 msgstr ""
 
 #~ msgid "Title"
@@ -2359,9 +2360,9 @@ msgstr ""
 #~ "URL of the directory containing the current document.<li><code>%filename</"
 #~ "code> - the filename of the current document.<li><code>%line</code> - the "
 #~ "current line of the text cursor in the current view.<li><code>%column</"
-#~ "code> - the column of the text cursor in the current view.<li><code>%"
-#~ "selection</code> - the selected text in the current view.<li><code>%text</"
-#~ "code> - the text of the current document.</ul>"
+#~ "code> - the column of the text cursor in the current view.<li><code>"
+#~ "%selection</code> - the selected text in the current view.<li><code>"
+#~ "%text</code> - the text of the current document.</ul>"
 #~ msgstr ""
 #~ "<p>Y gorchymyn i weithredu i alw'r erfyn.  Ehangir y macros dilynnol:</"
 #~ "p><ul><li><code>%URL</code> - URL y ddogfen gyfredol.<li><code>%URLs</"
