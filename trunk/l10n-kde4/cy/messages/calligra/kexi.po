@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-02 17:50+0200\n"
+"POT-Creation-Date: 2011-08-04 02:20+0200\n"
 "PO-Revision-Date: 2004-08-12 18:36+0100\n"
 "Last-Translator: KD at Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -48,66 +48,6 @@ msgid ""
 "Sorts data in descending (from Z to A and from 9 to 0). Data from selected "
 "column is used for sorting."
 msgstr ""
-
-#: core/KexiView.cpp:66
-#, fuzzy
-msgid "Switch to data view"
-msgstr "Newid i fodd Golwg Data"
-
-#: core/KexiView.cpp:67
-#, fuzzy
-msgid "Switches to data view."
-msgstr "Newid i fodd Golwg Data."
-
-#: core/KexiView.cpp:70
-#, fuzzy
-msgid "Switch to design view"
-msgstr "Newid i fodd Golwg Cynllunio"
-
-#: core/KexiView.cpp:71
-#, fuzzy
-msgid "Switches to design view."
-msgstr "Newid i fodd Golwg Cynllunio."
-
-#: core/KexiView.cpp:74
-#, fuzzy
-msgid "Switch to text view"
-msgstr "Newid i fodd Golwg Testun"
-
-#: core/KexiView.cpp:75
-#, fuzzy
-msgid "Switches to text view."
-msgstr "Newid i fodd Golwg Testun."
-
-#: core/KexiView.cpp:232
-#, fuzzy
-msgid "Save"
-msgstr "Cadw &Rhes"
-
-#: core/KexiView.cpp:233
-msgid "Save current design"
-msgstr ""
-
-#: core/KexiView.cpp:234
-#, fuzzy
-msgid "Saves changes made to the current design."
-msgstr "Mewnosod un rhes wag uwchben yr un wedi'i dewis ar hyn o bryd"
-
-#: core/KexiView.cpp:580
-#, fuzzy
-#| msgid "Row:"
-msgid "Show:"
-msgstr "Rhes:"
-
-#: core/KexiView.cpp:591 main/KexiMainWindow_p.h:198
-msgid "Data"
-msgstr "Data"
-
-#: core/KexiView.cpp:602
-#, fuzzy
-#| msgid "&Design"
-msgid "Design"
-msgstr "&Cynllun"
 
 #: core/kexicontexthelp.cpp:34 core/KoContextHelp.cpp:518
 #: core/KoContextHelp.cpp:550 core/KoContextHelp.cpp:560
@@ -148,22 +88,46 @@ msgctxt "database connection"
 msgid "(connection %1)"
 msgstr "Gwall yng nghysylltiad y gronfa ddata"
 
-#: core/KexiWindow.cpp:612
+#: core/KexiWindow.cpp:608 widget/kexidbconnectionwidget.cpp:89
+msgid "Save Changes"
+msgstr "Cadw Newidiadau"
+
+#: core/KexiWindow.cpp:611
+#, fuzzy
+#| msgctxt "Do Not Add Database Primary Key to a Table"
+#| msgid "Do Not Add"
+msgid "Do Not Switch"
+msgstr "Na Ychwaneger"
+
+#: core/KexiWindow.cpp:614
+#, fuzzy, kde-format
+msgid ""
+"There are unsaved changes in object \"%1\". Do you want to save these "
+"changes before switching to other view?"
+msgstr "Newidwyd y cynllun. Rhaid i chi ei gadw cyn newid i olwg arall."
+
+#: core/KexiWindow.cpp:617
+#, fuzzy
+#| msgid "Save Changes"
+msgid "Confirm Saving Changes"
+msgstr "Cadw Newidiadau"
+
+#: core/KexiWindow.cpp:638
 #, fuzzy
 msgid ""
 "Design has been changed. You must save it before switching to other view."
 msgstr "Newidwyd y cynllun. Rhaid i chi ei gadw cyn newid i olwg arall."
 
-#: core/KexiWindow.cpp:677 main/KexiMainWindow.cpp:3582
+#: core/KexiWindow.cpp:703 main/KexiMainWindow.cpp:3582
 #, fuzzy, kde-format
 msgid "Switching to other view failed (%1)."
 msgstr "Methwyd mewnosod y rhes ar y gweinydd."
 
-#: core/KexiWindow.cpp:859
+#: core/KexiWindow.cpp:885
 msgid "Saving object's definition failed."
 msgstr ""
 
-#: core/KexiWindow.cpp:943
+#: core/KexiWindow.cpp:969
 #, fuzzy
 msgid "Saving object's data failed."
 msgstr "Cadw gwrthrych fel"
@@ -856,6 +820,66 @@ msgstr "Ni ellir darllen y ffeil \"%1\"."
 #, kde-format
 msgid "\"%1\" function is not available for version %2 of %3 application."
 msgstr ""
+
+#: core/KexiView.cpp:66
+#, fuzzy
+msgid "Switch to data view"
+msgstr "Newid i fodd Golwg Data"
+
+#: core/KexiView.cpp:67
+#, fuzzy
+msgid "Switches to data view."
+msgstr "Newid i fodd Golwg Data."
+
+#: core/KexiView.cpp:70
+#, fuzzy
+msgid "Switch to design view"
+msgstr "Newid i fodd Golwg Cynllunio"
+
+#: core/KexiView.cpp:71
+#, fuzzy
+msgid "Switches to design view."
+msgstr "Newid i fodd Golwg Cynllunio."
+
+#: core/KexiView.cpp:74
+#, fuzzy
+msgid "Switch to text view"
+msgstr "Newid i fodd Golwg Testun"
+
+#: core/KexiView.cpp:75
+#, fuzzy
+msgid "Switches to text view."
+msgstr "Newid i fodd Golwg Testun."
+
+#: core/KexiView.cpp:232
+#, fuzzy
+msgid "Save"
+msgstr "Cadw &Rhes"
+
+#: core/KexiView.cpp:233
+msgid "Save current design"
+msgstr ""
+
+#: core/KexiView.cpp:234
+#, fuzzy
+msgid "Saves changes made to the current design."
+msgstr "Mewnosod un rhes wag uwchben yr un wedi'i dewis ar hyn o bryd"
+
+#: core/KexiView.cpp:595
+#, fuzzy
+#| msgid "Row:"
+msgid "Show:"
+msgstr "Rhes:"
+
+#: core/KexiView.cpp:606 main/KexiMainWindow_p.h:198
+msgid "Data"
+msgstr "Data"
+
+#: core/KexiView.cpp:617
+#, fuzzy
+#| msgid "&Design"
+msgid "Design"
+msgstr "&Cynllun"
 
 #: formeditor/WidgetTreeWidget.cpp:96 formeditor/commands.cpp:2217
 #: main/printing/kexisimpleprintingengine.cpp:326
@@ -7521,10 +7545,6 @@ msgid ""
 "\" combo box."
 msgstr ""
 
-#: widget/kexidbconnectionwidget.cpp:89
-msgid "Save Changes"
-msgstr "Cadw Newidiadau"
-
 #: widget/kexidbconnectionwidget.cpp:90
 msgid "Save all changes made to this connection information"
 msgstr ""
@@ -7739,22 +7759,64 @@ msgstr "&Agor y Tabl/Ymholiad Dewisiedig"
 msgid "Click to show available actions for this cell"
 msgstr ""
 
+#: widget/tableview/kexitableviewdata.cpp:596
+#: widget/tableview/kexitableviewdata.cpp:607
+#, kde-format
+msgid "\"%1\" column requires a value to be entered."
+msgstr "Rhaid mewnosod gwerth yng ngholofn \"%1\"."
+
+#: widget/tableview/kexitableviewdata.cpp:598
+#: widget/tableview/kexidataawareobjectiface.cpp:949
+msgid "The column's constraint is declared as NOT NULL."
+msgstr "Datganwyd cyfyngiad y golofn fel NOT NULL (dim nwl)."
+
+#: widget/tableview/kexitableviewdata.cpp:609
+#: widget/tableview/kexidataawareobjectiface.cpp:968
+msgid "The column's constraint is declared as NOT EMPTY."
+msgstr "Datganwyd cyfyngiad y golofn fel NOT EMPTY (dim yn wag)."
+
+#: widget/tableview/kexitableviewdata.cpp:620
+#, fuzzy
+#| msgid "Row inserting failed."
+msgid "Record inserting failed."
+msgstr "Methwyd mewnosod rhes."
+
+#: widget/tableview/kexitableviewdata.cpp:638
+#, fuzzy
+#| msgid "Row changing failed."
+msgid "Record changing failed."
+msgstr "Methwyd newid rhes."
+
+#: widget/tableview/kexitableviewdata.cpp:706
+#, fuzzy
+#| msgid "Row deleting failed."
+msgid "Record deleting failed."
+msgstr "Methwyd dileu rhes."
+
+#: widget/tableview/kexitableview.cpp:120
+#, fuzzy
+msgid "Contains a pointer to the currently selected record"
+msgstr "Mewnosod un rhes wag uwchben yr un wedi'i dewis ar hyn o bryd"
+
+#: widget/tableview/kexitableview.cpp:122
+#, fuzzy
+msgid "Record navigator"
+msgstr "Mordwywr cywaith"
+
+#: widget/tableview/kexitableview.cpp:242
+msgid "Add Record"
+msgstr "Ychwanegu Cofnod"
+
+#: widget/tableview/kexitableview.cpp:245
+msgid "Remove Record"
+msgstr "Dileu Cofnod"
+
 #: widget/tableview/kexidataawareobjectiface.cpp:933
 #, fuzzy, kde-format
 #| msgid "Error: %1"
 msgctxt "Question"
 msgid "Error: %1?"
 msgstr "Gwall: %1"
-
-#: widget/tableview/kexidataawareobjectiface.cpp:949
-#: widget/tableview/kexitableviewdata.cpp:598
-msgid "The column's constraint is declared as NOT NULL."
-msgstr "Datganwyd cyfyngiad y golofn fel NOT NULL (dim nwl)."
-
-#: widget/tableview/kexidataawareobjectiface.cpp:968
-#: widget/tableview/kexitableviewdata.cpp:609
-msgid "The column's constraint is declared as NOT EMPTY."
-msgstr "Datganwyd cyfyngiad y golofn fel NOT EMPTY (dim yn wag)."
 
 #: widget/tableview/kexidataawareobjectiface.cpp:983
 msgid "The column's constraint is declared as NOT EMPTY and NOT NULL."
@@ -7803,48 +7865,6 @@ msgstr "Cadw newidiadau i'r gwrthrych"
 #, fuzzy
 msgid "Discard Changes"
 msgstr "Cadw Newidiadau"
-
-#: widget/tableview/kexitableviewdata.cpp:596
-#: widget/tableview/kexitableviewdata.cpp:607
-#, kde-format
-msgid "\"%1\" column requires a value to be entered."
-msgstr "Rhaid mewnosod gwerth yng ngholofn \"%1\"."
-
-#: widget/tableview/kexitableviewdata.cpp:620
-#, fuzzy
-#| msgid "Row inserting failed."
-msgid "Record inserting failed."
-msgstr "Methwyd mewnosod rhes."
-
-#: widget/tableview/kexitableviewdata.cpp:638
-#, fuzzy
-#| msgid "Row changing failed."
-msgid "Record changing failed."
-msgstr "Methwyd newid rhes."
-
-#: widget/tableview/kexitableviewdata.cpp:706
-#, fuzzy
-#| msgid "Row deleting failed."
-msgid "Record deleting failed."
-msgstr "Methwyd dileu rhes."
-
-#: widget/tableview/kexitableview.cpp:120
-#, fuzzy
-msgid "Contains a pointer to the currently selected record"
-msgstr "Mewnosod un rhes wag uwchben yr un wedi'i dewis ar hyn o bryd"
-
-#: widget/tableview/kexitableview.cpp:122
-#, fuzzy
-msgid "Record navigator"
-msgstr "Mordwywr cywaith"
-
-#: widget/tableview/kexitableview.cpp:242
-msgid "Add Record"
-msgstr "Ychwanegu Cofnod"
-
-#: widget/tableview/kexitableview.cpp:245
-msgid "Remove Record"
-msgstr "Dileu Cofnod"
 
 #: widget/utils/kexidatetimeformatter.cpp:303
 msgid "pm"
