@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-14 04:28+0200\n"
+"POT-Creation-Date: 2011-08-28 04:18+0200\n"
 "PO-Revision-Date: 2004-08-16 18:16+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -913,6 +913,28 @@ msgstr ""
 msgid "Michael Johnson"
 msgstr ""
 
+#: part/KWOdfLoader.cpp:86
+#, fuzzy
+#| msgid "Invalid OASIS OpenDocument file. No office:body tag found."
+msgid "Invalid OpenDocument file. No office:body tag found."
+msgstr "Dogfen OASIS OpenDocument annilys.  Ni chanfuwyd y tag office:body."
+
+#: part/KWOdfLoader.cpp:98
+#, fuzzy
+#| msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
+msgid "Invalid OpenDocument file. No tag found inside office:body."
+msgstr ""
+"Dogfen OASIS OpenDocument annilys.  Ni chanfuwyd tag tu mewn i office:body."
+
+#: part/KWOdfLoader.cpp:100
+#, kde-format
+msgid ""
+"This is not a word processing document, but %1. Please try opening it with "
+"the appropriate application."
+msgstr ""
+"Dim dogfen brosesu geiriau ydy hon, ond %1.  Ceisiwch ei hagor efo'r "
+"cymhwysiad dilys."
+
 #: part/KWDLoader.cpp:75
 msgid "Invalid document. No mimetype specified."
 msgstr "Dogfen annilys.  Ni phenodwyd math mime."
@@ -1022,6 +1044,11 @@ msgstr "Geometreg"
 msgid "Frame changes"
 msgstr "Cydamseru newidiadau"
 
+#: part/dialogs/KWStatistics.cpp:269
+#, kde-format
+msgid "approximately %1"
+msgstr "tua %1"
+
 #: part/dialogs/KWStatisticsDialog.cpp:29
 #: part/dockers/KWStatisticsDocker.cpp:35 part/KWView.cpp:385
 msgid "Statistics"
@@ -1041,11 +1068,6 @@ msgstr ""
 #| msgid "Frame Properties"
 msgid "Change Page Properties"
 msgstr "Priodweddau Fframiau"
-
-#: part/dialogs/KWStatistics.cpp:269
-#, kde-format
-msgid "approximately %1"
-msgstr "tua %1"
 
 #: part/dockers/KWRdfDocker.cpp:50
 msgid "RDF"
@@ -1314,6 +1336,80 @@ msgstr "Pen a Gwaelod Llwyd"
 #: part/main.cpp:31
 msgid "File to open"
 msgstr "Ffeil i agor"
+
+#: part/KWDocument.cpp:452
+#, fuzzy
+#| msgid "Copy%1-%2"
+msgid "Copy"
+msgstr "Copio %1-%2 "
+
+#: part/KWDocument.cpp:541
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Head 1"
+msgid "Head 1"
+msgstr "Pennawd 1"
+
+#: part/KWDocument.cpp:548
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Head 2"
+msgid "Head 2"
+msgstr "Pennawd 2"
+
+#: part/KWDocument.cpp:555
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Head 3"
+msgid "Head 3"
+msgstr "Pennawd 3"
+
+#: part/KWDocument.cpp:562
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Bullet List"
+msgid "Bullet List"
+msgstr "Rhestr efo Bwledi"
+
+#: part/KWDocument.cpp:896
+msgid "Can not find needed text component, KWord will quit now"
+msgstr ""
+
+#: part/KWDocument.cpp:897
+msgid "Installation Error"
+msgstr ""
+
+#: part/KWStatusBar.cpp:38
+msgid "Modified"
+msgstr ""
+
+#: part/KWStatusBar.cpp:39
+#, fuzzy
+#| msgid "Save Failed"
+msgid "Saved"
+msgstr "Methodd y cadw"
+
+#: part/KWStatusBar.cpp:40
+#, fuzzy, kde-format
+#| msgid "Page %1"
+msgid "Page: %1/%2"
+msgstr "Tudalen %1"
+
+#: part/KWStatusBar.cpp:62
+msgid "Page: current/total"
+msgstr ""
+
+#: part/KWStatusBar.cpp:79
+msgid "State: saved/modified"
+msgstr ""
+
+#: part/KWStatusBar.cpp:93
+msgid "Mouseposition: X:Y"
+msgstr ""
+
+#: part/KWStatusBar.cpp:106
+msgid "Zoom Controller"
+msgstr ""
 
 #: part/KWView.cpp:251
 #, fuzzy
@@ -1771,102 +1867,6 @@ msgstr ""
 #, fuzzy
 msgid "Create outlines"
 msgstr "Creu tabl"
-
-#: part/KWOdfLoader.cpp:86
-#, fuzzy
-#| msgid "Invalid OASIS OpenDocument file. No office:body tag found."
-msgid "Invalid OpenDocument file. No office:body tag found."
-msgstr "Dogfen OASIS OpenDocument annilys.  Ni chanfuwyd y tag office:body."
-
-#: part/KWOdfLoader.cpp:98
-#, fuzzy
-#| msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
-msgid "Invalid OpenDocument file. No tag found inside office:body."
-msgstr ""
-"Dogfen OASIS OpenDocument annilys.  Ni chanfuwyd tag tu mewn i office:body."
-
-#: part/KWOdfLoader.cpp:100
-#, kde-format
-msgid ""
-"This is not a word processing document, but %1. Please try opening it with "
-"the appropriate application."
-msgstr ""
-"Dim dogfen brosesu geiriau ydy hon, ond %1.  Ceisiwch ei hagor efo'r "
-"cymhwysiad dilys."
-
-#: part/KWDocument.cpp:452
-#, fuzzy
-#| msgid "Copy%1-%2"
-msgid "Copy"
-msgstr "Copio %1-%2 "
-
-#: part/KWDocument.cpp:541
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 1"
-msgid "Head 1"
-msgstr "Pennawd 1"
-
-#: part/KWDocument.cpp:548
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 2"
-msgid "Head 2"
-msgstr "Pennawd 2"
-
-#: part/KWDocument.cpp:555
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 3"
-msgid "Head 3"
-msgstr "Pennawd 3"
-
-#: part/KWDocument.cpp:562
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Bullet List"
-msgid "Bullet List"
-msgstr "Rhestr efo Bwledi"
-
-#: part/KWDocument.cpp:896
-msgid "Can not find needed text component, KWord will quit now"
-msgstr ""
-
-#: part/KWDocument.cpp:897
-msgid "Installation Error"
-msgstr ""
-
-#: part/KWStatusBar.cpp:38
-msgid "Modified"
-msgstr ""
-
-#: part/KWStatusBar.cpp:39
-#, fuzzy
-#| msgid "Save Failed"
-msgid "Saved"
-msgstr "Methodd y cadw"
-
-#: part/KWStatusBar.cpp:40
-#, fuzzy, kde-format
-#| msgid "Page %1"
-msgid "Page: %1/%2"
-msgstr "Tudalen %1"
-
-#: part/KWStatusBar.cpp:62
-msgid "Page: current/total"
-msgstr ""
-
-#: part/KWStatusBar.cpp:79
-msgid "State: saved/modified"
-msgstr ""
-
-#: part/KWStatusBar.cpp:93
-msgid "Mouseposition: X:Y"
-msgstr ""
-
-#: part/KWStatusBar.cpp:106
-msgid "Zoom Controller"
-msgstr ""
 
 #, fuzzy
 #~| msgid "Select All Frames"
