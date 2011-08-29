@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-13 03:45+0200\n"
+"POT-Creation-Date: 2011-08-29 04:01+0200\n"
 "PO-Revision-Date: 2004-09-07 14:22+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -43,6 +43,18 @@ msgstr ""
 #, fuzzy
 msgid "Paste Shapes"
 msgstr "Creu Patrymlun"
+
+#: flake/commands/KShapeGroupCommand.cpp:107
+#, fuzzy
+#| msgid "Current Section"
+msgid "Group Shapes"
+msgstr "Adran Gyfredol"
+
+#: flake/commands/KShapeGroupCommand.cpp:109
+#, fuzzy
+#| msgid "Add Group"
+msgid "Add Shapes to Group"
+msgstr "Ychwanegu Grŵp"
 
 #: flake/commands/KPathSegmentBreakCommand.cpp:40
 msgid "Break Subpath"
@@ -80,18 +92,6 @@ msgstr "Newid Ffiniau"
 #, fuzzy
 msgid "Distribute Shapes"
 msgstr "Creu Patrymlun"
-
-#: flake/commands/KShapeGroupCommand.cpp:107
-#, fuzzy
-#| msgid "Current Section"
-msgid "Group Shapes"
-msgstr "Adran Gyfredol"
-
-#: flake/commands/KShapeGroupCommand.cpp:109
-#, fuzzy
-#| msgid "Add Group"
-msgid "Add Shapes to Group"
-msgstr "Ychwanegu Grŵp"
 
 #: flake/commands/KShapeMoveCommand.cpp:42
 #, fuzzy
@@ -252,11 +252,6 @@ msgstr ""
 msgid "Zoom"
 msgstr ""
 
-#: flake/tools/KCreatePathToolFactory.cpp:33
-#, fuzzy
-msgid "Create Path"
-msgstr "Creu Patrymlun"
-
 #: flake/tools/KCreatePathTool.cpp:370 flake/tools/KPathTool.cpp:181
 msgid "Snapping"
 msgstr ""
@@ -270,6 +265,11 @@ msgstr ""
 #| msgid "Change Indent"
 msgid "Angle Constraints"
 msgstr "Newid Mewnoliad"
+
+#: flake/tools/KCreatePathToolFactory.cpp:33
+#, fuzzy
+msgid "Create Path"
+msgstr "Creu Patrymlun"
 
 #: flake/tools/KPathSegmentChangeStrategy.cpp:140
 #, fuzzy
@@ -504,17 +504,6 @@ msgstr "Sgriptiau"
 msgid "Collection"
 msgstr "Cwblhad"
 
-#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:158
-#, fuzzy, kde-format
-#| msgid "Hide %1"
-msgid "Slide %1"
-msgstr "Cuddio %1"
-
-#: kopageapp/KoPAPageThumbnailModel.cpp:69
-#, fuzzy, kde-format
-msgid "Page %1"
-msgstr "Dyddiad:"
-
 #: kopageapp/KoPADocumentStructureDocker.cpp:82 main/KoMainWindow.cpp:1710
 msgid "Document"
 msgstr "Dogfen"
@@ -642,38 +631,16 @@ msgstr "Cwmni"
 msgid "Paste"
 msgstr "Dyddiad"
 
-#: kopageapp/KoPADocumentModel.cpp:160
+#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:158
 #, fuzzy, kde-format
-msgid "Page  %1"
+#| msgid "Hide %1"
+msgid "Slide %1"
+msgstr "Cuddio %1"
+
+#: kopageapp/KoPAPageThumbnailModel.cpp:69
+#, fuzzy, kde-format
+msgid "Page %1"
 msgstr "Dyddiad:"
-
-#: kopageapp/KoPADocumentModel.cpp:167
-#, fuzzy
-#| msgid "Group:"
-msgid "Group"
-msgstr "Grŵp:"
-
-#: kopageapp/KoPADocumentModel.cpp:170
-#, fuzzy
-msgid "Shape"
-msgstr "Ton"
-
-#: kopageapp/KoPADocumentModel.cpp:283
-#, fuzzy
-#| msgid "Variable"
-msgid "Visible"
-msgstr "Newidyn"
-
-#: kopageapp/KoPADocumentModel.cpp:284
-#, fuzzy
-#| msgid "Loaded"
-msgid "Locked"
-msgstr "Wedi'i lwytho"
-
-#: kopageapp/KoPADocumentModel.cpp:497 kopageapp/KoPADocumentModel.cpp:518
-#, fuzzy
-msgid "Reparent shapes"
-msgstr "Dileu Testun"
 
 #: kopageapp/commands/KoPAChangeMasterPageCommand.cpp:35
 #, fuzzy
@@ -962,6 +929,39 @@ msgid_plural "Paste Pages"
 msgstr[0] "Gludo Testun"
 msgstr[1] "Gludo Testun"
 
+#: kopageapp/KoPADocumentModel.cpp:160
+#, fuzzy, kde-format
+msgid "Page  %1"
+msgstr "Dyddiad:"
+
+#: kopageapp/KoPADocumentModel.cpp:167
+#, fuzzy
+#| msgid "Group:"
+msgid "Group"
+msgstr "Grŵp:"
+
+#: kopageapp/KoPADocumentModel.cpp:170
+#, fuzzy
+msgid "Shape"
+msgstr "Ton"
+
+#: kopageapp/KoPADocumentModel.cpp:283
+#, fuzzy
+#| msgid "Variable"
+msgid "Visible"
+msgstr "Newidyn"
+
+#: kopageapp/KoPADocumentModel.cpp:284
+#, fuzzy
+#| msgid "Loaded"
+msgid "Locked"
+msgstr "Wedi'i lwytho"
+
+#: kopageapp/KoPADocumentModel.cpp:497 kopageapp/KoPADocumentModel.cpp:518
+#, fuzzy
+msgid "Reparent shapes"
+msgstr "Dileu Testun"
+
 #: kotext/KFindStrategy.cpp:63
 #, kde-format
 msgid "Found 1 match"
@@ -1011,23 +1011,6 @@ msgstr "Mewnosod Rhes"
 msgid "Insert Row Above"
 msgstr "Mewnosod Rhes"
 
-#: kotext/KoText.cpp:45
-msgctxt "Underline Style"
-msgid "None"
-msgstr "Dim"
-
-#: kotext/KoText.cpp:46
-#, fuzzy
-msgctxt "Underline Style"
-msgid "Single"
-msgstr "Sengl"
-
-#: kotext/KoText.cpp:47
-#, fuzzy
-msgctxt "Underline Style"
-msgid "Double"
-msgstr "Dwbl"
-
 #: kotext/KReplaceStrategy.cpp:58
 msgid ""
 "Found no match\n"
@@ -1049,12 +1032,22 @@ msgstr[1] "Amnewid Testun"
 msgid "Replace %1 with %2?"
 msgstr "Am&newid 1/2... gyda %1..."
 
-#. i18n: file: widgets/KoCsvImportDialog.ui:147
-#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
-#: kotext/KoTextEditor_p.h:93 kotext/KoTextEditor_p.h:130 rc.cpp:440
+#: kotext/KOdfText.cpp:45
+msgctxt "Underline Style"
+msgid "None"
+msgstr "Dim"
+
+#: kotext/KOdfText.cpp:46
 #, fuzzy
-msgid "Format"
-msgstr "Fformat Dyddiad"
+msgctxt "Underline Style"
+msgid "Single"
+msgstr "Sengl"
+
+#: kotext/KOdfText.cpp:47
+#, fuzzy
+msgctxt "Underline Style"
+msgid "Double"
+msgstr "Dwbl"
 
 #: kotext/InsertTextReferenceAction.cpp:36
 #: kotext/InsertTextReferenceAction.cpp:64
@@ -1075,6 +1068,13 @@ msgstr ""
 #, fuzzy, kde-format
 msgid "%1 Options"
 msgstr "Eithriadau"
+
+#. i18n: file: widgets/KoCsvImportDialog.ui:147
+#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
+#: kotext/KoTextEditor_p.h:93 kotext/KoTextEditor_p.h:130 rc.cpp:440
+#, fuzzy
+msgid "Format"
+msgstr "Fformat Dyddiad"
 
 #: kotext/KoTextEditor.cpp:111 kotext/KoTextEditor.cpp:167
 #: kotext/KoTextEditor.cpp:325 widgets/KoCsvImportDialog.cpp:216
@@ -3167,6 +3167,54 @@ msgstr "GwyrddGwan"
 msgid "Add/Remove Colors"
 msgstr "Gwaredu Colofn"
 
+#: widgets/KoPageLayoutWidget.cpp:178
+#, fuzzy
+#| msgid "Left:"
+msgid "Left Edge:"
+msgstr "Chwith:"
+
+#: widgets/KoPageLayoutWidget.cpp:179
+#, fuzzy
+#| msgid "Right:"
+msgid "Right Edge:"
+msgstr "De:"
+
+#: widgets/KoPageLayoutWidget.cpp:182
+#, fuzzy
+#| msgid "Last Printing"
+msgid "Binding Edge:"
+msgstr "Argraffiad Diwethaf"
+
+#: widgets/KoPageLayoutWidget.cpp:183
+#, fuzzy
+#| msgid "Page Size"
+msgid "Page Edge:"
+msgstr "Maint y Dudalen"
+
+#: widgets/KoPageLayoutWidget.cpp:279
+#, fuzzy
+msgid "Facing Pages:"
+msgstr "Ffitio i Dudalen"
+
+#. i18n: file: widgets/KoPageLayoutWidget.ui:143
+#. i18n: ectx: property (text), widget (QRadioButton, facingPages)
+#: widgets/KoPageLayoutWidget.cpp:280 rc.cpp:395
+#, fuzzy
+msgid "Facing pages"
+msgstr "Ffitio i Dudalen"
+
+#: widgets/KoPageLayoutWidget.cpp:282
+#, fuzzy
+#| msgid "Page Layout"
+msgid "Page Layout:"
+msgstr "Haenlun Dudalen"
+
+#: widgets/KoPageLayoutWidget.cpp:283
+#, fuzzy
+#| msgid "Page Preview"
+msgid "Page spread"
+msgstr "Rhagolwg Tudalen"
+
 #: widgets/KoPageLayoutDialog.cpp:47
 msgid "Page Layout"
 msgstr "Haenlun Dudalen"
@@ -3216,54 +3264,6 @@ msgstr ""
 #: widgets/KoZoomAction.cpp:279
 msgid "Zoom to All"
 msgstr ""
-
-#: widgets/KoPageLayoutWidget.cpp:178
-#, fuzzy
-#| msgid "Left:"
-msgid "Left Edge:"
-msgstr "Chwith:"
-
-#: widgets/KoPageLayoutWidget.cpp:179
-#, fuzzy
-#| msgid "Right:"
-msgid "Right Edge:"
-msgstr "De:"
-
-#: widgets/KoPageLayoutWidget.cpp:182
-#, fuzzy
-#| msgid "Last Printing"
-msgid "Binding Edge:"
-msgstr "Argraffiad Diwethaf"
-
-#: widgets/KoPageLayoutWidget.cpp:183
-#, fuzzy
-#| msgid "Page Size"
-msgid "Page Edge:"
-msgstr "Maint y Dudalen"
-
-#: widgets/KoPageLayoutWidget.cpp:279
-#, fuzzy
-msgid "Facing Pages:"
-msgstr "Ffitio i Dudalen"
-
-#. i18n: file: widgets/KoPageLayoutWidget.ui:143
-#. i18n: ectx: property (text), widget (QRadioButton, facingPages)
-#: widgets/KoPageLayoutWidget.cpp:280 rc.cpp:395
-#, fuzzy
-msgid "Facing pages"
-msgstr "Ffitio i Dudalen"
-
-#: widgets/KoPageLayoutWidget.cpp:282
-#, fuzzy
-#| msgid "Page Layout"
-msgid "Page Layout:"
-msgstr "Haenlun Dudalen"
-
-#: widgets/KoPageLayoutWidget.cpp:283
-#, fuzzy
-#| msgid "Page Preview"
-msgid "Page spread"
-msgstr "Rhagolwg Tudalen"
 
 #: widgets/KoZoomMode.cpp:26
 #, fuzzy
