@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-03 07:53+0200\n"
+"POT-Creation-Date: 2011-09-01 10:35+0200\n"
 "PO-Revision-Date: 2004-02-25 13:47+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -653,11 +653,195 @@ msgid_plural "<b>%1</b> messages (<b>%2</b> unread)"
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/manager.cpp:98 core/model.cpp:293
+#: core/item.cpp:228
+#, fuzzy
+#| msgctxt "Permissions"
+#| msgid "Read"
+msgctxt "Status of an item"
+msgid "Read"
+msgstr "Darllen"
+
+#: core/item.cpp:230
+#, fuzzy
+#| msgctxt "msg status"
+#| msgid "Unread"
+msgctxt "Status of an item"
+msgid "Unread"
+msgstr "Heb ei ddarllen"
+
+#: core/item.cpp:233
+#, fuzzy
+#| msgid "Has Attachment"
+msgctxt "Status of an item"
+msgid "Has Attachment"
+msgstr "Efo Atodiad"
+
+#: core/item.cpp:236
+#, fuzzy
+#| msgctxt "msg status"
+#| msgid "Replied"
+msgctxt "Status of an item"
+msgid "Replied"
+msgstr "Wedi ateb"
+
+#: core/item.cpp:239
+#, fuzzy
+#| msgctxt "msg status"
+#| msgid "Forwarded"
+msgctxt "Status of an item"
+msgid "Forwarded"
+msgstr "Wedi'i flaenyrru"
+
+#: core/item.cpp:242
+#, fuzzy
+#| msgid "Sent"
+msgctxt "Status of an item"
+msgid "Sent"
+msgstr "Anfonwyd"
+
+#: core/item.cpp:245
+#, fuzzy
+#| msgctxt "msg status"
+#| msgid "Important"
+msgctxt "Status of an item"
+msgid "Important"
+msgstr "Pwysig"
+
+#: core/item.cpp:248
+#, fuzzy
+msgctxt "Status of an item"
+msgid "Action Item"
+msgstr "Neges bwysig"
+
+#: core/item.cpp:251
+#, fuzzy
+#| msgid "Spam"
+msgctxt "Status of an item"
+msgid "Spam"
+msgstr "Ebostach"
+
+#: core/item.cpp:254
+#, fuzzy
+#| msgid "Ham"
+msgctxt "Status of an item"
+msgid "Ham"
+msgstr "Ebost iawn"
+
+#: core/item.cpp:257
+#, fuzzy
+#| msgctxt "msg status"
+#| msgid "Watched"
+msgctxt "Status of an item"
+msgid "Watched"
+msgstr "Gwylir"
+
+#: core/item.cpp:260
+#, fuzzy
+#| msgctxt "msg status"
+#| msgid "Ignored"
+msgctxt "Status of an item"
+msgid "Ignored"
+msgstr "Anwybyddir"
+
+#: core/model.cpp:290
+#, fuzzy
+msgid "Today"
+msgstr "I:"
+
+#: core/model.cpp:291
+#, fuzzy
+#| msgid "System &Tray"
+msgid "Yesterday"
+msgstr "B&ar Tasgau"
+
+#: core/model.cpp:293 core/manager.cpp:98
 #, fuzzy
 msgctxt "Unknown date"
 msgid "Unknown"
 msgstr "&Blaenyrru"
+
+#: core/model.cpp:294
+#, fuzzy
+#| msgid "Last Search"
+msgid "Last Week"
+msgstr "Chwiliad Diwethaf"
+
+#: core/model.cpp:295
+msgid "Two Weeks Ago"
+msgstr ""
+
+#: core/model.cpp:296
+msgid "Three Weeks Ago"
+msgstr ""
+
+#: core/model.cpp:297
+msgid "Four Weeks Ago"
+msgstr ""
+
+#: core/model.cpp:298
+msgid "Five Weeks Ago"
+msgstr ""
+
+#: core/model.cpp:512 utils/themeeditor.cpp:204
+#, fuzzy
+#| msgid "Receiver"
+msgid "Receiver"
+msgstr "Derbyniwr"
+
+#: core/model.cpp:513 utils/themeeditor.cpp:203
+msgid "Sender"
+msgstr "Anfonwr"
+
+#: core/model.cpp:1335
+#, fuzzy, kde-format
+#| msgctxt ""
+#| "%1: name; %2: number appended to it to make it unique among a list of "
+#| "names"
+#| msgid "%1 %2"
+msgctxt "Message Aggregation Group Header: Month name and Year number"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: core/model.cpp:3764
+#, fuzzy, kde-format
+#| msgid "&Thread Messages"
+msgid "Processed 1 Message of %2"
+msgid_plural "Processed %1 Messages of %2"
+msgstr[0] "&Edafu Negeseuon"
+msgstr[1] "&Edafu Negeseuon"
+
+#: core/model.cpp:3770 core/model.cpp:3776
+#, fuzzy, kde-format
+#| msgid "&Thread Messages"
+msgid "Threaded 1 Message of %2"
+msgid_plural "Threaded %1 Messages of %2"
+msgstr[0] "&Edafu Negeseuon"
+msgstr[1] "&Edafu Negeseuon"
+
+#: core/model.cpp:3782
+#, fuzzy, kde-format
+#| msgctxt "View->"
+#| msgid "&Expand Thread"
+msgid "Grouped 1 Thread of %2"
+msgid_plural "Grouped %1 Threads of %2"
+msgstr[0] "&Ehangu Edefyn"
+msgstr[1] "&Ehangu Edefyn"
+
+#: core/model.cpp:3788
+#, fuzzy, kde-format
+#| msgctxt "View->"
+#| msgid "&Expand Thread"
+msgid "Updated 1 Group of %2"
+msgid_plural "Updated %1 Groups of %2"
+msgstr[0] "&Ehangu Edefyn"
+msgstr[1] "&Ehangu Edefyn"
+
+#: core/model.cpp:3884
+#, fuzzy
+#| msgid "Ready."
+msgctxt "@info:status Finished view fill"
+msgid "Ready"
+msgstr "Parod."
 
 #: core/manager.cpp:320
 msgid "Current Activity, Threaded"
@@ -997,237 +1181,6 @@ msgstr "Rhestr Negeseuon"
 msgid "Folder Always Uses This Sort Order"
 msgstr ""
 
-#: core/item.cpp:228
-#, fuzzy
-#| msgctxt "Permissions"
-#| msgid "Read"
-msgctxt "Status of an item"
-msgid "Read"
-msgstr "Darllen"
-
-#: core/item.cpp:230
-#, fuzzy
-#| msgctxt "msg status"
-#| msgid "Unread"
-msgctxt "Status of an item"
-msgid "Unread"
-msgstr "Heb ei ddarllen"
-
-#: core/item.cpp:233
-#, fuzzy
-#| msgid "Has Attachment"
-msgctxt "Status of an item"
-msgid "Has Attachment"
-msgstr "Efo Atodiad"
-
-#: core/item.cpp:236
-#, fuzzy
-#| msgctxt "msg status"
-#| msgid "Replied"
-msgctxt "Status of an item"
-msgid "Replied"
-msgstr "Wedi ateb"
-
-#: core/item.cpp:239
-#, fuzzy
-#| msgctxt "msg status"
-#| msgid "Forwarded"
-msgctxt "Status of an item"
-msgid "Forwarded"
-msgstr "Wedi'i flaenyrru"
-
-#: core/item.cpp:242
-#, fuzzy
-#| msgid "Sent"
-msgctxt "Status of an item"
-msgid "Sent"
-msgstr "Anfonwyd"
-
-#: core/item.cpp:245
-#, fuzzy
-#| msgctxt "msg status"
-#| msgid "Important"
-msgctxt "Status of an item"
-msgid "Important"
-msgstr "Pwysig"
-
-#: core/item.cpp:248
-#, fuzzy
-msgctxt "Status of an item"
-msgid "Action Item"
-msgstr "Neges bwysig"
-
-#: core/item.cpp:251
-#, fuzzy
-#| msgid "Spam"
-msgctxt "Status of an item"
-msgid "Spam"
-msgstr "Ebostach"
-
-#: core/item.cpp:254
-#, fuzzy
-#| msgid "Ham"
-msgctxt "Status of an item"
-msgid "Ham"
-msgstr "Ebost iawn"
-
-#: core/item.cpp:257
-#, fuzzy
-#| msgctxt "msg status"
-#| msgid "Watched"
-msgctxt "Status of an item"
-msgid "Watched"
-msgstr "Gwylir"
-
-#: core/item.cpp:260
-#, fuzzy
-#| msgctxt "msg status"
-#| msgid "Ignored"
-msgctxt "Status of an item"
-msgid "Ignored"
-msgstr "Anwybyddir"
-
-#: core/model.cpp:290
-#, fuzzy
-msgid "Today"
-msgstr "I:"
-
-#: core/model.cpp:291
-#, fuzzy
-#| msgid "System &Tray"
-msgid "Yesterday"
-msgstr "B&ar Tasgau"
-
-#: core/model.cpp:294
-#, fuzzy
-#| msgid "Last Search"
-msgid "Last Week"
-msgstr "Chwiliad Diwethaf"
-
-#: core/model.cpp:295
-msgid "Two Weeks Ago"
-msgstr ""
-
-#: core/model.cpp:296
-msgid "Three Weeks Ago"
-msgstr ""
-
-#: core/model.cpp:297
-msgid "Four Weeks Ago"
-msgstr ""
-
-#: core/model.cpp:298
-msgid "Five Weeks Ago"
-msgstr ""
-
-#: core/model.cpp:512 utils/themeeditor.cpp:204
-#, fuzzy
-#| msgid "Receiver"
-msgid "Receiver"
-msgstr "Derbyniwr"
-
-#: core/model.cpp:513 utils/themeeditor.cpp:203
-msgid "Sender"
-msgstr "Anfonwr"
-
-#: core/model.cpp:1335
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "%1: name; %2: number appended to it to make it unique among a list of "
-#| "names"
-#| msgid "%1 %2"
-msgctxt "Message Aggregation Group Header: Month name and Year number"
-msgid "%1 %2"
-msgstr "%1 %2"
-
-#: core/model.cpp:3764
-#, fuzzy, kde-format
-#| msgid "&Thread Messages"
-msgid "Processed 1 Message of %2"
-msgid_plural "Processed %1 Messages of %2"
-msgstr[0] "&Edafu Negeseuon"
-msgstr[1] "&Edafu Negeseuon"
-
-#: core/model.cpp:3770 core/model.cpp:3776
-#, fuzzy, kde-format
-#| msgid "&Thread Messages"
-msgid "Threaded 1 Message of %2"
-msgid_plural "Threaded %1 Messages of %2"
-msgstr[0] "&Edafu Negeseuon"
-msgstr[1] "&Edafu Negeseuon"
-
-#: core/model.cpp:3782
-#, fuzzy, kde-format
-#| msgctxt "View->"
-#| msgid "&Expand Thread"
-msgid "Grouped 1 Thread of %2"
-msgid_plural "Grouped %1 Threads of %2"
-msgstr[0] "&Ehangu Edefyn"
-msgstr[1] "&Ehangu Edefyn"
-
-#: core/model.cpp:3788
-#, fuzzy, kde-format
-#| msgctxt "View->"
-#| msgid "&Expand Thread"
-msgid "Updated 1 Group of %2"
-msgid_plural "Updated %1 Groups of %2"
-msgstr[0] "&Ehangu Edefyn"
-msgstr[1] "&Ehangu Edefyn"
-
-#: core/model.cpp:3884
-#, fuzzy
-#| msgid "Ready."
-msgctxt "@info:status Finished view fill"
-msgid "Ready"
-msgstr "Parod."
-
-#: utils/aggregationeditor.cpp:47
-#, fuzzy
-#| msgctxt "View->"
-#| msgid "&Expand Thread"
-msgid "Groups && Threading"
-msgstr "&Ehangu Edefyn"
-
-#: utils/aggregationeditor.cpp:51
-#, fuzzy
-#| msgid "&Groupware"
-msgid "Grouping:"
-msgstr "&Cylchwedd"
-
-#: utils/aggregationeditor.cpp:58
-#, fuzzy
-#| msgid "Send policy:"
-msgid "Group expand policy:"
-msgstr "Polisi anfon:"
-
-#: utils/aggregationeditor.cpp:62
-#, fuzzy
-msgid "Threading:"
-msgstr "&Anfon"
-
-#: utils/aggregationeditor.cpp:69
-#, fuzzy
-#| msgid "&Thread Messages"
-msgid "Thread leader:"
-msgstr "&Edafu Negeseuon"
-
-#: utils/aggregationeditor.cpp:73
-#, fuzzy
-#| msgid "Send policy:"
-msgid "Thread expand policy:"
-msgstr "Polisi anfon:"
-
-#: utils/aggregationeditor.cpp:82
-#, fuzzy
-#| msgid "Advanced"
-msgctxt "@title:tab Advanced settings tab for aggregation mode"
-msgid "Advanced"
-msgstr "Uwch"
-
-#: utils/aggregationeditor.cpp:86
-msgid "Fill view strategy:"
-msgstr ""
-
 #: utils/configureaggregationsdialog.cpp:98
 msgid "Customize Message Aggregation Modes"
 msgstr ""
@@ -1286,6 +1239,53 @@ msgstr "Heb ei enwi"
 #| msgid "View Columns"
 msgid "New Column"
 msgstr "Gwled Colofnau"
+
+#: utils/aggregationeditor.cpp:47
+#, fuzzy
+#| msgctxt "View->"
+#| msgid "&Expand Thread"
+msgid "Groups && Threading"
+msgstr "&Ehangu Edefyn"
+
+#: utils/aggregationeditor.cpp:51
+#, fuzzy
+#| msgid "&Groupware"
+msgid "Grouping:"
+msgstr "&Cylchwedd"
+
+#: utils/aggregationeditor.cpp:58
+#, fuzzy
+#| msgid "Send policy:"
+msgid "Group expand policy:"
+msgstr "Polisi anfon:"
+
+#: utils/aggregationeditor.cpp:62
+#, fuzzy
+msgid "Threading:"
+msgstr "&Anfon"
+
+#: utils/aggregationeditor.cpp:69
+#, fuzzy
+#| msgid "&Thread Messages"
+msgid "Thread leader:"
+msgstr "&Edafu Negeseuon"
+
+#: utils/aggregationeditor.cpp:73
+#, fuzzy
+#| msgid "Send policy:"
+msgid "Thread expand policy:"
+msgstr "Polisi anfon:"
+
+#: utils/aggregationeditor.cpp:82
+#, fuzzy
+#| msgid "Advanced"
+msgctxt "@title:tab Advanced settings tab for aggregation mode"
+msgid "Advanced"
+msgstr "Uwch"
+
+#: utils/aggregationeditor.cpp:86
+msgid "Fill view strategy:"
+msgstr ""
 
 #: utils/optionseteditor.cpp:40
 #, fuzzy
@@ -1559,37 +1559,6 @@ msgid_plural " pixels"
 msgstr[0] ""
 msgstr[1] ""
 
-#: widget.cpp:97
-#, fuzzy
-msgid "Show Quick Search Bar"
-msgstr "Chwiliad Diwethaf"
-
-#: widget.cpp:312
-#, fuzzy
-#| msgctxt "View->"
-#| msgid "Ex&pand All Threads"
-msgid "Expand All Groups"
-msgstr "Ehangu &Pob Edefyn"
-
-#: widget.cpp:316
-#, fuzzy
-#| msgctxt "View->"
-#| msgid "C&ollapse All Threads"
-msgid "Collapse All Groups"
-msgstr "Dad-ehangu Po&b Edefyn"
-
-#: widget.cpp:380
-msgid "&Move Here"
-msgstr "&Symud Yma"
-
-#: widget.cpp:381
-msgid "&Copy Here"
-msgstr "&Copïo Yma"
-
-#: widget.cpp:383
-msgid "C&ancel"
-msgstr "Didd&ymu"
-
 #: pane.cpp:112
 msgctxt "@info:tooltip"
 msgid "Open a new tab"
@@ -1644,6 +1613,37 @@ msgstr "Dim Pwnc"
 msgctxt "displayed when a mail has unknown sender, receiver or date"
 msgid "Unknown"
 msgstr "Anhysbys"
+
+#: widget.cpp:97
+#, fuzzy
+msgid "Show Quick Search Bar"
+msgstr "Chwiliad Diwethaf"
+
+#: widget.cpp:312
+#, fuzzy
+#| msgctxt "View->"
+#| msgid "Ex&pand All Threads"
+msgid "Expand All Groups"
+msgstr "Ehangu &Pob Edefyn"
+
+#: widget.cpp:316
+#, fuzzy
+#| msgctxt "View->"
+#| msgid "C&ollapse All Threads"
+msgid "Collapse All Groups"
+msgstr "Dad-ehangu Po&b Edefyn"
+
+#: widget.cpp:380
+msgid "&Move Here"
+msgstr "&Symud Yma"
+
+#: widget.cpp:381
+msgid "&Copy Here"
+msgstr "&Copïo Yma"
+
+#: widget.cpp:383
+msgid "C&ancel"
+msgstr "Didd&ymu"
 
 #. i18n: file: core/settings.kcfg:10
 #. i18n: ectx: label, entry (MessageToolTipEnabled), group (MessageListView)
