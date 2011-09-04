@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-26 02:20+0200\n"
+"POT-Creation-Date: 2011-09-04 02:14+0200\n"
 "PO-Revision-Date: 2004-08-16 18:16+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -829,47 +829,23 @@ msgstr "Canlyniad Gwirio Sillafu"
 msgid "Change Variable To"
 msgstr "Newid Newidyn i"
 
-#: part/KWDocument.cpp:487
-#, fuzzy
-#| msgid "Copy%1-%2"
-msgid "Copy"
-msgstr "Copio %1-%2 "
+#: part/KWOdfLoader.cpp:88
+msgid "Invalid OASIS OpenDocument file. No office:body tag found."
+msgstr "Dogfen OASIS OpenDocument annilys.  Ni chanfuwyd y tag office:body."
 
-#: part/KWDocument.cpp:532
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 1"
-msgid "Head 1"
-msgstr "Pennawd 1"
-
-#: part/KWDocument.cpp:539
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 2"
-msgid "Head 2"
-msgstr "Pennawd 2"
-
-#: part/KWDocument.cpp:546
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 3"
-msgid "Head 3"
-msgstr "Pennawd 3"
-
-#: part/KWDocument.cpp:553
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Bullet List"
-msgid "Bullet List"
-msgstr "Rhestr efo Bwledi"
-
-#: part/KWDocument.cpp:778
-msgid "Can not find needed text component, Words will quit now"
+#: part/KWOdfLoader.cpp:100
+msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
 msgstr ""
+"Dogfen OASIS OpenDocument annilys.  Ni chanfuwyd tag tu mewn i office:body."
 
-#: part/KWDocument.cpp:779
-msgid "Installation Error"
+#: part/KWOdfLoader.cpp:102
+#, kde-format
+msgid ""
+"This is not a word processing document, but %1. Please try opening it with "
+"the appropriate application."
 msgstr ""
+"Dim dogfen brosesu geiriau ydy hon, ond %1.  Ceisiwch ei hagor efo'r "
+"cymhwysiad dilys."
 
 #: part/KWStatusBar.cpp:48
 msgid "Modified"
@@ -1878,23 +1854,47 @@ msgstr "Creu Copi Cysylltiedig"
 msgid "Insert Image Options"
 msgstr "Mewnosod Tudalen"
 
-#: part/KWOdfLoader.cpp:88
-msgid "Invalid OASIS OpenDocument file. No office:body tag found."
-msgstr "Dogfen OASIS OpenDocument annilys.  Ni chanfuwyd y tag office:body."
+#: part/KWDocument.cpp:487
+#, fuzzy
+#| msgid "Copy%1-%2"
+msgid "Copy"
+msgstr "Copio %1-%2 "
 
-#: part/KWOdfLoader.cpp:100
-msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
-msgstr ""
-"Dogfen OASIS OpenDocument annilys.  Ni chanfuwyd tag tu mewn i office:body."
+#: part/KWDocument.cpp:532
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Head 1"
+msgid "Head 1"
+msgstr "Pennawd 1"
 
-#: part/KWOdfLoader.cpp:102
-#, kde-format
-msgid ""
-"This is not a word processing document, but %1. Please try opening it with "
-"the appropriate application."
+#: part/KWDocument.cpp:539
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Head 2"
+msgid "Head 2"
+msgstr "Pennawd 2"
+
+#: part/KWDocument.cpp:546
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Head 3"
+msgid "Head 3"
+msgstr "Pennawd 3"
+
+#: part/KWDocument.cpp:553
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Bullet List"
+msgid "Bullet List"
+msgstr "Rhestr efo Bwledi"
+
+#: part/KWDocument.cpp:778
+msgid "Can not find needed text component, Words will quit now"
 msgstr ""
-"Dim dogfen brosesu geiriau ydy hon, ond %1.  Ceisiwch ei hagor efo'r "
-"cymhwysiad dilys."
+
+#: part/KWDocument.cpp:779
+msgid "Installation Error"
+msgstr ""
 
 #: part/KWAboutData.h:27
 #, fuzzy
