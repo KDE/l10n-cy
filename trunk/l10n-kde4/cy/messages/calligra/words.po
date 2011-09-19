@@ -6,11 +6,18 @@
 # KD at Kyfieithu <kyfieithu@dotmon.com>, 2004.
 #
 #
+#: part/dialogs/KWAnchoringProperties.cpp:399
+#: part/dialogs/KWAnchoringProperties.cpp:400
+#: part/dialogs/KWAnchoringProperties.cpp:406
+#: part/dialogs/KWAnchoringProperties.cpp:414
+#: part/dialogs/KWAnchoringProperties.cpp:415
+#: part/dialogs/KWAnchoringProperties.cpp:416
+#: part/dialogs/KWAnchoringProperties.cpp:417
 msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-06 02:31+0200\n"
+"POT-Creation-Date: 2011-09-19 02:34+0200\n"
 "PO-Revision-Date: 2004-08-16 18:16+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -249,7 +256,8 @@ msgstr "Ymysgogol"
 
 #. i18n: file: part/dialogs/KWInsertInlineNoteDialog.ui:32
 #. i18n: ectx: property (text), widget (QRadioButton, characterNumbering)
-#: rc.cpp:108
+#: rc.cpp:108 part/dialogs/KWAnchoringProperties.cpp:398
+#: part/dialogs/KWAnchoringProperties.cpp:409
 #, fuzzy
 #| msgid "Create"
 msgid "Character"
@@ -323,7 +331,7 @@ msgstr "Dileu Rhes"
 
 #. i18n: file: part/dialogs/KWStatistics.ui:24
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:141
+#: rc.cpp:141 part/dialogs/KWFrameDialog.cpp:37
 msgid "General"
 msgstr "Cyffredinol"
 
@@ -405,7 +413,7 @@ msgstr "Nodau heb fylchau:"
 #. i18n: ectx: property (text), widget (QLabel, label_21)
 #. i18n: file: part/dockers/KWStatisticsDocker.ui:51
 #. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:180 rc.cpp:321
+#: rc.cpp:180 rc.cpp:372
 #, fuzzy
 #| msgid "&Formatting Characters"
 msgid "East Asian characters"
@@ -521,7 +529,7 @@ msgstr "Colofnau"
 
 #. i18n: file: part/dialogs/KWStartupWidget.ui:71
 #. i18n: ectx: property (text), widget (QPushButton, createButton)
-#: rc.cpp:225 part/KWView.cpp:330
+#: rc.cpp:225 part/KWView.cpp:327
 msgid "Create"
 msgstr "Creu"
 
@@ -640,11 +648,111 @@ msgstr "Gwaelod:"
 msgid "Text Wrap-around"
 msgstr "Rhedeg y Testun o Gwmpas"
 
+#. i18n: file: part/dialogs/KWAnchoringProperties.ui:17
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: rc.cpp:297
+msgid "Shape relation to text is:"
+msgstr ""
+
+#. i18n: file: part/dialogs/KWAnchoringProperties.ui:23
+#. i18n: ectx: property (text), widget (QRadioButton, rAnchorAsCharacter)
+#: rc.cpp:300
+msgid "Inline with text (behaves as a character)"
+msgstr ""
+
+#. i18n: file: part/dialogs/KWAnchoringProperties.ui:30
+#. i18n: ectx: property (text), widget (QRadioButton, rAnchorToCharacter)
+#: rc.cpp:303
+msgid "Floating, but anchored to a character position"
+msgstr ""
+
+#. i18n: file: part/dialogs/KWAnchoringProperties.ui:37
+#. i18n: ectx: property (text), widget (QRadioButton, rAnchorParagraph)
+#: rc.cpp:306
+msgid "Floating, but anchored to a paragraph"
+msgstr ""
+
+#. i18n: file: part/dialogs/KWAnchoringProperties.ui:44
+#. i18n: ectx: property (text), widget (QRadioButton, rAnchorPage)
+#: rc.cpp:309
+msgid "Floating free (not anchored to text)"
+msgstr ""
+
+#. i18n: file: part/dialogs/KWAnchoringProperties.ui:54
+#. i18n: ectx: property (title), widget (QGroupBox, grpVert)
+#: rc.cpp:312
+#, fuzzy
+#| msgid "Vertical Lines"
+msgid "Vertical Positioning"
+msgstr "Llinellau Fertigol"
+
+#. i18n: file: part/dialogs/KWAnchoringProperties.ui:60
+#. i18n: ectx: property (text), widget (QRadioButton, rTop)
+#: rc.cpp:315
+msgid "Top align with:"
+msgstr ""
+
+#. i18n: file: part/dialogs/KWAnchoringProperties.ui:77
+#. i18n: ectx: property (text), widget (QRadioButton, rVCenter)
+#. i18n: file: part/dialogs/KWAnchoringProperties.ui:186
+#. i18n: ectx: property (text), widget (QRadioButton, rHCenter)
+#: rc.cpp:318 rc.cpp:336
+msgid "Center align with:"
+msgstr ""
+
+#. i18n: file: part/dialogs/KWAnchoringProperties.ui:87
+#. i18n: ectx: property (text), widget (QRadioButton, rBottom)
+#: rc.cpp:321
+msgid "Bottom align with:"
+msgstr ""
+
+#. i18n: file: part/dialogs/KWAnchoringProperties.ui:97
+#. i18n: ectx: property (text), widget (QRadioButton, rVOffset)
+#. i18n: file: part/dialogs/KWAnchoringProperties.ui:206
+#. i18n: ectx: property (text), widget (QRadioButton, rHOffset)
+#: rc.cpp:324 rc.cpp:342
+msgid "Offset"
+msgstr ""
+
+#. i18n: file: part/dialogs/KWAnchoringProperties.ui:119
+#. i18n: ectx: property (text), widget (QLabel, lVOffset)
+#. i18n: file: part/dialogs/KWAnchoringProperties.ui:228
+#. i18n: ectx: property (text), widget (QLabel, lHOffset)
+#: rc.cpp:327 rc.cpp:345
+#, fuzzy
+#| msgid "From:"
+msgid "from:"
+msgstr "O:"
+
+#. i18n: file: part/dialogs/KWAnchoringProperties.ui:163
+#. i18n: ectx: property (title), widget (QGroupBox, grpHoriz)
+#: rc.cpp:330
+#, fuzzy
+#| msgid "Horizontal Lines"
+msgid "Horizontal Positioning"
+msgstr "Llinellau Llorweddol"
+
+#. i18n: file: part/dialogs/KWAnchoringProperties.ui:169
+#. i18n: ectx: property (text), widget (QRadioButton, rLeft)
+#: rc.cpp:333
+#, fuzzy
+#| msgid "Left-Align Text"
+msgid "Left align with:"
+msgstr "Alinio Testun i'r Chwith"
+
+#. i18n: file: part/dialogs/KWAnchoringProperties.ui:196
+#. i18n: ectx: property (text), widget (QRadioButton, rRight)
+#: rc.cpp:339
+#, fuzzy
+#| msgid "Right-Align Text"
+msgid "Right align with:"
+msgstr "Alinio Testun i'r Dde"
+
 #. i18n: file: part/dockers/KWRdfDocker.ui:34
 #. i18n: ectx: property (text), widget (QCheckBox, autoRefresh)
 #. i18n: file: part/dockers/KWStatisticsDocker.ui:87
 #. i18n: ectx: property (text), widget (QCheckBox, autoRefresh)
-#: rc.cpp:297 rc.cpp:330
+#: rc.cpp:348 rc.cpp:381
 #, fuzzy
 #| msgid "Automatic hyphenation"
 msgid "Automatically update"
@@ -652,13 +760,13 @@ msgstr "Cysylltnodi ymysgogol"
 
 #. i18n: file: part/dockers/KWRdfDocker.ui:41
 #. i18n: ectx: property (text), widget (QToolButton, refresh)
-#: rc.cpp:300
+#: rc.cpp:351
 msgid "update"
 msgstr ""
 
 #. i18n: file: part/dockers/KWStatisticsDocker.ui:21
 #. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:303
+#: rc.cpp:354
 #, fuzzy
 #| msgid "Words:"
 msgctxt "not application name"
@@ -667,7 +775,7 @@ msgstr "Geiriau:"
 
 #. i18n: file: part/dockers/KWStatisticsDocker.ui:26
 #. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:306
+#: rc.cpp:357
 #, fuzzy
 #| msgid "Sentences:"
 msgid "Sentences"
@@ -675,7 +783,7 @@ msgstr "Brawddegau:"
 
 #. i18n: file: part/dockers/KWStatisticsDocker.ui:31
 #. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:309
+#: rc.cpp:360
 #, fuzzy
 #| msgid "Syllables:"
 msgid "Syllables"
@@ -683,7 +791,7 @@ msgstr "Sillafau:"
 
 #. i18n: file: part/dockers/KWStatisticsDocker.ui:36
 #. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:312
+#: rc.cpp:363
 #, fuzzy
 #| msgid "Lines:"
 msgid "Lines"
@@ -691,7 +799,7 @@ msgstr "Llinellau:"
 
 #. i18n: file: part/dockers/KWStatisticsDocker.ui:41
 #. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:315
+#: rc.cpp:366
 #, fuzzy
 #| msgid "Characters including spaces:"
 msgid "Characters incl. spaces"
@@ -699,7 +807,7 @@ msgstr "Nodau yn cynnwys bylchau:"
 
 #. i18n: file: part/dockers/KWStatisticsDocker.ui:46
 #. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:318
+#: rc.cpp:369
 #, fuzzy
 #| msgid "Characters without spaces:"
 msgid "Characters without spaces"
@@ -707,7 +815,7 @@ msgstr "Nodau heb fylchau:"
 
 #. i18n: file: part/dockers/KWStatisticsDocker.ui:56
 #. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:324
+#: rc.cpp:375
 #, fuzzy
 #| msgid "Flesch reading ease:"
 msgid "Flesch reading ease"
@@ -715,7 +823,7 @@ msgstr "Hawster darllen Flesch:"
 
 #. i18n: file: part/dockers/KWStatisticsDocker.ui:80
 #. i18n: ectx: property (text), widget (QToolButton, refresh)
-#: rc.cpp:327
+#: rc.cpp:378
 #, fuzzy
 #| msgid "New..."
 msgid "..."
@@ -723,7 +831,7 @@ msgstr "Newydd ..."
 
 #. i18n: file: part/dockers/KWStatisticsDocker.ui:94
 #. i18n: ectx: property (text), widget (QCheckBox, footEndNotes)
-#: rc.cpp:333
+#: rc.cpp:384
 msgid "Only count main text"
 msgstr ""
 
@@ -731,7 +839,7 @@ msgstr ""
 #. i18n: ectx: Menu (file)
 #. i18n: file: part/words.rc:3
 #. i18n: ectx: Menu (file)
-#: rc.cpp:336 rc.cpp:351
+#: rc.cpp:387 rc.cpp:402
 #, fuzzy
 msgid "&File"
 msgstr "&Hidlo gan:"
@@ -740,7 +848,7 @@ msgstr "&Hidlo gan:"
 #. i18n: ectx: Menu (edit)
 #. i18n: file: part/words.rc:8
 #. i18n: ectx: Menu (edit)
-#: rc.cpp:339 rc.cpp:354
+#: rc.cpp:390 rc.cpp:405
 #, fuzzy
 msgid "&Edit"
 msgstr "&Diweddnodyn"
@@ -749,7 +857,7 @@ msgstr "&Diweddnodyn"
 #. i18n: ectx: Menu (view)
 #. i18n: file: part/words.rc:30
 #. i18n: ectx: Menu (view)
-#: rc.cpp:342 rc.cpp:357
+#: rc.cpp:393 rc.cpp:408
 #, fuzzy
 msgid "&View"
 msgstr "&Newydd"
@@ -758,74 +866,74 @@ msgstr "&Newydd"
 #. i18n: ectx: Menu (view_displaymodes)
 #. i18n: file: part/words.rc:35
 #. i18n: ectx: Menu (view)
-#: rc.cpp:345 rc.cpp:360
+#: rc.cpp:396 rc.cpp:411
 msgid "&Display Mode"
 msgstr "Modd &Arddangos"
 
 #. i18n: file: part/words_readonly.rc:29
 #. i18n: ectx: Menu (tools)
-#. i18n: file: part/words.rc:101
+#. i18n: file: part/words.rc:96
 #. i18n: ectx: Menu (tools)
-#: rc.cpp:348 rc.cpp:372
+#: rc.cpp:399 rc.cpp:423
 msgid "&Tools"
 msgstr ""
 
 #. i18n: file: part/words.rc:54
 #. i18n: ectx: Menu (insert)
-#: rc.cpp:363
+#: rc.cpp:414
 msgctxt "Insert menu"
 msgid "&Insert"
 msgstr "&Mewnosod"
 
 #. i18n: file: part/words.rc:67
 #. i18n: ectx: Menu (semantic_object_menu)
-#: rc.cpp:366
+#: rc.cpp:417
 msgid "Semantic Object"
 msgstr ""
 
-#. i18n: file: part/words.rc:85
+#. i18n: file: part/words.rc:80
 #. i18n: ectx: Menu (format)
-#: rc.cpp:369
+#: rc.cpp:420
 msgid "F&ormat"
 msgstr "Ff&ormat"
 
-#. i18n: file: part/words.rc:102
+#. i18n: file: part/words.rc:97
 #. i18n: ectx: Menu (SpellCheck)
-#: rc.cpp:375
+#: rc.cpp:426
 msgid "Spellcheck"
 msgstr "Gwirio Sillafu"
 
-#. i18n: file: part/words.rc:108
+#. i18n: file: part/words.rc:103
 #. i18n: ectx: Menu (Changes)
-#: rc.cpp:378
+#: rc.cpp:429
 #, fuzzy
 #| msgid "Change Link"
 msgid "Change Tracking"
 msgstr "Newid Cysylltiad"
 
-#. i18n: file: part/words.rc:122
+#. i18n: file: part/words.rc:117
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:381
+#: rc.cpp:432
 #, fuzzy
 msgid "&Settings"
 msgstr "Gosodiadau Amrywiol"
 
-#. i18n: file: part/words.rc:133
+#. i18n: file: part/words.rc:128
 #. i18n: ectx: ToolBar (edit_toolbar)
-#: rc.cpp:384
+#: rc.cpp:435
 #, fuzzy
 msgid "Edit"
 msgstr "Trefnu Testun"
 
-#. i18n: file: part/words.rc:192
+#. i18n: file: part/words.rc:187
 #. i18n: ectx: Menu (check_spell_list)
-#: rc.cpp:387
+#: rc.cpp:438
 msgid "Spell Check Result"
 msgstr "Canlyniad Gwirio Sillafu"
 
-#. i18n: file: part/words.rc:221
+#. i18n: file: part/words.rc:216
 #. i18n: ectx: Menu (variable_list)
-#: rc.cpp:390
+#: rc.cpp:441
 msgid "Change Variable To"
 msgstr "Newid Newidyn i"
 
@@ -911,27 +1019,26 @@ msgstr ""
 msgid "Zoom Controller"
 msgstr ""
 
-#: part/KWView.cpp:256
+#: part/KWView.cpp:253
 #, fuzzy
-#| msgid "F&rame/Frameset Properties"
-msgid "Frame/Frameset Properties"
-msgstr "Priodweddau Ff&râm/Set Fframiau..."
+#| msgid "Frame Properties"
+msgid "Shape Properties..."
+msgstr "Priodweddau Fframiau"
 
-#: part/KWView.cpp:258
-#, fuzzy
-msgid "Alter frameset properties"
-msgstr "Addasu priodweddau set fframiau."
+#: part/KWView.cpp:255
+msgid "Change how the shape behave"
+msgstr ""
 
-#: part/KWView.cpp:266
+#: part/KWView.cpp:263
 msgid "Page Break"
 msgstr "Toriad Tudalen"
 
-#: part/KWView.cpp:267
+#: part/KWView.cpp:264
 #, fuzzy
 msgid "Force the remainder of the text into the next page"
 msgstr "Gorfodi gweddill y testun i mewn i'r dudalen nesaf."
 
-#: part/KWView.cpp:268
+#: part/KWView.cpp:265
 #, fuzzy
 #| msgid ""
 #| "This inserts a non-printing character at the current cursor position. All "
@@ -941,22 +1048,22 @@ msgstr ""
 "Mae hyn yn mewnosod nod di-argraffu wrth leoliad cyfredol y cyrchydd.  Bydd "
 "pob testun ar ôl y pwynt yma yn cael ei symud i mewn i'r dudalen nesaf."
 
-#: part/KWView.cpp:270
+#: part/KWView.cpp:267
 #, fuzzy
 msgid "Enable Document Headers"
 msgstr "Gwneud y Ddogfen yn Allanol"
 
-#: part/KWView.cpp:272
+#: part/KWView.cpp:269
 #, fuzzy
 msgid "Disable Document Headers"
 msgstr "Gwneud y Ddogfen yn Allanol"
 
-#: part/KWView.cpp:273
+#: part/KWView.cpp:270
 #, fuzzy
 msgid "Shows and hides header display"
 msgstr "Dangos/cuddio pennawd."
 
-#: part/KWView.cpp:274
+#: part/KWView.cpp:271
 #, fuzzy
 #| msgid ""
 #| "Selecting this option toggles the display of headers in KWord."
@@ -971,22 +1078,22 @@ msgstr ""
 "<br>Fframiau arbennig wrth ben pob tudalen yw penawdau, a all gynnwys rhifau "
 "tudalen neu wybodaeth arall."
 
-#: part/KWView.cpp:279
+#: part/KWView.cpp:276
 #, fuzzy
 msgid "Enable Document Footers"
 msgstr "Gwneud y Ddogfen yn Mewnol"
 
-#: part/KWView.cpp:281
+#: part/KWView.cpp:278
 #, fuzzy
 msgid "Disable Document Footers"
 msgstr "Gwneud y Ddogfen yn Allanol"
 
-#: part/KWView.cpp:282
+#: part/KWView.cpp:279
 #, fuzzy
 msgid "Shows and hides footer display"
 msgstr "Dangos/cuddio troedyn."
 
-#: part/KWView.cpp:283
+#: part/KWView.cpp:280
 #, fuzzy
 #| msgid ""
 #| "Selecting this option toggles the display of footers in KWord. "
@@ -994,127 +1101,137 @@ msgstr "Dangos/cuddio troedyn."
 #| "contain page numbers or other information."
 msgid ""
 "Selecting this option toggles the display of footers in Words. <br/><br/"
-">Footers are special frames at the bottom of each page which can contain "
+">Footers are special shapes at the bottom of each page which can contain "
 "page numbers or other information."
 msgstr ""
 "Bydd y dewisiad yma yn dangos neu guddio troedynnau yn KWord.  <br> "
 "<br>Fframiau arbennig wrth waelod pob tudalen yw troedynnau, a all gynnwys "
 "rhifau tudalen neu wybodaeth arall."
 
-#: part/KWView.cpp:288
+#: part/KWView.cpp:285
 msgid "Snap to Grid"
 msgstr "Snapio i'r Grid"
 
-#: part/KWView.cpp:293
-msgid "Raise Frame"
+#: part/KWView.cpp:290
+#, fuzzy
+#| msgid "Raise Frame"
+msgid "Raise Shape"
 msgstr "Codi'r Ffrâm"
 
-#: part/KWView.cpp:296
+#: part/KWView.cpp:293
+#, fuzzy
+#| msgid ""
+#| "Raise the currently selected frame so that it appears above all the other "
+#| "frames"
 msgid ""
-"Raise the currently selected frame so that it appears above all the other "
-"frames"
+"Raise the currently selected shape so that it appears above all the other "
+"shape"
 msgstr ""
 "Codi'r ffrâm a ddewisir yn gyfredol er mwyn iddi ymddangos uwchben pob ffrâm "
 "arall"
 
-#: part/KWView.cpp:298
+#: part/KWView.cpp:295
+#, fuzzy
+#| msgid ""
+#| "Raise the currently selected frame so that it appears above all the other "
+#| "frames. This is only useful if frames overlap each other. If multiple "
+#| "frames are selected they are all raised in turn."
 msgid ""
-"Raise the currently selected frame so that it appears above all the other "
-"frames. This is only useful if frames overlap each other. If multiple frames "
+"Raise the currently selected shape so that it appears above all the other "
+"shapes. This is only useful if shapes overlap each other. If multiple shapes "
 "are selected they are all raised in turn."
 msgstr ""
 "Codi'r ffrâm a ddewisir yn gyfredol er mwyn iddi ymddangos uwchben pob ffrâm "
 "arall.  Nid yw hyn yn ddefnyddiol ond os mae'r fframiau yn gorgyffwrdd eu "
 "gilydd.  Os dewisir fframiau lluosol, cânt eu codi i gyd yn eu tro."
 
-#: part/KWView.cpp:303
-msgid "Lower Frame"
+#: part/KWView.cpp:300
+#, fuzzy
+#| msgid "Lower Frame"
+msgid "Lower Shape"
 msgstr "Gostwng y Ffrâm"
 
-#: part/KWView.cpp:306
+#: part/KWView.cpp:303
+#, fuzzy
+#| msgid ""
+#| "Lower the currently selected frame so that it disappears under any frame "
+#| "that overlaps it"
 msgid ""
-"Lower the currently selected frame so that it disappears under any frame "
+"Lower the currently selected shape so that it disappears under any shape "
 "that overlaps it"
 msgstr ""
 "Gostwng y ffrâm a ddewisir yn gyfredol er mwyn iddi ddiflannu dan unrhyw "
 "ffrâm sy'n gorgyffwrdd â hi"
 
-#: part/KWView.cpp:308
+#: part/KWView.cpp:305
+#, fuzzy
+#| msgid ""
+#| "Lower the currently selected frame so that it disappears under any frame "
+#| "that overlaps it. If multiple frames are selected they are all lowered in "
+#| "turn."
 msgid ""
-"Lower the currently selected frame so that it disappears under any frame "
-"that overlaps it. If multiple frames are selected they are all lowered in "
+"Lower the currently selected shape so that it disappears under any shape "
+"that overlaps it. If multiple shape are selected they are all lowered in "
 "turn."
 msgstr ""
 "Gostwng y ffrâm a ddewisir yn gyfredol er mwyn iddi ddiflannu dan unrhyw "
 "ffrâm sy'n gorgyffwrdd â hi.  Os dewisir fframiau lluosol, cânt eu codi i "
 "gyd yn eu tro."
 
-#: part/KWView.cpp:312
+#: part/KWView.cpp:309
 msgid "Bring to Front"
 msgstr "Anfon i'r Blaen"
 
-#: part/KWView.cpp:316
+#: part/KWView.cpp:313
 msgid "Send to Back"
 msgstr "Anfon i'r Cefn"
 
-#: part/KWView.cpp:320
+#: part/KWView.cpp:317
 #, fuzzy
 #| msgid "&Variable"
 msgid "Variable"
 msgstr "&Newidyn"
 
-#: part/KWView.cpp:338
+#: part/KWView.cpp:335
 #, fuzzy
 #| msgid "&Bookmark..."
 msgid "Bookmark..."
 msgstr "&Tudnod..."
 
-#: part/KWView.cpp:343
+#: part/KWView.cpp:340
 #, fuzzy
 #| msgid "Select &Bookmark..."
 msgid "Select Bookmark..."
 msgstr "Dewis T&udnod..."
 
-#: part/KWView.cpp:344
+#: part/KWView.cpp:341
 #, fuzzy
 msgid "Bookmark"
 msgstr "&Tudnod..."
 
-#: part/KWView.cpp:350
-#, fuzzy
-#| msgid "P&icture..."
-msgid "Picture..."
-msgstr "Ll&un..."
-
-#: part/KWView.cpp:351
-#, fuzzy
-#| msgid "Insert picture inline"
-msgid "Insert a picture into document"
-msgstr "Mewnosod y llun mewnlein"
-
-#: part/KWView.cpp:355
+#: part/KWView.cpp:347
 #, fuzzy
 #| msgid "&Footnote/Endnote..."
 msgid "Footnote/Endnote..."
 msgstr "&Troednodyn/Diweddnodyn..."
 
-#: part/KWView.cpp:356
+#: part/KWView.cpp:348
 #, fuzzy
 msgid "Insert a footnote referencing the selected text"
 msgstr "Mewnosod troednodyn sy'n cyfeirio at y testun detholedig."
 
-#: part/KWView.cpp:360
+#: part/KWView.cpp:352
 #, fuzzy
 #| msgid "Frame &Borders"
 msgid "Page Borders"
 msgstr "Ffiniau &Ffrâm"
 
-#: part/KWView.cpp:361
+#: part/KWView.cpp:353
 #, fuzzy
 msgid "Turns the border display on and off"
 msgstr "Dangos/cuddio borderi."
 
-#: part/KWView.cpp:366
+#: part/KWView.cpp:358
 #, fuzzy
 #| msgid ""
 #| "Turns the border display on and off.<br><br>The borders are never "
@@ -1129,18 +1246,18 @@ msgstr ""
 "dewisiad yma o ddefnydd wrth weld sut bydd y ddogfen yn ymddangos ar y "
 "dudalen wedi'i hargraffu."
 
-#: part/KWView.cpp:368
+#: part/KWView.cpp:360
 #, fuzzy
 #| msgid "Page &Layout..."
 msgid "Page Layout..."
 msgstr "Haenlun Tu&dalen..."
 
-#: part/KWView.cpp:370
+#: part/KWView.cpp:362
 #, fuzzy
 msgid "Change properties of entire page"
 msgstr "Newid priodweddau tudalen gyfan."
 
-#: part/KWView.cpp:371
+#: part/KWView.cpp:363
 #, fuzzy
 #| msgid ""
 #| "Change properties of the entire page.<p>Currently you can change paper "
@@ -1152,101 +1269,77 @@ msgstr ""
 "Newid priodweddau'r dudalen gyfan.<p>Yn gyfredol, gallwch newid maint papur, "
 "cyfeiriadaeth y papur, maint y pennawd a'r troedyn, a gosodiadau colofn."
 
-#: part/KWView.cpp:375
+#: part/KWView.cpp:367
 #, fuzzy
 msgid "Semantic Stylesheets..."
 msgstr "Mewnforio Arddull..."
 
-#: part/KWView.cpp:377
+#: part/KWView.cpp:369
 msgid "Modify and add semantic stylesheets"
 msgstr ""
 
-#: part/KWView.cpp:378
+#: part/KWView.cpp:370
 msgid ""
 "Stylesheets are used to format contact, event, and location information "
 "which is stored in Rdf"
 msgstr ""
 
-#: part/KWView.cpp:382
-#, fuzzy
-#| msgid "Frame is inline"
-msgid "Make inline"
-msgstr "Mewnlein yw'r ffrâm"
-
-#: part/KWView.cpp:383
-#, fuzzy
-msgid "Convert current frame to an inline frame"
-msgstr "Trosi'r ffrâm gyfredol i ffrâm fewnlein."
-
-#: part/KWView.cpp:384
-msgid ""
-"Convert the current frame to an inline frame.<br><br>Place the inline frame "
-"within the text at the point nearest to the frames current position."
+#: part/KWView.cpp:374
+msgid "Anchor"
 msgstr ""
-"Trosi'r ffrâm gyfredol i ffrâm fewnlein. <br> <br>Lleoli'r ffrâm fewnlein tu "
-"mewn i'r testun wrth y pwynt sy'n agosaf i leoliad cyfredol y ffrâm."
 
-#: part/KWView.cpp:388
+#: part/KWView.cpp:377
 #, fuzzy
 #| msgid "Create"
 msgid "As Character"
 msgstr "Creu"
 
-#: part/KWView.cpp:389
+#: part/KWView.cpp:378
 #, fuzzy
 msgid "Anchor the current shape as a character in the text"
 msgstr "Mewnosod tabl cynnwys wrth leoliad cyfredol y cyrchydd."
 
-#: part/KWView.cpp:393
+#: part/KWView.cpp:383
 #, fuzzy
 #| msgid "Create"
 msgid "To Character"
 msgstr "Creu"
 
-#: part/KWView.cpp:394
+#: part/KWView.cpp:384
 #, fuzzy
 msgid "Anchor the current shape to the character at the current position"
 msgstr "Mewnosod tabl cynnwys wrth leoliad cyfredol y cyrchydd."
 
-#: part/KWView.cpp:398
+#: part/KWView.cpp:389
 #, fuzzy
 #| msgid "Paragraph"
 msgid "To Paragraph"
 msgstr "Paragraff"
 
-#: part/KWView.cpp:399
+#: part/KWView.cpp:390
 msgid "Anchor the current shape to current paragraph"
 msgstr ""
 
-#: part/KWView.cpp:403
+#: part/KWView.cpp:395
 #, fuzzy
 #| msgid "Remove entry"
 msgid "To Page"
 msgstr "Gwaredu eitem"
 
-#: part/KWView.cpp:404
+#: part/KWView.cpp:396
 msgid "Anchor the current shape to current page"
 msgstr ""
 
-#: part/KWView.cpp:408
-#, fuzzy
-msgid "Set Floating"
-msgstr "Gosodiadau Amrywiol"
-
-#: part/KWView.cpp:409
-msgid "Set the current shape floating"
-msgstr ""
-
-#: part/KWView.cpp:425 part/dialogs/KWStatisticsDialog.cpp:29
+#: part/KWView.cpp:414 part/dialogs/KWStatisticsDialog.cpp:29
 #: part/dockers/KWStatisticsDocker.cpp:35
 msgid "Statistics"
 msgstr "Ystadegau"
 
-#: part/KWView.cpp:427
+#: part/KWView.cpp:416
 msgid "Sentence, word and letter counts for this document"
 msgstr "Cyfrifon brawddeg, gair a llythyren ar gyfer y ddogfen yma"
 
-#: part/KWView.cpp:428
+#: part/KWView.cpp:417
 #, fuzzy
 #| msgid ""
 #| "Information on the number of letters, words, syllables and sentences for "
@@ -1258,16 +1351,16 @@ msgstr ""
 "Gwybodaeth am y nifer o lythrennau, geiriau a brawddegau ar gyfer y ddogfen "
 "yma. <p> Gwerthuso darllenadwyedd gan ddefnyddio'r sgôr darllen Flesch."
 
-#: part/KWView.cpp:431
+#: part/KWView.cpp:420
 msgid "Show Rulers"
 msgstr "Dangos Mesuryddion"
 
-#: part/KWView.cpp:433
+#: part/KWView.cpp:422
 #, fuzzy
 msgid "Shows or hides rulers"
 msgstr "Dangos neu guddio mesuryddion."
 
-#: part/KWView.cpp:434
+#: part/KWView.cpp:423
 #, fuzzy
 #| msgid ""
 #| "The rulers are the white measuring spaces top and left of the document. "
@@ -1285,26 +1378,26 @@ msgstr ""
 "eu defnyddio i leoli tablyddion a phethau o'r fath. <p>Dadfrithwch hyn i "
 "atal dangos y mesuryddion."
 
-#: part/KWView.cpp:442
+#: part/KWView.cpp:431
 msgid "Page..."
 msgstr "Tudalen..."
 
-#: part/KWView.cpp:446
+#: part/KWView.cpp:435
 msgid "Delete Page"
 msgstr "Dileu Tudalen"
 
-#: part/KWView.cpp:453
+#: part/KWView.cpp:442
 #, fuzzy
 #| msgid "&Formatting Characters"
 msgid "Formatting Characters"
 msgstr "Noda&u Fformatio"
 
-#: part/KWView.cpp:457
+#: part/KWView.cpp:446
 #, fuzzy
 msgid "Toggle the display of non-printing characters"
 msgstr "Dangos/cuddio nodau di-argraffu."
 
-#: part/KWView.cpp:458
+#: part/KWView.cpp:447
 #, fuzzy
 #| msgid ""
 #| "Toggle the display of non-printing characters.<br><br>When this is "
@@ -1318,24 +1411,26 @@ msgstr ""
 "Dangos/cuddio nodau di-argraffu. <br> <br> Os yn alluog, mae KWord yn dangos "
 "i chi tabnodau, gofodnodau, dychwelnodau, a nodau eraill di-argraffu."
 
-#: part/KWView.cpp:461
-msgid "Select All Frames"
+#: part/KWView.cpp:450
+#, fuzzy
+#| msgid "Select All Frames"
+msgid "Select All Shapes"
 msgstr "Dewis Pob Ffrâm"
 
-#: part/KWView.cpp:466 part/dialogs/KWPageSettingsDialog.cpp:62
+#: part/KWView.cpp:455 part/dialogs/KWPageSettingsDialog.cpp:62
 #, fuzzy
 msgid "Delete"
 msgstr "Dileu Rhes"
 
-#: part/KWView.cpp:479
+#: part/KWView.cpp:468
 msgid "Create Linked Copy"
 msgstr "Creu Copi Cysylltiedig"
 
-#: part/KWView.cpp:481
+#: part/KWView.cpp:470
 msgid "Create a copy of the current frame, always showing the same contents"
 msgstr "Creu copi o'r ffrâm gyfredol, sy o hyd yn dangos yr un cynnwys"
 
-#: part/KWView.cpp:482
+#: part/KWView.cpp:471
 msgid ""
 "Create a copy of the current frame, that remains linked to it. This means "
 "they always show the same contents: modifying the contents in such a frame "
@@ -1345,48 +1440,44 @@ msgstr ""
 "bod nhw o hyd yn dangos yr un cynnwys: bydd addasu'r cynnwys mewn ffrâm o'r "
 "math yn diweddaru ei copiau cysylltiedig i gyd."
 
-#: part/KWView.cpp:485
+#: part/KWView.cpp:474
 #, fuzzy
 #| msgid "Create Text Frame"
 msgid "Create Frame-clip"
 msgstr "Creu Ffrâm Testun"
 
-#: part/KWView.cpp:489
+#: part/KWView.cpp:478
 #, fuzzy
 #| msgid "Remove record"
 msgid "Remove Frame-clip"
 msgstr "Gwaredu cofnod"
 
-#: part/KWView.cpp:493
+#: part/KWView.cpp:482
 #, fuzzy
 #| msgid "Show &status bar"
 msgid "Show Status Bar"
 msgstr "Dangos bar &cyflwr"
 
-#: part/KWView.cpp:494
+#: part/KWView.cpp:483
 #, fuzzy
 #| msgid "Show &status bar"
 msgid "Hide Status Bar"
 msgstr "Dangos bar &cyflwr"
 
-#: part/KWView.cpp:495
+#: part/KWView.cpp:484
 #, fuzzy
 #| msgid "Show &status bar"
 msgid "Shows or hides the status bar"
 msgstr "Dangos bar &cyflwr"
 
-#: part/KWView.cpp:1202
-msgid "Please select at least one non-locked shape and try again"
-msgstr ""
-
-#: part/KWView.cpp:1289
+#: part/KWView.cpp:1038
 #, fuzzy
 #| msgid "Create Linked Copy"
 msgctxt "(qtundo-format)"
 msgid "Create Linked Copy"
 msgstr "Creu Copi Cysylltiedig"
 
-#: part/KWView.cpp:1729
+#: part/KWView.cpp:1445
 #, fuzzy
 #| msgid "Insert Page"
 msgid "Insert Image Options"
@@ -1447,22 +1538,6 @@ msgstr "Gwaredu eitem"
 msgctxt "(qtundo-format)"
 msgid "Page Properties"
 msgstr "Priodweddau Fframiau"
-
-#: part/dialogs/KWFrameDialog.cpp:38 part/dialogs/KWShapeConfigFactory.cpp:94
-msgid "Options"
-msgstr ""
-
-#: part/dialogs/KWFrameDialog.cpp:40 part/dialogs/KWShapeConfigFactory.cpp:76
-msgid "Text Run Around"
-msgstr "Rhedeg y Testun o Gwmpas"
-
-#: part/dialogs/KWFrameDialog.cpp:47 part/dialogs/KWShapeConfigFactory.cpp:40
-msgid "Connect Text Frames"
-msgstr "Cysylltu Fframiau Testun"
-
-#: part/dialogs/KWFrameDialog.cpp:54 part/dialogs/KWShapeConfigFactory.cpp:58
-msgid "Geometry"
-msgstr "Geometreg"
 
 #: part/dialogs/KWSelectBookmarkDialog.cpp:79
 msgid "Rename Bookmark"
@@ -1530,6 +1605,82 @@ msgstr "tua %1"
 #: part/dialogs/KWInsertInlineNoteDialog.cpp:40
 msgid "Insert Footnote/Endnote"
 msgstr "Mewnosod Troednodyn/Diweddnodyn"
+
+#: part/dialogs/KWAnchoringProperties.cpp:397
+#, fuzzy
+#| msgid "Frame is inline"
+msgid "Baseline"
+msgstr "Mewnlein yw'r ffrâm"
+
+#: part/dialogs/KWAnchoringProperties.cpp:401
+msgid "Row"
+msgstr "Rhes"
+
+#: part/dialogs/KWAnchoringProperties.cpp:402
+#: part/dialogs/KWAnchoringProperties.cpp:410
+msgid "Page (entire) area"
+msgstr ""
+
+#: part/dialogs/KWAnchoringProperties.cpp:403
+#: part/dialogs/KWAnchoringProperties.cpp:411
+#, fuzzy
+#| msgid "Provide main text area"
+msgid "Page text area"
+msgstr "Cynhyrchu prif ardal destun"
+
+#: part/dialogs/KWAnchoringProperties.cpp:404
+#: part/dialogs/KWAnchoringProperties.cpp:418
+#, fuzzy
+#| msgid "Paragraph"
+msgid "Paragraph area"
+msgstr "Paragraff"
+
+#: part/dialogs/KWAnchoringProperties.cpp:405
+#: part/dialogs/KWAnchoringProperties.cpp:419
+#, fuzzy
+#| msgid "Paragraph Settings"
+msgid "Paragraph text area"
+msgstr "Gosodiadau Paragraff"
+
+#: part/dialogs/KWAnchoringProperties.cpp:412
+#, fuzzy
+msgid "Left page border"
+msgstr "Newid Ffrâm y Ffin Chwith"
+
+#: part/dialogs/KWAnchoringProperties.cpp:413
+#, fuzzy
+msgid "Right page border"
+msgstr "Newid Ffrâm y Ffin Dde"
+
+#: part/dialogs/KWAnchoringProperties.cpp:420
+msgid "Right paragraph border"
+msgstr ""
+
+#: part/dialogs/KWAnchoringProperties.cpp:421
+msgid "Left paragraph border"
+msgstr ""
+
+#: part/dialogs/KWFrameDialog.cpp:39
+#, fuzzy
+#| msgid "Position"
+msgid "Smart Positioning"
+msgstr "Lleoliad"
+
+#: part/dialogs/KWFrameDialog.cpp:41 part/dialogs/KWShapeConfigFactory.cpp:76
+msgid "Text Run Around"
+msgstr "Rhedeg y Testun o Gwmpas"
+
+#: part/dialogs/KWFrameDialog.cpp:48 part/dialogs/KWShapeConfigFactory.cpp:40
+msgid "Connect Text Frames"
+msgstr "Cysylltu Fframiau Testun"
+
+#: part/dialogs/KWShapeConfigFactory.cpp:58
+msgid "Geometry"
+msgstr "Geometreg"
+
+#: part/dialogs/KWShapeConfigFactory.cpp:94
+msgid "Options"
+msgstr ""
 
 #: part/dockers/KWRdfDocker.cpp:53
 msgid "RDF"
@@ -2073,6 +2224,40 @@ msgid "Michael Johnson"
 msgstr ""
 
 #, fuzzy
+#~| msgid "F&rame/Frameset Properties"
+#~ msgid "Frame/Frameset Properties"
+#~ msgstr "Priodweddau Ff&râm/Set Fframiau..."
+
+#, fuzzy
+#~ msgid "Alter frameset properties"
+#~ msgstr "Addasu priodweddau set fframiau."
+
+#, fuzzy
+#~| msgid "P&icture..."
+#~ msgid "Picture..."
+#~ msgstr "Ll&un..."
+
+#, fuzzy
+#~| msgid "Insert picture inline"
+#~ msgid "Insert a picture into document"
+#~ msgstr "Mewnosod y llun mewnlein"
+
+#, fuzzy
+#~ msgid "Convert current frame to an inline frame"
+#~ msgstr "Trosi'r ffrâm gyfredol i ffrâm fewnlein."
+
+#~ msgid ""
+#~ "Convert the current frame to an inline frame.<br><br>Place the inline "
+#~ "frame within the text at the point nearest to the frames current position."
+#~ msgstr ""
+#~ "Trosi'r ffrâm gyfredol i ffrâm fewnlein. <br> <br>Lleoli'r ffrâm fewnlein "
+#~ "tu mewn i'r testun wrth y pwynt sy'n agosaf i leoliad cyfredol y ffrâm."
+
+#, fuzzy
+#~ msgid "Set Floating"
+#~ msgstr "Gosodiadau Amrywiol"
+
+#, fuzzy
 #~| msgid "Preview"
 #~ msgid "Previous Page"
 #~ msgstr "Rhagolwg"
@@ -2094,9 +2279,6 @@ msgstr ""
 #~ "Ar gyfer llythyrau a nodiadau efo un prif destun, efallai ar fwy nag un "
 #~ "dudalen, mi ddylech chi fritho hwn.  Mi ddylech chi ei ddadfritho 'mond "
 #~ "os hoffech ddiffinio yn fanwl lle ddylai pob ffrâm gael ei lleoli.</p>"
-
-#~ msgid "Provide main text area"
-#~ msgstr "Cynhyrchu prif ardal destun"
 
 #, fuzzy
 #~| msgid "&Filter output"
@@ -2249,9 +2431,6 @@ msgstr ""
 
 #~ msgid "Ta&ble"
 #~ msgstr "&Tabl"
-
-#~ msgid "Row"
-#~ msgstr "Rhes"
 
 #~ msgid "Column"
 #~ msgstr "Colofn"
@@ -2413,9 +2592,6 @@ msgstr ""
 
 #~ msgid "To:"
 #~ msgstr "I:"
-
-#~ msgid "From:"
-#~ msgstr "O:"
 
 #~ msgid "Subject:"
 #~ msgstr "Pwnc:"
@@ -4664,9 +4840,6 @@ msgstr ""
 #~ msgid "Change Font"
 #~ msgstr "Newid Wynebfath"
 
-#~ msgid "Paragraph Settings"
-#~ msgstr "Gosodiadau Paragraff"
-
 #~ msgid "Change Layout"
 #~ msgstr "Newid Haenlun"
 
@@ -4763,14 +4936,8 @@ msgstr ""
 #~ msgid "Set Text Color"
 #~ msgstr "Gosod Lliw Testun"
 
-#~ msgid "Left-Align Text"
-#~ msgstr "Alinio Testun i'r Chwith"
-
 #~ msgid "Center Text"
 #~ msgstr "Canoli Testun"
-
-#~ msgid "Right-Align Text"
-#~ msgstr "Alinio Testun i'r Dde"
 
 #~ msgid "Justify Text"
 #~ msgstr "Unioni Testun"
@@ -4792,14 +4959,6 @@ msgstr ""
 
 #~ msgid "Decrease Paragraph Depth"
 #~ msgstr "Lleihau Dyfnder Paragraff"
-
-#, fuzzy
-#~ msgid "Change Left Frame Border"
-#~ msgstr "Newid Ffrâm y Ffin Chwith"
-
-#, fuzzy
-#~ msgid "Change Right Frame Border"
-#~ msgstr "Newid Ffrâm y Ffin Dde"
 
 #, fuzzy
 #~ msgid "Change Top Frame Border"
