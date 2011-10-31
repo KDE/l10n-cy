@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-30 03:19+0100\n"
+"POT-Creation-Date: 2011-10-31 04:15+0100\n"
 "PO-Revision-Date: 2004-02-25 13:47+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -401,7 +401,7 @@ msgstr "Copiwyd y cyfeiriad i'r gludfwrdd."
 msgid "URL copied to clipboard."
 msgstr "Copiwyd yr URL i'r gludfwrdd."
 
-#: viewer_p.cpp:2627 objecttreeparser.cpp:1996
+#: viewer_p.cpp:2627 objecttreeparser.cpp:2019
 msgid ""
 "Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
 "report this bug."
@@ -409,44 +409,44 @@ msgstr ""
 
 #: viewer_p.cpp:2629 viewer_p.cpp:2634 viewer_p.cpp:2643 viewer_p.cpp:2652
 #: viewer_p.cpp:2670 viewer_p.cpp:2682 viewer_p.cpp:2722
-#: objecttreeparser.cpp:2002
+#: objecttreeparser.cpp:2025
 msgid "Chiasmus Backend Error"
 msgstr ""
 
-#: viewer_p.cpp:2640 objecttreeparser.cpp:2008
+#: viewer_p.cpp:2640 objecttreeparser.cpp:2031
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
 "function did not return a string list. Please report this bug."
 msgstr ""
 
-#: viewer_p.cpp:2649 objecttreeparser.cpp:2016
+#: viewer_p.cpp:2649 objecttreeparser.cpp:2039
 msgid ""
 "No keys have been found. Please check that a valid key path has been set in "
 "the Chiasmus configuration."
 msgstr ""
 
-#: viewer_p.cpp:2656 objecttreeparser.cpp:2022
+#: viewer_p.cpp:2656 objecttreeparser.cpp:2045
 #, fuzzy
 msgid "Chiasmus Decryption Key Selection"
 msgstr "Dewis Allwedd Cêl-ysgrifo"
 
-#: viewer_p.cpp:2668 objecttreeparser.cpp:2035
+#: viewer_p.cpp:2668 objecttreeparser.cpp:2058
 msgid ""
 "Chiasmus backend does not offer the \"x-decrypt\" function. Please report "
 "this bug."
 msgstr ""
 
-#: viewer_p.cpp:2680 objecttreeparser.cpp:2043
+#: viewer_p.cpp:2680 objecttreeparser.cpp:2066
 msgid ""
 "The \"x-decrypt\" function does not accept the expected parameters. Please "
 "report this bug."
 msgstr ""
 
-#: viewer_p.cpp:2687 viewer_p.cpp:2714 objecttreeparser.cpp:2049
+#: viewer_p.cpp:2687 viewer_p.cpp:2714 objecttreeparser.cpp:2072
 msgid "Chiasmus Decryption Error"
 msgstr ""
 
-#: viewer_p.cpp:2719 objecttreeparser.cpp:2055
+#: viewer_p.cpp:2719 objecttreeparser.cpp:2078
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-decrypt\" function "
 "did not return a byte array. Please report this bug."
@@ -473,6 +473,491 @@ msgstr "Llofnodwyd y neges gan %1."
 #| msgid "Message was signed by %1."
 msgid "Message not found."
 msgstr "Llofnodwyd y neges gan %1."
+
+#: objecttreeparser.cpp:551
+#, fuzzy
+msgid "Wrong Crypto Plug-In."
+msgstr "Rhaglennig Celu Anghywir!"
+
+#: objecttreeparser.cpp:703 objecttreeparser.cpp:2230
+msgid "Different results for signatures"
+msgstr "Canlyniadau gwahanol ar gyfer y llofnodion"
+
+#: objecttreeparser.cpp:776
+#, fuzzy
+msgid "The crypto engine returned no cleartext data."
+msgstr "Ni ddychwelodd y peiriant celu ddata testun clir!"
+
+#: objecttreeparser.cpp:779 objecttreeparser.cpp:2705
+#: objecttreeparser.cpp:2748
+msgid "Status: "
+msgstr "Cyflwr:"
+
+#: objecttreeparser.cpp:786
+#, fuzzy
+#| msgid "(unknown)"
+msgctxt "Status of message unknown."
+msgid "(unknown)"
+msgstr "(anhysbys)"
+
+#: objecttreeparser.cpp:797 objecttreeparser.cpp:1077
+#, kde-format
+msgid "Crypto plug-in \"%1\" is not initialized."
+msgstr "Ni ymgychwynnir y rhaglennig celu \"%1\"."
+
+#: objecttreeparser.cpp:801
+#, fuzzy, kde-format
+msgid "Crypto plug-in \"%1\" cannot verify signatures."
+msgstr "Ni all y rhaglennig celu \"%1\" wirio llofnodion."
+
+#: objecttreeparser.cpp:806 objecttreeparser.cpp:1085
+msgid "No appropriate crypto plug-in was found."
+msgstr "Ni chanfuwyd rhaglennig celu addas."
+
+#: objecttreeparser.cpp:809
+#, kde-format
+msgctxt "%1 is either 'OpenPGP' or 'S/MIME'"
+msgid "No %1 plug-in was found."
+msgstr "Ni chanfuwyd rhaglennig %1."
+
+#: objecttreeparser.cpp:813
+#, fuzzy, kde-format
+msgid ""
+"The message is signed, but the validity of the signature cannot be verified."
+"<br />Reason: %1"
+msgstr ""
+"Llofnodir y neges, ond ni ellir gwirio dilysrwydd y llofnod.<br />Rheswm: %1"
+
+#: objecttreeparser.cpp:846
+#, fuzzy
+msgid "This message is encrypted."
+msgstr "Cadw negeseuon an&foniedig wedi'u cêl-ysgrifo"
+
+#: objecttreeparser.cpp:851
+#, fuzzy
+#| msgid "&Encrypt Message"
+msgid "Decrypt Message"
+msgstr "C&êl-ysgrifo Neges"
+
+#: objecttreeparser.cpp:875
+#, fuzzy
+msgid "Encrypted data not shown"
+msgstr "Ni ddangosir data na ellir ei ddatgelu."
+
+#: objecttreeparser.cpp:891
+#, kde-format
+msgid "Sorry, certificate could not be imported.<br />Reason: %1"
+msgstr ""
+
+#: objecttreeparser.cpp:901
+#, fuzzy
+msgid "Sorry, no certificates were found in this message."
+msgstr "Tystysgrif a ddefnyddir ar gyfer llofnodi negeseuon:"
+
+#: objecttreeparser.cpp:904
+#, fuzzy
+msgid "Certificate import status:"
+msgstr "Dewin Tystygrif"
+
+#: objecttreeparser.cpp:906
+#, kde-format
+msgid "1 new certificate was imported."
+msgid_plural "%1 new certificates were imported."
+msgstr[0] ""
+msgstr[1] ""
+
+#: objecttreeparser.cpp:909
+#, kde-format
+msgid "1 certificate was unchanged."
+msgid_plural "%1 certificates were unchanged."
+msgstr[0] ""
+msgstr[1] ""
+
+#: objecttreeparser.cpp:912
+#, kde-format
+msgid "1 new secret key was imported."
+msgid_plural "%1 new secret keys were imported."
+msgstr[0] ""
+msgstr[1] ""
+
+#: objecttreeparser.cpp:915
+#, kde-format
+msgid "1 secret key was unchanged."
+msgid_plural "%1 secret keys were unchanged."
+msgstr[0] ""
+msgstr[1] ""
+
+#: objecttreeparser.cpp:925
+msgid "Sorry, no details on certificate import available."
+msgstr ""
+
+#: objecttreeparser.cpp:928
+#, fuzzy
+msgid "Certificate import details:"
+msgstr "Dewin Tystygrif"
+
+#: objecttreeparser.cpp:932
+#, fuzzy, kde-format
+#| msgid "Mail"
+msgctxt "Certificate import failed."
+msgid "Failed: %1 (%2)"
+msgstr "Post"
+
+#: objecttreeparser.cpp:936
+#, kde-format
+msgid "New or changed: %1 (secret key available)"
+msgstr ""
+
+#: objecttreeparser.cpp:938
+#, kde-format
+msgid "New or changed: %1"
+msgstr ""
+
+#: objecttreeparser.cpp:975
+#, fuzzy
+#| msgid "Crypto plug-in \"%1\" could not decrypt the data."
+msgid "Could not decrypt the data."
+msgstr "Methodd y rhaglennig celu \"%1\" ddatgelu'r data."
+
+#: objecttreeparser.cpp:1064
+#, kde-format
+msgid "Crypto plug-in \"%1\" could not decrypt the data."
+msgstr "Methodd y rhaglennig celu \"%1\" ddatgelu'r data."
+
+#: objecttreeparser.cpp:1066
+#, kde-format
+msgid "Error: %1"
+msgstr "Gwall: %1"
+
+#: objecttreeparser.cpp:1081
+#, fuzzy, kde-format
+msgid "Crypto plug-in \"%1\" cannot decrypt messages."
+msgstr "Ni all y rhaglennig celu \"%1\" ddatgelu negeseuon."
+
+#: objecttreeparser.cpp:1189
+#, fuzzy
+msgid ""
+"<b>Note:</b> This HTML message may contain external references to images "
+"etc. For security/privacy reasons external references are not loaded. If you "
+"trust the sender of this message then you can load the external references "
+"for this message <a href=\"kmail:loadExternal\">by clicking here</a>."
+msgstr ""
+"<b>Noder:</b> Neges HTML yw hon.  Ar gyfer rhesymau diogelwch, dangosir y "
+"côd crai un unig. Os ymddiriedir anfonwr y neges yma, gallwch weithredu "
+"ymddangosiad HTML wedi'i fformatio ar gyfer y neges hon <a href=\"kmail:"
+"showHTML\">gan glicio yma</a>."
+
+#: objecttreeparser.cpp:1199
+msgid ""
+"<b>Note:</b> This is an HTML message. For security reasons, only the raw "
+"HTML code is shown. If you trust the sender of this message then you can "
+"activate formatted HTML display for this message <a href=\"kmail:showHTML"
+"\">by clicking here</a>."
+msgstr ""
+"<b>Noder:</b> Neges HTML yw hon.  Ar gyfer rhesymau diogelwch, dangosir y "
+"côd crai un unig. Os ymddiriedir anfonwr y neges yma, gallwch weithredu "
+"ymddangosiad HTML wedi'i fformatio ar gyfer y neges hon <a href=\"kmail:"
+"showHTML\">gan glicio yma</a>."
+
+#: objecttreeparser.cpp:1420
+msgid ""
+"This message is a <i>Toltec</i> Groupware object, it can only be viewed with "
+"Microsoft Outlook in combination with the Toltec connector."
+msgstr ""
+
+#: objecttreeparser.cpp:1432 urlhandlermanager.cpp:533
+#, fuzzy
+msgid "Show Raw Message"
+msgstr "Neges a Flaenyrrwyd"
+
+#: objecttreeparser.cpp:2156
+#, fuzzy
+#| msgid "Unnamed"
+msgctxt "display name for an unnamed attachment"
+msgid "Unnamed"
+msgstr "Heb ei enwi"
+
+#: objecttreeparser.cpp:2212
+msgid "Error: Signature not verified"
+msgstr "Gwall: Ni wiriwyd y llofnod"
+
+#: objecttreeparser.cpp:2215
+msgid "Good signature"
+msgstr "Llofnod dilys"
+
+#: objecttreeparser.cpp:2218
+msgid "<b>Bad</b> signature"
+msgstr "Llofnod <b>llwgr</b>"
+
+#: objecttreeparser.cpp:2221
+msgid "No public key to verify the signature"
+msgstr "Dim allwedd gyhoeddus i wirio'r llofnod"
+
+#: objecttreeparser.cpp:2224
+msgid "No signature found"
+msgstr "Ni chanfuwyd llofnod"
+
+#: objecttreeparser.cpp:2227
+msgid "Error verifying the signature"
+msgstr "Gwall wrth wirio'r llofnod"
+
+#: objecttreeparser.cpp:2250
+msgid "No status information available."
+msgstr "Dim data cyflwr ar gael."
+
+#: objecttreeparser.cpp:2257 objecttreeparser.cpp:2341
+msgid "Good signature."
+msgstr "Llofnod dilys."
+
+#: objecttreeparser.cpp:2278
+msgid "One key has expired."
+msgstr "Mae un allwedd wedi darfod."
+
+#: objecttreeparser.cpp:2282
+msgid "The signature has expired."
+msgstr "Mae'r llofnod wedi darfod."
+
+#: objecttreeparser.cpp:2287
+msgid "Unable to verify: key missing."
+msgstr "Methu gwirio: allwedd ar goll."
+
+#: objecttreeparser.cpp:2294
+msgid "CRL not available."
+msgstr "CRL dim ar gael."
+
+#: objecttreeparser.cpp:2298
+msgid "Available CRL is too old."
+msgstr "Mae'r CRL sydd ar gael yn rhy hen."
+
+#: objecttreeparser.cpp:2302
+msgid "A policy was not met."
+msgstr "Ni fodlonwyd polisi."
+
+#: objecttreeparser.cpp:2306
+msgid "A system error occurred."
+msgstr "Digwyddodd gwall cysawd."
+
+#: objecttreeparser.cpp:2317
+msgid "One key has been revoked."
+msgstr "Mae un allwedd wedi'i dirymu."
+
+#: objecttreeparser.cpp:2343
+msgid "<b>Bad</b> signature."
+msgstr "Llofnod <b>llwgr</b>."
+
+#: objecttreeparser.cpp:2370
+#, fuzzy
+#| msgid "&Enable signature"
+msgid "Invalid signature."
+msgstr "&Galluogi llofnod"
+
+#: objecttreeparser.cpp:2373
+#, fuzzy
+#| msgid "Not enough information to check signature. %1"
+msgid "Not enough information to check signature validity."
+msgstr "Dim digon o wybodaeth i wirio'r llofnod. %1"
+
+#: objecttreeparser.cpp:2385
+#, fuzzy
+#| msgid "Signatures"
+msgid "Signature is valid."
+msgstr "Llofnodion"
+
+#: objecttreeparser.cpp:2387
+#, kde-format
+msgid "Signed by <a href=\"mailto:%1\">%2</a>."
+msgstr ""
+
+#: objecttreeparser.cpp:2392
+msgid "Unknown signature state"
+msgstr ""
+
+#: objecttreeparser.cpp:2396
+#, fuzzy
+#| msgid "Show alway&s"
+msgid "Show Details"
+msgstr "Dangos o &hyd"
+
+#: objecttreeparser.cpp:2416
+#, fuzzy
+#| msgid "Not available"
+msgid "No Audit Log available"
+msgstr "Dim ar gael"
+
+#: objecttreeparser.cpp:2418
+#, fuzzy, kde-format
+msgid "Error Retrieving Audit Log: %1"
+msgstr "Dim negeseuon newydd o'r gweinydd"
+
+#: objecttreeparser.cpp:2428
+msgctxt "The Audit Log is a detailed error log from the gnupg backend"
+msgid "Show Audit Log"
+msgstr ""
+
+#: objecttreeparser.cpp:2439
+#, fuzzy
+#| msgid "[Details]"
+msgid "Hide Details"
+msgstr "[Manylion]"
+
+#: objecttreeparser.cpp:2465 objecttreeparser.cpp:2467
+msgid "Encapsulated message"
+msgstr "Neges ymgrynhoëdig"
+
+#: objecttreeparser.cpp:2476
+#, fuzzy
+msgid "Please wait while the message is being decrypted..."
+msgstr "Disgwyliwch tra trosglwyddir y neges."
+
+#: objecttreeparser.cpp:2478
+msgid "Encrypted message"
+msgstr "Neges wedi'i chêl-ysgrifo"
+
+#: objecttreeparser.cpp:2480
+msgid "Encrypted message (decryption not possible)"
+msgstr "Neges wedi'i chêl-ysgrifo (ni ellir datgelu)"
+
+#: objecttreeparser.cpp:2482
+#, kde-format
+msgid "Reason: %1"
+msgstr "Rheswm: %1"
+
+#: objecttreeparser.cpp:2492
+#, fuzzy
+msgid "Please wait while the signature is being verified..."
+msgstr "Disgwyliwch tra trosglwyddir y neges."
+
+#: objecttreeparser.cpp:2587 objecttreeparser.cpp:2589
+#, fuzzy
+#| msgid "Certificates"
+msgid "certificate"
+msgstr "Tystysgrifau"
+
+#: objecttreeparser.cpp:2595 objecttreeparser.cpp:2620
+#, fuzzy
+#| msgid "Warning:"
+msgctxt "Start of warning message."
+msgid "Warning:"
+msgstr "Rhybudd:"
+
+#: objecttreeparser.cpp:2597
+#, kde-format
+msgid "Sender's mail address is not stored in the %1 used for signing."
+msgstr ""
+"Ni cedwir cyfeiriad ebost yr anfonwr yn y %1 a ddefnyddir ar gyfer llofnodi."
+
+#: objecttreeparser.cpp:2600
+msgid "sender: "
+msgstr "anfonwr:"
+
+#: objecttreeparser.cpp:2603
+msgid "stored: "
+msgstr "cedwyd:"
+
+#: objecttreeparser.cpp:2622
+#, kde-format
+msgid ""
+"No mail address is stored in the %1 used for signing, so we cannot compare "
+"it to the sender's address %2."
+msgstr ""
+"Ni chedwir cyfeiriad ebost yn y %1 a ddefnyddir ar gyfer llofnodi, felly ni "
+"ellir ei gymharu â chyfeiriad yr anfonwr %2."
+
+#: objecttreeparser.cpp:2646
+#, kde-format
+msgid "Not enough information to check signature. %1"
+msgstr "Dim digon o wybodaeth i wirio'r llofnod. %1"
+
+#: objecttreeparser.cpp:2664 objecttreeparser.cpp:2742
+msgid "Message was signed with unknown key."
+msgstr "Llofnodwyd y neges efo allwedd anhysbys."
+
+#: objecttreeparser.cpp:2666 objecttreeparser.cpp:2780
+#: objecttreeparser.cpp:2824
+#, kde-format
+msgid "Message was signed by %1."
+msgstr "Llofnodwyd y neges gan %1."
+
+#: objecttreeparser.cpp:2673 objecttreeparser.cpp:2682
+#: objecttreeparser.cpp:2693
+#, kde-format
+msgid "Message was signed with key %1."
+msgstr "Llofnodwyd y neges efo allwedd %1."
+
+#: objecttreeparser.cpp:2676
+#, fuzzy, kde-format
+msgid "Message was signed on %1 with key %2."
+msgstr "Llofnodwyd y neges gan %2 efo allwedd %1."
+
+#: objecttreeparser.cpp:2685
+#, fuzzy, kde-format
+msgid "Message was signed by %3 on %1 with key %2"
+msgstr "Llofnodwyd y neges gan %2 efo allwedd %1."
+
+#: objecttreeparser.cpp:2696
+#, kde-format
+msgid "Message was signed by %2 with key %1."
+msgstr "Llofnodwyd y neges gan %2 efo allwedd %1."
+
+#: objecttreeparser.cpp:2734
+#, fuzzy, kde-format
+msgid "Message was signed on %1 with unknown key %2."
+msgstr "Llofnodwyd y neges efo allwedd anhysbys %1."
+
+#: objecttreeparser.cpp:2738
+#, kde-format
+msgid "Message was signed with unknown key %1."
+msgstr "Llofnodwyd y neges efo allwedd anhysbys %1."
+
+#: objecttreeparser.cpp:2744
+msgid "The validity of the signature cannot be verified."
+msgstr "Ni ellir gwirio dilysrwydd y llofnod."
+
+#: objecttreeparser.cpp:2776 objecttreeparser.cpp:2820
+#, kde-format
+msgid "Message was signed by %2 (Key ID: %1)."
+msgstr "Llofnodwyd y neges gan %2 (ID yr Allwedd: %1)."
+
+#: objecttreeparser.cpp:2786
+msgid "The signature is valid, but the key's validity is unknown."
+msgstr "Mae'r llofnod yn ddilys, ond mae dilysrwydd yr allwedd yn anhysbys."
+
+#: objecttreeparser.cpp:2790
+msgid "The signature is valid and the key is marginally trusted."
+msgstr "Mae'r llofnod yn ddilys ac ymddirieidir yr allwedd i ryw radd."
+
+#: objecttreeparser.cpp:2794
+msgid "The signature is valid and the key is fully trusted."
+msgstr "Mae'r llofnod yn ddilys ac ymddiriedir yr allwedd yn llawn."
+
+#: objecttreeparser.cpp:2798
+msgid "The signature is valid and the key is ultimately trusted."
+msgstr "Mae'r llofnod yn ddilys ac ymddiriedir yr allwedd yn eithaf."
+
+#: objecttreeparser.cpp:2802
+msgid "The signature is valid, but the key is untrusted."
+msgstr "Mae'r llofnod yn ddilys, ond ni ymddiriedir yr allwedd."
+
+#: objecttreeparser.cpp:2826
+msgid "Warning: The signature is bad."
+msgstr "Rhybudd:  Mae'r llofnod yn llwgr."
+
+#: objecttreeparser.cpp:2850
+msgid "End of signed message"
+msgstr "Diwedd y neges lofnodedig"
+
+#: objecttreeparser.cpp:2856
+msgid "End of encrypted message"
+msgstr "Diwedd y neges cêl-ysgrifedig"
+
+#: objecttreeparser.cpp:2863
+msgid "End of encapsulated message"
+msgstr "Diwedd y neges ymgrynhoëdig"
+
+#: objecttreeparser.cpp:3039
+#, fuzzy
+msgid "The message could not be decrypted."
+msgstr "Cadw negeseuon an&foniedig wedi'u cêl-ysgrifo"
 
 #: findbar/findbarmailwebview.cpp:35
 msgid "Highlight all matches"
@@ -549,6 +1034,458 @@ msgstr ""
 #, fuzzy
 msgid "Loading message..."
 msgstr "Methwyd symud y negeseuon."
+
+#: htmlstatusbar.cpp:113
+#, fuzzy
+#| msgid ""
+#| "<qt><b><br>H<br>T<br>M<br>L<br> <br>M<br>e<br>s<br>s<br>a<br>g<br>e</b></"
+#| "qt>"
+msgctxt ""
+"'HTML Message' with html linebreaks between each letter and in bold text."
+msgid ""
+"<qt><b><br />H<br />T<br />M<br />L<br /> <br />M<br />e<br />s<br />s<br /"
+">a<br />g<br />e</b></qt>"
+msgstr "<qt><b><br>N<br>e<br>g<br>e<br>s<br> <br>H<br>T<br>M<br>L</b></qt>"
+
+#: htmlstatusbar.cpp:117
+#, fuzzy
+#| msgid ""
+#| "<qt><br>N<br>o<br> <br>H<br>T<br>M<br>L<br> "
+#| "<br>M<br>e<br>s<br>s<br>a<br>g<br>e</qt>"
+msgctxt "'No HTML Message' with html linebreaks between each letter."
+msgid ""
+"<qt><br />N<br />o<br /> <br />H<br />T<br />M<br />L<br /> <br />M<br /"
+">e<br />s<br />s<br />a<br />g<br />e</qt>"
+msgstr ""
+"<qt><br>D<br>i<br>m<br> <br>N<br>e<br>g<br>e<br>s<br> <br>H<br>T<br>M<br>L</"
+"qt>"
+
+#: htmlstatusbar.cpp:122
+#, fuzzy
+#| msgid ""
+#| "<qt><b><br>H<br>T<br>M<br>L<br> <br>M<br>e<br>s<br>s<br>a<br>g<br>e</b></"
+#| "qt>"
+msgctxt "'Plain Message' with html linebreaks between each letter."
+msgid ""
+"<qt><br />P<br />l<br />a<br />i<br />n<br /> <br />M<br />e<br />s<br /"
+">s<br />a<br />g<br />e<br /></qt>"
+msgstr "<qt><b><br>N<br>e<br>g<br>e<br>s<br> <br>H<br>T<br>M<br>L</b></qt>"
+
+#: htmlstatusbar.cpp:136
+msgid "Click to toggle between HTML and plain text."
+msgstr ""
+
+#: urlhandlermanager.cpp:509
+msgid "Turn on HTML rendering for this message."
+msgstr "Defnyddio llunio HTML ar gyfer y neges yma."
+
+#: urlhandlermanager.cpp:511
+#, fuzzy
+msgid "Load external references from the Internet for this message."
+msgstr "&Caniatáu i negeseuon lwytho cyfeirnodau allanol o'r Ryngrwyd"
+
+#: urlhandlermanager.cpp:513
+msgid "Work online."
+msgstr ""
+
+#: urlhandlermanager.cpp:515
+#, fuzzy
+#| msgid "&Encrypt Message"
+msgid "Decrypt message."
+msgstr "C&êl-ysgrifo Neges"
+
+#: urlhandlermanager.cpp:517
+#, fuzzy
+#| msgid "No signature found"
+msgid "Show signature details."
+msgstr "Ni chanfuwyd llofnod"
+
+#: urlhandlermanager.cpp:519
+#, fuzzy
+#| msgid "&Enable signature"
+msgid "Hide signature details."
+msgstr "&Galluogi llofnod"
+
+#: urlhandlermanager.cpp:521
+#, fuzzy
+msgid "Show attachment list."
+msgstr "atodiad"
+
+#: urlhandlermanager.cpp:523
+#, fuzzy
+#| msgid "Save Attachment As"
+msgid "Hide attachment list."
+msgstr "Cadw Atodiad Fel..."
+
+#: urlhandlermanager.cpp:525
+#, fuzzy
+#| msgid "Show alway&s"
+msgid "Show full \"To\" list"
+msgstr "Dangos o &hyd"
+
+#: urlhandlermanager.cpp:527
+#, fuzzy
+#| msgid "Show alway&s"
+msgid "Hide full \"To\" list"
+msgstr "Dangos o &hyd"
+
+#: urlhandlermanager.cpp:529
+#, fuzzy
+#| msgid "Show alway&s"
+msgid "Show full \"Cc\" list"
+msgstr "Dangos o &hyd"
+
+#: urlhandlermanager.cpp:531
+#, fuzzy
+#| msgid "Show alway&s"
+msgid "Hide full \"Cc\" list"
+msgstr "Dangos o &hyd"
+
+#: urlhandlermanager.cpp:566
+msgid "Expand all quoted text."
+msgstr ""
+
+#: urlhandlermanager.cpp:569
+msgid "Collapse quoted text."
+msgstr ""
+
+#: urlhandlermanager.cpp:633
+msgid "Could not start certificate manager. Please check your installation."
+msgstr "Methu cychwyn rheolydd tystysgrif.  Gwiriwch eich gosodiad!"
+
+#: urlhandlermanager.cpp:635
+msgid "KMail Error"
+msgstr "Gwall KMail"
+
+#: urlhandlermanager.cpp:645
+#, kde-format
+msgid "Show certificate 0x%1"
+msgstr "Dangos tystysgrif 0x%1"
+
+#: urlhandlermanager.cpp:708
+#, fuzzy
+#| msgid "Open in Address Book"
+msgid "&Open in Address Book"
+msgstr "Agor yn y Lyfr Cyfeiriadau"
+
+#: urlhandlermanager.cpp:711
+#, fuzzy
+#| msgid "Email Address"
+msgid "&Copy Email Address"
+msgstr "Cyfeiriad Ebost"
+
+#: urlhandlermanager.cpp:736
+#, fuzzy
+#| msgid "Open in Address Book"
+msgid "Lookup the contact in KAddressbook"
+msgstr "Agor yn y Lyfr Cyfeiriadau"
+
+#: urlhandlermanager.cpp:843
+#, kde-format
+msgid "Attachment: %1"
+msgstr "Atodiad: %1"
+
+#: urlhandlermanager.cpp:846
+#, fuzzy, kde-format
+#| msgid "Encapsulated message"
+msgid "Encapsulated Message (Subject: %1)"
+msgstr "Neges ymgrynhoëdig"
+
+#: urlhandlermanager.cpp:849
+#, fuzzy
+#| msgid "Encapsulated message"
+msgid "Encapsulated Message"
+msgstr "Neges ymgrynhoëdig"
+
+#: urlhandlermanager.cpp:852
+#, fuzzy
+msgid "Unnamed attachment"
+msgstr "atodiad"
+
+#: urlhandlermanager.cpp:883
+msgid "Show GnuPG Audit Log for this operation"
+msgstr ""
+
+#: urlhandlermanager.cpp:920
+msgid "Opening URL..."
+msgstr "Agor URL..."
+
+#: urlhandlermanager.cpp:929
+#, fuzzy, kde-format
+#| msgid "<qt>Do you really want to execute <b>%1</b>?</qt>"
+msgctxt "@info"
+msgid "Do you really want to execute <filename>%1</filename>?"
+msgstr "<qt>Ydych wir eisiau gweithredu <b>%1</b>?</qt>"
+
+#: urlhandlermanager.cpp:930
+msgid "Execute"
+msgstr "Gweithredu"
+
+#: headerstyle.cpp:91
+#, fuzzy
+msgctxt "Unknown date"
+msgid "Unknown"
+msgstr "&Blaenyrru"
+
+#: headerstyle.cpp:109 headerstyle.cpp:113 headerstyle.cpp:124
+msgid "No Subject"
+msgstr "Dim Pwnc"
+
+#: headerstyle.cpp:189 headerstyle.cpp:285 headerstyle.cpp:646
+#: headerstyle.cpp:840 headerstyle.cpp:982
+msgid "[vCard]"
+msgstr "[vCerdyn]"
+
+#: headerstyle.cpp:194 headerstyle.cpp:299 headerstyle.cpp:669
+#: headerstyle.cpp:865
+msgid "CC: "
+msgstr "CC:"
+
+#: headerstyle.cpp:197 headerstyle.cpp:303 headerstyle.cpp:679
+#: headerstyle.cpp:876
+msgid "BCC: "
+msgstr "BCC:"
+
+#: headerstyle.cpp:274 headerstyle.cpp:685
+msgid "Date: "
+msgstr "Dyddiad:"
+
+#: headerstyle.cpp:281 headerstyle.cpp:638 headerstyle.cpp:845
+msgid "From: "
+msgstr "Oddiwrth:"
+
+#: headerstyle.cpp:295
+#, fuzzy
+#| msgid "To: "
+msgctxt "To-field of the mailheader."
+msgid "To: "
+msgstr "I:"
+
+#: headerstyle.cpp:307
+msgid "Reply to: "
+msgstr "Ateb i:"
+
+#: headerstyle.cpp:409
+#, kde-format
+msgid ""
+"%1% probability of being spam with confidence %3%.\n"
+"\n"
+"Full report:\n"
+"Probability=%2\n"
+"Confidence=%4"
+msgstr ""
+
+#: headerstyle.cpp:416
+#, kde-format
+msgid ""
+"%1% probability of being spam.\n"
+"\n"
+"Full report:\n"
+"Probability=%2"
+msgstr ""
+
+#: headerstyle.cpp:427
+msgid "No Spam agent"
+msgstr ""
+
+#: headerstyle.cpp:430
+msgid "Spam filter score not a number"
+msgstr ""
+
+#: headerstyle.cpp:433
+msgid "Threshold not a valid number"
+msgstr ""
+
+#: headerstyle.cpp:436
+msgid "Spam filter score could not be extracted from header"
+msgstr ""
+
+#: headerstyle.cpp:439
+msgid "Threshold could not be extracted from header"
+msgstr ""
+
+#: headerstyle.cpp:442
+msgid "Error evaluating spam score"
+msgstr ""
+
+#: headerstyle.cpp:446
+#, kde-format
+msgid ""
+"%1.\n"
+"\n"
+"Full report:\n"
+"%2"
+msgstr ""
+
+#: headerstyle.cpp:641
+#, kde-format
+msgid "(resent from %1)"
+msgstr ""
+
+#: headerstyle.cpp:659
+#, fuzzy
+#| msgid "To: "
+msgctxt "To-field of the mail header."
+msgid "To: "
+msgstr "I:"
+
+#: headerstyle.cpp:693
+#, fuzzy
+msgid "User-Agent: "
+msgstr "Ar &Frys"
+
+#: headerstyle.cpp:702
+msgid "X-Mailer: "
+msgstr ""
+
+#: headerstyle.cpp:713
+#, fuzzy
+msgid "Spam Status:"
+msgstr "Cyflwr:"
+
+#: headerstyle.cpp:854
+#, fuzzy
+#| msgid "To: "
+msgid "To: "
+msgstr "I:"
+
+#: headerstyle.cpp:1044
+#, fuzzy
+#| msgid "sender: "
+msgid "sent: "
+msgstr "anfonwr:"
+
+#: invitationsettings.cpp:98
+msgid ""
+"<qt>Invitations are normally sent as attachments to a mail. This switch "
+"changes the invitation mails to be sent in the text of the mail instead; "
+"this is necessary to send invitations and replies to Microsoft Outlook.<br /"
+">But, when you do this, you no longer get descriptive text that mail "
+"programs can read; so, to people who have email programs that do not "
+"understand the invitations, the resulting messages look very odd.<br /"
+">People that have email programs that do understand invitations will still "
+"be able to work with this.</qt>"
+msgstr ""
+
+#: chiasmuskeyselector.cpp:28
+msgid "Please select the Chiasmus key file to use:"
+msgstr ""
+
+#: chiasmuskeyselector.cpp:38
+#, fuzzy
+msgid "Additional arguments for chiasmus:"
+msgstr "Cêl-ysgrifennu negeseuon yn ymysgogol lle &bo'n bosibl."
+
+#: vcardviewer.cpp:48
+#, fuzzy
+msgid "VCard Viewer"
+msgstr "Gwelydd vCard"
+
+#: vcardviewer.cpp:52
+msgid "&Import"
+msgstr "&Mewnforio"
+
+#: vcardviewer.cpp:53
+#, fuzzy
+msgid "&Next Card"
+msgstr "&Neges Nesaf"
+
+#: vcardviewer.cpp:54
+#, fuzzy
+msgid "&Previous Card"
+msgstr "Neges &Blaenorol"
+
+#: util.cpp:77
+#, kde-format
+msgid ""
+"A file named \"%1\" already exists. Are you sure you want to overwrite it?"
+msgstr ""
+"Mae ffeil o'r enw \"%1\" mewn bod eisoes.  Ydych wir eisiau ysgrifennu "
+"drosti?"
+
+#: util.cpp:79
+msgid "Overwrite File?"
+msgstr "Trosysgrifo'r Ffeil?"
+
+#: util.cpp:171
+#, fuzzy
+msgid "Save Attachments To"
+msgstr "Cadw Atodiad Fel..."
+
+#: util.cpp:185
+msgctxt "filename for an unnamed attachment"
+msgid "attachment.1"
+msgstr ""
+
+#: util.cpp:190
+#, fuzzy
+#| msgid "Save Attachment As"
+msgid "Save Attachment"
+msgstr "Cadw Atodiad Fel..."
+
+#: util.cpp:210
+#, kde-format
+msgctxt "filename for the %1-th unnamed attachment"
+msgid "attachment.%1"
+msgstr ""
+
+#: util.cpp:309
+#, fuzzy, kde-format
+msgid ""
+"The part %1 of the message is encrypted. Do you want to keep the encryption "
+"when saving?"
+msgstr ""
+"Mae'r rhan yma o'r neges wedi'i chêl-ysgrifo.  Ydych eisiau dal y cêl-"
+"ysgrifaeth wrth gadw?"
+
+#: util.cpp:311 util.cpp:320
+msgid "KMail Question"
+msgstr "Cwestiwn KMail"
+
+#: util.cpp:311
+#, fuzzy
+msgid "Keep Encryption"
+msgstr "Cêl-ysgrifaeth"
+
+#: util.cpp:311 util.cpp:320
+#, fuzzy
+msgid "Do Not Keep"
+msgstr "Peidio â Chêl-ysg&rifo"
+
+#: util.cpp:318
+#, fuzzy, kde-format
+msgid ""
+"The part %1 of the message is signed. Do you want to keep the signature when "
+"saving?"
+msgstr ""
+"Mae'r rhan yma o'r neges wedi'i llofnodi.  Ydych eisiau dal y llofnod wrth "
+"gadw?"
+
+#: util.cpp:320
+#, fuzzy
+msgid "Keep Signature"
+msgstr "Llofnod"
+
+#: util.cpp:371 util.cpp:395 util.cpp:413
+#, fuzzy, kde-format
+msgctxt "1 = file name, 2 = error string"
+msgid "<qt>Could not write to the file<br><filename>%1</filename><br><br>%2"
+msgstr "Methu ysgrifennu'r ffeil."
+
+#: util.cpp:374 util.cpp:398 util.cpp:416
+#, fuzzy
+msgid "Error saving attachment"
+msgstr "atodiad"
+
+#: util.cpp:444
+msgid "Found no attachments to save."
+msgstr "Ni chanfuwyd atodiadau i'w cadw."
+
+#: util.cpp:464
+msgid ""
+"*.mbox|email messages (*.mbox)\n"
+"*|all files (*)"
+msgstr ""
 
 #. i18n: file: invitationsettings.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
@@ -1056,943 +1993,6 @@ msgstr "Goso&d Amgodiad"
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:229
 msgid "Minimum font size:"
-msgstr ""
-
-#: htmlstatusbar.cpp:113
-#, fuzzy
-#| msgid ""
-#| "<qt><b><br>H<br>T<br>M<br>L<br> <br>M<br>e<br>s<br>s<br>a<br>g<br>e</b></"
-#| "qt>"
-msgctxt ""
-"'HTML Message' with html linebreaks between each letter and in bold text."
-msgid ""
-"<qt><b><br />H<br />T<br />M<br />L<br /> <br />M<br />e<br />s<br />s<br /"
-">a<br />g<br />e</b></qt>"
-msgstr "<qt><b><br>N<br>e<br>g<br>e<br>s<br> <br>H<br>T<br>M<br>L</b></qt>"
-
-#: htmlstatusbar.cpp:117
-#, fuzzy
-#| msgid ""
-#| "<qt><br>N<br>o<br> <br>H<br>T<br>M<br>L<br> "
-#| "<br>M<br>e<br>s<br>s<br>a<br>g<br>e</qt>"
-msgctxt "'No HTML Message' with html linebreaks between each letter."
-msgid ""
-"<qt><br />N<br />o<br /> <br />H<br />T<br />M<br />L<br /> <br />M<br /"
-">e<br />s<br />s<br />a<br />g<br />e</qt>"
-msgstr ""
-"<qt><br>D<br>i<br>m<br> <br>N<br>e<br>g<br>e<br>s<br> <br>H<br>T<br>M<br>L</"
-"qt>"
-
-#: htmlstatusbar.cpp:122
-#, fuzzy
-#| msgid ""
-#| "<qt><b><br>H<br>T<br>M<br>L<br> <br>M<br>e<br>s<br>s<br>a<br>g<br>e</b></"
-#| "qt>"
-msgctxt "'Plain Message' with html linebreaks between each letter."
-msgid ""
-"<qt><br />P<br />l<br />a<br />i<br />n<br /> <br />M<br />e<br />s<br /"
-">s<br />a<br />g<br />e<br /></qt>"
-msgstr "<qt><b><br>N<br>e<br>g<br>e<br>s<br> <br>H<br>T<br>M<br>L</b></qt>"
-
-#: htmlstatusbar.cpp:136
-msgid "Click to toggle between HTML and plain text."
-msgstr ""
-
-#: urlhandlermanager.cpp:509
-msgid "Turn on HTML rendering for this message."
-msgstr "Defnyddio llunio HTML ar gyfer y neges yma."
-
-#: urlhandlermanager.cpp:511
-#, fuzzy
-msgid "Load external references from the Internet for this message."
-msgstr "&Caniatáu i negeseuon lwytho cyfeirnodau allanol o'r Ryngrwyd"
-
-#: urlhandlermanager.cpp:513
-msgid "Work online."
-msgstr ""
-
-#: urlhandlermanager.cpp:515
-#, fuzzy
-#| msgid "&Encrypt Message"
-msgid "Decrypt message."
-msgstr "C&êl-ysgrifo Neges"
-
-#: urlhandlermanager.cpp:517
-#, fuzzy
-#| msgid "No signature found"
-msgid "Show signature details."
-msgstr "Ni chanfuwyd llofnod"
-
-#: urlhandlermanager.cpp:519
-#, fuzzy
-#| msgid "&Enable signature"
-msgid "Hide signature details."
-msgstr "&Galluogi llofnod"
-
-#: urlhandlermanager.cpp:521
-#, fuzzy
-msgid "Show attachment list."
-msgstr "atodiad"
-
-#: urlhandlermanager.cpp:523
-#, fuzzy
-#| msgid "Save Attachment As"
-msgid "Hide attachment list."
-msgstr "Cadw Atodiad Fel..."
-
-#: urlhandlermanager.cpp:525
-#, fuzzy
-#| msgid "Show alway&s"
-msgid "Show full \"To\" list"
-msgstr "Dangos o &hyd"
-
-#: urlhandlermanager.cpp:527
-#, fuzzy
-#| msgid "Show alway&s"
-msgid "Hide full \"To\" list"
-msgstr "Dangos o &hyd"
-
-#: urlhandlermanager.cpp:529
-#, fuzzy
-#| msgid "Show alway&s"
-msgid "Show full \"Cc\" list"
-msgstr "Dangos o &hyd"
-
-#: urlhandlermanager.cpp:531
-#, fuzzy
-#| msgid "Show alway&s"
-msgid "Hide full \"Cc\" list"
-msgstr "Dangos o &hyd"
-
-#: urlhandlermanager.cpp:533 objecttreeparser.cpp:1411
-#, fuzzy
-msgid "Show Raw Message"
-msgstr "Neges a Flaenyrrwyd"
-
-#: urlhandlermanager.cpp:566
-msgid "Expand all quoted text."
-msgstr ""
-
-#: urlhandlermanager.cpp:569
-msgid "Collapse quoted text."
-msgstr ""
-
-#: urlhandlermanager.cpp:633
-msgid "Could not start certificate manager. Please check your installation."
-msgstr "Methu cychwyn rheolydd tystysgrif.  Gwiriwch eich gosodiad!"
-
-#: urlhandlermanager.cpp:635
-msgid "KMail Error"
-msgstr "Gwall KMail"
-
-#: urlhandlermanager.cpp:645
-#, kde-format
-msgid "Show certificate 0x%1"
-msgstr "Dangos tystysgrif 0x%1"
-
-#: urlhandlermanager.cpp:708
-#, fuzzy
-#| msgid "Open in Address Book"
-msgid "&Open in Address Book"
-msgstr "Agor yn y Lyfr Cyfeiriadau"
-
-#: urlhandlermanager.cpp:711
-#, fuzzy
-#| msgid "Email Address"
-msgid "&Copy Email Address"
-msgstr "Cyfeiriad Ebost"
-
-#: urlhandlermanager.cpp:736
-#, fuzzy
-#| msgid "Open in Address Book"
-msgid "Lookup the contact in KAddressbook"
-msgstr "Agor yn y Lyfr Cyfeiriadau"
-
-#: urlhandlermanager.cpp:843
-#, kde-format
-msgid "Attachment: %1"
-msgstr "Atodiad: %1"
-
-#: urlhandlermanager.cpp:846
-#, fuzzy, kde-format
-#| msgid "Encapsulated message"
-msgid "Encapsulated Message (Subject: %1)"
-msgstr "Neges ymgrynhoëdig"
-
-#: urlhandlermanager.cpp:849
-#, fuzzy
-#| msgid "Encapsulated message"
-msgid "Encapsulated Message"
-msgstr "Neges ymgrynhoëdig"
-
-#: urlhandlermanager.cpp:852
-#, fuzzy
-msgid "Unnamed attachment"
-msgstr "atodiad"
-
-#: urlhandlermanager.cpp:883
-msgid "Show GnuPG Audit Log for this operation"
-msgstr ""
-
-#: urlhandlermanager.cpp:920
-msgid "Opening URL..."
-msgstr "Agor URL..."
-
-#: urlhandlermanager.cpp:929
-#, fuzzy, kde-format
-#| msgid "<qt>Do you really want to execute <b>%1</b>?</qt>"
-msgctxt "@info"
-msgid "Do you really want to execute <filename>%1</filename>?"
-msgstr "<qt>Ydych wir eisiau gweithredu <b>%1</b>?</qt>"
-
-#: urlhandlermanager.cpp:930
-msgid "Execute"
-msgstr "Gweithredu"
-
-#: headerstyle.cpp:91
-#, fuzzy
-msgctxt "Unknown date"
-msgid "Unknown"
-msgstr "&Blaenyrru"
-
-#: headerstyle.cpp:109 headerstyle.cpp:113 headerstyle.cpp:124
-msgid "No Subject"
-msgstr "Dim Pwnc"
-
-#: headerstyle.cpp:189 headerstyle.cpp:285 headerstyle.cpp:646
-#: headerstyle.cpp:840 headerstyle.cpp:982
-msgid "[vCard]"
-msgstr "[vCerdyn]"
-
-#: headerstyle.cpp:194 headerstyle.cpp:299 headerstyle.cpp:669
-#: headerstyle.cpp:865
-msgid "CC: "
-msgstr "CC:"
-
-#: headerstyle.cpp:197 headerstyle.cpp:303 headerstyle.cpp:679
-#: headerstyle.cpp:876
-msgid "BCC: "
-msgstr "BCC:"
-
-#: headerstyle.cpp:274 headerstyle.cpp:685
-msgid "Date: "
-msgstr "Dyddiad:"
-
-#: headerstyle.cpp:281 headerstyle.cpp:638 headerstyle.cpp:845
-msgid "From: "
-msgstr "Oddiwrth:"
-
-#: headerstyle.cpp:295
-#, fuzzy
-#| msgid "To: "
-msgctxt "To-field of the mailheader."
-msgid "To: "
-msgstr "I:"
-
-#: headerstyle.cpp:307
-msgid "Reply to: "
-msgstr "Ateb i:"
-
-#: headerstyle.cpp:409
-#, kde-format
-msgid ""
-"%1% probability of being spam with confidence %3%.\n"
-"\n"
-"Full report:\n"
-"Probability=%2\n"
-"Confidence=%4"
-msgstr ""
-
-#: headerstyle.cpp:416
-#, kde-format
-msgid ""
-"%1% probability of being spam.\n"
-"\n"
-"Full report:\n"
-"Probability=%2"
-msgstr ""
-
-#: headerstyle.cpp:427
-msgid "No Spam agent"
-msgstr ""
-
-#: headerstyle.cpp:430
-msgid "Spam filter score not a number"
-msgstr ""
-
-#: headerstyle.cpp:433
-msgid "Threshold not a valid number"
-msgstr ""
-
-#: headerstyle.cpp:436
-msgid "Spam filter score could not be extracted from header"
-msgstr ""
-
-#: headerstyle.cpp:439
-msgid "Threshold could not be extracted from header"
-msgstr ""
-
-#: headerstyle.cpp:442
-msgid "Error evaluating spam score"
-msgstr ""
-
-#: headerstyle.cpp:446
-#, kde-format
-msgid ""
-"%1.\n"
-"\n"
-"Full report:\n"
-"%2"
-msgstr ""
-
-#: headerstyle.cpp:641
-#, kde-format
-msgid "(resent from %1)"
-msgstr ""
-
-#: headerstyle.cpp:659
-#, fuzzy
-#| msgid "To: "
-msgctxt "To-field of the mail header."
-msgid "To: "
-msgstr "I:"
-
-#: headerstyle.cpp:693
-#, fuzzy
-msgid "User-Agent: "
-msgstr "Ar &Frys"
-
-#: headerstyle.cpp:702
-msgid "X-Mailer: "
-msgstr ""
-
-#: headerstyle.cpp:713
-#, fuzzy
-msgid "Spam Status:"
-msgstr "Cyflwr:"
-
-#: headerstyle.cpp:854
-#, fuzzy
-#| msgid "To: "
-msgid "To: "
-msgstr "I:"
-
-#: headerstyle.cpp:1044
-#, fuzzy
-#| msgid "sender: "
-msgid "sent: "
-msgstr "anfonwr:"
-
-#: invitationsettings.cpp:98
-msgid ""
-"<qt>Invitations are normally sent as attachments to a mail. This switch "
-"changes the invitation mails to be sent in the text of the mail instead; "
-"this is necessary to send invitations and replies to Microsoft Outlook.<br /"
-">But, when you do this, you no longer get descriptive text that mail "
-"programs can read; so, to people who have email programs that do not "
-"understand the invitations, the resulting messages look very odd.<br /"
-">People that have email programs that do understand invitations will still "
-"be able to work with this.</qt>"
-msgstr ""
-
-#: chiasmuskeyselector.cpp:28
-msgid "Please select the Chiasmus key file to use:"
-msgstr ""
-
-#: chiasmuskeyselector.cpp:38
-#, fuzzy
-msgid "Additional arguments for chiasmus:"
-msgstr "Cêl-ysgrifennu negeseuon yn ymysgogol lle &bo'n bosibl."
-
-#: objecttreeparser.cpp:533
-#, fuzzy
-msgid "Wrong Crypto Plug-In."
-msgstr "Rhaglennig Celu Anghywir!"
-
-#: objecttreeparser.cpp:685 objecttreeparser.cpp:2203
-msgid "Different results for signatures"
-msgstr "Canlyniadau gwahanol ar gyfer y llofnodion"
-
-#: objecttreeparser.cpp:758
-#, fuzzy
-msgid "The crypto engine returned no cleartext data."
-msgstr "Ni ddychwelodd y peiriant celu ddata testun clir!"
-
-#: objecttreeparser.cpp:761 objecttreeparser.cpp:2678
-#: objecttreeparser.cpp:2721
-msgid "Status: "
-msgstr "Cyflwr:"
-
-#: objecttreeparser.cpp:768
-#, fuzzy
-#| msgid "(unknown)"
-msgctxt "Status of message unknown."
-msgid "(unknown)"
-msgstr "(anhysbys)"
-
-#: objecttreeparser.cpp:779 objecttreeparser.cpp:1062
-#, kde-format
-msgid "Crypto plug-in \"%1\" is not initialized."
-msgstr "Ni ymgychwynnir y rhaglennig celu \"%1\"."
-
-#: objecttreeparser.cpp:783
-#, fuzzy, kde-format
-msgid "Crypto plug-in \"%1\" cannot verify signatures."
-msgstr "Ni all y rhaglennig celu \"%1\" wirio llofnodion."
-
-#: objecttreeparser.cpp:788 objecttreeparser.cpp:1070
-msgid "No appropriate crypto plug-in was found."
-msgstr "Ni chanfuwyd rhaglennig celu addas."
-
-#: objecttreeparser.cpp:791
-#, kde-format
-msgctxt "%1 is either 'OpenPGP' or 'S/MIME'"
-msgid "No %1 plug-in was found."
-msgstr "Ni chanfuwyd rhaglennig %1."
-
-#: objecttreeparser.cpp:795
-#, fuzzy, kde-format
-msgid ""
-"The message is signed, but the validity of the signature cannot be verified."
-"<br />Reason: %1"
-msgstr ""
-"Llofnodir y neges, ond ni ellir gwirio dilysrwydd y llofnod.<br />Rheswm: %1"
-
-#: objecttreeparser.cpp:831
-#, fuzzy
-msgid "This message is encrypted."
-msgstr "Cadw negeseuon an&foniedig wedi'u cêl-ysgrifo"
-
-#: objecttreeparser.cpp:836
-#, fuzzy
-#| msgid "&Encrypt Message"
-msgid "Decrypt Message"
-msgstr "C&êl-ysgrifo Neges"
-
-#: objecttreeparser.cpp:860
-#, fuzzy
-msgid "Encrypted data not shown"
-msgstr "Ni ddangosir data na ellir ei ddatgelu."
-
-#: objecttreeparser.cpp:876
-#, kde-format
-msgid "Sorry, certificate could not be imported.<br />Reason: %1"
-msgstr ""
-
-#: objecttreeparser.cpp:886
-#, fuzzy
-msgid "Sorry, no certificates were found in this message."
-msgstr "Tystysgrif a ddefnyddir ar gyfer llofnodi negeseuon:"
-
-#: objecttreeparser.cpp:889
-#, fuzzy
-msgid "Certificate import status:"
-msgstr "Dewin Tystygrif"
-
-#: objecttreeparser.cpp:891
-#, kde-format
-msgid "1 new certificate was imported."
-msgid_plural "%1 new certificates were imported."
-msgstr[0] ""
-msgstr[1] ""
-
-#: objecttreeparser.cpp:894
-#, kde-format
-msgid "1 certificate was unchanged."
-msgid_plural "%1 certificates were unchanged."
-msgstr[0] ""
-msgstr[1] ""
-
-#: objecttreeparser.cpp:897
-#, kde-format
-msgid "1 new secret key was imported."
-msgid_plural "%1 new secret keys were imported."
-msgstr[0] ""
-msgstr[1] ""
-
-#: objecttreeparser.cpp:900
-#, kde-format
-msgid "1 secret key was unchanged."
-msgid_plural "%1 secret keys were unchanged."
-msgstr[0] ""
-msgstr[1] ""
-
-#: objecttreeparser.cpp:910
-msgid "Sorry, no details on certificate import available."
-msgstr ""
-
-#: objecttreeparser.cpp:913
-#, fuzzy
-msgid "Certificate import details:"
-msgstr "Dewin Tystygrif"
-
-#: objecttreeparser.cpp:917
-#, fuzzy, kde-format
-#| msgid "Mail"
-msgctxt "Certificate import failed."
-msgid "Failed: %1 (%2)"
-msgstr "Post"
-
-#: objecttreeparser.cpp:921
-#, kde-format
-msgid "New or changed: %1 (secret key available)"
-msgstr ""
-
-#: objecttreeparser.cpp:923
-#, kde-format
-msgid "New or changed: %1"
-msgstr ""
-
-#: objecttreeparser.cpp:960
-#, fuzzy
-#| msgid "Crypto plug-in \"%1\" could not decrypt the data."
-msgid "Could not decrypt the data."
-msgstr "Methodd y rhaglennig celu \"%1\" ddatgelu'r data."
-
-#: objecttreeparser.cpp:1049
-#, kde-format
-msgid "Crypto plug-in \"%1\" could not decrypt the data."
-msgstr "Methodd y rhaglennig celu \"%1\" ddatgelu'r data."
-
-#: objecttreeparser.cpp:1051
-#, kde-format
-msgid "Error: %1"
-msgstr "Gwall: %1"
-
-#: objecttreeparser.cpp:1066
-#, fuzzy, kde-format
-msgid "Crypto plug-in \"%1\" cannot decrypt messages."
-msgstr "Ni all y rhaglennig celu \"%1\" ddatgelu negeseuon."
-
-#: objecttreeparser.cpp:1174
-#, fuzzy
-msgid ""
-"<b>Note:</b> This HTML message may contain external references to images "
-"etc. For security/privacy reasons external references are not loaded. If you "
-"trust the sender of this message then you can load the external references "
-"for this message <a href=\"kmail:loadExternal\">by clicking here</a>."
-msgstr ""
-"<b>Noder:</b> Neges HTML yw hon.  Ar gyfer rhesymau diogelwch, dangosir y "
-"côd crai un unig. Os ymddiriedir anfonwr y neges yma, gallwch weithredu "
-"ymddangosiad HTML wedi'i fformatio ar gyfer y neges hon <a href=\"kmail:"
-"showHTML\">gan glicio yma</a>."
-
-#: objecttreeparser.cpp:1184
-msgid ""
-"<b>Note:</b> This is an HTML message. For security reasons, only the raw "
-"HTML code is shown. If you trust the sender of this message then you can "
-"activate formatted HTML display for this message <a href=\"kmail:showHTML"
-"\">by clicking here</a>."
-msgstr ""
-"<b>Noder:</b> Neges HTML yw hon.  Ar gyfer rhesymau diogelwch, dangosir y "
-"côd crai un unig. Os ymddiriedir anfonwr y neges yma, gallwch weithredu "
-"ymddangosiad HTML wedi'i fformatio ar gyfer y neges hon <a href=\"kmail:"
-"showHTML\">gan glicio yma</a>."
-
-#: objecttreeparser.cpp:1399
-msgid ""
-"This message is a <i>Toltec</i> Groupware object, it can only be viewed with "
-"Microsoft Outlook in combination with the Toltec connector."
-msgstr ""
-
-#: objecttreeparser.cpp:2129
-#, fuzzy
-#| msgid "Unnamed"
-msgctxt "display name for an unnamed attachment"
-msgid "Unnamed"
-msgstr "Heb ei enwi"
-
-#: objecttreeparser.cpp:2185
-msgid "Error: Signature not verified"
-msgstr "Gwall: Ni wiriwyd y llofnod"
-
-#: objecttreeparser.cpp:2188
-msgid "Good signature"
-msgstr "Llofnod dilys"
-
-#: objecttreeparser.cpp:2191
-msgid "<b>Bad</b> signature"
-msgstr "Llofnod <b>llwgr</b>"
-
-#: objecttreeparser.cpp:2194
-msgid "No public key to verify the signature"
-msgstr "Dim allwedd gyhoeddus i wirio'r llofnod"
-
-#: objecttreeparser.cpp:2197
-msgid "No signature found"
-msgstr "Ni chanfuwyd llofnod"
-
-#: objecttreeparser.cpp:2200
-msgid "Error verifying the signature"
-msgstr "Gwall wrth wirio'r llofnod"
-
-#: objecttreeparser.cpp:2223
-msgid "No status information available."
-msgstr "Dim data cyflwr ar gael."
-
-#: objecttreeparser.cpp:2230 objecttreeparser.cpp:2314
-msgid "Good signature."
-msgstr "Llofnod dilys."
-
-#: objecttreeparser.cpp:2251
-msgid "One key has expired."
-msgstr "Mae un allwedd wedi darfod."
-
-#: objecttreeparser.cpp:2255
-msgid "The signature has expired."
-msgstr "Mae'r llofnod wedi darfod."
-
-#: objecttreeparser.cpp:2260
-msgid "Unable to verify: key missing."
-msgstr "Methu gwirio: allwedd ar goll."
-
-#: objecttreeparser.cpp:2267
-msgid "CRL not available."
-msgstr "CRL dim ar gael."
-
-#: objecttreeparser.cpp:2271
-msgid "Available CRL is too old."
-msgstr "Mae'r CRL sydd ar gael yn rhy hen."
-
-#: objecttreeparser.cpp:2275
-msgid "A policy was not met."
-msgstr "Ni fodlonwyd polisi."
-
-#: objecttreeparser.cpp:2279
-msgid "A system error occurred."
-msgstr "Digwyddodd gwall cysawd."
-
-#: objecttreeparser.cpp:2290
-msgid "One key has been revoked."
-msgstr "Mae un allwedd wedi'i dirymu."
-
-#: objecttreeparser.cpp:2316
-msgid "<b>Bad</b> signature."
-msgstr "Llofnod <b>llwgr</b>."
-
-#: objecttreeparser.cpp:2343
-#, fuzzy
-#| msgid "&Enable signature"
-msgid "Invalid signature."
-msgstr "&Galluogi llofnod"
-
-#: objecttreeparser.cpp:2346
-#, fuzzy
-#| msgid "Not enough information to check signature. %1"
-msgid "Not enough information to check signature validity."
-msgstr "Dim digon o wybodaeth i wirio'r llofnod. %1"
-
-#: objecttreeparser.cpp:2358
-#, fuzzy
-#| msgid "Signatures"
-msgid "Signature is valid."
-msgstr "Llofnodion"
-
-#: objecttreeparser.cpp:2360
-#, kde-format
-msgid "Signed by <a href=\"mailto:%1\">%2</a>."
-msgstr ""
-
-#: objecttreeparser.cpp:2365
-msgid "Unknown signature state"
-msgstr ""
-
-#: objecttreeparser.cpp:2369
-#, fuzzy
-#| msgid "Show alway&s"
-msgid "Show Details"
-msgstr "Dangos o &hyd"
-
-#: objecttreeparser.cpp:2389
-#, fuzzy
-#| msgid "Not available"
-msgid "No Audit Log available"
-msgstr "Dim ar gael"
-
-#: objecttreeparser.cpp:2391
-#, fuzzy, kde-format
-msgid "Error Retrieving Audit Log: %1"
-msgstr "Dim negeseuon newydd o'r gweinydd"
-
-#: objecttreeparser.cpp:2401
-msgctxt "The Audit Log is a detailed error log from the gnupg backend"
-msgid "Show Audit Log"
-msgstr ""
-
-#: objecttreeparser.cpp:2412
-#, fuzzy
-#| msgid "[Details]"
-msgid "Hide Details"
-msgstr "[Manylion]"
-
-#: objecttreeparser.cpp:2438 objecttreeparser.cpp:2440
-msgid "Encapsulated message"
-msgstr "Neges ymgrynhoëdig"
-
-#: objecttreeparser.cpp:2449
-#, fuzzy
-msgid "Please wait while the message is being decrypted..."
-msgstr "Disgwyliwch tra trosglwyddir y neges."
-
-#: objecttreeparser.cpp:2451
-msgid "Encrypted message"
-msgstr "Neges wedi'i chêl-ysgrifo"
-
-#: objecttreeparser.cpp:2453
-msgid "Encrypted message (decryption not possible)"
-msgstr "Neges wedi'i chêl-ysgrifo (ni ellir datgelu)"
-
-#: objecttreeparser.cpp:2455
-#, kde-format
-msgid "Reason: %1"
-msgstr "Rheswm: %1"
-
-#: objecttreeparser.cpp:2465
-#, fuzzy
-msgid "Please wait while the signature is being verified..."
-msgstr "Disgwyliwch tra trosglwyddir y neges."
-
-#: objecttreeparser.cpp:2560 objecttreeparser.cpp:2562
-#, fuzzy
-#| msgid "Certificates"
-msgid "certificate"
-msgstr "Tystysgrifau"
-
-#: objecttreeparser.cpp:2568 objecttreeparser.cpp:2593
-#, fuzzy
-#| msgid "Warning:"
-msgctxt "Start of warning message."
-msgid "Warning:"
-msgstr "Rhybudd:"
-
-#: objecttreeparser.cpp:2570
-#, kde-format
-msgid "Sender's mail address is not stored in the %1 used for signing."
-msgstr ""
-"Ni cedwir cyfeiriad ebost yr anfonwr yn y %1 a ddefnyddir ar gyfer llofnodi."
-
-#: objecttreeparser.cpp:2573
-msgid "sender: "
-msgstr "anfonwr:"
-
-#: objecttreeparser.cpp:2576
-msgid "stored: "
-msgstr "cedwyd:"
-
-#: objecttreeparser.cpp:2595
-#, kde-format
-msgid ""
-"No mail address is stored in the %1 used for signing, so we cannot compare "
-"it to the sender's address %2."
-msgstr ""
-"Ni chedwir cyfeiriad ebost yn y %1 a ddefnyddir ar gyfer llofnodi, felly ni "
-"ellir ei gymharu â chyfeiriad yr anfonwr %2."
-
-#: objecttreeparser.cpp:2619
-#, kde-format
-msgid "Not enough information to check signature. %1"
-msgstr "Dim digon o wybodaeth i wirio'r llofnod. %1"
-
-#: objecttreeparser.cpp:2637 objecttreeparser.cpp:2715
-msgid "Message was signed with unknown key."
-msgstr "Llofnodwyd y neges efo allwedd anhysbys."
-
-#: objecttreeparser.cpp:2639 objecttreeparser.cpp:2753
-#: objecttreeparser.cpp:2797
-#, kde-format
-msgid "Message was signed by %1."
-msgstr "Llofnodwyd y neges gan %1."
-
-#: objecttreeparser.cpp:2646 objecttreeparser.cpp:2655
-#: objecttreeparser.cpp:2666
-#, kde-format
-msgid "Message was signed with key %1."
-msgstr "Llofnodwyd y neges efo allwedd %1."
-
-#: objecttreeparser.cpp:2649
-#, fuzzy, kde-format
-msgid "Message was signed on %1 with key %2."
-msgstr "Llofnodwyd y neges gan %2 efo allwedd %1."
-
-#: objecttreeparser.cpp:2658
-#, fuzzy, kde-format
-msgid "Message was signed by %3 on %1 with key %2"
-msgstr "Llofnodwyd y neges gan %2 efo allwedd %1."
-
-#: objecttreeparser.cpp:2669
-#, kde-format
-msgid "Message was signed by %2 with key %1."
-msgstr "Llofnodwyd y neges gan %2 efo allwedd %1."
-
-#: objecttreeparser.cpp:2707
-#, fuzzy, kde-format
-msgid "Message was signed on %1 with unknown key %2."
-msgstr "Llofnodwyd y neges efo allwedd anhysbys %1."
-
-#: objecttreeparser.cpp:2711
-#, kde-format
-msgid "Message was signed with unknown key %1."
-msgstr "Llofnodwyd y neges efo allwedd anhysbys %1."
-
-#: objecttreeparser.cpp:2717
-msgid "The validity of the signature cannot be verified."
-msgstr "Ni ellir gwirio dilysrwydd y llofnod."
-
-#: objecttreeparser.cpp:2749 objecttreeparser.cpp:2793
-#, kde-format
-msgid "Message was signed by %2 (Key ID: %1)."
-msgstr "Llofnodwyd y neges gan %2 (ID yr Allwedd: %1)."
-
-#: objecttreeparser.cpp:2759
-msgid "The signature is valid, but the key's validity is unknown."
-msgstr "Mae'r llofnod yn ddilys, ond mae dilysrwydd yr allwedd yn anhysbys."
-
-#: objecttreeparser.cpp:2763
-msgid "The signature is valid and the key is marginally trusted."
-msgstr "Mae'r llofnod yn ddilys ac ymddirieidir yr allwedd i ryw radd."
-
-#: objecttreeparser.cpp:2767
-msgid "The signature is valid and the key is fully trusted."
-msgstr "Mae'r llofnod yn ddilys ac ymddiriedir yr allwedd yn llawn."
-
-#: objecttreeparser.cpp:2771
-msgid "The signature is valid and the key is ultimately trusted."
-msgstr "Mae'r llofnod yn ddilys ac ymddiriedir yr allwedd yn eithaf."
-
-#: objecttreeparser.cpp:2775
-msgid "The signature is valid, but the key is untrusted."
-msgstr "Mae'r llofnod yn ddilys, ond ni ymddiriedir yr allwedd."
-
-#: objecttreeparser.cpp:2799
-msgid "Warning: The signature is bad."
-msgstr "Rhybudd:  Mae'r llofnod yn llwgr."
-
-#: objecttreeparser.cpp:2823
-msgid "End of signed message"
-msgstr "Diwedd y neges lofnodedig"
-
-#: objecttreeparser.cpp:2829
-msgid "End of encrypted message"
-msgstr "Diwedd y neges cêl-ysgrifedig"
-
-#: objecttreeparser.cpp:2836
-msgid "End of encapsulated message"
-msgstr "Diwedd y neges ymgrynhoëdig"
-
-#: objecttreeparser.cpp:3007
-#, fuzzy
-msgid "The message could not be decrypted."
-msgstr "Cadw negeseuon an&foniedig wedi'u cêl-ysgrifo"
-
-#: vcardviewer.cpp:48
-#, fuzzy
-msgid "VCard Viewer"
-msgstr "Gwelydd vCard"
-
-#: vcardviewer.cpp:52
-msgid "&Import"
-msgstr "&Mewnforio"
-
-#: vcardviewer.cpp:53
-#, fuzzy
-msgid "&Next Card"
-msgstr "&Neges Nesaf"
-
-#: vcardviewer.cpp:54
-#, fuzzy
-msgid "&Previous Card"
-msgstr "Neges &Blaenorol"
-
-#: util.cpp:77
-#, kde-format
-msgid ""
-"A file named \"%1\" already exists. Are you sure you want to overwrite it?"
-msgstr ""
-"Mae ffeil o'r enw \"%1\" mewn bod eisoes.  Ydych wir eisiau ysgrifennu "
-"drosti?"
-
-#: util.cpp:79
-msgid "Overwrite File?"
-msgstr "Trosysgrifo'r Ffeil?"
-
-#: util.cpp:171
-#, fuzzy
-msgid "Save Attachments To"
-msgstr "Cadw Atodiad Fel..."
-
-#: util.cpp:185
-msgctxt "filename for an unnamed attachment"
-msgid "attachment.1"
-msgstr ""
-
-#: util.cpp:190
-#, fuzzy
-#| msgid "Save Attachment As"
-msgid "Save Attachment"
-msgstr "Cadw Atodiad Fel..."
-
-#: util.cpp:210
-#, kde-format
-msgctxt "filename for the %1-th unnamed attachment"
-msgid "attachment.%1"
-msgstr ""
-
-#: util.cpp:309
-#, fuzzy, kde-format
-msgid ""
-"The part %1 of the message is encrypted. Do you want to keep the encryption "
-"when saving?"
-msgstr ""
-"Mae'r rhan yma o'r neges wedi'i chêl-ysgrifo.  Ydych eisiau dal y cêl-"
-"ysgrifaeth wrth gadw?"
-
-#: util.cpp:311 util.cpp:320
-msgid "KMail Question"
-msgstr "Cwestiwn KMail"
-
-#: util.cpp:311
-#, fuzzy
-msgid "Keep Encryption"
-msgstr "Cêl-ysgrifaeth"
-
-#: util.cpp:311 util.cpp:320
-#, fuzzy
-msgid "Do Not Keep"
-msgstr "Peidio â Chêl-ysg&rifo"
-
-#: util.cpp:318
-#, fuzzy, kde-format
-msgid ""
-"The part %1 of the message is signed. Do you want to keep the signature when "
-"saving?"
-msgstr ""
-"Mae'r rhan yma o'r neges wedi'i llofnodi.  Ydych eisiau dal y llofnod wrth "
-"gadw?"
-
-#: util.cpp:320
-#, fuzzy
-msgid "Keep Signature"
-msgstr "Llofnod"
-
-#: util.cpp:371 util.cpp:395 util.cpp:413
-#, fuzzy, kde-format
-msgctxt "1 = file name, 2 = error string"
-msgid "<qt>Could not write to the file<br><filename>%1</filename><br><br>%2"
-msgstr "Methu ysgrifennu'r ffeil."
-
-#: util.cpp:374 util.cpp:398 util.cpp:416
-#, fuzzy
-msgid "Error saving attachment"
-msgstr "atodiad"
-
-#: util.cpp:444
-msgid "Found no attachments to save."
-msgstr "Ni chanfuwyd atodiadau i'w cadw."
-
-#: util.cpp:464
-msgid ""
-"*.mbox|email messages (*.mbox)\n"
-"*|all files (*)"
 msgstr ""
 
 #: renamefiledialog.cpp:49
