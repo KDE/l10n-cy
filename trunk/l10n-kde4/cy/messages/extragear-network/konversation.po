@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeextragear-2/konversation.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-01 03:37+0100\n"
+"POT-Creation-Date: 2011-12-08 03:12+0100\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -39,7 +39,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/connectionmanager.cpp:282 src/dcc/chatcontainer.cpp:283
+#: src/connectionmanager.cpp:282 src/dcc/chatcontainer.cpp:273
 #: src/irc/outputfilter.cpp:2038 src/irc/outputfilterresolvejob.cpp:85
 #: src/irc/inputfilter.cpp:1164 src/irc/inputfilter.cpp:1168
 #: src/irc/inputfilter.cpp:1181 src/irc/inputfilter.cpp:1252
@@ -969,77 +969,6 @@ msgstr ""
 msgid "Could not open a socket"
 msgstr ""
 
-#: src/dcc/chatcontainer.cpp:116
-#, fuzzy, kde-format
-msgctxt "%1=extension like Chat or Whiteboard, %2=partnerNick, %3=port"
-msgid "DCC %1 with %2 on port <numid>%3</numid>."
-msgstr "<anhysbys> %1"
-
-#: src/dcc/chatcontainer.cpp:123
-#, fuzzy, kde-format
-msgctxt ""
-"%1=extension like Chat or Whiteboard, %2 = nickname, %3 = IP, %4 = port"
-msgid "DCC %1 with %2 on %3:<numid>%4</numid>."
-msgstr "<anhysbys> %1"
-
-#: src/dcc/chatcontainer.cpp:145 src/dcc/transferrecv.cpp:583
-#: src/dcc/transfersend.cpp:350
-msgctxt "Universal Plug and Play"
-msgid "UPnP"
-msgstr ""
-
-#: src/dcc/chatcontainer.cpp:189
-#, kde-format
-msgctxt "%1=extension like Chat or Whiteboard, %2=partnerNick"
-msgid "Do you want to close your DCC %1 with %2?"
-msgstr ""
-
-#: src/dcc/chatcontainer.cpp:192
-#, fuzzy, kde-format
-msgctxt "%1=extension like Chat or Whiteboard"
-msgid "Close DCC %1"
-msgstr "Cau Ta&b"
-
-#: src/dcc/chatcontainer.cpp:211 src/irc/query.cpp:517
-msgid "Talking to yourself"
-msgstr ""
-
-#: src/dcc/chatcontainer.cpp:227
-#, kde-format
-msgctxt "%1=Encoding"
-msgid "Default ( %1 )"
-msgstr ""
-
-#: src/dcc/chatcontainer.cpp:269 src/irc/outputfilter.cpp:2020
-msgid "Usage"
-msgstr ""
-
-#: src/dcc/chatcontainer.cpp:269 src/irc/outputfilter.cpp:683
-#, kde-format
-msgid "Usage: %1ME text"
-msgstr ""
-
-#: src/dcc/chatcontainer.cpp:283
-#, fuzzy
-msgid "Unknown command."
-msgstr "<anhysbys> %1"
-
-#. i18n: file: src/config/ignore_configui.ui:83
-#. i18n: ectx: property (text), widget (QCheckBox, chkCTCP)
-#: src/dcc/chatcontainer.cpp:331 src/irc/outputfilter.cpp:851
-#: src/irc/inputfilter.cpp:269 src/irc/inputfilter.cpp:276
-#: src/irc/inputfilter.cpp:292 src/irc/inputfilter.cpp:299
-#: src/irc/inputfilter.cpp:447 src/irc/inputfilter.cpp:458
-#: src/irc/inputfilter.cpp:479 src/irc/inputfilter.cpp:527
-#: src/irc/inputfilter.cpp:555 src/viewer/ignorelistviewitem.cpp:45 rc.cpp:316
-msgid "CTCP"
-msgstr ""
-
-#: src/dcc/chatcontainer.cpp:331
-#, kde-format
-msgid "Received unknown CTCP-%1 request from %2"
-msgstr ""
-
 #: src/dcc/recipientdialog.cpp:43
 msgid "Select Recipient"
 msgstr ""
@@ -1159,7 +1088,7 @@ msgctxt "less than 1 sec"
 msgid "&lt; 1sec"
 msgstr "eil"
 
-#: src/dcc/transferpanel.cpp:45 src/viewer/viewcontainer.cpp:2172
+#: src/dcc/transferpanel.cpp:45 src/viewer/viewcontainer.cpp:2173
 msgid "DCC Status"
 msgstr ""
 
@@ -1314,6 +1243,12 @@ msgstr ""
 msgid ""
 "Could not send Reverse DCC SEND acknowledgement to the partner via the IRC "
 "server."
+msgstr ""
+
+#: src/dcc/transferrecv.cpp:583 src/dcc/transfersend.cpp:350
+#: src/dcc/chatcontainer.cpp:145
+msgctxt "Universal Plug and Play"
+msgid "UPnP"
 msgstr ""
 
 #: src/dcc/transferrecv.cpp:583 src/dcc/transfersend.cpp:350
@@ -1771,6 +1706,71 @@ msgstr ""
 #, fuzzy
 msgid "Columns"
 msgstr "Go&rchmynion: :"
+
+#: src/dcc/chatcontainer.cpp:116
+#, fuzzy, kde-format
+msgctxt "%1=extension like Chat or Whiteboard, %2=partnerNick, %3=port"
+msgid "DCC %1 with %2 on port <numid>%3</numid>."
+msgstr "<anhysbys> %1"
+
+#: src/dcc/chatcontainer.cpp:123
+#, fuzzy, kde-format
+msgctxt ""
+"%1=extension like Chat or Whiteboard, %2 = nickname, %3 = IP, %4 = port"
+msgid "DCC %1 with %2 on %3:<numid>%4</numid>."
+msgstr "<anhysbys> %1"
+
+#: src/dcc/chatcontainer.cpp:184
+#, kde-format
+msgctxt "%1=extension like Chat or Whiteboard, %2=partnerNick"
+msgid "Do you want to close your DCC %1 with %2?"
+msgstr ""
+
+#: src/dcc/chatcontainer.cpp:187
+#, fuzzy, kde-format
+msgctxt "%1=extension like Chat or Whiteboard"
+msgid "Close DCC %1"
+msgstr "Cau Ta&b"
+
+#: src/dcc/chatcontainer.cpp:206 src/irc/query.cpp:500
+msgid "Talking to yourself"
+msgstr ""
+
+#: src/dcc/chatcontainer.cpp:222
+#, kde-format
+msgctxt "%1=Encoding"
+msgid "Default ( %1 )"
+msgstr ""
+
+#: src/dcc/chatcontainer.cpp:259 src/irc/outputfilter.cpp:2020
+msgid "Usage"
+msgstr ""
+
+#: src/dcc/chatcontainer.cpp:259 src/irc/outputfilter.cpp:683
+#, kde-format
+msgid "Usage: %1ME text"
+msgstr ""
+
+#: src/dcc/chatcontainer.cpp:273
+#, fuzzy
+msgid "Unknown command."
+msgstr "<anhysbys> %1"
+
+#. i18n: file: src/config/ignore_configui.ui:83
+#. i18n: ectx: property (text), widget (QCheckBox, chkCTCP)
+#: src/dcc/chatcontainer.cpp:321 src/irc/outputfilter.cpp:851
+#: src/irc/inputfilter.cpp:269 src/irc/inputfilter.cpp:276
+#: src/irc/inputfilter.cpp:292 src/irc/inputfilter.cpp:299
+#: src/irc/inputfilter.cpp:447 src/irc/inputfilter.cpp:458
+#: src/irc/inputfilter.cpp:479 src/irc/inputfilter.cpp:527
+#: src/irc/inputfilter.cpp:555 src/viewer/ignorelistviewitem.cpp:45 rc.cpp:316
+msgid "CTCP"
+msgstr ""
+
+#: src/dcc/chatcontainer.cpp:321
+#, kde-format
+msgid "Received unknown CTCP-%1 request from %2"
+msgstr ""
 
 #: src/irc/channelnick.cpp:199
 msgid "Operator"
@@ -2376,7 +2376,7 @@ msgid "%1 has joined this channel (%2)."
 msgstr ""
 
 #: src/irc/channel.cpp:1137 src/irc/channel.cpp:1139 src/irc/channel.cpp:1160
-#: src/irc/channel.cpp:1162 src/irc/query.cpp:533 src/irc/query.cpp:540
+#: src/irc/channel.cpp:1162 src/irc/query.cpp:516 src/irc/query.cpp:523
 #: src/viewer/ircview.cpp:820
 msgid "Quit"
 msgstr ""
@@ -2408,7 +2408,7 @@ msgctxt "%1 adds the channel and %2 the reason"
 msgid "You have left channel %1 (%2)."
 msgstr ""
 
-#: src/irc/channel.cpp:1160 src/irc/query.cpp:533
+#: src/irc/channel.cpp:1160 src/irc/query.cpp:516
 #, fuzzy, kde-format
 msgid "%1 has left this server."
 msgstr "Moddau Sianel : "
@@ -3039,22 +3039,22 @@ msgstr ""
 msgid "Set user limit to channel."
 msgstr ""
 
-#: src/irc/channel.cpp:2339
+#: src/irc/channel.cpp:2318
 #, kde-format
 msgid "Do you want to leave %1?"
 msgstr ""
 
-#: src/irc/channel.cpp:2340
+#: src/irc/channel.cpp:2319
 #, fuzzy
 msgid "Leave Channel"
 msgstr "Sianel"
 
-#: src/irc/channel.cpp:2341
+#: src/irc/channel.cpp:2320
 msgid "Leave"
 msgstr "Gadael"
 
-#: src/irc/channel.cpp:2493 src/irc/query.cpp:480
-#: src/viewer/statuspanel.cpp:322
+#: src/irc/channel.cpp:2472 src/irc/query.cpp:463
+#: src/viewer/statuspanel.cpp:306
 #, kde-format
 msgid "Identity Default ( %1 )"
 msgstr ""
@@ -3983,8 +3983,8 @@ msgstr ""
 
 #. i18n: file: src/irc/channellistpanelui.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, ChannelListWidgetUI)
-#: src/irc/channellistpanel.cpp:146 src/viewer/viewcontainer.cpp:2476
-#: src/viewer/viewcontainer.cpp:2497 rc.cpp:1070
+#: src/irc/channellistpanel.cpp:146 src/viewer/viewcontainer.cpp:2477
+#: src/viewer/viewcontainer.cpp:2498 rc.cpp:1070
 msgid "Channel List"
 msgstr ""
 
@@ -4298,31 +4298,6 @@ msgctxt "(Offline) nickname details (e.g. real name from address book)"
 msgid "(Offline) %1"
 msgstr "All-lein"
 
-#: src/irc/query.cpp:63
-msgid ""
-"<qt><p>Some details of the person you are talking to in this query is shown "
-"in this bar.  The full name and hostmask is shown, along with any image or "
-"logo this person has associated with them in the KDE Address Book.</p><p>See "
-"the <i>Konversation Handbook</i> for information on associating a nick with "
-"a contact in the address book, and for an explanation of what the hostmask "
-"is.</p></qt>"
-msgstr ""
-
-#: src/irc/query.cpp:490
-#, kde-format
-msgid "Do you want to close your query with %1?"
-msgstr ""
-
-#: src/irc/query.cpp:491
-#, fuzzy
-msgid "Close Query"
-msgstr "Ymholiadau"
-
-#: src/irc/query.cpp:540
-#, fuzzy, kde-format
-msgid "%1 has left this server (%2)."
-msgstr "Moddau Sianel : "
-
 #: src/irc/servergroupdialog.cpp:79
 msgid "Change network information"
 msgstr ""
@@ -4415,6 +4390,31 @@ msgstr ""
 #, kde-format
 msgid "Do you really want to delete %1?"
 msgstr ""
+
+#: src/irc/query.cpp:63
+msgid ""
+"<qt><p>Some details of the person you are talking to in this query is shown "
+"in this bar.  The full name and hostmask is shown, along with any image or "
+"logo this person has associated with them in the KDE Address Book.</p><p>See "
+"the <i>Konversation Handbook</i> for information on associating a nick with "
+"a contact in the address book, and for an explanation of what the hostmask "
+"is.</p></qt>"
+msgstr ""
+
+#: src/irc/query.cpp:473
+#, kde-format
+msgid "Do you want to close your query with %1?"
+msgstr ""
+
+#: src/irc/query.cpp:474
+#, fuzzy
+msgid "Close Query"
+msgstr "Ymholiadau"
+
+#: src/irc/query.cpp:523
+#, fuzzy, kde-format
+msgid "%1 has left this server (%2)."
+msgstr "Moddau Sianel : "
 
 #: src/linkaddressbook/addressbook.cpp:105
 msgid "Offline"
@@ -4794,7 +4794,7 @@ msgstr ""
 msgid "Choose Destination Folder"
 msgstr ""
 
-#: src/viewer/rawlog.cpp:25 src/viewer/viewcontainer.cpp:2258
+#: src/viewer/rawlog.cpp:25 src/viewer/viewcontainer.cpp:2259
 msgid "Raw Log"
 msgstr ""
 
@@ -4863,176 +4863,14 @@ msgstr ""
 msgid "From Cursor"
 msgstr "O'r cyrchyd"
 
-#: src/viewer/statuspanel.cpp:231
-#, kde-format
-msgid ""
-"Do you really want to close '%1'?\n"
-"\n"
-" All associated tabs will be closed as well."
-msgstr ""
-
-#: src/viewer/statuspanel.cpp:232
-#, fuzzy
-msgid "Close Tab"
-msgstr "Cau Ta&b"
-
-#: src/viewer/statuspanel.cpp:241
-#, kde-format
-msgid ""
-"Do you want to disconnect from '%1'?\n"
-"\n"
-" All associated tabs will be closed as well."
-msgstr ""
-
-#: src/viewer/statuspanel.cpp:242
-msgid "Disconnect From Server"
-msgstr ""
-
-#: src/viewer/statuspanel.cpp:243
-msgid "Disconnect"
-msgstr "Datgysylltu"
-
 #: src/viewer/topiclabel.cpp:301 src/viewer/ircview.cpp:2153
 #, fuzzy, kde-format
 msgid "Join the channel %1"
 msgstr "Sianeli"
 
-#: src/viewer/chatwindow.cpp:444
-#, kde-format
-msgid ""
-"\n"
-"*** Logfile started\n"
-"*** on %1\n"
-"\n"
-msgstr ""
-
 #: src/viewer/trayicon.cpp:23
 msgid "Konversation - IRC Client"
 msgstr ""
-
-#: src/viewer/viewcontainer.cpp:221 src/mainwindow.cpp:291
-#, fuzzy
-msgid "Move Tab Up"
-msgstr "Symud Tab i'r Chwith"
-
-#: src/viewer/viewcontainer.cpp:229 src/mainwindow.cpp:302
-#, fuzzy
-msgid "Move Tab Down"
-msgstr "Symud Tab i'r Chwith"
-
-#: src/viewer/viewcontainer.cpp:322 src/mainwindow.cpp:322
-#: src/mainwindow.cpp:334
-msgid "Move Tab Left"
-msgstr "Symud Tab i'r Chwith"
-
-#: src/viewer/viewcontainer.cpp:330 src/mainwindow.cpp:313
-#: src/mainwindow.cpp:343
-msgid "Move Tab Right"
-msgstr "Symud Tab i'r Dde"
-
-#: src/viewer/viewcontainer.cpp:561
-msgid "Find Text..."
-msgstr "Canfod Testun ..."
-
-#: src/viewer/viewcontainer.cpp:563
-msgid "Search for text in the current tab"
-msgstr ""
-
-#: src/viewer/viewcontainer.cpp:581
-#, fuzzy, kde-format
-msgid "Channel &List for %1"
-msgstr "Sianeli"
-
-#: src/viewer/viewcontainer.cpp:587 src/mainwindow.cpp:203
-#, fuzzy
-msgid "Channel &List"
-msgstr "Sianeli"
-
-#: src/viewer/viewcontainer.cpp:596 src/mainwindow.cpp:186
-#: src/mainwindow.cpp:773
-msgid "&Open Logfile"
-msgstr ""
-
-#: src/viewer/viewcontainer.cpp:601
-#, kde-format
-msgid "&Open Logfile for %1"
-msgstr ""
-
-#: src/viewer/viewcontainer.cpp:612
-#, kde-format
-msgid "&Channel Settings for %1..."
-msgstr ""
-
-#: src/viewer/viewcontainer.cpp:617 src/mainwindow.cpp:195
-#, fuzzy
-msgid "&Channel Settings..."
-msgstr "Y&muno â'r Sianel..."
-
-#: src/viewer/viewcontainer.cpp:1673
-#, fuzzy
-#| msgid "Rename"
-msgid "Rename Tab"
-msgstr "Ail-enwi"
-
-#: src/viewer/viewcontainer.cpp:1674
-msgid "Enter new tab name:"
-msgstr ""
-
-#: src/viewer/viewcontainer.cpp:1743
-#, kde-format
-msgctxt "Default encoding"
-msgid "Default ( %1 )"
-msgstr ""
-
-#: src/viewer/viewcontainer.cpp:1778
-#, fuzzy
-#| msgid "Rename"
-msgid "&Rename Tab..."
-msgstr "Ail-enwi"
-
-#: src/viewer/viewcontainer.cpp:1923
-msgid "You can only search in text fields."
-msgstr ""
-
-#: src/viewer/viewcontainer.cpp:1924
-msgid "Find Text Information"
-msgstr ""
-
-#: src/viewer/viewcontainer.cpp:2121
-#, kde-format
-msgid "Logfile of %1"
-msgstr ""
-
-#: src/viewer/viewcontainer.cpp:2130 src/viewer/viewcontainer.cpp:2131
-#: src/konsolepanel.cpp:27
-msgid "Konsole"
-msgstr "Konsole"
-
-#: src/viewer/viewcontainer.cpp:2141 src/urlcatcher.cpp:84
-msgid "URL Catcher"
-msgstr ""
-
-#: src/viewer/viewcontainer.cpp:2493
-msgid ""
-"To know which server to display the channel list for, the list can only be "
-"opened from a query, channel or status window."
-msgstr ""
-
-#: src/viewer/viewcontainer.cpp:2523
-msgid ""
-"Using this function may result in a lot of network traffic. If your "
-"connection is not fast enough, it is possible that your client will be "
-"disconnected by the server."
-msgstr ""
-
-#: src/viewer/viewcontainer.cpp:2527
-msgid "Channel List Warning"
-msgstr ""
-
-#: src/viewer/viewcontainer.cpp:2557
-#, fuzzy
-msgid "Watched Nicks"
-msgstr "Ffuge&nw:"
 
 #: src/viewer/irccontextmenus.cpp:112
 msgid "Copy Link Address"
@@ -5328,6 +5166,168 @@ msgstr ""
 #| msgid "Send"
 msgid "&Send"
 msgstr "Anfon"
+
+#: src/viewer/chatwindow.cpp:446
+#, kde-format
+msgid ""
+"\n"
+"*** Logfile started\n"
+"*** on %1\n"
+"\n"
+msgstr ""
+
+#: src/viewer/statuspanel.cpp:229
+#, kde-format
+msgid ""
+"Do you really want to close '%1'?\n"
+"\n"
+" All associated tabs will be closed as well."
+msgstr ""
+
+#: src/viewer/statuspanel.cpp:230
+#, fuzzy
+msgid "Close Tab"
+msgstr "Cau Ta&b"
+
+#: src/viewer/statuspanel.cpp:239
+#, kde-format
+msgid ""
+"Do you want to disconnect from '%1'?\n"
+"\n"
+" All associated tabs will be closed as well."
+msgstr ""
+
+#: src/viewer/statuspanel.cpp:240
+msgid "Disconnect From Server"
+msgstr ""
+
+#: src/viewer/statuspanel.cpp:241
+msgid "Disconnect"
+msgstr "Datgysylltu"
+
+#: src/viewer/viewcontainer.cpp:221 src/mainwindow.cpp:291
+#, fuzzy
+msgid "Move Tab Up"
+msgstr "Symud Tab i'r Chwith"
+
+#: src/viewer/viewcontainer.cpp:229 src/mainwindow.cpp:302
+#, fuzzy
+msgid "Move Tab Down"
+msgstr "Symud Tab i'r Chwith"
+
+#: src/viewer/viewcontainer.cpp:322 src/mainwindow.cpp:322
+#: src/mainwindow.cpp:334
+msgid "Move Tab Left"
+msgstr "Symud Tab i'r Chwith"
+
+#: src/viewer/viewcontainer.cpp:330 src/mainwindow.cpp:313
+#: src/mainwindow.cpp:343
+msgid "Move Tab Right"
+msgstr "Symud Tab i'r Dde"
+
+#: src/viewer/viewcontainer.cpp:562
+msgid "Find Text..."
+msgstr "Canfod Testun ..."
+
+#: src/viewer/viewcontainer.cpp:564
+msgid "Search for text in the current tab"
+msgstr ""
+
+#: src/viewer/viewcontainer.cpp:582
+#, fuzzy, kde-format
+msgid "Channel &List for %1"
+msgstr "Sianeli"
+
+#: src/viewer/viewcontainer.cpp:588 src/mainwindow.cpp:203
+#, fuzzy
+msgid "Channel &List"
+msgstr "Sianeli"
+
+#: src/viewer/viewcontainer.cpp:597 src/mainwindow.cpp:186
+#: src/mainwindow.cpp:773
+msgid "&Open Logfile"
+msgstr ""
+
+#: src/viewer/viewcontainer.cpp:602
+#, kde-format
+msgid "&Open Logfile for %1"
+msgstr ""
+
+#: src/viewer/viewcontainer.cpp:613
+#, kde-format
+msgid "&Channel Settings for %1..."
+msgstr ""
+
+#: src/viewer/viewcontainer.cpp:618 src/mainwindow.cpp:195
+#, fuzzy
+msgid "&Channel Settings..."
+msgstr "Y&muno â'r Sianel..."
+
+#: src/viewer/viewcontainer.cpp:1674
+#, fuzzy
+#| msgid "Rename"
+msgid "Rename Tab"
+msgstr "Ail-enwi"
+
+#: src/viewer/viewcontainer.cpp:1675
+msgid "Enter new tab name:"
+msgstr ""
+
+#: src/viewer/viewcontainer.cpp:1744
+#, kde-format
+msgctxt "Default encoding"
+msgid "Default ( %1 )"
+msgstr ""
+
+#: src/viewer/viewcontainer.cpp:1779
+#, fuzzy
+#| msgid "Rename"
+msgid "&Rename Tab..."
+msgstr "Ail-enwi"
+
+#: src/viewer/viewcontainer.cpp:1924
+msgid "You can only search in text fields."
+msgstr ""
+
+#: src/viewer/viewcontainer.cpp:1925
+msgid "Find Text Information"
+msgstr ""
+
+#: src/viewer/viewcontainer.cpp:2122
+#, kde-format
+msgid "Logfile of %1"
+msgstr ""
+
+#: src/viewer/viewcontainer.cpp:2131 src/viewer/viewcontainer.cpp:2132
+#: src/konsolepanel.cpp:27
+msgid "Konsole"
+msgstr "Konsole"
+
+#: src/viewer/viewcontainer.cpp:2142 src/urlcatcher.cpp:84
+msgid "URL Catcher"
+msgstr ""
+
+#: src/viewer/viewcontainer.cpp:2494
+msgid ""
+"To know which server to display the channel list for, the list can only be "
+"opened from a query, channel or status window."
+msgstr ""
+
+#: src/viewer/viewcontainer.cpp:2524
+msgid ""
+"Using this function may result in a lot of network traffic. If your "
+"connection is not fast enough, it is possible that your client will be "
+"disconnected by the server."
+msgstr ""
+
+#: src/viewer/viewcontainer.cpp:2528
+msgid "Channel List Warning"
+msgstr ""
+
+#: src/viewer/viewcontainer.cpp:2558
+#, fuzzy
+msgid "Watched Nicks"
+msgstr "Ffuge&nw:"
 
 #: src/queuetuner.cpp:234
 #, fuzzy
