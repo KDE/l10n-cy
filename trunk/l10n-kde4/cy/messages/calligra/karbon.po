@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: karbon\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-11-16 02:58+0100\n"
+"POT-Creation-Date: 2011-12-12 02:31+0100\n"
 "PO-Revision-Date: 2004-07-06 15:43+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -168,7 +168,7 @@ msgctxt "(qtundo-format)"
 msgid "Lower Layer"
 msgstr "Gostwng Haen"
 
-#: common/commands/KarbonBooleanCommand.cpp:68 ui/KarbonView.cpp:882
+#: common/commands/KarbonBooleanCommand.cpp:68 ui/KarbonView.cpp:880
 #, fuzzy
 #| msgid "Boolean Operation"
 msgctxt "(qtundo-format)"
@@ -408,12 +408,6 @@ msgstr "Patrwm"
 msgid "Flood fill"
 msgstr ""
 
-#: plugins/filtereffects/FloodEffectConfigWidget.cpp:37
-#, fuzzy
-#| msgid "Stroke Color"
-msgid "Flood color"
-msgstr "Lliw'r Trawiad"
-
 #: plugins/filtereffects/ImageEffect.cpp:35
 #: plugins/filtereffects/ImageEffectFactory.cpp:26
 msgid "Image"
@@ -472,6 +466,12 @@ msgstr ""
 #: plugins/filtereffects/OffsetEffectConfigWidget.cpp:40
 msgid "dy"
 msgstr ""
+
+#: plugins/filtereffects/FloodEffectConfigWidget.cpp:37
+#, fuzzy
+#| msgid "Stroke Color"
+msgid "Flood color"
+msgstr "Lliw'r Trawiad"
 
 #: plugins/flattenpath/FlattenPathPlugin.cpp:57
 msgid "&Flatten Path..."
@@ -688,63 +688,63 @@ msgstr ""
 msgid "Error deleting layers"
 msgstr ""
 
-#: ui/dockers/KarbonLayerModel.cpp:183
+#: ui/dockers/KarbonLayerModel.cpp:161
 #, fuzzy
 #| msgid "Layers"
 msgid "Layer"
 msgstr "Haenau"
 
-#: ui/dockers/KarbonLayerModel.cpp:185
+#: ui/dockers/KarbonLayerModel.cpp:163
 #, fuzzy
 #| msgid "group"
 msgctxt "A group of shapes"
 msgid "Group"
 msgstr "grŵp"
 
-#: ui/dockers/KarbonLayerModel.cpp:187
+#: ui/dockers/KarbonLayerModel.cpp:165
 #, fuzzy
 #| msgid "Spoke"
 msgid "Shape"
 msgstr "Adain olwyn"
 
-#: ui/dockers/KarbonLayerModel.cpp:282
+#: ui/dockers/KarbonLayerModel.cpp:260
 msgctxt "Visibility state of the shape"
 msgid "Visible"
 msgstr ""
 
-#: ui/dockers/KarbonLayerModel.cpp:283
+#: ui/dockers/KarbonLayerModel.cpp:261
 msgctxt "Lock state of the shape"
 msgid "Locked"
 msgstr ""
 
-#: ui/dockers/KarbonLayerModel.cpp:284
+#: ui/dockers/KarbonLayerModel.cpp:262
 msgctxt "The z-index of the shape"
 msgid "zIndex"
 msgstr ""
 
-#: ui/dockers/KarbonLayerModel.cpp:285
+#: ui/dockers/KarbonLayerModel.cpp:263
 #, fuzzy
 #| msgid "Opacity"
 msgctxt "The opacity of the shape"
 msgid "Opacity"
 msgstr "Didreiddiad"
 
-#: ui/dockers/KarbonLayerModel.cpp:286
+#: ui/dockers/KarbonLayerModel.cpp:264
 msgctxt "Clipped state of the shape"
 msgid "Clipped"
 msgstr ""
 
-#: ui/dockers/KarbonLayerModel.cpp:286
+#: ui/dockers/KarbonLayerModel.cpp:264
 #, fuzzy
 #| msgid "Style:"
 msgid "yes"
 msgstr "Arddull:"
 
-#: ui/dockers/KarbonLayerModel.cpp:286
+#: ui/dockers/KarbonLayerModel.cpp:264
 msgid "no"
 msgstr ""
 
-#: ui/dockers/KarbonLayerModel.cpp:487
+#: ui/dockers/KarbonLayerModel.cpp:465
 msgctxt "(qtundo-format)"
 msgid "Reparent shapes"
 msgstr ""
@@ -854,6 +854,24 @@ msgstr "Trawiad"
 msgid "Fill:"
 msgstr "Llenwi"
 
+#: ui/widgets/KarbonConfigInterfacePage.cpp:71
+#, fuzzy
+#| msgid "Show status bar"
+msgid "Show status bar:"
+msgstr "Dangos y bar cyflwr"
+
+#: ui/widgets/KarbonConfigInterfacePage.cpp:76
+msgid "Number of recent files:"
+msgstr "Nifer o ffeiliau diweddar:"
+
+#: ui/widgets/KarbonConfigInterfacePage.cpp:82
+msgid "Palette font size:"
+msgstr ""
+
+#: ui/widgets/KarbonConfigInterfacePage.cpp:88
+msgid "Canvas color:"
+msgstr ""
+
 #: ui/widgets/KarbonGradientEditWidget.cpp:167
 msgid "Target:"
 msgstr "Targed:"
@@ -928,30 +946,12 @@ msgstr "Lliw'r Trawiad"
 msgid "&Add to Predefined Gradients"
 msgstr "&Ychwanegu at y Graddfeydd Rhagosodol"
 
-#: ui/widgets/KarbonConfigInterfacePage.cpp:71
-#, fuzzy
-#| msgid "Show status bar"
-msgid "Show status bar:"
-msgstr "Dangos y bar cyflwr"
-
-#: ui/widgets/KarbonConfigInterfacePage.cpp:76
-msgid "Number of recent files:"
-msgstr "Nifer o ffeiliau diweddar:"
-
-#: ui/widgets/KarbonConfigInterfacePage.cpp:82
-msgid "Palette font size:"
-msgstr ""
-
-#: ui/widgets/KarbonConfigInterfacePage.cpp:88
-msgid "Canvas color:"
-msgstr ""
-
 #: ui/widgets/KarbonPaletteBarWidget.cpp:58
 #, fuzzy
 msgid "Select palette"
 msgstr "Erfyn Dethol Nodau"
 
-#: ui/KarbonDocumentMergeCommand.cpp:59 ui/KarbonView.cpp:552
+#: ui/KarbonDocumentMergeCommand.cpp:59 ui/KarbonView.cpp:550
 #, fuzzy
 #| msgid "Insert Sinus"
 msgctxt "(qtundo-format)"
@@ -969,231 +969,6 @@ msgstr "Dogfen OASIS annilys.  Ni chanfuwyd tag office:drawing."
 #: ui/KarbonPart.cpp:222
 msgid "Invalid OASIS document. No draw:page tag found."
 msgstr "Dogfen OASIS annilys.  Ni chanfuwyd tag draw:page."
-
-#: ui/KarbonZoomController.cpp:62
-#, fuzzy
-msgid "Zoom"
-msgstr "Erfyn Chwyddo"
-
-#: ui/KarbonView.cpp:481
-#, fuzzy
-#| msgid "Choose Pattern to Add"
-msgid "Choose Graphic to Add"
-msgstr "Dewis Patrwm i'w Ychwanegu"
-
-#: ui/KarbonView.cpp:523
-msgid "Could not load image."
-msgstr ""
-
-#: ui/KarbonView.cpp:523 ui/KarbonView.cpp:528 ui/KarbonView.cpp:535
-#, fuzzy
-#| msgid "&Import Graphic..."
-msgid "Import graphic"
-msgstr "&Mewnforio Graffeg..."
-
-#: ui/KarbonView.cpp:528 ui/KarbonView.cpp:535
-msgid "Could not create image shape."
-msgstr ""
-
-#: ui/KarbonView.cpp:779
-#, fuzzy
-#| msgid "H&orizontal:"
-msgctxt "(qtundo-format)"
-msgid "Mirror Horizontally"
-msgstr "Ll&orweddol:"
-
-#: ui/KarbonView.cpp:781
-#, fuzzy
-#| msgid "H&orizontal:"
-msgctxt "(qtundo-format)"
-msgid "Mirror Vertically"
-msgstr "Ll&orweddol:"
-
-#: ui/KarbonView.cpp:783
-#, fuzzy
-#| msgid "H&orizontal:"
-msgctxt "(qtundo-format)"
-msgid "Mirror Horizontally and Vertically"
-msgstr "Ll&orweddol:"
-
-#: ui/KarbonView.cpp:993
-#, fuzzy
-#| msgid "View &Mode"
-msgid "Outline &Mode"
-msgstr "&Modd Golwg"
-
-#: ui/KarbonView.cpp:997
-msgid "Show Page Margins"
-msgstr "Dangos Ymylon Tudalen"
-
-#: ui/KarbonView.cpp:1015
-msgid "&Import Graphic..."
-msgstr "&Mewnforio Graffeg..."
-
-#: ui/KarbonView.cpp:1019
-msgid "D&elete"
-msgstr "D&ileu"
-
-#: ui/KarbonView.cpp:1025
-#, fuzzy
-#| msgid "Hide Grid"
-msgid "Edit Guides"
-msgstr "Cuddio Grid"
-
-#: ui/KarbonView.cpp:1031
-#, fuzzy
-#| msgid "&Duplicate"
-msgctxt "Duplicate selection"
-msgid "&Duplicate"
-msgstr "&Dyblyg"
-
-#: ui/KarbonView.cpp:1036
-msgid "Distribute Center (Horizontal)"
-msgstr "Dosbarthu i'r Canol (Llorweddol)"
-
-#: ui/KarbonView.cpp:1040
-msgid "Distribute Gaps (Horizontal)"
-msgstr "Dosbarthu Bylchau (Llorweddol)"
-
-#: ui/KarbonView.cpp:1044
-msgid "Distribute Left Borders"
-msgstr "Dosbarthu Ymylon Chwith"
-
-#: ui/KarbonView.cpp:1048
-msgid "Distribute Right Borders"
-msgstr "Dosbarthu Ymylon De"
-
-#: ui/KarbonView.cpp:1052
-msgid "Distribute Center (Vertical)"
-msgstr "Dosbarthu i'r Canol (Fertigol)"
-
-#: ui/KarbonView.cpp:1056
-msgid "Distribute Gaps (Vertical)"
-msgstr "Dosbarthu Bylchau (Fertigol)"
-
-#: ui/KarbonView.cpp:1060
-msgid "Distribute Bottom Borders"
-msgstr "Dosbarthu Ymylon Gwaelod"
-
-#: ui/KarbonView.cpp:1064
-msgid "Distribute Top Borders"
-msgstr "Dosbarthu Ymylon Brig"
-
-#: ui/KarbonView.cpp:1068
-msgid "Show Rulers"
-msgstr "Dangos Mesuryddion"
-
-#: ui/KarbonView.cpp:1070
-#, fuzzy
-msgid "Shows or hides rulers"
-msgstr "Dangos neu guddio mesuryddion."
-
-#: ui/KarbonView.cpp:1081
-msgid "Show Color Palette"
-msgstr ""
-
-#: ui/KarbonView.cpp:1083
-#, fuzzy
-msgid "Show or hide color palette"
-msgstr "Dangos neu guddio mesuryddion."
-
-#: ui/KarbonView.cpp:1087
-msgid "Snap to Grid"
-msgstr "Snapio i'r Grid"
-
-#: ui/KarbonView.cpp:1089
-#, fuzzy
-msgid "Snaps to grid"
-msgstr "Snapio i'r grid."
-
-#: ui/KarbonView.cpp:1101
-#, fuzzy
-#| msgid "&Object"
-msgid "&Clip Object"
-msgstr "&Gwrthrych"
-
-#: ui/KarbonView.cpp:1105
-#, fuzzy
-#| msgid "&Ungroup Objects"
-msgid "&Unclip Objects"
-msgstr "&Dadgasglu gwrthrychau"
-
-#: ui/KarbonView.cpp:1109
-msgid "Mirror Vertically"
-msgstr ""
-
-#: ui/KarbonView.cpp:1113
-#, fuzzy
-#| msgid "H&orizontal:"
-msgid "Mirror Horizontally"
-msgstr "Ll&orweddol:"
-
-#: ui/KarbonView.cpp:1120
-msgid "&Close Path"
-msgstr "&Cau Llwybr"
-
-#: ui/KarbonView.cpp:1126
-#, fuzzy
-msgid "Com&bine Path"
-msgstr "Cau Llwybr"
-
-#: ui/KarbonView.cpp:1132
-#, fuzzy
-msgid "Se&parate Path"
-msgstr "Lleddfu Llwybr"
-
-#: ui/KarbonView.cpp:1138
-#, fuzzy
-#| msgid "&Close Path"
-msgid "Re&verse Path"
-msgstr "&Cau Llwybr"
-
-#: ui/KarbonView.cpp:1144
-#, fuzzy
-#| msgid "Edit Base Path"
-msgid "Intersect Paths"
-msgstr "Golygu'r Llwybr Sail"
-
-#: ui/KarbonView.cpp:1150
-#, fuzzy
-msgid "Subtract Paths"
-msgstr "Lleddfu Llwybr"
-
-#: ui/KarbonView.cpp:1156
-#, fuzzy
-#| msgid "Edit Base Path"
-msgid "Unite Paths"
-msgstr "Golygu'r Llwybr Sail"
-
-#: ui/KarbonView.cpp:1162
-msgid "Exclude Paths"
-msgstr ""
-
-#: ui/KarbonView.cpp:1168
-#, fuzzy
-#| msgid "Snap to Grid"
-msgid "Snap Path to Grid"
-msgstr "Snapio i'r Grid"
-
-#: ui/KarbonView.cpp:1175
-msgid "Configure Karbon..."
-msgstr "Ffurfweddu Karbon..."
-
-#: ui/KarbonView.cpp:1179
-msgid "Page &Layout..."
-msgstr "&Haenlun Tudalen..."
-
-#: ui/KarbonView.cpp:1184
-#, fuzzy
-#| msgid "Selection"
-msgid "Zoom to Selection"
-msgstr "Detholiad"
-
-#: ui/KarbonView.cpp:1188
-#, fuzzy
-#| msgid "Selection"
-msgid "Zoom to Drawing"
-msgstr "Detholiad"
 
 #: ui/KarbonAboutData.h:26
 msgid "A Vector Graphics Drawing Application."
@@ -1263,6 +1038,231 @@ msgstr ""
 #: ui/KarbonAboutData.h:81
 msgid "Helpful patches and advice"
 msgstr ""
+
+#: ui/KarbonView.cpp:479
+#, fuzzy
+#| msgid "Choose Pattern to Add"
+msgid "Choose Graphic to Add"
+msgstr "Dewis Patrwm i'w Ychwanegu"
+
+#: ui/KarbonView.cpp:521
+msgid "Could not load image."
+msgstr ""
+
+#: ui/KarbonView.cpp:521 ui/KarbonView.cpp:526 ui/KarbonView.cpp:533
+#, fuzzy
+#| msgid "&Import Graphic..."
+msgid "Import graphic"
+msgstr "&Mewnforio Graffeg..."
+
+#: ui/KarbonView.cpp:526 ui/KarbonView.cpp:533
+msgid "Could not create image shape."
+msgstr ""
+
+#: ui/KarbonView.cpp:777
+#, fuzzy
+#| msgid "H&orizontal:"
+msgctxt "(qtundo-format)"
+msgid "Mirror Horizontally"
+msgstr "Ll&orweddol:"
+
+#: ui/KarbonView.cpp:779
+#, fuzzy
+#| msgid "H&orizontal:"
+msgctxt "(qtundo-format)"
+msgid "Mirror Vertically"
+msgstr "Ll&orweddol:"
+
+#: ui/KarbonView.cpp:781
+#, fuzzy
+#| msgid "H&orizontal:"
+msgctxt "(qtundo-format)"
+msgid "Mirror Horizontally and Vertically"
+msgstr "Ll&orweddol:"
+
+#: ui/KarbonView.cpp:991
+#, fuzzy
+#| msgid "View &Mode"
+msgid "Outline &Mode"
+msgstr "&Modd Golwg"
+
+#: ui/KarbonView.cpp:995
+msgid "Show Page Margins"
+msgstr "Dangos Ymylon Tudalen"
+
+#: ui/KarbonView.cpp:1013
+msgid "&Import Graphic..."
+msgstr "&Mewnforio Graffeg..."
+
+#: ui/KarbonView.cpp:1017
+msgid "D&elete"
+msgstr "D&ileu"
+
+#: ui/KarbonView.cpp:1023
+#, fuzzy
+#| msgid "Hide Grid"
+msgid "Edit Guides"
+msgstr "Cuddio Grid"
+
+#: ui/KarbonView.cpp:1029
+#, fuzzy
+#| msgid "&Duplicate"
+msgctxt "Duplicate selection"
+msgid "&Duplicate"
+msgstr "&Dyblyg"
+
+#: ui/KarbonView.cpp:1034
+msgid "Distribute Center (Horizontal)"
+msgstr "Dosbarthu i'r Canol (Llorweddol)"
+
+#: ui/KarbonView.cpp:1038
+msgid "Distribute Gaps (Horizontal)"
+msgstr "Dosbarthu Bylchau (Llorweddol)"
+
+#: ui/KarbonView.cpp:1042
+msgid "Distribute Left Borders"
+msgstr "Dosbarthu Ymylon Chwith"
+
+#: ui/KarbonView.cpp:1046
+msgid "Distribute Right Borders"
+msgstr "Dosbarthu Ymylon De"
+
+#: ui/KarbonView.cpp:1050
+msgid "Distribute Center (Vertical)"
+msgstr "Dosbarthu i'r Canol (Fertigol)"
+
+#: ui/KarbonView.cpp:1054
+msgid "Distribute Gaps (Vertical)"
+msgstr "Dosbarthu Bylchau (Fertigol)"
+
+#: ui/KarbonView.cpp:1058
+msgid "Distribute Bottom Borders"
+msgstr "Dosbarthu Ymylon Gwaelod"
+
+#: ui/KarbonView.cpp:1062
+msgid "Distribute Top Borders"
+msgstr "Dosbarthu Ymylon Brig"
+
+#: ui/KarbonView.cpp:1066
+msgid "Show Rulers"
+msgstr "Dangos Mesuryddion"
+
+#: ui/KarbonView.cpp:1068
+#, fuzzy
+msgid "Shows or hides rulers"
+msgstr "Dangos neu guddio mesuryddion."
+
+#: ui/KarbonView.cpp:1079
+msgid "Show Color Palette"
+msgstr ""
+
+#: ui/KarbonView.cpp:1081
+#, fuzzy
+msgid "Show or hide color palette"
+msgstr "Dangos neu guddio mesuryddion."
+
+#: ui/KarbonView.cpp:1085
+msgid "Snap to Grid"
+msgstr "Snapio i'r Grid"
+
+#: ui/KarbonView.cpp:1087
+#, fuzzy
+msgid "Snaps to grid"
+msgstr "Snapio i'r grid."
+
+#: ui/KarbonView.cpp:1099
+#, fuzzy
+#| msgid "&Object"
+msgid "&Clip Object"
+msgstr "&Gwrthrych"
+
+#: ui/KarbonView.cpp:1103
+#, fuzzy
+#| msgid "&Ungroup Objects"
+msgid "&Unclip Objects"
+msgstr "&Dadgasglu gwrthrychau"
+
+#: ui/KarbonView.cpp:1107
+msgid "Mirror Vertically"
+msgstr ""
+
+#: ui/KarbonView.cpp:1111
+#, fuzzy
+#| msgid "H&orizontal:"
+msgid "Mirror Horizontally"
+msgstr "Ll&orweddol:"
+
+#: ui/KarbonView.cpp:1118
+msgid "&Close Path"
+msgstr "&Cau Llwybr"
+
+#: ui/KarbonView.cpp:1124
+#, fuzzy
+msgid "Com&bine Path"
+msgstr "Cau Llwybr"
+
+#: ui/KarbonView.cpp:1130
+#, fuzzy
+msgid "Se&parate Path"
+msgstr "Lleddfu Llwybr"
+
+#: ui/KarbonView.cpp:1136
+#, fuzzy
+#| msgid "&Close Path"
+msgid "Re&verse Path"
+msgstr "&Cau Llwybr"
+
+#: ui/KarbonView.cpp:1142
+#, fuzzy
+#| msgid "Edit Base Path"
+msgid "Intersect Paths"
+msgstr "Golygu'r Llwybr Sail"
+
+#: ui/KarbonView.cpp:1148
+#, fuzzy
+msgid "Subtract Paths"
+msgstr "Lleddfu Llwybr"
+
+#: ui/KarbonView.cpp:1154
+#, fuzzy
+#| msgid "Edit Base Path"
+msgid "Unite Paths"
+msgstr "Golygu'r Llwybr Sail"
+
+#: ui/KarbonView.cpp:1160
+msgid "Exclude Paths"
+msgstr ""
+
+#: ui/KarbonView.cpp:1166
+#, fuzzy
+#| msgid "Snap to Grid"
+msgid "Snap Path to Grid"
+msgstr "Snapio i'r Grid"
+
+#: ui/KarbonView.cpp:1173
+msgid "Configure Karbon..."
+msgstr "Ffurfweddu Karbon..."
+
+#: ui/KarbonView.cpp:1177
+msgid "Page &Layout..."
+msgstr "&Haenlun Tudalen..."
+
+#: ui/KarbonView.cpp:1182
+#, fuzzy
+#| msgid "Selection"
+msgid "Zoom to Selection"
+msgstr "Detholiad"
+
+#: ui/KarbonView.cpp:1186
+#, fuzzy
+#| msgid "Selection"
+msgid "Zoom to Drawing"
+msgstr "Detholiad"
+
+#: ui/KarbonZoomController.cpp:62
+#, fuzzy
+msgid "Zoom"
+msgstr "Erfyn Chwyddo"
 
 #: main.cpp:43
 msgid "File to open"
