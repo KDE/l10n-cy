@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-03 07:52+0200\n"
+"POT-Creation-Date: 2011-12-17 11:21+0100\n"
 "PO-Revision-Date: 2004-01-08 21:25+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -34,8 +34,8 @@ msgstr ""
 
 #: filter_evolution.cxx:56 filter_evolution_v2.cxx:63
 #: filter_kmail_maildir.cxx:55 filter_oe.cxx:57 filter_opera.cxx:159
-#: filter_outlook.cxx:42 filter_plain.cxx:42 filter_pmail.cxx:52
-#: filter_sylpheed.cxx:54 filter_thebat.cxx:59 filter_thunderbird.cxx:63
+#: filter_outlook.cxx:42 filter_plain.cxx:42 filter_sylpheed.cxx:54
+#: filter_thebat.cxx:59 filter_thunderbird.cxx:63 filter_pmail.cxx:52
 msgid "No directory selected."
 msgstr "Dim cyfeiriadur wedi'i ddewis."
 
@@ -47,17 +47,17 @@ msgstr ""
 
 #: filter_evolution.cxx:75 filter_evolution_v2.cxx:98
 #: filter_kmail_maildir.cxx:81 filter_mailapp.cxx:114 filter_mbox.cxx:135
-#: filter_opera.cxx:128 filter_plain.cxx:78 filter_pmail.cxx:75
-#: filter_sylpheed.cxx:76 filter_thebat.cxx:81 filter_thunderbird.cxx:97
+#: filter_opera.cxx:128 filter_plain.cxx:78 filter_sylpheed.cxx:76
+#: filter_thebat.cxx:81 filter_thunderbird.cxx:97 filter_pmail.cxx:75
 #, kde-format
 msgid "Finished importing emails from %1"
 msgstr "Gorffennwyd mewnforio ebostau o %1"
 
 #: filter_evolution.cxx:123 filter_evolution_v2.cxx:161 filter_lnotes.cxx:87
 #: filter_mailapp.cxx:57 filter_mbox.cxx:53 filter_opera.cxx:70
-#: filter_outlook.cxx:57 filter_pmail.cxx:162 filter_pmail.cxx:230
-#: filter_pmail.cxx:248 filter_pmail.cxx:287 filter_thebat.cxx:149
-#: filter_thunderbird.cxx:160
+#: filter_outlook.cxx:57 filter_thebat.cxx:149 filter_thunderbird.cxx:160
+#: filter_pmail.cxx:161 filter_pmail.cxx:229 filter_pmail.cxx:247
+#: filter_pmail.cxx:286
 #, kde-format
 msgid "Unable to open %1, skipping"
 msgstr "Methwyd agor %1, yn hepgor"
@@ -245,7 +245,7 @@ msgstr "ffeiliau mbox (*)"
 msgid "Importing emails from %1"
 msgstr "Yn mewnforio ebostau o %1"
 
-#: filter_lnotes.cxx:107 filter_pmail.cxx:272
+#: filter_lnotes.cxx:107 filter_pmail.cxx:271
 #, kde-format
 msgid "Message %1"
 msgstr "Neges %1"
@@ -431,52 +431,6 @@ msgstr ""
 "rhagddodiad PLAIN-</p><p>Bydd yr hidlen hon yn mewnforio pob ebost .msg, ."
 "eml, a .txt.</p>"
 
-#: filter_pmail.cxx:28
-msgid "Import Folders From Pegasus-Mail"
-msgstr "Mewnforio Plygelli o Pegasus-Mail"
-
-#: filter_pmail.cxx:30
-#, fuzzy
-msgid ""
-"<p>Select the Pegasus-Mail directory on your system (containing *.CNM, *.PMM "
-"and *.MBX files). On many systems this is stored in C:\\pmail\\mail or C:"
-"\\pmail\\mail\\admin</p><p><b>Note:</b> Since it is possible to recreate the "
-"folder structure, the folders will be stored under: \"PegasusMail-Import\".</"
-"p>"
-msgstr ""
-"<p>Dewiswch y cyfeiriadur Pegasus-Mail ar eich cysawd (sy'n cynnwys ffeiliau "
-"CNM, PMM, ac MBX). Ar sawl cysawd mae hwn wedi'i gadw yn C:\\PMail\\mail</"
-"p><p><b>Noder:</b> Bydd yr hidlen fewnforio yma'n mewnforio'ch plygelli, ond "
-"nid yr adeiledd plygelli. Ond mae'n debyg taw dim ond unwaith y gwnewch hyn."
-"</p><p><b>Noder:</b> Mewnforir ebostau i blygell â'r rhagddodiad pmail-</p>"
-
-#: filter_pmail.cxx:65
-msgid ""
-"Cannot parse the folder structure; continuing import without subfolder "
-"support."
-msgstr ""
-
-#: filter_pmail.cxx:68
-msgid "Importing new mail files ('.cnm')..."
-msgstr "Yn mewnforio ffeiliau ebost newydd ('.cnm')..."
-
-#: filter_pmail.cxx:70
-msgid "Importing mail folders ('.pmm')..."
-msgstr "Yn mewnforio plygelli ebost ('.pmm')..."
-
-#: filter_pmail.cxx:72
-msgid "Importing 'UNIX' mail folders ('.mbx')..."
-msgstr "Yn mewnforio plygelli ebost 'UNIX' ('.mbx')..."
-
-#: filter_pmail.cxx:172 filter_pmail.cxx:250
-#, kde-format
-msgid "Importing %1"
-msgstr "Yn mewnforio %1"
-
-#: filter_pmail.cxx:283
-msgid "Parsing the folder structure..."
-msgstr ""
-
 #: filter_sylpheed.cxx:26
 msgid "Import Sylpheed Maildirs and Folder Structure"
 msgstr ""
@@ -632,6 +586,52 @@ msgstr ""
 
 #: main.cpp:36
 msgid "Port to Akonadi"
+msgstr ""
+
+#: filter_pmail.cxx:28
+msgid "Import Folders From Pegasus-Mail"
+msgstr "Mewnforio Plygelli o Pegasus-Mail"
+
+#: filter_pmail.cxx:30
+#, fuzzy
+msgid ""
+"<p>Select the Pegasus-Mail directory on your system (containing *.CNM, *.PMM "
+"and *.MBX files). On many systems this is stored in C:\\pmail\\mail or C:"
+"\\pmail\\mail\\admin</p><p><b>Note:</b> Since it is possible to recreate the "
+"folder structure, the folders will be stored under: \"PegasusMail-Import\".</"
+"p>"
+msgstr ""
+"<p>Dewiswch y cyfeiriadur Pegasus-Mail ar eich cysawd (sy'n cynnwys ffeiliau "
+"CNM, PMM, ac MBX). Ar sawl cysawd mae hwn wedi'i gadw yn C:\\PMail\\mail</"
+"p><p><b>Noder:</b> Bydd yr hidlen fewnforio yma'n mewnforio'ch plygelli, ond "
+"nid yr adeiledd plygelli. Ond mae'n debyg taw dim ond unwaith y gwnewch hyn."
+"</p><p><b>Noder:</b> Mewnforir ebostau i blygell â'r rhagddodiad pmail-</p>"
+
+#: filter_pmail.cxx:65
+msgid ""
+"Cannot parse the folder structure; continuing import without subfolder "
+"support."
+msgstr ""
+
+#: filter_pmail.cxx:68
+msgid "Importing new mail files ('.cnm')..."
+msgstr "Yn mewnforio ffeiliau ebost newydd ('.cnm')..."
+
+#: filter_pmail.cxx:70
+msgid "Importing mail folders ('.pmm')..."
+msgstr "Yn mewnforio plygelli ebost ('.pmm')..."
+
+#: filter_pmail.cxx:72
+msgid "Importing 'UNIX' mail folders ('.mbx')..."
+msgstr "Yn mewnforio plygelli ebost 'UNIX' ('.mbx')..."
+
+#: filter_pmail.cxx:171 filter_pmail.cxx:249
+#, kde-format
+msgid "Importing %1"
+msgstr "Yn mewnforio %1"
+
+#: filter_pmail.cxx:282
+msgid "Parsing the folder structure..."
 msgstr ""
 
 #: rc.cpp:1
