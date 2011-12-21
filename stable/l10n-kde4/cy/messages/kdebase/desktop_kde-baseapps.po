@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: desktop_kdebase\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-20 17:16+0000\n"
+"POT-Creation-Date: 2011-12-21 10:44+0000\n"
 "PO-Revision-Date: 2004-07-03 06:50+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -444,10 +444,10 @@ msgid "Enables the use of bookmarklets"
 msgstr ""
 
 #: konq-plugins/quickprint/text-ada-print.desktop:7
-#: konq-plugins/quickprint/text-c++h-print.desktop:7
-#: konq-plugins/quickprint/text-ch-print.desktop:7
-#: konq-plugins/quickprint/text-c-print.desktop:7
 #: konq-plugins/quickprint/text-c++-print.desktop:7
+#: konq-plugins/quickprint/text-c++h-print.desktop:7
+#: konq-plugins/quickprint/text-c-print.desktop:7
+#: konq-plugins/quickprint/text-ch-print.desktop:7
 #: konq-plugins/quickprint/text-css-print.desktop:7
 #: konq-plugins/quickprint/text-diff-print.desktop:7
 #: konq-plugins/quickprint/text-html-print.desktop:7
@@ -546,11 +546,6 @@ msgctxt "Name"
 msgid "Web Archives"
 msgstr "Name=Archif FTP"
 
-#: konqueror/about/konq_aboutpage.desktop:3
-msgctxt "Name"
-msgid "About-Page for Konqueror"
-msgstr "Tudalen Ynghylch i Konqueror"
-
 #: konqueror/Home.desktop:7
 msgctxt "Name"
 msgid "Home"
@@ -560,6 +555,11 @@ msgstr "Cartref"
 msgctxt "GenericName"
 msgid "Personal Files"
 msgstr "Ffeiliau Personol"
+
+#: konqueror/about/konq_aboutpage.desktop:3
+msgctxt "Name"
+msgid "About-Page for Konqueror"
+msgstr "Tudalen Ynghylch i Konqueror"
 
 #: konqueror/kfmclient.desktop:10 konqueror/kfmclient_dir.desktop:10
 #: konqueror/kfmclient_html.desktop:9 konqueror/kfmclient_war.desktop:9
@@ -895,8 +895,8 @@ msgid "Configure the way Konqueror reports itself"
 msgstr "Ffurfweddu'r ffordd y mae Konqueror yn adrodd ei hun "
 
 #: konqueror/settings/konq/fileappearance.desktop:11
-#: konqueror/settings/konqhtml/khtml_appearance.desktop:13
 #: konqueror/settings/konq/webappearance.desktop:12
+#: konqueror/settings/konqhtml/khtml_appearance.desktop:13
 msgctxt "Name"
 msgid "Appearance"
 msgstr "Golwg"
@@ -1121,17 +1121,17 @@ msgctxt "Name"
 msgid "KDE Official FTP"
 msgstr "FTP Swyddogol KDE"
 
-#: konqueror/sidebar/trees/init/remote/web/apps_web.desktop:4
-msgctxt "Name"
-msgid "KDE Applications"
-msgstr "Cymhwysiadau KDE"
-
 #: konqueror/sidebar/trees/init/remote/web/.directory:2
 #, fuzzy
 #| msgid "Name=Web Sites"
 msgctxt "Name"
 msgid "Web Sites"
 msgstr "Name=Gwefannau"
+
+#: konqueror/sidebar/trees/init/remote/web/apps_web.desktop:4
+msgctxt "Name"
+msgid "KDE Applications"
+msgstr "Cymhwysiadau KDE"
 
 #: konqueror/sidebar/trees/init/remote/web/dot_web.desktop:4
 msgctxt "Name"
@@ -1169,37 +1169,6 @@ msgctxt "Name"
 msgid "Web SideBar Module"
 msgstr "Modiwl Bar Ochr Gwe"
 
-#: lib/konq/directory_bookmarkbar.desktop:3
-msgctxt "Name"
-msgid "Bookmark Toolbar"
-msgstr "Bar Offer Nodau Tudalen"
-
-#: lib/konq/favicons/favicons.desktop:3
-#, fuzzy
-#| msgctxt "Name"
-#| msgid "Icons"
-msgctxt "Name"
-msgid "Favicons"
-msgstr "Eicon"
-
-#: lib/konq/favicons/favicons.desktop:80
-msgctxt "Comment"
-msgid "Stores website icons"
-msgstr ""
-
-#: lib/konq/konqdndpopupmenuplugin.desktop:4
-#, fuzzy
-#| msgctxt "Comment"
-#| msgid "Plugin for the Konqueror Popup Menu"
-msgctxt "Comment"
-msgid "Drag-and-drop plugin for the Konqueror Popup Menu."
-msgstr "Ategyn i Naidlen Konqueror"
-
-#: lib/konq/konqpopupmenuplugin.desktop:4
-msgctxt "Comment"
-msgid "Plugin for the Konqueror Popup Menu"
-msgstr "Ategyn i Naidlen Konqueror"
-
 #: lib/konq/Templates/CDROM-Device.desktop:10
 #: lib/konq/Templates/CDWRITER-Device.desktop:10
 #: lib/konq/Templates/DVDROM-Device.desktop:10
@@ -1236,6 +1205,17 @@ msgstr "Ffeil HTML..."
 msgctxt "Comment"
 msgid "Enter HTML filename:"
 msgstr "Mewnosodwch enw'r ffeil HTML"
+
+#: lib/konq/Templates/TextFile.desktop:2
+msgctxt "Name"
+msgid "Text File..."
+msgstr "Ffeil Testun..."
+
+#: lib/konq/Templates/TextFile.desktop:92
+#, fuzzy
+msgctxt "Comment"
+msgid "Enter text filename:"
+msgstr "Mewnosodwch enw ffeil testun:"
 
 #: lib/konq/Templates/linkCAMERA.desktop:2
 msgctxt "Name"
@@ -1363,16 +1343,36 @@ msgctxt "Comment"
 msgid "New ZIP Device"
 msgstr "Dyfais ZIP Newydd"
 
-#: lib/konq/Templates/TextFile.desktop:2
+#: lib/konq/directory_bookmarkbar.desktop:3
 msgctxt "Name"
-msgid "Text File..."
-msgstr "Ffeil Testun..."
+msgid "Bookmark Toolbar"
+msgstr "Bar Offer Nodau Tudalen"
 
-#: lib/konq/Templates/TextFile.desktop:92
+#: lib/konq/favicons/favicons.desktop:3
 #, fuzzy
+#| msgctxt "Name"
+#| msgid "Icons"
+msgctxt "Name"
+msgid "Favicons"
+msgstr "Eicon"
+
+#: lib/konq/favicons/favicons.desktop:80
 msgctxt "Comment"
-msgid "Enter text filename:"
-msgstr "Mewnosodwch enw ffeil testun:"
+msgid "Stores website icons"
+msgstr ""
+
+#: lib/konq/konqdndpopupmenuplugin.desktop:4
+#, fuzzy
+#| msgctxt "Comment"
+#| msgid "Plugin for the Konqueror Popup Menu"
+msgctxt "Comment"
+msgid "Drag-and-drop plugin for the Konqueror Popup Menu."
+msgstr "Ategyn i Naidlen Konqueror"
+
+#: lib/konq/konqpopupmenuplugin.desktop:4
+msgctxt "Comment"
+msgid "Plugin for the Konqueror Popup Menu"
+msgstr "Ategyn i Naidlen Konqueror"
 
 #: nsplugins/khtml_plugins.desktop:14
 msgctxt "Name"
