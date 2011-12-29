@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-13 03:45+0200\n"
+"POT-Creation-Date: 2011-12-29 05:30+0100\n"
 "PO-Revision-Date: 2004-09-07 14:09+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -118,11 +118,11 @@ msgstr ""
 msgid "Timothée Lacroix "
 msgstr ""
 
-#: part/SCDocument.cpp:382
+#: part/SCDocument.cpp:384
 msgid "Installation Error"
 msgstr ""
 
-#: part/SCEndOfSlideShowPage.cpp:68
+#: part/SCEndOfSlideShowPage.cpp:67
 msgid "End of presentation. Click to exit."
 msgstr "Diwedd y Cyflwyniad.  Cliciwch i adael."
 
@@ -384,6 +384,18 @@ msgstr ""
 msgid "Blackscreen on the presentation..."
 msgstr ""
 
+#. i18n: file: part/showcase.rc:91
+#. i18n: ectx: ToolBar (editToolBar)
+#: part/commands/SCSetCustomSlideShowsCommand.cpp:33 rc.cpp:119
+msgid "Edit"
+msgstr ""
+
+#: part/commands/SCAnimationCreateCommand.cpp:33
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgid "Create shape animation"
+msgstr "Creu Cyflwyniad HTML"
+
 #: part/commands/SCPageEffectSetCommand.cpp:38
 #, fuzzy
 #| msgid "Change Image Effect"
@@ -401,18 +413,6 @@ msgstr "&Effaith ddelwedd:"
 #| msgid "Image &effect:"
 msgid "Delete page effect"
 msgstr "&Effaith ddelwedd:"
-
-#. i18n: file: part/showcase.rc:91
-#. i18n: ectx: ToolBar (editToolBar)
-#: part/commands/SCSetCustomSlideShowsCommand.cpp:33 rc.cpp:119
-msgid "Edit"
-msgstr ""
-
-#: part/commands/SCAnimationCreateCommand.cpp:33
-#, fuzzy
-#| msgid "Create HTML Presentation"
-msgid "Create shape animation"
-msgstr "Creu Cyflwyniad HTML"
 
 #: part/dockers/SCPageLayoutDocker.cpp:46
 #, fuzzy
@@ -437,16 +437,6 @@ msgstr ""
 #: part/tools/SCPlaceholderToolFactory.cpp:28
 msgid "Layout Tool"
 msgstr ""
-
-#: part/tools/SCPageEffectDocker.cpp:57
-msgid "No Effect"
-msgstr "Dim Effaith"
-
-#: part/tools/SCPageEffectDocker.cpp:80
-#, fuzzy
-#| msgid " seconds"
-msgid " sec"
-msgstr " eiliad(au)"
 
 #: part/tools/SCAnimationTool.cpp:69
 #, fuzzy
@@ -474,6 +464,16 @@ msgstr "Creu Cyflwyniad HTML"
 msgid "Edit Shape"
 msgstr "Siâp"
 
+#: part/tools/SCPageEffectDocker.cpp:57
+msgid "No Effect"
+msgstr "Dim Effaith"
+
+#: part/tools/SCPageEffectDocker.cpp:80
+#, fuzzy
+#| msgid " seconds"
+msgid " sec"
+msgstr " eiliad(au)"
+
 #: part/ui/SCConfigurePresenterViewDialog.cpp:42
 #, kde-format
 msgid "Monitor %1 (primary)"
@@ -490,10 +490,23 @@ msgstr ""
 msgid "Configure Presenter View"
 msgstr "Ffurweddu KPresenter"
 
+#: part/ui/SCConfigureSlideShowDialog.cpp:40
+#: part/ui/SCConfigureSlideShowDialog.cpp:84
+#, fuzzy
+#| msgid "All Files"
+msgid "All slides"
+msgstr "Pob Ffeil"
+
+#. i18n: file: part/ui/SCConfigureSlideShow.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, SCConfigureSlideShow)
+#: part/ui/SCConfigureSlideShowDialog.cpp:46 rc.cpp:47
+msgid "Configure Slide Show"
+msgstr "Ffurfweddu Sioe Tryloywderau"
+
 #: part/ui/SCCustomSlideShowsDialog.cpp:82
 #: part/ui/SCCustomSlideShowsDialog.cpp:239
 #: part/ui/SCCustomSlideShowsDialog.cpp:257 part/ui/SCHtmlExportDialog.cpp:119
-#: part/SCViewModeSlidesSorter.cpp:337
+#: part/SCViewModeSlidesSorter.cpp:325
 #, kde-format
 msgid "Slide %1"
 msgstr "Tryloywder %1"
@@ -529,19 +542,6 @@ msgstr "Hoffech waredu'r tryloywder cyfredol?"
 #| msgid "Save Configuration..."
 msgid "Confirm action"
 msgstr "Cadw Ffurfweddiad..."
-
-#: part/ui/SCConfigureSlideShowDialog.cpp:40
-#: part/ui/SCConfigureSlideShowDialog.cpp:84
-#, fuzzy
-#| msgid "All Files"
-msgid "All slides"
-msgstr "Pob Ffeil"
-
-#. i18n: file: part/ui/SCConfigureSlideShow.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, SCConfigureSlideShow)
-#: part/ui/SCConfigureSlideShowDialog.cpp:46 rc.cpp:47
-msgid "Configure Slide Show"
-msgstr "Ffurfweddu Sioe Tryloywderau"
 
 #: part/ui/SCHtmlExportDialog.cpp:44
 msgid "Html Export"
