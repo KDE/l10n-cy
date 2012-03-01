@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-27 02:57+0100\n"
+"POT-Creation-Date: 2012-03-01 02:40+0100\n"
 "PO-Revision-Date: 2004-07-06 17:18+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -1308,7 +1308,7 @@ msgstr "Creu %1 newydd "
 
 #. i18n: file: plugins/extensions/bracketing2hdr/wdgbracketing2hdr.ui:162
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
-#: rc.cpp:80 ui/kis_view2.cpp:499
+#: rc.cpp:80 ui/kis_view2.cpp:500
 #, fuzzy
 msgid "Cancel"
 msgstr "Sianel"
@@ -10742,7 +10742,7 @@ msgstr "M&ewnosod Delwedd fel Haen..."
 msgid "Convert Projection Color Space"
 msgstr ""
 
-#: image/kis_image.cc:873 ui/kis_layer_manager.cc:698
+#: image/kis_image.cc:873 ui/kis_layer_manager.cc:721
 #, fuzzy
 msgid "Flatten Image"
 msgstr "Dyblygu Delwedd"
@@ -11303,7 +11303,7 @@ msgid "&Duplicate Layer or Mask"
 msgstr "Dyblyg"
 
 #: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:391
-#: ui/kis_layer_manager.cc:140
+#: ui/kis_layer_manager.cc:141
 #, fuzzy
 msgid "&Merge with Layer Below"
 msgstr "Cyfuno &Pob Haen"
@@ -11690,7 +11690,7 @@ msgid "Rotate Layer 90° to the Left"
 msgstr "&Gwaredu Haen"
 
 #: plugins/extensions/rotateimage/rotateimage.cc:151
-#: ui/kis_layer_manager.cc:654
+#: ui/kis_layer_manager.cc:677
 #, fuzzy
 msgid "Rotate Layer"
 msgstr "&Gwaredu Haen"
@@ -11749,7 +11749,7 @@ msgid "Separate Image"
 msgstr "Delwedd Newydd :"
 
 #: plugins/extensions/separate_channels/kis_channel_separator.cc:242
-#: ui/kis_layer_manager.cc:793
+#: ui/kis_layer_manager.cc:816
 msgid "Export Layer"
 msgstr "Allforio Haen"
 
@@ -12257,7 +12257,6 @@ msgstr "Gosodiadau Graddiannau"
 #: plugins/formats/jp2/jp2_converter.cc:342
 #: plugins/formats/jp2/jp2_converter.cc:353
 #: plugins/formats/jpeg/kis_jpeg_converter.cc:96
-#: plugins/formats/ppm/kis_ppm_export.cpp:193
 #: plugins/formats/tiff/kis_tiff_writer_visitor.cpp:65
 #: ui/kis_png_converter.cpp:80
 #, kde-format
@@ -12299,7 +12298,7 @@ msgstr "Delwedd %1"
 msgid "PNG Export Options"
 msgstr "Gosodiadau Graddiannau"
 
-#: plugins/formats/ppm/kis_ppm_export.cpp:152
+#: plugins/formats/ppm/kis_ppm_export.cpp:154
 #, fuzzy
 msgid "PPM Export Options"
 msgstr "Gosodiadau Graddiannau"
@@ -14014,6 +14013,10 @@ msgstr ""
 msgid "Image Properties"
 msgstr "Priodweddau Haen"
 
+#: ui/dialogs/kis_dlg_layer_properties.cc:78
+msgid "Layer Properties"
+msgstr "Priodweddau Haen"
+
 #: ui/dialogs/kis_dlg_preferences.cc:91
 #, fuzzy
 msgid "Small Circle"
@@ -14051,18 +14054,7 @@ msgstr "Gosodiadau Lliw"
 msgid "Tablet"
 msgstr "glas"
 
-#: ui/dialogs/kis_dlg_preferences.cc:612
-#, fuzzy
-#| msgid "Color Settings"
-msgid "Canvas-only settings"
-msgstr "Gosodiadau Lliw"
-
-#: ui/dialogs/kis_dlg_preferences.cc:613
-#, fuzzy
-msgid "Canvas-only"
-msgstr "Lliw Lab"
-
-#: ui/dialogs/kis_dlg_preferences.cc:704
+#: ui/dialogs/kis_dlg_preferences.cc:705
 msgid ""
 "You are trying to enable OpenGL\n"
 "\n"
@@ -14072,14 +14064,10 @@ msgid ""
 "Are you sure you want to enable OpenGL?\n"
 msgstr ""
 
-#: ui/dialogs/kis_dlg_preferences.cc:707 ui/kis_aboutdata.h:31
+#: ui/dialogs/kis_dlg_preferences.cc:708 ui/kis_aboutdata.h:31
 #: ui/kis_clipboard.cc:155
 msgid "Krita"
 msgstr "Krita"
-
-#: ui/dialogs/kis_dlg_layer_properties.cc:78
-msgid "Layer Properties"
-msgstr "Priodweddau Haen"
 
 #: ui/flake/kis_shape_controller.cpp:169
 #, fuzzy, kde-format
@@ -14477,66 +14465,71 @@ msgstr "&Priodweddau"
 msgid "Import Image"
 msgstr "Mewnforio Delwedd"
 
-#: ui/kis_layer_manager.cc:135
+#: ui/kis_layer_manager.cc:136
 #, fuzzy
 msgid "&Flatten image"
 msgstr "Dyblygu Delwedd"
 
-#: ui/kis_layer_manager.cc:145
+#: ui/kis_layer_manager.cc:146
 #, fuzzy
 msgid "&Flatten Layer"
 msgstr "Hidlenni"
 
-#: ui/kis_layer_manager.cc:149 ui/kis_layer_manager.cc:765
+#: ui/kis_layer_manager.cc:150 ui/kis_layer_manager.cc:788
 #, fuzzy
 msgid "Rasterize Layer"
 msgstr "&Gwaredu Haen"
 
-#: ui/kis_layer_manager.cc:153
+#: ui/kis_layer_manager.cc:154
 msgid "Save Layer as Image..."
 msgstr "Cadw Haen fel Delwedd..."
 
-#: ui/kis_layer_manager.cc:157
+#: ui/kis_layer_manager.cc:158
 #, fuzzy
 msgid "Size Canvas to Size of Current Layer"
 msgstr "Newid Maint y Ddelwedd i'r Haen Gyfredol"
 
-#: ui/kis_layer_manager.cc:223
+#: ui/kis_layer_manager.cc:224
 #, fuzzy
 #| msgid "Layer Properties"
 msgid "Filter Layer Properties"
 msgstr "Priodweddau Haen"
 
-#: ui/kis_layer_manager.cc:252
+#: ui/kis_layer_manager.cc:253
 #, fuzzy
 #| msgid "Layer Properties"
 msgid "Generator Layer Properties"
 msgstr "Priodweddau Haen"
 
-#: ui/kis_layer_manager.cc:303 ui/kis_layer_manager.cc:317
-#: ui/kis_layer_manager.cc:358 ui/kis_layer_manager.cc:389
-#: ui/kis_layer_manager.cc:512
+#: ui/kis_layer_manager.cc:304 ui/kis_layer_manager.cc:318
+#: ui/kis_layer_manager.cc:359 ui/kis_layer_manager.cc:390
+#: ui/kis_layer_manager.cc:513
 msgid "Could not add layer to image."
 msgstr "Methwyd ychwanegu haen i ddelwedd."
 
-#: ui/kis_layer_manager.cc:303 ui/kis_layer_manager.cc:317
-#: ui/kis_layer_manager.cc:358 ui/kis_layer_manager.cc:389
-#: ui/kis_layer_manager.cc:512
+#: ui/kis_layer_manager.cc:304 ui/kis_layer_manager.cc:318
+#: ui/kis_layer_manager.cc:359 ui/kis_layer_manager.cc:390
+#: ui/kis_layer_manager.cc:513
 msgid "Layer Error"
 msgstr "Gwall Haen"
 
-#: ui/kis_layer_manager.cc:413
+#: ui/kis_layer_manager.cc:414
 #, fuzzy
 #| msgid "Filters"
 msgid "New Filter Layer"
 msgstr "Hidlenni"
 
-#: ui/kis_layer_manager.cc:574 ui/kis_layer_manager.cc:584
+#: ui/kis_layer_manager.cc:573 ui/kis_layer_manager.cc:583
 #, fuzzy
 msgid "Mirror Layer X"
 msgstr "Gostwng Haen"
 
-#: ui/kis_layer_manager.cc:601 ui/kis_layer_manager.cc:611
+#: ui/kis_layer_manager.cc:595 ui/kis_mask_manager.cc:287
+#, fuzzy
+msgid "Mirror Mask X"
+msgstr "Gostwng Haen"
+
+#: ui/kis_layer_manager.cc:611 ui/kis_layer_manager.cc:621
 #: ui/kis_mask_manager.cc:309
 #, fuzzy
 msgid "Mirror Layer Y"
@@ -14544,14 +14537,19 @@ msgstr "Gostwng Haen"
 
 #: ui/kis_layer_manager.cc:633
 #, fuzzy
+msgid "Mirror Mask Y"
+msgstr "Gostwng Haen"
+
+#: ui/kis_layer_manager.cc:656
+#, fuzzy
 msgid "Scale Layer"
 msgstr "Graddio Haen..."
 
-#: ui/kis_layer_manager.cc:697
+#: ui/kis_layer_manager.cc:720
 msgid "The image contains hidden layers that will be lost."
 msgstr ""
 
-#: ui/kis_layer_manager.cc:699
+#: ui/kis_layer_manager.cc:722
 #, fuzzy
 msgid "&Flatten Image"
 msgstr "Dyblygu Delwedd"
@@ -14603,11 +14601,6 @@ msgstr "Creu %1 newydd "
 #, fuzzy
 msgid "Duplication of "
 msgstr "Dyblygu Delwedd"
-
-#: ui/kis_mask_manager.cc:287
-#, fuzzy
-msgid "Mirror Mask X"
-msgstr "Gostwng Haen"
 
 #: ui/kis_mask_manager.cc:334
 #, fuzzy
@@ -14794,16 +14787,16 @@ msgstr "Copio Detholiad i Haen Newydd"
 msgid "Cut Selection to New Layer"
 msgstr "Copio Detholiad i Haen Newydd"
 
-#: ui/kis_selection_manager.cc:176 ui/kis_selection_manager.cc:584
+#: ui/kis_selection_manager.cc:176 ui/kis_selection_manager.cc:588
 msgid "Fill with Foreground Color"
 msgstr "Llenwi gyda Lliw Blaendir"
 
-#: ui/kis_selection_manager.cc:181 ui/kis_selection_manager.cc:589
+#: ui/kis_selection_manager.cc:181 ui/kis_selection_manager.cc:593
 #, fuzzy
 msgid "Fill with Background Color"
 msgstr "Llenwi gyda Lliw Blaendir"
 
-#: ui/kis_selection_manager.cc:186 ui/kis_selection_manager.cc:594
+#: ui/kis_selection_manager.cc:186 ui/kis_selection_manager.cc:598
 #, fuzzy
 msgid "Fill with Pattern"
 msgstr "Llenwi gyda patrwm"
@@ -14822,21 +14815,21 @@ msgstr ""
 msgid "Size Canvas to Size of Selection"
 msgstr "Newid Maint y Ddelwedd i'r Haen Gyfredol"
 
-#: ui/kis_selection_manager.cc:363
+#: ui/kis_selection_manager.cc:367
 #, fuzzy
 msgid "Cut"
 msgstr "&Addasiedig :"
 
-#: ui/kis_selection_manager.cc:437
+#: ui/kis_selection_manager.cc:441
 msgid "(pasted)"
 msgstr ""
 
-#: ui/kis_selection_manager.cc:472
+#: ui/kis_selection_manager.cc:476
 #, fuzzy
 msgid "Pasted"
 msgstr "Erfyn &Gludo"
 
-#: ui/kis_selection_manager.cc:496
+#: ui/kis_selection_manager.cc:500
 #, fuzzy
 msgid "Select All"
 msgstr "&Dewis Popeth"
@@ -14928,48 +14921,36 @@ msgstr ""
 msgid "Shows or hides the status bar"
 msgstr ""
 
-#: ui/kis_view2.cpp:323
-msgid "Show Canvas Only"
-msgstr ""
-
-#: ui/kis_view2.cpp:324
-msgid "Return to Window"
-msgstr ""
-
-#: ui/kis_view2.cpp:325
-msgid "Shows just the canvas or the whole window"
-msgstr ""
-
-#: ui/kis_view2.cpp:452
+#: ui/kis_view2.cpp:453
 #, fuzzy
 #| msgid "&Layer"
 msgid "Pasted Layer"
 msgstr "&Haen"
 
-#: ui/kis_view2.cpp:490
+#: ui/kis_view2.cpp:491
 #, fuzzy
 msgid "Insert as New Layer"
 msgstr "M&ewnosod Delwedd fel Haen..."
 
-#: ui/kis_view2.cpp:491
+#: ui/kis_view2.cpp:492
 #, fuzzy
 msgid "Insert as New Layers"
 msgstr "M&ewnosod Delwedd fel Haen..."
 
-#: ui/kis_view2.cpp:493
+#: ui/kis_view2.cpp:494
 msgid "Open in New Document"
 msgstr ""
 
-#: ui/kis_view2.cpp:494
+#: ui/kis_view2.cpp:495
 msgid "Open in New Documents"
 msgstr ""
 
-#: ui/kis_view2.cpp:710
+#: ui/kis_view2.cpp:711
 #, fuzzy
 msgid "Edit Palette..."
 msgstr "Patrymau"
 
-#: ui/kis_view2.cpp:838 ui/kis_view2.cpp:841
+#: ui/kis_view2.cpp:839 ui/kis_view2.cpp:842
 #, fuzzy
 msgid "Edit Palette"
 msgstr "Patrymau"
@@ -15161,6 +15142,15 @@ msgstr "Dewisydd Lliw"
 #: main.cc:50
 msgid "File(s) or URL(s) to open"
 msgstr "Ffeil(iau) neu URL(au) i'w hagor"
+
+#, fuzzy
+#~| msgid "Color Settings"
+#~ msgid "Canvas-only settings"
+#~ msgstr "Gosodiadau Lliw"
+
+#, fuzzy
+#~ msgid "Canvas-only"
+#~ msgstr "Lliw Lab"
 
 #, fuzzy
 #~ msgid "Assign Profile"
