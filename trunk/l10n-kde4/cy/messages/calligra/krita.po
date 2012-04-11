@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-06 02:46+0200\n"
+"POT-Creation-Date: 2012-04-11 02:34+0200\n"
 "PO-Revision-Date: 2004-07-06 17:18+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -1316,7 +1316,7 @@ msgstr "Creu %1 newydd "
 
 #. i18n: file: plugins/extensions/bracketing2hdr/wdgbracketing2hdr.ui:162
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
-#: rc.cpp:80 ui/kis_view2.cpp:519
+#: rc.cpp:80 ui/kis_view2.cpp:521
 #, fuzzy
 msgid "Cancel"
 msgstr "Sianel"
@@ -11393,9 +11393,14 @@ msgstr "Gludo Detholiad"
 msgid "Image Docker"
 msgstr "Patrymau"
 
-#: plugins/extensions/dockers/smallcolorselector/smallcolorselector_dock.cc:38
+#: plugins/extensions/dockers/smallcolorselector/smallcolorselector_dock.cc:45
 #, fuzzy
 msgid "Small Color Selector"
+msgstr "Gludo Detholiad"
+
+#: plugins/extensions/dockers/specificcolorselector/specificcolorselector_dock.cc:31
+#, fuzzy
+msgid "Specific Color Selector"
 msgstr "Gludo Detholiad"
 
 #: plugins/extensions/dockers/specificcolorselector/kis_color_input.cc:47
@@ -11408,9 +11413,9 @@ msgstr "%1 :"
 msgid "Color name:"
 msgstr "Dewisydd Lliw"
 
-#: plugins/extensions/dockers/specificcolorselector/specificcolorselector_dock.cc:31
+#: plugins/extensions/dockers/specificcolorselector/kis_specific_color_selector_widget.cc:53
 #, fuzzy
-msgid "Specific Color Selector"
+msgid "Show Colorspace Selector"
 msgstr "Gludo Detholiad"
 
 #: plugins/extensions/dockers/tasksetdocker/tasksetdocker_dock.cpp:81
@@ -12719,7 +12724,7 @@ msgstr "Tywyllu"
 
 #: plugins/paintops/libpaintop/kis_pressure_mirror_option.cpp:31
 #: plugins/tools/defaulttools/kis_tool_multihand.cpp:203
-#: ui/kis_paintop_box.cc:207
+#: ui/kis_paintop_box.cc:208
 #, fuzzy
 msgid "Mirror"
 msgstr "Haen i Ddelwedd"
@@ -13548,11 +13553,6 @@ msgstr ""
 msgid "Paint with multibrushes"
 msgstr "Peintio gyda patrwm"
 
-#: plugins/tools/defaulttools/kis_tool_path.h:75
-#, fuzzy
-msgid "Draw a path."
-msgstr "Graddfa"
-
 #: plugins/tools/defaulttools/kis_tool_rectangle.h:61
 #, fuzzy
 msgid "Draw a rectangle"
@@ -13756,6 +13756,10 @@ msgstr "Llinell"
 msgid ""
 "Alt+Drag will move the origin of the currently displayed line around, Shift"
 "+Drag will force you to draw straight lines"
+msgstr ""
+
+#: plugins/tools/defaulttools/kis_tool_path.h:75
+msgid "Draw a path. Shift-mouseclick ends the path."
 msgstr ""
 
 #: plugins/tools/selectiontools/kis_tool_select_contiguous.h:62
@@ -14496,7 +14500,7 @@ msgid "&Patterns"
 msgstr "&Patrymau"
 
 #: ui/kis_control_frame.cpp:87 ui/kis_control_frame.cpp:88
-#: ui/kis_control_frame.cpp:193
+#: ui/kis_control_frame.cpp:191
 #, fuzzy
 msgid "Gradients"
 msgstr "Graddfa:"
@@ -14512,16 +14516,16 @@ msgstr "Graddfa:"
 msgid "&Color"
 msgstr "&Lliw:"
 
-#: ui/kis_control_frame.cpp:118
+#: ui/kis_control_frame.cpp:116
 #, fuzzy
 msgid "&Painter's Tools"
 msgstr "Offer Peintio"
 
-#: ui/kis_control_frame.cpp:153
+#: ui/kis_control_frame.cpp:151
 msgid "Patterns"
 msgstr "Patrymau"
 
-#: ui/kis_control_frame.cpp:156 ui/kis_control_frame.cpp:158
+#: ui/kis_control_frame.cpp:154 ui/kis_control_frame.cpp:156
 #, fuzzy
 msgid "Custom Pattern"
 msgstr "Patrwm"
@@ -14815,44 +14819,44 @@ msgstr "Detholiad"
 msgid "Flow:"
 msgstr "&Cysgodion"
 
-#: ui/kis_paintop_box.cc:158
+#: ui/kis_paintop_box.cc:159
 #, fuzzy
 msgid "Mode: "
 msgstr "&Modd:"
 
-#: ui/kis_paintop_box.cc:164
+#: ui/kis_paintop_box.cc:165
 #, fuzzy
 msgid "Save to Palette"
 msgstr "Patrymau"
 
-#: ui/kis_paintop_box.cc:169
+#: ui/kis_paintop_box.cc:170
 #, fuzzy
 msgid "Choose workspace"
 msgstr "Dewisydd Lliw"
 
-#: ui/kis_paintop_box.cc:190
+#: ui/kis_paintop_box.cc:191
 #, fuzzy
 msgid "Brush composite"
 msgstr "Brwsh"
 
-#: ui/kis_paintop_box.cc:194
+#: ui/kis_paintop_box.cc:195
 #, fuzzy
 #| msgid "Brightness"
 msgid "Brush option slider 1"
 msgstr "Disgleirdeb"
 
-#: ui/kis_paintop_box.cc:198
+#: ui/kis_paintop_box.cc:199
 #, fuzzy
 #| msgid "Brightness"
 msgid "Brush option slider 2"
 msgstr "Disgleirdeb"
 
-#: ui/kis_paintop_box.cc:211
+#: ui/kis_paintop_box.cc:212
 #, fuzzy
 msgid "Add to palette"
 msgstr "Patrymau"
 
-#: ui/kis_paintop_box.cc:215
+#: ui/kis_paintop_box.cc:216
 #, fuzzy
 msgid "Workspaces"
 msgstr "Dewisydd Lliw"
@@ -15078,38 +15082,38 @@ msgstr ""
 msgid "Shows just the canvas or the whole window"
 msgstr ""
 
-#: ui/kis_view2.cpp:511
+#: ui/kis_view2.cpp:513
 #, fuzzy
 msgid "Insert as New Layer"
 msgstr "M&ewnosod Delwedd fel Haen..."
 
-#: ui/kis_view2.cpp:512
+#: ui/kis_view2.cpp:514
 #, fuzzy
 msgid "Insert as New Layers"
 msgstr "M&ewnosod Delwedd fel Haen..."
 
-#: ui/kis_view2.cpp:514
+#: ui/kis_view2.cpp:516
 msgid "Open in New Document"
 msgstr ""
 
-#: ui/kis_view2.cpp:515
+#: ui/kis_view2.cpp:517
 msgid "Open in New Documents"
 msgstr ""
 
-#: ui/kis_view2.cpp:517
+#: ui/kis_view2.cpp:519
 msgid "Replace Current Document"
 msgstr ""
 
-#: ui/kis_view2.cpp:735
+#: ui/kis_view2.cpp:737
 #, fuzzy
 msgid "Edit Palette..."
 msgstr "Patrymau"
 
-#: ui/kis_view2.cpp:740
+#: ui/kis_view2.cpp:742
 msgid "&Themes"
 msgstr ""
 
-#: ui/kis_view2.cpp:871 ui/kis_view2.cpp:874
+#: ui/kis_view2.cpp:873 ui/kis_view2.cpp:876
 #, fuzzy
 msgid "Edit Palette"
 msgstr "Patrymau"
@@ -15321,6 +15325,10 @@ msgstr ""
 #: main.cc:50
 msgid "File(s) or URL(s) to open"
 msgstr "Ffeil(iau) neu URL(au) i'w hagor"
+
+#, fuzzy
+#~ msgid "Draw a path."
+#~ msgstr "Graddfa"
 
 #, fuzzy
 #~| msgid "&Layer"
