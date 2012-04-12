@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-07 04:53+0200\n"
+"POT-Creation-Date: 2012-04-12 04:53+0200\n"
 "PO-Revision-Date: 2004-02-25 13:47+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -35,7 +35,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: addressvalidationjob.cpp:82 addressvalidationjob.cpp:91
-#: identitydialog.cpp:607
+#: identitydialog.cpp:629
 msgid "Invalid Email Address"
 msgstr "Cyfeiriad Ebost Annilys"
 
@@ -196,7 +196,7 @@ msgstr ""
 msgid "Quota"
 msgstr "Cyfanswm"
 
-#: collectiontemplatespage.cpp:40 identitydialog.cpp:496
+#: collectiontemplatespage.cpp:40 identitydialog.cpp:518
 msgid "Templates"
 msgstr ""
 
@@ -205,7 +205,7 @@ msgstr ""
 msgid "&Use custom message templates in this folder"
 msgstr "&Defnyddio ôlddodiad dynodiad neges addasiedig."
 
-#: collectiontemplatespage.cpp:78 identitydialog.cpp:481
+#: collectiontemplatespage.cpp:78 identitydialog.cpp:503
 #, fuzzy
 msgid "&Copy Global Templates"
 msgstr "&Amnewid"
@@ -2083,11 +2083,33 @@ msgstr ""
 "fynd i gyfeiriad cylch.</p><p>Os mewn amheuaeth, gadewch y maes yma'n wag.</"
 "p></qt>"
 
-#: identitydialog.cpp:391
+#: identitydialog.cpp:393
+#, fuzzy
+#| msgid "&BCC addresses:"
+msgid "&CC addresses:"
+msgstr "Cyfeiriadau &BCC:"
+
+#: identitydialog.cpp:396
+#, fuzzy
+msgid ""
+"<qt><h3>CC (Carbon Copy) addresses</h3><p>The addresses that you enter here "
+"will be added to each outgoing mail that is sent with this identity.</"
+"p><p>This is commonly used to send a copy of each sent message to another "
+"account of yours.</p><p>To specify more than one address, use commas to "
+"separate the list of CC recipients.</p><p>If in doubt, leave this field "
+"blank.</p></qt>"
+msgstr ""
+"<qt><h3>Cyfeiriadau BCC (Blind Carbon Copy)</h3><p>Ychwanegir y cyfeiriadau "
+"a fewnosodir yma i bob ebost allan a anfonir efo'r dynodiad yma.  Ni fyddant "
+"yn weladwy i dderbynwyr eraill. </p><p>Defnyddir hyn yn gyffredin i anfon "
+"copi o bob neges anfonedig i gyfrif arall sy'n biau i chi.</p><p>Os mewn "
+"amheuaeth, gadewch y maes yma'n wag.</p></qt>"
+
+#: identitydialog.cpp:413
 msgid "&BCC addresses:"
 msgstr "Cyfeiriadau &BCC:"
 
-#: identitydialog.cpp:394
+#: identitydialog.cpp:416
 #, fuzzy
 msgid ""
 "<qt><h3>BCC (Blind Carbon Copy) addresses</h3><p>The addresses that you "
@@ -2103,49 +2125,49 @@ msgstr ""
 "copi o bob neges anfonedig i gyfrif arall sy'n biau i chi.</p><p>Os mewn "
 "amheuaeth, gadewch y maes yma'n wag.</p></qt>"
 
-#: identitydialog.cpp:410
+#: identitydialog.cpp:432
 msgid "D&ictionary:"
 msgstr "&Geiriadur:"
 
-#: identitydialog.cpp:419
+#: identitydialog.cpp:441
 msgid "Sent-mail &folder:"
 msgstr "&Plygell ebost a anfonwyd:"
 
-#: identitydialog.cpp:428
+#: identitydialog.cpp:450
 msgid "&Drafts folder:"
 msgstr "Plygell &brasluniau:"
 
-#: identitydialog.cpp:437
+#: identitydialog.cpp:459
 #, fuzzy
 msgid "&Templates folder:"
 msgstr "Plygell S&bwriel:"
 
-#: identitydialog.cpp:443
+#: identitydialog.cpp:465
 msgid "Special &transport:"
 msgstr "Cludiant &arbennig:"
 
-#: identitydialog.cpp:464
+#: identitydialog.cpp:486
 #, fuzzy
 msgid "&Use custom message templates for this identity"
 msgstr "&Defnyddio ôlddodiad dynodiad neges addasiedig."
 
-#: identitydialog.cpp:504
+#: identitydialog.cpp:526
 msgid "Signature"
 msgstr "Llofnod"
 
-#: identitydialog.cpp:513
+#: identitydialog.cpp:535
 #, fuzzy
 #| msgid "&Picture"
 msgid "Picture"
 msgstr "&Llun"
 
-#: identitydialog.cpp:598
+#: identitydialog.cpp:620
 #, fuzzy, kde-format
 #| msgid "Invalid Email Address"
 msgid "Invalid Email Alias \"%1\""
 msgstr "Cyfeiriad Ebost Annilys"
 
-#: identitydialog.cpp:642
+#: identitydialog.cpp:664
 #, kde-format
 msgid ""
 "One of the configured OpenPGP signing keys does not contain any user ID with "
@@ -2154,14 +2176,14 @@ msgid ""
 "verify signatures made with this configuration."
 msgstr ""
 
-#: identitydialog.cpp:650
+#: identitydialog.cpp:672
 #, kde-format
 msgid ""
 "One of the configured OpenPGP encryption keys does not contain any user ID "
 "with the configured email address for this identity (%1)."
 msgstr ""
 
-#: identitydialog.cpp:656
+#: identitydialog.cpp:678
 #, kde-format
 msgid ""
 "One of the configured S/MIME signing certificates does not contain the "
@@ -2170,29 +2192,29 @@ msgid ""
 "verify signatures made with this configuration."
 msgstr ""
 
-#: identitydialog.cpp:664
+#: identitydialog.cpp:686
 #, kde-format
 msgid ""
 "One of the configured S/MIME encryption certificates does not contain the "
 "configured email address for this identity (%1)."
 msgstr ""
 
-#: identitydialog.cpp:672
+#: identitydialog.cpp:694
 #, fuzzy
 msgid "Email Address Not Found in Key/Certificates"
 msgstr "Cy&feiriad ebost y CA sy'n cyhoeddi tystysgrifau:"
 
-#: identitydialog.cpp:687
+#: identitydialog.cpp:709
 #, fuzzy
 msgid "The signature file is not valid"
 msgstr "Mae'r llofnod wedi darfod."
 
-#: identitydialog.cpp:709
+#: identitydialog.cpp:731
 #, kde-format
 msgid "Edit Identity \"%1\""
 msgstr "Golygu Dynodiad \"%1\""
 
-#: identitydialog.cpp:739
+#: identitydialog.cpp:762
 #, fuzzy, kde-format
 msgid ""
 "The custom sent-mail folder for identity \"%1\" does not exist (anymore); "
@@ -2201,7 +2223,7 @@ msgstr ""
 "Nid yw'r blygell addasiedig ebost anfonedig ar gyfer dynodiad \"%1\" mewn "
 "bodolaeth (dim mwy).  Felly defnyddir y blygell ragosod ebost anfonedig."
 
-#: identitydialog.cpp:751
+#: identitydialog.cpp:774
 #, fuzzy, kde-format
 msgid ""
 "The custom drafts folder for identity \"%1\" does not exist (anymore); "
@@ -2210,7 +2232,7 @@ msgstr ""
 "Nid yw'r blygell addasiedig drafftiau ar gyfer dynodiad \"%1\" mewn "
 "bodolaeth (dim mwy).  Felly defnyddir y blygell ragosod drafftiau."
 
-#: identitydialog.cpp:763
+#: identitydialog.cpp:786
 #, fuzzy, kde-format
 msgid ""
 "The custom templates folder for identity \"%1\" does not exist (anymore); "
@@ -2643,267 +2665,267 @@ msgid ""
 "installation."
 msgstr "Methu cychwyn rheolydd tystysgrif.  Gwiriwch eich gosodiad!"
 
-#: kmmainwidget.cpp:3120
+#: kmmainwidget.cpp:3126
 msgid "Save &As..."
 msgstr "Cad&w Fel..."
 
-#: kmmainwidget.cpp:3129
+#: kmmainwidget.cpp:3135
 msgid "&Expire All Folders"
 msgstr "&Darfod Pob Plygell"
 
-#: kmmainwidget.cpp:3134
+#: kmmainwidget.cpp:3140
 msgid "Check &Mail"
 msgstr "Ymofyn am E&bost"
 
-#: kmmainwidget.cpp:3140
+#: kmmainwidget.cpp:3146
 #, fuzzy
 #| msgid "Check Mail &In"
 msgid "Check Mail In"
 msgstr "Ymofyn Ebost &Cyrraedd"
 
-#: kmmainwidget.cpp:3141 kmmainwidget.cpp:3142
+#: kmmainwidget.cpp:3147 kmmainwidget.cpp:3148
 #, fuzzy
 #| msgid "Check &Mail"
 msgid "Check Mail"
 msgstr "Ymofyn am E&bost"
 
-#: kmmainwidget.cpp:3152
+#: kmmainwidget.cpp:3158
 msgid "&Send Queued Messages"
 msgstr "An&fon Negeseuon yn y Rhes"
 
-#: kmmainwidget.cpp:3162
+#: kmmainwidget.cpp:3168
 msgid "Online status (unknown)"
 msgstr ""
 
-#: kmmainwidget.cpp:3165
+#: kmmainwidget.cpp:3171
 #, fuzzy
 msgid "Send Queued Messages Via"
 msgstr "An&fon Negeseuon yn y Rhes"
 
-#: kmmainwidget.cpp:3175 kmcomposewin.cpp:1154
+#: kmmainwidget.cpp:3181 kmcomposewin.cpp:1154
 msgid "&Address Book"
 msgstr "&Llyfr Cyfeiriadau"
 
-#: kmmainwidget.cpp:3183
+#: kmmainwidget.cpp:3189
 #, fuzzy
 #| msgid "Certificate Manager..."
 msgid "Certificate Manager"
 msgstr "Trefnydd Tysysgrifau ..."
 
-#: kmmainwidget.cpp:3190
+#: kmmainwidget.cpp:3196
 #, fuzzy
 msgid "GnuPG Log Viewer"
 msgstr "Meini Prawf Hidlo"
 
-#: kmmainwidget.cpp:3202
+#: kmmainwidget.cpp:3208
 #, fuzzy
 #| msgid "&Import Messages..."
 msgid "&Import Messages"
 msgstr "&Mewnforio Negeseuon..."
 
-#: kmmainwidget.cpp:3210
+#: kmmainwidget.cpp:3216
 #, fuzzy
 msgid "&Debug Sieve..."
 msgstr "&Ychwanegu Gwasanaeth..."
 
-#: kmmainwidget.cpp:3217
+#: kmmainwidget.cpp:3223
 #, fuzzy
 msgid "Filter &Log Viewer..."
 msgstr "Hidlo ar &Oddiwrth..."
 
-#: kmmainwidget.cpp:3222
+#: kmmainwidget.cpp:3228
 msgid "&Anti-Spam Wizard..."
 msgstr ""
 
-#: kmmainwidget.cpp:3227
+#: kmmainwidget.cpp:3233
 msgid "&Anti-Virus Wizard..."
 msgstr ""
 
-#: kmmainwidget.cpp:3232
+#: kmmainwidget.cpp:3238
 #, fuzzy
 msgid "&Account Wizard..."
 msgstr "Cyfrif:"
 
-#: kmmainwidget.cpp:3237
+#: kmmainwidget.cpp:3243
 #, fuzzy
 msgid "&Import Wizard..."
 msgstr "Cyfrif:"
 
-#: kmmainwidget.cpp:3243
+#: kmmainwidget.cpp:3249
 msgid "Edit \"Out of Office\" Replies..."
 msgstr "Golygu Ymatebion \"Allan o'r Swyddfa\"..."
 
-#: kmmainwidget.cpp:3258 kmmainwidget.cpp:4122
+#: kmmainwidget.cpp:3264 kmmainwidget.cpp:4128
 #, fuzzy
 msgctxt "@action Hard delete, bypassing trash"
 msgid "&Delete"
 msgstr "Wedi'u dileu"
 
-#: kmmainwidget.cpp:3263 kmmainwidget.cpp:4124
+#: kmmainwidget.cpp:3269 kmmainwidget.cpp:4130
 #, fuzzy
 msgid "M&ove Thread to Trash"
 msgstr "Symud i Sbwriel"
 
-#: kmmainwidget.cpp:3267
+#: kmmainwidget.cpp:3273
 #, fuzzy
 msgid "Move thread to trashcan"
 msgstr "Symud y neges i'r sbwriel"
 
-#: kmmainwidget.cpp:3270 kmmainwidget.cpp:4124
+#: kmmainwidget.cpp:3276 kmmainwidget.cpp:4130
 #, fuzzy
 msgid "Delete T&hread"
 msgstr "wedi'u dileu"
 
-#: kmmainwidget.cpp:3276
+#: kmmainwidget.cpp:3282
 msgid "&Find Messages..."
 msgstr "&Canfod Negeseuon..."
 
-#: kmmainwidget.cpp:3282 kmreaderwin.cpp:192
+#: kmmainwidget.cpp:3288 kmreaderwin.cpp:192
 msgid "&Find in Message..."
 msgstr "&Canfod mewn Neges..."
 
-#: kmmainwidget.cpp:3288
+#: kmmainwidget.cpp:3294
 msgid "Select &All Messages"
 msgstr "Dewis &Pob Neges"
 
-#: kmmainwidget.cpp:3296
+#: kmmainwidget.cpp:3302
 #, fuzzy
 msgid "&Mailing List Management..."
 msgstr "Rhestr Ebost Gysylltiedig"
 
-#: kmmainwidget.cpp:3301
+#: kmmainwidget.cpp:3307
 msgid "&Assign Shortcut..."
 msgstr ""
 
-#: kmmainwidget.cpp:3318
+#: kmmainwidget.cpp:3324
 #, fuzzy
 msgid "&Expiration Settings"
 msgstr "Dynodiadau &sy'n bodoli:"
 
-#: kmmainwidget.cpp:3336
+#: kmmainwidget.cpp:3342
 #, fuzzy
 #| msgid "&New Folder..."
 msgid "&Archive Folder..."
 msgstr "&Plygell Newydd"
 
-#: kmmainwidget.cpp:3340
+#: kmmainwidget.cpp:3346
 msgid "Prefer &HTML to Plain Text"
 msgstr "Gwell &HTML na Testun Plaen"
 
-#: kmmainwidget.cpp:3344
+#: kmmainwidget.cpp:3350
 msgid "Load E&xternal References"
 msgstr ""
 
-#: kmmainwidget.cpp:3367
+#: kmmainwidget.cpp:3373
 #, fuzzy
 #| msgid "New Message To..."
 msgid "Copy Message To..."
 msgstr "Neges Newydd I..."
 
-#: kmmainwidget.cpp:3369
+#: kmmainwidget.cpp:3375
 #, fuzzy
 #| msgid "New Message To..."
 msgid "Move Message To..."
 msgstr "Neges Newydd I..."
 
-#: kmmainwidget.cpp:3374
+#: kmmainwidget.cpp:3380
 msgid "&New Message..."
 msgstr "&Neges Newydd..."
 
-#: kmmainwidget.cpp:3376
+#: kmmainwidget.cpp:3382
 #, fuzzy
 #| msgid "New"
 msgctxt "@action:intoolbar New Empty Message"
 msgid "New"
 msgstr "Newydd"
 
-#: kmmainwidget.cpp:3384
+#: kmmainwidget.cpp:3390
 #, fuzzy
 msgid "Message From &Template"
 msgstr "Dim negeseuon newydd o'r gweinydd"
 
-#: kmmainwidget.cpp:3394
+#: kmmainwidget.cpp:3400
 msgid "New Message t&o Mailing-List..."
 msgstr "Neges Newydd i &Restr Ebost"
 
-#: kmmainwidget.cpp:3401
+#: kmmainwidget.cpp:3407
 msgid "Send A&gain..."
 msgstr "Anfon E&to..."
 
-#: kmmainwidget.cpp:3406
+#: kmmainwidget.cpp:3412
 msgid "&Create Filter"
 msgstr "&Creu Hidlen"
 
-#: kmmainwidget.cpp:3410
+#: kmmainwidget.cpp:3416
 msgid "Filter on &Subject..."
 msgstr "Hidlo ar &Pwnc..."
 
-#: kmmainwidget.cpp:3415
+#: kmmainwidget.cpp:3421
 msgid "Filter on &From..."
 msgstr "Hidlo ar &Oddiwrth..."
 
-#: kmmainwidget.cpp:3420
+#: kmmainwidget.cpp:3426
 msgid "Filter on &To..."
 msgstr "Hidlo ar &I..."
 
-#: kmmainwidget.cpp:3427
+#: kmmainwidget.cpp:3433
 #, fuzzy
 msgid "New Message From &Template"
 msgstr "Dim negeseuon newydd o'r gweinydd"
 
-#: kmmainwidget.cpp:3433
+#: kmmainwidget.cpp:3439
 msgid "Mark &Thread"
 msgstr "Nodi &Edefyn"
 
-#: kmmainwidget.cpp:3436
+#: kmmainwidget.cpp:3442
 msgid "Mark Thread as &Read"
 msgstr "Nodi Edefyn fel Wedi'i Ddar&llen"
 
-#: kmmainwidget.cpp:3439
+#: kmmainwidget.cpp:3445
 msgid "Mark all messages in the selected thread as read"
 msgstr "Nodi pob neges yn yr edefyn dewisiedig fel wedi'i darllen"
 
-#: kmmainwidget.cpp:3442
+#: kmmainwidget.cpp:3448
 msgid "Mark Thread as &Unread"
 msgstr "Nodi Edefyn fel &Heb ei Ddarllen"
 
-#: kmmainwidget.cpp:3445
+#: kmmainwidget.cpp:3451
 msgid "Mark all messages in the selected thread as unread"
 msgstr "Nodi pob neges yn yr edefyn dewisiedig fel heb ei darllen"
 
-#: kmmainwidget.cpp:3451
+#: kmmainwidget.cpp:3457
 msgid "Mark Thread as &Important"
 msgstr "Nodi Edefyn fel &Pwysig"
 
-#: kmmainwidget.cpp:3454
+#: kmmainwidget.cpp:3460
 #, fuzzy
 msgid "Remove &Important Thread Mark"
 msgstr "Neges bwysig"
 
-#: kmmainwidget.cpp:3457
+#: kmmainwidget.cpp:3463
 #, fuzzy
 #| msgid "Mark Thread as &New"
 msgid "Mark Thread as &Action Item"
 msgstr "Nodi Edefyn fel &Newydd"
 
-#: kmmainwidget.cpp:3460
+#: kmmainwidget.cpp:3466
 #, fuzzy
 msgid "Remove &Action Item Thread Mark"
 msgstr "Neges bwysig"
 
-#: kmmainwidget.cpp:3464
+#: kmmainwidget.cpp:3470
 msgid "&Watch Thread"
 msgstr "&Gwylio ar yr Edefyn"
 
-#: kmmainwidget.cpp:3468
+#: kmmainwidget.cpp:3474
 msgid "&Ignore Thread"
 msgstr "&Anwybyddu'r Edefyn"
 
-#: kmmainwidget.cpp:3476 kmreadermainwin.cpp:320
+#: kmmainwidget.cpp:3482 kmreadermainwin.cpp:320
 msgid "Save A&ttachments..."
 msgstr "Cadw A&todiadau..."
 
-#: kmmainwidget.cpp:3485
+#: kmmainwidget.cpp:3491
 #, fuzzy
 msgid "Appl&y All Filters"
 msgstr "Gweithred&u Hidlau"
@@ -2912,12 +2934,12 @@ msgstr "Gweithred&u Hidlau"
 #. i18n: ectx: Menu (apply_filter_actions)
 #. i18n: file: kmmainwin.rc:165
 #. i18n: ectx: Menu (apply_filter_actions)
-#: kmmainwidget.cpp:3491 rc.cpp:331 rc.cpp:376
+#: kmmainwidget.cpp:3497 rc.cpp:331 rc.cpp:376
 #, fuzzy
 msgid "A&pply Filter"
 msgstr "Gweithred&u Hidlau"
 
-#: kmmainwidget.cpp:3495
+#: kmmainwidget.cpp:3501
 #, fuzzy
 #| msgctxt "View->"
 #| msgid "&Expand Thread"
@@ -2925,13 +2947,13 @@ msgctxt "View->"
 msgid "&Expand Thread / Group"
 msgstr "&Ehangu Edefyn"
 
-#: kmmainwidget.cpp:3498
+#: kmmainwidget.cpp:3504
 #, fuzzy
 #| msgid "Expand the current thread"
 msgid "Expand the current thread or group"
 msgstr "Ehangu'r edefyn cyfredol"
 
-#: kmmainwidget.cpp:3502
+#: kmmainwidget.cpp:3508
 #, fuzzy
 #| msgctxt "View->"
 #| msgid "&Collapse Thread"
@@ -2939,107 +2961,107 @@ msgctxt "View->"
 msgid "&Collapse Thread / Group"
 msgstr "&Dad-ehangu'r Edefyn"
 
-#: kmmainwidget.cpp:3505
+#: kmmainwidget.cpp:3511
 #, fuzzy
 #| msgid "Collapse the current thread"
 msgid "Collapse the current thread or group"
 msgstr "Dad-ehangu'r edefyn cyfredol"
 
-#: kmmainwidget.cpp:3509
+#: kmmainwidget.cpp:3515
 msgctxt "View->"
 msgid "Ex&pand All Threads"
 msgstr "Ehangu &Pob Edefyn"
 
-#: kmmainwidget.cpp:3512
+#: kmmainwidget.cpp:3518
 msgid "Expand all threads in the current folder"
 msgstr "Ehangu pob edefyn yn y blygell gyfredol"
 
-#: kmmainwidget.cpp:3516
+#: kmmainwidget.cpp:3522
 msgctxt "View->"
 msgid "C&ollapse All Threads"
 msgstr "Dad-ehangu Po&b Edefyn"
 
-#: kmmainwidget.cpp:3519
+#: kmmainwidget.cpp:3525
 msgid "Collapse all threads in the current folder"
 msgstr "Dad-ehangu pob edefyn yn y blygell gyfredol"
 
-#: kmmainwidget.cpp:3524 kmreadermainwin.cpp:336
+#: kmmainwidget.cpp:3530 kmreadermainwin.cpp:336
 msgid "&View Source"
 msgstr "&Gweld Tarddiad"
 
-#: kmmainwidget.cpp:3529
+#: kmmainwidget.cpp:3535
 msgid "&Display Message"
 msgstr "&Dangos Neges"
 
-#: kmmainwidget.cpp:3538
+#: kmmainwidget.cpp:3544
 msgid "&Next Message"
 msgstr "&Neges Nesaf"
 
-#: kmmainwidget.cpp:3541
+#: kmmainwidget.cpp:3547
 msgid "Go to the next message"
 msgstr "Mynd i'r neges nesaf"
 
-#: kmmainwidget.cpp:3545
+#: kmmainwidget.cpp:3551
 msgid "Next &Unread Message"
 msgstr "Neges Nesaf &Heb ei Darllen"
 
-#: kmmainwidget.cpp:3553
+#: kmmainwidget.cpp:3559
 msgctxt "@action:inmenu Goto next unread message"
 msgid "Next"
 msgstr ""
 
-#: kmmainwidget.cpp:3554
+#: kmmainwidget.cpp:3560
 msgid "Go to the next unread message"
 msgstr "Mynd i'r neges nesaf heb ei darllen"
 
-#: kmmainwidget.cpp:3558
+#: kmmainwidget.cpp:3564
 msgid "&Previous Message"
 msgstr "Neges &Blaenorol"
 
-#: kmmainwidget.cpp:3560
+#: kmmainwidget.cpp:3566
 msgid "Go to the previous message"
 msgstr "Mynd i'r neges blaenorol"
 
-#: kmmainwidget.cpp:3565
+#: kmmainwidget.cpp:3571
 msgid "Previous Unread &Message"
 msgstr "Neges Bl&aenorol Heb ei Darllen"
 
-#: kmmainwidget.cpp:3573
+#: kmmainwidget.cpp:3579
 #, fuzzy
 msgctxt "@action:inmenu Goto previous unread message."
 msgid "Previous"
 msgstr "Neges &Blaenorol"
 
-#: kmmainwidget.cpp:3574
+#: kmmainwidget.cpp:3580
 msgid "Go to the previous unread message"
 msgstr "Mynd i'r neges blaenorol heb ei darllen"
 
-#: kmmainwidget.cpp:3578
+#: kmmainwidget.cpp:3584
 msgid "Next Unread &Folder"
 msgstr "&Plygell Nesaf Heb ei Darllen"
 
-#: kmmainwidget.cpp:3582
+#: kmmainwidget.cpp:3588
 msgid "Go to the next folder with unread messages"
 msgstr "Mynd i'r blygell nesaf efo negeseuon heb eu darllen"
 
-#: kmmainwidget.cpp:3588
+#: kmmainwidget.cpp:3594
 msgid "Previous Unread F&older"
 msgstr "Plyg&ell Flaenorol Heb ei Ddarllen"
 
-#: kmmainwidget.cpp:3591
+#: kmmainwidget.cpp:3597
 msgid "Go to the previous folder with unread messages"
 msgstr "Mynd i'r blygell flaenorol efo negeseuon heb eu darllen"
 
-#: kmmainwidget.cpp:3598
+#: kmmainwidget.cpp:3604
 msgctxt "Go->"
 msgid "Next Unread &Text"
 msgstr "&Testun Nesaf heb ei Ddarllen"
 
-#: kmmainwidget.cpp:3601
+#: kmmainwidget.cpp:3607
 msgid "Go to the next unread text"
 msgstr "Mynd i'r testun nesaf heb ei ddarllen"
 
-#: kmmainwidget.cpp:3602
+#: kmmainwidget.cpp:3608
 msgid ""
 "Scroll down current message. If at end of current message, go to next unread "
 "message."
@@ -3047,119 +3069,119 @@ msgstr ""
 "Sgrolio i lawr y neges gyfredol.  Os wrth waelod y neges gyfredol, mynd i'r "
 "neges nesaf heb ei darllen."
 
-#: kmmainwidget.cpp:3610
+#: kmmainwidget.cpp:3616
 msgid "Configure &Filters..."
 msgstr "Ffurfweddu &Hidlau..."
 
-#: kmmainwidget.cpp:3616
+#: kmmainwidget.cpp:3622
 #, fuzzy
 msgid "Manage &Sieve Scripts..."
 msgstr "Hidlau ar Gael"
 
-#: kmmainwidget.cpp:3621
+#: kmmainwidget.cpp:3627
 msgid "KMail &Introduction"
 msgstr "&Cyflwyniad KMail"
 
-#: kmmainwidget.cpp:3623
+#: kmmainwidget.cpp:3629
 msgid "Display KMail's Welcome Page"
 msgstr "Dangos Tudalen Groeso KMail"
 
-#: kmmainwidget.cpp:3632
+#: kmmainwidget.cpp:3638
 msgid "Configure &Notifications..."
 msgstr "Ffurfweddu &Hysbysiadau..."
 
-#: kmmainwidget.cpp:3639
+#: kmmainwidget.cpp:3645
 msgid "&Configure KMail..."
 msgstr "&Furffweddu KMail..."
 
-#: kmmainwidget.cpp:3645
+#: kmmainwidget.cpp:3651
 msgid "Expire..."
 msgstr "Darfod ..."
 
-#: kmmainwidget.cpp:3651
+#: kmmainwidget.cpp:3657
 #, fuzzy
 #| msgid "&New Folder..."
 msgid "Add Favorite Folder..."
 msgstr "&Plygell Newydd"
 
-#: kmmainwidget.cpp:3657
+#: kmmainwidget.cpp:3663
 #, fuzzy
 #| msgid "Subscription..."
 msgid "Serverside Subscription..."
 msgstr "Tanysgrifiad..."
 
-#: kmmainwidget.cpp:3664
+#: kmmainwidget.cpp:3670
 #, fuzzy
 msgid "Appl&y All Filters On Folder"
 msgstr "Gweithred&u Hidlau"
 
-#: kmmainwidget.cpp:3691
+#: kmmainwidget.cpp:3697
 #, fuzzy
 msgid "Add Favorite Folder"
 msgstr "Plygell Newydd:"
 
-#: kmmainwidget.cpp:4021
+#: kmmainwidget.cpp:4027
 msgid "E&mpty Trash"
 msgstr "Gwagu'r &Sbwriel"
 
-#: kmmainwidget.cpp:4021
+#: kmmainwidget.cpp:4027
 msgid "&Move All Messages to Trash"
 msgstr "&Symud Pob Neges i'r Sbwriel"
 
-#: kmmainwidget.cpp:4117
+#: kmmainwidget.cpp:4123
 #, fuzzy
 msgid "&Delete Search"
 msgstr "Dile&u Plygell"
 
-#: kmmainwidget.cpp:4117
+#: kmmainwidget.cpp:4123
 msgid "&Delete Folder"
 msgstr "Dile&u Plygell"
 
-#: kmmainwidget.cpp:4122 kmreadermainwin.cpp:323
+#: kmmainwidget.cpp:4128 kmreadermainwin.cpp:323
 msgid "&Move to Trash"
 msgstr "&Symud i Sbwriel"
 
-#: kmmainwidget.cpp:4241
+#: kmmainwidget.cpp:4247
 #, kde-format
 msgid "Filter %1"
 msgstr "Hidlo %1"
 
-#: kmmainwidget.cpp:4329
+#: kmmainwidget.cpp:4335
 #, fuzzy
 #| msgid "Could not start certificate manager. Please check your installation."
 msgid "Could not start the import wizard. Please check your installation."
 msgstr "Methu cychwyn rheolydd tystysgrif.  Gwiriwch eich gosodiad!"
 
-#: kmmainwidget.cpp:4331
+#: kmmainwidget.cpp:4337
 #, fuzzy
 #| msgid "Unable to create account"
 msgid "Unable to start import wizard"
 msgstr "Methu creu cyfrif"
 
-#: kmmainwidget.cpp:4429
+#: kmmainwidget.cpp:4435
 #, fuzzy
 #| msgid "Edit \"Out of Office\" Replies..."
 msgid "Out of office reply active"
 msgstr "Golygu Ymatebion \"Allan o'r Swyddfa\"..."
 
-#: kmmainwidget.cpp:4526
+#: kmmainwidget.cpp:4532
 msgid "Network is unconnected, some infos from folder could not be updated."
 msgstr ""
 
-#: kmmainwidget.cpp:4562
+#: kmmainwidget.cpp:4568
 #, fuzzy, kde-format
 #| msgid "Properties of Folder %1"
 msgctxt "@title:window"
 msgid "Properties of Folder %1"
 msgstr "Priodweddau Plygell %1"
 
-#: kmmainwidget.cpp:4587
+#: kmmainwidget.cpp:4593
 msgid ""
 "IMAP server not configured yet. Please configure the server in the IMAP "
 "account before setting up server-side subscription."
 msgstr ""
 
-#: kmmainwidget.cpp:4589
+#: kmmainwidget.cpp:4595
 msgid ""
 "Log in failed, please configure the IMAP account before setting up server-"
 "side subscription."
