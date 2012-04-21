@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-17 02:41+0200\n"
+"POT-Creation-Date: 2012-04-21 02:51+0200\n"
 "PO-Revision-Date: 2004-08-12 18:36+0100\n"
 "Last-Translator: KD at Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -3187,21 +3187,6 @@ msgstr "Gwall anhysbys."
 msgid "Could not compact database \"%1\"."
 msgstr "Methu llwytho gyrrydd cronfa ddata \"%1\"."
 
-#: kexidb/drivers/sqlite/sqlitevacuum.cpp:129
-#, fuzzy
-msgid "Compacting database"
-msgstr "Cronfa ddata newydd"
-
-#: kexidb/drivers/sqlite/sqlitevacuum.cpp:130
-#, fuzzy, kde-format
-msgid "Compacting database \"%1\"..."
-msgstr "Cadw gwrthrych fel"
-
-#: kexidb/drivers/sqlite/sqlitevacuum.cpp:203
-#, kde-format
-msgid "The database has been compacted. Current size decreased by %1% to %2."
-msgstr ""
-
 #: kexidb/drivers/sqlite/sqliteconnection.cpp:242
 #, fuzzy, kde-format
 msgid "Do you want to open file \"%1\" as read-only?"
@@ -3234,6 +3219,21 @@ msgstr "Methu gwaredu ffeil \"%1\". "
 msgid ""
 "Check the file's permissions and whether it is already opened and locked by "
 "another application."
+msgstr ""
+
+#: kexidb/drivers/sqlite/sqlitevacuum.cpp:129
+#, fuzzy
+msgid "Compacting database"
+msgstr "Cronfa ddata newydd"
+
+#: kexidb/drivers/sqlite/sqlitevacuum.cpp:130
+#, fuzzy, kde-format
+msgid "Compacting database \"%1\"..."
+msgstr "Cadw gwrthrych fel"
+
+#: kexidb/drivers/sqlite/sqlitevacuum.cpp:203
+#, kde-format
+msgid "The database has been compacted. Current size decreased by %1% to %2."
 msgstr ""
 
 #: kexidb/drivers/xbase/xbaseexport.cpp:263
@@ -3343,6 +3343,24 @@ msgstr ""
 msgid "Unspecified error encountered"
 msgstr "Cafwyd gwall amhenodol"
 
+#: sqlscanner.l:98
+#, fuzzy
+msgid "Invalid integer number"
+msgstr "Cyfanrif mawr"
+
+#: sqlscanner.l:98
+msgid "This integer number may be too large."
+msgstr ""
+
+#: sqlscanner.l:286
+#, fuzzy
+msgid "Invalid identifier"
+msgstr "Math annilys"
+
+#: sqlscanner.l:287 plugins/queries/kexiquerydesignerguieditor.cpp:1451
+msgid "Identifiers should start with a letter or '_' character"
+msgstr ""
+
 #: kexidb/parser/parser_p.cpp:137
 msgid "identifier was expected"
 msgstr ""
@@ -3400,24 +3418,6 @@ msgstr ""
 msgid "Could not define sorting - column name or alias \"%1\" does not exist"
 msgstr "<qt>Nid yw'r ffeil \"%1\" mewn bod."
 
-#: sqlscanner.l:98
-#, fuzzy
-msgid "Invalid integer number"
-msgstr "Cyfanrif mawr"
-
-#: sqlscanner.l:98
-msgid "This integer number may be too large."
-msgstr ""
-
-#: sqlscanner.l:286
-#, fuzzy
-msgid "Invalid identifier"
-msgstr "Math annilys"
-
-#: sqlscanner.l:287 plugins/queries/kexiquerydesignerguieditor.cpp:1451
-msgid "Identifiers should start with a letter or '_' character"
-msgstr ""
-
 #: kexidb/simplecommandlineapp.cpp:81
 #, fuzzy
 msgid "Database driver name"
@@ -3451,6 +3451,150 @@ msgstr "Mewnosod enw cronfa ddata'r cywaith"
 #, fuzzy, kde-format
 msgid "Enter password for %1: "
 msgstr "Rhowch yr enw."
+
+#: kexidb/connectiondata.cpp:97
+msgid "file"
+msgstr "ffeil"
+
+#: kexidb/drivermanager.cpp:171
+msgid "Could not find any database drivers."
+msgstr "Methu canfod unrhyw yryddion cronfa ddata."
+
+#: kexidb/drivermanager.cpp:181 kexidb/drivermanager.cpp:200
+#, kde-format
+msgid "Could not find database driver \"%1\"."
+msgstr "Methu canfod gyrrydd cronfa ddata \"%1\"."
+
+#: kexidb/drivermanager.cpp:231
+#, kde-format
+msgid "Could not load database driver \"%1\"."
+msgstr "Methu llwytho gyrrydd cronfa ddata \"%1\"."
+
+#: kexidb/drivermanager.cpp:374
+#, kde-format
+msgid "No such driver service: \"%1\"."
+msgstr "Dim gyrrydd o'r math: \"%1\"."
+
+#: kexidb/utils.cpp:131
+msgid "Message from server:"
+msgstr "Neges gan y gweinydd:"
+
+#: kexidb/utils.cpp:133
+msgid "SQL statement:"
+msgstr "Datganiad SQL:"
+
+#: kexidb/utils.cpp:150 kexidb/utils.cpp:157
+#, fuzzy
+#| msgid "Server result name:"
+msgid "Server result:"
+msgstr "Enw canlyniad y gweinydd:"
+
+#: kexidb/utils.cpp:394 kexidb/utils.cpp:457 kexidb/utils.cpp:462
+#, fuzzy
+msgid "Test Connection"
+msgstr "Cysylltiad"
+
+#: kexidb/utils.cpp:395
+#, fuzzy, kde-format
+msgid "<qt>Testing connection to <b>%1</b> database server...</qt>"
+msgstr "Heb ei gysylltu â gweinydd y gronfa ddata"
+
+#: kexidb/utils.cpp:456
+#, kde-format
+msgid ""
+"<qt>Test connection to <b>%1</b> database server failed. The server is not "
+"responding.</qt>"
+msgstr ""
+
+#: kexidb/utils.cpp:460
+#, kde-format
+msgid ""
+"<qt>Test connection to <b>%1</b> database server established successfully.</"
+"qt>"
+msgstr ""
+
+#: kexidb/utils.cpp:1248
+msgid "Number"
+msgstr "Rhif"
+
+#: kexidb/utils.cpp:1251 plugins/forms/kexidbfactory.cpp:344
+#: widget/utils/kexicontextmenuutils.cpp:293
+msgid "Image"
+msgstr "Delwedd"
+
+#: kexidb/field.cpp:708
+msgid "Invalid Type"
+msgstr "Math annilys"
+
+#: kexidb/field.cpp:709
+msgid "Byte"
+msgstr "Beit"
+
+#: kexidb/field.cpp:710
+msgid "Short Integer Number"
+msgstr "Cyfanrif cwta"
+
+#: kexidb/field.cpp:711 kexidb/field.cpp:741
+msgid "Integer Number"
+msgstr "Cyfanrif"
+
+#: kexidb/field.cpp:712
+msgid "Big Integer Number"
+msgstr "Cyfanrif mawr"
+
+#: kexidb/field.cpp:713
+msgid "Yes/No Value"
+msgstr "Gwerth Ie/Nage"
+
+#: kexidb/field.cpp:714
+msgid "Date"
+msgstr "Dyddiad"
+
+#: kexidb/field.cpp:715
+msgid "Date and Time"
+msgstr "Dyddiad ac Amser"
+
+#: kexidb/field.cpp:716
+msgid "Time"
+msgstr "Amser"
+
+#: kexidb/field.cpp:717
+msgid "Single Precision Number"
+msgstr "Rhif gywirdeb sengl"
+
+#: kexidb/field.cpp:718
+msgid "Double Precision Number"
+msgstr "Rhif cywirdeb dwbl"
+
+#: kexidb/field.cpp:720
+msgid "Long Text"
+msgstr "Testun hir"
+
+#: kexidb/field.cpp:721 kexidb/field.cpp:745
+msgid "Object"
+msgstr "Gwrthrych"
+
+#: kexidb/field.cpp:739
+msgid "Invalid Group"
+msgstr "Grŵp annilys"
+
+#: kexidb/field.cpp:742
+msgid "Floating Point Number"
+msgstr "Rhif pwynt arnawf"
+
+#: kexidb/field.cpp:743
+msgid "Yes/No"
+msgstr "Ie/Nage"
+
+#: kexidb/field.cpp:744
+msgid "Date/Time"
+msgstr "Dyddiad/Amser"
+
+#: kexidb/queryschema.cpp:266
+#, fuzzy
+msgctxt "short for 'expression' word, e.g. 'expr' (only latin letters, please)"
+msgid "expr"
+msgstr "&Allforio"
 
 #: kexidb/connection.cpp:114
 #, fuzzy
@@ -3787,150 +3931,6 @@ msgstr "Methwyd creu cywaith \"%1\""
 #, fuzzy
 msgid "Record deletion on the server failed."
 msgstr "Methwyd dileu y rhes ar y gweinydd."
-
-#: kexidb/connectiondata.cpp:97
-msgid "file"
-msgstr "ffeil"
-
-#: kexidb/drivermanager.cpp:171
-msgid "Could not find any database drivers."
-msgstr "Methu canfod unrhyw yryddion cronfa ddata."
-
-#: kexidb/drivermanager.cpp:181 kexidb/drivermanager.cpp:200
-#, kde-format
-msgid "Could not find database driver \"%1\"."
-msgstr "Methu canfod gyrrydd cronfa ddata \"%1\"."
-
-#: kexidb/drivermanager.cpp:231
-#, kde-format
-msgid "Could not load database driver \"%1\"."
-msgstr "Methu llwytho gyrrydd cronfa ddata \"%1\"."
-
-#: kexidb/drivermanager.cpp:374
-#, kde-format
-msgid "No such driver service: \"%1\"."
-msgstr "Dim gyrrydd o'r math: \"%1\"."
-
-#: kexidb/utils.cpp:131
-msgid "Message from server:"
-msgstr "Neges gan y gweinydd:"
-
-#: kexidb/utils.cpp:133
-msgid "SQL statement:"
-msgstr "Datganiad SQL:"
-
-#: kexidb/utils.cpp:150 kexidb/utils.cpp:157
-#, fuzzy
-#| msgid "Server result name:"
-msgid "Server result:"
-msgstr "Enw canlyniad y gweinydd:"
-
-#: kexidb/utils.cpp:394 kexidb/utils.cpp:457 kexidb/utils.cpp:462
-#, fuzzy
-msgid "Test Connection"
-msgstr "Cysylltiad"
-
-#: kexidb/utils.cpp:395
-#, fuzzy, kde-format
-msgid "<qt>Testing connection to <b>%1</b> database server...</qt>"
-msgstr "Heb ei gysylltu â gweinydd y gronfa ddata"
-
-#: kexidb/utils.cpp:456
-#, kde-format
-msgid ""
-"<qt>Test connection to <b>%1</b> database server failed. The server is not "
-"responding.</qt>"
-msgstr ""
-
-#: kexidb/utils.cpp:460
-#, kde-format
-msgid ""
-"<qt>Test connection to <b>%1</b> database server established successfully.</"
-"qt>"
-msgstr ""
-
-#: kexidb/utils.cpp:1248
-msgid "Number"
-msgstr "Rhif"
-
-#: kexidb/utils.cpp:1251 plugins/forms/kexidbfactory.cpp:344
-#: widget/utils/kexicontextmenuutils.cpp:293
-msgid "Image"
-msgstr "Delwedd"
-
-#: kexidb/field.cpp:708
-msgid "Invalid Type"
-msgstr "Math annilys"
-
-#: kexidb/field.cpp:709
-msgid "Byte"
-msgstr "Beit"
-
-#: kexidb/field.cpp:710
-msgid "Short Integer Number"
-msgstr "Cyfanrif cwta"
-
-#: kexidb/field.cpp:711 kexidb/field.cpp:741
-msgid "Integer Number"
-msgstr "Cyfanrif"
-
-#: kexidb/field.cpp:712
-msgid "Big Integer Number"
-msgstr "Cyfanrif mawr"
-
-#: kexidb/field.cpp:713
-msgid "Yes/No Value"
-msgstr "Gwerth Ie/Nage"
-
-#: kexidb/field.cpp:714
-msgid "Date"
-msgstr "Dyddiad"
-
-#: kexidb/field.cpp:715
-msgid "Date and Time"
-msgstr "Dyddiad ac Amser"
-
-#: kexidb/field.cpp:716
-msgid "Time"
-msgstr "Amser"
-
-#: kexidb/field.cpp:717
-msgid "Single Precision Number"
-msgstr "Rhif gywirdeb sengl"
-
-#: kexidb/field.cpp:718
-msgid "Double Precision Number"
-msgstr "Rhif cywirdeb dwbl"
-
-#: kexidb/field.cpp:720
-msgid "Long Text"
-msgstr "Testun hir"
-
-#: kexidb/field.cpp:721 kexidb/field.cpp:745
-msgid "Object"
-msgstr "Gwrthrych"
-
-#: kexidb/field.cpp:739
-msgid "Invalid Group"
-msgstr "Grŵp annilys"
-
-#: kexidb/field.cpp:742
-msgid "Floating Point Number"
-msgstr "Rhif pwynt arnawf"
-
-#: kexidb/field.cpp:743
-msgid "Yes/No"
-msgstr "Ie/Nage"
-
-#: kexidb/field.cpp:744
-msgid "Date/Time"
-msgstr "Dyddiad/Amser"
-
-#: kexidb/queryschema.cpp:266
-#, fuzzy
-msgctxt "short for 'expression' word, e.g. 'expr' (only latin letters, please)"
-msgid "expr"
-msgstr "&Allforio"
 
 #: kexiutils/identifier.cpp:92
 #, fuzzy, kde-format
