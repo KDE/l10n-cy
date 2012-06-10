@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-09 03:01+0200\n"
+"POT-Creation-Date: 2012-06-10 03:16+0200\n"
 "PO-Revision-Date: 2004-08-12 18:36+0100\n"
 "Last-Translator: KD at Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -3097,29 +3097,6 @@ msgstr "Methu llwytho gyrrydd cronfa ddata \"%1\"."
 msgid "Could not read database properties."
 msgstr "Methu canfod unrhyw yryddion cronfa ddata."
 
-#. i18n(
-#. "Incompatible database driver's \"%1\" version: found version %2, expected version %3.",
-#. objectName(),
-#. QString("%1.%2").arg(version().major).arg(version().minor),
-#. QString("%1.%2").arg(KexiDB::version().major).arg(KexiDB::version().minor)));
-#. return false;
-#. }
-#: kexidb/driver.cpp:121
-#, fuzzy, kde-format
-msgid "Invalid database driver's \"%1\" implementation:\n"
-msgstr ""
-"Gweithredoliad annilys o yrrydd y gronfa ddata \"%1\":\n"
-"\n"
-
-#: kexidb/driver.cpp:122
-#, kde-format
-msgid "Value of \"%1\" is not initialized for the driver."
-msgstr "Nid yw gwerth \"%1\" wedi'i ymgychwyn ar gyfer y gyrrydd."
-
-#: kexidb/driver.cpp:190
-msgid "File name expected for file-based database driver."
-msgstr "Disgwylwyd enw ffeil ar gyfer gyrrydd feil-seiliedig."
-
 #: kexidb/driver_p.cpp:36
 msgid "Client library version"
 msgstr ""
@@ -3483,351 +3460,15 @@ msgctxt "short for 'expression' word, e.g. 'expr' (only latin letters, please)"
 msgid "expr"
 msgstr "&Allforio"
 
-#: kexidb/connection.cpp:120
-#, fuzzy
-msgid "Invalid database contents. "
-msgstr "Cynnwys annilys yn y gronfa ddata "
-
-#: kexidb/connection.cpp:124
-msgid "It is a system object."
-msgstr ""
-
-#: kexidb/connection.cpp:353
-msgid "Connection already established."
-msgstr "Cysylltiad wedi'i sefydlu eisoes"
-
-#: kexidb/connection.cpp:360
-#, fuzzy, kde-format
-msgid "Could not open \"%1\" project file."
-msgstr "Methwyd agor cywaith \"%1\""
-
-#: kexidb/connection.cpp:361
-#, fuzzy, kde-format
-msgid "Could not connect to \"%1\" database server."
-msgstr "Heb ei gysylltu â gweinydd y gronfa ddata"
-
-#: kexidb/connection.cpp:403
-msgid "Not connected to the database server."
-msgstr "Heb ei gysylltu â gweinydd y gronfa ddata"
-
-#: kexidb/connection.cpp:413
-msgid "Currently no database is used."
-msgstr "Ni ddefnyddir cronfa ddata ar hyn o bryd."
-
-#: kexidb/connection.cpp:489
-#, kde-format
-msgid "Database file \"%1\" does not exist."
-msgstr "Nid yw'r ffeil gronfa ddata \"%1\" yn bodoli."
-
-#: kexidb/connection.cpp:495
-#, kde-format
-msgid "Database file \"%1\" is not readable."
-msgstr "Ni ellir darllen y ffeil gronfa ddata \"%1\"."
-
-#: kexidb/connection.cpp:501
-#, kde-format
-msgid "Database file \"%1\" is not writable."
-msgstr "Ni ellir ysgrifennu'r ffeil gronfa ddata \"%1\"."
-
-#: kexidb/connection.cpp:530
-#, fuzzy, kde-format
-msgid "Database \"%1\" created but could not be closed after creation."
-msgstr "Creuwyd cronfa ddata \"%1\" ond methwyd ei hagor"
-
-#: kexidb/connection.cpp:544
-#, kde-format
-msgid "Database \"%1\" already exists."
-msgstr "Mae cronfa ddata \"%1\" yn bodoli eisoes."
-
-#: kexidb/connection.cpp:549
-#, fuzzy, kde-format
-msgid ""
-"Cannot create database \"%1\". This name is reserved for system database."
-msgstr ""
-"Methu creu cronfa ddata \"%1\". Neilltuir yr enw hwn ar gyfer cronfa ddata'r "
-"cysawd."
-
-#: kexidb/connection.cpp:564
-#, kde-format
-msgid "Error creating database \"%1\" on the server."
-msgstr "Gwall wrth greu cronfa ddata \"%1\" ar y gweinydd."
-
-#: kexidb/connection.cpp:578
-#, kde-format
-msgid "Database \"%1\" created but could not be opened."
-msgstr "Creuwyd cronfa ddata \"%1\" ond methwyd ei hagor"
-
-#: kexidb/connection.cpp:656
-#, fuzzy, kde-format
-msgid "Opening database \"%1\" failed."
-msgstr "Cadw gwrthrych fel"
-
-#: kexidb/connection.cpp:696
-#, kde-format
-msgid "Database version (%1) does not match Kexi application's version (%2)"
-msgstr ""
-"Nid yw fersiwn (%1) y gronfa ddata yn cydweddu â fersiwn y cymhwysiad Kexi "
-"(%2)"
-
-#: kexidb/connection.cpp:768
-msgid "Cannot find any database for temporary connection."
-msgstr "Methu cael hyd i gronfa ddata ar gyfer cysylltiad dros dro"
-
-#: kexidb/connection.cpp:777
-#, kde-format
-msgid "Error during starting temporary connection using \"%1\" database name."
-msgstr ""
-"Gwall wrth gychwyn cysylltiad dros dro gan ddefnyddio enw cronfa ddata "
-"\"%1\"."
-
-#: kexidb/connection.cpp:794
-msgid "Cannot drop database - name not specified."
-msgstr "Methu gollwng y gronfa ddata - ni roddwyd enw."
-
-#: kexidb/connection.cpp:811
-msgid "Cannot delete database - name not specified."
-msgstr "Methu dileu'r gronfa ddata- ni roddwyd enw."
-
-#: kexidb/connection.cpp:816
-#, kde-format
-msgid "Cannot delete system database \"%1\"."
-msgstr "Ni cheir dileu cronfa ddata'r cysawd \"%1\"."
-
-#: kexidb/connection.cpp:1177
-#, fuzzy
-msgid "Error while executing SQL statement."
-msgstr "Gwall tra'n darllen y ddogfen."
-
-#: kexidb/connection.cpp:1629
-#, fuzzy
-msgid "Creating table failed."
-msgstr "Cadw gwrthrych fel"
-
-#: kexidb/connection.cpp:1650
-msgid "Cannot create table without fields."
-msgstr "Ni cheir creu tabl heb feysydd."
-
-#: kexidb/connection.cpp:1660
-#, kde-format
-msgid "System name \"%1\" cannot be used as table name."
-msgstr "Ni cheir defnyddio enw cysawd \"%1\" fel enw tabl."
-
-#: kexidb/connection.cpp:1669
-#, kde-format
-msgid "System name \"%1\" cannot be used as one of fields in \"%2\" table."
-msgstr "Ni cheir defnyddio enw cysawd \"%1\" fel un o feysydd tabl \"%2\"."
-
-#: kexidb/connection.cpp:1685
-#, fuzzy, kde-format
-msgid "Could not create the same table \"%1\" twice."
-msgstr "Methwyd creu cywaith \"%1\""
-
-#: kexidb/connection.cpp:1698 plugins/tables/kexitablepart.cpp:210
-#, fuzzy, kde-format
-msgid "Table \"%1\" already exists."
-msgstr "Mae cronfa ddata \"%1\" yn bodoli eisoes."
-
-#: kexidb/connection.cpp:1779
-#, fuzzy
-msgid "Could not remove object's data."
-msgstr "Methu gwaredu ffeil \"%1\". "
-
-#: kexidb/connection.cpp:1810
-#, fuzzy, kde-format
-msgid "Table \"%1\" cannot be removed.\n"
-msgstr "Ni cheir gwaredu tabl \"%1\"."
-
-#: kexidb/connection.cpp:1816
-msgid "Unexpected name or identifier."
-msgstr ""
-
-#: kexidb/connection.cpp:1865
-#, fuzzy, kde-format
-msgid "Table \"%1\" does not exist."
-msgstr "Nid yw'r gronfa ddata \"%1\" yn bodoli."
-
-#: kexidb/connection.cpp:1880
-#, kde-format
-msgid "Could not alter table \"%1\" using the same table."
-msgstr ""
-
-#: kexidb/connection.cpp:1902 kexidb/expression.cpp:790
-#, fuzzy, kde-format
-msgid "Unknown table \"%1\""
-msgstr "math anhysbys o wrthrych \"%1\""
-
-#: kexidb/connection.cpp:1906
-#, fuzzy, kde-format
-msgid "Invalid table name \"%1\""
-msgstr "Enw gwrthrych annilys \"%1\""
-
-#: kexidb/connection.cpp:1912
-#, kde-format
-msgid "Could rename table \"%1\" using the same name."
-msgstr ""
-
-#: kexidb/connection.cpp:1924
-#, kde-format
-msgid "Could not rename table \"%1\" to \"%2\". Table \"%3\" already exists."
-msgstr ""
-
-#: kexidb/connection.cpp:2039
-#, fuzzy, kde-format
-msgid "Query \"%1\" does not exist."
-msgstr "<qt>Nid yw'r ffeil \"%1\" mewn bod."
-
-#: kexidb/connection.cpp:2114
-#, fuzzy, kde-format
-msgid "Transactions are not supported for \"%1\" driver."
-msgstr "Trosglwyddiad heb ei gychwyn."
-
-#: kexidb/connection.cpp:2118
-msgid "Begin transaction failed"
-msgstr ""
-
-#: kexidb/connection.cpp:2134
-msgid "Transaction already started."
-msgstr "Cychwynwyd y trosglwyddiad eisoes."
-
-#: kexidb/connection.cpp:2175 kexidb/connection.cpp:2210
-msgid "Transaction not started."
-msgstr "Trosglwyddiad heb ei gychwyn."
-
-#: kexidb/connection.cpp:2189
-msgid "Error on commit transaction"
-msgstr "Gwall wrth gadarnhau'r trawsweithrediad"
-
-#: kexidb/connection.cpp:2224
-msgid "Error on rollback transaction"
-msgstr "Gwall wrth ddadwneud y trosglwyddiad"
-
-#: kexidb/connection.cpp:2384 kexidb/connection.cpp:2897
-#, kde-format
-msgid "Invalid object name \"%1\""
-msgstr "Enw gwrthrych annilys \"%1\""
-
-#: kexidb/connection.cpp:2505
-#, fuzzy, kde-format
-msgid "Column %1 does not exist for the query."
-msgstr "Nid yw'r gronfa ddata \"%1\" yn bodoli."
-
-#: kexidb/connection.cpp:2762 kexidb/connection.cpp:2765
-#: kexidb/connection.cpp:2768
-msgid "Error while loading extended table schema information."
-msgstr ""
-
-#: kexidb/connection.cpp:2769
-msgid "Invalid XML data: "
-msgstr ""
-
-#: kexidb/connection.cpp:2799
-#, kde-format
-msgid ""
-"Error in XML data: \"%1\" in line %2, column %3.\n"
-"XML data: "
-msgstr ""
-
-#: kexidb/connection.cpp:2936
-#, fuzzy
-msgid "Table has no fields defined."
-msgstr "Ni cheir gwaredu tabl \"%1\"."
-
-#: kexidb/connection.cpp:3067
-#, kde-format
-msgid ""
-"Could not find definition for query \"%1\". Removing this query is "
-"recommended."
-msgstr ""
-
-#: kexidb/connection.cpp:3076
-#, kde-format
-msgid ""
-"<p>Could not load definition for query \"%1\". SQL statement for this query "
-"is invalid:<br><tt>%2</tt></p>\n"
-"<p>You can open this query in Text View and correct it.</p>"
-msgstr ""
-
-#: kexidb/connection.cpp:3284
-#, fuzzy
-msgid "Could not update record because there is no master table defined."
-msgstr "Methwyd creu cywaith \"%1\""
-
-#: kexidb/connection.cpp:3291
-#, fuzzy
-msgid ""
-"Could not update record because master table has no primary key defined."
-msgstr "Methwyd creu cywaith \"%1\""
-
-#: kexidb/connection.cpp:3320
-#, fuzzy
-msgid ""
-"Could not update record because it does not contain entire master table's "
-"primary key."
-msgstr "Methwyd creu cywaith \"%1\""
-
-#: kexidb/connection.cpp:3331 kexidb/connection.cpp:3571
-#, kde-format
-msgid "Primary key's field \"%1\" cannot be empty."
-msgstr "Ni all maes y prif allwedd \"%1\" fod yn wag."
-
-#: kexidb/connection.cpp:3358
-#, fuzzy
-#| msgid "Row updating on the server failed."
-msgid "Record updating on the server failed."
-msgstr "Methwyd diweddaru'r rhes ar y gweinydd."
-
-#: kexidb/connection.cpp:3381
-#, fuzzy
-msgid "Could not insert record because there is no master table defined."
-msgstr "Methwyd creu cywaith \"%1\""
-
-#: kexidb/connection.cpp:3418
-#, fuzzy
-msgid ""
-"Could not insert record because master table has no primary key defined."
-msgstr "Methwyd creu cywaith \"%1\""
-
-#: kexidb/connection.cpp:3427
-#, fuzzy
-msgid ""
-"Could not insert record because it does not contain entire master table's "
-"primary key."
-msgstr "Methwyd creu cywaith \"%1\""
-
-#: kexidb/connection.cpp:3474
-#, fuzzy
-#| msgid "Row inserting on the server failed."
-msgid "Record inserting on the server failed."
-msgstr "Methwyd mewnosod y rhes ar y gweinydd."
-
-#: kexidb/connection.cpp:3538
-#, fuzzy
-msgid "Could not delete record because there is no master table defined."
-msgstr "Methwyd creu cywaith \"%1\""
-
-#: kexidb/connection.cpp:3547
-#, fuzzy
-msgid ""
-"Could not delete record because there is no primary key for master table "
-"defined."
-msgstr "Methwyd creu cywaith \"%1\""
-
-#: kexidb/connection.cpp:3562
-#, fuzzy
-msgid ""
-"Could not delete record because it does not contain entire master table's "
-"primary key."
-msgstr "Methwyd creu cywaith \"%1\""
-
-#: kexidb/connection.cpp:3588 kexidb/connection.cpp:3611
-#, fuzzy
-msgid "Record deletion on the server failed."
-msgstr "Methwyd dileu y rhes ar y gweinydd."
-
 #: kexidb/expression.cpp:789
 #, fuzzy
 msgid "Table not found"
 msgstr "ni chafwyd y gwrthrych"
+
+#: kexidb/expression.cpp:790 kexidb/connection.cpp:1918
+#, fuzzy, kde-format
+msgid "Unknown table \"%1\""
+msgstr "math anhysbys o wrthrych \"%1\""
 
 #: kexidb/utils.cpp:131
 msgid "Message from server:"
@@ -3943,6 +3584,365 @@ msgstr "Ie/Nage"
 #: kexidb/field.cpp:768
 msgid "Date/Time"
 msgstr "Dyddiad/Amser"
+
+#: kexidb/connection.cpp:120
+#, fuzzy
+msgid "Invalid database contents. "
+msgstr "Cynnwys annilys yn y gronfa ddata "
+
+#: kexidb/connection.cpp:124
+msgid "It is a system object."
+msgstr ""
+
+#: kexidb/connection.cpp:353
+msgid "Connection already established."
+msgstr "Cysylltiad wedi'i sefydlu eisoes"
+
+#: kexidb/connection.cpp:360
+#, fuzzy, kde-format
+msgid "Could not open \"%1\" project file."
+msgstr "Methwyd agor cywaith \"%1\""
+
+#: kexidb/connection.cpp:361
+#, fuzzy, kde-format
+msgid "Could not connect to \"%1\" database server."
+msgstr "Heb ei gysylltu â gweinydd y gronfa ddata"
+
+#: kexidb/connection.cpp:403
+msgid "Not connected to the database server."
+msgstr "Heb ei gysylltu â gweinydd y gronfa ddata"
+
+#: kexidb/connection.cpp:413
+msgid "Currently no database is used."
+msgstr "Ni ddefnyddir cronfa ddata ar hyn o bryd."
+
+#: kexidb/connection.cpp:489
+#, kde-format
+msgid "Database file \"%1\" does not exist."
+msgstr "Nid yw'r ffeil gronfa ddata \"%1\" yn bodoli."
+
+#: kexidb/connection.cpp:495
+#, kde-format
+msgid "Database file \"%1\" is not readable."
+msgstr "Ni ellir darllen y ffeil gronfa ddata \"%1\"."
+
+#: kexidb/connection.cpp:501
+#, kde-format
+msgid "Database file \"%1\" is not writable."
+msgstr "Ni ellir ysgrifennu'r ffeil gronfa ddata \"%1\"."
+
+#: kexidb/connection.cpp:530
+#, fuzzy, kde-format
+msgid "Database \"%1\" created but could not be closed after creation."
+msgstr "Creuwyd cronfa ddata \"%1\" ond methwyd ei hagor"
+
+#: kexidb/connection.cpp:544
+#, kde-format
+msgid "Database \"%1\" already exists."
+msgstr "Mae cronfa ddata \"%1\" yn bodoli eisoes."
+
+#: kexidb/connection.cpp:549
+#, fuzzy, kde-format
+msgid ""
+"Cannot create database \"%1\". This name is reserved for system database."
+msgstr ""
+"Methu creu cronfa ddata \"%1\". Neilltuir yr enw hwn ar gyfer cronfa ddata'r "
+"cysawd."
+
+#: kexidb/connection.cpp:564
+#, kde-format
+msgid "Error creating database \"%1\" on the server."
+msgstr "Gwall wrth greu cronfa ddata \"%1\" ar y gweinydd."
+
+#: kexidb/connection.cpp:578
+#, kde-format
+msgid "Database \"%1\" created but could not be opened."
+msgstr "Creuwyd cronfa ddata \"%1\" ond methwyd ei hagor"
+
+#: kexidb/connection.cpp:656
+#, fuzzy, kde-format
+msgid "Opening database \"%1\" failed."
+msgstr "Cadw gwrthrych fel"
+
+#: kexidb/connection.cpp:696
+#, kde-format
+msgid "Database version (%1) does not match Kexi application's version (%2)"
+msgstr ""
+"Nid yw fersiwn (%1) y gronfa ddata yn cydweddu â fersiwn y cymhwysiad Kexi "
+"(%2)"
+
+#: kexidb/connection.cpp:768
+msgid "Cannot find any database for temporary connection."
+msgstr "Methu cael hyd i gronfa ddata ar gyfer cysylltiad dros dro"
+
+#: kexidb/connection.cpp:777
+#, kde-format
+msgid "Error during starting temporary connection using \"%1\" database name."
+msgstr ""
+"Gwall wrth gychwyn cysylltiad dros dro gan ddefnyddio enw cronfa ddata "
+"\"%1\"."
+
+#: kexidb/connection.cpp:794
+msgid "Cannot drop database - name not specified."
+msgstr "Methu gollwng y gronfa ddata - ni roddwyd enw."
+
+#: kexidb/connection.cpp:811
+msgid "Cannot delete database - name not specified."
+msgstr "Methu dileu'r gronfa ddata- ni roddwyd enw."
+
+#: kexidb/connection.cpp:816
+#, kde-format
+msgid "Cannot delete system database \"%1\"."
+msgstr "Ni cheir dileu cronfa ddata'r cysawd \"%1\"."
+
+#: kexidb/connection.cpp:1193
+#, fuzzy
+msgid "Error while executing SQL statement."
+msgstr "Gwall tra'n darllen y ddogfen."
+
+#: kexidb/connection.cpp:1645
+#, fuzzy
+msgid "Creating table failed."
+msgstr "Cadw gwrthrych fel"
+
+#: kexidb/connection.cpp:1666
+msgid "Cannot create table without fields."
+msgstr "Ni cheir creu tabl heb feysydd."
+
+#: kexidb/connection.cpp:1676
+#, kde-format
+msgid "System name \"%1\" cannot be used as table name."
+msgstr "Ni cheir defnyddio enw cysawd \"%1\" fel enw tabl."
+
+#: kexidb/connection.cpp:1685
+#, kde-format
+msgid "System name \"%1\" cannot be used as one of fields in \"%2\" table."
+msgstr "Ni cheir defnyddio enw cysawd \"%1\" fel un o feysydd tabl \"%2\"."
+
+#: kexidb/connection.cpp:1701
+#, fuzzy, kde-format
+msgid "Could not create the same table \"%1\" twice."
+msgstr "Methwyd creu cywaith \"%1\""
+
+#: kexidb/connection.cpp:1714 plugins/tables/kexitablepart.cpp:210
+#, fuzzy, kde-format
+msgid "Table \"%1\" already exists."
+msgstr "Mae cronfa ddata \"%1\" yn bodoli eisoes."
+
+#: kexidb/connection.cpp:1795
+#, fuzzy
+msgid "Could not remove object's data."
+msgstr "Methu gwaredu ffeil \"%1\". "
+
+#: kexidb/connection.cpp:1826
+#, fuzzy, kde-format
+msgid "Table \"%1\" cannot be removed.\n"
+msgstr "Ni cheir gwaredu tabl \"%1\"."
+
+#: kexidb/connection.cpp:1832
+msgid "Unexpected name or identifier."
+msgstr ""
+
+#: kexidb/connection.cpp:1881
+#, fuzzy, kde-format
+msgid "Table \"%1\" does not exist."
+msgstr "Nid yw'r gronfa ddata \"%1\" yn bodoli."
+
+#: kexidb/connection.cpp:1896
+#, kde-format
+msgid "Could not alter table \"%1\" using the same table."
+msgstr ""
+
+#: kexidb/connection.cpp:1922
+#, fuzzy, kde-format
+msgid "Invalid table name \"%1\""
+msgstr "Enw gwrthrych annilys \"%1\""
+
+#: kexidb/connection.cpp:1928
+#, kde-format
+msgid "Could rename table \"%1\" using the same name."
+msgstr ""
+
+#: kexidb/connection.cpp:1940
+#, kde-format
+msgid "Could not rename table \"%1\" to \"%2\". Table \"%3\" already exists."
+msgstr ""
+
+#: kexidb/connection.cpp:2055
+#, fuzzy, kde-format
+msgid "Query \"%1\" does not exist."
+msgstr "<qt>Nid yw'r ffeil \"%1\" mewn bod."
+
+#: kexidb/connection.cpp:2130
+#, fuzzy, kde-format
+msgid "Transactions are not supported for \"%1\" driver."
+msgstr "Trosglwyddiad heb ei gychwyn."
+
+#: kexidb/connection.cpp:2134
+msgid "Begin transaction failed"
+msgstr ""
+
+#: kexidb/connection.cpp:2150
+msgid "Transaction already started."
+msgstr "Cychwynwyd y trosglwyddiad eisoes."
+
+#: kexidb/connection.cpp:2191 kexidb/connection.cpp:2226
+msgid "Transaction not started."
+msgstr "Trosglwyddiad heb ei gychwyn."
+
+#: kexidb/connection.cpp:2205
+msgid "Error on commit transaction"
+msgstr "Gwall wrth gadarnhau'r trawsweithrediad"
+
+#: kexidb/connection.cpp:2240
+msgid "Error on rollback transaction"
+msgstr "Gwall wrth ddadwneud y trosglwyddiad"
+
+#: kexidb/connection.cpp:2400 kexidb/connection.cpp:2913
+#, kde-format
+msgid "Invalid object name \"%1\""
+msgstr "Enw gwrthrych annilys \"%1\""
+
+#: kexidb/connection.cpp:2521
+#, fuzzy, kde-format
+msgid "Column %1 does not exist for the query."
+msgstr "Nid yw'r gronfa ddata \"%1\" yn bodoli."
+
+#: kexidb/connection.cpp:2778 kexidb/connection.cpp:2781
+#: kexidb/connection.cpp:2784
+msgid "Error while loading extended table schema information."
+msgstr ""
+
+#: kexidb/connection.cpp:2785
+msgid "Invalid XML data: "
+msgstr ""
+
+#: kexidb/connection.cpp:2815
+#, kde-format
+msgid ""
+"Error in XML data: \"%1\" in line %2, column %3.\n"
+"XML data: "
+msgstr ""
+
+#: kexidb/connection.cpp:2952
+#, fuzzy
+msgid "Table has no fields defined."
+msgstr "Ni cheir gwaredu tabl \"%1\"."
+
+#: kexidb/connection.cpp:3083
+#, kde-format
+msgid ""
+"Could not find definition for query \"%1\". Removing this query is "
+"recommended."
+msgstr ""
+
+#: kexidb/connection.cpp:3092
+#, kde-format
+msgid ""
+"<p>Could not load definition for query \"%1\". SQL statement for this query "
+"is invalid:<br><tt>%2</tt></p>\n"
+"<p>You can open this query in Text View and correct it.</p>"
+msgstr ""
+
+#: kexidb/connection.cpp:3300
+#, fuzzy
+msgid "Could not update record because there is no master table defined."
+msgstr "Methwyd creu cywaith \"%1\""
+
+#: kexidb/connection.cpp:3307
+#, fuzzy
+msgid ""
+"Could not update record because master table has no primary key defined."
+msgstr "Methwyd creu cywaith \"%1\""
+
+#: kexidb/connection.cpp:3336
+#, fuzzy
+msgid ""
+"Could not update record because it does not contain entire master table's "
+"primary key."
+msgstr "Methwyd creu cywaith \"%1\""
+
+#: kexidb/connection.cpp:3347 kexidb/connection.cpp:3587
+#, kde-format
+msgid "Primary key's field \"%1\" cannot be empty."
+msgstr "Ni all maes y prif allwedd \"%1\" fod yn wag."
+
+#: kexidb/connection.cpp:3374
+#, fuzzy
+#| msgid "Row updating on the server failed."
+msgid "Record updating on the server failed."
+msgstr "Methwyd diweddaru'r rhes ar y gweinydd."
+
+#: kexidb/connection.cpp:3397
+#, fuzzy
+msgid "Could not insert record because there is no master table defined."
+msgstr "Methwyd creu cywaith \"%1\""
+
+#: kexidb/connection.cpp:3434
+#, fuzzy
+msgid ""
+"Could not insert record because master table has no primary key defined."
+msgstr "Methwyd creu cywaith \"%1\""
+
+#: kexidb/connection.cpp:3443
+#, fuzzy
+msgid ""
+"Could not insert record because it does not contain entire master table's "
+"primary key."
+msgstr "Methwyd creu cywaith \"%1\""
+
+#: kexidb/connection.cpp:3490
+#, fuzzy
+#| msgid "Row inserting on the server failed."
+msgid "Record inserting on the server failed."
+msgstr "Methwyd mewnosod y rhes ar y gweinydd."
+
+#: kexidb/connection.cpp:3554
+#, fuzzy
+msgid "Could not delete record because there is no master table defined."
+msgstr "Methwyd creu cywaith \"%1\""
+
+#: kexidb/connection.cpp:3563
+#, fuzzy
+msgid ""
+"Could not delete record because there is no primary key for master table "
+"defined."
+msgstr "Methwyd creu cywaith \"%1\""
+
+#: kexidb/connection.cpp:3578
+#, fuzzy
+msgid ""
+"Could not delete record because it does not contain entire master table's "
+"primary key."
+msgstr "Methwyd creu cywaith \"%1\""
+
+#: kexidb/connection.cpp:3604 kexidb/connection.cpp:3627
+#, fuzzy
+msgid "Record deletion on the server failed."
+msgstr "Methwyd dileu y rhes ar y gweinydd."
+
+#. i18n(
+#. "Incompatible database driver's \"%1\" version: found version %2, expected version %3.",
+#. objectName(),
+#. QString("%1.%2").arg(version().major).arg(version().minor),
+#. QString("%1.%2").arg(KexiDB::version().major).arg(KexiDB::version().minor)));
+#. return false;
+#. }
+#: kexidb/driver.cpp:122
+#, fuzzy, kde-format
+msgid "Invalid database driver's \"%1\" implementation:\n"
+msgstr ""
+"Gweithredoliad annilys o yrrydd y gronfa ddata \"%1\":\n"
+"\n"
+
+#: kexidb/driver.cpp:123
+#, kde-format
+msgid "Value of \"%1\" is not initialized for the driver."
+msgstr "Nid yw gwerth \"%1\" wedi'i ymgychwyn ar gyfer y gyrrydd."
+
+#: kexidb/driver.cpp:191
+msgid "File name expected for file-based database driver."
+msgstr "Disgwylwyd enw ffeil ar gyfer gyrrydd feil-seiliedig."
 
 #: kexiutils/identifier.cpp:92
 #, fuzzy, kde-format
