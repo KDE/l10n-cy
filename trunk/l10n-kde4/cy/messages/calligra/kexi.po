@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-10 03:16+0200\n"
+"POT-Creation-Date: 2012-06-12 03:14+0200\n"
 "PO-Revision-Date: 2004-08-12 18:36+0100\n"
 "Last-Translator: KD at Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -594,9 +594,7 @@ msgstr "Ffeil gywaith cronfa ddata (neu ffeil fyrlwybr) i'w hagor."
 msgid "Unknown error"
 msgstr "Gwall anhysbys"
 
-#: core/kexiguimsghandler.cpp:149 plugins/reports/kexireportview.cpp:177
-#: plugins/reports/kexireportview.cpp:204
-#: plugins/reports/kexireportview.cpp:229
+#: core/kexiguimsghandler.cpp:149
 #, fuzzy
 msgid "Warning"
 msgstr "argraffu"
@@ -4265,9 +4263,7 @@ msgstr ""
 " Ydych eisiau ysgrifennu drosti?\n"
 
 #: main/startup/KexiStartupFileHandler.cpp:490
-#: plugins/reports/kexireportview.cpp:177
-#: plugins/reports/kexireportview.cpp:204
-#: plugins/reports/kexireportview.cpp:229 widget/KexiFileWidget.cpp:433
+#: plugins/reports/kexireportview.cpp:175 widget/KexiFileWidget.cpp:433
 msgid "Overwrite"
 msgstr "Trosysgrifo"
 
@@ -6630,7 +6626,6 @@ msgid "Snap to Grid"
 msgstr "I'r Grid"
 
 #: plugins/forms/kexiformmanager.cpp:190
-#: plugins/reports/kexireportview.cpp:237
 #, fuzzy
 #| msgid "Subtype"
 msgid "Style"
@@ -7376,72 +7371,53 @@ msgstr "Adroddiad"
 msgid "Prints the current report."
 msgstr "Cau'r cywaith cyfredol"
 
-#: plugins/reports/kexireportview.cpp:91
+#: plugins/reports/kexireportview.cpp:89
 #, fuzzy
 msgid "Export:"
 msgstr "&Allforio"
 
-#: plugins/reports/kexireportview.cpp:95
-#, fuzzy
-#| msgid "&Save Row"
-msgctxt "Note: do not translate 'Words'"
-msgid "Save to Words"
-msgstr "Cadw &Rhes"
+#: plugins/reports/kexireportview.cpp:94
+msgid "Export as Text Document"
+msgstr ""
+
+#: plugins/reports/kexireportview.cpp:97
+msgid "Export the report as a text document (in OpenDocument Text format)"
+msgstr ""
 
 #: plugins/reports/kexireportview.cpp:98
-#, fuzzy
-#| msgid "Closes the current project."
-msgid "Save the report to a Words application's document"
-msgstr "Cau'r cywaith cyfredol"
+msgid "Exports the report as a text document (in OpenDocument Text format)."
+msgstr ""
 
-#: plugins/reports/kexireportview.cpp:99
+#: plugins/reports/kexireportview.cpp:105
 #, fuzzy
-#| msgid "Closes the current project."
-msgid "Saves the report to a Words application's document."
-msgstr "Cau'r cywaith cyfredol"
-
-#: plugins/reports/kexireportview.cpp:106
-#, fuzzy
-msgctxt "Note: do not translate 'Tables'"
-msgid "Save to Spreadsheet"
+msgid "Export as Spreadsheet"
 msgstr "Heb fodiwl rhannau ar gyfer teip MIME \"%1\""
 
+#: plugins/reports/kexireportview.cpp:108
+msgid "Export the report as a spreadsheet (in OpenDocument Spreadsheet format)"
+msgstr ""
+
 #: plugins/reports/kexireportview.cpp:109
-#, fuzzy
-#| msgid "Closes the current project."
-msgid "Save the report to a spreadsheet"
-msgstr "Cau'r cywaith cyfredol"
+msgid ""
+"Exports the report as a spreadsheet (in OpenDocument Spreadsheet format)."
+msgstr ""
 
-#: plugins/reports/kexireportview.cpp:110
+#: plugins/reports/kexireportview.cpp:116
 #, fuzzy
-#| msgid "Closes the current project."
-msgid "Saves the current report to a spreadsheet."
-msgstr "Cau'r cywaith cyfredol"
+msgid "Export as Web Page"
+msgstr "Tabl cyfredol"
 
-#: plugins/reports/kexireportview.cpp:117
+#: plugins/reports/kexireportview.cpp:119
 #, fuzzy
-msgid "Save as Web Page"
+msgid "Export the report as a web page (in HTML format)"
 msgstr "Tabl cyfredol"
 
 #: plugins/reports/kexireportview.cpp:120
 #, fuzzy
-msgid "Save the report as web page"
+msgid "Exports the report as a web page (in HTML format)."
 msgstr "Tabl cyfredol"
 
-#: plugins/reports/kexireportview.cpp:121
-#, fuzzy
-msgid "Saves the report to a web page file."
-msgstr "Tabl cyfredol"
-
-#: plugins/reports/kexireportview.cpp:171
-#: plugins/reports/kexireportview.cpp:198
-#, fuzzy
-msgid "Save Report to..."
-msgstr "Adroddiad"
-
-#: plugins/reports/kexireportview.cpp:177
-#: plugins/reports/kexireportview.cpp:204
-#: plugins/reports/kexireportview.cpp:228
+#: plugins/reports/kexireportview.cpp:174
 #, fuzzy, kde-format
 msgid ""
 "The file %1 exists.\n"
@@ -7450,66 +7426,66 @@ msgstr ""
 "Mae'r ffeil \"%1\" eisoes mewn bod.\n"
 " Ydych eisiau ysgrifennu drosti?\n"
 
-#: plugins/reports/kexireportview.cpp:183
-#, fuzzy, kde-format
-msgctxt "Note: do not translate 'Tables'"
-msgid "Failed to open %1 in Tables application."
-msgstr "Heb fodiwl rhannau ar gyfer teip MIME \"%1\""
-
-#: plugins/reports/kexireportview.cpp:183
+#: plugins/reports/kexireportview.cpp:200
 #, fuzzy
-msgid "Opening in Tables application failed"
+#| msgid "Closes the current project."
+msgid "Export Report as Spreadsheet"
+msgstr "Cau'r cywaith cyfredol"
+
+#: plugins/reports/kexireportview.cpp:207
+#, fuzzy, kde-format
+#| msgid "Closes the current project."
+msgid "Failed to export the report as spreadsheet to %1."
+msgstr "Cau'r cywaith cyfredol"
+
+#: plugins/reports/kexireportview.cpp:208
+#: plugins/reports/kexireportview.cpp:232
+#: plugins/reports/kexireportview.cpp:270
+#, fuzzy
+msgid "Export Failed"
 msgstr "Cadw gwrthrych fel"
 
-#: plugins/reports/kexireportview.cpp:210
-#, fuzzy, kde-format
-msgctxt "Note: do not translate 'Words'"
-msgid "Failed to save %1 to Words applications"
-msgstr "Heb fodiwl rhannau ar gyfer teip MIME \"%1\""
-
-#: plugins/reports/kexireportview.cpp:210
-#, fuzzy
-msgid "Saving to Words application failed"
-msgstr "Cadw gwrthrych fel"
-
-#: plugins/reports/kexireportview.cpp:222
-#, fuzzy
-msgid "Save Report as Web Page"
-msgstr "Tabl cyfredol"
-
-#: plugins/reports/kexireportview.cpp:236
-msgid ""
-"Would you like to export using a Cascading Style Sheet which will give "
-"output closer to the original, or export using a HTML Table which outputs a "
-"much simpler format."
+#: plugins/reports/kexireportview.cpp:224
+msgid "Export Report as Text Document"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:248
-#, fuzzy, kde-format
-msgid "Saving report to %1 failed"
+#: plugins/reports/kexireportview.cpp:231
+#, kde-format
+msgid "Exporting the report as text document to %1 failed."
+msgstr ""
+
+#: plugins/reports/kexireportview.cpp:244
+#, fuzzy
+msgid "Export Report as Web Page"
 msgstr "Tabl cyfredol"
 
-#: plugins/reports/kexireportview.cpp:248
-#, fuzzy
-msgid "Saving failed"
-msgstr "Cadw gwrthrych fel"
+#: plugins/reports/kexireportview.cpp:253
+msgid ""
+"Would you like to export using a Cascading Style Sheet (CSS), which will "
+"give an output closer to the original, or export using a HTML Table, which "
+"outputs a much simpler format?"
+msgstr ""
 
-#: plugins/reports/kexireportview.cpp:250
+#: plugins/reports/kexireportview.cpp:257
+msgid "Use CSS"
+msgstr ""
+
+#: plugins/reports/kexireportview.cpp:258
+#, fuzzy
+#| msgid "Table"
+msgid "Use Table"
+msgstr "Tabl"
+
+#: plugins/reports/kexireportview.cpp:269
 #, fuzzy, kde-format
-#| msgid "Report"
-msgid "Report saved to %1"
-msgstr "Adroddiad"
+msgid "Exporting the report as web page to %1 failed."
+msgstr "Tabl cyfredol"
 
-#: plugins/reports/kexireportview.cpp:250
-#, fuzzy
-msgid "Saving succeeded"
-msgstr "&Allforio"
-
-#: plugins/reports/kexireportview.cpp:327
+#: plugins/reports/kexireportview.cpp:348
 msgid "Report schema appears to be invalid or corrupt"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:327
+#: plugins/reports/kexireportview.cpp:348
 #, fuzzy
 msgid "Opening failed"
 msgstr "Cadw gwrthrych fel"
@@ -9206,6 +9182,70 @@ msgid "Projects stored in a file"
 msgstr "Cywaith newydd wedi'i storio mewn ffeil"
 
 #, fuzzy
+#~| msgid "&Save Row"
+#~ msgctxt "Note: do not translate 'Words'"
+#~ msgid "Save to Words"
+#~ msgstr "Cadw &Rhes"
+
+#, fuzzy
+#~| msgid "Closes the current project."
+#~ msgid "Save the report to a Words application's document"
+#~ msgstr "Cau'r cywaith cyfredol"
+
+#, fuzzy
+#~| msgid "Closes the current project."
+#~ msgid "Saves the report to a Words application's document."
+#~ msgstr "Cau'r cywaith cyfredol"
+
+#, fuzzy
+#~| msgid "Closes the current project."
+#~ msgid "Saves the current report to a spreadsheet."
+#~ msgstr "Cau'r cywaith cyfredol"
+
+#, fuzzy
+#~ msgid "Save as Web Page"
+#~ msgstr "Tabl cyfredol"
+
+#, fuzzy
+#~ msgid "Save Report to..."
+#~ msgstr "Adroddiad"
+
+#, fuzzy
+#~ msgctxt "Note: do not translate 'Tables'"
+#~ msgid "Failed to open %1 in Tables application."
+#~ msgstr "Heb fodiwl rhannau ar gyfer teip MIME \"%1\""
+
+#, fuzzy
+#~ msgid "Opening in Tables application failed"
+#~ msgstr "Cadw gwrthrych fel"
+
+#, fuzzy
+#~ msgctxt "Note: do not translate 'Words'"
+#~ msgid "Failed to save %1 to Words applications"
+#~ msgstr "Heb fodiwl rhannau ar gyfer teip MIME \"%1\""
+
+#, fuzzy
+#~ msgid "Saving to Words application failed"
+#~ msgstr "Cadw gwrthrych fel"
+
+#, fuzzy
+#~ msgid "Saving report to %1 failed"
+#~ msgstr "Tabl cyfredol"
+
+#, fuzzy
+#~ msgid "Saving failed"
+#~ msgstr "Cadw gwrthrych fel"
+
+#, fuzzy
+#~| msgid "Report"
+#~ msgid "Report saved to %1"
+#~ msgstr "Adroddiad"
+
+#, fuzzy
+#~ msgid "Saving succeeded"
+#~ msgstr "&Allforio"
+
+#, fuzzy
 #~ msgid "Kexi version:"
 #~ msgstr "Didoli"
 
@@ -9265,10 +9305,6 @@ msgstr "Cywaith newydd wedi'i storio mewn ffeil"
 #, fuzzy
 #~ msgid "Export Style"
 #~ msgstr "&Allforio"
-
-#, fuzzy
-#~ msgid "Exporting failed"
-#~ msgstr "Cadw gwrthrych fel"
 
 #, fuzzy
 #~ msgid "Main Area"
