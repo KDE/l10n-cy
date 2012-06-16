@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-14 03:47+0200\n"
+"POT-Creation-Date: 2012-06-16 03:15+0200\n"
 "PO-Revision-Date: 2004-07-06 17:18+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -8046,13 +8046,13 @@ msgstr "Graddio Haen..."
 
 #. i18n: file: ui/forms/kis_previewwidgetbase.ui:122
 #. i18n: ectx: property (toolTip), widget (KPushButton, btnZoomOut)
-#: rc.cpp:3201
+#: rc.cpp:3201 ui/input/kis_zoom_action.cpp:49
 msgid "Zoom Out"
 msgstr "Pellhàu"
 
 #. i18n: file: ui/forms/kis_previewwidgetbase.ui:135
 #. i18n: ectx: property (toolTip), widget (KPushButton, btnZoomIn)
-#: rc.cpp:3204
+#: rc.cpp:3204 ui/input/kis_zoom_action.cpp:48
 msgid "Zoom In"
 msgstr "Nesàu"
 
@@ -13949,6 +13949,42 @@ msgid ""
 "<i>./0</i> represents the first child of the current layer"
 msgstr ""
 
+#: ui/tool/kis_tool_freehand_helper.cpp:127
+msgid "Freehand Stroke"
+msgstr ""
+
+#: ui/tool/kis_tool_freehand.cc:90
+#, fuzzy
+msgid "Increase Brush Size"
+msgstr "brwsh"
+
+#: ui/tool/kis_tool_freehand.cc:96
+#, fuzzy
+msgid "Decrease Brush Size"
+msgstr "Brwsh"
+
+#: ui/tool/kis_tool.cc:111
+#, fuzzy
+#| msgid "Foreground Color"
+msgid "Swap Foreground and Background Color"
+msgstr "Lliw Blaendir"
+
+#: ui/tool/kis_tool.cc:117
+#, fuzzy
+#| msgid "Foreground Color"
+msgid "Reset Foreground and Background Color"
+msgstr "Lliw Blaendir"
+
+#: ui/tool/kis_tool.cc:519
+#, fuzzy
+msgid "Clear"
+msgstr "Brwsh"
+
+#: ui/tool/kis_tool.cc:547
+#, fuzzy
+msgid "No options"
+msgstr "Alffa"
+
 #: ui/tool/kis_tool_paint.cc:92
 msgid "Make brush color lighter"
 msgstr ""
@@ -13968,42 +14004,6 @@ msgstr "Rhagolwg: "
 #| msgid "Preview: "
 msgid "Decrease opacity"
 msgstr "Rhagolwg: "
-
-#: ui/tool/kis_tool_freehand_helper.cpp:127
-msgid "Freehand Stroke"
-msgstr ""
-
-#: ui/tool/kis_tool.cc:111
-#, fuzzy
-#| msgid "Foreground Color"
-msgid "Swap Foreground and Background Color"
-msgstr "Lliw Blaendir"
-
-#: ui/tool/kis_tool.cc:117
-#, fuzzy
-#| msgid "Foreground Color"
-msgid "Reset Foreground and Background Color"
-msgstr "Lliw Blaendir"
-
-#: ui/tool/kis_tool.cc:595
-#, fuzzy
-msgid "Clear"
-msgstr "Brwsh"
-
-#: ui/tool/kis_tool.cc:623
-#, fuzzy
-msgid "No options"
-msgstr "Alffa"
-
-#: ui/tool/kis_tool_freehand.cc:90
-#, fuzzy
-msgid "Increase Brush Size"
-msgstr "brwsh"
-
-#: ui/tool/kis_tool_freehand.cc:96
-#, fuzzy
-msgid "Decrease Brush Size"
-msgstr "Brwsh"
 
 #: ui/widgets/kis_channelflags_widget.cpp:39
 msgid ""
@@ -14126,6 +14126,130 @@ msgstr "Ffurfweddu..."
 msgid ""
 "Cannot start Colors Settings panel from KDE Control Center. Please check "
 "your system..."
+msgstr ""
+
+#: ui/input/kis_abstract_input_action.cpp:36
+#, fuzzy
+msgid "Activate"
+msgstr "Tynnu Haen"
+
+#: ui/input/kis_alternate_invocation_action.cpp:33
+#, fuzzy
+#| msgid "Printing"
+msgid "Alternate Invocation"
+msgstr "Argraffu"
+
+#: ui/input/kis_alternate_invocation_action.cpp:34
+msgid ""
+"Alternate Invocation performs an alternate action with the current tool. For "
+"example, using the brush tool it picks a color from the canvas."
+msgstr ""
+
+#: ui/input/kis_change_primary_setting_action.cpp:29
+msgid "Change Tool Primary Setting"
+msgstr ""
+
+#: ui/input/kis_change_primary_setting_action.cpp:30
+msgid ""
+"Changes a tool's \"Primary Setting\", for example the brush size for the "
+"brush tool."
+msgstr ""
+
+#: ui/input/kis_input_manager.cpp:100
+#, fuzzy
+msgid "Set Mirror Axis"
+msgstr "Haen i Ddelwedd"
+
+#: ui/input/kis_pan_action.cpp:47
+#, fuzzy
+#| msgid "Canvas"
+msgid "Pan Canvas"
+msgstr "Cynfas"
+
+#: ui/input/kis_pan_action.cpp:50
+msgid "Toggle Pan Mode"
+msgstr ""
+
+#: ui/input/kis_pan_action.cpp:51
+#, fuzzy
+#| msgid "Left:"
+msgid "Pan Left"
+msgstr "Chwith:"
+
+#: ui/input/kis_pan_action.cpp:52
+#, fuzzy
+#| msgid "Right:"
+msgid "Pan Right"
+msgstr "De:"
+
+#: ui/input/kis_pan_action.cpp:53
+msgid "Pan Up"
+msgstr ""
+
+#: ui/input/kis_pan_action.cpp:54
+#, fuzzy
+#| msgid "Down"
+msgid "Pan Down"
+msgstr "I Lawr"
+
+#: ui/input/kis_rotate_canvas_action.cpp:44
+#, fuzzy
+msgid "Rotate Canvas"
+msgstr "Ailenwi Delwedd"
+
+#: ui/input/kis_rotate_canvas_action.cpp:46
+#, fuzzy
+msgid "Toggle Rotate Mode"
+msgstr "Cylchdroi"
+
+#: ui/input/kis_rotate_canvas_action.cpp:47
+#, fuzzy
+msgid "Rotate Left"
+msgstr "&Gwaredu Haen"
+
+#: ui/input/kis_rotate_canvas_action.cpp:48
+#, fuzzy
+msgid "Rotate Right"
+msgstr "Cylchdroi"
+
+#: ui/input/kis_rotate_canvas_action.cpp:49
+#, fuzzy
+msgid "Reset Rotation"
+msgstr "Cylchdroi"
+
+#: ui/input/kis_show_palette_action.cpp:31
+#, fuzzy
+msgid "Show Popup Palette"
+msgstr "Patrymau"
+
+#: ui/input/kis_tool_invocation_action.cpp:49
+#, fuzzy
+msgid "Tool Invocation"
+msgstr "Ffurfweddu..."
+
+#: ui/input/kis_tool_invocation_action.cpp:50
+msgid ""
+"Tool Invocation invokes the current tool, for example, using the brush tool, "
+"it will start painting."
+msgstr ""
+
+#: ui/input/kis_zoom_action.cpp:44
+#, fuzzy
+#| msgid "Zoom In"
+msgid "Zoom Canvas"
+msgstr "Nesàu"
+
+#: ui/input/kis_zoom_action.cpp:47
+msgid "Toggle Zoom Mode"
+msgstr ""
+
+#: ui/input/kis_zoom_action.cpp:50
+#, fuzzy
+msgid "Reset Zoom to 100%"
+msgstr "&Detholi"
+
+#: ui/input/kis_zoom_action.cpp:51
+msgid "Fit to Page"
 msgstr ""
 
 #: main.cc:50
@@ -14994,10 +15118,6 @@ msgstr "Ffeil(iau) neu URL(au) i'w hagor"
 #~ msgstr "Brwsh"
 
 #, fuzzy
-#~ msgid "Mirror: "
-#~ msgstr "Haen i Ddelwedd"
-
-#, fuzzy
 #~ msgid "Move a layer (SHIFT+V)"
 #~ msgstr "Tynnu Haen"
 
@@ -15246,11 +15366,6 @@ msgstr "Ffeil(iau) neu URL(au) i'w hagor"
 #, fuzzy
 #~ msgid "Pixel Eraser"
 #~ msgstr "Detholiad"
-
-#, fuzzy
-#~| msgid "Canvas"
-#~ msgid "Size Canvas"
-#~ msgstr "Cynfas"
 
 #, fuzzy
 #~| msgid "Color Settings"
@@ -15703,10 +15818,6 @@ msgstr "Ffeil(iau) neu URL(au) i'w hagor"
 #~ msgstr "brwsh"
 
 #, fuzzy
-#~ msgid "&PopupPalette"
-#~ msgstr "Patrymau"
-
-#, fuzzy
 #~ msgid "All Images"
 #~ msgstr "Delwedd"
 
@@ -16020,10 +16131,6 @@ msgstr "Ffeil(iau) neu URL(au) i'w hagor"
 #~ msgstr "Cylchdroi"
 
 #, fuzzy
-#~ msgid "Rotating"
-#~ msgstr "Cylchdroi"
-
-#, fuzzy
 #~ msgid "Color conversion"
 #~ msgstr "Dewisydd Lliw"
 
@@ -16127,9 +16234,6 @@ msgstr "Ffeil(iau) neu URL(au) i'w hagor"
 #, fuzzy
 #~ msgid "Orientation:"
 #~ msgstr "Graddfa:"
-
-#~ msgid "Down"
-#~ msgstr "I Lawr"
 
 #, fuzzy
 #~ msgid "&Strength:"
