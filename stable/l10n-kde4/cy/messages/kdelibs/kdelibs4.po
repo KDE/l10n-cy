@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-19 19:42+0200\n"
+"POT-Creation-Date: 2012-06-24 12:03+0200\n"
 "PO-Revision-Date: 2005-01-28 17:54+0000\n"
 "Last-Translator: Kevin Donnelly <kevin@dotmon.com>\n"
 "Language-Team: Cymraeg\n"
@@ -5362,54 +5362,6 @@ msgstr "Gwall anhysbys"
 msgid "Operation not supported"
 msgstr "ni chynhelir y gweithrediad "
 
-#: kdecore/network/netsupp.cpp:891 kdecore/network/k3resolver.cpp:545
-msgid "no error"
-msgstr "dim gwall"
-
-#: kdecore/network/netsupp.cpp:892
-msgid "address family for nodename not supported"
-msgstr "ni chynhalir y teulu cyfeiriad am yr enw nôd"
-
-#: kdecore/network/netsupp.cpp:893 kdecore/network/k3resolver.cpp:547
-msgid "temporary failure in name resolution"
-msgstr "methiant dros dro wrth ddadansoddi'r enw"
-
-#: kdecore/network/netsupp.cpp:894
-msgid "invalid value for 'ai_flags'"
-msgstr "gwerth dilys am 'ai_flags'"
-
-#: kdecore/network/netsupp.cpp:895 kdecore/network/k3resolver.cpp:548
-msgid "non-recoverable failure in name resolution"
-msgstr "methiant anadferadwy wrth ddadansoddi'r enw"
-
-#: kdecore/network/netsupp.cpp:896
-msgid "'ai_family' not supported"
-msgstr "ni chynhelir 'ai_family'"
-
-#: kdecore/network/netsupp.cpp:897 kdecore/network/k3resolver.cpp:550
-msgid "memory allocation failure"
-msgstr "methiant wrth ddyrannu cof"
-
-#: kdecore/network/netsupp.cpp:898
-msgid "no address associated with nodename"
-msgstr "ni chysylltir cyfeiriad efo enw'r nôd"
-
-#: kdecore/network/netsupp.cpp:899 kdecore/network/k3resolver.cpp:551
-msgid "name or service not known"
-msgstr "ni adnabyddir enw neu gwasanaeth"
-
-#: kdecore/network/netsupp.cpp:900
-msgid "servname not supported for ai_socktype"
-msgstr "ni chynhelir servname am ai_socktype"
-
-#: kdecore/network/netsupp.cpp:901
-msgid "'ai_socktype' not supported"
-msgstr "ni chynhelir 'ai_socktype'"
-
-#: kdecore/network/netsupp.cpp:902
-msgid "system error"
-msgstr "gwall cysawd"
-
 #: kdecore/network/k3socks.cpp:137
 msgid "NEC SOCKS client"
 msgstr "dibynnydd NEC SOCKS"
@@ -5423,13 +5375,33 @@ msgstr "dibynnydd Dante SOCKS"
 msgid "Timed out trying to connect to remote host"
 msgstr ""
 
+#: kdecore/network/k3resolver.cpp:545 kdecore/network/netsupp.cpp:894
+msgid "no error"
+msgstr "dim gwall"
+
 #: kdecore/network/k3resolver.cpp:546
 msgid "requested family not supported for this host name"
 msgstr "ni chynhelir y deulu benodol i'r enw gwesteiwr yma"
 
+#: kdecore/network/k3resolver.cpp:547 kdecore/network/netsupp.cpp:896
+msgid "temporary failure in name resolution"
+msgstr "methiant dros dro wrth ddadansoddi'r enw"
+
+#: kdecore/network/k3resolver.cpp:548 kdecore/network/netsupp.cpp:898
+msgid "non-recoverable failure in name resolution"
+msgstr "methiant anadferadwy wrth ddadansoddi'r enw"
+
 #: kdecore/network/k3resolver.cpp:549
 msgid "invalid flags"
 msgstr "baneri annilys"
+
+#: kdecore/network/k3resolver.cpp:550 kdecore/network/netsupp.cpp:900
+msgid "memory allocation failure"
+msgstr "methiant wrth ddyrannu cof"
+
+#: kdecore/network/k3resolver.cpp:551 kdecore/network/netsupp.cpp:902
+msgid "name or service not known"
+msgstr "ni adnabyddir enw neu gwasanaeth"
 
 #: kdecore/network/k3resolver.cpp:552
 msgid "requested family not supported"
@@ -5538,6 +5510,34 @@ msgstr ""
 msgctxt "SSL error"
 msgid "Unknown error"
 msgstr "Gwall anhysbys"
+
+#: kdecore/network/netsupp.cpp:895
+msgid "address family for nodename not supported"
+msgstr "ni chynhalir y teulu cyfeiriad am yr enw nôd"
+
+#: kdecore/network/netsupp.cpp:897
+msgid "invalid value for 'ai_flags'"
+msgstr "gwerth dilys am 'ai_flags'"
+
+#: kdecore/network/netsupp.cpp:899
+msgid "'ai_family' not supported"
+msgstr "ni chynhelir 'ai_family'"
+
+#: kdecore/network/netsupp.cpp:901
+msgid "no address associated with nodename"
+msgstr "ni chysylltir cyfeiriad efo enw'r nôd"
+
+#: kdecore/network/netsupp.cpp:903
+msgid "servname not supported for ai_socktype"
+msgstr "ni chynhelir servname am ai_socktype"
+
+#: kdecore/network/netsupp.cpp:904
+msgid "'ai_socktype' not supported"
+msgstr "ni chynhelir 'ai_socktype'"
+
+#: kdecore/network/netsupp.cpp:905
+msgid "system error"
+msgstr "gwall cysawd"
 
 #: kdecore/services/kmimetyperepository.cpp:611
 #, fuzzy, kde-format
@@ -5841,18 +5841,6 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Hunan-gywiro"
 
-#: kdeui/actions/kaction.cpp:122
-#, kde-format
-msgid ""
-"The key sequence '%1' is ambiguous. Use 'Configure Shortcuts'\n"
-"from the 'Settings' menu to solve the ambiguity.\n"
-"No action will be triggered."
-msgstr ""
-
-#: kdeui/actions/kaction.cpp:126
-msgid "Ambiguous shortcut detected"
-msgstr ""
-
 #: kdeui/actions/krecentfilesaction.cpp:81
 #, fuzzy
 msgid "No Entries"
@@ -5952,6 +5940,18 @@ msgstr "Modd Sgrîn Llawn"
 #: kdeui/actions/ktogglefullscreenaction.cpp:55
 msgctxt "@info:tooltip"
 msgid "Display the window in full screen"
+msgstr ""
+
+#: kdeui/actions/kaction.cpp:122
+#, kde-format
+msgid ""
+"The key sequence '%1' is ambiguous. Use 'Configure Shortcuts'\n"
+"from the 'Settings' menu to solve the ambiguity.\n"
+"No action will be triggered."
+msgstr ""
+
+#: kdeui/actions/kaction.cpp:126
+msgid "Ambiguous shortcut detected"
 msgstr ""
 
 #: kdeui/dialogs/kaboutapplicationdialog.cpp:84
