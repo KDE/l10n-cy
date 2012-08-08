@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdegraphics/kolourpaint.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-04 04:15+0200\n"
+"POT-Creation-Date: 2012-08-07 21:41+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -53,11 +53,6 @@ msgstr "Gwastadu"
 msgid "Reduce to Grayscale"
 msgstr ""
 
-#: commands/imagelib/effects/kpEffectHSVCommand.cpp:37
-#: dialogs/imagelib/effects/kpEffectsDialog.cpp:116
-msgid "Hue, Saturation, Value"
-msgstr ""
-
 #: commands/imagelib/effects/kpEffectInvertCommand.cpp:50
 #: commands/imagelib/effects/kpEffectInvertCommand.cpp:58
 #, fuzzy
@@ -68,6 +63,16 @@ msgstr "Gwrthdroi"
 #: dialogs/imagelib/effects/kpEffectsDialog.cpp:117
 msgid "Invert"
 msgstr "Gwrthdroi"
+
+#: commands/imagelib/effects/kpEffectToneEnhanceCommand.cpp:41
+#: dialogs/imagelib/effects/kpEffectsDialog.cpp:115
+msgid "Histogram Equalizer"
+msgstr ""
+
+#: commands/imagelib/effects/kpEffectHSVCommand.cpp:37
+#: dialogs/imagelib/effects/kpEffectsDialog.cpp:116
+msgid "Hue, Saturation, Value"
+msgstr ""
 
 #: commands/imagelib/effects/kpEffectReduceColorsCommand.cpp:57
 msgid "Reduce to Monochrome (Dithered)"
@@ -85,11 +90,6 @@ msgstr ""
 msgid "Reduce to 256 Color"
 msgstr ""
 
-#: commands/imagelib/effects/kpEffectToneEnhanceCommand.cpp:41
-#: dialogs/imagelib/effects/kpEffectsDialog.cpp:115
-msgid "Histogram Equalizer"
-msgstr ""
-
 #: commands/imagelib/transforms/kpTransformFlipCommand.cpp:69
 msgid "Flip"
 msgstr ""
@@ -105,6 +105,14 @@ msgstr "Troi Drosodd yn Llorweddol"
 #: commands/imagelib/transforms/kpTransformFlipCommand.cpp:76
 msgid "Flip vertically"
 msgstr "Troi Drosodd yn Fertigol"
+
+#: commands/imagelib/transforms/kpTransformRotateCommand.cpp:72
+msgid "Rotate"
+msgstr "Cylchdroi"
+
+#: commands/imagelib/transforms/kpTransformSkewCommand.cpp:75
+msgid "Skew"
+msgstr ""
 
 #: commands/imagelib/transforms/kpTransformResizeScaleCommand.cpp:110
 #: commands/tools/selection/kpToolSelectionResizeScaleCommand.cpp:62
@@ -132,12 +140,13 @@ msgstr "Chwyddo"
 msgid "Smooth Scale"
 msgstr ""
 
-#: commands/imagelib/transforms/kpTransformRotateCommand.cpp:72
-msgid "Rotate"
-msgstr "Cylchdroi"
+#: commands/tools/kpToolColorPickerCommand.cpp:61
+#: tools/kpToolColorPicker.cpp:47
+msgid "Color Picker"
+msgstr "Casglydd Lliwiau"
 
-#: commands/imagelib/transforms/kpTransformSkewCommand.cpp:75
-msgid "Skew"
+#: commands/tools/kpToolFloodFillCommand.cpp:78 tools/kpToolFloodFill.cpp:55
+msgid "Flood Fill"
 msgstr ""
 
 #: commands/kpCommandHistoryBase.cpp:454
@@ -191,15 +200,6 @@ msgid "%1 more item"
 msgid_plural "%1 more items"
 msgstr[0] ""
 msgstr[1] ""
-
-#: commands/tools/kpToolColorPickerCommand.cpp:61
-#: tools/kpToolColorPicker.cpp:47
-msgid "Color Picker"
-msgstr "Casglydd Lliwiau"
-
-#: commands/tools/kpToolFloodFillCommand.cpp:78 tools/kpToolFloodFill.cpp:55
-msgid "Flood Fill"
-msgstr ""
 
 #: dialogs/imagelib/effects/kpEffectsDialog.cpp:91
 msgctxt "@title:window"
@@ -895,102 +895,9 @@ msgid "Cannot Autocrop"
 msgstr ""
 
 #: imagelib/transforms/kpTransformCrop_ImageSelection.cpp:255
-#: mainWindow/kpMainWindow_Image.cpp:314 mainWindow/kpMainWindow_Edit.cpp:367
+#: mainWindow/kpMainWindow_Edit.cpp:367 mainWindow/kpMainWindow_Image.cpp:314
 #: tools/selection/image/kpAbstractImageSelectionTool.cpp:81
 msgid "Selection: Create"
-msgstr ""
-
-#: kolourpaint.cpp:49
-#, fuzzy
-#| msgid "KolourPaint"
-msgid "KolourPaint"
-msgstr "KolourPaint"
-
-#: kolourpaint.cpp:51
-msgid "Paint Program for KDE"
-msgstr ""
-
-#: kolourpaint.cpp:54
-msgid "To obtain support, please visit the website."
-msgstr ""
-
-#: kolourpaint.cpp:65
-msgid "Clarence Dang"
-msgstr ""
-
-#: kolourpaint.cpp:65
-msgid "Project Founder"
-msgstr ""
-
-#: kolourpaint.cpp:66
-msgid "Thurston Dang"
-msgstr ""
-
-#: kolourpaint.cpp:66
-msgid "Chief Investigator"
-msgstr ""
-
-#: kolourpaint.cpp:68
-#, fuzzy
-#| msgid "Maintainer"
-msgid "Martin Koller"
-msgstr "Cynhaliwr"
-
-#: kolourpaint.cpp:68
-msgid "Scanning Support, Alpha Support, Current Maintainer"
-msgstr ""
-
-#: kolourpaint.cpp:69
-msgid "Kristof Borrey"
-msgstr ""
-
-#: kolourpaint.cpp:69 kolourpaint.cpp:72 kolourpaint.cpp:73
-msgid "Icons"
-msgstr "Eiconau"
-
-#: kolourpaint.cpp:70
-msgid "Tasuku Suzuki"
-msgstr ""
-
-#: kolourpaint.cpp:70 kolourpaint.cpp:71
-msgid "InputMethod Support"
-msgstr ""
-
-#: kolourpaint.cpp:71
-msgid "Kazuki Ohta"
-msgstr ""
-
-#: kolourpaint.cpp:72
-msgid "Nuno Pinheiro"
-msgstr ""
-
-#: kolourpaint.cpp:73
-msgid "Danny Allen"
-msgstr ""
-
-#: kolourpaint.cpp:74
-msgid "Mike Gashler"
-msgstr ""
-
-#: kolourpaint.cpp:74
-msgid "Image Effects"
-msgstr ""
-
-#: kolourpaint.cpp:76
-msgid "Laurent Montel"
-msgstr ""
-
-#: kolourpaint.cpp:76
-msgid "KDE 4 Porting"
-msgstr ""
-
-#: kolourpaint.cpp:80
-msgid ""
-"Thanks to the many others who have helped to make this program possible."
-msgstr ""
-
-#: kolourpaint.cpp:85
-msgid "Image file to open"
 msgstr ""
 
 #: layers/selections/text/kpTextSelection.cpp:136
@@ -1071,10 +978,6 @@ msgstr ""
 #: mainWindow/kpMainWindow_View_Thumbnail.cpp:90
 msgid "Enable Thumbnail &Rectangle"
 msgstr ""
-
-#: mainWindow/kpMainWindow_View.cpp:76
-msgid "Show &Grid"
-msgstr "Dango&s Grid"
 
 #: mainWindow/kpMainWindow_Colors.cpp:59
 #, fuzzy
@@ -1191,171 +1094,9 @@ msgstr ""
 msgid "Save Color Palette As"
 msgstr "Gwrthdroi"
 
-#: mainWindow/kpMainWindow_StatusBar.cpp:149
-#, kde-format
-msgid "%1,%2"
-msgstr ""
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:156
-#, kde-format
-msgid "%1,%2 - %3,%4"
-msgstr ""
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:199
-#: widgets/toolbars/options/kpToolWidgetEraserSize.cpp:115
-#: widgets/toolbars/options/kpToolWidgetSpraycanSize.cpp:92
-#, kde-format
-msgid "%1x%2"
-msgstr ""
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:258
-#, kde-format
-msgid "%1bpp"
-msgstr ""
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:284
-#: mainWindow/kpMainWindow_View_Zoom.cpp:91
-#, kde-format
-msgid "%1%"
-msgstr "%1%"
-
-#: mainWindow/kpMainWindow_View_Zoom.cpp:113
-msgid "&Zoom"
-msgstr ""
-
-#: mainWindow/kpMainWindow_View_Zoom.cpp:194
-#, kde-format
-msgid ""
-"Setting the zoom level to a value that is not a multiple of 100% results in "
-"imprecise editing and redraw glitches.\n"
-"Do you really want to set to zoom level to %1%?"
-msgstr ""
-
-#: mainWindow/kpMainWindow_View_Zoom.cpp:199
-#, kde-format
-msgid "Set Zoom Level to %1%"
-msgstr ""
-
-#: mainWindow/kpMainWindow_Image.cpp:119
-msgid "R&esize / Scale..."
-msgstr ""
-
-#: mainWindow/kpMainWindow_Image.cpp:124
-msgid "Se&t as Image (Crop)"
-msgstr ""
-
-#: mainWindow/kpMainWindow_Image.cpp:134
-msgid "&Flip (upside down)"
-msgstr ""
-
-#: mainWindow/kpMainWindow_Image.cpp:139
-#, fuzzy
-#| msgid "Flip horizontally"
-msgid "Mirror (horizontally)"
-msgstr "Troi Drosodd yn Llorweddol"
-
-#: mainWindow/kpMainWindow_Image.cpp:144
-msgid "&Rotate..."
-msgstr "C&ylchdroi ..."
-
-#: mainWindow/kpMainWindow_Image.cpp:150
-#, fuzzy
-#| msgid "Rotate"
-msgid "Rotate &Left"
-msgstr "Cylchdroi"
-
-#: mainWindow/kpMainWindow_Image.cpp:156
-#, fuzzy
-#| msgid "Rotate"
-msgid "Rotate Righ&t"
-msgstr "Cylchdroi"
-
-#: mainWindow/kpMainWindow_Image.cpp:162
-msgid "S&kew..."
-msgstr ""
-
-#: mainWindow/kpMainWindow_Image.cpp:167
-msgid "Reduce to Mo&nochrome (Dithered)"
-msgstr ""
-
-#: mainWindow/kpMainWindow_Image.cpp:171
-msgid "Reduce to &Grayscale"
-msgstr ""
-
-#: mainWindow/kpMainWindow_Image.cpp:175
-msgid "&Invert Colors"
-msgstr ""
-
-#: mainWindow/kpMainWindow_Image.cpp:180
-msgid "C&lear"
-msgstr "&Gwaredu"
-
-#: mainWindow/kpMainWindow_Image.cpp:185
-msgid "&More Effects..."
-msgstr ""
-
-#: mainWindow/kpMainWindow_Image.cpp:225
-#, fuzzy
-msgctxt ""
-"Image/Selection Menu caption - make sure the translation has the same accel "
-"as the Select&ion translation"
-msgid "&Image"
-msgstr "&Delwedd"
-
-#: mainWindow/kpMainWindow_Image.cpp:229
-#, fuzzy
-msgctxt ""
-"Image/Selection Menu caption - make sure that translation has the same accel "
-"as the &Image translation"
-msgid "Select&ion"
-msgstr "Dewisi&ad"
-
-#: mainWindow/kpMainWindow_Image.cpp:316 mainWindow/kpMainWindow_Edit.cpp:366
-#: mainWindow/kpMainWindow_Edit.cpp:440 tools/selection/text/kpToolText.cpp:93
-msgid "Text: Create Box"
-msgstr ""
-
-#: mainWindow/kpMainWindow_Settings.cpp:67
-msgid "Show &Path"
-msgstr "Dango&s Llwybr"
-
-#: mainWindow/kpMainWindow_Tools.cpp:136
-msgid "Previous Tool Option (Group #1)"
-msgstr ""
-
-#: mainWindow/kpMainWindow_Tools.cpp:142
-msgid "Next Tool Option (Group #1)"
-msgstr ""
-
-#: mainWindow/kpMainWindow_Tools.cpp:148
-msgid "Previous Tool Option (Group #2)"
-msgstr ""
-
-#: mainWindow/kpMainWindow_Tools.cpp:154
-msgid "Next Tool Option (Group #2)"
-msgstr ""
-
-#: mainWindow/kpMainWindow_Tools.cpp:166
-#, fuzzy
-#| msgid "Opaque"
-msgid "&Draw Opaque"
-msgstr "Afloyw"
-
-#: mainWindow/kpMainWindow_Tools.cpp:171
-msgid "Draw With Color Similarity..."
-msgstr ""
-
-#: mainWindow/kpMainWindow_Tools.cpp:182
-msgid "Tool Box"
-msgstr ""
-
-#: mainWindow/kpMainWindow_Tools.cpp:641
-#, kde-format
-msgid ""
-"<qt><p>Resizing the image to %1x%2 may take a substantial amount of memory. "
-"This can reduce system responsiveness and cause other application resource "
-"problems.</p><p>Are you sure want to resize the image?</p></qt>"
-msgstr ""
+#: mainWindow/kpMainWindow_View.cpp:76
+msgid "Show &Grid"
+msgstr "Dango&s Grid"
 
 #: mainWindow/kpMainWindow_Edit.cpp:98
 msgid "Paste in &New Window"
@@ -1371,6 +1112,12 @@ msgstr ""
 
 #: mainWindow/kpMainWindow_Edit.cpp:117
 msgid "Paste &From File..."
+msgstr ""
+
+#: mainWindow/kpMainWindow_Edit.cpp:366 mainWindow/kpMainWindow_Edit.cpp:440
+#: mainWindow/kpMainWindow_Image.cpp:316
+#: tools/selection/text/kpToolText.cpp:93
+msgid "Text: Create Box"
 msgstr ""
 
 #: mainWindow/kpMainWindow_Edit.cpp:446
@@ -1518,6 +1265,167 @@ msgid ""
 "Do you want to save it?"
 msgstr ""
 
+#: mainWindow/kpMainWindow_Image.cpp:119
+msgid "R&esize / Scale..."
+msgstr ""
+
+#: mainWindow/kpMainWindow_Image.cpp:124
+msgid "Se&t as Image (Crop)"
+msgstr ""
+
+#: mainWindow/kpMainWindow_Image.cpp:134
+msgid "&Flip (upside down)"
+msgstr ""
+
+#: mainWindow/kpMainWindow_Image.cpp:139
+#, fuzzy
+#| msgid "Flip horizontally"
+msgid "Mirror (horizontally)"
+msgstr "Troi Drosodd yn Llorweddol"
+
+#: mainWindow/kpMainWindow_Image.cpp:144
+msgid "&Rotate..."
+msgstr "C&ylchdroi ..."
+
+#: mainWindow/kpMainWindow_Image.cpp:150
+#, fuzzy
+#| msgid "Rotate"
+msgid "Rotate &Left"
+msgstr "Cylchdroi"
+
+#: mainWindow/kpMainWindow_Image.cpp:156
+#, fuzzy
+#| msgid "Rotate"
+msgid "Rotate Righ&t"
+msgstr "Cylchdroi"
+
+#: mainWindow/kpMainWindow_Image.cpp:162
+msgid "S&kew..."
+msgstr ""
+
+#: mainWindow/kpMainWindow_Image.cpp:167
+msgid "Reduce to Mo&nochrome (Dithered)"
+msgstr ""
+
+#: mainWindow/kpMainWindow_Image.cpp:171
+msgid "Reduce to &Grayscale"
+msgstr ""
+
+#: mainWindow/kpMainWindow_Image.cpp:175
+msgid "&Invert Colors"
+msgstr ""
+
+#: mainWindow/kpMainWindow_Image.cpp:180
+msgid "C&lear"
+msgstr "&Gwaredu"
+
+#: mainWindow/kpMainWindow_Image.cpp:185
+msgid "&More Effects..."
+msgstr ""
+
+#: mainWindow/kpMainWindow_Image.cpp:225
+#, fuzzy
+msgctxt ""
+"Image/Selection Menu caption - make sure the translation has the same accel "
+"as the Select&ion translation"
+msgid "&Image"
+msgstr "&Delwedd"
+
+#: mainWindow/kpMainWindow_Image.cpp:229
+#, fuzzy
+msgctxt ""
+"Image/Selection Menu caption - make sure that translation has the same accel "
+"as the &Image translation"
+msgid "Select&ion"
+msgstr "Dewisi&ad"
+
+#: mainWindow/kpMainWindow_Settings.cpp:67
+msgid "Show &Path"
+msgstr "Dango&s Llwybr"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:149
+#, kde-format
+msgid "%1,%2"
+msgstr ""
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:156
+#, kde-format
+msgid "%1,%2 - %3,%4"
+msgstr ""
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:199
+#: widgets/toolbars/options/kpToolWidgetEraserSize.cpp:115
+#: widgets/toolbars/options/kpToolWidgetSpraycanSize.cpp:92
+#, kde-format
+msgid "%1x%2"
+msgstr ""
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:258
+#, kde-format
+msgid "%1bpp"
+msgstr ""
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:284
+#: mainWindow/kpMainWindow_View_Zoom.cpp:91
+#, kde-format
+msgid "%1%"
+msgstr "%1%"
+
+#: mainWindow/kpMainWindow_Tools.cpp:136
+msgid "Previous Tool Option (Group #1)"
+msgstr ""
+
+#: mainWindow/kpMainWindow_Tools.cpp:142
+msgid "Next Tool Option (Group #1)"
+msgstr ""
+
+#: mainWindow/kpMainWindow_Tools.cpp:148
+msgid "Previous Tool Option (Group #2)"
+msgstr ""
+
+#: mainWindow/kpMainWindow_Tools.cpp:154
+msgid "Next Tool Option (Group #2)"
+msgstr ""
+
+#: mainWindow/kpMainWindow_Tools.cpp:166
+#, fuzzy
+#| msgid "Opaque"
+msgid "&Draw Opaque"
+msgstr "Afloyw"
+
+#: mainWindow/kpMainWindow_Tools.cpp:171
+msgid "Draw With Color Similarity..."
+msgstr ""
+
+#: mainWindow/kpMainWindow_Tools.cpp:182
+msgid "Tool Box"
+msgstr ""
+
+#: mainWindow/kpMainWindow_Tools.cpp:641
+#, kde-format
+msgid ""
+"<qt><p>Resizing the image to %1x%2 may take a substantial amount of memory. "
+"This can reduce system responsiveness and cause other application resource "
+"problems.</p><p>Are you sure want to resize the image?</p></qt>"
+msgstr ""
+
+#: mainWindow/kpMainWindow_View_Zoom.cpp:113
+msgid "&Zoom"
+msgstr ""
+
+#: mainWindow/kpMainWindow_View_Zoom.cpp:194
+#, kde-format
+msgid ""
+"Setting the zoom level to a value that is not a multiple of 100% results in "
+"imprecise editing and redraw glitches.\n"
+"Do you really want to set to zoom level to %1%?"
+msgstr ""
+
+#: mainWindow/kpMainWindow_View_Zoom.cpp:199
+#, kde-format
+msgid "Set Zoom Level to %1%"
+msgstr ""
+
 #: tools/flow/kpToolBrush.cpp:35
 msgid "Brush"
 msgstr "Brwsh"
@@ -1555,10 +1463,11 @@ msgid "Click or drag to erase."
 msgstr ""
 
 #: tools/flow/kpToolFlowBase.cpp:302 tools/kpToolColorPicker.cpp:112
-#: tools/kpToolFloodFill.cpp:144 tools/polygonal/kpToolPolygonalBase.cpp:437
+#: tools/polygonal/kpToolPolygonalBase.cpp:437
 #: tools/rectangular/kpToolRectangularBase.cpp:356
 #: tools/selection/kpAbstractSelectionTool.cpp:260
-#: tools/selection/kpAbstractSelectionTool.cpp:518 tools/kpToolZoom.cpp:205
+#: tools/selection/kpAbstractSelectionTool.cpp:518
+#: tools/kpToolFloodFill.cpp:144 tools/kpToolZoom.cpp:205
 msgid "Let go of all the mouse buttons."
 msgstr ""
 
@@ -1589,27 +1498,6 @@ msgstr ""
 #: tools/kpToolColorPicker.cpp:72
 msgid "Click to select a color."
 msgstr ""
-
-#: tools/kpToolFloodFill.cpp:55
-msgid "Fills regions in the image"
-msgstr ""
-
-#: tools/kpToolFloodFill.cpp:75
-msgid "Click to fill a region."
-msgstr ""
-
-#: tools/kpTool_UserNotifications.cpp:42
-msgid "Right click to cancel."
-msgstr ""
-
-#: tools/kpTool_UserNotifications.cpp:44
-msgid "Left click to cancel."
-msgstr ""
-
-#: tools/kpTool_UserNotifications.cpp:73
-#, kde-format
-msgid "%1: "
-msgstr "%1 : "
 
 #: tools/polygonal/kpToolCurve.cpp:86
 msgid "Curve"
@@ -1706,22 +1594,6 @@ msgstr ""
 msgid "Draws rectangles and squares with rounded corners"
 msgstr ""
 
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:169
-msgid "Selection: Opaque"
-msgstr ""
-
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:170
-msgid "Selection: Transparent"
-msgstr ""
-
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:190
-msgid "Selection: Transparency Color"
-msgstr ""
-
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:210
-msgid "Selection: Transparency Color Similarity"
-msgstr ""
-
 #: tools/selection/image/kpToolEllipticalSelection.cpp:43
 msgid "Selection (Elliptical)"
 msgstr ""
@@ -1744,6 +1616,22 @@ msgstr ""
 
 #: tools/selection/image/kpToolRectSelection.cpp:43
 msgid "Makes a rectangular selection"
+msgstr ""
+
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:169
+msgid "Selection: Opaque"
+msgstr ""
+
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:170
+msgid "Selection: Transparent"
+msgstr ""
+
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:190
+msgid "Selection: Transparency Color"
+msgstr ""
+
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:210
+msgid "Selection: Transparency Color Similarity"
 msgstr ""
 
 #: tools/selection/image/kpAbstractImageSelectionTool.cpp:89
@@ -1850,6 +1738,27 @@ msgstr ""
 #, kde-format
 msgid "%1: Smear"
 msgstr ""
+
+#: tools/kpToolFloodFill.cpp:55
+msgid "Fills regions in the image"
+msgstr ""
+
+#: tools/kpToolFloodFill.cpp:75
+msgid "Click to fill a region."
+msgstr ""
+
+#: tools/kpTool_UserNotifications.cpp:42
+msgid "Right click to cancel."
+msgstr ""
+
+#: tools/kpTool_UserNotifications.cpp:44
+msgid "Left click to cancel."
+msgstr ""
+
+#: tools/kpTool_UserNotifications.cpp:73
+#, kde-format
+msgid "%1: "
+msgstr "%1 : "
 
 #: tools/kpTool.cpp:140
 #, kde-format
@@ -2072,38 +1981,6 @@ msgstr ""
 msgid "&Granularity:"
 msgstr ""
 
-#: widgets/kpDocumentSaveOptionsWidget.cpp:93
-msgid "Convert &to:"
-msgstr ""
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:98
-msgid "Quali&ty:"
-msgstr "Ansaw&dd:"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:106
-msgid "&Preview"
-msgstr "&Rhagolwg"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:228
-msgid "Monochrome"
-msgstr "Unlliw"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:229
-msgid "Monochrome (Dithered)"
-msgstr ""
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:233
-msgid "256 Color"
-msgstr ""
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:234
-msgid "256 Color (Dithered)"
-msgstr ""
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:239
-msgid "24-bit Color"
-msgstr ""
-
 #: widgets/toolbars/options/kpToolWidgetBrush.cpp:204
 msgid "1x1"
 msgstr ""
@@ -2169,6 +2046,38 @@ msgctxt "Colors: name_or_url_of_color_palette [modified]"
 msgid "Colors: %1 [modified]"
 msgstr ""
 
+#: widgets/kpDocumentSaveOptionsWidget.cpp:93
+msgid "Convert &to:"
+msgstr ""
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:98
+msgid "Quali&ty:"
+msgstr "Ansaw&dd:"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:106
+msgid "&Preview"
+msgstr "&Rhagolwg"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:228
+msgid "Monochrome"
+msgstr "Unlliw"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:229
+msgid "Monochrome (Dithered)"
+msgstr ""
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:233
+msgid "256 Color"
+msgstr ""
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:234
+msgid "256 Color (Dithered)"
+msgstr ""
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:239
+msgid "24-bit Color"
+msgstr ""
+
 #: widgets/kpPrintDialogPage.cpp:60
 msgctxt "@title:tab"
 msgid "I&mage Position"
@@ -2191,6 +2100,99 @@ msgid ""
 "using drag and drop. Also, if you hold down the <b>Ctrl</b> key, the "
 "destination cell's color will be overwritten, instead of being swapped with "
 "the color of the source cell.</p></qt>"
+msgstr ""
+
+#: kolourpaint.cpp:49
+#, fuzzy
+#| msgid "KolourPaint"
+msgid "KolourPaint"
+msgstr "KolourPaint"
+
+#: kolourpaint.cpp:51
+msgid "Paint Program for KDE"
+msgstr ""
+
+#: kolourpaint.cpp:54
+msgid "To obtain support, please visit the website."
+msgstr ""
+
+#: kolourpaint.cpp:65
+msgid "Clarence Dang"
+msgstr ""
+
+#: kolourpaint.cpp:65
+msgid "Project Founder"
+msgstr ""
+
+#: kolourpaint.cpp:66
+msgid "Thurston Dang"
+msgstr ""
+
+#: kolourpaint.cpp:66
+msgid "Chief Investigator"
+msgstr ""
+
+#: kolourpaint.cpp:68
+#, fuzzy
+#| msgid "Maintainer"
+msgid "Martin Koller"
+msgstr "Cynhaliwr"
+
+#: kolourpaint.cpp:68
+msgid "Scanning Support, Alpha Support, Current Maintainer"
+msgstr ""
+
+#: kolourpaint.cpp:69
+msgid "Kristof Borrey"
+msgstr ""
+
+#: kolourpaint.cpp:69 kolourpaint.cpp:72 kolourpaint.cpp:73
+msgid "Icons"
+msgstr "Eiconau"
+
+#: kolourpaint.cpp:70
+msgid "Tasuku Suzuki"
+msgstr ""
+
+#: kolourpaint.cpp:70 kolourpaint.cpp:71
+msgid "InputMethod Support"
+msgstr ""
+
+#: kolourpaint.cpp:71
+msgid "Kazuki Ohta"
+msgstr ""
+
+#: kolourpaint.cpp:72
+msgid "Nuno Pinheiro"
+msgstr ""
+
+#: kolourpaint.cpp:73
+msgid "Danny Allen"
+msgstr ""
+
+#: kolourpaint.cpp:74
+msgid "Mike Gashler"
+msgstr ""
+
+#: kolourpaint.cpp:74
+msgid "Image Effects"
+msgstr ""
+
+#: kolourpaint.cpp:76
+msgid "Laurent Montel"
+msgstr ""
+
+#: kolourpaint.cpp:76
+msgid "KDE 4 Porting"
+msgstr ""
+
+#: kolourpaint.cpp:80
+msgid ""
+"Thanks to the many others who have helped to make this program possible."
+msgstr ""
+
+#: kolourpaint.cpp:85
+msgid "Image file to open"
 msgstr ""
 
 #: kpThumbnail.cpp:126
