@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kofficefilters\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-07-15 03:11+0200\n"
+"POT-Creation-Date: 2012-08-18 03:01+0200\n"
 "PO-Revision-Date: 2004-08-17 15:24+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -21,16 +21,6 @@ msgstr ""
 "\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: flow/imageexport/flow_imageexportdialog.cpp:35
-#, fuzzy
-msgid "Export to Image"
-msgstr "Mewnforio delweddau"
-
-#: flow/imageexport/flow_imageexport.cpp:91
-#: kchart/genericimageexport/genericimageexport.cpp:67
-msgid "Failed to read data."
-msgstr "Methwyd darllen y data."
-
 #: flow/imageexport/flow_imageexport.cpp:91
 #: flow/imageexport/flow_imageexport.cpp:102
 #: kchart/genericimageexport/genericimageexport.cpp:68
@@ -39,10 +29,20 @@ msgstr "Methwyd darllen y data."
 msgid "Export Error"
 msgstr "Gwall Allforio PNG"
 
+#: flow/imageexport/flow_imageexport.cpp:91
+#: kchart/genericimageexport/genericimageexport.cpp:67
+msgid "Failed to read data."
+msgstr "Methwyd darllen y data."
+
 #: flow/imageexport/flow_imageexport.cpp:102
 #: kchart/genericimageexport/genericimageexport.cpp:80
 msgid "Malformed XML data."
 msgstr "Data XML camffurfiedig."
+
+#: flow/imageexport/flow_imageexportdialog.cpp:35
+#, fuzzy
+msgid "Export to Image"
+msgstr "Mewnforio delweddau"
 
 #: karbon/eps/EpsExportDlg.cpp:37
 msgid "EPS Export"
@@ -114,9 +114,16 @@ msgstr "Gwall Allforio PNG"
 
 #: libmsooxml/MsooXmlDocPropertiesReader.cpp:75
 #: libmsooxml/MsooXmlReader.cpp:182 libmsooxml/MsooXmlThemesReader.cpp:363
-#: stage/pptx/PptxXmlSlideReader.cpp:333
+#: sheets/xlsx/XlsxXmlCommentsReader.cpp:108
+#: sheets/xlsx/XlsxXmlDocumentReader.cpp:134
+#: sheets/xlsx/XlsxXmlSharedStringsReader.cpp:113
+#: sheets/xlsx/XlsxXmlStylesReader.cpp:457
+#: sheets/xlsx/XlsxXmlTableReader.cpp:78
+#: sheets/xlsx/XlsxXmlWorksheetReader.cpp:301
 #: stage/pptx/PptxXmlDocumentReader.cpp:151
+#: stage/pptx/PptxXmlSlideReader.cpp:333
 #: words/docx/DocxXmlCommentsReader.cpp:89
+#: words/docx/DocxXmlDocumentReader.cpp:201
 #: words/docx/DocxXmlEndnoteReader.cpp:90
 #: words/docx/DocxXmlFontTableReader.cpp:89
 #: words/docx/DocxXmlFooterReader.cpp:95
@@ -124,13 +131,6 @@ msgstr "Gwall Allforio PNG"
 #: words/docx/DocxXmlHeaderReader.cpp:95
 #: words/docx/DocxXmlNumberingReader.cpp:87
 #: words/docx/DocxXmlSettingsReader.cpp:87
-#: words/docx/DocxXmlDocumentReader.cpp:201
-#: sheets/xlsx/XlsxXmlCommentsReader.cpp:108
-#: sheets/xlsx/XlsxXmlDocumentReader.cpp:134
-#: sheets/xlsx/XlsxXmlSharedStringsReader.cpp:113
-#: sheets/xlsx/XlsxXmlStylesReader.cpp:457
-#: sheets/xlsx/XlsxXmlTableReader.cpp:78
-#: sheets/xlsx/XlsxXmlWorksheetReader.cpp:301
 #, kde-format
 msgid "Namespace \"%1\" not found"
 msgstr ""
@@ -226,10 +226,6 @@ msgstr "Methu darllen o'r ffeil."
 msgid "Could not find target for relationship \"%1\" in file \"%2\""
 msgstr "Methu darllen o'r ffeil."
 
-#: libmsooxml/MsooXmlUtils.cpp:180
-msgid "QXml"
-msgstr ""
-
 #: libmsooxml/MsooXmlUtils.cpp:179
 #, fuzzy, kde-format
 msgid ""
@@ -239,6 +235,10 @@ msgstr ""
 "Digwyddodd gwall wrth dosrannu'r ffeil KWord 1.3.\n"
 "Wrth linell: %1, colofn %2\n"
 "Neges wall: %3\n"
+
+#: libmsooxml/MsooXmlUtils.cpp:180
+msgid "QXml"
+msgstr ""
 
 #: libmsooxml/MsooXmlUtils.cpp:229
 #, kde-format
@@ -262,255 +262,6 @@ msgstr ""
 #| msgid "Could not read from file."
 msgid "Could not write block"
 msgstr "Methu darllen o'r ffeil."
-
-#: stage/pptx/PptxImport.cpp:1097 words/docx/DocxImport.cpp:168
-#: sheets/xlsx/XlsxImport.cpp:571
-#, fuzzy, kde-format
-#| msgid "Could not read from file."
-msgid "Unable to find part for type %1"
-msgstr "Methu darllen o'r ffeil."
-
-#: stage/pptx/PptxXmlSlideReader.cpp:629
-#, fuzzy, kde-format
-#| msgid "Slide Title"
-msgid "Slide %1"
-msgstr "Teitl Trylowder"
-
-#: stage/pptx/PptxXmlDocumentReader.cpp:289
-#, fuzzy, kde-format
-#| msgid "Endnote %1"
-msgid "Slide layout \"%1\" not found"
-msgstr "Diweddnod %1"
-
-#: words/ascii/ImportDialog.cc:45
-#, fuzzy
-#| msgid "KWord's Plain Text Import Filter"
-msgid "Words's Plain Text Import Filter"
-msgstr "Hidlen Fewnforio Testun Plaen KWord"
-
-#: words/ascii/ImportDialog.cc:49 sheets/csv/csvdialog.cpp:65
-#: sheets/csv/csvexportdialog.cpp:46
-#, fuzzy, kde-format
-msgctxt "Descriptive encoding name"
-msgid "Recommended ( %1 )"
-msgstr " Arall ( %1 )\n"
-
-#: words/ascii/ImportDialog.cc:50 sheets/csv/csvdialog.cpp:66
-#: sheets/csv/csvexportdialog.cpp:47
-#, fuzzy, kde-format
-msgctxt "Descriptive encoding name"
-msgid "Locale ( %1 )"
-msgstr " Arall ( %1 )\n"
-
-#: words/ascii/ImportDialog.cc:53 sheets/csv/csvdialog.cpp:69
-#: sheets/csv/csvexportdialog.cpp:50
-#, kde-format
-msgctxt "Descriptive encoding name"
-msgid "Other ( %1 )"
-msgstr "Arall (%1)"
-
-#: words/ascii/ImportDialog.cc:107 sheets/csv/csvdialog.cpp:522
-#: sheets/csv/csvexportdialog.cpp:286
-#, kde-format
-msgid "Cannot find encoding: %1"
-msgstr ""
-
-#: words/html-odf/exportdialog.cpp:36 sheets/html/exportdialog.cc:37
-#, fuzzy
-msgid "Export Sheet to HTML"
-msgstr "Allforio tabl(au):"
-
-#: words/html-odf/exportdialog.cpp:43 sheets/html/exportdialog.cc:48
-msgid "Recommended: UTF-8"
-msgstr ""
-
-#: words/html-odf/exportdialog.cpp:44 sheets/html/exportdialog.cc:49
-#, fuzzy, kde-format
-msgid "Locale (%1)"
-msgstr "Tabl %1"
-
-#: words/msword-odf/conversion.cpp:830
-msgid "Even Pages Header"
-msgstr "Pennawd Tudalennau Eilrif"
-
-#: words/msword-odf/conversion.cpp:832
-msgid "Odd Pages Header"
-msgstr "Pennawd Tudalennau Odrif"
-
-#: words/msword-odf/conversion.cpp:834
-msgid "Even Pages Footer"
-msgstr "Troedyn Tudalennau Eilrif"
-
-#: words/msword-odf/conversion.cpp:836
-msgid "Odd Pages Footer"
-msgstr "Troedyn Tudalennau Odrif"
-
-#: words/msword-odf/conversion.cpp:838
-msgid "First Page Header"
-msgstr "Pennawd Tudalen Gyntaf"
-
-#: words/msword-odf/conversion.cpp:840
-msgid "First Page Footer"
-msgstr "Troedyn Tudalen Gyntaf"
-
-#: words/msword-odf/texthandler.cpp:624
-#, kde-format
-msgid "Table %1"
-msgstr "Tabl %1"
-
-#: words/rtf/import/rtfimport.cpp:56
-msgid "The file cannot be loaded, as it seems not to be an RTF document."
-msgstr ""
-
-#: words/rtf/import/rtfimport.cpp:57 words/rtf/import/rtfimport.cpp:71
-#: words/rtf/import/rtfimport.cpp:81
-#, fuzzy
-msgid "Words's RTF Import Filter"
-msgstr "Hidlen Fewnforio PDF KWord"
-
-#: words/rtf/import/rtfimport.cpp:70 words/rtf/import/rtfimport.cpp:80
-msgid "The file cannot be loaded."
-msgstr ""
-
-#: sheets/csv/csvdialog.cpp:61
-#, fuzzy
-msgid "Import"
-msgstr "Mewnforio PDF"
-
-#: sheets/csv/csvdialog.cpp:75 sheets/csv/csvdialog.cpp:276
-#: sheets/csv/csvdialog.cpp:334
-msgid "Text"
-msgstr "Testun"
-
-#: sheets/csv/csvdialog.cpp:76 sheets/csv/csvdialog.cpp:336
-msgid "Number"
-msgstr "Rhif"
-
-#: sheets/csv/csvdialog.cpp:77 sheets/csv/csvdialog.cpp:338
-msgid "Currency"
-msgstr "Arian"
-
-#: sheets/csv/csvdialog.cpp:78 sheets/csv/csvdialog.cpp:340
-msgid "Date"
-msgstr "Dyddiad"
-
-#: sheets/csv/csvdialog.cpp:79 sheets/csv/csvdialog.cpp:342
-msgid "Decimal Comma Number"
-msgstr ""
-
-#: sheets/csv/csvdialog.cpp:80 sheets/csv/csvdialog.cpp:344
-msgid "Decimal Point Number"
-msgstr ""
-
-#. i18n: file: sheets/csv/dialogui.ui:275
-#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
-#: sheets/csv/csvdialog.cpp:454 rc.cpp:144
-msgid "None"
-msgstr "Dim"
-
-#: sheets/csv/csvdialog.cpp:480
-msgid ""
-"Please check the ranges you specified. The start value must be lower than "
-"the end value."
-msgstr ""
-"Gwiriwch yr amrediadau a phenodwyd.  Rhaid i'r gwerth dechrau fod yn is na'r "
-"gwerth terfyn."
-
-#: sheets/csv/csvexport.cc:282
-#, fuzzy
-msgid "<SHEETNAME>"
-msgstr "<TABLENAME>"
-
-#: sheets/csv/csvimport.cc:92
-#, fuzzy
-msgid "CSV filter cannot open input file - please report."
-msgstr "Mae'r hidlen CSV yn methu agor y ffeil fewnbwn - rhowch adroddiad nam."
-
-#: sheets/dbase/dbaseimport.cc:56
-msgid "File format is not supported."
-msgstr "Ni chynhelir fformat y ffeil."
-
-#: sheets/dbase/dbaseimport.cc:61
-msgid "Could not read from file."
-msgstr "Methu darllen o'r ffeil."
-
-#: sheets/html/htmlexport.cc:209 sheets/html/htmlexport.cc:385
-msgid "Top"
-msgstr ""
-
-#: sheets/opencalc/opencalcimport.cc:1236
-msgid "The file seems to be corrupt. Skipping a table."
-msgstr "Ymdengys bod y ffeil yn llygredig.  Yn hepgor tabl."
-
-#: sheets/opencalc/opencalcimport.cc:1247
-msgid "Skipping a table."
-msgstr "Yn hepgor tabl."
-
-#: sheets/opencalc/opencalcimport.cc:1947
-#, fuzzy, kde-format
-msgid ""
-"This document was created with OpenOffice.org version '%1'. This filter was "
-"written for version 1.0. Reading this file could cause strange behavior, "
-"crashes or incorrect display of the data. Do you want to continue converting "
-"the document?"
-msgstr ""
-"Creuir y ddogfen yma gyda fersiwn '%1' o OpenOffice.org.  Ysgrifennwyd yr "
-"hidlen yma ar gyfer fersiwn 1.0.  Gall ddarllen y ffeil yma achosi ymddygiad "
-"rhyfedd, chwalfeydd neu gwallau wrth dangos y ddogfen.  Hoffech drosi'r "
-"ddogfen serch hynny?"
-
-#: sheets/opencalc/opencalcimport.cc:1948
-msgid "Unsupported document version"
-msgstr "Ni chynhelir y fersiwn yma o'r ddogfen"
-
-#: sheets/opencalc/opencalcexport.cc:914
-msgid "Page "
-msgstr "Tudalen"
-
-#: sheets/qpro/qproimport.cc:128
-#, fuzzy
-msgid "QPRO filter cannot open input file - please report."
-msgstr ""
-"Mae'r hidlen QPRO yn methu agor y ffeil fewnbwn - rhowch adroddiad nam."
-
-#: sheets/qpro/qproimport.cc:239
-msgid ""
-"Unable to open password protected files.\n"
-"The password algorithm has not been published"
-msgstr ""
-"Methu agor ffeiliau a ddiogelwyd gan gyfrinair.\n"
-"Nid yw'r algorithm cyfrinair wedi ei gyhoeddi."
-
-#: sheets/xlsx/XlsxXmlSharedStringsReader.cpp:181
-#, kde-format
-msgid "Declared number of shared strings too small (%1)"
-msgstr ""
-
-#: sheets/xlsx/XlsxXmlStylesReader.cpp:571
-#, kde-format
-msgid "Declared number of font styles too small (%1)"
-msgstr ""
-
-#: sheets/xlsx/XlsxXmlStylesReader.cpp:924
-#, kde-format
-msgid "Declared number of cell formats too small (%1)"
-msgstr ""
-
-#: sheets/xlsx/XlsxXmlStylesReader.cpp:1047
-#: sheets/xlsx/XlsxXmlStylesReader.cpp:1393
-#, kde-format
-msgid "Declared number of fill styles too small (%1)"
-msgstr ""
-
-#: sheets/xlsx/XlsxXmlWorksheetReader.cpp:350
-msgid ""
-"The data could not be loaded completely because the maximum size of sheet "
-"was exceeded."
-msgstr ""
-
-#: sheets/xlsx/XlsxXmlWorksheetReader.cpp:1429
-msgid "Expected integer or floating point number"
-msgstr ""
 
 #. i18n: file: flow/imageexport/flow_imageexportwidget.ui:27
 #. i18n: ectx: property (text), widget (QLabel)
@@ -815,6 +566,12 @@ msgstr "\""
 #: rc.cpp:141 rc.cpp:231
 msgid "'"
 msgstr "'"
+
+#. i18n: file: sheets/csv/dialogui.ui:275
+#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
+#: rc.cpp:144 sheets/csv/csvdialog.cpp:454
+msgid "None"
+msgstr "Dim"
 
 #. i18n: file: sheets/csv/dialogui.ui:316
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
@@ -1237,6 +994,249 @@ msgstr ""
 #, fuzzy
 msgid "&Cancel"
 msgstr "&Uwch"
+
+#: sheets/csv/csvdialog.cpp:61
+#, fuzzy
+msgid "Import"
+msgstr "Mewnforio PDF"
+
+#: sheets/csv/csvdialog.cpp:65 sheets/csv/csvexportdialog.cpp:46
+#: words/ascii/ImportDialog.cc:49
+#, fuzzy, kde-format
+msgctxt "Descriptive encoding name"
+msgid "Recommended ( %1 )"
+msgstr " Arall ( %1 )\n"
+
+#: sheets/csv/csvdialog.cpp:66 sheets/csv/csvexportdialog.cpp:47
+#: words/ascii/ImportDialog.cc:50
+#, fuzzy, kde-format
+msgctxt "Descriptive encoding name"
+msgid "Locale ( %1 )"
+msgstr " Arall ( %1 )\n"
+
+#: sheets/csv/csvdialog.cpp:69 sheets/csv/csvexportdialog.cpp:50
+#: words/ascii/ImportDialog.cc:53
+#, kde-format
+msgctxt "Descriptive encoding name"
+msgid "Other ( %1 )"
+msgstr "Arall (%1)"
+
+#: sheets/csv/csvdialog.cpp:75 sheets/csv/csvdialog.cpp:276
+#: sheets/csv/csvdialog.cpp:334
+msgid "Text"
+msgstr "Testun"
+
+#: sheets/csv/csvdialog.cpp:76 sheets/csv/csvdialog.cpp:336
+msgid "Number"
+msgstr "Rhif"
+
+#: sheets/csv/csvdialog.cpp:77 sheets/csv/csvdialog.cpp:338
+msgid "Currency"
+msgstr "Arian"
+
+#: sheets/csv/csvdialog.cpp:78 sheets/csv/csvdialog.cpp:340
+msgid "Date"
+msgstr "Dyddiad"
+
+#: sheets/csv/csvdialog.cpp:79 sheets/csv/csvdialog.cpp:342
+msgid "Decimal Comma Number"
+msgstr ""
+
+#: sheets/csv/csvdialog.cpp:80 sheets/csv/csvdialog.cpp:344
+msgid "Decimal Point Number"
+msgstr ""
+
+#: sheets/csv/csvdialog.cpp:480
+msgid ""
+"Please check the ranges you specified. The start value must be lower than "
+"the end value."
+msgstr ""
+"Gwiriwch yr amrediadau a phenodwyd.  Rhaid i'r gwerth dechrau fod yn is na'r "
+"gwerth terfyn."
+
+#: sheets/csv/csvdialog.cpp:522 sheets/csv/csvexportdialog.cpp:286
+#: words/ascii/ImportDialog.cc:107
+#, kde-format
+msgid "Cannot find encoding: %1"
+msgstr ""
+
+#: sheets/csv/csvexport.cc:282
+#, fuzzy
+msgid "<SHEETNAME>"
+msgstr "<TABLENAME>"
+
+#: sheets/csv/csvimport.cc:92
+#, fuzzy
+msgid "CSV filter cannot open input file - please report."
+msgstr "Mae'r hidlen CSV yn methu agor y ffeil fewnbwn - rhowch adroddiad nam."
+
+#: sheets/dbase/dbaseimport.cc:56
+msgid "File format is not supported."
+msgstr "Ni chynhelir fformat y ffeil."
+
+#: sheets/dbase/dbaseimport.cc:61
+msgid "Could not read from file."
+msgstr "Methu darllen o'r ffeil."
+
+#: sheets/html/exportdialog.cc:37 words/html-odf/exportdialog.cpp:36
+#, fuzzy
+msgid "Export Sheet to HTML"
+msgstr "Allforio tabl(au):"
+
+#: sheets/html/exportdialog.cc:48 words/html-odf/exportdialog.cpp:43
+msgid "Recommended: UTF-8"
+msgstr ""
+
+#: sheets/html/exportdialog.cc:49 words/html-odf/exportdialog.cpp:44
+#, fuzzy, kde-format
+msgid "Locale (%1)"
+msgstr "Tabl %1"
+
+#: sheets/html/htmlexport.cc:209 sheets/html/htmlexport.cc:385
+msgid "Top"
+msgstr ""
+
+#: sheets/opencalc/opencalcexport.cc:914
+msgid "Page "
+msgstr "Tudalen"
+
+#: sheets/opencalc/opencalcimport.cc:1236
+msgid "The file seems to be corrupt. Skipping a table."
+msgstr "Ymdengys bod y ffeil yn llygredig.  Yn hepgor tabl."
+
+#: sheets/opencalc/opencalcimport.cc:1247
+msgid "Skipping a table."
+msgstr "Yn hepgor tabl."
+
+#: sheets/opencalc/opencalcimport.cc:1947
+#, fuzzy, kde-format
+msgid ""
+"This document was created with OpenOffice.org version '%1'. This filter was "
+"written for version 1.0. Reading this file could cause strange behavior, "
+"crashes or incorrect display of the data. Do you want to continue converting "
+"the document?"
+msgstr ""
+"Creuir y ddogfen yma gyda fersiwn '%1' o OpenOffice.org.  Ysgrifennwyd yr "
+"hidlen yma ar gyfer fersiwn 1.0.  Gall ddarllen y ffeil yma achosi ymddygiad "
+"rhyfedd, chwalfeydd neu gwallau wrth dangos y ddogfen.  Hoffech drosi'r "
+"ddogfen serch hynny?"
+
+#: sheets/opencalc/opencalcimport.cc:1948
+msgid "Unsupported document version"
+msgstr "Ni chynhelir y fersiwn yma o'r ddogfen"
+
+#: sheets/qpro/qproimport.cc:128
+#, fuzzy
+msgid "QPRO filter cannot open input file - please report."
+msgstr ""
+"Mae'r hidlen QPRO yn methu agor y ffeil fewnbwn - rhowch adroddiad nam."
+
+#: sheets/qpro/qproimport.cc:239
+msgid ""
+"Unable to open password protected files.\n"
+"The password algorithm has not been published"
+msgstr ""
+"Methu agor ffeiliau a ddiogelwyd gan gyfrinair.\n"
+"Nid yw'r algorithm cyfrinair wedi ei gyhoeddi."
+
+#: sheets/xlsx/XlsxImport.cpp:571 stage/pptx/PptxImport.cpp:1097
+#: words/docx/DocxImport.cpp:168
+#, fuzzy, kde-format
+#| msgid "Could not read from file."
+msgid "Unable to find part for type %1"
+msgstr "Methu darllen o'r ffeil."
+
+#: sheets/xlsx/XlsxXmlSharedStringsReader.cpp:181
+#, kde-format
+msgid "Declared number of shared strings too small (%1)"
+msgstr ""
+
+#: sheets/xlsx/XlsxXmlStylesReader.cpp:571
+#, kde-format
+msgid "Declared number of font styles too small (%1)"
+msgstr ""
+
+#: sheets/xlsx/XlsxXmlStylesReader.cpp:924
+#, kde-format
+msgid "Declared number of cell formats too small (%1)"
+msgstr ""
+
+#: sheets/xlsx/XlsxXmlStylesReader.cpp:1047
+#: sheets/xlsx/XlsxXmlStylesReader.cpp:1393
+#, kde-format
+msgid "Declared number of fill styles too small (%1)"
+msgstr ""
+
+#: sheets/xlsx/XlsxXmlWorksheetReader.cpp:350
+msgid ""
+"The data could not be loaded completely because the maximum size of sheet "
+"was exceeded."
+msgstr ""
+
+#: sheets/xlsx/XlsxXmlWorksheetReader.cpp:1429
+msgid "Expected integer or floating point number"
+msgstr ""
+
+#: stage/pptx/PptxXmlDocumentReader.cpp:289
+#, fuzzy, kde-format
+#| msgid "Endnote %1"
+msgid "Slide layout \"%1\" not found"
+msgstr "Diweddnod %1"
+
+#: stage/pptx/PptxXmlSlideReader.cpp:629
+#, fuzzy, kde-format
+#| msgid "Slide Title"
+msgid "Slide %1"
+msgstr "Teitl Trylowder"
+
+#: words/ascii/ImportDialog.cc:45
+#, fuzzy
+#| msgid "KWord's Plain Text Import Filter"
+msgid "Words's Plain Text Import Filter"
+msgstr "Hidlen Fewnforio Testun Plaen KWord"
+
+#: words/msword-odf/conversion.cpp:830
+msgid "Even Pages Header"
+msgstr "Pennawd Tudalennau Eilrif"
+
+#: words/msword-odf/conversion.cpp:832
+msgid "Odd Pages Header"
+msgstr "Pennawd Tudalennau Odrif"
+
+#: words/msword-odf/conversion.cpp:834
+msgid "Even Pages Footer"
+msgstr "Troedyn Tudalennau Eilrif"
+
+#: words/msword-odf/conversion.cpp:836
+msgid "Odd Pages Footer"
+msgstr "Troedyn Tudalennau Odrif"
+
+#: words/msword-odf/conversion.cpp:838
+msgid "First Page Header"
+msgstr "Pennawd Tudalen Gyntaf"
+
+#: words/msword-odf/conversion.cpp:840
+msgid "First Page Footer"
+msgstr "Troedyn Tudalen Gyntaf"
+
+#: words/msword-odf/texthandler.cpp:624
+#, kde-format
+msgid "Table %1"
+msgstr "Tabl %1"
+
+#: words/rtf/import/rtfimport.cpp:56
+msgid "The file cannot be loaded, as it seems not to be an RTF document."
+msgstr ""
+
+#: words/rtf/import/rtfimport.cpp:57 words/rtf/import/rtfimport.cpp:71
+#: words/rtf/import/rtfimport.cpp:81
+#, fuzzy
+msgid "Words's RTF Import Filter"
+msgstr "Hidlen Fewnforio PDF KWord"
+
+#: words/rtf/import/rtfimport.cpp:70 words/rtf/import/rtfimport.cpp:80
+msgid "The file cannot be loaded."
+msgstr ""
 
 #, fuzzy
 #~ msgid ""
