@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-18 04:21+0200\n"
+"POT-Creation-Date: 2012-08-19 05:40+0200\n"
 "PO-Revision-Date: 2004-02-25 13:46+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -20,6 +20,64 @@ msgstr ""
 "X-Generator: KBabel 1.2\n"
 "\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: deferdlg.cpp:44
+#, fuzzy
+#| msgid "Defer Alarm"
+msgctxt "@title:window"
+msgid "Defer Alarm"
+msgstr "Gohirio'r Larwm"
+
+#: deferdlg.cpp:46
+#, fuzzy
+#| msgid "Cancel &Deferral"
+msgctxt "@action:button"
+msgid "Cancel Deferral"
+msgstr "Diddymu &Gohiriad"
+
+#: deferdlg.cpp:65
+#, fuzzy
+#| msgid "Defer the alarm until the specified time."
+msgctxt "@info:whatsthis"
+msgid "Defer the alarm until the specified time."
+msgstr "Gohirio'r larwm tan yr amser a benodwyd."
+
+#: deferdlg.cpp:66
+#, fuzzy
+#| msgid "Cancel the deferred alarm. This does not affect future recurrences."
+msgctxt "@info:whatsthis"
+msgid "Cancel the deferred alarm. This does not affect future recurrences."
+msgstr ""
+"Diddymu'r larwm a ohiriwyd. Nid yw hyn yn effeithio ar ail-ddigwyddiadau yn "
+"y dyfodol."
+
+#: deferdlg.cpp:98
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "Cannot defer past the alarm's next sub-repetition (currently %1)"
+msgstr "Methu gohirio tu hwnt i atgof nesaf y larwm (%1 yn gyfredol)"
+
+#: deferdlg.cpp:102
+#, fuzzy, kde-format
+#| msgctxt "This refers to recurrences set up using the Recurrence tab"
+#| msgid "Cannot defer past the alarm's next recurrence (currently %1)"
+msgctxt "@info"
+msgid "Cannot defer past the alarm's next recurrence (currently %1)"
+msgstr "Methu gohirio tu hwnt i ail-ddigwyddiad nesaf y larwm (%1 yn gyfredol)"
+
+#: deferdlg.cpp:106
+#, fuzzy, kde-format
+#| msgid "Cannot defer past the alarm's next reminder (currently %1)"
+msgctxt "@info"
+msgid "Cannot defer past the alarm's next reminder (currently %1)"
+msgstr "Methu gohirio tu hwnt i atgof nesaf y larwm (%1 yn gyfredol)"
+
+#: deferdlg.cpp:110
+#, fuzzy, kde-format
+#| msgid "Cannot defer reminder past the main alarm time (%1)"
+msgctxt "@info"
+msgid "Cannot defer reminder past the main alarm time (%1)"
+msgstr "Methu gohirio'r atgof tu hwnt i brif amser y larwm (%1 yn gyfredol)"
 
 #: akonadimodel.cpp:450 eventlistmodel.cpp:313
 #, fuzzy
@@ -254,13 +312,6 @@ msgctxt "@info/plain"
 msgid "Failed to delete alarm."
 msgstr "Methwyd gweithredu gorchymyn:"
 
-#: akonadiresourcecreator.cpp:109
-#, fuzzy
-#| msgid "Failed to send email"
-msgctxt "@info/plain"
-msgid "Failed to create new calendar resource"
-msgstr "Methwyd anfon ebost"
-
 #: alarmcalendar.cpp:344 alarmcalendar.cpp:901
 #, fuzzy, kde-format
 msgctxt "@info"
@@ -352,35 +403,6 @@ msgstr ""
 "Methu agor y calendr:\n"
 " %1"
 
-#: alarmtime.cpp:42 alarmtime.cpp:80
-msgctxt "@info/plain Alarm never occurs"
-msgid "Never"
-msgstr ""
-
-#: alarmtime.cpp:86
-#, fuzzy, no-c-format, kde-format
-#| msgctxt "n days"
-#| msgid " %1d "
-msgctxt "@info/plain n days"
-msgid "%1d"
-msgstr " %1d "
-
-#: alarmtime.cpp:95
-#, fuzzy, kde-format
-#| msgctxt "Hours and Minutes"
-#| msgid "%1H %2M"
-msgctxt "@info/plain hours:minutes"
-msgid "%1:%2"
-msgstr "%1A %2M"
-
-#: alarmtime.cpp:98
-#, fuzzy, kde-format
-#| msgctxt "days hours:minutes"
-#| msgid " %1d %2:%3 "
-msgctxt "@info/plain days hours:minutes"
-msgid "%1d %2:%3"
-msgstr " %1d %2:%3 "
-
 #: alarmtimewidget.cpp:52
 #, fuzzy
 #| msgid ""
@@ -416,14 +438,14 @@ msgstr ""
 #, fuzzy
 #| msgid "&Defer to date/time:"
 msgctxt "@option:radio"
-msgid "At date/time:"
+msgid "Defer to date/time:"
 msgstr "&Gohirio tan ddyddiad/amser:"
 
 #: alarmtimewidget.cpp:108
 #, fuzzy
 #| msgid "&Defer to date/time:"
 msgctxt "@option:radio"
-msgid "Defer to date/time:"
+msgid "At date/time:"
 msgstr "&Gohirio tan ddyddiad/amser:"
 
 #: alarmtimewidget.cpp:110
@@ -753,99 +775,6 @@ msgctxt "@info:whatsthis"
 msgid "Set up an additional alarm repetition"
 msgstr "Cyfnod rhwng ail-ddigwyddiadau'r larwm"
 
-#: calendarmigrator.cpp:278 collectionmodel.cpp:939
-#: resources/alarmresources.cpp:135
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Active Alarms"
-msgstr "Gweithredoli %1"
-
-#: calendarmigrator.cpp:286 collectionmodel.cpp:941
-#: resources/alarmresources.cpp:145
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Archived Alarms"
-msgstr "Gweithredoli %1"
-
-#: calendarmigrator.cpp:294 collectionmodel.cpp:943
-#: resources/alarmresources.cpp:140
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Alarm Templates"
-msgstr "Testun Larwm"
-
-#: calendarmigrator.cpp:329
-#, fuzzy, kde-format
-msgctxt "@info/plain"
-msgid "Failed to create default calendar <resource>%1</resource>"
-msgstr ""
-"Methu agor y calendr:\n"
-" %1"
-
-#: calendarmigrator.cpp:331
-#, fuzzy, kde-format
-msgctxt "@info/plain 'Import Alarms' is the name of a menu option"
-msgid ""
-"Failed to convert old configuration for calendar <resource>%1</resource>. "
-"Please use Import Alarms to load its alarms into a new or existing calendar."
-msgstr ""
-"Methu agor y calendr:\n"
-" %1"
-
-#: calendarmigrator.cpp:333
-#, fuzzy, kde-format
-#| msgid "Action"
-msgctxt "@info/plain File path or URL"
-msgid "Location: %1"
-msgstr "Gweithred"
-
-#: calendarmigrator.cpp:335
-#, fuzzy, kde-format
-#| msgid ""
-#| "%1\n"
-#| "Are you sure you want to save your changes?"
-msgctxt "@info"
-msgid "<para>%1</para><para>%2</para>"
-msgstr ""
-"%1\n"
-"Ydych yn sicr eich bod chi eisiau cadw eich newidiadau?"
-
-#: calendarmigrator.cpp:337
-#, fuzzy, kde-format
-#| msgid ""
-#| "%1\n"
-#| "Are you sure you want to save your changes?"
-msgctxt "@info"
-msgid "<para>%1</para><para>%2<nl/>(%3)</para>"
-msgstr ""
-"%1\n"
-"Ydych yn sicr eich bod chi eisiau cadw eich newidiadau?"
-
-#: calendarmigrator.cpp:443
-#, fuzzy
-#| msgid "Invalid time"
-msgctxt "@info/plain"
-msgid "Invalid collection"
-msgstr "Amser annilys"
-
-#: calendarmigrator.cpp:457
-#, fuzzy, kde-format
-msgctxt "@info/plain"
-msgid "Failed to update format of calendar <resource>%1</resource>"
-msgstr ""
-"Methu agor y calendr:\n"
-" %1"
-
-#: calendarmigrator.cpp:735
-msgctxt "@info/plain"
-msgid "New configuration timed out"
-msgstr ""
-
-#: calendarmigrator.cpp:748
-msgctxt "@info/plain"
-msgid "New configuration was corrupt"
-msgstr ""
-
 #: collectionmodel.cpp:362 resourcemodelview.cpp:422
 #, fuzzy
 msgctxt "@info"
@@ -910,6 +839,27 @@ msgid "<para>%1</para><para>Please select a new default calendar.</para>"
 msgstr ""
 "%1\n"
 "Gosodwch fo yn yr ymgom Hoffterau."
+
+#: collectionmodel.cpp:939 resources/alarmresources.cpp:135
+#: calendarmigrator.cpp:278
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Active Alarms"
+msgstr "Gweithredoli %1"
+
+#: collectionmodel.cpp:941 resources/alarmresources.cpp:145
+#: calendarmigrator.cpp:286
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Archived Alarms"
+msgstr "Gweithredoli %1"
+
+#: collectionmodel.cpp:943 resources/alarmresources.cpp:140
+#: calendarmigrator.cpp:294
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Alarm Templates"
+msgstr "Testun Larwm"
 
 #: collectionmodel.cpp:1202
 #, fuzzy
@@ -1001,64 +951,6 @@ msgstr "Paramedr %1 annilys"
 msgctxt "@info:shell"
 msgid "<icode>%1</icode> incompatible with <icode>%2</icode>"
 msgstr "%1 yn anghytun â %2"
-
-#: deferdlg.cpp:44
-#, fuzzy
-#| msgid "Defer Alarm"
-msgctxt "@title:window"
-msgid "Defer Alarm"
-msgstr "Gohirio'r Larwm"
-
-#: deferdlg.cpp:46
-#, fuzzy
-#| msgid "Cancel &Deferral"
-msgctxt "@action:button"
-msgid "Cancel Deferral"
-msgstr "Diddymu &Gohiriad"
-
-#: deferdlg.cpp:65
-#, fuzzy
-#| msgid "Defer the alarm until the specified time."
-msgctxt "@info:whatsthis"
-msgid "Defer the alarm until the specified time."
-msgstr "Gohirio'r larwm tan yr amser a benodwyd."
-
-#: deferdlg.cpp:66
-#, fuzzy
-#| msgid "Cancel the deferred alarm. This does not affect future recurrences."
-msgctxt "@info:whatsthis"
-msgid "Cancel the deferred alarm. This does not affect future recurrences."
-msgstr ""
-"Diddymu'r larwm a ohiriwyd. Nid yw hyn yn effeithio ar ail-ddigwyddiadau yn "
-"y dyfodol."
-
-#: deferdlg.cpp:98
-#, fuzzy, kde-format
-msgctxt "@info"
-msgid "Cannot defer past the alarm's next sub-repetition (currently %1)"
-msgstr "Methu gohirio tu hwnt i atgof nesaf y larwm (%1 yn gyfredol)"
-
-#: deferdlg.cpp:102
-#, fuzzy, kde-format
-#| msgctxt "This refers to recurrences set up using the Recurrence tab"
-#| msgid "Cannot defer past the alarm's next recurrence (currently %1)"
-msgctxt "@info"
-msgid "Cannot defer past the alarm's next recurrence (currently %1)"
-msgstr "Methu gohirio tu hwnt i ail-ddigwyddiad nesaf y larwm (%1 yn gyfredol)"
-
-#: deferdlg.cpp:106
-#, fuzzy, kde-format
-#| msgid "Cannot defer past the alarm's next reminder (currently %1)"
-msgctxt "@info"
-msgid "Cannot defer past the alarm's next reminder (currently %1)"
-msgstr "Methu gohirio tu hwnt i atgof nesaf y larwm (%1 yn gyfredol)"
-
-#: deferdlg.cpp:110
-#, fuzzy, kde-format
-#| msgid "Cannot defer reminder past the main alarm time (%1)"
-msgctxt "@info"
-msgid "Cannot defer reminder past the main alarm time (%1)"
-msgstr "Methu gohirio'r atgof tu hwnt i brif amser y larwm (%1 yn gyfredol)"
 
 #: editdlg.cpp:98
 #, fuzzy, kde-format
@@ -1320,25 +1212,25 @@ msgstr "Cadarnhau &cydnabyddiaeth"
 #: editdlgtypes.cpp:144
 #, fuzzy
 msgctxt "@title:window"
-msgid "Edit Display Alarm Template"
-msgstr "Golygu Larwm"
+msgid "New Display Alarm Template"
+msgstr "Larwm Newydd"
 
 #: editdlgtypes.cpp:144
 #, fuzzy
 msgctxt "@title:window"
-msgid "New Display Alarm Template"
-msgstr "Larwm Newydd"
-
-#: editdlgtypes.cpp:145
-#, fuzzy
-msgctxt "@title:window"
-msgid "Edit Display Alarm"
-msgstr "Larymau Ebost"
+msgid "Edit Display Alarm Template"
+msgstr "Golygu Larwm"
 
 #: editdlgtypes.cpp:145
 #, fuzzy
 msgctxt "@title:window"
 msgid "New Display Alarm"
+msgstr "Larymau Ebost"
+
+#: editdlgtypes.cpp:145
+#, fuzzy
+msgctxt "@title:window"
+msgid "Edit Display Alarm"
 msgstr "Larymau Ebost"
 
 #: editdlgtypes.cpp:157
@@ -1497,25 +1389,25 @@ msgstr ""
 #: editdlgtypes.cpp:756
 #, fuzzy
 msgctxt "@title:window"
-msgid "Edit Command Alarm Template"
-msgstr "Golygu Larwm"
+msgid "New Command Alarm Template"
+msgstr "Larwm Newydd"
 
 #: editdlgtypes.cpp:756
 #, fuzzy
 msgctxt "@title:window"
-msgid "New Command Alarm Template"
-msgstr "Larwm Newydd"
-
-#: editdlgtypes.cpp:757
-#, fuzzy
-msgctxt "@title:window"
-msgid "Edit Command Alarm"
-msgstr "Larymau Ebost"
+msgid "Edit Command Alarm Template"
+msgstr "Golygu Larwm"
 
 #: editdlgtypes.cpp:757
 #, fuzzy
 msgctxt "@title:window"
 msgid "New Command Alarm"
+msgstr "Larymau Ebost"
+
+#: editdlgtypes.cpp:757
+#, fuzzy
+msgctxt "@title:window"
+msgid "Edit Command Alarm"
 msgstr "Larymau Ebost"
 
 #: editdlgtypes.cpp:765
@@ -1600,27 +1492,27 @@ msgstr "Copïo ebost atoch chi eich hun"
 #: editdlgtypes.cpp:1059
 #, fuzzy
 msgctxt "@title:window"
-msgid "Edit Email Alarm Template"
-msgstr "Golygu Larwm"
+msgid "New Email Alarm Template"
+msgstr "Larwm Newydd"
 
 #: editdlgtypes.cpp:1059
 #, fuzzy
 msgctxt "@title:window"
-msgid "New Email Alarm Template"
-msgstr "Larwm Newydd"
-
-#: editdlgtypes.cpp:1060
-#, fuzzy
-#| msgid "Email Alarms"
-msgctxt "@title:window"
-msgid "Edit Email Alarm"
-msgstr "Larymau Ebost"
+msgid "Edit Email Alarm Template"
+msgstr "Golygu Larwm"
 
 #: editdlgtypes.cpp:1060
 #, fuzzy
 #| msgid "Email Alarms"
 msgctxt "@title:window"
 msgid "New Email Alarm"
+msgstr "Larymau Ebost"
+
+#: editdlgtypes.cpp:1060
+#, fuzzy
+#| msgid "Email Alarms"
+msgctxt "@title:window"
+msgid "Edit Email Alarm"
 msgstr "Larymau Ebost"
 
 #: editdlgtypes.cpp:1068
@@ -1831,27 +1723,27 @@ msgstr "Dewiswch Ffeil i'w Atodi"
 #: editdlgtypes.cpp:1512
 #, fuzzy
 msgctxt "@title:window"
-msgid "Edit Audio Alarm Template"
-msgstr "Golygu Larwm"
+msgid "New Audio Alarm Template"
+msgstr "Larwm Newydd"
 
 #: editdlgtypes.cpp:1512
 #, fuzzy
 msgctxt "@title:window"
-msgid "New Audio Alarm Template"
-msgstr "Larwm Newydd"
-
-#: editdlgtypes.cpp:1513
-#, fuzzy
-#| msgid "Email Alarms"
-msgctxt "@title:window"
-msgid "Edit Audio Alarm"
-msgstr "Larymau Ebost"
+msgid "Edit Audio Alarm Template"
+msgstr "Golygu Larwm"
 
 #: editdlgtypes.cpp:1513
 #, fuzzy
 #| msgid "Email Alarms"
 msgctxt "@title:window"
 msgid "New Audio Alarm"
+msgstr "Larymau Ebost"
+
+#: editdlgtypes.cpp:1513
+#, fuzzy
+#| msgid "Email Alarms"
+msgctxt "@title:window"
+msgid "Edit Audio Alarm"
 msgstr "Larymau Ebost"
 
 #: editdlgtypes.cpp:1730
@@ -1885,191 +1777,6 @@ msgstr "Rhowch orchymyn plisgyn i'w weithredu."
 msgctxt "@info:whatsthis"
 msgid "List of scheduled alarms"
 msgstr "Rhestr larymau trefnlenedig"
-
-#: find.cpp:137
-#, fuzzy
-msgctxt "@title:group"
-msgid "Alarm Type"
-msgstr "Rhestr Larwm"
-
-#: find.cpp:145
-#, fuzzy
-#| msgid "Acti&ve"
-msgctxt "@option:check Alarm type"
-msgid "Active"
-msgstr "Gwei&thredol"
-
-#: find.cpp:147
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Check to include active alarms in the search."
-msgstr "Penodi a ddylid dangos larymau darfodedig yn y rhestr larymau"
-
-#: find.cpp:150
-#, fuzzy
-msgctxt "@option:check Alarm type"
-msgid "Archived"
-msgstr "Gwei&thredol"
-
-#: find.cpp:152
-msgctxt "@info:whatsthis"
-msgid ""
-"Check to include archived alarms in the search. This option is only "
-"available if archived alarms are currently being displayed."
-msgstr ""
-
-#: find.cpp:160
-#, fuzzy
-#| msgid "Text"
-msgctxt "@option:check Alarm action = text display"
-msgid "Text"
-msgstr "Testun"
-
-#: find.cpp:162
-msgctxt "@info:whatsthis"
-msgid "Check to include text message alarms in the search."
-msgstr ""
-
-#: find.cpp:165
-#, fuzzy
-msgctxt "@option:check Alarm action = file display"
-msgid "File"
-msgstr "Ff&eil"
-
-#: find.cpp:167
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Check to include file alarms in the search."
-msgstr "Penodi a ddylid dangos larymau darfodedig yn y rhestr larymau"
-
-#: find.cpp:170
-#, fuzzy
-#| msgid "Co&mmand"
-msgctxt "@option:check Alarm action"
-msgid "Command"
-msgstr "Gorchy&myn"
-
-#: find.cpp:172
-msgctxt "@info:whatsthis"
-msgid "Check to include command alarms in the search."
-msgstr ""
-
-#: find.cpp:175
-#, fuzzy
-#| msgid "Email"
-msgctxt "@option:check Alarm action"
-msgid "Email"
-msgstr "Ebost"
-
-#: find.cpp:177
-msgctxt "@info:whatsthis"
-msgid "Check to include email alarms in the search."
-msgstr ""
-
-#: find.cpp:180
-msgctxt "@option:check Alarm action"
-msgid "Audio"
-msgstr ""
-
-#: find.cpp:182
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Check to include audio alarms in the search."
-msgstr "Penodi a ddylid dangos larymau darfodedig yn y rhestr larymau"
-
-#: find.cpp:283
-msgctxt "@info"
-msgid "No alarm types are selected to search"
-msgstr ""
-
-#: find.cpp:439
-msgctxt "@info"
-msgid ""
-"<para>End of alarm list reached.</para><para>Continue from the beginning?</"
-"para>"
-msgstr ""
-
-#: find.cpp:440
-msgctxt "@info"
-msgid ""
-"<para>Beginning of alarm list reached.</para><para>Continue from the end?</"
-"para>"
-msgstr ""
-
-#: fontcolour.cpp:71
-#, fuzzy
-#| msgid "&Foreground color:"
-msgctxt "@label:listbox"
-msgid "Foreground color:"
-msgstr "Lliw &blaendir:"
-
-#: fontcolour.cpp:76
-#, fuzzy
-#| msgid "Select the alarm message foreground color"
-msgctxt "@info:whatsthis"
-msgid "Select the alarm message foreground color"
-msgstr "Dewiswch liw blaendir y neges larwm"
-
-#: fontcolour.cpp:84
-#, fuzzy
-#| msgid "&Background color:"
-msgctxt "@label:listbox"
-msgid "Background color:"
-msgstr "Lliw &cefndir:"
-
-#: fontcolour.cpp:89
-#, fuzzy
-#| msgid "Select the alarm message background color"
-msgctxt "@info:whatsthis"
-msgid "Select the alarm message background color"
-msgstr "Dewiswch liw cefndir y neges larwm"
-
-#: fontcolour.cpp:97
-#, fuzzy
-#| msgid "Use &default font"
-msgctxt "@option:check"
-msgid "Use default font"
-msgstr "Defnyddio wynebfath &ragosodedig"
-
-#: fontcolour.cpp:100
-#, fuzzy
-#| msgid ""
-#| "Check to use the default font current at the time the alarm is displayed."
-msgctxt "@info:whatsthis"
-msgid ""
-"Check to use the default font current at the time the alarm is displayed."
-msgstr ""
-"Brithwch i ddefnyddio'r wynebfath ragosodedig sy'n gyfredol pan ddengys y "
-"larwm."
-
-#: fontcolour.h:39
-msgid "Requested font"
-msgstr "Wynebfath a ddymunwyd"
-
-#: fontcolourbutton.cpp:43
-#, fuzzy
-#| msgid "Font && Co&lor..."
-msgctxt "@action:button"
-msgid "Font && Color..."
-msgstr "Wynebfath a &Lliw..."
-
-#: fontcolourbutton.cpp:47
-#, fuzzy
-#| msgid ""
-#| "Choose the font, and foreground and background color, for the alarm "
-#| "message."
-msgctxt "@info:whatsthis"
-msgid ""
-"Choose the font, and foreground and background color, for the alarm message."
-msgstr ""
-"Dewiswch y wynebfath a'r lliw blaendir a cefndir ar gyfer y neges larwm."
-
-#: fontcolourbutton.cpp:71
-#, fuzzy
-#| msgid "Choose Alarm Font & Color"
-msgctxt "@title:window"
-msgid "Choose Alarm Font & Color"
-msgstr "Dewis Wynebfath a Lliw Larwm"
 
 #: functions.cpp:181
 #, fuzzy
@@ -2325,73 +2032,80 @@ msgid ""
 "para><para>Do you wish to update the calendar?</para>"
 msgstr ""
 
-#: kalarmapp.cpp:346
-#, kde-format
-msgctxt "@info:shell"
-msgid "%1: Event <resource>%2</resource> not found, or not unique"
-msgstr ""
+#: fontcolour.cpp:71
+#, fuzzy
+#| msgid "&Foreground color:"
+msgctxt "@label:listbox"
+msgid "Foreground color:"
+msgstr "Lliw &blaendir:"
 
-#: kalarmapp.cpp:348
-#, fuzzy, kde-format
-msgctxt "@info:shell"
-msgid "%1: Event <resource>%2</resource> not found"
-msgstr "Gweld Gosodiadau"
+#: fontcolour.cpp:76
+#, fuzzy
+#| msgid "Select the alarm message foreground color"
+msgctxt "@info:whatsthis"
+msgid "Select the alarm message foreground color"
+msgstr "Dewiswch liw blaendir y neges larwm"
 
-#: kalarmapp.cpp:376 kalarmapp.cpp:378
-#, kde-format
-msgctxt "@info:shell"
-msgid "%1: Event <resource>%2</resource> not found, or not editable"
-msgstr ""
+#: fontcolour.cpp:84
+#, fuzzy
+#| msgid "&Background color:"
+msgctxt "@label:listbox"
+msgid "Background color:"
+msgstr "Lliw &cefndir:"
 
-#: kalarmapp.cpp:557
-msgctxt "@info"
-msgid ""
-"Time zones are not accessible:<nl/>KAlarm will use the UTC time zone.<nl/"
-"><nl/>(The KDE time zone service is not available:<nl/>check that "
-"<application>ktimezoned</application> is installed.)"
-msgstr ""
+#: fontcolour.cpp:89
+#, fuzzy
+#| msgid "Select the alarm message background color"
+msgctxt "@info:whatsthis"
+msgid "Select the alarm message background color"
+msgstr "Dewiswch liw cefndir y neges larwm"
 
-#: kalarmapp.cpp:634
+#: fontcolour.cpp:97
+#, fuzzy
+#| msgid "Use &default font"
+msgctxt "@option:check"
+msgid "Use default font"
+msgstr "Defnyddio wynebfath &ragosodedig"
+
+#: fontcolour.cpp:100
 #, fuzzy
 #| msgid ""
-#| "Quitting will disable alarms\n"
-#| "(once any alarm message windows are closed)."
-msgctxt "@info"
+#| "Check to use the default font current at the time the alarm is displayed."
+msgctxt "@info:whatsthis"
 msgid ""
-"Quitting will disable alarms (once any alarm message windows are closed)."
+"Check to use the default font current at the time the alarm is displayed."
 msgstr ""
-"Bydd cau'n analluogi larymau\n"
-" (unwaith y ceuir unrhwy ffenestri neges larwm)."
+"Brithwch i ddefnyddio'r wynebfath ragosodedig sy'n gyfredol pan ddengys y "
+"larwm."
 
-#: kalarmapp.cpp:642
-msgctxt "@info"
-msgid "Quitting will cancel the scheduled Wake from Suspend."
-msgstr ""
+#: fontcolour.h:39
+msgid "Requested font"
+msgstr "Wynebfath a ddymunwyd"
 
-#: kalarmapp.cpp:654
-msgctxt "@info"
+#: fontcolourbutton.cpp:43
+#, fuzzy
+#| msgid "Font && Co&lor..."
+msgctxt "@action:button"
+msgid "Font && Color..."
+msgstr "Wynebfath a &Lliw..."
+
+#: fontcolourbutton.cpp:47
+#, fuzzy
+#| msgid ""
+#| "Choose the font, and foreground and background color, for the alarm "
+#| "message."
+msgctxt "@info:whatsthis"
 msgid ""
-"Do you want to start KAlarm at login?<nl/>(Note that alarms will be disabled "
-"if KAlarm is not started.)"
+"Choose the font, and foreground and background color, for the alarm message."
 msgstr ""
+"Dewiswch y wynebfath a'r lliw blaendir a cefndir ar gyfer y neges larwm."
 
-#: kalarmapp.cpp:2126
+#: fontcolourbutton.cpp:71
 #, fuzzy
-msgctxt "@info"
-msgid "Error creating temporary script file"
-msgstr "Gwall wrth galw KMail"
-
-#: kalarmapp.cpp:2214
-#, fuzzy
-msgctxt "@info"
-msgid "Pre-alarm action:"
-msgstr "Gosodiadau Larwm Ebost"
-
-#: kalarmapp.cpp:2220
-#, fuzzy
-msgctxt "@info"
-msgid "Post-alarm action:"
-msgstr "Gosodiadau Larwm Ebost"
+#| msgid "Choose Alarm Font & Color"
+msgctxt "@title:window"
+msgid "Choose Alarm Font & Color"
+msgstr "Dewis Wynebfath a Lliw Larwm"
 
 #: kamail.cpp:91
 #, fuzzy
@@ -2521,1006 +2235,6 @@ msgstr "Methwyd anfon ebost"
 msgctxt "@info"
 msgid "Error sending email"
 msgstr "Gwall wrth galw KMail"
-
-#: latecancel.cpp:44
-#, fuzzy
-#| msgid "Cancel if late"
-msgctxt "@option:check"
-msgid "Cancel if late"
-msgstr "Diddymu os yn hwyr"
-
-#: latecancel.cpp:45
-msgctxt "@option:check"
-msgid "Auto-close window after this time"
-msgstr ""
-
-#: latecancel.cpp:46
-msgctxt "@option:check"
-msgid "Auto-close window after late-cancellation time"
-msgstr ""
-
-#: latecancel.cpp:56
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>If checked, the alarm will be canceled if it cannot be triggered "
-"within the specified period after its scheduled time. Possible reasons for "
-"not triggering include your being logged off, X not running, or "
-"<application>KAlarm</application> not running.</para><para>If unchecked, the "
-"alarm will be triggered at the first opportunity after its scheduled time, "
-"regardless of how late it is.</para>"
-msgstr ""
-"Os yn frith, diddymir y larwm os na fedrir ei achosi o fewn 1 funud o'r "
-"amser penodedig. Rhesymau posib am beidio ag achosi: eich bod wedi "
-"allgofnodi, nid yw X yn rhedeg, neu na bo'r ellyll larymau'n rhedeg.\n"
-" \n"
-" Os heb ei fritho, achosir y larwm y cyfle cyntaf wedi'r amser penodedig, pa "
-"mor hwyr bynnag yw hynny."
-
-#: latecancel.cpp:82
-#, fuzzy
-#| msgid "Ca&ncel if late"
-msgctxt "@option:check Cancel if late by 10 minutes"
-msgid "Cancel if late by"
-msgstr "&Diddymu os yn hwyr"
-
-#: latecancel.cpp:83
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Enter how late will cause the alarm to be canceled"
-msgstr "Rhowch destun y neges larwm. Gall fod yn aml-linell."
-
-#: latecancel.cpp:99
-msgctxt "@info:whatsthis"
-msgid ""
-"Automatically close the alarm window after the expiry of the late-"
-"cancellation period"
-msgstr ""
-
-#: lib/filedialog.cpp:60
-#, fuzzy
-#| msgid "Failed to open file"
-msgctxt "@option:check"
-msgid "Append to existing file"
-msgstr "Methwyd agor y ffeil"
-
-#: lib/kalocale.cpp:51
-#, fuzzy
-msgctxt "@option Name of the weekday"
-msgid "Monday"
-msgstr "Heddiw"
-
-#: lib/kalocale.cpp:52
-#, fuzzy
-msgctxt "@option Name of the weekday"
-msgid "Tuesday"
-msgstr "Heddiw"
-
-#: lib/kalocale.cpp:53
-#, fuzzy
-msgctxt "@option Name of the weekday"
-msgid "Wednesday"
-msgstr "Heddiw"
-
-#: lib/kalocale.cpp:54
-#, fuzzy
-msgctxt "@option Name of the weekday"
-msgid "Thursday"
-msgstr "Heddiw"
-
-#: lib/kalocale.cpp:55
-#, fuzzy
-msgctxt "@option Name of the weekday"
-msgid "Friday"
-msgstr "diwrnod"
-
-#: lib/kalocale.cpp:56
-#, fuzzy
-msgctxt "@option Name of the weekday"
-msgid "Saturday"
-msgstr "heddiw"
-
-#: lib/kalocale.cpp:57
-#, fuzzy
-msgctxt "@option Name of the weekday"
-msgid "Sunday"
-msgstr "Sw^n"
-
-#: lib/shellprocess.cpp:158
-#, fuzzy
-#| msgid "Failed to execute command (shell access not authorized):"
-msgctxt "@info"
-msgid "Failed to execute command (shell access not authorized)"
-msgstr "Methwyd gweithredu gorchymyn (hychyrchu plisgyn heb ei awdurdodi):"
-
-#: lib/shellprocess.cpp:161
-#, fuzzy
-#| msgid "Failed to execute command:"
-msgctxt "@info"
-msgid "Failed to execute command"
-msgstr "Methwyd gweithredu gorchymyn:"
-
-#: lib/shellprocess.cpp:163
-#, fuzzy
-#| msgid "Command execution error:"
-msgctxt "@info"
-msgid "Command execution error"
-msgstr "Gwall gweithredu gorchymyn:"
-
-#: lib/shellprocess.cpp:166
-#, fuzzy, kde-format
-#| msgid ""
-#| "Command executed:\n"
-#| "%1"
-msgctxt "@info"
-msgid "Command exit code: %1"
-msgstr ""
-"Gweithredwyd y gorchymyn:\n"
-" %1"
-
-#: lib/timeedit.cpp:177
-#, fuzzy
-msgctxt "@item:inlistbox Morning, as in 2am"
-msgid "am"
-msgstr "Enw"
-
-#: lib/timeedit.cpp:196
-msgctxt "@item:inlistbox Afternoon, as in 2pm"
-msgid "pm"
-msgstr ""
-
-#: lib/timeperiod.cpp:41
-#, fuzzy
-#| msgid "hours/minutes"
-msgctxt "@item:inlistbox Time units"
-msgid "minutes"
-msgstr "awr/munud"
-
-#: lib/timeperiod.cpp:42
-#, fuzzy
-#| msgid "hours/minutes"
-msgctxt "@item:inlistbox Time units"
-msgid "hours/minutes"
-msgstr "awr/munud"
-
-#: lib/timeperiod.cpp:43
-#, fuzzy
-#| msgid "days"
-msgctxt "@item:inlistbox Time units"
-msgid "days"
-msgstr "diwrnod"
-
-#: lib/timeperiod.cpp:44
-#, fuzzy
-#| msgid "weeks"
-msgctxt "@item:inlistbox Time units"
-msgid "weeks"
-msgstr "wythnos"
-
-#: lib/timespinbox.cpp:77
-#, fuzzy
-#| msgid ""
-#| "Press the Shift key while clicking the spin buttons to adjust the time by "
-#| "a larger step (6 hours / 5 minutes)."
-msgctxt "@info:whatsthis"
-msgid ""
-"Press the Shift key while clicking the spin buttons to adjust the time by a "
-"larger step (6 hours / 5 minutes)."
-msgstr ""
-"Gwasgwch y Syflydd tra'n clicio'r botymau cylchdroi i addasu'r amser mewn "
-"camau mwy (6 awr / 5 munud)."
-
-#: main.cpp:39
-msgid "KAlarm"
-msgstr "KAlarm/KLarwm"
-
-#: main.cpp:40
-msgid "Personal alarm message, command and email scheduler for KDE"
-msgstr ""
-"Trefnlennydd negeseuon larwm, gorchmynion, ac ebostau personol ar gyfer KDE"
-
-#: main.cpp:42
-msgid "Copyright 2001-2012, David Jarvie"
-msgstr ""
-
-#: main.cpp:50
-msgid "Prompt for confirmation when alarm is acknowledged"
-msgstr "Annog am gadarnhad pan wirir y larwm"
-
-#: main.cpp:52
-msgid "Attach file to email (repeat as needed)"
-msgstr "Atodi ffeil at ebost (ail-adroddwch fel bo'r angen)"
-
-#: main.cpp:53
-msgid "Auto-close alarm window after --late-cancel period"
-msgstr ""
-
-#: main.cpp:54
-msgid "Blind copy email to self"
-msgstr "Copïo ebost yn ddall ataf i fy hun"
-
-#: main.cpp:56
-msgid "Beep when message is displayed"
-msgstr "Blîpio pan ddengys y neges"
-
-#: main.cpp:59
-msgid "Message background color (name or hex 0xRRGGBB)"
-msgstr "Lliw cefndir y neges (enw neu hecs 0xCCGwGwGlGl)"
-
-#: main.cpp:62
-msgid "Message foreground color (name or hex 0xRRGGBB)"
-msgstr "Lliw blaendir y neges (enw neu hecs 0xRRGGBB)"
-
-#: main.cpp:63
-msgid "Cancel alarm with the specified event ID"
-msgstr "Diddymu larwm â'r dynodiad digwyddiad penodedig"
-
-#: main.cpp:65
-#, fuzzy
-msgid "Disable the alarm"
-msgstr "Cydnabod y larwm"
-
-#: main.cpp:66
-#, fuzzy
-msgid "Disable monitoring of all alarms"
-msgstr "Cydnabod y larwm"
-
-#: main.cpp:68
-msgid "Execute a shell command line"
-msgstr "Gweithredu llinell orchymyn plisgyn"
-
-#: main.cpp:70
-msgid "Command line to generate alarm message text"
-msgstr ""
-
-#: main.cpp:71
-#, fuzzy
-msgid "Display the alarm edit dialog to edit the specified alarm"
-msgstr "Ailadrydd y larwm tan y dyddiad/amser penodedig"
-
-#: main.cpp:72
-#, fuzzy
-msgid "Display the alarm edit dialog to edit a new display alarm"
-msgstr "Dangos y neges larwm nawr"
-
-#: main.cpp:73
-#, fuzzy
-msgid "Display the alarm edit dialog to edit a new command alarm"
-msgstr "Dangos y neges larwm nawr"
-
-#: main.cpp:74
-#, fuzzy
-msgid "Display the alarm edit dialog to edit a new email alarm"
-msgstr "Dangos y neges larwm nawr"
-
-#: main.cpp:75
-#, fuzzy
-msgid "Display the alarm edit dialog to edit a new audio alarm"
-msgstr "Dangos y neges larwm nawr"
-
-#: main.cpp:76
-msgid "Display the alarm edit dialog, preset with a template"
-msgstr ""
-
-#: main.cpp:78
-msgid "File to display"
-msgstr "Ffeil i'w dangos"
-
-#: main.cpp:80
-#, fuzzy
-msgid "KMail identity to use as sender of email"
-msgstr "Methwyd anfon ebost"
-
-#: main.cpp:82
-#, fuzzy
-msgid "Interval between alarm repetitions"
-msgstr "Cyfnod rhwng ail-ddigwyddiadau'r larwm"
-
-#: main.cpp:84
-msgid "Show alarm as an event in KOrganizer"
-msgstr ""
-
-#: main.cpp:86
-#, fuzzy
-msgid "Cancel alarm if more than 'period' late when triggered"
-msgstr "Diddymu'r larwm os na ellir ei achosi ar amser"
-
-#: main.cpp:87
-#, fuzzy
-#| msgid "List of scheduled alarms"
-msgid "Output list of scheduled alarms to stdout"
-msgstr "Rhestr larymau trefnlenedig"
-
-#: main.cpp:89
-msgid "Repeat alarm at every login"
-msgstr "Ailadrodd y larwm ar bob mewngofnod"
-
-#: main.cpp:91
-msgid "Send an email to the given address (repeat as needed)"
-msgstr "Anfon ebost at y cyfeiriad a roddwyd (ailadroddwch fel bo angen)"
-
-#: main.cpp:93
-#, fuzzy
-msgid "Audio file to play once"
-msgstr "Ffeil sain i'w chanu"
-
-#: main.cpp:95
-#, fuzzy
-msgid "Audio file to play repeatedly"
-msgstr "Ffeil sain i'w chanu"
-
-#: main.cpp:96
-msgid "Specify alarm recurrence using iCalendar syntax"
-msgstr "Penodi ail-ddigwydd y larwm yng nghystrawen iCalendar"
-
-#: main.cpp:98
-#, fuzzy
-#| msgid "Display reminder in advance of alarm"
-msgid "Display reminder before or after alarm"
-msgstr "Dangos atgof cyn y larwm"
-
-#: main.cpp:99
-#, fuzzy
-msgid "Display reminder once, before or after first alarm recurrence"
-msgstr "Dangos atgof cyn y larwm"
-
-#: main.cpp:101
-#, fuzzy
-msgid "Number of times to repeat alarm (including initial occasion)"
-msgstr "Sawl gwaith i ailadrodd y larwm (wedi'r amser cyntaf)"
-
-#: main.cpp:103
-#, fuzzy
-msgid "Speak the message when it is displayed"
-msgstr "Blîpio pan ddengys y neges"
-
-#: main.cpp:105
-msgid "Email subject line"
-msgstr "Llinell bwnc ebost"
-
-#: main.cpp:107
-#, fuzzy
-msgid "Simulate system time [[[yyyy-]mm-]dd-]hh:mm [TZ] (debug mode)"
-msgstr "Ailadrodd tan amser [[[bbbb-]mm-]dd]aa:mm, neu ddyddiad bbbb-mm-dd"
-
-#: main.cpp:110
-#, fuzzy
-msgid ""
-"Trigger alarm at time [[[yyyy-]mm-]dd-]hh:mm [TZ], or date yyyy-mm-dd [TZ]"
-msgstr "Achosi larwm ar amser [[[bbbb-]mm-]dd]aa:mm, neu ddyddiad bbbb-mm-dd"
-
-#: main.cpp:111
-msgid "Display system tray icon"
-msgstr "Dangos eicon gafn gysawd"
-
-#: main.cpp:112
-msgid "Trigger alarm with the specified event ID"
-msgstr "Achosi larwm â'r dynodiad digwyddiad penodedig"
-
-#: main.cpp:114
-#, fuzzy
-msgid "Repeat until time [[[yyyy-]mm-]dd-]hh:mm [TZ], or date yyyy-mm-dd [TZ]"
-msgstr "Ailadrodd tan amser [[[bbbb-]mm-]dd]aa:mm, neu ddyddiad bbbb-mm-dd"
-
-#: main.cpp:116
-msgid "Volume to play audio file"
-msgstr ""
-
-#: main.cpp:117
-msgid "Message text to display"
-msgstr "Testun neges i'w ddangos"
-
-#: mainwindow.cpp:126
-#, fuzzy
-#| msgid "Show &Alarm Times"
-msgctxt "@action"
-msgid "Show &Alarm Times"
-msgstr "Dangos Amserau &Larwm"
-
-#: mainwindow.cpp:127
-#, fuzzy
-msgctxt "@option:check"
-msgid "Show alarm time"
-msgstr "Dan&gos amser y larwm"
-
-#: mainwindow.cpp:128
-#, fuzzy
-#| msgid "Show Time t&o Alarms"
-msgctxt "@action"
-msgid "Show Time t&o Alarms"
-msgstr "Dangos A&mser i Larymau"
-
-#: mainwindow.cpp:129
-#, fuzzy
-#| msgid "Show time u&ntil alarm"
-msgctxt "@option:check"
-msgid "Show time until alarm"
-msgstr "Dangos amser &tan y larwm."
-
-#: mainwindow.cpp:437
-#, fuzzy, kde-format
-#| msgid ""
-#| "Failed to save calendar to\n"
-#| "'%1'"
-msgctxt "@info"
-msgid ""
-"Failure to create menus (perhaps <filename>%1</filename> missing or "
-"corrupted)"
-msgstr ""
-"Methu cadw'r calendr i\n"
-" '%1'"
-
-#: mainwindow.cpp:458
-#, fuzzy
-#| msgid "&Templates..."
-msgctxt "@action"
-msgid "&Templates..."
-msgstr "&Patrymluniau ..."
-
-#: mainwindow.cpp:462
-#, fuzzy
-#| msgid "&New..."
-msgctxt "@action"
-msgid "&New"
-msgstr "&Newydd..."
-
-#: mainwindow.cpp:489
-#, fuzzy
-#| msgid "Load Template..."
-msgctxt "@action"
-msgid "Create Tem&plate..."
-msgstr "Llwytho Patrymlun ..."
-
-#: mainwindow.cpp:493
-#, fuzzy
-#| msgid "&Copy..."
-msgctxt "@action"
-msgid "&Copy..."
-msgstr "&Copïo..."
-
-#: mainwindow.cpp:498 resourceselector.cpp:518
-#, fuzzy
-#| msgid "&Edit..."
-msgctxt "@action"
-msgid "&Edit..."
-msgstr "&Golygu..."
-
-#: mainwindow.cpp:503
-#, fuzzy
-msgctxt "@action"
-msgid "&Delete"
-msgstr "Dileu Larwm"
-
-#: mainwindow.cpp:509
-#, fuzzy
-msgctxt "@action"
-msgid "Delete Without Confirmation"
-msgstr "Ffurfwedd Larwm"
-
-#: mainwindow.cpp:514
-#, fuzzy
-msgctxt "@action"
-msgid "Reac&tivate"
-msgstr "Gweithredoli %1"
-
-#: mainwindow.cpp:524
-msgctxt "@action"
-msgid "Wake From Suspend..."
-msgstr ""
-
-#: mainwindow.cpp:541
-#, fuzzy
-msgctxt "@action"
-msgid "Show Archi&ved Alarms"
-msgstr "Dangos Larymau Darfodedig"
-
-#: mainwindow.cpp:546
-#, fuzzy
-#| msgid "Show in System &Tray"
-msgctxt "@action"
-msgid "Show in System &Tray"
-msgstr "Dangos yng &Nghafn y Cysawd"
-
-#: mainwindow.cpp:550
-#, fuzzy
-msgctxt "@action"
-msgid "Show &Calendars"
-msgstr "URL y ffeil galendr"
-
-#: mainwindow.cpp:558
-#, fuzzy
-msgctxt "@action"
-msgid "Import &Alarms..."
-msgstr "Mewnforio &Penblwyddi..."
-
-#: mainwindow.cpp:562
-#, fuzzy
-#| msgid "Import &Birthdays..."
-msgctxt "@action"
-msgid "Import &Birthdays..."
-msgstr "Mewnforio &Penblwyddi..."
-
-#: mainwindow.cpp:566
-#, fuzzy
-msgctxt "@action"
-msgid "E&xport Selected Alarms..."
-msgstr "Mewnforio &Penblwyddi..."
-
-#: mainwindow.cpp:570 resourceselector.cpp:538
-#, fuzzy
-msgctxt "@action"
-msgid "E&xport..."
-msgstr "Mewnforio &Penblwyddi..."
-
-#: mainwindow.cpp:574
-#, fuzzy
-#| msgid "&Refresh Alarms"
-msgctxt "@action"
-msgid "&Refresh Alarms"
-msgstr "Ail&fywio Larymau"
-
-#: mainwindow.cpp:829
-#, fuzzy, kde-format
-msgctxt "@info"
-msgid "Do you really want to delete the selected alarm?"
-msgid_plural "Do you really want to delete the %1 selected alarms?"
-msgstr[0] "A ydych wir am ddileu'r larwm dewisiedig?"
-msgstr[1] " A ydych wir am ddileu'r %1 lawrm dewisiedig?"
-
-#: mainwindow.cpp:831
-#, fuzzy
-#| msgid "Delete Alarm"
-#| msgid_plural "Delete Alarms"
-msgctxt "@title:window"
-msgid "Delete Alarm"
-msgid_plural "Delete Alarms"
-msgstr[0] "Dileu Larwm"
-msgstr[1] " Dileu Larymau"
-
-#: mainwindow.cpp:832 templatedlg.cpp:214
-#, fuzzy
-msgctxt "@action:button"
-msgid "&Delete"
-msgstr "Dileu Larwm"
-
-#: mainwindow.cpp:976
-#, fuzzy
-msgctxt "@info:tooltip"
-msgid "Hide Archived Alarms"
-msgstr "Larymau Darfodedig"
-
-#: mainwindow.cpp:977
-#, fuzzy
-msgctxt "@info:tooltip"
-msgid "Show Archived Alarms"
-msgstr "Dangos Larymau Darfodedig"
-
-#: mainwindow.cpp:1064
-#, fuzzy
-msgctxt "@info"
-msgid "Import birthdays"
-msgstr "Mewnforio &Penblwyddi..."
-
-#: mainwindow.cpp:1234
-#, fuzzy, kde-format
-#| msgctxt "Hours and Minutes"
-#| msgid "%1H %2M"
-msgctxt "@action Undo/Redo [action]"
-msgid "%1 %2"
-msgstr "%1A %2M"
-
-#: mainwindow.cpp:1235
-#, fuzzy, kde-format
-#| msgctxt "prefix + hours:minutes"
-#| msgid "%1%2:%3"
-msgctxt "@action Undo [action]: message"
-msgid "%1 %2: %3"
-msgstr "%1%2:%3"
-
-#: mainwindow.cpp:1521
-#, fuzzy
-msgctxt "@item:inlistbox"
-msgid "Display Alarm"
-msgstr "Larymau Ebost"
-
-#: mainwindow.cpp:1523
-#, fuzzy
-#| msgid "Email Alarms"
-msgctxt "@item:inlistbox"
-msgid "Email Alarm"
-msgstr "Larymau Ebost"
-
-#: mainwindow.cpp:1525
-#, fuzzy
-msgctxt "@item:inlistbox"
-msgid "Command Alarm"
-msgstr "Larymau Ebost"
-
-#: mainwindow.cpp:1527
-#, fuzzy
-msgctxt "@title:window"
-msgid "Alarm Type"
-msgstr "Rhestr Larwm"
-
-#: mainwindow.cpp:1528
-#, fuzzy
-msgctxt "@info"
-msgid "Choose alarm type to create:"
-msgstr "Dangos Amserau &Larwm"
-
-#: mainwindow.cpp:1681
-#, fuzzy
-#| msgid "Disa&ble"
-msgctxt "@action"
-msgid "Disa&ble"
-msgstr "Anal&luogi"
-
-#: mainwindow.cpp:1681
-#, fuzzy
-#| msgid "Ena&ble"
-msgctxt "@action"
-msgid "Ena&ble"
-msgstr "Gal&luogi"
-
-#: messagewin.cpp:438 messagewin.cpp:861
-#, fuzzy
-#| msgid "Message"
-msgctxt "@title:window"
-msgid "Message"
-msgstr "Neges"
-
-#: messagewin.cpp:438
-#, fuzzy
-#| msgid "Reminder"
-msgctxt "@title:window"
-msgid "Reminder"
-msgstr "Atgof"
-
-#: messagewin.cpp:456
-#, fuzzy
-#| msgid ""
-#| "The scheduled date/time for the message (as opposed to the actual time of "
-#| "display)."
-msgctxt "@info:whatsthis"
-msgid ""
-"The scheduled date/time for the message (as opposed to the actual time of "
-"display)."
-msgstr ""
-"Amser/dyddiad trefnlenedig y neges (yn hytrach na'r gwir amser pan ei dengys)"
-
-#: messagewin.cpp:463
-#, fuzzy
-#| msgid "Reminder"
-msgctxt "@info"
-msgid "Reminder"
-msgstr "Atgof"
-
-#: messagewin.cpp:487
-#, fuzzy
-#| msgid "The file whose contents are displayed below"
-msgctxt "@info:whatsthis"
-msgid "The file whose contents are displayed below"
-msgstr "Y ffeil y dengys ei chynnwys isod"
-
-#: messagewin.cpp:543
-#, fuzzy
-#| msgid "The contents of the file to be displayed"
-msgctxt "@info:whatsthis"
-msgid "The contents of the file to be displayed"
-msgstr "Cynnwys y ffeil i'w dangos"
-
-#: messagewin.cpp:551
-#, fuzzy
-#| msgid "Failed to open file"
-msgctxt "@info"
-msgid "Failed to open file"
-msgstr "Methwyd agor y ffeil"
-
-#: messagewin.cpp:551
-#, fuzzy
-#| msgid "File is a folder"
-msgctxt "@info"
-msgid "File is a folder"
-msgstr "Plygell yw'r ffeil"
-
-#: messagewin.cpp:551
-#, fuzzy
-#| msgid "File not found"
-msgctxt "@info"
-msgid "File not found"
-msgstr "Ni chanfuwyd y ffeil"
-
-#: messagewin.cpp:571
-#, fuzzy
-#| msgid "The alarm message"
-msgctxt "@info:whatsthis"
-msgid "The alarm message"
-msgstr "Y neges larwm"
-
-#: messagewin.cpp:598
-msgctxt "@info:whatsthis"
-msgid "The output of the alarm's command"
-msgstr ""
-
-#: messagewin.cpp:640
-#, fuzzy
-#| msgid "The email to send"
-msgctxt "@info:whatsthis"
-msgid "The email to send"
-msgstr "Yr ebost i'w anfon"
-
-#: messagewin.cpp:646
-#, fuzzy
-#| msgctxt "Email addressee"
-#| msgid "To:"
-msgctxt "@info Email addressee"
-msgid "To:"
-msgstr "I:"
-
-#: messagewin.cpp:653
-#, fuzzy
-#| msgctxt "Email subject"
-#| msgid "Subject:"
-msgctxt "@info Email subject"
-msgid "Subject:"
-msgstr "Pwnc:"
-
-#: messagewin.cpp:679
-msgctxt "@title:window"
-msgid "Error"
-msgstr ""
-
-#: messagewin.cpp:699
-msgctxt "@option:check"
-msgid "Do not display this error message again for this alarm"
-msgstr ""
-
-#: messagewin.cpp:718
-#, fuzzy
-#| msgid "Acknowledge the alarm"
-msgctxt "@info:whatsthis"
-msgid "Acknowledge the alarm"
-msgstr "Cydnabod y larwm"
-
-#: messagewin.cpp:723
-#, fuzzy
-#| msgid "&Edit..."
-msgctxt "@action:button"
-msgid "&Edit..."
-msgstr "&Golygu..."
-
-#: messagewin.cpp:728
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Edit the alarm."
-msgstr "Golygu Larwm"
-
-#: messagewin.cpp:732
-#, fuzzy
-#| msgid "&Defer..."
-msgctxt "@action:button"
-msgid "&Defer..."
-msgstr "&Gohirio..."
-
-#: messagewin.cpp:737
-#, fuzzy
-#| msgid ""
-#| "Defer the alarm until later.\n"
-#| "You will be prompted to specify when the alarm should be redisplayed."
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Defer the alarm until later.</para><para>You will be prompted to "
-"specify when the alarm should be redisplayed.</para>"
-msgstr ""
-"Gohirio'r larwm tan nes ymlaen.\n"
-" Fe'ch anogir i benodi pryd dylid ailddangos y larwm."
-
-#: messagewin.cpp:752 sounddlg.cpp:442
-#, fuzzy
-msgctxt "@info:tooltip"
-msgid "Stop sound"
-msgstr "&Sain"
-
-#: messagewin.cpp:753 sounddlg.cpp:443
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Stop playing the sound"
-msgstr "&Sain"
-
-#: messagewin.cpp:767
-#, fuzzy
-#| msgid "An email has been queued to be sent by KMail"
-msgctxt "@info:tooltip Locate this email in KMail"
-msgid "Locate in <application>KMail</application>"
-msgstr "Rhoddwyd ebost yn y rhes i'w anfon gan KMail"
-
-#: messagewin.cpp:768
-msgctxt "@info:whatsthis"
-msgid "Locate and highlight this email in <application>KMail</application>"
-msgstr ""
-
-#: messagewin.cpp:777
-msgctxt "@info:tooltip"
-msgid "Activate <application>KAlarm</application>"
-msgstr ""
-
-#: messagewin.cpp:778
-msgctxt "@info:whatsthis"
-msgid "Activate <application>KAlarm</application>"
-msgstr ""
-
-#: messagewin.cpp:938
-#, fuzzy
-#| msgid "Today"
-msgctxt "@info"
-msgid "Today"
-msgstr "Heddiw"
-
-#: messagewin.cpp:940
-#, kde-format
-msgctxt "@info"
-msgid "Tomorrow"
-msgid_plural "in %1 days' time"
-msgstr[0] ""
-msgstr[1] ""
-
-#: messagewin.cpp:942
-#, fuzzy, kde-format
-msgctxt "@info"
-msgid "in 1 week's time"
-msgid_plural "in %1 weeks' time"
-msgstr[0] "1 Funud"
-msgstr[1] "%1 o Funudau:"
-
-#: messagewin.cpp:956
-#, fuzzy, kde-format
-msgctxt "@info"
-msgid "in 1 minute's time"
-msgid_plural "in %1 minutes' time"
-msgstr[0] "1 Funud"
-msgstr[1] "%1 o Funudau:"
-
-#: messagewin.cpp:958
-#, fuzzy, kde-format
-msgctxt "@info"
-msgid "in 1 hour's time"
-msgid_plural "in %1 hours' time"
-msgstr[0] "1 Funud"
-msgstr[1] "%1 o Funudau:"
-
-#: messagewin.cpp:961
-#, fuzzy, kde-format
-msgctxt "@item:intext inserted into 'in ... %1 minute's time' below"
-msgid "1 hour"
-msgid_plural "%1 hours"
-msgstr[0] "1 Awr"
-msgstr[1] " %1 o Oriau"
-
-#: messagewin.cpp:962
-#, fuzzy, kde-format
-msgctxt "@info '%2' is the previous message '1 hour'/'%1 hours'"
-msgid "in %2 1 minute's time"
-msgid_plural "in %2 %1 minutes' time"
-msgstr[0] "1 Funud"
-msgstr[1] "%1 o Funudau:"
-
-#: messagewin.cpp:1464 messagewin.cpp:1474
-#, fuzzy
-msgctxt "@info"
-msgid "Unable to speak message"
-msgstr "Methu agor y llyfr cyfeiriadau"
-
-#: messagewin.cpp:1474
-msgctxt "@info"
-msgid "D-Bus call say() failed"
-msgstr ""
-
-#: messagewin.cpp:1617
-#, fuzzy, kde-format
-msgctxt "@info"
-msgid "Cannot open audio file: <filename>%1</filename>"
-msgstr ""
-"Methu agor y calendr:\n"
-" %1"
-
-#: messagewin.cpp:1715
-#, fuzzy, kde-format
-#| msgid ""
-#| "Error attaching file:\n"
-#| "%1"
-msgctxt "@info"
-msgid ""
-"<para>Error playing audio file: <filename>%1</filename></para><para>%2</para>"
-msgstr ""
-"Gwall wrth atodi ffeil:\n"
-"%1"
-
-#: messagewin.cpp:2044
-#, fuzzy
-#| msgid "Do you really want to acknowledge this alarm?"
-msgctxt "@info"
-msgid "Do you really want to acknowledge this alarm?"
-msgstr "A ydych wir am gydnabod y larwm yma?"
-
-#: messagewin.cpp:2045
-#, fuzzy
-#| msgid "&Acknowledge"
-msgctxt "@action:button"
-msgid "Acknowledge"
-msgstr "&Cydnabod"
-
-#: messagewin.cpp:2045
-#, fuzzy
-#| msgid "Acknowledge Alarm"
-msgctxt "@action:button"
-msgid "Acknowledge Alarm"
-msgstr "Cydnabod Larwm"
-
-#: messagewin.cpp:2096
-msgctxt "@info"
-msgid "Unable to locate this email in <application>KMail</application>"
-msgstr ""
-
-#: messagewin.cpp:2266
-msgctxt "@info"
-msgid "<para>Cannot defer alarm:</para><para>Alarm not found.</para>"
-msgstr ""
-
-#: newalarmaction.cpp:59
-#, fuzzy
-msgctxt "@item:inmenu"
-msgid "&Display Alarm Template"
-msgstr "Dileu Larwm"
-
-#: newalarmaction.cpp:59
-#, fuzzy
-msgctxt "@action"
-msgid "New Display Alarm"
-msgstr "Larymau Ebost"
-
-#: newalarmaction.cpp:62
-#, fuzzy
-msgctxt "@item:inmenu"
-msgid "&Command Alarm Template"
-msgstr "Dangos Amserau &Larwm"
-
-#: newalarmaction.cpp:62
-#, fuzzy
-msgctxt "@action"
-msgid "New Command Alarm"
-msgstr "Larymau Ebost"
-
-#: newalarmaction.cpp:65
-#, fuzzy
-msgctxt "@item:inmenu"
-msgid "&Email Alarm Template"
-msgstr "Golygu Larwm"
-
-#: newalarmaction.cpp:65
-#, fuzzy
-#| msgid "Email Alarms"
-msgctxt "@action"
-msgid "New Email Alarm"
-msgstr "Larymau Ebost"
-
-#: newalarmaction.cpp:68
-#, fuzzy
-msgctxt "@item:inmenu"
-msgid "&Audio Alarm Template"
-msgstr "Golygu Larwm"
-
-#: newalarmaction.cpp:68
-#, fuzzy
-#| msgid "Email Alarms"
-msgctxt "@action"
-msgid "New Audio Alarm"
-msgstr "Larymau Ebost"
-
-#: newalarmaction.cpp:79
-#, fuzzy
-msgctxt "@action"
-msgid "New Alarm From &Template"
-msgstr "Larwm Newydd"
 
 #: prefdlg.cpp:157
 #, fuzzy
@@ -4639,6 +3353,3058 @@ msgstr ""
 "cipio mewnosod bysellfwrdd pan ddangosir.\n"
 "- Os heb ei fritho, nid yw'r ffenestr yn ymyrru â'ch teipio pan ddangosir, "
 "ond nid oes ganddi far teitl, a ni ellir ei symud neu newid ei maint."
+
+#: sounddlg.cpp:54
+#, fuzzy
+#| msgid "Repeat"
+msgctxt "@option:check"
+msgid "Repeat"
+msgstr "Ailadrodd"
+
+#: sounddlg.cpp:158
+#, fuzzy
+#| msgid "Sound &file:"
+msgctxt "@label"
+msgid "Sound file:"
+msgstr "&Ffeil sain:"
+
+#: sounddlg.cpp:172 sounddlg.cpp:455
+msgctxt "@info:tooltip"
+msgid "Test the sound"
+msgstr ""
+
+#: sounddlg.cpp:173 sounddlg.cpp:456
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Play the selected sound file."
+msgstr "Dewiswch ffeil sain"
+
+#: sounddlg.cpp:179
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Enter the name or URL of a sound file to play."
+msgstr "Rhowch enw ffeil destun neu ddelwedd, neu URL iddi, i'w dangos."
+
+#: sounddlg.cpp:191
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Select a sound file to play."
+msgstr "Dewiswch ffeil destun i'w dangos."
+
+#: sounddlg.cpp:205
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid ""
+"If checked, the sound file will be played repeatedly for as long as the "
+"message is displayed."
+msgstr "Os yn frith, dangosa'r larwm gynnwys ffeil destun neu ffeil ddelwedd."
+
+#: sounddlg.cpp:215
+#, fuzzy
+msgctxt "@label:spinbox Length of time to pause between repetitions"
+msgid "Pause between repetitions:"
+msgstr "Cyfnod rhwng ail-ddigwyddiadau'r larwm"
+
+#: sounddlg.cpp:222 sounddlg.cpp:276
+#, fuzzy
+#| msgid "seconds"
+msgctxt "@label"
+msgid "seconds"
+msgstr "eiliad"
+
+#: sounddlg.cpp:224
+#, fuzzy
+#| msgid "Enter the number of days between repetitions of the alarm"
+msgctxt "@info:whatsthis"
+msgid "Enter how many seconds to pause between repetitions."
+msgstr "Rhowch y nifer o ddiwrnodau rhwng ailadroddion y larwm"
+
+#: sounddlg.cpp:228
+#, fuzzy
+#| msgid "Volume"
+msgctxt "@title:group Sound volume"
+msgid "Volume"
+msgstr "Lefel Sain"
+
+#: sounddlg.cpp:243
+#, fuzzy
+msgctxt "@option:check"
+msgid "Set volume"
+msgstr "&Ffeil sain:"
+
+#: sounddlg.cpp:246
+msgctxt "@info:whatsthis"
+msgid "Select to choose the volume for playing the sound file."
+msgstr ""
+
+#: sounddlg.cpp:253
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Choose the volume for playing the sound file."
+msgstr "Rhowch enw ffeil destun neu ddelwedd, neu URL iddi, i'w dangos."
+
+#: sounddlg.cpp:258
+#, fuzzy
+#| msgid "Fade"
+msgctxt "@option:check"
+msgid "Fade"
+msgstr "Pylu"
+
+#: sounddlg.cpp:261
+msgctxt "@info:whatsthis"
+msgid "Select to fade the volume when the sound file first starts to play."
+msgstr ""
+
+#: sounddlg.cpp:269
+#, fuzzy
+#| msgid "Invalid time"
+msgctxt "@label:spinbox Time period over which to fade the sound"
+msgid "Fade time:"
+msgstr "Amser annilys"
+
+#: sounddlg.cpp:278
+msgctxt "@info:whatsthis"
+msgid ""
+"Enter how many seconds to fade the sound before reaching the set volume."
+msgstr ""
+
+#: sounddlg.cpp:285
+msgctxt "@label:slider"
+msgid "Initial volume:"
+msgstr ""
+
+#: sounddlg.cpp:293
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Choose the initial volume for playing the sound file."
+msgstr "Rhowch enw ffeil destun neu ddelwedd, neu URL iddi, i'w dangos."
+
+#: sounddlg.cpp:442 messagewin.cpp:752
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "Stop sound"
+msgstr "&Sain"
+
+#: sounddlg.cpp:443 messagewin.cpp:753
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Stop playing the sound"
+msgstr "&Sain"
+
+#: find.cpp:137
+#, fuzzy
+msgctxt "@title:group"
+msgid "Alarm Type"
+msgstr "Rhestr Larwm"
+
+#: find.cpp:145
+#, fuzzy
+#| msgid "Acti&ve"
+msgctxt "@option:check Alarm type"
+msgid "Active"
+msgstr "Gwei&thredol"
+
+#: find.cpp:147
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Check to include active alarms in the search."
+msgstr "Penodi a ddylid dangos larymau darfodedig yn y rhestr larymau"
+
+#: find.cpp:150
+#, fuzzy
+msgctxt "@option:check Alarm type"
+msgid "Archived"
+msgstr "Gwei&thredol"
+
+#: find.cpp:152
+msgctxt "@info:whatsthis"
+msgid ""
+"Check to include archived alarms in the search. This option is only "
+"available if archived alarms are currently being displayed."
+msgstr ""
+
+#: find.cpp:160
+#, fuzzy
+#| msgid "Text"
+msgctxt "@option:check Alarm action = text display"
+msgid "Text"
+msgstr "Testun"
+
+#: find.cpp:162
+msgctxt "@info:whatsthis"
+msgid "Check to include text message alarms in the search."
+msgstr ""
+
+#: find.cpp:165
+#, fuzzy
+msgctxt "@option:check Alarm action = file display"
+msgid "File"
+msgstr "Ff&eil"
+
+#: find.cpp:167
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Check to include file alarms in the search."
+msgstr "Penodi a ddylid dangos larymau darfodedig yn y rhestr larymau"
+
+#: find.cpp:170
+#, fuzzy
+#| msgid "Co&mmand"
+msgctxt "@option:check Alarm action"
+msgid "Command"
+msgstr "Gorchy&myn"
+
+#: find.cpp:172
+msgctxt "@info:whatsthis"
+msgid "Check to include command alarms in the search."
+msgstr ""
+
+#: find.cpp:175
+#, fuzzy
+#| msgid "Email"
+msgctxt "@option:check Alarm action"
+msgid "Email"
+msgstr "Ebost"
+
+#: find.cpp:177
+msgctxt "@info:whatsthis"
+msgid "Check to include email alarms in the search."
+msgstr ""
+
+#: find.cpp:180
+msgctxt "@option:check Alarm action"
+msgid "Audio"
+msgstr ""
+
+#: find.cpp:182
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Check to include audio alarms in the search."
+msgstr "Penodi a ddylid dangos larymau darfodedig yn y rhestr larymau"
+
+#: find.cpp:283
+msgctxt "@info"
+msgid "No alarm types are selected to search"
+msgstr ""
+
+#: find.cpp:439
+msgctxt "@info"
+msgid ""
+"<para>End of alarm list reached.</para><para>Continue from the beginning?</"
+"para>"
+msgstr ""
+
+#: find.cpp:440
+msgctxt "@info"
+msgid ""
+"<para>Beginning of alarm list reached.</para><para>Continue from the end?</"
+"para>"
+msgstr ""
+
+#: latecancel.cpp:44
+#, fuzzy
+#| msgid "Cancel if late"
+msgctxt "@option:check"
+msgid "Cancel if late"
+msgstr "Diddymu os yn hwyr"
+
+#: latecancel.cpp:45
+msgctxt "@option:check"
+msgid "Auto-close window after this time"
+msgstr ""
+
+#: latecancel.cpp:46
+msgctxt "@option:check"
+msgid "Auto-close window after late-cancellation time"
+msgstr ""
+
+#: latecancel.cpp:56
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>If checked, the alarm will be canceled if it cannot be triggered "
+"within the specified period after its scheduled time. Possible reasons for "
+"not triggering include your being logged off, X not running, or "
+"<application>KAlarm</application> not running.</para><para>If unchecked, the "
+"alarm will be triggered at the first opportunity after its scheduled time, "
+"regardless of how late it is.</para>"
+msgstr ""
+"Os yn frith, diddymir y larwm os na fedrir ei achosi o fewn 1 funud o'r "
+"amser penodedig. Rhesymau posib am beidio ag achosi: eich bod wedi "
+"allgofnodi, nid yw X yn rhedeg, neu na bo'r ellyll larymau'n rhedeg.\n"
+" \n"
+" Os heb ei fritho, achosir y larwm y cyfle cyntaf wedi'r amser penodedig, pa "
+"mor hwyr bynnag yw hynny."
+
+#: latecancel.cpp:82
+#, fuzzy
+#| msgid "Ca&ncel if late"
+msgctxt "@option:check Cancel if late by 10 minutes"
+msgid "Cancel if late by"
+msgstr "&Diddymu os yn hwyr"
+
+#: latecancel.cpp:83
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Enter how late will cause the alarm to be canceled"
+msgstr "Rhowch destun y neges larwm. Gall fod yn aml-linell."
+
+#: latecancel.cpp:99
+msgctxt "@info:whatsthis"
+msgid ""
+"Automatically close the alarm window after the expiry of the late-"
+"cancellation period"
+msgstr ""
+
+#: lib/filedialog.cpp:60
+#, fuzzy
+#| msgid "Failed to open file"
+msgctxt "@option:check"
+msgid "Append to existing file"
+msgstr "Methwyd agor y ffeil"
+
+#: lib/kalocale.cpp:51
+#, fuzzy
+msgctxt "@option Name of the weekday"
+msgid "Monday"
+msgstr "Heddiw"
+
+#: lib/kalocale.cpp:52
+#, fuzzy
+msgctxt "@option Name of the weekday"
+msgid "Tuesday"
+msgstr "Heddiw"
+
+#: lib/kalocale.cpp:53
+#, fuzzy
+msgctxt "@option Name of the weekday"
+msgid "Wednesday"
+msgstr "Heddiw"
+
+#: lib/kalocale.cpp:54
+#, fuzzy
+msgctxt "@option Name of the weekday"
+msgid "Thursday"
+msgstr "Heddiw"
+
+#: lib/kalocale.cpp:55
+#, fuzzy
+msgctxt "@option Name of the weekday"
+msgid "Friday"
+msgstr "diwrnod"
+
+#: lib/kalocale.cpp:56
+#, fuzzy
+msgctxt "@option Name of the weekday"
+msgid "Saturday"
+msgstr "heddiw"
+
+#: lib/kalocale.cpp:57
+#, fuzzy
+msgctxt "@option Name of the weekday"
+msgid "Sunday"
+msgstr "Sw^n"
+
+#: lib/timeedit.cpp:177
+#, fuzzy
+msgctxt "@item:inlistbox Morning, as in 2am"
+msgid "am"
+msgstr "Enw"
+
+#: lib/timeedit.cpp:196
+msgctxt "@item:inlistbox Afternoon, as in 2pm"
+msgid "pm"
+msgstr ""
+
+#: lib/timeperiod.cpp:41
+#, fuzzy
+#| msgid "hours/minutes"
+msgctxt "@item:inlistbox Time units"
+msgid "minutes"
+msgstr "awr/munud"
+
+#: lib/timeperiod.cpp:42
+#, fuzzy
+#| msgid "hours/minutes"
+msgctxt "@item:inlistbox Time units"
+msgid "hours/minutes"
+msgstr "awr/munud"
+
+#: lib/timeperiod.cpp:43
+#, fuzzy
+#| msgid "days"
+msgctxt "@item:inlistbox Time units"
+msgid "days"
+msgstr "diwrnod"
+
+#: lib/timeperiod.cpp:44
+#, fuzzy
+#| msgid "weeks"
+msgctxt "@item:inlistbox Time units"
+msgid "weeks"
+msgstr "wythnos"
+
+#: lib/timespinbox.cpp:77
+#, fuzzy
+#| msgid ""
+#| "Press the Shift key while clicking the spin buttons to adjust the time by "
+#| "a larger step (6 hours / 5 minutes)."
+msgctxt "@info:whatsthis"
+msgid ""
+"Press the Shift key while clicking the spin buttons to adjust the time by a "
+"larger step (6 hours / 5 minutes)."
+msgstr ""
+"Gwasgwch y Syflydd tra'n clicio'r botymau cylchdroi i addasu'r amser mewn "
+"camau mwy (6 awr / 5 munud)."
+
+#: lib/shellprocess.cpp:158
+#, fuzzy
+#| msgid "Failed to execute command (shell access not authorized):"
+msgctxt "@info"
+msgid "Failed to execute command (shell access not authorized)"
+msgstr "Methwyd gweithredu gorchymyn (hychyrchu plisgyn heb ei awdurdodi):"
+
+#: lib/shellprocess.cpp:161
+#, fuzzy
+#| msgid "Failed to execute command:"
+msgctxt "@info"
+msgid "Failed to execute command"
+msgstr "Methwyd gweithredu gorchymyn:"
+
+#: lib/shellprocess.cpp:163
+#, fuzzy
+#| msgid "Command execution error:"
+msgctxt "@info"
+msgid "Command execution error"
+msgstr "Gwall gweithredu gorchymyn:"
+
+#: lib/shellprocess.cpp:166
+#, fuzzy, kde-format
+#| msgid ""
+#| "Command executed:\n"
+#| "%1"
+msgctxt "@info"
+msgid "Command exit code: %1"
+msgstr ""
+"Gweithredwyd y gorchymyn:\n"
+" %1"
+
+#: main.cpp:39
+msgid "KAlarm"
+msgstr "KAlarm/KLarwm"
+
+#: main.cpp:40
+msgid "Personal alarm message, command and email scheduler for KDE"
+msgstr ""
+"Trefnlennydd negeseuon larwm, gorchmynion, ac ebostau personol ar gyfer KDE"
+
+#: main.cpp:42
+msgid "Copyright 2001-2012, David Jarvie"
+msgstr ""
+
+#: main.cpp:50
+msgid "Prompt for confirmation when alarm is acknowledged"
+msgstr "Annog am gadarnhad pan wirir y larwm"
+
+#: main.cpp:52
+msgid "Attach file to email (repeat as needed)"
+msgstr "Atodi ffeil at ebost (ail-adroddwch fel bo'r angen)"
+
+#: main.cpp:53
+msgid "Auto-close alarm window after --late-cancel period"
+msgstr ""
+
+#: main.cpp:54
+msgid "Blind copy email to self"
+msgstr "Copïo ebost yn ddall ataf i fy hun"
+
+#: main.cpp:56
+msgid "Beep when message is displayed"
+msgstr "Blîpio pan ddengys y neges"
+
+#: main.cpp:59
+msgid "Message background color (name or hex 0xRRGGBB)"
+msgstr "Lliw cefndir y neges (enw neu hecs 0xCCGwGwGlGl)"
+
+#: main.cpp:62
+msgid "Message foreground color (name or hex 0xRRGGBB)"
+msgstr "Lliw blaendir y neges (enw neu hecs 0xRRGGBB)"
+
+#: main.cpp:63
+msgid "Cancel alarm with the specified event ID"
+msgstr "Diddymu larwm â'r dynodiad digwyddiad penodedig"
+
+#: main.cpp:65
+#, fuzzy
+msgid "Disable the alarm"
+msgstr "Cydnabod y larwm"
+
+#: main.cpp:66
+#, fuzzy
+msgid "Disable monitoring of all alarms"
+msgstr "Cydnabod y larwm"
+
+#: main.cpp:68
+msgid "Execute a shell command line"
+msgstr "Gweithredu llinell orchymyn plisgyn"
+
+#: main.cpp:70
+msgid "Command line to generate alarm message text"
+msgstr ""
+
+#: main.cpp:71
+#, fuzzy
+msgid "Display the alarm edit dialog to edit the specified alarm"
+msgstr "Ailadrydd y larwm tan y dyddiad/amser penodedig"
+
+#: main.cpp:72
+#, fuzzy
+msgid "Display the alarm edit dialog to edit a new display alarm"
+msgstr "Dangos y neges larwm nawr"
+
+#: main.cpp:73
+#, fuzzy
+msgid "Display the alarm edit dialog to edit a new command alarm"
+msgstr "Dangos y neges larwm nawr"
+
+#: main.cpp:74
+#, fuzzy
+msgid "Display the alarm edit dialog to edit a new email alarm"
+msgstr "Dangos y neges larwm nawr"
+
+#: main.cpp:75
+#, fuzzy
+msgid "Display the alarm edit dialog to edit a new audio alarm"
+msgstr "Dangos y neges larwm nawr"
+
+#: main.cpp:76
+msgid "Display the alarm edit dialog, preset with a template"
+msgstr ""
+
+#: main.cpp:78
+msgid "File to display"
+msgstr "Ffeil i'w dangos"
+
+#: main.cpp:80
+#, fuzzy
+msgid "KMail identity to use as sender of email"
+msgstr "Methwyd anfon ebost"
+
+#: main.cpp:82
+#, fuzzy
+msgid "Interval between alarm repetitions"
+msgstr "Cyfnod rhwng ail-ddigwyddiadau'r larwm"
+
+#: main.cpp:84
+msgid "Show alarm as an event in KOrganizer"
+msgstr ""
+
+#: main.cpp:86
+#, fuzzy
+msgid "Cancel alarm if more than 'period' late when triggered"
+msgstr "Diddymu'r larwm os na ellir ei achosi ar amser"
+
+#: main.cpp:87
+#, fuzzy
+#| msgid "List of scheduled alarms"
+msgid "Output list of scheduled alarms to stdout"
+msgstr "Rhestr larymau trefnlenedig"
+
+#: main.cpp:89
+msgid "Repeat alarm at every login"
+msgstr "Ailadrodd y larwm ar bob mewngofnod"
+
+#: main.cpp:91
+msgid "Send an email to the given address (repeat as needed)"
+msgstr "Anfon ebost at y cyfeiriad a roddwyd (ailadroddwch fel bo angen)"
+
+#: main.cpp:93
+#, fuzzy
+msgid "Audio file to play once"
+msgstr "Ffeil sain i'w chanu"
+
+#: main.cpp:95
+#, fuzzy
+msgid "Audio file to play repeatedly"
+msgstr "Ffeil sain i'w chanu"
+
+#: main.cpp:96
+msgid "Specify alarm recurrence using iCalendar syntax"
+msgstr "Penodi ail-ddigwydd y larwm yng nghystrawen iCalendar"
+
+#: main.cpp:98
+#, fuzzy
+#| msgid "Display reminder in advance of alarm"
+msgid "Display reminder before or after alarm"
+msgstr "Dangos atgof cyn y larwm"
+
+#: main.cpp:99
+#, fuzzy
+msgid "Display reminder once, before or after first alarm recurrence"
+msgstr "Dangos atgof cyn y larwm"
+
+#: main.cpp:101
+#, fuzzy
+msgid "Number of times to repeat alarm (including initial occasion)"
+msgstr "Sawl gwaith i ailadrodd y larwm (wedi'r amser cyntaf)"
+
+#: main.cpp:103
+#, fuzzy
+msgid "Speak the message when it is displayed"
+msgstr "Blîpio pan ddengys y neges"
+
+#: main.cpp:105
+msgid "Email subject line"
+msgstr "Llinell bwnc ebost"
+
+#: main.cpp:107
+#, fuzzy
+msgid "Simulate system time [[[yyyy-]mm-]dd-]hh:mm [TZ] (debug mode)"
+msgstr "Ailadrodd tan amser [[[bbbb-]mm-]dd]aa:mm, neu ddyddiad bbbb-mm-dd"
+
+#: main.cpp:110
+#, fuzzy
+msgid ""
+"Trigger alarm at time [[[yyyy-]mm-]dd-]hh:mm [TZ], or date yyyy-mm-dd [TZ]"
+msgstr "Achosi larwm ar amser [[[bbbb-]mm-]dd]aa:mm, neu ddyddiad bbbb-mm-dd"
+
+#: main.cpp:111
+msgid "Display system tray icon"
+msgstr "Dangos eicon gafn gysawd"
+
+#: main.cpp:112
+msgid "Trigger alarm with the specified event ID"
+msgstr "Achosi larwm â'r dynodiad digwyddiad penodedig"
+
+#: main.cpp:114
+#, fuzzy
+msgid "Repeat until time [[[yyyy-]mm-]dd-]hh:mm [TZ], or date yyyy-mm-dd [TZ]"
+msgstr "Ailadrodd tan amser [[[bbbb-]mm-]dd]aa:mm, neu ddyddiad bbbb-mm-dd"
+
+#: main.cpp:116
+msgid "Volume to play audio file"
+msgstr ""
+
+#: main.cpp:117
+msgid "Message text to display"
+msgstr "Testun neges i'w ddangos"
+
+#: mainwindow.cpp:126
+#, fuzzy
+#| msgid "Show &Alarm Times"
+msgctxt "@action"
+msgid "Show &Alarm Times"
+msgstr "Dangos Amserau &Larwm"
+
+#: mainwindow.cpp:127
+#, fuzzy
+msgctxt "@option:check"
+msgid "Show alarm time"
+msgstr "Dan&gos amser y larwm"
+
+#: mainwindow.cpp:128
+#, fuzzy
+#| msgid "Show Time t&o Alarms"
+msgctxt "@action"
+msgid "Show Time t&o Alarms"
+msgstr "Dangos A&mser i Larymau"
+
+#: mainwindow.cpp:129
+#, fuzzy
+#| msgid "Show time u&ntil alarm"
+msgctxt "@option:check"
+msgid "Show time until alarm"
+msgstr "Dangos amser &tan y larwm."
+
+#: mainwindow.cpp:437
+#, fuzzy, kde-format
+#| msgid ""
+#| "Failed to save calendar to\n"
+#| "'%1'"
+msgctxt "@info"
+msgid ""
+"Failure to create menus (perhaps <filename>%1</filename> missing or "
+"corrupted)"
+msgstr ""
+"Methu cadw'r calendr i\n"
+" '%1'"
+
+#: mainwindow.cpp:458
+#, fuzzy
+#| msgid "&Templates..."
+msgctxt "@action"
+msgid "&Templates..."
+msgstr "&Patrymluniau ..."
+
+#: mainwindow.cpp:462
+#, fuzzy
+#| msgid "&New..."
+msgctxt "@action"
+msgid "&New"
+msgstr "&Newydd..."
+
+#: mainwindow.cpp:489
+#, fuzzy
+#| msgid "Load Template..."
+msgctxt "@action"
+msgid "Create Tem&plate..."
+msgstr "Llwytho Patrymlun ..."
+
+#: mainwindow.cpp:493
+#, fuzzy
+#| msgid "&Copy..."
+msgctxt "@action"
+msgid "&Copy..."
+msgstr "&Copïo..."
+
+#: mainwindow.cpp:498 resourceselector.cpp:518
+#, fuzzy
+#| msgid "&Edit..."
+msgctxt "@action"
+msgid "&Edit..."
+msgstr "&Golygu..."
+
+#: mainwindow.cpp:503
+#, fuzzy
+msgctxt "@action"
+msgid "&Delete"
+msgstr "Dileu Larwm"
+
+#: mainwindow.cpp:509
+#, fuzzy
+msgctxt "@action"
+msgid "Delete Without Confirmation"
+msgstr "Ffurfwedd Larwm"
+
+#: mainwindow.cpp:514
+#, fuzzy
+msgctxt "@action"
+msgid "Reac&tivate"
+msgstr "Gweithredoli %1"
+
+#: mainwindow.cpp:524
+msgctxt "@action"
+msgid "Wake From Suspend..."
+msgstr ""
+
+#: mainwindow.cpp:541
+#, fuzzy
+msgctxt "@action"
+msgid "Show Archi&ved Alarms"
+msgstr "Dangos Larymau Darfodedig"
+
+#: mainwindow.cpp:546
+#, fuzzy
+#| msgid "Show in System &Tray"
+msgctxt "@action"
+msgid "Show in System &Tray"
+msgstr "Dangos yng &Nghafn y Cysawd"
+
+#: mainwindow.cpp:550
+#, fuzzy
+msgctxt "@action"
+msgid "Show &Calendars"
+msgstr "URL y ffeil galendr"
+
+#: mainwindow.cpp:558
+#, fuzzy
+msgctxt "@action"
+msgid "Import &Alarms..."
+msgstr "Mewnforio &Penblwyddi..."
+
+#: mainwindow.cpp:562
+#, fuzzy
+#| msgid "Import &Birthdays..."
+msgctxt "@action"
+msgid "Import &Birthdays..."
+msgstr "Mewnforio &Penblwyddi..."
+
+#: mainwindow.cpp:566
+#, fuzzy
+msgctxt "@action"
+msgid "E&xport Selected Alarms..."
+msgstr "Mewnforio &Penblwyddi..."
+
+#: mainwindow.cpp:570 resourceselector.cpp:538
+#, fuzzy
+msgctxt "@action"
+msgid "E&xport..."
+msgstr "Mewnforio &Penblwyddi..."
+
+#: mainwindow.cpp:574
+#, fuzzy
+#| msgid "&Refresh Alarms"
+msgctxt "@action"
+msgid "&Refresh Alarms"
+msgstr "Ail&fywio Larymau"
+
+#: mainwindow.cpp:829
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "Do you really want to delete the selected alarm?"
+msgid_plural "Do you really want to delete the %1 selected alarms?"
+msgstr[0] "A ydych wir am ddileu'r larwm dewisiedig?"
+msgstr[1] " A ydych wir am ddileu'r %1 lawrm dewisiedig?"
+
+#: mainwindow.cpp:831
+#, fuzzy
+#| msgid "Delete Alarm"
+#| msgid_plural "Delete Alarms"
+msgctxt "@title:window"
+msgid "Delete Alarm"
+msgid_plural "Delete Alarms"
+msgstr[0] "Dileu Larwm"
+msgstr[1] " Dileu Larymau"
+
+#: mainwindow.cpp:832 templatedlg.cpp:214
+#, fuzzy
+msgctxt "@action:button"
+msgid "&Delete"
+msgstr "Dileu Larwm"
+
+#: mainwindow.cpp:976
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "Hide Archived Alarms"
+msgstr "Larymau Darfodedig"
+
+#: mainwindow.cpp:977
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "Show Archived Alarms"
+msgstr "Dangos Larymau Darfodedig"
+
+#: mainwindow.cpp:1064
+#, fuzzy
+msgctxt "@info"
+msgid "Import birthdays"
+msgstr "Mewnforio &Penblwyddi..."
+
+#: mainwindow.cpp:1234
+#, fuzzy, kde-format
+#| msgctxt "Hours and Minutes"
+#| msgid "%1H %2M"
+msgctxt "@action Undo/Redo [action]"
+msgid "%1 %2"
+msgstr "%1A %2M"
+
+#: mainwindow.cpp:1235
+#, fuzzy, kde-format
+#| msgctxt "prefix + hours:minutes"
+#| msgid "%1%2:%3"
+msgctxt "@action Undo [action]: message"
+msgid "%1 %2: %3"
+msgstr "%1%2:%3"
+
+#: mainwindow.cpp:1521
+#, fuzzy
+msgctxt "@item:inlistbox"
+msgid "Display Alarm"
+msgstr "Larymau Ebost"
+
+#: mainwindow.cpp:1523
+#, fuzzy
+#| msgid "Email Alarms"
+msgctxt "@item:inlistbox"
+msgid "Email Alarm"
+msgstr "Larymau Ebost"
+
+#: mainwindow.cpp:1525
+#, fuzzy
+msgctxt "@item:inlistbox"
+msgid "Command Alarm"
+msgstr "Larymau Ebost"
+
+#: mainwindow.cpp:1527
+#, fuzzy
+msgctxt "@title:window"
+msgid "Alarm Type"
+msgstr "Rhestr Larwm"
+
+#: mainwindow.cpp:1528
+#, fuzzy
+msgctxt "@info"
+msgid "Choose alarm type to create:"
+msgstr "Dangos Amserau &Larwm"
+
+#: mainwindow.cpp:1681
+#, fuzzy
+#| msgid "Ena&ble"
+msgctxt "@action"
+msgid "Ena&ble"
+msgstr "Gal&luogi"
+
+#: mainwindow.cpp:1681
+#, fuzzy
+#| msgid "Disa&ble"
+msgctxt "@action"
+msgid "Disa&ble"
+msgstr "Anal&luogi"
+
+#: messagewin.cpp:438
+#, fuzzy
+#| msgid "Reminder"
+msgctxt "@title:window"
+msgid "Reminder"
+msgstr "Atgof"
+
+#: messagewin.cpp:438 messagewin.cpp:861
+#, fuzzy
+#| msgid "Message"
+msgctxt "@title:window"
+msgid "Message"
+msgstr "Neges"
+
+#: messagewin.cpp:456
+#, fuzzy
+#| msgid ""
+#| "The scheduled date/time for the message (as opposed to the actual time of "
+#| "display)."
+msgctxt "@info:whatsthis"
+msgid ""
+"The scheduled date/time for the message (as opposed to the actual time of "
+"display)."
+msgstr ""
+"Amser/dyddiad trefnlenedig y neges (yn hytrach na'r gwir amser pan ei dengys)"
+
+#: messagewin.cpp:463
+#, fuzzy
+#| msgid "Reminder"
+msgctxt "@info"
+msgid "Reminder"
+msgstr "Atgof"
+
+#: messagewin.cpp:487
+#, fuzzy
+#| msgid "The file whose contents are displayed below"
+msgctxt "@info:whatsthis"
+msgid "The file whose contents are displayed below"
+msgstr "Y ffeil y dengys ei chynnwys isod"
+
+#: messagewin.cpp:543
+#, fuzzy
+#| msgid "The contents of the file to be displayed"
+msgctxt "@info:whatsthis"
+msgid "The contents of the file to be displayed"
+msgstr "Cynnwys y ffeil i'w dangos"
+
+#: messagewin.cpp:551
+#, fuzzy
+#| msgid "File is a folder"
+msgctxt "@info"
+msgid "File is a folder"
+msgstr "Plygell yw'r ffeil"
+
+#: messagewin.cpp:551
+#, fuzzy
+#| msgid "Failed to open file"
+msgctxt "@info"
+msgid "Failed to open file"
+msgstr "Methwyd agor y ffeil"
+
+#: messagewin.cpp:551
+#, fuzzy
+#| msgid "File not found"
+msgctxt "@info"
+msgid "File not found"
+msgstr "Ni chanfuwyd y ffeil"
+
+#: messagewin.cpp:571
+#, fuzzy
+#| msgid "The alarm message"
+msgctxt "@info:whatsthis"
+msgid "The alarm message"
+msgstr "Y neges larwm"
+
+#: messagewin.cpp:598
+msgctxt "@info:whatsthis"
+msgid "The output of the alarm's command"
+msgstr ""
+
+#: messagewin.cpp:640
+#, fuzzy
+#| msgid "The email to send"
+msgctxt "@info:whatsthis"
+msgid "The email to send"
+msgstr "Yr ebost i'w anfon"
+
+#: messagewin.cpp:646
+#, fuzzy
+#| msgctxt "Email addressee"
+#| msgid "To:"
+msgctxt "@info Email addressee"
+msgid "To:"
+msgstr "I:"
+
+#: messagewin.cpp:653
+#, fuzzy
+#| msgctxt "Email subject"
+#| msgid "Subject:"
+msgctxt "@info Email subject"
+msgid "Subject:"
+msgstr "Pwnc:"
+
+#: messagewin.cpp:679
+msgctxt "@title:window"
+msgid "Error"
+msgstr ""
+
+#: messagewin.cpp:699
+msgctxt "@option:check"
+msgid "Do not display this error message again for this alarm"
+msgstr ""
+
+#: messagewin.cpp:718
+#, fuzzy
+#| msgid "Acknowledge the alarm"
+msgctxt "@info:whatsthis"
+msgid "Acknowledge the alarm"
+msgstr "Cydnabod y larwm"
+
+#: messagewin.cpp:723
+#, fuzzy
+#| msgid "&Edit..."
+msgctxt "@action:button"
+msgid "&Edit..."
+msgstr "&Golygu..."
+
+#: messagewin.cpp:728
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Edit the alarm."
+msgstr "Golygu Larwm"
+
+#: messagewin.cpp:732
+#, fuzzy
+#| msgid "&Defer..."
+msgctxt "@action:button"
+msgid "&Defer..."
+msgstr "&Gohirio..."
+
+#: messagewin.cpp:737
+#, fuzzy
+#| msgid ""
+#| "Defer the alarm until later.\n"
+#| "You will be prompted to specify when the alarm should be redisplayed."
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Defer the alarm until later.</para><para>You will be prompted to "
+"specify when the alarm should be redisplayed.</para>"
+msgstr ""
+"Gohirio'r larwm tan nes ymlaen.\n"
+" Fe'ch anogir i benodi pryd dylid ailddangos y larwm."
+
+#: messagewin.cpp:767
+#, fuzzy
+#| msgid "An email has been queued to be sent by KMail"
+msgctxt "@info:tooltip Locate this email in KMail"
+msgid "Locate in <application>KMail</application>"
+msgstr "Rhoddwyd ebost yn y rhes i'w anfon gan KMail"
+
+#: messagewin.cpp:768
+msgctxt "@info:whatsthis"
+msgid "Locate and highlight this email in <application>KMail</application>"
+msgstr ""
+
+#: messagewin.cpp:777
+msgctxt "@info:tooltip"
+msgid "Activate <application>KAlarm</application>"
+msgstr ""
+
+#: messagewin.cpp:778
+msgctxt "@info:whatsthis"
+msgid "Activate <application>KAlarm</application>"
+msgstr ""
+
+#: messagewin.cpp:938
+#, fuzzy
+#| msgid "Today"
+msgctxt "@info"
+msgid "Today"
+msgstr "Heddiw"
+
+#: messagewin.cpp:940
+#, kde-format
+msgctxt "@info"
+msgid "Tomorrow"
+msgid_plural "in %1 days' time"
+msgstr[0] ""
+msgstr[1] ""
+
+#: messagewin.cpp:942
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "in 1 week's time"
+msgid_plural "in %1 weeks' time"
+msgstr[0] "1 Funud"
+msgstr[1] "%1 o Funudau:"
+
+#: messagewin.cpp:956
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "in 1 minute's time"
+msgid_plural "in %1 minutes' time"
+msgstr[0] "1 Funud"
+msgstr[1] "%1 o Funudau:"
+
+#: messagewin.cpp:958
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "in 1 hour's time"
+msgid_plural "in %1 hours' time"
+msgstr[0] "1 Funud"
+msgstr[1] "%1 o Funudau:"
+
+#: messagewin.cpp:961
+#, fuzzy, kde-format
+msgctxt "@item:intext inserted into 'in ... %1 minute's time' below"
+msgid "1 hour"
+msgid_plural "%1 hours"
+msgstr[0] "1 Awr"
+msgstr[1] " %1 o Oriau"
+
+#: messagewin.cpp:962
+#, fuzzy, kde-format
+msgctxt "@info '%2' is the previous message '1 hour'/'%1 hours'"
+msgid "in %2 1 minute's time"
+msgid_plural "in %2 %1 minutes' time"
+msgstr[0] "1 Funud"
+msgstr[1] "%1 o Funudau:"
+
+#: messagewin.cpp:1464 messagewin.cpp:1474
+#, fuzzy
+msgctxt "@info"
+msgid "Unable to speak message"
+msgstr "Methu agor y llyfr cyfeiriadau"
+
+#: messagewin.cpp:1474
+msgctxt "@info"
+msgid "D-Bus call say() failed"
+msgstr ""
+
+#: messagewin.cpp:1617
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "Cannot open audio file: <filename>%1</filename>"
+msgstr ""
+"Methu agor y calendr:\n"
+" %1"
+
+#: messagewin.cpp:1715
+#, fuzzy, kde-format
+#| msgid ""
+#| "Error attaching file:\n"
+#| "%1"
+msgctxt "@info"
+msgid ""
+"<para>Error playing audio file: <filename>%1</filename></para><para>%2</para>"
+msgstr ""
+"Gwall wrth atodi ffeil:\n"
+"%1"
+
+#: messagewin.cpp:2044
+#, fuzzy
+#| msgid "Do you really want to acknowledge this alarm?"
+msgctxt "@info"
+msgid "Do you really want to acknowledge this alarm?"
+msgstr "A ydych wir am gydnabod y larwm yma?"
+
+#: messagewin.cpp:2045
+#, fuzzy
+#| msgid "Acknowledge Alarm"
+msgctxt "@action:button"
+msgid "Acknowledge Alarm"
+msgstr "Cydnabod Larwm"
+
+#: messagewin.cpp:2045
+#, fuzzy
+#| msgid "&Acknowledge"
+msgctxt "@action:button"
+msgid "Acknowledge"
+msgstr "&Cydnabod"
+
+#: messagewin.cpp:2096
+msgctxt "@info"
+msgid "Unable to locate this email in <application>KMail</application>"
+msgstr ""
+
+#: messagewin.cpp:2266
+msgctxt "@info"
+msgid "<para>Cannot defer alarm:</para><para>Alarm not found.</para>"
+msgstr ""
+
+#: kalarmapp.cpp:346
+#, kde-format
+msgctxt "@info:shell"
+msgid "%1: Event <resource>%2</resource> not found, or not unique"
+msgstr ""
+
+#: kalarmapp.cpp:348
+#, fuzzy, kde-format
+msgctxt "@info:shell"
+msgid "%1: Event <resource>%2</resource> not found"
+msgstr "Gweld Gosodiadau"
+
+#: kalarmapp.cpp:376 kalarmapp.cpp:378
+#, kde-format
+msgctxt "@info:shell"
+msgid "%1: Event <resource>%2</resource> not found, or not editable"
+msgstr ""
+
+#: kalarmapp.cpp:557
+msgctxt "@info"
+msgid ""
+"Time zones are not accessible:<nl/>KAlarm will use the UTC time zone.<nl/"
+"><nl/>(The KDE time zone service is not available:<nl/>check that "
+"<application>ktimezoned</application> is installed.)"
+msgstr ""
+
+#: kalarmapp.cpp:634
+#, fuzzy
+#| msgid ""
+#| "Quitting will disable alarms\n"
+#| "(once any alarm message windows are closed)."
+msgctxt "@info"
+msgid ""
+"Quitting will disable alarms (once any alarm message windows are closed)."
+msgstr ""
+"Bydd cau'n analluogi larymau\n"
+" (unwaith y ceuir unrhwy ffenestri neges larwm)."
+
+#: kalarmapp.cpp:642
+msgctxt "@info"
+msgid "Quitting will cancel the scheduled Wake from Suspend."
+msgstr ""
+
+#: kalarmapp.cpp:654
+msgctxt "@info"
+msgid ""
+"Do you want to start KAlarm at login?<nl/>(Note that alarms will be disabled "
+"if KAlarm is not started.)"
+msgstr ""
+
+#: kalarmapp.cpp:2126
+#, fuzzy
+msgctxt "@info"
+msgid "Error creating temporary script file"
+msgstr "Gwall wrth galw KMail"
+
+#: kalarmapp.cpp:2214
+#, fuzzy
+msgctxt "@info"
+msgid "Pre-alarm action:"
+msgstr "Gosodiadau Larwm Ebost"
+
+#: kalarmapp.cpp:2220
+#, fuzzy
+msgctxt "@info"
+msgid "Post-alarm action:"
+msgstr "Gosodiadau Larwm Ebost"
+
+#: newalarmaction.cpp:59
+#, fuzzy
+msgctxt "@item:inmenu"
+msgid "&Display Alarm Template"
+msgstr "Dileu Larwm"
+
+#: newalarmaction.cpp:59
+#, fuzzy
+msgctxt "@action"
+msgid "New Display Alarm"
+msgstr "Larymau Ebost"
+
+#: newalarmaction.cpp:62
+#, fuzzy
+msgctxt "@item:inmenu"
+msgid "&Command Alarm Template"
+msgstr "Dangos Amserau &Larwm"
+
+#: newalarmaction.cpp:62
+#, fuzzy
+msgctxt "@action"
+msgid "New Command Alarm"
+msgstr "Larymau Ebost"
+
+#: newalarmaction.cpp:65
+#, fuzzy
+msgctxt "@item:inmenu"
+msgid "&Email Alarm Template"
+msgstr "Golygu Larwm"
+
+#: newalarmaction.cpp:65
+#, fuzzy
+#| msgid "Email Alarms"
+msgctxt "@action"
+msgid "New Email Alarm"
+msgstr "Larymau Ebost"
+
+#: newalarmaction.cpp:68
+#, fuzzy
+msgctxt "@item:inmenu"
+msgid "&Audio Alarm Template"
+msgstr "Golygu Larwm"
+
+#: newalarmaction.cpp:68
+#, fuzzy
+#| msgid "Email Alarms"
+msgctxt "@action"
+msgid "New Audio Alarm"
+msgstr "Larymau Ebost"
+
+#: newalarmaction.cpp:79
+#, fuzzy
+msgctxt "@action"
+msgid "New Alarm From &Template"
+msgstr "Larwm Newydd"
+
+#: reminder.cpp:49
+#, fuzzy
+msgctxt "@option:check"
+msgid "Reminder for first recurrence only"
+msgstr "Rhaid i'r adeg atgof fod yn fyrach na'r cyfnod ail-ddigwydd"
+
+#: reminder.cpp:51
+#, fuzzy
+#| msgid "in advance"
+msgctxt "@item:inlistbox"
+msgid "in advance"
+msgstr "o flaen llaw"
+
+#: reminder.cpp:65
+#, fuzzy
+#| msgid "Rem&inder:"
+msgctxt "@option:check"
+msgid "Reminder:"
+msgstr "&Atgof:"
+
+#: reminder.cpp:69
+msgctxt "@item:inlistbox"
+msgid "afterwards"
+msgstr ""
+
+#: reminder.cpp:91
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Display the reminder only for the first time the alarm is scheduled"
+msgstr "Dangos atgof cyn y larwm"
+
+#: recurrenceedit.cpp:81
+#, fuzzy
+#| msgid "No Recurrence"
+msgctxt "@item:inlistbox Recurrence type"
+msgid "No Recurrence"
+msgstr "Dim Ailddigwydd"
+
+#: recurrenceedit.cpp:82
+#, fuzzy
+#| msgid "At Login"
+msgctxt "@item:inlistbox Recurrence type"
+msgid "At Login"
+msgstr "Ar Fewngofnodi"
+
+#: recurrenceedit.cpp:83
+#, fuzzy
+#| msgid "Hourly/Minutely"
+msgctxt "@item:inlistbox Recurrence type"
+msgid "Hourly/Minutely"
+msgstr "Awrol/Munudol"
+
+#: recurrenceedit.cpp:84
+#, fuzzy
+#| msgid "Daily"
+msgctxt "@item:inlistbox Recurrence type"
+msgid "Daily"
+msgstr "Dyddiol"
+
+#: recurrenceedit.cpp:85
+#, fuzzy
+#| msgid "Weekly"
+msgctxt "@item:inlistbox Recurrence type"
+msgid "Weekly"
+msgstr "Wythnosol"
+
+#: recurrenceedit.cpp:86
+#, fuzzy
+#| msgid "Monthly"
+msgctxt "@item:inlistbox Recurrence type"
+msgid "Monthly"
+msgstr "Misol"
+
+#: recurrenceedit.cpp:87
+#, fuzzy
+#| msgid "Yearly"
+msgctxt "@item:inlistbox Recurrence type"
+msgid "Yearly"
+msgstr "Blynyddol"
+
+#: recurrenceedit.cpp:113
+#, fuzzy
+#| msgid "Recurrence Rule"
+msgctxt "@title:group"
+msgid "Recurrence Rule"
+msgstr "Rheol Ailddigwydd"
+
+#: recurrenceedit.cpp:131
+#, fuzzy
+#| msgid "Do not repeat the alarm"
+msgctxt "@info:whatsthis"
+msgid "Do not repeat the alarm"
+msgstr "Peidio ac ailadrodd y larwm"
+
+#: recurrenceedit.cpp:139
+#, fuzzy
+#| msgid ""
+#| "Trigger the alarm at the specified date/time and at every login until "
+#| "then.\n"
+#| "Note that it will also be triggered any time the alarm daemon is "
+#| "restarted."
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Trigger the alarm at the specified date/time and at every login until "
+"then.</para><para>Note that it will also be triggered any time "
+"<application>KAlarm</application> is restarted.</para>"
+msgstr ""
+"Achosi'r larwm ar y dyddiad/amser penodedig, ac ar bob fewngofnod tan "
+"hynny.\n"
+" Noder y'i achosir ar unrhyw adeg y caiff yr ellyll larymau ei ailgychwyn."
+
+#: recurrenceedit.cpp:147
+#, fuzzy
+#| msgid "Repeat the alarm at hourly/minutely intervals"
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm at hourly/minutely intervals"
+msgstr "Ailadrodd y larwm ar gyfnodau awrol/munudol"
+
+#: recurrenceedit.cpp:154
+#, fuzzy
+#| msgid "Repeat the alarm at daily intervals"
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm at daily intervals"
+msgstr "Ailadrodd y larwm yn ddyddiol"
+
+#: recurrenceedit.cpp:161
+#, fuzzy
+#| msgid "Repeat the alarm at weekly intervals"
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm at weekly intervals"
+msgstr "Ailadrodd y larwm yn wythnosol"
+
+#: recurrenceedit.cpp:168
+#, fuzzy
+#| msgid "Repeat the alarm at monthly intervals"
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm at monthly intervals"
+msgstr "Ailadrodd y larwm yn fisol"
+
+#: recurrenceedit.cpp:175
+#, fuzzy
+#| msgid "Repeat the alarm at annual intervals"
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm at annual intervals"
+msgstr "Ailadrodd y larwm yn flynyddol"
+
+#: recurrenceedit.cpp:185
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid ""
+"Set up a repetition within the recurrence, to trigger the alarm multiple "
+"times each time the recurrence is due."
+msgstr "Rhaid i'r adeg atgof fod yn fyrach na'r cyfnod ail-ddigwydd"
+
+#: recurrenceedit.cpp:233
+#, fuzzy
+#| msgid "Recurrence End"
+msgctxt "@title:group"
+msgid "Recurrence End"
+msgstr "Diwedd Ailddigwydd"
+
+#: recurrenceedit.cpp:242
+#, fuzzy
+#| msgid "No &end"
+msgctxt "@option:radio"
+msgid "No end"
+msgstr "Dim &diwedd"
+
+#: recurrenceedit.cpp:245
+#, fuzzy
+#| msgid "Repeat the alarm indefinitely"
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm indefinitely"
+msgstr "Ailadrodd y larwm am byth"
+
+#: recurrenceedit.cpp:253
+#, fuzzy
+#| msgid "End a&fter:"
+msgctxt "@option:radio"
+msgid "End after:"
+msgstr "Gor&ffen wedi:"
+
+#: recurrenceedit.cpp:255
+#, fuzzy
+#| msgid "Repeat the alarm for the number of times specified"
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm for the number of times specified"
+msgstr "Ailadrodd y larwm am y nifer penodedig o achosion"
+
+#: recurrenceedit.cpp:262
+#, fuzzy
+#| msgid "Enter the total number of times to trigger the alarm"
+msgctxt "@info:whatsthis"
+msgid "Enter the total number of times to trigger the alarm"
+msgstr "Rhowch gyfanswm nifer yr adegau i achosi'r larwm"
+
+#: recurrenceedit.cpp:266
+#, fuzzy
+#| msgid "occurrence(s)"
+msgctxt "@label"
+msgid "occurrence(s)"
+msgstr "achosiad"
+
+#: recurrenceedit.cpp:278
+#, fuzzy
+#| msgid "End &by:"
+msgctxt "@option:radio"
+msgid "End by:"
+msgstr "Gorffen er&byn:"
+
+#: recurrenceedit.cpp:281
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Repeat the alarm until the date/time specified.</para><para><note>This "
+"applies to the main recurrence only. It does not limit any sub-repetition "
+"which will occur regardless after the last main recurrence.</note></para>"
+msgstr ""
+
+#: recurrenceedit.cpp:286
+msgctxt "@info/plain"
+msgid "This uses the same time zone as the start time."
+msgstr ""
+
+#: recurrenceedit.cpp:288
+#, fuzzy, kde-format
+msgctxt "@info:whatsthis"
+msgid "<para>Enter the last date to repeat the alarm.</para><para>%1</para>"
+msgstr "Rhowch y dyddiad olaf i ailadrodd y larwm"
+
+#: recurrenceedit.cpp:295
+#, fuzzy, kde-format
+#| msgid "Enter the last time to repeat the alarm."
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Enter the last time to repeat the alarm.</para><para>%1</para><para>"
+"%2</para>"
+msgstr "Rhowch yr amser olaf i ailadrodd y larwm."
+
+#: recurrenceedit.cpp:300
+#, fuzzy
+#| msgid ""
+#| "Stop repeating the alarm after your first login on or after the specified "
+#| "end date"
+msgctxt "@info:whatsthis"
+msgid ""
+"Stop repeating the alarm after your first login on or after the specified "
+"end date"
+msgstr ""
+"Peidio ailadrodd y larwm wedi'ch mewngofnod cyntaf ar neu wedi'r dyddiad "
+"gorffen penodedig"
+
+#: recurrenceedit.cpp:318
+#, fuzzy
+#| msgid "E&xceptions"
+msgctxt "@title:group"
+msgid "Exceptions"
+msgstr "&Eithriadau"
+
+#: recurrenceedit.cpp:329
+#, fuzzy
+#| msgid ""
+#| "The list of exceptions, i.e. dates/times excluded from the recurrence"
+msgctxt "@info:whatsthis"
+msgid "The list of exceptions, i.e. dates/times excluded from the recurrence"
+msgstr ""
+"Y rhestr eithriadau, h.y. dyddiadau/amseroedd a eithrir o'r ail-ddigwyddiad"
+
+#: recurrenceedit.cpp:348
+#, fuzzy
+#| msgid ""
+#| "Enter a date to insert in the exceptions list. Use in conjunction with "
+#| "the Add or Change button below."
+msgctxt "@info:whatsthis"
+msgid ""
+"Enter a date to insert in the exceptions list. Use in conjunction with the "
+"Add or Change button below."
+msgstr ""
+"Rhowch ddyddiad i'w fewnosod yn y rhestr eithriadau.  Defnyddiwch ynghyd â'r "
+"botwm Ychwanegu neu Newid isod."
+
+#: recurrenceedit.cpp:355
+#, fuzzy
+msgctxt "@action:button"
+msgid "Add"
+msgstr "Ychwanegu..."
+
+#: recurrenceedit.cpp:356
+#, fuzzy
+#| msgid "Add the date entered above to the exceptions list"
+msgctxt "@info:whatsthis"
+msgid "Add the date entered above to the exceptions list"
+msgstr "Ychwanegu'r dyddiad a fewnosodwyd uchod i'r rhestr eithriadau"
+
+#: recurrenceedit.cpp:360
+#, fuzzy
+msgctxt "@action:button"
+msgid "Change"
+msgstr "&Newid..."
+
+#: recurrenceedit.cpp:362
+#, fuzzy
+#| msgid ""
+#| "Replace the currently highlighted item in the exceptions list with the "
+#| "date entered above"
+msgctxt "@info:whatsthis"
+msgid ""
+"Replace the currently highlighted item in the exceptions list with the date "
+"entered above"
+msgstr ""
+"Amnewid yr eitem sy'n amlygedig ar hyn o bryd yn y rhestr eithriadau efo'r "
+"dyddiad a fewnosodwyd uchod"
+
+#: recurrenceedit.cpp:366 templatedlg.cpp:120
+#, fuzzy
+msgctxt "@action:button"
+msgid "Delete"
+msgstr "Dileu Larwm"
+
+#: recurrenceedit.cpp:367
+#, fuzzy
+#| msgid "Remove the currently highlighted item from the exceptions list"
+msgctxt "@info:whatsthis"
+msgid "Remove the currently highlighted item from the exceptions list"
+msgstr "Gwaredu'r eitem sy'n amlygedig ar hyn o bryd o'r rhestr eithriadau"
+
+#: recurrenceedit.cpp:374
+msgctxt "@option:check"
+msgid "Exclude holidays"
+msgstr ""
+
+#: recurrenceedit.cpp:377
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Do not trigger the alarm on holidays.</para><para>You can specify your "
+"holiday region in the Configuration dialog.</para>"
+msgstr ""
+
+#: recurrenceedit.cpp:382
+msgctxt "@option:check"
+msgid "Only during working time"
+msgstr ""
+
+#: recurrenceedit.cpp:385
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Only execute the alarm during working hours, on working days.</"
+"para><para>You can specify working days and hours in the Configuration "
+"dialog.</para>"
+msgstr ""
+
+#: recurrenceedit.cpp:428
+#, fuzzy
+#| msgid "End date is earlier than start date"
+msgctxt "@info"
+msgid "End date is earlier than start date"
+msgstr "Mae'r dyddiad gorffen cyn y dyddiad dechrau"
+
+#: recurrenceedit.cpp:429
+#, fuzzy
+#| msgid "End date/time is earlier than start date/time"
+msgctxt "@info"
+msgid "End date/time is earlier than start date/time"
+msgstr "Mae'r dyddiad/amser gorffen cyn y dyddiad/amser dechrau"
+
+#: recurrenceedit.cpp:699
+#, fuzzy
+#| msgid "Date cannot be earlier than %1"
+msgctxt "@info"
+msgid "Date cannot be earlier than start date"
+msgstr "Ni all y ddyddiad fod cyn %1"
+
+#: recurrenceedit.cpp:1114
+#, fuzzy
+#| msgid "Recur e&very"
+msgctxt "@label:spinbox"
+msgid "Recur e&very"
+msgstr "Ail-ddigwydd &pob"
+
+#: recurrenceedit.cpp:1183
+#, fuzzy
+#| msgid "hours:minutes"
+msgctxt "@label Time units for user-entered numbers"
+msgid "hours:minutes"
+msgstr "awr:munud"
+
+#: recurrenceedit.cpp:1184
+#, fuzzy
+#| msgid ""
+#| "Enter the number of hours and minutes between repetitions of the alarm"
+msgctxt "@info:whatsthis"
+msgid "Enter the number of hours and minutes between repetitions of the alarm"
+msgstr "Rhowch y nifer o oriau a munudau rhwng ailadroddion y larwm"
+
+#: recurrenceedit.cpp:1204
+#, fuzzy
+#| msgctxt "On: Tuesday"
+#| msgid "O&n:"
+msgctxt "@label On: Tuesday"
+msgid "O&n:"
+msgstr "A&r:"
+
+#: recurrenceedit.cpp:1285
+#, fuzzy
+#| msgid "No day selected"
+msgctxt "@info"
+msgid "No day selected"
+msgstr "Dim diwrnod wedi'i ddewis"
+
+#: recurrenceedit.cpp:1314
+#, fuzzy
+#| msgid "day(s)"
+msgctxt "@label Time unit for user-entered number"
+msgid "day(s)"
+msgstr "diwrnod"
+
+#: recurrenceedit.cpp:1315
+#, fuzzy
+#| msgid "Enter the number of days between repetitions of the alarm"
+msgctxt "@info:whatsthis"
+msgid "Enter the number of days between repetitions of the alarm"
+msgstr "Rhowch y nifer o ddiwrnodau rhwng ailadroddion y larwm"
+
+#: recurrenceedit.cpp:1316
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Select the days of the week on which the alarm is allowed to occur"
+msgstr "Dewiswch ddiwrnod yr wythnos i ailadrodd y larwm arni"
+
+#: recurrenceedit.cpp:1327
+#, fuzzy
+#| msgid "week(s)"
+msgctxt "@label Time unit for user-entered number"
+msgid "week(s)"
+msgstr "wythnos"
+
+#: recurrenceedit.cpp:1328
+#, fuzzy
+#| msgid "Enter the number of weeks between repetitions of the alarm"
+msgctxt "@info:whatsthis"
+msgid "Enter the number of weeks between repetitions of the alarm"
+msgstr "Rhowch y nifer o wythnosau rhwng ailadroddion y larwm"
+
+#: recurrenceedit.cpp:1329
+#, fuzzy
+#| msgid "Select the days of the week on which to repeat the alarm"
+msgctxt "@info:whatsthis"
+msgid "Select the days of the week on which to repeat the alarm"
+msgstr "Dewiswch ddiwrnod yr wythnos i ailadrodd y larwm arni"
+
+#: recurrenceedit.cpp:1352
+#, fuzzy
+msgctxt "@option:radio On day number in the month"
+msgid "O&n day"
+msgstr "Heddiw"
+
+#: recurrenceedit.cpp:1356
+#, fuzzy
+#| msgid "Repeat the alarm on the selected day of the month"
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm on the selected day of the month"
+msgstr "Ailadrodd y larwm ar y diwrnod dewisiedig o'r mis"
+
+#: recurrenceedit.cpp:1363
+#, fuzzy
+#| msgctxt "Last day of month"
+#| msgid "Last"
+msgctxt "@item:inlistbox Last day of month"
+msgid "Last"
+msgstr "Olaf"
+
+#: recurrenceedit.cpp:1366
+#, fuzzy
+#| msgid "Select the day of the month on which to repeat the alarm"
+msgctxt "@info:whatsthis"
+msgid "Select the day of the month on which to repeat the alarm"
+msgstr "Dewiswch ba ddiwrnod o'r mis i ailadrodd y larwm arno"
+
+#: recurrenceedit.cpp:1380
+#, fuzzy
+#| msgctxt "On the 1st Tuesday"
+#| msgid "On t&he"
+msgctxt "@option:radio On the 1st Tuesday"
+msgid "On t&he"
+msgstr "Ar &y"
+
+#: recurrenceedit.cpp:1384
+#, fuzzy
+#| msgid ""
+#| "Repeat the alarm on one day of the week, in the selected week of the month"
+msgctxt "@info:whatsthis"
+msgid ""
+"Repeat the alarm on one day of the week, in the selected week of the month"
+msgstr ""
+"Ailadrodd y larwm ar un diwrnod o'r wythnos, yn wythnos ddewisiedig y mis"
+
+#: recurrenceedit.cpp:1388
+#, fuzzy
+#| msgid "1st"
+msgctxt "@item:inlistbox"
+msgid "1st"
+msgstr "1af"
+
+#: recurrenceedit.cpp:1389
+#, fuzzy
+#| msgid "2nd"
+msgctxt "@item:inlistbox"
+msgid "2nd"
+msgstr "2il"
+
+#: recurrenceedit.cpp:1390
+#, fuzzy
+#| msgid "3rd"
+msgctxt "@item:inlistbox"
+msgid "3rd"
+msgstr "3ydd"
+
+#: recurrenceedit.cpp:1391
+#, fuzzy
+#| msgid "4th"
+msgctxt "@item:inlistbox"
+msgid "4th"
+msgstr "4ydd"
+
+#: recurrenceedit.cpp:1392
+#, fuzzy
+#| msgid "5th"
+msgctxt "@item:inlistbox"
+msgid "5th"
+msgstr "5ed"
+
+#: recurrenceedit.cpp:1393
+#, fuzzy
+#| msgctxt "Last day of month"
+#| msgid "Last"
+msgctxt "@item:inlistbox Last Monday in March"
+msgid "Last"
+msgstr "Olaf"
+
+#: recurrenceedit.cpp:1394
+#, fuzzy
+#| msgid "2nd Last"
+msgctxt "@item:inlistbox"
+msgid "2nd Last"
+msgstr "Ail Olaf"
+
+#: recurrenceedit.cpp:1395
+#, fuzzy
+#| msgid "3rd Last"
+msgctxt "@item:inlistbox"
+msgid "3rd Last"
+msgstr "Trydydd Olaf"
+
+#: recurrenceedit.cpp:1396
+#, fuzzy
+#| msgid "4th Last"
+msgctxt "@item:inlistbox"
+msgid "4th Last"
+msgstr "Pedwerydd Olaf"
+
+#: recurrenceedit.cpp:1397
+#, fuzzy
+#| msgid "5th Last"
+msgctxt "@item:inlistbox"
+msgid "5th Last"
+msgstr "Pumed Olaf"
+
+#: recurrenceedit.cpp:1400
+msgctxt "@item:inlistbox Every (Monday...) in month"
+msgid "Every"
+msgstr ""
+
+#: recurrenceedit.cpp:1403
+#, fuzzy
+#| msgid "Select the week of the month in which to repeat the alarm"
+msgctxt "@info:whatsthis"
+msgid "Select the week of the month in which to repeat the alarm"
+msgstr "Dewiswch wythnos o'r mis i ailadrodd y larwm ynddi"
+
+#: recurrenceedit.cpp:1418
+#, fuzzy
+#| msgid "Select the day of the week on which to repeat the alarm"
+msgctxt "@info:whatsthis"
+msgid "Select the day of the week on which to repeat the alarm"
+msgstr "Dewiswch ddiwrnod yr wythnos i ailadrodd y larwm arni"
+
+#: recurrenceedit.cpp:1541
+#, fuzzy
+#| msgid "month(s)"
+msgctxt "@label Time unit for user-entered number"
+msgid "month(s)"
+msgstr "mis"
+
+#: recurrenceedit.cpp:1542
+#, fuzzy
+#| msgid "Enter the number of months between repetitions of the alarm"
+msgctxt "@info:whatsthis"
+msgid "Enter the number of months between repetitions of the alarm"
+msgstr "Rhowch y nifer o fisoedd rhwng ailadroddion y larwm"
+
+#: recurrenceedit.cpp:1553
+#, fuzzy
+#| msgid "year(s)"
+msgctxt "@label Time unit for user-entered number"
+msgid "year(s)"
+msgstr "blwyddyn"
+
+#: recurrenceedit.cpp:1554
+#, fuzzy
+#| msgid "Enter the number of years between repetitions of the alarm"
+msgctxt "@info:whatsthis"
+msgid "Enter the number of years between repetitions of the alarm"
+msgstr "Rhowch y nifer o flynyddoedd rhwn ailadroddion y larwm"
+
+#: recurrenceedit.cpp:1561
+#, fuzzy
+#| msgid "Monthly"
+msgctxt "@label List of months to select"
+msgid "Months:"
+msgstr "Misol"
+
+#: recurrenceedit.cpp:1583
+#, fuzzy
+#| msgid "Select the months of the year in which to repeat the alarm"
+msgctxt "@info:whatsthis"
+msgid "Select the months of the year in which to repeat the alarm"
+msgstr "Dewiswch fis o'r flwyddyn i ailadrodd y larwm ynddi"
+
+#: recurrenceedit.cpp:1592
+msgctxt "@label:listbox"
+msgid "February 2&9th alarm in non-leap years:"
+msgstr ""
+
+#: recurrenceedit.cpp:1596
+#, fuzzy
+#| msgid "None"
+msgctxt "@item:inlistbox No date"
+msgid "None"
+msgstr "Dim"
+
+#: recurrenceedit.cpp:1597
+#, fuzzy
+msgctxt "@item:inlistbox 1st March (short form)"
+msgid "1 Mar"
+msgstr "1 Flwyddyn"
+
+#: recurrenceedit.cpp:1598
+msgctxt "@item:inlistbox 28th February (short form)"
+msgid "28 Feb"
+msgstr ""
+
+#: recurrenceedit.cpp:1604
+msgctxt "@info:whatsthis"
+msgid ""
+"Select which date, if any, the February 29th alarm should trigger in non-"
+"leap years"
+msgstr ""
+
+#: recurrenceedit.cpp:1688
+#, fuzzy
+#| msgid "No month selected"
+msgctxt "@info"
+msgid "No month selected"
+msgstr "Dim mis wedi'i ddewis"
+
+#: repetitionbutton.cpp:87
+#, fuzzy
+msgctxt "@title:window"
+msgid "Alarm Sub-Repetition"
+msgstr "Ffurfwedd Larwm"
+
+#: repetitionbutton.cpp:165
+#, fuzzy
+#| msgid "Repeat"
+msgctxt "@option:check Repeat every 10 minutes"
+msgid "Repeat every"
+msgstr "Ailadrodd"
+
+#: repetitionbutton.cpp:166
+msgctxt "@info:whatsthis"
+msgid ""
+"Instead of the alarm triggering just once at each recurrence, checking this "
+"option makes the alarm trigger multiple times at each recurrence."
+msgstr ""
+
+#: repetitionbutton.cpp:168
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Enter the time between repetitions of the alarm"
+msgstr "Rhowch y nifer o ddiwrnodau rhwng ailadroddion y larwm"
+
+#: repetitionbutton.cpp:186
+#, fuzzy
+msgctxt "@option:radio"
+msgid "Number of repetitions:"
+msgstr "Ffurfwedd Larwm"
+
+#: repetitionbutton.cpp:188
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid ""
+"Check to specify the number of times the alarm should repeat after each "
+"recurrence"
+msgstr "Rhowch gyfanswm nifer yr adegau i achosi'r larwm"
+
+#: repetitionbutton.cpp:196
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid ""
+"Enter the number of times to trigger the alarm after its initial occurrence"
+msgstr "Rhowch gyfanswm nifer yr adegau i achosi'r larwm"
+
+#: repetitionbutton.cpp:204
+#, fuzzy
+#| msgid "&Duration:"
+msgctxt "@option:radio"
+msgid "Duration:"
+msgstr "&Hyd:"
+
+#: repetitionbutton.cpp:206
+msgctxt "@info:whatsthis"
+msgid "Check to specify how long the alarm is to be repeated"
+msgstr ""
+
+#: repetitionbutton.cpp:212
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Enter the length of time to repeat the alarm"
+msgstr "Rhowch yr amser olaf i ailadrodd y larwm."
+
+#: resourceconfigdialog.cpp:48 resourceselector.cpp:238
+#, fuzzy
+#| msgid "Alarm Configuration"
+msgctxt "@title:window"
+msgid "Calendar Configuration"
+msgstr "Ffurfwedd Larwm"
+
+#: resourceconfigdialog.cpp:61
+#, fuzzy
+msgctxt "@title:group"
+msgid "General Settings"
+msgstr "Gweld Gosodiadau"
+
+#: resourceconfigdialog.cpp:63
+#, fuzzy
+msgctxt "@label:textbox Calendar name"
+msgid "Name:"
+msgstr "Enw"
+
+#: resourceconfigdialog.cpp:68
+#, fuzzy
+msgctxt "@option:check"
+msgid "Read-only"
+msgstr "darllen-yn-unig"
+
+#: resourceconfigdialog.cpp:81
+#, fuzzy, kde-format
+msgctxt "@title:group"
+msgid "<resource>%1</resource> Calendar Settings"
+msgstr "Gweld Gosodiadau"
+
+#: resourceconfigdialog.cpp:123
+msgctxt "@info"
+msgid "Please enter a calendar name."
+msgstr ""
+
+#: resourcemodelview.cpp:119 resources/alarmresource.cpp:360
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Disabled (wrong alarm type)"
+msgstr "Lliw larwm da&rfodedig:"
+
+#: resources/resourcelocaldirwidget.cpp:40
+#: resources/resourcelocalwidget.cpp:42
+#, fuzzy
+#| msgid "Action"
+msgctxt "@label:textbox"
+msgid "Location:"
+msgstr "Gweithred"
+
+#: resources/resourcelocaldirwidget.cpp:72
+#: resources/resourcelocalwidget.cpp:77
+msgctxt "@info"
+msgid "No location specified.  The calendar will be invalid."
+msgstr ""
+
+#: resources/resourceremotewidget.cpp:42
+msgctxt "@label:textbox"
+msgid "Download from:"
+msgstr ""
+
+#: resources/resourceremotewidget.cpp:48
+msgctxt "@label:textbox"
+msgid "Upload to:"
+msgstr ""
+
+#: resources/resourceremotewidget.cpp:94
+msgctxt "@info"
+msgid "You have specified no upload URL: the alarm calendar will be read-only."
+msgstr ""
+
+#: resources/resourcewidget.cpp:54
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Calendar <resource>%1</resource> cannot be made writable since it either was "
+"not created by <application>KAlarm</application>, or was created by a newer "
+"version of <application>KAlarm</application>"
+msgstr ""
+
+#: resources/alarmresource.cpp:354 resourceselector.cpp:856
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Active alarms"
+msgstr "Gweithredoli %1"
+
+#: resources/alarmresource.cpp:355 resourceselector.cpp:858
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Archived alarms"
+msgstr "Gweithredoli %1"
+
+#: resources/alarmresource.cpp:356 resourceselector.cpp:860
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Alarm templates"
+msgstr "Testun Larwm"
+
+#: resources/alarmresource.cpp:359 resourceselector.cpp:865
+msgctxt "@info/plain"
+msgid "Read-write"
+msgstr ""
+
+#: resources/alarmresource.cpp:360 resourceselector.cpp:867
+#, fuzzy
+#| msgid "Enable"
+msgctxt "@info/plain"
+msgid "Enabled"
+msgstr "Galluogi"
+
+#: resources/alarmresource.cpp:361 resourceselector.cpp:870
+msgctxt "@info/plain Parameter in 'Default calendar: Yes/No'"
+msgid "Yes"
+msgstr ""
+
+#: resources/alarmresource.cpp:361 resourceselector.cpp:871
+#, fuzzy
+#| msgid "None"
+msgctxt "@info/plain Parameter in 'Default calendar: Yes/No'"
+msgid "No"
+msgstr "Dim"
+
+#: resources/alarmresource.cpp:363
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<title>%1</title><para>Calendar type: %2<nl/>Contents: %3<nl/>%4: <filename>"
+"%5</filename><nl/>Permissions: %6<nl/>Status: %7<nl/>Default calendar: %8</"
+"para>"
+msgstr ""
+
+#: resources/alarmresources.cpp:159
+#, fuzzy, kde-format
+#| msgid ""
+#| "Invalid email attachment:\n"
+#| "%1"
+msgctxt "@info"
+msgid "%1: invalid calendar file name: <filename>%2</filename>"
+msgstr ""
+"Atodiad ebost annilys:\n"
+" %1"
+
+#: resources/alarmresources.cpp:167
+#, fuzzy, kde-format
+#| msgid "%1: file name not permitted: %2"
+msgctxt "@info"
+msgid "%1: file name not permitted: <filename>%2</filename>"
+msgstr "%1: ni chaniateir yr enw ffeil: %2"
+
+#: resourceselector.cpp:100
+#, fuzzy
+msgctxt "@title:group"
+msgid "Calendars"
+msgstr "URL y ffeil galendr"
+
+#: resourceselector.cpp:104
+#, fuzzy
+msgctxt "@item:inlistbox"
+msgid "Active Alarms"
+msgstr "Gweithredoli %1"
+
+#: resourceselector.cpp:105
+#, fuzzy
+msgctxt "@item:inlistbox"
+msgid "Archived Alarms"
+msgstr "Gweithredoli %1"
+
+#: resourceselector.cpp:106
+#, fuzzy
+msgctxt "@item:inlistbox"
+msgid "Alarm Templates"
+msgstr "Testun Larwm"
+
+#: resourceselector.cpp:108
+msgctxt "@info:whatsthis"
+msgid "Choose which type of data to show alarm calendars for"
+msgstr ""
+
+#: resourceselector.cpp:125
+msgctxt "@info:whatsthis"
+msgid ""
+"List of available calendars of the selected type. The checked state shows "
+"whether a calendar is enabled (checked) or disabled (unchecked). The default "
+"calendar is shown in bold."
+msgstr ""
+
+#: resourceselector.cpp:136 templatedlg.cpp:110
+#, fuzzy
+msgctxt "@action:button"
+msgid "Edit..."
+msgstr "&Golygu..."
+
+#: resourceselector.cpp:141
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Edit the highlighted calendar"
+msgstr "Gwaredu'r eitem sy'n amlygedig ar hyn o bryd o'r rhestr eithriadau"
+
+#: resourceselector.cpp:142
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Remove the highlighted calendar from the list.</para><para>The "
+"calendar itself is left intact, and may subsequently be reinstated in the "
+"list if desired.</para>"
+msgstr ""
+
+#: resourceselector.cpp:175
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "Add a new active alarm calendar"
+msgstr "Gwall wrth galw KMail"
+
+#: resourceselector.cpp:179
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "Add a new archived alarm calendar"
+msgstr "Gwall wrth galw KMail"
+
+#: resourceselector.cpp:183
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "Add a new alarm template calendar"
+msgstr "Gwall wrth galw KMail"
+
+#: resourceselector.cpp:239
+msgctxt "@info"
+msgid "Select storage type of new calendar:"
+msgstr ""
+
+#: resourceselector.cpp:246
+#, kde-format
+msgctxt "@info"
+msgid "Unable to create calendar of type <resource>%1</resource>."
+msgstr ""
+
+#: resourceselector.cpp:249
+#, fuzzy, kde-format
+#| msgid "%1: wrong calendar file"
+msgctxt "@info/plain"
+msgid "%1 calendar"
+msgstr "%1: ffeil galendr anghywir"
+
+#: resourceselector.cpp:363
+#, fuzzy
+msgctxt "@info"
+msgid "You cannot make your default active alarm calendar read-only."
+msgstr "A ydych wir am ddileu'r larwm dewisiedig?"
+
+#: resourceselector.cpp:370
+#, fuzzy
+msgctxt "@info"
+msgid ""
+"You cannot make your default archived alarm calendar read-only while expired "
+"alarms are configured to be kept."
+msgstr "A ydych wir am ddileu'r larwm dewisiedig?"
+
+#: resourceselector.cpp:374
+#, fuzzy
+msgctxt "@info"
+msgid "Do you really want to make your default calendar read-only?"
+msgstr "A ydych wir am ddileu'r larwm dewisiedig?"
+
+#: resourceselector.cpp:427
+#, fuzzy
+msgctxt "@info"
+msgid "You cannot remove your default active alarm calendar."
+msgstr "A ydych wir am ddileu'r larwm dewisiedig?"
+
+#: resourceselector.cpp:434
+#, fuzzy
+msgctxt "@info"
+msgid ""
+"You cannot remove your default archived alarm calendar while expired alarms "
+"are configured to be kept."
+msgstr "A ydych wir am ddileu'r larwm dewisiedig?"
+
+#: resourceselector.cpp:450
+#, kde-format
+msgctxt "@info"
+msgid "<para>It also contains:%1</para>"
+msgstr ""
+
+#: resourceselector.cpp:451
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para><resource>%1</resource> is the default calendar for:%2</para>"
+"%3<para>Do you really want to remove it from all calendar lists?</para>"
+msgstr ""
+
+#: resourceselector.cpp:455 resourceselector.cpp:463
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid ""
+"Do you really want to remove your default calendar (<resource>%1</resource>) "
+"from the list?"
+msgstr "A ydych wir am ddileu'r larwm dewisiedig?"
+
+#: resourceselector.cpp:458
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para><resource>%1</resource> contains:%2</para><para>Do you really want to "
+"remove it from all calendar lists?</para>"
+msgstr ""
+
+#: resourceselector.cpp:461 resourceselector.cpp:464
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid ""
+"Do you really want to remove the calendar <resource>%1</resource> from the "
+"list?"
+msgstr "A ydych wir am ddileu'r larwm dewisiedig?"
+
+#: resourceselector.cpp:501
+msgctxt "@action Reload calendar"
+msgid "Re&load"
+msgstr ""
+
+#: resourceselector.cpp:505
+#, fuzzy
+msgctxt "@action"
+msgid "&Save"
+msgstr "&Anfon"
+
+#: resourceselector.cpp:509
+#, fuzzy
+msgctxt "@action"
+msgid "Show &Details"
+msgstr "Dangos Amserau &Larwm"
+
+#: resourceselector.cpp:512
+#, fuzzy
+msgctxt "@action"
+msgid "Set &Color..."
+msgstr "Wynebfath a Lliw"
+
+#: resourceselector.cpp:515
+#, fuzzy
+msgctxt "@action"
+msgid "Clear C&olor"
+msgstr "Wynebfath a Lliw"
+
+#: resourceselector.cpp:522
+msgctxt "@action"
+msgid "&Update Calendar Format"
+msgstr ""
+
+#: resourceselector.cpp:526
+#, fuzzy
+msgctxt "@action"
+msgid "&Remove"
+msgstr "&Gwaredu"
+
+#: resourceselector.cpp:532
+#, fuzzy
+msgctxt "@action"
+msgid "&Add..."
+msgstr "Ychwanegu..."
+
+#: resourceselector.cpp:535
+#, fuzzy
+msgctxt "@action"
+msgid "Im&port..."
+msgstr "Mewnforio &Penblwyddi..."
+
+#: resourceselector.cpp:621
+#, fuzzy
+msgctxt "@action"
+msgid "Use as &Default for Active Alarms"
+msgstr "Defnyddio wynebfath &ragosodedig"
+
+#: resourceselector.cpp:622
+#, fuzzy
+msgctxt "@action"
+msgid "Use as &Default for Archived Alarms"
+msgstr "Defnyddio wynebfath &ragosodedig"
+
+#: resourceselector.cpp:623
+#, fuzzy
+msgctxt "@action"
+msgid "Use as &Default for Alarm Templates"
+msgstr "Dileu Larwm"
+
+#: resourceselector.cpp:740
+#, fuzzy
+msgctxt "@info/plain"
+msgid "It is not an active alarm calendar."
+msgstr "Gwall wrth galw KMail"
+
+#: resourceselector.cpp:743
+#, fuzzy
+msgctxt "@info/plain"
+msgid "It is not an archived alarm calendar."
+msgstr "Gwall wrth galw KMail"
+
+#: resourceselector.cpp:746
+#, fuzzy
+msgctxt "@info/plain"
+msgid "It is not an alarm template calendar."
+msgstr "Gwall wrth galw KMail"
+
+#: resourceselector.cpp:751
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para>Calendar <resource>%1</resource> has been disabled:</para><para>%2</"
+"para>"
+msgstr ""
+
+#: resourceselector.cpp:861
+msgctxt "@info/plain List separator"
+msgid ", "
+msgstr ""
+
+#: resourceselector.cpp:873
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<title>%1</title><para>ID: %2<nl/>Calendar type: %3<nl/>Contents: %4<nl/>%5: "
+"<filename>%6</filename><nl/>Permissions: %7<nl/>Status: %8<nl/>Default "
+"calendar: %9</para>"
+msgstr ""
+
+#: soundpicker.cpp:50
+#, fuzzy
+msgctxt "@label:listbox Listbox providing audio options"
+msgid "Sound:"
+msgstr "&Sain"
+
+#: soundpicker.cpp:51
+#, fuzzy
+#| msgid "None"
+msgctxt "@item:inlistbox No sound"
+msgid "None"
+msgstr "Dim"
+
+#: soundpicker.cpp:52
+#, fuzzy
+#| msgid "Beep"
+msgctxt "@item:inlistbox"
+msgid "Beep"
+msgstr "Blîp"
+
+#: soundpicker.cpp:53
+#, fuzzy
+#| msgid "Speak"
+msgctxt "@item:inlistbox"
+msgid "Speak"
+msgstr "Llafaru"
+
+#: soundpicker.cpp:54
+#, fuzzy
+msgctxt "@item:inlistbox"
+msgid "Sound file"
+msgstr "&Ffeil sain:"
+
+#: soundpicker.cpp:98
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "Configure sound file"
+msgstr "Dewiswch ffeil sain"
+
+#: soundpicker.cpp:99
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Configure a sound file to play when the alarm is displayed."
+msgstr ""
+"Dewiswch ffeil sain i'w chanu pan ddengys y neges. Os nad oes ffeil sain "
+"wedi'i dewis, clywir blîp."
+
+#: soundpicker.cpp:132
+#, fuzzy, kde-format
+msgctxt "@info:whatsthis"
+msgid "<interface>%1</interface>: the message is displayed silently."
+msgstr "Blîpio pan ddengys y neges"
+
+#: soundpicker.cpp:133
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "<interface>%1</interface>: a simple beep is sounded."
+msgstr ""
+
+#: soundpicker.cpp:134
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"<interface>%1</interface>: an audio file is played. You will be prompted to "
+"choose the file and set play options."
+msgstr ""
+
+#: soundpicker.cpp:138
+#, fuzzy, kde-format
+msgctxt "@info:whatsthis"
+msgid "<interface>%1</interface>: the message text is spoken."
+msgstr "Blîpio pan ddengys y neges"
+
+#: soundpicker.cpp:140
+#, kde-format
+msgctxt "@info:whatsthis Combination of multiple whatsthis items"
+msgid ""
+"<para>Choose a sound to play when the message is displayed:<list><item>%1</"
+"item><item>%2</item><item>%3</item><item>%4</item></list></para>"
+msgstr ""
+
+#: soundpicker.cpp:148
+#, kde-format
+msgctxt "@info:whatsthis Combination of multiple whatsthis items"
+msgid ""
+"<para>Choose a sound to play when the message is displayed:<list><item>%1</"
+"item><item>%2</item><item>%3</item></list></para>"
+msgstr ""
+
+#: soundpicker.cpp:268
+#, fuzzy
+msgctxt "@title:window"
+msgid "Sound File"
+msgstr "Ffeiliau Sain"
+
+#: soundpicker.cpp:330
+#, fuzzy
+#| msgid "Choose Sound File"
+msgctxt "@title:window"
+msgid "Choose Sound File"
+msgstr "Dewiswch Ffeil Sain"
+
+#: specialactions.cpp:48
+#, fuzzy
+msgctxt "@action:button"
+msgid "Special Actions..."
+msgstr "Gosodiadau Larwm Ebost"
+
+#: specialactions.cpp:56
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Specify actions to execute before and after the alarm is displayed."
+msgstr ""
+"Brithwch i ddefnyddio'r wynebfath ragosodedig sy'n gyfredol pan ddengys y "
+"larwm."
+
+#: specialactions.cpp:107
+#, fuzzy
+msgctxt "@title:window"
+msgid "Special Alarm Actions"
+msgstr "Gosodiadau Larwm Ebost"
+
+#: specialactions.cpp:165
+#, fuzzy
+msgctxt "@title:group"
+msgid "Pre-Alarm Action"
+msgstr "Gosodiadau Larwm Ebost"
+
+#: specialactions.cpp:175 specialactions.cpp:210
+#, fuzzy
+#| msgid "Co&mmand"
+msgctxt "@label:textbox"
+msgid "Command:"
+msgstr "Gorchy&myn"
+
+#: specialactions.cpp:180
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Enter a shell command to execute before the alarm is displayed.</"
+"para><para>Note that it is executed only when the alarm proper is displayed, "
+"not when a reminder or deferred alarm is displayed.</para><para><note>KAlarm "
+"will wait for the command to complete before displaying the alarm.</note></"
+"para>"
+msgstr ""
+
+#: specialactions.cpp:186
+msgctxt "@option:check"
+msgid "Execute for deferred alarms"
+msgstr ""
+
+#: specialactions.cpp:187
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>If unchecked, the command is only executed before the alarm proper is "
+"displayed.</para><para>If checked, the pre-alarm command is also executed "
+"before a deferred alarm is displayed.</para>"
+msgstr ""
+
+#: specialactions.cpp:191
+msgctxt "@option:check"
+msgid "Cancel alarm on error"
+msgstr ""
+
+#: specialactions.cpp:192
+msgctxt "@info:whatsthis"
+msgid ""
+"Cancel the alarm if the pre-alarm command fails, i.e. do not display the "
+"alarm or execute any post-alarm action command."
+msgstr ""
+
+#: specialactions.cpp:195
+msgctxt "@option:check"
+msgid "Do not notify errors"
+msgstr ""
+
+#: specialactions.cpp:196
+#, fuzzy
+#| msgid ""
+#| "The default setting for the recurrence rule in the alarm edit dialog."
+msgctxt "@info:whatsthis"
+msgid ""
+"Do not show error status or error message if the pre-alarm command fails."
+msgstr "Rhagosodiad y reol ailddigwydd yn yr ymgom olygu larymau."
+
+#: specialactions.cpp:200
+#, fuzzy
+msgctxt "@title:group"
+msgid "Post-Alarm Action"
+msgstr "Gosodiadau Larwm Ebost"
+
+#: specialactions.cpp:214
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Enter a shell command to execute after the alarm window is closed.</"
+"para><para>Note that it is not executed after closing a reminder window. If "
+"you defer the alarm, it is not executed until the alarm is finally "
+"acknowledged or closed.</para>"
+msgstr ""
+
+#: templatedlg.cpp:69
+#, fuzzy
+msgctxt "@title:window"
+msgid "Alarm Templates"
+msgstr "Testun Larwm"
+
+#: templatedlg.cpp:95 templatelistview.cpp:44
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "The list of alarm templates"
+msgstr "Rhowch destun y neges larwm. Gall fod yn aml-linell."
+
+#: templatedlg.cpp:103
+#, fuzzy
+#| msgid "&New..."
+msgctxt "@action:button"
+msgid "New"
+msgstr "&Newydd..."
+
+#: templatedlg.cpp:104
+#, fuzzy
+#| msgid "&New..."
+msgctxt "@action"
+msgid "New"
+msgstr "&Newydd..."
+
+#: templatedlg.cpp:107
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Create a new alarm template"
+msgstr "Gwall wrth galw KMail"
+
+#: templatedlg.cpp:112
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Edit the currently highlighted alarm template"
+msgstr "Gwaredu'r eitem sy'n amlygedig ar hyn o bryd o'r rhestr eithriadau"
+
+#: templatedlg.cpp:115
+#, fuzzy
+#| msgid "Co&py"
+msgctxt "@action:button"
+msgid "Copy"
+msgstr "Co&pïo"
+
+#: templatedlg.cpp:117
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid ""
+"Create a new alarm template based on a copy of the currently highlighted "
+"template"
+msgstr "Gwaredu'r eitem sy'n amlygedig ar hyn o bryd o'r rhestr eithriadau"
+
+#: templatedlg.cpp:122
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Delete the currently highlighted alarm template"
+msgstr "Gwaredu'r eitem sy'n amlygedig ar hyn o bryd o'r rhestr eithriadau"
+
+#: templatedlg.cpp:211
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "Do you really want to delete the selected alarm template?"
+msgid_plural "Do you really want to delete the %1 selected alarm templates?"
+msgstr[0] "A ydych wir am ddileu'r larwm dewisiedig?"
+msgstr[1] " A ydych wir am ddileu'r %1 lawrm dewisiedig?"
+
+#: templatedlg.cpp:213
+#, fuzzy
+msgctxt "@title:window"
+msgid "Delete Alarm Template"
+msgid_plural "Delete Alarm Templates"
+msgstr[0] "Dileu Larwm"
+msgstr[1] " Dileu Larymau"
+
+#: templatepickdlg.cpp:46
+#, fuzzy
+msgctxt "@title:window"
+msgid "Choose Alarm Template"
+msgstr "Dangos Amserau &Larwm"
+
+#: templatepickdlg.cpp:77
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Select a template to base the new alarm on."
+msgstr "Rhowch y dyddiad i drefnlennu'r larwm."
+
+#: traywindow.cpp:100
+#, fuzzy
+#| msgid "New Alarm"
+msgctxt "@action"
+msgid "&New Alarm"
+msgstr "Larwm Newydd"
+
+#: traywindow.cpp:333
+#, fuzzy
+msgid "Disabled"
+msgstr "Anal&luogi"
+
+#: traywindow.cpp:338
+msgctxt "@info:tooltip Brief: some alarms are disabled"
+msgid "(Some alarms disabled)"
+msgstr ""
+
+#: traywindow.cpp:408
+#, fuzzy, kde-format
+#| msgctxt "prefix + hours:minutes"
+#| msgid "(%1%2:%3)"
+msgctxt "@info/plain prefix + hours:minutes"
+msgid "(%1%2:%3)"
+msgstr "(%1%2:%3)"
+
+#: traywindow.cpp:410
+#, fuzzy, kde-format
+#| msgctxt "prefix + hours:minutes"
+#| msgid "%1%2:%3"
+msgctxt "@info/plain prefix + hours:minutes"
+msgid "%1%2:%3"
+msgstr "%1%2:%3"
+
+#: rtcwakeaction.cpp:89
+#, kde-format
+msgctxt "@text/plain"
+msgid "Could not run <command>%1</command> to set wake from suspend"
+msgstr ""
+
+#: rtcwakeaction.cpp:92
+#, kde-format
+msgctxt "@text/plain"
+msgid ""
+"Error setting wake from suspend.<nl/>Command was: <command>%1</command><nl/"
+">Error code: %2."
+msgstr ""
+
+#: akonadiresourcecreator.cpp:109
+#, fuzzy
+#| msgid "Failed to send email"
+msgctxt "@info/plain"
+msgid "Failed to create new calendar resource"
+msgstr "Methwyd anfon ebost"
+
+#: calendarmigrator.cpp:329
+#, fuzzy, kde-format
+msgctxt "@info/plain"
+msgid "Failed to create default calendar <resource>%1</resource>"
+msgstr ""
+"Methu agor y calendr:\n"
+" %1"
+
+#: calendarmigrator.cpp:331
+#, fuzzy, kde-format
+msgctxt "@info/plain 'Import Alarms' is the name of a menu option"
+msgid ""
+"Failed to convert old configuration for calendar <resource>%1</resource>. "
+"Please use Import Alarms to load its alarms into a new or existing calendar."
+msgstr ""
+"Methu agor y calendr:\n"
+" %1"
+
+#: calendarmigrator.cpp:333
+#, fuzzy, kde-format
+#| msgid "Action"
+msgctxt "@info/plain File path or URL"
+msgid "Location: %1"
+msgstr "Gweithred"
+
+#: calendarmigrator.cpp:335
+#, fuzzy, kde-format
+#| msgid ""
+#| "%1\n"
+#| "Are you sure you want to save your changes?"
+msgctxt "@info"
+msgid "<para>%1</para><para>%2</para>"
+msgstr ""
+"%1\n"
+"Ydych yn sicr eich bod chi eisiau cadw eich newidiadau?"
+
+#: calendarmigrator.cpp:337
+#, fuzzy, kde-format
+#| msgid ""
+#| "%1\n"
+#| "Are you sure you want to save your changes?"
+msgctxt "@info"
+msgid "<para>%1</para><para>%2<nl/>(%3)</para>"
+msgstr ""
+"%1\n"
+"Ydych yn sicr eich bod chi eisiau cadw eich newidiadau?"
+
+#: calendarmigrator.cpp:443
+#, fuzzy
+#| msgid "Invalid time"
+msgctxt "@info/plain"
+msgid "Invalid collection"
+msgstr "Amser annilys"
+
+#: calendarmigrator.cpp:457
+#, fuzzy, kde-format
+msgctxt "@info/plain"
+msgid "Failed to update format of calendar <resource>%1</resource>"
+msgstr ""
+"Methu agor y calendr:\n"
+" %1"
+
+#: calendarmigrator.cpp:735
+msgctxt "@info/plain"
+msgid "New configuration timed out"
+msgstr ""
+
+#: calendarmigrator.cpp:748
+msgctxt "@info/plain"
+msgid "New configuration was corrupt"
+msgstr ""
+
+#: undo.cpp:440
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Alarm not found"
+msgstr "Ellyll Larymau heb ei ganfod"
+
+#: undo.cpp:441
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Error recreating alarm"
+msgstr "Gwall wrth galw KMail"
+
+#: undo.cpp:442
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Error recreating alarm template"
+msgstr "Gwall wrth galw KMail"
+
+#: undo.cpp:443
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Cannot reactivate archived alarm"
+msgstr "Dileu'r holl larymau darfodedig cyfredol"
+
+#: undo.cpp:444
+msgctxt "@info/plain"
+msgid "Program error"
+msgstr ""
+
+#: undo.cpp:445
+#, fuzzy
+#| msgid "Unknown error"
+msgctxt "@info/plain"
+msgid "Unknown error"
+msgstr "Gwall anhysbys"
+
+#: undo.cpp:447
+#, fuzzy, kde-format
+#| msgctxt "Hours and Minutes"
+#| msgid "%1H %2M"
+msgctxt "@info Undo-action: message"
+msgid "%1: %2"
+msgstr "%1A %2M"
+
+#: undo.cpp:684
+#, fuzzy
+#| msgid "New Alarm"
+msgctxt "@info/plain Action to create a new alarm"
+msgid "New alarm"
+msgstr "Larwm Newydd"
+
+#: undo.cpp:686
+#, fuzzy
+msgctxt "@info/plain Action to delete an alarm"
+msgid "Delete alarm"
+msgstr ""
+"Dileu Larwm\n"
+" Dileu Larymau"
+
+#: undo.cpp:689
+#, fuzzy
+msgctxt "@info/plain Action to create a new alarm template"
+msgid "New template"
+msgstr ""
+"Dileu Larwm\n"
+" Dileu Larymau"
+
+#: undo.cpp:691
+#, fuzzy
+msgctxt "@info/plain Action to delete an alarm template"
+msgid "Delete template"
+msgstr ""
+"Dileu Larwm\n"
+" Dileu Larymau"
+
+#: undo.cpp:693
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Delete archived alarm"
+msgstr "Dileu'r holl larymau darfodedig cyfredol"
+
+#: undo.cpp:916
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Create multiple alarms"
+msgstr "Dileu'r holl larymau darfodedig cyfredol"
+
+#: undo.cpp:1022
+#, fuzzy
+#| msgid "Edit Alarm"
+msgctxt "@info/plain Action to edit an alarm"
+msgid "Edit alarm"
+msgstr "Golygu Larwm"
+
+#: undo.cpp:1024
+#, fuzzy
+msgctxt "@info/plain Action to edit an alarm template"
+msgid "Edit template"
+msgstr ""
+"Dileu Larwm\n"
+" Dileu Larymau"
+
+#: undo.cpp:1207
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Delete multiple alarms"
+msgstr "Dileu'r holl larymau darfodedig cyfredol"
+
+#: undo.cpp:1209
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Delete multiple templates"
+msgstr "Dileu'r holl larymau darfodedig cyfredol"
+
+#: undo.cpp:1216
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Delete multiple archived alarms"
+msgstr "Dileu'r holl larymau darfodedig cyfredol"
+
+#: undo.cpp:1259 undo.cpp:1303
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Reactivate alarm"
+msgstr "Gweithredoli %1"
+
+#: undo.cpp:1326
+#, fuzzy
+msgctxt "@info/plain"
+msgid "Reactivate multiple alarms"
+msgstr "Dileu'r holl larymau darfodedig cyfredol"
+
+#: wakedlg.cpp:56
+msgctxt "@title:window"
+msgid "Wake From Suspend"
+msgstr ""
+
+#: wakedlg.cpp:181
+#, fuzzy
+#| msgid "Next scheduled date and time of the alarm"
+msgctxt "@info"
+msgid "Cannot schedule wakeup time for a date-only alarm"
+msgstr "Dyddiad trefnlenedig nesaf ac amser y larwm"
+
+#: wakedlg.cpp:185
+msgctxt "@info"
+msgid ""
+"<para>This wakeup will cancel any existing wakeup which has been set by "
+"KAlarm or any other application, because your computer can only schedule a "
+"single wakeup time.</para><para><b>Note:</b> Wake From Suspend is not "
+"supported at all on some computers, especially older ones, and some "
+"computers only support setting a wakeup time up to 24 hours ahead. You may "
+"wish to set up a test alarm to check your system's capability.</para>"
+msgstr ""
+
+#: alarmtime.cpp:42 alarmtime.cpp:80
+msgctxt "@info/plain Alarm never occurs"
+msgid "Never"
+msgstr ""
+
+#: alarmtime.cpp:86
+#, fuzzy, no-c-format, kde-format
+#| msgctxt "n days"
+#| msgid " %1d "
+msgctxt "@info/plain n days"
+msgid "%1d"
+msgstr " %1d "
+
+#: alarmtime.cpp:95
+#, fuzzy, kde-format
+#| msgctxt "Hours and Minutes"
+#| msgid "%1H %2M"
+msgctxt "@info/plain hours:minutes"
+msgid "%1:%2"
+msgstr "%1A %2M"
+
+#: alarmtime.cpp:98
+#, fuzzy, kde-format
+#| msgctxt "days hours:minutes"
+#| msgid " %1d %2:%3 "
+msgctxt "@info/plain days hours:minutes"
+msgid "%1d %2:%3"
+msgstr " %1d %2:%3 "
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -5787,1772 +7553,6 @@ msgstr "URL y ffeil galendr"
 #. i18n: ectx: label, entry (MonitorFile), group (General)
 #: rc.cpp:483
 msgid "Monitor file for changes."
-msgstr ""
-
-#: recurrenceedit.cpp:81
-#, fuzzy
-#| msgid "No Recurrence"
-msgctxt "@item:inlistbox Recurrence type"
-msgid "No Recurrence"
-msgstr "Dim Ailddigwydd"
-
-#: recurrenceedit.cpp:82
-#, fuzzy
-#| msgid "At Login"
-msgctxt "@item:inlistbox Recurrence type"
-msgid "At Login"
-msgstr "Ar Fewngofnodi"
-
-#: recurrenceedit.cpp:83
-#, fuzzy
-#| msgid "Hourly/Minutely"
-msgctxt "@item:inlistbox Recurrence type"
-msgid "Hourly/Minutely"
-msgstr "Awrol/Munudol"
-
-#: recurrenceedit.cpp:84
-#, fuzzy
-#| msgid "Daily"
-msgctxt "@item:inlistbox Recurrence type"
-msgid "Daily"
-msgstr "Dyddiol"
-
-#: recurrenceedit.cpp:85
-#, fuzzy
-#| msgid "Weekly"
-msgctxt "@item:inlistbox Recurrence type"
-msgid "Weekly"
-msgstr "Wythnosol"
-
-#: recurrenceedit.cpp:86
-#, fuzzy
-#| msgid "Monthly"
-msgctxt "@item:inlistbox Recurrence type"
-msgid "Monthly"
-msgstr "Misol"
-
-#: recurrenceedit.cpp:87
-#, fuzzy
-#| msgid "Yearly"
-msgctxt "@item:inlistbox Recurrence type"
-msgid "Yearly"
-msgstr "Blynyddol"
-
-#: recurrenceedit.cpp:113
-#, fuzzy
-#| msgid "Recurrence Rule"
-msgctxt "@title:group"
-msgid "Recurrence Rule"
-msgstr "Rheol Ailddigwydd"
-
-#: recurrenceedit.cpp:131
-#, fuzzy
-#| msgid "Do not repeat the alarm"
-msgctxt "@info:whatsthis"
-msgid "Do not repeat the alarm"
-msgstr "Peidio ac ailadrodd y larwm"
-
-#: recurrenceedit.cpp:139
-#, fuzzy
-#| msgid ""
-#| "Trigger the alarm at the specified date/time and at every login until "
-#| "then.\n"
-#| "Note that it will also be triggered any time the alarm daemon is "
-#| "restarted."
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Trigger the alarm at the specified date/time and at every login until "
-"then.</para><para>Note that it will also be triggered any time "
-"<application>KAlarm</application> is restarted.</para>"
-msgstr ""
-"Achosi'r larwm ar y dyddiad/amser penodedig, ac ar bob fewngofnod tan "
-"hynny.\n"
-" Noder y'i achosir ar unrhyw adeg y caiff yr ellyll larymau ei ailgychwyn."
-
-#: recurrenceedit.cpp:147
-#, fuzzy
-#| msgid "Repeat the alarm at hourly/minutely intervals"
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm at hourly/minutely intervals"
-msgstr "Ailadrodd y larwm ar gyfnodau awrol/munudol"
-
-#: recurrenceedit.cpp:154
-#, fuzzy
-#| msgid "Repeat the alarm at daily intervals"
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm at daily intervals"
-msgstr "Ailadrodd y larwm yn ddyddiol"
-
-#: recurrenceedit.cpp:161
-#, fuzzy
-#| msgid "Repeat the alarm at weekly intervals"
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm at weekly intervals"
-msgstr "Ailadrodd y larwm yn wythnosol"
-
-#: recurrenceedit.cpp:168
-#, fuzzy
-#| msgid "Repeat the alarm at monthly intervals"
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm at monthly intervals"
-msgstr "Ailadrodd y larwm yn fisol"
-
-#: recurrenceedit.cpp:175
-#, fuzzy
-#| msgid "Repeat the alarm at annual intervals"
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm at annual intervals"
-msgstr "Ailadrodd y larwm yn flynyddol"
-
-#: recurrenceedit.cpp:185
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid ""
-"Set up a repetition within the recurrence, to trigger the alarm multiple "
-"times each time the recurrence is due."
-msgstr "Rhaid i'r adeg atgof fod yn fyrach na'r cyfnod ail-ddigwydd"
-
-#: recurrenceedit.cpp:233
-#, fuzzy
-#| msgid "Recurrence End"
-msgctxt "@title:group"
-msgid "Recurrence End"
-msgstr "Diwedd Ailddigwydd"
-
-#: recurrenceedit.cpp:242
-#, fuzzy
-#| msgid "No &end"
-msgctxt "@option:radio"
-msgid "No end"
-msgstr "Dim &diwedd"
-
-#: recurrenceedit.cpp:245
-#, fuzzy
-#| msgid "Repeat the alarm indefinitely"
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm indefinitely"
-msgstr "Ailadrodd y larwm am byth"
-
-#: recurrenceedit.cpp:253
-#, fuzzy
-#| msgid "End a&fter:"
-msgctxt "@option:radio"
-msgid "End after:"
-msgstr "Gor&ffen wedi:"
-
-#: recurrenceedit.cpp:255
-#, fuzzy
-#| msgid "Repeat the alarm for the number of times specified"
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm for the number of times specified"
-msgstr "Ailadrodd y larwm am y nifer penodedig o achosion"
-
-#: recurrenceedit.cpp:262
-#, fuzzy
-#| msgid "Enter the total number of times to trigger the alarm"
-msgctxt "@info:whatsthis"
-msgid "Enter the total number of times to trigger the alarm"
-msgstr "Rhowch gyfanswm nifer yr adegau i achosi'r larwm"
-
-#: recurrenceedit.cpp:266
-#, fuzzy
-#| msgid "occurrence(s)"
-msgctxt "@label"
-msgid "occurrence(s)"
-msgstr "achosiad"
-
-#: recurrenceedit.cpp:278
-#, fuzzy
-#| msgid "End &by:"
-msgctxt "@option:radio"
-msgid "End by:"
-msgstr "Gorffen er&byn:"
-
-#: recurrenceedit.cpp:281
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Repeat the alarm until the date/time specified.</para><para><note>This "
-"applies to the main recurrence only. It does not limit any sub-repetition "
-"which will occur regardless after the last main recurrence.</note></para>"
-msgstr ""
-
-#: recurrenceedit.cpp:286
-msgctxt "@info/plain"
-msgid "This uses the same time zone as the start time."
-msgstr ""
-
-#: recurrenceedit.cpp:288
-#, fuzzy, kde-format
-msgctxt "@info:whatsthis"
-msgid "<para>Enter the last date to repeat the alarm.</para><para>%1</para>"
-msgstr "Rhowch y dyddiad olaf i ailadrodd y larwm"
-
-#: recurrenceedit.cpp:295
-#, fuzzy, kde-format
-#| msgid "Enter the last time to repeat the alarm."
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Enter the last time to repeat the alarm.</para><para>%1</para><para>"
-"%2</para>"
-msgstr "Rhowch yr amser olaf i ailadrodd y larwm."
-
-#: recurrenceedit.cpp:300
-#, fuzzy
-#| msgid ""
-#| "Stop repeating the alarm after your first login on or after the specified "
-#| "end date"
-msgctxt "@info:whatsthis"
-msgid ""
-"Stop repeating the alarm after your first login on or after the specified "
-"end date"
-msgstr ""
-"Peidio ailadrodd y larwm wedi'ch mewngofnod cyntaf ar neu wedi'r dyddiad "
-"gorffen penodedig"
-
-#: recurrenceedit.cpp:318
-#, fuzzy
-#| msgid "E&xceptions"
-msgctxt "@title:group"
-msgid "Exceptions"
-msgstr "&Eithriadau"
-
-#: recurrenceedit.cpp:329
-#, fuzzy
-#| msgid ""
-#| "The list of exceptions, i.e. dates/times excluded from the recurrence"
-msgctxt "@info:whatsthis"
-msgid "The list of exceptions, i.e. dates/times excluded from the recurrence"
-msgstr ""
-"Y rhestr eithriadau, h.y. dyddiadau/amseroedd a eithrir o'r ail-ddigwyddiad"
-
-#: recurrenceedit.cpp:348
-#, fuzzy
-#| msgid ""
-#| "Enter a date to insert in the exceptions list. Use in conjunction with "
-#| "the Add or Change button below."
-msgctxt "@info:whatsthis"
-msgid ""
-"Enter a date to insert in the exceptions list. Use in conjunction with the "
-"Add or Change button below."
-msgstr ""
-"Rhowch ddyddiad i'w fewnosod yn y rhestr eithriadau.  Defnyddiwch ynghyd â'r "
-"botwm Ychwanegu neu Newid isod."
-
-#: recurrenceedit.cpp:355
-#, fuzzy
-msgctxt "@action:button"
-msgid "Add"
-msgstr "Ychwanegu..."
-
-#: recurrenceedit.cpp:356
-#, fuzzy
-#| msgid "Add the date entered above to the exceptions list"
-msgctxt "@info:whatsthis"
-msgid "Add the date entered above to the exceptions list"
-msgstr "Ychwanegu'r dyddiad a fewnosodwyd uchod i'r rhestr eithriadau"
-
-#: recurrenceedit.cpp:360
-#, fuzzy
-msgctxt "@action:button"
-msgid "Change"
-msgstr "&Newid..."
-
-#: recurrenceedit.cpp:362
-#, fuzzy
-#| msgid ""
-#| "Replace the currently highlighted item in the exceptions list with the "
-#| "date entered above"
-msgctxt "@info:whatsthis"
-msgid ""
-"Replace the currently highlighted item in the exceptions list with the date "
-"entered above"
-msgstr ""
-"Amnewid yr eitem sy'n amlygedig ar hyn o bryd yn y rhestr eithriadau efo'r "
-"dyddiad a fewnosodwyd uchod"
-
-#: recurrenceedit.cpp:366 templatedlg.cpp:120
-#, fuzzy
-msgctxt "@action:button"
-msgid "Delete"
-msgstr "Dileu Larwm"
-
-#: recurrenceedit.cpp:367
-#, fuzzy
-#| msgid "Remove the currently highlighted item from the exceptions list"
-msgctxt "@info:whatsthis"
-msgid "Remove the currently highlighted item from the exceptions list"
-msgstr "Gwaredu'r eitem sy'n amlygedig ar hyn o bryd o'r rhestr eithriadau"
-
-#: recurrenceedit.cpp:374
-msgctxt "@option:check"
-msgid "Exclude holidays"
-msgstr ""
-
-#: recurrenceedit.cpp:377
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Do not trigger the alarm on holidays.</para><para>You can specify your "
-"holiday region in the Configuration dialog.</para>"
-msgstr ""
-
-#: recurrenceedit.cpp:382
-msgctxt "@option:check"
-msgid "Only during working time"
-msgstr ""
-
-#: recurrenceedit.cpp:385
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Only execute the alarm during working hours, on working days.</"
-"para><para>You can specify working days and hours in the Configuration "
-"dialog.</para>"
-msgstr ""
-
-#: recurrenceedit.cpp:428
-#, fuzzy
-#| msgid "End date is earlier than start date"
-msgctxt "@info"
-msgid "End date is earlier than start date"
-msgstr "Mae'r dyddiad gorffen cyn y dyddiad dechrau"
-
-#: recurrenceedit.cpp:429
-#, fuzzy
-#| msgid "End date/time is earlier than start date/time"
-msgctxt "@info"
-msgid "End date/time is earlier than start date/time"
-msgstr "Mae'r dyddiad/amser gorffen cyn y dyddiad/amser dechrau"
-
-#: recurrenceedit.cpp:699
-#, fuzzy
-#| msgid "Date cannot be earlier than %1"
-msgctxt "@info"
-msgid "Date cannot be earlier than start date"
-msgstr "Ni all y ddyddiad fod cyn %1"
-
-#: recurrenceedit.cpp:1114
-#, fuzzy
-#| msgid "Recur e&very"
-msgctxt "@label:spinbox"
-msgid "Recur e&very"
-msgstr "Ail-ddigwydd &pob"
-
-#: recurrenceedit.cpp:1183
-#, fuzzy
-#| msgid "hours:minutes"
-msgctxt "@label Time units for user-entered numbers"
-msgid "hours:minutes"
-msgstr "awr:munud"
-
-#: recurrenceedit.cpp:1184
-#, fuzzy
-#| msgid ""
-#| "Enter the number of hours and minutes between repetitions of the alarm"
-msgctxt "@info:whatsthis"
-msgid "Enter the number of hours and minutes between repetitions of the alarm"
-msgstr "Rhowch y nifer o oriau a munudau rhwng ailadroddion y larwm"
-
-#: recurrenceedit.cpp:1204
-#, fuzzy
-#| msgctxt "On: Tuesday"
-#| msgid "O&n:"
-msgctxt "@label On: Tuesday"
-msgid "O&n:"
-msgstr "A&r:"
-
-#: recurrenceedit.cpp:1285
-#, fuzzy
-#| msgid "No day selected"
-msgctxt "@info"
-msgid "No day selected"
-msgstr "Dim diwrnod wedi'i ddewis"
-
-#: recurrenceedit.cpp:1314
-#, fuzzy
-#| msgid "day(s)"
-msgctxt "@label Time unit for user-entered number"
-msgid "day(s)"
-msgstr "diwrnod"
-
-#: recurrenceedit.cpp:1315
-#, fuzzy
-#| msgid "Enter the number of days between repetitions of the alarm"
-msgctxt "@info:whatsthis"
-msgid "Enter the number of days between repetitions of the alarm"
-msgstr "Rhowch y nifer o ddiwrnodau rhwng ailadroddion y larwm"
-
-#: recurrenceedit.cpp:1316
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Select the days of the week on which the alarm is allowed to occur"
-msgstr "Dewiswch ddiwrnod yr wythnos i ailadrodd y larwm arni"
-
-#: recurrenceedit.cpp:1327
-#, fuzzy
-#| msgid "week(s)"
-msgctxt "@label Time unit for user-entered number"
-msgid "week(s)"
-msgstr "wythnos"
-
-#: recurrenceedit.cpp:1328
-#, fuzzy
-#| msgid "Enter the number of weeks between repetitions of the alarm"
-msgctxt "@info:whatsthis"
-msgid "Enter the number of weeks between repetitions of the alarm"
-msgstr "Rhowch y nifer o wythnosau rhwng ailadroddion y larwm"
-
-#: recurrenceedit.cpp:1329
-#, fuzzy
-#| msgid "Select the days of the week on which to repeat the alarm"
-msgctxt "@info:whatsthis"
-msgid "Select the days of the week on which to repeat the alarm"
-msgstr "Dewiswch ddiwrnod yr wythnos i ailadrodd y larwm arni"
-
-#: recurrenceedit.cpp:1352
-#, fuzzy
-msgctxt "@option:radio On day number in the month"
-msgid "O&n day"
-msgstr "Heddiw"
-
-#: recurrenceedit.cpp:1356
-#, fuzzy
-#| msgid "Repeat the alarm on the selected day of the month"
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm on the selected day of the month"
-msgstr "Ailadrodd y larwm ar y diwrnod dewisiedig o'r mis"
-
-#: recurrenceedit.cpp:1363
-#, fuzzy
-#| msgctxt "Last day of month"
-#| msgid "Last"
-msgctxt "@item:inlistbox Last day of month"
-msgid "Last"
-msgstr "Olaf"
-
-#: recurrenceedit.cpp:1366
-#, fuzzy
-#| msgid "Select the day of the month on which to repeat the alarm"
-msgctxt "@info:whatsthis"
-msgid "Select the day of the month on which to repeat the alarm"
-msgstr "Dewiswch ba ddiwrnod o'r mis i ailadrodd y larwm arno"
-
-#: recurrenceedit.cpp:1380
-#, fuzzy
-#| msgctxt "On the 1st Tuesday"
-#| msgid "On t&he"
-msgctxt "@option:radio On the 1st Tuesday"
-msgid "On t&he"
-msgstr "Ar &y"
-
-#: recurrenceedit.cpp:1384
-#, fuzzy
-#| msgid ""
-#| "Repeat the alarm on one day of the week, in the selected week of the month"
-msgctxt "@info:whatsthis"
-msgid ""
-"Repeat the alarm on one day of the week, in the selected week of the month"
-msgstr ""
-"Ailadrodd y larwm ar un diwrnod o'r wythnos, yn wythnos ddewisiedig y mis"
-
-#: recurrenceedit.cpp:1388
-#, fuzzy
-#| msgid "1st"
-msgctxt "@item:inlistbox"
-msgid "1st"
-msgstr "1af"
-
-#: recurrenceedit.cpp:1389
-#, fuzzy
-#| msgid "2nd"
-msgctxt "@item:inlistbox"
-msgid "2nd"
-msgstr "2il"
-
-#: recurrenceedit.cpp:1390
-#, fuzzy
-#| msgid "3rd"
-msgctxt "@item:inlistbox"
-msgid "3rd"
-msgstr "3ydd"
-
-#: recurrenceedit.cpp:1391
-#, fuzzy
-#| msgid "4th"
-msgctxt "@item:inlistbox"
-msgid "4th"
-msgstr "4ydd"
-
-#: recurrenceedit.cpp:1392
-#, fuzzy
-#| msgid "5th"
-msgctxt "@item:inlistbox"
-msgid "5th"
-msgstr "5ed"
-
-#: recurrenceedit.cpp:1393
-#, fuzzy
-#| msgctxt "Last day of month"
-#| msgid "Last"
-msgctxt "@item:inlistbox Last Monday in March"
-msgid "Last"
-msgstr "Olaf"
-
-#: recurrenceedit.cpp:1394
-#, fuzzy
-#| msgid "2nd Last"
-msgctxt "@item:inlistbox"
-msgid "2nd Last"
-msgstr "Ail Olaf"
-
-#: recurrenceedit.cpp:1395
-#, fuzzy
-#| msgid "3rd Last"
-msgctxt "@item:inlistbox"
-msgid "3rd Last"
-msgstr "Trydydd Olaf"
-
-#: recurrenceedit.cpp:1396
-#, fuzzy
-#| msgid "4th Last"
-msgctxt "@item:inlistbox"
-msgid "4th Last"
-msgstr "Pedwerydd Olaf"
-
-#: recurrenceedit.cpp:1397
-#, fuzzy
-#| msgid "5th Last"
-msgctxt "@item:inlistbox"
-msgid "5th Last"
-msgstr "Pumed Olaf"
-
-#: recurrenceedit.cpp:1400
-msgctxt "@item:inlistbox Every (Monday...) in month"
-msgid "Every"
-msgstr ""
-
-#: recurrenceedit.cpp:1403
-#, fuzzy
-#| msgid "Select the week of the month in which to repeat the alarm"
-msgctxt "@info:whatsthis"
-msgid "Select the week of the month in which to repeat the alarm"
-msgstr "Dewiswch wythnos o'r mis i ailadrodd y larwm ynddi"
-
-#: recurrenceedit.cpp:1418
-#, fuzzy
-#| msgid "Select the day of the week on which to repeat the alarm"
-msgctxt "@info:whatsthis"
-msgid "Select the day of the week on which to repeat the alarm"
-msgstr "Dewiswch ddiwrnod yr wythnos i ailadrodd y larwm arni"
-
-#: recurrenceedit.cpp:1541
-#, fuzzy
-#| msgid "month(s)"
-msgctxt "@label Time unit for user-entered number"
-msgid "month(s)"
-msgstr "mis"
-
-#: recurrenceedit.cpp:1542
-#, fuzzy
-#| msgid "Enter the number of months between repetitions of the alarm"
-msgctxt "@info:whatsthis"
-msgid "Enter the number of months between repetitions of the alarm"
-msgstr "Rhowch y nifer o fisoedd rhwng ailadroddion y larwm"
-
-#: recurrenceedit.cpp:1553
-#, fuzzy
-#| msgid "year(s)"
-msgctxt "@label Time unit for user-entered number"
-msgid "year(s)"
-msgstr "blwyddyn"
-
-#: recurrenceedit.cpp:1554
-#, fuzzy
-#| msgid "Enter the number of years between repetitions of the alarm"
-msgctxt "@info:whatsthis"
-msgid "Enter the number of years between repetitions of the alarm"
-msgstr "Rhowch y nifer o flynyddoedd rhwn ailadroddion y larwm"
-
-#: recurrenceedit.cpp:1561
-#, fuzzy
-#| msgid "Monthly"
-msgctxt "@label List of months to select"
-msgid "Months:"
-msgstr "Misol"
-
-#: recurrenceedit.cpp:1583
-#, fuzzy
-#| msgid "Select the months of the year in which to repeat the alarm"
-msgctxt "@info:whatsthis"
-msgid "Select the months of the year in which to repeat the alarm"
-msgstr "Dewiswch fis o'r flwyddyn i ailadrodd y larwm ynddi"
-
-#: recurrenceedit.cpp:1592
-msgctxt "@label:listbox"
-msgid "February 2&9th alarm in non-leap years:"
-msgstr ""
-
-#: recurrenceedit.cpp:1596
-#, fuzzy
-#| msgid "None"
-msgctxt "@item:inlistbox No date"
-msgid "None"
-msgstr "Dim"
-
-#: recurrenceedit.cpp:1597
-#, fuzzy
-msgctxt "@item:inlistbox 1st March (short form)"
-msgid "1 Mar"
-msgstr "1 Flwyddyn"
-
-#: recurrenceedit.cpp:1598
-msgctxt "@item:inlistbox 28th February (short form)"
-msgid "28 Feb"
-msgstr ""
-
-#: recurrenceedit.cpp:1604
-msgctxt "@info:whatsthis"
-msgid ""
-"Select which date, if any, the February 29th alarm should trigger in non-"
-"leap years"
-msgstr ""
-
-#: recurrenceedit.cpp:1688
-#, fuzzy
-#| msgid "No month selected"
-msgctxt "@info"
-msgid "No month selected"
-msgstr "Dim mis wedi'i ddewis"
-
-#: reminder.cpp:49
-#, fuzzy
-msgctxt "@option:check"
-msgid "Reminder for first recurrence only"
-msgstr "Rhaid i'r adeg atgof fod yn fyrach na'r cyfnod ail-ddigwydd"
-
-#: reminder.cpp:51
-#, fuzzy
-#| msgid "in advance"
-msgctxt "@item:inlistbox"
-msgid "in advance"
-msgstr "o flaen llaw"
-
-#: reminder.cpp:65
-#, fuzzy
-#| msgid "Rem&inder:"
-msgctxt "@option:check"
-msgid "Reminder:"
-msgstr "&Atgof:"
-
-#: reminder.cpp:69
-msgctxt "@item:inlistbox"
-msgid "afterwards"
-msgstr ""
-
-#: reminder.cpp:91
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Display the reminder only for the first time the alarm is scheduled"
-msgstr "Dangos atgof cyn y larwm"
-
-#: repetitionbutton.cpp:87
-#, fuzzy
-msgctxt "@title:window"
-msgid "Alarm Sub-Repetition"
-msgstr "Ffurfwedd Larwm"
-
-#: repetitionbutton.cpp:165
-#, fuzzy
-#| msgid "Repeat"
-msgctxt "@option:check Repeat every 10 minutes"
-msgid "Repeat every"
-msgstr "Ailadrodd"
-
-#: repetitionbutton.cpp:166
-msgctxt "@info:whatsthis"
-msgid ""
-"Instead of the alarm triggering just once at each recurrence, checking this "
-"option makes the alarm trigger multiple times at each recurrence."
-msgstr ""
-
-#: repetitionbutton.cpp:168
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Enter the time between repetitions of the alarm"
-msgstr "Rhowch y nifer o ddiwrnodau rhwng ailadroddion y larwm"
-
-#: repetitionbutton.cpp:186
-#, fuzzy
-msgctxt "@option:radio"
-msgid "Number of repetitions:"
-msgstr "Ffurfwedd Larwm"
-
-#: repetitionbutton.cpp:188
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid ""
-"Check to specify the number of times the alarm should repeat after each "
-"recurrence"
-msgstr "Rhowch gyfanswm nifer yr adegau i achosi'r larwm"
-
-#: repetitionbutton.cpp:196
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid ""
-"Enter the number of times to trigger the alarm after its initial occurrence"
-msgstr "Rhowch gyfanswm nifer yr adegau i achosi'r larwm"
-
-#: repetitionbutton.cpp:204
-#, fuzzy
-#| msgid "&Duration:"
-msgctxt "@option:radio"
-msgid "Duration:"
-msgstr "&Hyd:"
-
-#: repetitionbutton.cpp:206
-msgctxt "@info:whatsthis"
-msgid "Check to specify how long the alarm is to be repeated"
-msgstr ""
-
-#: repetitionbutton.cpp:212
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Enter the length of time to repeat the alarm"
-msgstr "Rhowch yr amser olaf i ailadrodd y larwm."
-
-#: resourceconfigdialog.cpp:48 resourceselector.cpp:238
-#, fuzzy
-#| msgid "Alarm Configuration"
-msgctxt "@title:window"
-msgid "Calendar Configuration"
-msgstr "Ffurfwedd Larwm"
-
-#: resourceconfigdialog.cpp:61
-#, fuzzy
-msgctxt "@title:group"
-msgid "General Settings"
-msgstr "Gweld Gosodiadau"
-
-#: resourceconfigdialog.cpp:63
-#, fuzzy
-msgctxt "@label:textbox Calendar name"
-msgid "Name:"
-msgstr "Enw"
-
-#: resourceconfigdialog.cpp:68
-#, fuzzy
-msgctxt "@option:check"
-msgid "Read-only"
-msgstr "darllen-yn-unig"
-
-#: resourceconfigdialog.cpp:81
-#, fuzzy, kde-format
-msgctxt "@title:group"
-msgid "<resource>%1</resource> Calendar Settings"
-msgstr "Gweld Gosodiadau"
-
-#: resourceconfigdialog.cpp:123
-msgctxt "@info"
-msgid "Please enter a calendar name."
-msgstr ""
-
-#: resourcemodelview.cpp:119 resources/alarmresource.cpp:360
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Disabled (wrong alarm type)"
-msgstr "Lliw larwm da&rfodedig:"
-
-#: resources/alarmresource.cpp:354 resourceselector.cpp:856
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Active alarms"
-msgstr "Gweithredoli %1"
-
-#: resources/alarmresource.cpp:355 resourceselector.cpp:858
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Archived alarms"
-msgstr "Gweithredoli %1"
-
-#: resources/alarmresource.cpp:356 resourceselector.cpp:860
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Alarm templates"
-msgstr "Testun Larwm"
-
-#: resources/alarmresource.cpp:359 resourceselector.cpp:865
-msgctxt "@info/plain"
-msgid "Read-write"
-msgstr ""
-
-#: resources/alarmresource.cpp:360 resourceselector.cpp:867
-#, fuzzy
-#| msgid "Enable"
-msgctxt "@info/plain"
-msgid "Enabled"
-msgstr "Galluogi"
-
-#: resources/alarmresource.cpp:361 resourceselector.cpp:871
-#, fuzzy
-#| msgid "None"
-msgctxt "@info/plain Parameter in 'Default calendar: Yes/No'"
-msgid "No"
-msgstr "Dim"
-
-#: resources/alarmresource.cpp:361 resourceselector.cpp:870
-msgctxt "@info/plain Parameter in 'Default calendar: Yes/No'"
-msgid "Yes"
-msgstr ""
-
-#: resources/alarmresource.cpp:363
-#, kde-format
-msgctxt "@info"
-msgid ""
-"<title>%1</title><para>Calendar type: %2<nl/>Contents: %3<nl/>%4: <filename>"
-"%5</filename><nl/>Permissions: %6<nl/>Status: %7<nl/>Default calendar: %8</"
-"para>"
-msgstr ""
-
-#: resources/alarmresources.cpp:159
-#, fuzzy, kde-format
-#| msgid ""
-#| "Invalid email attachment:\n"
-#| "%1"
-msgctxt "@info"
-msgid "%1: invalid calendar file name: <filename>%2</filename>"
-msgstr ""
-"Atodiad ebost annilys:\n"
-" %1"
-
-#: resources/alarmresources.cpp:167
-#, fuzzy, kde-format
-#| msgid "%1: file name not permitted: %2"
-msgctxt "@info"
-msgid "%1: file name not permitted: <filename>%2</filename>"
-msgstr "%1: ni chaniateir yr enw ffeil: %2"
-
-#: resources/resourcelocaldirwidget.cpp:40
-#: resources/resourcelocalwidget.cpp:42
-#, fuzzy
-#| msgid "Action"
-msgctxt "@label:textbox"
-msgid "Location:"
-msgstr "Gweithred"
-
-#: resources/resourcelocaldirwidget.cpp:72
-#: resources/resourcelocalwidget.cpp:77
-msgctxt "@info"
-msgid "No location specified.  The calendar will be invalid."
-msgstr ""
-
-#: resources/resourceremotewidget.cpp:42
-msgctxt "@label:textbox"
-msgid "Download from:"
-msgstr ""
-
-#: resources/resourceremotewidget.cpp:48
-msgctxt "@label:textbox"
-msgid "Upload to:"
-msgstr ""
-
-#: resources/resourceremotewidget.cpp:94
-msgctxt "@info"
-msgid "You have specified no upload URL: the alarm calendar will be read-only."
-msgstr ""
-
-#: resources/resourcewidget.cpp:54
-#, kde-format
-msgctxt "@info"
-msgid ""
-"Calendar <resource>%1</resource> cannot be made writable since it either was "
-"not created by <application>KAlarm</application>, or was created by a newer "
-"version of <application>KAlarm</application>"
-msgstr ""
-
-#: resourceselector.cpp:100
-#, fuzzy
-msgctxt "@title:group"
-msgid "Calendars"
-msgstr "URL y ffeil galendr"
-
-#: resourceselector.cpp:104
-#, fuzzy
-msgctxt "@item:inlistbox"
-msgid "Active Alarms"
-msgstr "Gweithredoli %1"
-
-#: resourceselector.cpp:105
-#, fuzzy
-msgctxt "@item:inlistbox"
-msgid "Archived Alarms"
-msgstr "Gweithredoli %1"
-
-#: resourceselector.cpp:106
-#, fuzzy
-msgctxt "@item:inlistbox"
-msgid "Alarm Templates"
-msgstr "Testun Larwm"
-
-#: resourceselector.cpp:108
-msgctxt "@info:whatsthis"
-msgid "Choose which type of data to show alarm calendars for"
-msgstr ""
-
-#: resourceselector.cpp:125
-msgctxt "@info:whatsthis"
-msgid ""
-"List of available calendars of the selected type. The checked state shows "
-"whether a calendar is enabled (checked) or disabled (unchecked). The default "
-"calendar is shown in bold."
-msgstr ""
-
-#: resourceselector.cpp:136 templatedlg.cpp:110
-#, fuzzy
-msgctxt "@action:button"
-msgid "Edit..."
-msgstr "&Golygu..."
-
-#: resourceselector.cpp:141
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Edit the highlighted calendar"
-msgstr "Gwaredu'r eitem sy'n amlygedig ar hyn o bryd o'r rhestr eithriadau"
-
-#: resourceselector.cpp:142
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Remove the highlighted calendar from the list.</para><para>The "
-"calendar itself is left intact, and may subsequently be reinstated in the "
-"list if desired.</para>"
-msgstr ""
-
-#: resourceselector.cpp:175
-#, fuzzy
-msgctxt "@info:tooltip"
-msgid "Add a new active alarm calendar"
-msgstr "Gwall wrth galw KMail"
-
-#: resourceselector.cpp:179
-#, fuzzy
-msgctxt "@info:tooltip"
-msgid "Add a new archived alarm calendar"
-msgstr "Gwall wrth galw KMail"
-
-#: resourceselector.cpp:183
-#, fuzzy
-msgctxt "@info:tooltip"
-msgid "Add a new alarm template calendar"
-msgstr "Gwall wrth galw KMail"
-
-#: resourceselector.cpp:239
-msgctxt "@info"
-msgid "Select storage type of new calendar:"
-msgstr ""
-
-#: resourceselector.cpp:246
-#, kde-format
-msgctxt "@info"
-msgid "Unable to create calendar of type <resource>%1</resource>."
-msgstr ""
-
-#: resourceselector.cpp:249
-#, fuzzy, kde-format
-#| msgid "%1: wrong calendar file"
-msgctxt "@info/plain"
-msgid "%1 calendar"
-msgstr "%1: ffeil galendr anghywir"
-
-#: resourceselector.cpp:363
-#, fuzzy
-msgctxt "@info"
-msgid "You cannot make your default active alarm calendar read-only."
-msgstr "A ydych wir am ddileu'r larwm dewisiedig?"
-
-#: resourceselector.cpp:370
-#, fuzzy
-msgctxt "@info"
-msgid ""
-"You cannot make your default archived alarm calendar read-only while expired "
-"alarms are configured to be kept."
-msgstr "A ydych wir am ddileu'r larwm dewisiedig?"
-
-#: resourceselector.cpp:374
-#, fuzzy
-msgctxt "@info"
-msgid "Do you really want to make your default calendar read-only?"
-msgstr "A ydych wir am ddileu'r larwm dewisiedig?"
-
-#: resourceselector.cpp:427
-#, fuzzy
-msgctxt "@info"
-msgid "You cannot remove your default active alarm calendar."
-msgstr "A ydych wir am ddileu'r larwm dewisiedig?"
-
-#: resourceselector.cpp:434
-#, fuzzy
-msgctxt "@info"
-msgid ""
-"You cannot remove your default archived alarm calendar while expired alarms "
-"are configured to be kept."
-msgstr "A ydych wir am ddileu'r larwm dewisiedig?"
-
-#: resourceselector.cpp:450
-#, kde-format
-msgctxt "@info"
-msgid "<para>It also contains:%1</para>"
-msgstr ""
-
-#: resourceselector.cpp:451
-#, kde-format
-msgctxt "@info"
-msgid ""
-"<para><resource>%1</resource> is the default calendar for:%2</para>"
-"%3<para>Do you really want to remove it from all calendar lists?</para>"
-msgstr ""
-
-#: resourceselector.cpp:455 resourceselector.cpp:463
-#, fuzzy, kde-format
-msgctxt "@info"
-msgid ""
-"Do you really want to remove your default calendar (<resource>%1</resource>) "
-"from the list?"
-msgstr "A ydych wir am ddileu'r larwm dewisiedig?"
-
-#: resourceselector.cpp:458
-#, kde-format
-msgctxt "@info"
-msgid ""
-"<para><resource>%1</resource> contains:%2</para><para>Do you really want to "
-"remove it from all calendar lists?</para>"
-msgstr ""
-
-#: resourceselector.cpp:461 resourceselector.cpp:464
-#, fuzzy, kde-format
-msgctxt "@info"
-msgid ""
-"Do you really want to remove the calendar <resource>%1</resource> from the "
-"list?"
-msgstr "A ydych wir am ddileu'r larwm dewisiedig?"
-
-#: resourceselector.cpp:501
-msgctxt "@action Reload calendar"
-msgid "Re&load"
-msgstr ""
-
-#: resourceselector.cpp:505
-#, fuzzy
-msgctxt "@action"
-msgid "&Save"
-msgstr "&Anfon"
-
-#: resourceselector.cpp:509
-#, fuzzy
-msgctxt "@action"
-msgid "Show &Details"
-msgstr "Dangos Amserau &Larwm"
-
-#: resourceselector.cpp:512
-#, fuzzy
-msgctxt "@action"
-msgid "Set &Color..."
-msgstr "Wynebfath a Lliw"
-
-#: resourceselector.cpp:515
-#, fuzzy
-msgctxt "@action"
-msgid "Clear C&olor"
-msgstr "Wynebfath a Lliw"
-
-#: resourceselector.cpp:522
-msgctxt "@action"
-msgid "&Update Calendar Format"
-msgstr ""
-
-#: resourceselector.cpp:526
-#, fuzzy
-msgctxt "@action"
-msgid "&Remove"
-msgstr "&Gwaredu"
-
-#: resourceselector.cpp:532
-#, fuzzy
-msgctxt "@action"
-msgid "&Add..."
-msgstr "Ychwanegu..."
-
-#: resourceselector.cpp:535
-#, fuzzy
-msgctxt "@action"
-msgid "Im&port..."
-msgstr "Mewnforio &Penblwyddi..."
-
-#: resourceselector.cpp:621
-#, fuzzy
-msgctxt "@action"
-msgid "Use as &Default for Active Alarms"
-msgstr "Defnyddio wynebfath &ragosodedig"
-
-#: resourceselector.cpp:622
-#, fuzzy
-msgctxt "@action"
-msgid "Use as &Default for Archived Alarms"
-msgstr "Defnyddio wynebfath &ragosodedig"
-
-#: resourceselector.cpp:623
-#, fuzzy
-msgctxt "@action"
-msgid "Use as &Default for Alarm Templates"
-msgstr "Dileu Larwm"
-
-#: resourceselector.cpp:740
-#, fuzzy
-msgctxt "@info/plain"
-msgid "It is not an active alarm calendar."
-msgstr "Gwall wrth galw KMail"
-
-#: resourceselector.cpp:743
-#, fuzzy
-msgctxt "@info/plain"
-msgid "It is not an archived alarm calendar."
-msgstr "Gwall wrth galw KMail"
-
-#: resourceselector.cpp:746
-#, fuzzy
-msgctxt "@info/plain"
-msgid "It is not an alarm template calendar."
-msgstr "Gwall wrth galw KMail"
-
-#: resourceselector.cpp:751
-#, kde-format
-msgctxt "@info"
-msgid ""
-"<para>Calendar <resource>%1</resource> has been disabled:</para><para>%2</"
-"para>"
-msgstr ""
-
-#: resourceselector.cpp:861
-msgctxt "@info/plain List separator"
-msgid ", "
-msgstr ""
-
-#: resourceselector.cpp:873
-#, kde-format
-msgctxt "@info"
-msgid ""
-"<title>%1</title><para>ID: %2<nl/>Calendar type: %3<nl/>Contents: %4<nl/>%5: "
-"<filename>%6</filename><nl/>Permissions: %7<nl/>Status: %8<nl/>Default "
-"calendar: %9</para>"
-msgstr ""
-
-#: rtcwakeaction.cpp:89
-#, kde-format
-msgctxt "@text/plain"
-msgid "Could not run <command>%1</command> to set wake from suspend"
-msgstr ""
-
-#: rtcwakeaction.cpp:92
-#, kde-format
-msgctxt "@text/plain"
-msgid ""
-"Error setting wake from suspend.<nl/>Command was: <command>%1</command><nl/"
-">Error code: %2."
-msgstr ""
-
-#: sounddlg.cpp:54
-#, fuzzy
-#| msgid "Repeat"
-msgctxt "@option:check"
-msgid "Repeat"
-msgstr "Ailadrodd"
-
-#: sounddlg.cpp:158
-#, fuzzy
-#| msgid "Sound &file:"
-msgctxt "@label"
-msgid "Sound file:"
-msgstr "&Ffeil sain:"
-
-#: sounddlg.cpp:172 sounddlg.cpp:455
-msgctxt "@info:tooltip"
-msgid "Test the sound"
-msgstr ""
-
-#: sounddlg.cpp:173 sounddlg.cpp:456
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Play the selected sound file."
-msgstr "Dewiswch ffeil sain"
-
-#: sounddlg.cpp:179
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Enter the name or URL of a sound file to play."
-msgstr "Rhowch enw ffeil destun neu ddelwedd, neu URL iddi, i'w dangos."
-
-#: sounddlg.cpp:191
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Select a sound file to play."
-msgstr "Dewiswch ffeil destun i'w dangos."
-
-#: sounddlg.cpp:205
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid ""
-"If checked, the sound file will be played repeatedly for as long as the "
-"message is displayed."
-msgstr "Os yn frith, dangosa'r larwm gynnwys ffeil destun neu ffeil ddelwedd."
-
-#: sounddlg.cpp:215
-#, fuzzy
-msgctxt "@label:spinbox Length of time to pause between repetitions"
-msgid "Pause between repetitions:"
-msgstr "Cyfnod rhwng ail-ddigwyddiadau'r larwm"
-
-#: sounddlg.cpp:222 sounddlg.cpp:276
-#, fuzzy
-#| msgid "seconds"
-msgctxt "@label"
-msgid "seconds"
-msgstr "eiliad"
-
-#: sounddlg.cpp:224
-#, fuzzy
-#| msgid "Enter the number of days between repetitions of the alarm"
-msgctxt "@info:whatsthis"
-msgid "Enter how many seconds to pause between repetitions."
-msgstr "Rhowch y nifer o ddiwrnodau rhwng ailadroddion y larwm"
-
-#: sounddlg.cpp:228
-#, fuzzy
-#| msgid "Volume"
-msgctxt "@title:group Sound volume"
-msgid "Volume"
-msgstr "Lefel Sain"
-
-#: sounddlg.cpp:243
-#, fuzzy
-msgctxt "@option:check"
-msgid "Set volume"
-msgstr "&Ffeil sain:"
-
-#: sounddlg.cpp:246
-msgctxt "@info:whatsthis"
-msgid "Select to choose the volume for playing the sound file."
-msgstr ""
-
-#: sounddlg.cpp:253
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Choose the volume for playing the sound file."
-msgstr "Rhowch enw ffeil destun neu ddelwedd, neu URL iddi, i'w dangos."
-
-#: sounddlg.cpp:258
-#, fuzzy
-#| msgid "Fade"
-msgctxt "@option:check"
-msgid "Fade"
-msgstr "Pylu"
-
-#: sounddlg.cpp:261
-msgctxt "@info:whatsthis"
-msgid "Select to fade the volume when the sound file first starts to play."
-msgstr ""
-
-#: sounddlg.cpp:269
-#, fuzzy
-#| msgid "Invalid time"
-msgctxt "@label:spinbox Time period over which to fade the sound"
-msgid "Fade time:"
-msgstr "Amser annilys"
-
-#: sounddlg.cpp:278
-msgctxt "@info:whatsthis"
-msgid ""
-"Enter how many seconds to fade the sound before reaching the set volume."
-msgstr ""
-
-#: sounddlg.cpp:285
-msgctxt "@label:slider"
-msgid "Initial volume:"
-msgstr ""
-
-#: sounddlg.cpp:293
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Choose the initial volume for playing the sound file."
-msgstr "Rhowch enw ffeil destun neu ddelwedd, neu URL iddi, i'w dangos."
-
-#: soundpicker.cpp:50
-#, fuzzy
-msgctxt "@label:listbox Listbox providing audio options"
-msgid "Sound:"
-msgstr "&Sain"
-
-#: soundpicker.cpp:51
-#, fuzzy
-#| msgid "None"
-msgctxt "@item:inlistbox No sound"
-msgid "None"
-msgstr "Dim"
-
-#: soundpicker.cpp:52
-#, fuzzy
-#| msgid "Beep"
-msgctxt "@item:inlistbox"
-msgid "Beep"
-msgstr "Blîp"
-
-#: soundpicker.cpp:53
-#, fuzzy
-#| msgid "Speak"
-msgctxt "@item:inlistbox"
-msgid "Speak"
-msgstr "Llafaru"
-
-#: soundpicker.cpp:54
-#, fuzzy
-msgctxt "@item:inlistbox"
-msgid "Sound file"
-msgstr "&Ffeil sain:"
-
-#: soundpicker.cpp:98
-#, fuzzy
-msgctxt "@info:tooltip"
-msgid "Configure sound file"
-msgstr "Dewiswch ffeil sain"
-
-#: soundpicker.cpp:99
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Configure a sound file to play when the alarm is displayed."
-msgstr ""
-"Dewiswch ffeil sain i'w chanu pan ddengys y neges. Os nad oes ffeil sain "
-"wedi'i dewis, clywir blîp."
-
-#: soundpicker.cpp:132
-#, fuzzy, kde-format
-msgctxt "@info:whatsthis"
-msgid "<interface>%1</interface>: the message is displayed silently."
-msgstr "Blîpio pan ddengys y neges"
-
-#: soundpicker.cpp:133
-#, kde-format
-msgctxt "@info:whatsthis"
-msgid "<interface>%1</interface>: a simple beep is sounded."
-msgstr ""
-
-#: soundpicker.cpp:134
-#, kde-format
-msgctxt "@info:whatsthis"
-msgid ""
-"<interface>%1</interface>: an audio file is played. You will be prompted to "
-"choose the file and set play options."
-msgstr ""
-
-#: soundpicker.cpp:138
-#, fuzzy, kde-format
-msgctxt "@info:whatsthis"
-msgid "<interface>%1</interface>: the message text is spoken."
-msgstr "Blîpio pan ddengys y neges"
-
-#: soundpicker.cpp:140
-#, kde-format
-msgctxt "@info:whatsthis Combination of multiple whatsthis items"
-msgid ""
-"<para>Choose a sound to play when the message is displayed:<list><item>%1</"
-"item><item>%2</item><item>%3</item><item>%4</item></list></para>"
-msgstr ""
-
-#: soundpicker.cpp:148
-#, kde-format
-msgctxt "@info:whatsthis Combination of multiple whatsthis items"
-msgid ""
-"<para>Choose a sound to play when the message is displayed:<list><item>%1</"
-"item><item>%2</item><item>%3</item></list></para>"
-msgstr ""
-
-#: soundpicker.cpp:268
-#, fuzzy
-msgctxt "@title:window"
-msgid "Sound File"
-msgstr "Ffeiliau Sain"
-
-#: soundpicker.cpp:330
-#, fuzzy
-#| msgid "Choose Sound File"
-msgctxt "@title:window"
-msgid "Choose Sound File"
-msgstr "Dewiswch Ffeil Sain"
-
-#: specialactions.cpp:48
-#, fuzzy
-msgctxt "@action:button"
-msgid "Special Actions..."
-msgstr "Gosodiadau Larwm Ebost"
-
-#: specialactions.cpp:56
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Specify actions to execute before and after the alarm is displayed."
-msgstr ""
-"Brithwch i ddefnyddio'r wynebfath ragosodedig sy'n gyfredol pan ddengys y "
-"larwm."
-
-#: specialactions.cpp:107
-#, fuzzy
-msgctxt "@title:window"
-msgid "Special Alarm Actions"
-msgstr "Gosodiadau Larwm Ebost"
-
-#: specialactions.cpp:165
-#, fuzzy
-msgctxt "@title:group"
-msgid "Pre-Alarm Action"
-msgstr "Gosodiadau Larwm Ebost"
-
-#: specialactions.cpp:175 specialactions.cpp:210
-#, fuzzy
-#| msgid "Co&mmand"
-msgctxt "@label:textbox"
-msgid "Command:"
-msgstr "Gorchy&myn"
-
-#: specialactions.cpp:180
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Enter a shell command to execute before the alarm is displayed.</"
-"para><para>Note that it is executed only when the alarm proper is displayed, "
-"not when a reminder or deferred alarm is displayed.</para><para><note>KAlarm "
-"will wait for the command to complete before displaying the alarm.</note></"
-"para>"
-msgstr ""
-
-#: specialactions.cpp:186
-msgctxt "@option:check"
-msgid "Execute for deferred alarms"
-msgstr ""
-
-#: specialactions.cpp:187
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>If unchecked, the command is only executed before the alarm proper is "
-"displayed.</para><para>If checked, the pre-alarm command is also executed "
-"before a deferred alarm is displayed.</para>"
-msgstr ""
-
-#: specialactions.cpp:191
-msgctxt "@option:check"
-msgid "Cancel alarm on error"
-msgstr ""
-
-#: specialactions.cpp:192
-msgctxt "@info:whatsthis"
-msgid ""
-"Cancel the alarm if the pre-alarm command fails, i.e. do not display the "
-"alarm or execute any post-alarm action command."
-msgstr ""
-
-#: specialactions.cpp:195
-msgctxt "@option:check"
-msgid "Do not notify errors"
-msgstr ""
-
-#: specialactions.cpp:196
-#, fuzzy
-#| msgid ""
-#| "The default setting for the recurrence rule in the alarm edit dialog."
-msgctxt "@info:whatsthis"
-msgid ""
-"Do not show error status or error message if the pre-alarm command fails."
-msgstr "Rhagosodiad y reol ailddigwydd yn yr ymgom olygu larymau."
-
-#: specialactions.cpp:200
-#, fuzzy
-msgctxt "@title:group"
-msgid "Post-Alarm Action"
-msgstr "Gosodiadau Larwm Ebost"
-
-#: specialactions.cpp:214
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Enter a shell command to execute after the alarm window is closed.</"
-"para><para>Note that it is not executed after closing a reminder window. If "
-"you defer the alarm, it is not executed until the alarm is finally "
-"acknowledged or closed.</para>"
-msgstr ""
-
-#: templatedlg.cpp:69
-#, fuzzy
-msgctxt "@title:window"
-msgid "Alarm Templates"
-msgstr "Testun Larwm"
-
-#: templatedlg.cpp:95 templatelistview.cpp:44
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "The list of alarm templates"
-msgstr "Rhowch destun y neges larwm. Gall fod yn aml-linell."
-
-#: templatedlg.cpp:103
-#, fuzzy
-#| msgid "&New..."
-msgctxt "@action:button"
-msgid "New"
-msgstr "&Newydd..."
-
-#: templatedlg.cpp:104
-#, fuzzy
-#| msgid "&New..."
-msgctxt "@action"
-msgid "New"
-msgstr "&Newydd..."
-
-#: templatedlg.cpp:107
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Create a new alarm template"
-msgstr "Gwall wrth galw KMail"
-
-#: templatedlg.cpp:112
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Edit the currently highlighted alarm template"
-msgstr "Gwaredu'r eitem sy'n amlygedig ar hyn o bryd o'r rhestr eithriadau"
-
-#: templatedlg.cpp:115
-#, fuzzy
-#| msgid "Co&py"
-msgctxt "@action:button"
-msgid "Copy"
-msgstr "Co&pïo"
-
-#: templatedlg.cpp:117
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid ""
-"Create a new alarm template based on a copy of the currently highlighted "
-"template"
-msgstr "Gwaredu'r eitem sy'n amlygedig ar hyn o bryd o'r rhestr eithriadau"
-
-#: templatedlg.cpp:122
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Delete the currently highlighted alarm template"
-msgstr "Gwaredu'r eitem sy'n amlygedig ar hyn o bryd o'r rhestr eithriadau"
-
-#: templatedlg.cpp:211
-#, fuzzy, kde-format
-msgctxt "@info"
-msgid "Do you really want to delete the selected alarm template?"
-msgid_plural "Do you really want to delete the %1 selected alarm templates?"
-msgstr[0] "A ydych wir am ddileu'r larwm dewisiedig?"
-msgstr[1] " A ydych wir am ddileu'r %1 lawrm dewisiedig?"
-
-#: templatedlg.cpp:213
-#, fuzzy
-msgctxt "@title:window"
-msgid "Delete Alarm Template"
-msgid_plural "Delete Alarm Templates"
-msgstr[0] "Dileu Larwm"
-msgstr[1] " Dileu Larymau"
-
-#: templatepickdlg.cpp:46
-#, fuzzy
-msgctxt "@title:window"
-msgid "Choose Alarm Template"
-msgstr "Dangos Amserau &Larwm"
-
-#: templatepickdlg.cpp:77
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Select a template to base the new alarm on."
-msgstr "Rhowch y dyddiad i drefnlennu'r larwm."
-
-#: traywindow.cpp:100
-#, fuzzy
-#| msgid "New Alarm"
-msgctxt "@action"
-msgid "&New Alarm"
-msgstr "Larwm Newydd"
-
-#: traywindow.cpp:333
-#, fuzzy
-msgid "Disabled"
-msgstr "Anal&luogi"
-
-#: traywindow.cpp:338
-msgctxt "@info:tooltip Brief: some alarms are disabled"
-msgid "(Some alarms disabled)"
-msgstr ""
-
-#: traywindow.cpp:408
-#, fuzzy, kde-format
-#| msgctxt "prefix + hours:minutes"
-#| msgid "(%1%2:%3)"
-msgctxt "@info/plain prefix + hours:minutes"
-msgid "(%1%2:%3)"
-msgstr "(%1%2:%3)"
-
-#: traywindow.cpp:410
-#, fuzzy, kde-format
-#| msgctxt "prefix + hours:minutes"
-#| msgid "%1%2:%3"
-msgctxt "@info/plain prefix + hours:minutes"
-msgid "%1%2:%3"
-msgstr "%1%2:%3"
-
-#: undo.cpp:440
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Alarm not found"
-msgstr "Ellyll Larymau heb ei ganfod"
-
-#: undo.cpp:441
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Error recreating alarm"
-msgstr "Gwall wrth galw KMail"
-
-#: undo.cpp:442
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Error recreating alarm template"
-msgstr "Gwall wrth galw KMail"
-
-#: undo.cpp:443
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Cannot reactivate archived alarm"
-msgstr "Dileu'r holl larymau darfodedig cyfredol"
-
-#: undo.cpp:444
-msgctxt "@info/plain"
-msgid "Program error"
-msgstr ""
-
-#: undo.cpp:445
-#, fuzzy
-#| msgid "Unknown error"
-msgctxt "@info/plain"
-msgid "Unknown error"
-msgstr "Gwall anhysbys"
-
-#: undo.cpp:447
-#, fuzzy, kde-format
-#| msgctxt "Hours and Minutes"
-#| msgid "%1H %2M"
-msgctxt "@info Undo-action: message"
-msgid "%1: %2"
-msgstr "%1A %2M"
-
-#: undo.cpp:684
-#, fuzzy
-#| msgid "New Alarm"
-msgctxt "@info/plain Action to create a new alarm"
-msgid "New alarm"
-msgstr "Larwm Newydd"
-
-#: undo.cpp:686
-#, fuzzy
-msgctxt "@info/plain Action to delete an alarm"
-msgid "Delete alarm"
-msgstr ""
-"Dileu Larwm\n"
-" Dileu Larymau"
-
-#: undo.cpp:689
-#, fuzzy
-msgctxt "@info/plain Action to create a new alarm template"
-msgid "New template"
-msgstr ""
-"Dileu Larwm\n"
-" Dileu Larymau"
-
-#: undo.cpp:691
-#, fuzzy
-msgctxt "@info/plain Action to delete an alarm template"
-msgid "Delete template"
-msgstr ""
-"Dileu Larwm\n"
-" Dileu Larymau"
-
-#: undo.cpp:693
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Delete archived alarm"
-msgstr "Dileu'r holl larymau darfodedig cyfredol"
-
-#: undo.cpp:916
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Create multiple alarms"
-msgstr "Dileu'r holl larymau darfodedig cyfredol"
-
-#: undo.cpp:1022
-#, fuzzy
-#| msgid "Edit Alarm"
-msgctxt "@info/plain Action to edit an alarm"
-msgid "Edit alarm"
-msgstr "Golygu Larwm"
-
-#: undo.cpp:1024
-#, fuzzy
-msgctxt "@info/plain Action to edit an alarm template"
-msgid "Edit template"
-msgstr ""
-"Dileu Larwm\n"
-" Dileu Larymau"
-
-#: undo.cpp:1207
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Delete multiple alarms"
-msgstr "Dileu'r holl larymau darfodedig cyfredol"
-
-#: undo.cpp:1209
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Delete multiple templates"
-msgstr "Dileu'r holl larymau darfodedig cyfredol"
-
-#: undo.cpp:1216
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Delete multiple archived alarms"
-msgstr "Dileu'r holl larymau darfodedig cyfredol"
-
-#: undo.cpp:1259 undo.cpp:1303
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Reactivate alarm"
-msgstr "Gweithredoli %1"
-
-#: undo.cpp:1326
-#, fuzzy
-msgctxt "@info/plain"
-msgid "Reactivate multiple alarms"
-msgstr "Dileu'r holl larymau darfodedig cyfredol"
-
-#: wakedlg.cpp:56
-msgctxt "@title:window"
-msgid "Wake From Suspend"
-msgstr ""
-
-#: wakedlg.cpp:181
-#, fuzzy
-#| msgid "Next scheduled date and time of the alarm"
-msgctxt "@info"
-msgid "Cannot schedule wakeup time for a date-only alarm"
-msgstr "Dyddiad trefnlenedig nesaf ac amser y larwm"
-
-#: wakedlg.cpp:185
-msgctxt "@info"
-msgid ""
-"<para>This wakeup will cancel any existing wakeup which has been set by "
-"KAlarm or any other application, because your computer can only schedule a "
-"single wakeup time.</para><para><b>Note:</b> Wake From Suspend is not "
-"supported at all on some computers, especially older ones, and some "
-"computers only support setting a wakeup time up to 24 hours ahead. You may "
-"wish to set up a test alarm to check your system's capability.</para>"
 msgstr ""
 
 #, fuzzy
