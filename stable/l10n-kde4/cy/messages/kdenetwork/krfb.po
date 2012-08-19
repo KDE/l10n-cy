@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krfb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-07 04:51+0100\n"
+"POT-Creation-Date: 2012-08-19 15:40+0200\n"
 "PO-Revision-Date: 2004-01-06 16:42+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -20,6 +20,14 @@ msgstr ""
 "X-Generator: KBabel 1.2\n"
 "\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "KGyfieithu - Meddalwedd Gymraeg"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kyfieithu@dotmon.com"
 
 #: connectiondialog.cpp:35
 #, fuzzy
@@ -84,9 +92,8 @@ msgstr "%1@%2 (Penbwrdd wedi'i Rannu)"
 msgid "Invitation"
 msgstr "Trefnu &Gwahoddiadau"
 
-#. i18n: file: ui/invitewidget.ui:125
 #. i18n: ectx: property (text), widget (QPushButton, btnManageInvite)
-#: invitedialog.cpp:72 rc.cpp:63
+#: invitedialog.cpp:72 ui/invitewidget.ui:125
 #, no-c-format, kde-format
 msgid "&Manage Invitations (%1)..."
 msgstr "&Trefnu Gwahoddiadau (%1)..."
@@ -120,6 +127,49 @@ msgstr ""
 "symud eich pwyntydd llygoden new wthio bysyll.</p> <p>Os hoffech greu "
 "cyfrinair parhaol ar gyfer Rhannu Penbwrdd, caniatewch \"Cysylltiadau "
 "Anwahoddedig\" yn y ffurfweddiad.\">Rhagor ynglyn â gwahoddiadau...</a>"
+
+#. i18n: ectx: label, entry (useDefaultPort), group (TCP)
+#: krfb.kcfg:8
+msgid "Use the default port for VNC (5900)"
+msgstr ""
+
+#. i18n: ectx: label, entry (port), group (TCP)
+#: krfb.kcfg:12
+msgid "This is the port on which krfb will listen."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_publishService)
+#. i18n: ectx: label, entry (publishService), group (TCP)
+#: krfb.kcfg:16 ui/configtcp.ui:22
+msgid "Announce the service on the local network"
+msgstr ""
+
+#. i18n: ectx: label, entry (allowDesktopControl), group (Security)
+#: krfb.kcfg:22
+msgid "Allow remote connections to manage the desktop."
+msgstr ""
+
+#. i18n: ectx: label, entry (askOnConnect), group (Security)
+#: krfb.kcfg:26
+msgid "Ask before allowing a remote connection."
+msgstr ""
+
+#. i18n: ectx: label, entry (allowUninvitedConnections), group (Security)
+#: krfb.kcfg:30
+msgid "Allow connections without an invitation."
+msgstr ""
+
+#. i18n: ectx: label, entry (uninvitedConnectionPassword), group (Security)
+#: krfb.kcfg:34
+#, fuzzy
+#| msgid "Accepted uninvited connection from %1"
+msgid "Password for uninvited connections."
+msgstr "Derbynwyd cysylltiad anwahoddedig o %1"
+
+#. i18n: ectx: label, entry (preferredFrameBufferPlugin), group (FrameBuffer)
+#: krfb.kcfg:39
+msgid "Preferred Frame Buffer Plugin"
+msgstr ""
 
 #: main.cpp:42
 msgid "VNC-compatible server to share KDE desktops"
@@ -384,385 +434,6 @@ msgstr ""
 "fur gwarchod fe all fod â chyfeiriad gwahanol neu gall fod yn "
 "anghyrraeddadwy o gyfrifiaduron eraill.\">Cymorth</a>)"
 
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "KGyfieithu - Meddalwedd Gymraeg"
-
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "kyfieithu@dotmon.com"
-
-#. i18n: file: ui/configsecurity.ui:20
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_askOnConnect)
-#: rc.cpp:5
-#, fuzzy
-#| msgid "Accepted uninvited connection from %1"
-msgid "Ask before accepting connections"
-msgstr "Derbynwyd cysylltiad anwahoddedig o %1"
-
-#. i18n: file: ui/configsecurity.ui:30
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_allowDesktopControl)
-#: rc.cpp:8
-#, fuzzy
-#| msgid "Allow remote user to &control keyboard and mouse"
-msgid "Allow remote connections to control your desktop"
-msgstr "Caniatáu i'r defnyddiwr pell &reoli'r bysellfwrdd a'r lygoden"
-
-#. i18n: file: ui/configsecurity.ui:40
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_allowUninvitedConnections)
-#: rc.cpp:11
-#, fuzzy
-#| msgid "Accepted uninvited connection from %1"
-msgid "Allow uninvited connections"
-msgstr "Derbynwyd cysylltiad anwahoddedig o %1"
-
-#. i18n: file: ui/configsecurity.ui:50
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:14
-#, fuzzy
-#| msgid "Accepted uninvited connection from %1"
-msgid "Uninvited connections password:"
-msgstr "Derbynwyd cysylltiad anwahoddedig o %1"
-
-#. i18n: file: ui/configtcp.ui:22
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_publishService)
-#. i18n: file: krfb.kcfg:16
-#. i18n: ectx: label, entry (publishService), group (TCP)
-#: rc.cpp:17 rc.cpp:157
-msgid "Announce the service on the local network"
-msgstr ""
-
-#. i18n: file: ui/configtcp.ui:32
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_useDefaultPort)
-#: rc.cpp:20
-msgid "Use default port"
-msgstr ""
-
-#. i18n: file: ui/configtcp.ui:50
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:23
-msgid "Listening port:"
-msgstr ""
-
-#. i18n: file: ui/connectionwidget.ui:47
-#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
-#: rc.cpp:26
-msgid "Attention"
-msgstr "Taler Sylw"
-
-#. i18n: file: ui/connectionwidget.ui:72
-#. i18n: ectx: property (text), widget (QLabel, mainTextLabel)
-#: rc.cpp:29
-msgid ""
-"Somebody is requesting a connection to your computer. Granting this will "
-"allow the remote user to watch your desktop. "
-msgstr ""
-"Mae rhywun yn ceisio cysylltiad i'ch cyfrifiadur. Bydd caniatáu hyn yn "
-"galluogi i'r defnyddiwr pell wylio'ch penbwrdd."
-
-#. i18n: file: ui/connectionwidget.ui:102
-#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
-#: rc.cpp:32
-msgid "Remote system:"
-msgstr "Cysawd pell:"
-
-#. i18n: file: ui/connectionwidget.ui:118
-#. i18n: ectx: property (text), widget (QLabel, remoteHost)
-#: rc.cpp:35
-msgid "123.234.123.234"
-msgstr "123.234.123.234"
-
-#. i18n: file: ui/connectionwidget.ui:136
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAllowRemoteControl)
-#. i18n: file: ui/tubesconnectionwidget.ui:101
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAllowRemoteControl)
-#: rc.cpp:38 rc.cpp:145
-msgid ""
-"If you turn this option on, the remote user can enter keystrokes and use "
-"your mouse pointer. This gives them full control over your computer, so be "
-"careful. When the option is disabled the remote user can only watch your "
-"screen."
-msgstr ""
-"Os dewiswch y dewisiad yma, gall y defnyddiwr pell anfon wasgiadau bysyll a "
-"defnyddio pwyntydd eich llygoden. Mae hyn y rhoi rheolaeth hollol iddynt "
-"dros eich cyfrifiadur, felly byddwch yn ofalus. Pan fo'r dewisiad yn "
-"analluog, gwylio'ch sgrîn yn unig gall y defnyddiwr pell ei wneud."
-
-#. i18n: file: ui/connectionwidget.ui:139
-#. i18n: ectx: property (text), widget (QCheckBox, cbAllowRemoteControl)
-#. i18n: file: ui/tubesconnectionwidget.ui:104
-#. i18n: ectx: property (text), widget (QCheckBox, cbAllowRemoteControl)
-#: rc.cpp:41 rc.cpp:148
-msgid "Allow remote user to &control keyboard and mouse"
-msgstr "Caniatáu i'r defnyddiwr pell &reoli'r bysellfwrdd a'r lygoden"
-
-#. i18n: file: ui/invitewidget.ui:40
-#. i18n: ectx: property (text), widget (QLabel, TextLabel2)
-#. i18n: file: ui/manageinvitations.ui:25
-#. i18n: ectx: property (text), widget (QLabel, TextLabel2)
-#: rc.cpp:44 rc.cpp:69
-msgid "Welcome to KDE Desktop Sharing"
-msgstr "Croeso i Rannu Penbwrdd KDE"
-
-#. i18n: file: ui/invitewidget.ui:50
-#. i18n: ectx: property (text), widget (QLabel, helpLabel)
-#: rc.cpp:47
-msgid ""
-"KDE Desktop Sharing allows you to invite somebody at a remote location to "
-"watch and possibly control your desktop. <a href=\"whatsthis\">More about "
-"invitations...</a>"
-msgstr ""
-
-#. i18n: file: ui/invitewidget.ui:105
-#. i18n: ectx: property (whatsThis), widget (QPushButton, btnCreateInvite)
-#: rc.cpp:50
-msgid ""
-"Create a new invitation and display the connection data. Use this option if "
-"you want to invite somebody personally, for example, to give the connection "
-"data over the phone."
-msgstr ""
-"Creu gwahoddiad newydd, a'i ddangos i chi. Defnyddiwch y dewisiad yma os "
-"hoffech wahodd rhywun yn bersonol, er eghraifft, i roi'r data cysylltiad "
-"dros y ffôn."
-
-#. i18n: file: ui/invitewidget.ui:108
-#. i18n: ectx: property (text), widget (QPushButton, btnCreateInvite)
-#: rc.cpp:53
-msgid "Create &Personal Invitation..."
-msgstr "Creu Gwahoddiad &Personol..."
-
-#. i18n: file: ui/invitewidget.ui:115
-#. i18n: ectx: property (whatsThis), widget (QPushButton, btnEmailInvite)
-#: rc.cpp:56
-msgid ""
-"This button will start your email application with a pre-configured text "
-"that explains to the recipient how to connect to your computer. "
-msgstr ""
-"Dechreua'r botwm yma eich cymhwysiad ebost gyda testun parod sy'n esbonio "
-"i'r derbynnydd sut i gysylltu â'ch cyfrifiadur."
-
-#. i18n: file: ui/invitewidget.ui:118
-#. i18n: ectx: property (text), widget (QPushButton, btnEmailInvite)
-#: rc.cpp:59
-msgid "Invite via &Email..."
-msgstr "Gwahodd drwy &Ebost..."
-
-#. i18n: file: ui/manageinvitations.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, ManageInvitationsDialog)
-#: rc.cpp:66
-msgid "Manage Invitations - Desktop Sharing"
-msgstr "Trefnu Gwahoddiadau - Rhannu Penbwrdd"
-
-#. i18n: file: ui/manageinvitations.ui:38
-#. i18n: ectx: property (text), widget (QLabel, helpLabel)
-#: rc.cpp:72
-msgid ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal; text-decoration:none;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\">KDE Desktop Sharing allows "
-"you to invite somebody at a remote location to watch and possibly control "
-"your desktop. <a href=\"whatsthis\">More about invitations...</a></p></"
-"body></html>"
-msgstr ""
-
-#. i18n: file: ui/manageinvitations.ui:95
-#. i18n: ectx: property (text), widget (QTreeWidget, invitationWidget)
-#: rc.cpp:78
-#, fuzzy
-#| msgid "Created"
-msgid "Creation Time"
-msgstr "Crëwyd"
-
-#. i18n: file: ui/manageinvitations.ui:100
-#. i18n: ectx: property (text), widget (QTreeWidget, invitationWidget)
-#: rc.cpp:81
-msgid "Expire Time"
-msgstr ""
-
-#. i18n: file: ui/manageinvitations.ui:124
-#. i18n: ectx: property (toolTip), widget (QPushButton, newPersonalInvitationButton)
-#: rc.cpp:84
-msgid "Create a new personal invitation..."
-msgstr "Creu gwahoddiad personol newydd..."
-
-#. i18n: file: ui/manageinvitations.ui:127
-#. i18n: ectx: property (whatsThis), widget (QPushButton, newPersonalInvitationButton)
-#: rc.cpp:87
-msgid "Click this button to create a new personal invitation."
-msgstr "Cliciwch ar y botwm yma i greu gwahoddiad personol newydd."
-
-#. i18n: file: ui/manageinvitations.ui:130
-#. i18n: ectx: property (text), widget (QPushButton, newPersonalInvitationButton)
-#: rc.cpp:90
-msgid "New &Personal Invitation..."
-msgstr "Gwahoddiad &Personol Newydd..."
-
-#. i18n: file: ui/manageinvitations.ui:137
-#. i18n: ectx: property (toolTip), widget (QPushButton, newEmailInvitationButton)
-#: rc.cpp:93
-msgid "Send a new invitation via email..."
-msgstr "Anfon gwahoddiad newydd drwy ebost..."
-
-#. i18n: file: ui/manageinvitations.ui:140
-#. i18n: ectx: property (whatsThis), widget (QPushButton, newEmailInvitationButton)
-#: rc.cpp:96
-msgid "Click this button to send a new invitation via email."
-msgstr "Cliciwch ar y botwm yma i anfon gwahoddiad newydd drwy ebost."
-
-#. i18n: file: ui/manageinvitations.ui:143
-#. i18n: ectx: property (text), widget (QPushButton, newEmailInvitationButton)
-#: rc.cpp:99
-msgid "&New Email Invitation..."
-msgstr "Gwahoddiad Ebost &Newydd..."
-
-#. i18n: file: ui/manageinvitations.ui:153
-#. i18n: ectx: property (toolTip), widget (QPushButton, deleteAllButton)
-#: rc.cpp:102
-msgid "Delete all invitations"
-msgstr "Dileu pob gwahoddiad"
-
-#. i18n: file: ui/manageinvitations.ui:156
-#. i18n: ectx: property (whatsThis), widget (QPushButton, deleteAllButton)
-#: rc.cpp:105
-msgid "Deletes all open invitations."
-msgstr "Dileu pob gwahoddiad agored"
-
-#. i18n: file: ui/manageinvitations.ui:159
-#. i18n: ectx: property (text), widget (QPushButton, deleteAllButton)
-#: rc.cpp:108
-msgid "Delete All"
-msgstr ""
-
-#. i18n: file: ui/manageinvitations.ui:169
-#. i18n: ectx: property (toolTip), widget (QPushButton, deleteOneButton)
-#: rc.cpp:111
-msgid "Delete the selected invitation"
-msgstr "Dileu'r gwahoddiad dewisiedig"
-
-#. i18n: file: ui/manageinvitations.ui:172
-#. i18n: ectx: property (whatsThis), widget (QPushButton, deleteOneButton)
-#: rc.cpp:114
-msgid ""
-"Delete the selected invitation. The invited person will not be able to "
-"connect using this invitation anymore."
-msgstr ""
-"Dileu'r gwahoddiad dewisiedig. Ni fydd modd i'r person gwahoddiedig gysylltu "
-"gan ddefnyddio'r gwahoddiad yma mwyach."
-
-#. i18n: file: ui/manageinvitations.ui:175
-#. i18n: ectx: property (text), widget (QPushButton, deleteOneButton)
-#: rc.cpp:117
-msgid "&Delete"
-msgstr ""
-
-#. i18n: file: ui/personalinvitewidget.ui:47
-#. i18n: ectx: property (text), widget (QLabel, mainTextLabel)
-#: rc.cpp:120
-msgid ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal; text-decoration:none;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600;\">Personal Invitation</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\">Give the information below "
-"to the person that you want to invite (<a href=\"htc\">how to connect</a>). "
-"Note that everybody who gets the password can connect, so be careful.</p></"
-"body></html>"
-msgstr ""
-
-#. i18n: file: ui/personalinvitewidget.ui:81
-#. i18n: ectx: property (text), widget (QLabel, kActiveLabel5)
-#: rc.cpp:127
-msgid "<b>Host:</b>"
-msgstr "<b>Gwesteiwr:</b>"
-
-#. i18n: file: ui/personalinvitewidget.ui:116
-#. i18n: ectx: property (text), widget (QLabel, hostHelpLabel)
-#: rc.cpp:130
-msgid ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal; text-decoration:none;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"help\">Help</a></"
-"p></body></html>"
-msgstr ""
-
-#. i18n: file: ui/personalinvitewidget.ui:129
-#. i18n: ectx: property (text), widget (QLabel, kActiveLabel6)
-#: rc.cpp:136
-msgid "<b>Password:</b>"
-msgstr "<b>Cyfrinair:</b>"
-
-#. i18n: file: ui/personalinvitewidget.ui:161
-#. i18n: ectx: property (text), widget (QLabel, kActiveLabel7)
-#: rc.cpp:139
-msgid "<b>Expiration time:</b>"
-msgstr "<b>Amser daw i ben:</b>"
-
-#. i18n: file: ui/tubesconnectionwidget.ui:48
-#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
-#: rc.cpp:142
-#, fuzzy
-msgid "Confirmation"
-msgstr "Trefnu &Gwahoddiadau"
-
-#. i18n: file: krfb.kcfg:8
-#. i18n: ectx: label, entry (useDefaultPort), group (TCP)
-#: rc.cpp:151
-msgid "Use the default port for VNC (5900)"
-msgstr ""
-
-#. i18n: file: krfb.kcfg:12
-#. i18n: ectx: label, entry (port), group (TCP)
-#: rc.cpp:154
-msgid "This is the port on which krfb will listen."
-msgstr ""
-
-#. i18n: file: krfb.kcfg:22
-#. i18n: ectx: label, entry (allowDesktopControl), group (Security)
-#: rc.cpp:160
-msgid "Allow remote connections to manage the desktop."
-msgstr ""
-
-#. i18n: file: krfb.kcfg:26
-#. i18n: ectx: label, entry (askOnConnect), group (Security)
-#: rc.cpp:163
-msgid "Ask before allowing a remote connection."
-msgstr ""
-
-#. i18n: file: krfb.kcfg:30
-#. i18n: ectx: label, entry (allowUninvitedConnections), group (Security)
-#: rc.cpp:166
-msgid "Allow connections without an invitation."
-msgstr ""
-
-#. i18n: file: krfb.kcfg:34
-#. i18n: ectx: label, entry (uninvitedConnectionPassword), group (Security)
-#: rc.cpp:169
-#, fuzzy
-#| msgid "Accepted uninvited connection from %1"
-msgid "Password for uninvited connections."
-msgstr "Derbynwyd cysylltiad anwahoddedig o %1"
-
-#. i18n: file: krfb.kcfg:39
-#. i18n: ectx: label, entry (preferredFrameBufferPlugin), group (FrameBuffer)
-#: rc.cpp:172
-msgid "Preferred Frame Buffer Plugin"
-msgstr ""
-
 #: rfbservermanager.cpp:216
 #, fuzzy, kde-format
 #| msgid "The remote user has closed the connection."
@@ -797,6 +468,277 @@ msgstr "Rhannu Bwrdd Gwaith - Cysylltwyd gyda %1"
 #| msgid "Desktop Sharing - disconnected"
 msgid "Desktop Sharing - connected"
 msgstr "Rhannu Bwrdd Gwaith - datgysylltwyd"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_askOnConnect)
+#: ui/configsecurity.ui:20
+#, fuzzy
+#| msgid "Accepted uninvited connection from %1"
+msgid "Ask before accepting connections"
+msgstr "Derbynwyd cysylltiad anwahoddedig o %1"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_allowDesktopControl)
+#: ui/configsecurity.ui:30
+#, fuzzy
+#| msgid "Allow remote user to &control keyboard and mouse"
+msgid "Allow remote connections to control your desktop"
+msgstr "Caniatáu i'r defnyddiwr pell &reoli'r bysellfwrdd a'r lygoden"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_allowUninvitedConnections)
+#: ui/configsecurity.ui:40
+#, fuzzy
+#| msgid "Accepted uninvited connection from %1"
+msgid "Allow uninvited connections"
+msgstr "Derbynwyd cysylltiad anwahoddedig o %1"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/configsecurity.ui:50
+#, fuzzy
+#| msgid "Accepted uninvited connection from %1"
+msgid "Uninvited connections password:"
+msgstr "Derbynwyd cysylltiad anwahoddedig o %1"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_useDefaultPort)
+#: ui/configtcp.ui:32
+msgid "Use default port"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/configtcp.ui:50
+msgid "Listening port:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
+#: ui/connectionwidget.ui:47
+msgid "Attention"
+msgstr "Taler Sylw"
+
+#. i18n: ectx: property (text), widget (QLabel, mainTextLabel)
+#: ui/connectionwidget.ui:72
+msgid ""
+"Somebody is requesting a connection to your computer. Granting this will "
+"allow the remote user to watch your desktop. "
+msgstr ""
+"Mae rhywun yn ceisio cysylltiad i'ch cyfrifiadur. Bydd caniatáu hyn yn "
+"galluogi i'r defnyddiwr pell wylio'ch penbwrdd."
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
+#: ui/connectionwidget.ui:102
+msgid "Remote system:"
+msgstr "Cysawd pell:"
+
+#. i18n: ectx: property (text), widget (QLabel, remoteHost)
+#: ui/connectionwidget.ui:118
+msgid "123.234.123.234"
+msgstr "123.234.123.234"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAllowRemoteControl)
+#: ui/connectionwidget.ui:136 ui/tubesconnectionwidget.ui:101
+msgid ""
+"If you turn this option on, the remote user can enter keystrokes and use "
+"your mouse pointer. This gives them full control over your computer, so be "
+"careful. When the option is disabled the remote user can only watch your "
+"screen."
+msgstr ""
+"Os dewiswch y dewisiad yma, gall y defnyddiwr pell anfon wasgiadau bysyll a "
+"defnyddio pwyntydd eich llygoden. Mae hyn y rhoi rheolaeth hollol iddynt "
+"dros eich cyfrifiadur, felly byddwch yn ofalus. Pan fo'r dewisiad yn "
+"analluog, gwylio'ch sgrîn yn unig gall y defnyddiwr pell ei wneud."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbAllowRemoteControl)
+#: ui/connectionwidget.ui:139 ui/tubesconnectionwidget.ui:104
+msgid "Allow remote user to &control keyboard and mouse"
+msgstr "Caniatáu i'r defnyddiwr pell &reoli'r bysellfwrdd a'r lygoden"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel2)
+#: ui/invitewidget.ui:40 ui/manageinvitations.ui:25
+msgid "Welcome to KDE Desktop Sharing"
+msgstr "Croeso i Rannu Penbwrdd KDE"
+
+#. i18n: ectx: property (text), widget (QLabel, helpLabel)
+#: ui/invitewidget.ui:50
+msgid ""
+"KDE Desktop Sharing allows you to invite somebody at a remote location to "
+"watch and possibly control your desktop. <a href=\"whatsthis\">More about "
+"invitations...</a>"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, btnCreateInvite)
+#: ui/invitewidget.ui:105
+msgid ""
+"Create a new invitation and display the connection data. Use this option if "
+"you want to invite somebody personally, for example, to give the connection "
+"data over the phone."
+msgstr ""
+"Creu gwahoddiad newydd, a'i ddangos i chi. Defnyddiwch y dewisiad yma os "
+"hoffech wahodd rhywun yn bersonol, er eghraifft, i roi'r data cysylltiad "
+"dros y ffôn."
+
+#. i18n: ectx: property (text), widget (QPushButton, btnCreateInvite)
+#: ui/invitewidget.ui:108
+msgid "Create &Personal Invitation..."
+msgstr "Creu Gwahoddiad &Personol..."
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, btnEmailInvite)
+#: ui/invitewidget.ui:115
+msgid ""
+"This button will start your email application with a pre-configured text "
+"that explains to the recipient how to connect to your computer. "
+msgstr ""
+"Dechreua'r botwm yma eich cymhwysiad ebost gyda testun parod sy'n esbonio "
+"i'r derbynnydd sut i gysylltu â'ch cyfrifiadur."
+
+#. i18n: ectx: property (text), widget (QPushButton, btnEmailInvite)
+#: ui/invitewidget.ui:118
+msgid "Invite via &Email..."
+msgstr "Gwahodd drwy &Ebost..."
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, ManageInvitationsDialog)
+#: ui/manageinvitations.ui:13
+msgid "Manage Invitations - Desktop Sharing"
+msgstr "Trefnu Gwahoddiadau - Rhannu Penbwrdd"
+
+#. i18n: ectx: property (text), widget (QLabel, helpLabel)
+#: ui/manageinvitations.ui:38
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">KDE Desktop Sharing allows "
+"you to invite somebody at a remote location to watch and possibly control "
+"your desktop. <a href=\"whatsthis\">More about invitations...</a></p></"
+"body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QTreeWidget, invitationWidget)
+#: ui/manageinvitations.ui:95
+#, fuzzy
+#| msgid "Created"
+msgid "Creation Time"
+msgstr "Crëwyd"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, invitationWidget)
+#: ui/manageinvitations.ui:100
+msgid "Expire Time"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, newPersonalInvitationButton)
+#: ui/manageinvitations.ui:124
+msgid "Create a new personal invitation..."
+msgstr "Creu gwahoddiad personol newydd..."
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, newPersonalInvitationButton)
+#: ui/manageinvitations.ui:127
+msgid "Click this button to create a new personal invitation."
+msgstr "Cliciwch ar y botwm yma i greu gwahoddiad personol newydd."
+
+#. i18n: ectx: property (text), widget (QPushButton, newPersonalInvitationButton)
+#: ui/manageinvitations.ui:130
+msgid "New &Personal Invitation..."
+msgstr "Gwahoddiad &Personol Newydd..."
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, newEmailInvitationButton)
+#: ui/manageinvitations.ui:137
+msgid "Send a new invitation via email..."
+msgstr "Anfon gwahoddiad newydd drwy ebost..."
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, newEmailInvitationButton)
+#: ui/manageinvitations.ui:140
+msgid "Click this button to send a new invitation via email."
+msgstr "Cliciwch ar y botwm yma i anfon gwahoddiad newydd drwy ebost."
+
+#. i18n: ectx: property (text), widget (QPushButton, newEmailInvitationButton)
+#: ui/manageinvitations.ui:143
+msgid "&New Email Invitation..."
+msgstr "Gwahoddiad Ebost &Newydd..."
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, deleteAllButton)
+#: ui/manageinvitations.ui:153
+msgid "Delete all invitations"
+msgstr "Dileu pob gwahoddiad"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, deleteAllButton)
+#: ui/manageinvitations.ui:156
+msgid "Deletes all open invitations."
+msgstr "Dileu pob gwahoddiad agored"
+
+#. i18n: ectx: property (text), widget (QPushButton, deleteAllButton)
+#: ui/manageinvitations.ui:159
+msgid "Delete All"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, deleteOneButton)
+#: ui/manageinvitations.ui:169
+msgid "Delete the selected invitation"
+msgstr "Dileu'r gwahoddiad dewisiedig"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, deleteOneButton)
+#: ui/manageinvitations.ui:172
+msgid ""
+"Delete the selected invitation. The invited person will not be able to "
+"connect using this invitation anymore."
+msgstr ""
+"Dileu'r gwahoddiad dewisiedig. Ni fydd modd i'r person gwahoddiedig gysylltu "
+"gan ddefnyddio'r gwahoddiad yma mwyach."
+
+#. i18n: ectx: property (text), widget (QPushButton, deleteOneButton)
+#: ui/manageinvitations.ui:175
+msgid "&Delete"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, mainTextLabel)
+#: ui/personalinvitewidget.ui:47
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Personal Invitation</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Give the information below "
+"to the person that you want to invite (<a href=\"htc\">how to connect</a>). "
+"Note that everybody who gets the password can connect, so be careful.</p></"
+"body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, kActiveLabel5)
+#: ui/personalinvitewidget.ui:81
+msgid "<b>Host:</b>"
+msgstr "<b>Gwesteiwr:</b>"
+
+#. i18n: ectx: property (text), widget (QLabel, hostHelpLabel)
+#: ui/personalinvitewidget.ui:116
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"help\">Help</a></"
+"p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, kActiveLabel6)
+#: ui/personalinvitewidget.ui:129
+msgid "<b>Password:</b>"
+msgstr "<b>Cyfrinair:</b>"
+
+#. i18n: ectx: property (text), widget (QLabel, kActiveLabel7)
+#: ui/personalinvitewidget.ui:161
+msgid "<b>Expiration time:</b>"
+msgstr "<b>Amser daw i ben:</b>"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
+#: ui/tubesconnectionwidget.ui:48
+#, fuzzy
+msgid "Confirmation"
+msgstr "Trefnu &Gwahoddiadau"
 
 #~ msgid "X11 update scanner, original code base"
 #~ msgstr "Syllydd diweddariadau X11, cronfa gôd gwreiddiol"
