@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-26 03:18+0200\n"
+"POT-Creation-Date: 2012-09-03 02:36+0200\n"
 "PO-Revision-Date: 2004-09-07 14:09+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -33,11 +33,23 @@ msgstr "kyfieithu@dotmon.com"
 msgid "Add custom slide show"
 msgstr "Sioe Tryloywderau"
 
-#: part/commands/KPrAnimationCreateCommand.cpp:34
+#: part/commands/KPrAnimationCreateCommand.cpp:32
 #, fuzzy
 #| msgid "Create HTML Presentation"
 msgctxt "(qtundo-format)"
 msgid "Create shape animation"
+msgstr "Creu Cyflwyniad HTML"
+
+#: part/commands/KPrAnimationEditNodeTypeCommand.cpp:36
+msgctxt "(qtundo-format)"
+msgid "Edit animation trigger event"
+msgstr ""
+
+#: part/commands/KPrAnimationRemoveCommand.cpp:30
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgctxt "(qtundo-format)"
+msgid "Remove shape animation"
 msgstr "Creu Cyflwyniad HTML"
 
 #: part/commands/KPrDelCustomSlideShowCommand.cpp:33
@@ -55,6 +67,11 @@ msgid "Delete slide"
 msgid_plural "Delete slides"
 msgstr[0] "Dileu Tryloywder"
 msgstr[1] "Dileu Tryloywder"
+
+#: part/commands/KPrEditAnimationTimeLineCommand.cpp:36
+msgctxt "(qtundo-format)"
+msgid "Edit animation delay/duration"
+msgstr ""
 
 #: part/commands/KPrEditCustomSlideShowsCommand.cpp:32
 #, fuzzy
@@ -86,6 +103,12 @@ msgstr "Dileu Tryloywder"
 #, fuzzy
 msgid "Rename custom slide show"
 msgstr "Ffurfweddu Sioe Tryloywderau"
+
+#: part/commands/KPrReorderAnimationCommand.cpp:34
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Reorder animations"
+msgstr "Golygu Tra&wsnewid Tryloywder"
 
 #: part/dockers/KPrPageLayoutDocker.cpp:46
 #, fuzzy
@@ -342,6 +365,45 @@ msgstr "Creu Cyflwyniad HTML"
 #| msgid "Slide Show"
 msgid "End of Slide Show"
 msgstr "Sioe Tryloywderau"
+
+#: part/KPrShapeAnimations.cpp:173
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:237
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:537
+msgid "start on mouse click"
+msgstr ""
+
+#: part/KPrShapeAnimations.cpp:175
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:240
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:540
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgid "start after previous animation"
+msgstr "Creu Cyflwyniad HTML"
+
+#: part/KPrShapeAnimations.cpp:177
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:243
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:543
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgid "start with previous animation"
+msgstr "Creu Cyflwyniad HTML"
+
+#: part/KPrShapeAnimations.cpp:181
+#, kde-format
+msgid "Start after %1 seconds. Duration of %2 seconds"
+msgstr ""
+
+#: part/KPrShapeAnimations.cpp:197
+#: part/tools/animationtool/KPrAnimationToolFactory.cpp:33
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgid "Animation"
+msgstr "Creu Cyflwyniad HTML"
+
+#. i18n: ectx: Menu (Insert Shape)
+#: part/KPrShapeAnimations.cpp:203 stage.rc:75
+msgid "Shape"
+msgstr "Siâp"
 
 #: part/KPrSlidesSorterDocumentModel.cpp:299
 #, fuzzy
@@ -687,21 +749,78 @@ msgstr "Sioe T&ryloywder"
 msgid "&Settings"
 msgstr "Gosodiadau Llwybr"
 
-#: part/tools/animationtool/KPrAnimationTool.cpp:85
+#: part/tools/animationtool/KPrAnimationSelectorWidget.cpp:67
+#, fuzzy
+#| msgid "Automatic hyphenation"
+msgid "Automatic animation preview"
+msgstr "Cysylltnodi ymysgogol"
+
+#: part/tools/animationtool/KPrAnimationSelectorWidget.cpp:325
+#: part/tools/animationtool/KPrAnimationSelectorWidget.cpp:333
+#, fuzzy
+#| msgid "Presentation"
+msgid "Preview animation"
+msgstr "Cyflwyniad"
+
+#: part/tools/animationtool/KPrAnimationTool.cpp:219
 #, fuzzy
 msgid "Slide Transitions"
 msgstr "Golygu Tra&wsnewid Tryloywder"
 
-#: part/tools/animationtool/KPrAnimationTool.cpp:87
+#: part/tools/animationtool/KPrAnimationTool.cpp:221
 #, fuzzy
 #| msgid "Create HTML Presentation"
 msgid "Shape Click Actions"
 msgstr "Creu Cyflwyniad HTML"
 
-#: part/tools/animationtool/KPrAnimationToolFactory.cpp:33
+#: part/tools/animationtool/KPrAnimationTool.cpp:223
 #, fuzzy
 #| msgid "Create HTML Presentation"
-msgid "Animation"
+msgid "Shape Animations"
+msgstr "Creu Cyflwyniad HTML"
+
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:70
+#, fuzzy
+#| msgid "Presentation duration: "
+msgid "Manage animation delay and duration: "
+msgstr "Hyd y cyflwyniad:"
+
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:71
+#, fuzzy
+msgid "Start: "
+msgstr "S&iart"
+
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:75
+msgid "on mouse click"
+msgstr ""
+
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:76
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgid "after previous animation"
+msgstr "Creu Cyflwyniad HTML"
+
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:77
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgid "with previous animation"
+msgstr "Creu Cyflwyniad HTML"
+
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:79
+msgid "Delay: "
+msgstr ""
+
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:84
+#, fuzzy
+#| msgid "Direction"
+msgid "Duration: "
+msgstr "Cyfeiriad:"
+
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:91
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:143
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgid "Preview Shape Animation"
 msgstr "Creu Cyflwyniad HTML"
 
 #: part/tools/animationtool/KPrPageEffectDocker.cpp:56
@@ -713,6 +832,83 @@ msgstr "Dim Effaith"
 #| msgid " seconds"
 msgid " sec"
 msgstr " eiliad(au)"
+
+#: part/tools/animationtool/KPrPredefinedAnimationsLoader.cpp:181
+msgid "Entrance"
+msgstr ""
+
+#: part/tools/animationtool/KPrPredefinedAnimationsLoader.cpp:187
+msgid "Exit"
+msgstr ""
+
+#: part/tools/animationtool/KPrPredefinedAnimationsLoader.cpp:192
+msgid "Emphasis"
+msgstr ""
+
+#: part/tools/animationtool/KPrPredefinedAnimationsLoader.cpp:197
+#, fuzzy
+msgid "Custom"
+msgstr "Sioe Tryloywderau"
+
+#: part/tools/animationtool/KPrPredefinedAnimationsLoader.cpp:202
+msgid "Motion path"
+msgstr ""
+
+#: part/tools/animationtool/KPrPredefinedAnimationsLoader.cpp:207
+#, fuzzy
+#| msgid "Elevation:"
+msgid "Ole Action"
+msgstr "Uchder:"
+
+#: part/tools/animationtool/KPrPredefinedAnimationsLoader.cpp:212
+msgid "Media Call"
+msgstr ""
+
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:94
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:99
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:531
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgid "Edit animation"
+msgstr "Creu Cyflwyniad HTML"
+
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:113
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgid "Add new animation"
+msgstr "Creu Cyflwyniad HTML"
+
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:126
+#, fuzzy
+#| msgid "Remove Link"
+msgid "Remove animation"
+msgstr "Gwaredu Cyswllt"
+
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:130
+msgid "Order: "
+msgstr ""
+
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:133
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgid "Move animation up"
+msgstr "Creu Cyflwyniad HTML"
+
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:138
+msgid "Move animation down"
+msgstr ""
+
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:529
+#, fuzzy
+#| msgid "Slideshow"
+msgid "Add a new animation"
+msgstr "Sioe Tryloywderau"
+
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:530
+#, fuzzy
+#| msgid "Before Current Slide"
+msgid "Delete current animation"
+msgstr "Cyn y Tryloywder Cyfredol"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgToolCrop)
 #: part/tools/animationtool/wdg_tool_crop.ui:16
@@ -2261,11 +2457,6 @@ msgstr "&Ffeil:"
 msgid "Line"
 msgstr "Llinell"
 
-#. i18n: ectx: Menu (Insert Shape)
-#: stage.rc:75
-msgid "Shape"
-msgstr "Siâp"
-
 #. i18n: ectx: Menu (Arrange Objects)
 #: stage.rc:93
 msgid "Arra&nge Objects"
@@ -2460,11 +2651,6 @@ msgstr "Cyflwyniad"
 #~| msgid "Change Image Effect"
 #~ msgid "Click to preview the page effect."
 #~ msgstr "Newid Effaith Ddelwedd"
-
-#, fuzzy
-#~| msgid "Direction"
-#~ msgid "Duration: "
-#~ msgstr "Cyfeiriad:"
 
 #, fuzzy
 #~| msgid "Image &effect:"
@@ -2770,9 +2956,6 @@ msgstr "Cyflwyniad"
 #, fuzzy
 #~ msgid "Determines the light source and direction"
 #~ msgstr "Penodi tarddiad y golau a'i gyfeiriad."
-
-#~ msgid "Elevation:"
-#~ msgstr "Uchder:"
 
 #~ msgid "Angle:"
 #~ msgstr "Ongl:"
@@ -3266,9 +3449,6 @@ msgstr "Cyflwyniad"
 #~ msgid "Global language:"
 #~ msgstr "Iaith eang:"
 
-#~ msgid "Automatic hyphenation"
-#~ msgstr "Cysylltnodi ymysgogol"
-
 #~ msgid "Create backup file"
 #~ msgstr "Creu ffeil wrth gefn"
 
@@ -3753,10 +3933,6 @@ msgstr "Cyflwyniad"
 #~ msgid "Measure presentation &duration"
 #~ msgstr "Dangos &hyd y cyflwyniad"
 
-#, fuzzy
-#~ msgid "Custom slide:"
-#~ msgstr "Sioe Tryloywderau"
-
 #~ msgid "Arc"
 #~ msgstr "Cromlin"
 
@@ -3765,9 +3941,6 @@ msgstr "Cyflwyniad"
 
 #~ msgid "Convex/Concave"
 #~ msgstr "Amgrwm/Ceugrwm"
-
-#~ msgid "Presentation duration: "
-#~ msgstr "Hyd y cyflwyniad:"
 
 #~ msgid "No."
 #~ msgstr "Rhif"
@@ -4330,9 +4503,6 @@ msgstr "Cyflwyniad"
 
 #~ msgid "Copy Link"
 #~ msgstr "Copïo Cyswllt"
-
-#~ msgid "Remove Link"
-#~ msgstr "Gwaredu Cyswllt"
 
 #~ msgid "Add to Bookmark"
 #~ msgstr "Ychwanegu i'r Tudnodau"
