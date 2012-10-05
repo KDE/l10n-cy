@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-10-04 04:25+0200\n"
+"POT-Creation-Date: 2012-10-05 04:36+0200\n"
 "PO-Revision-Date: 2004-07-03 07:57+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -171,7 +171,7 @@ msgid "&Use cache"
 msgstr "&Defnyddio celc"
 
 #. i18n: ectx: property (title), widget (QGroupBox, bgCachePolicy)
-#. i18n: ectx: property (text), widget (QTreeWidget, lvDomainPolicy)
+#. i18n: ectx: property (text), widget (QTreeWidget, policyTreeWidget)
 #: cache.ui:46 kcookiespolicies.ui:168
 msgid "Policy"
 msgstr "Polisi"
@@ -419,21 +419,21 @@ msgstr "Darfoda:"
 msgid "Secure:"
 msgstr "Diogel:"
 
-#: kcookiespolicies.cpp:147
-#, fuzzy
-#| msgid "New Cookie Policy"
-msgctxt "@title:window"
-msgid "New Cookie Policy"
-msgstr "Polisi Bisgedi Newydd"
-
-#: kcookiespolicies.cpp:185
+#: kcookiespolicies.cpp:179
 #, fuzzy
 #| msgid "Change Cookie Policy"
 msgctxt "@title:window"
 msgid "Change Cookie Policy"
 msgstr "Newid Polisi Bisgedi"
 
-#: kcookiespolicies.cpp:206
+#: kcookiespolicies.cpp:198
+#, fuzzy
+#| msgid "New Cookie Policy"
+msgctxt "@title:window"
+msgid "New Cookie Policy"
+msgstr "Polisi Bisgedi Newydd"
+
+#: kcookiespolicies.cpp:226
 #, kde-format
 msgid ""
 "<qt>A policy already exists for<center><b>%1</b></center>Do you want to "
@@ -442,18 +442,18 @@ msgstr ""
 "<qt>Mae polisi ar gyfer <center><b>%1</b></center> yn bodoli eisioes. A "
 "ydych am ei amnewid?</qt>"
 
-#: kcookiespolicies.cpp:210
+#: kcookiespolicies.cpp:230
 #, fuzzy
 #| msgid "Duplicate Policy"
 msgctxt "@title:window"
 msgid "Duplicate Policy"
 msgstr "Dyblygu Polisi"
 
-#: kcookiespolicies.cpp:211 useragentdlg.cpp:202
+#: kcookiespolicies.cpp:231 useragentdlg.cpp:202
 msgid "Replace"
 msgstr ""
 
-#: kcookiespolicies.cpp:380
+#: kcookiespolicies.cpp:400
 msgid ""
 "Unable to communicate with the cookie handler service.\n"
 "Any changes you made will not take effect until the service is restarted."
@@ -462,7 +462,7 @@ msgstr ""
 "Ni fydd unrhyw newidiadau y wnaethoch yn dod i rym tan i'r gwasanaeth gael "
 "ei ailgychwyn."
 
-#: kcookiespolicies.cpp:422
+#: kcookiespolicies.cpp:442
 #, fuzzy
 #| msgid ""
 #| "<h1>Cookies</h1> Cookies contain information that Konqueror (or any other "
@@ -712,7 +712,7 @@ msgstr "Polisi Safwe"
 msgid "Search interactively for domains"
 msgstr ""
 
-#. i18n: ectx: property (whatsThis), widget (QTreeWidget, lvDomainPolicy)
+#. i18n: ectx: property (whatsThis), widget (QTreeWidget, policyTreeWidget)
 #: kcookiespolicies.ui:147
 msgid ""
 "<qt>\n"
@@ -725,7 +725,7 @@ msgstr ""
 "polisïau yma flaenoriaeth dros y polisi rhagosod ar gyfer y safweoedd yma.\n"
 "</qt>"
 
-#. i18n: ectx: property (text), widget (QTreeWidget, lvDomainPolicy)
+#. i18n: ectx: property (text), widget (QTreeWidget, policyTreeWidget)
 #: kcookiespolicies.ui:163
 msgid "Domain"
 msgstr "Parth"
