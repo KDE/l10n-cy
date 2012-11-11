@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-11-10 01:47+0100\n"
+"POT-Creation-Date: 2012-11-11 01:50+0100\n"
 "PO-Revision-Date: 2004-07-06 17:18+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -1074,11 +1074,18 @@ msgstr "&Graddfa"
 msgid "default"
 msgstr ""
 
-#: image/commands/kis_change_filter_command.h:48
+#: image/commands/kis_change_filter_command.h:40
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Change Filter"
 msgstr "Hidlo"
+
+#: image/commands/kis_change_generator_command.h:40
+#, fuzzy
+#| msgid "General"
+msgctxt "(qtundo-format)"
+msgid "Change Generator"
+msgstr "Cyffredin"
 
 #: image/commands/kis_deselect_global_selection_command.cpp:30
 #, fuzzy
@@ -1223,14 +1230,14 @@ msgstr ""
 msgid "Other"
 msgstr "Arall"
 
-#: image/generator/kis_generator_layer.cpp:104
+#: image/generator/kis_generator_layer.cpp:119
 #, fuzzy
 #| msgid "General"
 msgid "Generator"
 msgstr "Cyffredin"
 
 #. i18n: ectx: property (text), widget (QLabel, label_10)
-#: image/kis_adjustment_layer.cc:123
+#: image/kis_adjustment_layer.cc:139
 #: plugins/paintops/libpaintop/kis_filter_option.cpp:51
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:844
 #: ui/recorder/kis_recorded_filter_action_creator.cpp:59
@@ -1361,7 +1368,7 @@ msgstr "M&ewnosod Delwedd fel Haen..."
 msgid "Convert Projection Color Space"
 msgstr ""
 
-#: image/kis_image.cc:910 ui/kis_layer_manager.cc:778
+#: image/kis_image.cc:910 ui/kis_layer_manager.cc:767
 #, fuzzy
 msgid "Flatten Image"
 msgstr "Dyblygu Delwedd"
@@ -2858,12 +2865,12 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QToolButton, m_bnSelectConfigurationFile)
 #. i18n: ectx: property (text), widget (QToolButton, m_bnSelectLut)
 #. i18n: ectx: property (text), widget (QToolButton, bnFont)
+#. i18n: ectx: property (text), widget (QToolButton, bnSelectOcioConfigPath)
 #. i18n: ectx: property (text), widget (QToolButton, bnPortrait)
 #. i18n: ectx: property (text), widget (QToolButton, bnLandscape)
 #. i18n: ectx: property (text), widget (QToolButton, paintColor)
 #. i18n: ectx: property (text), widget (QToolButton, backgroundColor)
 #. i18n: ectx: property (text), widget (QToolButton, viewModeButton)
-#. i18n: ectx: property (text), widget (QToolButton, bnSelectOcioConfigPath)
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:50
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:99
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:124
@@ -3573,8 +3580,8 @@ msgstr "&Cydraniad:"
 
 #. i18n: ectx: property (text), widget (QLabel, labelResolution)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#. i18n: ectx: property (text), widget (QLabel, lblResolution)
 #. i18n: ectx: property (text), widget (QLabel, lblYResolution_3)
+#. i18n: ectx: property (text), widget (QLabel, lblResolution)
 #: plugins/extensions/imagesize/wdg_imagescale.ui:369
 #: plugins/formats/pdf/pdfimportwidgetbase.ui:81 ui/forms/wdg_resolution.ui:87
 #: ui/forms/wdgimageproperties.ui:51 ui/forms/wdgnewimage.ui:211
@@ -4672,7 +4679,7 @@ msgid "Separate Image"
 msgstr "Delwedd Newydd :"
 
 #: plugins/extensions/separate_channels/kis_channel_separator.cc:236
-#: ui/kis_layer_manager.cc:875
+#: ui/kis_layer_manager.cc:864
 msgid "Export Layer"
 msgstr "Allforio Haen"
 
@@ -9725,8 +9732,8 @@ msgstr ""
 msgid "Preferences"
 msgstr "Hoffterau"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, WdgDisplaySettings)
 #. i18n: ectx: property (title), widget (QGroupBox, grpDisplay)
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgDisplaySettings)
 #: ui/dialogs/kis_dlg_preferences.cc:624 ui/dialogs/kis_dlg_preferences.cc:625
 #: ui/forms/wdgcolorsettings.ui:53 ui/forms/wdgdisplaysettings.ui:20
 msgid "Display"
@@ -9797,8 +9804,8 @@ msgstr "Haen %1"
 msgid "Matrix Widget"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, checkBoxPreview)
 #. i18n: ectx: property (title), widget (QGroupBox, m_groupBox)
+#. i18n: ectx: property (text), widget (QCheckBox, checkBoxPreview)
 #: ui/forms/kis_previewwidgetbase.ui:36 ui/forms/wdgfilterdialog.ui:56
 msgid "Preview"
 msgstr "Rhagolygu"
@@ -10014,8 +10021,8 @@ msgstr ""
 msgid "Delete"
 msgstr "Dad-ddewis"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, WdgTabletSettings)
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgColorSettings)
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgTabletSettings)
 #: ui/forms/wdgcolorsettings.ui:14 ui/forms/wdgtabletsettings.ui:20
 msgid "Color Settings"
 msgstr "Gosodiadau Lliw"
@@ -11449,7 +11456,7 @@ msgstr "Dyblygu Delwedd"
 msgid "&Flatten Layer"
 msgstr "Hidlenni"
 
-#: ui/kis_layer_manager.cc:295 ui/kis_layer_manager.cc:847
+#: ui/kis_layer_manager.cc:295 ui/kis_layer_manager.cc:836
 #, fuzzy
 msgid "Rasterize Layer"
 msgstr "&Gwaredu Haen"
@@ -11480,49 +11487,49 @@ msgstr "&Haen"
 msgid "Filter Layer Properties"
 msgstr "Priodweddau Haen"
 
-#: ui/kis_layer_manager.cc:423
+#: ui/kis_layer_manager.cc:419
 #, fuzzy
 #| msgid "Layer Properties"
 msgid "Generator Layer Properties"
 msgstr "Priodweddau Haen"
 
-#: ui/kis_layer_manager.cc:481 ui/kis_layer_manager.cc:495
-#: ui/kis_layer_manager.cc:536 ui/kis_layer_manager.cc:567
-#: ui/kis_layer_manager.cc:668
+#: ui/kis_layer_manager.cc:470 ui/kis_layer_manager.cc:484
+#: ui/kis_layer_manager.cc:525 ui/kis_layer_manager.cc:556
+#: ui/kis_layer_manager.cc:657
 msgid "Could not add layer to image."
 msgstr "Methwyd ychwanegu haen i ddelwedd."
 
-#: ui/kis_layer_manager.cc:481 ui/kis_layer_manager.cc:495
-#: ui/kis_layer_manager.cc:536 ui/kis_layer_manager.cc:567
-#: ui/kis_layer_manager.cc:668
+#: ui/kis_layer_manager.cc:470 ui/kis_layer_manager.cc:484
+#: ui/kis_layer_manager.cc:525 ui/kis_layer_manager.cc:556
+#: ui/kis_layer_manager.cc:657
 msgid "Layer Error"
 msgstr "Gwall Haen"
 
-#: ui/kis_layer_manager.cc:591
+#: ui/kis_layer_manager.cc:580
 #, fuzzy
 #| msgid "Filters"
 msgid "New Filter Layer"
 msgstr "Hidlenni"
 
-#: ui/kis_layer_manager.cc:735
+#: ui/kis_layer_manager.cc:724
 #, fuzzy
 msgid "Scale Layer"
 msgstr "Graddio Haen..."
 
-#: ui/kis_layer_manager.cc:777
+#: ui/kis_layer_manager.cc:766
 msgid "The image contains hidden layers that will be lost."
 msgstr ""
 
-#: ui/kis_layer_manager.cc:779
+#: ui/kis_layer_manager.cc:768
 #, fuzzy
 msgid "&Flatten Image"
 msgstr "Dyblygu Delwedd"
 
-#: ui/kis_layer_manager.cc:935
+#: ui/kis_layer_manager.cc:924
 msgid "Convert Invisible Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:938
+#: ui/kis_layer_manager.cc:927
 msgid "Export Only Toplevel Groups"
 msgstr ""
 
@@ -12200,12 +12207,6 @@ msgstr "Dewisydd Lliw"
 #, fuzzy, kde-format
 msgid "Workspace %1"
 msgstr "Dewisydd Lliw"
-
-#, fuzzy
-#~| msgid "General"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change Generator"
-#~ msgstr "Cyffredin"
 
 #, fuzzy
 #~ msgctxt "default theme name"
