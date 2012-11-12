@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: khotkeys\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-11-11 07:57+0100\n"
+"POT-Creation-Date: 2012-08-19 15:44+0200\n"
 "PO-Revision-Date: 2003-12-28 11:04+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -172,9 +172,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, new_button)
 #: kcm_hotkeys/conditions/conditions_widget.ui:30
+#: kcm_hotkeys/hotkeys_context_menu.cpp:156
 #, fuzzy
 #| msgid "&New"
-msgctxt "new condition"
 msgid "New"
 msgstr "&Newydd"
 
@@ -293,10 +293,13 @@ msgid "Window title:"
 msgstr "&Teitl y ffenestr:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
 #: kcm_hotkeys/helper_widgets/window_definition_widget.ui:39
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:85
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:131
 #, fuzzy
 #| msgid "Is Not Important"
-msgctxt "window title is not important"
 msgid "Is Not Important"
 msgstr "Dim o Bwys"
 
@@ -361,28 +364,12 @@ msgstr "Nid Yw'n Cydweddu â Mynegiad Rheolaidd"
 msgid "Window class:"
 msgstr "Do&sbarth y ffenestr:"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
-#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:85
-#, fuzzy
-#| msgid "Is Not Important"
-msgctxt "window class is not important"
-msgid "Is Not Important"
-msgstr "Dim o Bwys"
-
 #. i18n: ectx: property (text), widget (QLabel, window_role_label)
 #: kcm_hotkeys/helper_widgets/window_definition_widget.ui:123
 #, fuzzy
 #| msgid "Window &role:"
 msgid "Window role:"
 msgstr "&Rôl y ffenestr:"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
-#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:131
-#, fuzzy
-#| msgid "Is Not Important"
-msgctxt "window role is not important"
-msgid "Is Not Important"
-msgstr "Dim o Bwys"
 
 #. i18n: ectx: property (text), widget (QPushButton, autodetect)
 #: kcm_hotkeys/helper_widgets/window_definition_widget.ui:195
@@ -439,13 +426,6 @@ msgstr "Golygu..."
 #| msgid "Import New Actions..."
 msgid "Import..."
 msgstr "Mewnforio Gweithredoedd Newydd..."
-
-#: kcm_hotkeys/hotkeys_context_menu.cpp:156
-#, fuzzy
-#| msgid "&New"
-msgctxt "@title:menu create various trigger types"
-msgid "New"
-msgstr "&Newydd"
 
 #: kcm_hotkeys/hotkeys_context_menu.cpp:162
 #, fuzzy
@@ -834,6 +814,24 @@ msgstr "Clicied ffenestr:"
 #, fuzzy
 msgid "Window simple: "
 msgstr "Ffenestr syml:"
+
+#, fuzzy
+#~| msgid "Is Not Important"
+#~ msgctxt "window class is not important"
+#~ msgid "Is Not Important"
+#~ msgstr "Dim o Bwys"
+
+#, fuzzy
+#~| msgid "Is Not Important"
+#~ msgctxt "window role is not important"
+#~ msgid "Is Not Important"
+#~ msgstr "Dim o Bwys"
+
+#, fuzzy
+#~| msgid "&New"
+#~ msgctxt "@title:menu create various trigger types"
+#~ msgid "New"
+#~ msgstr "&Newydd"
 
 #, fuzzy
 #~| msgid "Normal"
