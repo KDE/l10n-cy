@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krandr\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-11 03:51+0100\n"
+"POT-Creation-Date: 2012-08-20 05:29+0200\n"
 "PO-Revision-Date: 2004-01-05 14:58+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -147,6 +147,91 @@ msgid_plural "%1 seconds remaining:"
 msgstr[0] "1 eiliad ar ôl:"
 msgstr[1] "%1 eiliad ar ôl:"
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, LegacyRandRConfigBase)
+#: legacyrandrconfigbase.ui:14
+#, fuzzy
+msgid "Screen Resize and Rotate Settings"
+msgstr "Newid Maint a Cylchdroi"
+
+#. i18n: ectx: property (whatsThis), widget (QWidget, LegacyRandRConfigBase)
+#: legacyrandrconfigbase.ui:17
+msgid ""
+"If this option is enabled, options set by the system tray applet will be "
+"saved and loaded when KDE starts instead of being temporary."
+msgstr ""
+"Os alluogir y dewisiad yma, cedwir dewisiadau a osodir gan y cymhwysiad cafn "
+"cysawd a'u llwythir wrth ymgychwyn KDE yn lle bod yn dros-dro."
+
+#. i18n: ectx: property (text), widget (QLabel, screenLabel)
+#: legacyrandrconfigbase.ui:25
+#, fuzzy
+#| msgid "Settings for screen:"
+msgid "Settings for screen:"
+msgstr "Gosodiadau ar gyfer y sgrîn:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, screenCombo)
+#: legacyrandrconfigbase.ui:38
+msgid ""
+"The screen whose settings you would like to change can be selected using "
+"this drop-down list."
+msgstr ""
+"Gellir ddewis y sgrîn y dymunwch newid y gosodiadau ohono gan ddefnyddio'r "
+"llam-restr."
+
+#. i18n: ectx: property (text), widget (QLabel, sizeLabel)
+#: legacyrandrconfigbase.ui:49
+msgid "Screen size:"
+msgstr "Maint y sgrîn:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, sizeCombo)
+#: legacyrandrconfigbase.ui:62
+msgid ""
+"The size, otherwise known as the resolution, of your screen can be selected "
+"from this drop-down list."
+msgstr ""
+"Gellir dewis maint, neu fel arall cydraniad, eich sgrîn o'r llam-restr yma."
+
+#. i18n: ectx: property (text), widget (QLabel, rateLabel)
+#: legacyrandrconfigbase.ui:73
+msgid "Refresh rate:"
+msgstr "Graddfa adfywio:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, rateCombo)
+#: legacyrandrconfigbase.ui:83
+msgid ""
+"The refresh rate of your screen can be selected from this drop-down list."
+msgstr "Gellir dewis graddfa adfywio eich sgrîn o'r llam-restr yma."
+
+#. i18n: ectx: property (whatsThis), widget (QGroupBox, rotationGroup)
+#: legacyrandrconfigbase.ui:98
+msgid ""
+"The options in this section allow you to change the rotation of your screen."
+msgstr "Caniata'r dewisiadau yn yr adran yma i chi newid cylchdro eich sgrîn."
+
+#. i18n: ectx: property (title), widget (QGroupBox, rotationGroup)
+#: legacyrandrconfigbase.ui:101
+msgid "Orientation (degrees counterclockwise)"
+msgstr "Cyfeiriadaeth (graddau wrthglocwedd)"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, applyOnStartup)
+#: legacyrandrconfigbase.ui:108
+msgid ""
+"If this option is enabled the size and orientation settings will be used "
+"when KDE starts."
+msgstr ""
+"Os alluogir y dewisiad yma, defnyddir y gosodiadau maint a chyfeiriadaeth "
+"wrth ymgychwyn KDE."
+
+#. i18n: ectx: property (text), widget (QCheckBox, applyOnStartup)
+#: legacyrandrconfigbase.ui:111
+msgid "Apply settings on KDE startup"
+msgstr "Gweithredu'r gosodiadau wrth ymgychwyn KDE"
+
+#. i18n: ectx: property (text), widget (QCheckBox, syncTrayApp)
+#: legacyrandrconfigbase.ui:118
+msgid "Allow tray application to change startup settings"
+msgstr "Caniatáu i gymhwysiad cafn newid gosodiadau ymgychwyn"
+
 #: legacyrandrscreen.cpp:140
 #, kde-format
 msgid ""
@@ -273,6 +358,36 @@ msgstr ""
 msgctxt "Automatic refresh rate configuration"
 msgid "Auto"
 msgstr ""
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, OutputConfigBase)
+#: outputconfigbase.ui:26
+msgid "Output Config"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: outputconfigbase.ui:32
+msgid "Size:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, rateLabel)
+#: outputconfigbase.ui:48
+#, fuzzy
+#| msgid "Refresh Rate"
+msgid "Refresh:"
+msgstr "Graddfa Ailfywio"
+
+#. i18n: ectx: property (text), widget (QLabel, orientationLabel)
+#: outputconfigbase.ui:64
+#, fuzzy
+msgid "Orientation:"
+msgstr "Cylchdroi anhysbys"
+
+#. i18n: ectx: property (text), widget (QLabel, positionLabel)
+#: outputconfigbase.ui:80
+#, fuzzy
+msgctxt "Position of the screen"
+msgid "Position:"
+msgstr "Cylchdroi anhysbys"
 
 #: outputgraphicsitem.cpp:72
 #, kde-format
@@ -406,7 +521,8 @@ msgstr ""
 "gosodiadau dymunol.  dywedwch os ydych eisiau cadw'r ffurfweddiad yma.  Mewn "
 "15 eiliad bydd y dangosiad yn dychwelyd i'r gosodiadau cynt."
 
-#: randrconfig.cpp:61
+#. i18n: ectx: property (text), widget (QPushButton, saveAsDefaultButton)
+#: randrconfig.cpp:61 randrconfigbase.ui:81
 msgid "Save as Default"
 msgstr ""
 
@@ -450,81 +566,30 @@ msgstr ""
 msgid "Changing configuration failed. Please adjust your xorg.conf manually."
 msgstr ""
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, RandRConfigBase)
+#: randrconfigbase.ui:14
+msgid "Display Configuration (X11 Resize, Rotate and Reflect)"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, unifyOutputs)
+#: randrconfigbase.ui:27
+msgid "Unify outputs"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: randrconfigbase.ui:52
+msgid "Primary output:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, identifyOutputsButton)
+#: randrconfigbase.ui:74
+msgid "Identify Outputs"
+msgstr ""
+
 #: randrdisplay.cpp:49
 #, fuzzy, kde-format
 msgid "X Resize and Rotate extension version %1.%2"
 msgstr "Cymhwysiad Cafn Cysawd Newid Maint a Cylchdroi"
-
-#, fuzzy
-#~ msgid "Screen Resize and Rotate Settings"
-#~ msgstr "Newid Maint a Cylchdroi"
-
-#~ msgid ""
-#~ "If this option is enabled, options set by the system tray applet will be "
-#~ "saved and loaded when KDE starts instead of being temporary."
-#~ msgstr ""
-#~ "Os alluogir y dewisiad yma, cedwir dewisiadau a osodir gan y cymhwysiad "
-#~ "cafn cysawd a'u llwythir wrth ymgychwyn KDE yn lle bod yn dros-dro."
-
-#, fuzzy
-#~| msgid "Settings for screen:"
-#~ msgid "Settings for screen:"
-#~ msgstr "Gosodiadau ar gyfer y sgrîn:"
-
-#~ msgid ""
-#~ "The screen whose settings you would like to change can be selected using "
-#~ "this drop-down list."
-#~ msgstr ""
-#~ "Gellir ddewis y sgrîn y dymunwch newid y gosodiadau ohono gan "
-#~ "ddefnyddio'r llam-restr."
-
-#~ msgid "Screen size:"
-#~ msgstr "Maint y sgrîn:"
-
-#~ msgid ""
-#~ "The size, otherwise known as the resolution, of your screen can be "
-#~ "selected from this drop-down list."
-#~ msgstr ""
-#~ "Gellir dewis maint, neu fel arall cydraniad, eich sgrîn o'r llam-restr "
-#~ "yma."
-
-#~ msgid "Refresh rate:"
-#~ msgstr "Graddfa adfywio:"
-
-#~ msgid ""
-#~ "The refresh rate of your screen can be selected from this drop-down list."
-#~ msgstr "Gellir dewis graddfa adfywio eich sgrîn o'r llam-restr yma."
-
-#~ msgid ""
-#~ "The options in this section allow you to change the rotation of your "
-#~ "screen."
-#~ msgstr ""
-#~ "Caniata'r dewisiadau yn yr adran yma i chi newid cylchdro eich sgrîn."
-
-#~ msgid "Orientation (degrees counterclockwise)"
-#~ msgstr "Cyfeiriadaeth (graddau wrthglocwedd)"
-
-#~ msgid ""
-#~ "If this option is enabled the size and orientation settings will be used "
-#~ "when KDE starts."
-#~ msgstr ""
-#~ "Os alluogir y dewisiad yma, defnyddir y gosodiadau maint a chyfeiriadaeth "
-#~ "wrth ymgychwyn KDE."
-
-#~ msgid "Apply settings on KDE startup"
-#~ msgstr "Gweithredu'r gosodiadau wrth ymgychwyn KDE"
-
-#~ msgid "Allow tray application to change startup settings"
-#~ msgstr "Caniatáu i gymhwysiad cafn newid gosodiadau ymgychwyn"
-
-#, fuzzy
-#~| msgid "Refresh Rate"
-#~ msgid "Refresh:"
-#~ msgstr "Graddfa Ailfywio"
-
-#, fuzzy
-#~ msgid "Orientation:"
-#~ msgstr "Cylchdroi anhysbys"
 
 #, fuzzy
 #~| msgid "Screen Size"
