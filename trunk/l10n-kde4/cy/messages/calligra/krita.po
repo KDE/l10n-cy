@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-24 02:27+0100\n"
+"POT-Creation-Date: 2013-03-25 02:20+0100\n"
 "PO-Revision-Date: 2004-07-06 17:18+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -1173,7 +1173,7 @@ msgstr "M&ewnosod Delwedd fel Haen..."
 msgid "Convert Projection Color Space"
 msgstr ""
 
-#: image/kis_image.cc:920 ui/kis_layer_manager.cc:772
+#: image/kis_image.cc:920 ui/kis_layer_manager.cc:770
 #, fuzzy
 msgid "Flatten Image"
 msgstr "Dyblygu Delwedd"
@@ -1964,7 +1964,7 @@ msgstr "Priodweddau Haen"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/extensions/compose/wdg_compose.ui:22
-#: ui/dialogs/kis_dlg_adj_layer_props.cc:84
+#: ui/dialogs/kis_dlg_adj_layer_props.cc:82
 msgid "Layer name:"
 msgstr "Enw'r haen:"
 
@@ -3210,7 +3210,7 @@ msgstr "Dewisydd Lliw"
 #. i18n: ectx: property (text), widget (QLabel, lblCanvasBorderColor)
 #. i18n: ectx: property (text), widget (QLabel, lblColor)
 #: plugins/extensions/dropshadow/wdg_dropshadow.ui:38
-#: plugins/filters/colors/wdgcolortoalphabase.ui:17
+#: plugins/filters/colors/wdgcolortoalphabase.ui:20
 #: ui/forms/wdgdisplaysettings.ui:38 ui/forms/wdgdisplaysettings.ui:131
 msgid "Color:"
 msgstr "Lliw:"
@@ -4469,7 +4469,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: ectx: property (text), widget (QTreeWidget, listViewChannels)
 #: plugins/extensions/metadataeditor/kis_meta_data_model.cpp:108
-#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:120
+#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:119
 #: plugins/paintops/libpaintop/forms/wdgcoloroptions.ui:185
 #: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:35
 #: plugins/tools/defaulttools/wdgcolorpicker.ui:35
@@ -4722,7 +4722,7 @@ msgid "Separate Image"
 msgstr "Delwedd Newydd :"
 
 #: plugins/extensions/separate_channels/kis_channel_separator.cc:236
-#: ui/kis_layer_manager.cc:869
+#: ui/kis_layer_manager.cc:867
 msgid "Export Layer"
 msgstr "Allforio Haen"
 
@@ -5078,7 +5078,7 @@ msgstr "Gwaredu Sianel"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: plugins/filters/colors/wdgcolortoalphabase.ui:30
+#: plugins/filters/colors/wdgcolortoalphabase.ui:61
 #: plugins/filters/unsharp/wdgunsharp.ui:68
 #, fuzzy
 msgid "Threshold:"
@@ -5116,7 +5116,7 @@ msgstr "Disgleirdeb / Cyferbyniad"
 msgid "&HSV Adjustment..."
 msgstr "Addasiad &Lliw..."
 
-#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:124
+#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:123
 #, fuzzy
 msgid "Lightness"
 msgstr "Disgleirdeb:"
@@ -5315,7 +5315,7 @@ msgstr "Glas:"
 msgid "&Emboss with Variable Depth..."
 msgstr ""
 
-#: plugins/filters/embossfilter/kis_emboss_filter.cpp:163
+#: plugins/filters/embossfilter/kis_emboss_filter.cpp:162
 msgid "Depth"
 msgstr "Dyfnder"
 
@@ -5357,7 +5357,7 @@ msgstr "Gludo Detholiad"
 
 #. i18n: ectx: property (text), widget (QCheckBox, thresholdCBox)
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:55
+#: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:54
 #: plugins/filters/imageenhancement/kis_wavelet_noise_reduction.cpp:52
 #: plugins/paintops/hairy/wdgbristleoptions.ui:116
 #: plugins/paintops/libpaintop/kis_pressure_sharpness_option_widget.cpp:37
@@ -5365,7 +5365,7 @@ msgstr "Gludo Detholiad"
 msgid "Threshold"
 msgstr "Trothwy"
 
-#: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:56
+#: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:55
 #, fuzzy
 msgid "Window size"
 msgstr "Priodweddau Haen..."
@@ -6140,10 +6140,18 @@ msgctxt "vertical resolution"
 msgid "Vertical:"
 msgstr "Croesrwygo Fertigol"
 
-#: plugins/formats/png/kis_png_export.cc:89
+#: plugins/formats/png/kis_png_export.cc:91
 #, fuzzy
 msgid "PNG Export Options"
 msgstr "Gosodiadau Graddiannau"
+
+#: plugins/formats/png/kis_png_export.cc:109
+msgid "Cannot export images in this colorspace or channel depth to PNG"
+msgstr ""
+
+#: plugins/formats/png/kis_png_export.cc:109
+msgid "Krita PNG Export"
+msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, KisWdgOptionsPNG)
 #: plugins/formats/png/kis_wdg_options_png.ui:14
@@ -8992,27 +9000,27 @@ msgstr "Magentau"
 msgid "Paint with brushes"
 msgstr "Peintio gyda patrwm"
 
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:180
+#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:251
 msgid "Cannot pick a color as no layer is active."
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:184
+#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:255
 msgid "Cannot pick a color as the active layer is not visible."
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:230
+#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:301
 #: ui/kis_custom_palette.cc:113 ui/kis_custom_palette.cc:152
 #, kde-format
 msgid "Cannot write to palette file %1. Maybe it is read-only."
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:230
+#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:301
 #: ui/kis_custom_palette.cc:113 ui/kis_custom_palette.cc:152
 #, fuzzy
 msgid "Palette"
 msgstr "Patrymau"
 
-#: plugins/tools/defaulttools/kis_tool_colorpicker.h:96
+#: plugins/tools/defaulttools/kis_tool_colorpicker.h:115
 #, fuzzy
 msgid "Select a color from the image or current layer"
 msgstr "Offer Detholi"
@@ -9925,7 +9933,7 @@ msgstr "Erfyn Trawsffurfio"
 msgid "Clear Perspective Grid"
 msgstr "Erfyn Trawsffurfio"
 
-#: ui/dialogs/kis_dlg_adj_layer_props.cc:104
+#: ui/dialogs/kis_dlg_adj_layer_props.cc:103
 msgid "No configuration options are available for this filter"
 msgstr ""
 
@@ -11798,7 +11806,7 @@ msgstr "Dyblygu Delwedd"
 msgid "&Flatten Layer"
 msgstr "Hidlenni"
 
-#: ui/kis_layer_manager.cc:295 ui/kis_layer_manager.cc:841
+#: ui/kis_layer_manager.cc:295 ui/kis_layer_manager.cc:839
 #, fuzzy
 msgid "Rasterize Layer"
 msgstr "&Gwaredu Haen"
@@ -11823,55 +11831,55 @@ msgstr "Newid Maint y Ddelwedd i'r Haen Gyfredol"
 msgid "Add new paint layer"
 msgstr "&Haen"
 
-#: ui/kis_layer_manager.cc:372
+#: ui/kis_layer_manager.cc:370
 #, fuzzy
 #| msgid "Layer Properties"
 msgid "Filter Layer Properties"
 msgstr "Priodweddau Haen"
 
-#: ui/kis_layer_manager.cc:417
+#: ui/kis_layer_manager.cc:415
 #, fuzzy
 #| msgid "Layer Properties"
 msgid "Generator Layer Properties"
 msgstr "Priodweddau Haen"
 
-#: ui/kis_layer_manager.cc:475 ui/kis_layer_manager.cc:489
-#: ui/kis_layer_manager.cc:530 ui/kis_layer_manager.cc:561
-#: ui/kis_layer_manager.cc:662
+#: ui/kis_layer_manager.cc:473 ui/kis_layer_manager.cc:487
+#: ui/kis_layer_manager.cc:528 ui/kis_layer_manager.cc:559
+#: ui/kis_layer_manager.cc:660
 msgid "Could not add layer to image."
 msgstr "Methwyd ychwanegu haen i ddelwedd."
 
-#: ui/kis_layer_manager.cc:475 ui/kis_layer_manager.cc:489
-#: ui/kis_layer_manager.cc:530 ui/kis_layer_manager.cc:561
-#: ui/kis_layer_manager.cc:662
+#: ui/kis_layer_manager.cc:473 ui/kis_layer_manager.cc:487
+#: ui/kis_layer_manager.cc:528 ui/kis_layer_manager.cc:559
+#: ui/kis_layer_manager.cc:660
 msgid "Layer Error"
 msgstr "Gwall Haen"
 
-#: ui/kis_layer_manager.cc:585
+#: ui/kis_layer_manager.cc:583
 #, fuzzy
 #| msgid "Filters"
 msgid "New Filter Layer"
 msgstr "Hidlenni"
 
-#: ui/kis_layer_manager.cc:729
+#: ui/kis_layer_manager.cc:727
 #, fuzzy
 msgid "Scale Layer"
 msgstr "Graddio Haen..."
 
-#: ui/kis_layer_manager.cc:771
+#: ui/kis_layer_manager.cc:769
 msgid "The image contains hidden layers that will be lost."
 msgstr ""
 
-#: ui/kis_layer_manager.cc:773
+#: ui/kis_layer_manager.cc:771
 #, fuzzy
 msgid "&Flatten Image"
 msgstr "Dyblygu Delwedd"
 
-#: ui/kis_layer_manager.cc:929
+#: ui/kis_layer_manager.cc:927
 msgid "Convert Invisible Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:932
+#: ui/kis_layer_manager.cc:930
 msgid "Export Only Toplevel Groups"
 msgstr ""
 
@@ -11885,44 +11893,44 @@ msgstr "Dim detholiad"
 msgid "Create Layer from Mask"
 msgstr "Creu %1 newydd "
 
-#: ui/kis_mask_manager.cc:139
+#: ui/kis_mask_manager.cc:138
 #, kde-format
 msgid "Selection <numid>%1</numid>"
 msgstr ""
 
-#: ui/kis_mask_manager.cc:155
+#: ui/kis_mask_manager.cc:152
 #, fuzzy
 msgid "Transparency Mask"
 msgstr "Tryloyw"
 
-#: ui/kis_mask_manager.cc:168
+#: ui/kis_mask_manager.cc:163
 #, fuzzy
 #| msgid "Filters"
 msgid "New filter mask"
 msgstr "Hidlenni"
 
-#: ui/kis_mask_manager.cc:180
+#: ui/kis_mask_manager.cc:175
 #, fuzzy
 #| msgid "Filters"
 msgid "New Filter Mask"
 msgstr "Hidlenni"
 
-#: ui/kis_mask_manager.cc:202
+#: ui/kis_mask_manager.cc:196
 #, fuzzy
 msgid "Mask to Selection"
 msgstr "Dim detholiad"
 
-#: ui/kis_mask_manager.cc:245
+#: ui/kis_mask_manager.cc:237
 #, fuzzy
 msgid "Layer from Mask"
 msgstr "Creu %1 newydd "
 
-#: ui/kis_mask_manager.cc:260
+#: ui/kis_mask_manager.cc:250
 #, fuzzy
 msgid "Duplication of "
 msgstr "Dyblygu Delwedd"
 
-#: ui/kis_mask_manager.cc:294
+#: ui/kis_mask_manager.cc:280
 #, fuzzy
 msgid "Effect Mask Properties"
 msgstr "Priodweddau Haen"
@@ -12502,7 +12510,7 @@ msgstr "Erfyn Graddiant"
 msgid "Detach from Toolbar"
 msgstr ""
 
-#: ui/widgets/kis_wdg_generator.cpp:150 ui/widgets/kis_wdg_generator.cpp:164
+#: ui/widgets/kis_wdg_generator.cpp:138 ui/widgets/kis_wdg_generator.cpp:151
 #, fuzzy
 msgid "No configuration options."
 msgstr "Ffurfweddu..."
