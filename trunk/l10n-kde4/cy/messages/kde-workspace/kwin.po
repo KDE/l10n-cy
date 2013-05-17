@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-05-16 04:18+0200\n"
+"POT-Creation-Date: 2013-05-17 04:15+0200\n"
 "PO-Revision-Date: 2003-12-27 10:16+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -62,9 +62,10 @@ msgstr ""
 msgid "KWin: "
 msgstr "KWin:"
 
-#: killer/killer.cpp:43 main.cpp:533
-msgid "KWin"
-msgstr "KWin"
+#: killer/killer.cpp:43
+#, fuzzy
+msgid "Window Manager"
+msgstr "Trefnydd Ffenestri KDE"
 
 #: killer/killer.cpp:44
 msgid "KWin helper utility"
@@ -99,27 +100,43 @@ msgstr ""
 msgid "This helper utility is not supposed to be called directly."
 msgstr "Ni ddylai'r ddefnyddioldeb yma gael ei galw yn uniongyrchol!"
 
-#: killer/killer.cpp:76
-#, fuzzy, kde-format
-#| msgid ""
-#| "<qt>Window with title \"<b>%2</b>\" is not responding. This window "
-#| "belongs to application <b>%1</b> (PID=%3, hostname=%4).<p>Do you wish to "
-#| "terminate this application? (All unsaved data in this application will be "
-#| "lost.)</qt>"
-msgid ""
-"<p>The window \"<b>%2</b>\" is not responding. It belongs to the application "
-"<b>%1</b> (Process ID = %3, hostname = %4).</p><p>Do you wish to terminate "
-"the application process <em>including <b>all</b> of its child windows</em>?"
-"<br /><b>Any unsaved data will be lost.</b></p>"
+#: killer/killer.cpp:79
+#, kde-format
+msgctxt "@info"
+msgid "<b>Application \"%1\" is not responding</b>"
 msgstr ""
-"<qt>Nid yw'r ffenestr efo'r teitl \"<b>%2</b>\" yn ymateb.  Mae'r ffenestr "
-"yma yn biau i gymhwysiad <b>%1</b> (PID=%3, hostname=%4).<p>Ddymunwch "
-"derfynu'r cymhwysiad yma? (Collir pob darn o ddata ni chafodd ei gadw yn y "
-"cymhwysiad yma.)</qt>"
 
-#: killer/killer.cpp:82
+#: killer/killer.cpp:81
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para>You tried to close window \"%1\" from application \"%2\" (Process ID: "
+"%3) but the application is not responding.</para>"
+msgstr ""
+
+#: killer/killer.cpp:83
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para>You tried to close window \"%1\" from application \"%2\" (Process ID: "
+"%3), running on host \"%4\", but the application is not responding.</para>"
+msgstr ""
+
+#: killer/killer.cpp:86
+msgctxt "@info"
+msgid ""
+"<para>Do you want to terminate this application?</"
+"para><para><warning>Terminating the application will close all of its child "
+"windows. Any unsaved data will be lost.</warning></para>"
+msgstr ""
+
+#: killer/killer.cpp:90
 #, kde-format
 msgid "&Terminate Application %1"
+msgstr ""
+
+#: killer/killer.cpp:91
+msgid "Wait Longer"
 msgstr ""
 
 #. i18n: ectx: label, entry (DesktopMode), group (TabBox)
@@ -489,6 +506,10 @@ msgstr ""
 #, fuzzy
 msgid "KDE window manager"
 msgstr "Trefnydd Ffenestri KDE"
+
+#: main.cpp:533
+msgid "KWin"
+msgstr "KWin"
 
 #: main.cpp:537
 #, fuzzy
@@ -881,6 +902,23 @@ msgid ""
 "paste bin service\n"
 "like http://paste.kde.org instead of pasting into support threads.\n"
 msgstr ""
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Window with title \"<b>%2</b>\" is not responding. This window "
+#~| "belongs to application <b>%1</b> (PID=%3, hostname=%4).<p>Do you wish to "
+#~| "terminate this application? (All unsaved data in this application will "
+#~| "be lost.)</qt>"
+#~ msgid ""
+#~ "<p>The window \"<b>%2</b>\" is not responding. It belongs to the "
+#~ "application <b>%1</b> (Process ID = %3, hostname = %4).</p><p>Do you wish "
+#~ "to terminate the application process <em>including <b>all</b> of its "
+#~ "child windows</em>?<br /><b>Any unsaved data will be lost.</b></p>"
+#~ msgstr ""
+#~ "<qt>Nid yw'r ffenestr efo'r teitl \"<b>%2</b>\" yn ymateb.  Mae'r "
+#~ "ffenestr yma yn biau i gymhwysiad <b>%1</b> (PID=%3, hostname=%4)."
+#~ "<p>Ddymunwch derfynu'r cymhwysiad yma? (Collir pob darn o ddata ni "
+#~ "chafodd ei gadw yn y cymhwysiad yma.)</qt>"
 
 #, fuzzy
 #~ msgid "Window '%1' demands attention."
