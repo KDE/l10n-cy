@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-06-26 01:41+0000\n"
+"POT-Creation-Date: 2013-06-27 01:36+0000\n"
 "PO-Revision-Date: 2004-02-25 13:47+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -134,18 +134,6 @@ msgstr "Dibynnydd Ebost KDE"
 #: aboutdata.cpp:242
 msgid "Copyright © 1997–2013, KMail authors"
 msgstr ""
-
-#: addressvalidationjob.cpp:81
-#, kde-format
-msgid "Distribution list %2 is empty, it cannot be used."
-msgid_plural "Distribution lists %2 are empty, they cannot be used."
-msgstr[0] ""
-msgstr[1] ""
-
-#: addressvalidationjob.cpp:84 addressvalidationjob.cpp:93
-#: identity/identitydialog.cpp:654
-msgid "Invalid Email Address"
-msgstr "Cyfeiriad Ebost Annilys"
 
 #: antispamwizard.cpp:116
 msgid "Anti-Spam Wizard"
@@ -1723,25 +1711,6 @@ msgstr "&Ychwanegu..."
 msgid "Remove"
 msgstr "Gware&du"
 
-#: createnewcontactjob.cpp:80 kmreaderwin.cpp:174
-msgid "Add to Address Book"
-msgstr "Ychwanegu i'r Llyfr Cyfeiriadau"
-
-#: createnewcontactjob.cpp:132
-#, fuzzy
-msgid "Contact created successfully"
-msgstr "Symudwyd y negeseuon yn llwyddiannus."
-
-#: createnewcontactjob.cpp:137 kmreaderwin.cpp:776
-#, kde-format
-msgid "Contact cannot be stored: %1"
-msgstr ""
-
-#: createnewcontactjob.cpp:137 kmreaderwin.cpp:776
-#, fuzzy
-msgid "Failed to store contact"
-msgstr "atodiad"
-
 #: foldershortcutactionmanager.cpp:138 foldershortcutactionmanager.cpp:139
 #, kde-format
 msgid "Folder Shortcut %1"
@@ -2128,6 +2097,11 @@ msgstr "&Llun"
 msgid "Invalid Email Alias \"%1\""
 msgstr "Cyfeiriad Ebost Annilys"
 
+#: identity/identitydialog.cpp:654 job/addressvalidationjob.cpp:84
+#: job/addressvalidationjob.cpp:93
+msgid "Invalid Email Address"
+msgstr "Cyfeiriad Ebost Annilys"
+
 #: identity/identitydialog.cpp:689
 #, kde-format
 msgid ""
@@ -2357,6 +2331,32 @@ msgstr "Dim Llun"
 #: identity/xfaceconfigurator.cpp:280 identity/xfaceconfigurator.cpp:290
 msgid "No picture set for your address book entry."
 msgstr ""
+
+#: job/addressvalidationjob.cpp:81
+#, kde-format
+msgid "Distribution list %2 is empty, it cannot be used."
+msgid_plural "Distribution lists %2 are empty, they cannot be used."
+msgstr[0] ""
+msgstr[1] ""
+
+#: job/createnewcontactjob.cpp:80 kmreaderwin.cpp:174
+msgid "Add to Address Book"
+msgstr "Ychwanegu i'r Llyfr Cyfeiriadau"
+
+#: job/createnewcontactjob.cpp:132
+#, fuzzy
+msgid "Contact created successfully"
+msgstr "Symudwyd y negeseuon yn llwyddiannus."
+
+#: job/createnewcontactjob.cpp:137 kmreaderwin.cpp:776
+#, kde-format
+msgid "Contact cannot be stored: %1"
+msgstr ""
+
+#: job/createnewcontactjob.cpp:137 kmreaderwin.cpp:776
+#, fuzzy
+msgid "Failed to store contact"
+msgstr "atodiad"
 
 #. i18n: ectx: whatsthis, entry (ExcludeImportantMailFromExpiry), group (Behaviour)
 #: kmail.kcfg.cmake:49
@@ -3953,8 +3953,7 @@ msgid "Notification"
 msgstr "Hysbysiad Ebost Newydd"
 
 #: kmmainwidget.cpp:325
-msgid ""
-"An other mailer was found on system. Do you want to import data from it?"
+msgid "Another mailer was found on system. Do you want to import data from it?"
 msgstr ""
 
 #: kmmainwidget.cpp:328 kmmainwidget.cpp:4373
