@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-08-15 01:39+0000\n"
+"POT-Creation-Date: 2013-08-17 01:40+0000\n"
 "PO-Revision-Date: 2004-02-25 13:47+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -4756,7 +4756,7 @@ msgctxt "Message->"
 msgid "&Reply"
 msgstr "&Ateb"
 
-#: messageactions.cpp:84 searchdialog/searchwindow.cpp:227
+#: messageactions.cpp:84 searchdialog/searchwindow.cpp:231
 msgid "&Reply..."
 msgstr "A&teb..."
 
@@ -4764,11 +4764,11 @@ msgstr "A&teb..."
 msgid "Reply to A&uthor..."
 msgstr "Ateb i'r A&wdur"
 
-#: messageactions.cpp:98 searchdialog/searchwindow.cpp:231
+#: messageactions.cpp:98 searchdialog/searchwindow.cpp:235
 msgid "Reply to &All..."
 msgstr "Ateb i &Bawb..."
 
-#: messageactions.cpp:105 searchdialog/searchwindow.cpp:235
+#: messageactions.cpp:105 searchdialog/searchwindow.cpp:239
 msgid "Reply to Mailing-&List..."
 msgstr "Ateb i &Rhestr Ebost..."
 
@@ -4813,7 +4813,7 @@ msgstr "G&olygu Neges"
 msgid "Add Note..."
 msgstr "Ychwanegu..."
 
-#: messageactions.cpp:174 searchdialog/searchwindow.cpp:239
+#: messageactions.cpp:174 searchdialog/searchwindow.cpp:243
 msgctxt "Message->"
 msgid "&Forward"
 msgstr "&Blaenyrru"
@@ -4966,74 +4966,144 @@ msgctxt "@title:column, folder (e.g. email)"
 msgid "Folder"
 msgstr "Plygell"
 
-#: searchdialog/searchwindow.cpp:90
+#: searchdialog/searchdebugdialog.cpp:35
+msgid "Search query debug"
+msgstr ""
+
+#: searchdialog/searchdebugdialog.cpp:37
+#, fuzzy
+msgid "Save As..."
+msgstr "Cad&w Fel..."
+
+#: searchdialog/searchdebugdialog.cpp:71
+msgid "all files (*)"
+msgstr ""
+
+#: searchdialog/searchdebugdialog.cpp:81
+#, kde-format
+msgid ""
+"Could not write the file %1:\n"
+"\"%2\" is the detailed error description."
+msgstr ""
+
+#: searchdialog/searchdebugdialog.cpp:85
+#, fuzzy
+#| msgid "Leave Editor Open"
+msgid "Sieve Editor Error"
+msgstr "Gadael y Golygydd yn Agored"
+
+#: searchdialog/searchdebugwidget.cpp:52
+msgid "UIDS:"
+msgstr ""
+
+#: searchdialog/searchdebugwidget.cpp:53
+#, fuzzy
+#| msgid "&Message"
+msgid "Message:"
+msgstr "&Neges"
+
+#: searchdialog/searchdebugwidget.cpp:57 searchdialog/searchwindow.cpp:410
+#: searchdialog/searchwindow.cpp:438 searchdialog/searchwindow.cpp:441
+#, fuzzy
+msgid "Search"
+msgstr "&Chwilio"
+
+#: searchdialog/searchdebugwidget.cpp:176
+#, fuzzy, kde-format
+msgid "1 message found"
+msgid_plural "%1 messages found"
+msgstr[0] "%1 neges, %2."
+msgstr[1] "%1 o negeseuon, %2."
+
+#: searchdialog/searchdebugwidget.cpp:195
+msgid "Error on fetching item"
+msgstr ""
+
+#: searchdialog/searchwindow.cpp:91
 #, fuzzy
 msgid "Find Messages"
 msgstr "&Canfod Negeseuon..."
 
-#: searchdialog/searchwindow.cpp:102
+#: searchdialog/searchwindow.cpp:103
 #, fuzzy
 #| msgid "&Search"
 msgctxt "@action:button Search for messages"
 msgid "&Search"
 msgstr "&Chwilio"
 
-#: searchdialog/searchwindow.cpp:189 searchdialog/searchwindow.cpp:382
+#: searchdialog/searchwindow.cpp:108
+msgid "Debug query"
+msgstr ""
+
+#: searchdialog/searchwindow.cpp:193 searchdialog/searchwindow.cpp:386
 msgid "Last Search"
 msgstr "Chwiliad Diwethaf"
 
-#: searchdialog/searchwindow.cpp:244
+#: searchdialog/searchwindow.cpp:248
 #, fuzzy
 #| msgid "&Inline..."
 msgctxt "@action:inmenu Forward message inline."
 msgid "&Inline..."
 msgstr "&Mewnlin..."
 
-#: searchdialog/searchwindow.cpp:249
+#: searchdialog/searchwindow.cpp:253
 msgctxt "Message->Forward->"
 msgid "As &Attachment..."
 msgstr "&Fel Atodiad..."
 
-#: searchdialog/searchwindow.cpp:263
+#: searchdialog/searchwindow.cpp:267
 msgid "Save Attachments..."
 msgstr "Cadw Atodiadau...."
 
-#: searchdialog/searchwindow.cpp:269
+#: searchdialog/searchwindow.cpp:273
 msgid "Clear Selection"
 msgstr "Gwagu Dewisiad"
 
-#: searchdialog/searchwindow.cpp:353
+#: searchdialog/searchwindow.cpp:357
 #, kde-format
 msgid "%1 match"
 msgid_plural "%1 matches"
 msgstr[0] "%1 cydweddiad"
 msgstr[1] "%1 o gydweddiadau"
 
-#: searchdialog/searchwindow.cpp:443
+#: searchdialog/searchwindow.cpp:410
+#, fuzzy
+msgid "You did not selected a valid folder."
+msgstr "Methu cydamseru'r blygell maildir."
+
+#: searchdialog/searchwindow.cpp:438
+msgid "You forgot to define condition."
+msgstr ""
+
+#: searchdialog/searchwindow.cpp:441
+msgid "All folders selected are empty or were not indexed."
+msgstr ""
+
+#: searchdialog/searchwindow.cpp:463
 #, fuzzy
 #| msgid "Subscription..."
 msgid "Searching..."
 msgstr "Tanysgrifiad..."
 
-#: searchdialog/searchwindow.cpp:451
+#: searchdialog/searchwindow.cpp:471
 #, kde-format
 msgid "Can not get search result. %1"
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:562
+#: searchdialog/searchwindow.cpp:582
 msgid ""
 "There was a problem renaming your search folder. A common reason for this is "
 "that another search folder with the same name already exists."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:665
+#: searchdialog/searchwindow.cpp:685
 #, fuzzy, kde-format
 msgid "Copy Message"
 msgid_plural "Copy %1 Messages"
 msgstr[0] "G&olygu Neges"
 msgstr[1] "G&olygu Neges"
 
-#: searchdialog/searchwindow.cpp:668
+#: searchdialog/searchwindow.cpp:688
 #, fuzzy, kde-format
 msgid "Cut Message"
 msgid_plural "Cut %1 Messages"
@@ -9066,10 +9136,6 @@ msgstr "Golygydd Allanol"
 #~ msgid "&Save Attachment As..."
 #~ msgstr "&Cadw Atodiad Fel..."
 
-#, fuzzy
-#~ msgid "Save As..."
-#~ msgstr "Cad&w Fel..."
-
 #~ msgid "Attachment Pr&operties"
 #~ msgstr "Priodweddau y&r Atodiad"
 
@@ -10973,10 +11039,6 @@ msgstr "Golygydd Allanol"
 #~ "Gwall wrth agor %1.  Unai nid plygell maildir ddilys yw hon, neu nid oes "
 #~ "gennych ganiatadau cyrchiad digonol."
 
-#, fuzzy
-#~ msgid "Could not sync maildir folder."
-#~ msgstr "Methu cydamseru'r blygell maildir."
-
 #~ msgid ""
 #~ "KMFolderMaildir::addMsg: abnormally terminating to prevent data loss."
 #~ msgstr "KMFolderMaildir::addMsg: yn terfynu yn anarferol i atal colli data."
@@ -11031,11 +11093,6 @@ msgstr "Golygydd Allanol"
 #~ msgctxt "type of folder storage"
 #~ msgid "IMAP"
 #~ msgstr "IMAP"
-
-#, fuzzy
-#~ msgctxt "type of folder storage"
-#~ msgid "Search"
-#~ msgstr "&Chwilio"
 
 #, fuzzy
 #~| msgid "Unknown"
@@ -14639,9 +14696,6 @@ msgstr "Golygydd Allanol"
 #~ msgid "Abort Editor"
 #~ msgstr "Erthylu'r Golygydd"
 
-#~ msgid "Leave Editor Open"
-#~ msgstr "Gadael y Golygydd yn Agored"
-
 #~ msgid " Spell check canceled."
 #~ msgstr "Diddymwyd y gwirio sillafu."
 
@@ -15734,9 +15788,3 @@ msgstr "Golygydd Allanol"
 #, fuzzy
 #~ msgid "Automatically delete older mails on POP servers"
 #~ msgstr "Anfon cada&rnhadau derbyn yn ymysgogol"
-
-#, fuzzy
-#~ msgid "%1 message"
-#~ msgid_plural "%1 messages"
-#~ msgstr[0] "%1 neges, %2."
-#~ msgstr[1] "%1 o negeseuon, %2."
