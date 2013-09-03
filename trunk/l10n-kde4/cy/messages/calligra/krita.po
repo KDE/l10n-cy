@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-02 01:29+0000\n"
+"POT-Creation-Date: 2013-09-03 01:29+0000\n"
 "PO-Revision-Date: 2004-07-06 17:18+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -2224,6 +2224,7 @@ msgstr "&Cysgodion"
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:461
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:663
 #: plugins/formats/pdf/pdfimportwidgetbase.ui:168
+#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:97
 #: ui/forms/wdgdisplaysettings.ui:67 ui/kis_paintop_box.cc:152
 #, fuzzy
 #| msgid "Size"
@@ -7112,7 +7113,6 @@ msgstr "Toddi"
 #: plugins/paintops/gridbrush/wdggridoptions.ui:105
 #: plugins/paintops/hairy/wdgbristleoptions.ui:40
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:99
-#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:95
 #: plugins/paintops/libpaintop/kis_texture_option.cpp:73
 #: plugins/paintops/spray/wdgsprayoptions.ui:166
 #, fuzzy
@@ -7538,7 +7538,7 @@ msgstr "Hap"
 #: plugins/paintops/libpaintop/forms/wdgclipboardbrush.ui:88
 #: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:171
 #: plugins/paintops/libpaintop/forms/wdgtextbrush.ui:72
-#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:110
+#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:112
 #: plugins/paintops/spray/wdgsprayoptions.ui:204
 #, fuzzy
 msgid "Spacing:"
@@ -7571,7 +7571,7 @@ msgstr "Gwaredu Detholiad"
 #. i18n: ectx: property (text), widget (QCheckBox, colorAsmask)
 #: plugins/paintops/libpaintop/forms/wdgclipboardbrush.ui:22
 #: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:104
-#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:117
+#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:119
 msgid "Use color as mask"
 msgstr "Defnyddio lliw fel mwgwd "
 
@@ -7830,10 +7830,23 @@ msgstr ""
 msgid "The mixing option mixes the paint on the brush with that on the canvas."
 msgstr ""
 
-#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:104
+#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:106
 #, fuzzy
 msgid "Rotation:"
 msgstr "Cylchdroi"
+
+#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:157
+#, fuzzy
+#| msgid "Remove Mask"
+msgid "Reset Brush"
+msgstr "Gwaredu Mwgwd"
+
+#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:158
+msgid ""
+"Reloads Spacing from file\n"
+"Sets Scale to 1.0\n"
+"Sets Rotation to 0.0"
+msgstr ""
 
 #: plugins/paintops/libpaintop/kis_brush_option_widget.cpp:29
 #, fuzzy
@@ -14179,11 +14192,6 @@ msgstr "Dewisydd Lliw"
 #, fuzzy
 #~ msgid "Current Brush"
 #~ msgstr "brwsh"
-
-#, fuzzy
-#~| msgid "Remove Mask"
-#~ msgid "Remove Brush"
-#~ msgstr "Gwaredu Mwgwd"
 
 #, fuzzy
 #~ msgid "Current brush definition"
