@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-26 01:44+0000\n"
+"POT-Creation-Date: 2013-09-27 01:50+0000\n"
 "PO-Revision-Date: 2004-02-25 13:47+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -4802,7 +4802,7 @@ msgctxt "Message->"
 msgid "&Reply"
 msgstr "&Ateb"
 
-#: messageactions.cpp:84 searchdialog/searchwindow.cpp:230
+#: messageactions.cpp:84 searchdialog/searchwindow.cpp:242
 msgid "&Reply..."
 msgstr "A&teb..."
 
@@ -4810,11 +4810,11 @@ msgstr "A&teb..."
 msgid "Reply to A&uthor..."
 msgstr "Ateb i'r A&wdur"
 
-#: messageactions.cpp:98 searchdialog/searchwindow.cpp:234
+#: messageactions.cpp:98 searchdialog/searchwindow.cpp:246
 msgid "Reply to &All..."
 msgstr "Ateb i &Bawb..."
 
-#: messageactions.cpp:105 searchdialog/searchwindow.cpp:238
+#: messageactions.cpp:105 searchdialog/searchwindow.cpp:250
 msgid "Reply to Mailing-&List..."
 msgstr "Ateb i &Rhestr Ebost..."
 
@@ -4859,7 +4859,7 @@ msgstr "G&olygu Neges"
 msgid "Add Note..."
 msgstr "Ychwanegu..."
 
-#: messageactions.cpp:174 searchdialog/searchwindow.cpp:242
+#: messageactions.cpp:174 searchdialog/searchwindow.cpp:254
 msgctxt "Message->"
 msgid "&Forward"
 msgstr "&Blaenyrru"
@@ -5017,7 +5017,7 @@ msgid "Search"
 msgstr "&Chwilio"
 
 #: searchdialog/debug/searchdebugwidget.cpp:124
-#: searchdialog/searchwindow.cpp:472
+#: searchdialog/searchwindow.cpp:499
 #, fuzzy
 #| msgid "Subscription..."
 msgid "Searching..."
@@ -5094,82 +5094,86 @@ msgstr "Plygell"
 msgid "Nepomuk cannot make search. Errors found: <ul><li>%1</li></ul>"
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:84
+#: searchdialog/searchwindow.cpp:85
 #, fuzzy
 msgid "Find Messages"
 msgstr "&Canfod Negeseuon..."
 
-#: searchdialog/searchwindow.cpp:106
+#: searchdialog/searchwindow.cpp:107
 #, fuzzy
 #| msgid "&Search"
 msgctxt "@action:button Search for messages"
 msgid "&Search"
 msgstr "&Chwilio"
 
-#: searchdialog/searchwindow.cpp:111
+#: searchdialog/searchwindow.cpp:112
 msgid "Debug query"
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:192 searchdialog/searchwindow.cpp:385
+#: searchdialog/searchwindow.cpp:204 searchdialog/searchwindow.cpp:397
 msgid "Last Search"
 msgstr "Chwiliad Diwethaf"
 
-#: searchdialog/searchwindow.cpp:247
+#: searchdialog/searchwindow.cpp:259
 #, fuzzy
 #| msgid "&Inline..."
 msgctxt "@action:inmenu Forward message inline."
 msgid "&Inline..."
 msgstr "&Mewnlin..."
 
-#: searchdialog/searchwindow.cpp:252
+#: searchdialog/searchwindow.cpp:264
 msgctxt "Message->Forward->"
 msgid "As &Attachment..."
 msgstr "&Fel Atodiad..."
 
-#: searchdialog/searchwindow.cpp:266
+#: searchdialog/searchwindow.cpp:278
 msgid "Save Attachments..."
 msgstr "Cadw Atodiadau...."
 
-#: searchdialog/searchwindow.cpp:272
+#: searchdialog/searchwindow.cpp:284
 msgid "Clear Selection"
 msgstr "Gwagu Dewisiad"
 
-#: searchdialog/searchwindow.cpp:356
+#: searchdialog/searchwindow.cpp:368
 #, kde-format
 msgid "%1 match"
 msgid_plural "%1 matches"
 msgstr[0] "%1 cydweddiad"
 msgstr[1] "%1 o gydweddiadau"
 
-#: searchdialog/searchwindow.cpp:409
+#: searchdialog/searchwindow.cpp:421
 #, fuzzy
 msgid "You did not selected a valid folder."
 msgstr "Methu cydamseru'r blygell maildir."
 
-#: searchdialog/searchwindow.cpp:432
+#: searchdialog/searchwindow.cpp:439
+msgid "You forgot to select collections."
+msgstr ""
+
+#: searchdialog/searchwindow.cpp:459
 msgid "You forgot to define condition."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:437
+#: searchdialog/searchwindow.cpp:464
 msgid "All folders selected are empty or were not indexed."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:443
+#: searchdialog/searchwindow.cpp:470
 #, fuzzy
 msgid "No message found."
 msgstr "%1 neges, %2."
 
-#: searchdialog/searchwindow.cpp:448
+#: searchdialog/searchwindow.cpp:475
 msgid ""
 "Contains condition cannot be used with a number of characters inferior to 4."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:480
+#: searchdialog/searchwindow.cpp:507
 #, fuzzy, kde-format
 msgid "Cannot get search result. %1"
 msgstr "Symud Neges i Blygell"
 
-#: searchdialog/searchwindow.cpp:594
+#: searchdialog/searchwindow.cpp:628
 #, kde-format
 msgid ""
 "There was a problem renaming your search folder. A common reason for this is "
@@ -5177,19 +5181,30 @@ msgid ""
 "\"%1\"."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:700
+#: searchdialog/searchwindow.cpp:734
 #, fuzzy, kde-format
 msgid "Copy Message"
 msgid_plural "Copy %1 Messages"
 msgstr[0] "G&olygu Neges"
 msgstr[1] "G&olygu Neges"
 
-#: searchdialog/searchwindow.cpp:703
+#: searchdialog/searchwindow.cpp:737
 #, fuzzy, kde-format
 msgid "Cut Message"
 msgid_plural "Cut %1 Messages"
 msgstr[0] "Dileu Negeseuon"
 msgstr[1] "Dileu Negeseuon"
+
+#: searchdialog/selectmulticollectiondialog.cpp:27
+#, fuzzy
+msgid "Select Multiple Folders"
+msgstr "Plygell"
+
+#: searchdialog/selectmulticollectionwidget.cpp:76
+#, fuzzy
+#| msgid "Subscription..."
+msgid "Search..."
+msgstr "Tanysgrifiad..."
 
 #: secondarywindow.cpp:88
 msgctxt "Document/application separator in titlebar"
@@ -6140,19 +6155,33 @@ msgstr "Chwilio yn &unig yn:"
 msgid "&Include sub-folders"
 msgstr "C&ynnwys is-blygyll"
 
+#. i18n: ectx: property (text), widget (QRadioButton, mChkMultiFolders)
+#: ui/searchwindow.ui:53
+#, fuzzy
+#| msgid "Select Folder"
+msgid "Select specific folders"
+msgstr "Dewis Plygell"
+
+#. i18n: ectx: property (text), widget (QPushButton, selectMultipleFolders)
+#: ui/searchwindow.ui:60
+#, fuzzy
+#| msgid "Select Folder"
+msgid "Select folders..."
+msgstr "Dewis Plygell"
+
 #. i18n: ectx: property (text), widget (QLabel, mSearchFolderLbl)
-#: ui/searchwindow.ui:82
+#: ui/searchwindow.ui:113
 msgid "Search folder &name:"
 msgstr "&Enw'r blygell chwilio:"
 
 #. i18n: ectx: property (text), widget (KPushButton, mSearchFolderOpenBtn)
-#: ui/searchwindow.ui:102
+#: ui/searchwindow.ui:133
 #, fuzzy
 msgid "Open &Search Folder"
 msgstr "<derbynwyr>"
 
 #. i18n: ectx: property (text), widget (KPushButton, mSearchResultOpenBtn)
-#: ui/searchwindow.ui:112
+#: ui/searchwindow.ui:143
 #, fuzzy
 msgid "Open &Message"
 msgstr "&Neges Nesaf"
@@ -8608,9 +8637,6 @@ msgstr "Golygydd Allanol"
 #~ msgstr ""
 #~ "Ddaeth KMail ar draws gwall angheuol, a bydd yn terfynu rwan.\n"
 #~ "Y gwall oedd:n %1"
-
-#~ msgid "Select Folder"
-#~ msgstr "Dewis Plygell"
 
 #~ msgid "Local Folders"
 #~ msgstr "Plygyll Lleol"
@@ -11086,10 +11112,6 @@ msgstr "Golygydd Allanol"
 #, fuzzy
 #~ msgid "Refresh Folder List"
 #~ msgstr "Rhestr Plygyll"
-
-#, fuzzy
-#~ msgid "Multiple Folders"
-#~ msgstr "Plygell"
 
 #, fuzzy
 #~ msgid ""
