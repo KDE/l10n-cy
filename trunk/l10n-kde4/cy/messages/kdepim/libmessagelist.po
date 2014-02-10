@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-07 01:44+0000\n"
+"POT-Creation-Date: 2014-02-10 01:38+0000\n"
 "PO-Revision-Date: 2004-02-25 13:47+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -575,46 +575,52 @@ msgstr ""
 
 #: core/quicksearchline.cpp:70
 #, fuzzy
+#| msgid "Available Filters"
+msgid "Quick Filter:"
+msgstr "Hidlau ar Gael"
+
+#: core/quicksearchline.cpp:76
+#, fuzzy
 msgctxt "Search for messages."
 msgid "Search"
 msgstr "&Chwilio"
 
-#: core/quicksearchline.cpp:91
+#: core/quicksearchline.cpp:96
 #, fuzzy
 msgid "Open Full Search"
 msgstr "<derbynwyr>"
 
-#: core/quicksearchline.cpp:108
+#: core/quicksearchline.cpp:114
 #, fuzzy
 msgid "Filter message by:"
 msgstr "Dileu Negeseuon"
 
-#: core/quicksearchline.cpp:111
+#: core/quicksearchline.cpp:117
 msgid "Body"
 msgstr ""
 
-#: core/quicksearchline.cpp:115
+#: core/quicksearchline.cpp:122
 #, fuzzy
 #| msgid "Subject"
 msgid "Subject"
 msgstr "Pwnc"
 
-#: core/quicksearchline.cpp:119 core/view.cpp:2400 core/view.cpp:2404
+#: core/quicksearchline.cpp:127 core/view.cpp:2400 core/view.cpp:2404
 #, fuzzy
 #| msgid "&From"
 msgid "From"
 msgstr "&Oddiwrth"
 
-#: core/quicksearchline.cpp:123
+#: core/quicksearchline.cpp:132
 msgid "Bcc"
 msgstr ""
 
-#: core/quicksearchline.cpp:221
+#: core/quicksearchline.cpp:225
 #, fuzzy
 msgid "Any Status"
 msgstr "Cyflwr"
 
-#: core/quicksearchline.cpp:224
+#: core/quicksearchline.cpp:228 core/quicksearchline.cpp:315
 #, fuzzy
 #| msgctxt "msg status"
 #| msgid "Unread"
@@ -622,7 +628,7 @@ msgctxt "@action:inmenu Status of a message"
 msgid "Unread"
 msgstr "Heb ei ddarllen"
 
-#: core/quicksearchline.cpp:228
+#: core/quicksearchline.cpp:232 core/quicksearchline.cpp:318
 #, fuzzy
 #| msgctxt "msg status"
 #| msgid "Replied"
@@ -630,7 +636,7 @@ msgctxt "@action:inmenu Status of a message"
 msgid "Replied"
 msgstr "Wedi ateb"
 
-#: core/quicksearchline.cpp:232
+#: core/quicksearchline.cpp:236 core/quicksearchline.cpp:322
 #, fuzzy
 #| msgctxt "msg status"
 #| msgid "Forwarded"
@@ -638,7 +644,7 @@ msgctxt "@action:inmenu Status of a message"
 msgid "Forwarded"
 msgstr "Wedi'i flaenyrru"
 
-#: core/quicksearchline.cpp:236
+#: core/quicksearchline.cpp:240 core/quicksearchline.cpp:326
 #, fuzzy
 #| msgctxt "msg status"
 #| msgid "Important"
@@ -646,13 +652,13 @@ msgctxt "@action:inmenu Status of a message"
 msgid "Important"
 msgstr "Pwysig"
 
-#: core/quicksearchline.cpp:240
+#: core/quicksearchline.cpp:244 core/quicksearchline.cpp:330
 #, fuzzy
 msgctxt "@action:inmenu Status of a message"
 msgid "Action Item"
 msgstr "Neges bwysig"
 
-#: core/quicksearchline.cpp:244
+#: core/quicksearchline.cpp:248 core/quicksearchline.cpp:334
 #, fuzzy
 #| msgctxt "msg status"
 #| msgid "Watched"
@@ -660,7 +666,7 @@ msgctxt "@action:inmenu Status of a message"
 msgid "Watched"
 msgstr "Gwylir"
 
-#: core/quicksearchline.cpp:248
+#: core/quicksearchline.cpp:252 core/quicksearchline.cpp:338
 #, fuzzy
 #| msgctxt "msg status"
 #| msgid "Ignored"
@@ -668,40 +674,40 @@ msgctxt "@action:inmenu Status of a message"
 msgid "Ignored"
 msgstr "Anwybyddir"
 
-#: core/quicksearchline.cpp:252
+#: core/quicksearchline.cpp:256 core/quicksearchline.cpp:342
 #, fuzzy
 #| msgid "Has Attachment"
 msgctxt "@action:inmenu Status of a message"
 msgid "Has Attachment"
 msgstr "Efo Atodiad"
 
-#: core/quicksearchline.cpp:256
+#: core/quicksearchline.cpp:260 core/quicksearchline.cpp:346
 #, fuzzy
 #| msgid "Advanced Options"
 msgctxt "@action:inmenu Status of a message"
 msgid "Has Invitation"
 msgstr "Dewisiadau Uwch"
 
-#: core/quicksearchline.cpp:260
+#: core/quicksearchline.cpp:264 core/quicksearchline.cpp:350
 #, fuzzy
 #| msgid "Spam"
 msgctxt "@action:inmenu Status of a message"
 msgid "Spam"
 msgstr "Ebostach"
 
-#: core/quicksearchline.cpp:264
+#: core/quicksearchline.cpp:268 core/quicksearchline.cpp:354
 #, fuzzy
 #| msgid "Ham"
 msgctxt "@action:inmenu Status of a message"
 msgid "Ham"
 msgstr "Ebost iawn"
 
-#: core/quicksearchline.cpp:273
+#: core/quicksearchline.cpp:277
 msgctxt "@info:tooltip"
 msgid "Clear the quick search field when changing folders"
 msgstr ""
 
-#: core/quicksearchline.cpp:277
+#: core/quicksearchline.cpp:281
 msgctxt "@info:tooltip"
 msgid "Prevent the quick search field from being cleared when changing folders"
 msgstr ""
@@ -5145,11 +5151,6 @@ msgstr "Didd&ymu"
 #~| msgid "BCC"
 #~ msgid "BCC"
 #~ msgstr "CCD (BCC)"
-
-#, fuzzy
-#~| msgid "Available Filters"
-#~ msgid "KMail Filter"
-#~ msgstr "Hidlau ar Gael"
 
 #, fuzzy
 #~ msgid "in addressbook"
