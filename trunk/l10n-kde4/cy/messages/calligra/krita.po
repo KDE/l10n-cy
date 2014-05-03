@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-05-01 14:22+0000\n"
+"POT-Creation-Date: 2014-05-03 01:30+0000\n"
 "PO-Revision-Date: 2004-07-06 17:18+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -237,7 +237,7 @@ msgstr "Gosodiadau"
 msgid "Brushes and Stuff"
 msgstr ""
 
-#: gemini/main.cpp:70 gemini/MainWindow.cpp:240 gemini/MainWindow.cpp:283
+#: gemini/main.cpp:70 gemini/MainWindow.cpp:238 gemini/MainWindow.cpp:280
 #, fuzzy
 #| msgid "Krita"
 msgid "Krita Gemini"
@@ -265,13 +265,13 @@ msgstr "Maint y Ddelwedd"
 msgid "Use the virtual keyboard"
 msgstr ""
 
-#: gemini/MainWindow.cpp:282 gemini/MainWindow.cpp:598
+#: gemini/MainWindow.cpp:279 gemini/MainWindow.cpp:591
 #: sketch/MainWindow.cpp:150
 #, fuzzy
 msgid "Untitled"
 msgstr "di-deitl-1"
 
-#: gemini/MainWindow.cpp:601
+#: gemini/MainWindow.cpp:594
 #, kde-format
 msgid ""
 "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save it?"
@@ -1478,6 +1478,7 @@ msgstr "Cyffredin"
 #: image/kis_adjustment_layer.cc:127
 #: plugins/paintops/libpaintop/kis_filter_option.cpp:50
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:844
+#: ui/dialogs/kis_dlg_filter.cpp:104
 #: ui/recorder/kis_recorded_filter_action_creator.cpp:59
 msgid "Filter"
 msgstr "Hidlo"
@@ -2183,10 +2184,8 @@ msgstr "Dadleoli"
 
 #. i18n: ectx: property (title), widget (QGroupBox, grpAngle)
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#. i18n: ectx: property (label), widget (KIntNumInput, blurAngleSlider)
 #: plugins/extensions/clonesarray/wdg_clonesarray.ui:108
 #: plugins/extensions/rotateimage/wdg_rotateimage.ui:129
-#: plugins/filters/blur/wdg_motion_blur.ui:87
 msgid "Angle"
 msgstr "Ongl"
 
@@ -3944,7 +3943,7 @@ msgstr "Dimensiynau mewn &Picseli:"
 #: plugins/extensions/imagesize/wdg_imagesize.ui:99
 #: plugins/extensions/imagesize/wdg_layersize.ui:144
 #: plugins/paintops/libpaintop/forms/wdgfilteroption.ui:24
-#: ui/forms/wdgfilterselector.ui:39
+#: ui/forms/wdgfilterselector.ui:33
 msgid "Filter:"
 msgstr "Hidl:"
 
@@ -4804,7 +4803,6 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QTreeWidget, listViewChannels)
 #: plugins/extensions/metadataeditor/kis_meta_data_model.cpp:108
-#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:118
 #: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:35
 #: plugins/tools/defaulttools/wdgcolorpicker.ui:29
 msgid "Value"
@@ -5205,16 +5203,20 @@ msgstr "Pylu ..."
 msgid "Motion Blur"
 msgstr "glas"
 
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: plugins/filters/blur/wdg_gaussian_blur.ui:68
+#: plugins/filters/blur/wdgblur.ui:52
 #, fuzzy
-msgid "Vertical Radius"
+msgid "Vertical Radius:"
 msgstr "Croesrwygo Fertigol"
 
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/filters/blur/wdg_gaussian_blur.ui:78
+#: plugins/filters/blur/wdgblur.ui:20
 #, fuzzy
-msgid "Horizontal Radius"
+msgid "Horizontal Radius:"
 msgstr "Croesrwygo Llorweddol "
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
@@ -5241,25 +5243,24 @@ msgstr "Radiws"
 msgid "Shape:"
 msgstr "Siâp :"
 
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #. i18n: ectx: property (label), widget (KIntNumInput, irisRadiusSlider)
-#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QLabel, radiusLabel)
+#. i18n: ectx: property (text), widget (QLabel, lbl_diameter)
 #: plugins/filters/blur/wdg_lens_blur.ui:42
-#: plugins/filters/roundcorners/kis_round_corners_filter.cpp:130
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:284
-#: plugins/tools/selectiontools/kis_tool_select_magnetic_option_widget.ui:103
-msgid "Radius"
+#: plugins/filters/unsharp/wdgunsharp.ui:23
+#: plugins/paintops/chalk/wdgchalkoptions.ui:40
+#: plugins/paintops/mypaint/wdgmypaintoptions.ui:29
+#, fuzzy
+#| msgid "Radius"
+msgid "Radius:"
 msgstr "Radiws"
 
 #. i18n: ectx: property (label), widget (KIntNumInput, irisRotationSlider)
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: plugins/filters/blur/wdg_lens_blur.ui:58
-#: plugins/paintops/experiment/wdgshapeoptions.ui:235
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:46
-#: plugins/paintops/libpaintop/kis_pressure_rotation_option.cpp:29
-#: plugins/paintops/spray/wdgshapedynamicsoptions.ui:42
-#: plugins/tools/defaulttools/kis_tool_line.cc:72
+#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:106
 #, fuzzy
-msgid "Rotation"
+msgid "Rotation:"
 msgstr "Cylchdroi"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, irisShapeCombo)
@@ -5306,35 +5307,13 @@ msgstr "&Canran :"
 msgid "Octagon (8)"
 msgstr "&Canran :"
 
-#. i18n: ectx: property (label), widget (KIntNumInput, blurLength)
-#: plugins/filters/blur/wdg_motion_blur.ui:112
-#, fuzzy
-msgid "Length"
-msgstr "&Canran :"
-
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: plugins/filters/blur/wdgblur.ui:20
-#, fuzzy
-msgid "Horizontal Radius:"
-msgstr "Croesrwygo Llorweddol "
-
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: plugins/filters/blur/wdgblur.ui:52
-#, fuzzy
-msgid "Vertical Radius:"
-msgstr "Croesrwygo Fertigol"
-
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: plugins/filters/blur/wdgblur.ui:68
-#, fuzzy
-msgid "Strength:"
-msgstr "&Canran :"
-
+#. i18n: ectx: property (label), widget (KIntNumInput, blurAngleSlider)
 #. i18n: ectx: property (text), widget (QLabel, textLabel5)
 #. i18n: ectx: property (text), widget (QLabel, label_14)
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QLabel, rotationLbl)
 #. i18n: ectx: property (text), widget (QLabel, label_3)
+#: plugins/filters/blur/wdg_motion_blur.ui:87
 #: plugins/filters/blur/wdgblur.ui:94
 #: plugins/paintops/dynadraw/wdgdynaoptions.ui:279
 #: plugins/paintops/hatching/wdghatchingoptions.ui:49
@@ -5344,6 +5323,22 @@ msgstr "&Canran :"
 #, fuzzy
 msgid "Angle:"
 msgstr "Ongl"
+
+#. i18n: ectx: property (label), widget (KIntNumInput, blurLength)
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: ectx: property (text), widget (QLabel, Factor)
+#: plugins/filters/blur/wdg_motion_blur.ui:112
+#: plugins/paintops/libpaintop/sensors/SensorDistanceConfiguration.ui:50
+#: plugins/paintops/libpaintop/sensors/SensorFadeConfiguration.ui:50
+#, fuzzy
+msgid "Length:"
+msgstr "&Canran :"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#: plugins/filters/blur/wdgblur.ui:68
+#, fuzzy
+msgid "Strength:"
+msgstr "&Canran :"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, cbShape)
 #. i18n: ectx: property (text), widget (QRadioButton, circleRBox)
@@ -5438,9 +5433,18 @@ msgstr "Dad-ddirlenwi"
 msgid "&HSV Adjustment..."
 msgstr "Addasiad &Lliw..."
 
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:118
+#: plugins/filters/colorsfilters/wdg_hsv_adjustment.ui:132
+#: plugins/paintops/libpaintop/forms/wdgcoloroptions.ui:185
+#, fuzzy
+#| msgid "Value"
+msgid "Value:"
+msgstr "Gwerth"
+
 #: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:122
 #, fuzzy
-msgid "Lightness"
+msgid "Lightness:"
 msgstr "Disgleirdeb:"
 
 #: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.h:51
@@ -5628,14 +5632,6 @@ msgstr "Dirlawnder"
 #| msgid "Colorize"
 msgid "&Colorize"
 msgstr "Lliweiddio"
-
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: plugins/filters/colorsfilters/wdg_hsv_adjustment.ui:132
-#: plugins/paintops/libpaintop/forms/wdgcoloroptions.ui:185
-#, fuzzy
-#| msgid "Value"
-msgid "Value:"
-msgstr "Gwerth"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/filters/colorsfilters/wdg_hsv_adjustment.ui:151
@@ -6154,6 +6150,13 @@ msgstr ""
 msgid "&Round Corners..."
 msgstr "C&orneli Crwn..."
 
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: plugins/filters/roundcorners/kis_round_corners_filter.cpp:130
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:284
+#: plugins/tools/selectiontools/kis_tool_select_magnetic_option_widget.ui:103
+msgid "Radius"
+msgstr "Radiws"
+
 #: plugins/filters/roundcorners/kis_round_corners_filter.h:39
 msgid "Round Corners"
 msgstr "Corneli Crwn"
@@ -6208,17 +6211,6 @@ msgstr "Ailenwi Delwedd.."
 #, fuzzy
 msgid "Unsharp Mask"
 msgstr "Alffa"
-
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#. i18n: ectx: property (text), widget (QLabel, radiusLabel)
-#. i18n: ectx: property (text), widget (QLabel, lbl_diameter)
-#: plugins/filters/unsharp/wdgunsharp.ui:23
-#: plugins/paintops/chalk/wdgchalkoptions.ui:40
-#: plugins/paintops/mypaint/wdgmypaintoptions.ui:29
-#, fuzzy
-#| msgid "Radius"
-msgid "Radius:"
-msgstr "Radiws"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #: plugins/filters/unsharp/wdgunsharp.ui:68
@@ -7534,6 +7526,16 @@ msgstr "Croesrwygo Fertigol"
 msgid "Random size"
 msgstr "Hap"
 
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: plugins/paintops/experiment/wdgshapeoptions.ui:235
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:46
+#: plugins/paintops/libpaintop/kis_pressure_rotation_option.cpp:29
+#: plugins/paintops/spray/wdgshapedynamicsoptions.ui:42
+#: plugins/tools/defaulttools/kis_tool_line.cc:72
+#, fuzzy
+msgid "Rotation"
+msgstr "Cylchdroi"
+
 #. i18n: ectx: property (text), widget (QCheckBox, fixedRotation)
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
 #: plugins/paintops/experiment/wdgshapeoptions.ui:241
@@ -8360,11 +8362,6 @@ msgstr ""
 msgid "The mixing option mixes the paint on the brush with that on the canvas."
 msgstr ""
 
-#: plugins/paintops/libpaintop/kis_brush_chooser.cpp:106
-#, fuzzy
-msgid "Rotation:"
-msgstr "Cylchdroi"
-
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:156
 #, fuzzy
 #| msgid "Remove Mask"
@@ -8901,14 +8898,6 @@ msgstr "Delwedd Newydd :"
 #| msgid "Repeat:"
 msgid "repeat"
 msgstr "Ailadrodd:"
-
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#. i18n: ectx: property (text), widget (QLabel, Factor)
-#: plugins/paintops/libpaintop/sensors/SensorDistanceConfiguration.ui:50
-#: plugins/paintops/libpaintop/sensors/SensorFadeConfiguration.ui:50
-#, fuzzy
-msgid "Length:"
-msgstr "&Canran :"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: plugins/paintops/libpaintop/sensors/SensorTimeConfiguration.ui:50
@@ -10994,6 +10983,12 @@ msgstr "Tarddiad:"
 msgid "Select file to use as dynamic file layer."
 msgstr ""
 
+#: ui/dialogs/kis_dlg_filter.cpp:104
+#, fuzzy, kde-format
+#| msgid "Filter: "
+msgid "Filter: %1"
+msgstr "Hidl: "
+
 #: ui/dialogs/kis_dlg_image_properties.cc:56
 #, fuzzy
 msgid "Image Properties"
@@ -11173,7 +11168,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, checkBoxPreview)
 #. i18n: ectx: property (title), widget (QGroupBox, m_groupBox)
-#: ui/forms/kis_previewwidgetbase.ui:36 ui/forms/wdgfilterdialog.ui:67
+#: ui/forms/kis_previewwidgetbase.ui:36 ui/forms/wdgfilterdialog.ui:64
 msgid "Preview"
 msgstr "Rhagolygu"
 
@@ -11835,7 +11830,7 @@ msgid "Dialog"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCreateMaskEffect)
-#: ui/forms/wdgfilterdialog.ui:47
+#: ui/forms/wdgfilterdialog.ui:44
 #, fuzzy
 #| msgid "Filters"
 msgid "Create Filter Mask"
@@ -11848,13 +11843,13 @@ msgid "Filter selection"
 msgstr "Llenwi Detholiad."
 
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonEditPressets)
-#: ui/forms/wdgfilterselector.ui:81
+#: ui/forms/wdgfilterselector.ui:72
 #, fuzzy
 msgid "Edit Presets"
 msgstr "&Priodweddau"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: ui/forms/wdgfilterselector.ui:88
+#: ui/forms/wdgfilterselector.ui:79
 #, fuzzy
 msgid "Presets:"
 msgstr "&Priodweddau"
@@ -14402,6 +14397,18 @@ msgstr ""
 #| msgid "Colors"
 msgid "&Close"
 msgstr "Lliwiau"
+
+#, fuzzy
+#~ msgid "Vertical Radius"
+#~ msgstr "Croesrwygo Fertigol"
+
+#, fuzzy
+#~ msgid "Horizontal Radius"
+#~ msgstr "Croesrwygo Llorweddol "
+
+#, fuzzy
+#~ msgid "Length"
+#~ msgstr "&Canran :"
 
 #, fuzzy
 #~| msgid "&Layer"
@@ -17288,9 +17295,6 @@ msgstr "Lliwiau"
 #, fuzzy
 #~ msgid "No options for %1."
 #~ msgstr "Priodweddau i %1"
-
-#~ msgid "Filter: "
-#~ msgstr "Hidl: "
 
 #, fuzzy
 #~ msgid "Zoom %1%"
