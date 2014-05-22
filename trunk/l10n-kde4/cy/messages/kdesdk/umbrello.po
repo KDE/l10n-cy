@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdesdk/umbrello.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-05-21 01:58+0000\n"
+"POT-Creation-Date: 2014-05-22 01:55+0000\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -724,8 +724,8 @@ msgstr ""
 #: dialogs/pages/classgeneralpage.cpp:406
 #: dialogs/pages/classifierlistpage.cpp:218
 #: dialogs/pages/diagrampropertiespage.ui:257
-#: dialogs/pages/umlrolepropertiesbase.ui:140 dialogs/parmpropdialog.cpp:115
-#: dialogs/statedialog.cpp:167
+#: dialogs/pages/umlrolepropertiesbase.ui:140
+#: dialogs/parameterpropertiesdialog.cpp:115 dialogs/statedialog.cpp:167
 msgid "Documentation"
 msgstr "Dogfenniaeth"
 
@@ -1543,11 +1543,11 @@ msgid "Class Name"
 msgstr "Dosbarth"
 
 #: dialogs/activitydialog.cpp:43 dialogs/activitydialog.cpp:146
-#: dialogs/classpropdialog.cpp:128 dialogs/objectnodedialog.cpp:45
-#: dialogs/pages/associationgeneralpage.cpp:77 dialogs/parmpropdialog.cpp:71
-#: dialogs/statedialog.cpp:44 dialogs/statedialog.cpp:119
-#: dialogs/umlviewdialog.cpp:41 listpopupmenu.cpp:633
-#: refactoring/refactoringassistant.cpp:460
+#: dialogs/classpropertiesdialog.cpp:128 dialogs/objectnodedialog.cpp:45
+#: dialogs/pages/associationgeneralpage.cpp:77
+#: dialogs/parameterpropertiesdialog.cpp:71 dialogs/statedialog.cpp:44
+#: dialogs/statedialog.cpp:119 dialogs/umlviewdialog.cpp:41
+#: listpopupmenu.cpp:633 refactoring/refactoringassistant.cpp:460
 #, fuzzy
 msgid "Properties"
 msgstr "&Priodweddau"
@@ -1626,185 +1626,190 @@ msgstr "Gweithrediad"
 msgid "&Parameter activity node"
 msgstr ""
 
-#: dialogs/assocpropdialog.cpp:54
+#: dialogs/associationpropertiesdialog.cpp:54
 #, fuzzy
 #| msgid "Association"
 msgid "Association Properties"
 msgstr "Cyd"
 
-#: dialogs/assocpropdialog.cpp:98
+#: dialogs/associationpropertiesdialog.cpp:98
+#: dialogs/classpropertiesdialog.cpp:245 dialogs/classpropertiesdialog.cpp:379
+#: dialogs/settingsdialog.cpp:173
+#: dialogs/umlforeignkeyconstraintdialog.cpp:202 dialogs/umlviewdialog.cpp:93
+msgid "General Settings"
+msgstr "Gosodiadau Cyffredinol"
+
+#: dialogs/associationpropertiesdialog.cpp:98
 #, fuzzy
 #| msgid "General"
 msgctxt "general settings"
 msgid "General"
 msgstr "Cyffredinol"
 
-#: dialogs/assocpropdialog.cpp:98 dialogs/classpropdialog.cpp:245
-#: dialogs/classpropdialog.cpp:379 dialogs/settingsdialog.cpp:179
-#: dialogs/umlforeignkeyconstraintdialog.cpp:208 dialogs/umlviewdialog.cpp:93
-msgid "General Settings"
-msgstr "Gosodiadau Cyffredinol"
-
-#: dialogs/assocpropdialog.cpp:104
+#: dialogs/associationpropertiesdialog.cpp:104
 #, fuzzy
 #| msgid "Folders"
 msgctxt "role page name"
 msgid "Roles"
 msgstr "Plygyll"
 
-#: dialogs/assocpropdialog.cpp:104
+#: dialogs/associationpropertiesdialog.cpp:104
 #, fuzzy
 #| msgid "Font Settings"
 msgid "Role Settings"
 msgstr "Gosodiadau Ffont"
 
-#: dialogs/assocpropdialog.cpp:110
+#: dialogs/associationpropertiesdialog.cpp:110
 #, fuzzy
 #| msgid "Style:"
 msgctxt "style page name"
 msgid "Style"
 msgstr "Arddull:"
 
-#: dialogs/assocpropdialog.cpp:110
+#: dialogs/associationpropertiesdialog.cpp:110
 #, fuzzy
 #| msgid "Style:"
 msgid "Role Style"
 msgstr "Arddull:"
 
-#: dialogs/assocpropdialog.cpp:116
+#: dialogs/associationpropertiesdialog.cpp:116
+#: dialogs/classpropertiesdialog.cpp:398 dialogs/dialogbase.cpp:91
+#: dialogs/settingsdialog.cpp:228 dialogs/umlviewdialog.cpp:154
+msgid "Font Settings"
+msgstr "Gosodiadau Ffont"
+
+#: dialogs/associationpropertiesdialog.cpp:116
 #, fuzzy
 msgctxt "font page name"
 msgid "Font"
 msgstr "Wynebfath:"
 
-#: dialogs/assocpropdialog.cpp:116 dialogs/classpropdialog.cpp:398
-#: dialogs/dialogbase.cpp:90 dialogs/settingsdialog.cpp:234
-#: dialogs/umlviewdialog.cpp:154
-msgid "Font Settings"
-msgstr "Gosodiadau Ffont"
-
-#: dialogs/classpropdialog.cpp:245
+#: dialogs/classpropertiesdialog.cpp:245
 #, fuzzy
 #| msgid "General"
 msgctxt "general settings page name"
 msgid "General"
 msgstr "Cyffredinol"
 
-#: dialogs/classpropdialog.cpp:258
+#: dialogs/classpropertiesdialog.cpp:258 dialogs/dialogbase.cpp:114
+#, fuzzy
+#| msgid "Widget Color"
+msgid "Widget Style"
+msgstr "Lliw Celfigyn"
+
+#: dialogs/classpropertiesdialog.cpp:258
 #, fuzzy
 #| msgid "Style:"
 msgctxt "widget style page name"
 msgid "Style"
 msgstr "Arddull:"
 
-#: dialogs/classpropdialog.cpp:258 dialogs/dialogbase.cpp:113
-#, fuzzy
-#| msgid "Widget Color"
-msgid "Widget Style"
-msgstr "Lliw Celfigyn"
-
-#: dialogs/classpropdialog.cpp:270
+#: dialogs/classpropertiesdialog.cpp:270
 #, fuzzy
 #| msgid "Display"
 msgctxt "display option page name"
 msgid "Display"
 msgstr "Dangos"
 
-#: dialogs/classpropdialog.cpp:270
+#: dialogs/classpropertiesdialog.cpp:270
 msgid "Display Options"
 msgstr "Dewisiadau masg"
 
-#: dialogs/classpropdialog.cpp:283 dialogs/pages/classifierlistpage.cpp:115
-#: listpopupmenu.cpp:1077 listpopupmenu.cpp:1113
-#: refactoring/refactoringassistant.cpp:666
+#: dialogs/classpropertiesdialog.cpp:283
+#: dialogs/pages/classifierlistpage.cpp:115 listpopupmenu.cpp:1077
+#: listpopupmenu.cpp:1113 refactoring/refactoringassistant.cpp:666
 msgid "Attributes"
 msgstr "Priodweddion"
 
-#: dialogs/classpropdialog.cpp:283
+#: dialogs/classpropertiesdialog.cpp:283
 #, fuzzy
 #| msgid "Font Settings"
 msgid "Attribute Settings"
 msgstr "Gosodiadau Ffont"
 
-#: dialogs/classpropdialog.cpp:295 dialogs/pages/classifierlistpage.cpp:119
-#: listpopupmenu.cpp:1080 listpopupmenu.cpp:1122
-#: refactoring/refactoringassistant.cpp:682
+#: dialogs/classpropertiesdialog.cpp:295
+#: dialogs/pages/classifierlistpage.cpp:119 listpopupmenu.cpp:1080
+#: listpopupmenu.cpp:1122 refactoring/refactoringassistant.cpp:682
 msgid "Operations"
 msgstr "Gweithrediadau"
 
-#: dialogs/classpropdialog.cpp:295
+#: dialogs/classpropertiesdialog.cpp:295
 #, fuzzy
 #| msgid "Operations"
 msgid "Operation Settings"
 msgstr "Gweithrediadau"
 
-#: dialogs/classpropdialog.cpp:307 dialogs/pages/classifierlistpage.cpp:123
+#: dialogs/classpropertiesdialog.cpp:307
+#: dialogs/pages/classifierlistpage.cpp:123
 msgid "Templates"
 msgstr "Patrymluniau"
 
-#: dialogs/classpropdialog.cpp:307
+#: dialogs/classpropertiesdialog.cpp:307
 #, fuzzy
 #| msgid "Templates"
 msgid "Templates Settings"
 msgstr "Patrymluniau"
 
-#: dialogs/classpropdialog.cpp:319 dialogs/pages/classifierlistpage.cpp:127
+#: dialogs/classpropertiesdialog.cpp:319
+#: dialogs/pages/classifierlistpage.cpp:127
 msgid "Enum Literals"
 msgstr ""
 
-#: dialogs/classpropdialog.cpp:319
+#: dialogs/classpropertiesdialog.cpp:319
 #, fuzzy
 #| msgid "General Settings"
 msgid "Enum Literals Settings"
 msgstr "Gosodiadau Cyffredinol"
 
-#: dialogs/classpropdialog.cpp:331 dialogs/pages/classifierlistpage.cpp:131
+#: dialogs/classpropertiesdialog.cpp:331
+#: dialogs/pages/classifierlistpage.cpp:131
 #, fuzzy
 msgid "Entity Attributes"
 msgstr "Priodweddion"
 
-#: dialogs/classpropdialog.cpp:331
+#: dialogs/classpropertiesdialog.cpp:331
 #, fuzzy
 #| msgid "Font Settings"
 msgid "Entity Attributes Settings"
 msgstr "Gosodiadau Ffont"
 
-#: dialogs/classpropdialog.cpp:343
+#: dialogs/classpropertiesdialog.cpp:343
 #, fuzzy
 msgid "Entity Constraints"
 msgstr "Priodweddion"
 
-#: dialogs/classpropdialog.cpp:343
+#: dialogs/classpropertiesdialog.cpp:343
 #, fuzzy
 #| msgid "Font Settings"
 msgid "Entity Constraints Settings"
 msgstr "Gosodiadau Ffont"
 
-#: dialogs/classpropdialog.cpp:355
+#: dialogs/classpropertiesdialog.cpp:355
 #, fuzzy
 msgctxt "contents settings page name"
 msgid "Contents"
 msgstr "Priodweddion"
 
-#: dialogs/classpropdialog.cpp:355
+#: dialogs/classpropertiesdialog.cpp:355
 #, fuzzy
 #| msgid "Font Settings"
 msgid "Contents Settings"
 msgstr "Gosodiadau Ffont"
 
-#: dialogs/classpropdialog.cpp:367 dialogs/pages/classassociationspage.cpp:44
+#: dialogs/classpropertiesdialog.cpp:367
+#: dialogs/pages/classassociationspage.cpp:44
 #, fuzzy
 #| msgid "Association"
 msgid "Associations"
 msgstr "Cyd"
 
-#: dialogs/classpropdialog.cpp:367
+#: dialogs/classpropertiesdialog.cpp:367
 #, fuzzy
 #| msgid "Association"
 msgid "Class Associations"
 msgstr "Cyd"
 
-#: dialogs/classpropdialog.cpp:379
+#: dialogs/classpropertiesdialog.cpp:379
 #, fuzzy
 #| msgid "General"
 msgctxt "instance general settings page name"
@@ -1813,8 +1818,8 @@ msgstr "Cyffredinol"
 
 #. i18n: ectx: label, entry (uiFont), group (UI Options)
 #. i18n: ectx: label, entry (codeViewerFont), group (Code Viewer Options)
-#: dialogs/classpropdialog.cpp:397 dialogs/dialogbase.cpp:90
-#: dialogs/settingsdialog.cpp:233 dialogs/umlviewdialog.cpp:153
+#: dialogs/classpropertiesdialog.cpp:397 dialogs/dialogbase.cpp:91
+#: dialogs/settingsdialog.cpp:227 dialogs/umlviewdialog.cpp:153
 #: umbrello.kcfg:160 umbrello.kcfg:270
 #, fuzzy
 msgid "Font"
@@ -1964,7 +1969,7 @@ msgstr ""
 msgid "<p align=\"right\">Editable text:</p>"
 msgstr ""
 
-#: dialogs/dialogbase.cpp:113
+#: dialogs/dialogbase.cpp:114
 #, fuzzy
 #| msgid "Style:"
 msgctxt "widget style page"
@@ -2589,9 +2594,9 @@ msgstr "Rhowch enw:"
 msgid "Node name:"
 msgstr "Rhowch enw:"
 
-#: dialogs/pages/classgeneralpage.cpp:384 dialogs/parmpropdialog.cpp:93
-#: dialogs/umlattributedialog.cpp:89 dialogs/umlentityattributedialog.cpp:91
-#: dialogs/umloperationdialog.cpp:108
+#: dialogs/pages/classgeneralpage.cpp:384
+#: dialogs/parameterpropertiesdialog.cpp:93 dialogs/umlattributedialog.cpp:89
+#: dialogs/umlentityattributedialog.cpp:91 dialogs/umloperationdialog.cpp:108
 #, fuzzy
 #| msgid "Enter name:"
 msgid "Stereotype name:"
@@ -2650,7 +2655,7 @@ msgid "N&ew Constraint..."
 msgstr "Priodoleddau ..."
 
 #: dialogs/pages/classifierlistpage.cpp:206
-#: dialogs/umlforeignkeyconstraintdialog.cpp:321
+#: dialogs/umlforeignkeyconstraintdialog.cpp:315
 #: dialogs/umloperationdialog.cpp:166
 #: dialogs/umluniqueconstraintdialog.cpp:122 umldoc.cpp:1486 umlscene.cpp:3311
 #, fuzzy
@@ -2958,7 +2963,7 @@ msgstr ""
 msgid "Default Language :"
 msgstr "&Gwerth ragosod :"
 
-#: dialogs/pages/pkgcontentspage.cpp:43
+#: dialogs/pages/packagecontentspage.cpp:43
 msgid "Contained Items"
 msgstr ""
 
@@ -3091,74 +3096,75 @@ msgctxt "default line width button"
 msgid "Defa&ult"
 msgstr "&Rhagosod"
 
-#: dialogs/parmpropdialog.cpp:47
+#: dialogs/parameterpropertiesdialog.cpp:47
 #, fuzzy
 #| msgid "General Properties"
 msgid "Parameter Properties"
 msgstr "Priodweddau Cyffredinol"
 
-#: dialogs/parmpropdialog.cpp:78 dialogs/umlattributedialog.cpp:73
+#: dialogs/parameterpropertiesdialog.cpp:78 dialogs/umlattributedialog.cpp:73
 #: dialogs/umlentityattributedialog.cpp:75 dialogs/umloperationdialog.cpp:101
 #: dialogs/umltemplatedialog.cpp:69
 msgid "&Type:"
 msgstr "&Math:"
 
-#: dialogs/parmpropdialog.cpp:86
+#: dialogs/parameterpropertiesdialog.cpp:86
 #, fuzzy
 #| msgid "&Name:"
 msgctxt "property name"
 msgid "&Name:"
 msgstr "&Enw:"
 
-#: dialogs/parmpropdialog.cpp:90 dialogs/umlattributedialog.cpp:85
+#: dialogs/parameterpropertiesdialog.cpp:90 dialogs/umlattributedialog.cpp:85
 #, fuzzy
 #| msgid "&Default value:"
 msgid "&Initial value:"
 msgstr "&Gwerth ragosod :"
 
-#: dialogs/parmpropdialog.cpp:98
+#: dialogs/parameterpropertiesdialog.cpp:98
 msgid "Passing Direction"
 msgstr ""
 
-#: dialogs/parmpropdialog.cpp:99
+#: dialogs/parameterpropertiesdialog.cpp:99
 msgid ""
 "\"in\" is a readonly parameter, \"out\" is a writeonly parameter and \"inout"
 "\" is a parameter for reading and writing."
 msgstr ""
 
-#: dialogs/parmpropdialog.cpp:264
+#: dialogs/parameterpropertiesdialog.cpp:264
 msgid "You have entered an invalid parameter name."
 msgstr ""
 
-#: dialogs/parmpropdialog.cpp:265
+#: dialogs/parameterpropertiesdialog.cpp:265
 msgid "Parameter Name Invalid"
 msgstr ""
 
-#: dialogs/selectopdialog.cpp:53 dialogs/selectopdialog.cpp:64
+#: dialogs/selectoperationdialog.cpp:53 dialogs/selectoperationdialog.cpp:64
 #, fuzzy
 #| msgid "Operation"
 msgid "Select Operation"
 msgstr "Gweithrediad"
 
-#: dialogs/selectopdialog.cpp:72
+#: dialogs/selectoperationdialog.cpp:72
 msgid "Sequence number:"
 msgstr ""
 
-#: dialogs/selectopdialog.cpp:75
+#: dialogs/selectoperationdialog.cpp:75
 msgid "Auto increment:"
 msgstr ""
 
-#: dialogs/selectopdialog.cpp:80
+#: dialogs/selectoperationdialog.cpp:80
 #, fuzzy
 #| msgid "Operation"
 msgid "Class operation:"
 msgstr "Gweithrediad"
 
-#: dialogs/selectopdialog.cpp:89 listpopupmenu.cpp:571 listpopupmenu.cpp:687
+#: dialogs/selectoperationdialog.cpp:89 listpopupmenu.cpp:571
+#: listpopupmenu.cpp:687
 msgid "New Operation..."
 msgstr ""
 
-#: dialogs/selectopdialog.cpp:93
+#: dialogs/selectoperationdialog.cpp:93
 #, fuzzy
 #| msgid "Operation"
 msgid "Custom operation:"
@@ -3168,128 +3174,128 @@ msgstr "Gweithrediad"
 msgid "Umbrello Setup"
 msgstr ""
 
-#: dialogs/settingsdialog.cpp:72
+#: dialogs/settingsdialog.cpp:66
 #, fuzzy
 #| msgid "Interface"
 msgid "User Interface"
 msgstr "Rhyngwyneb"
 
-#: dialogs/settingsdialog.cpp:73
+#: dialogs/settingsdialog.cpp:67
 #, fuzzy
 #| msgid "General Settings"
 msgid "User Interface Settings"
 msgstr "Gosodiadau Cyffredinol"
 
-#: dialogs/settingsdialog.cpp:77
+#: dialogs/settingsdialog.cpp:71
 #, fuzzy
 #| msgid "Color"
 msgctxt "color group box"
 msgid "Color"
 msgstr "Lliw"
 
-#: dialogs/settingsdialog.cpp:85
+#: dialogs/settingsdialog.cpp:79
 #, fuzzy
 #| msgid "Line color:"
 msgid "Custom text color:"
 msgstr "Lliw y llinell:"
 
-#: dialogs/settingsdialog.cpp:92
+#: dialogs/settingsdialog.cpp:86
 #, fuzzy
 #| msgid "Line color:"
 msgid "Custom line color:"
 msgstr "Lliw y llinell:"
 
-#: dialogs/settingsdialog.cpp:102
+#: dialogs/settingsdialog.cpp:96
 #, fuzzy
 #| msgid "Fill color:"
 msgid "Custom fill color:"
 msgstr "Lliw llenwi:"
 
-#: dialogs/settingsdialog.cpp:108
+#: dialogs/settingsdialog.cpp:102
 #, fuzzy
 #| msgid "Operation"
 msgid "Custom grid color:"
 msgstr "Gweithrediad"
 
-#: dialogs/settingsdialog.cpp:114
+#: dialogs/settingsdialog.cpp:108
 #, fuzzy
 #| msgid "Color"
 msgid "Custom background color:"
 msgstr "Lliw"
 
-#: dialogs/settingsdialog.cpp:120
+#: dialogs/settingsdialog.cpp:114
 #, fuzzy
 #| msgid "Line width:"
 msgid "Custom line width:"
 msgstr "Lled y llinell:"
 
-#: dialogs/settingsdialog.cpp:126
+#: dialogs/settingsdialog.cpp:120
 #, fuzzy
 #| msgid "Fill color:"
 msgid "&Use fill color"
 msgstr "Lliw llenwi:"
 
-#: dialogs/settingsdialog.cpp:178 dialogs/umlviewdialog.cpp:92
+#: dialogs/settingsdialog.cpp:172 dialogs/umlviewdialog.cpp:92
 #, fuzzy
 #| msgid "General"
 msgctxt "general settings page"
 msgid "General"
 msgstr "Cyffredinol"
 
-#: dialogs/settingsdialog.cpp:189
+#: dialogs/settingsdialog.cpp:183
 #, fuzzy
 #| msgid "Class"
 msgctxt "class settings page"
 msgid "Class"
 msgstr "Dosbarth"
 
-#: dialogs/settingsdialog.cpp:190
+#: dialogs/settingsdialog.cpp:184
 #, fuzzy
 #| msgid "Font Settings"
 msgid "Class Settings"
 msgstr "Gosodiadau Ffont"
 
-#: dialogs/settingsdialog.cpp:200
+#: dialogs/settingsdialog.cpp:194
 #, fuzzy
 #| msgid "&Generate"
 msgid "Code Importer"
 msgstr "&Creu"
 
-#: dialogs/settingsdialog.cpp:201
+#: dialogs/settingsdialog.cpp:195
 #, fuzzy
 #| msgid "General Settings"
 msgid "Code Import Settings"
 msgstr "Gosodiadau Cyffredinol"
 
-#: dialogs/settingsdialog.cpp:211
+#: dialogs/settingsdialog.cpp:205
 #, fuzzy
 #| msgid "General Options"
 msgid "Code Generation"
 msgstr "Dewisiadau Cyffredinol"
 
-#: dialogs/settingsdialog.cpp:212
+#: dialogs/settingsdialog.cpp:206
 #, fuzzy
 #| msgid "General Settings"
 msgid "Code Generation Settings"
 msgstr "Gosodiadau Cyffredinol"
 
-#: dialogs/settingsdialog.cpp:223
+#: dialogs/settingsdialog.cpp:217
 msgid "Code Viewer"
 msgstr ""
 
-#: dialogs/settingsdialog.cpp:224
+#: dialogs/settingsdialog.cpp:218
 #, fuzzy
 #| msgid "General Settings"
 msgid "Code Viewer Settings"
 msgstr "Gosodiadau Cyffredinol"
 
-#: dialogs/settingsdialog.cpp:244
+#: dialogs/settingsdialog.cpp:238
 #, fuzzy
 #| msgid "Autosave"
 msgid "Auto Layout"
 msgstr "Hunangadw"
 
-#: dialogs/settingsdialog.cpp:245
+#: dialogs/settingsdialog.cpp:239
 #, fuzzy
 #| msgid "Font Settings"
 msgid "Auto Layout Settings"
@@ -3531,107 +3537,107 @@ msgstr "Pob Ffeil"
 msgid "Foreign Key Setup"
 msgstr ""
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:207
+#: dialogs/umlforeignkeyconstraintdialog.cpp:201
 #, fuzzy
 #| msgid "General"
 msgctxt "general page title"
 msgid "General"
 msgstr "Cyffredinol"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:212
+#: dialogs/umlforeignkeyconstraintdialog.cpp:206
 #, fuzzy
 #| msgid "General"
 msgctxt "general group title"
 msgid "General"
 msgstr "Cyffredinol"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:219
+#: dialogs/umlforeignkeyconstraintdialog.cpp:213
 #, fuzzy
 #| msgid "Name"
 msgctxt "label for entering name"
 msgid "Name"
 msgstr "Enw"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:222
+#: dialogs/umlforeignkeyconstraintdialog.cpp:216
 msgid "Referenced Entity"
 msgstr ""
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:229
+#: dialogs/umlforeignkeyconstraintdialog.cpp:223
 #, fuzzy
 #| msgid "Association"
 msgid "Actions"
 msgstr "Cyd"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:235
+#: dialogs/umlforeignkeyconstraintdialog.cpp:229
 msgid "On Update"
 msgstr ""
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:241
+#: dialogs/umlforeignkeyconstraintdialog.cpp:235
 #, fuzzy
 msgid "On Delete"
 msgstr "Dewis"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:273
+#: dialogs/umlforeignkeyconstraintdialog.cpp:267
 #, fuzzy
 #| msgid "Association"
 msgid "No Action"
 msgstr "Cyd"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:273
+#: dialogs/umlforeignkeyconstraintdialog.cpp:267
 msgid "Restrict"
 msgstr ""
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:273
+#: dialogs/umlforeignkeyconstraintdialog.cpp:267
 msgid "Cascade"
 msgstr ""
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:273
+#: dialogs/umlforeignkeyconstraintdialog.cpp:267
 #, fuzzy
 #| msgid "&Default"
 msgid "Set Null"
 msgstr "&Rhagosod"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:274
+#: dialogs/umlforeignkeyconstraintdialog.cpp:268
 #, fuzzy
 #| msgid "&Default"
 msgid "Set Default"
 msgstr "&Rhagosod"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:292
-#: dialogs/umlforeignkeyconstraintdialog.cpp:293
+#: dialogs/umlforeignkeyconstraintdialog.cpp:286
+#: dialogs/umlforeignkeyconstraintdialog.cpp:287
 #, fuzzy
 #| msgid "Colors"
 msgid "Columns"
 msgstr "Lliwiau"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:300
+#: dialogs/umlforeignkeyconstraintdialog.cpp:294
 #, fuzzy
 #| msgid "Label"
 msgctxt "column header local"
 msgid "Local"
 msgstr "Label"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:300
+#: dialogs/umlforeignkeyconstraintdialog.cpp:294
 msgctxt "column header referenced"
 msgid "Referenced"
 msgstr ""
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:306
+#: dialogs/umlforeignkeyconstraintdialog.cpp:300
 #, fuzzy
 #| msgid "Colors"
 msgid "Local Column"
 msgstr "Lliwiau"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:312
+#: dialogs/umlforeignkeyconstraintdialog.cpp:306
 msgid "Referenced Column"
 msgstr ""
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:319
+#: dialogs/umlforeignkeyconstraintdialog.cpp:313
 #: dialogs/umluniqueconstraintdialog.cpp:120
 msgid "&Add"
 msgstr ""
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:394
+#: dialogs/umlforeignkeyconstraintdialog.cpp:388
 msgid ""
 "You are attempting to change the Referenced Entity of this ForeignKey "
 "Constraint. Any unapplied changes to the mappings between local and "
