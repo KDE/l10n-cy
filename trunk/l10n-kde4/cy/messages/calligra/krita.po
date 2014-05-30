@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-05-29 01:28+0000\n"
+"POT-Creation-Date: 2014-05-30 01:33+0000\n"
 "PO-Revision-Date: 2004-07-06 17:18+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -1311,10 +1311,9 @@ msgstr "&Haen"
 
 #: image/brushengine/kis_paintop_factory.cpp:66
 #, fuzzy
-#| msgid "&Scale"
 msgctxt "Category of brush engines"
-msgid "Stable"
-msgstr "&Graddfa"
+msgid "Brush engines"
+msgstr "Brwsh"
 
 #: image/brushengine/kis_paintop_registry.cc:135
 msgid "default"
@@ -1657,7 +1656,7 @@ msgstr "M&ewnosod Delwedd fel Haen..."
 msgid "Convert Projection Color Space"
 msgstr ""
 
-#: image/kis_image.cc:918 ui/kis_layer_manager.cc:710
+#: image/kis_image.cc:918 ui/kis_layer_manager.cc:709
 #, fuzzy
 msgid "Flatten Image"
 msgstr "Dyblygu Delwedd"
@@ -2102,7 +2101,12 @@ msgstr ""
 msgid "Open Macro"
 msgstr "Plws"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:226
+#: plugins/extensions/bigbrother/bigbrother.cc:190
+#: plugins/extensions/bigbrother/bigbrother.cc:229
+msgid "Recorded actions (*.krarec)"
+msgstr ""
+
+#: plugins/extensions/bigbrother/bigbrother.cc:227
 #, fuzzy
 msgid "Save Macro"
 msgstr "Plws"
@@ -2965,53 +2969,54 @@ msgstr "Sianel"
 msgid "Enabled"
 msgstr "Galluogi"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:52
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:51
 #, fuzzy
 msgid "Compositions"
 msgstr "Dim cyfansoddiad"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:63
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:62
 #, fuzzy
 msgid "Delete Composition"
 msgstr "Dim cyfansoddiad"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:64
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:63
 #, fuzzy
 msgid "New Composition"
 msgstr "Dim cyfansoddiad"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:65
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:64
 #, fuzzy
 msgid "Export Composition"
 msgstr "Dim cyfansoddiad"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:81
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:80
 #, fuzzy
 #| msgid "Layer name:"
 msgid "Insert Name"
 msgstr "Enw'r haen:"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:84
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:83
 #, fuzzy
 msgid "Update Composition"
 msgstr "Dim cyfansoddiad"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:88
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:87
 #, fuzzy
 msgid "Rename Composition..."
 msgstr "Dim cyfansoddiad"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:178
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:175
+#: plugins/paintops/resourcemanager/KoResourceManagerControl.cpp:476
 #, fuzzy
 msgid "Select a Directory"
 msgstr "Hirsgwar"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:284
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:277
 #, fuzzy
 msgid "Rename Composition"
 msgstr "Dim cyfansoddiad"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:285
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:278
 #, fuzzy
 msgid "New Name:"
 msgstr "&Enw:"
@@ -3057,7 +3062,7 @@ msgid "&Select Opaque"
 msgstr "Detholiad"
 
 #: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:470
-#: ui/kis_layer_manager.cc:284
+#: ui/kis_layer_manager.cc:283
 #, fuzzy
 msgid "&Merge with Layer Below"
 msgstr "Cyfuno &Pob Haen"
@@ -3408,6 +3413,7 @@ msgid "Select custom configuration file."
 msgstr "Ffurfweddu..."
 
 #: plugins/extensions/dockers/lut/lutdocker_dock.cpp:114
+#: plugins/extensions/dockers/lut/lutdocker_dock.cpp:482
 #, fuzzy
 msgid "Select LUT file"
 msgstr "&Dewis Popeth"
@@ -3438,6 +3444,11 @@ msgstr ""
 #: plugins/extensions/dockers/lut/lutdocker_dock.cpp:359
 #, fuzzy
 msgid "Select OpenColorIO Configuration"
+msgstr "Ffurfweddu..."
+
+#: plugins/extensions/dockers/lut/lutdocker_dock.cpp:361
+#, fuzzy
+msgid "OpenColorIO configuration (*.ocio)"
 msgstr "Ffurfweddu..."
 
 #: plugins/extensions/dockers/lut/lutdocker_dock.cpp:429
@@ -5095,14 +5106,14 @@ msgid "&Custom:"
 msgstr "&Addasiedig :"
 
 #: plugins/extensions/separate_channels/dlg_separate.cc:40
-#: plugins/extensions/separate_channels/kis_channel_separator.cc:213
+#: plugins/extensions/separate_channels/kis_channel_separator.cc:214
 #: plugins/extensions/separate_channels/kis_separate_channels_plugin.cc:76
 #: plugins/extensions/separate_channels/kis_separate_channels_plugin.cc:87
 #, fuzzy
 msgid "Separate Image"
 msgstr "Delwedd Newydd :"
 
-#: plugins/extensions/separate_channels/kis_channel_separator.cc:241
+#: plugins/extensions/separate_channels/kis_channel_separator.cc:242
 msgid "Export Layer"
 msgstr "Allforio Haen"
 
@@ -9668,11 +9679,21 @@ msgid "Select a directory to save the bundle"
 msgstr "Hirsgwar"
 
 #: plugins/paintops/resourcemanager/KoDlgCreateBundle.cpp:343
-#: ui/dialogs/kis_dlg_file_layer.cpp:97
+#: ui/dialogs/kis_dlg_file_layer.cpp:96
 msgid "Select file to use as dynamic file layer."
 msgstr ""
 
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.cpp:45
+#: plugins/paintops/resourcemanager/KoResourceManagerControl.cpp:510
+#, fuzzy
+#| msgid "Import Image"
+msgid "Import Bundle"
+msgstr "Mewnforio Delwedd"
+
+#: plugins/paintops/resourcemanager/KoResourceManagerControl.cpp:512
+msgid "Archive Files (*.bundle)"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.cpp:47
 #, fuzzy
 #| msgid "&Resources"
 msgid "Manage Resources"
@@ -9680,21 +9701,27 @@ msgstr "&Adnoddau"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbResourceType)
 #. i18n: ectx: property (text), item, widget (QComboBox, m_colorLimitation)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.cpp:86
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.cpp:88
 #: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:36
 #: plugins/tools/selectiontools/kis_tool_select_magnetic_option_widget.ui:150
 msgid "All"
 msgstr ""
 
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.cpp:90
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.cpp:92
 #, fuzzy
 msgid "Name"
 msgstr "&Enw:"
 
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.cpp:94
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.cpp:96
 #, fuzzy
 msgid "Filename"
 msgstr "Main"
+
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.cpp:259
+#, fuzzy
+#| msgid "Import Image"
+msgid "Import Thumbnail"
+msgstr "Mewnforio Delwedd"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbResourceType)
 #: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:41
@@ -9857,11 +9884,95 @@ msgstr "&Gwaredu Plygell"
 msgid "Add Resources"
 msgstr "&Adnoddau"
 
-#: plugins/paintops/resourcemanager/resourcemanager.cpp:284
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:155
+#, fuzzy
+msgid "GIMP Brushes (*.gbr)"
+msgstr "Brwsh"
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:156
+msgid "Imagepipe Brushes (*gih)"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:157
+msgid "Photoshop Brushes (*.abr)"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:158
+msgid "PNG Brushes (*png)"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:159
+msgid "SVG Brushes (*svg)"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:160
+#, fuzzy
+msgid "Brush Presets (*.kpp)"
+msgstr "&Priodweddau"
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:161
+msgid "GIMP Gradients (*.ggr)"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:162
+#, fuzzy
+msgid "SVG Gradients (*.svg)"
+msgstr "Graddfa:"
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:163
+#, fuzzy
+msgid "Karbon Gradients (*.kgr)"
+msgstr "Graddfa:"
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:164
+#, fuzzy
+#| msgid "&Remove Folder"
+msgid "Resource Bundles (*.bundle)"
+msgstr "&Gwaredu Plygell"
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:165
+msgid "GIMP Patterns (*.pat)"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:166
+msgid "Jpeg Patterns (*.jpg)"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:167
+#, fuzzy
+msgid "Gif Patterns (*.gif)"
+msgstr "Patrymau"
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:168
+msgid "PNG Patterns (*.png)"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:169
+msgid "Tiff Patterns (*.tif)"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:170
+msgid "XPM Patterns (*.xpm)"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:171
+msgid "BMP Patterns (*.bmp)"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:172
+msgid "Palettes (*.gpl *.pal *.act *.aco *.colors)"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:173
+#, fuzzy
+msgid "Workspaces (*.kts)"
+msgstr "Dewisydd Lliw"
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:305
 msgid "Could not create the new bundle."
 msgstr ""
 
-#: plugins/paintops/resourcemanager/resourcemanager.cpp:284
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:305
 #, fuzzy
 msgid "Error"
 msgstr "Haen i Ddelwedd"
@@ -13513,34 +13624,34 @@ msgid ""
 "down."
 msgstr ""
 
-#: ui/kis_doc2.cc:263 ui/kis_doc2.cc:271
+#: ui/kis_doc2.cc:262 ui/kis_doc2.cc:270
 msgid "Krita does not support the OpenDocument file format."
 msgstr ""
 
-#: ui/kis_doc2.cc:289
+#: ui/kis_doc2.cc:288
 msgid "The format is not supported or the file is corrupted"
 msgstr ""
 
-#: ui/kis_doc2.cc:295
+#: ui/kis_doc2.cc:294
 #, kde-format
 msgid "The file is too new for this version of Krita (%1)."
 msgstr ""
 
-#: ui/kis_doc2.cc:300
+#: ui/kis_doc2.cc:299
 msgid "The file has no layers."
 msgstr ""
 
-#: ui/kis_doc2.cc:314 ui/kis_doc2.cc:367
+#: ui/kis_doc2.cc:313 ui/kis_doc2.cc:366
 #, fuzzy
 msgid "Unknown error."
 msgstr "Anhysbys"
 
-#: ui/kis_doc2.cc:325
+#: ui/kis_doc2.cc:324
 msgid "The file does not contain an image."
 msgstr ""
 
-#: ui/kis_doc2.cc:442 ui/kis_part2.cpp:130 ui/kis_part2.cpp:145
-#: ui/widgets/kis_gradient_chooser.cc:130
+#: ui/kis_doc2.cc:441 ui/kis_part2.cpp:130 ui/kis_part2.cpp:145
+#: ui/widgets/kis_gradient_chooser.cc:129
 #, fuzzy
 #| msgid "Unnamed"
 msgid "unnamed"
@@ -13591,89 +13702,89 @@ msgstr "&Priodweddau"
 msgid "Import Image"
 msgstr "Mewnforio Delwedd"
 
-#: ui/kis_layer_manager.cc:279
+#: ui/kis_layer_manager.cc:278
 #, fuzzy
 msgid "&Flatten image"
 msgstr "Dyblygu Delwedd"
 
-#: ui/kis_layer_manager.cc:289
+#: ui/kis_layer_manager.cc:288
 #, fuzzy
 msgid "&Flatten Layer"
 msgstr "Hidlenni"
 
-#: ui/kis_layer_manager.cc:293
+#: ui/kis_layer_manager.cc:292
 #, fuzzy
 msgid "Rename current layer"
 msgstr "Defnyddio graddfa gyfredol"
 
-#: ui/kis_layer_manager.cc:299 ui/kis_layer_manager.cc:779
+#: ui/kis_layer_manager.cc:298 ui/kis_layer_manager.cc:778
 #, fuzzy
 msgid "Rasterize Layer"
 msgstr "&Gwaredu Haen"
 
-#: ui/kis_layer_manager.cc:305
+#: ui/kis_layer_manager.cc:304
 #, fuzzy
 msgid "Save Group Layers..."
 msgstr "Graddio Haen..."
 
-#: ui/kis_layer_manager.cc:309
+#: ui/kis_layer_manager.cc:308
 #, fuzzy
 msgid "Size Canvas to Size of Current Layer"
 msgstr "Newid Maint y Ddelwedd i'r Haen Gyfredol"
 
-#: ui/kis_layer_manager.cc:359
+#: ui/kis_layer_manager.cc:358
 #, fuzzy
 #| msgid "Layer Properties"
 msgid "Filter Layer Properties"
 msgstr "Priodweddau Haen"
 
-#: ui/kis_layer_manager.cc:404
+#: ui/kis_layer_manager.cc:403
 #, fuzzy
 #| msgid "Layer Properties"
 msgid "Generator Layer Properties"
 msgstr "Priodweddau Haen"
 
-#: ui/kis_layer_manager.cc:485
+#: ui/kis_layer_manager.cc:484
 #, fuzzy
 msgid "Convert to a Paint Layer"
 msgstr "Trawsnewid yr haen gyfredol"
 
-#: ui/kis_layer_manager.cc:564
+#: ui/kis_layer_manager.cc:563
 #, fuzzy
 #| msgid "Filters"
 msgid "New Filter Layer"
 msgstr "Hidlenni"
 
-#: ui/kis_layer_manager.cc:623
+#: ui/kis_layer_manager.cc:622
 msgid "Could not add layer to image."
 msgstr "Methwyd ychwanegu haen i ddelwedd."
 
-#: ui/kis_layer_manager.cc:623
+#: ui/kis_layer_manager.cc:622
 msgid "Layer Error"
 msgstr "Gwall Haen"
 
-#: ui/kis_layer_manager.cc:709
+#: ui/kis_layer_manager.cc:708
 msgid "The image contains hidden layers that will be lost."
 msgstr ""
 
-#: ui/kis_layer_manager.cc:711
+#: ui/kis_layer_manager.cc:710
 #, fuzzy
 msgid "&Flatten Image"
 msgstr "Dyblygu Delwedd"
 
-#: ui/kis_layer_manager.cc:815
+#: ui/kis_layer_manager.cc:814
 msgid "Convert Invisible Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:818
+#: ui/kis_layer_manager.cc:817
 msgid "Export Only Toplevel Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:876
+#: ui/kis_layer_manager.cc:875
 msgid "No file name specified."
 msgstr ""
 
-#: ui/kis_layer_manager.cc:876
+#: ui/kis_layer_manager.cc:875
 msgid "No file specified"
 msgstr ""
 
@@ -13730,149 +13841,149 @@ msgstr "Priodweddau Haen"
 msgid "Mirror Axis"
 msgstr "Haen i Ddelwedd"
 
-#: ui/kis_node_manager.cpp:193
+#: ui/kis_node_manager.cpp:194
 #, fuzzy
 msgid "Mirror Layer Horizontally"
 msgstr "Croesrwygo Llorweddol "
 
-#: ui/kis_node_manager.cpp:199
+#: ui/kis_node_manager.cpp:200
 #, fuzzy
 msgid "Mirror Layer Vertically"
 msgstr "Croesrwygo Fertigol"
 
-#: ui/kis_node_manager.cpp:205
+#: ui/kis_node_manager.cpp:206
 #, fuzzy
 msgid "Activate next layer"
 msgstr "Tynnu Haen"
 
-#: ui/kis_node_manager.cpp:211
+#: ui/kis_node_manager.cpp:212
 #, fuzzy
 msgid "Activate previous layer"
 msgstr "Tynnu Haen"
 
-#: ui/kis_node_manager.cpp:217
+#: ui/kis_node_manager.cpp:218
 #, fuzzy
 #| msgid "Save Layer as Image..."
 msgid "Save Layer/Mask..."
 msgstr "Cadw Haen fel Delwedd..."
 
-#: ui/kis_node_manager.cpp:222
+#: ui/kis_node_manager.cpp:223
 #, fuzzy
 #| msgid "Duplicate"
 msgid "&Duplicate Layer or Mask"
 msgstr "Dyblyg"
 
-#: ui/kis_node_manager.cpp:229
+#: ui/kis_node_manager.cpp:230
 #, fuzzy
 #| msgid "&Layer"
 msgid "&Paint Layer"
 msgstr "&Haen"
 
-#: ui/kis_node_manager.cpp:233
+#: ui/kis_node_manager.cpp:234
 #, fuzzy
 msgid "&Group Layer"
 msgstr "Graddio Haen..."
 
-#: ui/kis_node_manager.cpp:236
+#: ui/kis_node_manager.cpp:237
 #, fuzzy
 msgid "&Clone Layer"
 msgstr "Haen Newydd"
 
-#: ui/kis_node_manager.cpp:239
+#: ui/kis_node_manager.cpp:240
 #, fuzzy
 msgid "&Vector Layer"
 msgstr "Cyfuno &Pob Haen"
 
-#: ui/kis_node_manager.cpp:242
+#: ui/kis_node_manager.cpp:243
 #, fuzzy
 msgid "&Filter Layer..."
 msgstr "Hidlenni"
 
-#: ui/kis_node_manager.cpp:245
+#: ui/kis_node_manager.cpp:246
 #, fuzzy
 msgid "&Generated Layer..."
 msgstr "Graddio Haen..."
 
-#: ui/kis_node_manager.cpp:248
+#: ui/kis_node_manager.cpp:249
 #, fuzzy
 msgid "&File Layer"
 msgstr "Hidlenni"
 
-#: ui/kis_node_manager.cpp:251
+#: ui/kis_node_manager.cpp:252
 #, fuzzy
 msgid "&Transparency Mask"
 msgstr "Tryloyw"
 
-#: ui/kis_node_manager.cpp:254
+#: ui/kis_node_manager.cpp:255
 #, fuzzy
 #| msgid "Filters"
 msgid "&Filter Mask..."
 msgstr "Hidlenni"
 
-#: ui/kis_node_manager.cpp:257
+#: ui/kis_node_manager.cpp:258
 #, fuzzy
 msgid "&Local Selection"
 msgstr "Gludo Detholiad"
 
-#: ui/kis_node_manager.cpp:263
+#: ui/kis_node_manager.cpp:264
 #, fuzzy
 #| msgid "&Layer"
 msgid "to &Paint Layer"
 msgstr "&Haen"
 
-#: ui/kis_node_manager.cpp:266
+#: ui/kis_node_manager.cpp:267
 #, fuzzy
 msgid "to &Selection Mask"
 msgstr "brwsh"
 
-#: ui/kis_node_manager.cpp:269
+#: ui/kis_node_manager.cpp:270
 #, fuzzy
 #| msgid "Filters"
 msgid "to &Filter Mask"
 msgstr "Hidlenni"
 
-#: ui/kis_node_manager.cpp:272
+#: ui/kis_node_manager.cpp:273
 #, fuzzy
 msgid "to &Transparency Mask"
 msgstr "Tryloyw"
 
-#: ui/kis_node_manager.cpp:278
+#: ui/kis_node_manager.cpp:279
 #, fuzzy
 msgid "&Isolate Layer"
 msgstr "Hidlenni"
 
-#: ui/kis_node_manager.cpp:450
+#: ui/kis_node_manager.cpp:451
 #, fuzzy
 msgid "Convert to a Selection Mask"
 msgstr "Gludo Detholiad"
 
-#: ui/kis_node_manager.cpp:650
+#: ui/kis_node_manager.cpp:651
 #, fuzzy
 #| msgid "Remove Layer"
 msgid "Remove Last Layer"
 msgstr "Tynnu Haen"
 
-#: ui/kis_node_manager.cpp:669
+#: ui/kis_node_manager.cpp:670
 #, fuzzy
 msgid "Mirror Layer X"
 msgstr "Gostwng Haen"
 
-#: ui/kis_node_manager.cpp:671
+#: ui/kis_node_manager.cpp:672
 #, fuzzy
 msgid "Mirror Mask X"
 msgstr "Gostwng Haen"
 
-#: ui/kis_node_manager.cpp:682
+#: ui/kis_node_manager.cpp:683
 #, fuzzy
 msgid "Mirror Layer Y"
 msgstr "Gostwng Haen"
 
-#: ui/kis_node_manager.cpp:684
+#: ui/kis_node_manager.cpp:685
 #, fuzzy
 msgid "Mirror Mask Y"
 msgstr "Gostwng Haen"
 
-#: ui/kis_node_manager.cpp:805
+#: ui/kis_node_manager.cpp:806
 #, fuzzy
 msgid "Export Node"
 msgstr "Dadleniad:"
@@ -14551,18 +14662,18 @@ msgstr "Priodweddau Haen"
 msgid "No configuration option."
 msgstr "Ffurfweddu..."
 
-#: ui/widgets/kis_gradient_chooser.cc:45 ui/widgets/kis_gradient_chooser.cc:50
+#: ui/widgets/kis_gradient_chooser.cc:44 ui/widgets/kis_gradient_chooser.cc:49
 #, fuzzy
 msgid "Custom Gradient"
 msgstr "Graddfa:"
 
-#: ui/widgets/kis_gradient_chooser.cc:79
+#: ui/widgets/kis_gradient_chooser.cc:78
 #, fuzzy
 #| msgid "&Add..."
 msgid "Add..."
 msgstr "Ychw&anegu..."
 
-#: ui/widgets/kis_gradient_chooser.cc:83
+#: ui/widgets/kis_gradient_chooser.cc:82
 #, fuzzy
 msgid "Edit..."
 msgstr "Ychwanegu Mwgwd"
@@ -14673,6 +14784,12 @@ msgid "&Close"
 msgstr "Lliwiau"
 
 #, fuzzy
+#~| msgid "&Scale"
+#~ msgctxt "Category of brush engines"
+#~ msgid "Stable"
+#~ msgstr "&Graddfa"
+
+#, fuzzy
 #~ msgid "Custom Gradient..."
 #~ msgstr "Graddfa:"
 
@@ -14692,10 +14809,6 @@ msgstr "Lliwiau"
 #~| msgid "Color"
 #~ msgid "OpenColorIO"
 #~ msgstr "Lliw"
-
-#, fuzzy
-#~ msgid "OpenColorIO configuration path:"
-#~ msgstr "Ffurfweddu..."
 
 #, fuzzy
 #~ msgid "Reset Canvas Transformations"
@@ -16150,10 +16263,6 @@ msgstr "Lliwiau"
 #~| msgid "Image Size"
 #~ msgid "imageSplit"
 #~ msgstr "Maint y Ddelwedd"
-
-#, fuzzy
-#~ msgid "Brush Engines"
-#~ msgstr "Brwsh"
 
 #, fuzzy
 #~ msgid "Brush Editor"
