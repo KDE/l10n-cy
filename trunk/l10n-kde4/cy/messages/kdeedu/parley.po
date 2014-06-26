@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeedu/kvoctrain.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-06-24 01:41+0000\n"
+"POT-Creation-Date: 2014-06-26 01:39+0000\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -996,6 +996,7 @@ msgid "LaTeX"
 msgstr ""
 
 #: src/editor/editor.cpp:407 src/editor/editor.cpp:408
+#: src/welcomescreen/welcomescreen.cpp:462
 #, fuzzy
 #| msgid "Article"
 msgid "Practice"
@@ -1191,6 +1192,7 @@ msgstr "&Ychwanegu"
 
 #. i18n: ectx: property (text), widget (QPushButton, removeChoiceButton)
 #: src/editor/multiplechoicewidget.ui:28
+#: src/welcomescreen/welcomescreen.cpp:540
 #, fuzzy
 #| msgid "Filename:"
 msgid "Remove"
@@ -1321,7 +1323,7 @@ msgid "Could not write to file \"%1\""
 msgstr "Methu darllen [1]"
 
 #: src/export/exportdialog.cpp:110 src/parleydocument.cpp:106
-#: src/parleydocument.cpp:323 src/parleymainwindow.cpp:138
+#: src/parleydocument.cpp:323 src/parleymainwindow.cpp:144
 #, fuzzy
 msgid "Untitled"
 msgstr "teitl"
@@ -1536,13 +1538,12 @@ msgid "Edit document properties"
 msgstr "Ystadegau Dogfen"
 
 #: src/parleyactions.cpp:103
-#, fuzzy
-msgid "&Start Page"
-msgstr "&Dangos Ystadegau"
+msgid "Dashboard"
+msgstr ""
 
 #: src/parleyactions.cpp:104
 #, fuzzy
-msgid "Close the current vocabulary collection and show the start page"
+msgid "Close the current vocabulary collection and show the dashboard"
 msgstr "Agor dogfen gyfredol"
 
 #: src/parleyactions.cpp:108
@@ -1801,13 +1802,13 @@ msgstr "Agor dogfen gyfredol"
 msgid "Could not save vocabulary collection \"%1\""
 msgstr "Agor dogfen gyfredol"
 
-#: src/parleymainwindow.cpp:176
+#: src/parleymainwindow.cpp:182
 msgid ""
 "You cannot start to practice when the known language is the same as the "
 "language to learn."
 msgstr ""
 
-#: src/parleymainwindow.cpp:177
+#: src/parleymainwindow.cpp:183
 #, fuzzy
 #| msgid "Languages"
 msgid "Select languages"
@@ -4022,10 +4023,37 @@ msgstr[1] ""
 msgid "Open this vocabulary collection in the editor"
 msgstr "Agor dogfen gyfredol"
 
+#: src/welcomescreen/welcomescreen.cpp:215
+#, kde-format
+msgid "%1 words due"
+msgstr ""
+
+#: src/welcomescreen/welcomescreen.cpp:218
+msgid "Fully learned"
+msgstr ""
+
+#: src/welcomescreen/welcomescreen.cpp:459
+#, fuzzy
+#| msgid "View Settings"
+msgid "Practice Anyway"
+msgstr "Gweld Gosodiadau"
+
 #. i18n: ectx: property (text), widget (QLabel, recentLabel)
-#: src/welcomescreen/welcomescreen.cpp:112
-#: src/welcomescreen/welcomescreen.ui:64
-msgid "Last Opened Collections"
+#: src/welcomescreen/welcomescreen.cpp:498
+#: src/welcomescreen/welcomescreen.ui:43
+#, fuzzy
+msgid "Active Collections"
+msgstr "Agor dogfen gyfredol"
+
+#. i18n: ectx: property (text), widget (QLabel, completedLabel)
+#: src/welcomescreen/welcomescreen.cpp:503
+#: src/welcomescreen/welcomescreen.ui:82
+#, fuzzy
+msgid "Completed Collections"
+msgstr "Agor dogfen gyfredol"
+
+#: src/welcomescreen/welcomescreen.cpp:540
+msgid "Are you sure you want to remove this collection?"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, headingLabel)
@@ -4034,19 +4062,19 @@ msgid "<h1>Parley</h1>"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (KPushButton, newButton)
-#: src/welcomescreen/welcomescreen.ui:27
+#: src/welcomescreen/welcomescreen.ui:118
 #, fuzzy
 msgid "Create a New Collection"
 msgstr "Creu dogfen newydd"
 
 #. i18n: ectx: property (text), widget (KPushButton, openButton)
-#: src/welcomescreen/welcomescreen.ui:34
+#: src/welcomescreen/welcomescreen.ui:125
 #, fuzzy
 msgid "Open an Existing Collection"
 msgstr "Agor dogfen gyfredol"
 
 #. i18n: ectx: property (text), widget (KPushButton, ghnsButton)
-#: src/welcomescreen/welcomescreen.ui:41
+#: src/welcomescreen/welcomescreen.ui:132
 #, fuzzy
 msgid "Download New Collections"
 msgstr "Hyfforddwr Geirfa"
@@ -4146,14 +4174,13 @@ msgid ""
 msgstr ""
 
 #, fuzzy
+#~ msgid "&Start Page"
+#~ msgstr "&Dangos Ystadegau"
+
+#, fuzzy
 #~| msgid "Could not read "
 #~ msgid "Could not read collection from \"%1\""
 #~ msgstr "Methu darllen [1]"
-
-#, fuzzy
-#~| msgid "View Settings"
-#~ msgid "Practice Again"
-#~ msgstr "Gweld Gosodiadau"
 
 #, fuzzy
 #~| msgid "&Expression:"
