@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-10-21 10:25+0000\n"
+"POT-Creation-Date: 2014-10-23 08:00+0000\n"
 "PO-Revision-Date: 2004-01-16 09:20+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -59,7 +59,7 @@ msgid "Folder Already Exists"
 msgstr "Plygell yn Bodoli'n Barod"
 
 #: core/copyjob.cpp:1353 core/copyjob.cpp:1919 core/filecopyjob.cpp:360
-#: core/job_error.cpp:494 widgets/paste.cpp:98
+#: core/job_error.cpp:494 widgets/paste.cpp:101
 msgid "File Already Exists"
 msgstr "Ffeil yn Bodoli'n Barod"
 
@@ -2076,7 +2076,7 @@ msgstr "Dewiswch enw ffeil gwahanol i'r ffeil cyrchfan."
 msgid "Undocumented Error"
 msgstr "Gwall Heb ei Ddogfennu"
 
-#: core/kcoredirlister.cpp:397 widgets/krun.cpp:842 widgets/paste.cpp:255
+#: core/kcoredirlister.cpp:397 widgets/krun.cpp:842 widgets/paste.cpp:258
 #: widgets/renamedialog.cpp:410
 #, kde-format
 msgid ""
@@ -6280,40 +6280,77 @@ msgstr "%1 / %2"
 msgid "Open file dialog"
 msgstr "Agor Ymgom Ffeil"
 
-#: widgets/paste.cpp:76 widgets/paste.cpp:145
+#: widgets/paste.cpp:79 widgets/paste.cpp:148
 #, fuzzy
 msgid "Filename for clipboard content:"
 msgstr "Enw ffeil i gynnwys gludfwrdd:"
 
-#: widgets/paste.cpp:137
+#: widgets/paste.cpp:140
 #, kde-format
 msgid "%1 (%2)"
 msgstr "%1(%2)"
 
-#: widgets/paste.cpp:156
+#: widgets/paste.cpp:159
 msgid ""
 "The clipboard has changed since you used 'paste': the chosen data format is "
 "no longer applicable. Please copy again what you wanted to paste."
 msgstr ""
 
-#: widgets/paste.cpp:285
+#: widgets/paste.cpp:286
 #, fuzzy, kde-format
 msgid "&Paste File"
 msgid_plural "&Paste %1 Files"
 msgstr[0] "%1 ffeil"
 msgstr[1] "%1 o ffeiliau"
 
-#: widgets/paste.cpp:287
+#: widgets/paste.cpp:288
 #, kde-format
 msgid "&Paste URL"
 msgid_plural "&Paste %1 URLs"
 msgstr[0] ""
 msgstr[1] ""
 
-#: widgets/paste.cpp:290
+#: widgets/paste.cpp:291
 #, fuzzy
 msgid "&Paste Clipboard Contents"
 msgstr "Enw ffeil i gynnwys gludfwrdd:"
+
+#: widgets/paste.cpp:317
+#, fuzzy
+#| msgid "One Folder"
+#| msgid_plural "%1 Folders"
+msgctxt "@action:inmenu"
+msgid "Paste One Folder"
+msgstr "%1 Plygell "
+
+#: widgets/paste.cpp:318
+#, fuzzy
+msgctxt "@action:inmenu"
+msgid "Paste One File"
+msgstr "%1 ffeil"
+
+#: widgets/paste.cpp:320
+#, fuzzy, kde-format
+#| msgid "One Item"
+#| msgid_plural "%1 Items"
+msgctxt "@action:inmenu"
+msgid "Paste One Item"
+msgid_plural "Paste %1 Items"
+msgstr[0] "%1 Eitem"
+msgstr[1] "%1 o Eitemau"
+
+#: widgets/paste.cpp:322
+#, fuzzy
+msgctxt "@action:inmenu"
+msgid "Paste Clipboard Contents..."
+msgstr "Enw ffeil i gynnwys gludfwrdd:"
+
+#: widgets/paste.cpp:326
+#, fuzzy
+#| msgid "Date"
+msgctxt "@action:inmenu"
+msgid "Paste"
+msgstr "Dyddiad"
 
 #: widgets/pastedialog.cpp:57
 msgid "Data format:"
@@ -7829,11 +7866,6 @@ msgstr ""
 #~ "Unsupported method: authentication will fail. Please submit a bug report."
 #~ msgstr "Dull ni chynhelir: bydd dilysu yn methu.  Hysbyswch y nam!"
 
-#~ msgid "One Item"
-#~ msgid_plural "%1 Items"
-#~ msgstr[0] "%1 Eitem"
-#~ msgstr[1] "%1 o Eitemau"
-
 #, fuzzy
 #~ msgid "No Files"
 #~ msgstr "Ffeiliau"
@@ -7846,11 +7878,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "No Folders"
 #~ msgstr "Plygell Newydd"
-
-#~ msgid "One Folder"
-#~ msgid_plural "%1 Folders"
-#~ msgstr[0] "%1 Plygell "
-#~ msgstr[1] "%1 Plygell"
 
 #~ msgid "(%1 Total)"
 #~ msgstr "(%1 Cyfanswm)"
