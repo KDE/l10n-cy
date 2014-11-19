@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-11-08 01:33+0000\n"
+"POT-Creation-Date: 2014-11-19 01:44+0000\n"
 "PO-Revision-Date: 2004-08-12 18:36+0100\n"
 "Last-Translator: KD at Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -3338,7 +3338,7 @@ msgstr "Methwyd creu cywaith \"%1\""
 msgid "Shows information about KDE."
 msgstr "Methwyd creu cywaith \"%1\""
 
-#: main/KexiMainWindow_p.h:890 main/startup/KexiNewProjectAssistant.cpp:355
+#: main/KexiMainWindow_p.h:890 main/startup/KexiNewProjectAssistant.cpp:384
 msgid "Create"
 msgstr "Creu"
 
@@ -3373,7 +3373,7 @@ msgstr "Methwyd creu cywaith \"%1\""
 msgid "Command \"%1\" failed."
 msgstr "Cadw gwrthrych fel"
 
-#: main/KexiMenuWidget.cpp:2110
+#: main/KexiMenuWidget.cpp:2169
 #, kde-format
 msgid "Visit Calligra home page at %1"
 msgstr ""
@@ -3416,59 +3416,59 @@ msgstr ""
 msgid "Try Again"
 msgstr ""
 
-#: main/startup/KexiNewProjectAssistant.cpp:79
+#: main/startup/KexiNewProjectAssistant.cpp:81
 #, fuzzy
 #| msgid "Open Project"
 msgctxt "@title:window"
 msgid "New Project"
 msgstr "Agor Cywaith"
 
-#: main/startup/KexiNewProjectAssistant.cpp:80
+#: main/startup/KexiNewProjectAssistant.cpp:82
 #, fuzzy
 msgctxt "@info"
 msgid "Kexi will create a new database project. Select blank database."
 msgstr ""
 "Creua Kexi gronfa ddata newydd wag.  Cliciwch y botwm \"Iawn\" i fynd ymlaen."
 
-#: main/startup/KexiNewProjectAssistant.cpp:98
+#: main/startup/KexiNewProjectAssistant.cpp:100
 #, fuzzy
 #| msgid "Open Project"
 msgid "Blank Projects"
 msgstr "Agor Cywaith"
 
-#: main/startup/KexiNewProjectAssistant.cpp:102
+#: main/startup/KexiNewProjectAssistant.cpp:104
 #, fuzzy
 msgid "Blank database"
 msgstr "Cronfeydd Data Gwag"
 
-#: main/startup/KexiNewProjectAssistant.cpp:103
+#: main/startup/KexiNewProjectAssistant.cpp:105
 #, fuzzy
 msgid "Database project without any objects"
 msgstr "Cywaith newydd wedi'i storio mewn ffeil"
 
-#: main/startup/KexiNewProjectAssistant.cpp:115
+#: main/startup/KexiNewProjectAssistant.cpp:117
 #, fuzzy
 #| msgid "Comments"
 msgid "Contacts"
 msgstr "Sylwadau"
 
-#: main/startup/KexiNewProjectAssistant.cpp:122
+#: main/startup/KexiNewProjectAssistant.cpp:124
 #, fuzzy
 #| msgid "CD Catalog"
 msgid "Movie catalog"
 msgstr "Catalog CD"
 
-#: main/startup/KexiNewProjectAssistant.cpp:151
+#: main/startup/KexiNewProjectAssistant.cpp:153
 msgid "Templates"
 msgstr ""
 
-#: main/startup/KexiNewProjectAssistant.cpp:157
+#: main/startup/KexiNewProjectAssistant.cpp:159
 #, fuzzy
 msgctxt "@title:window"
 msgid "Storage Method"
 msgstr "Dewiswch dull storio"
 
-#: main/startup/KexiNewProjectAssistant.cpp:158
+#: main/startup/KexiNewProjectAssistant.cpp:160
 #, fuzzy
 msgctxt "@info"
 msgid "Select a storage method which will be used to store the new project."
@@ -3477,60 +3477,85 @@ msgstr ""
 "ddefnyddio i gadw'r cywaith newydd.\n"
 "\n"
 
-#: main/startup/KexiNewProjectAssistant.cpp:191
+#: main/startup/KexiNewProjectAssistant.cpp:193
 msgid "New database"
 msgstr "Cronfa ddata newydd"
 
-#: main/startup/KexiNewProjectAssistant.cpp:195
+#: main/startup/KexiNewProjectAssistant.cpp:197
 #, fuzzy
 msgctxt "@title:window"
 msgid "Project Caption & Filename"
 msgstr "Cywaith newydd wedi'i storio mewn ffeil"
 
-#: main/startup/KexiNewProjectAssistant.cpp:196
+#: main/startup/KexiNewProjectAssistant.cpp:198
 msgctxt "@info"
 msgid ""
 "Enter caption for the new project. Filename will be created automatically "
 "based on the caption. You can change the filename too."
 msgstr ""
 
-#: main/startup/KexiNewProjectAssistant.cpp:216
+#: main/startup/KexiNewProjectAssistant.cpp:218
 #, fuzzy
 #| msgid "Save Object As"
 msgid "Save New Project As"
 msgstr "Cadw'r Gwrthrych Fel"
 
-#: main/startup/KexiNewProjectAssistant.cpp:254
-#: main/startup/KexiNewProjectAssistant.cpp:453
+#: main/startup/KexiNewProjectAssistant.cpp:256
+#: main/startup/KexiNewProjectAssistant.cpp:482
 #, fuzzy
 #| msgid "Enter project caption."
 msgid "Enter project caption."
 msgstr "Mewnosod pennawd y cywaith."
 
-#: main/startup/KexiNewProjectAssistant.cpp:262
+#: main/startup/KexiNewProjectAssistant.cpp:265
+#, kde-format
+msgctxt "@info"
 msgid ""
-"Enter valid project filename. The file should be located on this computer."
+"<filename>%1</filename> is a relative path. <note>Enter absolute path of a "
+"file to be created.</note>"
 msgstr ""
 
-#: main/startup/KexiNewProjectAssistant.cpp:275
+#: main/startup/KexiNewProjectAssistant.cpp:273
+msgid ""
+"Enter a valid project filename. The file should be located on this computer."
+msgstr ""
+
+#: main/startup/KexiNewProjectAssistant.cpp:279
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<filename>%1</filename> is a directory name. <note>Enter name of a file to "
+"be created.</note>"
+msgstr ""
+
+#: main/startup/KexiNewProjectAssistant.cpp:291
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Could not create database file <filename>%1</filename>. <note>There is no "
+"permission to create this file. Pick another directory or change permissions "
+"so the file can be created.</note>"
+msgstr ""
+
+#: main/startup/KexiNewProjectAssistant.cpp:304
 #, fuzzy
 msgctxt "@title:window"
 msgid "Creating Project"
 msgstr "Wrthi'n creu cywaith newydd"
 
-#: main/startup/KexiNewProjectAssistant.cpp:276
+#: main/startup/KexiNewProjectAssistant.cpp:305
 msgctxt "@info"
 msgid "Please wait while the project is created."
 msgstr ""
 
-#: main/startup/KexiNewProjectAssistant.cpp:298
+#: main/startup/KexiNewProjectAssistant.cpp:327
 #, fuzzy
 #| msgid "Database Connection"
 msgctxt "@title:window"
 msgid "Database Connection"
 msgstr "Cysylltiad Cronfa Ddata"
 
-#: main/startup/KexiNewProjectAssistant.cpp:300
+#: main/startup/KexiNewProjectAssistant.cpp:329
 #, fuzzy
 msgctxt "@info"
 msgid ""
@@ -3542,33 +3567,33 @@ msgstr ""
 "Kexi newydd. <p>Cewch hefyd ychwanegu, golygu neu ddileu cysylltiadau o'r "
 "rhestr."
 
-#: main/startup/KexiNewProjectAssistant.cpp:343
+#: main/startup/KexiNewProjectAssistant.cpp:372
 #, fuzzy
 msgctxt "@title:window"
 msgid "Project Caption & Database Name"
 msgstr "Dewiswch pennawd y cywaith ac enw'r gronfa ddata"
 
-#: main/startup/KexiNewProjectAssistant.cpp:344
+#: main/startup/KexiNewProjectAssistant.cpp:373
 msgctxt "@info"
 msgid ""
 "Enter caption for the new project. Database name will be created "
 "automatically based on the caption. You can change the database name too."
 msgstr ""
 
-#: main/startup/KexiNewProjectAssistant.cpp:414
+#: main/startup/KexiNewProjectAssistant.cpp:443
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid ""
 "Existing project databases on <resource>%1 (%2)</resource> database server:"
 msgstr "Hen gyweithiau ar weinydd <b>%1</b>:"
 
-#: main/startup/KexiNewProjectAssistant.cpp:461
+#: main/startup/KexiNewProjectAssistant.cpp:490
 #, fuzzy
 #| msgid "Enter project's database name."
 msgid "Enter database name."
 msgstr "Mewnosod enw cronfa ddata'r cywaith."
 
-#: main/startup/KexiNewProjectAssistant.cpp:472
+#: main/startup/KexiNewProjectAssistant.cpp:501
 #, fuzzy
 msgid ""
 "Database with this name already exists. Do you want to delete it and create "
@@ -3577,7 +3602,7 @@ msgstr ""
 "<b>Mae cywaith o'r enw \"%1\" mewn bod eisoes.</b><p>Ydych eisiau ei ddileu "
 "a chreu un newydd?"
 
-#: main/startup/KexiNewProjectAssistant.cpp:475
+#: main/startup/KexiNewProjectAssistant.cpp:504
 msgid "Delete and Create New"
 msgstr ""
 
