@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-11-23 01:51+0000\n"
+"POT-Creation-Date: 2014-11-24 01:50+0000\n"
 "PO-Revision-Date: 2004-07-06 17:18+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -3689,7 +3689,7 @@ msgstr "&Gwaredu Haen"
 #: plugins/extensions/dropshadow/wdg_dropshadow.ui:57
 #: plugins/filters/noisefilter/wdgnoiseoptions.ui:29
 #: plugins/filters/randompickfilter/wdgrandompickoptions.ui:65
-#: plugins/paintops/libpaintop/forms/wdgflowopacityoption.ui:38
+#: plugins/paintops/libpaintop/forms/wdgflowopacityoption.ui:59
 #: ui/forms/wdganimationselector.ui:220 ui/forms/wdgautogradient.ui:81
 #: ui/forms/wdgpaintactioneditor.ui:89 ui/kis_paintop_box.cc:174
 msgid "Opacity:"
@@ -4083,7 +4083,7 @@ msgstr "Enw'r haen:"
 #: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:131
 #: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:22
 #: ui/forms/wdgautogradient.ui:25 ui/forms/wdgfilternodecreation.ui:17
-#: ui/forms/wdgflipbookselector.ui:28 ui/forms/wdgpaintopsettings.ui:156
+#: ui/forms/wdgflipbookselector.ui:28 ui/forms/wdgpaintopsettings.ui:177
 #, fuzzy
 msgid "Name:"
 msgstr "&Enw:"
@@ -9317,7 +9317,7 @@ msgid "Color background"
 msgstr "cefndir"
 
 #. i18n: ectx: property (text), widget (QLabel, rateLbl)
-#: plugins/paintops/libpaintop/forms/wdgairbrush.ui:38
+#: plugins/paintops/libpaintop/forms/wdgairbrush.ui:37
 #, fuzzy
 msgid "Rate:"
 msgstr "Ail-adrodd: "
@@ -9627,12 +9627,6 @@ msgstr "brwsh"
 #| msgid "Color Settings"
 msgid "Filter Settings"
 msgstr "Gosodiadau Lliw"
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
-#: plugins/paintops/libpaintop/forms/wdgflowopacityoption.ui:61
-#, fuzzy
-msgid "Opacity Dynamics"
-msgstr "Didreiddiad:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, grpIncremental)
 #: plugins/paintops/libpaintop/forms/wdgincremental.ui:20
@@ -13388,42 +13382,70 @@ msgstr "pwyntiau"
 msgid "Preset Collection"
 msgstr "Cywiro &Gama..."
 
+#. i18n: ectx: property (toolTip), widget (QPushButton, paintPresetIcon)
+#: ui/forms/wdgpaintopsettings.ui:71
+#, fuzzy
+msgid "Fill preset area with current icon"
+msgstr "Defnyddio graddfa gyfredol"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, fillGradient)
+#: ui/forms/wdgpaintopsettings.ui:88
+#, fuzzy
+msgid "Fill area with gradient"
+msgstr "Llenwi gyda patrwm"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, fillSolid)
+#: ui/forms/wdgpaintopsettings.ui:98
+#, fuzzy
+msgid "Fill area with background color"
+msgstr "Llenwi gyda Lliw Blaendir"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, eraseScratchPad)
+#: ui/forms/wdgpaintopsettings.ui:108
+msgid "Reset area to white"
+msgstr ""
+
 #. i18n: ectx: property (toolTip), widget (QLineEdit, txtPreset)
-#: ui/forms/wdgpaintopsettings.ui:166
+#: ui/forms/wdgpaintopsettings.ui:187
 msgid ""
 "Current Brush Preset. Pink in Color whenever the preset has modified "
 "settings. Stays the same if original settings are loaded."
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, bnSave)
-#: ui/forms/wdgpaintopsettings.ui:173
+#: ui/forms/wdgpaintopsettings.ui:194
 msgid "Save the current brush settings under this name"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, bnSave)
-#: ui/forms/wdgpaintopsettings.ui:176
+#: ui/forms/wdgpaintopsettings.ui:197
 #, fuzzy
 msgid "&Save to Presets"
 msgstr "Patrymau"
 
 #. i18n: ectx: property (text), widget (QPushButton, reload)
-#: ui/forms/wdgpaintopsettings.ui:183
+#: ui/forms/wdgpaintopsettings.ui:204
 msgid "Reload"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, bnDefaultPreset)
-#: ui/forms/wdgpaintopsettings.ui:224
+#: ui/forms/wdgpaintopsettings.ui:245
 #, fuzzy
 msgid "Default preset"
 msgstr "Trawsnewid yr haen gyfredol"
 
 #. i18n: ectx: property (text), widget (QCheckBox, dirtyPresetCheckBox)
-#: ui/forms/wdgpaintopsettings.ui:237
+#: ui/forms/wdgpaintopsettings.ui:258
 msgid "Temporarily Save Tweaks To Presets"
 msgstr ""
 
+#. i18n: ectx: property (toolTip), widget (QCheckBox, eraserBrushSizeCheckBox)
+#: ui/forms/wdgpaintopsettings.ui:274
+msgid "Erase mode will use a separate brush size"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QCheckBox, eraserBrushSizeCheckBox)
-#: ui/forms/wdgpaintopsettings.ui:253
+#: ui/forms/wdgpaintopsettings.ui:277
 msgid "Eraser switch size"
 msgstr ""
 
@@ -15815,6 +15837,10 @@ msgstr ""
 #| msgid "Colors"
 msgid "&Close"
 msgstr "Lliwiau"
+
+#, fuzzy
+#~ msgid "Opacity Dynamics"
+#~ msgstr "Didreiddiad:"
 
 #, fuzzy
 #~ msgctxt ""
