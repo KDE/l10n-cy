@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdesdk/umbrello.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-12-22 01:56+0000\n"
+"POT-Creation-Date: 2014-12-23 01:57+0000\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -86,7 +86,7 @@ msgstr ""
 msgid "Dependency"
 msgstr "Dibyniaeth"
 
-#: basictypes.cpp:335 worktoolbar.cpp:316
+#: basictypes.cpp:335 widgets/widgetbase.cpp:1013 worktoolbar.cpp:316
 msgid "Association"
 msgstr "Cyd"
 
@@ -138,7 +138,8 @@ msgstr ""
 msgid "State Transition"
 msgstr ""
 
-#: basictypes.cpp:361 dialogs/activitydialog.cpp:137 worktoolbar.cpp:358
+#: basictypes.cpp:361 dialogs/activitydialog.cpp:137
+#: widgets/widgetbase.cpp:1004 worktoolbar.cpp:358
 msgid "Activity"
 msgstr ""
 
@@ -719,9 +720,9 @@ msgstr ""
 #: dialogs/pages/associationgeneralpage.cpp:82
 #: dialogs/pages/associationrolepage.cpp:91
 #: dialogs/pages/associationrolepage.cpp:92
-#: dialogs/pages/classgeneralpage.cpp:186
+#: dialogs/pages/classgeneralpage.cpp:141
+#: dialogs/pages/classgeneralpage.cpp:203
 #: dialogs/pages/classgeneralpage.cpp:248
-#: dialogs/pages/classgeneralpage.cpp:301
 #: dialogs/pages/classifierlistpage.cpp:218
 #: dialogs/pages/diagrampropertiespage.ui:257
 #: dialogs/pages/umlrolepropertiesbase.ui:140
@@ -1278,6 +1279,7 @@ msgstr "Ymgychwyn"
 
 #. i18n: ectx: property (text), widget (QTableWidget, ui_tableWidgetStatus)
 #: codegenwizard/codegenstatuspage.ui:40 codeimpwizard/codeimpstatuspage.ui:54
+#: widgets/widgetbase.cpp:1028
 msgid "Class"
 msgstr "Dosbarth"
 
@@ -2312,145 +2314,62 @@ msgstr ""
 msgid "Show export layout in diagram context menu"
 msgstr ""
 
-#: dialogs/pages/classgeneralpage.cpp:74
-msgid "Class &name:"
-msgstr ""
-
-#: dialogs/pages/classgeneralpage.cpp:77
-#, fuzzy
-#| msgid "Enter name:"
-msgid "Actor &name:"
-msgstr "Rhowch enw:"
-
-#: dialogs/pages/classgeneralpage.cpp:80
-#, fuzzy
-#| msgid "Package"
-msgid "Package &name:"
-msgstr "Pecyn"
-
-#: dialogs/pages/classgeneralpage.cpp:83
-#, fuzzy
-#| msgid "Package"
-msgid "Use case &name:"
-msgstr "Pecyn"
-
-#: dialogs/pages/classgeneralpage.cpp:86
-#, fuzzy
-#| msgid "Enter name:"
-msgid "Interface &name:"
-msgstr "Rhowch enw:"
-
-#: dialogs/pages/classgeneralpage.cpp:89
-#, fuzzy
-msgid "Component &name:"
-msgstr "Rhowch enw:"
-
-#: dialogs/pages/classgeneralpage.cpp:92
-#, fuzzy
-#| msgid "Enter name:"
-msgid "Port &name:"
-msgstr "Rhowch enw:"
-
-#: dialogs/pages/classgeneralpage.cpp:95
-#, fuzzy
-#| msgid "Enter name:"
-msgid "Node &name:"
-msgstr "Rhowch enw:"
-
-#: dialogs/pages/classgeneralpage.cpp:98
-#, fuzzy
-msgid "Artifact &name:"
-msgstr "Rhowch enw:"
-
-#: dialogs/pages/classgeneralpage.cpp:101
-#, fuzzy
-msgid "Enum &name:"
-msgstr "Rhowch enw:"
-
-#: dialogs/pages/classgeneralpage.cpp:104
-#, fuzzy
-msgid "Datatype &name:"
-msgstr "Rhowch enw:"
-
-#: dialogs/pages/classgeneralpage.cpp:107
-#, fuzzy
-msgid "Entity &name:"
-msgstr "Rhowch enw:"
-
-#: dialogs/pages/classgeneralpage.cpp:110
-#, fuzzy
-#| msgid "Enter name:"
-msgid "Stereotype &name:"
-msgstr "Rhowch enw:"
-
-#: dialogs/pages/classgeneralpage.cpp:138
+#: dialogs/pages/classgeneralpage.cpp:93
 msgid "Reference:"
 msgstr ""
 
-#: dialogs/pages/classgeneralpage.cpp:154
+#: dialogs/pages/classgeneralpage.cpp:109
 msgid "A&bstract class"
 msgstr ""
 
-#: dialogs/pages/classgeneralpage.cpp:156
+#: dialogs/pages/classgeneralpage.cpp:111
 msgid "A&bstract use case"
 msgstr ""
 
-#: dialogs/pages/classgeneralpage.cpp:165
+#: dialogs/pages/classgeneralpage.cpp:120
 #, fuzzy
 #| msgid "&Executable"
 msgctxt "component is executable"
 msgid "&Executable"
 msgstr "&Gweithredadwyn"
 
-#: dialogs/pages/classgeneralpage.cpp:221
+#: dialogs/pages/classgeneralpage.cpp:176
 #, fuzzy
 #| msgid "Class"
 msgid "Class name:"
 msgstr "Dosbarth"
 
-#: dialogs/pages/classgeneralpage.cpp:224
-#: dialogs/pages/classgeneralpage.cpp:293
+#: dialogs/pages/classgeneralpage.cpp:179
+#: dialogs/pages/classgeneralpage.cpp:240
 #, fuzzy
 #| msgid "Enter name:"
 msgid "Instance name:"
 msgstr "Rhowch enw:"
 
-#: dialogs/pages/classgeneralpage.cpp:229
+#: dialogs/pages/classgeneralpage.cpp:184
 msgid "Draw as actor"
 msgstr ""
 
-#: dialogs/pages/classgeneralpage.cpp:234
+#: dialogs/pages/classgeneralpage.cpp:189
 msgid "Multiple instance"
 msgstr ""
 
-#: dialogs/pages/classgeneralpage.cpp:240
+#: dialogs/pages/classgeneralpage.cpp:195
 msgid "Show destruction"
 msgstr ""
 
-#: dialogs/pages/classgeneralpage.cpp:280
-#, fuzzy
-#| msgid "Enter name:"
-msgid "Component name:"
-msgstr "Rhowch enw:"
-
-#: dialogs/pages/classgeneralpage.cpp:282
-#, fuzzy
-#| msgid "Enter name:"
-msgid "Node name:"
-msgstr "Rhowch enw:"
-
-#: dialogs/pages/classgeneralpage.cpp:339
-#: dialogs/pages/classgeneralpage.cpp:372
-#: dialogs/pages/classgeneralpage.cpp:385
+#: dialogs/pages/classgeneralpage.cpp:286
+#: dialogs/pages/classgeneralpage.cpp:319
+#: dialogs/pages/classgeneralpage.cpp:332
 msgid ""
 "The name you have chosen\n"
 "is already being used.\n"
 "The name has been reset."
 msgstr ""
 
-#: dialogs/pages/classgeneralpage.cpp:340
-#: dialogs/pages/classgeneralpage.cpp:373
-#: dialogs/pages/classgeneralpage.cpp:386
+#: dialogs/pages/classgeneralpage.cpp:287
+#: dialogs/pages/classgeneralpage.cpp:320
+#: dialogs/pages/classgeneralpage.cpp:333
 msgid "Name is Not Unique"
 msgstr ""
 
@@ -4049,19 +3968,19 @@ msgstr ""
 msgid "Subsystem"
 msgstr ""
 
-#: listpopupmenu.cpp:758 worktoolbar.cpp:340
+#: listpopupmenu.cpp:758 widgets/widgetbase.cpp:1025 worktoolbar.cpp:340
 msgid "Component"
 msgstr ""
 
-#: listpopupmenu.cpp:761
+#: listpopupmenu.cpp:761 widgets/widgetbase.cpp:1070
 msgid "Port"
 msgstr ""
 
-#: listpopupmenu.cpp:764 worktoolbar.cpp:342
+#: listpopupmenu.cpp:764 widgets/widgetbase.cpp:1010 worktoolbar.cpp:342
 msgid "Artifact"
 msgstr ""
 
-#: listpopupmenu.cpp:775 worktoolbar.cpp:341
+#: listpopupmenu.cpp:775 widgets/widgetbase.cpp:1052 worktoolbar.cpp:341
 msgid "Node"
 msgstr "Nôd"
 
@@ -4069,15 +3988,15 @@ msgstr "Nôd"
 msgid "Folder"
 msgstr "Plygell"
 
-#: listpopupmenu.cpp:791 worktoolbar.cpp:346
+#: listpopupmenu.cpp:791 widgets/widgetbase.cpp:1034 worktoolbar.cpp:346
 msgid "Entity"
 msgstr ""
 
-#: listpopupmenu.cpp:801 worktoolbar.cpp:369
+#: listpopupmenu.cpp:801 widgets/widgetbase.cpp:1019 worktoolbar.cpp:369
 msgid "Category"
 msgstr ""
 
-#: listpopupmenu.cpp:804 worktoolbar.cpp:322
+#: listpopupmenu.cpp:804 widgets/widgetbase.cpp:1007 worktoolbar.cpp:322
 msgid "Actor"
 msgstr ""
 
@@ -4103,19 +4022,20 @@ msgctxt "new class menu item"
 msgid "Class"
 msgstr "Dosbarth"
 
-#: listpopupmenu.cpp:926 worktoolbar.cpp:343
+#: listpopupmenu.cpp:926 widgets/widgetbase.cpp:1046 worktoolbar.cpp:343
 msgid "Interface"
 msgstr "Rhyngwyneb"
 
-#: listpopupmenu.cpp:927 worktoolbar.cpp:344
+#: listpopupmenu.cpp:927 widgets/widgetbase.cpp:1031 worktoolbar.cpp:344
 msgid "Datatype"
 msgstr ""
 
-#: listpopupmenu.cpp:928 worktoolbar.cpp:345
+#: listpopupmenu.cpp:928 widgets/widgetbase.cpp:1037 worktoolbar.cpp:345
 msgid "Enum"
 msgstr ""
 
-#: listpopupmenu.cpp:929 listpopupmenu.cpp:1138 worktoolbar.cpp:339
+#: listpopupmenu.cpp:929 listpopupmenu.cpp:1138 widgets/widgetbase.cpp:1064
+#: worktoolbar.cpp:339
 msgid "Package"
 msgstr "Pecyn"
 
@@ -6491,6 +6411,83 @@ msgstr ""
 msgid "Name Not Valid"
 msgstr ""
 
+#: umlobject.cpp:1092
+#, fuzzy
+#| msgid "Enter name:"
+msgid "Actor &name:"
+msgstr "Rhowch enw:"
+
+#: umlobject.cpp:1095
+#, fuzzy
+msgid "Artifact &name:"
+msgstr "Rhowch enw:"
+
+#: umlobject.cpp:1098
+msgid "Class &name:"
+msgstr ""
+
+#: umlobject.cpp:1101
+#, fuzzy
+msgid "Component &name:"
+msgstr "Rhowch enw:"
+
+#: umlobject.cpp:1104
+#, fuzzy
+msgid "Datatype &name:"
+msgstr "Rhowch enw:"
+
+#: umlobject.cpp:1107
+#, fuzzy
+msgid "Entity &name:"
+msgstr "Rhowch enw:"
+
+#: umlobject.cpp:1110
+#, fuzzy
+msgid "Enum &name:"
+msgstr "Rhowch enw:"
+
+#: umlobject.cpp:1113
+#, fuzzy
+#| msgid "Enter name:"
+msgid "Folder &name:"
+msgstr "Rhowch enw:"
+
+#: umlobject.cpp:1116
+#, fuzzy
+#| msgid "Enter name:"
+msgid "Interface &name:"
+msgstr "Rhowch enw:"
+
+#: umlobject.cpp:1119
+#, fuzzy
+#| msgid "Enter name:"
+msgid "Node &name:"
+msgstr "Rhowch enw:"
+
+#: umlobject.cpp:1122
+#, fuzzy
+#| msgid "Package"
+msgid "Package &name:"
+msgstr "Pecyn"
+
+#: umlobject.cpp:1125
+#, fuzzy
+#| msgid "Enter name:"
+msgid "Port &name:"
+msgstr "Rhowch enw:"
+
+#: umlobject.cpp:1128
+#, fuzzy
+#| msgid "Enter name:"
+msgid "Stereotype &name:"
+msgstr "Rhowch enw:"
+
+#: umlobject.cpp:1131
+#, fuzzy
+#| msgid "Package"
+msgid "Use case &name:"
+msgstr "Pecyn"
+
 #: umlscene.cpp:525
 #, kde-format
 msgid "Diagram: %2 Page %1"
@@ -6716,7 +6713,7 @@ msgstr "Enw"
 msgid "Enter operation name:"
 msgstr ""
 
-#: widgets/notewidget.cpp:183 worktoolbar.cpp:315
+#: widgets/notewidget.cpp:183 widgets/widgetbase.cpp:1073 worktoolbar.cpp:315
 msgid "Precondition"
 msgstr ""
 
@@ -6893,16 +6890,79 @@ msgid ""
 "axis. Right button click to cancel resize."
 msgstr ""
 
+#: widgets/widgetbase.cpp:1016 worktoolbar.cpp:321
+msgid "Box"
+msgstr ""
+
+#: widgets/widgetbase.cpp:1022
+#, fuzzy
+msgid "CombinedFragment"
+msgstr "Rhowch enw:"
+
+#: widgets/widgetbase.cpp:1040
+msgid "FloatingDashLine"
+msgstr ""
+
+#: widgets/widgetbase.cpp:1043
+#, fuzzy
+msgid "ForkJoin"
+msgstr "Plygell"
+
+#: widgets/widgetbase.cpp:1049
+msgid "Message"
+msgstr "Neges"
+
+#: widgets/widgetbase.cpp:1055 worktoolbar.cpp:320
+msgid "Note"
+msgstr "Noder"
+
+#: widgets/widgetbase.cpp:1058 worktoolbar.cpp:309
+msgid "Object"
+msgstr "Gwrthrych"
+
+#: widgets/widgetbase.cpp:1061
+#, fuzzy
+#| msgid "Object"
+msgid "ObjectNode"
+msgstr "Gwrthrych"
+
+#: widgets/widgetbase.cpp:1067 worktoolbar.cpp:362
+msgid "Pin"
+msgstr ""
+
+#: widgets/widgetbase.cpp:1076 worktoolbar.cpp:332
+#, fuzzy
+msgid "Region"
+msgstr "Parod."
+
+#: widgets/widgetbase.cpp:1079
+#, fuzzy
+#| msgid "Enter name:"
+msgid "Signal"
+msgstr "Rhowch enw:"
+
+#: widgets/widgetbase.cpp:1082
+#, fuzzy
+#| msgid "State"
+msgid "State"
+msgstr "Cyflwr"
+
+#: widgets/widgetbase.cpp:1085
+msgid "Text"
+msgstr ""
+
+#: widgets/widgetbase.cpp:1088
+#, fuzzy
+#| msgid "Create Folder"
+msgid "UseCase"
+msgstr "Creu Plygell"
+
 #: worktoolbar.cpp:308
 #, fuzzy
 #| msgid "Select"
 msgctxt "selection arrow"
 msgid "Select"
 msgstr "Dewis"
-
-#: worktoolbar.cpp:309
-msgid "Object"
-msgstr "Gwrthrych"
 
 #: worktoolbar.cpp:310 worktoolbar.cpp:364
 msgid "Synchronous Message"
@@ -6932,14 +6992,6 @@ msgstr ""
 msgid "Label"
 msgstr "Label"
 
-#: worktoolbar.cpp:320
-msgid "Note"
-msgstr "Noder"
-
-#: worktoolbar.cpp:321
-msgid "Box"
-msgstr ""
-
 #: worktoolbar.cpp:326
 msgid "Directional Association"
 msgstr ""
@@ -6955,11 +7007,6 @@ msgstr "Dogfenniaeth"
 msgctxt "UML class"
 msgid "Class"
 msgstr "Dosbarth"
-
-#: worktoolbar.cpp:332
-#, fuzzy
-msgid "Region"
-msgstr "Parod."
 
 #: worktoolbar.cpp:335
 msgid "Send signal"
@@ -7010,10 +7057,6 @@ msgstr "Cyflwr"
 msgid "Final Activity"
 msgstr ""
 
-#: worktoolbar.cpp:362
-msgid "Pin"
-msgstr ""
-
 #: worktoolbar.cpp:367
 #, fuzzy
 #| msgid "Object"
@@ -7023,6 +7066,16 @@ msgstr "Gwrthrych"
 #: worktoolbar.cpp:368
 msgid "Pre/Post condition"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Enter name:"
+#~ msgid "Component name:"
+#~ msgstr "Rhowch enw:"
+
+#, fuzzy
+#~| msgid "Enter name:"
+#~ msgid "Node name:"
+#~ msgstr "Rhowch enw:"
 
 #, fuzzy
 #~ msgctxt "font page name"
@@ -7085,9 +7138,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Form"
 #~ msgstr "Plygell"
-
-#~ msgid "Message"
-#~ msgstr "Neges"
 
 #, fuzzy
 #~| msgid "New"
