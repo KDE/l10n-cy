@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-02-15 09:05+0000\n"
+"POT-Creation-Date: 2015-02-16 09:01+0000\n"
 "PO-Revision-Date: 2004-01-07 21:14+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -613,6 +613,7 @@ msgstr "Cysylltau &dewisiedig"
 
 #: merge/manualmerge/mergecontactsdialog.cpp:54
 #: merge/searchduplicate/searchandmergecontactduplicatecontactdialog.cpp:74
+#: merge/widgets/noenoughcontactselectedwidget.cpp:27
 #, fuzzy
 #| msgid "You have to assign at least one column."
 msgid "You must select at least two elements."
@@ -623,13 +624,13 @@ msgstr "Rhaid i chi neilltuo o leiaf un golofn."
 msgid "You selected %1 and some item has not the same name"
 msgstr ""
 
-#: merge/manualmerge/mergecontactsdialog.cpp:96
+#: merge/manualmerge/mergecontactsdialog.cpp:101
 #, fuzzy
 #| msgid "Importing contacts"
 msgid "Error while merging contacts."
 msgstr "Mewnforio cysylltau"
 
-#: merge/manualmerge/mergecontactsdialog.cpp:96
+#: merge/manualmerge/mergecontactsdialog.cpp:101
 #, fuzzy
 msgid "Merge contact"
 msgstr "Golygydd Cyfuno Cysylltau"
@@ -661,17 +662,18 @@ msgstr ""
 msgid "Merged Contact"
 msgstr "Golygydd Cyfuno Cysylltau"
 
-#: merge/searchduplicate/resultduplicatetreewidget.cpp:28
-#, fuzzy
-#| msgid "Contains"
-msgid "Contacts"
-msgstr "Cynhwysa"
-
+#: merge/searchduplicate/mergecontactselectinformationtabwidget.cpp:62
 #: merge/searchduplicate/resultduplicatetreewidget.cpp:52
 #, fuzzy, kde-format
 #| msgid "&Selected contacts"
 msgid "Duplicate contact %1"
 msgstr "Cysylltau &dewisiedig"
+
+#: merge/searchduplicate/resultduplicatetreewidget.cpp:28
+#, fuzzy
+#| msgid "Contains"
+msgid "Contacts"
+msgstr "Cynhwysa"
 
 #: merge/searchduplicate/searchandmergecontactduplicatecontactdialog.cpp:56
 #, fuzzy
@@ -692,10 +694,27 @@ msgid "Select AddressBook:"
 msgstr "Llyfr Cyfeiriadau"
 
 #: merge/searchduplicate/searchduplicateresultwidget.cpp:80
+#: merge/widgets/mergecontactselectinformationscrollarea.cpp:52
 #, fuzzy
 #| msgid "Merge"
 msgid "Merge"
 msgstr "Cyfuno"
+
+#: merge/widgets/mergecontactloseinformationwarning.cpp:31
+msgid ""
+"Some information can be lost. Do you want to continue or customize what do "
+"you want to merge ?"
+msgstr ""
+
+#: merge/widgets/mergecontactloseinformationwarning.cpp:33
+#, fuzzy
+#| msgid "Customer"
+msgid "Customize"
+msgstr "Cwsmer"
+
+#: merge/widgets/mergecontactloseinformationwarning.cpp:38
+msgid "Automatic Merging"
+msgstr ""
 
 #: modelcolumnmanager.cpp:78
 msgid "Full Name"
@@ -3691,12 +3710,6 @@ msgstr ""
 #~ msgctxt "@item Contact category"
 #~ msgid "School"
 #~ msgstr "Ysgol"
-
-#, fuzzy
-#~| msgid "Customer"
-#~ msgctxt "@item Contact category"
-#~ msgid "Customer"
-#~ msgstr "Cwsmer"
 
 #, fuzzy
 #~| msgid "Friend"
