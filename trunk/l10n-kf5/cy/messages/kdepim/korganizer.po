@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-03-05 09:31+0000\n"
+"POT-Creation-Date: 2015-03-06 08:44+0000\n"
 "PO-Revision-Date: 2004-02-25 13:53+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -1352,16 +1352,16 @@ msgid ""
 "year. Press it to select the whole week.</p></qt>"
 msgstr ""
 
-#: exportwebdialog.cpp:54
+#: dialog/exportwebdialog.cpp:54
 msgid "Export Calendar as Web Page"
 msgstr "Allforio Calendr fel Tudalen Wê"
 
-#: exportwebdialog.cpp:57
+#: dialog/exportwebdialog.cpp:57
 #, fuzzy
 msgid "Export"
 msgstr "&Allforio"
 
-#: exportwebdialog.cpp:117
+#: dialog/exportwebdialog.cpp:117
 msgid ""
 "You are about to set all preferences to default values. All custom "
 "modifications will be lost."
@@ -1369,15 +1369,15 @@ msgstr ""
 "Rydych ar fin gosod yr holl werthoedd i'r gwerthoedd rhagosod. Collir pob "
 "addasiad."
 
-#: exportwebdialog.cpp:119
+#: dialog/exportwebdialog.cpp:119
 msgid "Setting Default Preferences"
 msgstr "Gosod Hoffiannau Rhagosod"
 
-#: exportwebdialog.cpp:120
+#: dialog/exportwebdialog.cpp:120
 msgid "Reset to Defaults"
 msgstr ""
 
-#: exportwebdialog.cpp:128
+#: dialog/exportwebdialog.cpp:128
 #, fuzzy
 #| msgid "General"
 msgctxt "general settings for html export"
@@ -1385,62 +1385,120 @@ msgid "General"
 msgstr "Cyffredinol"
 
 #. i18n: ectx: property (title), widget (QGroupBox, dateRangeGroup)
-#: exportwebdialog.cpp:132 ui/searchdialog_base.ui:174
+#: dialog/exportwebdialog.cpp:132 ui/searchdialog_base.ui:174
 msgid "Date Range"
 msgstr "Amrediad Dyddiadau"
 
-#: exportwebdialog.cpp:144
+#: dialog/exportwebdialog.cpp:144
 msgid "View Type"
 msgstr "Gweld Math"
 
-#: exportwebdialog.cpp:163
+#: dialog/exportwebdialog.cpp:163
 msgid "Destination"
 msgstr "Cyrchfan"
 
-#: exportwebdialog.cpp:186
+#: dialog/exportwebdialog.cpp:186
 #, fuzzy
 msgid "To-dos"
 msgstr "I-&Wneudau"
 
-#: exportwebdialog.cpp:219
+#: dialog/exportwebdialog.cpp:219
 msgid "Events"
 msgstr "Digwyddiadau"
 
-#: filtereditdialog.cpp:47
+#: dialog/filtereditdialog.cpp:47
 #, fuzzy
 #| msgid "Edit Calendar Filters"
 msgctxt "@title::window"
 msgid "Edit Calendar Filters"
 msgstr "Golygu Hidlennau Calendr"
 
-#: filtereditdialog.cpp:104
+#: dialog/filtereditdialog.cpp:104
 msgctxt "@info:whatsthis"
 msgid "Press this button to define a new filter."
 msgstr ""
 
-#: filtereditdialog.cpp:107
+#: dialog/filtereditdialog.cpp:107
 msgctxt "@info:whatsthis"
 msgid "Press this button to remove the currently active filter."
 msgstr ""
 
-#: filtereditdialog.cpp:239
+#: dialog/filtereditdialog.cpp:239
 #, fuzzy, kde-format
 #| msgid "New Filter %1"
 msgctxt "@label default filter name"
 msgid "New Filter %1"
 msgstr "Hidlen newydd %1"
 
-#: filtereditdialog.cpp:258
+#: dialog/filtereditdialog.cpp:258
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Do you really want to permanently remove the filter \"%1\"?"
 msgstr "<qt>A ydych yn wir eisiau dileu'r adnodd? <b>%1</b>?</qt>"
 
-#: filtereditdialog.cpp:259
+#: dialog/filtereditdialog.cpp:259
 #, fuzzy
 msgctxt "@title:window"
 msgid "Delete Filter?"
 msgstr "Dileu Hen Ddigwyddiadau"
+
+#: dialog/koeventviewerdialog.cpp:47
+msgid "Event Viewer"
+msgstr "Gwelydd Digwyddiadau"
+
+#: dialog/koeventviewerdialog.cpp:58
+#, fuzzy
+#| msgid "Edit..."
+msgid "Edit..."
+msgstr "Golygu..."
+
+#: dialog/koeventviewerdialog.cpp:59
+#, fuzzy
+msgid "Show in Context"
+msgstr "Dangos y dewisiad yn unig"
+
+#: dialog/searchdialog.cpp:52
+#, fuzzy
+#| msgid "New Calendar"
+msgid "Search Calendar"
+msgstr "Calendr Newydd"
+
+#: dialog/searchdialog.cpp:82
+#, fuzzy
+msgctxt "search in calendar"
+msgid "&Search"
+msgstr "Chwilio Mewn"
+
+#: dialog/searchdialog.cpp:83
+msgid "Start searching"
+msgstr ""
+
+#: dialog/searchdialog.cpp:121
+msgid ""
+"Invalid search expression, cannot perform the search. Please enter a search "
+"expression using the wildcard characters '*' and '?' where needed."
+msgstr ""
+"Mynegiad chilio annilys, methu gwneud y chwiliad.  Mewnosodwch fynegiad "
+"chwilio gan ddefnyddio'r nodau-chwilio '*' a '?' lle bo angen."
+
+#: dialog/searchdialog.cpp:133
+#, fuzzy
+#| msgid "No events were found matching your search expression."
+msgid "No items were found that match your search pattern."
+msgstr "Ni chanfuwyd digwyddiadau sy'n cydweddu eich mynediad chwilio."
+
+#: dialog/searchdialog.cpp:134
+#, fuzzy
+#| msgid "Search In"
+msgid "Search Results"
+msgstr "Chwilio Mewn"
+
+#: dialog/searchdialog.cpp:137
+#, fuzzy, kde-format
+msgid "%1 item"
+msgid_plural "%1 items"
+msgstr[0] "1 munud"
+msgstr[1] "%1 o funudau"
 
 #: htmlexportjob.cpp:159
 #, fuzzy
@@ -2286,35 +2344,6 @@ msgstr "Enw defnyddiwr:"
 msgid "Description:"
 msgstr "&Disgrifiad"
 
-#: kdatenavigator.cpp:200
-#, kde-format
-msgctxt "start/end week number of line in date picker"
-msgid "%1/%2"
-msgstr ""
-
-#: kdatenavigator.cpp:206
-#, fuzzy, kde-format
-#| msgid "Print week &numbers"
-msgid "Scroll to week number %1"
-msgstr "Argra&ffu rhifau wythnos"
-
-#: kdatenavigator.cpp:208
-#, kde-format
-msgid ""
-"Click here to scroll the display to week number %1 of the currently "
-"displayed year."
-msgstr ""
-
-#: kdatenavigator.cpp:257
-#, kde-format
-msgid "%1"
-msgstr "%1"
-
-#: kdatenavigator.cpp:259
-#, kde-format
-msgid "A column header of the %1 dates in the month."
-msgstr ""
-
 #: kitemiconcheckcombo.cpp:40
 #, fuzzy
 #| msgid "Calendar"
@@ -2463,21 +2492,6 @@ msgstr "Rhestri digwyddiadau'r diwrnod cyfredol"
 #| msgid "&iCalendar..."
 msgid "Send as iCalendar..."
 msgstr "&iCalendr..."
-
-#: koeventviewerdialog.cpp:47
-msgid "Event Viewer"
-msgstr "Gwelydd Digwyddiadau"
-
-#: koeventviewerdialog.cpp:58
-#, fuzzy
-#| msgid "Edit..."
-msgid "Edit..."
-msgstr "Golygu..."
-
-#: koeventviewerdialog.cpp:59
-#, fuzzy
-msgid "Show in Context"
-msgstr "Dangos y dewisiad yn unig"
 
 #: kohelper.cpp:73
 #, fuzzy, kde-format
@@ -4732,49 +4746,6 @@ msgctxt "Qt date format used by the localized Wikipedia"
 msgid "MMMM_yyyy"
 msgstr ""
 
-#: searchdialog.cpp:52
-#, fuzzy
-#| msgid "New Calendar"
-msgid "Search Calendar"
-msgstr "Calendr Newydd"
-
-#: searchdialog.cpp:82
-#, fuzzy
-msgctxt "search in calendar"
-msgid "&Search"
-msgstr "Chwilio Mewn"
-
-#: searchdialog.cpp:83
-msgid "Start searching"
-msgstr ""
-
-#: searchdialog.cpp:121
-msgid ""
-"Invalid search expression, cannot perform the search. Please enter a search "
-"expression using the wildcard characters '*' and '?' where needed."
-msgstr ""
-"Mynegiad chilio annilys, methu gwneud y chwiliad.  Mewnosodwch fynegiad "
-"chwilio gan ddefnyddio'r nodau-chwilio '*' a '?' lle bo angen."
-
-#: searchdialog.cpp:133
-#, fuzzy
-#| msgid "No events were found matching your search expression."
-msgid "No items were found that match your search pattern."
-msgstr "Ni chanfuwyd digwyddiadau sy'n cydweddu eich mynediad chwilio."
-
-#: searchdialog.cpp:134
-#, fuzzy
-#| msgid "Search In"
-msgid "Search Results"
-msgstr "Chwilio Mewn"
-
-#: searchdialog.cpp:137
-#, fuzzy, kde-format
-msgid "%1 item"
-msgid_plural "%1 items"
-msgstr[0] "1 munud"
-msgstr[1] "%1 o funudau"
-
 #. i18n: ectx: @info:tipoftheday
 #: tips:2
 #, fuzzy
@@ -5544,6 +5515,35 @@ msgstr "&Teitl:"
 #| msgid "New Calendar"
 msgid "Selected Calendars"
 msgstr "Calendr Newydd"
+
+#: widgets/kdatenavigator.cpp:200
+#, kde-format
+msgctxt "start/end week number of line in date picker"
+msgid "%1/%2"
+msgstr ""
+
+#: widgets/kdatenavigator.cpp:206
+#, fuzzy, kde-format
+#| msgid "Print week &numbers"
+msgid "Scroll to week number %1"
+msgstr "Argra&ffu rhifau wythnos"
+
+#: widgets/kdatenavigator.cpp:208
+#, kde-format
+msgid ""
+"Click here to scroll the display to week number %1 of the currently "
+"displayed year."
+msgstr ""
+
+#: widgets/kdatenavigator.cpp:257
+#, kde-format
+msgid "%1"
+msgstr "%1"
+
+#: widgets/kdatenavigator.cpp:259
+#, kde-format
+msgid "A column header of the %1 dates in the month."
+msgstr ""
 
 #~ msgid "KOrgPlugins"
 #~ msgstr "KOrgPlugins"
