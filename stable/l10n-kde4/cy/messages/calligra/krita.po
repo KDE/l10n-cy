@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-06-28 05:42+0000\n"
+"POT-Creation-Date: 2015-06-29 05:57+0000\n"
 "PO-Revision-Date: 2004-07-06 17:18+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -4459,12 +4459,20 @@ msgid "&Channel:"
 msgstr "&Sianel:"
 
 #. i18n: ectx: property (text), widget (QPushButton, zoomIn)
+#. i18n: ectx: property (text), widget (QPushButton, pb_more_contrast)
+#. i18n: ectx: property (text), widget (QPushButton, pb_more_brightness)
 #: plugins/extensions/histogram/wdghistogram.ui:141
+#: plugins/filters/colorsfilters/wdg_brightness_contrast.ui:241
+#: plugins/filters/colorsfilters/wdg_brightness_contrast.ui:261
 msgid "+"
 msgstr "+"
 
 #. i18n: ectx: property (text), widget (QPushButton, zoomOut)
+#. i18n: ectx: property (text), widget (QPushButton, pb_less_contrast)
+#. i18n: ectx: property (text), widget (QPushButton, pb_less_brightness)
 #: plugins/extensions/histogram/wdghistogram.ui:154
+#: plugins/filters/colorsfilters/wdg_brightness_contrast.ui:221
+#: plugins/filters/colorsfilters/wdg_brightness_contrast.ui:271
 msgid "-"
 msgstr "-"
 
@@ -6573,7 +6581,7 @@ msgstr "Trothwy : "
 msgid "Color Picker:"
 msgstr "Dewisydd Lliw"
 
-#: plugins/filters/colorsfilters/colorsfilters.cpp:87
+#: plugins/filters/colorsfilters/colorsfilters.cpp:89
 #, fuzzy
 msgid "&Auto Contrast"
 msgstr "Cyferbyniad:"
@@ -6582,6 +6590,15 @@ msgstr "Cyferbyniad:"
 #, fuzzy
 msgid "Auto Contrast"
 msgstr "Cyferbyniad:"
+
+#: plugins/filters/colorsfilters/kis_brightness_contrast_filter.cpp:163
+#, fuzzy
+msgid "&Brightness/Contrast curve..."
+msgstr "&Gloywder / Cyferbyniad"
+
+#: plugins/filters/colorsfilters/kis_brightness_contrast_filter.h:92
+msgid "Brightness / Contrast"
+msgstr "Disgleirdeb / Cyferbyniad"
 
 #: plugins/filters/colorsfilters/kis_color_balance_filter.cpp:27
 #, fuzzy
@@ -6635,6 +6652,24 @@ msgstr "Addasiad &Lliw..."
 #, fuzzy
 msgid "Color Adjustment"
 msgstr "Addasiad &Lliw..."
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgPerChannel)
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgBrightnessContrast)
+#: plugins/filters/colorsfilters/wdg_brightness_contrast.ui:20
+#: plugins/filters/colorsfilters/wdg_perchannel.ui:14
+#, fuzzy
+msgid "BrightnessCon"
+msgstr "Disgleirdeb"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabelBrightness)
+#: plugins/filters/colorsfilters/wdg_brightness_contrast.ui:231
+msgid "Brightness"
+msgstr "Disgleirdeb"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabelContrast)
+#: plugins/filters/colorsfilters/wdg_brightness_contrast.ui:251
+msgid "Contrast"
+msgstr "Cyferbyniant"
 
 #. i18n: ectx: property (text), widget (QPushButton, pushResetShadows)
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:62
@@ -6794,12 +6829,6 @@ msgstr "Dirlawnder"
 #| msgid "Saturation"
 msgid "Hue/Saturation/Lightness"
 msgstr "Dirlawnder"
-
-#. i18n: ectx: property (windowTitle), widget (QWidget, WdgPerChannel)
-#: plugins/filters/colorsfilters/wdg_perchannel.ui:14
-#, fuzzy
-msgid "BrightnessCon"
-msgstr "Disgleirdeb"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #: plugins/filters/colorsfilters/wdg_perchannel.ui:201
@@ -20574,19 +20603,6 @@ msgstr "Dewisydd Lliw"
 #~| msgid "Selection"
 #~ msgid "Path Selection"
 #~ msgstr "Detholiad"
-
-#, fuzzy
-#~ msgid "&Brightness/Contrast curve..."
-#~ msgstr "&Gloywder / Cyferbyniad"
-
-#~ msgid "Brightness / Contrast"
-#~ msgstr "Disgleirdeb / Cyferbyniad"
-
-#~ msgid "Brightness"
-#~ msgstr "Disgleirdeb"
-
-#~ msgid "Contrast"
-#~ msgstr "Cyferbyniant"
 
 #, fuzzy
 #~ msgctxt "horizontal resolution"
