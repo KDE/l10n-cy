@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-09-08 10:44+0000\n"
+"POT-Creation-Date: 2015-09-09 08:20+0000\n"
 "PO-Revision-Date: 2004-02-25 13:47+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -537,6 +537,17 @@ msgstr ""
 msgid "Configure..."
 msgstr "&Furffweddu KMail..."
 
+#: header/allheaderstyleplugin/allheaderstyleinterface.cpp:36
+#: viewer/viewer_p.cpp:1627
+msgctxt "View->headers->"
+msgid "&All Headers"
+msgstr "P&ob Penawd"
+
+#: header/allheaderstyleplugin/allheaderstyleinterface.cpp:39
+#: viewer/viewer_p.cpp:1630
+msgid "Show all message headers"
+msgstr "Dangos pob penawd y negeseuon"
+
 #: header/briefheaderstyle.cpp:99 header/customheaderstyle.cpp:92
 #: header/enterpriseheaderstyle.cpp:118 header/fancyheaderstyle.cpp:128
 #: header/plainheaderstyle.cpp:92
@@ -554,6 +565,17 @@ msgstr "CC:"
 #: header/plainheaderstyle.cpp:110
 msgid "BCC: "
 msgstr "BCC:"
+
+#: header/briefheaderstyleplugin/briefheaderstyleinterface.cpp:37
+#: viewer/viewer_p.cpp:1606
+msgctxt "View->headers->"
+msgid "&Brief Headers"
+msgstr "Penawdau &Byr"
+
+#: header/briefheaderstyleplugin/briefheaderstyleinterface.cpp:40
+#: viewer/viewer_p.cpp:1609
+msgid "Show brief list of message headers"
+msgstr "Dangos rhestr fer o benawdau"
 
 #: header/customheadersettingwidget.cpp:40
 msgid "Only show the headers listed below"
@@ -607,11 +629,43 @@ msgstr "Ateb i:"
 msgid "%1: "
 msgstr ""
 
+#: header/customheaderstyleplugin/customheaderstyleinterface.cpp:37
+#: viewer/viewer_p.cpp:1634
+#, fuzzy
+#| msgctxt "View->headers->"
+#| msgid "&Long Headers"
+msgctxt "View->headers->"
+msgid "&Custom Headers"
+msgstr "Penawdau &Hir"
+
+#: header/customheaderstyleplugin/customheaderstyleinterface.cpp:40
+#: viewer/viewer_p.cpp:1637
+#, fuzzy
+#| msgid "Show long list of message headers"
+msgid "Show custom headers"
+msgstr "Dangos rhestr hir o benawdau"
+
 #: header/enterpriseheaderstyle.cpp:133
 #, fuzzy
 #| msgid "To: "
 msgid "To: "
 msgstr "I:"
+
+#: header/enterpriseheaderstyleplugin/enterpriseheaderstyleinterface.cpp:36
+#: viewer/viewer_p.cpp:1592
+#, fuzzy
+#| msgctxt "View->headers->"
+#| msgid "&Brief Headers"
+msgctxt "View->headers->"
+msgid "&Enterprise Headers"
+msgstr "Penawdau &Byr"
+
+#: header/enterpriseheaderstyleplugin/enterpriseheaderstyleinterface.cpp:40
+#: viewer/viewer_p.cpp:1595
+#, fuzzy
+#| msgid "Show the list of headers in a fancy format"
+msgid "Show the list of headers in Enterprise style"
+msgstr "Dangos y rhestr penawdau mewn fformat pert"
 
 #: header/fancyheaderstyle.cpp:123
 #, kde-format
@@ -653,6 +707,17 @@ msgstr "I:"
 #, fuzzy
 msgid "Spam Status:"
 msgstr "Cyflwr:"
+
+#: header/fancyheaderstyleplugin/fancyheaderstyleinterface.cpp:37
+#: viewer/viewer_p.cpp:1599
+msgctxt "View->headers->"
+msgid "&Fancy Headers"
+msgstr "Penawdau &Pert"
+
+#: header/fancyheaderstyleplugin/fancyheaderstyleinterface.cpp:40
+#: viewer/viewer_p.cpp:1602
+msgid "Show the list of headers in a fancy format"
+msgstr "Dangos y rhestr penawdau mewn fformat pert"
 
 #: header/grantleeheaderformatter.cpp:83
 #, fuzzy, kde-format
@@ -787,6 +852,37 @@ msgid ""
 "Full report:\n"
 "%2"
 msgstr ""
+
+#: header/headerstylemenu.cpp:58 viewer/viewer_p.cpp:1587
+msgctxt "View->"
+msgid "&Headers"
+msgstr "&Penawdau"
+
+#: header/headerstylemenu.cpp:60 viewer/viewer_p.cpp:1589
+msgid "Choose display style of message headers"
+msgstr "Dewis arddull dangos penawdau'r negeseuon"
+
+#: header/longheaderstyleplugin/longheaderstyleinterface.cpp:37
+#: viewer/viewer_p.cpp:1620
+msgctxt "View->headers->"
+msgid "&Long Headers"
+msgstr "Penawdau &Hir"
+
+#: header/longheaderstyleplugin/longheaderstyleinterface.cpp:40
+#: viewer/viewer_p.cpp:1623
+msgid "Show long list of message headers"
+msgstr "Dangos rhestr hir o benawdau"
+
+#: header/standardsheaderstyleplugin/standardsheaderstyleinterface.cpp:37
+#: viewer/viewer_p.cpp:1613
+msgctxt "View->headers->"
+msgid "&Standard Headers"
+msgstr "Penawdau &Safonol"
+
+#: header/standardsheaderstyleplugin/standardsheaderstyleinterface.cpp:40
+#: viewer/viewer_p.cpp:1616
+msgid "Show standard list of message headers"
+msgstr "Dangos rhestr safonol o benawdau"
 
 #: job/attachmenteditjob.cpp:46
 msgid ""
@@ -2094,13 +2190,13 @@ msgstr "Diwedd y neges cêl-ysgrifedig"
 msgid "End of encapsulated message"
 msgstr "Diwedd y neges ymgrynhoëdig"
 
-#: viewer/pluginloaderbase.cpp:89
+#: viewer/pluginloaderbase.cpp:90
 #, fuzzy
 #| msgid "Unread Column"
 msgid "Unnamed plugin"
 msgstr "Colofn heb ei Darllen"
 
-#: viewer/pluginloaderbase.cpp:95
+#: viewer/pluginloaderbase.cpp:96
 #, fuzzy
 #| msgid "Not available"
 msgid "No description available"
@@ -2363,88 +2459,6 @@ msgstr "&Creu Hidlen"
 #, kde-format
 msgid "View Attachment: %1"
 msgstr "Gweld Atodiad: %1"
-
-#: viewer/viewer_p.cpp:1587
-msgctxt "View->"
-msgid "&Headers"
-msgstr "&Penawdau"
-
-#: viewer/viewer_p.cpp:1589
-msgid "Choose display style of message headers"
-msgstr "Dewis arddull dangos penawdau'r negeseuon"
-
-#: viewer/viewer_p.cpp:1592
-#, fuzzy
-#| msgctxt "View->headers->"
-#| msgid "&Brief Headers"
-msgctxt "View->headers->"
-msgid "&Enterprise Headers"
-msgstr "Penawdau &Byr"
-
-#: viewer/viewer_p.cpp:1595
-#, fuzzy
-#| msgid "Show the list of headers in a fancy format"
-msgid "Show the list of headers in Enterprise style"
-msgstr "Dangos y rhestr penawdau mewn fformat pert"
-
-#: viewer/viewer_p.cpp:1599
-msgctxt "View->headers->"
-msgid "&Fancy Headers"
-msgstr "Penawdau &Pert"
-
-#: viewer/viewer_p.cpp:1602
-msgid "Show the list of headers in a fancy format"
-msgstr "Dangos y rhestr penawdau mewn fformat pert"
-
-#: viewer/viewer_p.cpp:1606
-msgctxt "View->headers->"
-msgid "&Brief Headers"
-msgstr "Penawdau &Byr"
-
-#: viewer/viewer_p.cpp:1609
-msgid "Show brief list of message headers"
-msgstr "Dangos rhestr fer o benawdau"
-
-#: viewer/viewer_p.cpp:1613
-msgctxt "View->headers->"
-msgid "&Standard Headers"
-msgstr "Penawdau &Safonol"
-
-#: viewer/viewer_p.cpp:1616
-msgid "Show standard list of message headers"
-msgstr "Dangos rhestr safonol o benawdau"
-
-#: viewer/viewer_p.cpp:1620
-msgctxt "View->headers->"
-msgid "&Long Headers"
-msgstr "Penawdau &Hir"
-
-#: viewer/viewer_p.cpp:1623
-msgid "Show long list of message headers"
-msgstr "Dangos rhestr hir o benawdau"
-
-#: viewer/viewer_p.cpp:1627
-msgctxt "View->headers->"
-msgid "&All Headers"
-msgstr "P&ob Penawd"
-
-#: viewer/viewer_p.cpp:1630
-msgid "Show all message headers"
-msgstr "Dangos pob penawd y negeseuon"
-
-#: viewer/viewer_p.cpp:1634
-#, fuzzy
-#| msgctxt "View->headers->"
-#| msgid "&Long Headers"
-msgctxt "View->headers->"
-msgid "&Custom Headers"
-msgstr "Penawdau &Hir"
-
-#: viewer/viewer_p.cpp:1637
-#, fuzzy
-#| msgid "Show long list of message headers"
-msgid "Show custom headers"
-msgstr "Dangos rhestr hir o benawdau"
 
 #: viewer/viewer_p.cpp:1645
 msgctxt "View->"
