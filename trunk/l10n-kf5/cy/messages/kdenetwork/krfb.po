@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krfb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-04-16 01:46+0000\n"
+"POT-Creation-Date: 2015-10-16 08:14+0000\n"
 "PO-Revision-Date: 2004-01-06 16:42+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -29,93 +29,95 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kyfieithu@dotmon.com"
 
-#: connectiondialog.cpp:35
+#: connectiondialog.cpp:39
 #, fuzzy
 msgid "New Connection"
 msgstr "&Derbyn Cysylltiad"
 
-#: connectiondialog.cpp:48
+#: connectiondialog.cpp:61
 msgid "Accept Connection"
 msgstr "Derbyn Cysylltiad"
 
-#: connectiondialog.cpp:52
+#: connectiondialog.cpp:65
 msgid "Refuse Connection"
 msgstr "Gwrthod Cysylltiad"
 
-#: connectiondialog.cpp:81
-#, fuzzy, kde-format
-#| msgid ""
-#| "Somebody is requesting a connection to your computer. Granting this will "
-#| "allow the remote user to watch your desktop. "
-msgid ""
-"You have requested to share your desktop with %1. If you proceed, you will "
-"allow the remote user to watch your desktop."
-msgstr ""
-"Mae rhywun yn ceisio cysylltiad i'ch cyfrifiadur. Bydd caniatáu hyn yn "
-"galluogi i'r defnyddiwr pell wylio'ch penbwrdd."
-
-#: invitationsrfbclient.cpp:69
+#: invitationsrfbclient.cpp:73
 #, fuzzy, kde-format
 #| msgid "Accepted uninvited connection from %1"
 msgid "Accepted connection from %1"
 msgstr "Derbynwyd cysylltiad anwahoddedig o %1"
 
-#: invitationsrfbclient.cpp:75 tubesrfbclient.cpp:64
+#: invitationsrfbclient.cpp:79
 #, kde-format
 msgid "Received connection from %1, on hold (waiting for confirmation)"
 msgstr "Derbynwyd cysylltiad o %1, wedi' ddal (yn aros am wiriad)"
 
-#: invitationsrfbserver.cpp:46
+#: invitationsrfbserver.cpp:47
 #, kde-format
 msgid "%1@%2 (shared desktop)"
 msgstr "%1@%2 (Penbwrdd wedi'i Rannu)"
 
-#. i18n: ectx: label, entry (useDefaultPort), group (TCP)
+#. i18n: ectx: label, entry (startMinimized), group (MainWindow)
 #: krfb.kcfg:8
+msgid "Start minimized"
+msgstr ""
+
+#. i18n: ectx: label, entry (useDefaultPort), group (TCP)
+#: krfb.kcfg:14
 msgid "Use the default port for VNC (5900)"
 msgstr ""
 
 #. i18n: ectx: label, entry (port), group (TCP)
-#: krfb.kcfg:12
+#: krfb.kcfg:18
 msgid "This is the port on which krfb will listen."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_publishService)
 #. i18n: ectx: label, entry (publishService), group (TCP)
-#: krfb.kcfg:16 ui/configtcp.ui:22
+#: krfb.kcfg:22 ui/configtcp.ui:22
 msgid "Announce the service on the local network"
 msgstr ""
 
+#. i18n: ectx: label, entry (noWallet), group (Security)
+#: krfb.kcfg:28
+msgid "Do not store passwords in KWallet"
+msgstr ""
+
 #. i18n: ectx: label, entry (allowDesktopControl), group (Security)
-#: krfb.kcfg:22
+#: krfb.kcfg:32
 #, fuzzy
 #| msgid "Allow remote user to &control keyboard and mouse"
 msgid "Allow remote connections to manage the desktop."
 msgstr "Caniatáu i'r defnyddiwr pell &reoli'r bysellfwrdd a'r lygoden"
 
 #. i18n: ectx: label, entry (allowUnattendedAccess), group (Security)
-#: krfb.kcfg:26
+#: krfb.kcfg:36
 msgid "Allow connections without an invitation."
 msgstr ""
 
 #. i18n: ectx: label, entry (unattendedAccessPassword), group (Security)
 #. i18n: ectx: label, entry (desktopSharingPassword), group (Security)
-#: krfb.kcfg:30 krfb.kcfg:33
+#: krfb.kcfg:40 krfb.kcfg:43
 #, fuzzy
 #| msgid "Accepted uninvited connection from %1"
 msgid "Password for uninvited connections."
 msgstr "Derbynwyd cysylltiad anwahoddedig o %1"
 
 #. i18n: ectx: label, entry (preferredFrameBufferPlugin), group (FrameBuffer)
-#: krfb.kcfg:38
+#: krfb.kcfg:48
 msgid "Preferred Frame Buffer Plugin"
 msgstr ""
 
-#: main.cpp:42
+#: main.cpp:38
+msgid "5.0"
+msgstr ""
+
+#: main.cpp:39
 msgid "VNC-compatible server to share KDE desktops"
 msgstr "Gweinydd VNC-gytûn i rannu penbyrddau KDE"
 
-#: main.cpp:53
+#: main.cpp:50
 msgid ""
 "Your X11 Server does not support the required XTest extension version 2.2. "
 "Sharing your desktop is not possible."
@@ -123,11 +125,15 @@ msgstr ""
 "Nid yw'ch Gweinydd X11 yn cynnal yr estyniad XTest angenrheidiol fersiwn "
 "2.2. Nid yw rhannu'ch penbwrdd yn bosib."
 
-#: main.cpp:55
+#: main.cpp:52
 msgid "Desktop Sharing Error"
 msgstr "Gwall Rhannu Penbwrdd"
 
-#: main.cpp:64
+#: main.cpp:61
+msgid "krfb"
+msgstr ""
+
+#: main.cpp:62
 msgid "Desktop Sharing"
 msgstr "Rhannu Penbwrdd"
 
@@ -202,25 +208,21 @@ msgstr ""
 msgid "original VNC encoders and protocol design"
 msgstr "amgodwyr VNC gwreiddiol a dyluniad protocol"
 
-#: main.cpp:93
+#: main.cpp:101
 msgid "Do not show the invitations management dialog at startup"
 msgstr ""
 
-#: mainwindow.cpp:124
-msgid "Search in Contacts..."
-msgstr ""
-
-#: mainwindow.cpp:173
+#: mainwindow.cpp:139
 msgid "Enter a new password for Unattended Access"
 msgstr ""
 
-#: mainwindow.cpp:184
+#: mainwindow.cpp:150
 msgid ""
 "Failed to start the krfb server. Desktop sharing will not work. Try setting "
 "another port in the settings and restart krfb."
 msgstr ""
 
-#: mainwindow.cpp:207
+#: mainwindow.cpp:173
 #, fuzzy
 msgid ""
 "This field contains the address of your computer and the port number, "
@@ -246,14 +248,14 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (QLabel, titleLabel)
 #. i18n: ectx: property (text), widget (QLabel, titleLabel)
 #. i18n: ectx: property (whatsThis), widget (QLabel, aboutLabel)
-#: mainwindow.cpp:208 mainwindow.cpp:215 ui/mainwidget.ui:83
+#: mainwindow.cpp:174 mainwindow.cpp:181 ui/mainwidget.ui:83
 #: ui/mainwidget.ui:86 ui/mainwidget.ui:114
 #, fuzzy
 #| msgid "Desktop Sharing"
 msgid "KDE Desktop Sharing"
 msgstr "Rhannu Penbwrdd"
 
-#: mainwindow.cpp:214
+#: mainwindow.cpp:180
 msgid ""
 "Any remote user with normal desktop sharing password will have to be "
 "authenticated.\n"
@@ -263,44 +265,44 @@ msgid ""
 "confirmation."
 msgstr ""
 
-#: mainwindow.cpp:244
+#: mainwindow.cpp:191
 msgid "Network"
 msgstr ""
 
-#: mainwindow.cpp:245
+#: mainwindow.cpp:192
 msgid "Security"
 msgstr ""
 
-#: rfbservermanager.cpp:216
+#: rfbservermanager.cpp:217
 #, fuzzy, kde-format
 #| msgid "The remote user has closed the connection."
 msgid "The remote user %1 is now connected."
 msgstr "Ceuodd y defnyddiwr pell y cysylltiad."
 
-#: rfbservermanager.cpp:230
+#: rfbservermanager.cpp:231
 #, fuzzy, kde-format
 #| msgid "The remote user has closed the connection."
 msgid "The remote user %1 disconnected."
 msgstr "Ceuodd y defnyddiwr pell y cysylltiad."
 
-#: trayicon.cpp:54
+#: trayicon.cpp:56
 msgid "Disconnect"
 msgstr ""
 
-#: trayicon.cpp:60
+#: trayicon.cpp:62
 msgid "Enable Remote Control"
 msgstr "Galluogi Rheolaeth Pell"
 
-#: trayicon.cpp:101 trayicon.cpp:137
+#: trayicon.cpp:101 trayicon.cpp:133
 msgid "Desktop Sharing - disconnected"
 msgstr "Rhannu Bwrdd Gwaith - datgysylltwyd"
 
-#: trayicon.cpp:119 trayicon.cpp:141
+#: trayicon.cpp:117 trayicon.cpp:137
 #, kde-format
 msgid "Desktop Sharing - connected with %1"
 msgstr "Rhannu Bwrdd Gwaith - Cysylltwyd gyda %1"
 
-#: trayicon.cpp:122
+#: trayicon.cpp:120
 #, fuzzy
 #| msgid "Desktop Sharing - disconnected"
 msgid "Desktop Sharing - connected"
@@ -348,7 +350,7 @@ msgid "123.234.123.234"
 msgstr "123.234.123.234"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAllowRemoteControl)
-#: ui/connectionwidget.ui:136 ui/tubesconnectionwidget.ui:101
+#: ui/connectionwidget.ui:136
 msgid ""
 "If you turn this option on, the remote user can enter keystrokes and use "
 "your mouse pointer. This gives them full control over your computer, so be "
@@ -361,7 +363,7 @@ msgstr ""
 "analluog, gwylio'ch sgrîn yn unig gall y defnyddiwr pell ei wneud."
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbAllowRemoteControl)
-#: ui/connectionwidget.ui:139 ui/tubesconnectionwidget.ui:104
+#: ui/connectionwidget.ui:139
 msgid "Allow remote user to &control keyboard and mouse"
 msgstr "Caniatáu i'r defnyddiwr pell &reoli'r bysellfwrdd a'r lygoden"
 
@@ -539,21 +541,30 @@ msgstr ""
 msgid "Enable &Unattended Access"
 msgstr ""
 
-#. i18n: ectx: property (whatsThis), widget (KPushButton, unattendedPasswordButton)
+#. i18n: ectx: property (whatsThis), widget (QPushButton, unattendedPasswordButton)
 #: ui/mainwidget.ui:465
 msgid "Change password for Unattended Access"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (KPushButton, unattendedPasswordButton)
+#. i18n: ectx: property (text), widget (QPushButton, unattendedPasswordButton)
 #: ui/mainwidget.ui:468
 msgid "&Change Unattended Password"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
-#: ui/tubesconnectionwidget.ui:48
 #, fuzzy
-msgid "Confirmation"
-msgstr "Trefnu &Gwahoddiadau"
+#~| msgid ""
+#~| "Somebody is requesting a connection to your computer. Granting this will "
+#~| "allow the remote user to watch your desktop. "
+#~ msgid ""
+#~ "You have requested to share your desktop with %1. If you proceed, you "
+#~ "will allow the remote user to watch your desktop."
+#~ msgstr ""
+#~ "Mae rhywun yn ceisio cysylltiad i'ch cyfrifiadur. Bydd caniatáu hyn yn "
+#~ "galluogi i'r defnyddiwr pell wylio'ch penbwrdd."
+
+#, fuzzy
+#~ msgid "Confirmation"
+#~ msgstr "Trefnu &Gwahoddiadau"
 
 #~ msgid "Failed login attempt from %1: wrong password"
 #~ msgstr "Cais mewngofnodi methedig o %1: cyfrinair anghywir"
