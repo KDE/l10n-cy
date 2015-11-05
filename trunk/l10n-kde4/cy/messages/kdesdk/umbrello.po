@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdesdk/umbrello.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-11-04 02:49+0000\n"
+"POT-Creation-Date: 2015-11-05 02:09+0000\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -1852,8 +1852,7 @@ msgstr ""
 msgid "<p align=\"right\">Editable text:</p>"
 msgstr ""
 
-#. i18n: ectx: property (toolTip), widget (QLabel, ui_imageTypeLabel)
-#: dialogs/exportallviewsdialog.cpp:83 dialogs/exportallviewsdialogbase.ui:52
+#: dialogs/exportallviewsdialog.cpp:64 dialogs/widgets/imagetypewidget.cpp:46
 msgid "The format that the images will be exported to"
 msgstr ""
 
@@ -1875,20 +1874,15 @@ msgstr ""
 msgid "&Directory to save the diagrams in:"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, ui_imageTypeLabel)
-#: dialogs/exportallviewsdialogbase.ui:55
-msgid "&Image type:"
-msgstr ""
-
 #. i18n: ectx: property (toolTip), widget (QCheckBox, m_useFolders)
-#: dialogs/exportallviewsdialogbase.ui:68
+#: dialogs/exportallviewsdialogbase.ui:57
 msgid ""
 "Create in the target directory the same tree structure used\n"
 "in the document to store the views"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, m_useFolders)
-#: dialogs/exportallviewsdialogbase.ui:72
+#: dialogs/exportallviewsdialogbase.ui:61
 msgid ""
 "The views are stored in folders in the document. The same tree structure "
 "used in the document to store the views can be created in the selected base "
@@ -1898,7 +1892,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_useFolders)
-#: dialogs/exportallviewsdialogbase.ui:75
+#: dialogs/exportallviewsdialogbase.ui:64
 #, fuzzy
 msgid "Use &folders"
 msgstr "plygell"
@@ -3550,6 +3544,18 @@ msgstr "Arddull:"
 msgid "Diagram Style"
 msgstr "Rhowch enw:"
 
+#: dialogs/widgets/imagetypewidget.cpp:45
+msgid "&Image type:"
+msgstr ""
+
+#: dialogs/widgets/resolutionwidget.cpp:42
+msgid "&Resolution:"
+msgstr ""
+
+#: dialogs/widgets/resolutionwidget.cpp:48
+msgid "DPI"
+msgstr ""
+
 #. i18n: ectx: Menu (file)
 #: dialogs/widgets/umlartifacttypewidget.cpp:29 umbrelloui.rc:4
 #, fuzzy
@@ -3687,12 +3693,12 @@ msgstr ""
 msgid "Exporting to XHTML..."
 msgstr "Terfynu..."
 
-#: docgenerators/docbookgenerator.cpp:95 umlviewimageexporterall.cpp:115
+#: docgenerators/docbookgenerator.cpp:95 umlviewimageexporterall.cpp:111
 #, fuzzy
 msgid "Exporting all views..."
 msgstr "Yn cadw ffeil..."
 
-#: docgenerators/docbookgenerator.cpp:101 umlviewimageexporterall.cpp:126
+#: docgenerators/docbookgenerator.cpp:101 umlviewimageexporterall.cpp:122
 msgid "Some errors happened when exporting the images:"
 msgstr ""
 
@@ -6185,7 +6191,7 @@ msgid ""
 "clipboard may be of the wrong type to be pasted here."
 msgstr ""
 
-#: uml.cpp:1758 umlviewimageexporter.cpp:92 umlviewimageexporterall.cpp:128
+#: uml.cpp:1758 umlviewimageexporter.cpp:92 umlviewimageexporterall.cpp:124
 #, fuzzy
 #| msgid "Ready."
 msgctxt "reset status bar"
@@ -6309,7 +6315,7 @@ msgid "There was a problem saving: %1"
 msgstr ""
 
 #: umldoc.cpp:802 umldoc.cpp:820 umldoc.cpp:841 umldoc.cpp:889 umldoc.cpp:930
-#: umllistview.cpp:552 umlviewimageexportermodel.cpp:306
+#: umllistview.cpp:552 umlviewimageexportermodel.cpp:308
 #, kde-format
 msgid "There was a problem saving file: %1"
 msgstr ""
@@ -6773,25 +6779,25 @@ msgstr ""
 msgid "File Already Exists"
 msgstr "Ffeil yn Bodoli'n Barod"
 
-#: umlviewimageexportermodel.cpp:258
+#: umlviewimageexportermodel.cpp:260
 #, fuzzy
 #| msgid "Empty"
 msgid "Empty scene"
 msgstr "Gwag"
 
-#: umlviewimageexportermodel.cpp:264 umlviewimageexportermodel.cpp:266
+#: umlviewimageexportermodel.cpp:266 umlviewimageexportermodel.cpp:268
 #, fuzzy, kde-format
 #| msgid "Create Folder"
 msgid "Cannot create directory: %1"
 msgstr "Creu Plygell"
 
-#: umlviewimageexportermodel.cpp:288
+#: umlviewimageexportermodel.cpp:290
 #, fuzzy
 #| msgid "Create Folder"
 msgid "Cannot save an empty diagram"
 msgstr "Creu Plygell"
 
-#: umlviewimageexportermodel.cpp:293
+#: umlviewimageexportermodel.cpp:295
 #, kde-format
 msgid "A problem occurred while saving diagram in %1"
 msgstr ""
