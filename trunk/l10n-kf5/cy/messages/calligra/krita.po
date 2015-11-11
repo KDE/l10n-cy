@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-11-08 08:19+0000\n"
+"POT-Creation-Date: 2015-11-11 07:46+0000\n"
 "PO-Revision-Date: 2004-07-06 17:18+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -216,7 +216,7 @@ msgstr "di-deitl-1"
 #: plugins/tools/tool_transform2/kis_free_transform_strategy_gsl_helpers.cpp:338
 #: ui/dialogs/kis_dlg_preferences.cc:224 ui/input/kis_tablet_debugger.cpp:100
 #: ui/kis_filter_manager.cc:217 ui/kis_filter_manager.cc:226
-#: ui/kis_layer_manager.cc:674 ui/kis_layer_manager.cc:950
+#: ui/kis_layer_manager.cc:677 ui/kis_layer_manager.cc:953
 #: ui/KisApplication.cpp:238 ui/KisApplication.cpp:241
 #: ui/KisApplication.cpp:266 ui/KisApplication.cpp:292
 #: ui/KisApplication.cpp:313 ui/KisDocument.cpp:617 ui/KisDocument.cpp:619
@@ -1407,7 +1407,7 @@ msgid "Convert Image Type"
 msgstr "M&ewnosod Delwedd fel Haen..."
 
 #: image/commands/kis_layer_props_command.cpp:42
-#: image/commands/kis_node_property_list_command.cpp:27
+#: image/commands/kis_node_property_list_command.cpp:31
 #, fuzzy
 #| msgid "Property Changes"
 msgctxt "(qtundo-format)"
@@ -1426,11 +1426,35 @@ msgctxt "(qtundo-format)"
 msgid "Opacity Change"
 msgstr "Didreiddiad: "
 
-#: image/commands/kis_node_property_list_command.cpp:57
-#: image/commands/kis_node_property_list_command.cpp:63
-#: image/kis_group_layer.cc:286 image/kis_group_layer.cc:293
+#: image/commands/kis_node_property_list_command.cpp:61
+#: image/commands/kis_node_property_list_command.cpp:67
+#: image/kis_group_layer.cc:304 image/kis_layer_properties_icons.cpp:35
 msgid "Pass Through"
 msgstr ""
+
+#: image/commands/kis_node_property_list_command.cpp:87
+#: image/kis_layer_properties_icons.cpp:30
+msgid "Visible"
+msgstr "Gweladwy"
+
+#: image/commands/kis_node_property_list_command.cpp:88
+#: image/kis_layer_properties_icons.cpp:29
+#: plugins/extensions/dockers/channeldocker/channelmodel.cpp:68
+#, fuzzy
+msgid "Locked"
+msgstr "Cysylltwyd"
+
+#: image/commands/kis_node_property_list_command.cpp:89
+#: image/kis_layer_properties_icons.cpp:36
+#, fuzzy
+msgid "Active"
+msgstr "Tynnu Haen"
+
+#: image/commands/kis_node_property_list_command.cpp:96
+#: image/kis_layer_properties_icons.cpp:33 image/kis_paint_layer.cc:192
+#, fuzzy
+msgid "Alpha Locked"
+msgstr "Cysylltwyd"
 
 #: image/commands/kis_reselect_global_selection_command.cpp:30
 #, fuzzy
@@ -1438,7 +1462,7 @@ msgctxt "(qtundo-format)"
 msgid "Reselect"
 msgstr "&Detholi"
 
-#: image/commands_new/kis_image_resize_command.cpp:28 image/kis_image.cc:444
+#: image/commands_new/kis_image_resize_command.cpp:28 image/kis_image.cc:447
 #, fuzzy
 #| msgid "Resize Image"
 msgctxt "(qtundo-format)"
@@ -1552,17 +1576,6 @@ msgstr "hidlo"
 msgid "Gaussian"
 msgstr "Gaussaidd :"
 
-#: image/kis_base_node.cpp:138 ui/kis_node_model.cpp:491
-msgid "Visible"
-msgstr "Gweladwy"
-
-#: image/kis_base_node.cpp:139
-#: plugins/extensions/dockers/channeldocker/channelmodel.cpp:68
-#: ui/kis_node_model.cpp:492
-#, fuzzy
-msgid "Locked"
-msgstr "Cysylltwyd"
-
 #: image/kis_clone_layer.cpp:307
 #, fuzzy
 msgid "Copy From"
@@ -1638,124 +1651,124 @@ msgstr ""
 msgid "Mitchell"
 msgstr ""
 
-#: image/kis_image.cc:350
+#: image/kis_image.cc:353
 msgid "background"
 msgstr "cefndir"
 
-#: image/kis_image.cc:353
+#: image/kis_image.cc:356
 #, kde-format
 msgid "Layer %1"
 msgstr "Haen %1"
 
-#: image/kis_image.cc:443
+#: image/kis_image.cc:446
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Crop Image"
 msgstr "Haen i Ddelwedd"
 
-#: image/kis_image.cc:485
+#: image/kis_image.cc:488
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Crop Layer"
 msgstr "Graddio Haen..."
 
-#: image/kis_image.cc:486
+#: image/kis_image.cc:489
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Crop Mask"
 msgstr "Alffa"
 
-#: image/kis_image.cc:518
+#: image/kis_image.cc:521
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Scale Image"
 msgstr "Delwedd Newydd :"
 
-#: image/kis_image.cc:519
+#: image/kis_image.cc:522
 #, fuzzy
 #| msgid "Image Resolution"
 msgctxt "(qtundo-format)"
 msgid "Change Image Resolution"
 msgstr "Cydraniad y Ddelwedd"
 
-#: image/kis_image.cc:566
+#: image/kis_image.cc:569
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Scale Layer"
 msgstr "Graddio Haen..."
 
-#: image/kis_image.cc:654
+#: image/kis_image.cc:657
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Rotate Image"
 msgstr "Ailenwi Delwedd"
 
-#: image/kis_image.cc:659
+#: image/kis_image.cc:662
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Rotate Layer"
 msgstr "&Gwaredu Haen"
 
-#: image/kis_image.cc:726
+#: image/kis_image.cc:729
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Shear layer"
 msgstr "Graddio Haen..."
 
-#: image/kis_image.cc:732
+#: image/kis_image.cc:735
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Shear Image"
 msgstr "Delwedd Newydd :"
 
-#: image/kis_image.cc:744
+#: image/kis_image.cc:747
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Convert Image Color Space"
 msgstr "M&ewnosod Delwedd fel Haen..."
 
-#: image/kis_image.cc:777
+#: image/kis_image.cc:780
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Convert Projection Color Space"
 msgstr "M&ewnosod Delwedd fel Haen..."
 
-#: image/kis_image.cc:956
+#: image/kis_image.cc:959
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Flatten Image"
 msgstr "Dyblygu Delwedd"
 
-#: image/kis_image.cc:1102
+#: image/kis_image.cc:1105
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Merge Selection Masks"
 msgstr "brwsh"
 
-#: image/kis_image.cc:1157
+#: image/kis_image.cc:1160
 #, fuzzy
 msgid "Merged"
 msgstr "Copio coch"
 
-#: image/kis_image.cc:1168
+#: image/kis_image.cc:1171
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Merge Selected Nodes"
 msgstr "Symud Detholiad"
 
-#: image/kis_image.cc:1239
+#: image/kis_image.cc:1242
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Merge with Layer Below"
 msgstr "Cyfuno &Pob Haen"
 
-#: image/kis_image.cc:1309
+#: image/kis_image.cc:1312
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Flatten Layer"
 msgstr "Dyblygu Delwedd"
 
-#: image/kis_image.cc:1913
+#: image/kis_image.cc:1918
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Crop Selections"
@@ -1766,13 +1779,13 @@ msgstr "Dim detholiad"
 msgid "Content"
 msgstr "Cyferbyniant"
 
-#: image/kis_layer.cc:212
+#: image/kis_layer.cc:216
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
 
 #. i18n: ectx: property (text), widget (QCheckBox, opacityCBox)
-#: image/kis_layer.cc:212
+#: image/kis_layer.cc:216
 #: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:235
 #: plugins/paintops/chalk/kis_chalk_paintop_settings_widget.cpp:36
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:50
@@ -1792,29 +1805,25 @@ msgstr "%1%"
 msgid "Opacity"
 msgstr "Didreiddiad:"
 
-#: image/kis_layer.cc:215
+#: image/kis_layer.cc:219
 #, fuzzy
 msgid "Composite Mode"
 msgstr "Dull cyfansawdd:"
 
-#: image/kis_layer.cc:219 image/kis_layer.cc:236
+#: image/kis_layer.cc:236 image/kis_layer_properties_icons.cpp:32
+msgid "Inherit Alpha"
+msgstr ""
+
+#: image/kis_layer.cc:240 image/kis_layer_properties_icons.cpp:31
 #, fuzzy
 msgid "Layer Style"
 msgstr "Priodweddau Haen..."
 
-#: image/kis_layer.cc:222 image/kis_layer.cc:232
-msgid "Inherit Alpha"
-msgstr ""
-
-#: image/kis_paint_layer.cc:168 image/kis_paint_layer.cc:180
-#: ui/kis_node_model.cpp:500
+#: image/kis_layer_properties_icons.cpp:34 image/kis_paint_layer.cc:195
+#: plugins/extensions/dockers/animation/animation_docker.cpp:126
 #, fuzzy
-msgid "Alpha Locked"
-msgstr "Cysylltwyd"
-
-#: image/kis_paint_layer.cc:171 image/kis_paint_layer.cc:183
-msgid "Onion skin"
-msgstr ""
+msgid "Onion Skins"
+msgstr "&Gorfodi Cyfraneddau"
 
 #: image/kis_processing_visitor.cpp:34
 msgid "Processing"
@@ -1883,11 +1892,6 @@ msgctxt "(qtundo-format)"
 msgid "Invert Selection"
 msgstr "Gludo Detholiad"
 
-#: image/kis_selection_mask.cpp:118 ui/kis_node_model.cpp:493
-#, fuzzy
-msgid "Active"
-msgstr "Tynnu Haen"
-
 #: image/kis_sync_lod_cache_stroke_strategy.cpp:34
 #, fuzzy
 msgctxt "(qtundo-format)"
@@ -1898,6 +1902,18 @@ msgstr "Ail-adrodd: "
 #, fuzzy
 msgid "Updating..."
 msgstr "Ailenwi Delwedd.."
+
+#: image/krita_utils.cpp:360
+#, fuzzy
+#| msgid "&Custom:"
+msgid "off"
+msgstr "&Addasiedig :"
+
+#: image/krita_utils.cpp:360
+#, fuzzy
+#| msgid "None"
+msgid "on"
+msgstr "Dim"
 
 #: image/layerstyles/kis_ls_bevel_emboss_filter.cpp:56
 #: image/layerstyles/kis_ls_stroke_filter.cpp:49
@@ -3362,69 +3378,131 @@ msgstr ""
 msgid "Luma"
 msgstr ""
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:41
+#: plugins/extensions/dockers/animation/animation_docker.cpp:43
 #, fuzzy
 msgid "Animation"
 msgstr "Cylchdroi"
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:51
+#: plugins/extensions/dockers/animation/animation_docker.cpp:54
 #, fuzzy
-#| msgid "Move layer up"
-msgid "Move to previous frame"
-msgstr "Symud Haen i Lawr"
+msgid "Previous Frame"
+msgstr "Hidlenni"
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:55
+#: plugins/extensions/dockers/animation/animation_docker.cpp:58
 #, fuzzy
-#| msgid "Move layer up"
-msgid "Move to next frame"
-msgstr "Symud Haen i Lawr"
+#| msgid "Remove Layer"
+msgid "Next Frame"
+msgstr "Tynnu Haen"
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:59
+#: plugins/extensions/dockers/animation/animation_docker.cpp:62
 #, fuzzy
-msgid "Play / pause animation"
+msgid "Previous Key Frame"
+msgstr "Hidlenni"
+
+#: plugins/extensions/dockers/animation/animation_docker.cpp:66
+#, fuzzy
+#| msgid "Layer name:"
+msgid "Next Key Frame"
+msgstr "Enw'r haen:"
+
+#: plugins/extensions/dockers/animation/animation_docker.cpp:70
+#, fuzzy
+msgid "First Frame"
+msgstr "Hidlenni"
+
+#: plugins/extensions/dockers/animation/animation_docker.cpp:74
+#, fuzzy
+#| msgid "Named Colors"
+msgid "Last Frame"
+msgstr "Lliwiau a Enwir"
+
+#: plugins/extensions/dockers/animation/animation_docker.cpp:78
+#, fuzzy
+msgid "Play / Pause"
 msgstr "Plws"
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:63
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:32
+#, fuzzy
+msgid "New Frame"
+msgstr "&Enw:"
+
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:33
+#, fuzzy
+msgid "Copy Frame"
+msgstr "Copio gwyrdd"
+
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:34
+#, fuzzy
+#| msgid "Remove Layer"
+msgid "Remove Frame"
+msgstr "Tynnu Haen"
+
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:35
+#, fuzzy
+#| msgid "Remove Layer"
+msgid "Remove Frames"
+msgstr "Tynnu Haen"
+
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:36
+#, fuzzy
+msgid "Auto Frame Mode"
+msgstr "brwsh"
+
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:37
+#, fuzzy
+msgid "Show in Timeline"
+msgstr "picseli/modfedd"
+
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:54
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:146
 #, fuzzy
 #| msgid "Layer name:"
-msgid "Add blank frame"
-msgstr "Enw'r haen:"
+msgctxt "(qtundo-format)"
+msgid "Copy Keyframe"
+msgid_plural "Copy Keyframes"
+msgstr[0] "Enw'r haen:"
+msgstr[1] "Enw'r haen:"
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:67
-#, fuzzy
-msgid "Add duplicate frame"
-msgstr "Dyblygu Delwedd"
-
-#: plugins/extensions/dockers/animation/animation_docker.cpp:71
-#, fuzzy
-#| msgid "Layer name:"
-msgid "Delete keyframe"
-msgstr "Enw'r haen:"
-
-#: plugins/extensions/dockers/animation/animation_docker.cpp:153
-#: plugins/extensions/dockers/animation/animation_docker.cpp:173
-#: plugins/extensions/dockers/animation/animation_docker.cpp:191
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:62
 #, fuzzy
 #| msgid "Layer name:"
 msgctxt "(qtundo-format)"
 msgid "Add Keyframe"
 msgstr "Enw'r haen:"
 
-#: plugins/extensions/dockers/animation/kis_onion_skin_dialog.cpp:40
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:74
+#, fuzzy
+#| msgid "Layer name:"
+msgctxt "(qtundo-format)"
+msgid "Remove Keyframe"
+msgid_plural "Remove Keyframes"
+msgstr[0] "Enw'r haen:"
+msgstr[1] "Enw'r haen:"
+
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:143
+#, fuzzy
+#| msgid "Layer name:"
+msgctxt "(qtundo-format)"
+msgid "Move Keyframe"
+msgid_plural "Move Keyframes"
+msgstr[0] "Enw'r haen:"
+msgstr[1] "Enw'r haen:"
+
+#: plugins/extensions/dockers/animation/kis_onion_skin_dialog.cpp:42
 #, fuzzy
 #| msgid "Font: "
 msgid "Tint: "
 msgstr "Wynebfath: "
 
-#: plugins/extensions/dockers/animation/kis_onion_skin_dialog.cpp:46
+#: plugins/extensions/dockers/animation/kis_onion_skin_dialog.cpp:48
 msgid "Tint color for past frames"
 msgstr ""
 
-#: plugins/extensions/dockers/animation/kis_onion_skin_dialog.cpp:47
+#: plugins/extensions/dockers/animation/kis_onion_skin_dialog.cpp:49
 msgid "Tint color for future frames"
 msgstr ""
 
-#: plugins/extensions/dockers/animation/kis_onion_skin_dialog.cpp:55
+#: plugins/extensions/dockers/animation/kis_onion_skin_dialog.cpp:57
 #, fuzzy
 msgid "Number of onion skins"
 msgstr "Cydraniad X y Ddelwedd:"
@@ -3435,23 +3513,44 @@ msgstr "Cydraniad X y Ddelwedd:"
 msgid "Onion skin options"
 msgstr "&Gorfodi Cyfraneddau"
 
-#: plugins/extensions/dockers/animation/timeline_docker.cpp:33
+#: plugins/extensions/dockers/animation/timeline_docker.cpp:58
 #, fuzzy
 msgid "Timeline"
 msgstr "picseli/modfedd"
 
-#: plugins/extensions/dockers/animation/timeline_docker.cpp:42
-#, fuzzy
-#| msgid "Gaussian:"
-msgid "Toggle onion skin"
-msgstr "Gaussaidd :"
+#: plugins/extensions/dockers/animation/timeline_ruler_header.cpp:368
+#, fuzzy, kde-format
+#| msgid "Layer name:"
+msgid "Insert %1 left"
+msgstr "Enw'r haen:"
 
-#: plugins/extensions/dockers/animation/timeline_view.cpp:126
+#: plugins/extensions/dockers/animation/timeline_ruler_header.cpp:369
+#, fuzzy, kde-format
+#| msgid "Right:"
+msgid "Insert %1 right"
+msgstr "De:"
+
+#: plugins/extensions/dockers/animation/timeline_ruler_header.cpp:370
+#, fuzzy, kde-format
+msgid "Clear %1 columns"
+msgstr "Cydraniad X y Ddelwedd:"
+
+#: plugins/extensions/dockers/animation/timeline_ruler_header.cpp:371
+#, fuzzy, kde-format
+msgid "Remove %1 columns"
+msgstr "Cydraniad X y Ddelwedd:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/extensions/dockers/animation/wdg_animation.ui:59
 #, fuzzy
-#| msgid "Export Layer"
-msgctxt "(qtundo-format)"
-msgid "Move keyframes"
-msgstr "Allforio Haen"
+#| msgid "Star"
+msgid "Start:"
+msgstr "Seren"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/extensions/dockers/animation/wdg_animation.ui:76
+msgid "End:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (KColorButton, bnColor)
 #. i18n: ectx: property (text), widget (KColorButton, bnHighlightColor)
@@ -3470,13 +3569,18 @@ msgstr "Allforio Haen"
 #. i18n: ectx: property (text), widget (QToolButton, m_bnFileName)
 #. i18n: ectx: property (text), widget (QToolButton, bnSwapFile)
 #. i18n: ectx: property (text), widget (QToolButton, bnBackgroundColor)
+#. i18n: ectx: property (text), widget (QToolButton, btnFirstFrame)
+#. i18n: ectx: property (text), widget (QToolButton, btnPreviousKeyFrame)
 #. i18n: ectx: property (text), widget (QToolButton, btnPreviousFrame)
 #. i18n: ectx: property (text), widget (QToolButton, btnPlay)
 #. i18n: ectx: property (text), widget (QToolButton, btnNextFrame)
+#. i18n: ectx: property (text), widget (QToolButton, btnNextKeyFrame)
+#. i18n: ectx: property (text), widget (QToolButton, btnLastFrame)
 #. i18n: ectx: property (text), widget (QToolButton, btnAddKeyframe)
 #. i18n: ectx: property (text), widget (QToolButton, btnAddDuplicateFrame)
 #. i18n: ectx: property (text), widget (QToolButton, btnDeleteKeyframe)
 #. i18n: ectx: property (text), widget (QToolButton, btnOnionSkinOptions)
+#. i18n: ectx: property (text), widget (QToolButton, btnLazyFrame)
 #. i18n: ectx: property (text), widget (QToolButton, m_bnSelectConfigurationFile)
 #. i18n: ectx: property (text), widget (QToolButton, m_bnSelectLut)
 #. i18n: ectx: property (text), widget (QToolButton, bnViewMode)
@@ -3494,13 +3598,18 @@ msgstr "Allforio Haen"
 #. i18n: ectx: property (text), widget (QToolButton, bnSelectSaveLocation)
 #. i18n: ectx: property (text), widget (QToolButton, bnGetPreview)
 #. i18n: ectx: property (text), widget (QToolButton, bnFont)
-#: plugins/extensions/dockers/animation/wdg_animation.ui:22
-#: plugins/extensions/dockers/animation/wdg_animation.ui:29
-#: plugins/extensions/dockers/animation/wdg_animation.ui:36
-#: plugins/extensions/dockers/animation/wdg_animation.ui:47
-#: plugins/extensions/dockers/animation/wdg_animation.ui:54
-#: plugins/extensions/dockers/animation/wdg_animation.ui:61
-#: plugins/extensions/dockers/animation/wdg_animation.ui:68
+#: plugins/extensions/dockers/animation/wdg_animation.ui:146
+#: plugins/extensions/dockers/animation/wdg_animation.ui:178
+#: plugins/extensions/dockers/animation/wdg_animation.ui:210
+#: plugins/extensions/dockers/animation/wdg_animation.ui:242
+#: plugins/extensions/dockers/animation/wdg_animation.ui:274
+#: plugins/extensions/dockers/animation/wdg_animation.ui:306
+#: plugins/extensions/dockers/animation/wdg_animation.ui:338
+#: plugins/extensions/dockers/animation/wdg_animation.ui:385
+#: plugins/extensions/dockers/animation/wdg_animation.ui:395
+#: plugins/extensions/dockers/animation/wdg_animation.ui:405
+#: plugins/extensions/dockers/animation/wdg_animation.ui:422
+#: plugins/extensions/dockers/animation/wdg_animation.ui:432
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:66
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:151
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:170
@@ -3536,38 +3645,20 @@ msgstr "Allforio Haen"
 msgid "..."
 msgstr "..."
 
+#. i18n: ectx: property (text), widget (QLabel, lblPlaySpeed)
+#: plugins/extensions/dockers/animation/wdg_animation.ui:464
+#, fuzzy
+#| msgid "Shape:"
+msgid "Play Speed:"
+msgstr "Siâp :"
+
 #. i18n: ectx: property (text), widget (QLabel, lblFramerate)
-#: plugins/extensions/dockers/animation/wdg_animation.ui:79
+#: plugins/extensions/dockers/animation/wdg_animation.ui:487
 #, fuzzy
 #| msgctxt "NAME OF TRANSLATORS"
 #| msgid "Your names"
-msgid "Framerate"
+msgid "Frame Rate:"
 msgstr "KD wrth KGyfieithu"
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: plugins/extensions/dockers/animation/wdg_animation.ui:93
-#, fuzzy
-msgid "From"
-msgstr "Copio gwyrdd"
-
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: plugins/extensions/dockers/animation/wdg_animation.ui:100
-msgid "To"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, lblVersion)
-#. i18n: ectx: property (text), widget (QLabel, lblSwapFileLocation)
-#. i18n: ectx: property (text), widget (QLabel, lblDescription)
-#. i18n: ectx: property (text), widget (QLabel, lblInfo)
-#. i18n: ectx: property (text), widget (QLabel, lblSaveLocation)
-#: plugins/extensions/dockers/animation/wdg_animation.ui:122
-#: plugins/extensions/resourcemanager/wdgdlgcreatebundle.ui:342
-#: ui/forms/wdgimageproperties.ui:193 ui/forms/wdgperformancesettings.ui:200
-#: ui/wdgsplash.ui:343
-#, fuzzy
-#| msgid "Text"
-msgid "TextLabel"
-msgstr "Testun"
 
 #: plugins/extensions/dockers/artisticcolorselector/artisticcolorselector_dock.cpp:51
 #, fuzzy
@@ -6212,6 +6303,18 @@ msgstr ""
 #, fuzzy
 msgid "Save to:"
 msgstr "Plws"
+
+#. i18n: ectx: property (text), widget (QLabel, lblVersion)
+#. i18n: ectx: property (text), widget (QLabel, lblSwapFileLocation)
+#. i18n: ectx: property (text), widget (QLabel, lblDescription)
+#. i18n: ectx: property (text), widget (QLabel, lblSaveLocation)
+#: plugins/extensions/resourcemanager/wdgdlgcreatebundle.ui:342
+#: ui/forms/wdgimageproperties.ui:193 ui/forms/wdgperformancesettings.ui:200
+#: ui/wdgsplash.ui:343
+#, fuzzy
+#| msgid "Text"
+msgid "TextLabel"
+msgstr "Testun"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: plugins/extensions/resourcemanager/wdgdlgcreatebundle.ui:370
@@ -16206,7 +16309,7 @@ msgstr ""
 msgid "The %1 filter will convert your %2 data to 16-bit RGBA and vice versa. "
 msgstr ""
 
-#: ui/kis_filter_manager.cc:309
+#: ui/kis_filter_manager.cc:310
 #, kde-format
 msgid "Apply Filter Again: %1"
 msgstr ""
@@ -16319,43 +16422,43 @@ msgctxt "(qtundo-format)"
 msgid "Convert to a Paint Layer"
 msgstr "Trawsnewid yr haen gyfredol"
 
-#: ui/kis_layer_manager.cc:612
+#: ui/kis_layer_manager.cc:615
 #, fuzzy
 #| msgid "Filters"
 msgid "New Filter Layer"
 msgstr "Hidlenni"
 
-#: ui/kis_layer_manager.cc:675
+#: ui/kis_layer_manager.cc:678
 msgid "Could not add layer to image."
 msgstr "Methwyd ychwanegu haen i ddelwedd."
 
-#: ui/kis_layer_manager.cc:761
+#: ui/kis_layer_manager.cc:764
 #, fuzzy
 msgctxt "@title:window"
 msgid "Flatten Image"
 msgstr "Dyblygu Delwedd"
 
-#: ui/kis_layer_manager.cc:762
+#: ui/kis_layer_manager.cc:765
 msgid ""
 "The image contains hidden layers that will be lost. Do you want to flatten "
 "the image?"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:860
+#: ui/kis_layer_manager.cc:863
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Rasterize Layer"
 msgstr "&Gwaredu Haen"
 
-#: ui/kis_layer_manager.cc:896
+#: ui/kis_layer_manager.cc:899
 msgid "Convert Invisible Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:899
+#: ui/kis_layer_manager.cc:902
 msgid "Export Only Toplevel Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:950
+#: ui/kis_layer_manager.cc:953
 msgid "No file name specified"
 msgstr ""
 
@@ -16554,73 +16657,73 @@ msgstr "Dewisydd Lliw"
 msgid "Save Merged..."
 msgstr "&Enw:"
 
-#: ui/kis_node_manager.cpp:528
+#: ui/kis_node_manager.cpp:538
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Convert to a Selection Mask"
 msgstr "Gludo Detholiad"
 
-#: ui/kis_node_manager.cpp:783
+#: ui/kis_node_manager.cpp:793
 #, fuzzy
 #| msgid "Remove Layer"
 msgctxt "(qtundo-format)"
 msgid "Remove Last Layer"
 msgstr "Tynnu Haen"
 
-#: ui/kis_node_manager.cpp:797
+#: ui/kis_node_manager.cpp:807
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Remove Multiple Layers and Masks"
 msgstr "Tynnu Haen"
 
-#: ui/kis_node_manager.cpp:825
+#: ui/kis_node_manager.cpp:835
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Mirror Layer X"
 msgstr "Gostwng Haen"
 
-#: ui/kis_node_manager.cpp:827
+#: ui/kis_node_manager.cpp:837
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Mirror Mask X"
 msgstr "Gostwng Haen"
 
-#: ui/kis_node_manager.cpp:838
+#: ui/kis_node_manager.cpp:848
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Mirror Layer Y"
 msgstr "Gostwng Haen"
 
-#: ui/kis_node_manager.cpp:840
+#: ui/kis_node_manager.cpp:850
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Mirror Mask Y"
 msgstr "Gostwng Haen"
 
-#: ui/kis_node_manager.cpp:959
+#: ui/kis_node_manager.cpp:969
 #, fuzzy, kde-format
 msgid "Export \"%1\""
 msgstr "Dadleniad:"
 
-#: ui/kis_node_manager.cpp:1033
+#: ui/kis_node_manager.cpp:1043
 msgctxt "(qtundo-format)"
 msgid "Split Alpha into a Mask"
 msgstr ""
 
-#: ui/kis_node_manager.cpp:1063
+#: ui/kis_node_manager.cpp:1073
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Layer %1 is not editable"
 msgstr "Priodweddau Haen..."
 
-#: ui/kis_node_manager.cpp:1064
+#: ui/kis_node_manager.cpp:1074
 #, kde-format
 msgid ""
 "Cannot write alpha channel of the parent layer \"%1\".\n"
 "The operation will be cancelled."
 msgstr ""
 
-#: ui/kis_node_manager.cpp:1095
+#: ui/kis_node_manager.cpp:1105
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Write Alpha into a Layer"
@@ -17026,13 +17129,6 @@ msgstr "Dim detholiad"
 #: ui/kis_statusbar.cc:317
 msgid "No profile"
 msgstr ""
-
-#: ui/kis_timeline_model.cpp:264
-#, fuzzy
-#| msgid "Layer name:"
-msgctxt "(qtundo-format)"
-msgid "Move Keyframe"
-msgstr "Enw'r haen:"
 
 #: ui/kis_zoom_manager.cc:245
 #, fuzzy, kde-format
@@ -18044,7 +18140,7 @@ msgstr ""
 msgid "Failure loading layer %1 of type: %2."
 msgstr ""
 
-#: ui/kra/kis_kra_loader.cpp:770
+#: ui/kra/kis_kra_loader.cpp:773
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -18052,7 +18148,7 @@ msgid ""
 "><nl/>Expected path:<nl/>%2<nl/><nl/>Do you want to locate it manually?"
 msgstr ""
 
-#: ui/kra/kis_kra_loader.cpp:775
+#: ui/kra/kis_kra_loader.cpp:778
 msgctxt "@title:window"
 msgid "File not found"
 msgstr ""
@@ -19904,6 +20000,45 @@ msgid "Workspace %1"
 msgstr "Dewisydd Lliw"
 
 #, fuzzy
+#~| msgid "Move layer up"
+#~ msgid "Move to previous frame"
+#~ msgstr "Symud Haen i Lawr"
+
+#, fuzzy
+#~| msgid "Move layer up"
+#~ msgid "Move to next frame"
+#~ msgstr "Symud Haen i Lawr"
+
+#, fuzzy
+#~| msgid "Layer name:"
+#~ msgid "Add blank frame"
+#~ msgstr "Enw'r haen:"
+
+#, fuzzy
+#~ msgid "Add duplicate frame"
+#~ msgstr "Dyblygu Delwedd"
+
+#, fuzzy
+#~| msgid "Layer name:"
+#~ msgid "Delete keyframe"
+#~ msgstr "Enw'r haen:"
+
+#, fuzzy
+#~| msgid "Gaussian:"
+#~ msgid "Toggle onion skin"
+#~ msgstr "Gaussaidd :"
+
+#, fuzzy
+#~| msgid "Export Layer"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move keyframes"
+#~ msgstr "Allforio Haen"
+
+#, fuzzy
+#~ msgid "From"
+#~ msgstr "Copio gwyrdd"
+
+#, fuzzy
 #~ msgid "(c) 2014 The Krita team.\n"
 #~ msgstr ""
 #~ "(h)(c) 1999-2002 Tîm Krita .\n"
@@ -20367,10 +20502,6 @@ msgstr "Dewisydd Lliw"
 #~ msgstr "Cyfeiriad: :"
 
 #, fuzzy
-#~ msgid "Number of columns"
-#~ msgstr "Cydraniad X y Ddelwedd:"
-
-#, fuzzy
 #~ msgid "Number of rows"
 #~ msgstr "Cydraniad X y Ddelwedd:"
 
@@ -20577,15 +20708,6 @@ msgstr "Dewisydd Lliw"
 #, fuzzy
 #~ msgid "Move animation layer down"
 #~ msgstr "Symud Detholiad"
-
-#, fuzzy
-#~| msgid "Remove Layer"
-#~ msgid "Remove Frame"
-#~ msgstr "Tynnu Haen"
-
-#, fuzzy
-#~ msgid "Previous Frame"
-#~ msgstr "Hidlenni"
 
 #, fuzzy
 #~ msgid "Stop Animation"
@@ -22445,11 +22567,6 @@ msgstr "Dewisydd Lliw"
 #, fuzzy
 #~ msgid "Magnetic selection tool (SHIFT+E)"
 #~ msgstr "Gludo Detholiad"
-
-#, fuzzy
-#~| msgid "Star"
-#~ msgid "Start"
-#~ msgstr "Seren"
 
 #, fuzzy
 #~ msgid "KOffice image manipulation application"
