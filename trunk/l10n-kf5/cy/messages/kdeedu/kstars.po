@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-01-13 07:32+0000\n"
+"POT-Creation-Date: 2016-01-17 07:32+0000\n"
 "PO-Revision-Date: 2004-02-26 16:58+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -401,7 +401,7 @@ msgstr "Methu llwytho ffeil"
 msgid "KStars image viewer: %1"
 msgstr "Croeso i Fawrth!"
 
-#: auxiliary/imageviewer.cpp:132 tools/eyepiecefield.cpp:83
+#: auxiliary/imageviewer.cpp:132 tools/eyepiecefield.cpp:87
 msgid "Invert colors"
 msgstr ""
 
@@ -3527,7 +3527,7 @@ msgid "Display received FITS images unto solver FOV rectangle in the sky map"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_solverOverlay)
-#: ekos/align.ui:286 tools/eyepiecefield.cpp:82
+#: ekos/align.ui:286 tools/eyepiecefield.cpp:86
 msgid "Overlay"
 msgstr ""
 
@@ -8786,7 +8786,7 @@ msgstr "Methwyd agor y ffeil : %1"
 #. i18n: ectx: property (text), item, widget (QComboBox, driverComboBox)
 #. i18n: ectx: property (text), widget (QPushButton, NoneButton)
 #: indi/drivermanager.cpp:1230 indi/indidriver.cpp:751
-#: oal/equipmentwriter.ui:197 oal/log.cpp:262 tools/eyepiecefield.cpp:103
+#: oal/equipmentwriter.ui:197 oal/log.cpp:262 tools/eyepiecefield.cpp:111
 #: tools/obslistwizard.ui:147 tools/whatsinteresting/wiequipsettings.ui:344
 msgid "None"
 msgstr "Dim"
@@ -51579,7 +51579,7 @@ msgstr "Modd"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, Type)
 #. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
-#: oal/equipmentwriter.ui:94 tools/eyepiecefield.cpp:106
+#: oal/equipmentwriter.ui:94 tools/eyepiecefield.cpp:114
 #: tools/whatsinteresting/wiequipsettings.ui:328
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
@@ -56667,53 +56667,65 @@ msgstr ""
 msgid "Winter solstice:"
 msgstr "Winner"
 
-#: tools/eyepiecefield.cpp:47
+#: tools/eyepiecefield.cpp:48
 #, fuzzy
 #| msgid "Device:"
 msgid "Eyepiece Field View"
 msgstr "Dyfais:"
 
-#: tools/eyepiecefield.cpp:80
+#: tools/eyepiecefield.cpp:84
 #, fuzzy
 #| msgid "Overview"
 msgid "Invert view"
 msgstr "Trosolwg"
 
-#: tools/eyepiecefield.cpp:81
+#: tools/eyepiecefield.cpp:85
 #, fuzzy
 msgid "Flip view"
 msgstr "Fairfield"
 
-#: tools/eyepiecefield.cpp:100
+#: tools/eyepiecefield.cpp:88
+#, fuzzy
+#| msgctxt "Image/info menu item (should be translated)"
+#| msgid "Show SEDS Image"
+msgid "Fetch DSS image"
+msgstr "Dangos Delwedd SEDS"
+
+#: tools/eyepiecefield.cpp:108
 #, fuzzy
 msgid "Rotation: "
 msgstr "Gweithred:"
 
-#: tools/eyepiecefield.cpp:104
+#: tools/eyepiecefield.cpp:112
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Manila"
 msgid "Vanilla"
 msgstr "Manila"
 
-#: tools/eyepiecefield.cpp:105
+#: tools/eyepiecefield.cpp:113
 #, fuzzy
 msgid "Flipped"
 msgstr "Fairfield"
 
-#: tools/eyepiecefield.cpp:107
+#: tools/eyepiecefield.cpp:115
 #, fuzzy
 #| msgctxt "Country name (optional, but should be translated)"
 #| msgid "Estonia"
 msgid "Dobsonian"
 msgstr "Estonia"
 
-#: tools/eyepiecefield.cpp:109
+#: tools/eyepiecefield.cpp:117
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Arese"
 msgid "Preset: "
 msgstr "Arese"
+
+#: tools/eyepiecefield.cpp:498 tools/observinglist.cpp:1128
+#, fuzzy
+msgid "Failed to download DSS/SDSS image!"
+msgstr "Methu cadw'r ddelwedd : %1 "
 
 #: tools/flagmanager.cpp:57
 msgid "Flag manager"
@@ -58100,11 +58112,6 @@ msgstr "Haines"
 #: tools/observinglist.cpp:1093
 msgid "Specify version: "
 msgstr ""
-
-#: tools/observinglist.cpp:1128
-#, fuzzy
-msgid "Failed to download DSS/SDSS image!"
-msgstr "Methu cadw'r ddelwedd : %1 "
 
 #: tools/observinglist.cpp:1219
 msgid "This will delete all saved images. Are you sure you want to do this?"
