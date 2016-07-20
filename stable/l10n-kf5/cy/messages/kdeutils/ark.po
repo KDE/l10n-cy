@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdeutils/ark.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-07-17 07:58+0000\n"
+"POT-Creation-Date: 2016-07-20 12:08+0000\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -406,26 +406,26 @@ msgid_plural "Could not move the extracted files to the destination directory."
 msgstr[0] ""
 msgstr[1] ""
 
-#: kerfuffle/cliinterface.cpp:994
+#: kerfuffle/cliinterface.cpp:999
 msgctxt "@info"
 msgid "Extraction failed because the disk is full."
 msgstr ""
 
-#: kerfuffle/cliinterface.cpp:1002
+#: kerfuffle/cliinterface.cpp:1007
 msgctxt "@info"
 msgid "Extraction failed: Incorrect password"
 msgstr ""
 
-#: kerfuffle/cliinterface.cpp:1009 kerfuffle/cliinterface.cpp:1051
+#: kerfuffle/cliinterface.cpp:1014 kerfuffle/cliinterface.cpp:1056
 msgid "Extraction failed because of an unexpected error."
 msgstr ""
 
-#: kerfuffle/cliinterface.cpp:1044
+#: kerfuffle/cliinterface.cpp:1049
 msgid "Incorrect password."
 msgstr ""
 
-#: kerfuffle/cliinterface.cpp:1075
-msgid "Ark does not currently support testing password-protected archives."
+#: kerfuffle/cliinterface.cpp:1080
+msgid "Ark does not currently support testing this archive."
 msgstr ""
 
 #: kerfuffle/compressionoptionswidget.cpp:94
@@ -1214,7 +1214,7 @@ msgstr ""
 msgid "Add &Files..."
 msgstr "Ychw&anegu Ffeil..."
 
-#: part/part.cpp:369
+#: part/part.cpp:369 part/part.cpp:431
 msgctxt "@info:tooltip"
 msgid "Click to add files to the archive"
 msgstr ""
@@ -1252,46 +1252,61 @@ msgctxt "@action:inmenu"
 msgid "&Test Integrity"
 msgstr ""
 
-#: part/part.cpp:399
+#: part/part.cpp:399 part/part.cpp:432
 #, fuzzy
 #| msgid "Open with:"
 msgctxt "@info:tooltip"
 msgid "Click to test the archive for integrity"
 msgstr "Agor Efo:"
 
-#: part/part.cpp:460
+#: part/part.cpp:426
+msgctxt "@info:tooltip"
+msgid ""
+"Adding files to existing password-protected archives with no header-"
+"encryption is currently not supported.<nl/><nl/>Extract the files and create "
+"a new archive if you want to add files."
+msgstr ""
+
+#: part/part.cpp:429
+msgctxt "@info:tooltip"
+msgid ""
+"Testing password-protected archives with no header-encryption is currently "
+"not supported."
+msgstr ""
+
+#: part/part.cpp:480
 msgctxt "@action:inmenu mutually exclusive with Add &Comment"
 msgid "Edit &Comment"
 msgstr ""
 
-#: part/part.cpp:461 part/part.cpp:468
+#: part/part.cpp:481 part/part.cpp:489
 msgctxt "@action:inmenu mutually exclusive with Edit &Comment"
 msgid "Add &Comment"
 msgstr ""
 
-#: part/part.cpp:518
+#: part/part.cpp:539
 msgid "The archive passed the integrity test."
 msgstr ""
 
-#: part/part.cpp:518 part/part.cpp:520
+#: part/part.cpp:539 part/part.cpp:541
 msgid "Test Results"
 msgstr ""
 
-#: part/part.cpp:520
+#: part/part.cpp:541
 msgid "The archive failed the integrity test."
 msgstr ""
 
-#: part/part.cpp:541
+#: part/part.cpp:562
 #, fuzzy
 #| msgid "All files"
 msgid "Extract To..."
 msgstr "Pob Ffeil"
 
-#: part/part.cpp:555
+#: part/part.cpp:576
 msgid "Quick Extract To..."
 msgstr ""
 
-#: part/part.cpp:630
+#: part/part.cpp:651
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1299,7 +1314,7 @@ msgid ""
 "<nl/>Ark does not seem to support this file type."
 msgstr ""
 
-#: part/part.cpp:637
+#: part/part.cpp:658
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1308,14 +1323,14 @@ msgid ""
 "installed."
 msgstr ""
 
-#: part/part.cpp:687
+#: part/part.cpp:708
 #, fuzzy
 #| msgid "All files"
 msgctxt "@title:tab"
 msgid "Extraction Settings"
 msgstr "Pob Ffeil"
 
-#: part/part.cpp:688
+#: part/part.cpp:709
 #, fuzzy
 #| msgctxt "to view something"
 #| msgid "&View"
@@ -1323,13 +1338,13 @@ msgctxt "@title:tab"
 msgid "Preview Settings"
 msgstr "&Golwg"
 
-#: part/part.cpp:701
+#: part/part.cpp:722
 #, kde-format
 msgctxt "@info"
 msgid "<filename>%1</filename> is a directory."
 msgstr ""
 
-#: part/part.cpp:710
+#: part/part.cpp:731
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1337,7 +1352,7 @@ msgid ""
 "permission."
 msgstr ""
 
-#: part/part.cpp:716
+#: part/part.cpp:737
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1345,13 +1360,13 @@ msgid ""
 "file."
 msgstr ""
 
-#: part/part.cpp:719
+#: part/part.cpp:740
 #, kde-format
 msgctxt "@info"
 msgid "The archive <filename>%1</filename> was not found."
 msgstr ""
 
-#: part/part.cpp:724
+#: part/part.cpp:745
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1359,7 +1374,7 @@ msgid ""
 "possible to read from it."
 msgstr ""
 
-#: part/part.cpp:737
+#: part/part.cpp:758
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1367,19 +1382,19 @@ msgid ""
 "it?"
 msgstr ""
 
-#: part/part.cpp:739
+#: part/part.cpp:760
 msgctxt "@title:window"
 msgid "File Exists"
 msgstr ""
 
-#: part/part.cpp:740
+#: part/part.cpp:761
 #, fuzzy
 #| msgid "Overwrite"
 msgctxt "@action:button"
 msgid "Overwrite"
 msgstr "Trosysgrifo"
 
-#: part/part.cpp:761
+#: part/part.cpp:782
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1387,40 +1402,40 @@ msgid ""
 "<nl/><message>%2</message>"
 msgstr ""
 
-#: part/part.cpp:803
+#: part/part.cpp:824
 msgctxt "@info"
 msgid "The archive is empty or Ark could not open its content."
 msgstr ""
 
-#: part/part.cpp:808
+#: part/part.cpp:829
 msgctxt "@info"
 msgid "Ark does not currently support ISO files with UDF filesystem."
 msgstr ""
 
-#: part/part.cpp:863
+#: part/part.cpp:884
 msgid "Ark cannot open symlinks."
 msgstr ""
 
-#: part/part.cpp:968
+#: part/part.cpp:989
 #, kde-format
 msgid ""
 "The file <filename>%1</filename> was modified. Do you want to update the "
 "archive?"
 msgstr ""
 
-#: part/part.cpp:970
+#: part/part.cpp:991
 msgctxt "@title:window"
 msgid "File Modified"
 msgstr ""
 
-#: part/part.cpp:1254
+#: part/part.cpp:1264
 #, fuzzy
 #| msgid "All Files"
 msgctxt "@title:window"
 msgid "Add Files"
 msgstr "Pob Ffeil"
 
-#: part/part.cpp:1291
+#: part/part.cpp:1301
 msgctxt "@info"
 msgid "Deleting this file is not undoable. Are you sure you want to do this?"
 msgid_plural ""
@@ -1428,7 +1443,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: part/part.cpp:1294
+#: part/part.cpp:1304
 #, fuzzy
 msgctxt "@title:window"
 msgid "Delete File"
@@ -1436,12 +1451,12 @@ msgid_plural "Delete Files"
 msgstr[0] "Ffeiliau Dewisiedig"
 msgstr[1] "Ffeiliau Dewisiedig"
 
-#: part/part.cpp:1337
+#: part/part.cpp:1347
 msgctxt "@title:window"
 msgid "Save Archive As"
 msgstr ""
 
-#: part/part.cpp:1344
+#: part/part.cpp:1354
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1449,7 +1464,7 @@ msgid ""
 "want to overwrite it?"
 msgstr ""
 
-#: part/part.cpp:1358
+#: part/part.cpp:1368
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1457,7 +1472,7 @@ msgid ""
 "location. The archive does not exist anymore."
 msgstr ""
 
-#: part/part.cpp:1372
+#: part/part.cpp:1382
 #, kde-format
 msgctxt "@info"
 msgid ""
