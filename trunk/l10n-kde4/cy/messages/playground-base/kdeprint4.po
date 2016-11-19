@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeprint4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-25 02:38+0100\n"
+"POT-Creation-Date: 2016-11-19 11:46+0100\n"
 "PO-Revision-Date: 2004-08-19 09:54+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -29,33 +29,39 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: cups/cupsaddsmb2.cpp:54 cups/cupsaddsmb2.cpp:342
+#, kde-format
 msgid "&Export"
 msgstr "Allf&orio"
 
 #: cups/cupsaddsmb2.cpp:62
+#, kde-format
 msgid "Export Printer Driver to Windows Clients"
 msgstr "Allforio'r gyrrydd argraffydd i ddibynyddion Windows"
 
 #: cups/cupsaddsmb2.cpp:73
+#, kde-format
 msgid "&Username:"
 msgstr "&Enw Defnyddiwr:"
 
 #: cups/cupsaddsmb2.cpp:74
+#, kde-format
 msgid "&Samba server:"
 msgstr "Gweinydd &Samba:"
 
 #: cups/cupsaddsmb2.cpp:75 management/kmwpassword.cpp:49
+#, kde-format
 msgid "&Password:"
 msgstr "&Cyfrinair"
 
 #: cups/cupsaddsmb2.cpp:80
+#, kde-format
 msgid ""
 "<p><b>Samba server</b></p>Adobe Windows PostScript driver files plus the "
 "CUPS printer PPD will be exported to the <tt>[print$]</tt> special share of "
 "the Samba server (to change the source CUPS server, use the "
-"<nobr><i>Configure Manager -> CUPS server</i></nobr> first). The <tt>[print$]"
-"</tt> share must exist on the Samba side prior to clicking the <b>Export</b> "
-"button below."
+"<nobr><i>Configure Manager -> CUPS server</i></nobr> first). The <tt>[print"
+"$]</tt> share must exist on the Samba side prior to clicking the <b>Export</"
+"b> button below."
 msgstr ""
 "<p><b>Gweinydd Samba</b></p>Bydd ffeiliau gyrrydd Adobe Windows PostScript a "
 "PPD i'r argraffydd CUPS yn cael eu allforio i'r rhanniad arbennig <tt>[print"
@@ -65,7 +71,7 @@ msgstr ""
 "y botwm <b>Allforio</b> isod."
 
 #: cups/cupsaddsmb2.cpp:89
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 "<p><b>Samba username</b></p>User needs to have write access to the <tt>[print"
 "$]</tt> share on the Samba server. <tt>[print$]</tt> holds printer drivers "
@@ -81,6 +87,7 @@ msgstr ""
 "<tt>security = user</tt>)."
 
 #: cups/cupsaddsmb2.cpp:97
+#, kde-format
 msgid ""
 "<p><b>Samba password</b></p>The Samba setting <tt>encrypt passwords = yes</"
 "tt> (default) requires prior use of <tt>smbpasswd -a [username]</tt> "
@@ -91,36 +98,42 @@ msgstr ""
 "<tt>smbpasswd -a [username]</tt> yn gyntaf, er mwyn creu cyfrinair "
 "amgryptiedig Samba a chaiff  ei adnabod gan Samba."
 
+#. i18n("Creating directory %1").arg(m_actions[m_actionindex]));
 #: cups/cupsaddsmb2.cpp:261
 #, kde-format
 msgid "Creating folder %1"
 msgstr "Creu plygell %1"
 
+#. i18n("Uploading %1").arg(m_actions[m_actionindex+1]));
 #: cups/cupsaddsmb2.cpp:267
 #, kde-format
 msgid "Uploading %1"
 msgstr "Llwytho %1"
 
+#. i18n("Installing driver for %1").arg(m_actions[m_actionindex]));
 #: cups/cupsaddsmb2.cpp:273
 #, kde-format
 msgid "Installing driver for %1"
 msgstr "Gosod gyrrydd i %1"
 
+#. i18n("Installing printer %1").arg(m_actions[m_actionindex]));
 #: cups/cupsaddsmb2.cpp:279
 #, kde-format
 msgid "Installing printer %1"
 msgstr "Gosod argraffydd %1"
 
 #: cups/cupsaddsmb2.cpp:309
-#, fuzzy
+#, fuzzy, kde-format
 msgid "&Close"
 msgstr "Dosbarthiadau"
 
 #: cups/cupsaddsmb2.cpp:315
+#, kde-format
 msgid "Driver successfully exported."
 msgstr "Allforiwyd y gyrrydd yn llwyddiannus."
 
 #: cups/cupsaddsmb2.cpp:324
+#, kde-format
 msgid ""
 "Operation failed. Possible reasons are: permission denied or invalid Samba "
 "configuration (see <a href=\"man:/cupsaddsmb\">cupsaddsmb</a> manual page "
@@ -135,6 +148,7 @@ msgstr ""
 "eisiau ceisio eto efo mewnosodiad/cyfrinair arall."
 
 #: cups/cupsaddsmb2.cpp:331
+#, kde-format
 msgid "Operation aborted (process killed)."
 msgstr "Terfynnwyd y gwithrediad (lladdwyd y proses). "
 
@@ -164,6 +178,7 @@ msgstr ""
 "y galluogrwydd hwn."
 
 #: cups/cupsaddsmb2.cpp:371
+#, kde-format
 msgid ""
 "Some driver files are missing. You can get them on <a href=\"http://www."
 "adobe.com\">Adobe</a> web site. See <a href=\"man:/cupsaddsmb\">cupsaddsmb</"
@@ -175,12 +190,14 @@ msgstr ""
 "cupsaddsmb\">cupsaddsmb</a> am fwy o fanylion (rhaid i chi gael <a href="
 "\"http://www.cups.org\">CUPS</a> fersiwn 1.1.11 neu uwch)."
 
+#. i18n("<p>Preparing to upload driver to host <b>%1</b>").arg(m_servered->text()));
 #: cups/cupsaddsmb2.cpp:382
 #, kde-format
 msgid "Preparing to upload driver to host %1"
 msgstr "Paratoi llwytho'r gyrrydd i westeiwr %1"
 
 #: cups/cupsaddsmb2.cpp:387 management/networkscanner.cpp:139
+#, kde-format
 msgid "&Abort"
 msgstr "&Terfynnu"
 
@@ -189,45 +206,54 @@ msgstr "&Terfynnu"
 msgid "The driver for printer <b>%1</b> could not be found."
 msgstr "Methu canfod y gyrrydd i argraffydd <b>%1</b>."
 
+#. i18n("Preparing to install driver on host <b>%1</b>").arg(m_servered->text()));
 #: cups/cupsaddsmb2.cpp:433
 #, kde-format
 msgid "Preparing to install driver on host %1"
 msgstr "Paratoi gosod gyrrydd ar westeiwr %1"
 
 #: cups/ippreportdlg.cpp:37
+#, kde-format
 msgid "IPP Report"
 msgstr "Adroddiad IPP"
 
 #: cups/ippreportdlg.cpp:39 cups/ippreportdlg.cpp:48 kprintdialog.cpp:307
+#, kde-format
 msgid "&Print"
 msgstr "&Argraffu"
 
 #: cups/ippreportdlg.cpp:94
+#, kde-format
 msgid "Internal error: unable to generate HTML report."
 msgstr "Gwall mewnol: methu creu adroddiad HTML."
 
 #: cups/ipprequest.cpp:101
-#, fuzzy
+#, fuzzy, kde-format
 msgid "You do not have access to the requested resource."
 msgstr "Nid oes ganddoch gyrchiad at yr adnodd oedd ceisiedig."
 
 #: cups/ipprequest.cpp:104
+#, kde-format
 msgid "You are not authorized to access the requested resource."
 msgstr "Nid ydych wedi cael eich awdurdodi i gyrchu'r adnodd ceisiedig."
 
 #: cups/ipprequest.cpp:107
+#, kde-format
 msgid "The requested operation cannot be completed."
 msgstr "Methu cwblhau'r gweithred geisiedig."
 
 #: cups/ipprequest.cpp:110
+#, kde-format
 msgid "The requested service is currently unavailable."
 msgstr "Nid yw'r gwasanaeth ceisiedig ar gael ar hyn o bryd."
 
 #: cups/ipprequest.cpp:113
+#, kde-format
 msgid "The target printer is not accepting print jobs."
 msgstr "Ni dderbynnir swyddi argraffu gan yr argraffydd cyrchfan."
 
 #: cups/ipprequest.cpp:219
+#, kde-format
 msgid ""
 "Connection to CUPS server failed. Check that the CUPS server is correctly "
 "installed and running."
@@ -236,107 +262,133 @@ msgstr ""
 "ei osod yn iawn, a rhedeg."
 
 #: cups/ipprequest.cpp:222
+#, kde-format
 msgid "The IPP request failed for an unknown reason."
 msgstr "Methodd y cais IPP am reswm anhysbys."
 
 #: cups/ipprequest.cpp:331
+#, kde-format
 msgid "Attribute"
 msgstr "Priodoleddau"
 
 #: cups/ipprequest.cpp:332
+#, kde-format
 msgid "Values"
 msgstr "Gwerthoedd"
 
 #: cups/ipprequest.cpp:358
+#, kde-format
 msgid "True"
 msgstr "Gwir"
 
 #: cups/ipprequest.cpp:358
+#, kde-format
 msgid "False"
 msgstr "Ffug"
 
 #: cups/kmconfigcups.cpp:33
+#, kde-format
 msgid "CUPS Server"
 msgstr "Gweinydd CUPS"
 
 #: cups/kmconfigcups.cpp:34
+#, kde-format
 msgid "CUPS Server Settings"
 msgstr "Gosodiadau Gweinydd CUPS"
 
 #: cups/kmconfigcupsdir.cpp:35
+#, kde-format
 msgid "Folder"
 msgstr "Plygell"
 
 #: cups/kmconfigcupsdir.cpp:36
+#, kde-format
 msgid "CUPS Folder Settings"
 msgstr "Gosodiadau Plygell CUPS"
 
 #: cups/kmconfigcupsdir.cpp:39
+#, kde-format
 msgid "Installation Folder"
 msgstr "Plygell Gosod"
 
 #: cups/kmconfigcupsdir.cpp:43
+#, kde-format
 msgid "Standard installation (/)"
 msgstr "Gosod arferol (/)"
 
 #: cups/kmcupsconfigwidget.cpp:69
+#, kde-format
 msgid "Server Information"
 msgstr "Gwybodaeth Gweinydd"
 
 #: cups/kmcupsconfigwidget.cpp:71
+#, kde-format
 msgid "Account Information"
 msgstr "Gwybodaeth Cyfrif"
 
 #: cups/kmcupsconfigwidget.cpp:73 rlpr/kmproxywidget.cpp:36
+#, kde-format
 msgid "&Host:"
 msgstr "&Gwesteiwr:"
 
 #: cups/kmcupsconfigwidget.cpp:74 management/kmwsocketutil.cpp:61
 #: management/networkscanner.cpp:318 rlpr/kmproxywidget.cpp:37
+#, kde-format
 msgid "&Port:"
 msgstr "&Porth:"
 
 #: cups/kmcupsconfigwidget.cpp:81
+#, kde-format
 msgid "&User:"
 msgstr "&Defnyddiwr:"
 
 #: cups/kmcupsconfigwidget.cpp:82
+#, kde-format
 msgid "Pass&word:"
 msgstr "&Cyfrinair:"
 
 #: cups/kmcupsconfigwidget.cpp:85
+#, kde-format
 msgid "&Store password in configuration file"
 msgstr "&Cadw'r cyfrinair yn y ffeil ffurfweddiad. "
 
 #: cups/kmcupsconfigwidget.cpp:87
+#, kde-format
 msgid "Use &anonymous access"
 msgstr "De&fnyddio cyrchiad di-enw"
 
 #: cups/kmcupsjobmanager.cpp:263
+#, kde-format
 msgid "Job Report"
 msgstr "Adroddiad Swydd"
 
 #: cups/kmcupsjobmanager.cpp:265 cups/kmcupsjobmanager.cpp:372
+#, kde-format
 msgid "Unable to retrieve job information: "
 msgstr "Methu nol gwybodaeth swydd:"
 
 #: cups/kmcupsjobmanager.cpp:274
+#, kde-format
 msgid "&Job IPP Report"
 msgstr "&Adroddiad IPP y Swydd"
 
 #: cups/kmcupsjobmanager.cpp:277
+#, kde-format
 msgid "&Increase Priority"
 msgstr "&Cynyddu Blaenoriaeth"
 
 #: cups/kmcupsjobmanager.cpp:280
+#, kde-format
 msgid "&Decrease Priority"
 msgstr "&Lleihau Blaenoriaeth"
 
 #: cups/kmcupsjobmanager.cpp:283
+#, kde-format
 msgid "&Edit Attributes..."
 msgstr "&Golygu Priodoleddau..."
 
 #: cups/kmcupsjobmanager.cpp:337
+#, kde-format
 msgid "Unable to change job priority: "
 msgstr "Methu newid blaenoriaeth y swydd:"
 
@@ -351,11 +403,12 @@ msgid "Attributes of Job %1@%2 (%3)"
 msgstr "Priodoleddau Swydd %1@%2 (%3)  "
 
 #: cups/kmcupsjobmanager.cpp:429
+#, kde-format
 msgid "Unable to set job attributes: "
 msgstr "Methu gosod priodoleddau'r swydd:"
 
-#: cups/kmcupsmanager.cpp:506 lpr/matichandler.cpp:228
-#: lpr/matichandler.cpp:309
+#: cups/kmcupsmanager.cpp:506 lpr/matichandler.cpp:228 lpr/matichandler.cpp:309
+#, kde-format
 msgid ""
 "Unable to find the executable foomatic-datafile in your PATH. Check that "
 "Foomatic is correctly installed."
@@ -363,8 +416,7 @@ msgstr ""
 "Methu canfod y gweithredadwyn foomatic-datafile yn eich PATH.  Gwiriwch fod "
 "Foomatic wedi ei osod yn gywir."
 
-#: cups/kmcupsmanager.cpp:522 lpr/matichandler.cpp:244
-#: lpr/matichandler.cpp:347
+#: cups/kmcupsmanager.cpp:522 lpr/matichandler.cpp:244 lpr/matichandler.cpp:347
 #, kde-format
 msgid ""
 "Unable to create the Foomatic driver [%1,%2]. Either that driver does not "
@@ -374,6 +426,7 @@ msgstr ""
 "neu nid oes ganddoch y caniatadau gofynnol i  gyflawni'r gweithrediad yna.  "
 
 #: cups/kmcupsmanager.cpp:658
+#, kde-format
 msgid "Library cupsdconf not found. Check your installation."
 msgstr "Methu canfod y rhaglengell libcupsdconf.  Gwiriwch eich gosodiad."
 
@@ -383,10 +436,12 @@ msgid "Symbol %1 not found in cupsdconf library."
 msgstr "Methu canfod symbol %1 yn y rhaglengell libcupsdconf.  "
 
 #: cups/kmcupsmanager.cpp:732
+#, kde-format
 msgid "&Export Driver..."
 msgstr "&Allforio Gyrrydd..."
 
 #: cups/kmcupsmanager.cpp:738
+#, kde-format
 msgid "&Printer IPP Report"
 msgstr "Adroddiad IPP yr &Argraffydd"
 
@@ -396,10 +451,12 @@ msgid "IPP Report for %1"
 msgstr "Adroddiad IPP am %1 "
 
 #: cups/kmcupsmanager.cpp:786
+#, kde-format
 msgid "Unable to retrieve printer information. Error received:"
 msgstr "Methu nÃ´l gwybodaeth argraffydd.  Derbynwyd gwall:"
 
 #: cups/kmcupsmanager.cpp:799
+#, kde-format
 msgid "Server"
 msgstr "Gweinydd"
 
@@ -413,14 +470,17 @@ msgstr ""
 "ei osod yn gywir, ac yn rhedeg.  Gwall: %1."
 
 #: cups/kmcupsmanager.cpp:831
+#, kde-format
 msgid "the IPP request failed for an unknown reason"
 msgstr "methodd y cais IPP am reswm anhysbys"
 
 #: cups/kmcupsmanager.cpp:868
+#, kde-format
 msgid "connection refused"
 msgstr "gwrthodwyd y cysylltiad"
 
 #: cups/kmcupsmanager.cpp:871
+#, kde-format
 msgid "host not found"
 msgstr "ni chanfuwyd y gwesteiwr"
 
@@ -439,6 +499,7 @@ msgstr ""
 "ei osod yn gywir, ac yn rhedeg.  Gwall: %1."
 
 #: cups/kmcupsuimanager.cpp:97
+#, kde-format
 msgid ""
 "<qt><p>Print queue on remote CUPS server</p><p>Use this for a print queue "
 "installed on a remote machine running a CUPS server. This allows to use "
@@ -446,6 +507,7 @@ msgid ""
 msgstr ""
 
 #: cups/kmcupsuimanager.cpp:104
+#, kde-format
 msgid ""
 "<qt><p>Network IPP printer</p><p>Use this for a network-enabled printer "
 "using the IPP protocol. Modern high-end printers can use this mode. Use this "
@@ -453,6 +515,7 @@ msgid ""
 msgstr ""
 
 #: cups/kmcupsuimanager.cpp:111
+#, kde-format
 msgid ""
 "<qt><p>Fax/Modem printer</p><p>Use this for a fax/modem printer. This "
 "requires the installation of the <a href=\"http://vigna.dsi.unimi.it/"
@@ -461,6 +524,7 @@ msgid ""
 msgstr ""
 
 #: cups/kmcupsuimanager.cpp:118
+#, kde-format
 msgid ""
 "<qt><p>Other printer</p><p>Use this for any printer type. To use this "
 "option, you must know the URI of the printer you want to install. Refer to "
@@ -470,6 +534,7 @@ msgid ""
 msgstr ""
 
 #: cups/kmcupsuimanager.cpp:126
+#, kde-format
 msgid ""
 "<qt><p>Class of printers</p><p>Use this to create a class of printers. When "
 "sending a document to a class, the document is actually sent to the first "
@@ -478,136 +543,168 @@ msgid ""
 msgstr ""
 
 #: cups/kmcupsuimanager.cpp:139
+#, kde-format
 msgid "Re&mote CUPS server (IPP/HTTP)"
 msgstr "Gweinydd pell &CUPS (IPP/HTTP)"
 
 #: cups/kmcupsuimanager.cpp:140
+#, kde-format
 msgid "Network printer w/&IPP (IPP/HTTP)"
 msgstr "Argraffydd rhwydwaith efo &IPP (IPP/HTTP)"
 
 #: cups/kmcupsuimanager.cpp:141
+#, kde-format
 msgid "S&erial Fax/Modem printer"
 msgstr "Argraffydd &Cyfresol Ffacs/Modem"
 
 #: cups/kmcupsuimanager.cpp:142
+#, kde-format
 msgid "Other &printer type"
 msgstr "&Math arall o argraffydd"
 
 #: cups/kmcupsuimanager.cpp:144
+#, kde-format
 msgid "Cl&ass of printers"
 msgstr "D&osbarth o argraffyddion"
 
 #: cups/kmcupsuimanager.cpp:175
-#, fuzzy
+#, fuzzy, kde-format
 msgid "An error occurred while retrieving the list of available backends:"
 msgstr "Gwall wrth nÃ´l y rhestr argraffyddion:"
 
 #: cups/kmcupsuimanager.cpp:230
+#, kde-format
 msgid "Priority"
 msgstr "Blaenoriaeth"
 
 #: cups/kmcupsuimanager.cpp:230
+#, kde-format
 msgid "Billing Information"
 msgstr "Gwybodaeth Anfoneb"
 
 #: cups/kmpropbanners.cpp:37 cups/kmwbanners.cpp:92
+#, kde-format
 msgid "&Starting banner:"
 msgstr "Baner &dechrau:"
 
 #: cups/kmpropbanners.cpp:38 cups/kmwbanners.cpp:93
+#, kde-format
 msgid "&Ending banner:"
 msgstr "Baner d&iweddu:"
 
 #: cups/kmpropbanners.cpp:53 kpgeneralpage.cpp:300
+#, kde-format
 msgid "Banners"
 msgstr "Baneri"
 
 #: cups/kmpropbanners.cpp:54
+#, kde-format
 msgid "Banner Settings"
 msgstr "Gosodiadau'r Faner"
 
 #: cups/kmpropquota.cpp:39 cups/kmwquota.cpp:96
+#, kde-format
 msgid "&Period:"
 msgstr "&Cyfnod:"
 
 #: cups/kmpropquota.cpp:40 cups/kmwquota.cpp:97
+#, kde-format
 msgid "&Size limit (KB):"
 msgstr "&Terfyn maint (KB):"
 
 #: cups/kmpropquota.cpp:41 cups/kmwquota.cpp:98
+#, kde-format
 msgid "&Page limit:"
 msgstr "Terfyn tu&dalen:"
 
 #: cups/kmpropquota.cpp:59
+#, kde-format
 msgid "Quotas"
 msgstr "Cwotau"
 
 #: cups/kmpropquota.cpp:60
+#, kde-format
 msgid "Quota Settings"
 msgstr "Gosodiadau Cwota"
 
 #: cups/kmpropquota.cpp:79 cups/kmwquota.cpp:84
+#, kde-format
 msgid "No quota"
 msgstr "Dim cwota"
 
 #: cups/kmpropquota.cpp:80 cups/kmpropquota.cpp:81 cups/kmwquota.cpp:87
 #: cups/kmwquota.cpp:90
+#, kde-format
 msgid "None"
 msgstr "Dim"
 
 #: cups/kmpropusers.cpp:40 cups/kmwusers.cpp:39
+#, kde-format
 msgid "Users"
 msgstr "Defnyddwyr"
 
 #: cups/kmpropusers.cpp:41 cups/kmwusers.cpp:36
+#, kde-format
 msgid "Users Access Settings"
 msgstr "Gosodiadau Cyrchiad y Defnyddwyr"
 
 #: cups/kmpropusers.cpp:55
+#, kde-format
 msgid "Denied users"
 msgstr "Defnyddwyr a wrthodir"
 
 #: cups/kmpropusers.cpp:60
+#, kde-format
 msgid "Allowed users"
 msgstr "Defnyddwyr a chaniateir"
 
 #: cups/kmpropusers.cpp:72
+#, kde-format
 msgid "All users allowed"
 msgstr "Caniateir pob defnyddiwr"
 
 #: cups/kmwbanners.cpp:57
+#, kde-format
 msgid "No Banner"
 msgstr "Dim Baner"
 
 #: cups/kmwbanners.cpp:58
+#, kde-format
 msgid "Classified"
 msgstr "Dosbarthedig"
 
 #: cups/kmwbanners.cpp:59
+#, kde-format
 msgid "Confidential"
 msgstr "Cyfrinachol"
 
 #: cups/kmwbanners.cpp:60
+#, kde-format
 msgid "Secret"
 msgstr "Cyfrinachol"
 
 #: cups/kmwbanners.cpp:61
+#, kde-format
 msgid "Standard"
 msgstr "Safonol"
 
 #: cups/kmwbanners.cpp:62
+#, kde-format
 msgid "Top Secret"
 msgstr "Cyfrinachol Iawn"
 
 #: cups/kmwbanners.cpp:63
+#, kde-format
 msgid "Unclassified"
 msgstr "Annosbarthedig"
 
 #: cups/kmwbanners.cpp:86
+#, kde-format
 msgid "Banner Selection"
 msgstr "Dewis y Baner"
 
 #: cups/kmwbanners.cpp:100
+#, kde-format
 msgid ""
 "<p>Select the default banners associated with this printer. These banners "
 "will be inserted before and/or after each print job sent to the printer. If "
@@ -619,23 +716,28 @@ msgstr ""
 "<b>Dim</b>.</p>"
 
 #: cups/kmwfax.cpp:37
+#, kde-format
 msgid "Fax Serial Device"
 msgstr "Dyfais Cyfresol Ffacs"
 
 #: cups/kmwfax.cpp:42
+#, kde-format
 msgid "<p>Select the device which your serial Fax/Modem is connected to.</p>"
 msgstr ""
 "<p>Dewis y dyfais y mae eich Ffacs/Modem cyfresol wedi'i gysylltu iddo.</p>"
 
 #: cups/kmwfax.cpp:73
+#, kde-format
 msgid "You must select a device."
 msgstr "Rhaid i chi ddewis dyfais."
 
 #: cups/kmwipp.cpp:35
+#, kde-format
 msgid "Remote IPP server"
 msgstr "Gweinydd IPP pell"
 
 #: cups/kmwipp.cpp:39
+#, kde-format
 msgid ""
 "<p>Enter the information concerning the remote IPP server owning the "
 "targeted printer. This wizard will poll the server before continuing.</p>"
@@ -646,19 +748,22 @@ msgstr ""
 
 #: cups/kmwipp.cpp:42 management/kmwlpd.cpp:48 rlpr/kmproprlpr.cpp:34
 #: rlpr/kmwrlpr.cpp:62
+#, kde-format
 msgid "Host:"
 msgstr "Gwesteiwr:"
 
 #: cups/kmwipp.cpp:43
+#, kde-format
 msgid "Port:"
 msgstr "Porth:"
 
 #: cups/kmwipp.cpp:51 management/kmwsmb.cpp:87
+#, kde-format
 msgid "Empty server name."
 msgstr "Mae enw'r gweinydd yn wag."
 
 #: cups/kmwipp.cpp:57
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Incorrect port number."
 msgstr "Mae'r rhif porth yn anghywir!"
 
@@ -668,14 +773,17 @@ msgid "<nobr>Unable to connect to <b>%1</b> on port <b>%2</b> .</nobr>"
 msgstr "<nobr>Methu cysylltu i  <b>%1</b> ar borth <b>%2</b> !</nobr>"
 
 #: cups/kmwippprinter.cpp:43
+#, kde-format
 msgid "IPP Printer Information"
 msgstr "Gwybodaeth Argraffydd IPP"
 
 #: cups/kmwippprinter.cpp:53
+#, kde-format
 msgid "&Printer URI:"
 msgstr "&URI Argraffydd:"
 
 #: cups/kmwippprinter.cpp:61
+#, kde-format
 msgid ""
 "<p>Either enter the printer URI directly, or use the network scanning "
 "facility.</p>"
@@ -684,16 +792,17 @@ msgstr ""
 "syllu ar y rhwydwaith.</p>"
 
 #: cups/kmwippprinter.cpp:62
+#, kde-format
 msgid "&IPP Report"
 msgstr "&Adroddiad IPP"
 
 #: cups/kmwippprinter.cpp:110
-#, fuzzy
+#, fuzzy, kde-format
 msgid "You must enter a printer URI."
 msgstr "Rhaid i chi fewnosod URI argraffydd!"
 
 #: cups/kmwippprinter.cpp:116 management/kmwsocket.cpp:118
-#, fuzzy
+#, fuzzy, kde-format
 msgid "No printer found at this address/port."
 msgstr "Ni chanfuwyd argraffydd wrth y gyfeiriad/borth yma!"
 
@@ -728,20 +837,23 @@ msgid "<b>Model</b>: %1<br />"
 msgstr "<b>Model</b>: %1<br>"
 
 #: cups/kmwippprinter.cpp:180 kmprinter.cpp:135
+#, kde-format
 msgid "Idle"
 msgstr "Gwneud dim"
 
 #: cups/kmwippprinter.cpp:181 kmprinter.cpp:137
+#, kde-format
 msgid "Stopped"
 msgstr "Wedi aros"
 
 #: cups/kmwippprinter.cpp:182 kmjob.cpp:110 kmprinter.cpp:136
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid "Processing..."
 msgid "Processing..."
 msgstr "Prosesu ..."
 
 #: cups/kmwippprinter.cpp:183 kmjob.cpp:131 kmprinter.cpp:138
+#, kde-format
 msgctxt "Unknown State"
 msgid "Unknown"
 msgstr "Anhysbys"
@@ -764,19 +876,22 @@ msgid "Unable to generate report. IPP request failed with message: %1 (0x%2)."
 msgstr "Methu creu adroddiad.  methodd y cais IPP efo'r neges: %1 (0x%2)."
 
 #: cups/kmwippselect.cpp:36
+#, kde-format
 msgid "Remote IPP Printer Selection"
 msgstr "Dewis Argraffydd IPP Pell"
 
 #: cups/kmwippselect.cpp:50
-#, fuzzy
+#, fuzzy, kde-format
 msgid "You must select a printer."
 msgstr "Rhaid i chi ddewis argraffydd!"
 
 #: cups/kmwother.cpp:41
+#, kde-format
 msgid "URI Selection"
 msgstr "Dewis URI"
 
 #: cups/kmwother.cpp:47
+#, kde-format
 msgid ""
 "<p>Enter the URI corresponding to the printer to be installed. Examples:</"
 "p><ul><li>smb://[login[:passwd]@]server/printer</li><li>lpd://server/queue</"
@@ -788,6 +903,7 @@ msgstr ""
 
 #: cups/kmwother.cpp:52 management/kminfopage.cpp:53
 #: management/kmpropbackend.cpp:35 management/kmwlocal.cpp:54
+#, kde-format
 msgid "URI:"
 msgstr "URI"
 
@@ -797,35 +913,42 @@ msgid "CUPS Server %1:%2"
 msgstr "Gweinydd CUPS %1:%2"
 
 #: cups/kmwquota.cpp:46
+#, kde-format
 msgid "second(s)"
 msgstr "eiliad(au)"
 
 #: cups/kmwquota.cpp:47
+#, kde-format
 msgid "minute(s)"
 msgstr "munud(au)"
 
 #: cups/kmwquota.cpp:48
+#, kde-format
 msgid "hour(s)"
 msgstr "awr/oriau"
 
 #: cups/kmwquota.cpp:49
+#, kde-format
 msgid "day(s)"
 msgstr "dydd(iau)"
 
 #: cups/kmwquota.cpp:50
+#, kde-format
 msgid "week(s)"
 msgstr "wythnos(au)"
 
 #: cups/kmwquota.cpp:51
+#, kde-format
 msgid "month(s)"
 msgstr "mis(oedd)"
 
 #: cups/kmwquota.cpp:79
+#, kde-format
 msgid "Printer Quota Settings"
 msgstr "Gosodiadau Cwota'r Argraffydd"
 
 #: cups/kmwquota.cpp:106
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 "<p>Set here the quota for this printer. Using limits of <b>0</b> means that "
 "no quota will be used. This is equivalent to setting the quota period to "
@@ -838,30 +961,34 @@ msgstr ""
 "cwota ar sail y defnyddiwr unigol, a gweithredir ar bob ddefnyddiwr.</p>"
 
 #: cups/kmwquota.cpp:133
-#, fuzzy
+#, fuzzy, kde-format
 msgid "You must specify at least one quota limit."
 msgstr "Rhaid i chi benodi o leiaf un terfyn cwota!"
 
 #: cups/kmwusers.cpp:41
+#, kde-format
 msgid "Allowed Users"
 msgstr "Defnyddwyr a Chaniateir"
 
 #: cups/kmwusers.cpp:42
+#, kde-format
 msgid "Denied Users"
 msgstr "Defnyddwyr a Wrthodir"
 
 #: cups/kmwusers.cpp:44
+#, kde-format
 msgid "Define here a group of allowed/denied users for this printer."
 msgstr ""
 "Diffiniwch yma grwp o ddefnyddwyr a chaniateir neu a wrthodir am yr "
 "argraffydd yma."
 
 #: cups/kmwusers.cpp:45 management/kxmlcommanddlg.cpp:116
+#, kde-format
 msgid "&Type:"
 msgstr "&Math:"
 
 #: cups/kphpgl2page.cpp:32
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt> <b>Print in Black Only (Blackplot)</b>  <p>The 'blackplot' option "
 "specifies that all pens should plot in black-only: The default is to use the "
@@ -877,6 +1004,7 @@ msgstr ""
 "faes golygu am y llinell.</qt>"
 
 #: cups/kphpgl2page.cpp:47
+#, kde-format
 msgid ""
 " <qt> <b>Scale Print Image to Page Size</b>  <p>The 'fitplot' option "
 "specifies that the HP-GL image should be scaled to fill exactly the page "
@@ -894,6 +1022,7 @@ msgid ""
 msgstr ""
 
 #: cups/kphpgl2page.cpp:67
+#, kde-format
 msgid ""
 " <qt> <b>Set Pen Width for HP-GL (if not defined in file)</b>.  <p>The pen "
 "width value can be set here in case the original HP-GL file does not have it "
@@ -908,6 +1037,7 @@ msgid ""
 msgstr ""
 
 #: cups/kphpgl2page.cpp:84
+#, kde-format
 msgid ""
 " <qt> <b>HP-GL Print Options</b> <p>All options on this page are only "
 "applicable if you use KDEPrint to send HP-GL and HP-GL/2 files to one of "
@@ -926,23 +1056,27 @@ msgid ""
 msgstr ""
 
 #: cups/kphpgl2page.cpp:112
+#, kde-format
 msgid "HP-GL/2 Options"
 msgstr "Dewisiadau HP-GL/2 "
 
 #: cups/kphpgl2page.cpp:115
+#, kde-format
 msgid "&Use only black pen"
 msgstr "&Defnyddiwch dim ond pen-ysgrifennu du"
 
 #: cups/kphpgl2page.cpp:118
+#, kde-format
 msgid "&Fit plot to page"
 msgstr "&Ffitio'r plot i'r dudalen"
 
 #: cups/kphpgl2page.cpp:122
+#, kde-format
 msgid "&Pen width:"
 msgstr "&Lled y pen-ysgrifennu"
 
 #: cups/kpimagepage.cpp:43
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt> <p><b>Brightness:</b> Slider to control the brightness value of all "
 "colors used.</p> <p>The brightness value can range from 0 to 200. Values "
@@ -957,6 +1091,7 @@ msgstr ""
 "deipio'r rhif yn uniongyrchol i mewn i'r blwch.</qt>"
 
 #: cups/kpimagepage.cpp:57
+#, kde-format
 msgid ""
 " <qt> <p><b>Hue (Tint):</b> Slider to control the hue value for color "
 "rotation.</p> <p>The hue value is a number from -360 to 360 and represents "
@@ -977,7 +1112,7 @@ msgid ""
 msgstr ""
 
 #: cups/kpimagepage.cpp:82
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt>  <p><b>Saturation:</b> Slider to control the saturation value for all "
 "colors used.</p> <p> The saturation value adjusts the saturation of the "
@@ -995,7 +1130,7 @@ msgstr ""
 "deipio'r rhif yn uniongyrchol i mewn i'r blwch.</qt>"
 
 #: cups/kpimagepage.cpp:100
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt>  <p><b>Gamma:</b> Slider to control the gamma value for color "
 "correction.</p> <p> The gamma value can range from 1 to 3000. A gamma value "
@@ -1011,6 +1146,7 @@ msgstr ""
 "deipio'r rhif yn uniongyrchol i mewn i'r blwch.</qt>"
 
 #: cups/kpimagepage.cpp:117
+#, kde-format
 msgid ""
 " <qt>  <p><b>Image Printing Options</b></p> <p>All options controlled on "
 "this page only apply to printing images. Most image file formats are "
@@ -1023,6 +1159,7 @@ msgid ""
 msgstr ""
 
 #: cups/kpimagepage.cpp:135
+#, kde-format
 msgid ""
 " <qt> <p><b>Coloration Preview Thumbnail</b></p> <p>The coloration preview "
 "thumbnail indicates change of image coloration by different settings. "
@@ -1034,6 +1171,7 @@ msgid ""
 msgstr ""
 
 #: cups/kpimagepage.cpp:151
+#, kde-format
 msgid ""
 " <qt>  <p><b>Image Size:</b> Drop-down menu to control the image size on the "
 "printed paper. The menu works in conjunction with slider below. The options "
@@ -1067,6 +1205,7 @@ msgid ""
 msgstr ""
 
 #: cups/kpimagepage.cpp:191
+#, kde-format
 msgid ""
 " <qt> <p><b>Position Preview Thumbnail</b></p> <p>This position preview "
 "thumbnail indicates the position of the image on the paper sheet.</p> "
@@ -1078,6 +1217,7 @@ msgid ""
 msgstr ""
 
 #: cups/kpimagepage.cpp:209
+#, kde-format
 msgid ""
 "<qt> <p><b>Reset to Default Values</b></p> <p>Reset all coloration settings "
 "to default values. Default values are: <ul> <li> Brightness: 100 </li> <li> "
@@ -1086,7 +1226,7 @@ msgid ""
 msgstr ""
 
 #: cups/kpimagepage.cpp:221
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt>  <p><b>Image Positioning:</b></p> <p>Select a pair of radio buttons to "
 "move the image to the position you want on the paper printout. Default is "
@@ -1101,64 +1241,77 @@ msgstr ""
 "faes golygu am y llinell.</qt>"
 
 #: cups/kpimagepage.cpp:236
+#, kde-format
 msgid "Image"
 msgstr "Delwedd"
 
 #: cups/kpimagepage.cpp:238
+#, kde-format
 msgid "Color Settings"
 msgstr "Gosodiadau Lliw"
 
 #: cups/kpimagepage.cpp:241
+#, kde-format
 msgid "Image Size"
 msgstr "Maint Delwedd"
 
 #: cups/kpimagepage.cpp:244
+#, kde-format
 msgid "Image Position"
 msgstr "Safle'r Ddelwedd"
 
 #: cups/kpimagepage.cpp:249
+#, kde-format
 msgid "&Brightness:"
 msgstr "&Glowyder:"
 
 #: cups/kpimagepage.cpp:254
+#, kde-format
 msgid "&Hue (Color rotation):"
 msgstr "&Arlliw (Cylchdro lliw):"
 
 #: cups/kpimagepage.cpp:259
+#, kde-format
 msgid "&Saturation:"
 msgstr "&Dirlawnder:"
 
 #: cups/kpimagepage.cpp:264
+#, kde-format
 msgid "&Gamma (Color correction):"
 msgstr "&Gama (Cywiro lliw):"
 
 #: cups/kpimagepage.cpp:285
+#, kde-format
 msgid "&Default Settings"
 msgstr "Gosodiadau &Rhagosodedig"
 
 #: cups/kpimagepage.cpp:291
+#, kde-format
 msgid "Natural Image Size"
 msgstr "Llun ar goll"
 
 #: cups/kpimagepage.cpp:292
+#, kde-format
 msgid "Resolution (ppi)"
 msgstr "Cydraniad (ppi)"
 
 #: cups/kpimagepage.cpp:294
-#, no-c-format
+#, no-c-format, kde-format
 msgid "% of Page"
 msgstr "% o'r Dudalen"
 
 #: cups/kpimagepage.cpp:296
-#, no-c-format
+#, no-c-format, kde-format
 msgid "% of Natural Image Size"
 msgstr "% o Faint Naturiol y Ddelwedd"
 
 #: cups/kpimagepage.cpp:306
+#, kde-format
 msgid "&Image size type:"
 msgstr "&Math maint y ddelwedd"
 
 #: cups/kpschedulepage.cpp:39
+#, kde-format
 msgid ""
 " <qt> <p><b>Print Job Billing and Accounting</b></p>  <p>Insert a meaningful "
 "string here to associate the current print job with a certain account. This "
@@ -1174,6 +1327,7 @@ msgid ""
 msgstr ""
 
 #: cups/kpschedulepage.cpp:59
+#, kde-format
 msgid ""
 " <qt> <p><b>Scheduled Printing</b></p>  <p>Scheduled printing lets you "
 "control the time of the actual printout, while you can still send away your "
@@ -1193,7 +1347,7 @@ msgid ""
 msgstr ""
 
 #: cups/kpschedulepage.cpp:86
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt> <p><b>Page Labels</b></p>  <p>Page Labels are printed by CUPS at the "
 "top and bottom of each page. They appear on the pages surrounded by a little "
@@ -1209,6 +1363,7 @@ msgstr ""
 "faes golygu am y llinell.</qt>"
 
 #: cups/kpschedulepage.cpp:101
+#, kde-format
 msgid ""
 " <qt> <p><b>Job Priority</b></p>  <p>Usually CUPS prints all jobs per queue "
 "according to the \"FIFO\" principle: <em>First In, First Out</em>.</p> <p> "
@@ -1226,71 +1381,84 @@ msgid ""
 msgstr ""
 
 #: cups/kpschedulepage.cpp:125
+#, kde-format
 msgid "Advanced Options"
 msgstr "Dewisiadau Uwch"
 
 #: cups/kpschedulepage.cpp:136
+#, kde-format
 msgid "Immediately"
 msgstr "Syth bin"
 
 #: cups/kpschedulepage.cpp:137
+#, kde-format
 msgid "Never (hold indefinitely)"
 msgstr "Byth (cadw am gyfnod amhenodol)"
 
 #: cups/kpschedulepage.cpp:138
+#, kde-format
 msgid "Daytime "
 msgstr ""
 
 #: cups/kpschedulepage.cpp:139
+#, kde-format
 msgid "Evening"
 msgstr ""
 
 #: cups/kpschedulepage.cpp:140
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid "&Right:"
 msgid "Night"
 msgstr "&De:"
 
 #: cups/kpschedulepage.cpp:141
+#, kde-format
 msgid "Weekend"
 msgstr "Penwythnos"
 
 #: cups/kpschedulepage.cpp:142
+#, kde-format
 msgid "Second Shift (after close of business)"
 msgstr ""
 
 #: cups/kpschedulepage.cpp:143
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid "Third Shift (12 am - 8 am)"
 msgid "Third Shift (after midnight)"
 msgstr "Trydydd Cyfnod (12am-8am)"
 
 #: cups/kpschedulepage.cpp:144
+#, kde-format
 msgid "Specified Time"
 msgstr "Amser Penodol"
 
 #: cups/kpschedulepage.cpp:162
-#, fuzzy
+#, fuzzy, kde-format
 msgid "&Scheduled printing:"
 msgstr "&Trefnlennu argraffu:"
 
 #: cups/kpschedulepage.cpp:165
+#, kde-format
 msgid "&Billing information:"
 msgstr "&Gwybodaeth anfonebau:"
 
 #: cups/kpschedulepage.cpp:168
+#, kde-format
 msgid "T&op/Bottom page label:"
 msgstr "Label &Pen/Gwaelod y dudalen"
 
 #: cups/kpschedulepage.cpp:171
+#, kde-format
 msgid "&Job priority:"
 msgstr "&Blaenoriaeth y Swydd"
 
 #: cups/kpschedulepage.cpp:204
+#, kde-format
 msgid "The time specified is not valid."
 msgstr "Mae'r amser a phenodwyd yn annilys."
 
 #: cups/kptagspage.cpp:36
+#, kde-format
 msgid ""
 " <ul> <li>'Use any current or future standard CUPS job option' is not "
 "supported by the KDEPrint GUI.</li> <li>Control any custom job option you "
@@ -1324,20 +1492,24 @@ msgid ""
 msgstr ""
 
 #: cups/kptagspage.cpp:73
+#, kde-format
 msgid "Additional Tags"
 msgstr "Tagiau Ychwanegol"
 
 #: cups/kptagspage.cpp:77 kfilelist.cpp:100 kpfilterpage.cpp:396
 #: management/kmjobviewer.cpp:258 management/kmwend.cpp:54
 #: management/kxmlcommanddlg.cpp:141 management/kxmlcommanddlg.cpp:551
+#, kde-format
 msgid "Name"
 msgstr "Enw"
 
 #: cups/kptagspage.cpp:77
+#, kde-format
 msgid "Value"
 msgstr "Gwerth"
 
 #: cups/kptagspage.cpp:93
+#, kde-format
 msgid "Read-Only"
 msgstr "Darllenadwy yn Unig"
 
@@ -1347,7 +1519,7 @@ msgid "The tag name must not contain any spaces, tabs or quotes: <b>%1</b>."
 msgstr "Ni chaiff enw'r tag gynnwys bylchnodau: <b>%1</b>."
 
 #: cups/kptextpage.cpp:40
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt> <p><b>Characters Per Inch</b></p> <p>This setting controls the "
 "horizontal size of characters when printing a text file. </p> <p>The default "
@@ -1363,7 +1535,7 @@ msgstr ""
 "faes golygu am y llinell.</qt>"
 
 #: cups/kptextpage.cpp:54
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt> <p><b>Lines Per Inch</b></p>  <p>This setting controls the vertical "
 "size of characters when printing a text file. </p> <p>The default value is "
@@ -1379,7 +1551,7 @@ msgstr ""
 "faes golygu am y llinell.</qt>"
 
 #: cups/kptextpage.cpp:68
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt> <p><b>Columns</b></p> <p>This setting controls how many columns of "
 "text will be printed on each page when printing text files. </p> <p>The "
@@ -1395,11 +1567,12 @@ msgstr ""
 "faes golygu am y llinell.</qt>"
 
 #: cups/kptextpage.cpp:83
+#, kde-format
 msgid " <qt>  Preview icon changes when you turn on or off prettyprint.  </qt>"
 msgstr ""
 
 #: cups/kptextpage.cpp:86
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt> <p><b>Text Formats</b></p> <p>These settings control the appearance of "
 "text on printouts. They are only valid for printing text files or input "
@@ -1419,6 +1592,7 @@ msgstr ""
 "deipio'r rhif yn uniongyrchol i mewn i'r blwch.</qt>"
 
 #: cups/kptextpage.cpp:107
+#, kde-format
 msgid ""
 " <qt> <p><b>Margins</b></p> <p>These settings control the margins of "
 "printouts on the paper. They are not valid for jobs originating from "
@@ -1439,7 +1613,7 @@ msgid ""
 msgstr ""
 
 #: cups/kptextpage.cpp:133
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt> <p><b>Turn Text Printing with Syntax Highlighting (Prettyprint) On.</"
 "b></p> <p>ASCII text file printouts can be 'prettyfied' by enabling this "
@@ -1459,7 +1633,7 @@ msgstr ""
 "faes golygu am y llinell.</qt>"
 
 #: cups/kptextpage.cpp:152
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt> <p><b>Turn Text Printing with Syntax Highlighting (Prettyprint) Off.</"
 "b></p> <p>ASCII text file printed with this option turned off appear without "
@@ -1474,7 +1648,7 @@ msgstr ""
 "faes golygu am y llinell.</qt>"
 
 #: cups/kptextpage.cpp:166
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt> <p><b>Print Text with Syntax Highlighting (Prettyprint)</b></p>  "
 "<p>ASCII file printouts can be 'prettyfied' by enabling this option. If you "
@@ -1494,60 +1668,74 @@ msgstr ""
 "faes golygu am y llinell.</qt>"
 
 #: cups/kptextpage.cpp:187
+#, kde-format
 msgid "Text"
 msgstr "Testun"
 
 #: cups/kptextpage.cpp:190
+#, kde-format
 msgid "Text Format"
 msgstr "Fformat y Testun"
 
 #: cups/kptextpage.cpp:193
+#, kde-format
 msgid "Syntax Highlighting"
 msgstr "Amlygu Cystrawen"
 
 #: cups/kptextpage.cpp:196 kpmarginpage.cpp:41 kpmarginpage.cpp:44
+#, kde-format
 msgid "Margins"
 msgstr "Ymylon"
 
 #: cups/kptextpage.cpp:202
+#, kde-format
 msgid "&Chars per inch:"
 msgstr "&Nodau y modfedd:"
 
 #: cups/kptextpage.cpp:206
+#, kde-format
 msgid "&Lines per inch:"
 msgstr "&Llinellau y modfedd:"
 
 #: cups/kptextpage.cpp:210
+#, kde-format
 msgid "C&olumns:"
 msgstr "&Colofnau:"
 
 #: cups/kptextpage.cpp:221
+#, kde-format
 msgid "&Disabled"
 msgstr "&Analluogir"
 
 #: cups/kptextpage.cpp:223
+#, kde-format
 msgid "&Enabled"
 msgstr "All&uogir"
 
 #: driver.cpp:359 kpgeneralpage.cpp:257 lpd/lpdtools.cpp:290
 #: management/kmconfiggeneral.cpp:45 management/kmpropgeneral.cpp:56
 #: management/kmwend.cpp:52
+#, kde-format
 msgid "General"
 msgstr "Cyffredinol"
 
 #: driver.cpp:367 foomatic2loader.cpp:234
+#, kde-format
 msgid "Adjustments"
 msgstr "Addasiadau"
 
 #: driver.cpp:369
+#, kde-format
 msgid "JCL"
 msgstr "JCL"
 
 #: driver.cpp:371 management/kmwlocal.cpp:60
+#, kde-format
 msgid "Others"
 msgstr "Eraill"
 
 #: driverview.cpp:39
+#, kde-format
 msgid ""
 " <qt> <b>List of Driver Options (from PPD)</b>. <p>The upper pane of this "
 "dialog page contains all print job options as laid down in the printer's "
@@ -1571,6 +1759,7 @@ msgid ""
 msgstr ""
 
 #: driverview.cpp:63
+#, kde-format
 msgid ""
 " <qt> <b>List of Possible Values for given Option (from PPD)</b>. <p>The "
 "lower pane of this dialog page contains all possible values of the print "
@@ -1593,30 +1782,37 @@ msgid ""
 msgstr ""
 
 #: droptionview.cpp:61
+#, kde-format
 msgid "Value:"
 msgstr "Gwerth:"
 
 #: droptionview.cpp:169
+#, kde-format
 msgid "String value:"
 msgstr "Gwerth llinyn:"
 
 #: droptionview.cpp:297 droptionview.cpp:351
+#, kde-format
 msgid "No Option Selected"
 msgstr "Dim Dewis wedi ei Wneud"
 
 #: ext/kextprinterimpl.cpp:46
+#, kde-format
 msgid "Empty print command."
 msgstr "Mae'r gorchymyn argraffu yn wag."
 
 #: ext/kmextmanager.cpp:40
+#, kde-format
 msgid "PS_printer"
 msgstr "Argraffydd_PS"
 
 #: ext/kmextmanager.cpp:42
+#, kde-format
 msgid "PostScript file generator"
 msgstr "Creuydd ffeil PostScript"
 
 #: foomatic/kfoomaticprinterimpl.cpp:49 lpdunix/klpdunixprinterimpl.cpp:70
+#, kde-format
 msgid ""
 "No valid print executable was found in your path. Check your installation."
 msgstr ""
@@ -1624,11 +1820,12 @@ msgstr ""
 "gosodiad."
 
 #: foomatic/kmfoomaticmanager.cpp:67
+#, kde-format
 msgid "This is not a Foomatic printer"
 msgstr "Nid yw hwn yn argraffydd Foomatic"
 
 #: foomatic/kmfoomaticmanager.cpp:70
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Some printer information is missing"
 msgstr "Mae gwybodaeth argraffydd ar goll"
 
@@ -1645,7 +1842,7 @@ msgstr ""
 "oedd:</nobr></p><br>%1"
 
 #: kdeprintd/kdeprintd.cpp:185
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 "Some of the files to printed are not readable by the KDE print daemon. This "
 "may happen if you are trying to print as a different user to the one "
@@ -1658,7 +1855,7 @@ msgstr ""
 "cyfrinair gwraidd. "
 
 #: kdeprintd/kdeprintd.cpp:190
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Enter the root password"
 msgstr "Darparu cyfrinair gwraidd"
 
@@ -1668,6 +1865,7 @@ msgid "Printing Status - %1"
 msgstr "Cyflwr Argraffu - %1"
 
 #: kdeprintd/kdeprintd.cpp:267
+#, kde-format
 msgid "Printing system"
 msgstr " Cysawd argraffu"
 
@@ -1677,6 +1875,7 @@ msgid "Authentication failed (user name=%1)"
 msgstr "Methodd y dilysiant (enw'r defnyddiwr=%1)"
 
 #: kdeprintd/kprintprocess.cpp:81
+#, kde-format
 msgid "File transfer failed."
 msgstr "Methu trosglwyddo'r ffeil."
 
@@ -1691,6 +1890,7 @@ msgid "<b>%1</b>: execution failed with message:<p>%2</p>"
 msgstr "<b>%1</b>: methodd gweithrediad efo'r neges:<p>%2</p>"
 
 #: kfilelist.cpp:40
+#, kde-format
 msgid ""
 " <qt> <b>Add File button</b> <p>This button calls the <em>'File Open'</em> "
 "dialog to let you select a file for printing. Note, that  <ul><li>you can "
@@ -1701,7 +1901,7 @@ msgid ""
 msgstr ""
 
 #: kfilelist.cpp:52
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt> <b>Remove File button</b> <p>This button removes the highlighted file "
 "from the list of to-be-printed files.</p> </qt>"
@@ -1710,7 +1910,7 @@ msgstr ""
 "argraffu.</qt>"
 
 #: kfilelist.cpp:57
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt> <b>Move File Up button</b> <p>This button moves the highlighted file "
 "up in the list of files to be printed.</p> <p>In effect, this changes the "
@@ -1721,7 +1921,7 @@ msgstr ""
 "ffeiliau.</p> </qt>"
 
 #: kfilelist.cpp:64
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt> <b>Move File Down button</b> <p>This button moves the highlighted file "
 "down in the list of files to be printed.</p> <p>In effect, this changes the "
@@ -1732,7 +1932,7 @@ msgstr ""
 "ffeiliau.</p> </qt>"
 
 #: kfilelist.cpp:71
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt> <b>File Open button</b> <p>This button tries to open the highlighted "
 "file, so you can view or edit it before you send it to the printing system.</"
@@ -1745,6 +1945,7 @@ msgstr ""
 "y ffeil.</p> </qt>"
 
 #: kfilelist.cpp:80
+#, kde-format
 msgid ""
 " <qt> <b>File List view</b> <p>This list displays all the files you selected "
 "for printing. You can see the file name(s), file path(s) and the file (MIME) "
@@ -1761,34 +1962,42 @@ msgstr ""
 
 #: kfilelist.cpp:100 management/kmwend.cpp:53 management/kmwend.cpp:104
 #: management/kmwend.cpp:106
+#, kde-format
 msgid "Type"
 msgstr "Math"
 
 #: kfilelist.cpp:100
+#, kde-format
 msgid "Path"
 msgstr "Llwybr"
 
 #: kfilelist.cpp:109
+#, kde-format
 msgid "Add file"
 msgstr "Ychwanegu  ffeil"
 
 #: kfilelist.cpp:115
+#, kde-format
 msgid "Remove file"
 msgstr "Gwaredu ffeil"
 
 #: kfilelist.cpp:122
+#, kde-format
 msgid "Open file"
 msgstr "Agor ffeil"
 
 #: kfilelist.cpp:129 management/kxmlcommanddlg.cpp:157
+#, kde-format
 msgid "Move up"
 msgstr "Symud i fyny"
 
 #: kfilelist.cpp:136 management/kxmlcommanddlg.cpp:158
+#, kde-format
 msgid "Move down"
 msgstr "Symud i lawr"
 
 #: kfilelist.cpp:143
+#, kde-format
 msgid ""
 "Drag file(s) here or use the button to open a file dialog. Leave empty for "
 "<b>&lt;STDIN&gt;</b>."
@@ -1802,49 +2011,52 @@ msgid "<qt>There was an error loading %1. The diagnostic is:<p>%2</p></qt>"
 msgstr "<qt>Gwall wrth lwytho %1.  Y  ddeiagnostig yw:<p>%2</p></qt>"
 
 #: kmjob.cpp:113
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid "Queued"
 msgid "Queued"
 msgstr "Mewn Ciw"
 
 #: kmjob.cpp:116
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid "Held"
 msgid "Held"
 msgstr "Ar afael"
 
 #: kmjob.cpp:119 tools/escputil/escpwidget.cpp:228
+#, kde-format
 msgid "Error"
 msgstr ""
 
 #: kmjob.cpp:122
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid "Canceled"
 msgid "Canceled"
 msgstr "Gwrthwnaed"
 
 #: kmjob.cpp:125
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid "Aborted"
 msgid "Aborted"
 msgstr "Terfynwyd"
 
 #: kmjob.cpp:128
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid "Completed"
 msgid "Completed"
 msgstr "Gorffenwyd"
 
 #: kmmanager.cpp:75
+#, kde-format
 msgid "This operation is not implemented."
 msgstr "Ni chynhelir y gweithrediad yma."
 
 #: kmmanager.cpp:172
+#, kde-format
 msgid "Unable to locate test page."
 msgstr "Methu canfod tudalen arbrawf."
 
 #: kmmanager.cpp:455
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Can not overwrite regular printer with special printer settings."
 msgstr ""
 "Methu ysgrifennu dros yr argraffydd arferol efo gosodiadau argraffydd "
@@ -1861,30 +2073,37 @@ msgid "Unable to load KDE print management library: %1"
 msgstr "Methu llwytho rhaglengell rheoli argraffu KDE: %1"
 
 #: kmmanager.cpp:495 kxmlcommand.cpp:633
+#, kde-format
 msgid "Unable to find wizard object in management library."
 msgstr "Methu canfod gwrthrych dewin yn y rhaglengell rheoli."
 
 #: kmmanager.cpp:510
+#, kde-format
 msgid "Unable to find options dialog in management library."
 msgstr "Methu canfod ymgom dewisiadau yn y rhaglengell rheoli."
 
 #: kmmanager.cpp:537
+#, kde-format
 msgid "No plugin information available"
 msgstr "Dim gwybodaeth ategyn ar gael."
 
 #: kmprinter.cpp:140
+#, kde-format
 msgid "(rejecting jobs)"
 msgstr "(gwrthod swyddi)"
 
 #: kmprinter.cpp:140
+#, kde-format
 msgid "(accepting jobs)"
 msgstr "(derbyn swyddi)"
 
 #: kmprinter.cpp:185 kprintdialog.cpp:960
+#, kde-format
 msgid "All Files"
 msgstr "Pob Ffeil"
 
 #: kmspecialmanager.cpp:51
+#, kde-format
 msgid ""
 "A file share/kdeprint/specials.desktop was found in your local KDE "
 "directory. This file probably comes from a previous KDE release and should "
@@ -1910,11 +2129,12 @@ msgid ""
 msgstr ""
 
 #: kmvirtualmanager.cpp:159 management/kminstancepage.cpp:93
+#, kde-format
 msgid "Set as Default"
 msgstr "Gosod fel Rhagosodiad"
 
 #: kpcopiespage.cpp:46
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt><p><b>Page Selection</b></p>  <p>Here you can control if you print a "
 "certain selection only out of all the pages from the complete document. </p> "
@@ -1924,7 +2144,7 @@ msgstr ""
 "dudalennau i gyd y ddogfen gyflawn. </qt>"
 
 #: kpcopiespage.cpp:51
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt><b>All Pages:</b> Select \"All\" to print the complete document. Since "
 "this is the default, it is pre-selected. </qt>"
@@ -1933,6 +2153,7 @@ msgstr ""
 "rhagosodiad, mae o wedi'i ddewis yn barod.</qt>"
 
 #: kpcopiespage.cpp:54
+#, kde-format
 msgid ""
 " <qt><b>Current Page:</b> Select <em>\"Current\"</em> if you want to print "
 "the page currently visible in your KDE application. <p><b>Note:</b> this "
@@ -1942,7 +2163,7 @@ msgid ""
 msgstr ""
 
 #: kpcopiespage.cpp:59
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt><b>Page Range:</b> Choose a \"Page Range\" to select a subset of the "
 "complete document pages to be printed. The format is <em>\"n,m,o-p,q,r,s-t, u"
@@ -1960,6 +2181,7 @@ msgstr ""
 "p></qt>"
 
 #: kpcopiespage.cpp:73
+#, kde-format
 msgid ""
 " <qt><b>Page Set:</b> <p>Choose <em>\"All Pages\"</em>, <em>\"Even Pages\"</"
 "em> or <em>\"Odd Pages\"</em> if you want to print a page selection matching "
@@ -1978,7 +2200,7 @@ msgid ""
 msgstr ""
 
 #: kpcopiespage.cpp:95
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt><b>Output Settings:</b> <p>Here you can determine the number of copies, "
 "the output order and the collate mode for the pages of your print job. "
@@ -1995,7 +2217,7 @@ msgstr ""
 "deipio'r rhif yn uniongyrchol i mewn i'r blwch.</qt>"
 
 #: kpcopiespage.cpp:113
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt><b>Number of Copies:</b> Determine the number of requested copies here. "
 "<p>You can increase or decrease the number of printed copies by clicking on "
@@ -2010,7 +2232,7 @@ msgstr ""
 "deipio'r rhif yn uniongyrchol i mewn i'r blwch.</qt>"
 
 #: kpcopiespage.cpp:126
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt><b>Collate Copies</b> <p>If the <em>\"Collate\"</em> checkbox is "
 "enabled (default), the output order for multiple copies of a multi-page "
@@ -2028,7 +2250,7 @@ msgstr ""
 "dogfen aml-dudalen yn \"1-1-1-..., 2-2-2-..., 3-3-3-...\".</p></qt>"
 
 #: kpcopiespage.cpp:140
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt><b>Reverse Order</b> <p> If the <em>\"Reverse\"</em> checkbox is "
 "enabled, the output order for multiple copies of a multi-page document will "
@@ -2051,26 +2273,32 @@ msgstr ""
 "blwch cadarnhau <em>\"Coladu\"</em> yr un pryd.</p></qt>"
 
 #: kpcopiespage.cpp:161
+#, kde-format
 msgid "C&opies"
 msgstr "C&opiau"
 
 #: kpcopiespage.cpp:167
+#, kde-format
 msgid "Page Selection"
 msgstr "Dewis Tudalen"
 
 #: kpcopiespage.cpp:169
+#, kde-format
 msgid "&All"
 msgstr "&Popeth"
 
 #: kpcopiespage.cpp:171
+#, kde-format
 msgid "Cu&rrent"
 msgstr "Cy&fredol"
 
 #: kpcopiespage.cpp:173
+#, kde-format
 msgid "Ran&ge"
 msgstr "Amre&diad"
 
 #: kpcopiespage.cpp:178
+#, kde-format
 msgid ""
 "<p>Enter pages or group of pages to print separated by commas (1,2-5,8).</p>"
 msgstr ""
@@ -2078,48 +2306,57 @@ msgstr ""
 "gan gollnodau (1,2-5,8).</p>"
 
 #: kpcopiespage.cpp:184
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Output Settings"
 msgstr "Gosodiadau Ffeil Allbwn"
 
 #: kpcopiespage.cpp:186
+#, kde-format
 msgid "Co&llate"
 msgstr "Co&ladu"
 
 #: kpcopiespage.cpp:188
+#, kde-format
 msgid "Re&verse"
 msgstr "Gwrthd&roi"
 
 #: kpcopiespage.cpp:193
+#, kde-format
 msgid "Cop&ies:"
 msgstr "Co&pÃ¯au"
 
 #: kpcopiespage.cpp:200
+#, kde-format
 msgid "All Pages"
 msgstr "Pob tudalen"
 
 #: kpcopiespage.cpp:201
+#, kde-format
 msgid "Odd Pages"
 msgstr "Tudalennau Odrif"
 
 #: kpcopiespage.cpp:202
+#, kde-format
 msgid "Even Pages"
 msgstr "Tudalennau Ailrif"
 
 #: kpcopiespage.cpp:204
+#, kde-format
 msgid "Page &set:"
 msgstr "&Set o dudalennau"
 
 #: kpcopiespage.cpp:268
+#, kde-format
 msgid "Pages"
 msgstr "Tudalennau"
 
 #: kpdriverpage.cpp:30 management/kmpropdriver.cpp:56
+#, kde-format
 msgid "Driver Settings"
 msgstr "Gosodiadau Gyrrydd"
 
 #: kpdriverpage.cpp:48
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 "<qt>Some options selected are in conflict. You must resolve those conflicts "
 "before continuing. See the <b>Driver Settings</b> tab for detailed "
@@ -2129,10 +2366,12 @@ msgstr ""
 "cyn fynd ymlaen.  Gweler y tab <b>Uwch</b> am wybodaeth manwl.</qt>  "
 
 #: kpfileselectpage.cpp:32
+#, kde-format
 msgid "&Files"
 msgstr "&Ffeiliau"
 
 #: kpfilterpage.cpp:40
+#, kde-format
 msgid ""
 " <qt> <b>Add Filter button</b> <p>This button calls a little dialog to let "
 "you select a filter here.</p> <p><b>Note 1:</b> You can chain different "
@@ -2144,7 +2383,7 @@ msgid ""
 msgstr ""
 
 #: kpfilterpage.cpp:51
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt> <b>Remove Filter button</b> <p>This button removes the highlighted "
 "filter from the list of filters.</p> </qt>"
@@ -2153,7 +2392,7 @@ msgstr ""
 "argraffu.</qt>"
 
 #: kpfilterpage.cpp:56
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt> <b>Move Filter Up button</b> <p>This button moves the highlighted "
 "filter up in the list of filters, towards the front of the filtering chain. "
@@ -2164,7 +2403,7 @@ msgstr ""
 "ffeiliau.</p> </qt>"
 
 #: kpfilterpage.cpp:61
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt> <b>Move Filter Down button</b> <p>This button moves the highlighted "
 "filter down in the list of filters, towards the end of the filtering chain.."
@@ -2175,7 +2414,7 @@ msgstr ""
 "ffeiliau.</p> </qt>"
 
 #: kpfilterpage.cpp:66
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt> <b>Configure Filter button</b> <p>This button lets you configure the "
 "currently highlighted filter. It opens a separate dialog.  </p> </qt>"
@@ -2184,6 +2423,7 @@ msgstr ""
 "argraffu.</qt>"
 
 #: kpfilterpage.cpp:72
+#, kde-format
 msgid ""
 " <qt> <b>Filter Info Pane</b> <p>This field shows some general info about "
 "the selected filter. Amongst them are:  <ul>  <li>the <em>filter name</em> "
@@ -2197,6 +2437,7 @@ msgid ""
 msgstr ""
 
 #: kpfilterpage.cpp:88
+#, kde-format
 msgid ""
 " <qt> <b>Filtering Chain</b> (if enabled, is run <em>before</em> actual job "
 "submission to print system.) <p>This field shows which filters are currently "
@@ -2227,34 +2468,42 @@ msgid ""
 msgstr ""
 
 #: kpfilterpage.cpp:122
+#, kde-format
 msgid "Filters"
 msgstr "Hidlau"
 
 #: kpfilterpage.cpp:134
+#, kde-format
 msgid "Add filter"
 msgstr "Ychwanegu hidl"
 
 #: kpfilterpage.cpp:139
+#, kde-format
 msgid "Remove filter"
 msgstr "Gwaredu hidl"
 
 #: kpfilterpage.cpp:144
+#, kde-format
 msgid "Move filter up"
 msgstr "Symud yr hidl i fyny"
 
 #: kpfilterpage.cpp:149
+#, kde-format
 msgid "Move filter down"
 msgstr "Symud yr hidl i lawr"
 
 #: kpfilterpage.cpp:154
+#, kde-format
 msgid "Configure filter"
 msgstr "Ffurweddu hidl"
 
 #: kpfilterpage.cpp:281
+#, kde-format
 msgid "Internal error: unable to load filter."
 msgstr "Gwall mewnol: methu llwytho hidl."
 
 #: kpfilterpage.cpp:385
+#, kde-format
 msgid ""
 "<p>The filter chain is wrong. The output format of at least one filter is "
 "not supported by its follower. See <b>Filters</b> tab for more information.</"
@@ -2264,90 +2513,112 @@ msgstr ""
 "leiaf gan ei ddilynnydd. Gweler y tab <b>Hidlau</b> am fwy o wybodaeth.</p> "
 
 #: kpfilterpage.cpp:397 management/kxmlcommanddlg.cpp:845
+#, kde-format
 msgid "Requirements"
 msgstr "Gofynion"
 
 #: kpfilterpage.cpp:398
+#, kde-format
 msgid "Input"
 msgstr "Mewnbwn"
 
 #: kpfilterpage.cpp:399 tools/escputil/escpwidget.cpp:226
+#, kde-format
 msgid "Output"
 msgstr "Allbwn"
 
 #: kpgeneralpage.cpp:83
+#, kde-format
 msgid "ISO A4"
 msgstr "ISO A4"
 
 #: kpgeneralpage.cpp:84 lpd/lpdtools.cpp:30
+#, kde-format
 msgid "US Letter"
 msgstr "Llythyren UD"
 
 #: kpgeneralpage.cpp:85 lpd/lpdtools.cpp:29
+#, kde-format
 msgid "US Legal"
 msgstr "Cyfreithiol UD"
 
 #: kpgeneralpage.cpp:86 lpd/lpdtools.cpp:28
+#, kde-format
 msgid "Ledger"
 msgstr "Llyfr cyfrifon "
 
 #: kpgeneralpage.cpp:87
+#, kde-format
 msgid "Folio"
 msgstr "Ffolio"
 
 #: kpgeneralpage.cpp:88
+#, kde-format
 msgid "US #10 Envelope"
 msgstr "Amlen UD #10"
 
 #: kpgeneralpage.cpp:89
+#, kde-format
 msgid "ISO DL Envelope"
 msgstr "Amlen ISO DL"
 
 #: kpgeneralpage.cpp:90
+#, kde-format
 msgid "Tabloid"
 msgstr "Tabloid"
 
 #: kpgeneralpage.cpp:91
+#, kde-format
 msgid "ISO A3"
 msgstr "ISO A3"
 
 #: kpgeneralpage.cpp:92
+#, kde-format
 msgid "ISO A2"
 msgstr "ISO A2"
 
 #: kpgeneralpage.cpp:93
+#, kde-format
 msgid "ISO A1"
 msgstr "ISO A1"
 
 #: kpgeneralpage.cpp:94
+#, kde-format
 msgid "ISO A0"
 msgstr "ISO A0"
 
 #: kpgeneralpage.cpp:104
+#, kde-format
 msgid "Upper Tray"
 msgstr "Hambwrdd Uwch"
 
 #: kpgeneralpage.cpp:105
+#, kde-format
 msgid "Lower Tray"
 msgstr "Hambwrdd Is"
 
 #: kpgeneralpage.cpp:106
+#, kde-format
 msgid "Multi-Purpose Tray"
 msgstr "Hambwrdd Aml-Bwrpas"
 
 #: kpgeneralpage.cpp:107
+#, kde-format
 msgid "Large Capacity Tray"
 msgstr "Hambwrdd Maint Mawr"
 
 #: kpgeneralpage.cpp:111
+#, kde-format
 msgid "Normal"
 msgstr "Arferol"
 
 #: kpgeneralpage.cpp:112
+#, kde-format
 msgid "Transparency"
 msgstr "Tryloywder"
 
 #: kpgeneralpage.cpp:121
+#, kde-format
 msgid ""
 " <qt> <p><b>\"General\"</b> </p>  <p>This dialog page contains <em>general</"
 "em> print job settings. General settings are applicable to most printers, "
@@ -2357,7 +2628,7 @@ msgid ""
 msgstr ""
 
 #: kpgeneralpage.cpp:129
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt> <p><b>Page size:</b> Select paper size to be printed on from the drop-"
 "down menu.</p> <p>The exact list of choices depends on the printer driver "
@@ -2372,7 +2643,7 @@ msgstr ""
 "faes golygu am y llinell.</qt>"
 
 #: kpgeneralpage.cpp:142
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt> <p><b>Paper type:</b> Select paper type to be printed on from the drop-"
 "down menu. </p> <p>The exact list of choices depends on the printer driver "
@@ -2387,7 +2658,7 @@ msgstr ""
 "faes golygu am y llinell.</qt>"
 
 #: kpgeneralpage.cpp:155
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt> <p><b>Paper source:</b> Select paper source tray for the paper to be "
 "printed on from the drop-down menu.</p> <p>The exact list of choices depends "
@@ -2402,6 +2673,7 @@ msgstr ""
 "deipio'r rhif yn uniongyrchol i mewn i'r blwch.</qt>"
 
 #: kpgeneralpage.cpp:168
+#, kde-format
 msgid ""
 " <qt> <p><b>Image Orientation:</b> Orientation of the printed page image on "
 "your paper is controlled by the radio buttons. By default, the orientation "
@@ -2417,6 +2689,7 @@ msgid ""
 msgstr ""
 
 #: kpgeneralpage.cpp:189
+#, kde-format
 msgid ""
 "<qt> <p><b>Duplex Printing:</b> These controls may be grayed out if your "
 "printer does not support <em>duplex printing</em> (i.e. printing on both "
@@ -2438,6 +2711,7 @@ msgid ""
 msgstr ""
 
 #: kpgeneralpage.cpp:214
+#, kde-format
 msgid ""
 " <qt> <p><b>Banner Page(s):</b> Select banner(s) to print one or two special "
 "sheets of paper just before or after your main job.</p> <p>Banners may "
@@ -2458,6 +2732,7 @@ msgid ""
 msgstr ""
 
 #: kpgeneralpage.cpp:236
+#, kde-format
 msgid ""
 "<qt> <p><b>Pages per Sheet:</b>  You can choose to print more than one page "
 "onto each sheet of paper. This is sometimes useful to save paper.</p> "
@@ -2475,83 +2750,100 @@ msgid ""
 msgstr ""
 
 #: kpgeneralpage.cpp:260 kpqtpage.cpp:117
+#, kde-format
 msgid "Page s&ize:"
 msgstr "&Maint papur:"
 
 #: kpgeneralpage.cpp:264
+#, kde-format
 msgid "Paper t&ype:"
 msgstr "Ma&th papur:"
 
 #: kpgeneralpage.cpp:268
+#, kde-format
 msgid "Paper so&urce:"
 msgstr "&Tarddiad papur:"
 
 #: kpgeneralpage.cpp:287 kpqtpage.cpp:122
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Orientation"
 msgstr "&Cyfeiriadaeth"
 
 #: kpgeneralpage.cpp:291
+#, kde-format
 msgid "Duplex Printing"
 msgstr "Argraffu ar y ddwy ochr"
 
 #: kpgeneralpage.cpp:297 kpqtpage.cpp:148
+#, kde-format
 msgid "Pages per Sheet"
 msgstr "Tudalennau y Dalen"
 
 #: kpgeneralpage.cpp:304 kpqtpage.cpp:128
+#, kde-format
 msgid "&Portrait"
 msgstr "&Darlun"
 
 #: kpgeneralpage.cpp:305 kpqtpage.cpp:131
+#, kde-format
 msgid "&Landscape"
 msgstr "&Tirlun"
 
 #: kpgeneralpage.cpp:306
+#, kde-format
 msgid "&Reverse landscape"
 msgstr "Ti&rlun gwrthdroi"
 
 #: kpgeneralpage.cpp:307
+#, kde-format
 msgid "R&everse portrait"
 msgstr "Dar&lun gwrthdroi"
 
 #: kpgeneralpage.cpp:312
+#, kde-format
 msgctxt "duplex orientation"
 msgid "&None"
 msgstr "&Dim"
 
 #: kpgeneralpage.cpp:313
+#, kde-format
 msgctxt "duplex orientation"
 msgid "Lon&g side"
 msgstr "Ochr &hir"
 
 #: kpgeneralpage.cpp:314
+#, kde-format
 msgctxt "duplex orientation"
 msgid "S&hort side"
 msgstr "Ochr &byr"
 
 #: kpgeneralpage.cpp:326
+#, kde-format
 msgid "S&tart:"
 msgstr "&Dechrau:"
 
 #: kpgeneralpage.cpp:327
+#, kde-format
 msgid "En&d:"
 msgstr "Di&wedd:"
 
 #: kpgeneralpage.cpp:424 lpd/lpdtools.cpp:40 management/kmconfiggeneral.cpp:54
+#, kde-format
 msgid "Disabled"
 msgstr "Analluogir"
 
 #: kpgeneralpage.cpp:425 lpd/lpdtools.cpp:39 lpr/editentrydialog.cpp:54
+#, kde-format
 msgid "Enabled"
 msgstr "Alluogir"
 
 #: kpposterpage.cpp:40
-#, fuzzy
+#, fuzzy, kde-format
 msgid " <qt>  5.  </qt>"
 msgstr "<qt><p> </p>. </qt>"
 
 #: kpposterpage.cpp:44
+#, kde-format
 msgid ""
 " <qt>  <b>Print Poster</b> (enabled or disabled). <p>If you enable this "
 "option, you can print posters of different sizes The printout will happen in "
@@ -2561,11 +2853,11 @@ msgid ""
 "dialog. </p> <p>This tab is only visible if the external <em>'poster'</em> "
 "utility is discovered by KDEPrint on your system. [<em>'poster'</em> is a "
 "command line utility that enables you to convert PostScript files into tiled "
-"printouts, with overlap to allow the tiles to be joined together seamlessly.]"
-"</p> <p><b>Note:</b> The standard version of 'poster' will not work. Your "
-"system must use a patched version of 'poster'. Ask your operating system "
-"vendor to provide a patched version of 'poster' if they do not do so already."
-"</p> <p><b>Additional hint for power users:</b> A patched version of "
+"printouts, with overlap to allow the tiles to be joined together "
+"seamlessly.]</p> <p><b>Note:</b> The standard version of 'poster' will not "
+"work. Your system must use a patched version of 'poster'. Ask your operating "
+"system vendor to provide a patched version of 'poster' if they do not do so "
+"already.</p> <p><b>Additional hint for power users:</b> A patched version of "
 "'poster' is available from the <a href=\"http://printing.kde.org/\">KDEPrint "
 "Website</a> at <a href=\"http://printing.kde.org/downloads/\">http://"
 "printing.kde.org/downloads/</a>. The direct link to the patched source "
@@ -2574,10 +2866,11 @@ msgid ""
 msgstr ""
 
 #: kpposterpage.cpp:66
+#, kde-format
 msgid ""
 " <qt> <b>Tile Selection widget</b> <p>This GUI element is <em>not only for "
-"viewing</em> your selections: it also lets you interactively select the tile"
-"(s) you want to print. </p> <p><b>Hints</b> <ul> <li>Click any tile to "
+"viewing</em> your selections: it also lets you interactively select the "
+"tile(s) you want to print. </p> <p><b>Hints</b> <ul> <li>Click any tile to "
 "select it for printing.</li> <li>To select multiple tiles to be printed at "
 "once, <em>'shift-click'</em> on the tiles ('shift-click' means: hold down "
 "the [SHIFT]-key on your keyboard and click with the mouse while [SHIFT]-key "
@@ -2591,6 +2884,7 @@ msgid ""
 msgstr ""
 
 #: kpposterpage.cpp:87
+#, kde-format
 msgid ""
 " <qt> <b>Poster Size</b> <p>Select the poster size you want from the drop-"
 "down list.</p> <p>Available sizes are all standard paper sizes up to 'A0'. "
@@ -2611,6 +2905,7 @@ msgid ""
 msgstr ""
 
 #: kpposterpage.cpp:106
+#, kde-format
 msgid ""
 " <qt> <b>Paper Size</b> <p>This field indicates the paper size the poster "
 "tiles will be printed on. To select a different paper size for your poster "
@@ -2638,6 +2933,7 @@ msgid ""
 msgstr ""
 
 #: kpposterpage.cpp:130
+#, kde-format
 msgid ""
 " <qt>  <b>Cut Margin selection</b>  <p>This slider and spinbox let you "
 "determine a <em>'cut margin'</em> to be printed onto each tile of your "
@@ -2651,6 +2947,7 @@ msgid ""
 msgstr ""
 
 #: kpposterpage.cpp:141
+#, kde-format
 msgid ""
 " <qt> <b>Order and number of tile pages to be printed</b>. <p>This field "
 "displays and sets the individual tiles to be printed, as well as the order "
@@ -2663,43 +2960,52 @@ msgid ""
 msgstr ""
 
 #: kpposterpage.cpp:158
+#, kde-format
 msgid "Poster"
 msgstr "Poster"
 
 #: kpposterpage.cpp:160
+#, kde-format
 msgid "&Print poster"
 msgstr "&Argraffu poster"
 
 #: kpposterpage.cpp:174
+#, kde-format
 msgid "Poste&r size:"
 msgstr "Maint y poste&r:"
 
 #: kpposterpage.cpp:176
+#, kde-format
 msgid "Media size:"
 msgstr "Maint y cyfryngau:"
 
 #: kpposterpage.cpp:178
+#, kde-format
 msgid "Pri&nt size:"
 msgstr " Mai&nt yr argraffu:"
 
 #: kpposterpage.cpp:185
-#, no-c-format
+#, no-c-format, kde-format
 msgid "C&ut margin (% of media):"
 msgstr "Ym&yl torri (% y cyfryngau):"
 
 #: kpposterpage.cpp:189
+#, kde-format
 msgid "&Tile pages (to be printed):"
 msgstr "&Teilsio'r tudalennau (i'w argraffu):"
 
 #: kpposterpage.cpp:196
+#, kde-format
 msgid "Link/unlink poster and print size"
 msgstr "Cysylltu/dad-gysylltu maint y poster a'r argraffu"
 
 #: kpposterpage.cpp:261
+#, kde-format
 msgid "Unknown"
 msgstr "Anhysbys"
 
 #: kpqtpage.cpp:69
+#, kde-format
 msgid ""
 " <qt>  <b>Selection of color mode:</b> You can choose between 2 options:  "
 "<ul><li><b>Color</b> and</li>  <li><b>Grayscale</b></li></ul>  <b>Note:</b> "
@@ -2710,6 +3016,7 @@ msgid ""
 msgstr ""
 
 #: kpqtpage.cpp:78
+#, kde-format
 msgid ""
 " <qt>  <b>Selection of page size:</b> Select the paper size to be printed on "
 "from the drop-down menu. <p>The exact list of choices depends on the printer "
@@ -2717,6 +3024,7 @@ msgid ""
 msgstr ""
 
 #: kpqtpage.cpp:83
+#, kde-format
 msgid ""
 " <qt> <b>Selection of pages per sheet:</b>  You can choose to print more "
 "than one page onto each sheet of paper. This is sometimes useful to save "
@@ -2734,6 +3042,7 @@ msgid ""
 msgstr ""
 
 #: kpqtpage.cpp:101
+#, kde-format
 msgid ""
 " <qt> <b>Selection of image orientation:</b> Orientation of the printed page "
 "image on your paper is controlled by these radio buttons. By default, the "
@@ -2743,31 +3052,37 @@ msgid ""
 msgstr ""
 
 #: kpqtpage.cpp:112
+#, kde-format
 msgid "Print Format"
 msgstr "Ffurfweddiad Argraffu"
 
 #: kpqtpage.cpp:126
+#, kde-format
 msgid "Color Mode"
 msgstr "Modd Lliw"
 
 #: kpqtpage.cpp:138
+#, kde-format
 msgid "Colo&r"
 msgstr "Ll&iw"
 
 #: kpqtpage.cpp:141
+#, kde-format
 msgid "&Grayscale"
 msgstr "&Graddlwyd"
 
 #: kpqtpage.cpp:156
+#, kde-format
 msgid "Ot&her"
 msgstr "E&raill"
 
 #: kprintaction.cpp:106 kprintaction.cpp:114 kprintaction.cpp:122
+#, kde-format
 msgid "&Export..."
 msgstr "&Allforio..."
 
 #: kprintdialog.cpp:95
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt><b>Printer Location:</b> The <em>Location</em> may describe where the "
 "selected printer is located. The Location description is created by the "
@@ -2778,14 +3093,14 @@ msgstr ""
 "yn wag).</qt>"
 
 #: kprintdialog.cpp:100
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt><b>Printer Type:</b>  The <em>Type</em> indicates your printer type. </"
 "qt>"
 msgstr " <qt> Mae <em>Math</em> yn dangos math eich argraffydd. </qt>"
 
 #: kprintdialog.cpp:102
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt><b>Printer State:</b>  The <em>State</em> indicates the state of the "
 "print queue on the print server (which could be your localhost). The state "
@@ -2796,7 +3111,7 @@ msgstr ""
 "yn \"Segur\", \"Prosesu\", \"Wedi Aros\", \"Seibio\" neu rywbeth tebyg.</qt>"
 
 #: kprintdialog.cpp:106
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt><b>Printer Comment:</b>  The <em>Comment</em> may describe the selected "
 "printer. This comment is created by the administrator of the print system "
@@ -2806,7 +3121,7 @@ msgstr ""
 "yma gan wasanaethwr y cysawd argraffu (neu gall fod yn wag).</qt>"
 
 #: kprintdialog.cpp:110
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt><b>Printer Selection Menu:</b>  <p>Use this combo box to select the "
 "printer to which you want to print. Initially (if you run KDEPrint for the "
@@ -2840,7 +3155,7 @@ msgstr ""
 "server.</li> </ul> </qt>"
 
 #: kprintdialog.cpp:135
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt><b>Print Job Properties:</b>  <p>This button opens a dialog where you "
 "can make decisions regarding all supported print job options.</p> </qt>"
@@ -2849,7 +3164,7 @@ msgstr ""
 "dewisiad swyddi argraffu a gynhelir. </qt>"
 
 #: kprintdialog.cpp:139
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt><b>Selective View on List of Printers:</b> <p> This button reduces the "
 "list of visible printers to a shorter, more convenient, pre-defined list.</"
@@ -2872,6 +3187,7 @@ msgstr ""
 "chwith yn yr ymgom <em>Ffurfweddiad Argraffu KDE</em>).</p> </qt>"
 
 #: kprintdialog.cpp:152
+#, kde-format
 msgid ""
 "<qt><b>KDE Add Printer Wizard</b> <p>This button starts the <em>KDE Add "
 "Printer Wizard</em>.</p> <p>Use the Wizard (with <em>\"CUPS\"</em> or <em>"
@@ -2882,7 +3198,7 @@ msgid ""
 msgstr ""
 
 #: kprintdialog.cpp:161
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt><b>External Print Command</b> <p>Here you can enter any command that "
 "would also print for you in a <em>konsole</em> window. </p> <b>Example:</b> "
@@ -2893,7 +3209,7 @@ msgstr ""
 "printername&gt; --medium=A3</pre>. </qt>"
 
 #: kprintdialog.cpp:166
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt><b>Additional Print Job Options</b> <p>This button shows or hides "
 "additional printing options.</p></qt>"
@@ -2902,7 +3218,7 @@ msgstr ""
 "dewisiad swyddi argraffu a gynhelir. </qt>"
 
 #: kprintdialog.cpp:168
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt><b>System Options:</b> <p>This button starts a new dialog where you can "
 "adjust various settings of your printing system. Amongst them: <ul><li> "
@@ -2920,7 +3236,7 @@ msgstr ""
 "eraill....  </qt>"
 
 #: kprintdialog.cpp:180
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt><b>Help:</b> This button takes you to the complete <em>KDEPrint Manual</"
 "em>. </qt>"
@@ -2929,7 +3245,7 @@ msgstr ""
 "cyflawn. </qt>"
 
 #: kprintdialog.cpp:184
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt><b>Cancel:</b> This button cancels your print job and quits the "
 "kprinter dialog. </qt>"
@@ -2938,7 +3254,7 @@ msgstr ""
 "kprinter.</qt>"
 
 #: kprintdialog.cpp:188
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt><b>Print:</b> This button sends the job to the printing process. If you "
 "are sending non-PostScript files, you may be asked if you want KDE to "
@@ -2951,7 +3267,7 @@ msgstr ""
 "hyn.</qt>"
 
 #: kprintdialog.cpp:194
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt><b>Keep Printing Dialog Open</b><p>If you enable this checkbox, the "
 "printing dialog stays open after you hit the <em>Print</em> button.</p> <p> "
@@ -2968,7 +3284,7 @@ msgstr ""
 "p> </qt>"
 
 #: kprintdialog.cpp:204
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt><b>Output File Name and Path:</b> The \"Output file:\" shows  you where "
 "your file will be saved if you decide to \"Print to File\" your job, using "
@@ -2984,7 +3300,7 @@ msgstr ""
 "addas i chi gan ddefnyddio'r botwm a/neu olygu'r llinell ar y dde. </qt>"
 
 #: kprintdialog.cpp:212
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt><b>Output File Name and Path:</b> Edit this line to create a  path and "
 "filename that suits your needs. (Button and Lineedit field are only "
@@ -2994,7 +3310,7 @@ msgstr ""
 "(Ar gael os wnewch \"Argraffu i Ffeil\" yn unig.) </qt>"
 
 #: kprintdialog.cpp:217
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 " <qt><b>Browse Directories button:</b> This button calls the \"File Open / "
 "Browse Directories\" dialog to let you choose a directory and file name "
@@ -3005,6 +3321,7 @@ msgstr ""
 "gadw. </qt>"
 
 #: kprintdialog.cpp:223
+#, kde-format
 msgid ""
 " <qt><b>Add File to Job</b> <p>This button calls the \"File Open / Browse "
 "Directories\" dialog to allow you to select a file for printing. Note, that</"
@@ -3015,6 +3332,7 @@ msgid ""
 msgstr ""
 
 #: kprintdialog.cpp:235
+#, kde-format
 msgid ""
 " <qt><b>Print Preview</b> Enable this checkbox if you want to see a preview "
 "of your printout. A preview lets you check if, for instance, your intended "
@@ -3028,6 +3346,7 @@ msgid ""
 msgstr ""
 
 #: kprintdialog.cpp:248
+#, kde-format
 msgid ""
 " <qt><b>Set as Default Printer</b> This button sets the current printer as "
 "the user's default.  <p><b>Note:</b> (Button is only visible if the checkbox "
@@ -3039,118 +3358,141 @@ msgstr ""
 #: kprintdialog.cpp:258 kprintdialog.cpp:732 kprinterimpl.cpp:442
 #: kprintpreview.cpp:130 kprintpreview.cpp:151 kprintpreview.cpp:157
 #: kprintpreview.cpp:313
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Print"
 msgstr "&Argraffu"
 
+#. i18n( "Printer" ), menu );
 #: kprintdialog.cpp:264 management/kmmainview.cpp:380 management/kmwend.cpp:89
 #: management/smbview.cpp:43
+#, kde-format
 msgid "Printer"
 msgstr "Argraffydd"
 
 #: kprintdialog.cpp:278 management/kmspecialprinterdlg.cpp:60
 #: management/kxmlcommanddlg.cpp:113
+#, kde-format
 msgid "&Name:"
 msgstr "&Enw:"
 
 #: kprintdialog.cpp:280 management/kminfopage.cpp:51
+#, kde-format
 msgctxt "Status"
 msgid "State:"
 msgstr "Cyflwr:"
 
 #: kprintdialog.cpp:282 management/kminfopage.cpp:49
+#, kde-format
 msgid "Type:"
 msgstr "Math:"
 
 #: kprintdialog.cpp:284 management/kmwname.cpp:40
+#, kde-format
 msgid "Location:"
 msgstr "Lleoliad:"
 
 #: kprintdialog.cpp:286 management/kxmlcommanddlg.cpp:177
+#, kde-format
 msgid "Comment:"
 msgstr "Esboniad:"
 
 #: kprintdialog.cpp:289
+#, kde-format
 msgid "P&roperties"
 msgstr "P&riodweddau"
 
 #: kprintdialog.cpp:291
+#, kde-format
 msgid "System Op&tions"
 msgstr "Dewisiadau C&ysawd"
 
 #: kprintdialog.cpp:293
+#, kde-format
 msgid "Set as &Default"
 msgstr "Gosod fel &Rhagosodiad"
 
 #: kprintdialog.cpp:300
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Toggle selective view on printer list"
 msgstr "Methu nÃ´l y rhestr argraffyddion."
 
 #: kprintdialog.cpp:305
+#, kde-format
 msgid "Add printer..."
 msgstr "Ychwanegu argraffydd..."
 
 #: kprintdialog.cpp:313
+#, kde-format
 msgid "Previe&w"
 msgstr "Rhag&olygu"
 
 #: kprintdialog.cpp:315
+#, kde-format
 msgid "O&utput file:"
 msgstr "Ffeil &allbwn:"
 
 #: kprintdialog.cpp:321
+#, kde-format
 msgid "Print co&mmand:"
 msgstr "Gorchymyn ar&graffu:"
 
 #: kprintdialog.cpp:330
+#, kde-format
 msgid "Show/hide advanced options"
 msgstr "Dangos/cuddio dewisiadau uwch"
 
 #: kprintdialog.cpp:332
+#, kde-format
 msgid "&Keep this dialog open after printing"
 msgstr "&Cadw'r ymgom ym ar agor ar Ã´l argraffu"
 
 #: kprintdialog.cpp:553 kprintdialog.cpp:922
+#, kde-format
 msgid "An error occurred while retrieving the printer list:"
 msgstr "Gwall wrth nÃ´l y rhestr argraffyddion:"
 
 #: kprintdialog.cpp:718
-#, fuzzy
+#, fuzzy, kde-format
 msgid "The output filename is empty."
 msgstr "Mae'r enw ffeil allbwn yn wag."
 
 #: kprintdialog.cpp:752
-#, fuzzy
+#, fuzzy, kde-format
 msgid "You do not have write permissions to this file."
 msgstr "Nid oes ganddoch ganiatadau i'r ffeil yma."
 
 #: kprintdialog.cpp:756
+#, kde-format
 msgid "The output directory does not exist."
 msgstr "Nid yw'r cyfeiriadur allbwn mewn bod."
 
 #: kprintdialog.cpp:758
-#, fuzzy
+#, fuzzy, kde-format
 msgid "You do not have write permissions in that directory."
 msgstr "Nid oes ganddoch ganiatadau yn y cyfeiriadur yma."
 
 #: kprintdialog.cpp:863
+#, kde-format
 msgid "&Options <<"
 msgstr "&Dewisiadau <<"
 
 #: kprintdialog.cpp:872
+#, kde-format
 msgid "&Options >>"
 msgstr "&Dewisiadau >>"
 
 #: kprintdialog.cpp:912
+#, kde-format
 msgid "Initializing printing system..."
 msgstr "Cychwyn cysawd argraffu..."
 
 #: kprintdialog.cpp:945
+#, kde-format
 msgid "Print to File"
 msgstr "Argraffu i Ffeil"
 
 #: kprinter.cpp:246
+#, kde-format
 msgid "Initialization..."
 msgstr "Ymgychwyn..."
 
@@ -3160,10 +3502,12 @@ msgid "Generating print data: page %1"
 msgstr "Cynhyrchu data argraffu: tudalen %1"
 
 #: kprinter.cpp:560
+#, kde-format
 msgid "Previewing..."
 msgstr "Rhagolygu..."
 
 #: kprinterimpl.cpp:149
+#, kde-format
 msgid "Cannot copy multiple files into one file."
 msgstr "Methu copïo ffeiliau lluosol i mewn i un ffeil."
 
@@ -3185,10 +3529,12 @@ msgid "Sending print data to printer: %1"
 msgstr "Anfon data argraffu i argraffydd: %1"
 
 #: kprinterimpl.cpp:228
+#, kde-format
 msgid "Unable to start child print process. "
 msgstr "Methu cychwyn proses argraffu plentyn."
 
 #: kprinterimpl.cpp:230
+#, kde-format
 msgid ""
 "The KDE print server (<b>kdeprintd</b>) could not be contacted. Check that "
 "this server is running."
@@ -3207,10 +3553,12 @@ msgstr ""
 " %1 <files>"
 
 #: kprinterimpl.cpp:239
+#, kde-format
 msgid "No valid file was found for printing. Operation aborted."
 msgstr "Methu canfod ffeil dilys i argraffu.  Terfynwyd y gweithrediad."
 
 #: kprinterimpl.cpp:271
+#, kde-format
 msgid ""
 "<p>Unable to perform the requested page selection. The filter <b>psselect</"
 "b> cannot be inserted in the current filter chain. See <b>Filter</b> tab in "
@@ -3247,22 +3595,27 @@ msgstr ""
 "PostScript).  Ydych eisiau i KDE drosi'r ffeil i fformat a gynhelir?</p>"
 
 #: kprinterimpl.cpp:328 kprinterimpl.cpp:427
+#, kde-format
 msgid "Convert"
 msgstr "Trosi"
 
 #: kprinterimpl.cpp:336
+#, kde-format
 msgid "Select MIME Type"
 msgstr "Dewis Math MIME"
 
 #: kprinterimpl.cpp:337
+#, kde-format
 msgid "Select the target format for the conversion:"
 msgstr "Dewis y fformat cyrchfan i'r trosi:"
 
 #: kprinterimpl.cpp:340 kprinterimpl.cpp:358
+#, kde-format
 msgid "Operation aborted."
 msgstr "Terfynwyd y gweithrediad."
 
 #: kprinterimpl.cpp:345
+#, kde-format
 msgid "No appropriate filter found. Select another target format."
 msgstr "Methu canfod hidl addas.  Dewis fformat cyrchfan arall."
 
@@ -3279,6 +3632,7 @@ msgstr ""
 "arall.</qt>"
 
 #: kprinterimpl.cpp:369
+#, kde-format
 msgid "Filtering print data"
 msgstr "Hidlo data argraffu"
 
@@ -3309,6 +3663,7 @@ msgstr ""
 "o gwbl.  Ydych eisiau i KDE geisio trosi'r ffeil yma i %2?"
 
 #: kprinterimpl.cpp:428 management/kmwname.cpp:59
+#, kde-format
 msgid "Keep"
 msgstr "Cadw"
 
@@ -3323,24 +3678,27 @@ msgid ""
 msgstr ""
 
 #: kprinterpropertydialog.cpp:82 kprinterpropertydialog.cpp:141
+#, kde-format
 msgid "Printer Configuration"
 msgstr "Ffurfweddiad Argraffydd"
 
 #: kprinterpropertydialog.cpp:141
-#, fuzzy
+#, fuzzy, kde-format
 msgid "No configurable options for that printer."
 msgstr "Dim dewisiadau ffurfweddiedadwy i'r argraffydd yna!"
 
 #: kprintpreview.cpp:129
+#, kde-format
 msgid "Do you want to continue printing anyway?"
 msgstr "Ydych eisiau dal i argraffu beth bynnag?"
 
 #: kprintpreview.cpp:140 kprintpreview.cpp:232
+#, kde-format
 msgid "Print Preview"
 msgstr "Rhagolwg Argraffu"
 
 #: kprintpreview.cpp:163
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Cancel"
 msgstr "Gwrthwnaed"
 
@@ -3356,6 +3714,7 @@ msgstr ""
 "newidyn amgylchedd PATH."
 
 #: kprintpreview.cpp:297
+#, kde-format
 msgid ""
 "Preview failed: neither the internal KDE PostScript viewer (KGhostView) nor "
 "any other external PostScript viewer could be found."
@@ -3378,33 +3737,37 @@ msgid "Preview failed: unable to start program %1."
 msgstr "Methodd y rhagolwg: methu cychwyn rhaglen %1."
 
 #: kprintpreview.cpp:313
+#, kde-format
 msgid "Do you want to continue printing?"
 msgstr "Ydych eisiau dal i argraffu?"
 
 #. i18n: ectx: Menu (file)
 #: kprintpreviewui.rc:4
-#, fuzzy
+#, fuzzy, kde-format
 msgid "&File"
 msgstr "&Ffeiliau"
 
 #. i18n: ectx: Menu (view)
 #: kprintpreviewui.rc:11 management/kmmainview.cpp:186
+#, kde-format
 msgid "&View"
 msgstr ""
 
 #. i18n: ectx: Menu (pagemarks)
 #: kprintpreviewui.rc:13
+#, kde-format
 msgid "&PageMarks"
 msgstr "&NodauDalen"
 
 #. i18n: ectx: Menu (settings)
 #: kprintpreviewui.rc:16 management/kmwdrivertest.cpp:57
 #: management/networkscanner.cpp:105
-#, fuzzy
+#, fuzzy, kde-format
 msgid "&Settings"
 msgstr "Gosodiadau"
 
 #: kxmlcommand.cpp:736
+#, kde-format
 msgid "One of the command object's requirements is not met."
 msgstr "Ni chynhelir un o ofynion y gwrthrych gorchymyn."
 
@@ -3423,6 +3786,7 @@ msgstr ""
 "gosodiad."
 
 #: lpd/kmlpdmanager.cpp:88
+#, kde-format
 msgctxt "Unknown type of local printer queue"
 msgid "Unknown"
 msgstr "Anhysbys"
@@ -3433,10 +3797,12 @@ msgid "Local printer queue (%1)"
 msgstr "Ciw argraffydd lleol (%1)"
 
 #: lpd/kmlpdmanager.cpp:89
+#, kde-format
 msgid "<Not available>"
 msgstr "<Dim ar gael>"
 
 #: lpd/kmlpdmanager.cpp:90
+#, kde-format
 msgctxt "Unknown Driver"
 msgid "Unknown"
 msgstr "Anhysbys"
@@ -3466,6 +3832,7 @@ msgstr ""
 "b>."
 
 #: lpd/kmlpdmanager.cpp:207
+#, kde-format
 msgid "Permission denied: you must be root."
 msgstr "Gwrthodwyd caniatÃ d: rhaid i chi fod yn wraidd."
 
@@ -3475,6 +3842,7 @@ msgid "Unable to execute command \"%1\"."
 msgstr "Methu gweithredu gorchymyn \"%1\"."
 
 #: lpd/kmlpdmanager.cpp:282
+#, kde-format
 msgid "Unable to write printcap file."
 msgstr "Methu ysgrifennu i'r ffeil printcap."
 
@@ -3489,10 +3857,12 @@ msgid "Could not find printer <b>%1</b> in printcap file."
 msgstr "Methu canfod argraffydd <b>%1</b> yn y ffeil printcap."
 
 #: lpd/kmlpdmanager.cpp:396
+#, kde-format
 msgid "No driver found (raw printer)"
 msgstr "Ni chanfuwyd gyrrydd (argraffydd crau)"
 
 #: lpd/kmlpdmanager.cpp:398
+#, kde-format
 msgid "Printer type not recognized."
 msgstr "Ni adnabyddwyd math yr argraffydd."
 
@@ -3506,101 +3876,125 @@ msgstr ""
 "GhostScript.  Gwiriwch eich gosodiad neu defnyddiwch gyrrydd arall."
 
 #: lpd/kmlpdmanager.cpp:501
+#, kde-format
 msgid "Unable to write driver associated files in spool directory."
 msgstr ""
 "Methu ysgrifennu ffeiliau sy'n ymwneud Ã¢'r gyrrydd yn y cyfeiriadur sbwlio."
 
 #: lpd/kmlpduimanager.cpp:44
+#, kde-format
 msgid "Local printer (parallel, serial, USB)"
 msgstr "Argraffydd lleol (paralel, cyfresol, USB)"
 
 #: lpd/kmlpduimanager.cpp:45 management/kmpropbackend.cpp:69
 #: rlpr/kmwrlpr.cpp:118
+#, kde-format
 msgid "Remote LPD queue"
 msgstr "Ciw LPD pell"
 
 #: lpd/kmlpduimanager.cpp:46
+#, kde-format
 msgid "SMB shared printer (Windows)"
 msgstr "Argraffydd cyfrannol SMB (Windows)"
 
 #: lpd/kmlpduimanager.cpp:47
+#, kde-format
 msgid "Network printer (TCP)"
 msgstr "Argraffydd rhwydwaith (TCP)"
 
 #: lpd/kmlpduimanager.cpp:48
+#, kde-format
 msgid "File printer (print to file)"
 msgstr "Argraffydd ffeil (argraffu i ffeil)"
 
 #: lpd/lpdtools.cpp:31
+#, kde-format
 msgid "A4"
 msgstr "A4"
 
 #: lpd/lpdtools.cpp:32
+#, kde-format
 msgid "A3"
 msgstr "A3"
 
 #: lpd/lpdtools.cpp:33
+#, kde-format
 msgid "B4"
 msgstr "A4"
 
 #: lpd/lpdtools.cpp:34
+#, kde-format
 msgid "B5"
 msgstr "B5"
 
 #: lpd/lpdtools.cpp:214
+#, kde-format
 msgid "GhostScript settings"
 msgstr "Gosodiadau GhostScript"
 
 #: lpd/lpdtools.cpp:220 management/kmpropdriver.cpp:55
 #: management/kmwend.cpp:102
+#, kde-format
 msgid "Driver"
 msgstr "Gyrrydd"
 
 #: lpd/lpdtools.cpp:234
+#, kde-format
 msgid "Resolution"
 msgstr "Cydraniad"
 
 #: lpd/lpdtools.cpp:258
+#, kde-format
 msgid "Color depth"
 msgstr "Dyfnder lliw"
 
 #: lpd/lpdtools.cpp:284
+#, kde-format
 msgid "Additional GS options"
 msgstr "Dewisiadau GS ychwanegol"
 
 #: lpd/lpdtools.cpp:296
+#, kde-format
 msgid "Page size"
 msgstr "Maint papur"
 
 #: lpd/lpdtools.cpp:311
+#, kde-format
 msgid "Pages per sheet"
 msgstr "Tudalennau ar y ddalen"
 
 #: lpd/lpdtools.cpp:326
+#, kde-format
 msgid "Left/right margin (1/72 in)"
 msgstr "Ymyl chwith/de (1/72 in)"
 
 #: lpd/lpdtools.cpp:331
+#, kde-format
 msgid "Top/bottom margin (1/72 in)"
 msgstr "Ymyl pen/gwaelod (1/72 in)"
 
 #: lpd/lpdtools.cpp:337
+#, kde-format
 msgid "Text options"
 msgstr "Dewisiadau testun"
 
 #: lpd/lpdtools.cpp:343
+#, kde-format
 msgid "Send EOF after job to eject page"
 msgstr "Anfon EOF ar Ã´l y sywdd i all-daflu'r dudalen"
 
 #: lpd/lpdtools.cpp:351
+#, kde-format
 msgid "Fix stair-stepping text"
 msgstr "Trwsio testun ffurf grisiau"
 
 #: lpd/lpdtools.cpp:362
+#, kde-format
 msgid "Fast text printing (non-PS printers only)"
 msgstr "Argraffu testun cyflym (dim ond argraffyddion di-PS)"
 
 #: lpdunix/kmlpdunixmanager.cpp:194
+#, kde-format
 msgid "Description unavailable"
 msgstr "Dim disgrifiad ar gael."
 
@@ -3613,6 +4007,7 @@ msgstr "Ciw argraffydd pell ar %1"
 #: lpdunix/kmlpdunixmanager.cpp:204 lpdunix/kmlpdunixmanager.cpp:248
 #: lpdunix/kmlpdunixmanager.cpp:287 lpdunix/kmlpdunixmanager.cpp:305
 #: lpdunix/kmlpdunixmanager.cpp:338 management/kminfopage.cpp:122
+#, kde-format
 msgid "Local printer"
 msgstr "Argraffydd lleol"
 
@@ -3653,6 +4048,7 @@ msgid "Unable to create the file %1."
 msgstr "Methu creu'r ffeil %1."
 
 #: lpr/apshandler.cpp:286
+#, kde-format
 msgid "The APS driver is not defined."
 msgstr "Ni ddiffinir y gyrrydd APS."
 
@@ -3662,18 +4058,22 @@ msgid "Unable to remove directory %1."
 msgstr "Methu gwaredu cyfeiriadur %1."
 
 #: lpr/editentrydialog.cpp:44
+#, kde-format
 msgid "Aliases:"
 msgstr "Arallenwau:"
 
 #: lpr/editentrydialog.cpp:50 management/kxmlcommanddlg.cpp:106
+#, kde-format
 msgid "String"
 msgstr "Llinell"
 
 #: lpr/editentrydialog.cpp:51
+#, kde-format
 msgid "Number"
 msgstr "Rhif"
 
 #: lpr/editentrydialog.cpp:52 management/kxmlcommanddlg.cpp:110
+#, kde-format
 msgid "Boolean"
 msgstr "Boolaidd"
 
@@ -3683,22 +4083,27 @@ msgid "Printcap Entry: %1"
 msgstr "Cofnod Printcap: %1"
 
 #: lpr/kmconfiglpr.cpp:34 lpr/kmconfiglpr.cpp:38
+#, kde-format
 msgid "Spooler"
 msgstr "Sbwlydd"
 
 #: lpr/kmconfiglpr.cpp:35
+#, kde-format
 msgid "Spooler Settings"
 msgstr "Gosodiadau Sbwlydd"
 
 #: lpr/kmlprjobmanager.cpp:81
+#, kde-format
 msgid "Unsupported operation."
 msgstr "Ni chynhelir y gweithrediad."
 
 #: lpr/kmlprmanager.cpp:278
+#, kde-format
 msgid "The printcap file is a remote file (NIS). It cannot be written."
 msgstr "Mae'r ffeil printcap yn ffeil pell (NIS).  Ni ellir ei ysgrifennu."
 
 #: lpr/kmlprmanager.cpp:291
+#, kde-format
 msgid ""
 "Unable to save printcap file. Check that you have write permissions for that "
 "file."
@@ -3707,11 +4112,12 @@ msgstr ""
 "y ffeil yna."
 
 #: lpr/kmlprmanager.cpp:315
+#, kde-format
 msgid "Internal error: no handler defined."
 msgstr "Gwall mewnol: ni ddiffinir trinydd."
 
 #: lpr/kmlprmanager.cpp:328
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Could not determine spool directory. See options dialog."
 msgstr "Methu pennu cyfeiriadur sbwlio.    Gweler yr ymgom dewisiadau."
 
@@ -3740,10 +4146,12 @@ msgstr ""
 "ysgrifennu i'r cyfeiriadur yna. "
 
 #: lpr/kmlprmanager.cpp:431
+#, kde-format
 msgid "&Edit printcap Entry..."
 msgstr "&Golygu Cofnod printcap..."
 
 #: lpr/kmlprmanager.cpp:449
+#, kde-format
 msgid ""
 "Editing a printcap entry manually should only be done by confirmed system "
 "administrator. This may prevent your printer from working. Do you want to "
@@ -3765,6 +4173,7 @@ msgid "The executable %1 could not be found in your PATH."
 msgstr "Methu canfod y gweithredadwyn %1 yn eich PATH."
 
 #: lpr/lpchelper.cpp:237 lpr/lpchelper.cpp:260 lpr/lpchelper.cpp:276
+#, kde-format
 msgid "Permission denied."
 msgstr "Atalwyd caniatad. "
 
@@ -3784,6 +4193,7 @@ msgid "Execution of lprm failed: %1"
 msgstr "Methodd gweithrediad lprm: %1"
 
 #: lpr/lprhandler.cpp:59 lpr/lprhandler.cpp:88
+#, kde-format
 msgid "Unknown (unrecognized entry)"
 msgstr "Anhysbys (cofnod anadnabyddus)"
 
@@ -3798,10 +4208,12 @@ msgid "Local printer on %1"
 msgstr "Argraffydd lleol ar %1"
 
 #: lpr/lprhandler.cpp:95 lpr/lprhandler.cpp:101 lpr/lprhandler.cpp:107
+#, kde-format
 msgid "Unrecognized entry."
 msgstr "Cofnod anadnabyddus. "
 
 #: lpr/lprngtoolhandler.cpp:95 lpr/lprngtoolhandler.cpp:160
+#, kde-format
 msgid "unknown"
 msgstr "anhysbys"
 
@@ -3811,6 +4223,7 @@ msgid "IFHP Driver (%1)"
 msgstr "Gyrrydd IFHP (%1)"
 
 #: lpr/lprngtoolhandler.cpp:153
+#, kde-format
 msgid "No driver defined for that printer. It might be a raw printer."
 msgstr ""
 "Ni ddiffinir gyrrydd i'r argraffydd yna.  Efallai mae'n argraffydd crai."
@@ -3821,15 +4234,17 @@ msgid "LPRngTool Common Driver (%1)"
 msgstr "Gyrrydd Cyffredinol LPRngTool (%1)"
 
 #: lpr/matichandler.cpp:81
+#, kde-format
 msgid "Network printer"
 msgstr "Argraffydd rhwydwaith"
 
 #: lpr/matichandler.cpp:220
+#, kde-format
 msgid "Internal error."
 msgstr "Gwall mewnol. "
 
 #: lpr/matichandler.cpp:291
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 "You probably do not have the required permissions to perform that operation."
 msgstr ""
@@ -3837,6 +4252,7 @@ msgstr ""
 "weithrediad yna."
 
 #: lpr/matichandler.cpp:366
+#, kde-format
 msgid ""
 "Unable to find executable lpdomatic. Check that Foomatic is correctly "
 "installed and that lpdomatic is installed in a standard location."
@@ -3850,40 +4266,47 @@ msgid "Unable to remove driver file %1."
 msgstr "Methu gwaredu ffeil gyrrydd %1."
 
 #: management/kaddprinterwizard.cpp:30
+#, kde-format
 msgid "Configure KDE Print"
 msgstr "Ffurfweddu KDE Argraffu"
 
 #: management/kaddprinterwizard.cpp:31
+#, kde-format
 msgid "Configure print server"
 msgstr "Ffurweddu gweinydd argraffu"
 
 #: management/kaddprinterwizard.cpp:33
-#, fuzzy
+#, fuzzy, kde-format
 msgid "KAddPrinterWizard"
 msgstr "Dewin Ychwanegu Argraffydd"
 
 #: management/kaddprinterwizard.cpp:34
+#, kde-format
 msgid "Start the add printer wizard"
 msgstr "Cychwyn y dewin ychwanegu argraffydd"
 
 #: management/kdeprint_management_module.cpp:47
+#, kde-format
 msgid "Select Command"
 msgstr "Dewis Gorchymyn"
 
 #: management/kmconfigcommand.cpp:33
+#, kde-format
 msgid "Commands"
 msgstr "Gorchmynion"
 
 #: management/kmconfigcommand.cpp:34
+#, kde-format
 msgid "Command Settings"
 msgstr "Gosodiadau Gorchmynion"
 
 #: management/kmconfigcommand.cpp:37
+#, kde-format
 msgid "Edit/Create Commands"
 msgstr "Golygu/Creu Gorchmynion"
 
 #: management/kmconfigcommand.cpp:40
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| "<p>Command objects perform a conversion from input to output.<br>They are "
 #| "used as the basis to build both print filters and special printers. They "
@@ -3905,22 +4328,27 @@ msgstr ""
 "golygu rhai sydd mewn bod.  Bydd pob newid yn effeithiol i neb ond ti."
 
 #: management/kmconfigdialog.cpp:44
+#, kde-format
 msgid "KDE Print Configuration"
 msgstr "Ffurfweddiad Argraffu KDE"
 
 #: management/kmconfigfilter.cpp:42
+#, kde-format
 msgid "Filter"
 msgstr "Hidl"
 
 #: management/kmconfigfilter.cpp:43
+#, kde-format
 msgid "Printer Filtering Settings"
 msgstr "Gosodiadau Hidl Argraffydd"
 
 #: management/kmconfigfilter.cpp:46
+#, kde-format
 msgid "Printer Filter"
 msgstr "Hidl Argraffydd"
 
 #: management/kmconfigfilter.cpp:59
+#, kde-format
 msgid ""
 "The printer filtering allows you to view only a specific set of printers "
 "instead of all of them. This may be useful when there are a lot of printers "
@@ -3936,52 +4364,62 @@ msgstr ""
 "yn gronnus, ac eu anwybyddu os yn wag."
 
 #: management/kmconfigfilter.cpp:66
+#, kde-format
 msgid "Location filter:"
 msgstr "Hidl lleoliad:"
 
 #: management/kmconfigfonts.cpp:43
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Fonts"
 msgstr "Llwyr Ffontiau"
 
 #: management/kmconfigfonts.cpp:44
+#, kde-format
 msgid "Font Settings"
 msgstr "Gosodiadau Ffont"
 
 #: management/kmconfigfonts.cpp:47
+#, kde-format
 msgid "Fonts Embedding"
 msgstr "Mewnadeiladu Ffontiau"
 
 #: management/kmconfigfonts.cpp:49
+#, kde-format
 msgid "Fonts Path"
 msgstr "Llwyr Ffontiau"
 
 #: management/kmconfigfonts.cpp:52
+#, kde-format
 msgid "&Embed fonts in PostScript data when printing"
 msgstr "&Mewnadeiladu ffontiau mewn data PostScript wrth argraffu"
 
 #: management/kmconfigfonts.cpp:60
+#, kde-format
 msgid "&Up"
 msgstr "&Fyny"
 
 #: management/kmconfigfonts.cpp:61
+#, kde-format
 msgid "&Down"
 msgstr "&I Lawr"
 
 #: management/kmconfigfonts.cpp:62
+#, kde-format
 msgid "&Add"
 msgstr "&Ychwanegu"
 
 #: management/kmconfigfonts.cpp:63 management/kmmainview.cpp:225
-#, fuzzy
+#, fuzzy, kde-format
 msgid "&Remove"
 msgstr "&Gwaredu"
 
 #: management/kmconfigfonts.cpp:64
+#, kde-format
 msgid "Additional director&y:"
 msgstr "&Cyfeiriadur Ychawanegol"
 
 #: management/kmconfigfonts.cpp:95
+#, kde-format
 msgid ""
 "These options will automatically put fonts in the PostScript file which are "
 "not present on the printer. Font embedding usually produces better print "
@@ -3994,6 +4432,7 @@ msgstr ""
 "welwch ar y sgrÃ®n), ond data argraffu mwy hefyd."
 
 #: management/kmconfigfonts.cpp:98
+#, kde-format
 msgid ""
 "When using font embedding you can select additional directories where KDE "
 "should search for embeddable font files. By default, the X server font path "
@@ -4007,18 +4446,22 @@ msgstr ""
 "ddigonol yn y mwyafrif o sefyllfaoedd. "
 
 #: management/kmconfiggeneral.cpp:46 management/kmpropgeneral.cpp:57
+#, kde-format
 msgid "General Settings"
 msgstr "Gosodiadau Cyffredinol"
 
 #: management/kmconfiggeneral.cpp:49
+#, kde-format
 msgid "Refresh Interval"
 msgstr "Cyfnod Adnewyddu"
 
 #: management/kmconfiggeneral.cpp:53
+#, kde-format
 msgid " sec"
 msgstr "sec"
 
 #: management/kmconfiggeneral.cpp:55
+#, kde-format
 msgid ""
 "This time setting controls the refresh rate of various <b>KDE Print</b> "
 "components like the print manager and the job viewer."
@@ -4027,32 +4470,39 @@ msgstr ""
 "<b>Argraffu KDE</b> fel y rheolydd argraffu a'r gwelydd swydd."
 
 #: management/kmconfiggeneral.cpp:59
+#, kde-format
 msgid "Test Page"
 msgstr "Tudalen Arbrawf"
 
 #: management/kmconfiggeneral.cpp:61
+#, kde-format
 msgid "&Specify personal test page"
 msgstr "&Penodi tudalen arbrawf personol"
 
 #: management/kmconfiggeneral.cpp:65
+#, kde-format
 msgid "Preview..."
 msgstr "Rhagolygu... "
 
 #: management/kmconfiggeneral.cpp:74
+#, kde-format
 msgid "Miscellaneous"
 msgstr ""
 
 #: management/kmconfiggeneral.cpp:76
+#, kde-format
 msgid "Sho&w printing status message box"
 msgstr "&Dangos blwch neges cyflwr argraffu"
 
 #: management/kmconfiggeneral.cpp:77
+#, kde-format
 msgid "De&faults to the last printer used in the application"
 msgstr ""
 "Y rhagosodiad yw'r &argraffydd diwethaf a chafodd ei ddefnyddio yn y "
 "cymhwysiad."
 
 #: management/kmconfiggeneral.cpp:140
+#, kde-format
 msgid ""
 "The selected test page is not a PostScript file. You may not be able to test "
 "your printer anymore."
@@ -4061,47 +4511,58 @@ msgstr ""
 "fyddwch yn gallu arbrofi eich argraffydd dim mwy."
 
 #: management/kmconfiggeneral.cpp:150 management/kmwfile.cpp:64
+#, kde-format
 msgid "Empty file name."
 msgstr "Mae enw'r ffeil yn wag."
 
 #: management/kmconfigjobs.cpp:34 management/kmpages.cpp:58
+#, kde-format
 msgid "Jobs"
 msgstr "Swyddi"
 
 #: management/kmconfigjobs.cpp:35 management/kmjobviewer.cpp:742
+#, kde-format
 msgid "Print Job Settings"
 msgstr "Gosodiadau Swydd Argraffu"
 
 #: management/kmconfigjobs.cpp:38
+#, kde-format
 msgid "Jobs Shown"
 msgstr "Swyddi a Ddangosir"
 
 #: management/kmconfigjobs.cpp:43 management/kmjobviewer.cpp:193
 #: management/kmjobviewer.cpp:379
+#, kde-format
 msgid "Unlimited"
 msgstr "Heb derfyn"
 
 #: management/kmconfigjobs.cpp:44
+#, kde-format
 msgid "Maximum number of jobs shown:"
 msgstr "Nifer uchaf o swyddi a ddangosir:"
 
 #: management/kmconfigpreview.cpp:35
+#, kde-format
 msgid "Preview"
 msgstr "Rhagweld"
 
 #: management/kmconfigpreview.cpp:36
+#, kde-format
 msgid "Preview Settings"
 msgstr "Rhagolygu Gosodiadau"
 
 #: management/kmconfigpreview.cpp:39
+#, kde-format
 msgid "Preview Program"
 msgstr "Rhagolygu Rhaglen"
 
 #: management/kmconfigpreview.cpp:42
+#, kde-format
 msgid "&Use external preview program"
 msgstr "&Defnyddio rhaglen rhagolygu allanol"
 
 #: management/kmconfigpreview.cpp:45
+#, kde-format
 msgid ""
 "You can use an external preview program (PS viewer) instead of the KDE built-"
 "in preview system. Note that if the KDE default PS viewer (KGhostView) "
@@ -4114,6 +4575,7 @@ msgstr ""
 "PostScript arall. "
 
 #: management/kmdbcreator.cpp:94
+#, kde-format
 msgid ""
 "No executable defined for the creation of the driver database. This "
 "operation is not implemented."
@@ -4138,74 +4600,89 @@ msgid ""
 msgstr "Methu cychwyn creu'r cronfa gyrryddion.  Methodd gweithredu %1."
 
 #: management/kmdbcreator.cpp:122
+#, kde-format
 msgid "Please wait while KDE rebuilds a driver database."
 msgstr "Arhoswch wrth i KDE ail-adeiladu cronfa gyrryddion."
 
 #: management/kmdbcreator.cpp:123
+#, kde-format
 msgid "Driver Database"
 msgstr "Cronfa Gyrryddion"
 
 #: management/kmdbcreator.cpp:168
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 "Error while creating driver database: abnormal child-process termination."
 msgstr ""
 "Gwall wrth greu cronfa gyrryddion: terfynwyd y proses plentyn yn anarferol!"
 
 #: management/kmdriverdbwidget.cpp:49
+#, kde-format
 msgid "&PostScript printer"
 msgstr "&Argraffydd PostScript"
 
 #: management/kmdriverdbwidget.cpp:50
+#, kde-format
 msgid "&Raw printer (no driver needed)"
 msgstr "Argraffydd &Crau (dim angen argraffydd)"
 
 #: management/kmdriverdbwidget.cpp:53
+#, kde-format
 msgid "&Other..."
 msgstr "&Eraill..."
 
 #: management/kmdriverdbwidget.cpp:54
+#, kde-format
 msgid "&Manufacturer:"
 msgstr "&Gwneuthurwr:"
 
 #: management/kmdriverdbwidget.cpp:55
+#, kde-format
 msgid "Mo&del:"
 msgstr "&Model:"
 
 #: management/kmdriverdbwidget.cpp:169 management/kmdriverdbwidget.cpp:181
+#, kde-format
 msgid "Loading..."
 msgstr "Llwytho..."
 
 #: management/kmdriverdbwidget.cpp:235
+#, kde-format
 msgid "Unable to find the PostScript driver."
 msgstr "Methu canfod y gyrrydd PostScript."
 
 #: management/kmdriverdbwidget.cpp:248
+#, kde-format
 msgid "Select Driver"
 msgstr "Dewiswch Gyrrydd"
 
 #: management/kmdriverdbwidget.cpp:262 management/kmdriverdbwidget.cpp:264
+#, kde-format
 msgid "<Unknown>"
 msgstr "<Anhysbys>"
 
 #: management/kmdriverdbwidget.cpp:267
+#, kde-format
 msgid "Database"
 msgstr "Cronfa ddata"
 
 #: management/kmdriverdbwidget.cpp:272
+#, kde-format
 msgid "Wrong driver format."
 msgstr "Fformat gyrrydd anghywir."
 
 #: management/kmdriverdbwidget.cpp:279
+#, kde-format
 msgid "Other"
 msgstr "Eraill"
 
 #: management/kmdriverdialog.cpp:29
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Configure"
 msgstr "Ffurweddu %1 "
 
 #: management/kmdriverdialog.cpp:54
+#, kde-format
 msgid ""
 "Some options are in conflict. You must resolve those conflicts before "
 "continuing."
@@ -4214,54 +4691,66 @@ msgstr ""
 "chi fynd ymlaen."
 
 #: management/kminfopage.cpp:45 management/kmpropgeneral.cpp:38
+#, kde-format
 msgctxt "Physical Location"
 msgid "Location:"
 msgstr "Lleoliad:"
 
 #: management/kminfopage.cpp:47 management/kmpropgeneral.cpp:39
 #: management/kmwname.cpp:41
+#, kde-format
 msgid "Description:"
 msgstr "Disgrifiad:"
 
 #: management/kminfopage.cpp:55 management/kminfopage.cpp:100
 #: tools/escputil/escpwidget.cpp:111
+#, kde-format
 msgid "Device:"
 msgstr "Dyfais:"
 
 #: management/kminfopage.cpp:57
+#, kde-format
 msgid "Model:"
 msgstr "Model:"
 
 #: management/kminfopage.cpp:99
+#, kde-format
 msgid "Members:"
 msgstr "Aelodau:"
 
 #: management/kminfopage.cpp:116
+#, kde-format
 msgid "Implicit class"
 msgstr "Dosbarth ymhlyg"
 
 #: management/kminfopage.cpp:118
+#, kde-format
 msgid "Remote class"
 msgstr "Dosbarth pell"
 
 #: management/kminfopage.cpp:119
+#, kde-format
 msgid "Local class"
 msgstr "Dosbarth lleol"
 
 #: management/kminfopage.cpp:121
+#, kde-format
 msgid "Remote printer"
 msgstr "Argraffydd pell"
 
 #: management/kminfopage.cpp:124
+#, kde-format
 msgid "Special (pseudo) printer"
 msgstr "(Ffug-)argraffydd arbennig"
 
 #: management/kminfopage.cpp:125
+#, kde-format
 msgctxt "Unknown class of printer"
 msgid "Unknown"
 msgstr "Anhysbys"
 
 #: management/kminstancepage.cpp:63
+#, kde-format
 msgid ""
 "Define/Edit here instances for the current selected printer. An instance is "
 "a combination of a real (physical) printer and a set of predefined options. "
@@ -4279,23 +4768,27 @@ msgstr ""
 "yn gyflym y fformat argraffu yr ydych eisiau."
 
 #: management/kminstancepage.cpp:89
+#, kde-format
 msgid "New..."
 msgstr "Newydd ..."
 
 #: management/kminstancepage.cpp:90
+#, kde-format
 msgid "Copy..."
 msgstr "Copio..."
 
 #: management/kminstancepage.cpp:91 management/kmjobviewer.cpp:545
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Remove"
 msgstr "&Gwaredu"
 
 #: management/kminstancepage.cpp:94
+#, kde-format
 msgid "Settings"
 msgstr "Gosodiadau"
 
 #: management/kminstancepage.cpp:96
+#, kde-format
 msgid "Test..."
 msgstr "Arbrofi..."
 
@@ -4305,20 +4798,23 @@ msgstr "Arbrofi..."
 #: management/kminstancepage.cpp:190 management/kminstancepage.cpp:195
 #: management/kminstancepage.cpp:197 management/kminstancepage.cpp:216
 #: management/kminstancepage.cpp:248 management/kminstancepage.cpp:265
+#, kde-format
 msgid "(Default)"
 msgstr "(Rhagosodiad)"
 
 #: management/kminstancepage.cpp:142 management/kminstancepage.cpp:189
+#, kde-format
 msgid "Instance Name"
 msgstr "Enw'r Enghraifft"
 
 #: management/kminstancepage.cpp:142 management/kminstancepage.cpp:189
+#, kde-format
 msgid "Enter name for new instance (leave untouched for default):"
 msgstr ""
 "Mewnosodwch enw i'r enghraifft newydd (gadewch fel y mae am rhagosodiad):"
 
 #: management/kminstancepage.cpp:146 management/kminstancepage.cpp:193
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Instance name must not contain any spaces or slashes."
 msgstr "Ni chaiff enw'r enghraifft gynnwys bwlchnod!"
 
@@ -4348,10 +4844,12 @@ msgid ""
 msgstr "Methu nol gwybodaeth o'r argraffydd.  Neges gan y cysawd argraffu: %1."
 
 #: management/kminstancepage.cpp:235
+#, kde-format
 msgid "The instance name is empty. Please select an instance."
 msgstr "Mae'r enw enghraifft yn wag. Dewiswch enghraifft."
 
 #: management/kminstancepage.cpp:269
+#, kde-format
 msgid "Internal error: printer not found."
 msgstr "Gwall mewnol: methu canfod argraffydd."
 
@@ -4362,6 +4860,7 @@ msgstr ""
 "Rydych ar fin argraffu tudalen arbrawf ar %1.  Ydych eisiau mynd ymlaen?"
 
 #: management/kminstancepage.cpp:270 management/kmmainview.cpp:714
+#, kde-format
 msgid "Print Test Page"
 msgstr "Argraffu Tudalen Arbrawf"
 
@@ -4376,12 +4875,14 @@ msgid "Test page successfully sent to printer %1."
 msgstr "Anfonwyd y dudalen arbrawf yn llwyddiannus i argraffydd %1."
 
 #: management/kmjobviewer.cpp:127 management/kmjobviewer.cpp:179
+#, kde-format
 msgid "No Printer"
 msgstr "Dim argraffydd"
 
 #: management/kmjobviewer.cpp:162 management/kmjobviewer.cpp:200
 #: management/kmjobviewer.cpp:216 management/kmjobviewer.cpp:231
 #: management/kmjobviewer.cpp:398 management/kmjobviewer.cpp:589
+#, kde-format
 msgid "All Printers"
 msgstr "Pob Argraffydd"
 
@@ -4397,67 +4898,83 @@ msgid "Max.: %1"
 msgstr "Uchafrif: %1"
 
 #: management/kmjobviewer.cpp:258
+#, kde-format
 msgid "Job ID"
 msgstr "ID Swydd"
 
 #: management/kmjobviewer.cpp:258
+#, kde-format
 msgid "Owner"
 msgstr "Perchennog"
 
 #: management/kmjobviewer.cpp:259
+#, kde-format
 msgctxt "Status"
 msgid "State"
 msgstr " Cyflwr"
 
 #: management/kmjobviewer.cpp:259
+#, kde-format
 msgid "Size (KB)"
 msgstr "Maint (KB)"
 
 #: management/kmjobviewer.cpp:259
+#, kde-format
 msgid "Page(s)"
 msgstr "Tudalen(nau)"
 
 #: management/kmjobviewer.cpp:277
+#, kde-format
 msgid "&Hold"
 msgstr "&Gafael"
 
 #: management/kmjobviewer.cpp:282
+#, kde-format
 msgid "&Resume"
 msgstr "Ai&l-ddechrau"
 
 #: management/kmjobviewer.cpp:287
+#, kde-format
 msgid "Remo&ve"
 msgstr "&Gwaredu"
 
 #: management/kmjobviewer.cpp:293
+#, kde-format
 msgid "Res&tart"
 msgstr "Ail-g&ychwyn"
 
 #: management/kmjobviewer.cpp:298
+#, kde-format
 msgid "&Move to Printer"
 msgstr "&Symud i Argraffydd"
 
 #: management/kmjobviewer.cpp:306
+#, kde-format
 msgid "&Toggle Completed Jobs"
 msgstr "&Dangos/Cuddio Swyddi a Orffenwyd"
 
 #: management/kmjobviewer.cpp:312
+#, kde-format
 msgid "Show Only User Jobs"
 msgstr "Dangos Dim Ond Swyddi Defnyddiwr"
 
 #: management/kmjobviewer.cpp:324
+#, kde-format
 msgid "User Name"
 msgstr "Enw'r defnyddiwr"
 
 #: management/kmjobviewer.cpp:342
+#, kde-format
 msgid "&Select Printer"
 msgstr "&Dewis Argraffydd"
 
 #: management/kmjobviewer.cpp:370
+#, kde-format
 msgid "Refresh"
 msgstr "Adnewyddu"
 
 #: management/kmjobviewer.cpp:377
+#, kde-format
 msgid "Keep window permanent"
 msgstr "Cadw'r ffenest yn barhaol"
 
@@ -4471,14 +4988,17 @@ msgstr ""
 "oddiwrth y rheolydd:"
 
 #: management/kmjobviewer.cpp:535
+#, kde-format
 msgid "Hold"
 msgstr "Gafael"
 
 #: management/kmjobviewer.cpp:540
+#, kde-format
 msgid "Resume"
 msgstr "Ail-ddechrau"
 
 #: management/kmjobviewer.cpp:550
+#, kde-format
 msgid "Restart"
 msgstr "Ail-gychwyn"
 
@@ -4488,22 +5008,27 @@ msgid "Move to %1"
 msgstr "Symud i %1"
 
 #: management/kmjobviewer.cpp:717
+#, kde-format
 msgid "Operation failed."
 msgstr "Mehtodd y gweithrediad."
 
 #: management/kmlistview.cpp:127
+#, kde-format
 msgid "Print System"
 msgstr "Cysawd Argraffu"
 
 #: management/kmlistview.cpp:130
+#, kde-format
 msgid "Classes"
 msgstr "Dosbarthiadau"
 
 #: management/kmlistview.cpp:133
+#, kde-format
 msgid "Printers"
 msgstr "Argraffyddion"
 
 #: management/kmlistview.cpp:136
+#, kde-format
 msgid "Specials"
 msgstr "Arbenigion"
 
@@ -4518,101 +5043,122 @@ msgstr ""
 
 #: management/kmmainview.cpp:141 management/kmmainview.cpp:852
 #: management/kmmainview.cpp:923 management/kmmainview.cpp:947
+#, kde-format
 msgid "Initializing manager..."
 msgstr "Cychwyn y rheolydd..."
 
 #: management/kmmainview.cpp:190
+#, kde-format
 msgid "&Icons,&List,&Tree"
 msgstr "&Eiconau,&Rhestr,&Coeden"
 
 #: management/kmmainview.cpp:194
+#, kde-format
 msgid "Start/Stop Printer"
 msgstr "Cychwyn/Stopio Argraffydd"
 
 #: management/kmmainview.cpp:197
+#, kde-format
 msgid "&Start Printer"
 msgstr "&Cychwyn Argraffydd"
 
 #: management/kmmainview.cpp:203
+#, kde-format
 msgid "Sto&p Printer"
 msgstr "&Stopio Argraffydd"
 
 #: management/kmmainview.cpp:209
+#, kde-format
 msgid "Enable/Disable Job Spooling"
 msgstr "Alluogi/Analluogi Sbwlio Swyddi"
 
 #: management/kmmainview.cpp:213
+#, kde-format
 msgid "&Enable Job Spooling"
 msgstr "&Alluogi Sbwlio Swyddi"
 
 #: management/kmmainview.cpp:219
+#, kde-format
 msgid "&Disable Job Spooling"
 msgstr "A&nalluogi Sbwlio Swyddi"
 
 #: management/kmmainview.cpp:230
+#, kde-format
 msgid "&Configure..."
 msgstr "&Ffurweddu..."
 
 #: management/kmmainview.cpp:235
+#, kde-format
 msgid "Add &Printer/Class..."
 msgstr "&Ychwanegu Argraffydd/Dosbarth..."
 
 #: management/kmmainview.cpp:240
+#, kde-format
 msgid "Add &Special (pseudo) Printer..."
 msgstr "Ychwanegu (ffug-)&Argraffydd Arbennig"
 
 #: management/kmmainview.cpp:245
+#, kde-format
 msgid "Set as &Local Default"
 msgstr "&Gosod fel Rhagosodiad Lleol"
 
 #: management/kmmainview.cpp:250
+#, kde-format
 msgid "Set as &User Default"
 msgstr "Gosod fel Rhagosodiad &Defnyddiwr"
 
 #: management/kmmainview.cpp:255
+#, kde-format
 msgid "&Test Printer..."
 msgstr "A&rbrofi Argraffydd..."
 
 #: management/kmmainview.cpp:260
+#, kde-format
 msgid "Configure &Manager..."
 msgstr "Ffur&fweddu Rheolydd..."
 
 #: management/kmmainview.cpp:265
+#, kde-format
 msgid "Initialize Manager/&View"
 msgstr "Cychwyn Rheloydd/&Golwg"
 
 #: management/kmmainview.cpp:270
+#, kde-format
 msgid "&Orientation"
 msgstr "&Cyfeiriadaeth"
 
 #: management/kmmainview.cpp:274
+#, kde-format
 msgid "&Vertical,&Horizontal"
 msgstr "&Fertigol,&Llorweddol"
 
 #: management/kmmainview.cpp:278
+#, kde-format
 msgid "R&estart Server"
 msgstr "A&il-gychwyn Gweinydd"
 
 #: management/kmmainview.cpp:283
+#, kde-format
 msgid "Configure &Server..."
 msgstr "Ffurweddu Gwei&nydd..."
 
 #: management/kmmainview.cpp:289
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Show &Toolbar"
 msgstr "Dangos Bar &Offer"
 
 #: management/kmmainview.cpp:292
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Show Me&nu Toolbar"
 msgstr "Dangos Bar &Offer"
 
 #: management/kmmainview.cpp:295
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Show Pr&inter Details"
 msgstr "Dangos/Cuddio &Manylion Argraffydd"
 
 #: management/kmmainview.cpp:301
+#, kde-format
 msgid "Toggle Printer &Filtering"
 msgstr "Cychwyn/Stopio &Hidlo Argraffydd"
 
@@ -4627,31 +5173,41 @@ msgid "%1 &Web Site"
 msgstr "%1 &Gwefan"
 
 #: management/kmmainview.cpp:317
+#, kde-format
 msgid "Pri&nter Tools"
 msgstr "&Offer Argraffydd"
 
+#. i18n( "Add" ), menu );
 #: management/kmmainview.cpp:362
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Add"
 msgstr "&Ychwanegu"
 
+#. i18n( "Server" ), menu );
 #: management/kmmainview.cpp:389
+#, kde-format
 msgid "Print Server"
 msgstr "Gweinydd Argraffu"
 
+#. i18n( "Manager" ), menu );
 #: management/kmmainview.cpp:398
+#, kde-format
 msgid "Print Manager"
 msgstr "Rheolydd Argraffu"
 
+#. i18n( "View" ), menu );
 #: management/kmmainview.cpp:413
+#, kde-format
 msgid "View"
 msgstr ""
 
 #: management/kmmainview.cpp:422
+#, kde-format
 msgid "Documentation"
 msgstr "Dogfenniaeth"
 
 #: management/kmmainview.cpp:445
+#, kde-format
 msgid "An error occurred while retrieving the printer list."
 msgstr "Digwyddodd gwall wrth nÃ´l y rhestr argraffyddion."
 
@@ -4691,6 +5247,7 @@ msgid "Unable to load a valid driver for printer %1."
 msgstr "Methu llwytho gyrrydd dilys am argraffydd %1."
 
 #: management/kmmainview.cpp:668
+#, kde-format
 msgid "Unable to create printer."
 msgstr "Methu creu argraffydd."
 
@@ -4705,6 +5262,7 @@ msgid "Unable to test printer %1."
 msgstr "Methu arbrofi argraffydd %1."
 
 #: management/kmmainview.cpp:732
+#, kde-format
 msgid "Internal error (no error message)."
 msgstr "Gwall mewnol (dim neges gwall)."
 
@@ -4715,22 +5273,27 @@ msgid "<p>Error message received from manager:</p><p>%1</p>"
 msgstr "Derbynwyd neges gwall oddiwrth y rheolydd: </p><p>%1</p>"
 
 #: management/kmmainview.cpp:750
+#, kde-format
 msgid "Unable to restart print server."
 msgstr "Methu ail-gychwyn y gweinydd argraffu."
 
 #: management/kmmainview.cpp:753
+#, kde-format
 msgid "Restarting server..."
 msgstr "Ail-gychwyn gweinydd... "
 
 #: management/kmmainview.cpp:762
+#, kde-format
 msgid "Unable to configure print server."
 msgstr "Methu ffurfweddu'r gweinydd argraffu."
 
 #: management/kmmainview.cpp:765
+#, kde-format
 msgid "Configuring server..."
 msgstr "Ffurfweddu'r gweinydd..."
 
 #: management/kmmainview.cpp:906
+#, kde-format
 msgid ""
 "Unable to start printer tool. Possible reasons are: no printer selected, the "
 "selected printer doesn't have any local device defined (printer port), or "
@@ -4742,97 +5305,118 @@ msgstr ""
 "rhaglengell offer."
 
 #: management/kmmainview.cpp:930
+#, kde-format
 msgid "Unable to retrieve the printer list."
 msgstr "Methu nÃ´l y rhestr argraffyddion."
 
 #: management/kmpages.cpp:52 management/kxmlcommandselector.cpp:59
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Information"
 msgstr "Gwybodaeth"
 
 #: management/kmpages.cpp:64
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Properties"
 msgstr "P&riodweddau"
 
 #: management/kmpages.cpp:70
+#, kde-format
 msgid "Instances"
 msgstr "Enghreifftiau"
 
 #: management/kmpropbackend.cpp:34
+#, kde-format
 msgid "Printer type:"
 msgstr "Math ye argraffydd:"
 
 #: management/kmpropbackend.cpp:50
+#, kde-format
 msgid "Interface"
 msgstr "Rhyngwyneb"
 
 #: management/kmpropbackend.cpp:51
+#, kde-format
 msgid "Interface Settings"
 msgstr "Gosodiadau'r Rhyngwyneb"
 
 #: management/kmpropbackend.cpp:63
+#, kde-format
 msgid "IPP Printer"
 msgstr "Argraffydd IPP"
 
 #: management/kmpropbackend.cpp:64
+#, kde-format
 msgid "Local USB Printer"
 msgstr "Argraffydd USB Lleol"
 
 #: management/kmpropbackend.cpp:65
+#, kde-format
 msgid "Local Parallel Printer"
 msgstr "Argraffydd Paralel Lleol"
 
 #: management/kmpropbackend.cpp:66
+#, kde-format
 msgid "Local Serial Printer"
 msgstr "Argraffydd Cyfresol Lleol"
 
 #: management/kmpropbackend.cpp:67
+#, kde-format
 msgid "Network Printer (socket)"
 msgstr "Argraffydd Rhwydwaith (soced)"
 
 #: management/kmpropbackend.cpp:68
+#, kde-format
 msgid "SMB printers (Windows)"
 msgstr "Argrafyddion SMB (Windows)"
 
 #: management/kmpropbackend.cpp:70
+#, kde-format
 msgid "File printer"
 msgstr "Argraffydd Ffeil"
 
 #: management/kmpropbackend.cpp:71
+#, kde-format
 msgid "Serial Fax/Modem printer"
 msgstr "Argraffydd cyfresol Ffacs/Modem"
 
 #: management/kmpropbackend.cpp:72
+#, kde-format
 msgctxt "Unknown Protocol"
 msgid "Unknown"
 msgstr "Anhysbys"
 
 #: management/kmpropcontainer.cpp:35
+#, kde-format
 msgid "Change..."
 msgstr "Newid..."
 
 #: management/kmpropdriver.cpp:36
+#, kde-format
 msgid "Manufacturer:"
 msgstr "Gwneuthurwr:"
 
 #: management/kmpropdriver.cpp:37
+#, kde-format
 msgid "Printer model:"
 msgstr "Model yr argraffydd:"
 
 #: management/kmpropdriver.cpp:38
+#, kde-format
 msgid "Driver info:"
 msgstr "Gwybodaeth gyrrydd:"
 
 #: management/kmpropgeneral.cpp:37
+#, kde-format
 msgid "Printer name:"
 msgstr "Enw'r argraffydd:"
 
 #: management/kmpropmembers.cpp:41 management/kmwend.cpp:61
+#, kde-format
 msgid "Members"
 msgstr "Aelodau"
 
 #: management/kmpropmembers.cpp:42
+#, kde-format
 msgid "Class Members"
 msgstr "Aelodau'r Dosbarthiad"
 
@@ -4846,40 +5430,48 @@ msgstr ""
 "rheolydd:<p>%1</p></qt> "
 
 #: management/kmspecialprinterdlg.cpp:50
+#, kde-format
 msgid "Add Special Printer"
 msgstr "Ychwanegu Argraffydd Arbennig"
 
 #: management/kmspecialprinterdlg.cpp:61 management/kxmlcommanddlg.cpp:114
 #: management/kxmlcommanddlg.cpp:872
+#, kde-format
 msgid "&Description:"
 msgstr "&Disgrifiad:"
 
 #: management/kmspecialprinterdlg.cpp:62
+#, kde-format
 msgid "&Location:"
 msgstr "&Lleoliad:"
 
 #: management/kmspecialprinterdlg.cpp:70
+#, kde-format
 msgid "Command &Settings"
 msgstr "Gosodiadau &Gorchymyn"
 
 #: management/kmspecialprinterdlg.cpp:76
+#, kde-format
 msgid "Outp&ut File"
 msgstr "Ffeil &Allbwn"
 
 #: management/kmspecialprinterdlg.cpp:79
+#, kde-format
 msgid "&Enable output file"
 msgstr "Alluogi ffeil all&bwn"
 
 #: management/kmspecialprinterdlg.cpp:90 management/kxmlcommanddlg.cpp:115
+#, kde-format
 msgid "&Format:"
 msgstr "&Fformat:"
 
 #: management/kmspecialprinterdlg.cpp:95
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Filename e&xtension:"
 msgstr "Estyniad i'r en&w ffeil:"
 
 #: management/kmspecialprinterdlg.cpp:111
+#, kde-format
 msgid ""
 "<p>The command will use an output file. If checked, make sure the command "
 "contains an output tag.</p>"
@@ -4888,7 +5480,7 @@ msgstr ""
 "fod y gorchymyn yn cynnwys tag allbwn.</p>"
 
 #: management/kmspecialprinterdlg.cpp:113
-#, c-format
+#, kde-format
 msgid ""
 "<p>The command to execute when printing on this special printer. Either "
 "enter the command to execute directly, or associate/create a command object "
@@ -4914,6 +5506,7 @@ msgstr ""
 "efo'r llythyren gyntaf yn llythyren bras. </li></ul>"
 
 #: management/kmspecialprinterdlg.cpp:123
+#, kde-format
 msgid ""
 "<p>The default mimetype for the output file (e.g. application/postscript).</"
 "p>"
@@ -4922,11 +5515,13 @@ msgstr ""
 "</p>"
 
 #: management/kmspecialprinterdlg.cpp:126
+#, kde-format
 msgid "<p>The default extension for the output file (e.g. ps, pdf, ps.gz).</p>"
 msgstr ""
 "<p>Yr estyniad rhagosodedig am y ffeil allbwn (e.e. ps, pdf, ps.gz).</p>"
 
 #: management/kmspecialprinterdlg.cpp:181
+#, kde-format
 msgid "You must provide a non-empty name."
 msgstr "Rhaid i chi ddarparu enw sy ddim yn wag."
 
@@ -4941,29 +5536,34 @@ msgid "Configuring %1"
 msgstr "Wrthi'n ffurfweddu %1"
 
 #: management/kmwbackend.cpp:39
+#, kde-format
 msgid "Backend Selection"
 msgstr "Dewis Ol-wyneb"
 
 #: management/kmwbackend.cpp:48
-#, fuzzy
+#, fuzzy, kde-format
 msgid "You must select a backend."
 msgstr "Rhaid i chi ddewis ol-wyneb!"
 
 #: management/kmwbackend.cpp:96
+#, kde-format
 msgid "&Local printer (parallel, serial, USB)"
 msgstr "Argraffydd &lleol (paralel, cyfresol, USB)"
 
 #: management/kmwbackend.cpp:97
+#, kde-format
 msgid ""
 "<qt><p>Locally-connected printer</p><p>Use this for a printer connected to "
 "the computer via a parallel, serial or USB port.</p></qt>"
 msgstr ""
 
 #: management/kmwbackend.cpp:103
+#, kde-format
 msgid "&SMB shared printer (Windows)"
 msgstr "Argraffydd &SMB wedi ei rannu (Windows)"
 
 #: management/kmwbackend.cpp:104
+#, kde-format
 msgid ""
 "<qt><p>Shared Windows printer</p><p>Use this for a printer installed on a "
 "Windows server and shared on the network using the SMB protocol (samba).</"
@@ -4971,20 +5571,24 @@ msgid ""
 msgstr ""
 
 #: management/kmwbackend.cpp:111
+#, kde-format
 msgid "&Remote LPD queue"
 msgstr "Ciw LPD &pell"
 
 #: management/kmwbackend.cpp:112
+#, kde-format
 msgid ""
 "<qt><p>Print queue on a remote LPD server</p><p>Use this for a print queue "
 "existing on a remote machine running a LPD print server.</p></qt>"
 msgstr ""
 
 #: management/kmwbackend.cpp:118
+#, kde-format
 msgid "Ne&twork printer (TCP)"
 msgstr "Argraffydd rhwydwai&th (TCP)"
 
 #: management/kmwbackend.cpp:119
+#, kde-format
 msgid ""
 "<qt><p>Network TCP printer</p><p>Use this for a network-enabled printer "
 "using TCP (usually on port 9100) as communication protocol. Most network "
@@ -4992,41 +5596,48 @@ msgid ""
 msgstr ""
 
 #: management/kmwclass.cpp:37
+#, kde-format
 msgid "Class Composition"
 msgstr "Cyfansoddiad y Dosbarth"
 
 #: management/kmwclass.cpp:52
+#, kde-format
 msgid "Available printers:"
 msgstr "Argraffyddion ar gael:"
 
 #: management/kmwclass.cpp:53
+#, kde-format
 msgid "Class printers:"
 msgstr "Dosbarthiad yr argraffydd:"
 
 #: management/kmwclass.cpp:87
-#, fuzzy
+#, fuzzy, kde-format
 msgid "You must select at least one printer."
 msgstr "Rhaid i chi ddewis o leiaf un argraffydd!"
 
 #: management/kmwdriver.cpp:33
+#, kde-format
 msgid "Printer Model Selection"
 msgstr "Dewis Model o Argraffydd"
 
 #: management/kmwdriver.cpp:76 management/kmwend.cpp:104
 #: management/kmwname.cpp:79
+#, kde-format
 msgid "Raw printer"
 msgstr "Argraffydd crau"
 
 #: management/kmwdriver.cpp:101
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Internal error: unable to locate the driver."
 msgstr "Gwall mewnol: methu lleoli'r gyrrydd!"
 
 #: management/kmwdriverselect.cpp:37
+#, kde-format
 msgid "Driver Selection"
 msgstr "Dewis Gyrrydd"
 
 #: management/kmwdriverselect.cpp:44
+#, kde-format
 msgid ""
 "<p>Several drivers have been detected for this model. Select the driver you "
 "want to use. You will have the opportunity to test it as well as to change "
@@ -5037,43 +5648,52 @@ msgstr ""
 "ac i'w newid hefyd os bo angen.</p>"
 
 #: management/kmwdriverselect.cpp:47
+#, kde-format
 msgid "Driver Information"
 msgstr "Gwybodaeth Gyrrydd"
 
 #: management/kmwdriverselect.cpp:66
-#, fuzzy
+#, fuzzy, kde-format
 msgid "You must select a driver."
 msgstr "Rhaid i chi ddewis gyrrydd!"
 
 #: management/kmwdriverselect.cpp:84
+#, kde-format
 msgid " [recommended]"
 msgstr "[argymelledig]"
 
 #: management/kmwdriverselect.cpp:112
+#, kde-format
 msgid "No information about the selected driver."
 msgstr "Dim gwybodaeth am y gyrrydd penodol."
 
 #: management/kmwdrivertest.cpp:42
+#, kde-format
 msgid "Printer Test"
 msgstr "Arbrawf Argraffu"
 
 #: management/kmwdrivertest.cpp:52
+#, kde-format
 msgid "<b>Manufacturer:</b>"
 msgstr "<b>Gwneuthurwr:</b>"
 
 #: management/kmwdrivertest.cpp:53
+#, kde-format
 msgid "<b>Model:</b>"
 msgstr "<b>Model:</b>"
 
 #: management/kmwdrivertest.cpp:54
+#, kde-format
 msgid "<b>Description:</b>"
 msgstr "<b>Disgrifiad:</b>"
 
 #: management/kmwdrivertest.cpp:56
+#, kde-format
 msgid "&Test"
 msgstr "&Arbrofi"
 
 #: management/kmwdrivertest.cpp:61
+#, kde-format
 msgid ""
 "<p>Now you can test the printer before finishing installation. Use the "
 "<b>Settings</b> button to configure the printer driver and the <b>Test</b> "
@@ -5091,6 +5711,7 @@ msgid "<qt>Unable to load the requested driver:<p>%1</p></qt>"
 msgstr "<qt>Methu llwytho'r gyrrydd a gofynnwyd amdano <p>%1</p></qt>"
 
 #: management/kmwdrivertest.cpp:150
+#, kde-format
 msgid ""
 "Test page successfully sent to printer. Wait until printing is complete, "
 "then click the OK button."
@@ -5099,88 +5720,108 @@ msgstr ""
 "argraffu orffen, ac wedyn cliciwch y botwm Iawn."
 
 #: management/kmwdrivertest.cpp:152
+#, kde-format
 msgid "Unable to test printer: "
 msgstr "Methu arbrofi'r argraffydd:"
 
 #: management/kmwdrivertest.cpp:154
+#, kde-format
 msgid "Unable to remove temporary printer."
 msgstr "Methu gwaredu argraffydd dros dro."
 
 #: management/kmwdrivertest.cpp:156
+#, kde-format
 msgid "Unable to create temporary printer."
 msgstr "Methu creu argraffydd dros dro."
 
 #: management/kmwend.cpp:34
+#, kde-format
 msgid "Confirmation"
 msgstr "Gwybodaeth"
 
 #: management/kmwend.cpp:55
+#, kde-format
 msgid "Location"
 msgstr "Lleoliad"
 
 #: management/kmwend.cpp:56 management/kmwend.cpp:109
 #: management/kxmlcommanddlg.cpp:142 management/kxmlcommanddlg.cpp:551
+#, kde-format
 msgid "Description"
 msgstr "Disgrifiad"
 
 #: management/kmwend.cpp:69
+#, kde-format
 msgid "Backend"
 msgstr "Ol-wyneb"
 
 #: management/kmwend.cpp:73
+#, kde-format
 msgid "Device"
 msgstr "Dyfais"
 
 #: management/kmwend.cpp:76
+#, kde-format
 msgid "Printer IP"
 msgstr "IP yr Argraffydd"
 
 #: management/kmwend.cpp:77 management/kmwend.cpp:88
+#, kde-format
 msgid "Port"
 msgstr "Porth"
 
 #: management/kmwend.cpp:80 management/kmwend.cpp:87
+#, kde-format
 msgid "Host"
 msgstr "Gwesteiwr"
 
 #: management/kmwend.cpp:81 rlpr/kmproprlpr.cpp:50
+#, kde-format
 msgid "Queue"
 msgstr "Ciw"
 
 #: management/kmwend.cpp:84
-#, fuzzy
+#, fuzzy, kde-format
 msgid "File"
 msgstr "Ffeil:"
 
 #: management/kmwend.cpp:90
+#, kde-format
 msgid "Account"
 msgstr "Cyfrif"
 
 #: management/kmwend.cpp:95
+#, kde-format
 msgid "URI"
 msgstr "URI"
 
 #: management/kmwend.cpp:106
+#, kde-format
 msgid "DB driver"
 msgstr "Gyrrydd cronfa ddata"
 
 #: management/kmwend.cpp:106
+#, kde-format
 msgid "External driver"
 msgstr "Gyrrydd allanol"
 
 #: management/kmwend.cpp:107
+#, kde-format
 msgid "Manufacturer"
 msgstr "Gwneuthurwr"
 
 #: management/kmwend.cpp:108
+#, kde-format
 msgid "Model"
 msgstr "Model"
 
 #: management/kmwfile.cpp:35
+#, kde-format
 msgid "File Selection"
 msgstr "Dewis Ffeil"
 
 #: management/kmwfile.cpp:42
+#, kde-format
 msgid ""
 "<p>The printing will be redirected to a file. Enter here the path of the "
 "file you want to use for redirection. Use an absolute path or the browse "
@@ -5191,20 +5832,22 @@ msgstr ""
 "llwybr llwyr, neu'r botwm pori am ddewis graffegol.</p>"
 
 #: management/kmwfile.cpp:45
+#, kde-format
 msgid "Print to file:"
 msgstr "Argraffu i ffeil:"
 
 #: management/kmwfile.cpp:69
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Directory does not exist."
 msgstr "Nid yw'r cyfeiriadur yn bodoli!"
 
 #: management/kmwinfopage.cpp:31
+#, kde-format
 msgid "Introduction"
 msgstr "Rhagymadrodd"
 
 #: management/kmwinfopage.cpp:35
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| "<p>Welcome,</p><br><p>This wizard will help to install a new printer on "
 #| "your computer. It will guide you through the various steps of the process "
@@ -5228,51 +5871,63 @@ msgstr ""
 "printing.kde.org\"><i>Y tim argraffu KDE </i></a>.</p>"
 
 #: management/kmwizard.cpp:66 management/kmwizard.cpp:217
+#, kde-format
 msgid "&Next >"
 msgstr "&Nesaf >"
 
 #: management/kmwizard.cpp:68
+#, kde-format
 msgid "< &Back"
 msgstr "< &Yn Ol"
 
 #: management/kmwizard.cpp:140 management/kmwizard.cpp:176
 #: management/kmwizard.cpp:199
+#, kde-format
 msgid "Add Printer Wizard"
 msgstr "Dewin Ychwanegu Argraffydd"
 
 #: management/kmwizard.cpp:176
+#, kde-format
 msgid "Modify Printer"
 msgstr "Addasu Argraffydd"
 
 #: management/kmwizard.cpp:199
+#, kde-format
 msgid "Unable to find the requested page."
 msgstr "Methu canfod y dudalen a ofynnwyd amdani."
 
 #: management/kmwizard.cpp:215 management/kmwizard.cpp:238
+#, kde-format
 msgid "&Finish"
 msgstr "&Gorffen"
 
 #: management/kmwlocal.cpp:38
+#, kde-format
 msgid "Local Port Selection"
 msgstr "Dewis y Borth Leol"
 
 #: management/kmwlocal.cpp:50
+#, kde-format
 msgid "Local System"
 msgstr "Cysawd Lleol"
 
 #: management/kmwlocal.cpp:57
+#, kde-format
 msgid "Parallel"
 msgstr "Paralel"
 
 #: management/kmwlocal.cpp:58
+#, kde-format
 msgid "Serial"
 msgstr "Cyfresol"
 
 #: management/kmwlocal.cpp:59
+#, kde-format
 msgid "USB"
 msgstr "USB"
 
 #: management/kmwlocal.cpp:65
+#, kde-format
 msgid ""
 "<p>Select a valid detected port, or enter directly the corresponding URI in "
 "the bottom edit field.</p>"
@@ -5281,30 +5936,34 @@ msgstr ""
 "uniongyrchol yr URI cyfatebol yn y maes golygu wrth y gwaelod.</p>"
 
 #: management/kmwlocal.cpp:83
+#, kde-format
 msgctxt "The URI is empty"
 msgid "Empty URI."
 msgstr "Mae'r URI yn wag."
 
 #: management/kmwlocal.cpp:86
-#, fuzzy
+#, fuzzy, kde-format
 msgid "The local URI does not correspond to a detected port. Continue?"
 msgstr ""
 "Nid yw'r URI lleol yn cyfatebu i borth sydd wedi ei darganfod.  Mynd ymlaen?"
 
 #: management/kmwlocal.cpp:87
+#, kde-format
 msgid "Select a valid port."
 msgstr "Dewis porth ddilys."
 
 #: management/kmwlocal.cpp:163
+#, kde-format
 msgid "Unable to detect local ports."
 msgstr "Methu darganfod pyrth lleol."
 
 #: management/kmwlpd.cpp:43
+#, kde-format
 msgid "LPD Queue Information"
 msgstr "Gwybodaeth Ciw LPD"
 
 #: management/kmwlpd.cpp:46
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 "<p>Enter the information concerning the remote LPD queue; this wizard will "
 "check it before continuing.</p>"
@@ -5313,11 +5972,12 @@ msgstr ""
 "wirio cyn mynd ymlaen.</p>"
 
 #: management/kmwlpd.cpp:49 rlpr/kmproprlpr.cpp:35 rlpr/kmwrlpr.cpp:63
+#, kde-format
 msgid "Queue:"
 msgstr "Ciw:"
 
 #: management/kmwlpd.cpp:55
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Some information is missing."
 msgstr "Mae gwybodaeth ar goll!"
 
@@ -5328,10 +5988,12 @@ msgstr ""
 "Methu canfod ciw %1 ar weinydd %2!  ydych eisiau mynd ymlaen beth bynnag?"
 
 #: management/kmwname.cpp:34
+#, kde-format
 msgid "General Information"
 msgstr "Gwybodaeth Cyffredinol"
 
 #: management/kmwname.cpp:37
+#, kde-format
 msgid ""
 "<p>Enter the information concerning your printer or class. <b>Name</b> is "
 "mandatory, <b>Location</b> and <b>Description</b> are not (they may even not "
@@ -5342,11 +6004,12 @@ msgstr ""
 "ydynt yn cael eu defnyddio ar rai cysodau).</p> "
 
 #: management/kmwname.cpp:39
+#, kde-format
 msgid "Name:"
 msgstr "Enw:"
 
 #: management/kmwname.cpp:47
-#, fuzzy
+#, fuzzy, kde-format
 msgid "You must supply at least a name."
 msgstr "Rhaid i chi ddarparu o leiaf enw!"
 
@@ -5363,15 +6026,17 @@ msgstr ""
 "canlyniad.  Beth ydych eisiau ei wneud?  "
 
 #: management/kmwname.cpp:59
+#, kde-format
 msgid "Strip"
 msgstr "Tynnu"
 
 #: management/kmwpassword.cpp:35
+#, kde-format
 msgid "User Identification"
 msgstr "Dynodiad y Defnyddiwr"
 
 #: management/kmwpassword.cpp:42
-#, fuzzy
+#, fuzzy, kde-format
 msgid ""
 "<p>This backend may require a login/password to work properly. Select the "
 "type of access to use and fill in the login and password entries if needed.</"
@@ -5382,62 +6047,72 @@ msgstr ""
 "b> er mwyn defnyddio cyrchiad di-enw.</p>"
 
 #: management/kmwpassword.cpp:48
+#, kde-format
 msgid "&Login:"
 msgstr "&Mewnosod:"
 
 #: management/kmwpassword.cpp:52
+#, kde-format
 msgid "&Anonymous (no login/password)"
 msgstr ""
 
 #: management/kmwpassword.cpp:53
-#, fuzzy
+#, fuzzy, kde-format
 msgid "&Guest account (login=\"guest\")"
 msgstr "&Cyfrif gwestai"
 
 #: management/kmwpassword.cpp:54
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Nor&mal account"
 msgstr "&Cyfrif gwestai"
 
 #: management/kmwpassword.cpp:86
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Select one option"
 msgstr "Dewis Ffont"
 
 #: management/kmwpassword.cpp:88
-#, fuzzy
+#, fuzzy, kde-format
 msgid "User name is empty."
 msgstr "Mae enw'r defnyddiwr yn wag!"
 
 #: management/kmwsmb.cpp:36
+#, kde-format
 msgid "SMB Printer Settings"
 msgstr "Gosodiadau Argraffydd SMB"
 
 #: management/kmwsmb.cpp:43
+#, kde-format
 msgid "Scan"
 msgstr "Syllu"
 
 #: management/kmwsmb.cpp:44
+#, kde-format
 msgid "Abort"
 msgstr "Terfynu"
 
 #: management/kmwsmb.cpp:46
+#, kde-format
 msgid "Workgroup:"
 msgstr "Grwp gwaith:"
 
 #: management/kmwsmb.cpp:47
+#, kde-format
 msgid "Server:"
 msgstr " Gweinydd:"
 
 #: management/kmwsmb.cpp:48 tools/escputil/escpwidget.cpp:109
+#, kde-format
 msgid "Printer:"
 msgstr "Argraffydd:"
 
 #: management/kmwsmb.cpp:89 rlpr/kmrlprmanager.cpp:45
+#, kde-format
 msgid "Empty printer name."
 msgstr "Mae enw'r argraffydd yn wag."
 
 #: management/kmwsmb.cpp:106
+#, kde-format
 msgid "<anonymous>"
 msgstr ""
 
@@ -5447,129 +6122,158 @@ msgid "Login: %1"
 msgstr "Mewngofnod: %1"
 
 #: management/kmwsocket.cpp:38
+#, kde-format
 msgid "Network Printer Information"
 msgstr "Gwybodaeth Argraffydd Rhwydwaith"
 
 #: management/kmwsocket.cpp:48
+#, kde-format
 msgid "&Printer address:"
 msgstr "&Cyfeiriad yr argraffydd:"
 
 #: management/kmwsocket.cpp:49
+#, kde-format
 msgid "P&ort:"
 msgstr "&Porth:"
 
 #: management/kmwsocket.cpp:101
-#, fuzzy
+#, fuzzy, kde-format
 msgid "You must enter a printer address."
 msgstr "Rhaid i chi fewnosod cyfeiriad argraffydd!"
 
 #: management/kmwsocket.cpp:110
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Wrong port number."
 msgstr "Rhif porth anghywir!"
 
 #: management/kmwsocketutil.cpp:60 management/networkscanner.cpp:317
+#, kde-format
 msgid "&Subnetwork:"
 msgstr "&Is-rwydwaith:"
 
 #: management/kmwsocketutil.cpp:62 management/networkscanner.cpp:319
+#, kde-format
 msgid "&Timeout (ms):"
 msgstr "&Goramser (ms):"
 
 #: management/kmwsocketutil.cpp:105 management/networkscanner.cpp:362
+#, kde-format
 msgid "Scan Configuration"
 msgstr "Syllu ar y Ffurfweddiad"
 
 #: management/kmwsocketutil.cpp:118 management/kmwsocketutil.cpp:122
 #: management/networkscanner.cpp:375 management/networkscanner.cpp:379
+#, kde-format
 msgid "Wrong subnetwork specification."
 msgstr "Penodiad is-rwydwaith anghywir."
 
 #: management/kmwsocketutil.cpp:130 management/networkscanner.cpp:387
+#, kde-format
 msgid "Wrong timeout specification."
 msgstr "Penodiad goramser anghywir."
 
 #: management/kmwsocketutil.cpp:133 management/networkscanner.cpp:390
+#, kde-format
 msgid "Wrong port specification."
 msgstr "Penodiad porth anghywir."
 
 #: management/kxmlcommanddlg.cpp:107
+#, kde-format
 msgid "Integer"
 msgstr "Cyfanrif"
 
 #: management/kxmlcommanddlg.cpp:108
+#, kde-format
 msgid "Float"
 msgstr "Rhif arnawf"
 
 #: management/kxmlcommanddlg.cpp:109
+#, kde-format
 msgid "List"
 msgstr "Rhestr"
 
 #: management/kxmlcommanddlg.cpp:117
+#, kde-format
 msgid "Default &value:"
 msgstr "&Gwerth rhagosodedig:"
 
 #: management/kxmlcommanddlg.cpp:118
+#, kde-format
 msgid "Co&mmand:"
 msgstr "G&orchymyn:"
 
 #: management/kxmlcommanddlg.cpp:125
+#, kde-format
 msgid "&Persistent option"
 msgstr "Dewisiad &Parhaol "
 
 #: management/kxmlcommanddlg.cpp:127
+#, kde-format
 msgid "Va&lues"
 msgstr "Gwer&thoedd"
 
 #: management/kxmlcommanddlg.cpp:136
+#, kde-format
 msgid "Minimum v&alue:"
 msgstr "Gwerth i&safrif:"
 
 #: management/kxmlcommanddlg.cpp:137
+#, kde-format
 msgid "Ma&ximum value:"
 msgstr "Gwerth u&chafrif:"
 
 #: management/kxmlcommanddlg.cpp:150
+#, kde-format
 msgid "Add value"
 msgstr "Ychwanegu gwerth"
 
 #: management/kxmlcommanddlg.cpp:151
+#, kde-format
 msgid "Delete value"
 msgstr "Dileu gwerth"
 
 #: management/kxmlcommanddlg.cpp:153
+#, kde-format
 msgid "Apply changes"
 msgstr "Cymhwyso'r newidiadau"
 
 #: management/kxmlcommanddlg.cpp:154
+#, kde-format
 msgid "Add group"
 msgstr "Ychwanegu grwp"
 
 #: management/kxmlcommanddlg.cpp:155
+#, kde-format
 msgid "Add option"
 msgstr "Ychwanegu dewisiad"
 
 #: management/kxmlcommanddlg.cpp:156
+#, kde-format
 msgid "Delete item"
 msgstr " Dileu eitem"
 
 #: management/kxmlcommanddlg.cpp:162
+#, kde-format
 msgid "&Input From"
 msgstr "&Mewnosod Oddiwrth"
 
 #: management/kxmlcommanddlg.cpp:164
+#, kde-format
 msgid "O&utput To"
 msgstr "&Allosod I"
 
 #: management/kxmlcommanddlg.cpp:166 management/kxmlcommanddlg.cpp:168
+#, kde-format
 msgid "File:"
 msgstr "Ffeil:"
 
 #: management/kxmlcommanddlg.cpp:167 management/kxmlcommanddlg.cpp:169
+#, kde-format
 msgid "Pipe:"
 msgstr "Peipen:"
 
 #: management/kxmlcommanddlg.cpp:309
+#, kde-format
 msgid ""
 "An identification string. Use only alphanumeric characters except spaces. "
 "The string <b>__root__</b> is reserved for internal use."
@@ -5578,6 +6282,7 @@ msgstr ""
 "gofodnodau. Mae'r llinyn <b>__root__</b> wedi'i neilltuo am ddefnydd mewnol."
 
 #: management/kxmlcommanddlg.cpp:313
+#, kde-format
 msgid ""
 "A description string. This string is shown in the interface, and should be "
 "explicit enough about the role of the corresponding option."
@@ -5586,12 +6291,14 @@ msgstr ""
 "dylai fod yn ddigon fanwl am rol y ddewisiad cyfatebol."
 
 #: management/kxmlcommanddlg.cpp:317
+#, kde-format
 msgid ""
 "The type of the option. This determines how the option is presented "
 "graphically to the user."
 msgstr " "
 
 #: management/kxmlcommanddlg.cpp:321
+#, kde-format
 msgid ""
 "The format of the option. This determines how the option is formatted for "
 "inclusion in the global command line. The tag <b>%value</b> can be used to "
@@ -5604,6 +6311,7 @@ msgstr ""
 "gan gynrychiolaeth llinell o werth y dewisiad."
 
 #: management/kxmlcommanddlg.cpp:327
+#, kde-format
 msgid ""
 "The default value of the option. For non persistent options, nothing is "
 "added to the command line if the option has that default value. If this "
@@ -5612,6 +6320,7 @@ msgid ""
 msgstr " "
 
 #: management/kxmlcommanddlg.cpp:333
+#, kde-format
 msgid ""
 "Make the option persistent. A persistent option is always written to the "
 "command line, whatever its value. This is useful when the chosen default "
@@ -5623,7 +6332,7 @@ msgstr ""
 "rhagosodedig gwirioneddol o'r cyfleuster gwaelodol."
 
 #: management/kxmlcommanddlg.cpp:337
-#, c-format
+#, kde-format
 msgid ""
 "The full command line to execute the associated underlying utility. This "
 "command line is based on a mechanism of tags that are replaced at run-time. "
@@ -5641,7 +6350,7 @@ msgstr ""
 "llythrennau bach</li></ul> "
 
 #: management/kxmlcommanddlg.cpp:347
-#, fuzzy, c-format
+#, fuzzy, kde-format
 msgid ""
 "Input specification when the underlying utility reads input data from a "
 "file. Use the tag <b>%in</b> to represent the input filename."
@@ -5651,7 +6360,7 @@ msgstr ""
 "mewnbwn.  "
 
 #: management/kxmlcommanddlg.cpp:351
-#, fuzzy, c-format
+#, fuzzy, kde-format
 msgid ""
 "Output specification when the underlying utility writes output data to a "
 "file. Use the tag <b>%out</b> to represent the output filename."
@@ -5661,6 +6370,7 @@ msgstr ""
 "mewnbwn.  "
 
 #: management/kxmlcommanddlg.cpp:355
+#, kde-format
 msgid ""
 "Input specification when the underlying utility reads input data from its "
 "standard input."
@@ -5669,6 +6379,7 @@ msgstr ""
 "oddiwrth ei fewnbwn arferol."
 
 #: management/kxmlcommanddlg.cpp:359
+#, kde-format
 msgid ""
 "Output specification when the underlying utility writes output data to its "
 "standard output."
@@ -5677,6 +6388,7 @@ msgstr ""
 "oddiwrth ei allbwn arferol."
 
 #: management/kxmlcommanddlg.cpp:363
+#, kde-format
 msgid ""
 "A comment about the underlying utility, which can be viewed by the user from "
 "the interface. This comment string supports basic HTML tags like &lt;a&gt;, "
@@ -5687,15 +6399,18 @@ msgstr ""
 "a&gt;, &lt;b&gt; or &lt;i&gt;."
 
 #: management/kxmlcommanddlg.cpp:572
+#, kde-format
 msgid ""
 "Invalid identification name. Empty strings and \"__root__\" are not allowed."
 msgstr "Enw dynodiad annilys.  Ni chaniateir llinynnau gwag a \"__root__\""
 
 #: management/kxmlcommanddlg.cpp:653 management/kxmlcommanddlg.cpp:656
+#, kde-format
 msgid "New Group"
 msgstr "Grwp Newydd"
 
 #: management/kxmlcommanddlg.cpp:671 management/kxmlcommanddlg.cpp:674
+#, kde-format
 msgid "New Option"
 msgstr "Dewisiad Newydd"
 
@@ -5705,50 +6420,62 @@ msgid "Command Edit for %1"
 msgstr "Golygu Gorchymyn i %1"
 
 #: management/kxmlcommanddlg.cpp:835
+#, kde-format
 msgid "&Mime Type Settings"
 msgstr "Gosodiadau Math &Mime "
 
 #: management/kxmlcommanddlg.cpp:843
+#, kde-format
 msgid "Supported &Input Formats"
 msgstr "Fformatau M&ewnbwn a Gynhelir"
 
 #: management/kxmlcommanddlg.cpp:857
+#, kde-format
 msgid "&Edit Command..."
 msgstr "&Golygu Gorchymyn..."
 
 #: management/kxmlcommanddlg.cpp:874
+#, kde-format
 msgid "Output &format:"
 msgstr "&Fformat allbwn:"
 
 #: management/kxmlcommanddlg.cpp:876
+#, kde-format
 msgid "ID name:"
 msgstr "Enw ID:"
 
 #: management/kxmlcommanddlg.cpp:1055
+#, kde-format
 msgid "exec:/"
 msgstr "exec:/"
 
 #: management/kxmlcommandselector.cpp:53
+#, kde-format
 msgid "New command"
 msgstr "Gorchymyn newydd"
 
 #: management/kxmlcommandselector.cpp:54
+#, kde-format
 msgid "Edit command"
 msgstr "Golygu gorchymyn"
 
 #: management/kxmlcommandselector.cpp:72
+#, kde-format
 msgid "&Browse..."
 msgstr "&Pori..."
 
 #: management/kxmlcommandselector.cpp:73
+#, kde-format
 msgid "Use co&mmand:"
 msgstr "Defnyddio G&orchymyn"
 
 #: management/kxmlcommandselector.cpp:179
+#, kde-format
 msgid "Command Name"
 msgstr "Enw Gorchymyn"
 
 #: management/kxmlcommandselector.cpp:179
+#, kde-format
 msgid "Enter an identification name for the new command:"
 msgstr "Mewnosodwch enw dynodiad i'r gorchymyn newydd:"
 
@@ -5767,26 +6494,32 @@ msgid "Internal error. The XML driver for the command %1 could not be found."
 msgstr "Gwall mewnol.  Methu canfod y gyrrydd XML am y gorchymyn %1."
 
 #: management/kxmlcommandselector.cpp:237
+#, kde-format
 msgid "output"
 msgstr "allbwn"
 
 #: management/kxmlcommandselector.cpp:240
+#, kde-format
 msgid "undefined"
 msgstr "aniffiniedig"
 
 #: management/kxmlcommandselector.cpp:244
+#, kde-format
 msgid "not allowed"
 msgstr "ni chaniateir"
 
 #: management/kxmlcommandselector.cpp:248
+#, kde-format
 msgid "(Unavailable: requirements not satisfied)"
 msgstr "(Dim ar gael: nid yw'r anghenion wedi'u cyflawni)"
 
 #: management/networkscanner.cpp:106 management/networkscanner.cpp:168
+#, kde-format
 msgid "Sc&an"
 msgstr "Sy&llu"
 
 #: management/networkscanner.cpp:109
+#, kde-format
 msgid "Network scan:"
 msgstr "Syllu ar y rhwydwaith:"
 
@@ -5808,18 +6541,22 @@ msgstr ""
 "penodol beth bynnag?"
 
 #: management/networkscanner.cpp:153
+#, kde-format
 msgid "&Scan"
 msgstr "&Syllu"
 
 #: management/smbview.cpp:44
+#, kde-format
 msgid "Comment"
 msgstr "Esboniad"
 
 #: marginpreview.cpp:128
+#, kde-format
 msgid "No preview available"
 msgstr "Dim rhagolwg ar gael"
 
 #: marginwidget.cpp:36
+#, kde-format
 msgid ""
 " <qt> <p><b>Top Margin</b>.</p> <p>This spinbox/text edit field lets you "
 "control the top margin of your printout if the printing application does not "
@@ -5836,6 +6573,7 @@ msgid ""
 msgstr ""
 
 #: marginwidget.cpp:56
+#, kde-format
 msgid ""
 " <qt> <p><b>Bottom Margin</b>.</p> <p>This spinbox/text edit field lets you "
 "control the bottom margin of your printout if the printing application does "
@@ -5852,6 +6590,7 @@ msgid ""
 msgstr ""
 
 #: marginwidget.cpp:76
+#, kde-format
 msgid ""
 " <qt> <p><b>Left Margin</b>.</p> <p>This spinbox/text edit field lets you "
 "control the left margin of your printout if the printing application does "
@@ -5868,6 +6607,7 @@ msgid ""
 msgstr ""
 
 #: marginwidget.cpp:96
+#, kde-format
 msgid ""
 " <qt> <p><b>Right Margin</b>.</p> <p>This spinbox/text edit field lets you "
 "control the right margin of your printout if the printing application does "
@@ -5884,6 +6624,7 @@ msgid ""
 msgstr ""
 
 #: marginwidget.cpp:116
+#, kde-format
 msgid ""
 " <qt> <p><b>Change Measurement Unit</b>.</p> <p>You can change the units of "
 "measurement for the page margins here. Select from Millimeters, Centimeters, "
@@ -5891,6 +6632,7 @@ msgid ""
 msgstr ""
 
 #: marginwidget.cpp:123
+#, kde-format
 msgid ""
 " <qt> <p><b>Custom Margins Checkbox</b>.</p> <p>Enable this checkbox if you "
 "want to modify the margins of your printouts.</p> <p>You can change margin "
@@ -5905,48 +6647,59 @@ msgid ""
 msgstr ""
 
 #: marginwidget.cpp:140
+#, kde-format
 msgid ""
 " <qt> <p><b>\"Drag-your-Margins\"</b>.</p> <p>Use your mouse to drag and set "
 "each margin on this little preview window.</p> </qt>"
 msgstr ""
 
 #: marginwidget.cpp:150
+#, kde-format
 msgid "&Use custom margins"
 msgstr "&Defnyddio ymylon addasiedig"
 
 #: marginwidget.cpp:160
+#, kde-format
 msgid "&Top:"
 msgstr "&Pen:"
 
 #: marginwidget.cpp:161
+#, kde-format
 msgid "&Bottom:"
 msgstr "&Gwaelod:"
 
 #: marginwidget.cpp:162
+#, kde-format
 msgid "Le&ft:"
 msgstr "&Chwith:"
 
 #: marginwidget.cpp:163
+#, kde-format
 msgid "&Right:"
 msgstr "&De:"
 
 #: marginwidget.cpp:166
+#, kde-format
 msgid "Pixels (1/72nd in)"
 msgstr "Picseli (1/72nd in)"
 
 #: marginwidget.cpp:168
+#, kde-format
 msgid "Inches (in)"
 msgstr "Modfeddi (in)"
 
 #: marginwidget.cpp:169
+#, kde-format
 msgid "Centimeters (cm)"
 msgstr "Centimedrau (cm)"
 
 #: marginwidget.cpp:170
+#, kde-format
 msgid "Millimeters (mm)"
 msgstr "Milimedrau (mm)"
 
 #: plugincombobox.cpp:32
+#, kde-format
 msgid ""
 " <qt><b>Print Subsystem Selection</b> <p>This combo box shows (and lets you "
 "select) a print subsystem to be used by KDEPrint. (This print subsystem "
@@ -5957,15 +6710,17 @@ msgid ""
 msgstr ""
 
 #: plugincombobox.cpp:45
+#, kde-format
 msgid "Print s&ystem currently used:"
 msgstr "&Cysawd argraffu mewn defnydd ar hyn o bryd:"
 
 #: plugincombobox.cpp:49
-#, fuzzy
+#, fuzzy, kde-format
 msgid "Plugin information"
 msgstr "&Gwybodaeth anfonebau:"
 
 #: plugincombobox.cpp:91
+#, kde-format
 msgid ""
 " <qt><b>Current Connection</b> <p>This line shows which CUPS server your PC "
 "is currently connected to for printing and retrieving printer info. To "
@@ -5974,6 +6729,7 @@ msgid ""
 msgstr ""
 
 #: posterpreview.cpp:123
+#, kde-format
 msgid ""
 "Poster preview not available. Either the <b>poster</b> executable is not "
 "properly installed, or you don't have the required version; available at "
@@ -5989,38 +6745,47 @@ msgid "(line %1): "
 msgstr ""
 
 #: rlpr/kmconfigproxy.cpp:30
+#, kde-format
 msgid "Proxy"
 msgstr "Dirprwy"
 
 #: rlpr/kmconfigproxy.cpp:31
+#, kde-format
 msgid "RLPR Proxy Server Settings"
 msgstr "Gosodiadau Gweinydd Dirpwry RLPR"
 
 #: rlpr/kmproprlpr.cpp:51 rlpr/kmwrlpr.cpp:50
+#, kde-format
 msgid "Remote LPD Queue Settings"
 msgstr "Gosodiadau Ciw Pell LPD"
 
 #: rlpr/kmproxywidget.cpp:32
+#, kde-format
 msgid "Proxy Settings"
 msgstr "Gosodiadau Dirprwy"
 
 #: rlpr/kmproxywidget.cpp:38
+#, kde-format
 msgid "&Use proxy server"
 msgstr "&Defnyddio gweinydd dirprwy"
 
 #: rlpr/kmrlprmanager.cpp:47 rlpr/kmwrlpr.cpp:89
+#, kde-format
 msgid "Empty host name."
 msgstr "Mae enw'r gwesteiwr yn wag."
 
 #: rlpr/kmrlprmanager.cpp:49 rlpr/kmwrlpr.cpp:91
+#, kde-format
 msgid "Empty queue name."
 msgstr "Mae enw'r ciw yn wag."
 
 #: rlpr/kmrlprmanager.cpp:62
+#, kde-format
 msgid "Printer not found."
 msgstr "Ni chanfuwyd argraffydd."
 
 #: rlpr/kmrlprmanager.cpp:73
+#, kde-format
 msgid "Not implemented yet."
 msgstr "Ni chynhelir eto."
 
@@ -6030,44 +6795,54 @@ msgid "Remote queue %1 on %2"
 msgstr "Ciw pell %1 ar %2"
 
 #: rlpr/kmwrlpr.cpp:191
+#, kde-format
 msgid "No Predefined Printers"
 msgstr "Nid yw argraffydd wedi'i ddiffinio eto"
 
 #: rlpr/krlprprinterimpl.cpp:68
+#, kde-format
 msgid "The printer is incompletely defined. Try to reinstall it."
 msgstr ""
 "Nid yw'r argraffydd wedi ei ddiffinio yn gyflawn.  Ceisiwch ei ail-osod."
 
 #: tools/escputil/escpwidget.cpp:49
+#, kde-format
 msgid "EPSON InkJet Printer Utilities"
 msgstr "Cyfleusterau Argraffydd InkJet EPSON"
 
 #: tools/escputil/escpwidget.cpp:101
+#, kde-format
 msgid "&Use direct connection (might need root permissions)"
 msgstr ""
 "&Defnyddio cysylltiad uniongyrchol (efallai bydd angen caniatadau gwraidd)"
 
 #: tools/escputil/escpwidget.cpp:113
+#, kde-format
 msgid "Clea&n print head"
 msgstr "&Glanhau'r pen argraffu"
 
 #: tools/escputil/escpwidget.cpp:114
+#, kde-format
 msgid "&Print a nozzle test pattern"
 msgstr "&Argraffu patrwm arbrofi ffroenell"
 
 #: tools/escputil/escpwidget.cpp:115
+#, kde-format
 msgid "&Align print head"
 msgstr "&Cyfunio pen argraffu"
 
 #: tools/escputil/escpwidget.cpp:116
+#, kde-format
 msgid "&Ink level"
 msgstr "&Lefel inc"
 
 #: tools/escputil/escpwidget.cpp:117
+#, kde-format
 msgid "P&rinter identification"
 msgstr "&Dynodiad argraffydd "
 
 #: tools/escputil/escpwidget.cpp:166
+#, kde-format
 msgid "Internal error: no device set."
 msgstr "Gwall mewnol: ni phenodwyd dyfais."
 
@@ -6077,6 +6852,7 @@ msgid "Unsupported connection type: %1"
 msgstr "Ni chynhelir y math cysylltiad: %1"
 
 #: tools/escputil/escpwidget.cpp:180
+#, kde-format
 msgid ""
 "An escputil process is still running. You must wait until its completion "
 "before continuing."
@@ -6085,6 +6861,7 @@ msgstr ""
 "myn yn eich blaen."
 
 #: tools/escputil/escpwidget.cpp:187
+#, kde-format
 msgid ""
 "The executable escputil cannot be found in your PATH environment variable. "
 "Make sure gimp-print is installed and that escputil is in your PATH."
@@ -6093,10 +6870,12 @@ msgstr ""
 "Gwiriwch fod gimp-print wedi'i osod a bod escputil yn eich PATH."
 
 #: tools/escputil/escpwidget.cpp:214
+#, kde-format
 msgid "Internal error: unable to start escputil process."
 msgstr "Gwall mewnol: methu cychwyn y proses escputil."
 
 #: tools/escputil/escpwidget.cpp:223
+#, kde-format
 msgid "Operation terminated with errors."
 msgstr "Terfynodd y gweithrediad efo gwallau. "
 
