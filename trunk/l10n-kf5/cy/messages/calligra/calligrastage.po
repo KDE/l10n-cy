@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-12-02 03:12+0100\n"
+"POT-Creation-Date: 2016-12-03 13:49+0100\n"
 "PO-Revision-Date: 2004-09-07 14:09+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -63,6 +63,96 @@ msgstr "Sioe T&ryloywder"
 msgid "&Settings"
 msgstr "Gosodiadau Llwybr"
 
+#: part/commands/KPrAddCustomSlideShowCommand.cpp:32
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Add custom slide show"
+msgstr "Sioe Tryloywderau"
+
+#: part/commands/KPrAnimationCreateCommand.cpp:32
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgctxt "(qtundo-format)"
+msgid "Create shape animation"
+msgstr "Creu Cyflwyniad HTML"
+
+#: part/commands/KPrAnimationEditNodeTypeCommand.cpp:35
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgctxt "(qtundo-format)"
+msgid "Edit animation trigger event"
+msgstr "Creu Cyflwyniad HTML"
+
+#: part/commands/KPrAnimationRemoveCommand.cpp:30
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgctxt "(qtundo-format)"
+msgid "Remove shape animation"
+msgstr "Creu Cyflwyniad HTML"
+
+#: part/commands/KPrDelCustomSlideShowCommand.cpp:33
+#, fuzzy
+#| msgid "Delete Slide"
+msgctxt "(qtundo-format)"
+msgid "Delete custom slide show"
+msgstr "Dileu Tryloywder"
+
+#: part/commands/KPrDeleteSlidesCommand.cpp:38
+#: part/commands/KPrDeleteSlidesCommand.cpp:57
+#, fuzzy
+#| msgid "Delete Slide"
+msgctxt "(qtundo-format)"
+msgid "Delete slide"
+msgid_plural "Delete slides"
+msgstr[0] "Dileu Tryloywder"
+msgstr[1] "Dileu Tryloywder"
+
+#: part/commands/KPrEditAnimationTimeLineCommand.cpp:37
+#, fuzzy
+#| msgid "Presentation duration: "
+msgctxt "(qtundo-format)"
+msgid "Edit animation delay/duration"
+msgstr "Hyd y cyflwyniad:"
+
+#: part/commands/KPrEditCustomSlideShowsCommand.cpp:32
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Edit custom slide show"
+msgstr "Sioe Tryloywderau"
+
+#: part/commands/KPrPageEffectSetCommand.cpp:38
+#, fuzzy
+#| msgid "Change Image Effect"
+msgctxt "(qtundo-format)"
+msgid "Create Slide Effect"
+msgstr "Newid Effaith Ddelwedd"
+
+#: part/commands/KPrPageEffectSetCommand.cpp:41
+#, fuzzy
+#| msgid "Image &effect:"
+msgctxt "(qtundo-format)"
+msgid "Modify Slide Effect"
+msgstr "&Effaith ddelwedd:"
+
+#: part/commands/KPrPageEffectSetCommand.cpp:45
+#, fuzzy
+#| msgid "Delete Slide"
+msgctxt "(qtundo-format)"
+msgid "Delete Slide Effect"
+msgstr "Dileu Tryloywder"
+
+#: part/commands/KPrRenameCustomSlideShowCommand.cpp:33
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Rename custom slide show"
+msgstr "Ffurfweddu Sioe Tryloywderau"
+
+#: part/commands/KPrReorderAnimationCommand.cpp:33
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Reorder animations"
+msgstr "Golygu Tra&wsnewid Tryloywder"
+
 #: part/KPrAboutData.h:34
 #, fuzzy, kde-format
 #| msgid "&Configure Slide Show..."
@@ -88,16 +178,16 @@ msgstr ""
 msgid "Copyright 1998-%1, The Stage Team"
 msgstr "(h)(c) 1998-2003, Y Tîm KPresenter"
 
-#: part/KPrAboutData.h:48
-#, kde-format
-msgid "Thorsten Zachmann"
-msgstr ""
-
 #: part/KPrAboutData.h:48 part/KPrAboutData.h:49
 #, fuzzy, kde-format
 #| msgid "current maintainer"
 msgid "Former maintainer"
 msgstr "cynhaliwr cyfredol"
+
+#: part/KPrAboutData.h:48
+#, kde-format
+msgid "Thorsten Zachmann"
+msgstr ""
 
 #: part/KPrAboutData.h:49
 #, kde-format
@@ -105,15 +195,15 @@ msgid "Laurent Montel"
 msgstr ""
 
 #: part/KPrAboutData.h:50
-#, kde-format
-msgid "Reginald Stadlbauer"
-msgstr ""
-
-#: part/KPrAboutData.h:50
 #, fuzzy, kde-format
 #| msgid "original author"
 msgid "Original author"
 msgstr "awdur gwreiddiol"
+
+#: part/KPrAboutData.h:50
+#, kde-format
+msgid "Reginald Stadlbauer"
+msgstr ""
 
 #: part/KPrAboutData.h:51
 #, kde-format
@@ -252,6 +342,13 @@ msgstr ""
 #, kde-format
 msgid "Installation Error"
 msgstr ""
+
+#: part/KPrPicturesImport.cpp:75
+#, fuzzy
+#| msgid "Insert Picture"
+msgctxt "(qtundo-format)"
+msgid "Insert Pictures"
+msgstr "Mewnosod Llun"
 
 #: part/KPrPlaceholderShapeFactory.cpp:32
 #, kde-format
@@ -709,17 +806,25 @@ msgstr "Sioe Tryloywderau"
 msgid "All slides"
 msgstr "Pob Ffeil"
 
-#: part/KPrViewModeSlidesSorter.cpp:699
-#, kde-format
-msgid "There cannot be two slideshows with the same name."
-msgstr ""
-
 #: part/KPrViewModeSlidesSorter.cpp:699 part/ui/KPrHtmlExportDialog.cpp:162
 #: part/ui/KPrHtmlExportDialog.cpp:216
 #, fuzzy, kde-format
 #| msgid "Arrow"
 msgid "Error"
 msgstr "Saeth"
+
+#: part/KPrViewModeSlidesSorter.cpp:699
+#, kde-format
+msgid "There cannot be two slideshows with the same name."
+msgstr ""
+
+#: part/pagelayout/KPrPlaceholders.cpp:59
+#: part/pagelayout/KPrPlaceholders.cpp:60
+#, fuzzy
+#| msgid "Page &Layout..."
+msgctxt "(qtundo-format)"
+msgid "Set Layout"
+msgstr "&Haenlun Tudalen..."
 
 #: part/tools/animationtool/KPrAnimationSelectorWidget.cpp:67
 #, fuzzy, kde-format
@@ -813,6 +918,13 @@ msgstr " eiliad(au)"
 #| msgid "Apply Styles"
 msgid "Apply To All Slides"
 msgstr "Gweithredu Arddulliau"
+
+#: part/tools/animationtool/KPrPageEffectDocker.cpp:236
+#, fuzzy
+#| msgid "Apply Style to Frames"
+msgctxt "(qtundo-format)"
+msgid "Apply Slide Effect to all Slides"
+msgstr "Gweithredu Arddull i Fframiau"
 
 #: part/tools/animationtool/KPrPredefinedAnimationsLoader.cpp:178
 #, kde-format
@@ -979,6 +1091,13 @@ msgstr "&Tudalen"
 #| msgid "&Top:"
 msgid "&Crop"
 msgstr "&Pen:"
+
+#: part/tools/KPrPlaceholderTool.cpp:92
+#, fuzzy
+#| msgid "Shape"
+msgctxt "(qtundo-format)"
+msgid "Edit Shape"
+msgstr "Siâp"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: part/ui/KPrConfigurePresenterView.ui:16
@@ -1165,15 +1284,22 @@ msgstr ""
 
 #: part/ui/KPrHtmlExportDialog.cpp:330
 #, fuzzy, kde-format
+#| msgid "Do you want to remove the current slide?"
+msgid "Are you sure you want to remove \"%1\"?"
+msgstr "Hoffech waredu'r tryloywder cyfredol?"
+
+#: part/ui/KPrHtmlExportDialog.cpp:330
+#, fuzzy, kde-format
 #| msgid "Save Configuration..."
 msgid "Confirm remove"
 msgstr "Cadw Ffurfweddiad..."
 
-#: part/ui/KPrHtmlExportDialog.cpp:330
-#, fuzzy, kde-format
-#| msgid "Do you want to remove the current slide?"
-msgid "Are you sure you want to remove \"%1\"?"
-msgstr "Hoffech waredu'r tryloywder cyfredol?"
+#: plugins/eventactions/sound/KPrSoundEventActionWidget.cpp:95
+#, fuzzy
+#| msgid "Change Rotation"
+msgctxt "(qtundo-format)"
+msgid "Change sound action"
+msgstr "Newid Cylchdroi"
 
 #: plugins/eventactions/sound/KPrSoundEventActionWidget.cpp:118
 #, fuzzy, kde-format
@@ -2665,70 +2791,6 @@ msgstr "Troedyn"
 #~ msgstr "Ffurweddu KPresenter"
 
 #, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add custom slide show"
-#~ msgstr "Sioe Tryloywderau"
-
-#, fuzzy
-#~| msgid "Create HTML Presentation"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Create shape animation"
-#~ msgstr "Creu Cyflwyniad HTML"
-
-#, fuzzy
-#~| msgid "Create HTML Presentation"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove shape animation"
-#~ msgstr "Creu Cyflwyniad HTML"
-
-#, fuzzy
-#~| msgid "Delete Slide"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete custom slide show"
-#~ msgstr "Dileu Tryloywder"
-
-#, fuzzy
-#~| msgid "Delete Slide"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete slide"
-#~ msgid_plural "Delete slides"
-#~ msgstr[0] "Dileu Tryloywder"
-#~ msgstr[1] "Dileu Tryloywder"
-
-#, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Edit custom slide show"
-#~ msgstr "Sioe Tryloywderau"
-
-#, fuzzy
-#~| msgid "Change Image Effect"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Create Slide Effect"
-#~ msgstr "Newid Effaith Ddelwedd"
-
-#, fuzzy
-#~| msgid "Image &effect:"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Modify Slide Effect"
-#~ msgstr "&Effaith ddelwedd:"
-
-#, fuzzy
-#~| msgid "Delete Slide"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete Slide Effect"
-#~ msgstr "Dileu Tryloywder"
-
-#, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Rename custom slide show"
-#~ msgstr "Ffurfweddu Sioe Tryloywderau"
-
-#, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Reorder animations"
-#~ msgstr "Golygu Tra&wsnewid Tryloywder"
-
-#, fuzzy
 #~| msgid "&Configure Slide Show..."
 #~ msgctxt "(qtundo-format) application name"
 #~ msgid "Calligra Stage"
@@ -2805,12 +2867,6 @@ msgstr "Troedyn"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Layout"
 #~ msgstr "&Haenlun Tudalen..."
-
-#, fuzzy
-#~| msgid "Insert Picture"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert Pictures"
-#~ msgstr "Mewnosod Llun"
 
 #, fuzzy
 #~| msgid "Color"
@@ -3209,12 +3265,6 @@ msgstr "Troedyn"
 #~ msgstr "Saeth"
 
 #, fuzzy
-#~| msgid "Page &Layout..."
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set Layout"
-#~ msgstr "&Haenlun Tudalen..."
-
-#, fuzzy
 #~| msgid "Automatic hyphenation"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Automatic animation preview"
@@ -3297,12 +3347,6 @@ msgstr "Troedyn"
 #~ msgstr "Gweithredu Arddulliau"
 
 #, fuzzy
-#~| msgid "Apply Style to Frames"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Apply Slide Effect to all Slides"
-#~ msgstr "Gweithredu Arddull i Fframiau"
-
-#, fuzzy
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Custom"
 #~ msgstr "Sioe Tryloywderau"
@@ -3356,12 +3400,6 @@ msgstr "Troedyn"
 #~ msgstr "Cyn y Tryloywder Cyfredol"
 
 #, fuzzy
-#~| msgid "Shape"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Edit Shape"
-#~ msgstr "Siâp"
-
-#, fuzzy
 #~| msgid "Configure KPresenter"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Configure Presenter View"
@@ -3396,12 +3434,6 @@ msgstr "Troedyn"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Confirm remove"
 #~ msgstr "Cadw Ffurfweddiad..."
-
-#, fuzzy
-#~| msgid "Change Rotation"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change sound action"
-#~ msgstr "Newid Cylchdroi"
 
 #, fuzzy
 #~| msgid " seconds"

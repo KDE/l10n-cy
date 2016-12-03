@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-12-02 03:12+0100\n"
+"POT-Creation-Date: 2016-12-03 13:49+0100\n"
 "PO-Revision-Date: 2004-08-16 18:16+0100\n"
 "Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -96,6 +96,34 @@ msgstr "Newid Newidyn i"
 #, kde-format
 msgid "&Tools"
 msgstr ""
+
+#: part/commands/KWChangePageStyleCommand.cpp:24
+#, fuzzy
+#| msgid "Framestyle:"
+msgctxt "(qtundo-format)"
+msgid "Set Page Style"
+msgstr "Arddull Ffrâm:"
+
+#: part/commands/KWNewPageStyleCommand.cpp:25
+#, fuzzy
+#| msgid "Insert Page"
+msgctxt "(qtundo-format)"
+msgid "Insert Page Style"
+msgstr "Mewnosod Tudalen"
+
+#: part/commands/KWPageStylePropertiesCommand.cpp:29
+#, fuzzy
+#| msgid "Frame Properties"
+msgctxt "(qtundo-format)"
+msgid "Page Properties"
+msgstr "Priodweddau Fframiau"
+
+#: part/commands/KWShapeCreateCommand.cpp:55
+#, fuzzy
+#| msgid "Create Text Frame"
+msgctxt "(qtundo-format)"
+msgid "Create shape"
+msgstr "Creu Ffrâm Testun"
 
 #: part/dialogs/KWAnchoringProperties.cpp:434
 #, fuzzy, kde-format
@@ -390,6 +418,13 @@ msgstr "Rhedeg y Testun o Gwmpas"
 msgid "Connect Text Frames"
 msgstr "Cysylltu Fframiau Testun"
 
+#: part/dialogs/KWFrameDialog.cpp:79
+#, fuzzy
+#| msgid "Frame Properties"
+msgctxt "(qtundo-format)"
+msgid "Change Shape Properties"
+msgstr "Priodweddau Fframiau"
+
 #. i18n: ectx: property (title), widget (QGroupBox, grpAnchor)
 #: part/dialogs/KWInsertImage.ui:17
 #, kde-format
@@ -565,16 +600,23 @@ msgstr "Yn cau"
 msgid "Delete"
 msgstr "Dileu Rhes"
 
-#: part/dialogs/KWPageSettingsDialog.cpp:224
-#, fuzzy, kde-format
+#: part/dialogs/KWPageSettingsDialog.cpp:150
+#, fuzzy
 #| msgid "Framestyle:"
-msgid "Clone Page Style"
+msgctxt "(qtundo-format)"
+msgid "Change Page Style"
 msgstr "Arddull Ffrâm:"
 
 #: part/dialogs/KWPageSettingsDialog.cpp:224
 #, kde-format
 msgid "Add a new page style with the name:"
 msgstr ""
+
+#: part/dialogs/KWPageSettingsDialog.cpp:224
+#, fuzzy, kde-format
+#| msgid "Framestyle:"
+msgid "Clone Page Style"
+msgstr "Arddull Ffrâm:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #: part/dialogs/KWRunAroundProperties.ui:17
@@ -696,15 +738,15 @@ msgstr "Cyfarchiad"
 
 #: part/dockers/KWNavigationWidget.cpp:108
 #, fuzzy, kde-format
-#| msgid "Instructions"
-msgid "Section"
-msgstr "Cyfarwyddiadau"
-
-#: part/dockers/KWNavigationWidget.cpp:108
-#, fuzzy, kde-format
 #| msgid "&Page"
 msgid "Page #"
 msgstr "&Tudalen"
+
+#: part/dockers/KWNavigationWidget.cpp:108
+#, fuzzy, kde-format
+#| msgid "Instructions"
+msgid "Section"
+msgstr "Cyfarwyddiadau"
 
 #: part/dockers/KWRdfDocker.cpp:52
 #, kde-format
@@ -1121,14 +1163,14 @@ msgstr "Prosesydd Geiriau KWord"
 msgid "Copyright 1998-%1, The Words Team"
 msgstr "(h)(c) 1998-2004, Y Tîm KWord"
 
-#: part/KWAboutData.h:45
-#, kde-format
-msgid "Pierre Ducroquet"
-msgstr ""
-
 #: part/KWAboutData.h:45 part/KWAboutData.h:46
 #, kde-format
 msgid "Co maintainer"
+msgstr ""
+
+#: part/KWAboutData.h:45
+#, kde-format
+msgid "Pierre Ducroquet"
 msgstr ""
 
 #: part/KWAboutData.h:46
@@ -1136,15 +1178,15 @@ msgstr ""
 msgid "C. Boemann"
 msgstr ""
 
-#: part/KWAboutData.h:47
-#, kde-format
-msgid "Sebastian Sauer"
-msgstr ""
-
 #: part/KWAboutData.h:47 part/KWAboutData.h:48 part/KWAboutData.h:49
 #: part/KWAboutData.h:51
 #, kde-format
 msgid "Everything"
+msgstr ""
+
+#: part/KWAboutData.h:47
+#, kde-format
+msgid "Sebastian Sauer"
 msgstr ""
 
 #: part/KWAboutData.h:48
@@ -1158,24 +1200,19 @@ msgid "Pierre Stirnweiss"
 msgstr ""
 
 #: part/KWAboutData.h:50
-#, kde-format
-msgid "Inge Wallin"
-msgstr ""
-
-#: part/KWAboutData.h:50
 #, fuzzy, kde-format
 #| msgid "&Formatting Characters"
 msgid "Formatting stuff"
 msgstr "Noda&u Fformatio"
 
+#: part/KWAboutData.h:50
+#, kde-format
+msgid "Inge Wallin"
+msgstr ""
+
 #: part/KWAboutData.h:51
 #, kde-format
 msgid "Thorsten Zachmann"
-msgstr ""
-
-#: part/KWAboutData.h:52
-#, kde-format
-msgid "Matus Uzak"
 msgstr ""
 
 #: part/KWAboutData.h:52 part/KWAboutData.h:58 part/KWAboutData.h:59
@@ -1187,14 +1224,19 @@ msgstr ""
 msgid "Filter"
 msgstr "&Hidlo gan:"
 
-#: part/KWAboutData.h:53
+#: part/KWAboutData.h:52
 #, kde-format
-msgid "Pavol Korinek"
+msgid "Matus Uzak"
 msgstr ""
 
 #: part/KWAboutData.h:53
 #, kde-format
 msgid "Layout and Painting"
+msgstr ""
+
+#: part/KWAboutData.h:53
+#, kde-format
+msgid "Pavol Korinek"
 msgstr ""
 
 #: part/KWAboutData.h:54
@@ -1221,12 +1263,12 @@ msgstr "Troednodiadau"
 
 #: part/KWAboutData.h:56
 #, kde-format
-msgid "Smit Patel"
+msgid "Bibliography"
 msgstr ""
 
 #: part/KWAboutData.h:56
 #, kde-format
-msgid "Bibliography"
+msgid "Smit Patel"
 msgstr ""
 
 #: part/KWAboutData.h:57
@@ -1312,13 +1354,13 @@ msgstr ""
 
 #: part/KWAboutData.h:71
 #, kde-format
-msgid "Ulrich Kuettler"
-msgstr ""
+msgid "KFormula"
+msgstr "KFormula"
 
 #: part/KWAboutData.h:71
 #, kde-format
-msgid "KFormula"
-msgstr "KFormula"
+msgid "Ulrich Kuettler"
+msgstr ""
 
 #: part/KWAboutData.h:72
 #, kde-format
@@ -2322,30 +2364,6 @@ msgstr "Mewnosod Tudalen"
 #~ msgstr "Newydd ..."
 
 #, fuzzy
-#~| msgid "Framestyle:"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set Page Style"
-#~ msgstr "Arddull Ffrâm:"
-
-#, fuzzy
-#~| msgid "Insert Page"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert Page Style"
-#~ msgstr "Mewnosod Tudalen"
-
-#, fuzzy
-#~| msgid "Frame Properties"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Page Properties"
-#~ msgstr "Priodweddau Fframiau"
-
-#, fuzzy
-#~| msgid "Create Text Frame"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Create shape"
-#~ msgstr "Creu Ffrâm Testun"
-
-#, fuzzy
 #~| msgid "Frame is inline"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Baseline"
@@ -2473,12 +2491,6 @@ msgstr "Mewnosod Tudalen"
 #~ msgstr "Cysylltu Fframiau Testun"
 
 #, fuzzy
-#~| msgid "Frame Properties"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change Shape Properties"
-#~ msgstr "Priodweddau Fframiau"
-
-#, fuzzy
 #~| msgid "Columns"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Columns"
@@ -2500,12 +2512,6 @@ msgstr "Mewnosod Tudalen"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Delete"
 #~ msgstr "Dileu Rhes"
-
-#, fuzzy
-#~| msgid "Framestyle:"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change Page Style"
-#~ msgstr "Arddull Ffrâm:"
 
 #, fuzzy
 #~| msgid "Framestyle:"
