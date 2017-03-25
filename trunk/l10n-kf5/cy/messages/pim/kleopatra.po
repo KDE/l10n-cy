@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdepim/kleopatra.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-03-04 04:05+0100\n"
+"POT-Creation-Date: 2017-03-25 02:58+0100\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -653,6 +653,7 @@ msgid ""
 msgstr ""
 
 #: src/commands/exportpaperkeycommand.cpp:91
+#: src/commands/importpaperkeycommand.cpp:174
 #, kde-format
 msgctxt "@title"
 msgid "Failed to find PaperKey executable."
@@ -1089,6 +1090,65 @@ msgstr "Mewnforiwyd y ffeil CRL yn llwyddiannus."
 #: src/commands/importcrlcommand.cpp:206
 #, kde-format
 msgid "Import CRL Finished"
+msgstr ""
+
+#: src/commands/importpaperkeycommand.cpp:108
+#: src/crypto/autodecryptverifyfilescontroller.cpp:225
+#, fuzzy, kde-kuit-format
+#| msgid "Could not generate certificate: %1"
+msgid "Cannot open <filename>%1</filename> for reading."
+msgstr "Methwyd creu tysysgrif : %1"
+
+#: src/commands/importpaperkeycommand.cpp:151
+#, fuzzy, kde-format
+#| msgid "Could not generate certificate: %1"
+msgid "Failed to restore any secret keys."
+msgstr "Methwyd creu tysysgrif : %1"
+
+#: src/commands/importpaperkeycommand.cpp:170
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"<para><application>Kleopatra</application> uses <application>PaperKey</"
+"application> to import your text backup.</para><para>Please make sure it is "
+"installed.</para>"
+msgstr ""
+
+#: src/commands/importpaperkeycommand.cpp:179
+#, fuzzy, kde-format
+#| msgid "Select CRL File"
+msgid "Select input file"
+msgstr "Dewiswch Ffeil CRL"
+
+#: src/commands/importpaperkeycommand.cpp:198
+#, fuzzy, kde-format
+#| msgid "Select Certificate File"
+msgctxt "@title:window"
+msgid "Error importing secret key"
+msgstr "Dewiswch Ffeil Dysysgrif"
+
+#: src/commands/importpaperkeycommand.cpp:204
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"<para>The GPG process that tried to restore the secret key ended prematurely "
+"because of an unexpected error.</para><para>Please check the output of "
+"<icode>%1</icode> for details.</para>"
+msgstr ""
+
+#: src/commands/importpaperkeycommand.cpp:213
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"<para>An error occurred while trying to restore the secret key.</para> "
+"<para>The output from <command>%1</command> was:</para><para><message>%2</"
+"message></para>"
+msgstr ""
+
+#: src/commands/importpaperkeycommand.cpp:221
+#, kde-kuit-format
+msgctxt "@info"
+msgid "Successfully restored the secret key parts from <filename>%1</filename>"
 msgstr ""
 
 #: src/commands/keytocardcommand.cpp:103
@@ -1996,12 +2056,6 @@ msgstr ""
 #, kde-kuit-format
 msgid "Failed to move <filename>%1</filename> to <filename>%2</filename>."
 msgstr ""
-
-#: src/crypto/autodecryptverifyfilescontroller.cpp:225
-#, fuzzy, kde-kuit-format
-#| msgid "Could not generate certificate: %1"
-msgid "Cannot open <filename>%1</filename> for reading."
-msgstr "Methwyd creu tysysgrif : %1"
 
 #: src/crypto/autodecryptverifyfilescontroller.cpp:230
 #, kde-kuit-format
@@ -4562,24 +4616,29 @@ msgstr ""
 msgid "Set Initial PIN (SigG)"
 msgstr ""
 
-#: src/dialogs/subkeyswidget.cpp:86
+#: src/dialogs/subkeyswidget.cpp:76
+#, kde-format
+msgid "Restore printed backup"
+msgstr ""
+
+#: src/dialogs/subkeyswidget.cpp:95
 #, kde-format
 msgid "Transfer to smartcard"
 msgstr ""
 
-#: src/dialogs/subkeyswidget.cpp:128
+#: src/dialogs/subkeyswidget.cpp:144
 #, kde-format
 msgctxt "stored..."
 msgid "on SmartCard with serial no. %1"
 msgstr ""
 
-#: src/dialogs/subkeyswidget.cpp:130
+#: src/dialogs/subkeyswidget.cpp:146
 #, kde-format
 msgctxt "stored..."
 msgid "on this computer"
 msgstr ""
 
-#: src/dialogs/subkeyswidget.cpp:145
+#: src/dialogs/subkeyswidget.cpp:161
 #, kde-format
 msgid "Subkeys details"
 msgstr ""
