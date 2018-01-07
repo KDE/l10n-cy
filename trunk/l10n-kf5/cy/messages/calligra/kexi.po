@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-12-19 02:59+0100\n"
+"POT-Creation-Date: 2018-01-07 03:03+0100\n"
 "PO-Revision-Date: 2004-08-12 18:36+0100\n"
 "Last-Translator: KD at Kyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -4753,8 +4753,8 @@ msgstr "Ffynhonnell ddata:"
 msgid "Goes to selected form's data source"
 msgstr "Ffynhonnell ddata:"
 
-#: plugins/forms/kexidbfactorybase.cpp:49 plugins/forms/kexiformpart.cpp:365
-#: plugins/reports/kexireportpart.cpp:175
+#: plugins/forms/kexidbfactorybase.cpp:49 plugins/forms/kexiformpart.cpp:366
+#: plugins/reports/kexireportpart.cpp:210
 #, fuzzy, kde-kuit-format
 msgid "Data Source"
 msgstr "Tarddiad data"
@@ -4921,22 +4921,28 @@ msgstr "I'r Culaf"
 msgid "To Widest"
 msgstr "I'r Lletaf"
 
-#: plugins/forms/kexiformpart.cpp:319
+#: plugins/forms/kexiformpart.cpp:320
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Design of form <resource>%1</resource> has been modified."
 msgstr "<p>Addasiwyd y gwrthrych: %1 \"%2\".</p><p>Ydych eisiau ei gadw?</p>"
 
-#: plugins/forms/kexiformpart.cpp:321
+#: plugins/forms/kexiformpart.cpp:322
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Form <resource>%1</resource> already exists."
 msgstr "Cadw gwrthrych fel"
 
-#: plugins/forms/kexiformpart.cpp:376
+#: plugins/forms/kexiformpart.cpp:377
 #, kde-kuit-format
 msgid "Widgets"
 msgstr "Celfigion"
+
+#: plugins/forms/kexiformpart.cpp:446
+#, fuzzy, kde-kuit-format
+msgctxt "@info"
+msgid "Form <resource>%1</resource>"
+msgstr "Cadw gwrthrych fel"
 
 #: plugins/forms/kexiformview.cpp:246
 #: plugins/forms/widgets/main/KexiMainFormWidgetsFactory.cpp:86
@@ -6920,7 +6926,7 @@ msgstr ""
 "Mae'r ffeil \"%1\" eisoes mewn bod.\n"
 " Ydych eisiau ysgrifennu drosti?\n"
 
-#: plugins/queries/kexiquerypart.cpp:45
+#: plugins/queries/kexiquerypart.cpp:48
 #, kde-kuit-format
 msgctxt ""
 "Translate this word using only lowercase alphanumeric characters (a..z, "
@@ -6930,37 +6936,70 @@ msgctxt ""
 msgid "query"
 msgstr "ymholiad"
 
-#: plugins/queries/kexiquerypart.cpp:46
+#: plugins/queries/kexiquerypart.cpp:49
 #, fuzzy, kde-kuit-format
 #| msgid "Create a new project"
 msgctxt "tooltip"
 msgid "Create new query"
 msgstr "Creu cywaith newydd"
 
-#: plugins/queries/kexiquerypart.cpp:47
+#: plugins/queries/kexiquerypart.cpp:50
 #, fuzzy, kde-kuit-format
 msgctxt "what's this"
 msgid "Creates new query."
 msgstr "Creu cywaith newydd"
 
-#: plugins/queries/kexiquerypart.cpp:50
+#: plugins/queries/kexiquerypart.cpp:53
 #, kde-kuit-format
 msgid "SQL"
 msgstr ""
 
-#: plugins/queries/kexiquerypart.cpp:174
+#: plugins/queries/kexiquerypart.cpp:108
+#, kde-kuit-format
+msgid ""
+"<para>You are about to delete query <resource>%1</resource> but it is used "
+"by following opened windows:</para>"
+msgstr ""
+
+#: plugins/queries/kexiquerypart.cpp:186
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Design of query <resource>%1</resource> has been modified."
 msgstr "<p>Addasiwyd y gwrthrych: %1 \"%2\".</p><p>Ydych eisiau ei gadw?</p>"
 
-#: plugins/queries/kexiquerypart.cpp:176
+#: plugins/queries/kexiquerypart.cpp:188
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Query <resource>%1</resource> already exists."
 msgstr "Cadw gwrthrych fel"
 
-#: plugins/queries/kexiquerypart.cpp:202
+#: plugins/queries/kexiquerypart.cpp:236 plugins/tables/kexitablepart.cpp:207
+#, kde-format
+msgctxt "@info/plain Sentence1 Sentence2 Sentence3"
+msgid "%1%2%3"
+msgstr ""
+
+#: plugins/queries/kexiquerypart.cpp:239 plugins/tables/kexitablepart.cpp:210
+#, fuzzy, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"<para>Do you want to close these windows and save the design or cancel "
+"saving?</para>"
+msgstr "Ydych eisiau dileu'r rhes dewisiedig?"
+
+#: plugins/queries/kexiquerypart.cpp:244 plugins/tables/kexitablepart.cpp:215
+#, fuzzy, kde-kuit-format
+msgctxt "@action:button Close all windows and save"
+msgid "Close Windows and Save"
+msgstr "Rhes nesaf"
+
+#: plugins/queries/kexiquerypart.cpp:246 plugins/tables/kexitablepart.cpp:217
+#, fuzzy, kde-kuit-format
+msgctxt "@info:tooltip Close all windows and save design"
+msgid "Close all windows and save design"
+msgstr "Rhes nesaf"
+
+#: plugins/queries/kexiquerypart.cpp:273
 #, fuzzy, kde-kuit-format
 msgctxt "@info"
 msgid "Query <resource>%1</resource>"
@@ -6971,22 +7010,22 @@ msgstr "Cadw gwrthrych fel"
 msgid "Query executing failed."
 msgstr "Methwyd dileu rhes."
 
-#: plugins/reports/kexireportdesignview.cpp:57
+#: plugins/reports/kexireportdesignview.cpp:58
 #, fuzzy, kde-kuit-format
 msgid "Edit Sections"
 msgstr "Diwedd detholiad"
 
-#: plugins/reports/kexireportdesignview.cpp:60
+#: plugins/reports/kexireportdesignview.cpp:61
 #, kde-kuit-format
 msgid "Raise"
 msgstr ""
 
-#: plugins/reports/kexireportdesignview.cpp:62
+#: plugins/reports/kexireportdesignview.cpp:63
 #, kde-kuit-format
 msgid "Lower"
 msgstr ""
 
-#: plugins/reports/kexireportpart.cpp:64
+#: plugins/reports/kexireportpart.cpp:65
 #, fuzzy, kde-kuit-format
 msgctxt ""
 "Translate this word using only lowercase alphanumeric characters (a..z, "
@@ -6996,252 +7035,258 @@ msgctxt ""
 msgid "report"
 msgstr "Adroddiad"
 
-#: plugins/reports/kexireportpart.cpp:65
+#: plugins/reports/kexireportpart.cpp:66
 #, fuzzy, kde-kuit-format
 #| msgid "Create a new project"
 msgctxt "tooltip"
 msgid "Create new report"
 msgstr "Creu cywaith newydd"
 
-#: plugins/reports/kexireportpart.cpp:66
+#: plugins/reports/kexireportpart.cpp:67
 #, fuzzy, kde-kuit-format
 #| msgid "Create a new project"
 msgctxt "what's this"
 msgid "Creates new report."
 msgstr "Creu cywaith newydd"
 
-#: plugins/reports/kexireportpart.cpp:85
+#: plugins/reports/kexireportpart.cpp:86
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Design of report <resource>%1</resource> has been modified."
 msgstr "<p>Addasiwyd y gwrthrych: %1 \"%2\".</p><p>Ydych eisiau ei gadw?</p>"
 
-#: plugins/reports/kexireportpart.cpp:87
+#: plugins/reports/kexireportpart.cpp:88
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Report <resource>%1</resource> already exists."
 msgstr "Cadw gwrthrych fel"
 
-#: plugins/reports/kexireportview.cpp:68
+#: plugins/reports/kexireportpart.cpp:183
+#, fuzzy, kde-kuit-format
+msgctxt "@info"
+msgid "Report <resource>%1</resource>"
+msgstr "Cadw gwrthrych fel"
+
+#: plugins/reports/kexireportview.cpp:64
 #, fuzzy, kde-kuit-format
 #| msgid "Page:"
 msgctxt "Page selector label"
 msgid "Page:"
 msgstr "Tudalen :"
 
-#: plugins/reports/kexireportview.cpp:69
+#: plugins/reports/kexireportview.cpp:65
 #, fuzzy, kde-kuit-format
 msgid "Go to first page"
 msgstr "Rhes gyntaf"
 
-#: plugins/reports/kexireportview.cpp:70
+#: plugins/reports/kexireportview.cpp:66
 #, fuzzy, kde-kuit-format
 msgid "Goes to first page"
 msgstr "Rhes gyntaf"
 
-#: plugins/reports/kexireportview.cpp:71
+#: plugins/reports/kexireportview.cpp:67
 #, fuzzy, kde-kuit-format
 #| msgid "Previous Page"
 msgid "Go to previous page"
 msgstr "Tudalen Flaenorol"
 
-#: plugins/reports/kexireportview.cpp:72
+#: plugins/reports/kexireportview.cpp:68
 #, fuzzy, kde-kuit-format
 #| msgid "Previous Page"
 msgid "Goes to previous page"
 msgstr "Tudalen Flaenorol"
 
-#: plugins/reports/kexireportview.cpp:73
+#: plugins/reports/kexireportview.cpp:69
 #, fuzzy, kde-kuit-format
 #| msgid "Next Page"
 msgid "Go to next page"
 msgstr "Tudalen Nesaf"
 
-#: plugins/reports/kexireportview.cpp:74
+#: plugins/reports/kexireportview.cpp:70
 #, fuzzy, kde-kuit-format
 #| msgid "Next Page"
 msgid "Goes to next page"
 msgstr "Tudalen Nesaf"
 
-#: plugins/reports/kexireportview.cpp:75
+#: plugins/reports/kexireportview.cpp:71
 #, fuzzy, kde-kuit-format
 msgid "Go to last page"
 msgstr "Rhes olaf"
 
-#: plugins/reports/kexireportview.cpp:76
+#: plugins/reports/kexireportview.cpp:72
 #, fuzzy, kde-kuit-format
 msgid "Goes to last page"
 msgstr "Rhes olaf"
 
-#: plugins/reports/kexireportview.cpp:77
+#: plugins/reports/kexireportview.cpp:73
 #, fuzzy, kde-kuit-format
 #| msgid "Current row number"
 msgid "Current page number"
 msgstr "Rhif y rhes gyfredol"
 
-#: plugins/reports/kexireportview.cpp:77
+#: plugins/reports/kexireportview.cpp:73
 #, fuzzy, kde-kuit-format
 #| msgid "Number of rows"
 msgid "Number of pages"
 msgstr "Nifer rhesi"
 
-#: plugins/reports/kexireportview.cpp:86
+#: plugins/reports/kexireportview.cpp:82
 #, fuzzy, kde-kuit-format
 msgid "Print"
 msgstr "Argraffu"
 
-#: plugins/reports/kexireportview.cpp:88
+#: plugins/reports/kexireportview.cpp:84
 #, fuzzy, kde-kuit-format
 #| msgid "Report"
 msgid "Print report"
 msgstr "Adroddiad"
 
-#: plugins/reports/kexireportview.cpp:89
+#: plugins/reports/kexireportview.cpp:85
 #, fuzzy, kde-kuit-format
 #| msgid "Closes the current project."
 msgid "Prints the current report."
 msgstr "Cau'r cywaith cyfredol"
 
-#: plugins/reports/kexireportview.cpp:92
+#: plugins/reports/kexireportview.cpp:88
 #, fuzzy, kde-kuit-format
 msgctxt "@title:menu"
 msgid "E&xport As"
 msgstr "&Allforio"
 
-#: plugins/reports/kexireportview.cpp:99
+#: plugins/reports/kexireportview.cpp:95
 #, fuzzy, kde-kuit-format
 msgid "Export:"
 msgstr "&Allforio"
 
-#: plugins/reports/kexireportview.cpp:106
+#: plugins/reports/kexireportview.cpp:102
 #, fuzzy, kde-kuit-format
 msgctxt "open dialog to export as text document"
 msgid "Text Document..."
 msgstr "Adroddiad"
 
-#: plugins/reports/kexireportview.cpp:109
+#: plugins/reports/kexireportview.cpp:105
 #, kde-kuit-format
 msgid "Export the report as a text document (in OpenDocument Text format)"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:110
+#: plugins/reports/kexireportview.cpp:106
 #, kde-kuit-format
 msgid "Exports the report as a text document (in OpenDocument Text format)."
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:119
+#: plugins/reports/kexireportview.cpp:115
 #, kde-kuit-format
 msgctxt "Portable Document Format..."
 msgid "PDF..."
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:122
+#: plugins/reports/kexireportview.cpp:118
 #, fuzzy, kde-kuit-format
 msgid "Export as PDF"
 msgstr "Tabl cyfredol"
 
-#: plugins/reports/kexireportview.cpp:123
+#: plugins/reports/kexireportview.cpp:119
 #, fuzzy, kde-kuit-format
 #| msgid "Closes the current project."
 msgid "Exports the current report as PDF."
 msgstr "Cau'r cywaith cyfredol"
 
-#: plugins/reports/kexireportview.cpp:132
+#: plugins/reports/kexireportview.cpp:128
 #, fuzzy, kde-kuit-format
 msgctxt "open dialog to export as spreadsheet"
 msgid "Spreadsheet..."
 msgstr "Heb fodiwl rhannau ar gyfer teip MIME \"%1\""
 
-#: plugins/reports/kexireportview.cpp:135
+#: plugins/reports/kexireportview.cpp:131
 #, kde-kuit-format
 msgid "Export the report as a spreadsheet (in OpenDocument Spreadsheet format)"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:136
+#: plugins/reports/kexireportview.cpp:132
 #, kde-kuit-format
 msgid ""
 "Exports the report as a spreadsheet (in OpenDocument Spreadsheet format)."
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:146
+#: plugins/reports/kexireportview.cpp:142
 #, fuzzy, kde-kuit-format
 #| msgid "&Add..."
 msgctxt "open dialog to export as web page"
 msgid "Web Page..."
 msgstr "Ychw&anegu..."
 
-#: plugins/reports/kexireportview.cpp:149
+#: plugins/reports/kexireportview.cpp:145
 #, fuzzy, kde-kuit-format
 msgid "Export the report as a web page (in HTML format)"
 msgstr "Tabl cyfredol"
 
-#: plugins/reports/kexireportview.cpp:150
+#: plugins/reports/kexireportview.cpp:146
 #, fuzzy, kde-kuit-format
 msgid "Exports the report as a web page (in HTML format)."
 msgstr "Tabl cyfredol"
 
-#: plugins/reports/kexireportview.cpp:185
+#: plugins/reports/kexireportview.cpp:181
 #, fuzzy, kde-kuit-format
 #| msgid "Row inserting on the server failed."
 msgid "Printing the report failed."
 msgstr "Methwyd mewnosod y rhes ar y gweinydd."
 
-#: plugins/reports/kexireportview.cpp:186
+#: plugins/reports/kexireportview.cpp:182
 #, fuzzy, kde-kuit-format
 msgid "Print Failed"
 msgstr "Cadw gwrthrych fel"
 
-#: plugins/reports/kexireportview.cpp:198
+#: plugins/reports/kexireportview.cpp:194
 #, fuzzy, kde-kuit-format
 msgid "Export Report as PDF"
 msgstr "Tabl cyfredol"
 
-#: plugins/reports/kexireportview.cpp:217
+#: plugins/reports/kexireportview.cpp:213
 #, fuzzy, kde-kuit-format
 msgid "Exporting the report as PDF to %1 failed."
 msgstr "Tabl cyfredol"
 
-#: plugins/reports/kexireportview.cpp:218
-#: plugins/reports/kexireportview.cpp:274
-#: plugins/reports/kexireportview.cpp:299
-#: plugins/reports/kexireportview.cpp:339
+#: plugins/reports/kexireportview.cpp:214
+#: plugins/reports/kexireportview.cpp:270
+#: plugins/reports/kexireportview.cpp:295
+#: plugins/reports/kexireportview.cpp:335
 #, fuzzy, kde-kuit-format
 msgid "Export Failed"
 msgstr "Cadw gwrthrych fel"
 
-#: plugins/reports/kexireportview.cpp:246
+#: plugins/reports/kexireportview.cpp:242
 #, fuzzy, kde-kuit-format
 msgid "Do you want to open exported document?"
 msgstr "Ydych eisiau dileu'r rhes dewisiedig?"
 
-#: plugins/reports/kexireportview.cpp:264
+#: plugins/reports/kexireportview.cpp:260
 #, fuzzy, kde-kuit-format
 #| msgid "Closes the current project."
 msgid "Export Report as Spreadsheet"
 msgstr "Cau'r cywaith cyfredol"
 
-#: plugins/reports/kexireportview.cpp:273
+#: plugins/reports/kexireportview.cpp:269
 #, fuzzy, kde-kuit-format
 #| msgid "Closes the current project."
 msgid "Failed to export the report as spreadsheet to %1."
 msgstr "Cau'r cywaith cyfredol"
 
-#: plugins/reports/kexireportview.cpp:289
+#: plugins/reports/kexireportview.cpp:285
 #, kde-kuit-format
 msgid "Export Report as Text Document"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:298
+#: plugins/reports/kexireportview.cpp:294
 #, kde-kuit-format
 msgid "Exporting the report as text document to %1 failed."
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:309
+#: plugins/reports/kexireportview.cpp:305
 #, fuzzy, kde-kuit-format
 msgid "Export Report as Web Page"
 msgstr "Tabl cyfredol"
 
-#: plugins/reports/kexireportview.cpp:323
+#: plugins/reports/kexireportview.cpp:319
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -7250,35 +7295,35 @@ msgid ""
 "original.</note></para>"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:327
+#: plugins/reports/kexireportview.cpp:323
 #, kde-kuit-format
 msgctxt "@action:button"
 msgid "Use CSS"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:328
+#: plugins/reports/kexireportview.cpp:324
 #, fuzzy, kde-kuit-format
 #| msgid "Table"
 msgctxt "@action:button"
 msgid "Use Table"
 msgstr "Tabl"
 
-#: plugins/reports/kexireportview.cpp:338
+#: plugins/reports/kexireportview.cpp:334
 #, fuzzy, kde-kuit-format
 msgid "Exporting the report as web page to %1 failed."
 msgstr "Tabl cyfredol"
 
-#: plugins/reports/kexireportview.cpp:400
+#: plugins/reports/kexireportview.cpp:396
 #, fuzzy, kde-kuit-format
 msgid "Opening failed"
 msgstr "Cadw gwrthrych fel"
 
-#: plugins/reports/kexireportview.cpp:400
+#: plugins/reports/kexireportview.cpp:396
 #, kde-kuit-format
 msgid "Report schema appears to be invalid or corrupt"
 msgstr ""
 
-#: plugins/reports/kexisourceselector.cpp:60
+#: plugins/reports/kexisourceselector.cpp:59
 #, fuzzy, kde-kuit-format
 msgid "Report's data source:"
 msgstr "Ffynhonnell ddata:"
@@ -7816,17 +7861,17 @@ msgstr ""
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
-"You are about to change the design of table <resource>%1</resource> but "
-"following objects using this table are opened:"
+"<para>You are about to change the design of table <resource>%1</resource> "
+"but following objects using this table are open:</para>"
 msgstr ""
 
-#: plugins/tables/kexitabledesignerview.cpp:1622
+#: plugins/tables/kexitabledesignerview.cpp:1627
 #, fuzzy, kde-kuit-format
 msgctxt "@info"
 msgid "Table field <resource>%1</resource>"
 msgstr "Cadw gwrthrych fel"
 
-#: plugins/tables/kexitabledesignerview.cpp:1624
+#: plugins/tables/kexitabledesignerview.cpp:1629
 #, fuzzy, kde-kuit-format
 #| msgid "&Insert Empty Row"
 msgctxt "Empty table row"
@@ -7839,7 +7884,7 @@ msgctxt "@info"
 msgid "<para>Do you want to save the design now?</para>%1"
 msgstr "Ydych eisiau dileu'r rhes dewisiedig?"
 
-#: plugins/tables/kexitablepart.cpp:62
+#: plugins/tables/kexitablepart.cpp:63
 #, kde-kuit-format
 msgctxt ""
 "Translate this word using only lowercase alphanumeric characters (a..z, "
@@ -7849,62 +7894,45 @@ msgctxt ""
 msgid "table"
 msgstr "tabl"
 
-#: plugins/tables/kexitablepart.cpp:63
+#: plugins/tables/kexitablepart.cpp:64
 #, fuzzy, kde-kuit-format
 msgctxt "tooltip"
 msgid "Create new table"
 msgstr "Creu cywaith newydd"
 
-#: plugins/tables/kexitablepart.cpp:64
+#: plugins/tables/kexitablepart.cpp:65
 #, fuzzy, kde-kuit-format
 msgctxt "what's this"
 msgid "Creates new table."
 msgstr "Creu cywaith newydd"
 
-#: plugins/tables/kexitablepart.cpp:136
+#: plugins/tables/kexitablepart.cpp:137
 #, kde-kuit-format
 msgid ""
-"You are about to remove table <resource>%1</resource> but following objects "
-"using this table are opened:"
+"<para>You are about to delete table <resource>%1</resource> but it is used "
+"by following opened windows:</para>"
 msgstr ""
 
-#: plugins/tables/kexitablepart.cpp:156
-#, kde-kuit-format
-msgid ""
-"You are about to rename table <resource>%1</resource> but following objects "
-"using this table are opened:"
-msgstr ""
-
-#: plugins/tables/kexitablepart.cpp:203
+#: plugins/tables/kexitablepart.cpp:158
 #, kde-format
-msgctxt "@info"
-msgid "<para>%1</para><para>%2</para>"
+msgid ""
+"<para>You are about to rename table <resource>%1</resource> but it is used "
+"by following opened windows:"
 msgstr ""
 
-#: plugins/tables/kexitablepart.cpp:205
-#, fuzzy, kde-kuit-format
-msgid "Do you want to close all windows for these objects?"
-msgstr "Ydych eisiau dileu ymholiad \"%1\"?"
-
-#: plugins/tables/kexitablepart.cpp:207
-#, fuzzy, kde-kuit-format
-msgctxt "@action:button Close All Windows"
-msgid "Close Windows"
-msgstr "Rhes nesaf"
-
-#: plugins/tables/kexitablepart.cpp:225
+#: plugins/tables/kexitablepart.cpp:239
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Design of table <resource>%1</resource> has been modified."
 msgstr "<p>Addasiwyd y gwrthrych: %1 \"%2\".</p><p>Ydych eisiau ei gadw?</p>"
 
-#: plugins/tables/kexitablepart.cpp:228
+#: plugins/tables/kexitablepart.cpp:242
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Table <resource>%1</resource> already exists."
 msgstr "Cadw gwrthrych fel"
 
-#: plugins/tables/kexitablepart.cpp:232
+#: plugins/tables/kexitablepart.cpp:246
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -7912,12 +7940,12 @@ msgid ""
 "warning>"
 msgstr ""
 
-#: plugins/tables/kexitablepart.cpp:261
+#: plugins/tables/kexitablepart.cpp:275
 #, fuzzy, kde-kuit-format
 msgid "Lookup column"
 msgstr "Colofnau'r ymholiad"
 
-#: plugins/tables/kexitablepart.cpp:290
+#: plugins/tables/kexitablepart.cpp:304
 #, fuzzy, kde-kuit-format
 msgctxt "@info"
 msgid "Table <resource>%1</resource>"
@@ -9069,6 +9097,15 @@ msgstr "Rhes olaf"
 #, fuzzy, kde-kuit-format
 msgid "Moves cursor to new record and allows inserting."
 msgstr "Rhes nesaf"
+
+#, fuzzy
+#~ msgid "Do you want to close all windows for these objects?"
+#~ msgstr "Ydych eisiau dileu ymholiad \"%1\"?"
+
+#, fuzzy
+#~ msgctxt "@action:button Close All Windows"
+#~ msgid "Close Windows"
+#~ msgstr "Rhes nesaf"
 
 #, fuzzy
 #~| msgid "Data"
