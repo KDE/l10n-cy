@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ../cy/messages//kdepim/kleopatra.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-08-30 03:54+0200\n"
+"POT-Creation-Date: 2018-08-31 03:49+0200\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandrakesoft.com>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -1282,7 +1282,7 @@ msgid "Moving the key to the card failed: %1"
 msgstr ""
 
 #: src/commands/keytocardcommand.cpp:206 src/commands/keytocardcommand.cpp:231
-#: src/view/netkeywidget.cpp:214 src/view/nullpinwidget.cpp:120
+#: src/view/netkeywidget.cpp:222 src/view/nullpinwidget.cpp:120
 #: src/view/pgpcardwidget.cpp:297 src/view/pgpcardwidget.cpp:312
 #: src/view/pgpcardwidget.cpp:365 src/view/pgpcardwidget.cpp:391
 #: src/view/pgpcardwidget.cpp:397 src/view/pgpcardwidget.cpp:403
@@ -1313,17 +1313,17 @@ msgctxt "@info"
 msgid "Failed to delete the key: %1"
 msgstr "Methwyd creu tysysgrif : %1"
 
-#: src/commands/learncardkeyscommand.cpp:78
+#: src/commands/learncardkeyscommand.cpp:80
 #, kde-format
 msgid "Error Learning SmartCard"
 msgstr ""
 
-#: src/commands/learncardkeyscommand.cpp:83
+#: src/commands/learncardkeyscommand.cpp:85
 #, kde-format
 msgid "Finished Learning SmartCard"
 msgstr ""
 
-#: src/commands/learncardkeyscommand.cpp:89
+#: src/commands/learncardkeyscommand.cpp:91
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1331,6 +1331,17 @@ msgid ""
 "prematurely because of an unexpected error.</para><para>Please check the "
 "output of <icode>%1</icode> for details.</para>"
 msgstr ""
+
+#: src/commands/learncardkeyscommand.cpp:117
+#, kde-format
+msgid "Loading certificates... (this can take a while)"
+msgstr ""
+
+#: src/commands/learncardkeyscommand.cpp:118
+#, fuzzy, kde-format
+#| msgid "&Details"
+msgid "Show Details"
+msgstr "&Manylion"
 
 #: src/commands/lookupcertificatescommand.cpp:336
 #: src/commands/lookupcertificatescommand.cpp:341
@@ -6648,44 +6659,44 @@ msgid ""
 "Quit any other running instances of <application>Kleopatra</application>."
 msgstr ""
 
-#: src/systrayicon.cpp:153
+#: src/systrayicon.cpp:154
 #, fuzzy, kde-format
 #| msgid "Certificate Manager Error"
 msgid "&Open Certificate Manager..."
 msgstr "Gwall Rheolwr Tystysgrifau"
 
-#: src/systrayicon.cpp:154
+#: src/systrayicon.cpp:155
 #, kde-format
 msgid "&Configure %1..."
 msgstr ""
 
-#: src/systrayicon.cpp:155
+#: src/systrayicon.cpp:156
 #, kde-format
 msgid "&About %1..."
 msgstr ""
 
-#: src/systrayicon.cpp:156
+#: src/systrayicon.cpp:157
 #, fuzzy, kde-format
 #| msgid "Kleopatra"
 msgid "&Shutdown Kleopatra"
 msgstr "Kleopatra"
 
-#: src/systrayicon.cpp:158
+#: src/systrayicon.cpp:159
 #, kde-format
 msgid "SmartCard"
 msgstr ""
 
-#: src/systrayicon.cpp:159
+#: src/systrayicon.cpp:160
 #, kde-format
 msgid "Update Card Status"
 msgstr ""
 
-#: src/systrayicon.cpp:160
+#: src/systrayicon.cpp:161
 #, kde-format
 msgid "Set NetKey v3 Initial PIN..."
 msgstr ""
 
-#: src/systrayicon.cpp:161
+#: src/systrayicon.cpp:162
 #, fuzzy, kde-format
 #| msgid "&Certificates"
 msgid "Learn NetKey v3 Card Certificates"
@@ -7593,68 +7604,68 @@ msgstr ""
 msgid "Import CRL From File..."
 msgstr ""
 
-#: src/view/netkeywidget.cpp:88 src/view/pgpcardwidget.cpp:151
+#: src/view/netkeywidget.cpp:90 src/view/pgpcardwidget.cpp:151
 #, fuzzy, kde-format
 #| msgid "Serial Number"
 msgid "Serial number:"
 msgstr "Rhif Cyfresol"
 
-#: src/view/netkeywidget.cpp:99
+#: src/view/netkeywidget.cpp:101
 #, fuzzy, kde-format
 #| msgid "&Certificates"
 msgid "Certificates:"
 msgstr "&Tystysgrifau"
 
-#: src/view/netkeywidget.cpp:101
+#: src/view/netkeywidget.cpp:103
 #, fuzzy, kde-format
 #| msgid "&Certificates"
 msgid "There are unknown certificates on this card."
 msgstr "&Tystysgrifau"
 
-#: src/view/netkeywidget.cpp:102
+#: src/view/netkeywidget.cpp:104
 #, fuzzy, kde-format
 #| msgid "&Certificates"
 msgctxt "@action"
 msgid "Load Certificates"
 msgstr "&Tystysgrifau"
 
-#: src/view/netkeywidget.cpp:144 src/view/pgpcardwidget.cpp:202
+#: src/view/netkeywidget.cpp:152 src/view/pgpcardwidget.cpp:202
 #, fuzzy, kde-format
 #| msgid "Location"
 msgid "Actions:"
 msgstr "Lleoliad"
 
-#: src/view/netkeywidget.cpp:146
+#: src/view/netkeywidget.cpp:154
 #, kde-format
 msgctxt "NKS is an identifier for a type of keys on a NetKey card"
 msgid "Change NKS PIN"
 msgstr ""
 
-#: src/view/netkeywidget.cpp:147 src/view/netkeywidget.cpp:185
+#: src/view/netkeywidget.cpp:155 src/view/netkeywidget.cpp:193
 #, fuzzy, kde-format
 #| msgid "Canceled."
 msgctxt "SigG is an identifier for a type of keys on a NetKey card"
 msgid "Change SigG PIN"
 msgstr "Wedi'i ddiddymu"
 
-#: src/view/netkeywidget.cpp:169
+#: src/view/netkeywidget.cpp:177
 #, kde-format
 msgctxt "1 is a Version number"
 msgid "NetKey v%1 Card"
 msgstr ""
 
-#: src/view/netkeywidget.cpp:182 src/view/nullpinwidget.cpp:63
+#: src/view/netkeywidget.cpp:190 src/view/nullpinwidget.cpp:63
 #, kde-format
 msgctxt "SigG is an identifier for a type of keys on a NetKey card"
 msgid "Set SigG PIN"
 msgstr ""
 
-#: src/view/netkeywidget.cpp:195
+#: src/view/netkeywidget.cpp:203
 #, kde-format
 msgid "Error"
 msgstr ""
 
-#: src/view/netkeywidget.cpp:213 src/view/nullpinwidget.cpp:119
+#: src/view/netkeywidget.cpp:221 src/view/nullpinwidget.cpp:119
 #, fuzzy, kde-format
 #| msgid "Could not generate certificate: %1"
 msgctxt "@info"
@@ -8246,11 +8257,6 @@ msgstr ""
 #, fuzzy
 #~| msgid "&Details"
 #~ msgid "Hide Details"
-#~ msgstr "&Manylion"
-
-#, fuzzy
-#~| msgid "&Details"
-#~ msgid "Show Details"
 #~ msgstr "&Manylion"
 
 #, fuzzy
