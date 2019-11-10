@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: karm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-07-20 03:15+0200\n"
+"POT-Creation-Date: 2019-11-10 03:25+0100\n"
 "PO-Revision-Date: 2004-01-08 20:59+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -220,40 +220,91 @@ msgstr "\""
 msgid "'"
 msgstr "'"
 
-#. i18n: ectx: property (windowTitle), widget (QDialog, EditTaskDialog)
-#: src/edittaskdialog.ui:14
+#: src/dialogs/edittimedialog.cpp:44
 #, fuzzy, kde-format
 #| msgid "Edit Task"
-msgid "Add/Edit a task"
+msgctxt "@title:window"
+msgid "Edit Task Time"
 msgstr "Golygu Tasg"
 
-#. i18n: ectx: property (text), widget (QLabel, tasknamelabel)
-#: src/edittaskdialog.ui:26
+#: src/dialogs/edittimedialog.cpp:52 src/dialogs/taskpropertiesdialog.cpp:56
+#, fuzzy, kde-format
+#| msgid "Task"
+msgctxt "@title:group"
+msgid "Task"
+msgstr "Tasg"
+
+#: src/dialogs/edittimedialog.cpp:63 src/dialogs/taskpropertiesdialog.cpp:66
 #, fuzzy, kde-format
 #| msgid "Task Name"
 msgid "Task Name:"
 msgstr "Enw Tasg"
 
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, tasknamelineedit)
-#: src/edittaskdialog.ui:40
+#: src/dialogs/edittimedialog.cpp:70 src/dialogs/taskpropertiesdialog.cpp:71
 #, kde-format
+msgid "Task Description:"
+msgstr ""
+
+#: src/dialogs/edittimedialog.cpp:73
+#, kde-format
+msgctxt "@title:group"
+msgid "Time Editing"
+msgstr ""
+
+#: src/dialogs/edittimedialog.cpp:81
+#, kde-format
+msgid "Current Time:"
+msgstr ""
+
+#: src/dialogs/edittimedialog.cpp:84
+#, fuzzy, kde-format
+#| msgid " min"
+msgctxt "@item:valuesuffix"
+msgid " minute"
+msgid_plural " minutes"
+msgstr[0] "munud"
+msgstr[1] "munud"
+
+#: src/dialogs/edittimedialog.cpp:90
+#, kde-format
+msgid "Change Time By:"
+msgstr ""
+
+#: src/dialogs/edittimedialog.cpp:94
+#, kde-format
+msgid "Time After Change:"
+msgstr ""
+
+#: src/dialogs/edittimedialog.cpp:99 src/timetrackerwidget.cpp:159
+#, fuzzy, kde-format
+msgid "Edit History..."
+msgstr "Hanes y Tasgau"
+
+#: src/dialogs/edittimedialog.cpp:100
+#, kde-format
+msgid "To change this task's time, you have to edit its event history"
+msgstr ""
+
+#: src/dialogs/taskpropertiesdialog.cpp:63
+#, kde-format
+msgctxt "@info:whatsthis"
 msgid ""
 "<p>Enter the name of the task here. You can choose it freely.</p>\n"
 "<p><i>Example:</i> phone with mother</p>"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: src/edittaskdialog.ui:47
-#, kde-format
-msgid "Description:"
-msgstr ""
-
-#. i18n: ectx: property (title), widget (QGroupBox, autotrackinggroupbox)
-#: src/edittaskdialog.ui:76
+#: src/dialogs/taskpropertiesdialog.cpp:74
 #, fuzzy, kde-format
 #| msgid "A&uto tracking"
+msgctxt "@title:group"
 msgid "Auto Tracking"
 msgstr "Dilyn &ymysgogol"
+
+#: src/dialogs/taskpropertiesdialog.cpp:91
+#, kde-format
+msgctxt "order number of desktop: 1, 2, ..."
+msgid "%1."
+msgstr ""
 
 #: src/export/export.cpp:60
 #, kde-format
@@ -697,7 +748,7 @@ msgstr "&Nodi fel Cyflawn..."
 msgid "Save tasks every:"
 msgstr "Cadw tasgau bob "
 
-#: src/taskview.cpp:135
+#: src/taskview.cpp:121
 #, kde-format
 msgid ""
 "Error storing new task. Your changes were not saved. Make sure you can edit "
@@ -705,32 +756,34 @@ msgid ""
 "any lock file related to its name from ~/.kde/share/apps/kabc/lock/ "
 msgstr ""
 
-#: src/taskview.cpp:227
+#: src/taskview.cpp:213
 #, kde-format
 msgid "Your virtual desktop number is too high, desktop tracking will not work"
 msgstr ""
 
-#: src/taskview.cpp:386
+#: src/taskview.cpp:372
 #, kde-format
 msgid "Stopping timers..."
 msgstr ""
 
-#: src/taskview.cpp:386
+#: src/taskview.cpp:372
 #, kde-format
 msgid "Cancel"
 msgstr ""
 
-#: src/taskview.cpp:478
-#, kde-format
+#: src/taskview.cpp:464
+#, fuzzy, kde-format
+#| msgid "New Task"
+msgctxt "@title:window"
 msgid "New Task"
 msgstr "Tasg Newydd"
 
-#: src/taskview.cpp:488 src/taskview.cpp:567
+#: src/taskview.cpp:473 src/taskview.cpp:552
 #, kde-format
 msgid "Unnamed Task"
 msgstr "Tasg Di-enw"
 
-#: src/taskview.cpp:508
+#: src/taskview.cpp:493
 #, kde-format
 msgid ""
 "Error storing new task. Your changes were not saved. Make sure you can edit "
@@ -738,22 +791,26 @@ msgid ""
 "any lock file related to its name from ~/.kde/share/apps/kabc/lock/"
 msgstr ""
 
-#: src/taskview.cpp:545
-#, kde-format
+#: src/taskview.cpp:532
+#, fuzzy, kde-format
+#| msgid "New Sub Task"
+msgctxt "@title:window"
 msgid "New Sub Task"
 msgstr "Is-Dasg Newydd"
 
-#: src/taskview.cpp:562
-#, kde-format
+#: src/taskview.cpp:549
+#, fuzzy, kde-format
+#| msgid "Edit Task"
+msgctxt "@title:window"
 msgid "Edit Task"
 msgstr "Golygu Tasg"
 
-#: src/taskview.cpp:619 src/taskview.cpp:659 src/taskview.cpp:680
+#: src/taskview.cpp:611 src/taskview.cpp:651 src/taskview.cpp:672
 #, kde-format
 msgid "No task selected."
 msgstr "Dim tasg wedi'i dewis."
 
-#: src/taskview.cpp:664
+#: src/taskview.cpp:656
 #, fuzzy, kde-format
 msgid ""
 "Are you sure you want to delete the selected task and its entire history?\n"
@@ -763,7 +820,7 @@ msgstr ""
 " \"%1\" a'i holl hanes?\n"
 " NODER: Dilëir ei holl is-dasgau a'u hanes hefyd!"
 
-#: src/taskview.cpp:668
+#: src/taskview.cpp:660
 #, fuzzy, kde-format
 #| msgid "Deleting Task"
 msgid "Deleting Task"
@@ -806,11 +863,6 @@ msgid ""
 msgstr ""
 "Bydd hwn yn ailosod amser y sesiwn yn 0 ar gyfer pob tasg, i ddechrau sesiwn "
 "newydd, heb effeithio ar y cyfansymiau."
-
-#: src/timetrackerwidget.cpp:159
-#, fuzzy, kde-format
-msgid "Edit History..."
-msgstr "Hanes y Tasgau"
 
 #: src/timetrackerwidget.cpp:160
 #, kde-format
@@ -1207,6 +1259,11 @@ msgstr ""
 msgctxt "combox entry for lowest priority"
 msgid "9 (lowest)"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Edit Task"
+#~ msgid "Add/Edit a task"
+#~ msgstr "Golygu Tasg"
 
 #, fuzzy
 #~ msgid "Delete"
