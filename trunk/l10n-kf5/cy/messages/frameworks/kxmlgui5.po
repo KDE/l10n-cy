@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-12-11 02:55+0100\n"
+"POT-Creation-Date: 2020-01-06 03:08+0100\n"
 "PO-Revision-Date: 2005-01-28 17:54+0000\n"
 "Last-Translator: Kevin Donnelly <kevin@dotmon.com>\n"
 "Language-Team: Cymraeg\n"
@@ -30,14 +30,17 @@ msgstr ""
 "\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: kaboutapplicationdialog.cpp:70 kaboutplugindialog.cpp:75 khelpmenu.cpp:280
-#, kde-format
+#: kaboutapplicationdialog.cpp:70 kaboutplugindialog.cpp:75
+#, fuzzy, kde-format
+#| msgid "About %1"
+msgctxt "@title:window"
 msgid "About %1"
 msgstr "Ynglyn â %1"
 
 #: kaboutapplicationdialog.cpp:102 kaboutplugindialog.cpp:92
 #, fuzzy, kde-format
 #| msgid "&About"
+msgctxt "@title:tab"
 msgid "About"
 msgstr "&Ynghylch"
 
@@ -50,12 +53,14 @@ msgstr ""
 
 #: kaboutapplicationdialog.cpp:119
 #, kde-format
+msgctxt "@title:tab"
 msgid "Libraries"
 msgstr ""
 
 #: kaboutapplicationdialog.cpp:129 kaboutplugindialog.cpp:103
 #, fuzzy, kde-format
 #| msgid "Author"
+msgctxt "@title:tab"
 msgid "Author"
 msgid_plural "Authors"
 msgstr[0] "Awdur"
@@ -64,12 +69,14 @@ msgstr[1] "Awdur"
 #: kaboutapplicationdialog.cpp:136 kaboutplugindialog.cpp:110
 #, fuzzy, kde-format
 #| msgid "&Thanks To"
+msgctxt "@title:tab"
 msgid "Thanks To"
 msgstr "&Diolch i"
 
 #: kaboutapplicationdialog.cpp:143 kaboutplugindialog.cpp:116
-#: kbugreport.cpp:251
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Translation"
+msgctxt "@title:tab"
 msgid "Translation"
 msgstr "Cyfieithiad"
 
@@ -89,7 +96,7 @@ msgstr "Tudalen gartref"
 #: kaboutapplicationpersonlistdelegate_p.cpp:128
 #, fuzzy, kde-format
 #| msgid "Other Contributors:"
-msgctxt "Action to send an email to a contributor"
+msgctxt "@info:tooltip Action to send an email to a contributor"
 msgid ""
 "Email contributor\n"
 "%1"
@@ -99,6 +106,7 @@ msgstr "Cyfrannwyr Eraill:"
 #: kaboutapplicationpersonlistdelegate_p.cpp:171
 #, fuzzy, kde-format
 #| msgid "Homepage"
+msgctxt "@info:tooltip"
 msgid ""
 "Visit contributor's homepage\n"
 "%1"
@@ -106,15 +114,18 @@ msgstr "Tudalen gartref"
 
 #: kaboutapplicationpersonlistdelegate_p.cpp:141
 #: kaboutapplicationpersonlistdelegate_p.cpp:174
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Homepage"
+msgctxt "@info:tooltip"
 msgid ""
 "Visit contributor's profile on %1\n"
 "%2"
-msgstr ""
+msgstr "Tudalen gartref"
 
 #: kaboutapplicationpersonlistdelegate_p.cpp:165
 #, fuzzy, kde-format
 #| msgid "Homepage"
+msgctxt "@info:tooltip"
 msgid ""
 "Visit contributor's page\n"
 "%1"
@@ -123,6 +134,7 @@ msgstr "Tudalen gartref"
 #: kaboutapplicationpersonlistdelegate_p.cpp:168
 #, fuzzy, kde-format
 #| msgid "Homepage"
+msgctxt "@info:tooltip"
 msgid ""
 "Visit contributor's blog\n"
 "%1"
@@ -165,6 +177,7 @@ msgstr "Tudalen gartref"
 
 #: kaboutkdedialog_p.cpp:43
 #, fuzzy, kde-format
+msgctxt "@title:window"
 msgid "About KDE"
 msgstr "Ynglyn a &Kde"
 
@@ -276,24 +289,31 @@ msgstr ""
 "cefnogaeth. "
 
 #: kaboutkdedialog_p.cpp:135
-#, kde-format
-msgctxt "About KDE"
+#, fuzzy, kde-format
+#| msgctxt "About KDE"
+#| msgid "&About"
+msgctxt "@title:tab About KDE"
 msgid "&About"
 msgstr "&Ynghylch"
 
 #: kaboutkdedialog_p.cpp:136
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Report Bugs or Wishes"
+msgctxt "@title:tab"
 msgid "&Report Bugs or Wishes"
 msgstr "&Adrodd Namau neu Dymuniadau"
 
 #: kaboutkdedialog_p.cpp:137
 #, fuzzy, kde-format
 #| msgid "&Join the KDE Team"
+msgctxt "@title:tab"
 msgid "&Join KDE"
 msgstr "&Ymaelodi a'r tîm KDE"
 
 #: kaboutkdedialog_p.cpp:138
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Support KDE"
+msgctxt "@title:tab"
 msgid "&Support KDE"
 msgstr "&Cefnogi KDE"
 
@@ -333,11 +353,20 @@ msgid ""
 msgstr ""
 
 #: kactionconflictdetector.cpp:54
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Shortcuts"
+msgctxt "@title:window"
 msgid "Ambiguous shortcut detected"
-msgstr ""
+msgstr "Byrlwybrau"
 
-#: kbugreport.cpp:106 kbugreport.cpp:135
+#: kbugreport.cpp:106
+#, fuzzy, kde-format
+#| msgid "Submit Bug Report"
+msgctxt "@title:window"
+msgid "Submit Bug Report"
+msgstr "Cyflwyno Adroddiad Nam"
+
+#: kbugreport.cpp:135
 #, kde-format
 msgid "Submit Bug Report"
 msgstr "Cyflwyno Adroddiad Nam"
@@ -358,34 +387,42 @@ msgid "From:"
 msgstr "Oddiwrth:"
 
 #: kbugreport.cpp:155
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Configure Email..."
+msgctxt "@action:button"
 msgid "Configure Email..."
 msgstr "Ffurfweddu Ebost ..."
 
-#: kbugreport.cpp:162
+#: kbugreport.cpp:161
 #, kde-format
 msgid "The email address this bug report is sent to."
 msgstr "Y gyfeiriad ebost a anfonir yr adroddiad nam yma iddi."
 
-#: kbugreport.cpp:163
+#: kbugreport.cpp:162
 #, fuzzy, kde-format
 #| msgid "To:"
 msgctxt "Email receiver address"
 msgid "To:"
 msgstr "I:"
 
-#: kbugreport.cpp:172
-#, kde-format
+#: kbugreport.cpp:171
+#, fuzzy, kde-format
+#| msgid "&Send"
+msgctxt "@action:button"
 msgid "&Send"
 msgstr "&Anfon"
 
 #: kbugreport.cpp:172
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Send bug report."
+msgctxt "@info:tooltip"
 msgid "Send bug report."
 msgstr "Anfon Adroddiad Nam"
 
 #: kbugreport.cpp:173
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Send this bug report to %1."
+msgctxt "@info:whatsthis"
 msgid "Send this bug report to %1."
 msgstr "Anfonwch yr adroddiad nam yma i %1."
 
@@ -434,30 +471,47 @@ msgid "Compiler:"
 msgstr "Crynhoydd:"
 
 #: kbugreport.cpp:243
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Se&verity"
+msgctxt "@title:group"
 msgid "Se&verity"
 msgstr "Lly&mder"
 
 #: kbugreport.cpp:247
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Critical"
+msgctxt "bug severity"
 msgid "Critical"
 msgstr "Critigol"
 
 #: kbugreport.cpp:248
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Grave"
+msgctxt "bug severity"
 msgid "Grave"
 msgstr "Peryglus"
 
 #: kbugreport.cpp:249
-#, kde-format
-msgctxt "normal severity"
+#, fuzzy, kde-format
+#| msgctxt "normal severity"
+#| msgid "Normal"
+msgctxt "bug severity"
 msgid "Normal"
 msgstr "Arferol"
 
 #: kbugreport.cpp:250
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Wishlist"
+msgctxt "bug severity"
 msgid "Wishlist"
 msgstr "Rhestr dymuniadau"
+
+#: kbugreport.cpp:251
+#, fuzzy, kde-format
+#| msgid "Translation"
+msgctxt "bug severity"
+msgid "Translation"
+msgstr "Cyfieithiad"
 
 #: kbugreport.cpp:269
 #, kde-format
@@ -501,13 +555,16 @@ msgstr ""
 " Trosglwyddir y wybodaeth a arddangosir uchod i'r gweinydd hwnnw."
 
 #: kbugreport.cpp:321
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Launch Bug Report Wizard"
+msgctxt "@action:button"
 msgid "&Launch Bug Report Wizard"
 msgstr "&Cychwyn Dewin Adrodd Namau"
 
 #: kbugreport.cpp:323
 #, fuzzy, kde-format
 #| msgid "Submit Bug Report"
+msgctxt "@action:button"
 msgid "&Submit Bug Report"
 msgstr "Cyflwyno Adroddiad Nam"
 
@@ -607,7 +664,9 @@ msgstr ""
 " a olygwyd?"
 
 #: kbugreport.cpp:499
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Close Message"
+msgctxt "@title:window"
 msgid "Close Message"
 msgstr "Cau Neges"
 
@@ -666,6 +725,7 @@ msgstr "--- gwahanydd ---"
 #: kedittoolbar.cpp:347
 #, fuzzy, kde-format
 #| msgid "Change &Icon..."
+msgctxt "@title:window"
 msgid "Change Text"
 msgstr "Newid E&icon..."
 
@@ -677,11 +737,13 @@ msgstr "Canfod Testun"
 
 #: kedittoolbar.cpp:363
 #, kde-format
+msgctxt "@option:check"
 msgid "&Hide text when toolbar shows text alongside icons"
 msgstr ""
 
 #: kedittoolbar.cpp:616
 #, fuzzy, kde-format
+msgctxt "@title:window"
 msgid "Configure Toolbars"
 msgstr "Ffurfio Bar Offer"
 
@@ -731,13 +793,16 @@ msgid "Curr&ent actions:"
 msgstr "Gweith&rediadau cyfredol:"
 
 #: kedittoolbar.cpp:1062
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Change &Icon..."
+msgctxt "@action:button"
 msgid "Change &Icon..."
 msgstr "Newid E&icon..."
 
 #: kedittoolbar.cpp:1070
 #, fuzzy, kde-format
 #| msgid "Change &Icon..."
+msgctxt "@action:button"
 msgid "Change Te&xt..."
 msgstr "Newid E&icon..."
 
@@ -798,6 +863,11 @@ msgstr "Newid E&icon..."
 msgid "&Help"
 msgstr "&Cymorth"
 
+#: khelpmenu.cpp:280
+#, kde-format
+msgid "About %1"
+msgstr "Ynglyn â %1"
+
 #: kkeysequencewidget.cpp:129
 #, kde-format
 msgid "Shortcut '%1' in Application %2 for action %3\n"
@@ -826,6 +896,7 @@ msgstr[1] "Croestyniad efo Byrlwybr Eang"
 #: kkeysequencewidget.cpp:147 kkeysequencewidget.cpp:235
 #: kkeysequencewidget.cpp:626
 #, fuzzy, kde-format
+msgctxt "@action:button"
 msgid "Reassign"
 msgstr "Rwsieg"
 
@@ -865,6 +936,7 @@ msgstr[1] ""
 #: kkeysequencewidget.cpp:244
 #, fuzzy, kde-format
 #| msgid "Shortcut"
+msgctxt "@title:window"
 msgid "Shortcut conflict"
 msgstr "Byrlwybr"
 
@@ -883,6 +955,7 @@ msgstr ""
 
 #: kkeysequencewidget.cpp:275
 #, kde-format
+msgctxt "@info:tooltip"
 msgid ""
 "Click on the button, then enter the shortcut like you would in the program.\n"
 "Example for Ctrl+A: hold the Ctrl key and press A."
@@ -903,7 +976,9 @@ msgid ""
 msgstr ""
 
 #: kkeysequencewidget.cpp:620
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Conflict with Standard Application Shortcut"
+msgctxt "@title:window"
 msgid "Conflict with Standard Application Shortcut"
 msgstr "Croestyniad efo Byrlwybr Cymhwysiad Arferol"
 
@@ -940,12 +1015,14 @@ msgstr ""
 #: kkeysequencewidget.cpp:722
 #, fuzzy, kde-format
 #| msgid "Untrusted"
+msgctxt "@title:window"
 msgid "Unsupported Key"
 msgstr "Ni ymddiriedir"
 
 #: klicensedialog_p.cpp:44
 #, fuzzy, kde-format
 #| msgid "&License Agreement"
+msgctxt "@title:window"
 msgid "License Agreement"
 msgstr "Cytundeb &Trwydded"
 
@@ -969,6 +1046,7 @@ msgstr "&Ychwanegu at Liwiau Rhagosodedig"
 #: kmenumenuhandler_p.cpp:235
 #, fuzzy, kde-format
 #| msgid "Configure S&hortcuts..."
+msgctxt "@action:inmenu"
 msgid "Configure Shortcut..."
 msgstr "Ffurfweddu &Byrlwybrau"
 
@@ -1022,17 +1100,20 @@ msgstr "Y gyfeiriad ebost a anfonir yr adroddiad nam yma iddi."
 #: kshortcuteditwidget.cpp:67
 #, fuzzy, kde-format
 #| msgid "Default"
+msgctxt "@option:radio"
 msgid "Default:"
 msgstr "Rhagosodol"
 
 #: kshortcuteditwidget.cpp:74
 #, fuzzy, kde-format
+msgctxt "@option:radio"
 msgid "Custom:"
 msgstr "A&ddasu"
 
 #: kshortcutschemeseditor.cpp:44
 #, fuzzy, kde-format
 #| msgid "Shortcuts"
+msgctxt "@title:group"
 msgid "Shortcut Schemes"
 msgstr "Byrlwybrau"
 
@@ -1045,41 +1126,51 @@ msgstr "Gweith&rediadau cyfredol:"
 #: kshortcutschemeseditor.cpp:82
 #, fuzzy, kde-format
 #| msgid "New List..."
+msgctxt "@action:button"
 msgid "New..."
 msgstr "Rhestr Newydd..."
 
 #: kshortcutschemeseditor.cpp:85
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Delete"
+msgctxt "@action:button"
 msgid "Delete"
 msgstr "Dileu"
 
 #: kshortcutschemeseditor.cpp:88
 #, fuzzy, kde-format
 #| msgid "Action"
+msgctxt "@action:button"
 msgid "More Actions"
 msgstr "Gweithrediad"
 
 #: kshortcutschemeseditor.cpp:92
 #, fuzzy, kde-format
 #| msgid "Shortcuts"
+msgctxt "@action:inmenu"
 msgid "Save shortcuts to scheme"
 msgstr "Byrlwybrau"
 
 #: kshortcutschemeseditor.cpp:94
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Shortcuts"
+msgctxt "@action:inmenu"
 msgid "Export Scheme..."
-msgstr ""
+msgstr "Byrlwybrau"
 
 #: kshortcutschemeseditor.cpp:96
 #, fuzzy, kde-format
 #| msgid "Shortcuts"
+msgctxt "@action:inmenu"
 msgid "Import Scheme..."
 msgstr "Byrlwybrau"
 
 #: kshortcutschemeseditor.cpp:117
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Curr&ent actions:"
+msgctxt "@title:window"
 msgid "Name for New Scheme"
-msgstr ""
+msgstr "Gweith&rediadau cyfredol:"
 
 #: kshortcutschemeseditor.cpp:118
 #, fuzzy, kde-format
@@ -1110,28 +1201,30 @@ msgstr ""
 #: kshortcutschemeseditor.cpp:185
 #, fuzzy, kde-format
 #| msgid "Shortcuts"
+msgctxt "@title:window"
 msgid "Export Shortcuts"
 msgstr "Byrlwybrau"
 
-#: kshortcutschemeseditor.cpp:185 kshortcutschemeseditor.cpp:196
+#: kshortcutschemeseditor.cpp:186 kshortcutschemeseditor.cpp:198
 #, fuzzy, kde-format
 #| msgid "Shortcut"
 msgid "Shortcuts (*.shortcuts)"
 msgstr "Byrlwybr"
 
-#: kshortcutschemeseditor.cpp:196
+#: kshortcutschemeseditor.cpp:197
 #, fuzzy, kde-format
 #| msgid "Shortcuts"
+msgctxt "@title:window"
 msgid "Import Shortcuts"
 msgstr "Byrlwybrau"
 
-#: kshortcutschemeseditor.cpp:207
+#: kshortcutschemeseditor.cpp:209
 #, fuzzy, kde-format
 #| msgid "Successfully uploaded new stuff."
 msgid "Shortcut scheme successfully saved."
 msgstr "Wedi lanlwytho'r diweddaraf yn llyddiannus."
 
-#: kshortcutschemeseditor.cpp:210
+#: kshortcutschemeseditor.cpp:212
 #, kde-format
 msgid "Error saving the shortcut scheme."
 msgstr ""
@@ -1152,6 +1245,7 @@ msgstr "Gweith&rediadau cyfredol:"
 #: kshortcutsdialog.cpp:154
 #, fuzzy, kde-format
 #| msgid "Configure Shortcuts"
+msgctxt "@title:window"
 msgid "Configure Keyboard Shortcuts"
 msgstr "Ffurfweddu Byrlwybrau"
 
@@ -1279,6 +1373,7 @@ msgstr "%1%"
 #: kswitchlanguagedialog_p.cpp:159
 #, fuzzy, kde-format
 #| msgid "sets the application name"
+msgctxt "@title:window"
 msgid "Switch Application Language"
 msgstr "gosod enw'r cymhwysiad"
 
@@ -1290,11 +1385,13 @@ msgstr ""
 #: kswitchlanguagedialog_p.cpp:191
 #, fuzzy, kde-format
 #| msgid "Default language:"
+msgctxt "@action:button"
 msgid "Add Fallback Language"
 msgstr "Iaith rhagosodol:"
 
 #: kswitchlanguagedialog_p.cpp:192
 #, kde-format
+msgctxt "@info:tooltip"
 msgid ""
 "Adds one more language which will be used if other translations do not "
 "contain a proper translation."
@@ -1307,7 +1404,13 @@ msgid ""
 "effect the next time the application is started."
 msgstr ""
 
-#: kswitchlanguagedialog_p.cpp:289 kswitchlanguagedialog_p.cpp:311
+#: kswitchlanguagedialog_p.cpp:289
+#, fuzzy, kde-format
+msgctxt "@title:window"
+msgid "Application Language Changed"
+msgstr "Cymhwysiad:"
+
+#: kswitchlanguagedialog_p.cpp:311
 #, fuzzy, kde-format
 msgid "Application Language Changed"
 msgstr "Cymhwysiad:"
@@ -1325,12 +1428,15 @@ msgid "Fallback language:"
 msgstr "Iaith rhagosodol:"
 
 #: kswitchlanguagedialog_p.cpp:414
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remove"
+msgctxt "@action:button"
 msgid "Remove"
 msgstr "Tynnu ymaith"
 
 #: kswitchlanguagedialog_p.cpp:421
 #, kde-format
+msgctxt "@info:tooltip"
 msgid ""
 "This is the main application language which will be used first, before any "
 "other languages."
@@ -1338,6 +1444,7 @@ msgstr ""
 
 #: kswitchlanguagedialog_p.cpp:422
 #, kde-format
+msgctxt "@info:tooltip"
 msgid ""
 "This is the language which will be used if any previous languages do not "
 "contain a proper translation."
@@ -1394,22 +1501,30 @@ msgid "Text Position"
 msgstr "Lleoliad Testun"
 
 #: ktoolbar.cpp:331
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Icons Only"
+msgctxt "@item:inmenu"
 msgid "Icons Only"
 msgstr "Eiconau yn Unig"
 
 #: ktoolbar.cpp:332
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Text Only"
+msgctxt "@item:inmenu"
 msgid "Text Only"
 msgstr "Testun yn Unig"
 
 #: ktoolbar.cpp:333
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Text Alongside Icons"
+msgctxt "@item:inmenu"
 msgid "Text Alongside Icons"
 msgstr "Testun wrth Ochr Eiconau"
 
 #: ktoolbar.cpp:334
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Text Under Icons"
+msgctxt "@item:inmenu"
 msgid "Text Under Icons"
 msgstr "Testun dan Eiconau"
 
@@ -1547,6 +1662,9 @@ msgstr "Gosod&iadau"
 #, kde-format
 msgid "Main Toolbar"
 msgstr "Prif Far Offer"
+
+#~ msgid "Delete"
+#~ msgstr "Dileu"
 
 #~ msgid "Key Conflict"
 #~ msgstr "Croestyniad Bysell"
@@ -9661,12 +9779,6 @@ msgstr "Prif Far Offer"
 #~| msgid "Delete"
 #~ msgctxt "@title"
 #~ msgid "Delete tag"
-#~ msgstr "Dileu"
-
-#, fuzzy
-#~| msgid "Delete"
-#~ msgctxt "@action:button"
-#~ msgid "Delete"
 #~ msgstr "Dileu"
 
 #, fuzzy
