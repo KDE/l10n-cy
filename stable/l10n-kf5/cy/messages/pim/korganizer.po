@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-03-12 03:37+0100\n"
+"POT-Creation-Date: 2020-03-18 08:52+0100\n"
 "PO-Revision-Date: 2004-02-25 13:53+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -545,13 +545,11 @@ msgid "Configure the view"
 msgstr "Ffurfweddu &Dyddiad && Amser..."
 
 #: actionmanager.cpp:552 actionmanager.cpp:1301 actionmanager.cpp:1337
-#: koeventpopupmenu.cpp:55
 #, kde-format
 msgid "&Show"
 msgstr "&Dangos"
 
 #: actionmanager.cpp:557 actionmanager.cpp:1304 actionmanager.cpp:1338
-#: koeventpopupmenu.cpp:58
 #, kde-format
 msgid "&Edit..."
 msgstr "&Golygu..."
@@ -1607,32 +1605,37 @@ msgstr "&Teitl:"
 msgid "Text:"
 msgstr "Tefet"
 
-#: dialog/searchdialog.cpp:54
+#: dialog/searchdialog.cpp:55
 #, fuzzy, kde-format
 #| msgid "New Calendar"
 msgctxt "@title:window"
 msgid "Search Calendar"
 msgstr "Calendr Newydd"
 
-#: dialog/searchdialog.cpp:85
+#: dialog/searchdialog.cpp:86
 #, fuzzy, kde-format
-msgctxt "search in calendar"
+msgctxt "@action:button search in calendar"
 msgid "&Search"
 msgstr "Chwilio Mewn"
 
-#: dialog/searchdialog.cpp:87
-#, kde-format
-msgid "Start searching"
-msgstr ""
+#: dialog/searchdialog.cpp:88
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "Start the search"
+msgstr "Dyddiad dechrau:"
 
-#: dialog/searchdialog.cpp:90
+#: dialog/searchdialog.cpp:91
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Press this button to start the search."
 msgstr ""
 
-#: dialog/searchdialog.cpp:131
-#, kde-format
+#: dialog/searchdialog.cpp:151
+#, fuzzy, kde-format
+#| msgid ""
+#| "Invalid search expression, cannot perform the search. Please enter a "
+#| "search expression using the wildcard characters '*' and '?' where needed."
+msgctxt "@info"
 msgid ""
 "Invalid search expression, cannot perform the search. Please enter a search "
 "expression using the wildcard characters '*' and '?' where needed."
@@ -1640,20 +1643,23 @@ msgstr ""
 "Mynegiad chilio annilys, methu gwneud y chwiliad.  Mewnosodwch fynegiad "
 "chwilio gan ddefnyddio'r nodau-chwilio '*' a '?' lle bo angen."
 
-#: dialog/searchdialog.cpp:143
+#: dialog/searchdialog.cpp:163
 #, fuzzy, kde-format
 #| msgid "No events were found matching your search expression."
+msgctxt "@info"
 msgid "No items were found that match your search pattern."
 msgstr "Ni chanfuwyd digwyddiadau sy'n cydweddu eich mynediad chwilio."
 
-#: dialog/searchdialog.cpp:144
+#: dialog/searchdialog.cpp:164
 #, fuzzy, kde-format
 #| msgid "Search In"
+msgctxt "@title:window"
 msgid "Search Results"
 msgstr "Chwilio Mewn"
 
-#: dialog/searchdialog.cpp:147
+#: dialog/searchdialog.cpp:167
 #, fuzzy, kde-format
+msgctxt "@label"
 msgid "%1 item"
 msgid_plural "%1 items"
 msgstr[0] "1 munud"
@@ -1852,77 +1858,119 @@ msgstr "&Ychwanegu..."
 msgid "&Cancel"
 msgstr "&Newid"
 
-#: koeventpopupmenu.cpp:61
+#: koeventpopupmenu.cpp:69
 #, fuzzy, kde-format
-msgid "&Print..."
-msgstr "&Golygu..."
-
-#: koeventpopupmenu.cpp:64
-#, fuzzy, kde-format
-msgid "Print Previe&w..."
-msgstr "&Golygu..."
-
-#: koeventpopupmenu.cpp:70
-#, fuzzy, kde-format
-msgctxt "cut this event"
-msgid "C&ut"
-msgstr "Chukat"
+#| msgid "&Show"
+msgctxt "@action:inmenu"
+msgid "&Show"
+msgstr "&Dangos"
 
 #: koeventpopupmenu.cpp:73
 #, fuzzy, kde-format
-msgctxt "copy this event"
-msgid "&Copy"
-msgstr "&Copïo I"
+#| msgid "&Edit..."
+msgctxt "@action:inmenu"
+msgid "&Edit..."
+msgstr "&Golygu..."
 
 #: koeventpopupmenu.cpp:77
 #, fuzzy, kde-format
-#| msgid "&Date:"
-msgid "&Paste"
-msgstr "&Dyddiad:"
-
-#: koeventpopupmenu.cpp:80
-#, fuzzy, kde-format
-msgctxt "delete this incidence"
+msgctxt "@action:inmenu delete this incidence"
 msgid "&Delete"
 msgstr "Dileu %1"
 
-#: koeventpopupmenu.cpp:85
+#: koeventpopupmenu.cpp:83
 #, fuzzy, kde-format
-msgid "Create To-do"
+msgctxt "@action:inmenu"
+msgid "&Print..."
+msgstr "&Golygu..."
+
+#: koeventpopupmenu.cpp:87
+#, fuzzy, kde-format
+msgctxt "@action:inmenu"
+msgid "Print Previe&w..."
+msgstr "&Golygu..."
+
+#: koeventpopupmenu.cpp:109
+#, fuzzy, kde-format
+msgctxt "@action:inmenu cut this incidence"
+msgid "C&ut"
+msgstr "Chukat"
+
+#: koeventpopupmenu.cpp:112
+#, fuzzy, kde-format
+msgctxt "@action:inmenu copy this incidence"
+msgid "&Copy"
+msgstr "&Copïo I"
+
+#: koeventpopupmenu.cpp:115
+#, fuzzy, kde-format
+#| msgid "&Date:"
+msgctxt "@action:inmenu"
+msgid "&Paste"
+msgstr "&Dyddiad:"
+
+#: koeventpopupmenu.cpp:124
+#, fuzzy, kde-format
+msgctxt "@action:inmenu"
+msgid "Create To-do from Event"
 msgstr "Cliciwch i ychwanegu I-Wneud newydd"
 
-#: koeventpopupmenu.cpp:91
+#: koeventpopupmenu.cpp:128
 #, fuzzy, kde-format
-msgid "Create Event"
+msgctxt "@action:inmenu"
+msgid "Create Note for Event"
 msgstr "Cliciwch i ychwanegu I-Wneud newydd"
 
-#: koeventpopupmenu.cpp:97
-#, fuzzy, kde-format
-msgid "Create Note"
-msgstr "Cliciwch i ychwanegu I-Wneud newydd"
-
-#: koeventpopupmenu.cpp:103
+#: koeventpopupmenu.cpp:137
 #, fuzzy, kde-format
 #| msgctxt "delete completed to-dos"
 #| msgid "Pur&ge Completed"
+msgctxt "@action:inmenu"
 msgid "Togg&le To-do Completed"
 msgstr "&Carthiad wedi'i Gwblhau"
 
-#: koeventpopupmenu.cpp:106
+#: koeventpopupmenu.cpp:141
 #, fuzzy, kde-format
+msgctxt "@action:inmenu"
+msgid "Create Event from To-do"
+msgstr "Cliciwch i ychwanegu I-Wneud newydd"
+
+#: koeventpopupmenu.cpp:145
+#, fuzzy, kde-format
+msgctxt "@action:inmenu"
+msgid "Create Note for To-do"
+msgstr "Cliciwch i ychwanegu I-Wneud newydd"
+
+#: koeventpopupmenu.cpp:154
+#, fuzzy, kde-format
+msgctxt "@action:inmenu"
 msgid "&Toggle Reminder"
 msgstr "&Atgof:"
 
-#: koeventpopupmenu.cpp:110
+#: koeventpopupmenu.cpp:163
 #, fuzzy, kde-format
+msgctxt "@action:inmenu"
 msgid "&Dissociate From Recurrence..."
 msgstr "Rhestri digwyddiadau'r diwrnod cyfredol"
 
-#: koeventpopupmenu.cpp:116
+#: koeventpopupmenu.cpp:172
 #, fuzzy, kde-format
 #| msgid "&iCalendar..."
-msgid "Send as iCalendar..."
+msgctxt "@action:inmenu"
+msgid "Email as iCalendar..."
 msgstr "&iCalendr..."
+
+#: koeventpopupmenu.cpp:224
+#, fuzzy, kde-format
+msgctxt "@action:inmenu"
+msgid "&Toggle Reminder Off"
+msgstr "&Atgof:"
+
+#: koeventpopupmenu.cpp:225
+#, fuzzy, kde-format
+msgctxt "@action:inmenu"
+msgid "&Toggle Reminder On"
+msgstr "&Atgof:"
 
 #: kohelper.cpp:75
 #, fuzzy, kde-format
@@ -5511,6 +5559,20 @@ msgid "%1"
 msgstr "%1"
 
 #, fuzzy
+#~ msgctxt "copy this event"
+#~ msgid "&Copy"
+#~ msgstr "&Copïo I"
+
+#, fuzzy
+#~ msgctxt "delete this incidence"
+#~ msgid "&Delete"
+#~ msgstr "Dileu %1"
+
+#, fuzzy
+#~ msgid "Create Note"
+#~ msgstr "Cliciwch i ychwanegu I-Wneud newydd"
+
+#, fuzzy
 #~| msgid "Go &Forward"
 #~ msgid "searching..."
 #~ msgstr "Mynd &Ymlaen"
@@ -6907,10 +6969,6 @@ msgstr "%1"
 #, fuzzy
 #~ msgid "Print in color"
 #~ msgstr "Argraffu:"
-
-#, fuzzy
-#~ msgid "Start date: "
-#~ msgstr "Dyddiad dechrau:"
 
 #, fuzzy
 #~ msgid "End date: "
