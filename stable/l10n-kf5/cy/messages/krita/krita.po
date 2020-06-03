@@ -33,7 +33,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-06-02 07:51+0200\n"
+"POT-Creation-Date: 2020-06-03 07:51+0200\n"
 "PO-Revision-Date: 2004-07-06 17:18+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -5317,10 +5317,11 @@ msgid "&Layer"
 msgstr "&Haen"
 
 #: krita/krita4.xmlgui:178
-#: plugins/python/scripter/ui_scripter/actions/newaction/newaction.py:32
-#, kde-format
-msgid "New"
-msgstr "Newydd"
+#, fuzzy, kde-format
+#| msgid "&New"
+msgctxt "New layer"
+msgid "&New"
+msgstr "&Newydd"
 
 #: krita/krita4.xmlgui:188
 #, fuzzy, kde-format
@@ -5429,9 +5430,9 @@ msgstr "&Hidlen"
 #. i18n: context: Action (file_new), Actions (File), ActionCollection (Menu)
 #: krita/kritamenu.action:7
 #, fuzzy, kde-format
-msgctxt "action"
-msgid "&New"
-msgstr "&Newydd"
+msgctxt "New document"
+msgid "&New..."
+msgstr "Saeth"
 
 #. i18n: context: Action (file_new), Actions (File), ActionCollection (Menu)
 #: krita/kritamenu.action:9
@@ -7776,7 +7777,7 @@ msgctxt "(qtundo-format)"
 msgid "Clip Shape"
 msgstr "Ton"
 
-#: libs/flake/commands/KoShapeCreateCommand.cpp:66
+#: libs/flake/commands/KoShapeCreateCommand.cpp:63
 #, fuzzy, kde-format
 msgctxt "(qtundo-format)"
 msgid "Create shape"
@@ -7800,7 +7801,7 @@ msgid "Distribute shapes"
 msgstr "Dileu Testun"
 
 #: libs/flake/commands/KoShapeGroupCommand.cpp:80
-#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1093
+#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1094
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Group shapes"
@@ -7903,7 +7904,7 @@ msgid "Unclip Shapes"
 msgstr "Alinio i'r Chwith"
 
 #: libs/flake/commands/KoShapeUngroupCommand.cpp:55
-#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1121
+#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1122
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Ungroup shapes"
@@ -7996,7 +7997,7 @@ msgstr ""
 
 #: libs/flake/KoMarkerCollection.cpp:81
 #: libs/flake/resources/KoSvgSymbolCollectionResource.cpp:132
-#: libs/odf/KoOdfReadStore.cpp:133 libs/ui/flake/kis_shape_layer.cc:536
+#: libs/odf/KoOdfReadStore.cpp:133 libs/ui/flake/kis_shape_layer.cc:531
 #, kde-format
 msgid ""
 "Parsing error in the main document at line %1, column %2\n"
@@ -8504,8 +8505,8 @@ msgstr "Maint"
 #: plugins/tools/basictools/kis_tool_movetooloptionswidget.cpp:64
 #: plugins/tools/basictools/kis_tool_multihand.cpp:461
 #: plugins/tools/basictools/wdgcolorpicker.ui:182
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:265
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:268
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:260
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:263
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:113
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:138
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:246
@@ -8632,6 +8633,7 @@ msgstr "Newidiadau priodweddau"
 
 #: libs/image/commands/kis_node_property_list_command.cpp:151
 #: libs/image/kis_layer_properties_icons.cpp:33
+#: plugins/python/channels2layers/channels2layers.py:90
 #, kde-format
 msgid "Visible"
 msgstr "Gweladwy"
@@ -9000,7 +9002,7 @@ msgctxt "(qtundo-format)"
 msgid "Assign Profile"
 msgstr "ProffiliauÂ :"
 
-#: libs/image/kis_image.cc:2248
+#: libs/image/kis_image.cc:2269
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Crop Selections"
@@ -9013,8 +9015,8 @@ msgid "Content"
 msgstr "Cyferbyniant"
 
 #: libs/image/kis_keyframe_channel.cpp:31
-#: libs/ui/tool/kis_selection_tool_helper.cpp:368
-#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1674
+#: libs/ui/tool/kis_selection_tool_helper.cpp:376
+#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1685
 #, fuzzy, kde-format
 msgid "Transform"
 msgstr "Trawsffurfio"
@@ -9305,12 +9307,12 @@ msgstr "Ail-adrodd: "
 msgid "Response Time:"
 msgstr "Dadleniad:"
 
-#: libs/image/krita_utils.cpp:362
+#: libs/image/krita_utils.cpp:363
 #, fuzzy, kde-format
 msgid "off"
 msgstr "&Addasiedig :"
 
-#: libs/image/krita_utils.cpp:362
+#: libs/image/krita_utils.cpp:363
 #, fuzzy, kde-format
 msgid "on"
 msgstr "Dim"
@@ -9661,7 +9663,7 @@ msgctxt "description of a file type"
 msgid "JP2 Image"
 msgstr "Delwedd"
 
-#: libs/libkis/Document.cpp:903 libs/ui/KisMainWindow.cpp:1977
+#: libs/libkis/Document.cpp:919 libs/ui/KisMainWindow.cpp:1977
 #, fuzzy, kde-format
 msgid "Import frames"
 msgstr "Mewnforio Delwedd"
@@ -9757,11 +9759,12 @@ msgstr "Maint y Ddelwedd"
 #: plugins/extensions/metadataeditor/editors/exif.ui:464
 #: plugins/extensions/metadataeditor/editors/exif.ui:569
 #: plugins/extensions/metadataeditor/editors/exif.ui:708
+#: plugins/python/channels2layers/channels2layers.py:865
 #, fuzzy, kde-format
 msgid "Unknown"
 msgstr "Anhysbys"
 
-#: libs/odf/KoOdfReadStore.cpp:102 libs/ui/flake/kis_shape_layer.cc:582
+#: libs/odf/KoOdfReadStore.cpp:102 libs/ui/flake/kis_shape_layer.cc:577
 #, kde-format
 msgid "No store backend"
 msgstr ""
@@ -10129,6 +10132,7 @@ msgstr ""
 #: plugins/color/lcms2engine/colorspaces/rgb_u16/RgbU16ColorSpace.cpp:35
 #: plugins/color/lcms2engine/colorspaces/rgb_u8/RgbU8ColorSpace.cpp:41
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:348
+#: plugins/python/channels2layers/channels2layers.py:1386
 #, kde-format
 msgid "Blue"
 msgstr "Glas"
@@ -10144,6 +10148,7 @@ msgstr "Glas"
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:109
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:231
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:402
+#: plugins/python/channels2layers/channels2layers.py:1384
 #, kde-format
 msgid "Green"
 msgstr "Gwyrdd"
@@ -10153,6 +10158,7 @@ msgstr "Gwyrdd"
 #: plugins/color/lcms2engine/colorspaces/rgb_f32/RgbF32ColorSpace.cpp:42
 #: plugins/color/lcms2engine/colorspaces/rgb_u16/RgbU16ColorSpace.cpp:37
 #: plugins/color/lcms2engine/colorspaces/rgb_u8/RgbU8ColorSpace.cpp:43
+#: plugins/python/channels2layers/channels2layers.py:1382
 #, kde-format
 msgid "Red"
 msgstr "Coch"
@@ -11239,82 +11245,82 @@ msgstr "di-deitl-1"
 msgid "SVG Gradient"
 msgstr ""
 
-#: libs/ui/actions/kis_selection_action_factories.cpp:143
+#: libs/ui/actions/kis_selection_action_factories.cpp:144
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Select All"
 msgstr "&Dewis Popeth"
 
-#: libs/ui/actions/kis_selection_action_factories.cpp:217
+#: libs/ui/actions/kis_selection_action_factories.cpp:218
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Flood Fill Layer"
 msgstr "&Llenwi Offer"
 
-#: libs/ui/actions/kis_selection_action_factories.cpp:298
+#: libs/ui/actions/kis_selection_action_factories.cpp:299
 #, kde-format
 msgctxt "floating message when cannot copy from a node"
 msgid "Cannot copy pixels from this type of layer "
 msgstr ""
 
-#: libs/ui/actions/kis_selection_action_factories.cpp:307
+#: libs/ui/actions/kis_selection_action_factories.cpp:308
 #, kde-format
 msgctxt "floating message when copying empty selection"
 msgid "Selection is empty: no pixels were copied "
 msgstr ""
 
-#: libs/ui/actions/kis_selection_action_factories.cpp:363
+#: libs/ui/actions/kis_selection_action_factories.cpp:364
 #: plugins/flake/textshape/TextTool.cpp:1136
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Cut"
 msgstr "&Addasiedig :"
 
-#: libs/ui/actions/kis_selection_action_factories.cpp:364
+#: libs/ui/actions/kis_selection_action_factories.cpp:365
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Copy"
 msgstr "Copio gwyrdd"
 
-#: libs/ui/actions/kis_selection_action_factories.cpp:390
+#: libs/ui/actions/kis_selection_action_factories.cpp:391
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Copy Merged"
 msgstr "Copio coch"
 
-#: libs/ui/actions/kis_selection_action_factories.cpp:407
+#: libs/ui/actions/kis_selection_action_factories.cpp:408
 #, kde-format
 msgctxt "floating message"
 msgid "Selection is already in a vector format "
 msgstr ""
 
-#: libs/ui/actions/kis_selection_action_factories.cpp:432
-#: libs/ui/actions/kis_selection_action_factories.cpp:452
+#: libs/ui/actions/kis_selection_action_factories.cpp:433
+#: libs/ui/actions/kis_selection_action_factories.cpp:453
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Convert to Vector Selection"
 msgstr "Dim detholiad"
 
-#: libs/ui/actions/kis_selection_action_factories.cpp:447
+#: libs/ui/actions/kis_selection_action_factories.cpp:448
 #, kde-format
 msgctxt "floating message"
 msgid "Selection is already in a raster format "
 msgstr ""
 
-#: libs/ui/actions/kis_selection_action_factories.cpp:493
+#: libs/ui/actions/kis_selection_action_factories.cpp:494
 #, fuzzy, kde-format
 msgctxt "floating message"
 msgid "The shape already belongs to a selection"
 msgstr "Erfyn &Dileu"
 
-#: libs/ui/actions/kis_selection_action_factories.cpp:499
+#: libs/ui/actions/kis_selection_action_factories.cpp:500
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Convert shapes to vector selection"
 msgstr "Dim detholiad"
 
-#: libs/ui/actions/kis_selection_action_factories.cpp:551
-#: libs/ui/actions/kis_selection_action_factories.cpp:611
+#: libs/ui/actions/kis_selection_action_factories.cpp:553
+#: libs/ui/actions/kis_selection_action_factories.cpp:613
 #: plugins/tools/tool_polyline/kis_tool_polyline.cc:61
 #, fuzzy
 msgctxt "(qtundo-format)"
@@ -12705,7 +12711,7 @@ msgstr "&Enw:"
 msgid "Permanently delete session %1?"
 msgstr ""
 
-#: libs/ui/flake/kis_shape_controller.cpp:200
+#: libs/ui/flake/kis_shape_controller.cpp:203
 #, fuzzy, kde-format
 msgid "Vector Layer %1"
 msgstr "Haen %1"
@@ -14594,6 +14600,7 @@ msgstr "Mewnforio Delwedd"
 #: libs/ui/forms/wdgimportimagesequence.ui:40
 #: libs/ui/input/config/kis_edit_profiles_dialog.ui:40
 #: libs/widgetutils/xmlgui/kswitchlanguagedialog_p.cpp:403
+#: plugins/python/channels2layers/channels2layers.py:92
 #: plugins/tools/tool_lazybrush/kis_tool_lazy_brush_options_widget.ui:155
 #, fuzzy, kde-format
 msgid "Remove"
@@ -15661,10 +15668,10 @@ msgstr "Dimensiynau mewn &Picseli:"
 
 #. i18n: ectx: property (text), widget (QPushButton, btnNew)
 #: libs/ui/forms/wdgsessionmanager.ui:30
-#: libs/widgetutils/xmlgui/kshortcutschemeseditor.cpp:72
-#, kde-format
+#, fuzzy, kde-format
+msgctxt "New session"
 msgid "New..."
-msgstr ""
+msgstr "Saeth"
 
 #. i18n: ectx: property (text), widget (QPushButton, btnRename)
 #: libs/ui/forms/wdgsessionmanager.ui:37
@@ -17338,6 +17345,7 @@ msgid ""
 msgstr ""
 
 #: libs/ui/kis_statusbar.cc:375
+#: plugins/python/channels2layers/channels2layers.py:91
 #, kde-format
 msgid "Hidden"
 msgstr ""
@@ -19594,9 +19602,10 @@ msgstr "Main"
 
 #. i18n: ectx: property (text), widget (QPushButton, btnNewStyle)
 #: libs/ui/layerstyles/wdglayerstyles.ui:152
-#, kde-format
-msgid "Ne&w..."
-msgstr ""
+#, fuzzy, kde-format
+msgctxt "New layer style"
+msgid "&New..."
+msgstr "Saeth"
 
 #. i18n: ectx: property (text), widget (QPushButton, btnLoadStyle)
 #: libs/ui/layerstyles/wdglayerstyles.ui:159
@@ -19774,7 +19783,7 @@ msgid ""
 "selection instead"
 msgstr ""
 
-#: libs/ui/tool/kis_selection_tool_helper.cpp:344
+#: libs/ui/tool/kis_selection_tool_helper.cpp:352
 #, fuzzy, kde-format
 msgid "Selection Actions"
 msgstr "Llenwi Detholiad."
@@ -20558,13 +20567,13 @@ msgstr "Detholiad"
 msgid "Select Luminosity Blending Mode"
 msgstr "Detholiad"
 
-#: libs/ui/widgets/kis_color_filter_combo.cpp:210
+#: libs/ui/widgets/kis_color_filter_combo.cpp:227
 #, kde-format
 msgctxt "combo box: show all layers"
 msgid "All"
 msgstr ""
 
-#: libs/ui/widgets/kis_color_filter_combo.cpp:220
+#: libs/ui/widgets/kis_color_filter_combo.cpp:237
 #, fuzzy, kde-format
 msgctxt "combo box: select all layers without a label"
 msgid "No Label"
@@ -20827,69 +20836,69 @@ msgstr ""
 msgid "No Preview for this engine"
 msgstr ""
 
-#: libs/ui/widgets/kis_selection_options.cc:164
+#: libs/ui/widgets/kis_selection_options.cc:165
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Replace"
 msgstr "&Amnewid:"
 
-#: libs/ui/widgets/kis_selection_options.cc:165
+#: libs/ui/widgets/kis_selection_options.cc:166
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Replace (%1)"
 msgstr "&Amnewid:"
 
-#: libs/ui/widgets/kis_selection_options.cc:171
+#: libs/ui/widgets/kis_selection_options.cc:172
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Add"
 msgstr "Ychw&anegu..."
 
-#: libs/ui/widgets/kis_selection_options.cc:172
+#: libs/ui/widgets/kis_selection_options.cc:173
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Add (%1)"
 msgstr "brwsh"
 
-#: libs/ui/widgets/kis_selection_options.cc:178
+#: libs/ui/widgets/kis_selection_options.cc:179
 #, fuzzy, kde-format
 #| msgid "Subtract"
 msgctxt "@info:tooltip"
 msgid "Subtract"
 msgstr "Tynnu"
 
-#: libs/ui/widgets/kis_selection_options.cc:179
+#: libs/ui/widgets/kis_selection_options.cc:180
 #, fuzzy, kde-format
 #| msgid "Subtract"
 msgctxt "@info:tooltip"
 msgid "Subtract (%1)"
 msgstr "Tynnu"
 
-#: libs/ui/widgets/kis_selection_options.cc:186
+#: libs/ui/widgets/kis_selection_options.cc:187
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Intersect"
 msgstr "Gwrthdroi"
 
-#: libs/ui/widgets/kis_selection_options.cc:187
+#: libs/ui/widgets/kis_selection_options.cc:188
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Intersect (%1)"
 msgstr "Gwrthdroi"
 
-#: libs/ui/widgets/kis_selection_options.cc:195
+#: libs/ui/widgets/kis_selection_options.cc:196
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Symmetric Difference"
 msgstr "Hoffterau"
 
-#: libs/ui/widgets/kis_selection_options.cc:196
+#: libs/ui/widgets/kis_selection_options.cc:197
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Symmetric Difference (%1)"
 msgstr ""
 
-#: libs/ui/widgets/kis_selection_options.cc:260
+#: libs/ui/widgets/kis_selection_options.cc:261
 #, fuzzy, kde-format
 msgctxt ""
 "Option in selection tool: take only the current layer into account when "
@@ -20897,7 +20906,7 @@ msgctxt ""
 msgid "Current Layer"
 msgstr "Trawsnewid yr haen gyfredol"
 
-#: libs/ui/widgets/kis_selection_options.cc:264
+#: libs/ui/widgets/kis_selection_options.cc:265
 #, fuzzy, kde-format
 msgctxt ""
 "Option in selection tool: take all layers (merged) into account when "
@@ -20905,7 +20914,7 @@ msgctxt ""
 msgid "All Layers"
 msgstr "Hidlenni"
 
-#: libs/ui/widgets/kis_selection_options.cc:267
+#: libs/ui/widgets/kis_selection_options.cc:268
 #, fuzzy, kde-format
 msgctxt ""
 "Option in selection tool: take all layers that were marked with specific "
@@ -23245,6 +23254,12 @@ msgstr "Cadarnhau Cadw"
 msgid "Shortcut Schemes:"
 msgstr "Enw'r tudnod:"
 
+#: libs/widgetutils/xmlgui/kshortcutschemeseditor.cpp:72
+#, fuzzy, kde-format
+msgctxt "New shortcut scheme"
+msgid "New..."
+msgstr "Saeth"
+
 #: libs/widgetutils/xmlgui/kshortcutschemeseditor.cpp:78
 #, fuzzy, kde-format
 msgid "Save/Load"
@@ -23709,6 +23724,7 @@ msgstr "Alffa"
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:143
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:245
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:368
+#: plugins/python/channels2layers/channels2layers.py:1374
 #, kde-format
 msgid "Cyan"
 msgstr "Gwyrddlas"
@@ -23722,6 +23738,7 @@ msgstr "Gwyrddlas"
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:92
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:269
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:426
+#: plugins/python/channels2layers/channels2layers.py:1376
 #, fuzzy, kde-format
 msgid "Magenta"
 msgstr "Magentau"
@@ -23735,6 +23752,7 @@ msgstr "Magentau"
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:119
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:279
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:378
+#: plugins/python/channels2layers/channels2layers.py:1378
 #, kde-format
 msgid "Yellow"
 msgstr "Melyn"
@@ -23742,6 +23760,7 @@ msgstr "Melyn"
 #: plugins/color/lcms2engine/colorspaces/cmyk_f32/CmykF32ColorSpace.cpp:42
 #: plugins/color/lcms2engine/colorspaces/cmyk_u16/CmykU16ColorSpace.cpp:36
 #: plugins/color/lcms2engine/colorspaces/cmyk_u8/CmykU8ColorSpace.cpp:37
+#: plugins/python/channels2layers/channels2layers.py:1380
 #, kde-format
 msgid "Black"
 msgstr "Du"
@@ -24665,13 +24684,13 @@ msgstr "Tynnu Haen"
 msgid "Timeline"
 msgstr "picseli/modfedd"
 
-#: plugins/dockers/animation/timeline_frames_model.cpp:676
+#: plugins/dockers/animation/timeline_frames_model.cpp:670
 #, kde-format
 msgid "Dropped frames are not available in this Krita instance"
 msgstr ""
 
-#: plugins/dockers/animation/timeline_frames_model.cpp:843
-#: plugins/dockers/animation/timeline_frames_model.cpp:891
+#: plugins/dockers/animation/timeline_frames_model.cpp:837
+#: plugins/dockers/animation/timeline_frames_model.cpp:885
 #, fuzzy, kde-format
 msgctxt "(qtundo-format)"
 msgid "Insert frame"
@@ -29752,6 +29771,7 @@ msgstr "CroesLetraws"
 
 #. i18n: ectx: property (title), widget (QGroupBox, buttonGroup1)
 #: plugins/filters/dodgeburn/DodgeBurnConfigurationBaseWidget.ui:17
+#: plugins/python/channels2layers/channels2layers.py:1088
 #, kde-format
 msgid "Mode"
 msgstr "Modd"
@@ -37637,6 +37657,96 @@ msgstr "Cadw'r Ddogfen Fel"
 msgid "Assign Profile to Image"
 msgstr "ProffiliauÂ :"
 
+#: plugins/python/channels2layers/channels2layers.py:70
+#: plugins/python/channels2layers/channels2layers.py:71
+#, fuzzy
+msgid "Channels to layers"
+msgstr "Hidlo"
+
+#: plugins/python/channels2layers/channels2layers.py:79
+#, fuzzy
+#| msgid "Colors"
+msgid "RGB Colors"
+msgstr "Lliwiau"
+
+#: plugins/python/channels2layers/channels2layers.py:80
+#, fuzzy
+#| msgid "Colors"
+msgid "CMY Colors"
+msgstr "Lliwiau"
+
+#: plugins/python/channels2layers/channels2layers.py:81
+#, fuzzy
+#| msgid "Colors"
+msgid "CMYK Colors"
+msgstr "Lliwiau"
+
+#: plugins/python/channels2layers/channels2layers.py:82
+#, fuzzy
+#| msgid "Grayscale"
+msgid "RGB Grayscale levels"
+msgstr "Graddlwyd"
+
+#: plugins/python/channels2layers/channels2layers.py:83
+#, fuzzy
+#| msgid "Grayscale"
+msgid "CMY Grayscale levels"
+msgstr "Graddlwyd"
+
+#: plugins/python/channels2layers/channels2layers.py:84
+msgid "CMYK Grayscale levels"
+msgstr ""
+
+#: plugins/python/channels2layers/channels2layers.py:89
+msgid "Unchanged"
+msgstr ""
+
+#: plugins/python/channels2layers/channels2layers.py:1024
+#, fuzzy
+msgid "Processing layer"
+msgstr "Dimensiynau mewn &Picseli:"
+
+#: plugins/python/channels2layers/channels2layers.py:1054
+#, fuzzy
+#| msgid "Enter group name:"
+msgid "New layer group name"
+msgstr "Rhowch enw grŵp:"
+
+#: plugins/python/channels2layers/channels2layers.py:1059
+#, fuzzy
+msgid "New layers color name"
+msgstr "M&ewnosod Delwedd fel Haen..."
+
+#: plugins/python/channels2layers/channels2layers.py:1070
+#, fuzzy
+msgid "Original layer"
+msgstr "Graddio Haen..."
+
+#: plugins/python/channels2layers/channels2layers.py:1129
+#: plugins/tools/karbonplugins/tools/KarbonPatternOptionsWidget.cpp:35
+#, kde-format
+msgid "Original"
+msgstr "Gwreiddiol"
+
+#: plugins/python/channels2layers/channels2layers.py:1142
+msgid "<i>Cyan</i>"
+msgstr ""
+
+#: plugins/python/channels2layers/channels2layers.py:1154
+#, fuzzy
+msgid "<i>Magenta</i>"
+msgstr "Magentau"
+
+#: plugins/python/channels2layers/channels2layers.py:1166
+#, fuzzy
+#| msgid "Yellow"
+msgid "<i>Yellow</i>"
+msgstr "Melyn"
+
+#: plugins/python/channels2layers/channels2layers.py:1178
+msgid "<i>Black</i>"
+msgstr ""
+
 #: plugins/python/colorspace/colorspace.py:30
 msgid "Plugin to change color space of selected documents."
 msgstr ""
@@ -39713,6 +39823,10 @@ msgstr ""
 msgid "Debug Ctrl+D"
 msgstr ""
 
+#: plugins/python/scripter/ui_scripter/actions/newaction/newaction.py:32
+msgid "New"
+msgstr "Newydd"
+
 #: plugins/python/scripter/ui_scripter/actions/newaction/newaction.py:43
 #, fuzzy
 msgid "The document has been modified."
@@ -40239,7 +40353,7 @@ msgid "Grow selection: "
 msgstr "Dim detholiad"
 
 #: plugins/tools/basictools/kis_tool_fill.cc:247
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:245
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:240
 #, fuzzy, kde-format
 msgid "Feathering radius: "
 msgstr "Dewisydd Lliw"
@@ -40458,13 +40572,13 @@ msgstr "Chwith:"
 msgid "Measure Tool"
 msgstr "Tarddiad"
 
-#: plugins/tools/basictools/kis_tool_move.cc:246
+#: plugins/tools/basictools/kis_tool_move.cc:286
 #, kde-format
 msgctxt "floating message in move tool"
 msgid "X: %1 px, Y: %2 px"
 msgstr ""
 
-#: plugins/tools/basictools/kis_tool_move.h:191
+#: plugins/tools/basictools/kis_tool_move.h:194
 #, fuzzy, kde-format
 msgid "Move Tool"
 msgstr "Symud Detholiad"
@@ -40545,7 +40659,7 @@ msgctxt "action"
 msgid "Pencil Tool"
 msgstr "Erfyn Hirgylch"
 
-#: plugins/tools/basictools/strokes/move_selection_stroke_strategy.cpp:35
+#: plugins/tools/basictools/strokes/move_selection_stroke_strategy.cpp:36
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Move Selection"
@@ -40885,104 +40999,104 @@ msgstr "Dewis &Cyfagos"
 msgid "Connect shapes"
 msgstr "Casglu Gwrthrychau"
 
-#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:606
+#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:607
 #, kde-format
 msgid ""
 "Left click rotates around center, right click around highlighted position."
 msgstr ""
 
-#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:609
+#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:610
 #, fuzzy, kde-format
 msgid "Click and drag to shear selection."
 msgstr "<i>Cliciwch a llusgo</i> i ddewis fector y patrwm.</qt>"
 
-#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:614
+#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:615
 #, fuzzy, kde-format
 msgid "Click and drag to resize selection."
 msgstr "Newid Maint y Ddelwedd i'r Haen Gyfredol"
 
-#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:649
+#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:650
 #, fuzzy, kde-format
 msgid "Click and drag to move selection."
 msgstr "<i>Cliciwch a llusgo</i> i symud pwyntiau.<br>"
 
-#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:653
+#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:654
 #, kde-format
 msgid ""
 "Click and drag to resize selection. Middle click to set highlighted position."
 msgstr ""
 
-#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:720
+#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:721
 #, kde-format
 msgid "This tool only works on vector layers. You probably want the move tool."
 msgstr ""
 
-#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1155
+#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1156
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Rotate Object 90° CW"
 msgstr "Ailenwi Delwedd"
 
-#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1159
+#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1160
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Rotate Object 90° CCW"
 msgstr "Ailenwi Delwedd"
 
-#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1163
+#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1164
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Rotate Object 180°"
 msgstr "&Gwaredu Haen"
 
-#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1167
+#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1168
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Mirror Object Horizontally"
 msgstr "Croesrwygo Llorweddol "
 
-#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1171
+#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1172
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Mirror Object Vertically"
 msgstr "Croesrwygo Fertigol"
 
-#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1175
+#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1176
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Reset Object Transformations"
 msgstr "Erfyn Trawsffurfio"
 
-#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1241
+#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1250
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Unite Shapes"
 msgstr "Alinio i'r Chwith"
 
-#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1255
+#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1264
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Intersect Shapes"
 msgstr "Gwrthdroi"
 
-#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1265
+#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1274
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Subtract Shapes"
 msgstr "brwsh"
 
-#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1308
+#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1319
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Split Shapes"
 msgstr "brwsh"
 
-#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1671
+#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1682
 #, fuzzy, kde-format
 msgid "Vector Shape Actions"
 msgstr "Dim detholiad"
 
-#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1690
+#: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1701
 #, fuzzy, kde-format
 msgid "Logical Operations"
 msgstr "Gweithred Booleaidd"
@@ -41730,11 +41844,6 @@ msgstr "Effeithiau"
 msgid "Filter effects editing"
 msgstr "Erfyn Patrwm"
 
-#: plugins/tools/karbonplugins/tools/KarbonPatternOptionsWidget.cpp:35
-#, kde-format
-msgid "Original"
-msgstr "Gwreiddiol"
-
 #: plugins/tools/karbonplugins/tools/KarbonPatternOptionsWidget.cpp:36
 #, fuzzy, kde-format
 msgid "Tiled"
@@ -41815,19 +41924,19 @@ msgid "Contiguous Area Selection"
 msgstr "Dewis &Cyfagos"
 
 #: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:107
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:179
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:174
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Select Contiguous Area"
 msgstr "brwsh"
 
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:224
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:219
 #: plugins/tools/selectiontools/kis_tool_select_similar.cc:166
 #, kde-format
 msgid "Fuzziness: "
 msgstr "Niwlaiddrwydd: "
 
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:235
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:230
 #, fuzzy, kde-format
 msgid "Grow/shrink selection: "
 msgstr "Dim detholiad"
@@ -43258,6 +43367,11 @@ msgstr ""
 #, kde-format
 msgid "Work Recursively"
 msgstr ""
+
+#, fuzzy
+#~ msgctxt "action"
+#~ msgid "&New"
+#~ msgstr "&Newydd"
 
 #, fuzzy
 #~| msgid ""
@@ -56167,11 +56281,6 @@ msgstr ""
 #~ msgstr "Gweladwy"
 
 #, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Processing"
-#~ msgstr "Dimensiynau mewn &Picseli:"
-
-#, fuzzy
 #~| msgid "Unnamed"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Unnamed"
@@ -57035,12 +57144,6 @@ msgstr ""
 #~ msgctxt "(qtundo-format)"
 #~ msgid "CMYK"
 #~ msgstr "CMYK"
-
-#, fuzzy
-#~| msgid "Grayscale"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Grayscale"
-#~ msgstr "Graddlwyd"
 
 #, fuzzy
 #~ msgctxt "(qtundo-format)"
@@ -60587,11 +60690,6 @@ msgstr ""
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Shortcut Schemes:"
 #~ msgstr "Enw'r tudnod:"
-
-#, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "New..."
-#~ msgstr "Saeth"
 
 #, fuzzy
 #~ msgctxt "(qtundo-format)"
