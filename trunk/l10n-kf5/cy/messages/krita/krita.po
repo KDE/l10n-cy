@@ -33,7 +33,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-03-25 02:15+0100\n"
+"POT-Creation-Date: 2021-03-26 02:14+0100\n"
 "PO-Revision-Date: 2004-07-06 17:18+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -6773,14 +6773,18 @@ msgid "Active Author Profile"
 msgstr "Priodweddau Haen"
 
 #. i18n: context: Action (reset_configurations), Actions (Settings), ActionCollection (Menu)
-#. i18n: context: Action (reset_configurations), Actions (Settings), ActionCollection (Menu)
-#. i18n: context: Action (reset_configurations), Actions (Settings), ActionCollection (Menu)
-#. i18n: context: Action (reset_configurations), Actions (Settings), ActionCollection (Menu)
-#: krita/kritamenu.action:1695 krita/kritamenu.action:1697
+#: krita/kritamenu.action:1695
 #, fuzzy, kde-format
 msgctxt "action"
-msgid "Reset Krita Configurations"
-msgstr "Erfyn Trawsffurfio"
+msgid "Reset All Settings"
+msgstr "&Dewis Popeth"
+
+#. i18n: context: Action (reset_configurations), Actions (Settings), ActionCollection (Menu)
+#: krita/kritamenu.action:1697
+#, fuzzy, kde-format
+msgctxt "action"
+msgid "Reset All Settings to Default"
+msgstr "Trawsnewid yr haen gyfredol"
 
 #. i18n: context: Action (options_configure_keybinding), Actions (Settings), ActionCollection (Menu)
 #: krita/kritamenu.action:1705
@@ -9646,7 +9650,7 @@ msgid "Behind"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOpCopy2.h:32
-#: libs/ui/widgets/kis_paintop_presets_save.cpp:73
+#: libs/ui/dialogs/KisDlgSavePreset.cpp:74
 #: plugins/generators/seexpr/kis_wdg_seexpr_presets_save.cpp:67
 #, fuzzy, kde-format
 msgid "Copy"
@@ -11463,8 +11467,8 @@ msgstr "&Gwaredu Plygell"
 #: plugins/extensions/qmic/QMic.cpp:52 plugins/extensions/qmic/QMic.cpp:78
 #: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:182
 #: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:187
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:238
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:243
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:270
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:275
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:286
 #: plugins/extensions/resourcemanager/resourcemanager.cpp:221
 #: plugins/filters/colorsfilters/kis_multichannel_filter_base.cpp:393
@@ -11501,54 +11505,54 @@ msgstr "Methwyd agor y ffeil i'w gadw"
 msgid "2. The resource location at %1 is not writable."
 msgstr ""
 
-#: libs/resources/KisResourceLocator.cpp:468
+#: libs/resources/KisResourceLocator.cpp:471
 #, fuzzy, kde-format
 msgid "Could not add %1 to the database"
 msgstr "Methwyd ychwanegu haen i ddelwedd."
 
-#: libs/resources/KisResourceLocator.cpp:484
+#: libs/resources/KisResourceLocator.cpp:487
 #, fuzzy, kde-format
 msgid "Could not remove storage %1 from the database"
 msgstr "Methwyd ychwanegu haen i ddelwedd."
 
-#: libs/resources/KisResourceLocator.cpp:499
+#: libs/resources/KisResourceLocator.cpp:502
 #, kde-format
 msgid ""
 "Krita is running for the first time. Initialization will take some time."
 msgstr ""
 
-#: libs/resources/KisResourceLocator.cpp:506
+#: libs/resources/KisResourceLocator.cpp:509
 #, fuzzy, kde-format
 msgid "3. Could not create the resource location at %1."
 msgstr "Methwyd agor y ffeil i'w gadw"
 
-#: libs/resources/KisResourceLocator.cpp:519
-#: libs/resources/KisResourceLocator.cpp:535
+#: libs/resources/KisResourceLocator.cpp:522
+#: libs/resources/KisResourceLocator.cpp:538
 #, fuzzy, kde-format
 msgid "Could not copy resource %1 to %2"
 msgstr "Methwyd ychwanegu haen i ddelwedd."
 
-#: libs/resources/KisResourceLocator.cpp:531
+#: libs/resources/KisResourceLocator.cpp:534
 #, fuzzy, kde-format
 msgid "Installing the resources from bundle %1."
 msgstr "Ffurfweddu..."
 
-#: libs/resources/KisResourceLocator.cpp:553
+#: libs/resources/KisResourceLocator.cpp:556
 #, fuzzy, kde-format
 msgid "Initializing the resources."
 msgstr "&Adnoddau"
 
-#: libs/resources/KisResourceLocator.cpp:567
+#: libs/resources/KisResourceLocator.cpp:570
 #, kde-format
 msgid "Could not add storage %1 to the cache database"
 msgstr ""
 
-#: libs/resources/KisResourceLocator.cpp:588
+#: libs/resources/KisResourceLocator.cpp:591
 #, fuzzy, kde-format
 msgid "Temporary Resources"
 msgstr "Mewnforio Dogfen"
 
-#: libs/resources/KisResourceLocator.cpp:700
+#: libs/resources/KisResourceLocator.cpp:703
 #, fuzzy, kde-format
 #| msgid "Could not add layer to image."
 msgid "Could not synchronize %1 with the database"
@@ -11797,7 +11801,7 @@ msgstr "Mewnforio Delwedd"
 #. i18n: ectx: property (text), widget (QRadioButton, btnAllView)
 #. i18n: ectx: property (text), widget (QPushButton, deleteAllAssistantsButton)
 #. i18n: ectx: property (text), widget (QPushButton, bnDelete)
-#: libs/resources/KisTagModel.cpp:93 libs/resources/KisTagModel.cpp:255
+#: libs/resources/KisTagModel.cpp:100 libs/resources/KisTagModel.cpp:262
 #: libs/ui/widgets/kis_paintop_presets_popup.cpp:616
 #: plugins/assistants/Assistants/AssistantsToolOptions.ui:225
 #: plugins/dockers/storyboarddocker/wdgarrangemenu.ui:70
@@ -11806,17 +11810,17 @@ msgstr "Mewnforio Delwedd"
 msgid "All"
 msgstr ""
 
-#: libs/resources/KisTagModel.cpp:120 libs/resources/KisTagModel.cpp:265
+#: libs/resources/KisTagModel.cpp:127 libs/resources/KisTagModel.cpp:272
 #, fuzzy, kde-format
 msgid "All Untagged"
 msgstr "Delwedd"
 
-#: libs/resources/KisTagModel.cpp:258
+#: libs/resources/KisTagModel.cpp:265
 #, fuzzy, kde-format
 msgid "All Resources"
 msgstr "&Adnoddau"
 
-#: libs/resources/KisTagModel.cpp:268
+#: libs/resources/KisTagModel.cpp:275
 #, fuzzy, kde-format
 msgid "All Untagged Resources"
 msgstr "&Adnoddau"
@@ -12059,8 +12063,8 @@ msgid "<qt>Show the tag box options.</qt>"
 msgstr ""
 
 #: libs/resourcewidgets/KisTagToolButton.cpp:63
-#: libs/resourcewidgets/TagActions.cpp:140
-#: libs/resourcewidgets/TagActions.cpp:159
+#: libs/resourcewidgets/TagActions.cpp:139
+#: libs/resourcewidgets/TagActions.cpp:158
 #, fuzzy, kde-format
 #| msgid "New Image"
 msgid "New tag"
@@ -14456,6 +14460,23 @@ msgstr "cefndir"
 #, fuzzy, kde-format
 msgid "Row count"
 msgstr "cefndir"
+
+#: libs/ui/dialogs/KisDlgSavePreset.cpp:65
+#, fuzzy, kde-format
+msgid "Save New Brush Preset"
+msgstr "&Priodweddau"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgSaveBrushPreset)
+#: libs/ui/dialogs/KisDlgSavePreset.cpp:80
+#: libs/ui/forms/wdgsavebrushpreset.ui:24
+#, fuzzy, kde-format
+msgid "Save Brush Preset"
+msgstr "&Priodweddau"
+
+#: libs/ui/dialogs/KisDlgSavePreset.cpp:128
+#, kde-format
+msgid "Preset Icon Library"
+msgstr ""
 
 #: libs/ui/dialogs/KisRecoverNamedAutosaveDialog.cpp:32
 #, kde-format
@@ -17599,13 +17620,6 @@ msgstr "Sgript"
 msgid "Vertical radius of rectangle corners"
 msgstr ""
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, WdgSaveBrushPreset)
-#: libs/ui/forms/wdgsavebrushpreset.ui:24
-#: libs/ui/widgets/kis_paintop_presets_save.cpp:79
-#, fuzzy, kde-format
-msgid "Save Brush Preset"
-msgstr "&Priodweddau"
-
 #. i18n: ectx: property (text), widget (QLabel, newBrushNameLabel)
 #: libs/ui/forms/wdgsavebrushpreset.ui:35
 #, fuzzy, kde-format
@@ -20579,7 +20593,7 @@ msgstr "Cadw Haen fel Delwedd..."
 
 #: libs/ui/KisMainWindow.cpp:1841
 #: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:177
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:231
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:263
 #, fuzzy, kde-format
 msgid "You don't have any resource bundles enabled."
 msgstr "Methwyd agor y ffeil i'w gadw"
@@ -20594,7 +20608,7 @@ msgstr ""
 
 #: libs/ui/KisMainWindow.cpp:1855
 #: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:187
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:243
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:275
 #, kde-format
 msgid ""
 "\n"
@@ -23137,16 +23151,6 @@ msgctxt "%1 is the name of a brush engine"
 msgid "%1 Engine"
 msgstr "Amrediad Lliw"
 
-#: libs/ui/widgets/kis_paintop_presets_save.cpp:64
-#, fuzzy, kde-format
-msgid "Save New Brush Preset"
-msgstr "&Priodweddau"
-
-#: libs/ui/widgets/kis_paintop_presets_save.cpp:127
-#, kde-format
-msgid "Preset Icon Library"
-msgstr ""
-
 #: libs/ui/widgets/kis_preset_live_preview_view.cpp:170
 #, kde-format
 msgid "No Preview for this engine"
@@ -23535,7 +23539,7 @@ msgstr "Arben"
 #: plugins/filters/asccdl/wdg_asccdl.ui:21
 #: plugins/filters/asccdl/wdg_asccdl.ui:28
 #: plugins/filters/asccdl/wdg_asccdl.ui:49
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:190
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:189
 #, fuzzy, kde-format
 #| msgid "More Green"
 msgid "PushButton"
@@ -28050,7 +28054,7 @@ msgstr "GwyrddGwan"
 #, kde-format
 msgctxt "@tooltip"
 msgid ""
-"Save palette explicitely, will also happen automatically on exiting Krita."
+"Save palette explicitly, will also happen automatically on exiting Krita."
 msgstr ""
 
 #: plugins/dockers/palettedocker/palettedocker_dock.cpp:368
@@ -30962,7 +30966,7 @@ msgid "Create"
 msgstr "Creu"
 
 #: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:147
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:287
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:319
 #, fuzzy, kde-format
 msgctxt ""
 "In bundle manager; press button to deactivate the bundle (remove resources "
@@ -30971,7 +30975,7 @@ msgid "Deactivate"
 msgstr "Tynnu Haen"
 
 #: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:181
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:237
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:269
 #, kde-format
 msgid ""
 "\n"
@@ -30990,26 +30994,26 @@ msgstr ""
 msgid "Select the bundle"
 msgstr "Dewis"
 
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:291
-#, fuzzy, kde-format
-msgctxt ""
-"In bundle manager; press button to activate the bundle (add resources from "
-"the bundle to the available resources)"
-msgid "Activate"
-msgstr "Tynnu Haen"
-
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:340
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:217
 #, kde-format
 msgid "New name for the bundle"
 msgstr ""
 
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:340
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:217
 #, fuzzy, kde-format
 #| msgid "The file %1 does not exist."
 msgid ""
 "The old filename %1 is taken.\n"
 "New name:"
 msgstr "Nid yw'r ffeil %1 yn bodoli!."
+
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:323
+#, fuzzy, kde-format
+msgctxt ""
+"In bundle manager; press button to activate the bundle (add resources from "
+"the bundle to the available resources)"
+msgid "Activate"
+msgstr "Tynnu Haen"
 
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:60
 #, fuzzy, kde-format
@@ -37731,7 +37735,7 @@ msgstr "Sgwâr"
 #. i18n: ectx: property (toolTip), widget (QCheckBox, chkInvert)
 #. i18n: ectx: property (toolTip), widget (QCheckBox, btnAntialiasing)
 #: plugins/paintops/libpaintop/forms/wdgautobrush.ui:109
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:238
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:235
 #, kde-format
 msgid "The border of the brush will be smoothed to avoid aliasing"
 msgstr ""
@@ -38133,39 +38137,39 @@ msgid "Texturing Mode:"
 msgstr "Detholiad"
 
 #. i18n: ectx: property (text), widget (QLabel, lblSpacing_2)
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:180
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:179
 #, fuzzy, kde-format
 msgid "Cutoff"
 msgstr "&Addasiedig :"
 
 #. i18n: ectx: property (text), widget (QLabel, lblNeutralPoint)
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:201
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:199
 #, fuzzy, kde-format
 msgid "Neutral Point"
 msgstr "Targed:"
 
 #. i18n: ectx: property (text), widget (QLabel, lblSpikes)
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:225
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:222
 #, fuzzy, kde-format
 msgid "Horizontal Offset:"
 msgstr "Croesrwygo Llorweddol "
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkInvert)
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:241
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:238
 #, fuzzy, kde-format
 msgid "Invert Pattern"
 msgstr "Dirlawnder"
 
 #. i18n: ectx: property (text), widget (QCheckBox, randomOffsetY)
 #. i18n: ectx: property (text), widget (QCheckBox, randomOffsetX)
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:251
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:280
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:248
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:277
 #, fuzzy, kde-format
 msgid "Random Offset"
 msgstr "Hap"
 
 #. i18n: ectx: property (text), widget (QLabel, lblRandomness)
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:264
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:261
 #, fuzzy, kde-format
 msgid "Vertical Offset:"
 msgstr "Croesrwygo Fertigol"
@@ -45456,6 +45460,11 @@ msgid "Reference Images Tool"
 msgstr "Ailenwi Delwedd"
 
 #, fuzzy
+#~ msgctxt "action"
+#~ msgid "Reset Krita Configurations"
+#~ msgstr "Erfyn Trawsffurfio"
+
+#, fuzzy
 #~ msgid "Resource Folder"
 #~ msgstr "&Gwaredu Plygell"
 
@@ -48402,10 +48411,6 @@ msgstr "Ailenwi Delwedd"
 #, fuzzy
 #~ msgid "Subtract (Shortcut S)"
 #~ msgstr "Byr"
-
-#, fuzzy
-#~ msgid "Reset All Rings"
-#~ msgstr "&Dewis Popeth"
 
 #, fuzzy
 #~ msgid "Reset Selected Ring"
@@ -54135,11 +54140,6 @@ msgstr "Ailenwi Delwedd"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Invert Saturation"
 #~ msgstr "Dirlawnder"
-
-#, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Reset to Default"
-#~ msgstr "Trawsnewid yr haen gyfredol"
 
 #, fuzzy
 #~ msgctxt "(qtundo-format)"
