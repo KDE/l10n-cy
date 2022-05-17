@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-05-13 00:42+0000\n"
+"POT-Creation-Date: 2022-05-17 00:41+0000\n"
 "PO-Revision-Date: 2004-07-03 07:57+0100\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -52,7 +52,7 @@ msgstr ""
 msgid "Unable to create io-slave: %1"
 msgstr "Methu creu gwas-io: %1"
 
-#: core/copyjob.cpp:165 ioslaves/file/file_unix.cpp:1289
+#: core/copyjob.cpp:165 ioslaves/file/file_unix.cpp:1274
 #, fuzzy, kde-format
 #| msgid ""
 #| "Could not create symlink %1.\n"
@@ -2150,7 +2150,7 @@ msgstr ""
 msgid "The server was too busy responding to other requests to respond."
 msgstr "Roedd y gweinydd yn rhy brysur yn ymateb i geisiadau eraill i ymateb."
 
-#: core/job_error.cpp:1109 core/slavebase.cpp:1575
+#: core/job_error.cpp:1109 core/slavebase.cpp:1592
 #, kde-format
 msgid "Unknown Error"
 msgstr "Gwall Anhysbys"
@@ -2462,130 +2462,130 @@ msgstr ""
 msgid "Unable to determine the type of file for %1"
 msgstr ""
 
-#: core/slave.cpp:408
+#: core/slave.cpp:421
+#, fuzzy, kde-format
+msgid "Unknown protocol '%1'."
+msgstr "Protocol anhysbys '%1'. \n"
+
+#: core/slave.cpp:432
+#, kde-format
+msgid "Can not find io-slave for protocol '%1'."
+msgstr "Methu canfod gwas-io i brotocol '%1'."
+
+#: core/slave.cpp:440
 #, fuzzy, kde-format
 #| msgid "Can not find io-slave for protocol '%1'."
 msgid "Can not create socket for launching io-slave for protocol '%1'."
 msgstr "Methu canfod gwas-io i brotocol '%1'."
 
-#: core/slave.cpp:416
-#, fuzzy, kde-format
-msgid "Unknown protocol '%1'."
-msgstr "Protocol anhysbys '%1'. \n"
-
-#: core/slave.cpp:427
-#, kde-format
-msgid "Can not find io-slave for protocol '%1'."
-msgstr "Methu canfod gwas-io i brotocol '%1'."
-
-#: core/slave.cpp:447
+#: core/slave.cpp:480
 #, fuzzy, kde-format
 #| msgid "Can not find io-slave for protocol '%1'."
 msgid "Can not find 'kioslave5' executable at '%1'"
 msgstr "Methu canfod gwas-io i brotocol '%1'."
 
-#: core/slavebase.cpp:858
+#: core/slavebase.cpp:864
 #, fuzzy, kde-format
 msgid "Opening connections is not supported with the protocol %1."
 msgstr "Ni chynhelir agor cysylltiadau efo'r protocol %1"
 
-#: core/slavebase.cpp:860
+#: core/slavebase.cpp:866
 #, fuzzy, kde-format
 msgid "Closing connections is not supported with the protocol %1."
 msgstr "Ni chynhelir cau cysylltiadau efo'r protocol %1"
 
-#: core/slavebase.cpp:862
+#: core/slavebase.cpp:868
 #, fuzzy, kde-format
 msgid "Accessing files is not supported with the protocol %1."
 msgstr "Ni chynhelir cyrchu cysylltiadau efo'r protocol %1"
 
-#: core/slavebase.cpp:864
+#: core/slavebase.cpp:870
 #, fuzzy, kde-format
 msgid "Writing to %1 is not supported."
 msgstr "Ni chynhelir ysgrifennu at %1"
 
-#: core/slavebase.cpp:866
+#: core/slavebase.cpp:872
 #, fuzzy, kde-format
 msgid "There are no special actions available for protocol %1."
 msgstr "Dim gweithrediadau arbennig ar gael i brotocol %1"
 
-#: core/slavebase.cpp:868
+#: core/slavebase.cpp:874
 #, fuzzy, kde-format
 msgid "Listing folders is not supported for protocol %1."
 msgstr "Ni chynhelir rhestru plygyll efo'r protocol %1"
 
-#: core/slavebase.cpp:870
+#: core/slavebase.cpp:876
 #, fuzzy, kde-format
 msgid "Retrieving data from %1 is not supported."
 msgstr "Ni chynhelir nôl data oddiwrth %1"
 
-#: core/slavebase.cpp:872
+#: core/slavebase.cpp:878
 #, fuzzy, kde-format
 msgid "Retrieving mime type information from %1 is not supported."
 msgstr "Ni chynhelir nôl data math mime oddiwrth %1"
 
-#: core/slavebase.cpp:874
+#: core/slavebase.cpp:880
 #, fuzzy, kde-format
 msgid "Renaming or moving files within %1 is not supported."
 msgstr "Ni chynhelir ail-enwi neu symud ffeiliau tu mewn i %1"
 
-#: core/slavebase.cpp:876
+#: core/slavebase.cpp:882
 #, fuzzy, kde-format
 msgid "Creating symlinks is not supported with protocol %1."
 msgstr "Ni chynhelir creu cysylltau symbolaidd efo'r protocol %1"
 
-#: core/slavebase.cpp:878
+#: core/slavebase.cpp:884
 #, fuzzy, kde-format
 msgid "Copying files within %1 is not supported."
 msgstr "Ni chynhelir copïo ffeiliau tu mewn i %1"
 
-#: core/slavebase.cpp:880
+#: core/slavebase.cpp:886
 #, fuzzy, kde-format
 msgid "Deleting files from %1 is not supported."
 msgstr "Ni chynhelir dileu ffeiliau o %1"
 
-#: core/slavebase.cpp:882
+#: core/slavebase.cpp:888
 #, fuzzy, kde-format
 msgid "Creating folders is not supported with protocol %1."
 msgstr "Ni chynhelir creu plygyll efo'r protocol %1"
 
-#: core/slavebase.cpp:884
+#: core/slavebase.cpp:890
 #, fuzzy, kde-format
 msgid "Changing the attributes of files is not supported with protocol %1."
 msgstr "Ni chynhelir newid priodoleddau ffeiliau efo'r protocol %1"
 
-#: core/slavebase.cpp:886
+#: core/slavebase.cpp:892
 #, fuzzy, kde-format
 msgid "Changing the ownership of files is not supported with protocol %1."
 msgstr "Ni chynhelir newid priodoleddau ffeiliau efo'r protocol %1"
 
-#: core/slavebase.cpp:888
+#: core/slavebase.cpp:894
 #, fuzzy, kde-format
 msgid "Using sub-URLs with %1 is not supported."
 msgstr "Ni chynhelir defnyddio is-URLs efo %1"
 
-#: core/slavebase.cpp:890
+#: core/slavebase.cpp:896
 #, fuzzy, kde-format
 msgid "Multiple get is not supported with protocol %1."
 msgstr "Ni chynhelir nôl lluosol efo'r protocol %1"
 
-#: core/slavebase.cpp:892
+#: core/slavebase.cpp:898
 #, fuzzy, kde-format
 msgid "Opening files is not supported with protocol %1."
 msgstr "Ni chynhelir creu plygyll efo'r protocol %1"
 
-#: core/slavebase.cpp:894
+#: core/slavebase.cpp:900
 #, fuzzy, kde-format
 msgid "Protocol %1 does not support action %2."
 msgstr "Nid yw protocol %1 yn cynnal gweithred %2"
 
-#: core/slavebase.cpp:1056
+#: core/slavebase.cpp:1062
 #, fuzzy, kde-format
 #| msgid "&Reset"
 msgid "&Yes"
 msgstr "&Ailosod"
 
-#: core/slavebase.cpp:1057
+#: core/slavebase.cpp:1063
 #, fuzzy, kde-format
 msgid "&No"
 msgstr "Dim"
@@ -2756,7 +2756,6 @@ msgstr "Plygell Newydd..."
 #: filewidgets/kdiroperator.cpp:2095 widgets/jobuidelegate.cpp:280
 #: widgets/jobuidelegate.cpp:281 widgets/jobuidelegate.cpp:290
 #: widgets/jobuidelegate.cpp:291 widgets/widgetsaskuseractionhandler.cpp:176
-#: widgets/widgetsaskuseractionhandler.cpp:177
 #, kde-format
 msgid "Move to Trash"
 msgstr "Symud i'r Sbwriel"
@@ -4178,12 +4177,12 @@ msgstr ""
 msgid "The program \"%1\" could not be launched."
 msgstr "Methu rhoi'r clo penodol. %1"
 
-#: ioslaves/file/file.cpp:165
+#: ioslaves/file/file.cpp:170
 #, fuzzy, kde-format
 msgid "Setting ACL for %1"
 msgstr "Anfon data i %1"
 
-#: ioslaves/file/file.cpp:705
+#: ioslaves/file/file.cpp:710
 #, kde-format
 msgid ""
 "Could not change permissions for\n"
@@ -4192,22 +4191,22 @@ msgstr ""
 "Methu newid caniatadau i \n"
 " %1"
 
-#: ioslaves/file/file.cpp:788
+#: ioslaves/file/file.cpp:793
 #, fuzzy, kde-format
 msgid "mounting is not supported by Windows CE."
 msgstr "Ni chynhelir ysgrifennu at %1"
 
-#: ioslaves/file/file.cpp:816
+#: ioslaves/file/file.cpp:821
 #, fuzzy, kde-format
 msgid "Could not find program \"mount\""
 msgstr "Methu darganfod y rhaglen '%1'"
 
-#: ioslaves/file/file.cpp:883
+#: ioslaves/file/file.cpp:888
 #, fuzzy, kde-format
 msgid "unmounting is not supported by Windows CE."
 msgstr "Ni chynhelir ysgrifennu at %1"
 
-#: ioslaves/file/file.cpp:898
+#: ioslaves/file/file.cpp:903
 #, fuzzy, kde-format
 msgid "Could not find program \"umount\""
 msgstr "Methu darganfod y rhaglen '%1'"
@@ -4310,12 +4309,12 @@ msgstr ""
 msgid "No media in device for %1"
 msgstr "Dim meta-wybodaeth am %1 "
 
-#: ioslaves/file/file_unix.cpp:1374
+#: ioslaves/file/file_unix.cpp:1359
 #, fuzzy, kde-format
 msgid "Could not get user id for given user name %1"
 msgstr "Methu mynd i mewn i blygell %1"
 
-#: ioslaves/file/file_unix.cpp:1386
+#: ioslaves/file/file_unix.cpp:1371
 #, kde-format
 msgid "Could not get group id for given group name %1"
 msgstr ""
